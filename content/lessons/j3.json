@@ -1,0 +1,318 @@
+{
+  "id": "J3",
+  "unit": "J",
+  "titleYue": "件件嘅名",
+  "titleEn": "Names of the pieces",
+  "canDoYue": "你能夠講頸鏈、手鏈、耳環同珍珠，並且分清 this／these 同 pair／pearl。",
+  "canDoEn": "Name a necklace, a bracelet, and a pair of pearl earrings, and keep this/these and pair/pearl apart.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j3.webp",
+  "cast": [
+    "mei",
+    "tom"
+  ],
+  "lemmas": [
+    "necklace-noun",
+    "bracelet-noun",
+    "earring-noun",
+    "pair-noun",
+    "pearl-noun",
+    "these-det",
+    "this-det",
+    "beautiful-adj",
+    "like-verb",
+    "see-verb",
+    "of-course-phrase",
+    "have-verb",
+    "we-pron"
+  ],
+  "dialogue": [
+    {
+      "id": "j3-l1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "This necklace is beautiful.",
+      "glossYue": "呢條頸鏈好靚。",
+      "audio": "assets/audio/lines/j3-l1.mp3",
+      "audioSlow": "assets/audio/lines/j3-l1-slow.mp3",
+      "say": "This necklace is beautiful."
+    },
+    {
+      "id": "j3-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I like this bracelet.",
+      "glossYue": "我鍾意呢條手鏈。",
+      "audio": "assets/audio/lines/j3-l2.mp3",
+      "audioSlow": "assets/audio/lines/j3-l2-slow.mp3",
+      "say": "I like this [[bɹˈeɪslət.]]"
+    },
+    {
+      "id": "j3-l3",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "We have a pair of pearl earrings.",
+      "glossYue": "我哋有一對珍珠耳環。",
+      "audio": "assets/audio/lines/j3-l3.mp3",
+      "audioSlow": "assets/audio/lines/j3-l3-slow.mp3",
+      "say": "We have a pair [[əv]] pearl earrings."
+    },
+    {
+      "id": "j3-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "May I see these earrings?",
+      "glossYue": "可唔可以睇吓呢啲耳環？",
+      "audio": "assets/audio/lines/j3-l4.mp3",
+      "audioSlow": "assets/audio/lines/j3-l4-slow.mp3",
+      "say": "May I see these earrings?"
+    },
+    {
+      "id": "j3-l5",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Of course. This pair is beautiful.",
+      "glossYue": "當然。呢對好靚。",
+      "audio": "assets/audio/lines/j3-l5.mp3",
+      "audioSlow": "assets/audio/lines/j3-l5-slow.mp3",
+      "say": "[[əv kˈɔɹs.]] This pair is beautiful."
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "This necklace is beautiful. 係講緊邊件？",
+      "choices": [
+        "頸鏈",
+        "手鏈",
+        "耳環"
+      ],
+      "answer": 0,
+      "explain": "necklace 係戴喺頸嘅。bracelet 先至係手鏈。"
+    },
+    {
+      "prompt": "A pair of earrings. 係幾多隻？",
+      "choices": [
+        "兩隻，一對",
+        "一隻",
+        "三隻"
+      ],
+      "answer": 0,
+      "explain": "pair 係一對。呢啲耳環用 these。"
+    },
+    {
+      "prompt": "these 同 this 差喺？",
+      "choices": [
+        "these 係呢啲，尾音 /z/",
+        "兩個都係一件",
+        "these 係道別"
+      ],
+      "answer": 0,
+      "explain": "一件用 this /ðɪs/。多過一件用 these /ðiz/。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "This ___ is beautiful.",
+      "example": "This necklace is beautiful.",
+      "glossYue": "呢條⋯⋯好靚。",
+      "answer": "necklace",
+      "choices": [
+        "necklace",
+        "passport",
+        "menu"
+      ]
+    },
+    {
+      "pattern": "I like this ___.",
+      "example": "I like this bracelet.",
+      "glossYue": "我鍾意呢條⋯⋯。",
+      "answer": "bracelet",
+      "choices": [
+        "bracelet",
+        "flight",
+        "seat"
+      ]
+    },
+    {
+      "pattern": "A pair of ___.",
+      "example": "A pair of pearl earrings.",
+      "glossYue": "一對⋯⋯。",
+      "answer": "pearl earrings",
+      "choices": [
+        "pearl earrings",
+        "boarding passes",
+        "window seats"
+      ]
+    },
+    {
+      "pattern": "May I see ___?",
+      "example": "May I see these earrings?",
+      "glossYue": "可唔可以睇吓⋯⋯？",
+      "answer": "these earrings",
+      "choices": [
+        "these earrings",
+        "your passport",
+        "the gate"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "j3-l3",
+    "hint": "We have a pair of pearl earrings."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "Tom 話 I like this bracelet. 你點接？",
+      "choices": [
+        "We have a pair of pearl earrings.",
+        "I'm just looking, thank you.",
+        "Go to the gate."
+      ],
+      "answer": 0,
+      "explain": "接住佢鍾意嘅件，再講一對相關嘅耳環。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "This",
+        "necklace",
+        "is",
+        "beautiful"
+      ],
+      "answer": [
+        "This",
+        "necklace",
+        "is",
+        "beautiful"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "mei",
+    "intro": "Tom 企喺櫃檯前。你講件名之前，等佢問完先答。",
+    "turns": [
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "What is this?",
+        "audio": "assets/audio/lines/j3-l6.mp3",
+        "audioSlow": "assets/audio/lines/j3-l6-slow.mp3",
+        "expect": "This is a necklace.",
+        "keywords": [
+          "necklace"
+        ],
+        "modelAudio": "assets/audio/lines/j3-m1.mp3",
+        "modelSlow": "assets/audio/lines/j3-m1-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "I like this bracelet.",
+        "audio": "assets/audio/lines/j3-l2.mp3",
+        "audioSlow": "assets/audio/lines/j3-l2-slow.mp3",
+        "expect": "We have a pair of pearl earrings.",
+        "keywords": [
+          "pair",
+          "pearl"
+        ],
+        "modelAudio": "assets/audio/lines/j3-l3.mp3",
+        "modelSlow": "assets/audio/lines/j3-l3-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "May I see these earrings?",
+        "audio": "assets/audio/lines/j3-l4.mp3",
+        "audioSlow": "assets/audio/lines/j3-l4-slow.mp3",
+        "expect": "Of course. This pair is beautiful.",
+        "keywords": [
+          "pair",
+          "beautiful"
+        ],
+        "modelAudio": "assets/audio/lines/j3-l5.mp3",
+        "modelSlow": "assets/audio/lines/j3-l5-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "these-det",
+      "choices": [
+        "these",
+        "this",
+        "three"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "pearl-noun",
+      "choices": [
+        "pearl",
+        "pair",
+        "ring"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "bracelet",
+      "choices": [
+        "手鏈",
+        "頸鏈",
+        "登機證"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "a pair of earrings",
+      "choices": [
+        "一對耳環",
+        "一隻戒指",
+        "靠窗位"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個尾音係 /z/？",
+      "choices": [
+        "these",
+        "this",
+        "pair"
+      ],
+      "answer": 0,
+      "explain": "these /ðiz/ 有聲。this /ðɪs/ 係清 /s/。"
+    }
+  ],
+  "sound": {
+    "ipa": "/ðɪs/ · /ðiz/ · /pɛɹ/ · /pɝl/",
+    "title": "一件同一對",
+    "note": "this /ðɪs/：短 /ɪ/，尾清 /s/，講一件。these /ðiz/：長 /i/，尾有聲 /z/，講呢啲。pair /pɛɹ/ 係「一對」，嘴開少少。pearl /pɝl/ 係「珍珠」，舌尖向上卷，唔好掂到上顎。bracelet 重音喺第一節，尾 /t/ 要收住。earring 都係第一節重讀。",
+    "pairs": [
+      {
+        "a": "this-det",
+        "b": "these-det"
+      },
+      {
+        "a": "pair-noun",
+        "b": "pearl-noun"
+      }
+    ],
+    "drill": [
+      "this-det",
+      "these-det",
+      "pair-noun",
+      "pearl-noun",
+      "bracelet-noun",
+      "earring-noun"
+    ]
+  },
+  "next": "T1"
+}

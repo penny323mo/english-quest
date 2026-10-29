@@ -1,13 +1,14 @@
 You are a strict senior reviewer for English Quest. cd /workspace/sidequest/english-quest.
-Read SPEC.md and DECISIONS.md. Round 13 (phase 2, max 15).
+Read SPEC.md and DECISIONS.md. Round 13 (phase 2b, max 15).
 
 REQUIRED review procedure (do NOT skip):
-1. Serve or open the built app and exercise it at viewport width 390px (Playwright or equivalent real taps). Check every shipped screen: onboarding, path, each shipped lesson (incl. F3/F4 if present), review/SRS, word card, speaking (and record-compare fallback), attributions.
+1. Serve or open the built app and exercise it at viewport width 390px (Playwright or equivalent real taps). Check every shipped screen: onboarding, path, each shipped lesson (incl. any new J3/T2/R2), review/SRS, word card, speaking (and record-compare fallback), attributions.
 2. Run all tests (`npm test` or node tests). Lexicon check failures are CRITICAL.
-3. Spot-check ≥20 lexicon entries: IPA vs CMUdict/FreeDict, audio matches sense, stress/syllables shown, Cantonese glosses natural (畀 not 俾, correct classifiers, no simplified, no translationese).
+3. Spot-check ≥20 lexicon entries: IPA vs CMUdict/FreeDict, audio matches sense, stress/syllables shown, Cantonese glosses natural (畀 not 俾, correct classifiers, no simplified, no translationese, no 午安/晚上好/我只係睇吓/請周圍睇吓).
 4. Measure overflow: ANY horizontal overflow, clipped control bar, or unreadable UI at 390px → CRITICAL and VERDICT must be NOT READY.
-5. Re-verify EVERY item in /workspace/sidequest/english-quest/review/loop-r3/coder-audit.md against the built/live app. Any still-open item is CRITICAL.
-6. SHIP is BLOCKED if: any overflow at 390px, any IPA/audio error, lexicon check fail, lesson soft-lock, missing PWA/offline basics, secrets in repo, any rubric dimension would score below 9/10, OR any coder-audit item still open. You may NOT mark SHIP while the audit list has open items.
+5. Re-verify EVERY item in /workspace/sidequest/english-quest/review/loop-r12/coder-audit.md against the built/live app. Any still-open item is CRITICAL.
+6. Confirm F2/F3/F4 hook art are visually distinct and on-topic (not the same doorway). Confirm Pedagogy would score ≥9.
+7. SHIP is BLOCKED if: any overflow at 390px, any IPA/audio error, lexicon check fail, lesson soft-lock, missing PWA/offline basics, secrets in repo, any rubric dimension would score below 9/10, OR any coder-audit item still open. You may NOT mark SHIP while the audit list has open items.
 
 Do NOT modify project source (reviews/ and .orch/ only). Write numbered CRITICAL/MAJOR/MINOR findings with file:line and concrete fixes to /workspace/sidequest/english-quest/reviews/orch-r13-grok.md.
 First line MUST be exactly: VERDICT: SHIP   or   VERDICT: NOT READY

@@ -260,7 +260,7 @@ def build_items() -> None:
         piper="Please [[klˈoʊz]] the door.")
     add("close-adj", "close", "adj", "near", "K L OW1 S", ["close"],
         "近；親近", "近", "kan5", ["a close friend", "close to the window"],
-        "A close friend is here.", "一位好朋友喺度。",
+        "A close friend is here.", "有個好朋友喺度。",
         piper="A [[klˈoʊs]] friend is here.")
 
     # --- foundations & function words ---
@@ -338,9 +338,9 @@ def build_items() -> None:
         "早晨；上晝", "早上", "zou2 san4", ["good morning"], "Good morning.", "早晨。")
     add("afternoon-noun", "afternoon", "noun", "after-noon", "AE2 F . T ER0 . N UW1 N", ["af", "ter", "noon"],
         "下晝", "下午", "haa6 zau3", ["good afternoon", "this afternoon"],
-        "Good afternoon.", "午安。")
+        "Good afternoon.", "你好。")
     add("evening-noun", "evening", "noun", "late-day", "IY1 V . N IH0 NG", ["eve", "ning"],
-        "夜晚", "晚上", "je6 maan5", ["good evening"], "Good evening.", "晚上好。")
+        "夜晚", "晚上", "je6 maan5", ["good evening"], "Good evening.", "你好。")
     add("my-det", "my", "det", "belonging-to-me", "M AY1", ["my"],
         "我嘅", "我的", "ngo5 ge3", ["my name", "my passport"], "My name is Ling.", "我叫 Ling。")
     add("nice-adj", "nice", "adj", "pleasant", "N AY1 S", ["nice"],
@@ -402,7 +402,7 @@ def build_items() -> None:
         "Your flight is on time.", "你嘅航班準時。")
     add("i-pron", "I", "pron", "first-person", "AY1", ["I"],
         "我", "我", "ngo5", ["I am", "I'm just looking"],
-        "I'm just looking.", "我只係睇吓。",
+        "I'm just looking.", "我睇吓先。",
         cmu="i")
     add("is-verb", "is", "verb", "be-3sg", "IH1 Z", ["is"],
         "係", "是", "hai6", ["this is", "my name is"],
@@ -429,7 +429,7 @@ def build_items() -> None:
         "佢（物件）", "它", "keoi5", ["see it", "it is"], "Would you like to see it?", "想唔想睇吓？")
     add("do-verb", "do", "verb", "auxiliary", "D UW1", ["do"],
         "做；有冇（問句）", "做", "zou6", ["do you have"],
-        "Do you have a reservation?", "你有冇訂座？")
+        "Do you have a reservation?", "你有冇訂位呀？")
     add("yes-intj", "yes", "intj", "affirm", "Y EH1 S", ["yes"],
         "係／有", "是", "hai6", ["yes, please", "yes, thank you"],
         "Yes, thank you.", "好，多謝。")
@@ -447,17 +447,17 @@ def build_items() -> None:
         note="CMU 用 IY+R 記 NEAR 元音。教學 IPA 寫 /hɪr/。")
     add("just-adv", "just", "adv", "only", "JH AH1 S T", ["just"],
         "只係", "只是", "zi2 hai6", ["just looking"],
-        "I'm just looking.", "我只係睇吓。")
+        "I'm just looking.", "我睇吓先。")
     add("today-adv", "today", "adv", "this-day", "T AH0 . D EY1", ["to", "day"],
         "今日", "今天", "gam1 jat6", ["help you today"],
         "How may I help you today?", "今日有咩可以幫到你？")
     add("very-adv", "very", "adv", "intensifier", "V EH1 . R IY0", ["ver", "y"],
-        "非常", "非常", "fei1 soeng4", ["very nice"],
+        "好（加強）", "非常", "hou2", ["very nice"],
         "We have a very nice ring.", "我哋有一隻好靚嘅戒指。",
         note="開頭係 /v/，下唇輕碰上排牙，唔好讀成 w。")
     add("have-verb", "have", "verb", "possess", "HH AE1 V", ["have"],
         "有", "有", "jau5", ["do you have", "we have"],
-        "Do you have a reservation?", "你有冇訂座？",
+        "Do you have a reservation?", "你有冇訂位呀？",
         variants=["/əv/ unstressed"],
         note="重讀 /hæv/。弱讀可以係 /əv/，同 of 唔好撈亂。")
     add("would-verb", "would", "verb", "modal-polite", "W UH1 D", ["would"],
@@ -504,7 +504,7 @@ def build_items() -> None:
         "Please take a look.", "請慢慢睇。")
     add("looking-verb", "looking", "verb", "seeking", "L UH1 K . IH0 NG", ["look", "ing"],
         "搵緊；睇緊", "正在找", "wan2 gan2", ["just looking", "looking for"],
-        "I'm just looking.", "我只係睇吓。")
+        "I'm just looking.", "我睇吓先。")
     add("may-verb", "may", "verb", "modal-permission", "M EY1", ["may"],
         "可以（客氣）", "可以", "ho2 ji5", ["how may I", "may I see"],
         "How may I help you?", "有咩可以幫到你？")
@@ -573,7 +573,7 @@ def build_items() -> None:
         note="CMU 兩條：EH2 N JH OY1 同 IH0 N JH OY1。卡片用後者，貼近 Wiktionary /ɪnˈdʒɔɪ/。")
     add("around-adv", "around", "adv", "in-the-area", "ER0 . AW1 N D", ["a", "round"],
         "周圍", "周围", "zau1 wai4", ["look around"],
-        "Please take a look around.", "請周圍睇吓。")
+        "Please take a look around.", "隨便睇吓。")
     add("silver-noun", "silver", "noun", "metal", "S IH1 L . V ER0", ["sil", "ver"],
         "銀", "银", "ngan4", ["a silver ring"],
         "I'm looking for a silver ring.", "我想搵一隻銀戒指。",
@@ -586,6 +586,29 @@ def build_items() -> None:
         "手錶", "手表", "sau2 biu1", ["a watch"],
         "A watch and a ring.", "一隻手錶同一隻戒指。",
         note="開頭 /w/，尾音 /tʃ/。")
+    add("bracelet-noun", "bracelet", "noun", "wrist-jewel", "B R EY1 . S L AH0 T", ["brace", "let"],
+        "手鏈", "手链", "sau2 lin2", ["this bracelet"],
+        "This bracelet is beautiful.", "呢條手鏈好靚。",
+        piper="This [[bɹˈeɪslət]] is beautiful.",
+        note="兩個音節，重音喺第一節。尾音 /t/ 要收住。錄音用 /slət/，唔好讀成 /slɪt/。")
+    add("earring-noun", "earring", "noun", "ear-jewel", "IH1 R . IH0 NG", ["ear", "ring"],
+        "耳環", "耳环", "ji5 waan4", ["a pearl earring"],
+        "I like this earring.", "我鍾意呢隻耳環。",
+        variants=["/ˈiɹ.ɪŋ/"],
+        note="CMU 另有 /ˈiɹ.ɪŋ/。卡片教 /ˈɪɹ.ɪŋ/，重音喺第一節。")
+    add("pair-noun", "pair", "noun", "matched-two", "P EH1 R", ["pair"],
+        "一對", "一对", "jat1 deoi3", ["a pair of earrings"],
+        "A pair of earrings.", "一對耳環。",
+        piper="A pair [[əv]] earrings.",
+        note="美式 /pɛɹ/。唔好同 pearl（珍珠）撈亂。")
+    add("pearl-noun", "pearl", "noun", "gem", "P ER1 L", ["pearl"],
+        "珍珠", "珍珠", "zan1 zyu1", ["a pearl earring"],
+        "This is a pearl earring.", "呢隻係珍珠耳環。",
+        note="美式 /pɝl/，一個音節。有人會加一個好輕嘅 schwa，卡片跟 CMU。")
+    add("these-det", "these", "det", "plural-near", "DH IY1 Z", ["these"],
+        "呢啲", "这些", "ni1 di1", ["these earrings"],
+        "These earrings are beautiful.", "呢啲耳環好靚。",
+        note="長 /i/，尾有聲 /z/。this 先至係短 /ɪ/ 加 /s/。")
     add("wife-noun", "wife", "noun", "spouse", "W AY1 F", ["wife"],
         "太太", "太太", "taai3 taai2", ["for my wife"],
         "Something for my wife.", "送畀我太太。")
@@ -651,8 +674,8 @@ def build_items() -> None:
         "行李", "行李", "hang4 lei5", ["your luggage"],
         "Your luggage is here.", "你嘅行李喺度。")
     add("reservation-noun", "reservation", "noun", "booking", "R EH2 . Z ER0 . V EY1 . SH AH0 N", ["res", "er", "va", "tion"],
-        "訂座", "预订", "deng6 zo6", ["have a reservation"],
-        "Do you have a reservation?", "你有冇訂座？",
+        "訂位", "预订", "deng6 wai2", ["have a reservation"],
+        "Do you have a reservation?", "你有冇訂位呀？",
         note="開頭 /r/。有 /ʃ/。")
     add("table-noun", "table", "noun", "dining-table", "T EY1 . B AH0 L", ["ta", "ble"],
         "檯", "桌子", "toi2", ["a table for two", "your table"],
@@ -772,8 +795,8 @@ def build_items() -> None:
         "Nice to meet you.", "好高興認識你。", phrase=True,
         note="to 弱讀 /tə/。")
     add("just-looking-phrase", "just looking", "phrase", "not-buying-yet", "JH AH1 S T | L UH1 K . IH0 NG", ["just", "look", "ing"],
-        "只係睇吓", "只是看看", "zi2 hai6 tai2 haa5", ["I'm just looking"],
-        "I'm just looking.", "我只係睇吓。", phrase=True)
+        "睇吓先", "只是看看", "tai2 haa5 sin1", ["I'm just looking"],
+        "I'm just looking.", "我睇吓先。", phrase=True)
     add("how-may-i-phrase", "how may I help you", "phrase", "offer-help", "HH AW1 | M EY1 | AY1 | HH EH1 L P | Y UW1", ["how", "may", "I", "help", "you"],
         "有咩可以幫到你", "有什么可以帮你", "jau5 me1 ho2 ji5 bong1 dou2 nei5", ["how may I help you today"],
         "How may I help you?", "有咩可以幫到你？", phrase=True)
@@ -1189,6 +1212,48 @@ FLAGS = [
         "resolvedBy": "round-11 lexicographer",
         "resolvedAt": "2026-10-30",
     },
+    {
+        "id": "earring-noun",
+        "lemma": "earring",
+        "pos": "noun",
+        "cmudict": ["IH1 R IH0 NG /ˈɪɹ.ɪŋ/", "IY1 R IH0 NG /ˈiɹ.ɪŋ/"],
+        "wiktionary": ["GA /ˈɪɹ.ɪŋ/", "also /ˈɪə.ɹɪŋ/ in British entries"],
+        "freeDictionary": "not in the local phonetics cache",
+        "disagreement": "CMU lists a tense first vowel /i/ as a second US reading. Wiktionary's General American line is the lax /ɪ/.",
+        "resolution": "Teach CMU's first entry /ˈɪɹ.ɪŋ/, which matches Wiktionary GA. /ˈiɹ.ɪŋ/ stays a labelled variant. Audio is Piper's reading of the example sentence.",
+        "resolved": True,
+        "taughtIpa": "/ˈɪɹ.ɪŋ/",
+        "resolvedBy": "round-13 lexicographer",
+        "resolvedAt": "2026-10-30",
+    },
+    {
+        "id": "pair-noun",
+        "lemma": "pair",
+        "pos": "noun",
+        "cmudict": ["P EH1 R /pɛɹ/"],
+        "wiktionary": ["GA /pɛɹ/", "British /peə/"],
+        "freeDictionary": "not in the local phonetics cache",
+        "disagreement": "British sources use /peə/. CMU and General American use /pɛɹ/, the same pattern as pear.",
+        "resolution": "Teach the American /pɛɹ/. The card tells learners not to mix it up with pearl /pɝl/.",
+        "resolved": True,
+        "taughtIpa": "/ˈpɛɹ/",
+        "resolvedBy": "round-13 lexicographer",
+        "resolvedAt": "2026-10-30",
+    },
+    {
+        "id": "pearl-noun",
+        "lemma": "pearl",
+        "pos": "noun",
+        "cmudict": ["P ER1 L /pɝl/"],
+        "wiktionary": ["GA /pɝl/"],
+        "freeDictionary": "not in the local phonetics cache",
+        "disagreement": "Merriam-Webster prints an optional schwa, /ˈpər(-ə)l/. CMU and Wiktionary GA are one syllable.",
+        "resolution": "Teach the one-syllable CMU form /pɝl/. The optional schwa is noted, not taught as the main form.",
+        "resolved": True,
+        "taughtIpa": "/ˈpɝl/",
+        "resolvedBy": "round-13 lexicographer",
+        "resolvedAt": "2026-10-30",
+    },
 ]
 
 
@@ -1226,8 +1291,8 @@ def build_lessons() -> list[dict]:
     ]
     j1 = [
         line("j1-l1", "mei", "Mei", "Welcome to our jewellery store. How may I help you today?", "歡迎嚟到我哋嘅珠寶店。今日有咩可以幫到你？", "Welcome to our [[dʒˈulɹi]] store. How may I help you today?"),
-        line("j1-l2", "tom", "Tom", "Hi. I'm just looking, thank you.", "嗨。我只係睇吓，多謝。"),
-        line("j1-l3", "mei", "Mei", "Of course. Please take a look around.", "當然。請周圍慢慢睇。", "[[əv kˈɔɹs.]] Please take a look around."),
+        line("j1-l2", "tom", "Tom", "Hi. I'm just looking, thank you.", "嗨，我睇吓先，多謝。"),
+        line("j1-l3", "mei", "Mei", "Of course. Please take a look around.", "當然。隨便睇吓。", "[[əv kˈɔɹs.]] Please take a look around."),
         line("j1-l4", "tom", "Tom", "This necklace is beautiful.", "呢條頸鏈好靚。"),
         line("j1-l5", "mei", "Mei", "Thank you. Let me know if you need anything.", "多謝。有需要就話我知。"),
     ]
@@ -1238,15 +1303,22 @@ def build_lessons() -> list[dict]:
         line("j2-l4", "tom", "Tom", "Yes. I want something for my wife.", "好。我想買樣嘢畀太太。"),
         line("j2-l5", "mei", "Mei", "Of course. I'll show you a few.", "當然。我畀你睇幾件。", "[[əv kˈɔɹs.]] I'll show you a few."),
     ]
+    j3 = [
+        line("j3-l1", "mei", "Mei", "This necklace is beautiful.", "呢條頸鏈好靚。"),
+        line("j3-l2", "tom", "Tom", "I like this bracelet.", "我鍾意呢條手鏈。", "I like this [[bɹˈeɪslət.]]"),
+        line("j3-l3", "mei", "Mei", "We have a pair of pearl earrings.", "我哋有一對珍珠耳環。", "We have a pair [[əv]] pearl earrings."),
+        line("j3-l4", "tom", "Tom", "May I see these earrings?", "可唔可以睇吓呢啲耳環？"),
+        line("j3-l5", "mei", "Mei", "Of course. This pair is beautiful.", "當然。呢對好靚。", "[[əv kˈɔɹs.]] This pair is beautiful."),
+    ]
     t1 = [
-        line("t1-l1", "kai", "Kai", "Good afternoon. Where are you flying today?", "午安。你今日飛去邊？"),
+        line("t1-l1", "kai", "Kai", "Good afternoon. Where are you flying today?", "你好，你今日飛去邊？"),
         line("t1-l2", "ling", "Ling", "I'm flying to Hong Kong. Here is my passport.", "我飛去香港。呢本係我嘅護照。"),
         line("t1-l3", "kai", "Kai", "Thank you. Window or aisle?", "多謝。靠窗定係通道？"),
         line("t1-l4", "ling", "Ling", "A window seat, please.", "要靠窗位，唔該。"),
         line("t1-l5", "kai", "Kai", "Sure. I'll show you the information. Here is your boarding pass.", "好。我畀你睇吓資料。你張登機證喺度。"),
     ]
     r1 = [
-        line("r1-l1", "ana", "Ana", "Good evening. Do you have a reservation?", "晚上好。你有冇訂座？"),
+        line("r1-l1", "ana", "Ana", "Good evening. Do you have a reservation?", "你好，有冇訂位呀？"),
         line("r1-l2", "tom", "Tom", "Yes. A table for two, please.", "有。兩位，唔該。", "Yes. [[ə ˈteɪbəl fɚ ˈtu]] , please."),
         line("r1-l3", "ana", "Ana", "Right this way. Would you like a table by the window?", "請跟我嚟。想唔想坐靠窗？"),
         line("r1-l4", "tom", "Tom", "Yes, thank you. This is great.", "好，多謝。好好。"),
@@ -1289,6 +1361,8 @@ def build_lessons() -> list[dict]:
         line("f3-m3", "ling", "Ling", "Yes. Five dollars.", "係呀，五蚊。"),
         line("f4-l6", "mei", "Mei", "You're welcome.", "唔使客氣。"),
         line("f4-m3", "ling", "Ling", "Good night.", "晚安。"),
+        line("j3-l6", "tom", "Tom", "What is this?", "呢件係咩？"),
+        line("j3-m1", "mei", "Mei", "This is a necklace.", "呢條係頸鏈。"),
     ]
     lessons = [
         {
@@ -1361,11 +1435,11 @@ def build_lessons() -> list[dict]:
             "dialogue": f2,
             "understand": [
                 {"prompt": "My name is Mei. 係咩意思？", "choices": ["我叫 Mei", "我想買頸鏈", "兩位"], "answer": 0, "explain": "name 係名字。is 呢度等於「係」。"},
-                {"prompt": "Nice to meet you. 幾時講？", "choices": ["第一次見面", "叫人埋單", "問靠窗定通道"], "answer": 0, "explain": "認識人嘅時候講，語氣輕就得。"},
+                {"prompt": "Nice to meet you. 幾時講？", "choices": ["第一次見面", "叫人埋單", "問靠窗定通道"], "answer": 0, "explain": "識人嗰陣講，語氣輕就得。"},
                 {"prompt": "Thank you 開頭個音係？", "choices": ["/θ/ 舌尖輕送氣", "/f/ 咬唇", "/s/ 牙齒縫"], "answer": 0, "explain": "舌尖輕觸上排牙，送氣。唔好變成 fanks。"},
             ],
             "chunks": [
-                {"pattern": "Good ___.", "example": "Good morning.", "glossYue": "早晨／午安／晚上好。", "answer": "morning", "choices": ["morning", "passport", "necklace"]},
+                {"pattern": "Good ___.", "example": "Good morning.", "glossYue": "早晨／你好／晚安。", "answer": "morning", "choices": ["morning", "passport", "necklace"]},
                 {"pattern": "My name is ___.", "example": "My name is Ling.", "glossYue": "我叫⋯⋯。", "answer": "Ling", "choices": ["Ling", "a table", "check-in"]},
                 {"pattern": "Nice to meet ___.", "example": "Nice to meet you.", "glossYue": "好高興認識你。", "answer": "you", "choices": ["you", "the menu", "aisle"]},
                 {"pattern": "Thank ___.", "example": "Thank you.", "glossYue": "多謝。", "answer": "you", "choices": ["you", "sank", "wine"]},
@@ -1387,7 +1461,7 @@ def build_lessons() -> list[dict]:
             "quiz": [
                 {"type": "listen", "prompt": "你聽到邊個？", "lemma": "thank-verb", "choices": ["thank", "sank", "tank"], "answer": 0},
                 {"type": "meaning", "prompt": "Good morning", "choices": ["早晨", "兩位", "登機證"], "answer": 0},
-                {"type": "meaning", "prompt": "Nice to meet you", "choices": ["好高興認識你", "只係睇吓", "靠窗位"], "answer": 0},
+                {"type": "meaning", "prompt": "Nice to meet you", "choices": ["好高興認識你", "睇吓先", "靠窗位"], "answer": 0},
                 {"type": "choice", "prompt": "sir 係叫邊種人？", "choices": ["男士，客氣", "一張檯", "一隻戒指"], "answer": 0, "explain": "madam 就係對女士。兩個都唔使每次都用。"},
                 {"type": "listen", "prompt": "邊個有 /θ/？", "lemma": "three-num", "choices": ["three", "tree", "free"], "answer": 0},
             ],
@@ -1529,14 +1603,14 @@ def build_lessons() -> list[dict]:
             "lemmas": ["welcome-verb", "jewellery-noun", "jewelry-noun", "store-noun", "help-verb", "today-adv", "looking-verb", "just-looking-phrase", "just-adv", "please-adv", "thank-you-phrase", "of-course-phrase", "course-noun", "come-verb", "may-verb", "look-verb", "certainly-adv", "browsing-verb", "know-verb", "enjoy-verb", "necklace-noun", "beautiful-adj", "anything-pron", "with-prep", "how-may-i-phrase", "let-me-know-phrase"],
             "dialogue": j1,
             "understand": [
-                {"prompt": "I'm just looking. 客人想點？", "choices": ["只係睇吓，未打算買", "即刻落單", "要兩位靠窗"], "answer": 0, "explain": "唔好追問。請佢慢慢睇就得。"},
+                {"prompt": "I'm just looking. 客人想點？", "choices": ["睇吓先，未打算買", "即刻落單", "要兩位靠窗"], "answer": 0, "explain": "唔好追問。請佢慢慢睇就得。"},
                 {"prompt": "How may I help you? 你喺做咩？", "choices": ["客氣咁問可唔可以幫手", "叫客人離開", "問航班號碼"], "answer": 0, "explain": "may 比 can 更慢、更有禮。"},
                 {"prompt": "Of course. 係邊種語氣？", "choices": ["當然，冇問題", "唔得", "幾多錢"], "answer": 0, "explain": "後面通常接 Please take a look。"},
             ],
             "chunks": [
                 {"pattern": "Welcome to ___.", "example": "Welcome to our jewellery store.", "glossYue": "歡迎嚟到⋯⋯。", "answer": "our jewellery store", "choices": ["our jewellery store", "the boarding gate", "a table for two"]},
                 {"pattern": "How may I help you ___?", "example": "How may I help you today?", "glossYue": "今日有咩可以幫到你？", "answer": "today", "choices": ["today", "the menu", "my passport"]},
-                {"pattern": "I'm just ___.", "example": "I'm just looking.", "glossYue": "我只係睇吓。", "answer": "looking", "choices": ["looking", "a necklace", "on time"]},
+                {"pattern": "I'm just ___.", "example": "I'm just looking.", "glossYue": "我睇吓先。", "answer": "looking", "choices": ["looking", "a necklace", "on time"]},
                 {"pattern": "Of course. Please ___.", "example": "Of course. Please take a look.", "glossYue": "當然。請慢慢睇。", "answer": "take a look", "choices": ["take a look", "close the door", "go to the gate"]},
                 {"pattern": "Let me know if you need ___.", "example": "Let me know if you need anything.", "glossYue": "有需要就話我知。", "answer": "anything", "choices": ["anything", "a bass guitar", "the wind"]},
             ],
@@ -1557,7 +1631,7 @@ def build_lessons() -> list[dict]:
             "quiz": [
                 {"type": "listen", "prompt": "你聽到邊個？", "lemma": "thank-verb", "choices": ["thank", "sank", "tank"], "answer": 0},
                 {"type": "meaning", "prompt": "jewellery", "choices": ["珠寶", "護照", "餐牌"], "answer": 0},
-                {"type": "meaning", "prompt": "just looking", "choices": ["只係睇吓", "即刻付款", "我有訂座"], "answer": 0},
+                {"type": "meaning", "prompt": "just looking", "choices": ["睇吓先", "即刻付款", "我有訂位"], "answer": 0},
                 {"type": "choice", "prompt": "This necklace is beautiful. 你點接最得體？", "choices": ["Thank you.", "Go to the gate.", "Ship is short."], "answer": 0, "explain": "客人讚貨，先接一句 thank you 就得。"},
                 {"type": "listen", "prompt": "邊個有 /θ/？", "lemma": "anything-pron", "choices": ["anything", "evening", "silver"], "answer": 0},
             ],
@@ -1615,7 +1689,7 @@ def build_lessons() -> list[dict]:
                 {"type": "listen", "prompt": "你聽到邊個？", "lemma": "wine-noun", "choices": ["wine", "vine", "west"], "answer": 0},
                 {"type": "listen", "prompt": "你聽到邊個？", "lemma": "vine-noun", "choices": ["vine", "wine", "wife"], "answer": 0},
                 {"type": "meaning", "prompt": "silver ring", "choices": ["銀戒指", "靠窗位", "登機證"], "answer": 0},
-                {"type": "meaning", "prompt": "Would you like to see it?", "choices": ["想唔想睇吓", "請去閘口", "我只係睇吓"], "answer": 0},
+                {"type": "meaning", "prompt": "Would you like to see it?", "choices": ["想唔想睇吓", "請去閘口", "我睇吓先"], "answer": 0},
                 {"type": "choice", "prompt": "邊個開頭係 /v/？", "choices": ["very", "would", "wife"], "answer": 0, "explain": "would 同 wife 係圓唇 /w/。very 先至係 /v/。"},
             ],
             "sound": {
@@ -1627,6 +1701,62 @@ def build_lessons() -> list[dict]:
                     {"a": "west-noun", "b": "vest-noun"},
                 ],
                 "drill": ["wine-noun", "vine-noun", "very-adv", "would-verb", "wife-noun"],
+            },
+            "next": "J3",
+        },
+        {
+            "id": "J3",
+            "unit": "J",
+            "titleYue": "件件嘅名",
+            "titleEn": "Names of the pieces",
+            "canDoYue": "你能夠講頸鏈、手鏈、耳環同珍珠，並且分清 this／these 同 pair／pearl。",
+            "canDoEn": "Name a necklace, a bracelet, and a pair of pearl earrings, and keep this/these and pair/pearl apart.",
+            "minutes": 12,
+            "hero": "assets/art/lessons/j3.webp",
+            "cast": ["mei", "tom"],
+            "lemmas": ["necklace-noun", "bracelet-noun", "earring-noun", "pair-noun", "pearl-noun", "these-det", "this-det", "beautiful-adj", "like-verb", "see-verb", "of-course-phrase", "have-verb", "we-pron"],
+            "dialogue": j3,
+            "understand": [
+                {"prompt": "This necklace is beautiful. 係講緊邊件？", "choices": ["頸鏈", "手鏈", "耳環"], "answer": 0, "explain": "necklace 係戴喺頸嘅。bracelet 先至係手鏈。"},
+                {"prompt": "A pair of earrings. 係幾多隻？", "choices": ["兩隻，一對", "一隻", "三隻"], "answer": 0, "explain": "pair 係一對。呢啲耳環用 these。"},
+                {"prompt": "these 同 this 差喺？", "choices": ["these 係呢啲，尾音 /z/", "兩個都係一件", "these 係道別"], "answer": 0, "explain": "一件用 this /ðɪs/。多過一件用 these /ðiz/。"},
+            ],
+            "chunks": [
+                {"pattern": "This ___ is beautiful.", "example": "This necklace is beautiful.", "glossYue": "呢條⋯⋯好靚。", "answer": "necklace", "choices": ["necklace", "passport", "menu"]},
+                {"pattern": "I like this ___.", "example": "I like this bracelet.", "glossYue": "我鍾意呢條⋯⋯。", "answer": "bracelet", "choices": ["bracelet", "flight", "seat"]},
+                {"pattern": "A pair of ___.", "example": "A pair of pearl earrings.", "glossYue": "一對⋯⋯。", "answer": "pearl earrings", "choices": ["pearl earrings", "boarding passes", "window seats"]},
+                {"pattern": "May I see ___?", "example": "May I see these earrings?", "glossYue": "可唔可以睇吓⋯⋯？", "answer": "these earrings", "choices": ["these earrings", "your passport", "the gate"]},
+            ],
+            "shadow": {"lineId": "j3-l3", "hint": "We have a pair of pearl earrings."},
+            "build": [
+                {"type": "choice", "promptYue": "Tom 話 I like this bracelet. 你點接？", "choices": ["We have a pair of pearl earrings.", "I'm just looking, thank you.", "Go to the gate."], "answer": 0, "explain": "接住佢鍾意嘅件，再講一對相關嘅耳環。"},
+                {"type": "order", "promptYue": "排好呢句。", "tokens": ["This", "necklace", "is", "beautiful"], "answer": ["This", "necklace", "is", "beautiful"]},
+            ],
+            "roleplay": {
+                "you": "mei",
+                "intro": "Tom 企喺櫃檯前。你講件名之前，等佢問完先答。",
+                "turns": [
+                    {"partner": "Tom", "partnerId": "tom", "line": "What is this?", "audio": "assets/audio/lines/j3-l6.mp3", "audioSlow": "assets/audio/lines/j3-l6-slow.mp3", "expect": "This is a necklace.", "keywords": ["necklace"], "modelAudio": "assets/audio/lines/j3-m1.mp3", "modelSlow": "assets/audio/lines/j3-m1-slow.mp3"},
+                    {"partner": "Tom", "partnerId": "tom", "line": "I like this bracelet.", "audio": "assets/audio/lines/j3-l2.mp3", "audioSlow": "assets/audio/lines/j3-l2-slow.mp3", "expect": "We have a pair of pearl earrings.", "keywords": ["pair", "pearl"], "modelAudio": "assets/audio/lines/j3-l3.mp3", "modelSlow": "assets/audio/lines/j3-l3-slow.mp3"},
+                    {"partner": "Tom", "partnerId": "tom", "line": "May I see these earrings?", "audio": "assets/audio/lines/j3-l4.mp3", "audioSlow": "assets/audio/lines/j3-l4-slow.mp3", "expect": "Of course. This pair is beautiful.", "keywords": ["pair", "beautiful"], "modelAudio": "assets/audio/lines/j3-l5.mp3", "modelSlow": "assets/audio/lines/j3-l5-slow.mp3"},
+                ],
+            },
+            "quiz": [
+                {"type": "listen", "prompt": "你聽到邊個？", "lemma": "these-det", "choices": ["these", "this", "three"], "answer": 0},
+                {"type": "listen", "prompt": "你聽到邊個？", "lemma": "pearl-noun", "choices": ["pearl", "pair", "ring"], "answer": 0},
+                {"type": "meaning", "prompt": "bracelet", "choices": ["手鏈", "頸鏈", "登機證"], "answer": 0},
+                {"type": "meaning", "prompt": "a pair of earrings", "choices": ["一對耳環", "一隻戒指", "靠窗位"], "answer": 0},
+                {"type": "choice", "prompt": "邊個尾音係 /z/？", "choices": ["these", "this", "pair"], "answer": 0, "explain": "these /ðiz/ 有聲。this /ðɪs/ 係清 /s/。"},
+            ],
+            "sound": {
+                "ipa": "/ðɪs/ · /ðiz/ · /pɛɹ/ · /pɝl/",
+                "title": "一件同一對",
+                "note": "this /ðɪs/：短 /ɪ/，尾清 /s/，講一件。these /ðiz/：長 /i/，尾有聲 /z/，講呢啲。pair /pɛɹ/ 係「一對」，嘴開少少。pearl /pɝl/ 係「珍珠」，舌尖向上卷，唔好掂到上顎。bracelet 重音喺第一節，尾 /t/ 要收住。earring 都係第一節重讀。",
+                "pairs": [
+                    {"a": "this-det", "b": "these-det"},
+                    {"a": "pair-noun", "b": "pearl-noun"},
+                ],
+                "drill": ["this-det", "these-det", "pair-noun", "pearl-noun", "bracelet-noun", "earring-noun"],
             },
             "next": "T1",
         },
@@ -1643,7 +1773,7 @@ def build_lessons() -> list[dict]:
             "lemmas": ["afternoon-noun", "where-adv", "flying-verb", "today-adv", "passport-noun", "here-adv", "window-noun", "aisle-noun", "seat-noun", "window-seat-phrase", "boarding-pass-phrase", "boarding-noun", "pass-noun", "flight-noun", "time-noun", "gate-noun", "check-in-noun", "check-verb", "sure-adj", "show-verb", "information-noun", "ticket-noun", "luggage-noun", "please-adv", "thank-verb"],
             "dialogue": t1,
             "understand": [
-                {"prompt": "Where are you flying today? 係問咩？", "choices": ["你今日飛去邊", "你想搵咩首飾", "你有冇訂座"], "answer": 0, "explain": "flying 係飛緊去邊度。"},
+                {"prompt": "Where are you flying today? 係問咩？", "choices": ["你今日飛去邊", "你想搵咩首飾", "你有冇訂位"], "answer": 0, "explain": "flying 係飛緊去邊度。"},
                 {"prompt": "Window or aisle? 係兩個咩？", "choices": ["靠窗位定通道位", "紅酒定白酒", "金定銀"], "answer": 0, "explain": "aisle 係行路嗰條通道旁邊。"},
                 {"prompt": "check-in 開頭係？", "choices": ["/tʃ/，一下堵住再放", "/ʃ/ 長噓氣", "/θ/ 伸舌"], "answer": 0, "explain": "check 唔係 sh。/ʃ/ 喺 sure、show、information。"},
             ],
@@ -1700,7 +1830,7 @@ def build_lessons() -> list[dict]:
             "lemmas": ["evening-noun", "reservation-noun", "table-noun", "table-for-two-phrase", "two-num", "right-adv", "right-this-way-phrase", "way-noun", "would-verb", "like-verb", "window-noun", "by-prep", "great-adj", "seat-noun", "bring-verb", "menu-noun", "ready-adj", "yes-intj", "do-verb", "have-verb", "please-adv", "thank-you-phrase", "red-adj", "led-verb"],
             "dialogue": r1,
             "understand": [
-                {"prompt": "Do you have a reservation? 係問咩？", "choices": ["你有冇訂座", "你想搵銀戒指", "你飛去邊"], "answer": 0, "explain": "有就答 Yes，再講幾多位。"},
+                {"prompt": "Do you have a reservation? 係問咩？", "choices": ["你有冇訂位", "你想搵銀戒指", "你飛去邊"], "answer": 0, "explain": "有就答 Yes，再講幾多位。"},
                 {"prompt": "A table for two. 係幾多位？", "choices": ["兩位", "一位", "通道位"], "answer": 0, "explain": "for two 係人數，唔係價錢。"},
                 {"prompt": "Right this way. 你應該？", "choices": ["跟住佢行", "遞護照", "講自己個名"], "answer": 0, "explain": "right 呢度係「就係咁邊」。開頭 /r/。"},
             ],
@@ -1727,8 +1857,8 @@ def build_lessons() -> list[dict]:
             "quiz": [
                 {"type": "listen", "prompt": "你聽到邊個？", "lemma": "right-adv", "choices": ["right", "light", "night"], "answer": 0},
                 {"type": "listen", "prompt": "你聽到邊個？", "lemma": "red-adj", "choices": ["red", "led", "read"], "answer": 0},
-                {"type": "meaning", "prompt": "reservation", "choices": ["訂座", "護照", "頸鏈"], "answer": 0},
-                {"type": "meaning", "prompt": "I'll bring the menu.", "choices": ["我攞餐牌嚟", "我飛去香港", "我只係睇吓"], "answer": 0},
+                {"type": "meaning", "prompt": "reservation", "choices": ["訂位", "護照", "頸鏈"], "answer": 0},
+                {"type": "meaning", "prompt": "I'll bring the menu.", "choices": ["我攞餐牌嚟", "我飛去香港", "我睇吓先"], "answer": 0},
                 {"type": "choice", "prompt": "table 入面有冇 /r/？", "choices": ["冇。/r/ 喺 right、reservation", "有，讀成 rable", "同 light 同音"], "answer": 0, "explain": "table 係 /ˈteɪ.bəl/。唔好為咗課名硬加 /r/。"},
             ],
             "sound": {
@@ -1769,7 +1899,7 @@ PATH = {
             "lessons": [
                 {"id": "J1"},
                 {"id": "J2"},
-                {"id": "J3", "title": "件件嘅名", "soon": True},
+                {"id": "J3"},
                 {"id": "J4", "title": "金、銀、鑽石、玉", "soon": True},
                 {"id": "J5", "title": "尺寸同試戴", "soon": True},
                 {"id": "J6", "title": "價錢同付款", "soon": True},

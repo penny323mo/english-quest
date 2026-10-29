@@ -55,7 +55,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Hi. I'm just looking, thank you.",
-      "glossYue": "嗨。我只係睇吓，多謝。",
+      "glossYue": "嗨，我睇吓先，多謝。",
       "audio": "assets/audio/lines/j1-l2.mp3",
       "audioSlow": "assets/audio/lines/j1-l2-slow.mp3",
       "say": "Hi. I'm just looking, thank you."
@@ -65,7 +65,7 @@
       "speaker": "mei",
       "speakerLabel": "Mei",
       "text": "Of course. Please take a look around.",
-      "glossYue": "當然。請周圍慢慢睇。",
+      "glossYue": "當然。隨便睇吓。",
       "audio": "assets/audio/lines/j1-l3.mp3",
       "audioSlow": "assets/audio/lines/j1-l3-slow.mp3",
       "say": "[[əv kˈɔɹs.]] Please take a look around."
@@ -95,7 +95,7 @@
     {
       "prompt": "I'm just looking. 客人想點？",
       "choices": [
-        "只係睇吓，未打算買",
+        "睇吓先，未打算買",
         "即刻落單",
         "要兩位靠窗"
       ],
@@ -149,7 +149,7 @@
     {
       "pattern": "I'm just ___.",
       "example": "I'm just looking.",
-      "glossYue": "我只係睇吓。",
+      "glossYue": "我睇吓先。",
       "answer": "looking",
       "choices": [
         "looking",
@@ -290,9 +290,9 @@
       "type": "meaning",
       "prompt": "just looking",
       "choices": [
-        "只係睇吓",
+        "睇吓先",
         "即刻付款",
-        "我有訂座"
+        "我有訂位"
       ],
       "answer": 0
     },

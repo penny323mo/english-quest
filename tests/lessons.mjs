@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), "utf8"));
 const ids = new Set(lex.items.map((item) => item.id));
-const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "t1", "r1"];
+const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "t1", "r1"];
 const lessons = shipped.map((id) =>
   JSON.parse(fs.readFileSync(path.join(root, "content/lessons", `${id}.json`), "utf8")),
 );
@@ -20,8 +20,8 @@ function exists(rel) {
   assert.ok(fs.statSync(file).size > 400, rel);
 }
 
-test("eight lessons each carry the 12-beat payload", () => {
-  assert.equal(lessons.length, 8);
+test("nine lessons each carry the 12-beat payload", () => {
+  assert.equal(lessons.length, 9);
   for (const lesson of lessons) {
     for (const key of ["hero", "canDoYue", "canDoEn", "dialogue", "understand", "chunks", "shadow", "build", "roleplay", "quiz", "sound", "next"]) {
       assert.ok(key in lesson, `${lesson.id} ${key}`);
@@ -77,7 +77,8 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   assert.doesNotMatch(t1.sound.note, /bɔr/);
   assert.equal(fs.existsSync(path.join(root, "content/lessons/f3.json")), true);
   assert.equal(fs.existsSync(path.join(root, "content/lessons/f4.json")), true);
-  assert.equal(fs.existsSync(path.join(root, "content/lessons/j3.json")), false);
+  assert.equal(fs.existsSync(path.join(root, "content/lessons/j3.json")), true);
+  assert.equal(fs.existsSync(path.join(root, "content/lessons/j4.json")), false);
   const pathFile = JSON.parse(fs.readFileSync(path.join(root, "content/path.json"), "utf8"));
   const soon = pathFile.units.flatMap((unit) => unit.lessons).filter((lesson) => lesson.soon);
   assert.ok(soon.length >= 9);
@@ -139,7 +140,7 @@ test("role-play tip names a character or tells you it is your turn", () => {
   assert.match(lesson, /你扮 \$\{name\}/);
   assert.equal(lesson.includes("你而家係"), false);
   const data = fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8");
-  assert.match(data, /"F1", "F2", "F3", "F4", "J1", "J2", "T1", "R1"/);
+  assert.match(data, /"F1", "F2", "F3", "F4", "J1", "J2", "J3", "T1", "R1"/);
 });
 
 test("learner Cantonese does not use 俾, stiff glosses, or simplified characters", () => {
@@ -153,6 +154,15 @@ test("learner Cantonese does not use 俾, stiff glosses, or simplified character
     assert.equal(text.includes("認識你真好"), false, id);
     assert.equal(text.includes("我張護照"), false, id);
     assert.equal(text.includes("係，先生"), false, id);
+    assert.equal(text.includes("午安"), false, id);
+    assert.equal(text.includes("晚上好"), false, id);
+    assert.equal(text.includes("我只係睇吓"), false, id);
+    assert.equal(text.includes("請周圍睇吓"), false, id);
+    assert.equal(text.includes("一位好朋友"), false, id);
     for (const ch of banned) assert.equal(text.includes(ch), false, `${id} ${ch}`);
   }
+  const think = lex.items.find((item) => item.id === "think-verb");
+  assert.equal(think.exampleYue, "我諗係。");
+  assert.equal(think.exampleYue.includes("\u8ad7"), true);
+  assert.equal(think.exampleYue.includes("\u8ac7"), false);
 });

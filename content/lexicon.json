@@ -465,7 +465,7 @@
         "close to the window"
       ],
       "example": "A close friend is here.",
-      "exampleYue": "一位好朋友喺度。",
+      "exampleYue": "有個好朋友喺度。",
       "say": "A [[klˈoʊs]] friend is here.",
       "variants": [],
       "note": "",
@@ -1526,7 +1526,7 @@
         "this afternoon"
       ],
       "example": "Good afternoon.",
-      "exampleYue": "午安。",
+      "exampleYue": "你好。",
       "say": "Good afternoon.",
       "variants": [],
       "note": "",
@@ -1566,7 +1566,7 @@
         "good evening"
       ],
       "example": "Good evening.",
-      "exampleYue": "晚上好。",
+      "exampleYue": "你好。",
       "say": "Good evening.",
       "variants": [],
       "note": "",
@@ -2313,7 +2313,7 @@
         "I'm just looking"
       ],
       "example": "I'm just looking.",
-      "exampleYue": "我只係睇吓。",
+      "exampleYue": "我睇吓先。",
       "say": "I'm just looking.",
       "variants": [],
       "note": "",
@@ -2587,7 +2587,7 @@
         "do you have"
       ],
       "example": "Do you have a reservation?",
-      "exampleYue": "你有冇訂座？",
+      "exampleYue": "你有冇訂位呀？",
       "say": "Do you have a reservation?",
       "variants": [],
       "note": "",
@@ -2782,7 +2782,7 @@
         "just looking"
       ],
       "example": "I'm just looking.",
-      "exampleYue": "我只係睇吓。",
+      "exampleYue": "我睇吓先。",
       "say": "I'm just looking.",
       "variants": [],
       "note": "",
@@ -2855,9 +2855,9 @@
       "arpabet": "V EH1 R IY0",
       "audio": "assets/audio/words/very-adv.mp3",
       "audioSlow": "assets/audio/words/very-adv-slow.mp3",
-      "glossYue": "非常",
+      "glossYue": "好（加強）",
       "glossZh": "非常",
-      "jyutping": "fei1 soeng4",
+      "jyutping": "hou2",
       "collocations": [
         "very nice"
       ],
@@ -2901,7 +2901,7 @@
         "we have"
       ],
       "example": "Do you have a reservation?",
-      "exampleYue": "你有冇訂座？",
+      "exampleYue": "你有冇訂位呀？",
       "say": "Do you have a reservation?",
       "variants": [
         "/əv/ unstressed"
@@ -3411,7 +3411,7 @@
         "looking for"
       ],
       "example": "I'm just looking.",
-      "exampleYue": "我只係睇吓。",
+      "exampleYue": "我睇吓先。",
       "say": "I'm just looking.",
       "variants": [],
       "note": "",
@@ -4130,7 +4130,7 @@
         "look around"
       ],
       "example": "Please take a look around.",
-      "exampleYue": "請周圍睇吓。",
+      "exampleYue": "隨便睇吓。",
       "say": "Please take a look around.",
       "variants": [],
       "note": "",
@@ -4260,6 +4260,202 @@
       "cmuLemma": "watch",
       "phrase": false,
       "audioSha256": "46547a64ec70fa3c6a7aaf5cc6f6a97dcb31dbad98ad63a4bc79ffa4cf63aeb9"
+    },
+    {
+      "id": "bracelet-noun",
+      "lemma": "bracelet",
+      "pos": "noun",
+      "senseId": "wrist-jewel",
+      "ipa": "/ˈbɹeɪ.slət/",
+      "syllables": [
+        "brace",
+        "let"
+      ],
+      "syllableIpa": [
+        "ˈbɹeɪ",
+        "slət"
+      ],
+      "stress": 1,
+      "arpabet": "B R EY1 S L AH0 T",
+      "audio": "assets/audio/words/bracelet-noun.mp3",
+      "audioSlow": "assets/audio/words/bracelet-noun-slow.mp3",
+      "glossYue": "手鏈",
+      "glossZh": "手链",
+      "jyutping": "sau2 lin2",
+      "collocations": [
+        "this bracelet"
+      ],
+      "example": "This bracelet is beautiful.",
+      "exampleYue": "呢條手鏈好靚。",
+      "say": "This [[bɹˈeɪslət]] is beautiful.",
+      "variants": [],
+      "note": "兩個音節，重音喺第一節。尾音 /t/ 要收住。錄音用 /slət/，唔好讀成 /slɪt/。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "bracelet",
+      "phrase": false,
+      "audioSha256": "2bd0e2559eba8a9c17b99f148adff46c8f0c93d0894f03694d3bc5a6860810f7"
+    },
+    {
+      "id": "earring-noun",
+      "lemma": "earring",
+      "pos": "noun",
+      "senseId": "ear-jewel",
+      "ipa": "/ˈɪɹ.ɪŋ/",
+      "syllables": [
+        "ear",
+        "ring"
+      ],
+      "syllableIpa": [
+        "ˈɪɹ",
+        "ɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "IH1 R IH0 NG",
+      "audio": "assets/audio/words/earring-noun.mp3",
+      "audioSlow": "assets/audio/words/earring-noun-slow.mp3",
+      "glossYue": "耳環",
+      "glossZh": "耳环",
+      "jyutping": "ji5 waan4",
+      "collocations": [
+        "a pearl earring"
+      ],
+      "example": "I like this earring.",
+      "exampleYue": "我鍾意呢隻耳環。",
+      "say": "I like this earring.",
+      "variants": [
+        "/ˈiɹ.ɪŋ/"
+      ],
+      "note": "CMU 另有 /ˈiɹ.ɪŋ/。卡片教 /ˈɪɹ.ɪŋ/，重音喺第一節。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "earring",
+      "phrase": false,
+      "audioSha256": "e4aba0ab66bc99d5b815ab42599a63556bc5135281e2653c09ead13b756c7e5e"
+    },
+    {
+      "id": "pair-noun",
+      "lemma": "pair",
+      "pos": "noun",
+      "senseId": "matched-two",
+      "ipa": "/ˈpɛɹ/",
+      "syllables": [
+        "pair"
+      ],
+      "syllableIpa": [
+        "ˈpɛɹ"
+      ],
+      "stress": 1,
+      "arpabet": "P EH1 R",
+      "audio": "assets/audio/words/pair-noun.mp3",
+      "audioSlow": "assets/audio/words/pair-noun-slow.mp3",
+      "glossYue": "一對",
+      "glossZh": "一对",
+      "jyutping": "jat1 deoi3",
+      "collocations": [
+        "a pair of earrings"
+      ],
+      "example": "A pair of earrings.",
+      "exampleYue": "一對耳環。",
+      "say": "A pair [[əv]] earrings.",
+      "variants": [],
+      "note": "美式 /pɛɹ/。唔好同 pearl（珍珠）撈亂。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "pair",
+      "phrase": false,
+      "audioSha256": "e164dacd966ca434aef1e1a254f6a18f9b2d83bc263cb6b29c63355a4447d6d3"
+    },
+    {
+      "id": "pearl-noun",
+      "lemma": "pearl",
+      "pos": "noun",
+      "senseId": "gem",
+      "ipa": "/ˈpɝl/",
+      "syllables": [
+        "pearl"
+      ],
+      "syllableIpa": [
+        "ˈpɝl"
+      ],
+      "stress": 1,
+      "arpabet": "P ER1 L",
+      "audio": "assets/audio/words/pearl-noun.mp3",
+      "audioSlow": "assets/audio/words/pearl-noun-slow.mp3",
+      "glossYue": "珍珠",
+      "glossZh": "珍珠",
+      "jyutping": "zan1 zyu1",
+      "collocations": [
+        "a pearl earring"
+      ],
+      "example": "This is a pearl earring.",
+      "exampleYue": "呢隻係珍珠耳環。",
+      "say": "This is a pearl earring.",
+      "variants": [],
+      "note": "美式 /pɝl/，一個音節。有人會加一個好輕嘅 schwa，卡片跟 CMU。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "pearl",
+      "phrase": false,
+      "audioSha256": "7fe47a54679db6d8eafa9c24e169e3dc7a8f9b7f6f54ceaeba5be05922cebc8a"
+    },
+    {
+      "id": "these-det",
+      "lemma": "these",
+      "pos": "det",
+      "senseId": "plural-near",
+      "ipa": "/ˈðiz/",
+      "syllables": [
+        "these"
+      ],
+      "syllableIpa": [
+        "ˈðiz"
+      ],
+      "stress": 1,
+      "arpabet": "DH IY1 Z",
+      "audio": "assets/audio/words/these-det.mp3",
+      "audioSlow": "assets/audio/words/these-det-slow.mp3",
+      "glossYue": "呢啲",
+      "glossZh": "这些",
+      "jyutping": "ni1 di1",
+      "collocations": [
+        "these earrings"
+      ],
+      "example": "These earrings are beautiful.",
+      "exampleYue": "呢啲耳環好靚。",
+      "say": "These earrings are beautiful.",
+      "variants": [],
+      "note": "長 /i/，尾有聲 /z/。this 先至係短 /ɪ/ 加 /s/。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "these",
+      "phrase": false,
+      "audioSha256": "860d7fe1f9d6a00f8b65a96016f8a90c94e1a614cf988e244e51ec0c0cab84fc"
     },
     {
       "id": "wife-noun",
@@ -5028,14 +5224,14 @@
       "arpabet": "R EH2 Z ER0 V EY1 SH AH0 N",
       "audio": "assets/audio/words/reservation-noun.mp3",
       "audioSlow": "assets/audio/words/reservation-noun-slow.mp3",
-      "glossYue": "訂座",
+      "glossYue": "訂位",
       "glossZh": "预订",
-      "jyutping": "deng6 zo6",
+      "jyutping": "deng6 wai2",
       "collocations": [
         "have a reservation"
       ],
       "example": "Do you have a reservation?",
-      "exampleYue": "你有冇訂座？",
+      "exampleYue": "你有冇訂位呀？",
       "say": "Do you have a reservation?",
       "variants": [],
       "note": "開頭 /r/。有 /ʃ/。",
@@ -6390,14 +6586,14 @@
       "arpabet": "JH AH1 S T L UH1 K IH0 NG",
       "audio": "assets/audio/words/just-looking-phrase.mp3",
       "audioSlow": "assets/audio/words/just-looking-phrase-slow.mp3",
-      "glossYue": "只係睇吓",
+      "glossYue": "睇吓先",
       "glossZh": "只是看看",
-      "jyutping": "zi2 hai6 tai2 haa5",
+      "jyutping": "tai2 haa5 sin1",
       "collocations": [
         "I'm just looking"
       ],
       "example": "I'm just looking.",
-      "exampleYue": "我只係睇吓。",
+      "exampleYue": "我睇吓先。",
       "say": "I'm just looking.",
       "variants": [],
       "note": "",

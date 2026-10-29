@@ -1,5 +1,11 @@
 # Changelog — English Quest
 
+## Round 13 fixes
+- Spoken Cantonese now uses 你好 for afternoon and evening greetings, and the F2 set is 早晨／你好／晚安. 我只係睇吓 is 我睇吓先, 請周圍睇吓 is 隨便睇吓, and the restaurant opens with 你好，有冇訂位呀？. 一位好朋友喺度 is 有個好朋友喺度。. The gloss 我諗係。 keeps 諗 (U+8AD7).
+- F2, F3, and F4 hooks are separate Harbor Glow scenes: a greeting at the counter, a clock with coins, and a polite exchange. Each file is a 900×1200 WebP with width and height. The app still preloads them onto the navy–teal placeholder.
+- J3 件件嘅名 is a full 12-beat lesson after J2. It names a necklace, a bracelet, and a pair of pearl earrings, and it keeps this/these and pair/pearl apart. CMU and dictionary disagreements are flagged and resolved. New clips have about 180 ms of lead. Bracelet is forced to /slət/, and the weak “of” is /əv/.
+- Tests are 12/12. At 390px the path, the locked J3 screen, the rewritten word cards, and the J3 hook, shadow, role, and sound beats stay inside the phone. Lighthouse mobile: performance 0.98, accessibility 1, best-practices 1.
+
 ## Round 12 fixes
 - Round 12 found no critical, major, or minor defects. The seven live-audit items stay closed. No product code changed.
 - Tests stayed 12/12. At 390px, the path, the locked J2 screen, the read card, settings, the hello card with Jyutping on, and attributions stay inside the phone column.

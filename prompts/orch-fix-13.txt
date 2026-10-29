@@ -1,15 +1,40 @@
 You are the coder for English Quest (grok 4.7). cd /workspace/sidequest/english-quest.
-Phase 2 fix run (round 13 of max 15). Supervisor: Grok Duet.
+Phase 2b fix run (round 13 of max 15). Supervisor: Grok Duet. Narrow scope only — do not reopen closed items from round 11.
 
-Read /workspace/sidequest/english-quest/reviews/orch-r13-grok.md and fix every CRITICAL and MAJOR issue (MINOR where sensible).
-ALSO read the previous round 390px review: /workspace/sidequest/english-quest/reviews/orch-r12-grok.md
-ALSO (authoritative live audit, same priority as MAJOR): read /workspace/sidequest/english-quest/review/loop-r3/coder-audit.md and fix every still-open item. Do not finish while any remain.
-Keep matching SPEC.md and DECISIONS.md.
-Cantonese: natural spoken HK, correct classifiers, 畀 not 俾, no simplified characters.
+Read SPEC.md, DECISIONS.md, and the authoritative live audit:
+  /workspace/sidequest/english-quest/review/loop-r12/coder-audit.md
+Also skim reviews/orch-r12-grok.md if useful; the audit above is the source of truth for what is still open.
+
+Fix ALL open audit items in this exact order:
+
+(a) Natural spoken Cantonese everywhere.
+  - Replace 午安 and 晚上好 with 你好 or 歡迎光臨 depending on context (host/shop → 歡迎光臨; peer/general → 你好). F2's 早晨／午安／晚上好 → e.g. 早晨／你好／晚安.
+  - 我只係睇吓 → 我睇吓先 (all lexicon examples, lesson lines, role options).
+  - 請周圍睇吓 → 隨便睇吓.
+  - R1 opening line → 「你好，有冇訂位呀？」 (and matching lines.json / lexicon).
+  - Rewrite 一位好朋友喺度 naturally (e.g. 有個好朋友喺度。).
+  - Gloss for "I think so": find the exact character in content/lexicon.json. It MUST be 諗 (U+8AD7) as in 我諗係。 — NOT 談 (U+8AC7), NOT a garbled/wrong glyph. Fix if wrong.
+  - Full sweep of EVERY glossYue / exampleYue / role option for Mandarin flavour, calques, simplified characters; 畀 not 俾; correct classifiers.
+  - Extend/add a test that fails on 午安、晚上好、我只係睇吓、請周圍睇吓、一位好朋友、俾, and simplified chars in Yue fields.
+
+(b) Distinct F2, F3, F4 hook illustrations.
+  - Replace assets/art/lessons/f2.webp, f3.webp, f4.webp with distinct, on-topic premium AI art (not the same doorway/corridor composition).
+  - F2 = greeting scene; F3 = numbers/money/time; F4 = polite exchange. Harbor Glow style, existing cast where relevant.
+  - WebP, lazy-loaded, explicit width/height; no empty circles/green squares on first paint.
+
+(c) Raise Pedagogy to ≥9.
+  - Add lesson(s) to the same 12-beat standard as F1–F4 (prefer next Path items: J3 and/or T2 / R2). Quality over quantity; richer examples — no bare「七。」-type lines.
+  - Lexicon IPA + audio must stay accurate (CMUdict / dictionaryapi cross-check; flags.json for disagreements); pad new clips ~150–250 ms lead/trail.
+  - Update content/path.json, web/src/data.ts, unlock order, tests.
+
+Keep: Lighthouse mobile ≥90 (prefer 100), zero 390px overflow, zero IPA/audio regressions.
+Cantonese copy rules: natural spoken HK Cantonese, correct classifiers, 畀 not 俾, Traditional only.
+
 Do not edit reviews/ or prompts/. Re-run tests. Re-check 390px for overflow after fixes.
 Append '## Round 13 fixes' to CHANGELOG.md describing what changed.
-If the review verdict is SHIP and every audit item is truly fixed with no further app-code changes needed, still re-run tests and note that in CHANGELOG — but prefer fixing any remaining gap over a no-op.
-At the END of this fix phase: git add -A, commit, and push to origin main (no force-push, no secrets). Do NOT force-add gitignored report/screenshot/audit paths.
+
+At the END of this fix phase: git add -A, commit, and push to origin main (no force-push, no secrets).
+Do NOT force-add gitignored report/screenshot/audit/review paths (REPORT.md, reviews/*, review/loop-*, screenshots/orch). Do not delete anything on GitHub. Do not use paid services.
 
 WHEN COMPLETELY FINISHED, as your very last action, create the file /workspace/sidequest/english-quest/.orch/fix-13.done containing the word DONE.
 ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-13.done

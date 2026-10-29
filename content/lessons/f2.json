@@ -103,7 +103,7 @@
         "問靠窗定通道"
       ],
       "answer": 0,
-      "explain": "認識人嘅時候講，語氣輕就得。"
+      "explain": "識人嗰陣講，語氣輕就得。"
     },
     {
       "prompt": "Thank you 開頭個音係？",
@@ -120,7 +120,7 @@
     {
       "pattern": "Good ___.",
       "example": "Good morning.",
-      "glossYue": "早晨／午安／晚上好。",
+      "glossYue": "早晨／你好／晚安。",
       "answer": "morning",
       "choices": [
         "morning",
@@ -269,7 +269,7 @@
       "prompt": "Nice to meet you",
       "choices": [
         "好高興認識你",
-        "只係睇吓",
+        "睇吓先",
         "靠窗位"
       ],
       "answer": 0

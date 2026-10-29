@@ -214,7 +214,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "Hi. I'm just looking, thank you.",
-    "glossYue": "嗨。我只係睇吓，多謝。",
+    "glossYue": "嗨，我睇吓先，多謝。",
     "audio": "assets/audio/lines/j1-l2.mp3",
     "audioSlow": "assets/audio/lines/j1-l2-slow.mp3",
     "say": "Hi. I'm just looking, thank you."
@@ -224,7 +224,7 @@
     "speaker": "mei",
     "speakerLabel": "Mei",
     "text": "Of course. Please take a look around.",
-    "glossYue": "當然。請周圍慢慢睇。",
+    "glossYue": "當然。隨便睇吓。",
     "audio": "assets/audio/lines/j1-l3.mp3",
     "audioSlow": "assets/audio/lines/j1-l3-slow.mp3",
     "say": "[[əv kˈɔɹs.]] Please take a look around."
@@ -300,11 +300,61 @@
     "say": "[[əv kˈɔɹs.]] I'll show you a few."
   },
   {
+    "id": "j3-l1",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "This necklace is beautiful.",
+    "glossYue": "呢條頸鏈好靚。",
+    "audio": "assets/audio/lines/j3-l1.mp3",
+    "audioSlow": "assets/audio/lines/j3-l1-slow.mp3",
+    "say": "This necklace is beautiful."
+  },
+  {
+    "id": "j3-l2",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "I like this bracelet.",
+    "glossYue": "我鍾意呢條手鏈。",
+    "audio": "assets/audio/lines/j3-l2.mp3",
+    "audioSlow": "assets/audio/lines/j3-l2-slow.mp3",
+    "say": "I like this [[bɹˈeɪslət.]]"
+  },
+  {
+    "id": "j3-l3",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "We have a pair of pearl earrings.",
+    "glossYue": "我哋有一對珍珠耳環。",
+    "audio": "assets/audio/lines/j3-l3.mp3",
+    "audioSlow": "assets/audio/lines/j3-l3-slow.mp3",
+    "say": "We have a pair [[əv]] pearl earrings."
+  },
+  {
+    "id": "j3-l4",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "May I see these earrings?",
+    "glossYue": "可唔可以睇吓呢啲耳環？",
+    "audio": "assets/audio/lines/j3-l4.mp3",
+    "audioSlow": "assets/audio/lines/j3-l4-slow.mp3",
+    "say": "May I see these earrings?"
+  },
+  {
+    "id": "j3-l5",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "Of course. This pair is beautiful.",
+    "glossYue": "當然。呢對好靚。",
+    "audio": "assets/audio/lines/j3-l5.mp3",
+    "audioSlow": "assets/audio/lines/j3-l5-slow.mp3",
+    "say": "[[əv kˈɔɹs.]] This pair is beautiful."
+  },
+  {
     "id": "t1-l1",
     "speaker": "kai",
     "speakerLabel": "Kai",
     "text": "Good afternoon. Where are you flying today?",
-    "glossYue": "午安。你今日飛去邊？",
+    "glossYue": "你好，你今日飛去邊？",
     "audio": "assets/audio/lines/t1-l1.mp3",
     "audioSlow": "assets/audio/lines/t1-l1-slow.mp3",
     "say": "Good afternoon. Where are you flying today?"
@@ -354,7 +404,7 @@
     "speaker": "ana",
     "speakerLabel": "Ana",
     "text": "Good evening. Do you have a reservation?",
-    "glossYue": "晚上好。你有冇訂座？",
+    "glossYue": "你好，有冇訂位呀？",
     "audio": "assets/audio/lines/r1-l1.mp3",
     "audioSlow": "assets/audio/lines/r1-l1-slow.mp3",
     "say": "Good evening. Do you have a reservation?"
@@ -608,5 +658,25 @@
     "audio": "assets/audio/lines/f4-m3.mp3",
     "audioSlow": "assets/audio/lines/f4-m3-slow.mp3",
     "say": "Good night."
+  },
+  {
+    "id": "j3-l6",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "What is this?",
+    "glossYue": "呢件係咩？",
+    "audio": "assets/audio/lines/j3-l6.mp3",
+    "audioSlow": "assets/audio/lines/j3-l6-slow.mp3",
+    "say": "What is this?"
+  },
+  {
+    "id": "j3-m1",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "This is a necklace.",
+    "glossYue": "呢條係頸鏈。",
+    "audio": "assets/audio/lines/j3-m1.mp3",
+    "audioSlow": "assets/audio/lines/j3-m1-slow.mp3",
+    "say": "This is a necklace."
   }
 ]

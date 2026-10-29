@@ -43,7 +43,7 @@
       "speaker": "ana",
       "speakerLabel": "Ana",
       "text": "Good evening. Do you have a reservation?",
-      "glossYue": "晚上好。你有冇訂座？",
+      "glossYue": "你好，有冇訂位呀？",
       "audio": "assets/audio/lines/r1-l1.mp3",
       "audioSlow": "assets/audio/lines/r1-l1-slow.mp3",
       "say": "Good evening. Do you have a reservation?"
@@ -93,7 +93,7 @@
     {
       "prompt": "Do you have a reservation? 係問咩？",
       "choices": [
-        "你有冇訂座",
+        "你有冇訂位",
         "你想搵銀戒指",
         "你飛去邊"
       ],
@@ -272,7 +272,7 @@
       "type": "meaning",
       "prompt": "reservation",
       "choices": [
-        "訂座",
+        "訂位",
         "護照",
         "頸鏈"
       ],
@@ -284,7 +284,7 @@
       "choices": [
         "我攞餐牌嚟",
         "我飛去香港",
-        "我只係睇吓"
+        "我睇吓先"
       ],
       "answer": 0
     },

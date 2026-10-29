@@ -398,6 +398,63 @@
       "taughtIpa": "/ˈsɑ.ɹi/",
       "resolvedBy": "round-11 lexicographer",
       "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "earring-noun",
+      "lemma": "earring",
+      "pos": "noun",
+      "cmudict": [
+        "IH1 R IH0 NG /ˈɪɹ.ɪŋ/",
+        "IY1 R IH0 NG /ˈiɹ.ɪŋ/"
+      ],
+      "wiktionary": [
+        "GA /ˈɪɹ.ɪŋ/",
+        "also /ˈɪə.ɹɪŋ/ in British entries"
+      ],
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU lists a tense first vowel /i/ as a second US reading. Wiktionary's General American line is the lax /ɪ/.",
+      "resolution": "Teach CMU's first entry /ˈɪɹ.ɪŋ/, which matches Wiktionary GA. /ˈiɹ.ɪŋ/ stays a labelled variant. Audio is Piper's reading of the example sentence.",
+      "resolved": true,
+      "taughtIpa": "/ˈɪɹ.ɪŋ/",
+      "resolvedBy": "round-13 lexicographer",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "pair-noun",
+      "lemma": "pair",
+      "pos": "noun",
+      "cmudict": [
+        "P EH1 R /pɛɹ/"
+      ],
+      "wiktionary": [
+        "GA /pɛɹ/",
+        "British /peə/"
+      ],
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "British sources use /peə/. CMU and General American use /pɛɹ/, the same pattern as pear.",
+      "resolution": "Teach the American /pɛɹ/. The card tells learners not to mix it up with pearl /pɝl/.",
+      "resolved": true,
+      "taughtIpa": "/ˈpɛɹ/",
+      "resolvedBy": "round-13 lexicographer",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "pearl-noun",
+      "lemma": "pearl",
+      "pos": "noun",
+      "cmudict": [
+        "P ER1 L /pɝl/"
+      ],
+      "wiktionary": [
+        "GA /pɝl/"
+      ],
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "Merriam-Webster prints an optional schwa, /ˈpər(-ə)l/. CMU and Wiktionary GA are one syllable.",
+      "resolution": "Teach the one-syllable CMU form /pɝl/. The optional schwa is noted, not taught as the main form.",
+      "resolved": true,
+      "taughtIpa": "/ˈpɝl/",
+      "resolvedBy": "round-13 lexicographer",
+      "resolvedAt": "2026-10-30"
     }
   ]
 }

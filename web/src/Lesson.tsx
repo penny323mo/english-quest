@@ -23,6 +23,7 @@ function tipFor(id: string): string {
   if (id === "F3") return "five 尾音要收到 /v/，six 尾有 /ks/。唔好食咗尾音。";
   if (id === "F4") return "/l/ 舌尖抵上顎，氣由兩邊出。/n/ 氣由鼻出。";
   if (id === "J2") return "w 要圓唇，v 係上牙輕碰下唇。";
+  if (id === "J3") return "this 尾係清 /s/，these 尾係有聲 /z/。pair 同 pearl 唔好撈。";
   if (id === "T1") return "sure、show 先係 /ʃ/。check-in 嘅 check 係 /tʃ/，前面有一粒塞音。";
   if (id === "R1") return "美式 /r/ 舌尖唔好掂到上顎。table 本身冇 /r/。";
   return "跟住模範嘅口型，慢慢講。";
@@ -571,7 +572,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪八課你行完啦。到期嘅卡會喺重溫等你。</p>
+        <p className="lede">呢輪九課你行完啦。到期嘅卡會喺重溫等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );
