@@ -1,5 +1,9 @@
 # Changelog — English Quest
 
+## Round 8 fixes
+- Round 8 found no critical, major, or minor defects. No product code changed.
+- Tests stayed 9/9. At 390px, the foundation path, the ship card, the sheep card, and attributions stay inside the phone column.
+
 ## Round 7 fixes
 - Round 7 found no critical, major, or minor defects. No product code changed.
 - Tests stayed 9/9. At 390px, the travel path, the restaurant path, the sure card, and attributions stay inside the phone column.
