@@ -1,5 +1,9 @@
 # Changelog — English Quest
 
+## Round 4 fixes
+- Round 4 found no critical, major, or minor defects. No product code changed.
+- Tests stayed 9/9. At 390px, attributions, the path, the word list, the before-vowel *the* card, the jewellery card, and F1 stay inside the phone column.
+
 ## Round 3 fixes
 - Precached mp3 and webp files now get a Workbox content revision. An installed PWA re-downloads a clip when the bytes change, including the corrected before-vowel *the*.
 - Fingerprinted JS and CSS still use a null revision, because the filename already changes.
