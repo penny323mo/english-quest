@@ -1,5 +1,9 @@
 # Changelog — English Quest
 
+## Round 10 fixes
+- Round 10 found no critical, major, or minor defects. No product code changed.
+- Tests stayed 9/9. At 390px, the restaurant path, the locked J1 screen, settings, and the hello card with Jyutping on stay inside the phone column.
+
 ## Round 9 fixes
 - Round 9 found no critical, major, or minor defects. No product code changed.
 - Tests stayed 9/9. At 390px, the path, the locked J2 screen, the sheep card, and attributions stay inside the phone column.
