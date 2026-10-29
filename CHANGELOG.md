@@ -1,5 +1,9 @@
 # Changelog — English Quest
 
+## Round 6 fixes
+- Round 6 found no critical, major, or minor defects. No product code changed.
+- Tests stayed 9/9. At 390px, the path, settings, the hello card with Jyutping on, F1, and attributions stay inside the phone column.
+
 ## Round 5 fixes
 - Round 5 found no critical, major, or minor defects. No product code changed.
 - Tests stayed 9/9. At 390px, attributions, the path, thank, check-in, table for two, and J1 stay inside the phone column.
