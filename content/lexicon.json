@@ -1015,9 +1015,9 @@
       "collocations": [
         "relax and speak"
       ],
-      "example": "Relax.",
-      "exampleYue": "放鬆。",
-      "say": "Relax.",
+      "example": "Please relax.",
+      "exampleYue": "請放鬆吓。",
+      "say": "Please relax.",
       "variants": [],
       "note": "",
       "sources": [
@@ -1029,7 +1029,7 @@
       "senseMismatch": false,
       "cmuLemma": "relax",
       "phrase": false,
-      "audioSha256": "cf9fa66a7421e173c2f31e1a93159640c2c44e68674d29ba7c0a5271cde94339"
+      "audioSha256": "ca19504721a58c887d9dd45f5ed71084f9c999f3b0d9dd03963b92b392bd7fe2"
     },
     {
       "id": "begin-verb",
@@ -1170,7 +1170,7 @@
         "my name is"
       ],
       "example": "My name is Mei.",
-      "exampleYue": "我叫 Mei。",
+      "exampleYue": "我叫 Mei，好高興認識你。",
       "say": "My name is Mei.",
       "variants": [],
       "note": "",
@@ -1605,7 +1605,7 @@
         "my passport"
       ],
       "example": "My name is Ling.",
-      "exampleYue": "我叫 Ling。",
+      "exampleYue": "我叫 Ling，好高興認識你。",
       "say": "My name is Ling.",
       "variants": [],
       "note": "",
@@ -1953,10 +1953,10 @@
         "yes, madam"
       ],
       "example": "Yes, madam.",
-      "exampleYue": "好嘅，女士。",
+      "exampleYue": "好嘅，小姐。",
       "say": "Yes, madam.",
       "variants": [],
-      "note": "",
+      "note": "madam 係英文嘅客氣稱呼。舖頭應客可以講小姐或者太太，唔好直譯做女士。",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
@@ -2033,7 +2033,7 @@
         "a seat"
       ],
       "example": "A table for two.",
-      "exampleYue": "兩位。",
+      "exampleYue": "一張兩位嘅檯。",
       "say": "[[ə ˈteɪbəl fɚ ˈtu.]]",
       "variants": [
         "/eɪ/ letter name"
@@ -2112,7 +2112,7 @@
         "a table of"
       ],
       "example": "Of course.",
-      "exampleYue": "當然。",
+      "exampleYue": "當然可以。",
       "say": "Of course.",
       "variants": [
         "/əv/ weak, as in of course"
@@ -3564,9 +3564,9 @@
       "collocations": [
         "let me know"
       ],
-      "example": "Let me know.",
-      "exampleYue": "話我知。",
-      "say": "Let me know.",
+      "example": "Let me know if you need anything.",
+      "exampleYue": "有咩需要就話我知。",
+      "say": "Let me know if you need anything.",
       "variants": [],
       "note": "",
       "sources": [
@@ -3578,7 +3578,7 @@
       "senseMismatch": false,
       "cmuLemma": "let",
       "phrase": false,
-      "audioSha256": "1953c758a8f7782844449f907ad4c1cefe4e4b297e7c9e0efadfa7951fe62263"
+      "audioSha256": "be6ba92673fb318e4af7fa8ddf155fe9e0f9e70858bc72d05a933f3254113d3f"
     },
     {
       "id": "need-verb",
@@ -3762,7 +3762,7 @@
         "of course"
       ],
       "example": "Of course.",
-      "exampleYue": "當然。",
+      "exampleYue": "當然可以。",
       "say": "[[əv kˈɔɹs.]]",
       "variants": [],
       "note": "",
@@ -5386,7 +5386,7 @@
         "this is great"
       ],
       "example": "This is great.",
-      "exampleYue": "好好。",
+      "exampleYue": "呢度真係好好。",
       "say": "This is great.",
       "variants": [],
       "note": "開頭有 /r/。",
@@ -5478,6 +5478,404 @@
       "cmuLemma": "menu",
       "phrase": false,
       "audioSha256": "0161d7db18aa359b0f517f900733b19d28d11bf55160ec5734120f6ee85d1349"
+    },
+    {
+      "id": "order-verb",
+      "lemma": "order",
+      "pos": "verb",
+      "senseId": "place-order",
+      "ipa": "/ˈɔɹ.dɚ/",
+      "syllables": [
+        "or",
+        "der"
+      ],
+      "syllableIpa": [
+        "ˈɔɹ",
+        "dɚ"
+      ],
+      "stress": 1,
+      "arpabet": "AO1 R D ER0",
+      "audio": "assets/audio/words/order-verb.mp3",
+      "audioSlow": "assets/audio/words/order-verb-slow.mp3",
+      "glossYue": "叫（落單）",
+      "glossZh": "点餐",
+      "jyutping": "giu3",
+      "collocations": [
+        "like to order"
+      ],
+      "example": "What would you like to order?",
+      "exampleYue": "你想叫咩？",
+      "say": "What would you like to order?",
+      "variants": [],
+      "note": "美式 /ˈɔɹ.dɚ/。開頭圓唇，中間有 /ɹ/。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "order",
+      "phrase": false,
+      "audioSha256": "9d075b0ddedcb1e9558af424cede42355f40626a9d729cf59fcaa0db6be8dd7a"
+    },
+    {
+      "id": "recommend-verb",
+      "lemma": "recommend",
+      "pos": "verb",
+      "senseId": "suggest-dish",
+      "ipa": "/ˌɹɛ.kə.ˈmɛnd/",
+      "syllables": [
+        "re",
+        "com",
+        "mend"
+      ],
+      "syllableIpa": [
+        "ˌɹɛ",
+        "kə",
+        "ˈmɛnd"
+      ],
+      "stress": 3,
+      "arpabet": "R EH2 K AH0 M EH1 N D",
+      "audio": "assets/audio/words/recommend-verb.mp3",
+      "audioSlow": "assets/audio/words/recommend-verb-slow.mp3",
+      "glossYue": "推薦",
+      "glossZh": "推荐",
+      "jyutping": "teoi1 zin3",
+      "collocations": [
+        "what do you recommend"
+      ],
+      "example": "What do you recommend?",
+      "exampleYue": "你推薦咩？",
+      "say": "What do you recommend?",
+      "variants": [],
+      "note": "重音喺第三節 mend。唔好讀成第一節。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "recommend",
+      "phrase": false,
+      "audioSha256": "45cd91175112dc0d5e0d648369edf47da90b986e86060b065131b5da7d3886d7"
+    },
+    {
+      "id": "else-adv",
+      "lemma": "else",
+      "pos": "adv",
+      "senseId": "additional",
+      "ipa": "/ˈɛls/",
+      "syllables": [
+        "else"
+      ],
+      "syllableIpa": [
+        "ˈɛls"
+      ],
+      "stress": 1,
+      "arpabet": "EH1 L S",
+      "audio": "assets/audio/words/else-adv.mp3",
+      "audioSlow": "assets/audio/words/else-adv-slow.mp3",
+      "glossYue": "其他",
+      "glossZh": "其他",
+      "jyutping": "kei4 taa1",
+      "collocations": [
+        "anything else"
+      ],
+      "example": "Anything else?",
+      "exampleYue": "仲有冇其他？",
+      "say": "Anything else?",
+      "variants": [],
+      "note": "尾音 /s/ 要留低。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "else",
+      "phrase": false,
+      "audioSha256": "095818f01b924ba9e5a84a368a19441d97a6ffd5227daa70bb4e8c76e23419ea"
+    },
+    {
+      "id": "water-noun",
+      "lemma": "water",
+      "pos": "noun",
+      "senseId": "drink-water",
+      "ipa": "/ˈwɔ.tɚ/",
+      "syllables": [
+        "wa",
+        "ter"
+      ],
+      "syllableIpa": [
+        "ˈwɔ",
+        "tɚ"
+      ],
+      "stress": 1,
+      "arpabet": "W AO1 T ER0",
+      "audio": "assets/audio/words/water-noun.mp3",
+      "audioSlow": "assets/audio/words/water-noun-slow.mp3",
+      "glossYue": "水",
+      "glossZh": "水",
+      "jyutping": "seoi2",
+      "collocations": [
+        "some water"
+      ],
+      "example": "I'd like some water, please.",
+      "exampleYue": "我想要杯水，唔該。",
+      "say": "I'd like some water, please.",
+      "variants": [
+        "/ˈwɑ.tɚ/"
+      ],
+      "note": "CMU 係 /ˈwɔ.tɚ/。有人讀 /ˈwɑ.tɚ/。美式中間嘅 /t/ 常常輕輕一拍。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "water",
+      "phrase": false,
+      "audioSha256": "dbf7bbeb3e0305888a67810621b0b7597102bca15e69be31dcf03dc8b74d0a7c"
+    },
+    {
+      "id": "coffee-noun",
+      "lemma": "coffee",
+      "pos": "noun",
+      "senseId": "coffee-drink",
+      "ipa": "/ˈkɑ.fi/",
+      "syllables": [
+        "cof",
+        "fee"
+      ],
+      "syllableIpa": [
+        "ˈkɑ",
+        "fi"
+      ],
+      "stress": 1,
+      "arpabet": "K AA1 F IY0",
+      "audio": "assets/audio/words/coffee-noun.mp3",
+      "audioSlow": "assets/audio/words/coffee-noun-slow.mp3",
+      "glossYue": "咖啡",
+      "glossZh": "咖啡",
+      "jyutping": "gaa3 fe1",
+      "collocations": [
+        "a coffee please"
+      ],
+      "example": "I'd like a coffee, please.",
+      "exampleYue": "我想要杯咖啡，唔該。",
+      "say": "I'd like [[ə kˈɑfi]] , please.",
+      "variants": [
+        "/ˈkɔ.fi/"
+      ],
+      "note": "CMU 第一條 /ˈkɑ.fi/，第二條 /ˈkɔ.fi/。卡片教第一條。錄音用 /ɑ/。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "coffee",
+      "phrase": false,
+      "audioSha256": "584926d9cfe8760cadb1736bd409fe9642c2a8315e8a3acee28df2aa8451a0f8"
+    },
+    {
+      "id": "tea-noun",
+      "lemma": "tea",
+      "pos": "noun",
+      "senseId": "tea-drink",
+      "ipa": "/ˈti/",
+      "syllables": [
+        "tea"
+      ],
+      "syllableIpa": [
+        "ˈti"
+      ],
+      "stress": 1,
+      "arpabet": "T IY1",
+      "audio": "assets/audio/words/tea-noun.mp3",
+      "audioSlow": "assets/audio/words/tea-noun-slow.mp3",
+      "glossYue": "茶",
+      "glossZh": "茶",
+      "jyutping": "caa4",
+      "collocations": [
+        "tea please"
+      ],
+      "example": "I'd like tea, please.",
+      "exampleYue": "我想要杯茶，唔該。",
+      "say": "I'd like tea, please.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "tea",
+      "phrase": false,
+      "audioSha256": "c3b0ca478ae065208b125d598d46e1ff3429734d16f809136a85440fb10e1863"
+    },
+    {
+      "id": "chicken-noun",
+      "lemma": "chicken",
+      "pos": "noun",
+      "senseId": "chicken-dish",
+      "ipa": "/ˈtʃɪ.kən/",
+      "syllables": [
+        "chick",
+        "en"
+      ],
+      "syllableIpa": [
+        "ˈtʃɪ",
+        "kən"
+      ],
+      "stress": 1,
+      "arpabet": "CH IH1 K AH0 N",
+      "audio": "assets/audio/words/chicken-noun.mp3",
+      "audioSlow": "assets/audio/words/chicken-noun-slow.mp3",
+      "glossYue": "雞",
+      "glossZh": "鸡",
+      "jyutping": "gai1",
+      "collocations": [
+        "the chicken please"
+      ],
+      "example": "I'd like the chicken, please.",
+      "exampleYue": "我想叫雞，唔該。",
+      "say": "I'd like the [[tʃˈɪkən]] , please.",
+      "variants": [],
+      "note": "兩個音節，重音喺第一節。第二節係 /ən/，唔好讀成 /ɪn/。開頭 /tʃ/，唔係 /ʃ/。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "chicken",
+      "phrase": false,
+      "audioSha256": "1953653dada30135f2e1879a37e66f415914314bd62bed92bfa3713d9e5a9456"
+    },
+    {
+      "id": "fish-noun",
+      "lemma": "fish",
+      "pos": "noun",
+      "senseId": "fish-dish",
+      "ipa": "/ˈfɪʃ/",
+      "syllables": [
+        "fish"
+      ],
+      "syllableIpa": [
+        "ˈfɪʃ"
+      ],
+      "stress": 1,
+      "arpabet": "F IH1 SH",
+      "audio": "assets/audio/words/fish-noun.mp3",
+      "audioSlow": "assets/audio/words/fish-noun-slow.mp3",
+      "glossYue": "魚",
+      "glossZh": "鱼",
+      "jyutping": "jyu4",
+      "collocations": [
+        "the fish"
+      ],
+      "example": "I recommend the fish.",
+      "exampleYue": "我推薦魚。",
+      "say": "I recommend the fish.",
+      "variants": [],
+      "note": "一個音節。尾音 /ʃ/。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "fish",
+      "phrase": false,
+      "audioSha256": "11fa74c437aab798a4f4b89e28355e76f3d04f19e8d064365d184ba1bead9f43"
+    },
+    {
+      "id": "can-verb",
+      "lemma": "can",
+      "pos": "verb",
+      "senseId": "modal-weak",
+      "ipa": "/kən/",
+      "syllables": [
+        "can"
+      ],
+      "syllableIpa": [
+        "kən"
+      ],
+      "stress": 0,
+      "arpabet": "K AH0 N",
+      "audio": "assets/audio/words/can-verb.mp3",
+      "audioSlow": "assets/audio/words/can-verb-slow.mp3",
+      "glossYue": "可以（弱讀）",
+      "glossZh": "可以",
+      "jyutping": "ho2 ji5",
+      "collocations": [
+        "can I have"
+      ],
+      "example": "Can I have some water, please?",
+      "exampleYue": "可唔可以畀我杯水？",
+      "say": "[[kən]] I have some water, please.",
+      "variants": [
+        "/kæn/ stressed"
+      ],
+      "note": "問句入面通常好輕 /kən/，冇重音。重讀先至係 /kæn/。呢張卡教弱讀，因為 Can I have 就係咁讀。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "can",
+      "phrase": false,
+      "audioSha256": "f426806eddfc14bd6ab454b294cf828936c254d0598d05824061cc95ab31e858"
+    },
+    {
+      "id": "cant-verb",
+      "lemma": "can't",
+      "pos": "verb",
+      "senseId": "modal-negative",
+      "ipa": "/ˈkænt/",
+      "syllables": [
+        "can't"
+      ],
+      "syllableIpa": [
+        "ˈkænt"
+      ],
+      "stress": 1,
+      "arpabet": "K AE1 N T",
+      "audio": "assets/audio/words/cant-verb.mp3",
+      "audioSlow": "assets/audio/words/cant-verb-slow.mp3",
+      "glossYue": "唔可以",
+      "glossZh": "不可以",
+      "jyutping": "m4 ho2 ji5",
+      "collocations": [
+        "I can't"
+      ],
+      "example": "I can't eat fish.",
+      "exampleYue": "我食唔到魚。",
+      "say": "I can't eat fish.",
+      "variants": [],
+      "note": "有尾 /t/。食咗尾音就會聽成 can。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "can't",
+      "phrase": false,
+      "audioSha256": "cdc20b4ce21e6c9c7ec486ccd18cd54afe9920c89a18570b6905ef618a34a5ba"
     },
     {
       "id": "ready-adj",
@@ -5852,7 +6250,7 @@
         "with you"
       ],
       "example": "With you.",
-      "exampleYue": "同你。",
+      "exampleYue": "同你一齊。",
       "say": "[[wˈɪθ]] you.",
       "variants": [],
       "note": "呢張卡只練清音變體，唔係唯一標準音。主卡係 with-prep /wɪð/。",
@@ -5890,7 +6288,7 @@
         "the boat sank"
       ],
       "example": "The boat sank.",
-      "exampleYue": "艘船沉咗。",
+      "exampleYue": "一艘船沉咗。",
       "say": "The boat sank.",
       "variants": [],
       "note": "對比組。唔好用嚟代替 thank。",
@@ -6042,7 +6440,7 @@
         "table for three"
       ],
       "example": "A table for three.",
-      "exampleYue": "三位。",
+      "exampleYue": "一張三位嘅檯。",
       "say": "A table for three.",
       "variants": [],
       "note": "係 /θ/，唔係 /f/。",
@@ -6118,7 +6516,7 @@
         "a sheet of paper"
       ],
       "example": "A sheet of paper.",
-      "exampleYue": "一張紙。",
+      "exampleYue": "呢度有一張紙。",
       "say": "A sheet of paper.",
       "variants": [],
       "note": "",
@@ -6270,9 +6668,9 @@
         "let me know",
         "show me"
       ],
-      "example": "Let me know.",
-      "exampleYue": "話我知。",
-      "say": "Let me know.",
+      "example": "Let me know if you need anything.",
+      "exampleYue": "有咩需要就話我知。",
+      "say": "Let me know if you need anything.",
       "variants": [],
       "note": "",
       "sources": [
@@ -6284,7 +6682,7 @@
       "senseMismatch": false,
       "cmuLemma": "me",
       "phrase": false,
-      "audioSha256": "611e50fb67ce061cf49fa400a8865816577f14b2bfecd5a4a8a3f505ce0d8400"
+      "audioSha256": "2c33057f694e6ae31a13e953572d26ec90b530cf8867959889056f7ab6436ab1"
     },
     {
       "id": "go-verb",
@@ -6465,7 +6863,7 @@
         "of course, take a look"
       ],
       "example": "Of course.",
-      "exampleYue": "當然。",
+      "exampleYue": "當然可以。",
       "say": "[[əv kˈɔɹs.]]",
       "variants": [],
       "note": "of 喺呢度弱讀 /əv/。錄音用同一個弱讀，唔係單獨唸 of 嗰個 /ʌv/。",
@@ -6892,9 +7290,9 @@
       "collocations": [
         "let me know if you need anything"
       ],
-      "example": "Let me know.",
-      "exampleYue": "話我知。",
-      "say": "Let me know.",
+      "example": "Let me know if you need anything.",
+      "exampleYue": "有咩需要就話我知。",
+      "say": "Let me know if you need anything.",
       "variants": [],
       "note": "",
       "sources": [
@@ -6906,7 +7304,7 @@
       "senseMismatch": false,
       "cmuLemma": "let me know",
       "phrase": true,
-      "audioSha256": "3c1cd2b07a721e5121809d37c995872a5302d492a7f1a6ccc902c74f3b1293ac"
+      "audioSha256": "f6ef26480838d197bbddf52e9b9dfaf501c96cb5a298f6161264a807ecc85700"
     },
     {
       "id": "four-num",
@@ -6971,7 +7369,7 @@
         "at five"
       ],
       "example": "It is five dollars.",
-      "exampleYue": "五蚊。",
+      "exampleYue": "呢件係五蚊。",
       "say": "It is five dollars.",
       "variants": [],
       "note": "尾音收到 /v/。唔好食咗，變成 fine。",
@@ -7009,7 +7407,7 @@
         "six dollars"
       ],
       "example": "It is six dollars.",
-      "exampleYue": "六蚊。",
+      "exampleYue": "呢件係六蚊。",
       "say": "It is six dollars.",
       "variants": [],
       "note": "尾音係 /ks/。唔好變成 sick。",
@@ -7048,9 +7446,9 @@
       "collocations": [
         "seven dollars"
       ],
-      "example": "It is seven.",
-      "exampleYue": "七。",
-      "say": "It is seven.",
+      "example": "It opens at seven.",
+      "exampleYue": "七點鐘開門。",
+      "say": "It opens at seven.",
       "variants": [],
       "note": "",
       "sources": [
@@ -7062,7 +7460,7 @@
       "senseMismatch": false,
       "cmuLemma": "seven",
       "phrase": false,
-      "audioSha256": "b7c09a76a83b59b06601d4fa1ff1169dba784c92778841bfd744f08a2aa3e55c"
+      "audioSha256": "4c92811fbf7a43b42893d1daab3aa3b629d51bc783e9dce6b89f9754f2bfa5dd"
     },
     {
       "id": "eight-num",
@@ -7086,9 +7484,9 @@
       "collocations": [
         "eight dollars"
       ],
-      "example": "It is eight.",
-      "exampleYue": "八。",
-      "say": "It is eight.",
+      "example": "It opens at eight.",
+      "exampleYue": "八點鐘開門。",
+      "say": "It opens at eight.",
       "variants": [],
       "note": "",
       "sources": [
@@ -7100,7 +7498,7 @@
       "senseMismatch": false,
       "cmuLemma": "eight",
       "phrase": false,
-      "audioSha256": "323904ddbae5229b8ebe99ff20a7fabbaecc7c217d3f25b8521d942171d9c7ec"
+      "audioSha256": "cc81cd9b29f8df66e5934a49c66d807582b75e43e15e07189b2a847e299e8129"
     },
     {
       "id": "nine-num",
@@ -7124,9 +7522,9 @@
       "collocations": [
         "nine dollars"
       ],
-      "example": "It is nine.",
-      "exampleYue": "九。",
-      "say": "It is nine.",
+      "example": "It opens at nine.",
+      "exampleYue": "九點鐘開門。",
+      "say": "It opens at nine.",
       "variants": [],
       "note": "",
       "sources": [
@@ -7138,7 +7536,7 @@
       "senseMismatch": false,
       "cmuLemma": "nine",
       "phrase": false,
-      "audioSha256": "c78f71d6835d3bf048201ac2572dca5bd95dfa27447d4c2e40e1f64ce41d65f0"
+      "audioSha256": "b9e4dd0f5766fcf2c242bd23efd5e6bf73e1b2f86a0ab53ca83c5a0f98fa3175"
     },
     {
       "id": "ten-num",
@@ -7162,9 +7560,9 @@
       "collocations": [
         "ten dollars"
       ],
-      "example": "It is ten.",
-      "exampleYue": "十。",
-      "say": "It is ten.",
+      "example": "It opens at ten.",
+      "exampleYue": "十點鐘開門。",
+      "say": "It opens at ten.",
       "variants": [],
       "note": "尾音 /n/ 要留低。",
       "sources": [
@@ -7176,7 +7574,7 @@
       "senseMismatch": false,
       "cmuLemma": "ten",
       "phrase": false,
-      "audioSha256": "b7e0312e10c4d416ae584af37eab913e3a26e6b18dba8d437a5cd11c2f23bf73"
+      "audioSha256": "cdcb2574a190de888d3e93fbc93e8cd330bab71984d45bac6348267f0d125ba0"
     },
     {
       "id": "dollar-noun",
@@ -7204,7 +7602,7 @@
         "one dollar"
       ],
       "example": "It is ten dollars.",
-      "exampleYue": "十蚊。",
+      "exampleYue": "一共係十蚊。",
       "say": "It is ten dollars.",
       "variants": [
         "/ˈdɔ.lɚ/"
@@ -7245,9 +7643,9 @@
       "collocations": [
         "some money"
       ],
-      "example": "I have money.",
-      "exampleYue": "我有錢。",
-      "say": "I have money.",
+      "example": "I don't have enough money.",
+      "exampleYue": "我冇帶夠錢。",
+      "say": "I don't have enough money.",
       "variants": [],
       "note": "",
       "sources": [
@@ -7259,7 +7657,7 @@
       "senseMismatch": false,
       "cmuLemma": "money",
       "phrase": false,
-      "audioSha256": "82254a70e2aacc21aacb8360c0ba41449c25c37be76c72b3891cf323ede0a15f"
+      "audioSha256": "faca8ba6b1fba0c77b92c1bd4982cf3bf0b5910228943d97b4cd86229568b11e"
     },
     {
       "id": "how-adv",
@@ -7322,9 +7720,9 @@
       "collocations": [
         "how much"
       ],
-      "example": "How much?",
-      "exampleYue": "幾多？",
-      "say": "How much?",
+      "example": "How much is the ring?",
+      "exampleYue": "隻戒指幾多錢？",
+      "say": "How much is the ring?",
       "variants": [],
       "note": "",
       "sources": [
@@ -7336,7 +7734,7 @@
       "senseMismatch": false,
       "cmuLemma": "much",
       "phrase": false,
-      "audioSha256": "3ccc4fb188dd076cd288f4c7882049d8f6b5b53fd0ba98134ded1f03586d70b4"
+      "audioSha256": "6eac05db9e30dafc5e8a72786f5a9a4e8f3e9b4f46935f90523467e76a6516f7"
     },
     {
       "id": "clock-noun",
@@ -7403,7 +7801,7 @@
         "five o'clock"
       ],
       "example": "It is three o'clock.",
-      "exampleYue": "三點。",
+      "exampleYue": "而家係三點。",
       "say": "It is three o'clock.",
       "variants": [],
       "note": "",
@@ -7520,7 +7918,7 @@
         "one hour"
       ],
       "example": "One hour.",
-      "exampleYue": "一個鐘。",
+      "exampleYue": "我等一個鐘。",
       "say": "One hour.",
       "variants": [
         "/ˈaʊɹ/"

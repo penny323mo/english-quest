@@ -303,7 +303,7 @@ def build_items() -> None:
         "About. The first sound is soft.", "About。第一個音好輕。",
         note="開頭係 schwa /ə/。")
     add("relax-verb", "relax", "verb", "become-calm", "R IH0 . L AE1 K S", ["re", "lax"],
-        "放鬆", "放松", "fong3 sung1", ["relax and speak"], "Relax.", "放鬆。")
+        "放鬆", "放松", "fong3 sung1", ["relax and speak"], "Please relax.", "請放鬆吓。")
     add("begin-verb", "begin", "verb", "start", "B IH0 . G IH1 N", ["be", "gin"],
         "開始", "开始", "hoi1 ci2", ["let's begin"], "Let's begin.", "我哋開始。")
     add("keep-verb", "keep", "verb", "continue-state", "K IY1 P", ["keep"],
@@ -311,7 +311,7 @@ def build_items() -> None:
     add("light-adj", "light", "adj", "not-heavy", "L AY1 T", ["light"],
         "輕巧", "轻", "heng1", ["keep it light"], "Keep it light.", "唔好用力。")
     add("name-noun", "name", "noun", "what-someone-is-called", "N EY1 M", ["name"],
-        "名字", "名字", "ming4 zi6", ["my name is"], "My name is Mei.", "我叫 Mei。")
+        "名字", "名字", "ming4 zi6", ["my name is"], "My name is Mei.", "我叫 Mei，好高興認識你。")
     add("the-art", "the", "art", "before-consonant", "DH AH0", ["the"],
         "英文冠詞，子音前面弱讀，中文往往唔使譯", "定冠词（弱读）", "", ["the sound", "the menu"],
         "The sound is short.", "個音好短。",
@@ -342,7 +342,7 @@ def build_items() -> None:
     add("evening-noun", "evening", "noun", "late-day", "IY1 V . N IH0 NG", ["eve", "ning"],
         "夜晚", "晚上", "je6 maan5", ["good evening"], "Good evening.", "你好。")
     add("my-det", "my", "det", "belonging-to-me", "M AY1", ["my"],
-        "我嘅", "我的", "ngo5 ge3", ["my name", "my passport"], "My name is Ling.", "我叫 Ling。")
+        "我嘅", "我的", "ngo5 ge3", ["my name", "my passport"], "My name is Ling.", "我叫 Ling，好高興認識你。")
     add("nice-adj", "nice", "adj", "pleasant", "N AY1 S", ["nice"],
         "好；親切", "好", "hou2", ["nice to meet you", "a nice ring"],
         "Nice to meet you.", "好高興認識你。",
@@ -365,14 +365,15 @@ def build_items() -> None:
         "先生（客氣）", "先生", "sin1 saang1", ["yes, sir"], "Yes, sir.", "好嘅，先生。",
         piper="Yes, [[sˈɝ]].")
     add("madam-noun", "madam", "noun", "polite-woman", "M AE1 D . AH0 M", ["mad", "am"],
-        "女士（客氣）", "女士", "neoi5 si6", ["yes, madam"], "Yes, madam.", "好嘅，女士。")
+        "女士（客氣）", "女士", "neoi5 si6", ["yes, madam"], "Yes, madam.", "好嘅，小姐。",
+        note="madam 係英文嘅客氣稱呼。舖頭應客可以講小姐或者太太，唔好直譯做女士。")
     add("welcome-verb", "welcome", "verb", "greet-in", "W EH1 L . K AH0 M", ["wel", "come"],
         "歡迎", "欢迎", "fun1 jing4", ["welcome to", "you're welcome"],
         "Welcome to our jewellery store.", "歡迎嚟到我哋嘅珠寶店。",
         piper="Welcome to our [[dʒˈulɹi]] store.")
     add("a-art", "a", "art", "indefinite-before-consonant", "AH0", ["a"],
         "一個（子音前面，弱讀）", "一个", "jat1 go3", ["a table", "a seat"],
-        "A table for two.", "兩位。",
+        "A table for two.", "一張兩位嘅檯。",
         piper="[[ə ˈteɪbəl fɚ ˈtu.]]",
         variants=["/eɪ/ letter name"],
         note="冠詞讀 /ə/。字母名先至係 /eɪ/。")
@@ -382,7 +383,7 @@ def build_items() -> None:
         piper="The letter [[ˈeɪ]] says its name.")
     add("of-prep", "of", "prep", "belonging", "AH1 V", ["of"],
         "嘅；屬於", "的", "ge3", ["of course", "a table of"],
-        "Of course.", "當然。",
+        "Of course.", "當然可以。",
         variants=["/əv/ weak, as in of course"],
         note="單字引用讀 /ʌv/。片語 of course 通常弱讀 /əv/。")
     add("to-prep", "to", "prep", "toward", "T AH0", ["to"],
@@ -518,7 +519,7 @@ def build_items() -> None:
         note="k 唔發音。")
     add("let-verb", "let", "verb", "allow", "L EH1 T", ["let"],
         "讓", "让", "joeng6", ["let me know"],
-        "Let me know.", "話我知。")
+        "Let me know if you need anything.", "有咩需要就話我知。")
     add("need-verb", "need", "verb", "require", "N IY1 D", ["need"],
         "需要", "需要", "seoi1 jiu3", ["if you need"],
         "Let me know if you need anything.", "有需要就話我知。")
@@ -535,7 +536,7 @@ def build_items() -> None:
         note="中間有 /θ/。")
     add("course-noun", "course", "noun", "of-course", "K AO1 R S", ["course"],
         "當然（of course）", "当然", "dong1 jin4", ["of course"],
-        "Of course.", "當然。",
+        "Of course.", "當然可以。",
         piper="[[əv kˈɔɹs.]]")
     add("store-noun", "store", "noun", "shop", "S T AO1 R", ["store"],
         "店", "店", "dim3", ["jewellery store"],
@@ -691,7 +692,7 @@ def build_items() -> None:
         "Right this way.", "請跟我嚟。")
     add("great-adj", "great", "adj", "excellent", "G R EY1 T", ["great"],
         "好極", "很好", "hou2 gik6", ["this is great"],
-        "This is great.", "好好。",
+        "This is great.", "呢度真係好好。",
         note="開頭有 /r/。")
     add("bring-verb", "bring", "verb", "carry-here", "B R IH1 NG", ["bring"],
         "攞嚟", "拿来", "lo2 lai4", ["bring the menu"],
@@ -699,6 +700,51 @@ def build_items() -> None:
     add("menu-noun", "menu", "noun", "list-of-dishes", "M EH1 N . Y UW0", ["men", "u"],
         "餐牌", "菜单", "caan1 paai4", ["the menu"],
         "I'll bring the menu.", "我攞餐牌嚟。")
+    add("order-verb", "order", "verb", "place-order", "AO1 R . D ER0", ["or", "der"],
+        "叫（落單）", "点餐", "giu3", ["like to order"],
+        "What would you like to order?", "你想叫咩？",
+        note="美式 /ˈɔɹ.dɚ/。開頭圓唇，中間有 /ɹ/。")
+    add("recommend-verb", "recommend", "verb", "suggest-dish", "R EH2 . K AH0 . M EH1 N D", ["re", "com", "mend"],
+        "推薦", "推荐", "teoi1 zin3", ["what do you recommend"],
+        "What do you recommend?", "你推薦咩？",
+        note="重音喺第三節 mend。唔好讀成第一節。")
+    add("else-adv", "else", "adv", "additional", "EH1 L S", ["else"],
+        "其他", "其他", "kei4 taa1", ["anything else"],
+        "Anything else?", "仲有冇其他？",
+        note="尾音 /s/ 要留低。")
+    add("water-noun", "water", "noun", "drink-water", "W AO1 . T ER0", ["wa", "ter"],
+        "水", "水", "seoi2", ["some water"],
+        "I'd like some water, please.", "我想要杯水，唔該。",
+        variants=["/ˈwɑ.tɚ/"],
+        note="CMU 係 /ˈwɔ.tɚ/。有人讀 /ˈwɑ.tɚ/。美式中間嘅 /t/ 常常輕輕一拍。")
+    add("coffee-noun", "coffee", "noun", "coffee-drink", "K AA1 . F IY0", ["cof", "fee"],
+        "咖啡", "咖啡", "gaa3 fe1", ["a coffee please"],
+        "I'd like a coffee, please.", "我想要杯咖啡，唔該。",
+        variants=["/ˈkɔ.fi/"],
+        piper="I'd like [[ə kˈɑfi]] , please.",
+        note="CMU 第一條 /ˈkɑ.fi/，第二條 /ˈkɔ.fi/。卡片教第一條。錄音用 /ɑ/。")
+    add("tea-noun", "tea", "noun", "tea-drink", "T IY1", ["tea"],
+        "茶", "茶", "caa4", ["tea please"],
+        "I'd like tea, please.", "我想要杯茶，唔該。")
+    add("chicken-noun", "chicken", "noun", "chicken-dish", "CH IH1 . K AH0 N", ["chick", "en"],
+        "雞", "鸡", "gai1", ["the chicken please"],
+        "I'd like the chicken, please.", "我想叫雞，唔該。",
+        piper="I'd like the [[tʃˈɪkən]] , please.",
+        note="兩個音節，重音喺第一節。第二節係 /ən/，唔好讀成 /ɪn/。開頭 /tʃ/，唔係 /ʃ/。")
+    add("fish-noun", "fish", "noun", "fish-dish", "F IH1 SH", ["fish"],
+        "魚", "鱼", "jyu4", ["the fish"],
+        "I recommend the fish.", "我推薦魚。",
+        note="一個音節。尾音 /ʃ/。")
+    add("can-verb", "can", "verb", "modal-weak", "K AH0 N", ["can"],
+        "可以（弱讀）", "可以", "ho2 ji5", ["can I have"],
+        "Can I have some water, please?", "可唔可以畀我杯水？",
+        variants=["/kæn/ stressed"],
+        piper="[[kən]] I have some water, please.",
+        note="問句入面通常好輕 /kən/，冇重音。重讀先至係 /kæn/。呢張卡教弱讀，因為 Can I have 就係咁讀。")
+    add("cant-verb", "can't", "verb", "modal-negative", "K AE1 N T", ["can't"],
+        "唔可以", "不可以", "m4 ho2 ji5", ["I can't"],
+        "I can't eat fish.", "我食唔到魚。",
+        note="有尾 /t/。食咗尾音就會聽成 can。")
     add("ready-adj", "ready", "adj", "prepared", "R EH1 . D IY0", ["rea", "dy"],
         "準備好", "准备好", "zeon2 bei6 hou2", ["are you ready"],
         "Are you ready?", "你準備好未？")
@@ -735,12 +781,12 @@ def build_items() -> None:
         note="CMU 主條同 Wiktionary 都係 /wɪð/。/wɪθ/ 係真實但較少嘅尾音變體。J1 會特別練 /wɪθ/，並且標明係變體。")
     add("with-prep-voiceless", "with", "prep", "voiceless-variant", "W IH1 TH", ["with"],
         "同（清音變體 /wɪθ/）", "和（清音）", "tung4", ["with you"],
-        "With you.", "同你。",
+        "With you.", "同你一齊。",
         piper="[[wˈɪθ]] you.",
         note="呢張卡只練清音變體，唔係唯一標準音。主卡係 with-prep /wɪð/。")
     add("sank-verb", "sank", "verb", "past-of-sink", "S AE1 NG K", ["sank"],
         "沉咗（對比 thank）", "下沉（过去）", "cam4", ["the boat sank"],
-        "The boat sank.", "艘船沉咗。",
+        "The boat sank.", "一艘船沉咗。",
         note="對比組。唔好用嚟代替 thank。")
     add("tank-noun", "tank", "noun", "container", "T AE1 NG K", ["tank"],
         "箱；缸", "箱", "soeng1", ["a water tank"],
@@ -750,13 +796,13 @@ def build_items() -> None:
     add("sink-noun", "sink", "noun", "basin", "S IH1 NG K", ["sink"],
         "洗碗盆", "水槽", "sai2 wun2 pun4", ["the sink"], "The sink is full.", "洗碗盆滿咗。")
     add("three-num", "three", "num", "3", "TH R IY1", ["three"],
-        "三", "三", "saam1", ["table for three"], "A table for three.", "三位。",
+        "三", "三", "saam1", ["table for three"], "A table for three.", "一張三位嘅檯。",
         note="係 /θ/，唔係 /f/。")
     add("tree-noun", "tree", "noun", "plant", "T R IY1", ["tree"],
         "樹", "树", "syu6", ["a tree"], "A tree by the door.", "門口有棵樹。")
     add("sheet-noun", "sheet", "noun", "paper", "SH IY1 T", ["sheet"],
         "一張紙", "一张纸", "jat1 zoeng1 zi2", ["a sheet of paper"],
-        "A sheet of paper.", "一張紙。")
+        "A sheet of paper.", "呢度有一張紙。")
     add("cheat-verb", "cheat", "verb", "deceive", "CH IY1 T", ["cheat"],
         "呃（對比 sheet）", "欺骗", "ngaak1", ["don't cheat"],
         "Don't cheat.", "唔好呃。",
@@ -767,7 +813,7 @@ def build_items() -> None:
         "嚼", "嚼", "zoek3", ["chew slowly"], "Chew slowly.", "慢慢嚼。")
     add("me-pron", "me", "pron", "object-me", "M IY1", ["me"],
         "我（賓語）", "我", "ngo5", ["let me know", "show me"],
-        "Let me know.", "話我知。")
+        "Let me know if you need anything.", "有咩需要就話我知。")
     add("go-verb", "go", "verb", "move", "G OW1", ["go"],
         "去", "去", "heoi3", ["go to the gate"], "Please go to the gate.", "請去閘口。")
     add("or-conj", "or", "conj", "alternative", "AO1 R", ["or"],
@@ -784,7 +830,7 @@ def build_items() -> None:
         "Thank you.", "多謝。", phrase=True)
     add("of-course-phrase", "of course", "phrase", "yes-politely", "AH0 V | K AO1 R S", ["of", "course"],
         "當然", "当然", "dong1 jin4", ["of course, take a look"],
-        "Of course.", "當然。", phrase=True,
+        "Of course.", "當然可以。", phrase=True,
         piper="[[əv kˈɔɹs.]]",
         note="of 喺呢度弱讀 /əv/。錄音用同一個弱讀，唔係單獨唸 of 嗰個 /ʌv/。")
     add("good-morning-phrase", "good morning", "phrase", "morning-greeting", "G UH1 D | M AO1 R . N IH0 NG", ["good", "mor", "ning"],
@@ -820,7 +866,7 @@ def build_items() -> None:
         "Right this way.", "請跟我嚟。", phrase=True)
     add("let-me-know-phrase", "let me know", "phrase", "tell-me", "L EH1 T | M IY1 | N OW1", ["let", "me", "know"],
         "話我知", "告诉我", "waa6 ngo5 zi1", ["let me know if you need anything"],
-        "Let me know.", "話我知。", phrase=True)
+        "Let me know if you need anything.", "有咩需要就話我知。", phrase=True)
 
     # F3 numbers, money, time. F4 politeness. Contrast words for the sound beats.
     add("four-num", "four", "num", "4", "F AO1 R", ["four"],
@@ -828,45 +874,45 @@ def build_items() -> None:
         "I have four.", "我有四個。")
     add("five-num", "five", "num", "5", "F AY1 V", ["five"],
         "五", "五", "ng5", ["five dollars", "at five"],
-        "It is five dollars.", "五蚊。",
+        "It is five dollars.", "呢件係五蚊。",
         note="尾音收到 /v/。唔好食咗，變成 fine。")
     add("six-num", "six", "num", "6", "S IH1 K S", ["six"],
         "六", "六", "luk6", ["six dollars"],
-        "It is six dollars.", "六蚊。",
+        "It is six dollars.", "呢件係六蚊。",
         note="尾音係 /ks/。唔好變成 sick。")
     add("seven-num", "seven", "num", "7", "S EH1 . V AH0 N", ["sev", "en"],
         "七", "七", "cat1", ["seven dollars"],
-        "It is seven.", "七。")
+        "It opens at seven.", "七點鐘開門。")
     add("eight-num", "eight", "num", "8", "EY1 T", ["eight"],
         "八", "八", "baat3", ["eight dollars"],
-        "It is eight.", "八。")
+        "It opens at eight.", "八點鐘開門。")
     add("nine-num", "nine", "num", "9", "N AY1 N", ["nine"],
         "九", "九", "gau2", ["nine dollars"],
-        "It is nine.", "九。")
+        "It opens at nine.", "九點鐘開門。")
     add("ten-num", "ten", "num", "10", "T EH1 N", ["ten"],
         "十", "十", "sap6", ["ten dollars"],
-        "It is ten.", "十。",
+        "It opens at ten.", "十點鐘開門。",
         note="尾音 /n/ 要留低。")
     add("dollar-noun", "dollar", "noun", "currency", "D AA1 L . ER0", ["dol", "lar"],
         "蚊", "元", "man1", ["ten dollars", "one dollar"],
-        "It is ten dollars.", "十蚊。",
+        "It is ten dollars.", "一共係十蚊。",
         variants=["/ˈdɔ.lɚ/"],
         note="教 CMU 第一條 /ˈdɑl.ɚ/，同 Wiktionary 美式 /ˈdɑ.lɚ/ 同一個元音。CMU 第二條 /ˈdɔ.lɚ/ 標做變體。")
     add("money-noun", "money", "noun", "funds", "M AH1 . N IY0", ["mon", "ey"],
         "錢", "钱", "cin4", ["some money"],
-        "I have money.", "我有錢。")
+        "I don't have enough money.", "我冇帶夠錢。")
     add("how-adv", "how", "adv", "what-way", "HH AW1", ["how"],
         "點樣", "怎样", "dim2 joeng2", ["how much", "how are you"],
         "How much is this?", "呢個幾多錢？")
     add("much-adv", "much", "adv", "quantity", "M AH1 CH", ["much"],
         "幾多", "多少", "gei2 do1", ["how much"],
-        "How much?", "幾多？")
+        "How much is the ring?", "隻戒指幾多錢？")
     add("clock-noun", "clock", "noun", "timepiece", "K L AA1 K", ["clock"],
         "鐘", "钟", "zung1", ["the clock", "o'clock"],
         "Look at the clock.", "睇吓個鐘。")
     add("oclock-adv", "o'clock", "adv", "on-the-hour", "AH0 . K L AA1 K", ["o", "clock"],
         "點", "点", "dim2", ["three o'clock", "five o'clock"],
-        "It is three o'clock.", "三點。")
+        "It is three o'clock.", "而家係三點。")
     add("price-noun", "price", "noun", "cost", "P R AY1 S", ["price"],
         "價錢", "价钱", "gaa3 cin4", ["the price"],
         "The price is ten dollars.", "價錢係十蚊。")
@@ -877,7 +923,7 @@ def build_items() -> None:
         note="時間嗰個讀音。CMU 另有形容詞「極細」M AY0 N UW1 T，呢張卡唔教。")
     add("hour-noun", "hour", "noun", "sixty-minutes", "AW1 . ER0", ["hour"],
         "個鐘", "小时", "go3 zung1", ["one hour"],
-        "One hour.", "一個鐘。",
+        "One hour.", "我等一個鐘。",
         join_syllables=True,
         variants=["/ˈaʊɹ/"],
         note="CMU 第一條 AW1 ER0，卡片 /ˈaʊ.ɚ/，同 Wiktionary 美式 /aʊɚ/。第二條 AW1 R 係 /ˈaʊɹ/，標做變體。")
@@ -1254,6 +1300,48 @@ FLAGS = [
         "resolvedBy": "round-13 lexicographer",
         "resolvedAt": "2026-10-30",
     },
+    {
+        "id": "coffee-noun",
+        "lemma": "coffee",
+        "pos": "noun",
+        "cmudict": ["K AA1 F IY0 /ˈkɑ.fi/", "K AO1 F IY0 /ˈkɔ.fi/"],
+        "wiktionary": ["not re-fetched this round"],
+        "freeDictionary": "not in the local phonetics cache",
+        "disagreement": "CMUdict lists two American vowels for coffee: /ɑ/ first and /ɔ/ second.",
+        "resolution": "Teach CMU's first entry /ˈkɑ.fi/. /ˈkɔ.fi/ stays a labelled variant. The clip is forced to /ɑ/ so it matches the card.",
+        "resolved": True,
+        "taughtIpa": "/ˈkɑ.fi/",
+        "resolvedBy": "round-14 lexicographer",
+        "resolvedAt": "2026-10-30",
+    },
+    {
+        "id": "water-noun",
+        "lemma": "water",
+        "pos": "noun",
+        "cmudict": ["W AO1 T ER0 /ˈwɔ.tɚ/"],
+        "wiktionary": ["not re-fetched this round"],
+        "freeDictionary": "not in the local phonetics cache",
+        "disagreement": "This CMU file has only /ˈwɔ.tɚ/. A widespread American /ˈwɑ.tɚ/ is not listed there. The middle /t/ is often a flap.",
+        "resolution": "Teach the CMU form /ˈwɔ.tɚ/. Note /ˈwɑ.tɚ/ as a variant, and tell learners the American /t/ is often a light tap. Audio is Piper's reading of the example.",
+        "resolved": True,
+        "taughtIpa": "/ˈwɔ.tɚ/",
+        "resolvedBy": "round-14 lexicographer",
+        "resolvedAt": "2026-10-30",
+    },
+    {
+        "id": "can-verb",
+        "lemma": "can",
+        "pos": "verb",
+        "cmudict": ["K AE1 N /kæn/", "K AH0 N /kən/"],
+        "wiktionary": ["not re-fetched this round"],
+        "freeDictionary": "not in the local phonetics cache",
+        "disagreement": "CMU lists the strong form /kæn/ first and the weak form /kən/ second. In Can I have, the weak form is the one people say.",
+        "resolution": "This card teaches the weak form /kən/ with no stress, because that is the sound in Can I have. /kæn/ stays a labelled strong variant. The clip is forced to /kən/. can't is a separate card, /kænt/, with a clear /t/.",
+        "resolved": True,
+        "taughtIpa": "/kən/",
+        "resolvedBy": "round-14 lexicographer",
+        "resolvedAt": "2026-10-30",
+    },
 ]
 
 
@@ -1324,11 +1412,18 @@ def build_lessons() -> list[dict]:
         line("r1-l4", "tom", "Tom", "Yes, thank you. This is great.", "好，多謝。好好。"),
         line("r1-l5", "ana", "Ana", "Here is your table. Please have a seat. I'll bring the menu.", "你張檯喺度。請坐。我攞餐牌嚟。"),
     ]
+    r2 = [
+        line("r2-l1", "ana", "Ana", "What would you like to order?", "你想叫咩？"),
+        line("r2-l2", "tom", "Tom", "I'd like the chicken, please.", "我想叫雞，唔該。", "I'd like the [[tʃˈɪkən]] , please."),
+        line("r2-l3", "ana", "Ana", "Would you like water or tea?", "你想要水定茶？"),
+        line("r2-l4", "tom", "Tom", "Can I have some water, please?", "可唔可以畀我杯水？", "[[kən]] I have some water, please."),
+        line("r2-l5", "ana", "Ana", "Anything else?", "仲有冇其他？"),
+    ]
     f3 = [
         line("f3-l1", "mei", "Mei", "How much is this?", "呢個幾多錢？"),
-        line("f3-l2", "ling", "Ling", "It is ten dollars.", "十蚊。"),
+        line("f3-l2", "ling", "Ling", "It is ten dollars.", "一共係十蚊。"),
         line("f3-l3", "mei", "Mei", "What time is it?", "而家幾點？"),
-        line("f3-l4", "ling", "Ling", "It is three o'clock.", "三點。"),
+        line("f3-l4", "ling", "Ling", "It is three o'clock.", "而家係三點。"),
         line("f3-l5", "mei", "Mei", "Thank you. See you at five.", "多謝。五點見。"),
     ]
     f4 = [
@@ -1363,6 +1458,9 @@ def build_lessons() -> list[dict]:
         line("f4-m3", "ling", "Ling", "Good night.", "晚安。"),
         line("j3-l6", "tom", "Tom", "What is this?", "呢件係咩？"),
         line("j3-m1", "mei", "Mei", "This is a necklace.", "呢條係頸鏈。"),
+        line("r2-l6", "tom", "Tom", "What do you recommend?", "你推薦咩？"),
+        line("r2-m1", "tom", "Tom", "I'd like tea, please.", "我想要杯茶，唔該。"),
+        line("r2-m2", "ana", "Ana", "I recommend the fish.", "我推薦魚。"),
     ]
     lessons = [
         {
@@ -1871,6 +1969,62 @@ def build_lessons() -> list[dict]:
                 ],
                 "drill": ["right-adv", "reservation-noun", "ready-adj", "bring-verb", "great-adj"],
             },
+            "next": "R2",
+        },
+        {
+            "id": "R2",
+            "unit": "R",
+            "titleYue": "落單",
+            "titleEn": "Ordering",
+            "canDoYue": "你能夠落單：講 I'd like、Can I have、What do you recommend? 同 Anything else?。",
+            "canDoEn": "Order with I'd like, Can I have, What do you recommend?, and Anything else?",
+            "minutes": 12,
+            "hero": "assets/art/lessons/r2.webp",
+            "cast": ["ana", "tom"],
+            "lemmas": ["order-verb", "recommend-verb", "else-adv", "water-noun", "coffee-noun", "tea-noun", "chicken-noun", "fish-noun", "can-verb", "cant-verb", "would-verb", "like-verb", "have-verb", "please-adv", "anything-pron", "what-det"],
+            "dialogue": r2,
+            "understand": [
+                {"prompt": "What would you like to order? 係問咩？", "choices": ["你想叫咩", "你有冇訂位", "你飛去邊"], "answer": 0, "explain": "坐低之後先叫嘢。"},
+                {"prompt": "Can I have some water? 係講咩？", "choices": ["可唔可以畀我杯水", "我想叫雞", "我睇吓先"], "answer": 0, "explain": "Can I have 係客氣咁要嘢。"},
+                {"prompt": "Anything else? 係問咩？", "choices": ["仲有冇其他", "一共幾多錢", "請跟我嚟"], "answer": 0, "explain": "可以再叫，或者問 What do you recommend?"},
+            ],
+            "chunks": [
+                {"pattern": "I'd like the ___, please.", "example": "I'd like the chicken, please.", "glossYue": "我想叫⋯⋯，唔該。", "answer": "chicken", "choices": ["chicken", "reservation", "passport"]},
+                {"pattern": "Can I have some ___, please?", "example": "Can I have some water, please?", "glossYue": "可唔可以畀我⋯⋯？", "answer": "water", "choices": ["water", "window", "wife"]},
+                {"pattern": "What do you ___?", "example": "What do you recommend?", "glossYue": "你推薦咩？", "answer": "recommend", "choices": ["recommend", "reservation", "relax"]},
+                {"pattern": "Anything ___?", "example": "Anything else?", "glossYue": "仲有冇其他？", "answer": "else", "choices": ["else", "o'clock", "aisle"]},
+            ],
+            "shadow": {"lineId": "r2-l2", "hint": "I'd like the chicken, please."},
+            "build": [
+                {"type": "choice", "promptYue": "Ana 問 What would you like to order? 你想叫雞。", "choices": ["I'd like the chicken, please.", "I'm just looking, thank you.", "Here is my passport."], "answer": 0, "explain": "I'd like 後面跟想叫嘅嘢，再加 please。"},
+                {"type": "order", "promptYue": "排好呢句。", "tokens": ["Can", "I", "have", "some", "water"], "answer": ["Can", "I", "have", "some", "water"]},
+            ],
+            "roleplay": {
+                "you": "tom",
+                "intro": "你已經坐低。Ana 等你叫嘢。等佢問完先答。",
+                "turns": [
+                    {"partner": "Ana", "partnerId": "ana", "line": "What would you like to order?", "audio": "assets/audio/lines/r2-l1.mp3", "audioSlow": "assets/audio/lines/r2-l1-slow.mp3", "expect": "I'd like the chicken, please.", "keywords": ["chicken"], "modelAudio": "assets/audio/lines/r2-l2.mp3", "modelSlow": "assets/audio/lines/r2-l2-slow.mp3"},
+                    {"partner": "Ana", "partnerId": "ana", "line": "Would you like water or tea?", "audio": "assets/audio/lines/r2-l3.mp3", "audioSlow": "assets/audio/lines/r2-l3-slow.mp3", "expect": "Can I have some water, please?", "keywords": ["water"], "modelAudio": "assets/audio/lines/r2-l4.mp3", "modelSlow": "assets/audio/lines/r2-l4-slow.mp3"},
+                    {"partner": "Ana", "partnerId": "ana", "line": "Anything else?", "audio": "assets/audio/lines/r2-l5.mp3", "audioSlow": "assets/audio/lines/r2-l5-slow.mp3", "expect": "What do you recommend?", "keywords": ["recommend"], "modelAudio": "assets/audio/lines/r2-l6.mp3", "modelSlow": "assets/audio/lines/r2-l6-slow.mp3"},
+                ],
+            },
+            "quiz": [
+                {"type": "listen", "prompt": "你聽到邊個？", "lemma": "chicken-noun", "choices": ["chicken", "sheet", "sheep"], "answer": 0},
+                {"type": "listen", "prompt": "你聽到邊個？", "lemma": "cant-verb", "choices": ["can't", "can", "cat"], "answer": 0},
+                {"type": "meaning", "prompt": "recommend", "choices": ["推薦", "訂位", "登機證"], "answer": 0},
+                {"type": "meaning", "prompt": "I'd like the chicken.", "choices": ["我想叫雞", "我想要杯水", "我睇吓先"], "answer": 0},
+                {"type": "choice", "prompt": "can't 同 can 差喺邊？", "choices": ["can't 有清楚嘅 /t/", "兩個完全一樣", "can't 係 /ʃ/"], "answer": 0, "explain": "食咗尾 /t/ 就會聽成 can。問句入面 can 通常好輕 /kən/。"},
+            ],
+            "sound": {
+                "ipa": "/tʃ/ · /ʃ/ · /kən/ · /kænt/",
+                "title": "雞、can、can't",
+                "note": "chicken 開頭係 /tʃ/，舌尖先堵住再放出。sheet 先至係 /ʃ/，一口氣慢慢出，冇粒塞音。問句 Can I 入面 can 好輕，讀 /kən/，冇重音。can't 先至係 /kænt/，有個清楚嘅 /t/。食咗個 /t/ 就會聽成 can。recommend 重音喺最後一節 mend，唔好讀成第一節。",
+                "pairs": [
+                    {"a": "chicken-noun", "b": "sheet-noun"},
+                    {"a": "can-verb", "b": "cant-verb"},
+                ],
+                "drill": ["chicken-noun", "can-verb", "cant-verb", "recommend-verb", "order-verb", "water-noun"],
+            },
             "next": None,
         },
     ]
@@ -1921,10 +2075,10 @@ PATH = {
         {
             "id": "R",
             "title": "餐廳",
-            "blurb": "入座先，落單下一課。",
+            "blurb": "入座，然後落單。",
             "lessons": [
                 {"id": "R1"},
-                {"id": "R2", "title": "落單", "soon": True},
+                {"id": "R2"},
                 {"id": "R3", "title": "過敏同特別要求", "soon": True},
                 {"id": "R4", "title": "用餐期間", "soon": True},
                 {"id": "R5", "title": "埋單同貼士", "soon": True},

@@ -26,6 +26,7 @@ function tipFor(id: string): string {
   if (id === "J3") return "this 尾係清 /s/，these 尾係有聲 /z/。pair 同 pearl 唔好撈。";
   if (id === "T1") return "sure、show 先係 /ʃ/。check-in 嘅 check 係 /tʃ/，前面有一粒塞音。";
   if (id === "R1") return "美式 /r/ 舌尖唔好掂到上顎。table 本身冇 /r/。";
+  if (id === "R2") return "Can I 入面 can 好輕，讀 /kən/。can't 先至係 /kænt/，有個清楚嘅 /t/。";
   return "跟住模範嘅口型，慢慢講。";
 }
 
@@ -572,7 +573,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪九課你行完啦。到期嘅卡會喺重溫等你。</p>
+        <p className="lede">呢輪十課你行完啦。到期嘅卡會喺重溫等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );

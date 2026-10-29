@@ -1,5 +1,10 @@
 # Changelog — English Quest
 
+## Round 14 fixes
+- R2 落單 is a full 12-beat lesson after R1. It teaches I'd like, Can I have, What do you recommend?, and Anything else?, and it keeps chicken /tʃ/ apart from sheet /ʃ/ and weak can /kən/ apart from can't /kænt/. Coffee, water, and can are flagged where the sources disagree, and the clip matches the card. The hook is its own 900×1200 scene. T2 安檢同方向 stays upcoming so this lesson stays complete.
+- Bare examples are full sentences. Seven through ten say what time the door opens, money is 我冇帶夠錢。, let me know is 有咩需要就話我知。, and o'clock is 而家係三點。. Madam’s spoken line is 好嘅，小姐。 The gloss still says madam is the polite form.
+- The end of the path now says 呢輪十課. Tests are 12/12. At 390px the path, the locked R2 screen, the new word cards, and the R2 hook through the last beat stay inside the phone. Lighthouse mobile: performance 0.99, accessibility 1, best-practices 1.
+
 ## Round 13 fixes
 - Spoken Cantonese now uses 你好 for afternoon and evening greetings, and the F2 set is 早晨／你好／晚安. 我只係睇吓 is 我睇吓先, 請周圍睇吓 is 隨便睇吓, and the restaurant opens with 你好，有冇訂位呀？. 一位好朋友喺度 is 有個好朋友喺度。. The gloss 我諗係。 keeps 諗 (U+8AD7).
 - F2, F3, and F4 hooks are separate Harbor Glow scenes: a greeting at the counter, a clock with coins, and a polite exchange. Each file is a 900×1200 WebP with width and height. The app still preloads them onto the navy–teal placeholder.

@@ -1,0 +1,321 @@
+{
+  "id": "R2",
+  "unit": "R",
+  "titleYue": "落單",
+  "titleEn": "Ordering",
+  "canDoYue": "你能夠落單：講 I'd like、Can I have、What do you recommend? 同 Anything else?。",
+  "canDoEn": "Order with I'd like, Can I have, What do you recommend?, and Anything else?",
+  "minutes": 12,
+  "hero": "assets/art/lessons/r2.webp",
+  "cast": [
+    "ana",
+    "tom"
+  ],
+  "lemmas": [
+    "order-verb",
+    "recommend-verb",
+    "else-adv",
+    "water-noun",
+    "coffee-noun",
+    "tea-noun",
+    "chicken-noun",
+    "fish-noun",
+    "can-verb",
+    "cant-verb",
+    "would-verb",
+    "like-verb",
+    "have-verb",
+    "please-adv",
+    "anything-pron",
+    "what-det"
+  ],
+  "dialogue": [
+    {
+      "id": "r2-l1",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "What would you like to order?",
+      "glossYue": "你想叫咩？",
+      "audio": "assets/audio/lines/r2-l1.mp3",
+      "audioSlow": "assets/audio/lines/r2-l1-slow.mp3",
+      "say": "What would you like to order?"
+    },
+    {
+      "id": "r2-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I'd like the chicken, please.",
+      "glossYue": "我想叫雞，唔該。",
+      "audio": "assets/audio/lines/r2-l2.mp3",
+      "audioSlow": "assets/audio/lines/r2-l2-slow.mp3",
+      "say": "I'd like the [[tʃˈɪkən]] , please."
+    },
+    {
+      "id": "r2-l3",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "Would you like water or tea?",
+      "glossYue": "你想要水定茶？",
+      "audio": "assets/audio/lines/r2-l3.mp3",
+      "audioSlow": "assets/audio/lines/r2-l3-slow.mp3",
+      "say": "Would you like water or tea?"
+    },
+    {
+      "id": "r2-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Can I have some water, please?",
+      "glossYue": "可唔可以畀我杯水？",
+      "audio": "assets/audio/lines/r2-l4.mp3",
+      "audioSlow": "assets/audio/lines/r2-l4-slow.mp3",
+      "say": "[[kən]] I have some water, please."
+    },
+    {
+      "id": "r2-l5",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "Anything else?",
+      "glossYue": "仲有冇其他？",
+      "audio": "assets/audio/lines/r2-l5.mp3",
+      "audioSlow": "assets/audio/lines/r2-l5-slow.mp3",
+      "say": "Anything else?"
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "What would you like to order? 係問咩？",
+      "choices": [
+        "你想叫咩",
+        "你有冇訂位",
+        "你飛去邊"
+      ],
+      "answer": 0,
+      "explain": "坐低之後先叫嘢。"
+    },
+    {
+      "prompt": "Can I have some water? 係講咩？",
+      "choices": [
+        "可唔可以畀我杯水",
+        "我想叫雞",
+        "我睇吓先"
+      ],
+      "answer": 0,
+      "explain": "Can I have 係客氣咁要嘢。"
+    },
+    {
+      "prompt": "Anything else? 係問咩？",
+      "choices": [
+        "仲有冇其他",
+        "一共幾多錢",
+        "請跟我嚟"
+      ],
+      "answer": 0,
+      "explain": "可以再叫，或者問 What do you recommend?"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I'd like the ___, please.",
+      "example": "I'd like the chicken, please.",
+      "glossYue": "我想叫⋯⋯，唔該。",
+      "answer": "chicken",
+      "choices": [
+        "chicken",
+        "reservation",
+        "passport"
+      ]
+    },
+    {
+      "pattern": "Can I have some ___, please?",
+      "example": "Can I have some water, please?",
+      "glossYue": "可唔可以畀我⋯⋯？",
+      "answer": "water",
+      "choices": [
+        "water",
+        "window",
+        "wife"
+      ]
+    },
+    {
+      "pattern": "What do you ___?",
+      "example": "What do you recommend?",
+      "glossYue": "你推薦咩？",
+      "answer": "recommend",
+      "choices": [
+        "recommend",
+        "reservation",
+        "relax"
+      ]
+    },
+    {
+      "pattern": "Anything ___?",
+      "example": "Anything else?",
+      "glossYue": "仲有冇其他？",
+      "answer": "else",
+      "choices": [
+        "else",
+        "o'clock",
+        "aisle"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "r2-l2",
+    "hint": "I'd like the chicken, please."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "Ana 問 What would you like to order? 你想叫雞。",
+      "choices": [
+        "I'd like the chicken, please.",
+        "I'm just looking, thank you.",
+        "Here is my passport."
+      ],
+      "answer": 0,
+      "explain": "I'd like 後面跟想叫嘅嘢，再加 please。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Can",
+        "I",
+        "have",
+        "some",
+        "water"
+      ],
+      "answer": [
+        "Can",
+        "I",
+        "have",
+        "some",
+        "water"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你已經坐低。Ana 等你叫嘢。等佢問完先答。",
+    "turns": [
+      {
+        "partner": "Ana",
+        "partnerId": "ana",
+        "line": "What would you like to order?",
+        "audio": "assets/audio/lines/r2-l1.mp3",
+        "audioSlow": "assets/audio/lines/r2-l1-slow.mp3",
+        "expect": "I'd like the chicken, please.",
+        "keywords": [
+          "chicken"
+        ],
+        "modelAudio": "assets/audio/lines/r2-l2.mp3",
+        "modelSlow": "assets/audio/lines/r2-l2-slow.mp3"
+      },
+      {
+        "partner": "Ana",
+        "partnerId": "ana",
+        "line": "Would you like water or tea?",
+        "audio": "assets/audio/lines/r2-l3.mp3",
+        "audioSlow": "assets/audio/lines/r2-l3-slow.mp3",
+        "expect": "Can I have some water, please?",
+        "keywords": [
+          "water"
+        ],
+        "modelAudio": "assets/audio/lines/r2-l4.mp3",
+        "modelSlow": "assets/audio/lines/r2-l4-slow.mp3"
+      },
+      {
+        "partner": "Ana",
+        "partnerId": "ana",
+        "line": "Anything else?",
+        "audio": "assets/audio/lines/r2-l5.mp3",
+        "audioSlow": "assets/audio/lines/r2-l5-slow.mp3",
+        "expect": "What do you recommend?",
+        "keywords": [
+          "recommend"
+        ],
+        "modelAudio": "assets/audio/lines/r2-l6.mp3",
+        "modelSlow": "assets/audio/lines/r2-l6-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "chicken-noun",
+      "choices": [
+        "chicken",
+        "sheet",
+        "sheep"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "cant-verb",
+      "choices": [
+        "can't",
+        "can",
+        "cat"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "recommend",
+      "choices": [
+        "推薦",
+        "訂位",
+        "登機證"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "I'd like the chicken.",
+      "choices": [
+        "我想叫雞",
+        "我想要杯水",
+        "我睇吓先"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "can't 同 can 差喺邊？",
+      "choices": [
+        "can't 有清楚嘅 /t/",
+        "兩個完全一樣",
+        "can't 係 /ʃ/"
+      ],
+      "answer": 0,
+      "explain": "食咗尾 /t/ 就會聽成 can。問句入面 can 通常好輕 /kən/。"
+    }
+  ],
+  "sound": {
+    "ipa": "/tʃ/ · /ʃ/ · /kən/ · /kænt/",
+    "title": "雞、can、can't",
+    "note": "chicken 開頭係 /tʃ/，舌尖先堵住再放出。sheet 先至係 /ʃ/，一口氣慢慢出，冇粒塞音。問句 Can I 入面 can 好輕，讀 /kən/，冇重音。can't 先至係 /kænt/，有個清楚嘅 /t/。食咗個 /t/ 就會聽成 can。recommend 重音喺最後一節 mend，唔好讀成第一節。",
+    "pairs": [
+      {
+        "a": "chicken-noun",
+        "b": "sheet-noun"
+      },
+      {
+        "a": "can-verb",
+        "b": "cant-verb"
+      }
+    ],
+    "drill": [
+      "chicken-noun",
+      "can-verb",
+      "cant-verb",
+      "recommend-verb",
+      "order-verb",
+      "water-noun"
+    ]
+  },
+  "next": null
+}

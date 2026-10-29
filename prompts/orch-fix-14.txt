@@ -3,9 +3,9 @@ Phase 2b fix run (round 14 of max 15). Supervisor: Grok Duet.
 
 Read /workspace/sidequest/english-quest/reviews/orch-r14-grok.md and fix every CRITICAL and MAJOR issue (MINOR where sensible).
 ALSO read the previous round 390px review: /workspace/sidequest/english-quest/reviews/orch-r13-grok.md
-ALSO (authoritative live audit, same priority as MAJOR): read /workspace/sidequest/english-quest/review/loop-r12/coder-audit.md and fix every still-open item. Do not finish while any remain.
+ALSO (authoritative live audit, same priority as MAJOR): read /workspace/sidequest/english-quest/review/loop-r13/coder-audit.md and fix every still-open item. Do not finish while any remain.
 Keep matching SPEC.md and DECISIONS.md.
-Cantonese: natural spoken HK, correct classifiers, 畀 not 俾, no simplified characters, no 午安/晚上好/我只係睇吓/請周圍睇吓.
+Cantonese: natural spoken HK, correct classifiers, 畀 not 俾, no simplified characters, no 午安/晚上好/我只係睇吓/請周圍睇吓. Main goal this round: ship R2 落單 (and T2 if time) to the 12-beat standard and replace bare one-word example sentences.
 Do not edit reviews/ or prompts/. Re-run tests. Re-check 390px for overflow after fixes.
 Append '## Round 14 fixes' to CHANGELOG.md describing what changed.
 If the review verdict is SHIP and every audit item is truly fixed with no further app-code changes needed, still re-run tests and note that in CHANGELOG — but prefer fixing any remaining gap over a no-op.

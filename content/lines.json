@@ -114,7 +114,7 @@
     "speaker": "ling",
     "speakerLabel": "Ling",
     "text": "It is ten dollars.",
-    "glossYue": "十蚊。",
+    "glossYue": "一共係十蚊。",
     "audio": "assets/audio/lines/f3-l2.mp3",
     "audioSlow": "assets/audio/lines/f3-l2-slow.mp3",
     "say": "It is ten dollars."
@@ -134,7 +134,7 @@
     "speaker": "ling",
     "speakerLabel": "Ling",
     "text": "It is three o'clock.",
-    "glossYue": "三點。",
+    "glossYue": "而家係三點。",
     "audio": "assets/audio/lines/f3-l4.mp3",
     "audioSlow": "assets/audio/lines/f3-l4-slow.mp3",
     "say": "It is three o'clock."
@@ -450,6 +450,56 @@
     "say": "Here is your table. Please have a seat. I'll bring the menu."
   },
   {
+    "id": "r2-l1",
+    "speaker": "ana",
+    "speakerLabel": "Ana",
+    "text": "What would you like to order?",
+    "glossYue": "你想叫咩？",
+    "audio": "assets/audio/lines/r2-l1.mp3",
+    "audioSlow": "assets/audio/lines/r2-l1-slow.mp3",
+    "say": "What would you like to order?"
+  },
+  {
+    "id": "r2-l2",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "I'd like the chicken, please.",
+    "glossYue": "我想叫雞，唔該。",
+    "audio": "assets/audio/lines/r2-l2.mp3",
+    "audioSlow": "assets/audio/lines/r2-l2-slow.mp3",
+    "say": "I'd like the [[tʃˈɪkən]] , please."
+  },
+  {
+    "id": "r2-l3",
+    "speaker": "ana",
+    "speakerLabel": "Ana",
+    "text": "Would you like water or tea?",
+    "glossYue": "你想要水定茶？",
+    "audio": "assets/audio/lines/r2-l3.mp3",
+    "audioSlow": "assets/audio/lines/r2-l3-slow.mp3",
+    "say": "Would you like water or tea?"
+  },
+  {
+    "id": "r2-l4",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Can I have some water, please?",
+    "glossYue": "可唔可以畀我杯水？",
+    "audio": "assets/audio/lines/r2-l4.mp3",
+    "audioSlow": "assets/audio/lines/r2-l4-slow.mp3",
+    "say": "[[kən]] I have some water, please."
+  },
+  {
+    "id": "r2-l5",
+    "speaker": "ana",
+    "speakerLabel": "Ana",
+    "text": "Anything else?",
+    "glossYue": "仲有冇其他？",
+    "audio": "assets/audio/lines/r2-l5.mp3",
+    "audioSlow": "assets/audio/lines/r2-l5-slow.mp3",
+    "say": "Anything else?"
+  },
+  {
     "id": "f1-m1",
     "speaker": "ling",
     "speakerLabel": "Ling",
@@ -678,5 +728,35 @@
     "audio": "assets/audio/lines/j3-m1.mp3",
     "audioSlow": "assets/audio/lines/j3-m1-slow.mp3",
     "say": "This is a necklace."
+  },
+  {
+    "id": "r2-l6",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "What do you recommend?",
+    "glossYue": "你推薦咩？",
+    "audio": "assets/audio/lines/r2-l6.mp3",
+    "audioSlow": "assets/audio/lines/r2-l6-slow.mp3",
+    "say": "What do you recommend?"
+  },
+  {
+    "id": "r2-m1",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "I'd like tea, please.",
+    "glossYue": "我想要杯茶，唔該。",
+    "audio": "assets/audio/lines/r2-m1.mp3",
+    "audioSlow": "assets/audio/lines/r2-m1-slow.mp3",
+    "say": "I'd like tea, please."
+  },
+  {
+    "id": "r2-m2",
+    "speaker": "ana",
+    "speakerLabel": "Ana",
+    "text": "I recommend the fish.",
+    "glossYue": "我推薦魚。",
+    "audio": "assets/audio/lines/r2-m2.mp3",
+    "audioSlow": "assets/audio/lines/r2-m2-slow.mp3",
+    "say": "I recommend the fish."
   }
 ]

@@ -88,15 +88,13 @@
     {
       "id": "R",
       "title": "餐廳",
-      "blurb": "入座先，落單下一課。",
+      "blurb": "入座，然後落單。",
       "lessons": [
         {
           "id": "R1"
         },
         {
-          "id": "R2",
-          "title": "落單",
-          "soon": true
+          "id": "R2"
         },
         {
           "id": "R3",

@@ -455,6 +455,62 @@
       "taughtIpa": "/ˈpɝl/",
       "resolvedBy": "round-13 lexicographer",
       "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "coffee-noun",
+      "lemma": "coffee",
+      "pos": "noun",
+      "cmudict": [
+        "K AA1 F IY0 /ˈkɑ.fi/",
+        "K AO1 F IY0 /ˈkɔ.fi/"
+      ],
+      "wiktionary": [
+        "not re-fetched this round"
+      ],
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMUdict lists two American vowels for coffee: /ɑ/ first and /ɔ/ second.",
+      "resolution": "Teach CMU's first entry /ˈkɑ.fi/. /ˈkɔ.fi/ stays a labelled variant. The clip is forced to /ɑ/ so it matches the card.",
+      "resolved": true,
+      "taughtIpa": "/ˈkɑ.fi/",
+      "resolvedBy": "round-14 lexicographer",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "water-noun",
+      "lemma": "water",
+      "pos": "noun",
+      "cmudict": [
+        "W AO1 T ER0 /ˈwɔ.tɚ/"
+      ],
+      "wiktionary": [
+        "not re-fetched this round"
+      ],
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "This CMU file has only /ˈwɔ.tɚ/. A widespread American /ˈwɑ.tɚ/ is not listed there. The middle /t/ is often a flap.",
+      "resolution": "Teach the CMU form /ˈwɔ.tɚ/. Note /ˈwɑ.tɚ/ as a variant, and tell learners the American /t/ is often a light tap. Audio is Piper's reading of the example.",
+      "resolved": true,
+      "taughtIpa": "/ˈwɔ.tɚ/",
+      "resolvedBy": "round-14 lexicographer",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "can-verb",
+      "lemma": "can",
+      "pos": "verb",
+      "cmudict": [
+        "K AE1 N /kæn/",
+        "K AH0 N /kən/"
+      ],
+      "wiktionary": [
+        "not re-fetched this round"
+      ],
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU lists the strong form /kæn/ first and the weak form /kən/ second. In Can I have, the weak form is the one people say.",
+      "resolution": "This card teaches the weak form /kən/ with no stress, because that is the sound in Can I have. /kæn/ stays a labelled strong variant. The clip is forced to /kən/. can't is a separate card, /kænt/, with a clear /t/.",
+      "resolved": true,
+      "taughtIpa": "/kən/",
+      "resolvedBy": "round-14 lexicographer",
+      "resolvedAt": "2026-10-30"
     }
   ]
 }

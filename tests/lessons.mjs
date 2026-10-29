@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), "utf8"));
 const ids = new Set(lex.items.map((item) => item.id));
-const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "t1", "r1"];
+const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "t1", "r1", "r2"];
 const lessons = shipped.map((id) =>
   JSON.parse(fs.readFileSync(path.join(root, "content/lessons", `${id}.json`), "utf8")),
 );
@@ -20,8 +20,8 @@ function exists(rel) {
   assert.ok(fs.statSync(file).size > 400, rel);
 }
 
-test("nine lessons each carry the 12-beat payload", () => {
-  assert.equal(lessons.length, 9);
+test("ten lessons each carry the 12-beat payload", () => {
+  assert.equal(lessons.length, 10);
   for (const lesson of lessons) {
     for (const key of ["hero", "canDoYue", "canDoEn", "dialogue", "understand", "chunks", "shadow", "build", "roleplay", "quiz", "sound", "next"]) {
       assert.ok(key in lesson, `${lesson.id} ${key}`);
@@ -79,6 +79,16 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   assert.equal(fs.existsSync(path.join(root, "content/lessons/f4.json")), true);
   assert.equal(fs.existsSync(path.join(root, "content/lessons/j3.json")), true);
   assert.equal(fs.existsSync(path.join(root, "content/lessons/j4.json")), false);
+  assert.equal(fs.existsSync(path.join(root, "content/lessons/r2.json")), true);
+  assert.equal(fs.existsSync(path.join(root, "content/lessons/r3.json")), false);
+  assert.equal(fs.existsSync(path.join(root, "content/lessons/t2.json")), false);
+  const r2 = lessons.find((lesson) => lesson.id === "R2");
+  assert.equal(r1.next, "R2");
+  assert.equal(r2.next, null);
+  assert.match(r2.titleYue, /落單/);
+  assert.match(r2.canDoYue, /I'd like/);
+  assert.match(r2.sound.ipa, /tʃ/);
+  assert.equal(r2.sound.ipa.includes("ɹ"), false);
   const pathFile = JSON.parse(fs.readFileSync(path.join(root, "content/path.json"), "utf8"));
   const soon = pathFile.units.flatMap((unit) => unit.lessons).filter((lesson) => lesson.soon);
   assert.ok(soon.length >= 9);
@@ -140,7 +150,7 @@ test("role-play tip names a character or tells you it is your turn", () => {
   assert.match(lesson, /你扮 \$\{name\}/);
   assert.equal(lesson.includes("你而家係"), false);
   const data = fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8");
-  assert.match(data, /"F1", "F2", "F3", "F4", "J1", "J2", "J3", "T1", "R1"/);
+  assert.match(data, /"F1", "F2", "F3", "F4", "J1", "J2", "J3", "T1", "R1", "R2"/);
 });
 
 test("learner Cantonese does not use 俾, stiff glosses, or simplified characters", () => {
@@ -165,4 +175,19 @@ test("learner Cantonese does not use 俾, stiff glosses, or simplified character
   assert.equal(think.exampleYue, "我諗係。");
   assert.equal(think.exampleYue.includes("\u8ad7"), true);
   assert.equal(think.exampleYue.includes("\u8ac7"), false);
+  const greetings = new Set(["早晨", "你好", "晚安", "對唔住", "多謝"]);
+  for (const item of lex.items) {
+    const han = [...item.exampleYue].filter((ch) => /\p{Script=Han}/u.test(ch)).join("");
+    if ([...han].length <= 2 && !greetings.has(han)) {
+      assert.fail(`${item.id} exampleYue ${item.exampleYue}`);
+    }
+  }
+  const byId = Object.fromEntries(lex.items.map((item) => [item.id, item]));
+  assert.equal(byId["seven-num"].exampleYue, "七點鐘開門。");
+  assert.equal(byId["money-noun"].exampleYue, "我冇帶夠錢。");
+  assert.equal(byId["let-me-know-phrase"].example, "Let me know if you need anything.");
+  assert.equal(byId["let-me-know-phrase"].exampleYue, "有咩需要就話我知。");
+  assert.equal(byId["madam-noun"].exampleYue, "好嘅，小姐。");
+  assert.match(byId["madam-noun"].glossYue, /女士/);
+  assert.equal(byId["oclock-adv"].exampleYue, "而家係三點。");
 });

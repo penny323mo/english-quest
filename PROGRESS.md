@@ -1,12 +1,13 @@
 # English Quest loop progress
 
 last_reported_round: 12
+last_audited_round: 13
 
 phase: 2b
 phase2_rounds: 11-15
 phase2_rules: |
   - Phase 2b (13–15) narrow order: (a) Cantonese sweep, (b) distinct F2/F3/F4 hooks, (c) Pedagogy ≥9
-  - Authoritative audit: review/loop-r12/coder-audit.md
+  - Authoritative audit: review/loop-r13/coder-audit.md
   - Reviewer may NOT SHIP while any coder-audit item is open
   - Each fix prompt includes previous 390px review + coder-audit.md
   - Empty app-code diff after a fix round → stop immediately
@@ -24,3 +25,4 @@ phase2_rules: |
 - 2026-10-30 03:15: Loop STOPPED by orchestrator at 02:52 (EMPTY_DIFF after fix-12). Round 11 shipped real code (a9679be: F3, F4, sense labels, glossZh hidden, role tip, Cantonese sweep, audio padding, preload); review-12 SHIPped; fix-12 changed no app code. Coder live audit at review/loop-r12 (local only, excluded from git): F1–F4 walked to end at 390px, no overflow, no errors; LH mobile 100x4; 20/20 lexicon arpabet = CMUdict, live audio 200, lead 0.18 s. Scores: Art 8, UI 9, Lexicon 9, Pron UX 9, Pedagogy 8, Speaking 9, SRS 9, Flow 9, Perf 10, Audio 9. Still open: 晚上好 (evening-noun + R1 line), 午安, 一位好朋友喺度; F2/F3/F4 hook art near-identical. Public repo already holds reviews/*.md (incl. r12), review/loop-r3 screenshots and REPORT.md — needs Duet decision. last_reported_round: 12. Loop paused; reported to Grok Duet via parent.
 - 2026-10-30 03:12: Phase 2b approved by Grok Duet (rounds 13–15, narrow scope). Wrote prompts/orch-fix-13.txt from review/loop-r12 audit: (a) natural Cantonese sweep, (b) distinct F2/F3/F4 hooks, (c) Pedagogy ≥9 via new lessons. Exclusions extended to reviews/orch-r*.md (.gitignore + .orch/git-exclude + .orch/no-commit); no git rm of existing tracked reports. Relaunching orchestrator at fix-13, max 15. Report to Grok Duet only.
 - 2026-10-30 03:13: Orchestrator relaunched pid=765349 phase=fix-13 rounds=15. grok 4.7 (grokcoder-pane) received orch-fix-13.txt and began work (explored files / thinking). Nightly panes untouched. Exclusion: reviews/orch-r*.md now in .gitignore + .orch/git-exclude; no-commit covers reviews/ + loop dirs. Awaiting rounds 13–15 / done gates.
+- 2026-10-30 03:45: fix-13 shipped 7e43a92 (J3 件件嘅名, Cantonese sweep, new F2/F3/F4 hooks), pushed, live 200. Coder live audit at review/loop-r13 (local only): all 9 lessons walked to end at 390px, no errors/overflow; LH mobile 100x4; 20/20 lexicon = CMUdict, audio 200, lead 0.18–0.21 s. All r12 Cantonese items + distinct hooks CLOSED. Scores: Art 9, UI 9, Lexicon 9, Pron UX 9, Pedagogy 8, Speaking 9, SRS 9, Flow 9, Perf 10, Audio 9. Gate not met (Pedagogy 8). New audit: R2 落單 (+T2), richer bare examples (七。/我有錢。/話我知。), 女士→小姐. Injected into orch-fix-14/15 + review-15. review-14 running. Not reported (no report trigger).
