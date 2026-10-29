@@ -56,7 +56,7 @@
       "glossYue": "有。兩位，唔該。",
       "audio": "assets/audio/lines/r1-l2.mp3",
       "audioSlow": "assets/audio/lines/r1-l2-slow.mp3",
-      "say": "Yes. A table for two, please."
+      "say": "Yes. [[ə ˈteɪbəl fɚ ˈtu]] , please."
     },
     {
       "id": "r1-l3",
@@ -200,7 +200,7 @@
   ],
   "roleplay": {
     "you": "tom",
-    "intro": "今晚你係客人。Ana 在門口。等佢講完先答。",
+    "intro": "今晚你係客人。Ana 喺門口。等佢講完先答。",
     "turns": [
       {
         "partner": "Ana",

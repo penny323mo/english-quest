@@ -314,7 +314,7 @@ export function WordDetail({ id }: { id: string }) {
       <p className="ipa">{item.ipa}</p>
       <Syllables id={item.id} />
       <p>{item.glossYue}</p>
-      {jyutping && <p className="fine">粵拼（只標中文解釋）：{item.jyutping}</p>}
+      {jyutping && item.jyutping ? <p className="fine">粵拼（只標中文解釋）：{item.jyutping}</p> : null}
       <p className="fine">{item.glossZh}</p>
       <p lang="en">{item.example}</p>
       <p className="gloss">{item.exampleYue}</p>
@@ -327,7 +327,7 @@ export function WordDetail({ id }: { id: string }) {
       {item.collocations.length > 0 && (
         <p className="fine" lang="en">搭配：{item.collocations.join(" · ")}</p>
       )}
-      <p className="fine">重音喺第 {item.stress} 個音節。來源：{item.sources.join("、")}。核對 {item.verified_at}。</p>
+      <p className="fine">{item.stress === 0 ? "弱讀，冇重音。" : `重音喺第 ${item.stress} 個音節。`}來源：{item.sources.join("、")}。核對 {item.verified_at}。</p>
     </section>
   );
 }

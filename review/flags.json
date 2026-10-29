@@ -231,11 +231,54 @@
       ],
       "freeDictionary": "jewellery /ˈdʒuːlri/; jewelry phonetics empty",
       "disagreement": "Spelling gap in CMUdict, not a sound conflict.",
-      "resolution": "Map jewellery to CMU jewelry. Teach /ˈdʒul.ri/ and note the three-syllable /ˈdʒu.əl.ri/ variant. Macau spelling on the card is jewellery.",
+      "resolution": "Map jewellery to CMU jewelry's two-syllable entry JH UW1 L R IY0. The card teaches /ˈdʒul.ɹi/. Piper's default reading of the spelling is the three-syllable variant, so every teaching clip is phoneme-forced to [[dʒˈulɹi]]. The three-syllable /ˈdʒu.əl.ɹi/ stays a noted variant and is not what the mp3 says.",
       "resolved": true,
-      "taughtIpa": "/ˈdʒul.ri/",
-      "resolvedBy": "night-1 lexicographer",
-      "resolvedAt": "2026-10-29"
+      "taughtIpa": "/ˈdʒul.ɹi/",
+      "resolvedBy": "round-1 lexicographer",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "your-det",
+      "lemma": "your",
+      "pos": "det",
+      "cmudict": [
+        "Y AO1 R /jɔɹ/ first",
+        "Y UH1 R /jʊɹ/ second"
+      ],
+      "wiktionary": [
+        "/jɔːɹ/",
+        "/jʊɹ/",
+        "/jɚ/"
+      ],
+      "freeDictionary": "CMUdict is the US source for this pair",
+      "disagreement": "CMU's first entry is /jɔɹ/. The shipped clip says /jʊɹ/.",
+      "resolution": "Keep the headword at Y UH1 R /ˈjʊɹ/ so the card matches the existing mp3. List CMU's first entry /jɔɹ/ as a variant. Not a silent drop.",
+      "resolved": true,
+      "taughtIpa": "/ˈjʊɹ/",
+      "resolvedBy": "round-1 lexicographer",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "to-prep",
+      "lemma": "to",
+      "pos": "prep",
+      "cmudict": [
+        "T UW1 /tu/",
+        "T IH0 /tɪ/",
+        "T AH0 /tə/"
+      ],
+      "wiktionary": [
+        "strong /tu/",
+        "weak /tə/",
+        "weak /tɪ/"
+      ],
+      "freeDictionary": "CMUdict lists all three",
+      "disagreement": "The citation form is /tu/. The only shipped clip, 'I am flying to Hong Kong,' is the weak /tə/.",
+      "resolution": "The headword is weak /tə/ (CMU T AH0, stress 0) so the example button matches the mp3. Strong /tu/ and weak /tɪ/ are variants. The sentence was not re-forced to a stressed [[tˈu]].",
+      "resolved": true,
+      "taughtIpa": "/tə/",
+      "resolvedBy": "round-1 lexicographer",
+      "resolvedAt": "2026-10-30"
     },
     {
       "id": "check-verb",

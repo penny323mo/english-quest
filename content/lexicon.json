@@ -145,7 +145,7 @@
       "arpabet": "L AY1 V",
       "audio": "assets/audio/words/live-adj.mp3",
       "audioSlow": "assets/audio/words/live-adj-slow.mp3",
-      "glossYue": "現場的；直播的",
+      "glossYue": "現場嘅；直播嘅",
       "glossZh": "现场的",
       "jyutping": "jin6 coeng4",
       "collocations": [
@@ -1197,25 +1197,25 @@
       "syllableIpa": [
         "ðə"
       ],
-      "stress": 1,
+      "stress": 0,
       "arpabet": "DH AH0",
       "audio": "assets/audio/words/the-art.mp3",
       "audioSlow": "assets/audio/words/the-art-slow.mp3",
-      "glossYue": "嗰個／呢個（子音前面，弱讀）",
-      "glossZh": "这／那（弱读）",
-      "jyutping": "go2 go3",
+      "glossYue": "英文冠詞，子音前面弱讀，中文往往唔使譯",
+      "glossZh": "定冠词（弱读）",
+      "jyutping": "",
       "collocations": [
         "the sound",
         "the menu"
       ],
       "example": "The sound is short.",
-      "exampleYue": "呢個音好短。",
+      "exampleYue": "個音好短。",
       "say": "The sound is short.",
       "variants": [
         "/ði/ before a vowel",
         "/ðiː/ strong"
       ],
-      "note": "子音前面讀 /ðə/。元音前面讀 /ði/，見 the-art-vowel。",
+      "note": "子音前面讀 /ðə/。元音前面讀 /ði/，見 the-art-vowel。the 唔係呢個，亦唔係嗰個。",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
@@ -1239,13 +1239,13 @@
       "syllableIpa": [
         "ði"
       ],
-      "stress": 1,
+      "stress": 0,
       "arpabet": "DH IY0",
       "audio": "assets/audio/words/the-art-vowel.mp3",
       "audioSlow": "assets/audio/words/the-art-vowel-slow.mp3",
-      "glossYue": "（元音前面）",
-      "glossZh": "（元音前）",
-      "jyutping": "go2",
+      "glossYue": "英文冠詞，元音前面弱讀，中文往往唔使譯",
+      "glossZh": "定冠词（元音前弱读）",
+      "jyutping": "",
       "collocations": [
         "the aisle",
         "the information"
@@ -1254,7 +1254,7 @@
       "exampleYue": "通道位仲有。",
       "say": "The [[ðˈi]] aisle seat is free.",
       "variants": [],
-      "note": "",
+      "note": "元音前面讀 /ði/。子音前面讀 /ðə/。",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
@@ -1995,7 +1995,7 @@
       ],
       "example": "Welcome to our jewellery store.",
       "exampleYue": "歡迎嚟到我哋嘅珠寶店。",
-      "say": "Welcome to our jewellery store.",
+      "say": "Welcome to our [[dʒˈulɹi]] store.",
       "variants": [],
       "note": "",
       "sources": [
@@ -2007,7 +2007,7 @@
       "senseMismatch": false,
       "cmuLemma": "welcome",
       "phrase": false,
-      "audioSha256": "f54567156612f728cab95f06a0216bcde9c51815847ccc4529eab6493601ee72"
+      "audioSha256": "e4375d695a14eb02b830a8139ce9a16a28994b8310eee14d36cf9f6b1325881e"
     },
     {
       "id": "a-art",
@@ -2021,7 +2021,7 @@
       "syllableIpa": [
         "ə"
       ],
-      "stress": 1,
+      "stress": 0,
       "arpabet": "AH0",
       "audio": "assets/audio/words/a-art.mp3",
       "audioSlow": "assets/audio/words/a-art-slow.mp3",
@@ -2034,7 +2034,7 @@
       ],
       "example": "A table for two.",
       "exampleYue": "兩位。",
-      "say": "[[ə]] table for two.",
+      "say": "[[ə ˈteɪbəl fɚ ˈtu.]]",
       "variants": [
         "/eɪ/ letter name"
       ],
@@ -2048,7 +2048,7 @@
       "senseMismatch": false,
       "cmuLemma": "a",
       "phrase": false,
-      "audioSha256": "6f436faed434d794b3c70745558e2b8f75e54d7c576b1c07f4736cc0d9c8d8e4"
+      "audioSha256": "4cce87c42331886fff63af16737ffa4ea4ff0ed88c4e8eab20e0e6f94de0c259"
     },
     {
       "id": "a-letter",
@@ -2134,15 +2134,15 @@
       "lemma": "to",
       "pos": "prep",
       "senseId": "toward",
-      "ipa": "/ˈtu/",
+      "ipa": "/tə/",
       "syllables": [
         "to"
       ],
       "syllableIpa": [
-        "ˈtu"
+        "tə"
       ],
-      "stress": 1,
-      "arpabet": "T UW1",
+      "stress": 0,
+      "arpabet": "T AH0",
       "audio": "assets/audio/words/to-prep.mp3",
       "audioSlow": "assets/audio/words/to-prep-slow.mp3",
       "glossYue": "去；對",
@@ -2156,9 +2156,10 @@
       "exampleYue": "我飛去香港。",
       "say": "I am flying to Hong Kong.",
       "variants": [
-        "/tə/ weak"
+        "/tu/ strong",
+        "/tɪ/ weak"
       ],
-      "note": "",
+      "note": "例句同多數句子弱讀 /tə/。單獨強調先至係 /tu/。",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
@@ -2412,12 +2413,10 @@
       "senseId": "belonging-to-us",
       "ipa": "/ˈaʊ.ɚ/",
       "syllables": [
-        "ow",
-        "er"
+        "our"
       ],
       "syllableIpa": [
-        "ˈaʊ",
-        "ɚ"
+        "ˈaʊ.ɚ"
       ],
       "stress": 1,
       "arpabet": "AW1 ER0",
@@ -2431,11 +2430,11 @@
       ],
       "example": "Welcome to our jewellery store.",
       "exampleYue": "歡迎嚟到我哋嘅珠寶店。",
-      "say": "Welcome to our jewellery store.",
+      "say": "Welcome to our [[dʒˈulɹi]] store.",
       "variants": [
-        "/ɑr/ weak"
+        "/ɑɹ/ weak"
       ],
-      "note": "",
+      "note": "小心讀係兩音節 /ˈaʊ.ɚ/。卡片唔拆做 ow、er。弱讀係 /ɑɹ/。",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
@@ -2445,7 +2444,7 @@
       "senseMismatch": false,
       "cmuLemma": "our",
       "phrase": false,
-      "audioSha256": "e6ba738d41ecc9b008a86b0bcfcacca31081351714d91622ea433b259b78c71e"
+      "audioSha256": "73144b678dc70908a00751b9f4a18d8edf991a20b98ca5ccf034ec8538ba2942"
     },
     {
       "id": "your-det",
@@ -2473,8 +2472,10 @@
       "example": "Here is your boarding pass.",
       "exampleYue": "你張登機證喺度。",
       "say": "Here is your boarding pass.",
-      "variants": [],
-      "note": "",
+      "variants": [
+        "/jɔɹ/"
+      ],
+      "note": "卡片用 CMU 第二條 /ˈjʊɹ/，同呢段音頻一致。CMU 第一條係 /jɔɹ/。",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
@@ -3252,7 +3253,7 @@
       ],
       "example": "A table for two, please.",
       "exampleYue": "兩位，唔該。",
-      "say": "A table for two, please.",
+      "say": "[[ə ˈteɪbəl fɚ ˈtu]] , please.",
       "variants": [],
       "note": "",
       "sources": [
@@ -3264,7 +3265,7 @@
       "senseMismatch": false,
       "cmuLemma": "two",
       "phrase": false,
-      "audioSha256": "85c9faa6e7aba05381ff3c60a59720919b737481f56ce5fa64af7354e349fa42"
+      "audioSha256": "2932a38c17bd457c10ff0137f77280b697c412504a632a6413f1e805075f77b5"
     },
     {
       "id": "love-verb",
@@ -3762,7 +3763,7 @@
       ],
       "example": "Of course.",
       "exampleYue": "當然。",
-      "say": "Of course.",
+      "say": "[[əv kˈɔɹs.]]",
       "variants": [],
       "note": "",
       "sources": [
@@ -3774,7 +3775,7 @@
       "senseMismatch": false,
       "cmuLemma": "course",
       "phrase": false,
-      "audioSha256": "a073b043abeb52c2d66dd1de465196448ecf618b6c6714050d954964a32a03e7"
+      "audioSha256": "58da35f68d7c8b3b32c86f1175878ddc79712a72a5371ac745bab351373dba45"
     },
     {
       "id": "store-noun",
@@ -3800,7 +3801,7 @@
       ],
       "example": "Welcome to our jewellery store.",
       "exampleYue": "歡迎嚟到我哋嘅珠寶店。",
-      "say": "Welcome to our jewellery store.",
+      "say": "Welcome to our [[dʒˈulɹi]] store.",
       "variants": [],
       "note": "",
       "sources": [
@@ -3812,7 +3813,7 @@
       "senseMismatch": false,
       "cmuLemma": "store",
       "phrase": false,
-      "audioSha256": "3ff8f0628535a2df70dc91cc90689ded607a2a82560638ca941d2b5f83af299b"
+      "audioSha256": "355f4406e2b44e3ee2c7778939c16df5830b2092c386a4e96f170744cd916a43"
     },
     {
       "id": "jewellery-noun",
@@ -3840,11 +3841,11 @@
       ],
       "example": "Welcome to our jewellery store.",
       "exampleYue": "歡迎嚟到我哋嘅珠寶店。",
-      "say": "Welcome to our jewellery store.",
+      "say": "Welcome to our [[dʒˈulɹi]] store.",
       "variants": [
-        "/ˈdʒu.əl.ri/"
+        "/ˈdʒu.əl.ɹi/"
       ],
-      "note": "CMUdict 只收 jewelry。Wiktionary jewellery/jewelry 都係 /ˈdʒuː(ə)lri/。教學用兩音節 /ˈdʒul.ri/，三音節都接受。澳門店面常見串法係 jewellery。",
+      "note": "教學用兩音節 /ˈdʒul.ɹi/。錄音強制 [[dʒˈulɹi]]，唔會讀出中間嘅 ə。三音節 /ˈdʒu.əl.ɹi/ 只係備註。澳門店面常見串法係 jewellery。",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
@@ -3854,7 +3855,7 @@
       "senseMismatch": false,
       "cmuLemma": "jewelry",
       "phrase": false,
-      "audioSha256": "61303c8fb4e44365e2c5bcc3e77ad65ef65020572667792df56e8ff9154ed69d"
+      "audioSha256": "b21f223fcba6ddb9584167203c0d77822b87b1e41433396a2a2ddd282aecb6e8"
     },
     {
       "id": "jewelry-noun",
@@ -3882,9 +3883,11 @@
       ],
       "example": "Jewelry and jewellery sound the same.",
       "exampleYue": "兩種串法讀音一樣。",
-      "say": "Jewelry and jewellery sound the same.",
-      "variants": [],
-      "note": "",
+      "say": "[[dʒˈulɹi]] and [[dʒˈulɹi]] sound the same.",
+      "variants": [
+        "/ˈdʒu.əl.ɹi/"
+      ],
+      "note": "同 jewellery 一樣，教學同錄音都係兩音節 /ˈdʒul.ɹi/。",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
@@ -3894,7 +3897,7 @@
       "senseMismatch": false,
       "cmuLemma": "jewelry",
       "phrase": false,
-      "audioSha256": "f806002703765b1b3b476570f4759715ce3ef5bad21463ab95b87eea90f77dfa"
+      "audioSha256": "83a4e93a5545852b52fc0e2d8700e806b62f60d9e50dab0839f3eee224016fac"
     },
     {
       "id": "necklace-noun",
@@ -5074,7 +5077,7 @@
       ],
       "example": "A table for two, please.",
       "exampleYue": "兩位，唔該。",
-      "say": "A table for two, please.",
+      "say": "[[ə ˈteɪbəl fɚ ˈtu]] , please.",
       "variants": [],
       "note": "table 本身冇 /r/。今課嘅 /r/ 喺 right、reservation、ready。",
       "sources": [
@@ -5086,7 +5089,7 @@
       "senseMismatch": false,
       "cmuLemma": "table",
       "phrase": false,
-      "audioSha256": "b1cea56ac864dae027a914ad618e9a7b98d5b53d52dd0e53ed2429a3afa1c269"
+      "audioSha256": "0af1a198d0f7c865a7b3efa5c67c4d16a5d815f645455ceec7d121fc1d1593b4"
     },
     {
       "id": "right-adv",
@@ -6179,7 +6182,7 @@
       "arpabet": "F R IY1",
       "audio": "assets/audio/words/free-adj.mp3",
       "audioSlow": "assets/audio/words/free-adj-slow.mp3",
-      "glossYue": "有得揀；空",
+      "glossYue": "空嘅；仲有位",
       "glossZh": "空着",
       "jyutping": "hung1",
       "collocations": [
@@ -6189,7 +6192,7 @@
       "exampleYue": "通道位仲有。",
       "say": "The aisle seat is free.",
       "variants": [],
-      "note": "",
+      "note": "呢度係座位仲有，唔係免費。",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
@@ -6267,9 +6270,9 @@
       ],
       "example": "Of course.",
       "exampleYue": "當然。",
-      "say": "Of course.",
+      "say": "[[əv kˈɔɹs.]]",
       "variants": [],
-      "note": "of 喺呢度弱讀 /əv/。",
+      "note": "of 喺呢度弱讀 /əv/。錄音用同一個弱讀，唔係單獨唸 of 嗰個 /ʌv/。",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
@@ -6279,7 +6282,7 @@
       "senseMismatch": false,
       "cmuLemma": "of course",
       "phrase": true,
-      "audioSha256": "ddef3d4284ef52a007f20c279dd2ac276b58f0543565e0c067928a50a0fb28ad"
+      "audioSha256": "b74cded811e102cbf545d3d52ca866b9a23ce1967031de14fddebdb14691fa9e"
     },
     {
       "id": "good-morning-phrase",
@@ -6571,9 +6574,9 @@
       ],
       "example": "A table for two, please.",
       "exampleYue": "兩位，唔該。",
-      "say": "A table for two, please.",
+      "say": "[[ə ˈteɪbəl fɚ ˈtu]] , please.",
       "variants": [],
-      "note": "a 同 for 都係弱讀。",
+      "note": "a 弱讀 /ə/，for 弱讀 /fɚ/。錄音用呢兩個弱讀。",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
@@ -6583,7 +6586,7 @@
       "senseMismatch": false,
       "cmuLemma": "a table for two",
       "phrase": true,
-      "audioSha256": "7f20b32d3005c7d21e3f91e1dfd46b81a5c087c5f34037c5a1cb74c28c7ba0d2"
+      "audioSha256": "b6f46ac0e46989f29248e13c65bccaf372ffae84627936323626c170e6cccd73"
     },
     {
       "id": "check-in-noun",

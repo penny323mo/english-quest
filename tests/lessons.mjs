@@ -68,6 +68,13 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   assert.match(j1.dialogue[0].text, /Welcome to our jewellery store/);
   assert.match(j1.dialogue[1].text, /just looking/i);
   assert.match(j1.dialogue[4].text, /Let me know if you need anything/);
+  assert.match(j1.dialogue[0].say, /\[\[dʒˈulɹi\]\]/);
+  const r1 = lessons.find((lesson) => lesson.id === "R1");
+  const t1 = lessons.find((lesson) => lesson.id === "T1");
+  assert.match(r1.roleplay.intro, /喺門口/);
+  assert.doesNotMatch(r1.roleplay.intro, /在門口/);
+  assert.match(t1.sound.note, /ˈbɔɹ\.dɪŋ/);
+  assert.doesNotMatch(t1.sound.note, /bɔr/);
   assert.equal(fs.existsSync(path.join(root, "content/lessons/f3.json")), false);
   assert.equal(fs.existsSync(path.join(root, "content/lessons/j3.json")), false);
   const pathFile = JSON.parse(fs.readFileSync(path.join(root, "content/path.json"), "utf8"));

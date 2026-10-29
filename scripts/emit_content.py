@@ -138,8 +138,10 @@ def ipa_of(arp: str) -> tuple[str, list[str], int]:
             if st == 1 and primary_at is None:
                 primary_at = idx
         word_strs.append(".".join(bits))
+    # Function words with no primary (the, a, weak to) stay unstressed.
+    # A fallback of 1 painted a gold chip on /ðə/ and /ə/.
     if primary_at is None:
-        primary_at = 1
+        primary_at = 0
     return "/" + " ".join(word_strs) + "/", syl_ipas, primary_at
 
 
@@ -165,9 +167,14 @@ def add(
     piper: str | None = None,
     variants: list[str] | None = None,
     note: str | None = None,
+    join_syllables: bool = False,
 ):
     ipa, syl_ipa, stress = ipa_of(arp)
-    if len(ortho) != len(syl_ipa):
+    if join_syllables:
+        if len(ortho) != 1:
+            raise SystemExit(f"{id}: join_syllables needs one chip, got {ortho}")
+        syl_ipa = [".".join(syl_ipa)]
+    elif len(ortho) != len(syl_ipa):
         raise SystemExit(f"{id}: ortho {ortho} != syllables {syl_ipa}")
     ITEMS.append(
         {
@@ -220,7 +227,7 @@ def build_items() -> None:
         "I live in Macau.", "我住喺澳門。",
         piper="I [[lˈɪv]] in Macau.")
     add("live-adj", "live", "adj", "not-recorded", "L AY1 V", ["live"],
-        "現場的；直播的", "现场的", "jin6 coeng4", ["a live show", "live music"],
+        "現場嘅；直播嘅", "现场的", "jin6 coeng4", ["a live show", "live music"],
         "It is a live show.", "呢個係現場表演。",
         piper="It is a [[lˈaɪv]] show.")
     add("bow-noun", "bow", "noun", "ribbon-or-weapon", "B OW1", ["bow"],
@@ -306,14 +313,15 @@ def build_items() -> None:
     add("name-noun", "name", "noun", "what-someone-is-called", "N EY1 M", ["name"],
         "名字", "名字", "ming4 zi6", ["my name is"], "My name is Mei.", "我叫 Mei。")
     add("the-art", "the", "art", "before-consonant", "DH AH0", ["the"],
-        "嗰個／呢個（子音前面，弱讀）", "这／那（弱读）", "go2 go3", ["the sound", "the menu"],
-        "The sound is short.", "呢個音好短。",
+        "英文冠詞，子音前面弱讀，中文往往唔使譯", "定冠词（弱读）", "", ["the sound", "the menu"],
+        "The sound is short.", "個音好短。",
         variants=["/ði/ before a vowel", "/ðiː/ strong"],
-        note="子音前面讀 /ðə/。元音前面讀 /ði/，見 the-art-vowel。")
+        note="子音前面讀 /ðə/。元音前面讀 /ði/，見 the-art-vowel。the 唔係呢個，亦唔係嗰個。")
     add("the-art-vowel", "the", "art", "before-vowel", "DH IY0", ["the"],
-        "（元音前面）", "（元音前）", "go2", ["the aisle", "the information"],
+        "英文冠詞，元音前面弱讀，中文往往唔使譯", "定冠词（元音前弱读）", "", ["the aisle", "the information"],
         "The aisle seat is free.", "通道位仲有。",
-        piper="The [[ðˈi]] aisle seat is free.")
+        piper="The [[ðˈi]] aisle seat is free.",
+        note="元音前面讀 /ði/。子音前面讀 /ðə/。")
     add("beat-verb", "beat", "verb", "strike-rhythm", "B IY1 T", ["beat"],
         "拍子；打拍", "拍子", "paak3 zi2", ["the beat"], "Beat is long.", "Beat 係長音。")
     add("bit-noun", "bit", "noun", "small-piece", "B IH1 T", ["bit"],
@@ -360,11 +368,12 @@ def build_items() -> None:
         "女士（客氣）", "女士", "neoi5 si6", ["yes, madam"], "Yes, madam.", "係，女士。")
     add("welcome-verb", "welcome", "verb", "greet-in", "W EH1 L . K AH0 M", ["wel", "come"],
         "歡迎", "欢迎", "fun1 jing4", ["welcome to", "you're welcome"],
-        "Welcome to our jewellery store.", "歡迎嚟到我哋嘅珠寶店。")
+        "Welcome to our jewellery store.", "歡迎嚟到我哋嘅珠寶店。",
+        piper="Welcome to our [[dʒˈulɹi]] store.")
     add("a-art", "a", "art", "indefinite-before-consonant", "AH0", ["a"],
         "一個（子音前面，弱讀）", "一个", "jat1 go3", ["a table", "a seat"],
         "A table for two.", "兩位。",
-        piper="[[ə]] table for two.",
+        piper="[[ə ˈteɪbəl fɚ ˈtu.]]",
         variants=["/eɪ/ letter name"],
         note="冠詞讀 /ə/。字母名先至係 /eɪ/。")
     add("a-letter", "a", "noun", "letter-name", "EY1", ["a"],
@@ -376,10 +385,11 @@ def build_items() -> None:
         "Of course.", "當然。",
         variants=["/əv/ weak, as in of course"],
         note="單字引用讀 /ʌv/。片語 of course 通常弱讀 /əv/。")
-    add("to-prep", "to", "prep", "toward", "T UW1", ["to"],
+    add("to-prep", "to", "prep", "toward", "T AH0", ["to"],
         "去；對", "到", "heoi3", ["to the gate", "nice to meet you"],
         "I am flying to Hong Kong.", "我飛去香港。",
-        variants=["/tə/ weak"])
+        variants=["/tu/ strong", "/tɪ/ weak"],
+        note="例句同多數句子弱讀 /tə/。單獨強調先至係 /tu/。")
     add("for-prep", "for", "prep", "intended-for", "F AO1 R", ["for"],
         "畀；為咗", "给；为了", "bei2", ["for you", "for two"],
         "Something for my wife.", "送俾我太太。",
@@ -401,13 +411,18 @@ def build_items() -> None:
         "呢個", "这个", "ni1 go3", ["this necklace", "this way"],
         "This necklace is beautiful.", "呢條頸鏈好靚。",
         note="美式 /ðɪs/。Free Dictionary 出現嘅 /ðəs/ 係紐西蘭音，唔教。")
-    add("our-det", "our", "det", "belonging-to-us", "AW1 . ER0", ["ow", "er"],
+    add("our-det", "our", "det", "belonging-to-us", "AW1 . ER0", ["our"],
         "我哋嘅", "我们的", "ngo5 dei6 ge3", ["our store"],
         "Welcome to our jewellery store.", "歡迎嚟到我哋嘅珠寶店。",
-        variants=["/ɑr/ weak"])
+        variants=["/ɑɹ/ weak"],
+        piper="Welcome to our [[dʒˈulɹi]] store.",
+        join_syllables=True,
+        note="小心讀係兩音節 /ˈaʊ.ɚ/。卡片唔拆做 ow、er。弱讀係 /ɑɹ/。")
     add("your-det", "your", "det", "belonging-to-you", "Y UH1 R", ["your"],
         "你嘅", "你的", "nei5 ge3", ["your passport", "your table"],
-        "Here is your boarding pass.", "你張登機證喺度。")
+        "Here is your boarding pass.", "你張登機證喺度。",
+        variants=["/jɔɹ/"],
+        note="卡片用 CMU 第二條 /ˈjʊɹ/，同呢段音頻一致。CMU 第一條係 /jɔɹ/。")
     add("we-pron", "we", "pron", "first-plural", "W IY1", ["we"],
         "我哋", "我们", "ngo5 dei6", ["we have"], "We have a very nice ring.", "我哋有一隻好靚嘅戒指。")
     add("it-pron", "it", "pron", "thing", "IH1 T", ["it"],
@@ -473,7 +488,8 @@ def build_items() -> None:
         "一", "一", "jat1", ["one moment"], "One moment, please.", "請等一陣。")
     add("two-num", "two", "num", "2", "T UW1", ["two"],
         "二；兩", "二", "loeng5", ["for two", "table for two"],
-        "A table for two, please.", "兩位，唔該。")
+        "A table for two, please.", "兩位，唔該。",
+        piper="[[ə ˈteɪbəl fɚ ˈtu]] , please.")
     add("love-verb", "love", "verb", "like-strongly", "L AH1 V", ["love"],
         "好想；鍾意", "很想", "hou2 soeng2", ["I'd love to"],
         "I'd love to see it.", "我好想睇。",
@@ -519,19 +535,25 @@ def build_items() -> None:
         note="中間有 /θ/。")
     add("course-noun", "course", "noun", "of-course", "K AO1 R S", ["course"],
         "當然（of course）", "当然", "dong1 jin4", ["of course"],
-        "Of course.", "當然。")
+        "Of course.", "當然。",
+        piper="[[əv kˈɔɹs.]]")
     add("store-noun", "store", "noun", "shop", "S T AO1 R", ["store"],
         "店", "店", "dim3", ["jewellery store"],
-        "Welcome to our jewellery store.", "歡迎嚟到我哋嘅珠寶店。")
+        "Welcome to our jewellery store.", "歡迎嚟到我哋嘅珠寶店。",
+        piper="Welcome to our [[dʒˈulɹi]] store.")
     add("jewellery-noun", "jewellery", "noun", "ornaments", "JH UW1 L . R IY0", ["jewel", "ry"],
         "珠寶（英式串法）", "珠宝", "zyu1 bou2", ["jewellery store"],
         "Welcome to our jewellery store.", "歡迎嚟到我哋嘅珠寶店。",
         cmu="jewelry",
-        variants=["/ˈdʒu.əl.ri/"],
-        note="CMUdict 只收 jewelry。Wiktionary jewellery/jewelry 都係 /ˈdʒuː(ə)lri/。教學用兩音節 /ˈdʒul.ri/，三音節都接受。澳門店面常見串法係 jewellery。")
+        variants=["/ˈdʒu.əl.ɹi/"],
+        piper="Welcome to our [[dʒˈulɹi]] store.",
+        note="教學用兩音節 /ˈdʒul.ɹi/。錄音強制 [[dʒˈulɹi]]，唔會讀出中間嘅 ə。三音節 /ˈdʒu.əl.ɹi/ 只係備註。澳門店面常見串法係 jewellery。")
     add("jewelry-noun", "jewelry", "noun", "ornaments-us-spelling", "JH UW1 L . R IY0", ["jewel", "ry"],
         "珠寶（美式串法）", "珠宝", "zyu1 bou2", ["jewelry store"],
-        "Jewelry and jewellery sound the same.", "兩種串法讀音一樣。")
+        "Jewelry and jewellery sound the same.", "兩種串法讀音一樣。",
+        variants=["/ˈdʒu.əl.ɹi/"],
+        piper="[[dʒˈulɹi]] and [[dʒˈulɹi]] sound the same.",
+        note="同 jewellery 一樣，教學同錄音都係兩音節 /ˈdʒul.ɹi/。")
     add("necklace-noun", "necklace", "noun", "neck-jewel", "N EH1 K . L AH0 S", ["neck", "lace"],
         "頸鏈", "项链", "geng2 lin2", ["this necklace"],
         "This necklace is beautiful.", "呢條頸鏈好靚。")
@@ -635,6 +657,7 @@ def build_items() -> None:
     add("table-noun", "table", "noun", "dining-table", "T EY1 . B AH0 L", ["ta", "ble"],
         "檯", "桌子", "toi2", ["a table for two", "your table"],
         "A table for two, please.", "兩位，唔該。",
+        piper="[[ə ˈteɪbəl fɚ ˈtu]] , please.",
         note="table 本身冇 /r/。今課嘅 /r/ 喺 right、reservation、ready。")
     add("right-adv", "right", "adv", "exactly-or-direction", "R AY1 T", ["right"],
         "就係咁；右邊", "就；右边", "zau6", ["right this way"],
@@ -728,8 +751,9 @@ def build_items() -> None:
         "或者", "或者", "waak6 ze2", ["window or aisle"],
         "Window or aisle?", "靠窗定係通道？")
     add("free-adj", "free", "adj", "available", "F R IY1", ["free"],
-        "有得揀；空", "空着", "hung1", ["the seat is free"],
-        "The aisle seat is free.", "通道位仲有。")
+        "空嘅；仲有位", "空着", "hung1", ["the seat is free"],
+        "The aisle seat is free.", "通道位仲有。",
+        note="呢度係座位仲有，唔係免費。")
 
     # phrases
     add("thank-you-phrase", "thank you", "phrase", "thanks", "TH AE1 NG K | Y UW1", ["thank", "you"],
@@ -738,7 +762,8 @@ def build_items() -> None:
     add("of-course-phrase", "of course", "phrase", "yes-politely", "AH0 V | K AO1 R S", ["of", "course"],
         "當然", "当然", "dong1 jin4", ["of course, take a look"],
         "Of course.", "當然。", phrase=True,
-        note="of 喺呢度弱讀 /əv/。")
+        piper="[[əv kˈɔɹs.]]",
+        note="of 喺呢度弱讀 /əv/。錄音用同一個弱讀，唔係單獨唸 of 嗰個 /ʌv/。")
     add("good-morning-phrase", "good morning", "phrase", "morning-greeting", "G UH1 D | M AO1 R . N IH0 NG", ["good", "mor", "ning"],
         "早晨", "早上好", "zou2 san4", ["good morning, Mei"],
         "Good morning.", "早晨。", phrase=True)
@@ -761,7 +786,8 @@ def build_items() -> None:
     add("table-for-two-phrase", "a table for two", "phrase", "party-of-two", "AH0 | T EY1 . B AH0 L | F ER0 | T UW1", ["a", "ta", "ble", "for", "two"],
         "兩位", "两位", "loeng5 wai2", ["a table for two please"],
         "A table for two, please.", "兩位，唔該。", phrase=True,
-        note="a 同 for 都係弱讀。")
+        piper="[[ə ˈteɪbəl fɚ ˈtu]] , please.",
+        note="a 弱讀 /ə/，for 弱讀 /fɚ/。錄音用呢兩個弱讀。")
     add("check-in-noun", "check-in", "noun", "airport-desk", "CH EH1 K | IH1 N", ["check", "in"],
         "辦理登機", "办理登机", "baan6 lei5 dang1 gei1", ["at check-in"],
         "We are at check-in.", "我哋喺登機櫃檯。", phrase=True,
@@ -937,11 +963,39 @@ FLAGS = [
         "wiktionary": ["/ˈdʒuː(ə)lri/ for both spellings"],
         "freeDictionary": "jewellery /ˈdʒuːlri/; jewelry phonetics empty",
         "disagreement": "Spelling gap in CMUdict, not a sound conflict.",
-        "resolution": "Map jewellery to CMU jewelry. Teach /ˈdʒul.ri/ and note the three-syllable /ˈdʒu.əl.ri/ variant. Macau spelling on the card is jewellery.",
+        "resolution": "Map jewellery to CMU jewelry's two-syllable entry JH UW1 L R IY0. The card teaches /ˈdʒul.ɹi/. Piper's default reading of the spelling is the three-syllable variant, so every teaching clip is phoneme-forced to [[dʒˈulɹi]]. The three-syllable /ˈdʒu.əl.ɹi/ stays a noted variant and is not what the mp3 says.",
         "resolved": True,
-        "taughtIpa": "/ˈdʒul.ri/",
-        "resolvedBy": "night-1 lexicographer",
-        "resolvedAt": "2026-10-29",
+        "taughtIpa": "/ˈdʒul.ɹi/",
+        "resolvedBy": "round-1 lexicographer",
+        "resolvedAt": "2026-10-30",
+    },
+    {
+        "id": "your-det",
+        "lemma": "your",
+        "pos": "det",
+        "cmudict": ["Y AO1 R /jɔɹ/ first", "Y UH1 R /jʊɹ/ second"],
+        "wiktionary": ["/jɔːɹ/", "/jʊɹ/", "/jɚ/"],
+        "freeDictionary": "CMUdict is the US source for this pair",
+        "disagreement": "CMU's first entry is /jɔɹ/. The shipped clip says /jʊɹ/.",
+        "resolution": "Keep the headword at Y UH1 R /ˈjʊɹ/ so the card matches the existing mp3. List CMU's first entry /jɔɹ/ as a variant. Not a silent drop.",
+        "resolved": True,
+        "taughtIpa": "/ˈjʊɹ/",
+        "resolvedBy": "round-1 lexicographer",
+        "resolvedAt": "2026-10-30",
+    },
+    {
+        "id": "to-prep",
+        "lemma": "to",
+        "pos": "prep",
+        "cmudict": ["T UW1 /tu/", "T IH0 /tɪ/", "T AH0 /tə/"],
+        "wiktionary": ["strong /tu/", "weak /tə/", "weak /tɪ/"],
+        "freeDictionary": "CMUdict lists all three",
+        "disagreement": "The citation form is /tu/. The only shipped clip, 'I am flying to Hong Kong,' is the weak /tə/.",
+        "resolution": "The headword is weak /tə/ (CMU T AH0, stress 0) so the example button matches the mp3. Strong /tu/ and weak /tɪ/ are variants. The sentence was not re-forced to a stressed [[tˈu]].",
+        "resolved": True,
+        "taughtIpa": "/tə/",
+        "resolvedBy": "round-1 lexicographer",
+        "resolvedAt": "2026-10-30",
     },
     {
         "id": "check-verb",
@@ -993,9 +1047,9 @@ def build_lessons() -> list[dict]:
         line("f2-l5", "mei", "Mei", "Hi. Please say it again.", "嗨。請再講一次。"),
     ]
     j1 = [
-        line("j1-l1", "mei", "Mei", "Welcome to our jewellery store. How may I help you today?", "歡迎嚟到我哋嘅珠寶店。今日有咩可以幫到你？"),
+        line("j1-l1", "mei", "Mei", "Welcome to our jewellery store. How may I help you today?", "歡迎嚟到我哋嘅珠寶店。今日有咩可以幫到你？", "Welcome to our [[dʒˈulɹi]] store. How may I help you today?"),
         line("j1-l2", "tom", "Tom", "Hi. I'm just looking, thank you.", "嗨。我只係睇吓，多謝。"),
-        line("j1-l3", "mei", "Mei", "Of course. Please take a look around.", "當然。請周圍慢慢睇。"),
+        line("j1-l3", "mei", "Mei", "Of course. Please take a look around.", "當然。請周圍慢慢睇。", "[[əv kˈɔɹs.]] Please take a look around."),
         line("j1-l4", "tom", "Tom", "This necklace is beautiful.", "呢條頸鏈好靚。"),
         line("j1-l5", "mei", "Mei", "Thank you. Let me know if you need anything.", "多謝。有需要就話我知。"),
     ]
@@ -1004,7 +1058,7 @@ def build_lessons() -> list[dict]:
         line("j2-l2", "tom", "Tom", "I'm looking for a silver ring.", "我想搵一隻銀戒指。"),
         line("j2-l3", "mei", "Mei", "We have a very nice ring. Would you like to see it?", "我哋有一隻好靚嘅戒指。想唔想睇吓？"),
         line("j2-l4", "tom", "Tom", "Yes. I want something for my wife.", "好。我想搵樣嘢送俾太太。"),
-        line("j2-l5", "mei", "Mei", "Of course. I'll show you a few.", "當然。我畀你睇幾件。"),
+        line("j2-l5", "mei", "Mei", "Of course. I'll show you a few.", "當然。我畀你睇幾件。", "[[əv kˈɔɹs.]] I'll show you a few."),
     ]
     t1 = [
         line("t1-l1", "kai", "Kai", "Good afternoon. Where are you flying today?", "午安。你今日飛去邊？"),
@@ -1015,7 +1069,7 @@ def build_lessons() -> list[dict]:
     ]
     r1 = [
         line("r1-l1", "ana", "Ana", "Good evening. Do you have a reservation?", "晚上好。你有冇訂座？"),
-        line("r1-l2", "tom", "Tom", "Yes. A table for two, please.", "有。兩位，唔該。"),
+        line("r1-l2", "tom", "Tom", "Yes. A table for two, please.", "有。兩位，唔該。", "Yes. [[ə ˈteɪbəl fɚ ˈtu]] , please."),
         line("r1-l3", "ana", "Ana", "Right this way. Would you like a table by the window?", "請跟我嚟。想唔想坐靠窗？"),
         line("r1-l4", "tom", "Tom", "Yes, thank you. This is great.", "好，多謝。好好。"),
         line("r1-l5", "ana", "Ana", "Here is your table. Please have a seat. I'll bring the menu.", "你張檯喺度。請坐。我攞餐牌嚟。"),
@@ -1026,7 +1080,7 @@ def build_lessons() -> list[dict]:
         line("f1-m2", "ling", "Ling", "About.", "About。"),
         line("f1-m3", "ling", "Ling", "Nice and slow.", "慢慢嚟。"),
         line("f2-m2", "ling", "Ling", "Nice to meet you, too.", "我都好高興認識你。"),
-        line("j1-m1", "mei", "Mei", "Of course. Please take a look.", "當然。請慢慢睇。"),
+        line("j1-m1", "mei", "Mei", "Of course. Please take a look.", "當然。請慢慢睇。", "[[əv kˈɔɹs.]] Please take a look."),
         line("j1-m2", "mei", "Mei", "Thank you.", "多謝。"),
         line("j1-m3", "mei", "Mei", "Let me know if you need anything.", "有需要就話我知。"),
         line("j2-m1", "mei", "Mei", "We have a very nice ring.", "我哋有一隻好靚嘅戒指。"),
@@ -1315,7 +1369,7 @@ def build_lessons() -> list[dict]:
             "sound": {
                 "ipa": "/ʃ/",
                 "title": "長噓氣，唔係 check",
-                "note": "/ʃ/：嘴唇稍圓，舌面抬高，一口氣慢慢送出，好似叫人靜音但更圓。sure、show、information、sheet 都有。check-in 嘅 check 係 /tʃɛk/：先堵住，再放出。兩種都聽，唔好撈。boarding 本身係 /ˈbɔr.dɪŋ/，重點 /r/ 同 /ŋ/，唔係 /ʃ/。",
+                "note": "/ʃ/：嘴唇稍圓，舌面抬高，一口氣慢慢送出，好似叫人靜音但更圓。sure、show、information、sheet 都有。check-in 嘅 check 係 /tʃɛk/：先堵住，再放出。兩種都聽，唔好撈。boarding 本身係 /ˈbɔɹ.dɪŋ/，重點 /ɹ/ 同 /ŋ/，唔係 /ʃ/。",
                 "pairs": [
                     {"a": "sheet-noun", "b": "cheat-verb"},
                     {"a": "shoe-noun", "b": "chew-verb"},
@@ -1355,7 +1409,7 @@ def build_lessons() -> list[dict]:
             ],
             "roleplay": {
                 "you": "tom",
-                "intro": "今晚你係客人。Ana 在門口。等佢講完先答。",
+                "intro": "今晚你係客人。Ana 喺門口。等佢講完先答。",
                 "turns": [
                     {"partner": "Ana", "partnerId": "ana", "line": "Good evening. Do you have a reservation?", "audio": "assets/audio/lines/r1-l1.mp3", "audioSlow": "assets/audio/lines/r1-l1-slow.mp3", "expect": "Yes. A table for two, please.", "keywords": ["table", "two"], "modelAudio": "assets/audio/lines/r1-l2.mp3", "modelSlow": "assets/audio/lines/r1-l2-slow.mp3"},
                     {"partner": "Ana", "partnerId": "ana", "line": "Would you like a table by the window?", "audio": "assets/audio/lines/r1-l3.mp3", "audioSlow": "assets/audio/lines/r1-l3-slow.mp3", "expect": "Yes, thank you.", "keywords": ["yes", "thank"], "modelAudio": "assets/audio/lines/r1-l4.mp3", "modelSlow": "assets/audio/lines/r1-l4-slow.mp3"},
