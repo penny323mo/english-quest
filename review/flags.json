@@ -299,6 +299,105 @@
       "taughtIpa": "/tʃɛk/",
       "resolvedBy": "night-1 lexicographer",
       "resolvedAt": "2026-10-29"
+    },
+    {
+      "id": "dollar-noun",
+      "lemma": "dollar",
+      "pos": "noun",
+      "cmudict": [
+        "D AA1 L ER0 /ˈdɑl.ɚ/",
+        "D AO1 L ER0 /ˈdɔ.lɚ/"
+      ],
+      "wiktionary": [
+        "GA /ˈdɑ.lɚ/"
+      ],
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU lists a second US vowel /ɔ/. Wiktionary General American lists only /ˈdɑ.lɚ/.",
+      "resolution": "Teach CMU's first entry, the /ɑ/ vowel, which matches Wiktionary GA. /ˈdɔ.lɚ/ stays a labelled variant. The example audio is Piper's /dɑ/.",
+      "resolved": true,
+      "taughtIpa": "/ˈdɑl.ɚ/",
+      "resolvedBy": "round-11 lexicographer",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "hour-noun",
+      "lemma": "hour",
+      "pos": "noun",
+      "cmudict": [
+        "AW1 ER0 /ˈaʊ.ɚ/",
+        "AW1 R /ˈaʊɹ/"
+      ],
+      "wiktionary": [
+        "US /aʊɚ/"
+      ],
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU's second entry is a consonantal /ɹ/. Wiktionary's US entry is the rhotic vowel /aʊɚ/.",
+      "resolution": "Teach CMU's first entry AW1 ER0 as /ˈaʊ.ɚ/, matching Wiktionary US. /ˈaʊɹ/ is a variant.",
+      "resolved": true,
+      "taughtIpa": "/ˈaʊ.ɚ/",
+      "resolvedBy": "round-11 lexicographer",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "minute-noun",
+      "lemma": "minute",
+      "pos": "noun",
+      "cmudict": [
+        "M IH1 N AH0 T time",
+        "M AY0 N UW1 T tiny",
+        "M AY0 N Y UW1 T tiny"
+      ],
+      "wiktionary": [
+        "time /ˈmɪnɪt/",
+        "adjective US /maɪˈn(j)uːt/"
+      ],
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "Same spelling, two senses. The time noun is CMU's first entry. Wiktionary writes the unstressed vowel as /ɪ/; CMU writes AH0, which this app maps to /ə/.",
+      "resolution": "Teach the time sense only. The card IPA follows CMU via AH0 → /ə/, so /ˈmɪ.nət/. The mp3 is phoneme-forced to that vowel, not the adjective and not Piper's default /ˈmɪnɪt/.",
+      "resolved": true,
+      "taughtIpa": "/ˈmɪ.nət/",
+      "resolvedBy": "round-11 lexicographer",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "excuse-verb",
+      "lemma": "excuse",
+      "pos": "verb",
+      "cmudict": [
+        "IH0 K S K Y UW1 S noun /ɪkˈskjus/",
+        "IH0 K S K Y UW1 Z verb /ɪkˈskjuz/"
+      ],
+      "wiktionary": [
+        "verb US /ɪksˈkjuz/",
+        "noun US /ɪksˈkjus/",
+        "excuse me /ɪksˈkjuz mi/"
+      ],
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU lists the noun /s/ first and the verb /z/ second. Excuse me is the verb. Piper's default reading of the spelling is the noun /s/.",
+      "resolution": "Teach the verb /z/. Every Excuse me clip is phoneme-forced to [[ɪkskjˈuz]] so it cannot say the noun.",
+      "resolved": true,
+      "taughtIpa": "/ɪk.ˈskjuz/",
+      "resolvedBy": "round-11 lexicographer",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "sorry-adj",
+      "lemma": "sorry",
+      "pos": "adj",
+      "cmudict": [
+        "S AA1 R IY0 /ˈsɑ.ɹi/"
+      ],
+      "wiktionary": [
+        "GA /ˈsɑɹi/",
+        "Simple English Wiktionary also lists US /ˈsɔːri/"
+      ],
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU and Wiktionary's main GA line agree on /ɑ/. A second US vowel /ɔ/ is listed on Simple English Wiktionary and is not in CMU.",
+      "resolution": "Teach CMU /ˈsɑ.ɹi/, which is Wiktionary's GA primary. Note /ˈsɔ.ɹi/ as a variant. Audio is Piper's /sɑ/.",
+      "resolved": true,
+      "taughtIpa": "/ˈsɑ.ɹi/",
+      "resolvedBy": "round-11 lexicographer",
+      "resolvedAt": "2026-10-30"
     }
   ]
 }

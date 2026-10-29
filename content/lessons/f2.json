@@ -58,7 +58,7 @@
       "speaker": "mei",
       "speakerLabel": "Mei",
       "text": "Nice to meet you.",
-      "glossYue": "認識你真好。",
+      "glossYue": "好高興認識你。",
       "audio": "assets/audio/lines/f2-l3.mp3",
       "audioSlow": "assets/audio/lines/f2-l3-slow.mp3",
       "say": "Nice to meet you."
@@ -142,7 +142,7 @@
     {
       "pattern": "Nice to meet ___.",
       "example": "Nice to meet you.",
-      "glossYue": "認識你真好。",
+      "glossYue": "好高興認識你。",
       "answer": "you",
       "choices": [
         "you",
@@ -268,7 +268,7 @@
       "type": "meaning",
       "prompt": "Nice to meet you",
       "choices": [
-        "認識你真好",
+        "好高興認識你",
         "只係睇吓",
         "靠窗位"
       ],
@@ -322,5 +322,5 @@
       "three-num"
     ]
   },
-  "next": "J1"
+  "next": "F3"
 }

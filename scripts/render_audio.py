@@ -10,8 +10,10 @@ from __future__ import annotations
 
 import hashlib
 import json
+import re
 import subprocess
 import wave
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 from piper import PiperVoice
@@ -49,18 +51,79 @@ def synth(voice: PiperVoice, text: str, wav_path: Path, scale: float) -> None:
         voice.synthesize_wav(text, wf, syn_config=cfg)
 
 
+# iPhone Safari clips the first phoneme when a clip starts on the transient.
+# ~180 ms of lead and ~200 ms of tail keep the speech inside the file.
+LEAD_MS = 180
+TAIL_SEC = 0.20
+
+
 def to_mp3(wav_path: Path, mp3_path: Path) -> None:
     mp3_path.parent.mkdir(parents=True, exist_ok=True)
     subprocess.run(
         [
             "ffmpeg", "-y", "-loglevel", "error",
             "-i", str(wav_path),
+            "-af", f"adelay={LEAD_MS}:all=1,apad=pad_dur={TAIL_SEC}",
             "-ac", "1", "-ar", "22050",
             "-codec:a", "libmp3lame", "-qscale:a", "5",
             str(mp3_path),
         ],
         check=True,
     )
+
+
+def silence_edges(path: Path) -> tuple[float, float]:
+    proc = subprocess.run(
+        [
+            "ffmpeg", "-hide_banner", "-i", str(path),
+            "-af", "silencedetect=n=-35dB:d=0.05",
+            "-f", "null", "-",
+        ],
+        capture_output=True,
+        text=True,
+    )
+    text = proc.stderr
+    dur_m = re.search(r"Duration: (\d+):(\d+):(\d+(?:\.\d+)?)", text)
+    dur = 0.0
+    if dur_m:
+        dur = int(dur_m.group(1)) * 3600 + int(dur_m.group(2)) * 60 + float(dur_m.group(3))
+    starts = [float(v) for v in re.findall(r"silence_start: ([0-9.]+)", text)]
+    ends = [float(v) for v in re.findall(r"silence_end: ([0-9.]+)", text)]
+    lead = ends[0] if starts and starts[0] <= 0.03 and ends else 0.0
+    tail = 0.0
+    if starts and ends and dur > 0 and abs(ends[-1] - dur) < 0.12:
+        tail = max(0.0, ends[-1] - starts[-1])
+    return lead, tail
+
+
+def pad_one(path: Path) -> str:
+    lead, tail = silence_edges(path)
+    if lead >= 0.14 and tail >= 0.15:
+        return "skip"
+    tmp = path.with_suffix(".pad.mp3")
+    subprocess.run(
+        [
+            "ffmpeg", "-y", "-loglevel", "error",
+            "-i", str(path),
+            "-af", f"adelay={LEAD_MS}:all=1,apad=pad_dur={TAIL_SEC}",
+            "-ac", "1", "-ar", "22050",
+            "-codec:a", "libmp3lame", "-qscale:a", "5",
+            str(tmp),
+        ],
+        check=True,
+    )
+    tmp.replace(path)
+    return "pad"
+
+
+def pad_tree() -> None:
+    files = sorted(AUDIO.rglob("*.mp3"))
+    padded = 0
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        for status in pool.map(pad_one, files):
+            if status == "pad":
+                padded += 1
+    print(f"padded {padded} / {len(files)}")
 
 
 def main() -> None:
@@ -97,6 +160,7 @@ def main() -> None:
         done += 1
         if done % 20 == 0:
             print(f"  {done}/{len(jobs)}")
+    pad_tree()
     # stamp sha256 of normal word audio
     lex = json.loads(LEX.read_text(encoding="utf-8"))
     for item in lex["items"]:

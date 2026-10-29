@@ -1,0 +1,313 @@
+{
+  "id": "F4",
+  "unit": "F",
+  "titleYue": "禮貌用語",
+  "titleEn": "Polite phrases",
+  "canDoYue": "你能夠講 excuse me、I'm sorry，同埋 you're welcome。",
+  "canDoEn": "Say excuse me, I'm sorry, and you're welcome.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/f4.webp",
+  "cast": [
+    "mei"
+  ],
+  "lemmas": [
+    "excuse-me-phrase",
+    "im-sorry-phrase",
+    "youre-welcome-phrase",
+    "good-night-phrase",
+    "pardon-verb",
+    "please-adv",
+    "excuse-verb",
+    "sorry-adj",
+    "night-noun",
+    "thank-you-phrase",
+    "thank-verb",
+    "welcome-verb",
+    "good-adj",
+    "me-pron",
+    "light-adj",
+    "let-verb",
+    "net-noun"
+  ],
+  "dialogue": [
+    {
+      "id": "f4-l1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Excuse me.",
+      "glossYue": "唔該借借。",
+      "audio": "assets/audio/lines/f4-l1.mp3",
+      "audioSlow": "assets/audio/lines/f4-l1-slow.mp3",
+      "say": "[[ɪkskjˈuz]] me."
+    },
+    {
+      "id": "f4-l2",
+      "speaker": "ling",
+      "speakerLabel": "Ling",
+      "text": "I'm sorry.",
+      "glossYue": "對唔住。",
+      "audio": "assets/audio/lines/f4-l2.mp3",
+      "audioSlow": "assets/audio/lines/f4-l2-slow.mp3",
+      "say": "I'm sorry."
+    },
+    {
+      "id": "f4-l3",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "That's all right.",
+      "glossYue": "冇事。",
+      "audio": "assets/audio/lines/f4-l3.mp3",
+      "audioSlow": "assets/audio/lines/f4-l3-slow.mp3",
+      "say": "That's all right."
+    },
+    {
+      "id": "f4-l4",
+      "speaker": "ling",
+      "speakerLabel": "Ling",
+      "text": "Thank you.",
+      "glossYue": "多謝。",
+      "audio": "assets/audio/lines/f4-l4.mp3",
+      "audioSlow": "assets/audio/lines/f4-l4-slow.mp3",
+      "say": "Thank you."
+    },
+    {
+      "id": "f4-l5",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "You're welcome. Good night.",
+      "glossYue": "唔使客氣。晚安。",
+      "audio": "assets/audio/lines/f4-l5.mp3",
+      "audioSlow": "assets/audio/lines/f4-l5-slow.mp3",
+      "say": "You're welcome. Good night."
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Excuse me. 通常係？",
+      "choices": [
+        "想人讓一讓，或者禮貌咁打招呼",
+        "問幾多錢",
+        "講自己個名"
+      ],
+      "answer": 0,
+      "explain": "行過人身邊、打斷人之前，都可以先講呢句。"
+    },
+    {
+      "prompt": "I'm sorry. 係咩意思？",
+      "choices": [
+        "對唔住",
+        "唔使客氣",
+        "十蚊"
+      ],
+      "answer": 0,
+      "explain": "sorry 係道歉。you're welcome 先至係回應多謝。"
+    },
+    {
+      "prompt": "You're welcome. 幾時講？",
+      "choices": [
+        "人哋講咗 thank you 之後",
+        "問而家幾點",
+        "第一次見面"
+      ],
+      "answer": 0,
+      "explain": "即係唔使客氣。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Excuse ___.",
+      "example": "Excuse me.",
+      "glossYue": "唔該借借。",
+      "answer": "me",
+      "choices": [
+        "me",
+        "night",
+        "five"
+      ]
+    },
+    {
+      "pattern": "I'm ___.",
+      "example": "I'm sorry.",
+      "glossYue": "對唔住。",
+      "answer": "sorry",
+      "choices": [
+        "sorry",
+        "welcome",
+        "dollar"
+      ]
+    },
+    {
+      "pattern": "You're ___.",
+      "example": "You're welcome.",
+      "glossYue": "唔使客氣。",
+      "answer": "welcome",
+      "choices": [
+        "welcome",
+        "sorry",
+        "seven"
+      ]
+    },
+    {
+      "pattern": "Good ___.",
+      "example": "Good night.",
+      "glossYue": "晚安。",
+      "answer": "night",
+      "choices": [
+        "night",
+        "dollar",
+        "sorry"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "f4-l1",
+    "hint": "Excuse me."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你行過人身邊，第一句講邊句？",
+      "choices": [
+        "Excuse me.",
+        "It is ten dollars.",
+        "What time is it?"
+      ],
+      "answer": 0,
+      "explain": "先借一借，再講其他。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "I'm",
+        "sorry"
+      ],
+      "answer": [
+        "I'm",
+        "sorry"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "ling",
+    "intro": "你喺門口同 Mei 練習禮貌用語。等佢講完先答，中途唔會插嘴。",
+    "turns": [
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "Excuse me.",
+        "audio": "assets/audio/lines/f4-l1.mp3",
+        "audioSlow": "assets/audio/lines/f4-l1-slow.mp3",
+        "expect": "I'm sorry.",
+        "keywords": [
+          "sorry"
+        ],
+        "modelAudio": "assets/audio/lines/f4-l2.mp3",
+        "modelSlow": "assets/audio/lines/f4-l2-slow.mp3"
+      },
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "That's all right.",
+        "audio": "assets/audio/lines/f4-l3.mp3",
+        "audioSlow": "assets/audio/lines/f4-l3-slow.mp3",
+        "expect": "Thank you.",
+        "keywords": [
+          "thank"
+        ],
+        "modelAudio": "assets/audio/lines/f4-l4.mp3",
+        "modelSlow": "assets/audio/lines/f4-l4-slow.mp3"
+      },
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "You're welcome.",
+        "audio": "assets/audio/lines/f4-l6.mp3",
+        "audioSlow": "assets/audio/lines/f4-l6-slow.mp3",
+        "expect": "Good night.",
+        "keywords": [
+          "night"
+        ],
+        "modelAudio": "assets/audio/lines/f4-m3.mp3",
+        "modelSlow": "assets/audio/lines/f4-m3-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "night-noun",
+      "choices": [
+        "night",
+        "light",
+        "let"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "let-verb",
+      "choices": [
+        "let",
+        "net",
+        "night"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "Excuse me",
+      "choices": [
+        "唔該借借",
+        "十蚊",
+        "三點"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "I'm sorry",
+      "choices": [
+        "對唔住",
+        "唔使客氣",
+        "早晨"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "You're welcome 係邊種回應？",
+      "choices": [
+        "唔使客氣，回應多謝",
+        "問價錢",
+        "問幾點"
+      ],
+      "answer": 0,
+      "explain": "人哋多謝你，你先講 you're welcome。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/ · /n/",
+    "title": "舌邊同鼻音",
+    "note": "英文 /l/：舌尖抵住上顎後面，氣由舌兩邊出。/n/：同樣個位，氣改由鼻出。night、net 開頭係 /n/。light、let 開頭係 /l/。唔好用粵語 n、l 混讀去代替。",
+    "pairs": [
+      {
+        "a": "light-adj",
+        "b": "night-noun"
+      },
+      {
+        "a": "let-verb",
+        "b": "net-noun"
+      }
+    ],
+    "drill": [
+      "night-noun",
+      "light-adj",
+      "let-verb",
+      "net-noun"
+    ]
+  },
+  "next": "J1"
+}

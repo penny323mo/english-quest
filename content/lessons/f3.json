@@ -1,0 +1,326 @@
+{
+  "id": "F3",
+  "unit": "F",
+  "titleYue": "數字、錢同時間",
+  "titleEn": "Numbers, money, and time",
+  "canDoYue": "你能夠問幾多錢、答十蚊，同埋講三點。",
+  "canDoEn": "Ask how much, say ten dollars, and say three o'clock.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/f3.webp",
+  "cast": [
+    "mei"
+  ],
+  "lemmas": [
+    "how-much-phrase",
+    "ten-num",
+    "dollar-noun",
+    "three-num",
+    "oclock-adv",
+    "five-num",
+    "four-num",
+    "six-num",
+    "seven-num",
+    "eight-num",
+    "nine-num",
+    "one-num",
+    "two-num",
+    "money-noun",
+    "how-adv",
+    "much-adv",
+    "clock-noun",
+    "price-noun",
+    "minute-noun",
+    "hour-noun",
+    "now-adv",
+    "time-noun",
+    "fine-adj",
+    "sick-adj"
+  ],
+  "dialogue": [
+    {
+      "id": "f3-l1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "How much is this?",
+      "glossYue": "呢個幾多錢？",
+      "audio": "assets/audio/lines/f3-l1.mp3",
+      "audioSlow": "assets/audio/lines/f3-l1-slow.mp3",
+      "say": "How much is this?"
+    },
+    {
+      "id": "f3-l2",
+      "speaker": "ling",
+      "speakerLabel": "Ling",
+      "text": "It is ten dollars.",
+      "glossYue": "十蚊。",
+      "audio": "assets/audio/lines/f3-l2.mp3",
+      "audioSlow": "assets/audio/lines/f3-l2-slow.mp3",
+      "say": "It is ten dollars."
+    },
+    {
+      "id": "f3-l3",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "What time is it?",
+      "glossYue": "而家幾點？",
+      "audio": "assets/audio/lines/f3-l3.mp3",
+      "audioSlow": "assets/audio/lines/f3-l3-slow.mp3",
+      "say": "What time is it?"
+    },
+    {
+      "id": "f3-l4",
+      "speaker": "ling",
+      "speakerLabel": "Ling",
+      "text": "It is three o'clock.",
+      "glossYue": "三點。",
+      "audio": "assets/audio/lines/f3-l4.mp3",
+      "audioSlow": "assets/audio/lines/f3-l4-slow.mp3",
+      "say": "It is three o'clock."
+    },
+    {
+      "id": "f3-l5",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Thank you. See you at five.",
+      "glossYue": "多謝。五點見。",
+      "audio": "assets/audio/lines/f3-l5.mp3",
+      "audioSlow": "assets/audio/lines/f3-l5-slow.mp3",
+      "say": "Thank you. See you at five."
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "How much is this? 係問咩？",
+      "choices": [
+        "呢個幾多錢",
+        "而家幾點",
+        "我叫咩名"
+      ],
+      "answer": 0,
+      "explain": "how much 係問價錢。問時間用 what time。"
+    },
+    {
+      "prompt": "Ten dollars. 係幾多？",
+      "choices": [
+        "十蚊",
+        "十點",
+        "早晨"
+      ],
+      "answer": 0,
+      "explain": "dollar 喺香港口語講做「蚊」。"
+    },
+    {
+      "prompt": "Three o'clock. 係講緊咩？",
+      "choices": [
+        "三點",
+        "三蚊",
+        "三位"
+      ],
+      "answer": 0,
+      "explain": "o'clock 係點鐘，唔係錢。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "How much is ___?",
+      "example": "How much is this?",
+      "glossYue": "呢個幾多錢？",
+      "answer": "this",
+      "choices": [
+        "this",
+        "three",
+        "sorry"
+      ]
+    },
+    {
+      "pattern": "It is ___ dollars.",
+      "example": "It is ten dollars.",
+      "glossYue": "⋯⋯蚊。",
+      "answer": "ten",
+      "choices": [
+        "ten",
+        "clock",
+        "night"
+      ]
+    },
+    {
+      "pattern": "It is three ___.",
+      "example": "It is three o'clock.",
+      "glossYue": "三點。",
+      "answer": "o'clock",
+      "choices": [
+        "o'clock",
+        "dollars",
+        "sorry"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "f3-l1",
+    "hint": "How much is this?"
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "Mei 問 How much is this? 你點答？",
+      "choices": [
+        "It is ten dollars.",
+        "Good morning.",
+        "Excuse me."
+      ],
+      "answer": 0,
+      "explain": "先答價錢。十蚊就係 ten dollars。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "It",
+        "is",
+        "three",
+        "o'clock"
+      ],
+      "answer": [
+        "It",
+        "is",
+        "three",
+        "o'clock"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "ling",
+    "intro": "Mei 喺櫃檯問你價錢同時間。等佢講完先答，中途唔會插嘴。",
+    "turns": [
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "How much is this?",
+        "audio": "assets/audio/lines/f3-l1.mp3",
+        "audioSlow": "assets/audio/lines/f3-l1-slow.mp3",
+        "expect": "It is ten dollars.",
+        "keywords": [
+          "ten",
+          "dollar"
+        ],
+        "modelAudio": "assets/audio/lines/f3-l2.mp3",
+        "modelSlow": "assets/audio/lines/f3-l2-slow.mp3"
+      },
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "What time is it?",
+        "audio": "assets/audio/lines/f3-l3.mp3",
+        "audioSlow": "assets/audio/lines/f3-l3-slow.mp3",
+        "expect": "It is three o'clock.",
+        "keywords": [
+          "three",
+          "clock"
+        ],
+        "modelAudio": "assets/audio/lines/f3-l4.mp3",
+        "modelSlow": "assets/audio/lines/f3-l4-slow.mp3"
+      },
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "Is it five dollars?",
+        "audio": "assets/audio/lines/f3-l6.mp3",
+        "audioSlow": "assets/audio/lines/f3-l6-slow.mp3",
+        "expect": "Yes. Five dollars.",
+        "keywords": [
+          "five",
+          "dollar"
+        ],
+        "modelAudio": "assets/audio/lines/f3-m3.mp3",
+        "modelSlow": "assets/audio/lines/f3-m3-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "five-num",
+      "choices": [
+        "five",
+        "fine",
+        "nine"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "six-num",
+      "choices": [
+        "six",
+        "sick",
+        "sit"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "dollar",
+      "choices": [
+        "蚊",
+        "點鐘",
+        "對唔住"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "o'clock",
+      "choices": [
+        "點鐘",
+        "蚊",
+        "護照"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "price",
+      "choices": [
+        "價錢",
+        "航班",
+        "餐牌"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊句先係問時間？",
+      "choices": [
+        "What time is it?",
+        "How much is this?",
+        "Excuse me."
+      ],
+      "answer": 0,
+      "explain": "time 係時間。how much 係問錢。"
+    }
+  ],
+  "sound": {
+    "ipa": "尾音",
+    "title": "唔好食尾音",
+    "note": "廣東話成日食咗英文尾音。five 要收到 /v/，唔好變成 fine。six 尾有 /ks/，唔好變成 sick。ten 尾嘅 /n/ 都要留低。用口型，唔好用粵拼代替。",
+    "pairs": [
+      {
+        "a": "five-num",
+        "b": "fine-adj"
+      },
+      {
+        "a": "six-num",
+        "b": "sick-adj"
+      }
+    ],
+    "drill": [
+      "five-num",
+      "six-num",
+      "ten-num",
+      "dollar-noun"
+    ]
+  },
+  "next": "F4"
+}

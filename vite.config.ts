@@ -104,11 +104,11 @@ export default defineConfig({
         clientsClaim: true,
         cleanupOutdatedCaches: true,
         // Vite's default skips revisions for every assets/ URL. Stable mp3 and
-        // webp names would then stay cached after a pronunciation fix. Only
-        // top-level fingerprinted build files (index-AbCd1234.js) may use a
-        // null revision. The hash class excludes "-" so names like det-slow.mp3
-        // still get a content revision.
-        dontCacheBustURLsMatching: /^assets\/[^/]+-[A-Za-z0-9_]{8}\.[a-z0-9]+$/,
+        // webp names would then stay cached after a pronunciation fix. Only a
+        // top-level fingerprinted file (one path segment, eight-char Vite hash)
+        // may use a null revision. The hash may contain "-". Nested names such
+        // as how-may-i-phrase.mp3 stay outside this pattern and keep a revision.
+        dontCacheBustURLsMatching: /^assets\/[^/]+-[A-Za-z0-9_-]{8}\.[a-z0-9]+$/,
         globPatterns: ["**/*.{js,css,html,svg,png,webp,mp3,webmanifest}"],
         globIgnores: ["**/*.wav", "**/*.jpg"],
         maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,

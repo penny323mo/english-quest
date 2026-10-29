@@ -112,7 +112,7 @@ a { color: inherit; }
   min-height: 210px;
   margin-bottom: 18px;
 }
-.cover img { width: 100%; height: 240px; object-fit: cover; }
+.cover .art-ph { width: 100%; height: 240px; }
 .cover figcaption {
   position: absolute;
   left: 0; right: 0; bottom: 0;
@@ -139,12 +139,10 @@ a { color: inherit; }
   background: transparent;
   min-height: 72px;
 }
-.lesson-row img, .thumb-fallback {
+.lesson-row .art-ph, .thumb-fallback {
   width: 72px;
   height: 72px;
-  object-fit: cover;
   border-radius: 12px;
-  background: #243;
 }
 .thumb-fallback { display: grid; place-items: center; color: var(--gold); font-family: var(--serif); }
 .lesson-row strong { display: block; font-size: 1.02rem; }
@@ -280,7 +278,7 @@ a { color: inherit; }
   position: absolute;
   inset: 0;
 }
-.hero img { width: 100%; height: 100%; object-fit: cover; }
+.hero .art-ph { position: absolute; inset: 0; width: 100%; height: 100%; }
 .hero::after {
   content: "";
   position: absolute;
@@ -345,7 +343,38 @@ a { color: inherit; }
 .kword.on { color: var(--gold-2); }
 
 .cast { display: flex; gap: 8px; }
-.cast img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); }
+.cast .art-ph { width: 44px; height: 44px; border-radius: 50%; border: 1px solid var(--line); }
+
+.art-ph, .thumb-fallback {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  flex: none;
+  background:
+    radial-gradient(120% 90% at 28% 18%, rgba(47, 111, 106, 0.78), transparent 56%),
+    radial-gradient(90% 80% at 82% 84%, rgba(198, 167, 94, 0.48), transparent 52%),
+    #1b1f3b;
+}
+.thumb-fallback { display: grid; place-items: center; color: var(--gold); font-family: var(--serif); }
+.art-ph::before {
+  content: "";
+  position: absolute;
+  inset: -35%;
+  background:
+    radial-gradient(circle at 38% 42%, rgba(244, 237, 228, 0.28), transparent 46%),
+    radial-gradient(circle at 70% 62%, rgba(47, 111, 106, 0.7), transparent 54%);
+  filter: blur(14px);
+}
+.art-ph img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  opacity: 0;
+}
+.art-ph.is-ready img { opacity: 1; }
 
 .mouths { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; }
 .mouth-fig { margin: 0; }

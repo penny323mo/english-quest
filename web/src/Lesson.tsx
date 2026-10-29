@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { Mouth, mouthsFor } from "./components/Mouth";
+import { ArtImg, preloadArt } from "./art";
 import { CAST_LABEL, asset, isLessonOpen, lessonById, lexById } from "./data";
 import {
   absAsset,
@@ -19,9 +20,20 @@ const BEATS = ["場景", "目標", "聽", "理解", "句式", "跟讀", "砌句"
 function tipFor(id: string): string {
   if (id === "F1") return "短音收得快，長音先拉。about 第一個音係好輕嘅 /ə/。";
   if (id === "F2" || id === "J1") return "thank 嘅 th 用舌尖貼上牙，唔好讀成 s 或者 f。";
+  if (id === "F3") return "five 尾音要收到 /v/，six 尾有 /ks/。唔好食咗尾音。";
+  if (id === "F4") return "/l/ 舌尖抵上顎，氣由兩邊出。/n/ 氣由鼻出。";
   if (id === "J2") return "w 要圓唇，v 係上牙輕碰下唇。";
   if (id === "T1") return "sure、show 先係 /ʃ/。check-in 嘅 check 係 /tʃ/，前面有一粒塞音。";
-  return "美式 /r/ 舌尖唔好掂到上顎。table 本身冇 /r/。";
+  if (id === "R1") return "美式 /r/ 舌尖唔好掂到上顎。table 本身冇 /r/。";
+  return "跟住模範嘅口型，慢慢講。";
+}
+
+function roleTip(youId: string): string {
+  const name = CAST_LABEL[youId];
+  if (youId !== "ling" && name && name !== "你") {
+    return `你扮 ${name}。等對方講完先答，中途唔會插嘴。`;
+  }
+  return "輪到你講。等對方講完先答，中途唔會插嘴。";
 }
 
 export function LessonView({ id }: { id: string }) {
@@ -59,6 +71,13 @@ function Player({ lesson }: { lesson: Lesson }) {
   const saved = useRef(false);
 
   useEffect(() => {
+    preloadArt([
+      asset(lesson.hero),
+      ...lesson.cast.map((id) => asset(`assets/art/refs/${id}.webp`)),
+    ]);
+  }, [lesson]);
+
+  useEffect(() => {
     stopAudio();
   }, [beat]);
 
@@ -78,7 +97,7 @@ function Player({ lesson }: { lesson: Lesson }) {
   return (
     <div className="lesson">
       <div className="hero">
-        <img src={asset(lesson.hero)} alt="" />
+        <ArtImg src={asset(lesson.hero)} alt="" width={900} height={1200} fill />
       </div>
       <div className="lesson-top">
         <a href="#/">關閉</a>
@@ -143,7 +162,7 @@ function Hook({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
       <p className="kicker" lang="en">{lesson.titleEn}</p>
       <div className="cast">
         {lesson.cast.map((id) => (
-          <img key={id} src={asset(`assets/art/refs/${id}.webp`)} alt={CAST_LABEL[id] || id} />
+          <ArtImg key={id} src={asset(`assets/art/refs/${id}.webp`)} alt={CAST_LABEL[id] || id} width={44} height={44} />
         ))}
       </div>
       <button className="btn block" type="button" onClick={onNext}>入去場景</button>
@@ -408,7 +427,6 @@ function RoleBeat({
 }) {
   const turn = lesson.roleplay.turns[sub];
   if (!turn) return null;
-  const you = CAST_LABEL[lesson.roleplay.you] || "你";
   return (
     <>
       <p className="fine">{lesson.roleplay.intro}</p>
@@ -424,7 +442,7 @@ function RoleBeat({
         keywords={turn.keywords}
         modelAudio={turn.modelAudio}
         modelSlow={turn.modelSlow}
-        tip={`你而家係 ${you}。等對方講完先答，中途唔會插嘴。`}
+        tip={roleTip(lesson.roleplay.you)}
       />
       <button
         className="btn block"
@@ -553,7 +571,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪六課你行完啦。到期嘅卡會喺重溫等你。</p>
+        <p className="lede">呢輪八課你行完啦。到期嘅卡會喺重溫等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );

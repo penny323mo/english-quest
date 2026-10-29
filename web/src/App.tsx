@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { preloadArt } from "./art";
+import { lessons, asset } from "./data";
 import { LessonView } from "./Lesson";
 import { Attributions, Onboarding, PathHome, Profile, Review, Settings, WordDetail, Words } from "./pages";
 import { hydrate, useStore } from "./store";
@@ -60,6 +62,15 @@ export function App() {
 
   useEffect(() => {
     void hydrate();
+  }, []);
+
+  useEffect(() => {
+    const cast = ["mei", "tom", "ana", "kai"];
+    preloadArt([
+      asset("assets/art/cover.webp"),
+      ...lessons.map((lesson) => asset(lesson.hero)),
+      ...cast.map((id) => asset(`assets/art/refs/${id}.webp`)),
+    ]);
   }, []);
 
   useEffect(() => {

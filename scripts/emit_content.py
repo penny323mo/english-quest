@@ -345,10 +345,10 @@ def build_items() -> None:
         "我嘅", "我的", "ngo5 ge3", ["my name", "my passport"], "My name is Ling.", "我叫 Ling。")
     add("nice-adj", "nice", "adj", "pleasant", "N AY1 S", ["nice"],
         "好；親切", "好", "hou2", ["nice to meet you", "a nice ring"],
-        "Nice to meet you.", "認識你真好。",
+        "Nice to meet you.", "好高興認識你。",
         note="CMU 嘅 N IY1 S 係城市 Nice，唔係呢個意思。")
     add("meet-verb", "meet", "verb", "come-together", "M IY1 T", ["meet"],
-        "見；認識", "见面", "gin3", ["nice to meet you"], "Nice to meet you.", "認識你真好。")
+        "見；認識", "见面", "gin3", ["nice to meet you"], "Nice to meet you.", "好高興認識你。")
     add("you-pron", "you", "pron", "addressee", "Y UW1", ["you"],
         "你", "你", "nei5", ["thank you", "help you"], "Thank you.", "多謝。")
     add("thank-verb", "thank", "verb", "express-gratitude", "TH AE1 NG K", ["thank"],
@@ -362,10 +362,10 @@ def build_items() -> None:
     add("too-adv", "too", "adv", "also", "T UW1", ["too"],
         "都", "也", "dou1", ["me too", "you too"], "Nice to meet you, too.", "我都好高興認識你。")
     add("sir-noun", "sir", "noun", "polite-man", "S ER1", ["sir"],
-        "先生（客氣）", "先生", "sin1 saang1", ["yes, sir"], "Yes, sir.", "係，先生。",
+        "先生（客氣）", "先生", "sin1 saang1", ["yes, sir"], "Yes, sir.", "好嘅，先生。",
         piper="Yes, [[sˈɝ]].")
     add("madam-noun", "madam", "noun", "polite-woman", "M AE1 D . AH0 M", ["mad", "am"],
-        "女士（客氣）", "女士", "neoi5 si6", ["yes, madam"], "Yes, madam.", "係，女士。")
+        "女士（客氣）", "女士", "neoi5 si6", ["yes, madam"], "Yes, madam.", "好嘅，女士。")
     add("welcome-verb", "welcome", "verb", "greet-in", "W EH1 L . K AH0 M", ["wel", "come"],
         "歡迎", "欢迎", "fun1 jing4", ["welcome to", "you're welcome"],
         "Welcome to our jewellery store.", "歡迎嚟到我哋嘅珠寶店。",
@@ -392,7 +392,7 @@ def build_items() -> None:
         note="例句同多數句子弱讀 /tə/。單獨強調先至係 /tu/。")
     add("for-prep", "for", "prep", "intended-for", "F AO1 R", ["for"],
         "畀；為咗", "给；为了", "bei2", ["for you", "for two"],
-        "Something for my wife.", "送俾我太太。",
+        "Something for my wife.", "送畀我太太。",
         variants=["/fɚ/ weak"])
     add("in-prep", "in", "prep", "inside", "IH1 N", ["in"],
         "入面", "在…里", "jap6 min6", ["in Macau", "come in"],
@@ -443,7 +443,7 @@ def build_items() -> None:
         "Where are you flying today?", "你今日飛去邊？")
     add("here-adv", "here", "adv", "this-place", "HH IY1 R", ["here"],
         "呢度", "这里", "ni1 dou6", ["here is", "over here"],
-        "Here is my passport.", "我張護照喺度。",
+        "Here is my passport.", "呢本係我嘅護照。",
         note="CMU 用 IY+R 記 NEAR 元音。教學 IPA 寫 /hɪr/。")
     add("just-adv", "just", "adv", "only", "JH AH1 S T", ["just"],
         "只係", "只是", "zi2 hai6", ["just looking"],
@@ -471,7 +471,7 @@ def build_items() -> None:
         "Would you like to see it?", "想唔想睇吓？")
     add("want-verb", "want", "verb", "desire", "W AA1 N T", ["want"],
         "想要", "想要", "soeng2 jiu3", ["I want something"],
-        "I want something for my wife.", "我想搵樣嘢送俾太太。",
+        "I want something for my wife.", "我想買樣嘢畀太太。",
         variants=["/wɔnt/"],
         note="CMU 主條 /wɑnt/。Wiktionary 美式亦有 /wɔnt/。卡片跟 CMU，音頻用同一個元音。",
         piper="I [[wˈɑnt]] something for my wife.")
@@ -531,7 +531,7 @@ def build_items() -> None:
         note="中間有 /θ/。")
     add("something-pron", "something", "pron", "some-thing", "S AH1 M . TH IH0 NG", ["some", "thing"],
         "某樣嘢", "某样东西", "mau5 joeng6 je5", ["something for my wife"],
-        "I want something for my wife.", "我想搵樣嘢送俾太太。",
+        "I want something for my wife.", "我想買樣嘢畀太太。",
         note="中間有 /θ/。")
     add("course-noun", "course", "noun", "of-course", "K AO1 R S", ["course"],
         "當然（of course）", "当然", "dong1 jin4", ["of course"],
@@ -588,7 +588,7 @@ def build_items() -> None:
         note="開頭 /w/，尾音 /tʃ/。")
     add("wife-noun", "wife", "noun", "spouse", "W AY1 F", ["wife"],
         "太太", "太太", "taai3 taai2", ["for my wife"],
-        "Something for my wife.", "送俾我太太。")
+        "Something for my wife.", "送畀我太太。")
     add("wine-noun", "wine", "noun", "drink", "W AY1 N", ["wine"],
         "酒（葡萄酒）", "葡萄酒", "zau2", ["a glass of wine"],
         "Wine starts with /w/.", "Wine 開頭係圓唇 /w/。",
@@ -608,7 +608,7 @@ def build_items() -> None:
         "Where are you flying today?", "你今日飛去邊？")
     add("passport-noun", "passport", "noun", "travel-document", "P AE1 S . P AO2 R T", ["pass", "port"],
         "護照", "护照", "wu6 ziu3", ["my passport", "see your passport"],
-        "Here is my passport.", "我張護照喺度。")
+        "Here is my passport.", "呢本係我嘅護照。")
     add("window-noun", "window", "noun", "window", "W IH1 N . D OW0", ["win", "dow"],
         "窗", "窗", "coeng1", ["window seat", "by the window"],
         "A window seat, please.", "要靠窗位，唔該。")
@@ -681,7 +681,7 @@ def build_items() -> None:
         "Are you ready?", "你準備好未？")
     add("red-adj", "red", "adj", "color", "R EH1 D", ["red"],
         "紅色", "红色", "hung4 sik1", ["red wine"],
-        "The seat is red.", "張凳係紅色。",
+        "The seat is red.", "呢個位係紅色。",
         note="同 read（過去）同音，意思唔同。")
     add("led-verb", "led", "verb", "past-of-lead", "L EH1 D", ["led"],
         "帶領（過去）", "带领（过去）", "daai3 ling5", ["led the way"],
@@ -739,7 +739,7 @@ def build_items() -> None:
         "Don't cheat.", "唔好呃。",
         note="對比組：/tʃ/ 對 /ʃ/。")
     add("shoe-noun", "shoe", "noun", "footwear", "SH UW1", ["shoe"],
-        "鞋", "鞋", "haai4", ["a shoe"], "A new shoe.", "一對新鞋。")
+        "鞋", "鞋", "haai4", ["a shoe"], "A new shoe.", "一隻新鞋。")
     add("chew-verb", "chew", "verb", "masticate", "CH UW1", ["chew"],
         "嚼", "嚼", "zoek3", ["chew slowly"], "Chew slowly.", "慢慢嚼。")
     add("me-pron", "me", "pron", "object-me", "M IY1", ["me"],
@@ -768,8 +768,8 @@ def build_items() -> None:
         "早晨", "早上好", "zou2 san4", ["good morning, Mei"],
         "Good morning.", "早晨。", phrase=True)
     add("nice-to-meet-phrase", "nice to meet you", "phrase", "introduction", "N AY1 S | T AH0 | M IY1 T | Y UW1", ["nice", "to", "meet", "you"],
-        "認識你真好", "很高兴认识你", "jing6 sik1 nei5", ["nice to meet you too"],
-        "Nice to meet you.", "認識你真好。", phrase=True,
+        "好高興認識你", "很高兴认识你", "hou2 gou1 hing3 jing6 sik1 nei5", ["nice to meet you too"],
+        "Nice to meet you.", "好高興認識你。", phrase=True,
         note="to 弱讀 /tə/。")
     add("just-looking-phrase", "just looking", "phrase", "not-buying-yet", "JH AH1 S T | L UH1 K . IH0 NG", ["just", "look", "ing"],
         "只係睇吓", "只是看看", "zi2 hai6 tai2 haa5", ["I'm just looking"],
@@ -798,6 +798,114 @@ def build_items() -> None:
     add("let-me-know-phrase", "let me know", "phrase", "tell-me", "L EH1 T | M IY1 | N OW1", ["let", "me", "know"],
         "話我知", "告诉我", "waa6 ngo5 zi1", ["let me know if you need anything"],
         "Let me know.", "話我知。", phrase=True)
+
+    # F3 numbers, money, time. F4 politeness. Contrast words for the sound beats.
+    add("four-num", "four", "num", "4", "F AO1 R", ["four"],
+        "四", "四", "sei3", ["four dollars", "four o'clock"],
+        "I have four.", "我有四個。")
+    add("five-num", "five", "num", "5", "F AY1 V", ["five"],
+        "五", "五", "ng5", ["five dollars", "at five"],
+        "It is five dollars.", "五蚊。",
+        note="尾音收到 /v/。唔好食咗，變成 fine。")
+    add("six-num", "six", "num", "6", "S IH1 K S", ["six"],
+        "六", "六", "luk6", ["six dollars"],
+        "It is six dollars.", "六蚊。",
+        note="尾音係 /ks/。唔好變成 sick。")
+    add("seven-num", "seven", "num", "7", "S EH1 . V AH0 N", ["sev", "en"],
+        "七", "七", "cat1", ["seven dollars"],
+        "It is seven.", "七。")
+    add("eight-num", "eight", "num", "8", "EY1 T", ["eight"],
+        "八", "八", "baat3", ["eight dollars"],
+        "It is eight.", "八。")
+    add("nine-num", "nine", "num", "9", "N AY1 N", ["nine"],
+        "九", "九", "gau2", ["nine dollars"],
+        "It is nine.", "九。")
+    add("ten-num", "ten", "num", "10", "T EH1 N", ["ten"],
+        "十", "十", "sap6", ["ten dollars"],
+        "It is ten.", "十。",
+        note="尾音 /n/ 要留低。")
+    add("dollar-noun", "dollar", "noun", "currency", "D AA1 L . ER0", ["dol", "lar"],
+        "蚊", "元", "man1", ["ten dollars", "one dollar"],
+        "It is ten dollars.", "十蚊。",
+        variants=["/ˈdɔ.lɚ/"],
+        note="教 CMU 第一條 /ˈdɑl.ɚ/，同 Wiktionary 美式 /ˈdɑ.lɚ/ 同一個元音。CMU 第二條 /ˈdɔ.lɚ/ 標做變體。")
+    add("money-noun", "money", "noun", "funds", "M AH1 . N IY0", ["mon", "ey"],
+        "錢", "钱", "cin4", ["some money"],
+        "I have money.", "我有錢。")
+    add("how-adv", "how", "adv", "what-way", "HH AW1", ["how"],
+        "點樣", "怎样", "dim2 joeng2", ["how much", "how are you"],
+        "How much is this?", "呢個幾多錢？")
+    add("much-adv", "much", "adv", "quantity", "M AH1 CH", ["much"],
+        "幾多", "多少", "gei2 do1", ["how much"],
+        "How much?", "幾多？")
+    add("clock-noun", "clock", "noun", "timepiece", "K L AA1 K", ["clock"],
+        "鐘", "钟", "zung1", ["the clock", "o'clock"],
+        "Look at the clock.", "睇吓個鐘。")
+    add("oclock-adv", "o'clock", "adv", "on-the-hour", "AH0 . K L AA1 K", ["o", "clock"],
+        "點", "点", "dim2", ["three o'clock", "five o'clock"],
+        "It is three o'clock.", "三點。")
+    add("price-noun", "price", "noun", "cost", "P R AY1 S", ["price"],
+        "價錢", "价钱", "gaa3 cin4", ["the price"],
+        "The price is ten dollars.", "價錢係十蚊。")
+    add("minute-noun", "minute", "noun", "sixty-seconds", "M IH1 N . AH0 T", ["min", "ute"],
+        "分鐘", "分钟", "fan1 zung1", ["one minute", "wait a minute"],
+        "Wait a minute.", "等一分鐘。",
+        piper="[[wˈeɪt ə mˈɪnət]]",
+        note="時間嗰個讀音。CMU 另有形容詞「極細」M AY0 N UW1 T，呢張卡唔教。")
+    add("hour-noun", "hour", "noun", "sixty-minutes", "AW1 . ER0", ["hour"],
+        "個鐘", "小时", "go3 zung1", ["one hour"],
+        "One hour.", "一個鐘。",
+        join_syllables=True,
+        variants=["/ˈaʊɹ/"],
+        note="CMU 第一條 AW1 ER0，卡片 /ˈaʊ.ɚ/，同 Wiktionary 美式 /aʊɚ/。第二條 AW1 R 係 /ˈaʊɹ/，標做變體。")
+    add("now-adv", "now", "adv", "this-moment", "N AW1", ["now"],
+        "而家", "现在", "ji4 gaa1", ["right now"],
+        "What time is it now?", "而家幾點？")
+    add("fine-adj", "fine", "adj", "satisfactory", "F AY1 N", ["fine"],
+        "幾好", "还好", "gei2 hou2", ["I am fine"],
+        "I am fine.", "我幾好。",
+        note="對比組。尾音係 /n/，唔係 five 嘅 /v/。")
+    add("sick-adj", "sick", "adj", "ill", "S IH1 K", ["sick"],
+        "病", "病", "beng6", ["I am sick"],
+        "I am sick.", "我病咗。",
+        note="對比組。冇 six 尾嗰個 /s/。")
+    add("excuse-verb", "excuse", "verb", "forgive", "IH0 K . S K Y UW1 Z", ["ex", "cuse"],
+        "借借；原諒", "原谅", "ze3 ze3", ["excuse me"],
+        "Excuse me.", "唔該借借。",
+        piper="[[ɪkskjˈuz]] me.",
+        note="Excuse me 用動詞，尾音 /z/。名詞「藉口」先至係 /s/。Wiktionary 美式動詞 /ɪksˈkjuz/，名詞 /ɪksˈkjus/。錄音強制動詞，因為 Piper 讀個串法會變成名詞。")
+    add("sorry-adj", "sorry", "adj", "apologetic", "S AA1 . R IY0", ["sor", "ry"],
+        "對唔住", "对不起", "deoi3 m4 zyu6", ["I'm sorry"],
+        "I'm sorry.", "對唔住。",
+        variants=["/ˈsɔ.ɹi/"],
+        note="卡片跟 CMU 同 Wiktionary 美式主條 /ˈsɑ.ɹi/。Simple English Wiktionary 亦列美式 /ˈsɔ.ɹi/，標做變體。")
+    add("pardon-verb", "pardon", "verb", "ask-pardon", "P AA1 R . D AH0 N", ["par", "don"],
+        "唔該再講一次", "请再说一遍", "m4 goi1 zoi3 gong2 jat1 ci3", ["pardon me"],
+        "Pardon me.", "唔該再講一次。")
+    add("night-noun", "night", "noun", "nighttime", "N AY1 T", ["night"],
+        "夜晚", "夜晚", "je6 maan5", ["good night", "at night"],
+        "Good night.", "晚安。",
+        note="對比組。開頭係 /n/，light 係 /l/。")
+    add("net-noun", "net", "noun", "mesh", "N EH1 T", ["net"],
+        "網", "网", "mong5", ["a net"],
+        "A fishing net.", "一張漁網。",
+        note="對比組。開頭係 /n/，let 係 /l/。")
+    add("how-much-phrase", "how much", "phrase", "ask-price", "HH AW1 | M AH1 CH", ["how", "much"],
+        "幾多錢", "多少钱", "gei2 do1 cin4", ["how much is this"],
+        "How much is this?", "呢個幾多錢？", phrase=True)
+    add("excuse-me-phrase", "excuse me", "phrase", "get-attention", "IH0 K . S K Y UW1 Z | M IY1", ["ex", "cuse", "me"],
+        "唔該借借", "不好意思", "m4 goi1 ze3 ze3", ["excuse me"],
+        "Excuse me.", "唔該借借。", phrase=True,
+        piper="[[ɪkskjˈuz]] me.")
+    add("im-sorry-phrase", "I'm sorry", "phrase", "apology", "AY1 M | S AA1 . R IY0", ["I'm", "sor", "ry"],
+        "對唔住", "对不起", "deoi3 m4 zyu6", ["I'm sorry"],
+        "I'm sorry.", "對唔住。", phrase=True)
+    add("youre-welcome-phrase", "you're welcome", "phrase", "reply-thanks", "Y UH1 R | W EH1 L . K AH0 M", ["you're", "wel", "come"],
+        "唔使客氣", "不客气", "m4 sai2 haak3 hei3", ["you're welcome"],
+        "You're welcome.", "唔使客氣。", phrase=True)
+    add("good-night-phrase", "good night", "phrase", "farewell-night", "G UH1 D | N AY1 T", ["good", "night"],
+        "晚安", "晚安", "maan5 on1", ["good night"],
+        "Good night.", "晚安。", phrase=True)
 
 
 def verify(cmu: dict[str, list[str]]) -> None:
@@ -1011,6 +1119,76 @@ FLAGS = [
         "resolvedBy": "night-1 lexicographer",
         "resolvedAt": "2026-10-29",
     },
+    {
+        "id": "dollar-noun",
+        "lemma": "dollar",
+        "pos": "noun",
+        "cmudict": ["D AA1 L ER0 /ˈdɑl.ɚ/", "D AO1 L ER0 /ˈdɔ.lɚ/"],
+        "wiktionary": ["GA /ˈdɑ.lɚ/"],
+        "freeDictionary": "not in the local phonetics cache",
+        "disagreement": "CMU lists a second US vowel /ɔ/. Wiktionary General American lists only /ˈdɑ.lɚ/.",
+        "resolution": "Teach CMU's first entry, the /ɑ/ vowel, which matches Wiktionary GA. /ˈdɔ.lɚ/ stays a labelled variant. The example audio is Piper's /dɑ/.",
+        "resolved": True,
+        "taughtIpa": "/ˈdɑl.ɚ/",
+        "resolvedBy": "round-11 lexicographer",
+        "resolvedAt": "2026-10-30",
+    },
+    {
+        "id": "hour-noun",
+        "lemma": "hour",
+        "pos": "noun",
+        "cmudict": ["AW1 ER0 /ˈaʊ.ɚ/", "AW1 R /ˈaʊɹ/"],
+        "wiktionary": ["US /aʊɚ/"],
+        "freeDictionary": "not in the local phonetics cache",
+        "disagreement": "CMU's second entry is a consonantal /ɹ/. Wiktionary's US entry is the rhotic vowel /aʊɚ/.",
+        "resolution": "Teach CMU's first entry AW1 ER0 as /ˈaʊ.ɚ/, matching Wiktionary US. /ˈaʊɹ/ is a variant.",
+        "resolved": True,
+        "taughtIpa": "/ˈaʊ.ɚ/",
+        "resolvedBy": "round-11 lexicographer",
+        "resolvedAt": "2026-10-30",
+    },
+    {
+        "id": "minute-noun",
+        "lemma": "minute",
+        "pos": "noun",
+        "cmudict": ["M IH1 N AH0 T time", "M AY0 N UW1 T tiny", "M AY0 N Y UW1 T tiny"],
+        "wiktionary": ["time /ˈmɪnɪt/", "adjective US /maɪˈn(j)uːt/"],
+        "freeDictionary": "not in the local phonetics cache",
+        "disagreement": "Same spelling, two senses. The time noun is CMU's first entry. Wiktionary writes the unstressed vowel as /ɪ/; CMU writes AH0, which this app maps to /ə/.",
+        "resolution": "Teach the time sense only. The card IPA follows CMU via AH0 → /ə/, so /ˈmɪ.nət/. The mp3 is phoneme-forced to that vowel, not the adjective and not Piper's default /ˈmɪnɪt/.",
+        "resolved": True,
+        "taughtIpa": "/ˈmɪ.nət/",
+        "resolvedBy": "round-11 lexicographer",
+        "resolvedAt": "2026-10-30",
+    },
+    {
+        "id": "excuse-verb",
+        "lemma": "excuse",
+        "pos": "verb",
+        "cmudict": ["IH0 K S K Y UW1 S noun /ɪkˈskjus/", "IH0 K S K Y UW1 Z verb /ɪkˈskjuz/"],
+        "wiktionary": ["verb US /ɪksˈkjuz/", "noun US /ɪksˈkjus/", "excuse me /ɪksˈkjuz mi/"],
+        "freeDictionary": "not in the local phonetics cache",
+        "disagreement": "CMU lists the noun /s/ first and the verb /z/ second. Excuse me is the verb. Piper's default reading of the spelling is the noun /s/.",
+        "resolution": "Teach the verb /z/. Every Excuse me clip is phoneme-forced to [[ɪkskjˈuz]] so it cannot say the noun.",
+        "resolved": True,
+        "taughtIpa": "/ɪk.ˈskjuz/",
+        "resolvedBy": "round-11 lexicographer",
+        "resolvedAt": "2026-10-30",
+    },
+    {
+        "id": "sorry-adj",
+        "lemma": "sorry",
+        "pos": "adj",
+        "cmudict": ["S AA1 R IY0 /ˈsɑ.ɹi/"],
+        "wiktionary": ["GA /ˈsɑɹi/", "Simple English Wiktionary also lists US /ˈsɔːri/"],
+        "freeDictionary": "not in the local phonetics cache",
+        "disagreement": "CMU and Wiktionary's main GA line agree on /ɑ/. A second US vowel /ɔ/ is listed on Simple English Wiktionary and is not in CMU.",
+        "resolution": "Teach CMU /ˈsɑ.ɹi/, which is Wiktionary's GA primary. Note /ˈsɔ.ɹi/ as a variant. Audio is Piper's /sɑ/.",
+        "resolved": True,
+        "taughtIpa": "/ˈsɑ.ɹi/",
+        "resolvedBy": "round-11 lexicographer",
+        "resolvedAt": "2026-10-30",
+    },
 ]
 
 
@@ -1042,7 +1220,7 @@ def build_lessons() -> list[dict]:
     f2 = [
         line("f2-l1", "mei", "Mei", "Good morning. My name is Mei.", "早晨。我叫 Mei。"),
         line("f2-l2", "ling", "Ling", "Good morning. My name is Ling.", "早晨。我叫 Ling。"),
-        line("f2-l3", "mei", "Mei", "Nice to meet you.", "認識你真好。"),
+        line("f2-l3", "mei", "Mei", "Nice to meet you.", "好高興認識你。"),
         line("f2-l4", "ling", "Ling", "Nice to meet you, too. Thank you.", "我都好高興認識你。多謝。"),
         line("f2-l5", "mei", "Mei", "Hi. Please say it again.", "嗨。請再講一次。"),
     ]
@@ -1057,12 +1235,12 @@ def build_lessons() -> list[dict]:
         line("j2-l1", "mei", "Mei", "What are you looking for today?", "你今日想搵咩？"),
         line("j2-l2", "tom", "Tom", "I'm looking for a silver ring.", "我想搵一隻銀戒指。"),
         line("j2-l3", "mei", "Mei", "We have a very nice ring. Would you like to see it?", "我哋有一隻好靚嘅戒指。想唔想睇吓？"),
-        line("j2-l4", "tom", "Tom", "Yes. I want something for my wife.", "好。我想搵樣嘢送俾太太。"),
+        line("j2-l4", "tom", "Tom", "Yes. I want something for my wife.", "好。我想買樣嘢畀太太。"),
         line("j2-l5", "mei", "Mei", "Of course. I'll show you a few.", "當然。我畀你睇幾件。", "[[əv kˈɔɹs.]] I'll show you a few."),
     ]
     t1 = [
         line("t1-l1", "kai", "Kai", "Good afternoon. Where are you flying today?", "午安。你今日飛去邊？"),
-        line("t1-l2", "ling", "Ling", "I'm flying to Hong Kong. Here is my passport.", "我飛去香港。我張護照喺度。"),
+        line("t1-l2", "ling", "Ling", "I'm flying to Hong Kong. Here is my passport.", "我飛去香港。呢本係我嘅護照。"),
         line("t1-l3", "kai", "Kai", "Thank you. Window or aisle?", "多謝。靠窗定係通道？"),
         line("t1-l4", "ling", "Ling", "A window seat, please.", "要靠窗位，唔該。"),
         line("t1-l5", "kai", "Kai", "Sure. I'll show you the information. Here is your boarding pass.", "好。我畀你睇吓資料。你張登機證喺度。"),
@@ -1073,6 +1251,20 @@ def build_lessons() -> list[dict]:
         line("r1-l3", "ana", "Ana", "Right this way. Would you like a table by the window?", "請跟我嚟。想唔想坐靠窗？"),
         line("r1-l4", "tom", "Tom", "Yes, thank you. This is great.", "好，多謝。好好。"),
         line("r1-l5", "ana", "Ana", "Here is your table. Please have a seat. I'll bring the menu.", "你張檯喺度。請坐。我攞餐牌嚟。"),
+    ]
+    f3 = [
+        line("f3-l1", "mei", "Mei", "How much is this?", "呢個幾多錢？"),
+        line("f3-l2", "ling", "Ling", "It is ten dollars.", "十蚊。"),
+        line("f3-l3", "mei", "Mei", "What time is it?", "而家幾點？"),
+        line("f3-l4", "ling", "Ling", "It is three o'clock.", "三點。"),
+        line("f3-l5", "mei", "Mei", "Thank you. See you at five.", "多謝。五點見。"),
+    ]
+    f4 = [
+        line("f4-l1", "mei", "Mei", "Excuse me.", "唔該借借。", "[[ɪkskjˈuz]] me."),
+        line("f4-l2", "ling", "Ling", "I'm sorry.", "對唔住。"),
+        line("f4-l3", "mei", "Mei", "That's all right.", "冇事。"),
+        line("f4-l4", "ling", "Ling", "Thank you.", "多謝。"),
+        line("f4-l5", "mei", "Mei", "You're welcome. Good night.", "唔使客氣。晚安。"),
     ]
     # model answers that are not already lines
     extras = [
@@ -1088,11 +1280,15 @@ def build_lessons() -> list[dict]:
         line("j2-m3", "mei", "Mei", "I'll show you a few.", "我畀你睇幾件。"),
         line("j2-l6", "tom", "Tom", "Yes, please.", "好，唔該。"),
         line("t1-m1", "ling", "Ling", "I'm flying to Hong Kong.", "我飛去香港。"),
-        line("t1-m2", "ling", "Ling", "Here is my passport.", "我張護照喺度。"),
+        line("t1-m2", "ling", "Ling", "Here is my passport.", "呢本係我嘅護照。"),
         line("r1-m3", "tom", "Tom", "Thank you.", "多謝。"),
         line("j1-l6", "tom", "Tom", "Thanks. I'll look around.", "多謝。我周圍睇吓。"),
         line("t1-l6", "kai", "Kai", "May I see your passport, please?", "可唔可以畀我睇吓護照？"),
         line("r1-l6", "ana", "Ana", "Right this way.", "請跟我嚟。"),
+        line("f3-l6", "mei", "Mei", "Is it five dollars?", "係咪五蚊？"),
+        line("f3-m3", "ling", "Ling", "Yes. Five dollars.", "係呀，五蚊。"),
+        line("f4-l6", "mei", "Mei", "You're welcome.", "唔使客氣。"),
+        line("f4-m3", "ling", "Ling", "Good night.", "晚安。"),
     ]
     lessons = [
         {
@@ -1171,7 +1367,7 @@ def build_lessons() -> list[dict]:
             "chunks": [
                 {"pattern": "Good ___.", "example": "Good morning.", "glossYue": "早晨／午安／晚上好。", "answer": "morning", "choices": ["morning", "passport", "necklace"]},
                 {"pattern": "My name is ___.", "example": "My name is Ling.", "glossYue": "我叫⋯⋯。", "answer": "Ling", "choices": ["Ling", "a table", "check-in"]},
-                {"pattern": "Nice to meet ___.", "example": "Nice to meet you.", "glossYue": "認識你真好。", "answer": "you", "choices": ["you", "the menu", "aisle"]},
+                {"pattern": "Nice to meet ___.", "example": "Nice to meet you.", "glossYue": "好高興認識你。", "answer": "you", "choices": ["you", "the menu", "aisle"]},
                 {"pattern": "Thank ___.", "example": "Thank you.", "glossYue": "多謝。", "answer": "you", "choices": ["you", "sank", "wine"]},
             ],
             "shadow": {"lineId": "f2-l1", "hint": "Good morning. My name is Mei."},
@@ -1191,7 +1387,7 @@ def build_lessons() -> list[dict]:
             "quiz": [
                 {"type": "listen", "prompt": "你聽到邊個？", "lemma": "thank-verb", "choices": ["thank", "sank", "tank"], "answer": 0},
                 {"type": "meaning", "prompt": "Good morning", "choices": ["早晨", "兩位", "登機證"], "answer": 0},
-                {"type": "meaning", "prompt": "Nice to meet you", "choices": ["認識你真好", "只係睇吓", "靠窗位"], "answer": 0},
+                {"type": "meaning", "prompt": "Nice to meet you", "choices": ["好高興認識你", "只係睇吓", "靠窗位"], "answer": 0},
                 {"type": "choice", "prompt": "sir 係叫邊種人？", "choices": ["男士，客氣", "一張檯", "一隻戒指"], "answer": 0, "explain": "madam 就係對女士。兩個都唔使每次都用。"},
                 {"type": "listen", "prompt": "邊個有 /θ/？", "lemma": "three-num", "choices": ["three", "tree", "free"], "answer": 0},
             ],
@@ -1205,6 +1401,118 @@ def build_lessons() -> list[dict]:
                     {"a": "three-num", "b": "tree-noun"},
                 ],
                 "drill": ["thank-verb", "thanks-noun", "think-verb", "three-num"],
+            },
+            "next": "F3",
+        },
+        {
+            "id": "F3",
+            "unit": "F",
+            "titleYue": "數字、錢同時間",
+            "titleEn": "Numbers, money, and time",
+            "canDoYue": "你能夠問幾多錢、答十蚊，同埋講三點。",
+            "canDoEn": "Ask how much, say ten dollars, and say three o'clock.",
+            "minutes": 12,
+            "hero": "assets/art/lessons/f3.webp",
+            "cast": ["mei"],
+            "lemmas": ["how-much-phrase", "ten-num", "dollar-noun", "three-num", "oclock-adv", "five-num", "four-num", "six-num", "seven-num", "eight-num", "nine-num", "one-num", "two-num", "money-noun", "how-adv", "much-adv", "clock-noun", "price-noun", "minute-noun", "hour-noun", "now-adv", "time-noun", "fine-adj", "sick-adj"],
+            "dialogue": f3,
+            "understand": [
+                {"prompt": "How much is this? 係問咩？", "choices": ["呢個幾多錢", "而家幾點", "我叫咩名"], "answer": 0, "explain": "how much 係問價錢。問時間用 what time。"},
+                {"prompt": "Ten dollars. 係幾多？", "choices": ["十蚊", "十點", "早晨"], "answer": 0, "explain": "dollar 喺香港口語講做「蚊」。"},
+                {"prompt": "Three o'clock. 係講緊咩？", "choices": ["三點", "三蚊", "三位"], "answer": 0, "explain": "o'clock 係點鐘，唔係錢。"},
+            ],
+            "chunks": [
+                {"pattern": "How much is ___?", "example": "How much is this?", "glossYue": "呢個幾多錢？", "answer": "this", "choices": ["this", "three", "sorry"]},
+                {"pattern": "It is ___ dollars.", "example": "It is ten dollars.", "glossYue": "⋯⋯蚊。", "answer": "ten", "choices": ["ten", "clock", "night"]},
+                {"pattern": "It is three ___.", "example": "It is three o'clock.", "glossYue": "三點。", "answer": "o'clock", "choices": ["o'clock", "dollars", "sorry"]},
+            ],
+            "shadow": {"lineId": "f3-l1", "hint": "How much is this?"},
+            "build": [
+                {"type": "choice", "promptYue": "Mei 問 How much is this? 你點答？", "choices": ["It is ten dollars.", "Good morning.", "Excuse me."], "answer": 0, "explain": "先答價錢。十蚊就係 ten dollars。"},
+                {"type": "order", "promptYue": "排好呢句。", "tokens": ["It", "is", "three", "o'clock"], "answer": ["It", "is", "three", "o'clock"]},
+            ],
+            "roleplay": {
+                "you": "ling",
+                "intro": "Mei 喺櫃檯問你價錢同時間。等佢講完先答，中途唔會插嘴。",
+                "turns": [
+                    {"partner": "Mei", "partnerId": "mei", "line": "How much is this?", "audio": "assets/audio/lines/f3-l1.mp3", "audioSlow": "assets/audio/lines/f3-l1-slow.mp3", "expect": "It is ten dollars.", "keywords": ["ten", "dollar"], "modelAudio": "assets/audio/lines/f3-l2.mp3", "modelSlow": "assets/audio/lines/f3-l2-slow.mp3"},
+                    {"partner": "Mei", "partnerId": "mei", "line": "What time is it?", "audio": "assets/audio/lines/f3-l3.mp3", "audioSlow": "assets/audio/lines/f3-l3-slow.mp3", "expect": "It is three o'clock.", "keywords": ["three", "clock"], "modelAudio": "assets/audio/lines/f3-l4.mp3", "modelSlow": "assets/audio/lines/f3-l4-slow.mp3"},
+                    {"partner": "Mei", "partnerId": "mei", "line": "Is it five dollars?", "audio": "assets/audio/lines/f3-l6.mp3", "audioSlow": "assets/audio/lines/f3-l6-slow.mp3", "expect": "Yes. Five dollars.", "keywords": ["five", "dollar"], "modelAudio": "assets/audio/lines/f3-m3.mp3", "modelSlow": "assets/audio/lines/f3-m3-slow.mp3"},
+                ],
+            },
+            "quiz": [
+                {"type": "listen", "prompt": "你聽到邊個？", "lemma": "five-num", "choices": ["five", "fine", "nine"], "answer": 0},
+                {"type": "listen", "prompt": "你聽到邊個？", "lemma": "six-num", "choices": ["six", "sick", "sit"], "answer": 0},
+                {"type": "meaning", "prompt": "dollar", "choices": ["蚊", "點鐘", "對唔住"], "answer": 0},
+                {"type": "meaning", "prompt": "o'clock", "choices": ["點鐘", "蚊", "護照"], "answer": 0},
+                {"type": "meaning", "prompt": "price", "choices": ["價錢", "航班", "餐牌"], "answer": 0},
+                {"type": "choice", "prompt": "邊句先係問時間？", "choices": ["What time is it?", "How much is this?", "Excuse me."], "answer": 0, "explain": "time 係時間。how much 係問錢。"},
+            ],
+            "sound": {
+                "ipa": "尾音",
+                "title": "唔好食尾音",
+                "note": "廣東話成日食咗英文尾音。five 要收到 /v/，唔好變成 fine。six 尾有 /ks/，唔好變成 sick。ten 尾嘅 /n/ 都要留低。用口型，唔好用粵拼代替。",
+                "pairs": [
+                    {"a": "five-num", "b": "fine-adj"},
+                    {"a": "six-num", "b": "sick-adj"},
+                ],
+                "drill": ["five-num", "six-num", "ten-num", "dollar-noun"],
+            },
+            "next": "F4",
+        },
+        {
+            "id": "F4",
+            "unit": "F",
+            "titleYue": "禮貌用語",
+            "titleEn": "Polite phrases",
+            "canDoYue": "你能夠講 excuse me、I'm sorry，同埋 you're welcome。",
+            "canDoEn": "Say excuse me, I'm sorry, and you're welcome.",
+            "minutes": 12,
+            "hero": "assets/art/lessons/f4.webp",
+            "cast": ["mei"],
+            "lemmas": ["excuse-me-phrase", "im-sorry-phrase", "youre-welcome-phrase", "good-night-phrase", "pardon-verb", "please-adv", "excuse-verb", "sorry-adj", "night-noun", "thank-you-phrase", "thank-verb", "welcome-verb", "good-adj", "me-pron", "light-adj", "let-verb", "net-noun"],
+            "dialogue": f4,
+            "understand": [
+                {"prompt": "Excuse me. 通常係？", "choices": ["想人讓一讓，或者禮貌咁打招呼", "問幾多錢", "講自己個名"], "answer": 0, "explain": "行過人身邊、打斷人之前，都可以先講呢句。"},
+                {"prompt": "I'm sorry. 係咩意思？", "choices": ["對唔住", "唔使客氣", "十蚊"], "answer": 0, "explain": "sorry 係道歉。you're welcome 先至係回應多謝。"},
+                {"prompt": "You're welcome. 幾時講？", "choices": ["人哋講咗 thank you 之後", "問而家幾點", "第一次見面"], "answer": 0, "explain": "即係唔使客氣。"},
+            ],
+            "chunks": [
+                {"pattern": "Excuse ___.", "example": "Excuse me.", "glossYue": "唔該借借。", "answer": "me", "choices": ["me", "night", "five"]},
+                {"pattern": "I'm ___.", "example": "I'm sorry.", "glossYue": "對唔住。", "answer": "sorry", "choices": ["sorry", "welcome", "dollar"]},
+                {"pattern": "You're ___.", "example": "You're welcome.", "glossYue": "唔使客氣。", "answer": "welcome", "choices": ["welcome", "sorry", "seven"]},
+                {"pattern": "Good ___.", "example": "Good night.", "glossYue": "晚安。", "answer": "night", "choices": ["night", "dollar", "sorry"]},
+            ],
+            "shadow": {"lineId": "f4-l1", "hint": "Excuse me."},
+            "build": [
+                {"type": "choice", "promptYue": "你行過人身邊，第一句講邊句？", "choices": ["Excuse me.", "It is ten dollars.", "What time is it?"], "answer": 0, "explain": "先借一借，再講其他。"},
+                {"type": "order", "promptYue": "排好呢句。", "tokens": ["I'm", "sorry"], "answer": ["I'm", "sorry"]},
+            ],
+            "roleplay": {
+                "you": "ling",
+                "intro": "你喺門口同 Mei 練習禮貌用語。等佢講完先答，中途唔會插嘴。",
+                "turns": [
+                    {"partner": "Mei", "partnerId": "mei", "line": "Excuse me.", "audio": "assets/audio/lines/f4-l1.mp3", "audioSlow": "assets/audio/lines/f4-l1-slow.mp3", "expect": "I'm sorry.", "keywords": ["sorry"], "modelAudio": "assets/audio/lines/f4-l2.mp3", "modelSlow": "assets/audio/lines/f4-l2-slow.mp3"},
+                    {"partner": "Mei", "partnerId": "mei", "line": "That's all right.", "audio": "assets/audio/lines/f4-l3.mp3", "audioSlow": "assets/audio/lines/f4-l3-slow.mp3", "expect": "Thank you.", "keywords": ["thank"], "modelAudio": "assets/audio/lines/f4-l4.mp3", "modelSlow": "assets/audio/lines/f4-l4-slow.mp3"},
+                    {"partner": "Mei", "partnerId": "mei", "line": "You're welcome.", "audio": "assets/audio/lines/f4-l6.mp3", "audioSlow": "assets/audio/lines/f4-l6-slow.mp3", "expect": "Good night.", "keywords": ["night"], "modelAudio": "assets/audio/lines/f4-m3.mp3", "modelSlow": "assets/audio/lines/f4-m3-slow.mp3"},
+                ],
+            },
+            "quiz": [
+                {"type": "listen", "prompt": "你聽到邊個？", "lemma": "night-noun", "choices": ["night", "light", "let"], "answer": 0},
+                {"type": "listen", "prompt": "你聽到邊個？", "lemma": "let-verb", "choices": ["let", "net", "night"], "answer": 0},
+                {"type": "meaning", "prompt": "Excuse me", "choices": ["唔該借借", "十蚊", "三點"], "answer": 0},
+                {"type": "meaning", "prompt": "I'm sorry", "choices": ["對唔住", "唔使客氣", "早晨"], "answer": 0},
+                {"type": "choice", "prompt": "You're welcome 係邊種回應？", "choices": ["唔使客氣，回應多謝", "問價錢", "問幾點"], "answer": 0, "explain": "人哋多謝你，你先講 you're welcome。"},
+            ],
+            "sound": {
+                "ipa": "/l/ · /n/",
+                "title": "舌邊同鼻音",
+                "note": "英文 /l/：舌尖抵住上顎後面，氣由舌兩邊出。/n/：同樣個位，氣改由鼻出。night、net 開頭係 /n/。light、let 開頭係 /l/。唔好用粵語 n、l 混讀去代替。",
+                "pairs": [
+                    {"a": "light-adj", "b": "night-noun"},
+                    {"a": "let-verb", "b": "net-noun"},
+                ],
+                "drill": ["night-noun", "light-adj", "let-verb", "net-noun"],
             },
             "next": "J1",
         },
@@ -1341,7 +1649,7 @@ def build_lessons() -> list[dict]:
             ],
             "chunks": [
                 {"pattern": "Where are you flying ___?", "example": "Where are you flying today?", "glossYue": "你今日飛去邊？", "answer": "today", "choices": ["today", "a silver ring", "the menu"]},
-                {"pattern": "Here is my ___.", "example": "Here is my passport.", "glossYue": "我張⋯⋯喺度。", "answer": "passport", "choices": ["passport", "necklace", "menu"]},
+                {"pattern": "Here is my ___.", "example": "Here is my passport.", "glossYue": "呢本係我嘅⋯⋯。", "answer": "passport", "choices": ["passport", "necklace", "menu"]},
                 {"pattern": "A window seat, ___.", "example": "A window seat, please.", "glossYue": "要靠窗位，唔該。", "answer": "please", "choices": ["please", "the wind", "just looking"]},
                 {"pattern": "Here is your ___.", "example": "Here is your boarding pass.", "glossYue": "你張⋯⋯喺度。", "answer": "boarding pass", "choices": ["boarding pass", "silver ring", "slow breath"]},
             ],
@@ -1446,12 +1754,12 @@ PATH = {
         {
             "id": "F",
             "title": "打好基礎",
-            "blurb": "氣息、長短音、打招呼。",
+            "blurb": "氣息、打招呼、數字、禮貌。",
             "lessons": [
                 {"id": "F1"},
                 {"id": "F2"},
-                {"id": "F3", "title": "數字、錢同時間", "soon": True},
-                {"id": "F4", "title": "禮貌用語", "soon": True},
+                {"id": "F3"},
+                {"id": "F4"},
             ],
         },
         {

@@ -74,7 +74,7 @@
     "speaker": "mei",
     "speakerLabel": "Mei",
     "text": "Nice to meet you.",
-    "glossYue": "認識你真好。",
+    "glossYue": "好高興認識你。",
     "audio": "assets/audio/lines/f2-l3.mp3",
     "audioSlow": "assets/audio/lines/f2-l3-slow.mp3",
     "say": "Nice to meet you."
@@ -98,6 +98,106 @@
     "audio": "assets/audio/lines/f2-l5.mp3",
     "audioSlow": "assets/audio/lines/f2-l5-slow.mp3",
     "say": "Hi. Please say it again."
+  },
+  {
+    "id": "f3-l1",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "How much is this?",
+    "glossYue": "呢個幾多錢？",
+    "audio": "assets/audio/lines/f3-l1.mp3",
+    "audioSlow": "assets/audio/lines/f3-l1-slow.mp3",
+    "say": "How much is this?"
+  },
+  {
+    "id": "f3-l2",
+    "speaker": "ling",
+    "speakerLabel": "Ling",
+    "text": "It is ten dollars.",
+    "glossYue": "十蚊。",
+    "audio": "assets/audio/lines/f3-l2.mp3",
+    "audioSlow": "assets/audio/lines/f3-l2-slow.mp3",
+    "say": "It is ten dollars."
+  },
+  {
+    "id": "f3-l3",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "What time is it?",
+    "glossYue": "而家幾點？",
+    "audio": "assets/audio/lines/f3-l3.mp3",
+    "audioSlow": "assets/audio/lines/f3-l3-slow.mp3",
+    "say": "What time is it?"
+  },
+  {
+    "id": "f3-l4",
+    "speaker": "ling",
+    "speakerLabel": "Ling",
+    "text": "It is three o'clock.",
+    "glossYue": "三點。",
+    "audio": "assets/audio/lines/f3-l4.mp3",
+    "audioSlow": "assets/audio/lines/f3-l4-slow.mp3",
+    "say": "It is three o'clock."
+  },
+  {
+    "id": "f3-l5",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "Thank you. See you at five.",
+    "glossYue": "多謝。五點見。",
+    "audio": "assets/audio/lines/f3-l5.mp3",
+    "audioSlow": "assets/audio/lines/f3-l5-slow.mp3",
+    "say": "Thank you. See you at five."
+  },
+  {
+    "id": "f4-l1",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "Excuse me.",
+    "glossYue": "唔該借借。",
+    "audio": "assets/audio/lines/f4-l1.mp3",
+    "audioSlow": "assets/audio/lines/f4-l1-slow.mp3",
+    "say": "[[ɪkskjˈuz]] me."
+  },
+  {
+    "id": "f4-l2",
+    "speaker": "ling",
+    "speakerLabel": "Ling",
+    "text": "I'm sorry.",
+    "glossYue": "對唔住。",
+    "audio": "assets/audio/lines/f4-l2.mp3",
+    "audioSlow": "assets/audio/lines/f4-l2-slow.mp3",
+    "say": "I'm sorry."
+  },
+  {
+    "id": "f4-l3",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "That's all right.",
+    "glossYue": "冇事。",
+    "audio": "assets/audio/lines/f4-l3.mp3",
+    "audioSlow": "assets/audio/lines/f4-l3-slow.mp3",
+    "say": "That's all right."
+  },
+  {
+    "id": "f4-l4",
+    "speaker": "ling",
+    "speakerLabel": "Ling",
+    "text": "Thank you.",
+    "glossYue": "多謝。",
+    "audio": "assets/audio/lines/f4-l4.mp3",
+    "audioSlow": "assets/audio/lines/f4-l4-slow.mp3",
+    "say": "Thank you."
+  },
+  {
+    "id": "f4-l5",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "You're welcome. Good night.",
+    "glossYue": "唔使客氣。晚安。",
+    "audio": "assets/audio/lines/f4-l5.mp3",
+    "audioSlow": "assets/audio/lines/f4-l5-slow.mp3",
+    "say": "You're welcome. Good night."
   },
   {
     "id": "j1-l1",
@@ -184,7 +284,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "Yes. I want something for my wife.",
-    "glossYue": "好。我想搵樣嘢送俾太太。",
+    "glossYue": "好。我想買樣嘢畀太太。",
     "audio": "assets/audio/lines/j2-l4.mp3",
     "audioSlow": "assets/audio/lines/j2-l4-slow.mp3",
     "say": "Yes. I want something for my wife."
@@ -214,7 +314,7 @@
     "speaker": "ling",
     "speakerLabel": "Ling",
     "text": "I'm flying to Hong Kong. Here is my passport.",
-    "glossYue": "我飛去香港。我張護照喺度。",
+    "glossYue": "我飛去香港。呢本係我嘅護照。",
     "audio": "assets/audio/lines/t1-l2.mp3",
     "audioSlow": "assets/audio/lines/t1-l2-slow.mp3",
     "say": "I'm flying to Hong Kong. Here is my passport."
@@ -424,7 +524,7 @@
     "speaker": "ling",
     "speakerLabel": "Ling",
     "text": "Here is my passport.",
-    "glossYue": "我張護照喺度。",
+    "glossYue": "呢本係我嘅護照。",
     "audio": "assets/audio/lines/t1-m2.mp3",
     "audioSlow": "assets/audio/lines/t1-m2-slow.mp3",
     "say": "Here is my passport."
@@ -468,5 +568,45 @@
     "audio": "assets/audio/lines/r1-l6.mp3",
     "audioSlow": "assets/audio/lines/r1-l6-slow.mp3",
     "say": "Right this way."
+  },
+  {
+    "id": "f3-l6",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "Is it five dollars?",
+    "glossYue": "係咪五蚊？",
+    "audio": "assets/audio/lines/f3-l6.mp3",
+    "audioSlow": "assets/audio/lines/f3-l6-slow.mp3",
+    "say": "Is it five dollars?"
+  },
+  {
+    "id": "f3-m3",
+    "speaker": "ling",
+    "speakerLabel": "Ling",
+    "text": "Yes. Five dollars.",
+    "glossYue": "係呀，五蚊。",
+    "audio": "assets/audio/lines/f3-m3.mp3",
+    "audioSlow": "assets/audio/lines/f3-m3-slow.mp3",
+    "say": "Yes. Five dollars."
+  },
+  {
+    "id": "f4-l6",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "You're welcome.",
+    "glossYue": "唔使客氣。",
+    "audio": "assets/audio/lines/f4-l6.mp3",
+    "audioSlow": "assets/audio/lines/f4-l6-slow.mp3",
+    "say": "You're welcome."
+  },
+  {
+    "id": "f4-m3",
+    "speaker": "ling",
+    "speakerLabel": "Ling",
+    "text": "Good night.",
+    "glossYue": "晚安。",
+    "audio": "assets/audio/lines/f4-m3.mp3",
+    "audioSlow": "assets/audio/lines/f4-m3-slow.mp3",
+    "say": "Good night."
   }
 ]

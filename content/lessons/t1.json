@@ -53,7 +53,7 @@
       "speaker": "ling",
       "speakerLabel": "Ling",
       "text": "I'm flying to Hong Kong. Here is my passport.",
-      "glossYue": "我飛去香港。我張護照喺度。",
+      "glossYue": "我飛去香港。呢本係我嘅護照。",
       "audio": "assets/audio/lines/t1-l2.mp3",
       "audioSlow": "assets/audio/lines/t1-l2-slow.mp3",
       "say": "I'm flying to Hong Kong. Here is my passport."
@@ -136,7 +136,7 @@
     {
       "pattern": "Here is my ___.",
       "example": "Here is my passport.",
-      "glossYue": "我張⋯⋯喺度。",
+      "glossYue": "呢本係我嘅⋯⋯。",
       "answer": "passport",
       "choices": [
         "passport",

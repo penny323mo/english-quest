@@ -1,0 +1,15 @@
+You are the coder for English Quest (grok 4.7). cd /workspace/sidequest/english-quest.
+Phase 2 fix run (round 14 of max 15). Supervisor: Grok Duet.
+
+Read /workspace/sidequest/english-quest/reviews/orch-r14-grok.md and fix every CRITICAL and MAJOR issue (MINOR where sensible).
+ALSO read the previous round 390px review: /workspace/sidequest/english-quest/reviews/orch-r13-grok.md
+ALSO (authoritative live audit, same priority as MAJOR): read /workspace/sidequest/english-quest/review/loop-r3/coder-audit.md and fix every still-open item. Do not finish while any remain.
+Keep matching SPEC.md and DECISIONS.md.
+Cantonese: natural spoken HK, correct classifiers, 畀 not 俾, no simplified characters.
+Do not edit reviews/ or prompts/. Re-run tests. Re-check 390px for overflow after fixes.
+Append '## Round 14 fixes' to CHANGELOG.md describing what changed.
+If the review verdict is SHIP and every audit item is truly fixed with no further app-code changes needed, still re-run tests and note that in CHANGELOG — but prefer fixing any remaining gap over a no-op.
+At the END of this fix phase: git add -A, commit, and push to origin main (no force-push, no secrets). Do NOT force-add gitignored report/screenshot/audit paths.
+
+WHEN COMPLETELY FINISHED, as your very last action, create the file /workspace/sidequest/english-quest/.orch/fix-14.done containing the word DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-14.done

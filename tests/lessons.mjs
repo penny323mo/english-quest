@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), "utf8"));
 const ids = new Set(lex.items.map((item) => item.id));
-const shipped = ["f1", "f2", "j1", "j2", "t1", "r1"];
+const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "t1", "r1"];
 const lessons = shipped.map((id) =>
   JSON.parse(fs.readFileSync(path.join(root, "content/lessons", `${id}.json`), "utf8")),
 );
@@ -20,8 +20,8 @@ function exists(rel) {
   assert.ok(fs.statSync(file).size > 400, rel);
 }
 
-test("six lessons each carry the 12-beat payload", () => {
-  assert.equal(lessons.length, 6);
+test("eight lessons each carry the 12-beat payload", () => {
+  assert.equal(lessons.length, 8);
   for (const lesson of lessons) {
     for (const key of ["hero", "canDoYue", "canDoEn", "dialogue", "understand", "chunks", "shadow", "build", "roleplay", "quiz", "sound", "next"]) {
       assert.ok(key in lesson, `${lesson.id} ${key}`);
@@ -75,7 +75,8 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   assert.doesNotMatch(r1.roleplay.intro, /在門口/);
   assert.match(t1.sound.note, /ˈbɔɹ\.dɪŋ/);
   assert.doesNotMatch(t1.sound.note, /bɔr/);
-  assert.equal(fs.existsSync(path.join(root, "content/lessons/f3.json")), false);
+  assert.equal(fs.existsSync(path.join(root, "content/lessons/f3.json")), true);
+  assert.equal(fs.existsSync(path.join(root, "content/lessons/f4.json")), true);
   assert.equal(fs.existsSync(path.join(root, "content/lessons/j3.json")), false);
   const pathFile = JSON.parse(fs.readFileSync(path.join(root, "content/path.json"), "utf8"));
   const soon = pathFile.units.flatMap((unit) => unit.lessons).filter((lesson) => lesson.soon);
@@ -110,7 +111,48 @@ test("installed PWAs pick up replaced teaching audio", () => {
     const url = entry[1];
     if (url.endsWith(".mp3") || url.endsWith(".webp")) assert.notEqual(entry[2], "null", url);
   }
-  const hashedJs = entries.filter((entry) => /assets\/index-[A-Za-z0-9_]{8}\.js$/.test(entry[1]));
+  const hashedJs = entries.filter((entry) => /assets\/index-[A-Za-z0-9_-]{8}\.js$/.test(entry[1]));
   assert.equal(hashedJs.length, 1);
   assert.equal(hashedJs[0][2], "null");
+});
+
+test("word cards use Cantonese labels and hide the simplified gloss", () => {
+  const labels = JSON.parse(fs.readFileSync(path.join(root, "content/sense-labels.json"), "utf8"));
+  for (const item of lex.items) {
+    const key = `${item.pos}:${item.senseId}`;
+    const sense = labels.sense[key];
+    const pos = labels.pos[item.pos];
+    assert.ok(pos, item.pos);
+    assert.ok(sense, key);
+    assert.match(sense, /\p{Script=Han}/u, key);
+    assert.equal(sense.includes(item.senseId), false, key);
+  }
+  const pages = fs.readFileSync(path.join(root, "web/src/pages.tsx"), "utf8");
+  assert.equal(pages.includes("item.senseId"), false);
+  assert.equal(pages.includes("item.glossZh"), false);
+  assert.match(pages, /learnerEyebrow/);
+});
+
+test("role-play tip names a character or tells you it is your turn", () => {
+  const lesson = fs.readFileSync(path.join(root, "web/src/Lesson.tsx"), "utf8");
+  assert.match(lesson, /輪到你講。等對方講完先答，中途唔會插嘴。/);
+  assert.match(lesson, /你扮 \$\{name\}/);
+  assert.equal(lesson.includes("你而家係"), false);
+  const data = fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8");
+  assert.match(data, /"F1", "F2", "F3", "F4", "J1", "J2", "T1", "R1"/);
+});
+
+test("learner Cantonese does not use 俾, stiff glosses, or simplified characters", () => {
+  const banned = "俾这们时对国学请谢飞机证张读过风结发关来东车门问现欢钱钟还没说话听样买卖价网点办";
+  const blobs = [];
+  for (const item of lex.items) blobs.push([item.id, `${item.glossYue}\n${item.exampleYue}\n${item.note || ""}`]);
+  for (const line of lines) blobs.push([line.id, line.glossYue]);
+  for (const lesson of lessons) blobs.push([lesson.id, JSON.stringify(lesson)]);
+  for (const [id, text] of blobs) {
+    assert.equal(text.includes("俾"), false, id);
+    assert.equal(text.includes("認識你真好"), false, id);
+    assert.equal(text.includes("我張護照"), false, id);
+    assert.equal(text.includes("係，先生"), false, id);
+    for (const ch of banned) assert.equal(text.includes(ch), false, `${id} ${ch}`);
+  }
 });

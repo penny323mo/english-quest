@@ -14,3 +14,8 @@ __pycache__/
 .secrets/
 credentials*
 *token*
+
+# Local audit / report artifacts (do not push new ones; existing tracked copies stay on GitHub)
+review/loop-*/
+screenshots/orch/
+REPORT.md

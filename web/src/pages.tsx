@@ -11,6 +11,8 @@ import {
   pathData,
 } from "./data";
 import { isDue } from "./fsrs";
+import { ArtImg } from "./art";
+import { learnerEyebrow } from "./labels";
 import { playAsset } from "./media";
 import { blankProfile, useStore } from "./store";
 import type { Goal, Level } from "./types";
@@ -95,7 +97,7 @@ export function Onboarding() {
 
 function GoalPick({ value, onChange }: { value: Goal; onChange: (g: Goal) => void }) {
   const options: { id: Goal; text: string }[] = [
-    { id: "foundation", text: "氣息、長短音、打招呼" },
+    { id: "foundation", text: "氣息、打招呼、數字、禮貌" },
     { id: "jewellery", text: "明日櫃檯用得着" },
     { id: "travel", text: "機場櫃檯先" },
     { id: "restaurant", text: "入座、跟位" },
@@ -131,7 +133,7 @@ export function PathHome() {
         </div>
       </header>
       <figure className="cover">
-        <img src={asset("assets/art/cover.webp")} alt="夜海旁嘅珠寶店" />
+        <ArtImg src={asset("assets/art/cover.webp")} alt="夜海旁嘅珠寶店" width={864} height={1152} />
         <figcaption>
           <p className="kicker">{GOAL_LABEL[profile.goal]}</p>
           <p>{done} / {SHIPPED.length} 課完成。冇紅心，錯過咗聽日再嚟就得。</p>
@@ -151,7 +153,7 @@ export function PathHome() {
               const body = (
                 <>
                   {lesson ? (
-                    <img src={asset(lesson.hero)} alt="" loading="lazy" />
+                    <ArtImg src={asset(lesson.hero)} alt="" width={72} height={72} />
                   ) : (
                     <div className="thumb-fallback">鎖</div>
                   )}
@@ -272,7 +274,7 @@ function Syllables({ id, hidden }: { id: string; hidden?: boolean }) {
 export function Words() {
   const [q, setQ] = useState("");
   const items = lexicon.items.filter((item) => {
-    const hay = `${item.lemma} ${item.glossYue} ${item.ipa} ${item.senseId}`.toLowerCase();
+    const hay = `${item.lemma} ${item.glossYue} ${item.ipa}`.toLowerCase();
     return hay.includes(q.trim().toLowerCase());
   });
   return (
@@ -309,13 +311,12 @@ export function WordDetail({ id }: { id: string }) {
   return (
     <section className="screen plain stack">
       <a className="back" href="#/words">返詞庫</a>
-      <p className="eyebrow">{item.pos} · {item.senseId}</p>
+      <p className="eyebrow">{learnerEyebrow(item)}</p>
       <h1 lang="en">{item.lemma}</h1>
       <p className="ipa">{item.ipa}</p>
       <Syllables id={item.id} />
       <p>{item.glossYue}</p>
       {jyutping && item.jyutping ? <p className="fine">粵拼（只標中文解釋）：{item.jyutping}</p> : null}
-      <p className="fine">{item.glossZh}</p>
       <p lang="en">{item.example}</p>
       <p className="gloss">{item.exampleYue}</p>
       <div className="row-btns">
