@@ -86,7 +86,8 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   assert.equal(r1.next, "R2");
   assert.equal(r2.next, null);
   assert.match(r2.titleYue, /落單/);
-  assert.match(r2.canDoYue, /I'd like/);
+  assert.match(r2.canDoYue, /餐廳落單/);
+  assert.equal(r2.canDoYue.includes("I'd like"), false);
   assert.match(r2.sound.ipa, /tʃ/);
   assert.equal(r2.sound.ipa.includes("ɹ"), false);
   const pathFile = JSON.parse(fs.readFileSync(path.join(root, "content/path.json"), "utf8"));
@@ -175,7 +176,7 @@ test("learner Cantonese does not use 俾, stiff glosses, or simplified character
   assert.equal(think.exampleYue, "我諗係。");
   assert.equal(think.exampleYue.includes("\u8ad7"), true);
   assert.equal(think.exampleYue.includes("\u8ac7"), false);
-  const greetings = new Set(["早晨", "你好", "晚安", "對唔住", "多謝"]);
+  const greetings = new Set(["早晨", "你好", "晚安", "對唔住", "多謝", "等陣"]);
   for (const item of lex.items) {
     const han = [...item.exampleYue].filter((ch) => /\p{Script=Han}/u.test(ch)).join("");
     if ([...han].length <= 2 && !greetings.has(han)) {
@@ -190,4 +191,52 @@ test("learner Cantonese does not use 俾, stiff glosses, or simplified character
   assert.equal(byId["madam-noun"].exampleYue, "好嘅，小姐。");
   assert.match(byId["madam-noun"].glossYue, /女士/);
   assert.equal(byId["oclock-adv"].exampleYue, "而家係三點。");
+  assert.equal(byId["hour-noun"].example, "I waited for one hour.");
+  assert.equal(byId["hour-noun"].exampleYue, "我等咗一個鐘。");
+  assert.equal(byId["with-prep-voiceless"].example, "I'll be right with you.");
+  assert.equal(byId["with-prep-voiceless"].exampleYue, "我即刻嚟招呼你。");
+  assert.match(byId["with-prep-voiceless"].say, /\[\[wˈɪθ\]\]/);
+  assert.equal(byId["shoe-noun"].example, "I need a new shoe.");
+  assert.equal(byId["shoe-noun"].exampleYue, "我要一隻新鞋。");
+  assert.equal(byId["minute-noun"].example, "Wait a minute.");
+  assert.equal(byId["minute-noun"].exampleYue, "等陣。");
+  assert.equal(byId["aisle-noun"].glossYue, "走廊位");
+  assert.equal(byId["aisle-noun"].exampleYue, "靠窗定係走廊位？");
+  for (const item of lex.items) {
+    assert.equal(`${item.glossYue}\n${item.exampleYue}`.includes("通道位"), false, item.id);
+  }
+  for (const line of lines) assert.equal(line.glossYue.includes("通道位"), false, line.id);
+  for (const lesson of lessons) assert.equal(JSON.stringify(lesson).includes("通道位"), false, lesson.id);
+});
+
+test("short English examples are greetings or set phrases", () => {
+  const allow = new Set([
+    "please relax",
+    "let's begin",
+    "good morning",
+    "good afternoon",
+    "good evening",
+    "good night",
+    "thank you",
+    "thanks",
+    "yes sir",
+    "yes madam",
+    "of course",
+    "anything else",
+    "don't cheat",
+    "chew slowly",
+    "excuse me",
+    "i'm sorry",
+    "pardon me",
+    "you're welcome",
+  ]);
+  for (const item of lex.items) {
+    const words = item.example.replace(/[.?!,]/g, " ").trim().split(/\s+/).filter(Boolean);
+    if (words.length > 2) continue;
+    const key = words.join(" ").toLowerCase();
+    assert.ok(allow.has(key), `${item.id} example ${item.example}`);
+  }
+  for (const banned of ["With you.", "One hour.", "A new shoe."]) {
+    assert.equal(lex.items.some((item) => item.example === banned), false, banned);
+  }
 });

@@ -324,9 +324,9 @@ a { color: inherit; }
   position: absolute;
   left: 0; right: 0; bottom: 0;
   z-index: 2;
-  max-height: 72%;
+  max-height: min(72%, calc(100% - 76px));
   overflow: auto;
-  padding: 16px 16px calc(14px + env(safe-area-inset-bottom));
+  padding: 28px 16px calc(14px + env(safe-area-inset-bottom));
   background: var(--sheet);
   backdrop-filter: blur(18px);
   border-top: 1px solid var(--line);

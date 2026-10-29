@@ -319,7 +319,7 @@ def build_items() -> None:
         note="子音前面讀 /ðə/。元音前面讀 /ði/，見 the-art-vowel。the 唔係呢個，亦唔係嗰個。")
     add("the-art-vowel", "the", "art", "before-vowel", "DH IY0", ["the"],
         "英文冠詞，元音前面弱讀，中文往往唔使譯", "定冠词（元音前弱读）", "", ["the aisle", "the information"],
-        "The aisle seat is free.", "通道位仲有。",
+        "The aisle seat is free.", "走廊位仲有。",
         piper="[[ðˈi]] aisle seat is free.",
         note="元音前面讀 /ði/。例句錄音只讀一次 /ði/，唔會先加個 /ðə/。")
     add("beat-verb", "beat", "verb", "strike-rhythm", "B IY1 T", ["beat"],
@@ -637,9 +637,9 @@ def build_items() -> None:
         "窗", "窗", "coeng1", ["window seat", "by the window"],
         "A window seat, please.", "要靠窗位，唔該。")
     add("aisle-noun", "aisle", "noun", "passage-seat", "AY1 L", ["aisle"],
-        "通道位", "过道", "tung1 dou6 wai2", ["window or aisle"],
-        "Window or aisle?", "靠窗定係通道？",
-        note="s 唔發音。讀 /aɪl/。")
+        "走廊位", "走廊位", "zau2 long4 wai2", ["window or aisle"],
+        "Window or aisle?", "靠窗定係走廊位？",
+        note="s 唔發音。讀 /aɪl/。座位叫走廊位，旁邊條路先叫通道。")
     add("boarding-noun", "boarding", "noun", "getting-on", "B AO1 R . D IH0 NG", ["board", "ing"],
         "登機", "登机", "dang1 gei1", ["boarding pass"],
         "Here is your boarding pass.", "你張登機證喺度。")
@@ -781,8 +781,8 @@ def build_items() -> None:
         note="CMU 主條同 Wiktionary 都係 /wɪð/。/wɪθ/ 係真實但較少嘅尾音變體。J1 會特別練 /wɪθ/，並且標明係變體。")
     add("with-prep-voiceless", "with", "prep", "voiceless-variant", "W IH1 TH", ["with"],
         "同（清音變體 /wɪθ/）", "和（清音）", "tung4", ["with you"],
-        "With you.", "同你一齊。",
-        piper="[[wˈɪθ]] you.",
+        "I'll be right with you.", "我即刻嚟招呼你。",
+        piper="I'll be right [[wˈɪθ]] you.",
         note="呢張卡只練清音變體，唔係唯一標準音。主卡係 with-prep /wɪð/。")
     add("sank-verb", "sank", "verb", "past-of-sink", "S AE1 NG K", ["sank"],
         "沉咗（對比 thank）", "下沉（过去）", "cam4", ["the boat sank"],
@@ -808,7 +808,7 @@ def build_items() -> None:
         "Don't cheat.", "唔好呃。",
         note="對比組：/tʃ/ 對 /ʃ/。")
     add("shoe-noun", "shoe", "noun", "footwear", "SH UW1", ["shoe"],
-        "鞋", "鞋", "haai4", ["a shoe"], "A new shoe.", "一隻新鞋。")
+        "鞋", "鞋", "haai4", ["a shoe"], "I need a new shoe.", "我要一隻新鞋。")
     add("chew-verb", "chew", "verb", "masticate", "CH UW1", ["chew"],
         "嚼", "嚼", "zoek3", ["chew slowly"], "Chew slowly.", "慢慢嚼。")
     add("me-pron", "me", "pron", "object-me", "M IY1", ["me"],
@@ -818,10 +818,10 @@ def build_items() -> None:
         "去", "去", "heoi3", ["go to the gate"], "Please go to the gate.", "請去閘口。")
     add("or-conj", "or", "conj", "alternative", "AO1 R", ["or"],
         "或者", "或者", "waak6 ze2", ["window or aisle"],
-        "Window or aisle?", "靠窗定係通道？")
+        "Window or aisle?", "靠窗定係走廊位？")
     add("free-adj", "free", "adj", "available", "F R IY1", ["free"],
         "空嘅；仲有位", "空着", "hung1", ["the seat is free"],
-        "The aisle seat is free.", "通道位仲有。",
+        "The aisle seat is free.", "走廊位仲有。",
         note="呢度係座位仲有，唔係免費。")
 
     # phrases
@@ -918,12 +918,12 @@ def build_items() -> None:
         "The price is ten dollars.", "價錢係十蚊。")
     add("minute-noun", "minute", "noun", "sixty-seconds", "M IH1 N . AH0 T", ["min", "ute"],
         "分鐘", "分钟", "fan1 zung1", ["one minute", "wait a minute"],
-        "Wait a minute.", "等一分鐘。",
+        "Wait a minute.", "等陣。",
         piper="[[wˈeɪt ə mˈɪnət]]",
         note="時間嗰個讀音。CMU 另有形容詞「極細」M AY0 N UW1 T，呢張卡唔教。")
     add("hour-noun", "hour", "noun", "sixty-minutes", "AW1 . ER0", ["hour"],
         "個鐘", "小时", "go3 zung1", ["one hour"],
-        "One hour.", "我等一個鐘。",
+        "I waited for one hour.", "我等咗一個鐘。",
         join_syllables=True,
         variants=["/ˈaʊɹ/"],
         note="CMU 第一條 AW1 ER0，卡片 /ˈaʊ.ɚ/，同 Wiktionary 美式 /aʊɚ/。第二條 AW1 R 係 /ˈaʊɹ/，標做變體。")
@@ -1401,7 +1401,7 @@ def build_lessons() -> list[dict]:
     t1 = [
         line("t1-l1", "kai", "Kai", "Good afternoon. Where are you flying today?", "你好，你今日飛去邊？"),
         line("t1-l2", "ling", "Ling", "I'm flying to Hong Kong. Here is my passport.", "我飛去香港。呢本係我嘅護照。"),
-        line("t1-l3", "kai", "Kai", "Thank you. Window or aisle?", "多謝。靠窗定係通道？"),
+        line("t1-l3", "kai", "Kai", "Thank you. Window or aisle?", "多謝。靠窗定係走廊位？"),
         line("t1-l4", "ling", "Ling", "A window seat, please.", "要靠窗位，唔該。"),
         line("t1-l5", "kai", "Kai", "Sure. I'll show you the information. Here is your boarding pass.", "好。我畀你睇吓資料。你張登機證喺度。"),
     ]
@@ -1533,7 +1533,7 @@ def build_lessons() -> list[dict]:
             "dialogue": f2,
             "understand": [
                 {"prompt": "My name is Mei. 係咩意思？", "choices": ["我叫 Mei", "我想買頸鏈", "兩位"], "answer": 0, "explain": "name 係名字。is 呢度等於「係」。"},
-                {"prompt": "Nice to meet you. 幾時講？", "choices": ["第一次見面", "叫人埋單", "問靠窗定通道"], "answer": 0, "explain": "識人嗰陣講，語氣輕就得。"},
+                {"prompt": "Nice to meet you. 幾時講？", "choices": ["第一次見面", "叫人埋單", "問靠窗定走廊位"], "answer": 0, "explain": "識人嗰陣講，語氣輕就得。"},
                 {"prompt": "Thank you 開頭個音係？", "choices": ["/θ/ 舌尖輕送氣", "/f/ 咬唇", "/s/ 牙齒縫"], "answer": 0, "explain": "舌尖輕觸上排牙，送氣。唔好變成 fanks。"},
             ],
             "chunks": [
@@ -1872,7 +1872,7 @@ def build_lessons() -> list[dict]:
             "dialogue": t1,
             "understand": [
                 {"prompt": "Where are you flying today? 係問咩？", "choices": ["你今日飛去邊", "你想搵咩首飾", "你有冇訂位"], "answer": 0, "explain": "flying 係飛緊去邊度。"},
-                {"prompt": "Window or aisle? 係兩個咩？", "choices": ["靠窗位定通道位", "紅酒定白酒", "金定銀"], "answer": 0, "explain": "aisle 係行路嗰條通道旁邊。"},
+                {"prompt": "Window or aisle? 係兩個咩？", "choices": ["靠窗位定走廊位", "紅酒定白酒", "金定銀"], "answer": 0, "explain": "走廊位係行路嗰條通道旁邊。"},
                 {"prompt": "check-in 開頭係？", "choices": ["/tʃ/，一下堵住再放", "/ʃ/ 長噓氣", "/θ/ 伸舌"], "answer": 0, "explain": "check 唔係 sh。/ʃ/ 喺 sure、show、information。"},
             ],
             "chunks": [
@@ -1899,7 +1899,7 @@ def build_lessons() -> list[dict]:
                 {"type": "listen", "prompt": "你聽到邊個？", "lemma": "sheet-noun", "choices": ["sheet", "cheat", "seat"], "answer": 0},
                 {"type": "listen", "prompt": "你聽到邊個？", "lemma": "sure-adj", "choices": ["sure", "tour", "store"], "answer": 0},
                 {"type": "meaning", "prompt": "boarding pass", "choices": ["登機證", "頸鏈", "餐牌"], "answer": 0},
-                {"type": "meaning", "prompt": "aisle", "choices": ["通道位", "靠窗", "行李"], "answer": 0},
+                {"type": "meaning", "prompt": "aisle", "choices": ["走廊位", "靠窗", "行李"], "answer": 0},
                 {"type": "choice", "prompt": "邊個先有 /ʃ/？", "choices": ["show", "check", "ticket"], "answer": 0, "explain": "check 同 ticket 係 /tʃ/。show 先至係 /ʃ/。"},
             ],
             "sound": {
@@ -1929,7 +1929,7 @@ def build_lessons() -> list[dict]:
             "dialogue": r1,
             "understand": [
                 {"prompt": "Do you have a reservation? 係問咩？", "choices": ["你有冇訂位", "你想搵銀戒指", "你飛去邊"], "answer": 0, "explain": "有就答 Yes，再講幾多位。"},
-                {"prompt": "A table for two. 係幾多位？", "choices": ["兩位", "一位", "通道位"], "answer": 0, "explain": "for two 係人數，唔係價錢。"},
+                {"prompt": "A table for two. 係幾多位？", "choices": ["兩位", "一位", "走廊位"], "answer": 0, "explain": "for two 係人數，唔係價錢。"},
                 {"prompt": "Right this way. 你應該？", "choices": ["跟住佢行", "遞護照", "講自己個名"], "answer": 0, "explain": "right 呢度係「就係咁邊」。開頭 /r/。"},
             ],
             "chunks": [
@@ -1976,7 +1976,7 @@ def build_lessons() -> list[dict]:
             "unit": "R",
             "titleYue": "落單",
             "titleEn": "Ordering",
-            "canDoYue": "你能夠落單：講 I'd like、Can I have、What do you recommend? 同 Anything else?。",
+            "canDoYue": "你能夠喺餐廳落單。",
             "canDoEn": "Order with I'd like, Can I have, What do you recommend?, and Anything else?",
             "minutes": 12,
             "hero": "assets/art/lessons/r2.webp",

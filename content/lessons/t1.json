@@ -63,7 +63,7 @@
       "speaker": "kai",
       "speakerLabel": "Kai",
       "text": "Thank you. Window or aisle?",
-      "glossYue": "多謝。靠窗定係通道？",
+      "glossYue": "多謝。靠窗定係走廊位？",
       "audio": "assets/audio/lines/t1-l3.mp3",
       "audioSlow": "assets/audio/lines/t1-l3-slow.mp3",
       "say": "Thank you. Window or aisle?"
@@ -103,12 +103,12 @@
     {
       "prompt": "Window or aisle? 係兩個咩？",
       "choices": [
-        "靠窗位定通道位",
+        "靠窗位定走廊位",
         "紅酒定白酒",
         "金定銀"
       ],
       "answer": 0,
-      "explain": "aisle 係行路嗰條通道旁邊。"
+      "explain": "走廊位係行路嗰條通道旁邊。"
     },
     {
       "prompt": "check-in 開頭係？",
@@ -282,7 +282,7 @@
       "type": "meaning",
       "prompt": "aisle",
       "choices": [
-        "通道位",
+        "走廊位",
         "靠窗",
         "行李"
       ],

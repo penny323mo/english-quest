@@ -1251,7 +1251,7 @@
         "the information"
       ],
       "example": "The aisle seat is free.",
-      "exampleYue": "通道位仲有。",
+      "exampleYue": "走廊位仲有。",
       "say": "[[ðˈi]] aisle seat is free.",
       "variants": [],
       "note": "元音前面讀 /ði/。例句錄音只讀一次 /ði/，唔會先加個 /ðə/。",
@@ -4785,17 +4785,17 @@
       "arpabet": "AY1 L",
       "audio": "assets/audio/words/aisle-noun.mp3",
       "audioSlow": "assets/audio/words/aisle-noun-slow.mp3",
-      "glossYue": "通道位",
-      "glossZh": "过道",
-      "jyutping": "tung1 dou6 wai2",
+      "glossYue": "走廊位",
+      "glossZh": "走廊位",
+      "jyutping": "zau2 long4 wai2",
       "collocations": [
         "window or aisle"
       ],
       "example": "Window or aisle?",
-      "exampleYue": "靠窗定係通道？",
+      "exampleYue": "靠窗定係走廊位？",
       "say": "Window or aisle?",
       "variants": [],
-      "note": "s 唔發音。讀 /aɪl/。",
+      "note": "s 唔發音。讀 /aɪl/。座位叫走廊位，旁邊條路先叫通道。",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
@@ -6249,9 +6249,9 @@
       "collocations": [
         "with you"
       ],
-      "example": "With you.",
-      "exampleYue": "同你一齊。",
-      "say": "[[wˈɪθ]] you.",
+      "example": "I'll be right with you.",
+      "exampleYue": "我即刻嚟招呼你。",
+      "say": "I'll be right [[wˈɪθ]] you.",
       "variants": [],
       "note": "呢張卡只練清音變體，唔係唯一標準音。主卡係 with-prep /wɪð/。",
       "sources": [
@@ -6263,7 +6263,7 @@
       "senseMismatch": false,
       "cmuLemma": "with",
       "phrase": false,
-      "audioSha256": "0466393ccc6c210ed8116c8ed3df820aaaf18f58aeae34706919bcb0f0dcc8b2"
+      "audioSha256": "97bbf6e162350e6791772d4a50619a8ad587cd22bfeadcf3b7fa5492d5e77702"
     },
     {
       "id": "sank-verb",
@@ -6591,9 +6591,9 @@
       "collocations": [
         "a shoe"
       ],
-      "example": "A new shoe.",
-      "exampleYue": "一隻新鞋。",
-      "say": "A new shoe.",
+      "example": "I need a new shoe.",
+      "exampleYue": "我要一隻新鞋。",
+      "say": "I need a new shoe.",
       "variants": [],
       "note": "",
       "sources": [
@@ -6605,7 +6605,7 @@
       "senseMismatch": false,
       "cmuLemma": "shoe",
       "phrase": false,
-      "audioSha256": "ea1174ad32f165db900ac6d456532c123031bf589d574d7904615fa1138c1fda"
+      "audioSha256": "b01aaca17ca55e2184af15407c7f285530c32c60db81939a23a20b370839d6e3"
     },
     {
       "id": "chew-verb",
@@ -6745,7 +6745,7 @@
         "window or aisle"
       ],
       "example": "Window or aisle?",
-      "exampleYue": "靠窗定係通道？",
+      "exampleYue": "靠窗定係走廊位？",
       "say": "Window or aisle?",
       "variants": [],
       "note": "",
@@ -6783,7 +6783,7 @@
         "the seat is free"
       ],
       "example": "The aisle seat is free.",
-      "exampleYue": "通道位仲有。",
+      "exampleYue": "走廊位仲有。",
       "say": "The aisle seat is free.",
       "variants": [],
       "note": "呢度係座位仲有，唔係免費。",
@@ -7880,7 +7880,7 @@
         "wait a minute"
       ],
       "example": "Wait a minute.",
-      "exampleYue": "等一分鐘。",
+      "exampleYue": "等陣。",
       "say": "[[wˈeɪt ə mˈɪnət]]",
       "variants": [],
       "note": "時間嗰個讀音。CMU 另有形容詞「極細」M AY0 N UW1 T，呢張卡唔教。",
@@ -7917,9 +7917,9 @@
       "collocations": [
         "one hour"
       ],
-      "example": "One hour.",
-      "exampleYue": "我等一個鐘。",
-      "say": "One hour.",
+      "example": "I waited for one hour.",
+      "exampleYue": "我等咗一個鐘。",
+      "say": "I waited for one hour.",
       "variants": [
         "/ˈaʊɹ/"
       ],
@@ -7933,7 +7933,7 @@
       "senseMismatch": false,
       "cmuLemma": "hour",
       "phrase": false,
-      "audioSha256": "f5024b7f0c71f490e3d2c57700cd9c716c2750ef9aa1c04e4e4999581b1912d3"
+      "audioSha256": "fe0e1de8eb0dfa4d0b4933fd68ff6a563c3be205634787c1dd6e8e94c6acc27b"
     },
     {
       "id": "now-adv",

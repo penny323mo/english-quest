@@ -1,0 +1,45 @@
+You are the coder for English Quest (grok 4.7). cd /workspace/sidequest/english-quest.
+FINAL fix run — round 16 (last round, approved by supervisor Grok Duet).
+
+Read SPEC.md, DECISIONS.md, and the authoritative open audit:
+  /workspace/sidequest/english-quest/review/loop-r16/coder-audit.md
+Also see review/loop-r14/coder-audit.md and review/loop-r14/r2-end.png.
+
+CRITICAL RULE: you may NOT finish with "no defects" or only a CHANGELOG commit. Every numbered item below MUST produce a real diff under content/, web/, tests/, and/or assets/. If you would otherwise say nothing to fix, you have not read the audit — fix the data/UI listed.
+
+Fix ALL of these (do every one):
+
+1. hour-noun — make English and Cantonese match.
+   - Current: example "One hour." / exampleYue "我等一個鐘。"
+   - Change to e.g. example "I waited for one hour." / exampleYue "我等咗一個鐘。"
+   - Update `say` to match the new English. Regenerate that word's normal+slow mp3 via scripts/render_audio.py (Piper US with ~180ms lead / ~200ms trail padding — Kokoro if already wired; otherwise Piper per DECISIONS). Verify IPA/arpabet still match CMUdict for "hour".
+
+2. with-prep-voiceless AND shoe-noun — rewrite fragments as complete natural sentences with matching Cantonese.
+   - with-prep-voiceless: "With you." / 「同你一齊。」 → e.g. "I'll be right with you." / 「我即刻嚟招呼你。」 (keep voiceless /wɪθ/ in `say` with [[...]] if needed). Regenerate audio.
+   - shoe-noun: "A new shoe." / 「一隻新鞋。」 → e.g. "I need a new shoe." / 「我要一隻新鞋。」 Regenerate audio.
+
+3. Add a test in tests/lessons.mjs that FAILS any lexicon English `example` with 2 or fewer words, except an explicit allowlist of greetings and set phrases (Thank you / Thanks / Of course / Excuse me / Good morning / Good afternoon / Good evening / Good night / I'm sorry / You're welcome / Yes, sir. / Yes, madam. / Pardon me. / Anything else? / Don't cheat. / Chew slowly. / Please relax. / Let's begin. and clearly similar fixed phrases). Do NOT put "With you." or "One hour." or "A new shoe." on the allowlist — fix those entries in data instead. Run the test and make it pass.
+
+4. R2 lesson-end summary at 390px — the top eyebrow 「放低今日」 must be fully visible, not hidden by the top bar.
+   - Shorten r2.json canDoYue (e.g. 「你能夠喺餐廳落單。」) and/or fix Recap layout in web/src/Lesson.tsx / styles.css so the recap scrolls and the eyebrow is fully on screen.
+   - Spot-check other lesson end screens do not clip.
+
+5. minute-noun — change exampleYue from 「等一分鐘。」 to 「等陣。」. English "Wait a minute." can stay. No Mandarin-flavoured literal clock reading.
+
+6. aisle → 走廊位 (Hong Kong). Replace seat-sense 通道 / 通道位 with 走廊位 across:
+   - content/lexicon.json (aisle-noun glossYue + exampleYue; or-conj exampleYue; any "通道位仲有" → "走廊位仲有")
+   - content/sense-labels.json noun:passage-seat
+   - content/lines.json
+   - content/lessons/t1.json, r1.json, f2.json (quiz options, explain, glossYue)
+   - Target phrase: 「靠窗定係走廊位？」
+   - Explain text may still mention 通道 as the passageway, but the seat gloss and learner-facing options must say 走廊位.
+
+After content/say changes: re-render affected audio clips only (hour-noun, with-prep-voiceless, shoe-noun at minimum) with padded silence; keep IPA consistent. Run npm test / node tests — all must pass. Rebuild dist if the app serves from dist.
+
+Do not edit reviews/ or prompts/. Append '## Round 16 fixes' to CHANGELOG.md listing each of the 6 items with before → after text.
+
+At the END: git add -A, commit with a clear message (e.g. "Ship round 16: hour/with/shoe sentences, ≤2-word test, R2 recap, 等陣, 走廊位"), and push to origin main (no force-push, no secrets).
+Do NOT force-add gitignored report/screenshot/audit/review paths (REPORT.md, reviews/*, review/loop-*, screenshots/orch). Do not git rm anything. Do not use paid services. Do not print secrets.
+
+WHEN COMPLETELY FINISHED, as your very last action, create the file /workspace/sidequest/english-quest/.orch/fix-16.done containing the word DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-16.done

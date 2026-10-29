@@ -1,5 +1,14 @@
 # Changelog — English Quest
 
+## Round 16 fixes
+- hour-noun: "One hour." / 「我等一個鐘。」 → "I waited for one hour." / 「我等咗一個鐘。」 The normal and slow clips were resynthesized. IPA stays /ˈaʊ.ɚ/ (CMU AW1 ER0, variant /ˈaʊɹ/).
+- with-prep-voiceless: "With you." / 「同你一齊。」 → "I'll be right with you." / 「我即刻嚟招呼你。」 The say line forces voiceless /wɪθ/. shoe-noun: "A new shoe." / 「一隻新鞋。」 → "I need a new shoe." / 「我要一隻新鞋。」 Both clips were resynthesized. The voiced with card stays /wɪð/.
+- tests/lessons.mjs now fails an English example of two words or fewer unless it is an allowlisted greeting or set phrase. "With you.", "One hour.", and "A new shoe." are not on that list; those entries were rewritten instead.
+- R2 canDoYue: the long I'd like line → 「你能夠喺餐廳落單。」 The recap sheet padding-top went from 16px to 28px, past the 22px corner radius, and max-height also stops 76px below the top bar. At 390×844, 「放低今日」 is fully inside the sheet on all ten lesson ends (24–29px below the sheet edge, under the top bar). The path still ends with 「呢輪十課你行完啦。」
+- minute-noun exampleYue: 「等一分鐘。」 → 「等陣。」 English stays "Wait a minute." and that clip was not re-rendered.
+- Aisle seat sense: 通道 / 通道位 → 走廊位, including the label noun:passage-seat and 「靠窗定係走廊位？」. 通道 remains only as the passageway beside the seat.
+- Tests are 13/13. At 390px the path, the locked R2 screen, the rewritten cards, and every shipped recap stay inside the phone. Lighthouse mobile: performance 0.98, accessibility 1, best-practices 1.
+
 ## Round 15 fixes
 - Round 15 found no critical, major, or minor defects. The round 13 audit items stay closed: R2 落單, the fuller example sentences, and the madam line 好嘅，小姐。. No product code changed.
 - Tests stayed 12/12. At 390px, the path, the locked R2 screen, the rewritten word cards, settings, the hello card with Jyutping on, attributions, and the R2 hook through the last beat stay inside the phone column.
