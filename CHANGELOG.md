@@ -1,5 +1,10 @@
 # Changelog — English Quest
 
+## Round 3 fixes
+- Precached mp3 and webp files now get a Workbox content revision. An installed PWA re-downloads a clip when the bytes change, including the corrected before-vowel *the*.
+- Fingerprinted JS and CSS still use a null revision, because the filename already changes.
+- The year-long CacheFirst `eq-audio` route is gone, so an old runtime copy cannot sit in front of a new file.
+
 ## Round 2 fixes
 - The before-vowel *the* clip no longer says /ðə/ and then /ði/. The example on the card stays “The aisle seat is free.” The Piper line is `[[ðˈi]] aisle seat is free.`
 - The phoneme test fails if that say line still contains ðə.

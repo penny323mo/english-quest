@@ -103,22 +103,17 @@ export default defineConfig({
         skipWaiting: true,
         clientsClaim: true,
         cleanupOutdatedCaches: true,
+        // Vite's default skips revisions for every assets/ URL. Stable mp3 and
+        // webp names would then stay cached after a pronunciation fix. Only
+        // top-level fingerprinted build files (index-AbCd1234.js) may use a
+        // null revision. The hash class excludes "-" so names like det-slow.mp3
+        // still get a content revision.
+        dontCacheBustURLsMatching: /^assets\/[^/]+-[A-Za-z0-9_]{8}\.[a-z0-9]+$/,
         globPatterns: ["**/*.{js,css,html,svg,png,webp,mp3,webmanifest}"],
         globIgnores: ["**/*.wav", "**/*.jpg"],
         maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
         navigateFallback: "index.html",
         navigateFallbackDenylist: [/\.mp3$/, /\.webp$/, /\.png$/, /\.svg$/],
-        runtimeCaching: [
-          {
-            urlPattern: ({ url }) => url.pathname.includes("/assets/audio/") && url.pathname.endsWith(".mp3"),
-            handler: "CacheFirst",
-            options: {
-              cacheName: "eq-audio",
-              expiration: { maxEntries: 900, maxAgeSeconds: 60 * 60 * 24 * 365 },
-              cacheableResponse: { statuses: [0, 200] },
-            },
-          },
-        ],
       },
     }),
   ],

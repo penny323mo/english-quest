@@ -94,3 +94,23 @@ test("the app has a mic fallback and does not phone home", () => {
     + fs.readFileSync(path.join(root, "web/src/store.ts"), "utf8");
   assert.equal(/gtag|google-analytics|plausible|mixpanel|sentry/i.test(app), false);
 });
+
+test("installed PWAs pick up replaced teaching audio", () => {
+  const sw = fs.readFileSync(path.join(root, "sw.js"), "utf8");
+  const config = fs.readFileSync(path.join(root, "vite.config.ts"), "utf8");
+  assert.match(config, /dontCacheBustURLsMatching/);
+  assert.equal(config.includes("eq-audio"), false);
+  assert.equal(sw.includes("eq-audio"), false);
+  const entries = [...sw.matchAll(/\{url:"([^"]+)",revision:(null|"[0-9a-f]+")\}/g)];
+  assert.ok(entries.length >= 400, `precache entries ${entries.length}`);
+  const vowel = entries.find((entry) => entry[1] === "assets/audio/words/the-art-vowel.mp3");
+  assert.ok(vowel, "the-art-vowel.mp3");
+  assert.match(vowel[2], /^"[0-9a-f]{32}"$/);
+  for (const entry of entries) {
+    const url = entry[1];
+    if (url.endsWith(".mp3") || url.endsWith(".webp")) assert.notEqual(entry[2], "null", url);
+  }
+  const hashedJs = entries.filter((entry) => /assets\/index-[A-Za-z0-9_]{8}\.js$/.test(entry[1]));
+  assert.equal(hashedJs.length, 1);
+  assert.equal(hashedJs[0][2], "null");
+});
