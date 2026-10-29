@@ -1,0 +1,321 @@
+{
+  "id": "F1",
+  "unit": "F",
+  "titleYue": "氣息同長短音",
+  "titleEn": "Sounds and breath",
+  "canDoYue": "你能夠用慢呼吸分清短音 ship 同長音 sheep，並且讀到 about 開頭嗰個輕音。",
+  "canDoEn": "Hear short ship and long sheep, and say the soft first sound in about.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/f1.webp",
+  "cast": [
+    "mei"
+  ],
+  "lemmas": [
+    "hello-intj",
+    "breath-noun",
+    "listen-verb",
+    "short-adj",
+    "long-adj",
+    "ship-noun",
+    "sheep-noun",
+    "sound-noun",
+    "slow-adj",
+    "smile-verb",
+    "again-adv",
+    "about-prep",
+    "relax-verb",
+    "begin-verb",
+    "keep-verb",
+    "light-adj",
+    "the-art",
+    "name-noun",
+    "beat-verb",
+    "bit-noun",
+    "sit-verb",
+    "seat-noun"
+  ],
+  "dialogue": [
+    {
+      "id": "f1-l1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Hello. Let's begin with a slow breath.",
+      "glossYue": "你好。我哋由一個慢呼吸開始。",
+      "audio": "assets/audio/lines/f1-l1.mp3",
+      "audioSlow": "assets/audio/lines/f1-l1-slow.mp3",
+      "say": "Hello. Let's begin with a slow breath."
+    },
+    {
+      "id": "f1-l2",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Listen. Ship is short. Sheep is long.",
+      "glossYue": "聽住。Ship 係短音。Sheep 係長音。",
+      "audio": "assets/audio/lines/f1-l2.mp3",
+      "audioSlow": "assets/audio/lines/f1-l2-slow.mp3",
+      "say": "Listen. Ship is short. Sheep is long."
+    },
+    {
+      "id": "f1-l3",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Keep it light. This sound is short.",
+      "glossYue": "輕輕帶過。呢個音好短。",
+      "audio": "assets/audio/lines/f1-l3.mp3",
+      "audioSlow": "assets/audio/lines/f1-l3-slow.mp3",
+      "say": "Keep it light. This sound is short."
+    },
+    {
+      "id": "f1-l4",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "About. The first sound is soft.",
+      "glossYue": "About。第一個音好輕。",
+      "audio": "assets/audio/lines/f1-l4.mp3",
+      "audioSlow": "assets/audio/lines/f1-l4-slow.mp3",
+      "say": "About. The first sound is soft."
+    },
+    {
+      "id": "f1-l5",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Relax. Say it again, nice and slow.",
+      "glossYue": "放鬆。再講一次，慢慢嚟。",
+      "audio": "assets/audio/lines/f1-l5.mp3",
+      "audioSlow": "assets/audio/lines/f1-l5-slow.mp3",
+      "say": "Relax. Say it again, nice and slow."
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Ship is short. 係講緊咩？",
+      "choices": [
+        "船呢個字係短元音",
+        "羊係短元音",
+        "請坐低"
+      ],
+      "answer": 0,
+      "explain": "ship 係 /ɪ/，短。sheep 先至係長音 /i/。"
+    },
+    {
+      "prompt": "About 開頭嗰下係？",
+      "choices": [
+        "好輕嘅 schwa /ə/",
+        "重重嘅 /eɪ/",
+        "一個 /θ/"
+      ],
+      "answer": 0,
+      "explain": "about 係 /əˈbaʊt/。第一下唔使出力。"
+    },
+    {
+      "prompt": "Keep it light. 想你點？",
+      "choices": [
+        "輕輕讀，唔好繃緊",
+        "讀大聲啲",
+        "讀快三倍"
+      ],
+      "answer": 0,
+      "explain": "light 呢度係輕巧，唔係燈光。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Let's begin with ___.",
+      "example": "Let's begin with a slow breath.",
+      "glossYue": "我哋由⋯⋯開始。",
+      "answer": "a slow breath",
+      "choices": [
+        "a slow breath",
+        "a boarding pass",
+        "a silver ring"
+      ]
+    },
+    {
+      "pattern": "___ is short. ___ is long.",
+      "example": "Ship is short. Sheep is long.",
+      "glossYue": "⋯⋯係短音。⋯⋯係長音。",
+      "answer": "Ship / Sheep",
+      "choices": [
+        "Ship / Sheep",
+        "Thank / sank",
+        "Wine / vine"
+      ]
+    },
+    {
+      "pattern": "Say it again, ___.",
+      "example": "Say it again, nice and slow.",
+      "glossYue": "再講一次，⋯⋯。",
+      "answer": "nice and slow",
+      "choices": [
+        "nice and slow",
+        "window or aisle",
+        "just looking"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "f1-l2",
+    "hint": "Listen. Ship is short. Sheep is long."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "Mei 話：Ship is short. Sheep is long. 邊句先係長音？",
+      "choices": [
+        "Sheep",
+        "Ship",
+        "Sit"
+      ],
+      "answer": 0,
+      "explain": "ee 通常係長 /i/。i 喺 ship 係短 /ɪ/。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Say",
+        "it",
+        "again",
+        "nice",
+        "and",
+        "slow"
+      ],
+      "answer": [
+        "Say",
+        "it",
+        "again",
+        "nice",
+        "and",
+        "slow"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "ling",
+    "intro": "Mei 喺開舖之前同你暖聲。佢講完一句，你先至答。唔會中途打斷你。",
+    "turns": [
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "Listen. Ship is short. Sheep is long.",
+        "audio": "assets/audio/lines/f1-l2.mp3",
+        "audioSlow": "assets/audio/lines/f1-l2-slow.mp3",
+        "expect": "Ship. Sheep.",
+        "keywords": [
+          "ship",
+          "sheep"
+        ],
+        "modelAudio": "assets/audio/lines/f1-m1.mp3",
+        "modelSlow": "assets/audio/lines/f1-m1-slow.mp3"
+      },
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "About. The first sound is soft.",
+        "audio": "assets/audio/lines/f1-l4.mp3",
+        "audioSlow": "assets/audio/lines/f1-l4-slow.mp3",
+        "expect": "About.",
+        "keywords": [
+          "about"
+        ],
+        "modelAudio": "assets/audio/lines/f1-m2.mp3",
+        "modelSlow": "assets/audio/lines/f1-m2-slow.mp3"
+      },
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "Relax. Say it again, nice and slow.",
+        "audio": "assets/audio/lines/f1-l5.mp3",
+        "audioSlow": "assets/audio/lines/f1-l5-slow.mp3",
+        "expect": "Nice and slow.",
+        "keywords": [
+          "nice",
+          "slow"
+        ],
+        "modelAudio": "assets/audio/lines/f1-m3.mp3",
+        "modelSlow": "assets/audio/lines/f1-m3-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "ship-noun",
+      "choices": [
+        "ship",
+        "sheep",
+        "seat"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "sheep-noun",
+      "choices": [
+        "sheep",
+        "ship",
+        "sit"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "breath",
+      "choices": [
+        "一啖氣",
+        "登機證",
+        "銀戒指"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "about 開頭",
+      "choices": [
+        "輕音 /ə/",
+        "長音 /i/",
+        "咬唇 /v/"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊對先係短／長？",
+      "choices": [
+        "ship / sheep",
+        "thank / sank",
+        "wine / vine"
+      ],
+      "answer": 0,
+      "explain": "今課只分長短元音。"
+    }
+  ],
+  "sound": {
+    "ipa": "/ɪ/ · /i/",
+    "title": "短音同長音",
+    "note": "短 /ɪ/：嘴微張，放鬆，一下就收。長 /i/：嘴角微微展開，拉長少少。用口型，唔好用粵拼代替英文音。about、the（子音前）開頭係更輕嘅 schwa /ə/，幾乎唔使出力。",
+    "pairs": [
+      {
+        "a": "ship-noun",
+        "b": "sheep-noun"
+      },
+      {
+        "a": "bit-noun",
+        "b": "beat-verb"
+      },
+      {
+        "a": "sit-verb",
+        "b": "seat-noun"
+      }
+    ],
+    "drill": [
+      "ship-noun",
+      "sheep-noun",
+      "about-prep",
+      "the-art"
+    ]
+  },
+  "next": "F2"
+}

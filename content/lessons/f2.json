@@ -1,0 +1,326 @@
+{
+  "id": "F2",
+  "unit": "F",
+  "titleYue": "打招呼同名字",
+  "titleEn": "Greetings and names",
+  "canDoYue": "你能夠講早晨、講自己個名，並且用 /θ/ 講 thank you。",
+  "canDoEn": "Say good morning, give your name, and pronounce thank you with /θ/.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/f2.webp",
+  "cast": [
+    "mei"
+  ],
+  "lemmas": [
+    "good-morning-phrase",
+    "good-adj",
+    "morning-noun",
+    "afternoon-noun",
+    "evening-noun",
+    "name-noun",
+    "my-det",
+    "nice-to-meet-phrase",
+    "nice-adj",
+    "meet-verb",
+    "you-pron",
+    "thank-you-phrase",
+    "thank-verb",
+    "thanks-noun",
+    "please-adv",
+    "too-adv",
+    "hi-intj",
+    "sir-noun",
+    "madam-noun",
+    "welcome-verb"
+  ],
+  "dialogue": [
+    {
+      "id": "f2-l1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Good morning. My name is Mei.",
+      "glossYue": "早晨。我叫 Mei。",
+      "audio": "assets/audio/lines/f2-l1.mp3",
+      "audioSlow": "assets/audio/lines/f2-l1-slow.mp3",
+      "say": "Good morning. My name is Mei."
+    },
+    {
+      "id": "f2-l2",
+      "speaker": "ling",
+      "speakerLabel": "Ling",
+      "text": "Good morning. My name is Ling.",
+      "glossYue": "早晨。我叫 Ling。",
+      "audio": "assets/audio/lines/f2-l2.mp3",
+      "audioSlow": "assets/audio/lines/f2-l2-slow.mp3",
+      "say": "Good morning. My name is Ling."
+    },
+    {
+      "id": "f2-l3",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Nice to meet you.",
+      "glossYue": "認識你真好。",
+      "audio": "assets/audio/lines/f2-l3.mp3",
+      "audioSlow": "assets/audio/lines/f2-l3-slow.mp3",
+      "say": "Nice to meet you."
+    },
+    {
+      "id": "f2-l4",
+      "speaker": "ling",
+      "speakerLabel": "Ling",
+      "text": "Nice to meet you, too. Thank you.",
+      "glossYue": "我都好高興認識你。多謝。",
+      "audio": "assets/audio/lines/f2-l4.mp3",
+      "audioSlow": "assets/audio/lines/f2-l4-slow.mp3",
+      "say": "Nice to meet you, too. Thank you."
+    },
+    {
+      "id": "f2-l5",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Hi. Please say it again.",
+      "glossYue": "嗨。請再講一次。",
+      "audio": "assets/audio/lines/f2-l5.mp3",
+      "audioSlow": "assets/audio/lines/f2-l5-slow.mp3",
+      "say": "Hi. Please say it again."
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "My name is Mei. 係咩意思？",
+      "choices": [
+        "我叫 Mei",
+        "我想買頸鏈",
+        "兩位"
+      ],
+      "answer": 0,
+      "explain": "name 係名字。is 呢度等於「係」。"
+    },
+    {
+      "prompt": "Nice to meet you. 幾時講？",
+      "choices": [
+        "第一次見面",
+        "叫人埋單",
+        "問靠窗定通道"
+      ],
+      "answer": 0,
+      "explain": "認識人嘅時候講，語氣輕就得。"
+    },
+    {
+      "prompt": "Thank you 開頭個音係？",
+      "choices": [
+        "/θ/ 舌尖輕送氣",
+        "/f/ 咬唇",
+        "/s/ 牙齒縫"
+      ],
+      "answer": 0,
+      "explain": "舌尖輕觸上排牙，送氣。唔好變成 fanks。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Good ___.",
+      "example": "Good morning.",
+      "glossYue": "早晨／午安／晚上好。",
+      "answer": "morning",
+      "choices": [
+        "morning",
+        "passport",
+        "necklace"
+      ]
+    },
+    {
+      "pattern": "My name is ___.",
+      "example": "My name is Ling.",
+      "glossYue": "我叫⋯⋯。",
+      "answer": "Ling",
+      "choices": [
+        "Ling",
+        "a table",
+        "check-in"
+      ]
+    },
+    {
+      "pattern": "Nice to meet ___.",
+      "example": "Nice to meet you.",
+      "glossYue": "認識你真好。",
+      "answer": "you",
+      "choices": [
+        "you",
+        "the menu",
+        "aisle"
+      ]
+    },
+    {
+      "pattern": "Thank ___.",
+      "example": "Thank you.",
+      "glossYue": "多謝。",
+      "answer": "you",
+      "choices": [
+        "you",
+        "sank",
+        "wine"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "f2-l1",
+    "hint": "Good morning. My name is Mei."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "有人話 Nice to meet you. 你點接最自然？",
+      "choices": [
+        "Nice to meet you, too.",
+        "A table for two.",
+        "Window or aisle?"
+      ],
+      "answer": 0,
+      "explain": "too 表示「我都係」。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "My",
+        "name",
+        "is",
+        "Ling"
+      ],
+      "answer": [
+        "My",
+        "name",
+        "is",
+        "Ling"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "ling",
+    "intro": "你喺舖門口同 Mei 練習。佢講完，你再講。用你自己個名都得，關鍵字對到就會肯定你。",
+    "turns": [
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "Good morning. My name is Mei.",
+        "audio": "assets/audio/lines/f2-l1.mp3",
+        "audioSlow": "assets/audio/lines/f2-l1-slow.mp3",
+        "expect": "Good morning. My name is Ling.",
+        "keywords": [
+          "morning",
+          "name"
+        ],
+        "modelAudio": "assets/audio/lines/f2-l2.mp3",
+        "modelSlow": "assets/audio/lines/f2-l2-slow.mp3"
+      },
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "Nice to meet you.",
+        "audio": "assets/audio/lines/f2-l3.mp3",
+        "audioSlow": "assets/audio/lines/f2-l3-slow.mp3",
+        "expect": "Nice to meet you, too.",
+        "keywords": [
+          "nice",
+          "meet"
+        ],
+        "modelAudio": "assets/audio/lines/f2-m2.mp3",
+        "modelSlow": "assets/audio/lines/f2-m2-slow.mp3"
+      },
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "Hi. Please say it again.",
+        "audio": "assets/audio/lines/f2-l5.mp3",
+        "audioSlow": "assets/audio/lines/f2-l5-slow.mp3",
+        "expect": "Thank you.",
+        "keywords": [
+          "thank"
+        ],
+        "modelAudio": "assets/audio/lines/j1-m2.mp3",
+        "modelSlow": "assets/audio/lines/j1-m2-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "thank-verb",
+      "choices": [
+        "thank",
+        "sank",
+        "tank"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "Good morning",
+      "choices": [
+        "早晨",
+        "兩位",
+        "登機證"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "Nice to meet you",
+      "choices": [
+        "認識你真好",
+        "只係睇吓",
+        "靠窗位"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "sir 係叫邊種人？",
+      "choices": [
+        "男士，客氣",
+        "一張檯",
+        "一隻戒指"
+      ],
+      "answer": 0,
+      "explain": "madam 就係對女士。兩個都唔使每次都用。"
+    },
+    {
+      "type": "listen",
+      "prompt": "邊個有 /θ/？",
+      "lemma": "three-num",
+      "choices": [
+        "three",
+        "tree",
+        "free"
+      ],
+      "answer": 0
+    }
+  ],
+  "sound": {
+    "ipa": "/θ/",
+    "title": "舌尖輕送氣",
+    "note": "舌尖輕輕伸出，碰上排牙，送一小口氣。唔好咬實，亦唔好讀成 f 或者 s。呢個係口型，唔係粵拼。thank、think、three 都係呢個音。",
+    "pairs": [
+      {
+        "a": "thank-verb",
+        "b": "sank-verb"
+      },
+      {
+        "a": "think-verb",
+        "b": "sink-noun"
+      },
+      {
+        "a": "three-num",
+        "b": "tree-noun"
+      }
+    ],
+    "drill": [
+      "thank-verb",
+      "thanks-noun",
+      "think-verb",
+      "three-num"
+    ]
+  },
+  "next": "J1"
+}

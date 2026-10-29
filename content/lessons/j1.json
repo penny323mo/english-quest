@@ -1,0 +1,348 @@
+{
+  "id": "J1",
+  "unit": "J",
+  "titleYue": "迎接客人",
+  "titleEn": "Greeting a customer",
+  "canDoYue": "你能夠同進店客人打招呼，並且大方回應 just looking。",
+  "canDoEn": "Greet a walk-in and answer “just looking” with ease.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j1.webp",
+  "cast": [
+    "mei",
+    "tom"
+  ],
+  "lemmas": [
+    "welcome-verb",
+    "jewellery-noun",
+    "jewelry-noun",
+    "store-noun",
+    "help-verb",
+    "today-adv",
+    "looking-verb",
+    "just-looking-phrase",
+    "just-adv",
+    "please-adv",
+    "thank-you-phrase",
+    "of-course-phrase",
+    "course-noun",
+    "come-verb",
+    "may-verb",
+    "look-verb",
+    "certainly-adv",
+    "browsing-verb",
+    "know-verb",
+    "enjoy-verb",
+    "necklace-noun",
+    "beautiful-adj",
+    "anything-pron",
+    "with-prep",
+    "how-may-i-phrase",
+    "let-me-know-phrase"
+  ],
+  "dialogue": [
+    {
+      "id": "j1-l1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Welcome to our jewellery store. How may I help you today?",
+      "glossYue": "歡迎嚟到我哋嘅珠寶店。今日有咩可以幫到你？",
+      "audio": "assets/audio/lines/j1-l1.mp3",
+      "audioSlow": "assets/audio/lines/j1-l1-slow.mp3",
+      "say": "Welcome to our jewellery store. How may I help you today?"
+    },
+    {
+      "id": "j1-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Hi. I'm just looking, thank you.",
+      "glossYue": "嗨。我只係睇吓，多謝。",
+      "audio": "assets/audio/lines/j1-l2.mp3",
+      "audioSlow": "assets/audio/lines/j1-l2-slow.mp3",
+      "say": "Hi. I'm just looking, thank you."
+    },
+    {
+      "id": "j1-l3",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Of course. Please take a look around.",
+      "glossYue": "當然。請周圍慢慢睇。",
+      "audio": "assets/audio/lines/j1-l3.mp3",
+      "audioSlow": "assets/audio/lines/j1-l3-slow.mp3",
+      "say": "Of course. Please take a look around."
+    },
+    {
+      "id": "j1-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "This necklace is beautiful.",
+      "glossYue": "呢條頸鏈好靚。",
+      "audio": "assets/audio/lines/j1-l4.mp3",
+      "audioSlow": "assets/audio/lines/j1-l4-slow.mp3",
+      "say": "This necklace is beautiful."
+    },
+    {
+      "id": "j1-l5",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Thank you. Let me know if you need anything.",
+      "glossYue": "多謝。有需要就話我知。",
+      "audio": "assets/audio/lines/j1-l5.mp3",
+      "audioSlow": "assets/audio/lines/j1-l5-slow.mp3",
+      "say": "Thank you. Let me know if you need anything."
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "I'm just looking. 客人想點？",
+      "choices": [
+        "只係睇吓，未打算買",
+        "即刻落單",
+        "要兩位靠窗"
+      ],
+      "answer": 0,
+      "explain": "唔好追問。請佢慢慢睇就得。"
+    },
+    {
+      "prompt": "How may I help you? 你喺做咩？",
+      "choices": [
+        "客氣咁問可唔可以幫手",
+        "叫客人離開",
+        "問航班號碼"
+      ],
+      "answer": 0,
+      "explain": "may 比 can 更慢、更有禮。"
+    },
+    {
+      "prompt": "Of course. 係邊種語氣？",
+      "choices": [
+        "當然，冇問題",
+        "唔得",
+        "幾多錢"
+      ],
+      "answer": 0,
+      "explain": "後面通常接 Please take a look。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Welcome to ___.",
+      "example": "Welcome to our jewellery store.",
+      "glossYue": "歡迎嚟到⋯⋯。",
+      "answer": "our jewellery store",
+      "choices": [
+        "our jewellery store",
+        "the boarding gate",
+        "a table for two"
+      ]
+    },
+    {
+      "pattern": "How may I help you ___?",
+      "example": "How may I help you today?",
+      "glossYue": "今日有咩可以幫到你？",
+      "answer": "today",
+      "choices": [
+        "today",
+        "the menu",
+        "my passport"
+      ]
+    },
+    {
+      "pattern": "I'm just ___.",
+      "example": "I'm just looking.",
+      "glossYue": "我只係睇吓。",
+      "answer": "looking",
+      "choices": [
+        "looking",
+        "a necklace",
+        "on time"
+      ]
+    },
+    {
+      "pattern": "Of course. Please ___.",
+      "example": "Of course. Please take a look.",
+      "glossYue": "當然。請慢慢睇。",
+      "answer": "take a look",
+      "choices": [
+        "take a look",
+        "close the door",
+        "go to the gate"
+      ]
+    },
+    {
+      "pattern": "Let me know if you need ___.",
+      "example": "Let me know if you need anything.",
+      "glossYue": "有需要就話我知。",
+      "answer": "anything",
+      "choices": [
+        "anything",
+        "a bass guitar",
+        "the wind"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "j1-l1",
+    "hint": "Welcome to our jewellery store. How may I help you today?"
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "客人話 I'm just looking, thank you. 你點接？",
+      "choices": [
+        "Of course. Please take a look.",
+        "Please go away.",
+        "Window or aisle?"
+      ],
+      "answer": 0,
+      "explain": "先接住個 thank you 嘅客氣，再請佢睇。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好櫃檯第一句。",
+      "tokens": [
+        "How",
+        "may",
+        "I",
+        "help",
+        "you",
+        "today"
+      ],
+      "answer": [
+        "How",
+        "may",
+        "I",
+        "help",
+        "you",
+        "today"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "mei",
+    "intro": "你企喺櫃檯。Tom 行入嚟。等佢講完成句，你再答。",
+    "turns": [
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Hi. I'm just looking, thank you.",
+        "audio": "assets/audio/lines/j1-l2.mp3",
+        "audioSlow": "assets/audio/lines/j1-l2-slow.mp3",
+        "expect": "Of course. Please take a look.",
+        "keywords": [
+          "course",
+          "look"
+        ],
+        "modelAudio": "assets/audio/lines/j1-m1.mp3",
+        "modelSlow": "assets/audio/lines/j1-m1-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "This necklace is beautiful.",
+        "audio": "assets/audio/lines/j1-l4.mp3",
+        "audioSlow": "assets/audio/lines/j1-l4-slow.mp3",
+        "expect": "Thank you.",
+        "keywords": [
+          "thank"
+        ],
+        "modelAudio": "assets/audio/lines/j1-m2.mp3",
+        "modelSlow": "assets/audio/lines/j1-m2-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Thanks. I'll look around.",
+        "audio": "assets/audio/lines/j1-l6.mp3",
+        "audioSlow": "assets/audio/lines/j1-l6-slow.mp3",
+        "expect": "Let me know if you need anything.",
+        "keywords": [
+          "know",
+          "anything"
+        ],
+        "modelAudio": "assets/audio/lines/j1-m3.mp3",
+        "modelSlow": "assets/audio/lines/j1-m3-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "thank-verb",
+      "choices": [
+        "thank",
+        "sank",
+        "tank"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "jewellery",
+      "choices": [
+        "珠寶",
+        "護照",
+        "餐牌"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "just looking",
+      "choices": [
+        "只係睇吓",
+        "即刻付款",
+        "我有訂座"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "This necklace is beautiful. 你點接最得體？",
+      "choices": [
+        "Thank you.",
+        "Go to the gate.",
+        "Ship is short."
+      ],
+      "answer": 0,
+      "explain": "客人讚貨，先接一句 thank you 就得。"
+    },
+    {
+      "type": "listen",
+      "prompt": "邊個有 /θ/？",
+      "lemma": "anything-pron",
+      "choices": [
+        "anything",
+        "evening",
+        "silver"
+      ],
+      "answer": 0
+    }
+  ],
+  "sound": {
+    "ipa": "/θ/",
+    "title": "thank、with 嘅舌尖",
+    "note": "thank 一定係 /θæŋk/。舌尖輕觸上排牙再送氣。with 美式多數讀 /wɪð/（有聲），尾音有時先至係 /wɪθ/。兩種都聽一次。清音嗰下先練 /θ/，有聲嗰下聲帶要震。唔好用粵拼標英文。",
+    "pairs": [
+      {
+        "a": "thank-verb",
+        "b": "sank-verb"
+      },
+      {
+        "a": "with-prep-voiceless",
+        "b": "with-prep"
+      },
+      {
+        "a": "three-num",
+        "b": "tree-noun"
+      }
+    ],
+    "drill": [
+      "thank-verb",
+      "with-prep",
+      "with-prep-voiceless",
+      "anything-pron"
+    ]
+  },
+  "next": "J2"
+}

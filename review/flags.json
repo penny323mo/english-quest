@@ -1,0 +1,261 @@
+{
+  "generated": "2026-10-29",
+  "policy": "Disagreements are listed with a resolution. Nothing taught was chosen silently.",
+  "items": [
+    {
+      "id": "with-prep",
+      "lemma": "with",
+      "pos": "prep",
+      "cmudict": [
+        "W IH1 DH /wɪð/",
+        "W IH1 TH /wɪθ/",
+        "W IH0 TH",
+        "W IH0 DH"
+      ],
+      "wiktionary": [
+        "/wɪð/ primary",
+        "/wɪθ/ rarely, preconsonantal or final"
+      ],
+      "freeDictionary": "phonetics empty in the 2026-10-29 API payload; not used",
+      "disagreement": "Sources agree both exist, but they rank the primary differently in casual teaching materials. CMU's first entry and Wiktionary's main GA form are voiced /wɪð/.",
+      "resolution": "The word card teaches /wɪð/. A separate drill card with-prep-voiceless teaches /wɪθ/ and is labelled as the less common final variant, because J1's sound focus is /θ/. This is not a silent pick.",
+      "resolved": true,
+      "taughtIpa": "/wɪð/",
+      "resolvedBy": "night-1 lexicographer",
+      "resolvedAt": "2026-10-29"
+    },
+    {
+      "id": "sure-adj",
+      "lemma": "sure",
+      "pos": "adj",
+      "cmudict": [
+        "SH UH1 R /ʃʊr/"
+      ],
+      "wiktionary": [
+        "/ʃʊə/ non-pour-poor",
+        "/ʃɔː/ pour-poor merger",
+        "GA often /ʃʊr/ or /ʃɔr/"
+      ],
+      "freeDictionary": [
+        "/ʃɔɹ/",
+        "/ʃɔː/",
+        "/ʃoː/"
+      ],
+      "disagreement": "CMU has only /ʃʊr/. Free Dictionary's US audio line is /ʃɔɹ/, the pour-poor merger.",
+      "resolution": "Teach /ʃʊr/ to match CMUdict and Piper en-us. The card notes /ʃɔr/ as an accepted US merger variant. Audio is the /ʃʊr/ form.",
+      "resolved": true,
+      "taughtIpa": "/ʃʊr/",
+      "resolvedBy": "night-1 lexicographer",
+      "resolvedAt": "2026-10-29"
+    },
+    {
+      "id": "want-verb",
+      "lemma": "want",
+      "pos": "verb",
+      "cmudict": [
+        "W AA1 N T /wɑnt/",
+        "W AO1 N T /wɔnt/"
+      ],
+      "wiktionary": [
+        "US /wɑnt/, /wʌnt/, /wɔnt/"
+      ],
+      "freeDictionary": [
+        "/wɔnt/",
+        "/wɑnt/",
+        "/wɒnt/"
+      ],
+      "disagreement": "Primary vowel is not unique across US sources.",
+      "resolution": "Teach CMU's first entry /wɑnt/, which Wiktionary and Free Dictionary also list. Audio is phoneme-forced to /wɑnt/ so it matches the card. /wɔnt/ stays as a labelled variant.",
+      "resolved": true,
+      "taughtIpa": "/wɑnt/",
+      "resolvedBy": "night-1 lexicographer",
+      "resolvedAt": "2026-10-29"
+    },
+    {
+      "id": "hello-intj",
+      "lemma": "hello",
+      "pos": "intj",
+      "cmudict": [
+        "HH AH0 L OW1 /həˈloʊ/",
+        "HH EH0 L OW1 /hɛˈloʊ/"
+      ],
+      "wiktionary": [
+        "GA /hɛˈloʊ/, /həˈloʊ/, /ˈhɛloʊ/"
+      ],
+      "freeDictionary": "HTTP 404 on 2026-10-29; Wiktionary used instead",
+      "disagreement": "Both /hə/ and /hɛ/ onsets are standard. Rank differs.",
+      "resolution": "Teach CMU's first entry /həˈloʊ/. Card lists /hɛˈloʊ/ as a variant.",
+      "resolved": true,
+      "taughtIpa": "/həˈloʊ/",
+      "resolvedBy": "night-1 lexicographer",
+      "resolvedAt": "2026-10-29"
+    },
+    {
+      "id": "here-adv",
+      "lemma": "here",
+      "pos": "adv",
+      "cmudict": [
+        "HH IY1 R"
+      ],
+      "wiktionary": [
+        "GA commonly /hɪr/"
+      ],
+      "freeDictionary": [
+        "/hiːɹ/",
+        "/hɪɹ/"
+      ],
+      "disagreement": "CMU writes the NEAR vowel as IY, so a naive map is /hir/. Learner dictionaries usually write /hɪr/.",
+      "resolution": "Display /hɪr/. The converter treats IY immediately before R as the NEAR vowel. This matches Free Dictionary's /hɪɹ/ and does not invent a second sense.",
+      "resolved": true,
+      "taughtIpa": "/hɪr/",
+      "resolvedBy": "night-1 lexicographer",
+      "resolvedAt": "2026-10-29"
+    },
+    {
+      "id": "soft-adj",
+      "lemma": "soft",
+      "pos": "adj",
+      "cmudict": [
+        "S AA1 F T /sɑft/",
+        "S AO1 F T /sɔft/"
+      ],
+      "wiktionary": [
+        "both /sɑft/ and /sɔft/ are US"
+      ],
+      "freeDictionary": [
+        "/sɑft/",
+        "/sɔft/",
+        "/sɒft/"
+      ],
+      "disagreement": "Two US vowels.",
+      "resolution": "Teach CMU's first entry /sɑft/. Audio forced to /sɑft/. /sɔft/ noted as a variant. British /sɒft/ is not taught.",
+      "resolved": true,
+      "taughtIpa": "/sɑft/",
+      "resolvedBy": "night-1 lexicographer",
+      "resolvedAt": "2026-10-29"
+    },
+    {
+      "id": "smile-verb",
+      "lemma": "smile",
+      "pos": "verb",
+      "cmudict": [
+        "S M AY1 L /smaɪl/"
+      ],
+      "wiktionary": [
+        "/smaɪl/",
+        "/ˈsmaɪ.əl/"
+      ],
+      "freeDictionary": [
+        "/ˈsmaɪ.əl/"
+      ],
+      "disagreement": "Free Dictionary returned only the two-syllable variant. CMU and Wiktionary's first form are one syllable.",
+      "resolution": "Teach one-syllable /smaɪl/. The two-syllable form is noted, not used for audio.",
+      "resolved": true,
+      "taughtIpa": "/smaɪl/",
+      "resolvedBy": "night-1 lexicographer",
+      "resolvedAt": "2026-10-29"
+    },
+    {
+      "id": "the-art",
+      "lemma": "the",
+      "pos": "art",
+      "cmudict": [
+        "DH AH0 /ðə/",
+        "DH AH1",
+        "DH IY0 /ði/"
+      ],
+      "wiktionary": [
+        "/ðə/ before consonants",
+        "/ði/ before vowels",
+        "/ðiː/ strong"
+      ],
+      "freeDictionary": "API payload missed the article and showed only /ði/",
+      "disagreement": "Not a real US disagreement. The API record was incomplete.",
+      "resolution": "Two cards: the-art /ðə/ before consonants, the-art-vowel /ði/ before vowels. Strong /ðiː/ noted.",
+      "resolved": true,
+      "taughtIpa": "/ðə/ and /ði/",
+      "resolvedBy": "night-1 lexicographer",
+      "resolvedAt": "2026-10-29"
+    },
+    {
+      "id": "this-det",
+      "lemma": "this",
+      "pos": "det",
+      "cmudict": [
+        "DH IH1 S /ðɪs/"
+      ],
+      "wiktionary": [
+        "/ðɪs/",
+        "/ðəs/ New Zealand only"
+      ],
+      "freeDictionary": [
+        "/ðəs/"
+      ],
+      "disagreement": "Free Dictionary returned the NZ vowel. US sources agree on /ðɪs/.",
+      "resolution": "Teach /ðɪs/ only. Do not teach /ðəs/.",
+      "resolved": true,
+      "taughtIpa": "/ðɪs/",
+      "resolvedBy": "night-1 lexicographer",
+      "resolvedAt": "2026-10-29"
+    },
+    {
+      "id": "wind-noun",
+      "lemma": "wind",
+      "pos": "noun",
+      "cmudict": [
+        "W IH1 N D noun-compatible",
+        "W AY1 N D verb"
+      ],
+      "wiktionary": [
+        "noun /wɪnd/ GA",
+        "verb /waɪnd/"
+      ],
+      "freeDictionary": "API returned only /waɪnd/",
+      "disagreement": "API missed the noun. CMUdict and Wiktionary agree on the split.",
+      "resolution": "wind-noun /wɪnd/ with carrier 'The wind is strong tonight.' wind-verb /waɪnd/ with carrier 'Wind the clock tonight.' Audio is phoneme-forced so the sense cannot flip.",
+      "resolved": true,
+      "taughtIpa": "/wɪnd/ noun, /waɪnd/ verb",
+      "resolvedBy": "night-1 lexicographer",
+      "resolvedAt": "2026-10-29"
+    },
+    {
+      "id": "jewellery-noun",
+      "lemma": "jewellery",
+      "pos": "noun",
+      "cmudict": [
+        "no jewellery spelling",
+        "jewelry JH UW1 L R IY0 and JH UW1 AH0 L R IY0"
+      ],
+      "wiktionary": [
+        "/ˈdʒuː(ə)lri/ for both spellings"
+      ],
+      "freeDictionary": "jewellery /ˈdʒuːlri/; jewelry phonetics empty",
+      "disagreement": "Spelling gap in CMUdict, not a sound conflict.",
+      "resolution": "Map jewellery to CMU jewelry. Teach /ˈdʒul.ri/ and note the three-syllable /ˈdʒu.əl.ri/ variant. Macau spelling on the card is jewellery.",
+      "resolved": true,
+      "taughtIpa": "/ˈdʒul.ri/",
+      "resolvedBy": "night-1 lexicographer",
+      "resolvedAt": "2026-10-29"
+    },
+    {
+      "id": "check-verb",
+      "lemma": "check",
+      "pos": "verb",
+      "cmudict": [
+        "CH EH1 K /tʃɛk/"
+      ],
+      "wiktionary": [
+        "/tʃɛk/"
+      ],
+      "freeDictionary": [
+        "/tʃɛk/"
+      ],
+      "disagreement": "None. Recorded because the lesson brief names /ʃ/ next to check-in, and that would be the wrong phoneme.",
+      "resolution": "check-in is taught as /ˈtʃɛk ɪn/. The /ʃ/ drill uses sure, show, information, sheet. Learners are told check is /tʃ/, not /ʃ/.",
+      "resolved": true,
+      "taughtIpa": "/tʃɛk/",
+      "resolvedBy": "night-1 lexicographer",
+      "resolvedAt": "2026-10-29"
+    }
+  ]
+}

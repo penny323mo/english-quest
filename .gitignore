@@ -1,7 +1,7 @@
 node_modules/
-.orch/pid
-.orch/heartbeat
-.orch/log.txt
+PREP
+.orch/
+dist/
 dist-cache/
 .DS_Store
 *.local

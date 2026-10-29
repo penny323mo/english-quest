@@ -1,0 +1,333 @@
+{
+  "id": "J2",
+  "unit": "J",
+  "titleYue": "你想搵咩",
+  "titleEn": "What are you looking for?",
+  "canDoYue": "你能夠問客人想搵咩，並且分清 /w/ 同 /v/。",
+  "canDoEn": "Ask what they are looking for, and keep /w/ and /v/ apart.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j2.webp",
+  "cast": [
+    "mei",
+    "tom"
+  ],
+  "lemmas": [
+    "what-det",
+    "looking-verb",
+    "today-adv",
+    "silver-noun",
+    "ring-noun",
+    "watch-noun",
+    "very-adv",
+    "have-verb",
+    "nice-adj",
+    "would-verb",
+    "like-verb",
+    "see-verb",
+    "want-verb",
+    "something-pron",
+    "wife-noun",
+    "show-verb",
+    "few-det",
+    "moment-noun",
+    "love-verb",
+    "wine-noun",
+    "vine-noun",
+    "west-noun",
+    "vest-noun",
+    "we-pron"
+  ],
+  "dialogue": [
+    {
+      "id": "j2-l1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "What are you looking for today?",
+      "glossYue": "你今日想搵咩？",
+      "audio": "assets/audio/lines/j2-l1.mp3",
+      "audioSlow": "assets/audio/lines/j2-l1-slow.mp3",
+      "say": "What are you looking for today?"
+    },
+    {
+      "id": "j2-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I'm looking for a silver ring.",
+      "glossYue": "我想搵一隻銀戒指。",
+      "audio": "assets/audio/lines/j2-l2.mp3",
+      "audioSlow": "assets/audio/lines/j2-l2-slow.mp3",
+      "say": "I'm looking for a silver ring."
+    },
+    {
+      "id": "j2-l3",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "We have a very nice ring. Would you like to see it?",
+      "glossYue": "我哋有一隻好靚嘅戒指。想唔想睇吓？",
+      "audio": "assets/audio/lines/j2-l3.mp3",
+      "audioSlow": "assets/audio/lines/j2-l3-slow.mp3",
+      "say": "We have a very nice ring. Would you like to see it?"
+    },
+    {
+      "id": "j2-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Yes. I want something for my wife.",
+      "glossYue": "好。我想搵樣嘢送俾太太。",
+      "audio": "assets/audio/lines/j2-l4.mp3",
+      "audioSlow": "assets/audio/lines/j2-l4-slow.mp3",
+      "say": "Yes. I want something for my wife."
+    },
+    {
+      "id": "j2-l5",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Of course. I'll show you a few.",
+      "glossYue": "當然。我畀你睇幾件。",
+      "audio": "assets/audio/lines/j2-l5.mp3",
+      "audioSlow": "assets/audio/lines/j2-l5-slow.mp3",
+      "say": "Of course. I'll show you a few."
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "What are you looking for? 係問咩？",
+      "choices": [
+        "你想搵咩",
+        "你叫咩名",
+        "你飛去邊"
+      ],
+      "answer": 0,
+      "explain": "looking for 係「想搵」。唔係普通望一望。"
+    },
+    {
+      "prompt": "very 開頭係邊個音？",
+      "choices": [
+        "/v/ 上齒輕碰下唇",
+        "/w/ 雙唇收圓",
+        "/θ/ 伸舌"
+      ],
+      "answer": 0,
+      "explain": "very 唔好讀成 wery。"
+    },
+    {
+      "prompt": "Would you like to see it? 係邊種語氣？",
+      "choices": [
+        "客氣邀請",
+        "命令",
+        "道別"
+      ],
+      "answer": 0,
+      "explain": "would like 比 want 柔和。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "What are you looking for ___?",
+      "example": "What are you looking for today?",
+      "glossYue": "你今日想搵咩？",
+      "answer": "today",
+      "choices": [
+        "today",
+        "the gate",
+        "a breath"
+      ]
+    },
+    {
+      "pattern": "I'm looking for ___.",
+      "example": "I'm looking for a silver ring.",
+      "glossYue": "我想搵⋯⋯。",
+      "answer": "a silver ring",
+      "choices": [
+        "a silver ring",
+        "my passport",
+        "the menu"
+      ]
+    },
+    {
+      "pattern": "Would you like to ___?",
+      "example": "Would you like to see it?",
+      "glossYue": "想唔想⋯⋯？",
+      "answer": "see it",
+      "choices": [
+        "see it",
+        "check in",
+        "bow to the guest"
+      ]
+    },
+    {
+      "pattern": "I'll show you ___.",
+      "example": "I'll show you a few.",
+      "glossYue": "我畀你睇⋯⋯。",
+      "answer": "a few",
+      "choices": [
+        "a few",
+        "the wind",
+        "a live show"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "j2-l1",
+    "hint": "What are you looking for today?"
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "客人話 I'm looking for a silver ring. 你點接？",
+      "choices": [
+        "We have a very nice ring.",
+        "Your flight is on time.",
+        "Ship is short."
+      ],
+      "answer": 0,
+      "explain": "接住個需求，再邀請佢睇。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Would",
+        "you",
+        "like",
+        "to",
+        "see",
+        "it"
+      ],
+      "answer": [
+        "Would",
+        "you",
+        "like",
+        "to",
+        "see",
+        "it"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "mei",
+    "intro": "Tom 已經入咗舖。你問完之後，等佢講完先答。",
+    "turns": [
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "I'm looking for a silver ring.",
+        "audio": "assets/audio/lines/j2-l2.mp3",
+        "audioSlow": "assets/audio/lines/j2-l2-slow.mp3",
+        "expect": "We have a very nice ring.",
+        "keywords": [
+          "very",
+          "ring"
+        ],
+        "modelAudio": "assets/audio/lines/j2-m1.mp3",
+        "modelSlow": "assets/audio/lines/j2-m1-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Yes. I want something for my wife.",
+        "audio": "assets/audio/lines/j2-l4.mp3",
+        "audioSlow": "assets/audio/lines/j2-l4-slow.mp3",
+        "expect": "Would you like to see it?",
+        "keywords": [
+          "like",
+          "see"
+        ],
+        "modelAudio": "assets/audio/lines/j2-m2.mp3",
+        "modelSlow": "assets/audio/lines/j2-m2-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Yes, please.",
+        "audio": "assets/audio/lines/j2-l6.mp3",
+        "audioSlow": "assets/audio/lines/j2-l6-slow.mp3",
+        "expect": "I'll show you a few.",
+        "keywords": [
+          "show",
+          "few"
+        ],
+        "modelAudio": "assets/audio/lines/j2-m3.mp3",
+        "modelSlow": "assets/audio/lines/j2-m3-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "wine-noun",
+      "choices": [
+        "wine",
+        "vine",
+        "west"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "vine-noun",
+      "choices": [
+        "vine",
+        "wine",
+        "wife"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "silver ring",
+      "choices": [
+        "銀戒指",
+        "靠窗位",
+        "登機證"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "Would you like to see it?",
+      "choices": [
+        "想唔想睇吓",
+        "請去閘口",
+        "我只係睇吓"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個開頭係 /v/？",
+      "choices": [
+        "very",
+        "would",
+        "wife"
+      ],
+      "answer": 0,
+      "explain": "would 同 wife 係圓唇 /w/。very 先至係 /v/。"
+    }
+  ],
+  "sound": {
+    "ipa": "/w/ · /v/",
+    "title": "圓唇同咬唇",
+    "note": "/w/：雙唇收圓，好似吹細蠟燭之前，牙齒唔使咬唇。/v/：上排牙輕碰下唇，聲帶要震。wine / vine、west / vest 就係呢一對。would、want、wife、watch 係 /w/。very 同 silver 入面係 /v/。",
+    "pairs": [
+      {
+        "a": "wine-noun",
+        "b": "vine-noun"
+      },
+      {
+        "a": "west-noun",
+        "b": "vest-noun"
+      }
+    ],
+    "drill": [
+      "wine-noun",
+      "vine-noun",
+      "very-adv",
+      "would-verb",
+      "wife-noun"
+    ]
+  },
+  "next": "T1"
+}

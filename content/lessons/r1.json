@@ -1,0 +1,326 @@
+{
+  "id": "R1",
+  "unit": "R",
+  "titleYue": "入座",
+  "titleEn": "Entering and seating",
+  "canDoYue": "你能夠訂位入座：講人數、跟住 right this way，並且讀到美式 /r/。",
+  "canDoEn": "Ask for a table and follow “right this way,” with a clear American /r/.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/r1.webp",
+  "cast": [
+    "ana",
+    "tom"
+  ],
+  "lemmas": [
+    "evening-noun",
+    "reservation-noun",
+    "table-noun",
+    "table-for-two-phrase",
+    "two-num",
+    "right-adv",
+    "right-this-way-phrase",
+    "way-noun",
+    "would-verb",
+    "like-verb",
+    "window-noun",
+    "by-prep",
+    "great-adj",
+    "seat-noun",
+    "bring-verb",
+    "menu-noun",
+    "ready-adj",
+    "yes-intj",
+    "do-verb",
+    "have-verb",
+    "please-adv",
+    "thank-you-phrase",
+    "red-adj",
+    "led-verb"
+  ],
+  "dialogue": [
+    {
+      "id": "r1-l1",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "Good evening. Do you have a reservation?",
+      "glossYue": "晚上好。你有冇訂座？",
+      "audio": "assets/audio/lines/r1-l1.mp3",
+      "audioSlow": "assets/audio/lines/r1-l1-slow.mp3",
+      "say": "Good evening. Do you have a reservation?"
+    },
+    {
+      "id": "r1-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Yes. A table for two, please.",
+      "glossYue": "有。兩位，唔該。",
+      "audio": "assets/audio/lines/r1-l2.mp3",
+      "audioSlow": "assets/audio/lines/r1-l2-slow.mp3",
+      "say": "Yes. A table for two, please."
+    },
+    {
+      "id": "r1-l3",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "Right this way. Would you like a table by the window?",
+      "glossYue": "請跟我嚟。想唔想坐靠窗？",
+      "audio": "assets/audio/lines/r1-l3.mp3",
+      "audioSlow": "assets/audio/lines/r1-l3-slow.mp3",
+      "say": "Right this way. Would you like a table by the window?"
+    },
+    {
+      "id": "r1-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Yes, thank you. This is great.",
+      "glossYue": "好，多謝。好好。",
+      "audio": "assets/audio/lines/r1-l4.mp3",
+      "audioSlow": "assets/audio/lines/r1-l4-slow.mp3",
+      "say": "Yes, thank you. This is great."
+    },
+    {
+      "id": "r1-l5",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "Here is your table. Please have a seat. I'll bring the menu.",
+      "glossYue": "你張檯喺度。請坐。我攞餐牌嚟。",
+      "audio": "assets/audio/lines/r1-l5.mp3",
+      "audioSlow": "assets/audio/lines/r1-l5-slow.mp3",
+      "say": "Here is your table. Please have a seat. I'll bring the menu."
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Do you have a reservation? 係問咩？",
+      "choices": [
+        "你有冇訂座",
+        "你想搵銀戒指",
+        "你飛去邊"
+      ],
+      "answer": 0,
+      "explain": "有就答 Yes，再講幾多位。"
+    },
+    {
+      "prompt": "A table for two. 係幾多位？",
+      "choices": [
+        "兩位",
+        "一位",
+        "通道位"
+      ],
+      "answer": 0,
+      "explain": "for two 係人數，唔係價錢。"
+    },
+    {
+      "prompt": "Right this way. 你應該？",
+      "choices": [
+        "跟住佢行",
+        "遞護照",
+        "講自己個名"
+      ],
+      "answer": 0,
+      "explain": "right 呢度係「就係咁邊」。開頭 /r/。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Do you have a ___?",
+      "example": "Do you have a reservation?",
+      "glossYue": "你有冇⋯⋯？",
+      "answer": "reservation",
+      "choices": [
+        "reservation",
+        "necklace",
+        "boarding pass"
+      ]
+    },
+    {
+      "pattern": "A table for ___, please.",
+      "example": "A table for two, please.",
+      "glossYue": "⋯⋯位，唔該。",
+      "answer": "two",
+      "choices": [
+        "two",
+        "sheep",
+        "thank"
+      ]
+    },
+    {
+      "pattern": "Right this ___.",
+      "example": "Right this way.",
+      "glossYue": "請跟我嚟。",
+      "answer": "way",
+      "choices": [
+        "way",
+        "wine",
+        "wife"
+      ]
+    },
+    {
+      "pattern": "I'll bring the ___.",
+      "example": "I'll bring the menu.",
+      "glossYue": "我攞⋯⋯嚟。",
+      "answer": "menu",
+      "choices": [
+        "menu",
+        "passport",
+        "ring"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "r1-l2",
+    "hint": "Yes. A table for two, please."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "Ana 問 Do you have a reservation? 你訂咗兩位。",
+      "choices": [
+        "Yes. A table for two, please.",
+        "I'm just looking, thank you.",
+        "Here is my passport."
+      ],
+      "answer": 0,
+      "explain": "先 yes，再講人數。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Right",
+        "this",
+        "way"
+      ],
+      "answer": [
+        "Right",
+        "this",
+        "way"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "今晚你係客人。Ana 在門口。等佢講完先答。",
+    "turns": [
+      {
+        "partner": "Ana",
+        "partnerId": "ana",
+        "line": "Good evening. Do you have a reservation?",
+        "audio": "assets/audio/lines/r1-l1.mp3",
+        "audioSlow": "assets/audio/lines/r1-l1-slow.mp3",
+        "expect": "Yes. A table for two, please.",
+        "keywords": [
+          "table",
+          "two"
+        ],
+        "modelAudio": "assets/audio/lines/r1-l2.mp3",
+        "modelSlow": "assets/audio/lines/r1-l2-slow.mp3"
+      },
+      {
+        "partner": "Ana",
+        "partnerId": "ana",
+        "line": "Would you like a table by the window?",
+        "audio": "assets/audio/lines/r1-l3.mp3",
+        "audioSlow": "assets/audio/lines/r1-l3-slow.mp3",
+        "expect": "Yes, thank you.",
+        "keywords": [
+          "yes",
+          "thank"
+        ],
+        "modelAudio": "assets/audio/lines/r1-l4.mp3",
+        "modelSlow": "assets/audio/lines/r1-l4-slow.mp3"
+      },
+      {
+        "partner": "Ana",
+        "partnerId": "ana",
+        "line": "Right this way.",
+        "audio": "assets/audio/lines/r1-l6.mp3",
+        "audioSlow": "assets/audio/lines/r1-l6-slow.mp3",
+        "expect": "Thank you.",
+        "keywords": [
+          "thank"
+        ],
+        "modelAudio": "assets/audio/lines/r1-m3.mp3",
+        "modelSlow": "assets/audio/lines/r1-m3-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "right-adv",
+      "choices": [
+        "right",
+        "light",
+        "night"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "red-adj",
+      "choices": [
+        "red",
+        "led",
+        "read"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "reservation",
+      "choices": [
+        "訂座",
+        "護照",
+        "頸鏈"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "I'll bring the menu.",
+      "choices": [
+        "我攞餐牌嚟",
+        "我飛去香港",
+        "我只係睇吓"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "table 入面有冇 /r/？",
+      "choices": [
+        "冇。/r/ 喺 right、reservation",
+        "有，讀成 rable",
+        "同 light 同音"
+      ],
+      "answer": 0,
+      "explain": "table 係 /ˈteɪ.bəl/。唔好為咗課名硬加 /r/。"
+    }
+  ],
+  "sound": {
+    "ipa": "/ɹ/",
+    "title": "美式捲舌",
+    "note": "舌尖向上後方卷，唔好掂到上顎，兩邊嘴角唔使拉到笑。right、reservation、ready、bring、great 都有。table 係 /ˈteɪ.bəl/，冇 /r/。如果讀成 l，聽嘅人會聽成 light。",
+    "pairs": [
+      {
+        "a": "right-adv",
+        "b": "light-adj"
+      },
+      {
+        "a": "red-adj",
+        "b": "led-verb"
+      }
+    ],
+    "drill": [
+      "right-adv",
+      "reservation-noun",
+      "ready-adj",
+      "bring-verb",
+      "great-adj"
+    ]
+  },
+  "next": null
+}

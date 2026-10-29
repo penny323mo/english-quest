@@ -1,0 +1,330 @@
+{
+  "id": "T1",
+  "unit": "T",
+  "titleYue": "機場櫃檯",
+  "titleEn": "Airport check-in",
+  "canDoYue": "你能夠辦登機：講目的地、遞護照、揀靠窗，並且分清 /ʃ/ 同 /tʃ/。",
+  "canDoEn": "Check in: say where you are flying, show a passport, and choose a window seat.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t1.webp",
+  "cast": [
+    "kai"
+  ],
+  "lemmas": [
+    "afternoon-noun",
+    "where-adv",
+    "flying-verb",
+    "today-adv",
+    "passport-noun",
+    "here-adv",
+    "window-noun",
+    "aisle-noun",
+    "seat-noun",
+    "window-seat-phrase",
+    "boarding-pass-phrase",
+    "boarding-noun",
+    "pass-noun",
+    "flight-noun",
+    "time-noun",
+    "gate-noun",
+    "check-in-noun",
+    "check-verb",
+    "sure-adj",
+    "show-verb",
+    "information-noun",
+    "ticket-noun",
+    "luggage-noun",
+    "please-adv",
+    "thank-verb"
+  ],
+  "dialogue": [
+    {
+      "id": "t1-l1",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Good afternoon. Where are you flying today?",
+      "glossYue": "午安。你今日飛去邊？",
+      "audio": "assets/audio/lines/t1-l1.mp3",
+      "audioSlow": "assets/audio/lines/t1-l1-slow.mp3",
+      "say": "Good afternoon. Where are you flying today?"
+    },
+    {
+      "id": "t1-l2",
+      "speaker": "ling",
+      "speakerLabel": "Ling",
+      "text": "I'm flying to Hong Kong. Here is my passport.",
+      "glossYue": "我飛去香港。我張護照喺度。",
+      "audio": "assets/audio/lines/t1-l2.mp3",
+      "audioSlow": "assets/audio/lines/t1-l2-slow.mp3",
+      "say": "I'm flying to Hong Kong. Here is my passport."
+    },
+    {
+      "id": "t1-l3",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Thank you. Window or aisle?",
+      "glossYue": "多謝。靠窗定係通道？",
+      "audio": "assets/audio/lines/t1-l3.mp3",
+      "audioSlow": "assets/audio/lines/t1-l3-slow.mp3",
+      "say": "Thank you. Window or aisle?"
+    },
+    {
+      "id": "t1-l4",
+      "speaker": "ling",
+      "speakerLabel": "Ling",
+      "text": "A window seat, please.",
+      "glossYue": "要靠窗位，唔該。",
+      "audio": "assets/audio/lines/t1-l4.mp3",
+      "audioSlow": "assets/audio/lines/t1-l4-slow.mp3",
+      "say": "A window seat, please."
+    },
+    {
+      "id": "t1-l5",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Sure. I'll show you the information. Here is your boarding pass.",
+      "glossYue": "好。我畀你睇吓資料。你張登機證喺度。",
+      "audio": "assets/audio/lines/t1-l5.mp3",
+      "audioSlow": "assets/audio/lines/t1-l5-slow.mp3",
+      "say": "Sure. I'll show you the information. Here is your boarding pass."
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Where are you flying today? 係問咩？",
+      "choices": [
+        "你今日飛去邊",
+        "你想搵咩首飾",
+        "你有冇訂座"
+      ],
+      "answer": 0,
+      "explain": "flying 係飛緊去邊度。"
+    },
+    {
+      "prompt": "Window or aisle? 係兩個咩？",
+      "choices": [
+        "靠窗位定通道位",
+        "紅酒定白酒",
+        "金定銀"
+      ],
+      "answer": 0,
+      "explain": "aisle 係行路嗰條通道旁邊。"
+    },
+    {
+      "prompt": "check-in 開頭係？",
+      "choices": [
+        "/tʃ/，一下堵住再放",
+        "/ʃ/ 長噓氣",
+        "/θ/ 伸舌"
+      ],
+      "answer": 0,
+      "explain": "check 唔係 sh。/ʃ/ 喺 sure、show、information。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Where are you flying ___?",
+      "example": "Where are you flying today?",
+      "glossYue": "你今日飛去邊？",
+      "answer": "today",
+      "choices": [
+        "today",
+        "a silver ring",
+        "the menu"
+      ]
+    },
+    {
+      "pattern": "Here is my ___.",
+      "example": "Here is my passport.",
+      "glossYue": "我張⋯⋯喺度。",
+      "answer": "passport",
+      "choices": [
+        "passport",
+        "necklace",
+        "menu"
+      ]
+    },
+    {
+      "pattern": "A window seat, ___.",
+      "example": "A window seat, please.",
+      "glossYue": "要靠窗位，唔該。",
+      "answer": "please",
+      "choices": [
+        "please",
+        "the wind",
+        "just looking"
+      ]
+    },
+    {
+      "pattern": "Here is your ___.",
+      "example": "Here is your boarding pass.",
+      "glossYue": "你張⋯⋯喺度。",
+      "answer": "boarding pass",
+      "choices": [
+        "boarding pass",
+        "silver ring",
+        "slow breath"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "t1-l4",
+    "hint": "A window seat, please."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "Kai 問 Window or aisle? 你想坐窗邊。",
+      "choices": [
+        "A window seat, please.",
+        "I'm just looking.",
+        "A table for two."
+      ],
+      "answer": 0,
+      "explain": "please 放句尾就夠禮貌。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Here",
+        "is",
+        "my",
+        "passport"
+      ],
+      "answer": [
+        "Here",
+        "is",
+        "my",
+        "passport"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "ling",
+    "intro": "你喺夜間櫃檯。Kai 問完一句，你再答。唔使急。",
+    "turns": [
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "Good afternoon. Where are you flying today?",
+        "audio": "assets/audio/lines/t1-l1.mp3",
+        "audioSlow": "assets/audio/lines/t1-l1-slow.mp3",
+        "expect": "I'm flying to Hong Kong.",
+        "keywords": [
+          "flying"
+        ],
+        "modelAudio": "assets/audio/lines/t1-m1.mp3",
+        "modelSlow": "assets/audio/lines/t1-m1-slow.mp3"
+      },
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "May I see your passport, please?",
+        "audio": "assets/audio/lines/t1-l6.mp3",
+        "audioSlow": "assets/audio/lines/t1-l6-slow.mp3",
+        "expect": "Here is my passport.",
+        "keywords": [
+          "passport"
+        ],
+        "modelAudio": "assets/audio/lines/t1-m2.mp3",
+        "modelSlow": "assets/audio/lines/t1-m2-slow.mp3"
+      },
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "Thank you. Window or aisle?",
+        "audio": "assets/audio/lines/t1-l3.mp3",
+        "audioSlow": "assets/audio/lines/t1-l3-slow.mp3",
+        "expect": "A window seat, please.",
+        "keywords": [
+          "window"
+        ],
+        "modelAudio": "assets/audio/lines/t1-l4.mp3",
+        "modelSlow": "assets/audio/lines/t1-l4-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "sheet-noun",
+      "choices": [
+        "sheet",
+        "cheat",
+        "seat"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "sure-adj",
+      "choices": [
+        "sure",
+        "tour",
+        "store"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "boarding pass",
+      "choices": [
+        "登機證",
+        "頸鏈",
+        "餐牌"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "aisle",
+      "choices": [
+        "通道位",
+        "靠窗",
+        "行李"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個先有 /ʃ/？",
+      "choices": [
+        "show",
+        "check",
+        "ticket"
+      ],
+      "answer": 0,
+      "explain": "check 同 ticket 係 /tʃ/。show 先至係 /ʃ/。"
+    }
+  ],
+  "sound": {
+    "ipa": "/ʃ/",
+    "title": "長噓氣，唔係 check",
+    "note": "/ʃ/：嘴唇稍圓，舌面抬高，一口氣慢慢送出，好似叫人靜音但更圓。sure、show、information、sheet 都有。check-in 嘅 check 係 /tʃɛk/：先堵住，再放出。兩種都聽，唔好撈。boarding 本身係 /ˈbɔr.dɪŋ/，重點 /r/ 同 /ŋ/，唔係 /ʃ/。",
+    "pairs": [
+      {
+        "a": "sheet-noun",
+        "b": "cheat-verb"
+      },
+      {
+        "a": "shoe-noun",
+        "b": "chew-verb"
+      },
+      {
+        "a": "sure-adj",
+        "b": "check-verb"
+      }
+    ],
+    "drill": [
+      "sure-adj",
+      "show-verb",
+      "information-noun",
+      "sheet-noun",
+      "check-verb"
+    ]
+  },
+  "next": "R1"
+}
