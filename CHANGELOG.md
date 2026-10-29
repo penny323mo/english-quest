@@ -1,5 +1,9 @@
 # Changelog — English Quest
 
+## Round 12 fixes
+- Round 12 found no critical, major, or minor defects. The seven live-audit items stay closed. No product code changed.
+- Tests stayed 12/12. At 390px, the path, the locked J2 screen, the read card, settings, the hello card with Jyutping on, and attributions stay inside the phone column.
+
 ## Round 11 fixes
 - Role-play tips no longer say 「你而家係 你。」 A named part says 「你扮 Mei。」 (or Tom). The learner’s own part says 「輪到你講。」 Both still say to wait until the other person finishes.
 - Word cards use a Cantonese part-of-speech and sense label, such as 動詞 · 現在式. The raw sense id and the simplified-Chinese gloss stay in the data and are not shown.
