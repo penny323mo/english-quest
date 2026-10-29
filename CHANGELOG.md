@@ -1,5 +1,9 @@
 # Changelog — English Quest
 
+## Round 9 fixes
+- Round 9 found no critical, major, or minor defects. No product code changed.
+- Tests stayed 9/9. At 390px, the path, the locked J2 screen, the sheep card, and attributions stay inside the phone column.
+
 ## Round 8 fixes
 - Round 8 found no critical, major, or minor defects. No product code changed.
 - Tests stayed 9/9. At 390px, the foundation path, the ship card, the sheep card, and attributions stay inside the phone column.
