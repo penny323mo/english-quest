@@ -1,5 +1,10 @@
 # Changelog — English Quest
 
+## Round 2 fixes
+- The before-vowel *the* clip no longer says /ðə/ and then /ði/. The example on the card stays “The aisle seat is free.” The Piper line is `[[ðˈi]] aisle seat is free.`
+- The phoneme test fails if that say line still contains ðə.
+- The attributions page names the slow-speech synth scale 1.35, and no longer says every file is 1.35 times as long.
+
 ## Round 1 fixes
 - Jewellery teaching clips are phoneme-forced to the two-syllable card `/ˈdʒul.ɹi/` (`[[dʒˈulɹi]]`), including the J1 greeting. The three-syllable form stays a noted variant.
 - Of course and a table for two now say the weak forms printed on the cards (`/əv/`, `/ə/`, `/fɚ/`).

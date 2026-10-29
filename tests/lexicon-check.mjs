@@ -119,10 +119,12 @@ test("piper say matches the taught jewellery and weak forms", () => {
   const lines = JSON.parse(fs.readFileSync(path.join(root, "content/lines.json"), "utf8"));
   const j1 = lines.find((row) => row.id === "j1-l1");
   assert.ok(j1, "j1-l1");
-  const says = [byId["jewellery-noun"].say, byId["jewelry-noun"].say, j1.say, byId["of-course-phrase"].say, byId["table-for-two-phrase"].say];
+  const says = [byId["jewellery-noun"].say, byId["jewelry-noun"].say, j1.say, byId["of-course-phrase"].say, byId["table-for-two-phrase"].say, byId["the-art-vowel"].say];
   for (const say of says.slice(0, 3)) assert.match(say, /\[\[dʒˈulɹi\]\]/);
   assert.match(says[3], /\[\[əv kˈɔɹs/);
   assert.match(says[4], /\[\[ə ˈteɪbəl fɚ ˈtu\]\]/);
+  assert.equal(byId["the-art-vowel"].example, "The aisle seat is free.");
+  assert.match(says[5], /^\[\[ðˈi\]\] aisle seat is free\./);
   const py = "/workspace/nightly/PREP-english-app/.venv/bin/python";
   const script = `
 import sys
@@ -146,6 +148,8 @@ for s in sys.argv[1:]:
   assert.doesNotMatch(phones[3], /ʌv/);
   assert.match(phones[4], /ə ˈteɪbəl fɚ ˈtu/);
   assert.doesNotMatch(phones[4], /fɔ/);
+  assert.match(phones[5], /ðˈi/);
+  assert.equal(phones[5].includes("ðə"), false, phones[5]);
 });
 
 test("no Edge or Azure teaching audio is referenced", () => {

@@ -320,8 +320,8 @@ def build_items() -> None:
     add("the-art-vowel", "the", "art", "before-vowel", "DH IY0", ["the"],
         "英文冠詞，元音前面弱讀，中文往往唔使譯", "定冠词（元音前弱读）", "", ["the aisle", "the information"],
         "The aisle seat is free.", "通道位仲有。",
-        piper="The [[ðˈi]] aisle seat is free.",
-        note="元音前面讀 /ði/。子音前面讀 /ðə/。")
+        piper="[[ðˈi]] aisle seat is free.",
+        note="元音前面讀 /ði/。例句錄音只讀一次 /ði/，唔會先加個 /ðə/。")
     add("beat-verb", "beat", "verb", "strike-rhythm", "B IY1 T", ["beat"],
         "拍子；打拍", "拍子", "paak3 zi2", ["the beat"], "Beat is long.", "Beat 係長音。")
     add("bit-noun", "bit", "noun", "small-piece", "B IH1 T", ["bit"],
@@ -921,11 +921,11 @@ FLAGS = [
         "wiktionary": ["/ðə/ before consonants", "/ði/ before vowels", "/ðiː/ strong"],
         "freeDictionary": "API payload missed the article and showed only /ði/",
         "disagreement": "Not a real US disagreement. The API record was incomplete.",
-        "resolution": "Two cards: the-art /ðə/ before consonants, the-art-vowel /ði/ before vowels. Strong /ðiː/ noted.",
+        "resolution": "Two cards: the-art /ðə/ before consonants, the-art-vowel /ði/ before vowels. Strong /ðiː/ noted. The before-vowel clip is [[ðˈi]] aisle seat is free. A leading orthographic The made Piper say /ðə/ and then /ði/.",
         "resolved": True,
         "taughtIpa": "/ðə/ and /ði/",
-        "resolvedBy": "night-1 lexicographer",
-        "resolvedAt": "2026-10-29",
+        "resolvedBy": "round-2 lexicographer",
+        "resolvedAt": "2026-10-30",
     },
     {
         "id": "this-det",
