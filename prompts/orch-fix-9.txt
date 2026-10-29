@@ -1,0 +1,8 @@
+You are the coder for English Quest (grok 4.7). cd /workspace/sidequest/english-quest.
+Read /workspace/sidequest/english-quest/reviews/orch-r9-grok.md and fix every CRITICAL and MAJOR issue (MINOR where sensible). Keep matching SPEC.md and DECISIONS.md.
+Do not edit reviews/ or prompts/. Re-run tests. Re-check 390px for overflow after fixes.
+Append '## Round 9 fixes' to CHANGELOG.md describing what changed.
+At the END of this fix phase: git add -A, commit, and push to origin main (no force-push, no secrets).
+
+WHEN COMPLETELY FINISHED, as your very last action, create the file /workspace/sidequest/english-quest/.orch/fix-9.done containing the word DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-9.done

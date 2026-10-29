@@ -1,0 +1,16 @@
+node_modules/
+.orch/pid
+.orch/heartbeat
+.orch/log.txt
+dist-cache/
+.DS_Store
+*.local
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.pyc
+.secrets/
+credentials*
+*token*

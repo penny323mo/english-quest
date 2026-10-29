@@ -1,0 +1,13 @@
+You are the coder for English Quest (grok 4.7). cd /workspace/sidequest/english-quest.
+Read and follow SPEC.md (authoritative), DECISIONS.md (overrides RESEARCH.md), and RESEARCH.md for details.
+Build a COMPLETE, polished, iPhone-first (390×844) static web app. Quality bar: commercial Duolingo/Speak level — never a school worksheet frame.
+
+Night-1 scope (ONLY these 6 lessons, each fully polished end-to-end): F1, F2, J1, J2, T1, R1.
+Use the Harbor Glow Editorial art direction. Lexicon must be sense-matched with IPA cross-check; flag disagreements in review/flags.json — never silently pick.
+TTS: US Kokoro if it runs reasonably on this box; else Piper LJSpeech from PREP symlink (voices already at PREP/voices/). ONE US accent only.
+PWA offline, IndexedDB-only progress (no tracking), LICENSE + attributions page, no secrets.
+Add node tests under tests/ including lexicon check that fails on IPA_REVIEW / missing audio / sense mismatch.
+At the END of this build phase: git add -A, commit, and push to origin main so https://penny323mo.github.io/english-quest/ updates. Do not force-push. Never commit secrets, tokens, .env, or credentials.
+
+WHEN COMPLETELY FINISHED, as your very last action, create the file /workspace/sidequest/english-quest/.orch/build.done containing the word DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/build.done
