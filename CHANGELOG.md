@@ -1,5 +1,9 @@
 # Changelog — English Quest
 
+## Round 15 fixes
+- Round 15 found no critical, major, or minor defects. The round 13 audit items stay closed: R2 落單, the fuller example sentences, and the madam line 好嘅，小姐。. No product code changed.
+- Tests stayed 12/12. At 390px, the path, the locked R2 screen, the rewritten word cards, settings, the hello card with Jyutping on, attributions, and the R2 hook through the last beat stay inside the phone column.
+
 ## Round 14 fixes
 - R2 落單 is a full 12-beat lesson after R1. It teaches I'd like, Can I have, What do you recommend?, and Anything else?, and it keeps chicken /tʃ/ apart from sheet /ʃ/ and weak can /kən/ apart from can't /kænt/. Coffee, water, and can are flagged where the sources disagree, and the clip matches the card. The hook is its own 900×1200 scene. T2 安檢同方向 stays upcoming so this lesson stays complete.
 - Bare examples are full sentences. Seven through ten say what time the door opens, money is 我冇帶夠錢。, let me know is 有咩需要就話我知。, and o'clock is 而家係三點。. Madam’s spoken line is 好嘅，小姐。 The gloss still says madam is the polite form.
