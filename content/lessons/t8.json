@@ -44,11 +44,11 @@
       "id": "t8-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I am visiting for tourism, and my stay is for five days at a quiet city hotel.",
-      "glossYue": "我嚟觀光，會喺市中心一間靜嘅酒店逗留五日。",
+      "text": "I am visiting for tourism, and I'm staying for five days at a hotel in the city.",
+      "glossYue": "我嚟觀光，會喺市區一間酒店住五日。",
       "audio": "assets/audio/lines/t8-l2.mp3",
       "audioSlow": "assets/audio/lines/t8-l2-slow.mp3",
-      "say": "I am visiting for tourism, and my stay is for five days at a quiet city hotel.",
+      "say": "I am visiting for tourism, and I'm staying for five days at a hotel in the city.",
       "hideGloss": true
     },
     {
@@ -152,8 +152,8 @@
   ],
   "chunks": [
     {
-      "pattern": "I am visiting for ___, and my stay is for five days at a quiet city hotel.",
-      "example": "I am visiting for tourism, and my stay is for five days at a quiet city hotel.",
+      "pattern": "I am visiting for ___, and I'm staying for five days at a hotel in the city.",
+      "example": "I am visiting for tourism, and I'm staying for five days at a hotel in the city.",
       "glossYue": "我嚟⋯⋯。",
       "answer": "tourism",
       "choices": [
@@ -230,7 +230,7 @@
         "line": "Good morning. What is the main purpose of your visit today, and are you here for tourism?",
         "audio": "assets/audio/lines/t8-l1.mp3",
         "audioSlow": "assets/audio/lines/t8-l1-slow.mp3",
-        "expect": "I am visiting for tourism, and my stay is for five days at a quiet city hotel.",
+        "expect": "I am visiting for tourism, and I'm staying for five days at a hotel in the city.",
         "keywords": [
           "tourism",
           "stay"

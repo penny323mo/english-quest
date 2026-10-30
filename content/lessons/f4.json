@@ -34,51 +34,51 @@
       "id": "f4-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Excuse me.",
-      "glossYue": "唔該借借。",
+      "text": "Excuse me, can you help me here please?",
+      "glossYue": "唔該，可唔可以喺呢度幫我？",
       "audio": "assets/audio/lines/f4-l1.mp3",
       "audioSlow": "assets/audio/lines/f4-l1-slow.mp3",
-      "say": "[[ɪkskjˈuz]] me."
+      "say": "Excuse me, can you help me here please?"
     },
     {
       "id": "f4-l2",
       "speaker": "ling",
       "speakerLabel": "Ling",
-      "text": "I'm sorry.",
-      "glossYue": "對唔住。",
+      "text": "I'm sorry, I did not see you there.",
+      "glossYue": "對唔住，我冇見到你。",
       "audio": "assets/audio/lines/f4-l2.mp3",
       "audioSlow": "assets/audio/lines/f4-l2-slow.mp3",
-      "say": "I'm sorry."
+      "say": "I'm sorry, I did not see you there."
     },
     {
       "id": "f4-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "That's all right.",
-      "glossYue": "冇事。",
+      "text": "That's all right, please do not worry.",
+      "glossYue": "冇事，唔使擔心。",
       "audio": "assets/audio/lines/f4-l3.mp3",
       "audioSlow": "assets/audio/lines/f4-l3-slow.mp3",
-      "say": "That's all right."
+      "say": "That's all right, please do not worry."
     },
     {
       "id": "f4-l4",
       "speaker": "ling",
       "speakerLabel": "Ling",
-      "text": "Thank you.",
-      "glossYue": "多謝。",
+      "text": "Thank you for saying that to me.",
+      "glossYue": "多謝你咁講。",
       "audio": "assets/audio/lines/f4-l4.mp3",
       "audioSlow": "assets/audio/lines/f4-l4-slow.mp3",
-      "say": "Thank you."
+      "say": "Thank you for saying that to me."
     },
     {
       "id": "f4-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "You're welcome. Good night.",
-      "glossYue": "唔使客氣。晚安。",
+      "text": "You're welcome. Good night, and sleep well.",
+      "glossYue": "唔使客氣。晚安，好好瞓。",
       "audio": "assets/audio/lines/f4-l5.mp3",
       "audioSlow": "assets/audio/lines/f4-l5-slow.mp3",
-      "say": "You're welcome. Good night."
+      "say": "You're welcome. Good night, and sleep well."
     }
   ],
   "understand": [
@@ -161,7 +161,7 @@
   ],
   "shadow": {
     "lineId": "f4-l1",
-    "hint": "Excuse me."
+    "hint": "Excuse me, can you help me here please?"
   },
   "build": [
     {
@@ -195,10 +195,10 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "Excuse me.",
+        "line": "Excuse me, can you help me here please?",
         "audio": "assets/audio/lines/f4-l1.mp3",
         "audioSlow": "assets/audio/lines/f4-l1-slow.mp3",
-        "expect": "I'm sorry.",
+        "expect": "I'm sorry, I did not see you there.",
         "keywords": [
           "sorry"
         ],
@@ -208,10 +208,10 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "That's all right.",
+        "line": "That's all right, please do not worry.",
         "audio": "assets/audio/lines/f4-l3.mp3",
         "audioSlow": "assets/audio/lines/f4-l3-slow.mp3",
-        "expect": "Thank you.",
+        "expect": "Thank you for saying that to me.",
         "keywords": [
           "thank"
         ],
@@ -309,6 +309,6 @@
       "net-noun"
     ]
   },
-  "next": "J1",
+  "next": "F5",
   "cefr": "A1"
 }

@@ -37,31 +37,31 @@
       "id": "f2-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Good morning. My name is Mei.",
-      "glossYue": "早晨。我叫 Mei。",
+      "text": "Hello. Good morning. My name is Mei.",
+      "glossYue": "你好。早晨。我叫 Mei。",
       "audio": "assets/audio/lines/f2-l1.mp3",
       "audioSlow": "assets/audio/lines/f2-l1-slow.mp3",
-      "say": "Good morning. My name is Mei."
+      "say": "Hello. Good morning. My name is Mei."
     },
     {
       "id": "f2-l2",
       "speaker": "ling",
       "speakerLabel": "Ling",
-      "text": "Good morning. My name is Ling.",
-      "glossYue": "早晨。我叫 Ling。",
+      "text": "Hello. Good morning. My name is Ling.",
+      "glossYue": "你好。早晨。我叫 Ling。",
       "audio": "assets/audio/lines/f2-l2.mp3",
       "audioSlow": "assets/audio/lines/f2-l2-slow.mp3",
-      "say": "Good morning. My name is Ling."
+      "say": "Hello. Good morning. My name is Ling."
     },
     {
       "id": "f2-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Nice to meet you.",
-      "glossYue": "好高興認識你。",
+      "text": "It is so nice to meet you.",
+      "glossYue": "真係好高興認識你。",
       "audio": "assets/audio/lines/f2-l3.mp3",
       "audioSlow": "assets/audio/lines/f2-l3-slow.mp3",
-      "say": "Nice to meet you."
+      "say": "It is so nice to meet you."
     },
     {
       "id": "f2-l4",
@@ -77,11 +77,11 @@
       "id": "f2-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Hi. Please say it again.",
-      "glossYue": "嗨。請再講一次。",
+      "text": "Hi. Please say it again for me.",
+      "glossYue": "嗨。請你再同我講一次。",
       "audio": "assets/audio/lines/f2-l5.mp3",
       "audioSlow": "assets/audio/lines/f2-l5-slow.mp3",
-      "say": "Hi. Please say it again."
+      "say": "Hi. Please say it again for me."
     }
   ],
   "understand": [
@@ -164,7 +164,7 @@
   ],
   "shadow": {
     "lineId": "f2-l1",
-    "hint": "Good morning. My name is Mei."
+    "hint": "Hello. Good morning. My name is Mei."
   },
   "build": [
     {
@@ -202,10 +202,10 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "Good morning. My name is Mei.",
+        "line": "Hello. Good morning. My name is Mei.",
         "audio": "assets/audio/lines/f2-l1.mp3",
         "audioSlow": "assets/audio/lines/f2-l1-slow.mp3",
-        "expect": "Good morning. My name is Ling.",
+        "expect": "Hello. Good morning. My name is Ling.",
         "keywords": [
           "morning",
           "name"
@@ -216,7 +216,7 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "Nice to meet you.",
+        "line": "It is so nice to meet you.",
         "audio": "assets/audio/lines/f2-l3.mp3",
         "audioSlow": "assets/audio/lines/f2-l3-slow.mp3",
         "expect": "Nice to meet you, too.",
@@ -230,7 +230,7 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "Hi. Please say it again.",
+        "line": "Hi. Please say it again for me.",
         "audio": "assets/audio/lines/f2-l5.mp3",
         "audioSlow": "assets/audio/lines/f2-l5-slow.mp3",
         "expect": "Thank you.",

@@ -20,7 +20,7 @@
     "headache-noun",
     "prescription-noun",
     "pharmacy-noun",
-    "follow-up-noun",
+    "follow-up-visit-noun",
     "appointment-noun",
     "allergy-noun"
   ],
@@ -143,7 +143,7 @@
         "我唔使再覆診"
       ],
       "answer": 0,
-      "explain": "follow-up 係再嚟一次。"
+      "explain": "follow-up 呢度係覆診，再嚟診所一次。"
     }
   ],
   "chunks": [
@@ -340,14 +340,14 @@
         "b": "fever-noun"
       },
       {
-        "a": "follow-up-noun",
+        "a": "follow-up-visit-noun",
         "b": "cough-noun"
       }
     ],
     "drill": [
       "allergy-noun",
       "fever-noun",
-      "follow-up-noun",
+      "follow-up-visit-noun",
       "cough-noun",
       "pharmacy-noun"
     ]

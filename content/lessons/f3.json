@@ -41,51 +41,51 @@
       "id": "f3-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "How much is this?",
-      "glossYue": "呢個幾多錢？",
+      "text": "Hello there. How much is this one?",
+      "glossYue": "你好。呢一件幾多錢？",
       "audio": "assets/audio/lines/f3-l1.mp3",
       "audioSlow": "assets/audio/lines/f3-l1-slow.mp3",
-      "say": "How much is this?"
+      "say": "Hello there. How much is this one?"
     },
     {
       "id": "f3-l2",
       "speaker": "ling",
       "speakerLabel": "Ling",
-      "text": "It is ten dollars.",
-      "glossYue": "一共係十蚊。",
+      "text": "It is ten dollars for this one.",
+      "glossYue": "呢一件係十蚊。",
       "audio": "assets/audio/lines/f3-l2.mp3",
       "audioSlow": "assets/audio/lines/f3-l2-slow.mp3",
-      "say": "It is ten dollars."
+      "say": "It is ten dollars for this one."
     },
     {
       "id": "f3-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "What time is it?",
-      "glossYue": "而家幾點？",
+      "text": "Please tell me what time it is.",
+      "glossYue": "請話我知而家幾點。",
       "audio": "assets/audio/lines/f3-l3.mp3",
       "audioSlow": "assets/audio/lines/f3-l3-slow.mp3",
-      "say": "What time is it?"
+      "say": "Please tell me what time it is."
     },
     {
       "id": "f3-l4",
       "speaker": "ling",
       "speakerLabel": "Ling",
-      "text": "It is three o'clock.",
-      "glossYue": "而家係三點。",
+      "text": "Yes, it is three o'clock for us.",
+      "glossYue": "係呀，而家係三點。",
       "audio": "assets/audio/lines/f3-l4.mp3",
       "audioSlow": "assets/audio/lines/f3-l4-slow.mp3",
-      "say": "It is three o'clock."
+      "say": "Yes, it is three o'clock for us."
     },
     {
       "id": "f3-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Thank you. See you at five.",
-      "glossYue": "多謝。五點見。",
+      "text": "Thank you so much. See you at five.",
+      "glossYue": "多謝晒。五點見。",
       "audio": "assets/audio/lines/f3-l5.mp3",
       "audioSlow": "assets/audio/lines/f3-l5-slow.mp3",
-      "say": "Thank you. See you at five."
+      "say": "Thank you so much. See you at five."
     }
   ],
   "understand": [
@@ -157,7 +157,7 @@
   ],
   "shadow": {
     "lineId": "f3-l1",
-    "hint": "How much is this?"
+    "hint": "Hello there. How much is this one?"
   },
   "build": [
     {
@@ -195,10 +195,10 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "How much is this?",
+        "line": "Hello there. How much is this one?",
         "audio": "assets/audio/lines/f3-l1.mp3",
         "audioSlow": "assets/audio/lines/f3-l1-slow.mp3",
-        "expect": "It is ten dollars.",
+        "expect": "It is ten dollars for this one.",
         "keywords": [
           "ten",
           "dollar"
@@ -209,10 +209,10 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "What time is it?",
+        "line": "Please tell me what time it is.",
         "audio": "assets/audio/lines/f3-l3.mp3",
         "audioSlow": "assets/audio/lines/f3-l3-slow.mp3",
-        "expect": "It is three o'clock.",
+        "expect": "Yes, it is three o'clock for us.",
         "keywords": [
           "three",
           "clock"

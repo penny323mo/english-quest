@@ -1,0 +1,319 @@
+{
+  "id": "F6",
+  "unit": "F",
+  "titleYue": "每日作息",
+  "titleEn": "Daily routines",
+  "canDoYue": "你識講幾時常起身、開工、小休同埋收工。",
+  "canDoEn": "Say when you usually wake up, start, take a break, and close.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/f6.webp",
+  "cast": [
+    "mei"
+  ],
+  "cefr": "A1/A2",
+  "lemmas": [
+    "wake-up-verb",
+    "start-verb",
+    "finish-verb",
+    "lunch-noun",
+    "break-noun",
+    "open-verb",
+    "close-verb",
+    "shift-noun",
+    "usually-adv",
+    "always-adv",
+    "sometimes-adv",
+    "never-adv",
+    "before-prep",
+    "after-prep",
+    "then-adv"
+  ],
+  "dialogue": [
+    {
+      "id": "f6-l1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "I usually wake up early, and then I start my long shift.",
+      "glossYue": "我通常早起身，然後先開始返長更。",
+      "audio": "assets/audio/lines/f6-l1.mp3",
+      "audioSlow": "assets/audio/lines/f6-l1-slow.mp3",
+      "say": "I usually wake up early, and then I start my long shift."
+    },
+    {
+      "id": "f6-l2",
+      "speaker": "ling",
+      "speakerLabel": "Ling",
+      "text": "The shop is always open before our lunch.",
+      "glossYue": "舖頭午餐之前一定開門。",
+      "audio": "assets/audio/lines/f6-l2.mp3",
+      "audioSlow": "assets/audio/lines/f6-l2-slow.mp3",
+      "say": "The shop is always open before our lunch."
+    },
+    {
+      "id": "f6-l3",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "I sometimes take a short break after lunch.",
+      "glossYue": "我有時午餐之後會小休一陣。",
+      "audio": "assets/audio/lines/f6-l3.mp3",
+      "audioSlow": "assets/audio/lines/f6-l3-slow.mp3",
+      "say": "I sometimes take a short break after lunch."
+    },
+    {
+      "id": "f6-l4",
+      "speaker": "ling",
+      "speakerLabel": "Ling",
+      "text": "I never finish the whole shift before then.",
+      "glossYue": "我從來唔會喺嗰陣之前做完整更。",
+      "audio": "assets/audio/lines/f6-l4.mp3",
+      "audioSlow": "assets/audio/lines/f6-l4-slow.mp3",
+      "say": "I never finish the whole shift before then."
+    },
+    {
+      "id": "f6-l5",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "We always close the shop after the night shift.",
+      "glossYue": "我哋每次夜更之後都關門。",
+      "audio": "assets/audio/lines/f6-l5.mp3",
+      "audioSlow": "assets/audio/lines/f6-l5-slow.mp3",
+      "say": "We always [[klˈoʊz]] the shop after the night shift."
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "I usually wake up early, and then I start my long shift. 呢句即係點？",
+      "choices": [
+        "通常早起身，然後開工",
+        "我想買電話卡",
+        "請串多次個名"
+      ],
+      "answer": 0,
+      "explain": "usually 係通常。then 係然後。"
+    },
+    {
+      "prompt": "The shop is always open before our lunch. 呢句即係點？",
+      "choices": [
+        "午餐之前一定開門",
+        "夜更之後先關門",
+        "我來自澳門"
+      ],
+      "answer": 0,
+      "explain": "always 係每次。before 係之前。"
+    },
+    {
+      "prompt": "I sometimes take a short break after lunch. 呢句即係點？",
+      "choices": [
+        "有時午餐之後小休",
+        "從來唔會收工",
+        "請開通電話卡"
+      ],
+      "answer": 0,
+      "explain": "sometimes 係有時。after 係之後。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I usually ___ up early.",
+      "example": "I usually wake up early.",
+      "glossYue": "我通常早⋯⋯。",
+      "answer": "wake",
+      "choices": [
+        "wake",
+        "close",
+        "spell"
+      ]
+    },
+    {
+      "pattern": "The shop is always ___ before lunch.",
+      "example": "The shop is always open before lunch.",
+      "glossYue": "舖頭午餐之前一定⋯⋯。",
+      "answer": "open",
+      "choices": [
+        "open",
+        "never",
+        "email"
+      ]
+    },
+    {
+      "pattern": "I sometimes take a ___ after lunch.",
+      "example": "I sometimes take a break after lunch.",
+      "glossYue": "我有時午餐之後⋯⋯。",
+      "answer": "break",
+      "choices": [
+        "break",
+        "shift",
+        "stamp"
+      ]
+    },
+    {
+      "pattern": "We always ___ the shop after the shift.",
+      "example": "We always close the shop after the shift.",
+      "glossYue": "我哋收工之後一定⋯⋯舖。",
+      "answer": "close",
+      "choices": [
+        "close",
+        "open",
+        "from"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "f6-l1",
+    "hint": "I usually wake up early, and then I start my long shift."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "Mei 問你朝早點。你點答？",
+      "choices": [
+        "I usually wake up early, and then I start my long shift.",
+        "I am from Hong Kong, and not from Macau.",
+        "Excuse me."
+      ],
+      "answer": 0,
+      "explain": "usually wake up 係通常幾時起身。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "I",
+        "usually",
+        "wake",
+        "up"
+      ],
+      "answer": [
+        "I",
+        "usually",
+        "wake",
+        "up"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "ling",
+    "intro": "你同 Mei 講自己一日嘅作息。等佢講完先答，中途唔會插嘴。",
+    "turns": [
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "I usually wake up early, and then I start my long shift.",
+        "audio": "assets/audio/lines/f6-l1.mp3",
+        "audioSlow": "assets/audio/lines/f6-l1-slow.mp3",
+        "expect": "The shop is always open before our lunch.",
+        "keywords": [
+          "open",
+          "lunch"
+        ],
+        "modelAudio": "assets/audio/lines/f6-l2.mp3",
+        "modelSlow": "assets/audio/lines/f6-l2-slow.mp3"
+      },
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "I sometimes take a short break after lunch.",
+        "audio": "assets/audio/lines/f6-l3.mp3",
+        "audioSlow": "assets/audio/lines/f6-l3-slow.mp3",
+        "expect": "I never finish the whole shift before then.",
+        "keywords": [
+          "never",
+          "shift"
+        ],
+        "modelAudio": "assets/audio/lines/f6-l4.mp3",
+        "modelSlow": "assets/audio/lines/f6-l4-slow.mp3"
+      },
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "We always close the shop after the night shift.",
+        "audio": "assets/audio/lines/f6-l5.mp3",
+        "audioSlow": "assets/audio/lines/f6-l5-slow.mp3",
+        "expect": "I always close the shop after my shift.",
+        "keywords": [
+          "close",
+          "shift"
+        ],
+        "modelAudio": "assets/audio/lines/f6-m3.mp3",
+        "modelSlow": "assets/audio/lines/f6-m3-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "shift-noun",
+      "choices": [
+        "shift",
+        "lunch",
+        "start"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "usually-adv",
+      "choices": [
+        "usually",
+        "always",
+        "never"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "usually",
+      "choices": [
+        "通常",
+        "從不",
+        "郵票"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "break",
+      "choices": [
+        "小休",
+        "電話卡",
+        "包裹"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊句係講從來唔會？",
+      "choices": [
+        "I never finish the whole shift before then.",
+        "The shop is always open before our lunch.",
+        "My phone number and email are ready."
+      ],
+      "answer": 0,
+      "explain": "never 係從來唔會。"
+    }
+  ],
+  "sound": {
+    "ipa": "/ʃ/ · /tʃ/",
+    "title": "shift 同 lunch",
+    "note": "shift 開頭係 /ʃ/，舌面向後，氣由中間出。lunch 收尾係 /tʃ/，先頂住再送出。usually 入面有 /ʒ/，係 /ʃ/ 嘅有聲版。",
+    "pairs": [
+      {
+        "a": "shift-noun",
+        "b": "lunch-noun"
+      },
+      {
+        "a": "usually-adv",
+        "b": "start-verb"
+      }
+    ],
+    "drill": [
+      "shift-noun",
+      "lunch-noun",
+      "usually-adv",
+      "start-verb"
+    ]
+  },
+  "next": "J2"
+}

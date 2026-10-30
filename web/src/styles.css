@@ -451,6 +451,8 @@ a { color: inherit; }
   opacity: 0;
 }
 .art-ph.is-ready img { opacity: 1; }
+.path-node .orb .art-ph::before { content: none; }
+.path-node .orb .art-ph img { opacity: 1; }
 
 .mouths { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 8px; }
 .mouth-fig { margin: 0; }

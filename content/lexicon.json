@@ -21720,7 +21720,7 @@
       "pitfallsYue": "prescription 係醫生開嘅藥單。",
       "related": [
         "pharmacy-noun",
-        "follow-up-noun"
+        "follow-up-visit-noun"
       ],
       "examples": [
         {
@@ -21785,7 +21785,7 @@
       "pitfallsYue": "pharmacy 係配藥嘅舖。",
       "related": [
         "prescription-noun",
-        "follow-up-noun"
+        "follow-up-visit-noun"
       ],
       "examples": [
         {
@@ -21808,7 +21808,7 @@
       "id": "follow-up-noun",
       "lemma": "follow-up",
       "pos": "noun",
-      "senseId": "return-visit",
+      "senseId": "later-contact",
       "ipa": "/ˈfɑ.loʊ.ˌʌp/",
       "syllables": [
         "fol",
@@ -21824,16 +21824,16 @@
       "arpabet": "F AA1 L OW0 AH2 P",
       "audio": "assets/audio/words/follow-up-noun.mp3",
       "audioSlow": "assets/audio/words/follow-up-noun-slow.mp3",
-      "glossYue": "覆診",
-      "glossZh": "覆診",
-      "jyutping": "fuk1 can2",
+      "glossYue": "跟進",
+      "glossZh": "跟進",
+      "jyutping": "gan1 zeon3",
       "collocations": [
-        "a follow-up",
-        "the follow-up"
+        "book a follow-up",
+        "a discreet follow-up"
       ],
-      "example": "I need a follow-up after this visit.",
-      "exampleYue": "呢次之後我要覆診。",
-      "say": "I need a follow-up after this visit.",
+      "example": "I would book a follow-up after the appointment.",
+      "exampleYue": "預約之後我會再跟進一次。",
+      "say": "I would book a follow-up after the appointment.",
       "variants": [],
       "note": "",
       "sources": [
@@ -21844,28 +21844,27 @@
       "senseMismatch": false,
       "cmuLemma": "follow",
       "phrase": false,
-      "audioSha256": "6f8b68d90c6300975a59d9935ed11b1fb0752de999624fe7e01a11e5ed8ab9d1",
-      "register": "診所",
-      "usageNotes": "follow-up 係再嚟診所一次。",
-      "pitfallsYue": "follow-up 係再嚟診所一次。",
+      "audioSha256": "72b184a28fab06440135cb1b2f1098f135e6ea355deb5f1f424695936871961a",
+      "register": "珠寶",
+      "usageNotes": "follow-up 呢度係之後再跟進一次。",
+      "pitfallsYue": "呢度係跟進，唔係診所覆診。",
       "related": [
-        "pharmacy-noun",
         "appointment-noun"
       ],
       "examples": [
         {
-          "en": "I need a follow-up after this visit.",
-          "yue": "呢次之後我要覆診。",
+          "en": "I would book a follow-up after the appointment.",
+          "yue": "預約之後我會再跟進一次。",
           "audio": "assets/audio/words/follow-up-noun.mp3",
           "audioSlow": "assets/audio/words/follow-up-noun-slow.mp3",
-          "say": "I need a follow-up after this visit."
+          "say": "I would book a follow-up after the appointment."
         },
         {
-          "en": "The follow-up is next Friday morning.",
-          "yue": "覆診係下星期五朝早。",
+          "en": "Please keep the follow-up discreet and short.",
+          "yue": "跟進請保持低調同簡短。",
           "audio": "assets/audio/words/follow-up-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/follow-up-noun-ex2-slow.mp3",
-          "say": "The follow-up is next Friday morning."
+          "say": "Please keep the follow-up discreet and short."
         }
       ]
     },
@@ -27814,6 +27813,2619 @@
           "audio": "assets/audio/words/apology-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/apology-noun-ex2-slow.mp3",
           "say": "A clear update should follow this sincere apology."
+        }
+      ]
+    },
+    {
+      "id": "from-prep",
+      "lemma": "from",
+      "pos": "prep",
+      "senseId": "origin",
+      "ipa": "/ˈfɹʌm/",
+      "syllables": [
+        "from"
+      ],
+      "syllableIpa": [
+        "ˈfɹʌm"
+      ],
+      "stress": 1,
+      "arpabet": "F R AH1 M",
+      "audio": "assets/audio/words/from-prep.mp3",
+      "audioSlow": "assets/audio/words/from-prep-slow.mp3",
+      "glossYue": "來自",
+      "glossZh": "來自",
+      "jyutping": "loi4 zi6",
+      "collocations": [
+        "from Hong Kong",
+        "from Macau"
+      ],
+      "example": "I am from Hong Kong.",
+      "exampleYue": "我來自香港。",
+      "say": "I am from Hong Kong.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "from",
+      "phrase": false,
+      "audioSha256": "f0c76d0b649c23e6b96e6c54df1650cb5c8049cd64148411187f5d8ffb3de78b",
+      "register": "日常",
+      "usageNotes": "from 係講自己來自邊度。",
+      "pitfallsYue": "from 係講自己來自邊度。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I am from Hong Kong.",
+          "yue": "我來自香港。",
+          "audio": "assets/audio/words/from-prep.mp3",
+          "audioSlow": "assets/audio/words/from-prep-slow.mp3",
+          "say": "I am from Hong Kong."
+        },
+        {
+          "en": "She is from Macau, not from the shop.",
+          "yue": "佢來自澳門，唔係舖頭嗰邊。",
+          "audio": "assets/audio/words/from-prep-ex2.mp3",
+          "audioSlow": "assets/audio/words/from-prep-ex2-slow.mp3",
+          "say": "She is from Macau, not from the shop."
+        }
+      ]
+    },
+    {
+      "id": "work-verb",
+      "lemma": "work",
+      "pos": "verb",
+      "senseId": "do-a-job",
+      "ipa": "/ˈwɝk/",
+      "syllables": [
+        "work"
+      ],
+      "syllableIpa": [
+        "ˈwɝk"
+      ],
+      "stress": 1,
+      "arpabet": "W ER1 K",
+      "audio": "assets/audio/words/work-verb.mp3",
+      "audioSlow": "assets/audio/words/work-verb-slow.mp3",
+      "glossYue": "做工",
+      "glossZh": "做工",
+      "jyutping": "zou6 gung1",
+      "collocations": [
+        "work here",
+        "start work"
+      ],
+      "example": "I work here as a salesperson.",
+      "exampleYue": "我喺呢度做售貨員。",
+      "say": "I work here as a salesperson.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "work",
+      "phrase": false,
+      "audioSha256": "850f60af9e56de2e561beaeaeb3f8a009313c4128231e8468c8d185874e4ee5c",
+      "register": "日常",
+      "usageNotes": "work 係做工，唔係作品。",
+      "pitfallsYue": "work 係做工，唔係作品。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I work here as a salesperson.",
+          "yue": "我喺呢度做售貨員。",
+          "audio": "assets/audio/words/work-verb.mp3",
+          "audioSlow": "assets/audio/words/work-verb-slow.mp3",
+          "say": "I work here as a salesperson."
+        },
+        {
+          "en": "I work after lunch on this shift.",
+          "yue": "我喺呢更午餐之後先做工。",
+          "audio": "assets/audio/words/work-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/work-verb-ex2-slow.mp3",
+          "say": "I work after lunch on this shift."
+        }
+      ]
+    },
+    {
+      "id": "job-noun",
+      "lemma": "job",
+      "pos": "noun",
+      "senseId": "occupation",
+      "ipa": "/ˈdʒɑb/",
+      "syllables": [
+        "job"
+      ],
+      "syllableIpa": [
+        "ˈdʒɑb"
+      ],
+      "stress": 1,
+      "arpabet": "JH AA1 B",
+      "audio": "assets/audio/words/job-noun.mp3",
+      "audioSlow": "assets/audio/words/job-noun-slow.mp3",
+      "glossYue": "工作",
+      "glossZh": "工作",
+      "jyutping": "gung1 zok3",
+      "collocations": [
+        "my job",
+        "this job"
+      ],
+      "example": "My job is salesperson at this shop.",
+      "exampleYue": "我嘅工作係呢間舖嘅售貨員。",
+      "say": "My job is salesperson at this shop.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "job",
+      "phrase": false,
+      "audioSha256": "4ed1f0aeab62cf81096c5a0ca4d5aa1c730d745da40dc91c79d6aef411fdce1b",
+      "register": "日常",
+      "usageNotes": "job 係一份工作。",
+      "pitfallsYue": "job 係一份工作。",
+      "related": [],
+      "examples": [
+        {
+          "en": "My job is salesperson at this shop.",
+          "yue": "我嘅工作係呢間舖嘅售貨員。",
+          "audio": "assets/audio/words/job-noun.mp3",
+          "audioSlow": "assets/audio/words/job-noun-slow.mp3",
+          "say": "My job is salesperson at this shop."
+        },
+        {
+          "en": "This job starts before lunch.",
+          "yue": "呢份工喺午餐之前開始。",
+          "audio": "assets/audio/words/job-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/job-noun-ex2-slow.mp3",
+          "say": "This job starts before lunch."
+        }
+      ]
+    },
+    {
+      "id": "phone-noun",
+      "lemma": "phone",
+      "pos": "noun",
+      "senseId": "telephone",
+      "ipa": "/ˈfoʊn/",
+      "syllables": [
+        "phone"
+      ],
+      "syllableIpa": [
+        "ˈfoʊn"
+      ],
+      "stress": 1,
+      "arpabet": "F OW1 N",
+      "audio": "assets/audio/words/phone-noun.mp3",
+      "audioSlow": "assets/audio/words/phone-noun-slow.mp3",
+      "glossYue": "電話",
+      "glossZh": "電話",
+      "jyutping": "din6 waa2",
+      "collocations": [
+        "my phone",
+        "phone number"
+      ],
+      "example": "My phone number is ready for you.",
+      "exampleYue": "我嘅電話號碼準備好畀你。",
+      "say": "My phone number is ready for you.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "phone",
+      "phrase": false,
+      "audioSha256": "91f498c803a889ddbea9c8e6b29a888450b10961e48eca98477b0392c5016b37",
+      "register": "日常",
+      "usageNotes": "phone 係電話。",
+      "pitfallsYue": "phone 係電話。",
+      "related": [],
+      "examples": [
+        {
+          "en": "My phone number is ready for you.",
+          "yue": "我嘅電話號碼準備好畀你。",
+          "audio": "assets/audio/words/phone-noun.mp3",
+          "audioSlow": "assets/audio/words/phone-noun-slow.mp3",
+          "say": "My phone number is ready for you."
+        },
+        {
+          "en": "Please call my phone again slowly.",
+          "yue": "請你再慢慢打我個電話。",
+          "audio": "assets/audio/words/phone-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/phone-noun-ex2-slow.mp3",
+          "say": "Please call my phone again slowly."
+        }
+      ]
+    },
+    {
+      "id": "number-noun",
+      "lemma": "number",
+      "pos": "noun",
+      "senseId": "phone-digits",
+      "ipa": "/ˈnʌm.bɚ/",
+      "syllables": [
+        "num",
+        "ber"
+      ],
+      "syllableIpa": [
+        "ˈnʌm",
+        "bɚ"
+      ],
+      "stress": 1,
+      "arpabet": "N AH1 M B ER0",
+      "audio": "assets/audio/words/number-noun.mp3",
+      "audioSlow": "assets/audio/words/number-noun-slow.mp3",
+      "glossYue": "號碼",
+      "glossZh": "號碼",
+      "jyutping": "hou6 maa5",
+      "collocations": [
+        "phone number",
+        "tracking number"
+      ],
+      "example": "My phone number is ready for you.",
+      "exampleYue": "我嘅電話號碼準備好畀你。",
+      "say": "My phone number is ready for you.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "number",
+      "phrase": false,
+      "audioSha256": "e01d8d94c54dc7053486737cebe14807bb47bc4dd774d94303f064a6404d6c62",
+      "register": "日常",
+      "usageNotes": "number 係號碼。",
+      "pitfallsYue": "number 係號碼。",
+      "related": [],
+      "examples": [
+        {
+          "en": "My phone number is ready for you.",
+          "yue": "我嘅電話號碼準備好畀你。",
+          "audio": "assets/audio/words/number-noun.mp3",
+          "audioSlow": "assets/audio/words/number-noun-slow.mp3",
+          "say": "My phone number is ready for you."
+        },
+        {
+          "en": "Please say the number again for me.",
+          "yue": "請再同我講一次個號碼。",
+          "audio": "assets/audio/words/number-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/number-noun-ex2-slow.mp3",
+          "say": "Please say the number again for me."
+        }
+      ]
+    },
+    {
+      "id": "email-noun",
+      "lemma": "email",
+      "pos": "noun",
+      "senseId": "electronic-mail",
+      "ipa": "/i.ˈmeɪl/",
+      "syllables": [
+        "e",
+        "mail"
+      ],
+      "syllableIpa": [
+        "i",
+        "ˈmeɪl"
+      ],
+      "stress": 2,
+      "arpabet": "IY0 M EY1 L",
+      "audio": "assets/audio/words/email-noun.mp3",
+      "audioSlow": "assets/audio/words/email-noun-slow.mp3",
+      "glossYue": "電郵",
+      "glossZh": "電郵",
+      "jyutping": "din6 jau4",
+      "collocations": [
+        "my email",
+        "an email"
+      ],
+      "example": "My email is ready for the form.",
+      "exampleYue": "我嘅電郵準備好填表。",
+      "say": "My email is ready for the form.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "email",
+      "phrase": false,
+      "audioSha256": "e07ee197aac5d0127d23c5f7666a856b8caccde9e0f1b0897564b64b93630074",
+      "register": "日常",
+      "usageNotes": "email 係電郵。",
+      "pitfallsYue": "email 係電郵。",
+      "related": [],
+      "examples": [
+        {
+          "en": "My email is ready for the form.",
+          "yue": "我嘅電郵準備好填表。",
+          "audio": "assets/audio/words/email-noun.mp3",
+          "audioSlow": "assets/audio/words/email-noun-slow.mp3",
+          "say": "My email is ready for the form."
+        },
+        {
+          "en": "Please spell the email again slowly.",
+          "yue": "請再慢慢串一次個電郵。",
+          "audio": "assets/audio/words/email-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/email-noun-ex2-slow.mp3",
+          "say": "Please spell the email again slowly."
+        }
+      ]
+    },
+    {
+      "id": "spell-verb",
+      "lemma": "spell",
+      "pos": "verb",
+      "senseId": "say-letters",
+      "ipa": "/ˈspɛl/",
+      "syllables": [
+        "spell"
+      ],
+      "syllableIpa": [
+        "ˈspɛl"
+      ],
+      "stress": 1,
+      "arpabet": "S P EH1 L",
+      "audio": "assets/audio/words/spell-verb.mp3",
+      "audioSlow": "assets/audio/words/spell-verb-slow.mp3",
+      "glossYue": "串字",
+      "glossZh": "串字",
+      "jyutping": "cyun3 zi6",
+      "collocations": [
+        "spell my name",
+        "spell the email"
+      ],
+      "example": "Please spell my name again for me.",
+      "exampleYue": "請再幫我串一次我個名。",
+      "say": "Please spell my name again for me.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "spell",
+      "phrase": false,
+      "audioSha256": "7ed0b4fef11aba922c6d1eeddf941534e6c591dfcce597a192d9b52209b0934c",
+      "register": "日常",
+      "usageNotes": "spell 係將個名一個字母一個字母講出嚟。",
+      "pitfallsYue": "spell 係將個名一個字母一個字母講出嚟。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Please spell my name again for me.",
+          "yue": "請再幫我串一次我個名。",
+          "audio": "assets/audio/words/spell-verb.mp3",
+          "audioSlow": "assets/audio/words/spell-verb-slow.mp3",
+          "say": "Please spell my name again for me."
+        },
+        {
+          "en": "Please spell the email slowly for me.",
+          "yue": "請慢慢同我串個電郵。",
+          "audio": "assets/audio/words/spell-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/spell-verb-ex2-slow.mp3",
+          "say": "Please spell the email slowly for me."
+        }
+      ]
+    },
+    {
+      "id": "salesperson-noun",
+      "lemma": "salesperson",
+      "pos": "noun",
+      "senseId": "shop-staff",
+      "ipa": "/ˈseɪlz.ˌpɝ.sən/",
+      "syllables": [
+        "sales",
+        "per",
+        "son"
+      ],
+      "syllableIpa": [
+        "ˈseɪlz",
+        "ˌpɝ",
+        "sən"
+      ],
+      "stress": 1,
+      "arpabet": "S EY1 L Z P ER2 S AH0 N",
+      "audio": "assets/audio/words/salesperson-noun.mp3",
+      "audioSlow": "assets/audio/words/salesperson-noun-slow.mp3",
+      "glossYue": "售貨員",
+      "glossZh": "售貨員",
+      "jyutping": "sau6 fo3 jyun4",
+      "collocations": [
+        "a salesperson",
+        "the salesperson"
+      ],
+      "example": "I work here as a salesperson.",
+      "exampleYue": "我喺呢度做售貨員。",
+      "say": "I work here as a salesperson.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "salesperson",
+      "phrase": false,
+      "audioSha256": "acd115137f741b8a99848497ecdae6ee616c99643683a379aba0e5a4f3ef4edb",
+      "register": "日常",
+      "usageNotes": "salesperson 係售貨員。",
+      "pitfallsYue": "salesperson 係售貨員。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I work here as a salesperson.",
+          "yue": "我喺呢度做售貨員。",
+          "audio": "assets/audio/words/salesperson-noun.mp3",
+          "audioSlow": "assets/audio/words/salesperson-noun-slow.mp3",
+          "say": "I work here as a salesperson."
+        },
+        {
+          "en": "The salesperson can spell a name slowly.",
+          "yue": "售貨員可以慢慢串個名。",
+          "audio": "assets/audio/words/salesperson-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/salesperson-noun-ex2-slow.mp3",
+          "say": "The salesperson can spell a name slowly."
+        }
+      ]
+    },
+    {
+      "id": "tourist-noun",
+      "lemma": "tourist",
+      "pos": "noun",
+      "senseId": "visitor",
+      "ipa": "/ˈtʊ.ɹəst/",
+      "syllables": [
+        "tour",
+        "ist"
+      ],
+      "syllableIpa": [
+        "ˈtʊ",
+        "ɹəst"
+      ],
+      "stress": 1,
+      "arpabet": "T UH1 R AH0 S T",
+      "audio": "assets/audio/words/tourist-noun.mp3",
+      "audioSlow": "assets/audio/words/tourist-noun-slow.mp3",
+      "glossYue": "遊客",
+      "glossZh": "遊客",
+      "jyutping": "jau4 haak3",
+      "collocations": [
+        "a tourist",
+        "the tourist"
+      ],
+      "example": "A tourist can spell a name slowly.",
+      "exampleYue": "遊客可以慢慢串個名。",
+      "say": "A tourist can spell a name slowly.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "tourist",
+      "phrase": false,
+      "audioSha256": "ae4ee0ce12479c6d9b43857e80f5268165caed8c834854b95205fa764e211ed7",
+      "register": "日常",
+      "usageNotes": "tourist 係遊客。",
+      "pitfallsYue": "tourist 係遊客。",
+      "related": [],
+      "examples": [
+        {
+          "en": "A tourist can spell a name slowly.",
+          "yue": "遊客可以慢慢串個名。",
+          "audio": "assets/audio/words/tourist-noun.mp3",
+          "audioSlow": "assets/audio/words/tourist-noun-slow.mp3",
+          "say": "A tourist can spell a name slowly."
+        },
+        {
+          "en": "The tourist is from Hong Kong.",
+          "yue": "呢位遊客來自香港。",
+          "audio": "assets/audio/words/tourist-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/tourist-noun-ex2-slow.mp3",
+          "say": "The tourist is from Hong Kong."
+        }
+      ]
+    },
+    {
+      "id": "macau-noun",
+      "lemma": "Macau",
+      "pos": "noun",
+      "senseId": "city-macau",
+      "ipa": "/mə.ˈkaʊ/",
+      "syllables": [
+        "Ma",
+        "cau"
+      ],
+      "syllableIpa": [
+        "mə",
+        "ˈkaʊ"
+      ],
+      "stress": 2,
+      "arpabet": "M AH0 K AW1",
+      "audio": "assets/audio/words/macau-noun.mp3",
+      "audioSlow": "assets/audio/words/macau-noun-slow.mp3",
+      "glossYue": "澳門",
+      "glossZh": "澳門",
+      "jyutping": "ou3 mun4",
+      "collocations": [
+        "in Macau",
+        "from Macau"
+      ],
+      "example": "I live in Macau with my family.",
+      "exampleYue": "我同屋企人住喺澳門。",
+      "say": "I live in Macau with my family.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "macau",
+      "phrase": false,
+      "audioSha256": "441e098a5cc553496f458394c011663c26ff16135d87ac0a06e2046f6f13088e",
+      "register": "日常",
+      "usageNotes": "Macau 係澳門。",
+      "pitfallsYue": "Macau 係澳門。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I live in Macau with my family.",
+          "yue": "我同屋企人住喺澳門。",
+          "audio": "assets/audio/words/macau-noun.mp3",
+          "audioSlow": "assets/audio/words/macau-noun-slow.mp3",
+          "say": "I live in Macau with my family."
+        },
+        {
+          "en": "She is from Macau, not from the shop.",
+          "yue": "佢來自澳門，唔係舖頭嗰邊。",
+          "audio": "assets/audio/words/macau-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/macau-noun-ex2-slow.mp3",
+          "say": "She is from Macau, not from the shop."
+        }
+      ]
+    },
+    {
+      "id": "hong-kong-noun",
+      "lemma": "Hong Kong",
+      "pos": "noun",
+      "senseId": "city-hong-kong",
+      "ipa": "/ˈhɔŋ ˈkɔŋ/",
+      "syllables": [
+        "Hong",
+        "Kong"
+      ],
+      "syllableIpa": [
+        "ˈhɔŋ",
+        "ˈkɔŋ"
+      ],
+      "stress": 1,
+      "arpabet": "HH AO1 NG K AO1 NG",
+      "audio": "assets/audio/words/hong-kong-noun.mp3",
+      "audioSlow": "assets/audio/words/hong-kong-noun-slow.mp3",
+      "glossYue": "香港",
+      "glossZh": "香港",
+      "jyutping": "hoeng1 gong2",
+      "collocations": [
+        "from Hong Kong",
+        "in Hong Kong"
+      ],
+      "example": "I am from Hong Kong, not from Macau.",
+      "exampleYue": "我來自香港，唔係來自澳門。",
+      "say": "I am from Hong Kong, not from Macau.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "hong kong",
+      "phrase": true,
+      "audioSha256": "1e37ec453e153fb2950ec5ff8fd0aa2bde6d229bb8dc0d96e5d5710f1ff1beb1",
+      "register": "日常",
+      "usageNotes": "Hong Kong 係香港。",
+      "pitfallsYue": "Hong Kong 係香港。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I am from Hong Kong, not from Macau.",
+          "yue": "我來自香港，唔係來自澳門。",
+          "audio": "assets/audio/words/hong-kong-noun.mp3",
+          "audioSlow": "assets/audio/words/hong-kong-noun-slow.mp3",
+          "say": "I am from Hong Kong, not from Macau."
+        },
+        {
+          "en": "A tourist from Hong Kong needs a phone.",
+          "yue": "一位香港遊客需要一部電話。",
+          "audio": "assets/audio/words/hong-kong-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/hong-kong-noun-ex2-slow.mp3",
+          "say": "A tourist from Hong Kong needs a phone."
+        }
+      ]
+    },
+    {
+      "id": "wake-up-verb",
+      "lemma": "wake up",
+      "pos": "verb",
+      "senseId": "rise-from-sleep",
+      "ipa": "/ˈweɪ.ˌkʌp/",
+      "syllables": [
+        "wake",
+        "up"
+      ],
+      "syllableIpa": [
+        "ˈweɪ",
+        "ˌkʌp"
+      ],
+      "stress": 1,
+      "arpabet": "W EY1 K AH2 P",
+      "audio": "assets/audio/words/wake-up-verb.mp3",
+      "audioSlow": "assets/audio/words/wake-up-verb-slow.mp3",
+      "glossYue": "起身",
+      "glossZh": "起身",
+      "jyutping": "hei2 san1",
+      "collocations": [
+        "wake up early",
+        "wake up before work"
+      ],
+      "example": "I wake up before my long shift.",
+      "exampleYue": "我喺長更之前起身。",
+      "say": "I wake up before my long shift.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "wake",
+      "phrase": true,
+      "audioSha256": "f604a20c9d22f425c7a71e01434ecf2444c0e2ab9c1d8bfa25f92b2a377070b5",
+      "register": "日常",
+      "usageNotes": "wake up 係起身。",
+      "pitfallsYue": "wake up 係起身。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I wake up before my long shift.",
+          "yue": "我喺長更之前起身。",
+          "audio": "assets/audio/words/wake-up-verb.mp3",
+          "audioSlow": "assets/audio/words/wake-up-verb-slow.mp3",
+          "say": "I wake up before my long shift."
+        },
+        {
+          "en": "I wake up early and then I start work.",
+          "yue": "我早起身，然後先開工。",
+          "audio": "assets/audio/words/wake-up-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/wake-up-verb-ex2-slow.mp3",
+          "say": "I wake up early and then I start work."
+        }
+      ]
+    },
+    {
+      "id": "start-verb",
+      "lemma": "start",
+      "pos": "verb",
+      "senseId": "begin",
+      "ipa": "/ˈstɑɹt/",
+      "syllables": [
+        "start"
+      ],
+      "syllableIpa": [
+        "ˈstɑɹt"
+      ],
+      "stress": 1,
+      "arpabet": "S T AA1 R T",
+      "audio": "assets/audio/words/start-verb.mp3",
+      "audioSlow": "assets/audio/words/start-verb-slow.mp3",
+      "glossYue": "開始",
+      "glossZh": "開始",
+      "jyutping": "hoi1 ci2",
+      "collocations": [
+        "start work",
+        "start my shift"
+      ],
+      "example": "I start my shift after I wake up.",
+      "exampleYue": "我起身之後就開始返工。",
+      "say": "I start my shift after I wake up.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "start",
+      "phrase": false,
+      "audioSha256": "0700ef0f4551a07aac063506415186eb8f485ed8c52403a45112302c5c1411a4",
+      "register": "日常",
+      "usageNotes": "start 係開始。",
+      "pitfallsYue": "start 係開始。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I start my shift after I wake up.",
+          "yue": "我起身之後就開始返工。",
+          "audio": "assets/audio/words/start-verb.mp3",
+          "audioSlow": "assets/audio/words/start-verb-slow.mp3",
+          "say": "I start my shift after I wake up."
+        },
+        {
+          "en": "We start lunch after the break.",
+          "yue": "小休之後我哋先開始食午餐。",
+          "audio": "assets/audio/words/start-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/start-verb-ex2-slow.mp3",
+          "say": "We start lunch after the break."
+        }
+      ]
+    },
+    {
+      "id": "finish-verb",
+      "lemma": "finish",
+      "pos": "verb",
+      "senseId": "end-task",
+      "ipa": "/ˈfɪ.nɪʃ/",
+      "syllables": [
+        "fin",
+        "ish"
+      ],
+      "syllableIpa": [
+        "ˈfɪ",
+        "nɪʃ"
+      ],
+      "stress": 1,
+      "arpabet": "F IH1 N IH0 SH",
+      "audio": "assets/audio/words/finish-verb.mp3",
+      "audioSlow": "assets/audio/words/finish-verb-slow.mp3",
+      "glossYue": "做完",
+      "glossZh": "做完",
+      "jyutping": "zou6 jyun4",
+      "collocations": [
+        "finish the shift",
+        "finish work"
+      ],
+      "example": "I finish the shift after lunch.",
+      "exampleYue": "我午餐之後先做完呢更。",
+      "say": "I finish the shift after lunch.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "finish",
+      "phrase": false,
+      "audioSha256": "93181ae2a2f9f2cc579951336451a28465a556eb03d0b4c073d152037a0b0e4e",
+      "register": "日常",
+      "usageNotes": "finish 係做完。",
+      "pitfallsYue": "finish 係做完。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I finish the shift after lunch.",
+          "yue": "我午餐之後先做完呢更。",
+          "audio": "assets/audio/words/finish-verb.mp3",
+          "audioSlow": "assets/audio/words/finish-verb-slow.mp3",
+          "say": "I finish the shift after lunch."
+        },
+        {
+          "en": "We finish work before we close.",
+          "yue": "我哋關門之前先做完工。",
+          "audio": "assets/audio/words/finish-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/finish-verb-ex2-slow.mp3",
+          "say": "We finish work before we close."
+        }
+      ]
+    },
+    {
+      "id": "lunch-noun",
+      "lemma": "lunch",
+      "pos": "noun",
+      "senseId": "midday-meal",
+      "ipa": "/ˈlʌntʃ/",
+      "syllables": [
+        "lunch"
+      ],
+      "syllableIpa": [
+        "ˈlʌntʃ"
+      ],
+      "stress": 1,
+      "arpabet": "L AH1 N CH",
+      "audio": "assets/audio/words/lunch-noun.mp3",
+      "audioSlow": "assets/audio/words/lunch-noun-slow.mp3",
+      "glossYue": "午餐",
+      "glossZh": "午餐",
+      "jyutping": "ng5 caan1",
+      "collocations": [
+        "after lunch",
+        "before lunch"
+      ],
+      "example": "The shop is open before our lunch.",
+      "exampleYue": "舖頭喺我哋午餐之前開門。",
+      "say": "The shop is open before our lunch.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "lunch",
+      "phrase": false,
+      "audioSha256": "dba08c00c92bd423182b0f03a621ab13d6bda0116b239cca51b6766ec9d284ab",
+      "register": "日常",
+      "usageNotes": "lunch 係午餐。",
+      "pitfallsYue": "lunch 係午餐。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The shop is open before our lunch.",
+          "yue": "舖頭喺我哋午餐之前開門。",
+          "audio": "assets/audio/words/lunch-noun.mp3",
+          "audioSlow": "assets/audio/words/lunch-noun-slow.mp3",
+          "say": "The shop is open before our lunch."
+        },
+        {
+          "en": "I take a break after lunch.",
+          "yue": "我午餐之後先小休。",
+          "audio": "assets/audio/words/lunch-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/lunch-noun-ex2-slow.mp3",
+          "say": "I take a break after lunch."
+        }
+      ]
+    },
+    {
+      "id": "break-noun",
+      "lemma": "break",
+      "pos": "noun",
+      "senseId": "rest-pause",
+      "ipa": "/ˈbɹeɪk/",
+      "syllables": [
+        "break"
+      ],
+      "syllableIpa": [
+        "ˈbɹeɪk"
+      ],
+      "stress": 1,
+      "arpabet": "B R EY1 K",
+      "audio": "assets/audio/words/break-noun.mp3",
+      "audioSlow": "assets/audio/words/break-noun-slow.mp3",
+      "glossYue": "小休",
+      "glossZh": "小休",
+      "jyutping": "siu2 jau1",
+      "collocations": [
+        "a short break",
+        "take a break"
+      ],
+      "example": "I take a break after lunch.",
+      "exampleYue": "我午餐之後先小休。",
+      "say": "I take a break after lunch.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "break",
+      "phrase": false,
+      "audioSha256": "869f2461843a7632111ed20199135399687ed17ef3791ffe6795645474c0ed06",
+      "register": "日常",
+      "usageNotes": "break 呢度係小休。",
+      "pitfallsYue": "break 呢度係小休。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I take a break after lunch.",
+          "yue": "我午餐之後先小休。",
+          "audio": "assets/audio/words/break-noun.mp3",
+          "audioSlow": "assets/audio/words/break-noun-slow.mp3",
+          "say": "I take a break after lunch."
+        },
+        {
+          "en": "A short break comes before we close.",
+          "yue": "短暫小休喺我哋關門之前。",
+          "audio": "assets/audio/words/break-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/break-noun-ex2-slow.mp3",
+          "say": "A short break comes before we close."
+        }
+      ]
+    },
+    {
+      "id": "open-verb",
+      "lemma": "open",
+      "pos": "verb",
+      "senseId": "not-shut",
+      "ipa": "/ˈoʊ.pən/",
+      "syllables": [
+        "o",
+        "pen"
+      ],
+      "syllableIpa": [
+        "ˈoʊ",
+        "pən"
+      ],
+      "stress": 1,
+      "arpabet": "OW1 P AH0 N",
+      "audio": "assets/audio/words/open-verb.mp3",
+      "audioSlow": "assets/audio/words/open-verb-slow.mp3",
+      "glossYue": "打開；開門",
+      "glossZh": "打開",
+      "jyutping": "daa2 hoi1",
+      "collocations": [
+        "open the shop",
+        "is open"
+      ],
+      "example": "We open the shop before lunch.",
+      "exampleYue": "我哋午餐之前開門。",
+      "say": "We open the shop before lunch.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "open",
+      "phrase": false,
+      "audioSha256": "0861f893ae60989fe8a2eec3a2d7fac34ccaaaadb004267b69370d5667e66228",
+      "register": "日常",
+      "usageNotes": "open 係開門或者打開。",
+      "pitfallsYue": "open 係開門或者打開。",
+      "related": [],
+      "examples": [
+        {
+          "en": "We open the shop before lunch.",
+          "yue": "我哋午餐之前開門。",
+          "audio": "assets/audio/words/open-verb.mp3",
+          "audioSlow": "assets/audio/words/open-verb-slow.mp3",
+          "say": "We open the shop before lunch."
+        },
+        {
+          "en": "We open after I wake up.",
+          "yue": "我起身之後我哋就開門。",
+          "audio": "assets/audio/words/open-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/open-verb-ex2-slow.mp3",
+          "say": "We open after I wake up."
+        }
+      ]
+    },
+    {
+      "id": "shift-noun",
+      "lemma": "shift",
+      "pos": "noun",
+      "senseId": "work-period",
+      "ipa": "/ˈʃɪft/",
+      "syllables": [
+        "shift"
+      ],
+      "syllableIpa": [
+        "ˈʃɪft"
+      ],
+      "stress": 1,
+      "arpabet": "SH IH1 F T",
+      "audio": "assets/audio/words/shift-noun.mp3",
+      "audioSlow": "assets/audio/words/shift-noun-slow.mp3",
+      "glossYue": "更",
+      "glossZh": "更",
+      "jyutping": "gang1",
+      "collocations": [
+        "my shift",
+        "night shift"
+      ],
+      "example": "I start my shift after lunch.",
+      "exampleYue": "我午餐之後開始呢一更。",
+      "say": "I start my shift after lunch.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "shift",
+      "phrase": false,
+      "audioSha256": "31acc7aab4a44fb56115b2ffa604bf4557997bf2a21d308f3ac22c61ffc46f5c",
+      "register": "日常",
+      "usageNotes": "shift 係一更工。",
+      "pitfallsYue": "shift 係一更工。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I start my shift after lunch.",
+          "yue": "我午餐之後開始呢一更。",
+          "audio": "assets/audio/words/shift-noun.mp3",
+          "audioSlow": "assets/audio/words/shift-noun-slow.mp3",
+          "say": "I start my shift after lunch."
+        },
+        {
+          "en": "I never finish the shift before lunch.",
+          "yue": "我從來唔會喺午餐之前做完呢更。",
+          "audio": "assets/audio/words/shift-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/shift-noun-ex2-slow.mp3",
+          "say": "I never finish the shift before lunch."
+        }
+      ]
+    },
+    {
+      "id": "usually-adv",
+      "lemma": "usually",
+      "pos": "adv",
+      "senseId": "most-times",
+      "ipa": "/ˈju.ʒə.wə.li/",
+      "syllables": [
+        "yu",
+        "zha",
+        "wa",
+        "ly"
+      ],
+      "syllableIpa": [
+        "ˈju",
+        "ʒə",
+        "wə",
+        "li"
+      ],
+      "stress": 1,
+      "arpabet": "Y UW1 ZH AH0 W AH0 L IY0",
+      "audio": "assets/audio/words/usually-adv.mp3",
+      "audioSlow": "assets/audio/words/usually-adv-slow.mp3",
+      "glossYue": "通常",
+      "glossZh": "通常",
+      "jyutping": "tung1 soeng4",
+      "collocations": [
+        "usually wake up",
+        "I usually start"
+      ],
+      "example": "I usually wake up before my shift.",
+      "exampleYue": "我通常喺返工之前起身。",
+      "say": "I usually wake up before my shift.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "usually",
+      "phrase": false,
+      "audioSha256": "7bd522be9f116e9aec6447121aebdc1059ff5149371c11596ada838cd5261818",
+      "register": "日常",
+      "usageNotes": "usually 係通常。",
+      "pitfallsYue": "usually 係通常。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I usually wake up before my shift.",
+          "yue": "我通常喺返工之前起身。",
+          "audio": "assets/audio/words/usually-adv.mp3",
+          "audioSlow": "assets/audio/words/usually-adv-slow.mp3",
+          "say": "I usually wake up before my shift."
+        },
+        {
+          "en": "I usually start work after a break.",
+          "yue": "我通常小休之後先開工。",
+          "audio": "assets/audio/words/usually-adv-ex2.mp3",
+          "audioSlow": "assets/audio/words/usually-adv-ex2-slow.mp3",
+          "say": "I usually start work after a break."
+        }
+      ]
+    },
+    {
+      "id": "always-adv",
+      "lemma": "always",
+      "pos": "adv",
+      "senseId": "every-time",
+      "ipa": "/ˈɔl.ˌweɪz/",
+      "syllables": [
+        "al",
+        "ways"
+      ],
+      "syllableIpa": [
+        "ˈɔl",
+        "ˌweɪz"
+      ],
+      "stress": 1,
+      "arpabet": "AO1 L W EY2 Z",
+      "audio": "assets/audio/words/always-adv.mp3",
+      "audioSlow": "assets/audio/words/always-adv-slow.mp3",
+      "glossYue": "每次；一定",
+      "glossZh": "每次",
+      "jyutping": "mui5 ci3",
+      "collocations": [
+        "always open",
+        "always close"
+      ],
+      "example": "The shop is always open before lunch.",
+      "exampleYue": "舖頭午餐之前一定開門。",
+      "say": "The shop is always open before lunch.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "always",
+      "phrase": false,
+      "audioSha256": "d638626a334d365a38da484392f0ac221f1e2eaf5d5080dc4255ed99e3956002",
+      "register": "日常",
+      "usageNotes": "always 係每次都係。",
+      "pitfallsYue": "always 係每次都係。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The shop is always open before lunch.",
+          "yue": "舖頭午餐之前一定開門。",
+          "audio": "assets/audio/words/always-adv.mp3",
+          "audioSlow": "assets/audio/words/always-adv-slow.mp3",
+          "say": "The shop is always open before lunch."
+        },
+        {
+          "en": "We always close after the shift.",
+          "yue": "我哋每次收工之後都關門。",
+          "audio": "assets/audio/words/always-adv-ex2.mp3",
+          "audioSlow": "assets/audio/words/always-adv-ex2-slow.mp3",
+          "say": "We always close after the shift."
+        }
+      ]
+    },
+    {
+      "id": "sometimes-adv",
+      "lemma": "sometimes",
+      "pos": "adv",
+      "senseId": "some-times",
+      "ipa": "/səm.ˈtaɪmz/",
+      "syllables": [
+        "some",
+        "times"
+      ],
+      "syllableIpa": [
+        "səm",
+        "ˈtaɪmz"
+      ],
+      "stress": 2,
+      "arpabet": "S AH0 M T AY1 M Z",
+      "audio": "assets/audio/words/sometimes-adv.mp3",
+      "audioSlow": "assets/audio/words/sometimes-adv-slow.mp3",
+      "glossYue": "有時",
+      "glossZh": "有時",
+      "jyutping": "jau5 si4",
+      "collocations": [
+        "sometimes take a break",
+        "I sometimes finish"
+      ],
+      "example": "I sometimes take a break after lunch.",
+      "exampleYue": "我有時午餐之後先小休。",
+      "say": "I sometimes take a break after lunch.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "sometimes",
+      "phrase": false,
+      "audioSha256": "77f444da8d59bf110143efd6164c7e38ed03d8460a3a555c51294a1ca09f584d",
+      "register": "日常",
+      "usageNotes": "sometimes 係有時。",
+      "pitfallsYue": "sometimes 係有時。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I sometimes take a break after lunch.",
+          "yue": "我有時午餐之後先小休。",
+          "audio": "assets/audio/words/sometimes-adv.mp3",
+          "audioSlow": "assets/audio/words/sometimes-adv-slow.mp3",
+          "say": "I sometimes take a break after lunch."
+        },
+        {
+          "en": "I sometimes finish early before we close.",
+          "yue": "我有時喺關門之前早啲做完。",
+          "audio": "assets/audio/words/sometimes-adv-ex2.mp3",
+          "audioSlow": "assets/audio/words/sometimes-adv-ex2-slow.mp3",
+          "say": "I sometimes finish early before we close."
+        }
+      ]
+    },
+    {
+      "id": "never-adv",
+      "lemma": "never",
+      "pos": "adv",
+      "senseId": "not-ever",
+      "ipa": "/ˈnɛ.vɚ/",
+      "syllables": [
+        "nev",
+        "er"
+      ],
+      "syllableIpa": [
+        "ˈnɛ",
+        "vɚ"
+      ],
+      "stress": 1,
+      "arpabet": "N EH1 V ER0",
+      "audio": "assets/audio/words/never-adv.mp3",
+      "audioSlow": "assets/audio/words/never-adv-slow.mp3",
+      "glossYue": "從不",
+      "glossZh": "从不",
+      "jyutping": "cung4 bat1",
+      "collocations": [
+        "I never finish",
+        "never close"
+      ],
+      "example": "I never finish the shift before lunch.",
+      "exampleYue": "我從來唔會喺午餐之前做完呢更。",
+      "say": "I never finish the shift before lunch.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "never",
+      "phrase": false,
+      "audioSha256": "e9325a21f4cd5571fff86d7cee46f400f68d7187562ebc709fe249dc27ee5351",
+      "register": "日常",
+      "usageNotes": "never 係從來唔會。",
+      "pitfallsYue": "never 係從來唔會。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I never finish the shift before lunch.",
+          "yue": "我從來唔會喺午餐之前做完呢更。",
+          "audio": "assets/audio/words/never-adv.mp3",
+          "audioSlow": "assets/audio/words/never-adv-slow.mp3",
+          "say": "I never finish the shift before lunch."
+        },
+        {
+          "en": "I never close the shop before the shift ends.",
+          "yue": "我從來唔會喺收工之前關門。",
+          "audio": "assets/audio/words/never-adv-ex2.mp3",
+          "audioSlow": "assets/audio/words/never-adv-ex2-slow.mp3",
+          "say": "I never close the shop before the shift ends."
+        }
+      ]
+    },
+    {
+      "id": "before-prep",
+      "lemma": "before",
+      "pos": "prep",
+      "senseId": "earlier-than",
+      "ipa": "/bɪ.ˈfɔɹ/",
+      "syllables": [
+        "be",
+        "fore"
+      ],
+      "syllableIpa": [
+        "bɪ",
+        "ˈfɔɹ"
+      ],
+      "stress": 2,
+      "arpabet": "B IH0 F AO1 R",
+      "audio": "assets/audio/words/before-prep.mp3",
+      "audioSlow": "assets/audio/words/before-prep-slow.mp3",
+      "glossYue": "之前",
+      "glossZh": "之前",
+      "jyutping": "zi1 cin4",
+      "collocations": [
+        "before lunch",
+        "before my shift"
+      ],
+      "example": "I wake up before my shift starts.",
+      "exampleYue": "我喺返工之前起身。",
+      "say": "I wake up before my shift starts.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "before",
+      "phrase": false,
+      "audioSha256": "b661ddca4da7c8471ba7ec257464df88957ee77d1fcc29067356eed6358b4f21",
+      "register": "日常",
+      "usageNotes": "before 係之前。",
+      "pitfallsYue": "before 係之前。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I wake up before my shift starts.",
+          "yue": "我喺返工之前起身。",
+          "audio": "assets/audio/words/before-prep.mp3",
+          "audioSlow": "assets/audio/words/before-prep-slow.mp3",
+          "say": "I wake up before my shift starts."
+        },
+        {
+          "en": "We open before lunch on this shift.",
+          "yue": "我哋喺呢更午餐之前開門。",
+          "audio": "assets/audio/words/before-prep-ex2.mp3",
+          "audioSlow": "assets/audio/words/before-prep-ex2-slow.mp3",
+          "say": "We open before lunch on this shift."
+        }
+      ]
+    },
+    {
+      "id": "after-prep",
+      "lemma": "after",
+      "pos": "prep",
+      "senseId": "later-than",
+      "ipa": "/ˈæf.tɚ/",
+      "syllables": [
+        "af",
+        "ter"
+      ],
+      "syllableIpa": [
+        "ˈæf",
+        "tɚ"
+      ],
+      "stress": 1,
+      "arpabet": "AE1 F T ER0",
+      "audio": "assets/audio/words/after-prep.mp3",
+      "audioSlow": "assets/audio/words/after-prep-slow.mp3",
+      "glossYue": "之後",
+      "glossZh": "之後",
+      "jyutping": "zi1 hau6",
+      "collocations": [
+        "after lunch",
+        "after the shift"
+      ],
+      "example": "I take a break after lunch.",
+      "exampleYue": "我午餐之後先小休。",
+      "say": "I take a break after lunch.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "after",
+      "phrase": false,
+      "audioSha256": "9cde0429b9a6aa29d04527d58be307e27ed8023ac08549a1b0aa33abb02e49d2",
+      "register": "日常",
+      "usageNotes": "after 係之後。",
+      "pitfallsYue": "after 係之後。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I take a break after lunch.",
+          "yue": "我午餐之後先小休。",
+          "audio": "assets/audio/words/after-prep.mp3",
+          "audioSlow": "assets/audio/words/after-prep-slow.mp3",
+          "say": "I take a break after lunch."
+        },
+        {
+          "en": "We close the shop after the shift.",
+          "yue": "我哋收工之後關門。",
+          "audio": "assets/audio/words/after-prep-ex2.mp3",
+          "audioSlow": "assets/audio/words/after-prep-ex2-slow.mp3",
+          "say": "We close the shop after the shift."
+        }
+      ]
+    },
+    {
+      "id": "then-adv",
+      "lemma": "then",
+      "pos": "adv",
+      "senseId": "after-that",
+      "ipa": "/ˈðɛn/",
+      "syllables": [
+        "then"
+      ],
+      "syllableIpa": [
+        "ˈðɛn"
+      ],
+      "stress": 1,
+      "arpabet": "DH EH1 N",
+      "audio": "assets/audio/words/then-adv.mp3",
+      "audioSlow": "assets/audio/words/then-adv-slow.mp3",
+      "glossYue": "然後",
+      "glossZh": "然後",
+      "jyutping": "jin4 hau6",
+      "collocations": [
+        "and then",
+        "before then"
+      ],
+      "example": "I wake up, and then I start work.",
+      "exampleYue": "我起身，然後先開工。",
+      "say": "I wake up, and then I start work.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "then",
+      "phrase": false,
+      "audioSha256": "08e374c97d424d424168897b677744ff237837bb861fd11b503856b645885087",
+      "register": "日常",
+      "usageNotes": "then 係然後。",
+      "pitfallsYue": "then 係然後。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I wake up, and then I start work.",
+          "yue": "我起身，然後先開工。",
+          "audio": "assets/audio/words/then-adv.mp3",
+          "audioSlow": "assets/audio/words/then-adv-slow.mp3",
+          "say": "I wake up, and then I start work."
+        },
+        {
+          "en": "We take a break, and then we close.",
+          "yue": "我哋小休，然後先關門。",
+          "audio": "assets/audio/words/then-adv-ex2.mp3",
+          "audioSlow": "assets/audio/words/then-adv-ex2-slow.mp3",
+          "say": "We take a break, and then we close."
+        }
+      ]
+    },
+    {
+      "id": "sim-noun",
+      "lemma": "SIM",
+      "pos": "noun",
+      "senseId": "sim-card",
+      "ipa": "/ˈsɪm/",
+      "syllables": [
+        "SIM"
+      ],
+      "syllableIpa": [
+        "ˈsɪm"
+      ],
+      "stress": 1,
+      "arpabet": "S IH1 M",
+      "audio": "assets/audio/words/sim-noun.mp3",
+      "audioSlow": "assets/audio/words/sim-noun-slow.mp3",
+      "glossYue": "電話卡",
+      "glossZh": "電話卡",
+      "jyutping": "din6 waa2 kaat1",
+      "collocations": [
+        "a SIM card",
+        "activate the SIM"
+      ],
+      "example": "I need a SIM card for my phone.",
+      "exampleYue": "我需要一張電話卡。",
+      "say": "I need a SIM card for my phone.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "sim",
+      "phrase": false,
+      "audioSha256": "5a4c6224680b5900f622c8893b6abc0c6105276146c0810b73c5b7de922617d1",
+      "register": "電話舖",
+      "usageNotes": "SIM 係電話卡。",
+      "pitfallsYue": "SIM 係電話卡。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I need a SIM card for my phone.",
+          "yue": "我需要一張電話卡。",
+          "audio": "assets/audio/words/sim-noun.mp3",
+          "audioSlow": "assets/audio/words/sim-noun-slow.mp3",
+          "say": "I need a SIM card for my phone."
+        },
+        {
+          "en": "Please activate the SIM with my passport.",
+          "yue": "請用我本護照開通呢張電話卡。",
+          "audio": "assets/audio/words/sim-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/sim-noun-ex2-slow.mp3",
+          "say": "Please activate the SIM with my passport."
+        }
+      ]
+    },
+    {
+      "id": "top-up-noun",
+      "lemma": "top-up",
+      "pos": "noun",
+      "senseId": "credit-reload",
+      "ipa": "/ˈtɑ.ˌpʌp/",
+      "syllables": [
+        "top",
+        "up"
+      ],
+      "syllableIpa": [
+        "ˈtɑ",
+        "ˌpʌp"
+      ],
+      "stress": 1,
+      "arpabet": "T AA1 P AH2 P",
+      "audio": "assets/audio/words/top-up-noun.mp3",
+      "audioSlow": "assets/audio/words/top-up-noun-slow.mp3",
+      "glossYue": "增值",
+      "glossZh": "增值",
+      "jyutping": "zang1 zik6",
+      "collocations": [
+        "a top-up",
+        "buy a top-up"
+      ],
+      "example": "A small top-up is enough for my data.",
+      "exampleYue": "少少增值就夠我用數據。",
+      "say": "A small top-up is enough for my data.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "top",
+      "phrase": true,
+      "audioSha256": "2ea17595c09e6266cbf0539f772a1bc8bff6530af61980b0ca9035f5d6d60f00",
+      "register": "電話舖",
+      "usageNotes": "top-up 係畀電話卡增值。",
+      "pitfallsYue": "top-up 係畀電話卡增值。",
+      "related": [],
+      "examples": [
+        {
+          "en": "A small top-up is enough for my data.",
+          "yue": "少少增值就夠我用數據。",
+          "audio": "assets/audio/words/top-up-noun.mp3",
+          "audioSlow": "assets/audio/words/top-up-noun-slow.mp3",
+          "say": "A small top-up is enough for my data."
+        },
+        {
+          "en": "I will buy a top-up after this plan.",
+          "yue": "呢個計劃之後我會買增值。",
+          "audio": "assets/audio/words/top-up-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/top-up-noun-ex2-slow.mp3",
+          "say": "I will buy a top-up after this plan."
+        }
+      ]
+    },
+    {
+      "id": "data-noun",
+      "lemma": "data",
+      "pos": "noun",
+      "senseId": "mobile-data",
+      "ipa": "/ˈdeɪ.tə/",
+      "syllables": [
+        "da",
+        "ta"
+      ],
+      "syllableIpa": [
+        "ˈdeɪ",
+        "tə"
+      ],
+      "stress": 1,
+      "arpabet": "D EY1 T AH0",
+      "audio": "assets/audio/words/data-noun.mp3",
+      "audioSlow": "assets/audio/words/data-noun-slow.mp3",
+      "glossYue": "數據",
+      "glossZh": "數據",
+      "jyutping": "sou3 geoi3",
+      "collocations": [
+        "data plan",
+        "my data"
+      ],
+      "example": "This data plan is enough for a short trip.",
+      "exampleYue": "呢個數據計劃夠一次短途用。",
+      "say": "This data plan is enough for a short trip.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "data",
+      "phrase": false,
+      "audioSha256": "db0e202d68234836bbf53d97e0b64c5ad51dd338b6446c258e97868e423032bf",
+      "register": "電話舖",
+      "usageNotes": "data 呢度係手機數據。",
+      "pitfallsYue": "data 呢度係手機數據。",
+      "related": [],
+      "examples": [
+        {
+          "en": "This data plan is enough for a short trip.",
+          "yue": "呢個數據計劃夠一次短途用。",
+          "audio": "assets/audio/words/data-noun.mp3",
+          "audioSlow": "assets/audio/words/data-noun-slow.mp3",
+          "say": "This data plan is enough for a short trip."
+        },
+        {
+          "en": "A small top-up is enough for my data.",
+          "yue": "少少增值就夠我用數據。",
+          "audio": "assets/audio/words/data-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/data-noun-ex2-slow.mp3",
+          "say": "A small top-up is enough for my data."
+        }
+      ]
+    },
+    {
+      "id": "plan-noun",
+      "lemma": "plan",
+      "pos": "noun",
+      "senseId": "service-plan",
+      "ipa": "/ˈplæn/",
+      "syllables": [
+        "plan"
+      ],
+      "syllableIpa": [
+        "ˈplæn"
+      ],
+      "stress": 1,
+      "arpabet": "P L AE1 N",
+      "audio": "assets/audio/words/plan-noun.mp3",
+      "audioSlow": "assets/audio/words/plan-noun-slow.mp3",
+      "glossYue": "計劃",
+      "glossZh": "計劃",
+      "jyutping": "gai3 waak6",
+      "collocations": [
+        "phone plan",
+        "prepaid plan"
+      ],
+      "example": "Which phone plan is better for a short trip?",
+      "exampleYue": "邊個電話計劃適合短途？",
+      "say": "Which phone plan is better for a short trip?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "plan",
+      "phrase": false,
+      "audioSha256": "91071bc8b6f10a7f6553817599ac8f825e23e68946bcf17da2f2f32a35e9131c",
+      "register": "電話舖",
+      "usageNotes": "plan 呢度係電話計劃。",
+      "pitfallsYue": "plan 呢度係電話計劃。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Which phone plan is better for a short trip?",
+          "yue": "邊個電話計劃適合短途？",
+          "audio": "assets/audio/words/plan-noun.mp3",
+          "audioSlow": "assets/audio/words/plan-noun-slow.mp3",
+          "say": "Which phone plan is better for a short trip?"
+        },
+        {
+          "en": "This data plan is enough for a short trip.",
+          "yue": "呢個數據計劃夠一次短途用。",
+          "audio": "assets/audio/words/plan-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/plan-noun-ex2-slow.mp3",
+          "say": "This data plan is enough for a short trip."
+        }
+      ]
+    },
+    {
+      "id": "unlimited-adj",
+      "lemma": "unlimited",
+      "pos": "adj",
+      "senseId": "no-cap",
+      "ipa": "/ən.ˈlɪ.mə.tɪd/",
+      "syllables": [
+        "un",
+        "lim",
+        "it",
+        "ed"
+      ],
+      "syllableIpa": [
+        "ən",
+        "ˈlɪ",
+        "mə",
+        "tɪd"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 N L IH1 M AH0 T IH0 D",
+      "audio": "assets/audio/words/unlimited-adj.mp3",
+      "audioSlow": "assets/audio/words/unlimited-adj-slow.mp3",
+      "glossYue": "無限",
+      "glossZh": "無限",
+      "jyutping": "mou4 haan6",
+      "collocations": [
+        "unlimited plan",
+        "unlimited data"
+      ],
+      "example": "The unlimited plan is a long phone contract.",
+      "exampleYue": "無限計劃係一份長約。",
+      "say": "The unlimited plan is a long phone contract.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "unlimited",
+      "phrase": false,
+      "audioSha256": "2e5fbd99318fa618d4dfcca44f0420b7c2abe791abb734d96b25364c4c5b49b1",
+      "register": "電話舖",
+      "usageNotes": "unlimited 係冇上限。",
+      "pitfallsYue": "unlimited 係冇上限。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The unlimited plan is a long phone contract.",
+          "yue": "無限計劃係一份長約。",
+          "audio": "assets/audio/words/unlimited-adj.mp3",
+          "audioSlow": "assets/audio/words/unlimited-adj-slow.mp3",
+          "say": "The unlimited plan is a long phone contract."
+        },
+        {
+          "en": "An unlimited plan is not always cheaper.",
+          "yue": "無限計劃唔係次次平啲。",
+          "audio": "assets/audio/words/unlimited-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/unlimited-adj-ex2-slow.mp3",
+          "say": "An unlimited plan is not always cheaper."
+        }
+      ]
+    },
+    {
+      "id": "prepaid-adj",
+      "lemma": "prepaid",
+      "pos": "adj",
+      "senseId": "pay-ahead",
+      "ipa": "/pɹi.ˈpeɪd/",
+      "syllables": [
+        "pre",
+        "paid"
+      ],
+      "syllableIpa": [
+        "pɹi",
+        "ˈpeɪd"
+      ],
+      "stress": 2,
+      "arpabet": "P R IY0 P EY1 D",
+      "audio": "assets/audio/words/prepaid-adj.mp3",
+      "audioSlow": "assets/audio/words/prepaid-adj-slow.mp3",
+      "glossYue": "預繳",
+      "glossZh": "預繳",
+      "jyutping": "jyu6 giu2",
+      "collocations": [
+        "prepaid plan",
+        "a prepaid SIM"
+      ],
+      "example": "The prepaid plan is much cheaper for me.",
+      "exampleYue": "預繳計劃對我平好多。",
+      "say": "The prepaid plan is much cheaper for me.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "prepaid",
+      "phrase": false,
+      "audioSha256": "2d617c454afe92df25c1259164917b6c8c213e26a0f7d75de40bb7f851807c3e",
+      "register": "電話舖",
+      "usageNotes": "prepaid 係先畀錢再使用。",
+      "pitfallsYue": "prepaid 係先畀錢再使用。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The prepaid plan is much cheaper for me.",
+          "yue": "預繳計劃對我平好多。",
+          "audio": "assets/audio/words/prepaid-adj.mp3",
+          "audioSlow": "assets/audio/words/prepaid-adj-slow.mp3",
+          "say": "The prepaid plan is much cheaper for me."
+        },
+        {
+          "en": "I'll take the prepaid plan for this trip.",
+          "yue": "呢次我會要預繳計劃。",
+          "audio": "assets/audio/words/prepaid-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/prepaid-adj-ex2-slow.mp3",
+          "say": "I'll take the prepaid plan for this trip."
+        }
+      ]
+    },
+    {
+      "id": "coverage-noun",
+      "lemma": "coverage",
+      "pos": "noun",
+      "senseId": "signal-area",
+      "ipa": "/ˈkʌ.vɚ.ədʒ/",
+      "syllables": [
+        "cov",
+        "er",
+        "age"
+      ],
+      "syllableIpa": [
+        "ˈkʌ",
+        "vɚ",
+        "ədʒ"
+      ],
+      "stress": 1,
+      "arpabet": "K AH1 V ER0 AH0 JH",
+      "audio": "assets/audio/words/coverage-noun.mp3",
+      "audioSlow": "assets/audio/words/coverage-noun-slow.mp3",
+      "glossYue": "覆蓋",
+      "glossZh": "覆蓋",
+      "jyutping": "fut3 koi3",
+      "collocations": [
+        "the coverage",
+        "city coverage"
+      ],
+      "example": "The coverage is enough for my short trip.",
+      "exampleYue": "覆蓋夠我呢次短途用。",
+      "say": "The coverage is enough for my short trip.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "coverage",
+      "phrase": false,
+      "audioSha256": "62e522f0c884cd69153e6c574c273f3fd25a9c7babaf2c930e58970fe629462b",
+      "register": "電話舖",
+      "usageNotes": "coverage 係訊號覆蓋。",
+      "pitfallsYue": "coverage 係訊號覆蓋。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The coverage is enough for my short trip.",
+          "yue": "覆蓋夠我呢次短途用。",
+          "audio": "assets/audio/words/coverage-noun.mp3",
+          "audioSlow": "assets/audio/words/coverage-noun-slow.mp3",
+          "say": "The coverage is enough for my short trip."
+        },
+        {
+          "en": "City coverage is enough on this plan.",
+          "yue": "呢個計劃喺市區嘅覆蓋夠用。",
+          "audio": "assets/audio/words/coverage-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/coverage-noun-ex2-slow.mp3",
+          "say": "City coverage is enough on this plan."
+        }
+      ]
+    },
+    {
+      "id": "activate-verb",
+      "lemma": "activate",
+      "pos": "verb",
+      "senseId": "turn-on-service",
+      "ipa": "/ˈæk.tə.ˌveɪt/",
+      "syllables": [
+        "ac",
+        "ti",
+        "vate"
+      ],
+      "syllableIpa": [
+        "ˈæk",
+        "tə",
+        "ˌveɪt"
+      ],
+      "stress": 1,
+      "arpabet": "AE1 K T AH0 V EY2 T",
+      "audio": "assets/audio/words/activate-verb.mp3",
+      "audioSlow": "assets/audio/words/activate-verb-slow.mp3",
+      "glossYue": "開通",
+      "glossZh": "開通",
+      "jyutping": "hoi1 tung1",
+      "collocations": [
+        "activate the SIM",
+        "activate the plan"
+      ],
+      "example": "Please activate the SIM with my passport.",
+      "exampleYue": "請用我本護照開通呢張電話卡。",
+      "say": "Please activate the SIM with my passport.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "activate",
+      "phrase": false,
+      "audioSha256": "2e544ca64b877f9fb6f0fad762712c2df435648e311205363bd140cd2ae2faf1",
+      "register": "電話舖",
+      "usageNotes": "activate 係開通服務。",
+      "pitfallsYue": "activate 係開通服務。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Please activate the SIM with my passport.",
+          "yue": "請用我本護照開通呢張電話卡。",
+          "audio": "assets/audio/words/activate-verb.mp3",
+          "audioSlow": "assets/audio/words/activate-verb-slow.mp3",
+          "say": "Please activate the SIM with my passport."
+        },
+        {
+          "en": "They activate the plan after I pay.",
+          "yue": "我畀錢之後佢哋先開通個計劃。",
+          "audio": "assets/audio/words/activate-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/activate-verb-ex2-slow.mp3",
+          "say": "They activate the plan after I pay."
+        }
+      ]
+    },
+    {
+      "id": "cheaper-adj",
+      "lemma": "cheaper",
+      "pos": "adj",
+      "senseId": "lower-price",
+      "ipa": "/ˈtʃi.pɚ/",
+      "syllables": [
+        "cheap",
+        "er"
+      ],
+      "syllableIpa": [
+        "ˈtʃi",
+        "pɚ"
+      ],
+      "stress": 1,
+      "arpabet": "CH IY1 P ER0",
+      "audio": "assets/audio/words/cheaper-adj.mp3",
+      "audioSlow": "assets/audio/words/cheaper-adj-slow.mp3",
+      "glossYue": "平啲",
+      "glossZh": "平啲",
+      "jyutping": "peng4 di1",
+      "collocations": [
+        "much cheaper",
+        "a cheaper plan"
+      ],
+      "example": "The prepaid plan is much cheaper for me.",
+      "exampleYue": "預繳計劃對我平好多。",
+      "say": "The prepaid plan is much cheaper for me.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "cheaper",
+      "phrase": false,
+      "audioSha256": "b057022844c3f26edb716ef6771d1281ec64e965684287b39bc12bd04c6effe5",
+      "register": "電話舖",
+      "usageNotes": "cheaper 係平啲。",
+      "pitfallsYue": "cheaper 係平啲。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The prepaid plan is much cheaper for me.",
+          "yue": "預繳計劃對我平好多。",
+          "audio": "assets/audio/words/cheaper-adj.mp3",
+          "audioSlow": "assets/audio/words/cheaper-adj-slow.mp3",
+          "say": "The prepaid plan is much cheaper for me."
+        },
+        {
+          "en": "This plan is cheaper than a long contract.",
+          "yue": "呢個計劃比一份長約平。",
+          "audio": "assets/audio/words/cheaper-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/cheaper-adj-ex2-slow.mp3",
+          "say": "This plan is cheaper than a long contract."
+        }
+      ]
+    },
+    {
+      "id": "enough-adv",
+      "lemma": "enough",
+      "pos": "adv",
+      "senseId": "sufficient",
+      "ipa": "/ɪ.ˈnʌf/",
+      "syllables": [
+        "e",
+        "nough"
+      ],
+      "syllableIpa": [
+        "ɪ",
+        "ˈnʌf"
+      ],
+      "stress": 2,
+      "arpabet": "IH0 N AH1 F",
+      "audio": "assets/audio/words/enough-adv.mp3",
+      "audioSlow": "assets/audio/words/enough-adv-slow.mp3",
+      "glossYue": "夠",
+      "glossZh": "夠",
+      "jyutping": "gau3",
+      "collocations": [
+        "enough for a trip",
+        "is enough"
+      ],
+      "example": "The coverage is enough for my short trip.",
+      "exampleYue": "覆蓋夠我呢次短途用。",
+      "say": "The coverage is enough for my short trip.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "enough",
+      "phrase": false,
+      "audioSha256": "bab9a2014ea544e3a216074ee0cf2c90eaf1071a806ef8d599704826252d0ed7",
+      "register": "電話舖",
+      "usageNotes": "enough 係夠用。",
+      "pitfallsYue": "enough 係夠用。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The coverage is enough for my short trip.",
+          "yue": "覆蓋夠我呢次短途用。",
+          "audio": "assets/audio/words/enough-adv.mp3",
+          "audioSlow": "assets/audio/words/enough-adv-slow.mp3",
+          "say": "The coverage is enough for my short trip."
+        },
+        {
+          "en": "A small top-up is enough for my data.",
+          "yue": "少少增值就夠我用數據。",
+          "audio": "assets/audio/words/enough-adv-ex2.mp3",
+          "audioSlow": "assets/audio/words/enough-adv-ex2-slow.mp3",
+          "say": "A small top-up is enough for my data."
+        }
+      ]
+    },
+    {
+      "id": "mobile-contract-noun",
+      "lemma": "contract",
+      "pos": "noun",
+      "senseId": "phone-plan",
+      "ipa": "/ˈkɑn.ˌtɹækt/",
+      "syllables": [
+        "con",
+        "tract"
+      ],
+      "syllableIpa": [
+        "ˈkɑn",
+        "ˌtɹækt"
+      ],
+      "stress": 1,
+      "arpabet": "K AA1 N T R AE2 K T",
+      "audio": "assets/audio/words/mobile-contract-noun.mp3",
+      "audioSlow": "assets/audio/words/mobile-contract-noun-slow.mp3",
+      "glossYue": "電話合約",
+      "glossZh": "電話合約",
+      "jyutping": "din6 waa2 hap6 joek3",
+      "collocations": [
+        "a phone contract",
+        "long contract"
+      ],
+      "example": "The unlimited plan is on a phone contract.",
+      "exampleYue": "無限計劃係一份電話合約。",
+      "say": "The unlimited plan is on a phone contract.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "contract",
+      "phrase": false,
+      "audioSha256": "36f10c381453cd36d0dc21ab6712b88f5216975e87f5f22baa1472fb16c49d5d",
+      "register": "電話舖",
+      "usageNotes": "contract 呢度係電話合約，唔係租約。",
+      "pitfallsYue": "contract 呢度係電話合約，唔係租約。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The unlimited plan is on a phone contract.",
+          "yue": "無限計劃係一份電話合約。",
+          "audio": "assets/audio/words/mobile-contract-noun.mp3",
+          "audioSlow": "assets/audio/words/mobile-contract-noun-slow.mp3",
+          "say": "The unlimited plan is on a phone contract."
+        },
+        {
+          "en": "This phone contract is longer than a prepaid plan.",
+          "yue": "呢份電話合約比預繳計劃長。",
+          "audio": "assets/audio/words/mobile-contract-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/mobile-contract-noun-ex2-slow.mp3",
+          "say": "This phone contract is longer than a prepaid plan."
+        }
+      ]
+    },
+    {
+      "id": "parcel-noun",
+      "lemma": "parcel",
+      "pos": "noun",
+      "senseId": "package",
+      "ipa": "/ˈpɑɹ.səl/",
+      "syllables": [
+        "par",
+        "cel"
+      ],
+      "syllableIpa": [
+        "ˈpɑɹ",
+        "səl"
+      ],
+      "stress": 1,
+      "arpabet": "P AA1 R S AH0 L",
+      "audio": "assets/audio/words/parcel-noun.mp3",
+      "audioSlow": "assets/audio/words/parcel-noun-slow.mp3",
+      "glossYue": "包裹",
+      "glossZh": "包裹",
+      "jyutping": "baau1 gwo2",
+      "collocations": [
+        "this parcel",
+        "send a parcel"
+      ],
+      "example": "I would like to send this parcel by airmail.",
+      "exampleYue": "我想用空郵寄呢個包裹。",
+      "say": "I would like to send this parcel by airmail.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "parcel",
+      "phrase": false,
+      "audioSha256": "35460daa1935acbe2d31224fcc767623291962b7585252cc0b829f4665adeed4",
+      "register": "郵局",
+      "usageNotes": "parcel 係包裹。",
+      "pitfallsYue": "parcel 係包裹。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I would like to send this parcel by airmail.",
+          "yue": "我想用空郵寄呢個包裹。",
+          "audio": "assets/audio/words/parcel-noun.mp3",
+          "audioSlow": "assets/audio/words/parcel-noun-slow.mp3",
+          "say": "I would like to send this parcel by airmail."
+        },
+        {
+          "en": "This parcel is fragile, so mark the weight.",
+          "yue": "呢個包裹易碎，請標明重量。",
+          "audio": "assets/audio/words/parcel-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/parcel-noun-ex2-slow.mp3",
+          "say": "This parcel is fragile, so mark the weight."
+        }
+      ]
+    },
+    {
+      "id": "tracking-noun",
+      "lemma": "tracking",
+      "pos": "noun",
+      "senseId": "parcel-code",
+      "ipa": "/ˈtɹæ.kɪŋ/",
+      "syllables": [
+        "track",
+        "ing"
+      ],
+      "syllableIpa": [
+        "ˈtɹæ",
+        "kɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "T R AE1 K IH0 NG",
+      "audio": "assets/audio/words/tracking-noun.mp3",
+      "audioSlow": "assets/audio/words/tracking-noun-slow.mp3",
+      "glossYue": "追蹤",
+      "glossZh": "追蹤",
+      "jyutping": "zeoi1 zung1",
+      "collocations": [
+        "tracking number",
+        "the tracking"
+      ],
+      "example": "Your tracking number is on this receipt.",
+      "exampleYue": "你嘅追蹤號碼喺呢張收據上面。",
+      "say": "Your tracking number is on this receipt.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "tracking",
+      "phrase": false,
+      "audioSha256": "712b3d86daff82b341bab2d90bdf444a48bb0eabd9fc01d4e94f00604127c2ac",
+      "register": "郵局",
+      "usageNotes": "tracking 係追蹤編號。",
+      "pitfallsYue": "tracking 係追蹤編號。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Your tracking number is on this receipt.",
+          "yue": "你嘅追蹤號碼喺呢張收據上面。",
+          "audio": "assets/audio/words/tracking-noun.mp3",
+          "audioSlow": "assets/audio/words/tracking-noun-slow.mp3",
+          "say": "Your tracking number is on this receipt."
+        },
+        {
+          "en": "Please keep the tracking number with the receipt.",
+          "yue": "請將追蹤號碼同收據一齊保存。",
+          "audio": "assets/audio/words/tracking-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/tracking-noun-ex2-slow.mp3",
+          "say": "Please keep the tracking number with the receipt."
+        }
+      ]
+    },
+    {
+      "id": "postage-stamp-noun",
+      "lemma": "stamp",
+      "pos": "noun",
+      "senseId": "postage",
+      "ipa": "/ˈstæmp/",
+      "syllables": [
+        "stamp"
+      ],
+      "syllableIpa": [
+        "ˈstæmp"
+      ],
+      "stress": 1,
+      "arpabet": "S T AE1 M P",
+      "audio": "assets/audio/words/postage-stamp-noun.mp3",
+      "audioSlow": "assets/audio/words/postage-stamp-noun-slow.mp3",
+      "glossYue": "郵票",
+      "glossZh": "郵票",
+      "jyutping": "jau4 piu3",
+      "collocations": [
+        "one stamp",
+        "a stamp"
+      ],
+      "example": "Please put one stamp on the parcel.",
+      "exampleYue": "請喺包裹上面貼一張郵票。",
+      "say": "Please put one stamp on the parcel.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "stamp",
+      "phrase": false,
+      "audioSha256": "a38291f9ab1da7dd6eb4603c7077b0790eb1b2edf3cbc9f950acdd79e02c06c4",
+      "register": "郵局",
+      "usageNotes": "stamp 呢度係郵票，唔係蓋章。",
+      "pitfallsYue": "stamp 呢度係郵票，唔係蓋章。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Please put one stamp on the parcel.",
+          "yue": "請喺包裹上面貼一張郵票。",
+          "audio": "assets/audio/words/postage-stamp-noun.mp3",
+          "audioSlow": "assets/audio/words/postage-stamp-noun-slow.mp3",
+          "say": "Please put one stamp on the parcel."
+        },
+        {
+          "en": "This stamp is for the airmail parcel.",
+          "yue": "呢張郵票係畀空郵包裹用。",
+          "audio": "assets/audio/words/postage-stamp-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/postage-stamp-noun-ex2-slow.mp3",
+          "say": "This stamp is for the airmail parcel."
+        }
+      ]
+    },
+    {
+      "id": "airmail-noun",
+      "lemma": "airmail",
+      "pos": "noun",
+      "senseId": "air-post",
+      "ipa": "/ˈɛɹ.ˌmeɪl/",
+      "syllables": [
+        "air",
+        "mail"
+      ],
+      "syllableIpa": [
+        "ˈɛɹ",
+        "ˌmeɪl"
+      ],
+      "stress": 1,
+      "arpabet": "EH1 R M EY2 L",
+      "audio": "assets/audio/words/airmail-noun.mp3",
+      "audioSlow": "assets/audio/words/airmail-noun-slow.mp3",
+      "glossYue": "空郵",
+      "glossZh": "空郵",
+      "jyutping": "hung1 jau4",
+      "collocations": [
+        "by airmail",
+        "airmail parcel"
+      ],
+      "example": "I would like to send this parcel by airmail.",
+      "exampleYue": "我想用空郵寄呢個包裹。",
+      "say": "I would like to send this parcel by airmail.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "airmail",
+      "phrase": false,
+      "audioSha256": "ef1495dbda6f47b6a433d11c6965388ad9eafaf89bbebd0faf7f408c52395322",
+      "register": "郵局",
+      "usageNotes": "airmail 係空郵。",
+      "pitfallsYue": "airmail 係空郵。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I would like to send this parcel by airmail.",
+          "yue": "我想用空郵寄呢個包裹。",
+          "audio": "assets/audio/words/airmail-noun.mp3",
+          "audioSlow": "assets/audio/words/airmail-noun-slow.mp3",
+          "say": "I would like to send this parcel by airmail."
+        },
+        {
+          "en": "Airmail takes five days to Macau.",
+          "yue": "空郵去澳門要五日。",
+          "audio": "assets/audio/words/airmail-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/airmail-noun-ex2-slow.mp3",
+          "say": "Airmail takes five days to Macau."
+        }
+      ]
+    },
+    {
+      "id": "fragile-adj",
+      "lemma": "fragile",
+      "pos": "adj",
+      "senseId": "breaks-easily",
+      "ipa": "/ˈfɹæ.dʒəl/",
+      "syllables": [
+        "frag",
+        "ile"
+      ],
+      "syllableIpa": [
+        "ˈfɹæ",
+        "dʒəl"
+      ],
+      "stress": 1,
+      "arpabet": "F R AE1 JH AH0 L",
+      "audio": "assets/audio/words/fragile-adj.mp3",
+      "audioSlow": "assets/audio/words/fragile-adj-slow.mp3",
+      "glossYue": "易碎",
+      "glossZh": "易碎",
+      "jyutping": "ji6 seoi3",
+      "collocations": [
+        "fragile parcel",
+        "mark it fragile"
+      ],
+      "example": "This parcel is fragile, so mark the weight.",
+      "exampleYue": "呢個包裹易碎，請標明重量。",
+      "say": "This parcel is fragile, so mark the weight.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "fragile",
+      "phrase": false,
+      "audioSha256": "21bc7e381bac7d34a9cac4f55f8322509fbebe0650bb5395267197e93b09ac4e",
+      "register": "郵局",
+      "usageNotes": "fragile 係易碎。",
+      "pitfallsYue": "fragile 係易碎。",
+      "related": [],
+      "examples": [
+        {
+          "en": "This parcel is fragile, so mark the weight.",
+          "yue": "呢個包裹易碎，請標明重量。",
+          "audio": "assets/audio/words/fragile-adj.mp3",
+          "audioSlow": "assets/audio/words/fragile-adj-slow.mp3",
+          "say": "This parcel is fragile, so mark the weight."
+        },
+        {
+          "en": "A fragile parcel needs a careful stamp.",
+          "yue": "易碎包裹要小心貼郵票。",
+          "audio": "assets/audio/words/fragile-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/fragile-adj-ex2-slow.mp3",
+          "say": "A fragile parcel needs a careful stamp."
+        }
+      ]
+    },
+    {
+      "id": "weight-noun",
+      "lemma": "weight",
+      "pos": "noun",
+      "senseId": "how-heavy",
+      "ipa": "/ˈweɪt/",
+      "syllables": [
+        "weight"
+      ],
+      "syllableIpa": [
+        "ˈweɪt"
+      ],
+      "stress": 1,
+      "arpabet": "W EY1 T",
+      "audio": "assets/audio/words/weight-noun.mp3",
+      "audioSlow": "assets/audio/words/weight-noun-slow.mp3",
+      "glossYue": "重量",
+      "glossZh": "重量",
+      "jyutping": "cung5 loeng6",
+      "collocations": [
+        "the weight",
+        "full weight"
+      ],
+      "example": "Please mark the full weight on the form.",
+      "exampleYue": "請喺表格上面寫明全部重量。",
+      "say": "Please mark the full weight on the form.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "weight",
+      "phrase": false,
+      "audioSha256": "5f23614731d791306ef036f5fb95cadfa8d5262d41438bb0eee8dfa3c929bc07",
+      "register": "郵局",
+      "usageNotes": "weight 係重量。",
+      "pitfallsYue": "weight 係重量。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Please mark the full weight on the form.",
+          "yue": "請喺表格上面寫明全部重量。",
+          "audio": "assets/audio/words/weight-noun.mp3",
+          "audioSlow": "assets/audio/words/weight-noun-slow.mp3",
+          "say": "Please mark the full weight on the form."
+        },
+        {
+          "en": "The weight is on the receipt for this parcel.",
+          "yue": "重量寫喺呢個包裹嘅收據上面。",
+          "audio": "assets/audio/words/weight-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/weight-noun-ex2-slow.mp3",
+          "say": "The weight is on the receipt for this parcel."
+        }
+      ]
+    },
+    {
+      "id": "follow-up-visit-noun",
+      "lemma": "follow-up",
+      "pos": "noun",
+      "senseId": "return-visit",
+      "ipa": "/ˈfɑ.loʊ.ˌʌp/",
+      "syllables": [
+        "fol",
+        "low",
+        "up"
+      ],
+      "syllableIpa": [
+        "ˈfɑ",
+        "loʊ",
+        "ˌʌp"
+      ],
+      "stress": 1,
+      "arpabet": "F AA1 L OW0 AH2 P",
+      "audio": "assets/audio/words/follow-up-visit-noun.mp3",
+      "audioSlow": "assets/audio/words/follow-up-visit-noun-slow.mp3",
+      "glossYue": "覆診",
+      "glossZh": "覆診",
+      "jyutping": "fuk1 can2",
+      "collocations": [
+        "a follow-up",
+        "the follow-up"
+      ],
+      "example": "I need a follow-up after this visit.",
+      "exampleYue": "呢次之後我要覆診。",
+      "say": "I need a follow-up after this visit.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "follow",
+      "phrase": false,
+      "audioSha256": "6f8b68d90c6300975a59d9935ed11b1fb0752de999624fe7e01a11e5ed8ab9d1",
+      "register": "診所",
+      "usageNotes": "follow-up 係再嚟診所一次。",
+      "pitfallsYue": "follow-up 係再嚟診所一次。",
+      "related": [
+        "pharmacy-noun",
+        "appointment-noun"
+      ],
+      "examples": [
+        {
+          "en": "I need a follow-up after this visit.",
+          "yue": "呢次之後我要覆診。",
+          "audio": "assets/audio/words/follow-up-visit-noun.mp3",
+          "audioSlow": "assets/audio/words/follow-up-visit-noun-slow.mp3",
+          "say": "I need a follow-up after this visit."
+        },
+        {
+          "en": "The follow-up is next Friday morning.",
+          "yue": "覆診係下星期五朝早。",
+          "audio": "assets/audio/words/follow-up-visit-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/follow-up-visit-noun-ex2-slow.mp3",
+          "say": "The follow-up is next Friday morning."
         }
       ]
     }

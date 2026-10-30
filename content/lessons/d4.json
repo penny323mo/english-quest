@@ -1,0 +1,352 @@
+{
+  "id": "D4",
+  "unit": "D",
+  "titleYue": "電話卡同上網",
+  "titleEn": "Phone and data plans",
+  "canDoYue": "你識比較預繳同無限計劃，仲識開通電話卡。",
+  "canDoEn": "Compare a prepaid plan with an unlimited plan, then activate a SIM.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/d4.webp",
+  "cast": [
+    "mina",
+    "tom"
+  ],
+  "cefr": "A2",
+  "lemmas": [
+    "sim-noun",
+    "top-up-noun",
+    "data-noun",
+    "plan-noun",
+    "unlimited-adj",
+    "mobile-contract-noun",
+    "prepaid-adj",
+    "coverage-noun",
+    "activate-verb",
+    "passport-noun",
+    "cheaper-adj",
+    "enough-adv"
+  ],
+  "dialogue": [
+    {
+      "id": "d4-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Hello. I need a new SIM card and a bigger data plan.",
+      "glossYue": "你好。我需要一張新電話卡，同埋大啲嘅數據計劃。",
+      "audio": "assets/audio/lines/d4-l1.mp3",
+      "audioSlow": "assets/audio/lines/d4-l1-slow.mp3",
+      "say": "Hello. I need a new SIM card and a bigger data plan."
+    },
+    {
+      "id": "d4-l2",
+      "speaker": "mina",
+      "speakerLabel": "Mina",
+      "text": "Which phone plan is better for a short city trip?",
+      "glossYue": "邊個電話計劃適合市區短途？",
+      "audio": "assets/audio/lines/d4-l2.mp3",
+      "audioSlow": "assets/audio/lines/d4-l2-slow.mp3",
+      "say": "Which phone plan is better for a short city trip?"
+    },
+    {
+      "id": "d4-l3",
+      "speaker": "mina",
+      "speakerLabel": "Mina",
+      "text": "The prepaid plan is much cheaper, and the coverage is enough.",
+      "glossYue": "預繳計劃平好多，覆蓋都夠。",
+      "audio": "assets/audio/lines/d4-l3.mp3",
+      "audioSlow": "assets/audio/lines/d4-l3-slow.mp3",
+      "say": "The prepaid plan is much cheaper, and the coverage is enough."
+    },
+    {
+      "id": "d4-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I'll take the cheaper prepaid plan for this short trip.",
+      "glossYue": "呢次短途我要平啲嗰個預繳計劃。",
+      "audio": "assets/audio/lines/d4-l4.mp3",
+      "audioSlow": "assets/audio/lines/d4-l4-slow.mp3",
+      "say": "I'll take the cheaper prepaid plan for this short trip."
+    },
+    {
+      "id": "d4-l5",
+      "speaker": "mina",
+      "speakerLabel": "Mina",
+      "text": "Please activate the new SIM card with your valid passport.",
+      "glossYue": "請用你本有效護照開通呢張新電話卡。",
+      "audio": "assets/audio/lines/d4-l5.mp3",
+      "audioSlow": "assets/audio/lines/d4-l5-slow.mp3",
+      "say": "Please activate the new SIM card with your valid passport."
+    },
+    {
+      "id": "d4-l6",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Is the unlimited plan locked on a long phone contract?",
+      "glossYue": "無限計劃係咪綁一份長電話合約？",
+      "audio": "assets/audio/lines/d4-l6.mp3",
+      "audioSlow": "assets/audio/lines/d4-l6-slow.mp3",
+      "say": "Is the unlimited plan locked on a long phone [[ˈkɑntɹækt]]?",
+      "hideGloss": true
+    },
+    {
+      "id": "d4-l7",
+      "speaker": "mina",
+      "speakerLabel": "Mina",
+      "text": "A small top-up is enough if the data stays low.",
+      "glossYue": "數據用得少，少少增值就夠。",
+      "audio": "assets/audio/lines/d4-l7.mp3",
+      "audioSlow": "assets/audio/lines/d4-l7-slow.mp3",
+      "say": "A small top-up is enough if the data stays low.",
+      "hideGloss": true
+    },
+    {
+      "id": "d4-l8",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I will pay for this cheaper prepaid plan here.",
+      "glossYue": "我喺呢度畀錢買呢個平啲嘅預繳計劃。",
+      "audio": "assets/audio/lines/d4-l8.mp3",
+      "audioSlow": "assets/audio/lines/d4-l8-slow.mp3",
+      "say": "I will pay for this cheaper prepaid plan here.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Hello. I need a new SIM card and a bigger data plan. 呢句即係點？",
+      "choices": [
+        "要一張新電話卡同大啲數據",
+        "要寄一個包裹",
+        "要講自己幾時起身"
+      ],
+      "answer": 0,
+      "explain": "SIM 係電話卡。data plan 係數據計劃。"
+    },
+    {
+      "prompt": "Which phone plan is better for a short city trip? 即係問緊咩？",
+      "choices": [
+        "邊個計劃適合短途",
+        "包裹幾重",
+        "你來自邊"
+      ],
+      "answer": 0,
+      "explain": "which plan 係問邊個計劃好啲。"
+    },
+    {
+      "prompt": "I'll take the cheaper prepaid plan for this short trip. 呢句即係點？",
+      "choices": [
+        "我要平啲嘅預繳計劃",
+        "我要一份長約",
+        "請幫我串個名"
+      ],
+      "answer": 0,
+      "explain": "I'll take 係我要呢個。prepaid 係預繳。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Which phone plan is better for ___?",
+      "example": "Which phone plan is better for a short trip?",
+      "glossYue": "邊個電話計劃適合⋯⋯？",
+      "answer": "a short trip",
+      "choices": [
+        "a short trip",
+        "my passport",
+        "the parcel"
+      ]
+    },
+    {
+      "pattern": "I'll take the cheaper ___ plan.",
+      "example": "I'll take the cheaper prepaid plan.",
+      "glossYue": "我要平啲嘅⋯⋯計劃。",
+      "answer": "prepaid",
+      "choices": [
+        "prepaid",
+        "fragile",
+        "usually"
+      ]
+    },
+    {
+      "pattern": "Please activate the new SIM ___.",
+      "example": "Please activate the new SIM card.",
+      "glossYue": "請開通新電話卡⋯⋯。",
+      "answer": "card",
+      "choices": [
+        "card",
+        "stamp",
+        "shift"
+      ]
+    },
+    {
+      "pattern": "A small top-up is ___ for my data.",
+      "example": "A small top-up is enough for my data.",
+      "glossYue": "少少增值對我嘅數據⋯⋯。",
+      "answer": "enough",
+      "choices": [
+        "enough",
+        "never",
+        "spell"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "d4-l4",
+    "hint": "I'll take the cheaper prepaid plan for this short trip."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "Mina 問你要邊個計劃。你點答？",
+      "choices": [
+        "I'll take the cheaper prepaid plan for this short trip.",
+        "I usually wake up early, and then I start my long shift.",
+        "How much is this?"
+      ],
+      "answer": 0,
+      "explain": "I'll take 係決定要邊個。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "I'll",
+        "take",
+        "the",
+        "prepaid",
+        "plan"
+      ],
+      "answer": [
+        "I'll",
+        "take",
+        "the",
+        "prepaid",
+        "plan"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你喺電話舖同 Mina 揀計劃。等佢講完先答，中途唔會插嘴。",
+    "turns": [
+      {
+        "partner": "Mina",
+        "partnerId": "mina",
+        "line": "Which phone plan is better for a short city trip?",
+        "audio": "assets/audio/lines/d4-l2.mp3",
+        "audioSlow": "assets/audio/lines/d4-l2-slow.mp3",
+        "expect": "I'll take the cheaper prepaid plan for this short trip.",
+        "keywords": [
+          "prepaid",
+          "plan"
+        ],
+        "modelAudio": "assets/audio/lines/d4-l4.mp3",
+        "modelSlow": "assets/audio/lines/d4-l4-slow.mp3"
+      },
+      {
+        "partner": "Mina",
+        "partnerId": "mina",
+        "line": "The prepaid plan is much cheaper, and the coverage is enough.",
+        "audio": "assets/audio/lines/d4-l3.mp3",
+        "audioSlow": "assets/audio/lines/d4-l3-slow.mp3",
+        "expect": "Is the unlimited plan locked on a long phone contract?",
+        "keywords": [
+          "unlimited",
+          "contract"
+        ],
+        "modelAudio": "assets/audio/lines/d4-l6.mp3",
+        "modelSlow": "assets/audio/lines/d4-l6-slow.mp3"
+      },
+      {
+        "partner": "Mina",
+        "partnerId": "mina",
+        "line": "Please activate the new SIM card with your valid passport.",
+        "audio": "assets/audio/lines/d4-l5.mp3",
+        "audioSlow": "assets/audio/lines/d4-l5-slow.mp3",
+        "expect": "I will pay for this cheaper prepaid plan here.",
+        "keywords": [
+          "pay",
+          "plan"
+        ],
+        "modelAudio": "assets/audio/lines/d4-l8.mp3",
+        "modelSlow": "assets/audio/lines/d4-l8-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：plan",
+      "lemma": "plan-noun",
+      "choices": [
+        "plan",
+        "data",
+        "stamp"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：data",
+      "lemma": "data-noun",
+      "choices": [
+        "data",
+        "day",
+        "weight"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which plan is better for a short trip?",
+      "choices": [
+        "邊個計劃適合短途",
+        "包裹幾多日到",
+        "我通常幾時起身"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "I'll take the prepaid plan.",
+      "choices": [
+        "我要預繳計劃",
+        "我要無限長約",
+        "請貼郵票"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "The prepaid plan is much cheaper.",
+      "choices": [
+        "預繳計劃平好多",
+        "覆蓋完全唔夠",
+        "請申報重量"
+      ],
+      "answer": 0,
+      "explain": "cheaper 係平啲。"
+    }
+  ],
+  "sound": {
+    "ipa": "/eɪ/ · /æ/",
+    "title": "data 同 plan",
+    "note": "data 同 prepaid 有 /eɪ/，嘴角拉開再收。plan 同 activate 有 /æ/，嘴張大，短促。",
+    "pairs": [
+      {
+        "a": "data-noun",
+        "b": "plan-noun"
+      },
+      {
+        "a": "prepaid-adj",
+        "b": "activate-verb"
+      }
+    ],
+    "drill": [
+      "data-noun",
+      "plan-noun",
+      "prepaid-adj",
+      "activate-verb"
+    ]
+  },
+  "next": "D5"
+}

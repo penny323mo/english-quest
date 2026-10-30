@@ -66,11 +66,11 @@
       "id": "j12-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Please notify me by a short phone message, and confirm the opening hours at your location.",
-      "glossYue": "請用短訊通知我，再確認你舖頭嘅開門時間同位置。",
+      "text": "Please text me when it's ready, and then please confirm the opening hours at your location.",
+      "glossYue": "貨準備好就發短訊話我知，然後再確認舖頭開門時間同位置。",
       "audio": "assets/audio/lines/j12-l4.mp3",
       "audioSlow": "assets/audio/lines/j12-l4-slow.mp3",
-      "say": "Please notify me by a short phone message, and confirm the opening hours at your location.",
+      "say": "Please text me when it's ready, and then please confirm the opening hours at your location.",
       "hideGloss": true
     },
     {
@@ -140,14 +140,14 @@
       "explain": "collect tomorrow 係聽日嚟取。"
     },
     {
-      "prompt": "Please notify me by a short phone message. 呢句即係點？",
+      "prompt": "Please text me when it's ready. 呢句即係點？",
       "choices": [
         "請用短訊通知我",
-        "請而家轉線",
+        "請幫我轉接",
         "請取消預留"
       ],
       "answer": 0,
-      "explain": "notify by message 係用訊息通知。"
+      "explain": "貨準備好就發短訊話我知。"
     }
   ],
   "chunks": [
@@ -163,12 +163,12 @@
       ]
     },
     {
-      "pattern": "Please ___ me by a short phone message, and confirm the opening hours at your location.",
-      "example": "Please notify me by a short phone message, and confirm the opening hours at your location.",
-      "glossYue": "請⋯⋯我。",
-      "answer": "notify",
+      "pattern": "Please text me when it's ___, and then please confirm the opening hours at your location.",
+      "example": "Please text me when it's ready, and then please confirm the opening hours at your location.",
+      "glossYue": "貨準備好就發短訊話我知。",
+      "answer": "ready",
       "choices": [
-        "notify",
+        "ready",
         "collect",
         "hold"
       ]
@@ -194,7 +194,7 @@
       "type": "choice",
       "promptYue": "店員話可以留貨。你點先答？",
       "choices": [
-        "Please notify me by a short phone message, and confirm the opening hours at your location.",
+        "Please text me when it's ready, and then please confirm the opening hours at your location.",
         "I would like a table for two.",
         "The meter is on."
       ],
@@ -244,9 +244,9 @@
         "line": "I will describe the gold piece, and I can hold it here until you collect it tomorrow.",
         "audio": "assets/audio/lines/j12-l3.mp3",
         "audioSlow": "assets/audio/lines/j12-l3-slow.mp3",
-        "expect": "Please notify me by a short phone message, and confirm the opening hours at your location.",
+        "expect": "Please text me when it's ready, and then please confirm the opening hours at your location.",
         "keywords": [
-          "notify",
+          "text",
           "location"
         ],
         "modelAudio": "assets/audio/lines/j12-l4.mp3",

@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), "utf8"));
 const ids = new Set(lex.items.map((item) => item.id));
-const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "t1", "t2", "t3", "t4", "t5", "t6", "r1", "r2", "r3", "r4", "r5", "w1", "d1", "d2", "t7", "w2", "w3", "d3", "j11", "j12", "t8", "w4", "r6", "w5"];
+const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "t1", "t2", "t3", "t4", "t5", "t6", "r1", "r2", "r3", "r4", "r5", "w1", "d1", "d2", "t7", "w2", "w3", "d3", "j11", "j12", "t8", "w4", "r6", "w5", "f5", "f6", "d4", "d5"];
 const lessons = shipped.map((id) =>
   JSON.parse(fs.readFileSync(path.join(root, "content/lessons", `${id}.json`), "utf8")),
 );
@@ -20,8 +20,8 @@ function exists(rel) {
   assert.ok(fs.statSync(file).size > 400, rel);
 }
 
-test("thirty-eight lessons each carry the 12-beat payload", () => {
-  assert.equal(lessons.length, 38);
+test("forty-two lessons each carry the 12-beat payload", () => {
+  assert.equal(lessons.length, 42);
   for (const lesson of lessons) {
     for (const key of ["hero", "canDoYue", "canDoEn", "dialogue", "understand", "chunks", "shadow", "build", "roleplay", "quiz", "sound", "next"]) {
       assert.ok(key in lesson, `${lesson.id} ${key}`);
@@ -88,7 +88,7 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   assert.equal(fs.existsSync(path.join(root, "content/lessons/t3.json")), true);
   const t2 = lessons.find((lesson) => lesson.id === "T2");
   const t3 = lessons.find((lesson) => lesson.id === "T3");
-  assert.equal(t1.next, "J3");
+  assert.equal(t1.next, "D4");
   assert.equal(t2.next, "R2");
   assert.equal(t3.next, "R3");
   assert.match(t3.titleYue, /酒店入住/);
@@ -129,7 +129,7 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   assert.equal(j6.sound.ipa.includes("ɹ"), false);
   const r2 = lessons.find((lesson) => lesson.id === "R2");
   const r3 = lessons.find((lesson) => lesson.id === "R3");
-  assert.equal(r1.next, "J2");
+  assert.equal(r1.next, "F6");
   assert.equal(r2.next, "J4");
   assert.equal(r3.next, "T4");
   const t4 = lessons.find((lesson) => lesson.id === "T4");
@@ -192,7 +192,7 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
     );
   }
   const shippedOnPath = flatPath.filter((entry) => !entry.soon).map((entry) => entry.id);
-  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "J6", "J7", "T5", "R5", "W1", "D1", "D2", "T7", "W4", "J8", "J9", "J10", "T6", "R6", "J12", "T8", "W2", "W3", "D3", "W5", "J11"]);
+  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "D4", "D5", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "J6", "J7", "T5", "R5", "W1", "D1", "D2", "T7", "W4", "J8", "J9", "J10", "T6", "R6", "J12", "T8", "W2", "W3", "D3", "W5", "J11"]);
   assert.equal(flatPath.find((entry) => entry.id === "J8").cefr, "B1");
   const said = (lesson) => lesson.dialogue.map((line) => line.text).join("\n");
   assert.ok(j4.dialogue.length >= 6 && j4.dialogue.length <= 10);
@@ -361,7 +361,7 @@ test("the app has a mic fallback and does not phone home", () => {
   assert.match(lesson, /改為即時講/);
   assert.match(lesson, />聽我</);
   assert.match(lesson, /咪未開/);
-  assert.match(lesson, /呢輪三十八課你行完啦/);
+  assert.match(lesson, /呢輪四十二課你行完啦/);
   assert.match(lesson, /setDone\(true\)/);
   assert.match(lesson, /playSfx/);
   assert.match(fs.readFileSync(path.join(root, "web/src/sfx.ts"), "utf8"), /AudioContext/);
@@ -420,7 +420,7 @@ test("role-play tip names a character or tells you it is your turn", () => {
   assert.match(lesson, /你扮 \$\{name\}/);
   assert.equal(lesson.includes("你而家係"), false);
   const data = fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8");
-  assert.match(data, /"F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "J6", "J7", "T5", "R5", "W1", "D1", "D2", "T7", "W4", "J8", "J9", "J10", "T6", "R6", "J12", "T8", "W2", "W3", "D3", "W5", "J11"/);
+  assert.match(data, /"F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "D4", "D5", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "J6", "J7", "T5", "R5", "W1", "D1", "D2", "T7", "W4", "J8", "J9", "J10", "T6", "R6", "J12", "T8", "W2", "W3", "D3", "W5", "J11"/);
   assert.match(data, /const order = SHIPPED/);
 });
 
