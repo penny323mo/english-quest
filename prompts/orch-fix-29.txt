@@ -9,6 +9,25 @@ DIFFICULTY PROGRESSION (Penny): Path easy→hard; CEFR never decreases; no gramm
 
 Also continue WORD-REVIEW slices. No paid services, no secrets, no nightly panes, no force-add gitignored reports.
 
+
+## Coder live 390px audit of round 27 (review/loop-r27/coder-audit.md; audited 5bb2fc7 before fix-28 landed — re-verify STILL OPEN items against fix-28 and close what is still open) — every OPEN/NEW item below must be closed; reviewer may not mark SHIP while any is open
+# Coder live audit — round 27 (live 5bb2fc7/7c35c53, bundle index-1rPW2HVk.js), 2026-10-30 22:40
+Walk (live URL, 390x844 touch, real taps): path + W2, W3, D1, J10, T6, R5 hook → listen → chunks → build → quiz → pron → recap → 下一課, 22 steps each, 0 page errors, 0 HTTP >=400, scrollWidth 390 throughout. Path 29/29 (35 nodes), CEFR non-decreasing A1→B2; D1 slots at A2/B1 → J8 (B1); T6 → W2 → W3 → end card.
+Lighthouse mobile: 99/100/100/100.
+Lexicon: 20 entries (lex20.tsv; 16 from W2/W3/D1), audio 200 for all; 16 single words = CMUdict; 3 compounds not in CMU (action item, wrap up, sore throat — OK); follow-up noun ≠ CMU (see #29).
+Scores: Art 8, UI 8, Lexicon 7, Pron UX 9, Pedagogy 7, Speaking 8, SRS 9, Flow 9, Perf 10, Audio 9, Durability 9, CI 9.
+CLOSED: #21 (no "Listen to the clip once…" stems left; Cantonese short stems), #22 sheet (一張紙。) + take (header 要 = gloss), my/liquid/bin (#19) verified live.
+STILL OPEN (fix-28 carries): #18 「…係？/係講？」 stems still in f4/r4/j7/w1/r5/t6/t5 and NEW in W3 ("I see your point, but I am concerned. 係講？" w3-s3.png); #22 polish-noun: card is noun 擦亮劑 but example uses the VERB ("a soft cloth to polish the bracelet") and the Yue adds 擦亮劑 not in the English; collocation "a soft polish" still listed; #24 step label (場景) unreadable on J10 hero (j10-s0.png); #25 filler padding still in content/lines.json ("…before that tip tonight", "…a quiet extra if you like", "…the box is ready now", "…in this room tonight"); #26 J10 hero still crops both faces at top edge with lantern dominant (j10-s0.png); end/recap card still shows the finished lesson's hero (w3.png).
+NEW:
+28. Lexicon/Cantonese: appointment-noun glossed 約會 (= a date/romantic meet) — must be 預約 everywhere (D1 + W2 lines: "我打嚟係關於個約會", "可唔可以同 Mei 講關於個約會？"). wrap-up 收會 → 完結／總結個會; sore-throat example "我今日條喉嚨痛差咗" → 「我今日喉嚨痛得犀利咗」.
+29. Stress: follow-up (noun) /ˈfɑ.loʊ ˈʌp/ → /ˈfɑ.loʊ.ˌʌp/ (CMU AH2, primary on first); check other compound nouns (action item OK).
+30. Pedagogy: B1 quiz distractors trivially off-topic (W3 meeting quiz offers 「我叫的士」 beside 我明白，但係我擔心 / 我完全同意 — w3-s3.png). At A2/B1+ distractors must be same-scene plausible near-misses (e.g. 我唔明你講咩 / 我同意，冇問題).
+31. UI: listen-step speaker name is glued to the line with no gap ("KaiGood morning…", "TomI have had a fever…" d1-s2.png) — add a chip/line break. D1 speaker names (Kai/Tom) and cast avatars (two older male avatars) don't match the D1 hero (patient + curly-haired woman); no doctor is visible in the hero — make the doctor identifiable and cast avatars match.
+32. Pedagogy/Lexicon: D1 lines padded/illogical — "You have an appointment, and I can help you at the clinic today." and asking "do you have an allergy to this medicine?" before any medicine is mentioned. Rewrite as a natural consult (What brings you in today? / Are you allergic to any medicine?).
+33. Art: W2 (電郵口語) hero is a rotary desk phone call — fine for spoken follow-up but reads as W1 again; show laptop/email screen in focus so W1 ≠ W2. First W2 cast avatar renders as a blurred placeholder (w2-s0.png); F1–J1 path thumbs also show blurred placeholders at first paint (path.png) — verify they resolve and add width/height + eager load for above-the-fold thumbs.
+Screenshots: w3-s3.png, d1-s2.png, j10-s0.png, w2-s0.png, w3.png, path.png.
+
+
 Append '## Round 29 fixes' to CHANGELOG.md. Commit + push ff-only to origin main.
 Do NOT edit reviews/ or prompts/. Do not touch LICENSE.
 
