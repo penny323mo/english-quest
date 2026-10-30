@@ -1,0 +1,13 @@
+Phase 4 unlimited. Round 38. Read CURRICULUM.md + ART-STYLE.md + DUOLINGO-REF.md + SPEC.md + review/mockup-v1 (Penny-approved) + review/loop-r36/coder-audit.md (+ heroes-contact.jpg) first.
+cd /workspace/sidequest/english-quest. Never touch the grokbot repo or the nightly panes. No paid services. Report files under review/ stay local (never commit review/loop-r*/ or review/style-gap/).
+
+## FIRST: close every open item from the latest Coder live audit (review/loop-r36/coder-audit.md and the newest review/loop-r37/coder-audit.md if present). Anything still open live from #64 #72 #76–#84 comes first.
+## P0 STYLE batch 2 (#79): re-render the NEXT 15 off-style heroes in path order (after the batch done in round 37) in mockup-v1 soft flat pastel, adult proportions, no ink/hatching/realistic shading. Update the style manifest + contact sheet. Goal: all 57 on-style by round 40.
+
+## NEW FEATURE TARGET (≥3 new lessons)
+Add to CURRICULUM.md and ship end-to-end (12 beats, hero WebP 900×1200 in mockup-v1 style, lexicon CMUdict IPA, Kokoro audio, natural Cantonese, unique examples, same-scene distractors, shuffled answers, tests), slotted so CEFR stays non-decreasing and avg words/line never drops >0.5:
+- **R11 — Allergies and dietary needs / 食物敏感同戒口 · A2/B1** (allergic to peanuts, no pork, is there egg in it, vegetarian option, ask the kitchen, separate plate).
+- **W9 — Asking for annual leave / 請年假 · B1** (dates, handover, who covers, approval, email confirmation, public holiday).
+- **J16 — Engraving a gift / 首飾刻字 · B1** (initials, date, font, character limit, extra fee, ready in three days, spelling check).
+Every dialogue must pass the coherence, filler, because-padding, distractor and progression tests.
+Run tests + build; Lighthouse mobile Perf ≥98. Append "## Round 38" to CHANGELOG.md. Do not git commit.

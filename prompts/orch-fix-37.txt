@@ -18,3 +18,12 @@ Add to CURRICULUM.md and ship end-to-end (12 beats, hero WebP 900×1200 in mocku
 - **D9 — At the bank: the ATM kept my card / 銀行：櫃員機食咗張卡 · B1** (the machine kept my card, freeze the card, ID, new card in five working days, temporary limit).
 Every dialogue must pass the coherence, filler, because-padding, distractor and progression tests.
 Run tests + build; Lighthouse mobile Perf ≥98. Append "## Round 37" to CHANGELOG.md. Do not git commit.
+
+## ALSO CLOSE Coder round-36 live audit (bundle index-DhGyy_Yz.js) — review/loop-r36/coder-audit.md + heroes-contact.jpg
+fix-36 left #64 #72 #76 #77 #78 open LIVE. They are first priority this round; reviewer will fail the round if any is still open.
+- #79 P0 STYLE: 46/57 heroes are old inked comic style (only d6 d7 d8 j13 j14 r9 r10 t10 t11 w7 w8 match mockup-v1). This round re-render AT LEAST the first 15 off-style heroes in path order (f1–f6, j1, r1, j2, t1, d4, d5, j3, t2, r2) in mockup-v1 soft flat pastel (ART-STYLE §5; adult proportions, no baby faces, no hatching/ink/realistic shading). Make a contact sheet review/style-gap/heroes-r37.jpg of all 57 and add a test that lists any hero not in an ART-STYLE allowlist manifest.
+- #80 cut filler/stilted lines (T11 "this morning", exit-after-change; R10 "one latte", "is it to go"; lexicon to-go/repair examples).
+- #81 D8 rewrite so visit time is consistent and access line is natural.
+- #82 D8 hero: tenant alone on the phone (manager not in the room).
+- #83 R10 hero eager-load + cast avatar chips render.
+- #84 走杯→拎走, access 入屋→入單位, repair example natural.
