@@ -65,6 +65,7 @@ export type Line = {
   speakerLabel: string;
   text: string;
   glossYue: string;
+  hideGloss?: boolean;
   audio: string;
   audioSlow: string;
 };

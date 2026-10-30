@@ -12128,30 +12128,30 @@
       "lemma": "contactless",
       "pos": "adj",
       "senseId": "tap-pay",
-      "ipa": "/ˈkɑ.ntæ.ˌktlɛs/",
+      "ipa": "/ˈkɑn.tækt.ləs/",
       "syllables": [
         "con",
         "tact",
         "less"
       ],
       "syllableIpa": [
-        "ˈkɑ",
-        "ntæ",
-        "ˌktlɛs"
+        "ˈkɑn",
+        "tækt",
+        "ləs"
       ],
       "stress": 1,
       "arpabet": "K AA1 N T AE0 K T L EH2 S",
       "audio": "assets/audio/words/contactless-adj.mp3",
       "audioSlow": "assets/audio/words/contactless-adj-slow.mp3",
-      "glossYue": "免接觸",
-      "glossZh": "免接触",
-      "jyutping": "min5 zip3 zuk1",
+      "glossYue": "拍卡",
+      "glossZh": "拍卡",
+      "jyutping": "paak3 kaat1",
       "collocations": [
         "contactless pay"
       ],
-      "example": "Contactless pay is ready.",
-      "exampleYue": "可以拍卡付款。",
-      "say": "Contactless pay is ready.",
+      "example": "You can tap your card here.",
+      "exampleYue": "你可以喺度拍卡。",
+      "say": "You can tap your card here.",
       "variants": [],
       "note": "中間有 /l/。",
       "sources": [
@@ -12162,9 +12162,9 @@
       "senseMismatch": false,
       "cmuLemma": "contactless",
       "phrase": false,
-      "audioSha256": "a8e0864a1c7ee8785a710278ba07d55cfafc137869049c2046228846f6b05daf",
+      "audioSha256": "a2fc7065f0f0b326d10b612c4d83201d8782cae5792a0d6cd5800c6689fd77e2",
       "register": "櫃檯",
-      "usageNotes": "contactless pay。",
+      "usageNotes": "你可以喺度拍卡。",
       "pitfallsYue": "中間有 /l/。拍卡就得，唔使插卡。",
       "related": [
         "card-noun",
@@ -12172,11 +12172,11 @@
       ],
       "examples": [
         {
-          "en": "Contactless pay is ready.",
-          "yue": "可以拍卡付款。",
+          "en": "You can tap your card here.",
+          "yue": "你可以喺度拍卡。",
           "audio": "assets/audio/words/contactless-adj.mp3",
           "audioSlow": "assets/audio/words/contactless-adj-slow.mp3",
-          "say": "Contactless pay is ready."
+          "say": "You can tap your card here."
         },
         {
           "en": "Contactless pay is ready now.",
@@ -13032,7 +13032,7 @@
         "no shellfish"
       ],
       "example": "I cannot eat shellfish.",
-      "exampleYue": "我唔食貝類。",
+      "exampleYue": "我唔食得貝類。",
       "say": "I cannot eat shellfish.",
       "variants": [],
       "note": "有 /l/。",
@@ -13055,7 +13055,7 @@
       "examples": [
         {
           "en": "I cannot eat shellfish.",
-          "yue": "我唔食貝類。",
+          "yue": "我唔食得貝類。",
           "audio": "assets/audio/words/shellfish-noun.mp3",
           "audioSlow": "assets/audio/words/shellfish-noun-slow.mp3",
           "say": "I cannot eat shellfish."
@@ -13570,7 +13570,7 @@
       "lemma": "ingredients",
       "pos": "noun",
       "senseId": "contents",
-      "ipa": "/ˌɪ.ˈnɡɹi.di.ənts/",
+      "ipa": "/ɪn.ˈɡɹi.di.ənts/",
       "syllables": [
         "in",
         "gre",
@@ -13578,8 +13578,8 @@
         "ents"
       ],
       "syllableIpa": [
-        "ˌɪ",
-        "ˈnɡɹi",
+        "ɪn",
+        "ˈɡɹi",
         "di",
         "ənts"
       ],
@@ -14206,14 +14206,14 @@
       "lemma": "breakfast",
       "pos": "noun",
       "senseId": "morning-meal",
-      "ipa": "/ˈbɹɛ.kfəst/",
+      "ipa": "/ˈbɹɛk.fəst/",
       "syllables": [
         "break",
         "fast"
       ],
       "syllableIpa": [
-        "ˈbɹɛ",
-        "kfəst"
+        "ˈbɹɛk",
+        "fəst"
       ],
       "stress": 1,
       "arpabet": "B R EH1 K F AH0 S T",

@@ -35,91 +35,100 @@
       "id": "j6-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "How much does this cost?",
-      "glossYue": "",
+      "text": "How much does this cost today, and is the tax already in that price?",
+      "glossYue": "呢件今日幾多錢，稅包咗未？",
       "audio": "assets/audio/lines/j6-l1.mp3",
       "audioSlow": "assets/audio/lines/j6-l1-slow.mp3",
-      "say": "How much does this [[kˈɑst]]?"
+      "say": "How much does this [[kˈɑst]] today, and is the tax already in that price?",
+      "hideGloss": false
     },
     {
       "id": "j6-l2",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "This piece is on sale today.",
-      "glossYue": "",
+      "text": "This piece is on sale today, so the price is lower than it was yesterday.",
+      "glossYue": "呢件今日減價，所以平過尋日。",
       "audio": "assets/audio/lines/j6-l2.mp3",
       "audioSlow": "assets/audio/lines/j6-l2-slow.mp3",
-      "say": "This piece is on sale today."
+      "say": "This piece is on sale today, so the price is lower than it was yesterday.",
+      "hideGloss": true
     },
     {
       "id": "j6-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Is there a discount?",
-      "glossYue": "",
+      "text": "Is there a discount if I take the ring and the chain today?",
+      "glossYue": "如果我戒指同頸鏈一齊要，有冇折扣？",
       "audio": "assets/audio/lines/j6-l3.mp3",
       "audioSlow": "assets/audio/lines/j6-l3-slow.mp3",
-      "say": "Is there a discount?"
+      "say": "Is there a discount if I take the ring and the chain today?",
+      "hideGloss": true
     },
     {
       "id": "j6-l4",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Ten percent off, and tax is included.",
-      "glossYue": "",
+      "text": "Ten percent off, and tax is included, which makes the total much easier to see.",
+      "glossYue": "九折，稅包咗，總數會清楚好多。",
       "audio": "assets/audio/lines/j6-l4.mp3",
       "audioSlow": "assets/audio/lines/j6-l4-slow.mp3",
-      "say": "Ten percent off, and tax is included."
+      "say": "Ten percent off, and tax is included, which makes the total much easier to see.",
+      "hideGloss": false
     },
     {
       "id": "j6-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "That is within my budget.",
-      "glossYue": "",
+      "text": "That is within my budget, so I can take this one home today.",
+      "glossYue": "呢個價錢喺我預算內，我今日可以攞呢件返去。",
       "audio": "assets/audio/lines/j6-l5.mp3",
       "audioSlow": "assets/audio/lines/j6-l5-slow.mp3",
-      "say": "That is within my budget."
+      "say": "That is within my budget, so I can take this one home today.",
+      "hideGloss": true
     },
     {
       "id": "j6-l6",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "This one is more expensive.",
-      "glossYue": "",
+      "text": "This one is more expensive because the center stone is larger and clearer.",
+      "glossYue": "呢件貴啲，因為中間粒石大啲同清楚啲。",
       "audio": "assets/audio/lines/j6-l6.mp3",
       "audioSlow": "assets/audio/lines/j6-l6-slow.mp3",
-      "say": "This one is more expensive."
+      "say": "This one is more expensive because the center stone is larger and clearer.",
+      "hideGloss": true
     },
     {
       "id": "j6-l7",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "If you take both, the total is lower.",
-      "glossYue": "兩件一齊要，總數會平啲。",
+      "text": "If you take both, the total is lower, and I can wrap them as one gift.",
+      "glossYue": "如果你兩件一齊要，總數會平啲，我可以當一份禮包好。",
       "audio": "assets/audio/lines/j6-l7.mp3",
       "audioSlow": "assets/audio/lines/j6-l7-slow.mp3",
-      "say": "If you take both, the total is lower."
+      "say": "If you take both, the total is lower, and I can wrap them as one gift.",
+      "hideGloss": false
     },
     {
       "id": "j6-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "That price is worth it.",
-      "glossYue": "",
+      "text": "That price is worth it, because the finish should last for many years.",
+      "glossYue": "呢個價錢抵，因為個面可以耐好多年。",
       "audio": "assets/audio/lines/j6-l8.mp3",
       "audioSlow": "assets/audio/lines/j6-l8-slow.mp3",
-      "say": "That price is worth it."
+      "say": "That price is worth it, because the finish should last for many years.",
+      "hideGloss": true
     },
     {
       "id": "j6-m1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "The total is a good deal.",
-      "glossYue": "",
+      "text": "The total is a good deal, which is why many guests take both pieces.",
+      "glossYue": "總數好抵，所以好多客人兩件一齊要。",
       "audio": "assets/audio/lines/j6-m1.mp3",
       "audioSlow": "assets/audio/lines/j6-m1-slow.mp3",
-      "say": "The total is a good deal."
+      "say": "The total is a good deal, which is why many guests take both pieces.",
+      "hideGloss": true
     }
   ],
   "understand": [

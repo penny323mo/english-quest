@@ -34,51 +34,56 @@
       "id": "t2-l1",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Boarding pass, please.",
-      "glossYue": "登機證唔該。",
+      "text": "Boarding pass, please, and please have your passport ready.",
+      "glossYue": "登機證唔該，護照都預備好。",
       "audio": "assets/audio/lines/t2-l1.mp3",
       "audioSlow": "assets/audio/lines/t2-l1-slow.mp3",
-      "say": "Boarding pass, please."
+      "say": "Boarding pass, please, and please have your passport ready.",
+      "hideGloss": false
     },
     {
       "id": "t2-l2",
       "speaker": "ling",
       "speakerLabel": "Ling",
-      "text": "Here is my boarding pass.",
-      "glossYue": "我張登機證喺度。",
+      "text": "Here is my boarding pass, and here is my passport.",
+      "glossYue": "登機證喺度，護照都喺呢度。",
       "audio": "assets/audio/lines/t2-l2.mp3",
       "audioSlow": "assets/audio/lines/t2-l2-slow.mp3",
-      "say": "Here is my boarding pass."
+      "say": "Here is my boarding pass, and here is my passport.",
+      "hideGloss": true
     },
     {
       "id": "t2-l3",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Please put your liquids in the bin.",
-      "glossYue": "唔該將液體放喺個盤度。",
+      "text": "Please put your liquids in the bin, and take the laptop out.",
+      "glossYue": "唔該將液體放喺個盤度，電腦都攞出嚟。",
       "audio": "assets/audio/lines/t2-l3.mp3",
       "audioSlow": "assets/audio/lines/t2-l3-slow.mp3",
-      "say": "Please put your liquids in the bin."
+      "say": "Please put your liquids in the bin, and take the laptop out.",
+      "hideGloss": true
     },
     {
       "id": "t2-l4",
       "speaker": "ling",
       "speakerLabel": "Ling",
-      "text": "Which way to the gate?",
-      "glossYue": "去閘口邊邊行？",
+      "text": "Which way to the gate from this security line?",
+      "glossYue": "由呢條安檢隊去閘口邊邊行？",
       "audio": "assets/audio/lines/t2-l4.mp3",
       "audioSlow": "assets/audio/lines/t2-l4-slow.mp3",
-      "say": "Which way to the gate?"
+      "say": "Which way to the gate from this security line?",
+      "hideGloss": false
     },
     {
       "id": "t2-l5",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Straight ahead. Your gate is on the left.",
-      "glossYue": "直行就得。你個閘口喺左邊。",
+      "text": "Straight ahead. Your gate is on the left after the shops.",
+      "glossYue": "直行就得。你個閘口喺左邊，過咗啲舖頭。",
       "audio": "assets/audio/lines/t2-l5.mp3",
       "audioSlow": "assets/audio/lines/t2-l5-slow.mp3",
-      "say": "Straight ahead. Your gate is on the left."
+      "say": "Straight ahead. Your gate is on the left after the shops.",
+      "hideGloss": false
     }
   ],
   "understand": [

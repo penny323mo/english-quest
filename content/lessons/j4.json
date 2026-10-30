@@ -35,71 +35,78 @@
       "id": "j4-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "This gold is authentic.",
-      "glossYue": "呢件金係正貨。",
+      "text": "This gold is authentic, and the stamp is clear on the inside.",
+      "glossYue": "呢件金係正貨，內圈個印好清楚。",
       "audio": "assets/audio/lines/j4-l1.mp3",
       "audioSlow": "assets/audio/lines/j4-l1-slow.mp3",
-      "say": "This gold is [[əθˈɛntɪk]]."
+      "say": "This gold is [[əθˈɛntɪk]], and the stamp is clear on the inside.",
+      "hideGloss": false
     },
     {
       "id": "j4-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Is the diamond natural?",
-      "glossYue": "",
+      "text": "Is the diamond natural, or is it treated in a lab?",
+      "glossYue": "呢粒鑽石係咪天然，定係實驗室處理過？",
       "audio": "assets/audio/lines/j4-l2.mp3",
       "audioSlow": "assets/audio/lines/j4-l2-slow.mp3",
-      "say": "Is the [[dˈaɪmənd]] [[nˈætʃɚəl]]?"
+      "say": "Is the [[dˈaɪmənd]] [[nˈætʃɚəl]], or is it treated in a lab?",
+      "hideGloss": true
     },
     {
       "id": "j4-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Yes. It is certified.",
-      "glossYue": "",
+      "text": "Yes. It is certified, and the papers are in this folder.",
+      "glossYue": "係。有證書，文件喺呢個文件夾。",
       "audio": "assets/audio/lines/j4-l3.mp3",
       "audioSlow": "assets/audio/lines/j4-l3-slow.mp3",
-      "say": "Yes. It is [[sˈɜtəfˌaɪd]]."
+      "say": "Yes. It is [[sˈɜtəfˌaɪd]], and the papers are in this folder.",
+      "hideGloss": false
     },
     {
       "id": "j4-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I like this jade.",
-      "glossYue": "",
+      "text": "I like this jade, and the color is calm and even.",
+      "glossYue": "我鍾意呢件玉，顏色好平穩。",
       "audio": "assets/audio/lines/j4-l4.mp3",
       "audioSlow": "assets/audio/lines/j4-l4-slow.mp3",
-      "say": "I like this jade."
+      "say": "I like this jade, and the color is calm and even.",
+      "hideGloss": true
     },
     {
       "id": "j4-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "This setting is eighteen karat gold.",
-      "glossYue": "",
+      "text": "This setting is eighteen karat gold, and it holds the stone well.",
+      "glossYue": "呢個鑲托係十八開金，托住粒石好穩。",
       "audio": "assets/audio/lines/j4-l5.mp3",
       "audioSlow": "assets/audio/lines/j4-l5-slow.mp3",
-      "say": "This setting is eighteen [[kˈɛɹət]] gold."
+      "say": "This setting is eighteen [[kˈɛɹət]] gold, and it holds the stone well.",
+      "hideGloss": true
     },
     {
       "id": "j4-l7",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "The gold is heavier than the silver.",
-      "glossYue": "金重過銀。",
+      "text": "The gold is heavier than the silver, and you can feel it.",
+      "glossYue": "金重過銀，你隻手感覺到。",
       "audio": "assets/audio/lines/j4-l7.mp3",
       "audioSlow": "assets/audio/lines/j4-l7-slow.mp3",
-      "say": "The gold is heavier than the silver."
+      "say": "The gold is heavier than the silver, and you can feel it.",
+      "hideGloss": false
     },
     {
       "id": "j4-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The diamond is shinier than the jade.",
-      "glossYue": "鑽石亮過玉。",
+      "text": "The diamond is shinier than the jade when the light hits it.",
+      "glossYue": "燈光一照，鑽石亮過玉。",
       "audio": "assets/audio/lines/j4-l8.mp3",
       "audioSlow": "assets/audio/lines/j4-l8-slow.mp3",
-      "say": "The diamond is shinier than the jade."
+      "say": "The diamond is shinier than the jade when the light hits it.",
+      "hideGloss": false
     }
   ],
   "understand": [

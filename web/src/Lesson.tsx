@@ -193,6 +193,19 @@ function Goal({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
   );
 }
 
+function GlossLine({ text, hidden }: { text: string; hidden?: boolean }) {
+  const [open, setOpen] = useState(false);
+  if (!text.trim()) return null;
+  if (hidden && !open) {
+    return (
+      <button className="btn quiet gloss-reveal" type="button" onClick={() => setOpen(true)}>
+        顯示中文
+      </button>
+    );
+  }
+  return <span className="gloss">{text}</span>;
+}
+
 function Hear({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
   const [slow, setSlow] = useState(false);
   const [, setTick] = useState(0);
@@ -215,22 +228,24 @@ function Hear({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
           : -1;
         let seen = 0;
         return (
-          <button key={line.id} className="choice" type="button" onClick={() => playAsset(path)}>
-            <span className="who">{line.speakerLabel}</span>
-            <span className="line" lang="en">
-              {parts.map((part, i) => {
-                if (!part.trim()) return <span key={`${line.id}-${i}`}>{part}</span>;
-                const mine = seen;
-                seen += 1;
-                return (
-                  <span key={`${line.id}-${i}`} className={mine === idx ? "kword on" : "kword"}>
-                    {part}
-                  </span>
-                );
-              })}
-            </span>
-            <span className="gloss">{line.glossYue}</span>
-          </button>
+          <div key={line.id} className="choice hear-line">
+            <button className="hear-play" type="button" onClick={() => playAsset(path)}>
+              <span className="who">{line.speakerLabel}</span>
+              <span className="line" lang="en">
+                {parts.map((part, i) => {
+                  if (!part.trim()) return <span key={`${line.id}-${i}`}>{part}</span>;
+                  const mine = seen;
+                  seen += 1;
+                  return (
+                    <span key={`${line.id}-${i}`} className={mine === idx ? "kword on" : "kword"}>
+                      {part}
+                    </span>
+                  );
+                })}
+              </span>
+            </button>
+            <GlossLine text={line.glossYue} hidden={line.hideGloss} />
+          </div>
         );
       })}
       <button className="btn block" type="button" onClick={onNext}>聽完，繼續</button>
@@ -419,7 +434,7 @@ function Shadow({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
     <>
       <p className="who">跟住讀</p>
       <p className="line" lang="en">{line.text}</p>
-      <p className="gloss">{line.glossYue}</p>
+      <GlossLine text={line.glossYue} hidden={line.hideGloss} />
       <div className="row-btns">
         <button className="btn quiet" type="button" onClick={() => playAsset(line.audio)}>聽</button>
         <button className="btn ghost" type="button" onClick={() => playAsset(line.audioSlow)}>慢速</button>

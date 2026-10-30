@@ -34,51 +34,56 @@
       "id": "r2-l1",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "What would you like to order?",
-      "glossYue": "你想叫咩？",
+      "text": "What would you like to order from the menu today?",
+      "glossYue": "你今日想喺餐牌叫咩？",
       "audio": "assets/audio/lines/r2-l1.mp3",
       "audioSlow": "assets/audio/lines/r2-l1-slow.mp3",
-      "say": "What would you like to order?"
+      "say": "What would you like to order from the menu today?",
+      "hideGloss": false
     },
     {
       "id": "r2-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I'd like the chicken, please.",
-      "glossYue": "我想叫雞，唔該。",
+      "text": "I'd like the chicken, please, and a small salad with it.",
+      "glossYue": "我想叫雞，唔該，再加個細沙律。",
       "audio": "assets/audio/lines/r2-l2.mp3",
       "audioSlow": "assets/audio/lines/r2-l2-slow.mp3",
-      "say": "I'd like the [[tʃˈɪkən]] , please."
+      "say": "I'd like the [[tʃˈɪkən]] , please, and a small salad with it.",
+      "hideGloss": false
     },
     {
       "id": "r2-l3",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Would you like water or tea?",
-      "glossYue": "你想要水定茶？",
+      "text": "Would you like water or tea with your meal?",
+      "glossYue": "你想要水定茶配餐？",
       "audio": "assets/audio/lines/r2-l3.mp3",
       "audioSlow": "assets/audio/lines/r2-l3-slow.mp3",
-      "say": "Would you like water or tea?"
+      "say": "Would you like water or tea with your meal?",
+      "hideGloss": false
     },
     {
       "id": "r2-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can I have some water, please?",
-      "glossYue": "可唔可以畀我杯水？",
+      "text": "Can I have some water, please, and no ice in the glass?",
+      "glossYue": "可唔可以畀我杯水，唔該，唔好加冰。",
       "audio": "assets/audio/lines/r2-l4.mp3",
       "audioSlow": "assets/audio/lines/r2-l4-slow.mp3",
-      "say": "[[kən]] I have some water, please."
+      "say": "[[kən]] I have some water, please, and no ice in the glass?",
+      "hideGloss": true
     },
     {
       "id": "r2-l5",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Anything else?",
-      "glossYue": "仲有冇其他？",
+      "text": "Anything else for the table, or is that everything?",
+      "glossYue": "檯上仲有冇其他，定係就咁？",
       "audio": "assets/audio/lines/r2-l5.mp3",
       "audioSlow": "assets/audio/lines/r2-l5-slow.mp3",
-      "say": "Anything else?"
+      "say": "Anything else for the table, or is that everything?",
+      "hideGloss": true
     }
   ],
   "understand": [

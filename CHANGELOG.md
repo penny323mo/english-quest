@@ -1,5 +1,13 @@
 # Changelog — English Quest
 
+## Round 22 fixes
+- GitHub Actions checks out the repo, installs from the lockfile with Node 20, then runs typecheck, the test suite, and the production build on every push and every pull request. The workflow does not deploy Pages and does not call a paid API.
+- The Piper phoneme test skips, and logs why, when the voice file, the venv, or the Piper module is missing. When Piper is present the jewellery and weak-form checks still run. A separate test covers the skip decision.
+- The path rail runs through the orb column, so lesson titles stay clear of the line.
+- Mean words per dialogue line no longer fall as the CEFR band rises. A test compares every lesson with every lesson in a lower band. A1 and A1/A2 still show every Cantonese gloss. A2 shows about half to seventy percent of the lines. A2/B1 shows about thirty to forty-five percent. Hidden lines keep a stored gloss and open it with 「顯示中文」. Each hear card grows with its line, so the reveal sits under the English and can be tapped.
+- contactless is /ˈkɑn.tækt.ləs/, the example is “You can tap your card here.”, and the gloss is 拍卡. ingredients and breakfast no longer start a syllable on ng, kt, or kf. “I cannot eat shellfish.” is 我唔食得貝類。 A test rejects those illegal onsets.
+- The seventeen lesson scenes and the Mei, Tom, Ana, and Kai portraits are one bright soft-rounded cartoon. Each picture shows that lesson’s place: the shop, the counter, the restaurant, security, or the hotel desk. 小燈 stays the lantern.
+
 ## Round 21 fixes
 - Learning progress stays on this device. IndexedDB is version 2 and reopens after `close`, `versionchange`, or a failed read/write, instead of reusing a dead connection. Records carry `schemaVersion`. Version 1 records migrate forward without dropping XP, streak, finished lessons, or FSRS cards.
 - If a save fails, a 「未儲存」 banner stays on the screen with the reason and a 「再試」 button until a later save works. If the saved record cannot be read, the app stops writing and shows 「再試」 rather than replacing it with an empty profile. A private-mode browser that blocks IndexedDB can still start an empty session and does not call put.

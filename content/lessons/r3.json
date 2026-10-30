@@ -34,91 +34,100 @@
       "id": "r3-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I'd like the chicken, please.",
-      "glossYue": "",
+      "text": "I'd like the chicken, please, and I have a note about the sauce.",
+      "glossYue": "我想叫雞，唔該，醬汁我有嘢要講。",
       "audio": "assets/audio/lines/r3-l1.mp3",
       "audioSlow": "assets/audio/lines/r3-l1-slow.mp3",
-      "say": "I'd like the chicken, please."
+      "say": "I'd like the chicken, please, and I have a note about the sauce.",
+      "hideGloss": false
     },
     {
       "id": "r3-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I am allergic to peanuts.",
-      "glossYue": "我對花生過敏。",
+      "text": "I am allergic to peanuts, and I cannot eat them at all.",
+      "glossYue": "我對花生過敏，完全唔食得。",
       "audio": "assets/audio/lines/r3-l2.mp3",
       "audioSlow": "assets/audio/lines/r3-l2-slow.mp3",
-      "say": "I am [[əlˈɜdʒɪk]] to [[pˈinəts]]."
+      "say": "I am [[əlˈɜdʒɪk]] to [[pˈinəts]], and I cannot eat them at all.",
+      "hideGloss": false
     },
     {
       "id": "r3-l3",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "We will check the ingredients.",
-      "glossYue": "",
+      "text": "We will check the ingredients, and I will tell you what is in the dish.",
+      "glossYue": "我哋會睇吓成分，再話你知碟菜入面有咩。",
       "audio": "assets/audio/lines/r3-l3.mp3",
       "audioSlow": "assets/audio/lines/r3-l3-slow.mp3",
-      "say": "We will check the ingredients."
+      "say": "We will check the ingredients, and I will tell you what is in the dish.",
+      "hideGloss": true
     },
     {
       "id": "r3-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could I have the sauce on the side?",
-      "glossYue": "",
+      "text": "Could I have the sauce on the side, and not on the chicken?",
+      "glossYue": "醬可唔可以放喺旁邊，唔好淋喺雞上面？",
       "audio": "assets/audio/lines/r3-l4.mp3",
       "audioSlow": "assets/audio/lines/r3-l4-slow.mp3",
-      "say": "Could I have the sauce [[ˈɔn]] the side?"
+      "say": "Could I have the sauce [[ˈɔn]] the side, and not on the chicken?",
+      "hideGloss": false
     },
     {
       "id": "r3-l5",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Thank you for telling me.",
-      "glossYue": "",
+      "text": "Thank you for telling me, and I will mark it on the order.",
+      "glossYue": "多謝你話我知，我會寫低喺單上面。",
       "audio": "assets/audio/lines/r3-l5.mp3",
       "audioSlow": "assets/audio/lines/r3-l5-slow.mp3",
-      "say": "Thank you for telling me."
+      "say": "Thank you for telling me, and I will mark it on the order.",
+      "hideGloss": true
     },
     {
       "id": "r3-a1",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "What would you like to order?",
-      "glossYue": "",
+      "text": "What would you like to order, and do you have any food notes?",
+      "glossYue": "你想叫咩？有冇飲食要留意？",
       "audio": "assets/audio/lines/r3-a1.mp3",
       "audioSlow": "assets/audio/lines/r3-a1-slow.mp3",
-      "say": "What would you like to order?"
+      "say": "What would you like to order, and do you have any food notes?",
+      "hideGloss": true
     },
     {
       "id": "r3-a2",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "The sauce is spicy.",
-      "glossYue": "",
+      "text": "The sauce is spicy, and it has a little heat in it.",
+      "glossYue": "個醬好辣，有少少熱。",
       "audio": "assets/audio/lines/r3-a2.mp3",
       "audioSlow": "assets/audio/lines/r3-a2-slow.mp3",
-      "say": "The sauce is spicy."
+      "say": "The sauce is spicy, and it has a little heat in it.",
+      "hideGloss": true
     },
     {
       "id": "r3-m1",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Does this dish contain peanuts?",
-      "glossYue": "",
+      "text": "Does this dish contain peanuts, or is it made without them?",
+      "glossYue": "呢道菜有冇花生，定係完全冇？",
       "audio": "assets/audio/lines/r3-m1.mp3",
       "audioSlow": "assets/audio/lines/r3-m1-slow.mp3",
-      "say": "Does this dish contain peanuts?"
+      "say": "Does this dish contain peanuts, or is it made without them?",
+      "hideGloss": false
     },
     {
       "id": "r3-m2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could I have it without nuts?",
-      "glossYue": "",
+      "text": "Could I have it without nuts, and with the sauce on the side?",
+      "glossYue": "可唔可以唔要果仁，醬放旁邊？",
       "audio": "assets/audio/lines/r3-m2.mp3",
       "audioSlow": "assets/audio/lines/r3-m2-slow.mp3",
-      "say": "Could I have it [[wɪθˈaʊt]] nuts?"
+      "say": "Could I have it [[wɪθˈaʊt]] nuts, and with the sauce on the side?",
+      "hideGloss": false
     }
   ],
   "understand": [

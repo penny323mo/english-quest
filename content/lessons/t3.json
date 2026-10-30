@@ -35,81 +35,89 @@
       "id": "t3-l1",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Do you have a reservation?",
-      "glossYue": "",
+      "text": "Do you have a reservation under a name I can find?",
+      "glossYue": "你有冇訂房？我可以搵個名。",
       "audio": "assets/audio/lines/t3-l1.mp3",
       "audioSlow": "assets/audio/lines/t3-l1-slow.mp3",
-      "say": "Do you have a reservation?"
+      "say": "Do you have a reservation under a name I can find?",
+      "hideGloss": false
     },
     {
       "id": "t3-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have a reservation under Tom.",
-      "glossYue": "我用 Tom 個名訂咗房。",
+      "text": "I have a reservation under Tom, and I am here for two nights.",
+      "glossYue": "我用 Tom 個名訂咗房，住兩個晚上。",
       "audio": "assets/audio/lines/t3-l2.mp3",
       "audioSlow": "assets/audio/lines/t3-l2-slow.mp3",
-      "say": "I have a reservation under Tom."
+      "say": "I have a reservation under Tom, and I am here for two nights.",
+      "hideGloss": false
     },
     {
       "id": "t3-l3",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Your room is a double with a view.",
-      "glossYue": "",
+      "text": "Your room is a double with a view, and the window faces the harbor.",
+      "glossYue": "你間房係雙人房，有景，窗向住海港。",
       "audio": "assets/audio/lines/t3-l3.mp3",
       "audioSlow": "assets/audio/lines/t3-l3-slow.mp3",
-      "say": "Your room is a double with a view."
+      "say": "Your room is a double with a view, and the window faces the harbor.",
+      "hideGloss": false
     },
     {
       "id": "t3-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could you tell me the wifi password?",
-      "glossYue": "可唔可以話我知無線網絡密碼？",
+      "text": "Could you tell me the wifi password, and how I join the network?",
+      "glossYue": "可唔可以話我知無線網絡密碼，同點樣連線？",
       "audio": "assets/audio/lines/t3-l4.mp3",
       "audioSlow": "assets/audio/lines/t3-l4-slow.mp3",
-      "say": "Could you tell me the [[wˈaɪfˌaɪ]] [[pˈæswˌɜd]]?"
+      "say": "Could you tell me the [[wˈaɪfˌaɪ]] [[pˈæswˌɜd]], and how I join the network?",
+      "hideGloss": false
     },
     {
       "id": "t3-l5",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Here is your key card.",
-      "glossYue": "",
+      "text": "Here is your key card, and the room is on the third floor.",
+      "glossYue": "房卡喺度，房間喺三樓。",
       "audio": "assets/audio/lines/t3-l5.mp3",
       "audioSlow": "assets/audio/lines/t3-l5-slow.mp3",
-      "say": "Here is your key card."
+      "say": "Here is your key card, and the room is on the third floor.",
+      "hideGloss": false
     },
     {
       "id": "t3-m1",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Breakfast is included.",
-      "glossYue": "",
+      "text": "Breakfast is included, and it starts early in the morning.",
+      "glossYue": "早餐已經包咗，朝早開始。",
       "audio": "assets/audio/lines/t3-m1.mp3",
       "audioSlow": "assets/audio/lines/t3-m1-slow.mp3",
-      "say": "Breakfast is included."
+      "say": "Breakfast is included, and it starts early in the morning.",
+      "hideGloss": true
     },
     {
       "id": "t3-m2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could I have a late checkout?",
-      "glossYue": "",
+      "text": "Could I have a late checkout, and leave my bags here?",
+      "glossYue": "可唔可以遲啲退房，行李放喺度？",
       "audio": "assets/audio/lines/t3-m2.mp3",
       "audioSlow": "assets/audio/lines/t3-m2-slow.mp3",
-      "say": "Could I have a late checkout?"
+      "say": "Could I have a late checkout, and leave my bags here?",
+      "hideGloss": true
     },
     {
       "id": "t3-m3",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "The elevator is on the left.",
-      "glossYue": "",
+      "text": "The elevator is on the left, and it goes straight to your floor.",
+      "glossYue": "升降機喺左邊，直上你嗰層。",
       "audio": "assets/audio/lines/t3-m3.mp3",
       "audioSlow": "assets/audio/lines/t3-m3-slow.mp3",
-      "say": "The elevator is on the left."
+      "say": "The elevator is on the left, and it goes straight to your floor.",
+      "hideGloss": true
     }
   ],
   "understand": [

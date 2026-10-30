@@ -28,6 +28,10 @@ test("every taught item has IPA, stress, syllables, gloss, sources, and matching
     assert.ok(item.ipa.startsWith("/") && item.ipa.endsWith("/"), item.id);
     assert.ok(item.syllables.length >= 1, item.id);
     assert.equal(item.syllables.length, item.syllableIpa.length, item.id);
+    for (const syl of item.syllableIpa) {
+      const bare = syl.replace(/^[ˈˌ.]+/, "");
+      assert.equal(/^(?:n[gɡ]|kt|kf|nt)/.test(bare), false, `${item.id} ${syl}`);
+    }
     assert.equal(typeof item.stress, "number", item.id);
     assert.ok(Number.isInteger(item.stress) && item.stress >= 0 && item.stress <= item.syllables.length, item.id);
     if (item.stress === 0) {
@@ -115,7 +119,35 @@ test("heteronym bank keeps sense-specific vowels and audio", () => {
   assert.match(pages, /弱讀，冇重音/);
 });
 
-test("piper say matches the taught jewellery and weak forms", () => {
+function piperUnavailable({ pythonExists, voiceExists, status, errorCode, stderr }) {
+  if (!pythonExists) return "Piper python is missing";
+  if (!voiceExists) return "Piper voice file is missing";
+  if (errorCode === "ENOENT") return "Piper spawn failed: file not found";
+  const err = stderr || "";
+  if (status !== 0 && /ModuleNotFoundError|No module named|FileNotFoundError|No such file or directory/.test(err)) {
+    return "Piper module or voice failed to load";
+  }
+  return "";
+}
+
+test("piper skip reason is set when the voice or module is missing", () => {
+  assert.match(piperUnavailable({ pythonExists: false, voiceExists: true, status: 1, errorCode: "", stderr: "" }), /python/);
+  assert.match(piperUnavailable({ pythonExists: true, voiceExists: false, status: 1, errorCode: "", stderr: "" }), /voice/);
+  assert.match(piperUnavailable({ pythonExists: true, voiceExists: true, status: 1, errorCode: "ENOENT", stderr: "" }), /not found/);
+  assert.match(
+    piperUnavailable({
+      pythonExists: true,
+      voiceExists: true,
+      status: 1,
+      errorCode: "",
+      stderr: "ModuleNotFoundError: No module named piper",
+    }),
+    /module/,
+  );
+  assert.equal(piperUnavailable({ pythonExists: true, voiceExists: true, status: 0, errorCode: "", stderr: "" }), "");
+});
+
+test("piper say matches the taught jewellery and weak forms", (t) => {
   const lines = JSON.parse(fs.readFileSync(path.join(root, "content/lines.json"), "utf8"));
   const j1 = lines.find((row) => row.id === "j1-l1");
   assert.ok(j1, "j1-l1");
@@ -126,6 +158,7 @@ test("piper say matches the taught jewellery and weak forms", () => {
   assert.equal(byId["the-art-vowel"].example, "The aisle seat is free.");
   assert.match(says[5], /^\[\[ðˈi\]\] aisle seat is free\./);
   const py = "/workspace/nightly/PREP-english-app/.venv/bin/python";
+  const voice = path.join(root, "PREP", "voices", "en_US-ljspeech-medium.onnx");
   const script = `
 import sys
 from pathlib import Path
@@ -136,7 +169,21 @@ voice.config.espeak_voice = "en-us"
 for s in sys.argv[1:]:
     print("".join("".join(part) for part in voice.phonemize(s)))
 `;
-  const res = spawnSync(py, ["-c", script, ...says], { encoding: "utf8" });
+  const pythonExists = fs.existsSync(py);
+  const voiceExists = fs.existsSync(voice);
+  const res = pythonExists && voiceExists ? spawnSync(py, ["-c", script, ...says], { encoding: "utf8" }) : { status: 1, stderr: "", error: null };
+  const reason = piperUnavailable({
+    pythonExists,
+    voiceExists,
+    status: res.status ?? 1,
+    errorCode: res.error && res.error.code ? res.error.code : "",
+    stderr: `${res.stderr || ""}\n${res.error || ""}`,
+  });
+  if (reason) {
+    console.log(`skip piper phoneme check: ${reason}`);
+    t.skip(reason);
+    return;
+  }
   assert.equal(res.status, 0, res.stderr);
   const phones = res.stdout.trim().split("\n");
   assert.equal(phones.length, says.length);

@@ -31,51 +31,56 @@
       "id": "j3-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "This necklace is beautiful.",
-      "glossYue": "呢條頸鏈好靚。",
+      "text": "This necklace is beautiful, and it sits lightly on your neck.",
+      "glossYue": "呢條頸鏈好靚，而且戴落好輕。",
       "audio": "assets/audio/lines/j3-l1.mp3",
       "audioSlow": "assets/audio/lines/j3-l1-slow.mp3",
-      "say": "This necklace is beautiful."
+      "say": "This necklace is beautiful, and it sits lightly on your neck.",
+      "hideGloss": false
     },
     {
       "id": "j3-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I like this bracelet.",
-      "glossYue": "我鍾意呢條手鏈。",
+      "text": "I like this bracelet, and the clasp is easy to open.",
+      "glossYue": "我鍾意呢隻手鈪，個扣都易開。",
       "audio": "assets/audio/lines/j3-l2.mp3",
       "audioSlow": "assets/audio/lines/j3-l2-slow.mp3",
-      "say": "I like this [[bɹˈeɪslət.]]"
+      "say": "I like this [[bɹˈeɪslət.]], and the clasp is easy to open.",
+      "hideGloss": false
     },
     {
       "id": "j3-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "We have a pair of pearl earrings.",
-      "glossYue": "我哋有一對珍珠耳環。",
+      "text": "We have a pair of pearl earrings, and they match this necklace.",
+      "glossYue": "我哋有一對珍珠耳環，同呢條頸鏈好襯。",
       "audio": "assets/audio/lines/j3-l3.mp3",
       "audioSlow": "assets/audio/lines/j3-l3-slow.mp3",
-      "say": "We have a pair [[əv]] pearl earrings."
+      "say": "We have a pair [[əv]] pearl earrings, and they match this necklace.",
+      "hideGloss": false
     },
     {
       "id": "j3-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "May I see these earrings?",
-      "glossYue": "可唔可以睇吓呢啲耳環？",
+      "text": "May I see these earrings, and the matching necklace too?",
+      "glossYue": "可唔可以睇吓呢對耳環，同埋套裝？",
       "audio": "assets/audio/lines/j3-l4.mp3",
       "audioSlow": "assets/audio/lines/j3-l4-slow.mp3",
-      "say": "May I see these earrings?"
+      "say": "May I see these earrings, and the matching necklace too?",
+      "hideGloss": true
     },
     {
       "id": "j3-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Of course. This pair is beautiful.",
-      "glossYue": "當然。呢對好靚。",
+      "text": "Of course. This pair is beautiful, and I can show you the set.",
+      "glossYue": "當然。呢對好靚，我可以畀你睇成套。",
       "audio": "assets/audio/lines/j3-l5.mp3",
       "audioSlow": "assets/audio/lines/j3-l5-slow.mp3",
-      "say": "[[əv kˈɔɹs.]] This pair is beautiful."
+      "say": "[[əv kˈɔɹs.]] This pair is beautiful, and I can show you the set.",
+      "hideGloss": true
     }
   ],
   "understand": [

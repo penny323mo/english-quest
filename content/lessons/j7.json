@@ -34,101 +34,111 @@
       "id": "j7-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "The total is ready.",
-      "glossYue": "",
+      "text": "The total is ready, and I can read it out so you can check it.",
+      "glossYue": "總數計好，我可以讀出嚟畀你對一對。",
       "audio": "assets/audio/lines/j7-l1.mp3",
       "audioSlow": "assets/audio/lines/j7-l1-slow.mp3",
-      "say": "The total is ready."
+      "say": "The total is ready, and I can read it out so you can check it.",
+      "hideGloss": false
     },
     {
       "id": "j7-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will pay by card.",
-      "glossYue": "",
+      "text": "I will pay by card, because I do not have enough cash with me.",
+      "glossYue": "我會拍卡，因為現金唔夠。",
       "audio": "assets/audio/lines/j7-l2.mp3",
       "audioSlow": "assets/audio/lines/j7-l2-slow.mp3",
-      "say": "I will pay by card."
+      "say": "I will pay by card, because I do not have enough cash with me.",
+      "hideGloss": true
     },
     {
       "id": "j7-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "This purchase is tax-free.",
-      "glossYue": "呢單可以免稅。",
+      "text": "This purchase is tax-free for you, which means you can claim the tax later.",
+      "glossYue": "呢單係退稅，你可以遲啲申返稅。",
       "audio": "assets/audio/lines/j7-l3.mp3",
       "audioSlow": "assets/audio/lines/j7-l3-slow.mp3",
-      "say": "This purchase is tax-free."
+      "say": "This purchase is tax-free for you, which means you can claim the tax later.",
+      "hideGloss": false
     },
     {
       "id": "j7-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Here is my passport.",
-      "glossYue": "",
+      "text": "Here is my passport, so you can stamp the tax-free form for me.",
+      "glossYue": "護照喺度，你可以喺退稅表蓋印。",
       "audio": "assets/audio/lines/j7-l4.mp3",
       "audioSlow": "assets/audio/lines/j7-l4-slow.mp3",
-      "say": "Here is my passport."
+      "say": "Here is my passport, so you can stamp the tax-free form for me.",
+      "hideGloss": true
     },
     {
       "id": "j7-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "I can wrap the gift.",
-      "glossYue": "",
+      "text": "I can wrap the gift, and I will add a card if you want one.",
+      "glossYue": "我可以包禮盒，如果你想要，我加張卡。",
       "audio": "assets/audio/lines/j7-l5.mp3",
       "audioSlow": "assets/audio/lines/j7-l5-slow.mp3",
-      "say": "I can [[ɹˈæp]] the gift."
+      "say": "I can [[ɹˈæp]] the gift, and I will add a card if you want one.",
+      "hideGloss": false
     },
     {
       "id": "j7-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could I pay with cash?",
-      "glossYue": "",
+      "text": "Could I pay with cash if the card machine is busy right now?",
+      "glossYue": "如果讀卡機忙，可唔可以用現金？",
       "audio": "assets/audio/lines/j7-l6.mp3",
       "audioSlow": "assets/audio/lines/j7-l6-slow.mp3",
-      "say": "Could I pay with cash?"
+      "say": "Could I pay with cash if the card machine is busy right now?",
+      "hideGloss": true
     },
     {
       "id": "j7-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could you wrap this?",
-      "glossYue": "",
+      "text": "Could you wrap this, so I can carry it home without a bag?",
+      "glossYue": "可唔可以包好，等我唔使袋都可以攞返屋企？",
       "audio": "assets/audio/lines/j7-l7.mp3",
       "audioSlow": "assets/audio/lines/j7-l7-slow.mp3",
-      "say": "Could you wrap this?"
+      "say": "Could you wrap this, so I can carry it home without a bag?",
+      "hideGloss": true
     },
     {
       "id": "j7-m1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Would you like to pay by card?",
-      "glossYue": "",
+      "text": "Would you like to pay by card, or would cash be easier for you today?",
+      "glossYue": "你想拍卡，定係今日用現金方便啲？",
       "audio": "assets/audio/lines/j7-m1.mp3",
       "audioSlow": "assets/audio/lines/j7-m1-slow.mp3",
-      "say": "Would you like to pay by card?"
+      "say": "Would you like to pay by card, or would cash be easier for you today?",
+      "hideGloss": true
     },
     {
       "id": "j7-m2",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Here is your receipt.",
-      "glossYue": "",
+      "text": "Here is your receipt, which you should keep with the tax-free form.",
+      "glossYue": "收據喺度，你要同退稅表一齊留低。",
       "audio": "assets/audio/lines/j7-m2.mp3",
       "audioSlow": "assets/audio/lines/j7-m2-slow.mp3",
-      "say": "Here is your [[ɹɪsˈit]]."
+      "say": "Here is your [[ɹɪsˈit]], which you should keep with the tax-free form.",
+      "hideGloss": false
     },
     {
       "id": "j7-m3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Please sign the refund form.",
-      "glossYue": "",
+      "text": "Please sign the refund form if you want the tax back at the airport.",
+      "glossYue": "如果你想喺機場攞返稅，唔該喺退稅表簽名。",
       "audio": "assets/audio/lines/j7-m3.mp3",
       "audioSlow": "assets/audio/lines/j7-m3-slow.mp3",
-      "say": "Please sign the [[ɹˈifˌʌnd]] form."
+      "say": "Please sign the [[ɹˈifˌʌnd]] form if you want the tax back at the airport.",
+      "hideGloss": true
     }
   ],
   "understand": [

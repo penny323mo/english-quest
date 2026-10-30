@@ -163,7 +163,6 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   const shippedOnPath = flatPath.filter((entry) => !entry.soon).map((entry) => entry.id);
   assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "J6", "J7"]);
   assert.equal(flatPath.find((entry) => entry.id === "J8").cefr, "B1");
-  const glossCount = (lesson) => lesson.dialogue.filter((line) => line.glossYue.trim()).length;
   const said = (lesson) => lesson.dialogue.map((line) => line.text).join("\n");
   assert.ok(j4.dialogue.length >= 6 && j4.dialogue.length <= 10);
   assert.ok(j5.dialogue.length >= 6 && j5.dialogue.length <= 10);
@@ -172,15 +171,29 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   assert.match(said(j4), /shinier/);
   assert.match(said(j5), /How does it feel/);
   assert.match(said(j6), /If you take both/);
-  assert.ok(glossCount(j4) < j4.dialogue.length);
-  assert.ok(glossCount(j5) < j5.dialogue.length);
-  assert.ok(glossCount(j6) < j6.dialogue.length);
   assert.ok(t3.dialogue.length > j5.dialogue.length);
   assert.ok(r3.dialogue.length > t3.dialogue.length);
   assert.ok(j7.dialogue.length > j6.dialogue.length);
-  assert.ok(glossCount(t3) / t3.dialogue.length <= glossCount(j5) / j5.dialogue.length);
-  assert.ok(glossCount(r3) < glossCount(t3));
-  assert.ok(glossCount(j7) / j7.dialogue.length <= glossCount(j6) / j6.dialogue.length);
+  const wordRe = /[A-Za-z']+/g;
+  const meanWords = (lesson) => {
+    const total = lesson.dialogue.reduce((sum, line) => sum + (line.text.match(wordRe) || []).length, 0);
+    return total / lesson.dialogue.length;
+  };
+  const bandRank = { A1: 1, "A1/A2": 2, A2: 3, "A2/B1": 4, B1: 5, "B1/B2": 6, B2: 7 };
+  for (const lesson of lessons) {
+    const mean = meanWords(lesson);
+    for (const other of lessons) {
+      if (bandRank[other.cefr] < bandRank[lesson.cefr]) {
+        assert.ok(mean + 1e-9 >= meanWords(other), `${lesson.id} ${mean.toFixed(2)} < ${other.id} ${meanWords(other).toFixed(2)}`);
+      }
+    }
+    const visible = lesson.dialogue.filter((line) => line.glossYue.trim() && !line.hideGloss).length / lesson.dialogue.length;
+    for (const line of lesson.dialogue) assert.ok(line.glossYue.trim(), `${lesson.id} ${line.id} gloss`);
+    if (lesson.cefr === "A1" || lesson.cefr === "A1/A2") assert.equal(visible, 1, lesson.id);
+    if (lesson.cefr === "A2") assert.ok(visible >= 0.5 && visible <= 0.7, `${lesson.id} visible ${visible}`);
+    if (lesson.cefr === "A2/B1") assert.ok(visible >= 0.28 && visible <= 0.45, `${lesson.id} visible ${visible}`);
+  }
+  assert.match(fs.readFileSync(path.join(root, "web/src/Lesson.tsx"), "utf8"), /顯示中文/);
   const decks = JSON.parse(fs.readFileSync(path.join(root, "content/decks.json"), "utf8"));
   const jewellery = decks.decks.find((deck) => deck.id === "jewellery");
   assert.ok(jewellery.lemmas.includes("gold-noun"));
