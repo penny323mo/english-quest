@@ -1,0 +1,20 @@
+Phase 4 unlimited. Round 35. Read CURRICULUM.md + ART-STYLE.md + DUOLINGO-REF.md + SPEC.md + review/mockup-v1 (Penny-approved) + review/loop-r33/coder-audit.md first.
+cd /workspace/sidequest/english-quest. Never touch the grokbot repo or the nightly panes. No paid services. Report files under review/ stay local (never commit review/loop-r*/ or review/style-gap/).
+
+## FIRST: close Coder round-33 live audit (bundle index-CxyLk8jJ.js) — see review/loop-r33/coder-audit.md
+- #59 MAJOR: correct answer is ALWAYS option A (all 144 understand items answer=0, no shuffle). Shuffle choices per attempt (seeded, stable on re-render), map the answer correctly, and add a test that fails if the correct option sits first in every item of a lesson.
+- #60 MAJOR: meaning-quiz distractors must come from the same scene and differ by one key detail (dose, time, quantity, negation, who). No cross-lesson throwaways like 我想改航班 in a pharmacy. Harder at B1/B2. Add a content test (distractor must share ≥1 lemma or topic tag with the lesson).
+- #61 P0 STYLE (Penny's top ship blocker): regenerate D6 and J13 heroes (and any hero with crosshatching/realistic comic faces, check R7 W6 T9 too) in mockup-v1 style: soft flat pastel, rounded shapes, thin warm outline, no hatching, simple cute faces. Compare side by side with review/mockup-v1/02-exercise.png before accepting. List each regenerated hero in CHANGELOG.
+- #62 MAJOR dialogue coherence: D6 (pharmacist does not write prescriptions; answer the symptom question; natural pharmacy flow), R8 (ETA only after Tom asks how long; staff never says "your shop"; hero caller must match Tom), J13 (answer the discount question with a real price/condition; no "than we hoped"; no undefined "new schedule"; no "trays"; yue 電郵/請將).
+- #63 filler in D6/R8/J13 (later on, once more here, from now, for us, later today, very clearly for you, gladly, full working day, with care, well, whole office team) — same filler test as #55.
+- #64 lexicon: pay on delivery /ˌpeɪ ɑn dɪ.ˈlɪ.vɚ.i/ + correct stress label; address noun /ˈæ.drɛs/ (US) with verb noted; tablet 藥片; natural pharmacist example.
+- #65 D6 intro avatar chips are blank circles — show Mei and Tom faces.
+- Carried from fix-34 if still open live: #53 #54 #55 #56 #57.
+
+## NEW FEATURE TARGET (≥3 new lessons)
+Add to CURRICULUM.md and ship end-to-end (12 beats, hero WebP 900×1200 in mockup-v1 soft flat pastel cartoon per ART-STYLE §5, lexicon CMUdict IPA, Kokoro audio, natural Cantonese, examples unique per lemma, same-scene distractors, tests), slotted by CEFR so the path stays non-decreasing and avg words/line rises smoothly:
+- **D7 — At the hair salon / 剪頭髮 · A2** (a trim, shorter at the sides, fringe, wash and blow-dry, how much, book next time).
+- **W8 — Team meeting update / 開會報告進度 · B1** (on track, behind schedule, I'll follow up, by Friday, any questions, action points).
+- **J14 — Custom jewellery design / 訂造首飾 · B1/B2** (budget, sketch, setting, white gold vs yellow gold, deposit, ready in four weeks).
+Every dialogue must pass the coherence test (Q->A, no role swaps, no duplicate offers, no answer before its question) and the filler test.
+Run tests + build; Lighthouse mobile Perf ≥98. Append '## Round 35' to CHANGELOG.md. Do not git commit.

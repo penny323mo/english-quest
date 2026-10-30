@@ -509,7 +509,7 @@ a { color: inherit; }
   flex-direction: column;
   gap: 10px;
 }
-.sheet h2 { font-size: 1.55rem; line-height: 1.15; }
+.sheet h2 { font-family: var(--sans); font-weight: 800; font-size: 1.55rem; line-height: 1.15; }
 .line { font-family: var(--sans); font-weight: 800; font-size: 1.28rem; line-height: 1.35; }
 .choice-letter {
   flex: none;

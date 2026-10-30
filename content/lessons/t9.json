@@ -3,8 +3,8 @@
   "unit": "T",
   "titleYue": "航班延誤",
   "titleEn": "A delayed flight",
-  "canDoYue": "你識聽航班取消，再問改簽、候補、酒店券同退款。",
-  "canDoEn": "Hear that a flight is cancelled, then ask about rebooking, a hotel voucher, and a refund.",
+  "canDoYue": "你識聽航班延誤，再問改簽、酒店代用券同退款。",
+  "canDoEn": "Hear that a flight is delayed, then ask about rebooking, a hotel voucher, and a refund.",
   "minutes": 12,
   "hero": "assets/art/lessons/t9.webp",
   "cast": [
@@ -35,11 +35,11 @@
       "id": "t9-l1",
       "speaker": "may",
       "speakerLabel": "May",
-      "text": "The announcement says our flight is delayed this afternoon, and the board has changed once more by the gate.",
-      "glossYue": "廣播話航班下晝延遲，閘口個板又改過。",
+      "text": "The announcement says our flight is delayed this afternoon, and the big departure board has changed beside the gate.",
+      "glossYue": "廣播話我哋航班今日下晝延誤，閘口旁邊嗰塊大板改咗。",
       "audio": "assets/audio/lines/t9-l1.mp3",
       "audioSlow": "assets/audio/lines/t9-l1-slow.mp3",
-      "say": "The announcement says our flight is delayed this afternoon, and the board has changed once more by the gate.",
+      "say": "The announcement says our flight is delayed this afternoon, and the big departure board has changed beside the gate.",
       "hideGloss": false
     },
     {
@@ -57,11 +57,11 @@
       "id": "t9-l3",
       "speaker": "may",
       "speakerLabel": "May",
-      "text": "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us?",
-      "glossYue": "可唔可以話我知可唔可以今晚改簽，定係只可以候補？",
+      "text": "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you?",
+      "glossYue": "可唔可以話我知今晚改唔改到簽，定係你哋只可以候補？",
       "audio": "assets/audio/lines/t9-l3.mp3",
       "audioSlow": "assets/audio/lines/t9-l3-slow.mp3",
-      "say": "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us?",
+      "say": "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you?",
       "hideGloss": true
     },
     {
@@ -79,11 +79,11 @@
       "id": "t9-l5",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "We can offer priority on the next plane out, though the gate change is not posted yet at all.",
-      "glossYue": "下一班可以優先，但係閘口改動仲未貼出。",
+      "text": "We can offer priority on the next plane out, though the gate change is not posted yet for you.",
+      "glossYue": "下一班機可以畀你優先，不過閘口更改仲未貼出嚟。",
       "audio": "assets/audio/lines/t9-l5.mp3",
       "audioSlow": "assets/audio/lines/t9-l5-slow.mp3",
-      "say": "We can offer priority on the next plane out, though the gate change is not posted yet at all.",
+      "say": "We can offer priority on the next plane out, though the gate change is not posted yet for you.",
       "hideGloss": false
     },
     {
@@ -124,15 +124,15 @@
     {
       "prompt": "I am very sorry indeed. The flight is still quite delayed, and your connection is safe until the next update. 呢句即係點？",
       "choices": [
-        "航班取消，接駁趕唔到",
+        "航班延誤，接駁仍然安全",
         "航班準時",
         "只要換閘口"
       ],
       "answer": 0,
-      "explain": "cancelled 係取消咗，missed 係趕唔到。"
+      "explain": "delayed 係延誤。"
     },
     {
-      "prompt": "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us? 即係問緊咩？",
+      "prompt": "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you? 即係問緊咩？",
       "choices": [
         "問可唔可以改簽，定係只可以候補",
         "問可唔可以加行李",
@@ -154,19 +154,19 @@
   ],
   "chunks": [
     {
-      "pattern": "I am very sorry indeed. The flight has been ___ , and the connection was missed at noon after lunch.",
-      "example": "I am very sorry indeed. The flight is still quite delayed, and your connection is safe until the next update.",
-      "glossYue": "航班⋯⋯。",
-      "answer": "cancelled",
+      "pattern": "I am very sorry indeed. The flight has been ___ , and the connection was missed at noon.",
+      "example": "I am very sorry indeed. The flight has been delayed, and the connection was missed at noon.",
+      "glossYue": "航班⋯⋯咗，接駁趕唔到。",
+      "answer": "delayed",
       "choices": [
-        "cancelled",
         "delayed",
-        "rebooked"
+        "standby",
+        "voucher"
       ]
     },
     {
-      "pattern": "Could you tell me whether we can ___ this evening, or whether standby is the only option left for us?",
-      "example": "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us?",
+      "pattern": "Could you tell me whether we can ___ this evening, or whether standby remains the only option left with you?",
+      "example": "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you?",
       "glossYue": "可唔可以⋯⋯？",
       "answer": "rebook",
       "choices": [
@@ -176,9 +176,9 @@
       ]
     },
     {
-      "pattern": "A hotel voucher is still possible, and ___ may cover the overnight stay as well for us.",
-      "example": "Yes, we can rebook you on the next flight, and standby is not the only option left.",
-      "glossYue": "⋯⋯或者包到過夜。",
+      "pattern": "A hotel voucher is still possible, and ___ may cover the overnight stay if you prefer.",
+      "example": "A hotel voucher is still possible, and compensation may cover the overnight stay if you prefer.",
+      "glossYue": "酒店代用券仍然可以，⋯⋯可以包過夜。",
       "answer": "compensation",
       "choices": [
         "compensation",
@@ -189,14 +189,14 @@
   ],
   "shadow": {
     "lineId": "t9-l3",
-    "hint": "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us?"
+    "hint": "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you?"
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "航班延誤咗。你想問改簽定候補。你點講？",
       "choices": [
-        "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us?",
+        "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you?",
         "I ordered the soup.",
         "My strength is staying calm."
       ],
@@ -211,14 +211,14 @@
         "flight",
         "has",
         "been",
-        "cancelled"
+        "delayed"
       ],
       "answer": [
         "The",
         "flight",
         "has",
         "been",
-        "cancelled"
+        "delayed"
       ]
     }
   ],
@@ -232,7 +232,7 @@
         "line": "I am very sorry indeed. The flight is still quite delayed, and your connection is safe until the next update.",
         "audio": "assets/audio/lines/t9-l2.mp3",
         "audioSlow": "assets/audio/lines/t9-l2-slow.mp3",
-        "expect": "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us?",
+        "expect": "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you?",
         "keywords": [
           "rebook",
           "standby"
@@ -257,10 +257,10 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "We can offer priority on the next plane out, though the gate change is not posted yet at all.",
+        "line": "We can offer priority on the next plane out, though the gate change is not posted yet for you.",
         "audio": "assets/audio/lines/t9-l5.mp3",
         "audioSlow": "assets/audio/lines/t9-l5-slow.mp3",
-        "expect": "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us?",
+        "expect": "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you?",
         "keywords": [
           "rebook",
           "evening"
@@ -327,12 +327,12 @@
   ],
   "sound": {
     "ipa": "/l/",
-    "title": "cancelled 入面嗰個音",
-    "note": "cancelled 有 /l/。delayed 同 voucher 冇 /l/。",
+    "title": "delayed 入面嗰個音",
+    "note": "delayed 係延誤。cancelled 係取消咗，呢課練 delayed。",
     "pairs": [
       {
-        "a": "cancelled-verb",
-        "b": "delayed-adj"
+        "a": "delayed-adj",
+        "b": "cancelled-verb"
       },
       {
         "a": "alternative-noun",
@@ -340,8 +340,8 @@
       }
     ],
     "drill": [
-      "cancelled-verb",
       "delayed-adj",
+      "cancelled-verb",
       "voucher-noun",
       "rebook-verb",
       "refund-noun"

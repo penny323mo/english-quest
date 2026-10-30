@@ -1,0 +1,333 @@
+{
+  "id": "R9",
+  "unit": "R",
+  "titleYue": "埋單同夾錢",
+  "titleEn": "Paying the bill",
+  "canDoYue": "你識要帳單、分開計、用八達通，同埋指出單上面嘅錯。",
+  "canDoEn": "Ask for the bill, split it, pay with an Octopus card, and point out a mistake.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/r9.webp",
+  "cast": [
+    "nori",
+    "eddy"
+  ],
+  "cefr": "A2",
+  "lemmas": [
+    "bill-noun",
+    "split-verb",
+    "service-charge-phrase",
+    "octopus-card-phrase",
+    "mistake-noun",
+    "separate-adj",
+    "receipt-noun"
+  ],
+  "next": "J6",
+  "dialogue": [
+    {
+      "id": "r9-l1",
+      "speaker": "eddy",
+      "speakerLabel": "Eddy",
+      "text": "Could we have the bill now, because we are ready to leave this table?",
+      "glossYue": "我哋準備離開呢張檯，可唔可以攞帳單？",
+      "audio": "assets/audio/lines/r9-l1.mp3",
+      "audioSlow": "assets/audio/lines/r9-l1-slow.mp3",
+      "say": "Could we have the bill now, because we are ready to leave this table?"
+    },
+    {
+      "id": "r9-l2",
+      "speaker": "nori",
+      "speakerLabel": "Nori",
+      "text": "Here is the full bill, and the service charge sits on the printed total.",
+      "glossYue": "呢張係完整帳單，服務費已經計咗喺總數。",
+      "audio": "assets/audio/lines/r9-l2.mp3",
+      "audioSlow": "assets/audio/lines/r9-l2-slow.mp3",
+      "say": "Here is the full bill, and the service charge sits on the printed total."
+    },
+    {
+      "id": "r9-l3",
+      "speaker": "eddy",
+      "speakerLabel": "Eddy",
+      "text": "Could we split the bill, because each of us would like a separate receipt?",
+      "glossYue": "可唔可以分開計，因為我哋每人想要一張收據？",
+      "audio": "assets/audio/lines/r9-l3.mp3",
+      "audioSlow": "assets/audio/lines/r9-l3-slow.mp3",
+      "say": "Could we split the bill, because each of us would like a separate receipt?"
+    },
+    {
+      "id": "r9-l4",
+      "speaker": "nori",
+      "speakerLabel": "Nori",
+      "text": "We can split it by card, or an Octopus card is much easier here.",
+      "glossYue": "可以用卡分開畀，或者喺呢度用八達通方便啲。",
+      "audio": "assets/audio/lines/r9-l4.mp3",
+      "audioSlow": "assets/audio/lines/r9-l4-slow.mp3",
+      "say": "We can split it by card, or an Octopus card is much easier here."
+    },
+    {
+      "id": "r9-l5",
+      "speaker": "eddy",
+      "speakerLabel": "Eddy",
+      "text": "An Octopus card is easier, because I do not have a bank card.",
+      "glossYue": "八達通方便啲，因為我冇帶銀行卡。",
+      "audio": "assets/audio/lines/r9-l5.mp3",
+      "audioSlow": "assets/audio/lines/r9-l5-slow.mp3",
+      "say": "An Octopus card is easier, because I do not have a bank card."
+    },
+    {
+      "id": "r9-l6",
+      "speaker": "nori",
+      "speakerLabel": "Nori",
+      "text": "I can take that Octopus card when you are ready, then print a receipt.",
+      "glossYue": "你準備好我就收八達通，然後印張收據。",
+      "audio": "assets/audio/lines/r9-l6.mp3",
+      "audioSlow": "assets/audio/lines/r9-l6-slow.mp3",
+      "say": "I can take that Octopus card when you are ready, then print a receipt.",
+      "hideGloss": true
+    },
+    {
+      "id": "r9-l7",
+      "speaker": "eddy",
+      "speakerLabel": "Eddy",
+      "text": "There is a clear mistake on the bill, because that soup was never ordered.",
+      "glossYue": "張單有個清楚嘅錯，因為嗰碗湯我哋冇叫過。",
+      "audio": "assets/audio/lines/r9-l7.mp3",
+      "audioSlow": "assets/audio/lines/r9-l7-slow.mp3",
+      "say": "There is a clear mistake on the bill, because that soup was never ordered.",
+      "hideGloss": true
+    },
+    {
+      "id": "r9-l8",
+      "speaker": "nori",
+      "speakerLabel": "Nori",
+      "text": "I will correct that mistake and bring a fresh bill before you pay.",
+      "glossYue": "你畀錢之前，我會改好個錯，再攞張新單嚟。",
+      "audio": "assets/audio/lines/r9-l8.mp3",
+      "audioSlow": "assets/audio/lines/r9-l8-slow.mp3",
+      "say": "I will correct that mistake and bring a fresh bill before you pay.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Could we have the bill now, because we are ready to leave this table? 即係問緊咩？",
+      "choices": [
+        "想要帳單",
+        "想叫多碟菜",
+        "想改航班"
+      ],
+      "answer": 0,
+      "explain": "bill 係帳單。"
+    },
+    {
+      "prompt": "Here is the full bill, and the service charge sits on the printed total. 呢句即係點？",
+      "choices": [
+        "服務費已經喺總數",
+        "服務費另計現金",
+        "想叫外賣"
+      ],
+      "answer": 0,
+      "explain": "service charge 係服務費。"
+    },
+    {
+      "prompt": "There is a clear mistake on the bill, because that soup was never ordered. 呢句即係點？",
+      "choices": [
+        "單上面有錯",
+        "湯好熱",
+        "收據唔見咗"
+      ],
+      "answer": 0,
+      "explain": "mistake 係錯。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Could we have the ___ now, because we are ready to leave this table?",
+      "example": "Could we have the bill now, because we are ready to leave this table?",
+      "glossYue": "我哋而家想要⋯⋯。",
+      "answer": "bill",
+      "choices": [
+        "bill",
+        "soup",
+        "taxi"
+      ]
+    },
+    {
+      "pattern": "Could we ___ the bill, because each of us would like a separate receipt?",
+      "example": "Could we split the bill, because each of us would like a separate receipt?",
+      "glossYue": "可唔可以⋯⋯張單？",
+      "answer": "split",
+      "choices": [
+        "split",
+        "cook",
+        "wrap"
+      ]
+    },
+    {
+      "pattern": "There is a clear ___ on the bill, because that soup was never ordered.",
+      "example": "There is a clear mistake on the bill, because that soup was never ordered.",
+      "glossYue": "張單有個清楚嘅⋯⋯。",
+      "answer": "mistake",
+      "choices": [
+        "mistake",
+        "dessert",
+        "queue"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "r9-l3",
+    "hint": "Could we split the bill, because each of us would like a separate receipt?"
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想分開計，每人一張收據。你點講？",
+      "choices": [
+        "Could we split the bill, because each of us would like a separate receipt?",
+        "The flight is delayed.",
+        "Straight ahead."
+      ],
+      "answer": 0,
+      "explain": "講 split，再講 separate receipt。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Here",
+        "is",
+        "the",
+        "full",
+        "bill"
+      ],
+      "answer": [
+        "Here",
+        "is",
+        "the",
+        "full",
+        "bill"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "eddy",
+    "intro": "你喺餐廳埋單。可以講：bill、split、Octopus card。",
+    "turns": [
+      {
+        "partner": "Nori",
+        "partnerId": "nori",
+        "line": "Here is the full bill, and the service charge sits on the printed total.",
+        "audio": "assets/audio/lines/r9-l2.mp3",
+        "audioSlow": "assets/audio/lines/r9-l2-slow.mp3",
+        "expect": "Could we split the bill, because each of us would like a separate receipt?",
+        "keywords": [
+          "split",
+          "receipt"
+        ],
+        "modelAudio": "assets/audio/lines/r9-l3.mp3",
+        "modelSlow": "assets/audio/lines/r9-l3-slow.mp3"
+      },
+      {
+        "partner": "Nori",
+        "partnerId": "nori",
+        "line": "We can split it by card, or an Octopus card is much easier here.",
+        "audio": "assets/audio/lines/r9-l4.mp3",
+        "audioSlow": "assets/audio/lines/r9-l4-slow.mp3",
+        "expect": "An Octopus card is easier, because I do not have a bank card.",
+        "keywords": [
+          "octopus",
+          "card"
+        ],
+        "modelAudio": "assets/audio/lines/r9-l5.mp3",
+        "modelSlow": "assets/audio/lines/r9-l5-slow.mp3"
+      },
+      {
+        "partner": "Nori",
+        "partnerId": "nori",
+        "line": "I can take that Octopus card when you are ready, then print a receipt.",
+        "audio": "assets/audio/lines/r9-l6.mp3",
+        "audioSlow": "assets/audio/lines/r9-l6-slow.mp3",
+        "expect": "There is a clear mistake on the bill, because that soup was never ordered.",
+        "keywords": [
+          "mistake",
+          "bill"
+        ],
+        "modelAudio": "assets/audio/lines/r9-l7.mp3",
+        "modelSlow": "assets/audio/lines/r9-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：帳單",
+      "lemma": "bill-noun",
+      "choices": [
+        "bill",
+        "split",
+        "mistake"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：分開計",
+      "lemma": "split-verb",
+      "choices": [
+        "split",
+        "bill",
+        "receipt"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "你講「Could we split the bill, because each of us would like a separate receipt?」，split 係咩意思？",
+      "choices": [
+        "分開計",
+        "服務費",
+        "八達通"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "伙計講「Here is the full bill, and the service charge sits on the printed total.」，service charge 係咩意思？",
+      "choices": [
+        "服務費",
+        "收據",
+        "錯"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個字有 /b/：bill、split、定 mistake？",
+      "choices": [
+        "bill",
+        "split",
+        "mistake"
+      ],
+      "answer": 0,
+      "explain": "bill 開頭有 /b/。"
+    }
+  ],
+  "sound": {
+    "ipa": "/b/",
+    "title": "bill 入面嗰個音",
+    "note": "bill 開頭有 /b/。split 同 mistake 冇。",
+    "pairs": [
+      {
+        "a": "bill-noun",
+        "b": "split-verb"
+      },
+      {
+        "a": "octopus-card-phrase",
+        "b": "mistake-noun"
+      }
+    ],
+    "drill": [
+      "bill-noun"
+    ]
+  }
+}

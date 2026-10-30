@@ -11,7 +11,7 @@ export default function Shell({ route }: { route: Route }) {
   const profile = useStore((s) => s.profile);
 
   useEffect(() => {
-    const cast = ["mei", "tom", "ana", "kai", "jo", "sam", "kim", "ray", "noa", "may", "pat", "nia", "ada", "owen", "wen", "ben", "lea", "ren", "mina", "cole", "ling"];
+    const cast = ["mei", "tom", "ana", "kai", "jo", "sam", "kim", "ray", "noa", "may", "pat", "nia", "ada", "owen", "wen", "ben", "lea", "ren", "mina", "cole", "ling", "suki", "ruth", "hugh", "zuri", "lina", "pesi", "nori", "eddy", "reid", "ines", "opal", "hugo"];
     preloadArt([
       asset("assets/art/cover.webp"),
       ...lessons.map((lesson) => asset(lesson.hero)),

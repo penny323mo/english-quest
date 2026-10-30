@@ -171,6 +171,12 @@
 - **Grammar:** I'd like to order…; How long will the delivery take?; You can pay on delivery.
 - **Dialogue beats:** Order → Address → Spell Harbour Street → Minutes → How long → Pay at the door
 
+### R9 — Paying the bill / 埋單同夾錢 · A2 · SHIPPED
+- **Goals:** Ask for the bill, split it, pay by card or Octopus, notice the service charge, and point out a mistake.
+- **Vocab:** bill, split, service charge, Octopus card, mistake, separate, receipt
+- **Grammar:** Could we…?; because-clauses for the reason
+- **Dialogue beats:** Ask for the bill → Service charge → Split → Card or Octopus → Octopus → Receipt → Mistake → Correct the bill
+
 ---
 
 ## Unit T — Travel（旅行）· A1→B2 priority track
@@ -220,6 +226,12 @@
 - **Grammar:** Indirect questions; The flight is delayed; A refund is possible.
 - **Dialogue beats:** Announcement → Still delayed → Rebook or standby → Yes we can rebook → Priority → Refund → Voucher alternative → Itinerary confirmed
 
+### T10 — Lost luggage / 行李唔見咗 · B1 · SHIPPED
+- **Goals:** Report a missing bag at baggage claim, describe it, give the tag number, complete a claim form, and ask for delivery to the hotel.
+- **Vocab:** luggage, baggage claim, bag, claim form, tag number, deliver, hotel
+- **Grammar:** Could you…?; because / if / when
+- **Dialogue beats:** Missing bag → Describe → Suitcase → Tag number → The number → Claim form → Deliver to the hotel → Evening truck
+
 ---
 
 ## Unit W — Work（職場）· A2→B2
@@ -259,6 +271,12 @@
 - **Vocab (14):** currently, experience, customer-facing, handled, achieved, teamwork, reliable, shift, bilingual, Cantonese, English, strength, example, looking for
 - **Grammar:** Present perfect + past simple story; Discourse markers
 - **Dialogue beats:** Prompt → Intro → STAR mini → Teamwork answer → Close
+
+### W7 — Calling in sick / 打電話請病假 · A2/B1 · SHIPPED
+- **Goals:** Say you are not feeling well, offer a doctor's note, ask someone to cover your shift, and say you will be back on Monday.
+- **Vocab:** sick, not feeling well, doctor's note, cover my shift, shift, Monday
+- **Grammar:** because / if / when; Will you be back on Monday?
+- **Dialogue beats:** Call → Doctor's note → Yes → Who covers → A colleague → Monday → Back Monday → Rest tonight
 
 ---
 
@@ -318,7 +336,8 @@ Every round until map complete, ship **≥3 NEW lessons** in this order (skip al
 10. **F5, F6, D4** (personal info, routines, SIM)  
 11. **D5, R7, W6, T9** (parcel, table complaint, interview, flight disruption)  
 12. **D6, R8, J13** (pharmacy, takeaway by phone, corporate gift order)  
-13. Then polish / legendary review nodes / further B2 stretch
+13. **R9, W7, T10** (paying the bill, calling in sick, lost luggage)  
+14. Then polish / legendary review nodes / further B2 stretch
 
 **Path UX:** show CEFR chip (A1/A2/B1/B2) on each node; group Path into level tracks; lock by prerequisite; keep `soon:true` teasers for unshipped.
 

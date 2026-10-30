@@ -24,7 +24,7 @@
     "prescription-noun",
     "pharmacy-noun"
   ],
-  "next": "J6",
+  "next": "R9",
   "dialogue": [
     {
       "id": "d6-l1",
@@ -91,11 +91,11 @@
       "id": "d6-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Please repeat the dosage once more here before I pay for the box.",
-      "glossYue": "我畀錢之前，請喺呢度再講一次劑量。",
+      "text": "Please repeat the dosage for me here before I pay for the box.",
+      "glossYue": "我畀錢之前，請喺呢度同我再講一次劑量。",
       "audio": "assets/audio/lines/d6-l7.mp3",
       "audioSlow": "assets/audio/lines/d6-l7-slow.mp3",
-      "say": "Please repeat the dosage once more here before I pay for the box.",
+      "say": "Please repeat the dosage for me here before I pay for the box.",
       "hideGloss": true
     },
     {
@@ -250,7 +250,7 @@
         "line": "I will write a short prescription and put it in the pharmacy bag.",
         "audio": "assets/audio/lines/d6-l6.mp3",
         "audioSlow": "assets/audio/lines/d6-l6-slow.mp3",
-        "expect": "Please repeat the dosage once more here before I pay for the box.",
+        "expect": "Please repeat the dosage for me here before I pay for the box.",
         "keywords": [
           "dosage",
           "pay"

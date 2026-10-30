@@ -70,11 +70,11 @@
       "id": "j13-l5",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "I can gladly send a written quote by email to you before the end of the full working day.",
-      "glossYue": "我可以喺收工之前用電郵發一份書面報價畀你。",
+      "text": "I can gladly send a written price by email to you before the end of the full working day.",
+      "glossYue": "我可以喺收工之前用電郵寄一份書面價錢畀你。",
       "audio": "assets/audio/lines/j13-l5.mp3",
       "audioSlow": "assets/audio/lines/j13-l5-slow.mp3",
-      "say": "I can gladly send a written quote by email to you before the end of the full working day."
+      "say": "I can gladly send a written price by email to you before the end of the full working day."
     },
     {
       "id": "j13-l6",
@@ -132,7 +132,7 @@
       "explain": "lead time 係交貨期。engraving 係刻字。"
     },
     {
-      "prompt": "I can gladly send a written quote by email to you before the end of the full working day. 呢句即係點？",
+      "prompt": "I can gladly send a written price by email to you before the end of the full working day. 呢句即係點？",
       "choices": [
         "收工前用電郵發報價",
         "我要留住收據",
@@ -245,7 +245,7 @@
       {
         "partner": "Kai",
         "partnerId": "kai",
-        "line": "I can gladly send a written quote by email to you before the end of the full working day.",
+        "line": "I can gladly send a written price by email to you before the end of the full working day.",
         "audio": "assets/audio/lines/j13-l5.mp3",
         "audioSlow": "assets/audio/lines/j13-l5-slow.mp3",
         "expect": "Please email the quote straight to our office, and please include the full lead time in that same note.",

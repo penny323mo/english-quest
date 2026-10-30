@@ -230,6 +230,14 @@ test("syllabifier uses a legal maximal onset", () => {
   assert.deepEqual(byId["postcard-noun"].syllableIpa, ["ˈpoʊst", "ˌkɑɹd"]);
   assert.equal(byId["agency-noun"].ipa, "/ˈeɪ.dʒən.si/");
   assert.deepEqual(byId["agency-noun"].syllableIpa, ["ˈeɪ", "dʒən", "si"]);
+  assert.equal(byId["announcement-noun"].ipa, "/ə.ˈnaʊns.mənt/");
+  assert.deepEqual(byId["announcement-noun"].syllableIpa, ["ə", "ˈnaʊns", "mənt"]);
+  assert.equal(byId["standby-noun"].ipa, "/ˈstænd.ˌbaɪ/");
+  assert.deepEqual(byId["standby-noun"].syllableIpa, ["ˈstænd", "ˌbaɪ"]);
+  assert.equal(byId["undercooked-adj"].ipa, "/ˌʌn.dɚ.ˈkʊkt/");
+  assert.deepEqual(byId["undercooked-adj"].syllableIpa, ["ˌʌn", "dɚ", "ˈkʊkt"]);
+  assert.equal(byId["follow-up-visit-noun"].ipa, "/ˈfɑ.loʊ ˌʌp ˈvɪ.zɪt/");
+  assert.deepEqual(byId["follow-up-visit-noun"].syllableIpa, ["ˈfɑ", "loʊ", "ˌʌp", "ˈvɪ", "zɪt"]);
   const script = `
 import sys
 sys.path.insert(0, "scripts")
@@ -239,6 +247,9 @@ cases = [
     ("L AE1 N D L AO2 R D", "/ˈlænd.ˌlɔɹd/"),
     ("P OW1 S T K AA2 R D", "/ˈpoʊst.ˌkɑɹd/"),
     ("EY1 JH AH0 N S IY0", "/ˈeɪ.dʒən.si/"),
+    ("AH0 N AW1 N S M AH0 N T", "/ə.ˈnaʊns.mənt/"),
+    ("S T AE1 N D B AY2", "/ˈstænd.ˌbaɪ/"),
+    ("AH2 N D ER0 K UH1 K T", "/ˌʌn.dɚ.ˈkʊkt/"),
     ("B R EH1 K F AH0 S T", "/ˈbɹɛk.fəst/"),
     ("T EH1 N AH0 N T", "/ˈtɛ.nənt/"),
     ("Y UW0 T IH1 L AH0 T IY0 Z", "/ju.ˈtɪ.lə.tiz/"),

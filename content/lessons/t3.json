@@ -79,11 +79,11 @@
       "id": "t3-l5",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Here is your key card, and the room is on the third floor.",
-      "glossYue": "房卡喺度，房間喺三樓。",
+      "text": "Here is your key card, and the wifi password is on the card.",
+      "glossYue": "呢張係你張門卡，wifi 密碼喺卡上面。",
       "audio": "assets/audio/lines/t3-l5.mp3",
       "audioSlow": "assets/audio/lines/t3-l5-slow.mp3",
-      "say": "Here is your key card, and the room is on the third floor.",
+      "say": "Here is your key card, and the wifi password is on the card.",
       "hideGloss": false
     },
     {
@@ -112,11 +112,11 @@
       "id": "t3-m3",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "The elevator is on the left, and it goes straight to your floor.",
-      "glossYue": "升降機喺左邊，直上你嗰層。",
+      "text": "Late checkout is fine, and you can leave your bags by the elevator.",
+      "glossYue": "遲退房冇問題，你可以將袋放喺升降機旁邊。",
       "audio": "assets/audio/lines/t3-m3.mp3",
       "audioSlow": "assets/audio/lines/t3-m3-slow.mp3",
-      "say": "The elevator is on the left, and it goes straight to your floor.",
+      "say": "Late checkout is fine, and you can leave your bags by the elevator.",
       "hideGloss": true
     }
   ],
@@ -307,7 +307,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The elevator is on the left, and it goes straight to your floor.」，係咩意思？",
+      "prompt": "客人講「Late checkout is fine, and you can leave your bags by the elevator.」，係咩意思？",
       "choices": [
         "升降機",
         "樓層",

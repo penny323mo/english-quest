@@ -66,11 +66,11 @@
       "id": "r6-l4",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "I can really move that booking to eight, and the indoor seat stays free if the sky turns wet.",
-      "glossYue": "我可以改到八點，如果落雨就留室內位。",
+      "text": "I can change the booking time to eight, and the indoor seat stays free if the sky turns wet.",
+      "glossYue": "我可以將訂位時間改到八點，如果落雨，室內位仍然留低。",
       "audio": "assets/audio/lines/r6-l4.mp3",
       "audioSlow": "assets/audio/lines/r6-l4-slow.mp3",
-      "say": "I can really move that booking to eight, and the indoor seat stays free if the sky turns wet.",
+      "say": "I can change the booking time to eight, and the indoor seat stays free if the sky turns wet.",
       "hideGloss": true
     },
     {
@@ -110,11 +110,11 @@
       "id": "r6-l8",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "I will hold four seats until eight, and I will send a short note after we speak.",
-      "glossYue": "我會留四個位到八點，講完之後發個短訊。",
+      "text": "I will hold the booking until eight, and I will send a short note after we speak.",
+      "glossYue": "我會留住個訂位到八點，傾完之後我會寄一則短訊。",
       "audio": "assets/audio/lines/r6-l8.mp3",
       "audioSlow": "assets/audio/lines/r6-l8-slow.mp3",
-      "say": "I will hold four seats until eight, and I will send a short note after we speak.",
+      "say": "I will hold the booking until eight, and I will send a short note after we speak.",
       "hideGloss": true
     }
   ],
@@ -239,7 +239,7 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "I can really move that booking to eight, and the indoor seat stays free if the sky turns wet.",
+        "line": "I can change the booking time to eight, and the indoor seat stays free if the sky turns wet.",
         "audio": "assets/audio/lines/r6-l4.mp3",
         "audioSlow": "assets/audio/lines/r6-l4-slow.mp3",
         "expect": "If it rains heavily, please cancel the outdoor seat and keep us indoors beside the glass.",

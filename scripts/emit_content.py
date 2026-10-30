@@ -156,10 +156,22 @@ def legal_onset(bases: tuple[str, ...]) -> bool:
 
 
 def longest_legal_onset(cons: list[str]) -> int:
+    """Longest legal onset at the end of cons.
+
+    /sm/ and /sn/ are legal English onsets (small, snow) but not after a
+    nasal coda: announcement is /ə.ˈnaʊns.mənt/, not /ə.ˈnaʊn.smənt/.
+    A lone /s/ after a nasal stays an onset, so agency remains /ˈeɪ.dʒən.si/.
+    """
     bases = tuple(phone_base(p) for p in cons)
     for length in (3, 2, 1):
-        if len(bases) >= length and legal_onset(bases[-length:]):
-            return length
+        if len(bases) < length or not legal_onset(bases[-length:]):
+            continue
+        onset = bases[-length:]
+        if onset in {("S", "M"), ("S", "N")}:
+            prev = len(bases) - length - 1
+            if prev >= 0 and bases[prev] in {"N", "M", "NG"}:
+                continue
+        return length
     return 0
 
 

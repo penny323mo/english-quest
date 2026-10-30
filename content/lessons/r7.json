@@ -8,8 +8,8 @@
   "minutes": 12,
   "hero": "assets/art/lessons/r7.webp",
   "cast": [
-    "ana",
-    "mei"
+    "suki",
+    "ruth"
   ],
   "cefr": "B1",
   "lemmas": [
@@ -29,52 +29,52 @@
   "dialogue": [
     {
       "id": "r7-l1",
-      "speaker": "mei",
-      "speakerLabel": "Mei",
-      "text": "Excuse me please, Ana. I ordered the soup, but the bowl arrived cold at our little table.",
-      "glossYue": "唔好意思 Ana。我點咗湯，但係個碗送到我哋檯係凍嘅。",
+      "speaker": "ruth",
+      "speakerLabel": "Ruth",
+      "text": "Excuse me please, Suki. I ordered the soup, but the bowl arrived cold at our little table.",
+      "glossYue": "唔好意思，Suki。我叫咗湯，但係送到檯嘅碗湯係凍嘅。",
       "audio": "assets/audio/lines/r7-l1.mp3",
       "audioSlow": "assets/audio/lines/r7-l1-slow.mp3",
-      "say": "Excuse me please, Ana. I ordered the soup, but the bowl arrived cold at our little table.",
+      "say": "Excuse me please, Suki. I ordered the soup, but the bowl arrived cold at our little table.",
       "hideGloss": false
     },
     {
       "id": "r7-l2",
-      "speaker": "ana",
-      "speakerLabel": "Ana",
-      "text": "I understand the problem with the bowl, and I can bring some warm rice instead of that soup.",
-      "glossYue": "我明白個問題，我可以改送熱飯，唔使再要嗰碗湯。",
+      "speaker": "suki",
+      "speakerLabel": "Suki",
+      "text": "I understand the problem with the cold soup, and I can replace that bowl with a hot one.",
+      "glossYue": "我明白凍湯嘅問題，我可以換一碗熱嘅。",
       "audio": "assets/audio/lines/r7-l2.mp3",
       "audioSlow": "assets/audio/lines/r7-l2-slow.mp3",
-      "say": "I understand the problem with the bowl, and I can bring some warm rice instead of that soup.",
+      "say": "I understand the problem with the cold soup, and I can replace that bowl with a hot one.",
       "hideGloss": true
     },
     {
       "id": "r7-l3",
-      "speaker": "mei",
-      "speakerLabel": "Mei",
-      "text": "The side looks really undercooked after the long wait, and the meal came much too late.",
-      "glossYue": "配菜好似未煮熟，等咗好耐，餐遲咗好多。",
+      "speaker": "ruth",
+      "speakerLabel": "Ruth",
+      "text": "The side dish looks undercooked after the long wait, because the meal came much too late.",
+      "glossYue": "配菜睇落未煮熟，因為等得太耐，個餐出得太遲。",
       "audio": "assets/audio/lines/r7-l3.mp3",
       "audioSlow": "assets/audio/lines/r7-l3-slow.mp3",
-      "say": "The side looks really undercooked after the long wait, and the meal came much too late.",
+      "say": "The side dish looks undercooked after the long wait, because the meal came much too late.",
       "hideGloss": true
     },
     {
       "id": "r7-l4",
-      "speaker": "ana",
-      "speakerLabel": "Ana",
-      "text": "The manager can kindly replace the whole dish with a fresh plate if that suits you well.",
-      "glossYue": "經理可以換過成碟，如果你覺得啱。",
+      "speaker": "suki",
+      "speakerLabel": "Suki",
+      "text": "The manager can replace the whole dish with a fresh hot plate if that suits you best.",
+      "glossYue": "如果呢個啱你，經理可以換一碟新鮮熱嘅。",
       "audio": "assets/audio/lines/r7-l4.mp3",
       "audioSlow": "assets/audio/lines/r7-l4-slow.mp3",
-      "say": "The manager can kindly replace the whole dish with a fresh plate if that suits you well.",
+      "say": "The manager can replace the whole dish with a fresh hot plate if that suits you best.",
       "hideGloss": true
     },
     {
       "id": "r7-l5",
-      "speaker": "mei",
-      "speakerLabel": "Mei",
+      "speaker": "ruth",
+      "speakerLabel": "Ruth",
       "text": "Could you please bring a complimentary warm dessert for both of us after you fix that plate?",
       "glossYue": "換完之後，可唔可以畀我哋兩份免費甜品？",
       "audio": "assets/audio/lines/r7-l5.mp3",
@@ -84,41 +84,41 @@
     },
     {
       "id": "r7-l6",
-      "speaker": "ana",
-      "speakerLabel": "Ana",
-      "text": "I will send a fresh plate right away, and I will tell the kitchen about it.",
-      "glossYue": "我即刻送碟新鮮嘅出嚟，同時話廚房知。",
+      "speaker": "suki",
+      "speakerLabel": "Suki",
+      "text": "I will send that dessert right away, and I will tell the kitchen about the plate.",
+      "glossYue": "我即刻送甜品過去，同埋話畀廚房知嗰碟。",
       "audio": "assets/audio/lines/r7-l6.mp3",
       "audioSlow": "assets/audio/lines/r7-l6-slow.mp3",
-      "say": "I will send a fresh plate right away, and I will tell the kitchen about it.",
+      "say": "I will send that dessert right away, and I will tell the kitchen about the plate.",
       "hideGloss": true
     },
     {
       "id": "r7-l7",
-      "speaker": "mei",
-      "speakerLabel": "Mei",
-      "text": "Please do not let this happen again when we come back for a main course later on.",
-      "glossYue": "我哋下次再嚟點主菜，唔好再有呢件事。",
+      "speaker": "ruth",
+      "speakerLabel": "Ruth",
+      "text": "Please do not let the cold soup happen again when we come back for a side dish.",
+      "glossYue": "我哋下次返嚟食配菜，唔好再出凍湯。",
       "audio": "assets/audio/lines/r7-l7.mp3",
       "audioSlow": "assets/audio/lines/r7-l7-slow.mp3",
-      "say": "Please do not let this happen again when we come back for a main course later on.",
+      "say": "Please do not let the cold soup happen again when we come back for a side dish.",
       "hideGloss": true
     },
     {
       "id": "r7-l8",
-      "speaker": "ana",
-      "speakerLabel": "Ana",
-      "text": "I appreciate your patience with us, and the kitchen will heat the soup properly this time round.",
-      "glossYue": "多謝你忍耐。廚房今次會把湯熱得剛剛好。",
+      "speaker": "suki",
+      "speakerLabel": "Suki",
+      "text": "I appreciate your patience with us, and the kitchen will heat the soup properly because you waited.",
+      "glossYue": "多謝你耐心等，廚房會熱返碗湯，因為你等咗。",
       "audio": "assets/audio/lines/r7-l8.mp3",
       "audioSlow": "assets/audio/lines/r7-l8-slow.mp3",
-      "say": "I appreciate your patience with us, and the kitchen will heat the soup properly this time round.",
+      "say": "I appreciate your patience with us, and the kitchen will heat the soup properly because you waited.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Excuse me please, Ana. I ordered the soup, but the bowl arrived cold at our little table. 呢句即係點？",
+      "prompt": "Excuse me please, Suki. I ordered the soup, but the bowl arrived cold at our little table. 呢句即係點？",
       "choices": [
         "點咗湯，但係送到嚟係凍",
         "想加一杯酒",
@@ -128,7 +128,7 @@
       "explain": "ordered 係點咗，cold 係凍。"
     },
     {
-      "prompt": "The side looks really undercooked after the long wait, and the meal came much too late. 呢句即係點？",
+      "prompt": "The side dish looks undercooked after the long wait, because the meal came much too late. 呢句即係點？",
       "choices": [
         "配菜未煮熟，等得太耐",
         "個湯好熱",
@@ -151,7 +151,7 @@
   "chunks": [
     {
       "pattern": "Excuse me please, Ana. I ___ the soup, but the bowl arrived cold at our little table.",
-      "example": "Excuse me please, Ana. I ordered the soup, but the bowl arrived cold at our little table.",
+      "example": "Excuse me please, Suki. I ordered the soup, but the bowl arrived cold at our little table.",
       "glossYue": "我⋯⋯咗湯。",
       "answer": "ordered",
       "choices": [
@@ -162,7 +162,7 @@
     },
     {
       "pattern": "The manager can kindly ___ the whole dish with a fresh plate if that suits you well.",
-      "example": "The manager can kindly replace the whole dish with a fresh plate if that suits you well.",
+      "example": "The manager can replace the whole dish with a fresh hot plate if that suits you best.",
       "glossYue": "經理可以⋯⋯成碟。",
       "answer": "replace",
       "choices": [
@@ -173,7 +173,7 @@
     },
     {
       "pattern": "I will send a fresh plate ___ , and I will tell the kitchen about it.",
-      "example": "I will send a fresh plate right away, and I will tell the kitchen about it.",
+      "example": "I will send that dessert right away, and I will tell the kitchen about the plate.",
       "glossYue": "我⋯⋯送出嚟。",
       "answer": "right away",
       "choices": [
@@ -192,7 +192,7 @@
       "type": "choice",
       "promptYue": "湯係凍嘅。你點講？",
       "choices": [
-        "Excuse me please, Ana. I ordered the soup, but the bowl arrived cold at our little table.",
+        "Excuse me please, Suki. I ordered the soup, but the bowl arrived cold at our little table.",
         "Shall we go into the room?",
         "The flight has been cancelled."
       ],
@@ -217,16 +217,16 @@
     }
   ],
   "roleplay": {
-    "you": "mei",
-    "intro": "你喺餐檯前。同 Ana 講湯凍同配菜未煮熟。可以講：ordered、replace。",
+    "you": "ruth",
+    "intro": "你喺餐檯前。同 Suki 講湯凍同配菜未煮熟。可以講：ordered、replace。",
     "turns": [
       {
-        "partner": "Ana",
-        "partnerId": "ana",
-        "line": "I understand the problem with the bowl, and I can bring some warm rice instead of that soup.",
+        "partner": "Suki",
+        "partnerId": "suki",
+        "line": "I understand the problem with the cold soup, and I can replace that bowl with a hot one.",
         "audio": "assets/audio/lines/r7-l2.mp3",
         "audioSlow": "assets/audio/lines/r7-l2-slow.mp3",
-        "expect": "The side looks really undercooked after the long wait, and the meal came much too late.",
+        "expect": "The side dish looks undercooked after the long wait, because the meal came much too late.",
         "keywords": [
           "undercooked",
           "wait"
@@ -235,9 +235,9 @@
         "modelSlow": "assets/audio/lines/r7-l3-slow.mp3"
       },
       {
-        "partner": "Ana",
-        "partnerId": "ana",
-        "line": "The manager can kindly replace the whole dish with a fresh plate if that suits you well.",
+        "partner": "Suki",
+        "partnerId": "suki",
+        "line": "The manager can replace the whole dish with a fresh hot plate if that suits you best.",
         "audio": "assets/audio/lines/r7-l4.mp3",
         "audioSlow": "assets/audio/lines/r7-l4-slow.mp3",
         "expect": "Could you please bring a complimentary warm dessert for both of us after you fix that plate?",
@@ -249,15 +249,15 @@
         "modelSlow": "assets/audio/lines/r7-l5-slow.mp3"
       },
       {
-        "partner": "Ana",
-        "partnerId": "ana",
-        "line": "I will send a fresh plate right away, and I will tell the kitchen about it.",
+        "partner": "Suki",
+        "partnerId": "suki",
+        "line": "I will send that dessert right away, and I will tell the kitchen about the plate.",
         "audio": "assets/audio/lines/r7-l6.mp3",
         "audioSlow": "assets/audio/lines/r7-l6-slow.mp3",
-        "expect": "Please do not let this happen again when we come back for a main course later on.",
+        "expect": "Please do not let the cold soup happen again when we come back for a side dish.",
         "keywords": [
           "again",
-          "course"
+          "soup"
         ],
         "modelAudio": "assets/audio/lines/r7-l7.mp3",
         "modelSlow": "assets/audio/lines/r7-l7-slow.mp3"
@@ -289,7 +289,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「The side looks really undercooked after the long wait, and the meal came much too late.」，undercooked 係咩意思？",
+      "prompt": "你講「The side dish looks undercooked after the long wait, because the meal came much too late.」，undercooked 係咩意思？",
       "choices": [
         "未煮熟",
         "太鹹",
@@ -299,7 +299,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "店員講「I will send a fresh plate right away, and I will tell the kitchen about it.」，right away 係咩意思？",
+      "prompt": "店員講「I will send that dessert right away, and I will tell the kitchen about the plate.」，right away 係咩意思？",
       "choices": [
         "即刻",
         "遲啲",

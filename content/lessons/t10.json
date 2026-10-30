@@ -1,0 +1,333 @@
+{
+  "id": "T10",
+  "unit": "T",
+  "titleYue": "行李唔見咗",
+  "titleEn": "Lost luggage",
+  "canDoYue": "你識喺行李轉盤報失、描述個袋、講行李牌號碼、填索償表，同埋要求送到酒店。",
+  "canDoEn": "Report a missing bag at baggage claim, describe it, give the tag number, complete a claim form, and ask for delivery to your hotel.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t10.webp",
+  "cast": [
+    "opal",
+    "hugo"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "luggage-noun",
+    "baggage-claim-phrase",
+    "bag-noun",
+    "claim-form-phrase",
+    "tag-number-phrase",
+    "deliver-verb",
+    "hotel-noun"
+  ],
+  "next": "W5",
+  "dialogue": [
+    {
+      "id": "t10-l1",
+      "speaker": "hugo",
+      "speakerLabel": "Hugo",
+      "text": "My luggage is missing at baggage claim, because the belt has stopped and my bag never came out.",
+      "glossYue": "我件行李喺行李轉盤唔見咗，因為條帶停咗，袋又冇出嚟。",
+      "audio": "assets/audio/lines/t10-l1.mp3",
+      "audioSlow": "assets/audio/lines/t10-l1-slow.mp3",
+      "say": "My luggage is missing at baggage claim, because the belt has stopped and my bag never came out."
+    },
+    {
+      "id": "t10-l2",
+      "speaker": "opal",
+      "speakerLabel": "Opal",
+      "text": "Could you describe the bag for me, and tell me the colour if you still remember it?",
+      "glossYue": "可唔可以同我描述個袋，如果你記得，話我知顏色？",
+      "audio": "assets/audio/lines/t10-l2.mp3",
+      "audioSlow": "assets/audio/lines/t10-l2-slow.mp3",
+      "say": "Could you describe the bag for me, and tell me the colour if you still remember it?"
+    },
+    {
+      "id": "t10-l3",
+      "speaker": "hugo",
+      "speakerLabel": "Hugo",
+      "text": "It is a blue suitcase with a red ribbon, and it has two small wheels underneath it.",
+      "glossYue": "係一個藍色喼，綁住紅絲帶，底下一對細轆。",
+      "audio": "assets/audio/lines/t10-l3.mp3",
+      "audioSlow": "assets/audio/lines/t10-l3-slow.mp3",
+      "say": "It is a blue suitcase with a red ribbon, and it has two small wheels underneath it."
+    },
+    {
+      "id": "t10-l4",
+      "speaker": "opal",
+      "speakerLabel": "Opal",
+      "text": "What is the tag number on the handle, so I can search the system for that bag?",
+      "glossYue": "手柄上面嗰個行李牌號碼係幾多，等我可以喺系統搵個袋？",
+      "audio": "assets/audio/lines/t10-l4.mp3",
+      "audioSlow": "assets/audio/lines/t10-l4-slow.mp3",
+      "say": "What is the tag number on the handle, so I can search the system for that bag?",
+      "hideGloss": true
+    },
+    {
+      "id": "t10-l5",
+      "speaker": "hugo",
+      "speakerLabel": "Hugo",
+      "text": "The tag number is HK four eight two, and it was tied onto the suitcase handle yesterday morning.",
+      "glossYue": "行李牌號碼係 HK 四八二，昨朝綁喺喼手柄。",
+      "audio": "assets/audio/lines/t10-l5.mp3",
+      "audioSlow": "assets/audio/lines/t10-l5-slow.mp3",
+      "say": "The tag number is HK four eight two, and it was tied onto the suitcase handle yesterday morning.",
+      "hideGloss": true
+    },
+    {
+      "id": "t10-l6",
+      "speaker": "opal",
+      "speakerLabel": "Opal",
+      "text": "Please complete this claim form with me, because the bag is not on the belt this evening.",
+      "glossYue": "今晚個袋唔喺條帶上面，請同我填呢張索償表。",
+      "audio": "assets/audio/lines/t10-l6.mp3",
+      "audioSlow": "assets/audio/lines/t10-l6-slow.mp3",
+      "say": "Please complete this claim form with me, because the bag is not on the belt this evening.",
+      "hideGloss": true
+    },
+    {
+      "id": "t10-l7",
+      "speaker": "hugo",
+      "speakerLabel": "Hugo",
+      "text": "Could you deliver the bag to my hotel if you find it after you finish this search?",
+      "glossYue": "你搵完之後如果搵到個袋，可唔可以送到我間酒店？",
+      "audio": "assets/audio/lines/t10-l7.mp3",
+      "audioSlow": "assets/audio/lines/t10-l7-slow.mp3",
+      "say": "Could you deliver the bag to my hotel if you find it after you finish this search?",
+      "hideGloss": true
+    },
+    {
+      "id": "t10-l8",
+      "speaker": "opal",
+      "speakerLabel": "Opal",
+      "text": "We can deliver it straight to your hotel when the evening truck leaves the main airport building.",
+      "glossYue": "今晚架車離開機場大樓嗰陣，我哋可以直接送到你間酒店。",
+      "audio": "assets/audio/lines/t10-l8.mp3",
+      "audioSlow": "assets/audio/lines/t10-l8-slow.mp3",
+      "say": "We can deliver it straight to your hotel when the evening truck leaves the main airport building.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "My luggage is missing at baggage claim, because the belt has stopped and my bag never came out. 呢句即係點？",
+      "choices": [
+        "行李喺轉盤唔見咗",
+        "航班取消咗",
+        "酒店滿房"
+      ],
+      "answer": 0,
+      "explain": "baggage claim 係行李轉盤。"
+    },
+    {
+      "prompt": "What is the tag number on the handle, so I can search the system for that bag? 即係問緊咩？",
+      "choices": [
+        "問行李牌號碼",
+        "問閘口喺邊",
+        "問可唔可以退稅"
+      ],
+      "answer": 0,
+      "explain": "tag number 係行李牌號碼。"
+    },
+    {
+      "prompt": "Could you deliver the bag to my hotel if you find it after you finish this search? 即係問緊咩？",
+      "choices": [
+        "問可唔可以送到酒店",
+        "問可唔可以改簽",
+        "問可唔可以分開計"
+      ],
+      "answer": 0,
+      "explain": "deliver 係送到。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "My luggage is missing at ___ , because the belt has stopped and my bag never came out.",
+      "example": "My luggage is missing at baggage claim, because the belt has stopped and my bag never came out.",
+      "glossYue": "我件行李喺⋯⋯唔見咗。",
+      "answer": "baggage claim",
+      "choices": [
+        "baggage claim",
+        "service charge",
+        "Monday"
+      ]
+    },
+    {
+      "pattern": "The ___ is HK four eight two, and it was tied onto the suitcase handle yesterday morning.",
+      "example": "The tag number is HK four eight two, and it was tied onto the suitcase handle yesterday morning.",
+      "glossYue": "⋯⋯係 HK 四八二。",
+      "answer": "tag number",
+      "choices": [
+        "tag number",
+        "doctor's note",
+        "Octopus card"
+      ]
+    },
+    {
+      "pattern": "Please complete this ___ with me, because the bag is not on the belt this evening.",
+      "example": "Please complete this claim form with me, because the bag is not on the belt this evening.",
+      "glossYue": "請同我填呢張⋯⋯。",
+      "answer": "claim form",
+      "choices": [
+        "claim form",
+        "service charge",
+        "morning shift"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "t10-l7",
+    "hint": "Could you deliver the bag to my hotel if you find it after you finish this search?"
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想佢哋送到酒店。你點講？",
+      "choices": [
+        "Could you deliver the bag to my hotel if you find it after you finish this search?",
+        "Could we split the bill?",
+        "I am not feeling well."
+      ],
+      "answer": 0,
+      "explain": "講 deliver，再講 hotel。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "My",
+        "luggage",
+        "is",
+        "missing"
+      ],
+      "answer": [
+        "My",
+        "luggage",
+        "is",
+        "missing"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "hugo",
+    "intro": "你喺行李轉盤報失。可以講：baggage claim、tag number、deliver。",
+    "turns": [
+      {
+        "partner": "Opal",
+        "partnerId": "opal",
+        "line": "Could you describe the bag for me, and tell me the colour if you still remember it?",
+        "audio": "assets/audio/lines/t10-l2.mp3",
+        "audioSlow": "assets/audio/lines/t10-l2-slow.mp3",
+        "expect": "It is a blue suitcase with a red ribbon, and it has two small wheels underneath it.",
+        "keywords": [
+          "suitcase",
+          "ribbon"
+        ],
+        "modelAudio": "assets/audio/lines/t10-l3.mp3",
+        "modelSlow": "assets/audio/lines/t10-l3-slow.mp3"
+      },
+      {
+        "partner": "Opal",
+        "partnerId": "opal",
+        "line": "What is the tag number on the handle, so I can search the system for that bag?",
+        "audio": "assets/audio/lines/t10-l4.mp3",
+        "audioSlow": "assets/audio/lines/t10-l4-slow.mp3",
+        "expect": "The tag number is HK four eight two, and it was tied onto the suitcase handle yesterday morning.",
+        "keywords": [
+          "tag",
+          "number"
+        ],
+        "modelAudio": "assets/audio/lines/t10-l5.mp3",
+        "modelSlow": "assets/audio/lines/t10-l5-slow.mp3"
+      },
+      {
+        "partner": "Opal",
+        "partnerId": "opal",
+        "line": "Please complete this claim form with me, because the bag is not on the belt this evening.",
+        "audio": "assets/audio/lines/t10-l6.mp3",
+        "audioSlow": "assets/audio/lines/t10-l6-slow.mp3",
+        "expect": "Could you deliver the bag to my hotel if you find it after you finish this search?",
+        "keywords": [
+          "deliver",
+          "hotel"
+        ],
+        "modelAudio": "assets/audio/lines/t10-l7.mp3",
+        "modelSlow": "assets/audio/lines/t10-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：行李轉盤",
+      "lemma": "baggage-claim-phrase",
+      "choices": [
+        "baggage claim",
+        "claim form",
+        "tag number"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：送到",
+      "lemma": "deliver-verb",
+      "choices": [
+        "deliver",
+        "luggage",
+        "hotel"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "你講「My luggage is missing at baggage claim, because the belt has stopped and my bag never came out.」，baggage claim 係咩意思？",
+      "choices": [
+        "行李轉盤",
+        "索償表",
+        "酒店"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "職員講「Please complete this claim form with me, because the bag is not on the belt this evening.」，claim form 係咩意思？",
+      "choices": [
+        "索償表",
+        "行李牌",
+        "服務費"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個有 /ɡ/：luggage、hotel、定 deliver？",
+      "choices": [
+        "luggage",
+        "hotel",
+        "deliver"
+      ],
+      "answer": 0,
+      "explain": "luggage 有 /ɡ/。"
+    }
+  ],
+  "sound": {
+    "ipa": "/ɡ/",
+    "title": "luggage 入面嗰個音",
+    "note": "luggage 有 /ɡ/。hotel 同 deliver 冇。",
+    "pairs": [
+      {
+        "a": "luggage-noun",
+        "b": "hotel-noun"
+      },
+      {
+        "a": "tag-number-phrase",
+        "b": "deliver-verb"
+      }
+    ],
+    "drill": [
+      "luggage-noun"
+    ]
+  }
+}

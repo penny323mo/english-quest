@@ -30377,7 +30377,7 @@
       "lemma": "follow-up visit",
       "pos": "phrase",
       "senseId": "return-visit",
-      "ipa": "/ˈfɑ.loʊ ˈʌp ˈvɪ.zɪt/",
+      "ipa": "/ˈfɑ.loʊ ˌʌp ˈvɪ.zɪt/",
       "syllables": [
         "fol",
         "low",
@@ -30388,12 +30388,12 @@
       "syllableIpa": [
         "ˈfɑ",
         "loʊ",
-        "ˈʌp",
+        "ˌʌp",
         "ˈvɪ",
         "zɪt"
       ],
       "stress": 1,
-      "arpabet": "F AA1 L OW0 AH1 P V IH1 Z IH0 T",
+      "arpabet": "F AA1 L OW0 | AH2 P | V IH1 Z IH0 T",
       "audio": "assets/audio/words/follow-up-visit-noun.mp3",
       "audioSlow": "assets/audio/words/follow-up-visit-noun-slow.mp3",
       "glossYue": "覆診",
@@ -30566,19 +30566,19 @@
       "lemma": "undercooked",
       "pos": "adj",
       "senseId": "not-cooked-enough",
-      "ipa": "/ən.dɚ.ˈkʊkt/",
+      "ipa": "/ˌʌn.dɚ.ˈkʊkt/",
       "syllables": [
         "un",
         "der",
         "cooked"
       ],
       "syllableIpa": [
-        "ən",
+        "ˌʌn",
         "dɚ",
         "ˈkʊkt"
       ],
       "stress": 3,
-      "arpabet": "AH0 N D ER0 K UH1 K T",
+      "arpabet": "AH2 N D ER0 K UH1 K T",
       "audio": "assets/audio/words/undercooked-adj.mp3",
       "audioSlow": "assets/audio/words/undercooked-adj-slow.mp3",
       "glossYue": "未煮熟",
@@ -31037,9 +31037,9 @@
         "a customer-facing task",
         "customer-facing work"
       ],
-      "example": "I enjoy a customer-facing task at the counter.",
+      "example": "I like customer-facing work at the counter.",
       "exampleYue": "我鍾意喺櫃檯做對客嘅工作。",
-      "say": "I enjoy a customer-facing task at the counter.",
+      "say": "I like customer-facing work at the counter.",
       "variants": [],
       "note": "",
       "sources": [
@@ -31051,18 +31051,18 @@
       "senseMismatch": false,
       "cmuLemma": "customer-facing",
       "phrase": true,
-      "audioSha256": "150671c37376c91a058e81d70d35329d8383d0c207ffba8bb124272f65164214",
+      "audioSha256": "74a97a964d7e4ca90a1ef1e29b84307e9eeb32df7c3229fdb9964c45bcaea7b2",
       "register": "職場",
       "usageNotes": "中間有連字號，當一個形容詞。",
       "pitfallsYue": "唔好拆開講 a customer that is facing。",
       "related": [],
       "examples": [
         {
-          "en": "I enjoy a customer-facing task at the counter.",
+          "en": "I like customer-facing work at the counter.",
           "yue": "我鍾意喺櫃檯做對客嘅工作。",
           "audio": "assets/audio/words/customer-facing-adj.mp3",
           "audioSlow": "assets/audio/words/customer-facing-adj-slow.mp3",
-          "say": "I enjoy a customer-facing task at the counter."
+          "say": "I like customer-facing work at the counter."
         },
         {
           "en": "The role is customer-facing every weekend.",
@@ -31156,12 +31156,12 @@
       "glossZh": "做到",
       "jyutping": "zou6 dou2",
       "collocations": [
-        "achieved a calm queue",
+        "achieved our target",
         "achieved a result"
       ],
-      "example": "I achieved a calm queue before lunch.",
-      "exampleYue": "我開飯之前將條隊做到好定。",
-      "say": "I achieved a calm queue before lunch.",
+      "example": "We achieved our sales target before lunch.",
+      "exampleYue": "我哋開飯之前做到銷售目標。",
+      "say": "We achieved our sales target before lunch.",
       "variants": [],
       "note": "",
       "sources": [
@@ -31173,18 +31173,18 @@
       "senseMismatch": false,
       "cmuLemma": "achieved",
       "phrase": false,
-      "audioSha256": "1f91764838e8b141cd28c9d1db8d27c94f9b507f408e43f71e069078f65a91c3",
+      "audioSha256": "c807c7b3e94665b6fa4d975623a1e61bf3db6a8a8a0e157bb5f0d438255556db",
       "register": "職場",
       "usageNotes": "後面加結果，唔係加職位。",
       "pitfallsYue": "唔好同 archived 撈，讀音完全唔同。",
       "related": [],
       "examples": [
         {
-          "en": "I achieved a calm queue before lunch.",
-          "yue": "我開飯之前將條隊做到好定。",
+          "en": "We achieved our sales target before lunch.",
+          "yue": "我哋開飯之前做到銷售目標。",
           "audio": "assets/audio/words/achieved-verb.mp3",
           "audioSlow": "assets/audio/words/achieved-verb-slow.mp3",
-          "say": "I achieved a calm queue before lunch."
+          "say": "We achieved our sales target before lunch."
         },
         {
           "en": "We achieved a result the guests noticed.",
@@ -31282,12 +31282,12 @@
       "glossZh": "可靠",
       "jyutping": "ho2 kaau3",
       "collocations": [
-        "a reliable story",
+        "a reliable teammate",
         "sounds reliable"
       ],
-      "example": "That story sounds reliable to the team.",
-      "exampleYue": "呢個故事對團隊嚟講好可靠。",
-      "say": "That story sounds reliable to the team.",
+      "example": "She is a reliable teammate.",
+      "exampleYue": "佢係一個可靠嘅同事。",
+      "say": "She is a reliable teammate.",
       "variants": [],
       "note": "",
       "sources": [
@@ -31299,18 +31299,18 @@
       "senseMismatch": false,
       "cmuLemma": "reliable",
       "phrase": false,
-      "audioSha256": "551d17341b3942da411b772e943b6293900a2fbf844ac75f4530ecc7b6bd4bec",
+      "audioSha256": "043157a1194ec48c0f3be9577ebacee429011daf50e3a9611091156f62d89ed1",
       "register": "職場",
       "usageNotes": "可以形容人或者故事。",
       "pitfallsYue": "重音喺第二音 li。",
       "related": [],
       "examples": [
         {
-          "en": "That story sounds reliable to the team.",
-          "yue": "呢個故事對團隊嚟講好可靠。",
+          "en": "She is a reliable teammate.",
+          "yue": "佢係一個可靠嘅同事。",
           "audio": "assets/audio/words/reliable-adj.mp3",
           "audioSlow": "assets/audio/words/reliable-adj-slow.mp3",
-          "say": "That story sounds reliable to the team."
+          "say": "She is a reliable teammate."
         },
         {
           "en": "A reliable colleague arrives on time.",
@@ -31719,7 +31719,7 @@
         "a delayed flight"
       ],
       "example": "Our flight is delayed this afternoon.",
-      "exampleYue": "我哋下班機今日下晝延遲。",
+      "exampleYue": "我哋班機今日下晝延遲。",
       "say": "Our flight is delayed this afternoon.",
       "variants": [],
       "note": "",
@@ -31740,7 +31740,7 @@
       "examples": [
         {
           "en": "Our flight is delayed this afternoon.",
-          "yue": "我哋下班機今日下晝延遲。",
+          "yue": "我哋班機今日下晝延遲。",
           "audio": "assets/audio/words/delayed-adj.mp3",
           "audioSlow": "assets/audio/words/delayed-adj-slow.mp3",
           "say": "Our flight is delayed this afternoon."
@@ -32020,12 +32020,12 @@
       "glossZh": "代用券",
       "jyutping": "doi6 jung6 hyun3",
       "collocations": [
-        "a hotel voucher",
-        "check a voucher"
+        "a voucher for one night",
+        "a hotel voucher"
       ],
-      "example": "I will check a voucher for the hotel.",
-      "exampleYue": "我會睇下張酒店代用券。",
-      "say": "I will check a voucher for the hotel.",
+      "example": "The hotel gave me a voucher for one night.",
+      "exampleYue": "酒店畀咗我一張住一晚嘅代用券。",
+      "say": "The hotel gave me a voucher for one night.",
       "variants": [],
       "note": "",
       "sources": [
@@ -32037,18 +32037,18 @@
       "senseMismatch": false,
       "cmuLemma": "voucher",
       "phrase": false,
-      "audioSha256": "4104cb7ff7b2646715e3e29ca31e18b4eeb0b42617d04c517ca582c5e2cbddea",
+      "audioSha256": "4737c4b11321e85f1fd9c1b400d45f4521d8c7fc423bab7871fcc7fc7ad42fbd",
       "register": "旅行",
       "usageNotes": "一張紙或者電子券。",
       "pitfallsYue": "同 coupon 接近，呢課用 voucher。",
       "related": [],
       "examples": [
         {
-          "en": "I will check a voucher for the hotel.",
-          "yue": "我會睇下張酒店代用券。",
+          "en": "The hotel gave me a voucher for one night.",
+          "yue": "酒店畀咗我一張住一晚嘅代用券。",
           "audio": "assets/audio/words/voucher-noun.mp3",
           "audioSlow": "assets/audio/words/voucher-noun-slow.mp3",
-          "say": "I will check a voucher for the hotel."
+          "say": "The hotel gave me a voucher for one night."
         },
         {
           "en": "This voucher covers one simple meal.",
@@ -32194,17 +32194,17 @@
       "lemma": "standby",
       "pos": "noun",
       "senseId": "wait-for-seat",
-      "ipa": "/ˈstænd.ˈbaɪ/",
+      "ipa": "/ˈstænd.ˌbaɪ/",
       "syllables": [
         "stand",
         "by"
       ],
       "syllableIpa": [
         "ˈstænd",
-        "ˈbaɪ"
+        "ˌbaɪ"
       ],
       "stress": 1,
-      "arpabet": "S T AE1 N D B AY1",
+      "arpabet": "S T AE1 N D B AY2",
       "audio": "assets/audio/words/standby-noun.mp3",
       "audioSlow": "assets/audio/words/standby-noun-slow.mp3",
       "glossYue": "候補",
@@ -32231,7 +32231,7 @@
       "audioSha256": "36994918b9ca973f4275d0bb510b6a9dacb39d6c768efb5568ecaa6db2473799",
       "register": "旅行",
       "usageNotes": "可以講 on standby。",
-      "pitfallsYue": "兩個重音都要讀出。",
+      "pitfallsYue": "第二個音讀輕啲，唔好兩個都重。",
       "related": [],
       "examples": [
         {
@@ -32316,7 +32316,7 @@
       "lemma": "announcement",
       "pos": "noun",
       "senseId": "public-notice",
-      "ipa": "/ə.ˈnaʊn.smənt/",
+      "ipa": "/ə.ˈnaʊns.mənt/",
       "syllables": [
         "an",
         "nounce",
@@ -32324,8 +32324,8 @@
       ],
       "syllableIpa": [
         "ə",
-        "ˈnaʊn",
-        "smənt"
+        "ˈnaʊns",
+        "mənt"
       ],
       "stress": 2,
       "arpabet": "AH0 N AW1 N S M AH0 N T",
@@ -33235,6 +33235,626 @@
           "audio": "assets/audio/words/lead-time-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/lead-time-phrase-ex2-slow.mp3",
           "say": "Please put the lead time in the quote."
+        }
+      ]
+    },
+    {
+      "id": "octopus-card-phrase",
+      "lemma": "Octopus card",
+      "pos": "phrase",
+      "senseId": "transit-card",
+      "ipa": "/ˈɑk.tə.ˌpʊs ˈkɑɹd/",
+      "syllables": [
+        "oc",
+        "to",
+        "pus",
+        "card"
+      ],
+      "syllableIpa": [
+        "ˈɑk",
+        "tə",
+        "ˌpʊs",
+        "ˈkɑɹd"
+      ],
+      "stress": 1,
+      "arpabet": "AA1 K T AH0 P UH2 S | K AA1 R D",
+      "audio": "assets/audio/words/octopus-card-phrase.mp3",
+      "audioSlow": "assets/audio/words/octopus-card-phrase-slow.mp3",
+      "glossYue": "八達通",
+      "glossZh": "八達通",
+      "jyutping": "baat3 daat6 tung1",
+      "collocations": [
+        "an Octopus card",
+        "pay with an Octopus card"
+      ],
+      "example": "I will pay with an Octopus card at the counter.",
+      "exampleYue": "我會喺櫃檯用八達通畀錢。",
+      "say": "I will pay with an Octopus card at the counter.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "Octopus card",
+      "phrase": true,
+      "audioSha256": "bd58b145c18e6aabe22a0786a2e3250cbe4dbde935e82dc5ce946df9a06843b8",
+      "register": "餐廳",
+      "usageNotes": "八達通係香港嗰張交通卡。",
+      "pitfallsYue": "八達通係香港嗰張交通卡。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I will pay with an Octopus card at the counter.",
+          "yue": "我會喺櫃檯用八達通畀錢。",
+          "audio": "assets/audio/words/octopus-card-phrase.mp3",
+          "audioSlow": "assets/audio/words/octopus-card-phrase-slow.mp3",
+          "say": "I will pay with an Octopus card at the counter."
+        },
+        {
+          "en": "An Octopus card is easier when I do not carry cash.",
+          "yue": "我冇帶現金嗰陣，八達通方便啲。",
+          "audio": "assets/audio/words/octopus-card-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/octopus-card-phrase-ex2-slow.mp3",
+          "say": "An Octopus card is easier when I do not carry cash."
+        }
+      ]
+    },
+    {
+      "id": "mistake-noun",
+      "lemma": "mistake",
+      "pos": "noun",
+      "senseId": "billing-error",
+      "ipa": "/mɪ.ˈsteɪk/",
+      "syllables": [
+        "mis",
+        "take"
+      ],
+      "syllableIpa": [
+        "mɪ",
+        "ˈsteɪk"
+      ],
+      "stress": 2,
+      "arpabet": "M IH0 S T EY1 K",
+      "audio": "assets/audio/words/mistake-noun.mp3",
+      "audioSlow": "assets/audio/words/mistake-noun-slow.mp3",
+      "glossYue": "錯",
+      "glossZh": "錯",
+      "jyutping": "co3",
+      "collocations": [
+        "a mistake on the bill",
+        "correct the mistake"
+      ],
+      "example": "There is a mistake on the bill.",
+      "exampleYue": "張單上面有個錯。",
+      "say": "There is a mistake on the bill.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "mistake",
+      "phrase": false,
+      "audioSha256": "cf4af97bb52ca08336aa15537c28a4b148b809da28f6df0f5a3a3c66055d97a0",
+      "register": "餐廳",
+      "usageNotes": "單上面計錯先叫 mistake。",
+      "pitfallsYue": "單上面計錯先叫 mistake。",
+      "related": [],
+      "examples": [
+        {
+          "en": "There is a mistake on the bill.",
+          "yue": "張單上面有個錯。",
+          "audio": "assets/audio/words/mistake-noun.mp3",
+          "audioSlow": "assets/audio/words/mistake-noun-slow.mp3",
+          "say": "There is a mistake on the bill."
+        },
+        {
+          "en": "The waiter corrected the mistake before I paid.",
+          "yue": "我畀錢之前，伙計改好嗰個錯。",
+          "audio": "assets/audio/words/mistake-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/mistake-noun-ex2-slow.mp3",
+          "say": "The waiter corrected the mistake before I paid."
+        }
+      ]
+    },
+    {
+      "id": "not-feeling-well-phrase",
+      "lemma": "not feeling well",
+      "pos": "phrase",
+      "senseId": "unwell",
+      "ipa": "/ˈnɑt ˈfi.lɪŋ ˈwɛl/",
+      "syllables": [
+        "not",
+        "fee",
+        "ling",
+        "well"
+      ],
+      "syllableIpa": [
+        "ˈnɑt",
+        "ˈfi",
+        "lɪŋ",
+        "ˈwɛl"
+      ],
+      "stress": 1,
+      "arpabet": "N AA1 T | F IY1 L IH0 NG | W EH1 L",
+      "audio": "assets/audio/words/not-feeling-well-phrase.mp3",
+      "audioSlow": "assets/audio/words/not-feeling-well-phrase-slow.mp3",
+      "glossYue": "唔舒服",
+      "glossZh": "唔舒服",
+      "jyutping": "m4 syu1 fuk6",
+      "collocations": [
+        "not feeling well",
+        "feeling well before a shift"
+      ],
+      "example": "I am not feeling well before my shift.",
+      "exampleYue": "我返工之前覺得唔舒服。",
+      "say": "I am not feeling well before my shift.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "not feeling well",
+      "phrase": true,
+      "audioSha256": "bd000cbcbf035c4c9dd833d7134d9f95d88b0f426d33ae7a307d9b06033fd392",
+      "register": "職場",
+      "usageNotes": "請病假嗰陣講 not feeling well。",
+      "pitfallsYue": "請病假嗰陣講 not feeling well。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I am not feeling well before my shift.",
+          "yue": "我返工之前覺得唔舒服。",
+          "audio": "assets/audio/words/not-feeling-well-phrase.mp3",
+          "audioSlow": "assets/audio/words/not-feeling-well-phrase-slow.mp3",
+          "say": "I am not feeling well before my shift."
+        },
+        {
+          "en": "She is not feeling well, so she called the shop.",
+          "yue": "佢覺得唔舒服，所以打咗去舖頭。",
+          "audio": "assets/audio/words/not-feeling-well-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/not-feeling-well-phrase-ex2-slow.mp3",
+          "say": "She is not feeling well, so she called the shop."
+        }
+      ]
+    },
+    {
+      "id": "doctors-note-phrase",
+      "lemma": "doctor's note",
+      "pos": "phrase",
+      "senseId": "clinic-paper",
+      "ipa": "/ˈdɑk.tɚ ˈnoʊt/",
+      "syllables": [
+        "doc",
+        "tor",
+        "note"
+      ],
+      "syllableIpa": [
+        "ˈdɑk",
+        "tɚ",
+        "ˈnoʊt"
+      ],
+      "stress": 1,
+      "arpabet": "D AA1 K T ER0 | N OW1 T",
+      "audio": "assets/audio/words/doctors-note-phrase.mp3",
+      "audioSlow": "assets/audio/words/doctors-note-phrase-slow.mp3",
+      "glossYue": "醫生紙",
+      "glossZh": "醫生紙",
+      "jyutping": "ji1 sang1 zi2",
+      "collocations": [
+        "a doctor's note",
+        "bring a doctor's note"
+      ],
+      "example": "I can bring a doctor's note on Monday.",
+      "exampleYue": "我星期一可以帶醫生紙嚟。",
+      "say": "I can bring a doctor's note on Monday.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "doctor's note",
+      "phrase": true,
+      "audioSha256": "dc5dfd21d4af0ea5782598abcedc33e724fb0f96ca2f790adee2f60bfd2bac0f",
+      "register": "職場",
+      "usageNotes": "醫生紙係診所開畀僱主嘅證明。",
+      "pitfallsYue": "醫生紙係診所開畀僱主嘅證明。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I can bring a doctor's note on Monday.",
+          "yue": "我星期一可以帶醫生紙嚟。",
+          "audio": "assets/audio/words/doctors-note-phrase.mp3",
+          "audioSlow": "assets/audio/words/doctors-note-phrase-slow.mp3",
+          "say": "I can bring a doctor's note on Monday."
+        },
+        {
+          "en": "The doctor's note explains why I missed the shift.",
+          "yue": "張醫生紙解釋我點解冇返更。",
+          "audio": "assets/audio/words/doctors-note-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/doctors-note-phrase-ex2-slow.mp3",
+          "say": "The doctor's note explains why I missed the shift."
+        }
+      ]
+    },
+    {
+      "id": "cover-my-shift-phrase",
+      "lemma": "cover my shift",
+      "pos": "phrase",
+      "senseId": "take-a-shift",
+      "ipa": "/ˈkʌ.vɚ ˈmaɪ ˈʃɪft/",
+      "syllables": [
+        "co",
+        "ver",
+        "my",
+        "shift"
+      ],
+      "syllableIpa": [
+        "ˈkʌ",
+        "vɚ",
+        "ˈmaɪ",
+        "ˈʃɪft"
+      ],
+      "stress": 1,
+      "arpabet": "K AH1 V ER0 | M AY1 | SH IH1 F T",
+      "audio": "assets/audio/words/cover-my-shift-phrase.mp3",
+      "audioSlow": "assets/audio/words/cover-my-shift-phrase-slow.mp3",
+      "glossYue": "頂更",
+      "glossZh": "頂更",
+      "jyutping": "ding2 gang1",
+      "collocations": [
+        "cover my shift",
+        "ask someone to cover my shift"
+      ],
+      "example": "Could you cover my shift on Monday morning?",
+      "exampleYue": "星期一朝早可唔可以幫我頂更？",
+      "say": "Could you cover my shift on Monday morning?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "cover my shift",
+      "phrase": true,
+      "audioSha256": "9a83a9e49fea2462a01168549dae4df0f890f3adc9123fb0b604f1f914f79341",
+      "register": "職場",
+      "usageNotes": "頂更即係同事幫你上嗰一更。",
+      "pitfallsYue": "頂更即係同事幫你上嗰一更。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Could you cover my shift on Monday morning?",
+          "yue": "星期一朝早可唔可以幫我頂更？",
+          "audio": "assets/audio/words/cover-my-shift-phrase.mp3",
+          "audioSlow": "assets/audio/words/cover-my-shift-phrase-slow.mp3",
+          "say": "Could you cover my shift on Monday morning?"
+        },
+        {
+          "en": "Mei can cover my shift if the shop stays busy.",
+          "yue": "如果舖頭忙，Mei 可以幫我頂更。",
+          "audio": "assets/audio/words/cover-my-shift-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/cover-my-shift-phrase-ex2-slow.mp3",
+          "say": "Mei can cover my shift if the shop stays busy."
+        }
+      ]
+    },
+    {
+      "id": "monday-noun",
+      "lemma": "Monday",
+      "pos": "noun",
+      "senseId": "weekday-name",
+      "ipa": "/ˈmʌn.di/",
+      "syllables": [
+        "mon",
+        "day"
+      ],
+      "syllableIpa": [
+        "ˈmʌn",
+        "di"
+      ],
+      "stress": 1,
+      "arpabet": "M AH1 N D IY0",
+      "audio": "assets/audio/words/monday-noun.mp3",
+      "audioSlow": "assets/audio/words/monday-noun-slow.mp3",
+      "glossYue": "星期一",
+      "glossZh": "星期一",
+      "jyutping": "sing1 kei4 jat1",
+      "collocations": [
+        "on Monday",
+        "back on Monday"
+      ],
+      "example": "I will be back on Monday after the clinic.",
+      "exampleYue": "我睇完醫生星期一返嚟。",
+      "say": "I will be back on Monday after the clinic.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "Monday",
+      "phrase": false,
+      "audioSha256": "e6b13664967726435d5bb96bd6549ef9c3d1b9b0496fc3fd9f7b8adc6e9d81ba",
+      "register": "職場",
+      "usageNotes": "Monday 係星期嘅第一日。",
+      "pitfallsYue": "Monday 係星期嘅第一日。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I will be back on Monday after the clinic.",
+          "yue": "我睇完醫生星期一返嚟。",
+          "audio": "assets/audio/words/monday-noun.mp3",
+          "audioSlow": "assets/audio/words/monday-noun-slow.mp3",
+          "say": "I will be back on Monday after the clinic."
+        },
+        {
+          "en": "Monday is the day I return to the shop.",
+          "yue": "星期一就係我返舖頭嗰日。",
+          "audio": "assets/audio/words/monday-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/monday-noun-ex2-slow.mp3",
+          "say": "Monday is the day I return to the shop."
+        }
+      ]
+    },
+    {
+      "id": "baggage-claim-phrase",
+      "lemma": "baggage claim",
+      "pos": "phrase",
+      "senseId": "carousel",
+      "ipa": "/ˈbæ.ɡədʒ ˈkleɪm/",
+      "syllables": [
+        "bag",
+        "gage",
+        "claim"
+      ],
+      "syllableIpa": [
+        "ˈbæ",
+        "ɡədʒ",
+        "ˈkleɪm"
+      ],
+      "stress": 1,
+      "arpabet": "B AE1 G AH0 JH | K L EY1 M",
+      "audio": "assets/audio/words/baggage-claim-phrase.mp3",
+      "audioSlow": "assets/audio/words/baggage-claim-phrase-slow.mp3",
+      "glossYue": "行李轉盤",
+      "glossZh": "行李轉盤",
+      "jyutping": "hang4 lei5 zyun2 pun4",
+      "collocations": [
+        "at baggage claim",
+        "baggage claim belt"
+      ],
+      "example": "My bag is missing at baggage claim.",
+      "exampleYue": "我個袋喺行李轉盤唔見咗。",
+      "say": "My bag is missing at baggage claim.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "baggage claim",
+      "phrase": true,
+      "audioSha256": "8744a4ede1c42668dbf9271f040c38f0900bbac0517aed0063ac403a95bc50e8",
+      "register": "旅行",
+      "usageNotes": "行李轉盤就係 baggage claim。",
+      "pitfallsYue": "行李轉盤就係 baggage claim。",
+      "related": [],
+      "examples": [
+        {
+          "en": "My bag is missing at baggage claim.",
+          "yue": "我個袋喺行李轉盤唔見咗。",
+          "audio": "assets/audio/words/baggage-claim-phrase.mp3",
+          "audioSlow": "assets/audio/words/baggage-claim-phrase-slow.mp3",
+          "say": "My bag is missing at baggage claim."
+        },
+        {
+          "en": "Baggage claim is busy after this delayed flight.",
+          "yue": "呢班延誤航班之後，行李轉盤好多人。",
+          "audio": "assets/audio/words/baggage-claim-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/baggage-claim-phrase-ex2-slow.mp3",
+          "say": "Baggage claim is busy after this delayed flight."
+        }
+      ]
+    },
+    {
+      "id": "claim-form-phrase",
+      "lemma": "claim form",
+      "pos": "phrase",
+      "senseId": "loss-paper",
+      "ipa": "/ˈkleɪm ˈfɔɹm/",
+      "syllables": [
+        "claim",
+        "form"
+      ],
+      "syllableIpa": [
+        "ˈkleɪm",
+        "ˈfɔɹm"
+      ],
+      "stress": 1,
+      "arpabet": "K L EY1 M | F AO1 R M",
+      "audio": "assets/audio/words/claim-form-phrase.mp3",
+      "audioSlow": "assets/audio/words/claim-form-phrase-slow.mp3",
+      "glossYue": "索償表",
+      "glossZh": "索償表",
+      "jyutping": "sok3 soeng4 biu2",
+      "collocations": [
+        "a claim form",
+        "complete this claim form"
+      ],
+      "example": "Please complete this claim form for the missing bag.",
+      "exampleYue": "唔見咗個袋，請填呢張索償表。",
+      "say": "Please complete this claim form for the missing bag.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "claim form",
+      "phrase": true,
+      "audioSha256": "cbc6b2ab09ac5f4b34475c00808821c6ba0457eb826e3837ff1707a204f7263f",
+      "register": "旅行",
+      "usageNotes": "索償表係報失行李嗰張紙。",
+      "pitfallsYue": "索償表係報失行李嗰張紙。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Please complete this claim form for the missing bag.",
+          "yue": "唔見咗個袋，請填呢張索償表。",
+          "audio": "assets/audio/words/claim-form-phrase.mp3",
+          "audioSlow": "assets/audio/words/claim-form-phrase-slow.mp3",
+          "say": "Please complete this claim form for the missing bag."
+        },
+        {
+          "en": "The claim form asks for the tag number.",
+          "yue": "張索償表要填行李牌號碼。",
+          "audio": "assets/audio/words/claim-form-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/claim-form-phrase-ex2-slow.mp3",
+          "say": "The claim form asks for the tag number."
+        }
+      ]
+    },
+    {
+      "id": "tag-number-phrase",
+      "lemma": "tag number",
+      "pos": "phrase",
+      "senseId": "bag-code",
+      "ipa": "/ˈtæɡ ˈnʌm.bɚ/",
+      "syllables": [
+        "tag",
+        "num",
+        "ber"
+      ],
+      "syllableIpa": [
+        "ˈtæɡ",
+        "ˈnʌm",
+        "bɚ"
+      ],
+      "stress": 1,
+      "arpabet": "T AE1 G | N AH1 M B ER0",
+      "audio": "assets/audio/words/tag-number-phrase.mp3",
+      "audioSlow": "assets/audio/words/tag-number-phrase-slow.mp3",
+      "glossYue": "行李牌號碼",
+      "glossZh": "行李牌號碼",
+      "jyutping": "paai4 hou6",
+      "collocations": [
+        "the tag number",
+        "read the tag number"
+      ],
+      "example": "The tag number is on the suitcase handle.",
+      "exampleYue": "行李牌號碼喺喼手柄度。",
+      "say": "The tag number is on the suitcase handle.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "tag number",
+      "phrase": true,
+      "audioSha256": "cbc481c83076aa6c065e89bd3ba5f5e4567aa7e9851896fe9244bdd4b2203187",
+      "register": "旅行",
+      "usageNotes": "行李牌上面嗰組號碼叫 tag number。",
+      "pitfallsYue": "行李牌上面嗰組號碼叫 tag number。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The tag number is on the suitcase handle.",
+          "yue": "行李牌號碼喺喼手柄度。",
+          "audio": "assets/audio/words/tag-number-phrase.mp3",
+          "audioSlow": "assets/audio/words/tag-number-phrase-slow.mp3",
+          "say": "The tag number is on the suitcase handle."
+        },
+        {
+          "en": "I read the tag number slowly to the officer.",
+          "yue": "我慢慢將行李牌號碼讀畀職員聽。",
+          "audio": "assets/audio/words/tag-number-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/tag-number-phrase-ex2-slow.mp3",
+          "say": "I read the tag number slowly to the officer."
+        }
+      ]
+    },
+    {
+      "id": "deliver-verb",
+      "lemma": "deliver",
+      "pos": "verb",
+      "senseId": "bring-to",
+      "ipa": "/dɪ.ˈlɪ.vɚ/",
+      "syllables": [
+        "de",
+        "li",
+        "ver"
+      ],
+      "syllableIpa": [
+        "dɪ",
+        "ˈlɪ",
+        "vɚ"
+      ],
+      "stress": 2,
+      "arpabet": "D IH0 L IH1 V ER0",
+      "audio": "assets/audio/words/deliver-verb.mp3",
+      "audioSlow": "assets/audio/words/deliver-verb-slow.mp3",
+      "glossYue": "送到",
+      "glossZh": "送到",
+      "jyutping": "sung3",
+      "collocations": [
+        "deliver the bag",
+        "deliver to the hotel"
+      ],
+      "example": "They can deliver the bag to my hotel.",
+      "exampleYue": "佢哋可以將個袋送到我間酒店。",
+      "say": "They can deliver the bag to my hotel.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "deliver",
+      "phrase": false,
+      "audioSha256": "cd84ddd7c670c3df025f28ca89b4607ead95e4e7bfbc575cd421ad4e9ffbf004",
+      "register": "旅行",
+      "usageNotes": "deliver 係送到一個地址。",
+      "pitfallsYue": "deliver 係送到一個地址。",
+      "related": [],
+      "examples": [
+        {
+          "en": "They can deliver the bag to my hotel.",
+          "yue": "佢哋可以將個袋送到我間酒店。",
+          "audio": "assets/audio/words/deliver-verb.mp3",
+          "audioSlow": "assets/audio/words/deliver-verb-slow.mp3",
+          "say": "They can deliver the bag to my hotel."
+        },
+        {
+          "en": "Please deliver the suitcase after you find it.",
+          "yue": "搵到喼之後請送過嚟。",
+          "audio": "assets/audio/words/deliver-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/deliver-verb-ex2-slow.mp3",
+          "say": "Please deliver the suitcase after you find it."
         }
       ]
     }
