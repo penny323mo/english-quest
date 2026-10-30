@@ -1,0 +1,6 @@
+You are a strict senior code reviewer for English Quest. cd /workspace/sidequest/english-quest.
+Round 33 review at 390px. Do NOT modify project files.
+Read CURRICULUM.md (≥3 new lessons this round: D6, R8, J13?), ART-STYLE.md, review/mockup-v1, DUOLINGO-REF.md, SPEC.md, and prompts/orch-fix-33.txt.
+Verify: P0 STYLE items 1–9 (fix-32) all closed vs mockup-v1 (tab labels 路徑／生字／練習／我, glyph path nodes, sans header, no blurred discs, no serif English quiz headings); new lessons end-to-end; CEFR monotonic and avg words/line never drops >0.5; dialogue coherence (#49: no role swaps, no same speaker >2 in a row, no duplicate lines) in F5/F6/D4/D5 and the new lessons; #40 #43 #48 #50 #51 #52; tests incl. coherence test; no 390 overflow; no Duo IP; P0-3 not sneakily done.
+Write reviews/orch-r33-grok.md first line VERDICT: SHIP or NOT READY.
+SHIP forbidden while any CRITICAL/MAJOR open, any P0 STYLE item open, any #-numbered audit item open, difficulty jump/dip, <3 new lessons, or overflow.

@@ -1,0 +1,30 @@
+Phase 4 unlimited. Round 33. Read CURRICULUM.md + ART-STYLE.md + DUOLINGO-REF.md + SPEC.md + review/mockup-v1 (Penny-approved) first.
+cd /workspace/sidequest/english-quest. Never touch the grokbot repo or the nightly panes. No paid services. Report files under review/ stay local (never commit review/loop-r*/ or review/style-gap/).
+
+## P0 STYLE — still SHIP BLOCKER (Penny 2026-10-31:「又話淺色 卡通風」)
+Re-verify EVERY item 1–9 of the fix-32 P0 STYLE section is closed on the live build (prompts/orch-fix-32.txt). As of the round-31 live audit (bundle index-Bcz20FOs.js) these were still open: tab labels 路線／重溫／詞庫／我 (must be 路徑／生字／練習／我), path nodes are blurred painted discs (must be simple glyph icons in gold/teal circular nodes on white unit cards, mockup 01), header name in big serif display (use Nunito/sans, add 今日 XP goal bar + 小燈 wave), quiz/listen chrome still serif English headings. If any remain after fix-32, finish them FIRST, before new lessons.
+
+## NEW FEATURE TARGET (≥3 new lessons, CURRICULUM build order item 12 → new stretch)
+Add these to CURRICULUM.md and ship all three end-to-end (12 beats, hero WebP 900×1200 bright ink-outline cartoon per ART-STYLE §5, lexicon CMUdict IPA, Kokoro audio, natural Cantonese, examples >2 words unique per lemma, tests), slotted into path by CEFR so the path stays non-decreasing and avg words/line rises smoothly:
+- **D6 — Pharmacy / 藥房買藥 · A2** (symptoms, "something for a cough", dosage "twice a day after meals", allergies; pharmacist + customer).
+- **R8 — Takeaway order by phone / 電話叫外賣 · A2/B1** (order, address, "how long will it take?", spell street name, pay on delivery).
+- **J13 — Corporate gift order / 公司訂禮品 · B2** (bulk quantity, engraving logo, lead time, quote by email, "could you do a better price for 30 pieces?").
+Plus a "legendary review" checkpoint node at the end of each unit is OPTIONAL this round; new lessons come first.
+
+## Coder live 390px audit — round 31 (live b5ab128/ae0d205, bundle index-Bcz20FOs.js, 2026-10-31 02:10)
+Walk (live URL, 390x844 touch, real taps): path + F5, F6, D4, D5, J11, T8 hook → recap → 下一課, 21–23 steps each, 0 page errors, 0 HTTP ≥400, scrollWidth 390. Path 42/42 playable (+R7/T9 locked), CEFR non-decreasing. Next-lesson chain correct (F5→J1, F6→J2, D4→D5, D5→J3, T8→W2, J11→end card). Lighthouse mobile 99/100/100/100. 20 new lexicon entries audio 200, 19 = CMUdict + 1 phrase.
+Difficulty (avg words/line in path order): Unit F dip FIXED (F1 6.8 → F5 7.4 → F6 9.0). Small dip J3 11.4 → T2 10.2 / R2 10.2 — smooth it (lengthen T2/R2 with real grammar, or reorder) — no lesson may sit below the one before it by more than 0.5.
+CLOSED: #39 follow-up split into 跟進 vs 覆診 cards; #42 Unit F dip.
+STILL OPEN (re-verify after fix-32): #40 J11 hero is still two similar men + a lantern, no tray/ring box/jewellery (review/loop-r31/j11-s0.png); #43 path thumbnails blurred discs (path.png); #48 meaning-quiz stem still glues English line + 「呢句即係點？」 in one serif heading (f6-s5.png) — Cantonese instruction on its own small line above.
+NEW:
+49. **Dialogue coherence in F5/F6/D4/D5 (MAJOR):** 
+   - F5: Mei asks "Please spell my name again for me." (she would ask Ling to spell HER name: "Could you spell your name, please?"); "I am from Hong Kong, and not from Macau." and "My phone number and email are ready." are unnatural — rewrite as a real exchange (Where are you from? / I'm from Hong Kong. / What's your phone number? …).
+   - F6: "The shop is always open before our lunch." / "I never finish the whole shift before then." / "We always close the shop after the night shift." are nonsense — make one coherent daily-routine talk (What time do you usually start? / I usually start at nine. / Do you ever take a break? / I sometimes take a short break after lunch.).
+   - D4: the shop assistant Mina asks the customer "Which phone plan is better for a short city trip?" (role swap) and has two lines in a row; after Tom already chose prepaid he asks about the unlimited contract, then repeats "I will pay for this cheaper prepaid plan here." Make it customer asks → assistant explains → customer chooses → passport/activate → pay, no repeats.
+   - D5: clerk Cole asks the customer "How long will this heavy parcel take…" (role swap); "small parcel" then "heavy parcel"; "fragile, so please mark the full weight" is illogical (fragile → "mark it as fragile"); Tom tells the clerk "keep this receipt until the parcel reaches your home" (wrong person). Cole speaks 6 lines in a row — alternate turns.
+   - Add/extend the dialogue coherence test from fix-32 so it fails on: same speaker >2 lines in a row, a service-staff speaker asking a customer-side question, and duplicate sentences within a lesson.
+50. **Lexicon examples:** parcel-noun and airmail-noun share the identical example — give each its own; fragile-adj example → "This vase is fragile, so please mark it as fragile." style; unlimited-adj example "The unlimited plan is a long phone contract." is wrong (unlimited = no data cap) → e.g. "The unlimited plan has no data limit."; mobile-contract-noun / postage-stamp-noun / follow-up-visit-noun headword IPA covers only the last word — show the full phrase IPA or mark it as a phrase.
+51. **D4 hero prop:** the SIM card is a blank teal rectangle (d4-s0.png); draw a recognisable SIM card / phone so the scene reads at a glance.
+52. **F5 listen crop:** listen step shows only the ceiling + lantern, characters cut off (f5-s2.png) — object-position must keep faces in frame (same fix as #47).
+
+Keep gold bar: IPA/CMUdict, Kokoro pad, natural Cantonese, examples >2 words unique per lemma, tests, LH≥98, 390px, bright cartoon chrome + SFX + 小燈. No Duo IP. P0-3 still forbidden without Penny. Must change app code/content (empty diff not allowed). Commit when done.
