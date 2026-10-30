@@ -623,11 +623,11 @@
     "id": "t2-l3",
     "speaker": "kai",
     "speakerLabel": "Kai",
-    "text": "Please put your liquids in the bin, and take the laptop out.",
+    "text": "Please put your liquids in the tray, and take the laptop out.",
     "glossYue": "唔該將液體放喺個盤度，電腦都攞出嚟。",
     "audio": "assets/audio/lines/t2-l3.mp3",
     "audioSlow": "assets/audio/lines/t2-l3-slow.mp3",
-    "say": "Please put your liquids in the bin, and take the laptop out."
+    "say": "Please put your liquids in the tray, and take the laptop out."
   },
   {
     "id": "t2-l4",
@@ -1833,11 +1833,11 @@
     "id": "w1-l7",
     "speaker": "kai",
     "speakerLabel": "Kai",
-    "text": "The spelling is correct, and I will reach her on extension four two later today.",
-    "glossYue": "串法啱，我遲啲會用四二號內線聯絡佢。",
+    "text": "The spelling is M E I slowly, and the extension is four two.",
+    "glossYue": "我慢慢串 M E I，內線係四二。",
     "audio": "assets/audio/lines/w1-l7.mp3",
     "audioSlow": "assets/audio/lines/w1-l7-slow.mp3",
-    "say": "The spelling is correct, and I will reach her on extension four two later today."
+    "say": "The spelling is M E I slowly, and the extension is four two."
   },
   {
     "id": "w1-l8",
@@ -1848,5 +1848,245 @@
     "audio": "assets/audio/lines/w1-l8.mp3",
     "audioSlow": "assets/audio/lines/w1-l8-slow.mp3",
     "say": "Thank you for the message, and a callback this afternoon would be convenient."
+  },
+  {
+    "id": "j8-l1",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "Have you kept the receipt with you, and should I explain the warranty before you go?",
+    "glossYue": "你有冇帶住張收據？走之前我可唔可以講下保養？",
+    "audio": "assets/audio/lines/j8-l1.mp3",
+    "audioSlow": "assets/audio/lines/j8-l1-slow.mp3",
+    "say": "Have you kept the receipt with you, and should I explain the warranty before you go?"
+  },
+  {
+    "id": "j8-l2",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "I have kept the receipt, but a small scratch showed up within the first week.",
+    "glossYue": "我有留低收據，但係第一個禮拜就有少少刮痕。",
+    "audio": "assets/audio/lines/j8-l2.mp3",
+    "audioSlow": "assets/audio/lines/j8-l2-slow.mp3",
+    "say": "I have kept the receipt, but a small scratch showed up within the first week."
+  },
+  {
+    "id": "j8-l3",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "You should avoid water and any harsh chemicals, and please use only the soft polish.",
+    "glossYue": "你應該避開水同任何勁嘅化學劑，淨係用軟布擦。",
+    "audio": "assets/audio/lines/j8-l3.mp3",
+    "audioSlow": "assets/audio/lines/j8-l3-slow.mp3",
+    "say": "You should avoid water and any harsh chemicals, and please use only the soft polish."
+  },
+  {
+    "id": "j8-l4",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Does the guarantee cover this new scratch, or should I file a claim within the week?",
+    "glossYue": "保養包唔包呢道新刮痕，定係我應該呢個禮拜內申請？",
+    "audio": "assets/audio/lines/j8-l4.mp3",
+    "audioSlow": "assets/audio/lines/j8-l4-slow.mp3",
+    "say": "Does the guarantee cover this new scratch, or should I file a claim within the week?"
+  },
+  {
+    "id": "j8-l5",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "The written policy allows one repair within the year if you have kept the receipt.",
+    "glossYue": "書面政策容許一年之內修理一次，只要你有留低收據。",
+    "audio": "assets/audio/lines/j8-l5.mp3",
+    "audioSlow": "assets/audio/lines/j8-l5-slow.mp3",
+    "say": "The written policy allows one repair within the year if you have kept the receipt."
+  },
+  {
+    "id": "j8-l6",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "I will avoid harsh chemicals at home and come back later if the polish fails.",
+    "glossYue": "我喺屋企會避開勁嘅化學劑，擦唔好就遲啲攞返嚟。",
+    "audio": "assets/audio/lines/j8-l6.mp3",
+    "audioSlow": "assets/audio/lines/j8-l6-slow.mp3",
+    "say": "I will avoid harsh chemicals at home and come back later if the polish fails."
+  },
+  {
+    "id": "j8-l7",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "Please keep that receipt safe, and you should file any new claim within the return window.",
+    "glossYue": "請將張收據安全留低，新嘅申請要喺退換期內交。",
+    "audio": "assets/audio/lines/j8-l7.mp3",
+    "audioSlow": "assets/audio/lines/j8-l7-slow.mp3",
+    "say": "Please keep that receipt safe, and you should file any new claim within the return window."
+  },
+  {
+    "id": "j8-l8",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Thank you, and I now understand the shop policy, the guarantee, and the return window.",
+    "glossYue": "多謝，我而家明白舖頭政策、保養同退換期。",
+    "audio": "assets/audio/lines/j8-l8.mp3",
+    "audioSlow": "assets/audio/lines/j8-l8-slow.mp3",
+    "say": "Thank you, and I now understand the shop policy, the guarantee, and the return window."
+  },
+  {
+    "id": "j10-l1",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "You might also like this matching pair, and it completes the look for a gift tonight.",
+    "glossYue": "你或者都會鍾意呢對襯到嘅，今晚送禮會成套。",
+    "audio": "assets/audio/lines/j10-l1.mp3",
+    "audioSlow": "assets/audio/lines/j10-l1-slow.mp3",
+    "say": "You might also like this matching pair, and it completes the look for a gift tonight."
+  },
+  {
+    "id": "j10-l2",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "If I am getting the necklace today, do the matching earrings go well with it too?",
+    "glossYue": "如果我今日買條頸鏈，對襯嘅耳環會唔會都好配？",
+    "audio": "assets/audio/lines/j10-l2.mp3",
+    "audioSlow": "assets/audio/lines/j10-l2-slow.mp3",
+    "say": "If I am getting the necklace today, do the matching earrings go well with it too?"
+  },
+  {
+    "id": "j10-l3",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "Yes, this popular set is optional, and the engraving is a quiet extra if you like.",
+    "glossYue": "會，呢套好多人揀，可以唔要，刻字係靜靜嘅加購，如果你想。",
+    "audio": "assets/audio/lines/j10-l3.mp3",
+    "audioSlow": "assets/audio/lines/j10-l3-slow.mp3",
+    "say": "Yes, this popular set is optional, and the engraving is a quiet extra if you like."
+  },
+  {
+    "id": "j10-l4",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "I like the pair, but I do not need the engraving if the price goes up.",
+    "glossYue": "我鍾意呢對，但如果價錢升，我就唔使刻字。",
+    "audio": "assets/audio/lines/j10-l4.mp3",
+    "audioSlow": "assets/audio/lines/j10-l4-slow.mp3",
+    "say": "I like the pair, but I do not need the engraving if the price goes up."
+  },
+  {
+    "id": "j10-l5",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "The engraving is fully optional, and you might also like a simple polish with the set.",
+    "glossYue": "刻字完全可以唔要，你或者都會想套裝加一次簡單擦亮。",
+    "audio": "assets/audio/lines/j10-l5.mp3",
+    "audioSlow": "assets/audio/lines/j10-l5-slow.mp3",
+    "say": "The engraving is fully optional, and you might also like a simple polish with the set."
+  },
+  {
+    "id": "j10-l6",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Please recommend one popular option only, and then I will decide before we leave the shop.",
+    "glossYue": "請只推薦一個多人揀嘅選擇，然後我哋走之前我再決定。",
+    "audio": "assets/audio/lines/j10-l6.mp3",
+    "audioSlow": "assets/audio/lines/j10-l6-slow.mp3",
+    "say": "Please recommend one popular option only, and then I will decide before we leave the shop."
+  },
+  {
+    "id": "j10-l7",
+    "speaker": "mei",
+    "speakerLabel": "Mei",
+    "text": "If you like the necklace, the matching pair goes well, and the box is ready now.",
+    "glossYue": "如果你鍾意條頸鏈，對襯嘅都好配，盒而家準備好。",
+    "audio": "assets/audio/lines/j10-l7.mp3",
+    "audioSlow": "assets/audio/lines/j10-l7-slow.mp3",
+    "say": "If you like the necklace, the matching pair goes well, and the box is ready now."
+  },
+  {
+    "id": "j10-l8",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "I will take the matching set without the engraving, and thank you for the gentle offer.",
+    "glossYue": "我要呢套襯嘅，唔使刻字，多謝你輕輕咁提議。",
+    "audio": "assets/audio/lines/j10-l8.mp3",
+    "audioSlow": "assets/audio/lines/j10-l8-slow.mp3",
+    "say": "I will take the matching set without the engraving, and thank you for the gentle offer."
+  },
+  {
+    "id": "t6-l1",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "Good evening, this is Kai calling from the front desk, and how may I help you tonight?",
+    "glossYue": "晚安，我係前台 Kai 打嚟，今晚有咩可以幫你？",
+    "audio": "assets/audio/lines/t6-l1.mp3",
+    "audioSlow": "assets/audio/lines/t6-l1-slow.mp3",
+    "say": "Good evening, this is Kai calling from the front desk, and how may I help you tonight?"
+  },
+  {
+    "id": "t6-l2",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "There seems to be very noisy air conditioning, and I barely slept in this room tonight.",
+    "glossYue": "部冷氣似乎好嘈，我今晚喺呢間房幾乎瞓唔到。",
+    "audio": "assets/audio/lines/t6-l2.mp3",
+    "audioSlow": "assets/audio/lines/t6-l2-slow.mp3",
+    "say": "There seems to be very noisy air conditioning, and I barely slept in this room tonight."
+  },
+  {
+    "id": "t6-l3",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "I am sorry for the inconvenience tonight, and I can send an engineer up right now.",
+    "glossYue": "今晚造成不便對唔住，我而家可以派工程師上嚟。",
+    "audio": "assets/audio/lines/t6-l3.mp3",
+    "audioSlow": "assets/audio/lines/t6-l3-slow.mp3",
+    "say": "I am sorry for the inconvenience tonight, and I can send an engineer up right now."
+  },
+  {
+    "id": "t6-l4",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Would it be possible to move us to a quiet room, with extra towels and a blanket?",
+    "glossYue": "可唔可以搬我哋去靜啲嘅房，再加多條毛巾同一張被？",
+    "audio": "assets/audio/lines/t6-l4.mp3",
+    "audioSlow": "assets/audio/lines/t6-l4-slow.mp3",
+    "say": "Would it be possible to move us to a quiet room, with extra towels and a blanket?"
+  },
+  {
+    "id": "t6-l5",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "A quiet room is available tonight, and I will bring the towels and the blanket now.",
+    "glossYue": "今晚有間靜啲嘅房，我而家帶毛巾同被上嚟。",
+    "audio": "assets/audio/lines/t6-l5.mp3",
+    "audioSlow": "assets/audio/lines/t6-l5-slow.mp3",
+    "say": "A quiet room is available tonight, and I will bring the towels and the blanket now."
+  },
+  {
+    "id": "t6-l6",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "The air conditioning is still not working well, so please ask the engineer to check it tonight.",
+    "glossYue": "部冷氣仍然唔係好好運作，唔該叫工程師今晚檢查。",
+    "audio": "assets/audio/lines/t6-l6.mp3",
+    "audioSlow": "assets/audio/lines/t6-l6-slow.mp3",
+    "say": "The air conditioning is still not working well, so please ask the engineer to check it tonight."
+  },
+  {
+    "id": "t6-l7",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "I have noted the noisy room already, and the engineer will visit before you sleep tonight.",
+    "glossYue": "我已經記低呢間房嘈，工程師你瞓之前會上嚟。",
+    "audio": "assets/audio/lines/t6-l7.mp3",
+    "audioSlow": "assets/audio/lines/t6-l7-slow.mp3",
+    "say": "I have noted the noisy room already, and the engineer will visit before you sleep tonight."
+  },
+  {
+    "id": "t6-l8",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "I appreciate the quiet room, the extra towels, and the warm blanket on this very noisy night.",
+    "glossYue": "我感激你安排靜啲嘅房、多條毛巾，同埋呢晚嘅暖被。",
+    "audio": "assets/audio/lines/t6-l8.mp3",
+    "audioSlow": "assets/audio/lines/t6-l8-slow.mp3",
+    "say": "I appreciate the quiet room, the extra towels, and the warm blanket on this very noisy night."
   }
 ]

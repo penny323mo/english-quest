@@ -3,7 +3,7 @@
   "unit": "W",
   "titleYue": "職場電話",
   "titleEn": "Phone calls",
-  "canDoYue": "你能夠接電話、留口訊、轉駁，同埋核對串法。",
+  "canDoYue": "你識接電話、留口訊、轉駁，仲識核對串法。",
   "canDoEn": "Answer a call, take a message, transfer, and check a spelling.",
   "minutes": 12,
   "hero": "assets/art/lessons/w1.webp",
@@ -30,7 +30,7 @@
     "convenient-adj",
     "reach-verb"
   ],
-  "next": "J9",
+  "next": "J8",
   "dialogue": [
     {
       "id": "w1-l1",
@@ -102,11 +102,11 @@
       "id": "w1-l7",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "The spelling is correct, and I will reach her on extension four two later today.",
-      "glossYue": "串法啱，我遲啲會用四二號內線聯絡佢。",
+      "text": "The spelling is M E I slowly, and the extension is four two.",
+      "glossYue": "我慢慢串 M E I，內線係四二。",
       "audio": "assets/audio/lines/w1-l7.mp3",
       "audioSlow": "assets/audio/lines/w1-l7-slow.mp3",
-      "say": "The spelling is correct, and I will reach her on extension four two later today.",
+      "say": "The spelling is M E I slowly, and the extension is four two.",
       "hideGloss": false
     },
     {
@@ -272,7 +272,7 @@
         "line": "Could you say the spelling slowly, and read the extension back to me?",
         "audio": "assets/audio/lines/w1-l6.mp3",
         "audioSlow": "assets/audio/lines/w1-l6-slow.mp3",
-        "expect": "The spelling is correct, and I will reach her on extension four two later today.",
+        "expect": "The spelling is M E I slowly, and the extension is four two.",
         "keywords": [
           "spelling",
           "extension"

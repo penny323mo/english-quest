@@ -1,5 +1,12 @@
 # Changelog — English Quest
 
+## Round 26 fixes
+- J8 售後同保養 (B1), J10 加購同禮盒 (B1), and T6 酒店問題 (B1) are full 12-beat lessons. J8 sits before J9. Unlock order is F1 F2 F3 F4 J1 R1 J2 T1 J3 T2 R2 J4 J5 T3 R3 T4 R4 J6 J7 T5 R5 W1 J8 J9 J10 T6. Seven soon teasers remain (R6, J12, R7, T8, W2, J11, T9). The end copy says 呢輪二十六課. Profile goals stay foundation, jewellery, travel, and restaurant.
+- Dialogue means keep rising on this stretch: W1 14.88, J8 15.38, J9 15.63, J10 16.00, T6 16.50. New quiz and cloze means rise with them (J8 quiz 15.4 and chunk 12.8, J10 quiz 17.2 and chunk 14.0, T6 quiz 17.8 and chunk 14.5).
+- Every shipped canDoYue is spoken 你識…，仲識…. The four 「係問？」 stems in T4, J6, J7, and R4 now say 「即係問緊咩？」. my-det’s example stays “My name is Ling.” and the Cantonese is 我叫 Ling。 The security card keeps id bin-noun, the lemma is tray, and the liquid line says “Put the liquids in the tray.” W1’s model reply spells M E I.
+- T4 and T5 heroes are redrawn with the thick ink outline. R4 keeps Tom seated and stands Ana beside the table. J8, J10, and T6 have new 900×1200 scenes. 小燈 stays the brass lantern. F1–F4 art is unchanged.
+- The jewellery deck picks up the care and add-on cards. The travel deck picks up the hotel-problem cards. Tests are 26/26. The service worker precache is 1641 entries (29854.88 KiB) (`assets/index-CObtstDX.js`, `assets/shell-vhImcBNB.js`). At 390px the path, F1, T4, T5, R4, J8, J9, J10, T6, and the name and tray cards stay inside the phone. The primary button is `rgb(15, 122, 110)`. Lighthouse mobile performance is 1.00.
+
 ## Round 25 fixes
 - R4 用餐期間 (A2), R5 埋單同貼士 (A2/B1), and W1 職場電話 (A2/B1) are full 12-beat lessons. Unlock order is F1 F2 F3 F4 J1 R1 J2 T1 J3 T2 R2 J4 J5 T3 R3 T4 R4 J6 J7 T5 R5 W1 J9. Ten soon teasers remain (J8, J10, T6, R6, J12, R7, T8, W2, J11, T9). The end copy says 呢輪二十三課. The A2 blurb now includes 用餐, and the A2/B1 blurb includes 埋單同職場電話. W1 adds the 職場 deck. Profile goals stay foundation, jewellery, travel, and restaurant.
 - Dialogue means stay in band order: R4 13.75, T4 13.13, R5 14.88, W1 14.88, T5 14.25, J9 15.63. New quiz and cloze means sit above the A1 ceilings (R4 quiz 15.6 and chunk 11.0, R5 quiz 16.0 and chunk 12.5, W1 quiz 16.0 and chunk 10.5).

@@ -1607,7 +1607,7 @@
         "my passport"
       ],
       "example": "My name is Ling.",
-      "exampleYue": "我叫 Ling，好高興認識你。",
+      "exampleYue": "我叫 Ling。",
       "say": "My name is Ling.",
       "variants": [],
       "note": "",
@@ -7018,30 +7018,30 @@
     },
     {
       "id": "bin-noun",
-      "lemma": "bin",
+      "lemma": "tray",
       "pos": "noun",
       "senseId": "security-bin",
-      "ipa": "/ˈbɪn/",
+      "ipa": "/ˈtɹeɪ/",
       "syllables": [
-        "bin"
+        "tray"
       ],
       "syllableIpa": [
-        "ˈbɪn"
+        "ˈtɹeɪ"
       ],
       "stress": 1,
-      "arpabet": "B IH1 N",
+      "arpabet": "T R EY1",
       "audio": "assets/audio/words/bin-noun.mp3",
       "audioSlow": "assets/audio/words/bin-noun-slow.mp3",
       "glossYue": "膠盤",
-      "glossZh": "安检盘",
+      "glossZh": "安檢盤",
       "jyutping": "gaau1 pun4",
       "collocations": [
-        "in the bin",
-        "a security bin"
+        "in the tray",
+        "a security tray"
       ],
-      "example": "Put the liquids in the bin.",
+      "example": "Put the liquids in the tray.",
       "exampleYue": "將啲液體放喺個盤度。",
-      "say": "Put the liquids in the bin.",
+      "say": "Put the liquids in the tray.",
       "variants": [],
       "note": "安檢用嘅膠盤，唔係垃圾桶。",
       "sources": [
@@ -7051,9 +7051,9 @@
       "verified_at": "2026-10-29",
       "status": "IPA_OK",
       "senseMismatch": false,
-      "cmuLemma": "bin",
+      "cmuLemma": "tray",
       "phrase": false,
-      "audioSha256": "16e62bf16cb0dc187ba0ec187646d9ecbeebecca0f0cb540d7c238dff409c2d2"
+      "audioSha256": "ac2dfc8be3d6721845e5a6f94ad7a8a0ba5f5d6be4ee053031b6ad911f8ce538"
     },
     {
       "id": "liquid-noun",
@@ -7074,14 +7074,14 @@
       "audio": "assets/audio/words/liquid-noun.mp3",
       "audioSlow": "assets/audio/words/liquid-noun-slow.mp3",
       "glossYue": "液體",
-      "glossZh": "液体",
+      "glossZh": "液體",
       "jyutping": "jik6 tai2",
       "collocations": [
-        "liquids in the bin"
+        "liquids in the tray"
       ],
-      "example": "Put the liquids in the bin.",
+      "example": "Put the liquids in the tray.",
       "exampleYue": "將啲液體放喺個盤度。",
-      "say": "Put the [[lˈɪkwɪdz]] in the bin.",
+      "say": "Put the [[lˈɪkwɪdz]] in the tray.",
       "variants": [
         "/ˈlɪk.wəd/"
       ],
@@ -7095,7 +7095,7 @@
       "senseMismatch": false,
       "cmuLemma": "liquid",
       "phrase": false,
-      "audioSha256": "88cdce9a8e521eef33ddb16a5f7613f63580210afa27bbd7a39c33f2985f85e8"
+      "audioSha256": "acf92f49fe0f3cc2e8f16593046fb219f0a314b23e0952cdbb7d8a687c1cebd6"
     },
     {
       "id": "laptop-noun",
@@ -18617,6 +18617,1664 @@
           "audio": "assets/audio/words/reach-verb-ex2.mp3",
           "audioSlow": "assets/audio/words/reach-verb-ex2-slow.mp3",
           "say": "Could you reach Mei this afternoon?"
+        }
+      ]
+    },
+    {
+      "id": "warranty-noun",
+      "lemma": "warranty",
+      "pos": "noun",
+      "senseId": "care-promise",
+      "ipa": "/ˈwɔɹ.ən.ti/",
+      "syllables": [
+        "war",
+        "ran",
+        "ty"
+      ],
+      "syllableIpa": [
+        "ˈwɔɹ",
+        "ən",
+        "ti"
+      ],
+      "stress": 1,
+      "arpabet": "W AO1 R AH0 N T IY0",
+      "audio": "assets/audio/words/warranty-noun.mp3",
+      "audioSlow": "assets/audio/words/warranty-noun-slow.mp3",
+      "glossYue": "保養",
+      "glossZh": "保養",
+      "jyutping": "bou2 joeng5",
+      "collocations": [
+        "the warranty",
+        "a written warranty"
+      ],
+      "example": "The warranty covers one repair.",
+      "exampleYue": "保養包一次修理。",
+      "say": "The warranty covers one repair.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "warranty",
+      "phrase": false,
+      "audioSha256": "c6f74a73e7aecf851c2dc0a3fcdf87acca8f18af0a4f020bdcd764b7bdf527e0",
+      "register": "珠寶",
+      "usageNotes": "保養係書面承諾，包修理。",
+      "pitfallsYue": "保養係書面承諾，包修理。",
+      "related": [
+        "receipt-noun",
+        "policy-noun"
+      ],
+      "examples": [
+        {
+          "en": "The warranty covers one repair.",
+          "yue": "保養包一次修理。",
+          "audio": "assets/audio/words/warranty-noun.mp3",
+          "audioSlow": "assets/audio/words/warranty-noun-slow.mp3",
+          "say": "The warranty covers one repair."
+        },
+        {
+          "en": "Please read the warranty before you leave.",
+          "yue": "走之前請睇下保養。",
+          "audio": "assets/audio/words/warranty-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/warranty-noun-ex2-slow.mp3",
+          "say": "Please read the warranty before you leave."
+        }
+      ]
+    },
+    {
+      "id": "guarantee-noun",
+      "lemma": "guarantee",
+      "pos": "noun",
+      "senseId": "shop-promise",
+      "ipa": "/ˌɡɛ.ɹən.ˈti/",
+      "syllables": [
+        "gua",
+        "ran",
+        "tee"
+      ],
+      "syllableIpa": [
+        "ˌɡɛ",
+        "ɹən",
+        "ˈti"
+      ],
+      "stress": 3,
+      "arpabet": "G EH2 R AH0 N T IY1",
+      "audio": "assets/audio/words/guarantee-noun.mp3",
+      "audioSlow": "assets/audio/words/guarantee-noun-slow.mp3",
+      "glossYue": "保用",
+      "glossZh": "保用",
+      "jyutping": "bou2 jung6",
+      "collocations": [
+        "the guarantee",
+        "a shop guarantee"
+      ],
+      "example": "The guarantee covers this scratch.",
+      "exampleYue": "保用包呢道刮痕。",
+      "say": "The guarantee covers this scratch.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "guarantee",
+      "phrase": false,
+      "audioSha256": "346cad2c6f68e252651d516ad1ce2c1457c704e63dedd98c69e3840c4f88a9d6",
+      "register": "珠寶",
+      "usageNotes": "保用係舖頭承諾，重音喺最後一節。",
+      "pitfallsYue": "保用係舖頭承諾，重音喺最後一節。",
+      "related": [
+        "warranty-noun",
+        "scratch-noun"
+      ],
+      "examples": [
+        {
+          "en": "The guarantee covers this scratch.",
+          "yue": "保用包呢道刮痕。",
+          "audio": "assets/audio/words/guarantee-noun.mp3",
+          "audioSlow": "assets/audio/words/guarantee-noun-slow.mp3",
+          "say": "The guarantee covers this scratch."
+        },
+        {
+          "en": "Does the guarantee include a repair?",
+          "yue": "保用包唔包修理？",
+          "audio": "assets/audio/words/guarantee-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/guarantee-noun-ex2-slow.mp3",
+          "say": "Does the guarantee include a repair?"
+        }
+      ]
+    },
+    {
+      "id": "return-noun",
+      "lemma": "return",
+      "pos": "noun",
+      "senseId": "return-window",
+      "ipa": "/ɹɪ.ˈtɝn/",
+      "syllables": [
+        "re",
+        "turn"
+      ],
+      "syllableIpa": [
+        "ɹɪ",
+        "ˈtɝn"
+      ],
+      "stress": 2,
+      "arpabet": "R IH0 T ER1 N",
+      "audio": "assets/audio/words/return-noun.mp3",
+      "audioSlow": "assets/audio/words/return-noun-slow.mp3",
+      "glossYue": "退換期",
+      "glossZh": "退換期",
+      "jyutping": "teoi3 wun6 kei4",
+      "collocations": [
+        "the return window",
+        "a return"
+      ],
+      "example": "The return window is thirty days.",
+      "exampleYue": "退換期係三十日。",
+      "say": "The [[ɹɪtˈɜn]] window is thirty days.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "return",
+      "phrase": false,
+      "audioSha256": "93025d9a9b705237d9b96b0346569383b9d2137fa2b0a91cb8c0b9303d6dc472",
+      "register": "珠寶",
+      "usageNotes": "退換期係幾時之前可以退或者換。",
+      "pitfallsYue": "退換期係幾時之前可以退或者換。",
+      "related": [
+        "receipt-noun",
+        "exchange-noun"
+      ],
+      "examples": [
+        {
+          "en": "The return window is thirty days.",
+          "yue": "退換期係三十日。",
+          "audio": "assets/audio/words/return-noun.mp3",
+          "audioSlow": "assets/audio/words/return-noun-slow.mp3",
+          "say": "The [[ɹɪtˈɜn]] window is thirty days."
+        },
+        {
+          "en": "You can ask for a return within one year.",
+          "yue": "一年之內可以申請退換。",
+          "audio": "assets/audio/words/return-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/return-noun-ex2-slow.mp3",
+          "say": "You can ask for a [[ɹɪtˈɜn]] within one year."
+        }
+      ]
+    },
+    {
+      "id": "exchange-noun",
+      "lemma": "exchange",
+      "pos": "noun",
+      "senseId": "swap-piece",
+      "ipa": "/ɪks.ˈtʃeɪndʒ/",
+      "syllables": [
+        "ex",
+        "change"
+      ],
+      "syllableIpa": [
+        "ɪks",
+        "ˈtʃeɪndʒ"
+      ],
+      "stress": 2,
+      "arpabet": "IH0 K S CH EY1 N JH",
+      "audio": "assets/audio/words/exchange-noun.mp3",
+      "audioSlow": "assets/audio/words/exchange-noun-slow.mp3",
+      "glossYue": "換貨",
+      "glossZh": "換貨",
+      "jyutping": "wun6 fo3",
+      "collocations": [
+        "an exchange",
+        "ask for an exchange"
+      ],
+      "example": "An exchange is possible with the receipt.",
+      "exampleYue": "有收據就可以換貨。",
+      "say": "An exchange is possible with the receipt.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "exchange",
+      "phrase": false,
+      "audioSha256": "91fd976673fc7bc5aec0a4d10c0c8262055515d99dde3dd6eecc149c9a40d477",
+      "register": "珠寶",
+      "usageNotes": "換貨係換過一件，唔係退款。",
+      "pitfallsYue": "換貨係換過一件，唔係退款。",
+      "related": [
+        "return-noun",
+        "receipt-noun"
+      ],
+      "examples": [
+        {
+          "en": "An exchange is possible with the receipt.",
+          "yue": "有收據就可以換貨。",
+          "audio": "assets/audio/words/exchange-noun.mp3",
+          "audioSlow": "assets/audio/words/exchange-noun-slow.mp3",
+          "say": "An exchange is possible with the receipt."
+        },
+        {
+          "en": "You can ask for an exchange this week.",
+          "yue": "呢個禮拜可以申請換貨。",
+          "audio": "assets/audio/words/exchange-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/exchange-noun-ex2-slow.mp3",
+          "say": "You can ask for an exchange this week."
+        }
+      ]
+    },
+    {
+      "id": "scratch-noun",
+      "lemma": "scratch",
+      "pos": "noun",
+      "senseId": "surface-mark",
+      "ipa": "/ˈskɹætʃ/",
+      "syllables": [
+        "scratch"
+      ],
+      "syllableIpa": [
+        "ˈskɹætʃ"
+      ],
+      "stress": 1,
+      "arpabet": "S K R AE1 CH",
+      "audio": "assets/audio/words/scratch-noun.mp3",
+      "audioSlow": "assets/audio/words/scratch-noun-slow.mp3",
+      "glossYue": "刮痕",
+      "glossZh": "刮痕",
+      "jyutping": "gwaat3 han4",
+      "collocations": [
+        "a small scratch",
+        "a new scratch"
+      ],
+      "example": "A small scratch showed up this week.",
+      "exampleYue": "呢個禮拜有少少刮痕。",
+      "say": "A small scratch showed up this week.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "scratch",
+      "phrase": false,
+      "audioSha256": "d768f6341d5f647ad175d32825ce1716eeb857cd87eca219faabc6f73d1d1fc9",
+      "register": "珠寶",
+      "usageNotes": "刮痕係表面一道痕，唔係整件壞。",
+      "pitfallsYue": "刮痕係表面一道痕，唔係整件壞。",
+      "related": [
+        "polish-noun",
+        "warranty-noun"
+      ],
+      "examples": [
+        {
+          "en": "A small scratch showed up this week.",
+          "yue": "呢個禮拜有少少刮痕。",
+          "audio": "assets/audio/words/scratch-noun.mp3",
+          "audioSlow": "assets/audio/words/scratch-noun-slow.mp3",
+          "say": "A small scratch showed up this week."
+        },
+        {
+          "en": "The scratch is on the gold bracelet.",
+          "yue": "刮痕喺條金手鏈上面。",
+          "audio": "assets/audio/words/scratch-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/scratch-noun-ex2-slow.mp3",
+          "say": "The scratch is on the gold bracelet."
+        }
+      ]
+    },
+    {
+      "id": "polish-noun",
+      "lemma": "polish",
+      "pos": "noun",
+      "senseId": "soft-shine",
+      "ipa": "/ˈpɑ.lɪʃ/",
+      "syllables": [
+        "pol",
+        "ish"
+      ],
+      "syllableIpa": [
+        "ˈpɑ",
+        "lɪʃ"
+      ],
+      "stress": 1,
+      "arpabet": "P AA1 L IH0 SH",
+      "audio": "assets/audio/words/polish-noun.mp3",
+      "audioSlow": "assets/audio/words/polish-noun-slow.mp3",
+      "glossYue": "擦亮",
+      "glossZh": "擦亮",
+      "jyutping": "caat3 loeng6",
+      "collocations": [
+        "a soft polish",
+        "use polish"
+      ],
+      "example": "Please use only a soft polish.",
+      "exampleYue": "請淨係用軟布擦亮。",
+      "say": "Please use only a soft polish.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "polish",
+      "phrase": false,
+      "audioSha256": "c0d9da0945d69ab731ebd7f0aada6696276ab30cf93abadfff160a89232cd546",
+      "register": "珠寶",
+      "usageNotes": "擦亮係用軟布抹，唔係化學劑。",
+      "pitfallsYue": "擦亮係用軟布抹，唔係化學劑。",
+      "related": [
+        "clean-verb",
+        "avoid-verb"
+      ],
+      "examples": [
+        {
+          "en": "Please use only a soft polish.",
+          "yue": "請淨係用軟布擦亮。",
+          "audio": "assets/audio/words/polish-noun.mp3",
+          "audioSlow": "assets/audio/words/polish-noun-slow.mp3",
+          "say": "Please use only a soft polish."
+        },
+        {
+          "en": "A soft polish keeps the gold bright.",
+          "yue": "軟布擦亮可以保持金嘅光澤。",
+          "audio": "assets/audio/words/polish-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/polish-noun-ex2-slow.mp3",
+          "say": "A soft polish keeps the gold bright."
+        }
+      ]
+    },
+    {
+      "id": "avoid-verb",
+      "lemma": "avoid",
+      "pos": "verb",
+      "senseId": "stay-away",
+      "ipa": "/ə.ˈvɔɪd/",
+      "syllables": [
+        "a",
+        "void"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈvɔɪd"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 V OY1 D",
+      "audio": "assets/audio/words/avoid-verb.mp3",
+      "audioSlow": "assets/audio/words/avoid-verb-slow.mp3",
+      "glossYue": "避開",
+      "glossZh": "避開",
+      "jyutping": "bei6 hoi1",
+      "collocations": [
+        "avoid water",
+        "avoid chemicals"
+      ],
+      "example": "You should avoid harsh chemicals.",
+      "exampleYue": "你應該避開勁嘅化學劑。",
+      "say": "You should avoid harsh chemicals.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "avoid",
+      "phrase": false,
+      "audioSha256": "c4ec7b3042cdbb2b8c70e921e03b9e5f91851fe5a0063ea643170b7e2338dea9",
+      "register": "珠寶",
+      "usageNotes": "avoid 係避開，重音喺第二節。",
+      "pitfallsYue": "avoid 係避開，重音喺第二節。",
+      "related": [
+        "chemical-noun",
+        "water-noun"
+      ],
+      "examples": [
+        {
+          "en": "You should avoid harsh chemicals.",
+          "yue": "你應該避開勁嘅化學劑。",
+          "audio": "assets/audio/words/avoid-verb.mp3",
+          "audioSlow": "assets/audio/words/avoid-verb-slow.mp3",
+          "say": "You should avoid harsh chemicals."
+        },
+        {
+          "en": "Please avoid water on this bracelet.",
+          "yue": "請避開水，唔好淋呢條手鏈。",
+          "audio": "assets/audio/words/avoid-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/avoid-verb-ex2-slow.mp3",
+          "say": "Please avoid water on this bracelet."
+        }
+      ]
+    },
+    {
+      "id": "chemical-noun",
+      "lemma": "chemical",
+      "pos": "noun",
+      "senseId": "strong-cleaner",
+      "ipa": "/ˈkɛ.mə.kəl/",
+      "syllables": [
+        "chem",
+        "i",
+        "cal"
+      ],
+      "syllableIpa": [
+        "ˈkɛ",
+        "mə",
+        "kəl"
+      ],
+      "stress": 1,
+      "arpabet": "K EH1 M AH0 K AH0 L",
+      "audio": "assets/audio/words/chemical-noun.mp3",
+      "audioSlow": "assets/audio/words/chemical-noun-slow.mp3",
+      "glossYue": "化學劑",
+      "glossZh": "化學劑",
+      "jyutping": "faa3 hok6 zai1",
+      "collocations": [
+        "harsh chemicals",
+        "a harsh chemical"
+      ],
+      "example": "Harsh chemicals can mark the gold.",
+      "exampleYue": "勁嘅化學劑會整花金。",
+      "say": "Harsh chemicals can mark the gold.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "chemical",
+      "phrase": false,
+      "audioSha256": "be237047d4055ded17ac8f7046ccfb4bd43e7c22c110e7fd39cadb512f15a08c",
+      "register": "珠寶",
+      "usageNotes": "化學劑太勁會整花表面。",
+      "pitfallsYue": "化學劑太勁會整花表面。",
+      "related": [
+        "avoid-verb",
+        "polish-noun"
+      ],
+      "examples": [
+        {
+          "en": "Harsh chemicals can mark the gold.",
+          "yue": "勁嘅化學劑會整花金。",
+          "audio": "assets/audio/words/chemical-noun.mp3",
+          "audioSlow": "assets/audio/words/chemical-noun-slow.mp3",
+          "say": "Harsh chemicals can mark the gold."
+        },
+        {
+          "en": "Please do not use a harsh chemical at home.",
+          "yue": "喺屋企唔好用勁嘅化學劑。",
+          "audio": "assets/audio/words/chemical-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/chemical-noun-ex2-slow.mp3",
+          "say": "Please do not use a harsh chemical at home."
+        }
+      ]
+    },
+    {
+      "id": "claim-noun",
+      "lemma": "claim",
+      "pos": "noun",
+      "senseId": "ask-repair",
+      "ipa": "/ˈkleɪm/",
+      "syllables": [
+        "claim"
+      ],
+      "syllableIpa": [
+        "ˈkleɪm"
+      ],
+      "stress": 1,
+      "arpabet": "K L EY1 M",
+      "audio": "assets/audio/words/claim-noun.mp3",
+      "audioSlow": "assets/audio/words/claim-noun-slow.mp3",
+      "glossYue": "申請",
+      "glossZh": "申請",
+      "jyutping": "san1 cing2",
+      "collocations": [
+        "file a claim",
+        "a new claim"
+      ],
+      "example": "Please file the claim within the year.",
+      "exampleYue": "請喺一年之內交申請。",
+      "say": "Please file the claim within the year.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "claim",
+      "phrase": false,
+      "audioSha256": "5b060acf762abe9ba01ecb7fdfb3700b9cafa11a06e709e1d335ebb47d3c3c55",
+      "register": "珠寶",
+      "usageNotes": "申請係交張表要求修理。",
+      "pitfallsYue": "申請係交張表要求修理。",
+      "related": [
+        "policy-noun",
+        "receipt-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please file the claim within the year.",
+          "yue": "請喺一年之內交申請。",
+          "audio": "assets/audio/words/claim-noun.mp3",
+          "audioSlow": "assets/audio/words/claim-noun-slow.mp3",
+          "say": "Please file the claim within the year."
+        },
+        {
+          "en": "A new claim needs the original receipt.",
+          "yue": "新嘅申請要有原本收據。",
+          "audio": "assets/audio/words/claim-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/claim-noun-ex2-slow.mp3",
+          "say": "A new claim needs the original receipt."
+        }
+      ]
+    },
+    {
+      "id": "policy-noun",
+      "lemma": "policy",
+      "pos": "noun",
+      "senseId": "shop-rules",
+      "ipa": "/ˈpɑ.lə.si/",
+      "syllables": [
+        "pol",
+        "i",
+        "cy"
+      ],
+      "syllableIpa": [
+        "ˈpɑ",
+        "lə",
+        "si"
+      ],
+      "stress": 1,
+      "arpabet": "P AA1 L AH0 S IY0",
+      "audio": "assets/audio/words/policy-noun.mp3",
+      "audioSlow": "assets/audio/words/policy-noun-slow.mp3",
+      "glossYue": "政策",
+      "glossZh": "政策",
+      "jyutping": "zing3 caak3",
+      "collocations": [
+        "the shop policy",
+        "the written policy"
+      ],
+      "example": "The shop policy covers one repair.",
+      "exampleYue": "舖頭政策容許修理一次。",
+      "say": "The shop policy covers one repair.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "policy",
+      "phrase": false,
+      "audioSha256": "3ba0a06977ea7bf8a2016ef5238819e178650658eec2b62164a036a8a0eadccf",
+      "register": "珠寶",
+      "usageNotes": "政策係舖頭寫低嘅規則。",
+      "pitfallsYue": "政策係舖頭寫低嘅規則。",
+      "related": [
+        "warranty-noun",
+        "claim-noun"
+      ],
+      "examples": [
+        {
+          "en": "The shop policy covers one repair.",
+          "yue": "舖頭政策容許修理一次。",
+          "audio": "assets/audio/words/policy-noun.mp3",
+          "audioSlow": "assets/audio/words/policy-noun-slow.mp3",
+          "say": "The shop policy covers one repair."
+        },
+        {
+          "en": "Please read the policy before you leave.",
+          "yue": "走之前請睇下政策。",
+          "audio": "assets/audio/words/policy-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/policy-noun-ex2-slow.mp3",
+          "say": "Please read the policy before you leave."
+        }
+      ]
+    },
+    {
+      "id": "within-prep",
+      "lemma": "within",
+      "pos": "prep",
+      "senseId": "inside-time",
+      "ipa": "/wɪ.ˈðɪn/",
+      "syllables": [
+        "with",
+        "in"
+      ],
+      "syllableIpa": [
+        "wɪ",
+        "ˈðɪn"
+      ],
+      "stress": 2,
+      "arpabet": "W IH0 DH IH1 N",
+      "audio": "assets/audio/words/within-prep.mp3",
+      "audioSlow": "assets/audio/words/within-prep-slow.mp3",
+      "glossYue": "之內",
+      "glossZh": "之內",
+      "jyutping": "zi1 noi6",
+      "collocations": [
+        "within the year",
+        "within one year"
+      ],
+      "example": "Please file the claim within the year.",
+      "exampleYue": "請喺一年之內交申請。",
+      "say": "Please file the claim within the year.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "within",
+      "phrase": false,
+      "audioSha256": "893bfdcaf2f04395ccd85efffbaad323612bf5ffda6a2480c04c534fc225ccd6",
+      "register": "珠寶",
+      "usageNotes": "within 係喺一段時間之內，重音喺第二節。",
+      "pitfallsYue": "within 係喺一段時間之內，重音喺第二節。",
+      "related": [
+        "claim-noun",
+        "policy-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please file the claim within the year.",
+          "yue": "請喺一年之內交申請。",
+          "audio": "assets/audio/words/within-prep.mp3",
+          "audioSlow": "assets/audio/words/within-prep-slow.mp3",
+          "say": "Please file the claim within the year."
+        },
+        {
+          "en": "The repair is free within one year.",
+          "yue": "一年之內修理係免費。",
+          "audio": "assets/audio/words/within-prep-ex2.mp3",
+          "audioSlow": "assets/audio/words/within-prep-ex2-slow.mp3",
+          "say": "The repair is free within one year."
+        }
+      ]
+    },
+    {
+      "id": "clean-verb",
+      "lemma": "clean",
+      "pos": "verb",
+      "senseId": "make-clean",
+      "ipa": "/ˈklin/",
+      "syllables": [
+        "clean"
+      ],
+      "syllableIpa": [
+        "ˈklin"
+      ],
+      "stress": 1,
+      "arpabet": "K L IY1 N",
+      "audio": "assets/audio/words/clean-verb.mp3",
+      "audioSlow": "assets/audio/words/clean-verb-slow.mp3",
+      "glossYue": "抹乾淨",
+      "glossZh": "抹乾淨",
+      "jyutping": "mut3 gon1 zeng6",
+      "collocations": [
+        "clean the bracelet",
+        "clean the gold"
+      ],
+      "example": "Please clean the bracelet with a soft cloth.",
+      "exampleYue": "請用軟布抹乾淨條手鏈。",
+      "say": "Please clean the bracelet with a soft cloth.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "clean",
+      "phrase": false,
+      "audioSha256": "5118dac7618f1f9d0dfa8cdc0810a9877f4108f4a91cdd12674097f8f003b198",
+      "register": "珠寶",
+      "usageNotes": "clean 係抹乾淨，用軟布。",
+      "pitfallsYue": "clean 係抹乾淨，用軟布。",
+      "related": [
+        "polish-noun",
+        "avoid-verb"
+      ],
+      "examples": [
+        {
+          "en": "Please clean the bracelet with a soft cloth.",
+          "yue": "請用軟布抹乾淨條手鏈。",
+          "audio": "assets/audio/words/clean-verb.mp3",
+          "audioSlow": "assets/audio/words/clean-verb-slow.mp3",
+          "say": "Please clean the bracelet with a soft cloth."
+        },
+        {
+          "en": "You can clean the gold with a soft polish.",
+          "yue": "你可以用軟布擦亮抹乾淨金。",
+          "audio": "assets/audio/words/clean-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/clean-verb-ex2-slow.mp3",
+          "say": "You can clean the gold with a soft polish."
+        }
+      ]
+    },
+    {
+      "id": "matching-adj",
+      "lemma": "matching",
+      "pos": "adj",
+      "senseId": "goes-with",
+      "ipa": "/ˈmæ.tʃɪŋ/",
+      "syllables": [
+        "match",
+        "ing"
+      ],
+      "syllableIpa": [
+        "ˈmæ",
+        "tʃɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "M AE1 CH IH0 NG",
+      "audio": "assets/audio/words/matching-adj.mp3",
+      "audioSlow": "assets/audio/words/matching-adj-slow.mp3",
+      "glossYue": "襯到",
+      "glossZh": "襯到",
+      "jyutping": "can3 dou3",
+      "collocations": [
+        "a matching pair",
+        "matching earrings"
+      ],
+      "example": "This matching pair goes well with the necklace.",
+      "exampleYue": "呢對襯到嘅耳環好配條頸鏈。",
+      "say": "This matching pair goes well with the necklace.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "matching",
+      "phrase": false,
+      "audioSha256": "7309f837da341165e352872dae52e4787104bb998f7adfd1dd0c675d66aba287",
+      "register": "珠寶",
+      "usageNotes": "襯到係成套，色同款一致。",
+      "pitfallsYue": "襯到係成套，色同款一致。",
+      "related": [
+        "set-noun",
+        "pair-noun"
+      ],
+      "examples": [
+        {
+          "en": "This matching pair goes well with the necklace.",
+          "yue": "呢對襯到嘅耳環好配條頸鏈。",
+          "audio": "assets/audio/words/matching-adj.mp3",
+          "audioSlow": "assets/audio/words/matching-adj-slow.mp3",
+          "say": "This matching pair goes well with the necklace."
+        },
+        {
+          "en": "The matching earrings complete the gift.",
+          "yue": "襯到嘅耳環令份禮物成套。",
+          "audio": "assets/audio/words/matching-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/matching-adj-ex2-slow.mp3",
+          "say": "The matching earrings complete the gift."
+        }
+      ]
+    },
+    {
+      "id": "also-adv",
+      "lemma": "also",
+      "pos": "adv",
+      "senseId": "extra-too",
+      "ipa": "/ˈɔl.soʊ/",
+      "syllables": [
+        "al",
+        "so"
+      ],
+      "syllableIpa": [
+        "ˈɔl",
+        "soʊ"
+      ],
+      "stress": 1,
+      "arpabet": "AO1 L S OW0",
+      "audio": "assets/audio/words/also-adv.mp3",
+      "audioSlow": "assets/audio/words/also-adv-slow.mp3",
+      "glossYue": "都想",
+      "glossZh": "都想",
+      "jyutping": "dou1 soeng2",
+      "collocations": [
+        "might also like",
+        "also like"
+      ],
+      "example": "You might also like this matching pair.",
+      "exampleYue": "你或者都會鍾意呢對襯到嘅。",
+      "say": "You might also like this matching pair.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "also",
+      "phrase": false,
+      "audioSha256": "dc6870f0f7cce2e8a1960995c5785d4a9374eaee772b0d0d90651c5d639c2ce9",
+      "register": "珠寶",
+      "usageNotes": "also 呢度係都想，輕輕加一句。",
+      "pitfallsYue": "also 呢度係都想，輕輕加一句。",
+      "related": [
+        "matching-adj",
+        "optional-adj"
+      ],
+      "examples": [
+        {
+          "en": "You might also like this matching pair.",
+          "yue": "你或者都會鍾意呢對襯到嘅。",
+          "audio": "assets/audio/words/also-adv.mp3",
+          "audioSlow": "assets/audio/words/also-adv-slow.mp3",
+          "say": "You might also like this matching pair."
+        },
+        {
+          "en": "You might also like a simple polish.",
+          "yue": "你或者都會想加一次簡單擦亮。",
+          "audio": "assets/audio/words/also-adv-ex2.mp3",
+          "audioSlow": "assets/audio/words/also-adv-ex2-slow.mp3",
+          "say": "You might also like a simple polish."
+        }
+      ]
+    },
+    {
+      "id": "popular-adj",
+      "lemma": "popular",
+      "pos": "adj",
+      "senseId": "many-choose",
+      "ipa": "/ˈpɑ.pjə.lɚ/",
+      "syllables": [
+        "pop",
+        "u",
+        "lar"
+      ],
+      "syllableIpa": [
+        "ˈpɑ",
+        "pjə",
+        "lɚ"
+      ],
+      "stress": 1,
+      "arpabet": "P AA1 P Y AH0 L ER0",
+      "audio": "assets/audio/words/popular-adj.mp3",
+      "audioSlow": "assets/audio/words/popular-adj-slow.mp3",
+      "glossYue": "多人揀",
+      "glossZh": "多人揀",
+      "jyutping": "do1 jan4 gaan2",
+      "collocations": [
+        "a popular set",
+        "one popular option"
+      ],
+      "example": "This popular set is optional tonight.",
+      "exampleYue": "呢套今晚好多人揀，可以唔要。",
+      "say": "This popular set is optional tonight.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "popular",
+      "phrase": false,
+      "audioSha256": "9098cbc64efe249909615b57e906e5c933d9d76168f52303b7acdc498a202688",
+      "register": "珠寶",
+      "usageNotes": "多人揀係好多客人揀，唔係一定要。",
+      "pitfallsYue": "多人揀係好多客人揀，唔係一定要。",
+      "related": [
+        "set-noun",
+        "optional-adj"
+      ],
+      "examples": [
+        {
+          "en": "This popular set is optional tonight.",
+          "yue": "呢套今晚好多人揀，可以唔要。",
+          "audio": "assets/audio/words/popular-adj.mp3",
+          "audioSlow": "assets/audio/words/popular-adj-slow.mp3",
+          "say": "This popular set is optional tonight."
+        },
+        {
+          "en": "Please recommend one popular option only.",
+          "yue": "請只推薦一個多人揀嘅選擇。",
+          "audio": "assets/audio/words/popular-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/popular-adj-ex2-slow.mp3",
+          "say": "Please recommend one popular option only."
+        }
+      ]
+    },
+    {
+      "id": "engraving-noun",
+      "lemma": "engraving",
+      "pos": "noun",
+      "senseId": "carved-name",
+      "ipa": "/ɪn.ˈɡɹeɪ.vɪŋ/",
+      "syllables": [
+        "en",
+        "grav",
+        "ing"
+      ],
+      "syllableIpa": [
+        "ɪn",
+        "ˈɡɹeɪ",
+        "vɪŋ"
+      ],
+      "stress": 2,
+      "arpabet": "IH0 N G R EY1 V IH0 NG",
+      "audio": "assets/audio/words/engraving-noun.mp3",
+      "audioSlow": "assets/audio/words/engraving-noun-slow.mp3",
+      "glossYue": "刻字",
+      "glossZh": "刻字",
+      "jyutping": "hak1 zi6",
+      "collocations": [
+        "the engraving",
+        "skip the engraving"
+      ],
+      "example": "The engraving is optional if you like.",
+      "exampleYue": "如果你想，刻字可以唔要。",
+      "say": "The engraving is optional if you like.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "engraving",
+      "phrase": false,
+      "audioSha256": "0528fbcb0802592aaba023bf0b639804ec71097ba1922f7deab738fb3765763a",
+      "register": "珠寶",
+      "usageNotes": "刻字係加購，可以唔要。重音喺第二節。",
+      "pitfallsYue": "刻字係加購，可以唔要。重音喺第二節。",
+      "related": [
+        "optional-adj",
+        "if-you-like-phrase"
+      ],
+      "examples": [
+        {
+          "en": "The engraving is optional if you like.",
+          "yue": "如果你想，刻字可以唔要。",
+          "audio": "assets/audio/words/engraving-noun.mp3",
+          "audioSlow": "assets/audio/words/engraving-noun-slow.mp3",
+          "say": "The engraving is optional if you like."
+        },
+        {
+          "en": "You can skip the engraving if the price goes up.",
+          "yue": "如果價錢升，刻字可以唔使。",
+          "audio": "assets/audio/words/engraving-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/engraving-noun-ex2-slow.mp3",
+          "say": "You can skip the engraving if the price goes up."
+        }
+      ]
+    },
+    {
+      "id": "optional-adj",
+      "lemma": "optional",
+      "pos": "adj",
+      "senseId": "not-required",
+      "ipa": "/ˈɑp.ʃə.nəl/",
+      "syllables": [
+        "op",
+        "tion",
+        "al"
+      ],
+      "syllableIpa": [
+        "ˈɑp",
+        "ʃə",
+        "nəl"
+      ],
+      "stress": 1,
+      "arpabet": "AA1 P SH AH0 N AH0 L",
+      "audio": "assets/audio/words/optional-adj.mp3",
+      "audioSlow": "assets/audio/words/optional-adj-slow.mp3",
+      "glossYue": "可以唔要",
+      "glossZh": "可以唔要",
+      "jyutping": "ho2 ji5 m4 jiu3",
+      "collocations": [
+        "fully optional",
+        "an optional polish"
+      ],
+      "example": "The engraving is fully optional tonight.",
+      "exampleYue": "今晚刻字完全可以唔要。",
+      "say": "The engraving is fully optional tonight.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "optional",
+      "phrase": false,
+      "audioSha256": "c4dcd3eba83d2a9e482fe1003fc901b5d035aa58b7a692a0ae8eb47085b13ab2",
+      "register": "珠寶",
+      "usageNotes": "可以唔要就唔使一定買。",
+      "pitfallsYue": "可以唔要就唔使一定買。",
+      "related": [
+        "engraving-noun",
+        "set-noun"
+      ],
+      "examples": [
+        {
+          "en": "The engraving is fully optional tonight.",
+          "yue": "今晚刻字完全可以唔要。",
+          "audio": "assets/audio/words/optional-adj.mp3",
+          "audioSlow": "assets/audio/words/optional-adj-slow.mp3",
+          "say": "The engraving is fully optional tonight."
+        },
+        {
+          "en": "A simple polish is optional with the set.",
+          "yue": "套裝加擦亮可以唔要。",
+          "audio": "assets/audio/words/optional-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/optional-adj-ex2-slow.mp3",
+          "say": "A simple polish is optional with the set."
+        }
+      ]
+    },
+    {
+      "id": "set-noun",
+      "lemma": "set",
+      "pos": "noun",
+      "senseId": "matched-group",
+      "ipa": "/ˈsɛt/",
+      "syllables": [
+        "set"
+      ],
+      "syllableIpa": [
+        "ˈsɛt"
+      ],
+      "stress": 1,
+      "arpabet": "S EH1 T",
+      "audio": "assets/audio/words/set-noun.mp3",
+      "audioSlow": "assets/audio/words/set-noun-slow.mp3",
+      "glossYue": "套裝",
+      "glossZh": "套裝",
+      "jyutping": "tou3 zong1",
+      "collocations": [
+        "a popular set",
+        "the matching set"
+      ],
+      "example": "This popular set is ready tonight.",
+      "exampleYue": "呢套多人揀嘅今晚準備好。",
+      "say": "This popular set is ready tonight.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "set",
+      "phrase": false,
+      "audioSha256": "423f5dd669042b4c9c8ff1fc90ee1ddc66fac2f65390ddc214f8c75728874e41",
+      "register": "珠寶",
+      "usageNotes": "套裝係成套一齊賣。",
+      "pitfallsYue": "套裝係成套一齊賣。",
+      "related": [
+        "matching-adj",
+        "optional-adj"
+      ],
+      "examples": [
+        {
+          "en": "This popular set is ready tonight.",
+          "yue": "呢套多人揀嘅今晚準備好。",
+          "audio": "assets/audio/words/set-noun.mp3",
+          "audioSlow": "assets/audio/words/set-noun-slow.mp3",
+          "say": "This popular set is ready tonight."
+        },
+        {
+          "en": "I will take the matching set without the engraving.",
+          "yue": "我要呢套襯嘅，唔使刻字。",
+          "audio": "assets/audio/words/set-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/set-noun-ex2-slow.mp3",
+          "say": "I will take the matching set without the engraving."
+        }
+      ]
+    },
+    {
+      "id": "if-you-like-phrase",
+      "lemma": "if you like",
+      "pos": "phrase",
+      "senseId": "your-choice",
+      "ipa": "/ˈɪf ˈju ˈlaɪk/",
+      "syllables": [
+        "if",
+        "you",
+        "like"
+      ],
+      "syllableIpa": [
+        "ˈɪf",
+        "ˈju",
+        "ˈlaɪk"
+      ],
+      "stress": 1,
+      "arpabet": "IH1 F Y UW1 L AY1 K",
+      "audio": "assets/audio/words/if-you-like-phrase.mp3",
+      "audioSlow": "assets/audio/words/if-you-like-phrase-slow.mp3",
+      "glossYue": "如果你想",
+      "glossZh": "如果你想",
+      "jyutping": "jyu4 gwo2 nei5 soeng2",
+      "collocations": [
+        "if you like",
+        "optional if you like"
+      ],
+      "example": "The engraving is optional if you like.",
+      "exampleYue": "刻字可以唔要，如果你想。",
+      "say": "The engraving is optional if you like.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "if",
+      "phrase": true,
+      "audioSha256": "4bc0e68827eedc2123551263579a6683d692b4861d6458a1af1925522c4fd32c",
+      "register": "珠寶",
+      "usageNotes": "如果你想先至加，唔係硬銷。",
+      "pitfallsYue": "如果你想先至加，唔係硬銷。",
+      "related": [
+        "optional-adj",
+        "engraving-noun"
+      ],
+      "examples": [
+        {
+          "en": "The engraving is optional if you like.",
+          "yue": "刻字可以唔要，如果你想。",
+          "audio": "assets/audio/words/if-you-like-phrase.mp3",
+          "audioSlow": "assets/audio/words/if-you-like-phrase-slow.mp3",
+          "say": "The engraving is optional if you like."
+        },
+        {
+          "en": "You can add a polish if you like.",
+          "yue": "你可以加一次擦亮，如果你想。",
+          "audio": "assets/audio/words/if-you-like-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/if-you-like-phrase-ex2-slow.mp3",
+          "say": "You can add a polish if you like."
+        }
+      ]
+    },
+    {
+      "id": "noisy-adj",
+      "lemma": "noisy",
+      "pos": "adj",
+      "senseId": "too-loud",
+      "ipa": "/ˈnɔɪ.zi/",
+      "syllables": [
+        "noi",
+        "sy"
+      ],
+      "syllableIpa": [
+        "ˈnɔɪ",
+        "zi"
+      ],
+      "stress": 1,
+      "arpabet": "N OY1 Z IY0",
+      "audio": "assets/audio/words/noisy-adj.mp3",
+      "audioSlow": "assets/audio/words/noisy-adj-slow.mp3",
+      "glossYue": "嘈",
+      "glossZh": "嘈",
+      "jyutping": "cou4",
+      "collocations": [
+        "very noisy",
+        "a noisy room"
+      ],
+      "example": "The air conditioning is very noisy tonight.",
+      "exampleYue": "部冷氣今晚好嘈。",
+      "say": "The air conditioning is very noisy tonight.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "noisy",
+      "phrase": false,
+      "audioSha256": "cd6bc8c5a8995819bb2475c3b911606677fdd63e89f5f00c7577bd01a2f5e35e",
+      "register": "酒店",
+      "usageNotes": "嘈係太大聲，唔係靜。",
+      "pitfallsYue": "嘈係太大聲，唔係靜。",
+      "related": [
+        "quiet-adj",
+        "air-conditioning-phrase"
+      ],
+      "examples": [
+        {
+          "en": "The air conditioning is very noisy tonight.",
+          "yue": "部冷氣今晚好嘈。",
+          "audio": "assets/audio/words/noisy-adj.mp3",
+          "audioSlow": "assets/audio/words/noisy-adj-slow.mp3",
+          "say": "The air conditioning is very noisy tonight."
+        },
+        {
+          "en": "I barely slept in this noisy room.",
+          "yue": "呢間嘈房我幾乎瞓唔到。",
+          "audio": "assets/audio/words/noisy-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/noisy-adj-ex2-slow.mp3",
+          "say": "I barely slept in this noisy room."
+        }
+      ]
+    },
+    {
+      "id": "air-conditioning-phrase",
+      "lemma": "air conditioning",
+      "pos": "phrase",
+      "senseId": "room-cooler",
+      "ipa": "/ˈɛɹ kən.ˈdɪ.ʃə.nɪŋ/",
+      "syllables": [
+        "air",
+        "con",
+        "di",
+        "tion",
+        "ing"
+      ],
+      "syllableIpa": [
+        "ˈɛɹ",
+        "kən",
+        "ˈdɪ",
+        "ʃə",
+        "nɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "EH1 R K AH0 N D IH1 SH AH0 N IH0 NG",
+      "audio": "assets/audio/words/air-conditioning-phrase.mp3",
+      "audioSlow": "assets/audio/words/air-conditioning-phrase-slow.mp3",
+      "glossYue": "冷氣",
+      "glossZh": "冷氣",
+      "jyutping": "laang5 hei3",
+      "collocations": [
+        "the air conditioning",
+        "noisy air conditioning"
+      ],
+      "example": "The air conditioning is noisy tonight.",
+      "exampleYue": "部冷氣今晚好嘈。",
+      "say": "The air conditioning is noisy tonight.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "air",
+      "phrase": true,
+      "audioSha256": "9a97e4496083d65711f9a3d0934f3d9b68a01f71b6a12965c3ed9a5a34cc1bb0",
+      "register": "酒店",
+      "usageNotes": "冷氣要兩字一齊講。",
+      "pitfallsYue": "冷氣要兩字一齊講。",
+      "related": [
+        "noisy-adj",
+        "engineer-noun"
+      ],
+      "examples": [
+        {
+          "en": "The air conditioning is noisy tonight.",
+          "yue": "部冷氣今晚好嘈。",
+          "audio": "assets/audio/words/air-conditioning-phrase.mp3",
+          "audioSlow": "assets/audio/words/air-conditioning-phrase-slow.mp3",
+          "say": "The air conditioning is noisy tonight."
+        },
+        {
+          "en": "Could you fix the air conditioning before we sleep?",
+          "yue": "瞓之前可唔可以整好部冷氣？",
+          "audio": "assets/audio/words/air-conditioning-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/air-conditioning-phrase-ex2-slow.mp3",
+          "say": "Could you fix the air conditioning before we sleep?"
+        }
+      ]
+    },
+    {
+      "id": "towel-noun",
+      "lemma": "towel",
+      "pos": "noun",
+      "senseId": "bath-cloth",
+      "ipa": "/ˈtaʊ.əl/",
+      "syllables": [
+        "tow",
+        "el"
+      ],
+      "syllableIpa": [
+        "ˈtaʊ",
+        "əl"
+      ],
+      "stress": 1,
+      "arpabet": "T AW1 AH0 L",
+      "audio": "assets/audio/words/towel-noun.mp3",
+      "audioSlow": "assets/audio/words/towel-noun-slow.mp3",
+      "glossYue": "毛巾",
+      "glossZh": "毛巾",
+      "jyutping": "mou4 gan1",
+      "collocations": [
+        "extra towels",
+        "a towel"
+      ],
+      "example": "Please bring extra towels to the room.",
+      "exampleYue": "請帶多條毛巾上房。",
+      "say": "Please bring extra towels to the room.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "towel",
+      "phrase": false,
+      "audioSha256": "22650dfc63eaf520ae760aa74f41103d36d19afa2f7c585c34a327fc596f1e46",
+      "register": "酒店",
+      "usageNotes": "毛巾係抹身用，唔係被。",
+      "pitfallsYue": "毛巾係抹身用，唔係被。",
+      "related": [
+        "blanket-noun",
+        "room-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please bring extra towels to the room.",
+          "yue": "請帶多條毛巾上房。",
+          "audio": "assets/audio/words/towel-noun.mp3",
+          "audioSlow": "assets/audio/words/towel-noun-slow.mp3",
+          "say": "Please bring extra towels to the room."
+        },
+        {
+          "en": "The extra towel is on the bed.",
+          "yue": "多條毛巾喺張床上面。",
+          "audio": "assets/audio/words/towel-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/towel-noun-ex2-slow.mp3",
+          "say": "The extra towel is on the bed."
+        }
+      ]
+    },
+    {
+      "id": "blanket-noun",
+      "lemma": "blanket",
+      "pos": "noun",
+      "senseId": "bed-cover",
+      "ipa": "/ˈblæŋ.kət/",
+      "syllables": [
+        "blan",
+        "ket"
+      ],
+      "syllableIpa": [
+        "ˈblæŋ",
+        "kət"
+      ],
+      "stress": 1,
+      "arpabet": "B L AE1 NG K AH0 T",
+      "audio": "assets/audio/words/blanket-noun.mp3",
+      "audioSlow": "assets/audio/words/blanket-noun-slow.mp3",
+      "glossYue": "被",
+      "glossZh": "被",
+      "jyutping": "pei5",
+      "collocations": [
+        "a warm blanket",
+        "an extra blanket"
+      ],
+      "example": "Please bring a warm blanket tonight.",
+      "exampleYue": "今晚請帶張暖被上嚟。",
+      "say": "Please bring a warm blanket tonight.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "blanket",
+      "phrase": false,
+      "audioSha256": "a0995e2471f0b4e799e74a32668e5d76133127c8d630de454649416d9114aa18",
+      "register": "酒店",
+      "usageNotes": "被係蓋身，開頭有 /l/。",
+      "pitfallsYue": "被係蓋身，開頭有 /l/。",
+      "related": [
+        "towel-noun",
+        "quiet-adj"
+      ],
+      "examples": [
+        {
+          "en": "Please bring a warm blanket tonight.",
+          "yue": "今晚請帶張暖被上嚟。",
+          "audio": "assets/audio/words/blanket-noun.mp3",
+          "audioSlow": "assets/audio/words/blanket-noun-slow.mp3",
+          "say": "Please bring a warm blanket tonight."
+        },
+        {
+          "en": "The extra blanket is on the quiet bed.",
+          "yue": "多張被喺靜啲嘅床上面。",
+          "audio": "assets/audio/words/blanket-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/blanket-noun-ex2-slow.mp3",
+          "say": "The extra blanket is on the quiet bed."
+        }
+      ]
+    },
+    {
+      "id": "quiet-adj",
+      "lemma": "quiet",
+      "pos": "adj",
+      "senseId": "not-loud",
+      "ipa": "/ˈkwaɪ.ət/",
+      "syllables": [
+        "qui",
+        "et"
+      ],
+      "syllableIpa": [
+        "ˈkwaɪ",
+        "ət"
+      ],
+      "stress": 1,
+      "arpabet": "K W AY1 AH0 T",
+      "audio": "assets/audio/words/quiet-adj.mp3",
+      "audioSlow": "assets/audio/words/quiet-adj-slow.mp3",
+      "glossYue": "靜",
+      "glossZh": "靜",
+      "jyutping": "zing6",
+      "collocations": [
+        "a quiet room",
+        "the quiet side"
+      ],
+      "example": "A quiet room is ready tonight.",
+      "exampleYue": "今晚有間靜啲嘅房。",
+      "say": "A quiet room is ready tonight.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "quiet",
+      "phrase": false,
+      "audioSha256": "f61ba3a1a6d7a7cc1c06afd51ecde9a079b0b5713a501554d89bc7206b29ff78",
+      "register": "酒店",
+      "usageNotes": "靜係唔嘈。quiet 冇 /l/。",
+      "pitfallsYue": "靜係唔嘈。quiet 冇 /l/。",
+      "related": [
+        "noisy-adj",
+        "room-noun"
+      ],
+      "examples": [
+        {
+          "en": "A quiet room is ready tonight.",
+          "yue": "今晚有間靜啲嘅房。",
+          "audio": "assets/audio/words/quiet-adj.mp3",
+          "audioSlow": "assets/audio/words/quiet-adj-slow.mp3",
+          "say": "A quiet room is ready tonight."
+        },
+        {
+          "en": "Could we move to a quiet room?",
+          "yue": "可唔可以搬去靜啲嘅房？",
+          "audio": "assets/audio/words/quiet-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/quiet-adj-ex2-slow.mp3",
+          "say": "Could we move to a quiet room?"
+        }
+      ]
+    },
+    {
+      "id": "engineer-noun",
+      "lemma": "engineer",
+      "pos": "noun",
+      "senseId": "repair-staff",
+      "ipa": "/ˌɛn.dʒə.ˈnɪɹ/",
+      "syllables": [
+        "en",
+        "gi",
+        "neer"
+      ],
+      "syllableIpa": [
+        "ˌɛn",
+        "dʒə",
+        "ˈnɪɹ"
+      ],
+      "stress": 3,
+      "arpabet": "EH2 N JH AH0 N IH1 R",
+      "audio": "assets/audio/words/engineer-noun.mp3",
+      "audioSlow": "assets/audio/words/engineer-noun-slow.mp3",
+      "glossYue": "工程師",
+      "glossZh": "工程師",
+      "jyutping": "gung1 cing4 si1",
+      "collocations": [
+        "an engineer",
+        "send an engineer"
+      ],
+      "example": "I can send an engineer up right now.",
+      "exampleYue": "我而家可以派工程師上嚟。",
+      "say": "I can send an engineer up right now.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "engineer",
+      "phrase": false,
+      "audioSha256": "9abdfb7b463ca56103ea1d1d7a52dfde9f9ad0e824e0c4327177b02cd65e4337",
+      "register": "酒店",
+      "usageNotes": "工程師上嚟睇房，重音喺最後一節。",
+      "pitfallsYue": "工程師上嚟睇房，重音喺最後一節。",
+      "related": [
+        "air-conditioning-phrase",
+        "inconvenience-noun"
+      ],
+      "examples": [
+        {
+          "en": "I can send an engineer up right now.",
+          "yue": "我而家可以派工程師上嚟。",
+          "audio": "assets/audio/words/engineer-noun.mp3",
+          "audioSlow": "assets/audio/words/engineer-noun-slow.mp3",
+          "say": "I can send an engineer up right now."
+        },
+        {
+          "en": "The engineer will visit before you sleep.",
+          "yue": "工程師你瞓之前會上嚟。",
+          "audio": "assets/audio/words/engineer-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/engineer-noun-ex2-slow.mp3",
+          "say": "The engineer will visit before you sleep."
+        }
+      ]
+    },
+    {
+      "id": "inconvenience-noun",
+      "lemma": "inconvenience",
+      "pos": "noun",
+      "senseId": "trouble-caused",
+      "ipa": "/ˌɪn.kən.ˈvi.njəns/",
+      "syllables": [
+        "in",
+        "con",
+        "ven",
+        "ience"
+      ],
+      "syllableIpa": [
+        "ˌɪn",
+        "kən",
+        "ˈvi",
+        "njəns"
+      ],
+      "stress": 3,
+      "arpabet": "IH2 N K AH0 N V IY1 N Y AH0 N S",
+      "audio": "assets/audio/words/inconvenience-noun.mp3",
+      "audioSlow": "assets/audio/words/inconvenience-noun-slow.mp3",
+      "glossYue": "不便",
+      "glossZh": "不便",
+      "jyutping": "bat1 bin6",
+      "collocations": [
+        "the inconvenience",
+        "sorry for the inconvenience"
+      ],
+      "example": "I am sorry for the inconvenience tonight.",
+      "exampleYue": "今晚造成不便，對唔住。",
+      "say": "I am sorry for the inconvenience tonight.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "inconvenience",
+      "phrase": false,
+      "audioSha256": "d5553d937eeb47c040c40ecffb846d8863a39f07838a83266dd885ded3dbe4ad",
+      "register": "酒店",
+      "usageNotes": "不便係造成麻煩，先道歉。",
+      "pitfallsYue": "不便係造成麻煩，先道歉。",
+      "related": [
+        "engineer-noun",
+        "noisy-adj"
+      ],
+      "examples": [
+        {
+          "en": "I am sorry for the inconvenience tonight.",
+          "yue": "今晚造成不便，對唔住。",
+          "audio": "assets/audio/words/inconvenience-noun.mp3",
+          "audioSlow": "assets/audio/words/inconvenience-noun-slow.mp3",
+          "say": "I am sorry for the inconvenience tonight."
+        },
+        {
+          "en": "Sorry for the inconvenience in this noisy room.",
+          "yue": "呢間嘈房造成不便，對唔住。",
+          "audio": "assets/audio/words/inconvenience-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/inconvenience-noun-ex2-slow.mp3",
+          "say": "Sorry for the inconvenience in this noisy room."
         }
       ]
     }

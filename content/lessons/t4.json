@@ -3,7 +3,7 @@
   "unit": "T",
   "titleYue": "的士同問路",
   "titleEn": "Taxi and asking the way",
-  "canDoYue": "你能夠講目的地、問大概幾耐，同埋喺街角落車。",
+  "canDoYue": "你識講目的地、問大概幾耐，仲識喺街角落車。",
   "canDoEn": "Give a destination, ask roughly how long, and ask to stop at a corner.",
   "minutes": 12,
   "hero": "assets/art/lessons/t4.webp",
@@ -118,7 +118,7 @@
   ],
   "understand": [
     {
-      "prompt": "Could you take me to the landmark? 係問？",
+      "prompt": "Could you take me to the landmark? 即係問緊咩？",
       "choices": [
         "可唔可以載我去地標",
         "可唔可以換件貨",

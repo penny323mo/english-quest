@@ -3,7 +3,7 @@
   "unit": "J",
   "titleYue": "付款同退稅",
   "titleEn": "Payment and tax-free",
-  "canDoYue": "你能夠收款、講免稅同包裝。",
+  "canDoYue": "你識收款、講免稅，仲識包裝。",
   "canDoEn": "Take a card or cash payment, explain tax-free, and offer a bag or wrap.",
   "minutes": 12,
   "hero": "assets/art/lessons/j7.webp",
@@ -143,7 +143,7 @@
   ],
   "understand": [
     {
-      "prompt": "Would you like to pay by card? 係問？",
+      "prompt": "Would you like to pay by card? 即係問緊咩？",
       "choices": [
         "想唔想用卡付款",
         "想唔想試戒指",

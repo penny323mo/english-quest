@@ -1,0 +1,359 @@
+{
+  "id": "J10",
+  "unit": "J",
+  "titleYue": "加購同禮盒",
+  "titleEn": "Upselling and add-ons",
+  "canDoYue": "你識輕輕加購襯到嘅套裝，仲識講刻字可以唔要。",
+  "canDoEn": "Offer a matching set gently, and say the engraving is optional.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j10.webp",
+  "cast": [
+    "mei",
+    "tom"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "matching-adj",
+    "also-adv",
+    "popular-adj",
+    "engraving-noun",
+    "optional-adj",
+    "set-noun",
+    "if-you-like-phrase",
+    "polish-noun",
+    "recommend-verb",
+    "gift-box-phrase",
+    "pair-noun"
+  ],
+  "dialogue": [
+    {
+      "id": "j10-l1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "You might also like this matching pair, and it completes the look for a gift tonight.",
+      "glossYue": "你或者都會鍾意呢對襯到嘅，今晚送禮會成套。",
+      "audio": "assets/audio/lines/j10-l1.mp3",
+      "audioSlow": "assets/audio/lines/j10-l1-slow.mp3",
+      "say": "You might also like this matching pair, and it completes the look for a gift tonight.",
+      "hideGloss": false
+    },
+    {
+      "id": "j10-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "If I am getting the necklace today, do the matching earrings go well with it too?",
+      "glossYue": "如果我今日買條頸鏈，對襯嘅耳環會唔會都好配？",
+      "audio": "assets/audio/lines/j10-l2.mp3",
+      "audioSlow": "assets/audio/lines/j10-l2-slow.mp3",
+      "say": "If I am getting the necklace today, do the matching earrings go well with it too?",
+      "hideGloss": true
+    },
+    {
+      "id": "j10-l3",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Yes, this popular set is optional, and the engraving is a quiet extra if you like.",
+      "glossYue": "會，呢套好多人揀，可以唔要，刻字係靜靜嘅加購，如果你想。",
+      "audio": "assets/audio/lines/j10-l3.mp3",
+      "audioSlow": "assets/audio/lines/j10-l3-slow.mp3",
+      "say": "Yes, this popular set is optional, and the engraving is a quiet extra if you like.",
+      "hideGloss": true
+    },
+    {
+      "id": "j10-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I like the pair, but I do not need the engraving if the price goes up.",
+      "glossYue": "我鍾意呢對，但如果價錢升，我就唔使刻字。",
+      "audio": "assets/audio/lines/j10-l4.mp3",
+      "audioSlow": "assets/audio/lines/j10-l4-slow.mp3",
+      "say": "I like the pair, but I do not need the engraving if the price goes up.",
+      "hideGloss": true
+    },
+    {
+      "id": "j10-l5",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "The engraving is fully optional, and you might also like a simple polish with the set.",
+      "glossYue": "刻字完全可以唔要，你或者都會想套裝加一次簡單擦亮。",
+      "audio": "assets/audio/lines/j10-l5.mp3",
+      "audioSlow": "assets/audio/lines/j10-l5-slow.mp3",
+      "say": "The engraving is fully optional, and you might also like a simple polish with the set.",
+      "hideGloss": false
+    },
+    {
+      "id": "j10-l6",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Please recommend one popular option only, and then I will decide before we leave the shop.",
+      "glossYue": "請只推薦一個多人揀嘅選擇，然後我哋走之前我再決定。",
+      "audio": "assets/audio/lines/j10-l6.mp3",
+      "audioSlow": "assets/audio/lines/j10-l6-slow.mp3",
+      "say": "Please recommend one popular option only, and then I will decide before we leave the shop.",
+      "hideGloss": true
+    },
+    {
+      "id": "j10-l7",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "If you like the necklace, the matching pair goes well, and the box is ready now.",
+      "glossYue": "如果你鍾意條頸鏈，對襯嘅都好配，盒而家準備好。",
+      "audio": "assets/audio/lines/j10-l7.mp3",
+      "audioSlow": "assets/audio/lines/j10-l7-slow.mp3",
+      "say": "If you like the necklace, the matching pair goes well, and the box is ready now.",
+      "hideGloss": true
+    },
+    {
+      "id": "j10-l8",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I will take the matching set without the engraving, and thank you for the gentle offer.",
+      "glossYue": "我要呢套襯嘅，唔使刻字，多謝你輕輕咁提議。",
+      "audio": "assets/audio/lines/j10-l8.mp3",
+      "audioSlow": "assets/audio/lines/j10-l8-slow.mp3",
+      "say": "I will take the matching set without the engraving, and thank you for the gentle offer.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "You might also like this. 係做緊？",
+      "choices": [
+        "輕輕加購",
+        "收錢",
+        "叫的士"
+      ],
+      "answer": 0,
+      "explain": "might also like 係輕輕提議。"
+    },
+    {
+      "prompt": "If you like the necklace, the pair goes well. 係？",
+      "choices": [
+        "如果鍾意頸鏈，對耳環都好配",
+        "一定要刻字",
+        "即刻退款"
+      ],
+      "answer": 0,
+      "explain": "If you like 係如果想，先至配。"
+    },
+    {
+      "prompt": "The engraving is optional. 係？",
+      "choices": [
+        "刻字可以唔要",
+        "一定要刻",
+        "而家退款"
+      ],
+      "answer": 0,
+      "explain": "optional 係可以唔要。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "You might ___ like this matching pair, and it completes the look for a gift.",
+      "example": "You might also like this matching pair, and it completes the look for a gift.",
+      "glossYue": "你或者都⋯⋯鍾意呢對。",
+      "answer": "also",
+      "choices": [
+        "also",
+        "taxi",
+        "refund"
+      ]
+    },
+    {
+      "pattern": "This popular ___ is optional, and the engraving is a quiet extra if you like.",
+      "example": "This popular set is optional, and the engraving is a quiet extra if you like.",
+      "glossYue": "呢個多人揀嘅⋯⋯可以唔要。",
+      "answer": "set",
+      "choices": [
+        "set",
+        "wallet",
+        "meter"
+      ]
+    },
+    {
+      "pattern": "The engraving is fully ___, and you might also like a simple polish with the set.",
+      "example": "The engraving is fully optional, and you might also like a simple polish with the set.",
+      "glossYue": "刻字完全⋯⋯。",
+      "answer": "optional",
+      "choices": [
+        "optional",
+        "ambulance",
+        "embassy"
+      ]
+    },
+    {
+      "pattern": "Please ___ one popular option only, and then I will decide before we leave.",
+      "example": "Please recommend one popular option only, and then I will decide before we leave.",
+      "glossYue": "請⋯⋯一個選擇就得。",
+      "answer": "recommend",
+      "choices": [
+        "recommend",
+        "blanket",
+        "towel"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "j10-l5",
+    "hint": "The engraving is fully optional, and you might also like a simple polish with the set."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "客人買頸鏈。你點輕輕加購？",
+      "choices": [
+        "You might also like this matching pair, and it completes the look for a gift tonight.",
+        "I apologize for the inconvenience today.",
+        "The taxi is waiting outside."
+      ],
+      "answer": 0,
+      "explain": "用 might also like，唔好硬銷。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "You",
+        "might",
+        "also",
+        "like",
+        "this",
+        "set"
+      ],
+      "answer": [
+        "You",
+        "might",
+        "also",
+        "like",
+        "this",
+        "set"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "mei",
+    "intro": "Tom 睇緊套裝。輕輕加購就得。可以講：You might also like。",
+    "turns": [
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "If I am getting the necklace today, do the matching earrings go well with it too?",
+        "audio": "assets/audio/lines/j10-l2.mp3",
+        "audioSlow": "assets/audio/lines/j10-l2-slow.mp3",
+        "expect": "Yes, this popular set is optional, and the engraving is a quiet extra if you like.",
+        "keywords": [
+          "optional",
+          "engraving"
+        ],
+        "modelAudio": "assets/audio/lines/j10-l3.mp3",
+        "modelSlow": "assets/audio/lines/j10-l3-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "I like the pair, but I do not need the engraving if the price goes up.",
+        "audio": "assets/audio/lines/j10-l4.mp3",
+        "audioSlow": "assets/audio/lines/j10-l4-slow.mp3",
+        "expect": "The engraving is fully optional, and you might also like a simple polish with the set.",
+        "keywords": [
+          "optional",
+          "polish"
+        ],
+        "modelAudio": "assets/audio/lines/j10-l5.mp3",
+        "modelSlow": "assets/audio/lines/j10-l5-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Please recommend one popular option only, and then I will decide before we leave the shop.",
+        "audio": "assets/audio/lines/j10-l6.mp3",
+        "audioSlow": "assets/audio/lines/j10-l6-slow.mp3",
+        "expect": "If you like the necklace, the matching pair goes well, and the box is ready now.",
+        "keywords": [
+          "matching",
+          "pair"
+        ],
+        "modelAudio": "assets/audio/lines/j10-l7.mp3",
+        "modelSlow": "assets/audio/lines/j10-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen to the clip once, then choose the word you heard for the carved name on a gift.",
+      "lemma": "engraving-noun",
+      "choices": [
+        "engraving",
+        "matching",
+        "polish"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen to the clip once, then choose the word you heard for something many guests choose.",
+      "lemma": "popular-adj",
+      "choices": [
+        "popular",
+        "optional",
+        "set"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "When Mei says this matching pair goes well with the necklace, what does matching mean here in the shop?",
+      "choices": [
+        "襯到",
+        "退款",
+        "冷氣"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "When Mei says the engraving is fully optional tonight, what does optional mean for this gift?",
+      "choices": [
+        "可以唔要",
+        "一定要",
+        "已經壞"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which of these add-on words contains the /l/ sound in the middle: popular, matching, or engraving?",
+      "choices": [
+        "popular",
+        "matching",
+        "engraving"
+      ],
+      "answer": 0,
+      "explain": "popular 有 /l/。matching 同 engraving 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "多人揀入面嗰個音",
+    "note": "popular 中間有 /l/。matching 同 engraving 冇 /l/。",
+    "pairs": [
+      {
+        "a": "popular-adj",
+        "b": "matching-adj"
+      },
+      {
+        "a": "also-adv",
+        "b": "engraving-noun"
+      }
+    ],
+    "drill": [
+      "popular-adj",
+      "matching-adj",
+      "engraving-noun",
+      "optional-adj",
+      "set-noun"
+    ]
+  },
+  "next": "T6"
+}

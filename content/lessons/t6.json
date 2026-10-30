@@ -1,0 +1,357 @@
+{
+  "id": "T6",
+  "unit": "T",
+  "titleYue": "酒店問題",
+  "titleEn": "Hotel problem",
+  "canDoYue": "你識講房嘈同冷氣，仲識要求換靜啲嘅房。",
+  "canDoEn": "Report a noisy room and ask for a quieter one.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t6.webp",
+  "cast": [
+    "kai",
+    "tom"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "noisy-adj",
+    "air-conditioning-phrase",
+    "towel-noun",
+    "blanket-noun",
+    "quiet-adj",
+    "engineer-noun",
+    "inconvenience-noun",
+    "room-noun",
+    "appreciate-verb"
+  ],
+  "dialogue": [
+    {
+      "id": "t6-l1",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Good evening, this is Kai calling from the front desk, and how may I help you tonight?",
+      "glossYue": "晚安，我係前台 Kai 打嚟，今晚有咩可以幫你？",
+      "audio": "assets/audio/lines/t6-l1.mp3",
+      "audioSlow": "assets/audio/lines/t6-l1-slow.mp3",
+      "say": "Good evening, this is Kai calling from the front desk, and how may I help you tonight?",
+      "hideGloss": false
+    },
+    {
+      "id": "t6-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "There seems to be very noisy air conditioning, and I barely slept in this room tonight.",
+      "glossYue": "部冷氣似乎好嘈，我今晚喺呢間房幾乎瞓唔到。",
+      "audio": "assets/audio/lines/t6-l2.mp3",
+      "audioSlow": "assets/audio/lines/t6-l2-slow.mp3",
+      "say": "There seems to be very noisy air conditioning, and I barely slept in this room tonight.",
+      "hideGloss": true
+    },
+    {
+      "id": "t6-l3",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "I am sorry for the inconvenience tonight, and I can send an engineer up right now.",
+      "glossYue": "今晚造成不便對唔住，我而家可以派工程師上嚟。",
+      "audio": "assets/audio/lines/t6-l3.mp3",
+      "audioSlow": "assets/audio/lines/t6-l3-slow.mp3",
+      "say": "I am sorry for the inconvenience tonight, and I can send an engineer up right now.",
+      "hideGloss": true
+    },
+    {
+      "id": "t6-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Would it be possible to move us to a quiet room, with extra towels and a blanket?",
+      "glossYue": "可唔可以搬我哋去靜啲嘅房，再加多條毛巾同一張被？",
+      "audio": "assets/audio/lines/t6-l4.mp3",
+      "audioSlow": "assets/audio/lines/t6-l4-slow.mp3",
+      "say": "Would it be possible to move us to a quiet room, with extra towels and a blanket?",
+      "hideGloss": true
+    },
+    {
+      "id": "t6-l5",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "A quiet room is available tonight, and I will bring the towels and the blanket now.",
+      "glossYue": "今晚有間靜啲嘅房，我而家帶毛巾同被上嚟。",
+      "audio": "assets/audio/lines/t6-l5.mp3",
+      "audioSlow": "assets/audio/lines/t6-l5-slow.mp3",
+      "say": "A quiet room is available tonight, and I will bring the towels and the blanket now.",
+      "hideGloss": false
+    },
+    {
+      "id": "t6-l6",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "The air conditioning is still not working well, so please ask the engineer to check it tonight.",
+      "glossYue": "部冷氣仍然唔係好好運作，唔該叫工程師今晚檢查。",
+      "audio": "assets/audio/lines/t6-l6.mp3",
+      "audioSlow": "assets/audio/lines/t6-l6-slow.mp3",
+      "say": "The air conditioning is still not working well, so please ask the engineer to check it tonight.",
+      "hideGloss": true
+    },
+    {
+      "id": "t6-l7",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "I have noted the noisy room already, and the engineer will visit before you sleep tonight.",
+      "glossYue": "我已經記低呢間房嘈，工程師你瞓之前會上嚟。",
+      "audio": "assets/audio/lines/t6-l7.mp3",
+      "audioSlow": "assets/audio/lines/t6-l7-slow.mp3",
+      "say": "I have noted the noisy room already, and the engineer will visit before you sleep tonight.",
+      "hideGloss": true
+    },
+    {
+      "id": "t6-l8",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I appreciate the quiet room, the extra towels, and the warm blanket on this very noisy night.",
+      "glossYue": "我感激你安排靜啲嘅房、多條毛巾，同埋呢晚嘅暖被。",
+      "audio": "assets/audio/lines/t6-l8.mp3",
+      "audioSlow": "assets/audio/lines/t6-l8-slow.mp3",
+      "say": "I appreciate the quiet room, the extra towels, and the warm blanket on this very noisy night.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "There seems to be a problem. 係講？",
+      "choices": [
+        "似乎有問題",
+        "已經搞好",
+        "叫餐"
+      ],
+      "answer": 0,
+      "explain": "There seems to be 係似乎有。"
+    },
+    {
+      "prompt": "Would it be possible to change rooms? 即係問緊咩？",
+      "choices": [
+        "問可唔可以換房",
+        "話已經換咗",
+        "問幾多錢"
+      ],
+      "answer": 0,
+      "explain": "Would it be possible 係禮貌咁問。"
+    },
+    {
+      "prompt": "I am sorry for the inconvenience. 係？",
+      "choices": [
+        "為不便道歉",
+        "話房冇問題",
+        "叫的士"
+      ],
+      "answer": 0,
+      "explain": "sorry for the inconvenience 係先道歉。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "There ___ to be very noisy air conditioning, and I barely slept in this room.",
+      "example": "There seems to be very noisy air conditioning, and I barely slept in this room.",
+      "glossYue": "似乎⋯⋯好嘈。",
+      "answer": "seems",
+      "choices": [
+        "seems",
+        "refund",
+        "taxi"
+      ]
+    },
+    {
+      "pattern": "Would it be ___ to move us to a quiet room with extra towels tonight?",
+      "example": "Would it be possible to move us to a quiet room with extra towels tonight?",
+      "glossYue": "可唔可以⋯⋯搬去靜房？",
+      "answer": "possible",
+      "choices": [
+        "possible",
+        "engraving",
+        "polish"
+      ]
+    },
+    {
+      "pattern": "I am sorry for the ___ tonight, and I can send an engineer up right now.",
+      "example": "I am sorry for the inconvenience tonight, and I can send an engineer up right now.",
+      "glossYue": "今晚造成⋯⋯對唔住。",
+      "answer": "inconvenience",
+      "choices": [
+        "inconvenience",
+        "necklace",
+        "wallet"
+      ]
+    },
+    {
+      "pattern": "A quiet room is ready tonight, and I will bring the towels and the ___ now.",
+      "example": "A quiet room is ready tonight, and I will bring the towels and the blanket now.",
+      "glossYue": "我而家帶毛巾同⋯⋯。",
+      "answer": "blanket",
+      "choices": [
+        "blanket",
+        "scratch",
+        "claim"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "t6-l5",
+    "hint": "A quiet room is available tonight, and I will bring the towels and the blanket now."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "客人話間房嘈。你點先答？",
+      "choices": [
+        "I am sorry for the inconvenience tonight, and I can send an engineer up right now.",
+        "You might also like this matching pair.",
+        "The necklace is eighteen dollars."
+      ],
+      "answer": 0,
+      "explain": "先為不便道歉，再派工程師。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Would",
+        "it",
+        "be",
+        "possible",
+        "to",
+        "move"
+      ],
+      "answer": [
+        "Would",
+        "it",
+        "be",
+        "possible",
+        "to",
+        "move"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "kai",
+    "intro": "Tom 話間房嘈。先道歉，再講可以點。可以講：sorry for the inconvenience。",
+    "turns": [
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "There seems to be very noisy air conditioning, and I barely slept in this room tonight.",
+        "audio": "assets/audio/lines/t6-l2.mp3",
+        "audioSlow": "assets/audio/lines/t6-l2-slow.mp3",
+        "expect": "I am sorry for the inconvenience tonight, and I can send an engineer up right now.",
+        "keywords": [
+          "inconvenience",
+          "engineer"
+        ],
+        "modelAudio": "assets/audio/lines/t6-l3.mp3",
+        "modelSlow": "assets/audio/lines/t6-l3-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Would it be possible to move us to a quiet room, with extra towels and a blanket?",
+        "audio": "assets/audio/lines/t6-l4.mp3",
+        "audioSlow": "assets/audio/lines/t6-l4-slow.mp3",
+        "expect": "A quiet room is available tonight, and I will bring the towels and the blanket now.",
+        "keywords": [
+          "towel",
+          "blanket"
+        ],
+        "modelAudio": "assets/audio/lines/t6-l5.mp3",
+        "modelSlow": "assets/audio/lines/t6-l5-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "The air conditioning is still not working well, so please ask the engineer to check it tonight.",
+        "audio": "assets/audio/lines/t6-l6.mp3",
+        "audioSlow": "assets/audio/lines/t6-l6-slow.mp3",
+        "expect": "I have noted the noisy room already, and the engineer will visit before you sleep tonight.",
+        "keywords": [
+          "noted",
+          "engineer"
+        ],
+        "modelAudio": "assets/audio/lines/t6-l7.mp3",
+        "modelSlow": "assets/audio/lines/t6-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen to the clip once, then choose the word you heard for the cloth you dry your hands with.",
+      "lemma": "towel-noun",
+      "choices": [
+        "towel",
+        "blanket",
+        "engineer"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen to the clip once, then choose the word you heard for the warm cover on the bed.",
+      "lemma": "blanket-noun",
+      "choices": [
+        "blanket",
+        "towel",
+        "noisy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "When Tom says the air conditioning is very noisy, what does noisy mean in this room tonight?",
+      "choices": [
+        "嘈",
+        "靜",
+        "免費"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "When Kai says she is sorry for the inconvenience tonight, what does inconvenience mean for this stay?",
+      "choices": [
+        "不便",
+        "刻字",
+        "收據"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which of these night-time hotel words contains the /l/ sound near the start: blanket, noisy, or quiet?",
+      "choices": [
+        "blanket",
+        "noisy",
+        "quiet"
+      ],
+      "answer": 0,
+      "explain": "blanket 有 /l/。noisy 同 quiet 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "被開頭嗰個音",
+    "note": "blanket 開頭有 /l/。noisy 同 quiet 冇 /l/。",
+    "pairs": [
+      {
+        "a": "blanket-noun",
+        "b": "noisy-adj"
+      },
+      {
+        "a": "towel-noun",
+        "b": "quiet-adj"
+      }
+    ],
+    "drill": [
+      "blanket-noun",
+      "noisy-adj",
+      "towel-noun",
+      "quiet-adj",
+      "engineer-noun"
+    ]
+  },
+  "next": null
+}

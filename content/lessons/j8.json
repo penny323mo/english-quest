@@ -1,0 +1,360 @@
+{
+  "id": "J8",
+  "unit": "J",
+  "titleYue": "售後同保養",
+  "titleEn": "After-sales and warranty",
+  "canDoYue": "你識講保養同保用，仲識講退換期同申請。",
+  "canDoEn": "Explain care, the warranty, and the return window.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j8.webp",
+  "cast": [
+    "mei",
+    "tom"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "warranty-noun",
+    "guarantee-noun",
+    "return-noun",
+    "exchange-noun",
+    "scratch-noun",
+    "polish-noun",
+    "avoid-verb",
+    "chemical-noun",
+    "claim-noun",
+    "policy-noun",
+    "within-prep",
+    "clean-verb",
+    "receipt-noun",
+    "water-noun"
+  ],
+  "dialogue": [
+    {
+      "id": "j8-l1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Have you kept the receipt with you, and should I explain the warranty before you go?",
+      "glossYue": "你有冇帶住張收據？走之前我可唔可以講下保養？",
+      "audio": "assets/audio/lines/j8-l1.mp3",
+      "audioSlow": "assets/audio/lines/j8-l1-slow.mp3",
+      "say": "Have you kept the receipt with you, and should I explain the warranty before you go?",
+      "hideGloss": false
+    },
+    {
+      "id": "j8-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I have kept the receipt, but a small scratch showed up within the first week.",
+      "glossYue": "我有留低收據，但係第一個禮拜就有少少刮痕。",
+      "audio": "assets/audio/lines/j8-l2.mp3",
+      "audioSlow": "assets/audio/lines/j8-l2-slow.mp3",
+      "say": "I have kept the receipt, but a small scratch showed up within the first week.",
+      "hideGloss": true
+    },
+    {
+      "id": "j8-l3",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "You should avoid water and any harsh chemicals, and please use only the soft polish.",
+      "glossYue": "你應該避開水同任何勁嘅化學劑，淨係用軟布擦。",
+      "audio": "assets/audio/lines/j8-l3.mp3",
+      "audioSlow": "assets/audio/lines/j8-l3-slow.mp3",
+      "say": "You should avoid water and any harsh chemicals, and please use only the soft polish.",
+      "hideGloss": true
+    },
+    {
+      "id": "j8-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Does the guarantee cover this new scratch, or should I file a claim within the week?",
+      "glossYue": "保養包唔包呢道新刮痕，定係我應該呢個禮拜內申請？",
+      "audio": "assets/audio/lines/j8-l4.mp3",
+      "audioSlow": "assets/audio/lines/j8-l4-slow.mp3",
+      "say": "Does the guarantee cover this new scratch, or should I file a claim within the week?",
+      "hideGloss": true
+    },
+    {
+      "id": "j8-l5",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "The written policy allows one repair within the year if you have kept the receipt.",
+      "glossYue": "書面政策容許一年之內修理一次，只要你有留低收據。",
+      "audio": "assets/audio/lines/j8-l5.mp3",
+      "audioSlow": "assets/audio/lines/j8-l5-slow.mp3",
+      "say": "The written policy allows one repair within the year if you have kept the receipt.",
+      "hideGloss": false
+    },
+    {
+      "id": "j8-l6",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I will avoid harsh chemicals at home and come back later if the polish fails.",
+      "glossYue": "我喺屋企會避開勁嘅化學劑，擦唔好就遲啲攞返嚟。",
+      "audio": "assets/audio/lines/j8-l6.mp3",
+      "audioSlow": "assets/audio/lines/j8-l6-slow.mp3",
+      "say": "I will avoid harsh chemicals at home and come back later if the polish fails.",
+      "hideGloss": true
+    },
+    {
+      "id": "j8-l7",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Please keep that receipt safe, and you should file any new claim within the return window.",
+      "glossYue": "請將張收據安全留低，新嘅申請要喺退換期內交。",
+      "audio": "assets/audio/lines/j8-l7.mp3",
+      "audioSlow": "assets/audio/lines/j8-l7-slow.mp3",
+      "say": "Please keep that receipt safe, and you should file any new claim within the return window.",
+      "hideGloss": true
+    },
+    {
+      "id": "j8-l8",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Thank you, and I now understand the shop policy, the guarantee, and the return window.",
+      "glossYue": "多謝，我而家明白舖頭政策、保養同退換期。",
+      "audio": "assets/audio/lines/j8-l8.mp3",
+      "audioSlow": "assets/audio/lines/j8-l8-slow.mp3",
+      "say": "Thank you, and I now understand the shop policy, the guarantee, and the return window.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Have you kept the receipt? 即係問緊咩？",
+      "choices": [
+        "問有冇留低收據",
+        "問幾多錢",
+        "叫的士"
+      ],
+      "answer": 0,
+      "explain": "Have you kept 係問有冇留低。"
+    },
+    {
+      "prompt": "You shouldn't use harsh chemicals. 係叫你？",
+      "choices": [
+        "唔應該用化學劑",
+        "應該用水浸",
+        "應該刻字"
+      ],
+      "answer": 0,
+      "explain": "shouldn't 係唔應該。"
+    },
+    {
+      "prompt": "within the return window 係？",
+      "choices": [
+        "喺退換期之內",
+        "過咗一年",
+        "而家即刻"
+      ],
+      "answer": 0,
+      "explain": "within 係一段時間之內。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Have you ___ the original receipt for this warranty claim at home?",
+      "example": "Have you kept the original receipt for this warranty claim at home?",
+      "glossYue": "你有冇⋯⋯原本張收據？",
+      "answer": "kept",
+      "choices": [
+        "kept",
+        "taxi",
+        "meter"
+      ]
+    },
+    {
+      "pattern": "You should ___ water and harsh chemicals when you clean a soft polish at home.",
+      "example": "You should avoid water and harsh chemicals when you clean a soft polish at home.",
+      "glossYue": "你應該⋯⋯水同化學劑。",
+      "answer": "avoid",
+      "choices": [
+        "avoid",
+        "engrave",
+        "refund"
+      ]
+    },
+    {
+      "pattern": "The written ___ allows one repair within the year if you kept the receipt.",
+      "example": "The written policy allows one repair within the year if you kept the receipt.",
+      "glossYue": "書面⋯⋯容許一年修一次。",
+      "answer": "policy",
+      "choices": [
+        "policy",
+        "taxi",
+        "wallet"
+      ]
+    },
+    {
+      "pattern": "Please file the ___ within the return window if the scratch is still there.",
+      "example": "Please file the claim within the return window if the scratch is still there.",
+      "glossYue": "刮痕仲喺就喺退換期內交⋯⋯。",
+      "answer": "claim",
+      "choices": [
+        "claim",
+        "blanket",
+        "towel"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "j8-l5",
+    "hint": "The written policy allows one repair within the year if you have kept the receipt."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "客人話有刮痕。你點講保養？",
+      "choices": [
+        "You should avoid water and any harsh chemicals, and please use only the soft polish.",
+        "The taxi is here, and traffic is slow.",
+        "I have lost my wallet."
+      ],
+      "answer": 0,
+      "explain": "先講應該避開水同化學劑。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "You",
+        "should",
+        "avoid",
+        "harsh",
+        "chemicals"
+      ],
+      "answer": [
+        "You",
+        "should",
+        "avoid",
+        "harsh",
+        "chemicals"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "mei",
+    "intro": "Tom 話有刮痕。等佢講完先答。可以講：You should avoid。",
+    "turns": [
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "I have kept the receipt, but a small scratch showed up within the first week.",
+        "audio": "assets/audio/lines/j8-l2.mp3",
+        "audioSlow": "assets/audio/lines/j8-l2-slow.mp3",
+        "expect": "You should avoid water and any harsh chemicals, and please use only the soft polish.",
+        "keywords": [
+          "avoid",
+          "polish"
+        ],
+        "modelAudio": "assets/audio/lines/j8-l3.mp3",
+        "modelSlow": "assets/audio/lines/j8-l3-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Does the guarantee cover this new scratch, or should I file a claim within the week?",
+        "audio": "assets/audio/lines/j8-l4.mp3",
+        "audioSlow": "assets/audio/lines/j8-l4-slow.mp3",
+        "expect": "The written policy allows one repair within the year if you have kept the receipt.",
+        "keywords": [
+          "policy",
+          "receipt"
+        ],
+        "modelAudio": "assets/audio/lines/j8-l5.mp3",
+        "modelSlow": "assets/audio/lines/j8-l5-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "I will avoid harsh chemicals at home and come back later if the polish fails.",
+        "audio": "assets/audio/lines/j8-l6.mp3",
+        "audioSlow": "assets/audio/lines/j8-l6-slow.mp3",
+        "expect": "Please keep that receipt safe, and you should file any new claim within the return window.",
+        "keywords": [
+          "claim",
+          "return"
+        ],
+        "modelAudio": "assets/audio/lines/j8-l7.mp3",
+        "modelSlow": "assets/audio/lines/j8-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen to the clip once, then choose the word you heard for the written care promise on this piece.",
+      "lemma": "warranty-noun",
+      "choices": [
+        "warranty",
+        "guarantee",
+        "scratch"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen to the clip once, then choose the word you heard for the shop rules about a repair.",
+      "lemma": "policy-noun",
+      "choices": [
+        "policy",
+        "claim",
+        "polish"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "When Mei says the written policy allows one repair, what does policy mean here?",
+      "choices": [
+        "政策",
+        "刮痕",
+        "毛巾"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "When Tom says a small scratch showed up, what does scratch mean here?",
+      "choices": [
+        "刮痕",
+        "退款",
+        "冷氣"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which of these care words contains the /l/ sound: polish, warranty, or guarantee?",
+      "choices": [
+        "polish",
+        "warranty",
+        "guarantee"
+      ],
+      "answer": 0,
+      "explain": "polish 有 /l/。warranty 同 guarantee 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "擦亮入面嗰個音",
+    "note": "polish 有 /l/。舌尖抵住上顎後面。warranty 同 guarantee 冇 /l/。",
+    "pairs": [
+      {
+        "a": "polish-noun",
+        "b": "warranty-noun"
+      },
+      {
+        "a": "policy-noun",
+        "b": "guarantee-noun"
+      }
+    ],
+    "drill": [
+      "polish-noun",
+      "warranty-noun",
+      "claim-noun",
+      "scratch-noun",
+      "avoid-verb"
+    ]
+  },
+  "next": "J9"
+}

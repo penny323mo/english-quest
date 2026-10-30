@@ -3,7 +3,7 @@
   "unit": "T",
   "titleYue": "安檢同方向",
   "titleEn": "Security and directions",
-  "canDoYue": "你能夠過安檢同問閘口點行。",
+  "canDoYue": "你識過安檢，仲識問閘口點行。",
   "canDoEn": "Clear security and ask which way to the gate.",
   "minutes": 12,
   "hero": "assets/art/lessons/t2.webp",
@@ -56,11 +56,11 @@
       "id": "t2-l3",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Please put your liquids in the bin, and take the laptop out.",
+      "text": "Please put your liquids in the tray, and take the laptop out.",
       "glossYue": "唔該將液體放喺個盤度，電腦都攞出嚟。",
       "audio": "assets/audio/lines/t2-l3.mp3",
       "audioSlow": "assets/audio/lines/t2-l3-slow.mp3",
-      "say": "Please put your liquids in the bin, and take the laptop out.",
+      "say": "Please put your liquids in the tray, and take the laptop out.",
       "hideGloss": true
     },
     {
@@ -88,14 +88,14 @@
   ],
   "understand": [
     {
-      "prompt": "Please put your liquids in the bin. 係叫你？",
+      "prompt": "Please put your liquids in the tray. 係叫你？",
       "choices": [
         "將液體放喺個盤",
         "叫雞",
         "訂位"
       ],
       "answer": 0,
-      "explain": "bin 係安檢用嘅膠盤。"
+      "explain": "tray 係安檢用嘅膠盤。"
     },
     {
       "prompt": "Which way to the gate? 係問咩？",
@@ -121,11 +121,11 @@
   "chunks": [
     {
       "pattern": "Please put the liquids in the ___ before you walk through security.",
-      "example": "Please put the liquids in the bin before you walk through security.",
+      "example": "Please put the liquids in the tray before you walk through security.",
       "glossYue": "將液體放喺個⋯⋯度。",
-      "answer": "bin",
+      "answer": "tray",
       "choices": [
-        "bin",
+        "tray",
         "menu",
         "ring"
       ]
@@ -215,7 +215,7 @@
       {
         "partner": "Kai",
         "partnerId": "kai",
-        "line": "Please put your liquids in the bin.",
+        "line": "Please put your liquids in the tray.",
         "audio": "assets/audio/lines/t2-l3.mp3",
         "audioSlow": "assets/audio/lines/t2-l3-slow.mp3",
         "expect": "Here is my laptop.",
@@ -266,7 +266,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"bin\", what does that word or phrase mean here?",
+      "prompt": "When a guest says \"tray\", what does that word or phrase mean here?",
       "choices": [
         "膠盤",
         "餐牌",
