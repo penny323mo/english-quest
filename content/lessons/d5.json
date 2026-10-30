@@ -31,91 +31,96 @@
       "id": "d5-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I would like to send this small parcel by airmail to Macau.",
-      "glossYue": "我想用空郵寄呢個細包裹去澳門。",
+      "text": "I would like to send this small parcel by airmail.",
+      "glossYue": "我想用空郵寄呢個細包裹。",
       "audio": "assets/audio/lines/d5-l1.mp3",
       "audioSlow": "assets/audio/lines/d5-l1-slow.mp3",
-      "say": "I would like to send this small parcel by airmail to Macau."
+      "say": "I would like to send this small parcel by airmail.",
+      "hideGloss": false
     },
     {
       "id": "d5-l2",
       "speaker": "cole",
       "speakerLabel": "Cole",
-      "text": "How long will this heavy parcel take to reach that destination?",
-      "glossYue": "呢個重包裹去到目的地要幾耐？",
+      "text": "Please fill in the customs form and declare every item.",
+      "glossYue": "請填報關表，並且申報每件物品。",
       "audio": "assets/audio/lines/d5-l2.mp3",
       "audioSlow": "assets/audio/lines/d5-l2-slow.mp3",
-      "say": "How long will this heavy parcel take to reach that destination?"
+      "say": "Please fill in the customs form and declare every item.",
+      "hideGloss": false
     },
     {
       "id": "d5-l3",
-      "speaker": "cole",
-      "speakerLabel": "Cole",
-      "text": "Please fill in the full customs form and then declare every item.",
-      "glossYue": "請填完整張海關表格，然後逐項申報。",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "How long will this small parcel take to reach the destination?",
+      "glossYue": "呢個細包裹要幾耐先到目的地？",
       "audio": "assets/audio/lines/d5-l3.mp3",
       "audioSlow": "assets/audio/lines/d5-l3-slow.mp3",
-      "say": "Please fill in the full customs form and then declare every item."
+      "say": "How long will this small parcel take to reach the destination?",
+      "hideGloss": false
     },
     {
       "id": "d5-l4",
       "speaker": "cole",
       "speakerLabel": "Cole",
-      "text": "This parcel is fragile, so please mark the full weight clearly.",
-      "glossYue": "呢個包裹易碎，請清楚標明全部重量。",
+      "text": "It will take five days, and we need your signature here.",
+      "glossYue": "要五日，我哋需要你喺呢度簽名。",
       "audio": "assets/audio/lines/d5-l4.mp3",
       "audioSlow": "assets/audio/lines/d5-l4-slow.mp3",
-      "say": "This parcel is fragile, so please mark the full weight clearly."
+      "say": "It will take five days, and we need your signature here.",
+      "hideGloss": false
     },
     {
       "id": "d5-l5",
-      "speaker": "cole",
-      "speakerLabel": "Cole",
-      "text": "Your tracking number is printed clearly on this paper receipt.",
-      "glossYue": "你嘅追蹤號碼清楚印喺呢張收據上面。",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "This parcel is fragile, so please mark it as fragile.",
+      "glossYue": "呢個包裹易碎，請註明易碎。",
       "audio": "assets/audio/lines/d5-l5.mp3",
       "audioSlow": "assets/audio/lines/d5-l5-slow.mp3",
-      "say": "Your tracking number is printed clearly on this paper receipt."
+      "say": "This parcel is fragile, so please mark it as fragile.",
+      "hideGloss": false
     },
     {
       "id": "d5-l6",
       "speaker": "cole",
       "speakerLabel": "Cole",
-      "text": "It will take five days, and we need your signature here.",
-      "glossYue": "要五日，我哋需要你喺呢度簽名。",
+      "text": "Please mark the full weight on the form before we send it.",
+      "glossYue": "寄出之前請喺表格寫明全部重量。",
       "audio": "assets/audio/lines/d5-l6.mp3",
       "audioSlow": "assets/audio/lines/d5-l6-slow.mp3",
-      "say": "It will take five days, and we need your signature here.",
+      "say": "Please mark the full weight on the form before we send it.",
       "hideGloss": true
     },
     {
       "id": "d5-l7",
-      "speaker": "cole",
-      "speakerLabel": "Cole",
-      "text": "Please put one stamp on the parcel before we send it out.",
-      "glossYue": "寄出之前請喺包裹上面貼一張郵票。",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "May I keep this receipt until the parcel reaches my home?",
+      "glossYue": "包裹送到我家之前，我可唔可以留住收據？",
       "audio": "assets/audio/lines/d5-l7.mp3",
       "audioSlow": "assets/audio/lines/d5-l7-slow.mp3",
-      "say": "Please put one stamp on the parcel before we send it out.",
+      "say": "May I keep this receipt until the parcel reaches my home?",
       "hideGloss": true
     },
     {
       "id": "d5-l8",
-      "speaker": "tom",
-      "speakerLabel": "Tom",
-      "text": "Please keep this receipt until the parcel reaches your home safely.",
-      "glossYue": "請保存呢張收據，直到包裹安全送到你屋企。",
+      "speaker": "cole",
+      "speakerLabel": "Cole",
+      "text": "Your tracking number is on the receipt, so please add one postage stamp.",
+      "glossYue": "追蹤號碼喺收據上面，請貼一張郵票。",
       "audio": "assets/audio/lines/d5-l8.mp3",
       "audioSlow": "assets/audio/lines/d5-l8-slow.mp3",
-      "say": "Please keep this receipt until the parcel reaches your home safely.",
+      "say": "Your tracking number is on the receipt, so please add one postage stamp.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "I would like to send this small parcel by airmail to Macau. 呢句即係點？",
+      "prompt": "I would like to send this small parcel by airmail. 呢句即係點？",
       "choices": [
-        "我想空郵寄細包裹去澳門",
+        "我想用空郵寄呢個細包裹",
         "我想買電話卡",
         "我通常早起身"
       ],
@@ -123,7 +128,7 @@
       "explain": "parcel 係包裹。airmail 係空郵。"
     },
     {
-      "prompt": "How long will this heavy parcel take to reach that destination? 即係問緊咩？",
+      "prompt": "How long will this small parcel take to reach the destination? 即係問緊咩？",
       "choices": [
         "去到目的地要幾耐",
         "邊個計劃平啲",
@@ -133,14 +138,14 @@
       "explain": "how long 係問要幾耐。destination 係目的地。"
     },
     {
-      "prompt": "Your tracking number is printed clearly on this paper receipt. 呢句即係點？",
+      "prompt": "This parcel is fragile, so please mark it as fragile. 呢句即係點？",
       "choices": [
-        "追蹤號碼印喺收據上",
+        "呢個包裹易碎，請註明易碎",
         "請喺度簽名",
         "無限計劃平啲"
       ],
       "answer": 0,
-      "explain": "tracking number 係追蹤編號。receipt 係收據。"
+      "explain": "fragile 係易碎。"
     }
   ],
   "chunks": [
@@ -191,14 +196,14 @@
   ],
   "shadow": {
     "lineId": "d5-l1",
-    "hint": "I would like to send this small parcel by airmail to Macau."
+    "hint": "I would like to send this small parcel by airmail."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "Cole 問你要寄去邊。你點先講？",
       "choices": [
-        "I would like to send this small parcel by airmail to Macau.",
+        "I would like to send this small parcel by airmail.",
         "I'll take the cheaper prepaid plan for this short trip.",
         "The shop is always open before our lunch."
       ],
@@ -229,10 +234,10 @@
       {
         "partner": "Cole",
         "partnerId": "cole",
-        "line": "How long will this heavy parcel take to reach that destination?",
+        "line": "Please fill in the customs form and declare every item.",
         "audio": "assets/audio/lines/d5-l2.mp3",
         "audioSlow": "assets/audio/lines/d5-l2-slow.mp3",
-        "expect": "I would like to send this small parcel by airmail to Macau.",
+        "expect": "I would like to send this small parcel by airmail.",
         "keywords": [
           "parcel",
           "airmail"
@@ -243,23 +248,23 @@
       {
         "partner": "Cole",
         "partnerId": "cole",
-        "line": "This parcel is fragile, so please mark the full weight clearly.",
-        "audio": "assets/audio/lines/d5-l4.mp3",
-        "audioSlow": "assets/audio/lines/d5-l4-slow.mp3",
-        "expect": "Please keep this receipt until the parcel reaches your home safely.",
+        "line": "Please mark the full weight on the form before we send it.",
+        "audio": "assets/audio/lines/d5-l6.mp3",
+        "audioSlow": "assets/audio/lines/d5-l6-slow.mp3",
+        "expect": "This parcel is fragile, so please mark it as fragile.",
         "keywords": [
-          "receipt",
+          "fragile",
           "parcel"
         ],
-        "modelAudio": "assets/audio/lines/d5-l8.mp3",
-        "modelSlow": "assets/audio/lines/d5-l8-slow.mp3"
+        "modelAudio": "assets/audio/lines/d5-l5.mp3",
+        "modelSlow": "assets/audio/lines/d5-l5-slow.mp3"
       },
       {
         "partner": "Cole",
         "partnerId": "cole",
-        "line": "Your tracking number is printed clearly on this paper receipt.",
-        "audio": "assets/audio/lines/d5-l5.mp3",
-        "audioSlow": "assets/audio/lines/d5-l5-slow.mp3",
+        "line": "It will take five days, and we need your signature here.",
+        "audio": "assets/audio/lines/d5-l4.mp3",
+        "audioSlow": "assets/audio/lines/d5-l4-slow.mp3",
         "expect": "I can sign here and keep the receipt.",
         "keywords": [
           "sign",

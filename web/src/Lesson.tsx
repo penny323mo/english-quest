@@ -167,7 +167,7 @@ function Player({ lesson }: { lesson: Lesson }) {
 
   return (
     <div className="lesson">
-      <div className={heroPath ? "hero" : "hero plain"}>
+      <div className={heroPath ? "hero" : "hero plain"} data-beat={beat}>
         {heroPath ? <ArtImg src={asset(heroPath)} alt="" width={900} height={1200} fill /> : null}
       </div>
       <div className="lesson-top">
@@ -179,7 +179,7 @@ function Player({ lesson }: { lesson: Lesson }) {
         </div>
         <span className="beat-name">{BEATS[shownBeat]}</span>
       </div>
-      <div className="sheet" ref={sheetRef}>
+      <div className="sheet" data-beat={beat} ref={sheetRef}>
         {gate === "ask" && cursor?.lessonId === lesson.id ? (
           <>
             <p className="who">未完成</p>
@@ -370,7 +370,8 @@ function Choices({
                 playSfx(i === answer ? "correct" : "wrong");
               }}
             >
-              {choice}
+              <span className="choice-letter">{String.fromCharCode(65 + i)}</span>
+              <span>{choice}</span>
             </button>
           );
         })}
@@ -661,7 +662,7 @@ function Recap({ lesson, score, answered, onNext }: { lesson: Lesson; score: num
         <span /><span /><span /><span /><span />
       </div>
       <img className="mascot cheer" src={asset("assets/art/mascot-cheer.webp")} alt="小燈" width={96} height={96} />
-      <p className="who">放低今日</p>
+      <p className="who">搞掂</p>
       <h2>{lesson.canDoYue}</h2>
       <p className="lede">{tally}。答錯唔會扣任何嘢，生字已經排咗入練習。</p>
       <div className="pills recap-pills">
@@ -694,7 +695,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪四十五課你行完啦。到期嘅卡會喺練習等你。</p>
+        <p className="lede">呢輪四十八課你行完啦。到期嘅卡會喺練習等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );

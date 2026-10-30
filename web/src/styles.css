@@ -425,7 +425,31 @@ a { color: inherit; }
   pointer-events: none;
 }
 .hero .art-ph::before { content: none; }
-.hero .art-ph img { opacity: 1; object-position: center 28%; }
+.hero .art-ph img {
+  opacity: 1;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: auto;
+  height: 92%;
+  max-width: none;
+  transform: translate(-50%, -14%);
+  object-fit: cover;
+  object-position: center 42%;
+}
+/* Hear lists fill the sheet, so the portrait must sit entirely in the band above it. */
+.hero[data-beat="2"] .art-ph img {
+  top: 44px;
+  width: auto;
+  height: calc(44% - 52px);
+  max-width: 96%;
+  transform: translate(-50%, 0);
+  object-fit: contain;
+  object-position: center center;
+}
+.sheet[data-beat="2"] {
+  max-height: min(56%, calc(100% - 96px));
+}
 .stem { display: flex; flex-direction: column; gap: 4px; }
 .stem-yue { margin: 0; color: var(--teal-deep); font-weight: 800; font-size: 0.95rem; }
 .stem h2 { font-family: var(--sans); font-weight: 800; font-size: 1.28rem; }
@@ -486,7 +510,20 @@ a { color: inherit; }
   gap: 10px;
 }
 .sheet h2 { font-size: 1.55rem; line-height: 1.15; }
-.line { font-family: var(--serif); font-size: 1.28rem; line-height: 1.35; }
+.line { font-family: var(--sans); font-weight: 800; font-size: 1.28rem; line-height: 1.35; }
+.choice-letter {
+  flex: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  display: inline-grid;
+  place-items: center;
+  font-family: var(--sans);
+  font-weight: 800;
+  background: var(--sand);
+  color: var(--teal-deep);
+}
+.stack > .choice { display: flex; align-items: center; gap: 10px; }
 .gloss { color: var(--paper-dim); }
 .who { color: var(--gold); letter-spacing: 0.08em; font-size: 0.78rem; }
 .kword { color: rgba(244, 237, 228, 0.55); }

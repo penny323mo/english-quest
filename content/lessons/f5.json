@@ -8,7 +8,8 @@
   "minutes": 12,
   "hero": "assets/art/lessons/f5.webp",
   "cast": [
-    "mei"
+    "mei",
+    "ling"
   ],
   "cefr": "A1",
   "lemmas": [
@@ -32,83 +33,83 @@
       "id": "f5-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Hello. I am Mei, and I live here.",
-      "glossYue": "你好。我係 Mei，我住喺呢度。",
+      "text": "Where are you from?",
+      "glossYue": "你來自邊度？",
       "audio": "assets/audio/lines/f5-l1.mp3",
       "audioSlow": "assets/audio/lines/f5-l1-slow.mp3",
-      "say": "Hello. I am Mei, and I [[lˈɪv]] here."
+      "say": "Where are you from?"
     },
     {
       "id": "f5-l2",
       "speaker": "ling",
       "speakerLabel": "Ling",
-      "text": "I am from Hong Kong, and not from Macau.",
-      "glossYue": "我來自香港，唔係來自澳門。",
+      "text": "I am from Hong Kong, and I live here.",
+      "glossYue": "我來自香港，我住喺呢度。",
       "audio": "assets/audio/lines/f5-l2.mp3",
       "audioSlow": "assets/audio/lines/f5-l2-slow.mp3",
-      "say": "I am from Hong Kong, and not from Macau."
+      "say": "I am from Hong Kong, and I live here."
     },
     {
       "id": "f5-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "I work here as a salesperson.",
-      "glossYue": "我喺呢度做售貨員。",
+      "text": "What is your phone number?",
+      "glossYue": "你電話號碼係幾多？",
       "audio": "assets/audio/lines/f5-l3.mp3",
       "audioSlow": "assets/audio/lines/f5-l3-slow.mp3",
-      "say": "I work here as a salesperson."
+      "say": "What is your phone number?"
     },
     {
       "id": "f5-l4",
       "speaker": "ling",
       "speakerLabel": "Ling",
-      "text": "My phone number and email are ready.",
-      "glossYue": "我嘅電話號碼同電郵都準備好。",
+      "text": "My number is five five one two, and my email is ling at shop.",
+      "glossYue": "我號碼係五五一二，電郵係 ling at shop。",
       "audio": "assets/audio/lines/f5-l4.mp3",
       "audioSlow": "assets/audio/lines/f5-l4-slow.mp3",
-      "say": "My phone number and email are ready."
+      "say": "My number is five five one two, and my email is ling at shop."
     },
     {
       "id": "f5-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Please spell my name again for me.",
-      "glossYue": "請再幫我串一次我個名。",
+      "text": "Could you spell your name?",
+      "glossYue": "可唔可以串一次你個名？",
       "audio": "assets/audio/lines/f5-l5.mp3",
       "audioSlow": "assets/audio/lines/f5-l5-slow.mp3",
-      "say": "Please spell my name again for me."
+      "say": "Could you spell your name?"
     }
   ],
   "understand": [
     {
-      "prompt": "Hello. I am Mei, and I live here. 呢句即係點？",
+      "prompt": "Where are you from? 即係問緊咩？",
       "choices": [
-        "我係 Mei，住喺呢度",
+        "你來自邊度？",
         "我要寄包裹",
         "而家幾點"
       ],
       "answer": 0,
-      "explain": "live 係住。from 先至係來自邊。"
+      "explain": "Where are you from 係問你來自邊度。"
     },
     {
-      "prompt": "I am from Hong Kong, and not from Macau. 呢句即係點？",
+      "prompt": "I am from Hong Kong, and I live here. 呢句即係點？",
       "choices": [
-        "來自香港，唔係澳門",
+        "我來自香港，住喺呢度",
         "我係售貨員",
         "請再講一次"
       ],
       "answer": 0,
-      "explain": "from 係來自。Hong Kong 係香港，Macau 係澳門。"
+      "explain": "from 係來自。live 係住。"
     },
     {
-      "prompt": "My phone number and email are ready. 呢句即係點？",
+      "prompt": "My number is five five one two, and my email is ling at shop. 呢句即係點？",
       "choices": [
-        "電話同電郵都準備好",
+        "號碼係五五一二，電郵係 ling at shop",
         "我想食午餐",
         "舖頭已經關門"
       ],
       "answer": 0,
-      "explain": "phone number 係電話號碼。email 係電郵。"
+      "explain": "number 係號碼。email 係電郵。"
     }
   ],
   "chunks": [
@@ -159,14 +160,14 @@
   ],
   "shadow": {
     "lineId": "f5-l2",
-    "hint": "I am from Hong Kong, and not from Macau."
+    "hint": "I am from Hong Kong, and I live here."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "Mei 問你來自邊。你點答？",
       "choices": [
-        "I am from Hong Kong, and not from Macau.",
+        "I am from Hong Kong, and I live here.",
         "It is ten dollars.",
         "Good night."
       ],
@@ -197,10 +198,10 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "Hello. I am Mei, and I live here.",
+        "line": "Where are you from?",
         "audio": "assets/audio/lines/f5-l1.mp3",
         "audioSlow": "assets/audio/lines/f5-l1-slow.mp3",
-        "expect": "I am from Hong Kong, and not from Macau.",
+        "expect": "I am from Hong Kong, and I live here.",
         "keywords": [
           "from",
           "Hong"
@@ -211,12 +212,12 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "I work here as a salesperson.",
+        "line": "What is your phone number?",
         "audio": "assets/audio/lines/f5-l3.mp3",
         "audioSlow": "assets/audio/lines/f5-l3-slow.mp3",
-        "expect": "My phone number and email are ready.",
+        "expect": "My number is five five one two, and my email is ling at shop.",
         "keywords": [
-          "phone",
+          "number",
           "email"
         ],
         "modelAudio": "assets/audio/lines/f5-l4.mp3",
@@ -225,13 +226,13 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "Please spell my name again for me.",
+        "line": "Could you spell your name?",
         "audio": "assets/audio/lines/f5-l5.mp3",
         "audioSlow": "assets/audio/lines/f5-l5-slow.mp3",
-        "expect": "I live in Macau, and I work as a salesperson.",
+        "expect": "My name is Ling. L I N G.",
         "keywords": [
-          "live",
-          "Macau"
+          "name",
+          "Ling"
         ],
         "modelAudio": "assets/audio/lines/f5-m3.mp3",
         "modelSlow": "assets/audio/lines/f5-m3-slow.mp3"
@@ -295,7 +296,7 @@
       "type": "choice",
       "prompt": "邊句係講自己住邊？",
       "choices": [
-        "Hello. I am Mei, and I live here.",
+        "Where are you from?",
         "We always close the shop.",
         "How much is this?"
       ],

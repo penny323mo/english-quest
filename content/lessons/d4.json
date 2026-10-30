@@ -31,99 +31,94 @@
       "id": "d4-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Hello. I need a new SIM card and a bigger data plan.",
-      "glossYue": "你好。我需要一張新電話卡，同埋大啲嘅數據計劃。",
+      "text": "Hello. Which phone plan is better for a short city trip?",
+      "glossYue": "你好。邊個電話計劃適合市區短途？",
       "audio": "assets/audio/lines/d4-l1.mp3",
       "audioSlow": "assets/audio/lines/d4-l1-slow.mp3",
-      "say": "Hello. I need a new SIM card and a bigger data plan."
+      "say": "Hello. Which phone plan is better for a short city trip?",
+      "hideGloss": false
     },
     {
       "id": "d4-l2",
       "speaker": "mina",
       "speakerLabel": "Mina",
-      "text": "Which phone plan is better for a short city trip?",
-      "glossYue": "邊個電話計劃適合市區短途？",
+      "text": "The prepaid plan is much cheaper, and the coverage is enough.",
+      "glossYue": "預繳計劃平好多，覆蓋都夠。",
       "audio": "assets/audio/lines/d4-l2.mp3",
       "audioSlow": "assets/audio/lines/d4-l2-slow.mp3",
-      "say": "Which phone plan is better for a short city trip?"
+      "say": "The prepaid plan is much cheaper, and the coverage is enough.",
+      "hideGloss": false
     },
     {
       "id": "d4-l3",
-      "speaker": "mina",
-      "speakerLabel": "Mina",
-      "text": "The prepaid plan is much cheaper, and the coverage is enough.",
-      "glossYue": "預繳計劃平好多，覆蓋都夠。",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I'll take the prepaid one, and I do not need unlimited data.",
+      "glossYue": "我要預繳嗰個，唔使無限數據。",
       "audio": "assets/audio/lines/d4-l3.mp3",
       "audioSlow": "assets/audio/lines/d4-l3-slow.mp3",
-      "say": "The prepaid plan is much cheaper, and the coverage is enough."
+      "say": "I'll take the prepaid one, and I do not need unlimited data.",
+      "hideGloss": false
     },
     {
       "id": "d4-l4",
-      "speaker": "tom",
-      "speakerLabel": "Tom",
-      "text": "I'll take the city data option for this short trip.",
-      "glossYue": "呢次短途我揀市區數據嗰個選擇。",
-      "audio": "assets/audio/lines/d4-l4.mp3",
-      "audioSlow": "assets/audio/lines/d4-l4-slow.mp3",
-      "say": "I'll take the city data option for this short trip."
-    },
-    {
-      "id": "d4-l5",
       "speaker": "mina",
       "speakerLabel": "Mina",
       "text": "Please activate the new SIM card with your valid passport.",
       "glossYue": "請用你本有效護照開通呢張新電話卡。",
+      "audio": "assets/audio/lines/d4-l4.mp3",
+      "audioSlow": "assets/audio/lines/d4-l4-slow.mp3",
+      "say": "Please activate the new SIM card with your valid passport.",
+      "hideGloss": false
+    },
+    {
+      "id": "d4-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Is the unlimited plan locked on a long mobile contract?",
+      "glossYue": "無限計劃係咪綁一份長手機合約？",
       "audio": "assets/audio/lines/d4-l5.mp3",
       "audioSlow": "assets/audio/lines/d4-l5-slow.mp3",
-      "say": "Please activate the new SIM card with your valid passport."
+      "say": "Is the unlimited plan locked on a long mobile [[ˈkɑntɹækt]]?",
+      "hideGloss": false
     },
     {
       "id": "d4-l6",
-      "speaker": "tom",
-      "speakerLabel": "Tom",
-      "text": "Is the unlimited plan locked on a long phone contract?",
-      "glossYue": "無限計劃係咪綁一份長電話合約？",
+      "speaker": "mina",
+      "speakerLabel": "Mina",
+      "text": "A small top-up is enough if your data stays low.",
+      "glossYue": "數據用得少，少少增值就夠。",
       "audio": "assets/audio/lines/d4-l6.mp3",
       "audioSlow": "assets/audio/lines/d4-l6-slow.mp3",
-      "say": "Is the unlimited plan locked on a long phone [[ˈkɑntɹækt]]?",
+      "say": "A small top-up is enough if your data stays low.",
       "hideGloss": true
     },
     {
       "id": "d4-l7",
-      "speaker": "mina",
-      "speakerLabel": "Mina",
-      "text": "A small top-up is enough if the data stays low.",
-      "glossYue": "數據用得少，少少增值就夠。",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I will pay for this prepaid SIM card here.",
+      "glossYue": "我喺呢度畀錢買呢張預繳電話卡。",
       "audio": "assets/audio/lines/d4-l7.mp3",
       "audioSlow": "assets/audio/lines/d4-l7-slow.mp3",
-      "say": "A small top-up is enough if the data stays low.",
+      "say": "I will pay for this prepaid SIM card here.",
       "hideGloss": true
     },
     {
       "id": "d4-l8",
-      "speaker": "tom",
-      "speakerLabel": "Tom",
-      "text": "I will pay for this city data option here.",
-      "glossYue": "我喺呢度畀錢買市區數據嗰個選擇。",
+      "speaker": "mina",
+      "speakerLabel": "Mina",
+      "text": "The coverage on this SIM is enough for the city.",
+      "glossYue": "呢張卡嘅覆蓋夠市區用。",
       "audio": "assets/audio/lines/d4-l8.mp3",
       "audioSlow": "assets/audio/lines/d4-l8-slow.mp3",
-      "say": "I will pay for this city data option here.",
+      "say": "The coverage on this SIM is enough for the city.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Hello. I need a new SIM card and a bigger data plan. 呢句即係點？",
-      "choices": [
-        "要一張新電話卡同大啲數據",
-        "要寄一個包裹",
-        "要講自己幾時起身"
-      ],
-      "answer": 0,
-      "explain": "SIM 係電話卡。data plan 係數據計劃。"
-    },
-    {
-      "prompt": "Which phone plan is better for a short city trip? 即係問緊咩？",
+      "prompt": "Hello. Which phone plan is better for a short city trip? 即係問緊咩？",
       "choices": [
         "邊個計劃適合短途",
         "包裹幾重",
@@ -133,14 +128,24 @@
       "explain": "which plan 係問邊個計劃好啲。"
     },
     {
-      "prompt": "I'll take the city data option for this short trip. 呢句即係點？",
+      "prompt": "The prepaid plan is much cheaper, and the coverage is enough. 呢句即係點？",
       "choices": [
-        "我要平啲嘅預繳計劃",
+        "預繳計劃平好多，覆蓋都夠",
         "我要一份長約",
         "請幫我串個名"
       ],
       "answer": 0,
-      "explain": "I'll take 係我要呢個。prepaid 係預繳。"
+      "explain": "prepaid 係預繳。coverage 係覆蓋。"
+    },
+    {
+      "prompt": "I'll take the prepaid one, and I do not need unlimited data. 呢句即係點？",
+      "choices": [
+        "我要預繳，唔使無限數據",
+        "我要一份長約",
+        "請用護照開通"
+      ],
+      "answer": 0,
+      "explain": "I'll take 係我要呢個。unlimited 係無限。"
     }
   ],
   "chunks": [
@@ -191,14 +196,14 @@
   ],
   "shadow": {
     "lineId": "d4-l4",
-    "hint": "I'll take the city data option for this short trip."
+    "hint": "Please activate the new SIM card with your valid passport."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "Mina 問你要邊個計劃。你點答？",
       "choices": [
-        "I'll take the city data option for this short trip.",
+        "Please activate the new SIM card with your valid passport.",
         "I usually wake up early, and then I start my long shift.",
         "How much is this?"
       ],
@@ -231,44 +236,44 @@
       {
         "partner": "Mina",
         "partnerId": "mina",
-        "line": "Which phone plan is better for a short city trip?",
+        "line": "The prepaid plan is much cheaper, and the coverage is enough.",
         "audio": "assets/audio/lines/d4-l2.mp3",
         "audioSlow": "assets/audio/lines/d4-l2-slow.mp3",
-        "expect": "I'll take the city data option for this short trip.",
+        "expect": "I'll take the prepaid one, and I do not need unlimited data.",
         "keywords": [
           "prepaid",
-          "plan"
+          "unlimited"
         ],
-        "modelAudio": "assets/audio/lines/d4-l4.mp3",
-        "modelSlow": "assets/audio/lines/d4-l4-slow.mp3"
-      },
-      {
-        "partner": "Mina",
-        "partnerId": "mina",
-        "line": "The prepaid plan is much cheaper, and the coverage is enough.",
-        "audio": "assets/audio/lines/d4-l3.mp3",
-        "audioSlow": "assets/audio/lines/d4-l3-slow.mp3",
-        "expect": "Is the unlimited plan locked on a long phone contract?",
-        "keywords": [
-          "unlimited",
-          "contract"
-        ],
-        "modelAudio": "assets/audio/lines/d4-l6.mp3",
-        "modelSlow": "assets/audio/lines/d4-l6-slow.mp3"
+        "modelAudio": "assets/audio/lines/d4-l3.mp3",
+        "modelSlow": "assets/audio/lines/d4-l3-slow.mp3"
       },
       {
         "partner": "Mina",
         "partnerId": "mina",
         "line": "Please activate the new SIM card with your valid passport.",
-        "audio": "assets/audio/lines/d4-l5.mp3",
-        "audioSlow": "assets/audio/lines/d4-l5-slow.mp3",
-        "expect": "I will pay for this city data option here.",
+        "audio": "assets/audio/lines/d4-l4.mp3",
+        "audioSlow": "assets/audio/lines/d4-l4-slow.mp3",
+        "expect": "Is the unlimited plan locked on a long mobile contract?",
+        "keywords": [
+          "unlimited",
+          "contract"
+        ],
+        "modelAudio": "assets/audio/lines/d4-l5.mp3",
+        "modelSlow": "assets/audio/lines/d4-l5-slow.mp3"
+      },
+      {
+        "partner": "Mina",
+        "partnerId": "mina",
+        "line": "A small top-up is enough if your data stays low.",
+        "audio": "assets/audio/lines/d4-l6.mp3",
+        "audioSlow": "assets/audio/lines/d4-l6-slow.mp3",
+        "expect": "I will pay for this prepaid SIM card here.",
         "keywords": [
           "pay",
-          "plan"
+          "prepaid"
         ],
-        "modelAudio": "assets/audio/lines/d4-l8.mp3",
-        "modelSlow": "assets/audio/lines/d4-l8-slow.mp3"
+        "modelAudio": "assets/audio/lines/d4-l7.mp3",
+        "modelSlow": "assets/audio/lines/d4-l7-slow.mp3"
       }
     ]
   },

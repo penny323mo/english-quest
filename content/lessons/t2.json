@@ -34,12 +34,11 @@
       "id": "t2-l1",
       "speaker": "sam",
       "speakerLabel": "Sam",
-      "text": "Boarding pass, please, and please have your passport ready.",
-      "glossYue": "登機證唔該，護照都預備好。",
+      "text": "Boarding pass, please, and please have your passport ready right here.",
+      "glossYue": "登機證，請準備好護照。",
       "audio": "assets/audio/lines/t2-l1.mp3",
       "audioSlow": "assets/audio/lines/t2-l1-slow.mp3",
-      "say": "Boarding pass, please, and please have your passport ready.",
-      "hideGloss": false
+      "say": "Boarding pass, please, and please have your passport ready right here."
     },
     {
       "id": "t2-l2",
@@ -56,11 +55,11 @@
       "id": "t2-l3",
       "speaker": "sam",
       "speakerLabel": "Sam",
-      "text": "Please put your liquids in the tray, and take the laptop out.",
-      "glossYue": "唔該將液體放喺個盤度，電腦都攞出嚟。",
+      "text": "Please put your liquids in the tray now, and take the laptop out.",
+      "glossYue": "請而家把液體放進托盤，並取出電腦。",
       "audio": "assets/audio/lines/t2-l3.mp3",
       "audioSlow": "assets/audio/lines/t2-l3-slow.mp3",
-      "say": "Please put your liquids in the tray, and take the laptop out.",
+      "say": "Please put your liquids in the tray now, and take the laptop out.",
       "hideGloss": true
     },
     {
@@ -78,12 +77,11 @@
       "id": "t2-l5",
       "speaker": "sam",
       "speakerLabel": "Sam",
-      "text": "Straight ahead. Your gate is on the left after the shops.",
-      "glossYue": "直行就得。你個閘口喺左邊，過咗啲舖頭。",
+      "text": "Straight ahead. Your gate is on the left after the shops for you.",
+      "glossYue": "直行。閘口喺商店後面左邊。",
       "audio": "assets/audio/lines/t2-l5.mp3",
       "audioSlow": "assets/audio/lines/t2-l5-slow.mp3",
-      "say": "Straight ahead. Your gate is on the left after the shops.",
-      "hideGloss": false
+      "say": "Straight ahead. Your gate is on the left after the shops for you."
     }
   ],
   "understand": [
@@ -202,10 +200,10 @@
       {
         "partner": "Sam",
         "partnerId": "sam",
-        "line": "Boarding pass, please.",
+        "line": "Boarding pass, please, and please have your passport ready right here.",
         "audio": "assets/audio/lines/t2-l1.mp3",
         "audioSlow": "assets/audio/lines/t2-l1-slow.mp3",
-        "expect": "Here is my boarding pass.",
+        "expect": "Here is my boarding pass, and here is my passport.",
         "keywords": [
           "boarding"
         ],
@@ -215,7 +213,7 @@
       {
         "partner": "Sam",
         "partnerId": "sam",
-        "line": "Please put your liquids in the tray.",
+        "line": "Please put your liquids in the tray now, and take the laptop out.",
         "audio": "assets/audio/lines/t2-l3.mp3",
         "audioSlow": "assets/audio/lines/t2-l3-slow.mp3",
         "expect": "Here is my laptop.",
@@ -231,7 +229,7 @@
         "line": "You're all set.",
         "audio": "assets/audio/lines/t2-l6.mp3",
         "audioSlow": "assets/audio/lines/t2-l6-slow.mp3",
-        "expect": "Which way to the gate?",
+        "expect": "Which way to the gate from this security line?",
         "keywords": [
           "way",
           "gate"

@@ -46,11 +46,11 @@
       "id": "t9-l2",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "I am very sorry indeed. The flight has been cancelled, and the connection was missed at noon after lunch.",
-      "glossYue": "真係唔好意思。航班取消咗，中午食完飯嗰程接駁趕唔到。",
+      "text": "I am very sorry indeed. The flight is still quite delayed, and your connection is safe until the next update.",
+      "glossYue": "真係唔好意思。航班仍然延誤，你個轉機喺下次通知之前都安全。",
       "audio": "assets/audio/lines/t9-l2.mp3",
       "audioSlow": "assets/audio/lines/t9-l2-slow.mp3",
-      "say": "I am very sorry indeed. The flight has been cancelled, and the connection was missed at noon after lunch.",
+      "say": "I am very sorry indeed. The flight is still quite delayed, and your connection is safe until the next update.",
       "hideGloss": true
     },
     {
@@ -68,11 +68,11 @@
       "id": "t9-l4",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "A hotel voucher is still possible, and compensation may cover the overnight stay as well for us.",
-      "glossYue": "酒店券可以，賠償或者包到過夜。",
+      "text": "Yes, we can rebook you on the next flight, and standby is not the only option left.",
+      "glossYue": "可以。我哋可以幫你改下一班，後補唔係唯一選擇。",
       "audio": "assets/audio/lines/t9-l4.mp3",
       "audioSlow": "assets/audio/lines/t9-l4-slow.mp3",
-      "say": "A hotel voucher is still possible, and compensation may cover the overnight stay as well for us.",
+      "say": "Yes, we can rebook you on the next flight, and standby is not the only option left.",
       "hideGloss": true
     },
     {
@@ -101,28 +101,28 @@
       "id": "t9-l7",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "I understand the inconvenience tonight, and I will check a voucher for the hotel stay with you.",
-      "glossYue": "我明白今晚唔方便，我會同你睇下酒店券。",
+      "text": "A refund is possible, and a hotel voucher remains an alternative if you prefer to stay overnight.",
+      "glossYue": "可以退款。如果你想過夜，酒店券仍然係另一個選擇。",
       "audio": "assets/audio/lines/t9-l7.mp3",
       "audioSlow": "assets/audio/lines/t9-l7-slow.mp3",
-      "say": "I understand the inconvenience tonight, and I will check a voucher for the hotel stay with you.",
+      "say": "A refund is possible, and a hotel voucher remains an alternative if you prefer to stay overnight.",
       "hideGloss": true
     },
     {
       "id": "t9-l8",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Your new itinerary is confirmed now, and the desk will print it once the queue moves along for you.",
-      "glossYue": "新行程確認咗，隊伍郁就印畀你。",
+      "text": "Your new itinerary is confirmed for you, and the desk will print it once the queue moves along.",
+      "glossYue": "你嘅新行程已經確認。隊伍一動，櫃檯就會印畀你。",
       "audio": "assets/audio/lines/t9-l8.mp3",
       "audioSlow": "assets/audio/lines/t9-l8-slow.mp3",
-      "say": "Your new itinerary is confirmed now, and the desk will print it once the queue moves along for you.",
+      "say": "Your new itinerary is confirmed for you, and the desk will print it once the queue moves along.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "I am very sorry indeed. The flight has been cancelled, and the connection was missed at noon after lunch. 呢句即係點？",
+      "prompt": "I am very sorry indeed. The flight is still quite delayed, and your connection is safe until the next update. 呢句即係點？",
       "choices": [
         "航班取消，接駁趕唔到",
         "航班準時",
@@ -155,7 +155,7 @@
   "chunks": [
     {
       "pattern": "I am very sorry indeed. The flight has been ___ , and the connection was missed at noon after lunch.",
-      "example": "I am very sorry indeed. The flight has been cancelled, and the connection was missed at noon after lunch.",
+      "example": "I am very sorry indeed. The flight is still quite delayed, and your connection is safe until the next update.",
       "glossYue": "航班⋯⋯。",
       "answer": "cancelled",
       "choices": [
@@ -177,7 +177,7 @@
     },
     {
       "pattern": "A hotel voucher is still possible, and ___ may cover the overnight stay as well for us.",
-      "example": "A hotel voucher is still possible, and compensation may cover the overnight stay as well for us.",
+      "example": "Yes, we can rebook you on the next flight, and standby is not the only option left.",
       "glossYue": "⋯⋯或者包到過夜。",
       "answer": "compensation",
       "choices": [
@@ -194,7 +194,7 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "航班取消咗。你想問改簽定候補。你點講？",
+      "promptYue": "航班延誤咗。你想問改簽定候補。你點講？",
       "choices": [
         "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us?",
         "I ordered the soup.",
@@ -229,7 +229,7 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "I am very sorry indeed. The flight has been cancelled, and the connection was missed at noon after lunch.",
+        "line": "I am very sorry indeed. The flight is still quite delayed, and your connection is safe until the next update.",
         "audio": "assets/audio/lines/t9-l2.mp3",
         "audioSlow": "assets/audio/lines/t9-l2-slow.mp3",
         "expect": "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us?",
@@ -243,7 +243,7 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "A hotel voucher is still possible, and compensation may cover the overnight stay as well for us.",
+        "line": "Yes, we can rebook you on the next flight, and standby is not the only option left.",
         "audio": "assets/audio/lines/t9-l4.mp3",
         "audioSlow": "assets/audio/lines/t9-l4-slow.mp3",
         "expect": "Is a full refund an alternative if the new flight does not leave until tomorrow morning from here?",
@@ -295,9 +295,9 @@
     },
     {
       "type": "meaning",
-      "prompt": "職員講「I am very sorry indeed. The flight has been cancelled, and the connection was missed at noon after lunch.」，cancelled 係咩意思？",
+      "prompt": "職員講「I am very sorry indeed. The flight is still quite delayed, and your connection is safe until the next update.」，delayed 係咩意思？",
       "choices": [
-        "取消咗",
+        "延誤",
         "準時",
         "優先"
       ],
@@ -305,7 +305,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "職員講「A hotel voucher is still possible, and compensation may cover the overnight stay as well for us.」，hotel voucher 係咩意思？",
+      "prompt": "職員講「A refund is possible, and a hotel voucher remains an alternative if you prefer to stay overnight.」，hotel voucher 係咩意思？",
       "choices": [
         "酒店券",
         "退款",
@@ -347,5 +347,5 @@
       "refund-noun"
     ]
   },
-  "next": null
+  "next": "J13"
 }

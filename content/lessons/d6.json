@@ -1,0 +1,340 @@
+{
+  "id": "D6",
+  "unit": "D",
+  "titleYue": "藥房買藥",
+  "titleEn": "At the pharmacy",
+  "canDoYue": "你識講咳嗽同過敏，仲識問劑量同飯後食藥。",
+  "canDoEn": "Describe a cough and an allergy, then ask about the dosage and taking a tablet after meals.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/d6.webp",
+  "cast": [
+    "mei",
+    "tom"
+  ],
+  "cefr": "A2",
+  "lemmas": [
+    "cough-noun",
+    "symptom-noun",
+    "pharmacist-noun",
+    "allergy-noun",
+    "dosage-noun",
+    "tablet-noun",
+    "twice-a-day-phrase",
+    "after-meals-phrase",
+    "prescription-noun",
+    "pharmacy-noun"
+  ],
+  "next": "J6",
+  "dialogue": [
+    {
+      "id": "d6-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Hello. I have a bad cough today, and I need something from this pharmacy please.",
+      "glossYue": "你好。我今日咳得犀利，想喺呢間藥房買啲藥。",
+      "audio": "assets/audio/lines/d6-l1.mp3",
+      "audioSlow": "assets/audio/lines/d6-l1-slow.mp3",
+      "say": "Hello. I have a bad cough today, and I need something from this pharmacy please."
+    },
+    {
+      "id": "d6-l2",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "What other symptom should I note down before the pharmacist checks you over?",
+      "glossYue": "藥劑師檢查你之前，我仲要記低咩症狀？",
+      "audio": "assets/audio/lines/d6-l2.mp3",
+      "audioSlow": "assets/audio/lines/d6-l2-slow.mp3",
+      "say": "What other symptom should I note down before the pharmacist checks you over?"
+    },
+    {
+      "id": "d6-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I have a drug allergy, so please check the box carefully before you choose.",
+      "glossYue": "我對藥物過敏，揀之前請小心睇盒。",
+      "audio": "assets/audio/lines/d6-l3.mp3",
+      "audioSlow": "assets/audio/lines/d6-l3-slow.mp3",
+      "say": "I have a drug allergy, so please check the box carefully before you choose."
+    },
+    {
+      "id": "d6-l4",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "The dosage is one small tablet twice a day for five days.",
+      "glossYue": "劑量係一日兩次，每次一粒，連續五日。",
+      "audio": "assets/audio/lines/d6-l4.mp3",
+      "audioSlow": "assets/audio/lines/d6-l4-slow.mp3",
+      "say": "The dosage is one small tablet twice a day for five days."
+    },
+    {
+      "id": "d6-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I can always take it after meals if that is safer for my stomach.",
+      "glossYue": "如果對胃安全啲，我可以飯後先食。",
+      "audio": "assets/audio/lines/d6-l5.mp3",
+      "audioSlow": "assets/audio/lines/d6-l5-slow.mp3",
+      "say": "I can always take it after meals if that is safer for my stomach."
+    },
+    {
+      "id": "d6-l6",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "I will write a short prescription and put it in the pharmacy bag.",
+      "glossYue": "我會寫張短處方，放進藥房袋。",
+      "audio": "assets/audio/lines/d6-l6.mp3",
+      "audioSlow": "assets/audio/lines/d6-l6-slow.mp3",
+      "say": "I will write a short prescription and put it in the pharmacy bag.",
+      "hideGloss": true
+    },
+    {
+      "id": "d6-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Please repeat the dosage once more here before I pay for the box.",
+      "glossYue": "我畀錢之前，請喺呢度再講一次劑量。",
+      "audio": "assets/audio/lines/d6-l7.mp3",
+      "audioSlow": "assets/audio/lines/d6-l7-slow.mp3",
+      "say": "Please repeat the dosage once more here before I pay for the box.",
+      "hideGloss": true
+    },
+    {
+      "id": "d6-l8",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Please rest at home, and call us if that cough comes back later on.",
+      "glossYue": "請返屋企休息。如果之後再咳，就打畀我哋。",
+      "audio": "assets/audio/lines/d6-l8.mp3",
+      "audioSlow": "assets/audio/lines/d6-l8-slow.mp3",
+      "say": "Please rest at home, and call us if that cough comes back later on.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Hello. I have a bad cough today, and I need something from this pharmacy please. 呢句即係點？",
+      "choices": [
+        "我咳嗽，想喺藥房買藥",
+        "我想叫外賣",
+        "我想改航班"
+      ],
+      "answer": 0,
+      "explain": "cough 係咳嗽。pharmacy 係藥房。"
+    },
+    {
+      "prompt": "The dosage is one small tablet twice a day for five days. 呢句即係點？",
+      "choices": [
+        "一日兩次，每次一粒，食五日",
+        "寄一個包裹",
+        "預訂一張檯"
+      ],
+      "answer": 0,
+      "explain": "dosage 係劑量。twice a day 係一日兩次。"
+    },
+    {
+      "prompt": "I have a drug allergy, so please check the box carefully before you choose. 呢句即係點？",
+      "choices": [
+        "我對藥物過敏",
+        "我要刻個標誌",
+        "我要退款"
+      ],
+      "answer": 0,
+      "explain": "allergy 係過敏。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I need something from this ___ for a cough.",
+      "example": "I need something from this pharmacy for a cough.",
+      "glossYue": "我想喺呢間⋯⋯買藥。",
+      "answer": "pharmacy",
+      "choices": [
+        "pharmacy",
+        "street",
+        "quote"
+      ]
+    },
+    {
+      "pattern": "The dosage is one tablet ___ a day.",
+      "example": "The dosage is one tablet twice a day.",
+      "glossYue": "劑量係一日⋯⋯。",
+      "answer": "twice",
+      "choices": [
+        "twice",
+        "never",
+        "already"
+      ]
+    },
+    {
+      "pattern": "I can take it ___ if that is safer.",
+      "example": "I can take it after meals if that is safer.",
+      "glossYue": "我可以⋯⋯食。",
+      "answer": "after meals",
+      "choices": [
+        "after meals",
+        "by airmail",
+        "on standby"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "d6-l5",
+    "hint": "I can always take it after meals if that is safer for my stomach."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你對藥物過敏。你點講？",
+      "choices": [
+        "I have a drug allergy, so please check the box carefully before you choose.",
+        "The flight is delayed.",
+        "Straight ahead."
+      ],
+      "answer": 0,
+      "explain": "講 allergy，再請對方檢查。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "The",
+        "dosage",
+        "is",
+        "one",
+        "tablet"
+      ],
+      "answer": [
+        "The",
+        "dosage",
+        "is",
+        "one",
+        "tablet"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你喺藥房。同藥劑師講咳嗽同過敏。可以講：cough、allergy。",
+    "turns": [
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "What other symptom should I note down before the pharmacist checks you over?",
+        "audio": "assets/audio/lines/d6-l2.mp3",
+        "audioSlow": "assets/audio/lines/d6-l2-slow.mp3",
+        "expect": "I have a drug allergy, so please check the box carefully before you choose.",
+        "keywords": [
+          "allergy",
+          "box"
+        ],
+        "modelAudio": "assets/audio/lines/d6-l3.mp3",
+        "modelSlow": "assets/audio/lines/d6-l3-slow.mp3"
+      },
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "The dosage is one small tablet twice a day for five days.",
+        "audio": "assets/audio/lines/d6-l4.mp3",
+        "audioSlow": "assets/audio/lines/d6-l4-slow.mp3",
+        "expect": "I can always take it after meals if that is safer for my stomach.",
+        "keywords": [
+          "after",
+          "meals"
+        ],
+        "modelAudio": "assets/audio/lines/d6-l5.mp3",
+        "modelSlow": "assets/audio/lines/d6-l5-slow.mp3"
+      },
+      {
+        "partner": "Mei",
+        "partnerId": "mei",
+        "line": "I will write a short prescription and put it in the pharmacy bag.",
+        "audio": "assets/audio/lines/d6-l6.mp3",
+        "audioSlow": "assets/audio/lines/d6-l6-slow.mp3",
+        "expect": "Please repeat the dosage once more here before I pay for the box.",
+        "keywords": [
+          "dosage",
+          "pay"
+        ],
+        "modelAudio": "assets/audio/lines/d6-l7.mp3",
+        "modelSlow": "assets/audio/lines/d6-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：咳嗽",
+      "lemma": "cough-noun",
+      "choices": [
+        "cough",
+        "dosage",
+        "quote"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：劑量",
+      "lemma": "dosage-noun",
+      "choices": [
+        "dosage",
+        "tablet",
+        "logo"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "你講「I have a drug allergy, so please check the box carefully before you choose.」，allergy 係咩意思？",
+      "choices": [
+        "過敏",
+        "數量",
+        "送貨"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "藥劑師講「The dosage is one small tablet twice a day for five days.」，dosage 係咩意思？",
+      "choices": [
+        "劑量",
+        "郵票",
+        "報價"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個字有 /l/：tablet、cough、定 dosage？",
+      "choices": [
+        "tablet",
+        "cough",
+        "dosage"
+      ],
+      "answer": 0,
+      "explain": "tablet 有 /l/。cough 同 dosage 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "tablet 入面嗰個音",
+    "note": "tablet 有 /l/。cough 同 dosage 冇 /l/。",
+    "pairs": [
+      {
+        "a": "tablet-noun",
+        "b": "cough-noun"
+      },
+      {
+        "a": "allergy-noun",
+        "b": "pharmacy-noun"
+      }
+    ],
+    "drill": [
+      "tablet-noun",
+      "cough-noun",
+      "dosage-noun",
+      "allergy-noun",
+      "pharmacy-noun"
+    ]
+  }
+}

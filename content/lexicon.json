@@ -29596,9 +29596,9 @@
         "unlimited plan",
         "unlimited data"
       ],
-      "example": "The unlimited plan is a long phone contract.",
-      "exampleYue": "無限計劃係一份長約。",
-      "say": "The unlimited plan is a long phone contract.",
+      "example": "The unlimited plan has no data limit.",
+      "exampleYue": "無限計劃冇數據上限。",
+      "say": "The unlimited plan has no data limit.",
       "variants": [],
       "note": "",
       "sources": [
@@ -29610,25 +29610,25 @@
       "senseMismatch": false,
       "cmuLemma": "unlimited",
       "phrase": false,
-      "audioSha256": "2e5fbd99318fa618d4dfcca44f0420b7c2abe791abb734d96b25364c4c5b49b1",
+      "audioSha256": "af26bdb1282fcb30be2f5865bcf19976b448c27b350a4ca19c94539c9dd72ccb",
       "register": "電話舖",
       "usageNotes": "unlimited 係冇上限。",
       "pitfallsYue": "unlimited 係冇上限。",
       "related": [],
       "examples": [
         {
-          "en": "The unlimited plan is a long phone contract.",
-          "yue": "無限計劃係一份長約。",
+          "en": "The unlimited plan has no data limit.",
+          "yue": "無限計劃冇數據上限。",
           "audio": "assets/audio/words/unlimited-adj.mp3",
           "audioSlow": "assets/audio/words/unlimited-adj-slow.mp3",
-          "say": "The unlimited plan is a long phone contract."
+          "say": "The unlimited plan has no data limit."
         },
         {
-          "en": "An unlimited plan is not always cheaper.",
-          "yue": "無限計劃唔係次次平啲。",
+          "en": "An unlimited plan lets you use data all month.",
+          "yue": "無限計劃可以成個月用數據。",
           "audio": "assets/audio/words/unlimited-adj-ex2.mp3",
           "audioSlow": "assets/audio/words/unlimited-adj-ex2-slow.mp3",
-          "say": "An unlimited plan is not always cheaper."
+          "say": "An unlimited plan lets you use data all month."
         }
       ]
     },
@@ -29943,20 +29943,24 @@
     },
     {
       "id": "mobile-contract-noun",
-      "lemma": "contract",
-      "pos": "noun",
+      "lemma": "mobile contract",
+      "pos": "phrase",
       "senseId": "phone-plan",
-      "ipa": "/ˈkɑn.ˌtɹækt/",
+      "ipa": "/ˈmoʊ.bəl ˈkɑn.ˌtɹækt/",
       "syllables": [
+        "mo",
+        "bile",
         "con",
         "tract"
       ],
       "syllableIpa": [
+        "ˈmoʊ",
+        "bəl",
         "ˈkɑn",
         "ˌtɹækt"
       ],
       "stress": 1,
-      "arpabet": "K AA1 N T R AE2 K T",
+      "arpabet": "M OW1 B AH0 L K AA1 N T R AE2 K T",
       "audio": "assets/audio/words/mobile-contract-noun.mp3",
       "audioSlow": "assets/audio/words/mobile-contract-noun-slow.mp3",
       "glossYue": "電話合約",
@@ -29966,9 +29970,9 @@
         "a phone contract",
         "long contract"
       ],
-      "example": "The unlimited plan is on a phone contract.",
-      "exampleYue": "無限計劃係一份電話合約。",
-      "say": "The unlimited plan is on a phone contract.",
+      "example": "This mobile contract lasts for one year.",
+      "exampleYue": "呢份手機合約為期一年。",
+      "say": "This mobile contract lasts for one year.",
       "variants": [],
       "note": "",
       "sources": [
@@ -29978,27 +29982,27 @@
       "verified_at": "2026-10-31",
       "status": "IPA_OK",
       "senseMismatch": false,
-      "cmuLemma": "contract",
-      "phrase": false,
-      "audioSha256": "36f10c381453cd36d0dc21ab6712b88f5216975e87f5f22baa1472fb16c49d5d",
+      "cmuLemma": "mobile contract",
+      "phrase": true,
+      "audioSha256": "9613533ecfe369a1e121d0e977599a4f674b48538758ad0d45a906bbbad11215",
       "register": "電話舖",
       "usageNotes": "contract 呢度係電話合約，唔係租約。",
       "pitfallsYue": "contract 呢度係電話合約，唔係租約。",
       "related": [],
       "examples": [
         {
-          "en": "The unlimited plan is on a phone contract.",
-          "yue": "無限計劃係一份電話合約。",
+          "en": "This mobile contract lasts for one year.",
+          "yue": "呢份手機合約為期一年。",
           "audio": "assets/audio/words/mobile-contract-noun.mp3",
           "audioSlow": "assets/audio/words/mobile-contract-noun-slow.mp3",
-          "say": "The unlimited plan is on a phone contract."
+          "say": "This mobile contract lasts for one year."
         },
         {
-          "en": "This phone contract is longer than a prepaid plan.",
-          "yue": "呢份電話合約比預繳計劃長。",
+          "en": "A mobile contract is longer than a prepaid plan.",
+          "yue": "手機合約比預繳計劃長。",
           "audio": "assets/audio/words/mobile-contract-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/mobile-contract-noun-ex2-slow.mp3",
-          "say": "This phone contract is longer than a prepaid plan."
+          "say": "A mobile contract is longer than a prepaid plan."
         }
       ]
     },
@@ -30027,9 +30031,9 @@
         "this parcel",
         "send a parcel"
       ],
-      "example": "I would like to send this parcel by airmail.",
-      "exampleYue": "我想用空郵寄呢個包裹。",
-      "say": "I would like to send this parcel by airmail.",
+      "example": "Please weigh this parcel before we post it.",
+      "exampleYue": "寄出之前請秤一秤呢個包裹。",
+      "say": "Please weigh this parcel before we post it.",
       "variants": [],
       "note": "",
       "sources": [
@@ -30041,25 +30045,25 @@
       "senseMismatch": false,
       "cmuLemma": "parcel",
       "phrase": false,
-      "audioSha256": "35460daa1935acbe2d31224fcc767623291962b7585252cc0b829f4665adeed4",
+      "audioSha256": "7f42ce778d1946b7f145cf79ef44b4e673465093358b2a4066d46dbbd6574bf4",
       "register": "郵局",
       "usageNotes": "parcel 係包裹。",
       "pitfallsYue": "parcel 係包裹。",
       "related": [],
       "examples": [
         {
-          "en": "I would like to send this parcel by airmail.",
-          "yue": "我想用空郵寄呢個包裹。",
+          "en": "Please weigh this parcel before we post it.",
+          "yue": "寄出之前請秤一秤呢個包裹。",
           "audio": "assets/audio/words/parcel-noun.mp3",
           "audioSlow": "assets/audio/words/parcel-noun-slow.mp3",
-          "say": "I would like to send this parcel by airmail."
+          "say": "Please weigh this parcel before we post it."
         },
         {
-          "en": "This parcel is fragile, so mark the weight.",
-          "yue": "呢個包裹易碎，請標明重量。",
+          "en": "The parcel needs a signature at the destination.",
+          "yue": "包裹送到目的地要簽名。",
           "audio": "assets/audio/words/parcel-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/parcel-noun-ex2-slow.mp3",
-          "say": "This parcel is fragile, so mark the weight."
+          "say": "The parcel needs a signature at the destination."
         }
       ]
     },
@@ -30126,18 +30130,22 @@
     },
     {
       "id": "postage-stamp-noun",
-      "lemma": "stamp",
-      "pos": "noun",
+      "lemma": "postage stamp",
+      "pos": "phrase",
       "senseId": "postage",
-      "ipa": "/ˈstæmp/",
+      "ipa": "/ˈpoʊ.stədʒ ˈstæmp/",
       "syllables": [
+        "pos",
+        "tage",
         "stamp"
       ],
       "syllableIpa": [
+        "ˈpoʊ",
+        "stədʒ",
         "ˈstæmp"
       ],
       "stress": 1,
-      "arpabet": "S T AE1 M P",
+      "arpabet": "P OW1 S T AH0 JH S T AE1 M P",
       "audio": "assets/audio/words/postage-stamp-noun.mp3",
       "audioSlow": "assets/audio/words/postage-stamp-noun-slow.mp3",
       "glossYue": "郵票",
@@ -30147,9 +30155,9 @@
         "one stamp",
         "a stamp"
       ],
-      "example": "Please put one stamp on the parcel.",
-      "exampleYue": "請喺包裹上面貼一張郵票。",
-      "say": "Please put one stamp on the parcel.",
+      "example": "Please buy a postage stamp for this letter.",
+      "exampleYue": "請幫呢封信買一張郵票。",
+      "say": "Please buy a postage stamp for this letter.",
       "variants": [],
       "note": "",
       "sources": [
@@ -30159,27 +30167,27 @@
       "verified_at": "2026-10-31",
       "status": "IPA_OK",
       "senseMismatch": false,
-      "cmuLemma": "stamp",
-      "phrase": false,
-      "audioSha256": "a38291f9ab1da7dd6eb4603c7077b0790eb1b2edf3cbc9f950acdd79e02c06c4",
+      "cmuLemma": "postage stamp",
+      "phrase": true,
+      "audioSha256": "c9e658b06a7ec9f1678d2e87cf24740c6f0c5367a9ddd1c7000a912c034c3cb9",
       "register": "郵局",
       "usageNotes": "stamp 呢度係郵票，唔係蓋章。",
       "pitfallsYue": "stamp 呢度係郵票，唔係蓋章。",
       "related": [],
       "examples": [
         {
-          "en": "Please put one stamp on the parcel.",
-          "yue": "請喺包裹上面貼一張郵票。",
+          "en": "Please buy a postage stamp for this letter.",
+          "yue": "請幫呢封信買一張郵票。",
           "audio": "assets/audio/words/postage-stamp-noun.mp3",
           "audioSlow": "assets/audio/words/postage-stamp-noun-slow.mp3",
-          "say": "Please put one stamp on the parcel."
+          "say": "Please buy a postage stamp for this letter."
         },
         {
-          "en": "This stamp is for the airmail parcel.",
-          "yue": "呢張郵票係畀空郵包裹用。",
+          "en": "One postage stamp is enough for a postcard.",
+          "yue": "一張郵票就夠寄明信片。",
           "audio": "assets/audio/words/postage-stamp-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/postage-stamp-noun-ex2-slow.mp3",
-          "say": "This stamp is for the airmail parcel."
+          "say": "One postage stamp is enough for a postcard."
         }
       ]
     },
@@ -30208,9 +30216,9 @@
         "by airmail",
         "airmail parcel"
       ],
-      "example": "I would like to send this parcel by airmail.",
-      "exampleYue": "我想用空郵寄呢個包裹。",
-      "say": "I would like to send this parcel by airmail.",
+      "example": "I would like airmail for this letter.",
+      "exampleYue": "呢封信我想用空郵。",
+      "say": "I would like airmail for this letter.",
       "variants": [],
       "note": "",
       "sources": [
@@ -30222,25 +30230,25 @@
       "senseMismatch": false,
       "cmuLemma": "airmail",
       "phrase": false,
-      "audioSha256": "ef1495dbda6f47b6a433d11c6965388ad9eafaf89bbebd0faf7f408c52395322",
+      "audioSha256": "39a29033ffa38529d444e656549d0bb4405cbae8bebbe17b01dfa470bc505e86",
       "register": "郵局",
       "usageNotes": "airmail 係空郵。",
       "pitfallsYue": "airmail 係空郵。",
       "related": [],
       "examples": [
         {
-          "en": "I would like to send this parcel by airmail.",
-          "yue": "我想用空郵寄呢個包裹。",
+          "en": "I would like airmail for this letter.",
+          "yue": "呢封信我想用空郵。",
           "audio": "assets/audio/words/airmail-noun.mp3",
           "audioSlow": "assets/audio/words/airmail-noun-slow.mp3",
-          "say": "I would like to send this parcel by airmail."
+          "say": "I would like airmail for this letter."
         },
         {
-          "en": "Airmail takes five days to Macau.",
-          "yue": "空郵去澳門要五日。",
+          "en": "Airmail is faster than the regular post.",
+          "yue": "空郵快過平郵。",
           "audio": "assets/audio/words/airmail-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/airmail-noun-ex2-slow.mp3",
-          "say": "Airmail takes five days to Macau."
+          "say": "Airmail is faster than the regular post."
         }
       ]
     },
@@ -30269,9 +30277,9 @@
         "fragile parcel",
         "mark it fragile"
       ],
-      "example": "This parcel is fragile, so mark the weight.",
-      "exampleYue": "呢個包裹易碎，請標明重量。",
-      "say": "This parcel is fragile, so mark the weight.",
+      "example": "This vase is fragile, so please mark it as fragile.",
+      "exampleYue": "呢個花瓶易碎，請註明易碎。",
+      "say": "This vase is fragile, so please mark it as fragile.",
       "variants": [],
       "note": "",
       "sources": [
@@ -30283,25 +30291,25 @@
       "senseMismatch": false,
       "cmuLemma": "fragile",
       "phrase": false,
-      "audioSha256": "21bc7e381bac7d34a9cac4f55f8322509fbebe0650bb5395267197e93b09ac4e",
+      "audioSha256": "0f9621a6ac7f87ab5474487492c5d4dd640711d5890aa157e1febea5a1657049",
       "register": "郵局",
       "usageNotes": "fragile 係易碎。",
       "pitfallsYue": "fragile 係易碎。",
       "related": [],
       "examples": [
         {
-          "en": "This parcel is fragile, so mark the weight.",
-          "yue": "呢個包裹易碎，請標明重量。",
+          "en": "This vase is fragile, so please mark it as fragile.",
+          "yue": "呢個花瓶易碎，請註明易碎。",
           "audio": "assets/audio/words/fragile-adj.mp3",
           "audioSlow": "assets/audio/words/fragile-adj-slow.mp3",
-          "say": "This parcel is fragile, so mark the weight."
+          "say": "This vase is fragile, so please mark it as fragile."
         },
         {
-          "en": "A fragile parcel needs a careful stamp.",
-          "yue": "易碎包裹要小心貼郵票。",
+          "en": "A fragile vase needs a soft box.",
+          "yue": "易碎花瓶要用軟盒。",
           "audio": "assets/audio/words/fragile-adj-ex2.mp3",
           "audioSlow": "assets/audio/words/fragile-adj-ex2-slow.mp3",
-          "say": "A fragile parcel needs a careful stamp."
+          "say": "A fragile vase needs a soft box."
         }
       ]
     },
@@ -30366,22 +30374,26 @@
     },
     {
       "id": "follow-up-visit-noun",
-      "lemma": "follow-up",
-      "pos": "noun",
+      "lemma": "follow-up visit",
+      "pos": "phrase",
       "senseId": "return-visit",
-      "ipa": "/ˈfɑ.loʊ.ˌʌp/",
+      "ipa": "/ˈfɑ.loʊ ˈʌp ˈvɪ.zɪt/",
       "syllables": [
         "fol",
         "low",
-        "up"
+        "up",
+        "vis",
+        "it"
       ],
       "syllableIpa": [
         "ˈfɑ",
         "loʊ",
-        "ˌʌp"
+        "ˈʌp",
+        "ˈvɪ",
+        "zɪt"
       ],
       "stress": 1,
-      "arpabet": "F AA1 L OW0 AH2 P",
+      "arpabet": "F AA1 L OW0 AH1 P V IH1 Z IH0 T",
       "audio": "assets/audio/words/follow-up-visit-noun.mp3",
       "audioSlow": "assets/audio/words/follow-up-visit-noun-slow.mp3",
       "glossYue": "覆診",
@@ -30391,9 +30403,9 @@
         "a follow-up",
         "the follow-up"
       ],
-      "example": "I need a follow-up after this visit.",
-      "exampleYue": "呢次之後我要覆診。",
-      "say": "I need a follow-up after this visit.",
+      "example": "I need a follow-up visit after this appointment.",
+      "exampleYue": "呢次預約之後我要覆診。",
+      "say": "I need a follow-up visit after this appointment.",
       "variants": [],
       "note": "",
       "sources": [
@@ -30402,9 +30414,9 @@
       "verified_at": "2026-10-30",
       "status": "IPA_OK",
       "senseMismatch": false,
-      "cmuLemma": "follow",
-      "phrase": false,
-      "audioSha256": "6f8b68d90c6300975a59d9935ed11b1fb0752de999624fe7e01a11e5ed8ab9d1",
+      "cmuLemma": "follow-up visit",
+      "phrase": true,
+      "audioSha256": "0728af6d8bd3648c2be32e96d4eaf8dcd1620c54f6b14eb2869b1967da9088d0",
       "register": "診所",
       "usageNotes": "follow-up 係再嚟診所一次。",
       "pitfallsYue": "follow-up 係再嚟診所一次。",
@@ -30414,18 +30426,18 @@
       ],
       "examples": [
         {
-          "en": "I need a follow-up after this visit.",
-          "yue": "呢次之後我要覆診。",
+          "en": "I need a follow-up visit after this appointment.",
+          "yue": "呢次預約之後我要覆診。",
           "audio": "assets/audio/words/follow-up-visit-noun.mp3",
           "audioSlow": "assets/audio/words/follow-up-visit-noun-slow.mp3",
-          "say": "I need a follow-up after this visit."
+          "say": "I need a follow-up visit after this appointment."
         },
         {
-          "en": "The follow-up is next Friday morning.",
-          "yue": "覆診係下星期五朝早。",
+          "en": "The follow-up visit is booked for next week.",
+          "yue": "覆診約咗下星期。",
           "audio": "assets/audio/words/follow-up-visit-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/follow-up-visit-noun-ex2-slow.mp3",
-          "say": "The follow-up is next Friday morning."
+          "say": "The follow-up visit is booked for next week."
         }
       ]
     },
@@ -32487,6 +32499,742 @@
           "audio": "assets/audio/words/alternative-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/alternative-noun-ex2-slow.mp3",
           "say": "The desk offered an alternative route."
+        }
+      ]
+    },
+    {
+      "id": "pharmacist-noun",
+      "lemma": "pharmacist",
+      "pos": "noun",
+      "senseId": "dispenser",
+      "ipa": "/ˈfɑɹ.mə.sɪst/",
+      "syllables": [
+        "phar",
+        "ma",
+        "cist"
+      ],
+      "syllableIpa": [
+        "ˈfɑɹ",
+        "mə",
+        "sɪst"
+      ],
+      "stress": 1,
+      "arpabet": "F AA1 R M AH0 S IH0 S T",
+      "audio": "assets/audio/words/pharmacist-noun.mp3",
+      "audioSlow": "assets/audio/words/pharmacist-noun-slow.mp3",
+      "glossYue": "藥劑師",
+      "glossZh": "藥劑師",
+      "jyutping": "joek6 zai1 si1",
+      "collocations": [
+        "the pharmacist",
+        "a pharmacist"
+      ],
+      "example": "The pharmacist checked my allergy before the dosage.",
+      "exampleYue": "藥劑師開劑量之前先睇我嘅過敏。",
+      "say": "The pharmacist checked my allergy before the dosage.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "pharmacist",
+      "phrase": false,
+      "audioSha256": "b31172f278706adac7c1277ef48939e9f3d63ea4120cb219d85f0f0b1aeab27a",
+      "register": "藥房",
+      "usageNotes": "pharmacist 係藥劑師。",
+      "pitfallsYue": "pharmacist 係藥劑師。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The pharmacist checked my allergy before the dosage.",
+          "yue": "藥劑師開劑量之前先睇我嘅過敏。",
+          "audio": "assets/audio/words/pharmacist-noun.mp3",
+          "audioSlow": "assets/audio/words/pharmacist-noun-slow.mp3",
+          "say": "The pharmacist checked my allergy before the dosage."
+        },
+        {
+          "en": "Please ask the pharmacist about this tablet.",
+          "yue": "請問藥劑師呢粒藥。",
+          "audio": "assets/audio/words/pharmacist-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/pharmacist-noun-ex2-slow.mp3",
+          "say": "Please ask the pharmacist about this tablet."
+        }
+      ]
+    },
+    {
+      "id": "dosage-noun",
+      "lemma": "dosage",
+      "pos": "noun",
+      "senseId": "dose-amount",
+      "ipa": "/ˈdoʊ.sədʒ/",
+      "syllables": [
+        "do",
+        "sage"
+      ],
+      "syllableIpa": [
+        "ˈdoʊ",
+        "sədʒ"
+      ],
+      "stress": 1,
+      "arpabet": "D OW1 S AH0 JH",
+      "audio": "assets/audio/words/dosage-noun.mp3",
+      "audioSlow": "assets/audio/words/dosage-noun-slow.mp3",
+      "glossYue": "劑量",
+      "glossZh": "劑量",
+      "jyutping": "zai1 loeng6",
+      "collocations": [
+        "the dosage",
+        "a safe dosage"
+      ],
+      "example": "The dosage is one tablet twice a day.",
+      "exampleYue": "劑量係一日兩次，每次一粒。",
+      "say": "The dosage is one tablet twice a day.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "dosage",
+      "phrase": false,
+      "audioSha256": "a4a72c4787e52599163684db341151b1ab90ee94dab57a433e3bdb6a237387e7",
+      "register": "藥房",
+      "usageNotes": "dosage 係劑量。",
+      "pitfallsYue": "dosage 係劑量。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The dosage is one tablet twice a day.",
+          "yue": "劑量係一日兩次，每次一粒。",
+          "audio": "assets/audio/words/dosage-noun.mp3",
+          "audioSlow": "assets/audio/words/dosage-noun-slow.mp3",
+          "say": "The dosage is one tablet twice a day."
+        },
+        {
+          "en": "Please repeat the dosage before I leave.",
+          "yue": "我走之前請再講一次劑量。",
+          "audio": "assets/audio/words/dosage-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/dosage-noun-ex2-slow.mp3",
+          "say": "Please repeat the dosage before I leave."
+        }
+      ]
+    },
+    {
+      "id": "tablet-noun",
+      "lemma": "tablet",
+      "pos": "noun",
+      "senseId": "pill",
+      "ipa": "/ˈtæ.blət/",
+      "syllables": [
+        "tab",
+        "let"
+      ],
+      "syllableIpa": [
+        "ˈtæ",
+        "blət"
+      ],
+      "stress": 1,
+      "arpabet": "T AE1 B L AH0 T",
+      "audio": "assets/audio/words/tablet-noun.mp3",
+      "audioSlow": "assets/audio/words/tablet-noun-slow.mp3",
+      "glossYue": "藥丸",
+      "glossZh": "藥丸",
+      "jyutping": "joek6 jyun2",
+      "collocations": [
+        "one tablet",
+        "a tablet"
+      ],
+      "example": "Please take one tablet after meals.",
+      "exampleYue": "請飯後食一粒藥。",
+      "say": "Please take one tablet after meals.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "tablet",
+      "phrase": false,
+      "audioSha256": "0d3cb976f0d3d9792e29099ec1ed890f1617ef0f86ee8400a6e5ad73acda3523",
+      "register": "藥房",
+      "usageNotes": "tablet 係藥丸。",
+      "pitfallsYue": "tablet 係藥丸。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Please take one tablet after meals.",
+          "yue": "請飯後食一粒藥。",
+          "audio": "assets/audio/words/tablet-noun.mp3",
+          "audioSlow": "assets/audio/words/tablet-noun-slow.mp3",
+          "say": "Please take one tablet after meals."
+        },
+        {
+          "en": "This tablet is for a cough.",
+          "yue": "呢粒藥係用來止咳。",
+          "audio": "assets/audio/words/tablet-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/tablet-noun-ex2-slow.mp3",
+          "say": "This tablet is for a cough."
+        }
+      ]
+    },
+    {
+      "id": "twice-a-day-phrase",
+      "lemma": "twice a day",
+      "pos": "phrase",
+      "senseId": "twice-daily",
+      "ipa": "/ˈtwaɪs ə ˈdeɪ/",
+      "syllables": [
+        "twice",
+        "a",
+        "day"
+      ],
+      "syllableIpa": [
+        "ˈtwaɪs",
+        "ə",
+        "ˈdeɪ"
+      ],
+      "stress": 1,
+      "arpabet": "T W AY1 S AH0 D EY1",
+      "audio": "assets/audio/words/twice-a-day-phrase.mp3",
+      "audioSlow": "assets/audio/words/twice-a-day-phrase-slow.mp3",
+      "glossYue": "一日兩次",
+      "glossZh": "一日兩次",
+      "jyutping": "jat1 jat6 loeng5 ci3",
+      "collocations": [
+        "twice a day",
+        "take it twice a day"
+      ],
+      "example": "Take this tablet twice a day.",
+      "exampleYue": "呢粒藥一日食兩次。",
+      "say": "Take this tablet twice a day.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "twice a day",
+      "phrase": true,
+      "audioSha256": "ab87cf92720badd0e94f85fefffb718f538505d7384ec67eca1da02a326d745a",
+      "register": "藥房",
+      "usageNotes": "twice a day 係一日兩次。",
+      "pitfallsYue": "twice a day 係一日兩次。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Take this tablet twice a day.",
+          "yue": "呢粒藥一日食兩次。",
+          "audio": "assets/audio/words/twice-a-day-phrase.mp3",
+          "audioSlow": "assets/audio/words/twice-a-day-phrase-slow.mp3",
+          "say": "Take this tablet twice a day."
+        },
+        {
+          "en": "The note says twice a day after meals.",
+          "yue": "張紙寫住一日兩次，飯後食。",
+          "audio": "assets/audio/words/twice-a-day-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/twice-a-day-phrase-ex2-slow.mp3",
+          "say": "The note says twice a day after meals."
+        }
+      ]
+    },
+    {
+      "id": "after-meals-phrase",
+      "lemma": "after meals",
+      "pos": "phrase",
+      "senseId": "after-food",
+      "ipa": "/ˈæf.tɚ ˈmilz/",
+      "syllables": [
+        "af",
+        "ter",
+        "meals"
+      ],
+      "syllableIpa": [
+        "ˈæf",
+        "tɚ",
+        "ˈmilz"
+      ],
+      "stress": 1,
+      "arpabet": "AE1 F T ER0 M IY1 L Z",
+      "audio": "assets/audio/words/after-meals-phrase.mp3",
+      "audioSlow": "assets/audio/words/after-meals-phrase-slow.mp3",
+      "glossYue": "飯後",
+      "glossZh": "飯後",
+      "jyutping": "faan6 hau6",
+      "collocations": [
+        "after meals",
+        "take it after meals"
+      ],
+      "example": "Take the tablet after meals.",
+      "exampleYue": "飯後先食呢粒藥。",
+      "say": "Take the tablet after meals.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "after meals",
+      "phrase": true,
+      "audioSha256": "93f726959f69189ca70a377b70c1adaef2e1c01df863045932d9702750d5a4ec",
+      "register": "藥房",
+      "usageNotes": "after meals 係飯後。",
+      "pitfallsYue": "after meals 係飯後。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Take the tablet after meals.",
+          "yue": "飯後先食呢粒藥。",
+          "audio": "assets/audio/words/after-meals-phrase.mp3",
+          "audioSlow": "assets/audio/words/after-meals-phrase-slow.mp3",
+          "say": "Take the tablet after meals."
+        },
+        {
+          "en": "After meals is the safer time for this dosage.",
+          "yue": "呢個劑量飯後食會安全啲。",
+          "audio": "assets/audio/words/after-meals-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/after-meals-phrase-ex2-slow.mp3",
+          "say": "After meals is the safer time for this dosage."
+        }
+      ]
+    },
+    {
+      "id": "delivery-noun",
+      "lemma": "delivery",
+      "pos": "noun",
+      "senseId": "bringing",
+      "ipa": "/dɪ.ˈlɪ.vɚ.i/",
+      "syllables": [
+        "de",
+        "liv",
+        "er",
+        "y"
+      ],
+      "syllableIpa": [
+        "dɪ",
+        "ˈlɪ",
+        "vɚ",
+        "i"
+      ],
+      "stress": 2,
+      "arpabet": "D IH0 L IH1 V ER0 IY0",
+      "audio": "assets/audio/words/delivery-noun.mp3",
+      "audioSlow": "assets/audio/words/delivery-noun-slow.mp3",
+      "glossYue": "送貨",
+      "glossZh": "送貨",
+      "jyutping": "sung3 fo3",
+      "collocations": [
+        "the delivery",
+        "a food delivery"
+      ],
+      "example": "The delivery will take about twenty minutes.",
+      "exampleYue": "送貨大約要二十分鐘。",
+      "say": "The delivery will take about twenty minutes.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "delivery",
+      "phrase": false,
+      "audioSha256": "4c47a1c967a72d7ad89c991260de92d6a4ee0920fd668f38afa3ac88ffb2b41d",
+      "register": "餐廳",
+      "usageNotes": "delivery 係送貨。",
+      "pitfallsYue": "delivery 係送貨。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The delivery will take about twenty minutes.",
+          "yue": "送貨大約要二十分鐘。",
+          "audio": "assets/audio/words/delivery-noun.mp3",
+          "audioSlow": "assets/audio/words/delivery-noun-slow.mp3",
+          "say": "The delivery will take about twenty minutes."
+        },
+        {
+          "en": "Please leave the delivery at the door.",
+          "yue": "請把外賣放喺門口。",
+          "audio": "assets/audio/words/delivery-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/delivery-noun-ex2-slow.mp3",
+          "say": "Please leave the delivery at the door."
+        }
+      ]
+    },
+    {
+      "id": "pay-on-delivery-phrase",
+      "lemma": "pay on delivery",
+      "pos": "phrase",
+      "senseId": "pay-later",
+      "ipa": "/ˈpeɪ ˈɑn dɪ.ˈlɪ.vɚ.i/",
+      "syllables": [
+        "pay",
+        "on",
+        "de",
+        "liv",
+        "er",
+        "y"
+      ],
+      "syllableIpa": [
+        "ˈpeɪ",
+        "ˈɑn",
+        "dɪ",
+        "ˈlɪ",
+        "vɚ",
+        "i"
+      ],
+      "stress": 1,
+      "arpabet": "P EY1 AA1 N D IH0 L IH1 V ER0 IY0",
+      "audio": "assets/audio/words/pay-on-delivery-phrase.mp3",
+      "audioSlow": "assets/audio/words/pay-on-delivery-phrase-slow.mp3",
+      "glossYue": "送到先畀錢",
+      "glossZh": "送到先畀錢",
+      "jyutping": "sung3 dou3 sin1 bei2 cin2",
+      "collocations": [
+        "pay on delivery",
+        "cash on delivery"
+      ],
+      "example": "You can pay on delivery in cash.",
+      "exampleYue": "你可以送到先畀現金。",
+      "say": "You can pay on delivery in cash.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "pay on delivery",
+      "phrase": true,
+      "audioSha256": "25a5784ca5ac5282c65cbadd44309844089c1b3341a33abc3a6970a45a5ff855",
+      "register": "餐廳",
+      "usageNotes": "pay on delivery 係送到先畀錢。",
+      "pitfallsYue": "pay on delivery 係送到先畀錢。",
+      "related": [],
+      "examples": [
+        {
+          "en": "You can pay on delivery in cash.",
+          "yue": "你可以送到先畀現金。",
+          "audio": "assets/audio/words/pay-on-delivery-phrase.mp3",
+          "audioSlow": "assets/audio/words/pay-on-delivery-phrase-slow.mp3",
+          "say": "You can pay on delivery in cash."
+        },
+        {
+          "en": "Pay on delivery is fine for this takeaway.",
+          "yue": "呢份外賣可以送到先畀錢。",
+          "audio": "assets/audio/words/pay-on-delivery-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/pay-on-delivery-phrase-ex2-slow.mp3",
+          "say": "Pay on delivery is fine for this takeaway."
+        }
+      ]
+    },
+    {
+      "id": "quantity-noun",
+      "lemma": "quantity",
+      "pos": "noun",
+      "senseId": "how-many",
+      "ipa": "/ˈkwɑn.tə.ti/",
+      "syllables": [
+        "quan",
+        "ti",
+        "ty"
+      ],
+      "syllableIpa": [
+        "ˈkwɑn",
+        "tə",
+        "ti"
+      ],
+      "stress": 1,
+      "arpabet": "K W AA1 N T AH0 T IY0",
+      "audio": "assets/audio/words/quantity-noun.mp3",
+      "audioSlow": "assets/audio/words/quantity-noun-slow.mp3",
+      "glossYue": "數量",
+      "glossZh": "數量",
+      "jyutping": "sou3 loeng6",
+      "collocations": [
+        "a large quantity",
+        "the quantity"
+      ],
+      "example": "The quantity is thirty gift boxes.",
+      "exampleYue": "數量係三十個禮盒。",
+      "say": "The quantity is thirty gift boxes.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "quantity",
+      "phrase": false,
+      "audioSha256": "90bc96d6eb1c56a419035d8b89a46a5ce8b13f33c3143a507a8d910b7e98991e",
+      "register": "珠寶",
+      "usageNotes": "quantity 係數量。",
+      "pitfallsYue": "quantity 係數量。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The quantity is thirty gift boxes.",
+          "yue": "數量係三十個禮盒。",
+          "audio": "assets/audio/words/quantity-noun.mp3",
+          "audioSlow": "assets/audio/words/quantity-noun-slow.mp3",
+          "say": "The quantity is thirty gift boxes."
+        },
+        {
+          "en": "Please confirm the quantity by email.",
+          "yue": "請用電郵確認數量。",
+          "audio": "assets/audio/words/quantity-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/quantity-noun-ex2-slow.mp3",
+          "say": "Please confirm the quantity by email."
+        }
+      ]
+    },
+    {
+      "id": "logo-noun",
+      "lemma": "logo",
+      "pos": "noun",
+      "senseId": "brand-mark",
+      "ipa": "/ˈloʊ.ɡoʊ/",
+      "syllables": [
+        "lo",
+        "go"
+      ],
+      "syllableIpa": [
+        "ˈloʊ",
+        "ɡoʊ"
+      ],
+      "stress": 1,
+      "arpabet": "L OW1 G OW0",
+      "audio": "assets/audio/words/logo-noun.mp3",
+      "audioSlow": "assets/audio/words/logo-noun-slow.mp3",
+      "glossYue": "標誌",
+      "glossZh": "標誌",
+      "jyutping": "biu1 zi3",
+      "collocations": [
+        "a small logo",
+        "your logo"
+      ],
+      "example": "We want a small logo on each box.",
+      "exampleYue": "我哋想每個盒都有個細標誌。",
+      "say": "We want a small logo on each box.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "logo",
+      "phrase": false,
+      "audioSha256": "7df2bb8d684a962f2e1a1ad04442b3f1049f71c8508534d678896f091eb8a522",
+      "register": "珠寶",
+      "usageNotes": "logo 係標誌。",
+      "pitfallsYue": "logo 係標誌。",
+      "related": [],
+      "examples": [
+        {
+          "en": "We want a small logo on each box.",
+          "yue": "我哋想每個盒都有個細標誌。",
+          "audio": "assets/audio/words/logo-noun.mp3",
+          "audioSlow": "assets/audio/words/logo-noun-slow.mp3",
+          "say": "We want a small logo on each box."
+        },
+        {
+          "en": "The logo sits on the lid of the gift.",
+          "yue": "標誌喺禮盒蓋上面。",
+          "audio": "assets/audio/words/logo-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/logo-noun-ex2-slow.mp3",
+          "say": "The logo sits on the lid of the gift."
+        }
+      ]
+    },
+    {
+      "id": "quote-noun",
+      "lemma": "quote",
+      "pos": "noun",
+      "senseId": "price-offer",
+      "ipa": "/ˈkwoʊt/",
+      "syllables": [
+        "quote"
+      ],
+      "syllableIpa": [
+        "ˈkwoʊt"
+      ],
+      "stress": 1,
+      "arpabet": "K W OW1 T",
+      "audio": "assets/audio/words/quote-noun.mp3",
+      "audioSlow": "assets/audio/words/quote-noun-slow.mp3",
+      "glossYue": "報價",
+      "glossZh": "報價",
+      "jyutping": "bou3 gaa3",
+      "collocations": [
+        "a written quote",
+        "the quote"
+      ],
+      "example": "I can send a written quote by email.",
+      "exampleYue": "我可以用電郵發一份書面報價。",
+      "say": "I can send a written quote by email.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "quote",
+      "phrase": false,
+      "audioSha256": "e7f2f9e0e3d90f9e01ab763c7a8a79b772cafc69b67b823ec1ae1fcdcdea859c",
+      "register": "珠寶",
+      "usageNotes": "quote 係報價。",
+      "pitfallsYue": "quote 係報價。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I can send a written quote by email.",
+          "yue": "我可以用電郵發一份書面報價。",
+          "audio": "assets/audio/words/quote-noun.mp3",
+          "audioSlow": "assets/audio/words/quote-noun-slow.mp3",
+          "say": "I can send a written quote by email."
+        },
+        {
+          "en": "The quote includes the lead time.",
+          "yue": "報價包括交貨期。",
+          "audio": "assets/audio/words/quote-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/quote-noun-ex2-slow.mp3",
+          "say": "The quote includes the lead time."
+        }
+      ]
+    },
+    {
+      "id": "bulk-adj",
+      "lemma": "bulk",
+      "pos": "adj",
+      "senseId": "large-lot",
+      "ipa": "/ˈbʌlk/",
+      "syllables": [
+        "bulk"
+      ],
+      "syllableIpa": [
+        "ˈbʌlk"
+      ],
+      "stress": 1,
+      "arpabet": "B AH1 L K",
+      "audio": "assets/audio/words/bulk-adj.mp3",
+      "audioSlow": "assets/audio/words/bulk-adj-slow.mp3",
+      "glossYue": "批量",
+      "glossZh": "批量",
+      "jyutping": "pai1 loeng6",
+      "collocations": [
+        "a bulk order",
+        "bulk gifts"
+      ],
+      "example": "This is a bulk order for the office.",
+      "exampleYue": "呢張係公司嘅批量單。",
+      "say": "This is a bulk order for the office.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "bulk",
+      "phrase": false,
+      "audioSha256": "c8460ed7dc55a6e3e2bdcef10758a3aefce005ba0c1e5e69c78b905fa9db1599",
+      "register": "珠寶",
+      "usageNotes": "bulk 係批量。",
+      "pitfallsYue": "bulk 係批量。",
+      "related": [],
+      "examples": [
+        {
+          "en": "This is a bulk order for the office.",
+          "yue": "呢張係公司嘅批量單。",
+          "audio": "assets/audio/words/bulk-adj.mp3",
+          "audioSlow": "assets/audio/words/bulk-adj-slow.mp3",
+          "say": "This is a bulk order for the office."
+        },
+        {
+          "en": "A bulk price is lower for thirty pieces.",
+          "yue": "三十件嘅批量價錢會低啲。",
+          "audio": "assets/audio/words/bulk-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/bulk-adj-ex2-slow.mp3",
+          "say": "A bulk price is lower for thirty pieces."
+        }
+      ]
+    },
+    {
+      "id": "lead-time-phrase",
+      "lemma": "lead time",
+      "pos": "phrase",
+      "senseId": "wait-time",
+      "ipa": "/ˈlid ˈtaɪm/",
+      "syllables": [
+        "lead",
+        "time"
+      ],
+      "syllableIpa": [
+        "ˈlid",
+        "ˈtaɪm"
+      ],
+      "stress": 1,
+      "arpabet": "L IY1 D T AY1 M",
+      "audio": "assets/audio/words/lead-time-phrase.mp3",
+      "audioSlow": "assets/audio/words/lead-time-phrase-slow.mp3",
+      "glossYue": "交貨期",
+      "glossZh": "交貨期",
+      "jyutping": "gaau1 fo3 kei4",
+      "collocations": [
+        "the lead time",
+        "a short lead time"
+      ],
+      "example": "The lead time is three weeks.",
+      "exampleYue": "交貨期係三個星期。",
+      "say": "The lead time is three weeks.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "lead time",
+      "phrase": true,
+      "audioSha256": "e5e512a6faab84aedbce8be6d37e1e043fd972e25b65f00d5b5ca42573d1342c",
+      "register": "珠寶",
+      "usageNotes": "lead time 係交貨期。",
+      "pitfallsYue": "lead time 係交貨期。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The lead time is three weeks.",
+          "yue": "交貨期係三個星期。",
+          "audio": "assets/audio/words/lead-time-phrase.mp3",
+          "audioSlow": "assets/audio/words/lead-time-phrase-slow.mp3",
+          "say": "The lead time is three weeks."
+        },
+        {
+          "en": "Please put the lead time in the quote.",
+          "yue": "請喺報價寫明交貨期。",
+          "audio": "assets/audio/words/lead-time-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/lead-time-phrase-ex2-slow.mp3",
+          "say": "Please put the lead time in the quote."
         }
       ]
     }

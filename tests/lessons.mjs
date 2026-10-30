@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), "utf8"));
 const ids = new Set(lex.items.map((item) => item.id));
-const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "t1", "t2", "t3", "t4", "t5", "t6", "r1", "r2", "r3", "r4", "r5", "w1", "d1", "d2", "t7", "w2", "w3", "d3", "j11", "j12", "t8", "w4", "r6", "w5", "f5", "f6", "d4", "d5", "r7", "w6", "t9"];
+const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "t1", "t2", "t3", "t4", "t5", "t6", "r1", "r2", "r3", "r4", "r5", "w1", "d1", "d2", "t7", "w2", "w3", "d3", "j11", "j12", "t8", "w4", "r6", "w5", "f5", "f6", "d4", "d5", "r7", "w6", "t9", "d6", "r8", "j13"];
 const lessons = shipped.map((id) =>
   JSON.parse(fs.readFileSync(path.join(root, "content/lessons", `${id}.json`), "utf8")),
 );
@@ -20,8 +20,8 @@ function exists(rel) {
   assert.ok(fs.statSync(file).size > 400, rel);
 }
 
-test("forty-five lessons each carry the 12-beat payload", () => {
-  assert.equal(lessons.length, 45);
+test("forty-eight lessons each carry the 12-beat payload", () => {
+  assert.equal(lessons.length, 48);
   for (const lesson of lessons) {
     for (const key of ["hero", "canDoYue", "canDoEn", "dialogue", "understand", "chunks", "shadow", "build", "roleplay", "quiz", "sound", "next"]) {
       assert.ok(key in lesson, `${lesson.id} ${key}`);
@@ -145,7 +145,7 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   const r4 = lessons.find((lesson) => lesson.id === "R4");
   const r5 = lessons.find((lesson) => lesson.id === "R5");
   const w1 = lessons.find((lesson) => lesson.id === "W1");
-  assert.equal(r4.next, "J6");
+  assert.equal(r4.next, "D6");
   assert.equal(r4.cefr, "A2");
   assert.match(r4.titleYue, /用餐/);
   assert.equal(r5.next, "W1");
@@ -192,7 +192,7 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
     );
   }
   const shippedOnPath = flatPath.filter((entry) => !entry.soon).map((entry) => entry.id);
-  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "D4", "D5", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "J6", "J7", "T5", "R5", "W1", "D1", "D2", "T7", "W4", "J8", "J9", "J10", "T6", "R6", "J12", "R7", "T8", "W2", "W3", "D3", "W5", "J11", "W6", "T9"]);
+  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "D4", "D5", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "J6", "J7", "T5", "R5", "W1", "D1", "D2", "T7", "W4", "R8", "J8", "J9", "J10", "T6", "R6", "J12", "R7", "T8", "W2", "W3", "D3", "W5", "J11", "W6", "T9", "J13"]);
   assert.equal(flatPath.find((entry) => entry.id === "J8").cefr, "B1");
   const said = (lesson) => lesson.dialogue.map((line) => line.text).join("\n");
   assert.ok(j4.dialogue.length >= 6 && j4.dialogue.length <= 10);
@@ -311,7 +311,7 @@ test("round 26 spoken goals, tray card, and spelled model", () => {
   assert.equal(r7.next, "T8");
   assert.equal(j11.next, "W6");
   assert.equal(w6.next, "T9");
-  assert.equal(t9.next, null);
+  assert.equal(t9.next, "J13");
   assert.equal(j11.cefr, "B2");
   assert.equal(d2.cefr, "A2/B1");
   assert.equal(t7.cefr, "A2/B1");
@@ -367,7 +367,7 @@ test("the app has a mic fallback and does not phone home", () => {
   assert.match(lesson, /改為即時講/);
   assert.match(lesson, />聽我</);
   assert.match(lesson, /咪未開/);
-  assert.match(lesson, /呢輪四十五課你行完啦/);
+  assert.match(lesson, /呢輪四十八課你行完啦/);
   assert.match(lesson, /setDone\(true\)/);
   assert.match(lesson, /playSfx/);
   assert.match(fs.readFileSync(path.join(root, "web/src/sfx.ts"), "utf8"), /AudioContext/);
@@ -426,7 +426,7 @@ test("role-play tip names a character or tells you it is your turn", () => {
   assert.match(lesson, /你扮 \$\{name\}/);
   assert.equal(lesson.includes("你而家係"), false);
   const data = fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8");
-  assert.match(data, /"F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "D4", "D5", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "J6", "J7", "T5", "R5", "W1", "D1", "D2", "T7", "W4", "J8", "J9", "J10", "T6", "R6", "J12", "R7", "T8", "W2", "W3", "D3", "W5", "J11", "W6", "T9"/);
+  assert.match(data, /"F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "D4", "D5", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "J6", "J7", "T5", "R5", "W1", "D1", "D2", "T7", "W4", "R8", "J8", "J9", "J10", "T6", "R6", "J12", "R7", "T8", "W2", "W3", "D3", "W5", "J11", "W6", "T9", "J13"/);
   assert.match(data, /const order = SHIPPED/);
 });
 
@@ -638,6 +638,30 @@ test("a later dialogue line does not reuse three content lemmas", () => {
       for (let j = 0; j < i; j += 1) {
         const shared = [...sets[i]].filter((tok) => sets[j].has(tok));
         assert.ok(shared.length < 3, `${lesson.id} ${lesson.dialogue[i].id} vs ${lesson.dialogue[j].id} ${shared.join(",")}`);
+      }
+    }
+  }
+});
+
+test("dialogue speakers alternate and staff do not ask the customer's question", () => {
+  const staff = new Set(["mei", "mina", "cole", "ana", "kai", "sam", "kim", "ada", "ren", "jo", "ray", "ben", "lea", "owen", "wen", "pat", "noa", "may"]);
+  const customerQuestion = /which\b.+\bbetter\b|how long will this\b.+\bparcel\b|\bspell my name\b/i;
+  for (const lesson of lessons) {
+    const main = lesson.dialogue.filter((line) => /-l\d+$/.test(line.id));
+    const speakers = main.map((line) => line.speaker);
+    if (new Set(speakers).size > 1) {
+      let run = 1;
+      for (let i = 1; i < speakers.length; i += 1) {
+        run = speakers[i] === speakers[i - 1] ? run + 1 : 1;
+        assert.ok(run <= 2, `${lesson.id} ${main[i].id}`);
+      }
+    }
+    const texts = lesson.dialogue.map((line) => line.text.trim().toLowerCase().replace(/\s+/g, " "));
+    assert.equal(new Set(texts).size, texts.length, `${lesson.id} duplicate line`);
+    const you = lesson.roleplay && lesson.roleplay.you;
+    for (const line of main) {
+      if (staff.has(line.speaker) && line.speaker !== you && customerQuestion.test(line.text)) {
+        assert.fail(`${line.id}: ${line.text}`);
       }
     }
   }

@@ -43,17 +43,17 @@
 - **Grammar:** May I…? Could you…? (recognition)
 - **Beats:** 12-beat standard
 
-### F5 — Personal info basics · A1 · NEW
-- **Goals:** Say where you're from, job, phone number, email slowly.
+### F5 — Personal info basics · A1 · SHIPPED
+- **Goals:** Answer where you're from, give a phone number and email, spell your name.
 - **Vocab (14):** from, live, work, job, phone, number, email, address, Macau, Hong Kong, salesperson, tourist, spell, again
 - **Grammar:** Present simple (I live / I work); Wh- questions
-- **Dialogue beats:** Meet → Where from → Job → Contact → Confirm spelling → Recap
+- **Dialogue beats:** Where from → Hong Kong → Phone number → Number and email → Spell your name
 
-### F6 — Daily routines · A1/A2 · NEW
-- **Goals:** Talk about a simple workday schedule.
+### F6 — Daily routines · A1/A2 · SHIPPED
+- **Goals:** Talk about a simple workday: start time, a break, and when the shop opens and closes.
 - **Vocab (15):** wake up, start, finish, lunch, break, open, close, shift, usually, always, sometimes, never, before, after, then
 - **Grammar:** Adverbs of frequency + present simple
-- **Dialogue beats:** Morning routine → At the counter → Break → Closing
+- **Dialogue beats:** What time do you start → Wake and shift → Break after lunch → A short break → Open before lunch, close after
 
 ---
 
@@ -122,6 +122,12 @@
 - **Grammar:** Present perfect / will; Clarifying questions
 - **Dialogue beats:** Answer phone → Clarify item → Check stock → Hold offer → Directions
 
+### J13 — Corporate gift order · B2 · SHIPPED
+- **Goals:** Order gifts in bulk, ask for a logo engraving and the lead time, and request a better price plus an email quote.
+- **Vocab:** bulk, quantity, logo, engraving, lead time, quote, email
+- **Grammar:** Could you do a better price for thirty pieces…? I can send a written quote by email.
+- **Dialogue beats:** Bulk quantity → Thirty pieces and logo → Lead time → Better price → Email quote → Confirm tonight
+
 ---
 
 ## Unit R — Restaurant（餐廳）· A1→B1
@@ -153,11 +159,17 @@
 - **Grammar:** I'd like to book…; Would it be possible to…?
 - **Dialogue beats:** Call → Party size/time → Constraint → Confirm name → Closing
 
-### R7 — Complaint at table · B1 · NEW
-- **Goals:** Dish wrong / cold / delay — polite assertiveness.
+### R7 — Complaint at table · B1 · SHIPPED
+- **Goals:** The soup arrived cold — polite assertiveness, one dish only.
 - **Vocab (12):** ordered, instead, cold, undercooked, long wait, manager, replace, complimentary, understand, right away, again, appreciate
 - **Grammar:** I ordered… but I received…; Indirect softeners
-- **Dialogue beats:** Signal server → Explain → Listen → Accept fix → Thank
+- **Dialogue beats:** Cold soup → Offer → Undercooked side → Replace the plate → Dessert → Fresh plate → Do not repeat → Heat the soup
+
+### R8 — Takeaway order by phone · A2/B1 · SHIPPED
+- **Goals:** Order a takeaway, give an address, spell the street, ask how long, and pay on delivery.
+- **Vocab:** order, takeaway, chicken, delivery, address, street, spell, minute, pay on delivery
+- **Grammar:** I'd like to order…; How long will the delivery take?; You can pay on delivery.
+- **Dialogue beats:** Order → Address → Spell Harbour Street → Minutes → How long → Pay at the door
 
 ---
 
@@ -202,11 +214,11 @@
 - **Grammar:** Present continuous (I'm visiting…); for + duration
 - **Dialogue beats:** Approach → Purpose → Stay → Goods → Clear
 
-### T9 — Flight disruption · B2 · NEW
-- **Goals:** Delayed/cancelled flight: rebooking language, compensation ask.
+### T9 — Flight disruption · B2 · SHIPPED
+- **Goals:** A delayed flight: rebook, then ask about a refund, then confirm the new itinerary.
 - **Vocab (16):** delayed, cancelled, connection, missed, rebook, voucher, hotel voucher, compensation, priority, standby, gate change, announcement, overnight, refund, alternative, inconvenience
-- **Grammar:** Passives (The flight has been cancelled); Indirect questions; Modals of necessity
-- **Dialogue beats:** Hear news → Desk queue → Options → Negotiate → Confirm new itinerary
+- **Grammar:** Indirect questions; The flight is delayed; A refund is possible.
+- **Dialogue beats:** Announcement → Still delayed → Rebook or standby → Yes we can rebook → Priority → Refund → Voucher alternative → Itinerary confirmed
 
 ---
 
@@ -246,7 +258,7 @@
 - **Goals:** 60-second self-intro for retail role; strength + example.
 - **Vocab (14):** currently, experience, customer-facing, handled, achieved, teamwork, reliable, shift, bilingual, Cantonese, English, strength, example, looking for
 - **Grammar:** Present perfect + past simple story; Discourse markers
-- **Dialogue beats:** Prompt → Intro → STAR mini → Question back → Close
+- **Dialogue beats:** Prompt → Intro → STAR mini → Teamwork answer → Close
 
 ---
 
@@ -270,17 +282,23 @@
 - **Grammar:** How much is the rent? Is water included?; First conditional (If I decide today…)
 - **Dialogue beats:** Call/agent → Viewing → Questions → Terms → Follow-up
 
-### D4 — Phone / internet shop · A2 · NEW
-- **Goals:** Buy SIM/top-up; ask plan difference.
-- **Vocab (12):** SIM, top-up, data, plan, unlimited, contract, prepaid, coverage, activate, passport, cheaper, enough
+### D4 — Phone / internet shop · A2 · SHIPPED
+- **Goals:** The customer asks which plan is better, chooses prepaid, activates with a passport, and pays.
+- **Vocab (12):** SIM, top-up, data, plan, unlimited, mobile contract, prepaid, coverage, activate, passport, cheaper, enough
 - **Grammar:** Which plan is better for…? I'll take the…
-- **Dialogue beats:** Need → Compare → Choose → Activate → Pay
+- **Dialogue beats:** Customer asks → Assistant explains → Customer chooses prepaid → Activate with passport → Contract question → Top-up → Pay
 
-### D5 — Post office / parcel · A2 · NEW
-- **Goals:** Send parcel; ask tracking; customs form basics.
-- **Vocab (12):** parcel, tracking, stamp, airmail, declare, fragile, weight, destination, form, receipt, days, signature
-- **Grammar:** I'd like to send this to…; How long will it take?
-- **Dialogue beats:** Counter → Options → Form → Pay → Tracking
+### D5 — Post office / parcel · A2 · SHIPPED
+- **Goals:** Send one small parcel by airmail, ask how long, mark it fragile, and keep the receipt.
+- **Vocab (12):** parcel, tracking, postage stamp, airmail, declare, fragile, weight, destination, form, receipt, days, signature
+- **Grammar:** I'd like to send this…; How long will this small parcel take?
+- **Dialogue beats:** Send by airmail → Customs form → How long → Five days → Mark fragile → Weight → Customer keeps the receipt → Tracking and stamp
+
+### D6 — Pharmacy · A2 · SHIPPED
+- **Goals:** Describe a cough and an allergy, then ask about the dosage and taking a tablet after meals.
+- **Vocab:** cough, symptom, pharmacist, allergy, dosage, tablet, twice a day, after meals, prescription, pharmacy
+- **Grammar:** I need something for a cough. The dosage is one tablet twice a day. I can take it after meals.
+- **Dialogue beats:** Cough at the pharmacy → Other symptom → Drug allergy → Dosage → After meals → Prescription → Repeat the dosage → Rest at home
 
 ---
 
@@ -299,7 +317,8 @@ Every round until map complete, ship **≥3 NEW lessons** in this order (skip al
 9. **W4, W5, R6** (small talk, complaint call, reservation)  
 10. **F5, F6, D4** (personal info, routines, SIM)  
 11. **D5, R7, W6, T9** (parcel, table complaint, interview, flight disruption)  
-12. Then polish / legendary review nodes / B2 stretch
+12. **D6, R8, J13** (pharmacy, takeaway by phone, corporate gift order)  
+13. Then polish / legendary review nodes / further B2 stretch
 
 **Path UX:** show CEFR chip (A1/A2/B1/B2) on each node; group Path into level tracks; lock by prerequisite; keep `soon:true` teasers for unshipped.
 

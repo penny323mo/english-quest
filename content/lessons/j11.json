@@ -8,8 +8,8 @@
   "minutes": 12,
   "hero": "assets/art/lessons/j11.webp",
   "cast": [
-    "kai",
-    "tom"
+    "ada",
+    "nia"
   ],
   "cefr": "B2",
   "lemmas": [
@@ -35,8 +35,8 @@
   "dialogue": [
     {
       "id": "j11-l1",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "ada",
+      "speakerLabel": "Ada",
       "text": "Good morning. I was wondering whether this special occasion is an anniversary or a quiet engagement this month.",
       "glossYue": "早晨。我想問呢個特別場合係週年，定係低調慶祝訂婚。",
       "audio": "assets/audio/lines/j11-l1.mp3",
@@ -46,8 +46,8 @@
     },
     {
       "id": "j11-l2",
-      "speaker": "tom",
-      "speakerLabel": "Tom",
+      "speaker": "nia",
+      "speakerLabel": "Nia",
       "text": "The occasion is an anniversary dinner, and my preference is a custom design with a classic gold look.",
       "glossYue": "呢個場合係週年晚飯，我偏好係經典金款嘅訂做設計。",
       "audio": "assets/audio/lines/j11-l2.mp3",
@@ -57,10 +57,10 @@
     },
     {
       "id": "j11-l3",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "ada",
+      "speakerLabel": "Ada",
       "text": "If you chose a contemporary gold piece, would you like it understated or more of a bold statement?",
-      "glossYue": "如果佢揀一件現代金飾，你想要低調，定係搶眼啲？",
+      "glossYue": "如果你揀一件現代金飾，你想要低調，定係搶眼啲？",
       "audio": "assets/audio/lines/j11-l3.mp3",
       "audioSlow": "assets/audio/lines/j11-l3-slow.mp3",
       "say": "If you chose a contemporary gold piece, would you like it understated or more of a bold statement?",
@@ -68,8 +68,8 @@
     },
     {
       "id": "j11-l4",
-      "speaker": "tom",
-      "speakerLabel": "Tom",
+      "speaker": "nia",
+      "speakerLabel": "Nia",
       "text": "My clear preference is understated, and I would treat this special gold piece as a quiet personal investment.",
       "glossYue": "我明顯偏好低調，我會當呢件特別金飾係一份私人保值。",
       "audio": "assets/audio/lines/j11-l4.mp3",
@@ -79,8 +79,8 @@
     },
     {
       "id": "j11-l5",
-      "speaker": "tom",
-      "speakerLabel": "Tom",
+      "speaker": "nia",
+      "speakerLabel": "Nia",
       "text": "If I placed a custom deposit today, would the full timeline still fit my anniversary appointment next month?",
       "glossYue": "如果我今日落訂金，成個時間表仲趕唔趕得切我下個月嘅週年預約？",
       "audio": "assets/audio/lines/j11-l5.mp3",
@@ -90,8 +90,8 @@
     },
     {
       "id": "j11-l6",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "ada",
+      "speakerLabel": "Ada",
       "text": "I was wondering whether you also value availability, exclusivity, and a discreet follow-up call after the appointment.",
       "glossYue": "我想問你重唔重視檔期、獨家，同預約之後一次低調嘅跟進電話。",
       "audio": "assets/audio/lines/j11-l6.mp3",
@@ -101,8 +101,8 @@
     },
     {
       "id": "j11-l7",
-      "speaker": "tom",
-      "speakerLabel": "Tom",
+      "speaker": "nia",
+      "speakerLabel": "Nia",
       "text": "If the new design were more contemporary, I would still want a discreet and understated gold investment piece.",
       "glossYue": "如果新設計再現代啲，我都想要一件低調又含蓄嘅金保值。",
       "audio": "assets/audio/lines/j11-l7.mp3",
@@ -112,8 +112,8 @@
     },
     {
       "id": "j11-l8",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "ada",
+      "speakerLabel": "Ada",
       "text": "If you confirmed the deposit, I would book a follow-up and protect the exclusivity of the design.",
       "glossYue": "如果你確認訂金，我會約跟進，並保住呢個設計嘅獨家。",
       "audio": "assets/audio/lines/j11-l8.mp3",
@@ -200,7 +200,7 @@
       "choices": [
         "My clear preference is understated, and I would treat this special gold piece as a quiet personal investment.",
         "I am visiting for tourism.",
-        "Please notify me by a short phone message."
+        "The soup arrived cold at the table."
       ],
       "answer": 0,
       "explain": "講明偏好低調，並當呢件係保值。"
@@ -225,12 +225,12 @@
     }
   ],
   "roleplay": {
-    "you": "tom",
+    "you": "nia",
     "intro": "你喺貴客房傾一件訂做。講場合同偏好。可以講：If I placed a deposit。",
     "turns": [
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "Ada",
+        "partnerId": "ada",
         "line": "Good morning. I was wondering whether this special occasion is an anniversary or a quiet engagement this month.",
         "audio": "assets/audio/lines/j11-l1.mp3",
         "audioSlow": "assets/audio/lines/j11-l1-slow.mp3",
@@ -243,8 +243,8 @@
         "modelSlow": "assets/audio/lines/j11-l2-slow.mp3"
       },
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "Ada",
+        "partnerId": "ada",
         "line": "If you chose a contemporary gold piece, would you like it understated or more of a bold statement?",
         "audio": "assets/audio/lines/j11-l3.mp3",
         "audioSlow": "assets/audio/lines/j11-l3-slow.mp3",
@@ -257,8 +257,8 @@
         "modelSlow": "assets/audio/lines/j11-l4-slow.mp3"
       },
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "Ada",
+        "partnerId": "ada",
         "line": "I was wondering whether you also value availability, exclusivity, and a discreet follow-up call after the appointment.",
         "audio": "assets/audio/lines/j11-l6.mp3",
         "audioSlow": "assets/audio/lines/j11-l6-slow.mp3",

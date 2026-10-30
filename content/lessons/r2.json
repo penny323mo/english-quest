@@ -34,34 +34,31 @@
       "id": "r2-l1",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "What would you like to order from the menu today?",
-      "glossYue": "你今日想喺餐牌叫咩？",
+      "text": "What would you like to order from the menu today, please?",
+      "glossYue": "你今日想喺餐牌點咩？",
       "audio": "assets/audio/lines/r2-l1.mp3",
       "audioSlow": "assets/audio/lines/r2-l1-slow.mp3",
-      "say": "What would you like to order from the menu today?",
-      "hideGloss": false
+      "say": "What would you like to order from the menu today, please?"
     },
     {
       "id": "r2-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I'd like the chicken, please, and a small salad with it.",
-      "glossYue": "我想叫雞，唔該，再加個細沙律。",
+      "text": "I'd like the chicken, please, and a small salad with it too.",
+      "glossYue": "我要雞，再加一份小沙律。",
       "audio": "assets/audio/lines/r2-l2.mp3",
       "audioSlow": "assets/audio/lines/r2-l2-slow.mp3",
-      "say": "I'd like the [[tʃˈɪkən]] , please, and a small salad with it.",
-      "hideGloss": false
+      "say": "I'd like the chicken, please, and a small salad with it too."
     },
     {
       "id": "r2-l3",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Would you like water or tea with your meal?",
-      "glossYue": "你想要水定茶配餐？",
+      "text": "Would you like water, tea, or coffee with your meal?",
+      "glossYue": "你想要水、茶，定係咖啡？",
       "audio": "assets/audio/lines/r2-l3.mp3",
       "audioSlow": "assets/audio/lines/r2-l3-slow.mp3",
-      "say": "Would you like water or tea with your meal?",
-      "hideGloss": false
+      "say": "Would you like water, tea, or coffee with your meal?"
     },
     {
       "id": "r2-l4",
@@ -78,11 +75,11 @@
       "id": "r2-l5",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Anything else for the table, or is that everything?",
-      "glossYue": "檯上仲有冇其他，定係就咁？",
+      "text": "Anything else for the table, or is that everything for you?",
+      "glossYue": "檯上仲要咩，定係就咁多？",
       "audio": "assets/audio/lines/r2-l5.mp3",
       "audioSlow": "assets/audio/lines/r2-l5-slow.mp3",
-      "say": "Anything else for the table, or is that everything?",
+      "say": "Anything else for the table, or is that everything for you?",
       "hideGloss": true
     }
   ],
@@ -206,10 +203,10 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "What would you like to order?",
+        "line": "What would you like to order from the menu today, please?",
         "audio": "assets/audio/lines/r2-l1.mp3",
         "audioSlow": "assets/audio/lines/r2-l1-slow.mp3",
-        "expect": "I'd like the chicken, please.",
+        "expect": "I'd like the chicken, please, and a small salad with it too.",
         "keywords": [
           "chicken"
         ],
@@ -219,10 +216,10 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "Would you like water or tea?",
+        "line": "Would you like water, tea, or coffee with your meal?",
         "audio": "assets/audio/lines/r2-l3.mp3",
         "audioSlow": "assets/audio/lines/r2-l3-slow.mp3",
-        "expect": "Can I have some water, please?",
+        "expect": "Can I have some water, please, and no ice in the glass?",
         "keywords": [
           "water"
         ],
@@ -232,7 +229,7 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "Anything else?",
+        "line": "Anything else for the table, or is that everything for you?",
         "audio": "assets/audio/lines/r2-l5.mp3",
         "audioSlow": "assets/audio/lines/r2-l5-slow.mp3",
         "expect": "What do you recommend?",
