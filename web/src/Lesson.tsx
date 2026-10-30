@@ -25,6 +25,7 @@ function tipFor(id: string): string {
   if (id === "J2") return "w 要圓唇，v 係上牙輕碰下唇。";
   if (id === "J3") return "this 尾係清 /s/，these 尾係有聲 /z/。pair 同 pearl 唔好撈。";
   if (id === "T1") return "sure、show 先係 /ʃ/。check-in 嘅 check 係 /tʃ/，前面有一粒塞音。";
+  if (id === "T2") return "liquid、left、laptop 都有 /l/。straight 係 /eɪ/，唔好讀成 street。";
   if (id === "R1") return "美式 /r/ 舌尖唔好掂到上顎。table 本身冇 /r/。";
   if (id === "R2") return "Can I 入面 can 好輕，讀 /kən/。can't 先至係 /kænt/，有個清楚嘅 /t/。";
   return "跟住模範嘅口型，慢慢講。";
@@ -573,7 +574,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪十課你行完啦。到期嘅卡會喺重溫等你。</p>
+        <p className="lede">呢輪十一課你行完啦。到期嘅卡會喺重溫等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );
@@ -623,6 +624,17 @@ function SpeakBox({
       if (userUrl) URL.revokeObjectURL(userUrl);
     };
   }, [userUrl]);
+
+  function stopSpeech() {
+    try { speechRef.current?.stop(); } catch { /* already stopped */ }
+    speechRef.current = null;
+    setListening(false);
+  }
+
+  function stopRecord() {
+    if (recording && recorderRef.current) recorderRef.current.stop();
+    setRecording(false);
+  }
 
   function startSpeech() {
     const Ctor = getRecognizer();
@@ -686,10 +698,14 @@ function SpeakBox({
   }
 
   const hits = keywordHits(transcript, keywords);
+  const canSpeak = Boolean(getRecognizer());
   return (
     <div className="stack">
       <p className="who">你可以講</p>
       <p className="line" lang="en">{expect}</p>
+      {mode === "record" && (
+        <p className="note">錄一次就得。撳「聽我」，再撳「聽模範」，輪流聽。部機唔使識即時辨認。</p>
+      )}
       {mode === "speech" ? (
         <button className="btn teal block" type="button" onClick={startSpeech} disabled={listening}>
           {listening ? "聽緊你講…" : "開始講"}
@@ -699,27 +715,34 @@ function SpeakBox({
           {recording ? "停錄音" : "錄音，同模範比較"}
         </button>
       )}
-      {mode === "speech" && (
-        <button className="btn ghost block" type="button" onClick={() => setMode("record")}>
+      {recording && (
+        <div className="wave" aria-hidden="true">
+          <span /><span /><span /><span /><span />
+        </div>
+      )}
+      {mode === "speech" ? (
+        <button className="btn ghost block" type="button" onClick={() => { stopSpeech(); setMode("record"); }}>
           改為錄音比較
         </button>
-      )}
+      ) : canSpeak ? (
+        <button className="btn ghost block" type="button" onClick={() => { stopRecord(); setMode("speech"); }}>
+          改為即時講
+        </button>
+      ) : null}
       {transcript && (
         <p className="fine" lang="en">
           聽到：{transcript}
           {keywords.length ? ` · 關鍵 ${hits.length}/${keywords.length}` : ""}
         </p>
       )}
-      {userUrl && (
-        <button className="btn quiet block" type="button" onClick={() => void new Audio(userUrl).play()}>
-          播我嘅錄音
-        </button>
-      )}
       <div className="row-btns">
+        {userUrl && (
+          <button className="btn quiet" type="button" onClick={() => void new Audio(userUrl).play()}>聽我</button>
+        )}
         <button className="btn quiet" type="button" onClick={() => playAsset(modelAudio)}>聽模範</button>
         <button className="btn ghost" type="button" onClick={() => playAsset(modelSlow)}>慢速模範</button>
       </div>
-      {micError && <p className="note">部機用唔到咪。你可以聽模範，然後繼續。呢課唔會卡住。</p>}
+      {micError && <p className="note">咪未開。你可以聽模範，然後繼續。呢課唔會卡住。</p>}
       <p className="fine">{tip}</p>
     </div>
   );

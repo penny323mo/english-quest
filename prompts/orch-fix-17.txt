@@ -1,0 +1,45 @@
+You are the coder for English Quest (grok 4.7). cd /workspace/sidequest/english-quest.
+Phase 3 — 99.99 push. Round 17 of max 26 (10 more rounds after round 16). Supervisor: Grok Duet.
+
+Read SPEC.md, DECISIONS.md, and the authoritative live SHIP audit:
+  /workspace/sidequest/english-quest/review/loop-r16/coder-audit.md
+Round 16 closed every open defect and met done gates (every dim ≥9, LH 98/100/100/100). This phase pushes toward Penny's 99.99 north-star. Scores to raise: Art/UI/Lexicon/Pron UX/Pedagogy/Speaking/SRS/Flow/Audio are all 9; Perf is 10. Target several 10s without regressing anything.
+
+CRITICAL RULE: you may NOT finish with "no defects" or only a CHANGELOG commit. This round MUST produce a real app-code diff under content/, web/, tests/, assets/, and/or scripts/. Empty product diffs stop the whole loop.
+
+Do ALL of the following (priority order):
+
+1) Pedagogy → ship T2 安檢同方向
+   - Path already teases T2 with soon:true. Build a full 12-beat lesson to the same gold standard as R2/J3 (hook → shadow → role → sound → quiz → 溫習).
+   - Workplace-real airport security + asking for directions (bin / liquids / boarding pass / "Which way to…?" / "Straight ahead" / gate).
+   - Lexicon: dual-check IPA vs CMUdict; flag disagreements in review/flags.json; natural HK Cantonese glossYue/exampleYue (Traditional only; 畀 not 俾; correct classifiers; no Mandarin calques).
+   - New clips: pad ~180 ms lead / ~200 ms trail (existing Piper/Kokoro pipeline in scripts/). Keep IPA consistent.
+   - Distinct Harbor Glow hook WebP (900×1200) with width/height; preload pattern unchanged.
+   - Unlock T2 after T1 in content/path.json + web data; set next on t1.json; leave T3+ as soon teasers.
+   - Tests must cover the new lesson / lexicon short-example rule / Cantonese sweep.
+
+2) Speaking UX toward 10
+   - On iPhone Safari the record-compare fallback must feel calm and obvious: clearer copy, no soft-lock if mic denied, A/B play of learner vs model still works, mode switch speech↔record stays one tap.
+   - Fix any 390px clip on the speak beat (buttons, notes, waveforms).
+
+3) Art / UI polish toward 10
+   - T2 hook must not reuse T1/R* compositions. Cast stays locked. No empty circles / green squares on first paint.
+   - Spot-check Path, onboarding, settings, attributions at 390px — zero horizontal overflow, safe-area respected.
+
+4) Perf / Audio
+   - Keep Lighthouse mobile Perf ≥98 (aim 100); no regression on a11y/BP/SEO 100.
+   - New audio only for new/changed says; do not re-render the whole bank.
+
+5) Residual Cantonese / lexicon sweep
+   - Skim EVERY glossYue / exampleYue / role option / canDoYue for stiff or Mandarin-flavoured lines; fix any leftover.
+   - Short English examples still must pass the ≤2-word allowlist test (13+ tests green).
+
+Keep: zero IPA/audio regressions, zero 390px overflow, no paid services, no secrets printed.
+Do not edit reviews/ or prompts/. Append '## Round 17 fixes' to CHANGELOG.md listing each concrete change.
+
+At the END: git add -A (respect .gitignore), commit with a clear message (e.g. "Ship round 17: T2 安檢同方向, speaking polish"), push to origin main (ff-only, never --force).
+Do NOT force-add gitignored report/screenshot/audit/review paths (REPORT.md, reviews/*, review/loop-*, screenshots/orch). Do not git rm anything else. Do not touch LICENSE. Do not use paid services. Do not print secrets.
+Do not touch nightly herbalist-ledger panes or their project dir.
+
+WHEN COMPLETELY FINISHED, as your very last action, create the file /workspace/sidequest/english-quest/.orch/fix-17.done containing the word DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-17.done

@@ -511,6 +511,62 @@
       "taughtIpa": "/kən/",
       "resolvedBy": "round-14 lexicographer",
       "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "liquid-noun",
+      "lemma": "liquid",
+      "pos": "noun",
+      "cmudict": [
+        "L IH1 K W AH0 D /ˈlɪk.wəd/",
+        "L IH1 K W IH0 D /ˈlɪk.wɪd/"
+      ],
+      "wiktionary": [
+        "not re-fetched this round"
+      ],
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU lists /ˈlɪk.wəd/ first and /ˈlɪk.wɪd/ second. Teaching materials usually use /ɪ/ in the second syllable.",
+      "resolution": "Teach /ˈlɪk.wɪd/, which is in CMU. /ˈlɪk.wəd/ stays a labelled variant. The clip is forced to /ɪ/ so it matches the card.",
+      "resolved": true,
+      "taughtIpa": "/ˈlɪk.wɪd/",
+      "resolvedBy": "round-17 lexicographer",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "which-det",
+      "lemma": "which",
+      "pos": "det",
+      "cmudict": [
+        "W IH1 CH /wɪtʃ/",
+        "HH W IH1 CH /hwɪtʃ/"
+      ],
+      "wiktionary": [
+        "not re-fetched this round"
+      ],
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU lists /wɪtʃ/ first and the wine-whine /hwɪtʃ/ second.",
+      "resolution": "Teach /wɪtʃ/. /hwɪtʃ/ stays a labelled variant for learners who still keep the /h/.",
+      "resolved": true,
+      "taughtIpa": "/wɪtʃ/",
+      "resolvedBy": "round-17 lexicographer",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "security-noun",
+      "lemma": "security",
+      "pos": "noun",
+      "cmudict": [
+        "S IH0 K Y UH1 R AH0 T IY0 /sɪ.ˈkjʊɹ.ə.ti/"
+      ],
+      "wiktionary": [
+        "not re-fetched this round"
+      ],
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU starts with /sɪ/. A common weak form starts with /sə/.",
+      "resolution": "Teach the CMU form /sɪ.ˈkjʊɹ.ə.ti/. /sə.ˈkjʊɹ.ə.ti/ stays a labelled variant. The clip is forced to /sɪ/ so it matches the card.",
+      "resolved": true,
+      "taughtIpa": "/sɪ.ˈkjʊɹ.ə.ti/",
+      "resolvedBy": "round-17 lexicographer",
+      "resolvedAt": "2026-10-30"
     }
   ]
 }

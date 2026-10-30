@@ -824,6 +824,64 @@ def build_items() -> None:
         "The aisle seat is free.", "走廊位仲有。",
         note="呢度係座位仲有，唔係免費。")
 
+    # --- T2 security and directions ---
+    add("bin-noun", "bin", "noun", "security-bin", "B IH1 N", ["bin"],
+        "膠盤", "安检盘", "gaau1 pun4", ["in the bin", "a security bin"],
+        "Put the liquids in the bin.", "將啲液體放喺個盤度。",
+        note="安檢用嘅膠盤，唔係垃圾桶。")
+    add("liquid-noun", "liquid", "noun", "liquid", "L IH1 K . W IH0 D", ["liq", "uid"],
+        "液體", "液体", "jik6 tai2", ["liquids in the bin"],
+        "Put the liquids in the bin.", "將啲液體放喺個盤度。",
+        variants=["/ˈlɪk.wəd/"],
+        piper="Put the [[lˈɪkwɪdz]] in the bin.",
+        note="CMU 有 /ˈlɪk.wɪd/ 同 /ˈlɪk.wəd/。卡片教 /ɪ/ 嗰條。錄音跟卡片。")
+    add("laptop-noun", "laptop", "noun", "laptop", "L AE1 P . T AA2 P", ["lap", "top"],
+        "手提電腦", "笔记本电脑", "sau2 tai4 din6 nou5", ["my laptop"],
+        "Here is my laptop.", "我部手提電腦喺度。",
+        piper="Here is my [[lˈæpˌtɑp]].",
+        note="兩個音節。重音喺 lap，top 有次重音。")
+    add("belt-noun", "belt", "noun", "waist-belt", "B EH1 L T", ["belt"],
+        "腰帶", "腰带", "jiu1 daai3", ["take off your belt"],
+        "Please take off your belt.", "唔該除咗條腰帶。",
+        note="有 /l/。同 left 一樣，元音係 /ɛ/。")
+    add("straight-adv", "straight", "adv", "directly", "S T R EY1 T", ["straight"],
+        "直行", "直行", "zik6 hang4", ["go straight"],
+        "Go straight ahead.", "直行就得。",
+        note="元音係 /eɪ/。唔好讀成 street 嘅 /i/。")
+    add("ahead-adv", "ahead", "adv", "in-front", "AH0 . HH EH1 D", ["a", "head"],
+        "前面", "前面", "cin4 min6", ["straight ahead"],
+        "The gate is straight ahead.", "閘口就喺前面。",
+        note="兩個音節。第一個音好輕 /ə/，重音喺 head。")
+    add("which-det", "which", "det", "which-choice", "W IH1 CH", ["which"],
+        "邊個", "哪个", "bin1 go3", ["which way"],
+        "Which way to the gate?", "去閘口邊邊行？",
+        variants=["/hwɪtʃ/"],
+        note="美式多數讀 /wɪtʃ/。有人保留 /hw/。卡片教 /w/。")
+    add("left-adv", "left", "adv", "left-side", "L EH1 F T", ["left"],
+        "左邊", "左边", "zo2 bin6", ["on the left"],
+        "Your gate is on the left.", "你個閘口喺左邊。",
+        note="開頭 /l/，元音 /ɛ/。同 lift 只差個元音。")
+    add("lift-noun", "lift", "noun", "elevator", "L IH1 F T", ["lift"],
+        "升降機", "电梯", "sing1 gong3 gei1", ["the lift"],
+        "Take the lift on the left.", "左邊有部升降機。",
+        note="對比組。/lɪft/ 係升降機。left /lɛft/ 係左邊。")
+    add("street-noun", "street", "noun", "city-street", "S T R IY1 T", ["street"],
+        "街", "街", "gaai1", ["on the street"],
+        "This is not the street.", "呢度唔係條街。",
+        note="對比組。street 係長 /i/。straight 先至係 /eɪ/。")
+    add("security-noun", "security", "noun", "airport-security", "S IH0 . K Y UH1 R . AH0 . T IY0", ["se", "cu", "ri", "ty"],
+        "安檢", "安检", "on1 gim2", ["at security"],
+        "Security is this way.", "安檢喺呢邊。",
+        variants=["/sə.ˈkjʊɹ.ə.ti/"],
+        piper="[[sɪkjˈʊɹəti]] is this way.",
+        note="四個音節。CMU 第一個音係 /sɪ/。有人讀成 /sə/。卡片跟 CMU。")
+    add("which-way-phrase", "which way", "phrase", "which-direction", "W IH1 CH | W EY1", ["which", "way"],
+        "邊邊行", "往哪边", "bin1 bin1 haang4", ["which way to the gate"],
+        "Which way to the gate?", "去閘口邊邊行？", phrase=True)
+    add("straight-ahead-phrase", "straight ahead", "phrase", "straight-on", "S T R EY1 T | AH0 . HH EH1 D", ["straight", "a", "head"],
+        "直行", "直行", "zik6 hang4", ["go straight ahead"],
+        "Go straight ahead, please.", "唔該直行。", phrase=True)
+
     # phrases
     add("thank-you-phrase", "thank you", "phrase", "thanks", "TH AE1 NG K | Y UW1", ["thank", "you"],
         "多謝", "谢谢", "do1 ze6", ["thank you so much"],
@@ -1342,6 +1400,48 @@ FLAGS = [
         "resolvedBy": "round-14 lexicographer",
         "resolvedAt": "2026-10-30",
     },
+    {
+        "id": "liquid-noun",
+        "lemma": "liquid",
+        "pos": "noun",
+        "cmudict": ["L IH1 K W AH0 D /ˈlɪk.wəd/", "L IH1 K W IH0 D /ˈlɪk.wɪd/"],
+        "wiktionary": ["not re-fetched this round"],
+        "freeDictionary": "not in the local phonetics cache",
+        "disagreement": "CMU lists /ˈlɪk.wəd/ first and /ˈlɪk.wɪd/ second. Teaching materials usually use /ɪ/ in the second syllable.",
+        "resolution": "Teach /ˈlɪk.wɪd/, which is in CMU. /ˈlɪk.wəd/ stays a labelled variant. The clip is forced to /ɪ/ so it matches the card.",
+        "resolved": True,
+        "taughtIpa": "/ˈlɪk.wɪd/",
+        "resolvedBy": "round-17 lexicographer",
+        "resolvedAt": "2026-10-30",
+    },
+    {
+        "id": "which-det",
+        "lemma": "which",
+        "pos": "det",
+        "cmudict": ["W IH1 CH /wɪtʃ/", "HH W IH1 CH /hwɪtʃ/"],
+        "wiktionary": ["not re-fetched this round"],
+        "freeDictionary": "not in the local phonetics cache",
+        "disagreement": "CMU lists /wɪtʃ/ first and the wine-whine /hwɪtʃ/ second.",
+        "resolution": "Teach /wɪtʃ/. /hwɪtʃ/ stays a labelled variant for learners who still keep the /h/.",
+        "resolved": True,
+        "taughtIpa": "/wɪtʃ/",
+        "resolvedBy": "round-17 lexicographer",
+        "resolvedAt": "2026-10-30",
+    },
+    {
+        "id": "security-noun",
+        "lemma": "security",
+        "pos": "noun",
+        "cmudict": ["S IH0 K Y UH1 R AH0 T IY0 /sɪ.ˈkjʊɹ.ə.ti/"],
+        "wiktionary": ["not re-fetched this round"],
+        "freeDictionary": "not in the local phonetics cache",
+        "disagreement": "CMU starts with /sɪ/. A common weak form starts with /sə/.",
+        "resolution": "Teach the CMU form /sɪ.ˈkjʊɹ.ə.ti/. /sə.ˈkjʊɹ.ə.ti/ stays a labelled variant. The clip is forced to /sɪ/ so it matches the card.",
+        "resolved": True,
+        "taughtIpa": "/sɪ.ˈkjʊɹ.ə.ti/",
+        "resolvedBy": "round-17 lexicographer",
+        "resolvedAt": "2026-10-30",
+    },
 ]
 
 
@@ -1405,6 +1505,13 @@ def build_lessons() -> list[dict]:
         line("t1-l4", "ling", "Ling", "A window seat, please.", "要靠窗位，唔該。"),
         line("t1-l5", "kai", "Kai", "Sure. I'll show you the information. Here is your boarding pass.", "好。我畀你睇吓資料。你張登機證喺度。"),
     ]
+    t2 = [
+        line("t2-l1", "kai", "Kai", "Boarding pass, please.", "登機證唔該。"),
+        line("t2-l2", "ling", "Ling", "Here is my boarding pass.", "我張登機證喺度。"),
+        line("t2-l3", "kai", "Kai", "Please put your liquids in the bin.", "唔該將液體放喺個盤度。"),
+        line("t2-l4", "ling", "Ling", "Which way to the gate?", "去閘口邊邊行？"),
+        line("t2-l5", "kai", "Kai", "Straight ahead. Your gate is on the left.", "直行就得。你個閘口喺左邊。"),
+    ]
     r1 = [
         line("r1-l1", "ana", "Ana", "Good evening. Do you have a reservation?", "你好，有冇訂位呀？"),
         line("r1-l2", "tom", "Tom", "Yes. A table for two, please.", "有。兩位，唔該。", "Yes. [[ə ˈteɪbəl fɚ ˈtu]] , please."),
@@ -1448,6 +1555,8 @@ def build_lessons() -> list[dict]:
         line("j2-l6", "tom", "Tom", "Yes, please.", "好，唔該。"),
         line("t1-m1", "ling", "Ling", "I'm flying to Hong Kong.", "我飛去香港。"),
         line("t1-m2", "ling", "Ling", "Here is my passport.", "呢本係我嘅護照。"),
+        line("t2-m1", "ling", "Ling", "Here is my laptop.", "我部手提電腦喺度。"),
+        line("t2-l6", "kai", "Kai", "You're all set.", "你搞掂啦。"),
         line("r1-m3", "tom", "Tom", "Thank you.", "多謝。"),
         line("j1-l6", "tom", "Tom", "Thanks. I'll look around.", "多謝。我周圍睇吓。"),
         line("t1-l6", "kai", "Kai", "May I see your passport, please?", "可唔可以畀我睇吓護照？"),
@@ -1913,6 +2022,62 @@ def build_lessons() -> list[dict]:
                 ],
                 "drill": ["sure-adj", "show-verb", "information-noun", "sheet-noun", "check-verb"],
             },
+            "next": "T2",
+        },
+        {
+            "id": "T2",
+            "unit": "T",
+            "titleYue": "安檢同方向",
+            "titleEn": "Security and directions",
+            "canDoYue": "你能夠過安檢同問閘口點行。",
+            "canDoEn": "Clear security and ask which way to the gate.",
+            "minutes": 12,
+            "hero": "assets/art/lessons/t2.webp",
+            "cast": ["kai"],
+            "lemmas": ["bin-noun", "liquid-noun", "laptop-noun", "belt-noun", "which-way-phrase", "straight-ahead-phrase", "which-det", "straight-adv", "ahead-adv", "left-adv", "lift-noun", "street-noun", "security-noun", "gate-noun", "boarding-pass-phrase", "way-noun", "please-adv"],
+            "dialogue": t2,
+            "understand": [
+                {"prompt": "Please put your liquids in the bin. 係叫你？", "choices": ["將液體放喺個盤", "叫雞", "訂位"], "answer": 0, "explain": "bin 係安檢用嘅膠盤。"},
+                {"prompt": "Which way to the gate? 係問咩？", "choices": ["去閘口邊邊行", "你飛去邊", "你想叫咩"], "answer": 0, "explain": "which way 係問方向。"},
+                {"prompt": "Straight ahead. 你應該？", "choices": ["直行，唔使轉彎", "返去櫃檯", "坐低叫餐"], "answer": 0, "explain": "ahead 係前面。直行就得。"},
+            ],
+            "chunks": [
+                {"pattern": "Put the liquids in the ___.", "example": "Put the liquids in the bin.", "glossYue": "將液體放喺個⋯⋯度。", "answer": "bin", "choices": ["bin", "menu", "ring"]},
+                {"pattern": "Here is my ___.", "example": "Here is my laptop.", "glossYue": "我部⋯⋯喺度。", "answer": "laptop", "choices": ["laptop", "chicken", "reservation"]},
+                {"pattern": "Which way to the ___?", "example": "Which way to the gate?", "glossYue": "去⋯⋯邊邊行？", "answer": "gate", "choices": ["gate", "menu", "sheep"]},
+                {"pattern": "Go straight ___.", "example": "Go straight ahead.", "glossYue": "直行⋯⋯。", "answer": "ahead", "choices": ["ahead", "aisle", "o'clock"]},
+            ],
+            "shadow": {"lineId": "t2-l4", "hint": "Which way to the gate?"},
+            "build": [
+                {"type": "choice", "promptYue": "Kai 話 You're all set. 你想問閘口點行。", "choices": ["Which way to the gate?", "I'd like the chicken, please.", "A table for two, please."], "answer": 0, "explain": "過咗安檢就可以問 Which way to the gate?"},
+                {"type": "order", "promptYue": "排好呢句。", "tokens": ["Go", "straight", "ahead"], "answer": ["Go", "straight", "ahead"]},
+            ],
+            "roleplay": {
+                "you": "ling",
+                "intro": "你過緊安檢。Kai 講完一句，你再答。唔使急。",
+                "turns": [
+                    {"partner": "Kai", "partnerId": "kai", "line": "Boarding pass, please.", "audio": "assets/audio/lines/t2-l1.mp3", "audioSlow": "assets/audio/lines/t2-l1-slow.mp3", "expect": "Here is my boarding pass.", "keywords": ["boarding"], "modelAudio": "assets/audio/lines/t2-l2.mp3", "modelSlow": "assets/audio/lines/t2-l2-slow.mp3"},
+                    {"partner": "Kai", "partnerId": "kai", "line": "Please put your liquids in the bin.", "audio": "assets/audio/lines/t2-l3.mp3", "audioSlow": "assets/audio/lines/t2-l3-slow.mp3", "expect": "Here is my laptop.", "keywords": ["laptop"], "modelAudio": "assets/audio/lines/t2-m1.mp3", "modelSlow": "assets/audio/lines/t2-m1-slow.mp3"},
+                    {"partner": "Kai", "partnerId": "kai", "line": "You're all set.", "audio": "assets/audio/lines/t2-l6.mp3", "audioSlow": "assets/audio/lines/t2-l6-slow.mp3", "expect": "Which way to the gate?", "keywords": ["way", "gate"], "modelAudio": "assets/audio/lines/t2-l4.mp3", "modelSlow": "assets/audio/lines/t2-l4-slow.mp3"},
+                ],
+            },
+            "quiz": [
+                {"type": "listen", "prompt": "你聽到邊個？", "lemma": "liquid-noun", "choices": ["liquid", "lift", "left"], "answer": 0},
+                {"type": "listen", "prompt": "你聽到邊個？", "lemma": "lift-noun", "choices": ["lift", "left", "street"], "answer": 0},
+                {"type": "meaning", "prompt": "bin", "choices": ["膠盤", "餐牌", "頸鏈"], "answer": 0},
+                {"type": "meaning", "prompt": "straight ahead", "choices": ["直行就得", "請跟我嚟", "我想叫雞"], "answer": 0},
+                {"type": "choice", "prompt": "邊個開頭係 /l/？", "choices": ["liquid", "straight", "street"], "answer": 0, "explain": "liquid、left、laptop 有 /l/。straight 同 street 開頭係 /st/。"},
+            ],
+            "sound": {
+                "ipa": "/l/ · /ɛ/ · /eɪ/",
+                "title": "直行同左邊",
+                "note": "liquid、left、laptop、belt 都有 /l/：舌尖抵住上顎後面，氣由兩邊出。left /lɛft/ 係短 /ɛ/。lift /lɪft/ 係短 /ɪ/，升降機。straight /stɹeɪt/ 係 /eɪ/，一路滑去。street /stɹit/ 係長 /i/。唔好將 straight 讀成 street。",
+                "pairs": [
+                    {"a": "left-adv", "b": "lift-noun"},
+                    {"a": "straight-adv", "b": "street-noun"},
+                ],
+                "drill": ["liquid-noun", "left-adv", "lift-noun", "straight-adv", "street-noun", "laptop-noun"],
+            },
             "next": "R1",
         },
         {
@@ -2066,7 +2231,7 @@ PATH = {
             "blurb": "機場先。",
             "lessons": [
                 {"id": "T1"},
-                {"id": "T2", "title": "安檢同方向", "soon": True},
+                {"id": "T2"},
                 {"id": "T3", "title": "酒店入住", "soon": True},
                 {"id": "T4", "title": "的士同問路", "soon": True},
                 {"id": "T5", "title": "行失咗點求人", "soon": True},

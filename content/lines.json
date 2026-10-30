@@ -400,6 +400,56 @@
     "say": "Sure. I'll show you the information. Here is your boarding pass."
   },
   {
+    "id": "t2-l1",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "Boarding pass, please.",
+    "glossYue": "登機證唔該。",
+    "audio": "assets/audio/lines/t2-l1.mp3",
+    "audioSlow": "assets/audio/lines/t2-l1-slow.mp3",
+    "say": "Boarding pass, please."
+  },
+  {
+    "id": "t2-l2",
+    "speaker": "ling",
+    "speakerLabel": "Ling",
+    "text": "Here is my boarding pass.",
+    "glossYue": "我張登機證喺度。",
+    "audio": "assets/audio/lines/t2-l2.mp3",
+    "audioSlow": "assets/audio/lines/t2-l2-slow.mp3",
+    "say": "Here is my boarding pass."
+  },
+  {
+    "id": "t2-l3",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "Please put your liquids in the bin.",
+    "glossYue": "唔該將液體放喺個盤度。",
+    "audio": "assets/audio/lines/t2-l3.mp3",
+    "audioSlow": "assets/audio/lines/t2-l3-slow.mp3",
+    "say": "Please put your liquids in the bin."
+  },
+  {
+    "id": "t2-l4",
+    "speaker": "ling",
+    "speakerLabel": "Ling",
+    "text": "Which way to the gate?",
+    "glossYue": "去閘口邊邊行？",
+    "audio": "assets/audio/lines/t2-l4.mp3",
+    "audioSlow": "assets/audio/lines/t2-l4-slow.mp3",
+    "say": "Which way to the gate?"
+  },
+  {
+    "id": "t2-l5",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "Straight ahead. Your gate is on the left.",
+    "glossYue": "直行就得。你個閘口喺左邊。",
+    "audio": "assets/audio/lines/t2-l5.mp3",
+    "audioSlow": "assets/audio/lines/t2-l5-slow.mp3",
+    "say": "Straight ahead. Your gate is on the left."
+  },
+  {
     "id": "r1-l1",
     "speaker": "ana",
     "speakerLabel": "Ana",
@@ -628,6 +678,26 @@
     "audio": "assets/audio/lines/t1-m2.mp3",
     "audioSlow": "assets/audio/lines/t1-m2-slow.mp3",
     "say": "Here is my passport."
+  },
+  {
+    "id": "t2-m1",
+    "speaker": "ling",
+    "speakerLabel": "Ling",
+    "text": "Here is my laptop.",
+    "glossYue": "我部手提電腦喺度。",
+    "audio": "assets/audio/lines/t2-m1.mp3",
+    "audioSlow": "assets/audio/lines/t2-m1-slow.mp3",
+    "say": "Here is my laptop."
+  },
+  {
+    "id": "t2-l6",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "You're all set.",
+    "glossYue": "你搞掂啦。",
+    "audio": "assets/audio/lines/t2-l6.mp3",
+    "audioSlow": "assets/audio/lines/t2-l6-slow.mp3",
+    "say": "You're all set."
   },
   {
     "id": "r1-m3",

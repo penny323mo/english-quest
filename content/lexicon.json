@@ -6799,6 +6799,525 @@
       "audioSha256": "ea1f62101706e48b5c9c81825de206d8dd743c9fbb3addfcdd71defe781a215f"
     },
     {
+      "id": "bin-noun",
+      "lemma": "bin",
+      "pos": "noun",
+      "senseId": "security-bin",
+      "ipa": "/ˈbɪn/",
+      "syllables": [
+        "bin"
+      ],
+      "syllableIpa": [
+        "ˈbɪn"
+      ],
+      "stress": 1,
+      "arpabet": "B IH1 N",
+      "audio": "assets/audio/words/bin-noun.mp3",
+      "audioSlow": "assets/audio/words/bin-noun-slow.mp3",
+      "glossYue": "膠盤",
+      "glossZh": "安检盘",
+      "jyutping": "gaau1 pun4",
+      "collocations": [
+        "in the bin",
+        "a security bin"
+      ],
+      "example": "Put the liquids in the bin.",
+      "exampleYue": "將啲液體放喺個盤度。",
+      "say": "Put the liquids in the bin.",
+      "variants": [],
+      "note": "安檢用嘅膠盤，唔係垃圾桶。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "bin",
+      "phrase": false,
+      "audioSha256": "16e62bf16cb0dc187ba0ec187646d9ecbeebecca0f0cb540d7c238dff409c2d2"
+    },
+    {
+      "id": "liquid-noun",
+      "lemma": "liquid",
+      "pos": "noun",
+      "senseId": "liquid",
+      "ipa": "/ˈlɪk.wɪd/",
+      "syllables": [
+        "liq",
+        "uid"
+      ],
+      "syllableIpa": [
+        "ˈlɪk",
+        "wɪd"
+      ],
+      "stress": 1,
+      "arpabet": "L IH1 K W IH0 D",
+      "audio": "assets/audio/words/liquid-noun.mp3",
+      "audioSlow": "assets/audio/words/liquid-noun-slow.mp3",
+      "glossYue": "液體",
+      "glossZh": "液体",
+      "jyutping": "jik6 tai2",
+      "collocations": [
+        "liquids in the bin"
+      ],
+      "example": "Put the liquids in the bin.",
+      "exampleYue": "將啲液體放喺個盤度。",
+      "say": "Put the [[lˈɪkwɪdz]] in the bin.",
+      "variants": [
+        "/ˈlɪk.wəd/"
+      ],
+      "note": "CMU 有 /ˈlɪk.wɪd/ 同 /ˈlɪk.wəd/。卡片教 /ɪ/ 嗰條。錄音跟卡片。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "liquid",
+      "phrase": false,
+      "audioSha256": "88cdce9a8e521eef33ddb16a5f7613f63580210afa27bbd7a39c33f2985f85e8"
+    },
+    {
+      "id": "laptop-noun",
+      "lemma": "laptop",
+      "pos": "noun",
+      "senseId": "laptop",
+      "ipa": "/ˈlæp.ˌtɑp/",
+      "syllables": [
+        "lap",
+        "top"
+      ],
+      "syllableIpa": [
+        "ˈlæp",
+        "ˌtɑp"
+      ],
+      "stress": 1,
+      "arpabet": "L AE1 P T AA2 P",
+      "audio": "assets/audio/words/laptop-noun.mp3",
+      "audioSlow": "assets/audio/words/laptop-noun-slow.mp3",
+      "glossYue": "手提電腦",
+      "glossZh": "笔记本电脑",
+      "jyutping": "sau2 tai4 din6 nou5",
+      "collocations": [
+        "my laptop"
+      ],
+      "example": "Here is my laptop.",
+      "exampleYue": "我部手提電腦喺度。",
+      "say": "Here is my [[lˈæpˌtɑp]].",
+      "variants": [],
+      "note": "兩個音節。重音喺 lap，top 有次重音。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "laptop",
+      "phrase": false,
+      "audioSha256": "5ca6bdb4ec569dd294d8bc3c6d900941d26849e2539af79dea963df6d6dea380"
+    },
+    {
+      "id": "belt-noun",
+      "lemma": "belt",
+      "pos": "noun",
+      "senseId": "waist-belt",
+      "ipa": "/ˈbɛlt/",
+      "syllables": [
+        "belt"
+      ],
+      "syllableIpa": [
+        "ˈbɛlt"
+      ],
+      "stress": 1,
+      "arpabet": "B EH1 L T",
+      "audio": "assets/audio/words/belt-noun.mp3",
+      "audioSlow": "assets/audio/words/belt-noun-slow.mp3",
+      "glossYue": "腰帶",
+      "glossZh": "腰带",
+      "jyutping": "jiu1 daai3",
+      "collocations": [
+        "take off your belt"
+      ],
+      "example": "Please take off your belt.",
+      "exampleYue": "唔該除咗條腰帶。",
+      "say": "Please take off your belt.",
+      "variants": [],
+      "note": "有 /l/。同 left 一樣，元音係 /ɛ/。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "belt",
+      "phrase": false,
+      "audioSha256": "119189e103c9b33c127f4f92e336fbfee9d7cffe72652867cb3003b49d713246"
+    },
+    {
+      "id": "straight-adv",
+      "lemma": "straight",
+      "pos": "adv",
+      "senseId": "directly",
+      "ipa": "/ˈstɹeɪt/",
+      "syllables": [
+        "straight"
+      ],
+      "syllableIpa": [
+        "ˈstɹeɪt"
+      ],
+      "stress": 1,
+      "arpabet": "S T R EY1 T",
+      "audio": "assets/audio/words/straight-adv.mp3",
+      "audioSlow": "assets/audio/words/straight-adv-slow.mp3",
+      "glossYue": "直行",
+      "glossZh": "直行",
+      "jyutping": "zik6 hang4",
+      "collocations": [
+        "go straight"
+      ],
+      "example": "Go straight ahead.",
+      "exampleYue": "直行就得。",
+      "say": "Go straight ahead.",
+      "variants": [],
+      "note": "元音係 /eɪ/。唔好讀成 street 嘅 /i/。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "straight",
+      "phrase": false,
+      "audioSha256": "c663516a218e43bf9dc672889b9b4a2878bff11232277b30dffab3519024790f"
+    },
+    {
+      "id": "ahead-adv",
+      "lemma": "ahead",
+      "pos": "adv",
+      "senseId": "in-front",
+      "ipa": "/ə.ˈhɛd/",
+      "syllables": [
+        "a",
+        "head"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈhɛd"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 HH EH1 D",
+      "audio": "assets/audio/words/ahead-adv.mp3",
+      "audioSlow": "assets/audio/words/ahead-adv-slow.mp3",
+      "glossYue": "前面",
+      "glossZh": "前面",
+      "jyutping": "cin4 min6",
+      "collocations": [
+        "straight ahead"
+      ],
+      "example": "The gate is straight ahead.",
+      "exampleYue": "閘口就喺前面。",
+      "say": "The gate is straight ahead.",
+      "variants": [],
+      "note": "兩個音節。第一個音好輕 /ə/，重音喺 head。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "ahead",
+      "phrase": false,
+      "audioSha256": "44414d698484e7a6dca168e9b3341cae37bc3e73bcf6083df9db3f726c3dda5c"
+    },
+    {
+      "id": "which-det",
+      "lemma": "which",
+      "pos": "det",
+      "senseId": "which-choice",
+      "ipa": "/ˈwɪtʃ/",
+      "syllables": [
+        "which"
+      ],
+      "syllableIpa": [
+        "ˈwɪtʃ"
+      ],
+      "stress": 1,
+      "arpabet": "W IH1 CH",
+      "audio": "assets/audio/words/which-det.mp3",
+      "audioSlow": "assets/audio/words/which-det-slow.mp3",
+      "glossYue": "邊個",
+      "glossZh": "哪个",
+      "jyutping": "bin1 go3",
+      "collocations": [
+        "which way"
+      ],
+      "example": "Which way to the gate?",
+      "exampleYue": "去閘口邊邊行？",
+      "say": "Which way to the gate?",
+      "variants": [
+        "/hwɪtʃ/"
+      ],
+      "note": "美式多數讀 /wɪtʃ/。有人保留 /hw/。卡片教 /w/。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "which",
+      "phrase": false,
+      "audioSha256": "3c30c6a5f8b89f153bc025a1e58a2e6820c94ec1e5c23c3ca65c326c5dad68a5"
+    },
+    {
+      "id": "left-adv",
+      "lemma": "left",
+      "pos": "adv",
+      "senseId": "left-side",
+      "ipa": "/ˈlɛft/",
+      "syllables": [
+        "left"
+      ],
+      "syllableIpa": [
+        "ˈlɛft"
+      ],
+      "stress": 1,
+      "arpabet": "L EH1 F T",
+      "audio": "assets/audio/words/left-adv.mp3",
+      "audioSlow": "assets/audio/words/left-adv-slow.mp3",
+      "glossYue": "左邊",
+      "glossZh": "左边",
+      "jyutping": "zo2 bin6",
+      "collocations": [
+        "on the left"
+      ],
+      "example": "Your gate is on the left.",
+      "exampleYue": "你個閘口喺左邊。",
+      "say": "Your gate is on the left.",
+      "variants": [],
+      "note": "開頭 /l/，元音 /ɛ/。同 lift 只差個元音。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "left",
+      "phrase": false,
+      "audioSha256": "f077c6a6ce779610ccbd2fb8afe4275638b6ff1a698a442e5b9025a53aac3307"
+    },
+    {
+      "id": "lift-noun",
+      "lemma": "lift",
+      "pos": "noun",
+      "senseId": "elevator",
+      "ipa": "/ˈlɪft/",
+      "syllables": [
+        "lift"
+      ],
+      "syllableIpa": [
+        "ˈlɪft"
+      ],
+      "stress": 1,
+      "arpabet": "L IH1 F T",
+      "audio": "assets/audio/words/lift-noun.mp3",
+      "audioSlow": "assets/audio/words/lift-noun-slow.mp3",
+      "glossYue": "升降機",
+      "glossZh": "电梯",
+      "jyutping": "sing1 gong3 gei1",
+      "collocations": [
+        "the lift"
+      ],
+      "example": "Take the lift on the left.",
+      "exampleYue": "左邊有部升降機。",
+      "say": "Take the lift on the left.",
+      "variants": [],
+      "note": "對比組。/lɪft/ 係升降機。left /lɛft/ 係左邊。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "lift",
+      "phrase": false,
+      "audioSha256": "a1a5af92790c59384920d9984f5e36772c050cab6a1ea34afee77cce6e951b2a"
+    },
+    {
+      "id": "street-noun",
+      "lemma": "street",
+      "pos": "noun",
+      "senseId": "city-street",
+      "ipa": "/ˈstɹit/",
+      "syllables": [
+        "street"
+      ],
+      "syllableIpa": [
+        "ˈstɹit"
+      ],
+      "stress": 1,
+      "arpabet": "S T R IY1 T",
+      "audio": "assets/audio/words/street-noun.mp3",
+      "audioSlow": "assets/audio/words/street-noun-slow.mp3",
+      "glossYue": "街",
+      "glossZh": "街",
+      "jyutping": "gaai1",
+      "collocations": [
+        "on the street"
+      ],
+      "example": "This is not the street.",
+      "exampleYue": "呢度唔係條街。",
+      "say": "This is not the street.",
+      "variants": [],
+      "note": "對比組。street 係長 /i/。straight 先至係 /eɪ/。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "street",
+      "phrase": false,
+      "audioSha256": "9ef8b8ed8e71a597f68388e1ba052c00b74c27596d53b96beb596687a827ec75"
+    },
+    {
+      "id": "security-noun",
+      "lemma": "security",
+      "pos": "noun",
+      "senseId": "airport-security",
+      "ipa": "/sɪ.ˈkjʊɹ.ə.ti/",
+      "syllables": [
+        "se",
+        "cu",
+        "ri",
+        "ty"
+      ],
+      "syllableIpa": [
+        "sɪ",
+        "ˈkjʊɹ",
+        "ə",
+        "ti"
+      ],
+      "stress": 2,
+      "arpabet": "S IH0 K Y UH1 R AH0 T IY0",
+      "audio": "assets/audio/words/security-noun.mp3",
+      "audioSlow": "assets/audio/words/security-noun-slow.mp3",
+      "glossYue": "安檢",
+      "glossZh": "安检",
+      "jyutping": "on1 gim2",
+      "collocations": [
+        "at security"
+      ],
+      "example": "Security is this way.",
+      "exampleYue": "安檢喺呢邊。",
+      "say": "[[sɪkjˈʊɹəti]] is this way.",
+      "variants": [
+        "/sə.ˈkjʊɹ.ə.ti/"
+      ],
+      "note": "四個音節。CMU 第一個音係 /sɪ/。有人讀成 /sə/。卡片跟 CMU。",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "security",
+      "phrase": false,
+      "audioSha256": "62b523ecec59ba2280d1d369ec10a37f1e07ea8af22c14ffce4e00a5779ff6ec"
+    },
+    {
+      "id": "which-way-phrase",
+      "lemma": "which way",
+      "pos": "phrase",
+      "senseId": "which-direction",
+      "ipa": "/ˈwɪtʃ ˈweɪ/",
+      "syllables": [
+        "which",
+        "way"
+      ],
+      "syllableIpa": [
+        "ˈwɪtʃ",
+        "ˈweɪ"
+      ],
+      "stress": 1,
+      "arpabet": "W IH1 CH W EY1",
+      "audio": "assets/audio/words/which-way-phrase.mp3",
+      "audioSlow": "assets/audio/words/which-way-phrase-slow.mp3",
+      "glossYue": "邊邊行",
+      "glossZh": "往哪边",
+      "jyutping": "bin1 bin1 haang4",
+      "collocations": [
+        "which way to the gate"
+      ],
+      "example": "Which way to the gate?",
+      "exampleYue": "去閘口邊邊行？",
+      "say": "Which way to the gate?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "which way",
+      "phrase": true,
+      "audioSha256": "278b7e369540ef85141f22acae86bd996cdf47b3325864ce9ed3f59b5a55a409"
+    },
+    {
+      "id": "straight-ahead-phrase",
+      "lemma": "straight ahead",
+      "pos": "phrase",
+      "senseId": "straight-on",
+      "ipa": "/ˈstɹeɪt ə.ˈhɛd/",
+      "syllables": [
+        "straight",
+        "a",
+        "head"
+      ],
+      "syllableIpa": [
+        "ˈstɹeɪt",
+        "ə",
+        "ˈhɛd"
+      ],
+      "stress": 1,
+      "arpabet": "S T R EY1 T AH0 HH EH1 D",
+      "audio": "assets/audio/words/straight-ahead-phrase.mp3",
+      "audioSlow": "assets/audio/words/straight-ahead-phrase-slow.mp3",
+      "glossYue": "直行",
+      "glossZh": "直行",
+      "jyutping": "zik6 hang4",
+      "collocations": [
+        "go straight ahead"
+      ],
+      "example": "Go straight ahead, please.",
+      "exampleYue": "唔該直行。",
+      "say": "Go straight ahead, please.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-29",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "straight ahead",
+      "phrase": true,
+      "audioSha256": "4f8f0a6af29f7e3a5f62f9aec5aaa54902ee260ab9983f31484bfd9e39e32e92"
+    },
+    {
       "id": "thank-you-phrase",
       "lemma": "thank you",
       "pos": "phrase",

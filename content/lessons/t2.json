@@ -1,0 +1,318 @@
+{
+  "id": "T2",
+  "unit": "T",
+  "titleYue": "安檢同方向",
+  "titleEn": "Security and directions",
+  "canDoYue": "你能夠過安檢同問閘口點行。",
+  "canDoEn": "Clear security and ask which way to the gate.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t2.webp",
+  "cast": [
+    "kai"
+  ],
+  "lemmas": [
+    "bin-noun",
+    "liquid-noun",
+    "laptop-noun",
+    "belt-noun",
+    "which-way-phrase",
+    "straight-ahead-phrase",
+    "which-det",
+    "straight-adv",
+    "ahead-adv",
+    "left-adv",
+    "lift-noun",
+    "street-noun",
+    "security-noun",
+    "gate-noun",
+    "boarding-pass-phrase",
+    "way-noun",
+    "please-adv"
+  ],
+  "dialogue": [
+    {
+      "id": "t2-l1",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Boarding pass, please.",
+      "glossYue": "登機證唔該。",
+      "audio": "assets/audio/lines/t2-l1.mp3",
+      "audioSlow": "assets/audio/lines/t2-l1-slow.mp3",
+      "say": "Boarding pass, please."
+    },
+    {
+      "id": "t2-l2",
+      "speaker": "ling",
+      "speakerLabel": "Ling",
+      "text": "Here is my boarding pass.",
+      "glossYue": "我張登機證喺度。",
+      "audio": "assets/audio/lines/t2-l2.mp3",
+      "audioSlow": "assets/audio/lines/t2-l2-slow.mp3",
+      "say": "Here is my boarding pass."
+    },
+    {
+      "id": "t2-l3",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Please put your liquids in the bin.",
+      "glossYue": "唔該將液體放喺個盤度。",
+      "audio": "assets/audio/lines/t2-l3.mp3",
+      "audioSlow": "assets/audio/lines/t2-l3-slow.mp3",
+      "say": "Please put your liquids in the bin."
+    },
+    {
+      "id": "t2-l4",
+      "speaker": "ling",
+      "speakerLabel": "Ling",
+      "text": "Which way to the gate?",
+      "glossYue": "去閘口邊邊行？",
+      "audio": "assets/audio/lines/t2-l4.mp3",
+      "audioSlow": "assets/audio/lines/t2-l4-slow.mp3",
+      "say": "Which way to the gate?"
+    },
+    {
+      "id": "t2-l5",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Straight ahead. Your gate is on the left.",
+      "glossYue": "直行就得。你個閘口喺左邊。",
+      "audio": "assets/audio/lines/t2-l5.mp3",
+      "audioSlow": "assets/audio/lines/t2-l5-slow.mp3",
+      "say": "Straight ahead. Your gate is on the left."
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Please put your liquids in the bin. 係叫你？",
+      "choices": [
+        "將液體放喺個盤",
+        "叫雞",
+        "訂位"
+      ],
+      "answer": 0,
+      "explain": "bin 係安檢用嘅膠盤。"
+    },
+    {
+      "prompt": "Which way to the gate? 係問咩？",
+      "choices": [
+        "去閘口邊邊行",
+        "你飛去邊",
+        "你想叫咩"
+      ],
+      "answer": 0,
+      "explain": "which way 係問方向。"
+    },
+    {
+      "prompt": "Straight ahead. 你應該？",
+      "choices": [
+        "直行，唔使轉彎",
+        "返去櫃檯",
+        "坐低叫餐"
+      ],
+      "answer": 0,
+      "explain": "ahead 係前面。直行就得。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Put the liquids in the ___.",
+      "example": "Put the liquids in the bin.",
+      "glossYue": "將液體放喺個⋯⋯度。",
+      "answer": "bin",
+      "choices": [
+        "bin",
+        "menu",
+        "ring"
+      ]
+    },
+    {
+      "pattern": "Here is my ___.",
+      "example": "Here is my laptop.",
+      "glossYue": "我部⋯⋯喺度。",
+      "answer": "laptop",
+      "choices": [
+        "laptop",
+        "chicken",
+        "reservation"
+      ]
+    },
+    {
+      "pattern": "Which way to the ___?",
+      "example": "Which way to the gate?",
+      "glossYue": "去⋯⋯邊邊行？",
+      "answer": "gate",
+      "choices": [
+        "gate",
+        "menu",
+        "sheep"
+      ]
+    },
+    {
+      "pattern": "Go straight ___.",
+      "example": "Go straight ahead.",
+      "glossYue": "直行⋯⋯。",
+      "answer": "ahead",
+      "choices": [
+        "ahead",
+        "aisle",
+        "o'clock"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "t2-l4",
+    "hint": "Which way to the gate?"
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "Kai 話 You're all set. 你想問閘口點行。",
+      "choices": [
+        "Which way to the gate?",
+        "I'd like the chicken, please.",
+        "A table for two, please."
+      ],
+      "answer": 0,
+      "explain": "過咗安檢就可以問 Which way to the gate?"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Go",
+        "straight",
+        "ahead"
+      ],
+      "answer": [
+        "Go",
+        "straight",
+        "ahead"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "ling",
+    "intro": "你過緊安檢。Kai 講完一句，你再答。唔使急。",
+    "turns": [
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "Boarding pass, please.",
+        "audio": "assets/audio/lines/t2-l1.mp3",
+        "audioSlow": "assets/audio/lines/t2-l1-slow.mp3",
+        "expect": "Here is my boarding pass.",
+        "keywords": [
+          "boarding"
+        ],
+        "modelAudio": "assets/audio/lines/t2-l2.mp3",
+        "modelSlow": "assets/audio/lines/t2-l2-slow.mp3"
+      },
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "Please put your liquids in the bin.",
+        "audio": "assets/audio/lines/t2-l3.mp3",
+        "audioSlow": "assets/audio/lines/t2-l3-slow.mp3",
+        "expect": "Here is my laptop.",
+        "keywords": [
+          "laptop"
+        ],
+        "modelAudio": "assets/audio/lines/t2-m1.mp3",
+        "modelSlow": "assets/audio/lines/t2-m1-slow.mp3"
+      },
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "You're all set.",
+        "audio": "assets/audio/lines/t2-l6.mp3",
+        "audioSlow": "assets/audio/lines/t2-l6-slow.mp3",
+        "expect": "Which way to the gate?",
+        "keywords": [
+          "way",
+          "gate"
+        ],
+        "modelAudio": "assets/audio/lines/t2-l4.mp3",
+        "modelSlow": "assets/audio/lines/t2-l4-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "liquid-noun",
+      "choices": [
+        "liquid",
+        "lift",
+        "left"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "lift-noun",
+      "choices": [
+        "lift",
+        "left",
+        "street"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "bin",
+      "choices": [
+        "膠盤",
+        "餐牌",
+        "頸鏈"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "straight ahead",
+      "choices": [
+        "直行就得",
+        "請跟我嚟",
+        "我想叫雞"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個開頭係 /l/？",
+      "choices": [
+        "liquid",
+        "straight",
+        "street"
+      ],
+      "answer": 0,
+      "explain": "liquid、left、laptop 有 /l/。straight 同 street 開頭係 /st/。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/ · /ɛ/ · /eɪ/",
+    "title": "直行同左邊",
+    "note": "liquid、left、laptop、belt 都有 /l/：舌尖抵住上顎後面，氣由兩邊出。left /lɛft/ 係短 /ɛ/。lift /lɪft/ 係短 /ɪ/，升降機。straight /stɹeɪt/ 係 /eɪ/，一路滑去。street /stɹit/ 係長 /i/。唔好將 straight 讀成 street。",
+    "pairs": [
+      {
+        "a": "left-adv",
+        "b": "lift-noun"
+      },
+      {
+        "a": "straight-adv",
+        "b": "street-noun"
+      }
+    ],
+    "drill": [
+      "liquid-noun",
+      "left-adv",
+      "lift-noun",
+      "straight-adv",
+      "street-noun",
+      "laptop-noun"
+    ]
+  },
+  "next": "R1"
+}

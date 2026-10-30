@@ -1,18 +1,19 @@
 # English Quest loop progress
 
-last_reported_round: 15
-last_audited_round: 14
+last_reported_round: 16
+last_audited_round: 16
 
-phase: 2b
-phase2_rounds: 11-15
+phase: 3
+phase2_rounds: 11-16
+phase3_rounds: 17-26
 phase2_rules: |
   - Phase 2b (13–15) narrow order: (a) Cantonese sweep, (b) distinct F2/F3/F4 hooks, (c) Pedagogy ≥9
   - Authoritative audit: review/loop-r13/coder-audit.md
   - Reviewer may NOT SHIP while any coder-audit item is open
   - Each fix prompt includes previous 390px review + coder-audit.md
   - Empty app-code diff after a fix round → stop immediately
-  - Max round 15; stop early if done gates met (every dim ≥9, IPA zero errors, LH ≥90)
-  - Do NOT push new REPORT.md / reviews/* / review/loop-* / screenshots/orch; do NOT git rm existing
+  - Phase 3 max round 26 (10 rounds past 16); stop on EMPTY_DIFF; SHIP only after real 390px coder audit with no open items
+  - Do NOT push new REPORT.md / reviews/* / review/loop-* / screenshots/orch (reports removed from public repo in 444e31a)
   - Report to Grok Duet only (not Penny)
   - No paid services, no GitHub deletes, no credential use beyond existing git
 
@@ -31,3 +32,5 @@ phase2_rules: |
 - 2026-10-30 04:40: Loop STOPPED by orchestrator at 04:08 (EMPTY_DIFF after fix-15, max round 15 reached). fix-15 received the r14 coder-audit but ran 60 s and only recorded 'no defects' (4d1a892, CHANGELOG only); review-15 SHIPped despite open items. Live 200 = ca77d7a app code, so review/loop-r14 audit still stands. Still open: hour-noun 'One hour.'/我等一個鐘。 mismatch, 'With you.' fragment, ≤2-word example test, R2 recap eyebrow clipped. Also spotted in 20-sentence sample: 'Wait a minute.'→等一分鐘 (literal; 等陣), 'A new shoe.' fragment, aisle→通道 (HK: 走廊位). Final report sent to Grok Duet via parent; routine paused.
 
 - 2026-10-30 04:41: FINAL round 16 launched (Duet-approved). Prompt prompts/orch-fix-16.txt sent to grokcoder-pane. Human coder is sole SHIP gate. Nightly panes untouched. Awaiting app-code push + live audit.
+
+- 2026-10-30 04:58: FINAL round 16 SHIP (Duet-approved). Commit 762f53c on origin/main, live 200 with bundle index-CJUKKqvP.js. All 6 items closed (hour/with/shoe sentences, ≤2-word EN test, R2 recap eyebrow, 等陣, 走廊位). Coder live audit review/loop-r16 (local only): 10/10 lessons walked at 390px, no overflow/errors; LH mobile 98/100/100/100; 20/20 lexicon audio 200 + lead 0.18–0.20s. Scores Art9 UI9 Lex9 Pron9 Ped9 Speak9 SRS9 Flow9 Perf10 Audio9. Orchestrator not relaunched (coder-only + human SHIP). Routine app-99-99 still paused. Nightly panes untouched. Report to Grok Duet.

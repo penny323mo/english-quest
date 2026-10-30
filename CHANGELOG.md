@@ -1,5 +1,13 @@
 # Changelog — English Quest
 
+## Round 17 fixes
+- T2 安檢同方向 is now a full 12-beat lesson after T1. It was a soon teaser. Learners clear security (boarding pass, liquids in the bin, laptop, belt) and ask 「Which way to the gate?」 / 「去閘口邊邊行？」. Kai answers 「Straight ahead.」 / 「直行就得。」 T3 酒店入住 stays upcoming. The path end now says 呢輪十一課.
+- New cards: bin 膠盤, liquid /ˈlɪk.wɪd/ (CMU also has /ˈlɪk.wəd/, flagged, clip forced to /ɪ/), laptop, belt, which /wɪtʃ/ (the /hw/ variant is flagged), left / lift, straight / street, security /sɪ.ˈkjʊɹ.ə.ti/ (the /sə/ variant is flagged, clip forced to /sɪ/). Only those new says were rendered.
+- The hook is a new 900×1200 Harbor Glow scene: Kai beside the security bins, not the check-in desk. An /l/ sound beat shows the /l/ mouth instead of /θ/.
+- Speak beat: record mode says to play 「聽我」 then 「聽模範」. If the mic is off, the note is 「咪未開。你可以聽模範，然後繼續。呢課唔會卡住。」 Speech and record switch with one tap each way. A short bar shows while recording.
+- Cantonese skim found no leftover 俾, 午安, 晚上好, or 我只係睇吓. New lines stay spoken Hong Kong Cantonese.
+- Tests are 13/13. At 390px, onboarding, the path, the locked T2 screen, the new cards, settings, attributions, and the T2 hook through the recap stay inside the phone. 「放低今日」 on T2 clears the sheet corner. Lighthouse mobile: performance 0.98, accessibility 1, best-practices 1, seo 1.
+
 ## Round 16 fixes
 - hour-noun: "One hour." / 「我等一個鐘。」 → "I waited for one hour." / 「我等咗一個鐘。」 The normal and slow clips were resynthesized. IPA stays /ˈaʊ.ɚ/ (CMU AW1 ER0, variant /ˈaʊɹ/).
 - with-prep-voiceless: "With you." / 「同你一齊。」 → "I'll be right with you." / 「我即刻嚟招呼你。」 The say line forces voiceless /wɪθ/. shoe-noun: "A new shoe." / 「一隻新鞋。」 → "I need a new shoe." / 「我要一隻新鞋。」 Both clips were resynthesized. The voiced with card stays /wɪð/.

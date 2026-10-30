@@ -51,5 +51,6 @@ export function mouthsFor(ipa: string): Kind[] {
   if (ipa.includes("w") && ipa.includes("v")) return ["w", "v"];
   if (ipa.includes("ʃ")) return ["sh", "affricate"];
   if (ipa.includes("ɹ")) return ["r", "l"];
+  if (ipa.includes("l")) return ["l"];
   return ["theta"];
 }
