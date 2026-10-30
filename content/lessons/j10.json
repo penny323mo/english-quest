@@ -30,11 +30,11 @@
       "id": "j10-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "You might also like this matching pair, and it completes the look for a gift tonight.",
-      "glossYue": "你或者都會鍾意呢對襯到嘅，今晚送禮會成套。",
+      "text": "You might also like this matching pair, and it completes the look for a birthday gift.",
+      "glossYue": "你或者都會鍾意呢對襯到嘅，送生日禮物會成套。",
       "audio": "assets/audio/lines/j10-l1.mp3",
       "audioSlow": "assets/audio/lines/j10-l1-slow.mp3",
-      "say": "You might also like this matching pair, and it completes the look for a gift tonight.",
+      "say": "You might also like this matching pair, and it completes the look for a birthday gift.",
       "hideGloss": false
     },
     {
@@ -52,11 +52,11 @@
       "id": "j10-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Yes, this popular set is optional, and the engraving is a quiet extra if you like.",
-      "glossYue": "會，呢套好多人揀，可以唔要，刻字係靜靜嘅加購，如果你想。",
+      "text": "Yes, this popular set is optional, and the engraving is a quiet extra on the box.",
+      "glossYue": "會，呢套好多人揀，可以唔要，刻字係盒上靜靜嘅加購。",
       "audio": "assets/audio/lines/j10-l3.mp3",
       "audioSlow": "assets/audio/lines/j10-l3-slow.mp3",
-      "say": "Yes, this popular set is optional, and the engraving is a quiet extra if you like.",
+      "say": "Yes, this popular set is optional, and the engraving is a quiet extra on the box.",
       "hideGloss": true
     },
     {
@@ -96,11 +96,11 @@
       "id": "j10-l7",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "If you like the necklace, the matching pair goes well, and the box is ready now.",
-      "glossYue": "如果你鍾意條頸鏈，對襯嘅都好配，盒而家準備好。",
+      "text": "If you like this necklace, the matching pair goes well, and the gift box is ready.",
+      "glossYue": "如果你鍾意呢條頸鏈，對襯嘅都好配，禮盒準備好。",
       "audio": "assets/audio/lines/j10-l7.mp3",
       "audioSlow": "assets/audio/lines/j10-l7-slow.mp3",
-      "say": "If you like the necklace, the matching pair goes well, and the box is ready now.",
+      "say": "If you like this necklace, the matching pair goes well, and the gift box is ready.",
       "hideGloss": true
     },
     {
@@ -127,7 +127,7 @@
       "explain": "might also like 係輕輕提議。"
     },
     {
-      "prompt": "If you like the necklace, the pair goes well. 係？",
+      "prompt": "If you like the necklace, the pair goes well. 呢句即係點？",
       "choices": [
         "如果鍾意頸鏈，對耳環都好配",
         "一定要刻字",
@@ -137,7 +137,7 @@
       "explain": "If you like 係如果想，先至配。"
     },
     {
-      "prompt": "The engraving is optional. 係？",
+      "prompt": "The engraving is optional. 呢句即係點？",
       "choices": [
         "刻字可以唔要",
         "一定要刻",
@@ -160,8 +160,8 @@
       ]
     },
     {
-      "pattern": "This popular ___ is optional, and the engraving is a quiet extra if you like.",
-      "example": "This popular set is optional, and the engraving is a quiet extra if you like.",
+      "pattern": "This popular ___ is optional, and the engraving is a quiet extra on the box.",
+      "example": "This popular set is optional, and the engraving is a quiet extra on the box.",
       "glossYue": "呢個多人揀嘅⋯⋯可以唔要。",
       "answer": "set",
       "choices": [
@@ -240,7 +240,7 @@
         "line": "If I am getting the necklace today, do the matching earrings go well with it too?",
         "audio": "assets/audio/lines/j10-l2.mp3",
         "audioSlow": "assets/audio/lines/j10-l2-slow.mp3",
-        "expect": "Yes, this popular set is optional, and the engraving is a quiet extra if you like.",
+        "expect": "Yes, this popular set is optional, and the engraving is a quiet extra on the box.",
         "keywords": [
           "optional",
           "engraving"
@@ -268,7 +268,7 @@
         "line": "Please recommend one popular option only, and then I will decide before we leave the shop.",
         "audio": "assets/audio/lines/j10-l6.mp3",
         "audioSlow": "assets/audio/lines/j10-l6-slow.mp3",
-        "expect": "If you like the necklace, the matching pair goes well, and the box is ready now.",
+        "expect": "If you like this necklace, the matching pair goes well, and the gift box is ready.",
         "keywords": [
           "matching",
           "pair"
@@ -313,7 +313,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「the engraving is fully optional tonight」，係咩意思？",
+      "prompt": "客人講「The engraving is fully optional with this matching set」，係咩意思？",
       "choices": [
         "可以唔要",
         "一定要",

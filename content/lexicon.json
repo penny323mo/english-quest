@@ -18068,9 +18068,9 @@
         "the other line",
         "hold the line"
       ],
-      "example": "Please hold the other line now.",
-      "exampleYue": "唔該等吓另一條線。",
-      "say": "Please hold the other line now.",
+      "example": "Please hold the other line while I find Mei.",
+      "exampleYue": "唔該等吓另一條線，我去搵 Mei。",
+      "say": "Please hold the other line while I find Mei.",
       "variants": [],
       "note": "",
       "sources": [
@@ -18081,7 +18081,7 @@
       "senseMismatch": false,
       "cmuLemma": "line",
       "phrase": false,
-      "audioSha256": "7541b1550ec1c48fd45d8b76e0033b31835ff290863e20470ddd300567aca3f7",
+      "audioSha256": "175623147f05fb4dd3ad85e6f25bb460c6f3f8d811d62dd02f0c8f2eca3ab81e",
       "register": "職場",
       "usageNotes": "開頭係 /l/。呢度係電話線，唔係排隊。",
       "pitfallsYue": "開頭係 /l/。呢度係電話線，唔係排隊。",
@@ -18091,11 +18091,11 @@
       ],
       "examples": [
         {
-          "en": "Please hold the other line now.",
-          "yue": "唔該等吓另一條線。",
+          "en": "Please hold the other line while I find Mei.",
+          "yue": "唔該等吓另一條線，我去搵 Mei。",
           "audio": "assets/audio/words/line-noun.mp3",
           "audioSlow": "assets/audio/words/line-noun-slow.mp3",
-          "say": "Please hold the other line now."
+          "say": "Please hold the other line while I find Mei."
         },
         {
           "en": "The line is free for your call.",
@@ -18959,12 +18959,12 @@
       "glossZh": "擦亮劑",
       "jyutping": "caat3 loeng6",
       "collocations": [
-        "a soft polish",
-        "cloth to polish"
+        "jewellery polish",
+        "a little polish"
       ],
-      "example": "Please use a soft cloth to polish the bracelet.",
-      "exampleYue": "請用軟布同少少擦亮劑抹條手鏈。",
-      "say": "Please use a soft cloth to polish the bracelet.",
+      "example": "Please polish it with a soft cloth.",
+      "exampleYue": "用軟布擦亮佢。",
+      "say": "Please polish it with a soft cloth.",
       "variants": [],
       "note": "",
       "sources": [
@@ -18975,7 +18975,7 @@
       "senseMismatch": false,
       "cmuLemma": "polish",
       "phrase": false,
-      "audioSha256": "40bca3789e680e43ae097ae434c7f966303470644fdc3c4c4719dc98fa1a62e2",
+      "audioSha256": "e6a5127f7f27df145579d01d5aaa1a9ff91147777af474e5e705f58e6257c626",
       "register": "珠寶",
       "usageNotes": "擦亮劑係抹亮用嘅劑，唔係軟布本身。",
       "pitfallsYue": "擦亮劑係抹亮用嘅劑，唔係軟布本身。",
@@ -18985,11 +18985,11 @@
       ],
       "examples": [
         {
-          "en": "Please use a soft cloth to polish the bracelet.",
-          "yue": "請用軟布同少少擦亮劑抹條手鏈。",
+          "en": "Please polish it with a soft cloth.",
+          "yue": "用軟布擦亮佢。",
           "audio": "assets/audio/words/polish-noun.mp3",
           "audioSlow": "assets/audio/words/polish-noun-slow.mp3",
-          "say": "Please use a soft cloth to polish the bracelet."
+          "say": "Please polish it with a soft cloth."
         },
         {
           "en": "A soft polish keeps the gold bright.",
@@ -19531,9 +19531,9 @@
         "a popular set",
         "one popular option"
       ],
-      "example": "This popular set is optional tonight.",
-      "exampleYue": "呢套今晚好多人揀，可以唔要。",
-      "say": "This popular set is optional tonight.",
+      "example": "This popular set matches the necklace in the box.",
+      "exampleYue": "呢套多人揀嘅襯到盒入面條頸鏈。",
+      "say": "This popular set matches the necklace in the box.",
       "variants": [],
       "note": "",
       "sources": [
@@ -19544,7 +19544,7 @@
       "senseMismatch": false,
       "cmuLemma": "popular",
       "phrase": false,
-      "audioSha256": "9098cbc64efe249909615b57e906e5c933d9d76168f52303b7acdc498a202688",
+      "audioSha256": "08fa0a1c87043c2c0e81e916cf23813559fc630ac36824a41cf1ebb5d92411f6",
       "register": "珠寶",
       "usageNotes": "多人揀係好多客人揀，唔係一定要。",
       "pitfallsYue": "多人揀係好多客人揀，唔係一定要。",
@@ -19554,11 +19554,11 @@
       ],
       "examples": [
         {
-          "en": "This popular set is optional tonight.",
-          "yue": "呢套今晚好多人揀，可以唔要。",
+          "en": "This popular set matches the necklace in the box.",
+          "yue": "呢套多人揀嘅襯到盒入面條頸鏈。",
           "audio": "assets/audio/words/popular-adj.mp3",
           "audioSlow": "assets/audio/words/popular-adj-slow.mp3",
-          "say": "This popular set is optional tonight."
+          "say": "This popular set matches the necklace in the box."
         },
         {
           "en": "Please recommend one popular option only.",
@@ -19596,9 +19596,9 @@
         "the engraving",
         "skip the engraving"
       ],
-      "example": "The engraving is optional if you like.",
-      "exampleYue": "如果你想，刻字可以唔要。",
-      "say": "The engraving is optional if you like.",
+      "example": "The engraving on this bracelet spells the name Mei.",
+      "exampleYue": "呢條手鏈嘅刻字寫住 Mei 個名。",
+      "say": "The engraving on this bracelet spells the name Mei.",
       "variants": [],
       "note": "",
       "sources": [
@@ -19609,7 +19609,7 @@
       "senseMismatch": false,
       "cmuLemma": "engraving",
       "phrase": false,
-      "audioSha256": "0528fbcb0802592aaba023bf0b639804ec71097ba1922f7deab738fb3765763a",
+      "audioSha256": "0cb52375ce9ba042662c929541baf256afa4e55fbfaca8428d44cf1af6cf5847",
       "register": "珠寶",
       "usageNotes": "刻字係加購，可以唔要。重音喺第二節。",
       "pitfallsYue": "刻字係加購，可以唔要。重音喺第二節。",
@@ -19619,11 +19619,11 @@
       ],
       "examples": [
         {
-          "en": "The engraving is optional if you like.",
-          "yue": "如果你想，刻字可以唔要。",
+          "en": "The engraving on this bracelet spells the name Mei.",
+          "yue": "呢條手鏈嘅刻字寫住 Mei 個名。",
           "audio": "assets/audio/words/engraving-noun.mp3",
           "audioSlow": "assets/audio/words/engraving-noun-slow.mp3",
-          "say": "The engraving is optional if you like."
+          "say": "The engraving on this bracelet spells the name Mei."
         },
         {
           "en": "You can skip the engraving if the price goes up.",
@@ -19661,9 +19661,9 @@
         "fully optional",
         "an optional polish"
       ],
-      "example": "The engraving is fully optional tonight.",
-      "exampleYue": "今晚刻字完全可以唔要。",
-      "say": "The engraving is fully optional tonight.",
+      "example": "The engraving is fully optional with this matching set.",
+      "exampleYue": "呢套襯嘅刻字完全可以唔要。",
+      "say": "The engraving is fully optional with this matching set.",
       "variants": [],
       "note": "",
       "sources": [
@@ -19674,7 +19674,7 @@
       "senseMismatch": false,
       "cmuLemma": "optional",
       "phrase": false,
-      "audioSha256": "c4dcd3eba83d2a9e482fe1003fc901b5d035aa58b7a692a0ae8eb47085b13ab2",
+      "audioSha256": "a8c28a29c049a9e74933503ed3da14f029bd17434c1652c87a69ebfd45ea45d6",
       "register": "珠寶",
       "usageNotes": "可以唔要就唔使一定買。",
       "pitfallsYue": "可以唔要就唔使一定買。",
@@ -19684,11 +19684,11 @@
       ],
       "examples": [
         {
-          "en": "The engraving is fully optional tonight.",
-          "yue": "今晚刻字完全可以唔要。",
+          "en": "The engraving is fully optional with this matching set.",
+          "yue": "呢套襯嘅刻字完全可以唔要。",
           "audio": "assets/audio/words/optional-adj.mp3",
           "audioSlow": "assets/audio/words/optional-adj-slow.mp3",
-          "say": "The engraving is fully optional tonight."
+          "say": "The engraving is fully optional with this matching set."
         },
         {
           "en": "A simple polish is optional with the set.",
@@ -19722,9 +19722,9 @@
         "a popular set",
         "the matching set"
       ],
-      "example": "This popular set is ready tonight.",
-      "exampleYue": "呢套多人揀嘅今晚準備好。",
-      "say": "This popular set is ready tonight.",
+      "example": "This popular set is ready in a gift box.",
+      "exampleYue": "呢套多人揀嘅已經放入禮盒。",
+      "say": "This popular set is ready in a gift box.",
       "variants": [],
       "note": "",
       "sources": [
@@ -19735,7 +19735,7 @@
       "senseMismatch": false,
       "cmuLemma": "set",
       "phrase": false,
-      "audioSha256": "423f5dd669042b4c9c8ff1fc90ee1ddc66fac2f65390ddc214f8c75728874e41",
+      "audioSha256": "abcee8b1f16c1533efb9927851535b9a074a27a4d19577612e432cef7d189a84",
       "register": "珠寶",
       "usageNotes": "套裝係成套一齊賣。",
       "pitfallsYue": "套裝係成套一齊賣。",
@@ -19745,11 +19745,11 @@
       ],
       "examples": [
         {
-          "en": "This popular set is ready tonight.",
-          "yue": "呢套多人揀嘅今晚準備好。",
+          "en": "This popular set is ready in a gift box.",
+          "yue": "呢套多人揀嘅已經放入禮盒。",
           "audio": "assets/audio/words/set-noun.mp3",
           "audioSlow": "assets/audio/words/set-noun-slow.mp3",
-          "say": "This popular set is ready tonight."
+          "say": "This popular set is ready in a gift box."
         },
         {
           "en": "I will take the matching set without the engraving.",
@@ -19784,12 +19784,12 @@
       "glossZh": "如果你想",
       "jyutping": "jyu4 gwo2 nei5 soeng2",
       "collocations": [
-        "if you like",
-        "optional if you like"
+        "if you like the necklace",
+        "if you like a softer shine"
       ],
-      "example": "The engraving is optional if you like.",
-      "exampleYue": "刻字可以唔要，如果你想。",
-      "say": "The engraving is optional if you like.",
+      "example": "If you like the necklace, the matching earrings go well with it.",
+      "exampleYue": "如果你鍾意條頸鏈，對襯嘅耳環會好配。",
+      "say": "If you like the necklace, the matching earrings go well with it.",
       "variants": [],
       "note": "",
       "sources": [
@@ -19800,7 +19800,7 @@
       "senseMismatch": false,
       "cmuLemma": "if",
       "phrase": true,
-      "audioSha256": "4bc0e68827eedc2123551263579a6683d692b4861d6458a1af1925522c4fd32c",
+      "audioSha256": "567b593c2fa4f92b5110a6c76bd551704981eb493fb02153a47cab4fbe3b2288",
       "register": "珠寶",
       "usageNotes": "如果你想先至加，唔係硬銷。",
       "pitfallsYue": "如果你想先至加，唔係硬銷。",
@@ -19810,18 +19810,18 @@
       ],
       "examples": [
         {
-          "en": "The engraving is optional if you like.",
-          "yue": "刻字可以唔要，如果你想。",
+          "en": "If you like the necklace, the matching earrings go well with it.",
+          "yue": "如果你鍾意條頸鏈，對襯嘅耳環會好配。",
           "audio": "assets/audio/words/if-you-like-phrase.mp3",
           "audioSlow": "assets/audio/words/if-you-like-phrase-slow.mp3",
-          "say": "The engraving is optional if you like."
+          "say": "If you like the necklace, the matching earrings go well with it."
         },
         {
-          "en": "You can add a polish if you like.",
-          "yue": "你可以加一次擦亮，如果你想。",
+          "en": "If you like a softer shine, we can polish the bracelet.",
+          "yue": "如果你想柔和啲嘅光澤，我哋可以擦亮條手鏈。",
           "audio": "assets/audio/words/if-you-like-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/if-you-like-phrase-ex2-slow.mp3",
-          "say": "You can add a polish if you like."
+          "say": "If you like a softer shine, we can polish the bracelet."
         }
       ]
     },
@@ -20173,9 +20173,9 @@
         "an engineer",
         "send an engineer"
       ],
-      "example": "I can send an engineer up right now.",
-      "exampleYue": "我而家可以派工程師上嚟。",
-      "say": "I can send an engineer up right now.",
+      "example": "I can send an engineer to the noisy room.",
+      "exampleYue": "我可以派工程師去嗰間嘈房。",
+      "say": "I can send an engineer to the noisy room.",
       "variants": [],
       "note": "",
       "sources": [
@@ -20186,7 +20186,7 @@
       "senseMismatch": false,
       "cmuLemma": "engineer",
       "phrase": false,
-      "audioSha256": "9abdfb7b463ca56103ea1d1d7a52dfde9f9ad0e824e0c4327177b02cd65e4337",
+      "audioSha256": "f0df0a014c5814e3c8356a98a0483d92e3e0e064fd53a04af2eb197161dd5c9a",
       "register": "酒店",
       "usageNotes": "工程師上嚟睇房，重音喺最後一節。",
       "pitfallsYue": "工程師上嚟睇房，重音喺最後一節。",
@@ -20196,11 +20196,11 @@
       ],
       "examples": [
         {
-          "en": "I can send an engineer up right now.",
-          "yue": "我而家可以派工程師上嚟。",
+          "en": "I can send an engineer to the noisy room.",
+          "yue": "我可以派工程師去嗰間嘈房。",
           "audio": "assets/audio/words/engineer-noun.mp3",
           "audioSlow": "assets/audio/words/engineer-noun-slow.mp3",
-          "say": "I can send an engineer up right now."
+          "say": "I can send an engineer to the noisy room."
         },
         {
           "en": "The engineer will visit before you sleep.",
@@ -20240,9 +20240,9 @@
         "the inconvenience",
         "sorry for the inconvenience"
       ],
-      "example": "I am sorry for the inconvenience tonight.",
-      "exampleYue": "今晚造成不便，對唔住。",
-      "say": "I am sorry for the inconvenience tonight.",
+      "example": "I am sorry for the inconvenience in this noisy room.",
+      "exampleYue": "呢間嘈房造成不便，對唔住。",
+      "say": "I am sorry for the inconvenience in this noisy room.",
       "variants": [],
       "note": "",
       "sources": [
@@ -20253,7 +20253,7 @@
       "senseMismatch": false,
       "cmuLemma": "inconvenience",
       "phrase": false,
-      "audioSha256": "d5553d937eeb47c040c40ecffb846d8863a39f07838a83266dd885ded3dbe4ad",
+      "audioSha256": "cf6775eaa005631158e805793bbed504bc967a469176f3ddb498e8cda034c78d",
       "register": "酒店",
       "usageNotes": "不便係造成麻煩，先道歉。",
       "pitfallsYue": "不便係造成麻煩，先道歉。",
@@ -20263,11 +20263,11 @@
       ],
       "examples": [
         {
-          "en": "I am sorry for the inconvenience tonight.",
-          "yue": "今晚造成不便，對唔住。",
+          "en": "I am sorry for the inconvenience in this noisy room.",
+          "yue": "呢間嘈房造成不便，對唔住。",
           "audio": "assets/audio/words/inconvenience-noun.mp3",
           "audioSlow": "assets/audio/words/inconvenience-noun-slow.mp3",
-          "say": "I am sorry for the inconvenience tonight."
+          "say": "I am sorry for the inconvenience in this noisy room."
         },
         {
           "en": "Sorry for the inconvenience in this noisy room.",
@@ -21866,6 +21866,1646 @@
           "audio": "assets/audio/words/follow-up-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/follow-up-noun-ex2-slow.mp3",
           "say": "The follow-up is next Friday morning."
+        }
+      ]
+    },
+    {
+      "id": "account-noun",
+      "lemma": "account",
+      "pos": "noun",
+      "senseId": "bank-account",
+      "ipa": "/ə.ˈkaʊnt/",
+      "syllables": [
+        "ac",
+        "count"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈkaʊnt"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 K AW1 N T",
+      "audio": "assets/audio/words/account-noun.mp3",
+      "audioSlow": "assets/audio/words/account-noun-slow.mp3",
+      "glossYue": "戶口",
+      "glossZh": "戶口",
+      "jyutping": "wu6 hau2",
+      "collocations": [
+        "open an account",
+        "bank account"
+      ],
+      "example": "I would like to open an account here.",
+      "exampleYue": "我想喺呢度開戶口。",
+      "say": "I would like to open an account here.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "account",
+      "phrase": false,
+      "audioSha256": "339a185a44f27413e385cceb392c1c4071cff2a221fcd379382bdd5856ef6961",
+      "register": "銀行",
+      "usageNotes": "戶口係銀行戶，唔係帳戶號碼本身。",
+      "pitfallsYue": "戶口係銀行戶，唔係帳戶號碼本身。",
+      "related": [
+        "balance-noun",
+        "card-noun"
+      ],
+      "examples": [
+        {
+          "en": "I would like to open an account here.",
+          "yue": "我想喺呢度開戶口。",
+          "audio": "assets/audio/words/account-noun.mp3",
+          "audioSlow": "assets/audio/words/account-noun-slow.mp3",
+          "say": "I would like to open an account here."
+        },
+        {
+          "en": "The fee comes out of the account today.",
+          "yue": "手續費今日由戶口扣。",
+          "audio": "assets/audio/words/account-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/account-noun-ex2-slow.mp3",
+          "say": "The fee comes out of the account today."
+        }
+      ]
+    },
+    {
+      "id": "balance-noun",
+      "lemma": "balance",
+      "pos": "noun",
+      "senseId": "money-left",
+      "ipa": "/ˈbæ.ləns/",
+      "syllables": [
+        "bal",
+        "ance"
+      ],
+      "syllableIpa": [
+        "ˈbæ",
+        "ləns"
+      ],
+      "stress": 1,
+      "arpabet": "B AE1 L AH0 N S",
+      "audio": "assets/audio/words/balance-noun.mp3",
+      "audioSlow": "assets/audio/words/balance-noun-slow.mp3",
+      "glossYue": "餘額",
+      "glossZh": "餘額",
+      "jyutping": "jyu4 ngaak6",
+      "collocations": [
+        "the balance",
+        "a low balance"
+      ],
+      "example": "The balance is quite low today.",
+      "exampleYue": "今日餘額好低。",
+      "say": "The balance is quite low today.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "balance",
+      "phrase": false,
+      "audioSha256": "eba768f626e4fb781d585717030e05039172bc712509ec2670f5d257cc4de5cc",
+      "register": "銀行",
+      "usageNotes": "餘額係而家剩幾多錢。",
+      "pitfallsYue": "餘額係而家剩幾多錢。",
+      "related": [
+        "account-noun",
+        "fee-noun"
+      ],
+      "examples": [
+        {
+          "en": "The balance is quite low today.",
+          "yue": "今日餘額好低。",
+          "audio": "assets/audio/words/balance-noun.mp3",
+          "audioSlow": "assets/audio/words/balance-noun-slow.mp3",
+          "say": "The balance is quite low today."
+        },
+        {
+          "en": "Please tell me the balance on this account.",
+          "yue": "請話我知呢個戶口嘅餘額。",
+          "audio": "assets/audio/words/balance-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/balance-noun-ex2-slow.mp3",
+          "say": "Please tell me the balance on this account."
+        }
+      ]
+    },
+    {
+      "id": "withdraw-verb",
+      "lemma": "withdraw",
+      "pos": "verb",
+      "senseId": "take-cash",
+      "ipa": "/wɪ.ˈðdɹɔ/",
+      "syllables": [
+        "with",
+        "draw"
+      ],
+      "syllableIpa": [
+        "wɪ",
+        "ˈðdɹɔ"
+      ],
+      "stress": 2,
+      "arpabet": "W IH0 DH D R AO1",
+      "audio": "assets/audio/words/withdraw-verb.mp3",
+      "audioSlow": "assets/audio/words/withdraw-verb-slow.mp3",
+      "glossYue": "提取",
+      "glossZh": "提取",
+      "jyutping": "tai4 ceot1",
+      "collocations": [
+        "withdraw cash",
+        "withdraw some cash"
+      ],
+      "example": "I would like to withdraw some extra cash.",
+      "exampleYue": "我想提取多一啲現金。",
+      "say": "I would like to withdraw some extra cash.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "withdraw",
+      "phrase": false,
+      "audioSha256": "f2bbc526814574e81733a5d6be1b12b10f1959b6772d1996f788947163f9a184",
+      "register": "銀行",
+      "usageNotes": "提取係由戶口拎現金出嚟。",
+      "pitfallsYue": "提取係由戶口拎現金出嚟。",
+      "related": [
+        "deposit-verb",
+        "branch-noun"
+      ],
+      "examples": [
+        {
+          "en": "I would like to withdraw some extra cash.",
+          "yue": "我想提取多一啲現金。",
+          "audio": "assets/audio/words/withdraw-verb.mp3",
+          "audioSlow": "assets/audio/words/withdraw-verb-slow.mp3",
+          "say": "I would like to withdraw some extra cash."
+        },
+        {
+          "en": "I can withdraw cash at this branch.",
+          "yue": "我可以喺呢間分行提取現金。",
+          "audio": "assets/audio/words/withdraw-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/withdraw-verb-ex2-slow.mp3",
+          "say": "I can withdraw cash at this branch."
+        }
+      ]
+    },
+    {
+      "id": "deposit-verb",
+      "lemma": "deposit",
+      "pos": "verb",
+      "senseId": "put-money",
+      "ipa": "/də.ˈpɑ.zɪt/",
+      "syllables": [
+        "de",
+        "pos",
+        "it"
+      ],
+      "syllableIpa": [
+        "də",
+        "ˈpɑ",
+        "zɪt"
+      ],
+      "stress": 2,
+      "arpabet": "D AH0 P AA1 Z IH0 T",
+      "audio": "assets/audio/words/deposit-verb.mp3",
+      "audioSlow": "assets/audio/words/deposit-verb-slow.mp3",
+      "glossYue": "存入",
+      "glossZh": "存入",
+      "jyutping": "cyun4 jap6",
+      "collocations": [
+        "deposit the rest",
+        "deposit cash"
+      ],
+      "example": "I would like to deposit the rest into the account.",
+      "exampleYue": "我想將剩低嘅存入戶口。",
+      "say": "I would like to deposit the rest into the account.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "deposit",
+      "phrase": false,
+      "audioSha256": "414aad7713757f46cb923585d9d19eb724e0ec6d825e0ea82a3d499840684949",
+      "register": "銀行",
+      "usageNotes": "存入係擺錢入戶口。",
+      "pitfallsYue": "存入係擺錢入戶口。",
+      "related": [
+        "withdraw-verb",
+        "account-noun"
+      ],
+      "examples": [
+        {
+          "en": "I would like to deposit the rest into the account.",
+          "yue": "我想將剩低嘅存入戶口。",
+          "audio": "assets/audio/words/deposit-verb.mp3",
+          "audioSlow": "assets/audio/words/deposit-verb-slow.mp3",
+          "say": "I would like to deposit the rest into the account."
+        },
+        {
+          "en": "Please deposit this cash at the branch.",
+          "yue": "請喺分行存入呢筆現金。",
+          "audio": "assets/audio/words/deposit-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/deposit-verb-ex2-slow.mp3",
+          "say": "Please deposit this cash at the branch."
+        }
+      ]
+    },
+    {
+      "id": "blocked-adj",
+      "lemma": "blocked",
+      "pos": "adj",
+      "senseId": "card-stopped",
+      "ipa": "/ˈblɑkt/",
+      "syllables": [
+        "blocked"
+      ],
+      "syllableIpa": [
+        "ˈblɑkt"
+      ],
+      "stress": 1,
+      "arpabet": "B L AA1 K T",
+      "audio": "assets/audio/words/blocked-adj.mp3",
+      "audioSlow": "assets/audio/words/blocked-adj-slow.mp3",
+      "glossYue": "凍結咗",
+      "glossZh": "凍結咗",
+      "jyutping": "dung3 git3",
+      "collocations": [
+        "the blocked card",
+        "a blocked card"
+      ],
+      "example": "The new card replaces the blocked one today.",
+      "exampleYue": "新卡今日會換走張凍結咗嘅。",
+      "say": "The new card replaces the blocked one today.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "blocked",
+      "phrase": false,
+      "audioSha256": "216bf69ec694cd5db6ace0ee3a75043eef718b6758aecaaa74a35f3b1f87f101",
+      "register": "銀行",
+      "usageNotes": "凍結咗就暫時用唔到張卡。",
+      "pitfallsYue": "凍結咗就暫時用唔到張卡。",
+      "related": [
+        "card-noun",
+        "replace-verb"
+      ],
+      "examples": [
+        {
+          "en": "The new card replaces the blocked one today.",
+          "yue": "新卡今日會換走張凍結咗嘅。",
+          "audio": "assets/audio/words/blocked-adj.mp3",
+          "audioSlow": "assets/audio/words/blocked-adj-slow.mp3",
+          "say": "The new card replaces the blocked one today."
+        },
+        {
+          "en": "A blocked card cannot pay at the shop.",
+          "yue": "凍結咗嘅卡唔可以喺舖頭畀錢。",
+          "audio": "assets/audio/words/blocked-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/blocked-adj-ex2-slow.mp3",
+          "say": "A blocked card cannot pay at the shop."
+        }
+      ]
+    },
+    {
+      "id": "branch-noun",
+      "lemma": "branch",
+      "pos": "noun",
+      "senseId": "bank-office",
+      "ipa": "/ˈbɹæntʃ/",
+      "syllables": [
+        "branch"
+      ],
+      "syllableIpa": [
+        "ˈbɹæntʃ"
+      ],
+      "stress": 1,
+      "arpabet": "B R AE1 N CH",
+      "audio": "assets/audio/words/branch-noun.mp3",
+      "audioSlow": "assets/audio/words/branch-noun-slow.mp3",
+      "glossYue": "分行",
+      "glossZh": "分行",
+      "jyutping": "fan1 hong4",
+      "collocations": [
+        "this branch",
+        "at the branch"
+      ],
+      "example": "Please sign this form at the branch.",
+      "exampleYue": "請喺分行簽呢張表格。",
+      "say": "Please sign this form at the branch.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "branch",
+      "phrase": false,
+      "audioSha256": "ebef8b43dd44ef25986952740b44b54c07f3fdf61a7785f695df5cd0f72c1dd5",
+      "register": "銀行",
+      "usageNotes": "分行係銀行一間舖，唔係樹枝。",
+      "pitfallsYue": "分行係銀行一間舖，唔係樹枝。",
+      "related": [
+        "form-noun",
+        "account-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please sign this form at the branch.",
+          "yue": "請喺分行簽呢張表格。",
+          "audio": "assets/audio/words/branch-noun.mp3",
+          "audioSlow": "assets/audio/words/branch-noun-slow.mp3",
+          "say": "Please sign this form at the branch."
+        },
+        {
+          "en": "This branch can replace a lost card.",
+          "yue": "呢間分行可以補領唔見咗嘅卡。",
+          "audio": "assets/audio/words/branch-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/branch-noun-ex2-slow.mp3",
+          "say": "This branch can replace a lost card."
+        }
+      ]
+    },
+    {
+      "id": "fee-noun",
+      "lemma": "fee",
+      "pos": "noun",
+      "senseId": "service-cost",
+      "ipa": "/ˈfi/",
+      "syllables": [
+        "fee"
+      ],
+      "syllableIpa": [
+        "ˈfi"
+      ],
+      "stress": 1,
+      "arpabet": "F IY1",
+      "audio": "assets/audio/words/fee-noun.mp3",
+      "audioSlow": "assets/audio/words/fee-noun-slow.mp3",
+      "glossYue": "手續費",
+      "glossZh": "手續費",
+      "jyutping": "sau2 zuk6 fai3",
+      "collocations": [
+        "the fee",
+        "pay the fee"
+      ],
+      "example": "I will pay the fee today.",
+      "exampleYue": "我今日會畀手續費。",
+      "say": "I will pay the fee today.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "fee",
+      "phrase": false,
+      "audioSha256": "c102d0ecaec4138b47ca871112a185e1f76ec359d1aa815c66af26e6502bc87b",
+      "register": "銀行",
+      "usageNotes": "手續費係銀行收嘅錢，唔係餘額。",
+      "pitfallsYue": "手續費係銀行收嘅錢，唔係餘額。",
+      "related": [
+        "balance-noun",
+        "replace-verb"
+      ],
+      "examples": [
+        {
+          "en": "I will pay the fee today.",
+          "yue": "我今日會畀手續費。",
+          "audio": "assets/audio/words/fee-noun.mp3",
+          "audioSlow": "assets/audio/words/fee-noun-slow.mp3",
+          "say": "I will pay the fee today."
+        },
+        {
+          "en": "The fee to replace the card is here.",
+          "yue": "換卡嘅手續費就喺呢度。",
+          "audio": "assets/audio/words/fee-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/fee-noun-ex2-slow.mp3",
+          "say": "The fee to replace the card is here."
+        }
+      ]
+    },
+    {
+      "id": "form-noun",
+      "lemma": "form",
+      "pos": "noun",
+      "senseId": "paper-form",
+      "ipa": "/ˈfɔɹm/",
+      "syllables": [
+        "form"
+      ],
+      "syllableIpa": [
+        "ˈfɔɹm"
+      ],
+      "stress": 1,
+      "arpabet": "F AO1 R M",
+      "audio": "assets/audio/words/form-noun.mp3",
+      "audioSlow": "assets/audio/words/form-noun-slow.mp3",
+      "glossYue": "表格",
+      "glossZh": "表格",
+      "jyutping": "biu2 gaak3",
+      "collocations": [
+        "a signed form",
+        "this form"
+      ],
+      "example": "I need your ID and a signed form.",
+      "exampleYue": "我要你嘅身份證明同一張簽好嘅表格。",
+      "say": "I need your ID and a signed form.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "form",
+      "phrase": false,
+      "audioSha256": "30e40ddfe9b241c8807463b84d88c086b7b6a774ef04d3ed6c307297448ae95e",
+      "register": "銀行",
+      "usageNotes": "表格係要簽嘅紙。",
+      "pitfallsYue": "表格係要簽嘅紙。",
+      "related": [
+        "branch-noun",
+        "fee-noun"
+      ],
+      "examples": [
+        {
+          "en": "I need your ID and a signed form.",
+          "yue": "我要你嘅身份證明同一張簽好嘅表格。",
+          "audio": "assets/audio/words/form-noun.mp3",
+          "audioSlow": "assets/audio/words/form-noun-slow.mp3",
+          "say": "I need your ID and a signed form."
+        },
+        {
+          "en": "Please sign this form at the branch.",
+          "yue": "請喺分行簽呢張表格。",
+          "audio": "assets/audio/words/form-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/form-noun-ex2-slow.mp3",
+          "say": "Please sign this form at the branch."
+        }
+      ]
+    },
+    {
+      "id": "rent-noun",
+      "lemma": "rent",
+      "pos": "noun",
+      "senseId": "month-pay",
+      "ipa": "/ˈɹɛnt/",
+      "syllables": [
+        "rent"
+      ],
+      "syllableIpa": [
+        "ˈɹɛnt"
+      ],
+      "stress": 1,
+      "arpabet": "R EH1 N T",
+      "audio": "assets/audio/words/rent-noun.mp3",
+      "audioSlow": "assets/audio/words/rent-noun-slow.mp3",
+      "glossYue": "租金",
+      "glossZh": "租金",
+      "jyutping": "zou1 gam1",
+      "collocations": [
+        "monthly rent",
+        "the rent"
+      ],
+      "example": "How much is the monthly rent please?",
+      "exampleYue": "請問月租幾多？",
+      "say": "How much is the monthly rent please?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "rent",
+      "phrase": false,
+      "audioSha256": "ee55d158b2c7e1480f6d5d97776d3ee4195b257026cd32ea90366e4fd6e584ee",
+      "register": "租樓",
+      "usageNotes": "租金係每個月交畀業主嘅錢。",
+      "pitfallsYue": "租金係每個月交畀業主嘅錢。",
+      "related": [
+        "lease-noun",
+        "deposit-noun"
+      ],
+      "examples": [
+        {
+          "en": "How much is the monthly rent please?",
+          "yue": "請問月租幾多？",
+          "audio": "assets/audio/words/rent-noun.mp3",
+          "audioSlow": "assets/audio/words/rent-noun-slow.mp3",
+          "say": "How much is the monthly rent please?"
+        },
+        {
+          "en": "The monthly rent is due on the first day.",
+          "yue": "月租每個月一號交。",
+          "audio": "assets/audio/words/rent-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/rent-noun-ex2-slow.mp3",
+          "say": "The monthly rent is due on the first day."
+        }
+      ]
+    },
+    {
+      "id": "lease-noun",
+      "lemma": "lease",
+      "pos": "noun",
+      "senseId": "rental-deal",
+      "ipa": "/ˈlis/",
+      "syllables": [
+        "lease"
+      ],
+      "syllableIpa": [
+        "ˈlis"
+      ],
+      "stress": 1,
+      "arpabet": "L IY1 S",
+      "audio": "assets/audio/words/lease-noun.mp3",
+      "audioSlow": "assets/audio/words/lease-noun-slow.mp3",
+      "glossYue": "租約",
+      "glossZh": "租約",
+      "jyutping": "zou1 joek3",
+      "collocations": [
+        "sign the lease",
+        "the lease"
+      ],
+      "example": "I can sign the lease if I decide today.",
+      "exampleYue": "如果我今日決定，我可以簽租約。",
+      "say": "I can sign the lease if I decide today.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "lease",
+      "phrase": false,
+      "audioSha256": "0a7c0a75f6e29312df9e97250d604ce99289503677ba8a98b5832a93c7bf52f2",
+      "register": "租樓",
+      "usageNotes": "租約係書面租樓協議。",
+      "pitfallsYue": "租約係書面租樓協議。",
+      "related": [
+        "contract-noun",
+        "landlord-noun"
+      ],
+      "examples": [
+        {
+          "en": "I can sign the lease if I decide today.",
+          "yue": "如果我今日決定，我可以簽租約。",
+          "audio": "assets/audio/words/lease-noun.mp3",
+          "audioSlow": "assets/audio/words/lease-noun-slow.mp3",
+          "say": "I can sign the lease if I decide today."
+        },
+        {
+          "en": "The lease covers the monthly water bill.",
+          "yue": "租約包每月水費。",
+          "audio": "assets/audio/words/lease-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/lease-noun-ex2-slow.mp3",
+          "say": "The lease covers the monthly water bill."
+        }
+      ]
+    },
+    {
+      "id": "landlord-noun",
+      "lemma": "landlord",
+      "pos": "noun",
+      "senseId": "flat-owner",
+      "ipa": "/ˈlæ.ˌndlɔɹd/",
+      "syllables": [
+        "land",
+        "lord"
+      ],
+      "syllableIpa": [
+        "ˈlæ",
+        "ˌndlɔɹd"
+      ],
+      "stress": 1,
+      "arpabet": "L AE1 N D L AO2 R D",
+      "audio": "assets/audio/words/landlord-noun.mp3",
+      "audioSlow": "assets/audio/words/landlord-noun-slow.mp3",
+      "glossYue": "業主",
+      "glossZh": "業主",
+      "jyutping": "jip6 zyu2",
+      "collocations": [
+        "the landlord",
+        "a landlord"
+      ],
+      "example": "The landlord can give you the keys after the deposit clears.",
+      "exampleYue": "按金清咗，業主可以交鎖匙。",
+      "say": "The landlord can give you the keys after the deposit clears.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "landlord",
+      "phrase": false,
+      "audioSha256": "8655db2cfb79ae89b08242c130918ea2b79f8dc40afa1376b0f01144e8aff20b",
+      "register": "租樓",
+      "usageNotes": "業主係單位嘅主人。",
+      "pitfallsYue": "業主係單位嘅主人。",
+      "related": [
+        "tenant-noun",
+        "lease-noun"
+      ],
+      "examples": [
+        {
+          "en": "The landlord can give you the keys after the deposit clears.",
+          "yue": "按金清咗，業主可以交鎖匙。",
+          "audio": "assets/audio/words/landlord-noun.mp3",
+          "audioSlow": "assets/audio/words/landlord-noun-slow.mp3",
+          "say": "The landlord can give you the keys after the deposit clears."
+        },
+        {
+          "en": "The landlord allows a short viewing today.",
+          "yue": "業主今日可以畀人短睇樓。",
+          "audio": "assets/audio/words/landlord-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/landlord-noun-ex2-slow.mp3",
+          "say": "The landlord allows a short viewing today."
+        }
+      ]
+    },
+    {
+      "id": "tenant-noun",
+      "lemma": "tenant",
+      "pos": "noun",
+      "senseId": "flat-renter",
+      "ipa": "/ˈtɛ.nənt/",
+      "syllables": [
+        "ten",
+        "ant"
+      ],
+      "syllableIpa": [
+        "ˈtɛ",
+        "nənt"
+      ],
+      "stress": 1,
+      "arpabet": "T EH1 N AH0 N T",
+      "audio": "assets/audio/words/tenant-noun.mp3",
+      "audioSlow": "assets/audio/words/tenant-noun-slow.mp3",
+      "glossYue": "租客",
+      "glossZh": "租客",
+      "jyutping": "zou1 haak3",
+      "collocations": [
+        "the tenant",
+        "tenant name"
+      ],
+      "example": "The utilities stay in the tenant name.",
+      "exampleYue": "公用開支會用租客個名。",
+      "say": "The utilities stay in the tenant name.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "tenant",
+      "phrase": false,
+      "audioSha256": "bb2515dbcbc2da91835acd3040b56ebd7338b5d04206e4213fbb049bf59b43e2",
+      "register": "租樓",
+      "usageNotes": "租客係住喺單位嘅人。",
+      "pitfallsYue": "租客係住喺單位嘅人。",
+      "related": [
+        "landlord-noun",
+        "utilities-noun"
+      ],
+      "examples": [
+        {
+          "en": "The utilities stay in the tenant name.",
+          "yue": "公用開支會用租客個名。",
+          "audio": "assets/audio/words/tenant-noun.mp3",
+          "audioSlow": "assets/audio/words/tenant-noun-slow.mp3",
+          "say": "The utilities stay in the tenant name."
+        },
+        {
+          "en": "The tenant can ask about the noisy street outside.",
+          "yue": "租客可以問外面條街嘈唔嘈。",
+          "audio": "assets/audio/words/tenant-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/tenant-noun-ex2-slow.mp3",
+          "say": "The tenant can ask about the noisy street outside."
+        }
+      ]
+    },
+    {
+      "id": "utilities-noun",
+      "lemma": "utilities",
+      "pos": "noun",
+      "senseId": "home-bills",
+      "ipa": "/ju.ˈtɪ.lə.tiz/",
+      "syllables": [
+        "u",
+        "til",
+        "i",
+        "ties"
+      ],
+      "syllableIpa": [
+        "ju",
+        "ˈtɪ",
+        "lə",
+        "tiz"
+      ],
+      "stress": 2,
+      "arpabet": "Y UW0 T IH1 L AH0 T IY0 Z",
+      "audio": "assets/audio/words/utilities-noun.mp3",
+      "audioSlow": "assets/audio/words/utilities-noun-slow.mp3",
+      "glossYue": "公用開支",
+      "glossZh": "公用開支",
+      "jyutping": "gung1 jung6 hoi1 zi1",
+      "collocations": [
+        "the utilities",
+        "other utilities"
+      ],
+      "example": "Is the water included with the other utilities here?",
+      "exampleYue": "水費有冇連埋呢度其他公用開支？",
+      "say": "Is the water included with the other utilities here?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "utilities",
+      "phrase": false,
+      "audioSha256": "e5ac484f2acb6c8b82662d6433d13eb4feee6fef3e29178f1ffe428c82cd809e",
+      "register": "租樓",
+      "usageNotes": "公用開支包括水電同煤氣。",
+      "pitfallsYue": "公用開支包括水電同煤氣。",
+      "related": [
+        "rent-noun",
+        "tenant-noun"
+      ],
+      "examples": [
+        {
+          "en": "Is the water included with the other utilities here?",
+          "yue": "水費有冇連埋呢度其他公用開支？",
+          "audio": "assets/audio/words/utilities-noun.mp3",
+          "audioSlow": "assets/audio/words/utilities-noun-slow.mp3",
+          "say": "Is the water included with the other utilities here?"
+        },
+        {
+          "en": "The utilities stay in the tenant name until the written notice ends.",
+          "yue": "公用開支會用租客個名，直至書面通知完。",
+          "audio": "assets/audio/words/utilities-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/utilities-noun-ex2-slow.mp3",
+          "say": "The utilities stay in the tenant name until the written notice ends."
+        }
+      ]
+    },
+    {
+      "id": "furnished-adj",
+      "lemma": "furnished",
+      "pos": "adj",
+      "senseId": "with-furniture",
+      "ipa": "/ˈfɝ.nɪʃt/",
+      "syllables": [
+        "fur",
+        "nished"
+      ],
+      "syllableIpa": [
+        "ˈfɝ",
+        "nɪʃt"
+      ],
+      "stress": 1,
+      "arpabet": "F ER1 N IH0 SH T",
+      "audio": "assets/audio/words/furnished-adj.mp3",
+      "audioSlow": "assets/audio/words/furnished-adj-slow.mp3",
+      "glossYue": "有傢俬",
+      "glossZh": "有傢俬",
+      "jyutping": "jau5 gaa1 si1",
+      "collocations": [
+        "furnished flat",
+        "furnished already"
+      ],
+      "example": "I can show you this furnished flat today.",
+      "exampleYue": "我今日可以帶你睇呢間有傢俬嘅單位。",
+      "say": "I can show you this furnished flat today.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "furnished",
+      "phrase": false,
+      "audioSha256": "bcc3765973ec6cc81e171c0eb42fdf36b8d1cff0007125c28ca23138b9dc2926",
+      "register": "租樓",
+      "usageNotes": "有傢俬就連床同沙發。",
+      "pitfallsYue": "有傢俬就連床同沙發。",
+      "related": [
+        "lease-noun",
+        "viewing-noun"
+      ],
+      "examples": [
+        {
+          "en": "I can show you this furnished flat today.",
+          "yue": "我今日可以帶你睇呢間有傢俬嘅單位。",
+          "audio": "assets/audio/words/furnished-adj.mp3",
+          "audioSlow": "assets/audio/words/furnished-adj-slow.mp3",
+          "say": "I can show you this furnished flat today."
+        },
+        {
+          "en": "The flat is furnished already.",
+          "yue": "單位已經有傢俬。",
+          "audio": "assets/audio/words/furnished-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/furnished-adj-ex2-slow.mp3",
+          "say": "The flat is furnished already."
+        }
+      ]
+    },
+    {
+      "id": "viewing-noun",
+      "lemma": "viewing",
+      "pos": "noun",
+      "senseId": "flat-visit",
+      "ipa": "/ˈvju.ɪŋ/",
+      "syllables": [
+        "view",
+        "ing"
+      ],
+      "syllableIpa": [
+        "ˈvju",
+        "ɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "V Y UW1 IH0 NG",
+      "audio": "assets/audio/words/viewing-noun.mp3",
+      "audioSlow": "assets/audio/words/viewing-noun-slow.mp3",
+      "glossYue": "睇樓",
+      "glossZh": "睇樓",
+      "jyutping": "tai2 lau2",
+      "collocations": [
+        "a short viewing",
+        "a viewing"
+      ],
+      "example": "The landlord allows a short viewing today.",
+      "exampleYue": "業主今日可以畀人短睇樓。",
+      "say": "The landlord allows a short viewing today.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "viewing",
+      "phrase": false,
+      "audioSha256": "29475ba12087caa79d8be28a8555483a59e04baa1948d440fc1422684ed96eb7",
+      "register": "租樓",
+      "usageNotes": "睇樓係去單位睇一次。",
+      "pitfallsYue": "睇樓係去單位睇一次。",
+      "related": [
+        "landlord-noun",
+        "lease-noun"
+      ],
+      "examples": [
+        {
+          "en": "The landlord allows a short viewing today.",
+          "yue": "業主今日可以畀人短睇樓。",
+          "audio": "assets/audio/words/viewing-noun.mp3",
+          "audioSlow": "assets/audio/words/viewing-noun-slow.mp3",
+          "say": "The landlord allows a short viewing today."
+        },
+        {
+          "en": "I would like a viewing before I sign the lease.",
+          "yue": "簽租約之前我想睇樓。",
+          "audio": "assets/audio/words/viewing-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/viewing-noun-ex2-slow.mp3",
+          "say": "I would like a viewing before I sign the lease."
+        }
+      ]
+    },
+    {
+      "id": "contract-noun",
+      "lemma": "contract",
+      "pos": "noun",
+      "senseId": "written-deal",
+      "ipa": "/ˈkɑn.ˌtɹækt/",
+      "syllables": [
+        "con",
+        "tract"
+      ],
+      "syllableIpa": [
+        "ˈkɑn",
+        "ˌtɹækt"
+      ],
+      "stress": 1,
+      "arpabet": "K AA1 N T R AE2 K T",
+      "audio": "assets/audio/words/contract-noun.mp3",
+      "audioSlow": "assets/audio/words/contract-noun-slow.mp3",
+      "glossYue": "合約",
+      "glossZh": "合約",
+      "jyutping": "hip3 joek3",
+      "collocations": [
+        "the contract",
+        "full contract"
+      ],
+      "example": "The agency fee is on the contract.",
+      "exampleYue": "代理費寫喺合約度。",
+      "say": "The agency fee is on the contract.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "contract",
+      "phrase": false,
+      "audioSha256": "ae254e6128f050cbf7202f6a3f825dbd1d00a7492c1fa1b718e05633be9b3852",
+      "register": "租樓",
+      "usageNotes": "合約係要睇同簽嘅文件。",
+      "pitfallsYue": "合約係要睇同簽嘅文件。",
+      "related": [
+        "lease-noun",
+        "notice-noun"
+      ],
+      "examples": [
+        {
+          "en": "The agency fee is on the contract.",
+          "yue": "代理費寫喺合約度。",
+          "audio": "assets/audio/words/contract-noun.mp3",
+          "audioSlow": "assets/audio/words/contract-noun-slow.mp3",
+          "say": "The agency fee is on the contract."
+        },
+        {
+          "en": "Please read the full contract with me.",
+          "yue": "請同我睇晒份合約。",
+          "audio": "assets/audio/words/contract-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/contract-noun-ex2-slow.mp3",
+          "say": "Please read the full contract with me."
+        }
+      ]
+    },
+    {
+      "id": "notice-noun",
+      "lemma": "notice",
+      "pos": "noun",
+      "senseId": "leave-warning",
+      "ipa": "/ˈnoʊ.təs/",
+      "syllables": [
+        "no",
+        "tice"
+      ],
+      "syllableIpa": [
+        "ˈnoʊ",
+        "təs"
+      ],
+      "stress": 1,
+      "arpabet": "N OW1 T AH0 S",
+      "audio": "assets/audio/words/notice-noun.mp3",
+      "audioSlow": "assets/audio/words/notice-noun-slow.mp3",
+      "glossYue": "通知期",
+      "glossZh": "通知期",
+      "jyutping": "tung1 zi1 kei4",
+      "collocations": [
+        "notice period",
+        "written notice"
+      ],
+      "example": "Tell me the notice period before I pay the deposit.",
+      "exampleYue": "交按金之前話我知通知期幾長。",
+      "say": "Tell me the notice period before I pay the deposit.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "notice",
+      "phrase": false,
+      "audioSha256": "a6b02bb5144f1a82714ce69d367511663c340ae2dd8b1784a926e7c8e8dbd981",
+      "register": "租樓",
+      "usageNotes": "通知期係搬走之前要預早講嘅時間。",
+      "pitfallsYue": "通知期係搬走之前要預早講嘅時間。",
+      "related": [
+        "contract-noun",
+        "deposit-noun"
+      ],
+      "examples": [
+        {
+          "en": "Tell me the notice period before I pay the deposit.",
+          "yue": "交按金之前話我知通知期幾長。",
+          "audio": "assets/audio/words/notice-noun.mp3",
+          "audioSlow": "assets/audio/words/notice-noun-slow.mp3",
+          "say": "Tell me the notice period before I pay the deposit."
+        },
+        {
+          "en": "The utilities stay until the written notice ends.",
+          "yue": "公用開支會直至書面通知完。",
+          "audio": "assets/audio/words/notice-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/notice-noun-ex2-slow.mp3",
+          "say": "The utilities stay until the written notice ends."
+        }
+      ]
+    },
+    {
+      "id": "agency-noun",
+      "lemma": "agency",
+      "pos": "noun",
+      "senseId": "rent-agent",
+      "ipa": "/ˈeɪ.dʒə.nsi/",
+      "syllables": [
+        "a",
+        "gen",
+        "cy"
+      ],
+      "syllableIpa": [
+        "ˈeɪ",
+        "dʒə",
+        "nsi"
+      ],
+      "stress": 1,
+      "arpabet": "EY1 JH AH0 N S IY0",
+      "audio": "assets/audio/words/agency-noun.mp3",
+      "audioSlow": "assets/audio/words/agency-noun-slow.mp3",
+      "glossYue": "代理",
+      "glossZh": "代理",
+      "jyutping": "doi6 lei5",
+      "collocations": [
+        "agency fee",
+        "the agency"
+      ],
+      "example": "The agency fee is on the contract.",
+      "exampleYue": "代理費寫喺合約度。",
+      "say": "The agency fee is on the contract.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "agency",
+      "phrase": false,
+      "audioSha256": "d6395c66c6e82e907343e3df51daf906bdeb889d4997f24a4c4d85073b01b208",
+      "register": "租樓",
+      "usageNotes": "代理係幫業主同租客嘅公司。",
+      "pitfallsYue": "代理係幫業主同租客嘅公司。",
+      "related": [
+        "contract-noun",
+        "viewing-noun"
+      ],
+      "examples": [
+        {
+          "en": "The agency fee is on the contract.",
+          "yue": "代理費寫喺合約度。",
+          "audio": "assets/audio/words/agency-noun.mp3",
+          "audioSlow": "assets/audio/words/agency-noun-slow.mp3",
+          "say": "The agency fee is on the contract."
+        },
+        {
+          "en": "The agency can arrange a short viewing.",
+          "yue": "代理可以安排一次短睇樓。",
+          "audio": "assets/audio/words/agency-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/agency-noun-ex2-slow.mp3",
+          "say": "The agency can arrange a short viewing."
+        }
+      ]
+    },
+    {
+      "id": "deposit-noun",
+      "lemma": "deposit",
+      "pos": "noun",
+      "senseId": "rent-hold",
+      "ipa": "/də.ˈpɑ.zɪt/",
+      "syllables": [
+        "de",
+        "pos",
+        "it"
+      ],
+      "syllableIpa": [
+        "də",
+        "ˈpɑ",
+        "zɪt"
+      ],
+      "stress": 2,
+      "arpabet": "D AH0 P AA1 Z IH0 T",
+      "audio": "assets/audio/words/deposit-noun.mp3",
+      "audioSlow": "assets/audio/words/deposit-noun-slow.mp3",
+      "glossYue": "按金",
+      "glossZh": "按金",
+      "jyutping": "on3 gam1",
+      "collocations": [
+        "the deposit",
+        "pay the deposit"
+      ],
+      "example": "The deposit equals one full month here.",
+      "exampleYue": "呢度按金等於一個完整月。",
+      "say": "The deposit equals one full month here.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "deposit",
+      "phrase": false,
+      "audioSha256": "427c9a22e87373acdcb4a812e74216213e7fb9d488afad0265c617e5499a3b69",
+      "register": "租樓",
+      "usageNotes": "按金係租樓先交、退租先至退嘅錢。",
+      "pitfallsYue": "按金係租樓先交、退租先至退嘅錢。",
+      "related": [
+        "rent-noun",
+        "landlord-noun"
+      ],
+      "examples": [
+        {
+          "en": "The deposit equals one full month here.",
+          "yue": "呢度按金等於一個完整月。",
+          "audio": "assets/audio/words/deposit-noun.mp3",
+          "audioSlow": "assets/audio/words/deposit-noun-slow.mp3",
+          "say": "The deposit equals one full month here."
+        },
+        {
+          "en": "The landlord can give you the keys after the deposit clears.",
+          "yue": "按金清咗，業主可以交鎖匙。",
+          "audio": "assets/audio/words/deposit-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/deposit-noun-ex2-slow.mp3",
+          "say": "The landlord can give you the keys after the deposit clears."
+        }
+      ]
+    },
+    {
+      "id": "color-noun",
+      "lemma": "color",
+      "pos": "noun",
+      "senseId": "us-color",
+      "ipa": "/ˈkʌ.lɚ/",
+      "syllables": [
+        "col",
+        "or"
+      ],
+      "syllableIpa": [
+        "ˈkʌ",
+        "lɚ"
+      ],
+      "stress": 1,
+      "arpabet": "K AH1 L ER0",
+      "audio": "assets/audio/words/color-noun.mp3",
+      "audioSlow": "assets/audio/words/color-noun-slow.mp3",
+      "glossYue": "顏色",
+      "glossZh": "顏色",
+      "jyutping": "ngaan4 sik1",
+      "collocations": [
+        "this color",
+        "another color"
+      ],
+      "example": "We do have this color in a smaller size.",
+      "exampleYue": "呢隻顏色有細碼。",
+      "say": "We do have this color in a smaller size.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "color",
+      "phrase": false,
+      "audioSha256": "c17ff07a4749ff01e83fd4cc75da291db44cb6f0c79a7c7b4e70d1ef007c7489",
+      "register": "旅行",
+      "usageNotes": "顏色係衫嘅色，美式串法係 color。",
+      "pitfallsYue": "顏色係衫嘅色，美式串法係 color。",
+      "related": [
+        "smaller-adj",
+        "shirt-noun"
+      ],
+      "examples": [
+        {
+          "en": "We do have this color in a smaller size.",
+          "yue": "呢隻顏色有細碼。",
+          "audio": "assets/audio/words/color-noun.mp3",
+          "audioSlow": "assets/audio/words/color-noun-slow.mp3",
+          "say": "We do have this color in a smaller size."
+        },
+        {
+          "en": "I would like another color in a smaller size.",
+          "yue": "我想要另一隻顏色嘅細碼。",
+          "audio": "assets/audio/words/color-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/color-noun-ex2-slow.mp3",
+          "say": "I would like another color in a smaller size."
+        }
+      ]
+    },
+    {
+      "id": "smaller-adj",
+      "lemma": "smaller",
+      "pos": "adj",
+      "senseId": "less-big",
+      "ipa": "/ˈsmɔ.lɚ/",
+      "syllables": [
+        "small",
+        "er"
+      ],
+      "syllableIpa": [
+        "ˈsmɔ",
+        "lɚ"
+      ],
+      "stress": 1,
+      "arpabet": "S M AO1 L ER0",
+      "audio": "assets/audio/words/smaller-adj.mp3",
+      "audioSlow": "assets/audio/words/smaller-adj-slow.mp3",
+      "glossYue": "細碼",
+      "glossZh": "細碼",
+      "jyutping": "sai3 maa5",
+      "collocations": [
+        "a smaller size",
+        "the smaller size"
+      ],
+      "example": "Do you have this shirt in a smaller size?",
+      "exampleYue": "呢件衫有冇細一個碼？",
+      "say": "Do you have this shirt in a smaller size?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "smaller",
+      "phrase": false,
+      "audioSha256": "d282fa74ed6ae6b0e285f76f019987cd4a5762903e359eb3d892d89d409b1552",
+      "register": "旅行",
+      "usageNotes": "細碼係細過而家呢件。",
+      "pitfallsYue": "細碼係細過而家呢件。",
+      "related": [
+        "size-noun",
+        "color-noun"
+      ],
+      "examples": [
+        {
+          "en": "Do you have this shirt in a smaller size?",
+          "yue": "呢件衫有冇細一個碼？",
+          "audio": "assets/audio/words/smaller-adj.mp3",
+          "audioSlow": "assets/audio/words/smaller-adj-slow.mp3",
+          "say": "Do you have this shirt in a smaller size?"
+        },
+        {
+          "en": "The smaller size fits well.",
+          "yue": "細碼啱著。",
+          "audio": "assets/audio/words/smaller-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/smaller-adj-ex2-slow.mp3",
+          "say": "The smaller size fits well."
+        }
+      ]
+    },
+    {
+      "id": "fitting-room-phrase",
+      "lemma": "fitting room",
+      "pos": "phrase",
+      "senseId": "try-on-room",
+      "ipa": "/ˈfɪ.tɪŋ ˈɹum/",
+      "syllables": [
+        "fit",
+        "ting",
+        "room"
+      ],
+      "syllableIpa": [
+        "ˈfɪ",
+        "tɪŋ",
+        "ˈɹum"
+      ],
+      "stress": 1,
+      "arpabet": "F IH1 T IH0 NG R UW1 M",
+      "audio": "assets/audio/words/fitting-room-phrase.mp3",
+      "audioSlow": "assets/audio/words/fitting-room-phrase-slow.mp3",
+      "glossYue": "試身室",
+      "glossZh": "試身室",
+      "jyutping": "si3 san1 sat1",
+      "collocations": [
+        "the fitting room",
+        "fitting room is open"
+      ],
+      "example": "The fitting room is open for this smaller size.",
+      "exampleYue": "試身室開住，可以試呢個細碼。",
+      "say": "The fitting room is open for this smaller size.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "fitting",
+      "phrase": true,
+      "audioSha256": "d4e0085c1daab972838eb54c2537abe66446dbc15d4d6ffa43deabadbc18abde",
+      "register": "旅行",
+      "usageNotes": "試身室係換衫試碼嘅房。",
+      "pitfallsYue": "試身室係換衫試碼嘅房。",
+      "related": [
+        "smaller-adj",
+        "shirt-noun"
+      ],
+      "examples": [
+        {
+          "en": "The fitting room is open for this smaller size.",
+          "yue": "試身室開住，可以試呢個細碼。",
+          "audio": "assets/audio/words/fitting-room-phrase.mp3",
+          "audioSlow": "assets/audio/words/fitting-room-phrase-slow.mp3",
+          "say": "The fitting room is open for this smaller size."
+        },
+        {
+          "en": "You can use the fitting room before you decide.",
+          "yue": "決定之前你可以用試身室。",
+          "audio": "assets/audio/words/fitting-room-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/fitting-room-phrase-ex2-slow.mp3",
+          "say": "You can use the fitting room before you decide."
+        }
+      ]
+    },
+    {
+      "id": "souvenir-noun",
+      "lemma": "souvenir",
+      "pos": "noun",
+      "senseId": "trip-gift",
+      "ipa": "/ˌsu.və.ˈnɪɹ/",
+      "syllables": [
+        "sou",
+        "ve",
+        "nir"
+      ],
+      "syllableIpa": [
+        "ˌsu",
+        "və",
+        "ˈnɪɹ"
+      ],
+      "stress": 3,
+      "arpabet": "S UW2 V AH0 N IH1 R",
+      "audio": "assets/audio/words/souvenir-noun.mp3",
+      "audioSlow": "assets/audio/words/souvenir-noun-slow.mp3",
+      "glossYue": "紀念品",
+      "glossZh": "紀念品",
+      "jyutping": "gei2 nim6 ban2",
+      "collocations": [
+        "a souvenir",
+        "souvenir shop"
+      ],
+      "example": "Are you looking for a souvenir today?",
+      "exampleYue": "你今日係咪搵紀念品？",
+      "say": "Are you looking for a souvenir today?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "souvenir",
+      "phrase": false,
+      "audioSha256": "1c70a3ab72a4f41ef331f2ede732bfd5740746e618a8d70034d2b894f178c54a",
+      "register": "旅行",
+      "usageNotes": "紀念品係旅行買返去嘅小禮物。",
+      "pitfallsYue": "紀念品係旅行買返去嘅小禮物。",
+      "related": [
+        "postcard-noun",
+        "tax-refund-phrase"
+      ],
+      "examples": [
+        {
+          "en": "Are you looking for a souvenir today?",
+          "yue": "你今日係咪搵紀念品？",
+          "audio": "assets/audio/words/souvenir-noun.mp3",
+          "audioSlow": "assets/audio/words/souvenir-noun-slow.mp3",
+          "say": "Are you looking for a souvenir today?"
+        },
+        {
+          "en": "The souvenir shop can stamp this tax refund form.",
+          "yue": "紀念品店可以蓋呢張退稅表。",
+          "audio": "assets/audio/words/souvenir-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/souvenir-noun-ex2-slow.mp3",
+          "say": "The souvenir shop can stamp this tax refund form."
+        }
+      ]
+    },
+    {
+      "id": "postcard-noun",
+      "lemma": "postcard",
+      "pos": "noun",
+      "senseId": "mail-card",
+      "ipa": "/ˈpoʊ.ˌstkɑɹd/",
+      "syllables": [
+        "post",
+        "card"
+      ],
+      "syllableIpa": [
+        "ˈpoʊ",
+        "ˌstkɑɹd"
+      ],
+      "stress": 1,
+      "arpabet": "P OW1 S T K AA2 R D",
+      "audio": "assets/audio/words/postcard-noun.mp3",
+      "audioSlow": "assets/audio/words/postcard-noun-slow.mp3",
+      "glossYue": "明信片",
+      "glossZh": "明信片",
+      "jyutping": "ming4 seon3 pin2",
+      "collocations": [
+        "a postcard",
+        "this postcard"
+      ],
+      "example": "I will take the blue shirt and a postcard.",
+      "exampleYue": "我要呢件藍色衫同一張明信片。",
+      "say": "I will take the blue shirt and a postcard.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "postcard",
+      "phrase": false,
+      "audioSha256": "da4461e03a2da1e96d080db2e74d0173dbcd96d25499d10f9129580f68710a99",
+      "register": "旅行",
+      "usageNotes": "明信片係寄畀朋友嘅硬卡。",
+      "pitfallsYue": "明信片係寄畀朋友嘅硬卡。",
+      "related": [
+        "souvenir-noun",
+        "shirt-noun"
+      ],
+      "examples": [
+        {
+          "en": "I will take the blue shirt and a postcard.",
+          "yue": "我要呢件藍色衫同一張明信片。",
+          "audio": "assets/audio/words/postcard-noun.mp3",
+          "audioSlow": "assets/audio/words/postcard-noun-slow.mp3",
+          "say": "I will take the blue shirt and a postcard."
+        },
+        {
+          "en": "This postcard shows the harbour at sunset.",
+          "yue": "呢張明信片係日落嘅海港。",
+          "audio": "assets/audio/words/postcard-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/postcard-noun-ex2-slow.mp3",
+          "say": "This postcard shows the harbour at sunset."
+        }
+      ]
+    },
+    {
+      "id": "tax-refund-phrase",
+      "lemma": "tax refund",
+      "pos": "phrase",
+      "senseId": "tax-back",
+      "ipa": "/ˈtæks ɹɪ.ˈfʌnd/",
+      "syllables": [
+        "tax",
+        "re",
+        "fund"
+      ],
+      "syllableIpa": [
+        "ˈtæks",
+        "ɹɪ",
+        "ˈfʌnd"
+      ],
+      "stress": 1,
+      "arpabet": "T AE1 K S R IH0 F AH1 N D",
+      "audio": "assets/audio/words/tax-refund-phrase.mp3",
+      "audioSlow": "assets/audio/words/tax-refund-phrase-slow.mp3",
+      "glossYue": "退稅",
+      "glossZh": "退稅",
+      "jyutping": "teoi3 seoi3",
+      "collocations": [
+        "tax refund form",
+        "tax refund desk"
+      ],
+      "example": "I will take this color with the tax refund form.",
+      "exampleYue": "我要呢隻顏色，連埋退稅表。",
+      "say": "I will take this color with the tax refund form.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "tax",
+      "phrase": true,
+      "audioSha256": "d120655f36f0b3b6cea605534c522f3d28bd07d10be0473d6ff2f2a8aef8526c",
+      "register": "旅行",
+      "usageNotes": "退稅係離境之前用收據同表格申請。",
+      "pitfallsYue": "退稅係離境之前用收據同表格申請。",
+      "related": [
+        "receipt-noun",
+        "souvenir-noun"
+      ],
+      "examples": [
+        {
+          "en": "I will take this color with the tax refund form.",
+          "yue": "我要呢隻顏色，連埋退稅表。",
+          "audio": "assets/audio/words/tax-refund-phrase.mp3",
+          "audioSlow": "assets/audio/words/tax-refund-phrase-slow.mp3",
+          "say": "I will take this color with the tax refund form."
+        },
+        {
+          "en": "The tax refund desk needs this receipt with your passport.",
+          "yue": "退稅櫃檯要呢張收據同你本護照。",
+          "audio": "assets/audio/words/tax-refund-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/tax-refund-phrase-ex2-slow.mp3",
+          "say": "The tax refund desk needs this receipt with your passport."
+        }
+      ]
+    },
+    {
+      "id": "shirt-noun",
+      "lemma": "shirt",
+      "pos": "noun",
+      "senseId": "trip-shirt",
+      "ipa": "/ˈʃɝt/",
+      "syllables": [
+        "shirt"
+      ],
+      "syllableIpa": [
+        "ˈʃɝt"
+      ],
+      "stress": 1,
+      "arpabet": "SH ER1 T",
+      "audio": "assets/audio/words/shirt-noun.mp3",
+      "audioSlow": "assets/audio/words/shirt-noun-slow.mp3",
+      "glossYue": "衫",
+      "glossZh": "衫",
+      "jyutping": "saam1",
+      "collocations": [
+        "this shirt",
+        "the blue shirt"
+      ],
+      "example": "Do you have this shirt in a smaller size?",
+      "exampleYue": "呢件衫有冇細一個碼？",
+      "say": "Do you have this shirt in a smaller size?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "shirt",
+      "phrase": false,
+      "audioSha256": "16fde4f169ee6daa8b387ce84f484ce7742095fd65f17a189393edbf9f4453fe",
+      "register": "旅行",
+      "usageNotes": "衫係上衣，呢度係紀念品店嘅 TEE。",
+      "pitfallsYue": "衫係上衣，呢度係紀念品店嘅 TEE。",
+      "related": [
+        "smaller-adj",
+        "color-noun"
+      ],
+      "examples": [
+        {
+          "en": "Do you have this shirt in a smaller size?",
+          "yue": "呢件衫有冇細一個碼？",
+          "audio": "assets/audio/words/shirt-noun.mp3",
+          "audioSlow": "assets/audio/words/shirt-noun-slow.mp3",
+          "say": "Do you have this shirt in a smaller size?"
+        },
+        {
+          "en": "I will take the blue shirt and a postcard.",
+          "yue": "我要呢件藍色衫同一張明信片。",
+          "audio": "assets/audio/words/shirt-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/shirt-noun-ex2-slow.mp3",
+          "say": "I will take the blue shirt and a postcard."
         }
       ]
     }

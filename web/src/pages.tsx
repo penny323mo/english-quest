@@ -54,7 +54,7 @@ export function PathHome() {
             <span className="pill">{profile.xp} XP</span>
             <span className="pill">{GOAL_LABEL[profile.goal]}</span>
           </div>
-          <p className="fine">{done} / {SHIPPED.length} 課完成。冇紅心，錯過咗聽日再嚟就得。</p>
+          <p className="fine">{done} / {SHIPPED.length} 課完成。冇紅心。聽日再嚟都得。</p>
         </div>
       </header>
       <div className="row-btns">

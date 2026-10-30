@@ -1,5 +1,12 @@
 # Changelog — English Quest
 
+## Round 28 fixes
+- D2 銀行 (A2/B1), T7 旅行購物 (A2/B1), and D3 租樓 (B1) are full 12-beat lessons. D2 and T7 sit after D1 and before J8. D3 sits after W3. Unlock order is F1 F2 F3 F4 J1 R1 J2 T1 J3 T2 R2 J4 J5 T3 R3 T4 R4 J6 J7 T5 R5 W1 D1 D2 T7 J8 J9 J10 T6 W2 W3 D3. Six soon teasers remain (R6, J12, R7, T8, J11, T9). The end copy says 呢輪三十二課. Profile goals stay foundation, jewellery, travel, and restaurant. The daily deck gains the bank and rent cards. The travel deck gains the shopping cards.
+- Dialogue means on this stretch: D1 15.25, D2 15.38, T7 15.38, J8 15.38, T6 16.50, W2 16.75, W3 17.00, D3 17.25. D2 and T7 stay with J8 and do not teach should. D3 uses “If I decide today…”. D1’s model answers the medicine allergy and still keeps the headache.
+- Comprehension stems end in 「呢句即係點？」. A real question ends in 「即係問緊咩？」. polish is “Please polish it with a soft cloth.” / 用軟布擦亮佢。, and its collocations are jewellery polish and a little polish. Sheet stays 一張紙。 and take stays 要.
+- The step name is a cream pill (`rgba(255, 248, 239, 0.92)`, radius 999px). On 下一課 the hero is the next lesson, or a plain backdrop when the path ends. J10’s hook keeps both faces in frame. The path line is 「冇紅心。聽日再嚟都得。」 Examples end in tonight, now, or if you like only when the scene needs that time.
+- Tests are 27/27. The service worker precache is 1947 entries (37874.74 KiB) (`assets/index-3F6zBpGO.js`, `assets/shell-DmLoT__n.js`). At 390px the path, F1, J10, D2, T7, and D3 stay inside the phone, including J10’s step pill and D3’s end copy. The primary button is `rgb(15, 122, 110)`. Lighthouse mobile performance is 0.99.
+
 ## Round 27 fixes
 - W2 電郵口語 (B1), W3 開會 (B1), and D1 睇醫生 (A2/B1) are full 12-beat lessons. D1 sits after W1 and before J8 so the band does not drop. W2 and W3 sit after T6. Unlock order is F1 F2 F3 F4 J1 R1 J2 T1 J3 T2 R2 J4 J5 T3 R3 T4 R4 J6 J7 T5 R5 W1 D1 J8 J9 J10 T6 W2 W3. Six soon teasers remain (R6, J12, R7, T8, J11, T9). The end copy says 呢輪二十九課. Profile goals stay foundation, jewellery, travel, and restaurant. The work deck gains the email and meeting cards. A new 日常生活 deck holds the clinic cards.
 - Dialogue means on this stretch: W1 14.63, D1 15.25, J8 15.38, T6 16.50, W2 16.75, W3 17.00. D1 teaches “I have had… since…” and “you can” / “please rest”. It does not teach should, which arrives in J8. W3 teaches “I see your point, but…”, “Could you expand on…”, and “Let's…”.

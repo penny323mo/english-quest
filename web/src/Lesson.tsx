@@ -162,10 +162,13 @@ function Player({ lesson }: { lesson: Lesson }) {
     setGate("play");
   }
 
+  const nxtForHero = lesson.next ? lessonById[lesson.next] : undefined;
+  const heroPath = beat === 11 ? (nxtForHero?.hero || "") : lesson.hero;
+
   return (
     <div className="lesson">
-      <div className="hero">
-        <ArtImg src={asset(lesson.hero)} alt="" width={900} height={1200} fill />
+      <div className={heroPath ? "hero" : "hero plain"}>
+        {heroPath ? <ArtImg src={asset(heroPath)} alt="" width={900} height={1200} fill /> : null}
       </div>
       <div className="lesson-top">
         <a href="#/">關閉</a>
@@ -693,7 +696,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪二十九課你行完啦。到期嘅卡會喺重溫等你。</p>
+        <p className="lede">呢輪三十二課你行完啦。到期嘅卡會喺重溫等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );

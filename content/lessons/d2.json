@@ -1,0 +1,356 @@
+{
+  "id": "D2",
+  "unit": "D",
+  "titleYue": "銀行",
+  "titleEn": "At the bank",
+  "canDoYue": "你識講開戶同凍結卡，仲識問餘額同手續費。",
+  "canDoEn": "Open an account, block a lost card, and ask about the balance.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/d2.webp",
+  "cast": [
+    "kai",
+    "tom"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "account-noun",
+    "balance-noun",
+    "withdraw-verb",
+    "deposit-verb",
+    "blocked-adj",
+    "branch-noun",
+    "fee-noun",
+    "form-noun",
+    "card-noun",
+    "replace-verb"
+  ],
+  "dialogue": [
+    {
+      "id": "d2-l1",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Good morning. Please come right forward, and I can help you open the account today.",
+      "glossYue": "早晨。請上前少少，我今日可以幫你開戶口。",
+      "audio": "assets/audio/lines/d2-l1.mp3",
+      "audioSlow": "assets/audio/lines/d2-l1-slow.mp3",
+      "say": "Good morning. Please come right forward, and I can help you open the account today.",
+      "hideGloss": false
+    },
+    {
+      "id": "d2-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I would like to open an account here, and I have lost my bank card.",
+      "glossYue": "我想喺呢度開戶口，而且我張銀行卡唔見咗。",
+      "audio": "assets/audio/lines/d2-l2.mp3",
+      "audioSlow": "assets/audio/lines/d2-l2-slow.mp3",
+      "say": "I would like to open an account here, and I have lost my bank card.",
+      "hideGloss": true
+    },
+    {
+      "id": "d2-l3",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "I can block the lost card, but I need your ID and a signed form.",
+      "glossYue": "我可以凍結張唔見咗嘅卡，但係我要你嘅身份證明同一張簽好嘅表格。",
+      "audio": "assets/audio/lines/d2-l3.mp3",
+      "audioSlow": "assets/audio/lines/d2-l3-slow.mp3",
+      "say": "I can block the lost card, but I need your ID and a signed form.",
+      "hideGloss": true
+    },
+    {
+      "id": "d2-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could you please help me block this lost card, and then tell me the balance?",
+      "glossYue": "可唔可以幫我凍結呢張唔見咗嘅卡，然後話我知餘額？",
+      "audio": "assets/audio/lines/d2-l4.mp3",
+      "audioSlow": "assets/audio/lines/d2-l4-slow.mp3",
+      "say": "Could you please help me block this lost card, and then tell me the balance?",
+      "hideGloss": true
+    },
+    {
+      "id": "d2-l5",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "The balance is quite low today, and the fee to replace the card is here.",
+      "glossYue": "今日餘額好低，換卡嘅手續費就喺呢度。",
+      "audio": "assets/audio/lines/d2-l5.mp3",
+      "audioSlow": "assets/audio/lines/d2-l5-slow.mp3",
+      "say": "The balance is quite low today, and the fee to replace the card is here.",
+      "hideGloss": false
+    },
+    {
+      "id": "d2-l6",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I would like to withdraw some extra cash, and then deposit the rest into the account.",
+      "glossYue": "我想提取多一啲現金，然後將剩低嘅存入戶口。",
+      "audio": "assets/audio/lines/d2-l6.mp3",
+      "audioSlow": "assets/audio/lines/d2-l6-slow.mp3",
+      "say": "I would like to withdraw some extra cash, and then deposit the rest into the account.",
+      "hideGloss": true
+    },
+    {
+      "id": "d2-l7",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Please sign this form at the branch, and the new card replaces the blocked one today.",
+      "glossYue": "請喺分行簽呢張表格，新卡今日會換走張凍結咗嘅。",
+      "audio": "assets/audio/lines/d2-l7.mp3",
+      "audioSlow": "assets/audio/lines/d2-l7-slow.mp3",
+      "say": "Please sign this form at the branch, and the new card replaces the blocked one today.",
+      "hideGloss": true
+    },
+    {
+      "id": "d2-l8",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I will pay the fee today, and I would like a receipt for the new card.",
+      "glossYue": "我今日會畀手續費，我想要張新卡嘅收據。",
+      "audio": "assets/audio/lines/d2-l8.mp3",
+      "audioSlow": "assets/audio/lines/d2-l8-slow.mp3",
+      "say": "I will pay the fee today, and I would like a receipt for the new card.",
+      "hideGloss": false
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "I would like to open an account here. 呢句即係點？",
+      "choices": [
+        "我想喺呢度開戶口",
+        "我想取消戶口",
+        "我想叫的士"
+      ],
+      "answer": 0,
+      "explain": "I would like to 係禮貌咁講想做嘅事。"
+    },
+    {
+      "prompt": "Could you please help me block this lost card? 即係問緊咩？",
+      "choices": [
+        "請人幫我凍結唔見咗嘅卡",
+        "話卡已經可以再使",
+        "問幾多錢"
+      ],
+      "answer": 0,
+      "explain": "block 係凍結張卡。"
+    },
+    {
+      "prompt": "I will pay the fee today. 呢句即係點？",
+      "choices": [
+        "我今日會畀手續費",
+        "我唔使畀錢",
+        "我要退稅"
+      ],
+      "answer": 0,
+      "explain": "fee 係手續費。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I would like to open an ___ here, and I have lost my bank card.",
+      "example": "I would like to open an account here, and I have lost my bank card.",
+      "glossYue": "我想開一個⋯⋯。",
+      "answer": "account",
+      "choices": [
+        "account",
+        "towel",
+        "taxi"
+      ]
+    },
+    {
+      "pattern": "Could you please help me block this lost card, and then tell me the ___?",
+      "example": "Could you please help me block this lost card, and then tell me the balance?",
+      "glossYue": "話我知⋯⋯。",
+      "answer": "balance",
+      "choices": [
+        "balance",
+        "meter",
+        "cake"
+      ]
+    },
+    {
+      "pattern": "I would like to ___ some extra cash, and then deposit the rest into the account.",
+      "example": "I would like to withdraw some extra cash, and then deposit the rest into the account.",
+      "glossYue": "我想⋯⋯現金。",
+      "answer": "withdraw",
+      "choices": [
+        "withdraw",
+        "necklace",
+        "embassy"
+      ]
+    },
+    {
+      "pattern": "Please sign this form at the ___, and the new card replaces the blocked one today.",
+      "example": "Please sign this form at the branch, and the new card replaces the blocked one today.",
+      "glossYue": "喺⋯⋯簽表格。",
+      "answer": "branch",
+      "choices": [
+        "branch",
+        "dessert",
+        "gate"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "d2-l8",
+    "hint": "I will pay the fee today, and I would like a receipt for the new card."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "櫃檯話要身份證明同表格。你點先答？",
+      "choices": [
+        "Could you please help me block this lost card, and then tell me the balance?",
+        "You might also like this matching pair.",
+        "The necklace is eighteen dollars."
+      ],
+      "answer": 0,
+      "explain": "請人凍結卡，再問餘額。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "I",
+        "would",
+        "like",
+        "to",
+        "open"
+      ],
+      "answer": [
+        "I",
+        "would",
+        "like",
+        "to",
+        "open"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你係客人。講開戶同唔見咗卡。可以講：I would like to open。",
+    "turns": [
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "Good morning. Please come right forward, and I can help you open the account today.",
+        "audio": "assets/audio/lines/d2-l1.mp3",
+        "audioSlow": "assets/audio/lines/d2-l1-slow.mp3",
+        "expect": "I would like to open an account here, and I have lost my bank card.",
+        "keywords": [
+          "account",
+          "card"
+        ],
+        "modelAudio": "assets/audio/lines/d2-l2.mp3",
+        "modelSlow": "assets/audio/lines/d2-l2-slow.mp3"
+      },
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "I can block the lost card, but I need your ID and a signed form.",
+        "audio": "assets/audio/lines/d2-l3.mp3",
+        "audioSlow": "assets/audio/lines/d2-l3-slow.mp3",
+        "expect": "Could you please help me block this lost card, and then tell me the balance?",
+        "keywords": [
+          "block",
+          "balance"
+        ],
+        "modelAudio": "assets/audio/lines/d2-l4.mp3",
+        "modelSlow": "assets/audio/lines/d2-l4-slow.mp3"
+      },
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "The balance is quite low today, and the fee to replace the card is here.",
+        "audio": "assets/audio/lines/d2-l5.mp3",
+        "audioSlow": "assets/audio/lines/d2-l5-slow.mp3",
+        "expect": "I would like to withdraw some extra cash, and then deposit the rest into the account.",
+        "keywords": [
+          "withdraw",
+          "deposit"
+        ],
+        "modelAudio": "assets/audio/lines/d2-l6.mp3",
+        "modelSlow": "assets/audio/lines/d2-l6-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：銀行戶口",
+      "lemma": "account-noun",
+      "choices": [
+        "account",
+        "balance",
+        "fee"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：戶口剩幾多",
+      "lemma": "balance-noun",
+      "choices": [
+        "balance",
+        "branch",
+        "form"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "客人講「The balance is quite low today, and the fee to replace the card is here.」，balance 係咩意思？",
+      "choices": [
+        "餘額",
+        "收據",
+        "紀念品"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "客人講「I will pay the fee today, and I would like a receipt for the new card.」，fee 係咩意思？",
+      "choices": [
+        "手續費",
+        "租金",
+        "明信片"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個字有 /l/：balance、account、定 fee？",
+      "choices": [
+        "balance",
+        "account",
+        "fee"
+      ],
+      "answer": 0,
+      "explain": "balance 有 /l/。account 同 fee 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "balance 入面嗰個音",
+    "note": "balance 有 /l/。account 同 fee 冇 /l/。",
+    "pairs": [
+      {
+        "a": "balance-noun",
+        "b": "account-noun"
+      },
+      {
+        "a": "balance-noun",
+        "b": "fee-noun"
+      }
+    ],
+    "drill": [
+      "balance-noun",
+      "account-noun",
+      "fee-noun",
+      "branch-noun",
+      "form-noun"
+    ]
+  },
+  "next": "T7"
+}

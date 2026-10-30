@@ -50,11 +50,11 @@
       "id": "t6-l3",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "I am sorry for the inconvenience tonight, and I can send an engineer up right now.",
-      "glossYue": "今晚造成不便對唔住，我而家可以派工程師上嚟。",
+      "text": "I am sorry for the inconvenience, and I can send an engineer to the noisy room.",
+      "glossYue": "造成不便對唔住，我可以派工程師去嗰間嘈房。",
       "audio": "assets/audio/lines/t6-l3.mp3",
       "audioSlow": "assets/audio/lines/t6-l3-slow.mp3",
-      "say": "I am sorry for the inconvenience tonight, and I can send an engineer up right now.",
+      "say": "I am sorry for the inconvenience, and I can send an engineer to the noisy room.",
       "hideGloss": true
     },
     {
@@ -115,7 +115,7 @@
   ],
   "understand": [
     {
-      "prompt": "There seems to be a problem. 係講？",
+      "prompt": "There seems to be a problem. 呢句即係點？",
       "choices": [
         "似乎有問題",
         "已經搞好",
@@ -135,7 +135,7 @@
       "explain": "Would it be possible 係禮貌咁問。"
     },
     {
-      "prompt": "I am sorry for the inconvenience. 係？",
+      "prompt": "I am sorry for the inconvenience. 呢句即係點？",
       "choices": [
         "為不便道歉",
         "話房冇問題",
@@ -170,7 +170,7 @@
     },
     {
       "pattern": "I am sorry for the ___ tonight, and I can send an engineer up right now.",
-      "example": "I am sorry for the inconvenience tonight, and I can send an engineer up right now.",
+      "example": "I am sorry for the inconvenience, and I can send an engineer to the noisy room.",
       "glossYue": "今晚造成⋯⋯對唔住。",
       "answer": "inconvenience",
       "choices": [
@@ -238,7 +238,7 @@
         "line": "There seems to be very noisy air conditioning, and I barely slept in this room tonight.",
         "audio": "assets/audio/lines/t6-l2.mp3",
         "audioSlow": "assets/audio/lines/t6-l2-slow.mp3",
-        "expect": "I am sorry for the inconvenience tonight, and I can send an engineer up right now.",
+        "expect": "I am sorry for the inconvenience, and I can send an engineer to the noisy room.",
         "keywords": [
           "inconvenience",
           "engineer"
@@ -311,7 +311,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「she is sorry for the inconvenience tonight」，係咩意思？",
+      "prompt": "客人講「I am sorry for the inconvenience in this noisy room」，係咩意思？",
       "choices": [
         "不便",
         "刻字",

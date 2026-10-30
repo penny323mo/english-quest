@@ -62,11 +62,11 @@
       "id": "d1-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have had a headache since Monday, and I have a food allergy as well.",
-      "glossYue": "我由星期一起頭痛，我亦都有食物過敏。",
+      "text": "I have had a headache since Monday, and I have no allergy to this medicine.",
+      "glossYue": "我由星期一起頭痛，我對呢隻藥冇過敏。",
       "audio": "assets/audio/lines/d1-l4.mp3",
       "audioSlow": "assets/audio/lines/d1-l4-slow.mp3",
-      "say": "I have had a headache since Monday, and I have a food allergy as well.",
+      "say": "I have had a headache since Monday, and I have no allergy to this medicine.",
       "hideGloss": true
     },
     {
@@ -116,7 +116,7 @@
   ],
   "understand": [
     {
-      "prompt": "I have had a fever since Monday. 係講？",
+      "prompt": "I have had a fever since Monday. 呢句即係點？",
       "choices": [
         "我由星期一起發燒",
         "我已經好返",
@@ -126,7 +126,7 @@
       "explain": "I have had 係由某個時間開始一直有。"
     },
     {
-      "prompt": "You can rest at home. 即係問緊咩？",
+      "prompt": "You can rest at home. 呢句即係點？",
       "choices": [
         "話你可以喺屋企休息",
         "話你一定要入院",
@@ -136,7 +136,7 @@
       "explain": "You can 係一個建議，唔係命令。"
     },
     {
-      "prompt": "I need a follow-up. 係講？",
+      "prompt": "I need a follow-up. 呢句即係點？",
       "choices": [
         "我要覆診",
         "我要取消",
@@ -160,7 +160,7 @@
     },
     {
       "pattern": "I have had a ___ since Monday, and I have a food allergy as well.",
-      "example": "I have had a headache since Monday, and I have a food allergy as well.",
+      "example": "I have had a headache since Monday, and I have no allergy to this medicine.",
       "glossYue": "我由星期一起⋯⋯。",
       "answer": "headache",
       "choices": [
@@ -251,7 +251,7 @@
         "line": "Do you have a headache too, and do you have an allergy to this medicine?",
         "audio": "assets/audio/lines/d1-l3.mp3",
         "audioSlow": "assets/audio/lines/d1-l3-slow.mp3",
-        "expect": "I have had a headache since Monday, and I have a food allergy as well.",
+        "expect": "I have had a headache since Monday, and I have no allergy to this medicine.",
         "keywords": [
           "headache",
           "allergy"
@@ -352,5 +352,5 @@
       "pharmacy-noun"
     ]
   },
-  "next": "J8"
+  "next": "D2"
 }

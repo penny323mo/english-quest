@@ -1933,11 +1933,11 @@
     "id": "j10-l1",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "You might also like this matching pair, and it completes the look for a gift tonight.",
-    "glossYue": "你或者都會鍾意呢對襯到嘅，今晚送禮會成套。",
+    "text": "You might also like this matching pair, and it completes the look for a birthday gift.",
+    "glossYue": "你或者都會鍾意呢對襯到嘅，送生日禮物會成套。",
     "audio": "assets/audio/lines/j10-l1.mp3",
     "audioSlow": "assets/audio/lines/j10-l1-slow.mp3",
-    "say": "You might also like this matching pair, and it completes the look for a gift tonight."
+    "say": "You might also like this matching pair, and it completes the look for a birthday gift."
   },
   {
     "id": "j10-l2",
@@ -1953,11 +1953,11 @@
     "id": "j10-l3",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "Yes, this popular set is optional, and the engraving is a quiet extra if you like.",
-    "glossYue": "會，呢套好多人揀，可以唔要，刻字係靜靜嘅加購，如果你想。",
+    "text": "Yes, this popular set is optional, and the engraving is a quiet extra on the box.",
+    "glossYue": "會，呢套好多人揀，可以唔要，刻字係盒上靜靜嘅加購。",
     "audio": "assets/audio/lines/j10-l3.mp3",
     "audioSlow": "assets/audio/lines/j10-l3-slow.mp3",
-    "say": "Yes, this popular set is optional, and the engraving is a quiet extra if you like."
+    "say": "Yes, this popular set is optional, and the engraving is a quiet extra on the box."
   },
   {
     "id": "j10-l4",
@@ -1993,11 +1993,11 @@
     "id": "j10-l7",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "If you like the necklace, the matching pair goes well, and the box is ready now.",
-    "glossYue": "如果你鍾意條頸鏈，對襯嘅都好配，盒而家準備好。",
+    "text": "If you like this necklace, the matching pair goes well, and the gift box is ready.",
+    "glossYue": "如果你鍾意呢條頸鏈，對襯嘅都好配，禮盒準備好。",
     "audio": "assets/audio/lines/j10-l7.mp3",
     "audioSlow": "assets/audio/lines/j10-l7-slow.mp3",
-    "say": "If you like the necklace, the matching pair goes well, and the box is ready now."
+    "say": "If you like this necklace, the matching pair goes well, and the gift box is ready."
   },
   {
     "id": "j10-l8",
@@ -2033,11 +2033,11 @@
     "id": "t6-l3",
     "speaker": "kai",
     "speakerLabel": "Kai",
-    "text": "I am sorry for the inconvenience tonight, and I can send an engineer up right now.",
-    "glossYue": "今晚造成不便對唔住，我而家可以派工程師上嚟。",
+    "text": "I am sorry for the inconvenience, and I can send an engineer to the noisy room.",
+    "glossYue": "造成不便對唔住，我可以派工程師去嗰間嘈房。",
     "audio": "assets/audio/lines/t6-l3.mp3",
     "audioSlow": "assets/audio/lines/t6-l3-slow.mp3",
-    "say": "I am sorry for the inconvenience tonight, and I can send an engineer up right now."
+    "say": "I am sorry for the inconvenience, and I can send an engineer to the noisy room."
   },
   {
     "id": "t6-l4",
@@ -2283,11 +2283,11 @@
     "id": "d1-l4",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "I have had a headache since Monday, and I have a food allergy as well.",
-    "glossYue": "我由星期一起頭痛，我亦都有食物過敏。",
+    "text": "I have had a headache since Monday, and I have no allergy to this medicine.",
+    "glossYue": "我由星期一起頭痛，我對呢隻藥冇過敏。",
     "audio": "assets/audio/lines/d1-l4.mp3",
     "audioSlow": "assets/audio/lines/d1-l4-slow.mp3",
-    "say": "I have had a headache since Monday, and I have a food allergy as well."
+    "say": "I have had a headache since Monday, and I have no allergy to this medicine."
   },
   {
     "id": "d1-l5",
@@ -2328,5 +2328,245 @@
     "audio": "assets/audio/lines/d1-l8.mp3",
     "audioSlow": "assets/audio/lines/d1-l8-slow.mp3",
     "say": "Please rest today, and the clinic can see you for a follow-up after the pharmacy."
+  },
+  {
+    "id": "d2-l1",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "Good morning. Please come right forward, and I can help you open the account today.",
+    "glossYue": "早晨。請上前少少，我今日可以幫你開戶口。",
+    "audio": "assets/audio/lines/d2-l1.mp3",
+    "audioSlow": "assets/audio/lines/d2-l1-slow.mp3",
+    "say": "Good morning. Please come right forward, and I can help you open the account today."
+  },
+  {
+    "id": "d2-l2",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "I would like to open an account here, and I have lost my bank card.",
+    "glossYue": "我想喺呢度開戶口，而且我張銀行卡唔見咗。",
+    "audio": "assets/audio/lines/d2-l2.mp3",
+    "audioSlow": "assets/audio/lines/d2-l2-slow.mp3",
+    "say": "I would like to open an account here, and I have lost my bank card."
+  },
+  {
+    "id": "d2-l3",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "I can block the lost card, but I need your ID and a signed form.",
+    "glossYue": "我可以凍結張唔見咗嘅卡，但係我要你嘅身份證明同一張簽好嘅表格。",
+    "audio": "assets/audio/lines/d2-l3.mp3",
+    "audioSlow": "assets/audio/lines/d2-l3-slow.mp3",
+    "say": "I can block the lost card, but I need your ID and a signed form."
+  },
+  {
+    "id": "d2-l4",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Could you please help me block this lost card, and then tell me the balance?",
+    "glossYue": "可唔可以幫我凍結呢張唔見咗嘅卡，然後話我知餘額？",
+    "audio": "assets/audio/lines/d2-l4.mp3",
+    "audioSlow": "assets/audio/lines/d2-l4-slow.mp3",
+    "say": "Could you please help me block this lost card, and then tell me the balance?"
+  },
+  {
+    "id": "d2-l5",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "The balance is quite low today, and the fee to replace the card is here.",
+    "glossYue": "今日餘額好低，換卡嘅手續費就喺呢度。",
+    "audio": "assets/audio/lines/d2-l5.mp3",
+    "audioSlow": "assets/audio/lines/d2-l5-slow.mp3",
+    "say": "The balance is quite low today, and the fee to replace the card is here."
+  },
+  {
+    "id": "d2-l6",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "I would like to withdraw some extra cash, and then deposit the rest into the account.",
+    "glossYue": "我想提取多一啲現金，然後將剩低嘅存入戶口。",
+    "audio": "assets/audio/lines/d2-l6.mp3",
+    "audioSlow": "assets/audio/lines/d2-l6-slow.mp3",
+    "say": "I would like to withdraw some extra cash, and then deposit the rest into the account."
+  },
+  {
+    "id": "d2-l7",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "Please sign this form at the branch, and the new card replaces the blocked one today.",
+    "glossYue": "請喺分行簽呢張表格，新卡今日會換走張凍結咗嘅。",
+    "audio": "assets/audio/lines/d2-l7.mp3",
+    "audioSlow": "assets/audio/lines/d2-l7-slow.mp3",
+    "say": "Please sign this form at the branch, and the new card replaces the blocked one today."
+  },
+  {
+    "id": "d2-l8",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "I will pay the fee today, and I would like a receipt for the new card.",
+    "glossYue": "我今日會畀手續費，我想要張新卡嘅收據。",
+    "audio": "assets/audio/lines/d2-l8.mp3",
+    "audioSlow": "assets/audio/lines/d2-l8-slow.mp3",
+    "say": "I will pay the fee today, and I would like a receipt for the new card."
+  },
+  {
+    "id": "t7-l1",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "Good morning. Are you looking for a souvenir, or are you just looking around today?",
+    "glossYue": "早晨。你係咪搵紀念品，定係今日隨便睇吓？",
+    "audio": "assets/audio/lines/t7-l1.mp3",
+    "audioSlow": "assets/audio/lines/t7-l1-slow.mp3",
+    "say": "Good morning. Are you looking for a souvenir, or are you just looking around today?"
+  },
+  {
+    "id": "t7-l2",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "I am just looking today, but do you have this shirt in a smaller size?",
+    "glossYue": "我今日隨便睇吓，但係呢件衫有冇細一個碼？",
+    "audio": "assets/audio/lines/t7-l2.mp3",
+    "audioSlow": "assets/audio/lines/t7-l2-slow.mp3",
+    "say": "I am just looking today, but do you have this shirt in a smaller size?"
+  },
+  {
+    "id": "t7-l3",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "Yes, we do have this color in a smaller size, and the fitting room is open.",
+    "glossYue": "有，呢隻顏色有細碼，試身室開住。",
+    "audio": "assets/audio/lines/t7-l3.mp3",
+    "audioSlow": "assets/audio/lines/t7-l3-slow.mp3",
+    "say": "Yes, we do have this color in a smaller size, and the fitting room is open."
+  },
+  {
+    "id": "t7-l4",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "This shirt size is too big, and I would like another color in a smaller size.",
+    "glossYue": "呢件衫嘅碼太大，我想要另一隻顏色嘅細碼。",
+    "audio": "assets/audio/lines/t7-l4.mp3",
+    "audioSlow": "assets/audio/lines/t7-l4-slow.mp3",
+    "say": "This shirt size is too big, and I would like another color in a smaller size."
+  },
+  {
+    "id": "t7-l5",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "The smaller size fits well, and I will take this color with the tax refund form.",
+    "glossYue": "細碼啱著，我要呢隻顏色，連埋退稅表。",
+    "audio": "assets/audio/lines/t7-l5.mp3",
+    "audioSlow": "assets/audio/lines/t7-l5-slow.mp3",
+    "say": "The smaller size fits well, and I will take this color with the tax refund form."
+  },
+  {
+    "id": "t7-l6",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "Please keep this paper receipt, because the tax refund desk needs it with your passport.",
+    "glossYue": "請留低呢張紙收據，因為退稅櫃檯要收據同你本護照。",
+    "audio": "assets/audio/lines/t7-l6.mp3",
+    "audioSlow": "assets/audio/lines/t7-l6-slow.mp3",
+    "say": "Please keep this paper receipt, because the tax refund desk needs it with your passport."
+  },
+  {
+    "id": "t7-l7",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "I will take the blue shirt and a postcard, and I have the receipt here.",
+    "glossYue": "我要呢件藍色衫同一張明信片，收據喺我度。",
+    "audio": "assets/audio/lines/t7-l7.mp3",
+    "audioSlow": "assets/audio/lines/t7-l7-slow.mp3",
+    "say": "I will take the blue shirt and a postcard, and I have the receipt here."
+  },
+  {
+    "id": "t7-l8",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "Thank you. The souvenir shop can stamp this tax refund form before you leave town.",
+    "glossYue": "多謝。紀念品店可以喺你離鎮之前蓋呢張退稅表。",
+    "audio": "assets/audio/lines/t7-l8.mp3",
+    "audioSlow": "assets/audio/lines/t7-l8-slow.mp3",
+    "say": "Thank you. The souvenir shop can stamp this tax refund form before you leave town."
+  },
+  {
+    "id": "d3-l1",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "Good morning. I can show you this furnished flat today, and the lease covers the monthly water bill.",
+    "glossYue": "早晨。我今日可以帶你睇呢間有傢俬嘅單位，租約包每月水費。",
+    "audio": "assets/audio/lines/d3-l1.mp3",
+    "audioSlow": "assets/audio/lines/d3-l1-slow.mp3",
+    "say": "Good morning. I can show you this furnished flat today, and the lease covers the monthly water bill."
+  },
+  {
+    "id": "d3-l2",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "How much is the monthly rent please, and is the water included with the other utilities here?",
+    "glossYue": "請問月租幾多，水費有冇連埋呢度其他公用開支？",
+    "audio": "assets/audio/lines/d3-l2.mp3",
+    "audioSlow": "assets/audio/lines/d3-l2-slow.mp3",
+    "say": "How much is the monthly rent please, and is the water included with the other utilities here?"
+  },
+  {
+    "id": "d3-l3",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "The monthly rent is due on the first day, and the deposit equals one full month here.",
+    "glossYue": "月租每個月一號交，呢度按金等於一個完整月。",
+    "audio": "assets/audio/lines/d3-l3.mp3",
+    "audioSlow": "assets/audio/lines/d3-l3-slow.mp3",
+    "say": "The monthly rent is due on the first day, and the deposit equals one full month here."
+  },
+  {
+    "id": "d3-l4",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "The landlord allows a short viewing today, and the tenant can ask about the noisy street outside.",
+    "glossYue": "業主今日可以畀人短睇樓，租客可以問外面條街嘈唔嘈。",
+    "audio": "assets/audio/lines/d3-l4.mp3",
+    "audioSlow": "assets/audio/lines/d3-l4-slow.mp3",
+    "say": "The landlord allows a short viewing today, and the tenant can ask about the noisy street outside."
+  },
+  {
+    "id": "d3-l5",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "If I decide today, I can sign the lease, and the agency fee is on the contract.",
+    "glossYue": "如果我今日決定，我可以簽租約，代理費寫喺合約度。",
+    "audio": "assets/audio/lines/d3-l5.mp3",
+    "audioSlow": "assets/audio/lines/d3-l5-slow.mp3",
+    "say": "If I decide today, I can sign the lease, and the agency fee is on the contract."
+  },
+  {
+    "id": "d3-l6",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "The flat is furnished already, and the utilities stay in the tenant name until the written notice ends.",
+    "glossYue": "單位已經有傢俬，公用開支會用租客個名，直至書面通知完。",
+    "audio": "assets/audio/lines/d3-l6.mp3",
+    "audioSlow": "assets/audio/lines/d3-l6-slow.mp3",
+    "say": "The flat is furnished already, and the utilities stay in the tenant name until the written notice ends."
+  },
+  {
+    "id": "d3-l7",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Please read the contract with me, and tell me the notice period before I pay the deposit.",
+    "glossYue": "請同我睇份合約，交按金之前話我知通知期幾長。",
+    "audio": "assets/audio/lines/d3-l7.mp3",
+    "audioSlow": "assets/audio/lines/d3-l7-slow.mp3",
+    "say": "Please read the contract with me, and tell me the notice period before I pay the deposit."
+  },
+  {
+    "id": "d3-l8",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "If you sign the lease today, the landlord can give you the keys after the deposit clears.",
+    "glossYue": "如果你今日簽租約，按金清咗業主可以交鎖匙。",
+    "audio": "assets/audio/lines/d3-l8.mp3",
+    "audioSlow": "assets/audio/lines/d3-l8-slow.mp3",
+    "say": "If you sign the lease today, the landlord can give you the keys after the deposit clears."
   }
 ]
