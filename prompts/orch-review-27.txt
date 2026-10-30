@@ -9,3 +9,19 @@ WHEN DONE create /workspace/sidequest/english-quest/.orch/review-27.done with DO
 ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/review-27.done
 
 DIFFICULTY PROGRESSION (Penny): audit Path easy→hard; CEFR never decreases; no grammar before taught.
+
+
+## Coder live 390px audit of round 25 (review/loop-r25/coder-audit.md; audited 0220cf8, before round 26 2ebfd67 shipped — re-verify 16/18/19 against 2ebfd67 and close what is still open) — every OPEN/NEW item below must be closed; reviewer may not mark SHIP while any is open
+# Coder live audit — round 25 (live 0220cf8/fe0afbc, bundle index-C0QdOyWs.js), 2026-10-30 21:30
+Walk (live URL, 390x844 touch, real taps): path + F1, T4, R4, R5, W1 hook → listen → chunks → build → quiz → pron step (去溫習) with 0 page errors, 0 HTTP >=400, scrollWidth 390 throughout. Path "23 / 23 課完成", 33 nodes (10 locked placeholders), CEFR non-decreasing A1→B2.
+Lighthouse mobile: 99/100/100/100.
+Lexicon: 20 entries (lex20.tsv), audio 200 for all; 18 = CMUdict, liquid = valid CMU variant, the-before-vowel = intended strong form.
+Scores: Art 8, UI 9, Lexicon 8, Pron UX 9, Pedagogy 7, Speaking 8, SRS 9, Flow 9, Perf 10, Audio 9, Durability 9, CI 9.
+CLOSED: #11 take ("I'll take this one."/我要呢件) and jade (呢塊玉係天然嘅。); #13 F1 hero redrawn (f1-hook.png); #14 header 小燈 is now the brass lantern (path.png); #15 per review-26; #17 per review-26 (dialogue length rises from T4).
+OPEN (block SHIP): #16 T4/T5 soft renders (t4-hook.png), #18 你能夠/係問？ (also R5 "Could we have the bill? 係？", r5-s1.png), #19 my-det/liquid/bin (live still old; fix-26 working tree has them — verify bin-noun id vs lemma "tray" stay consistent), #20 W1 spelling reply.
+NEW:
+21. Pedagogy: quiz/listening stems were lengthened by making the English INSTRUCTION longer ("Listen to the clip once, then choose the word you heard for the cloth beside the plate." — 36 occurrences, r4-s3.png, r5-s3.png, w1-s3.png). Instructions for a Cantonese learner must be short Cantonese (e.g. 「聽一次，揀你聽到嘅字：碟旁邊嗰塊布」); difficulty must rise through the target English sentence/options, not the rubric. Also "When a guest says 'meter', what does that word mean in the taxi?" → Cantonese stem.
+22. Lexicon: polish-noun "Please use only a soft polish." → 請淨係用軟布擦亮 (polish ≠ 軟布; also odd English — use "a soft cloth to polish" / 擦亮劑); sheet-noun "A sheet of paper." → 呢度有一張紙 (Yue adds 呢度有; use 一張紙。); take-verb header 接受或做 vs gloss 要；帶 inconsistent.
+23. Art variety: R4 and R5 heroes are near-identical compositions (same two cast + lantern centre, same framing; r4-hook.png vs r5-hook.png). Give R5 a distinct bill/payment scene (card terminal in focus, different angle).
+Screenshots: t4-hook.png, r4-s3.png, r5-s1.png, r5-hook.png, path.png, f1-hook.png.
+
