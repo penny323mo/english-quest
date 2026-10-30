@@ -13,3 +13,6 @@ Write reviews/orch-r24-grok.md first line VERDICT: SHIP or NOT READY.
 SHIP forbidden if resume missing/broken OR build tools still only in dependencies without upgrade attempt OR P0-3 done OR CRITICAL/MAJOR open.
 WHEN DONE create /workspace/sidequest/english-quest/.orch/review-24.done with DONE.
 ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/review-24.done
+
+## Gate from coder live audit r22 (review/loop-r22/coder-audit.md)
+Block SHIP unless: recap after skipped quiz shows 跳過小測 (no 準確 0%); F1–F4 heroes match J/R/T cartoon style; of-prep/keep-verb/the-art/listen-verb examples illustrate their sense with a test; A2/B1 quiz items are longer than A1 ones. Also audit difficulty progression along the Path (no jumps/dips).

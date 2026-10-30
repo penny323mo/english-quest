@@ -19,3 +19,6 @@ Do NOT edit reviews/ or prompts/. Do not touch LICENSE.
 
 WHEN COMPLETELY FINISHED, create /workspace/sidequest/english-quest/.orch/fix-24.done with DONE.
 ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-24.done
+
+## Coder live audit round 22 (also read review/loop-r22/coder-audit.md, local)
+Any r21 item still open after fix-23 (skipped quiz -> 跳過小測) stays mandatory. Also fix r22 items 10–12: re-render F1–F4 heroes in the same pencil-outline daylight cartoon as J/R/T (ART-STYLE.md); fix lexicon examples that don't illustrate their sense (of-prep, keep-verb, the-art, listen-verb) and add a test that each example contains its lemma in the glossed sense; raise quiz/cloze length and grammar in A2/B1 lessons to match their band. Keep Lighthouse Perf >= 98. Reviewer: block SHIP while any of these is open.
