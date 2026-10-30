@@ -8,7 +8,7 @@
   "minutes": 12,
   "hero": "assets/art/lessons/d1.webp",
   "cast": [
-    "kai",
+    "wen",
     "tom"
   ],
   "cefr": "A2/B1",
@@ -27,8 +27,8 @@
   "dialogue": [
     {
       "id": "d1-l1",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "wen",
+      "speakerLabel": "Wen",
       "text": "Good morning. What brings you in to the clinic today, and how do you feel?",
       "glossYue": "早晨。今日咩事嚟診所？你覺得點？",
       "audio": "assets/audio/lines/d1-l1.mp3",
@@ -49,8 +49,8 @@
     },
     {
       "id": "d1-l3",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "wen",
+      "speakerLabel": "Wen",
       "text": "Do you have a headache too, and are you allergic to any medicine we use?",
       "glossYue": "你有冇頭痛？你對我哋用嘅藥有冇過敏？",
       "audio": "assets/audio/lines/d1-l3.mp3",
@@ -82,13 +82,13 @@
     },
     {
       "id": "d1-l6",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
-      "text": "You can rest at home, and the pharmacy can prepare this prescription for you today.",
-      "glossYue": "你可以喺屋企休息，藥房今日可以幫你配呢張藥單。",
+      "speaker": "wen",
+      "speakerLabel": "Wen",
+      "text": "You can rest at home, and the pharmacy can prepare this prescription for you there.",
+      "glossYue": "你可以喺屋企休息，藥房嗰度可以幫你配呢張藥單。",
       "audio": "assets/audio/lines/d1-l6.mp3",
       "audioSlow": "assets/audio/lines/d1-l6-slow.mp3",
-      "say": "You can rest at home, and the pharmacy can prepare this prescription for you today.",
+      "say": "You can rest at home, and the pharmacy can prepare this prescription for you there.",
       "hideGloss": true
     },
     {
@@ -104,13 +104,13 @@
     },
     {
       "id": "d1-l8",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
-      "text": "Please rest today, and the clinic can see you for a follow-up after the pharmacy.",
-      "glossYue": "請你今日休息，去完藥房診所可以同你覆診。",
+      "speaker": "wen",
+      "speakerLabel": "Wen",
+      "text": "Please rest well, and the clinic can see you for a follow-up after the pharmacy.",
+      "glossYue": "請你好好休息，去完藥房診所可以同你覆診。",
       "audio": "assets/audio/lines/d1-l8.mp3",
       "audioSlow": "assets/audio/lines/d1-l8-slow.mp3",
-      "say": "Please rest today, and the clinic can see you for a follow-up after the pharmacy.",
+      "say": "Please rest well, and the clinic can see you for a follow-up after the pharmacy.",
       "hideGloss": false
     }
   ],
@@ -170,8 +170,8 @@
       ]
     },
     {
-      "pattern": "You can rest at home, and the ___ can prepare this prescription for you today.",
-      "example": "You can rest at home, and the pharmacy can prepare this prescription for you today.",
+      "pattern": "You can rest at home, and the ___ can prepare this prescription for you there.",
+      "example": "You can rest at home, and the pharmacy can prepare this prescription for you there.",
       "glossYue": "⋯⋯今日可以配藥。",
       "answer": "pharmacy",
       "choices": [
@@ -181,8 +181,8 @@
       ]
     },
     {
-      "pattern": "Please rest today, and the clinic can see you for a ___ after the pharmacy.",
-      "example": "Please rest today, and the clinic can see you for a follow-up after the pharmacy.",
+      "pattern": "Please rest well, and the clinic can see you for a ___ after the pharmacy.",
+      "example": "Please rest well, and the clinic can see you for a follow-up after the pharmacy.",
       "glossYue": "去完藥房可以⋯⋯。",
       "answer": "follow-up",
       "choices": [
@@ -232,8 +232,8 @@
     "intro": "你係病人。講症狀，再講會去藥房。可以講：I have had a fever。",
     "turns": [
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "Wen",
+        "partnerId": "wen",
         "line": "Good morning. What brings you in to the clinic today, and how do you feel?",
         "audio": "assets/audio/lines/d1-l1.mp3",
         "audioSlow": "assets/audio/lines/d1-l1-slow.mp3",
@@ -246,8 +246,8 @@
         "modelSlow": "assets/audio/lines/d1-l2-slow.mp3"
       },
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "Wen",
+        "partnerId": "wen",
         "line": "Do you have a headache too, and are you allergic to any medicine we use?",
         "audio": "assets/audio/lines/d1-l3.mp3",
         "audioSlow": "assets/audio/lines/d1-l3-slow.mp3",
@@ -260,9 +260,9 @@
         "modelSlow": "assets/audio/lines/d1-l4-slow.mp3"
       },
       {
-        "partner": "Kai",
-        "partnerId": "kai",
-        "line": "You can rest at home, and the pharmacy can prepare this prescription for you today.",
+        "partner": "Wen",
+        "partnerId": "wen",
+        "line": "You can rest at home, and the pharmacy can prepare this prescription for you there.",
         "audio": "assets/audio/lines/d1-l6.mp3",
         "audioSlow": "assets/audio/lines/d1-l6-slow.mp3",
         "expect": "I will take the prescription to the pharmacy, and I need a follow-up after rest.",
@@ -310,7 +310,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「You can rest at home, and the pharmacy can prepare this prescription for you today.」，prescription 係咩意思？",
+      "prompt": "客人講「You can rest at home, and the pharmacy can prepare this prescription for you there.」，prescription 係咩意思？",
       "choices": [
         "藥單",
         "議程",

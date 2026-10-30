@@ -8,7 +8,7 @@
   "minutes": 12,
   "hero": "assets/art/lessons/t1.webp",
   "cast": [
-    "kai"
+    "jo"
   ],
   "lemmas": [
     "afternoon-noun",
@@ -40,8 +40,8 @@
   "dialogue": [
     {
       "id": "t1-l1",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "jo",
+      "speakerLabel": "Jo",
       "text": "Good afternoon. Where are you flying today? May I see your passport?",
       "glossYue": "你好，你今日飛去邊？可唔可以睇吓護照？",
       "audio": "assets/audio/lines/t1-l1.mp3",
@@ -60,8 +60,8 @@
     },
     {
       "id": "t1-l3",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "jo",
+      "speakerLabel": "Jo",
       "text": "Thank you. Would you like a window or an aisle seat?",
       "glossYue": "多謝。想要靠窗定走廊位？",
       "audio": "assets/audio/lines/t1-l3.mp3",
@@ -80,8 +80,8 @@
     },
     {
       "id": "t1-l5",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "jo",
+      "speakerLabel": "Jo",
       "text": "Sure. I'll show you the information. Here is your boarding pass.",
       "glossYue": "好。我畀你睇吓資料。你張登機證喺度。",
       "audio": "assets/audio/lines/t1-l5.mp3",
@@ -174,7 +174,7 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "Kai 問 Window or aisle? 你想坐窗邊。",
+      "promptYue": "Jo 問 Window or aisle? 你想坐窗邊。",
       "choices": [
         "A window seat, please.",
         "I'm just looking.",
@@ -202,11 +202,11 @@
   ],
   "roleplay": {
     "you": "ling",
-    "intro": "你喺夜間櫃檯。Kai 問完一句，你再答。唔使急。",
+    "intro": "你喺夜間櫃檯。Jo 問完一句，你再答。唔使急。",
     "turns": [
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "Jo",
+        "partnerId": "jo",
         "line": "Good afternoon. Where are you flying today?",
         "audio": "assets/audio/lines/t1-l1.mp3",
         "audioSlow": "assets/audio/lines/t1-l1-slow.mp3",
@@ -218,8 +218,8 @@
         "modelSlow": "assets/audio/lines/t1-m1-slow.mp3"
       },
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "Jo",
+        "partnerId": "jo",
         "line": "May I see your passport, please?",
         "audio": "assets/audio/lines/t1-l6.mp3",
         "audioSlow": "assets/audio/lines/t1-l6-slow.mp3",
@@ -231,8 +231,8 @@
         "modelSlow": "assets/audio/lines/t1-m2-slow.mp3"
       },
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "Jo",
+        "partnerId": "jo",
         "line": "Thank you. Window or aisle?",
         "audio": "assets/audio/lines/t1-l3.mp3",
         "audioSlow": "assets/audio/lines/t1-l3-slow.mp3",

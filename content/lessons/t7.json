@@ -8,7 +8,7 @@
   "minutes": 12,
   "hero": "assets/art/lessons/t7.webp",
   "cast": [
-    "kai",
+    "may",
     "tom"
   ],
   "cefr": "A2/B1",
@@ -27,8 +27,8 @@
   "dialogue": [
     {
       "id": "t7-l1",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "may",
+      "speakerLabel": "May",
       "text": "Good morning. Are you looking for a souvenir, or are you just looking around today?",
       "glossYue": "早晨。你係咪搵紀念品，定係今日隨便睇吓？",
       "audio": "assets/audio/lines/t7-l1.mp3",
@@ -40,17 +40,17 @@
       "id": "t7-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I am just looking today, but do you have this shirt in a smaller size?",
-      "glossYue": "我今日隨便睇吓，但係呢件衫有冇細一個碼？",
+      "text": "I am just looking around, but do you have this shirt in a smaller size?",
+      "glossYue": "我隨便周圍睇吓，但係呢件衫有冇細一個碼？",
       "audio": "assets/audio/lines/t7-l2.mp3",
       "audioSlow": "assets/audio/lines/t7-l2-slow.mp3",
-      "say": "I am just looking today, but do you have this shirt in a smaller size?",
+      "say": "I am just looking around, but do you have this shirt in a smaller size?",
       "hideGloss": true
     },
     {
       "id": "t7-l3",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "may",
+      "speakerLabel": "May",
       "text": "Yes, we do have this color in a smaller size, and the fitting room is open.",
       "glossYue": "有，呢隻顏色有細碼，試身室開住。",
       "audio": "assets/audio/lines/t7-l3.mp3",
@@ -73,17 +73,17 @@
       "id": "t7-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The smaller size fits well, and I will take this color with the tax refund form.",
-      "glossYue": "細碼啱著，我要呢隻顏色，連埋退稅表。",
+      "text": "The smaller size fits well, so can I get a tax refund form for this shirt.",
+      "glossYue": "細碼啱著，可唔可以畀我呢件衫嘅退稅表。",
       "audio": "assets/audio/lines/t7-l5.mp3",
       "audioSlow": "assets/audio/lines/t7-l5-slow.mp3",
-      "say": "The smaller size fits well, and I will take this color with the tax refund form.",
+      "say": "The smaller size fits well, so can I get a tax refund form for this shirt.",
       "hideGloss": false
     },
     {
       "id": "t7-l6",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "may",
+      "speakerLabel": "May",
       "text": "Please keep this paper receipt, because the tax refund desk needs it with your passport.",
       "glossYue": "請留低呢張紙收據，因為退稅櫃檯要收據同你本護照。",
       "audio": "assets/audio/lines/t7-l6.mp3",
@@ -104,8 +104,8 @@
     },
     {
       "id": "t7-l8",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "may",
+      "speakerLabel": "May",
       "text": "Thank you. The souvenir shop can stamp this tax refund form before you leave town.",
       "glossYue": "多謝。紀念品店可以喺你離鎮之前蓋呢張退稅表。",
       "audio": "assets/audio/lines/t7-l8.mp3",
@@ -116,9 +116,9 @@
   ],
   "understand": [
     {
-      "prompt": "I am just looking today. 呢句即係點？",
+      "prompt": "I am just looking around. 呢句即係點？",
       "choices": [
-        "我今日隨便睇吓",
+        "我隨便周圍睇吓",
         "我已經決定買",
         "我要退稅"
       ],
@@ -136,9 +136,9 @@
       "explain": "smaller size 係細碼。"
     },
     {
-      "prompt": "I will take this color with the tax refund form. 呢句即係點？",
+      "prompt": "Can I get a tax refund form for this shirt. 呢句即係點？",
       "choices": [
-        "我要呢隻顏色，連埋退稅表",
+        "可唔可以畀我呢件衫嘅退稅表",
         "我唔要呢件",
         "我要換房"
       ],
@@ -148,8 +148,8 @@
   ],
   "chunks": [
     {
-      "pattern": "I am just looking today, but do you have this shirt in a ___ size?",
-      "example": "I am just looking today, but do you have this shirt in a smaller size?",
+      "pattern": "I am just looking around, but do you have this shirt in a ___ size?",
+      "example": "I am just looking around, but do you have this shirt in a smaller size?",
       "glossYue": "有冇⋯⋯碼。",
       "answer": "smaller",
       "choices": [
@@ -171,7 +171,7 @@
     },
     {
       "pattern": "The smaller size fits well, and I will take this color with the tax ___ form.",
-      "example": "The smaller size fits well, and I will take this color with the tax refund form.",
+      "example": "The smaller size fits well, so can I get a tax refund form for this shirt.",
       "glossYue": "連埋⋯⋯表。",
       "answer": "refund",
       "choices": [
@@ -194,14 +194,14 @@
   ],
   "shadow": {
     "lineId": "t7-l5",
-    "hint": "The smaller size fits well, and I will take this color with the tax refund form."
+    "hint": "The smaller size fits well, so can I get a tax refund form for this shirt."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "店員話細碼同試身室都有。你點先答？",
       "choices": [
-        "The smaller size fits well, and I will take this color with the tax refund form.",
+        "The smaller size fits well, so can I get a tax refund form for this shirt.",
         "Could I speak to Mei?",
         "The room is on the quiet side."
       ],
@@ -232,12 +232,12 @@
     "intro": "你係遊客。問細碼同顏色。可以講：I will take。",
     "turns": [
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "May",
+        "partnerId": "may",
         "line": "Good morning. Are you looking for a souvenir, or are you just looking around today?",
         "audio": "assets/audio/lines/t7-l1.mp3",
         "audioSlow": "assets/audio/lines/t7-l1-slow.mp3",
-        "expect": "I am just looking today, but do you have this shirt in a smaller size?",
+        "expect": "I am just looking around, but do you have this shirt in a smaller size?",
         "keywords": [
           "looking",
           "size"
@@ -246,8 +246,8 @@
         "modelSlow": "assets/audio/lines/t7-l2-slow.mp3"
       },
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "May",
+        "partnerId": "may",
         "line": "Yes, we do have this color in a smaller size, and the fitting room is open.",
         "audio": "assets/audio/lines/t7-l3.mp3",
         "audioSlow": "assets/audio/lines/t7-l3-slow.mp3",
@@ -260,8 +260,8 @@
         "modelSlow": "assets/audio/lines/t7-l4-slow.mp3"
       },
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "May",
+        "partnerId": "may",
         "line": "Please keep this paper receipt, because the tax refund desk needs it with your passport.",
         "audio": "assets/audio/lines/t7-l6.mp3",
         "audioSlow": "assets/audio/lines/t7-l6-slow.mp3",
@@ -300,7 +300,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The smaller size fits well, and I will take this color with the tax refund form.」，tax refund 係咩意思？",
+      "prompt": "客人講「The smaller size fits well, so can I get a tax refund form for this shirt.」，tax refund 係咩意思？",
       "choices": [
         "退稅",
         "尺寸",
@@ -352,5 +352,5 @@
       "shirt-noun"
     ]
   },
-  "next": "J8"
+  "next": "W4"
 }

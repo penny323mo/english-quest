@@ -33,11 +33,11 @@
       "id": "j12-l1",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Good morning, you are calling the jewellery shop, and I can see our stock for you today.",
-      "glossYue": "早晨。你打嚟珠寶舖，我今日可以睇吓存貨。",
+      "text": "Good morning, you are calling the jewellery shop, and I can see our stock on the shelf.",
+      "glossYue": "早晨。你打嚟珠寶舖，我可以睇吓架上嘅存貨。",
       "audio": "assets/audio/lines/j12-l1.mp3",
       "audioSlow": "assets/audio/lines/j12-l1-slow.mp3",
-      "say": "Good morning, you are calling the jewellery shop, and I can see our stock for you today.",
+      "say": "Good morning, you are calling the jewellery shop, and I can see our stock on the shelf.",
       "hideGloss": false
     },
     {
@@ -227,7 +227,7 @@
       {
         "partner": "Kai",
         "partnerId": "kai",
-        "line": "Good morning, you are calling the jewellery shop, and I can see our stock for you today.",
+        "line": "Good morning, you are calling the jewellery shop, and I can see our stock on the shelf.",
         "audio": "assets/audio/lines/j12-l1.mp3",
         "audioSlow": "assets/audio/lines/j12-l1-slow.mp3",
         "expect": "Have you kept a similar gold bracelet in stock, and is one still available to reserve today?",

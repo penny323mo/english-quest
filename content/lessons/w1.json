@@ -8,7 +8,7 @@
   "minutes": 12,
   "hero": "assets/art/lessons/w1.webp",
   "cast": [
-    "kai",
+    "nia",
     "tom"
   ],
   "cefr": "A2/B1",
@@ -34,13 +34,13 @@
   "dialogue": [
     {
       "id": "w1-l1",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
-      "text": "Good morning, this is Kai calling from the harbor office, and how may I help?",
-      "glossYue": "早晨，我係海港辦事處嘅 Kai 打嚟，有咩可以幫你？",
+      "speaker": "nia",
+      "speakerLabel": "Nia",
+      "text": "Good morning, this is Nia calling from the harbor office, and how may I help?",
+      "glossYue": "早晨，我係海港辦事處嘅 Nia 打嚟，有咩可以幫你？",
       "audio": "assets/audio/lines/w1-l1.mp3",
       "audioSlow": "assets/audio/lines/w1-l1-slow.mp3",
-      "say": "Good morning, this is Kai calling from the harbor office, and how may I help?",
+      "say": "Good morning, this is Nia calling from the harbor office, and how may I help?",
       "hideGloss": false
     },
     {
@@ -56,8 +56,8 @@
     },
     {
       "id": "w1-l3",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "nia",
+      "speakerLabel": "Nia",
       "text": "She is not available right now, so please hold and I will try the other line.",
       "glossYue": "佢而家冇空，唔該等陣，我試吓另一條線。",
       "audio": "assets/audio/lines/w1-l3.mp3",
@@ -78,8 +78,8 @@
     },
     {
       "id": "w1-l5",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "nia",
+      "speakerLabel": "Nia",
       "text": "I will transfer you if the line is free, or I can note the callback number.",
       "glossYue": "如果線路得閒我會轉駁，或者我記低覆電號碼。",
       "audio": "assets/audio/lines/w1-l5.mp3",
@@ -100,8 +100,8 @@
     },
     {
       "id": "w1-l7",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "nia",
+      "speakerLabel": "Nia",
       "text": "The spelling is M E I slowly, and the extension is four two.",
       "glossYue": "我慢慢串 M E I，內線係四二。",
       "audio": "assets/audio/lines/w1-l7.mp3",
@@ -235,7 +235,7 @@
     }
   ],
   "roleplay": {
-    "you": "kai",
+    "you": "nia",
     "intro": "Tom 打嚟搵 Mei。等佢講完想同邊個講先答。可以講：Please hold。",
     "turns": [
       {

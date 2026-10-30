@@ -8,7 +8,7 @@
   "minutes": 12,
   "hero": "assets/art/lessons/d2.webp",
   "cast": [
-    "kai",
+    "ben",
     "tom"
   ],
   "cefr": "A2/B1",
@@ -27,8 +27,8 @@
   "dialogue": [
     {
       "id": "d2-l1",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "ben",
+      "speakerLabel": "Ben",
       "text": "Good morning. Please come right forward, and I can help you open the account today.",
       "glossYue": "早晨。請上前少少，我今日可以幫你開戶口。",
       "audio": "assets/audio/lines/d2-l1.mp3",
@@ -49,8 +49,8 @@
     },
     {
       "id": "d2-l3",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "ben",
+      "speakerLabel": "Ben",
       "text": "I can block the lost card, but I need your ID and a signed form.",
       "glossYue": "我可以凍結張唔見咗嘅卡，但係我要你嘅身份證明同一張簽好嘅表格。",
       "audio": "assets/audio/lines/d2-l3.mp3",
@@ -71,46 +71,46 @@
     },
     {
       "id": "d2-l5",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
-      "text": "The balance is quite low today, and the fee to replace the card is here.",
-      "glossYue": "今日餘額好低，換卡嘅手續費就喺呢度。",
+      "speaker": "ben",
+      "speakerLabel": "Ben",
+      "text": "The balance is quite low again, and the fee to replace the card is here.",
+      "glossYue": "餘額又好低，換卡嘅手續費就喺呢度。",
       "audio": "assets/audio/lines/d2-l5.mp3",
       "audioSlow": "assets/audio/lines/d2-l5-slow.mp3",
-      "say": "The balance is quite low today, and the fee to replace the card is here.",
+      "say": "The balance is quite low again, and the fee to replace the card is here.",
       "hideGloss": false
     },
     {
       "id": "d2-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I would like to withdraw some extra cash, and then deposit the rest into the account.",
-      "glossYue": "我想提取多一啲現金，然後將剩低嘅存入戶口。",
+      "text": "I would like to withdraw some cash here, and then deposit the rest into the account.",
+      "glossYue": "我想喺度攞少少現金，然後將剩低嘅存入戶口。",
       "audio": "assets/audio/lines/d2-l6.mp3",
       "audioSlow": "assets/audio/lines/d2-l6-slow.mp3",
-      "say": "I would like to withdraw some extra cash, and then deposit the rest into the account.",
+      "say": "I would like to withdraw some cash here, and then deposit the rest into the account.",
       "hideGloss": true
     },
     {
       "id": "d2-l7",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
-      "text": "Please sign this form at the branch, and the new card replaces the blocked one today.",
-      "glossYue": "請喺分行簽呢張表格，新卡今日會換走張凍結咗嘅。",
+      "speaker": "ben",
+      "speakerLabel": "Ben",
+      "text": "Please sign this form at the branch, and the new card replaces the blocked one here.",
+      "glossYue": "請喺分行簽呢張表格，新卡喺度會換走張凍結咗嘅。",
       "audio": "assets/audio/lines/d2-l7.mp3",
       "audioSlow": "assets/audio/lines/d2-l7-slow.mp3",
-      "say": "Please sign this form at the branch, and the new card replaces the blocked one today.",
+      "say": "Please sign this form at the branch, and the new card replaces the blocked one here.",
       "hideGloss": true
     },
     {
       "id": "d2-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will pay the fee today, and I would like a receipt for the new card.",
-      "glossYue": "我今日會畀手續費，我想要張新卡嘅收據。",
+      "text": "I will pay the fee here, and I would like a receipt for the new card.",
+      "glossYue": "我喺度會畀手續費，我想要張新卡嘅收據。",
       "audio": "assets/audio/lines/d2-l8.mp3",
       "audioSlow": "assets/audio/lines/d2-l8-slow.mp3",
-      "say": "I will pay the fee today, and I would like a receipt for the new card.",
+      "say": "I will pay the fee here, and I would like a receipt for the new card.",
       "hideGloss": false
     }
   ],
@@ -136,9 +136,9 @@
       "explain": "block 係凍結張卡。"
     },
     {
-      "prompt": "I will pay the fee today. 呢句即係點？",
+      "prompt": "I will pay the fee here. 呢句即係點？",
       "choices": [
-        "我今日會畀手續費",
+        "我喺度會畀手續費",
         "我唔使畀錢",
         "我要退稅"
       ],
@@ -170,8 +170,8 @@
       ]
     },
     {
-      "pattern": "I would like to ___ some extra cash, and then deposit the rest into the account.",
-      "example": "I would like to withdraw some extra cash, and then deposit the rest into the account.",
+      "pattern": "I would like to ___ some cash here, and then deposit the rest into the account.",
+      "example": "I would like to withdraw some cash here, and then deposit the rest into the account.",
       "glossYue": "我想⋯⋯現金。",
       "answer": "withdraw",
       "choices": [
@@ -181,8 +181,8 @@
       ]
     },
     {
-      "pattern": "Please sign this form at the ___, and the new card replaces the blocked one today.",
-      "example": "Please sign this form at the branch, and the new card replaces the blocked one today.",
+      "pattern": "Please sign this form at the ___, and the new card replaces the blocked one here.",
+      "example": "Please sign this form at the branch, and the new card replaces the blocked one here.",
       "glossYue": "喺⋯⋯簽表格。",
       "answer": "branch",
       "choices": [
@@ -194,7 +194,7 @@
   ],
   "shadow": {
     "lineId": "d2-l8",
-    "hint": "I will pay the fee today, and I would like a receipt for the new card."
+    "hint": "I will pay the fee here, and I would like a receipt for the new card."
   },
   "build": [
     {
@@ -232,8 +232,8 @@
     "intro": "你係客人。講開戶同唔見咗卡。可以講：I would like to open。",
     "turns": [
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "Ben",
+        "partnerId": "ben",
         "line": "Good morning. Please come right forward, and I can help you open the account today.",
         "audio": "assets/audio/lines/d2-l1.mp3",
         "audioSlow": "assets/audio/lines/d2-l1-slow.mp3",
@@ -246,8 +246,8 @@
         "modelSlow": "assets/audio/lines/d2-l2-slow.mp3"
       },
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "Ben",
+        "partnerId": "ben",
         "line": "I can block the lost card, but I need your ID and a signed form.",
         "audio": "assets/audio/lines/d2-l3.mp3",
         "audioSlow": "assets/audio/lines/d2-l3-slow.mp3",
@@ -260,12 +260,12 @@
         "modelSlow": "assets/audio/lines/d2-l4-slow.mp3"
       },
       {
-        "partner": "Kai",
-        "partnerId": "kai",
-        "line": "The balance is quite low today, and the fee to replace the card is here.",
+        "partner": "Ben",
+        "partnerId": "ben",
+        "line": "The balance is quite low again, and the fee to replace the card is here.",
         "audio": "assets/audio/lines/d2-l5.mp3",
         "audioSlow": "assets/audio/lines/d2-l5-slow.mp3",
-        "expect": "I would like to withdraw some extra cash, and then deposit the rest into the account.",
+        "expect": "I would like to withdraw some cash here, and then deposit the rest into the account.",
         "keywords": [
           "withdraw",
           "deposit"
@@ -300,7 +300,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The balance is quite low today, and the fee to replace the card is here.」，balance 係咩意思？",
+      "prompt": "客人講「The balance is quite low again, and the fee to replace the card is here.」，balance 係咩意思？",
       "choices": [
         "餘額",
         "收據",
@@ -310,7 +310,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I will pay the fee today, and I would like a receipt for the new card.」，fee 係咩意思？",
+      "prompt": "客人講「I will pay the fee here, and I would like a receipt for the new card.」，fee 係咩意思？",
       "choices": [
         "手續費",
         "表格",

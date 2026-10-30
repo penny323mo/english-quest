@@ -8,7 +8,7 @@
   "minutes": 12,
   "hero": "assets/art/lessons/t4.webp",
   "cast": [
-    "kai",
+    "ray",
     "tom"
   ],
   "cefr": "A2",
@@ -29,8 +29,8 @@
   "dialogue": [
     {
       "id": "t4-l1",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "ray",
+      "speakerLabel": "Ray",
       "text": "The taxi is here, and I can give the driver your full address now.",
       "glossYue": "的士到咗，我可以而家同司機講你個完整地址。",
       "audio": "assets/audio/lines/t4-l1.mp3",
@@ -51,8 +51,8 @@
     },
     {
       "id": "t4-l3",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "ray",
+      "speakerLabel": "Ray",
       "text": "The meter is on, and traffic is slow along this street today.",
       "glossYue": "咪錶開咗，今日呢條街好塞。",
       "audio": "assets/audio/lines/t4-l3.mp3",
@@ -73,8 +73,8 @@
     },
     {
       "id": "t4-l5",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "ray",
+      "speakerLabel": "Ray",
       "text": "It takes about ten minutes, and I will drop you at that corner.",
       "glossYue": "大概十分鐘，我會喺嗰個街角落你。",
       "audio": "assets/audio/lines/t4-l5.mp3",
@@ -95,8 +95,8 @@
     },
     {
       "id": "t4-l7",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "ray",
+      "speakerLabel": "Ray",
       "text": "Here is your receipt, and you can see the landmark on your right.",
       "glossYue": "收據喺度，你可以睇到地標喺你右手邊。",
       "audio": "assets/audio/lines/t4-l7.mp3",
@@ -234,7 +234,7 @@
     }
   ],
   "roleplay": {
-    "you": "kai",
+    "you": "ray",
     "intro": "Tom 上咗的士。等佢講完目的地先答。可以講：The meter is on。",
     "turns": [
       {

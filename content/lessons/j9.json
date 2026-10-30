@@ -42,33 +42,33 @@
       "id": "j9-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The clasp is broken, so I would like a repair or a full refund today.",
-      "glossYue": "個扣壞咗，所以我今日想修理或者全數退款。",
+      "text": "The clasp is broken, so I would like a repair or a full refund instead.",
+      "glossYue": "個扣壞咗，所以我反而想修理或者全數退款。",
       "audio": "assets/audio/lines/j9-l2.mp3",
       "audioSlow": "assets/audio/lines/j9-l2-slow.mp3",
-      "say": "The clasp is broken, so I would like a repair or a full refund today.",
+      "say": "The clasp is broken, so I would like a repair or a full refund instead.",
       "hideGloss": true
     },
     {
       "id": "j9-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "I apologize for the inconvenience, and I understand why you feel disappointed today.",
-      "glossYue": "造成不便我道歉，我明白你今日點解唔開心。",
+      "text": "I apologize for the inconvenience, and I understand why you feel so disappointed.",
+      "glossYue": "造成不便我道歉，我明白你點解咁唔開心。",
       "audio": "assets/audio/lines/j9-l3.mp3",
       "audioSlow": "assets/audio/lines/j9-l3-slow.mp3",
-      "say": "I apologize for the inconvenience, and I understand why you feel disappointed today.",
+      "say": "I apologize for the inconvenience, and I understand why you feel so disappointed.",
       "hideGloss": true
     },
     {
       "id": "j9-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could you replace the piece today, and tell me what you can do about it?",
-      "glossYue": "今日可唔可以換過呢件，同我講你做到啲咩？",
+      "text": "Could you replace the piece now, and tell me what you can do about it?",
+      "glossYue": "而家可唔可以換過呢件，同我講你做到啲咩？",
       "audio": "assets/audio/lines/j9-l4.mp3",
       "audioSlow": "assets/audio/lines/j9-l4-slow.mp3",
-      "say": "Could you replace the piece today, and tell me what you can do about it?",
+      "say": "Could you replace the piece now, and tell me what you can do about it?",
       "hideGloss": true
     },
     {
@@ -86,22 +86,22 @@
       "id": "j9-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I appreciate the offer, but I still want a refund if the repair cannot be done today.",
-      "glossYue": "多謝你嘅提議，但如果修理唔到，我今日仍然想退款。",
+      "text": "I appreciate the offer, but I still want a refund if the repair cannot be done soon.",
+      "glossYue": "多謝你嘅提議，但如果修理唔到，我仍然想退款。",
       "audio": "assets/audio/lines/j9-l6.mp3",
       "audioSlow": "assets/audio/lines/j9-l6-slow.mp3",
-      "say": "I appreciate the offer, but I still want a refund if the repair cannot be done today.",
+      "say": "I appreciate the offer, but I still want a refund if the repair cannot be done soon.",
       "hideGloss": true
     },
     {
       "id": "j9-l7",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Would it help if we replace the bracelet today, while the workshop keeps the broken one?",
-      "glossYue": "如果我哋今日換過條手鏈，工場留住壞嗰條，會唔會好啲？",
+      "text": "Would it help if we replace the bracelet now, while the workshop keeps the broken one?",
+      "glossYue": "如果我哋而家換過條手鏈，工場留住壞嗰條，會唔會好啲？",
       "audio": "assets/audio/lines/j9-l7.mp3",
       "audioSlow": "assets/audio/lines/j9-l7-slow.mp3",
-      "say": "Would it help if we replace the bracelet today, while the workshop keeps the broken one?",
+      "say": "Would it help if we replace the bracelet now, while the workshop keeps the broken one?",
       "hideGloss": true
     },
     {
@@ -196,7 +196,7 @@
   ],
   "shadow": {
     "lineId": "j9-l3",
-    "hint": "I apologize for the inconvenience, and I understand why you feel disappointed today."
+    "hint": "I apologize for the inconvenience, and I understand why you feel so disappointed."
   },
   "build": [
     {
@@ -238,10 +238,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "The clasp is broken, so I would like a repair or a full refund today.",
+        "line": "The clasp is broken, so I would like a repair or a full refund instead.",
         "audio": "assets/audio/lines/j9-l2.mp3",
         "audioSlow": "assets/audio/lines/j9-l2-slow.mp3",
-        "expect": "I apologize for the inconvenience, and I understand why you feel disappointed today.",
+        "expect": "I apologize for the inconvenience, and I understand why you feel so disappointed.",
         "keywords": [
           "apologize",
           "understand"
@@ -252,7 +252,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Could you replace the piece today, and tell me what you can do about it?",
+        "line": "Could you replace the piece now, and tell me what you can do about it?",
         "audio": "assets/audio/lines/j9-l4.mp3",
         "audioSlow": "assets/audio/lines/j9-l4-slow.mp3",
         "expect": "The manager can review the receipt, and we will repair it immediately if the policy allows.",
@@ -266,10 +266,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "I appreciate the offer, but I still want a refund if the repair cannot be done today.",
+        "line": "I appreciate the offer, but I still want a refund if the repair cannot be done soon.",
         "audio": "assets/audio/lines/j9-l6.mp3",
         "audioSlow": "assets/audio/lines/j9-l6-slow.mp3",
-        "expect": "Would it help if we replace the bracelet today, while the workshop keeps the broken one?",
+        "expect": "Would it help if we replace the bracelet now, while the workshop keeps the broken one?",
         "keywords": [
           "replace",
           "bracelet"

@@ -78,11 +78,11 @@
       "id": "r5-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The service was kind tonight, so I will add a tip and you can keep the change.",
-      "glossYue": "今晚服務好好，我會加貼士，零錢你留低就得。",
+      "text": "The service was kind indeed, so I will add a tip and you can keep the change.",
+      "glossYue": "服務真係好好，我會加貼士，零錢你留低就得。",
       "audio": "assets/audio/lines/r5-l5.mp3",
       "audioSlow": "assets/audio/lines/r5-l5-slow.mp3",
-      "say": "The service was kind tonight, so I will add a tip and you can keep the change.",
+      "say": "The service was kind indeed, so I will add a tip and you can keep the change.",
       "hideGloss": true
     },
     {
@@ -100,11 +100,11 @@
       "id": "r5-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could we also get the cake as a takeaway before we leave the restaurant tonight?",
-      "glossYue": "今晚走之前可唔可以將蛋糕打包外賣？",
+      "text": "Could we also get the cake as a takeaway before we leave the restaurant later?",
+      "glossYue": "遲啲走之前可唔可以將蛋糕打包外賣？",
       "audio": "assets/audio/lines/r5-l7.mp3",
       "audioSlow": "assets/audio/lines/r5-l7-slow.mp3",
-      "say": "Could we also get the cake as a takeaway before we leave the restaurant tonight?",
+      "say": "Could we also get the cake as a takeaway before we leave the restaurant later?",
       "hideGloss": true
     },
     {
@@ -267,7 +267,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "The service was kind tonight, so I will add a tip and you can keep the change.",
+        "line": "The service was kind indeed, so I will add a tip and you can keep the change.",
         "audio": "assets/audio/lines/r5-l5.mp3",
         "audioSlow": "assets/audio/lines/r5-l5-slow.mp3",
         "expect": "Thank you, and the total does include the service charge before that extra tip.",
@@ -316,7 +316,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The service was kind tonight, so I will add a tip and you can keep the change.」，係咩意思？",
+      "prompt": "客人講「The service was kind indeed, so I will add a tip and you can keep the change.」，係咩意思？",
       "choices": [
         "留低當貼士",
         "即刻找返",

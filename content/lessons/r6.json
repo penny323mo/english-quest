@@ -1,0 +1,349 @@
+{
+  "id": "R6",
+  "unit": "R",
+  "titleYue": "電話訂位",
+  "titleEn": "A reservation by phone",
+  "canDoYue": "你識打電話訂位，改時間，同確認個名。",
+  "canDoEn": "Book a table by phone, change the time, and confirm the name.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/r6.webp",
+  "cast": [
+    "ana",
+    "tom"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "reservation-noun",
+    "book-verb",
+    "table-for-phrase",
+    "outdoor-adj",
+    "window-noun",
+    "cancel-verb",
+    "change-verb",
+    "confirm-verb",
+    "under-the-name-phrase",
+    "party-of-phrase",
+    "available-adj",
+    "fully-booked-phrase",
+    "waitlist-noun",
+    "roughly-adv"
+  ],
+  "dialogue": [
+    {
+      "id": "r6-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Good evening. I would like to book a table, and is a window seat still available tonight?",
+      "glossYue": "晚安。我想訂一張檯，今晚仲有冇靠窗位？",
+      "audio": "assets/audio/lines/r6-l1.mp3",
+      "audioSlow": "assets/audio/lines/r6-l1-slow.mp3",
+      "say": "Good evening. I would like to book a table, and is a window seat still available tonight?",
+      "hideGloss": false
+    },
+    {
+      "id": "r6-l2",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "A window seat is free, and I can book a party of four under the name Mei.",
+      "glossYue": "靠窗位仲有，我可以訂四位，個名寫 Mei。",
+      "audio": "assets/audio/lines/r6-l2.mp3",
+      "audioSlow": "assets/audio/lines/r6-l2-slow.mp3",
+      "say": "A window seat is free, and I can book a party of four under the name Mei.",
+      "hideGloss": true
+    },
+    {
+      "id": "r6-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Would it be possible to change the time, and please keep the table if we arrive later?",
+      "glossYue": "可唔可以改時間？如果我哋遲啲到，請留住張檯。",
+      "audio": "assets/audio/lines/r6-l3.mp3",
+      "audioSlow": "assets/audio/lines/r6-l3-slow.mp3",
+      "say": "Would it be possible to change the time, and please keep the table if we arrive later?",
+      "hideGloss": true
+    },
+    {
+      "id": "r6-l4",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "I can still change the reservation for you, and the window table stays under the name Mei.",
+      "glossYue": "我仍然可以幫你改訂位，靠窗檯仍然用 Mei 個名。",
+      "audio": "assets/audio/lines/r6-l4.mp3",
+      "audioSlow": "assets/audio/lines/r6-l4-slow.mp3",
+      "say": "I can still change the reservation for you, and the window table stays under the name Mei.",
+      "hideGloss": true
+    },
+    {
+      "id": "r6-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "We may need an outdoor table, and I will cancel the window seat if it rains.",
+      "glossYue": "我哋可能要室外檯，如果落雨我就取消靠窗位。",
+      "audio": "assets/audio/lines/r6-l5.mp3",
+      "audioSlow": "assets/audio/lines/r6-l5-slow.mp3",
+      "say": "We may need an outdoor table, and I will cancel the window seat if it rains.",
+      "hideGloss": false
+    },
+    {
+      "id": "r6-l6",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "The outdoor tables are already fully booked, but I can still add your name to the waitlist.",
+      "glossYue": "室外檯已經訂滿，不過我仍然可以將你個名加入候補。",
+      "audio": "assets/audio/lines/r6-l6.mp3",
+      "audioSlow": "assets/audio/lines/r6-l6-slow.mp3",
+      "say": "The outdoor tables are already fully booked, but I can still add your name to the waitlist.",
+      "hideGloss": true
+    },
+    {
+      "id": "r6-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Please confirm the reservation for us now, and roughly what time should we come for dinner?",
+      "glossYue": "請而家幫我哋確認訂位，晚餐大概幾點到？",
+      "audio": "assets/audio/lines/r6-l7.mp3",
+      "audioSlow": "assets/audio/lines/r6-l7-slow.mp3",
+      "say": "Please confirm the reservation for us now, and roughly what time should we come for dinner?",
+      "hideGloss": true
+    },
+    {
+      "id": "r6-l8",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "I confirm a table for four, and I will hold it under the name Mei until eight.",
+      "glossYue": "我確認四位一檯，會用 Mei 個名留到八點。",
+      "audio": "assets/audio/lines/r6-l8.mp3",
+      "audioSlow": "assets/audio/lines/r6-l8-slow.mp3",
+      "say": "I confirm a table for four, and I will hold it under the name Mei until eight.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Good evening. I would like to book a table, and is a window seat still available tonight? 即係問緊咩？",
+      "choices": [
+        "問今晚仲有冇靠窗位",
+        "問帳單幾多",
+        "問有冇外賣"
+      ],
+      "answer": 0,
+      "explain": "book a table 係訂檯，window seat 係靠窗位。"
+    },
+    {
+      "prompt": "The outdoor tables are already fully booked, but I can still add your name to the waitlist. 呢句即係點？",
+      "choices": [
+        "室外檯訂滿，可以加入候補",
+        "室外檯仲有位",
+        "已經取消訂位"
+      ],
+      "answer": 0,
+      "explain": "fully booked 係訂滿，waitlist 係候補。"
+    },
+    {
+      "prompt": "Would it be possible to change the time, and please keep the table if we arrive later? 即係問緊咩？",
+      "choices": [
+        "問可唔可以改時間並留檯",
+        "問可唔可以換菜",
+        "問可唔可以分單"
+      ],
+      "answer": 0,
+      "explain": "change the time 係改時間。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I would like to ___ a table, and is a window seat still available tonight?",
+      "example": "Good evening. I would like to book a table, and is a window seat still available tonight?",
+      "glossYue": "我想⋯⋯一張檯。",
+      "answer": "book",
+      "choices": [
+        "book",
+        "cancel",
+        "confirm"
+      ]
+    },
+    {
+      "pattern": "We may need an ___ table, and I will cancel the window seat if it rains.",
+      "example": "We may need an outdoor table, and I will cancel the window seat if it rains.",
+      "glossYue": "可能要一張⋯⋯檯。",
+      "answer": "outdoor",
+      "choices": [
+        "outdoor",
+        "window",
+        "waitlist"
+      ]
+    },
+    {
+      "pattern": "Please ___ the reservation for us now, and roughly what time should we come for dinner?",
+      "example": "Please confirm the reservation for us now, and roughly what time should we come for dinner?",
+      "glossYue": "請⋯⋯訂位。",
+      "answer": "confirm",
+      "choices": [
+        "confirm",
+        "cancel",
+        "book"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "r6-l5",
+    "hint": "We may need an outdoor table, and I will cancel the window seat if it rains."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想改時間，又想留住張檯。你點講？",
+      "choices": [
+        "Would it be possible to change the time, and please keep the table if we arrive later?",
+        "My commute was long this morning.",
+        "The clasp on the gift is broken."
+      ],
+      "answer": 0,
+      "explain": "改時間，遲到都請留檯。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "I",
+        "would",
+        "like",
+        "to",
+        "book"
+      ],
+      "answer": [
+        "I",
+        "would",
+        "like",
+        "to",
+        "book"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你打去餐廳。同 Ana 訂靠窗位。可以講：book a table。",
+    "turns": [
+      {
+        "partner": "Ana",
+        "partnerId": "ana",
+        "line": "A window seat is free, and I can book a party of four under the name Mei.",
+        "audio": "assets/audio/lines/r6-l2.mp3",
+        "audioSlow": "assets/audio/lines/r6-l2-slow.mp3",
+        "expect": "Would it be possible to change the time, and please keep the table if we arrive later?",
+        "keywords": [
+          "change",
+          "table"
+        ],
+        "modelAudio": "assets/audio/lines/r6-l3.mp3",
+        "modelSlow": "assets/audio/lines/r6-l3-slow.mp3"
+      },
+      {
+        "partner": "Ana",
+        "partnerId": "ana",
+        "line": "I can still change the reservation for you, and the window table stays under the name Mei.",
+        "audio": "assets/audio/lines/r6-l4.mp3",
+        "audioSlow": "assets/audio/lines/r6-l4-slow.mp3",
+        "expect": "We may need an outdoor table, and I will cancel the window seat if it rains.",
+        "keywords": [
+          "outdoor",
+          "cancel"
+        ],
+        "modelAudio": "assets/audio/lines/r6-l5.mp3",
+        "modelSlow": "assets/audio/lines/r6-l5-slow.mp3"
+      },
+      {
+        "partner": "Ana",
+        "partnerId": "ana",
+        "line": "The outdoor tables are already fully booked, but I can still add your name to the waitlist.",
+        "audio": "assets/audio/lines/r6-l6.mp3",
+        "audioSlow": "assets/audio/lines/r6-l6-slow.mp3",
+        "expect": "Please confirm the reservation for us now, and roughly what time should we come for dinner?",
+        "keywords": [
+          "confirm",
+          "reservation"
+        ],
+        "modelAudio": "assets/audio/lines/r6-l7.mp3",
+        "modelSlow": "assets/audio/lines/r6-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：訂位",
+      "lemma": "reservation-noun",
+      "choices": [
+        "reservation",
+        "waitlist",
+        "outdoor"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：候補",
+      "lemma": "waitlist-noun",
+      "choices": [
+        "waitlist",
+        "window",
+        "confirm"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "店員講「The outdoor tables are already fully booked, but I can still add your name to the waitlist.」，fully booked 係咩意思？",
+      "choices": [
+        "訂滿",
+        "有位",
+        "取消"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "你講「We may need an outdoor table, and I will cancel the window seat if it rains.」，cancel 係咩意思？",
+      "choices": [
+        "取消",
+        "確認",
+        "加位"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個字有 /l/：table、window、定 book？",
+      "choices": [
+        "table",
+        "window",
+        "book"
+      ],
+      "answer": 0,
+      "explain": "table 有 /l/。window 同 book 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "table 入面嗰個音",
+    "note": "table 有 /l/。window 同 book 冇 /l/。",
+    "pairs": [
+      {
+        "a": "table-for-phrase",
+        "b": "window-noun"
+      },
+      {
+        "a": "cancel-verb",
+        "b": "book-verb"
+      }
+    ],
+    "drill": [
+      "table-for-phrase",
+      "window-noun",
+      "cancel-verb",
+      "book-verb",
+      "outdoor-adj"
+    ]
+  },
+  "next": "J12"
+}

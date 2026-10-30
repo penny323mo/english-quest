@@ -8,7 +8,7 @@
   "minutes": 12,
   "hero": "assets/art/lessons/t8.webp",
   "cast": [
-    "kai",
+    "pat",
     "tom"
   ],
   "cefr": "B1",
@@ -31,8 +31,8 @@
   "dialogue": [
     {
       "id": "t8-l1",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "pat",
+      "speakerLabel": "Pat",
       "text": "Good morning. What is the main purpose of your visit today, and are you here for tourism?",
       "glossYue": "早晨。你今日嚟嘅主要目的係咩？你係咪嚟觀光？",
       "audio": "assets/audio/lines/t8-l1.mp3",
@@ -53,13 +53,13 @@
     },
     {
       "id": "t8-l3",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
-      "text": "Are you here for business as well, and do you have a return ticket with you today?",
-      "glossYue": "你係咪亦都有公差？你今日有冇帶住回程機票？",
+      "speaker": "pat",
+      "speakerLabel": "Pat",
+      "text": "Are you here for business as well, and do you have a return ticket in your bag?",
+      "glossYue": "你係咪亦都有公差？你袋入面有冇回程機票？",
       "audio": "assets/audio/lines/t8-l3.mp3",
       "audioSlow": "assets/audio/lines/t8-l3-slow.mp3",
-      "say": "Are you here for business as well, and do you have a return ticket with you today?",
+      "say": "Are you here for business as well, and do you have a return ticket in your bag?",
       "hideGloss": true
     },
     {
@@ -86,13 +86,13 @@
     },
     {
       "id": "t8-l6",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
-      "text": "Please complete this short form for me today, and tell me if you have nothing to declare.",
-      "glossYue": "請你今日填好呢張短表格，再話我知你係咪冇嘢申報。",
+      "speaker": "pat",
+      "speakerLabel": "Pat",
+      "text": "Please complete this short form for me here, and tell me if you have nothing to declare.",
+      "glossYue": "請你喺度填好呢張短表格，再話我知你係咪冇嘢申報。",
       "audio": "assets/audio/lines/t8-l6.mp3",
       "audioSlow": "assets/audio/lines/t8-l6-slow.mp3",
-      "say": "Please complete this short form for me today, and tell me if you have nothing to declare.",
+      "say": "Please complete this short form for me here, and tell me if you have nothing to declare.",
       "hideGloss": true
     },
     {
@@ -108,8 +108,8 @@
     },
     {
       "id": "t8-l8",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "pat",
+      "speakerLabel": "Pat",
       "text": "The officer will stamp your form here, and you may go on to the hotel after that.",
       "glossYue": "關員會喺度幫你張表格蓋章，之後你可以去酒店。",
       "audio": "assets/audio/lines/t8-l8.mp3",
@@ -225,8 +225,8 @@
     "intro": "你喺入境櫃檯。講目的同日數，再申報。可以講：for tourism。",
     "turns": [
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "Pat",
+        "partnerId": "pat",
         "line": "Good morning. What is the main purpose of your visit today, and are you here for tourism?",
         "audio": "assets/audio/lines/t8-l1.mp3",
         "audioSlow": "assets/audio/lines/t8-l1-slow.mp3",
@@ -239,9 +239,9 @@
         "modelSlow": "assets/audio/lines/t8-l2-slow.mp3"
       },
       {
-        "partner": "Kai",
-        "partnerId": "kai",
-        "line": "Are you here for business as well, and do you have a return ticket with you today?",
+        "partner": "Pat",
+        "partnerId": "pat",
+        "line": "Are you here for business as well, and do you have a return ticket in your bag?",
         "audio": "assets/audio/lines/t8-l3.mp3",
         "audioSlow": "assets/audio/lines/t8-l3-slow.mp3",
         "expect": "This trip is not for business, and my return ticket shows the fifth day of the stay.",
@@ -253,9 +253,9 @@
         "modelSlow": "assets/audio/lines/t8-l4-slow.mp3"
       },
       {
-        "partner": "Kai",
-        "partnerId": "kai",
-        "line": "Please complete this short form for me today, and tell me if you have nothing to declare.",
+        "partner": "Pat",
+        "partnerId": "pat",
+        "line": "Please complete this short form for me here, and tell me if you have nothing to declare.",
         "audio": "assets/audio/lines/t8-l6.mp3",
         "audioSlow": "assets/audio/lines/t8-l6-slow.mp3",
         "expect": "I have nothing to declare apart from this small gift, and the goods are for personal use.",

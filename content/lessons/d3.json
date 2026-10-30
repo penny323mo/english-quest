@@ -8,7 +8,7 @@
   "minutes": 12,
   "hero": "assets/art/lessons/d3.webp",
   "cast": [
-    "kai",
+    "lea",
     "tom"
   ],
   "cefr": "B1",
@@ -28,13 +28,13 @@
   "dialogue": [
     {
       "id": "d3-l1",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
-      "text": "Good morning. I can show you this furnished flat today, and the lease covers the monthly water bill.",
-      "glossYue": "早晨。我今日可以帶你睇呢間有傢俬嘅單位，租約包每月水費。",
+      "speaker": "lea",
+      "speakerLabel": "Lea",
+      "text": "Good morning. I can show you this furnished flat here, and the lease covers the monthly water bill.",
+      "glossYue": "早晨。我可以帶你喺度睇呢間有傢俬嘅單位，租約包每月水費。",
       "audio": "assets/audio/lines/d3-l1.mp3",
       "audioSlow": "assets/audio/lines/d3-l1-slow.mp3",
-      "say": "Good morning. I can show you this furnished flat today, and the lease covers the monthly water bill.",
+      "say": "Good morning. I can show you this furnished flat here, and the lease covers the monthly water bill.",
       "hideGloss": false
     },
     {
@@ -42,7 +42,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "How much is the monthly rent please, and is the water included with the other utilities here?",
-      "glossYue": "請問月租幾多，水費有冇連埋呢度其他公用開支？",
+      "glossYue": "請問月租幾多，水費有冇連埋呢度其他水電煤？",
       "audio": "assets/audio/lines/d3-l2.mp3",
       "audioSlow": "assets/audio/lines/d3-l2-slow.mp3",
       "say": "How much is the monthly rent please, and is the water included with the other utilities here?",
@@ -50,24 +50,24 @@
     },
     {
       "id": "d3-l3",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
-      "text": "The monthly rent is due on the first day, and the deposit equals one full month here.",
-      "glossYue": "月租每個月一號交，呢度按金等於一個完整月。",
+      "speaker": "lea",
+      "speakerLabel": "Lea",
+      "text": "The monthly rent is due on the first day, and the deposit is one full month's rent.",
+      "glossYue": "月租每個月一號交，按金係一個月租。",
       "audio": "assets/audio/lines/d3-l3.mp3",
       "audioSlow": "assets/audio/lines/d3-l3-slow.mp3",
-      "say": "The monthly rent is due on the first day, and the deposit equals one full month here.",
+      "say": "The monthly rent is due on the first day, and the deposit is one full month's rent.",
       "hideGloss": true
     },
     {
       "id": "d3-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The landlord allows a short viewing today, and the tenant can ask about the noisy street outside.",
-      "glossYue": "業主今日可以畀人短睇樓，租客可以問外面條街嘈唔嘈。",
+      "text": "The landlord allows a short viewing here, and the tenant can ask about the noisy street outside.",
+      "glossYue": "業主可以畀你睇樓，租客可以問外面條街嘈唔嘈。",
       "audio": "assets/audio/lines/d3-l4.mp3",
       "audioSlow": "assets/audio/lines/d3-l4-slow.mp3",
-      "say": "The landlord allows a short viewing today, and the tenant can ask about the noisy street outside.",
+      "say": "The landlord allows a short viewing here, and the tenant can ask about the noisy street outside.",
       "hideGloss": true
     },
     {
@@ -83,13 +83,13 @@
     },
     {
       "id": "d3-l6",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
-      "text": "The flat is furnished already, and the utilities stay in the tenant name until the written notice ends.",
-      "glossYue": "單位已經有傢俬，公用開支會用租客個名，直至書面通知完。",
+      "speaker": "lea",
+      "speakerLabel": "Lea",
+      "text": "The flat is furnished already, and the utilities stay in the tenant's name until the written notice ends.",
+      "glossYue": "單位已經有傢俬，水電煤會用租客個名，直至書面通知完。",
       "audio": "assets/audio/lines/d3-l6.mp3",
       "audioSlow": "assets/audio/lines/d3-l6-slow.mp3",
-      "say": "The flat is furnished already, and the utilities stay in the tenant name until the written notice ends.",
+      "say": "The flat is furnished already, and the utilities stay in the tenant's name until the written notice ends.",
       "hideGloss": true
     },
     {
@@ -105,13 +105,13 @@
     },
     {
       "id": "d3-l8",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
-      "text": "If you sign the lease today, the landlord can give you the keys after the deposit clears.",
-      "glossYue": "如果你今日簽租約，按金清咗業主可以交鎖匙。",
+      "speaker": "lea",
+      "speakerLabel": "Lea",
+      "text": "If you sign the lease here, the landlord can give you the keys after the deposit clears.",
+      "glossYue": "如果你喺度簽租約，按金過咗數業主可以交鎖匙。",
       "audio": "assets/audio/lines/d3-l8.mp3",
       "audioSlow": "assets/audio/lines/d3-l8-slow.mp3",
-      "say": "If you sign the lease today, the landlord can give you the keys after the deposit clears.",
+      "say": "If you sign the lease here, the landlord can give you the keys after the deposit clears.",
       "hideGloss": true
     }
   ],
@@ -160,8 +160,8 @@
       ]
     },
     {
-      "pattern": "The monthly rent is due on the first day, and the ___ equals one full month here.",
-      "example": "The monthly rent is due on the first day, and the deposit equals one full month here.",
+      "pattern": "The monthly rent is due on the first day, and the ___ is one full month's rent.",
+      "example": "The monthly rent is due on the first day, and the deposit is one full month's rent.",
       "glossYue": "⋯⋯等於一個月。",
       "answer": "deposit",
       "choices": [
@@ -231,9 +231,9 @@
     "intro": "你係租客。問租金同按金。可以講：If I decide today。",
     "turns": [
       {
-        "partner": "Kai",
-        "partnerId": "kai",
-        "line": "Good morning. I can show you this furnished flat today, and the lease covers the monthly water bill.",
+        "partner": "Lea",
+        "partnerId": "lea",
+        "line": "Good morning. I can show you this furnished flat here, and the lease covers the monthly water bill.",
         "audio": "assets/audio/lines/d3-l1.mp3",
         "audioSlow": "assets/audio/lines/d3-l1-slow.mp3",
         "expect": "How much is the monthly rent please, and is the water included with the other utilities here?",
@@ -245,9 +245,9 @@
         "modelSlow": "assets/audio/lines/d3-l2-slow.mp3"
       },
       {
-        "partner": "Kai",
-        "partnerId": "kai",
-        "line": "The monthly rent is due on the first day, and the deposit equals one full month here.",
+        "partner": "Lea",
+        "partnerId": "lea",
+        "line": "The monthly rent is due on the first day, and the deposit is one full month's rent.",
         "audio": "assets/audio/lines/d3-l3.mp3",
         "audioSlow": "assets/audio/lines/d3-l3-slow.mp3",
         "expect": "If I decide today, I can sign the lease, and the agency fee is on the contract.",
@@ -259,9 +259,9 @@
         "modelSlow": "assets/audio/lines/d3-l5-slow.mp3"
       },
       {
-        "partner": "Kai",
-        "partnerId": "kai",
-        "line": "The flat is furnished already, and the utilities stay in the tenant name until the written notice ends.",
+        "partner": "Lea",
+        "partnerId": "lea",
+        "line": "The flat is furnished already, and the utilities stay in the tenant's name until the written notice ends.",
         "audio": "assets/audio/lines/d3-l6.mp3",
         "audioSlow": "assets/audio/lines/d3-l6-slow.mp3",
         "expect": "Please read the contract with me, and tell me the notice period before I pay the deposit.",
@@ -299,7 +299,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The monthly rent is due on the first day, and the deposit equals one full month here.」，deposit 係咩意思？",
+      "prompt": "客人講「The monthly rent is due on the first day, and the deposit is one full month's rent.」，deposit 係咩意思？",
       "choices": [
         "按金",
         "業主",
@@ -351,5 +351,5 @@
       "contract-noun"
     ]
   },
-  "next": "J11"
+  "next": "W5"
 }

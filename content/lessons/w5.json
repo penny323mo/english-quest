@@ -1,0 +1,349 @@
+{
+  "id": "W5",
+  "unit": "W",
+  "titleYue": "投訴電話",
+  "titleEn": "A complaint call",
+  "canDoYue": "你識喺電話投訴一張單，要求對方跟進同回覆。",
+  "canDoEn": "Call about an order, ask them to look into it, and agree a time for an update.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/w5.webp",
+  "cast": [
+    "ren",
+    "tom"
+  ],
+  "cefr": "B1/B2",
+  "lemmas": [
+    "calling-about-phrase",
+    "order-noun",
+    "reference-noun",
+    "look-into-phrase",
+    "escalate-verb",
+    "within-prep",
+    "business-days-phrase",
+    "compensation-noun",
+    "feedback-noun",
+    "valued-adj",
+    "resolve-verb",
+    "update-you-phrase",
+    "sincere-adj",
+    "apology-noun"
+  ],
+  "dialogue": [
+    {
+      "id": "w5-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Good morning. I am calling about a recent order, and the reference number is on the gift box.",
+      "glossYue": "早晨。我打嚟問一張近期嘅單，參考編號喺禮盒上面。",
+      "audio": "assets/audio/lines/w5-l1.mp3",
+      "audioSlow": "assets/audio/lines/w5-l1-slow.mp3",
+      "say": "Good morning. I am calling about a recent order, and the reference number is on the gift box.",
+      "hideGloss": false
+    },
+    {
+      "id": "w5-l2",
+      "speaker": "ren",
+      "speakerLabel": "Ren",
+      "text": "I am sorry for the trouble with it, and I will look into the order with sincere care.",
+      "glossYue": "唔好意思添咗麻煩，我會認真跟進呢張單。",
+      "audio": "assets/audio/lines/w5-l2.mp3",
+      "audioSlow": "assets/audio/lines/w5-l2-slow.mp3",
+      "say": "I am sorry for the trouble with it, and I will look into the order with sincere care.",
+      "hideGloss": true
+    },
+    {
+      "id": "w5-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "The clasp on it broke, so I would like this resolved, and I value a clear update.",
+      "glossYue": "上面個扣壞咗，我想解決，我重視一個清楚嘅更新。",
+      "audio": "assets/audio/lines/w5-l3.mp3",
+      "audioSlow": "assets/audio/lines/w5-l3-slow.mp3",
+      "say": "The clasp on it broke, so I would like this resolved, and I value a clear update.",
+      "hideGloss": true
+    },
+    {
+      "id": "w5-l4",
+      "speaker": "ren",
+      "speakerLabel": "Ren",
+      "text": "I will escalate the case for you, and I can update you within three business days by phone.",
+      "glossYue": "我會幫你升級處理，三個工作天之內用電話通知你。",
+      "audio": "assets/audio/lines/w5-l4.mp3",
+      "audioSlow": "assets/audio/lines/w5-l4-slow.mp3",
+      "say": "I will escalate the case for you, and I can update you within three business days by phone.",
+      "hideGloss": true
+    },
+    {
+      "id": "w5-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "If the workshop cannot repair the broken clasp, would compensation or a full replacement be possible?",
+      "glossYue": "如果工場修唔好個壞扣，可唔可以賠償或者全數換過？",
+      "audio": "assets/audio/lines/w5-l5.mp3",
+      "audioSlow": "assets/audio/lines/w5-l5-slow.mp3",
+      "say": "If the workshop cannot repair the broken clasp, would compensation or a full replacement be possible?",
+      "hideGloss": false
+    },
+    {
+      "id": "w5-l6",
+      "speaker": "ren",
+      "speakerLabel": "Ren",
+      "text": "Your feedback is truly valued by us, and I will resolve this case with a sincere apology.",
+      "glossYue": "我哋真係重視你嘅意見，我會誠懇道歉並解決呢單。",
+      "audio": "assets/audio/lines/w5-l6.mp3",
+      "audioSlow": "assets/audio/lines/w5-l6-slow.mp3",
+      "say": "Your feedback is truly valued by us, and I will resolve this case with a sincere apology.",
+      "hideGloss": true
+    },
+    {
+      "id": "w5-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Please look into the reference number for me, and tell me when you can update me by phone.",
+      "glossYue": "請幫我查個參考編號，再話我知你幾時可以用電話通知我。",
+      "audio": "assets/audio/lines/w5-l7.mp3",
+      "audioSlow": "assets/audio/lines/w5-l7-slow.mp3",
+      "say": "Please look into the reference number for me, and tell me when you can update me by phone.",
+      "hideGloss": true
+    },
+    {
+      "id": "w5-l8",
+      "speaker": "ren",
+      "speakerLabel": "Ren",
+      "text": "I will call you by Friday, and I will resolve the order if the workshop agrees with us.",
+      "glossYue": "我會星期五之前打電話畀你，如果工場同意，我會解決呢張單。",
+      "audio": "assets/audio/lines/w5-l8.mp3",
+      "audioSlow": "assets/audio/lines/w5-l8-slow.mp3",
+      "say": "I will call you by Friday, and I will resolve the order if the workshop agrees with us.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Good morning. I am calling about a recent order, and the reference number is on the gift box. 呢句即係點？",
+      "choices": [
+        "打嚟問一張單，編號喺禮盒",
+        "打嚟改訂位",
+        "打嚟取消會議"
+      ],
+      "answer": 0,
+      "explain": "calling about an order 係打嚟問張單。"
+    },
+    {
+      "prompt": "If the workshop cannot repair the broken clasp, would compensation or a full replacement be possible? 即係問緊咩？",
+      "choices": [
+        "問修唔好可唔可以賠償或換過",
+        "問可唔可以加購",
+        "問參考編號喺邊"
+      ],
+      "answer": 0,
+      "explain": "compensation 係賠償，replacement 係換過。"
+    },
+    {
+      "prompt": "I will escalate the case for you, and I can update you within three business days by phone. 呢句即係點？",
+      "choices": [
+        "會升級處理，三個工作天內電話通知",
+        "會即刻退款",
+        "會取消張單"
+      ],
+      "answer": 0,
+      "explain": "escalate 係升級處理，business days 係工作天。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I am calling about a recent ___, and the reference number is on the gift box.",
+      "example": "Good morning. I am calling about a recent order, and the reference number is on the gift box.",
+      "glossYue": "我打嚟問一張近期嘅⋯⋯。",
+      "answer": "order",
+      "choices": [
+        "order",
+        "apology",
+        "feedback"
+      ]
+    },
+    {
+      "pattern": "I will ___ the case for you, and I can update you within three business days by phone.",
+      "example": "I will escalate the case for you, and I can update you within three business days by phone.",
+      "glossYue": "我會⋯⋯呢單。",
+      "answer": "escalate",
+      "choices": [
+        "escalate",
+        "resolve",
+        "value"
+      ]
+    },
+    {
+      "pattern": "If the workshop cannot repair the broken clasp, would ___ or a full replacement be possible?",
+      "example": "If the workshop cannot repair the broken clasp, would compensation or a full replacement be possible?",
+      "glossYue": "可唔可以⋯⋯？",
+      "answer": "compensation",
+      "choices": [
+        "compensation",
+        "reference",
+        "feedback"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "w5-l5",
+    "hint": "If the workshop cannot repair the broken clasp, would compensation or a full replacement be possible?"
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "個扣壞咗，你想對方賠償或者換過。你點講？",
+      "choices": [
+        "If the workshop cannot repair the broken clasp, would compensation or a full replacement be possible?",
+        "Shall we catch up later after the meeting?",
+        "A window seat is free tonight."
+      ],
+      "answer": 0,
+      "explain": "用 if 講修唔好就問賠償或者換過。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "I",
+        "will",
+        "look",
+        "into",
+        "it"
+      ],
+      "answer": [
+        "I",
+        "will",
+        "look",
+        "into",
+        "it"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你打去售後。同 Ren 講個扣壞咗。可以講：look into。",
+    "turns": [
+      {
+        "partner": "Ren",
+        "partnerId": "ren",
+        "line": "I am sorry for the trouble with it, and I will look into the order with sincere care.",
+        "audio": "assets/audio/lines/w5-l2.mp3",
+        "audioSlow": "assets/audio/lines/w5-l2-slow.mp3",
+        "expect": "The clasp on it broke, so I would like this resolved, and I value a clear update.",
+        "keywords": [
+          "clasp",
+          "resolved"
+        ],
+        "modelAudio": "assets/audio/lines/w5-l3.mp3",
+        "modelSlow": "assets/audio/lines/w5-l3-slow.mp3"
+      },
+      {
+        "partner": "Ren",
+        "partnerId": "ren",
+        "line": "I will escalate the case for you, and I can update you within three business days by phone.",
+        "audio": "assets/audio/lines/w5-l4.mp3",
+        "audioSlow": "assets/audio/lines/w5-l4-slow.mp3",
+        "expect": "If the workshop cannot repair the broken clasp, would compensation or a full replacement be possible?",
+        "keywords": [
+          "compensation",
+          "replacement"
+        ],
+        "modelAudio": "assets/audio/lines/w5-l5.mp3",
+        "modelSlow": "assets/audio/lines/w5-l5-slow.mp3"
+      },
+      {
+        "partner": "Ren",
+        "partnerId": "ren",
+        "line": "Your feedback is truly valued by us, and I will resolve this case with a sincere apology.",
+        "audio": "assets/audio/lines/w5-l6.mp3",
+        "audioSlow": "assets/audio/lines/w5-l6-slow.mp3",
+        "expect": "Please look into the reference number for me, and tell me when you can update me by phone.",
+        "keywords": [
+          "reference",
+          "phone"
+        ],
+        "modelAudio": "assets/audio/lines/w5-l7.mp3",
+        "modelSlow": "assets/audio/lines/w5-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：參考編號",
+      "lemma": "reference-noun",
+      "choices": [
+        "reference",
+        "feedback",
+        "order"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：道歉",
+      "lemma": "apology-noun",
+      "choices": [
+        "apology",
+        "order",
+        "update"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "店員講「I will escalate the case for you, and I can update you within three business days by phone.」，escalate 係咩意思？",
+      "choices": [
+        "升級處理",
+        "取消訂單",
+        "確認訂位"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "你講「If the workshop cannot repair the broken clasp, would compensation or a full replacement be possible?」，compensation 係咩意思？",
+      "choices": [
+        "賠償",
+        "參考編號",
+        "工作天"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個字有 /l/：apology、feedback、定 order？",
+      "choices": [
+        "apology",
+        "feedback",
+        "order"
+      ],
+      "answer": 0,
+      "explain": "apology 有 /l/。feedback 同 order 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "apology 入面嗰個音",
+    "note": "apology 有 /l/。feedback 同 order 冇 /l/。",
+    "pairs": [
+      {
+        "a": "apology-noun",
+        "b": "feedback-noun"
+      },
+      {
+        "a": "resolve-verb",
+        "b": "order-noun"
+      }
+    ],
+    "drill": [
+      "apology-noun",
+      "feedback-noun",
+      "resolve-verb",
+      "order-noun",
+      "sincere-adj"
+    ]
+  },
+  "next": "J11"
+}

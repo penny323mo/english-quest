@@ -35,8 +35,8 @@
       "id": "j6-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "How much does this cost today, and is the tax already in that price?",
-      "glossYue": "呢件今日幾多錢，稅包咗未？",
+      "text": "How much does this piece cost, and is the tax already in that price?",
+      "glossYue": "呢件幾多錢，稅包咗未？",
       "audio": "assets/audio/lines/j6-l1.mp3",
       "audioSlow": "assets/audio/lines/j6-l1-slow.mp3",
       "say": "How much does this [[kˈɑst]] today, and is the tax already in that price?",
@@ -57,11 +57,11 @@
       "id": "j6-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Is there a discount if I take the ring and the chain today?",
+      "text": "Is there a discount if I take the ring and the chain too?",
       "glossYue": "如果我戒指同頸鏈一齊要，有冇折扣？",
       "audio": "assets/audio/lines/j6-l3.mp3",
       "audioSlow": "assets/audio/lines/j6-l3-slow.mp3",
-      "say": "Is there a discount if I take the ring and the chain today?",
+      "say": "Is there a discount if I take the ring and the chain too?",
       "hideGloss": true
     },
     {
@@ -79,11 +79,11 @@
       "id": "j6-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "That is within my budget, so I can take this one home today.",
-      "glossYue": "呢個價錢喺我預算內，我今日可以攞呢件返去。",
+      "text": "That is within my budget, so I can take this one item home.",
+      "glossYue": "呢個價錢喺我預算內，我可以攞呢件返去。",
       "audio": "assets/audio/lines/j6-l5.mp3",
       "audioSlow": "assets/audio/lines/j6-l5-slow.mp3",
-      "say": "That is within my budget, so I can take this one home today.",
+      "say": "That is within my budget, so I can take this one item home.",
       "hideGloss": true
     },
     {
@@ -198,8 +198,8 @@
       ]
     },
     {
-      "pattern": "That total is within my ___, so I can take the piece today.",
-      "example": "That total is within my budget, so I can take the piece today.",
+      "pattern": "That total is within my ___, so I can take the piece now.",
+      "example": "That total is within my budget, so I can take the piece now.",
       "glossYue": "呢個喺我⋯⋯之內。",
       "answer": "budget",
       "choices": [
@@ -316,7 +316,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Is there a discount if I take the ring and the chain today?」，係咩意思？",
+      "prompt": "客人講「Is there a discount if I take the ring and the chain too?」，係咩意思？",
       "choices": [
         "折扣",
         "碼",
@@ -326,7 +326,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「That is within my budget, so I can take this one home today.」，係咩意思？",
+      "prompt": "客人講「That is within my budget, so I can take this one item home.」，係咩意思？",
       "choices": [
         "預算",
         "鑲托",

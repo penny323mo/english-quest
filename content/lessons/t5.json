@@ -8,7 +8,7 @@
   "minutes": 12,
   "hero": "assets/art/lessons/t5.webp",
   "cast": [
-    "kai",
+    "noa",
     "tom"
   ],
   "cefr": "A2/B1",
@@ -51,8 +51,8 @@
     },
     {
       "id": "t5-l3",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "noa",
+      "speakerLabel": "Noa",
       "text": "The police desk is nearby, and they can write the missing item report for you.",
       "glossYue": "警崗喺附近，佢哋可以幫你寫搵唔到物件嘅報告。",
       "audio": "assets/audio/lines/t5-l3.mp3",
@@ -73,8 +73,8 @@
     },
     {
       "id": "t5-l5",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "noa",
+      "speakerLabel": "Noa",
       "text": "The embassy number is on this card, and I will help you file the report.",
       "glossYue": "大使館電話喺呢張卡上面，我會幫你報失。",
       "audio": "assets/audio/lines/t5-l5.mp3",
@@ -84,8 +84,8 @@
     },
     {
       "id": "t5-l6",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "noa",
+      "speakerLabel": "Noa",
       "text": "The wallet is still missing, but your passport copies are in the safe.",
       "glossYue": "銀包仲搵唔到，不過護照副本喺夾萬。",
       "audio": "assets/audio/lines/t5-l6.mp3",
@@ -106,8 +106,8 @@
     },
     {
       "id": "t5-l8",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "noa",
+      "speakerLabel": "Noa",
       "text": "If you feel faint, I can call an ambulance while we file the report.",
       "glossYue": "如果你覺得暈，我可以叫救護車，同時我哋報失。",
       "audio": "assets/audio/lines/t5-l8.mp3",
@@ -230,7 +230,7 @@
     }
   ],
   "roleplay": {
-    "you": "kai",
+    "you": "noa",
     "intro": "Tom 喺櫃檯話唔見咗銀包。等佢講完先答。可以講：The police desk is nearby。",
     "turns": [
       {

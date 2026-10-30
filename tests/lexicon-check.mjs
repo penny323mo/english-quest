@@ -220,3 +220,39 @@ test("no Edge or Azure teaching audio is referenced", () => {
     assert.equal(banned.test(text), false, file);
   }
 });
+
+test("syllabifier uses a legal maximal onset", () => {
+  assert.equal(byId["withdraw-verb"].ipa, "/wɪð.ˈdɹɔ/");
+  assert.deepEqual(byId["withdraw-verb"].syllableIpa, ["wɪð", "ˈdɹɔ"]);
+  assert.equal(byId["landlord-noun"].ipa, "/ˈlænd.ˌlɔɹd/");
+  assert.deepEqual(byId["landlord-noun"].syllableIpa, ["ˈlænd", "ˌlɔɹd"]);
+  assert.equal(byId["postcard-noun"].ipa, "/ˈpoʊst.ˌkɑɹd/");
+  assert.deepEqual(byId["postcard-noun"].syllableIpa, ["ˈpoʊst", "ˌkɑɹd"]);
+  assert.equal(byId["agency-noun"].ipa, "/ˈeɪ.dʒən.si/");
+  assert.deepEqual(byId["agency-noun"].syllableIpa, ["ˈeɪ", "dʒən", "si"]);
+  const script = `
+import sys
+sys.path.insert(0, "scripts")
+from emit_content import ipa_of
+cases = [
+    ("W IH0 DH D R AO1", "/wɪð.ˈdɹɔ/"),
+    ("L AE1 N D L AO2 R D", "/ˈlænd.ˌlɔɹd/"),
+    ("P OW1 S T K AA2 R D", "/ˈpoʊst.ˌkɑɹd/"),
+    ("EY1 JH AH0 N S IY0", "/ˈeɪ.dʒən.si/"),
+    ("B R EH1 K F AH0 S T", "/ˈbɹɛk.fəst/"),
+    ("T EH1 N AH0 N T", "/ˈtɛ.nənt/"),
+    ("Y UW0 T IH1 L AH0 T IY0 Z", "/ju.ˈtɪ.lə.tiz/"),
+    ("V Y UW1 IH0 NG", "/ˈvju.ɪŋ/"),
+    ("P ER1 F IH0 K T", "/ˈpɝ.fɪkt/"),
+    ("K AA1 N T AE0 K T L AH0 S", "/ˈkɑn.tækt.ləs/"),
+    ("IH2 N G R IY1 D IY0 AH0 N T S", "/ˌɪn.ˈɡɹi.di.ənts/"),
+]
+for arp, want in cases:
+    got, _syls, _stress = ipa_of(arp)
+    if got != want:
+        raise SystemExit(f"{arp}: {got} != {want}")
+print("ok")
+`;
+  const res = spawnSync("python3", ["-c", script], { cwd: root, encoding: "utf8" });
+  assert.equal(res.status, 0, `${res.stderr}\n${res.stdout}`);
+});

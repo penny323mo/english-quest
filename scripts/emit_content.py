@@ -119,8 +119,72 @@ def syll_stress(phones: list[str]) -> int:
     return best
 
 
+def phone_base(tok: str) -> str:
+    return tok[:-1] if tok[-1].isdigit() else tok
+
+
+# English onsets. NG is never an onset. Medial clusters take the longest
+# legal suffix (maximal onset); anything left is the previous syllable's coda.
+ONSET2 = {
+    ("P", "L"), ("P", "R"), ("B", "L"), ("B", "R"),
+    ("T", "R"), ("T", "W"), ("D", "R"), ("D", "W"),
+    ("K", "L"), ("K", "R"), ("K", "W"), ("G", "L"), ("G", "R"), ("G", "W"),
+    ("F", "L"), ("F", "R"), ("TH", "R"), ("TH", "W"), ("SH", "R"),
+    ("S", "P"), ("S", "T"), ("S", "K"), ("S", "M"), ("S", "N"),
+    ("S", "L"), ("S", "W"), ("S", "F"),
+    # Consonant + /j/ is a normal English onset (cute, few, music).
+    ("P", "Y"), ("B", "Y"), ("T", "Y"), ("D", "Y"), ("K", "Y"), ("G", "Y"),
+    ("F", "Y"), ("V", "Y"), ("M", "Y"), ("N", "Y"), ("HH", "Y"),
+}
+ONSET3 = {
+    ("S", "P", "L"), ("S", "P", "R"), ("S", "T", "R"),
+    ("S", "K", "L"), ("S", "K", "R"), ("S", "K", "W"),
+    ("S", "P", "Y"), ("S", "T", "Y"), ("S", "K", "Y"),
+}
+
+
+def legal_onset(bases: tuple[str, ...]) -> bool:
+    if not bases:
+        return True
+    if len(bases) == 1:
+        return bases[0] != "NG" and bases[0] in BASE and bases[0] not in VOWELS
+    if len(bases) == 2:
+        return bases in ONSET2
+    if len(bases) == 3:
+        return bases in ONSET3
+    return False
+
+
+def longest_legal_onset(cons: list[str]) -> int:
+    bases = tuple(phone_base(p) for p in cons)
+    for length in (3, 2, 1):
+        if len(bases) >= length and legal_onset(bases[-length:]):
+            return length
+    return 0
+
+
+def resyllabify(phones: list[str]) -> list[list[str]]:
+    """One syllable per vowel. Word-initial consonants stay on the first syllable."""
+    if not phones:
+        return []
+    vowels = [i for i, tok in enumerate(phones) if phone_base(tok) in VOWELS]
+    if not vowels:
+        return [phones]
+    cuts = [0]
+    for left, right in zip(vowels, vowels[1:]):
+        onset = longest_legal_onset(phones[left + 1:right])
+        cuts.append(right - onset)
+    cuts.append(len(phones))
+    return [phones[cuts[i]:cuts[i + 1]] for i in range(len(cuts) - 1)]
+
+
 def ipa_of(arp: str) -> tuple[str, list[str], int]:
-    words = split_words(arp)
+    # Author dots are not trusted: illegal onsets like /ðd/ and /ndl/ came
+    # from splitting before a consonant that cannot start an English syllable.
+    words = []
+    for dotted in split_words(arp):
+        flat = [tok for syl in dotted for tok in syl]
+        words.append(resyllabify(flat))
     word_strs = []
     syl_ipas = []
     flat_syllables = []

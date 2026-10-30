@@ -8,7 +8,7 @@
   "minutes": 12,
   "hero": "assets/art/lessons/t2.webp",
   "cast": [
-    "kai"
+    "sam"
   ],
   "lemmas": [
     "bin-noun",
@@ -32,8 +32,8 @@
   "dialogue": [
     {
       "id": "t2-l1",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "sam",
+      "speakerLabel": "Sam",
       "text": "Boarding pass, please, and please have your passport ready.",
       "glossYue": "登機證唔該，護照都預備好。",
       "audio": "assets/audio/lines/t2-l1.mp3",
@@ -54,8 +54,8 @@
     },
     {
       "id": "t2-l3",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "sam",
+      "speakerLabel": "Sam",
       "text": "Please put your liquids in the tray, and take the laptop out.",
       "glossYue": "唔該將液體放喺個盤度，電腦都攞出嚟。",
       "audio": "assets/audio/lines/t2-l3.mp3",
@@ -76,8 +76,8 @@
     },
     {
       "id": "t2-l5",
-      "speaker": "kai",
-      "speakerLabel": "Kai",
+      "speaker": "sam",
+      "speakerLabel": "Sam",
       "text": "Straight ahead. Your gate is on the left after the shops.",
       "glossYue": "直行就得。你個閘口喺左邊，過咗啲舖頭。",
       "audio": "assets/audio/lines/t2-l5.mp3",
@@ -171,7 +171,7 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "Kai 話 You're all set. 你想問閘口點行。",
+      "promptYue": "Sam 話 You're all set. 你想問閘口點行。",
       "choices": [
         "Which way to the gate?",
         "I'd like the chicken, please.",
@@ -197,11 +197,11 @@
   ],
   "roleplay": {
     "you": "ling",
-    "intro": "你過緊安檢。Kai 講完一句，你再答。唔使急。",
+    "intro": "你過緊安檢。Sam 講完一句，你再答。唔使急。",
     "turns": [
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "Sam",
+        "partnerId": "sam",
         "line": "Boarding pass, please.",
         "audio": "assets/audio/lines/t2-l1.mp3",
         "audioSlow": "assets/audio/lines/t2-l1-slow.mp3",
@@ -213,8 +213,8 @@
         "modelSlow": "assets/audio/lines/t2-l2-slow.mp3"
       },
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "Sam",
+        "partnerId": "sam",
         "line": "Please put your liquids in the tray.",
         "audio": "assets/audio/lines/t2-l3.mp3",
         "audioSlow": "assets/audio/lines/t2-l3-slow.mp3",
@@ -226,8 +226,8 @@
         "modelSlow": "assets/audio/lines/t2-m1-slow.mp3"
       },
       {
-        "partner": "Kai",
-        "partnerId": "kai",
+        "partner": "Sam",
+        "partnerId": "sam",
         "line": "You're all set.",
         "audio": "assets/audio/lines/t2-l6.mp3",
         "audioSlow": "assets/audio/lines/t2-l6-slow.mp3",
