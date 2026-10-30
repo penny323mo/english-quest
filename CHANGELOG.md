@@ -1,5 +1,14 @@
 # Changelog — English Quest
 
+## Round 19 fixes
+- J4 金、銀、鑽石、玉 (A2), J5 尺寸同試戴 (A2), and J6 價錢同折扣 (A2/B1) are full 12-beat lessons. J3 opens J4, then J5, then J6, then T1. J7 收尾同道別, J8 售後同保養, J9 投訴同退換, T3–T5, and R3–R5 stay upcoming (nine soon teasers). The path end says 呢輪十四課.
+- resize is not in CMUdict, so this round teaches adjust instead and does not invent a pronunciation. comfortable is in CMUdict and is included (`/ˈkʌm.fɚ.tə.bəl/`).
+- Path nodes show A1 / A2 / B1 chips (including A1/A2 and A2/B1), wind left and right, and mark the current lesson with a gold pulse. Done, open, locked, and soon stay distinct. Feedback on a quiz choice is immediate: correct `#2F9E44`, wrong `#E85D4C`. Lesson complete shows a short calm celebration with XP and streak. There is no hearts lockout and no `#58CC02`.
+- 生字 is on the path and on 重溫. The jewellery deck covers J1–J6 content words. A card has IPA and audio, a Cantonese gloss, usage notes, collocations, register, pitfalls, and at least two example sentences. 更多 opens the rest, related words, and a short dialogue when one exists. Due words come first through the existing FSRS store. Listen-choose and meaning-choose grade the card. 跟讀 and 填空 stay disabled for the next round. Each deck shows a progress percent and a due count.
+- New clips only. Lead is about 180 ms and the trail is about 200 ms. certified and perfect cards still show the CMU vowel ɝ; the Piper clips force ɜ because this voice has no ɝ and was dropping the vowel. platinum, natural, karat, diamond, authentic, cost, expensive, treated, and offer are forced to the IPA on the card. The just-looking pitfall no longer quotes the stiff line 我只係睇吓.
+- Hooks are new 900×1200 Harbor Glow scenes: a materials tray, a sizing mandrel with a mirror, and a gift box with a folder. No readable prices.
+- The opening screen loads before the lesson bank. The service worker register script is deferred so it does not block the first paint.
+
 ## Round 18 fixes
 - Round 18 found no critical, major, or minor defects. The round 16 items stay closed: hour, with, and shoe are full sentences, the short-example test is in place, the R2 recap eyebrow is on screen, minute is 等陣。, and the aisle seat is 走廊位. T2 安檢同方向 and the speak-beat record compare stay as shipped in round 17.
 - Tests stayed 13/13. The live review at 390px found no overflow on the path, the locked T2 screen, the T2 lesson, R2, the checked cards, settings, or attributions.

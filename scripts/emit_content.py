@@ -1033,6 +1033,8 @@ def build_items() -> None:
     add("good-night-phrase", "good night", "phrase", "farewell-night", "G UH1 D | N AY1 T", ["good", "night"],
         "晚安", "晚安", "maan5 on1", ["good night"],
         "Good night.", "晚安。", phrase=True)
+    from round19_content import add_items
+    add_items(add)
 
 
 def verify(cmu: dict[str, list[str]]) -> None:
@@ -1965,7 +1967,7 @@ def build_lessons() -> list[dict]:
                 ],
                 "drill": ["this-det", "these-det", "pair-noun", "pearl-noun", "bracelet-noun", "earring-noun"],
             },
-            "next": "T1",
+            "next": "J4",
         },
         {
             "id": "T1",
@@ -2195,7 +2197,15 @@ def build_lessons() -> list[dict]:
     ]
     # attach extra lines onto a side channel via the first lesson? Renderer collects all lessons' dialogue
     # plus this list stored on path meta. We'll return extras separately.
-    return lessons, extras
+    from round19_content import lesson_pack
+    added, more = lesson_pack()
+    built = []
+    for lesson in lessons:
+        built.append(lesson)
+        if lesson["id"] == "J3":
+            built.extend(added)
+    extras.extend(more)
+    return built, extras
 
 
 PATH = {
@@ -2219,10 +2229,12 @@ PATH = {
                 {"id": "J1"},
                 {"id": "J2"},
                 {"id": "J3"},
-                {"id": "J4", "title": "金、銀、鑽石、玉", "soon": True},
-                {"id": "J5", "title": "尺寸同試戴", "soon": True},
-                {"id": "J6", "title": "價錢同付款", "soon": True},
+                {"id": "J4"},
+                {"id": "J5"},
+                {"id": "J6"},
                 {"id": "J7", "title": "收尾同道別", "soon": True},
+                {"id": "J8", "title": "售後同保養", "soon": True},
+                {"id": "J9", "title": "投訴同退換", "soon": True},
             ],
         },
         {
@@ -2277,6 +2289,8 @@ def main() -> None:
         for q in lesson["quiz"]:
             if "lemma" in q and q["lemma"] not in ids:
                 raise SystemExit(f"quiz {q['lemma']}")
+    from round19_content import apply_round
+    decks = apply_round(ITEMS, lessons, PATH, FLAGS)
     # drop internal-only fields from public lexicon
     public = []
     for item in ITEMS:
@@ -2313,6 +2327,7 @@ def main() -> None:
         manifest_lines.append(row)
     (OUT / "lines.json").write_text(json.dumps(manifest_lines, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (OUT / "path.json").write_text(json.dumps(PATH, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (OUT / "decks.json").write_text(json.dumps(decks, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (REVIEW / "flags.json").write_text(
         json.dumps(
             {

@@ -81,6 +81,7 @@ export default defineConfig({
     materializeAssets(),
     VitePWA({
       registerType: "autoUpdate",
+      injectRegister: "script-defer",
       includeAssets: ["favicon.svg", "icons/apple-touch-icon.png", "icons/icon-192.png"],
       manifest: {
         name: "English Quest 情景英文",

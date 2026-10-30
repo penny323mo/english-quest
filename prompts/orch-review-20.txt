@@ -1,0 +1,12 @@
+You are a strict senior code reviewer for English Quest. cd /workspace/sidequest/english-quest.
+Round 20 review at 390px (reviews fix-19 output: J4–J6 + CEFR path + 生字 slice). Do NOT modify project files.
+Read CURRICULUM.md, DUOLINGO-REF.md, SPEC.md, ART-STYLE.md (note: full bright redesign is queued for fix-20 — do NOT fail this review solely for still-dark chrome).
+Verify: ≥3 new lessons (J4,J5,J6) end-to-end; CEFR chips if claimed; 生字 hub jewellery deck not broken; no Duo IP; tests; no 390 overflow; gold bar (IPA/audio/Cantonese/examples).
+Write reviews/orch-r20-grok.md first line VERDICT: SHIP or NOT READY.
+SHIP forbidden if <3 new lessons shipped this round OR CRITICAL/MAJOR open OR horizontal overflow OR lexicon spot-check fails.
+Local reviews/ is gitignored — do not force-add.
+WHEN DONE create /workspace/sidequest/english-quest/.orch/review-20.done with DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/review-20.done
+
+
+DIFFICULTY PROGRESSION (Penny): audit/keep the Path strictly easy->hard (vocab load, sentence length, grammar, less Cantonese scaffolding). No difficulty ups-and-downs between consecutive lessons; no grammar used before taught. Any jump/dip = open item, blocks SHIP. Slot new lessons at the right level.

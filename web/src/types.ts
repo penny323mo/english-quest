@@ -50,6 +50,12 @@ export type LexItem = {
   sources: string[];
   verified_at: string;
   status: string;
+  register?: string;
+  usageNotes?: string;
+  pitfallsYue?: string;
+  related?: string[];
+  examples?: { en: string; yue: string; audio: string; audioSlow: string }[];
+  miniDialogue?: { en: string; yue: string }[];
 };
 
 export type Line = {
@@ -139,6 +145,7 @@ export type Lesson = {
     drill: string[];
   };
   next: string | null;
+  cefr?: string;
 };
 
 export type PathFile = {
@@ -146,7 +153,7 @@ export type PathFile = {
     id: string;
     title: string;
     blurb: string;
-    lessons: { id: string; title?: string; soon?: boolean }[];
+    lessons: { id: string; title?: string; soon?: boolean; cefr?: string }[];
   }[];
 };
 
@@ -159,4 +166,9 @@ export type Route =
   | { name: "word"; id: string }
   | { name: "profile" }
   | { name: "attributions" }
-  | { name: "settings" };
+  | { name: "settings" }
+  | { name: "vocab"; deckId?: string; quiz?: boolean };
+
+export type DeckFile = {
+  decks: { id: string; titleYue: string; level: string; lemmas: string[] }[];
+};

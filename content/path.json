@@ -6,16 +6,20 @@
       "blurb": "氣息、打招呼、數字、禮貌。",
       "lessons": [
         {
-          "id": "F1"
+          "id": "F1",
+          "cefr": "A1"
         },
         {
-          "id": "F2"
+          "id": "F2",
+          "cefr": "A1"
         },
         {
-          "id": "F3"
+          "id": "F3",
+          "cefr": "A1"
         },
         {
-          "id": "F4"
+          "id": "F4",
+          "cefr": "A1"
         }
       ]
     },
@@ -25,33 +29,46 @@
       "blurb": "明日返工用得着。",
       "lessons": [
         {
-          "id": "J1"
+          "id": "J1",
+          "cefr": "A1"
         },
         {
-          "id": "J2"
+          "id": "J2",
+          "cefr": "A1/A2"
         },
         {
-          "id": "J3"
+          "id": "J3",
+          "cefr": "A2"
         },
         {
           "id": "J4",
-          "title": "金、銀、鑽石、玉",
-          "soon": true
+          "cefr": "A2"
         },
         {
           "id": "J5",
-          "title": "尺寸同試戴",
-          "soon": true
+          "cefr": "A2"
         },
         {
           "id": "J6",
-          "title": "價錢同付款",
-          "soon": true
+          "cefr": "A2/B1"
         },
         {
           "id": "J7",
           "title": "收尾同道別",
-          "soon": true
+          "soon": true,
+          "cefr": "A2"
+        },
+        {
+          "id": "J8",
+          "title": "售後同保養",
+          "soon": true,
+          "cefr": "A2"
+        },
+        {
+          "id": "J9",
+          "title": "投訴同退換",
+          "soon": true,
+          "cefr": "B1"
         }
       ]
     },
@@ -61,25 +78,30 @@
       "blurb": "機場先。",
       "lessons": [
         {
-          "id": "T1"
+          "id": "T1",
+          "cefr": "A1/A2"
         },
         {
-          "id": "T2"
+          "id": "T2",
+          "cefr": "A2"
         },
         {
           "id": "T3",
           "title": "酒店入住",
-          "soon": true
+          "soon": true,
+          "cefr": "A2"
         },
         {
           "id": "T4",
           "title": "的士同問路",
-          "soon": true
+          "soon": true,
+          "cefr": "A2"
         },
         {
           "id": "T5",
           "title": "行失咗點求人",
-          "soon": true
+          "soon": true,
+          "cefr": "A2/B1"
         }
       ]
     },
@@ -89,25 +111,30 @@
       "blurb": "入座，然後落單。",
       "lessons": [
         {
-          "id": "R1"
+          "id": "R1",
+          "cefr": "A1"
         },
         {
-          "id": "R2"
+          "id": "R2",
+          "cefr": "A2"
         },
         {
           "id": "R3",
           "title": "過敏同特別要求",
-          "soon": true
+          "soon": true,
+          "cefr": "A2"
         },
         {
           "id": "R4",
           "title": "用餐期間",
-          "soon": true
+          "soon": true,
+          "cefr": "A2"
         },
         {
           "id": "R5",
           "title": "埋單同貼士",
-          "soon": true
+          "soon": true,
+          "cefr": "A2/B1"
         }
       ]
     }

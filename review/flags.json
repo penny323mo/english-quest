@@ -567,6 +567,144 @@
       "taughtIpa": "/sɪ.ˈkjʊɹ.ə.ti/",
       "resolvedBy": "round-17 lexicographer",
       "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "authentic-adj",
+      "lemma": "authentic",
+      "pos": "adj",
+      "cmudict": [
+        "AH0 TH EH1 N T IH0 K",
+        "AO0 TH EH1 N T IH0 K",
+        "AO0 TH EH1 N IH0 K",
+        "AH0 TH EH1 N IH0 K"
+      ],
+      "wiktionary": "not re-fetched this round",
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU has /ə/ and /ɔ/ onsets, and two forms drop the /t/.",
+      "resolution": "Teach the first CMU form /ə.ˈθɛn.tɪk/. The clip is forced so the onset is /ə/ and the consonant is /θ/.",
+      "resolved": true,
+      "taughtIpa": "/ə.ˈθɛn.tɪk/",
+      "resolvedBy": "round-19",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "platinum-noun",
+      "lemma": "platinum",
+      "pos": "noun",
+      "cmudict": [
+        "P L AE1 T N AH0 M",
+        "P L AE1 T AH0 N AH0 M"
+      ],
+      "wiktionary": "not re-fetched this round",
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU lists two syllables first and three syllables second.",
+      "resolution": "Teach the three-syllable form /ˈplæt.ə.nəm/ and force the clip. The two-syllable form stays a variant.",
+      "resolved": true,
+      "taughtIpa": "/ˈplæt.ə.nəm/",
+      "resolvedBy": "round-19",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "natural-adj",
+      "lemma": "natural",
+      "pos": "adj",
+      "cmudict": [
+        "N AE1 CH ER0 AH0 L",
+        "N AE1 CH R AH0 L"
+      ],
+      "wiktionary": "not re-fetched this round",
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU has three syllables and a two-syllable reduction.",
+      "resolution": "Teach three syllables /ˈnætʃ.ɚ.əl/. The clip is forced so an extra /ɹ/ is not inserted.",
+      "resolved": true,
+      "taughtIpa": "/ˈnætʃ.ɚ.əl/",
+      "resolvedBy": "round-19",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "discount-noun",
+      "lemma": "discount",
+      "pos": "noun",
+      "cmudict": [
+        "D IH0 S K AW1 N T",
+        "D IH1 S K AW0 N T"
+      ],
+      "wiktionary": "not re-fetched this round",
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU's first entry stresses the second syllable. The noun in this lesson stresses the first.",
+      "resolution": "Teach the noun /ˈdɪs.kaʊnt/. The verb stress stays a labelled variant.",
+      "resolved": true,
+      "taughtIpa": "/ˈdɪs.kaʊnt/",
+      "resolvedBy": "round-19",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "cost-noun",
+      "lemma": "cost",
+      "pos": "noun",
+      "cmudict": [
+        "K AA1 S T",
+        "K AO1 S T"
+      ],
+      "wiktionary": "not re-fetched this round",
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU has /ɑ/ and /ɔ/. Unforced Piper says /ɔ/.",
+      "resolution": "Teach the first CMU form /kɑst/ and force the clip.",
+      "resolved": true,
+      "taughtIpa": "/ˈkɑst/",
+      "resolvedBy": "round-19",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "perfect-adj",
+      "lemma": "perfect",
+      "pos": "adj",
+      "cmudict": [
+        "P ER0 F EH1 K T",
+        "P ER1 F IH2 K T"
+      ],
+      "wiktionary": "not re-fetched this round",
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU's first entry is the verb stress. The adjective stresses the first syllable.",
+      "resolution": "Teach the adjective /ˈpɝ.ˌfɪkt/ and force the clip. The verb form stays a variant.",
+      "resolved": true,
+      "taughtIpa": "/ˈpɝ.ˌfɪkt/",
+      "resolvedBy": "round-19",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "reasonable-adj",
+      "lemma": "reasonable",
+      "pos": "adj",
+      "cmudict": [
+        "R IY1 Z AH0 N AH0 B AH0 L",
+        "R IY1 Z N AH0 B AH0 L"
+      ],
+      "wiktionary": "not re-fetched this round",
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU has four syllables and a shorter form.",
+      "resolution": "Teach four syllables /ˈɹi.zə.nə.bəl/. The shorter form stays a variant.",
+      "resolved": true,
+      "taughtIpa": "/ˈɹi.zə.nə.bəl/",
+      "resolvedBy": "round-19",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "try-on-phrase",
+      "lemma": "try on",
+      "pos": "phrase",
+      "cmudict": [
+        "on: AA1 N",
+        "on: AO1 N"
+      ],
+      "wiktionary": "not re-fetched this round",
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU lists /ɑn/ first and /ɔn/ second. The unforced sentence uses /ɔn/.",
+      "resolution": "Teach /ɔn/ in try on so the card matches the sentence audio. /ɑn/ stays a variant.",
+      "resolved": true,
+      "taughtIpa": "/ˈtɹaɪ ˈɔn/",
+      "resolvedBy": "round-19",
+      "resolvedAt": "2026-10-30"
     }
   ]
 }

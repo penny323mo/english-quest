@@ -1,0 +1,319 @@
+{
+  "id": "J4",
+  "unit": "J",
+  "titleYue": "金、銀、鑽石、玉",
+  "titleEn": "Gold, silver, diamond, jade",
+  "canDoYue": "你能夠講金、鑽石同玉。",
+  "canDoEn": "Name gold, a diamond, and jade, and ask if it is authentic.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j4.webp",
+  "cast": [
+    "mei",
+    "tom"
+  ],
+  "cefr": "A2",
+  "lemmas": [
+    "gold-noun",
+    "silver-noun",
+    "white-gold-phrase",
+    "rose-gold-phrase",
+    "platinum-noun",
+    "diamond-noun",
+    "jade-noun",
+    "gemstone-noun",
+    "karat-noun",
+    "pure-adj",
+    "authentic-adj",
+    "certified-adj",
+    "natural-adj",
+    "treated-adj",
+    "sparkle-verb",
+    "setting-noun"
+  ],
+  "dialogue": [
+    {
+      "id": "j4-l1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "This gold is authentic.",
+      "glossYue": "呢件金係正貨。",
+      "audio": "assets/audio/lines/j4-l1.mp3",
+      "audioSlow": "assets/audio/lines/j4-l1-slow.mp3",
+      "say": "This gold is [[əθˈɛntɪk]]."
+    },
+    {
+      "id": "j4-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Is the diamond natural?",
+      "glossYue": "粒鑽石係咪天然？",
+      "audio": "assets/audio/lines/j4-l2.mp3",
+      "audioSlow": "assets/audio/lines/j4-l2-slow.mp3",
+      "say": "Is the [[dˈaɪmənd]] [[nˈætʃɚəl]]?"
+    },
+    {
+      "id": "j4-l3",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Yes. It is certified.",
+      "glossYue": "係。有證書。",
+      "audio": "assets/audio/lines/j4-l3.mp3",
+      "audioSlow": "assets/audio/lines/j4-l3-slow.mp3",
+      "say": "Yes. It is [[sˈɜtəfˌaɪd]]."
+    },
+    {
+      "id": "j4-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I like this jade.",
+      "glossYue": "我鍾意呢塊玉。",
+      "audio": "assets/audio/lines/j4-l4.mp3",
+      "audioSlow": "assets/audio/lines/j4-l4-slow.mp3",
+      "say": "I like this jade."
+    },
+    {
+      "id": "j4-l5",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "This setting is eighteen karat gold.",
+      "glossYue": "呢個鑲托係十八開金。",
+      "audio": "assets/audio/lines/j4-l5.mp3",
+      "audioSlow": "assets/audio/lines/j4-l5-slow.mp3",
+      "say": "This setting is eighteen [[kˈɛɹət]] gold."
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "This gold is authentic. 係問緊定係講緊？",
+      "choices": [
+        "講呢件金係正貨",
+        "講呢件係鉑金",
+        "講玉可以治病"
+      ],
+      "answer": 0,
+      "explain": "authentic 係正貨。玉只係材料，唔好講醫療功效。"
+    },
+    {
+      "prompt": "Is the diamond natural? 客人想知？",
+      "choices": [
+        "粒鑽石係咪天然",
+        "個碼緊唔緊",
+        "總數幾多"
+      ],
+      "answer": 0,
+      "explain": "natural 係天然。處理過要另外講。"
+    },
+    {
+      "prompt": "eighteen karat 係講？",
+      "choices": [
+        "金嘅開數",
+        "鑽石幾多克拉重量",
+        "稅率"
+      ],
+      "answer": 0,
+      "explain": "karat 呢度係金嘅開。純金先至接近二十四開。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "This ___ is authentic.",
+      "example": "This gold is authentic.",
+      "glossYue": "呢件⋯⋯係正貨。",
+      "answer": "gold",
+      "choices": [
+        "gold",
+        "passport",
+        "menu"
+      ]
+    },
+    {
+      "pattern": "Is the ___ natural?",
+      "example": "Is the diamond natural?",
+      "glossYue": "⋯⋯係咪天然？",
+      "answer": "diamond",
+      "choices": [
+        "diamond",
+        "gate",
+        "seat"
+      ]
+    },
+    {
+      "pattern": "It is ___.",
+      "example": "It is certified.",
+      "glossYue": "有證書。",
+      "answer": "certified",
+      "choices": [
+        "certified",
+        "boarding",
+        "looking"
+      ]
+    },
+    {
+      "pattern": "This setting is eighteen ___ gold.",
+      "example": "This setting is eighteen karat gold.",
+      "glossYue": "呢個鑲托係十八開金。",
+      "answer": "karat",
+      "choices": [
+        "karat",
+        "percent",
+        "finger"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "j4-l1",
+    "hint": "This gold is authentic."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "Tom 問 Is this real gold? 你點講？",
+      "choices": [
+        "This gold is authentic.",
+        "I'm just looking, thank you.",
+        "Go straight ahead."
+      ],
+      "answer": 0,
+      "explain": "先講材料，再講係正貨。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "This",
+        "gold",
+        "is",
+        "authentic"
+      ],
+      "answer": [
+        "This",
+        "gold",
+        "is",
+        "authentic"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "mei",
+    "intro": "Tom 企喺展示盤前面。等佢問完先答。玉只講材料，唔好講醫療功效。",
+    "turns": [
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Is this real gold?",
+        "audio": "assets/audio/lines/j4-l6.mp3",
+        "audioSlow": "assets/audio/lines/j4-l6-slow.mp3",
+        "expect": "This gold is authentic.",
+        "keywords": [
+          "authentic"
+        ],
+        "modelAudio": "assets/audio/lines/j4-l1.mp3",
+        "modelSlow": "assets/audio/lines/j4-l1-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Is the diamond natural?",
+        "audio": "assets/audio/lines/j4-l2.mp3",
+        "audioSlow": "assets/audio/lines/j4-l2-slow.mp3",
+        "expect": "Yes. It is certified.",
+        "keywords": [
+          "certified"
+        ],
+        "modelAudio": "assets/audio/lines/j4-l3.mp3",
+        "modelSlow": "assets/audio/lines/j4-l3-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "I like this jade.",
+        "audio": "assets/audio/lines/j4-l4.mp3",
+        "audioSlow": "assets/audio/lines/j4-l4-slow.mp3",
+        "expect": "This setting is eighteen karat gold.",
+        "keywords": [
+          "karat"
+        ],
+        "modelAudio": "assets/audio/lines/j4-l5.mp3",
+        "modelSlow": "assets/audio/lines/j4-l5-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "authentic-adj",
+      "choices": [
+        "authentic",
+        "natural",
+        "treated"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "diamond-noun",
+      "choices": [
+        "diamond",
+        "jade",
+        "gold"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "gold",
+      "choices": [
+        "金",
+        "稅",
+        "碼"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "jade",
+      "choices": [
+        "玉",
+        "鏡",
+        "折扣"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個中間有 /θ/？",
+      "choices": [
+        "authentic",
+        "setting",
+        "pure"
+      ],
+      "answer": 0,
+      "explain": "authentic 有 /θ/。setting 開頭係 /s/。"
+    }
+  ],
+  "sound": {
+    "ipa": "/θ/",
+    "title": "正貨中間嗰下",
+    "note": "authentic 中間係 /θ/。舌尖伸喺上下牙中間，輕輕吹氣，唔好讀成 /s/ 或者 /t/。開頭係 ə，唔好讀成 ɔ。白金唔係鉑金。玉係材料同工藝，唔好講醫療功效。",
+    "pairs": [
+      {
+        "a": "authentic-adj",
+        "b": "setting-noun"
+      },
+      {
+        "a": "pure-adj",
+        "b": "treated-adj"
+      }
+    ],
+    "drill": [
+      "authentic-adj",
+      "natural-adj",
+      "certified-adj",
+      "gold-noun",
+      "jade-noun"
+    ]
+  },
+  "next": "J5"
+}

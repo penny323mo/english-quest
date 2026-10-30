@@ -1,0 +1,51 @@
+You are the coder for English Quest (grok 4.7). cd /workspace/sidequest/english-quest.
+Phase 4 — curriculum expansion (unlimited loop). Round 19+. Supervisor: Grok Duet. Penny (2026-10-30):「課程太少太低級」+ unlimited upgrade + 參考 Duolingo + 生字回顧學習 mode.
+
+Read in this order:
+1) CURRICULUM.md  (45-lesson A1→B2 map + WORD-REVIEW spec) — AUTHORITATIVE for what to ship
+2) DUOLINGO-REF.md (adapt Path/feedback/celebration/practice hub; NO Duo IP/owl/brand)
+3) SPEC.md, DECISIONS.md
+4) review/loop-r16/coder-audit.md (keep all closed; no regressions)
+
+CRITICAL RULE: you may NOT finish with "no defects" or only a CHANGELOG commit. This round MUST produce a real app-code diff under content/, web/, tests/, assets/, and/or scripts/. Empty product diffs stop the whole loop.
+
+EVERY ROUND FROM NOW (incl. this one) MUST:
+- Ship **≥3 brand-new lessons** from CURRICULUM.md build order (not already in content/lessons/).
+- Advance difficulty (A2/B1 jewellery & travel first) + show CEFR on Path.
+- Keep 12-beat gold bar (R2/J3/T2 quality): IPA/CMUdict, Kokoro pad ~180/200ms, natural HK Cantonese Traditional, EN examples >2 words, tests green, LH Perf ≥98, 390px no overflow.
+- No paid services. No secrets printed. Do not touch nightly herbalist panes. Do not force-add gitignored reports. Do not git rm LICENSE/app code.
+
+## This round (19) — do ALL of the following
+
+### A) Level system on Path (Duolingo-inspired, our brand)
+- Visible A1 / A2 / B1 / B2 tracks or CEFR chips on nodes.
+- Winding/unit Path chrome brightened per DUOLINGO-REF.md (chunky nodes, current pulse, locked/done/soon). Adapt not copy.
+- Wire path.json for new lessons + soon teasers for the next unshipped IDs.
+- Instant green/red quiz feedback + short celebration on lesson complete (XP/streak) if not already polished — keep calm, no hearts lockout.
+
+### B) Ship these 3 lessons first (CURRICULUM priority)
+1. **J4** — Gold, silver, diamond, jade (A2)
+2. **J5** — Sizing and try-on (A2)
+3. **J6** — Prices and discounts (A2/B1)
+Each: full 12-beat JSON + lexicon entries + audio for new/changed says only + distinct Harbor Glow hook WebP 900×1200 with w/h + unlock after prerequisites (J4 after J3, etc.) + tests.
+
+### C) 生字回顧學習 — Vocabulary Review mode (slice 1)
+Per CURRICULUM.md WORD-REVIEW:
+- New hub entry (Path/Practice):「生字」 
+- At least **Jewellery** deck from J1–J6 lemmas (include new J4–J6).
+- Word card: IPA+audio, glossYue, usage notes (POS, collocations, patterns, register, Canto pitfalls), 2–3 example sentences w/ audio+Yue, expandable「更多」(more examples / related / mini-dialogue).
+- SRS: due words first via existing FSRS/IndexedDB.
+- At least 2 quiz types working this round (listen-choose + meaning-choose); stub Speak/fill-blank OK if wired for next round.
+- Per-deck progress % + due count.
+- Extend lexicon.json fields as needed; tests for IPA/audio/≥2 examples / short-example rule / Cantonese sweep.
+
+### D) Residual
+- No IPA/audio regressions; don't re-render whole audio bank.
+- Append '## Round 19 fixes' to CHANGELOG.md listing each concrete change.
+- Prefer reading CURRICULUM.md / DUOLINGO-REF.md rather than inventing random lessons.
+
+At the END: git add -A (respect .gitignore), commit e.g. "Ship round 19: J4–J6, CEFR path, 生字 review hub", push origin main (ff-only, never --force).
+Do NOT edit reviews/ or prompts/ (except you may read them). Do not touch LICENSE.
+
+WHEN COMPLETELY FINISHED, as your very last action, create the file /workspace/sidequest/english-quest/.orch/fix-19.done containing the word DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-19.done

@@ -31,6 +31,7 @@ def clips() -> list[dict]:
     lex = json.loads(LEX.read_text(encoding="utf-8"))
     lines = json.loads(LINES.read_text(encoding="utf-8"))
     out = []
+    seen = set()
     for item in lex["items"]:
         out.append(
             {
@@ -39,6 +40,13 @@ def clips() -> list[dict]:
                 "sha_id": item["id"],
             }
         )
+        seen.add(item["audio"])
+        for example in item.get("examples") or []:
+            rel = example.get("audio")
+            if not rel or rel in seen:
+                continue
+            seen.add(rel)
+            out.append({"rel": rel, "say": example.get("say") or example["en"], "sha_id": None})
     for line in lines:
         out.append({"rel": line["audio"], "say": line["say"], "sha_id": None})
     return out

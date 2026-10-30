@@ -3,9 +3,10 @@
 last_reported_round: 16
 last_audited_round: 16
 
-phase: 3
+phase: 4
 phase2_rounds: 11-16
-phase3_rounds: 17-26
+phase3_rounds: 17-18
+phase4_rounds: 19+ (unlimited until CURRICULUM.md complete)
 phase2_rules: |
   - Phase 2b (13–15) narrow order: (a) Cantonese sweep, (b) distinct F2/F3/F4 hooks, (c) Pedagogy ≥9
   - Authoritative audit: review/loop-r13/coder-audit.md
@@ -16,6 +17,14 @@ phase2_rules: |
   - Do NOT push new REPORT.md / reviews/* / review/loop-* / screenshots/orch (reports removed from public repo in 444e31a)
   - Report to Grok Duet only (not Penny)
   - No paid services, no GitHub deletes, no credential use beyond existing git
+  - Phase 4 (Penny 2026-10-30): unlimited loop; CURRICULUM.md is content authority (45 lessons A1→B2)
+  - EVERY future fix round MUST ship ≥3 new lessons from CURRICULUM.md build order + difficulty progression (CEFR on Path)
+  - WORD-REVIEW 生字回顧 mode required (hub + SRS + rich word cards + quiz types) — see CURRICULUM.md WORD-REVIEW
+  - DUOLINGO-REF.md: adapt Path/feedback/celebration/practice hub; never copy Duo IP/owl/brand; no hearts lockout
+  - EMPTY_DIFF still stops a batch; parent/watchdog relaunches with next fix prompt (not a reason to invent "no defects")
+  - Prefer A2/B1 jewellery + travel first (J4+ / T3+)
+  - Penny APPROVED 2026-10-30 ~15:58 bright cartoon mockups (review/mockup-v1 + ART-STYLE.md 小燈) — implement round 20+
+  - SFX required: correct/wrong/complete/XP|level-up/streak/tap; Web Audio or free/CC0; Settings mute; iOS unlock; no overlap with TTS
 
 - 2026-10-30 00:33: build (night-1, commit 8eacd11) pushed to main, live 200; review-1 in progress in eq-review-pane. Round 1 not yet finished, nothing reported.
 - 2026-10-30 01:02: fix-1 in progress in grokcoder-pane (sent 00:47, actively committing/pushing). Orchestrator pid 554632 alive, live 200. Round 1 not finished, nothing reported.
@@ -34,3 +43,16 @@ phase2_rules: |
 - 2026-10-30 04:41: FINAL round 16 launched (Duet-approved). Prompt prompts/orch-fix-16.txt sent to grokcoder-pane. Human coder is sole SHIP gate. Nightly panes untouched. Awaiting app-code push + live audit.
 
 - 2026-10-30 04:58: FINAL round 16 SHIP (Duet-approved). Commit 762f53c on origin/main, live 200 with bundle index-CJUKKqvP.js. All 6 items closed (hour/with/shoe sentences, ≤2-word EN test, R2 recap eyebrow, 等陣, 走廊位). Coder live audit review/loop-r16 (local only): 10/10 lessons walked at 390px, no overflow/errors; LH mobile 98/100/100/100; 20/20 lexicon audio 200 + lead 0.18–0.20s. Scores Art9 UI9 Lex9 Pron9 Ped9 Speak9 SRS9 Flow9 Perf10 Audio9. Orchestrator not relaunched (coder-only + human SHIP). Routine app-99-99 still paused. Nightly panes untouched. Report to Grok Duet.
+
+- 2026-10-30 15:25: Phase 4 curriculum injection (Penny: 課程太少太低級 + unlimited + Duolingo ref + 生字回顧). Wrote CURRICULUM.md (45 lessons F/J/R/T/W/D across A1–B2 + WORD-REVIEW spec), DUOLINGO-REF.md (public-web research; Mobbin paid-blocked). Queued prompts/orch-fix-19.txt (J4+J5+J6, CEFR Path, 生字 hub slice) + fix-17b pointer + fix/review stubs 20–30. Loop had STOPPED on EMPTY_DIFF after fix-18 (T2 already shipped in 2331f28). Relaunching orchestrator at fix-19 with high rounds cap. Nightly panes untouched. Report to Grok Duet.
+
+- 2026-10-30 15:38: fix-19 in progress in grokcoder-pane (~10 min, J4–J6 hook art on disk, wiring lessons/CEFR Path/生字 hub; context compacted once). Orchestrator pid 1213336 alive (rounds 999), live 200 (= 2331f28 round 17). No new round finished since relaunch; round 17 audit folded into round-19 audit. No fix prompt includes the light/cartoon chrome redesign (ART-STYLE.md) — stays gated on Penny approving a mockup. Nothing reported.
+
+- 2026-10-30 16:00: Design APPROVED by Penny (~15:58): bright cartoon UI mockups review/mockup-v1/01–05 + ART-STYLE.md (mascot 小燈) + DUOLINGO-REF.md; also requested 音效 (correct/wrong/complete/XP/streak/tap, mute in Settings, iOS unlock, no TTS overlap). Round 19 still in progress in grokcoder-pane (J4–J6 + CEFR + 生字 slice; j4/j5/j6.json on disk, Piper render running) — let it finish. Injected full redesign+SFX+J7/R3/T3 into prompts/orch-fix-20.txt (next coder round after review-20). Updated orch-review-20 (gate J4–J6; don't fail for still-dark chrome) + orch-review-21 (verify redesign+SFX). ART-STYLE.md marked approved + §7 SFX. Orchestrator pid 1213336 alive phase=fix-19 rounds=999. Nightly panes untouched. No paid services.
+
+- 2026-10-30 16:01: fix-19 still in progress in grokcoder-pane (~33 min, +1736/-73 across 11 files, J4–J6 + CEFR Path + jewellery vocab deck, now tracing choiceQuestion). Orchestrator pid 1213336 alive, heartbeat fresh, live 200 (= round 17). No new round finished; nothing reported.
+
+## Difficulty progression rule (Penny 2026-10-30 16:02)
+Every round's review MUST audit difficulty progression along the Path: lessons ordered A1 -> B2 with monotonic increase in vocab load, sentence length, grammar complexity and decreasing Cantonese scaffolding; no lesson harder than the next one in path order, no new grammar used before it's taught. Reviewer flags any jump/dip as an open audit item (blocks SHIP); new lessons must be slotted at the correct level position, reordering the path if needed.
+
+- 2026-10-30 16:30: fix-19 still in progress in grokcoder-pane (~1h, attempt 2 queued after timeout; +3770/-321 across 33 files; Cantonese test fixed, 390px walk done, now splitting bundle because LH Perf 0.97 < 0.98). Orchestrator pid alive, heartbeat fresh, live 200 (= round 17, 2331f28). No new round finished; nothing reported.

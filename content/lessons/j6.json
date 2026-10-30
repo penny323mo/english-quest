@@ -1,0 +1,323 @@
+{
+  "id": "J6",
+  "unit": "J",
+  "titleYue": "價錢同折扣",
+  "titleEn": "Prices and discounts",
+  "canDoYue": "你能夠報價同講折扣。",
+  "canDoEn": "Say the cost, a percent off, and whether tax is included.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j6.webp",
+  "cast": [
+    "mei",
+    "tom"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "price-noun",
+    "cost-noun",
+    "discount-noun",
+    "percent-noun",
+    "off-adv",
+    "special-adj",
+    "offer-noun",
+    "include-verb",
+    "tax-noun",
+    "total-noun",
+    "budget-noun",
+    "expensive-adj",
+    "reasonable-adj",
+    "worth-adj",
+    "deal-noun",
+    "sale-noun"
+  ],
+  "dialogue": [
+    {
+      "id": "j6-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "How much does this cost?",
+      "glossYue": "呢件幾多錢？",
+      "audio": "assets/audio/lines/j6-l1.mp3",
+      "audioSlow": "assets/audio/lines/j6-l1-slow.mp3",
+      "say": "How much does this [[kˈɑst]]?"
+    },
+    {
+      "id": "j6-l2",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "This piece is on sale today.",
+      "glossYue": "呢件今日特價。",
+      "audio": "assets/audio/lines/j6-l2.mp3",
+      "audioSlow": "assets/audio/lines/j6-l2-slow.mp3",
+      "say": "This piece is on sale today."
+    },
+    {
+      "id": "j6-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Is there a discount?",
+      "glossYue": "有冇折扣？",
+      "audio": "assets/audio/lines/j6-l3.mp3",
+      "audioSlow": "assets/audio/lines/j6-l3-slow.mp3",
+      "say": "Is there a discount?"
+    },
+    {
+      "id": "j6-l4",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Ten percent off, and tax is included.",
+      "glossYue": "減一成，稅已經包咗。",
+      "audio": "assets/audio/lines/j6-l4.mp3",
+      "audioSlow": "assets/audio/lines/j6-l4-slow.mp3",
+      "say": "Ten percent off, and tax is included."
+    },
+    {
+      "id": "j6-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "That is within my budget.",
+      "glossYue": "呢個喺我預算之內。",
+      "audio": "assets/audio/lines/j6-l5.mp3",
+      "audioSlow": "assets/audio/lines/j6-l5-slow.mp3",
+      "say": "That is within my budget."
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "How much does this cost? 係問？",
+      "choices": [
+        "呢件幾多錢",
+        "個碼緊唔緊",
+        "粒鑽石係咪天然"
+      ],
+      "answer": 0,
+      "explain": "cost 讀 /kɑst/。可以再講特價。"
+    },
+    {
+      "prompt": "Ten percent off, and tax is included. 即係？",
+      "choices": [
+        "減一成，稅包咗",
+        "加一成稅",
+        "十八開"
+      ],
+      "answer": 0,
+      "explain": "off 係減。included 係包咗喺總數。"
+    },
+    {
+      "prompt": "within my budget 係？",
+      "choices": [
+        "喺我預算之內",
+        "太貴唔買",
+        "要改碼"
+      ],
+      "answer": 0,
+      "explain": "預算係客人自己嘅上限。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "How much does this ___?",
+      "example": "How much does this cost?",
+      "glossYue": "呢件幾多⋯⋯？",
+      "answer": "cost",
+      "choices": [
+        "cost",
+        "finger",
+        "gate"
+      ]
+    },
+    {
+      "pattern": "This piece is on ___ today.",
+      "example": "This piece is on sale today.",
+      "glossYue": "呢件今日⋯⋯。",
+      "answer": "sale",
+      "choices": [
+        "sale",
+        "mirror",
+        "aisle"
+      ]
+    },
+    {
+      "pattern": "Ten percent ___.",
+      "example": "Ten percent off.",
+      "glossYue": "減一成。",
+      "answer": "off",
+      "choices": [
+        "off",
+        "on",
+        "in"
+      ]
+    },
+    {
+      "pattern": "That is within my ___.",
+      "example": "That is within my budget.",
+      "glossYue": "呢個喺我⋯⋯之內。",
+      "answer": "budget",
+      "choices": [
+        "budget",
+        "passport",
+        "bracelet"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "j6-l4",
+    "hint": "Ten percent off, and tax is included."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "Tom 問有冇折扣。你點講？",
+      "choices": [
+        "Ten percent off, and tax is included.",
+        "Look in the mirror.",
+        "A window seat, please."
+      ],
+      "answer": 0,
+      "explain": "講減幾多，再講稅包唔包。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "How",
+        "much",
+        "does",
+        "this",
+        "cost"
+      ],
+      "answer": [
+        "How",
+        "much",
+        "does",
+        "this",
+        "cost"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "mei",
+    "intro": "Tom 問價錢。等佢講完先答。可以講：It comes to the total。",
+    "turns": [
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "How much does this cost?",
+        "audio": "assets/audio/lines/j6-l1.mp3",
+        "audioSlow": "assets/audio/lines/j6-l1-slow.mp3",
+        "expect": "This piece is on sale today.",
+        "keywords": [
+          "sale"
+        ],
+        "modelAudio": "assets/audio/lines/j6-l2.mp3",
+        "modelSlow": "assets/audio/lines/j6-l2-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Is there a discount?",
+        "audio": "assets/audio/lines/j6-l3.mp3",
+        "audioSlow": "assets/audio/lines/j6-l3-slow.mp3",
+        "expect": "Ten percent off, and tax is included.",
+        "keywords": [
+          "percent",
+          "tax"
+        ],
+        "modelAudio": "assets/audio/lines/j6-l4.mp3",
+        "modelSlow": "assets/audio/lines/j6-l4-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "That is within my budget.",
+        "audio": "assets/audio/lines/j6-l5.mp3",
+        "audioSlow": "assets/audio/lines/j6-l5-slow.mp3",
+        "expect": "The total is a good deal.",
+        "keywords": [
+          "total",
+          "deal"
+        ],
+        "modelAudio": "assets/audio/lines/j6-m1.mp3",
+        "modelSlow": "assets/audio/lines/j6-m1-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "sale-noun",
+      "choices": [
+        "sale",
+        "tax",
+        "total"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "discount-noun",
+      "choices": [
+        "discount",
+        "deal",
+        "cost"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "discount",
+      "choices": [
+        "折扣",
+        "碼",
+        "玉"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "budget",
+      "choices": [
+        "預算",
+        "鑲托",
+        "鏡"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個尾音係 /l/？",
+      "choices": [
+        "sale",
+        "tax",
+        "cost"
+      ],
+      "answer": 0,
+      "explain": "sale 尾音係 /l/。discount 名詞重音喺第一節。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "特價尾音",
+    "note": "sale 尾音係 /l/。舌尖抵住上顎後面，氣由兩邊出。discount 名詞重音喺第一節 /ˈdɪs.kaʊnt/。cost 讀 /ˈkɑst/，唔好讀成 /kɔst/。",
+    "pairs": [
+      {
+        "a": "sale-noun",
+        "b": "tax-noun"
+      },
+      {
+        "a": "discount-noun",
+        "b": "cost-noun"
+      }
+    ],
+    "drill": [
+      "sale-noun",
+      "discount-noun",
+      "budget-noun",
+      "percent-noun",
+      "cost-noun"
+    ]
+  },
+  "next": "T1"
+}

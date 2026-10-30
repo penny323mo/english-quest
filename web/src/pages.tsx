@@ -1,7 +1,6 @@
 import { useMemo, useState } from "react";
 import { Rating, type Grade } from "ts-fsrs";
 import {
-  GOAL_LABEL,
   SHIPPED,
   asset,
   isLessonOpen,
@@ -10,110 +9,12 @@ import {
   lexicon,
   pathData,
 } from "./data";
+import { GOAL_LABEL, GoalPick } from "./goals";
 import { isDue } from "./fsrs";
 import { ArtImg } from "./art";
 import { learnerEyebrow } from "./labels";
 import { playAsset } from "./media";
-import { blankProfile, useStore } from "./store";
-import type { Goal, Level } from "./types";
-
-export function Onboarding() {
-  const existing = useStore((s) => s.profile);
-  const setProfile = useStore((s) => s.setProfile);
-  const [step, setStep] = useState(0);
-  const [name, setName] = useState(existing?.name || "");
-  const [goal, setGoal] = useState<Goal>(existing?.goal || "jewellery");
-  const [minutes, setMinutes] = useState<10 | 15 | 20>(existing?.minutes || 15);
-  const [level, setLevel] = useState<Level>(existing?.level || "new");
-
-  function finish() {
-    if (existing) {
-      useStore.getState().updateProfile({ name: name.trim() || "阿琳", goal, minutes, level });
-    } else {
-      setProfile(blankProfile({ name, goal, minutes, level }));
-    }
-    location.hash = "#/";
-  }
-
-  return (
-    <section className="screen plain stack">
-      <p className="eyebrow">English Quest</p>
-      <h1>情景英文</h1>
-      {step === 0 && (
-        <>
-          <p className="lede">你部機上記低個名就得。進度唔會上傳。</p>
-          <label className="stack">
-            <span>點稱呼你？</span>
-            <input className="field" value={name} placeholder="阿琳" maxLength={24} onChange={(e) => setName(e.target.value)} />
-          </label>
-          <button className="btn block" type="button" onClick={() => setStep(1)}>下一步</button>
-        </>
-      )}
-      {step === 1 && (
-        <>
-          <h2>你想先練邊樣？</h2>
-          <GoalPick value={goal} onChange={setGoal} />
-          <button className="btn block" type="button" onClick={() => setStep(2)}>下一步</button>
-        </>
-      )}
-      {step === 2 && (
-        <>
-          <h2>每日幾多分鐘？</h2>
-          <div className="stack">
-            {([10, 15, 20] as const).map((n) => (
-              <button key={n} className={minutes === n ? "opt on" : "opt"} type="button" onClick={() => setMinutes(n)}>
-                <strong>{n} 分鐘</strong>
-                <span>{n === 15 ? "啱阿琳返工前後" : n === 10 ? "赶時間都得" : "想練耐少少"}</span>
-              </button>
-            ))}
-          </div>
-          <button className="btn block" type="button" onClick={() => setStep(3)}>下一步</button>
-        </>
-      )}
-      {step === 3 && (
-        <>
-          <h2>而家英文幾熟？</h2>
-          <div className="stack">
-            <button className={level === "new" ? "opt on" : "opt"} type="button" onClick={() => setLevel("new")}>
-              <strong>識得 hello、thank you</strong>
-              <span>想開口又怕被人笑</span>
-            </button>
-            <button className={level === "some" ? "opt on" : "opt"} type="button" onClick={() => setLevel("some")}>
-              <strong>聽得多，講得少</strong>
-              <span>句子識，音未穩</span>
-            </button>
-            <button className={level === "work" ? "opt on" : "opt"} type="button" onClick={() => setLevel("work")}>
-              <strong>返工有用過</strong>
-              <span>想講得更穩、更有禮</span>
-            </button>
-          </div>
-          <button className="btn block" type="button" onClick={finish}>開始</button>
-        </>
-      )}
-      <a className="back" href="#/attributions">出處同授權</a>
-    </section>
-  );
-}
-
-function GoalPick({ value, onChange }: { value: Goal; onChange: (g: Goal) => void }) {
-  const options: { id: Goal; text: string }[] = [
-    { id: "foundation", text: "氣息、打招呼、數字、禮貌" },
-    { id: "jewellery", text: "明日櫃檯用得着" },
-    { id: "travel", text: "機場櫃檯先" },
-    { id: "restaurant", text: "入座、跟位" },
-  ];
-  return (
-    <div className="stack">
-      {options.map((opt) => (
-        <button key={opt.id} className={value === opt.id ? "opt on" : "opt"} type="button" onClick={() => onChange(opt.id)}>
-          <strong>{GOAL_LABEL[opt.id]}</strong>
-          <span>{opt.text}</span>
-        </button>
-      ))}
-    </div>
-  );
-}
-
+import { useStore } from "./store";
 export function PathHome() {
   const profile = useStore((s) => s.profile);
   const progress = useStore((s) => s.progress);
@@ -139,50 +40,60 @@ export function PathHome() {
           <p>{done} / {SHIPPED.length} 課完成。冇紅心，錯過咗聽日再嚟就得。</p>
         </figcaption>
       </figure>
+      <div className="row-btns">
+        <a className="btn ghost" href="#/vocab">生字</a>
+      </div>
       {pathData.units.map((unit) => (
         <section key={unit.id} className="unit">
           <h2>{unit.title}</h2>
           <p className="lede">{unit.blurb}</p>
-          <div className="card-list">
-            {unit.lessons.map((entry) => {
+          <div className="path-rail">
+            {unit.lessons.map((entry, index) => {
               const lesson = lessonById[entry.id];
               const soon = Boolean(entry.soon) || !lesson;
               const open = !soon && isLessonOpen(entry.id, profile.goal, progress);
+              const doneLesson = Boolean(progress[entry.id]);
               const title = lesson?.titleYue || entry.title || entry.id;
               const en = lesson?.titleEn || "即將推出";
+              const cefr = entry.cefr || lesson?.cefr || "";
+              const state = soon ? "soon" : doneLesson ? "done" : recommended === entry.id ? "current" : open ? "open" : "locked";
               const body = (
                 <>
-                  {lesson ? (
-                    <ArtImg src={asset(lesson.hero)} alt="" width={72} height={72} />
-                  ) : (
-                    <div className="thumb-fallback">鎖</div>
-                  )}
-                  <span>
+                  <span className="orb">
+                    {lesson && !soon ? (
+                      <ArtImg src={asset(lesson.hero)} alt="" width={64} height={64} />
+                    ) : (
+                      <span>{soon ? "即將" : "鎖"}</span>
+                    )}
+                  </span>
+                  <span className="node-copy">
+                    {cefr && <span className="cefr">{cefr}</span>}
                     <strong>{title}</strong>
                     <em lang="en">{en}</em>
+                    {recommended === entry.id ? (
+                      <span className="meta">今日</span>
+                    ) : doneLesson ? (
+                      <span className="meta">完成</span>
+                    ) : soon ? (
+                      <span className="meta">即將</span>
+                    ) : open ? (
+                      <span className="meta">{lesson?.minutes} 分</span>
+                    ) : (
+                      <span className="meta">未開</span>
+                    )}
                   </span>
-                  {recommended === entry.id ? (
-                    <span className="pill">今日</span>
-                  ) : progress[entry.id] ? (
-                    <span className="pill quiet">完成</span>
-                  ) : soon ? (
-                    <span className="meta">即將</span>
-                  ) : open ? (
-                    <span className="meta">{lesson?.minutes} 分</span>
-                  ) : (
-                    <span className="meta">未開</span>
-                  )}
                 </>
               );
+              const cls = `path-node ${state} ${index % 2 ? "even" : "odd"}`;
               if (open && lesson) {
                 return (
-                  <a key={entry.id} className="lesson-row" href={`#/lesson/${lesson.id}`}>
+                  <a key={entry.id} className={cls} href={`#/lesson/${lesson.id}`}>
                     {body}
                   </a>
                 );
               }
               return (
-                <div key={entry.id} className="lesson-row locked">
+                <div key={entry.id} className={`${cls} locked`}>
                   {body}
                 </div>
               );
@@ -219,6 +130,7 @@ export function Review() {
       <p className="eyebrow">重溫</p>
       <h1>到期先再睇</h1>
       <p className="lede">用 FSRS 排期。再來、難、好、易都只係記住你幾熟，唔會罰你。</p>
+      <a className="btn ghost block" href="#/vocab">生字</a>
       {!item && (
         <p className="note">
           {Object.keys(cards).length === 0

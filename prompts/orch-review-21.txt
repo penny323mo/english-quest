@@ -1,0 +1,19 @@
+You are a strict senior code reviewer for English Quest. cd /workspace/sidequest/english-quest.
+Round 21 review at 390px. Do NOT modify project files.
+
+Penny APPROVED bright cartoon mockups + SFX in round 20. Verify ALL of:
+1) Light cartoon chrome matches ART-STYLE.md + review/mockup-v1/ feel at 390px (Path, exercise+feedback sheet, word card, 生字 hub, celebration, role-play/lesson/settings) — no dark Harbor leftover panels.
+2) Mascot 小燈 present (lantern, NOT Duo owl); no Duo brand green #58CC02 as logo / no owl.
+3) SFX: correct/wrong/complete/XP-or-level/streak (+ tap optional); Settings mute toggle persists; SFX must not overlap pronunciation clips; iOS unlock path exists (AudioContext resume on gesture).
+4) ≥3 new lessons shipped this round (expect J7, R3, T3) end-to-end on Path with CEFR chips.
+5) Tests green; LH Perf claim ≥98 plausible (no huge audio assets); WCAG AA contrast on cream/ink; no 390 horizontal overflow.
+
+Read CURRICULUM.md, ART-STYLE.md, DUOLINGO-REF.md, SPEC.md.
+Write reviews/orch-r21-grok.md first line VERDICT: SHIP or NOT READY.
+SHIP forbidden if redesign incomplete OR SFX missing/broken mute OR <3 new lessons OR CRITICAL/MAJOR open OR overflow OR Duo IP copied.
+Local reviews/ is gitignored — do not force-add.
+WHEN DONE create /workspace/sidequest/english-quest/.orch/review-21.done with DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/review-21.done
+
+
+DIFFICULTY PROGRESSION (Penny): audit/keep the Path strictly easy->hard (vocab load, sentence length, grammar, less Cantonese scaffolding). No difficulty ups-and-downs between consecutive lessons; no grammar used before taught. Any jump/dip = open item, blocks SHIP. Slot new lessons at the right level.

@@ -1,10 +1,9 @@
-import { useEffect, useState } from "react";
-import { preloadArt } from "./art";
-import { lessons, asset } from "./data";
-import { LessonView } from "./Lesson";
-import { Attributions, Onboarding, PathHome, Profile, Review, Settings, WordDetail, Words } from "./pages";
+import { lazy, Suspense, useEffect, useState } from "react";
+import { Onboarding } from "./Onboarding";
 import { hydrate, useStore } from "./store";
 import type { Route } from "./types";
+
+const Shell = lazy(() => import("./shell"));
 
 function parse(hash: string): Route {
   const path = (hash.replace(/^#/, "") || "/").split("?")[0];
@@ -15,6 +14,9 @@ function parse(hash: string): Route {
   if (path === "/profile") return { name: "profile" };
   if (path === "/attributions") return { name: "attributions" };
   if (path === "/settings") return { name: "settings" };
+  if (path === "/vocab") return { name: "vocab" };
+  const vocab = path.match(/^\/vocab\/([^/]+)(\/quiz)?$/);
+  if (vocab) return { name: "vocab", deckId: decodeURIComponent(vocab[1]), quiz: Boolean(vocab[2]) };
   if (path.startsWith("/lesson/")) return { name: "lesson", id: decodeURIComponent(path.slice("/lesson/".length)) };
   if (path.startsWith("/word/")) return { name: "word", id: decodeURIComponent(path.slice("/word/".length)) };
   return { name: "path" };
@@ -30,28 +32,13 @@ function useRoute(): Route {
   return parse(hash);
 }
 
-function Tabs({ route }: { route: Route }) {
-  const items = [
-    ["/", "路線"],
-    ["/review", "重溫"],
-    ["/words", "詞庫"],
-    ["/profile", "我"],
-  ] as const;
+function Splash() {
   return (
-    <nav className="tabs" aria-label="主要">
-      {items.map(([href, label]) => {
-        const current =
-          (href === "/" && route.name === "path") ||
-          (href === "/review" && route.name === "review") ||
-          (href === "/words" && route.name === "words") ||
-          (href === "/profile" && route.name === "profile");
-        return (
-          <a key={href} href={`#${href}`} aria-current={current ? "page" : undefined}>
-            {label}
-          </a>
-        );
-      })}
-    </nav>
+    <div className="phone splash">
+      <p className="eyebrow">English Quest</p>
+      <h1>情景英文</h1>
+      <p className="lede">珠寶櫃檯、登機、入座。</p>
+    </div>
   );
 }
 
@@ -65,15 +52,6 @@ export function App() {
   }, []);
 
   useEffect(() => {
-    const cast = ["mei", "tom", "ana", "kai"];
-    preloadArt([
-      asset("assets/art/cover.webp"),
-      ...lessons.map((lesson) => asset(lesson.hero)),
-      ...cast.map((id) => asset(`assets/art/refs/${id}.webp`)),
-    ]);
-  }, []);
-
-  useEffect(() => {
     const titles: Record<string, string> = {
       path: "路線",
       onboarding: "開始",
@@ -84,43 +62,29 @@ export function App() {
       profile: "我",
       attributions: "出處",
       settings: "設定",
+      vocab: "生字",
     };
     document.title = `${titles[route.name]} · 情景英文`;
   }, [route]);
 
-  if (!ready) {
+  if (!ready) return <div className="stage"><Splash /></div>;
+
+  const showOnboarding = (!profile && route.name !== "attributions") || route.name === "onboarding";
+  if (showOnboarding) {
     return (
       <div className="stage">
-        <div className="phone splash">
-          <p className="eyebrow">English Quest</p>
-          <h1>情景英文</h1>
-          <p className="lede">珠寶櫃檯、登機、入座。</p>
+        <div className="phone">
+          <Onboarding />
         </div>
       </div>
     );
   }
 
-  const showOnboarding = !profile && route.name !== "attributions";
-  const lesson = route.name === "lesson";
-  const tabbed = !showOnboarding && (route.name === "path" || route.name === "review" || route.name === "words" || route.name === "profile");
-
-  let body = <PathHome />;
-  if (showOnboarding || route.name === "onboarding") body = <Onboarding />;
-  else if (route.name === "path") body = <PathHome />;
-  else if (route.name === "review") body = <Review />;
-  else if (route.name === "words") body = <Words />;
-  else if (route.name === "word") body = <WordDetail id={route.id} />;
-  else if (route.name === "profile") body = <Profile />;
-  else if (route.name === "settings") body = <Settings />;
-  else if (route.name === "attributions") body = <Attributions />;
-  else if (route.name === "lesson") body = <LessonView id={route.id} />;
-
   return (
     <div className="stage">
-      <div className={lesson && profile ? "phone noscroll" : "phone"}>
-        {body}
-        {tabbed && <Tabs route={route} />}
-      </div>
+      <Suspense fallback={<Splash />}>
+        <Shell route={route} />
+      </Suspense>
     </div>
   );
 }

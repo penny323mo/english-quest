@@ -1,0 +1,13 @@
+You are the coder for English Quest (grok 4.7). cd /workspace/sidequest/english-quest.
+Phase 4 unlimited. Round 21. Read CURRICULUM.md + DUOLINGO-REF.md + SPEC.md.
+
+CRITICAL: MUST ship ≥3 NEW lessons from CURRICULUM.md build order that are not yet in content/lessons/. Real app-code diff required (content/ web/ tests/ assets/ scripts/). No "no defects" / CHANGELOG-only exits.
+
+Also continue WORD-REVIEW (生字) slices and Path/CEFR/celebration polish per DUOLINGO-REF.md (no Duo IP). Keep gold bar: IPA/CMUdict, Kokoro pad, natural Cantonese, examples >2 words, tests, LH≥98, 390px.
+
+No paid services, no secrets, no nightly panes, no force-add gitignored reports.
+
+Append '## Round 21 fixes' to CHANGELOG.md. Commit + push ff-only to origin main.
+
+WHEN COMPLETELY FINISHED, create /workspace/sidequest/english-quest/.orch/fix-21.done with DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-21.done

@@ -1,0 +1,78 @@
+You are the coder for English Quest (grok 4.7). cd /workspace/sidequest/english-quest.
+Phase 4 unlimited — Round 20. Supervisor: Grok Duet. Penny APPROVED (2026-10-30 ~15:58 Asia/Macau) the bright cartoon UI mockups AND asked for game-like 音效 (sound effects).
+
+CRITICAL RULE: you may NOT finish with "no defects" or only a CHANGELOG commit. This round MUST produce a real app-code diff under web/, content/, tests/, assets/, and/or scripts/. Empty product diffs stop the whole loop.
+
+EVERY ROUND MUST ship ≥3 brand-new lessons from CURRICULUM.md build order not yet in content/lessons/. After round 19 (J4–J6), ship next: **J7, R3, T3** (payment+tax-free, allergies, hotel check-in). Keep gold bar: 12-beat JSON, IPA/CMUdict, Kokoro pad ~180/200ms, natural HK Cantonese Traditional, EN examples >2 words, distinct Harbor Glow–softened hook WebP 900×1200, tests green, LH Perf ≥98, 390px no overflow, WCAG AA.
+
+No paid services. No secrets printed. Do not touch nightly herbalist panes. Do not force-add gitignored reports (review/loop-*, review/mockup-*, reviews/orch-*). Do not git rm LICENSE/app code. Never copy Duolingo owl / brand green #58CC02 / wordmark.
+
+Read in this order before coding:
+1) ART-STYLE.md — AUTHORITATIVE chrome palette, shapes, mascot「小燈」, typography (Penny-approved)
+2) review/mockup-v1/README.md + PNGs 01–05 + html/ (LOCAL gitignored mockups — MATCH these at 390px)
+3) DUOLINGO-REF.md (adapt Path/feedback/celebration/Practice; no Duo IP)
+4) CURRICULUM.md (J7/R3/T3 + WORD-REVIEW)
+5) SPEC.md, DECISIONS.md
+
+## A) Bright cartoon redesign — implement across ALL screens (PRIORITY)
+
+Replace dark Harbor chrome with the approved light cartoon system. Screens that MUST match mockups at 390px viewport:
+
+1. **Path home** (`01-path`) — sky→cream wash, streak / XP / daily goal header, winding teal path, chunky circular nodes (locked/current coral pulse/done gold/soon), CEFR chips (A1–B2 tokens), mascot 小燈 wave in header, bottom tabs.
+2. **Lesson exercise + feedback sheet** (`02-exercise`) — progress bar, prompt, choice cards, full-width bottom sheet green correct / coral wrong + Continue CTA; micro-motion 150–250ms; respect prefers-reduced-motion.
+3. **Word card expanded** (`03-word-card`) — IPA+audio, glossYue, usage, examples,「更多」expand (more examples / related / mini-dialogue).
+4. **生字回顧 hub** (`04-practice-hub`) — scenario decks, due count, quiz-type entry.
+5. **Lesson complete celebration** (`05-celebration`) — 小燈 cheer, XP, accuracy, streak+1, confetti-ish,「下一課」.
+6. **Also restyle** role-play / lesson shells, Profile, Settings, Onboarding, Words list, Review — same palette/radius/buttons so nothing stays dark.
+
+Tokens: copy hex from ART-STYLE.md (`--sky #E8F6FF`, `--cream #FFF8EF`, `--teal #1F9E8F`, `--coral #FF7A59`, `--gold #F5C84C`, success/error sheets, etc.). Typography: Nunito / PingFang HK / Noto Sans TC. Chunky 52px CTAs, radius 20–24 cards, node circles 64–72.
+
+**Mascot art:** regenerate 小燈 (harbour lantern — NOT owl) poses needed for Path + celebration (+ tip/think if used) with free tools only (e.g. local/scripted SVG, ImageMagick, existing free generators already on box, or simple hand-drawn SVG). Match ART-STYLE.md construction (brass-gold body, teal glass glow, thick #1F2A37 outline). Export WebP/PNG under assets/; wire into Path header + celebration. Do not hotlink mockup-v1/ (gitignored). Soften lesson hook scenes only if needed so they don't clash with light chrome; chrome MUST be light.
+
+Commit ART-STYLE.md + CURRICULUM.md + DUOLINGO-REF.md to the repo if still untracked (they are product specs now). Keep review/mockup-v1/ gitignored.
+
+## B) Sound effects (Penny:「有沒有音效？」)
+
+Add cheerful Duolingo-like short SFX (NOT Duo assets — synthesize yourself):
+
+| Event | Feel |
+|-------|------|
+| correct | bright major plink / chime |
+| wrong | soft low thud (not harsh buzzer) |
+| lesson complete | short fanfare arpeggio |
+| level-up / XP gain | ascending sparkle |
+| streak | warm flame-ish blip |
+| tap / UI confirm | tiny soft click (optional, not noisy) |
+
+Implementation requirements:
+- Prefer **Web Audio API** synthesized tones/oscillators (zero asset weight, no paid packs) OR self-made tiny CC0/public-domain files you generate locally. No commercial SFX libraries. No paid APIs.
+- **Mute toggle in Settings** (persist in existing local storage / IndexedDB pattern). Default: sound ON after first user gesture.
+- **iOS audio unlock:** resume AudioContext on first tap/pointerdown; never throw; graceful no-op if blocked.
+- **Must NOT overlap / duck-fight pronunciation clips** (`web/src/media.ts` playAsset). When TTS/line audio plays, pause or skip SFX; SFX are short (≤400ms except complete ≤900ms) and lower priority than speech.
+- Respect `prefers-reduced-motion` for visual celebration; SFX still OK unless muted.
+- Wire SFX into: quiz correct/wrong sheets, lesson celebration, XP/streak bumps, primary taps where it helps (Path node start).
+
+## C) Curriculum — ship ≥3 new lessons
+
+1. **J7** — Payment and tax-free (A2/B1)
+2. **R3** — Allergies and special requests (A2)
+3. **T3** — Hotel check-in (A2)
+
+Each: full 12-beat + lexicon + audio for new/changed says only + distinct hook art + unlock prerequisites + path.json CEFR + soon teasers. Continue 生字 hub: include new lemmas in relevant decks; keep listen-choose + meaning-choose working.
+
+## D) Quality gates
+
+- `npm test` / node tests all green (incl. short-example rule, Cantonese sweep, IPA/audio).
+- Lighthouse mobile Perf ≥98 (watch font/SFX/image weight; lazy-load hooks; no huge WAVs).
+- WCAG AA contrast on cream/ink/teal; focus rings visible on light UI.
+- Walk Path → one lesson → feedback → celebration → 生字 card at **390px**; no horizontal overflow, no dark leftover panels.
+- Append `## Round 20 fixes` to CHANGELOG.md listing redesign, SFX, J7/R3/T3 concretely.
+
+At the END: git add -A (respect .gitignore), commit e.g. "Ship round 20: bright cartoon UI + SFX, J7 R3 T3", push origin main (ff-only, never --force).
+Do NOT edit reviews/ or prompts/. Do not touch LICENSE.
+
+WHEN COMPLETELY FINISHED, as your very last action, create the file /workspace/sidequest/english-quest/.orch/fix-20.done containing the word DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-20.done
+
+
+DIFFICULTY PROGRESSION (Penny): audit/keep the Path strictly easy->hard (vocab load, sentence length, grammar, less Cantonese scaffolding). No difficulty ups-and-downs between consecutive lessons; no grammar used before taught. Any jump/dip = open item, blocks SHIP. Slot new lessons at the right level.

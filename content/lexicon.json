@@ -3855,7 +3855,30 @@
       "senseMismatch": false,
       "cmuLemma": "jewelry",
       "phrase": false,
-      "audioSha256": "df3a639fffd50a98f4c08025326bd0d45b7bfdfe12a7061e062410375badb903"
+      "audioSha256": "df3a639fffd50a98f4c08025326bd0d45b7bfdfe12a7061e062410375badb903",
+      "register": "櫃檯",
+      "usageNotes": "店面常見串法係 jewellery。句式：a jewellery store。",
+      "pitfallsYue": "唔好讀出中間嘅 ə。兩種串法讀音一樣。",
+      "related": [
+        "necklace-noun",
+        "ring-noun"
+      ],
+      "examples": [
+        {
+          "en": "Welcome to our jewellery store.",
+          "yue": "歡迎嚟到我哋嘅珠寶店。",
+          "audio": "assets/audio/words/jewellery-noun.mp3",
+          "audioSlow": "assets/audio/words/jewellery-noun-slow.mp3",
+          "say": "Welcome to our [[dʒˈulɹi]] store."
+        },
+        {
+          "en": "This jewellery is for a gift.",
+          "yue": "呢份珠寶係送禮。",
+          "audio": "assets/audio/words/jewellery-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/jewellery-noun-ex2-slow.mp3",
+          "say": "This [[dʒˈulɹi]] is for a gift."
+        }
+      ]
     },
     {
       "id": "jewelry-noun",
@@ -3937,7 +3960,30 @@
       "senseMismatch": false,
       "cmuLemma": "necklace",
       "phrase": false,
-      "audioSha256": "0964593e8ad15660b7da4d2a9e5c78db0b721af4583e64f8de998fa746620fc3"
+      "audioSha256": "0964593e8ad15660b7da4d2a9e5c78db0b721af4583e64f8de998fa746620fc3",
+      "register": "櫃檯",
+      "usageNotes": "一件頸鏈用 this necklace。",
+      "pitfallsYue": "頸鏈係戴喺頸。手鏈先至係 bracelet。",
+      "related": [
+        "gold-noun",
+        "bracelet-noun"
+      ],
+      "examples": [
+        {
+          "en": "This necklace is beautiful.",
+          "yue": "呢條頸鏈好靚。",
+          "audio": "assets/audio/words/necklace-noun.mp3",
+          "audioSlow": "assets/audio/words/necklace-noun-slow.mp3",
+          "say": "This necklace is beautiful."
+        },
+        {
+          "en": "This necklace is real gold.",
+          "yue": "呢條頸鏈係真金。",
+          "audio": "assets/audio/words/necklace-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/necklace-noun-ex2-slow.mp3",
+          "say": "This necklace is real gold."
+        }
+      ]
     },
     {
       "id": "beautiful-adj",
@@ -4183,7 +4229,30 @@
       "senseMismatch": false,
       "cmuLemma": "silver",
       "phrase": false,
-      "audioSha256": "c9cea9e3261c486228a274caf817f0c94dc8f8e9da91d7eb9db31c10ed045346"
+      "audioSha256": "c9cea9e3261c486228a274caf817f0c94dc8f8e9da91d7eb9db31c10ed045346",
+      "register": "櫃檯",
+      "usageNotes": "a silver ring。中間有 /v/。",
+      "pitfallsYue": "白金唔係銀。銀先至係 silver。",
+      "related": [
+        "white-gold-phrase",
+        "ring-noun"
+      ],
+      "examples": [
+        {
+          "en": "I'm looking for a silver ring.",
+          "yue": "我想搵一隻銀戒指。",
+          "audio": "assets/audio/words/silver-noun.mp3",
+          "audioSlow": "assets/audio/words/silver-noun-slow.mp3",
+          "say": "I'm looking for a silver ring."
+        },
+        {
+          "en": "Is this silver or white gold?",
+          "yue": "呢件係銀定係白金？",
+          "audio": "assets/audio/words/silver-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/silver-noun-ex2-slow.mp3",
+          "say": "Is this silver or white gold?"
+        }
+      ]
     },
     {
       "id": "ring-noun",
@@ -4221,7 +4290,30 @@
       "senseMismatch": false,
       "cmuLemma": "ring",
       "phrase": false,
-      "audioSha256": "0cab8ba49d1a15de48fbb80692843e40891144e746f3244ff67d8666b75d803f"
+      "audioSha256": "0cab8ba49d1a15de48fbb80692843e40891144e746f3244ff67d8666b75d803f",
+      "register": "櫃檯",
+      "usageNotes": "a silver ring、the right size。",
+      "pitfallsYue": "尾音係 /ŋ/，唔好收成 /n/。",
+      "related": [
+        "size-noun",
+        "finger-noun"
+      ],
+      "examples": [
+        {
+          "en": "I'm looking for a silver ring.",
+          "yue": "我想搵一隻銀戒指。",
+          "audio": "assets/audio/words/ring-noun.mp3",
+          "audioSlow": "assets/audio/words/ring-noun-slow.mp3",
+          "say": "I'm looking for a silver ring."
+        },
+        {
+          "en": "This ring is the right size.",
+          "yue": "呢隻戒指碼數啱。",
+          "audio": "assets/audio/words/ring-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/ring-noun-ex2-slow.mp3",
+          "say": "This ring is the right size."
+        }
+      ]
     },
     {
       "id": "watch-noun",
@@ -4259,7 +4351,30 @@
       "senseMismatch": false,
       "cmuLemma": "watch",
       "phrase": false,
-      "audioSha256": "46547a64ec70fa3c6a7aaf5cc6f6a97dcb31dbad98ad63a4bc79ffa4cf63aeb9"
+      "audioSha256": "46547a64ec70fa3c6a7aaf5cc6f6a97dcb31dbad98ad63a4bc79ffa4cf63aeb9",
+      "register": "櫃檯",
+      "usageNotes": "a watch。開頭 /w/，尾音 /tʃ/。",
+      "pitfallsYue": "唔好同 what 撈亂。",
+      "related": [
+        "wrist-noun",
+        "deal-noun"
+      ],
+      "examples": [
+        {
+          "en": "A watch and a ring.",
+          "yue": "一隻手錶同一隻戒指。",
+          "audio": "assets/audio/words/watch-noun.mp3",
+          "audioSlow": "assets/audio/words/watch-noun-slow.mp3",
+          "say": "A watch and a ring."
+        },
+        {
+          "en": "This watch is a good deal.",
+          "yue": "呢隻手錶好抵買。",
+          "audio": "assets/audio/words/watch-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/watch-noun-ex2-slow.mp3",
+          "say": "This watch is a good deal."
+        }
+      ]
     },
     {
       "id": "bracelet-noun",
@@ -4299,7 +4414,30 @@
       "senseMismatch": false,
       "cmuLemma": "bracelet",
       "phrase": false,
-      "audioSha256": "2bd0e2559eba8a9c17b99f148adff46c8f0c93d0894f03694d3bc5a6860810f7"
+      "audioSha256": "2bd0e2559eba8a9c17b99f148adff46c8f0c93d0894f03694d3bc5a6860810f7",
+      "register": "櫃檯",
+      "usageNotes": "this bracelet、a silver bracelet。",
+      "pitfallsYue": "重音喺第一節。尾音 /t/ 要收住。",
+      "related": [
+        "wrist-noun",
+        "silver-noun"
+      ],
+      "examples": [
+        {
+          "en": "This bracelet is beautiful.",
+          "yue": "呢條手鏈好靚。",
+          "audio": "assets/audio/words/bracelet-noun.mp3",
+          "audioSlow": "assets/audio/words/bracelet-noun-slow.mp3",
+          "say": "This [[bɹˈeɪslət]] is beautiful."
+        },
+        {
+          "en": "I like this silver bracelet.",
+          "yue": "我鍾意呢條銀手鏈。",
+          "audio": "assets/audio/words/bracelet-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/bracelet-noun-ex2-slow.mp3",
+          "say": "I like this silver [[bɹˈeɪslət]]."
+        }
+      ]
     },
     {
       "id": "earring-noun",
@@ -4341,7 +4479,30 @@
       "senseMismatch": false,
       "cmuLemma": "earring",
       "phrase": false,
-      "audioSha256": "e4aba0ab66bc99d5b815ab42599a63556bc5135281e2653c09ead13b756c7e5e"
+      "audioSha256": "e4aba0ab66bc99d5b815ab42599a63556bc5135281e2653c09ead13b756c7e5e",
+      "register": "櫃檯",
+      "usageNotes": "a pair of earrings。多過一件用 these。",
+      "pitfallsYue": "通常一對。唔好講成一隻就完。",
+      "related": [
+        "pearl-noun",
+        "sale-noun"
+      ],
+      "examples": [
+        {
+          "en": "I like this earring.",
+          "yue": "我鍾意呢隻耳環。",
+          "audio": "assets/audio/words/earring-noun.mp3",
+          "audioSlow": "assets/audio/words/earring-noun-slow.mp3",
+          "say": "I like this earring."
+        },
+        {
+          "en": "These earrings are on sale.",
+          "yue": "呢對耳環而家特價。",
+          "audio": "assets/audio/words/earring-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/earring-noun-ex2-slow.mp3",
+          "say": "These earrings are on sale."
+        }
+      ]
     },
     {
       "id": "pair-noun",
@@ -4417,7 +4578,30 @@
       "senseMismatch": false,
       "cmuLemma": "pearl",
       "phrase": false,
-      "audioSha256": "7fe47a54679db6d8eafa9c24e169e3dc7a8f9b7f6f54ceaeba5be05922cebc8a"
+      "audioSha256": "7fe47a54679db6d8eafa9c24e169e3dc7a8f9b7f6f54ceaeba5be05922cebc8a",
+      "register": "櫃檯",
+      "usageNotes": "a pearl earring。",
+      "pitfallsYue": "pearl 係珍珠。pair 先至係一對。",
+      "related": [
+        "natural-adj",
+        "earring-noun"
+      ],
+      "examples": [
+        {
+          "en": "This is a pearl earring.",
+          "yue": "呢隻係珍珠耳環。",
+          "audio": "assets/audio/words/pearl-noun.mp3",
+          "audioSlow": "assets/audio/words/pearl-noun-slow.mp3",
+          "say": "This is a pearl earring."
+        },
+        {
+          "en": "This pearl is natural.",
+          "yue": "呢顆珍珠係天然。",
+          "audio": "assets/audio/words/pearl-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/pearl-noun-ex2-slow.mp3",
+          "say": "This pearl is [[nˈætʃɚəl]]."
+        }
+      ]
     },
     {
       "id": "these-det",
@@ -7523,7 +7707,30 @@
       "senseMismatch": false,
       "cmuLemma": "just looking",
       "phrase": true,
-      "audioSha256": "edf00bd068cd9fc56dda87cdd1286962ccfc187355f6abf3ea04afc2e5752506"
+      "audioSha256": "edf00bd068cd9fc56dda87cdd1286962ccfc187355f6abf3ea04afc2e5752506",
+      "register": "客氣",
+      "usageNotes": "客人未想買：I'm just looking。",
+      "pitfallsYue": "我睇吓先。直譯成只係睇吓唔自然。",
+      "related": [
+        "gold-noun",
+        "ring-noun"
+      ],
+      "examples": [
+        {
+          "en": "I'm just looking.",
+          "yue": "我睇吓先。",
+          "audio": "assets/audio/words/just-looking-phrase.mp3",
+          "audioSlow": "assets/audio/words/just-looking-phrase-slow.mp3",
+          "say": "I'm just looking."
+        },
+        {
+          "en": "I'm just looking at the gold.",
+          "yue": "我睇吓呢件金飾先。",
+          "audio": "assets/audio/words/just-looking-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/just-looking-phrase-ex2-slow.mp3",
+          "say": "I'm just looking at the gold."
+        }
+      ]
     },
     {
       "id": "how-may-i-phrase",
@@ -8371,7 +8578,30 @@
       "senseMismatch": false,
       "cmuLemma": "price",
       "phrase": false,
-      "audioSha256": "8d8268821768f6d7a4bb71143376480a014468bb1035e5e1cf6ca80eb6989a0b"
+      "audioSha256": "8d8268821768f6d7a4bb71143376480a014468bb1035e5e1cf6ca80eb6989a0b",
+      "register": "櫃檯",
+      "usageNotes": "The price is ten dollars. How much is the price?",
+      "pitfallsYue": "價錢。問法可以用 How much does it cost?",
+      "related": [
+        "cost-noun",
+        "discount-noun"
+      ],
+      "examples": [
+        {
+          "en": "The price is ten dollars.",
+          "yue": "價錢係十蚊。",
+          "audio": "assets/audio/words/price-noun.mp3",
+          "audioSlow": "assets/audio/words/price-noun-slow.mp3",
+          "say": "The price is ten dollars."
+        },
+        {
+          "en": "The price includes tax.",
+          "yue": "價錢已經包稅。",
+          "audio": "assets/audio/words/price-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/price-noun-ex2-slow.mp3",
+          "say": "The price includes tax."
+        }
+      ]
     },
     {
       "id": "minute-noun",
@@ -8972,6 +9202,2735 @@
       "cmuLemma": "good night",
       "phrase": true,
       "audioSha256": "1b561f2495dc06666f57472a8789ad9b599a8db595f9cffcdcfd2c313d4302d5"
+    },
+    {
+      "id": "gold-noun",
+      "lemma": "gold",
+      "pos": "noun",
+      "senseId": "yellow-metal",
+      "ipa": "/ˈɡoʊld/",
+      "syllables": [
+        "gold"
+      ],
+      "syllableIpa": [
+        "ˈɡoʊld"
+      ],
+      "stress": 1,
+      "arpabet": "G OW1 L D",
+      "audio": "assets/audio/words/gold-noun.mp3",
+      "audioSlow": "assets/audio/words/gold-noun-slow.mp3",
+      "glossYue": "金",
+      "glossZh": "金",
+      "jyutping": "gam1",
+      "collocations": [
+        "real gold",
+        "made of gold"
+      ],
+      "example": "This gold is authentic.",
+      "exampleYue": "呢件金係正貨。",
+      "say": "This gold is [[əθˈɛntɪk]].",
+      "variants": [],
+      "note": "金。白金同玫瑰金要另外講。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "gold",
+      "phrase": false,
+      "audioSha256": "25028a202c0b03444a50f01f425ea2d3870f63d143efe847566605a53bb64a2a",
+      "register": "櫃檯",
+      "usageNotes": "This is gold. / It is made of gold.",
+      "pitfallsYue": "金。白金同玫瑰金都要講清楚，唔好統稱金。",
+      "related": [
+        "authentic-adj",
+        "silver-noun",
+        "karat-noun"
+      ],
+      "miniDialogue": [
+        {
+          "en": "Is this real gold?",
+          "yue": "呢件係咪真金？"
+        },
+        {
+          "en": "This gold is authentic.",
+          "yue": "呢件金係正貨。"
+        }
+      ],
+      "examples": [
+        {
+          "en": "This gold is authentic.",
+          "yue": "呢件金係正貨。",
+          "audio": "assets/audio/words/gold-noun.mp3",
+          "audioSlow": "assets/audio/words/gold-noun-slow.mp3",
+          "say": "This gold is [[əθˈɛntɪk]]."
+        },
+        {
+          "en": "Is this gold pure?",
+          "yue": "呢件金係咪純？",
+          "audio": "assets/audio/words/gold-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/gold-noun-ex2-slow.mp3",
+          "say": "Is this gold pure?"
+        }
+      ]
+    },
+    {
+      "id": "white-gold-phrase",
+      "lemma": "white gold",
+      "pos": "phrase",
+      "senseId": "pale-alloy",
+      "ipa": "/ˈwaɪt ˈɡoʊld/",
+      "syllables": [
+        "white",
+        "gold"
+      ],
+      "syllableIpa": [
+        "ˈwaɪt",
+        "ˈɡoʊld"
+      ],
+      "stress": 1,
+      "arpabet": "W AY1 T G OW1 L D",
+      "audio": "assets/audio/words/white-gold-phrase.mp3",
+      "audioSlow": "assets/audio/words/white-gold-phrase-slow.mp3",
+      "glossYue": "白金",
+      "glossZh": "白金",
+      "jyutping": "baak6 gam1",
+      "collocations": [
+        "white gold ring"
+      ],
+      "example": "This ring is white gold.",
+      "exampleYue": "呢隻戒指係白金。",
+      "say": "This ring is white gold.",
+      "variants": [],
+      "note": "教 W AY1 T，唔教 HH W AY1 T。白金唔係鉑金。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "white gold",
+      "phrase": true,
+      "audioSha256": "4a3a3f0aa539ceab773600a07b2ddfd7aa02f20b796e39c37bd53dda5c8a9e6d",
+      "register": "櫃檯",
+      "usageNotes": "white gold 係白金，唔係鉑金。",
+      "pitfallsYue": "白金唔等於 platinum。客人問白金，唔好攞鉑金出嚟。",
+      "related": [
+        "platinum-noun",
+        "gold-noun"
+      ],
+      "examples": [
+        {
+          "en": "This ring is white gold.",
+          "yue": "呢隻戒指係白金。",
+          "audio": "assets/audio/words/white-gold-phrase.mp3",
+          "audioSlow": "assets/audio/words/white-gold-phrase-slow.mp3",
+          "say": "This ring is white gold."
+        },
+        {
+          "en": "White gold is not platinum.",
+          "yue": "白金唔等於鉑金。",
+          "audio": "assets/audio/words/white-gold-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/white-gold-phrase-ex2-slow.mp3",
+          "say": "White gold is not [[plˈætənəm]]."
+        }
+      ]
+    },
+    {
+      "id": "rose-gold-phrase",
+      "lemma": "rose gold",
+      "pos": "phrase",
+      "senseId": "pink-alloy",
+      "ipa": "/ˈɹoʊz ˈɡoʊld/",
+      "syllables": [
+        "rose",
+        "gold"
+      ],
+      "syllableIpa": [
+        "ˈɹoʊz",
+        "ˈɡoʊld"
+      ],
+      "stress": 1,
+      "arpabet": "R OW1 Z G OW1 L D",
+      "audio": "assets/audio/words/rose-gold-phrase.mp3",
+      "audioSlow": "assets/audio/words/rose-gold-phrase-slow.mp3",
+      "glossYue": "玫瑰金",
+      "glossZh": "玫瑰金",
+      "jyutping": "mui4 gwai3 gam1",
+      "collocations": [
+        "rose gold band"
+      ],
+      "example": "I like this rose gold.",
+      "exampleYue": "我鍾意呢件玫瑰金。",
+      "say": "I like this rose gold.",
+      "variants": [],
+      "note": "rose 呢度係色水，跟 CMU R OW1 Z。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "rose gold",
+      "phrase": true,
+      "audioSha256": "2bf1266e17077f32fd5b1607ecf1ea12ccc02f9fe33f6316f69b2d5346bbdb71",
+      "register": "櫃檯",
+      "usageNotes": "rose gold 係玫瑰金。",
+      "pitfallsYue": "rose 呢度係色，唔係花。",
+      "related": [
+        "gold-noun",
+        "white-gold-phrase"
+      ],
+      "examples": [
+        {
+          "en": "I like this rose gold.",
+          "yue": "我鍾意呢件玫瑰金。",
+          "audio": "assets/audio/words/rose-gold-phrase.mp3",
+          "audioSlow": "assets/audio/words/rose-gold-phrase-slow.mp3",
+          "say": "I like this rose gold."
+        },
+        {
+          "en": "Rose gold looks warm.",
+          "yue": "玫瑰金睇落暖色。",
+          "audio": "assets/audio/words/rose-gold-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/rose-gold-phrase-ex2-slow.mp3",
+          "say": "Rose gold looks warm."
+        }
+      ]
+    },
+    {
+      "id": "platinum-noun",
+      "lemma": "platinum",
+      "pos": "noun",
+      "senseId": "dense-metal",
+      "ipa": "/ˈplæt.ə.nəm/",
+      "syllables": [
+        "plat",
+        "i",
+        "num"
+      ],
+      "syllableIpa": [
+        "ˈplæt",
+        "ə",
+        "nəm"
+      ],
+      "stress": 1,
+      "arpabet": "P L AE1 T AH0 N AH0 M",
+      "audio": "assets/audio/words/platinum-noun.mp3",
+      "audioSlow": "assets/audio/words/platinum-noun-slow.mp3",
+      "glossYue": "鉑金",
+      "glossZh": "铂金",
+      "jyutping": "bok6 gam1",
+      "collocations": [
+        "platinum band"
+      ],
+      "example": "This band is platinum.",
+      "exampleYue": "呢隻戒指圈係鉑金。",
+      "say": "This band is [[plˈætənəm]].",
+      "variants": [
+        "/ˈplæt.nəm/"
+      ],
+      "note": "教三音節 /ˈplæt.ə.nəm/。CMU 第一條係兩音節，標做變體。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "platinum",
+      "phrase": false,
+      "audioSha256": "f99489053019c86ec8701045e1fefbc0fe1f68cac166112c5e22da52fbb13a97",
+      "register": "櫃檯",
+      "usageNotes": "This band is platinum. 三個音節。",
+      "pitfallsYue": "中間係 ə，唔好讀成兩節。白金唔係鉑金。",
+      "related": [
+        "white-gold-phrase",
+        "expensive-adj"
+      ],
+      "examples": [
+        {
+          "en": "This band is platinum.",
+          "yue": "呢隻戒指圈係鉑金。",
+          "audio": "assets/audio/words/platinum-noun.mp3",
+          "audioSlow": "assets/audio/words/platinum-noun-slow.mp3",
+          "say": "This band is [[plˈætənəm]]."
+        },
+        {
+          "en": "Platinum costs more than silver.",
+          "yue": "鉑金貴過銀。",
+          "audio": "assets/audio/words/platinum-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/platinum-noun-ex2-slow.mp3",
+          "say": "[[plˈætənəm]] costs more than silver."
+        }
+      ]
+    },
+    {
+      "id": "diamond-noun",
+      "lemma": "diamond",
+      "pos": "noun",
+      "senseId": "clear-stone",
+      "ipa": "/ˈdaɪ.mənd/",
+      "syllables": [
+        "dia",
+        "mond"
+      ],
+      "syllableIpa": [
+        "ˈdaɪ",
+        "mənd"
+      ],
+      "stress": 1,
+      "arpabet": "D AY1 M AH0 N D",
+      "audio": "assets/audio/words/diamond-noun.mp3",
+      "audioSlow": "assets/audio/words/diamond-noun-slow.mp3",
+      "glossYue": "鑽石",
+      "glossZh": "钻石",
+      "jyutping": "zoek3 sek6",
+      "collocations": [
+        "a natural diamond"
+      ],
+      "example": "Is the diamond natural?",
+      "exampleYue": "粒鑽石係咪天然？",
+      "say": "Is the [[dˈaɪmənd]] [[nˈætʃɚəl]]?",
+      "variants": [],
+      "note": "兩個音節 /ˈdaɪ.mənd/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "diamond",
+      "phrase": false,
+      "audioSha256": "b819ab069f691c4ed4bcdc9591c07401a230c8f75358fef1de34a1a0c331f2f0",
+      "register": "櫃檯",
+      "usageNotes": "Is the diamond natural?",
+      "pitfallsYue": "兩個音節 /ˈdaɪ.mənd/。唔好加多一個 ə。",
+      "related": [
+        "natural-adj",
+        "setting-noun"
+      ],
+      "examples": [
+        {
+          "en": "Is the diamond natural?",
+          "yue": "粒鑽石係咪天然？",
+          "audio": "assets/audio/words/diamond-noun.mp3",
+          "audioSlow": "assets/audio/words/diamond-noun-slow.mp3",
+          "say": "Is the [[dˈaɪmənd]] [[nˈætʃɚəl]]?"
+        },
+        {
+          "en": "This diamond has a sparkle.",
+          "yue": "呢粒鑽石有閃光。",
+          "audio": "assets/audio/words/diamond-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/diamond-noun-ex2-slow.mp3",
+          "say": "This [[dˈaɪmənd]] has a sparkle."
+        }
+      ]
+    },
+    {
+      "id": "jade-noun",
+      "lemma": "jade",
+      "pos": "noun",
+      "senseId": "green-stone",
+      "ipa": "/ˈdʒeɪd/",
+      "syllables": [
+        "jade"
+      ],
+      "syllableIpa": [
+        "ˈdʒeɪd"
+      ],
+      "stress": 1,
+      "arpabet": "JH EY1 D",
+      "audio": "assets/audio/words/jade-noun.mp3",
+      "audioSlow": "assets/audio/words/jade-noun-slow.mp3",
+      "glossYue": "玉",
+      "glossZh": "玉",
+      "jyutping": "juk6",
+      "collocations": [
+        "natural jade"
+      ],
+      "example": "This jade is natural.",
+      "exampleYue": "呢塊玉係天然。",
+      "say": "This jade is [[nˈætʃɚəl]].",
+      "variants": [],
+      "note": "玉係材料同工藝。唔好講醫療功效。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "jade",
+      "phrase": false,
+      "audioSha256": "1ad8830d7fa671fd01d2a3200150bc0d8f01ce0699340e1eb3c36695683066de",
+      "register": "櫃檯",
+      "usageNotes": "This jade is natural. 玉係材料。",
+      "pitfallsYue": "玉係材料同工藝，唔好講醫療功效。",
+      "related": [
+        "natural-adj",
+        "gemstone-noun"
+      ],
+      "miniDialogue": [
+        {
+          "en": "I like this jade.",
+          "yue": "我鍾意呢塊玉。"
+        },
+        {
+          "en": "This jade is natural.",
+          "yue": "呢塊玉係天然。"
+        }
+      ],
+      "examples": [
+        {
+          "en": "This jade is natural.",
+          "yue": "呢塊玉係天然。",
+          "audio": "assets/audio/words/jade-noun.mp3",
+          "audioSlow": "assets/audio/words/jade-noun-slow.mp3",
+          "say": "This jade is [[nˈætʃɚəl]]."
+        },
+        {
+          "en": "Jade is a gemstone.",
+          "yue": "玉係一種寶石。",
+          "audio": "assets/audio/words/jade-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/jade-noun-ex2-slow.mp3",
+          "say": "Jade is a gemstone."
+        }
+      ]
+    },
+    {
+      "id": "gemstone-noun",
+      "lemma": "gemstone",
+      "pos": "noun",
+      "senseId": "cut-stone",
+      "ipa": "/ˈdʒɛm.ˌstoʊn/",
+      "syllables": [
+        "gem",
+        "stone"
+      ],
+      "syllableIpa": [
+        "ˈdʒɛm",
+        "ˌstoʊn"
+      ],
+      "stress": 1,
+      "arpabet": "JH EH1 M S T OW2 N",
+      "audio": "assets/audio/words/gemstone-noun.mp3",
+      "audioSlow": "assets/audio/words/gemstone-noun-slow.mp3",
+      "glossYue": "寶石",
+      "glossZh": "宝石",
+      "jyutping": "bou2 sek6",
+      "collocations": [
+        "a gemstone"
+      ],
+      "example": "Jade is a gemstone.",
+      "exampleYue": "玉係一種寶石。",
+      "say": "Jade is a gemstone.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "gemstone",
+      "phrase": false,
+      "audioSha256": "01b3a87c83b564a5a7e3cfbfd6b59b1ef8dad5910db54522359729b1e9db8630",
+      "register": "櫃檯",
+      "usageNotes": "Jade is a gemstone.",
+      "pitfallsYue": "寶石可以係玉、鑽石或者其他石。",
+      "related": [
+        "jade-noun",
+        "diamond-noun"
+      ],
+      "examples": [
+        {
+          "en": "Jade is a gemstone.",
+          "yue": "玉係一種寶石。",
+          "audio": "assets/audio/words/gemstone-noun.mp3",
+          "audioSlow": "assets/audio/words/gemstone-noun-slow.mp3",
+          "say": "Jade is a gemstone."
+        },
+        {
+          "en": "A gemstone can sparkle.",
+          "yue": "寶石可以有閃光。",
+          "audio": "assets/audio/words/gemstone-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/gemstone-noun-ex2-slow.mp3",
+          "say": "A gemstone can sparkle."
+        }
+      ]
+    },
+    {
+      "id": "karat-noun",
+      "lemma": "karat",
+      "pos": "noun",
+      "senseId": "fineness",
+      "ipa": "/ˈkɛɹ.ət/",
+      "syllables": [
+        "kar",
+        "at"
+      ],
+      "syllableIpa": [
+        "ˈkɛɹ",
+        "ət"
+      ],
+      "stress": 1,
+      "arpabet": "K EH1 R AH0 T",
+      "audio": "assets/audio/words/karat-noun.mp3",
+      "audioSlow": "assets/audio/words/karat-noun-slow.mp3",
+      "glossYue": "開",
+      "glossZh": "开",
+      "jyutping": "hoi1",
+      "collocations": [
+        "eighteen karat",
+        "karat gold"
+      ],
+      "example": "This is eighteen karat gold.",
+      "exampleYue": "呢件係十八開金。",
+      "say": "This is eighteen [[kˈɛɹət]] gold.",
+      "variants": [],
+      "note": "金嘅開數。同 carat 同一個 CMU 音 /ˈkɛɹ.ət/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "karat",
+      "phrase": false,
+      "audioSha256": "90349b48ade5cb056a9ee63f6f4311fa32d75eddc91f44e9e6de8384a3acd51d",
+      "register": "櫃檯",
+      "usageNotes": "eighteen karat gold。開數，唔係重量嘅 carat 用法。",
+      "pitfallsYue": "讀 /ˈkɛɹ.ət/。唔好讀成 /æ/。",
+      "related": [
+        "gold-noun",
+        "pure-adj"
+      ],
+      "examples": [
+        {
+          "en": "This is eighteen karat gold.",
+          "yue": "呢件係十八開金。",
+          "audio": "assets/audio/words/karat-noun.mp3",
+          "audioSlow": "assets/audio/words/karat-noun-slow.mp3",
+          "say": "This is eighteen [[kˈɛɹət]] gold."
+        },
+        {
+          "en": "Eighteen karat is not pure.",
+          "yue": "十八開唔係純金。",
+          "audio": "assets/audio/words/karat-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/karat-noun-ex2-slow.mp3",
+          "say": "Eighteen karat is not pure."
+        }
+      ]
+    },
+    {
+      "id": "pure-adj",
+      "lemma": "pure",
+      "pos": "adj",
+      "senseId": "unmixed",
+      "ipa": "/ˈpjʊɹ/",
+      "syllables": [
+        "pure"
+      ],
+      "syllableIpa": [
+        "ˈpjʊɹ"
+      ],
+      "stress": 1,
+      "arpabet": "P Y UH1 R",
+      "audio": "assets/audio/words/pure-adj.mp3",
+      "audioSlow": "assets/audio/words/pure-adj-slow.mp3",
+      "glossYue": "純",
+      "glossZh": "纯",
+      "jyutping": "seon4",
+      "collocations": [
+        "pure gold"
+      ],
+      "example": "Is this gold pure?",
+      "exampleYue": "呢件金係咪純？",
+      "say": "Is this gold pure?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "pure",
+      "phrase": false,
+      "audioSha256": "6a8e8a7bc180513a24b420ca4c79b9c82335c736ff8e0a087ccfcfc66837e99e",
+      "register": "櫃檯",
+      "usageNotes": "pure gold。純，冇夾其他金屬。",
+      "pitfallsYue": "純金好軟。二十四開先至接近純。",
+      "related": [
+        "gold-noun",
+        "karat-noun"
+      ],
+      "examples": [
+        {
+          "en": "Is this gold pure?",
+          "yue": "呢件金係咪純？",
+          "audio": "assets/audio/words/pure-adj.mp3",
+          "audioSlow": "assets/audio/words/pure-adj-slow.mp3",
+          "say": "Is this gold pure?"
+        },
+        {
+          "en": "Pure gold is soft.",
+          "yue": "純金好軟。",
+          "audio": "assets/audio/words/pure-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/pure-adj-ex2-slow.mp3",
+          "say": "Pure gold is soft."
+        }
+      ]
+    },
+    {
+      "id": "authentic-adj",
+      "lemma": "authentic",
+      "pos": "adj",
+      "senseId": "genuine",
+      "ipa": "/ə.ˈθɛn.tɪk/",
+      "syllables": [
+        "au",
+        "then",
+        "tic"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈθɛn",
+        "tɪk"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 TH EH1 N T IH0 K",
+      "audio": "assets/audio/words/authentic-adj.mp3",
+      "audioSlow": "assets/audio/words/authentic-adj-slow.mp3",
+      "glossYue": "正貨",
+      "glossZh": "正品",
+      "jyutping": "zing3 fo3",
+      "collocations": [
+        "authentic gold"
+      ],
+      "example": "Is this authentic gold?",
+      "exampleYue": "呢件金係咪正貨？",
+      "say": "Is this [[əθˈɛntɪk]] gold?",
+      "variants": [
+        "/ɔ.ˈθɛn.tɪk/"
+      ],
+      "note": "教 CMU 第一條 /ə.ˈθɛn.tɪk/。錄音強制 /θ/。/ɔ/ 開頭同冇 /t/ 嘅變體唔教。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "authentic",
+      "phrase": false,
+      "audioSha256": "b1f3879be9d6e684df9d55edbfad793339f93e13e99df2002f093d7b49fc0632",
+      "register": "櫃檯",
+      "usageNotes": "Is this authentic? 中間 /θ/。",
+      "pitfallsYue": "開頭係 ə，唔好讀成 ɔ。/θ/ 唔好變 /s/ 或者 /t/。",
+      "related": [
+        "certified-adj",
+        "gold-noun"
+      ],
+      "examples": [
+        {
+          "en": "Is this authentic gold?",
+          "yue": "呢件金係咪正貨？",
+          "audio": "assets/audio/words/authentic-adj.mp3",
+          "audioSlow": "assets/audio/words/authentic-adj-slow.mp3",
+          "say": "Is this [[əθˈɛntɪk]] gold?"
+        },
+        {
+          "en": "Authentic jade has a certificate.",
+          "yue": "正貨玉有證書。",
+          "audio": "assets/audio/words/authentic-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/authentic-adj-ex2-slow.mp3",
+          "say": "[[əθˈɛntɪk]] jade has a certificate."
+        }
+      ]
+    },
+    {
+      "id": "certified-adj",
+      "lemma": "certified",
+      "pos": "adj",
+      "senseId": "documented",
+      "ipa": "/ˈsɝ.tə.ˌfaɪd/",
+      "syllables": [
+        "cer",
+        "ti",
+        "fied"
+      ],
+      "syllableIpa": [
+        "ˈsɝ",
+        "tə",
+        "ˌfaɪd"
+      ],
+      "stress": 1,
+      "arpabet": "S ER1 T AH0 F AY2 D",
+      "audio": "assets/audio/words/certified-adj.mp3",
+      "audioSlow": "assets/audio/words/certified-adj-slow.mp3",
+      "glossYue": "有證書",
+      "glossZh": "有证书",
+      "jyutping": "jau5 zing3 syu1",
+      "collocations": [
+        "certified diamond"
+      ],
+      "example": "Yes. It is certified.",
+      "exampleYue": "係。有證書。",
+      "say": "Yes. It is [[sˈɜtəfˌaɪd]].",
+      "variants": [],
+      "note": "重音喺第一節 /ˈsɝ.tə.ˌfaɪd/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "certified",
+      "phrase": false,
+      "audioSha256": "188a062fd4596f3e0fa1fb7abb9a942b461474306f3b79969b881f9590addf52",
+      "register": "櫃檯",
+      "usageNotes": "It is certified. 有證書。",
+      "pitfallsYue": "重音喺第一節。證書唔等於口講正貨。",
+      "related": [
+        "authentic-adj",
+        "natural-adj"
+      ],
+      "examples": [
+        {
+          "en": "Yes. It is certified.",
+          "yue": "係。有證書。",
+          "audio": "assets/audio/words/certified-adj.mp3",
+          "audioSlow": "assets/audio/words/certified-adj-slow.mp3",
+          "say": "Yes. It is [[sˈɜtəfˌaɪd]]."
+        },
+        {
+          "en": "This stone is certified.",
+          "yue": "呢件石有證書。",
+          "audio": "assets/audio/words/certified-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/certified-adj-ex2-slow.mp3",
+          "say": "This stone is [[sˈɜtəfˌaɪd]]."
+        }
+      ]
+    },
+    {
+      "id": "natural-adj",
+      "lemma": "natural",
+      "pos": "adj",
+      "senseId": "from-nature",
+      "ipa": "/ˈnætʃ.ɚ.əl/",
+      "syllables": [
+        "nat",
+        "ur",
+        "al"
+      ],
+      "syllableIpa": [
+        "ˈnætʃ",
+        "ɚ",
+        "əl"
+      ],
+      "stress": 1,
+      "arpabet": "N AE1 CH ER0 AH0 L",
+      "audio": "assets/audio/words/natural-adj.mp3",
+      "audioSlow": "assets/audio/words/natural-adj-slow.mp3",
+      "glossYue": "天然",
+      "glossZh": "天然",
+      "jyutping": "tin1 jin4",
+      "collocations": [
+        "natural jade",
+        "natural pearl"
+      ],
+      "example": "This pearl is natural.",
+      "exampleYue": "呢顆珍珠係天然。",
+      "say": "This pearl is [[nˈætʃɚəl]].",
+      "variants": [
+        "/ˈnætʃ.ɹəl/"
+      ],
+      "note": "教三音節 /ˈnætʃ.ɚ.əl/。CMU 第二條係兩音節，標做變體。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "natural",
+      "phrase": false,
+      "audioSha256": "39c40212b0ccdae95d70af912664b9c702b875d95e94d27cb336c8dded22322c",
+      "register": "櫃檯",
+      "usageNotes": "natural pearl、natural jade。三個音節。",
+      "pitfallsYue": "天然唔等於處理過。唔好食咗中間個音。",
+      "related": [
+        "treated-adj",
+        "pearl-noun"
+      ],
+      "examples": [
+        {
+          "en": "This pearl is natural.",
+          "yue": "呢顆珍珠係天然。",
+          "audio": "assets/audio/words/natural-adj.mp3",
+          "audioSlow": "assets/audio/words/natural-adj-slow.mp3",
+          "say": "This pearl is [[nˈætʃɚəl]]."
+        },
+        {
+          "en": "Natural jade is not treated.",
+          "yue": "天然玉冇處理過。",
+          "audio": "assets/audio/words/natural-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/natural-adj-ex2-slow.mp3",
+          "say": "[[nˈætʃɚəl]] jade is not treated."
+        }
+      ]
+    },
+    {
+      "id": "treated-adj",
+      "lemma": "treated",
+      "pos": "adj",
+      "senseId": "processed",
+      "ipa": "/ˈtɹit.ɪd/",
+      "syllables": [
+        "treat",
+        "ed"
+      ],
+      "syllableIpa": [
+        "ˈtɹit",
+        "ɪd"
+      ],
+      "stress": 1,
+      "arpabet": "T R IY1 T IH0 D",
+      "audio": "assets/audio/words/treated-adj.mp3",
+      "audioSlow": "assets/audio/words/treated-adj-slow.mp3",
+      "glossYue": "處理過",
+      "glossZh": "处理过",
+      "jyutping": "cyu5 lei5 gwo3",
+      "collocations": [
+        "treated jade"
+      ],
+      "example": "This jade is treated.",
+      "exampleYue": "呢塊玉處理過。",
+      "say": "This jade is [[tɹˈitɪd]].",
+      "variants": [],
+      "note": "處理過要講明，唔好當天然。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "treated",
+      "phrase": false,
+      "audioSha256": "1345ba0b0ffa0b632ebd078bcc8a7547c77583be6e68bc892dacac5c3d6c84ef",
+      "register": "櫃檯",
+      "usageNotes": "This jade is treated. 處理過。",
+      "pitfallsYue": "處理過要講明。唔好當佢天然。",
+      "related": [
+        "natural-adj",
+        "jade-noun"
+      ],
+      "examples": [
+        {
+          "en": "This jade is treated.",
+          "yue": "呢塊玉處理過。",
+          "audio": "assets/audio/words/treated-adj.mp3",
+          "audioSlow": "assets/audio/words/treated-adj-slow.mp3",
+          "say": "This jade is [[tɹˈitɪd]]."
+        },
+        {
+          "en": "Treated stones look brighter.",
+          "yue": "處理過嘅石睇落光啲。",
+          "audio": "assets/audio/words/treated-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/treated-adj-ex2-slow.mp3",
+          "say": "[[tɹˈitɪd]] stones look brighter."
+        }
+      ]
+    },
+    {
+      "id": "sparkle-verb",
+      "lemma": "sparkle",
+      "pos": "verb",
+      "senseId": "glitter",
+      "ipa": "/ˈspɑɹ.kəl/",
+      "syllables": [
+        "spar",
+        "kle"
+      ],
+      "syllableIpa": [
+        "ˈspɑɹ",
+        "kəl"
+      ],
+      "stress": 1,
+      "arpabet": "S P AA1 R K AH0 L",
+      "audio": "assets/audio/words/sparkle-verb.mp3",
+      "audioSlow": "assets/audio/words/sparkle-verb-slow.mp3",
+      "glossYue": "閃光",
+      "glossZh": "闪光",
+      "jyutping": "sim2 gwong1",
+      "collocations": [
+        "diamonds sparkle"
+      ],
+      "example": "Diamonds sparkle in the light.",
+      "exampleYue": "鑽石喺光下面會閃。",
+      "say": "Diamonds sparkle in the light.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "sparkle",
+      "phrase": false,
+      "audioSha256": "8eadee08ad1f74330877044e1b57e604750433069dde73296df2f6a1dddc0fe7",
+      "register": "櫃檯",
+      "usageNotes": "Diamonds sparkle.",
+      "pitfallsYue": "閃光係睇落，唔好講成燈。",
+      "related": [
+        "diamond-noun",
+        "gemstone-noun"
+      ],
+      "examples": [
+        {
+          "en": "Diamonds sparkle in the light.",
+          "yue": "鑽石喺光下面會閃。",
+          "audio": "assets/audio/words/sparkle-verb.mp3",
+          "audioSlow": "assets/audio/words/sparkle-verb-slow.mp3",
+          "say": "Diamonds sparkle in the light."
+        },
+        {
+          "en": "I like the sparkle of this ring.",
+          "yue": "我鍾意呢隻戒指嘅閃光。",
+          "audio": "assets/audio/words/sparkle-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/sparkle-verb-ex2-slow.mp3",
+          "say": "I like the sparkle of this ring."
+        }
+      ]
+    },
+    {
+      "id": "setting-noun",
+      "lemma": "setting",
+      "pos": "noun",
+      "senseId": "mount",
+      "ipa": "/ˈsɛt.ɪŋ/",
+      "syllables": [
+        "set",
+        "ting"
+      ],
+      "syllableIpa": [
+        "ˈsɛt",
+        "ɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "S EH1 T IH0 NG",
+      "audio": "assets/audio/words/setting-noun.mp3",
+      "audioSlow": "assets/audio/words/setting-noun-slow.mp3",
+      "glossYue": "鑲托",
+      "glossZh": "镶托",
+      "jyutping": "soeng3 tok3",
+      "collocations": [
+        "diamond setting"
+      ],
+      "example": "This setting is eighteen karat gold.",
+      "exampleYue": "呢個鑲托係十八開金。",
+      "say": "This setting is eighteen [[kˈɛɹət]] gold.",
+      "variants": [],
+      "note": "呢度係托住寶石嘅鑲托。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "setting",
+      "phrase": false,
+      "audioSha256": "c29176f6d62874ae09c29a8a9a4111d5980f155bf439a0c9f3abfeffc3b0184d",
+      "register": "櫃檯",
+      "usageNotes": "The setting holds the stone. 鑲托。",
+      "pitfallsYue": "setting 呢度係托住寶石嗰件，唔係場景。",
+      "related": [
+        "diamond-noun",
+        "karat-noun"
+      ],
+      "examples": [
+        {
+          "en": "This setting is eighteen karat gold.",
+          "yue": "呢個鑲托係十八開金。",
+          "audio": "assets/audio/words/setting-noun.mp3",
+          "audioSlow": "assets/audio/words/setting-noun-slow.mp3",
+          "say": "This setting is eighteen [[kˈɛɹət]] gold."
+        },
+        {
+          "en": "The diamond setting is tight.",
+          "yue": "粒鑽石個鑲托好穩。",
+          "audio": "assets/audio/words/setting-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/setting-noun-ex2-slow.mp3",
+          "say": "The [[dˈaɪmənd]] setting is tight."
+        }
+      ]
+    },
+    {
+      "id": "size-noun",
+      "lemma": "size",
+      "pos": "noun",
+      "senseId": "garment-measure",
+      "ipa": "/ˈsaɪz/",
+      "syllables": [
+        "size"
+      ],
+      "syllableIpa": [
+        "ˈsaɪz"
+      ],
+      "stress": 1,
+      "arpabet": "S AY1 Z",
+      "audio": "assets/audio/words/size-noun.mp3",
+      "audioSlow": "assets/audio/words/size-noun-slow.mp3",
+      "glossYue": "碼",
+      "glossZh": "码",
+      "jyutping": "maa5",
+      "collocations": [
+        "ring size",
+        "the right size"
+      ],
+      "example": "This size is a little tight.",
+      "exampleYue": "呢個碼有啲緊。",
+      "say": "This size is a little tight.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "size",
+      "phrase": false,
+      "audioSha256": "d5dc70d9d7d1b890620646dd643c3735bc41d1a1d1a59c2902a3958d68958157",
+      "register": "櫃檯",
+      "usageNotes": "What size is this ring?",
+      "pitfallsYue": "碼係尺寸。唔好同 prize 撈。",
+      "related": [
+        "fit-verb",
+        "tight-adj"
+      ],
+      "miniDialogue": [
+        {
+          "en": "What size is this?",
+          "yue": "呢件幾多碼？"
+        },
+        {
+          "en": "This size is a little tight.",
+          "yue": "呢個碼有啲緊。"
+        }
+      ],
+      "examples": [
+        {
+          "en": "This size is a little tight.",
+          "yue": "呢個碼有啲緊。",
+          "audio": "assets/audio/words/size-noun.mp3",
+          "audioSlow": "assets/audio/words/size-noun-slow.mp3",
+          "say": "This size is a little tight."
+        },
+        {
+          "en": "What size is this ring?",
+          "yue": "呢隻戒指幾多碼？",
+          "audio": "assets/audio/words/size-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/size-noun-ex2-slow.mp3",
+          "say": "What size is this ring?"
+        }
+      ]
+    },
+    {
+      "id": "measure-verb",
+      "lemma": "measure",
+      "pos": "verb",
+      "senseId": "take-measure",
+      "ipa": "/ˈmɛ.ʒɚ/",
+      "syllables": [
+        "meas",
+        "ure"
+      ],
+      "syllableIpa": [
+        "ˈmɛ",
+        "ʒɚ"
+      ],
+      "stress": 1,
+      "arpabet": "M EH1 ZH ER0",
+      "audio": "assets/audio/words/measure-verb.mp3",
+      "audioSlow": "assets/audio/words/measure-verb-slow.mp3",
+      "glossYue": "量度",
+      "glossZh": "量度",
+      "jyutping": "loeng4 dok6",
+      "collocations": [
+        "measure a finger"
+      ],
+      "example": "Can you measure my finger?",
+      "exampleYue": "可唔可以量吓我隻手指？",
+      "say": "Can you measure my finger?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "measure",
+      "phrase": false,
+      "audioSha256": "fe670b09defe72d2d5e4eb810fc0232b0c50d960c904fd4244c484271c62caad",
+      "register": "櫃檯",
+      "usageNotes": "Can you measure my finger?",
+      "pitfallsYue": "量手指或者手腕。measure 係動作。",
+      "related": [
+        "finger-noun",
+        "wrist-noun"
+      ],
+      "examples": [
+        {
+          "en": "Can you measure my finger?",
+          "yue": "可唔可以量吓我隻手指？",
+          "audio": "assets/audio/words/measure-verb.mp3",
+          "audioSlow": "assets/audio/words/measure-verb-slow.mp3",
+          "say": "Can you measure my finger?"
+        },
+        {
+          "en": "Please measure my wrist.",
+          "yue": "唔該量吓我隻手腕。",
+          "audio": "assets/audio/words/measure-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/measure-verb-ex2-slow.mp3",
+          "say": "Please measure my wrist."
+        }
+      ]
+    },
+    {
+      "id": "try-on-phrase",
+      "lemma": "try on",
+      "pos": "phrase",
+      "senseId": "wear-to-test",
+      "ipa": "/ˈtɹaɪ ˈɔn/",
+      "syllables": [
+        "try",
+        "on"
+      ],
+      "syllableIpa": [
+        "ˈtɹaɪ",
+        "ˈɔn"
+      ],
+      "stress": 1,
+      "arpabet": "T R AY1 AO1 N",
+      "audio": "assets/audio/words/try-on-phrase.mp3",
+      "audioSlow": "assets/audio/words/try-on-phrase-slow.mp3",
+      "glossYue": "試戴",
+      "glossZh": "试戴",
+      "jyutping": "si3 daai3",
+      "collocations": [
+        "try this ring on"
+      ],
+      "example": "Would you like to try this ring on?",
+      "exampleYue": "想唔想試吓呢隻戒指？",
+      "say": "Would you like to try this ring on?",
+      "variants": [
+        "/ˈtɹaɪ ˈɑn/"
+      ],
+      "note": "on 喺呢句跟 CMU 第二條 AO1 N /ɔn/，因為未強制嘅句子係咁讀。第一條 AA1 N /ɑn/ 標做變體。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "try on",
+      "phrase": true,
+      "audioSha256": "422ee8b321b71852745cca1f089653c9a46ce4a3f855aa9fe6452f89dd7bf0b2",
+      "register": "客氣",
+      "usageNotes": "Would you like to try this ring on?",
+      "pitfallsYue": "try on 係試戴。on 呢句讀 /ɔn/。",
+      "related": [
+        "ring-noun",
+        "mirror-noun"
+      ],
+      "examples": [
+        {
+          "en": "Would you like to try this ring on?",
+          "yue": "想唔想試吓呢隻戒指？",
+          "audio": "assets/audio/words/try-on-phrase.mp3",
+          "audioSlow": "assets/audio/words/try-on-phrase-slow.mp3",
+          "say": "Would you like to try this ring on?"
+        },
+        {
+          "en": "I want to try the bracelet on.",
+          "yue": "我想試吓呢條手鏈。",
+          "audio": "assets/audio/words/try-on-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/try-on-phrase-ex2-slow.mp3",
+          "say": "I want to try the [[bɹˈeɪslət]] on."
+        }
+      ]
+    },
+    {
+      "id": "fit-verb",
+      "lemma": "fit",
+      "pos": "verb",
+      "senseId": "be-suitable",
+      "ipa": "/ˈfɪt/",
+      "syllables": [
+        "fit"
+      ],
+      "syllableIpa": [
+        "ˈfɪt"
+      ],
+      "stress": 1,
+      "arpabet": "F IH1 T",
+      "audio": "assets/audio/words/fit-verb.mp3",
+      "audioSlow": "assets/audio/words/fit-verb-slow.mp3",
+      "glossYue": "啱戴",
+      "glossZh": "合适",
+      "jyutping": "ngaam1 daai3",
+      "collocations": [
+        "does not fit",
+        "fits my wrist"
+      ],
+      "example": "This ring does not fit.",
+      "exampleYue": "呢隻戒指唔啱戴。",
+      "say": "This ring does not fit.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "fit",
+      "phrase": false,
+      "audioSha256": "55c1b365800facc526ffa42ffa207c210b4c3dd2382af115ab930ccfbd1fc387",
+      "register": "櫃檯",
+      "usageNotes": "This ring does not fit. How does it feel?",
+      "pitfallsYue": "fit 係啱唔啱。tight 先至係太緊。",
+      "related": [
+        "tight-adj",
+        "loose-adj"
+      ],
+      "examples": [
+        {
+          "en": "This ring does not fit.",
+          "yue": "呢隻戒指唔啱戴。",
+          "audio": "assets/audio/words/fit-verb.mp3",
+          "audioSlow": "assets/audio/words/fit-verb-slow.mp3",
+          "say": "This ring does not fit."
+        },
+        {
+          "en": "The bracelet fits my wrist.",
+          "yue": "條手鏈啱我手腕。",
+          "audio": "assets/audio/words/fit-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/fit-verb-ex2-slow.mp3",
+          "say": "The [[bɹˈeɪslət]] fits my wrist."
+        }
+      ]
+    },
+    {
+      "id": "tight-adj",
+      "lemma": "tight",
+      "pos": "adj",
+      "senseId": "too-small",
+      "ipa": "/ˈtaɪt/",
+      "syllables": [
+        "tight"
+      ],
+      "syllableIpa": [
+        "ˈtaɪt"
+      ],
+      "stress": 1,
+      "arpabet": "T AY1 T",
+      "audio": "assets/audio/words/tight-adj.mp3",
+      "audioSlow": "assets/audio/words/tight-adj-slow.mp3",
+      "glossYue": "緊",
+      "glossZh": "紧",
+      "jyutping": "gan2",
+      "collocations": [
+        "a little tight"
+      ],
+      "example": "This size is a little tight.",
+      "exampleYue": "呢個碼有啲緊。",
+      "say": "This size is a little tight.",
+      "variants": [],
+      "note": "太緊。fit 先至係啱唔啱。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "tight",
+      "phrase": false,
+      "audioSha256": "e2f53c8451700b47f7ad0cb8abd430494ed52e49b1b2681a17360a8af3ec4447",
+      "register": "櫃檯",
+      "usageNotes": "a little tight。太緊。",
+      "pitfallsYue": "太緊先講 tight。啱碼就係 fit。",
+      "related": [
+        "fit-verb",
+        "adjust-verb"
+      ],
+      "examples": [
+        {
+          "en": "This size is a little tight.",
+          "yue": "呢個碼有啲緊。",
+          "audio": "assets/audio/words/tight-adj.mp3",
+          "audioSlow": "assets/audio/words/tight-adj-slow.mp3",
+          "say": "This size is a little tight."
+        },
+        {
+          "en": "The ring feels tight.",
+          "yue": "隻戒指戴住有啲緊。",
+          "audio": "assets/audio/words/tight-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/tight-adj-ex2-slow.mp3",
+          "say": "The ring feels tight."
+        }
+      ]
+    },
+    {
+      "id": "loose-adj",
+      "lemma": "loose",
+      "pos": "adj",
+      "senseId": "too-roomy",
+      "ipa": "/ˈlus/",
+      "syllables": [
+        "loose"
+      ],
+      "syllableIpa": [
+        "ˈlus"
+      ],
+      "stress": 1,
+      "arpabet": "L UW1 S",
+      "audio": "assets/audio/words/loose-adj.mp3",
+      "audioSlow": "assets/audio/words/loose-adj-slow.mp3",
+      "glossYue": "鬆",
+      "glossZh": "松",
+      "jyutping": "sung1",
+      "collocations": [
+        "a little loose"
+      ],
+      "example": "This bracelet is a little loose.",
+      "exampleYue": "呢條手鏈有啲鬆。",
+      "say": "This [[bɹˈeɪslət]] is a little loose.",
+      "variants": [],
+      "note": "開頭 /l/，尾音 /s/。lose 先至係失去。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "loose",
+      "phrase": false,
+      "audioSha256": "a11694a100025e82e961a0b89d92dfc93aae676e78113188f62bd45e27aa0800",
+      "register": "櫃檯",
+      "usageNotes": "a little loose。開頭 /l/。",
+      "pitfallsYue": "loose 係鬆，尾音 /s/。lose 先至係失去。",
+      "related": [
+        "fit-verb",
+        "wrist-noun"
+      ],
+      "examples": [
+        {
+          "en": "This bracelet is a little loose.",
+          "yue": "呢條手鏈有啲鬆。",
+          "audio": "assets/audio/words/loose-adj.mp3",
+          "audioSlow": "assets/audio/words/loose-adj-slow.mp3",
+          "say": "This [[bɹˈeɪslət]] is a little loose."
+        },
+        {
+          "en": "A loose fit is not perfect.",
+          "yue": "太鬆就唔算啱碼。",
+          "audio": "assets/audio/words/loose-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/loose-adj-ex2-slow.mp3",
+          "say": "A loose fit is not [[pˈɜfˌɪkt]]."
+        }
+      ]
+    },
+    {
+      "id": "finger-noun",
+      "lemma": "finger",
+      "pos": "noun",
+      "senseId": "hand-digit",
+      "ipa": "/ˈfɪŋ.ɡɚ/",
+      "syllables": [
+        "fin",
+        "ger"
+      ],
+      "syllableIpa": [
+        "ˈfɪŋ",
+        "ɡɚ"
+      ],
+      "stress": 1,
+      "arpabet": "F IH1 NG G ER0",
+      "audio": "assets/audio/words/finger-noun.mp3",
+      "audioSlow": "assets/audio/words/finger-noun-slow.mp3",
+      "glossYue": "手指",
+      "glossZh": "手指",
+      "jyutping": "sau2 zi2",
+      "collocations": [
+        "measure my finger"
+      ],
+      "example": "Can you measure my finger?",
+      "exampleYue": "可唔可以量吓我隻手指？",
+      "say": "Can you measure my finger?",
+      "variants": [],
+      "note": "中間 /ŋ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "finger",
+      "phrase": false,
+      "audioSha256": "b1cee6cbcbb42a4a06ac877e6bfe8764408ae4a1698fcb9dc4bfb3c54cf5e68b",
+      "register": "櫃檯",
+      "usageNotes": "measure my finger。戒指戴喺手指。",
+      "pitfallsYue": "finger 有 /ŋ/。唔好讀成 fin-ner。",
+      "related": [
+        "ring-noun",
+        "measure-verb"
+      ],
+      "examples": [
+        {
+          "en": "Can you measure my finger?",
+          "yue": "可唔可以量吓我隻手指？",
+          "audio": "assets/audio/words/finger-noun.mp3",
+          "audioSlow": "assets/audio/words/finger-noun-slow.mp3",
+          "say": "Can you measure my finger?"
+        },
+        {
+          "en": "This ring is for the finger.",
+          "yue": "呢隻戒指係戴手指嘅。",
+          "audio": "assets/audio/words/finger-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/finger-noun-ex2-slow.mp3",
+          "say": "This ring is for the finger."
+        }
+      ]
+    },
+    {
+      "id": "wrist-noun",
+      "lemma": "wrist",
+      "pos": "noun",
+      "senseId": "arm-joint",
+      "ipa": "/ˈɹɪst/",
+      "syllables": [
+        "wrist"
+      ],
+      "syllableIpa": [
+        "ˈɹɪst"
+      ],
+      "stress": 1,
+      "arpabet": "R IH1 S T",
+      "audio": "assets/audio/words/wrist-noun.mp3",
+      "audioSlow": "assets/audio/words/wrist-noun-slow.mp3",
+      "glossYue": "手腕",
+      "glossZh": "手腕",
+      "jyutping": "sau2 wun2",
+      "collocations": [
+        "on the wrist"
+      ],
+      "example": "Please measure my wrist.",
+      "exampleYue": "唔該量吓我隻手腕。",
+      "say": "Please measure my wrist.",
+      "variants": [],
+      "note": "開頭 /ɹ/。手鏈戴喺手腕。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "wrist",
+      "phrase": false,
+      "audioSha256": "b414f6e013596db232213edbda7cf756d0620568805359070488366b25c392f9",
+      "register": "櫃檯",
+      "usageNotes": "on the wrist。手鏈戴喺手腕。",
+      "pitfallsYue": "開頭 /ɹ/。唔好讀成 list。",
+      "related": [
+        "bracelet-noun",
+        "measure-verb"
+      ],
+      "examples": [
+        {
+          "en": "Please measure my wrist.",
+          "yue": "唔該量吓我隻手腕。",
+          "audio": "assets/audio/words/wrist-noun.mp3",
+          "audioSlow": "assets/audio/words/wrist-noun-slow.mp3",
+          "say": "Please measure my wrist."
+        },
+        {
+          "en": "The bracelet sits on the wrist.",
+          "yue": "條手鏈戴喺手腕。",
+          "audio": "assets/audio/words/wrist-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/wrist-noun-ex2-slow.mp3",
+          "say": "The [[bɹˈeɪslət]] sits on the wrist."
+        }
+      ]
+    },
+    {
+      "id": "adjust-verb",
+      "lemma": "adjust",
+      "pos": "verb",
+      "senseId": "alter-fit",
+      "ipa": "/ə.ˈdʒʌst/",
+      "syllables": [
+        "ad",
+        "just"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈdʒʌst"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 JH AH1 S T",
+      "audio": "assets/audio/words/adjust-verb.mp3",
+      "audioSlow": "assets/audio/words/adjust-verb-slow.mp3",
+      "glossYue": "改碼",
+      "glossZh": "改码",
+      "jyutping": "gaai2 maa5",
+      "collocations": [
+        "adjust the size"
+      ],
+      "example": "I can adjust the size.",
+      "exampleYue": "我可以改吓個碼。",
+      "say": "I can adjust the size.",
+      "variants": [],
+      "note": "resize 唔喺呢輪。改碼用 adjust。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "adjust",
+      "phrase": false,
+      "audioSha256": "c88e07458afcab5fbfb581dd4cdf3f97d8ec376f1e2eb1e68e9c2dc27d6ef08c",
+      "register": "櫃檯",
+      "usageNotes": "I can adjust the size. 改碼。",
+      "pitfallsYue": "resize 呢輪唔教。改碼用 adjust。",
+      "related": [
+        "size-noun",
+        "tight-adj"
+      ],
+      "examples": [
+        {
+          "en": "I can adjust the size.",
+          "yue": "我可以改吓個碼。",
+          "audio": "assets/audio/words/adjust-verb.mp3",
+          "audioSlow": "assets/audio/words/adjust-verb-slow.mp3",
+          "say": "I can adjust the size."
+        },
+        {
+          "en": "We can adjust a tight ring.",
+          "yue": "太緊嘅戒指可以改。",
+          "audio": "assets/audio/words/adjust-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/adjust-verb-ex2-slow.mp3",
+          "say": "We can adjust a tight ring."
+        }
+      ]
+    },
+    {
+      "id": "mirror-noun",
+      "lemma": "mirror",
+      "pos": "noun",
+      "senseId": "looking-glass",
+      "ipa": "/ˈmɪɹ.ɚ/",
+      "syllables": [
+        "mir",
+        "ror"
+      ],
+      "syllableIpa": [
+        "ˈmɪɹ",
+        "ɚ"
+      ],
+      "stress": 1,
+      "arpabet": "M IH1 R ER0",
+      "audio": "assets/audio/words/mirror-noun.mp3",
+      "audioSlow": "assets/audio/words/mirror-noun-slow.mp3",
+      "glossYue": "鏡",
+      "glossZh": "镜",
+      "jyutping": "geng3",
+      "collocations": [
+        "look in the mirror"
+      ],
+      "example": "Please look in the mirror.",
+      "exampleYue": "請你照吓鏡。",
+      "say": "Please look in the mirror.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "mirror",
+      "phrase": false,
+      "audioSha256": "ae71ad3e9dfcb67dc9445e76ebf9bdcaf77f485fe7d7aaeae9a9b8ba6dbcb0b7",
+      "register": "櫃檯",
+      "usageNotes": "Look in the mirror.",
+      "pitfallsYue": "鏡。試完畀客人自己睇。",
+      "related": [
+        "try-on-phrase",
+        "fit-verb"
+      ],
+      "examples": [
+        {
+          "en": "Please look in the mirror.",
+          "yue": "請你照吓鏡。",
+          "audio": "assets/audio/words/mirror-noun.mp3",
+          "audioSlow": "assets/audio/words/mirror-noun-slow.mp3",
+          "say": "Please look in the mirror."
+        },
+        {
+          "en": "The mirror shows the fit.",
+          "yue": "照鏡就見到啱唔啱。",
+          "audio": "assets/audio/words/mirror-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/mirror-noun-ex2-slow.mp3",
+          "say": "The mirror shows the fit."
+        }
+      ]
+    },
+    {
+      "id": "perfect-adj",
+      "lemma": "perfect",
+      "pos": "adj",
+      "senseId": "ideal-fit",
+      "ipa": "/ˈpɝ.ˌfɪkt/",
+      "syllables": [
+        "per",
+        "fect"
+      ],
+      "syllableIpa": [
+        "ˈpɝ",
+        "ˌfɪkt"
+      ],
+      "stress": 1,
+      "arpabet": "P ER1 F IH2 K T",
+      "audio": "assets/audio/words/perfect-adj.mp3",
+      "audioSlow": "assets/audio/words/perfect-adj-slow.mp3",
+      "glossYue": "啱到極",
+      "glossZh": "刚好",
+      "jyutping": "ngaam1 dou3 gik6",
+      "collocations": [
+        "a perfect fit"
+      ],
+      "example": "This fit is perfect.",
+      "exampleYue": "呢個碼啱到極。",
+      "say": "This fit is [[pˈɜfˌɪkt]].",
+      "variants": [
+        "/pɚ.ˈfɛkt/"
+      ],
+      "note": "形容詞教 /ˈpɝ.ˌfɪkt/。CMU 第一條係動詞重音，標做變體。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "perfect",
+      "phrase": false,
+      "audioSha256": "fb3fe12b0d172ff5465671b3150778662cc7032568d63a01c351aa261814b461",
+      "register": "櫃檯",
+      "usageNotes": "The fit is perfect. 形容詞重音喺第一節。",
+      "pitfallsYue": "唔好讀成動詞嗰個重音。",
+      "related": [
+        "almost-adv",
+        "fit-verb"
+      ],
+      "examples": [
+        {
+          "en": "This fit is perfect.",
+          "yue": "呢個碼啱到極。",
+          "audio": "assets/audio/words/perfect-adj.mp3",
+          "audioSlow": "assets/audio/words/perfect-adj-slow.mp3",
+          "say": "This fit is [[pˈɜfˌɪkt]]."
+        },
+        {
+          "en": "The size is almost perfect.",
+          "yue": "個碼差唔多啱晒。",
+          "audio": "assets/audio/words/perfect-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/perfect-adj-ex2-slow.mp3",
+          "say": "The size is almost [[pˈɜfˌɪkt]]."
+        }
+      ]
+    },
+    {
+      "id": "almost-adv",
+      "lemma": "almost",
+      "pos": "adv",
+      "senseId": "nearly",
+      "ipa": "/ˈɔl.ˌmoʊst/",
+      "syllables": [
+        "al",
+        "most"
+      ],
+      "syllableIpa": [
+        "ˈɔl",
+        "ˌmoʊst"
+      ],
+      "stress": 1,
+      "arpabet": "AO1 L M OW2 S T",
+      "audio": "assets/audio/words/almost-adv.mp3",
+      "audioSlow": "assets/audio/words/almost-adv-slow.mp3",
+      "glossYue": "差唔多",
+      "glossZh": "差不多",
+      "jyutping": "caa1 m4 do1",
+      "collocations": [
+        "almost right",
+        "almost perfect"
+      ],
+      "example": "It feels almost right.",
+      "exampleYue": "戴落差唔多啱。",
+      "say": "It feels almost right.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "almost",
+      "phrase": false,
+      "audioSha256": "f9cb45cd046fe022d8b77b3de726568a63141c70982a22d37ea0a45aae06d9cb",
+      "register": "櫃檯",
+      "usageNotes": "almost right、almost perfect。差唔多。",
+      "pitfallsYue": "almost 唔等於完全啱。",
+      "related": [
+        "perfect-adj",
+        "size-noun"
+      ],
+      "examples": [
+        {
+          "en": "It feels almost right.",
+          "yue": "戴落差唔多啱。",
+          "audio": "assets/audio/words/almost-adv.mp3",
+          "audioSlow": "assets/audio/words/almost-adv-slow.mp3",
+          "say": "It feels almost right."
+        },
+        {
+          "en": "The size is almost perfect.",
+          "yue": "個碼差唔多啱晒。",
+          "audio": "assets/audio/words/almost-adv-ex2.mp3",
+          "audioSlow": "assets/audio/words/almost-adv-ex2-slow.mp3",
+          "say": "The size is almost [[pˈɜfˌɪkt]]."
+        }
+      ]
+    },
+    {
+      "id": "comfortable-adj",
+      "lemma": "comfortable",
+      "pos": "adj",
+      "senseId": "at-ease",
+      "ipa": "/ˈkʌm.fɚ.tə.bəl/",
+      "syllables": [
+        "com",
+        "for",
+        "ta",
+        "ble"
+      ],
+      "syllableIpa": [
+        "ˈkʌm",
+        "fɚ",
+        "tə",
+        "bəl"
+      ],
+      "stress": 1,
+      "arpabet": "K AH1 M F ER0 T AH0 B AH0 L",
+      "audio": "assets/audio/words/comfortable-adj.mp3",
+      "audioSlow": "assets/audio/words/comfortable-adj-slow.mp3",
+      "glossYue": "舒服",
+      "glossZh": "舒服",
+      "jyutping": "syu1 fuk6",
+      "collocations": [
+        "feels comfortable"
+      ],
+      "example": "This size feels comfortable.",
+      "exampleYue": "呢個碼戴得好舒服。",
+      "say": "This size feels comfortable.",
+      "variants": [],
+      "note": "四個音節 /ˈkʌm.fɚ.tə.bəl/。唔好吞中間。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "comfortable",
+      "phrase": false,
+      "audioSha256": "2947c8d889034c7ee16406191f805721fef1ddd20d0202c76dc6a9caf3cd260a",
+      "register": "櫃檯",
+      "usageNotes": "It feels comfortable. 四個音節。",
+      "pitfallsYue": "唔好吞中間嘅音。舒服先講，唔係完美。",
+      "related": [
+        "fit-verb",
+        "loose-adj"
+      ],
+      "examples": [
+        {
+          "en": "This size feels comfortable.",
+          "yue": "呢個碼戴得好舒服。",
+          "audio": "assets/audio/words/comfortable-adj.mp3",
+          "audioSlow": "assets/audio/words/comfortable-adj-slow.mp3",
+          "say": "This size feels comfortable."
+        },
+        {
+          "en": "The bracelet feels comfortable.",
+          "yue": "條手鏈戴得好舒服。",
+          "audio": "assets/audio/words/comfortable-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/comfortable-adj-ex2-slow.mp3",
+          "say": "The [[bɹˈeɪslət]] feels comfortable."
+        }
+      ]
+    },
+    {
+      "id": "cost-noun",
+      "lemma": "cost",
+      "pos": "noun",
+      "senseId": "amount-due",
+      "ipa": "/ˈkɑst/",
+      "syllables": [
+        "cost"
+      ],
+      "syllableIpa": [
+        "ˈkɑst"
+      ],
+      "stress": 1,
+      "arpabet": "K AA1 S T",
+      "audio": "assets/audio/words/cost-noun.mp3",
+      "audioSlow": "assets/audio/words/cost-noun-slow.mp3",
+      "glossYue": "費用",
+      "glossZh": "费用",
+      "jyutping": "fai3 jung6",
+      "collocations": [
+        "the cost",
+        "how much does this cost"
+      ],
+      "example": "How much does this cost?",
+      "exampleYue": "呢件幾多錢？",
+      "say": "How much does this [[kˈɑst]]?",
+      "variants": [
+        "/kɔst/"
+      ],
+      "note": "教 CMU 第一條 /ˈkɑst/。錄音強制 /ɑ/。第二條 /kɔst/ 標做變體。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "cost",
+      "phrase": false,
+      "audioSha256": "dee3eee4c5a410e35952f600e0d86669bdc76b8663d2faf3bc3273732c231490",
+      "register": "櫃檯",
+      "usageNotes": "How much does this cost? 讀 /kɑst/。",
+      "pitfallsYue": "唔好讀成 /kɔst/。cost 同 price 都係問價錢。",
+      "related": [
+        "price-noun",
+        "total-noun"
+      ],
+      "miniDialogue": [
+        {
+          "en": "How much does this cost?",
+          "yue": "呢件幾多錢？"
+        },
+        {
+          "en": "This piece is on sale today.",
+          "yue": "呢件今日特價。"
+        }
+      ],
+      "examples": [
+        {
+          "en": "How much does this cost?",
+          "yue": "呢件幾多錢？",
+          "audio": "assets/audio/words/cost-noun.mp3",
+          "audioSlow": "assets/audio/words/cost-noun-slow.mp3",
+          "say": "How much does this [[kˈɑst]]?"
+        },
+        {
+          "en": "The cost includes tax.",
+          "yue": "個價錢包稅。",
+          "audio": "assets/audio/words/cost-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/cost-noun-ex2-slow.mp3",
+          "say": "The [[kˈɑst]] includes tax."
+        }
+      ]
+    },
+    {
+      "id": "discount-noun",
+      "lemma": "discount",
+      "pos": "noun",
+      "senseId": "price-cut",
+      "ipa": "/ˈdɪs.kaʊnt/",
+      "syllables": [
+        "dis",
+        "count"
+      ],
+      "syllableIpa": [
+        "ˈdɪs",
+        "kaʊnt"
+      ],
+      "stress": 1,
+      "arpabet": "D IH1 S K AW0 N T",
+      "audio": "assets/audio/words/discount-noun.mp3",
+      "audioSlow": "assets/audio/words/discount-noun-slow.mp3",
+      "glossYue": "折扣",
+      "glossZh": "折扣",
+      "jyutping": "zit3 kau3",
+      "collocations": [
+        "a discount",
+        "ten percent discount"
+      ],
+      "example": "There is a discount today.",
+      "exampleYue": "今日有折扣。",
+      "say": "There is a discount today.",
+      "variants": [
+        "/dɪs.ˈkaʊnt/"
+      ],
+      "note": "名詞教 /ˈdɪs.kaʊnt/，重音喺第一節。CMU 第一條係動詞重音，標做變體。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "discount",
+      "phrase": false,
+      "audioSha256": "b42a710889c8a31340863a157c8b7a957828ed2b3be44468cd194fd209c9458d",
+      "register": "櫃檯",
+      "usageNotes": "Is there a discount? 名詞重音喺第一節。",
+      "pitfallsYue": "唔好將重音放到第二節。折扣先至係減價。",
+      "related": [
+        "percent-noun",
+        "sale-noun"
+      ],
+      "examples": [
+        {
+          "en": "There is a discount today.",
+          "yue": "今日有折扣。",
+          "audio": "assets/audio/words/discount-noun.mp3",
+          "audioSlow": "assets/audio/words/discount-noun-slow.mp3",
+          "say": "There is a discount today."
+        },
+        {
+          "en": "Is there a discount today?",
+          "yue": "今日有冇折扣？",
+          "audio": "assets/audio/words/discount-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/discount-noun-ex2-slow.mp3",
+          "say": "Is there a discount today?"
+        }
+      ]
+    },
+    {
+      "id": "percent-noun",
+      "lemma": "percent",
+      "pos": "noun",
+      "senseId": "per-hundred",
+      "ipa": "/pɚ.ˈsɛnt/",
+      "syllables": [
+        "per",
+        "cent"
+      ],
+      "syllableIpa": [
+        "pɚ",
+        "ˈsɛnt"
+      ],
+      "stress": 2,
+      "arpabet": "P ER0 S EH1 N T",
+      "audio": "assets/audio/words/percent-noun.mp3",
+      "audioSlow": "assets/audio/words/percent-noun-slow.mp3",
+      "glossYue": "百分比",
+      "glossZh": "百分比",
+      "jyutping": "baak3 fan6 bei2",
+      "collocations": [
+        "ten percent",
+        "percent off"
+      ],
+      "example": "It is ten percent off.",
+      "exampleYue": "呢件減百分之十。",
+      "say": "It is ten percent off.",
+      "variants": [],
+      "note": "重音喺第二節 /pɚ.ˈsɛnt/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "percent",
+      "phrase": false,
+      "audioSha256": "672d5d01532cca27d004c4b2c977552b0c99bf0aeaae7edd989374398715ca3e",
+      "register": "櫃檯",
+      "usageNotes": "ten percent off。重音喺第二節。",
+      "pitfallsYue": "十個 percent 先係一成。唔好話成十折。",
+      "related": [
+        "off-adv",
+        "discount-noun"
+      ],
+      "examples": [
+        {
+          "en": "It is ten percent off.",
+          "yue": "呢件減百分之十。",
+          "audio": "assets/audio/words/percent-noun.mp3",
+          "audioSlow": "assets/audio/words/percent-noun-slow.mp3",
+          "say": "It is ten percent off."
+        },
+        {
+          "en": "Ten percent off the price.",
+          "yue": "價錢減百分之十。",
+          "audio": "assets/audio/words/percent-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/percent-noun-ex2-slow.mp3",
+          "say": "Ten percent off the price."
+        }
+      ]
+    },
+    {
+      "id": "off-adv",
+      "lemma": "off",
+      "pos": "adv",
+      "senseId": "taken-from",
+      "ipa": "/ˈɔf/",
+      "syllables": [
+        "off"
+      ],
+      "syllableIpa": [
+        "ˈɔf"
+      ],
+      "stress": 1,
+      "arpabet": "AO1 F",
+      "audio": "assets/audio/words/off-adv.mp3",
+      "audioSlow": "assets/audio/words/off-adv-slow.mp3",
+      "glossYue": "減",
+      "glossZh": "减",
+      "jyutping": "gaam2",
+      "collocations": [
+        "percent off",
+        "ten percent off"
+      ],
+      "example": "It is ten percent off.",
+      "exampleYue": "呢件減百分之十。",
+      "say": "It is ten percent off.",
+      "variants": [],
+      "note": "呢度係減價，唔係關門。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "off",
+      "phrase": false,
+      "audioSha256": "ac550c8a672bd58a8b57bf9ac8793869e3b4feca97db4e1d483747580829898a",
+      "register": "櫃檯",
+      "usageNotes": "ten percent off。減。",
+      "pitfallsYue": "off 呢度係減，唔係關門。",
+      "related": [
+        "percent-noun",
+        "sale-noun"
+      ],
+      "examples": [
+        {
+          "en": "It is ten percent off.",
+          "yue": "呢件減百分之十。",
+          "audio": "assets/audio/words/off-adv.mp3",
+          "audioSlow": "assets/audio/words/off-adv-slow.mp3",
+          "say": "It is ten percent off."
+        },
+        {
+          "en": "This piece is ten percent off.",
+          "yue": "呢件減一成。",
+          "audio": "assets/audio/words/off-adv-ex2.mp3",
+          "audioSlow": "assets/audio/words/off-adv-ex2-slow.mp3",
+          "say": "This piece is ten percent off."
+        }
+      ]
+    },
+    {
+      "id": "special-adj",
+      "lemma": "special",
+      "pos": "adj",
+      "senseId": "not-regular",
+      "ipa": "/ˈspɛ.ʃəl/",
+      "syllables": [
+        "spe",
+        "cial"
+      ],
+      "syllableIpa": [
+        "ˈspɛ",
+        "ʃəl"
+      ],
+      "stress": 1,
+      "arpabet": "S P EH1 SH AH0 L",
+      "audio": "assets/audio/words/special-adj.mp3",
+      "audioSlow": "assets/audio/words/special-adj-slow.mp3",
+      "glossYue": "特別",
+      "glossZh": "特别",
+      "jyutping": "dak6 bit6",
+      "collocations": [
+        "a special offer"
+      ],
+      "example": "This is a special offer.",
+      "exampleYue": "呢個係特別優惠。",
+      "say": "This is a special offer.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "special",
+      "phrase": false,
+      "audioSha256": "d824f4cfd215d26ff0d10d389e829c70bac8dc114d06c0602e5736469c05f02c",
+      "register": "櫃檯",
+      "usageNotes": "a special offer。特別優惠。",
+      "pitfallsYue": "special 唔等於特價本身。特價係 sale。",
+      "related": [
+        "offer-noun",
+        "sale-noun"
+      ],
+      "examples": [
+        {
+          "en": "This is a special offer.",
+          "yue": "呢個係特別優惠。",
+          "audio": "assets/audio/words/special-adj.mp3",
+          "audioSlow": "assets/audio/words/special-adj-slow.mp3",
+          "say": "This is a special offer."
+        },
+        {
+          "en": "Today there is a special price.",
+          "yue": "今日有特別價錢。",
+          "audio": "assets/audio/words/special-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/special-adj-ex2-slow.mp3",
+          "say": "Today there is a special price."
+        }
+      ]
+    },
+    {
+      "id": "offer-noun",
+      "lemma": "offer",
+      "pos": "noun",
+      "senseId": "shop-offer",
+      "ipa": "/ˈɔ.fɚ/",
+      "syllables": [
+        "of",
+        "fer"
+      ],
+      "syllableIpa": [
+        "ˈɔ",
+        "fɚ"
+      ],
+      "stress": 1,
+      "arpabet": "AO1 F ER0",
+      "audio": "assets/audio/words/offer-noun.mp3",
+      "audioSlow": "assets/audio/words/offer-noun-slow.mp3",
+      "glossYue": "優惠",
+      "glossZh": "优惠",
+      "jyutping": "jau1 wai6",
+      "collocations": [
+        "a special offer"
+      ],
+      "example": "This offer includes tax.",
+      "exampleYue": "呢個優惠已經包稅。",
+      "say": "This [[ˈɔfɚ]] includes tax.",
+      "variants": [],
+      "note": "尾音 /ɚ/。唔好再加一個 /ɹ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "offer",
+      "phrase": false,
+      "audioSha256": "a8ae36b36953a9e3c6aa476399cf7703b25edf8b5cb591518399578259667937",
+      "register": "櫃檯",
+      "usageNotes": "a special offer。",
+      "pitfallsYue": "尾音係 /ɚ/，唔好加多一個 /ɹ/。",
+      "related": [
+        "special-adj",
+        "include-verb"
+      ],
+      "examples": [
+        {
+          "en": "This offer includes tax.",
+          "yue": "呢個優惠已經包稅。",
+          "audio": "assets/audio/words/offer-noun.mp3",
+          "audioSlow": "assets/audio/words/offer-noun-slow.mp3",
+          "say": "This [[ˈɔfɚ]] includes tax."
+        },
+        {
+          "en": "I like this offer.",
+          "yue": "我鍾意呢個優惠。",
+          "audio": "assets/audio/words/offer-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/offer-noun-ex2-slow.mp3",
+          "say": "I like this [[ˈɔfɚ]]."
+        }
+      ]
+    },
+    {
+      "id": "include-verb",
+      "lemma": "include",
+      "pos": "verb",
+      "senseId": "contain-in",
+      "ipa": "/ˌɪn.ˈklud/",
+      "syllables": [
+        "in",
+        "clude"
+      ],
+      "syllableIpa": [
+        "ˌɪn",
+        "ˈklud"
+      ],
+      "stress": 2,
+      "arpabet": "IH2 N K L UW1 D",
+      "audio": "assets/audio/words/include-verb.mp3",
+      "audioSlow": "assets/audio/words/include-verb-slow.mp3",
+      "glossYue": "包括",
+      "glossZh": "包括",
+      "jyutping": "baau1 kut3",
+      "collocations": [
+        "include tax",
+        "tax included"
+      ],
+      "example": "Does the total include tax?",
+      "exampleYue": "總數包唔包稅？",
+      "say": "Does the total include tax?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "include",
+      "phrase": false,
+      "audioSha256": "458a45f337057c00b851f799f0d45126bef561021ff75786aaf09c3feb60b473",
+      "register": "櫃檯",
+      "usageNotes": "The price includes tax. Does the total include tax?",
+      "pitfallsYue": "include 係包喺入面。唔好講成另外加。",
+      "related": [
+        "tax-noun",
+        "total-noun"
+      ],
+      "examples": [
+        {
+          "en": "Does the total include tax?",
+          "yue": "總數包唔包稅？",
+          "audio": "assets/audio/words/include-verb.mp3",
+          "audioSlow": "assets/audio/words/include-verb-slow.mp3",
+          "say": "Does the total include tax?"
+        },
+        {
+          "en": "The price includes tax.",
+          "yue": "價錢已經包稅。",
+          "audio": "assets/audio/words/include-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/include-verb-ex2-slow.mp3",
+          "say": "The price includes tax."
+        }
+      ]
+    },
+    {
+      "id": "tax-noun",
+      "lemma": "tax",
+      "pos": "noun",
+      "senseId": "added-levy",
+      "ipa": "/ˈtæks/",
+      "syllables": [
+        "tax"
+      ],
+      "syllableIpa": [
+        "ˈtæks"
+      ],
+      "stress": 1,
+      "arpabet": "T AE1 K S",
+      "audio": "assets/audio/words/tax-noun.mp3",
+      "audioSlow": "assets/audio/words/tax-noun-slow.mp3",
+      "glossYue": "稅",
+      "glossZh": "税",
+      "jyutping": "seoi3",
+      "collocations": [
+        "include tax",
+        "the tax"
+      ],
+      "example": "The tax is included.",
+      "exampleYue": "稅已經包咗。",
+      "say": "The tax is included.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "tax",
+      "phrase": false,
+      "audioSha256": "d9fd71723149b83574c64ef600d194f2563653ec91f0895a6c4b93055e4417b3",
+      "register": "櫃檯",
+      "usageNotes": "Tax is included.",
+      "pitfallsYue": "稅可以包咗，或者另外計。要講明。",
+      "related": [
+        "include-verb",
+        "total-noun"
+      ],
+      "examples": [
+        {
+          "en": "The tax is included.",
+          "yue": "稅已經包咗。",
+          "audio": "assets/audio/words/tax-noun.mp3",
+          "audioSlow": "assets/audio/words/tax-noun-slow.mp3",
+          "say": "The tax is included."
+        },
+        {
+          "en": "The total includes tax.",
+          "yue": "總數包咗稅。",
+          "audio": "assets/audio/words/tax-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/tax-noun-ex2-slow.mp3",
+          "say": "The total includes tax."
+        }
+      ]
+    },
+    {
+      "id": "total-noun",
+      "lemma": "total",
+      "pos": "noun",
+      "senseId": "full-sum",
+      "ipa": "/ˈtoʊ.təl/",
+      "syllables": [
+        "to",
+        "tal"
+      ],
+      "syllableIpa": [
+        "ˈtoʊ",
+        "təl"
+      ],
+      "stress": 1,
+      "arpabet": "T OW1 T AH0 L",
+      "audio": "assets/audio/words/total-noun.mp3",
+      "audioSlow": "assets/audio/words/total-noun-slow.mp3",
+      "glossYue": "總數",
+      "glossZh": "总数",
+      "jyutping": "zung2 sou3",
+      "collocations": [
+        "the total",
+        "it comes to"
+      ],
+      "example": "The total is a good deal.",
+      "exampleYue": "總數好抵買。",
+      "say": "The total is a good deal.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "total",
+      "phrase": false,
+      "audioSha256": "e381be5e005b6bd90d6c9e74655109a96ed26fe1c23c81a66c14a8f20811f37b",
+      "register": "櫃檯",
+      "usageNotes": "The total is a good deal. It comes to…",
+      "pitfallsYue": "總數係加埋之後。唔好只報未扣嘅價錢。",
+      "related": [
+        "tax-noun",
+        "deal-noun"
+      ],
+      "examples": [
+        {
+          "en": "The total is a good deal.",
+          "yue": "總數好抵買。",
+          "audio": "assets/audio/words/total-noun.mp3",
+          "audioSlow": "assets/audio/words/total-noun-slow.mp3",
+          "say": "The total is a good deal."
+        },
+        {
+          "en": "The total includes tax.",
+          "yue": "總數包咗稅。",
+          "audio": "assets/audio/words/total-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/total-noun-ex2-slow.mp3",
+          "say": "The total includes tax."
+        }
+      ]
+    },
+    {
+      "id": "budget-noun",
+      "lemma": "budget",
+      "pos": "noun",
+      "senseId": "spend-plan",
+      "ipa": "/ˈbʌ.dʒɪt/",
+      "syllables": [
+        "bud",
+        "get"
+      ],
+      "syllableIpa": [
+        "ˈbʌ",
+        "dʒɪt"
+      ],
+      "stress": 1,
+      "arpabet": "B AH1 JH IH0 T",
+      "audio": "assets/audio/words/budget-noun.mp3",
+      "audioSlow": "assets/audio/words/budget-noun-slow.mp3",
+      "glossYue": "預算",
+      "glossZh": "预算",
+      "jyutping": "jyu6 syun3",
+      "collocations": [
+        "within my budget"
+      ],
+      "example": "That is within my budget.",
+      "exampleYue": "呢個喺我預算之內。",
+      "say": "That is within my budget.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "budget",
+      "phrase": false,
+      "audioSha256": "3903abfa39212eb9096b9cf3103bc3006ed202bf193ab6454feac237716ac571",
+      "register": "櫃檯",
+      "usageNotes": "within my budget。預算。",
+      "pitfallsYue": "預算係客人自己嘅上限。唔好笑佢。",
+      "related": [
+        "price-noun",
+        "reasonable-adj"
+      ],
+      "examples": [
+        {
+          "en": "That is within my budget.",
+          "yue": "呢個喺我預算之內。",
+          "audio": "assets/audio/words/budget-noun.mp3",
+          "audioSlow": "assets/audio/words/budget-noun-slow.mp3",
+          "say": "That is within my budget."
+        },
+        {
+          "en": "This price fits my budget.",
+          "yue": "呢個價錢啱我預算。",
+          "audio": "assets/audio/words/budget-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/budget-noun-ex2-slow.mp3",
+          "say": "This price fits my budget."
+        }
+      ]
+    },
+    {
+      "id": "expensive-adj",
+      "lemma": "expensive",
+      "pos": "adj",
+      "senseId": "high-price",
+      "ipa": "/ɪk.ˈspɛn.sɪv/",
+      "syllables": [
+        "ex",
+        "pen",
+        "sive"
+      ],
+      "syllableIpa": [
+        "ɪk",
+        "ˈspɛn",
+        "sɪv"
+      ],
+      "stress": 2,
+      "arpabet": "IH0 K S P EH1 N S IH0 V",
+      "audio": "assets/audio/words/expensive-adj.mp3",
+      "audioSlow": "assets/audio/words/expensive-adj-slow.mp3",
+      "glossYue": "貴",
+      "glossZh": "贵",
+      "jyutping": "gwai3",
+      "collocations": [
+        "too expensive",
+        "more expensive"
+      ],
+      "example": "This ring is expensive.",
+      "exampleYue": "呢隻戒指好貴。",
+      "say": "This ring is [[ɪkspˈɛnsɪv]].",
+      "variants": [],
+      "note": "開頭 /ɪk/，重音喺第二節。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "expensive",
+      "phrase": false,
+      "audioSha256": "f3b6c3ee9aa52f6957f52041b01908f62b21bd6e7d279c5f8c34015115dc2ce5",
+      "register": "櫃檯",
+      "usageNotes": "This ring is expensive. 貴。",
+      "pitfallsYue": "開頭係 /ɪk/。可以再講折扣，唔好只話貴。",
+      "related": [
+        "reasonable-adj",
+        "platinum-noun"
+      ],
+      "examples": [
+        {
+          "en": "This ring is expensive.",
+          "yue": "呢隻戒指好貴。",
+          "audio": "assets/audio/words/expensive-adj.mp3",
+          "audioSlow": "assets/audio/words/expensive-adj-slow.mp3",
+          "say": "This ring is [[ɪkspˈɛnsɪv]]."
+        },
+        {
+          "en": "Platinum is more expensive.",
+          "yue": "鉑金更貴。",
+          "audio": "assets/audio/words/expensive-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/expensive-adj-ex2-slow.mp3",
+          "say": "[[plˈætənəm]] is more [[ɪkspˈɛnsɪv]]."
+        }
+      ]
+    },
+    {
+      "id": "reasonable-adj",
+      "lemma": "reasonable",
+      "pos": "adj",
+      "senseId": "fair-price",
+      "ipa": "/ˈɹi.zə.nə.bəl/",
+      "syllables": [
+        "rea",
+        "son",
+        "a",
+        "ble"
+      ],
+      "syllableIpa": [
+        "ˈɹi",
+        "zə",
+        "nə",
+        "bəl"
+      ],
+      "stress": 1,
+      "arpabet": "R IY1 Z AH0 N AH0 B AH0 L",
+      "audio": "assets/audio/words/reasonable-adj.mp3",
+      "audioSlow": "assets/audio/words/reasonable-adj-slow.mp3",
+      "glossYue": "合理",
+      "glossZh": "合理",
+      "jyutping": "hap6 lei5",
+      "collocations": [
+        "a reasonable price"
+      ],
+      "example": "The price is reasonable.",
+      "exampleYue": "呢個價錢合理。",
+      "say": "The price is reasonable.",
+      "variants": [
+        "/ˈɹiz.nə.bəl/"
+      ],
+      "note": "教四音節 /ˈɹi.zə.nə.bəl/。CMU 第二條少一個音，標做變體。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "reasonable",
+      "phrase": false,
+      "audioSha256": "77741e80f2be6d6b7763837a1fa2efd7c68c70be60d9245c32497393c400c0df",
+      "register": "櫃檯",
+      "usageNotes": "The price is reasonable. 四個音節。",
+      "pitfallsYue": "合理唔等於平。有折扣可以再合理啲。",
+      "related": [
+        "price-noun",
+        "discount-noun"
+      ],
+      "examples": [
+        {
+          "en": "The price is reasonable.",
+          "yue": "呢個價錢合理。",
+          "audio": "assets/audio/words/reasonable-adj.mp3",
+          "audioSlow": "assets/audio/words/reasonable-adj-slow.mp3",
+          "say": "The price is reasonable."
+        },
+        {
+          "en": "A discount makes it reasonable.",
+          "yue": "有折扣就合理啲。",
+          "audio": "assets/audio/words/reasonable-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/reasonable-adj-ex2-slow.mp3",
+          "say": "A discount makes it reasonable."
+        }
+      ]
+    },
+    {
+      "id": "worth-adj",
+      "lemma": "worth",
+      "pos": "adj",
+      "senseId": "deserved",
+      "ipa": "/ˈwɝθ/",
+      "syllables": [
+        "worth"
+      ],
+      "syllableIpa": [
+        "ˈwɝθ"
+      ],
+      "stress": 1,
+      "arpabet": "W ER1 TH",
+      "audio": "assets/audio/words/worth-adj.mp3",
+      "audioSlow": "assets/audio/words/worth-adj-slow.mp3",
+      "glossYue": "值得",
+      "glossZh": "值得",
+      "jyutping": "zik6 dak1",
+      "collocations": [
+        "worth it",
+        "worth the price"
+      ],
+      "example": "This jade is worth it.",
+      "exampleYue": "呢塊玉值得買。",
+      "say": "This jade is worth it.",
+      "variants": [],
+      "note": "中間 /θ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "worth",
+      "phrase": false,
+      "audioSha256": "50f91649fa108bba7da5957e791a0dcbbf122dc537dd97dd04e241c07f2da395",
+      "register": "櫃檯",
+      "usageNotes": "It is worth it. 值得。",
+      "pitfallsYue": "worth 中間有 /θ/。值得先係買得過。",
+      "related": [
+        "deal-noun",
+        "jade-noun"
+      ],
+      "examples": [
+        {
+          "en": "This jade is worth it.",
+          "yue": "呢塊玉值得買。",
+          "audio": "assets/audio/words/worth-adj.mp3",
+          "audioSlow": "assets/audio/words/worth-adj-slow.mp3",
+          "say": "This jade is worth it."
+        },
+        {
+          "en": "The deal is worth it.",
+          "yue": "呢單好值得。",
+          "audio": "assets/audio/words/worth-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/worth-adj-ex2-slow.mp3",
+          "say": "The deal is worth it."
+        }
+      ]
+    },
+    {
+      "id": "deal-noun",
+      "lemma": "deal",
+      "pos": "noun",
+      "senseId": "good-buy",
+      "ipa": "/ˈdil/",
+      "syllables": [
+        "deal"
+      ],
+      "syllableIpa": [
+        "ˈdil"
+      ],
+      "stress": 1,
+      "arpabet": "D IY1 L",
+      "audio": "assets/audio/words/deal-noun.mp3",
+      "audioSlow": "assets/audio/words/deal-noun-slow.mp3",
+      "glossYue": "抵買",
+      "glossZh": "划算",
+      "jyutping": "dai2 maai5",
+      "collocations": [
+        "a good deal"
+      ],
+      "example": "The total is a good deal.",
+      "exampleYue": "總數好抵買。",
+      "say": "The total is a good deal.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "deal",
+      "phrase": false,
+      "audioSha256": "8bac6d36db437a205779b3b70ee78f88aeeede23dfe05f0f077b0349e1ee0f65",
+      "register": "櫃檯",
+      "usageNotes": "a good deal。抵買。",
+      "pitfallsYue": "deal 呢度係抵買，唔係交易文件。",
+      "related": [
+        "sale-noun",
+        "total-noun"
+      ],
+      "examples": [
+        {
+          "en": "The total is a good deal.",
+          "yue": "總數好抵買。",
+          "audio": "assets/audio/words/deal-noun.mp3",
+          "audioSlow": "assets/audio/words/deal-noun-slow.mp3",
+          "say": "The total is a good deal."
+        },
+        {
+          "en": "This sale is a good deal.",
+          "yue": "呢個特價好抵買。",
+          "audio": "assets/audio/words/deal-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/deal-noun-ex2-slow.mp3",
+          "say": "This sale is a good deal."
+        }
+      ]
+    },
+    {
+      "id": "sale-noun",
+      "lemma": "sale",
+      "pos": "noun",
+      "senseId": "cut-event",
+      "ipa": "/ˈseɪl/",
+      "syllables": [
+        "sale"
+      ],
+      "syllableIpa": [
+        "ˈseɪl"
+      ],
+      "stress": 1,
+      "arpabet": "S EY1 L",
+      "audio": "assets/audio/words/sale-noun.mp3",
+      "audioSlow": "assets/audio/words/sale-noun-slow.mp3",
+      "glossYue": "特價",
+      "glossZh": "特价",
+      "jyutping": "dak6 gaa3",
+      "collocations": [
+        "on sale",
+        "a sale"
+      ],
+      "example": "This piece is on sale today.",
+      "exampleYue": "呢件今日特價。",
+      "say": "This piece is on sale today.",
+      "variants": [],
+      "note": "尾音 /l/。sale 係特價，sell 先至係賣。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "sale",
+      "phrase": false,
+      "audioSha256": "2242f1f2146a6a98c941863db796afd5098a25c6ad65aaeda5bf8085785bdb32",
+      "register": "櫃檯",
+      "usageNotes": "on sale。尾音 /l/。",
+      "pitfallsYue": "sale 係特價。sell 先至係賣。",
+      "related": [
+        "discount-noun",
+        "price-noun"
+      ],
+      "examples": [
+        {
+          "en": "This piece is on sale today.",
+          "yue": "呢件今日特價。",
+          "audio": "assets/audio/words/sale-noun.mp3",
+          "audioSlow": "assets/audio/words/sale-noun-slow.mp3",
+          "say": "This piece is on sale today."
+        },
+        {
+          "en": "The earrings are on sale.",
+          "yue": "對耳環而家特價。",
+          "audio": "assets/audio/words/sale-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/sale-noun-ex2-slow.mp3",
+          "say": "The earrings are on sale."
+        }
+      ]
     }
   ]
 }

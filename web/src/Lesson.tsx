@@ -24,6 +24,9 @@ function tipFor(id: string): string {
   if (id === "F4") return "/l/ 舌尖抵上顎，氣由兩邊出。/n/ 氣由鼻出。";
   if (id === "J2") return "w 要圓唇，v 係上牙輕碰下唇。";
   if (id === "J3") return "this 尾係清 /s/，these 尾係有聲 /z/。pair 同 pearl 唔好撈。";
+  if (id === "J4") return "authentic 中間係 /θ/。白金唔係鉑金。玉只講材料，唔好講醫療功效。";
+  if (id === "J5") return "loose 開頭係 /l/，尾音 /s/。tight 係太緊，fit 係啱唔啱。";
+  if (id === "J6") return "sale 尾音係 /l/。discount 名詞重音喺第一節。cost 讀 /ˈkɑst/。";
   if (id === "T1") return "sure、show 先係 /ʃ/。check-in 嘅 check 係 /tʃ/，前面有一粒塞音。";
   if (id === "T2") return "liquid、left、laptop 都有 /l/。straight 係 /eɪ/，唔好讀成 street。";
   if (id === "R1") return "美式 /r/ 舌尖唔好掂到上顎。table 本身冇 /r/。";
@@ -258,7 +261,17 @@ function Choices({
           else if (done && picked === i && i !== answer) cls += " miss";
           else if (picked === i) cls += " picked";
           return (
-            <button key={`${choice}-${i}`} className={cls} type="button" onClick={() => { if (!done) setPicked(i); }}>
+            <button
+              key={`${choice}-${i}`}
+              className={cls}
+              type="button"
+              onClick={() => {
+                if (done) return;
+                setPicked(i);
+                setDone(true);
+                onResult?.(i === answer);
+              }}
+            >
               {choice}
             </button>
           );
@@ -267,20 +280,7 @@ function Choices({
       {done && explain && <p className="note">{explain}</p>}
       {done && !explain && <p className="note">{picked === answer ? "啱。" : "記住呢個就得，唔使重來。"}</p>}
       {!done ? (
-        <div className="stack">
-          <button
-            className="btn block"
-            type="button"
-            disabled={picked === null}
-            onClick={() => {
-              setDone(true);
-              onResult?.(picked === answer);
-            }}
-          >
-            對一對
-          </button>
-          <button className="btn ghost block" type="button" onClick={onNext}>跳過呢題</button>
-        </div>
+        <button className="btn ghost block" type="button" onClick={onNext}>跳過呢題</button>
       ) : (
         <button className="btn block" type="button" onClick={onNext}>{nextLabel}</button>
       )}
@@ -545,6 +545,9 @@ function Recap({ lesson, score, onNext }: { lesson: Lesson; score: number; onNex
   const profile = useStore((s) => s.profile);
   return (
     <>
+      <div className="confetti" aria-hidden="true">
+        <span /><span /><span /><span /><span />
+      </div>
       <p className="who">放低今日</p>
       <h2>{lesson.canDoYue}</h2>
       <p className="lede">小測 {score} / {lesson.quiz.length}。答錯唔會扣任何嘢，生字已經排咗入重溫。</p>
@@ -574,7 +577,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪十一課你行完啦。到期嘅卡會喺重溫等你。</p>
+        <p className="lede">呢輪十四課你行完啦。到期嘅卡會喺重溫等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );

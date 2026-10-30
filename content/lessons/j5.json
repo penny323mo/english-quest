@@ -1,0 +1,319 @@
+{
+  "id": "J5",
+  "unit": "J",
+  "titleYue": "尺寸同試戴",
+  "titleEn": "Sizing and try-on",
+  "canDoYue": "你能夠量碼同請人試戴。",
+  "canDoEn": "Offer a try-on, measure a finger, and say if it is tight or loose.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j5.webp",
+  "cast": [
+    "mei",
+    "tom"
+  ],
+  "cefr": "A2",
+  "lemmas": [
+    "size-noun",
+    "measure-verb",
+    "try-on-phrase",
+    "fit-verb",
+    "tight-adj",
+    "loose-adj",
+    "finger-noun",
+    "wrist-noun",
+    "adjust-verb",
+    "mirror-noun",
+    "perfect-adj",
+    "almost-adv",
+    "comfortable-adj"
+  ],
+  "dialogue": [
+    {
+      "id": "j5-l1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Would you like to try this ring on?",
+      "glossYue": "想唔想試吓呢隻戒指？",
+      "audio": "assets/audio/lines/j5-l1.mp3",
+      "audioSlow": "assets/audio/lines/j5-l1-slow.mp3",
+      "say": "Would you like to try this ring on?"
+    },
+    {
+      "id": "j5-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Can you measure my finger?",
+      "glossYue": "可唔可以量吓我隻手指？",
+      "audio": "assets/audio/lines/j5-l2.mp3",
+      "audioSlow": "assets/audio/lines/j5-l2-slow.mp3",
+      "say": "Can you measure my finger?"
+    },
+    {
+      "id": "j5-l3",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "This size is a little tight.",
+      "glossYue": "呢個碼有啲緊。",
+      "audio": "assets/audio/lines/j5-l3.mp3",
+      "audioSlow": "assets/audio/lines/j5-l3-slow.mp3",
+      "say": "This size is a little tight."
+    },
+    {
+      "id": "j5-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "It feels almost right.",
+      "glossYue": "戴落差唔多啱。",
+      "audio": "assets/audio/lines/j5-l4.mp3",
+      "audioSlow": "assets/audio/lines/j5-l4-slow.mp3",
+      "say": "It feels almost right."
+    },
+    {
+      "id": "j5-l5",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "I can adjust it. Look in the mirror.",
+      "glossYue": "我可以改。你照吓鏡。",
+      "audio": "assets/audio/lines/j5-l5.mp3",
+      "audioSlow": "assets/audio/lines/j5-l5-slow.mp3",
+      "say": "I can adjust it. Look in the mirror."
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Would you like to try this ring on? 係？",
+      "choices": [
+        "請人試戴",
+        "報總數",
+        "問閘口點行"
+      ],
+      "answer": 0,
+      "explain": "try on 係試戴。等客人答完先動手。"
+    },
+    {
+      "prompt": "This size is a little tight. 隻戒指？",
+      "choices": [
+        "有啲緊",
+        "有啲鬆",
+        "係特價"
+      ],
+      "answer": 0,
+      "explain": "tight 係緊。鬆先至係 loose。"
+    },
+    {
+      "prompt": "Look in the mirror. 你想客人？",
+      "choices": [
+        "自己照鏡睇啱唔啱",
+        "遞護照",
+        "叫雞"
+      ],
+      "answer": 0,
+      "explain": "試完畀佢照鏡。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Would you like to try this ___ on?",
+      "example": "Would you like to try this ring on?",
+      "glossYue": "想唔想試吓呢隻⋯⋯？",
+      "answer": "ring",
+      "choices": [
+        "ring",
+        "menu",
+        "gate"
+      ]
+    },
+    {
+      "pattern": "Can you measure my ___?",
+      "example": "Can you measure my finger?",
+      "glossYue": "可唔可以量吓我隻⋯⋯？",
+      "answer": "finger",
+      "choices": [
+        "finger",
+        "passport",
+        "chicken"
+      ]
+    },
+    {
+      "pattern": "This size is a little ___.",
+      "example": "This size is a little tight.",
+      "glossYue": "呢個碼有啲⋯⋯。",
+      "answer": "tight",
+      "choices": [
+        "tight",
+        "sale",
+        "aisle"
+      ]
+    },
+    {
+      "pattern": "Look in the ___.",
+      "example": "Look in the mirror.",
+      "glossYue": "你照吓⋯⋯。",
+      "answer": "mirror",
+      "choices": [
+        "mirror",
+        "bin",
+        "menu"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "j5-l1",
+    "hint": "Would you like to try this ring on?"
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "Tom 話個碼有啲緊。你點接？",
+      "choices": [
+        "I can adjust it.",
+        "The total is a good deal.",
+        "Ship is short."
+      ],
+      "answer": 0,
+      "explain": "太緊可以改碼。呢輪用 adjust，唔用 resize。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Can",
+        "you",
+        "measure",
+        "my",
+        "finger"
+      ],
+      "answer": [
+        "Can",
+        "you",
+        "measure",
+        "my",
+        "finger"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "mei",
+    "intro": "Tom 想試戒指。等佢講完先答。問吓手感：How does it feel?",
+    "turns": [
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Can you measure my finger?",
+        "audio": "assets/audio/lines/j5-l2.mp3",
+        "audioSlow": "assets/audio/lines/j5-l2-slow.mp3",
+        "expect": "I can measure your finger.",
+        "keywords": [
+          "measure",
+          "finger"
+        ],
+        "modelAudio": "assets/audio/lines/j5-m1.mp3",
+        "modelSlow": "assets/audio/lines/j5-m1-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "It feels almost right.",
+        "audio": "assets/audio/lines/j5-l4.mp3",
+        "audioSlow": "assets/audio/lines/j5-l4-slow.mp3",
+        "expect": "I can adjust it.",
+        "keywords": [
+          "adjust"
+        ],
+        "modelAudio": "assets/audio/lines/j5-m2.mp3",
+        "modelSlow": "assets/audio/lines/j5-m2-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "It feels a little loose.",
+        "audio": "assets/audio/lines/j5-l6.mp3",
+        "audioSlow": "assets/audio/lines/j5-l6-slow.mp3",
+        "expect": "Look in the mirror.",
+        "keywords": [
+          "mirror"
+        ],
+        "modelAudio": "assets/audio/lines/j5-m3.mp3",
+        "modelSlow": "assets/audio/lines/j5-m3-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "loose-adj",
+      "choices": [
+        "loose",
+        "tight",
+        "size"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "finger-noun",
+      "choices": [
+        "finger",
+        "fit",
+        "wrist"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "size",
+      "choices": [
+        "碼",
+        "稅",
+        "玉"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "tight",
+      "choices": [
+        "緊",
+        "鬆",
+        "折扣"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個開頭係 /l/？",
+      "choices": [
+        "loose",
+        "tight",
+        "fit"
+      ],
+      "answer": 0,
+      "explain": "loose 開頭係 /l/。tight 係 /t/。fit 係短 /ɪ/。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "鬆，唔係失去",
+    "note": "loose 開頭係 /l/。舌尖抵住上顎後面，氣由兩邊出，尾音 /s/。tight 係太緊。fit 係啱唔啱。lose 先至係失去，呢課唔教。",
+    "pairs": [
+      {
+        "a": "loose-adj",
+        "b": "tight-adj"
+      },
+      {
+        "a": "finger-noun",
+        "b": "wrist-noun"
+      }
+    ],
+    "drill": [
+      "loose-adj",
+      "size-noun",
+      "finger-noun",
+      "mirror-noun",
+      "adjust-verb"
+    ]
+  },
+  "next": "J6"
+}
