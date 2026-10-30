@@ -165,8 +165,8 @@
   ],
   "chunks": [
     {
-      "pattern": "How much does this ___?",
-      "example": "How much does this cost?",
+      "pattern": "How much does this ___ if the tax is already included today?",
+      "example": "How much does this cost if the tax is already included today?",
       "glossYue": "呢件幾多⋯⋯？",
       "answer": "cost",
       "choices": [
@@ -176,8 +176,8 @@
       ]
     },
     {
-      "pattern": "This piece is on ___ today.",
-      "example": "This piece is on sale today.",
+      "pattern": "This piece is on ___ today, so the price is lower for you.",
+      "example": "This piece is on sale today, so the price is lower for you.",
       "glossYue": "呢件今日⋯⋯。",
       "answer": "sale",
       "choices": [
@@ -187,8 +187,8 @@
       ]
     },
     {
-      "pattern": "Ten percent ___.",
-      "example": "Ten percent off.",
+      "pattern": "The offer is ten percent ___ if you take both pieces today.",
+      "example": "The offer is ten percent off if you take both pieces today.",
       "glossYue": "減一成。",
       "answer": "off",
       "choices": [
@@ -198,8 +198,8 @@
       ]
     },
     {
-      "pattern": "That is within my ___.",
-      "example": "That is within my budget.",
+      "pattern": "That total is within my ___, so I can take the piece today.",
+      "example": "That total is within my budget, so I can take the piece today.",
       "glossYue": "呢個喺我⋯⋯之內。",
       "answer": "budget",
       "choices": [
@@ -294,7 +294,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "sale-noun",
       "choices": [
         "sale",
@@ -305,7 +305,7 @@
     },
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "discount-noun",
       "choices": [
         "discount",
@@ -316,7 +316,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "discount",
+      "prompt": "When a guest says \"discount\", what does that word or phrase mean here?",
       "choices": [
         "折扣",
         "碼",
@@ -326,7 +326,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "budget",
+      "prompt": "When a guest says \"budget\", what does that word or phrase mean here?",
       "choices": [
         "預算",
         "鑲托",
@@ -336,7 +336,7 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個尾音係 /l/？",
+      "prompt": "Choose the best answer to this lesson question: 邊個尾音係 /l/？",
       "choices": [
         "sale",
         "tax",

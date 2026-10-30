@@ -164,8 +164,8 @@
   ],
   "chunks": [
     {
-      "pattern": "I am allergic to ___.",
-      "example": "I am allergic to peanuts.",
+      "pattern": "I am allergic to ___, so the kitchen should keep them away.",
+      "example": "I am allergic to peanuts, so the kitchen should keep them away.",
       "glossYue": "我對⋯⋯過敏。",
       "answer": "peanuts",
       "choices": [
@@ -175,8 +175,8 @@
       ]
     },
     {
-      "pattern": "Could I have it ___ nuts?",
-      "example": "Could I have it without nuts?",
+      "pattern": "Could I have it ___ nuts, and with the sauce on the side?",
+      "example": "Could I have it without nuts, and with the sauce on the side?",
       "glossYue": "可唔可以⋯⋯果仁？",
       "answer": "without",
       "choices": [
@@ -186,8 +186,8 @@
       ]
     },
     {
-      "pattern": "Sauce on the ___, please.",
-      "example": "Sauce on the side, please.",
+      "pattern": "Could I have the sauce on the ___, please, not over the dish?",
+      "example": "Could I have the sauce on the side, please, not over the dish?",
       "glossYue": "醬⋯⋯，唔該。",
       "answer": "side",
       "choices": [
@@ -197,8 +197,8 @@
       ]
     },
     {
-      "pattern": "Thank you for ___ me.",
-      "example": "Thank you for telling me.",
+      "pattern": "Thank you for ___ me before the kitchen starts the dish.",
+      "example": "Thank you for telling me before the kitchen starts the dish.",
       "glossYue": "多謝你⋯⋯我知。",
       "answer": "telling",
       "choices": [
@@ -291,7 +291,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "shellfish-noun",
       "choices": [
         "shellfish",
@@ -302,7 +302,7 @@
     },
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "allergic-adj",
       "choices": [
         "allergic",
@@ -313,7 +313,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "gluten",
+      "prompt": "When a guest says \"gluten\", what does that word or phrase mean here?",
       "choices": [
         "麩質",
         "貝類",
@@ -323,7 +323,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "on the side",
+      "prompt": "When a guest says \"on the side\", what does that word or phrase mean here?",
       "choices": [
         "另上",
         "唔要",
@@ -333,7 +333,7 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個有 /l/？",
+      "prompt": "Choose the best answer to this lesson question: 邊個有 /l/？",
       "choices": [
         "shellfish",
         "spicy",
@@ -365,5 +365,5 @@
       "gluten-noun"
     ]
   },
-  "next": "J6"
+  "next": "T4"
 }

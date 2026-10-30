@@ -622,11 +622,12 @@
       "glossZh": "听",
       "jyutping": "teng1",
       "collocations": [
+        "listen to the guest",
         "listen again"
       ],
-      "example": "Listen. Ship is short.",
-      "exampleYue": "聽住。Ship 係短音。",
-      "say": "Listen. Ship is short.",
+      "example": "Please listen to the guest.",
+      "exampleYue": "唔該聽吓客人講。",
+      "say": "Please [[lˈɪsən]] to the guest.",
       "variants": [],
       "note": "t 唔發音。",
       "sources": [
@@ -638,7 +639,7 @@
       "senseMismatch": false,
       "cmuLemma": "listen",
       "phrase": false,
-      "audioSha256": "7f8a0b12c78e746d0791080b87642a80117acd0b336a341f22187023860469d4"
+      "audioSha256": "7cb737c27eaf8451df3a0e23326da8a0349e70cf25e1bd3290e9bd98d6b24ecf"
     },
     {
       "id": "short-adj",
@@ -1091,11 +1092,12 @@
       "glossZh": "保持",
       "jyutping": "bou2 ci4",
       "collocations": [
-        "keep it light"
+        "keep the receipt",
+        "keep it safe"
       ],
-      "example": "Keep it light.",
-      "exampleYue": "輕輕帶過。",
-      "say": "Keep it light.",
+      "example": "Please keep the receipt.",
+      "exampleYue": "唔該留住張單。",
+      "say": "Please keep the receipt.",
       "variants": [],
       "note": "",
       "sources": [
@@ -1107,7 +1109,7 @@
       "senseMismatch": false,
       "cmuLemma": "keep",
       "phrase": false,
-      "audioSha256": "a6f4a79101afcfc3b5d980cd839b1bffc648e8ed9c75a219bbd7fe2ccb52a28b"
+      "audioSha256": "b21305539721da9b525bb40fddce77cb08491754a63be4bb18170b5e466fe765"
     },
     {
       "id": "light-adj",
@@ -1205,12 +1207,12 @@
       "glossZh": "定冠词（弱读）",
       "jyutping": "",
       "collocations": [
-        "the sound",
-        "the menu"
+        "the menu",
+        "the guest"
       ],
-      "example": "The sound is short.",
-      "exampleYue": "個音好短。",
-      "say": "The sound is short.",
+      "example": "The menu is ready.",
+      "exampleYue": "餐牌準備好喇。",
+      "say": "[[ðə]] menu is ready.",
       "variants": [
         "/ði/ before a vowel",
         "/ðiː/ strong"
@@ -1225,7 +1227,7 @@
       "senseMismatch": false,
       "cmuLemma": "the",
       "phrase": false,
-      "audioSha256": "ed8c004583a3861bce9c632b1005f71cb4faf7e7d5133922bbe11e13dc369029"
+      "audioSha256": "920bfc36d6ce3ed221dc6ecb1551090a901c1e1ddba9a97afc0f9b281f1b7659"
     },
     {
       "id": "the-art-vowel",
@@ -2108,16 +2110,16 @@
       "glossZh": "的",
       "jyutping": "ge3",
       "collocations": [
-        "of course",
-        "a table of"
+        "a cup of tea",
+        "a piece of jade"
       ],
-      "example": "Of course.",
-      "exampleYue": "當然可以。",
-      "say": "Of course.",
+      "example": "I would like a cup of tea.",
+      "exampleYue": "我想要一杯茶。",
+      "say": "I would like a cup [[ˈʌv]] tea.",
       "variants": [
         "/əv/ weak, as in of course"
       ],
-      "note": "單字引用讀 /ʌv/。片語 of course 通常弱讀 /əv/。",
+      "note": "呢張卡教屬於嘅 of，引用讀 /ʌv/。of course 係另一個意思，通常弱讀 /əv/。",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
@@ -2127,7 +2129,7 @@
       "senseMismatch": false,
       "cmuLemma": "of",
       "phrase": false,
-      "audioSha256": "550b498fe0c0f738fc58964e5e729e31a530b5fc8aa75f11ee2adfc13fa326b6"
+      "audioSha256": "a8d8e02a605f497e175d82cf69e66098eb5415d3abff3001a07ba0add145bcc9"
     },
     {
       "id": "to-prep",
@@ -10320,11 +10322,12 @@
       "glossZh": "试戴",
       "jyutping": "si3 daai3",
       "collocations": [
-        "try this ring on"
+        "try on this ring",
+        "try on the bracelet"
       ],
-      "example": "Would you like to try this ring on?",
+      "example": "Would you like to try on this ring?",
       "exampleYue": "想唔想試吓呢隻戒指？",
-      "say": "Would you like to try this ring on?",
+      "say": "Would you like to try on this ring?",
       "variants": [
         "/ˈtɹaɪ ˈɑn/"
       ],
@@ -10337,7 +10340,7 @@
       "senseMismatch": false,
       "cmuLemma": "try on",
       "phrase": true,
-      "audioSha256": "422ee8b321b71852745cca1f089653c9a46ce4a3f855aa9fe6452f89dd7bf0b2",
+      "audioSha256": "78c36aa6965b918f3830540b2d3c468e8cf5d5e902e962da5f5efadc7a1b4a2c",
       "register": "客氣",
       "usageNotes": "Would you like to try this ring on?",
       "pitfallsYue": "try on 係試戴。on 呢句讀 /ɔn/。",
@@ -10347,18 +10350,18 @@
       ],
       "examples": [
         {
-          "en": "Would you like to try this ring on?",
+          "en": "Would you like to try on this ring?",
           "yue": "想唔想試吓呢隻戒指？",
           "audio": "assets/audio/words/try-on-phrase.mp3",
           "audioSlow": "assets/audio/words/try-on-phrase-slow.mp3",
-          "say": "Would you like to try this ring on?"
+          "say": "Would you like to try on this ring?"
         },
         {
-          "en": "I want to try the bracelet on.",
+          "en": "I want to try on the bracelet.",
           "yue": "我想試吓呢條手鏈。",
           "audio": "assets/audio/words/try-on-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/try-on-phrase-ex2-slow.mp3",
-          "say": "I want to try the [[bɹˈeɪslət]] on."
+          "say": "I want to try on the [[bɹˈeɪslət]]."
         }
       ]
     },
@@ -12149,9 +12152,9 @@
       "collocations": [
         "contactless pay"
       ],
-      "example": "You can tap your card here.",
+      "example": "You can tap your contactless card here.",
       "exampleYue": "你可以喺度拍卡。",
-      "say": "You can tap your card here.",
+      "say": "You can tap your contactless card here.",
       "variants": [],
       "note": "中間有 /l/。",
       "sources": [
@@ -12162,7 +12165,7 @@
       "senseMismatch": false,
       "cmuLemma": "contactless",
       "phrase": false,
-      "audioSha256": "a2fc7065f0f0b326d10b612c4d83201d8782cae5792a0d6cd5800c6689fd77e2",
+      "audioSha256": "6c2ec08452499990c3992b8b7c079b02a901f2e68ba257dce52ba89f77965498",
       "register": "櫃檯",
       "usageNotes": "你可以喺度拍卡。",
       "pitfallsYue": "中間有 /l/。拍卡就得，唔使插卡。",
@@ -12172,11 +12175,11 @@
       ],
       "examples": [
         {
-          "en": "You can tap your card here.",
+          "en": "You can tap your contactless card here.",
           "yue": "你可以喺度拍卡。",
           "audio": "assets/audio/words/contactless-adj.mp3",
           "audioSlow": "assets/audio/words/contactless-adj-slow.mp3",
-          "say": "You can tap your card here."
+          "say": "You can tap your contactless card here."
         },
         {
           "en": "Contactless pay is ready now.",
@@ -13755,11 +13758,11 @@
           "say": "Thank you for telling me."
         },
         {
-          "en": "Thank you for telling the kitchen.",
-          "yue": "多謝你話廚房知。",
+          "en": "Thank you for telling me about the kitchen.",
+          "yue": "多謝你話我知廚房嘅事。",
           "audio": "assets/audio/words/thank-you-for-telling-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/thank-you-for-telling-phrase-ex2-slow.mp3",
-          "say": "Thank you for telling the kitchen."
+          "say": "Thank you for telling me about the kitchen."
         }
       ]
     },
@@ -14514,6 +14517,1733 @@
           "audio": "assets/audio/words/wake-up-call-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/wake-up-call-phrase-ex2-slow.mp3",
           "say": "I need a wake-up call at seven."
+        }
+      ]
+    },
+    {
+      "id": "taxi-noun",
+      "lemma": "taxi",
+      "pos": "noun",
+      "senseId": "hired-car",
+      "ipa": "/ˈtæk.si/",
+      "syllables": [
+        "tax",
+        "i"
+      ],
+      "syllableIpa": [
+        "ˈtæk",
+        "si"
+      ],
+      "stress": 1,
+      "arpabet": "T AE1 K S IY0",
+      "audio": "assets/audio/words/taxi-noun.mp3",
+      "audioSlow": "assets/audio/words/taxi-noun-slow.mp3",
+      "glossYue": "的士",
+      "glossZh": "出租车",
+      "jyutping": "dik1 si6",
+      "collocations": [
+        "call a taxi",
+        "the taxi is here"
+      ],
+      "example": "The taxi is waiting at the corner.",
+      "exampleYue": "的士喺街角等緊。",
+      "say": "The taxi is waiting at the corner.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "taxi",
+      "phrase": false,
+      "audioSha256": "9db7465b95aefa144f030801bd0631c39b5542bae4e7d2071e94bd19a75a766e",
+      "register": "出行",
+      "usageNotes": "叫的士、的士到咗。",
+      "pitfallsYue": "taxi 唔等於巴士。",
+      "related": [
+        "corner-noun",
+        "meter-noun"
+      ],
+      "examples": [
+        {
+          "en": "The taxi is waiting at the corner.",
+          "yue": "的士喺街角等緊。",
+          "audio": "assets/audio/words/taxi-noun.mp3",
+          "audioSlow": "assets/audio/words/taxi-noun-slow.mp3",
+          "say": "The taxi is waiting at the corner."
+        },
+        {
+          "en": "Could you call a taxi for me?",
+          "yue": "可唔可以幫我叫架的士？",
+          "audio": "assets/audio/words/taxi-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/taxi-noun-ex2-slow.mp3",
+          "say": "Could you call a taxi for me?"
+        }
+      ]
+    },
+    {
+      "id": "destination-noun",
+      "lemma": "destination",
+      "pos": "noun",
+      "senseId": "end-place",
+      "ipa": "/ˌdɛs.tə.ˈneɪ.ʃən/",
+      "syllables": [
+        "des",
+        "ti",
+        "na",
+        "tion"
+      ],
+      "syllableIpa": [
+        "ˌdɛs",
+        "tə",
+        "ˈneɪ",
+        "ʃən"
+      ],
+      "stress": 3,
+      "arpabet": "D EH2 S T AH0 N EY1 SH AH0 N",
+      "audio": "assets/audio/words/destination-noun.mp3",
+      "audioSlow": "assets/audio/words/destination-noun-slow.mp3",
+      "glossYue": "目的地",
+      "glossZh": "目的地",
+      "jyutping": "muk6 dik1 dei6",
+      "collocations": [
+        "the destination",
+        "final destination"
+      ],
+      "example": "This address is the destination.",
+      "exampleYue": "呢個地址就係目的地。",
+      "say": "This address is the destination.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "destination",
+      "phrase": false,
+      "audioSha256": "b7bf928d6df5e94e624ceab639d3a7aa606f2178b5c084af6c6ddebfd2306ef8",
+      "register": "出行",
+      "usageNotes": "目的地就係你要去嗰度。",
+      "pitfallsYue": "重音喺 na，唔好讀成第一節。",
+      "related": [
+        "address-noun",
+        "taxi-noun"
+      ],
+      "examples": [
+        {
+          "en": "This address is the destination.",
+          "yue": "呢個地址就係目的地。",
+          "audio": "assets/audio/words/destination-noun.mp3",
+          "audioSlow": "assets/audio/words/destination-noun-slow.mp3",
+          "say": "This address is the destination."
+        },
+        {
+          "en": "The destination is opposite the hotel.",
+          "yue": "目的地喺酒店對面。",
+          "audio": "assets/audio/words/destination-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/destination-noun-ex2-slow.mp3",
+          "say": "The destination is opposite the hotel."
+        }
+      ]
+    },
+    {
+      "id": "address-noun",
+      "lemma": "address",
+      "pos": "noun",
+      "senseId": "street-location",
+      "ipa": "/ə.ˈdrɛs/",
+      "syllables": [
+        "ad",
+        "dress"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈdrɛs"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 D R EH1 S",
+      "audio": "assets/audio/words/address-noun.mp3",
+      "audioSlow": "assets/audio/words/address-noun-slow.mp3",
+      "glossYue": "地址",
+      "glossZh": "地址",
+      "jyutping": "dei6 zi2",
+      "collocations": [
+        "your address",
+        "say the address"
+      ],
+      "example": "Please say the address slowly.",
+      "exampleYue": "唔該慢慢講個地址。",
+      "say": "Please say the address slowly.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "address",
+      "phrase": false,
+      "audioSha256": "451628e990485d39a2d06a4ba52dd461e28c97889828bf55e73a0024da0f4ec7",
+      "register": "出行",
+      "usageNotes": "慢慢講個地址。名詞重音喺第二節。",
+      "pitfallsYue": "唔好讀成動詞嗰個重音。",
+      "related": [
+        "destination-noun",
+        "corner-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please say the address slowly.",
+          "yue": "唔該慢慢講個地址。",
+          "audio": "assets/audio/words/address-noun.mp3",
+          "audioSlow": "assets/audio/words/address-noun-slow.mp3",
+          "say": "Please say the address slowly."
+        },
+        {
+          "en": "The address is on this card.",
+          "yue": "地址喺呢張卡度。",
+          "audio": "assets/audio/words/address-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/address-noun-ex2-slow.mp3",
+          "say": "The address is on this card."
+        }
+      ]
+    },
+    {
+      "id": "corner-noun",
+      "lemma": "corner",
+      "pos": "noun",
+      "senseId": "street-corner",
+      "ipa": "/ˈkɔɹ.nɚ/",
+      "syllables": [
+        "cor",
+        "ner"
+      ],
+      "syllableIpa": [
+        "ˈkɔɹ",
+        "nɚ"
+      ],
+      "stress": 1,
+      "arpabet": "K AO1 R N ER0",
+      "audio": "assets/audio/words/corner-noun.mp3",
+      "audioSlow": "assets/audio/words/corner-noun-slow.mp3",
+      "glossYue": "街角",
+      "glossZh": "街角",
+      "jyutping": "gaai1 gok3",
+      "collocations": [
+        "the next corner",
+        "on the corner"
+      ],
+      "example": "Please stop at the next corner.",
+      "exampleYue": "唔該喺下一個街角停。",
+      "say": "Please stop at the next corner.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "corner",
+      "phrase": false,
+      "audioSha256": "edaf67c32df4901343ea7b9f68a00a202fc927e0759cfda19f4468082867e6d2",
+      "register": "出行",
+      "usageNotes": "下一個街角、喺街角。",
+      "pitfallsYue": "有 /ɹ/。唔好讀成 corn。",
+      "related": [
+        "landmark-noun",
+        "street-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please stop at the next corner.",
+          "yue": "唔該喺下一個街角停。",
+          "audio": "assets/audio/words/corner-noun.mp3",
+          "audioSlow": "assets/audio/words/corner-noun-slow.mp3",
+          "say": "Please stop at the next corner."
+        },
+        {
+          "en": "The hotel is on the corner.",
+          "yue": "酒店喺街角。",
+          "audio": "assets/audio/words/corner-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/corner-noun-ex2-slow.mp3",
+          "say": "The hotel is on the corner."
+        }
+      ]
+    },
+    {
+      "id": "traffic-noun",
+      "lemma": "traffic",
+      "pos": "noun",
+      "senseId": "road-traffic",
+      "ipa": "/ˈtræ.fɪk/",
+      "syllables": [
+        "traf",
+        "fic"
+      ],
+      "syllableIpa": [
+        "ˈtræ",
+        "fɪk"
+      ],
+      "stress": 1,
+      "arpabet": "T R AE1 F IH0 K",
+      "audio": "assets/audio/words/traffic-noun.mp3",
+      "audioSlow": "assets/audio/words/traffic-noun-slow.mp3",
+      "glossYue": "交通；塞車",
+      "glossZh": "交通",
+      "jyutping": "gaau1 tung1",
+      "collocations": [
+        "slow traffic",
+        "heavy traffic"
+      ],
+      "example": "The traffic is slow today.",
+      "exampleYue": "今日好塞車。",
+      "say": "The traffic is slow today.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "traffic",
+      "phrase": false,
+      "audioSha256": "8e15a0c3a09d2aa1e21ea211d2e5ffe1960cccf6550349fdb7c0e3658bedf096",
+      "register": "出行",
+      "usageNotes": "塞車就係 traffic is slow。",
+      "pitfallsYue": "重音喺第一節。",
+      "related": [
+        "taxi-noun",
+        "meter-noun"
+      ],
+      "examples": [
+        {
+          "en": "The traffic is slow today.",
+          "yue": "今日好塞車。",
+          "audio": "assets/audio/words/traffic-noun.mp3",
+          "audioSlow": "assets/audio/words/traffic-noun-slow.mp3",
+          "say": "The traffic is slow today."
+        },
+        {
+          "en": "Traffic is heavy near the corner.",
+          "yue": "街角附近好塞。",
+          "audio": "assets/audio/words/traffic-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/traffic-noun-ex2-slow.mp3",
+          "say": "Traffic is heavy near the corner."
+        }
+      ]
+    },
+    {
+      "id": "meter-noun",
+      "lemma": "meter",
+      "pos": "noun",
+      "senseId": "taxi-meter",
+      "ipa": "/ˈmi.tɚ/",
+      "syllables": [
+        "me",
+        "ter"
+      ],
+      "syllableIpa": [
+        "ˈmi",
+        "tɚ"
+      ],
+      "stress": 1,
+      "arpabet": "M IY1 T ER0",
+      "audio": "assets/audio/words/meter-noun.mp3",
+      "audioSlow": "assets/audio/words/meter-noun-slow.mp3",
+      "glossYue": "咪錶",
+      "glossZh": "计价器",
+      "jyutping": "mai1 biu1",
+      "collocations": [
+        "the meter",
+        "start the meter"
+      ],
+      "example": "The meter shows the fare.",
+      "exampleYue": "咪錶顯示車費。",
+      "say": "The meter shows the fare.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "meter",
+      "phrase": false,
+      "audioSha256": "8fe66f72ffd35ccfe85c304785336373ec2cc3dd8f52412e9fb764bf0339db16",
+      "register": "的士",
+      "usageNotes": "的士咪錶計車費。",
+      "pitfallsYue": "美式讀 /ˈmi.tɚ/，唔好讀成 metre 嘅長音。",
+      "related": [
+        "taxi-noun",
+        "receipt-noun"
+      ],
+      "examples": [
+        {
+          "en": "The meter shows the fare.",
+          "yue": "咪錶顯示車費。",
+          "audio": "assets/audio/words/meter-noun.mp3",
+          "audioSlow": "assets/audio/words/meter-noun-slow.mp3",
+          "say": "The meter shows the fare."
+        },
+        {
+          "en": "Please start the meter now.",
+          "yue": "唔該而家開咪錶。",
+          "audio": "assets/audio/words/meter-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/meter-noun-ex2-slow.mp3",
+          "say": "Please start the meter now."
+        }
+      ]
+    },
+    {
+      "id": "roughly-adv",
+      "lemma": "roughly",
+      "pos": "adv",
+      "senseId": "about",
+      "ipa": "/ˈrʌf.li/",
+      "syllables": [
+        "rough",
+        "ly"
+      ],
+      "syllableIpa": [
+        "ˈrʌf",
+        "li"
+      ],
+      "stress": 1,
+      "arpabet": "R AH1 F L IY0",
+      "audio": "assets/audio/words/roughly-adv.mp3",
+      "audioSlow": "assets/audio/words/roughly-adv-slow.mp3",
+      "glossYue": "大概",
+      "glossZh": "大概",
+      "jyutping": "daai6 koi3",
+      "collocations": [
+        "roughly ten minutes",
+        "roughly forty dollars"
+      ],
+      "example": "It takes roughly ten minutes.",
+      "exampleYue": "大概要十分鐘。",
+      "say": "It takes roughly ten minutes.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "roughly",
+      "phrase": false,
+      "audioSha256": "6fba75bc2ae0d4e10f5eff92a49698b6061e51f67a8314ff653667b7e336aa04",
+      "register": "出行",
+      "usageNotes": "大概幾耐、大概幾多錢。",
+      "pitfallsYue": "gh 唔發音。",
+      "related": [
+        "traffic-noun",
+        "meter-noun"
+      ],
+      "examples": [
+        {
+          "en": "It takes roughly ten minutes.",
+          "yue": "大概要十分鐘。",
+          "audio": "assets/audio/words/roughly-adv.mp3",
+          "audioSlow": "assets/audio/words/roughly-adv-slow.mp3",
+          "say": "It takes roughly ten minutes."
+        },
+        {
+          "en": "The fare is roughly forty dollars.",
+          "yue": "車費大概四十蚊。",
+          "audio": "assets/audio/words/roughly-adv-ex2.mp3",
+          "audioSlow": "assets/audio/words/roughly-adv-ex2-slow.mp3",
+          "say": "The fare is roughly forty dollars."
+        }
+      ]
+    },
+    {
+      "id": "landmark-noun",
+      "lemma": "landmark",
+      "pos": "noun",
+      "senseId": "known-place",
+      "ipa": "/ˈlænd.mɑɹk/",
+      "syllables": [
+        "land",
+        "mark"
+      ],
+      "syllableIpa": [
+        "ˈlænd",
+        "mɑɹk"
+      ],
+      "stress": 1,
+      "arpabet": "L AE1 N D M AA0 R K",
+      "audio": "assets/audio/words/landmark-noun.mp3",
+      "audioSlow": "assets/audio/words/landmark-noun-slow.mp3",
+      "glossYue": "地標",
+      "glossZh": "地标",
+      "jyutping": "dei6 biu1",
+      "collocations": [
+        "a landmark",
+        "at the landmark"
+      ],
+      "example": "The hotel is the landmark.",
+      "exampleYue": "酒店就係地標。",
+      "say": "The hotel is the landmark.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "landmark",
+      "phrase": false,
+      "audioSha256": "3354d7dc79391ddc3864d1cb61b4729511e1fd2c214a53eb6059ffd1f261b071",
+      "register": "出行",
+      "usageNotes": "用地標講位置。",
+      "pitfallsYue": "有 /l/，開頭舌尖抵住。",
+      "related": [
+        "corner-noun",
+        "destination-noun"
+      ],
+      "examples": [
+        {
+          "en": "The hotel is the landmark.",
+          "yue": "酒店就係地標。",
+          "audio": "assets/audio/words/landmark-noun.mp3",
+          "audioSlow": "assets/audio/words/landmark-noun-slow.mp3",
+          "say": "The hotel is the landmark."
+        },
+        {
+          "en": "Turn left at the landmark.",
+          "yue": "喺地標轉左。",
+          "audio": "assets/audio/words/landmark-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/landmark-noun-ex2-slow.mp3",
+          "say": "Turn left at the landmark."
+        }
+      ]
+    },
+    {
+      "id": "lost-adj",
+      "lemma": "lost",
+      "pos": "adj",
+      "senseId": "missing-item",
+      "ipa": "/ˈlɔst/",
+      "syllables": [
+        "lost"
+      ],
+      "syllableIpa": [
+        "ˈlɔst"
+      ],
+      "stress": 1,
+      "arpabet": "L AO1 S T",
+      "audio": "assets/audio/words/lost-adj.mp3",
+      "audioSlow": "assets/audio/words/lost-adj-slow.mp3",
+      "glossYue": "唔見咗",
+      "glossZh": "丢失的",
+      "jyutping": "m4 gin3 zo2",
+      "collocations": [
+        "lost wallet",
+        "I have lost"
+      ],
+      "example": "I have lost my wallet.",
+      "exampleYue": "我唔見咗個銀包。",
+      "say": "I have lost my wallet.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "lost",
+      "phrase": false,
+      "audioSha256": "a910c5421c049e4cab9a869868499eee4776f6095167d9130309a2bb499ee400",
+      "register": "求助",
+      "usageNotes": "唔見咗銀包、唔見咗護照。",
+      "pitfallsYue": "lost 係已經唔見。lose 先至係動詞原形。",
+      "related": [
+        "wallet-noun",
+        "missing-adj"
+      ],
+      "examples": [
+        {
+          "en": "I have lost my wallet.",
+          "yue": "我唔見咗個銀包。",
+          "audio": "assets/audio/words/lost-adj.mp3",
+          "audioSlow": "assets/audio/words/lost-adj-slow.mp3",
+          "say": "I have lost my wallet."
+        },
+        {
+          "en": "He lost his passport this morning.",
+          "yue": "佢今朝唔見咗護照。",
+          "audio": "assets/audio/words/lost-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/lost-adj-ex2-slow.mp3",
+          "say": "He lost his passport this morning."
+        }
+      ]
+    },
+    {
+      "id": "wallet-noun",
+      "lemma": "wallet",
+      "pos": "noun",
+      "senseId": "money-case",
+      "ipa": "/ˈwɑ.lət/",
+      "syllables": [
+        "wal",
+        "let"
+      ],
+      "syllableIpa": [
+        "ˈwɑ",
+        "lət"
+      ],
+      "stress": 1,
+      "arpabet": "W AA1 L AH0 T",
+      "audio": "assets/audio/words/wallet-noun.mp3",
+      "audioSlow": "assets/audio/words/wallet-noun-slow.mp3",
+      "glossYue": "銀包",
+      "glossZh": "钱包",
+      "jyutping": "ngan4 baau1",
+      "collocations": [
+        "my wallet",
+        "a brown wallet"
+      ],
+      "example": "My wallet was in my bag.",
+      "exampleYue": "銀包喺個袋度。",
+      "say": "My wallet was in my bag.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "wallet",
+      "phrase": false,
+      "audioSha256": "47e8ea06e3382e2257b802a6ce4cfe94af36b7bd4c60934b6a9e27d1b14d6b63",
+      "register": "求助",
+      "usageNotes": "銀包。",
+      "pitfallsYue": "有 /l/。第二音係輕 /ə/。",
+      "related": [
+        "lost-adj",
+        "passport-noun"
+      ],
+      "examples": [
+        {
+          "en": "My wallet was in my bag.",
+          "yue": "銀包喺個袋度。",
+          "audio": "assets/audio/words/wallet-noun.mp3",
+          "audioSlow": "assets/audio/words/wallet-noun-slow.mp3",
+          "say": "My wallet was in my bag."
+        },
+        {
+          "en": "This wallet holds my passport.",
+          "yue": "呢個銀包放住護照。",
+          "audio": "assets/audio/words/wallet-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/wallet-noun-ex2-slow.mp3",
+          "say": "This wallet holds my passport."
+        }
+      ]
+    },
+    {
+      "id": "missing-adj",
+      "lemma": "missing",
+      "pos": "adj",
+      "senseId": "not-found",
+      "ipa": "/ˈmɪ.sɪŋ/",
+      "syllables": [
+        "mis",
+        "sing"
+      ],
+      "syllableIpa": [
+        "ˈmɪ",
+        "sɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "M IH1 S IH0 NG",
+      "audio": "assets/audio/words/missing-adj.mp3",
+      "audioSlow": "assets/audio/words/missing-adj-slow.mp3",
+      "glossYue": "搵唔到",
+      "glossZh": "失踪的",
+      "jyutping": "wan2 m4 dou2",
+      "collocations": [
+        "still missing",
+        "a missing wallet"
+      ],
+      "example": "My passport is missing.",
+      "exampleYue": "我本護照搵唔到。",
+      "say": "My passport is missing.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "missing",
+      "phrase": false,
+      "audioSha256": "6eb253490ad224fe1e23ade7c8a0f589b6852d8357abf9cd737b235ef25d44f3",
+      "register": "求助",
+      "usageNotes": "仲搵唔到。",
+      "pitfallsYue": "ing 鼻音。唔好加 /g/。",
+      "related": [
+        "lost-adj",
+        "wallet-noun"
+      ],
+      "examples": [
+        {
+          "en": "My passport is missing.",
+          "yue": "我本護照搵唔到。",
+          "audio": "assets/audio/words/missing-adj.mp3",
+          "audioSlow": "assets/audio/words/missing-adj-slow.mp3",
+          "say": "My passport is missing."
+        },
+        {
+          "en": "The missing wallet is brown.",
+          "yue": "搵唔到嗰個銀包係啡色。",
+          "audio": "assets/audio/words/missing-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/missing-adj-ex2-slow.mp3",
+          "say": "The missing wallet is brown."
+        }
+      ]
+    },
+    {
+      "id": "police-noun",
+      "lemma": "police",
+      "pos": "noun",
+      "senseId": "police-service",
+      "ipa": "/pə.ˈlis/",
+      "syllables": [
+        "po",
+        "lice"
+      ],
+      "syllableIpa": [
+        "pə",
+        "ˈlis"
+      ],
+      "stress": 2,
+      "arpabet": "P AH0 L IY1 S",
+      "audio": "assets/audio/words/police-noun.mp3",
+      "audioSlow": "assets/audio/words/police-noun-slow.mp3",
+      "glossYue": "警察",
+      "glossZh": "警察",
+      "jyutping": "ging2 caat3",
+      "collocations": [
+        "the police",
+        "call the police"
+      ],
+      "example": "The police desk is nearby.",
+      "exampleYue": "警崗喺附近。",
+      "say": "The police desk is nearby.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "police",
+      "phrase": false,
+      "audioSha256": "00fc1389464a211a96bd27e651ca758a47a1f3c80ae49dc9358da4646e05860e",
+      "register": "求助",
+      "usageNotes": "叫警察、去警崗。",
+      "pitfallsYue": "重音喺第二節。",
+      "related": [
+        "report-noun",
+        "embassy-noun"
+      ],
+      "examples": [
+        {
+          "en": "The police desk is nearby.",
+          "yue": "警崗喺附近。",
+          "audio": "assets/audio/words/police-noun.mp3",
+          "audioSlow": "assets/audio/words/police-noun-slow.mp3",
+          "say": "The police desk is nearby."
+        },
+        {
+          "en": "Please call the police for me.",
+          "yue": "唔該幫我叫警察。",
+          "audio": "assets/audio/words/police-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/police-noun-ex2-slow.mp3",
+          "say": "Please call the police for me."
+        }
+      ]
+    },
+    {
+      "id": "embassy-noun",
+      "lemma": "embassy",
+      "pos": "noun",
+      "senseId": "consular-office",
+      "ipa": "/ˈɛm.bə.si/",
+      "syllables": [
+        "em",
+        "ba",
+        "sy"
+      ],
+      "syllableIpa": [
+        "ˈɛm",
+        "bə",
+        "si"
+      ],
+      "stress": 1,
+      "arpabet": "EH1 M B AH0 S IY0",
+      "audio": "assets/audio/words/embassy-noun.mp3",
+      "audioSlow": "assets/audio/words/embassy-noun-slow.mp3",
+      "glossYue": "大使館",
+      "glossZh": "大使馆",
+      "jyutping": "daai6 si3 gun2",
+      "collocations": [
+        "the embassy",
+        "embassy phone"
+      ],
+      "example": "I need the embassy phone number.",
+      "exampleYue": "我要大使館電話。",
+      "say": "I need the embassy phone number.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "embassy",
+      "phrase": false,
+      "audioSha256": "2e079f1df2d4dcf718cf6f0b4e73013a911bf433784b6db283a5b5e4a59dbbdd",
+      "register": "求助",
+      "usageNotes": "護照唔見咗可以搵大使館。",
+      "pitfallsYue": "三個音節，重音喺第一節。",
+      "related": [
+        "passport-noun",
+        "police-noun"
+      ],
+      "examples": [
+        {
+          "en": "I need the embassy phone number.",
+          "yue": "我要大使館電話。",
+          "audio": "assets/audio/words/embassy-noun.mp3",
+          "audioSlow": "assets/audio/words/embassy-noun-slow.mp3",
+          "say": "I need the embassy phone number."
+        },
+        {
+          "en": "The embassy can help with a lost passport.",
+          "yue": "大使館可以幫唔見咗護照嘅人。",
+          "audio": "assets/audio/words/embassy-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/embassy-noun-ex2-slow.mp3",
+          "say": "The embassy can help with a lost passport."
+        }
+      ]
+    },
+    {
+      "id": "emergency-noun",
+      "lemma": "emergency",
+      "pos": "noun",
+      "senseId": "urgent-help",
+      "ipa": "/ɪ.ˈmɝ.dʒən.si/",
+      "syllables": [
+        "e",
+        "mer",
+        "gen",
+        "cy"
+      ],
+      "syllableIpa": [
+        "ɪ",
+        "ˈmɝ",
+        "dʒən",
+        "si"
+      ],
+      "stress": 2,
+      "arpabet": "IH0 M ER1 JH AH0 N S IY0",
+      "audio": "assets/audio/words/emergency-noun.mp3",
+      "audioSlow": "assets/audio/words/emergency-noun-slow.mp3",
+      "glossYue": "緊急情況",
+      "glossZh": "紧急情况",
+      "jyutping": "gan2 gap1 cing4 fong3",
+      "collocations": [
+        "an emergency",
+        "in an emergency"
+      ],
+      "example": "This is an emergency.",
+      "exampleYue": "呢個係緊急情況。",
+      "say": "This is an [[ɪmˈɜdʒənsi]].",
+      "variants": [],
+      "note": "卡片寫 /ɝ/。Piper 聲線冇 ɝ，句子強制 ɜ。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "emergency",
+      "phrase": false,
+      "audioSha256": "035b9351b78458cdb35198d2516d0f1e667e91a5634435bfe02f9f13de918dd2",
+      "register": "求助",
+      "usageNotes": "緊急先叫救護。",
+      "pitfallsYue": "卡片寫 ɝ。呢個聲線用 ɜ，因為把聲冇 ɝ。",
+      "related": [
+        "ambulance-noun",
+        "help-verb"
+      ],
+      "examples": [
+        {
+          "en": "This is an emergency.",
+          "yue": "呢個係緊急情況。",
+          "audio": "assets/audio/words/emergency-noun.mp3",
+          "audioSlow": "assets/audio/words/emergency-noun-slow.mp3",
+          "say": "This is an [[ɪmˈɜdʒənsi]]."
+        },
+        {
+          "en": "Call for help in an emergency.",
+          "yue": "緊急就要求人幫。",
+          "audio": "assets/audio/words/emergency-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/emergency-noun-ex2-slow.mp3",
+          "say": "Call for help in an [[ɪmˈɜdʒənsi]]."
+        }
+      ]
+    },
+    {
+      "id": "ambulance-noun",
+      "lemma": "ambulance",
+      "pos": "noun",
+      "senseId": "medical-van",
+      "ipa": "/ˈæm.bjə.ləns/",
+      "syllables": [
+        "am",
+        "bu",
+        "lance"
+      ],
+      "syllableIpa": [
+        "ˈæm",
+        "bjə",
+        "ləns"
+      ],
+      "stress": 1,
+      "arpabet": "AE1 M B Y AH0 L AH0 N S",
+      "audio": "assets/audio/words/ambulance-noun.mp3",
+      "audioSlow": "assets/audio/words/ambulance-noun-slow.mp3",
+      "glossYue": "救護車",
+      "glossZh": "救护车",
+      "jyutping": "gau3 wu6 ce1",
+      "collocations": [
+        "call an ambulance",
+        "the ambulance"
+      ],
+      "example": "Please call an ambulance.",
+      "exampleYue": "唔該叫救護車。",
+      "say": "Please call an ambulance.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "ambulance",
+      "phrase": false,
+      "audioSha256": "9091b61647f8ad56095460695876ecd979cf4398b6518f51830f47062ea7b29e",
+      "register": "求助",
+      "usageNotes": "叫救護車。",
+      "pitfallsYue": "重音喺第一節。中間有 /j/。",
+      "related": [
+        "emergency-noun",
+        "help-verb"
+      ],
+      "examples": [
+        {
+          "en": "Please call an ambulance.",
+          "yue": "唔該叫救護車。",
+          "audio": "assets/audio/words/ambulance-noun.mp3",
+          "audioSlow": "assets/audio/words/ambulance-noun-slow.mp3",
+          "say": "Please call an ambulance."
+        },
+        {
+          "en": "The ambulance is on the way.",
+          "yue": "救護車嚟緊。",
+          "audio": "assets/audio/words/ambulance-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/ambulance-noun-ex2-slow.mp3",
+          "say": "The ambulance is on the way."
+        }
+      ]
+    },
+    {
+      "id": "stolen-adj",
+      "lemma": "stolen",
+      "pos": "adj",
+      "senseId": "taken-unlawfully",
+      "ipa": "/ˈstoʊ.lən/",
+      "syllables": [
+        "sto",
+        "len"
+      ],
+      "syllableIpa": [
+        "ˈstoʊ",
+        "lən"
+      ],
+      "stress": 1,
+      "arpabet": "S T OW1 L AH0 N",
+      "audio": "assets/audio/words/stolen-adj.mp3",
+      "audioSlow": "assets/audio/words/stolen-adj-slow.mp3",
+      "glossYue": "畀人偷咗",
+      "glossZh": "被偷的",
+      "jyutping": "bei2 jan4 tau1 zo2",
+      "collocations": [
+        "was stolen",
+        "a stolen passport"
+      ],
+      "example": "I think my wallet was stolen.",
+      "exampleYue": "我諗個銀包畀人偷咗。",
+      "say": "I think my wallet was stolen.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "stolen",
+      "phrase": false,
+      "audioSha256": "46d34e4583a199c30237f54e4a7738993ff1e52fb9e7c48f565497b216a7b704",
+      "register": "求助",
+      "usageNotes": "畀人偷咗，唔係自己唔見。",
+      "pitfallsYue": "stolen 係已經被偷。steal 先至係動詞。",
+      "related": [
+        "lost-adj",
+        "report-noun"
+      ],
+      "examples": [
+        {
+          "en": "I think my wallet was stolen.",
+          "yue": "我諗個銀包畀人偷咗。",
+          "audio": "assets/audio/words/stolen-adj.mp3",
+          "audioSlow": "assets/audio/words/stolen-adj-slow.mp3",
+          "say": "I think my wallet was stolen."
+        },
+        {
+          "en": "A stolen passport needs a report.",
+          "yue": "護照畀人偷咗就要報失。",
+          "audio": "assets/audio/words/stolen-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/stolen-adj-ex2-slow.mp3",
+          "say": "A stolen passport needs a report."
+        }
+      ]
+    },
+    {
+      "id": "report-noun",
+      "lemma": "report",
+      "pos": "noun",
+      "senseId": "written-account",
+      "ipa": "/ɹɪ.ˈpɔɹt/",
+      "syllables": [
+        "re",
+        "port"
+      ],
+      "syllableIpa": [
+        "ɹɪ",
+        "ˈpɔɹt"
+      ],
+      "stress": 2,
+      "arpabet": "R IH0 P AO1 R T",
+      "audio": "assets/audio/words/report-noun.mp3",
+      "audioSlow": "assets/audio/words/report-noun-slow.mp3",
+      "glossYue": "報告；報失",
+      "glossZh": "报告",
+      "jyutping": "bou3 gou3",
+      "collocations": [
+        "file a report",
+        "a police report"
+      ],
+      "example": "I need to file a report.",
+      "exampleYue": "我要報失。",
+      "say": "I need to file a report.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "report",
+      "phrase": false,
+      "audioSha256": "e250e9d8b8de9548b1cc03f8673faacffd93def55cb12e33b32a05c792096028",
+      "register": "求助",
+      "usageNotes": "報失就係 file a report。",
+      "pitfallsYue": "名詞重音喺第二節。",
+      "related": [
+        "police-noun",
+        "stolen-adj"
+      ],
+      "examples": [
+        {
+          "en": "I need to file a report.",
+          "yue": "我要報失。",
+          "audio": "assets/audio/words/report-noun.mp3",
+          "audioSlow": "assets/audio/words/report-noun-slow.mp3",
+          "say": "I need to file a report."
+        },
+        {
+          "en": "The report is for the police.",
+          "yue": "呢份報告係畀警察。",
+          "audio": "assets/audio/words/report-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/report-noun-ex2-slow.mp3",
+          "say": "The report is for the police."
+        }
+      ]
+    },
+    {
+      "id": "complaint-noun",
+      "lemma": "complaint",
+      "pos": "noun",
+      "senseId": "customer-complaint",
+      "ipa": "/kəm.ˈpleɪnt/",
+      "syllables": [
+        "com",
+        "plaint"
+      ],
+      "syllableIpa": [
+        "kəm",
+        "ˈpleɪnt"
+      ],
+      "stress": 2,
+      "arpabet": "K AH0 M P L EY1 N T",
+      "audio": "assets/audio/words/complaint-noun.mp3",
+      "audioSlow": "assets/audio/words/complaint-noun-slow.mp3",
+      "glossYue": "投訴",
+      "glossZh": "投诉",
+      "jyutping": "tau4 sou3",
+      "collocations": [
+        "a complaint",
+        "make a complaint"
+      ],
+      "example": "I have a complaint about the clasp.",
+      "exampleYue": "個扣我要投訴。",
+      "say": "I have a complaint about the clasp.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "complaint",
+      "phrase": false,
+      "audioSha256": "d9a7f07584dcd2796c1f158f236efd9b0bf57dd89aa51a8498543423275c17ba",
+      "register": "櫃檯",
+      "usageNotes": "投訴一件貨，唔好一開口就鬧。",
+      "pitfallsYue": "重音喺第二節。",
+      "related": [
+        "issue-noun",
+        "manager-noun"
+      ],
+      "examples": [
+        {
+          "en": "I have a complaint about the clasp.",
+          "yue": "個扣我要投訴。",
+          "audio": "assets/audio/words/complaint-noun.mp3",
+          "audioSlow": "assets/audio/words/complaint-noun-slow.mp3",
+          "say": "I have a complaint about the clasp."
+        },
+        {
+          "en": "She made a complaint at the counter.",
+          "yue": "佢喺櫃檯投訴。",
+          "audio": "assets/audio/words/complaint-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/complaint-noun-ex2-slow.mp3",
+          "say": "She made a complaint at the counter."
+        }
+      ]
+    },
+    {
+      "id": "apologize-verb",
+      "lemma": "apologize",
+      "pos": "verb",
+      "senseId": "say-sorry",
+      "ipa": "/ə.ˈpɑ.lə.dʒaɪz/",
+      "syllables": [
+        "a",
+        "pol",
+        "o",
+        "gize"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈpɑ",
+        "lə",
+        "dʒaɪz"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 P AA1 L AH0 JH AY0 Z",
+      "audio": "assets/audio/words/apologize-verb.mp3",
+      "audioSlow": "assets/audio/words/apologize-verb-slow.mp3",
+      "glossYue": "道歉",
+      "glossZh": "道歉",
+      "jyutping": "dou6 hip3",
+      "collocations": [
+        "I apologize",
+        "apologize for the delay"
+      ],
+      "example": "I apologize for the delay.",
+      "exampleYue": "唔好意思，遲咗。",
+      "say": "I apologize for the delay.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "apologize",
+      "phrase": false,
+      "audioSha256": "2e7b7989234328af98e6969a0a6555d30642200a23b66e32ef1d3a6e2bd818cb",
+      "register": "櫃檯",
+      "usageNotes": "美式拼 apologize。英式 apologise 同一個音。",
+      "pitfallsYue": "重音喺 pol。唔好讀成第一節。",
+      "related": [
+        "complaint-noun",
+        "manager-noun"
+      ],
+      "examples": [
+        {
+          "en": "I apologize for the delay.",
+          "yue": "唔好意思，遲咗。",
+          "audio": "assets/audio/words/apologize-verb.mp3",
+          "audioSlow": "assets/audio/words/apologize-verb-slow.mp3",
+          "say": "I apologize for the delay."
+        },
+        {
+          "en": "We apologize for the broken clasp.",
+          "yue": "個扣壞咗，我哋道歉。",
+          "audio": "assets/audio/words/apologize-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/apologize-verb-ex2-slow.mp3",
+          "say": "We apologize for the broken clasp."
+        }
+      ]
+    },
+    {
+      "id": "replace-verb",
+      "lemma": "replace",
+      "pos": "verb",
+      "senseId": "give-another",
+      "ipa": "/ɹɪ.ˈpleɪs/",
+      "syllables": [
+        "re",
+        "place"
+      ],
+      "syllableIpa": [
+        "ɹɪ",
+        "ˈpleɪs"
+      ],
+      "stress": 2,
+      "arpabet": "R IH0 P L EY1 S",
+      "audio": "assets/audio/words/replace-verb.mp3",
+      "audioSlow": "assets/audio/words/replace-verb-slow.mp3",
+      "glossYue": "換過",
+      "glossZh": "更换",
+      "jyutping": "wun6 gwo3",
+      "collocations": [
+        "replace the piece",
+        "replace it today"
+      ],
+      "example": "We can replace the bracelet.",
+      "exampleYue": "我哋可以換過條手鏈。",
+      "say": "We can replace the bracelet.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "replace",
+      "phrase": false,
+      "audioSha256": "70aebce614d757c26c65f8743c2b465402c78f8142223e9634c9e31ead741184",
+      "register": "櫃檯",
+      "usageNotes": "換過一件，唔係修理。",
+      "pitfallsYue": "重音喺第二節。",
+      "related": [
+        "repair-verb",
+        "refund-noun"
+      ],
+      "examples": [
+        {
+          "en": "We can replace the bracelet.",
+          "yue": "我哋可以換過條手鏈。",
+          "audio": "assets/audio/words/replace-verb.mp3",
+          "audioSlow": "assets/audio/words/replace-verb-slow.mp3",
+          "say": "We can replace the bracelet."
+        },
+        {
+          "en": "Could you replace this piece today?",
+          "yue": "今日可唔可以換過呢件？",
+          "audio": "assets/audio/words/replace-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/replace-verb-ex2-slow.mp3",
+          "say": "Could you replace this piece today?"
+        }
+      ]
+    },
+    {
+      "id": "repair-verb",
+      "lemma": "repair",
+      "pos": "verb",
+      "senseId": "fix",
+      "ipa": "/ɹɪ.ˈpɛɹ/",
+      "syllables": [
+        "re",
+        "pair"
+      ],
+      "syllableIpa": [
+        "ɹɪ",
+        "ˈpɛɹ"
+      ],
+      "stress": 2,
+      "arpabet": "R IH0 P EH1 R",
+      "audio": "assets/audio/words/repair-verb.mp3",
+      "audioSlow": "assets/audio/words/repair-verb-slow.mp3",
+      "glossYue": "修理",
+      "glossZh": "修理",
+      "jyutping": "sau1 lei5",
+      "collocations": [
+        "repair the clasp",
+        "repair it today"
+      ],
+      "example": "We can repair the clasp.",
+      "exampleYue": "我哋可以整好個扣。",
+      "say": "We can repair the clasp.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "repair",
+      "phrase": false,
+      "audioSha256": "7b32a8e88414af5f215ff3ff4aa81f59c0fc8d13ed18c34dbe0b23aaa709c910",
+      "register": "櫃檯",
+      "usageNotes": "整好，唔係即刻換新。",
+      "pitfallsYue": "重音喺第二節，有 /ɹ/。",
+      "related": [
+        "replace-verb",
+        "broken-adj"
+      ],
+      "examples": [
+        {
+          "en": "We can repair the clasp.",
+          "yue": "我哋可以整好個扣。",
+          "audio": "assets/audio/words/repair-verb.mp3",
+          "audioSlow": "assets/audio/words/repair-verb-slow.mp3",
+          "say": "We can repair the clasp."
+        },
+        {
+          "en": "Can you repair it today?",
+          "yue": "今日可唔可以整好佢？",
+          "audio": "assets/audio/words/repair-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/repair-verb-ex2-slow.mp3",
+          "say": "Can you repair it today?"
+        }
+      ]
+    },
+    {
+      "id": "refund-noun",
+      "lemma": "refund",
+      "pos": "noun",
+      "senseId": "money-back",
+      "ipa": "/ˈri.fʌnd/",
+      "syllables": [
+        "re",
+        "fund"
+      ],
+      "syllableIpa": [
+        "ˈri",
+        "fʌnd"
+      ],
+      "stress": 1,
+      "arpabet": "R IY1 F AH0 N D",
+      "audio": "assets/audio/words/refund-noun.mp3",
+      "audioSlow": "assets/audio/words/refund-noun-slow.mp3",
+      "glossYue": "退款",
+      "glossZh": "退款",
+      "jyutping": "teoi3 fun2",
+      "collocations": [
+        "a refund",
+        "ask for a refund"
+      ],
+      "example": "I would like a refund.",
+      "exampleYue": "我想退款。",
+      "say": "I would like a refund.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "refund",
+      "phrase": false,
+      "audioSha256": "fc03e1b4a37a128c643eb9e723342de37058b4cc028c43e533b1d56fc67642f7",
+      "register": "櫃檯",
+      "usageNotes": "名詞退款，重音喺第一節。",
+      "pitfallsYue": "動詞退款重音唔同。呢張卡教名詞。",
+      "related": [
+        "receipt-noun",
+        "manager-noun"
+      ],
+      "examples": [
+        {
+          "en": "I would like a refund.",
+          "yue": "我想退款。",
+          "audio": "assets/audio/words/refund-noun.mp3",
+          "audioSlow": "assets/audio/words/refund-noun-slow.mp3",
+          "say": "I would like a refund."
+        },
+        {
+          "en": "A refund needs the receipt.",
+          "yue": "退款要有收據。",
+          "audio": "assets/audio/words/refund-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/refund-noun-ex2-slow.mp3",
+          "say": "A refund needs the receipt."
+        }
+      ]
+    },
+    {
+      "id": "manager-noun",
+      "lemma": "manager",
+      "pos": "noun",
+      "senseId": "shop-manager",
+      "ipa": "/ˈmæ.nə.dʒɚ/",
+      "syllables": [
+        "man",
+        "a",
+        "ger"
+      ],
+      "syllableIpa": [
+        "ˈmæ",
+        "nə",
+        "dʒɚ"
+      ],
+      "stress": 1,
+      "arpabet": "M AE1 N AH0 JH ER0",
+      "audio": "assets/audio/words/manager-noun.mp3",
+      "audioSlow": "assets/audio/words/manager-noun-slow.mp3",
+      "glossYue": "經理",
+      "glossZh": "经理",
+      "jyutping": "ging1 lei5",
+      "collocations": [
+        "the manager",
+        "speak to the manager"
+      ],
+      "example": "The manager will review the receipt.",
+      "exampleYue": "經理會睇收據。",
+      "say": "The manager will review the receipt.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "manager",
+      "phrase": false,
+      "audioSha256": "30e6a16891d3d8c888580d403966b7c3899a148912fcb0758826ca157ef9c83a",
+      "register": "櫃檯",
+      "usageNotes": "要升級先搵經理。",
+      "pitfallsYue": "三個音節，重音喺第一節。",
+      "related": [
+        "complaint-noun",
+        "receipt-noun"
+      ],
+      "examples": [
+        {
+          "en": "The manager will review the receipt.",
+          "yue": "經理會睇收據。",
+          "audio": "assets/audio/words/manager-noun.mp3",
+          "audioSlow": "assets/audio/words/manager-noun-slow.mp3",
+          "say": "The manager will review the receipt."
+        },
+        {
+          "en": "May I speak to the manager?",
+          "yue": "可唔可以搵經理？",
+          "audio": "assets/audio/words/manager-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/manager-noun-ex2-slow.mp3",
+          "say": "May I speak to the manager?"
+        }
+      ]
+    },
+    {
+      "id": "immediately-adv",
+      "lemma": "immediately",
+      "pos": "adv",
+      "senseId": "at-once",
+      "ipa": "/ɪ.ˈmi.di.ət.li/",
+      "syllables": [
+        "im",
+        "me",
+        "di",
+        "ate",
+        "ly"
+      ],
+      "syllableIpa": [
+        "ɪ",
+        "ˈmi",
+        "di",
+        "ət",
+        "li"
+      ],
+      "stress": 2,
+      "arpabet": "IH0 M IY1 D IY0 AH0 T L IY0",
+      "audio": "assets/audio/words/immediately-adv.mp3",
+      "audioSlow": "assets/audio/words/immediately-adv-slow.mp3",
+      "glossYue": "即刻",
+      "glossZh": "立刻",
+      "jyutping": "zik1 hak1",
+      "collocations": [
+        "repair it immediately",
+        "call immediately"
+      ],
+      "example": "We will repair it immediately.",
+      "exampleYue": "我哋即刻整。",
+      "say": "We will repair it immediately.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "immediately",
+      "phrase": false,
+      "audioSha256": "326a6ff90ffb32564e2255716b90dce94c8cb9006b0373dea02d2aebeb976463",
+      "register": "櫃檯",
+      "usageNotes": "即刻，唔係聽日。",
+      "pitfallsYue": "有 /l/。重音喺 me。",
+      "related": [
+        "repair-verb",
+        "manager-noun"
+      ],
+      "examples": [
+        {
+          "en": "We will repair it immediately.",
+          "yue": "我哋即刻整。",
+          "audio": "assets/audio/words/immediately-adv.mp3",
+          "audioSlow": "assets/audio/words/immediately-adv-slow.mp3",
+          "say": "We will repair it immediately."
+        },
+        {
+          "en": "Please call the manager immediately.",
+          "yue": "唔該即刻搵經理。",
+          "audio": "assets/audio/words/immediately-adv-ex2.mp3",
+          "audioSlow": "assets/audio/words/immediately-adv-ex2-slow.mp3",
+          "say": "Please call the manager immediately."
+        }
+      ]
+    },
+    {
+      "id": "appreciate-verb",
+      "lemma": "appreciate",
+      "pos": "verb",
+      "senseId": "be-grateful",
+      "ipa": "/ə.ˈpri.ʃi.eɪt/",
+      "syllables": [
+        "ap",
+        "pre",
+        "ci",
+        "ate"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈpri",
+        "ʃi",
+        "eɪt"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 P R IY1 SH IY0 EY0 T",
+      "audio": "assets/audio/words/appreciate-verb.mp3",
+      "audioSlow": "assets/audio/words/appreciate-verb-slow.mp3",
+      "glossYue": "感激",
+      "glossZh": "感激",
+      "jyutping": "gam2 gik1",
+      "collocations": [
+        "I appreciate your patience",
+        "we appreciate"
+      ],
+      "example": "I appreciate your patience.",
+      "exampleYue": "多謝你等。",
+      "say": "I appreciate your patience.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "appreciate",
+      "phrase": false,
+      "audioSha256": "57ab1d68f9a7073c72b956eeeea01121b884177fb8f5eded97bea82d6410f185",
+      "register": "櫃檯",
+      "usageNotes": "多謝客人等，語氣溫柔。",
+      "pitfallsYue": "ci 讀 /ʃi/，唔好讀成 /si/。",
+      "related": [
+        "apologize-verb",
+        "manager-noun"
+      ],
+      "examples": [
+        {
+          "en": "I appreciate your patience.",
+          "yue": "多謝你等。",
+          "audio": "assets/audio/words/appreciate-verb.mp3",
+          "audioSlow": "assets/audio/words/appreciate-verb-slow.mp3",
+          "say": "I appreciate your patience."
+        },
+        {
+          "en": "We appreciate you telling us today.",
+          "yue": "多謝你今日話我哋知。",
+          "audio": "assets/audio/words/appreciate-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/appreciate-verb-ex2-slow.mp3",
+          "say": "We appreciate you telling us today."
+        }
+      ]
+    },
+    {
+      "id": "broken-adj",
+      "lemma": "broken",
+      "pos": "adj",
+      "senseId": "not-working",
+      "ipa": "/ˈbroʊ.kən/",
+      "syllables": [
+        "bro",
+        "ken"
+      ],
+      "syllableIpa": [
+        "ˈbroʊ",
+        "kən"
+      ],
+      "stress": 1,
+      "arpabet": "B R OW1 K AH0 N",
+      "audio": "assets/audio/words/broken-adj.mp3",
+      "audioSlow": "assets/audio/words/broken-adj-slow.mp3",
+      "glossYue": "壞咗",
+      "glossZh": "坏了",
+      "jyutping": "waai6 zo2",
+      "collocations": [
+        "a broken clasp",
+        "is broken"
+      ],
+      "example": "The clasp is broken.",
+      "exampleYue": "個扣壞咗。",
+      "say": "The clasp is broken.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "broken",
+      "phrase": false,
+      "audioSha256": "c473794760a9cf3edc00404d855a188b50135f0603a1a75802a3e98fea5eace5",
+      "register": "櫃檯",
+      "usageNotes": "壞咗，先問點整。",
+      "pitfallsYue": "en 係輕 /ən/。",
+      "related": [
+        "repair-verb",
+        "issue-noun"
+      ],
+      "examples": [
+        {
+          "en": "The clasp is broken.",
+          "yue": "個扣壞咗。",
+          "audio": "assets/audio/words/broken-adj.mp3",
+          "audioSlow": "assets/audio/words/broken-adj-slow.mp3",
+          "say": "The clasp is broken."
+        },
+        {
+          "en": "This broken clasp needs a repair.",
+          "yue": "壞咗嘅扣要修理。",
+          "audio": "assets/audio/words/broken-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/broken-adj-ex2-slow.mp3",
+          "say": "This broken clasp needs a repair."
+        }
+      ]
+    },
+    {
+      "id": "issue-noun",
+      "lemma": "issue",
+      "pos": "noun",
+      "senseId": "problem",
+      "ipa": "/ˈɪ.ʃu/",
+      "syllables": [
+        "is",
+        "sue"
+      ],
+      "syllableIpa": [
+        "ˈɪ",
+        "ʃu"
+      ],
+      "stress": 1,
+      "arpabet": "IH1 SH UW0",
+      "audio": "assets/audio/words/issue-noun.mp3",
+      "audioSlow": "assets/audio/words/issue-noun-slow.mp3",
+      "glossYue": "問題",
+      "glossZh": "问题",
+      "jyutping": "man6 tai4",
+      "collocations": [
+        "an issue",
+        "the issue"
+      ],
+      "example": "There is an issue with the clasp.",
+      "exampleYue": "個扣有問題。",
+      "say": "There is an issue with the clasp.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "issue",
+      "phrase": false,
+      "audioSha256": "4e96c8c124f32ba02744465021ec557bedb103a6a3d05c22e6d7b7d2112b53ac",
+      "register": "櫃檯",
+      "usageNotes": "有問題，語氣比 complaint 輕。",
+      "pitfallsYue": "sue 讀 /ʃu/，唔好讀成 /sju/。",
+      "related": [
+        "complaint-noun",
+        "broken-adj"
+      ],
+      "examples": [
+        {
+          "en": "There is an issue with the clasp.",
+          "yue": "個扣有問題。",
+          "audio": "assets/audio/words/issue-noun.mp3",
+          "audioSlow": "assets/audio/words/issue-noun-slow.mp3",
+          "say": "There is an issue with the clasp."
+        },
+        {
+          "en": "I will explain the issue clearly.",
+          "yue": "我會講清楚個問題。",
+          "audio": "assets/audio/words/issue-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/issue-noun-ex2-slow.mp3",
+          "say": "I will explain the issue clearly."
         }
       ]
     }

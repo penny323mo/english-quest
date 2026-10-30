@@ -117,8 +117,8 @@
   ],
   "chunks": [
     {
-      "pattern": "This ___ is beautiful.",
-      "example": "This necklace is beautiful.",
+      "pattern": "This ___ is beautiful when you wear it out this evening.",
+      "example": "This necklace is beautiful when you wear it out this evening.",
       "glossYue": "呢條⋯⋯好靚。",
       "answer": "necklace",
       "choices": [
@@ -128,8 +128,8 @@
       ]
     },
     {
-      "pattern": "I like this ___.",
-      "example": "I like this bracelet.",
+      "pattern": "I like this ___ because it sits well on the wrist.",
+      "example": "I like this bracelet because it sits well on the wrist.",
       "glossYue": "我鍾意呢條⋯⋯。",
       "answer": "bracelet",
       "choices": [
@@ -139,8 +139,8 @@
       ]
     },
     {
-      "pattern": "A pair of ___.",
-      "example": "A pair of pearl earrings.",
+      "pattern": "I would like a pair of ___ for a birthday gift.",
+      "example": "I would like a pair of pearl earrings for a birthday gift.",
       "glossYue": "一對⋯⋯。",
       "answer": "pearl earrings",
       "choices": [
@@ -150,8 +150,8 @@
       ]
     },
     {
-      "pattern": "May I see ___?",
-      "example": "May I see these earrings?",
+      "pattern": "May I see ___ before I decide on a gift?",
+      "example": "May I see these earrings before I decide on a gift?",
       "glossYue": "可唔可以睇吓⋯⋯？",
       "answer": "these earrings",
       "choices": [
@@ -244,7 +244,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "these-det",
       "choices": [
         "these",
@@ -255,7 +255,7 @@
     },
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "pearl-noun",
       "choices": [
         "pearl",
@@ -266,7 +266,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "bracelet",
+      "prompt": "When a guest says \"bracelet\", what does that word or phrase mean here?",
       "choices": [
         "手鏈",
         "頸鏈",
@@ -276,7 +276,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "a pair of earrings",
+      "prompt": "When a guest says \"a pair of earrings\", what does that word or phrase mean here?",
       "choices": [
         "一對耳環",
         "一隻戒指",
@@ -286,7 +286,7 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個尾音係 /z/？",
+      "prompt": "Choose the best answer to this lesson question: 邊個尾音係 /z/？",
       "choices": [
         "these",
         "this",

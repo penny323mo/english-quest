@@ -49,7 +49,7 @@
     {
       "id": "A2",
       "title": "上路",
-      "blurb": "件件嘅名、安檢、落單，然後材料、試戴、酒店、過敏。",
+      "blurb": "件件嘅名、安檢、落單、材料、試戴、酒店、過敏，然後的士。",
       "lessons": [
         {
           "id": "J3",
@@ -82,7 +82,6 @@
         {
           "id": "T4",
           "title": "的士同問路",
-          "soon": true,
           "cefr": "A2"
         },
         {
@@ -109,7 +108,6 @@
         {
           "id": "T5",
           "title": "行失咗點求人",
-          "soon": true,
           "cefr": "A2/B1"
         },
         {
@@ -134,7 +132,6 @@
         {
           "id": "J9",
           "title": "投訴同退換",
-          "soon": true,
           "cefr": "B1"
         },
         {
@@ -154,6 +151,49 @@
           "title": "電話訂位",
           "soon": true,
           "cefr": "B1"
+        },
+        {
+          "id": "J12",
+          "title": "電話查詢",
+          "soon": true,
+          "cefr": "B1"
+        },
+        {
+          "id": "R7",
+          "title": "餐檯投訴",
+          "soon": true,
+          "cefr": "B1"
+        },
+        {
+          "id": "T8",
+          "title": "入境對話",
+          "soon": true,
+          "cefr": "B1"
+        },
+        {
+          "id": "W2",
+          "title": "電郵口語",
+          "soon": true,
+          "cefr": "B1"
+        }
+      ]
+    },
+    {
+      "id": "B2",
+      "title": "再伸展",
+      "blurb": "貴客諮詢同航班延誤，仲未開。",
+      "lessons": [
+        {
+          "id": "J11",
+          "title": "貴客諮詢",
+          "soon": true,
+          "cefr": "B2"
+        },
+        {
+          "id": "T9",
+          "title": "航班延誤",
+          "soon": true,
+          "cefr": "B2"
         }
       ]
     }

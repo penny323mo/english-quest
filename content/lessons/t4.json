@@ -1,0 +1,363 @@
+{
+  "id": "T4",
+  "unit": "T",
+  "titleYue": "的士同問路",
+  "titleEn": "Taxi and asking the way",
+  "canDoYue": "你能夠講目的地、問大概幾耐，同埋喺街角落車。",
+  "canDoEn": "Give a destination, ask roughly how long, and ask to stop at a corner.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t4.webp",
+  "cast": [
+    "kai",
+    "tom"
+  ],
+  "cefr": "A2",
+  "lemmas": [
+    "taxi-noun",
+    "destination-noun",
+    "address-noun",
+    "corner-noun",
+    "traffic-noun",
+    "meter-noun",
+    "roughly-adv",
+    "landmark-noun",
+    "straight-adv",
+    "left-adv",
+    "right-adv",
+    "receipt-noun"
+  ],
+  "dialogue": [
+    {
+      "id": "t4-l1",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "The taxi is here, and I can give the driver your full address now.",
+      "glossYue": "的士到咗，我可以而家同司機講你個完整地址。",
+      "audio": "assets/audio/lines/t4-l1.mp3",
+      "audioSlow": "assets/audio/lines/t4-l1-slow.mp3",
+      "say": "The taxi is here, and I can give the driver your full address now.",
+      "hideGloss": false
+    },
+    {
+      "id": "t4-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could you take me to the landmark that is opposite the hotel corner?",
+      "glossYue": "可唔可以載我去酒店街角對面嗰個地標？",
+      "audio": "assets/audio/lines/t4-l2.mp3",
+      "audioSlow": "assets/audio/lines/t4-l2-slow.mp3",
+      "say": "Could you take me to the landmark that is opposite the hotel corner?",
+      "hideGloss": true
+    },
+    {
+      "id": "t4-l3",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "The meter is on, and traffic is slow along this street today.",
+      "glossYue": "咪錶開咗，今日呢條街好塞。",
+      "audio": "assets/audio/lines/t4-l3.mp3",
+      "audioSlow": "assets/audio/lines/t4-l3-slow.mp3",
+      "say": "The meter is on, and traffic is slow along this street today.",
+      "hideGloss": false
+    },
+    {
+      "id": "t4-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "How long will this take, roughly, if we go straight and turn left?",
+      "glossYue": "如果直行再轉左，大概要幾耐？",
+      "audio": "assets/audio/lines/t4-l4.mp3",
+      "audioSlow": "assets/audio/lines/t4-l4-slow.mp3",
+      "say": "How long will this take, roughly, if we go straight and turn left?",
+      "hideGloss": true
+    },
+    {
+      "id": "t4-l5",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "It takes about ten minutes, and I will drop you at that corner.",
+      "glossYue": "大概十分鐘，我會喺嗰個街角落你。",
+      "audio": "assets/audio/lines/t4-l5.mp3",
+      "audioSlow": "assets/audio/lines/t4-l5-slow.mp3",
+      "say": "It takes about ten minutes, and I will drop you at that corner.",
+      "hideGloss": false
+    },
+    {
+      "id": "t4-l6",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Here is fine, and could I have a receipt before I leave the taxi?",
+      "glossYue": "呢度得喇，落車之前可唔可以畀張收據？",
+      "audio": "assets/audio/lines/t4-l6.mp3",
+      "audioSlow": "assets/audio/lines/t4-l6-slow.mp3",
+      "say": "Here is fine, and could I have a receipt before I leave the taxi?",
+      "hideGloss": true
+    },
+    {
+      "id": "t4-l7",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Your destination is just ahead, and the landmark is on your right side.",
+      "glossYue": "目的地就喺前面，地標喺你右手邊。",
+      "audio": "assets/audio/lines/t4-l7.mp3",
+      "audioSlow": "assets/audio/lines/t4-l7-slow.mp3",
+      "say": "Your destination is just ahead, and the landmark is on your right side.",
+      "hideGloss": false
+    },
+    {
+      "id": "t4-l8",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Thank you, and I will walk straight from this corner to the door.",
+      "glossYue": "多謝，我會由呢個街角直行去門口。",
+      "audio": "assets/audio/lines/t4-l8.mp3",
+      "audioSlow": "assets/audio/lines/t4-l8-slow.mp3",
+      "say": "Thank you, and I will walk straight from this corner to the door.",
+      "hideGloss": false
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Could you take me to the landmark? 係問？",
+      "choices": [
+        "可唔可以載我去地標",
+        "可唔可以換件貨",
+        "可唔可以叫救護車"
+      ],
+      "answer": 0,
+      "explain": "take me to 係載我去。"
+    },
+    {
+      "prompt": "The meter is on. 即係？",
+      "choices": [
+        "咪錶開咗，會計車費",
+        "收據準備好",
+        "地址錯咗"
+      ],
+      "answer": 0,
+      "explain": "meter 係的士咪錶。"
+    },
+    {
+      "prompt": "roughly ten minutes 係？",
+      "choices": [
+        "大概十分鐘",
+        "一定要十分鐘",
+        "已經行咗十分鐘"
+      ],
+      "answer": 0,
+      "explain": "roughly 係大概，唔係準到秒。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Could you take me to this ___ by the hotel?",
+      "example": "Could you take me to this destination by the hotel?",
+      "glossYue": "可唔可以載我去酒店附近嘅⋯⋯？",
+      "answer": "destination",
+      "choices": [
+        "destination",
+        "wallet",
+        "refund"
+      ]
+    },
+    {
+      "pattern": "The ___ is running, so we can see the fare.",
+      "example": "The meter is running, so we can see the fare.",
+      "glossYue": "⋯⋯開住，所以睇到車費。",
+      "answer": "meter",
+      "choices": [
+        "meter",
+        "embassy",
+        "clasp"
+      ]
+    },
+    {
+      "pattern": "How long will it take, ___ , if the traffic is slow?",
+      "example": "How long will it take, roughly, if the traffic is slow?",
+      "glossYue": "如果塞車，大概要⋯⋯？",
+      "answer": "roughly",
+      "choices": [
+        "roughly",
+        "immediately",
+        "stolen"
+      ]
+    },
+    {
+      "pattern": "Please stop at the ___ opposite the landmark.",
+      "example": "Please stop at the corner opposite the landmark.",
+      "glossYue": "唔該喺地標對面嘅⋯⋯停。",
+      "answer": "corner",
+      "choices": [
+        "corner",
+        "manager",
+        "ambulance"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "t4-l4",
+    "hint": "How long will this take, roughly, if we go straight and turn left?"
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想喺街角落車。點講？",
+      "choices": [
+        "Please stop at the corner opposite the landmark.",
+        "I would like a refund.",
+        "The clasp is broken."
+      ],
+      "answer": 0,
+      "explain": "講停邊個街角。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "The",
+        "taxi",
+        "is",
+        "waiting",
+        "at",
+        "the",
+        "corner"
+      ],
+      "answer": [
+        "The",
+        "taxi",
+        "is",
+        "waiting",
+        "at",
+        "the",
+        "corner"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "kai",
+    "intro": "Tom 上咗的士。等佢講完目的地先答。可以講：The meter is on。",
+    "turns": [
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Could you take me to the landmark that is opposite the hotel corner?",
+        "audio": "assets/audio/lines/t4-l2.mp3",
+        "audioSlow": "assets/audio/lines/t4-l2-slow.mp3",
+        "expect": "The meter is on, and traffic is slow along this street today.",
+        "keywords": [
+          "meter",
+          "traffic"
+        ],
+        "modelAudio": "assets/audio/lines/t4-l3.mp3",
+        "modelSlow": "assets/audio/lines/t4-l3-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "How long will this take, roughly, if we go straight and turn left?",
+        "audio": "assets/audio/lines/t4-l4.mp3",
+        "audioSlow": "assets/audio/lines/t4-l4-slow.mp3",
+        "expect": "It takes about ten minutes, and I will drop you at that corner.",
+        "keywords": [
+          "minutes",
+          "corner"
+        ],
+        "modelAudio": "assets/audio/lines/t4-l5.mp3",
+        "modelSlow": "assets/audio/lines/t4-l5-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Here is fine, and could I have a receipt before I leave the taxi?",
+        "audio": "assets/audio/lines/t4-l6.mp3",
+        "audioSlow": "assets/audio/lines/t4-l6-slow.mp3",
+        "expect": "Your destination is just ahead, and the landmark is on your right side.",
+        "keywords": [
+          "destination",
+          "landmark"
+        ],
+        "modelAudio": "assets/audio/lines/t4-l7.mp3",
+        "modelSlow": "assets/audio/lines/t4-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen to the clip once, then choose the word you heard for the hired car.",
+      "lemma": "taxi-noun",
+      "choices": [
+        "taxi",
+        "traffic",
+        "receipt"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen to the clip once, then choose the word you heard for a known place.",
+      "lemma": "landmark-noun",
+      "choices": [
+        "landmark",
+        "meter",
+        "address"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "When a guest says \"meter\", what does that word mean in the taxi?",
+      "choices": [
+        "咪錶",
+        "地標",
+        "收據"
+      ],
+      "answer": 0,
+      "explain": "meter 計車費。"
+    },
+    {
+      "type": "meaning",
+      "prompt": "When a guest says \"roughly ten minutes\", what does roughly mean here?",
+      "choices": [
+        "大概",
+        "一定",
+        "已經到"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which of these taxi words begins with the /l/ sound: landmark, meter, or traffic?",
+      "choices": [
+        "landmark",
+        "meter",
+        "traffic"
+      ],
+      "answer": 0,
+      "explain": "landmark 開頭係 /l/。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "地標開頭嗰個音",
+    "note": "landmark 開頭係 /l/。舌尖抵住上顎後面，氣由兩邊出。meter 第二音係輕 /ɚ/。traffic 重音喺第一節。",
+    "pairs": [
+      {
+        "a": "landmark-noun",
+        "b": "meter-noun"
+      },
+      {
+        "a": "left-adv",
+        "b": "right-adv"
+      }
+    ],
+    "drill": [
+      "landmark-noun",
+      "left-adv",
+      "traffic-noun",
+      "taxi-noun",
+      "corner-noun"
+    ]
+  },
+  "next": "J6"
+}

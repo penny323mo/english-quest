@@ -154,8 +154,8 @@
   ],
   "chunks": [
     {
-      "pattern": "I have a reservation under ___.",
-      "example": "I have a reservation under Tom.",
+      "pattern": "I have a reservation under ___, and I am ready to check in now.",
+      "example": "I have a reservation under Tom, and I am ready to check in now.",
       "glossYue": "我用⋯⋯個名訂咗房。",
       "answer": "Tom",
       "choices": [
@@ -165,8 +165,8 @@
       ]
     },
     {
-      "pattern": "Your room is a ___.",
-      "example": "Your room is a double.",
+      "pattern": "Your room is a ___, and it looks over the quiet street.",
+      "example": "Your room is a double, and it looks over the quiet street.",
       "glossYue": "你間房係⋯⋯。",
       "answer": "double",
       "choices": [
@@ -176,8 +176,8 @@
       ]
     },
     {
-      "pattern": "Could you tell me the wifi ___?",
-      "example": "Could you tell me the wifi password?",
+      "pattern": "Could you tell me the wifi ___ so I can send a message home?",
+      "example": "Could you tell me the wifi password so I can send a message home?",
       "glossYue": "可唔可以話我知無線網絡⋯⋯？",
       "answer": "password",
       "choices": [
@@ -187,8 +187,8 @@
       ]
     },
     {
-      "pattern": "Here is your ___.",
-      "example": "Here is your key card.",
+      "pattern": "Here is your ___, and please keep it with you until you leave today.",
+      "example": "Here is your key card, and please keep it with you until you leave today.",
       "glossYue": "呢張係你把⋯⋯。",
       "answer": "key card",
       "choices": [
@@ -285,7 +285,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "floor-noun",
       "choices": [
         "floor",
@@ -296,7 +296,7 @@
     },
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "wifi-noun",
       "choices": [
         "wifi",
@@ -307,7 +307,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "elevator",
+      "prompt": "When a guest says \"elevator\", what does that word or phrase mean here?",
       "choices": [
         "升降機",
         "樓層",
@@ -317,7 +317,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "twin",
+      "prompt": "When a guest says \"twin\", what does that word or phrase mean here?",
       "choices": [
         "雙床",
         "雙人床",
@@ -327,7 +327,7 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個有 /l/？",
+      "prompt": "Choose the best answer to this lesson question: 邊個有 /l/？",
       "choices": [
         "floor",
         "view",

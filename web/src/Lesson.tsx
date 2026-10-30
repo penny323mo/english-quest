@@ -693,7 +693,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪十七課你行完啦。到期嘅卡會喺重溫等你。</p>
+        <p className="lede">呢輪二十課你行完啦。到期嘅卡會喺重溫等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );

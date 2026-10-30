@@ -17,15 +17,18 @@ import t3 from "../../content/lessons/t3.json";
 import r1 from "../../content/lessons/r1.json";
 import r2 from "../../content/lessons/r2.json";
 import r3 from "../../content/lessons/r3.json";
+import t4 from "../../content/lessons/t4.json";
+import t5 from "../../content/lessons/t5.json";
+import j9 from "../../content/lessons/j9.json";
 import decksFile from "../../content/decks.json";
 import type { DeckFile, Goal, Lesson, LexItem, PathFile } from "./types";
 
 export const lexicon = lexFile as unknown as { items: LexItem[]; license: string; accent: string };
 export const pathData = pathFile as unknown as PathFile;
-export const lessons = [f1, f2, f3, f4, j1, r1, j2, t1, j3, t2, r2, j4, j5, t3, r3, j6, j7] as unknown as Lesson[];
+export const lessons = [f1, f2, f3, f4, j1, r1, j2, t1, j3, t2, r2, j4, j5, t3, r3, t4, j6, j7, t5, j9] as unknown as Lesson[];
 export const decks = decksFile as unknown as DeckFile;
 
-export const SHIPPED = ["F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "J6", "J7"] as const;
+export const SHIPPED = ["F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "J6", "J7", "T5", "J9"] as const;
 
 export const lessonById: Record<string, Lesson> = Object.fromEntries(lessons.map((l) => [l.id, l]));
 export const lexById: Record<string, LexItem> = Object.fromEntries(lexicon.items.map((i) => [i.id, i]));

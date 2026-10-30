@@ -1,0 +1,358 @@
+{
+  "id": "T5",
+  "unit": "T",
+  "titleYue": "行失咗點求人",
+  "titleEn": "Lost and emergencies",
+  "canDoYue": "你能夠講唔見咗咩、去邊度報失，同埋幾時要叫緊急幫手。",
+  "canDoEn": "Say what you have lost, where to report it, and when to ask for emergency help.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t5.webp",
+  "cast": [
+    "kai",
+    "tom"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "lost-adj",
+    "wallet-noun",
+    "missing-adj",
+    "police-noun",
+    "embassy-noun",
+    "emergency-noun",
+    "ambulance-noun",
+    "stolen-adj",
+    "report-noun",
+    "passport-noun",
+    "help-verb",
+    "here-adv"
+  ],
+  "dialogue": [
+    {
+      "id": "t5-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I have lost my wallet, and I last saw it at the desk this morning.",
+      "glossYue": "我唔見咗個銀包，今朝最後一次見係喺櫃檯。",
+      "audio": "assets/audio/lines/t5-l1.mp3",
+      "audioSlow": "assets/audio/lines/t5-l1-slow.mp3",
+      "say": "I have lost my wallet, and I last saw it at the desk this morning.",
+      "hideGloss": false
+    },
+    {
+      "id": "t5-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could you help me report it now, because my passport was inside the wallet?",
+      "glossYue": "可唔可以而家幫我報失？因為護照喺銀包入面。",
+      "audio": "assets/audio/lines/t5-l2.mp3",
+      "audioSlow": "assets/audio/lines/t5-l2-slow.mp3",
+      "say": "Could you help me report it now, because my passport was inside the wallet?",
+      "hideGloss": true
+    },
+    {
+      "id": "t5-l3",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "The police desk is nearby, and they can write the missing item report for you.",
+      "glossYue": "警崗喺附近，佢哋可以幫你寫搵唔到物件嘅報告。",
+      "audio": "assets/audio/lines/t5-l3.mp3",
+      "audioSlow": "assets/audio/lines/t5-l3-slow.mp3",
+      "say": "The police desk is nearby, and they can write the missing item report for you.",
+      "hideGloss": false
+    },
+    {
+      "id": "t5-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I think the wallet was stolen, so I also need the embassy number.",
+      "glossYue": "我諗個銀包畀人偷咗，所以我亦都要大使館電話。",
+      "audio": "assets/audio/lines/t5-l4.mp3",
+      "audioSlow": "assets/audio/lines/t5-l4-slow.mp3",
+      "say": "I think the wallet was stolen, so I also need the embassy number.",
+      "hideGloss": true
+    },
+    {
+      "id": "t5-l5",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "If this is an emergency, I can call an ambulance while you wait here.",
+      "glossYue": "如果係緊急，我會叫救護車，你可以喺度等。",
+      "audio": "assets/audio/lines/t5-l5.mp3",
+      "audioSlow": "assets/audio/lines/t5-l5-slow.mp3",
+      "say": "If this is an emergency, I can call an ambulance while you wait here.",
+      "hideGloss": true
+    },
+    {
+      "id": "t5-l6",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "The wallet is still missing, but your passport copies are in the safe.",
+      "glossYue": "銀包仲搵唔到，不過護照副本喺夾萬。",
+      "audio": "assets/audio/lines/t5-l6.mp3",
+      "audioSlow": "assets/audio/lines/t5-l6-slow.mp3",
+      "say": "The wallet is still missing, but your passport copies are in the safe.",
+      "hideGloss": false
+    },
+    {
+      "id": "t5-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Please help me call the embassy, and I will wait here while you write the report.",
+      "glossYue": "唔該幫我打去大使館，我會喺度等你寫報告。",
+      "audio": "assets/audio/lines/t5-l7.mp3",
+      "audioSlow": "assets/audio/lines/t5-l7-slow.mp3",
+      "say": "Please help me call the embassy, and I will wait here while you write the report.",
+      "hideGloss": true
+    },
+    {
+      "id": "t5-l8",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "I understand, and we will file the report here before we search the lobby.",
+      "glossYue": "我明白，我哋會喺度先報失，再搵大堂。",
+      "audio": "assets/audio/lines/t5-l8.mp3",
+      "audioSlow": "assets/audio/lines/t5-l8-slow.mp3",
+      "say": "I understand, and we will file the report here before we search the lobby.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "I have lost my wallet. 係講？",
+      "choices": [
+        "我唔見咗個銀包",
+        "我想換過條手鏈",
+        "的士咪錶開咗"
+      ],
+      "answer": 0,
+      "explain": "have lost 係而家先發現唔見咗。"
+    },
+    {
+      "prompt": "I think it was stolen. 同 lost 差喺？",
+      "choices": [
+        "覺得畀人偷咗，唔係自己掉低",
+        "只係大概位置",
+        "收據唔見咗"
+      ],
+      "answer": 0,
+      "explain": "stolen 係被人拿走。"
+    },
+    {
+      "prompt": "If this is an emergency 係？",
+      "choices": [
+        "如果情況緊急",
+        "如果只係塞車",
+        "如果想退款"
+      ],
+      "answer": 0,
+      "explain": "emergency 先至叫救護車。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I have ___ my wallet, and my passport was inside it.",
+      "example": "I have lost my wallet, and my passport was inside it.",
+      "glossYue": "我⋯⋯個銀包，護照喺入面。",
+      "answer": "lost",
+      "choices": [
+        "lost",
+        "meter",
+        "refund"
+      ]
+    },
+    {
+      "pattern": "Could you help me file a ___ at the desk?",
+      "example": "Could you help me file a report at the desk?",
+      "glossYue": "可唔可以幫我喺櫃檯⋯⋯？",
+      "answer": "report",
+      "choices": [
+        "report",
+        "taxi",
+        "corner"
+      ]
+    },
+    {
+      "pattern": "The ___ desk is nearby if the wallet was stolen.",
+      "example": "The police desk is nearby if the wallet was stolen.",
+      "glossYue": "如果銀包畀人偷咗，⋯⋯就喺附近。",
+      "answer": "police",
+      "choices": [
+        "police",
+        "traffic",
+        "manager"
+      ]
+    },
+    {
+      "pattern": "If this is an ___ , please call an ambulance.",
+      "example": "If this is an emergency, please call an ambulance.",
+      "glossYue": "如果係⋯⋯，唔該叫救護車。",
+      "answer": "emergency",
+      "choices": [
+        "emergency",
+        "landmark",
+        "receipt"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "t5-l2",
+    "hint": "Could you help me report it now, because my passport was inside the wallet?"
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "銀包可能被人偷咗。點講？",
+      "choices": [
+        "I think the wallet was stolen, so I also need the embassy number.",
+        "The meter is on, and traffic is slow.",
+        "Could you wrap the gift?"
+      ],
+      "answer": 0,
+      "explain": "stolen 之後先要大使館電話。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "I",
+        "have",
+        "lost",
+        "my",
+        "wallet"
+      ],
+      "answer": [
+        "I",
+        "have",
+        "lost",
+        "my",
+        "wallet"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "kai",
+    "intro": "Tom 喺櫃檯話唔見咗銀包。等佢講完先答。可以講：The police desk is nearby。",
+    "turns": [
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "I have lost my wallet, and I last saw it at the desk this morning.",
+        "audio": "assets/audio/lines/t5-l1.mp3",
+        "audioSlow": "assets/audio/lines/t5-l1-slow.mp3",
+        "expect": "The police desk is nearby, and they can write the missing item report for you.",
+        "keywords": [
+          "police",
+          "report"
+        ],
+        "modelAudio": "assets/audio/lines/t5-l3.mp3",
+        "modelSlow": "assets/audio/lines/t5-l3-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "I think the wallet was stolen, so I also need the embassy number.",
+        "audio": "assets/audio/lines/t5-l4.mp3",
+        "audioSlow": "assets/audio/lines/t5-l4-slow.mp3",
+        "expect": "If this is an emergency, I can call an ambulance while you wait here.",
+        "keywords": [
+          "emergency",
+          "ambulance"
+        ],
+        "modelAudio": "assets/audio/lines/t5-l5.mp3",
+        "modelSlow": "assets/audio/lines/t5-l5-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Please help me call the embassy, and I will wait here while you write the report.",
+        "audio": "assets/audio/lines/t5-l7.mp3",
+        "audioSlow": "assets/audio/lines/t5-l7-slow.mp3",
+        "expect": "I understand, and we will file the report here before we search the lobby.",
+        "keywords": [
+          "report",
+          "lobby"
+        ],
+        "modelAudio": "assets/audio/lines/t5-l8.mp3",
+        "modelSlow": "assets/audio/lines/t5-l8-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen to the clip once, then choose the word you heard for the case that holds money.",
+      "lemma": "wallet-noun",
+      "choices": [
+        "wallet",
+        "police",
+        "embassy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen to the clip once, then choose the word you heard for the people who take a report.",
+      "lemma": "police-noun",
+      "choices": [
+        "police",
+        "ambulance",
+        "wallet"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "When a guest says \"I have lost my wallet\", what does lost mean here?",
+      "choices": [
+        "唔見咗",
+        "塞車",
+        "退款"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "When a guest says \"this is an emergency\", what does emergency mean here?",
+      "choices": [
+        "緊急情況",
+        "街角",
+        "收據"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which of these help words contains the /l/ sound: wallet, embassy, or report?",
+      "choices": [
+        "wallet",
+        "embassy",
+        "report"
+      ],
+      "answer": 0,
+      "explain": "wallet 有 /l/。embassy 同 report 冇 /l/。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "銀包入面嗰個音",
+    "note": "wallet 有 /l/。舌尖抵住上顎後面。police 重音喺第二節。embassy 重音喺第一節。",
+    "pairs": [
+      {
+        "a": "wallet-noun",
+        "b": "embassy-noun"
+      },
+      {
+        "a": "lost-adj",
+        "b": "stolen-adj"
+      }
+    ],
+    "drill": [
+      "wallet-noun",
+      "lost-adj",
+      "police-noun",
+      "ambulance-noun",
+      "report-noun"
+    ]
+  },
+  "next": "J9"
+}

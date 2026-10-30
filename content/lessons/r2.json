@@ -120,8 +120,8 @@
   ],
   "chunks": [
     {
-      "pattern": "I'd like the ___, please.",
-      "example": "I'd like the chicken, please.",
+      "pattern": "I'd like the ___, please, and a glass of water with it.",
+      "example": "I'd like the chicken, please, and a glass of water with it.",
       "glossYue": "我想叫⋯⋯，唔該。",
       "answer": "chicken",
       "choices": [
@@ -131,8 +131,8 @@
       ]
     },
     {
-      "pattern": "Can I have some ___, please?",
-      "example": "Can I have some water, please?",
+      "pattern": "Can I have some ___, please, when you have a free moment?",
+      "example": "Can I have some water, please, when you have a free moment?",
       "glossYue": "可唔可以畀我⋯⋯？",
       "answer": "water",
       "choices": [
@@ -142,8 +142,8 @@
       ]
     },
     {
-      "pattern": "What do you ___?",
-      "example": "What do you recommend?",
+      "pattern": "What do you ___ for dinner if I do not eat meat?",
+      "example": "What do you recommend for dinner if I do not eat meat?",
       "glossYue": "你推薦咩？",
       "answer": "recommend",
       "choices": [
@@ -153,8 +153,8 @@
       ]
     },
     {
-      "pattern": "Anything ___?",
-      "example": "Anything else?",
+      "pattern": "Would you like anything ___ before I send this order through?",
+      "example": "Would you like anything else before I send this order through?",
       "glossYue": "仲有冇其他？",
       "answer": "else",
       "choices": [
@@ -247,7 +247,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "chicken-noun",
       "choices": [
         "chicken",
@@ -258,7 +258,7 @@
     },
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "cant-verb",
       "choices": [
         "can't",
@@ -269,7 +269,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "recommend",
+      "prompt": "When a guest says \"recommend\", what does that word or phrase mean here?",
       "choices": [
         "推薦",
         "訂位",
@@ -279,7 +279,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "I'd like the chicken.",
+      "prompt": "When a guest says \"I'd like the chicken.\", what does that word or phrase mean here?",
       "choices": [
         "我想叫雞",
         "我想要杯水",
@@ -289,7 +289,7 @@
     },
     {
       "type": "choice",
-      "prompt": "can't 同 can 差喺邊？",
+      "prompt": "Choose the best answer to this lesson question: can't 同 can 差喺邊？",
       "choices": [
         "can't 有清楚嘅 /t/",
         "兩個完全一樣",

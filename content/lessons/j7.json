@@ -175,8 +175,8 @@
   ],
   "chunks": [
     {
-      "pattern": "Would you like to pay by ___?",
-      "example": "Would you like to pay by card?",
+      "pattern": "Would you like to pay by ___, or is cash easier for you today?",
+      "example": "Would you like to pay by card, or is cash easier for you today?",
       "glossYue": "你想唔想用⋯⋯付款？",
       "answer": "card",
       "choices": [
@@ -186,8 +186,8 @@
       ]
     },
     {
-      "pattern": "This purchase is ___.",
-      "example": "This purchase is tax-free.",
+      "pattern": "This purchase is ___, so you can claim the tax later.",
+      "example": "This purchase is tax-free, so you can claim the tax later.",
       "glossYue": "呢單可以⋯⋯。",
       "answer": "tax-free",
       "choices": [
@@ -197,8 +197,8 @@
       ]
     },
     {
-      "pattern": "Here is your ___.",
-      "example": "Here is your receipt.",
+      "pattern": "Here is your ___, and please keep it with you until you leave today.",
+      "example": "Here is your receipt, and please keep it with you until you leave today.",
       "glossYue": "呢張係你張⋯⋯。",
       "answer": "receipt",
       "choices": [
@@ -208,9 +208,9 @@
       ]
     },
     {
-      "pattern": "I can ___ the gift.",
-      "example": "I can wrap the gift.",
-      "glossYue": "我可以⋯⋯份禮物。",
+      "pattern": "Could you ___ the gift so I can carry it home today?",
+      "example": "Could you wrap the gift so I can carry it home today?",
+      "glossYue": "可唔可以⋯⋯份禮物，等我今日帶得返屋企？",
       "answer": "wrap",
       "choices": [
         "wrap",
@@ -307,7 +307,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "receipt-noun",
       "choices": [
         "receipt",
@@ -318,7 +318,7 @@
     },
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "contactless-adj",
       "choices": [
         "contactless",
@@ -329,7 +329,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "tax-free",
+      "prompt": "When a guest says \"tax-free\", what does that word or phrase mean here?",
       "choices": [
         "免稅",
         "收據",
@@ -339,7 +339,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "wrap",
+      "prompt": "When a guest says \"wrap\", what does that word or phrase mean here?",
       "choices": [
         "包裝",
         "簽名",
@@ -349,7 +349,7 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個有 /l/？",
+      "prompt": "Choose the best answer to this lesson question: 邊個有 /l/？",
       "choices": [
         "contactless",
         "cash",
@@ -381,5 +381,5 @@
       "signature-noun"
     ]
   },
-  "next": null
+  "next": "T5"
 }

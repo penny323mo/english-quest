@@ -140,8 +140,8 @@
   ],
   "chunks": [
     {
-      "pattern": "Would you like to try this ___ on?",
-      "example": "Would you like to try this ring on?",
+      "pattern": "Would you like to try this ___ on before you decide today?",
+      "example": "Would you like to try this ring on before you decide today?",
       "glossYue": "想唔想試吓呢隻⋯⋯？",
       "answer": "ring",
       "choices": [
@@ -151,8 +151,8 @@
       ]
     },
     {
-      "pattern": "Can you measure my ___?",
-      "example": "Can you measure my finger?",
+      "pattern": "Can you measure my ___ so we can find a comfortable size?",
+      "example": "Can you measure my finger so we can find a comfortable size?",
       "glossYue": "可唔可以量吓我隻⋯⋯？",
       "answer": "finger",
       "choices": [
@@ -162,8 +162,8 @@
       ]
     },
     {
-      "pattern": "This size is a little ___.",
-      "example": "This size is a little tight.",
+      "pattern": "This size is a little ___ when I close my hand.",
+      "example": "This size is a little tight when I close my hand.",
       "glossYue": "呢個碼有啲⋯⋯。",
       "answer": "tight",
       "choices": [
@@ -173,8 +173,8 @@
       ]
     },
     {
-      "pattern": "Look in the ___.",
-      "example": "Look in the mirror.",
+      "pattern": "Please look in the ___ and tell me how the piece sits.",
+      "example": "Please look in the mirror and tell me how the piece sits.",
       "glossYue": "你照吓⋯⋯。",
       "answer": "mirror",
       "choices": [
@@ -268,7 +268,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "loose-adj",
       "choices": [
         "loose",
@@ -279,7 +279,7 @@
     },
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "finger-noun",
       "choices": [
         "finger",
@@ -290,7 +290,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "size",
+      "prompt": "When a guest says \"size\", what does that word or phrase mean here?",
       "choices": [
         "碼",
         "稅",
@@ -300,7 +300,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "tight",
+      "prompt": "When a guest says \"tight\", what does that word or phrase mean here?",
       "choices": [
         "緊",
         "鬆",
@@ -310,7 +310,7 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個開頭係 /l/？",
+      "prompt": "Choose the best answer to this lesson question: 邊個開頭係 /l/？",
       "choices": [
         "loose",
         "tight",

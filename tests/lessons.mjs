@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), "utf8"));
 const ids = new Set(lex.items.map((item) => item.id));
-const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "t1", "t2", "t3", "r1", "r2", "r3"];
+const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j9", "t1", "t2", "t3", "t4", "t5", "r1", "r2", "r3"];
 const lessons = shipped.map((id) =>
   JSON.parse(fs.readFileSync(path.join(root, "content/lessons", `${id}.json`), "utf8")),
 );
@@ -20,8 +20,8 @@ function exists(rel) {
   assert.ok(fs.statSync(file).size > 400, rel);
 }
 
-test("seventeen lessons each carry the 12-beat payload", () => {
-  assert.equal(lessons.length, 17);
+test("twenty lessons each carry the 12-beat payload", () => {
+  assert.equal(lessons.length, 20);
   for (const lesson of lessons) {
     for (const key of ["hero", "canDoYue", "canDoEn", "dialogue", "understand", "chunks", "shadow", "build", "roleplay", "quiz", "sound", "next"]) {
       assert.ok(key in lesson, `${lesson.id} ${key}`);
@@ -110,7 +110,7 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   assert.equal(j4.next, "J5");
   assert.equal(j5.next, "T3");
   assert.equal(j6.next, "J7");
-  assert.equal(j7.next, null);
+  assert.equal(j7.next, "T5");
   assert.equal(j7.cefr, "A2/B1");
   assert.match(j7.titleYue, /付款/);
   assert.match(j7.sound.ipa, /\/l\//);
@@ -131,7 +131,19 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   const r3 = lessons.find((lesson) => lesson.id === "R3");
   assert.equal(r1.next, "J2");
   assert.equal(r2.next, "J4");
-  assert.equal(r3.next, "J6");
+  assert.equal(r3.next, "T4");
+  const t4 = lessons.find((lesson) => lesson.id === "T4");
+  const t5 = lessons.find((lesson) => lesson.id === "T5");
+  const j9 = lessons.find((lesson) => lesson.id === "J9");
+  assert.equal(t4.next, "J6");
+  assert.equal(t4.cefr, "A2");
+  assert.match(t4.titleYue, /的士/);
+  assert.equal(t5.next, "J9");
+  assert.equal(t5.cefr, "A2/B1");
+  assert.match(t5.titleYue, /行失/);
+  assert.equal(j9.next, null);
+  assert.equal(j9.cefr, "B1");
+  assert.match(j9.titleYue, /投訴/);
   assert.match(r3.titleYue, /過敏/);
   assert.equal(r3.cefr, "A2");
   assert.match(r3.sound.ipa, /\/l\//);
@@ -161,7 +173,7 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
     );
   }
   const shippedOnPath = flatPath.filter((entry) => !entry.soon).map((entry) => entry.id);
-  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "J6", "J7"]);
+  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "J6", "J7", "T5", "J9"]);
   assert.equal(flatPath.find((entry) => entry.id === "J8").cefr, "B1");
   const said = (lesson) => lesson.dialogue.map((line) => line.text).join("\n");
   assert.ok(j4.dialogue.length >= 6 && j4.dialogue.length <= 10);
@@ -193,6 +205,17 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
     if (lesson.cefr === "A2") assert.ok(visible >= 0.5 && visible <= 0.7, `${lesson.id} visible ${visible}`);
     if (lesson.cefr === "A2/B1") assert.ok(visible >= 0.28 && visible <= 0.45, `${lesson.id} visible ${visible}`);
   }
+  const quizWords = (lesson) => lesson.quiz.reduce((sum, item) => sum + (item.prompt.match(wordRe) || []).length, 0) / lesson.quiz.length;
+  const chunkWords = (lesson) => lesson.chunks.reduce((sum, item) => sum + (item.pattern.match(wordRe) || []).length, 0) / lesson.chunks.length;
+  const a1Quiz = Math.max(...lessons.filter((lesson) => lesson.cefr === "A1").map(quizWords));
+  const a1Chunk = Math.max(...lessons.filter((lesson) => lesson.cefr === "A1").map(chunkWords));
+  for (const lesson of lessons) {
+    if (lesson.cefr !== "A2" && lesson.cefr !== "A2/B1") continue;
+    assert.ok(quizWords(lesson) > a1Quiz, `${lesson.id} quiz ${quizWords(lesson).toFixed(2)} <= A1 ${a1Quiz.toFixed(2)}`);
+    assert.ok(chunkWords(lesson) > a1Chunk, `${lesson.id} chunk ${chunkWords(lesson).toFixed(2)} <= A1 ${a1Chunk.toFixed(2)}`);
+  }
+  assert.equal(j7.chunks.some((chunk) => chunk.pattern === "I can ___ the gift."), false);
+  assert.ok(j7.chunks.some((chunk) => chunk.pattern.includes("Could you ___ the gift so I can carry it home today")));
   assert.match(fs.readFileSync(path.join(root, "web/src/Lesson.tsx"), "utf8"), /顯示中文/);
   const decks = JSON.parse(fs.readFileSync(path.join(root, "content/decks.json"), "utf8"));
   const jewellery = decks.decks.find((deck) => deck.id === "jewellery");
@@ -225,7 +248,7 @@ test("the app has a mic fallback and does not phone home", () => {
   assert.match(lesson, /改為即時講/);
   assert.match(lesson, />聽我</);
   assert.match(lesson, /咪未開/);
-  assert.match(lesson, /呢輪十七課你行完啦/);
+  assert.match(lesson, /呢輪二十課你行完啦/);
   assert.match(lesson, /setDone\(true\)/);
   assert.match(lesson, /playSfx/);
   assert.match(fs.readFileSync(path.join(root, "web/src/sfx.ts"), "utf8"), /AudioContext/);
@@ -284,7 +307,7 @@ test("role-play tip names a character or tells you it is your turn", () => {
   assert.match(lesson, /你扮 \$\{name\}/);
   assert.equal(lesson.includes("你而家係"), false);
   const data = fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8");
-  assert.match(data, /"F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "J6", "J7"/);
+  assert.match(data, /"F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "J6", "J7", "T5", "J9"/);
   assert.match(data, /const order = SHIPPED/);
 });
 
@@ -387,6 +410,45 @@ test("short English examples are greetings or set phrases", () => {
   for (const banned of ["With you.", "One hour.", "A new shoe."]) {
     assert.equal(lex.items.some((item) => item.example === banned), false, banned);
   }
+});
+
+test("each example contains its lemma in the glossed sense", () => {
+  function tokens(sample) {
+    return String(sample).toLowerCase().replace(/[.?!,;:"']/g, " ").replace(/-/g, " ").split(/\s+/).filter(Boolean);
+  }
+  function sameWord(hay, needle) {
+    return hay === needle || hay === `${needle}s` || hay === `${needle}es`;
+  }
+  function hasContig(text, lemma) {
+    const needle = tokens(lemma);
+    const hay = tokens(text);
+    assert.ok(needle.length > 0, lemma);
+    outer: for (let i = 0; i <= hay.length - needle.length; i += 1) {
+      for (let j = 0; j < needle.length; j += 1) if (!sameWord(hay[i + j], needle[j])) continue outer;
+      return true;
+    }
+    return false;
+  }
+  const byId = Object.fromEntries(lex.items.map((item) => [item.id, item]));
+  for (const item of lex.items) {
+    const samples = [item.example, ...(item.examples || []).map((example) => example.en)];
+    for (const sample of samples) assert.equal(hasContig(sample, item.lemma), true, `${item.id} ${sample}`);
+  }
+  assert.equal(byId["of-prep"].example, "I would like a cup of tea.");
+  assert.match(byId["of-prep"].exampleYue, /茶/);
+  assert.match(byId["of-prep"].say, /ˈʌv/);
+  assert.doesNotMatch(byId["of-prep"].example, /Of course/);
+  assert.equal(byId["keep-verb"].example, "Please keep the receipt.");
+  assert.match(byId["keep-verb"].exampleYue, /單/);
+  assert.doesNotMatch(byId["keep-verb"].example, /light/i);
+  assert.equal(byId["the-art"].example, "The menu is ready.");
+  assert.match(byId["the-art"].exampleYue, /餐牌/);
+  assert.match(byId["the-art"].say, /ðə/);
+  assert.doesNotMatch(byId["the-art"].example, /sound is short/i);
+  assert.equal(byId["listen-verb"].example, "Please listen to the guest.");
+  assert.match(byId["listen-verb"].exampleYue, /聽/);
+  assert.match(byId["listen-verb"].say, /lˈɪsən/);
+  assert.doesNotMatch(byId["listen-verb"].example, /Ship is short/);
 });
 
 test("perfect stays one stress and street names the right street", () => {

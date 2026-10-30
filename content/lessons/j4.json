@@ -143,8 +143,8 @@
   ],
   "chunks": [
     {
-      "pattern": "This ___ is authentic.",
-      "example": "This gold is authentic.",
+      "pattern": "This ___ is authentic, and the certificate is in the folder.",
+      "example": "This gold is authentic, and the certificate is in the folder.",
       "glossYue": "呢件⋯⋯係正貨。",
       "answer": "gold",
       "choices": [
@@ -154,8 +154,8 @@
       ]
     },
     {
-      "pattern": "Is the ___ natural?",
-      "example": "Is the diamond natural?",
+      "pattern": "Is the ___ natural, or has somebody treated the stone?",
+      "example": "Is the diamond natural, or has somebody treated the stone?",
       "glossYue": "⋯⋯係咪天然？",
       "answer": "diamond",
       "choices": [
@@ -165,8 +165,8 @@
       ]
     },
     {
-      "pattern": "It is ___.",
-      "example": "It is certified.",
+      "pattern": "It is ___, so the papers match the piece you chose.",
+      "example": "It is certified, so the papers match the piece you chose.",
       "glossYue": "有證書。",
       "answer": "certified",
       "choices": [
@@ -176,8 +176,8 @@
       ]
     },
     {
-      "pattern": "This setting is eighteen ___ gold.",
-      "example": "This setting is eighteen karat gold.",
+      "pattern": "This setting is eighteen ___ gold, and the band is solid.",
+      "example": "This setting is eighteen karat gold, and the band is solid.",
       "glossYue": "呢個鑲托係十八開金。",
       "answer": "karat",
       "choices": [
@@ -268,7 +268,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "authentic-adj",
       "choices": [
         "authentic",
@@ -279,7 +279,7 @@
     },
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "diamond-noun",
       "choices": [
         "diamond",
@@ -290,7 +290,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "gold",
+      "prompt": "When a guest says \"gold\", what does that word or phrase mean here?",
       "choices": [
         "金",
         "稅",
@@ -300,7 +300,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "jade",
+      "prompt": "When a guest says \"jade\", what does that word or phrase mean here?",
       "choices": [
         "玉",
         "鏡",
@@ -310,7 +310,7 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個中間有 /θ/？",
+      "prompt": "Choose the best answer to this lesson question: 邊個中間有 /θ/？",
       "choices": [
         "authentic",
         "setting",

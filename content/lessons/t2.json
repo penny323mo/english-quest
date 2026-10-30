@@ -120,8 +120,8 @@
   ],
   "chunks": [
     {
-      "pattern": "Put the liquids in the ___.",
-      "example": "Put the liquids in the bin.",
+      "pattern": "Please put the liquids in the ___ before you walk through security.",
+      "example": "Please put the liquids in the bin before you walk through security.",
       "glossYue": "將液體放喺個⋯⋯度。",
       "answer": "bin",
       "choices": [
@@ -131,8 +131,8 @@
       ]
     },
     {
-      "pattern": "Here is my ___.",
-      "example": "Here is my laptop.",
+      "pattern": "Here is my ___, and I will take it out of the bag.",
+      "example": "Here is my laptop, and I will take it out of the bag.",
       "glossYue": "我部⋯⋯喺度。",
       "answer": "laptop",
       "choices": [
@@ -142,8 +142,8 @@
       ]
     },
     {
-      "pattern": "Which way to the ___?",
-      "example": "Which way to the gate?",
+      "pattern": "Which way to the ___ if I am already past the security check?",
+      "example": "Which way to the gate if I am already past the security check?",
       "glossYue": "去⋯⋯邊邊行？",
       "answer": "gate",
       "choices": [
@@ -153,8 +153,8 @@
       ]
     },
     {
-      "pattern": "Go straight ___.",
-      "example": "Go straight ahead.",
+      "pattern": "Go straight ___, and the gate is on your left side.",
+      "example": "Go straight ahead, and the gate is on your left side.",
       "glossYue": "直行⋯⋯。",
       "answer": "ahead",
       "choices": [
@@ -244,7 +244,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "liquid-noun",
       "choices": [
         "liquid",
@@ -255,7 +255,7 @@
     },
     {
       "type": "listen",
-      "prompt": "你聽到邊個？",
+      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
       "lemma": "lift-noun",
       "choices": [
         "lift",
@@ -266,7 +266,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "bin",
+      "prompt": "When a guest says \"bin\", what does that word or phrase mean here?",
       "choices": [
         "膠盤",
         "餐牌",
@@ -276,7 +276,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "straight ahead",
+      "prompt": "When a guest says \"straight ahead\", what does that word or phrase mean here?",
       "choices": [
         "直行就得",
         "請跟我嚟",
@@ -286,7 +286,7 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個開頭係 /l/？",
+      "prompt": "Choose the best answer to this lesson question: 邊個開頭係 /l/？",
       "choices": [
         "liquid",
         "straight",
