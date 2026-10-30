@@ -9,3 +9,6 @@ WHEN DONE create /workspace/sidequest/english-quest/.orch/review-26.done with DO
 ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/review-26.done
 
 DIFFICULTY PROGRESSION (Penny): audit Path easy→hard; CEFR never decreases; no grammar before taught.
+
+## Coder live audit r24 (MUST close; blocks SHIP)
+See review/loop-r24/coder-audit.md. Any of 11/13/14/15 still open after fix-25, plus NEW 16 T4/T5 hero art soft-render -> redraw in F2/J9 thick-outline style; 17 difficulty dip T4 (13.2 words/line) > J6/J7 (~11.7) — make sentence length non-decreasing along path (shorten T4 or reorder); 18 recap goals 「你能夠…並且…」 -> spoken 「你識/你可以…，仲識…」 everywhere, and 「係問？」 stem -> 「即係問緊咩？」 (T4/J6/J7); 19 my-det example Yue adds extra clause; liquid example use "tray" to match 盤. Reviewer must verify each at 390px with screenshots.
