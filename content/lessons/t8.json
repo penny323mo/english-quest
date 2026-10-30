@@ -1,0 +1,349 @@
+{
+  "id": "T8",
+  "unit": "T",
+  "titleYue": "入境對話",
+  "titleEn": "At immigration",
+  "canDoYue": "你識講嚟觀光同住幾多日，仲識申報禮物同貨物。",
+  "canDoEn": "Say you are visiting for tourism and how long you will stay, then declare a gift and your goods.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t8.webp",
+  "cast": [
+    "kai",
+    "tom"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "purpose-noun",
+    "tourism-noun",
+    "business-noun",
+    "stay-noun",
+    "day-noun",
+    "hotel-noun",
+    "return-ticket-phrase",
+    "declare-verb",
+    "goods-noun",
+    "gift-noun",
+    "nothing-to-declare-phrase",
+    "form-noun",
+    "stamp-verb",
+    "officer-noun"
+  ],
+  "dialogue": [
+    {
+      "id": "t8-l1",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Good morning. What is the main purpose of your visit today, and are you here for tourism?",
+      "glossYue": "早晨。你今日嚟嘅主要目的係咩？你係咪嚟觀光？",
+      "audio": "assets/audio/lines/t8-l1.mp3",
+      "audioSlow": "assets/audio/lines/t8-l1-slow.mp3",
+      "say": "Good morning. What is the main purpose of your visit today, and are you here for tourism?",
+      "hideGloss": false
+    },
+    {
+      "id": "t8-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I am visiting for tourism, and my stay is for five days at a quiet city hotel.",
+      "glossYue": "我嚟觀光，會喺市中心一間靜嘅酒店逗留五日。",
+      "audio": "assets/audio/lines/t8-l2.mp3",
+      "audioSlow": "assets/audio/lines/t8-l2-slow.mp3",
+      "say": "I am visiting for tourism, and my stay is for five days at a quiet city hotel.",
+      "hideGloss": true
+    },
+    {
+      "id": "t8-l3",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Are you here for business as well, and do you have a return ticket with you today?",
+      "glossYue": "你係咪亦都有公差？你今日有冇帶住回程機票？",
+      "audio": "assets/audio/lines/t8-l3.mp3",
+      "audioSlow": "assets/audio/lines/t8-l3-slow.mp3",
+      "say": "Are you here for business as well, and do you have a return ticket with you today?",
+      "hideGloss": true
+    },
+    {
+      "id": "t8-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "This trip is not for business, and my return ticket shows the fifth day of the stay.",
+      "glossYue": "呢趟唔係公差，回程機票寫住逗留嘅第五日。",
+      "audio": "assets/audio/lines/t8-l4.mp3",
+      "audioSlow": "assets/audio/lines/t8-l4-slow.mp3",
+      "say": "This trip is not for business, and my return ticket shows the fifth day of the stay.",
+      "hideGloss": true
+    },
+    {
+      "id": "t8-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I declare these goods at the desk, and this small gift is for a friend at home.",
+      "glossYue": "我喺櫃檯申報呢啲貨物，呢份細禮物係送畀屋企朋友。",
+      "audio": "assets/audio/lines/t8-l5.mp3",
+      "audioSlow": "assets/audio/lines/t8-l5-slow.mp3",
+      "say": "I declare these goods at the desk, and this small gift is for a friend at home.",
+      "hideGloss": false
+    },
+    {
+      "id": "t8-l6",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Please complete this short form for me today, and tell me if you have nothing to declare.",
+      "glossYue": "請你今日填好呢張短表格，再話我知你係咪冇嘢申報。",
+      "audio": "assets/audio/lines/t8-l6.mp3",
+      "audioSlow": "assets/audio/lines/t8-l6-slow.mp3",
+      "say": "Please complete this short form for me today, and tell me if you have nothing to declare.",
+      "hideGloss": true
+    },
+    {
+      "id": "t8-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I have nothing to declare apart from this small gift, and the goods are for personal use.",
+      "glossYue": "除咗呢份細禮物，我冇嘢申報，貨物係自己用。",
+      "audio": "assets/audio/lines/t8-l7.mp3",
+      "audioSlow": "assets/audio/lines/t8-l7-slow.mp3",
+      "say": "I have nothing to declare apart from this small gift, and the goods are for personal use.",
+      "hideGloss": true
+    },
+    {
+      "id": "t8-l8",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "The officer will stamp your form here, and you may go on to the hotel after that.",
+      "glossYue": "關員會喺度幫你張表格蓋章，之後你可以去酒店。",
+      "audio": "assets/audio/lines/t8-l8.mp3",
+      "audioSlow": "assets/audio/lines/t8-l8-slow.mp3",
+      "say": "The officer will stamp your form here, and you may go on to the hotel after that.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "What is the main purpose of your visit? 即係問緊咩？",
+      "choices": [
+        "問你嚟嘅目的",
+        "問你住邊間酒店",
+        "問你有冇禮物"
+      ],
+      "answer": 0,
+      "explain": "purpose of your visit 係嚟做咩。"
+    },
+    {
+      "prompt": "My stay is for five days. 呢句即係點？",
+      "choices": [
+        "我會逗留五日",
+        "我住五日已經走",
+        "我唔肯定幾多日"
+      ],
+      "answer": 0,
+      "explain": "for five days 係為期五日。"
+    },
+    {
+      "prompt": "I have nothing to declare apart from this small gift. 呢句即係點？",
+      "choices": [
+        "除咗呢份細禮物就冇嘢申報",
+        "我仲有好多貨物",
+        "我唔使填表格"
+      ],
+      "answer": 0,
+      "explain": "nothing to declare 係冇額外要報。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I am visiting for ___, and my stay is for five days at a quiet city hotel.",
+      "example": "I am visiting for tourism, and my stay is for five days at a quiet city hotel.",
+      "glossYue": "我嚟⋯⋯。",
+      "answer": "tourism",
+      "choices": [
+        "tourism",
+        "business",
+        "hotel"
+      ]
+    },
+    {
+      "pattern": "I ___ these goods at the desk, and this small gift is for a friend at home.",
+      "example": "I declare these goods at the desk, and this small gift is for a friend at home.",
+      "glossYue": "我⋯⋯呢啲貨物。",
+      "answer": "declare",
+      "choices": [
+        "declare",
+        "stamp",
+        "stay"
+      ]
+    },
+    {
+      "pattern": "The ___ will stamp your form here, and you may go on to the hotel after that.",
+      "example": "The officer will stamp your form here, and you may go on to the hotel after that.",
+      "glossYue": "⋯⋯會蓋章。",
+      "answer": "officer",
+      "choices": [
+        "officer",
+        "gift",
+        "purpose"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "t8-l5",
+    "hint": "I declare these goods at the desk, and this small gift is for a friend at home."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "關員問你帶咗咩。你點先答？",
+      "choices": [
+        "I have nothing to declare apart from this small gift, and the goods are for personal use.",
+        "I can reserve this bracelet for Mei.",
+        "Our opening hours are on the door."
+      ],
+      "answer": 0,
+      "explain": "除咗禮物就冇嘢申報，貨物係自己用。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "I",
+        "am",
+        "visiting",
+        "for",
+        "tourism"
+      ],
+      "answer": [
+        "I",
+        "am",
+        "visiting",
+        "for",
+        "tourism"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你喺入境櫃檯。講目的同日數，再申報。可以講：for tourism。",
+    "turns": [
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "Good morning. What is the main purpose of your visit today, and are you here for tourism?",
+        "audio": "assets/audio/lines/t8-l1.mp3",
+        "audioSlow": "assets/audio/lines/t8-l1-slow.mp3",
+        "expect": "I am visiting for tourism, and my stay is for five days at a quiet city hotel.",
+        "keywords": [
+          "tourism",
+          "stay"
+        ],
+        "modelAudio": "assets/audio/lines/t8-l2.mp3",
+        "modelSlow": "assets/audio/lines/t8-l2-slow.mp3"
+      },
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "Are you here for business as well, and do you have a return ticket with you today?",
+        "audio": "assets/audio/lines/t8-l3.mp3",
+        "audioSlow": "assets/audio/lines/t8-l3-slow.mp3",
+        "expect": "This trip is not for business, and my return ticket shows the fifth day of the stay.",
+        "keywords": [
+          "business",
+          "ticket"
+        ],
+        "modelAudio": "assets/audio/lines/t8-l4.mp3",
+        "modelSlow": "assets/audio/lines/t8-l4-slow.mp3"
+      },
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "Please complete this short form for me today, and tell me if you have nothing to declare.",
+        "audio": "assets/audio/lines/t8-l6.mp3",
+        "audioSlow": "assets/audio/lines/t8-l6-slow.mp3",
+        "expect": "I have nothing to declare apart from this small gift, and the goods are for personal use.",
+        "keywords": [
+          "declare",
+          "gift"
+        ],
+        "modelAudio": "assets/audio/lines/t8-l7.mp3",
+        "modelSlow": "assets/audio/lines/t8-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：向關員講你帶咗咩",
+      "lemma": "declare-verb",
+      "choices": [
+        "declare",
+        "purpose",
+        "gift"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：你住嘅地方",
+      "lemma": "hotel-noun",
+      "choices": [
+        "hotel",
+        "stamp",
+        "goods"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "客人講「Good morning. What is the main purpose of your visit today, and are you here for tourism?」，purpose 係咩意思？",
+      "choices": [
+        "目的",
+        "回程機票",
+        "蓋章"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "客人講「I declare these goods at the desk, and this small gift is for a friend at home.」，gift 係咩意思？",
+      "choices": [
+        "禮物",
+        "貨物",
+        "表格"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個字有 /l/：declare、purpose、定 gift？",
+      "choices": [
+        "declare",
+        "purpose",
+        "gift"
+      ],
+      "answer": 0,
+      "explain": "declare 有 /l/。purpose 同 gift 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "declare 入面嗰個音",
+    "note": "declare 有 /l/。purpose 同 gift 冇 /l/。",
+    "pairs": [
+      {
+        "a": "declare-verb",
+        "b": "purpose-noun"
+      },
+      {
+        "a": "hotel-noun",
+        "b": "gift-noun"
+      }
+    ],
+    "drill": [
+      "declare-verb",
+      "purpose-noun",
+      "hotel-noun",
+      "gift-noun",
+      "officer-noun"
+    ]
+  },
+  "next": "W2"
+}

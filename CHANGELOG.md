@@ -1,5 +1,12 @@
 # Changelog — English Quest
 
+## Round 29 fixes
+- J12 電話查詢 (B1), T8 入境對話 (B1), and J11 貴客諮詢 (B2) are full 12-beat lessons. J12 and T8 sit after T6 and before W2. J11 sits after D3 and ends the path. Unlock order is F1 F2 F3 F4 J1 R1 J2 T1 J3 T2 R2 J4 J5 T3 R3 T4 R4 J6 J7 T5 R5 W1 D1 D2 T7 J8 J9 J10 T6 J12 T8 W2 W3 D3 J11. Three soon teasers remain (R6, R7, T9). The end copy says 呢輪三十五課. Profile goals stay foundation, jewellery, travel, and restaurant. The jewellery deck gains the phone-enquiry and private-consult cards. The travel deck gains the immigration cards.
+- Dialogue means on this stretch: J12 16.75, T8 17.00, W2 16.75, W3 17.00, D3 17.25, J11 18.00. J12 and T8 do not teach should. J11 uses if and would for a deposit and a follow-up. D1’s consult stays 15.25 words and now asks what brings you in, then whether you are allergic to any medicine.
+- Comprehension questions end in 「即係問緊咩？」 and statements end in 「呢句即係點？」. appointment is 預約. wrap-up sentences say 完結個會, and the sense label is 完結. follow-up (noun) is /ˈfɑ.loʊ.ˌʌp/. polish’s second example is “A little polish keeps the gold bright.” B1 choice distractors stay in the same scene.
+- The hear step puts the speaker name on its own cream chip above the line. Path thumbs set width, height, and loading="eager". D1 and W2 heroes are redrawn. J12, T8, and J11 have new 900×1200 scenes. 小燈 stays the brass lantern.
+- Tests are 27/27. The service worker precache is 2150 entries (42860.81 KiB) (`assets/index-Cwkcyb9y.js`, `assets/shell-D0HkIkM0.js`). At 390px the path, F1, J12, T8, and J11 stay inside the phone, including the step pill, the hear chip, J12’s next hero, and J11’s end copy 呢輪三十五課. The primary button is `rgb(15, 122, 110)`. Lighthouse mobile performance is 0.99.
+
 ## Round 28 fixes
 - D2 銀行 (A2/B1), T7 旅行購物 (A2/B1), and D3 租樓 (B1) are full 12-beat lessons. D2 and T7 sit after D1 and before J8. D3 sits after W3. Unlock order is F1 F2 F3 F4 J1 R1 J2 T1 J3 T2 R2 J4 J5 T3 R3 T4 R4 J6 J7 T5 R5 W1 D1 D2 T7 J8 J9 J10 T6 W2 W3 D3. Six soon teasers remain (R6, J12, R7, T8, J11, T9). The end copy says 呢輪三十二課. Profile goals stay foundation, jewellery, travel, and restaurant. The daily deck gains the bank and rent cards. The travel deck gains the shopping cards.
 - Dialogue means on this stretch: D1 15.25, D2 15.38, T7 15.38, J8 15.38, T6 16.50, W2 16.75, W3 17.00, D3 17.25. D2 and T7 stay with J8 and do not teach should. D3 uses “If I decide today…”. D1’s model answers the medicine allergy and still keeps the headache.

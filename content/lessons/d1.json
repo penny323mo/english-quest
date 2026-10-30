@@ -29,11 +29,11 @@
       "id": "d1-l1",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Good morning. You have an appointment, and I can help you at the clinic today.",
-      "glossYue": "早晨。你今日有預約，我喺診所可以幫你。",
+      "text": "Good morning. What brings you in to the clinic today, and how do you feel?",
+      "glossYue": "早晨。今日咩事嚟診所？你覺得點？",
       "audio": "assets/audio/lines/d1-l1.mp3",
       "audioSlow": "assets/audio/lines/d1-l1-slow.mp3",
-      "say": "Good morning. You have an appointment, and I can help you at the clinic today.",
+      "say": "Good morning. What brings you in to the clinic today, and how do you feel?",
       "hideGloss": false
     },
     {
@@ -51,22 +51,22 @@
       "id": "d1-l3",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Do you have a headache too, and do you have an allergy to this medicine?",
-      "glossYue": "你有冇頭痛？你對呢隻藥有冇過敏？",
+      "text": "Do you have a headache too, and are you allergic to any medicine we use?",
+      "glossYue": "你有冇頭痛？你對我哋用嘅藥有冇過敏？",
       "audio": "assets/audio/lines/d1-l3.mp3",
       "audioSlow": "assets/audio/lines/d1-l3-slow.mp3",
-      "say": "Do you have a headache too, and do you have an allergy to this medicine?",
+      "say": "Do you have a headache too, and are you allergic to any medicine we use?",
       "hideGloss": true
     },
     {
       "id": "d1-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have had a headache since Monday, and I have no allergy to this medicine.",
-      "glossYue": "我由星期一起頭痛，我對呢隻藥冇過敏。",
+      "text": "I have had a headache since Monday, and I have no allergy to any medicine.",
+      "glossYue": "我由星期一起頭痛，我對任何藥都冇過敏。",
       "audio": "assets/audio/lines/d1-l4.mp3",
       "audioSlow": "assets/audio/lines/d1-l4-slow.mp3",
-      "say": "I have had a headache since Monday, and I have no allergy to this medicine.",
+      "say": "I have had a headache since Monday, and I have no allergy to any medicine.",
       "hideGloss": true
     },
     {
@@ -120,7 +120,7 @@
       "choices": [
         "我由星期一起發燒",
         "我已經好返",
-        "我要埋單"
+        "我要取消預約"
       ],
       "answer": 0,
       "explain": "I have had 係由某個時間開始一直有。"
@@ -140,7 +140,7 @@
       "choices": [
         "我要覆診",
         "我要取消",
-        "我叫的士"
+        "我唔使再覆診"
       ],
       "answer": 0,
       "explain": "follow-up 係再嚟一次。"
@@ -159,8 +159,8 @@
       ]
     },
     {
-      "pattern": "I have had a ___ since Monday, and I have a food allergy as well.",
-      "example": "I have had a headache since Monday, and I have no allergy to this medicine.",
+      "pattern": "I have had a ___ since Monday, and I have no allergy to any medicine.",
+      "example": "I have had a headache since Monday, and I have no allergy to any medicine.",
       "glossYue": "我由星期一起⋯⋯。",
       "answer": "headache",
       "choices": [
@@ -234,7 +234,7 @@
       {
         "partner": "Kai",
         "partnerId": "kai",
-        "line": "Good morning. You have an appointment, and I can help you at the clinic today.",
+        "line": "Good morning. What brings you in to the clinic today, and how do you feel?",
         "audio": "assets/audio/lines/d1-l1.mp3",
         "audioSlow": "assets/audio/lines/d1-l1-slow.mp3",
         "expect": "I have had a fever and cough since Monday, and my sore throat feels worse.",
@@ -248,10 +248,10 @@
       {
         "partner": "Kai",
         "partnerId": "kai",
-        "line": "Do you have a headache too, and do you have an allergy to this medicine?",
+        "line": "Do you have a headache too, and are you allergic to any medicine we use?",
         "audio": "assets/audio/lines/d1-l3.mp3",
         "audioSlow": "assets/audio/lines/d1-l3-slow.mp3",
-        "expect": "I have had a headache since Monday, and I have no allergy to this medicine.",
+        "expect": "I have had a headache since Monday, and I have no allergy to any medicine.",
         "keywords": [
           "headache",
           "allergy"

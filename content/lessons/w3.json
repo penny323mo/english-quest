@@ -75,7 +75,7 @@
       "speaker": "kai",
       "speakerLabel": "Kai",
       "text": "Let's agree on Friday, and the owner can share the next update before we wrap up.",
-      "glossYue": "我哋同意星期五，負責人收會之前可以分享下一個更新。",
+      "glossYue": "我哋同意星期五，負責人完結個會之前可以分享下一個更新。",
       "audio": "assets/audio/lines/w3-l5.mp3",
       "audioSlow": "assets/audio/lines/w3-l5-slow.mp3",
       "say": "Let's agree on Friday, and the owner can share the next update before we wrap up.",
@@ -108,7 +108,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Let's wrap up now, and the owner will share the update after the next meeting on Friday.",
-      "glossYue": "我哋而家收會，負責人會喺星期五下次會之後分享更新。",
+      "glossYue": "我哋而家完結個會，負責人會喺星期五下次會之後分享更新。",
       "audio": "assets/audio/lines/w3-l8.mp3",
       "audioSlow": "assets/audio/lines/w3-l8-slow.mp3",
       "say": "Let's wrap up now, and the owner will share the update after the next meeting on Friday.",
@@ -121,7 +121,7 @@
       "choices": [
         "我明白，但係我擔心",
         "我完全同意",
-        "我叫的士"
+        "我唔明你講咩"
       ],
       "answer": 0,
       "explain": "I see your point, but 係先認同再講擔心。"
@@ -139,12 +139,12 @@
     {
       "prompt": "Let's wrap up now. 呢句即係點？",
       "choices": [
-        "我哋而家收會",
+        "我哋而家完結個會",
         "我哋而家開始",
-        "我哋叫餐"
+        "我哋改去下個星期"
       ],
       "answer": 0,
-      "explain": "wrap up 係收會。"
+      "explain": "wrap up 係完結個會。"
     }
   ],
   "chunks": [

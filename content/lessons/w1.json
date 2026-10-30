@@ -48,7 +48,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Could I speak to Mei regarding the appointment, and may I ask if she is available?",
-      "glossYue": "可唔可以同 Mei 講關於個約會，順便問吓佢有冇空？",
+      "glossYue": "可唔可以同 Mei 講關於個預約，順便問吓佢有冇空？",
       "audio": "assets/audio/lines/w1-l2.mp3",
       "audioSlow": "assets/audio/lines/w1-l2-slow.mp3",
       "say": "Could I speak to Mei regarding the appointment, and may I ask if she is available?",
@@ -157,7 +157,7 @@
     {
       "pattern": "Could I ___ to Mei regarding the appointment this afternoon?",
       "example": "Could I speak to Mei regarding the appointment this afternoon?",
-      "glossYue": "今日下晝可唔可以⋯⋯ Mei，關於個約會？",
+      "glossYue": "今日下晝可唔可以⋯⋯ Mei，關於個預約？",
       "answer": "speak",
       "choices": [
         "speak",

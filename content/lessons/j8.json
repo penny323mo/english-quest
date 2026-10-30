@@ -55,11 +55,11 @@
       "id": "j8-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "You should avoid water and any harsh chemicals, and please use only the soft polish.",
-      "glossYue": "你應該避開水同任何勁嘅化學劑，淨係用軟布擦。",
+      "text": "Please polish this bracelet with a soft cloth, and you should avoid any harsh chemicals.",
+      "glossYue": "請用軟布擦亮呢條手鏈，你應該避開任何勁嘅化學劑。",
       "audio": "assets/audio/lines/j8-l3.mp3",
       "audioSlow": "assets/audio/lines/j8-l3-slow.mp3",
-      "say": "You should avoid water and any harsh chemicals, and please use only the soft polish.",
+      "say": "Please polish this bracelet with a soft cloth, and you should avoid any harsh chemicals.",
       "hideGloss": true
     },
     {
@@ -67,7 +67,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Does the guarantee cover this new scratch, or should I file a claim within the week?",
-      "glossYue": "保養包唔包呢道新刮痕，定係我應該呢個禮拜內申請？",
+      "glossYue": "保用包唔包呢道新刮痕，定係我應該呢個禮拜內申請？",
       "audio": "assets/audio/lines/j8-l4.mp3",
       "audioSlow": "assets/audio/lines/j8-l4-slow.mp3",
       "say": "Does the guarantee cover this new scratch, or should I file a claim within the week?",
@@ -111,7 +111,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Thank you, and I now understand the shop policy, the guarantee, and the return window.",
-      "glossYue": "多謝，我而家明白舖頭政策、保養同退換期。",
+      "glossYue": "多謝，我而家明白舖頭政策、保用同退換期。",
       "audio": "assets/audio/lines/j8-l8.mp3",
       "audioSlow": "assets/audio/lines/j8-l8-slow.mp3",
       "say": "Thank you, and I now understand the shop policy, the guarantee, and the return window.",
@@ -124,7 +124,7 @@
       "choices": [
         "問有冇留低收據",
         "問幾多錢",
-        "叫的士"
+        "問保用過咗期"
       ],
       "answer": 0,
       "explain": "Have you kept 係問有冇留低。"
@@ -163,8 +163,8 @@
       ]
     },
     {
-      "pattern": "You should ___ water and harsh chemicals when you clean a soft polish at home.",
-      "example": "You should avoid water and harsh chemicals when you clean a soft polish at home.",
+      "pattern": "You should ___ water and harsh chemicals when you polish the bracelet at home.",
+      "example": "You should avoid water and harsh chemicals when you polish the bracelet at home.",
       "glossYue": "你應該⋯⋯水同化學劑。",
       "answer": "avoid",
       "choices": [
@@ -205,7 +205,7 @@
       "type": "choice",
       "promptYue": "客人話有刮痕。你點講保養？",
       "choices": [
-        "You should avoid water and any harsh chemicals, and please use only the soft polish.",
+        "Please polish this bracelet with a soft cloth, and you should avoid any harsh chemicals.",
         "The taxi is here, and traffic is slow.",
         "I have lost my wallet."
       ],
@@ -241,7 +241,7 @@
         "line": "I have kept the receipt, but a small scratch showed up within the first week.",
         "audio": "assets/audio/lines/j8-l2.mp3",
         "audioSlow": "assets/audio/lines/j8-l2-slow.mp3",
-        "expect": "You should avoid water and any harsh chemicals, and please use only the soft polish.",
+        "expect": "Please polish this bracelet with a soft cloth, and you should avoid any harsh chemicals.",
         "keywords": [
           "avoid",
           "polish"

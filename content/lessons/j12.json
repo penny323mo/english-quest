@@ -1,0 +1,349 @@
+{
+  "id": "J12",
+  "unit": "J",
+  "titleYue": "電話查詢",
+  "titleEn": "A jewellery phone enquiry",
+  "canDoYue": "你識喺電話問珠寶存貨，仲識預留同聽日嚟取。",
+  "canDoEn": "Ask about jewellery stock on the phone, then reserve a piece and collect it tomorrow.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j12.webp",
+  "cast": [
+    "kai",
+    "tom"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "calling-verb",
+    "stock-noun",
+    "available-adj",
+    "reserve-verb",
+    "hold-verb",
+    "collect-verb",
+    "opening-hours-phrase",
+    "location-noun",
+    "describe-verb",
+    "similar-adj",
+    "notify-verb",
+    "message-noun",
+    "confirm-verb",
+    "tomorrow-adv"
+  ],
+  "dialogue": [
+    {
+      "id": "j12-l1",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Good morning, you are calling the jewellery shop, and I can see our stock for you today.",
+      "glossYue": "早晨。你打嚟珠寶舖，我今日可以睇吓存貨。",
+      "audio": "assets/audio/lines/j12-l1.mp3",
+      "audioSlow": "assets/audio/lines/j12-l1-slow.mp3",
+      "say": "Good morning, you are calling the jewellery shop, and I can see our stock for you today.",
+      "hideGloss": false
+    },
+    {
+      "id": "j12-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Have you kept a similar gold bracelet in stock, and is one still available to reserve today?",
+      "glossYue": "你有冇類似嘅金手鏈存貨，今日仲有冇得預留？",
+      "audio": "assets/audio/lines/j12-l2.mp3",
+      "audioSlow": "assets/audio/lines/j12-l2-slow.mp3",
+      "say": "Have you kept a similar gold bracelet in stock, and is one still available to reserve today?",
+      "hideGloss": true
+    },
+    {
+      "id": "j12-l3",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "I will describe the gold piece, and I can hold it here until you collect it tomorrow.",
+      "glossYue": "我會描述呢件金飾，你可以聽日嚟取，我可以喺度留住。",
+      "audio": "assets/audio/lines/j12-l3.mp3",
+      "audioSlow": "assets/audio/lines/j12-l3-slow.mp3",
+      "say": "I will describe the gold piece, and I can hold it here until you collect it tomorrow.",
+      "hideGloss": true
+    },
+    {
+      "id": "j12-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Please notify me by a short phone message, and confirm the opening hours at your location.",
+      "glossYue": "請用短訊通知我，再確認你舖頭嘅開門時間同位置。",
+      "audio": "assets/audio/lines/j12-l4.mp3",
+      "audioSlow": "assets/audio/lines/j12-l4-slow.mp3",
+      "say": "Please notify me by a short phone message, and confirm the opening hours at your location.",
+      "hideGloss": true
+    },
+    {
+      "id": "j12-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm.",
+      "glossYue": "我打嚟問存貨，你確認之後我聽日嚟取條手鏈。",
+      "audio": "assets/audio/lines/j12-l5.mp3",
+      "audioSlow": "assets/audio/lines/j12-l5-slow.mp3",
+      "say": "I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm.",
+      "hideGloss": false
+    },
+    {
+      "id": "j12-l6",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Our opening hours are on the door, and the location is beside the market on this street.",
+      "glossYue": "開門時間寫喺門口，舖喺呢條街個街市隔離。",
+      "audio": "assets/audio/lines/j12-l6.mp3",
+      "audioSlow": "assets/audio/lines/j12-l6-slow.mp3",
+      "say": "Our opening hours are on the door, and the location is beside the market on this street.",
+      "hideGloss": true
+    },
+    {
+      "id": "j12-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Can you reserve a similar gold piece, and will you hold it under the name Mei?",
+      "glossYue": "可唔可以預留一件類似嘅金飾，用 Mei 個名留住？",
+      "audio": "assets/audio/lines/j12-l7.mp3",
+      "audioSlow": "assets/audio/lines/j12-l7-slow.mp3",
+      "say": "Can you reserve a similar gold piece, and will you hold it under the name Mei?",
+      "hideGloss": true
+    },
+    {
+      "id": "j12-l8",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "I will leave a message, and I confirm the bracelet is available for you to collect tomorrow.",
+      "glossYue": "我會留個言，再確認條手鏈有貨，你聽日可以嚟取。",
+      "audio": "assets/audio/lines/j12-l8.mp3",
+      "audioSlow": "assets/audio/lines/j12-l8-slow.mp3",
+      "say": "I will leave a message, and I confirm the bracelet is available for you to collect tomorrow.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Have you kept a similar gold bracelet in stock? 即係問緊咩？",
+      "choices": [
+        "問有冇類似嘅金手鏈存貨",
+        "話已經賣晒",
+        "問開門時間"
+      ],
+      "answer": 0,
+      "explain": "in stock 係仲有貨。"
+    },
+    {
+      "prompt": "I will collect the bracelet tomorrow. 呢句即係點？",
+      "choices": [
+        "聽日嚟取條手鏈",
+        "聽日先再問價",
+        "今日即刻取"
+      ],
+      "answer": 0,
+      "explain": "collect tomorrow 係聽日嚟取。"
+    },
+    {
+      "prompt": "Please notify me by a short phone message. 呢句即係點？",
+      "choices": [
+        "請用短訊通知我",
+        "請而家轉線",
+        "請取消預留"
+      ],
+      "answer": 0,
+      "explain": "notify by message 係用訊息通知。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Have you kept a ___ gold bracelet in stock, and is one still available to reserve today?",
+      "example": "Have you kept a similar gold bracelet in stock, and is one still available to reserve today?",
+      "glossYue": "一條⋯⋯嘅金手鏈。",
+      "answer": "similar",
+      "choices": [
+        "similar",
+        "stock",
+        "message"
+      ]
+    },
+    {
+      "pattern": "Please ___ me by a short phone message, and confirm the opening hours at your location.",
+      "example": "Please notify me by a short phone message, and confirm the opening hours at your location.",
+      "glossYue": "請⋯⋯我。",
+      "answer": "notify",
+      "choices": [
+        "notify",
+        "collect",
+        "hold"
+      ]
+    },
+    {
+      "pattern": "Can you reserve a similar gold piece, and will you ___ it under the name Mei?",
+      "example": "Can you reserve a similar gold piece, and will you hold it under the name Mei?",
+      "glossYue": "可唔可以⋯⋯住。",
+      "answer": "hold",
+      "choices": [
+        "hold",
+        "describe",
+        "confirm"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "j12-l5",
+    "hint": "I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "店員話可以留貨。你點先答？",
+      "choices": [
+        "Please notify me by a short phone message, and confirm the opening hours at your location.",
+        "I would like a table for two.",
+        "The meter is on."
+      ],
+      "answer": 0,
+      "explain": "請人用短訊通知，並確認開門時間同位置。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "I",
+        "will",
+        "collect",
+        "the",
+        "bracelet"
+      ],
+      "answer": [
+        "I",
+        "will",
+        "collect",
+        "the",
+        "bracelet"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你打去珠寶舖。問存貨，再預留。可以講：in stock。",
+    "turns": [
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "Good morning, you are calling the jewellery shop, and I can see our stock for you today.",
+        "audio": "assets/audio/lines/j12-l1.mp3",
+        "audioSlow": "assets/audio/lines/j12-l1-slow.mp3",
+        "expect": "Have you kept a similar gold bracelet in stock, and is one still available to reserve today?",
+        "keywords": [
+          "stock",
+          "reserve"
+        ],
+        "modelAudio": "assets/audio/lines/j12-l2.mp3",
+        "modelSlow": "assets/audio/lines/j12-l2-slow.mp3"
+      },
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "I will describe the gold piece, and I can hold it here until you collect it tomorrow.",
+        "audio": "assets/audio/lines/j12-l3.mp3",
+        "audioSlow": "assets/audio/lines/j12-l3-slow.mp3",
+        "expect": "Please notify me by a short phone message, and confirm the opening hours at your location.",
+        "keywords": [
+          "notify",
+          "location"
+        ],
+        "modelAudio": "assets/audio/lines/j12-l4.mp3",
+        "modelSlow": "assets/audio/lines/j12-l4-slow.mp3"
+      },
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "Our opening hours are on the door, and the location is beside the market on this street.",
+        "audio": "assets/audio/lines/j12-l6.mp3",
+        "audioSlow": "assets/audio/lines/j12-l6-slow.mp3",
+        "expect": "Can you reserve a similar gold piece, and will you hold it under the name Mei?",
+        "keywords": [
+          "reserve",
+          "hold"
+        ],
+        "modelAudio": "assets/audio/lines/j12-l7.mp3",
+        "modelSlow": "assets/audio/lines/j12-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：舖頭仲有嘅貨",
+      "lemma": "stock-noun",
+      "choices": [
+        "stock",
+        "reserve",
+        "message"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：舖喺邊",
+      "lemma": "location-noun",
+      "choices": [
+        "location",
+        "notify",
+        "tomorrow"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "客人講「Have you kept a similar gold bracelet in stock, and is one still available to reserve today?」，stock 係咩意思？",
+      "choices": [
+        "存貨",
+        "開門時間",
+        "取貨"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "客人講「I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm.」，collect 係咩意思？",
+      "choices": [
+        "取貨",
+        "預留",
+        "描述"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個字有 /l/：location、stock、定 notify？",
+      "choices": [
+        "location",
+        "stock",
+        "notify"
+      ],
+      "answer": 0,
+      "explain": "location 有 /l/。stock 同 notify 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "location 入面嗰個音",
+    "note": "location 有 /l/。stock 同 notify 冇 /l/。",
+    "pairs": [
+      {
+        "a": "location-noun",
+        "b": "stock-noun"
+      },
+      {
+        "a": "collect-verb",
+        "b": "notify-verb"
+      }
+    ],
+    "drill": [
+      "location-noun",
+      "stock-noun",
+      "collect-verb",
+      "notify-verb",
+      "similar-adj"
+    ]
+  },
+  "next": "T8"
+}

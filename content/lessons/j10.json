@@ -52,11 +52,11 @@
       "id": "j10-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Yes, this popular set is optional, and the engraving is a quiet extra on the box.",
-      "glossYue": "會，呢套好多人揀，可以唔要，刻字係盒上靜靜嘅加購。",
+      "text": "Yes, this popular set is optional, and the engraving spells the name Mei on the box.",
+      "glossYue": "會，呢套好多人揀，可以唔要，刻字會喺盒上寫 Mei 個名。",
       "audio": "assets/audio/lines/j10-l3.mp3",
       "audioSlow": "assets/audio/lines/j10-l3-slow.mp3",
-      "say": "Yes, this popular set is optional, and the engraving is a quiet extra on the box.",
+      "say": "Yes, this popular set is optional, and the engraving spells the name Mei on the box.",
       "hideGloss": true
     },
     {
@@ -121,7 +121,7 @@
       "choices": [
         "輕輕加購",
         "收錢",
-        "叫的士"
+        "話我唔要刻字"
       ],
       "answer": 0,
       "explain": "might also like 係輕輕提議。"
@@ -160,8 +160,8 @@
       ]
     },
     {
-      "pattern": "This popular ___ is optional, and the engraving is a quiet extra on the box.",
-      "example": "This popular set is optional, and the engraving is a quiet extra on the box.",
+      "pattern": "This popular ___ is optional, and the engraving spells the name Mei on the box.",
+      "example": "This popular set is optional, and the engraving spells the name Mei on the box.",
       "glossYue": "呢個多人揀嘅⋯⋯可以唔要。",
       "answer": "set",
       "choices": [
@@ -240,7 +240,7 @@
         "line": "If I am getting the necklace today, do the matching earrings go well with it too?",
         "audio": "assets/audio/lines/j10-l2.mp3",
         "audioSlow": "assets/audio/lines/j10-l2-slow.mp3",
-        "expect": "Yes, this popular set is optional, and the engraving is a quiet extra on the box.",
+        "expect": "Yes, this popular set is optional, and the engraving spells the name Mei on the box.",
         "keywords": [
           "optional",
           "engraving"

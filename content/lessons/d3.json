@@ -121,7 +121,7 @@
       "choices": [
         "問每個月租金幾多",
         "話已經交咗租",
-        "問幾多隻色"
+        "問水費包唔包"
       ],
       "answer": 0,
       "explain": "monthly rent 係月租。"
@@ -131,7 +131,7 @@
       "choices": [
         "如果我今日決定，就可以簽租約",
         "我已經退租",
-        "我要凍結張卡"
+        "我今日唔簽租約"
       ],
       "answer": 0,
       "explain": "If I decide today 係如果今日決定就會做。"
@@ -141,7 +141,7 @@
       "choices": [
         "話我知通知期幾長",
         "話我知餘額",
-        "話我知試身室"
+        "話我知業主個名"
       ],
       "answer": 0,
       "explain": "notice period 係搬走前要預早講嘅時間。"
@@ -302,8 +302,8 @@
       "prompt": "客人講「The monthly rent is due on the first day, and the deposit equals one full month here.」，deposit 係咩意思？",
       "choices": [
         "按金",
-        "手續費",
-        "顏色"
+        "業主",
+        "租約"
       ],
       "answer": 0
     },
@@ -313,7 +313,7 @@
       "choices": [
         "租約",
         "收據",
-        "試身室"
+        "通知期"
       ],
       "answer": 0
     },
@@ -351,5 +351,5 @@
       "contract-noun"
     ]
   },
-  "next": null
+  "next": "J11"
 }

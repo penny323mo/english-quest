@@ -120,7 +120,7 @@
       "choices": [
         "我今日跟進",
         "我取消個會",
-        "我叫餐"
+        "我要改個期限"
       ],
       "answer": 0,
       "explain": "following up 係跟進。"
@@ -140,7 +140,7 @@
       "choices": [
         "我提議星期五",
         "我拒絕星期五",
-        "我要埋單"
+        "我唔會再跟進"
       ],
       "answer": 0,
       "explain": "propose 係提議。"
@@ -306,7 +306,7 @@
       "choices": [
         "跟進",
         "取消",
-        "埋單"
+        "附件"
       ],
       "answer": 0
     },
@@ -315,8 +315,8 @@
       "prompt": "客人講「I am grateful for the quick reply, and I will confirm the Friday deadline in writing.」，grateful 係咩意思？",
       "choices": [
         "感激",
-        "嘈",
-        "免費"
+        "期限",
+        "確認"
       ],
       "answer": 0
     },

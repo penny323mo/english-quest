@@ -120,7 +120,7 @@
       "choices": [
         "我想喺呢度開戶口",
         "我想取消戶口",
-        "我想叫的士"
+        "我想轉去第二間分行"
       ],
       "answer": 0,
       "explain": "I would like to 係禮貌咁講想做嘅事。"
@@ -304,7 +304,7 @@
       "choices": [
         "餘額",
         "收據",
-        "紀念品"
+        "分行"
       ],
       "answer": 0
     },
@@ -313,8 +313,8 @@
       "prompt": "客人講「I will pay the fee today, and I would like a receipt for the new card.」，fee 係咩意思？",
       "choices": [
         "手續費",
-        "租金",
-        "明信片"
+        "表格",
+        "餘額"
       ],
       "answer": 0
     },

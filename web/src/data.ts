@@ -32,15 +32,18 @@ import t7 from "../../content/lessons/t7.json";
 import w2 from "../../content/lessons/w2.json";
 import w3 from "../../content/lessons/w3.json";
 import d3 from "../../content/lessons/d3.json";
+import j12 from "../../content/lessons/j12.json";
+import t8 from "../../content/lessons/t8.json";
+import j11 from "../../content/lessons/j11.json";
 import decksFile from "../../content/decks.json";
 import type { DeckFile, Goal, Lesson, LexItem, PathFile } from "./types";
 
 export const lexicon = lexFile as unknown as { items: LexItem[]; license: string; accent: string };
 export const pathData = pathFile as unknown as PathFile;
-export const lessons = [f1, f2, f3, f4, j1, r1, j2, t1, j3, t2, r2, j4, j5, t3, r3, t4, r4, j6, j7, t5, r5, w1, d1, d2, t7, j8, j9, j10, t6, w2, w3, d3] as unknown as Lesson[];
+export const lessons = [f1, f2, f3, f4, j1, r1, j2, t1, j3, t2, r2, j4, j5, t3, r3, t4, r4, j6, j7, t5, r5, w1, d1, d2, t7, j8, j9, j10, t6, j12, t8, w2, w3, d3, j11] as unknown as Lesson[];
 export const decks = decksFile as unknown as DeckFile;
 
-export const SHIPPED = ["F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "J6", "J7", "T5", "R5", "W1", "D1", "D2", "T7", "J8", "J9", "J10", "T6", "W2", "W3", "D3"] as const;
+export const SHIPPED = ["F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "J6", "J7", "T5", "R5", "W1", "D1", "D2", "T7", "J8", "J9", "J10", "T6", "J12", "T8", "W2", "W3", "D3", "J11"] as const;
 
 export const lessonById: Record<string, Lesson> = Object.fromEntries(lessons.map((l) => [l.id, l]));
 export const lexById: Record<string, LexItem> = Object.fromEntries(lexicon.items.map((i) => [i.id, i]));

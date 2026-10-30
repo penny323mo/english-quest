@@ -1,0 +1,353 @@
+{
+  "id": "J11",
+  "unit": "J",
+  "titleYue": "貴客諮詢",
+  "titleEn": "A private jewellery consult",
+  "canDoYue": "你識問場合同設計偏好，仲識用假如講訂金同跟進。",
+  "canDoEn": "Ask about the occasion and the design preference, then use if and would for a deposit and a follow-up.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j11.webp",
+  "cast": [
+    "kai",
+    "tom"
+  ],
+  "cefr": "B2",
+  "lemmas": [
+    "occasion-noun",
+    "anniversary-noun",
+    "engagement-noun",
+    "custom-adj",
+    "design-noun",
+    "custom-deposit-noun",
+    "timeline-noun",
+    "appointment-noun",
+    "preference-noun",
+    "classic-adj",
+    "contemporary-adj",
+    "understated-adj",
+    "statement-noun",
+    "investment-noun",
+    "follow-up-noun",
+    "availability-noun",
+    "exclusivity-noun",
+    "discreet-adj"
+  ],
+  "dialogue": [
+    {
+      "id": "j11-l1",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Good morning. I was wondering whether this special occasion is an anniversary or a quiet engagement for today.",
+      "glossYue": "早晨。我想問呢個特別場合係週年，定係今日一個低調嘅訂婚。",
+      "audio": "assets/audio/lines/j11-l1.mp3",
+      "audioSlow": "assets/audio/lines/j11-l1-slow.mp3",
+      "say": "Good morning. I was wondering whether this special occasion is an anniversary or a quiet engagement for today.",
+      "hideGloss": false
+    },
+    {
+      "id": "j11-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "The occasion is an anniversary dinner, and my preference is a custom design with a classic gold look.",
+      "glossYue": "呢個場合係週年晚飯，我偏好係經典金款嘅訂做設計。",
+      "audio": "assets/audio/lines/j11-l2.mp3",
+      "audioSlow": "assets/audio/lines/j11-l2-slow.mp3",
+      "say": "The occasion is an anniversary dinner, and my preference is a custom design with a classic gold look.",
+      "hideGloss": true
+    },
+    {
+      "id": "j11-l3",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "If you chose a contemporary gold piece, would you like it understated or more of a bold statement?",
+      "glossYue": "如果佢揀一件現代金飾，你想要低調，定係搶眼啲？",
+      "audio": "assets/audio/lines/j11-l3.mp3",
+      "audioSlow": "assets/audio/lines/j11-l3-slow.mp3",
+      "say": "If you chose a contemporary gold piece, would you like it understated or more of a bold statement?",
+      "hideGloss": true
+    },
+    {
+      "id": "j11-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "My clear preference is understated, and I would treat this special gold piece as a quiet personal investment.",
+      "glossYue": "我明顯偏好低調，我會當呢件特別金飾係一份私人保值。",
+      "audio": "assets/audio/lines/j11-l4.mp3",
+      "audioSlow": "assets/audio/lines/j11-l4-slow.mp3",
+      "say": "My clear preference is understated, and I would treat this special gold piece as a quiet personal investment.",
+      "hideGloss": true
+    },
+    {
+      "id": "j11-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "If I placed a custom deposit today, would the full timeline still fit my anniversary appointment next month?",
+      "glossYue": "如果我今日落訂金，成個時間表仲趕唔趕得切我下個月嘅週年預約？",
+      "audio": "assets/audio/lines/j11-l5.mp3",
+      "audioSlow": "assets/audio/lines/j11-l5-slow.mp3",
+      "say": "If I placed a custom deposit today, would the full timeline still fit my anniversary appointment next month?",
+      "hideGloss": false
+    },
+    {
+      "id": "j11-l6",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "I was wondering whether you also value availability, exclusivity, and a discreet follow-up call after the appointment.",
+      "glossYue": "我想問你重唔重視檔期、獨家，同預約之後一次低調嘅跟進電話。",
+      "audio": "assets/audio/lines/j11-l6.mp3",
+      "audioSlow": "assets/audio/lines/j11-l6-slow.mp3",
+      "say": "I was wondering whether you also value availability, exclusivity, and a discreet follow-up call after the appointment.",
+      "hideGloss": true
+    },
+    {
+      "id": "j11-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "If the new design were more contemporary, I would still want a discreet and understated gold investment piece.",
+      "glossYue": "如果新設計再現代啲，我都想要一件低調又含蓄嘅金保值。",
+      "audio": "assets/audio/lines/j11-l7.mp3",
+      "audioSlow": "assets/audio/lines/j11-l7-slow.mp3",
+      "say": "If the new design were more contemporary, I would still want a discreet and understated gold investment piece.",
+      "hideGloss": true
+    },
+    {
+      "id": "j11-l8",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "If you confirmed the deposit, I would book a follow-up and protect the exclusivity of the design.",
+      "glossYue": "如果你確認訂金，我會約跟進，並保住呢個設計嘅獨家。",
+      "audio": "assets/audio/lines/j11-l8.mp3",
+      "audioSlow": "assets/audio/lines/j11-l8-slow.mp3",
+      "say": "If you confirmed the deposit, I would book a follow-up and protect the exclusivity of the design.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "I was wondering whether this occasion is an anniversary? 即係問緊咩？",
+      "choices": [
+        "婉轉問呢個場合係咪週年",
+        "話已經落咗訂金",
+        "問件貨係咪搶眼款"
+      ],
+      "answer": 0,
+      "explain": "I was wondering whether 係婉轉嘅間接問句。"
+    },
+    {
+      "prompt": "If you chose a contemporary piece, would you like it understated? 即係問緊咩？",
+      "choices": [
+        "如果揀現代款，會唔會想低調",
+        "話已經揀咗經典款",
+        "問檔期滿未"
+      ],
+      "answer": 0,
+      "explain": "If 加過去式，would 係假如。"
+    },
+    {
+      "prompt": "If I placed a deposit today, the timeline would still fit. 呢句即係點？",
+      "choices": [
+        "如果今日落訂金，時間表都趕得切",
+        "我今日唔會落訂金",
+        "時間表已經過咗"
+      ],
+      "answer": 0,
+      "explain": "第二條件式係講假如，唔係講事實。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "The occasion is an anniversary dinner, and my ___ is a custom design with a classic gold look.",
+      "example": "The occasion is an anniversary dinner, and my preference is a custom design with a classic gold look.",
+      "glossYue": "我嘅⋯⋯。",
+      "answer": "preference",
+      "choices": [
+        "preference",
+        "occasion",
+        "deposit"
+      ]
+    },
+    {
+      "pattern": "If you chose a contemporary gold piece, would you like it ___ or more of a bold statement?",
+      "example": "If you chose a contemporary gold piece, would you like it understated or more of a bold statement?",
+      "glossYue": "你想要⋯⋯。",
+      "answer": "understated",
+      "choices": [
+        "understated",
+        "classic",
+        "timeline"
+      ]
+    },
+    {
+      "pattern": "If I placed a custom ___ today, would the full timeline still fit my anniversary appointment next month?",
+      "example": "If I placed a custom deposit today, would the full timeline still fit my anniversary appointment next month?",
+      "glossYue": "落一筆⋯⋯。",
+      "answer": "deposit",
+      "choices": [
+        "deposit",
+        "design",
+        "statement"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "j11-l5",
+    "hint": "If I placed a custom deposit today, would the full timeline still fit my anniversary appointment next month?"
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "顧問問你想低調定搶眼。你點先答？",
+      "choices": [
+        "My clear preference is understated, and I would treat this special gold piece as a quiet personal investment.",
+        "I am visiting for tourism.",
+        "Please notify me by a short phone message."
+      ],
+      "answer": 0,
+      "explain": "講明偏好低調，並當呢件係保值。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "If",
+        "I",
+        "placed",
+        "a",
+        "deposit"
+      ],
+      "answer": [
+        "If",
+        "I",
+        "placed",
+        "a",
+        "deposit"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你喺貴客房傾一件訂做。講場合同偏好。可以講：If I placed a deposit。",
+    "turns": [
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "Good morning. I was wondering whether this special occasion is an anniversary or a quiet engagement for today.",
+        "audio": "assets/audio/lines/j11-l1.mp3",
+        "audioSlow": "assets/audio/lines/j11-l1-slow.mp3",
+        "expect": "The occasion is an anniversary dinner, and my preference is a custom design with a classic gold look.",
+        "keywords": [
+          "occasion",
+          "preference"
+        ],
+        "modelAudio": "assets/audio/lines/j11-l2.mp3",
+        "modelSlow": "assets/audio/lines/j11-l2-slow.mp3"
+      },
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "If you chose a contemporary gold piece, would you like it understated or more of a bold statement?",
+        "audio": "assets/audio/lines/j11-l3.mp3",
+        "audioSlow": "assets/audio/lines/j11-l3-slow.mp3",
+        "expect": "My clear preference is understated, and I would treat this special gold piece as a quiet personal investment.",
+        "keywords": [
+          "understated",
+          "investment"
+        ],
+        "modelAudio": "assets/audio/lines/j11-l4.mp3",
+        "modelSlow": "assets/audio/lines/j11-l4-slow.mp3"
+      },
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "I was wondering whether you also value availability, exclusivity, and a discreet follow-up call after the appointment.",
+        "audio": "assets/audio/lines/j11-l6.mp3",
+        "audioSlow": "assets/audio/lines/j11-l6-slow.mp3",
+        "expect": "If the new design were more contemporary, I would still want a discreet and understated gold investment piece.",
+        "keywords": [
+          "contemporary",
+          "discreet"
+        ],
+        "modelAudio": "assets/audio/lines/j11-l7.mp3",
+        "modelSlow": "assets/audio/lines/j11-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：經典款",
+      "lemma": "classic-adj",
+      "choices": [
+        "classic",
+        "occasion",
+        "statement"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：做到幾時",
+      "lemma": "timeline-noun",
+      "choices": [
+        "timeline",
+        "design",
+        "deposit"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "客人講「The occasion is an anniversary dinner, and my preference is a custom design with a classic gold look.」，preference 係咩意思？",
+      "choices": [
+        "偏好",
+        "訂金",
+        "檔期"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "客人講「If you confirmed the deposit, I would book a follow-up and protect the exclusivity of the design.」，exclusivity 係咩意思？",
+      "choices": [
+        "獨家",
+        "低調",
+        "週年"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個字有 /l/：classic、occasion、定 statement？",
+      "choices": [
+        "classic",
+        "occasion",
+        "statement"
+      ],
+      "answer": 0,
+      "explain": "classic 有 /l/。occasion 同 statement 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "classic 入面嗰個音",
+    "note": "classic 有 /l/。occasion 同 statement 冇 /l/。",
+    "pairs": [
+      {
+        "a": "classic-adj",
+        "b": "occasion-noun"
+      },
+      {
+        "a": "timeline-noun",
+        "b": "design-noun"
+      }
+    ],
+    "drill": [
+      "classic-adj",
+      "occasion-noun",
+      "timeline-noun",
+      "design-noun",
+      "exclusivity-noun"
+    ]
+  },
+  "next": null
+}

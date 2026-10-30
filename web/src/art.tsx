@@ -40,7 +40,7 @@ export function ArtImg({
   }, [src]);
   return (
     <span className={ready ? "art-ph is-ready" : "art-ph"} data-fill={fill ? "1" : undefined}>
-      <img src={src} alt={alt} width={width} height={height} />
+      <img src={src} alt={alt} width={width} height={height} loading="eager" />
     </span>
   );
 }

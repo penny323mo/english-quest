@@ -89,11 +89,11 @@
       "id": "r5-l6",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Thank you, and the total does include the service charge before that tip tonight.",
+      "text": "Thank you, and the total does include the service charge before that extra tip.",
       "glossYue": "多謝，今晚貼士之前個總數已經包括服務費。",
       "audio": "assets/audio/lines/r5-l6.mp3",
       "audioSlow": "assets/audio/lines/r5-l6-slow.mp3",
-      "say": "Thank you, and the total does include the service charge before that tip tonight.",
+      "say": "Thank you, and the total does include the service charge before that extra tip.",
       "hideGloss": false
     },
     {
@@ -111,11 +111,11 @@
       "id": "r5-l8",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Here is your takeaway box now, and thank you again for coming in tonight.",
+      "text": "Here is your takeaway box of cake, and thank you again for coming in.",
       "glossYue": "外賣盒而家喺度，多謝你哋今晚嚟。",
       "audio": "assets/audio/lines/r5-l8.mp3",
       "audioSlow": "assets/audio/lines/r5-l8-slow.mp3",
-      "say": "Here is your takeaway box now, and thank you again for coming in tonight.",
+      "say": "Here is your takeaway box of cake, and thank you again for coming in.",
       "hideGloss": true
     }
   ],
@@ -270,7 +270,7 @@
         "line": "The service was kind tonight, so I will add a tip and you can keep the change.",
         "audio": "assets/audio/lines/r5-l5.mp3",
         "audioSlow": "assets/audio/lines/r5-l5-slow.mp3",
-        "expect": "Thank you, and the total does include the service charge before that tip tonight.",
+        "expect": "Thank you, and the total does include the service charge before that extra tip.",
         "keywords": [
           "include",
           "tip"
@@ -305,7 +305,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Thank you, and the total does include the service charge before that tip tonight.」，係咩意思？",
+      "prompt": "客人講「Thank you, and the total does include the service charge before that extra tip.」，係咩意思？",
       "choices": [
         "服務費",
         "零錢",
