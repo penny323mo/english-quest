@@ -12,11 +12,13 @@ import {
   stopAudio,
   subscribeAudio,
 } from "./media";
+import { quizRecapLine } from "./persist.mjs";
 import { playSfx } from "./sfx";
 import { useStore } from "./store";
 import type { BuildOrder, Lesson, QuizItem } from "./types";
+import { BEAT_LABELS } from "./beats";
 
-const BEATS = ["場景", "目標", "聽", "理解", "句式", "跟讀", "砌句", "角色", "小測", "發音", "溫習", "下一課"];
+const BEATS = BEAT_LABELS;
 
 function tipFor(id: string): string {
   if (id === "F1") return "短音收得快，長音先拉。about 第一個音係好輕嘅 /ə/。";
@@ -73,9 +75,31 @@ export function LessonView({ id }: { id: string }) {
 }
 
 function Player({ lesson }: { lesson: Lesson }) {
-  const [beat, setBeat] = useState(0);
-  const [sub, setSub] = useState(0);
-  const [quizScore, setQuizScore] = useState(0);
+  const cursor = useStore((s) => s.lessonCursor);
+  const setLessonCursor = useStore((s) => s.setLessonCursor);
+  const [start] = useState(() => {
+    const state = useStore.getState();
+    const savedCursor = state.lessonCursor;
+    const match = Boolean(savedCursor && savedCursor.lessonId === lesson.id && !state.progress[lesson.id]);
+    if (state.resumeArmed && match && savedCursor) {
+      queueMicrotask(() => useStore.setState({ resumeArmed: false }));
+      return {
+        gate: "play" as const,
+        beat: savedCursor.beat,
+        sub: savedCursor.sub,
+        quizScore: savedCursor.quizScore,
+        quizAnswered: savedCursor.quizAnswered,
+      };
+    }
+    if (state.resumeArmed) queueMicrotask(() => useStore.setState({ resumeArmed: false }));
+    if (match) return { gate: "ask" as const, beat: 0, sub: 0, quizScore: 0, quizAnswered: 0 };
+    return { gate: "play" as const, beat: 0, sub: 0, quizScore: 0, quizAnswered: 0 };
+  });
+  const [gate, setGate] = useState<"ask" | "play">(start.gate);
+  const [beat, setBeat] = useState(start.beat);
+  const [sub, setSub] = useState(start.sub);
+  const [quizScore, setQuizScore] = useState(start.quizScore);
+  const [quizAnswered, setQuizAnswered] = useState(start.quizAnswered);
   const enqueue = useStore((s) => s.enqueueLemmas);
   const complete = useStore((s) => s.completeLesson);
   const saved = useRef(false);
@@ -94,17 +118,49 @@ function Player({ lesson }: { lesson: Lesson }) {
   }, [beat, sub]);
 
   useEffect(() => {
-    if (beat !== 10 || saved.current) return;
+    if (gate !== "play") return;
+    if (beat < 1 || beat > 9) return;
+    setLessonCursor({
+      lessonId: lesson.id,
+      beat,
+      sub,
+      quizScore,
+      quizAnswered,
+    });
+  }, [beat, gate, lesson.id, quizAnswered, quizScore, setLessonCursor, sub]);
+
+  useEffect(() => {
+    if (gate !== "play" || beat !== 10 || saved.current) return;
     saved.current = true;
     enqueue(lesson.lemmas);
     complete(lesson.id, 15 + quizScore * 3);
-  }, [beat, complete, enqueue, lesson, quizScore]);
+  }, [beat, complete, enqueue, gate, lesson, quizScore]);
 
   const advance = () => {
     stopAudio();
     setSub(0);
     setBeat((b) => Math.min(BEATS.length - 1, b + 1));
   };
+
+  const shownBeat = gate === "ask" && cursor?.lessonId === lesson.id ? cursor.beat : beat;
+
+  function resume() {
+    if (!cursor || cursor.lessonId !== lesson.id) return;
+    setBeat(cursor.beat);
+    setSub(cursor.sub);
+    setQuizScore(cursor.quizScore);
+    setQuizAnswered(cursor.quizAnswered);
+    setGate("play");
+  }
+
+  function restart() {
+    setLessonCursor(null);
+    setBeat(0);
+    setSub(0);
+    setQuizScore(0);
+    setQuizAnswered(0);
+    setGate("play");
+  }
 
   return (
     <div className="lesson">
@@ -113,18 +169,27 @@ function Player({ lesson }: { lesson: Lesson }) {
       </div>
       <div className="lesson-top">
         <a href="#/">關閉</a>
-        <div className="beats" aria-label={`進度 ${beat + 1} / ${BEATS.length}`}>
+        <div className="beats" aria-label={`進度 ${shownBeat + 1} / ${BEATS.length}`}>
           {BEATS.map((label, i) => (
-            <span key={label} className={i <= beat ? "on" : ""} />
+            <span key={label} className={i <= shownBeat ? "on" : ""} />
           ))}
         </div>
-        <span className="beat-name">{BEATS[beat]}</span>
+        <span className="beat-name">{BEATS[shownBeat]}</span>
       </div>
       <div className="sheet" ref={sheetRef}>
-        {beat === 0 && <Hook lesson={lesson} onNext={advance} />}
-        {beat === 1 && <Goal lesson={lesson} onNext={advance} />}
-        {beat === 2 && <Hear lesson={lesson} onNext={advance} />}
-        {beat === 3 && lesson.understand[sub] && (
+        {gate === "ask" && cursor?.lessonId === lesson.id ? (
+          <>
+            <p className="who">未完成</p>
+            <h2>繼續呢課？</h2>
+            <p className="lede">你上次停喺{BEATS[cursor.beat]}。</p>
+            <button className="btn block" type="button" onClick={resume}>繼續</button>
+            <button className="btn ghost block" type="button" onClick={restart}>重新開始</button>
+          </>
+        ) : null}
+        {gate === "play" && beat === 0 && <Hook lesson={lesson} onNext={advance} />}
+        {gate === "play" && beat === 1 && <Goal lesson={lesson} onNext={advance} />}
+        {gate === "play" && beat === 2 && <Hear lesson={lesson} onNext={advance} />}
+        {gate === "play" && beat === 3 && lesson.understand[sub] && (
           <Choices
             key={`u-${sub}`}
             prompt={lesson.understand[sub].prompt}
@@ -135,7 +200,7 @@ function Player({ lesson }: { lesson: Lesson }) {
             onNext={() => (sub + 1 < lesson.understand.length ? setSub(sub + 1) : advance())}
           />
         )}
-        {beat === 4 && lesson.chunks[sub] && (
+        {gate === "play" && beat === 4 && lesson.chunks[sub] && (
           <ChunkStep
             key={`c-${sub}`}
             pattern={lesson.chunks[sub].pattern}
@@ -146,21 +211,23 @@ function Player({ lesson }: { lesson: Lesson }) {
             onNext={() => (sub + 1 < lesson.chunks.length ? setSub(sub + 1) : advance())}
           />
         )}
-        {beat === 5 && <Shadow lesson={lesson} onNext={advance} />}
-        {beat === 6 && <BuildStep lesson={lesson} sub={sub} setSub={setSub} onDone={advance} />}
-        {beat === 7 && <RoleBeat lesson={lesson} sub={sub} setSub={setSub} onDone={advance} />}
-        {beat === 8 && lesson.quiz[sub] && (
+        {gate === "play" && beat === 5 && <Shadow lesson={lesson} onNext={advance} />}
+        {gate === "play" && beat === 6 && <BuildStep lesson={lesson} sub={sub} setSub={setSub} onDone={advance} />}
+        {gate === "play" && beat === 7 && <RoleBeat lesson={lesson} sub={sub} setSub={setSub} onDone={advance} />}
+        {gate === "play" && beat === 8 && lesson.quiz[sub] && (
           <QuizStep
             item={lesson.quiz[sub]}
             index={sub}
             total={lesson.quiz.length}
             onScore={() => setQuizScore((n) => n + 1)}
+            onAnswered={() => setQuizAnswered((n) => n + 1)}
+            onSkip={() => (sub + 1 < lesson.quiz.length ? setSub(sub + 1) : advance())}
             onNext={() => (sub + 1 < lesson.quiz.length ? setSub(sub + 1) : advance())}
           />
         )}
-        {beat === 9 && <Sound lesson={lesson} onNext={advance} />}
-        {beat === 10 && <Recap lesson={lesson} score={quizScore} onNext={advance} />}
-        {beat === 11 && <NextBeat lesson={lesson} />}
+        {gate === "play" && beat === 9 && <Sound lesson={lesson} onNext={advance} />}
+        {gate === "play" && beat === 10 && <Recap lesson={lesson} score={quizScore} answered={quizAnswered} onNext={advance} />}
+        {gate === "play" && beat === 11 && <NextBeat lesson={lesson} />}
       </div>
     </div>
   );
@@ -260,6 +327,7 @@ function Choices({
   explain,
   onResult,
   onNext,
+  onSkip,
   nextLabel,
 }: {
   prompt: string;
@@ -268,6 +336,7 @@ function Choices({
   explain?: string;
   onResult?: (ok: boolean) => void;
   onNext: () => void;
+  onSkip?: () => void;
   nextLabel: string;
 }) {
   const [picked, setPicked] = useState<number | null>(null);
@@ -306,7 +375,7 @@ function Choices({
         </div>
       )}
       {!done ? (
-        <button className="btn ghost block" type="button" onClick={onNext}>跳過呢題</button>
+        <button className="btn ghost block" type="button" onClick={onSkip || onNext}>跳過呢題</button>
       ) : (
         <button className="btn block" type="button" onClick={onNext}>{nextLabel}</button>
       )}
@@ -501,13 +570,17 @@ function QuizStep({
   index,
   total,
   onScore,
+  onAnswered,
   onNext,
+  onSkip,
 }: {
   item: QuizItem;
   index: number;
   total: number;
   onScore: () => void;
+  onAnswered: () => void;
   onNext: () => void;
+  onSkip: () => void;
 }) {
   const lemma = item.lemma ? lexById[item.lemma] : undefined;
   return (
@@ -523,7 +596,11 @@ function QuizStep({
         choices={item.choices}
         answer={item.answer}
         explain={item.explain}
-        onResult={(ok) => { if (ok) onScore(); }}
+        onResult={(ok) => {
+          onAnswered();
+          if (ok) onScore();
+        }}
+        onSkip={onSkip}
         onNext={onNext}
         nextLabel={index + 1 < total ? "下一題" : "去發音"}
       />
@@ -575,12 +652,12 @@ function Sound({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
   );
 }
 
-function Recap({ lesson, score, onNext }: { lesson: Lesson; score: number; onNext: () => void }) {
+function Recap({ lesson, score, answered, onNext }: { lesson: Lesson; score: number; answered: number; onNext: () => void }) {
   const profile = useStore((s) => s.profile);
   useEffect(() => {
     playSfx("complete");
   }, []);
-  const accuracy = lesson.quiz.length ? Math.round((score / lesson.quiz.length) * 100) : 0;
+  const tally = quizRecapLine(score, lesson.quiz.length, answered);
   return (
     <>
       <div className="confetti" aria-hidden="true">
@@ -589,7 +666,7 @@ function Recap({ lesson, score, onNext }: { lesson: Lesson; score: number; onNex
       <img className="mascot cheer" src={asset("assets/art/mascot-cheer.webp")} alt="小燈" width={96} height={96} />
       <p className="who">放低今日</p>
       <h2>{lesson.canDoYue}</h2>
-      <p className="lede">小測 {score} / {lesson.quiz.length} · 準確 {accuracy}%。答錯唔會扣任何嘢，生字已經排咗入重溫。</p>
+      <p className="lede">{tally}。答錯唔會扣任何嘢，生字已經排咗入重溫。</p>
       {profile && <p className="kicker">連續 {profile.streak} 日 · {profile.xp} XP</p>}
       <div className="card-list">
         {lesson.lemmas.slice(0, 6).map((id) => {

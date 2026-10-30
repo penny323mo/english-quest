@@ -388,3 +388,25 @@ test("short English examples are greetings or set phrases", () => {
     assert.equal(lex.items.some((item) => item.example === banned), false, banned);
   }
 });
+
+test("perfect stays one stress and street names the right street", () => {
+  const byId = Object.fromEntries(lex.items.map((item) => [item.id, item]));
+  const perfect = byId["perfect-adj"];
+  assert.equal(perfect.arpabet, "P ER1 F IH0 K T");
+  assert.equal(perfect.ipa, "/ˈpɝ.fɪkt/");
+  assert.equal(perfect.syllableIpa[1], "fɪkt");
+  assert.equal(perfect.say.includes("ˌ"), false);
+  assert.equal(perfect.examples[0].say.includes("ˌ"), false);
+  assert.equal(perfect.examples[1].say.includes("ˌ"), false);
+  assert.equal(byId["loose-adj"].examples[1].say.includes("ˌ"), false);
+  assert.equal(byId["almost-adv"].examples[1].say.includes("ˌ"), false);
+  assert.equal(byId["street-noun"].example, "This is not the right street.");
+  assert.equal(byId["street-noun"].exampleYue, "呢條唔係啱嗰條街。");
+  assert.equal(byId["street-noun"].say, "This is not the right street.");
+  const lesson = fs.readFileSync(path.join(root, "web/src/Lesson.tsx"), "utf8");
+  const pages = fs.readFileSync(path.join(root, "web/src/pages.tsx"), "utf8");
+  assert.match(lesson, /quizRecapLine/);
+  assert.match(pages, /resume-banner/);
+  assert.match(pages, /繼續/);
+  assert.match(pages, /重新開始/);
+});

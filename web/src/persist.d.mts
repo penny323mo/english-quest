@@ -3,11 +3,20 @@ import type { Profile, LessonDone, StoredCard } from "./types";
 export const SCHEMA_VERSION: number;
 export const STATE_KEY: string;
 
+export type LessonCursor = {
+  lessonId: string;
+  beat: number;
+  sub: number;
+  quizScore: number;
+  quizAnswered: number;
+};
+
 export type Persisted = {
   schemaVersion: number;
   profile: Profile | null;
   progress: Record<string, LessonDone>;
   cards: Record<string, StoredCard>;
+  lessonCursor: LessonCursor | null;
 };
 
 export type SaveStatus =
@@ -26,6 +35,7 @@ export type KvConn = {
 };
 
 export function emptyPersisted(): Persisted;
+export function quizRecapLine(score: number, total: number, answered: number): string;
 export function migrate(from: number, to: number, data: unknown): Persisted;
 export function exportJson(data: Persisted): string;
 export function importJson(raw: string): Persisted;

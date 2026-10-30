@@ -6,6 +6,7 @@ import {
   exportJson,
   importJson,
   migrate,
+  quizRecapLine,
 } from "../web/src/persist.mjs";
 
 const profile = {
@@ -172,4 +173,75 @@ test("a closed database is reopened on the next write", async () => {
   db.current().onversionchange();
   await persistence.save(persistence.snapshot);
   assert.equal(db.opens(), 3);
+});
+
+const cursor = { lessonId: "J5", beat: 2, sub: 1, quizScore: 1, quizAnswered: 2 };
+
+test("version 2 records keep xp and gain a null lesson cursor", () => {
+  const v2 = { schemaVersion: 2, profile, progress, cards };
+  const next = migrate(2, SCHEMA_VERSION, v2);
+  assert.equal(next.schemaVersion, 3);
+  assert.equal(next.lessonCursor, null);
+  assert.equal(next.profile.xp, 40);
+  assert.equal(next.profile.streak, 3);
+  assert.deepEqual(next.progress, progress);
+  assert.deepEqual(next.cards, cards);
+  const fromV1 = migrate(1, SCHEMA_VERSION, { profile, progress, cards });
+  assert.equal(fromV1.lessonCursor, null);
+});
+
+test("save and hydrate restore the in-progress lesson cursor", async () => {
+  const db = memoryDb();
+  const first = createPersistence(db.open);
+  const empty = await first.hydrate();
+  assert.equal(empty.ok, true);
+  const saved = await first.save({
+    schemaVersion: SCHEMA_VERSION,
+    profile,
+    progress,
+    cards,
+    lessonCursor: cursor,
+  });
+  assert.equal(saved.ok, true);
+  assert.deepEqual(db.box.get("state").lessonCursor, cursor);
+  const second = createPersistence(db.open);
+  const hydrated = await second.hydrate();
+  assert.equal(hydrated.ok, true);
+  assert.deepEqual(second.snapshot.lessonCursor, cursor);
+  assert.equal(second.snapshot.profile.xp, 40);
+  assert.equal(second.snapshot.profile.streak, 3);
+  assert.deepEqual(second.snapshot.progress, progress);
+  assert.deepEqual(second.snapshot.cards, cards);
+});
+
+test("export and import keep the lesson cursor and reject a bad one", () => {
+  const stored = migrate(SCHEMA_VERSION, SCHEMA_VERSION, { profile, progress, cards, lessonCursor: cursor });
+  const back = importJson(exportJson(stored));
+  assert.deepEqual(back.lessonCursor, cursor);
+  assert.throws(
+    () => importJson(JSON.stringify({
+      schemaVersion: SCHEMA_VERSION,
+      profile,
+      progress,
+      cards,
+      lessonCursor: { lessonId: "F1", beat: 0, sub: 0, quizScore: 0, quizAnswered: 0 },
+    })),
+    /格式唔啱/,
+  );
+  assert.throws(
+    () => importJson(JSON.stringify({
+      schemaVersion: SCHEMA_VERSION,
+      profile,
+      progress,
+      cards,
+      lessonCursor: { lessonId: "nope!", beat: 2, sub: 0, quizScore: 1, quizAnswered: 0 },
+    })),
+    /格式唔啱/,
+  );
+});
+
+test("a skipped quiz recap does not show zero accuracy", () => {
+  assert.equal(quizRecapLine(0, 5, 0), "跳過小測");
+  assert.equal(quizRecapLine(0, 5, 5), "小測 0 / 5 · 準確 0%");
+  assert.equal(quizRecapLine(2, 5, 4), "小測 2 / 5 · 準確 40%");
 });

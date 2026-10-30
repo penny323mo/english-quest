@@ -189,6 +189,21 @@ a { color: inherit; }
 .stack { display: flex; flex-direction: column; gap: 10px; }
 .row-btns { display: flex; flex-wrap: wrap; gap: 8px; }
 .row-btns .btn { flex: 1 1 calc(50% - 8px); min-width: 0; }
+.resume-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  margin: 0 0 16px;
+  padding: 12px;
+  border-radius: 16px;
+  background: var(--white);
+  border: 2px solid var(--line);
+  min-width: 0;
+  max-width: 100%;
+}
+.resume-banner p { overflow-wrap: anywhere; }
+.resume-banner .btn { width: 100%; max-width: 100%; }
 .wave {
   display: flex;
   align-items: flex-end;

@@ -3,12 +3,14 @@ import { Rating, type Grade } from "ts-fsrs";
 import {
   SHIPPED,
   asset,
+  go,
   isLessonOpen,
   lessonById,
   lexById,
   lexicon,
   pathData,
 } from "./data";
+import { BEAT_LABELS } from "./beats";
 import { GOAL_LABEL, GoalPick } from "./goals";
 import { isDue } from "./fsrs";
 import { ArtImg } from "./art";
@@ -27,9 +29,19 @@ function cefrClass(cefr: string): string {
 export function PathHome() {
   const profile = useStore((s) => s.profile);
   const progress = useStore((s) => s.progress);
+  const lessonCursor = useStore((s) => s.lessonCursor);
+  const armResume = useStore((s) => s.armResume);
+  const setLessonCursor = useStore((s) => s.setLessonCursor);
   if (!profile) return null;
   const recommended = SHIPPED.find((id) => isLessonOpen(id, profile.goal, progress) && !progress[id]);
   const done = SHIPPED.filter((id) => progress[id]).length;
+  const resumeLesson = lessonCursor ? lessonById[lessonCursor.lessonId] : undefined;
+  const resumeOpen = Boolean(
+    lessonCursor &&
+      resumeLesson &&
+      !progress[lessonCursor.lessonId] &&
+      isLessonOpen(lessonCursor.lessonId, profile.goal, progress),
+  );
   return (
     <section className="screen">
       <header className="mast">
@@ -48,6 +60,34 @@ export function PathHome() {
       <div className="row-btns">
         <a className="btn ghost" href="#/vocab">生字</a>
       </div>
+      {resumeOpen && lessonCursor && resumeLesson ? (
+        <div className="resume-banner">
+          <p>未完成：{resumeLesson.titleYue}。停喺{BEAT_LABELS[lessonCursor.beat]}。</p>
+          <button
+            className="btn block"
+            type="button"
+            onClick={() => {
+              armResume();
+              playSfx("tap");
+              go(`#/lesson/${lessonCursor.lessonId}`);
+            }}
+          >
+            繼續
+          </button>
+          <button
+            className="btn ghost block"
+            type="button"
+            onClick={() => {
+              const id = lessonCursor.lessonId;
+              setLessonCursor(null);
+              playSfx("tap");
+              go(`#/lesson/${id}`);
+            }}
+          >
+            重新開始
+          </button>
+        </div>
+      ) : null}
       {pathData.units.map((unit) => (
         <section key={unit.id} className="unit">
           <h2>{unit.title}</h2>

@@ -1,5 +1,11 @@
 # Changelog — English Quest
 
+## Round 23 fixes
+- Vite is 7.3.7 and vite-plugin-pwa is 2.0.0, with `@vitejs/plugin-react` 5.2.0. `vite`, `vite-plugin-pwa`, `@vitejs/plugin-react`, `typescript`, `@types/react`, and `@types/react-dom` are devDependencies. `react`, `react-dom`, `idb`, `zustand`, and `ts-fsrs` stay dependencies. `npm ci`, typecheck, the 24 tests, and the production build pass. Pages still serves the published repo root. The service worker precache is 1124 entries, and hashed scripts still ship with a null revision.
+- A half-finished lesson is stored with the other progress at schemaVersion 3: the lesson id, the beat, the step inside that beat, and the quiz tally. IndexedDB stays version 2. Old records migrate without dropping XP, streak, finished lessons, or cards. The path and the lesson both offer 「繼續」 at the saved beat and 「重新開始」. A quiz with no submitted answers says 跳過小測. A quiz the learner answered and missed can still show 0%.
+- The adjective perfect is /ˈpɝ.fɪkt/, arpabet P ER1 F IH0 K T, with one stress. The Piper clips for that word, and the sentences that use it, drop the second stress. street’s example is “This is not the right street.” / 呢條唔係啱嗰條街。
+- No new lessons. The path stays F1 F2 F3 F4 J1 R1 J2 T1 J3 T2 R2 J4 J5 T3 R3 J6 J7.
+
 ## Round 22 fixes
 - GitHub Actions checks out the repo, installs from the lockfile with Node 20, then runs typecheck, the test suite, and the production build on every push and every pull request. The workflow does not deploy Pages and does not call a paid API.
 - The Piper phoneme test skips, and logs why, when the voice file, the venv, or the Piper module is missing. When Piper is present the jewellery and weak-form checks still run. A separate test covers the skip decision.

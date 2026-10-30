@@ -1,6 +1,6 @@
 /** Progress durability. IndexedDB details stay behind this seam so tests can fake it. */
 
-export const SCHEMA_VERSION = 2;
+export const SCHEMA_VERSION = 3;
 export const STATE_KEY = "state";
 
 const GOALS = new Set(["foundation", "jewellery", "travel", "restaurant"]);
@@ -9,7 +9,7 @@ const MINUTES = new Set([10, 15, 20]);
 const CARD_NUMS = ["stability", "difficulty", "elapsed_days", "scheduled_days", "learning_steps", "reps", "lapses", "state"];
 
 export function emptyPersisted() {
-  return { schemaVersion: SCHEMA_VERSION, profile: null, progress: {}, cards: {} };
+  return { schemaVersion: SCHEMA_VERSION, profile: null, progress: {}, cards: {}, lessonCursor: null };
 }
 
 function bad(message) {
@@ -72,19 +72,48 @@ function normalizeCards(cards) {
   return out;
 }
 
+function normalizeCursor(cursor) {
+  if (cursor == null) return null;
+  if (typeof cursor !== "object" || Array.isArray(cursor)) throw bad("進度格式唔啱。");
+  if (typeof cursor.lessonId !== "string" || !/^[A-Za-z0-9_-]{1,12}$/.test(cursor.lessonId)) throw bad("進度格式唔啱。");
+  const beat = cursor.beat;
+  const sub = cursor.sub;
+  const quizScore = cursor.quizScore;
+  const quizAnswered = cursor.quizAnswered;
+  if (!Number.isInteger(beat) || beat < 1 || beat > 9) throw bad("進度格式唔啱。");
+  if (!Number.isInteger(sub) || sub < 0 || sub > 40) throw bad("進度格式唔啱。");
+  if (!Number.isInteger(quizScore) || quizScore < 0 || quizScore > 40) throw bad("進度格式唔啱。");
+  if (!Number.isInteger(quizAnswered) || quizAnswered < 0 || quizAnswered > 40) throw bad("進度格式唔啱。");
+  if (quizScore > quizAnswered) throw bad("進度格式唔啱。");
+  return { lessonId: cursor.lessonId, beat, sub, quizScore, quizAnswered };
+}
+
 function stamp(data) {
   return {
     schemaVersion: SCHEMA_VERSION,
     profile: normalizeProfile(data?.profile),
     progress: normalizeProgress(data?.progress),
     cards: normalizeCards(data?.cards),
+    lessonCursor: normalizeCursor(data?.lessonCursor),
   };
+}
+
+/**
+ * Recap copy. A quiz the learner never answered is 跳過小測.
+ * A quiz they answered and missed still shows 0%.
+ */
+export function quizRecapLine(score, total, answered) {
+  if (total > 0 && answered === 0) return "跳過小測";
+  const accuracy = total ? Math.round((score / total) * 100) : 0;
+  return `小測 ${score} / ${total} · 準確 ${accuracy}%`;
 }
 
 /**
  * Upgrade a stored record from `from` to `to`.
  * Version 1 is the original profile/progress/cards object, with or without schemaVersion.
- * Version 2 stamps schemaVersion and normalizes the same fields. It does not drop XP, streak, lessons, or cards.
+ * Version 2 stamps schemaVersion and normalizes those fields.
+ * Version 3 adds lessonCursor. A record with no cursor stays null.
+ * No step drops XP, streak, finished lessons, or cards.
  */
 export function migrate(from, to, data) {
   if (!Number.isInteger(from) || !Number.isInteger(to) || from < 1 || to < 1) throw bad("進度格式唔啱。");
@@ -95,7 +124,7 @@ export function migrate(from, to, data) {
   if (from === to) return stamp(current);
   while (version < to) {
     version += 1;
-    if (version === 2) current = stamp(current);
+    if (version === 2 || version === 3) current = stamp(current);
     else throw bad("進度格式唔啱。");
   }
   return current;
@@ -108,6 +137,7 @@ export function exportJson(data) {
     profile: body.profile,
     progress: body.progress,
     cards: body.cards,
+    lessonCursor: body.lessonCursor,
   });
 }
 
@@ -286,7 +316,7 @@ export function createPersistence(open) {
         };
         return { ok: false };
       }
-      const body = next?.schemaVersion === SCHEMA_VERSION ? next : stamp(next);
+      const body = stamp(next);
       snapshot = body;
       if (mode === "memory") {
         status = { kind: "unsaved", reason: "呢個瀏覽器而家存唔到資料。" };

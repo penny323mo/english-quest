@@ -2,16 +2,19 @@ import { openDB, type IDBPDatabase } from "idb";
 import { create } from "zustand";
 import { Rating, type Grade } from "ts-fsrs";
 import { makeNewCard, reviewStored } from "./fsrs";
-import { createPersistence, exportJson, importJson, type Persisted, type SaveStatus } from "./persist.mjs";
+import { createPersistence, exportJson, importJson, type LessonCursor, type Persisted, type SaveStatus } from "./persist.mjs";
 import type { Goal, Level, Profile } from "./types";
 
 type Store = Persisted & {
   ready: boolean;
   writable: boolean;
   saveStatus: SaveStatus;
+  resumeArmed: boolean;
   setProfile: (profile: Profile) => void;
   updateProfile: (patch: Partial<Profile>) => void;
   completeLesson: (id: string, xp: number) => void;
+  setLessonCursor: (cursor: LessonCursor | null) => void;
+  armResume: () => void;
   enqueueLemmas: (ids: string[]) => void;
   gradeCard: (id: string, rating: Grade) => void;
   touchToday: () => void;
@@ -93,7 +96,13 @@ const persistence = createPersistence(openBrowserDb);
 
 function snapshot(): Persisted {
   const s = useStore.getState();
-  return { schemaVersion: s.schemaVersion, profile: s.profile, progress: s.progress, cards: s.cards };
+  return {
+    schemaVersion: s.schemaVersion,
+    profile: s.profile,
+    progress: s.progress,
+    cards: s.cards,
+    lessonCursor: s.lessonCursor,
+  };
 }
 
 async function save(data: Persisted) {
@@ -110,10 +119,12 @@ export const useStore = create<Store>((set) => ({
   ready: false,
   writable: false,
   saveStatus: { kind: "ok" },
-  schemaVersion: 2,
+  schemaVersion: 3,
   profile: null,
   progress: {},
   cards: {},
+  lessonCursor: null,
+  resumeArmed: false,
   setProfile: (profile) => set((s) => (s.writable ? { profile } : s)),
   updateProfile: (patch) =>
     set((s) => (s.writable && s.profile ? { profile: { ...s.profile, ...patch } } : s)),
@@ -121,12 +132,16 @@ export const useStore = create<Store>((set) => ({
     set((s) => {
       if (!s.writable || !s.profile) return s;
       const profile = bumpStreak(s.profile);
-      if (s.progress[id]) return { profile };
+      const lessonCursor = s.lessonCursor?.lessonId === id ? null : s.lessonCursor;
+      if (s.progress[id]) return { profile, lessonCursor };
       return {
         profile: { ...profile, xp: profile.xp + xp },
         progress: { ...s.progress, [id]: { at: new Date().toISOString(), xp } },
+        lessonCursor,
       };
     }),
+  setLessonCursor: (cursor) => set((s) => (s.writable ? { lessonCursor: cursor } : s)),
+  armResume: () => set({ resumeArmed: true }),
   enqueueLemmas: (ids) =>
     set((s) => {
       if (!s.writable) return s;
@@ -155,7 +170,7 @@ export const useStore = create<Store>((set) => ({
     }),
   touchToday: () =>
     set((s) => (s.writable && s.profile ? { profile: bumpStreak(s.profile) } : s)),
-  reset: () => set((s) => (s.writable ? { profile: null, progress: {}, cards: {} } : s)),
+  reset: () => set((s) => (s.writable ? { profile: null, progress: {}, cards: {}, lessonCursor: null } : s)),
   retrySave: () => {
     void save(snapshot());
   },
@@ -173,7 +188,13 @@ export const useStore = create<Store>((set) => ({
     if (!s.writable) return { ok: false, message: "而家讀唔到舊進度，未可以覆蓋。" };
     try {
       const data = importJson(raw);
-      set({ profile: data.profile, progress: data.progress, cards: data.cards, schemaVersion: data.schemaVersion });
+      set({
+        profile: data.profile,
+        progress: data.progress,
+        cards: data.cards,
+        lessonCursor: data.lessonCursor,
+        schemaVersion: data.schemaVersion,
+      });
       return { ok: true };
     } catch (err) {
       return { ok: false, message: err instanceof Error ? err.message : "呢份檔案讀唔到。" };
@@ -186,7 +207,8 @@ useStore.subscribe((state, prev) => {
   if (
     state.profile === prev.profile &&
     state.progress === prev.progress &&
-    state.cards === prev.cards
+    state.cards === prev.cards &&
+    state.lessonCursor === prev.lessonCursor
   ) {
     return;
   }
@@ -195,6 +217,7 @@ useStore.subscribe((state, prev) => {
     profile: state.profile,
     progress: state.progress,
     cards: state.cards,
+    lessonCursor: state.lessonCursor,
   });
 });
 
@@ -208,6 +231,7 @@ function applyPersistence() {
     profile: snap.profile,
     progress: snap.progress,
     cards: snap.cards,
+    lessonCursor: snap.lessonCursor,
     ready: true,
     writable: false,
     saveStatus: { kind: "ok" },

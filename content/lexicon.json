@@ -7357,9 +7357,9 @@
       "collocations": [
         "on the street"
       ],
-      "example": "This is not the street.",
-      "exampleYue": "呢度唔係條街。",
-      "say": "This is not the street.",
+      "example": "This is not the right street.",
+      "exampleYue": "呢條唔係啱嗰條街。",
+      "say": "This is not the right street.",
       "variants": [],
       "note": "對比組。street 係長 /i/。straight 先至係 /eɪ/。",
       "sources": [
@@ -7371,7 +7371,7 @@
       "senseMismatch": false,
       "cmuLemma": "street",
       "phrase": false,
-      "audioSha256": "9ef8b8ed8e71a597f68388e1ba052c00b74c27596d53b96beb596687a827ec75"
+      "audioSha256": "7e137b067a6f495c8bdc62a6718ca02958250b777b6810c144dbc2ea4b967d03"
     },
     {
       "id": "security-noun",
@@ -10539,7 +10539,7 @@
           "yue": "太鬆就唔算啱碼。",
           "audio": "assets/audio/words/loose-adj-ex2.mp3",
           "audioSlow": "assets/audio/words/loose-adj-ex2-slow.mp3",
-          "say": "A loose fit is not [[pˈɜfˌɪkt]]."
+          "say": "A loose fit is not [[pˈɜfɪkt]]."
         }
       ]
     },
@@ -10794,17 +10794,17 @@
       "lemma": "perfect",
       "pos": "adj",
       "senseId": "ideal-fit",
-      "ipa": "/ˈpɝ.ˌfɪkt/",
+      "ipa": "/ˈpɝ.fɪkt/",
       "syllables": [
         "per",
         "fect"
       ],
       "syllableIpa": [
         "ˈpɝ",
-        "ˌfɪkt"
+        "fɪkt"
       ],
       "stress": 1,
-      "arpabet": "P ER1 F IH2 K T",
+      "arpabet": "P ER1 F IH0 K T",
       "audio": "assets/audio/words/perfect-adj.mp3",
       "audioSlow": "assets/audio/words/perfect-adj-slow.mp3",
       "glossYue": "啱到極",
@@ -10815,11 +10815,11 @@
       ],
       "example": "This fit is perfect.",
       "exampleYue": "呢個碼啱到極。",
-      "say": "This fit is [[pˈɜfˌɪkt]].",
+      "say": "This fit is [[pˈɜfɪkt]].",
       "variants": [
         "/pɚ.ˈfɛkt/"
       ],
-      "note": "形容詞教 /ˈpɝ.ˌfɪkt/。CMU 第一條係動詞重音，標做變體。",
+      "note": "形容詞教 /ˈpɝ.fɪkt/。CMU 第一條係動詞重音，標做變體。",
       "sources": [
         "CMUdict 0.7b"
       ],
@@ -10828,7 +10828,7 @@
       "senseMismatch": false,
       "cmuLemma": "perfect",
       "phrase": false,
-      "audioSha256": "fb3fe12b0d172ff5465671b3150778662cc7032568d63a01c351aa261814b461",
+      "audioSha256": "58b7646a49c1fb48dc6842e60d8c022676ffc0b31f626e48e5ab1606ff70fbaf",
       "register": "櫃檯",
       "usageNotes": "The fit is perfect. 形容詞重音喺第一節。",
       "pitfallsYue": "唔好讀成動詞嗰個重音。",
@@ -10842,14 +10842,14 @@
           "yue": "呢個碼啱到極。",
           "audio": "assets/audio/words/perfect-adj.mp3",
           "audioSlow": "assets/audio/words/perfect-adj-slow.mp3",
-          "say": "This fit is [[pˈɜfˌɪkt]]."
+          "say": "This fit is [[pˈɜfɪkt]]."
         },
         {
           "en": "The size is almost perfect.",
           "yue": "個碼差唔多啱晒。",
           "audio": "assets/audio/words/perfect-adj-ex2.mp3",
           "audioSlow": "assets/audio/words/perfect-adj-ex2-slow.mp3",
-          "say": "The size is almost [[pˈɜfˌɪkt]]."
+          "say": "The size is almost [[pˈɜfɪkt]]."
         }
       ]
     },
@@ -10912,7 +10912,7 @@
           "yue": "個碼差唔多啱晒。",
           "audio": "assets/audio/words/almost-adv-ex2.mp3",
           "audioSlow": "assets/audio/words/almost-adv-ex2-slow.mp3",
-          "say": "The size is almost [[pˈɜfˌɪkt]]."
+          "say": "The size is almost [[pˈɜfɪkt]]."
         }
       ]
     },
