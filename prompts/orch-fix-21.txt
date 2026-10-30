@@ -11,3 +11,5 @@ Append '## Round 21 fixes' to CHANGELOG.md. Commit + push ff-only to origin main
 
 WHEN COMPLETELY FINISHED, create /workspace/sidequest/english-quest/.orch/fix-21.done with DONE.
 ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-21.done
+
+PREVIOUS ROUND 390px AUDIT (coder, live round 19): read review/loop-r19/coder-audit.md and close every OPEN item that fix-20 did not close. Also prompts/orch-fix-20-addendum.txt.

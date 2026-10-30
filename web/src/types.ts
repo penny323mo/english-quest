@@ -7,6 +7,7 @@ export type Profile = {
   minutes: 10 | 15 | 20;
   level: Level;
   jyutping: boolean;
+  sound?: boolean;
   xp: number;
   streak: number;
   lastActive: string | null;

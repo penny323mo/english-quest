@@ -4,6 +4,7 @@ import { decks, lexById } from "./data";
 import { isDue } from "./fsrs";
 import { learnerEyebrow } from "./labels";
 import { playAsset } from "./media";
+import { playSfx } from "./sfx";
 import { useStore } from "./store";
 import type { LexItem, StoredCard } from "./types";
 
@@ -143,6 +144,7 @@ export function VocabDeck({ deckId }: { deckId: string }) {
   function mark(id: string, rating: Grade) {
     enqueue([id]);
     gradeCard(id, rating);
+    playSfx(rating === Rating.Good ? "xp" : "streak");
     setMore(false);
     setIndex((n) => n + 1);
   }
@@ -240,7 +242,9 @@ export function VocabQuiz({ deckId }: { deckId: string }) {
     if (!question || picked !== null) return;
     setPicked(i);
     enqueue([question.item.id]);
-    gradeCard(question.item.id, i === question.answer ? Rating.Good : Rating.Again);
+    const ok = i === question.answer;
+    gradeCard(question.item.id, ok ? Rating.Good : Rating.Again);
+    playSfx(ok ? "correct" : "wrong");
   }
 
   return (

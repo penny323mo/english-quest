@@ -144,6 +144,7 @@ export function blankProfile(input: {
     minutes: input.minutes,
     level: input.level,
     jyutping: false,
+    sound: true,
     xp: 0,
     streak: 0,
     lastActive: null,

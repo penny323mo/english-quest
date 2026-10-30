@@ -54,19 +54,23 @@
         },
         {
           "id": "J7",
-          "title": "收尾同道別",
-          "soon": true,
-          "cefr": "A2"
+          "cefr": "A2/B1"
         },
         {
           "id": "J8",
           "title": "售後同保養",
           "soon": true,
-          "cefr": "A2"
+          "cefr": "B1"
         },
         {
           "id": "J9",
           "title": "投訴同退換",
+          "soon": true,
+          "cefr": "B1"
+        },
+        {
+          "id": "J10",
+          "title": "加購同禮盒",
           "soon": true,
           "cefr": "B1"
         }
@@ -87,8 +91,6 @@
         },
         {
           "id": "T3",
-          "title": "酒店入住",
-          "soon": true,
           "cefr": "A2"
         },
         {
@@ -102,6 +104,12 @@
           "title": "行失咗點求人",
           "soon": true,
           "cefr": "A2/B1"
+        },
+        {
+          "id": "T6",
+          "title": "酒店問題",
+          "soon": true,
+          "cefr": "B1"
         }
       ]
     },
@@ -120,8 +128,6 @@
         },
         {
           "id": "R3",
-          "title": "過敏同特別要求",
-          "soon": true,
           "cefr": "A2"
         },
         {
@@ -135,6 +141,12 @@
           "title": "埋單同貼士",
           "soon": true,
           "cefr": "A2/B1"
+        },
+        {
+          "id": "R6",
+          "title": "電話訂位",
+          "soon": true,
+          "cefr": "B1"
         }
       ]
     }

@@ -1,0 +1,4 @@
+ADDENDUM to fix-20 (reviewer, mandatory, blocks SHIP): also fix every CRITICAL/MAJOR in reviews/orch-r20-grok.md.
+1) CRITICAL: Path steps backwards in CEFR. Use ONE ascending order in both content/path.json and SHIPPED (web/src/data.ts), and make isLessonOpen follow that order. Suggested: F1 F2 F3 F4, J1, R1, J2, T1, J3 J4 J5, T2, R2, J6, then new J7/R3/T3 slotted at their real level (never below the lesson before). J7 chip A2/B1, J8 chip B1 per CURRICULUM.md. Add a test asserting CEFR never decreases along the path order.
+2) MAJOR: J4–J6 are A1-shaped (5 short fully-glossed lines). Either teach the CURRICULUM.md grammar (comparatives for J4, "If you take both…" for J6), lengthen dialogues to 6–10 lines and gloss only key lines, or re-badge them A2. New lessons J7/R3/T3 must be longer/less scaffolded than the lesson before them.
+Keep the light redesign + SFX + J7/R3/T3 work you are doing.

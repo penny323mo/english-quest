@@ -705,6 +705,140 @@
       "taughtIpa": "/ˈtɹaɪ ˈɔn/",
       "resolvedBy": "round-19",
       "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "refund-form-phrase",
+      "lemma": "refund",
+      "pos": "phrase",
+      "cmudict": [
+        "R IH0 F AH1 N D verb",
+        "R IY1 F AH2 N D noun"
+      ],
+      "wiktionary": "not re-fetched this round",
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU lists the verb stress first and the noun stress second.",
+      "resolution": "Teach the noun /ˈɹi.ˌfʌnd/ inside refund form. The clip is forced to that stress.",
+      "resolved": true,
+      "taughtIpa": "/ˈɹi.ˌfʌnd ˈfɔɹm/",
+      "resolvedBy": "round-20",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "receipt-noun",
+      "lemma": "receipt",
+      "pos": "noun",
+      "cmudict": [
+        "R IH0 S IY1 T",
+        "R IY0 S IY1 T"
+      ],
+      "wiktionary": "not re-fetched this round",
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU has /ɪ/ and /i/ in the first syllable.",
+      "resolution": "Teach the first form /ɹɪ.ˈsit/. The clip is forced so the stress stays on the second syllable.",
+      "resolved": true,
+      "taughtIpa": "/ɹɪ.ˈsit/",
+      "resolvedBy": "round-20",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "wifi-noun",
+      "lemma": "wifi",
+      "pos": "noun",
+      "cmudict": [
+        "W AY1 F AY2",
+        "W IY1 F IY2"
+      ],
+      "wiktionary": "not re-fetched this round",
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU lists /ˈwaɪ.faɪ/ and a wee-fee reading.",
+      "resolution": "Teach /ˈwaɪ.ˌfaɪ/. The clip is forced so it does not become wee-fee.",
+      "resolved": true,
+      "taughtIpa": "/ˈwaɪ.ˌfaɪ/",
+      "resolvedBy": "round-20",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "without-prep",
+      "lemma": "without",
+      "pos": "prep",
+      "cmudict": [
+        "W IH0 TH AW1 T",
+        "W IH0 DH AW1 T"
+      ],
+      "wiktionary": "not re-fetched this round",
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU has voiceless /θ/ and voiced /ð/.",
+      "resolution": "Teach voiceless /wɪθ.ˈaʊt/, the first CMU form. The clip is forced.",
+      "resolved": true,
+      "taughtIpa": "/wɪθ.ˈaʊt/",
+      "resolvedBy": "round-20",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "on-the-side-phrase",
+      "lemma": "on",
+      "pos": "phrase",
+      "cmudict": [
+        "AA1 N",
+        "AO1 N"
+      ],
+      "wiktionary": "not re-fetched this round",
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU lists /ɑn/ first and /ɔn/ second.",
+      "resolution": "Teach /ɔn/ in on the side, matching try on from round 19. The clip is forced.",
+      "resolved": true,
+      "taughtIpa": "/ˈɔn ðə ˈsaɪd/",
+      "resolvedBy": "round-20",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "allergic-adj",
+      "lemma": "allergic",
+      "pos": "adj",
+      "cmudict": [
+        "AH0 L ER1 JH IH0 K"
+      ],
+      "wiktionary": "not re-fetched this round",
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "The learner IPA keeps CMU ɝ. This Piper voice has no ɝ and drops the vowel if it is forced.",
+      "resolution": "The card stays /ə.ˈlɝ.dʒɪk/. The clip forces ɜ so the vowel is audible.",
+      "resolved": true,
+      "taughtIpa": "/ə.ˈlɝ.dʒɪk/",
+      "resolvedBy": "round-20",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "password-noun",
+      "lemma": "password",
+      "pos": "noun",
+      "cmudict": [
+        "P AE1 S W ER2 D"
+      ],
+      "wiktionary": "not re-fetched this round",
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "The learner IPA keeps CMU ɝ. This Piper voice has no ɝ and drops the vowel if it is forced.",
+      "resolution": "The card stays /ˈpæs.ˌwɝd/. The clip forces ɜ so the vowel is audible.",
+      "resolved": true,
+      "taughtIpa": "/ˈpæs.ˌwɝd/",
+      "resolvedBy": "round-20",
+      "resolvedAt": "2026-10-30"
+    },
+    {
+      "id": "peanut-noun",
+      "lemma": "peanut",
+      "pos": "noun",
+      "cmudict": [
+        "P IY1 N AH0 T",
+        "P IY1 N AH2 T"
+      ],
+      "wiktionary": "not re-fetched this round",
+      "freeDictionary": "not in the local phonetics cache",
+      "disagreement": "CMU has a reduced second vowel and a secondary-stress form.",
+      "resolution": "Teach the first form /ˈpi.nət/. The clip is forced so the second vowel stays reduced.",
+      "resolved": true,
+      "taughtIpa": "/ˈpi.nət/",
+      "resolvedBy": "round-20",
+      "resolvedAt": "2026-10-30"
     }
   ]
 }

@@ -1,0 +1,325 @@
+{
+  "id": "T3",
+  "unit": "T",
+  "titleYue": "酒店入住",
+  "titleEn": "Hotel check-in",
+  "canDoYue": "你能夠入住、問密碼同早餐。",
+  "canDoEn": "Check in with a reservation, ask for the wifi password, and confirm breakfast.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t3.webp",
+  "cast": [
+    "kai",
+    "tom"
+  ],
+  "cefr": "A2",
+  "lemmas": [
+    "reservation-noun",
+    "passport-noun",
+    "luggage-noun",
+    "include-verb",
+    "key-card-phrase",
+    "room-noun",
+    "twin-noun",
+    "double-adj",
+    "view-noun",
+    "wifi-noun",
+    "password-noun",
+    "breakfast-noun",
+    "floor-noun",
+    "elevator-noun",
+    "late-checkout-phrase",
+    "wake-up-call-phrase"
+  ],
+  "dialogue": [
+    {
+      "id": "t3-l1",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Do you have a reservation?",
+      "glossYue": "你有冇訂房？",
+      "audio": "assets/audio/lines/t3-l1.mp3",
+      "audioSlow": "assets/audio/lines/t3-l1-slow.mp3",
+      "say": "Do you have a reservation?"
+    },
+    {
+      "id": "t3-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I have a reservation under Tom.",
+      "glossYue": "我用 Tom 個名訂咗房。",
+      "audio": "assets/audio/lines/t3-l2.mp3",
+      "audioSlow": "assets/audio/lines/t3-l2-slow.mp3",
+      "say": "I have a reservation under Tom."
+    },
+    {
+      "id": "t3-l3",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Your room is a double with a view.",
+      "glossYue": "你間房係有景觀嘅雙人房。",
+      "audio": "assets/audio/lines/t3-l3.mp3",
+      "audioSlow": "assets/audio/lines/t3-l3-slow.mp3",
+      "say": "Your room is a double with a view."
+    },
+    {
+      "id": "t3-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could you tell me the wifi password?",
+      "glossYue": "可唔可以話我知無線網絡密碼？",
+      "audio": "assets/audio/lines/t3-l4.mp3",
+      "audioSlow": "assets/audio/lines/t3-l4-slow.mp3",
+      "say": "Could you tell me the [[wˈaɪfˌaɪ]] [[pˈæswˌɜd]]?"
+    },
+    {
+      "id": "t3-l5",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Here is your key card.",
+      "glossYue": "呢張係你把鑰匙卡。",
+      "audio": "assets/audio/lines/t3-l5.mp3",
+      "audioSlow": "assets/audio/lines/t3-l5-slow.mp3",
+      "say": "Here is your key card."
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "I have a reservation under Tom. 係講？",
+      "choices": [
+        "用 Tom 個名訂咗房",
+        "我想叫雞",
+        "我想免稅"
+      ],
+      "answer": 0,
+      "explain": "under 後面係落訂個名。"
+    },
+    {
+      "prompt": "Your room is a double with a view. 間房？",
+      "choices": [
+        "一張大床，有景觀",
+        "兩張床，冇窗",
+        "只係升降機"
+      ],
+      "answer": 0,
+      "explain": "double 係一張大床。兩張床先至係 twin。"
+    },
+    {
+      "prompt": "Here is your key card. 你收到？",
+      "choices": [
+        "鑰匙卡",
+        "收據",
+        "登機證"
+      ],
+      "answer": 0,
+      "explain": "鑰匙卡開房。密碼通常寫喺卡上面。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I have a reservation under ___.",
+      "example": "I have a reservation under Tom.",
+      "glossYue": "我用⋯⋯個名訂咗房。",
+      "answer": "Tom",
+      "choices": [
+        "Tom",
+        "chicken",
+        "cash"
+      ]
+    },
+    {
+      "pattern": "Your room is a ___.",
+      "example": "Your room is a double.",
+      "glossYue": "你間房係⋯⋯。",
+      "answer": "double",
+      "choices": [
+        "double",
+        "receipt",
+        "sauce"
+      ]
+    },
+    {
+      "pattern": "Could you tell me the wifi ___?",
+      "example": "Could you tell me the wifi password?",
+      "glossYue": "可唔可以話我知無線網絡⋯⋯？",
+      "answer": "password",
+      "choices": [
+        "password",
+        "passport",
+        "peanut"
+      ]
+    },
+    {
+      "pattern": "Here is your ___.",
+      "example": "Here is your key card.",
+      "glossYue": "呢張係你把⋯⋯。",
+      "answer": "key card",
+      "choices": [
+        "key card",
+        "gift box",
+        "refund form"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "t3-l2",
+    "hint": "I have a reservation under Tom."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "Kai 問你有冇訂房。你用 Tom 個名。",
+      "choices": [
+        "I have a reservation under Tom.",
+        "I am allergic to peanuts.",
+        "Would you like to pay by card?"
+      ],
+      "answer": 0,
+      "explain": "先講有訂，再講個名。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Could",
+        "you",
+        "tell",
+        "me",
+        "the",
+        "password"
+      ],
+      "answer": [
+        "Could",
+        "you",
+        "tell",
+        "me",
+        "the",
+        "password"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你係住客。Kai 喺酒店櫃檯。等佢問完先答。",
+    "turns": [
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "Do you have a reservation?",
+        "audio": "assets/audio/lines/t3-l1.mp3",
+        "audioSlow": "assets/audio/lines/t3-l1-slow.mp3",
+        "expect": "I have a reservation under Tom.",
+        "keywords": [
+          "reservation"
+        ],
+        "modelAudio": "assets/audio/lines/t3-l2.mp3",
+        "modelSlow": "assets/audio/lines/t3-l2-slow.mp3"
+      },
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "Your room is a double with a view.",
+        "audio": "assets/audio/lines/t3-l3.mp3",
+        "audioSlow": "assets/audio/lines/t3-l3-slow.mp3",
+        "expect": "Could you tell me the wifi password?",
+        "keywords": [
+          "wifi",
+          "password"
+        ],
+        "modelAudio": "assets/audio/lines/t3-l4.mp3",
+        "modelSlow": "assets/audio/lines/t3-l4-slow.mp3"
+      },
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "Breakfast is included.",
+        "audio": "assets/audio/lines/t3-m1.mp3",
+        "audioSlow": "assets/audio/lines/t3-m1-slow.mp3",
+        "expect": "Could I have a late checkout?",
+        "keywords": [
+          "late",
+          "checkout"
+        ],
+        "modelAudio": "assets/audio/lines/t3-m2.mp3",
+        "modelSlow": "assets/audio/lines/t3-m2-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "floor-noun",
+      "choices": [
+        "floor",
+        "view",
+        "room"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "wifi-noun",
+      "choices": [
+        "wifi",
+        "password",
+        "breakfast"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "elevator",
+      "choices": [
+        "升降機",
+        "樓層",
+        "早餐"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "twin",
+      "choices": [
+        "雙床",
+        "雙人床",
+        "景觀"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個有 /l/？",
+      "choices": [
+        "floor",
+        "view",
+        "room"
+      ],
+      "answer": 0,
+      "explain": "floor 有 /l/。wifi 讀 /waɪ faɪ/。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "樓層開頭嗰個音",
+    "note": "floor 同 late 都有 /l/。舌尖抵住上顎後面。elevator 重音喺第一節。wifi 讀 /waɪ faɪ/，唔好讀成 wee-fee。password 第二節係 /ɝ/。",
+    "pairs": [
+      {
+        "a": "floor-noun",
+        "b": "view-noun"
+      },
+      {
+        "a": "elevator-noun",
+        "b": "room-noun"
+      }
+    ],
+    "drill": [
+      "floor-noun",
+      "elevator-noun",
+      "wifi-noun",
+      "password-noun",
+      "breakfast-noun"
+    ]
+  },
+  "next": "R1"
+}

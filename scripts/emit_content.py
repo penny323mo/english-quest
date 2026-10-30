@@ -1035,6 +1035,8 @@ def build_items() -> None:
         "Good night.", "晚安。", phrase=True)
     from round19_content import add_items
     add_items(add)
+    from round20_content import add_items as add_items20
+    add_items20(add)
 
 
 def verify(cmu: dict[str, list[str]]) -> None:
@@ -2199,12 +2201,21 @@ def build_lessons() -> list[dict]:
     # plus this list stored on path meta. We'll return extras separately.
     from round19_content import lesson_pack
     added, more = lesson_pack()
+    from round20_content import lesson_pack as lesson_pack20
+    added20, more20 = lesson_pack20()
+    by20 = {lesson["id"]: lesson for lesson in added20}
     built = []
     for lesson in lessons:
         built.append(lesson)
         if lesson["id"] == "J3":
             built.extend(added)
+            built.append(by20["J7"])
+        if lesson["id"] == "T2":
+            built.append(by20["T3"])
+        if lesson["id"] == "R2":
+            built.append(by20["R3"])
     extras.extend(more)
+    extras.extend(more20)
     return built, extras
 
 
@@ -2291,6 +2302,8 @@ def main() -> None:
                 raise SystemExit(f"quiz {q['lemma']}")
     from round19_content import apply_round
     decks = apply_round(ITEMS, lessons, PATH, FLAGS)
+    from round20_content import apply_round20
+    decks = apply_round20(ITEMS, lessons, PATH, FLAGS, decks)
     # drop internal-only fields from public lexicon
     public = []
     for item in ITEMS:

@@ -1,0 +1,325 @@
+{
+  "id": "J7",
+  "unit": "J",
+  "titleYue": "付款同退稅",
+  "titleEn": "Payment and tax-free",
+  "canDoYue": "你能夠收款、講免稅同包裝。",
+  "canDoEn": "Take a card or cash payment, explain tax-free, and offer a bag or wrap.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j7.webp",
+  "cast": [
+    "mei",
+    "tom"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "pay-verb",
+    "card-noun",
+    "cash-noun",
+    "contactless-adj",
+    "receipt-noun",
+    "invoice-noun",
+    "tax-free-phrase",
+    "refund-form-phrase",
+    "bag-noun",
+    "wrap-verb",
+    "gift-box-phrase",
+    "signature-noun",
+    "approve-verb",
+    "decline-verb",
+    "passport-noun"
+  ],
+  "dialogue": [
+    {
+      "id": "j7-l1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "The total is ready.",
+      "glossYue": "總數準備好。",
+      "audio": "assets/audio/lines/j7-l1.mp3",
+      "audioSlow": "assets/audio/lines/j7-l1-slow.mp3",
+      "say": "The total is ready."
+    },
+    {
+      "id": "j7-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I will pay by card.",
+      "glossYue": "我會用卡付款。",
+      "audio": "assets/audio/lines/j7-l2.mp3",
+      "audioSlow": "assets/audio/lines/j7-l2-slow.mp3",
+      "say": "I will pay by card."
+    },
+    {
+      "id": "j7-l3",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "This purchase is tax-free.",
+      "glossYue": "呢單可以免稅。",
+      "audio": "assets/audio/lines/j7-l3.mp3",
+      "audioSlow": "assets/audio/lines/j7-l3-slow.mp3",
+      "say": "This purchase is tax-free."
+    },
+    {
+      "id": "j7-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Here is my passport.",
+      "glossYue": "呢本係我本護照。",
+      "audio": "assets/audio/lines/j7-l4.mp3",
+      "audioSlow": "assets/audio/lines/j7-l4-slow.mp3",
+      "say": "Here is my passport."
+    },
+    {
+      "id": "j7-l5",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "I can wrap the gift.",
+      "glossYue": "我可以包裝份禮物。",
+      "audio": "assets/audio/lines/j7-l5.mp3",
+      "audioSlow": "assets/audio/lines/j7-l5-slow.mp3",
+      "say": "I can [[ɹˈæp]] the gift."
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Would you like to pay by card? 係問？",
+      "choices": [
+        "想唔想用卡付款",
+        "想唔想試戒指",
+        "想唔想叫雞"
+      ],
+      "answer": 0,
+      "explain": "pay by card 係用卡付款。現金先至係 cash。"
+    },
+    {
+      "prompt": "This purchase is tax-free. 即係？",
+      "choices": [
+        "呢單可以免稅",
+        "稅已經包咗",
+        "要加一成"
+      ],
+      "answer": 0,
+      "explain": "tax-free 係免稅。要睇護照。"
+    },
+    {
+      "prompt": "Here is your receipt. 你遞畀客人？",
+      "choices": [
+        "收據",
+        "退款表格",
+        "禮盒"
+      ],
+      "answer": 0,
+      "explain": "receipt 重音喺第二節。發票先至係 invoice。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Would you like to pay by ___?",
+      "example": "Would you like to pay by card?",
+      "glossYue": "你想唔想用⋯⋯付款？",
+      "answer": "card",
+      "choices": [
+        "card",
+        "chicken",
+        "gate"
+      ]
+    },
+    {
+      "pattern": "This purchase is ___.",
+      "example": "This purchase is tax-free.",
+      "glossYue": "呢單可以⋯⋯。",
+      "answer": "tax-free",
+      "choices": [
+        "tax-free",
+        "spicy",
+        "loose"
+      ]
+    },
+    {
+      "pattern": "Here is your ___.",
+      "example": "Here is your receipt.",
+      "glossYue": "呢張係你張⋯⋯。",
+      "answer": "receipt",
+      "choices": [
+        "receipt",
+        "mirror",
+        "menu"
+      ]
+    },
+    {
+      "pattern": "I can ___ the gift.",
+      "example": "I can wrap the gift.",
+      "glossYue": "我可以⋯⋯份禮物。",
+      "answer": "wrap",
+      "choices": [
+        "wrap",
+        "measure",
+        "recommend"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "j7-l5",
+    "hint": "I can wrap the gift."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "Tom 想用現金。你點問卡？",
+      "choices": [
+        "Would you like to pay by card?",
+        "Look in the mirror.",
+        "A table for two, please."
+      ],
+      "answer": 0,
+      "explain": "先問付款方法。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Would",
+        "you",
+        "like",
+        "to",
+        "pay",
+        "by",
+        "card"
+      ],
+      "answer": [
+        "Would",
+        "you",
+        "like",
+        "to",
+        "pay",
+        "by",
+        "card"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "mei",
+    "intro": "Tom 喺櫃檯準備付款。等佢講完先答。免稅要睇護照。",
+    "turns": [
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Could I pay with cash?",
+        "audio": "assets/audio/lines/j7-l6.mp3",
+        "audioSlow": "assets/audio/lines/j7-l6-slow.mp3",
+        "expect": "Would you like to pay by card?",
+        "keywords": [
+          "pay",
+          "card"
+        ],
+        "modelAudio": "assets/audio/lines/j7-m1.mp3",
+        "modelSlow": "assets/audio/lines/j7-m1-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Here is my passport.",
+        "audio": "assets/audio/lines/j7-l4.mp3",
+        "audioSlow": "assets/audio/lines/j7-l4-slow.mp3",
+        "expect": "This purchase is tax-free.",
+        "keywords": [
+          "tax"
+        ],
+        "modelAudio": "assets/audio/lines/j7-l3.mp3",
+        "modelSlow": "assets/audio/lines/j7-l3-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Could you wrap this?",
+        "audio": "assets/audio/lines/j7-l7.mp3",
+        "audioSlow": "assets/audio/lines/j7-l7-slow.mp3",
+        "expect": "I can wrap the gift.",
+        "keywords": [
+          "wrap"
+        ],
+        "modelAudio": "assets/audio/lines/j7-l5.mp3",
+        "modelSlow": "assets/audio/lines/j7-l5-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "receipt-noun",
+      "choices": [
+        "receipt",
+        "invoice",
+        "cash"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "你聽到邊個？",
+      "lemma": "contactless-adj",
+      "choices": [
+        "contactless",
+        "signature",
+        "wrap"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "tax-free",
+      "choices": [
+        "免稅",
+        "收據",
+        "紙袋"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "wrap",
+      "choices": [
+        "包裝",
+        "簽名",
+        "批核"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個有 /l/？",
+      "choices": [
+        "contactless",
+        "cash",
+        "pay"
+      ],
+      "answer": 0,
+      "explain": "contactless 有 /l/。cash 尾係 /ʃ/。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "拍卡入面嗰個音",
+    "note": "contactless 有 /l/。舌尖抵住上顎後面，氣由兩邊出。cash 尾係 /ʃ/，唔好讀成 /s/。receipt 重音喺第二節。wrap 開頭唔出聲。",
+    "pairs": [
+      {
+        "a": "contactless-adj",
+        "b": "cash-noun"
+      },
+      {
+        "a": "bag-noun",
+        "b": "wrap-verb"
+      }
+    ],
+    "drill": [
+      "contactless-adj",
+      "receipt-noun",
+      "wrap-verb",
+      "cash-noun",
+      "signature-noun"
+    ]
+  },
+  "next": "T1"
+}

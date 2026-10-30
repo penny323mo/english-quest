@@ -17,3 +17,5 @@ ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/review-21.done
 
 
 DIFFICULTY PROGRESSION (Penny): audit/keep the Path strictly easy->hard (vocab load, sentence length, grammar, less Cantonese scaffolding). No difficulty ups-and-downs between consecutive lessons; no grammar used before taught. Any jump/dip = open item, blocks SHIP. Slot new lessons at the right level.
+
+GATE (coder): verify reviews/orch-r20-grok.md items 1–2 closed: CEFR monotonic along path order + SHIPPED/isLessonOpen, J4–J6 level fit. See prompts/orch-fix-20-addendum.txt.

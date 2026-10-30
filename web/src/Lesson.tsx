@@ -12,6 +12,7 @@ import {
   stopAudio,
   subscribeAudio,
 } from "./media";
+import { playSfx } from "./sfx";
 import { useStore } from "./store";
 import type { BuildOrder, Lesson, QuizItem } from "./types";
 
@@ -27,10 +28,13 @@ function tipFor(id: string): string {
   if (id === "J4") return "authentic 中間係 /θ/。白金唔係鉑金。玉只講材料，唔好講醫療功效。";
   if (id === "J5") return "loose 開頭係 /l/，尾音 /s/。tight 係太緊，fit 係啱唔啱。";
   if (id === "J6") return "sale 尾音係 /l/。discount 名詞重音喺第一節。cost 讀 /ˈkɑst/。";
+  if (id === "J7") return "contactless 有 /l/。receipt 重音喺第二節。wrap 開頭唔出聲。";
   if (id === "T1") return "sure、show 先係 /ʃ/。check-in 嘅 check 係 /tʃ/，前面有一粒塞音。";
   if (id === "T2") return "liquid、left、laptop 都有 /l/。straight 係 /eɪ/，唔好讀成 street。";
+  if (id === "T3") return "floor 同 late 都有 /l/。wifi 讀 /waɪ faɪ/。password 第二節係 /ɝ/。";
   if (id === "R1") return "美式 /r/ 舌尖唔好掂到上顎。table 本身冇 /r/。";
   if (id === "R2") return "Can I 入面 can 好輕，讀 /kən/。can't 先至係 /kænt/，有個清楚嘅 /t/。";
+  if (id === "R3") return "shellfish 有 /l/。allergic 重音喺中間。without 中間係清 /θ/。";
   return "跟住模範嘅口型，慢慢講。";
 }
 
@@ -75,6 +79,7 @@ function Player({ lesson }: { lesson: Lesson }) {
   const enqueue = useStore((s) => s.enqueueLemmas);
   const complete = useStore((s) => s.completeLesson);
   const saved = useRef(false);
+  const sheetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     preloadArt([
@@ -85,7 +90,8 @@ function Player({ lesson }: { lesson: Lesson }) {
 
   useEffect(() => {
     stopAudio();
-  }, [beat]);
+    sheetRef.current?.scrollTo(0, 0);
+  }, [beat, sub]);
 
   useEffect(() => {
     if (beat !== 10 || saved.current) return;
@@ -114,7 +120,7 @@ function Player({ lesson }: { lesson: Lesson }) {
         </div>
         <span className="beat-name">{BEATS[beat]}</span>
       </div>
-      <div className="sheet">
+      <div className="sheet" ref={sheetRef}>
         {beat === 0 && <Hook lesson={lesson} onNext={advance} />}
         {beat === 1 && <Goal lesson={lesson} onNext={advance} />}
         {beat === 2 && <Hear lesson={lesson} onNext={advance} />}
@@ -270,6 +276,7 @@ function Choices({
                 setPicked(i);
                 setDone(true);
                 onResult?.(i === answer);
+                playSfx(i === answer ? "correct" : "wrong");
               }}
             >
               {choice}
@@ -277,8 +284,12 @@ function Choices({
           );
         })}
       </div>
-      {done && explain && <p className="note">{explain}</p>}
-      {done && !explain && <p className="note">{picked === answer ? "啱。" : "記住呢個就得，唔使重來。"}</p>}
+      {done && (
+        <div className={`result-banner ${picked === answer ? "good" : "miss"}`} role="status">
+          <strong>{picked === answer ? "啱晒" : "差少少"}</strong>
+          <p>{explain || (picked === answer ? "啱。" : "記住呢個就得，唔使重來。")}</p>
+        </div>
+      )}
       {!done ? (
         <button className="btn ghost block" type="button" onClick={onNext}>跳過呢題</button>
       ) : (
@@ -373,14 +384,22 @@ function OrderBuild({ item, onNext }: { item: BuildOrder; onNext: () => void }) 
           )
         ))}
       </div>
-      {done && <p className="note" lang="en">{ok ? "順序啱。" : item.answer.join(" ")}</p>}
+      {done && (
+        <div className={`result-banner ${ok ? "good" : "miss"}`} role="status">
+          <strong>{ok ? "啱晒" : "差少少"}</strong>
+          <p lang="en">{ok ? "順序啱。" : item.answer.join(" ")}</p>
+        </div>
+      )}
       {!done ? (
         <div className="stack">
           <button
             className="btn block"
             type="button"
             disabled={built.length !== item.answer.length}
-            onClick={() => setDone(true)}
+            onClick={() => {
+              setDone(true);
+              playSfx(built.join(" ") === item.answer.join(" ") ? "correct" : "wrong");
+            }}
           >
             對一對
           </button>
@@ -543,14 +562,19 @@ function Sound({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
 
 function Recap({ lesson, score, onNext }: { lesson: Lesson; score: number; onNext: () => void }) {
   const profile = useStore((s) => s.profile);
+  useEffect(() => {
+    playSfx("complete");
+  }, []);
+  const accuracy = lesson.quiz.length ? Math.round((score / lesson.quiz.length) * 100) : 0;
   return (
     <>
       <div className="confetti" aria-hidden="true">
         <span /><span /><span /><span /><span />
       </div>
+      <img className="mascot cheer" src={asset("assets/art/mascot-cheer.webp")} alt="小燈" width={96} height={96} />
       <p className="who">放低今日</p>
       <h2>{lesson.canDoYue}</h2>
-      <p className="lede">小測 {score} / {lesson.quiz.length}。答錯唔會扣任何嘢，生字已經排咗入重溫。</p>
+      <p className="lede">小測 {score} / {lesson.quiz.length} · 準確 {accuracy}%。答錯唔會扣任何嘢，生字已經排咗入重溫。</p>
       {profile && <p className="kicker">連續 {profile.streak} 日 · {profile.xp} XP</p>}
       <div className="card-list">
         {lesson.lemmas.slice(0, 6).map((id) => {
@@ -564,7 +588,7 @@ function Recap({ lesson, score, onNext }: { lesson: Lesson; score: number; onNex
           );
         })}
       </div>
-      <button className="btn block" type="button" onClick={onNext}>睇下一課</button>
+      <button className="btn block" type="button" onClick={onNext}>下一課</button>
     </>
   );
 }
@@ -577,7 +601,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪十四課你行完啦。到期嘅卡會喺重溫等你。</p>
+        <p className="lede">呢輪十七課你行完啦。到期嘅卡會喺重溫等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );

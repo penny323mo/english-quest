@@ -57,7 +57,62 @@
         "reasonable-adj",
         "worth-adj",
         "deal-noun",
-        "sale-noun"
+        "sale-noun",
+        "pay-verb",
+        "card-noun",
+        "cash-noun",
+        "contactless-adj",
+        "receipt-noun",
+        "invoice-noun",
+        "tax-free-phrase",
+        "refund-form-phrase",
+        "bag-noun",
+        "wrap-verb",
+        "gift-box-phrase",
+        "signature-noun",
+        "approve-verb",
+        "decline-verb"
+      ]
+    },
+    {
+      "id": "restaurant",
+      "titleYue": "餐廳",
+      "level": "A2",
+      "lemmas": [
+        "allergy-noun",
+        "allergic-adj",
+        "peanut-noun",
+        "shellfish-noun",
+        "dairy-noun",
+        "gluten-noun",
+        "spicy-adj",
+        "sauce-noun",
+        "on-the-side-phrase",
+        "without-prep",
+        "instead-adv",
+        "contain-verb",
+        "ingredients-noun",
+        "carefully-adv",
+        "thank-you-for-telling-phrase"
+      ]
+    },
+    {
+      "id": "travel",
+      "titleYue": "酒店入住",
+      "level": "A2",
+      "lemmas": [
+        "key-card-phrase",
+        "room-noun",
+        "twin-noun",
+        "double-adj",
+        "view-noun",
+        "wifi-noun",
+        "password-noun",
+        "breakfast-noun",
+        "floor-noun",
+        "elevator-noun",
+        "late-checkout-phrase",
+        "wake-up-call-phrase"
       ]
     }
   ]

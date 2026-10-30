@@ -1,5 +1,14 @@
 # Changelog — English Quest
 
+## Round 20 fixes
+- The chrome is the light cartoon system: sky-to-cream screens, a teal path, chunky nodes, CEFR chips, 52px buttons, and white lesson sheets. 小燈 (a harbour lantern, not an owl) waves on the path and cheers on the lesson-complete screen. There is no `#58CC02`.
+- Sound effects are synthesized in the Web Audio API: a bright plink for a correct answer, a soft thud for a miss, a short fanfare when a lesson ends, a sparkle for XP, a warm blip for a streak, and a tiny click when a path node starts. Settings has a mute toggle, saved with the rest of the profile. Sound defaults to on. The audio context resumes on the first tap and never throws. Pronunciation clips take priority, so a sound effect waits while speech is playing.
+- J7 付款同退稅 (A2/B1), R3 過敏同特別要求 (A2), and T3 酒店入住 (A2) are full 12-beat lessons. J6 opens J7, then T1. T2 opens T3, then R1. R2 opens R3, and R3 ends the path. The end copy says 呢輪十七課. Soon teasers are J8 售後同保養, J9 投訴同退換, J10 加購同禮盒, T4–T6, and R4–R6 (nine). J8 is B1, matching the curriculum.
+- The jewellery deck now includes the payment words. New 生字 decks cover the restaurant allergy words and the hotel check-in words. Listen-choose and meaning-choose still grade those cards.
+- New clips only. Lead is about 180 ms and the trail is about 200 ms. allergic and password cards still show the CMU vowel ɝ; the Piper clips force ɜ because this voice has no ɝ. receipt, the refund-form noun stress, wifi, without, peanut, wrap, and on the side are forced to the card. refund’s verb stress, wifi’s wee-fee reading, and the /ɑn/ form of on stay flagged, not taught.
+- Hooks are new 900×1200 scenes: a counter with a card and a gift box, a table with the sauce set apart, and a hotel desk with a key card. No readable prices.
+- Tests are 13/13. At 390px the path, a lesson feedback sheet, the celebration, the 生字 card, settings, and the word page stay inside the phone, on the light background. Lighthouse mobile: performance 1, accessibility 1, best-practices 1, seo 1.
+
 ## Round 19 fixes
 - J4 金、銀、鑽石、玉 (A2), J5 尺寸同試戴 (A2), and J6 價錢同折扣 (A2/B1) are full 12-beat lessons. J3 opens J4, then J5, then J6, then T1. J7 收尾同道別, J8 售後同保養, J9 投訴同退換, T3–T5, and R3–R5 stay upcoming (nine soon teasers). The path end says 呢輪十四課.
 - resize is not in CMUdict, so this round teaches adjust instead and does not invent a pronunciation. comfortable is in CMUdict and is included (`/ˈkʌm.fɚ.tə.bəl/`).

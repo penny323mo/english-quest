@@ -14,7 +14,16 @@ import { isDue } from "./fsrs";
 import { ArtImg } from "./art";
 import { learnerEyebrow } from "./labels";
 import { playAsset } from "./media";
+import { playSfx } from "./sfx";
 import { useStore } from "./store";
+
+function cefrClass(cefr: string): string {
+  if (cefr.includes("B2")) return "b2";
+  if (cefr.includes("B1")) return "b1";
+  if (cefr.includes("A2")) return "a2";
+  return "a1";
+}
+
 export function PathHome() {
   const profile = useStore((s) => s.profile);
   const progress = useStore((s) => s.progress);
@@ -24,22 +33,18 @@ export function PathHome() {
   return (
     <section className="screen">
       <header className="mast">
-        <div>
+        <img className="mascot" src={asset("assets/art/mascot-wave.webp")} alt="小燈" width={72} height={72} />
+        <div className="mast-copy">
           <p className="eyebrow">今日 {profile.minutes} 分鐘</p>
           <h1>{profile.name}</h1>
-        </div>
-        <div className="stats">
-          <span>{profile.streak > 0 ? `連續 ${profile.streak} 日` : "完成一課就記低今日"}</span>
-          <span>{profile.xp} XP</span>
+          <div className="pills">
+            <span className="pill">{profile.streak > 0 ? `連續 ${profile.streak} 日` : "今日未打卡"}</span>
+            <span className="pill">{profile.xp} XP</span>
+            <span className="pill">{GOAL_LABEL[profile.goal]}</span>
+          </div>
+          <p className="fine">{done} / {SHIPPED.length} 課完成。冇紅心，錯過咗聽日再嚟就得。</p>
         </div>
       </header>
-      <figure className="cover">
-        <ArtImg src={asset("assets/art/cover.webp")} alt="夜海旁嘅珠寶店" width={864} height={1152} />
-        <figcaption>
-          <p className="kicker">{GOAL_LABEL[profile.goal]}</p>
-          <p>{done} / {SHIPPED.length} 課完成。冇紅心，錯過咗聽日再嚟就得。</p>
-        </figcaption>
-      </figure>
       <div className="row-btns">
         <a className="btn ghost" href="#/vocab">生字</a>
       </div>
@@ -67,7 +72,7 @@ export function PathHome() {
                     )}
                   </span>
                   <span className="node-copy">
-                    {cefr && <span className="cefr">{cefr}</span>}
+                    {cefr && <span className={`cefr ${cefrClass(cefr)}`}>{cefr}</span>}
                     <strong>{title}</strong>
                     <em lang="en">{en}</em>
                     {recommended === entry.id ? (
@@ -87,7 +92,7 @@ export function PathHome() {
               const cls = `path-node ${state} ${index % 2 ? "even" : "odd"}`;
               if (open && lesson) {
                 return (
-                  <a key={entry.id} className={cls} href={`#/lesson/${lesson.id}`}>
+                  <a key={entry.id} className={cls} href={`#/lesson/${lesson.id}`} onClick={() => playSfx("tap")}>
                     {body}
                   </a>
                 );
@@ -212,6 +217,7 @@ export function Words() {
 export function WordDetail({ id }: { id: string }) {
   const item = lexById[id];
   const jyutping = useStore((s) => s.profile?.jyutping);
+  const [more, setMore] = useState(false);
   if (!item) {
     return (
       <section className="screen plain">
@@ -236,6 +242,31 @@ export function WordDetail({ id }: { id: string }) {
         <button className="btn ghost" type="button" onClick={() => playAsset(item.audioSlow)}>慢速</button>
       </div>
       {item.note && <p className="note">{item.note}</p>}
+      <button className="btn ghost block" type="button" onClick={() => setMore((open) => !open)}>
+        {more ? "收起" : "更多"}
+      </button>
+      {more && item.usageNotes && <p className="note">{item.usageNotes}</p>}
+      {more && item.pitfallsYue && <p className="note">{item.pitfallsYue}</p>}
+      {more && item.examples?.slice(1).map((example) => (
+        <div key={example.en} className="stack">
+          <p lang="en">{example.en}</p>
+          <p className="gloss">{example.yue}</p>
+          <button className="btn quiet" type="button" onClick={() => playAsset(example.audio)}>聽例句</button>
+        </div>
+      ))}
+      {more && item.related && item.related.length > 0 && (
+        <p className="fine">
+          相關：
+          {item.related.map((relatedId) => {
+            const related = lexById[relatedId];
+            if (!related) return null;
+            return <a key={relatedId} href={`#/word/${relatedId}`} lang="en"> {related.lemma}</a>;
+          })}
+        </p>
+      )}
+      {more && item.miniDialogue?.map((turn) => (
+        <p key={turn.en} className="lede"><span lang="en">{turn.en}</span><span className="gloss"> {turn.yue}</span></p>
+      ))}
       {item.variants.length > 0 && <p className="fine">其他讀法：{item.variants.join("、")}</p>}
       {item.collocations.length > 0 && (
         <p className="fine" lang="en">搭配：{item.collocations.join(" · ")}</p>
@@ -298,6 +329,11 @@ export function Settings() {
         <input type="checkbox" checked={profile.jyutping} onChange={(e) => update({ jyutping: e.target.checked })} />
       </label>
       <p className="fine">粵拼只標中文，唔會用來教英文發音。</p>
+      <label className="toggle">
+        <span>音效</span>
+        <input type="checkbox" checked={profile.sound !== false} onChange={(e) => update({ sound: e.target.checked })} />
+      </label>
+      <p className="fine">正確、錯誤、完成同連擊都有短音。發音朗讀播放嗰陣會讓路。關掉就完全靜音。</p>
       {!armed ? (
         <button className="btn ghost block" type="button" onClick={() => setArmed(true)}>清除呢部機嘅進度</button>
       ) : (

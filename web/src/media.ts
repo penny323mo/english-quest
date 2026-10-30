@@ -1,51 +1,16 @@
+import { audioElement, audioSnapshot, speechActive, stopAudio, subscribeAudio } from "./audio-element";
 import { asset } from "./data";
 
-let el: HTMLAudioElement | null = null;
-const listeners = new Set<() => void>();
-
-function audio(): HTMLAudioElement {
-  if (!el) {
-    el = new Audio();
-    el.preload = "none";
-    const ping = () => listeners.forEach((fn) => fn());
-    el.addEventListener("timeupdate", ping);
-    el.addEventListener("ended", ping);
-    el.addEventListener("pause", ping);
-    el.addEventListener("playing", ping);
-    el.addEventListener("error", ping);
-  }
-  return el;
-}
-
-export function subscribeAudio(fn: () => void): () => void {
-  listeners.add(fn);
-  return () => listeners.delete(fn);
-}
+export { audioSnapshot, speechActive, stopAudio, subscribeAudio };
 
 export function playAsset(path: string): HTMLAudioElement {
-  const node = audio();
+  const node = audioElement();
   node.src = asset(path);
   node.playbackRate = 1;
   void node.play().catch(() => {
     /* Autoplay can still reject if the gesture was lost. The button stays. */
   });
   return node;
-}
-
-export function stopAudio() {
-  if (!el) return;
-  el.pause();
-  el.currentTime = 0;
-}
-
-export function audioSnapshot(): { src: string; time: number; duration: number; paused: boolean } {
-  const node = audio();
-  return {
-    src: node.currentSrc || node.src || "",
-    time: node.currentTime || 0,
-    duration: Number.isFinite(node.duration) ? node.duration : 0,
-    paused: node.paused,
-  };
 }
 
 export function absAsset(path: string): string {
@@ -81,5 +46,5 @@ export function recorderMime(): string {
 
 export function keywordHits(transcript: string, keywords: string[]): string[] {
   const hay = transcript.toLowerCase();
-  return keywords.filter((k) => hay.includes(k.toLowerCase()));
+  return keywords.filter((word) => hay.includes(word.toLowerCase()));
 }

@@ -11931,6 +11931,2591 @@
           "say": "The earrings are on sale."
         }
       ]
+    },
+    {
+      "id": "pay-verb",
+      "lemma": "pay",
+      "pos": "verb",
+      "senseId": "settle",
+      "ipa": "/ˈpeɪ/",
+      "syllables": [
+        "pay"
+      ],
+      "syllableIpa": [
+        "ˈpeɪ"
+      ],
+      "stress": 1,
+      "arpabet": "P EY1",
+      "audio": "assets/audio/words/pay-verb.mp3",
+      "audioSlow": "assets/audio/words/pay-verb-slow.mp3",
+      "glossYue": "付款",
+      "glossZh": "付款",
+      "jyutping": "fuk6 fun2",
+      "collocations": [
+        "pay by card"
+      ],
+      "example": "Would you like to pay by card?",
+      "exampleYue": "你想唔想用卡付款？",
+      "say": "Would you like to pay by card?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "pay",
+      "phrase": false,
+      "audioSha256": "c78a7d2fe5cd66ecab9be6ca6d8b37418c7e543237cbad84dfefa7c2ac03d33e",
+      "register": "櫃檯",
+      "usageNotes": "Would you like to pay by card?",
+      "pitfallsYue": "pay 係付款。唔好讀成 /pe/。",
+      "related": [
+        "card-noun",
+        "cash-noun"
+      ],
+      "miniDialogue": [
+        {
+          "en": "Would you like to pay by card?",
+          "yue": "你想唔想用卡付款？"
+        },
+        {
+          "en": "Yes, please.",
+          "yue": "好，唔該。"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Would you like to pay by card?",
+          "yue": "你想唔想用卡付款？",
+          "audio": "assets/audio/words/pay-verb.mp3",
+          "audioSlow": "assets/audio/words/pay-verb-slow.mp3",
+          "say": "Would you like to pay by card?"
+        },
+        {
+          "en": "Could I pay by card?",
+          "yue": "可唔可以畀我用卡付款？",
+          "audio": "assets/audio/words/pay-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/pay-verb-ex2-slow.mp3",
+          "say": "Could I pay by card?"
+        }
+      ]
+    },
+    {
+      "id": "card-noun",
+      "lemma": "card",
+      "pos": "noun",
+      "senseId": "payment-card",
+      "ipa": "/ˈkɑɹd/",
+      "syllables": [
+        "card"
+      ],
+      "syllableIpa": [
+        "ˈkɑɹd"
+      ],
+      "stress": 1,
+      "arpabet": "K AA1 R D",
+      "audio": "assets/audio/words/card-noun.mp3",
+      "audioSlow": "assets/audio/words/card-noun-slow.mp3",
+      "glossYue": "卡",
+      "glossZh": "卡",
+      "jyutping": "kaat1",
+      "collocations": [
+        "pay by card",
+        "a card"
+      ],
+      "example": "I will pay by card.",
+      "exampleYue": "我會用卡付款。",
+      "say": "I will pay by card.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "card",
+      "phrase": false,
+      "audioSha256": "6014d3a57d02a602e111466061759d9b22520ebf526fbad05263df83d99cf928",
+      "register": "櫃檯",
+      "usageNotes": "pay by card。",
+      "pitfallsYue": "card 呢度係付款卡。名片先至係 name card。",
+      "related": [
+        "pay-verb",
+        "contactless-adj"
+      ],
+      "examples": [
+        {
+          "en": "I will pay by card.",
+          "yue": "我會用卡付款。",
+          "audio": "assets/audio/words/card-noun.mp3",
+          "audioSlow": "assets/audio/words/card-noun-slow.mp3",
+          "say": "I will pay by card."
+        },
+        {
+          "en": "The card payment is ready.",
+          "yue": "卡付款已經準備好。",
+          "audio": "assets/audio/words/card-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/card-noun-ex2-slow.mp3",
+          "say": "The card payment is ready."
+        }
+      ]
+    },
+    {
+      "id": "cash-noun",
+      "lemma": "cash",
+      "pos": "noun",
+      "senseId": "notes",
+      "ipa": "/ˈkæʃ/",
+      "syllables": [
+        "cash"
+      ],
+      "syllableIpa": [
+        "ˈkæʃ"
+      ],
+      "stress": 1,
+      "arpabet": "K AE1 SH",
+      "audio": "assets/audio/words/cash-noun.mp3",
+      "audioSlow": "assets/audio/words/cash-noun-slow.mp3",
+      "glossYue": "現金",
+      "glossZh": "现金",
+      "jyutping": "jin6 gam1",
+      "collocations": [
+        "pay with cash"
+      ],
+      "example": "I can pay with cash.",
+      "exampleYue": "我可以用現金付款。",
+      "say": "I can pay with cash.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "cash",
+      "phrase": false,
+      "audioSha256": "2a0888b9f5ed6d5d5b3d5580dce0ff2dc08dc2b606021a9ebd94ba7593215e25",
+      "register": "櫃檯",
+      "usageNotes": "pay with cash。",
+      "pitfallsYue": "cash 尾係 /ʃ/，唔好讀成 /s/。",
+      "related": [
+        "pay-verb",
+        "receipt-noun"
+      ],
+      "examples": [
+        {
+          "en": "I can pay with cash.",
+          "yue": "我可以用現金付款。",
+          "audio": "assets/audio/words/cash-noun.mp3",
+          "audioSlow": "assets/audio/words/cash-noun-slow.mp3",
+          "say": "I can pay with cash."
+        },
+        {
+          "en": "I do not have cash today.",
+          "yue": "我今日冇帶現金。",
+          "audio": "assets/audio/words/cash-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/cash-noun-ex2-slow.mp3",
+          "say": "I do not have cash today."
+        }
+      ]
+    },
+    {
+      "id": "contactless-adj",
+      "lemma": "contactless",
+      "pos": "adj",
+      "senseId": "tap-pay",
+      "ipa": "/ˈkɑ.ntæ.ˌktlɛs/",
+      "syllables": [
+        "con",
+        "tact",
+        "less"
+      ],
+      "syllableIpa": [
+        "ˈkɑ",
+        "ntæ",
+        "ˌktlɛs"
+      ],
+      "stress": 1,
+      "arpabet": "K AA1 N T AE0 K T L EH2 S",
+      "audio": "assets/audio/words/contactless-adj.mp3",
+      "audioSlow": "assets/audio/words/contactless-adj-slow.mp3",
+      "glossYue": "免接觸",
+      "glossZh": "免接触",
+      "jyutping": "min5 zip3 zuk1",
+      "collocations": [
+        "contactless pay"
+      ],
+      "example": "Contactless pay is ready.",
+      "exampleYue": "可以拍卡付款。",
+      "say": "Contactless pay is ready.",
+      "variants": [],
+      "note": "中間有 /l/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "contactless",
+      "phrase": false,
+      "audioSha256": "a8e0864a1c7ee8785a710278ba07d55cfafc137869049c2046228846f6b05daf",
+      "register": "櫃檯",
+      "usageNotes": "contactless pay。",
+      "pitfallsYue": "中間有 /l/。拍卡就得，唔使插卡。",
+      "related": [
+        "card-noun",
+        "pay-verb"
+      ],
+      "examples": [
+        {
+          "en": "Contactless pay is ready.",
+          "yue": "可以拍卡付款。",
+          "audio": "assets/audio/words/contactless-adj.mp3",
+          "audioSlow": "assets/audio/words/contactless-adj-slow.mp3",
+          "say": "Contactless pay is ready."
+        },
+        {
+          "en": "Contactless pay is ready now.",
+          "yue": "而家可以拍卡付款。",
+          "audio": "assets/audio/words/contactless-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/contactless-adj-ex2-slow.mp3",
+          "say": "Contactless pay is ready now."
+        }
+      ]
+    },
+    {
+      "id": "receipt-noun",
+      "lemma": "receipt",
+      "pos": "noun",
+      "senseId": "proof",
+      "ipa": "/ɹɪ.ˈsit/",
+      "syllables": [
+        "re",
+        "ceipt"
+      ],
+      "syllableIpa": [
+        "ɹɪ",
+        "ˈsit"
+      ],
+      "stress": 2,
+      "arpabet": "R IH0 S IY1 T",
+      "audio": "assets/audio/words/receipt-noun.mp3",
+      "audioSlow": "assets/audio/words/receipt-noun-slow.mp3",
+      "glossYue": "收據",
+      "glossZh": "收据",
+      "jyutping": "sau1 geoi3",
+      "collocations": [
+        "a receipt"
+      ],
+      "example": "Here is your receipt.",
+      "exampleYue": "呢張係你張收據。",
+      "say": "Here is your [[ɹɪsˈit]].",
+      "variants": [],
+      "note": "重音喺第二節。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "receipt",
+      "phrase": false,
+      "audioSha256": "88a939303771b506e47b3269a304cdd0b36c84ea3c7c0e6a1fd5911243464020",
+      "register": "櫃檯",
+      "usageNotes": "Here is your receipt.",
+      "pitfallsYue": "重音喺第二節。唔好讀成開頭重音。",
+      "related": [
+        "invoice-noun",
+        "signature-noun"
+      ],
+      "examples": [
+        {
+          "en": "Here is your receipt.",
+          "yue": "呢張係你張收據。",
+          "audio": "assets/audio/words/receipt-noun.mp3",
+          "audioSlow": "assets/audio/words/receipt-noun-slow.mp3",
+          "say": "Here is your [[ɹɪsˈit]]."
+        },
+        {
+          "en": "Please keep this receipt.",
+          "yue": "請留低呢張收據。",
+          "audio": "assets/audio/words/receipt-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/receipt-noun-ex2-slow.mp3",
+          "say": "Please keep this [[ɹɪsˈit]]."
+        }
+      ]
+    },
+    {
+      "id": "invoice-noun",
+      "lemma": "invoice",
+      "pos": "noun",
+      "senseId": "bill-doc",
+      "ipa": "/ˈɪn.vɔɪs/",
+      "syllables": [
+        "in",
+        "voice"
+      ],
+      "syllableIpa": [
+        "ˈɪn",
+        "vɔɪs"
+      ],
+      "stress": 1,
+      "arpabet": "IH1 N V OY0 S",
+      "audio": "assets/audio/words/invoice-noun.mp3",
+      "audioSlow": "assets/audio/words/invoice-noun-slow.mp3",
+      "glossYue": "發票",
+      "glossZh": "发票",
+      "jyutping": "faat3 piu3",
+      "collocations": [
+        "an invoice"
+      ],
+      "example": "I need an invoice.",
+      "exampleYue": "我需要一張發票。",
+      "say": "I need an invoice.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "invoice",
+      "phrase": false,
+      "audioSha256": "6d359576b88f982efb6ccff1346c4c3b6a33f57bcb070d8c7349dfa1bcb0fc75",
+      "register": "櫃檯",
+      "usageNotes": "I need an invoice.",
+      "pitfallsYue": "發票先至係 invoice。收據先至係 receipt。",
+      "related": [
+        "receipt-noun",
+        "tax-free-phrase"
+      ],
+      "examples": [
+        {
+          "en": "I need an invoice.",
+          "yue": "我需要一張發票。",
+          "audio": "assets/audio/words/invoice-noun.mp3",
+          "audioSlow": "assets/audio/words/invoice-noun-slow.mp3",
+          "say": "I need an invoice."
+        },
+        {
+          "en": "The invoice includes the total.",
+          "yue": "發票有寫總數。",
+          "audio": "assets/audio/words/invoice-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/invoice-noun-ex2-slow.mp3",
+          "say": "The invoice includes the total."
+        }
+      ]
+    },
+    {
+      "id": "tax-free-phrase",
+      "lemma": "tax-free",
+      "pos": "phrase",
+      "senseId": "no-tax",
+      "ipa": "/ˈtæks ˈfɹi/",
+      "syllables": [
+        "tax",
+        "free"
+      ],
+      "syllableIpa": [
+        "ˈtæks",
+        "ˈfɹi"
+      ],
+      "stress": 1,
+      "arpabet": "T AE1 K S F R IY1",
+      "audio": "assets/audio/words/tax-free-phrase.mp3",
+      "audioSlow": "assets/audio/words/tax-free-phrase-slow.mp3",
+      "glossYue": "免稅",
+      "glossZh": "免税",
+      "jyutping": "min5 seoi3",
+      "collocations": [
+        "tax-free shopping"
+      ],
+      "example": "This purchase is tax-free.",
+      "exampleYue": "呢單可以免稅。",
+      "say": "This purchase is tax-free.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "tax-free",
+      "phrase": true,
+      "audioSha256": "25ef4ecd3a589f090e9304e4ef3055837264b1396dd42c5369b03d1142d18d8c",
+      "register": "櫃檯",
+      "usageNotes": "This purchase is tax-free.",
+      "pitfallsYue": "免稅係 tax-free。稅包咗先至係 tax included。",
+      "related": [
+        "receipt-noun",
+        "passport-noun"
+      ],
+      "examples": [
+        {
+          "en": "This purchase is tax-free.",
+          "yue": "呢單可以免稅。",
+          "audio": "assets/audio/words/tax-free-phrase.mp3",
+          "audioSlow": "assets/audio/words/tax-free-phrase-slow.mp3",
+          "say": "This purchase is tax-free."
+        },
+        {
+          "en": "Tax-free needs your passport.",
+          "yue": "免稅要睇你本護照。",
+          "audio": "assets/audio/words/tax-free-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/tax-free-phrase-ex2-slow.mp3",
+          "say": "Tax-free needs your passport."
+        }
+      ]
+    },
+    {
+      "id": "refund-form-phrase",
+      "lemma": "refund form",
+      "pos": "phrase",
+      "senseId": "return-paper",
+      "ipa": "/ˈɹi.ˌfʌnd ˈfɔɹm/",
+      "syllables": [
+        "re",
+        "fund",
+        "form"
+      ],
+      "syllableIpa": [
+        "ˈɹi",
+        "ˌfʌnd",
+        "ˈfɔɹm"
+      ],
+      "stress": 1,
+      "arpabet": "R IY1 F AH2 N D F AO1 R M",
+      "audio": "assets/audio/words/refund-form-phrase.mp3",
+      "audioSlow": "assets/audio/words/refund-form-phrase-slow.mp3",
+      "glossYue": "退款表格",
+      "glossZh": "退款表格",
+      "jyutping": "teoi3 fun2 biu2 gaak3",
+      "collocations": [
+        "sign the refund form"
+      ],
+      "example": "Please sign the refund form.",
+      "exampleYue": "請簽呢張退款表格。",
+      "say": "Please sign the [[ɹˈifˌʌnd]] form.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "refund form",
+      "phrase": true,
+      "audioSha256": "fe0b2296fa953040f0711c6edc68fcde9b6befefeef4647d9fb10cd4d53fcb8e",
+      "register": "櫃檯",
+      "usageNotes": "Please sign the refund form.",
+      "pitfallsYue": "refund 呢度係名詞，重音喺第一節。動詞先至係第二節重音。",
+      "related": [
+        "signature-noun",
+        "receipt-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please sign the refund form.",
+          "yue": "請簽呢張退款表格。",
+          "audio": "assets/audio/words/refund-form-phrase.mp3",
+          "audioSlow": "assets/audio/words/refund-form-phrase-slow.mp3",
+          "say": "Please sign the [[ɹˈifˌʌnd]] form."
+        },
+        {
+          "en": "The refund form is on the counter.",
+          "yue": "退款表格喺櫃檯上面。",
+          "audio": "assets/audio/words/refund-form-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/refund-form-phrase-ex2-slow.mp3",
+          "say": "The [[ɹˈifˌʌnd]] form is on the counter."
+        }
+      ]
+    },
+    {
+      "id": "bag-noun",
+      "lemma": "bag",
+      "pos": "noun",
+      "senseId": "carrier",
+      "ipa": "/ˈbæɡ/",
+      "syllables": [
+        "bag"
+      ],
+      "syllableIpa": [
+        "ˈbæɡ"
+      ],
+      "stress": 1,
+      "arpabet": "B AE1 G",
+      "audio": "assets/audio/words/bag-noun.mp3",
+      "audioSlow": "assets/audio/words/bag-noun-slow.mp3",
+      "glossYue": "袋",
+      "glossZh": "袋",
+      "jyutping": "doi2",
+      "collocations": [
+        "a paper bag"
+      ],
+      "example": "I need a paper bag.",
+      "exampleYue": "我要一個紙袋。",
+      "say": "I need a paper bag.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "bag",
+      "phrase": false,
+      "audioSha256": "d351c5b507c2656be58fab32c6cb81661d592b77133e10694bf2156248f0597f",
+      "register": "櫃檯",
+      "usageNotes": "a paper bag。",
+      "pitfallsYue": "紙袋係 bag。行李先至係 luggage。",
+      "related": [
+        "wrap-verb",
+        "gift-box-phrase"
+      ],
+      "examples": [
+        {
+          "en": "I need a paper bag.",
+          "yue": "我要一個紙袋。",
+          "audio": "assets/audio/words/bag-noun.mp3",
+          "audioSlow": "assets/audio/words/bag-noun-slow.mp3",
+          "say": "I need a paper bag."
+        },
+        {
+          "en": "Would you like a paper bag?",
+          "yue": "你要唔要一個紙袋？",
+          "audio": "assets/audio/words/bag-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/bag-noun-ex2-slow.mp3",
+          "say": "Would you like a paper bag?"
+        }
+      ]
+    },
+    {
+      "id": "wrap-verb",
+      "lemma": "wrap",
+      "pos": "verb",
+      "senseId": "cover-gift",
+      "ipa": "/ˈɹæp/",
+      "syllables": [
+        "wrap"
+      ],
+      "syllableIpa": [
+        "ˈɹæp"
+      ],
+      "stress": 1,
+      "arpabet": "R AE1 P",
+      "audio": "assets/audio/words/wrap-verb.mp3",
+      "audioSlow": "assets/audio/words/wrap-verb-slow.mp3",
+      "glossYue": "包裝",
+      "glossZh": "包装",
+      "jyutping": "baau1 zong1",
+      "collocations": [
+        "wrap the gift"
+      ],
+      "example": "I can wrap the gift.",
+      "exampleYue": "我可以包裝份禮物。",
+      "say": "I can [[ɹˈæp]] the gift.",
+      "variants": [],
+      "note": "開頭 w 唔出聲。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "wrap",
+      "phrase": false,
+      "audioSha256": "921ac8875a283c7869f2bcd0fe765850c89aa52611771ea5cb9a7a9d12fb7491",
+      "register": "櫃檯",
+      "usageNotes": "I can wrap the gift.",
+      "pitfallsYue": "開頭 w 唔出聲。",
+      "related": [
+        "gift-box-phrase",
+        "bag-noun"
+      ],
+      "examples": [
+        {
+          "en": "I can wrap the gift.",
+          "yue": "我可以包裝份禮物。",
+          "audio": "assets/audio/words/wrap-verb.mp3",
+          "audioSlow": "assets/audio/words/wrap-verb-slow.mp3",
+          "say": "I can [[ɹˈæp]] the gift."
+        },
+        {
+          "en": "Please wrap this gift.",
+          "yue": "請包裝呢份禮物。",
+          "audio": "assets/audio/words/wrap-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/wrap-verb-ex2-slow.mp3",
+          "say": "Please [[ɹˈæp]] this gift."
+        }
+      ]
+    },
+    {
+      "id": "gift-box-phrase",
+      "lemma": "gift box",
+      "pos": "phrase",
+      "senseId": "present-box",
+      "ipa": "/ˈɡɪft ˈbɑks/",
+      "syllables": [
+        "gift",
+        "box"
+      ],
+      "syllableIpa": [
+        "ˈɡɪft",
+        "ˈbɑks"
+      ],
+      "stress": 1,
+      "arpabet": "G IH1 F T B AA1 K S",
+      "audio": "assets/audio/words/gift-box-phrase.mp3",
+      "audioSlow": "assets/audio/words/gift-box-phrase-slow.mp3",
+      "glossYue": "禮盒",
+      "glossZh": "礼盒",
+      "jyutping": "lai5 hap6",
+      "collocations": [
+        "a gift box"
+      ],
+      "example": "This gift box is ready.",
+      "exampleYue": "呢個禮盒預備好。",
+      "say": "This gift box is ready.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "gift box",
+      "phrase": true,
+      "audioSha256": "eba5b365750f1544c9d0eb3e5334d25ff9dfe35202b35fda2ec8c790e42e77dc",
+      "register": "櫃檯",
+      "usageNotes": "a gift box。",
+      "pitfallsYue": "禮盒係 gift box。包裝個動作先至係 wrap。",
+      "related": [
+        "wrap-verb",
+        "bag-noun"
+      ],
+      "examples": [
+        {
+          "en": "This gift box is ready.",
+          "yue": "呢個禮盒預備好。",
+          "audio": "assets/audio/words/gift-box-phrase.mp3",
+          "audioSlow": "assets/audio/words/gift-box-phrase-slow.mp3",
+          "say": "This gift box is ready."
+        },
+        {
+          "en": "The gift box is ready.",
+          "yue": "禮盒已經預備好。",
+          "audio": "assets/audio/words/gift-box-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/gift-box-phrase-ex2-slow.mp3",
+          "say": "The gift box is ready."
+        }
+      ]
+    },
+    {
+      "id": "signature-noun",
+      "lemma": "signature",
+      "pos": "noun",
+      "senseId": "signed-name",
+      "ipa": "/ˈsɪɡ.nə.tʃɚ/",
+      "syllables": [
+        "sig",
+        "na",
+        "ture"
+      ],
+      "syllableIpa": [
+        "ˈsɪɡ",
+        "nə",
+        "tʃɚ"
+      ],
+      "stress": 1,
+      "arpabet": "S IH1 G N AH0 CH ER0",
+      "audio": "assets/audio/words/signature-noun.mp3",
+      "audioSlow": "assets/audio/words/signature-noun-slow.mp3",
+      "glossYue": "簽名",
+      "glossZh": "签名",
+      "jyutping": "cim1 meng2",
+      "collocations": [
+        "your signature"
+      ],
+      "example": "I need your signature.",
+      "exampleYue": "我需要你簽名。",
+      "say": "I need your signature.",
+      "variants": [],
+      "note": "三音節，尾係 /ɚ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "signature",
+      "phrase": false,
+      "audioSha256": "c953b8068391ef9e5f931fb25d88778a3289b156c2f516ce2ccbc0ee0ede04db",
+      "register": "櫃檯",
+      "usageNotes": "I need your signature.",
+      "pitfallsYue": "三音節。簽名係 signature。收據先至係 receipt。",
+      "related": [
+        "receipt-noun",
+        "approve-verb"
+      ],
+      "examples": [
+        {
+          "en": "I need your signature.",
+          "yue": "我需要你簽名。",
+          "audio": "assets/audio/words/signature-noun.mp3",
+          "audioSlow": "assets/audio/words/signature-noun-slow.mp3",
+          "say": "I need your signature."
+        },
+        {
+          "en": "Your signature goes here.",
+          "yue": "簽名簽喺呢度。",
+          "audio": "assets/audio/words/signature-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/signature-noun-ex2-slow.mp3",
+          "say": "Your signature goes here."
+        }
+      ]
+    },
+    {
+      "id": "approve-verb",
+      "lemma": "approve",
+      "pos": "verb",
+      "senseId": "accept-pay",
+      "ipa": "/ə.ˈpɹuv/",
+      "syllables": [
+        "ap",
+        "prove"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈpɹuv"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 P R UW1 V",
+      "audio": "assets/audio/words/approve-verb.mp3",
+      "audioSlow": "assets/audio/words/approve-verb-slow.mp3",
+      "glossYue": "批核",
+      "glossZh": "批核",
+      "jyutping": "pai1 hat6",
+      "collocations": [
+        "approve the payment"
+      ],
+      "example": "The bank will approve the payment.",
+      "exampleYue": "銀行會批核呢筆付款。",
+      "say": "The bank will approve the payment.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "approve",
+      "phrase": false,
+      "audioSha256": "b5e4323b7a839df076c920f92e1125e8fa2b2e4b98201ebd45bf6dd75a1efc39",
+      "register": "櫃檯",
+      "usageNotes": "approve the payment。",
+      "pitfallsYue": "重音喺第二節。批核先至係 approve。",
+      "related": [
+        "decline-verb",
+        "card-noun"
+      ],
+      "examples": [
+        {
+          "en": "The bank will approve the payment.",
+          "yue": "銀行會批核呢筆付款。",
+          "audio": "assets/audio/words/approve-verb.mp3",
+          "audioSlow": "assets/audio/words/approve-verb-slow.mp3",
+          "say": "The bank will approve the payment."
+        },
+        {
+          "en": "The bank did not approve it.",
+          "yue": "銀行未批核呢筆付款。",
+          "audio": "assets/audio/words/approve-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/approve-verb-ex2-slow.mp3",
+          "say": "The bank did not approve it."
+        }
+      ]
+    },
+    {
+      "id": "decline-verb",
+      "lemma": "decline",
+      "pos": "verb",
+      "senseId": "refuse-pay",
+      "ipa": "/dɪ.ˈklaɪn/",
+      "syllables": [
+        "de",
+        "cline"
+      ],
+      "syllableIpa": [
+        "dɪ",
+        "ˈklaɪn"
+      ],
+      "stress": 2,
+      "arpabet": "D IH0 K L AY1 N",
+      "audio": "assets/audio/words/decline-verb.mp3",
+      "audioSlow": "assets/audio/words/decline-verb-slow.mp3",
+      "glossYue": "拒絕",
+      "glossZh": "拒绝",
+      "jyutping": "keoi5 zyut6",
+      "collocations": [
+        "decline the offer"
+      ],
+      "example": "I will decline the offer.",
+      "exampleYue": "我會拒絕呢個提議。",
+      "say": "I will decline the offer.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "decline",
+      "phrase": false,
+      "audioSha256": "527ecc74883cf324de3ab62a83808f01097175c5b3a9845a954b81ed95c5991f",
+      "register": "櫃檯",
+      "usageNotes": "decline the payment。",
+      "pitfallsYue": "重音喺第二節。拒絕付款先用 decline。",
+      "related": [
+        "approve-verb",
+        "card-noun"
+      ],
+      "examples": [
+        {
+          "en": "I will decline the offer.",
+          "yue": "我會拒絕呢個提議。",
+          "audio": "assets/audio/words/decline-verb.mp3",
+          "audioSlow": "assets/audio/words/decline-verb-slow.mp3",
+          "say": "I will decline the offer."
+        },
+        {
+          "en": "I will decline this offer.",
+          "yue": "我會拒絕呢個提議。",
+          "audio": "assets/audio/words/decline-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/decline-verb-ex2-slow.mp3",
+          "say": "I will decline this offer."
+        }
+      ]
+    },
+    {
+      "id": "allergy-noun",
+      "lemma": "allergy",
+      "pos": "noun",
+      "senseId": "food-reaction",
+      "ipa": "/ˈæ.lɚ.dʒi/",
+      "syllables": [
+        "al",
+        "ler",
+        "gy"
+      ],
+      "syllableIpa": [
+        "ˈæ",
+        "lɚ",
+        "dʒi"
+      ],
+      "stress": 1,
+      "arpabet": "AE1 L ER0 JH IY0",
+      "audio": "assets/audio/words/allergy-noun.mp3",
+      "audioSlow": "assets/audio/words/allergy-noun-slow.mp3",
+      "glossYue": "過敏",
+      "glossZh": "过敏",
+      "jyutping": "gwo3 man5",
+      "collocations": [
+        "a food allergy"
+      ],
+      "example": "I have a food allergy.",
+      "exampleYue": "我有食物過敏。",
+      "say": "I have a food allergy.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "allergy",
+      "phrase": false,
+      "audioSha256": "d40b6269b3a21c7d5b8df5c937292d9ec6a479f0984f177527e7f7a3182f30e3",
+      "register": "餐廳",
+      "usageNotes": "I have a food allergy.",
+      "pitfallsYue": "名詞 allergy 重音喺第一節。形容詞先至係 allergic。",
+      "related": [
+        "allergic-adj",
+        "peanut-noun"
+      ],
+      "examples": [
+        {
+          "en": "I have a food allergy.",
+          "yue": "我有食物過敏。",
+          "audio": "assets/audio/words/allergy-noun.mp3",
+          "audioSlow": "assets/audio/words/allergy-noun-slow.mp3",
+          "say": "I have a food allergy."
+        },
+        {
+          "en": "Please tell me about any allergy.",
+          "yue": "有過敏就話我知。",
+          "audio": "assets/audio/words/allergy-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/allergy-noun-ex2-slow.mp3",
+          "say": "Please tell me about any allergy."
+        }
+      ]
+    },
+    {
+      "id": "allergic-adj",
+      "lemma": "allergic",
+      "pos": "adj",
+      "senseId": "food-reaction",
+      "ipa": "/ə.ˈlɝ.dʒɪk/",
+      "syllables": [
+        "al",
+        "ler",
+        "gic"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈlɝ",
+        "dʒɪk"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 L ER1 JH IH0 K",
+      "audio": "assets/audio/words/allergic-adj.mp3",
+      "audioSlow": "assets/audio/words/allergic-adj-slow.mp3",
+      "glossYue": "過敏",
+      "glossZh": "过敏",
+      "jyutping": "gwo3 man5",
+      "collocations": [
+        "allergic to peanuts"
+      ],
+      "example": "I am allergic to peanuts.",
+      "exampleYue": "我對花生過敏。",
+      "say": "I am [[əlˈɜdʒɪk]] to peanuts.",
+      "variants": [],
+      "note": "重音喺中間 /ɝ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "allergic",
+      "phrase": false,
+      "audioSha256": "9f2cebde4d9556eacdea7a7dff53ca6a627745611206170b67db76eceff03275",
+      "register": "餐廳",
+      "usageNotes": "I am allergic to peanuts.",
+      "pitfallsYue": "重音喺中間。後面用 to。",
+      "related": [
+        "allergy-noun",
+        "peanut-noun"
+      ],
+      "miniDialogue": [
+        {
+          "en": "I am allergic to peanuts.",
+          "yue": "我對花生過敏。"
+        },
+        {
+          "en": "Thank you for telling me.",
+          "yue": "多謝你話我知。"
+        }
+      ],
+      "examples": [
+        {
+          "en": "I am allergic to peanuts.",
+          "yue": "我對花生過敏。",
+          "audio": "assets/audio/words/allergic-adj.mp3",
+          "audioSlow": "assets/audio/words/allergic-adj-slow.mp3",
+          "say": "I am [[əlˈɜdʒɪk]] to peanuts."
+        },
+        {
+          "en": "She is allergic to shellfish.",
+          "yue": "佢對貝類過敏。",
+          "audio": "assets/audio/words/allergic-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/allergic-adj-ex2-slow.mp3",
+          "say": "She is [[əlˈɜdʒɪk]] to shellfish."
+        }
+      ]
+    },
+    {
+      "id": "peanut-noun",
+      "lemma": "peanut",
+      "pos": "noun",
+      "senseId": "legume",
+      "ipa": "/ˈpi.nət/",
+      "syllables": [
+        "pea",
+        "nut"
+      ],
+      "syllableIpa": [
+        "ˈpi",
+        "nət"
+      ],
+      "stress": 1,
+      "arpabet": "P IY1 N AH0 T",
+      "audio": "assets/audio/words/peanut-noun.mp3",
+      "audioSlow": "assets/audio/words/peanut-noun-slow.mp3",
+      "glossYue": "花生",
+      "glossZh": "花生",
+      "jyutping": "faa1 sang1",
+      "collocations": [
+        "peanut sauce"
+      ],
+      "example": "I cannot eat peanut sauce.",
+      "exampleYue": "我唔食花生醬。",
+      "say": "I cannot eat [[pˈinət]] sauce.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "peanut",
+      "phrase": false,
+      "audioSha256": "68fd8c06c3f36f1fae53d7ca6181fee8558386be316861259bbc8d95a803146b",
+      "register": "餐廳",
+      "usageNotes": "peanut sauce。",
+      "pitfallsYue": "第二音係輕 /ə/。唔好讀成重音。",
+      "related": [
+        "allergic-adj",
+        "sauce-noun"
+      ],
+      "examples": [
+        {
+          "en": "I cannot eat peanut sauce.",
+          "yue": "我唔食花生醬。",
+          "audio": "assets/audio/words/peanut-noun.mp3",
+          "audioSlow": "assets/audio/words/peanut-noun-slow.mp3",
+          "say": "I cannot eat [[pˈinət]] sauce."
+        },
+        {
+          "en": "This sauce has peanuts.",
+          "yue": "呢款醬有花生。",
+          "audio": "assets/audio/words/peanut-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/peanut-noun-ex2-slow.mp3",
+          "say": "This sauce has [[pˈinəts]]."
+        }
+      ]
+    },
+    {
+      "id": "shellfish-noun",
+      "lemma": "shellfish",
+      "pos": "noun",
+      "senseId": "seafood-mix",
+      "ipa": "/ˈʃɛl.ˌfɪʃ/",
+      "syllables": [
+        "shell",
+        "fish"
+      ],
+      "syllableIpa": [
+        "ˈʃɛl",
+        "ˌfɪʃ"
+      ],
+      "stress": 1,
+      "arpabet": "SH EH1 L F IH2 SH",
+      "audio": "assets/audio/words/shellfish-noun.mp3",
+      "audioSlow": "assets/audio/words/shellfish-noun-slow.mp3",
+      "glossYue": "貝類",
+      "glossZh": "贝类",
+      "jyutping": "bui3 leoi6",
+      "collocations": [
+        "no shellfish"
+      ],
+      "example": "I cannot eat shellfish.",
+      "exampleYue": "我唔食貝類。",
+      "say": "I cannot eat shellfish.",
+      "variants": [],
+      "note": "有 /l/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "shellfish",
+      "phrase": false,
+      "audioSha256": "e7536a7fafc0697ef96b11989ecb6650ae09319a7c19efaed46403c167ca6e14",
+      "register": "餐廳",
+      "usageNotes": "I cannot eat shellfish.",
+      "pitfallsYue": "有 /l/ 同 /ʃ/。貝類係 shellfish。",
+      "related": [
+        "allergy-noun",
+        "spicy-adj"
+      ],
+      "examples": [
+        {
+          "en": "I cannot eat shellfish.",
+          "yue": "我唔食貝類。",
+          "audio": "assets/audio/words/shellfish-noun.mp3",
+          "audioSlow": "assets/audio/words/shellfish-noun-slow.mp3",
+          "say": "I cannot eat shellfish."
+        },
+        {
+          "en": "Shellfish is not in this dish.",
+          "yue": "呢道菜冇貝類。",
+          "audio": "assets/audio/words/shellfish-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/shellfish-noun-ex2-slow.mp3",
+          "say": "Shellfish is not in this dish."
+        }
+      ]
+    },
+    {
+      "id": "dairy-noun",
+      "lemma": "dairy",
+      "pos": "noun",
+      "senseId": "milk-food",
+      "ipa": "/ˈdɛ.ɹi/",
+      "syllables": [
+        "dai",
+        "ry"
+      ],
+      "syllableIpa": [
+        "ˈdɛ",
+        "ɹi"
+      ],
+      "stress": 1,
+      "arpabet": "D EH1 R IY0",
+      "audio": "assets/audio/words/dairy-noun.mp3",
+      "audioSlow": "assets/audio/words/dairy-noun-slow.mp3",
+      "glossYue": "奶製品",
+      "glossZh": "奶制品",
+      "jyutping": "naai5 zai3 ban2",
+      "collocations": [
+        "dairy products"
+      ],
+      "example": "I avoid dairy products.",
+      "exampleYue": "我唔食奶製品。",
+      "say": "I avoid dairy products.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "dairy",
+      "phrase": false,
+      "audioSha256": "92e24584c49fbd999884646397112907f63428f58d878f9687479d2e8242daf9",
+      "register": "餐廳",
+      "usageNotes": "dairy products。",
+      "pitfallsYue": "奶製品係 dairy。日記先至係 diary，唔好撈。",
+      "related": [
+        "gluten-noun",
+        "ingredients-noun"
+      ],
+      "examples": [
+        {
+          "en": "I avoid dairy products.",
+          "yue": "我唔食奶製品。",
+          "audio": "assets/audio/words/dairy-noun.mp3",
+          "audioSlow": "assets/audio/words/dairy-noun-slow.mp3",
+          "say": "I avoid dairy products."
+        },
+        {
+          "en": "I avoid dairy in this dish.",
+          "yue": "呢道菜我唔食奶製品。",
+          "audio": "assets/audio/words/dairy-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/dairy-noun-ex2-slow.mp3",
+          "say": "I avoid dairy in this dish."
+        }
+      ]
+    },
+    {
+      "id": "gluten-noun",
+      "lemma": "gluten",
+      "pos": "noun",
+      "senseId": "wheat-protein",
+      "ipa": "/ˈɡlu.tən/",
+      "syllables": [
+        "glu",
+        "ten"
+      ],
+      "syllableIpa": [
+        "ˈɡlu",
+        "tən"
+      ],
+      "stress": 1,
+      "arpabet": "G L UW1 T AH0 N",
+      "audio": "assets/audio/words/gluten-noun.mp3",
+      "audioSlow": "assets/audio/words/gluten-noun-slow.mp3",
+      "glossYue": "麩質",
+      "glossZh": "麸质",
+      "jyutping": "fu1 zat1",
+      "collocations": [
+        "no gluten"
+      ],
+      "example": "This bread has gluten.",
+      "exampleYue": "呢款麵包有麩質。",
+      "say": "This bread has gluten.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "gluten",
+      "phrase": false,
+      "audioSha256": "8c2720670339b45b84762fd15147a8cc54cad9308d24c02d7b645031388f1ae5",
+      "register": "餐廳",
+      "usageNotes": "This bread has gluten.",
+      "pitfallsYue": "第一音係 /u/。麩質係 gluten。",
+      "related": [
+        "dairy-noun",
+        "ingredients-noun"
+      ],
+      "examples": [
+        {
+          "en": "This bread has gluten.",
+          "yue": "呢款麵包有麩質。",
+          "audio": "assets/audio/words/gluten-noun.mp3",
+          "audioSlow": "assets/audio/words/gluten-noun-slow.mp3",
+          "say": "This bread has gluten."
+        },
+        {
+          "en": "Is there gluten in the sauce?",
+          "yue": "醬入面有冇麩質？",
+          "audio": "assets/audio/words/gluten-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/gluten-noun-ex2-slow.mp3",
+          "say": "Is there gluten in the sauce?"
+        }
+      ]
+    },
+    {
+      "id": "spicy-adj",
+      "lemma": "spicy",
+      "pos": "adj",
+      "senseId": "hot-spice",
+      "ipa": "/ˈspaɪ.si/",
+      "syllables": [
+        "spi",
+        "cy"
+      ],
+      "syllableIpa": [
+        "ˈspaɪ",
+        "si"
+      ],
+      "stress": 1,
+      "arpabet": "S P AY1 S IY0",
+      "audio": "assets/audio/words/spicy-adj.mp3",
+      "audioSlow": "assets/audio/words/spicy-adj-slow.mp3",
+      "glossYue": "辣",
+      "glossZh": "辣",
+      "jyutping": "laat6",
+      "collocations": [
+        "too spicy"
+      ],
+      "example": "This dish is too spicy.",
+      "exampleYue": "呢道菜太辣。",
+      "say": "This dish is too spicy.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "spicy",
+      "phrase": false,
+      "audioSha256": "4696776946849fc60a462a61dca4a771b55cb45604f0a3323894e00a1b7766c2",
+      "register": "餐廳",
+      "usageNotes": "too spicy。",
+      "pitfallsYue": "辣係 spicy。醬先至係 sauce。",
+      "related": [
+        "sauce-noun",
+        "on-the-side-phrase"
+      ],
+      "examples": [
+        {
+          "en": "This dish is too spicy.",
+          "yue": "呢道菜太辣。",
+          "audio": "assets/audio/words/spicy-adj.mp3",
+          "audioSlow": "assets/audio/words/spicy-adj-slow.mp3",
+          "say": "This dish is too spicy."
+        },
+        {
+          "en": "I do not want it spicy.",
+          "yue": "我唔想要辣。",
+          "audio": "assets/audio/words/spicy-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/spicy-adj-ex2-slow.mp3",
+          "say": "I do not want it spicy."
+        }
+      ]
+    },
+    {
+      "id": "sauce-noun",
+      "lemma": "sauce",
+      "pos": "noun",
+      "senseId": "condiment",
+      "ipa": "/ˈsɔs/",
+      "syllables": [
+        "sauce"
+      ],
+      "syllableIpa": [
+        "ˈsɔs"
+      ],
+      "stress": 1,
+      "arpabet": "S AO1 S",
+      "audio": "assets/audio/words/sauce-noun.mp3",
+      "audioSlow": "assets/audio/words/sauce-noun-slow.mp3",
+      "glossYue": "醬",
+      "glossZh": "酱",
+      "jyutping": "zoeng3",
+      "collocations": [
+        "the sauce"
+      ],
+      "example": "The sauce is on the side.",
+      "exampleYue": "醬汁放喺旁邊。",
+      "say": "The sauce is on the side.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "sauce",
+      "phrase": false,
+      "audioSha256": "42cabcc7ad1128b1f010894eacf1478843591c5607bf34690f33751386744744",
+      "register": "餐廳",
+      "usageNotes": "the sauce。",
+      "pitfallsYue": "醬係 sauce。尾音 /s/。",
+      "related": [
+        "on-the-side-phrase",
+        "spicy-adj"
+      ],
+      "examples": [
+        {
+          "en": "The sauce is on the side.",
+          "yue": "醬汁放喺旁邊。",
+          "audio": "assets/audio/words/sauce-noun.mp3",
+          "audioSlow": "assets/audio/words/sauce-noun-slow.mp3",
+          "say": "The sauce is on the side."
+        },
+        {
+          "en": "Could I have the sauce later?",
+          "yue": "醬可唔可以遲啲先上？",
+          "audio": "assets/audio/words/sauce-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/sauce-noun-ex2-slow.mp3",
+          "say": "Could I have the sauce later?"
+        }
+      ]
+    },
+    {
+      "id": "on-the-side-phrase",
+      "lemma": "on the side",
+      "pos": "phrase",
+      "senseId": "served-apart",
+      "ipa": "/ˈɔn ðə ˈsaɪd/",
+      "syllables": [
+        "on",
+        "the",
+        "side"
+      ],
+      "syllableIpa": [
+        "ˈɔn",
+        "ðə",
+        "ˈsaɪd"
+      ],
+      "stress": 1,
+      "arpabet": "AO1 N DH AH0 S AY1 D",
+      "audio": "assets/audio/words/on-the-side-phrase.mp3",
+      "audioSlow": "assets/audio/words/on-the-side-phrase-slow.mp3",
+      "glossYue": "另上",
+      "glossZh": "另上",
+      "jyutping": "ling6 soeng5",
+      "collocations": [
+        "sauce on the side"
+      ],
+      "example": "Sauce on the side, please.",
+      "exampleYue": "醬汁另上，唔該。",
+      "say": "Sauce [[ˈɔn]] the side, please.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "on the side",
+      "phrase": true,
+      "audioSha256": "7d89ad40fbe42c35ca28f04e768770cf4db39d104bd3e4a6c51f6ca8054d1751",
+      "register": "餐廳",
+      "usageNotes": "on the side。",
+      "pitfallsYue": "另上係 on the side。on 讀 /ɔn/。",
+      "related": [
+        "sauce-noun",
+        "without-prep"
+      ],
+      "examples": [
+        {
+          "en": "Sauce on the side, please.",
+          "yue": "醬汁另上，唔該。",
+          "audio": "assets/audio/words/on-the-side-phrase.mp3",
+          "audioSlow": "assets/audio/words/on-the-side-phrase-slow.mp3",
+          "say": "Sauce [[ˈɔn]] the side, please."
+        },
+        {
+          "en": "Please put the sauce on the side.",
+          "yue": "請將醬另上。",
+          "audio": "assets/audio/words/on-the-side-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/on-the-side-phrase-ex2-slow.mp3",
+          "say": "Please put the sauce [[ˈɔn]] the side."
+        }
+      ]
+    },
+    {
+      "id": "without-prep",
+      "lemma": "without",
+      "pos": "prep",
+      "senseId": "lacking",
+      "ipa": "/wɪθ.ˈaʊt/",
+      "syllables": [
+        "with",
+        "out"
+      ],
+      "syllableIpa": [
+        "wɪθ",
+        "ˈaʊt"
+      ],
+      "stress": 2,
+      "arpabet": "W IH0 TH AW1 T",
+      "audio": "assets/audio/words/without-prep.mp3",
+      "audioSlow": "assets/audio/words/without-prep-slow.mp3",
+      "glossYue": "冇",
+      "glossZh": "没有",
+      "jyutping": "mou5",
+      "collocations": [
+        "without sauce"
+      ],
+      "example": "Could I have it without nuts?",
+      "exampleYue": "可唔可以唔要果仁？",
+      "say": "Could I have it [[wɪθˈaʊt]] nuts?",
+      "variants": [],
+      "note": "中間係清 /θ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "without",
+      "phrase": false,
+      "audioSha256": "29b7b902cf398411108e01cdab9d804f61a38b347f1620430be6b5a78d0b7a4c",
+      "register": "餐廳",
+      "usageNotes": "without nuts。",
+      "pitfallsYue": "中間係清 /θ/。唔好讀成有聲 /ð/。",
+      "related": [
+        "instead-adv",
+        "allergic-adj"
+      ],
+      "examples": [
+        {
+          "en": "Could I have it without nuts?",
+          "yue": "可唔可以唔要果仁？",
+          "audio": "assets/audio/words/without-prep.mp3",
+          "audioSlow": "assets/audio/words/without-prep-slow.mp3",
+          "say": "Could I have it [[wɪθˈaʊt]] nuts?"
+        },
+        {
+          "en": "Could I have it without sauce?",
+          "yue": "可唔可以唔要醬？",
+          "audio": "assets/audio/words/without-prep-ex2.mp3",
+          "audioSlow": "assets/audio/words/without-prep-ex2-slow.mp3",
+          "say": "Could I have it [[wɪθˈaʊt]] sauce?"
+        }
+      ]
+    },
+    {
+      "id": "instead-adv",
+      "lemma": "instead",
+      "pos": "adv",
+      "senseId": "as-replacement",
+      "ipa": "/ˌɪn.ˈstɛd/",
+      "syllables": [
+        "in",
+        "stead"
+      ],
+      "syllableIpa": [
+        "ˌɪn",
+        "ˈstɛd"
+      ],
+      "stress": 2,
+      "arpabet": "IH2 N S T EH1 D",
+      "audio": "assets/audio/words/instead-adv.mp3",
+      "audioSlow": "assets/audio/words/instead-adv-slow.mp3",
+      "glossYue": "改為",
+      "glossZh": "改为",
+      "jyutping": "goi2 wai4",
+      "collocations": [
+        "fish instead"
+      ],
+      "example": "I will have fish instead.",
+      "exampleYue": "我改為叫魚。",
+      "say": "I will have fish instead.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "instead",
+      "phrase": false,
+      "audioSha256": "1364126c83582573005d04edf101da316528d8ad88d6bd41b7a7b4f3111e4f6c",
+      "register": "餐廳",
+      "usageNotes": "fish instead。",
+      "pitfallsYue": "改為係 instead。重音喺第二節。",
+      "related": [
+        "without-prep",
+        "contain-verb"
+      ],
+      "examples": [
+        {
+          "en": "I will have fish instead.",
+          "yue": "我改為叫魚。",
+          "audio": "assets/audio/words/instead-adv.mp3",
+          "audioSlow": "assets/audio/words/instead-adv-slow.mp3",
+          "say": "I will have fish instead."
+        },
+        {
+          "en": "I will take the fish instead.",
+          "yue": "我改為叫魚。",
+          "audio": "assets/audio/words/instead-adv-ex2.mp3",
+          "audioSlow": "assets/audio/words/instead-adv-ex2-slow.mp3",
+          "say": "I will take the fish instead."
+        }
+      ]
+    },
+    {
+      "id": "contain-verb",
+      "lemma": "contain",
+      "pos": "verb",
+      "senseId": "hold-inside",
+      "ipa": "/kən.ˈteɪn/",
+      "syllables": [
+        "con",
+        "tain"
+      ],
+      "syllableIpa": [
+        "kən",
+        "ˈteɪn"
+      ],
+      "stress": 2,
+      "arpabet": "K AH0 N T EY1 N",
+      "audio": "assets/audio/words/contain-verb.mp3",
+      "audioSlow": "assets/audio/words/contain-verb-slow.mp3",
+      "glossYue": "含有",
+      "glossZh": "含有",
+      "jyutping": "ham4 jau5",
+      "collocations": [
+        "contain peanuts"
+      ],
+      "example": "Does this dish contain peanuts?",
+      "exampleYue": "呢道菜含唔含花生？",
+      "say": "Does this dish contain peanuts?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "contain",
+      "phrase": false,
+      "audioSha256": "92a80fb49916904d73f615439f4fb7300837bc07526a2ec7153272bd7ffcb95e",
+      "register": "餐廳",
+      "usageNotes": "Does this contain peanuts?",
+      "pitfallsYue": "含有係 contain。重音喺第二節。",
+      "related": [
+        "ingredients-noun",
+        "peanut-noun"
+      ],
+      "examples": [
+        {
+          "en": "Does this dish contain peanuts?",
+          "yue": "呢道菜含唔含花生？",
+          "audio": "assets/audio/words/contain-verb.mp3",
+          "audioSlow": "assets/audio/words/contain-verb-slow.mp3",
+          "say": "Does this dish contain peanuts?"
+        },
+        {
+          "en": "Does the sauce contain dairy?",
+          "yue": "醬入面含唔含奶製品？",
+          "audio": "assets/audio/words/contain-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/contain-verb-ex2-slow.mp3",
+          "say": "Does the sauce contain dairy?"
+        }
+      ]
+    },
+    {
+      "id": "ingredients-noun",
+      "lemma": "ingredients",
+      "pos": "noun",
+      "senseId": "contents",
+      "ipa": "/ˌɪ.ˈnɡɹi.di.ənts/",
+      "syllables": [
+        "in",
+        "gre",
+        "di",
+        "ents"
+      ],
+      "syllableIpa": [
+        "ˌɪ",
+        "ˈnɡɹi",
+        "di",
+        "ənts"
+      ],
+      "stress": 2,
+      "arpabet": "IH2 N G R IY1 D IY0 AH0 N T S",
+      "audio": "assets/audio/words/ingredients-noun.mp3",
+      "audioSlow": "assets/audio/words/ingredients-noun-slow.mp3",
+      "glossYue": "成分",
+      "glossZh": "成分",
+      "jyutping": "sing4 fan6",
+      "collocations": [
+        "the ingredients"
+      ],
+      "example": "Could I see the ingredients?",
+      "exampleYue": "可唔可以睇吓成分？",
+      "say": "Could I see the ingredients?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "ingredients",
+      "phrase": false,
+      "audioSha256": "cdcaf19a403ceb6a6e2c607cf3d93d4d42981c4334a534603eb31a6ac0988be7",
+      "register": "餐廳",
+      "usageNotes": "see the ingredients。",
+      "pitfallsYue": "成分係 ingredients。重音喺第二節。",
+      "related": [
+        "contain-verb",
+        "allergy-noun"
+      ],
+      "examples": [
+        {
+          "en": "Could I see the ingredients?",
+          "yue": "可唔可以睇吓成分？",
+          "audio": "assets/audio/words/ingredients-noun.mp3",
+          "audioSlow": "assets/audio/words/ingredients-noun-slow.mp3",
+          "say": "Could I see the ingredients?"
+        },
+        {
+          "en": "The ingredients are on the menu.",
+          "yue": "成分寫喺餐牌度。",
+          "audio": "assets/audio/words/ingredients-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/ingredients-noun-ex2-slow.mp3",
+          "say": "The ingredients are on the menu."
+        }
+      ]
+    },
+    {
+      "id": "carefully-adv",
+      "lemma": "carefully",
+      "pos": "adv",
+      "senseId": "with-care",
+      "ipa": "/ˈkɛɹ.fə.li/",
+      "syllables": [
+        "care",
+        "ful",
+        "ly"
+      ],
+      "syllableIpa": [
+        "ˈkɛɹ",
+        "fə",
+        "li"
+      ],
+      "stress": 1,
+      "arpabet": "K EH1 R F AH0 L IY0",
+      "audio": "assets/audio/words/carefully-adv.mp3",
+      "audioSlow": "assets/audio/words/carefully-adv-slow.mp3",
+      "glossYue": "小心",
+      "glossZh": "小心",
+      "jyutping": "siu2 sam1",
+      "collocations": [
+        "check carefully"
+      ],
+      "example": "We will check carefully.",
+      "exampleYue": "我哋會小心檢查。",
+      "say": "We will check carefully.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "carefully",
+      "phrase": false,
+      "audioSha256": "74effc5e3e354ec33ccae5acf3154039ec8ad362cb7bcd872d87b34cbea8213b",
+      "register": "餐廳",
+      "usageNotes": "check carefully。",
+      "pitfallsYue": "小心係 carefully。三音節。",
+      "related": [
+        "ingredients-noun",
+        "allergy-noun"
+      ],
+      "examples": [
+        {
+          "en": "We will check carefully.",
+          "yue": "我哋會小心檢查。",
+          "audio": "assets/audio/words/carefully-adv.mp3",
+          "audioSlow": "assets/audio/words/carefully-adv-slow.mp3",
+          "say": "We will check carefully."
+        },
+        {
+          "en": "We checked the dish carefully.",
+          "yue": "我哋已經小心查過呢道菜。",
+          "audio": "assets/audio/words/carefully-adv-ex2.mp3",
+          "audioSlow": "assets/audio/words/carefully-adv-ex2-slow.mp3",
+          "say": "We checked the dish carefully."
+        }
+      ]
+    },
+    {
+      "id": "thank-you-for-telling-phrase",
+      "lemma": "thank you for telling me",
+      "pos": "phrase",
+      "senseId": "thanks-info",
+      "ipa": "/ˈθæŋk ˈju ˈfɔɹ ˈtɛ.lɪŋ/",
+      "syllables": [
+        "thank",
+        "you",
+        "for",
+        "tell",
+        "ing"
+      ],
+      "syllableIpa": [
+        "ˈθæŋk",
+        "ˈju",
+        "ˈfɔɹ",
+        "ˈtɛ",
+        "lɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "TH AE1 NG K Y UW1 F AO1 R T EH1 L IH0 NG",
+      "audio": "assets/audio/words/thank-you-for-telling-phrase.mp3",
+      "audioSlow": "assets/audio/words/thank-you-for-telling-phrase-slow.mp3",
+      "glossYue": "多謝你話我知",
+      "glossZh": "谢谢你告诉我",
+      "jyutping": "do1 ze6 nei5 waa6 ngo5 zi1",
+      "collocations": [
+        "thank you for telling me"
+      ],
+      "example": "Thank you for telling me.",
+      "exampleYue": "多謝你話我知。",
+      "say": "Thank you for telling me.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "thank you for telling me",
+      "phrase": true,
+      "audioSha256": "bd8a1fa6b8f22587d2be490d0ef0de7ac38ceb1cca322c55d41e15fac8e3dbde",
+      "register": "餐廳",
+      "usageNotes": "Thank you for telling me.",
+      "pitfallsYue": "多謝你話我知。唔好直譯成書面語「告訴我」。",
+      "related": [
+        "allergy-noun",
+        "carefully-adv"
+      ],
+      "examples": [
+        {
+          "en": "Thank you for telling me.",
+          "yue": "多謝你話我知。",
+          "audio": "assets/audio/words/thank-you-for-telling-phrase.mp3",
+          "audioSlow": "assets/audio/words/thank-you-for-telling-phrase-slow.mp3",
+          "say": "Thank you for telling me."
+        },
+        {
+          "en": "Thank you for telling the kitchen.",
+          "yue": "多謝你話廚房知。",
+          "audio": "assets/audio/words/thank-you-for-telling-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/thank-you-for-telling-phrase-ex2-slow.mp3",
+          "say": "Thank you for telling the kitchen."
+        }
+      ]
+    },
+    {
+      "id": "key-card-phrase",
+      "lemma": "key card",
+      "pos": "phrase",
+      "senseId": "room-key",
+      "ipa": "/ˈki ˈkɑɹd/",
+      "syllables": [
+        "key",
+        "card"
+      ],
+      "syllableIpa": [
+        "ˈki",
+        "ˈkɑɹd"
+      ],
+      "stress": 1,
+      "arpabet": "K IY1 K AA1 R D",
+      "audio": "assets/audio/words/key-card-phrase.mp3",
+      "audioSlow": "assets/audio/words/key-card-phrase-slow.mp3",
+      "glossYue": "鑰匙卡",
+      "glossZh": "钥匙卡",
+      "jyutping": "so2 si4 kaat1",
+      "collocations": [
+        "your key card"
+      ],
+      "example": "Here is your key card.",
+      "exampleYue": "呢張係你把鑰匙卡。",
+      "say": "Here is your key card.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "key card",
+      "phrase": true,
+      "audioSha256": "71deff1e208ead7c46ef35fbbb15d67f3411cd2ee3779dcc8fd17a463b4f34de",
+      "register": "酒店",
+      "usageNotes": "Here is your key card.",
+      "pitfallsYue": "鑰匙卡係 key card。一張卡開一間房。",
+      "related": [
+        "room-noun",
+        "floor-noun"
+      ],
+      "miniDialogue": [
+        {
+          "en": "Here is your key card.",
+          "yue": "呢張係你把鑰匙卡。"
+        },
+        {
+          "en": "Thank you.",
+          "yue": "多謝。"
+        }
+      ],
+      "examples": [
+        {
+          "en": "Here is your key card.",
+          "yue": "呢張係你把鑰匙卡。",
+          "audio": "assets/audio/words/key-card-phrase.mp3",
+          "audioSlow": "assets/audio/words/key-card-phrase-slow.mp3",
+          "say": "Here is your key card."
+        },
+        {
+          "en": "The key card opens your room.",
+          "yue": "鑰匙卡開你間房。",
+          "audio": "assets/audio/words/key-card-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/key-card-phrase-ex2-slow.mp3",
+          "say": "The key card opens your room."
+        }
+      ]
+    },
+    {
+      "id": "room-noun",
+      "lemma": "room",
+      "pos": "noun",
+      "senseId": "hotel-room",
+      "ipa": "/ˈɹum/",
+      "syllables": [
+        "room"
+      ],
+      "syllableIpa": [
+        "ˈɹum"
+      ],
+      "stress": 1,
+      "arpabet": "R UW1 M",
+      "audio": "assets/audio/words/room-noun.mp3",
+      "audioSlow": "assets/audio/words/room-noun-slow.mp3",
+      "glossYue": "房間",
+      "glossZh": "房间",
+      "jyutping": "fong2 gaan1",
+      "collocations": [
+        "your room"
+      ],
+      "example": "Your room is ready.",
+      "exampleYue": "你間房預備好。",
+      "say": "Your room is ready.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "room",
+      "phrase": false,
+      "audioSha256": "434d8f472dd60e6c81ddabd32384591c7ba9b183b06671a7ed4e2e049b9fc5fa",
+      "register": "酒店",
+      "usageNotes": "Your room is ready.",
+      "pitfallsYue": "房間係 room。雙人房先至係 double room。",
+      "related": [
+        "double-adj",
+        "twin-noun"
+      ],
+      "examples": [
+        {
+          "en": "Your room is ready.",
+          "yue": "你間房預備好。",
+          "audio": "assets/audio/words/room-noun.mp3",
+          "audioSlow": "assets/audio/words/room-noun-slow.mp3",
+          "say": "Your room is ready."
+        },
+        {
+          "en": "Is the room ready now?",
+          "yue": "間房而家預備好未？",
+          "audio": "assets/audio/words/room-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/room-noun-ex2-slow.mp3",
+          "say": "Is the room ready now?"
+        }
+      ]
+    },
+    {
+      "id": "twin-noun",
+      "lemma": "twin",
+      "pos": "noun",
+      "senseId": "two-beds",
+      "ipa": "/ˈtwɪn/",
+      "syllables": [
+        "twin"
+      ],
+      "syllableIpa": [
+        "ˈtwɪn"
+      ],
+      "stress": 1,
+      "arpabet": "T W IH1 N",
+      "audio": "assets/audio/words/twin-noun.mp3",
+      "audioSlow": "assets/audio/words/twin-noun-slow.mp3",
+      "glossYue": "雙床",
+      "glossZh": "双床",
+      "jyutping": "soeng1 cong4",
+      "collocations": [
+        "a twin room"
+      ],
+      "example": "A twin room has two beds.",
+      "exampleYue": "雙床房有兩張床。",
+      "say": "A twin room has two beds.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "twin",
+      "phrase": false,
+      "audioSha256": "260c0f6d393466a67e8e6b47943084815a665c48b4ce9fc0b26590552b154bb9",
+      "register": "酒店",
+      "usageNotes": "a twin room。",
+      "pitfallsYue": "雙床房有兩張床。一張大床先至係 double。",
+      "related": [
+        "double-adj",
+        "room-noun"
+      ],
+      "examples": [
+        {
+          "en": "A twin room has two beds.",
+          "yue": "雙床房有兩張床。",
+          "audio": "assets/audio/words/twin-noun.mp3",
+          "audioSlow": "assets/audio/words/twin-noun-slow.mp3",
+          "say": "A twin room has two beds."
+        },
+        {
+          "en": "We need a twin room tonight.",
+          "yue": "我哋今晚要一間雙床房。",
+          "audio": "assets/audio/words/twin-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/twin-noun-ex2-slow.mp3",
+          "say": "We need a twin room tonight."
+        }
+      ]
+    },
+    {
+      "id": "double-adj",
+      "lemma": "double",
+      "pos": "adj",
+      "senseId": "one-large-bed",
+      "ipa": "/ˈdʌ.bəl/",
+      "syllables": [
+        "dou",
+        "ble"
+      ],
+      "syllableIpa": [
+        "ˈdʌ",
+        "bəl"
+      ],
+      "stress": 1,
+      "arpabet": "D AH1 B AH0 L",
+      "audio": "assets/audio/words/double-adj.mp3",
+      "audioSlow": "assets/audio/words/double-adj-slow.mp3",
+      "glossYue": "雙人",
+      "glossZh": "双人",
+      "jyutping": "soeng1 jan4",
+      "collocations": [
+        "a double room"
+      ],
+      "example": "A double room has one large bed.",
+      "exampleYue": "雙人房有一張大床。",
+      "say": "A double room has one large bed.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "double",
+      "phrase": false,
+      "audioSha256": "222ef210a022c6f4671b2dae72ef8aa5827f9ba2b9eb7ced2cfb7ece2460977f",
+      "register": "酒店",
+      "usageNotes": "a double room。",
+      "pitfallsYue": "雙人房係一張大床。唔好同 twin 撈。",
+      "related": [
+        "twin-noun",
+        "view-noun"
+      ],
+      "examples": [
+        {
+          "en": "A double room has one large bed.",
+          "yue": "雙人房有一張大床。",
+          "audio": "assets/audio/words/double-adj.mp3",
+          "audioSlow": "assets/audio/words/double-adj-slow.mp3",
+          "say": "A double room has one large bed."
+        },
+        {
+          "en": "A double room is fine.",
+          "yue": "雙人房就得。",
+          "audio": "assets/audio/words/double-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/double-adj-ex2-slow.mp3",
+          "say": "A double room is fine."
+        }
+      ]
+    },
+    {
+      "id": "view-noun",
+      "lemma": "view",
+      "pos": "noun",
+      "senseId": "outlook",
+      "ipa": "/ˈvju/",
+      "syllables": [
+        "view"
+      ],
+      "syllableIpa": [
+        "ˈvju"
+      ],
+      "stress": 1,
+      "arpabet": "V Y UW1",
+      "audio": "assets/audio/words/view-noun.mp3",
+      "audioSlow": "assets/audio/words/view-noun-slow.mp3",
+      "glossYue": "景觀",
+      "glossZh": "景观",
+      "jyutping": "ging2 gun1",
+      "collocations": [
+        "a room with a view"
+      ],
+      "example": "I would like a room with a view.",
+      "exampleYue": "我想要有景觀嘅房。",
+      "say": "I would like a room with a view.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "view",
+      "phrase": false,
+      "audioSha256": "0df7ddb0945f300f03ccedb639e1b6a59551b61d1c2dd94b777fee17c4e0d2d9",
+      "register": "酒店",
+      "usageNotes": "a room with a view。",
+      "pitfallsYue": "景觀係 view。樓層先至係 floor。",
+      "related": [
+        "room-noun",
+        "floor-noun"
+      ],
+      "examples": [
+        {
+          "en": "I would like a room with a view.",
+          "yue": "我想要有景觀嘅房。",
+          "audio": "assets/audio/words/view-noun.mp3",
+          "audioSlow": "assets/audio/words/view-noun-slow.mp3",
+          "say": "I would like a room with a view."
+        },
+        {
+          "en": "I would like a city view.",
+          "yue": "我想要城市景觀。",
+          "audio": "assets/audio/words/view-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/view-noun-ex2-slow.mp3",
+          "say": "I would like a city view."
+        }
+      ]
+    },
+    {
+      "id": "wifi-noun",
+      "lemma": "wifi",
+      "pos": "noun",
+      "senseId": "wireless",
+      "ipa": "/ˈwaɪ.ˌfaɪ/",
+      "syllables": [
+        "wi",
+        "fi"
+      ],
+      "syllableIpa": [
+        "ˈwaɪ",
+        "ˌfaɪ"
+      ],
+      "stress": 1,
+      "arpabet": "W AY1 F AY2",
+      "audio": "assets/audio/words/wifi-noun.mp3",
+      "audioSlow": "assets/audio/words/wifi-noun-slow.mp3",
+      "glossYue": "無線網絡",
+      "glossZh": "无线网络",
+      "jyutping": "mou4 sin3 mong5 lok3",
+      "collocations": [
+        "the wifi"
+      ],
+      "example": "The wifi password is on the card.",
+      "exampleYue": "無線網絡密碼喺卡上面。",
+      "say": "The [[wˈaɪfˌaɪ]] password is on the card.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "wifi",
+      "phrase": false,
+      "audioSha256": "fa80ab557f049cf148f6ee7656732290175628c0c9aefdf9fe5fe76a2a3f9a3d",
+      "register": "酒店",
+      "usageNotes": "the wifi password。",
+      "pitfallsYue": "讀 /ˈwaɪ.faɪ/。唔好讀成 wee-fee。",
+      "related": [
+        "password-noun",
+        "room-noun"
+      ],
+      "examples": [
+        {
+          "en": "The wifi password is on the card.",
+          "yue": "無線網絡密碼喺卡上面。",
+          "audio": "assets/audio/words/wifi-noun.mp3",
+          "audioSlow": "assets/audio/words/wifi-noun-slow.mp3",
+          "say": "The [[wˈaɪfˌaɪ]] password is on the card."
+        },
+        {
+          "en": "Wifi is free in the room.",
+          "yue": "房入面無線網絡係免費。",
+          "audio": "assets/audio/words/wifi-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/wifi-noun-ex2-slow.mp3",
+          "say": "[[wˈaɪfˌaɪ]] is free in the room."
+        }
+      ]
+    },
+    {
+      "id": "password-noun",
+      "lemma": "password",
+      "pos": "noun",
+      "senseId": "secret-code",
+      "ipa": "/ˈpæs.ˌwɝd/",
+      "syllables": [
+        "pass",
+        "word"
+      ],
+      "syllableIpa": [
+        "ˈpæs",
+        "ˌwɝd"
+      ],
+      "stress": 1,
+      "arpabet": "P AE1 S W ER2 D",
+      "audio": "assets/audio/words/password-noun.mp3",
+      "audioSlow": "assets/audio/words/password-noun-slow.mp3",
+      "glossYue": "密碼",
+      "glossZh": "密码",
+      "jyutping": "mat6 maa5",
+      "collocations": [
+        "the password"
+      ],
+      "example": "The password is on the card.",
+      "exampleYue": "密碼寫喺卡上面。",
+      "say": "The [[pˈæswˌɜd]] is on the card.",
+      "variants": [],
+      "note": "第二節係 /ɝ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "password",
+      "phrase": false,
+      "audioSha256": "581c23e48c0e4b5c2f92e37ab42cc06ab002df6598d56a527e2674ffba77d432",
+      "register": "酒店",
+      "usageNotes": "The password is on the card.",
+      "pitfallsYue": "重音喺第一節。第二節係 /ɝ/。",
+      "related": [
+        "wifi-noun",
+        "key-card-phrase"
+      ],
+      "examples": [
+        {
+          "en": "The password is on the card.",
+          "yue": "密碼寫喺卡上面。",
+          "audio": "assets/audio/words/password-noun.mp3",
+          "audioSlow": "assets/audio/words/password-noun-slow.mp3",
+          "say": "The [[pˈæswˌɜd]] is on the card."
+        },
+        {
+          "en": "Could you tell me the password?",
+          "yue": "可唔可以話我知密碼？",
+          "audio": "assets/audio/words/password-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/password-noun-ex2-slow.mp3",
+          "say": "Could you tell me the [[pˈæswˌɜd]]?"
+        }
+      ]
+    },
+    {
+      "id": "breakfast-noun",
+      "lemma": "breakfast",
+      "pos": "noun",
+      "senseId": "morning-meal",
+      "ipa": "/ˈbɹɛ.kfəst/",
+      "syllables": [
+        "break",
+        "fast"
+      ],
+      "syllableIpa": [
+        "ˈbɹɛ",
+        "kfəst"
+      ],
+      "stress": 1,
+      "arpabet": "B R EH1 K F AH0 S T",
+      "audio": "assets/audio/words/breakfast-noun.mp3",
+      "audioSlow": "assets/audio/words/breakfast-noun-slow.mp3",
+      "glossYue": "早餐",
+      "glossZh": "早餐",
+      "jyutping": "zou2 caan1",
+      "collocations": [
+        "breakfast is included"
+      ],
+      "example": "Breakfast is included.",
+      "exampleYue": "早餐已經包咗。",
+      "say": "Breakfast is included.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "breakfast",
+      "phrase": false,
+      "audioSha256": "beff7fdca6f7d33f529a5c7571081879151f33ed6b183ac9564e1298829abb2d",
+      "register": "酒店",
+      "usageNotes": "Breakfast is included.",
+      "pitfallsYue": "早餐係 breakfast。兩音節。",
+      "related": [
+        "include-verb",
+        "room-noun"
+      ],
+      "examples": [
+        {
+          "en": "Breakfast is included.",
+          "yue": "早餐已經包咗。",
+          "audio": "assets/audio/words/breakfast-noun.mp3",
+          "audioSlow": "assets/audio/words/breakfast-noun-slow.mp3",
+          "say": "Breakfast is included."
+        },
+        {
+          "en": "What time is breakfast?",
+          "yue": "早餐幾點開始？",
+          "audio": "assets/audio/words/breakfast-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/breakfast-noun-ex2-slow.mp3",
+          "say": "What time is breakfast?"
+        }
+      ]
+    },
+    {
+      "id": "floor-noun",
+      "lemma": "floor",
+      "pos": "noun",
+      "senseId": "storey",
+      "ipa": "/ˈflɔɹ/",
+      "syllables": [
+        "floor"
+      ],
+      "syllableIpa": [
+        "ˈflɔɹ"
+      ],
+      "stress": 1,
+      "arpabet": "F L AO1 R",
+      "audio": "assets/audio/words/floor-noun.mp3",
+      "audioSlow": "assets/audio/words/floor-noun-slow.mp3",
+      "glossYue": "樓層",
+      "glossZh": "楼层",
+      "jyutping": "lau4 cang4",
+      "collocations": [
+        "this floor"
+      ],
+      "example": "Your room is on this floor.",
+      "exampleYue": "你間房喺呢層。",
+      "say": "Your room is on this floor.",
+      "variants": [],
+      "note": "有 /l/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "floor",
+      "phrase": false,
+      "audioSha256": "e543b1c5264a510cd3c9e474885634b29d68e7887c0e01ebc4c0465ca7a32b7e",
+      "register": "酒店",
+      "usageNotes": "on this floor。",
+      "pitfallsYue": "樓層係 floor。有 /l/。",
+      "related": [
+        "elevator-noun",
+        "room-noun"
+      ],
+      "examples": [
+        {
+          "en": "Your room is on this floor.",
+          "yue": "你間房喺呢層。",
+          "audio": "assets/audio/words/floor-noun.mp3",
+          "audioSlow": "assets/audio/words/floor-noun-slow.mp3",
+          "say": "Your room is on this floor."
+        },
+        {
+          "en": "Your room is on floor five.",
+          "yue": "你間房喺五樓。",
+          "audio": "assets/audio/words/floor-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/floor-noun-ex2-slow.mp3",
+          "say": "Your room is on floor five."
+        }
+      ]
+    },
+    {
+      "id": "elevator-noun",
+      "lemma": "elevator",
+      "pos": "noun",
+      "senseId": "lift",
+      "ipa": "/ˈɛ.lə.ˌveɪ.tɚ/",
+      "syllables": [
+        "el",
+        "e",
+        "va",
+        "tor"
+      ],
+      "syllableIpa": [
+        "ˈɛ",
+        "lə",
+        "ˌveɪ",
+        "tɚ"
+      ],
+      "stress": 1,
+      "arpabet": "EH1 L AH0 V EY2 T ER0",
+      "audio": "assets/audio/words/elevator-noun.mp3",
+      "audioSlow": "assets/audio/words/elevator-noun-slow.mp3",
+      "glossYue": "升降機",
+      "glossZh": "电梯",
+      "jyutping": "sing1 gong3 gei1",
+      "collocations": [
+        "the elevator"
+      ],
+      "example": "The elevator is on the left.",
+      "exampleYue": "升降機喺左手邊。",
+      "say": "The elevator is on the left.",
+      "variants": [],
+      "note": "重音喺第一節。口語講升降機。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "elevator",
+      "phrase": false,
+      "audioSha256": "f5d8e4083229748df3e4534141b1615097224a74fadb9ae58bc12e00f55f61e0",
+      "register": "酒店",
+      "usageNotes": "The elevator is on the left.",
+      "pitfallsYue": "口語講升降機。重音喺第一節。",
+      "related": [
+        "floor-noun",
+        "luggage-noun"
+      ],
+      "examples": [
+        {
+          "en": "The elevator is on the left.",
+          "yue": "升降機喺左手邊。",
+          "audio": "assets/audio/words/elevator-noun.mp3",
+          "audioSlow": "assets/audio/words/elevator-noun-slow.mp3",
+          "say": "The elevator is on the left."
+        },
+        {
+          "en": "Please take the elevator.",
+          "yue": "請搭升降機。",
+          "audio": "assets/audio/words/elevator-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/elevator-noun-ex2-slow.mp3",
+          "say": "Please take the elevator."
+        }
+      ]
+    },
+    {
+      "id": "late-checkout-phrase",
+      "lemma": "late checkout",
+      "pos": "phrase",
+      "senseId": "late-leave",
+      "ipa": "/ˈleɪt ˈtʃɛk.ˌaʊt/",
+      "syllables": [
+        "late",
+        "check",
+        "out"
+      ],
+      "syllableIpa": [
+        "ˈleɪt",
+        "ˈtʃɛk",
+        "ˌaʊt"
+      ],
+      "stress": 1,
+      "arpabet": "L EY1 T CH EH1 K AW2 T",
+      "audio": "assets/audio/words/late-checkout-phrase.mp3",
+      "audioSlow": "assets/audio/words/late-checkout-phrase-slow.mp3",
+      "glossYue": "延遲退房",
+      "glossZh": "延迟退房",
+      "jyutping": "jin4 ci4 teoi3 fong4",
+      "collocations": [
+        "a late checkout"
+      ],
+      "example": "I need a late checkout.",
+      "exampleYue": "我需要延遲退房。",
+      "say": "I need a late checkout.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "late checkout",
+      "phrase": true,
+      "audioSha256": "b698b1ea8ecf799f77be1e765f1ab26f1ac7ca6de160e69e58d6b291ff7e11a5",
+      "register": "酒店",
+      "usageNotes": "a late checkout。",
+      "pitfallsYue": "延遲退房係 late checkout。checkout 係一個詞。",
+      "related": [
+        "room-noun",
+        "wake-up-call-phrase"
+      ],
+      "examples": [
+        {
+          "en": "I need a late checkout.",
+          "yue": "我需要延遲退房。",
+          "audio": "assets/audio/words/late-checkout-phrase.mp3",
+          "audioSlow": "assets/audio/words/late-checkout-phrase-slow.mp3",
+          "say": "I need a late checkout."
+        },
+        {
+          "en": "Is a late checkout possible?",
+          "yue": "可唔可以延遲退房？",
+          "audio": "assets/audio/words/late-checkout-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/late-checkout-phrase-ex2-slow.mp3",
+          "say": "Is a late checkout possible?"
+        }
+      ]
+    },
+    {
+      "id": "wake-up-call-phrase",
+      "lemma": "wake-up call",
+      "pos": "phrase",
+      "senseId": "morning-call",
+      "ipa": "/ˈweɪk ˈʌp ˈkɔl/",
+      "syllables": [
+        "wake",
+        "up",
+        "call"
+      ],
+      "syllableIpa": [
+        "ˈweɪk",
+        "ˈʌp",
+        "ˈkɔl"
+      ],
+      "stress": 1,
+      "arpabet": "W EY1 K AH1 P K AO1 L",
+      "audio": "assets/audio/words/wake-up-call-phrase.mp3",
+      "audioSlow": "assets/audio/words/wake-up-call-phrase-slow.mp3",
+      "glossYue": "叫醒電話",
+      "glossZh": "叫醒电话",
+      "jyutping": "giu3 sing2 din6 waa2",
+      "collocations": [
+        "a wake-up call"
+      ],
+      "example": "I would like a wake-up call.",
+      "exampleYue": "我想要叫醒電話。",
+      "say": "I would like a wake-up call.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "wake-up call",
+      "phrase": true,
+      "audioSha256": "9b4e36c5faf7268c94b9488a559e735fa2b69e4271a88e2ce8ca6dc072876db1",
+      "register": "酒店",
+      "usageNotes": "a wake-up call。",
+      "pitfallsYue": "叫醒電話係 wake-up call。up 讀 /ʌp/。",
+      "related": [
+        "late-checkout-phrase",
+        "room-noun"
+      ],
+      "examples": [
+        {
+          "en": "I would like a wake-up call.",
+          "yue": "我想要叫醒電話。",
+          "audio": "assets/audio/words/wake-up-call-phrase.mp3",
+          "audioSlow": "assets/audio/words/wake-up-call-phrase-slow.mp3",
+          "say": "I would like a wake-up call."
+        },
+        {
+          "en": "I need a wake-up call at seven.",
+          "yue": "我要七點叫醒電話。",
+          "audio": "assets/audio/words/wake-up-call-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/wake-up-call-phrase-ex2-slow.mp3",
+          "say": "I need a wake-up call at seven."
+        }
+      ]
     }
   ]
 }

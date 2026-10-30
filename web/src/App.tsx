@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import { Onboarding } from "./Onboarding";
+import { unlockSfx } from "./sfx";
 import { hydrate, useStore } from "./store";
 import type { Route } from "./types";
 
@@ -49,6 +50,12 @@ export function App() {
 
   useEffect(() => {
     void hydrate();
+  }, []);
+
+  useEffect(() => {
+    const unlock = () => unlockSfx();
+    window.addEventListener("pointerdown", unlock);
+    return () => window.removeEventListener("pointerdown", unlock);
   }, []);
 
   useEffect(() => {
