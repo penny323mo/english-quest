@@ -185,6 +185,13 @@
 
 ---
 
+
+### R10 — Café order / 咖啡店落單 · A1/A2 · SHIPPED
+- **Goals:** Order a latte, choose hot or iced, a size, oat milk, for here or to go, and put a name on the cup.
+- **Vocab:** latte, iced, size, oat milk, to go, name, cup
+- **Grammar:** Would you like…? I would like…; for here or to go.
+- **Dialogue beats:** One latte → Hot or iced → Small size → Oat milk → Name on the cup → For here or to go → To go → The cup is ready
+
 ## Unit T — Travel（旅行）· A1→B2 priority track
 
 ### T1 — Airport check-in · A1/A2 · SHIPPED
@@ -239,6 +246,13 @@
 - **Dialogue beats:** Empty belt → Describe → Suitcase → Tag on the receipt → HK four eight two → Claim form → Deliver to the hotel → Hotel room
 
 ---
+
+
+### T11 — MTR and Octopus top-up / 搭港鐵同增值 · A2 · SHIPPED
+- **Goals:** Ask which line, where to change, which exit, how to top up an Octopus card, and the price of a single journey ticket.
+- **Vocab:** line, exit, top up, Octopus card, single journey, ticket
+- **Grammar:** Which line…? Which exit…? How much is…?
+- **Dialogue beats:** Which line → Island line and change → Which exit → Exit A → Top up → Twenty dollars → Single journey → Twelve dollars
 
 ## Unit W — Work（職場）· A2→B2
 
@@ -338,6 +352,13 @@
 
 ---
 
+
+### D8 — Reporting a repair / 搵管理處報維修 · B1 · SHIPPED
+- **Goals:** Report a leaking kitchen tap, say it started yesterday, ask when someone can come, and arrange access to the flat after six.
+- **Vocab:** tap, leak, repair, flat, access
+- **Grammar:** The tap has a leak. When did it start? I will be home after six.
+- **Dialogue beats:** Leak since yesterday → When did it start → Need a repair → Tomorrow morning → Home after six → Access if out → Key with the guard → Repair after six
+
 ## Build order (loop priority)
 
 Every round until map complete, ship **≥3 NEW lessons** in this order (skip already shipped):
@@ -356,7 +377,8 @@ Every round until map complete, ship **≥3 NEW lessons** in this order (skip al
 12. **D6, R8, J13** (pharmacy, takeaway by phone, corporate gift order)  
 13. **R9, W7, T10** (paying the bill, calling in sick, lost luggage)  
 14. **D7, W8, J14** (hair salon, meeting update, custom jewellery)  
-15. Then polish / legendary review nodes / further B2 stretch
+15. **R10, T11, D8** (café order, MTR top-up, repair report)  
+16. Then polish / legendary review nodes / further B2 stretch
 
 **Path UX:** show CEFR chip (A1/A2/B1/B2) on each node; group Path into level tracks; lock by prerequisite; keep `soon:true` teasers for unshipped.
 

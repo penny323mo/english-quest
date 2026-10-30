@@ -3813,11 +3813,11 @@
     "id": "j13-l8",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "I will read it tonight and reply soon if the price and the four weeks both suit our office.",
-    "glossYue": "我今晚會睇，如果價錢同四個星期都啱公司，我好快覆你。",
+    "text": "I will read it tonight and reply soon if the price and the three weeks both suit our office.",
+    "glossYue": "我今晚會睇，如果價錢同三個星期都啱公司，我好快覆你。",
     "audio": "assets/audio/lines/j13-l8.mp3",
     "audioSlow": "assets/audio/lines/j13-l8-slow.mp3",
-    "say": "I will read it tonight and reply soon if the price and the four weeks both suit our office."
+    "say": "I will read it tonight and reply soon if the price and the three weeks both suit our office."
   },
   {
     "id": "r3-l6",
@@ -3873,11 +3873,11 @@
     "id": "r9-l2",
     "speaker": "nori",
     "speakerLabel": "Nori",
-    "text": "Here is the full bill, and the service charge sits on the printed total.",
-    "glossYue": "呢張係完整帳單，服務費已經喺印出嚟嘅總數度。",
+    "text": "Here is the full bill, and the service charge is included in the total.",
+    "glossYue": "呢張係完整帳單，服務費包喺總數入面。",
     "audio": "assets/audio/lines/r9-l2.mp3",
     "audioSlow": "assets/audio/lines/r9-l2-slow.mp3",
-    "say": "Here is the full bill, and the service charge sits on the printed total."
+    "say": "Here is the full bill, and the service charge is included in the total."
   },
   {
     "id": "r9-l3",
@@ -3933,11 +3933,11 @@
     "id": "r9-l8",
     "speaker": "nori",
     "speakerLabel": "Nori",
-    "text": "I will correct that mistake and bring a fresh bill before you pay.",
-    "glossYue": "我會改好嗰個錯，付款之前畀你一張新帳單。",
+    "text": "I will correct that mistake and bring the corrected bill before you pay.",
+    "glossYue": "我會改好嗰個錯，付款之前將改好嘅帳單帶畀你。",
     "audio": "assets/audio/lines/r9-l8.mp3",
     "audioSlow": "assets/audio/lines/r9-l8-slow.mp3",
-    "say": "I will correct that mistake and bring a fresh bill before you pay."
+    "say": "I will correct that mistake and bring the corrected bill before you pay."
   },
   {
     "id": "w7-l1",
@@ -3973,11 +3973,11 @@
     "id": "w7-l4",
     "speaker": "reid",
     "speakerLabel": "Reid",
-    "text": "Who can cover your shift if the shop stays busy while you rest at home?",
-    "glossYue": "如果你喺屋企休息，舖頭忙，邊個可以頂你更？",
+    "text": "Who can cover your shift this morning?",
+    "glossYue": "今朝邊個可以頂你更？",
     "audio": "assets/audio/lines/w7-l4.mp3",
     "audioSlow": "assets/audio/lines/w7-l4-slow.mp3",
-    "say": "Who can cover your shift if the shop stays busy while you rest at home?"
+    "say": "Who can cover your shift this morning?"
   },
   {
     "id": "w7-l5",
@@ -4013,11 +4013,11 @@
     "id": "w7-l8",
     "speaker": "reid",
     "speakerLabel": "Reid",
-    "text": "We will keep your Monday shift open, and the team hopes you feel better soon.",
-    "glossYue": "我哋會留住你星期一嘅更，團隊希望你快啲好返。",
+    "text": "We will keep your Monday shift open at the front counter for the whole morning, and the team hopes you feel better soon.",
+    "glossYue": "我哋會留住你星期一朝早櫃檯嘅更，團隊希望你快啲好返。",
     "audio": "assets/audio/lines/w7-l8.mp3",
     "audioSlow": "assets/audio/lines/w7-l8-slow.mp3",
-    "say": "We will keep your Monday shift open, and the team hopes you feel better soon."
+    "say": "We will keep your Monday shift open at the front counter for the whole morning, and the team hopes you feel better soon."
   },
   {
     "id": "t10-l1",
@@ -4293,11 +4293,11 @@
     "id": "j14-l4",
     "speaker": "ida",
     "speakerLabel": "Ida",
-    "text": "Yellow gold suits this stone, and the warm band can still stay soft in that chosen metal.",
-    "glossYue": "黃金適合呢粒石，暖色戒圈可以用嗰種金屬。",
+    "text": "Yellow gold suits this stone, and the band will be yellow gold rather than a pale metal.",
+    "glossYue": "黃金適合呢粒石，戒圈會用黃金，唔係白金。",
     "audio": "assets/audio/lines/j14-l4.mp3",
     "audioSlow": "assets/audio/lines/j14-l4-slow.mp3",
-    "say": "Yellow gold suits this stone, and the warm band can still stay soft in that chosen metal."
+    "say": "Yellow gold suits this stone, and the band will be yellow gold rather than a pale metal."
   },
   {
     "id": "j14-l5",
@@ -4333,10 +4333,250 @@
     "id": "j14-l8",
     "speaker": "ida",
     "speakerLabel": "Ida",
-    "text": "I will hold the setting once the deposit arrives, and the finished ring can be ready safely after that.",
-    "glossYue": "訂金到咗我就留住鑲托，之後戒指可以安全做好。",
+    "text": "I will hold the ring once the deposit arrives, and the ring can be ready in four weeks.",
+    "glossYue": "訂金到咗我就留住隻戒指，四個星期可以做好。",
     "audio": "assets/audio/lines/j14-l8.mp3",
     "audioSlow": "assets/audio/lines/j14-l8-slow.mp3",
-    "say": "I will hold the setting once the deposit arrives, and the finished ring can be ready safely after that."
+    "say": "I will hold the ring once the deposit arrives, and the ring can be ready in four weeks."
+  },
+  {
+    "id": "r10-l1",
+    "speaker": "cleo",
+    "speakerLabel": "Cleo",
+    "text": "Good morning, I would like one latte, please.",
+    "glossYue": "早晨，我想要一杯拿鐵。",
+    "audio": "assets/audio/lines/r10-l1.mp3",
+    "audioSlow": "assets/audio/lines/r10-l1-slow.mp3",
+    "say": "Good morning, I would like one latte, please."
+  },
+  {
+    "id": "r10-l2",
+    "speaker": "mira",
+    "speakerLabel": "Mira",
+    "text": "Would you like that latte hot, or would you like it iced?",
+    "glossYue": "呢杯拿鐵你想要熱定凍？",
+    "audio": "assets/audio/lines/r10-l2.mp3",
+    "audioSlow": "assets/audio/lines/r10-l2-slow.mp3",
+    "say": "Would you like that latte hot, or would you like it iced?"
+  },
+  {
+    "id": "r10-l3",
+    "speaker": "cleo",
+    "speakerLabel": "Cleo",
+    "text": "Iced, please, and I would like the small size.",
+    "glossYue": "要凍，我想要細杯。",
+    "audio": "assets/audio/lines/r10-l3.mp3",
+    "audioSlow": "assets/audio/lines/r10-l3-slow.mp3",
+    "say": "Iced, please, and I would like the small size."
+  },
+  {
+    "id": "r10-l4",
+    "speaker": "mira",
+    "speakerLabel": "Mira",
+    "text": "Would you like oat milk in the iced latte?",
+    "glossYue": "凍拿鐵加燕麥奶，好唔好？",
+    "audio": "assets/audio/lines/r10-l4.mp3",
+    "audioSlow": "assets/audio/lines/r10-l4-slow.mp3",
+    "say": "Would you like oat milk in the iced latte?"
+  },
+  {
+    "id": "r10-l5",
+    "speaker": "cleo",
+    "speakerLabel": "Cleo",
+    "text": "Yes, please use oat milk, and put the name Cleo on the cup.",
+    "glossYue": "好，用燕麥奶，杯上寫 Cleo 個名。",
+    "audio": "assets/audio/lines/r10-l5.mp3",
+    "audioSlow": "assets/audio/lines/r10-l5-slow.mp3",
+    "say": "Yes, please use oat milk, and put the name Cleo on the cup."
+  },
+  {
+    "id": "r10-l6",
+    "speaker": "mira",
+    "speakerLabel": "Mira",
+    "text": "Is this cup for here, or is it to go?",
+    "glossYue": "呢杯堂食定走杯？",
+    "audio": "assets/audio/lines/r10-l6.mp3",
+    "audioSlow": "assets/audio/lines/r10-l6-slow.mp3",
+    "say": "Is this cup for here, or is it to go?"
+  },
+  {
+    "id": "r10-l7",
+    "speaker": "cleo",
+    "speakerLabel": "Cleo",
+    "text": "To go, please, and please keep the small size.",
+    "glossYue": "走杯，大細保持細杯。",
+    "audio": "assets/audio/lines/r10-l7.mp3",
+    "audioSlow": "assets/audio/lines/r10-l7-slow.mp3",
+    "say": "To go, please, and please keep the small size."
+  },
+  {
+    "id": "r10-l8",
+    "speaker": "mira",
+    "speakerLabel": "Mira",
+    "text": "Here is your iced latte in a cup, and it is ready to go.",
+    "glossYue": "你杯凍拿鐵喺呢度，可以走杯。",
+    "audio": "assets/audio/lines/r10-l8.mp3",
+    "audioSlow": "assets/audio/lines/r10-l8-slow.mp3",
+    "say": "Here is your iced latte in a cup, and it is ready to go."
+  },
+  {
+    "id": "t11-l1",
+    "speaker": "hana",
+    "speakerLabel": "Hana",
+    "text": "Which line goes to Central from this station this morning, please?",
+    "glossYue": "請問今朝邊條線由呢個站去中環？",
+    "audio": "assets/audio/lines/t11-l1.mp3",
+    "audioSlow": "assets/audio/lines/t11-l1-slow.mp3",
+    "say": "Which line goes to Central from this station this morning, please?"
+  },
+  {
+    "id": "t11-l2",
+    "speaker": "otto",
+    "speakerLabel": "Otto",
+    "text": "Please take the Island line, and change at Admiralty for Central.",
+    "glossYue": "請搭港島線，喺金鐘轉去中環。",
+    "audio": "assets/audio/lines/t11-l2.mp3",
+    "audioSlow": "assets/audio/lines/t11-l2-slow.mp3",
+    "say": "Please take the Island line, and change at Admiralty for Central."
+  },
+  {
+    "id": "t11-l3",
+    "speaker": "hana",
+    "speakerLabel": "Hana",
+    "text": "Which exit is closest after I change at Admiralty, please?",
+    "glossYue": "喺金鐘轉車之後，邊個出口最近？",
+    "audio": "assets/audio/lines/t11-l3.mp3",
+    "audioSlow": "assets/audio/lines/t11-l3-slow.mp3",
+    "say": "Which exit is closest after I change at Admiralty, please?"
+  },
+  {
+    "id": "t11-l4",
+    "speaker": "otto",
+    "speakerLabel": "Otto",
+    "text": "Use exit A, and it is a short walk to the street.",
+    "glossYue": "用 A 出口，行幾步就到街。",
+    "audio": "assets/audio/lines/t11-l4.mp3",
+    "audioSlow": "assets/audio/lines/t11-l4-slow.mp3",
+    "say": "Use exit A, and it is a short walk to the street."
+  },
+  {
+    "id": "t11-l5",
+    "speaker": "hana",
+    "speakerLabel": "Hana",
+    "text": "I need to top up my Octopus card before I ride.",
+    "glossYue": "上車之前我要幫八達通增值。",
+    "audio": "assets/audio/lines/t11-l5.mp3",
+    "audioSlow": "assets/audio/lines/t11-l5-slow.mp3",
+    "say": "I need to top up my Octopus card before I ride."
+  },
+  {
+    "id": "t11-l6",
+    "speaker": "otto",
+    "speakerLabel": "Otto",
+    "text": "You can top up twenty dollars at this machine by the gate.",
+    "glossYue": "你可以喺閘旁邊部機增值二十蚊。",
+    "audio": "assets/audio/lines/t11-l6.mp3",
+    "audioSlow": "assets/audio/lines/t11-l6-slow.mp3",
+    "say": "You can top up twenty dollars at this machine by the gate."
+  },
+  {
+    "id": "t11-l7",
+    "speaker": "hana",
+    "speakerLabel": "Hana",
+    "text": "How much is a single journey ticket to Central station?",
+    "glossYue": "去中環站嘅單程票幾多錢？",
+    "audio": "assets/audio/lines/t11-l7.mp3",
+    "audioSlow": "assets/audio/lines/t11-l7-slow.mp3",
+    "say": "How much is a single journey ticket to Central station?"
+  },
+  {
+    "id": "t11-l8",
+    "speaker": "otto",
+    "speakerLabel": "Otto",
+    "text": "That ticket is twelve dollars, and you can pay at the machine there.",
+    "glossYue": "嗰張票十二蚊，你可以喺部機付款。",
+    "audio": "assets/audio/lines/t11-l8.mp3",
+    "audioSlow": "assets/audio/lines/t11-l8-slow.mp3",
+    "say": "That ticket is twelve dollars, and you can pay at the machine there."
+  },
+  {
+    "id": "d8-l1",
+    "speaker": "nell",
+    "speakerLabel": "Nell",
+    "text": "Hello, the kitchen tap has a small leak, and water has been on the floor since yesterday.",
+    "glossYue": "你好，廚房水龍頭有少少漏水，由昨日開始地板都有水。",
+    "audio": "assets/audio/lines/d8-l1.mp3",
+    "audioSlow": "assets/audio/lines/d8-l1-slow.mp3",
+    "say": "Hello, the kitchen tap has a small leak, and water has been on the floor since yesterday."
+  },
+  {
+    "id": "d8-l2",
+    "speaker": "glen",
+    "speakerLabel": "Glen",
+    "text": "I am sorry about the leak. When did the tap start, and is the water still running?",
+    "glossYue": "唔好意思。水龍頭幾時開始漏，水仲流緊呀？",
+    "audio": "assets/audio/lines/d8-l2.mp3",
+    "audioSlow": "assets/audio/lines/d8-l2-slow.mp3",
+    "say": "I am sorry about the leak. When did the tap start, and is the water still running?"
+  },
+  {
+    "id": "d8-l3",
+    "speaker": "nell",
+    "speakerLabel": "Nell",
+    "text": "The kitchen leak started yesterday morning, and it is much worse, so I need one quick repair.",
+    "glossYue": "廚房漏水由昨朝開始，而家嚴重好多，我需要一次快啲嘅維修。",
+    "audio": "assets/audio/lines/d8-l3.mp3",
+    "audioSlow": "assets/audio/lines/d8-l3-slow.mp3",
+    "say": "The kitchen leak started yesterday morning, and it is much worse, so I need one quick repair."
+  },
+  {
+    "id": "d8-l4",
+    "speaker": "glen",
+    "speakerLabel": "Glen",
+    "text": "A repair visit can come tomorrow morning. Will you be home at the flat after work ends?",
+    "glossYue": "維修聽日朝早可以嚟。你放工之後會唔會喺單位？",
+    "audio": "assets/audio/lines/d8-l4.mp3",
+    "audioSlow": "assets/audio/lines/d8-l4-slow.mp3",
+    "say": "A repair visit can come tomorrow morning. Will you be home at the flat after work ends?"
+  },
+  {
+    "id": "d8-l5",
+    "speaker": "nell",
+    "speakerLabel": "Nell",
+    "text": "I will be home after six tonight, and someone from your team can enter the flat then.",
+    "glossYue": "我今晚六點之後喺屋企，你哋同事可以入單位。",
+    "audio": "assets/audio/lines/d8-l5.mp3",
+    "audioSlow": "assets/audio/lines/d8-l5-slow.mp3",
+    "say": "I will be home after six tonight, and someone from your team can enter the flat then."
+  },
+  {
+    "id": "d8-l6",
+    "speaker": "glen",
+    "speakerLabel": "Glen",
+    "text": "Can we have full access to the flat if you are out after six in the evening?",
+    "glossYue": "如果你六點之後唔喺度，我哋可唔可以入單位？",
+    "audio": "assets/audio/lines/d8-l6.mp3",
+    "audioSlow": "assets/audio/lines/d8-l6-slow.mp3",
+    "say": "Can we have full access to the flat if you are out after six in the evening?"
+  },
+  {
+    "id": "d8-l7",
+    "speaker": "nell",
+    "speakerLabel": "Nell",
+    "text": "Yes, I can leave access with the front guard, and the flat key is at the front desk.",
+    "glossYue": "可以，我將入屋安排交畀前門保安，單位鎖匙喺櫃台。",
+    "audio": "assets/audio/lines/d8-l7.mp3",
+    "audioSlow": "assets/audio/lines/d8-l7-slow.mp3",
+    "say": "Yes, I can leave access with the front guard, and the flat key is at the front desk."
+  },
+  {
+    "id": "d8-l8",
+    "speaker": "glen",
+    "speakerLabel": "Glen",
+    "text": "We will send one person for the tap leak, and the repair starts after six in the evening.",
+    "glossYue": "我哋會派一個人處理水龍頭漏水，維修六點之後開始。",
+    "audio": "assets/audio/lines/d8-l8.mp3",
+    "audioSlow": "assets/audio/lines/d8-l8-slow.mp3",
+    "say": "We will send one person for the tap leak, and the repair starts after six in the evening."
   }
 ]

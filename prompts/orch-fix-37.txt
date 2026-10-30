@@ -1,0 +1,20 @@
+Phase 4 unlimited. Round 37. Read CURRICULUM.md + ART-STYLE.md + DUOLINGO-REF.md + SPEC.md + review/mockup-v1 (Penny-approved) + review/loop-r35/coder-audit.md first.
+cd /workspace/sidequest/english-quest. Never touch the grokbot repo or the nightly panes. No paid services. Report files under review/ stay local (never commit review/loop-r*/ or review/style-gap/).
+
+## FIRST: close Coder round-35 live audit (bundle index-CYvjEK4G.js) — see review/loop-r35/coder-audit.md
+- Anything from fix-36 / round-34 audit that is not closed live (#61 D6/J13 heroes, #64 tablet 藥片 everywhere, #69 tag-number example from the baggage receipt sticker).
+- #72 MAJOR: 白金 means platinum in HK. White gold = 白K金, yellow gold = 黃K金 in J14 quiz options, lexicon glosses, recap, vocab cards. Add a test that 白金 never glosses white gold.
+- #73 MAJOR J14 rewrite: budget + sketch → setting/shape → white vs yellow gold advice with a real reason → four weeks → 50% deposit → confirm + pickup. No "four short weeks", no "warm band can still stay soft", no full-vs-half deposit contradiction.
+- #74 MAJOR W8 rewrite: most work on track, sample run behind → who owns it → action + one consistent deadline (Friday) → written note → questions → action items. Remove "same quiet afternoon", "before we break", "open piece of work", "so the whole plan stays clear".
+- #75 D7: "How much is it?" / "Is it cheaper if I book my next visit?" with a staff reply that answers it; drop "at this salon today" and "the price covers a short dry".
+- #76 difficulty: avg words/line never drops >0.5 between consecutive path lessons (D7 11.4 → J3 8.6, R9 14.0 → J6 11.7 now). Re-slot lessons or adjust content; difficulty from grammar/content, not filler. Add/extend the progression test.
+- #77 hero framing: D7, W8, J14 hook heroes crop faces at the top; reframe so faces + key prop fit the 390px hook area. Keep mockup-v1 soft flat pastel.
+- #78 lexicon: /ɑn ˈtɹæk/, /ˌfɑ.loʊ ˈʌp/, /ˌbloʊ ˈdɹaɪ/ with stress label on the last word; landmark example becomes a real directions sentence.
+
+## NEW FEATURE TARGET (≥3 new lessons)
+Add to CURRICULUM.md and ship end-to-end (12 beats, hero WebP 900×1200 in mockup-v1 soft flat pastel cartoon per ART-STYLE §5, lexicon CMUdict IPA, Kokoro audio, natural Cantonese, examples unique per lemma, same-scene distractors, shuffled answers, tests), slotted by CEFR so the path stays non-decreasing and avg words/line rises smoothly:
+- **J15 — Ring resizing and repair / 改戒指尺寸同維修 · A2/B1** (too tight, resize half a size, how long, free within warranty, collect on Saturday, receipt).
+- **T12 — Hotel check-in problem / 酒店入住出問題 · A2/B1** (booking under my name, room not ready, early check-in, leave luggage, non-smoking, Wi-Fi password).
+- **D9 — At the bank: the ATM kept my card / 銀行：櫃員機食咗張卡 · B1** (the machine kept my card, freeze the card, ID, new card in five working days, temporary limit).
+Every dialogue must pass the coherence, filler, because-padding, distractor and progression tests.
+Run tests + build; Lighthouse mobile Perf ≥98. Append "## Round 37" to CHANGELOG.md. Do not git commit.

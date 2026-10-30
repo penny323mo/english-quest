@@ -1,0 +1,6 @@
+You are a strict senior code reviewer for English Quest. cd /workspace/sidequest/english-quest.
+Round 37 review at 390px. Do NOT modify project files.
+Read CURRICULUM.md (≥3 new lessons this round: J15, T12, D9), ART-STYLE.md, review/mockup-v1, SPEC.md, prompts/orch-fix-37.txt and review/loop-r35/coder-audit.md.
+Verify #72–#78 closed and any #61 #64 #69 left open; new lessons end-to-end; correct option position varies; distractors same-scene; CEFR monotonic and avg words/line never drops >0.5; coherence + filler + because-padding + distractor tests exist and pass; no 390 overflow; no Duo IP. Open every new and regenerated hero image and compare with review/mockup-v1/02-exercise.png: any hatching, heavy ink, realistic faces or shading = NOT READY (Penny's top ship blocker).
+Write reviews/orch-r37-grok.md first line VERDICT: SHIP or NOT READY, then a numbered list of every open item.
+SHIP forbidden while any CRITICAL/MAJOR open, any P0 STYLE item open, any #-numbered audit item open, difficulty jump/dip, <3 new lessons, or overflow.

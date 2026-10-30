@@ -32214,9 +32214,9 @@
         "standby is the option",
         "on standby"
       ],
-      "example": "Standby is the only option left for us.",
-      "exampleYue": "我哋而家只剩候補。",
-      "say": "Standby is the only option left for us.",
+      "example": "Standby is the only option left.",
+      "exampleYue": "而家只剩候補。",
+      "say": "Standby is the only option left.",
       "variants": [],
       "note": "",
       "sources": [
@@ -32228,18 +32228,18 @@
       "senseMismatch": false,
       "cmuLemma": "standby",
       "phrase": false,
-      "audioSha256": "36994918b9ca973f4275d0bb510b6a9dacb39d6c768efb5568ecaa6db2473799",
+      "audioSha256": "3ee14e7765e3cc41fe08ea90c43994586ddcafd955ecd7c8aaed48e8e43de0a2",
       "register": "旅行",
       "usageNotes": "可以講 on standby。",
       "pitfallsYue": "第二個音讀輕啲，唔好兩個都重。",
       "related": [],
       "examples": [
         {
-          "en": "Standby is the only option left for us.",
-          "yue": "我哋而家只剩候補。",
+          "en": "Standby is the only option left.",
+          "yue": "而家只剩候補。",
           "audio": "assets/audio/words/standby-noun.mp3",
           "audioSlow": "assets/audio/words/standby-noun-slow.mp3",
-          "say": "Standby is the only option left for us."
+          "say": "Standby is the only option left."
         },
         {
           "en": "She waited on standby for an hour.",
@@ -33761,9 +33761,9 @@
         "the tag number",
         "read the tag number"
       ],
-      "example": "The tag number is on the suitcase handle.",
-      "exampleYue": "行李牌號碼喺喼手柄度。",
-      "say": "The tag number is on the suitcase handle.",
+      "example": "The tag number is HK482 on this baggage receipt.",
+      "exampleYue": "行李牌號碼 HK482 印喺呢張行李收據上面。",
+      "say": "The tag number is HK482 on this baggage receipt.",
       "variants": [],
       "note": "",
       "sources": [
@@ -33774,18 +33774,18 @@
       "senseMismatch": false,
       "cmuLemma": "tag number",
       "phrase": true,
-      "audioSha256": "cbc481c83076aa6c065e89bd3ba5f5e4567aa7e9851896fe9244bdd4b2203187",
+      "audioSha256": "3d30b4896554b4e0c397d274c13aa7d099b6fef2f60920dbfff4c52af518394a",
       "register": "旅行",
       "usageNotes": "行李牌上面嗰組號碼叫 tag number。",
       "pitfallsYue": "行李牌上面嗰組號碼叫 tag number。",
       "related": [],
       "examples": [
         {
-          "en": "The tag number is on the suitcase handle.",
-          "yue": "行李牌號碼喺喼手柄度。",
+          "en": "The tag number is HK482 on this baggage receipt.",
+          "yue": "行李牌號碼 HK482 印喺呢張行李收據上面。",
           "audio": "assets/audio/words/tag-number-phrase.mp3",
           "audioSlow": "assets/audio/words/tag-number-phrase-slow.mp3",
-          "say": "The tag number is on the suitcase handle."
+          "say": "The tag number is HK482 on this baggage receipt."
         },
         {
           "en": "I read the tag number slowly to the officer.",
@@ -34751,6 +34751,720 @@
           "audio": "assets/audio/words/week-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/week-noun-ex2-slow.mp3",
           "say": "Please confirm the sketch this week."
+        }
+      ]
+    },
+    {
+      "id": "latte-noun",
+      "lemma": "latte",
+      "pos": "noun",
+      "senseId": "coffee-milk",
+      "ipa": "/ˈlɑ.ˌteɪ/",
+      "syllables": [
+        "lat",
+        "te"
+      ],
+      "syllableIpa": [
+        "ˈlɑ",
+        "ˌteɪ"
+      ],
+      "stress": 1,
+      "arpabet": "L AA1 T EY2",
+      "audio": "assets/audio/words/latte-noun.mp3",
+      "audioSlow": "assets/audio/words/latte-noun-slow.mp3",
+      "glossYue": "拿鐵",
+      "glossZh": "拿鐵",
+      "jyutping": "naa4 tit3",
+      "collocations": [
+        "one latte",
+        "an iced latte"
+      ],
+      "example": "I would like one latte, please.",
+      "exampleYue": "我想要一杯拿鐵。",
+      "say": "I would like one latte, please.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "latte",
+      "phrase": false,
+      "audioSha256": "375407b2298416791ec9446443e896a4d231eae7fbc121cf76639f491b59e337",
+      "register": "餐廳",
+      "usageNotes": "latte 係拿鐵。",
+      "pitfallsYue": "latte 係拿鐵，唔係清咖啡。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I would like one latte, please.",
+          "yue": "我想要一杯拿鐵。",
+          "audio": "assets/audio/words/latte-noun.mp3",
+          "audioSlow": "assets/audio/words/latte-noun-slow.mp3",
+          "say": "I would like one latte, please."
+        },
+        {
+          "en": "A hot latte is on the counter.",
+          "yue": "一杯熱拿鐵喺櫃檯度。",
+          "audio": "assets/audio/words/latte-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/latte-noun-ex2-slow.mp3",
+          "say": "A hot latte is on the counter."
+        }
+      ]
+    },
+    {
+      "id": "iced-adj",
+      "lemma": "iced",
+      "pos": "adj",
+      "senseId": "cold-drink",
+      "ipa": "/ˈaɪst/",
+      "syllables": [
+        "iced"
+      ],
+      "syllableIpa": [
+        "ˈaɪst"
+      ],
+      "stress": 1,
+      "arpabet": "AY1 S T",
+      "audio": "assets/audio/words/iced-adj.mp3",
+      "audioSlow": "assets/audio/words/iced-adj-slow.mp3",
+      "glossYue": "凍",
+      "glossZh": "凍",
+      "jyutping": "dung3",
+      "collocations": [
+        "iced latte",
+        "iced drink"
+      ],
+      "example": "I would like it iced, please.",
+      "exampleYue": "我想要凍嘅。",
+      "say": "I would like it iced, please.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "iced",
+      "phrase": false,
+      "audioSha256": "e1e818a766211842ba1977a6ba199ed322fc12ccad5bbb6b7f04732a9d1961ea",
+      "register": "餐廳",
+      "usageNotes": "iced 係凍飲。",
+      "pitfallsYue": "iced 係加冰，唔係熱飲。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I would like it iced, please.",
+          "yue": "我想要凍嘅。",
+          "audio": "assets/audio/words/iced-adj.mp3",
+          "audioSlow": "assets/audio/words/iced-adj-slow.mp3",
+          "say": "I would like it iced, please."
+        },
+        {
+          "en": "An iced drink is cold and sweet.",
+          "yue": "凍飲又凍又甜。",
+          "audio": "assets/audio/words/iced-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/iced-adj-ex2-slow.mp3",
+          "say": "An iced drink is cold and sweet."
+        }
+      ]
+    },
+    {
+      "id": "oat-milk-phrase",
+      "lemma": "oat milk",
+      "pos": "phrase",
+      "senseId": "plant-milk",
+      "ipa": "/ˈoʊt ˈmɪlk/",
+      "syllables": [
+        "oat",
+        "milk"
+      ],
+      "syllableIpa": [
+        "ˈoʊt",
+        "ˈmɪlk"
+      ],
+      "stress": 1,
+      "arpabet": "OW1 T | M IH1 L K",
+      "audio": "assets/audio/words/oat-milk-phrase.mp3",
+      "audioSlow": "assets/audio/words/oat-milk-phrase-slow.mp3",
+      "glossYue": "燕麥奶",
+      "glossZh": "燕麥奶",
+      "jyutping": "jin3 mak6 naai5",
+      "collocations": [
+        "oat milk",
+        "with oat milk"
+      ],
+      "example": "Please use oat milk in the latte.",
+      "exampleYue": "拿鐵請用燕麥奶。",
+      "say": "Please use oat milk in the latte.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "oat milk",
+      "phrase": true,
+      "audioSha256": "afaad31283209a2191d28714910d29e316cd60d7bcd8d8c7678290a430124c71",
+      "register": "餐廳",
+      "usageNotes": "oat milk 係燕麥奶。",
+      "pitfallsYue": "oat milk 係燕麥奶，唔係牛奶。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Please use oat milk in the latte.",
+          "yue": "拿鐵請用燕麥奶。",
+          "audio": "assets/audio/words/oat-milk-phrase.mp3",
+          "audioSlow": "assets/audio/words/oat-milk-phrase-slow.mp3",
+          "say": "Please use oat milk in the latte."
+        },
+        {
+          "en": "Oat milk is in this cup.",
+          "yue": "呢杯有燕麥奶。",
+          "audio": "assets/audio/words/oat-milk-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/oat-milk-phrase-ex2-slow.mp3",
+          "say": "Oat milk is in this cup."
+        }
+      ]
+    },
+    {
+      "id": "to-go-phrase",
+      "lemma": "to go",
+      "pos": "phrase",
+      "senseId": "take-away",
+      "ipa": "/tə ˈɡoʊ/",
+      "syllables": [
+        "to",
+        "go"
+      ],
+      "syllableIpa": [
+        "tə",
+        "ˈɡoʊ"
+      ],
+      "stress": 2,
+      "arpabet": "T AH0 | G OW1",
+      "audio": "assets/audio/words/to-go-phrase.mp3",
+      "audioSlow": "assets/audio/words/to-go-phrase-slow.mp3",
+      "glossYue": "走杯",
+      "glossZh": "走杯",
+      "jyutping": "zau2 bui1",
+      "collocations": [
+        "to go",
+        "for here or to go"
+      ],
+      "example": "This cup is to go, please.",
+      "exampleYue": "呢杯走杯，唔該。",
+      "say": "This cup is to go, please.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "to go",
+      "phrase": true,
+      "audioSha256": "e70241e5e2f9f0c1c53328ea6b9df697e065b3f251e6d620c6bc0a5fd41a7dc3",
+      "register": "餐廳",
+      "usageNotes": "to go 係走杯。",
+      "pitfallsYue": "to go 係走杯，唔係堂食。",
+      "related": [],
+      "examples": [
+        {
+          "en": "This cup is to go, please.",
+          "yue": "呢杯走杯，唔該。",
+          "audio": "assets/audio/words/to-go-phrase.mp3",
+          "audioSlow": "assets/audio/words/to-go-phrase-slow.mp3",
+          "say": "This cup is to go, please."
+        },
+        {
+          "en": "I would like the drink to go.",
+          "yue": "呢杯飲品我要走杯。",
+          "audio": "assets/audio/words/to-go-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/to-go-phrase-ex2-slow.mp3",
+          "say": "I would like the drink to go."
+        }
+      ]
+    },
+    {
+      "id": "cup-noun",
+      "lemma": "cup",
+      "pos": "noun",
+      "senseId": "drink-cup",
+      "ipa": "/ˈkʌp/",
+      "syllables": [
+        "cup"
+      ],
+      "syllableIpa": [
+        "ˈkʌp"
+      ],
+      "stress": 1,
+      "arpabet": "K AH1 P",
+      "audio": "assets/audio/words/cup-noun.mp3",
+      "audioSlow": "assets/audio/words/cup-noun-slow.mp3",
+      "glossYue": "杯",
+      "glossZh": "杯",
+      "jyutping": "bui1",
+      "collocations": [
+        "this cup",
+        "on the cup"
+      ],
+      "example": "The name is on the cup.",
+      "exampleYue": "個名寫喺杯上面。",
+      "say": "The name is on the cup.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "cup",
+      "phrase": false,
+      "audioSha256": "49d810063b49e42afdb786f9f46fdd90fb09f3c9fc9b568564c9416edcad60d3",
+      "register": "餐廳",
+      "usageNotes": "cup 係杯。",
+      "pitfallsYue": "cup 係杯。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The name is on the cup.",
+          "yue": "個名寫喺杯上面。",
+          "audio": "assets/audio/words/cup-noun.mp3",
+          "audioSlow": "assets/audio/words/cup-noun-slow.mp3",
+          "say": "The name is on the cup."
+        },
+        {
+          "en": "Please hold this cup.",
+          "yue": "請攞住呢杯。",
+          "audio": "assets/audio/words/cup-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/cup-noun-ex2-slow.mp3",
+          "say": "Please hold this cup."
+        }
+      ]
+    },
+    {
+      "id": "exit-noun",
+      "lemma": "exit",
+      "pos": "noun",
+      "senseId": "station-door",
+      "ipa": "/ˈɛɡ.zɪt/",
+      "syllables": [
+        "ex",
+        "it"
+      ],
+      "syllableIpa": [
+        "ˈɛɡ",
+        "zɪt"
+      ],
+      "stress": 1,
+      "arpabet": "EH1 G Z IH0 T",
+      "audio": "assets/audio/words/exit-noun.mp3",
+      "audioSlow": "assets/audio/words/exit-noun-slow.mp3",
+      "glossYue": "出口",
+      "glossZh": "出口",
+      "jyutping": "ceot1 hau2",
+      "collocations": [
+        "which exit",
+        "exit A"
+      ],
+      "example": "Which exit is closest to the street?",
+      "exampleYue": "邊個出口最近街？",
+      "say": "Which exit is closest to the street?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "exit",
+      "phrase": false,
+      "audioSha256": "3726a2c7954887d7797f2744bd4e37142118484f4c8aa915ec0231cf56cd465e",
+      "register": "旅行",
+      "usageNotes": "exit 係出口。",
+      "pitfallsYue": "exit 係出口。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Which exit is closest to the street?",
+          "yue": "邊個出口最近街？",
+          "audio": "assets/audio/words/exit-noun.mp3",
+          "audioSlow": "assets/audio/words/exit-noun-slow.mp3",
+          "say": "Which exit is closest to the street?"
+        },
+        {
+          "en": "Please use exit A after you change.",
+          "yue": "轉車之後請用 A 出口。",
+          "audio": "assets/audio/words/exit-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/exit-noun-ex2-slow.mp3",
+          "say": "Please use exit A after you change."
+        }
+      ]
+    },
+    {
+      "id": "single-journey-phrase",
+      "lemma": "single journey",
+      "pos": "phrase",
+      "senseId": "one-ride",
+      "ipa": "/ˈsɪŋ.ɡəl ˈdʒɝ.ni/",
+      "syllables": [
+        "sin",
+        "gle",
+        "jour",
+        "ney"
+      ],
+      "syllableIpa": [
+        "ˈsɪŋ",
+        "ɡəl",
+        "ˈdʒɝ",
+        "ni"
+      ],
+      "stress": 1,
+      "arpabet": "S IH1 NG G AH0 L | JH ER1 N IY0",
+      "audio": "assets/audio/words/single-journey-phrase.mp3",
+      "audioSlow": "assets/audio/words/single-journey-phrase-slow.mp3",
+      "glossYue": "單程",
+      "glossZh": "單程",
+      "jyutping": "daan1 cing4",
+      "collocations": [
+        "a single journey",
+        "single journey ticket"
+      ],
+      "example": "A single journey ticket costs twelve dollars.",
+      "exampleYue": "單程票要十二蚊。",
+      "say": "A single journey ticket costs twelve dollars.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "single journey",
+      "phrase": true,
+      "audioSha256": "f508f57e69936531bfd0a9433db918af51fe483b98e77626f284c6e115a8c2f0",
+      "register": "旅行",
+      "usageNotes": "single journey 係單程。",
+      "pitfallsYue": "single journey 係單程，唔係來回。",
+      "related": [],
+      "examples": [
+        {
+          "en": "A single journey ticket costs twelve dollars.",
+          "yue": "單程票要十二蚊。",
+          "audio": "assets/audio/words/single-journey-phrase.mp3",
+          "audioSlow": "assets/audio/words/single-journey-phrase-slow.mp3",
+          "say": "A single journey ticket costs twelve dollars."
+        },
+        {
+          "en": "I bought a single journey ticket this morning.",
+          "yue": "我今朝買咗張單程票。",
+          "audio": "assets/audio/words/single-journey-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/single-journey-phrase-ex2-slow.mp3",
+          "say": "I bought a single journey ticket this morning."
+        }
+      ]
+    },
+    {
+      "id": "tap-noun",
+      "lemma": "tap",
+      "pos": "noun",
+      "senseId": "water-tap",
+      "ipa": "/ˈtæp/",
+      "syllables": [
+        "tap"
+      ],
+      "syllableIpa": [
+        "ˈtæp"
+      ],
+      "stress": 1,
+      "arpabet": "T AE1 P",
+      "audio": "assets/audio/words/tap-noun.mp3",
+      "audioSlow": "assets/audio/words/tap-noun-slow.mp3",
+      "glossYue": "水龍頭",
+      "glossZh": "水龍頭",
+      "jyutping": "seoi2 lung4 tau4",
+      "collocations": [
+        "the kitchen tap",
+        "a dripping tap"
+      ],
+      "example": "The kitchen tap has a small leak.",
+      "exampleYue": "廚房水龍頭有少少漏水。",
+      "say": "The kitchen tap has a small leak.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "tap",
+      "phrase": false,
+      "audioSha256": "773cabbb6f23d80f04b3ad379074cdc5391c17d99aa737f6428c977155077d6d",
+      "register": "日常生活",
+      "usageNotes": "tap 係水龍頭。",
+      "pitfallsYue": "tap 係水龍頭。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The kitchen tap has a small leak.",
+          "yue": "廚房水龍頭有少少漏水。",
+          "audio": "assets/audio/words/tap-noun.mp3",
+          "audioSlow": "assets/audio/words/tap-noun-slow.mp3",
+          "say": "The kitchen tap has a small leak."
+        },
+        {
+          "en": "Please look at the tap in the kitchen.",
+          "yue": "請睇吓廚房嘅水龍頭。",
+          "audio": "assets/audio/words/tap-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/tap-noun-ex2-slow.mp3",
+          "say": "Please look at the tap in the kitchen."
+        }
+      ]
+    },
+    {
+      "id": "leak-noun",
+      "lemma": "leak",
+      "pos": "noun",
+      "senseId": "water-drip",
+      "ipa": "/ˈlik/",
+      "syllables": [
+        "leak"
+      ],
+      "syllableIpa": [
+        "ˈlik"
+      ],
+      "stress": 1,
+      "arpabet": "L IY1 K",
+      "audio": "assets/audio/words/leak-noun.mp3",
+      "audioSlow": "assets/audio/words/leak-noun-slow.mp3",
+      "glossYue": "漏水",
+      "glossZh": "漏水",
+      "jyutping": "lau6 seoi2",
+      "collocations": [
+        "a small leak",
+        "the leak"
+      ],
+      "example": "There is a leak under the tap.",
+      "exampleYue": "水龍頭下面有漏水。",
+      "say": "There is a leak under the tap.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "leak",
+      "phrase": false,
+      "audioSha256": "bc61ef6a4100ac4575f9ee3e6aee2da63d2258d2f7b028eae9eb8ae1cae8cd71",
+      "register": "日常生活",
+      "usageNotes": "leak 係漏水。",
+      "pitfallsYue": "leak 係漏水，呢度用名詞。",
+      "related": [],
+      "examples": [
+        {
+          "en": "There is a leak under the tap.",
+          "yue": "水龍頭下面有漏水。",
+          "audio": "assets/audio/words/leak-noun.mp3",
+          "audioSlow": "assets/audio/words/leak-noun-slow.mp3",
+          "say": "There is a leak under the tap."
+        },
+        {
+          "en": "A small leak started yesterday.",
+          "yue": "少少漏水由昨日開始。",
+          "audio": "assets/audio/words/leak-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/leak-noun-ex2-slow.mp3",
+          "say": "A small leak started yesterday."
+        }
+      ]
+    },
+    {
+      "id": "access-noun",
+      "lemma": "access",
+      "pos": "noun",
+      "senseId": "entry-right",
+      "ipa": "/ˈæk.ˌsɛs/",
+      "syllables": [
+        "ac",
+        "cess"
+      ],
+      "syllableIpa": [
+        "ˈæk",
+        "ˌsɛs"
+      ],
+      "stress": 1,
+      "arpabet": "AE1 K S EH2 S",
+      "audio": "assets/audio/words/access-noun.mp3",
+      "audioSlow": "assets/audio/words/access-noun-slow.mp3",
+      "glossYue": "入屋",
+      "glossZh": "入屋",
+      "jyutping": "jap6 uk1",
+      "collocations": [
+        "access to the flat",
+        "leave access"
+      ],
+      "example": "We need access to the flat after six.",
+      "exampleYue": "六點之後我哋要入到單位。",
+      "say": "We need access to the flat after six.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "access",
+      "phrase": false,
+      "audioSha256": "c47c95b8dd58d810cf84c551ba36ade172f79be971ed23c5487aa5b4b08a3481",
+      "register": "日常生活",
+      "usageNotes": "access 係入屋權。",
+      "pitfallsYue": "access 係入到屋，唔係出口。",
+      "related": [],
+      "examples": [
+        {
+          "en": "We need access to the flat after six.",
+          "yue": "六點之後我哋要入到單位。",
+          "audio": "assets/audio/words/access-noun.mp3",
+          "audioSlow": "assets/audio/words/access-noun-slow.mp3",
+          "say": "We need access to the flat after six."
+        },
+        {
+          "en": "I can leave access with the front guard.",
+          "yue": "我可以將入屋安排交畀前門保安。",
+          "audio": "assets/audio/words/access-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/access-noun-ex2-slow.mp3",
+          "say": "I can leave access with the front guard."
+        }
+      ]
+    },
+    {
+      "id": "flat-noun",
+      "lemma": "flat",
+      "pos": "noun",
+      "senseId": "home-unit",
+      "ipa": "/ˈflæt/",
+      "syllables": [
+        "flat"
+      ],
+      "syllableIpa": [
+        "ˈflæt"
+      ],
+      "stress": 1,
+      "arpabet": "F L AE1 T",
+      "audio": "assets/audio/words/flat-noun.mp3",
+      "audioSlow": "assets/audio/words/flat-noun-slow.mp3",
+      "glossYue": "單位",
+      "glossZh": "單位",
+      "jyutping": "daan1 wai2",
+      "collocations": [
+        "the flat",
+        "at the flat"
+      ],
+      "example": "The key to the flat is at the desk.",
+      "exampleYue": "單位鎖匙喺櫃台。",
+      "say": "The key to the flat is at the desk.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "flat",
+      "phrase": false,
+      "audioSha256": "61803e1f7a320b2a8d0d2205896bba150600eee48e0a00849c93b94a277e3612",
+      "register": "日常生活",
+      "usageNotes": "flat 係單位。",
+      "pitfallsYue": "flat 係住宅單位。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The key to the flat is at the desk.",
+          "yue": "單位鎖匙喺櫃台。",
+          "audio": "assets/audio/words/flat-noun.mp3",
+          "audioSlow": "assets/audio/words/flat-noun-slow.mp3",
+          "say": "The key to the flat is at the desk."
+        },
+        {
+          "en": "I will be at the flat after six.",
+          "yue": "我六點之後會喺單位。",
+          "audio": "assets/audio/words/flat-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/flat-noun-ex2-slow.mp3",
+          "say": "I will be at the flat after six."
+        }
+      ]
+    },
+    {
+      "id": "repair-noun",
+      "lemma": "repair",
+      "pos": "noun",
+      "senseId": "fix-job",
+      "ipa": "/ɹɪ.ˈpɛɹ/",
+      "syllables": [
+        "re",
+        "pair"
+      ],
+      "syllableIpa": [
+        "ɹɪ",
+        "ˈpɛɹ"
+      ],
+      "stress": 2,
+      "arpabet": "R IH0 P EH1 R",
+      "audio": "assets/audio/words/repair-noun.mp3",
+      "audioSlow": "assets/audio/words/repair-noun-slow.mp3",
+      "glossYue": "維修",
+      "glossZh": "維修",
+      "jyutping": "wai4 sau1",
+      "collocations": [
+        "one repair",
+        "a repair visit"
+      ],
+      "example": "I need one repair for this leak.",
+      "exampleYue": "呢次漏水我需要一次維修。",
+      "say": "I need one repair for this leak.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "repair",
+      "phrase": false,
+      "audioSha256": "658264ca694bbd78a6fb062306d450158c124f49979a5bae4b9a5afb9f639ad6",
+      "register": "日常生活",
+      "usageNotes": "repair 係維修。",
+      "pitfallsYue": "repair 係維修。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I need one repair for this leak.",
+          "yue": "呢次漏水我需要一次維修。",
+          "audio": "assets/audio/words/repair-noun.mp3",
+          "audioSlow": "assets/audio/words/repair-noun-slow.mp3",
+          "say": "I need one repair for this leak."
+        },
+        {
+          "en": "The repair starts after six.",
+          "yue": "維修六點之後開始。",
+          "audio": "assets/audio/words/repair-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/repair-noun-ex2-slow.mp3",
+          "say": "The repair starts after six."
         }
       ]
     }

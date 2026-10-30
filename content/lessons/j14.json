@@ -68,11 +68,11 @@
       "id": "j14-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Yellow gold suits this stone, and the warm band can still stay soft in that chosen metal.",
-      "glossYue": "黃金適合呢粒石，暖色戒圈可以用嗰種金屬。",
+      "text": "Yellow gold suits this stone, and the band will be yellow gold rather than a pale metal.",
+      "glossYue": "黃金適合呢粒石，戒圈會用黃金，唔係白金。",
       "audio": "assets/audio/lines/j14-l4.mp3",
       "audioSlow": "assets/audio/lines/j14-l4-slow.mp3",
-      "say": "Yellow gold suits this stone, and the warm band can still stay soft in that chosen metal.",
+      "say": "Yellow gold suits this stone, and the band will be yellow gold rather than a pale metal.",
       "hideGloss": true
     },
     {
@@ -112,11 +112,11 @@
       "id": "j14-l8",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "I will hold the setting once the deposit arrives, and the finished ring can be ready safely after that.",
-      "glossYue": "訂金到咗我就留住鑲托，之後戒指可以安全做好。",
+      "text": "I will hold the ring once the deposit arrives, and the ring can be ready in four weeks.",
+      "glossYue": "訂金到咗我就留住隻戒指，四個星期可以做好。",
       "audio": "assets/audio/lines/j14-l8.mp3",
       "audioSlow": "assets/audio/lines/j14-l8-slow.mp3",
-      "say": "I will hold the setting once the deposit arrives, and the finished ring can be ready safely after that.",
+      "say": "I will hold the ring once the deposit arrives, and the ring can be ready in four weeks.",
       "hideGloss": true
     }
   ],
@@ -243,7 +243,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "Yellow gold suits this stone, and the warm band can still stay soft in that chosen metal.",
+        "line": "Yellow gold suits this stone, and the band will be yellow gold rather than a pale metal.",
         "audio": "assets/audio/lines/j14-l4.mp3",
         "audioSlow": "assets/audio/lines/j14-l4-slow.mp3",
         "expect": "What deposit do you need from us if the ring is ready in four short weeks?",

@@ -1,0 +1,349 @@
+{
+  "id": "R10",
+  "unit": "R",
+  "titleYue": "咖啡店落單",
+  "titleEn": "Ordering at a café",
+  "canDoYue": "你識喺咖啡店叫拿鐵，揀熱定凍、大細、燕麥奶，同埋堂食定走杯，再將個名寫上杯。",
+  "canDoEn": "Order a latte, choose hot or iced, a size, oat milk, for here or to go, and put your name on the cup.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/r10.webp",
+  "cast": [
+    "mira",
+    "cleo"
+  ],
+  "cefr": "A1/A2",
+  "lemmas": [
+    "latte-noun",
+    "iced-adj",
+    "size-noun",
+    "oat-milk-phrase",
+    "to-go-phrase",
+    "name-noun",
+    "cup-noun"
+  ],
+  "topicTags": [
+    "拿鐵",
+    "凍",
+    "大細",
+    "燕麥",
+    "走杯",
+    "杯",
+    "名字",
+    "to go"
+  ],
+  "next": "D4",
+  "dialogue": [
+    {
+      "id": "r10-l1",
+      "speaker": "cleo",
+      "speakerLabel": "Cleo",
+      "text": "Good morning, I would like one latte, please.",
+      "glossYue": "早晨，我想要一杯拿鐵。",
+      "audio": "assets/audio/lines/r10-l1.mp3",
+      "audioSlow": "assets/audio/lines/r10-l1-slow.mp3",
+      "say": "Good morning, I would like one latte, please.",
+      "hideGloss": false
+    },
+    {
+      "id": "r10-l2",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "Would you like that latte hot, or would you like it iced?",
+      "glossYue": "呢杯拿鐵你想要熱定凍？",
+      "audio": "assets/audio/lines/r10-l2.mp3",
+      "audioSlow": "assets/audio/lines/r10-l2-slow.mp3",
+      "say": "Would you like that latte hot, or would you like it iced?",
+      "hideGloss": false
+    },
+    {
+      "id": "r10-l3",
+      "speaker": "cleo",
+      "speakerLabel": "Cleo",
+      "text": "Iced, please, and I would like the small size.",
+      "glossYue": "要凍，我想要細杯。",
+      "audio": "assets/audio/lines/r10-l3.mp3",
+      "audioSlow": "assets/audio/lines/r10-l3-slow.mp3",
+      "say": "Iced, please, and I would like the small size.",
+      "hideGloss": false
+    },
+    {
+      "id": "r10-l4",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "Would you like oat milk in the iced latte?",
+      "glossYue": "凍拿鐵加燕麥奶，好唔好？",
+      "audio": "assets/audio/lines/r10-l4.mp3",
+      "audioSlow": "assets/audio/lines/r10-l4-slow.mp3",
+      "say": "Would you like oat milk in the iced latte?",
+      "hideGloss": false
+    },
+    {
+      "id": "r10-l5",
+      "speaker": "cleo",
+      "speakerLabel": "Cleo",
+      "text": "Yes, please use oat milk, and put the name Cleo on the cup.",
+      "glossYue": "好，用燕麥奶，杯上寫 Cleo 個名。",
+      "audio": "assets/audio/lines/r10-l5.mp3",
+      "audioSlow": "assets/audio/lines/r10-l5-slow.mp3",
+      "say": "Yes, please use oat milk, and put the name Cleo on the cup.",
+      "hideGloss": false
+    },
+    {
+      "id": "r10-l6",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "Is this cup for here, or is it to go?",
+      "glossYue": "呢杯堂食定走杯？",
+      "audio": "assets/audio/lines/r10-l6.mp3",
+      "audioSlow": "assets/audio/lines/r10-l6-slow.mp3",
+      "say": "Is this cup for here, or is it to go?",
+      "hideGloss": false
+    },
+    {
+      "id": "r10-l7",
+      "speaker": "cleo",
+      "speakerLabel": "Cleo",
+      "text": "To go, please, and please keep the small size.",
+      "glossYue": "走杯，大細保持細杯。",
+      "audio": "assets/audio/lines/r10-l7.mp3",
+      "audioSlow": "assets/audio/lines/r10-l7-slow.mp3",
+      "say": "To go, please, and please keep the small size.",
+      "hideGloss": false
+    },
+    {
+      "id": "r10-l8",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "Here is your iced latte in a cup, and it is ready to go.",
+      "glossYue": "你杯凍拿鐵喺呢度，可以走杯。",
+      "audio": "assets/audio/lines/r10-l8.mp3",
+      "audioSlow": "assets/audio/lines/r10-l8-slow.mp3",
+      "say": "Here is your iced latte in a cup, and it is ready to go.",
+      "hideGloss": false
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Good morning, I would like one latte, please. 呢句即係點？",
+      "choices": [
+        "想要一杯拿鐵",
+        "想要凍飲，唔係拿鐵",
+        "想問大細"
+      ],
+      "answer": 0,
+      "explain": "latte 係拿鐵。"
+    },
+    {
+      "prompt": "Would you like that latte hot, or would you like it iced? 即係問緊咩？",
+      "choices": [
+        "問名字點寫",
+        "問熱定凍",
+        "問走杯定堂食"
+      ],
+      "answer": 1,
+      "explain": "iced 係凍。"
+    },
+    {
+      "prompt": "Is this cup for here, or is it to go? 即係問緊咩？",
+      "choices": [
+        "問燕麥奶",
+        "問堂食定走杯",
+        "問大細"
+      ],
+      "answer": 1,
+      "explain": "to go 係走杯。cup 係杯。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I would like one ___, please.",
+      "example": "Good morning, I would like one latte, please.",
+      "glossYue": "我想要一杯拿鐵。",
+      "answer": "latte",
+      "choices": [
+        "latte",
+        "cup",
+        "size"
+      ]
+    },
+    {
+      "pattern": "Would you like oat milk in the iced ___?",
+      "example": "Would you like oat milk in the iced latte?",
+      "glossYue": "凍拿鐵加燕麥奶，好唔好？",
+      "answer": "latte",
+      "choices": [
+        "latte",
+        "name",
+        "cup"
+      ]
+    },
+    {
+      "pattern": "Is this cup for here, or is it ___?",
+      "example": "Is this cup for here, or is it to go?",
+      "glossYue": "呢杯堂食定走杯？",
+      "answer": "to go",
+      "choices": [
+        "to go",
+        "oat milk",
+        "iced"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "r10-l1",
+    "hint": "Good morning, I would like one latte, please."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你要凍拿鐵，用燕麥奶。你點講？",
+      "choices": [
+        "Yes, please use oat milk, and put the name Cleo on the cup.",
+        "Iced, please, and I would like the small size.",
+        "To go, please, and please keep the small size."
+      ],
+      "answer": 0,
+      "explain": "講 oat milk 同 name。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Iced",
+        "please",
+        "small",
+        "size"
+      ],
+      "answer": [
+        "Iced",
+        "please",
+        "small",
+        "size"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "cleo",
+    "intro": "你喺咖啡店。同 Mira 講拿鐵同走杯。可以講：latte、oat milk。",
+    "turns": [
+      {
+        "partner": "Mira",
+        "partnerId": "mira",
+        "line": "Would you like that latte hot, or would you like it iced?",
+        "audio": "assets/audio/lines/r10-l2.mp3",
+        "audioSlow": "assets/audio/lines/r10-l2-slow.mp3",
+        "expect": "Iced, please, and I would like the small size.",
+        "keywords": [
+          "iced",
+          "size"
+        ],
+        "modelAudio": "assets/audio/lines/r10-l3.mp3",
+        "modelSlow": "assets/audio/lines/r10-l3-slow.mp3"
+      },
+      {
+        "partner": "Mira",
+        "partnerId": "mira",
+        "line": "Would you like oat milk in the iced latte?",
+        "audio": "assets/audio/lines/r10-l4.mp3",
+        "audioSlow": "assets/audio/lines/r10-l4-slow.mp3",
+        "expect": "Yes, please use oat milk, and put the name Cleo on the cup.",
+        "keywords": [
+          "oat",
+          "name"
+        ],
+        "modelAudio": "assets/audio/lines/r10-l5.mp3",
+        "modelSlow": "assets/audio/lines/r10-l5-slow.mp3"
+      },
+      {
+        "partner": "Mira",
+        "partnerId": "mira",
+        "line": "Is this cup for here, or is it to go?",
+        "audio": "assets/audio/lines/r10-l6.mp3",
+        "audioSlow": "assets/audio/lines/r10-l6-slow.mp3",
+        "expect": "To go, please, and please keep the small size.",
+        "keywords": [
+          "size"
+        ],
+        "modelAudio": "assets/audio/lines/r10-l7.mp3",
+        "modelSlow": "assets/audio/lines/r10-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the café drink you hear: latte.",
+      "lemma": "latte-noun",
+      "choices": [
+        "latte",
+        "iced",
+        "cup"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word for a cold drink: iced.",
+      "lemma": "iced-adj",
+      "choices": [
+        "size",
+        "name",
+        "iced"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'Please use oat milk in the latte.' What does oat milk mean?",
+      "choices": [
+        "走杯",
+        "燕麥",
+        "名字"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'The name is on the cup.' What does cup mean?",
+      "choices": [
+        "杯",
+        "拿鐵",
+        "大細"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word has /aɪ/: iced, name, or cup?",
+      "choices": [
+        "cup",
+        "iced",
+        "name"
+      ],
+      "answer": 1,
+      "explain": "iced 有 /aɪ/。"
+    }
+  ],
+  "sound": {
+    "ipa": "/aɪ/",
+    "title": "iced 入面嗰個音",
+    "note": "iced 有 /aɪ/。cup 有 /ʌ/。",
+    "pairs": [
+      {
+        "a": "iced-adj",
+        "b": "cup-noun"
+      },
+      {
+        "a": "latte-noun",
+        "b": "name-noun"
+      }
+    ],
+    "drill": [
+      "iced-adj",
+      "latte-noun",
+      "cup-noun",
+      "oat-milk-phrase",
+      "size-noun"
+    ]
+  }
+}

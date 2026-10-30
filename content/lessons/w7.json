@@ -59,11 +59,11 @@
       "id": "w7-l4",
       "speaker": "reid",
       "speakerLabel": "Reid",
-      "text": "Who can cover your shift if the shop stays busy while you rest at home?",
-      "glossYue": "如果你喺屋企休息，舖頭忙，邊個可以頂你更？",
+      "text": "Who can cover your shift this morning?",
+      "glossYue": "今朝邊個可以頂你更？",
       "audio": "assets/audio/lines/w7-l4.mp3",
       "audioSlow": "assets/audio/lines/w7-l4-slow.mp3",
-      "say": "Who can cover your shift if the shop stays busy while you rest at home?",
+      "say": "Who can cover your shift this morning?",
       "hideGloss": true
     },
     {
@@ -103,11 +103,11 @@
       "id": "w7-l8",
       "speaker": "reid",
       "speakerLabel": "Reid",
-      "text": "We will keep your Monday shift open, and the team hopes you feel better soon.",
-      "glossYue": "我哋會留住你星期一嘅更，團隊希望你快啲好返。",
+      "text": "We will keep your Monday shift open at the front counter for the whole morning, and the team hopes you feel better soon.",
+      "glossYue": "我哋會留住你星期一朝早櫃檯嘅更，團隊希望你快啲好返。",
       "audio": "assets/audio/lines/w7-l8.mp3",
       "audioSlow": "assets/audio/lines/w7-l8-slow.mp3",
-      "say": "We will keep your Monday shift open, and the team hopes you feel better soon.",
+      "say": "We will keep your Monday shift open at the front counter for the whole morning, and the team hopes you feel better soon.",
       "hideGloss": true
     }
   ],
@@ -234,7 +234,7 @@
       {
         "partner": "Reid",
         "partnerId": "reid",
-        "line": "Who can cover your shift if the shop stays busy while you rest at home?",
+        "line": "Who can cover your shift this morning?",
         "audio": "assets/audio/lines/w7-l4.mp3",
         "audioSlow": "assets/audio/lines/w7-l4-slow.mp3",
         "expect": "Mei can cover my shift at the shop this morning while I stay home.",

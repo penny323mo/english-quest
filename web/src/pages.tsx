@@ -35,10 +35,10 @@ const GLYPHS: Record<string, string> = {
   F1: "breath", F2: "wave", F3: "coin", F4: "thanks", F5: "card", F6: "sun",
   J1: "wave", J2: "search", J3: "necklace", J4: "gem", J5: "ring", J6: "tag",
   J7: "card", J8: "spark", J9: "box", J10: "gift", J11: "gem", J12: "phone", J13: "gift",
-  R1: "seat", R2: "fork", R3: "leaf", R4: "plate", R5: "bill", R6: "phone", R7: "bowl", R8: "phone", R9: "bill",
-  T1: "plane", T2: "pass", T3: "bed", T4: "taxi", T5: "pin", T6: "bed", T7: "bag", T8: "pass", T9: "plane", T10: "bag",
+  R1: "seat", R2: "fork", R3: "leaf", R4: "plate", R5: "bill", R6: "phone", R7: "bowl", R8: "phone", R9: "bill", R10: "coffee",
+  T1: "plane", T2: "pass", T3: "bed", T4: "taxi", T5: "pin", T6: "bed", T7: "bag", T8: "pass", T9: "plane", T10: "bag", T11: "pin",
   W1: "phone", W2: "mail", W3: "meet", W4: "coffee", W5: "phone", W6: "card", W7: "phone", W8: "meet",
-  D1: "cross", D2: "coin", D3: "home", D4: "phone", D5: "box", D6: "cross", D7: "scissors",
+  D1: "cross", D2: "coin", D3: "home", D4: "phone", D5: "box", D6: "cross", D7: "scissors", D8: "wrench",
   J14: "ring",
 };
 
@@ -90,6 +90,7 @@ function Glyph({ kind }: { kind: string }) {
   if (kind === "cross") return <svg {...props}><path d="M12 5v14M6 10h12" /></svg>;
   if (kind === "home") return <svg {...props}><path d="M4 12l8-7 8 7" /><path d="M7 11v8h10v-8" /></svg>;
   if (kind === "scissors") return <svg {...props}><circle cx="7" cy="7" r="2.2" /><circle cx="7" cy="17" r="2.2" /><path d="M9 8.5L20 18M9 15.5L20 6" /></svg>;
+  if (kind === "wrench") return <svg {...props}><path d="M14 6a3 3 0 0 0-3 4L4 17l3 3 7-7a3 3 0 0 0 4-3l-3 1-2-2 1-3z" /></svg>;
   return <svg {...props}><circle cx="12" cy="12" r="3" /></svg>;
 }
 

@@ -700,7 +700,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪五十四課你行完啦。到期嘅卡會喺練習等你。</p>
+        <p className="lede">呢輪五十七課你行完啦。到期嘅卡會喺練習等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );

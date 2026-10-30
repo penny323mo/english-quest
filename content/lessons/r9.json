@@ -38,11 +38,11 @@
       "id": "r9-l2",
       "speaker": "nori",
       "speakerLabel": "Nori",
-      "text": "Here is the full bill, and the service charge sits on the printed total.",
-      "glossYue": "呢張係完整帳單，服務費已經喺印出嚟嘅總數度。",
+      "text": "Here is the full bill, and the service charge is included in the total.",
+      "glossYue": "呢張係完整帳單，服務費包喺總數入面。",
       "audio": "assets/audio/lines/r9-l2.mp3",
       "audioSlow": "assets/audio/lines/r9-l2-slow.mp3",
-      "say": "Here is the full bill, and the service charge sits on the printed total.",
+      "say": "Here is the full bill, and the service charge is included in the total.",
       "hideGloss": false
     },
     {
@@ -104,11 +104,11 @@
       "id": "r9-l8",
       "speaker": "nori",
       "speakerLabel": "Nori",
-      "text": "I will correct that mistake and bring a fresh bill before you pay.",
-      "glossYue": "我會改好嗰個錯，付款之前畀你一張新帳單。",
+      "text": "I will correct that mistake and bring the corrected bill before you pay.",
+      "glossYue": "我會改好嗰個錯，付款之前將改好嘅帳單帶畀你。",
       "audio": "assets/audio/lines/r9-l8.mp3",
       "audioSlow": "assets/audio/lines/r9-l8-slow.mp3",
-      "say": "I will correct that mistake and bring a fresh bill before you pay.",
+      "say": "I will correct that mistake and bring the corrected bill before you pay.",
       "hideGloss": true
     }
   ],
@@ -175,7 +175,7 @@
       "choices": [
         "Octopus card",
         "service charge",
-        "fresh bill"
+        "corrected bill"
       ]
     }
   ],
@@ -221,7 +221,7 @@
       {
         "partner": "Nori",
         "partnerId": "nori",
-        "line": "Here is the full bill, and the service charge sits on the printed total.",
+        "line": "Here is the full bill, and the service charge is included in the total.",
         "audio": "assets/audio/lines/r9-l2.mp3",
         "audioSlow": "assets/audio/lines/r9-l2-slow.mp3",
         "expect": "Could we split the bill so each of us gets a separate receipt?",
@@ -297,7 +297,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "伙計講「Here is the full bill, and the service charge sits on the printed total.」，service charge 係咩意思？",
+      "prompt": "伙計講「Here is the full bill, and the service charge is included in the total.」，service charge 係咩意思？",
       "choices": [
         "服務費",
         "八達通",

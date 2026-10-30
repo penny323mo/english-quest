@@ -14,7 +14,9 @@ import j5 from "../../content/lessons/j5.json";
 import j6 from "../../content/lessons/j6.json";
 import j7 from "../../content/lessons/j7.json";
 import t1 from "../../content/lessons/t1.json";
+import r10 from "../../content/lessons/r10.json";
 import t2 from "../../content/lessons/t2.json";
+import t11 from "../../content/lessons/t11.json";
 import t3 from "../../content/lessons/t3.json";
 import r1 from "../../content/lessons/r1.json";
 import r2 from "../../content/lessons/r2.json";
@@ -37,6 +39,7 @@ import w2 from "../../content/lessons/w2.json";
 import w3 from "../../content/lessons/w3.json";
 import w8 from "../../content/lessons/w8.json";
 import d3 from "../../content/lessons/d3.json";
+import d8 from "../../content/lessons/d8.json";
 import t10 from "../../content/lessons/t10.json";
 import d4 from "../../content/lessons/d4.json";
 import d5 from "../../content/lessons/d5.json";
@@ -59,10 +62,10 @@ import type { DeckFile, Goal, Lesson, LexItem, PathFile } from "./types";
 
 export const lexicon = lexFile as unknown as { items: LexItem[]; license: string; accent: string };
 export const pathData = pathFile as unknown as PathFile;
-export const lessons = [f1, f2, f3, f4, f5, j1, r1, f6, j2, t1, d4, d5, d7, j3, t2, r2, j4, j5, t3, r3, t4, r4, d6, r9, j6, j7, t5, r5, w1, d1, d2, t7, w4, r8, w7, j8, j9, j10, t6, r6, j12, r7, t8, w2, w3, w8, d3, t10, w5, j14, j11, w6, t9, j13] as unknown as Lesson[];
+export const lessons = [f1, f2, f3, f4, f5, j1, r1, f6, j2, t1, r10, d4, d5, d7, j3, t2, t11, r2, j4, j5, t3, r3, t4, r4, d6, r9, j6, j7, t5, r5, w1, d1, d2, t7, w4, r8, w7, j8, j9, j10, t6, r6, j12, r7, t8, w2, w3, w8, d3, d8, t10, w5, j14, j11, w6, t9, j13] as unknown as Lesson[];
 export const decks = decksFile as unknown as DeckFile;
 
-export const SHIPPED = ["F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "D4", "D5", "D7", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "J6", "J7", "T5", "R5", "W1", "D1", "D2", "T7", "W4", "R8", "W7", "J8", "J9", "J10", "T6", "R6", "J12", "R7", "T8", "W2", "W3", "W8", "D3", "T10", "W5", "J14", "J11", "W6", "T9", "J13"] as const;
+export const SHIPPED = ["F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "J6", "J7", "T5", "R5", "W1", "D1", "D2", "T7", "W4", "R8", "W7", "J8", "J9", "J10", "T6", "R6", "J12", "R7", "T8", "W2", "W3", "W8", "D3", "D8", "T10", "W5", "J14", "J11", "W6", "T9", "J13"] as const;
 
 export const lessonById: Record<string, Lesson> = Object.fromEntries(lessons.map((l) => [l.id, l]));
 export const lexById: Record<string, LexItem> = Object.fromEntries(lexicon.items.map((i) => [i.id, i]));
@@ -109,6 +112,12 @@ export const CAST_LABEL: Record<string, string> = {
   sora: "Sora",
   ida: "Ida",
   gus: "Gus",
+  mira: "Mira",
+  cleo: "Cleo",
+  otto: "Otto",
+  hana: "Hana",
+  glen: "Glen",
+  nell: "Nell",
 };
 
 export function asset(path: string): string {
