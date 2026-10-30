@@ -14,3 +14,11 @@ Do NOT edit reviews/ or prompts/. Do not touch LICENSE.
 
 WHEN COMPLETELY FINISHED, create /workspace/sidequest/english-quest/.orch/fix-28.done with DONE.
 ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-28.done
+
+## Coder live 390px audit of round 26 (review/loop-r26/coder-audit.md) — close these too (they block SHIP):
+- #18 still live: stop generating 「<English line>. 係？」 quiz stems (T6 "I am sorry for the inconvenience. 係？"). Use a short Cantonese question e.g. 「呢句即係點？」.
+- #22 still live: polish-noun example (use "Please polish it with a soft cloth." / 用軟布擦亮佢), sheet-noun Yue → 一張紙。, take-verb header 接受或做 vs gloss 要；帶 — make consistent.
+- #24 top-right step label (場景/理解/下一課) has no backing and is unreadable on busy heroes (J10, T6). Give it a pill like 關閉.
+- #25 remove filler-adverb padding in examples/lines: "fully optional tonight", "popular set is optional tonight", "inconvenience tonight", "hold the other line now", "optional if you like". Raise length with real content. Add a test that flags examples ending in tonight/now/if you like unless the scene needs it.
+- #26 J10 hero crops faces at top and lantern dominates — reframe. Recap 下一課 card should show the next lesson's hero (or neutral), not the finished one.
+- #27 path header orphan 「得。」 — tighten copy or balance wrap.
