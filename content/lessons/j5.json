@@ -43,7 +43,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Can you measure my finger?",
-      "glossYue": "可唔可以量吓我隻手指？",
+      "glossYue": "",
       "audio": "assets/audio/lines/j5-l2.mp3",
       "audioSlow": "assets/audio/lines/j5-l2-slow.mp3",
       "say": "Can you measure my finger?"
@@ -53,7 +53,7 @@
       "speaker": "mei",
       "speakerLabel": "Mei",
       "text": "This size is a little tight.",
-      "glossYue": "呢個碼有啲緊。",
+      "glossYue": "",
       "audio": "assets/audio/lines/j5-l3.mp3",
       "audioSlow": "assets/audio/lines/j5-l3-slow.mp3",
       "say": "This size is a little tight."
@@ -63,7 +63,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "It feels almost right.",
-      "glossYue": "戴落差唔多啱。",
+      "glossYue": "",
       "audio": "assets/audio/lines/j5-l4.mp3",
       "audioSlow": "assets/audio/lines/j5-l4-slow.mp3",
       "say": "It feels almost right."
@@ -73,10 +73,30 @@
       "speaker": "mei",
       "speakerLabel": "Mei",
       "text": "I can adjust it. Look in the mirror.",
-      "glossYue": "我可以改。你照吓鏡。",
+      "glossYue": "",
       "audio": "assets/audio/lines/j5-l5.mp3",
       "audioSlow": "assets/audio/lines/j5-l5-slow.mp3",
       "say": "I can adjust it. Look in the mirror."
+    },
+    {
+      "id": "j5-l6",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "It feels a little loose.",
+      "glossYue": "",
+      "audio": "assets/audio/lines/j5-l6.mp3",
+      "audioSlow": "assets/audio/lines/j5-l6-slow.mp3",
+      "say": "It feels a little loose."
+    },
+    {
+      "id": "j5-l7",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "How does it feel?",
+      "glossYue": "戴落感覺點？",
+      "audio": "assets/audio/lines/j5-l7.mp3",
+      "audioSlow": "assets/audio/lines/j5-l7-slow.mp3",
+      "say": "How does it feel?"
     }
   ],
   "understand": [
@@ -315,5 +335,5 @@
       "adjust-verb"
     ]
   },
-  "next": "J6"
+  "next": "T3"
 }

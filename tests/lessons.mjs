@@ -88,9 +88,9 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   assert.equal(fs.existsSync(path.join(root, "content/lessons/t3.json")), true);
   const t2 = lessons.find((lesson) => lesson.id === "T2");
   const t3 = lessons.find((lesson) => lesson.id === "T3");
-  assert.equal(t1.next, "T2");
-  assert.equal(t2.next, "T3");
-  assert.equal(t3.next, "R1");
+  assert.equal(t1.next, "J3");
+  assert.equal(t2.next, "R2");
+  assert.equal(t3.next, "R3");
   assert.match(t3.titleYue, /酒店入住/);
   assert.equal(t3.cefr, "A2");
   assert.match(t3.sound.ipa, /\/l\//);
@@ -106,11 +106,11 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   const j5 = lessons.find((lesson) => lesson.id === "J5");
   const j6 = lessons.find((lesson) => lesson.id === "J6");
   const j7 = lessons.find((lesson) => lesson.id === "J7");
-  assert.equal(j3.next, "J4");
+  assert.equal(j3.next, "T2");
   assert.equal(j4.next, "J5");
-  assert.equal(j5.next, "J6");
+  assert.equal(j5.next, "T3");
   assert.equal(j6.next, "J7");
-  assert.equal(j7.next, "T1");
+  assert.equal(j7.next, null);
   assert.equal(j7.cefr, "A2/B1");
   assert.match(j7.titleYue, /付款/);
   assert.match(j7.sound.ipa, /\/l\//);
@@ -129,9 +129,9 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   assert.equal(j6.sound.ipa.includes("ɹ"), false);
   const r2 = lessons.find((lesson) => lesson.id === "R2");
   const r3 = lessons.find((lesson) => lesson.id === "R3");
-  assert.equal(r1.next, "R2");
-  assert.equal(r2.next, "R3");
-  assert.equal(r3.next, null);
+  assert.equal(r1.next, "J2");
+  assert.equal(r2.next, "J4");
+  assert.equal(r3.next, "J6");
   assert.match(r3.titleYue, /過敏/);
   assert.equal(r3.cefr, "A2");
   assert.match(r3.sound.ipa, /\/l\//);
@@ -150,6 +150,37 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   for (const entry of pathFile.units.flatMap((unit) => unit.lessons)) {
     assert.match(entry.cefr, /^(A1|A2|B1|B2)(\/(A1|A2|B1|B2))?$/);
   }
+  const cefrRank = { A1: 1, "A1/A2": 2, A2: 3, "A2/B1": 4, B1: 5, "B1/B2": 6, B2: 7 };
+  const flatPath = pathFile.units.flatMap((unit) => unit.lessons);
+  for (let i = 1; i < flatPath.length; i += 1) {
+    const prev = flatPath[i - 1];
+    const entry = flatPath[i];
+    assert.ok(
+      cefrRank[entry.cefr] >= cefrRank[prev.cefr],
+      `${prev.id} ${prev.cefr} then ${entry.id} ${entry.cefr}`,
+    );
+  }
+  const shippedOnPath = flatPath.filter((entry) => !entry.soon).map((entry) => entry.id);
+  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "J6", "J7"]);
+  assert.equal(flatPath.find((entry) => entry.id === "J8").cefr, "B1");
+  const glossCount = (lesson) => lesson.dialogue.filter((line) => line.glossYue.trim()).length;
+  const said = (lesson) => lesson.dialogue.map((line) => line.text).join("\n");
+  assert.ok(j4.dialogue.length >= 6 && j4.dialogue.length <= 10);
+  assert.ok(j5.dialogue.length >= 6 && j5.dialogue.length <= 10);
+  assert.ok(j6.dialogue.length >= 6 && j6.dialogue.length <= 10);
+  assert.match(said(j4), /heavier/);
+  assert.match(said(j4), /shinier/);
+  assert.match(said(j5), /How does it feel/);
+  assert.match(said(j6), /If you take both/);
+  assert.ok(glossCount(j4) < j4.dialogue.length);
+  assert.ok(glossCount(j5) < j5.dialogue.length);
+  assert.ok(glossCount(j6) < j6.dialogue.length);
+  assert.ok(t3.dialogue.length > j5.dialogue.length);
+  assert.ok(r3.dialogue.length > t3.dialogue.length);
+  assert.ok(j7.dialogue.length > j6.dialogue.length);
+  assert.ok(glossCount(t3) / t3.dialogue.length <= glossCount(j5) / j5.dialogue.length);
+  assert.ok(glossCount(r3) < glossCount(t3));
+  assert.ok(glossCount(j7) / j7.dialogue.length <= glossCount(j6) / j6.dialogue.length);
   const decks = JSON.parse(fs.readFileSync(path.join(root, "content/decks.json"), "utf8"));
   const jewellery = decks.decks.find((deck) => deck.id === "jewellery");
   assert.ok(jewellery.lemmas.includes("gold-noun"));
@@ -240,7 +271,8 @@ test("role-play tip names a character or tells you it is your turn", () => {
   assert.match(lesson, /你扮 \$\{name\}/);
   assert.equal(lesson.includes("你而家係"), false);
   const data = fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8");
-  assert.match(data, /"F1", "F2", "F3", "F4", "J1", "J2", "J3", "J4", "J5", "J6", "J7", "T1", "T2", "T3", "R1", "R2", "R3"/);
+  assert.match(data, /"F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "J6", "J7"/);
+  assert.match(data, /const order = SHIPPED/);
 });
 
 test("learner Cantonese does not use 俾, stiff glosses, or simplified characters", () => {

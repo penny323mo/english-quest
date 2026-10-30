@@ -36,7 +36,7 @@
       "speaker": "kai",
       "speakerLabel": "Kai",
       "text": "Do you have a reservation?",
-      "glossYue": "你有冇訂房？",
+      "glossYue": "",
       "audio": "assets/audio/lines/t3-l1.mp3",
       "audioSlow": "assets/audio/lines/t3-l1-slow.mp3",
       "say": "Do you have a reservation?"
@@ -56,7 +56,7 @@
       "speaker": "kai",
       "speakerLabel": "Kai",
       "text": "Your room is a double with a view.",
-      "glossYue": "你間房係有景觀嘅雙人房。",
+      "glossYue": "",
       "audio": "assets/audio/lines/t3-l3.mp3",
       "audioSlow": "assets/audio/lines/t3-l3-slow.mp3",
       "say": "Your room is a double with a view."
@@ -76,10 +76,40 @@
       "speaker": "kai",
       "speakerLabel": "Kai",
       "text": "Here is your key card.",
-      "glossYue": "呢張係你把鑰匙卡。",
+      "glossYue": "",
       "audio": "assets/audio/lines/t3-l5.mp3",
       "audioSlow": "assets/audio/lines/t3-l5-slow.mp3",
       "say": "Here is your key card."
+    },
+    {
+      "id": "t3-m1",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Breakfast is included.",
+      "glossYue": "",
+      "audio": "assets/audio/lines/t3-m1.mp3",
+      "audioSlow": "assets/audio/lines/t3-m1-slow.mp3",
+      "say": "Breakfast is included."
+    },
+    {
+      "id": "t3-m2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could I have a late checkout?",
+      "glossYue": "",
+      "audio": "assets/audio/lines/t3-m2.mp3",
+      "audioSlow": "assets/audio/lines/t3-m2-slow.mp3",
+      "say": "Could I have a late checkout?"
+    },
+    {
+      "id": "t3-m3",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "The elevator is on the left.",
+      "glossYue": "",
+      "audio": "assets/audio/lines/t3-m3.mp3",
+      "audioSlow": "assets/audio/lines/t3-m3-slow.mp3",
+      "say": "The elevator is on the left."
     }
   ],
   "understand": [
@@ -321,5 +351,5 @@
       "breakfast-noun"
     ]
   },
-  "next": "R1"
+  "next": "R3"
 }

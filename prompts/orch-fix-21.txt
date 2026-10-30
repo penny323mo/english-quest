@@ -1,15 +1,59 @@
 You are the coder for English Quest (grok 4.7). cd /workspace/sidequest/english-quest.
-Phase 4 unlimited. Round 21. Read CURRICULUM.md + DUOLINGO-REF.md + SPEC.md.
+Phase 4 · engineering stability. Round 21. Supervisor: Grok Duet (Penny via Duet, 2026-10-30).
 
-CRITICAL: MUST ship ≥3 NEW lessons from CURRICULUM.md build order that are not yet in content/lessons/. Real app-code diff required (content/ web/ tests/ assets/ scripts/). No "no defects" / CHANGELOG-only exits.
+## PRIORITY SHIFT (authoritative)
+A third-party code review of the live app (around commit a2a43a0 / current main) flagged progress-loss and CI gaps. Duet redirected the loop: **NO new lessons this round.** Focus on engineering stability. Lesson-shipping (≥3 new) is SUSPENDED until P0-1, P0-2, then P1-6 + P1-4 land (rounds 21–23). Do NOT implement P0-3 (root build cleanup / switch Pages to Actions deploy) — awaiting Penny's approval.
 
-Also continue WORD-REVIEW (生字) slices and Path/CEFR/celebration polish per DUOLINGO-REF.md (no Duo IP). Keep gold bar: IPA/CMUdict, Kokoro pad, natural Cantonese, examples >2 words, tests, LH≥98, 390px.
+CRITICAL RULE: you may NOT finish with "no defects" or only a CHANGELOG commit. This round MUST produce a real app-code diff under web/, tests/, and/or scripts/. Empty product diffs stop the whole loop.
 
-No paid services, no secrets, no nightly panes, no force-add gitignored reports.
+No paid services. No secrets printed. Do not touch nightly herbalist panes. Do not force-add gitignored reports (review/loop-*, review/mockup-*, reviews/orch-*). Never git rm LICENSE/app code. Never copy Duolingo owl / brand green #58CC02 / wordmark.
 
-Append '## Round 21 fixes' to CHANGELOG.md. Commit + push ff-only to origin main.
+## 0) Finish mid-flight difficulty work FIRST (do not destroy)
+Round 20 redesign + SFX + J7/R3/T3 already shipped (5e73973). If you still have uncommitted CEFR / J4–J7 level fixes from prompts/orch-fix-20-addendum.txt (or matching edits under content/, web/src/data.ts, tests/, scripts/), **finish, test, commit, and push those first** so reviews/orch-r20-grok.md + reviews/orch-r21-grok.md CRITICAL/MAJOR path-order + level-fit items close. Difficulty progression stays required every round:
+- Path must be strictly easy→hard (vocab load, sentence length, grammar, less Cantonese scaffolding).
+- No CEFR band drop along path order; no grammar used before taught.
+- Keep/add a test that fails if CEFR rank decreases along the path order.
+Then proceed to P0-1 below in the SAME round (one commit or two commits is fine; push ff-only).
 
-WHEN COMPLETELY FINISHED, create /workspace/sidequest/english-quest/.orch/fix-21.done with DONE.
+## 1) P0-1 — learning progress must not disappear (TOP PRIORITY)
+Current store is web/src/store.ts (idb openDB "english-quest" v1, single put of Persisted {profile, progress, cards}). Hydrate catch currently sets ready:true with empty state — that can wipe real data on the next save. Fix all of the following:
+
+1. **Reopen IndexedDB when the connection closes.** Do not keep using a closed IDBDatabase. On `versionchange` / `close` / failed ops, drop the cached promise and open a fresh DB before the next read/write. Never throw uncaught.
+2. **Save failure →「未儲存」banner.** If put/save fails (quota, closed DB, private mode after prior success, etc.), show a persistent non-blocking banner in the shell (Cantonese: 「未儲存」+ short reason / 「再試」button). Clear the banner only after a successful save. Wire through zustand or a small save-status flag; visible at 390px on Path and Settings at minimum.
+3. **Hydrate failure → never save over old data.** If hydrate cannot read existing state, enter **read-only mode**: do not call save/put; do not mark ready-for-write with blank profile/progress/cards that would overwrite; show error + **Retry** that re-runs hydrate. Only after a successful hydrate may writes resume. Private-mode first-run (no prior DB) may still start empty — but distinguish "no data" from "read failed".
+4. **navigator.storage.persist()** — request persistent storage once after first successful hydrate / first profile create (best-effort; ignore denial; no throw).
+5. **schemaVersion + migrate().** Bump DB version; persist `schemaVersion` inside the kv state (or a dedicated key). Add `migrate(from, to, data)` that upgrades Persisted shape forward. Current shape = version 1. Keep upgrades idempotent and tested.
+6. **Settings: JSON 匯出 / 匯入.** In Settings (web/src/pages.tsx Settings): buttons 「匯出進度」 (download JSON of profile+progress+cards+schemaVersion) and 「匯入進度」 (file input → validate → replace store → save). Confirm before overwrite. Reject unknown/future schema with a clear Cantonese message. Round-trip must preserve XP, streak, lesson progress, and FSRS cards.
+
+### Unit tests (required)
+Add node:test coverage under tests/ (e.g. tests/store-persist.mjs) for:
+- migrate() v1→current no-op / forward paths
+- hydrate failure does not trigger a destructive save
+- save failure surfaces unsaved status (export a testable helper if needed)
+- export JSON → import JSON round-trip equality of Persisted fields
+- reopen-after-close behavior (mock idb or inject a fake DB factory if you refactor open behind a seam)
+
+Prefer a small injectable DB seam in store.ts so tests do not need a real browser IndexedDB. Keep `npm test` and `npm run typecheck` green.
+
+## 2) Explicitly OUT of scope this round
+- No new lessons / no CURRICULUM build-order additions.
+- No P0-2 CI workflow yet (that's fix-22).
+- No P0-3 root cleanup / Pages Actions migrate.
+- No vite major upgrade yet (that's fix-23 / P1-6).
+- Do not revert the bright cartoon UI, 小燈, or SFX.
+
+## Quality gates
+- `npm test` and `npm run typecheck` green.
+- Walk Settings export/import + Path at **390px**; banner readable; no horizontal overflow; light chrome intact.
+- Append `## Round 21 fixes` to CHANGELOG.md listing P0-1 items concretely (+ difficulty close if shipped).
+- git add -A (respect .gitignore), commit e.g. "Ship round 21: P0-1 progress durability + CEFR path", push origin main (ff-only, never --force).
+- Do NOT edit reviews/ or prompts/. Do not touch LICENSE.
+
+WHEN COMPLETELY FINISHED, as your very last action, create the file /workspace/sidequest/english-quest/.orch/fix-21.done containing the word DONE.
 ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-21.done
 
-PREVIOUS ROUND 390px AUDIT (coder, live round 19): read review/loop-r19/coder-audit.md and close every OPEN item that fix-20 did not close. Also prompts/orch-fix-20-addendum.txt.
+PREVIOUS 390px AUDITS (must close difficulty items if still open):
+- reviews/orch-r20-grok.md
+- reviews/orch-r21-grok.md
+- prompts/orch-fix-20-addendum.txt
+- review/loop-r19/coder-audit.md (still authoritative for older open pedagogy notes if any remain)

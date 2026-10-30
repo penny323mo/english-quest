@@ -1,9 +1,9 @@
 {
   "units": [
     {
-      "id": "F",
+      "id": "A1",
       "title": "打好基礎",
-      "blurb": "氣息、打招呼、數字、禮貌。",
+      "blurb": "氣息、打招呼、數字、禮貌、櫃檯同入座。",
       "lessons": [
         {
           "id": "F1",
@@ -20,24 +20,47 @@
         {
           "id": "F4",
           "cefr": "A1"
-        }
-      ]
-    },
-    {
-      "id": "J",
-      "title": "珠寶櫃檯",
-      "blurb": "明日返工用得着。",
-      "lessons": [
+        },
         {
           "id": "J1",
           "cefr": "A1"
         },
         {
+          "id": "R1",
+          "cefr": "A1"
+        }
+      ]
+    },
+    {
+      "id": "A1A2",
+      "title": "起步",
+      "blurb": "想買咩，同埋機場櫃檯。",
+      "lessons": [
+        {
           "id": "J2",
           "cefr": "A1/A2"
         },
         {
+          "id": "T1",
+          "cefr": "A1/A2"
+        }
+      ]
+    },
+    {
+      "id": "A2",
+      "title": "上路",
+      "blurb": "件件嘅名、安檢、落單，然後材料、試戴、酒店、過敏。",
+      "lessons": [
+        {
           "id": "J3",
+          "cefr": "A2"
+        },
+        {
+          "id": "T2",
+          "cefr": "A2"
+        },
+        {
+          "id": "R2",
           "cefr": "A2"
         },
         {
@@ -49,6 +72,33 @@
           "cefr": "A2"
         },
         {
+          "id": "T3",
+          "cefr": "A2"
+        },
+        {
+          "id": "R3",
+          "cefr": "A2"
+        },
+        {
+          "id": "T4",
+          "title": "的士同問路",
+          "soon": true,
+          "cefr": "A2"
+        },
+        {
+          "id": "R4",
+          "title": "用餐期間",
+          "soon": true,
+          "cefr": "A2"
+        }
+      ]
+    },
+    {
+      "id": "A2B1",
+      "title": "再深一點",
+      "blurb": "價錢同付款。問路同埋單仲未開。",
+      "lessons": [
+        {
           "id": "J6",
           "cefr": "A2/B1"
         },
@@ -56,6 +106,25 @@
           "id": "J7",
           "cefr": "A2/B1"
         },
+        {
+          "id": "T5",
+          "title": "行失咗點求人",
+          "soon": true,
+          "cefr": "A2/B1"
+        },
+        {
+          "id": "R5",
+          "title": "埋單同貼士",
+          "soon": true,
+          "cefr": "A2/B1"
+        }
+      ]
+    },
+    {
+      "id": "B1",
+      "title": "應用",
+      "blurb": "售後、投訴、加購、酒店問題、電話訂位。",
+      "lessons": [
         {
           "id": "J8",
           "title": "售後同保養",
@@ -73,74 +142,12 @@
           "title": "加購同禮盒",
           "soon": true,
           "cefr": "B1"
-        }
-      ]
-    },
-    {
-      "id": "T",
-      "title": "旅行",
-      "blurb": "機場先。",
-      "lessons": [
-        {
-          "id": "T1",
-          "cefr": "A1/A2"
-        },
-        {
-          "id": "T2",
-          "cefr": "A2"
-        },
-        {
-          "id": "T3",
-          "cefr": "A2"
-        },
-        {
-          "id": "T4",
-          "title": "的士同問路",
-          "soon": true,
-          "cefr": "A2"
-        },
-        {
-          "id": "T5",
-          "title": "行失咗點求人",
-          "soon": true,
-          "cefr": "A2/B1"
         },
         {
           "id": "T6",
           "title": "酒店問題",
           "soon": true,
           "cefr": "B1"
-        }
-      ]
-    },
-    {
-      "id": "R",
-      "title": "餐廳",
-      "blurb": "入座，然後落單。",
-      "lessons": [
-        {
-          "id": "R1",
-          "cefr": "A1"
-        },
-        {
-          "id": "R2",
-          "cefr": "A2"
-        },
-        {
-          "id": "R3",
-          "cefr": "A2"
-        },
-        {
-          "id": "R4",
-          "title": "用餐期間",
-          "soon": true,
-          "cefr": "A2"
-        },
-        {
-          "id": "R5",
-          "title": "埋單同貼士",
-          "soon": true,
-          "cefr": "A2/B1"
         },
         {
           "id": "R6",

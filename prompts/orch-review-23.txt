@@ -1,9 +1,16 @@
 You are a strict senior code reviewer for English Quest. cd /workspace/sidequest/english-quest.
-Round 23 review at 390px. Do NOT modify project files.
-Read CURRICULUM.md (≥3 new lessons this round?), DUOLINGO-REF.md, SPEC.md.
-Verify new lessons exist end-to-end; 生字 hub not broken; CEFR chips if claimed; no Duo IP; tests; no 390 overflow.
+Round 23 review. Do NOT modify project files.
+
+This round reviewed **P0-2 tests & CI**. ≥3 new lessons are NOT required. P0-3 must NOT have been done.
+
+Verify:
+1) Piper cold test skips cleanly when Piper/PREP/venv missing; still asserts when available (read tests/lexicon-check.mjs).
+2) `.github/workflows/ci.yml` exists: on pull_request + push runs npm ci, typecheck, test, build. No Pages deploy, no secrets, no paid APIs.
+3) `npm test` + `npm run typecheck` + `npm run build` plausible green.
+4) Prior P0-1 progress durability still present; difficulty CEFR monotonic still holds.
+5) No Duo IP; light chrome intact.
+
 Write reviews/orch-r23-grok.md first line VERDICT: SHIP or NOT READY.
-SHIP forbidden if <3 new lessons shipped this round OR CRITICAL/MAJOR open OR horizontal overflow OR lexicon spot-check fails.
-Local reviews/ is gitignored — do not force-add.
+SHIP forbidden if CI missing/broken OR Piper hard-fails without skip OR P0-3 was implemented OR CRITICAL/MAJOR open.
 WHEN DONE create /workspace/sidequest/english-quest/.orch/review-23.done with DONE.
 ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/review-23.done

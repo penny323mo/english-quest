@@ -883,6 +883,127 @@ FLAG_ITEMS = [
 ]
 
 
+# One learner order. CEFR never drops, including soon teasers.
+# Shorter A2 lessons stay before the lengthened J4–J6 block so the path
+# does not get easier in the middle of a band.
+PATH_BANDS = [
+    ("A1", "打好基礎", "氣息、打招呼、數字、禮貌、櫃檯同入座。", ["F1", "F2", "F3", "F4", "J1", "R1"]),
+    ("A1A2", "起步", "想買咩，同埋機場櫃檯。", ["J2", "T1"]),
+    ("A2", "上路", "件件嘅名、安檢、落單，然後材料、試戴、酒店、過敏。", ["J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4"]),
+    ("A2B1", "再深一點", "價錢同付款。問路同埋單仲未開。", ["J6", "J7", "T5", "R5"]),
+    ("B1", "應用", "售後、投訴、加購、酒店問題、電話訂位。", ["J8", "J9", "J10", "T6", "R6"]),
+]
+SHIPPED_ORDER = ["F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "J6", "J7"]
+CEFR_RANK = {"A1": 1, "A1/A2": 2, "A2": 3, "A2/B1": 4, "B1": 5, "B1/B2": 6, "B2": 7}
+
+
+def _line(lid, speaker, label, text, gloss, say=None):
+    return {
+        "id": lid,
+        "speaker": speaker,
+        "speakerLabel": label,
+        "text": text,
+        "glossYue": gloss,
+        "audio": f"assets/audio/lines/{lid}.mp3",
+        "audioSlow": f"assets/audio/lines/{lid}-slow.mp3",
+        "say": say or text,
+    }
+
+
+def polish_dialogues(lessons):
+    """Lengthen J4–J6 and keep J7/R3/T3 ahead of the lesson before them.
+
+    Gloss stays on the new grammar and one or two key lines. Reused line ids
+    keep the say text that was already rendered.
+    """
+    additions = {
+        "J4": [
+            _line("j4-l7", "mei", "Mei", "The gold is heavier than the silver.", "金重過銀。"),
+            _line("j4-l8", "tom", "Tom", "The diamond is shinier than the jade.", "鑽石亮過玉。"),
+        ],
+        "J5": [
+            _line("j5-l6", "tom", "Tom", "It feels a little loose.", ""),
+            _line("j5-l7", "mei", "Mei", "How does it feel?", "戴落感覺點？"),
+        ],
+        "J6": [
+            _line("j6-l6", "mei", "Mei", "This one is more expensive.", ""),
+            _line("j6-l7", "mei", "Mei", "If you take both, the total is lower.", "兩件一齊要，總數會平啲。"),
+            _line("j6-l8", "tom", "Tom", "That price is worth it.", ""),
+            _line("j6-m1", "mei", "Mei", "The total is a good deal.", ""),
+        ],
+        "T3": [
+            _line("t3-m1", "kai", "Kai", "Breakfast is included.", ""),
+            _line("t3-m2", "tom", "Tom", "Could I have a late checkout?", ""),
+            _line("t3-m3", "kai", "Kai", "The elevator is on the left.", ""),
+        ],
+        "R3": [
+            _line("r3-a1", "ana", "Ana", "What would you like to order?", ""),
+            _line("r3-a2", "ana", "Ana", "The sauce is spicy.", ""),
+            _line("r3-m1", "ana", "Ana", "Does this dish contain peanuts?", ""),
+            _line("r3-m2", "tom", "Tom", "Could I have it without nuts?", "", "Could I have it [[wɪθˈaʊt]] nuts?"),
+        ],
+        "J7": [
+            _line("j7-l6", "tom", "Tom", "Could I pay with cash?", ""),
+            _line("j7-l7", "tom", "Tom", "Could you wrap this?", ""),
+            _line("j7-m1", "mei", "Mei", "Would you like to pay by card?", ""),
+            _line("j7-m2", "mei", "Mei", "Here is your receipt.", "", "Here is your [[ɹɪsˈit]]."),
+            _line("j7-m3", "mei", "Mei", "Please sign the refund form.", "", "Please sign the [[ɹˈifˌʌnd]] form."),
+        ],
+    }
+    keep_gloss = {
+        "J4": {"j4-l1", "j4-l7", "j4-l8"},
+        "J5": {"j5-l1", "j5-l7"},
+        "J6": {"j6-l7"},
+        "T3": {"t3-l2", "t3-l4"},
+        "R3": {"r3-l2"},
+        "J7": {"j7-l3"},
+    }
+    by_lesson = {lesson["id"]: lesson for lesson in lessons}
+    for lid, rows in additions.items():
+        dialogue = by_lesson[lid]["dialogue"]
+        have = {row["id"] for row in dialogue}
+        for row in rows:
+            if row["id"] not in have:
+                dialogue.append(row)
+                have.add(row["id"])
+        keep = keep_gloss[lid]
+        for row in dialogue:
+            if row["id"] not in keep:
+                row["glossYue"] = ""
+
+
+def reorder_path(path):
+    found = {}
+    for unit in path["units"]:
+        for entry in unit["lessons"]:
+            found[entry["id"]] = entry
+    units = []
+    seen = []
+    for uid, title, blurb, ids in PATH_BANDS:
+        lessons = []
+        for lid in ids:
+            if lid not in found:
+                raise SystemExit(f"path missing {lid}")
+            lessons.append(found[lid])
+            seen.append(lid)
+        units.append({"id": uid, "title": title, "blurb": blurb, "lessons": lessons})
+    extra = [lid for lid in found if lid not in seen]
+    if extra:
+        raise SystemExit(f"path lessons not placed: {extra}")
+    flat = [entry for unit in units for entry in unit["lessons"]]
+    for prev, entry in zip(flat, flat[1:]):
+        if CEFR_RANK[entry["cefr"]] < CEFR_RANK[prev["cefr"]]:
+            raise SystemExit(f"cefr dip {prev['id']} {prev['cefr']} -> {entry['id']} {entry['cefr']}")
+    path["units"] = units
+
+
+def chain_next(lessons):
+    by_lesson = {lesson["id"]: lesson for lesson in lessons}
+    for index, lid in enumerate(SHIPPED_ORDER):
+        nxt = SHIPPED_ORDER[index + 1] if index + 1 < len(SHIPPED_ORDER) else None
+        by_lesson[lid]["next"] = nxt
+
+
 def apply_round20(items, lessons, path, flags, decks):
     by_id = {item["id"]: item for item in items}
     missing = [lid for lid in NEW if lid not in by_id]
@@ -917,12 +1038,6 @@ def apply_round20(items, lessons, path, flags, decks):
             item["sources"] = ["CMUdict 0.7b"]
             item["verified_at"] = "2026-10-30"
     by_lesson = {lesson["id"]: lesson for lesson in lessons}
-    by_lesson["J6"]["next"] = "J7"
-    by_lesson["J7"]["next"] = "T1"
-    by_lesson["T2"]["next"] = "T3"
-    by_lesson["T3"]["next"] = "R1"
-    by_lesson["R2"]["next"] = "R3"
-    by_lesson["R3"]["next"] = None
     by_lesson["J7"]["cefr"] = "A2/B1"
     for unit in path["units"]:
         for entry in unit["lessons"]:
@@ -944,4 +1059,7 @@ def apply_round20(items, lessons, path, flags, decks):
     jewellery["lemmas"] = list(dict.fromkeys([*jewellery["lemmas"], *J7_IDS]))
     decks["decks"].append({"id": "restaurant", "titleYue": "餐廳", "level": "A2", "lemmas": R3_IDS})
     decks["decks"].append({"id": "travel", "titleYue": "酒店入住", "level": "A2", "lemmas": T3_IDS})
+    polish_dialogues(lessons)
+    reorder_path(path)
+    chain_next(lessons)
     return decks

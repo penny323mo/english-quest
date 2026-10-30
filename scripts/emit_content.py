@@ -2333,10 +2333,17 @@ def main() -> None:
             json.dumps(lesson, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
     manifest_lines = []
+    seen_lines = set()
     for lesson in lessons:
         for row in lesson["dialogue"]:
+            if row["id"] in seen_lines:
+                continue
+            seen_lines.add(row["id"])
             manifest_lines.append(row)
     for row in extras:
+        if row["id"] in seen_lines:
+            continue
+        seen_lines.add(row["id"])
         manifest_lines.append(row)
     (OUT / "lines.json").write_text(json.dumps(manifest_lines, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     (OUT / "path.json").write_text(json.dumps(PATH, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

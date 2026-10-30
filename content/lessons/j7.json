@@ -35,7 +35,7 @@
       "speaker": "mei",
       "speakerLabel": "Mei",
       "text": "The total is ready.",
-      "glossYue": "總數準備好。",
+      "glossYue": "",
       "audio": "assets/audio/lines/j7-l1.mp3",
       "audioSlow": "assets/audio/lines/j7-l1-slow.mp3",
       "say": "The total is ready."
@@ -45,7 +45,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "I will pay by card.",
-      "glossYue": "我會用卡付款。",
+      "glossYue": "",
       "audio": "assets/audio/lines/j7-l2.mp3",
       "audioSlow": "assets/audio/lines/j7-l2-slow.mp3",
       "say": "I will pay by card."
@@ -65,7 +65,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Here is my passport.",
-      "glossYue": "呢本係我本護照。",
+      "glossYue": "",
       "audio": "assets/audio/lines/j7-l4.mp3",
       "audioSlow": "assets/audio/lines/j7-l4-slow.mp3",
       "say": "Here is my passport."
@@ -75,10 +75,60 @@
       "speaker": "mei",
       "speakerLabel": "Mei",
       "text": "I can wrap the gift.",
-      "glossYue": "我可以包裝份禮物。",
+      "glossYue": "",
       "audio": "assets/audio/lines/j7-l5.mp3",
       "audioSlow": "assets/audio/lines/j7-l5-slow.mp3",
       "say": "I can [[ɹˈæp]] the gift."
+    },
+    {
+      "id": "j7-l6",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could I pay with cash?",
+      "glossYue": "",
+      "audio": "assets/audio/lines/j7-l6.mp3",
+      "audioSlow": "assets/audio/lines/j7-l6-slow.mp3",
+      "say": "Could I pay with cash?"
+    },
+    {
+      "id": "j7-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could you wrap this?",
+      "glossYue": "",
+      "audio": "assets/audio/lines/j7-l7.mp3",
+      "audioSlow": "assets/audio/lines/j7-l7-slow.mp3",
+      "say": "Could you wrap this?"
+    },
+    {
+      "id": "j7-m1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Would you like to pay by card?",
+      "glossYue": "",
+      "audio": "assets/audio/lines/j7-m1.mp3",
+      "audioSlow": "assets/audio/lines/j7-m1-slow.mp3",
+      "say": "Would you like to pay by card?"
+    },
+    {
+      "id": "j7-m2",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Here is your receipt.",
+      "glossYue": "",
+      "audio": "assets/audio/lines/j7-m2.mp3",
+      "audioSlow": "assets/audio/lines/j7-m2-slow.mp3",
+      "say": "Here is your [[ɹɪsˈit]]."
+    },
+    {
+      "id": "j7-m3",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Please sign the refund form.",
+      "glossYue": "",
+      "audio": "assets/audio/lines/j7-m3.mp3",
+      "audioSlow": "assets/audio/lines/j7-m3-slow.mp3",
+      "say": "Please sign the [[ɹˈifˌʌnd]] form."
     }
   ],
   "understand": [
@@ -321,5 +371,5 @@
       "signature-noun"
     ]
   },
-  "next": "T1"
+  "next": null
 }

@@ -35,7 +35,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "I'd like the chicken, please.",
-      "glossYue": "我想叫雞，唔該。",
+      "glossYue": "",
       "audio": "assets/audio/lines/r3-l1.mp3",
       "audioSlow": "assets/audio/lines/r3-l1-slow.mp3",
       "say": "I'd like the chicken, please."
@@ -55,7 +55,7 @@
       "speaker": "ana",
       "speakerLabel": "Ana",
       "text": "We will check the ingredients.",
-      "glossYue": "我哋會查吓成分。",
+      "glossYue": "",
       "audio": "assets/audio/lines/r3-l3.mp3",
       "audioSlow": "assets/audio/lines/r3-l3-slow.mp3",
       "say": "We will check the ingredients."
@@ -65,7 +65,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Could I have the sauce on the side?",
-      "glossYue": "醬可唔可以另上？",
+      "glossYue": "",
       "audio": "assets/audio/lines/r3-l4.mp3",
       "audioSlow": "assets/audio/lines/r3-l4-slow.mp3",
       "say": "Could I have the sauce [[ˈɔn]] the side?"
@@ -75,10 +75,50 @@
       "speaker": "ana",
       "speakerLabel": "Ana",
       "text": "Thank you for telling me.",
-      "glossYue": "多謝你話我知。",
+      "glossYue": "",
       "audio": "assets/audio/lines/r3-l5.mp3",
       "audioSlow": "assets/audio/lines/r3-l5-slow.mp3",
       "say": "Thank you for telling me."
+    },
+    {
+      "id": "r3-a1",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "What would you like to order?",
+      "glossYue": "",
+      "audio": "assets/audio/lines/r3-a1.mp3",
+      "audioSlow": "assets/audio/lines/r3-a1-slow.mp3",
+      "say": "What would you like to order?"
+    },
+    {
+      "id": "r3-a2",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "The sauce is spicy.",
+      "glossYue": "",
+      "audio": "assets/audio/lines/r3-a2.mp3",
+      "audioSlow": "assets/audio/lines/r3-a2-slow.mp3",
+      "say": "The sauce is spicy."
+    },
+    {
+      "id": "r3-m1",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "Does this dish contain peanuts?",
+      "glossYue": "",
+      "audio": "assets/audio/lines/r3-m1.mp3",
+      "audioSlow": "assets/audio/lines/r3-m1-slow.mp3",
+      "say": "Does this dish contain peanuts?"
+    },
+    {
+      "id": "r3-m2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could I have it without nuts?",
+      "glossYue": "",
+      "audio": "assets/audio/lines/r3-m2.mp3",
+      "audioSlow": "assets/audio/lines/r3-m2-slow.mp3",
+      "say": "Could I have it [[wɪθˈaʊt]] nuts?"
     }
   ],
   "understand": [
@@ -316,5 +356,5 @@
       "gluten-noun"
     ]
   },
-  "next": null
+  "next": "J6"
 }

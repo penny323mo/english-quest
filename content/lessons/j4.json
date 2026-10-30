@@ -46,7 +46,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Is the diamond natural?",
-      "glossYue": "粒鑽石係咪天然？",
+      "glossYue": "",
       "audio": "assets/audio/lines/j4-l2.mp3",
       "audioSlow": "assets/audio/lines/j4-l2-slow.mp3",
       "say": "Is the [[dˈaɪmənd]] [[nˈætʃɚəl]]?"
@@ -56,7 +56,7 @@
       "speaker": "mei",
       "speakerLabel": "Mei",
       "text": "Yes. It is certified.",
-      "glossYue": "係。有證書。",
+      "glossYue": "",
       "audio": "assets/audio/lines/j4-l3.mp3",
       "audioSlow": "assets/audio/lines/j4-l3-slow.mp3",
       "say": "Yes. It is [[sˈɜtəfˌaɪd]]."
@@ -66,7 +66,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "I like this jade.",
-      "glossYue": "我鍾意呢塊玉。",
+      "glossYue": "",
       "audio": "assets/audio/lines/j4-l4.mp3",
       "audioSlow": "assets/audio/lines/j4-l4-slow.mp3",
       "say": "I like this jade."
@@ -76,10 +76,30 @@
       "speaker": "mei",
       "speakerLabel": "Mei",
       "text": "This setting is eighteen karat gold.",
-      "glossYue": "呢個鑲托係十八開金。",
+      "glossYue": "",
       "audio": "assets/audio/lines/j4-l5.mp3",
       "audioSlow": "assets/audio/lines/j4-l5-slow.mp3",
       "say": "This setting is eighteen [[kˈɛɹət]] gold."
+    },
+    {
+      "id": "j4-l7",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "The gold is heavier than the silver.",
+      "glossYue": "金重過銀。",
+      "audio": "assets/audio/lines/j4-l7.mp3",
+      "audioSlow": "assets/audio/lines/j4-l7-slow.mp3",
+      "say": "The gold is heavier than the silver."
+    },
+    {
+      "id": "j4-l8",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "The diamond is shinier than the jade.",
+      "glossYue": "鑽石亮過玉。",
+      "audio": "assets/audio/lines/j4-l8.mp3",
+      "audioSlow": "assets/audio/lines/j4-l8-slow.mp3",
+      "say": "The diamond is shinier than the jade."
     }
   ],
   "understand": [

@@ -36,7 +36,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "How much does this cost?",
-      "glossYue": "呢件幾多錢？",
+      "glossYue": "",
       "audio": "assets/audio/lines/j6-l1.mp3",
       "audioSlow": "assets/audio/lines/j6-l1-slow.mp3",
       "say": "How much does this [[kˈɑst]]?"
@@ -46,7 +46,7 @@
       "speaker": "mei",
       "speakerLabel": "Mei",
       "text": "This piece is on sale today.",
-      "glossYue": "呢件今日特價。",
+      "glossYue": "",
       "audio": "assets/audio/lines/j6-l2.mp3",
       "audioSlow": "assets/audio/lines/j6-l2-slow.mp3",
       "say": "This piece is on sale today."
@@ -56,7 +56,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Is there a discount?",
-      "glossYue": "有冇折扣？",
+      "glossYue": "",
       "audio": "assets/audio/lines/j6-l3.mp3",
       "audioSlow": "assets/audio/lines/j6-l3-slow.mp3",
       "say": "Is there a discount?"
@@ -66,7 +66,7 @@
       "speaker": "mei",
       "speakerLabel": "Mei",
       "text": "Ten percent off, and tax is included.",
-      "glossYue": "減一成，稅已經包咗。",
+      "glossYue": "",
       "audio": "assets/audio/lines/j6-l4.mp3",
       "audioSlow": "assets/audio/lines/j6-l4-slow.mp3",
       "say": "Ten percent off, and tax is included."
@@ -76,10 +76,50 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "That is within my budget.",
-      "glossYue": "呢個喺我預算之內。",
+      "glossYue": "",
       "audio": "assets/audio/lines/j6-l5.mp3",
       "audioSlow": "assets/audio/lines/j6-l5-slow.mp3",
       "say": "That is within my budget."
+    },
+    {
+      "id": "j6-l6",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "This one is more expensive.",
+      "glossYue": "",
+      "audio": "assets/audio/lines/j6-l6.mp3",
+      "audioSlow": "assets/audio/lines/j6-l6-slow.mp3",
+      "say": "This one is more expensive."
+    },
+    {
+      "id": "j6-l7",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "If you take both, the total is lower.",
+      "glossYue": "兩件一齊要，總數會平啲。",
+      "audio": "assets/audio/lines/j6-l7.mp3",
+      "audioSlow": "assets/audio/lines/j6-l7-slow.mp3",
+      "say": "If you take both, the total is lower."
+    },
+    {
+      "id": "j6-l8",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "That price is worth it.",
+      "glossYue": "",
+      "audio": "assets/audio/lines/j6-l8.mp3",
+      "audioSlow": "assets/audio/lines/j6-l8-slow.mp3",
+      "say": "That price is worth it."
+    },
+    {
+      "id": "j6-m1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "The total is a good deal.",
+      "glossYue": "",
+      "audio": "assets/audio/lines/j6-m1.mp3",
+      "audioSlow": "assets/audio/lines/j6-m1-slow.mp3",
+      "say": "The total is a good deal."
     }
   ],
   "understand": [

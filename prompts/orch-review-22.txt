@@ -1,9 +1,20 @@
 You are a strict senior code reviewer for English Quest. cd /workspace/sidequest/english-quest.
 Round 22 review at 390px. Do NOT modify project files.
-Read CURRICULUM.md (≥3 new lessons this round?), DUOLINGO-REF.md, SPEC.md.
-Verify new lessons exist end-to-end; 生字 hub not broken; CEFR chips if claimed; no Duo IP; tests; no 390 overflow.
-Write reviews/orch-r22-grok.md first line VERDICT: SHIP or NOT READY.
-SHIP forbidden if <3 new lessons shipped this round OR CRITICAL/MAJOR open OR horizontal overflow OR lexicon spot-check fails.
+
+This round reviewed **engineering stability P0-1** (progress durability), NOT new lessons. ≥3 new lessons are NOT required.
+
+Verify ALL of:
+1) IndexedDB reopen on close / failed connection (read web/src/store.ts).
+2) Save failure shows 「未儲存」banner + retry; hydrate failure is read-only and never blank-saves over old data.
+3) navigator.storage.persist() requested best-effort.
+4) schemaVersion + migrate() present and tested.
+5) Settings JSON 匯出 / 匯入 round-trip works at 390px (or is clearly implemented + covered by unit tests if UI walk is limited).
+6) Unit tests for migrate / hydrate-fail / save-fail / export-import exist and `npm test` + `npm run typecheck` green.
+7) DIFFICULTY PROGRESSION still holds: Path CEFR never decreases; J4–J7 level fit from orch-fix-20-addendum / orch-r20 + orch-r21 reviews closed.
+8) Light cartoon chrome + SFX + 小燈 still intact; no Duo IP; no 390 overflow.
+
+Read SPEC.md, ART-STYLE.md. Write reviews/orch-r22-grok.md first line VERDICT: SHIP or NOT READY.
+SHIP forbidden while any P0-1 item above is missing OR difficulty CRITICAL/MAJOR still open OR typecheck/tests red.
 Local reviews/ is gitignored — do not force-add.
 WHEN DONE create /workspace/sidequest/english-quest/.orch/review-22.done with DONE.
 ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/review-22.done
