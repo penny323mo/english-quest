@@ -1,0 +1,35 @@
+You are the coder for English Quest (grok 4.7). cd /workspace/sidequest/english-quest.
+Phase 4 unlimited. Round 31. Read CURRICULUM.md + ART-STYLE.md + DUOLINGO-REF.md + SPEC.md.
+
+CRITICAL: MUST ship ≥3 NEW lessons from CURRICULUM.md that are not yet in content/lessons/. Target this round: F5 Personal info basics (A1), F6 Daily routines (A1/A2), D4 Phone/internet shop (A2) and D5 Post office/parcel (A2) — slot each at its correct CEFR position in path.json (F5/F6 inside Unit F, D4/D5 with the A2 lessons) so the path still rises smoothly. If fix-30 already shipped any of these, pick the next unshipped ones (R7, T9, W6). Real app-code diff required (content/ web/ tests/ assets/ scripts/). No "no defects" / CHANGELOG-only exits.
+
+Keep gold bar: IPA/CMUdict, Kokoro pad, natural Cantonese, examples >2 words, tests, LH≥98, 390px, bright cartoon chrome + SFX + 小燈. No Duo IP. P0-3 still forbidden without Penny.
+
+DIFFICULTY PROGRESSION (Penny): Path easy→hard; CEFR never decreases; no grammar before taught. Close open audit items from the previous review.
+
+Also continue WORD-REVIEW slices. No paid services, no secrets, no nightly panes, no force-add gitignored reports.
+
+Append '## Round 31 fixes' to CHANGELOG.md. Commit + push ff-only to origin main.
+Do NOT edit reviews/ or prompts/. Do not touch LICENSE.
+
+
+## Coder live 390px audit of round 29 (review/loop-r29/coder-audit.md; audited while fix-30 was in flight — re-verify STILL OPEN items against fix-30 and close what is still open) — every OPEN/NEW item below must be closed; reviewer may not mark SHIP while any is open
+# Coder live audit — round 29 (live a76d0ee/6b0a74f, bundle index-Cwkcyb9y.js), 2026-10-31 00:20
+Walk (live URL, 390x844 touch, real taps): path + J12, T8, J11, D1, D2, D3 hook → listen → chunks → build → quiz → pron → recap → 下一課, 21–22 steps each, 0 page errors, 0 HTTP >=400, scrollWidth 390 throughout. Path 35/35 playable + locked placeholders, CEFR non-decreasing A1→B2 (J12/T8 B1, J11 B2); J12 → T8 → W2, D3 → J11 → end card.
+Lighthouse mobile: 100/100/100/100.
+Lexicon: 20 J12/T8/J11 entries (lex20.tsv), audio 200 for all; 19 single words = CMUdict, 1 phrase.
+Difficulty (avg words/line in path order): F1 6.8 → F4 2.6 (DIP inside Unit F), then rises 7.4 (J1) → 17.8 (J11). Today/tonight lines still high: J9 6, T6 5, J6 4, D2 4, D3 4, T8 3.
+Scores: Art 7, UI 8, Lexicon 8, Pron UX 9, Pedagogy 6, Speaking 8, SRS 9, Flow 9, Perf 10, Audio 9, Durability 9, CI 9.
+CLOSED: #28 appointment now 預約 (J11 + D1); #29 follow-up now /ˈfɑ.loʊ.ˌʌp/ (CMU AH2); #31 speaker label now separate pill (j11-s2.png, t8-s2.png).
+STILL OPEN (fix-30 carries — re-verify): #22 polish-noun card still uses the VERB example ("Please polish it with a soft cloth."); #34 today/tonight padding (counts above; new T8 l1 "purpose of your visit today", J11 l1 "a quiet engagement for today"); #35 deposit-noun still "The deposit equals one full month here." / 「呢度按金等於一個完整月」; #37 every lesson still Kai + Tom with the same two avatars (J12/T8/J11 included — immigration officer and jewellery consultant are both "Kai"); #30/#32/#36/#38 re-verify.
+NEW:
+39. Lexicon sense: follow-up-noun is one card glossed 覆診 ("I need a follow-up after this visit.") but J11 uses it in a jewellery sense ("I want a discreet follow-up after the visit."). Split into follow-up-noun (跟進, J11/W2) and a medical sense (覆診, D1), each with its own example; the J11 word card must show 跟進.
+40. Art: J11 hero is a tight crop of two faces against empty sky, no jewellery/consult cues (j11-s0.png); T8 hero has ~40% empty sky above the officer and no immigration desk signage/queue (t8-s0.png). Heroes must show the scene (tray, sketchbook, ring box for J11; booth, passport stamp, signage for T8) per ART-STYLE.md.
+41. Naturalness: J12 "Please notify me by a short phone message." → "Please text me when it's ready." (and quiz stem/options to match, j12-s5.png); distractor 「請而家轉線」 is unnatural → 「請幫我轉接」; T8 "my stay is for five days at a quiet city hotel" → "I'm staying for five days at a hotel in the city."; J11 「定係今日一個低調嘅訂婚」 → 「定係低調慶祝訂婚」.
+42. Difficulty: Unit F words/line falls 6.8 (F1) → 5.6 → 4.4 → 2.6 (F4) — a dip at the start of the path. Reorder or rebalance F1–F4 (and the new F5/F6) so A1 rises smoothly into J1 (7.4).
+43. Path thumbnails F2–J1 render as blurred blank discs at first paint (path.png). Make lesson thumbnails show the real art (eager-load the first screen, or a low-res placeholder of the actual image, not a blur blob).
+Screenshots: j11-s0.png, j11-s2.png, t8-s0.png, t8-s2.png, j12-s5.png, path.png.
+
+
+WHEN COMPLETELY FINISHED, create /workspace/sidequest/english-quest/.orch/fix-31.done with DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-31.done

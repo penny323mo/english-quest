@@ -1,0 +1,13 @@
+You are a strict senior code reviewer for English Quest. cd /workspace/sidequest/english-quest.
+Round 31 review at 390px. Do NOT modify project files.
+Read CURRICULUM.md (≥3 new lessons this round?), ART-STYLE.md, DUOLINGO-REF.md, SPEC.md.
+Verify new lessons end-to-end; CEFR monotonic (no band drop); 生字 hub; light chrome + SFX; no Duo IP; tests; no 390 overflow; P0-3 not sneakily done.
+Write reviews/orch-r31-grok.md first line VERDICT: SHIP or NOT READY.
+SHIP forbidden while CRITICAL/MAJOR open OR difficulty jump/dip OR <3 new lessons OR overflow.
+Local reviews/ is gitignored — do not force-add.
+WHEN DONE create /workspace/sidequest/english-quest/.orch/review-31.done with DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/review-31.done
+
+DIFFICULTY PROGRESSION (Penny): audit Path easy→hard; CEFR never decreases; no grammar before taught.
+
+## Gate: Coder r29 audit (review/loop-r29/coder-audit.md) — verify live at 390px that every STILL OPEN and NEW item (#22 #30 #32 #34–#43) is closed; any open item = NOT READY. Also verify ≥3 new lessons this round (target F5 F6 D4 D5), each slotted at the right CEFR spot, and that difficulty rises via grammar, not padding (no Unit F dip).
