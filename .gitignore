@@ -15,10 +15,10 @@ __pycache__/
 credentials*
 *token*
 
-# Local audit / report artifacts (do not push new ones; existing tracked copies stay on GitHub)
+# Local audit / report artifacts (never push)
 review/loop-*/
 screenshots/orch/
 REPORT.md
 
-# Reviewer write-ups — do not push new ones (existing tracked copies stay on GitHub; do not git rm)
+# Reviewer write-ups (never push)
 reviews/orch-r*.md
