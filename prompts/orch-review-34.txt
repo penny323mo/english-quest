@@ -1,0 +1,6 @@
+You are a strict senior code reviewer for English Quest. cd /workspace/sidequest/english-quest.
+Round 34 review at 390px. Do NOT modify project files.
+Read CURRICULUM.md (≥3 new lessons this round: R9, W7, T10), ART-STYLE.md, review/mockup-v1, SPEC.md, prompts/orch-fix-34.txt and review/loop-r32/coder-audit.md.
+Verify #53–#58 closed (sans lesson titles, transparent 小燈, R7/W6/T9 dialogue answers its question, no filler tokens, natural lexicon examples, IPA fixes + syllabifier test, R7 hero prop + first paint, W6 crop/avatars); carried #40 #43 #48 #50 #51 #52; new lessons end-to-end; CEFR monotonic and avg words/line never drops >0.5; coherence + filler tests exist and pass; no 390 overflow; no Duo IP.
+Write reviews/orch-r34-grok.md first line VERDICT: SHIP or NOT READY.
+SHIP forbidden while any CRITICAL/MAJOR open, any P0 STYLE item open, any #-numbered audit item open, difficulty jump/dip, <3 new lessons, or overflow.

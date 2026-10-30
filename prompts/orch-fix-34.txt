@@ -1,0 +1,19 @@
+Phase 4 unlimited. Round 34. Read CURRICULUM.md + ART-STYLE.md + DUOLINGO-REF.md + SPEC.md + review/mockup-v1 (Penny-approved) + review/loop-r32/coder-audit.md first.
+cd /workspace/sidequest/english-quest. Never touch the grokbot repo or the nightly panes. No paid services. Report files under review/ stay local (never commit review/loop-r*/ or review/style-gap/).
+
+## FIRST: close Coder round-32 live audit (bundle index-BosYdlYB.js) — see review/loop-r32/coder-audit.md
+- #53 P0 STYLE: lesson title + can-do headline still big serif -> Nunito/sans like mockup-v1; 小燈 on path must be a transparent cut-out, not a square tile with blue background.
+- #54 MAJOR dialogue coherence in R7/W6/T9: every answer must answer the question just asked; props stay consistent (R7: soup + side dish only, no "fish", no "rice instead"); no speaker >2 lines in a row; no repeated offer (T9 voucher twice). Rewrite W6 as a real interview Q->A.
+- #55 MAJOR filler padding: remove "once more", "after lunch", "at all", "for us", "as well for us", "this time round", "so far", "truly", "already", "really", "kindly", "well" used as padding. Raise length with grammar (because/if/when clauses, could/would, present perfect), not filler. Add these tokens to the content test (fail if a line contains ≥2 of them).
+- #56 lexicon examples must be natural sentences: achieved, reliable, voucher, customer-facing, delayed (yue 我哋班機).
+- #57 IPA: announcement /ə.ˈnaʊns.mənt/, standby /ˈstænd.ˌbaɪ/, undercooked /ˌʌn.dɚ.ˈkʊkt/; fix the syllabifier rule (no /sm/ onset after a nasal coda), add tests.
+- #58 R7 hero: preload so first paint is not a blank blur; new art must show the table with the cold soup bowl; W6 quiz crop must keep both faces; W6 avatar chips must match the two interview characters.
+- Carried from fix-33 if still open: #40 #43 #48 #50 #51 #52.
+
+## NEW FEATURE TARGET (≥3 new lessons)
+Add to CURRICULUM.md and ship end-to-end (12 beats, hero WebP 900×1200 bright soft ink-outline cartoon per ART-STYLE §5 matching mockup-v1, lexicon CMUdict IPA, Kokoro audio, natural Cantonese, examples unique per lemma, tests), slotted by CEFR so the path stays non-decreasing and avg words/line rises smoothly:
+- **R9 — Paying the bill / 埋單同夾錢 · A2** (the bill please, split it, pay by card/Octopus, service charge, a mistake on the bill).
+- **W7 — Calling in sick / 打電話請病假 · A2/B1** (I'm not feeling well, doctor's note, cover my shift, back on Monday).
+- **T10 — Lost luggage / 行李唔見咗 · B1** (baggage claim, describe the bag, claim form, tag number, deliver to my hotel).
+Every dialogue must pass the coherence test (Q->A, no role swaps, no duplicate offers) and the filler test.
+Run tests + build; Lighthouse mobile Perf ≥98. Append '## Round 34' to CHANGELOG.md. Do not git commit.
