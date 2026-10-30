@@ -66,11 +66,11 @@
       "id": "t8-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "This trip is not for business, and my return ticket shows the fifth day of the stay.",
-      "glossYue": "呢趟唔係公差，回程機票寫住逗留嘅第五日。",
+      "text": "This trip is not for leisure, and my homeward pass shows the fifth day of the stay.",
+      "glossYue": "呢趟唔係休閒，返程嗰張證顯示住到第五日。",
       "audio": "assets/audio/lines/t8-l4.mp3",
       "audioSlow": "assets/audio/lines/t8-l4-slow.mp3",
-      "say": "This trip is not for business, and my return ticket shows the fifth day of the stay.",
+      "say": "This trip is not for leisure, and my homeward pass shows the fifth day of the stay.",
       "hideGloss": true
     },
     {
@@ -99,11 +99,11 @@
       "id": "t8-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have nothing to declare apart from this small gift, and the goods are for personal use.",
-      "glossYue": "除咗呢份細禮物，我冇嘢申報，貨物係自己用。",
+      "text": "I have nothing to report apart from this small present, and the items are for personal use.",
+      "glossYue": "除咗呢份小禮物，我冇其他要報，啲物品係自用。",
       "audio": "assets/audio/lines/t8-l7.mp3",
       "audioSlow": "assets/audio/lines/t8-l7-slow.mp3",
-      "say": "I have nothing to declare apart from this small gift, and the goods are for personal use.",
+      "say": "I have nothing to report apart from this small present, and the items are for personal use.",
       "hideGloss": true
     },
     {
@@ -194,7 +194,7 @@
       "type": "choice",
       "promptYue": "關員問你帶咗咩。你點先答？",
       "choices": [
-        "I have nothing to declare apart from this small gift, and the goods are for personal use.",
+        "I have nothing to report apart from this small present, and the items are for personal use.",
         "I can reserve this bracelet for Mei.",
         "Our opening hours are on the door."
       ],
@@ -244,7 +244,7 @@
         "line": "Are you here for business as well, and do you have a return ticket in your bag?",
         "audio": "assets/audio/lines/t8-l3.mp3",
         "audioSlow": "assets/audio/lines/t8-l3-slow.mp3",
-        "expect": "This trip is not for business, and my return ticket shows the fifth day of the stay.",
+        "expect": "This trip is not for leisure, and my homeward pass shows the fifth day of the stay.",
         "keywords": [
           "business",
           "ticket"
@@ -258,7 +258,7 @@
         "line": "Please complete this short form for me here, and tell me if you have nothing to declare.",
         "audio": "assets/audio/lines/t8-l6.mp3",
         "audioSlow": "assets/audio/lines/t8-l6-slow.mp3",
-        "expect": "I have nothing to declare apart from this small gift, and the goods are for personal use.",
+        "expect": "I have nothing to report apart from this small present, and the items are for personal use.",
         "keywords": [
           "declare",
           "gift"

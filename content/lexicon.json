@@ -26614,9 +26614,9 @@
         "outdoor table",
         "outdoor seat"
       ],
-      "example": "We may need an outdoor table if it rains.",
-      "exampleYue": "如果落雨，我哋可能要一張室外檯。",
-      "say": "We may need an outdoor table if it rains.",
+      "example": "An outdoor table is lovely when the sky stays clear.",
+      "exampleYue": "天晴嘅時候，戶外檯都幾舒服。",
+      "say": "An outdoor table is lovely when the sky stays clear.",
       "variants": [],
       "note": "",
       "sources": [
@@ -26627,15 +26627,15 @@
       "senseMismatch": false,
       "cmuLemma": "outdoor",
       "phrase": false,
-      "audioSha256": "17a339b85f64174b34ef9e34210fa6c5180be2f6e12fbe56c446ef8bd88b078e",
+      "audioSha256": "3340a524fac2dc6f918faa39d75eb2bad176fff8f2fb6971fb44fcfdeff7ae6a",
       "register": "餐廳",
       "examples": [
         {
-          "en": "We may need an outdoor table if it rains.",
-          "yue": "如果落雨，我哋可能要一張室外檯。",
+          "en": "An outdoor table is lovely when the sky stays clear.",
+          "yue": "天晴嘅時候，戶外檯都幾舒服。",
           "audio": "assets/audio/words/outdoor-adj.mp3",
           "audioSlow": "assets/audio/words/outdoor-adj-slow.mp3",
-          "say": "We may need an outdoor table if it rains."
+          "say": "An outdoor table is lovely when the sky stays clear."
         },
         {
           "en": "The outdoor tables are fully booked this week.",
@@ -27723,9 +27723,9 @@
         "sincere care",
         "sincere apology"
       ],
-      "example": "Please accept this sincere apology from our team.",
-      "exampleYue": "請接受我哋團隊呢個誠懇嘅道歉。",
-      "say": "Please accept this sincere apology from our team.",
+      "example": "She gave a sincere answer about the broken clasp.",
+      "exampleYue": "佢就個壞扣畀咗個誠懇嘅答案。",
+      "say": "She gave a sincere answer about the broken clasp.",
       "variants": [],
       "note": "",
       "sources": [
@@ -27736,22 +27736,22 @@
       "senseMismatch": false,
       "cmuLemma": "sincere",
       "phrase": false,
-      "audioSha256": "aeba9abb53bc3f1ab2a610982fa80dadf54bc24d9faaa277c834e2a5a33036b1",
+      "audioSha256": "ddea60250924c3c4cfdce6879eb8e94ee1982c4e31e82ab6c4b7db13d0dc7882",
       "register": "職場",
       "examples": [
         {
-          "en": "Please accept this sincere apology from our team.",
-          "yue": "請接受我哋團隊呢個誠懇嘅道歉。",
+          "en": "She gave a sincere answer about the broken clasp.",
+          "yue": "佢就個壞扣畀咗個誠懇嘅答案。",
           "audio": "assets/audio/words/sincere-adj.mp3",
           "audioSlow": "assets/audio/words/sincere-adj-slow.mp3",
-          "say": "Please accept this sincere apology from our team."
+          "say": "She gave a sincere answer about the broken clasp."
         },
         {
-          "en": "I will look into the order with sincere care.",
-          "yue": "我會認真跟進呢張單。",
+          "en": "A sincere note can calm an upset guest.",
+          "yue": "一封誠懇嘅短訊可以安撫唔開心嘅客人。",
           "audio": "assets/audio/words/sincere-adj-ex2.mp3",
           "audioSlow": "assets/audio/words/sincere-adj-ex2-slow.mp3",
-          "say": "I will look into the order with sincere care."
+          "say": "A sincere note can calm an upset guest."
         }
       ]
     },
@@ -27784,9 +27784,9 @@
         "a sincere apology",
         "this apology"
       ],
-      "example": "Please accept this sincere apology from our team.",
-      "exampleYue": "請接受我哋團隊呢個誠懇嘅道歉。",
-      "say": "Please accept this sincere apology from our team.",
+      "example": "Please accept this apology for the late repair.",
+      "exampleYue": "維修遲咗，請接受呢個道歉。",
+      "say": "Please accept this apology for the late repair.",
       "variants": [],
       "note": "",
       "sources": [
@@ -27797,15 +27797,15 @@
       "senseMismatch": false,
       "cmuLemma": "apology",
       "phrase": false,
-      "audioSha256": "7d33aeda1e1401241bada657b6b8d1f5afdba2ea2c6bb07d403eca4421235568",
+      "audioSha256": "9ef069cad7ce5e7e7cbd543c9882f143eaa43f181203d591bf8f41ecce17decd",
       "register": "職場",
       "examples": [
         {
-          "en": "Please accept this sincere apology from our team.",
-          "yue": "請接受我哋團隊呢個誠懇嘅道歉。",
+          "en": "Please accept this apology for the late repair.",
+          "yue": "維修遲咗，請接受呢個道歉。",
           "audio": "assets/audio/words/apology-noun.mp3",
           "audioSlow": "assets/audio/words/apology-noun-slow.mp3",
-          "say": "Please accept this sincere apology from our team."
+          "say": "Please accept this apology for the late repair."
         },
         {
           "en": "A clear update should follow this sincere apology.",
@@ -30426,6 +30426,2067 @@
           "audio": "assets/audio/words/follow-up-visit-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/follow-up-visit-noun-ex2-slow.mp3",
           "say": "The follow-up is next Friday morning."
+        }
+      ]
+    },
+    {
+      "id": "ordered-verb",
+      "lemma": "ordered",
+      "pos": "verb",
+      "senseId": "past-request",
+      "ipa": "/ˈɔɹ.dɚd/",
+      "syllables": [
+        "or",
+        "dered"
+      ],
+      "syllableIpa": [
+        "ˈɔɹ",
+        "dɚd"
+      ],
+      "stress": 1,
+      "arpabet": "AO1 R D ER0 D",
+      "audio": "assets/audio/words/ordered-verb.mp3",
+      "audioSlow": "assets/audio/words/ordered-verb-slow.mp3",
+      "glossYue": "點咗",
+      "glossZh": "點咗",
+      "jyutping": "dim2 zo2",
+      "collocations": [
+        "ordered the soup",
+        "ordered the fish"
+      ],
+      "example": "I ordered the soup before the others sat down.",
+      "exampleYue": "我喺其他人坐低之前點咗湯。",
+      "say": "I ordered the soup before the others sat down.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "ordered",
+      "phrase": false,
+      "audioSha256": "b1997aad420c5ec0344ab36a005aaac062ac9db54059ee0b0e42f93e143ec965",
+      "register": "餐廳",
+      "usageNotes": "點菜用過去式 ordered，後面直接加食物。",
+      "pitfallsYue": "唔好用 order 講已經點咗嘅菜。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I ordered the soup before the others sat down.",
+          "yue": "我喺其他人坐低之前點咗湯。",
+          "audio": "assets/audio/words/ordered-verb.mp3",
+          "audioSlow": "assets/audio/words/ordered-verb-slow.mp3",
+          "say": "I ordered the soup before the others sat down."
+        },
+        {
+          "en": "She ordered the fish and a glass of water.",
+          "yue": "佢點咗魚同埋一杯水。",
+          "audio": "assets/audio/words/ordered-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/ordered-verb-ex2-slow.mp3",
+          "say": "She ordered the fish and a glass of water."
+        }
+      ]
+    },
+    {
+      "id": "cold-adj",
+      "lemma": "cold",
+      "pos": "adj",
+      "senseId": "low-temperature",
+      "ipa": "/ˈkoʊld/",
+      "syllables": [
+        "cold"
+      ],
+      "syllableIpa": [
+        "ˈkoʊld"
+      ],
+      "stress": 1,
+      "arpabet": "K OW1 L D",
+      "audio": "assets/audio/words/cold-adj.mp3",
+      "audioSlow": "assets/audio/words/cold-adj-slow.mp3",
+      "glossYue": "凍",
+      "glossZh": "凍",
+      "jyutping": "dung3",
+      "collocations": [
+        "a cold soup",
+        "cold food"
+      ],
+      "example": "The soup on the table is cold.",
+      "exampleYue": "檯上嗰碗湯係凍嘅。",
+      "say": "The soup on the table is cold.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "cold",
+      "phrase": false,
+      "audioSha256": "bd9e966a51f3538475d47bb0b10c34066d16d332482aa46b30e20d959447d377",
+      "register": "餐廳",
+      "usageNotes": "形容食物溫度，唔係講天氣。",
+      "pitfallsYue": "凍湯唔好講成 cool，客人會覺得你輕描淡寫。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The soup on the table is cold.",
+          "yue": "檯上嗰碗湯係凍嘅。",
+          "audio": "assets/audio/words/cold-adj.mp3",
+          "audioSlow": "assets/audio/words/cold-adj-slow.mp3",
+          "say": "The soup on the table is cold."
+        },
+        {
+          "en": "Cold food goes back to the kitchen.",
+          "yue": "凍咗嘅食物要送返廚房。",
+          "audio": "assets/audio/words/cold-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/cold-adj-ex2-slow.mp3",
+          "say": "Cold food goes back to the kitchen."
+        }
+      ]
+    },
+    {
+      "id": "undercooked-adj",
+      "lemma": "undercooked",
+      "pos": "adj",
+      "senseId": "not-cooked-enough",
+      "ipa": "/ən.dɚ.ˈkʊkt/",
+      "syllables": [
+        "un",
+        "der",
+        "cooked"
+      ],
+      "syllableIpa": [
+        "ən",
+        "dɚ",
+        "ˈkʊkt"
+      ],
+      "stress": 3,
+      "arpabet": "AH0 N D ER0 K UH1 K T",
+      "audio": "assets/audio/words/undercooked-adj.mp3",
+      "audioSlow": "assets/audio/words/undercooked-adj-slow.mp3",
+      "glossYue": "未煮熟",
+      "glossZh": "未煮熟",
+      "jyutping": "mei6 zyu2 suk6",
+      "collocations": [
+        "undercooked fish",
+        "an undercooked side"
+      ],
+      "example": "The side looks undercooked on the plate.",
+      "exampleYue": "碟上面份配菜睇落未煮熟。",
+      "say": "The side looks undercooked on the plate.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "undercooked",
+      "phrase": false,
+      "audioSha256": "34ac80f2d2afcb5f5e54775a81f000a719952da0dafa547db7d8528feef2d4c8",
+      "register": "餐廳",
+      "usageNotes": "講煮得唔夠，語氣直接但仍然客氣。",
+      "pitfallsYue": "唔好用 raw 代替，raw 係完全生。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The side looks undercooked on the plate.",
+          "yue": "碟上面份配菜睇落未煮熟。",
+          "audio": "assets/audio/words/undercooked-adj.mp3",
+          "audioSlow": "assets/audio/words/undercooked-adj-slow.mp3",
+          "say": "The side looks undercooked on the plate."
+        },
+        {
+          "en": "Please take the undercooked fish back.",
+          "yue": "請將未煮熟嘅魚收回去。",
+          "audio": "assets/audio/words/undercooked-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/undercooked-adj-ex2-slow.mp3",
+          "say": "Please take the undercooked fish back."
+        }
+      ]
+    },
+    {
+      "id": "long-wait-phrase",
+      "lemma": "long wait",
+      "pos": "phrase",
+      "senseId": "slow-service",
+      "ipa": "/ˈlɔŋ ˈweɪt/",
+      "syllables": [
+        "long",
+        "wait"
+      ],
+      "syllableIpa": [
+        "ˈlɔŋ",
+        "ˈweɪt"
+      ],
+      "stress": 1,
+      "arpabet": "L AO1 NG W EY1 T",
+      "audio": "assets/audio/words/long-wait-phrase.mp3",
+      "audioSlow": "assets/audio/words/long-wait-phrase-slow.mp3",
+      "glossYue": "等好耐",
+      "glossZh": "等好耐",
+      "jyutping": "dang2 hou2 noi6",
+      "collocations": [
+        "a long wait",
+        "after the long wait"
+      ],
+      "example": "The long wait made the meal late.",
+      "exampleYue": "等好耐，餐就遲咗。",
+      "say": "The long wait made the meal late.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "long wait",
+      "phrase": true,
+      "audioSha256": "ce62c3848edbb510743a38620600449b3ddbd0e4e053814939c8ea35a61fa4d5",
+      "register": "餐廳",
+      "usageNotes": "long 同 wait 要連住講。",
+      "pitfallsYue": "唔好拆開講 a wait that is long。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The long wait made the meal late.",
+          "yue": "等好耐，餐就遲咗。",
+          "audio": "assets/audio/words/long-wait-phrase.mp3",
+          "audioSlow": "assets/audio/words/long-wait-phrase-slow.mp3",
+          "say": "The long wait made the meal late."
+        },
+        {
+          "en": "After the long wait, the soup arrived.",
+          "yue": "等咗好耐，湯先至到。",
+          "audio": "assets/audio/words/long-wait-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/long-wait-phrase-ex2-slow.mp3",
+          "say": "After the long wait, the soup arrived."
+        }
+      ]
+    },
+    {
+      "id": "complimentary-adj",
+      "lemma": "complimentary",
+      "pos": "adj",
+      "senseId": "free-gift",
+      "ipa": "/ˌkɑm.plə.ˈmɛn.tɚ.i/",
+      "syllables": [
+        "com",
+        "pli",
+        "men",
+        "ta",
+        "ry"
+      ],
+      "syllableIpa": [
+        "ˌkɑm",
+        "plə",
+        "ˈmɛn",
+        "tɚ",
+        "i"
+      ],
+      "stress": 3,
+      "arpabet": "K AA2 M P L AH0 M EH1 N T ER0 IY0",
+      "audio": "assets/audio/words/complimentary-adj.mp3",
+      "audioSlow": "assets/audio/words/complimentary-adj-slow.mp3",
+      "glossYue": "免費贈送",
+      "glossZh": "免費贈送",
+      "jyutping": "min5 fai3 zang6 sung3",
+      "collocations": [
+        "a complimentary dessert",
+        "complimentary tea"
+      ],
+      "example": "Could we have a complimentary dessert?",
+      "exampleYue": "可唔可以有一份免費甜品？",
+      "say": "Could we have a complimentary dessert?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "complimentary",
+      "phrase": false,
+      "audioSha256": "8c479211e2f202a84b1c69f028c2f921d9d7ff4392dadcf1284d5da6be92639f",
+      "register": "餐廳",
+      "usageNotes": "即係免費送，唔係讚美。",
+      "pitfallsYue": "呢個形容詞唔等於 compliment 嗰個動詞。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Could we have a complimentary dessert?",
+          "yue": "可唔可以有一份免費甜品？",
+          "audio": "assets/audio/words/complimentary-adj.mp3",
+          "audioSlow": "assets/audio/words/complimentary-adj-slow.mp3",
+          "say": "Could we have a complimentary dessert?"
+        },
+        {
+          "en": "The shop sent a complimentary tea.",
+          "yue": "店舖送咗一盅免費茶。",
+          "audio": "assets/audio/words/complimentary-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/complimentary-adj-ex2-slow.mp3",
+          "say": "The shop sent a complimentary tea."
+        }
+      ]
+    },
+    {
+      "id": "understand-verb",
+      "lemma": "understand",
+      "pos": "verb",
+      "senseId": "grasp-meaning",
+      "ipa": "/ˌʌn.dɚ.ˈstænd/",
+      "syllables": [
+        "un",
+        "der",
+        "stand"
+      ],
+      "syllableIpa": [
+        "ˌʌn",
+        "dɚ",
+        "ˈstænd"
+      ],
+      "stress": 3,
+      "arpabet": "AH2 N D ER0 S T AE1 N D",
+      "audio": "assets/audio/words/understand-verb.mp3",
+      "audioSlow": "assets/audio/words/understand-verb-slow.mp3",
+      "glossYue": "明白",
+      "glossZh": "明白",
+      "jyutping": "ming4 baak6",
+      "collocations": [
+        "I understand",
+        "understand the problem"
+      ],
+      "example": "I understand the problem with the bowl.",
+      "exampleYue": "我明白個碗嘅問題。",
+      "say": "I understand the problem with the bowl.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "understand",
+      "phrase": false,
+      "audioSha256": "6ca0415afec0b7f97c49303c9d841d6811933c28a7ce94db872fd36d03108742",
+      "register": "餐廳",
+      "usageNotes": "服務員先講 I understand，再講點補救。",
+      "pitfallsYue": "唔好用 I know 代替道歉之後嘅明白。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I understand the problem with the bowl.",
+          "yue": "我明白個碗嘅問題。",
+          "audio": "assets/audio/words/understand-verb.mp3",
+          "audioSlow": "assets/audio/words/understand-verb-slow.mp3",
+          "say": "I understand the problem with the bowl."
+        },
+        {
+          "en": "Do you understand what I asked for?",
+          "yue": "你明唔明白我要咩？",
+          "audio": "assets/audio/words/understand-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/understand-verb-ex2-slow.mp3",
+          "say": "Do you understand what I asked for?"
+        }
+      ]
+    },
+    {
+      "id": "right-away-phrase",
+      "lemma": "right away",
+      "pos": "phrase",
+      "senseId": "immediately",
+      "ipa": "/ˈɹaɪt ə.ˈweɪ/",
+      "syllables": [
+        "right",
+        "a",
+        "way"
+      ],
+      "syllableIpa": [
+        "ˈɹaɪt",
+        "ə",
+        "ˈweɪ"
+      ],
+      "stress": 1,
+      "arpabet": "R AY1 T AH0 W EY1",
+      "audio": "assets/audio/words/right-away-phrase.mp3",
+      "audioSlow": "assets/audio/words/right-away-phrase-slow.mp3",
+      "glossYue": "即刻",
+      "glossZh": "即刻",
+      "jyutping": "zik1 hak1",
+      "collocations": [
+        "right away",
+        "send it right away"
+      ],
+      "example": "I will send a fresh plate right away.",
+      "exampleYue": "我即刻送一碟新鮮嘅出嚟。",
+      "say": "I will send a fresh plate right away.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "right away",
+      "phrase": true,
+      "audioSha256": "daf9752c6ea98da9bc411c544956dac64f5b3fde4eb92e71a79931ce5cfa51dd",
+      "register": "餐廳",
+      "usageNotes": "right 同 away 中間有 a，三個字一齊。",
+      "pitfallsYue": "唔好講 right now 當同一個片語卡。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I will send a fresh plate right away.",
+          "yue": "我即刻送一碟新鮮嘅出嚟。",
+          "audio": "assets/audio/words/right-away-phrase.mp3",
+          "audioSlow": "assets/audio/words/right-away-phrase-slow.mp3",
+          "say": "I will send a fresh plate right away."
+        },
+        {
+          "en": "Please bring the soup right away.",
+          "yue": "請即刻將湯送嚟。",
+          "audio": "assets/audio/words/right-away-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/right-away-phrase-ex2-slow.mp3",
+          "say": "Please bring the soup right away."
+        }
+      ]
+    },
+    {
+      "id": "currently-adv",
+      "lemma": "currently",
+      "pos": "adv",
+      "senseId": "at-present",
+      "ipa": "/ˈkɝ.ənt.li/",
+      "syllables": [
+        "cur",
+        "rent",
+        "ly"
+      ],
+      "syllableIpa": [
+        "ˈkɝ",
+        "ənt",
+        "li"
+      ],
+      "stress": 1,
+      "arpabet": "K ER1 AH0 N T L IY0",
+      "audio": "assets/audio/words/currently-adv.mp3",
+      "audioSlow": "assets/audio/words/currently-adv-slow.mp3",
+      "glossYue": "而家",
+      "glossZh": "而家",
+      "jyutping": "ji4 gaa1",
+      "collocations": [
+        "currently working",
+        "doing currently"
+      ],
+      "example": "I am currently working in a shop.",
+      "exampleYue": "我而家喺一間店做嘢。",
+      "say": "I am currently working in a shop.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "currently",
+      "phrase": false,
+      "audioSha256": "0ec4f21cf21993d696464e678f04bc2b5b5de504378a0abf0cfc859ee1515fe3",
+      "register": "職場",
+      "usageNotes": "放喺 be 後面，講而家嘅狀態。",
+      "pitfallsYue": "面試唔好用 now 代替，currently 正式啲。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I am currently working in a shop.",
+          "yue": "我而家喺一間店做嘢。",
+          "audio": "assets/audio/words/currently-adv.mp3",
+          "audioSlow": "assets/audio/words/currently-adv-slow.mp3",
+          "say": "I am currently working in a shop."
+        },
+        {
+          "en": "She is currently between two jobs.",
+          "yue": "佢而家喺兩份工之間。",
+          "audio": "assets/audio/words/currently-adv-ex2.mp3",
+          "audioSlow": "assets/audio/words/currently-adv-ex2-slow.mp3",
+          "say": "She is currently between two jobs."
+        }
+      ]
+    },
+    {
+      "id": "experience-noun",
+      "lemma": "experience",
+      "pos": "noun",
+      "senseId": "work-history",
+      "ipa": "/ɪk.ˈspɪ.ɹi.əns/",
+      "syllables": [
+        "ex",
+        "pe",
+        "ri",
+        "ence"
+      ],
+      "syllableIpa": [
+        "ɪk",
+        "ˈspɪ",
+        "ɹi",
+        "əns"
+      ],
+      "stress": 2,
+      "arpabet": "IH0 K S P IH1 R IY0 AH0 N S",
+      "audio": "assets/audio/words/experience-noun.mp3",
+      "audioSlow": "assets/audio/words/experience-noun-slow.mp3",
+      "glossYue": "經驗",
+      "glossZh": "經驗",
+      "jyutping": "ging1 jim6",
+      "collocations": [
+        "years of experience",
+        "retail experience"
+      ],
+      "example": "I have three years of retail experience.",
+      "exampleYue": "我有三年零售經驗。",
+      "say": "I have three years of retail experience.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "experience",
+      "phrase": false,
+      "audioSha256": "7a0399ad4a2a1e02f6977fb552a7a262a6532ca0804556f3724aa3d1730273bf",
+      "register": "職場",
+      "usageNotes": "呢度係名詞，前面可以加 years of。",
+      "pitfallsYue": "唔好同動詞 experience 撈。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I have three years of retail experience.",
+          "yue": "我有三年零售經驗。",
+          "audio": "assets/audio/words/experience-noun.mp3",
+          "audioSlow": "assets/audio/words/experience-noun-slow.mp3",
+          "say": "I have three years of retail experience."
+        },
+        {
+          "en": "That experience came from a busy shop.",
+          "yue": "嗰份經驗係一間忙店學返嚟。",
+          "audio": "assets/audio/words/experience-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/experience-noun-ex2-slow.mp3",
+          "say": "That experience came from a busy shop."
+        }
+      ]
+    },
+    {
+      "id": "customer-facing-adj",
+      "lemma": "customer-facing",
+      "pos": "adj",
+      "senseId": "serving-guests",
+      "ipa": "/ˈkʌ.stə.mɚ ˈfeɪ.sɪŋ/",
+      "syllables": [
+        "cus",
+        "to",
+        "mer",
+        "fa",
+        "cing"
+      ],
+      "syllableIpa": [
+        "ˈkʌ",
+        "stə",
+        "mɚ",
+        "ˈfeɪ",
+        "sɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "K AH1 S T AH0 M ER0 F EY1 S IH0 NG",
+      "audio": "assets/audio/words/customer-facing-adj.mp3",
+      "audioSlow": "assets/audio/words/customer-facing-adj-slow.mp3",
+      "glossYue": "對客",
+      "glossZh": "對客",
+      "jyutping": "deoi3 haak3",
+      "collocations": [
+        "a customer-facing task",
+        "customer-facing work"
+      ],
+      "example": "I enjoy a customer-facing task at the counter.",
+      "exampleYue": "我鍾意喺櫃檯做對客嘅工作。",
+      "say": "I enjoy a customer-facing task at the counter.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "customer-facing",
+      "phrase": true,
+      "audioSha256": "150671c37376c91a058e81d70d35329d8383d0c207ffba8bb124272f65164214",
+      "register": "職場",
+      "usageNotes": "中間有連字號，當一個形容詞。",
+      "pitfallsYue": "唔好拆開講 a customer that is facing。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I enjoy a customer-facing task at the counter.",
+          "yue": "我鍾意喺櫃檯做對客嘅工作。",
+          "audio": "assets/audio/words/customer-facing-adj.mp3",
+          "audioSlow": "assets/audio/words/customer-facing-adj-slow.mp3",
+          "say": "I enjoy a customer-facing task at the counter."
+        },
+        {
+          "en": "The role is customer-facing every weekend.",
+          "yue": "呢個職位每個週末都要對客。",
+          "audio": "assets/audio/words/customer-facing-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/customer-facing-adj-ex2-slow.mp3",
+          "say": "The role is customer-facing every weekend."
+        }
+      ]
+    },
+    {
+      "id": "handled-verb",
+      "lemma": "handled",
+      "pos": "verb",
+      "senseId": "dealt-with",
+      "ipa": "/ˈhæn.dəld/",
+      "syllables": [
+        "han",
+        "dled"
+      ],
+      "syllableIpa": [
+        "ˈhæn",
+        "dəld"
+      ],
+      "stress": 1,
+      "arpabet": "HH AE1 N D AH0 L D",
+      "audio": "assets/audio/words/handled-verb.mp3",
+      "audioSlow": "assets/audio/words/handled-verb-slow.mp3",
+      "glossYue": "處理咗",
+      "glossZh": "處理咗",
+      "jyutping": "cyu2 lei5 zo2",
+      "collocations": [
+        "handled a shift",
+        "handled a queue"
+      ],
+      "example": "I handled a busy shift before lunch.",
+      "exampleYue": "我開飯之前處理咗一個忙更。",
+      "say": "I handled a busy shift before lunch.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "handled",
+      "phrase": false,
+      "audioSha256": "2dcd310602d0d2a055feb7e7ea1c2efa0e695cd517d51143fbd166c98cdd560c",
+      "register": "職場",
+      "usageNotes": "過去式，講已經做完嘅事。",
+      "pitfallsYue": "唔好用 handle 講已經發生嘅更。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I handled a busy shift before lunch.",
+          "yue": "我開飯之前處理咗一個忙更。",
+          "audio": "assets/audio/words/handled-verb.mp3",
+          "audioSlow": "assets/audio/words/handled-verb-slow.mp3",
+          "say": "I handled a busy shift before lunch."
+        },
+        {
+          "en": "She handled the queue with a calm voice.",
+          "yue": "佢用平靜嘅聲處理條隊。",
+          "audio": "assets/audio/words/handled-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/handled-verb-ex2-slow.mp3",
+          "say": "She handled the queue with a calm voice."
+        }
+      ]
+    },
+    {
+      "id": "achieved-verb",
+      "lemma": "achieved",
+      "pos": "verb",
+      "senseId": "reached-result",
+      "ipa": "/ə.ˈtʃivd/",
+      "syllables": [
+        "a",
+        "chieved"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈtʃivd"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 CH IY1 V D",
+      "audio": "assets/audio/words/achieved-verb.mp3",
+      "audioSlow": "assets/audio/words/achieved-verb-slow.mp3",
+      "glossYue": "做到",
+      "glossZh": "做到",
+      "jyutping": "zou6 dou2",
+      "collocations": [
+        "achieved a calm queue",
+        "achieved a result"
+      ],
+      "example": "I achieved a calm queue before lunch.",
+      "exampleYue": "我開飯之前將條隊做到好定。",
+      "say": "I achieved a calm queue before lunch.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "achieved",
+      "phrase": false,
+      "audioSha256": "1f91764838e8b141cd28c9d1db8d27c94f9b507f408e43f71e069078f65a91c3",
+      "register": "職場",
+      "usageNotes": "後面加結果，唔係加職位。",
+      "pitfallsYue": "唔好同 archived 撈，讀音完全唔同。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I achieved a calm queue before lunch.",
+          "yue": "我開飯之前將條隊做到好定。",
+          "audio": "assets/audio/words/achieved-verb.mp3",
+          "audioSlow": "assets/audio/words/achieved-verb-slow.mp3",
+          "say": "I achieved a calm queue before lunch."
+        },
+        {
+          "en": "We achieved a result the guests noticed.",
+          "yue": "我哋做到一個客人覺察到嘅結果。",
+          "audio": "assets/audio/words/achieved-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/achieved-verb-ex2-slow.mp3",
+          "say": "We achieved a result the guests noticed."
+        }
+      ]
+    },
+    {
+      "id": "teamwork-noun",
+      "lemma": "teamwork",
+      "pos": "noun",
+      "senseId": "working-together",
+      "ipa": "/ˈtim.ˌwɝk/",
+      "syllables": [
+        "team",
+        "work"
+      ],
+      "syllableIpa": [
+        "ˈtim",
+        "ˌwɝk"
+      ],
+      "stress": 1,
+      "arpabet": "T IY1 M W ER2 K",
+      "audio": "assets/audio/words/teamwork-noun.mp3",
+      "audioSlow": "assets/audio/words/teamwork-noun-slow.mp3",
+      "glossYue": "團隊合作",
+      "glossZh": "團隊合作",
+      "jyutping": "tyun4 deoi2 hap6 zok3",
+      "collocations": [
+        "teamwork help",
+        "good teamwork"
+      ],
+      "example": "Teamwork helped us clear the queue.",
+      "exampleYue": "團隊合作幫我哋清咗條隊。",
+      "say": "Teamwork helped us clear the queue.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "teamwork",
+      "phrase": false,
+      "audioSha256": "298603c57026bf22647999aeb8ddac052697a4c19fb6644431af8fc8d2417c22",
+      "register": "職場",
+      "usageNotes": "當一件事講，通常冇眾數。",
+      "pitfallsYue": "唔好講 teamworks。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Teamwork helped us clear the queue.",
+          "yue": "團隊合作幫我哋清咗條隊。",
+          "audio": "assets/audio/words/teamwork-noun.mp3",
+          "audioSlow": "assets/audio/words/teamwork-noun-slow.mp3",
+          "say": "Teamwork helped us clear the queue."
+        },
+        {
+          "en": "Good teamwork kept the counter calm.",
+          "yue": "好嘅團隊合作令櫃檯保持冷靜。",
+          "audio": "assets/audio/words/teamwork-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/teamwork-noun-ex2-slow.mp3",
+          "say": "Good teamwork kept the counter calm."
+        }
+      ]
+    },
+    {
+      "id": "reliable-adj",
+      "lemma": "reliable",
+      "pos": "adj",
+      "senseId": "can-be-trusted",
+      "ipa": "/ɹɪ.ˈlaɪ.ə.bəl/",
+      "syllables": [
+        "re",
+        "li",
+        "a",
+        "ble"
+      ],
+      "syllableIpa": [
+        "ɹɪ",
+        "ˈlaɪ",
+        "ə",
+        "bəl"
+      ],
+      "stress": 2,
+      "arpabet": "R IH0 L AY1 AH0 B AH0 L",
+      "audio": "assets/audio/words/reliable-adj.mp3",
+      "audioSlow": "assets/audio/words/reliable-adj-slow.mp3",
+      "glossYue": "可靠",
+      "glossZh": "可靠",
+      "jyutping": "ho2 kaau3",
+      "collocations": [
+        "a reliable story",
+        "sounds reliable"
+      ],
+      "example": "That story sounds reliable to the team.",
+      "exampleYue": "呢個故事對團隊嚟講好可靠。",
+      "say": "That story sounds reliable to the team.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "reliable",
+      "phrase": false,
+      "audioSha256": "551d17341b3942da411b772e943b6293900a2fbf844ac75f4530ecc7b6bd4bec",
+      "register": "職場",
+      "usageNotes": "可以形容人或者故事。",
+      "pitfallsYue": "重音喺第二音 li。",
+      "related": [],
+      "examples": [
+        {
+          "en": "That story sounds reliable to the team.",
+          "yue": "呢個故事對團隊嚟講好可靠。",
+          "audio": "assets/audio/words/reliable-adj.mp3",
+          "audioSlow": "assets/audio/words/reliable-adj-slow.mp3",
+          "say": "That story sounds reliable to the team."
+        },
+        {
+          "en": "A reliable colleague arrives on time.",
+          "yue": "可靠嘅同事會準時到。",
+          "audio": "assets/audio/words/reliable-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/reliable-adj-ex2-slow.mp3",
+          "say": "A reliable colleague arrives on time."
+        }
+      ]
+    },
+    {
+      "id": "bilingual-adj",
+      "lemma": "bilingual",
+      "pos": "adj",
+      "senseId": "two-languages",
+      "ipa": "/baɪ.ˈlɪŋ.ɡwəl/",
+      "syllables": [
+        "bi",
+        "lin",
+        "gual"
+      ],
+      "syllableIpa": [
+        "baɪ",
+        "ˈlɪŋ",
+        "ɡwəl"
+      ],
+      "stress": 2,
+      "arpabet": "B AY0 L IH1 NG G W AH0 L",
+      "audio": "assets/audio/words/bilingual-adj.mp3",
+      "audioSlow": "assets/audio/words/bilingual-adj-slow.mp3",
+      "glossYue": "識兩種話",
+      "glossZh": "識兩種話",
+      "jyutping": "sik1 loeng5 zung2 waa2",
+      "collocations": [
+        "bilingual in Cantonese",
+        "a bilingual colleague"
+      ],
+      "example": "I am bilingual in Cantonese and English.",
+      "exampleYue": "我廣東話同英文都識。",
+      "say": "I am bilingual in Cantonese and English.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "bilingual",
+      "phrase": false,
+      "audioSha256": "bed77755f1453b8f0180d34d77b2903d4486be75dd0f85365c3e74293a99da1e",
+      "register": "職場",
+      "usageNotes": "後面常用 in + 兩種語言。",
+      "pitfallsYue": "唔好講 bilingual of。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I am bilingual in Cantonese and English.",
+          "yue": "我廣東話同英文都識。",
+          "audio": "assets/audio/words/bilingual-adj.mp3",
+          "audioSlow": "assets/audio/words/bilingual-adj-slow.mp3",
+          "say": "I am bilingual in Cantonese and English."
+        },
+        {
+          "en": "A bilingual colleague can help the guest.",
+          "yue": "識兩種話嘅同事可以幫到客人。",
+          "audio": "assets/audio/words/bilingual-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/bilingual-adj-ex2-slow.mp3",
+          "say": "A bilingual colleague can help the guest."
+        }
+      ]
+    },
+    {
+      "id": "cantonese-noun",
+      "lemma": "Cantonese",
+      "pos": "noun",
+      "senseId": "yue-language",
+      "ipa": "/ˌkæn.tə.ˈniz/",
+      "syllables": [
+        "Can",
+        "ton",
+        "ese"
+      ],
+      "syllableIpa": [
+        "ˌkæn",
+        "tə",
+        "ˈniz"
+      ],
+      "stress": 3,
+      "arpabet": "K AE2 N T AH0 N IY1 Z",
+      "audio": "assets/audio/words/cantonese-noun.mp3",
+      "audioSlow": "assets/audio/words/cantonese-noun-slow.mp3",
+      "glossYue": "廣東話",
+      "glossZh": "廣東話",
+      "jyutping": "gwong2 dung1 waa2",
+      "collocations": [
+        "in Cantonese",
+        "speak Cantonese"
+      ],
+      "example": "I speak Cantonese with regular guests.",
+      "exampleYue": "我同熟客講廣東話。",
+      "say": "I speak Cantonese with regular guests.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "cantonese",
+      "phrase": false,
+      "audioSha256": "7d63571243709d006dbed0db5bec5f5a9ea801b678ac53fa23b95b26079e8392",
+      "register": "職場",
+      "usageNotes": "語言名要大寫。",
+      "pitfallsYue": "唔好寫成 Canton。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I speak Cantonese with regular guests.",
+          "yue": "我同熟客講廣東話。",
+          "audio": "assets/audio/words/cantonese-noun.mp3",
+          "audioSlow": "assets/audio/words/cantonese-noun-slow.mp3",
+          "say": "I speak Cantonese with regular guests."
+        },
+        {
+          "en": "The sign is written in Cantonese.",
+          "yue": "塊牌係用廣東話寫。",
+          "audio": "assets/audio/words/cantonese-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/cantonese-noun-ex2-slow.mp3",
+          "say": "The sign is written in Cantonese."
+        }
+      ]
+    },
+    {
+      "id": "english-noun",
+      "lemma": "English",
+      "pos": "noun",
+      "senseId": "english-language",
+      "ipa": "/ˈɪŋ.ɡlɪʃ/",
+      "syllables": [
+        "En",
+        "glish"
+      ],
+      "syllableIpa": [
+        "ˈɪŋ",
+        "ɡlɪʃ"
+      ],
+      "stress": 1,
+      "arpabet": "IH1 NG G L IH0 SH",
+      "audio": "assets/audio/words/english-noun.mp3",
+      "audioSlow": "assets/audio/words/english-noun-slow.mp3",
+      "glossYue": "英文",
+      "glossZh": "英文",
+      "jyutping": "jing1 man2",
+      "collocations": [
+        "in English",
+        "speak English"
+      ],
+      "example": "I speak English at the counter.",
+      "exampleYue": "我喺櫃檯講英文。",
+      "say": "I speak English at the counter.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "english",
+      "phrase": false,
+      "audioSha256": "79c8b9e4e36c2f3b42d3aa51c43b46223f6001e44fbe1e6e1a13d531d48598ed",
+      "register": "職場",
+      "usageNotes": "語言名要大寫。",
+      "pitfallsYue": "重音喺第一音。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I speak English at the counter.",
+          "yue": "我喺櫃檯講英文。",
+          "audio": "assets/audio/words/english-noun.mp3",
+          "audioSlow": "assets/audio/words/english-noun-slow.mp3",
+          "say": "I speak English at the counter."
+        },
+        {
+          "en": "The form is written in English.",
+          "yue": "張表係用英文寫。",
+          "audio": "assets/audio/words/english-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/english-noun-ex2-slow.mp3",
+          "say": "The form is written in English."
+        }
+      ]
+    },
+    {
+      "id": "strength-noun",
+      "lemma": "strength",
+      "pos": "noun",
+      "senseId": "personal-strong-point",
+      "ipa": "/ˈstɹɛŋkθ/",
+      "syllables": [
+        "strength"
+      ],
+      "syllableIpa": [
+        "ˈstɹɛŋkθ"
+      ],
+      "stress": 1,
+      "arpabet": "S T R EH1 NG K TH",
+      "audio": "assets/audio/words/strength-noun.mp3",
+      "audioSlow": "assets/audio/words/strength-noun-slow.mp3",
+      "glossYue": "強項",
+      "glossZh": "強項",
+      "jyutping": "koeng4 hong6",
+      "collocations": [
+        "my strength",
+        "a real strength"
+      ],
+      "example": "My strength is staying calm with guests.",
+      "exampleYue": "我嘅強項係對住客人保持冷靜。",
+      "say": "My strength is staying calm with guests.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "strength",
+      "phrase": false,
+      "audioSha256": "ef82d58ac14c5e0841aa62ca38e35f0cc6bd6d5b441aec5bc6a09847ebefc2d5",
+      "register": "職場",
+      "usageNotes": "面試講一個強項再加例子。",
+      "pitfallsYue": "呢度唔係講力氣。",
+      "related": [],
+      "examples": [
+        {
+          "en": "My strength is staying calm with guests.",
+          "yue": "我嘅強項係對住客人保持冷靜。",
+          "audio": "assets/audio/words/strength-noun.mp3",
+          "audioSlow": "assets/audio/words/strength-noun-slow.mp3",
+          "say": "My strength is staying calm with guests."
+        },
+        {
+          "en": "A real strength needs a short example.",
+          "yue": "真正嘅強項要配一個短例子。",
+          "audio": "assets/audio/words/strength-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/strength-noun-ex2-slow.mp3",
+          "say": "A real strength needs a short example."
+        }
+      ]
+    },
+    {
+      "id": "example-noun",
+      "lemma": "example",
+      "pos": "noun",
+      "senseId": "illustrative-case",
+      "ipa": "/ɪɡ.ˈzæm.pəl/",
+      "syllables": [
+        "ex",
+        "am",
+        "ple"
+      ],
+      "syllableIpa": [
+        "ɪɡ",
+        "ˈzæm",
+        "pəl"
+      ],
+      "stress": 2,
+      "arpabet": "IH0 G Z AE1 M P AH0 L",
+      "audio": "assets/audio/words/example-noun.mp3",
+      "audioSlow": "assets/audio/words/example-noun-slow.mp3",
+      "glossYue": "例子",
+      "glossZh": "例子",
+      "jyutping": "lai6 zi2",
+      "collocations": [
+        "one example",
+        "a clear example"
+      ],
+      "example": "Could you give one clear example?",
+      "exampleYue": "可唔可以畀一個清楚嘅例子？",
+      "say": "Could you give one clear example?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "example",
+      "phrase": false,
+      "audioSha256": "6234ec15ed34608d9d159848b39ed9d7fb3f9b6d0f06611014d4c83cd3748521",
+      "register": "職場",
+      "usageNotes": "give an example 係請對方舉例。",
+      "pitfallsYue": "重音喺第二音 am。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Could you give one clear example?",
+          "yue": "可唔可以畀一個清楚嘅例子？",
+          "audio": "assets/audio/words/example-noun.mp3",
+          "audioSlow": "assets/audio/words/example-noun-slow.mp3",
+          "say": "Could you give one clear example?"
+        },
+        {
+          "en": "A short example makes the story real.",
+          "yue": "一個短例子令個故事變得真實。",
+          "audio": "assets/audio/words/example-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/example-noun-ex2-slow.mp3",
+          "say": "A short example makes the story real."
+        }
+      ]
+    },
+    {
+      "id": "looking-for-phrase",
+      "lemma": "looking for",
+      "pos": "phrase",
+      "senseId": "seeking",
+      "ipa": "/ˈlʊ.kɪŋ ˈfɔɹ/",
+      "syllables": [
+        "look",
+        "ing",
+        "for"
+      ],
+      "syllableIpa": [
+        "ˈlʊ",
+        "kɪŋ",
+        "ˈfɔɹ"
+      ],
+      "stress": 1,
+      "arpabet": "L UH1 K IH0 NG F AO1 R",
+      "audio": "assets/audio/words/looking-for-phrase.mp3",
+      "audioSlow": "assets/audio/words/looking-for-phrase-slow.mp3",
+      "glossYue": "想搵",
+      "glossZh": "想搵",
+      "jyutping": "soeng2 wan2",
+      "collocations": [
+        "looking for a role",
+        "looking for work"
+      ],
+      "example": "I am looking for a retail role.",
+      "exampleYue": "我喺度搵一份零售職位。",
+      "say": "I am looking for a retail role.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "looking for",
+      "phrase": true,
+      "audioSha256": "73d89b07611fb75598e81b9dd6e4d8f2079dd5d7c3a40793ec4af893455e27eb",
+      "register": "職場",
+      "usageNotes": "looking 同 for 要連住。",
+      "pitfallsYue": "唔好講 look at 當搵工。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I am looking for a retail role.",
+          "yue": "我喺度搵一份零售職位。",
+          "audio": "assets/audio/words/looking-for-phrase.mp3",
+          "audioSlow": "assets/audio/words/looking-for-phrase-slow.mp3",
+          "say": "I am looking for a retail role."
+        },
+        {
+          "en": "She is looking for weekend work.",
+          "yue": "佢喺度搵週末工。",
+          "audio": "assets/audio/words/looking-for-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/looking-for-phrase-ex2-slow.mp3",
+          "say": "She is looking for weekend work."
+        }
+      ]
+    },
+    {
+      "id": "delayed-adj",
+      "lemma": "delayed",
+      "pos": "adj",
+      "senseId": "running-late",
+      "ipa": "/dɪ.ˈleɪd/",
+      "syllables": [
+        "de",
+        "layed"
+      ],
+      "syllableIpa": [
+        "dɪ",
+        "ˈleɪd"
+      ],
+      "stress": 2,
+      "arpabet": "D IH0 L EY1 D",
+      "audio": "assets/audio/words/delayed-adj.mp3",
+      "audioSlow": "assets/audio/words/delayed-adj-slow.mp3",
+      "glossYue": "延遲",
+      "glossZh": "延遲",
+      "jyutping": "jin4 ci4",
+      "collocations": [
+        "is delayed",
+        "a delayed flight"
+      ],
+      "example": "Our flight is delayed this afternoon.",
+      "exampleYue": "我哋下班機今日下晝延遲。",
+      "say": "Our flight is delayed this afternoon.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "delayed",
+      "phrase": false,
+      "audioSha256": "5bc3f9468149ddae956263898b1e49cac2c0e2411c9614e154471b1526b98dd6",
+      "register": "旅行",
+      "usageNotes": "be delayed 係被動嘅狀態。",
+      "pitfallsYue": "唔好同 cancelled 撈，延遲唔等於取消。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Our flight is delayed this afternoon.",
+          "yue": "我哋下班機今日下晝延遲。",
+          "audio": "assets/audio/words/delayed-adj.mp3",
+          "audioSlow": "assets/audio/words/delayed-adj-slow.mp3",
+          "say": "Our flight is delayed this afternoon."
+        },
+        {
+          "en": "The delayed flight is still on the board.",
+          "yue": "延遲嗰班仲喺板上。",
+          "audio": "assets/audio/words/delayed-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/delayed-adj-ex2-slow.mp3",
+          "say": "The delayed flight is still on the board."
+        }
+      ]
+    },
+    {
+      "id": "cancelled-verb",
+      "lemma": "cancelled",
+      "pos": "verb",
+      "senseId": "called-off",
+      "ipa": "/ˈkæn.səld/",
+      "syllables": [
+        "can",
+        "celled"
+      ],
+      "syllableIpa": [
+        "ˈkæn",
+        "səld"
+      ],
+      "stress": 1,
+      "arpabet": "K AE1 N S AH0 L D",
+      "audio": "assets/audio/words/cancelled-verb.mp3",
+      "audioSlow": "assets/audio/words/cancelled-verb-slow.mp3",
+      "glossYue": "取消咗",
+      "glossZh": "取消咗",
+      "jyutping": "ceoi2 siu1 zo2",
+      "collocations": [
+        "has been cancelled",
+        "flight cancelled"
+      ],
+      "example": "The flight has been cancelled at noon.",
+      "exampleYue": "航班中午取消咗。",
+      "say": "The flight has been cancelled at noon.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "cancelled",
+      "phrase": false,
+      "audioSha256": "e16f87312ed22b5dac86801761e57903750791d8a11041d52f239040ccef9b4d",
+      "register": "旅行",
+      "usageNotes": "英式拼 cancelled，兩個 l。",
+      "pitfallsYue": "唔好寫 canceled，教材用英式。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The flight has been cancelled at noon.",
+          "yue": "航班中午取消咗。",
+          "audio": "assets/audio/words/cancelled-verb.mp3",
+          "audioSlow": "assets/audio/words/cancelled-verb-slow.mp3",
+          "say": "The flight has been cancelled at noon."
+        },
+        {
+          "en": "They cancelled the connection after the storm.",
+          "yue": "風暴之後佢哋取消咗接駁。",
+          "audio": "assets/audio/words/cancelled-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/cancelled-verb-ex2-slow.mp3",
+          "say": "They cancelled the connection after the storm."
+        }
+      ]
+    },
+    {
+      "id": "connection-noun",
+      "lemma": "connection",
+      "pos": "noun",
+      "senseId": "onward-flight",
+      "ipa": "/kə.ˈnɛk.ʃən/",
+      "syllables": [
+        "con",
+        "nec",
+        "tion"
+      ],
+      "syllableIpa": [
+        "kə",
+        "ˈnɛk",
+        "ʃən"
+      ],
+      "stress": 2,
+      "arpabet": "K AH0 N EH1 K SH AH0 N",
+      "audio": "assets/audio/words/connection-noun.mp3",
+      "audioSlow": "assets/audio/words/connection-noun-slow.mp3",
+      "glossYue": "接駁",
+      "glossZh": "接駁",
+      "jyutping": "zip3 bok3",
+      "collocations": [
+        "the connection",
+        "missed connection"
+      ],
+      "example": "The connection was missed at noon.",
+      "exampleYue": "中午嗰程接駁趕唔到。",
+      "say": "The connection was missed at noon.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "connection",
+      "phrase": false,
+      "audioSha256": "050a2be535672208bae8ebfda4adbe8e9c90871f81d1b115430aae3c75535e63",
+      "register": "旅行",
+      "usageNotes": "轉機嗰一段叫 connection。",
+      "pitfallsYue": "唔好講成 internet connection。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The connection was missed at noon.",
+          "yue": "中午嗰程接駁趕唔到。",
+          "audio": "assets/audio/words/connection-noun.mp3",
+          "audioSlow": "assets/audio/words/connection-noun-slow.mp3",
+          "say": "The connection was missed at noon."
+        },
+        {
+          "en": "A later connection leaves from this gate.",
+          "yue": "遲啲嗰程接駁由呢個閘口飛。",
+          "audio": "assets/audio/words/connection-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/connection-noun-ex2-slow.mp3",
+          "say": "A later connection leaves from this gate."
+        }
+      ]
+    },
+    {
+      "id": "missed-verb",
+      "lemma": "missed",
+      "pos": "verb",
+      "senseId": "failed-to-catch",
+      "ipa": "/ˈmɪst/",
+      "syllables": [
+        "missed"
+      ],
+      "syllableIpa": [
+        "ˈmɪst"
+      ],
+      "stress": 1,
+      "arpabet": "M IH1 S T",
+      "audio": "assets/audio/words/missed-verb.mp3",
+      "audioSlow": "assets/audio/words/missed-verb-slow.mp3",
+      "glossYue": "趕唔到",
+      "glossZh": "趕唔到",
+      "jyutping": "gon2 m4 dou2",
+      "collocations": [
+        "was missed",
+        "missed the connection"
+      ],
+      "example": "We missed the connection at noon.",
+      "exampleYue": "我哋中午趕唔到接駁。",
+      "say": "We missed the connection at noon.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "missed",
+      "phrase": false,
+      "audioSha256": "28063448053d8a5239f92303405948e77141c82dff180f481f9b157ecc7b2750",
+      "register": "旅行",
+      "usageNotes": "過去式，講已經錯過。",
+      "pitfallsYue": "唔好用 miss 講已經發生嘅事。",
+      "related": [],
+      "examples": [
+        {
+          "en": "We missed the connection at noon.",
+          "yue": "我哋中午趕唔到接駁。",
+          "audio": "assets/audio/words/missed-verb.mp3",
+          "audioSlow": "assets/audio/words/missed-verb-slow.mp3",
+          "say": "We missed the connection at noon."
+        },
+        {
+          "en": "She missed the earlier flight by ten minutes.",
+          "yue": "佢遲咗十分鐘，趕唔到早一班。",
+          "audio": "assets/audio/words/missed-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/missed-verb-ex2-slow.mp3",
+          "say": "She missed the earlier flight by ten minutes."
+        }
+      ]
+    },
+    {
+      "id": "rebook-verb",
+      "lemma": "rebook",
+      "pos": "verb",
+      "senseId": "book-again",
+      "ipa": "/ɹi.ˈbʊk/",
+      "syllables": [
+        "re",
+        "book"
+      ],
+      "syllableIpa": [
+        "ɹi",
+        "ˈbʊk"
+      ],
+      "stress": 2,
+      "arpabet": "R IY0 B UH1 K",
+      "audio": "assets/audio/words/rebook-verb.mp3",
+      "audioSlow": "assets/audio/words/rebook-verb-slow.mp3",
+      "glossYue": "改簽",
+      "glossZh": "改簽",
+      "jyutping": "goi2 cim1",
+      "collocations": [
+        "can rebook",
+        "rebook the flight"
+      ],
+      "example": "Could we rebook this evening?",
+      "exampleYue": "我哋可唔可以今晚改簽？",
+      "say": "Could we rebook this evening?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "rebook",
+      "phrase": false,
+      "audioSha256": "4c238790743c004135db09c7d8e3e0bb33c33ac442d1b2e0e48fdbd7140544cb",
+      "register": "旅行",
+      "usageNotes": "一個詞，中間冇空格。",
+      "pitfallsYue": "唔好講 book again 當呢張卡。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Could we rebook this evening?",
+          "yue": "我哋可唔可以今晚改簽？",
+          "audio": "assets/audio/words/rebook-verb.mp3",
+          "audioSlow": "assets/audio/words/rebook-verb-slow.mp3",
+          "say": "Could we rebook this evening?"
+        },
+        {
+          "en": "The desk can rebook the whole party.",
+          "yue": "櫃檯可以幫成團改簽。",
+          "audio": "assets/audio/words/rebook-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/rebook-verb-ex2-slow.mp3",
+          "say": "The desk can rebook the whole party."
+        }
+      ]
+    },
+    {
+      "id": "voucher-noun",
+      "lemma": "voucher",
+      "pos": "noun",
+      "senseId": "paper-credit",
+      "ipa": "/ˈvaʊ.tʃɚ/",
+      "syllables": [
+        "vou",
+        "cher"
+      ],
+      "syllableIpa": [
+        "ˈvaʊ",
+        "tʃɚ"
+      ],
+      "stress": 1,
+      "arpabet": "V AW1 CH ER0",
+      "audio": "assets/audio/words/voucher-noun.mp3",
+      "audioSlow": "assets/audio/words/voucher-noun-slow.mp3",
+      "glossYue": "代用券",
+      "glossZh": "代用券",
+      "jyutping": "doi6 jung6 hyun3",
+      "collocations": [
+        "a hotel voucher",
+        "check a voucher"
+      ],
+      "example": "I will check a voucher for the hotel.",
+      "exampleYue": "我會睇下張酒店代用券。",
+      "say": "I will check a voucher for the hotel.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "voucher",
+      "phrase": false,
+      "audioSha256": "4104cb7ff7b2646715e3e29ca31e18b4eeb0b42617d04c517ca582c5e2cbddea",
+      "register": "旅行",
+      "usageNotes": "一張紙或者電子券。",
+      "pitfallsYue": "同 coupon 接近，呢課用 voucher。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I will check a voucher for the hotel.",
+          "yue": "我會睇下張酒店代用券。",
+          "audio": "assets/audio/words/voucher-noun.mp3",
+          "audioSlow": "assets/audio/words/voucher-noun-slow.mp3",
+          "say": "I will check a voucher for the hotel."
+        },
+        {
+          "en": "This voucher covers one simple meal.",
+          "yue": "呢張代用券包一餐簡單嘅。",
+          "audio": "assets/audio/words/voucher-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/voucher-noun-ex2-slow.mp3",
+          "say": "This voucher covers one simple meal."
+        }
+      ]
+    },
+    {
+      "id": "hotel-voucher-phrase",
+      "lemma": "hotel voucher",
+      "pos": "phrase",
+      "senseId": "lodging-credit",
+      "ipa": "/hoʊ.ˈtɛl ˈvaʊ.tʃɚ/",
+      "syllables": [
+        "ho",
+        "tel",
+        "vou",
+        "cher"
+      ],
+      "syllableIpa": [
+        "hoʊ",
+        "ˈtɛl",
+        "ˈvaʊ",
+        "tʃɚ"
+      ],
+      "stress": 2,
+      "arpabet": "HH OW0 T EH1 L V AW1 CH ER0",
+      "audio": "assets/audio/words/hotel-voucher-phrase.mp3",
+      "audioSlow": "assets/audio/words/hotel-voucher-phrase-slow.mp3",
+      "glossYue": "酒店券",
+      "glossZh": "酒店券",
+      "jyutping": "zau2 dim3 hyun3",
+      "collocations": [
+        "a hotel voucher",
+        "hotel voucher is possible"
+      ],
+      "example": "A hotel voucher is still possible for one night.",
+      "exampleYue": "一晚嘅酒店券仍然可以。",
+      "say": "A hotel voucher is still possible for one night.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "hotel voucher",
+      "phrase": true,
+      "audioSha256": "5c6e7bc74af593c8fa3091fa176dd1edc16b25254428af4f136f3d752887ddf7",
+      "register": "旅行",
+      "usageNotes": "hotel 同 voucher 要連住。",
+      "pitfallsYue": "唔好調轉講 voucher hotel。",
+      "related": [],
+      "examples": [
+        {
+          "en": "A hotel voucher is still possible for one night.",
+          "yue": "一晚嘅酒店券仍然可以。",
+          "audio": "assets/audio/words/hotel-voucher-phrase.mp3",
+          "audioSlow": "assets/audio/words/hotel-voucher-phrase-slow.mp3",
+          "say": "A hotel voucher is still possible for one night."
+        },
+        {
+          "en": "The hotel voucher covers one room.",
+          "yue": "張酒店券包一間房。",
+          "audio": "assets/audio/words/hotel-voucher-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/hotel-voucher-phrase-ex2-slow.mp3",
+          "say": "The hotel voucher covers one room."
+        }
+      ]
+    },
+    {
+      "id": "priority-noun",
+      "lemma": "priority",
+      "pos": "noun",
+      "senseId": "boarding-rank",
+      "ipa": "/pɹaɪ.ˈɔ.ɹə.ti/",
+      "syllables": [
+        "pri",
+        "or",
+        "i",
+        "ty"
+      ],
+      "syllableIpa": [
+        "pɹaɪ",
+        "ˈɔ",
+        "ɹə",
+        "ti"
+      ],
+      "stress": 2,
+      "arpabet": "P R AY0 AO1 R AH0 T IY0",
+      "audio": "assets/audio/words/priority-noun.mp3",
+      "audioSlow": "assets/audio/words/priority-noun-slow.mp3",
+      "glossYue": "優先",
+      "glossZh": "優先",
+      "jyutping": "jau1 sin1",
+      "collocations": [
+        "offer priority",
+        "priority on the next plane"
+      ],
+      "example": "We can offer priority on the next plane.",
+      "exampleYue": "下一班我哋可以畀優先。",
+      "say": "We can offer priority on the next plane.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "priority",
+      "phrase": false,
+      "audioSha256": "22ada6983c7713e6038d46443a23ca41822efbab2c250223bff6229b2fec9635",
+      "register": "旅行",
+      "usageNotes": "呢度係名詞。",
+      "pitfallsYue": "重音喺第二音 or。",
+      "related": [],
+      "examples": [
+        {
+          "en": "We can offer priority on the next plane.",
+          "yue": "下一班我哋可以畀優先。",
+          "audio": "assets/audio/words/priority-noun.mp3",
+          "audioSlow": "assets/audio/words/priority-noun-slow.mp3",
+          "say": "We can offer priority on the next plane."
+        },
+        {
+          "en": "Priority does not promise a seat.",
+          "yue": "優先唔保證有位。",
+          "audio": "assets/audio/words/priority-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/priority-noun-ex2-slow.mp3",
+          "say": "Priority does not promise a seat."
+        }
+      ]
+    },
+    {
+      "id": "standby-noun",
+      "lemma": "standby",
+      "pos": "noun",
+      "senseId": "wait-for-seat",
+      "ipa": "/ˈstænd.ˈbaɪ/",
+      "syllables": [
+        "stand",
+        "by"
+      ],
+      "syllableIpa": [
+        "ˈstænd",
+        "ˈbaɪ"
+      ],
+      "stress": 1,
+      "arpabet": "S T AE1 N D B AY1",
+      "audio": "assets/audio/words/standby-noun.mp3",
+      "audioSlow": "assets/audio/words/standby-noun-slow.mp3",
+      "glossYue": "候補",
+      "glossZh": "候補",
+      "jyutping": "hau6 bou2",
+      "collocations": [
+        "standby is the option",
+        "on standby"
+      ],
+      "example": "Standby is the only option left for us.",
+      "exampleYue": "我哋而家只剩候補。",
+      "say": "Standby is the only option left for us.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "standby",
+      "phrase": false,
+      "audioSha256": "36994918b9ca973f4275d0bb510b6a9dacb39d6c768efb5568ecaa6db2473799",
+      "register": "旅行",
+      "usageNotes": "可以講 on standby。",
+      "pitfallsYue": "兩個重音都要讀出。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Standby is the only option left for us.",
+          "yue": "我哋而家只剩候補。",
+          "audio": "assets/audio/words/standby-noun.mp3",
+          "audioSlow": "assets/audio/words/standby-noun-slow.mp3",
+          "say": "Standby is the only option left for us."
+        },
+        {
+          "en": "She waited on standby for an hour.",
+          "yue": "佢候補等咗一個鐘。",
+          "audio": "assets/audio/words/standby-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/standby-noun-ex2-slow.mp3",
+          "say": "She waited on standby for an hour."
+        }
+      ]
+    },
+    {
+      "id": "gate-change-phrase",
+      "lemma": "gate change",
+      "pos": "phrase",
+      "senseId": "new-gate",
+      "ipa": "/ˈɡeɪt ˈtʃeɪndʒ/",
+      "syllables": [
+        "gate",
+        "change"
+      ],
+      "syllableIpa": [
+        "ˈɡeɪt",
+        "ˈtʃeɪndʒ"
+      ],
+      "stress": 1,
+      "arpabet": "G EY1 T CH EY1 N JH",
+      "audio": "assets/audio/words/gate-change-phrase.mp3",
+      "audioSlow": "assets/audio/words/gate-change-phrase-slow.mp3",
+      "glossYue": "閘口改動",
+      "glossZh": "閘口改動",
+      "jyutping": "zaap6 hau2 goi2 dung6",
+      "collocations": [
+        "the gate change",
+        "a gate change"
+      ],
+      "example": "The gate change is not posted yet.",
+      "exampleYue": "閘口改動仲未貼出。",
+      "say": "The gate change is not posted yet.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "gate change",
+      "phrase": true,
+      "audioSha256": "8dd423e62dfdb6aa594938f3e629e8308363b71e9148f9d6be9d695f3dc5a492",
+      "register": "旅行",
+      "usageNotes": "gate 同 change 要連住。",
+      "pitfallsYue": "唔好講 gate is change。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The gate change is not posted yet.",
+          "yue": "閘口改動仲未貼出。",
+          "audio": "assets/audio/words/gate-change-phrase.mp3",
+          "audioSlow": "assets/audio/words/gate-change-phrase-slow.mp3",
+          "say": "The gate change is not posted yet."
+        },
+        {
+          "en": "A gate change came over the speaker.",
+          "yue": "廣播講咗閘口改動。",
+          "audio": "assets/audio/words/gate-change-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/gate-change-phrase-ex2-slow.mp3",
+          "say": "A gate change came over the speaker."
+        }
+      ]
+    },
+    {
+      "id": "announcement-noun",
+      "lemma": "announcement",
+      "pos": "noun",
+      "senseId": "public-notice",
+      "ipa": "/ə.ˈnaʊn.smənt/",
+      "syllables": [
+        "an",
+        "nounce",
+        "ment"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈnaʊn",
+        "smənt"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 N AW1 N S M AH0 N T",
+      "audio": "assets/audio/words/announcement-noun.mp3",
+      "audioSlow": "assets/audio/words/announcement-noun-slow.mp3",
+      "glossYue": "廣播",
+      "glossZh": "廣播",
+      "jyutping": "gwong2 bo3",
+      "collocations": [
+        "the announcement",
+        "an announcement says"
+      ],
+      "example": "The announcement says our flight is delayed.",
+      "exampleYue": "廣播話我哋航班延遲。",
+      "say": "The announcement says our flight is delayed.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "announcement",
+      "phrase": false,
+      "audioSha256": "4955063f064410d7fea1717a10d2f619cd790e79a42e322585e133262085b461",
+      "register": "旅行",
+      "usageNotes": "機場廣播用 announcement。",
+      "pitfallsYue": "重音喺第二音 nounce。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The announcement says our flight is delayed.",
+          "yue": "廣播話我哋航班延遲。",
+          "audio": "assets/audio/words/announcement-noun.mp3",
+          "audioSlow": "assets/audio/words/announcement-noun-slow.mp3",
+          "say": "The announcement says our flight is delayed."
+        },
+        {
+          "en": "We heard an announcement by the gate.",
+          "yue": "我哋喺閘口聽到廣播。",
+          "audio": "assets/audio/words/announcement-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/announcement-noun-ex2-slow.mp3",
+          "say": "We heard an announcement by the gate."
+        }
+      ]
+    },
+    {
+      "id": "overnight-adj",
+      "lemma": "overnight",
+      "pos": "adj",
+      "senseId": "through-the-night",
+      "ipa": "/ˈoʊ.vɚ.ˈnaɪt/",
+      "syllables": [
+        "o",
+        "ver",
+        "night"
+      ],
+      "syllableIpa": [
+        "ˈoʊ",
+        "vɚ",
+        "ˈnaɪt"
+      ],
+      "stress": 1,
+      "arpabet": "OW1 V ER0 N AY1 T",
+      "audio": "assets/audio/words/overnight-adj.mp3",
+      "audioSlow": "assets/audio/words/overnight-adj-slow.mp3",
+      "glossYue": "過夜",
+      "glossZh": "過夜",
+      "jyutping": "gwo3 je6",
+      "collocations": [
+        "an overnight stay",
+        "overnight bag"
+      ],
+      "example": "Compensation may cover the overnight stay.",
+      "exampleYue": "賠償或者包到過夜。",
+      "say": "Compensation may cover the overnight stay.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "overnight",
+      "phrase": false,
+      "audioSha256": "30a2472c1b3bd691ba23dfeee1dd53cae0156383e3c6a80a88785ae74dcf6494",
+      "register": "旅行",
+      "usageNotes": "放喺名詞前面。",
+      "pitfallsYue": "唔好拆開講 over night。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Compensation may cover the overnight stay.",
+          "yue": "賠償或者包到過夜。",
+          "audio": "assets/audio/words/overnight-adj.mp3",
+          "audioSlow": "assets/audio/words/overnight-adj-slow.mp3",
+          "say": "Compensation may cover the overnight stay."
+        },
+        {
+          "en": "An overnight bag is enough for one night.",
+          "yue": "一個過夜袋夠一晚。",
+          "audio": "assets/audio/words/overnight-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/overnight-adj-ex2-slow.mp3",
+          "say": "An overnight bag is enough for one night."
+        }
+      ]
+    },
+    {
+      "id": "alternative-noun",
+      "lemma": "alternative",
+      "pos": "noun",
+      "senseId": "other-option",
+      "ipa": "/ɔl.ˈtɝ.nə.tɪv/",
+      "syllables": [
+        "al",
+        "ter",
+        "na",
+        "tive"
+      ],
+      "syllableIpa": [
+        "ɔl",
+        "ˈtɝ",
+        "nə",
+        "tɪv"
+      ],
+      "stress": 2,
+      "arpabet": "AO0 L T ER1 N AH0 T IH0 V",
+      "audio": "assets/audio/words/alternative-noun.mp3",
+      "audioSlow": "assets/audio/words/alternative-noun-slow.mp3",
+      "glossYue": "另一個選擇",
+      "glossZh": "另一個選擇",
+      "jyutping": "ling6 jat1 go3 zyun2 zaak3",
+      "collocations": [
+        "an alternative",
+        "refund an alternative"
+      ],
+      "example": "A refund is an alternative if we wait.",
+      "exampleYue": "如果要等，退款係另一個選擇。",
+      "say": "A refund is an alternative if we wait.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b",
+        "Wiktionary English (cross-check 2026-10-29)"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "alternative",
+      "phrase": false,
+      "audioSha256": "382aa7576d0ff24b6257d8dac82585fa3de708c05dcb768056992b0bca28b0a0",
+      "register": "旅行",
+      "usageNotes": "前面常用 an，因為元音開頭。",
+      "pitfallsYue": "重音喺第二音 ter。",
+      "related": [],
+      "examples": [
+        {
+          "en": "A refund is an alternative if we wait.",
+          "yue": "如果要等，退款係另一個選擇。",
+          "audio": "assets/audio/words/alternative-noun.mp3",
+          "audioSlow": "assets/audio/words/alternative-noun-slow.mp3",
+          "say": "A refund is an alternative if we wait."
+        },
+        {
+          "en": "The desk offered an alternative route.",
+          "yue": "櫃檯畀咗另一條路線。",
+          "audio": "assets/audio/words/alternative-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/alternative-noun-ex2-slow.mp3",
+          "say": "The desk offered an alternative route."
         }
       ]
     }

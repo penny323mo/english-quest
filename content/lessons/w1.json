@@ -102,11 +102,11 @@
       "id": "w1-l7",
       "speaker": "nia",
       "speakerLabel": "Nia",
-      "text": "The spelling is M E I slowly, and the extension is four two.",
-      "glossYue": "我慢慢串 M E I，內線係四二。",
+      "text": "The spelling is M E I clearly, and the extension is four two.",
+      "glossYue": "字母係 M E I，清楚啲，分機係四二。",
       "audio": "assets/audio/lines/w1-l7.mp3",
       "audioSlow": "assets/audio/lines/w1-l7-slow.mp3",
-      "say": "The spelling is M E I slowly, and the extension is four two.",
+      "say": "The spelling is M E I clearly, and the extension is four two.",
       "hideGloss": false
     },
     {
@@ -272,7 +272,7 @@
         "line": "Could you say the spelling slowly, and read the extension back to me?",
         "audio": "assets/audio/lines/w1-l6.mp3",
         "audioSlow": "assets/audio/lines/w1-l6-slow.mp3",
-        "expect": "The spelling is M E I slowly, and the extension is four two.",
+        "expect": "The spelling is M E I clearly, and the extension is four two.",
         "keywords": [
           "spelling",
           "extension"

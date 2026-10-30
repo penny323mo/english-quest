@@ -88,11 +88,11 @@
       "id": "j12-l6",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Our opening hours are on the door, and the location is beside the market on this street.",
-      "glossYue": "開門時間寫喺門口，舖喺呢條街個街市隔離。",
+      "text": "Our shop hours are on the door, and the address is beside the market on this street.",
+      "glossYue": "舖頭時間貼喺門上面，地址就喺呢條街市旁邊。",
       "audio": "assets/audio/lines/j12-l6.mp3",
       "audioSlow": "assets/audio/lines/j12-l6-slow.mp3",
-      "say": "Our opening hours are on the door, and the location is beside the market on this street.",
+      "say": "Our shop hours are on the door, and the address is beside the market on this street.",
       "hideGloss": true
     },
     {
@@ -110,11 +110,11 @@
       "id": "j12-l8",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "I will leave a message, and I confirm the bracelet is available for you to collect tomorrow.",
-      "glossYue": "我會留個言，再確認條手鏈有貨，你聽日可以嚟取。",
+      "text": "I will leave a message, and I note the bracelet is available for you to gather Friday.",
+      "glossYue": "我會留個口訊，我記低條手鏈星期五可以攞。",
       "audio": "assets/audio/lines/j12-l8.mp3",
       "audioSlow": "assets/audio/lines/j12-l8-slow.mp3",
-      "say": "I will leave a message, and I confirm the bracelet is available for you to collect tomorrow.",
+      "say": "I will leave a message, and I note the bracelet is available for you to gather Friday.",
       "hideGloss": true
     }
   ],
@@ -255,7 +255,7 @@
       {
         "partner": "Kai",
         "partnerId": "kai",
-        "line": "Our opening hours are on the door, and the location is beside the market on this street.",
+        "line": "Our shop hours are on the door, and the address is beside the market on this street.",
         "audio": "assets/audio/lines/j12-l6.mp3",
         "audioSlow": "assets/audio/lines/j12-l6-slow.mp3",
         "expect": "Can you reserve a similar gold piece, and will you hold it under the name Mei?",
@@ -345,5 +345,5 @@
       "similar-adj"
     ]
   },
-  "next": "T8"
+  "next": "R7"
 }

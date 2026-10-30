@@ -13,7 +13,6 @@ import {
 import { BEAT_LABELS } from "./beats";
 import { GOAL_LABEL, GoalPick } from "./goals";
 import { isDue } from "./fsrs";
-import { ArtImg } from "./art";
 import { learnerEyebrow } from "./labels";
 import { playAsset } from "./media";
 import { playSfx } from "./sfx";
@@ -24,6 +23,72 @@ function cefrClass(cefr: string): string {
   if (cefr.includes("B1")) return "b1";
   if (cefr.includes("A2")) return "a2";
   return "a1";
+}
+
+function todayStamp(d = new Date()): string {
+  const m = `${d.getMonth() + 1}`.padStart(2, "0");
+  const day = `${d.getDate()}`.padStart(2, "0");
+  return `${d.getFullYear()}-${m}-${day}`;
+}
+
+const GLYPHS: Record<string, string> = {
+  F1: "breath", F2: "wave", F3: "coin", F4: "thanks", F5: "card", F6: "sun",
+  J1: "wave", J2: "search", J3: "necklace", J4: "gem", J5: "ring", J6: "tag",
+  J7: "card", J8: "spark", J9: "box", J10: "gift", J11: "gem", J12: "phone",
+  R1: "seat", R2: "fork", R3: "leaf", R4: "plate", R5: "bill", R6: "phone", R7: "bowl",
+  T1: "plane", T2: "pass", T3: "bed", T4: "taxi", T5: "pin", T6: "bed", T7: "bag", T8: "pass", T9: "plane",
+  W1: "phone", W2: "mail", W3: "meet", W4: "coffee", W5: "phone", W6: "card",
+  D1: "cross", D2: "coin", D3: "home", D4: "phone", D5: "box",
+};
+
+function Glyph({ kind }: { kind: string }) {
+  const props = {
+    viewBox: "0 0 24 24",
+    width: 28,
+    height: 28,
+    fill: "none",
+    stroke: "currentColor",
+    strokeWidth: 2.2,
+    strokeLinecap: "round" as const,
+    strokeLinejoin: "round" as const,
+    "aria-hidden": true as const,
+  };
+  if (kind === "lock") {
+    return <svg {...props}><rect x="6" y="11" width="12" height="8" rx="2" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg>;
+  }
+  if (kind === "breath") return <svg {...props}><path d="M3 14c2-5 4-5 6 0s4 5 6 0 4-5 6 0" /></svg>;
+  if (kind === "wave") return <svg {...props}><path d="M8 14c.4-3 2-4 3.2-1" /><path d="M4 16c1-6 4-8 7-3" /><circle cx="15" cy="8" r="2.2" /></svg>;
+  if (kind === "coin") return <svg {...props}><circle cx="12" cy="12" r="7" /><path d="M12 8v8M9.5 10.5h4a1.5 1.5 0 0 1 0 3h-3" /></svg>;
+  if (kind === "thanks") return <svg {...props}><path d="M8 13l2 2 6-7" /><path d="M5 19h14" /></svg>;
+  if (kind === "card") return <svg {...props}><rect x="4" y="6" width="16" height="12" rx="2" /><path d="M8 11h8M8 14h5" /></svg>;
+  if (kind === "sun") return <svg {...props}><circle cx="12" cy="12" r="4" /><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.5 5.5l1.4 1.4M17.1 17.1l1.4 1.4M18.5 5.5l-1.4 1.4M6.9 17.1l-1.4 1.4" /></svg>;
+  if (kind === "search") return <svg {...props}><circle cx="11" cy="11" r="5" /><path d="M15 15l4 4" /></svg>;
+  if (kind === "necklace") return <svg {...props}><path d="M7 7c1 6 3 9 5 9s4-3 5-9" /><circle cx="12" cy="17" r="1.6" fill="currentColor" stroke="none" /></svg>;
+  if (kind === "gem") return <svg {...props}><path d="M7 9l5-4 5 4-5 10z" /><path d="M7 9h10" /></svg>;
+  if (kind === "ring") return <svg {...props}><circle cx="12" cy="13" r="5" /><path d="M12 8l1.2-3h-2.4z" /></svg>;
+  if (kind === "tag") return <svg {...props}><path d="M4 12l8-8h6v6l-8 8z" /><circle cx="15.5" cy="8.5" r="1" fill="currentColor" stroke="none" /></svg>;
+  if (kind === "spark") return <svg {...props}><path d="M12 3l1.6 5.2L19 10l-5.4 1.8L12 17l-1.6-5.2L5 10l5.4-1.8z" /></svg>;
+  if (kind === "box") return <svg {...props}><path d="M4 8l8-3 8 3v9l-8 3-8-3z" /><path d="M12 5v15M4 8l8 3 8-3" /></svg>;
+  if (kind === "gift") return <svg {...props}><rect x="5" y="10" width="14" height="9" rx="1" /><path d="M4 10h16M12 10v9M12 10c-2-3-5-3-5 0M12 10c2-3 5-3 5 0" /></svg>;
+  if (kind === "phone") return <svg {...props}><path d="M7 4h3l1 4-2 1a12 12 0 0 0 6 6l1-2 4 1v3a2 2 0 0 1-2 2A14 14 0 0 1 5 6a2 2 0 0 1 2-2z" /></svg>;
+  if (kind === "seat") return <svg {...props}><path d="M7 11V6h10v5" /><path d="M6 11h12v4H6zM8 15v4M16 15v4" /></svg>;
+  if (kind === "fork") return <svg {...props}><path d="M8 3v7a3 3 0 0 0 3 3v8M8 3v5M11 3v5M14 3c2 3 2 6 0 8" /></svg>;
+  if (kind === "leaf") return <svg {...props}><path d="M5 16c8-1 12-8 13-13-6 1-13 6-13 13z" /><path d="M8 13c2-1 4-3 6-6" /></svg>;
+  if (kind === "plate") return <svg {...props}><ellipse cx="12" cy="13" rx="8" ry="4" /><path d="M8 13h8" /></svg>;
+  if (kind === "bill") return <svg {...props}><rect x="6" y="4" width="12" height="16" rx="2" /><path d="M9 8h6M9 12h6M9 16h3" /></svg>;
+  if (kind === "bowl") return <svg {...props}><path d="M5 10h14c0 5-3 8-7 8s-7-3-7-8z" /><path d="M8 6c1 2 2 2 3 0s2-2 3 0" /></svg>;
+  if (kind === "plane") return <svg {...props}><path d="M3 13l18-6-6 14-2-6-6-2z" /></svg>;
+  if (kind === "pass") return <svg {...props}><rect x="5" y="4" width="14" height="16" rx="2" /><circle cx="12" cy="11" r="2.4" /><path d="M8 16h8" /></svg>;
+  if (kind === "bed") return <svg {...props}><path d="M4 16V8M4 14h16v4M8 14v-2a2 2 0 0 1 2-2h6v4" /></svg>;
+  if (kind === "taxi") return <svg {...props}><path d="M4 14h16v4H4zM7 14l2-4h6l2 4" /><circle cx="8" cy="18" r="1.3" fill="currentColor" stroke="none" /><circle cx="16" cy="18" r="1.3" fill="currentColor" stroke="none" /></svg>;
+  if (kind === "pin") return <svg {...props}><path d="M12 21s6-6 6-10a6 6 0 1 0-12 0c0 4 6 10 6 10z" /><circle cx="12" cy="11" r="1.6" /></svg>;
+  if (kind === "bag") return <svg {...props}><path d="M6 8h12l-1 12H7z" /><path d="M9 8V6a3 3 0 0 1 6 0v2" /></svg>;
+  if (kind === "mail") return <svg {...props}><rect x="4" y="6" width="16" height="12" rx="2" /><path d="M4 8l8 6 8-6" /></svg>;
+  if (kind === "meet") return <svg {...props}><circle cx="8" cy="9" r="2.2" /><circle cx="16" cy="9" r="2.2" /><path d="M4 17c.6-2 2-3 4-3s3.4 1 4 3M12 17c.6-2 2-3 4-3s3.4 1 4 3" /></svg>;
+  if (kind === "coffee") return <svg {...props}><path d="M6 8h10v6a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z" /><path d="M16 10h2a2 2 0 0 1 0 4h-2M8 4c.4 1 .4 2 0 3M12 4c.4 1 .4 2 0 3" /></svg>;
+  if (kind === "cross") return <svg {...props}><path d="M12 5v14M6 10h12" /></svg>;
+  if (kind === "home") return <svg {...props}><path d="M4 12l8-7 8 7" /><path d="M7 11v8h10v-8" /></svg>;
+  return <svg {...props}><circle cx="12" cy="12" r="3" /></svg>;
 }
 
 export function PathHome() {
@@ -42,24 +107,27 @@ export function PathHome() {
       !progress[lessonCursor.lessonId] &&
       isLessonOpen(lessonCursor.lessonId, profile.goal, progress),
   );
+  const studiedToday = profile.lastActive === todayStamp();
   return (
     <section className="screen">
-      <header className="mast">
-        <img className="mascot" src={asset("assets/art/mascot-wave.webp")} alt="小燈" width={72} height={72} />
-        <div className="mast-copy">
-          <p className="eyebrow">今日 {profile.minutes} 分鐘</p>
-          <h1>{profile.name}</h1>
-          <div className="pills">
-            <span className="pill">{profile.streak > 0 ? `連續 ${profile.streak} 日` : "今日未打卡"}</span>
-            <span className="pill">{profile.xp} XP</span>
-            <span className="pill">{GOAL_LABEL[profile.goal]}</span>
-          </div>
-          <p className="fine">{done} / {SHIPPED.length} 課完成。冇紅心。聽日再嚟都得。</p>
+      <header className="path-head">
+        <div className="status-row">
+          <span className="pill">{profile.streak > 0 ? `連續 ${profile.streak} 日` : "今日未打卡"}</span>
+          <span className="pill">{profile.xp} XP</span>
+          <span className="pill goal">
+            今日目標 {profile.minutes} 分鐘
+            <span className="goal-bar" aria-hidden="true"><i style={{ width: studiedToday ? "100%" : "0%" }} /></span>
+          </span>
         </div>
+        <div className="path-title-row">
+          <div className="mast-copy">
+            <p className="fine">{profile.name} · {GOAL_LABEL[profile.goal]}</p>
+            <h1 className="path-title">學習路徑</h1>
+          </div>
+          <img className="mascot" src={asset("assets/art/mascot-wave.webp")} alt="小燈" width={72} height={72} />
+        </div>
+        <p className="fine">{done} / {SHIPPED.length} 課完成。冇紅心。聽日再嚟都得。</p>
       </header>
-      <div className="row-btns">
-        <a className="btn ghost" href="#/vocab">生字</a>
-      </div>
       {resumeOpen && lessonCursor && resumeLesson ? (
         <div className="resume-banner">
           <p>未完成：{resumeLesson.titleYue}。停喺{BEAT_LABELS[lessonCursor.beat]}。</p>
@@ -89,7 +157,7 @@ export function PathHome() {
         </div>
       ) : null}
       {pathData.units.map((unit) => (
-        <section key={unit.id} className="unit">
+        <section key={unit.id} className="unit band">
           <h2>{unit.title}</h2>
           <p className="lede">{unit.blurb}</p>
           <div className="path-rail">
@@ -105,11 +173,7 @@ export function PathHome() {
               const body = (
                 <>
                   <span className="orb">
-                    {lesson && !soon ? (
-                      <ArtImg src={asset(lesson.hero)} alt="" width={64} height={64} />
-                    ) : (
-                      <span>{soon ? "即將" : "鎖"}</span>
-                    )}
+                    {open && lesson ? <Glyph kind={GLYPHS[entry.id] || "dot"} /> : <Glyph kind="lock" />}
                   </span>
                   <span className="node-copy">
                     {cefr && <span className={`cefr ${cefrClass(cefr)}`}>{cefr}</span>}
@@ -172,7 +236,7 @@ export function Review() {
 
   return (
     <section className="screen stack">
-      <p className="eyebrow">重溫</p>
+      <p className="eyebrow">練習</p>
       <h1>到期先再睇</h1>
       <p className="lede">用 FSRS 排期。再來、難、好、易都只係記住你幾熟，唔會罰你。</p>
       <a className="btn ghost block" href="#/vocab">生字</a>
@@ -236,7 +300,7 @@ export function Words() {
   });
   return (
     <section className="screen">
-      <p className="eyebrow">詞庫</p>
+      <p className="eyebrow">生字</p>
       <h1>每個意思一張卡</h1>
       <input className="field" value={q} placeholder="搜尋英文、粵語、音標" onChange={(e) => setQ(e.target.value)} />
       <div className="card-list">
@@ -261,7 +325,7 @@ export function WordDetail({ id }: { id: string }) {
   if (!item) {
     return (
       <section className="screen plain">
-        <a className="back" href="#/words">返詞庫</a>
+        <a className="back" href="#/vocab">返生字</a>
         <h1>冇呢張卡</h1>
       </section>
     );

@@ -1,0 +1,347 @@
+{
+  "id": "W6",
+  "unit": "W",
+  "titleYue": "面試自我介紹",
+  "titleEn": "A one-minute self-intro",
+  "canDoYue": "你識用一分鐘講零售經驗、對客例子同自己嘅強項。",
+  "canDoEn": "Give a one-minute retail intro with a past example and one strength.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/w6.webp",
+  "cast": [
+    "ada",
+    "nia"
+  ],
+  "cefr": "B2",
+  "lemmas": [
+    "looking-for-phrase",
+    "currently-adv",
+    "experience-noun",
+    "bilingual-adj",
+    "cantonese-noun",
+    "english-noun",
+    "example-noun",
+    "customer-facing-adj",
+    "handled-verb",
+    "shift-noun",
+    "achieved-verb",
+    "reliable-adj",
+    "teamwork-noun",
+    "strength-noun"
+  ],
+  "dialogue": [
+    {
+      "id": "w6-l1",
+      "speaker": "ada",
+      "speakerLabel": "Ada",
+      "text": "Please tell me a little about the role you are looking for, and what you are doing currently?",
+      "glossYue": "請講下你想做嘅職位，同埋你而家做緊咩？",
+      "audio": "assets/audio/lines/w6-l1.mp3",
+      "audioSlow": "assets/audio/lines/w6-l1-slow.mp3",
+      "say": "Please tell me a little about the role you are looking for, and what you are doing currently?",
+      "hideGloss": false
+    },
+    {
+      "id": "w6-l2",
+      "speaker": "nia",
+      "speakerLabel": "Nia",
+      "text": "I have three years of retail experience so far, and I am bilingual in both Cantonese and English.",
+      "glossYue": "我有三年零售經驗，廣東話同英文都識。",
+      "audio": "assets/audio/lines/w6-l2.mp3",
+      "audioSlow": "assets/audio/lines/w6-l2-slow.mp3",
+      "say": "I have three years of retail experience so far, and I am bilingual in both Cantonese and English.",
+      "hideGloss": true
+    },
+    {
+      "id": "w6-l3",
+      "speaker": "ada",
+      "speakerLabel": "Ada",
+      "text": "Could you please give one clear example of a recent customer-facing task you enjoyed at the counter?",
+      "glossYue": "可唔可以講一個你喺櫃檯對客做過嘅例子？",
+      "audio": "assets/audio/lines/w6-l3.mp3",
+      "audioSlow": "assets/audio/lines/w6-l3-slow.mp3",
+      "say": "Could you please give one clear example of a recent customer-facing task you enjoyed at the counter?",
+      "hideGloss": true
+    },
+    {
+      "id": "w6-l4",
+      "speaker": "nia",
+      "speakerLabel": "Nia",
+      "text": "Last year I really handled a busy Saturday shift, and I achieved a calm queue well before lunch.",
+      "glossYue": "去年我處理一個忙嘅星期六更，開飯之前將條隊做到好定。",
+      "audio": "assets/audio/lines/w6-l4.mp3",
+      "audioSlow": "assets/audio/lines/w6-l4-slow.mp3",
+      "say": "Last year I really handled a busy Saturday shift, and I achieved a calm queue well before lunch.",
+      "hideGloss": true
+    },
+    {
+      "id": "w6-l5",
+      "speaker": "ada",
+      "speakerLabel": "Ada",
+      "text": "That story sounds reliable. How did teamwork help you in the shop on that busy morning?",
+      "glossYue": "呢個故事好可靠。嗰朝早團隊合作點幫到你？",
+      "audio": "assets/audio/lines/w6-l5.mp3",
+      "audioSlow": "assets/audio/lines/w6-l5-slow.mp3",
+      "say": "That story sounds reliable. How did teamwork help you in the shop on that busy morning?",
+      "hideGloss": false
+    },
+    {
+      "id": "w6-l6",
+      "speaker": "nia",
+      "speakerLabel": "Nia",
+      "text": "My real strength is staying calm with guests, and I can show that with a short story from the shop.",
+      "glossYue": "我嘅強項係保持冷靜，我可以用店入面一個短故事說明。",
+      "audio": "assets/audio/lines/w6-l6.mp3",
+      "audioSlow": "assets/audio/lines/w6-l6-slow.mp3",
+      "say": "My real strength is staying calm with guests, and I can show that with a short story from the shop.",
+      "hideGloss": true
+    },
+    {
+      "id": "w6-l7",
+      "speaker": "ada",
+      "speakerLabel": "Ada",
+      "text": "What kind of team would you like to join next month if we offer you the retail role here?",
+      "glossYue": "如果我哋請你做零售，你想加入邊種團隊？",
+      "audio": "assets/audio/lines/w6-l7.mp3",
+      "audioSlow": "assets/audio/lines/w6-l7-slow.mp3",
+      "say": "What kind of team would you like to join next month if we offer you the retail role here?",
+      "hideGloss": true
+    },
+    {
+      "id": "w6-l8",
+      "speaker": "nia",
+      "speakerLabel": "Nia",
+      "text": "I am truly looking forward to it already, and I can gladly start on a morning shift next month.",
+      "glossYue": "我期待，下個月可以朝早更開始。",
+      "audio": "assets/audio/lines/w6-l8.mp3",
+      "audioSlow": "assets/audio/lines/w6-l8-slow.mp3",
+      "say": "I am truly looking forward to it already, and I can gladly start on a morning shift next month.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Please tell me a little about the role you are looking for, and what you are doing currently? 即係問緊咩？",
+      "choices": [
+        "問你想做咩，同埋而家做緊咩",
+        "問你想取消個會",
+        "問你週末天氣"
+      ],
+      "answer": 0,
+      "explain": "looking for 係想搵，currently 係而家。"
+    },
+    {
+      "prompt": "Last year I really handled a busy Saturday shift, and I achieved a calm queue well before lunch. 呢句即係點？",
+      "choices": [
+        "處理過一個忙更，開飯前將隊排定",
+        "而家先至入職",
+        "想轉去做廚房"
+      ],
+      "answer": 0,
+      "explain": "handled 係處理咗，achieved 係做到。"
+    },
+    {
+      "prompt": "That story sounds reliable. How did teamwork help you in the shop on that busy morning? 即係問緊咩？",
+      "choices": [
+        "問團隊合作點幫到你",
+        "問你想唔想加班",
+        "問航班有冇延遲"
+      ],
+      "answer": 0,
+      "explain": "teamwork 係團隊合作，reliable 係可靠。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Please tell me a little about the role you are ___ , and what you are doing currently.",
+      "example": "Please tell me a little about the role you are looking for, and what you are doing currently?",
+      "glossYue": "你想⋯⋯嘅職位。",
+      "answer": "looking for",
+      "choices": [
+        "looking for",
+        "teamwork",
+        "strength"
+      ]
+    },
+    {
+      "pattern": "Last year I really ___ a busy Saturday shift, and I achieved a calm queue well before lunch.",
+      "example": "Last year I really handled a busy Saturday shift, and I achieved a calm queue well before lunch.",
+      "glossYue": "我⋯⋯一個忙更。",
+      "answer": "handled",
+      "choices": [
+        "handled",
+        "achieved",
+        "currently"
+      ]
+    },
+    {
+      "pattern": "My real ___ is staying calm with guests, and I can show that with a short story from the shop.",
+      "example": "My real strength is staying calm with guests, and I can show that with a short story from the shop.",
+      "glossYue": "我嘅⋯⋯係保持冷靜。",
+      "answer": "strength",
+      "choices": [
+        "strength",
+        "example",
+        "shift"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "w6-l4",
+    "hint": "Last year I really handled a busy Saturday shift, and I achieved a calm queue well before lunch."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "面試官問你而家做緊咩。你點介紹經驗？",
+      "choices": [
+        "I have three years of retail experience so far, and I am bilingual in both Cantonese and English.",
+        "The soup arrived cold.",
+        "The flight has been cancelled."
+      ],
+      "answer": 0,
+      "explain": "用 experience，再講 bilingual。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "My",
+        "strength",
+        "is",
+        "calm"
+      ],
+      "answer": [
+        "My",
+        "strength",
+        "is",
+        "calm"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "nia",
+    "intro": "你面試零售職位。同 Ada 講經驗同一個忙更。可以講：experience、handled。",
+    "turns": [
+      {
+        "partner": "Ada",
+        "partnerId": "ada",
+        "line": "Please tell me a little about the role you are looking for, and what you are doing currently?",
+        "audio": "assets/audio/lines/w6-l1.mp3",
+        "audioSlow": "assets/audio/lines/w6-l1-slow.mp3",
+        "expect": "I have three years of retail experience so far, and I am bilingual in both Cantonese and English.",
+        "keywords": [
+          "experience",
+          "bilingual"
+        ],
+        "modelAudio": "assets/audio/lines/w6-l2.mp3",
+        "modelSlow": "assets/audio/lines/w6-l2-slow.mp3"
+      },
+      {
+        "partner": "Ada",
+        "partnerId": "ada",
+        "line": "Could you please give one clear example of a recent customer-facing task you enjoyed at the counter?",
+        "audio": "assets/audio/lines/w6-l3.mp3",
+        "audioSlow": "assets/audio/lines/w6-l3-slow.mp3",
+        "expect": "Last year I really handled a busy Saturday shift, and I achieved a calm queue well before lunch.",
+        "keywords": [
+          "handled",
+          "shift"
+        ],
+        "modelAudio": "assets/audio/lines/w6-l4.mp3",
+        "modelSlow": "assets/audio/lines/w6-l4-slow.mp3"
+      },
+      {
+        "partner": "Ada",
+        "partnerId": "ada",
+        "line": "That story sounds reliable. How did teamwork help you in the shop on that busy morning?",
+        "audio": "assets/audio/lines/w6-l5.mp3",
+        "audioSlow": "assets/audio/lines/w6-l5-slow.mp3",
+        "expect": "My real strength is staying calm with guests, and I can show that with a short story from the shop.",
+        "keywords": [
+          "strength",
+          "calm"
+        ],
+        "modelAudio": "assets/audio/lines/w6-l6.mp3",
+        "modelSlow": "assets/audio/lines/w6-l6-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：經驗",
+      "lemma": "experience-noun",
+      "choices": [
+        "experience",
+        "strength",
+        "shift"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：強項",
+      "lemma": "strength-noun",
+      "choices": [
+        "strength",
+        "example",
+        "teamwork"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "你講「I have three years of retail experience so far, and I am bilingual in both Cantonese and English.」，bilingual 係咩意思？",
+      "choices": [
+        "識兩種話",
+        "而家在職",
+        "可靠"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "面試官講「Could you please give one clear example of a recent customer-facing task you enjoyed at the counter?」，customer-facing 係咩意思？",
+      "choices": [
+        "對客",
+        "幕後",
+        "過夜"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個字有 /l/：bilingual、strength、定 shift？",
+      "choices": [
+        "bilingual",
+        "strength",
+        "shift"
+      ],
+      "answer": 0,
+      "explain": "bilingual 有 /l/。strength 同 shift 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "bilingual 入面嗰個音",
+    "note": "bilingual 有 /l/。strength 同 shift 冇 /l/。",
+    "pairs": [
+      {
+        "a": "bilingual-adj",
+        "b": "strength-noun"
+      },
+      {
+        "a": "reliable-adj",
+        "b": "shift-noun"
+      }
+    ],
+    "drill": [
+      "bilingual-adj",
+      "strength-noun",
+      "shift-noun",
+      "experience-noun",
+      "teamwork-noun"
+    ]
+  },
+  "next": "T9"
+}

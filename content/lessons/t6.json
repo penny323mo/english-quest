@@ -72,11 +72,11 @@
       "id": "t6-l5",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "A quiet room is available upstairs, and I will bring the towels and the blanket now.",
-      "glossYue": "樓上有間靜啲嘅房，我而家帶毛巾同被上嚟。",
+      "text": "A calmer space is available upstairs, and I will bring the towels and the blanket now.",
+      "glossYue": "樓上有個靜啲嘅位，我而家帶毛巾同被嚟。",
       "audio": "assets/audio/lines/t6-l5.mp3",
       "audioSlow": "assets/audio/lines/t6-l5-slow.mp3",
-      "say": "A quiet room is available upstairs, and I will bring the towels and the blanket now.",
+      "say": "A calmer space is available upstairs, and I will bring the towels and the blanket now.",
       "hideGloss": false
     },
     {
@@ -94,22 +94,22 @@
       "id": "t6-l7",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "I have noted the noisy room already, and the engineer will visit before you sleep upstairs.",
-      "glossYue": "我已經記低呢間房嘈，工程師你瞓之前會上嚟。",
+      "text": "I have noted the noisy area already, and the engineer will visit before you sleep upstairs.",
+      "glossYue": "我記低嘈嘅位置，師傅會喺你瞓之前上嚟。",
       "audio": "assets/audio/lines/t6-l7.mp3",
       "audioSlow": "assets/audio/lines/t6-l7-slow.mp3",
-      "say": "I have noted the noisy room already, and the engineer will visit before you sleep upstairs.",
+      "say": "I have noted the noisy area already, and the engineer will visit before you sleep upstairs.",
       "hideGloss": true
     },
     {
       "id": "t6-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I appreciate the quiet room, the extra towels, and the warm blanket on this very noisy night.",
-      "glossYue": "我感激你安排靜啲嘅房、多條毛巾，同埋呢晚嘅暖被。",
+      "text": "I appreciate the calm rest, the extra towels, and the warm blanket on this very noisy night.",
+      "glossYue": "多謝個安靜休息、多啲毛巾，同埋呢個嘈夜嘅暖被。",
       "audio": "assets/audio/lines/t6-l8.mp3",
       "audioSlow": "assets/audio/lines/t6-l8-slow.mp3",
-      "say": "I appreciate the quiet room, the extra towels, and the warm blanket on this very noisy night.",
+      "say": "I appreciate the calm rest, the extra towels, and the warm blanket on this very noisy night.",
       "hideGloss": true
     }
   ],
@@ -193,7 +193,7 @@
   ],
   "shadow": {
     "lineId": "t6-l5",
-    "hint": "A quiet room is available upstairs, and I will bring the towels and the blanket now."
+    "hint": "A calmer space is available upstairs, and I will bring the towels and the blanket now."
   },
   "build": [
     {
@@ -252,7 +252,7 @@
         "line": "Would it be possible to move us to a quiet room, with extra towels and a blanket?",
         "audio": "assets/audio/lines/t6-l4.mp3",
         "audioSlow": "assets/audio/lines/t6-l4-slow.mp3",
-        "expect": "A quiet room is available upstairs, and I will bring the towels and the blanket now.",
+        "expect": "A calmer space is available upstairs, and I will bring the towels and the blanket now.",
         "keywords": [
           "towel",
           "blanket"
@@ -266,7 +266,7 @@
         "line": "The air conditioning is still not working well, so please ask the engineer to check it again.",
         "audio": "assets/audio/lines/t6-l6.mp3",
         "audioSlow": "assets/audio/lines/t6-l6-slow.mp3",
-        "expect": "I have noted the noisy room already, and the engineer will visit before you sleep upstairs.",
+        "expect": "I have noted the noisy area already, and the engineer will visit before you sleep upstairs.",
         "keywords": [
           "noted",
           "engineer"

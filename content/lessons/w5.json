@@ -44,22 +44,22 @@
       "id": "w5-l2",
       "speaker": "ren",
       "speakerLabel": "Ren",
-      "text": "I am sorry for the trouble with it, and I will look into the order with sincere care.",
-      "glossYue": "唔好意思添咗麻煩，我會認真跟進呢張單。",
+      "text": "I'm sorry about that short delay. Let me look into the clasp and call you back soon.",
+      "glossYue": "唔好意思耽擱咗。我查下個扣，遲啲打返畀你。",
       "audio": "assets/audio/lines/w5-l2.mp3",
       "audioSlow": "assets/audio/lines/w5-l2-slow.mp3",
-      "say": "I am sorry for the trouble with it, and I will look into the order with sincere care.",
+      "say": "I'm sorry about that short delay. Let me look into the clasp and call you back soon.",
       "hideGloss": true
     },
     {
       "id": "w5-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The clasp on it broke, so I would like this resolved, and I value a clear update.",
-      "glossYue": "上面個扣壞咗，我想解決，我重視一個清楚嘅更新。",
+      "text": "The clasp on it broke last week, so I'd like this sorted out with a clear update, please.",
+      "glossYue": "上星期個扣壞咗，我想搞掂，請清楚話我知進度。",
       "audio": "assets/audio/lines/w5-l3.mp3",
       "audioSlow": "assets/audio/lines/w5-l3-slow.mp3",
-      "say": "The clasp on it broke, so I would like this resolved, and I value a clear update.",
+      "say": "The clasp on it broke last week, so I'd like this sorted out with a clear update, please.",
       "hideGloss": true
     },
     {
@@ -88,33 +88,33 @@
       "id": "w5-l6",
       "speaker": "ren",
       "speakerLabel": "Ren",
-      "text": "Your feedback is truly valued by us, and I will resolve this case with a sincere apology.",
-      "glossYue": "我哋真係重視你嘅意見，我會誠懇道歉並解決呢單。",
+      "text": "Thanks for letting us know. I'm really sorry, and I will resolve this with a sincere apology.",
+      "glossYue": "多謝你話我知。真係唔好意思，我會解決，同埋誠懇道歉。",
       "audio": "assets/audio/lines/w5-l6.mp3",
       "audioSlow": "assets/audio/lines/w5-l6-slow.mp3",
-      "say": "Your feedback is truly valued by us, and I will resolve this case with a sincere apology.",
+      "say": "Thanks for letting us know. I'm really sorry, and I will resolve this with a sincere apology.",
       "hideGloss": true
     },
     {
       "id": "w5-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Please look into the reference number for me, and tell me when you can update me by phone.",
-      "glossYue": "請幫我查個參考編號，再話我知你幾時可以用電話通知我。",
+      "text": "Your note is valued, and my feedback is only about the broken clasp on the box.",
+      "glossYue": "你嘅留言我哋重視，我嘅意見只係關於盒上面個壞扣。",
       "audio": "assets/audio/lines/w5-l7.mp3",
       "audioSlow": "assets/audio/lines/w5-l7-slow.mp3",
-      "say": "Please look into the reference number for me, and tell me when you can update me by phone.",
+      "say": "Your note is valued, and my feedback is only about the broken clasp on the box.",
       "hideGloss": true
     },
     {
       "id": "w5-l8",
       "speaker": "ren",
       "speakerLabel": "Ren",
-      "text": "I will call you by Friday, and I will resolve the order if the workshop agrees with us.",
-      "glossYue": "我會星期五之前打電話畀你，如果工場同意，我會解決呢張單。",
+      "text": "I will call you by Friday morning, and the workshop will write a short note once they agree with us.",
+      "glossYue": "我會星期五朝早打電話畀你，工場同意就寫張短訊。",
       "audio": "assets/audio/lines/w5-l8.mp3",
       "audioSlow": "assets/audio/lines/w5-l8-slow.mp3",
-      "say": "I will call you by Friday, and I will resolve the order if the workshop agrees with us.",
+      "say": "I will call you by Friday morning, and the workshop will write a short note once they agree with us.",
       "hideGloss": true
     }
   ],
@@ -152,7 +152,7 @@
   ],
   "chunks": [
     {
-      "pattern": "I am calling about a recent ___, and the reference number is on the gift box.",
+      "pattern": "Good morning. I am calling about a recent ___, and the reference number is on the gift box.",
       "example": "Good morning. I am calling about a recent order, and the reference number is on the gift box.",
       "glossYue": "我打嚟問一張近期嘅⋯⋯。",
       "answer": "order",
@@ -176,11 +176,11 @@
     {
       "pattern": "If the workshop cannot repair the broken clasp, would ___ or a full replacement be possible?",
       "example": "If the workshop cannot repair the broken clasp, would compensation or a full replacement be possible?",
-      "glossYue": "可唔可以⋯⋯？",
+      "glossYue": "可唔可以⋯⋯或者換過？",
       "answer": "compensation",
       "choices": [
         "compensation",
-        "reference",
+        "apology",
         "feedback"
       ]
     }
@@ -205,15 +205,15 @@
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "I",
-        "will",
+        "Let",
+        "me",
         "look",
         "into",
         "it"
       ],
       "answer": [
-        "I",
-        "will",
+        "Let",
+        "me",
         "look",
         "into",
         "it"
@@ -227,13 +227,13 @@
       {
         "partner": "Ren",
         "partnerId": "ren",
-        "line": "I am sorry for the trouble with it, and I will look into the order with sincere care.",
+        "line": "I'm sorry about that short delay. Let me look into the clasp and call you back soon.",
         "audio": "assets/audio/lines/w5-l2.mp3",
         "audioSlow": "assets/audio/lines/w5-l2-slow.mp3",
-        "expect": "The clasp on it broke, so I would like this resolved, and I value a clear update.",
+        "expect": "The clasp on it broke last week, so I'd like this sorted out with a clear update, please.",
         "keywords": [
           "clasp",
-          "resolved"
+          "update"
         ],
         "modelAudio": "assets/audio/lines/w5-l3.mp3",
         "modelSlow": "assets/audio/lines/w5-l3-slow.mp3"
@@ -255,13 +255,13 @@
       {
         "partner": "Ren",
         "partnerId": "ren",
-        "line": "Your feedback is truly valued by us, and I will resolve this case with a sincere apology.",
+        "line": "Thanks for letting us know. I'm really sorry, and I will resolve this with a sincere apology.",
         "audio": "assets/audio/lines/w5-l6.mp3",
         "audioSlow": "assets/audio/lines/w5-l6-slow.mp3",
-        "expect": "Please look into the reference number for me, and tell me when you can update me by phone.",
+        "expect": "Your note is valued, and my feedback is only about the broken clasp on the box.",
         "keywords": [
-          "reference",
-          "phone"
+          "feedback",
+          "valued"
         ],
         "modelAudio": "assets/audio/lines/w5-l7.mp3",
         "modelSlow": "assets/audio/lines/w5-l7-slow.mp3"

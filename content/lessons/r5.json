@@ -45,11 +45,11 @@
       "id": "r5-l2",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "We can split it into two separate checks, or you can pay together on one bill.",
-      "glossYue": "可以分開兩張單，或者你哋一張單一齊付。",
+      "text": "We can divide it into two separate checks, or you can pay jointly on one tab.",
+      "glossYue": "我哋可以分開兩張單，或者一齊畀一張單。",
       "audio": "assets/audio/lines/r5-l2.mp3",
       "audioSlow": "assets/audio/lines/r5-l2-slow.mp3",
-      "say": "We can split it into two separate checks, or you can pay together on one bill.",
+      "say": "We can divide it into two separate checks, or you can pay jointly on one tab.",
       "hideGloss": true
     },
     {
@@ -89,11 +89,11 @@
       "id": "r5-l6",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Thank you, and the total does include the service charge before that extra tip.",
-      "glossYue": "多謝，今晚貼士之前個總數已經包括服務費。",
+      "text": "Thank you, and the total does contain the staff fee before that extra tip.",
+      "glossYue": "多謝，總數已經包咗職員費，先至加小費。",
       "audio": "assets/audio/lines/r5-l6.mp3",
       "audioSlow": "assets/audio/lines/r5-l6-slow.mp3",
-      "say": "Thank you, and the total does include the service charge before that extra tip.",
+      "say": "Thank you, and the total does contain the staff fee before that extra tip.",
       "hideGloss": false
     },
     {
@@ -242,7 +242,7 @@
         "line": "Could we have the bill now, and shall we split it or pay together tonight?",
         "audio": "assets/audio/lines/r5-l1.mp3",
         "audioSlow": "assets/audio/lines/r5-l1-slow.mp3",
-        "expect": "We can split it into two separate checks, or you can pay together on one bill.",
+        "expect": "We can divide it into two separate checks, or you can pay jointly on one tab.",
         "keywords": [
           "split",
           "together"
@@ -270,7 +270,7 @@
         "line": "The service was kind indeed, so I will add a tip and you can keep the change.",
         "audio": "assets/audio/lines/r5-l5.mp3",
         "audioSlow": "assets/audio/lines/r5-l5-slow.mp3",
-        "expect": "Thank you, and the total does include the service charge before that extra tip.",
+        "expect": "Thank you, and the total does contain the staff fee before that extra tip.",
         "keywords": [
           "include",
           "tip"
@@ -305,7 +305,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Thank you, and the total does include the service charge before that extra tip.」，係咩意思？",
+      "prompt": "客人講「Thank you, and the total does contain the staff fee before that extra tip.」，係咩意思？",
       "choices": [
         "服務費",
         "零錢",

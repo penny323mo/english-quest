@@ -62,22 +62,22 @@
       "id": "t7-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "This shirt size is too big, and I would like another color in a smaller size.",
-      "glossYue": "呢件衫嘅碼太大，我想要另一隻顏色嘅細碼。",
+      "text": "This shirt size is too big, and I would like another color in a narrower size.",
+      "glossYue": "呢件衫碼太大，我想要另一隻色、窄啲嘅碼。",
       "audio": "assets/audio/lines/t7-l4.mp3",
       "audioSlow": "assets/audio/lines/t7-l4-slow.mp3",
-      "say": "This shirt size is too big, and I would like another color in a smaller size.",
+      "say": "This shirt size is too big, and I would like another color in a narrower size.",
       "hideGloss": true
     },
     {
       "id": "t7-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The smaller size fits well, so can I get a tax refund form for this shirt.",
-      "glossYue": "細碼啱著，可唔可以畀我呢件衫嘅退稅表。",
+      "text": "The reduced fit works well, so can I get a tax refund form for this shirt.",
+      "glossYue": "呢個較合身嘅版好啱，可唔可以畀我呢件衫嘅退稅表。",
       "audio": "assets/audio/lines/t7-l5.mp3",
       "audioSlow": "assets/audio/lines/t7-l5-slow.mp3",
-      "say": "The smaller size fits well, so can I get a tax refund form for this shirt.",
+      "say": "The reduced fit works well, so can I get a tax refund form for this shirt.",
       "hideGloss": false
     },
     {
@@ -171,7 +171,7 @@
     },
     {
       "pattern": "The smaller size fits well, and I will take this color with the tax ___ form.",
-      "example": "The smaller size fits well, so can I get a tax refund form for this shirt.",
+      "example": "The reduced fit works well, so can I get a tax refund form for this shirt.",
       "glossYue": "連埋⋯⋯表。",
       "answer": "refund",
       "choices": [
@@ -194,14 +194,14 @@
   ],
   "shadow": {
     "lineId": "t7-l5",
-    "hint": "The smaller size fits well, so can I get a tax refund form for this shirt."
+    "hint": "The reduced fit works well, so can I get a tax refund form for this shirt."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "店員話細碼同試身室都有。你點先答？",
       "choices": [
-        "The smaller size fits well, so can I get a tax refund form for this shirt.",
+        "The reduced fit works well, so can I get a tax refund form for this shirt.",
         "Could I speak to Mei?",
         "The room is on the quiet side."
       ],
@@ -251,7 +251,7 @@
         "line": "Yes, we do have this color in a smaller size, and the fitting room is open.",
         "audio": "assets/audio/lines/t7-l3.mp3",
         "audioSlow": "assets/audio/lines/t7-l3-slow.mp3",
-        "expect": "This shirt size is too big, and I would like another color in a smaller size.",
+        "expect": "This shirt size is too big, and I would like another color in a narrower size.",
         "keywords": [
           "big",
           "color"
@@ -300,7 +300,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The smaller size fits well, so can I get a tax refund form for this shirt.」，tax refund 係咩意思？",
+      "prompt": "客人講「The reduced fit works well, so can I get a tax refund form for this shirt.」，tax refund 係咩意思？",
       "choices": [
         "退稅",
         "尺寸",

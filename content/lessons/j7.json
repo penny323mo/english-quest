@@ -89,11 +89,11 @@
       "id": "j7-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could I pay with cash if the card machine is busy right now?",
-      "glossYue": "如果讀卡機忙，可唔可以用現金？",
+      "text": "Could I pay with notes if the till machine is busy right now?",
+      "glossYue": "收銀機忙嘅話，我可唔可以用紙幣畀錢？",
       "audio": "assets/audio/lines/j7-l6.mp3",
       "audioSlow": "assets/audio/lines/j7-l6-slow.mp3",
-      "say": "Could I pay with cash if the card machine is busy right now?",
+      "say": "Could I pay with notes if the till machine is busy right now?",
       "hideGloss": true
     },
     {
@@ -111,22 +111,22 @@
       "id": "j7-m1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Would you like to pay by card, or would cash be easier for you today?",
-      "glossYue": "你想拍卡，定係今日用現金方便啲？",
+      "text": "Would you like to settle by phone, or would coins be easier for you today?",
+      "glossYue": "你想用電話結數，定係硬幣方便啲？",
       "audio": "assets/audio/lines/j7-m1.mp3",
       "audioSlow": "assets/audio/lines/j7-m1-slow.mp3",
-      "say": "Would you like to pay by card, or would cash be easier for you today?",
+      "say": "Would you like to settle by phone, or would coins be easier for you today?",
       "hideGloss": true
     },
     {
       "id": "j7-m2",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Here is your receipt, which you should keep with the tax-free form.",
-      "glossYue": "收據喺度，你要同退稅表一齊留低。",
+      "text": "Here is your receipt, which you should keep with the duty-free slip.",
+      "glossYue": "呢張收據你要留低，同一張免稅單。",
       "audio": "assets/audio/lines/j7-m2.mp3",
       "audioSlow": "assets/audio/lines/j7-m2-slow.mp3",
-      "say": "Here is your [[ɹɪsˈit]], which you should keep with the tax-free form.",
+      "say": "Here is your [[ɹɪsˈit]], which you should keep with the duty-free slip.",
       "hideGloss": false
     },
     {

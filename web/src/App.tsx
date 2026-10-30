@@ -61,11 +61,11 @@ export function App() {
 
   useEffect(() => {
     const titles: Record<string, string> = {
-      path: "路線",
+      path: "路徑",
       onboarding: "開始",
       lesson: "課堂",
-      review: "重溫",
-      words: "詞庫",
+      review: "練習",
+      words: "生字",
       word: "詞卡",
       profile: "我",
       attributions: "出處",

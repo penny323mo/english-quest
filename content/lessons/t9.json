@@ -1,0 +1,351 @@
+{
+  "id": "T9",
+  "unit": "T",
+  "titleYue": "航班延誤",
+  "titleEn": "A delayed flight",
+  "canDoYue": "你識聽航班取消，再問改簽、候補、酒店券同退款。",
+  "canDoEn": "Hear that a flight is cancelled, then ask about rebooking, a hotel voucher, and a refund.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t9.webp",
+  "cast": [
+    "kim",
+    "may"
+  ],
+  "cefr": "B2",
+  "lemmas": [
+    "announcement-noun",
+    "delayed-adj",
+    "cancelled-verb",
+    "connection-noun",
+    "missed-verb",
+    "rebook-verb",
+    "standby-noun",
+    "hotel-voucher-phrase",
+    "compensation-noun",
+    "overnight-adj",
+    "priority-noun",
+    "gate-change-phrase",
+    "refund-noun",
+    "alternative-noun",
+    "inconvenience-noun",
+    "voucher-noun"
+  ],
+  "dialogue": [
+    {
+      "id": "t9-l1",
+      "speaker": "may",
+      "speakerLabel": "May",
+      "text": "The announcement says our flight is delayed this afternoon, and the board has changed once more by the gate.",
+      "glossYue": "廣播話航班下晝延遲，閘口個板又改過。",
+      "audio": "assets/audio/lines/t9-l1.mp3",
+      "audioSlow": "assets/audio/lines/t9-l1-slow.mp3",
+      "say": "The announcement says our flight is delayed this afternoon, and the board has changed once more by the gate.",
+      "hideGloss": false
+    },
+    {
+      "id": "t9-l2",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "I am very sorry indeed. The flight has been cancelled, and the connection was missed at noon after lunch.",
+      "glossYue": "真係唔好意思。航班取消咗，中午食完飯嗰程接駁趕唔到。",
+      "audio": "assets/audio/lines/t9-l2.mp3",
+      "audioSlow": "assets/audio/lines/t9-l2-slow.mp3",
+      "say": "I am very sorry indeed. The flight has been cancelled, and the connection was missed at noon after lunch.",
+      "hideGloss": true
+    },
+    {
+      "id": "t9-l3",
+      "speaker": "may",
+      "speakerLabel": "May",
+      "text": "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us?",
+      "glossYue": "可唔可以話我知可唔可以今晚改簽，定係只可以候補？",
+      "audio": "assets/audio/lines/t9-l3.mp3",
+      "audioSlow": "assets/audio/lines/t9-l3-slow.mp3",
+      "say": "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us?",
+      "hideGloss": true
+    },
+    {
+      "id": "t9-l4",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "A hotel voucher is still possible, and compensation may cover the overnight stay as well for us.",
+      "glossYue": "酒店券可以，賠償或者包到過夜。",
+      "audio": "assets/audio/lines/t9-l4.mp3",
+      "audioSlow": "assets/audio/lines/t9-l4-slow.mp3",
+      "say": "A hotel voucher is still possible, and compensation may cover the overnight stay as well for us.",
+      "hideGloss": true
+    },
+    {
+      "id": "t9-l5",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "We can offer priority on the next plane out, though the gate change is not posted yet at all.",
+      "glossYue": "下一班可以優先，但係閘口改動仲未貼出。",
+      "audio": "assets/audio/lines/t9-l5.mp3",
+      "audioSlow": "assets/audio/lines/t9-l5-slow.mp3",
+      "say": "We can offer priority on the next plane out, though the gate change is not posted yet at all.",
+      "hideGloss": false
+    },
+    {
+      "id": "t9-l6",
+      "speaker": "may",
+      "speakerLabel": "May",
+      "text": "Is a full refund an alternative if the new flight does not leave until tomorrow morning from here?",
+      "glossYue": "如果新航班要到聽朝先由呢度飛，全數退款係咪另一個選擇？",
+      "audio": "assets/audio/lines/t9-l6.mp3",
+      "audioSlow": "assets/audio/lines/t9-l6-slow.mp3",
+      "say": "Is a full refund an alternative if the new flight does not leave until tomorrow morning from here?",
+      "hideGloss": true
+    },
+    {
+      "id": "t9-l7",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "I understand the inconvenience tonight, and I will check a voucher for the hotel stay with you.",
+      "glossYue": "我明白今晚唔方便，我會同你睇下酒店券。",
+      "audio": "assets/audio/lines/t9-l7.mp3",
+      "audioSlow": "assets/audio/lines/t9-l7-slow.mp3",
+      "say": "I understand the inconvenience tonight, and I will check a voucher for the hotel stay with you.",
+      "hideGloss": true
+    },
+    {
+      "id": "t9-l8",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Your new itinerary is confirmed now, and the desk will print it once the queue moves along for you.",
+      "glossYue": "新行程確認咗，隊伍郁就印畀你。",
+      "audio": "assets/audio/lines/t9-l8.mp3",
+      "audioSlow": "assets/audio/lines/t9-l8-slow.mp3",
+      "say": "Your new itinerary is confirmed now, and the desk will print it once the queue moves along for you.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "I am very sorry indeed. The flight has been cancelled, and the connection was missed at noon after lunch. 呢句即係點？",
+      "choices": [
+        "航班取消，接駁趕唔到",
+        "航班準時",
+        "只要換閘口"
+      ],
+      "answer": 0,
+      "explain": "cancelled 係取消咗，missed 係趕唔到。"
+    },
+    {
+      "prompt": "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us? 即係問緊咩？",
+      "choices": [
+        "問可唔可以改簽，定係只可以候補",
+        "問可唔可以加行李",
+        "問酒店早餐"
+      ],
+      "answer": 0,
+      "explain": "rebook 係改簽，standby 係候補。"
+    },
+    {
+      "prompt": "Is a full refund an alternative if the new flight does not leave until tomorrow morning from here? 即係問緊咩？",
+      "choices": [
+        "問等到聽朝可唔可以退款",
+        "問可唔可以升級座位",
+        "問閘口喺邊"
+      ],
+      "answer": 0,
+      "explain": "refund 係退款，alternative 係另一個選擇。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I am very sorry indeed. The flight has been ___ , and the connection was missed at noon after lunch.",
+      "example": "I am very sorry indeed. The flight has been cancelled, and the connection was missed at noon after lunch.",
+      "glossYue": "航班⋯⋯。",
+      "answer": "cancelled",
+      "choices": [
+        "cancelled",
+        "delayed",
+        "rebooked"
+      ]
+    },
+    {
+      "pattern": "Could you tell me whether we can ___ this evening, or whether standby is the only option left for us?",
+      "example": "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us?",
+      "glossYue": "可唔可以⋯⋯？",
+      "answer": "rebook",
+      "choices": [
+        "rebook",
+        "refund",
+        "priority"
+      ]
+    },
+    {
+      "pattern": "A hotel voucher is still possible, and ___ may cover the overnight stay as well for us.",
+      "example": "A hotel voucher is still possible, and compensation may cover the overnight stay as well for us.",
+      "glossYue": "⋯⋯或者包到過夜。",
+      "answer": "compensation",
+      "choices": [
+        "compensation",
+        "announcement",
+        "standby"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "t9-l3",
+    "hint": "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us?"
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "航班取消咗。你想問改簽定候補。你點講？",
+      "choices": [
+        "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us?",
+        "I ordered the soup.",
+        "My strength is staying calm."
+      ],
+      "answer": 0,
+      "explain": "用 whether we can rebook，再講 standby。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "The",
+        "flight",
+        "has",
+        "been",
+        "cancelled"
+      ],
+      "answer": [
+        "The",
+        "flight",
+        "has",
+        "been",
+        "cancelled"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "may",
+    "intro": "你喺機場櫃檯。同 Kim 問改簽同退款。可以講：rebook、refund。",
+    "turns": [
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "I am very sorry indeed. The flight has been cancelled, and the connection was missed at noon after lunch.",
+        "audio": "assets/audio/lines/t9-l2.mp3",
+        "audioSlow": "assets/audio/lines/t9-l2-slow.mp3",
+        "expect": "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us?",
+        "keywords": [
+          "rebook",
+          "standby"
+        ],
+        "modelAudio": "assets/audio/lines/t9-l3.mp3",
+        "modelSlow": "assets/audio/lines/t9-l3-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "A hotel voucher is still possible, and compensation may cover the overnight stay as well for us.",
+        "audio": "assets/audio/lines/t9-l4.mp3",
+        "audioSlow": "assets/audio/lines/t9-l4-slow.mp3",
+        "expect": "Is a full refund an alternative if the new flight does not leave until tomorrow morning from here?",
+        "keywords": [
+          "refund",
+          "alternative"
+        ],
+        "modelAudio": "assets/audio/lines/t9-l6.mp3",
+        "modelSlow": "assets/audio/lines/t9-l6-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "We can offer priority on the next plane out, though the gate change is not posted yet at all.",
+        "audio": "assets/audio/lines/t9-l5.mp3",
+        "audioSlow": "assets/audio/lines/t9-l5-slow.mp3",
+        "expect": "Could you tell me whether we can rebook this evening, or whether standby is the only option left for us?",
+        "keywords": [
+          "rebook",
+          "evening"
+        ],
+        "modelAudio": "assets/audio/lines/t9-l3.mp3",
+        "modelSlow": "assets/audio/lines/t9-l3-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：延遲",
+      "lemma": "delayed-adj",
+      "choices": [
+        "delayed",
+        "cancelled",
+        "refund"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：改簽",
+      "lemma": "rebook-verb",
+      "choices": [
+        "rebook",
+        "standby",
+        "voucher"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "職員講「I am very sorry indeed. The flight has been cancelled, and the connection was missed at noon after lunch.」，cancelled 係咩意思？",
+      "choices": [
+        "取消咗",
+        "準時",
+        "優先"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "職員講「A hotel voucher is still possible, and compensation may cover the overnight stay as well for us.」，hotel voucher 係咩意思？",
+      "choices": [
+        "酒店券",
+        "退款",
+        "閘口"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個字有 /l/：cancelled、delayed、定 voucher？",
+      "choices": [
+        "cancelled",
+        "delayed",
+        "voucher"
+      ],
+      "answer": 0,
+      "explain": "cancelled 有 /l/。delayed 同 voucher 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "cancelled 入面嗰個音",
+    "note": "cancelled 有 /l/。delayed 同 voucher 冇 /l/。",
+    "pairs": [
+      {
+        "a": "cancelled-verb",
+        "b": "delayed-adj"
+      },
+      {
+        "a": "alternative-noun",
+        "b": "voucher-noun"
+      }
+    ],
+    "drill": [
+      "cancelled-verb",
+      "delayed-adj",
+      "voucher-noun",
+      "rebook-verb",
+      "refund-noun"
+    ]
+  },
+  "next": null
+}

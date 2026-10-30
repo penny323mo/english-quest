@@ -199,7 +199,6 @@ function Player({ lesson }: { lesson: Lesson }) {
             choices={lesson.understand[sub].choices}
             answer={lesson.understand[sub].answer}
             explain={lesson.understand[sub].explain}
-            nextLabel={sub + 1 < lesson.understand.length ? "下一題" : "去句式"}
             onNext={() => (sub + 1 < lesson.understand.length ? setSub(sub + 1) : advance())}
           />
         )}
@@ -210,7 +209,6 @@ function Player({ lesson }: { lesson: Lesson }) {
             gloss={lesson.chunks[sub].glossYue}
             choices={lesson.chunks[sub].choices}
             answer={lesson.chunks[sub].answer}
-            nextLabel={sub + 1 < lesson.chunks.length ? "下一句" : "去跟讀"}
             onNext={() => (sub + 1 < lesson.chunks.length ? setSub(sub + 1) : advance())}
           />
         )}
@@ -221,7 +219,6 @@ function Player({ lesson }: { lesson: Lesson }) {
           <QuizStep
             item={lesson.quiz[sub]}
             index={sub}
-            total={lesson.quiz.length}
             onScore={() => setQuizScore((n) => n + 1)}
             onAnswered={() => setQuizAnswered((n) => n + 1)}
             onSkip={() => (sub + 1 < lesson.quiz.length ? setSub(sub + 1) : advance())}
@@ -331,7 +328,6 @@ function Choices({
   onResult,
   onNext,
   onSkip,
-  nextLabel,
 }: {
   prompt: string;
   choices: string[];
@@ -340,13 +336,21 @@ function Choices({
   onResult?: (ok: boolean) => void;
   onNext: () => void;
   onSkip?: () => void;
-  nextLabel: string;
 }) {
   const [picked, setPicked] = useState<number | null>(null);
   const [done, setDone] = useState(false);
+  const mark = prompt.includes("即係問緊咩？") ? "即係問緊咩？" : prompt.includes("呢句即係點？") ? "呢句即係點？" : "";
+  const english = mark ? prompt.replace(mark, "").trim() : "";
   return (
     <>
-      <h2>{prompt}</h2>
+      {mark ? (
+        <div className="stem">
+          <p className="stem-yue">{mark}</p>
+          <h2 lang="en">{english}</h2>
+        </div>
+      ) : (
+        <h2>{prompt}</h2>
+      )}
       <div className="stack">
         {choices.map((choice, i) => {
           let cls = "choice";
@@ -371,16 +375,14 @@ function Choices({
           );
         })}
       </div>
-      {done && (
-        <div className={`result-banner ${picked === answer ? "good" : "miss"}`} role="status">
-          <strong>{picked === answer ? "啱晒" : "差少少"}</strong>
-          <p>{explain || (picked === answer ? "啱。" : "記住呢個就得，唔使重來。")}</p>
-        </div>
-      )}
       {!done ? (
         <button className="btn ghost block" type="button" onClick={onSkip || onNext}>跳過呢題</button>
       ) : (
-        <button className="btn block" type="button" onClick={onNext}>{nextLabel}</button>
+        <div className={`result-sheet ${picked === answer ? "good" : "miss"}`} role="status">
+          <strong>{picked === answer ? "啱晒" : "差少少"}</strong>
+          <p>{explain || (picked === answer ? "啱。" : "記住呢個就得，唔使重來。")}</p>
+          <button className="btn block" type="button" onClick={onNext}>繼續</button>
+        </div>
       )}
     </>
   );
@@ -392,14 +394,12 @@ function ChunkStep({
   choices,
   answer,
   onNext,
-  nextLabel,
 }: {
   pattern: string;
   gloss: string;
   choices: string[];
   answer: string;
   onNext: () => void;
-  nextLabel: string;
 }) {
   const answerIndex = Math.max(0, choices.indexOf(answer));
   return (
@@ -409,7 +409,6 @@ function ChunkStep({
       answer={answerIndex}
       explain={gloss}
       onNext={onNext}
-      nextLabel={nextLabel}
     />
   );
 }
@@ -437,7 +436,6 @@ function BuildStep({
       answer={item.answer}
       explain={item.explain}
       onNext={next}
-      nextLabel={sub + 1 < lesson.build.length ? "下一題" : "去角色"}
     />
   );
 }
@@ -472,9 +470,10 @@ function OrderBuild({ item, onNext }: { item: BuildOrder; onNext: () => void }) 
         ))}
       </div>
       {done && (
-        <div className={`result-banner ${ok ? "good" : "miss"}`} role="status">
+        <div className={`result-sheet ${ok ? "good" : "miss"}`} role="status">
           <strong>{ok ? "啱晒" : "差少少"}</strong>
           <p lang="en">{ok ? "順序啱。" : item.answer.join(" ")}</p>
+          <button className="btn block" type="button" onClick={onNext}>繼續</button>
         </div>
       )}
       {!done ? (
@@ -492,9 +491,7 @@ function OrderBuild({ item, onNext }: { item: BuildOrder; onNext: () => void }) 
           </button>
           <button className="btn ghost block" type="button" onClick={onNext}>跳過呢題</button>
         </div>
-      ) : (
-        <button className="btn block" type="button" onClick={onNext}>繼續</button>
-      )}
+      ) : null}
     </>
   );
 }
@@ -571,7 +568,6 @@ function RoleBeat({
 function QuizStep({
   item,
   index,
-  total,
   onScore,
   onAnswered,
   onNext,
@@ -579,7 +575,6 @@ function QuizStep({
 }: {
   item: QuizItem;
   index: number;
-  total: number;
   onScore: () => void;
   onAnswered: () => void;
   onNext: () => void;
@@ -605,7 +600,6 @@ function QuizStep({
         }}
         onSkip={onSkip}
         onNext={onNext}
-        nextLabel={index + 1 < total ? "下一題" : "去發音"}
       />
     </>
   );
@@ -669,8 +663,12 @@ function Recap({ lesson, score, answered, onNext }: { lesson: Lesson; score: num
       <img className="mascot cheer" src={asset("assets/art/mascot-cheer.webp")} alt="小燈" width={96} height={96} />
       <p className="who">放低今日</p>
       <h2>{lesson.canDoYue}</h2>
-      <p className="lede">{tally}。答錯唔會扣任何嘢，生字已經排咗入重溫。</p>
-      {profile && <p className="kicker">連續 {profile.streak} 日 · {profile.xp} XP</p>}
+      <p className="lede">{tally}。答錯唔會扣任何嘢，生字已經排咗入練習。</p>
+      <div className="pills recap-pills">
+        <span className="pill">{tally}</span>
+        {profile && <span className="pill">{profile.xp} XP</span>}
+        {profile && <span className="pill">連續 {profile.streak} 日</span>}
+      </div>
       <div className="card-list">
         {lesson.lemmas.slice(0, 6).map((id) => {
           const item = lexById[id];
@@ -696,7 +694,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪四十二課你行完啦。到期嘅卡會喺重溫等你。</p>
+        <p className="lede">呢輪四十五課你行完啦。到期嘅卡會喺練習等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );

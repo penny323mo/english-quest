@@ -61,11 +61,11 @@
       "id": "d4-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I'll take the cheaper prepaid plan for this short trip.",
-      "glossYue": "呢次短途我要平啲嗰個預繳計劃。",
+      "text": "I'll take the city data option for this short trip.",
+      "glossYue": "呢次短途我揀市區數據嗰個選擇。",
       "audio": "assets/audio/lines/d4-l4.mp3",
       "audioSlow": "assets/audio/lines/d4-l4-slow.mp3",
-      "say": "I'll take the cheaper prepaid plan for this short trip."
+      "say": "I'll take the city data option for this short trip."
     },
     {
       "id": "d4-l5",
@@ -103,11 +103,11 @@
       "id": "d4-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will pay for this cheaper prepaid plan here.",
-      "glossYue": "我喺呢度畀錢買呢個平啲嘅預繳計劃。",
+      "text": "I will pay for this city data option here.",
+      "glossYue": "我喺呢度畀錢買市區數據嗰個選擇。",
       "audio": "assets/audio/lines/d4-l8.mp3",
       "audioSlow": "assets/audio/lines/d4-l8-slow.mp3",
-      "say": "I will pay for this cheaper prepaid plan here.",
+      "say": "I will pay for this city data option here.",
       "hideGloss": true
     }
   ],
@@ -133,7 +133,7 @@
       "explain": "which plan 係問邊個計劃好啲。"
     },
     {
-      "prompt": "I'll take the cheaper prepaid plan for this short trip. 呢句即係點？",
+      "prompt": "I'll take the city data option for this short trip. 呢句即係點？",
       "choices": [
         "我要平啲嘅預繳計劃",
         "我要一份長約",
@@ -191,14 +191,14 @@
   ],
   "shadow": {
     "lineId": "d4-l4",
-    "hint": "I'll take the cheaper prepaid plan for this short trip."
+    "hint": "I'll take the city data option for this short trip."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "Mina 問你要邊個計劃。你點答？",
       "choices": [
-        "I'll take the cheaper prepaid plan for this short trip.",
+        "I'll take the city data option for this short trip.",
         "I usually wake up early, and then I start my long shift.",
         "How much is this?"
       ],
@@ -234,7 +234,7 @@
         "line": "Which phone plan is better for a short city trip?",
         "audio": "assets/audio/lines/d4-l2.mp3",
         "audioSlow": "assets/audio/lines/d4-l2-slow.mp3",
-        "expect": "I'll take the cheaper prepaid plan for this short trip.",
+        "expect": "I'll take the city data option for this short trip.",
         "keywords": [
           "prepaid",
           "plan"
@@ -262,7 +262,7 @@
         "line": "Please activate the new SIM card with your valid passport.",
         "audio": "assets/audio/lines/d4-l5.mp3",
         "audioSlow": "assets/audio/lines/d4-l5-slow.mp3",
-        "expect": "I will pay for this cheaper prepaid plan here.",
+        "expect": "I will pay for this city data option here.",
         "keywords": [
           "pay",
           "plan"

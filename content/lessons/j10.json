@@ -74,11 +74,11 @@
       "id": "j10-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "The engraving is fully optional, and you might also like a simple polish with the set.",
-      "glossYue": "刻字完全可以唔要，你或者都會想套裝加一次簡單擦亮。",
+      "text": "The lettering is fully optional, and you might also like a simple polish with the set.",
+      "glossYue": "刻字完全可揀，你都可以要套裝上面少少擦亮。",
       "audio": "assets/audio/lines/j10-l5.mp3",
       "audioSlow": "assets/audio/lines/j10-l5-slow.mp3",
-      "say": "The engraving is fully optional, and you might also like a simple polish with the set.",
+      "say": "The lettering is fully optional, and you might also like a simple polish with the set.",
       "hideGloss": false
     },
     {
@@ -96,11 +96,11 @@
       "id": "j10-l7",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "If you like this necklace, the matching pair goes well, and the gift box is ready.",
-      "glossYue": "如果你鍾意呢條頸鏈，對襯嘅都好配，禮盒準備好。",
+      "text": "If you prefer this necklace, the linked chain goes well, and the parcel box is ready.",
+      "glossYue": "如果你鍾意呢條頸鏈，條連住嘅鏈都啱，禮盒準備好。",
       "audio": "assets/audio/lines/j10-l7.mp3",
       "audioSlow": "assets/audio/lines/j10-l7-slow.mp3",
-      "say": "If you like this necklace, the matching pair goes well, and the gift box is ready.",
+      "say": "If you prefer this necklace, the linked chain goes well, and the parcel box is ready.",
       "hideGloss": true
     },
     {
@@ -172,7 +172,7 @@
     },
     {
       "pattern": "The engraving is fully ___, and you might also like a simple polish with the set.",
-      "example": "The engraving is fully optional, and you might also like a simple polish with the set.",
+      "example": "The lettering is fully optional, and you might also like a simple polish with the set.",
       "glossYue": "刻字完全⋯⋯。",
       "answer": "optional",
       "choices": [
@@ -195,7 +195,7 @@
   ],
   "shadow": {
     "lineId": "j10-l5",
-    "hint": "The engraving is fully optional, and you might also like a simple polish with the set."
+    "hint": "The lettering is fully optional, and you might also like a simple polish with the set."
   },
   "build": [
     {
@@ -254,7 +254,7 @@
         "line": "I like the pair, but I do not need the engraving if the price goes up.",
         "audio": "assets/audio/lines/j10-l4.mp3",
         "audioSlow": "assets/audio/lines/j10-l4-slow.mp3",
-        "expect": "The engraving is fully optional, and you might also like a simple polish with the set.",
+        "expect": "The lettering is fully optional, and you might also like a simple polish with the set.",
         "keywords": [
           "optional",
           "polish"
@@ -268,7 +268,7 @@
         "line": "Please recommend one popular option only, and then I will decide before we leave the shop.",
         "audio": "assets/audio/lines/j10-l6.mp3",
         "audioSlow": "assets/audio/lines/j10-l6-slow.mp3",
-        "expect": "If you like this necklace, the matching pair goes well, and the gift box is ready.",
+        "expect": "If you prefer this necklace, the linked chain goes well, and the parcel box is ready.",
         "keywords": [
           "matching",
           "pair"

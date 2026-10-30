@@ -1,0 +1,345 @@
+{
+  "id": "R7",
+  "unit": "R",
+  "titleYue": "餐檯投訴",
+  "titleEn": "A problem at the table",
+  "canDoYue": "你識客氣咁話菜凍、未煮熟、等太耐，並接受換菜同免費甜品。",
+  "canDoEn": "Say the dish is cold or undercooked, ask for a replacement, and accept a complimentary dessert.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/r7.webp",
+  "cast": [
+    "ana",
+    "mei"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "ordered-verb",
+    "instead-adv",
+    "cold-adj",
+    "undercooked-adj",
+    "long-wait-phrase",
+    "manager-noun",
+    "replace-verb",
+    "complimentary-adj",
+    "understand-verb",
+    "right-away-phrase",
+    "again-adv",
+    "appreciate-verb"
+  ],
+  "dialogue": [
+    {
+      "id": "r7-l1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Excuse me please, Ana. I ordered the soup, but the bowl arrived cold at our little table.",
+      "glossYue": "唔好意思 Ana。我點咗湯，但係個碗送到我哋檯係凍嘅。",
+      "audio": "assets/audio/lines/r7-l1.mp3",
+      "audioSlow": "assets/audio/lines/r7-l1-slow.mp3",
+      "say": "Excuse me please, Ana. I ordered the soup, but the bowl arrived cold at our little table.",
+      "hideGloss": false
+    },
+    {
+      "id": "r7-l2",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "I understand the problem with the bowl, and I can bring some warm rice instead of that soup.",
+      "glossYue": "我明白個問題，我可以改送熱飯，唔使再要嗰碗湯。",
+      "audio": "assets/audio/lines/r7-l2.mp3",
+      "audioSlow": "assets/audio/lines/r7-l2-slow.mp3",
+      "say": "I understand the problem with the bowl, and I can bring some warm rice instead of that soup.",
+      "hideGloss": true
+    },
+    {
+      "id": "r7-l3",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "The side looks really undercooked after the long wait, and the meal came much too late.",
+      "glossYue": "配菜好似未煮熟，等咗好耐，餐遲咗好多。",
+      "audio": "assets/audio/lines/r7-l3.mp3",
+      "audioSlow": "assets/audio/lines/r7-l3-slow.mp3",
+      "say": "The side looks really undercooked after the long wait, and the meal came much too late.",
+      "hideGloss": true
+    },
+    {
+      "id": "r7-l4",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "The manager can kindly replace the whole dish with a fresh plate if that suits you well.",
+      "glossYue": "經理可以換過成碟，如果你覺得啱。",
+      "audio": "assets/audio/lines/r7-l4.mp3",
+      "audioSlow": "assets/audio/lines/r7-l4-slow.mp3",
+      "say": "The manager can kindly replace the whole dish with a fresh plate if that suits you well.",
+      "hideGloss": true
+    },
+    {
+      "id": "r7-l5",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Could you please bring a complimentary warm dessert for both of us after you fix that plate?",
+      "glossYue": "換完之後，可唔可以畀我哋兩份免費甜品？",
+      "audio": "assets/audio/lines/r7-l5.mp3",
+      "audioSlow": "assets/audio/lines/r7-l5-slow.mp3",
+      "say": "Could you please bring a complimentary warm dessert for both of us after you fix that plate?",
+      "hideGloss": false
+    },
+    {
+      "id": "r7-l6",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "I will send a fresh plate right away, and I will tell the kitchen about it.",
+      "glossYue": "我即刻送碟新鮮嘅出嚟，同時話廚房知。",
+      "audio": "assets/audio/lines/r7-l6.mp3",
+      "audioSlow": "assets/audio/lines/r7-l6-slow.mp3",
+      "say": "I will send a fresh plate right away, and I will tell the kitchen about it.",
+      "hideGloss": true
+    },
+    {
+      "id": "r7-l7",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Please do not let this happen again when we come back for a main course later on.",
+      "glossYue": "我哋下次再嚟點主菜，唔好再有呢件事。",
+      "audio": "assets/audio/lines/r7-l7.mp3",
+      "audioSlow": "assets/audio/lines/r7-l7-slow.mp3",
+      "say": "Please do not let this happen again when we come back for a main course later on.",
+      "hideGloss": true
+    },
+    {
+      "id": "r7-l8",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "I appreciate your patience with us, and the kitchen will cook the fish properly this time round.",
+      "glossYue": "多謝你耐心，廚房今次會將條魚煮得啱啱好。",
+      "audio": "assets/audio/lines/r7-l8.mp3",
+      "audioSlow": "assets/audio/lines/r7-l8-slow.mp3",
+      "say": "I appreciate your patience with us, and the kitchen will cook the fish properly this time round.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Excuse me please, Ana. I ordered the soup, but the bowl arrived cold at our little table. 呢句即係點？",
+      "choices": [
+        "點咗湯，但係送到嚟係凍",
+        "想加一杯酒",
+        "想取消訂位"
+      ],
+      "answer": 0,
+      "explain": "ordered 係點咗，cold 係凍。"
+    },
+    {
+      "prompt": "The side looks really undercooked after the long wait, and the meal came much too late. 呢句即係點？",
+      "choices": [
+        "配菜未煮熟，等得太耐",
+        "個湯好熱",
+        "想叫經理埋單"
+      ],
+      "answer": 0,
+      "explain": "undercooked 係未煮熟，long wait 係等好耐。"
+    },
+    {
+      "prompt": "Could you please bring a complimentary warm dessert for both of us after you fix that plate? 即係問緊咩？",
+      "choices": [
+        "問換完可唔可以有免費甜品",
+        "問可唔可以換窗位",
+        "問湯幾多錢"
+      ],
+      "answer": 0,
+      "explain": "complimentary 係免費送。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Excuse me please, Ana. I ___ the soup, but the bowl arrived cold at our little table.",
+      "example": "Excuse me please, Ana. I ordered the soup, but the bowl arrived cold at our little table.",
+      "glossYue": "我⋯⋯咗湯。",
+      "answer": "ordered",
+      "choices": [
+        "ordered",
+        "replaced",
+        "understood"
+      ]
+    },
+    {
+      "pattern": "The manager can kindly ___ the whole dish with a fresh plate if that suits you well.",
+      "example": "The manager can kindly replace the whole dish with a fresh plate if that suits you well.",
+      "glossYue": "經理可以⋯⋯成碟。",
+      "answer": "replace",
+      "choices": [
+        "replace",
+        "appreciate",
+        "understand"
+      ]
+    },
+    {
+      "pattern": "I will send a fresh plate ___ , and I will tell the kitchen about it.",
+      "example": "I will send a fresh plate right away, and I will tell the kitchen about it.",
+      "glossYue": "我⋯⋯送出嚟。",
+      "answer": "right away",
+      "choices": [
+        "right away",
+        "long wait",
+        "instead"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "r7-l5",
+    "hint": "Could you please bring a complimentary warm dessert for both of us after you fix that plate?"
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "湯係凍嘅。你點講？",
+      "choices": [
+        "Excuse me please, Ana. I ordered the soup, but the bowl arrived cold at our little table.",
+        "Shall we go into the room?",
+        "The flight has been cancelled."
+      ],
+      "answer": 0,
+      "explain": "用 I ordered 加 but，再講 cold。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "I",
+        "understand",
+        "the",
+        "problem"
+      ],
+      "answer": [
+        "I",
+        "understand",
+        "the",
+        "problem"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "mei",
+    "intro": "你喺餐檯前。同 Ana 講湯凍同配菜未煮熟。可以講：ordered、replace。",
+    "turns": [
+      {
+        "partner": "Ana",
+        "partnerId": "ana",
+        "line": "I understand the problem with the bowl, and I can bring some warm rice instead of that soup.",
+        "audio": "assets/audio/lines/r7-l2.mp3",
+        "audioSlow": "assets/audio/lines/r7-l2-slow.mp3",
+        "expect": "The side looks really undercooked after the long wait, and the meal came much too late.",
+        "keywords": [
+          "undercooked",
+          "wait"
+        ],
+        "modelAudio": "assets/audio/lines/r7-l3.mp3",
+        "modelSlow": "assets/audio/lines/r7-l3-slow.mp3"
+      },
+      {
+        "partner": "Ana",
+        "partnerId": "ana",
+        "line": "The manager can kindly replace the whole dish with a fresh plate if that suits you well.",
+        "audio": "assets/audio/lines/r7-l4.mp3",
+        "audioSlow": "assets/audio/lines/r7-l4-slow.mp3",
+        "expect": "Could you please bring a complimentary warm dessert for both of us after you fix that plate?",
+        "keywords": [
+          "complimentary",
+          "dessert"
+        ],
+        "modelAudio": "assets/audio/lines/r7-l5.mp3",
+        "modelSlow": "assets/audio/lines/r7-l5-slow.mp3"
+      },
+      {
+        "partner": "Ana",
+        "partnerId": "ana",
+        "line": "I will send a fresh plate right away, and I will tell the kitchen about it.",
+        "audio": "assets/audio/lines/r7-l6.mp3",
+        "audioSlow": "assets/audio/lines/r7-l6-slow.mp3",
+        "expect": "Please do not let this happen again when we come back for a main course later on.",
+        "keywords": [
+          "again",
+          "course"
+        ],
+        "modelAudio": "assets/audio/lines/r7-l7.mp3",
+        "modelSlow": "assets/audio/lines/r7-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：凍",
+      "lemma": "cold-adj",
+      "choices": [
+        "cold",
+        "ordered",
+        "manager"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：換過",
+      "lemma": "replace-verb",
+      "choices": [
+        "replace",
+        "understand",
+        "appreciate"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "你講「The side looks really undercooked after the long wait, and the meal came much too late.」，undercooked 係咩意思？",
+      "choices": [
+        "未煮熟",
+        "太鹹",
+        "免費"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "店員講「I will send a fresh plate right away, and I will tell the kitchen about it.」，right away 係咩意思？",
+      "choices": [
+        "即刻",
+        "遲啲",
+        "室外"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個字有 /l/：cold、replace、定 manager？",
+      "choices": [
+        "cold",
+        "replace",
+        "manager"
+      ],
+      "answer": 0,
+      "explain": "cold 有 /l/。replace 同 manager 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "cold 入面嗰個音",
+    "note": "cold 有 /l/。replace 同 manager 冇 /l/。",
+    "pairs": [
+      {
+        "a": "cold-adj",
+        "b": "replace-verb"
+      },
+      {
+        "a": "complimentary-adj",
+        "b": "manager-noun"
+      }
+    ],
+    "drill": [
+      "cold-adj",
+      "replace-verb",
+      "manager-noun",
+      "understand-verb",
+      "appreciate-verb"
+    ]
+  },
+  "next": "T8"
+}

@@ -37,11 +37,11 @@
       "id": "f2-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Hello. Good morning. My name is Mei.",
-      "glossYue": "你好。早晨。我叫 Mei。",
+      "text": "Hello. Good morning. Yes, I am Mei.",
+      "glossYue": "你好。早晨。我係 Mei。",
       "audio": "assets/audio/lines/f2-l1.mp3",
       "audioSlow": "assets/audio/lines/f2-l1-slow.mp3",
-      "say": "Hello. Good morning. My name is Mei."
+      "say": "Hello. Good morning. Yes, I am Mei."
     },
     {
       "id": "f2-l2",
@@ -164,7 +164,7 @@
   ],
   "shadow": {
     "lineId": "f2-l1",
-    "hint": "Hello. Good morning. My name is Mei."
+    "hint": "Hello. Good morning. Yes, I am Mei."
   },
   "build": [
     {
@@ -202,7 +202,7 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "Hello. Good morning. My name is Mei.",
+        "line": "Hello. Good morning. Yes, I am Mei.",
         "audio": "assets/audio/lines/f2-l1.mp3",
         "audioSlow": "assets/audio/lines/f2-l1-slow.mp3",
         "expect": "Hello. Good morning. My name is Ling.",
