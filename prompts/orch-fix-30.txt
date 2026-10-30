@@ -12,5 +12,23 @@ Also continue WORD-REVIEW slices. No paid services, no secrets, no nightly panes
 Append '## Round 30 fixes' to CHANGELOG.md. Commit + push ff-only to origin main.
 Do NOT edit reviews/ or prompts/. Do not touch LICENSE.
 
+
+## Coder live 390px audit of round 28 (review/loop-r28/coder-audit.md; audited before fix-29 landed — re-verify STILL OPEN items against fix-29 and close what is still open) — every OPEN/NEW item below must be closed; reviewer may not mark SHIP while any is open
+# Coder live audit — round 28 (live 5d8fa02/0bf5bbc, bundle index-3F6zBpGO.js), 2026-10-30 23:10
+Walk (live URL, 390x844 touch, real taps): path + D2, D3, T7, D1, W3, J10 hook → listen → chunks → build → quiz → pron → recap → 下一課, 22 steps each, 0 page errors, 0 HTTP >=400, scrollWidth 390 throughout. Path 32 playable + 6 locked placeholders (R6 J12 R7 T8 J11 T9), CEFR non-decreasing A1→B2; D1 → D2 → T7 → J8 at A2/B1; W3 → D3 (B1) → end card.
+Lighthouse mobile: 100/100/100/100.
+Lexicon: 20 new D2/D3/T7 entries (lex20.tsv), audio 200 for all; 19 single words = CMUdict, 1 phrase (tax refund).
+Difficulty: avg words/line rises monotonically 2.4 (F4) → 17.2 (D3), but the rise is now mostly padding, not grammar (see #34).
+Scores: Art 7, UI 8, Lexicon 7, Pron UX 8, Pedagogy 6, Speaking 8, SRS 9, Flow 9, Perf 10, Audio 9, Durability 9, CI 9.
+STILL OPEN (r27 items, fix-29 carries — re-verify): #22 polish-noun example still uses the VERB ("Please polish it with a soft cloth." on the 名詞·擦亮劑 card); #28 appointment-noun still glossed 約會 live ("可唔可以同 Mei 講關於個約會？"); #29 follow-up still /ˈfɑ.loʊ ˈʌp/; #30 off-topic distractors still present (我叫的士 in D1 and D2 quizzes, d1-s5.png / d2-s4.png); #31 speaker name still glued ("KaiGood morning…" in D1, D2, D3, T7 — d2-s2.png); #32 D1 lines unchanged ("You have an appointment, and I can help you at the clinic today." / allergy-to-this-medicine before any medicine); #25 filler "today" padding now WORSE (see #34).
+NEW:
+34. Pedagogy (difficulty progression): length grows by bolting on "today/tonight/here/now" and second clauses, not by B1 grammar. Counts of today/tonight per 8-line lesson: J9 6, R5 5, T6 5, J6 4, D2 4, D3 4. Examples: "The balance is quite low today.", "I will pay the fee today.", "The landlord allows a short viewing today.", "The new card replaces the blocked one today.", D3 l1 "I can show you this furnished flat today, and the lease covers the monthly water bill." Rule: at most 1 time adverb per lesson unless the scene needs it; raise A2/B1/B1 difficulty with real grammar (present perfect, would/could requests, if-clauses, relative clauses, because/so that), not padding. Add a content test that fails when a lesson has >1 line containing today/tonight.
+35. Lexicon/Cantonese naturalness (D2/D3/T7): withdraw 提取 → 攞錢／提款; "withdraw some extra cash" → "withdraw some cash"; tenant example "The utilities stay in the tenant name." (ungrammatical, needs tenant's) and utilities 公用開支 → 水電煤; landlord "after the deposit clears" 按金清咗 → 按金過咗數; viewing 「畀人短睇樓」 unnatural → 「業主今日可以俾你睇樓」; deposit-noun "The deposit equals one full month here." / 「按金等於一個完整月」 → "The deposit is one month's rent." / 「按金係一個月租」; tax-refund "I will take this color with the tax refund form." illogical → "Can I get a tax refund form, please?"; agency+contract share the same example sentence — each card needs its own.
+36. Pronunciation display: syllabifier splits illegal onsets: withdraw /wɪ.ˈðdɹɔ/ → /wɪð.ˈdɹɔ/, landlord /ˈlæ.ˌndlɔɹd/ → /ˈlænd.ˌlɔɹd/, postcard /ˈpoʊ.ˌstkɑɹd/ → /ˈpoʊst.ˌkɑɹd/, agency /ˈeɪ.dʒə.nsi/ → /ˈeɪ.dʒən.si/. Fix the syllabifier (legal English onsets only, maximal onset) and add unit tests for these four; re-run over the whole lexicon and list every changed entry in CHANGELOG.
+37. Cast/scene consistency: every T/W/D lesson uses the same speakers Kai + Tom and the same two generic cast avatars (bank clerk, landlord, doctor, shop assistant are all "Kai"). Give each scene a role-appropriate named speaker (e.g. bank teller, letting agent, doctor, shop assistant) with a matching avatar, and keep heroes showing the role (D2 hero has no bank cues: no counter/card/screen — d2-s0.png).
+38. Art: 小燈 lantern again dominates the lower-left of D1/D2 heroes and covers the patient's hands/document (d1-s0.png, d2-s0.png). Keep the mascot small/corner and never over the key prop.
+Screenshots: d2-s2.png, d2-s0.png, d3-s0.png, t7-s5.png, d1-s5.png, path.png.
+
+
 WHEN COMPLETELY FINISHED, create /workspace/sidequest/english-quest/.orch/fix-30.done with DONE.
 ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-30.done
