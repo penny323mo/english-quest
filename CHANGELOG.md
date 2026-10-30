@@ -1,5 +1,9 @@
 # Changelog — English Quest
 
+## Round 18 fixes
+- Round 18 found no critical, major, or minor defects. The round 16 items stay closed: hour, with, and shoe are full sentences, the short-example test is in place, the R2 recap eyebrow is on screen, minute is 等陣。, and the aisle seat is 走廊位. T2 安檢同方向 and the speak-beat record compare stay as shipped in round 17.
+- Tests stayed 13/13. The live review at 390px found no overflow on the path, the locked T2 screen, the T2 lesson, R2, the checked cards, settings, or attributions.
+
 ## Round 17 fixes
 - T2 安檢同方向 is now a full 12-beat lesson after T1. It was a soon teaser. Learners clear security (boarding pass, liquids in the bin, laptop, belt) and ask 「Which way to the gate?」 / 「去閘口邊邊行？」. Kai answers 「Straight ahead.」 / 「直行就得。」 T3 酒店入住 stays upcoming. The path end now says 呢輪十一課.
 - New cards: bin 膠盤, liquid /ˈlɪk.wɪd/ (CMU also has /ˈlɪk.wəd/, flagged, clip forced to /ɪ/), laptop, belt, which /wɪtʃ/ (the /hw/ variant is flagged), left / lift, straight / street, security /sɪ.ˈkjʊɹ.ə.ti/ (the /sə/ variant is flagged, clip forced to /sɪ/). Only those new says were rendered.
