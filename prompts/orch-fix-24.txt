@@ -1,13 +1,21 @@
 You are the coder for English Quest (grok 4.7). cd /workspace/sidequest/english-quest.
-Phase 4 unlimited. Round 24. Read CURRICULUM.md + DUOLINGO-REF.md + SPEC.md.
+Phase 4 unlimited. Round 24. Supervisor: Grok Duet.
 
-CRITICAL: MUST ship ≥3 NEW lessons from CURRICULUM.md build order that are not yet in content/lessons/. Real app-code diff required (content/ web/ tests/ assets/ scripts/). No "no defects" / CHANGELOG-only exits.
+## Curriculum shipping RESUMES
+P0-1, P0-2, P1-6, and P1-4 should be on main. P0-3 remains forbidden without Penny's approval.
 
-Also continue WORD-REVIEW (生字) slices and Path/CEFR/celebration polish per DUOLINGO-REF.md (no Duo IP). Keep gold bar: IPA/CMUdict, Kokoro pad, natural Cantonese, examples >2 words, tests, LH≥98, 390px.
+CRITICAL: MUST ship ≥3 NEW lessons from CURRICULUM.md build order that are not yet in content/lessons/. Real app-code diff required. No "no defects" / CHANGELOG-only exits.
+
+Read CURRICULUM.md + ART-STYLE.md + DUOLINGO-REF.md + SPEC.md. Keep gold bar: 12-beat JSON, IPA/CMUdict, Kokoro pad ~180/200ms, natural HK Cantonese Traditional, EN examples >2 words, distinct hooks, tests green, LH Perf ≥98, 390px no overflow, WCAG AA. Bright cartoon chrome + SFX + 小燈 stay. No Duo IP / #58CC02 / owl.
+
+DIFFICULTY PROGRESSION (Penny, blocks SHIP): Path strictly easy→hard; CEFR never decreases along path order; no grammar before taught; slot new lessons at the right level (see prompts/orch-fix-20-addendum.txt spirit). Add/keep CEFR monotonic test.
+
+Also continue WORD-REVIEW slices as needed for new lemmas. Close any open CRITICAL/MAJOR from reviews/orch-r24-grok.md.
 
 No paid services, no secrets, no nightly panes, no force-add gitignored reports.
 
-Append '## Round 24 fixes' to CHANGELOG.md. Commit + push ff-only to origin main.
+Append `## Round 24 fixes` to CHANGELOG.md. Commit + push ff-only.
+Do NOT edit reviews/ or prompts/. Do not touch LICENSE.
 
 WHEN COMPLETELY FINISHED, create /workspace/sidequest/english-quest/.orch/fix-24.done with DONE.
 ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-24.done

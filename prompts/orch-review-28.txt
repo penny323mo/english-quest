@@ -1,9 +1,11 @@
 You are a strict senior code reviewer for English Quest. cd /workspace/sidequest/english-quest.
 Round 28 review at 390px. Do NOT modify project files.
-Read CURRICULUM.md (≥3 new lessons this round?), DUOLINGO-REF.md, SPEC.md.
-Verify new lessons exist end-to-end; 生字 hub not broken; CEFR chips if claimed; no Duo IP; tests; no 390 overflow.
+Read CURRICULUM.md (≥3 new lessons this round?), ART-STYLE.md, DUOLINGO-REF.md, SPEC.md.
+Verify new lessons end-to-end; CEFR monotonic (no band drop); 生字 hub; light chrome + SFX; no Duo IP; tests; no 390 overflow; P0-3 not sneakily done.
 Write reviews/orch-r28-grok.md first line VERDICT: SHIP or NOT READY.
-SHIP forbidden if <3 new lessons shipped this round OR CRITICAL/MAJOR open OR horizontal overflow OR lexicon spot-check fails.
+SHIP forbidden while CRITICAL/MAJOR open OR difficulty jump/dip OR <3 new lessons OR overflow.
 Local reviews/ is gitignored — do not force-add.
 WHEN DONE create /workspace/sidequest/english-quest/.orch/review-28.done with DONE.
 ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/review-28.done
+
+DIFFICULTY PROGRESSION (Penny): audit Path easy→hard; CEFR never decreases; no grammar before taught.

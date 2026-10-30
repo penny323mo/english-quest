@@ -1,13 +1,33 @@
 You are the coder for English Quest (grok 4.7). cd /workspace/sidequest/english-quest.
-Phase 4 unlimited. Round 23. Read CURRICULUM.md + DUOLINGO-REF.md + SPEC.md.
+Phase 4 · engineering stability. Round 23. Supervisor: Grok Duet.
 
-CRITICAL: MUST ship ≥3 NEW lessons from CURRICULUM.md build order that are not yet in content/lessons/. Real app-code diff required (content/ web/ tests/ assets/ scripts/). No "no defects" / CHANGELOG-only exits.
+## PRIORITY: P1-6 + P1-4 (still no new curriculum lessons)
+P0-1 and P0-2 should already be on main. Do NOT implement P0-3 (root build file cleanup / switch GitHub Pages to Actions deploy) — still awaiting Penny. No paid services, no secrets, no nightly panes.
 
-Also continue WORD-REVIEW (生字) slices and Path/CEFR/celebration polish per DUOLINGO-REF.md (no Duo IP). Keep gold bar: IPA/CMUdict, Kokoro pad, natural Cantonese, examples >2 words, tests, LH≥98, 390px.
+CRITICAL: MUST produce a real app-code diff. No "no defects" / CHANGELOG-only exits.
 
-No paid services, no secrets, no nightly panes, no force-add gitignored reports.
+### P1-6 — upgrade build toolchain; move build tools to devDependencies
+- Upgrade `vite` and `vite-plugin-pwa` to current stable compatible releases (stay on Vite 6 or 7 only if plugins support it; prefer latest Vite 6.x patch if 7 breaks PWA).
+- Move build-only packages out of `dependencies` into `devDependencies`: at least `vite`, `vite-plugin-pwa`, `@vitejs/plugin-react`, `typescript`, `@types/react`, `@types/react-dom`. Keep runtime libs (`react`, `react-dom`, `idb`, `zustand`, `ts-fsrs`) in dependencies.
+- `npm ci` + `npm run typecheck` + `npm test` + `npm run build` must stay green. Update lockfile. Do not break the existing publish-root / Pages static output shape (P0-3 still blocked — keep current deploy path working).
 
-Append '## Round 23 fixes' to CHANGELOG.md. Commit + push ff-only to origin main.
+### P1-4 — resume a half-finished lesson
+- Persist in-progress lesson state (lesson id, beat index, any quiz answers / speak attempts needed to resume) in the durable store (same IndexedDB path as P0-1, with schemaVersion migrate bump if the Persisted shape grows).
+- If the learner leaves mid-lesson (back, refresh, tab close after hydrate), returning to that lesson (or Path CTA) offers **「繼續」** to resume at the saved beat, plus an option to restart.
+- At 390px: resume banner/CTA clear; no overflow; SFX/chrome unchanged.
+- Unit tests for save/restore of in-progress lesson cursor.
+
+### Explicitly out of scope
+- No ≥3 new lessons yet (that resumes in fix-24).
+- No P0-3.
+- Do not revert P0-1/P0-2.
+
+### Gates
+- Append `## Round 23 fixes` to CHANGELOG.md.
+- Commit e.g. "Ship round 23: P1-6 vite/devDeps + P1-4 resume lesson", push ff-only.
+- Do NOT edit reviews/ or prompts/. Do not touch LICENSE.
 
 WHEN COMPLETELY FINISHED, create /workspace/sidequest/english-quest/.orch/fix-23.done with DONE.
 ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-23.done
+
+DIFFICULTY PROGRESSION (Penny): keep Path easy→hard; CEFR never decreases.

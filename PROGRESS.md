@@ -18,7 +18,7 @@ phase2_rules: |
   - Report to Grok Duet only (not Penny)
   - No paid services, no GitHub deletes, no credential use beyond existing git
   - Phase 4 (Penny 2026-10-30): unlimited loop; CURRICULUM.md is content authority (45 lessons A1→B2)
-  - EVERY future fix round MUST ship ≥3 new lessons from CURRICULUM.md build order + difficulty progression (CEFR on Path)
+  - Lesson shipping (≥3 new) SUSPENDED for rounds 21–23 (P0-1 → P0-2 → P1-6+P1-4); resumes fix-24+. Difficulty progression still required every round. P0-3 blocked pending Penny.
   - WORD-REVIEW 生字回顧 mode required (hub + SRS + rich word cards + quiz types) — see CURRICULUM.md WORD-REVIEW
   - DUOLINGO-REF.md: adapt Path/feedback/celebration/practice hub; never copy Duo IP/owl/brand; no hearts lockout
   - EMPTY_DIFF still stops a batch; parent/watchdog relaunches with next fix prompt (not a reason to invent "no defects")
@@ -58,3 +58,10 @@ Every round's review MUST audit difficulty progression along the Path: lessons o
 - 2026-10-30 16:30: fix-19 still in progress in grokcoder-pane (~1h, attempt 2 queued after timeout; +3770/-321 across 33 files; Cantonese test fixed, 390px walk done, now splitting bundle because LH Perf 0.97 < 0.98). Orchestrator pid alive, heartbeat fresh, live 200 (= round 17, 2331f28). No new round finished; nothing reported.
 
 - 2026-10-30 17:05: Round 19 shipped 1dfee5c (J4–J6, CEFR Path, 生字 hub), live 200 (index-Cd57Yl3N.js). review-20 NOT READY (CEFR path steps backwards; J4–J6 A1-shaped under A2/B1 chips) but fix-20 prompt lacked those items, so I wrote prompts/orch-fix-20-addendum.txt and queued it into grokcoder-pane (fix-20 ~25 min in: J7/R3/T3 + light redesign + SFX, +115 diff so far). Coder live audit review/loop-r19 (local only): 14/14 lessons walked at 390px, 0 overflow/errors; LH mobile 100x4; 20/20 lexicon audio 200 + IPA=CMU. Scores Art8 UI8 Lex9 Pron9 Ped7 Speak9 SRS9 Flow8 Perf10 Audio9. Audit appended to orch-fix-21 + gate in orch-review-21. Orchestrator pid 1213336 alive (rounds 999). last_reported_round: 18 (next Duet report after round 21). Nightly panes untouched.
+
+- 2026-10-30 17:27: Duet redirected loop to engineering stability after third-party review (a2a43a0 era). Decision: round 20 redesign+SFX+J7/R3/T3 already shipped (5e73973) — keep it; let mid-flight CEFR addendum finish, then:
+  - fix-21 = P0-1 progress durability (IDB reopen, 未儲存 banner, hydrate read-only, persist(), schemaVersion+migrate, Settings JSON export/import + unit tests). No new lessons.
+  - fix-22 = P0-2 skip cold Piper when unavailable + GitHub Actions (npm ci/typecheck/test/build). No P0-3.
+  - fix-23 = P1-6 vite/vite-plugin-pwa upgrade + move build tools to devDependencies; P1-4 resume half-finished lesson.
+  - fix-24+ = resume ≥3 new lessons + difficulty order.
+  Rewrote prompts/orch-fix-21..30 + orch-review-22..30. Patched orchestrator empty-diff to count tests/ and .github/ (run.sh.bak-20261030-eq-p0-stability). Orchestrator phase=fix-21 (prompt already queued to grokcoder-pane — file rewritten in place). Nightly panes untouched. No paid services.

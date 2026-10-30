@@ -1,7 +1,7 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import { Onboarding } from "./Onboarding";
 import { unlockSfx } from "./sfx";
-import { hydrate, useStore } from "./store";
+import { hydrate, retryHydrate, useStore } from "./store";
 import type { Route } from "./types";
 
 const Shell = lazy(() => import("./shell"));
@@ -46,6 +46,7 @@ function Splash() {
 export function App() {
   const ready = useStore((s) => s.ready);
   const profile = useStore((s) => s.profile);
+  const saveStatus = useStore((s) => s.saveStatus);
   const route = useRoute();
 
   useEffect(() => {
@@ -75,6 +76,22 @@ export function App() {
   }, [route]);
 
   if (!ready) return <div className="stage"><Splash /></div>;
+
+  if (saveStatus.kind === "readonly") {
+    return (
+      <div className="stage">
+        <div className="phone">
+          <section className="screen stack">
+            <p className="eyebrow">進度</p>
+            <h1>讀唔到進度</h1>
+            <p className="lede">{saveStatus.reason}</p>
+            <p className="note">為咗唔好覆蓋舊紀錄，而家暫停寫入。</p>
+            <button className="btn block" type="button" onClick={() => void retryHydrate()}>再試</button>
+          </section>
+        </div>
+      </div>
+    );
+  }
 
   const showOnboarding = (!profile && route.name !== "attributions") || route.name === "onboarding";
   if (showOnboarding) {

@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { Rating, type Grade } from "ts-fsrs";
 import {
   SHIPPED,
@@ -298,8 +298,40 @@ export function Settings() {
   const profile = useStore((s) => s.profile);
   const update = useStore((s) => s.updateProfile);
   const reset = useStore((s) => s.reset);
+  const previewImport = useStore((s) => s.previewImport);
+  const applyImport = useStore((s) => s.applyImport);
+  const exportSnapshot = useStore((s) => s.exportSnapshot);
   const [armed, setArmed] = useState(false);
+  const [importNote, setImportNote] = useState("");
+  const [pendingImport, setPendingImport] = useState<string | null>(null);
+  const fileRef = useRef<HTMLInputElement>(null);
   if (!profile) return null;
+
+  async function onPick(file: File) {
+    const text = await file.text();
+    const preview = previewImport(text);
+    if (!preview.ok) {
+      setPendingImport(null);
+      setImportNote(preview.message);
+      return;
+    }
+    setImportNote("");
+    setPendingImport(text);
+  }
+
+  function onExport() {
+    const body = exportSnapshot();
+    const blob = new Blob([body], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "english-quest-progress.json";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    window.setTimeout(() => URL.revokeObjectURL(url), 1500);
+  }
+
   return (
     <section className="screen plain stack">
       <a className="back" href="#/profile">返我</a>
@@ -334,6 +366,38 @@ export function Settings() {
         <input type="checkbox" checked={profile.sound !== false} onChange={(e) => update({ sound: e.target.checked })} />
       </label>
       <p className="fine">正確、錯誤、完成同連擊都有短音。發音朗讀播放嗰陣會讓路。關掉就完全靜音。</p>
+      <h2>進度檔案</h2>
+      <button className="btn ghost block" type="button" onClick={onExport}>匯出進度</button>
+      <input
+        ref={fileRef}
+        type="file"
+        accept="application/json,.json"
+        hidden
+        onChange={(e) => {
+          const file = e.target.files?.[0];
+          e.target.value = "";
+          if (file) void onPick(file);
+        }}
+      />
+      <button className="btn ghost block" type="button" onClick={() => fileRef.current?.click()}>匯入進度</button>
+      {importNote && <p className="note">{importNote}</p>}
+      {pendingImport && (
+        <div className="stack">
+          <p className="note">匯入會覆蓋而家嘅進度，課同重溫卡都會換走。</p>
+          <button
+            className="btn block"
+            type="button"
+            onClick={() => {
+              const result = applyImport(pendingImport);
+              setPendingImport(null);
+              setImportNote(result.ok ? "已匯入呢部機。" : result.message);
+            }}
+          >
+            確定匯入
+          </button>
+          <button className="btn ghost block" type="button" onClick={() => setPendingImport(null)}>取消</button>
+        </div>
+      )}
       {!armed ? (
         <button className="btn ghost block" type="button" onClick={() => setArmed(true)}>清除呢部機嘅進度</button>
       ) : (

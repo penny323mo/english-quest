@@ -1,17 +1,14 @@
-import { openDB } from "idb";
+import { openDB, type IDBPDatabase } from "idb";
 import { create } from "zustand";
 import { Rating, type Grade } from "ts-fsrs";
 import { makeNewCard, reviewStored } from "./fsrs";
-import type { Goal, LessonDone, Level, Profile, StoredCard } from "./types";
-
-type Persisted = {
-  profile: Profile | null;
-  progress: Record<string, LessonDone>;
-  cards: Record<string, StoredCard>;
-};
+import { createPersistence, exportJson, importJson, type Persisted, type SaveStatus } from "./persist.mjs";
+import type { Goal, Level, Profile } from "./types";
 
 type Store = Persisted & {
   ready: boolean;
+  writable: boolean;
+  saveStatus: SaveStatus;
   setProfile: (profile: Profile) => void;
   updateProfile: (patch: Partial<Profile>) => void;
   completeLesson: (id: string, xp: number) => void;
@@ -19,6 +16,10 @@ type Store = Persisted & {
   gradeCard: (id: string, rating: Grade) => void;
   touchToday: () => void;
   reset: () => void;
+  retrySave: () => void;
+  exportSnapshot: () => string;
+  previewImport: (raw: string) => { ok: true } | { ok: false; message: string };
+  applyImport: (raw: string) => { ok: true } | { ok: false; message: string };
 };
 
 function todayKey(d = new Date()): string {
@@ -36,32 +37,89 @@ export function bumpStreak(profile: Profile, now = new Date()): Profile {
   return { ...profile, streak, lastActive: today };
 }
 
-const dbp = openDB("english-quest", 1, {
-  upgrade(db) {
-    if (!db.objectStoreNames.contains("kv")) db.createObjectStore("kv");
-  },
-});
+const DB_VERSION = 2;
+
+function openBrowserDb() {
+  if (typeof indexedDB === "undefined") {
+    const err = new Error("no indexedDB");
+    err.name = "SecurityError";
+    return Promise.reject(err);
+  }
+  return openDB("english-quest", DB_VERSION, {
+    upgrade(db) {
+      if (!db.objectStoreNames.contains("kv")) db.createObjectStore("kv");
+    },
+    terminated() {
+      persistence.drop();
+    },
+  }).then((db) => wrapDb(db));
+}
+
+function wrapDb(db: IDBPDatabase): {
+  get(key: string): Promise<unknown>;
+  put(key: string, value: unknown): Promise<unknown>;
+  close(): void;
+  onclose: (() => void) | null;
+  onversionchange: (() => void) | null;
+} {
+  let onclose: (() => void) | null = null;
+  let onversionchange: (() => void) | null = null;
+  db.onclose = () => {
+    onclose?.();
+  };
+  db.onversionchange = () => {
+    onversionchange?.();
+  };
+  return {
+    get: (key) => db.get("kv", key),
+    put: (key, value) => db.put("kv", value, key),
+    close: () => db.close(),
+    get onclose() {
+      return onclose;
+    },
+    set onclose(fn) {
+      onclose = fn;
+    },
+    get onversionchange() {
+      return onversionchange;
+    },
+    set onversionchange(fn) {
+      onversionchange = fn;
+    },
+  };
+}
+
+const persistence = createPersistence(openBrowserDb);
+
+function snapshot(): Persisted {
+  const s = useStore.getState();
+  return { schemaVersion: s.schemaVersion, profile: s.profile, progress: s.progress, cards: s.cards };
+}
 
 async function save(data: Persisted) {
   try {
-    const db = await dbp;
-    await db.put("kv", data, "state");
+    await persistence.save(data);
   } catch {
-    /* Private mode keeps the session in memory. */
+    /* persistence.save already records the failure and does not throw. */
   }
+  const status = persistence.status;
+  if (useStore.getState().saveStatus !== status) useStore.setState({ saveStatus: status });
 }
 
 export const useStore = create<Store>((set) => ({
   ready: false,
+  writable: false,
+  saveStatus: { kind: "ok" },
+  schemaVersion: 2,
   profile: null,
   progress: {},
   cards: {},
-  setProfile: (profile) => set({ profile }),
+  setProfile: (profile) => set((s) => (s.writable ? { profile } : s)),
   updateProfile: (patch) =>
-    set((s) => (s.profile ? { profile: { ...s.profile, ...patch } } : s)),
+    set((s) => (s.writable && s.profile ? { profile: { ...s.profile, ...patch } } : s)),
   completeLesson: (id, xp) =>
     set((s) => {
-      if (!s.profile) return s;
+      if (!s.writable || !s.profile) return s;
       const profile = bumpStreak(s.profile);
       if (s.progress[id]) return { profile };
       return {
@@ -71,6 +129,7 @@ export const useStore = create<Store>((set) => ({
     }),
   enqueueLemmas: (ids) =>
     set((s) => {
+      if (!s.writable) return s;
       const cards = { ...s.cards };
       const now = new Date();
       let changed = false;
@@ -85,7 +144,7 @@ export const useStore = create<Store>((set) => ({
   gradeCard: (id, rating) =>
     set((s) => {
       const cur = s.cards[id];
-      if (!cur || !s.profile) return s;
+      if (!s.writable || !cur || !s.profile) return s;
       const next = reviewStored(cur, rating);
       const bonus = rating === Rating.Good || rating === Rating.Easy ? 2 : rating === Rating.Hard ? 1 : 0;
       const profile = bumpStreak(s.profile);
@@ -95,12 +154,35 @@ export const useStore = create<Store>((set) => ({
       };
     }),
   touchToday: () =>
-    set((s) => (s.profile ? { profile: bumpStreak(s.profile) } : s)),
-  reset: () => set({ profile: null, progress: {}, cards: {} }),
+    set((s) => (s.writable && s.profile ? { profile: bumpStreak(s.profile) } : s)),
+  reset: () => set((s) => (s.writable ? { profile: null, progress: {}, cards: {} } : s)),
+  retrySave: () => {
+    void save(snapshot());
+  },
+  exportSnapshot: () => exportJson(snapshot()),
+  previewImport: (raw) => {
+    try {
+      importJson(raw);
+      return { ok: true };
+    } catch (err) {
+      return { ok: false, message: err instanceof Error ? err.message : "呢份檔案讀唔到。" };
+    }
+  },
+  applyImport: (raw) => {
+    const s = useStore.getState();
+    if (!s.writable) return { ok: false, message: "而家讀唔到舊進度，未可以覆蓋。" };
+    try {
+      const data = importJson(raw);
+      set({ profile: data.profile, progress: data.progress, cards: data.cards, schemaVersion: data.schemaVersion });
+      return { ok: true };
+    } catch (err) {
+      return { ok: false, message: err instanceof Error ? err.message : "呢份檔案讀唔到。" };
+    }
+  },
 }));
 
 useStore.subscribe((state, prev) => {
-  if (!state.ready) return;
+  if (!state.ready || !state.writable) return;
   if (
     state.profile === prev.profile &&
     state.progress === prev.progress &&
@@ -108,28 +190,61 @@ useStore.subscribe((state, prev) => {
   ) {
     return;
   }
-  void save({ profile: state.profile, progress: state.progress, cards: state.cards });
+  void save({
+    schemaVersion: state.schemaVersion,
+    profile: state.profile,
+    progress: state.progress,
+    cards: state.cards,
+  });
 });
 
 let hydrating: Promise<void> | null = null;
 
+function applyPersistence() {
+  const snap = persistence.snapshot;
+  const memory = persistence.mode === "memory";
+  useStore.setState({
+    schemaVersion: snap.schemaVersion,
+    profile: snap.profile,
+    progress: snap.progress,
+    cards: snap.cards,
+    ready: true,
+    writable: false,
+    saveStatus: { kind: "ok" },
+  });
+  useStore.setState({
+    writable: persistence.mode === "ready" || memory,
+    saveStatus: persistence.status,
+  });
+}
+
 export function hydrate(): Promise<void> {
   if (hydrating) return hydrating;
   hydrating = (async () => {
-    try {
-      const db = await dbp;
-      const saved = (await db.get("kv", "state")) as Persisted | undefined;
+    const result = await persistence.hydrate();
+    if (!result.ok) {
       useStore.setState({
-        profile: saved?.profile ?? null,
-        progress: saved?.progress ?? {},
-        cards: saved?.cards ?? {},
         ready: true,
+        writable: false,
+        saveStatus: persistence.status,
       });
-    } catch {
-      useStore.setState({ ready: true });
+      return;
     }
-  })();
+    applyPersistence();
+  })().catch(() => {
+    useStore.setState({
+      ready: true,
+      writable: false,
+      saveStatus: { kind: "readonly", reason: "讀唔到已儲存嘅進度。" },
+    });
+  });
   return hydrating;
+}
+
+export function retryHydrate(): Promise<void> {
+  hydrating = null;
+  useStore.setState({ ready: false, writable: false });
+  return hydrate();
 }
 
 export function blankProfile(input: {

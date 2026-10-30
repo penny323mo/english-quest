@@ -69,6 +69,20 @@ a { color: inherit; }
   padding: calc(14px + env(safe-area-inset-top)) 18px 24px;
 }
 .screen.plain { padding-bottom: calc(24px + env(safe-area-inset-bottom)); }
+.save-banner {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 12px 0;
+  padding: 8px 10px;
+  background: var(--error-bg);
+  color: var(--ink);
+  border: 2px solid var(--error);
+  border-radius: 16px;
+}
+.save-banner p { flex: 1; min-width: 0; }
+.save-banner .btn { width: auto; flex-shrink: 0; }
 
 .tabs {
   position: relative;

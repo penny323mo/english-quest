@@ -1,5 +1,11 @@
 # Changelog — English Quest
 
+## Round 21 fixes
+- Learning progress stays on this device. IndexedDB is version 2 and reopens after `close`, `versionchange`, or a failed read/write, instead of reusing a dead connection. Records carry `schemaVersion`. Version 1 records migrate forward without dropping XP, streak, finished lessons, or FSRS cards.
+- If a save fails, a 「未儲存」 banner stays on the screen with the reason and a 「再試」 button until a later save works. If the saved record cannot be read, the app stops writing and shows 「再試」 rather than replacing it with an empty profile. A private-mode browser that blocks IndexedDB can still start an empty session and does not call put.
+- Persistent storage is requested once after a successful read. Settings can 匯出進度 and 匯入進度 as JSON. Import asks before it overwrites, and a newer schema is rejected in Cantonese.
+- The round 20 path order is unchanged: one easy-to-hard list, and the CEFR test still fails if a chip steps backwards. No new lessons this round.
+
 ## Round 20 fixes
 - The chrome is the light cartoon system: sky-to-cream screens, a teal path, chunky nodes, CEFR chips, 52px buttons, and white lesson sheets. 小燈 (a harbour lantern, not an owl) waves on the path and cheers on the lesson-complete screen. There is no `#58CC02`.
 - Sound effects are synthesized in the Web Audio API: a bright plink for a correct answer, a soft thud for a miss, a short fanfare when a lesson ends, a sparkle for XP, a warm blip for a streak, and a tiny click when a path node starts. Settings has a mute toggle, saved with the rest of the profile. Sound defaults to on. The audio context resumes on the first tap and never throws. Pronunciation clips take priority, so a sound effect waits while speech is playing.

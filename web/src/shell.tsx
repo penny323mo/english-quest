@@ -37,8 +37,21 @@ export default function Shell({ route }: { route: Route }) {
 
   return (
     <div className={lesson && profile ? "phone noscroll" : "phone"}>
+      <SaveBanner />
       {body}
       {tabbed && profile && <Tabs route={route} />}
+    </div>
+  );
+}
+
+function SaveBanner() {
+  const status = useStore((s) => s.saveStatus);
+  const retrySave = useStore((s) => s.retrySave);
+  if (status.kind !== "unsaved") return null;
+  return (
+    <div className="save-banner" role="status">
+      <p><strong>未儲存</strong> {status.reason}</p>
+      <button className="btn quiet" type="button" onClick={() => retrySave()}>再試</button>
     </div>
   );
 }

@@ -1,9 +1,15 @@
 You are a strict senior code reviewer for English Quest. cd /workspace/sidequest/english-quest.
 Round 24 review at 390px. Do NOT modify project files.
-Read CURRICULUM.md (≥3 new lessons this round?), DUOLINGO-REF.md, SPEC.md.
-Verify new lessons exist end-to-end; 生字 hub not broken; CEFR chips if claimed; no Duo IP; tests; no 390 overflow.
+
+This round reviewed **P1-6 (vite/devDeps) + P1-4 (resume half-finished lesson)**. ≥3 new lessons are NOT required. P0-3 must NOT have landed.
+
+Verify:
+1) vite + vite-plugin-pwa upgraded sensibly; build tools live in devDependencies; `npm run build` works; Pages static shape unchanged.
+2) Mid-lesson progress persists; refresh/return shows 「繼續」 (and restart); schema migrate if needed; unit tests cover resume cursor.
+3) P0-1 durability + P0-2 CI still present; Piper skip still safe; difficulty CEFR monotonic.
+4) Light chrome / SFX / 小燈 intact; no Duo IP; no 390 overflow.
+
 Write reviews/orch-r24-grok.md first line VERDICT: SHIP or NOT READY.
-SHIP forbidden if <3 new lessons shipped this round OR CRITICAL/MAJOR open OR horizontal overflow OR lexicon spot-check fails.
-Local reviews/ is gitignored — do not force-add.
+SHIP forbidden if resume missing/broken OR build tools still only in dependencies without upgrade attempt OR P0-3 done OR CRITICAL/MAJOR open.
 WHEN DONE create /workspace/sidequest/english-quest/.orch/review-24.done with DONE.
 ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/review-24.done
