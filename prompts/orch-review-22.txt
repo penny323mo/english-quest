@@ -18,3 +18,14 @@ SHIP forbidden while any P0-1 item above is missing OR difficulty CRITICAL/MAJOR
 Local reviews/ is gitignored — do not force-add.
 WHEN DONE create /workspace/sidequest/english-quest/.orch/review-22.done with DONE.
 ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/review-22.done
+
+
+### Coder live audit r20 (MUST fix / gate — reviewer may not SHIP while any is open)
+Source: review/loop-r20/coder-audit.md (local file, read it).
+OPEN (block SHIP):
+1. MAJOR Art: lesson hero/scene art is two unrelated styles. F1–J6 still use the old dark photoreal night-time photos (path-after.png, sheet2.png: f1-s1, j4-s2, j6-s3, j1-s3) while J7/R3/T3 use flat abstract placeholder shapes (sheet1.png) that don't depict the scene. ART-STYLE.md requires one bright soft-rounded cartoon style: redraw all 17 heroes/path thumbnails in that style (Mei/Tom/Ana/Kai + 小燈 consistent), each recognisably showing its scene.
+2. MAJOR UI: on the Path the vertical connector line is drawn on top of lesson titles/subtitles ("Greetings and names", "Polite phrases", "Greeting a customer" are struck through) at 390px. Route the line behind/between nodes so it never crosses text; zig-zag nodes must keep text clear.
+3. MAJOR Pedagogy (difficulty dip): sentence length goes DOWN as level goes UP. Avg words per dialogue line: R1 (A1) 7.5, J1 (A1) 6.8, F1 (A1) 6.8 vs J7 (A2/B1) 4.4, J6 (A2/B1) 5.6, R3/T3 (A2) 5.6–6.2. A2/B1 lessons must use longer, multi-clause lines (because/if/so/which, polite modals, 2-sentence turns) so length and grammar rise with level. Add a test: mean words/line of a lesson >= that of every lesson at a lower CEFR band.
+4. MAJOR Pedagogy (scaffold cliff): Cantonese gloss drops from 100% of lines (A1/A1-A2) to ~10–25% (T3 2/8, R3 1/9, J6 1/9, J7 1/10). Taper it (e.g. A2 ~60%, A2/B1 ~35%, B1 ~15%) with a "show 中文" tap on unglossed lines.
+5. MINOR Lexicon syllabification: contactless /ˈkɑ.ntæ.ˌktlɛs/ -> /ˈkɑn.tækt.ləs/; ingredients /ˌɪ.ˈnɡɹi.di.ənts/ -> /ɪn.ˈɡɹi.di.ənts/; breakfast /ˈbɹɛ.kfəst/ -> /ˈbɹɛk.fəst/. Add a test that no syllable starts with an illegal English onset (ng, kt, kf, nt...).
+6. MINOR Cantonese/English: "Contactless pay is ready." is unnatural -> "You can tap your card here."; contactless gloss 免接觸 -> 拍卡; "I cannot eat shellfish."->我唔食得貝類。
