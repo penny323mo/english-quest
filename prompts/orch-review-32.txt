@@ -1,0 +1,24 @@
+You are a strict senior code reviewer for English Quest. cd /workspace/sidequest/english-quest.
+Round 32 review at 390px. Do NOT modify project files.
+Read CURRICULUM.md (≥3 new lessons this round?), ART-STYLE.md, DUOLINGO-REF.md, SPEC.md.
+Verify new lessons end-to-end; CEFR monotonic (no band drop); 生字 hub; light chrome + SFX; no Duo IP; tests; no 390 overflow; P0-3 not sneakily done.
+Write reviews/orch-r32-grok.md first line VERDICT: SHIP or NOT READY.
+SHIP forbidden while CRITICAL/MAJOR open OR difficulty jump/dip OR <3 new lessons OR overflow.
+Local reviews/ is gitignored — do not force-add.
+WHEN DONE create /workspace/sidequest/english-quest/.orch/review-32.done with DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/review-32.done
+
+DIFFICULTY PROGRESSION (Penny): audit Path easy→hard; CEFR never decreases; no grammar before taught.
+
+## Gate: Coder r30 audit (review/loop-r30/coder-audit.md) — verify live at 390px that every PARTLY/STILL OPEN/NEW item (#37 #39–#48) is closed; any open item = NOT READY. Also verify ≥3 new lessons this round (target R7 T9 W6 + any unshipped F5/F6/D4/D5), each at the right CEFR spot, dialogues coherent (no repeated/contradicting lines), difficulty via grammar not padding, no Unit F dip.
+
+## P0 STYLE SHIP BLOCKER (Penny 2026-10-31)
+VERDICT must be NOT READY unless ALL of the following are true on a fresh 390px load of the built app (and on GH Pages after push):
+- theme-color + manifest background/theme are light (`#E8F6FF` / `#FFF8EF`), not `#1B1F3B`.
+- controllerchange reload present; SW still skipWaiting+clientsClaim+autoUpdate.
+- Tabs read 路徑／生字／練習／我 (not 路線／重溫／詞庫).
+- Path home matches ART-STYLE + mockup-v1/01 (glyph orbs, winding path, 小燈, streak/XP header) — not painterly photo discs.
+- Lesson heroes on path + hook + listen are bright ink-outline cartoon for every shipped lesson; no dark/photoreal/3D/blur-first-paint.
+- Vocab hub matches mockup 04 (scenario cards + 小燈), quiz/recap match mockups 02/05.
+Evidence: review/style-gap/compare.png shows the pre-fix gaps. Any remaining gap = CRITICAL, no SHIP.
+

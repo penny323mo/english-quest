@@ -1,0 +1,52 @@
+You are the coder for English Quest (grok 4.7). cd /workspace/sidequest/english-quest.
+Phase 4 unlimited. Round 32. Read CURRICULUM.md + ART-STYLE.md + DUOLINGO-REF.md + SPEC.md.
+
+CRITICAL: MUST ship ≥3 NEW lessons from CURRICULUM.md that are not yet in content/lessons/. Target this round: R7, T9 (both already locked placeholders on the path) and W6 — plus any of F5/F6/D4/D5 that fix-31 did not ship. Slot each at its correct CEFR position in path.json so the path still rises smoothly. Real app-code diff required (content/ web/ tests/ assets/ scripts/). No "no defects" / CHANGELOG-only exits.
+
+
+## P0 STYLE — SHIP BLOCKER (Penny 2026-10-31 01:20 Asia/Macau:「又話淺色 卡通風」)
+Penny's iPhone still looked dark because of a stale PWA shell; fresh live is already sky/cream. That is NOT enough — the approved bright cartoon redesign (ART-STYLE.md + review/mockup-v1/01-05, Penny-approved) is still missing. Side-by-side proof: review/style-gap/compare.png (local only). Do this BEFORE new-lesson polish if time is tight; SHIP is forbidden while any item below is open.
+
+1. **Theme chrome leftovers (dark):** `web/index.html` + `vite.config.ts` manifest `theme_color` / `background_color` must be `#E8F6FF` / `#FFF8EF` (not `#1B1F3B`). Apple status bar must not force black-translucent night chrome. Noscript text colour light-ink on cream.
+2. **PWA stale clients:** keep `registerType: "autoUpdate"` + workbox `skipWaiting`/`clientsClaim`/`cleanupOutdatedCaches`. App must reload on `navigator.serviceWorker` `controllerchange` (see web/src/main.tsx) so Safari/iPhone cannot keep a pre-redesign document in memory.
+3. **Tab bar labels (all screens):** change `路線／重溫／詞庫／我` → mockup `路徑／生字／練習／我` (shell.tsx + App.tsx copy). Icons per ART-STYLE / mockup 01+04.
+4. **Path home layout:** match mockup 01-path — white unit cards, winding teal path, **simple glyph icons** in gold/teal circular nodes (NOT painterly/photoreal lesson heroes cropped into orbs). Header: streak flame + XP + 今日 XP goal bar + 小燈 mascot wave. Title「學習路徑」; name must not dominate in serif display — use Nunito/sans per ART-STYLE §2.
+5. **ALL lesson heroes / path thumbs / listen crops:** redraw or replace every `assets/art/lessons/*.webp` (and any cover) as **bright daylight ink-outline cartoon** per ART-STYLE §5 (thick ~3px `#1F2A37` outline, 1–2 cel shades, soft studio light). Forbidden on path + hook + listen: dark night Harbor photos, soft-3D, photoreal, blank blur first paint. Priority worst offenders first (F1–F4, J*, T*, R*, W*, D* currently shipping).
+6. **Quiz / exercise chrome:** match mockup 02 — cream card, short Cantonese stem, chunky choices, green/coral bottom feedback sheet +「繼續」. No dark overlays.
+7. **生字 hub:** match mockup 04-practice-hub — 小燈 +「生字回顧」, due CTA, **2×2 scenario deck cards** with cartoon icons (not A2-only list rows), practice-mode rows. Word card expanded state per mockup 03 (IPA, 用法, 例句,「更多」).
+8. **Celebration / recap:** match mockup 05 — 小燈 cheer, confetti, XP/accuracy/streak pills,「下一課」.
+9. **Verify at 390×844:** screenshot path, hook, quiz, recap, vocab hub, me/settings; backgrounds must read sky→cream (no navy). Compare mentally to review/mockup-v1. No Duo IP / Duo green brand.
+
+DIALOGUE QUALITY BAR (new this round): every dialogue must read as one coherent conversation — each line answers the previous one, no repeated small talk after the topic moved on, no contradictions, no "sincere care"/"truly valued by us" register. Raise difficulty with grammar (tenses, modals, conditionals, relative clauses) taught in order, not with padded clauses. Add a content test that flags any lesson whose lines repeat the same lemma set or contradict (at minimum: no line may reuse ≥3 of the same content lemmas as an earlier line in the same dialogue).
+
+Keep gold bar: IPA/CMUdict, Kokoro pad, natural Cantonese, examples >2 words and unique per lemma, tests, LH≥98, 390px, bright cartoon chrome + SFX + 小燈. No Duo IP. P0-3 still forbidden without Penny.
+
+DIFFICULTY PROGRESSION (Penny): Path easy→hard; CEFR never decreases; no grammar before taught. Close open audit items from the previous review.
+
+Also continue WORD-REVIEW slices. No paid services, no secrets, no nightly panes, no force-add gitignored reports.
+
+Append '## Round 32 fixes' to CHANGELOG.md. Commit + push ff-only to origin main.
+Do NOT edit reviews/ or prompts/. Do not touch LICENSE.
+
+
+## Coder live 390px audit of round 30 (review/loop-r30/coder-audit.md; audited while fix-31 was in flight — re-verify STILL OPEN items against fix-31 and close what is still open) — every OPEN/NEW item below must be closed; reviewer may not mark SHIP while any is open
+# Coder live audit — round 30 (live ff710c8/d6a1bd6, bundle index-BpFKJSw_.js), 2026-10-31 01:20
+Walk (live URL, 390x844 touch, real taps): path + W4, R6, W5, J11, T8, F1 hook → listen → chunks → build → quiz → pron → recap → 下一課, 21 steps each, 0 page errors, 0 HTTP >=400, scrollWidth 390 throughout. Path 38/38 playable (+R7/T9 locked), CEFR non-decreasing A1→B2 (W4 A2/B1, R6 B1, W5 B1/B2). W4 → J8, R6 → J12, W5 → J11 → end card 「呢輪三十八課你行完啦」.
+Lighthouse mobile: 99/100/100/100.
+Lexicon: 20 W4/R6/W5 entries (lex20.tsv), audio 200 for all; 16 single words = CMUdict, excuse-verb /z/ correct (CMU first row is the noun /s/), waitlist not in CMU (note shown), 3 phrases.
+Difficulty (avg words/line in path order): F1 6.8 → F2 5.6 → F3 4.4 → F4 2.6 (Unit F DIP still there), then J1 7.4 rising to J11 17.8; W4 15.4, R6 16.8, W5 17.5 slot correctly. Today/tonight now ≤1 line per lesson.
+Scores: Art 7, UI 8, Lexicon 8, Pron UX 9, Pedagogy 6, Speaking 8, SRS 9, Flow 9, Perf 10, Audio 9, Durability 9, CI 9.
+CLOSED: #22 polish-noun example now noun ("A little polish keeps the gold bright."); #34 today/tonight ≤1 line per lesson; #35 deposit-noun "The deposit is one full month's rent." / 「按金係一個月租」; #36 withdraw/landlord/postcard/agency syllables legal.
+PARTLY: #37 named cast exists (Ada, Ren, Ana, Mei, Kai…) but "tom" is still the learner in 30+ of 38 lessons with the same avatar, including W5 where he is the complaining customer and the consultant in J11 is still not a jeweller-looking character.
+STILL OPEN (fix-31 carries — re-verify): #39 follow-up-noun still one card glossed 覆診; #40 J11 hero still two faces against empty sky, no tray/ring box (j11-s0.png); #41 J12/T8/J11 phrasing; #42 Unit F dip; #43 path thumbnails F1/F3/F4/J1 still blurred discs at first paint (path.png).
+NEW:
+44. W4 dialogue is incoherent and padded: l1 "was the weather very bright on Saturday?" → "Was the weather nice on Saturday?"; l4 Tom answers "Not bad at all." after Ada already said "Same here" (wrong turn — "Not bad at all" answers "How was your weekend?"); l6/l7 repeat the weekend/commute/weather small talk after they agreed to start the meeting ("The weekend was quiet" contradicts l2 "The weekend was busy"); "start the meeting in the room" padding. Rewrite as one natural arc: greet → weekend → commute/coffee → "By the way, are you ready for the 10 o'clock?" → "Shall we go in?". Grammar should carry the B1 load (past simple + "how was…", "shall we"), not repeated clauses.
+45. R6 logic + Cantonese: 「晚安」 for "Good evening" is wrong (晚安 = good night) → 「你好」/「晚上好」; l5 "We may need an outdoor table, and I will cancel the window seat if it rains." is illogical (rain → indoor), and the outdoor-adj example repeats it; the booking is "under the name Mei" while the caller is Tom with no explanation (say "under the name Chan" or have Tom book for Mei and say so). R6 hero is a chef and guest standing outdoors with no phone — a phone booking needs a phone/headset and a booking book (r6-s0.png).
+46. W5 stilted register: "I will look into the order with sincere care", "I value a clear update", "Your feedback is truly valued by us, and I will resolve this case with a sincere apology" — replace with natural service English ("I'm sorry about that. Let me look into it.", "I'd like this sorted out, please.", "Thanks for letting us know — I'm really sorry."). W5 hero shows the customer face-to-face at a counter while the title is 投訴電話 — the customer should be on a phone, not across the counter (w5-s0.png). sincere-adj / apology-noun share the same example sentence; give each its own.
+47. W4 hero renders as a blank blurred gradient at first paint (w4-s0.png) although w4.webp (200, 77 KB) is a good office scene; listen step crops it to the door/ceiling with no people (w4-s2.png). Hero must paint real art on first view and the listen-step crop must keep the characters in frame (object-position).
+48. Meaning-quiz stem glues the full English line + 「呢句即係點？」 into one heading (w5-s5.png); put the Cantonese instruction on its own line above the English sentence.
+Screenshots: w4-s0.png, w4-s2.png, w4-asset.png, r6-s0.png, w5-s0.png, w5-s5.png, j11-s0.png, path.png.
+
+
+WHEN COMPLETELY FINISHED, create /workspace/sidequest/english-quest/.orch/fix-32.done with DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-32.done
