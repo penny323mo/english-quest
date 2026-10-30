@@ -97,11 +97,11 @@
       "id": "t4-l7",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Your destination is just ahead, and the landmark is on your right side.",
-      "glossYue": "目的地就喺前面，地標喺你右手邊。",
+      "text": "Here is your receipt, and you can see the landmark on your right.",
+      "glossYue": "收據喺度，你可以睇到地標喺你右手邊。",
       "audio": "assets/audio/lines/t4-l7.mp3",
       "audioSlow": "assets/audio/lines/t4-l7-slow.mp3",
-      "say": "Your destination is just ahead, and the landmark is on your right side.",
+      "say": "Here is your receipt, and you can see the landmark on your right.",
       "hideGloss": false
     },
     {
@@ -271,9 +271,9 @@
         "line": "Here is fine, and could I have a receipt before I leave the taxi?",
         "audio": "assets/audio/lines/t4-l6.mp3",
         "audioSlow": "assets/audio/lines/t4-l6-slow.mp3",
-        "expect": "Your destination is just ahead, and the landmark is on your right side.",
+        "expect": "Here is your receipt, and you can see the landmark on your right.",
         "keywords": [
-          "destination",
+          "receipt",
           "landmark"
         ],
         "modelAudio": "assets/audio/lines/t4-l7.mp3",
@@ -359,5 +359,5 @@
       "corner-noun"
     ]
   },
-  "next": "J6"
+  "next": "R4"
 }

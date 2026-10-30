@@ -1433,11 +1433,11 @@
     "id": "t4-l7",
     "speaker": "kai",
     "speakerLabel": "Kai",
-    "text": "Your destination is just ahead, and the landmark is on your right side.",
-    "glossYue": "目的地就喺前面，地標喺你右手邊。",
+    "text": "Here is your receipt, and you can see the landmark on your right.",
+    "glossYue": "收據喺度，你可以睇到地標喺你右手邊。",
     "audio": "assets/audio/lines/t4-l7.mp3",
     "audioSlow": "assets/audio/lines/t4-l7-slow.mp3",
-    "say": "Your destination is just ahead, and the landmark is on your right side."
+    "say": "Here is your receipt, and you can see the landmark on your right."
   },
   {
     "id": "t4-l8",
@@ -1493,11 +1493,11 @@
     "id": "t5-l5",
     "speaker": "kai",
     "speakerLabel": "Kai",
-    "text": "If this is an emergency, I can call an ambulance while you wait here.",
-    "glossYue": "如果係緊急，我會叫救護車，你可以喺度等。",
+    "text": "The embassy number is on this card, and I will help you file the report.",
+    "glossYue": "大使館電話喺呢張卡上面，我會幫你報失。",
     "audio": "assets/audio/lines/t5-l5.mp3",
     "audioSlow": "assets/audio/lines/t5-l5-slow.mp3",
-    "say": "If this is an emergency, I can call an ambulance while you wait here."
+    "say": "The embassy number is on this card, and I will help you file the report."
   },
   {
     "id": "t5-l6",
@@ -1513,21 +1513,21 @@
     "id": "t5-l7",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Please help me call the embassy, and I will wait here while you write the report.",
-    "glossYue": "唔該幫我打去大使館，我會喺度等你寫報告。",
+    "text": "I feel faint after the shock, so please tell me if this is an emergency.",
+    "glossYue": "我受驚之後覺得暈，唔該話我知係咪緊急。",
     "audio": "assets/audio/lines/t5-l7.mp3",
     "audioSlow": "assets/audio/lines/t5-l7-slow.mp3",
-    "say": "Please help me call the embassy, and I will wait here while you write the report."
+    "say": "I feel faint after the shock, so please tell me if this is an emergency."
   },
   {
     "id": "t5-l8",
     "speaker": "kai",
     "speakerLabel": "Kai",
-    "text": "I understand, and we will file the report here before we search the lobby.",
-    "glossYue": "我明白，我哋會喺度先報失，再搵大堂。",
+    "text": "If you feel faint, I can call an ambulance while we file the report.",
+    "glossYue": "如果你覺得暈，我可以叫救護車，同時我哋報失。",
     "audio": "assets/audio/lines/t5-l8.mp3",
     "audioSlow": "assets/audio/lines/t5-l8-slow.mp3",
-    "say": "I understand, and we will file the report here before we search the lobby."
+    "say": "If you feel faint, I can call an ambulance while we file the report."
   },
   {
     "id": "j9-l1",
@@ -1608,5 +1608,245 @@
     "audio": "assets/audio/lines/j9-l8.mp3",
     "audioSlow": "assets/audio/lines/j9-l8-slow.mp3",
     "say": "I will write the complaint clearly, and you will have an update before the shop closes tonight."
+  },
+  {
+    "id": "r4-l1",
+    "speaker": "ana",
+    "speakerLabel": "Ana",
+    "text": "Are you enjoying the meal so far, and could we get you a cold refill now?",
+    "glossYue": "你食到而家開唔開心？我哋可唔可以而家幫你添杯凍嘅？",
+    "audio": "assets/audio/lines/r4-l1.mp3",
+    "audioSlow": "assets/audio/lines/r4-l1-slow.mp3",
+    "say": "Are you enjoying the meal so far, and could we get you a cold refill now?"
+  },
+  {
+    "id": "r4-l2",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Could we get some still water, and one more clean napkin for this fork?",
+    "glossYue": "可唔可以嚟杯冇氣水，同埋多一張乾淨餐巾畀呢支叉？",
+    "audio": "assets/audio/lines/r4-l2.mp3",
+    "audioSlow": "assets/audio/lines/r4-l2-slow.mp3",
+    "say": "Could we get some still water, and one more clean napkin for this fork?"
+  },
+  {
+    "id": "r4-l3",
+    "speaker": "ana",
+    "speakerLabel": "Ana",
+    "text": "Here is the still water, and the napkin is next to your knife.",
+    "glossYue": "冇氣水喺度，餐巾喺你把刀隔離。",
+    "audio": "assets/audio/lines/r4-l3.mp3",
+    "audioSlow": "assets/audio/lines/r4-l3-slow.mp3",
+    "say": "Here is the still water, and the napkin is next to your knife."
+  },
+  {
+    "id": "r4-l4",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "This fish is delicious, and I would like a little more sparkling water.",
+    "glossYue": "呢條魚好味，我想要多啲有氣水。",
+    "audio": "assets/audio/lines/r4-l4.mp3",
+    "audioSlow": "assets/audio/lines/r4-l4-slow.mp3",
+    "say": "This fish is delicious, and I would like a little more sparkling water."
+  },
+  {
+    "id": "r4-l5",
+    "speaker": "ana",
+    "speakerLabel": "Ana",
+    "text": "The sparkling water is coming, and I hope you enjoy the rest of it.",
+    "glossYue": "有氣水就到，希望你慢慢享受餘下嗰啲。",
+    "audio": "assets/audio/lines/r4-l5.mp3",
+    "audioSlow": "assets/audio/lines/r4-l5-slow.mp3",
+    "say": "The sparkling water is coming, and I hope you enjoy the rest of it."
+  },
+  {
+    "id": "r4-l6",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "No dessert for me, but could we get the bill a little later tonight?",
+    "glossYue": "我唔要甜品，不過今晚可唔可以遲啲先埋單？",
+    "audio": "assets/audio/lines/r4-l6.mp3",
+    "audioSlow": "assets/audio/lines/r4-l6-slow.mp3",
+    "say": "No dessert for me, but could we get the bill a little later tonight?"
+  },
+  {
+    "id": "r4-l7",
+    "speaker": "ana",
+    "speakerLabel": "Ana",
+    "text": "Of course, and would you like anything else before I leave the table?",
+    "glossYue": "當然可以，我離開之前你仲想唔想要其他嘢？",
+    "audio": "assets/audio/lines/r4-l7.mp3",
+    "audioSlow": "assets/audio/lines/r4-l7-slow.mp3",
+    "say": "Of course, and would you like anything else before I leave the table?"
+  },
+  {
+    "id": "r4-l8",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "The meal was delicious, and a coffee later would be perfect, thank you.",
+    "glossYue": "呢餐好味，遲啲嚟杯咖啡就完美，多謝。",
+    "audio": "assets/audio/lines/r4-l8.mp3",
+    "audioSlow": "assets/audio/lines/r4-l8-slow.mp3",
+    "say": "The meal was delicious, and a coffee later would be perfect, thank you."
+  },
+  {
+    "id": "r5-l1",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Could we have the bill now, and shall we split it or pay together tonight?",
+    "glossYue": "可唔可以而家埋單，今晚分單定係一齊付？",
+    "audio": "assets/audio/lines/r5-l1.mp3",
+    "audioSlow": "assets/audio/lines/r5-l1-slow.mp3",
+    "say": "Could we have the bill now, and shall we split it or pay together tonight?"
+  },
+  {
+    "id": "r5-l2",
+    "speaker": "ana",
+    "speakerLabel": "Ana",
+    "text": "We can split it into two separate checks, or you can pay together on one bill.",
+    "glossYue": "可以分開兩張單，或者你哋一張單一齊付。",
+    "audio": "assets/audio/lines/r5-l2.mp3",
+    "audioSlow": "assets/audio/lines/r5-l2-slow.mp3",
+    "say": "We can split it into two separate checks, or you can pay together on one bill."
+  },
+  {
+    "id": "r5-l3",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Please bring the card machine here, and I will pay this check by card.",
+    "glossYue": "唔該攞卡機過嚟呢度，我會用卡付呢張單。",
+    "audio": "assets/audio/lines/r5-l3.mp3",
+    "audioSlow": "assets/audio/lines/r5-l3-slow.mp3",
+    "say": "Please bring the card machine here, and I will pay this check by card."
+  },
+  {
+    "id": "r5-l4",
+    "speaker": "ana",
+    "speakerLabel": "Ana",
+    "text": "The card machine is here now, and your receipt will include the service charge.",
+    "glossYue": "卡機而家喺度，收據會包括服務費。",
+    "audio": "assets/audio/lines/r5-l4.mp3",
+    "audioSlow": "assets/audio/lines/r5-l4-slow.mp3",
+    "say": "The card machine is here now, and your receipt will include the service charge."
+  },
+  {
+    "id": "r5-l5",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "The service was kind tonight, so I will add a tip and you can keep the change.",
+    "glossYue": "今晚服務好好，我會加貼士，零錢你留低就得。",
+    "audio": "assets/audio/lines/r5-l5.mp3",
+    "audioSlow": "assets/audio/lines/r5-l5-slow.mp3",
+    "say": "The service was kind tonight, so I will add a tip and you can keep the change."
+  },
+  {
+    "id": "r5-l6",
+    "speaker": "ana",
+    "speakerLabel": "Ana",
+    "text": "Thank you, and the total does include the service charge before that tip tonight.",
+    "glossYue": "多謝，今晚貼士之前個總數已經包括服務費。",
+    "audio": "assets/audio/lines/r5-l6.mp3",
+    "audioSlow": "assets/audio/lines/r5-l6-slow.mp3",
+    "say": "Thank you, and the total does include the service charge before that tip tonight."
+  },
+  {
+    "id": "r5-l7",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Could we also get the cake as a takeaway before we leave the restaurant tonight?",
+    "glossYue": "今晚走之前可唔可以將蛋糕打包外賣？",
+    "audio": "assets/audio/lines/r5-l7.mp3",
+    "audioSlow": "assets/audio/lines/r5-l7-slow.mp3",
+    "say": "Could we also get the cake as a takeaway before we leave the restaurant tonight?"
+  },
+  {
+    "id": "r5-l8",
+    "speaker": "ana",
+    "speakerLabel": "Ana",
+    "text": "Here is your takeaway box now, and thank you again for coming in tonight.",
+    "glossYue": "外賣盒而家喺度，多謝你哋今晚嚟。",
+    "audio": "assets/audio/lines/r5-l8.mp3",
+    "audioSlow": "assets/audio/lines/r5-l8-slow.mp3",
+    "say": "Here is your takeaway box now, and thank you again for coming in tonight."
+  },
+  {
+    "id": "w1-l1",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "Good morning, this is Kai calling from the harbor office, and how may I help?",
+    "glossYue": "早晨，我係海港辦事處嘅 Kai 打嚟，有咩可以幫你？",
+    "audio": "assets/audio/lines/w1-l1.mp3",
+    "audioSlow": "assets/audio/lines/w1-l1-slow.mp3",
+    "say": "Good morning, this is Kai calling from the harbor office, and how may I help?"
+  },
+  {
+    "id": "w1-l2",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Could I speak to Mei regarding the appointment, and may I ask if she is available?",
+    "glossYue": "可唔可以同 Mei 講關於個約會，順便問吓佢有冇空？",
+    "audio": "assets/audio/lines/w1-l2.mp3",
+    "audioSlow": "assets/audio/lines/w1-l2-slow.mp3",
+    "say": "Could I speak to Mei regarding the appointment, and may I ask if she is available?"
+  },
+  {
+    "id": "w1-l3",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "She is not available right now, so please hold and I will try the other line.",
+    "glossYue": "佢而家冇空，唔該等陣，我試吓另一條線。",
+    "audio": "assets/audio/lines/w1-l3.mp3",
+    "audioSlow": "assets/audio/lines/w1-l3-slow.mp3",
+    "say": "She is not available right now, so please hold and I will try the other line."
+  },
+  {
+    "id": "w1-l4",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Please take a message, and ask her to return my call when it is convenient.",
+    "glossYue": "唔該幫我留個言，方便嘅時候叫佢覆我電話。",
+    "audio": "assets/audio/lines/w1-l4.mp3",
+    "audioSlow": "assets/audio/lines/w1-l4-slow.mp3",
+    "say": "Please take a message, and ask her to return my call when it is convenient."
+  },
+  {
+    "id": "w1-l5",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "I will transfer you if the line is free, or I can note the callback number.",
+    "glossYue": "如果線路得閒我會轉駁，或者我記低覆電號碼。",
+    "audio": "assets/audio/lines/w1-l5.mp3",
+    "audioSlow": "assets/audio/lines/w1-l5-slow.mp3",
+    "say": "I will transfer you if the line is free, or I can note the callback number."
+  },
+  {
+    "id": "w1-l6",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Could you say the spelling slowly, and read the extension back to me?",
+    "glossYue": "可唔可以慢慢講個串法，再將內線讀返畀我？",
+    "audio": "assets/audio/lines/w1-l6.mp3",
+    "audioSlow": "assets/audio/lines/w1-l6-slow.mp3",
+    "say": "Could you say the spelling slowly, and read the extension back to me?"
+  },
+  {
+    "id": "w1-l7",
+    "speaker": "kai",
+    "speakerLabel": "Kai",
+    "text": "The spelling is correct, and I will reach her on extension four two later today.",
+    "glossYue": "串法啱，我遲啲會用四二號內線聯絡佢。",
+    "audio": "assets/audio/lines/w1-l7.mp3",
+    "audioSlow": "assets/audio/lines/w1-l7-slow.mp3",
+    "say": "The spelling is correct, and I will reach her on extension four two later today."
+  },
+  {
+    "id": "w1-l8",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Thank you for the message, and a callback this afternoon would be convenient.",
+    "glossYue": "多謝你幫我留言，今日下晝覆電會方便。",
+    "audio": "assets/audio/lines/w1-l8.mp3",
+    "audioSlow": "assets/audio/lines/w1-l8-slow.mp3",
+    "say": "Thank you for the message, and a callback this afternoon would be convenient."
   }
 ]

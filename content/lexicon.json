@@ -4151,7 +4151,23 @@
       "senseMismatch": false,
       "cmuLemma": "enjoy",
       "phrase": false,
-      "audioSha256": "25fbbd478ee9ddfc893389c80fcc7ac3be507f7bfe89dbfa342879d10ecad9b2"
+      "audioSha256": "25fbbd478ee9ddfc893389c80fcc7ac3be507f7bfe89dbfa342879d10ecad9b2",
+      "examples": [
+        {
+          "en": "Enjoy the store.",
+          "yue": "慢慢睇。",
+          "audio": "assets/audio/words/enjoy-verb.mp3",
+          "audioSlow": "assets/audio/words/enjoy-verb-slow.mp3",
+          "say": "Enjoy the store."
+        },
+        {
+          "en": "Please enjoy the meal with us.",
+          "yue": "請同我哋一齊享受呢餐。",
+          "audio": "assets/audio/words/enjoy-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/enjoy-verb-ex2-slow.mp3",
+          "say": "Please enjoy the meal with us."
+        }
+      ]
     },
     {
       "id": "around-adv",
@@ -5825,7 +5841,23 @@
       "senseMismatch": false,
       "cmuLemma": "water",
       "phrase": false,
-      "audioSha256": "dbf7bbeb3e0305888a67810621b0b7597102bca15e69be31dcf03dc8b74d0a7c"
+      "audioSha256": "dbf7bbeb3e0305888a67810621b0b7597102bca15e69be31dcf03dc8b74d0a7c",
+      "examples": [
+        {
+          "en": "I'd like some water, please.",
+          "yue": "我想要杯水，唔該。",
+          "audio": "assets/audio/words/water-noun.mp3",
+          "audioSlow": "assets/audio/words/water-noun-slow.mp3",
+          "say": "I'd like some water, please."
+        },
+        {
+          "en": "Could we get some still water?",
+          "yue": "可唔可以嚟杯冇氣水？",
+          "audio": "assets/audio/words/water-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/water-noun-ex2-slow.mp3",
+          "say": "Could we get some still water?"
+        }
+      ]
     },
     {
       "id": "coffee-noun",
@@ -6275,24 +6307,24 @@
       "glossZh": "拿；要",
       "jyutping": "jiu3",
       "collocations": [
-        "take a look",
-        "take a seat"
+        "take this one",
+        "take the gift"
       ],
-      "example": "Please take a look.",
-      "exampleYue": "請慢慢睇。",
-      "say": "Please take a look.",
+      "example": "I'll take this one.",
+      "exampleYue": "我要呢件。",
+      "say": "I'll take this one.",
       "variants": [],
       "note": "",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
       ],
-      "verified_at": "2026-10-29",
+      "verified_at": "2026-10-30",
       "status": "IPA_OK",
       "senseMismatch": false,
       "cmuLemma": "take",
       "phrase": false,
-      "audioSha256": "bf415d8be2f1c2a364475dd4d1cfb6c73be867c324cf2359de3dfc564d1f8e3c"
+      "audioSha256": "509b6570b08f9186401d2163a31b6b9e158cec5accbf32d219fd2f48b8350e5c"
     },
     {
       "id": "seat-verb",
@@ -9552,7 +9584,7 @@
         "natural jade"
       ],
       "example": "This jade is natural.",
-      "exampleYue": "呢塊玉係天然。",
+      "exampleYue": "呢塊玉係天然嘅。",
       "say": "This jade is [[nˈætʃɚəl]].",
       "variants": [],
       "note": "玉係材料同工藝。唔好講醫療功效。",
@@ -9579,13 +9611,13 @@
         },
         {
           "en": "This jade is natural.",
-          "yue": "呢塊玉係天然。"
+          "yue": "呢塊玉係天然嘅。"
         }
       ],
       "examples": [
         {
           "en": "This jade is natural.",
-          "yue": "呢塊玉係天然。",
+          "yue": "呢塊玉係天然嘅。",
           "audio": "assets/audio/words/jade-noun.mp3",
           "audioSlow": "assets/audio/words/jade-noun-slow.mp3",
           "say": "This jade is [[nˈætʃɚəl]]."
@@ -16244,6 +16276,2347 @@
           "audio": "assets/audio/words/issue-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/issue-noun-ex2-slow.mp3",
           "say": "I will explain the issue clearly."
+        }
+      ]
+    },
+    {
+      "id": "refill-noun",
+      "lemma": "refill",
+      "pos": "noun",
+      "senseId": "another-serving",
+      "ipa": "/ˈɹi.fɪl/",
+      "syllables": [
+        "re",
+        "fill"
+      ],
+      "syllableIpa": [
+        "ˈɹi",
+        "fɪl"
+      ],
+      "stress": 1,
+      "arpabet": "R IY1 F IH0 L",
+      "audio": "assets/audio/words/refill-noun.mp3",
+      "audioSlow": "assets/audio/words/refill-noun-slow.mp3",
+      "glossYue": "添杯",
+      "glossZh": "添杯",
+      "jyutping": "tim1 bui1",
+      "collocations": [
+        "a refill",
+        "water refill"
+      ],
+      "example": "Could we get a refill of water?",
+      "exampleYue": "可唔可以添杯水？",
+      "say": "Could we get a refill of water?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "refill",
+      "phrase": false,
+      "audioSha256": "e54222c431490c684c64f6bae3d7881f37137fc50c685962cb95218cc1e3999a",
+      "register": "餐廳",
+      "usageNotes": "refill 係再添一杯，唔係第一杯。",
+      "pitfallsYue": "refill 係再添一杯，唔係第一杯。",
+      "related": [
+        "water-noun",
+        "still-adj"
+      ],
+      "examples": [
+        {
+          "en": "Could we get a refill of water?",
+          "yue": "可唔可以添杯水？",
+          "audio": "assets/audio/words/refill-noun.mp3",
+          "audioSlow": "assets/audio/words/refill-noun-slow.mp3",
+          "say": "Could we get a refill of water?"
+        },
+        {
+          "en": "The refill is for this table.",
+          "yue": "呢杯係添畀呢檯。",
+          "audio": "assets/audio/words/refill-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/refill-noun-ex2-slow.mp3",
+          "say": "The refill is for this table."
+        }
+      ]
+    },
+    {
+      "id": "napkin-noun",
+      "lemma": "napkin",
+      "pos": "noun",
+      "senseId": "table-cloth",
+      "ipa": "/ˈnæp.kɪn/",
+      "syllables": [
+        "nap",
+        "kin"
+      ],
+      "syllableIpa": [
+        "ˈnæp",
+        "kɪn"
+      ],
+      "stress": 1,
+      "arpabet": "N AE1 P K IH0 N",
+      "audio": "assets/audio/words/napkin-noun.mp3",
+      "audioSlow": "assets/audio/words/napkin-noun-slow.mp3",
+      "glossYue": "餐巾",
+      "glossZh": "餐巾",
+      "jyutping": "caan1 gan1",
+      "collocations": [
+        "a clean napkin",
+        "paper napkin"
+      ],
+      "example": "Could we get a clean napkin?",
+      "exampleYue": "可唔可以要張乾淨餐巾？",
+      "say": "Could we get a clean napkin?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "napkin",
+      "phrase": false,
+      "audioSha256": "37c09f450f3b87e4c148dc488b44a051338cdce326eb2c58a329f3dd20c90bdc",
+      "register": "餐廳",
+      "usageNotes": "napkin 係檯上抹嘴嗰張，唔係圍裙。",
+      "pitfallsYue": "napkin 係檯上抹嘴嗰張，唔係圍裙。",
+      "related": [
+        "fork-noun",
+        "knife-noun"
+      ],
+      "examples": [
+        {
+          "en": "Could we get a clean napkin?",
+          "yue": "可唔可以要張乾淨餐巾？",
+          "audio": "assets/audio/words/napkin-noun.mp3",
+          "audioSlow": "assets/audio/words/napkin-noun-slow.mp3",
+          "say": "Could we get a clean napkin?"
+        },
+        {
+          "en": "The napkin is next to the fork.",
+          "yue": "餐巾喺叉隔離。",
+          "audio": "assets/audio/words/napkin-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/napkin-noun-ex2-slow.mp3",
+          "say": "The napkin is next to the fork."
+        }
+      ]
+    },
+    {
+      "id": "delicious-adj",
+      "lemma": "delicious",
+      "pos": "adj",
+      "senseId": "tasty",
+      "ipa": "/dɪ.ˈlɪ.ʃəs/",
+      "syllables": [
+        "de",
+        "li",
+        "cious"
+      ],
+      "syllableIpa": [
+        "dɪ",
+        "ˈlɪ",
+        "ʃəs"
+      ],
+      "stress": 2,
+      "arpabet": "D IH0 L IH1 SH AH0 S",
+      "audio": "assets/audio/words/delicious-adj.mp3",
+      "audioSlow": "assets/audio/words/delicious-adj-slow.mp3",
+      "glossYue": "好味",
+      "glossZh": "好味",
+      "jyutping": "hou2 mei6",
+      "collocations": [
+        "really delicious",
+        "delicious fish"
+      ],
+      "example": "This fish is delicious.",
+      "exampleYue": "呢條魚好味。",
+      "say": "This fish is delicious.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "delicious",
+      "phrase": false,
+      "audioSha256": "5d3109b18ceb91e4c8b60819fd7a1c1835262f463fa8db800e074d12f0a7f334",
+      "register": "餐廳",
+      "usageNotes": "中間嗰節有 /l/。重音喺 li。",
+      "pitfallsYue": "中間嗰節有 /l/。重音喺 li。",
+      "related": [
+        "enjoy-verb",
+        "more-det"
+      ],
+      "examples": [
+        {
+          "en": "This fish is delicious.",
+          "yue": "呢條魚好味。",
+          "audio": "assets/audio/words/delicious-adj.mp3",
+          "audioSlow": "assets/audio/words/delicious-adj-slow.mp3",
+          "say": "This fish is delicious."
+        },
+        {
+          "en": "The meal was delicious tonight.",
+          "yue": "今晚呢餐好味。",
+          "audio": "assets/audio/words/delicious-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/delicious-adj-ex2-slow.mp3",
+          "say": "The meal was delicious tonight."
+        }
+      ]
+    },
+    {
+      "id": "more-det",
+      "lemma": "more",
+      "pos": "det",
+      "senseId": "extra-amount",
+      "ipa": "/ˈmɔɹ/",
+      "syllables": [
+        "more"
+      ],
+      "syllableIpa": [
+        "ˈmɔɹ"
+      ],
+      "stress": 1,
+      "arpabet": "M AO1 R",
+      "audio": "assets/audio/words/more-det.mp3",
+      "audioSlow": "assets/audio/words/more-det-slow.mp3",
+      "glossYue": "多啲",
+      "glossZh": "多一些",
+      "jyutping": "do1 di1",
+      "collocations": [
+        "a little more",
+        "more water"
+      ],
+      "example": "I would like a little more water.",
+      "exampleYue": "我想要多啲水。",
+      "say": "I would like a little more water.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "more",
+      "phrase": false,
+      "audioSha256": "e83d31582a871fb31b257e73ccad62bea5da0f8cdde89bbe558de53677c7de91",
+      "register": "餐廳",
+      "usageNotes": "more 呢度係再要多啲，唔係更加。",
+      "pitfallsYue": "more 呢度係再要多啲，唔係更加。",
+      "related": [
+        "water-noun",
+        "napkin-noun"
+      ],
+      "examples": [
+        {
+          "en": "I would like a little more water.",
+          "yue": "我想要多啲水。",
+          "audio": "assets/audio/words/more-det.mp3",
+          "audioSlow": "assets/audio/words/more-det-slow.mp3",
+          "say": "I would like a little more water."
+        },
+        {
+          "en": "Could we get more napkins please?",
+          "yue": "可唔可以多要幾張餐巾？",
+          "audio": "assets/audio/words/more-det-ex2.mp3",
+          "audioSlow": "assets/audio/words/more-det-ex2-slow.mp3",
+          "say": "Could we get more napkins please?"
+        }
+      ]
+    },
+    {
+      "id": "still-adj",
+      "lemma": "still",
+      "pos": "adj",
+      "senseId": "not-fizzy",
+      "ipa": "/ˈstɪl/",
+      "syllables": [
+        "still"
+      ],
+      "syllableIpa": [
+        "ˈstɪl"
+      ],
+      "stress": 1,
+      "arpabet": "S T IH1 L",
+      "audio": "assets/audio/words/still-adj.mp3",
+      "audioSlow": "assets/audio/words/still-adj-slow.mp3",
+      "glossYue": "冇氣",
+      "glossZh": "無氣",
+      "jyutping": "mou5 hei3",
+      "collocations": [
+        "still water",
+        "a bottle of still"
+      ],
+      "example": "Could we get some still water?",
+      "exampleYue": "可唔可以嚟杯冇氣水？",
+      "say": "Could we get some still water?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "still",
+      "phrase": false,
+      "audioSha256": "0e2c6c602019d5f9ce1c68d9181588762277c93ea3a7977013fd966376fdd6f8",
+      "register": "餐廳",
+      "usageNotes": "同 sparkling 相對。唔係「仍然」。",
+      "pitfallsYue": "同 sparkling 相對。唔係「仍然」。",
+      "related": [
+        "sparkling-adj",
+        "water-noun"
+      ],
+      "examples": [
+        {
+          "en": "Could we get some still water?",
+          "yue": "可唔可以嚟杯冇氣水？",
+          "audio": "assets/audio/words/still-adj.mp3",
+          "audioSlow": "assets/audio/words/still-adj-slow.mp3",
+          "say": "Could we get some still water?"
+        },
+        {
+          "en": "Still water is not sparkling.",
+          "yue": "冇氣水唔係有氣嗰種。",
+          "audio": "assets/audio/words/still-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/still-adj-ex2-slow.mp3",
+          "say": "Still water is not sparkling."
+        }
+      ]
+    },
+    {
+      "id": "sparkling-adj",
+      "lemma": "sparkling",
+      "pos": "adj",
+      "senseId": "fizzy",
+      "ipa": "/ˈspɑɹk.lɪŋ/",
+      "syllables": [
+        "spark",
+        "ling"
+      ],
+      "syllableIpa": [
+        "ˈspɑɹk",
+        "lɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "S P AA1 R K L IH0 NG",
+      "audio": "assets/audio/words/sparkling-adj.mp3",
+      "audioSlow": "assets/audio/words/sparkling-adj-slow.mp3",
+      "glossYue": "有氣",
+      "glossZh": "有氣",
+      "jyutping": "jau5 hei3",
+      "collocations": [
+        "sparkling water",
+        "a sparkling drink"
+      ],
+      "example": "Could we get some sparkling water?",
+      "exampleYue": "可唔可以嚟杯有氣水？",
+      "say": "Could we get some sparkling water?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "sparkling",
+      "phrase": false,
+      "audioSha256": "342a02bf059f158c71561083d489149261965bbf226eaa7e91338a383316fc05",
+      "register": "餐廳",
+      "usageNotes": "有氣泡。中間有 /l/，開頭唔係 /l/。",
+      "pitfallsYue": "有氣泡。中間有 /l/，開頭唔係 /l/。",
+      "related": [
+        "still-adj",
+        "water-noun"
+      ],
+      "examples": [
+        {
+          "en": "Could we get some sparkling water?",
+          "yue": "可唔可以嚟杯有氣水？",
+          "audio": "assets/audio/words/sparkling-adj.mp3",
+          "audioSlow": "assets/audio/words/sparkling-adj-slow.mp3",
+          "say": "Could we get some sparkling water?"
+        },
+        {
+          "en": "Sparkling water is cold and delicious.",
+          "yue": "有氣水凍同埋好味。",
+          "audio": "assets/audio/words/sparkling-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/sparkling-adj-ex2-slow.mp3",
+          "say": "Sparkling water is cold and delicious."
+        }
+      ]
+    },
+    {
+      "id": "fork-noun",
+      "lemma": "fork",
+      "pos": "noun",
+      "senseId": "eating-fork",
+      "ipa": "/ˈfɔɹk/",
+      "syllables": [
+        "fork"
+      ],
+      "syllableIpa": [
+        "ˈfɔɹk"
+      ],
+      "stress": 1,
+      "arpabet": "F AO1 R K",
+      "audio": "assets/audio/words/fork-noun.mp3",
+      "audioSlow": "assets/audio/words/fork-noun-slow.mp3",
+      "glossYue": "叉",
+      "glossZh": "叉",
+      "jyutping": "caa1",
+      "collocations": [
+        "a clean fork",
+        "fork and knife"
+      ],
+      "example": "The fork is beside the napkin.",
+      "exampleYue": "叉喺餐巾隔離。",
+      "say": "The fork is beside the napkin.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "fork",
+      "phrase": false,
+      "audioSha256": "a1d0667c2dc34c2894dffdf2520c8af5138350ef6063560a52fbc656beefd02a",
+      "register": "餐廳",
+      "usageNotes": "開頭係 /f/。",
+      "pitfallsYue": "開頭係 /f/。",
+      "related": [
+        "knife-noun",
+        "napkin-noun"
+      ],
+      "examples": [
+        {
+          "en": "The fork is beside the napkin.",
+          "yue": "叉喺餐巾隔離。",
+          "audio": "assets/audio/words/fork-noun.mp3",
+          "audioSlow": "assets/audio/words/fork-noun-slow.mp3",
+          "say": "The fork is beside the napkin."
+        },
+        {
+          "en": "Could we get a clean fork please?",
+          "yue": "可唔可以要支乾淨叉？",
+          "audio": "assets/audio/words/fork-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/fork-noun-ex2-slow.mp3",
+          "say": "Could we get a clean fork please?"
+        }
+      ]
+    },
+    {
+      "id": "knife-noun",
+      "lemma": "knife",
+      "pos": "noun",
+      "senseId": "eating-knife",
+      "ipa": "/ˈnaɪf/",
+      "syllables": [
+        "knife"
+      ],
+      "syllableIpa": [
+        "ˈnaɪf"
+      ],
+      "stress": 1,
+      "arpabet": "N AY1 F",
+      "audio": "assets/audio/words/knife-noun.mp3",
+      "audioSlow": "assets/audio/words/knife-noun-slow.mp3",
+      "glossYue": "刀",
+      "glossZh": "刀",
+      "jyutping": "dou1",
+      "collocations": [
+        "a clean knife",
+        "knife and fork"
+      ],
+      "example": "The knife is next to the fork.",
+      "exampleYue": "刀喺叉隔離。",
+      "say": "The knife is next to the fork.",
+      "variants": [],
+      "note": "k 唔發音。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "knife",
+      "phrase": false,
+      "audioSha256": "43d0fb278d6e980810f167200009190f77f6c6d07cddfccd85dff757f7cf0a18",
+      "register": "餐廳",
+      "usageNotes": "開頭個 k 唔發音，讀 /n/。",
+      "pitfallsYue": "開頭個 k 唔發音，讀 /n/。",
+      "related": [
+        "fork-noun",
+        "napkin-noun"
+      ],
+      "examples": [
+        {
+          "en": "The knife is next to the fork.",
+          "yue": "刀喺叉隔離。",
+          "audio": "assets/audio/words/knife-noun.mp3",
+          "audioSlow": "assets/audio/words/knife-noun-slow.mp3",
+          "say": "The knife is next to the fork."
+        },
+        {
+          "en": "Could we get a clean knife please?",
+          "yue": "可唔可以要把乾淨刀？",
+          "audio": "assets/audio/words/knife-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/knife-noun-ex2-slow.mp3",
+          "say": "Could we get a clean knife please?"
+        }
+      ]
+    },
+    {
+      "id": "bill-later-phrase",
+      "lemma": "bill later",
+      "pos": "phrase",
+      "senseId": "pay-after",
+      "ipa": "/ˈbɪl ˈleɪ.tɚ/",
+      "syllables": [
+        "bill",
+        "la",
+        "ter"
+      ],
+      "syllableIpa": [
+        "ˈbɪl",
+        "ˈleɪ",
+        "tɚ"
+      ],
+      "stress": 1,
+      "arpabet": "B IH1 L L EY1 T ER0",
+      "audio": "assets/audio/words/bill-later-phrase.mp3",
+      "audioSlow": "assets/audio/words/bill-later-phrase-slow.mp3",
+      "glossYue": "遲啲先埋單",
+      "glossZh": "稍後結帳",
+      "jyutping": "ci4 di1 sin1 maai4 daan1",
+      "collocations": [
+        "the bill later",
+        "ask later"
+      ],
+      "example": "Could we get the bill later tonight?",
+      "exampleYue": "今晚可唔可以遲啲先埋單？",
+      "say": "Could we get the bill later tonight?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "bill",
+      "phrase": true,
+      "audioSha256": "c111dc1ccf991adbe864631e84df1d1d8416c0ce5754dd6ddaa12397af6970a0",
+      "register": "餐廳",
+      "usageNotes": "bill later 係而家未結，遲啲先叫單。",
+      "pitfallsYue": "bill later 係而家未結，遲啲先叫單。",
+      "related": [
+        "bill-noun",
+        "enjoy-verb"
+      ],
+      "examples": [
+        {
+          "en": "Could we get the bill later tonight?",
+          "yue": "今晚可唔可以遲啲先埋單？",
+          "audio": "assets/audio/words/bill-later-phrase.mp3",
+          "audioSlow": "assets/audio/words/bill-later-phrase-slow.mp3",
+          "say": "Could we get the bill later tonight?"
+        },
+        {
+          "en": "We can ask for the bill later.",
+          "yue": "我哋可以遲啲先叫單。",
+          "audio": "assets/audio/words/bill-later-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/bill-later-phrase-ex2-slow.mp3",
+          "say": "We can ask for the bill later."
+        }
+      ]
+    },
+    {
+      "id": "anything-else-phrase",
+      "lemma": "anything else",
+      "pos": "phrase",
+      "senseId": "more-offer",
+      "ipa": "/ˈɛ.ni.ˌθɪŋ ˈɛls/",
+      "syllables": [
+        "an",
+        "y",
+        "thing",
+        "else"
+      ],
+      "syllableIpa": [
+        "ˈɛ",
+        "ni",
+        "ˌθɪŋ",
+        "ˈɛls"
+      ],
+      "stress": 1,
+      "arpabet": "EH1 N IY0 TH IH2 NG EH1 L S",
+      "audio": "assets/audio/words/anything-else-phrase.mp3",
+      "audioSlow": "assets/audio/words/anything-else-phrase-slow.mp3",
+      "glossYue": "仲有冇其他",
+      "glossZh": "還有其他嗎",
+      "jyutping": "zung6 jau5 mou5 kei4 taa1",
+      "collocations": [
+        "anything else",
+        "before you leave"
+      ],
+      "example": "Would you like anything else today?",
+      "exampleYue": "你今日仲想唔想要其他嘢？",
+      "say": "Would you like anything else today?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "anything",
+      "phrase": true,
+      "audioSha256": "1e7c8d64550fdaa29aa3407c825fea4c440850e758b15d8f865e11a06782ddbd",
+      "register": "餐廳",
+      "usageNotes": "問完先走。anything else 要連住講。",
+      "pitfallsYue": "問完先走。anything else 要連住講。",
+      "related": [
+        "enjoy-verb",
+        "refill-noun"
+      ],
+      "examples": [
+        {
+          "en": "Would you like anything else today?",
+          "yue": "你今日仲想唔想要其他嘢？",
+          "audio": "assets/audio/words/anything-else-phrase.mp3",
+          "audioSlow": "assets/audio/words/anything-else-phrase-slow.mp3",
+          "say": "Would you like anything else today?"
+        },
+        {
+          "en": "Anything else before I leave the table?",
+          "yue": "我離開之前仲有冇其他？",
+          "audio": "assets/audio/words/anything-else-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/anything-else-phrase-ex2-slow.mp3",
+          "say": "Anything else before I leave the table?"
+        }
+      ]
+    },
+    {
+      "id": "bill-noun",
+      "lemma": "bill",
+      "pos": "noun",
+      "senseId": "restaurant-bill",
+      "ipa": "/ˈbɪl/",
+      "syllables": [
+        "bill"
+      ],
+      "syllableIpa": [
+        "ˈbɪl"
+      ],
+      "stress": 1,
+      "arpabet": "B IH1 L",
+      "audio": "assets/audio/words/bill-noun.mp3",
+      "audioSlow": "assets/audio/words/bill-noun-slow.mp3",
+      "glossYue": "單",
+      "glossZh": "帳單",
+      "jyutping": "daan1",
+      "collocations": [
+        "the bill",
+        "ask for the bill"
+      ],
+      "example": "Could we have the bill please?",
+      "exampleYue": "可唔可以埋單？",
+      "say": "Could we have the bill please?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "bill",
+      "phrase": false,
+      "audioSha256": "a7eed2eb804ecbf319c222c7490da840318872c2f86113a9ffa058672f94f665",
+      "register": "餐廳",
+      "usageNotes": "bill 同 check 都係埋單，美式兩樣都聽到。",
+      "pitfallsYue": "bill 同 check 都係埋單，美式兩樣都聽到。",
+      "related": [
+        "check-noun",
+        "split-verb"
+      ],
+      "examples": [
+        {
+          "en": "Could we have the bill please?",
+          "yue": "可唔可以埋單？",
+          "audio": "assets/audio/words/bill-noun.mp3",
+          "audioSlow": "assets/audio/words/bill-noun-slow.mp3",
+          "say": "Could we have the bill please?"
+        },
+        {
+          "en": "The bill is on the table now.",
+          "yue": "單而家喺檯上面。",
+          "audio": "assets/audio/words/bill-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/bill-noun-ex2-slow.mp3",
+          "say": "The bill is on the table now."
+        }
+      ]
+    },
+    {
+      "id": "check-noun",
+      "lemma": "check",
+      "pos": "noun",
+      "senseId": "guest-check",
+      "ipa": "/ˈtʃɛk/",
+      "syllables": [
+        "check"
+      ],
+      "syllableIpa": [
+        "ˈtʃɛk"
+      ],
+      "stress": 1,
+      "arpabet": "CH EH1 K",
+      "audio": "assets/audio/words/check-noun.mp3",
+      "audioSlow": "assets/audio/words/check-noun-slow.mp3",
+      "glossYue": "餐單（埋單）",
+      "glossZh": "帳單",
+      "jyutping": "caan1 daan1",
+      "collocations": [
+        "this check",
+        "separate checks"
+      ],
+      "example": "Please split this check tonight.",
+      "exampleYue": "今晚請分開呢張單。",
+      "say": "Please split this check tonight.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "check",
+      "phrase": false,
+      "audioSha256": "5562f0647c7e7f4d1bbf7aea0172ea0ec5d73e838ab97eab785c604513e13d16",
+      "register": "餐廳",
+      "usageNotes": "呢度係埋單，唔係支票，亦唔係檢查。",
+      "pitfallsYue": "呢度係埋單，唔係支票，亦唔係檢查。",
+      "related": [
+        "bill-noun",
+        "separate-adj"
+      ],
+      "examples": [
+        {
+          "en": "Please split this check tonight.",
+          "yue": "今晚請分開呢張單。",
+          "audio": "assets/audio/words/check-noun.mp3",
+          "audioSlow": "assets/audio/words/check-noun-slow.mp3",
+          "say": "Please split this check tonight."
+        },
+        {
+          "en": "The check is ready for you.",
+          "yue": "單準備好喇。",
+          "audio": "assets/audio/words/check-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/check-noun-ex2-slow.mp3",
+          "say": "The check is ready for you."
+        }
+      ]
+    },
+    {
+      "id": "split-verb",
+      "lemma": "split",
+      "pos": "verb",
+      "senseId": "divide-bill",
+      "ipa": "/ˈsplɪt/",
+      "syllables": [
+        "split"
+      ],
+      "syllableIpa": [
+        "ˈsplɪt"
+      ],
+      "stress": 1,
+      "arpabet": "S P L IH1 T",
+      "audio": "assets/audio/words/split-verb.mp3",
+      "audioSlow": "assets/audio/words/split-verb-slow.mp3",
+      "glossYue": "分單",
+      "glossZh": "分開付",
+      "jyutping": "fan1 daan1",
+      "collocations": [
+        "split the bill",
+        "split it"
+      ],
+      "example": "Shall we split the bill tonight?",
+      "exampleYue": "今晚我哋分單好唔好？",
+      "say": "Shall we split the bill tonight?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "split",
+      "phrase": false,
+      "audioSha256": "9e1c879141116f0c3a4290d91906d1ff49cd110a7f5f8f21604bbd2a1959de11",
+      "register": "餐廳",
+      "usageNotes": "Shall we split it? 係提議分單。",
+      "pitfallsYue": "Shall we split it? 係提議分單。",
+      "related": [
+        "separate-adj",
+        "together-adv"
+      ],
+      "examples": [
+        {
+          "en": "Shall we split the bill tonight?",
+          "yue": "今晚我哋分單好唔好？",
+          "audio": "assets/audio/words/split-verb.mp3",
+          "audioSlow": "assets/audio/words/split-verb-slow.mp3",
+          "say": "Shall we split the bill tonight?"
+        },
+        {
+          "en": "We can split it into two checks.",
+          "yue": "可以分成兩張單。",
+          "audio": "assets/audio/words/split-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/split-verb-ex2-slow.mp3",
+          "say": "We can split it into two checks."
+        }
+      ]
+    },
+    {
+      "id": "separate-adj",
+      "lemma": "separate",
+      "pos": "adj",
+      "senseId": "not-together",
+      "ipa": "/ˈsɛp.ɹət/",
+      "syllables": [
+        "sep",
+        "rate"
+      ],
+      "syllableIpa": [
+        "ˈsɛp",
+        "ɹət"
+      ],
+      "stress": 1,
+      "arpabet": "S EH1 P R AH0 T",
+      "audio": "assets/audio/words/separate-adj.mp3",
+      "audioSlow": "assets/audio/words/separate-adj-slow.mp3",
+      "glossYue": "分開",
+      "glossZh": "分開的",
+      "jyutping": "fan1 hoi1",
+      "collocations": [
+        "separate checks",
+        "separate receipts"
+      ],
+      "example": "We would like two separate checks.",
+      "exampleYue": "我哋想要兩張分開嘅單。",
+      "say": "We would like two separate checks.",
+      "variants": [],
+      "note": "形容詞跟 CMU S EH1 P R AH0 T。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "separate",
+      "phrase": false,
+      "audioSha256": "7ae8306715f2007301fe41747b5b21f2c4c971052cffa67ea274aea9ed0dc287",
+      "register": "餐廳",
+      "usageNotes": "形容詞讀 /ˈsɛp.ɹət/，第二節好輕。",
+      "pitfallsYue": "形容詞讀 /ˈsɛp.ɹət/，第二節好輕。",
+      "related": [
+        "split-verb",
+        "check-noun"
+      ],
+      "examples": [
+        {
+          "en": "We would like two separate checks.",
+          "yue": "我哋想要兩張分開嘅單。",
+          "audio": "assets/audio/words/separate-adj.mp3",
+          "audioSlow": "assets/audio/words/separate-adj-slow.mp3",
+          "say": "We would like two separate checks."
+        },
+        {
+          "en": "Please keep the receipts separate tonight.",
+          "yue": "今晚兩張收據分開就得。",
+          "audio": "assets/audio/words/separate-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/separate-adj-ex2-slow.mp3",
+          "say": "Please keep the receipts separate tonight."
+        }
+      ]
+    },
+    {
+      "id": "together-adv",
+      "lemma": "together",
+      "pos": "adv",
+      "senseId": "as-one",
+      "ipa": "/tə.ˈɡɛ.ðɚ/",
+      "syllables": [
+        "to",
+        "geth",
+        "er"
+      ],
+      "syllableIpa": [
+        "tə",
+        "ˈɡɛ",
+        "ðɚ"
+      ],
+      "stress": 2,
+      "arpabet": "T AH0 G EH1 DH ER0",
+      "audio": "assets/audio/words/together-adv.mp3",
+      "audioSlow": "assets/audio/words/together-adv-slow.mp3",
+      "glossYue": "一齊",
+      "glossZh": "一起",
+      "jyutping": "jat1 cai4",
+      "collocations": [
+        "pay together",
+        "sit together"
+      ],
+      "example": "We can pay together on one bill.",
+      "exampleYue": "我哋可以一張單一齊付。",
+      "say": "We can pay together on one bill.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "together",
+      "phrase": false,
+      "audioSha256": "2d3206c6ba785191bfdfda2bb7da968549bcd16c2b372676e46d98c94e24d447",
+      "register": "餐廳",
+      "usageNotes": "同 separate 相對。",
+      "pitfallsYue": "同 separate 相對。",
+      "related": [
+        "split-verb",
+        "bill-noun"
+      ],
+      "examples": [
+        {
+          "en": "We can pay together on one bill.",
+          "yue": "我哋可以一張單一齊付。",
+          "audio": "assets/audio/words/together-adv.mp3",
+          "audioSlow": "assets/audio/words/together-adv-slow.mp3",
+          "say": "We can pay together on one bill."
+        },
+        {
+          "en": "Let us sit together near the window.",
+          "yue": "我哋坐埋窗邊一齊。",
+          "audio": "assets/audio/words/together-adv-ex2.mp3",
+          "audioSlow": "assets/audio/words/together-adv-ex2-slow.mp3",
+          "say": "Let us sit together near the window."
+        }
+      ]
+    },
+    {
+      "id": "service-charge-phrase",
+      "lemma": "service charge",
+      "pos": "phrase",
+      "senseId": "extra-fee",
+      "ipa": "/ˈsɝ.vəs ˈtʃɑɹdʒ/",
+      "syllables": [
+        "ser",
+        "vice",
+        "charge"
+      ],
+      "syllableIpa": [
+        "ˈsɝ",
+        "vəs",
+        "ˈtʃɑɹdʒ"
+      ],
+      "stress": 1,
+      "arpabet": "S ER1 V AH0 S CH AA1 R JH",
+      "audio": "assets/audio/words/service-charge-phrase.mp3",
+      "audioSlow": "assets/audio/words/service-charge-phrase-slow.mp3",
+      "glossYue": "服務費",
+      "glossZh": "服務費",
+      "jyutping": "fuk6 mou6 fai3",
+      "collocations": [
+        "the service charge",
+        "include the service charge"
+      ],
+      "example": "The service charge is on the bill.",
+      "exampleYue": "服務費已經喺單上面。",
+      "say": "The [[sˈɜvəs]] charge is on the bill.",
+      "variants": [],
+      "note": "服務費。錄音將 ɝ 寫成 ɜ，因為呢個聲線冇 ɝ。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "service",
+      "phrase": true,
+      "audioSha256": "76d8a1b9155cea9efc48a9b7660b673ce4ee9bfc75c69e685fa60ef8dd609740",
+      "register": "餐廳",
+      "usageNotes": "服務費唔等於貼士。貼士係另加。",
+      "pitfallsYue": "服務費唔等於貼士。貼士係另加。",
+      "related": [
+        "tip-noun",
+        "include-verb"
+      ],
+      "examples": [
+        {
+          "en": "The service charge is on the bill.",
+          "yue": "服務費已經喺單上面。",
+          "audio": "assets/audio/words/service-charge-phrase.mp3",
+          "audioSlow": "assets/audio/words/service-charge-phrase-slow.mp3",
+          "say": "The [[sˈɜvəs]] charge is on the bill."
+        },
+        {
+          "en": "Does the total include the service charge?",
+          "yue": "總數包唔包服務費？",
+          "audio": "assets/audio/words/service-charge-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/service-charge-phrase-ex2-slow.mp3",
+          "say": "Does the total include the [[sˈɜvəs]] charge?"
+        }
+      ]
+    },
+    {
+      "id": "tip-noun",
+      "lemma": "tip",
+      "pos": "noun",
+      "senseId": "extra-money",
+      "ipa": "/ˈtɪp/",
+      "syllables": [
+        "tip"
+      ],
+      "syllableIpa": [
+        "ˈtɪp"
+      ],
+      "stress": 1,
+      "arpabet": "T IH1 P",
+      "audio": "assets/audio/words/tip-noun.mp3",
+      "audioSlow": "assets/audio/words/tip-noun-slow.mp3",
+      "glossYue": "貼士",
+      "glossZh": "小費",
+      "jyutping": "tip1 si2",
+      "collocations": [
+        "add a tip",
+        "the tip"
+      ],
+      "example": "I will add a tip on the check.",
+      "exampleYue": "我會喺單上加貼士。",
+      "say": "I will add a tip on the check.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "tip",
+      "phrase": false,
+      "audioSha256": "8dfc398a8b1e7a23d182bc10216d2c00edd2d5b4b05f248eb471531e4c307c2d",
+      "register": "餐廳",
+      "usageNotes": "貼士係額外嘅，服務費先至係單上面已經有。",
+      "pitfallsYue": "貼士係額外嘅，服務費先至係單上面已經有。",
+      "related": [
+        "service-charge-phrase",
+        "receipt-noun"
+      ],
+      "examples": [
+        {
+          "en": "I will add a tip on the check.",
+          "yue": "我會喺單上加貼士。",
+          "audio": "assets/audio/words/tip-noun.mp3",
+          "audioSlow": "assets/audio/words/tip-noun-slow.mp3",
+          "say": "I will add a tip on the check."
+        },
+        {
+          "en": "The tip is written on the receipt.",
+          "yue": "貼士寫喺收據上面。",
+          "audio": "assets/audio/words/tip-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/tip-noun-ex2-slow.mp3",
+          "say": "The tip is written on the receipt."
+        }
+      ]
+    },
+    {
+      "id": "card-machine-phrase",
+      "lemma": "card machine",
+      "pos": "phrase",
+      "senseId": "pay-device",
+      "ipa": "/ˈkɑɹd mə.ˈʃin/",
+      "syllables": [
+        "card",
+        "ma",
+        "chine"
+      ],
+      "syllableIpa": [
+        "ˈkɑɹd",
+        "mə",
+        "ˈʃin"
+      ],
+      "stress": 1,
+      "arpabet": "K AA1 R D M AH0 SH IY1 N",
+      "audio": "assets/audio/words/card-machine-phrase.mp3",
+      "audioSlow": "assets/audio/words/card-machine-phrase-slow.mp3",
+      "glossYue": "卡機",
+      "glossZh": "刷卡機",
+      "jyutping": "kaat1 gei1",
+      "collocations": [
+        "the card machine",
+        "bring the card machine"
+      ],
+      "example": "Please bring the card machine here.",
+      "exampleYue": "唔該攞卡機過嚟。",
+      "say": "Please bring the card machine here.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "card",
+      "phrase": true,
+      "audioSha256": "c283e4375d2434e6a132d8e341cf8c058bea009b61252a78d9020ce36ccf69c4",
+      "register": "餐廳",
+      "usageNotes": "卡機係拍卡或者插卡嗰部。",
+      "pitfallsYue": "卡機係拍卡或者插卡嗰部。",
+      "related": [
+        "receipt-noun",
+        "bill-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please bring the card machine here.",
+          "yue": "唔該攞卡機過嚟。",
+          "audio": "assets/audio/words/card-machine-phrase.mp3",
+          "audioSlow": "assets/audio/words/card-machine-phrase-slow.mp3",
+          "say": "Please bring the card machine here."
+        },
+        {
+          "en": "The card machine is ready now.",
+          "yue": "卡機而家準備好。",
+          "audio": "assets/audio/words/card-machine-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/card-machine-phrase-ex2-slow.mp3",
+          "say": "The card machine is ready now."
+        }
+      ]
+    },
+    {
+      "id": "change-noun",
+      "lemma": "change",
+      "pos": "noun",
+      "senseId": "coins-back",
+      "ipa": "/ˈtʃeɪndʒ/",
+      "syllables": [
+        "change"
+      ],
+      "syllableIpa": [
+        "ˈtʃeɪndʒ"
+      ],
+      "stress": 1,
+      "arpabet": "CH EY1 N JH",
+      "audio": "assets/audio/words/change-noun.mp3",
+      "audioSlow": "assets/audio/words/change-noun-slow.mp3",
+      "glossYue": "零錢",
+      "glossZh": "零錢",
+      "jyutping": "ling4 cin4",
+      "collocations": [
+        "your change",
+        "keep the change"
+      ],
+      "example": "Here is your change from the bill.",
+      "exampleYue": "單嘅零錢喺度。",
+      "say": "Here is your change from the bill.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "change",
+      "phrase": false,
+      "audioSha256": "ccc25e9ec6fdca6400e1b70b1e553e2e982e924f3fb26ef18cd2ec977a8c11e6",
+      "register": "餐廳",
+      "usageNotes": "change 呢度係找回嚟嘅零錢，唔係更改。",
+      "pitfallsYue": "change 呢度係找回嚟嘅零錢，唔係更改。",
+      "related": [
+        "keep-the-change-phrase",
+        "bill-noun"
+      ],
+      "examples": [
+        {
+          "en": "Here is your change from the bill.",
+          "yue": "單嘅零錢喺度。",
+          "audio": "assets/audio/words/change-noun.mp3",
+          "audioSlow": "assets/audio/words/change-noun-slow.mp3",
+          "say": "Here is your change from the bill."
+        },
+        {
+          "en": "You can keep the change tonight.",
+          "yue": "今晚零錢你留低就得。",
+          "audio": "assets/audio/words/change-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/change-noun-ex2-slow.mp3",
+          "say": "You can keep the change tonight."
+        }
+      ]
+    },
+    {
+      "id": "keep-the-change-phrase",
+      "lemma": "keep the change",
+      "pos": "phrase",
+      "senseId": "leave-coins",
+      "ipa": "/ˈkip ðə ˈtʃeɪndʒ/",
+      "syllables": [
+        "keep",
+        "the",
+        "change"
+      ],
+      "syllableIpa": [
+        "ˈkip",
+        "ðə",
+        "ˈtʃeɪndʒ"
+      ],
+      "stress": 1,
+      "arpabet": "K IY1 P DH AH0 CH EY1 N JH",
+      "audio": "assets/audio/words/keep-the-change-phrase.mp3",
+      "audioSlow": "assets/audio/words/keep-the-change-phrase-slow.mp3",
+      "glossYue": "唔使找",
+      "glossZh": "不用找零",
+      "jyutping": "m4 sai2 zaau2",
+      "collocations": [
+        "keep the change",
+        "you can keep the change"
+      ],
+      "example": "Please keep the change tonight.",
+      "exampleYue": "今晚唔使找。",
+      "say": "Please keep the change tonight.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "keep",
+      "phrase": true,
+      "audioSha256": "a0d9e4ddf57ee2f683852a48656a272719bf6fb975d6be1deb87f2d9300bbfd6",
+      "register": "餐廳",
+      "usageNotes": "即係零錢當貼士，唔使找返。",
+      "pitfallsYue": "即係零錢當貼士，唔使找返。",
+      "related": [
+        "change-noun",
+        "tip-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please keep the change tonight.",
+          "yue": "今晚唔使找。",
+          "audio": "assets/audio/words/keep-the-change-phrase.mp3",
+          "audioSlow": "assets/audio/words/keep-the-change-phrase-slow.mp3",
+          "say": "Please keep the change tonight."
+        },
+        {
+          "en": "You can keep the change, thank you.",
+          "yue": "零錢你留低，多謝。",
+          "audio": "assets/audio/words/keep-the-change-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/keep-the-change-phrase-ex2-slow.mp3",
+          "say": "You can keep the change, thank you."
+        }
+      ]
+    },
+    {
+      "id": "takeaway-noun",
+      "lemma": "takeaway",
+      "pos": "noun",
+      "senseId": "packed-food",
+      "ipa": "/ˈteɪk.ə.ˌweɪ/",
+      "syllables": [
+        "take",
+        "a",
+        "way"
+      ],
+      "syllableIpa": [
+        "ˈteɪk",
+        "ə",
+        "ˌweɪ"
+      ],
+      "stress": 1,
+      "arpabet": "T EY1 K AH0 W EY2",
+      "audio": "assets/audio/words/takeaway-noun.mp3",
+      "audioSlow": "assets/audio/words/takeaway-noun-slow.mp3",
+      "glossYue": "外賣",
+      "glossZh": "外賣",
+      "jyutping": "ngoi6 maai6",
+      "collocations": [
+        "as a takeaway",
+        "a takeaway box"
+      ],
+      "example": "Could we get the cake as a takeaway?",
+      "exampleYue": "蛋糕可唔可以打包外賣？",
+      "say": "Could we get the cake as a takeaway?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "takeaway",
+      "phrase": false,
+      "audioSha256": "1e86c99d22bda3af2732658539a783ba2c83c3cd2db3fb6af37cb0a559055b6b",
+      "register": "餐廳",
+      "usageNotes": "外賣係打包帶走。",
+      "pitfallsYue": "外賣係打包帶走。",
+      "related": [
+        "bill-noun",
+        "thank-you-phrase"
+      ],
+      "examples": [
+        {
+          "en": "Could we get the cake as a takeaway?",
+          "yue": "蛋糕可唔可以打包外賣？",
+          "audio": "assets/audio/words/takeaway-noun.mp3",
+          "audioSlow": "assets/audio/words/takeaway-noun-slow.mp3",
+          "say": "Could we get the cake as a takeaway?"
+        },
+        {
+          "en": "The takeaway box is ready now.",
+          "yue": "外賣盒準備好喇。",
+          "audio": "assets/audio/words/takeaway-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/takeaway-noun-ex2-slow.mp3",
+          "say": "The takeaway box is ready now."
+        }
+      ]
+    },
+    {
+      "id": "calling-verb",
+      "lemma": "calling",
+      "pos": "verb",
+      "senseId": "on-the-phone",
+      "ipa": "/ˈkɔ.lɪŋ/",
+      "syllables": [
+        "call",
+        "ing"
+      ],
+      "syllableIpa": [
+        "ˈkɔ",
+        "lɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "K AO1 L IH0 NG",
+      "audio": "assets/audio/words/calling-verb.mp3",
+      "audioSlow": "assets/audio/words/calling-verb-slow.mp3",
+      "glossYue": "打緊嚟",
+      "glossZh": "來電",
+      "jyutping": "daa2 gan2 lai4",
+      "collocations": [
+        "who is calling",
+        "calling from"
+      ],
+      "example": "May I ask who is calling now?",
+      "exampleYue": "請問邊位打嚟？",
+      "say": "May I ask who is calling now?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "calling",
+      "phrase": false,
+      "audioSha256": "9a170fbcd17917928e73c7afde8a8b5291cc935aefd15951b1234520decb1339",
+      "register": "職場",
+      "usageNotes": "calling 呢度係電話打嚟，唔係拜訪。",
+      "pitfallsYue": "calling 呢度係電話打嚟，唔係拜訪。",
+      "related": [
+        "speak-to-phrase",
+        "message-noun"
+      ],
+      "examples": [
+        {
+          "en": "May I ask who is calling now?",
+          "yue": "請問邊位打嚟？",
+          "audio": "assets/audio/words/calling-verb.mp3",
+          "audioSlow": "assets/audio/words/calling-verb-slow.mp3",
+          "say": "May I ask who is calling now?"
+        },
+        {
+          "en": "Kai is calling from the harbor office.",
+          "yue": "Kai 由海港辦事處打嚟。",
+          "audio": "assets/audio/words/calling-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/calling-verb-ex2-slow.mp3",
+          "say": "Kai is calling from the harbor office."
+        }
+      ]
+    },
+    {
+      "id": "speak-to-phrase",
+      "lemma": "speak to",
+      "pos": "phrase",
+      "senseId": "ask-for-person",
+      "ipa": "/ˈspik ˈtu/",
+      "syllables": [
+        "speak",
+        "to"
+      ],
+      "syllableIpa": [
+        "ˈspik",
+        "ˈtu"
+      ],
+      "stress": 1,
+      "arpabet": "S P IY1 K T UW1",
+      "audio": "assets/audio/words/speak-to-phrase.mp3",
+      "audioSlow": "assets/audio/words/speak-to-phrase-slow.mp3",
+      "glossYue": "同…講",
+      "glossZh": "和…說",
+      "jyutping": "tung4 gong2",
+      "collocations": [
+        "speak to Mei",
+        "could I speak to"
+      ],
+      "example": "Could I speak to Mei today?",
+      "exampleYue": "今日可唔可以同 Mei 講？",
+      "say": "Could I speak to Mei today?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "speak",
+      "phrase": true,
+      "audioSha256": "2eebfba3e08766a4f210be8bc0c28e2be930169350617f08efaefe75f4115b22",
+      "register": "職場",
+      "usageNotes": "Could I speak to…? 先問人喺唔喺。",
+      "pitfallsYue": "Could I speak to…? 先問人喺唔喺。",
+      "related": [
+        "calling-verb",
+        "available-adj"
+      ],
+      "examples": [
+        {
+          "en": "Could I speak to Mei today?",
+          "yue": "今日可唔可以同 Mei 講？",
+          "audio": "assets/audio/words/speak-to-phrase.mp3",
+          "audioSlow": "assets/audio/words/speak-to-phrase-slow.mp3",
+          "say": "Could I speak to Mei today?"
+        },
+        {
+          "en": "I need to speak to the manager.",
+          "yue": "我要同經理講。",
+          "audio": "assets/audio/words/speak-to-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/speak-to-phrase-ex2-slow.mp3",
+          "say": "I need to speak to the manager."
+        }
+      ]
+    },
+    {
+      "id": "hold-verb",
+      "lemma": "hold",
+      "pos": "verb",
+      "senseId": "wait-on-phone",
+      "ipa": "/ˈhoʊld/",
+      "syllables": [
+        "hold"
+      ],
+      "syllableIpa": [
+        "ˈhoʊld"
+      ],
+      "stress": 1,
+      "arpabet": "HH OW1 L D",
+      "audio": "assets/audio/words/hold-verb.mp3",
+      "audioSlow": "assets/audio/words/hold-verb-slow.mp3",
+      "glossYue": "等線",
+      "glossZh": "稍等",
+      "jyutping": "dang2 sin3",
+      "collocations": [
+        "please hold",
+        "hold the line"
+      ],
+      "example": "Please hold while I try the other line.",
+      "exampleYue": "唔該等陣，我試吓另一條線。",
+      "say": "Please hold while I try the other line.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "hold",
+      "phrase": false,
+      "audioSha256": "f16822af41b040d7b217fee9e5e2b863225d83a3e043101c5315e2d336b852d6",
+      "register": "職場",
+      "usageNotes": "hold 呢度係電話等陣，唔係握住。",
+      "pitfallsYue": "hold 呢度係電話等陣，唔係握住。",
+      "related": [
+        "line-noun",
+        "transfer-verb"
+      ],
+      "examples": [
+        {
+          "en": "Please hold while I try the other line.",
+          "yue": "唔該等陣，我試吓另一條線。",
+          "audio": "assets/audio/words/hold-verb.mp3",
+          "audioSlow": "assets/audio/words/hold-verb-slow.mp3",
+          "say": "Please hold while I try the other line."
+        },
+        {
+          "en": "Could you hold for one minute?",
+          "yue": "可唔可以等一分鐘？",
+          "audio": "assets/audio/words/hold-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/hold-verb-ex2-slow.mp3",
+          "say": "Could you hold for one minute?"
+        }
+      ]
+    },
+    {
+      "id": "transfer-verb",
+      "lemma": "transfer",
+      "pos": "verb",
+      "senseId": "pass-the-call",
+      "ipa": "/tɹæns.ˈfɝ/",
+      "syllables": [
+        "trans",
+        "fer"
+      ],
+      "syllableIpa": [
+        "tɹæns",
+        "ˈfɝ"
+      ],
+      "stress": 2,
+      "arpabet": "T R AE0 N S F ER1",
+      "audio": "assets/audio/words/transfer-verb.mp3",
+      "audioSlow": "assets/audio/words/transfer-verb-slow.mp3",
+      "glossYue": "轉駁",
+      "glossZh": "轉接",
+      "jyutping": "zyun3 bok3",
+      "collocations": [
+        "transfer you",
+        "transfer the call"
+      ],
+      "example": "I will transfer you to her line.",
+      "exampleYue": "我會轉駁去佢條線。",
+      "say": "I will [[tɹænsfˈɜ]] you to her line.",
+      "variants": [],
+      "note": "動詞重音喺第二節 /tɹæns.ˈfɝ/。錄音用 ɜ，因為呢個聲線冇 ɝ。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "transfer",
+      "phrase": false,
+      "audioSha256": "c1ea93072c957326c720ec5ea62c3ea1f3103355c9ae60336c5dcb880c4a6a52",
+      "register": "職場",
+      "usageNotes": "動詞重音喺第二節。",
+      "pitfallsYue": "動詞重音喺第二節。",
+      "related": [
+        "line-noun",
+        "hold-verb"
+      ],
+      "examples": [
+        {
+          "en": "I will transfer you to her line.",
+          "yue": "我會轉駁去佢條線。",
+          "audio": "assets/audio/words/transfer-verb.mp3",
+          "audioSlow": "assets/audio/words/transfer-verb-slow.mp3",
+          "say": "I will [[tɹænsfˈɜ]] you to her line."
+        },
+        {
+          "en": "Please transfer the call to Mei.",
+          "yue": "唔該將電話轉駁畀 Mei。",
+          "audio": "assets/audio/words/transfer-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/transfer-verb-ex2-slow.mp3",
+          "say": "Please [[tɹænsfˈɜ]] the call to Mei."
+        }
+      ]
+    },
+    {
+      "id": "message-noun",
+      "lemma": "message",
+      "pos": "noun",
+      "senseId": "phone-note",
+      "ipa": "/ˈmɛ.sədʒ/",
+      "syllables": [
+        "mes",
+        "sage"
+      ],
+      "syllableIpa": [
+        "ˈmɛ",
+        "sədʒ"
+      ],
+      "stress": 1,
+      "arpabet": "M EH1 S AH0 JH",
+      "audio": "assets/audio/words/message-noun.mp3",
+      "audioSlow": "assets/audio/words/message-noun-slow.mp3",
+      "glossYue": "留言",
+      "glossZh": "留言",
+      "jyutping": "lau4 jin4",
+      "collocations": [
+        "take a message",
+        "leave a message"
+      ],
+      "example": "Please take a message for Mei.",
+      "exampleYue": "唔該幫 Mei 收個留言。",
+      "say": "Please take a message for Mei.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "message",
+      "phrase": false,
+      "audioSha256": "c68399d9c0a1f1738c8b8d29aedd28b63c17c69c4afe98c4a9f5eef5f0b2abeb",
+      "register": "職場",
+      "usageNotes": "人唔喺度先留言。",
+      "pitfallsYue": "人唔喺度先留言。",
+      "related": [
+        "callback-noun",
+        "spelling-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please take a message for Mei.",
+          "yue": "唔該幫 Mei 收個留言。",
+          "audio": "assets/audio/words/message-noun.mp3",
+          "audioSlow": "assets/audio/words/message-noun-slow.mp3",
+          "say": "Please take a message for Mei."
+        },
+        {
+          "en": "I left a message at the desk.",
+          "yue": "我喺櫃檯留咗言。",
+          "audio": "assets/audio/words/message-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/message-noun-ex2-slow.mp3",
+          "say": "I left a message at the desk."
+        }
+      ]
+    },
+    {
+      "id": "callback-noun",
+      "lemma": "callback",
+      "pos": "noun",
+      "senseId": "call-back",
+      "ipa": "/ˈkɔl.ˌbæk/",
+      "syllables": [
+        "call",
+        "back"
+      ],
+      "syllableIpa": [
+        "ˈkɔl",
+        "ˌbæk"
+      ],
+      "stress": 1,
+      "arpabet": "K AO1 L B AE2 K",
+      "audio": "assets/audio/words/callback-noun.mp3",
+      "audioSlow": "assets/audio/words/callback-noun-slow.mp3",
+      "glossYue": "覆電",
+      "glossZh": "回電",
+      "jyutping": "fuk1 din6",
+      "collocations": [
+        "a callback number",
+        "note the callback"
+      ],
+      "example": "Please note the callback number now.",
+      "exampleYue": "唔該而家記低覆電號碼。",
+      "say": "Please note the callback number now.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "callback",
+      "phrase": false,
+      "audioSha256": "16f24c7571bc7fea4c9caa82a4053dd5e231c48ce000534a6ef714a6a1b79570",
+      "register": "職場",
+      "usageNotes": "callback 係我哋打返去，唔係而家轉駁。",
+      "pitfallsYue": "callback 係我哋打返去，唔係而家轉駁。",
+      "related": [
+        "message-noun",
+        "convenient-adj"
+      ],
+      "examples": [
+        {
+          "en": "Please note the callback number now.",
+          "yue": "唔該而家記低覆電號碼。",
+          "audio": "assets/audio/words/callback-noun.mp3",
+          "audioSlow": "assets/audio/words/callback-noun-slow.mp3",
+          "say": "Please note the callback number now."
+        },
+        {
+          "en": "A callback this afternoon is convenient.",
+          "yue": "今日下晝覆電會方便。",
+          "audio": "assets/audio/words/callback-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/callback-noun-ex2-slow.mp3",
+          "say": "A callback this afternoon is convenient."
+        }
+      ]
+    },
+    {
+      "id": "available-adj",
+      "lemma": "available",
+      "pos": "adj",
+      "senseId": "free-to-talk",
+      "ipa": "/ə.ˈveɪ.lə.bəl/",
+      "syllables": [
+        "a",
+        "vail",
+        "a",
+        "ble"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈveɪ",
+        "lə",
+        "bəl"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 V EY1 L AH0 B AH0 L",
+      "audio": "assets/audio/words/available-adj.mp3",
+      "audioSlow": "assets/audio/words/available-adj-slow.mp3",
+      "glossYue": "有空",
+      "glossZh": "有空",
+      "jyutping": "jau5 hung1",
+      "collocations": [
+        "not available",
+        "available now"
+      ],
+      "example": "She is not available right now.",
+      "exampleYue": "佢而家冇空。",
+      "say": "She is not available right now.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "available",
+      "phrase": false,
+      "audioSha256": "d186e70a2c0a8503eb4bea0c02725361338999945ab9bb299bc472811775db4e",
+      "register": "職場",
+      "usageNotes": "有空聽電話，唔係餐廳有位。",
+      "pitfallsYue": "有空聽電話，唔係餐廳有位。",
+      "related": [
+        "hold-verb",
+        "appointment-noun"
+      ],
+      "examples": [
+        {
+          "en": "She is not available right now.",
+          "yue": "佢而家冇空。",
+          "audio": "assets/audio/words/available-adj.mp3",
+          "audioSlow": "assets/audio/words/available-adj-slow.mp3",
+          "say": "She is not available right now."
+        },
+        {
+          "en": "Is Mei available for a short call?",
+          "yue": "Mei 有冇空聽個短電話？",
+          "audio": "assets/audio/words/available-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/available-adj-ex2-slow.mp3",
+          "say": "Is Mei available for a short call?"
+        }
+      ]
+    },
+    {
+      "id": "line-noun",
+      "lemma": "line",
+      "pos": "noun",
+      "senseId": "phone-line",
+      "ipa": "/ˈlaɪn/",
+      "syllables": [
+        "line"
+      ],
+      "syllableIpa": [
+        "ˈlaɪn"
+      ],
+      "stress": 1,
+      "arpabet": "L AY1 N",
+      "audio": "assets/audio/words/line-noun.mp3",
+      "audioSlow": "assets/audio/words/line-noun-slow.mp3",
+      "glossYue": "線路",
+      "glossZh": "線路",
+      "jyutping": "sin3 lou6",
+      "collocations": [
+        "the other line",
+        "hold the line"
+      ],
+      "example": "Please hold the other line now.",
+      "exampleYue": "唔該等吓另一條線。",
+      "say": "Please hold the other line now.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "line",
+      "phrase": false,
+      "audioSha256": "7541b1550ec1c48fd45d8b76e0033b31835ff290863e20470ddd300567aca3f7",
+      "register": "職場",
+      "usageNotes": "開頭係 /l/。呢度係電話線，唔係排隊。",
+      "pitfallsYue": "開頭係 /l/。呢度係電話線，唔係排隊。",
+      "related": [
+        "hold-verb",
+        "extension-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please hold the other line now.",
+          "yue": "唔該等吓另一條線。",
+          "audio": "assets/audio/words/line-noun.mp3",
+          "audioSlow": "assets/audio/words/line-noun-slow.mp3",
+          "say": "Please hold the other line now."
+        },
+        {
+          "en": "The line is free for your call.",
+          "yue": "條線得閒，可以打。",
+          "audio": "assets/audio/words/line-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/line-noun-ex2-slow.mp3",
+          "say": "The line is free for your call."
+        }
+      ]
+    },
+    {
+      "id": "extension-noun",
+      "lemma": "extension",
+      "pos": "noun",
+      "senseId": "desk-number",
+      "ipa": "/ɪk.ˈstɛn.ʃən/",
+      "syllables": [
+        "ex",
+        "ten",
+        "sion"
+      ],
+      "syllableIpa": [
+        "ɪk",
+        "ˈstɛn",
+        "ʃən"
+      ],
+      "stress": 2,
+      "arpabet": "IH0 K S T EH1 N SH AH0 N",
+      "audio": "assets/audio/words/extension-noun.mp3",
+      "audioSlow": "assets/audio/words/extension-noun-slow.mp3",
+      "glossYue": "內線",
+      "glossZh": "分機",
+      "jyutping": "noi6 sin3",
+      "collocations": [
+        "the extension",
+        "read the extension"
+      ],
+      "example": "Please read the extension back to me.",
+      "exampleYue": "唔該將內線讀返畀我。",
+      "say": "Please read the extension back to me.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "extension",
+      "phrase": false,
+      "audioSha256": "a8d5e27fc2542daecbcb9dce791221217f6e14b2954007d187bdfa84be4df14f",
+      "register": "職場",
+      "usageNotes": "重音喺 ten。",
+      "pitfallsYue": "重音喺 ten。",
+      "related": [
+        "line-noun",
+        "reach-verb"
+      ],
+      "examples": [
+        {
+          "en": "Please read the extension back to me.",
+          "yue": "唔該將內線讀返畀我。",
+          "audio": "assets/audio/words/extension-noun.mp3",
+          "audioSlow": "assets/audio/words/extension-noun-slow.mp3",
+          "say": "Please read the extension back to me."
+        },
+        {
+          "en": "I will reach her on this extension.",
+          "yue": "我會用呢個內線聯絡佢。",
+          "audio": "assets/audio/words/extension-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/extension-noun-ex2-slow.mp3",
+          "say": "I will reach her on this extension."
+        }
+      ]
+    },
+    {
+      "id": "spelling-noun",
+      "lemma": "spelling",
+      "pos": "noun",
+      "senseId": "letter-order",
+      "ipa": "/ˈspɛ.lɪŋ/",
+      "syllables": [
+        "spel",
+        "ling"
+      ],
+      "syllableIpa": [
+        "ˈspɛ",
+        "lɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "S P EH1 L IH0 NG",
+      "audio": "assets/audio/words/spelling-noun.mp3",
+      "audioSlow": "assets/audio/words/spelling-noun-slow.mp3",
+      "glossYue": "串法",
+      "glossZh": "拼寫",
+      "jyutping": "cyun3 faat3",
+      "collocations": [
+        "check the spelling",
+        "the spelling"
+      ],
+      "example": "Could you say the spelling slowly today?",
+      "exampleYue": "今日可唔可以慢慢講個串法？",
+      "say": "Could you say the spelling slowly today?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "spelling",
+      "phrase": false,
+      "audioSha256": "003844a6ca7047c5e90fa42f8b3d7993d54718f3d9a5939c505deb7357d14674",
+      "register": "職場",
+      "usageNotes": "慢慢串，再讀返一次。",
+      "pitfallsYue": "慢慢串，再讀返一次。",
+      "related": [
+        "slowly-adv",
+        "message-noun"
+      ],
+      "examples": [
+        {
+          "en": "Could you say the spelling slowly today?",
+          "yue": "今日可唔可以慢慢講個串法？",
+          "audio": "assets/audio/words/spelling-noun.mp3",
+          "audioSlow": "assets/audio/words/spelling-noun-slow.mp3",
+          "say": "Could you say the spelling slowly today?"
+        },
+        {
+          "en": "The spelling of his name is Tom.",
+          "yue": "佢個名串法係 Tom。",
+          "audio": "assets/audio/words/spelling-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/spelling-noun-ex2-slow.mp3",
+          "say": "The spelling of his name is Tom."
+        }
+      ]
+    },
+    {
+      "id": "slowly-adv",
+      "lemma": "slowly",
+      "pos": "adv",
+      "senseId": "not-fast-speech",
+      "ipa": "/ˈsloʊ.li/",
+      "syllables": [
+        "slow",
+        "ly"
+      ],
+      "syllableIpa": [
+        "ˈsloʊ",
+        "li"
+      ],
+      "stress": 1,
+      "arpabet": "S L OW1 L IY0",
+      "audio": "assets/audio/words/slowly-adv.mp3",
+      "audioSlow": "assets/audio/words/slowly-adv-slow.mp3",
+      "glossYue": "慢慢",
+      "glossZh": "慢慢地",
+      "jyutping": "maan6 maan6",
+      "collocations": [
+        "say it slowly",
+        "spell slowly"
+      ],
+      "example": "Please spell the name slowly today.",
+      "exampleYue": "唔該今日慢慢串個名。",
+      "say": "Please spell the name slowly today.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "slowly",
+      "phrase": false,
+      "audioSha256": "12eb46aa929e195aee0a25352fd5a8f727c450abc479935e1e27bf74cfa2c371",
+      "register": "職場",
+      "usageNotes": "對方聽唔清先講 slowly。",
+      "pitfallsYue": "對方聽唔清先講 slowly。",
+      "related": [
+        "spelling-noun",
+        "extension-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please spell the name slowly today.",
+          "yue": "唔該今日慢慢串個名。",
+          "audio": "assets/audio/words/slowly-adv.mp3",
+          "audioSlow": "assets/audio/words/slowly-adv-slow.mp3",
+          "say": "Please spell the name slowly today."
+        },
+        {
+          "en": "Could you say the extension slowly?",
+          "yue": "可唔可以慢慢講個內線？",
+          "audio": "assets/audio/words/slowly-adv-ex2.mp3",
+          "audioSlow": "assets/audio/words/slowly-adv-ex2-slow.mp3",
+          "say": "Could you say the extension slowly?"
+        }
+      ]
+    },
+    {
+      "id": "return-your-call-phrase",
+      "lemma": "return your call",
+      "pos": "phrase",
+      "senseId": "call-again",
+      "ipa": "/ɹɪ.ˈtɝn ˈjʊɹ ˈkɔl/",
+      "syllables": [
+        "re",
+        "turn",
+        "your",
+        "call"
+      ],
+      "syllableIpa": [
+        "ɹɪ",
+        "ˈtɝn",
+        "ˈjʊɹ",
+        "ˈkɔl"
+      ],
+      "stress": 2,
+      "arpabet": "R IH0 T ER1 N Y UH1 R K AO1 L",
+      "audio": "assets/audio/words/return-your-call-phrase.mp3",
+      "audioSlow": "assets/audio/words/return-your-call-phrase-slow.mp3",
+      "glossYue": "覆你電話",
+      "glossZh": "回你的電話",
+      "jyutping": "fuk1 nei5 din6 waa2",
+      "collocations": [
+        "return your call",
+        "this afternoon"
+      ],
+      "example": "I will return your call this afternoon.",
+      "exampleYue": "我今日下晝覆你電話。",
+      "say": "I will [[ɹɪtˈɜn]] your call this afternoon.",
+      "variants": [],
+      "note": "return 有 ɝ。錄音用 ɜ，因為呢個聲線冇 ɝ。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "return",
+      "phrase": true,
+      "audioSha256": "98612aadcbfb9cadad75a6214fd71696e6bd45e79546c1e0d6de7ab69d6486ad",
+      "register": "職場",
+      "usageNotes": "即係打返畀你。",
+      "pitfallsYue": "即係打返畀你。",
+      "related": [
+        "callback-noun",
+        "message-noun"
+      ],
+      "examples": [
+        {
+          "en": "I will return your call this afternoon.",
+          "yue": "我今日下晝覆你電話。",
+          "audio": "assets/audio/words/return-your-call-phrase.mp3",
+          "audioSlow": "assets/audio/words/return-your-call-phrase-slow.mp3",
+          "say": "I will [[ɹɪtˈɜn]] your call this afternoon."
+        },
+        {
+          "en": "She will return your call when she can.",
+          "yue": "佢得閒就覆你電話。",
+          "audio": "assets/audio/words/return-your-call-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/return-your-call-phrase-ex2-slow.mp3",
+          "say": "She will [[ɹɪtˈɜn]] your call when she can."
+        }
+      ]
+    },
+    {
+      "id": "regarding-prep",
+      "lemma": "regarding",
+      "pos": "prep",
+      "senseId": "about-topic",
+      "ipa": "/ɹɪ.ˈɡɑɹ.dɪŋ/",
+      "syllables": [
+        "re",
+        "gard",
+        "ing"
+      ],
+      "syllableIpa": [
+        "ɹɪ",
+        "ˈɡɑɹ",
+        "dɪŋ"
+      ],
+      "stress": 2,
+      "arpabet": "R IH0 G AA1 R D IH0 NG",
+      "audio": "assets/audio/words/regarding-prep.mp3",
+      "audioSlow": "assets/audio/words/regarding-prep-slow.mp3",
+      "glossYue": "關於",
+      "glossZh": "關於",
+      "jyutping": "gwan1 jyu1",
+      "collocations": [
+        "regarding the appointment",
+        "calling regarding"
+      ],
+      "example": "I am calling regarding the appointment.",
+      "exampleYue": "我打嚟係關於個約會。",
+      "say": "I am calling regarding the appointment.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "regarding",
+      "phrase": false,
+      "audioSha256": "cc5e17c65583ca518e856cf8f52545819d0e4cace87de2e70600c74ff12a6ee4",
+      "register": "職場",
+      "usageNotes": "regarding 後面接件事。",
+      "pitfallsYue": "regarding 後面接件事。",
+      "related": [
+        "appointment-noun",
+        "calling-verb"
+      ],
+      "examples": [
+        {
+          "en": "I am calling regarding the appointment.",
+          "yue": "我打嚟係關於個約會。",
+          "audio": "assets/audio/words/regarding-prep.mp3",
+          "audioSlow": "assets/audio/words/regarding-prep-slow.mp3",
+          "say": "I am calling regarding the appointment."
+        },
+        {
+          "en": "This message is regarding your visit.",
+          "yue": "呢個留言係關於你嘅到訪。",
+          "audio": "assets/audio/words/regarding-prep-ex2.mp3",
+          "audioSlow": "assets/audio/words/regarding-prep-ex2-slow.mp3",
+          "say": "This message is regarding your visit."
+        }
+      ]
+    },
+    {
+      "id": "appointment-noun",
+      "lemma": "appointment",
+      "pos": "noun",
+      "senseId": "set-meeting",
+      "ipa": "/ə.ˈpɔɪnt.mənt/",
+      "syllables": [
+        "ap",
+        "point",
+        "ment"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈpɔɪnt",
+        "mənt"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 P OY1 N T M AH0 N T",
+      "audio": "assets/audio/words/appointment-noun.mp3",
+      "audioSlow": "assets/audio/words/appointment-noun-slow.mp3",
+      "glossYue": "約會",
+      "glossZh": "約會",
+      "jyutping": "joek3 wui6",
+      "collocations": [
+        "the appointment",
+        "regarding the appointment"
+      ],
+      "example": "Could I speak to Mei regarding the appointment?",
+      "exampleYue": "可唔可以同 Mei 講關於個約會？",
+      "say": "Could I speak to Mei regarding the appointment?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "appointment",
+      "phrase": false,
+      "audioSha256": "e43a15dc4e7257bdecd0347425ff19e2658ceff9cf1d2d4da020ca6397d03c43",
+      "register": "職場",
+      "usageNotes": "重音喺 point。",
+      "pitfallsYue": "重音喺 point。",
+      "related": [
+        "regarding-prep",
+        "convenient-adj"
+      ],
+      "examples": [
+        {
+          "en": "Could I speak to Mei regarding the appointment?",
+          "yue": "可唔可以同 Mei 講關於個約會？",
+          "audio": "assets/audio/words/appointment-noun.mp3",
+          "audioSlow": "assets/audio/words/appointment-noun-slow.mp3",
+          "say": "Could I speak to Mei regarding the appointment?"
+        },
+        {
+          "en": "The appointment is at three today.",
+          "yue": "約會係今日三點。",
+          "audio": "assets/audio/words/appointment-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/appointment-noun-ex2-slow.mp3",
+          "say": "The appointment is at three today."
+        }
+      ]
+    },
+    {
+      "id": "convenient-adj",
+      "lemma": "convenient",
+      "pos": "adj",
+      "senseId": "good-time",
+      "ipa": "/kən.ˈvi.njənt/",
+      "syllables": [
+        "con",
+        "ve",
+        "nient"
+      ],
+      "syllableIpa": [
+        "kən",
+        "ˈvi",
+        "njənt"
+      ],
+      "stress": 2,
+      "arpabet": "K AH0 N V IY1 N Y AH0 N T",
+      "audio": "assets/audio/words/convenient-adj.mp3",
+      "audioSlow": "assets/audio/words/convenient-adj-slow.mp3",
+      "glossYue": "方便",
+      "glossZh": "方便",
+      "jyutping": "fong1 bin6",
+      "collocations": [
+        "a convenient time",
+        "if it is convenient"
+      ],
+      "example": "A callback this afternoon is convenient.",
+      "exampleYue": "今日下晝覆電會方便。",
+      "say": "A callback this afternoon is convenient.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "convenient",
+      "phrase": false,
+      "audioSha256": "c3980a1223b7aeeb1415474a1bbb3c4f493b3c7e8f871af8619ecc3dcef5df0b",
+      "register": "職場",
+      "usageNotes": "問時間方唔方便，唔好硬約。",
+      "pitfallsYue": "問時間方唔方便，唔好硬約。",
+      "related": [
+        "callback-noun",
+        "appointment-noun"
+      ],
+      "examples": [
+        {
+          "en": "A callback this afternoon is convenient.",
+          "yue": "今日下晝覆電會方便。",
+          "audio": "assets/audio/words/convenient-adj.mp3",
+          "audioSlow": "assets/audio/words/convenient-adj-slow.mp3",
+          "say": "A callback this afternoon is convenient."
+        },
+        {
+          "en": "Is three o'clock convenient for you?",
+          "yue": "三點對你方唔方便？",
+          "audio": "assets/audio/words/convenient-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/convenient-adj-ex2-slow.mp3",
+          "say": "Is three o'clock convenient for you?"
+        }
+      ]
+    },
+    {
+      "id": "reach-verb",
+      "lemma": "reach",
+      "pos": "verb",
+      "senseId": "get-in-touch",
+      "ipa": "/ˈɹitʃ/",
+      "syllables": [
+        "reach"
+      ],
+      "syllableIpa": [
+        "ˈɹitʃ"
+      ],
+      "stress": 1,
+      "arpabet": "R IY1 CH",
+      "audio": "assets/audio/words/reach-verb.mp3",
+      "audioSlow": "assets/audio/words/reach-verb-slow.mp3",
+      "glossYue": "聯絡到",
+      "glossZh": "聯繫到",
+      "jyutping": "lyun4 lok3 dou3",
+      "collocations": [
+        "reach her",
+        "reach Mei"
+      ],
+      "example": "I will reach her on this extension.",
+      "exampleYue": "我會用呢個內線聯絡佢。",
+      "say": "I will reach her on this extension.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "reach",
+      "phrase": false,
+      "audioSha256": "9afddfc4078feea48728f057bb8f06a478a9a57cc25eb2b6504acbfc225555d0",
+      "register": "職場",
+      "usageNotes": "reach 呢度係聯絡到人，唔係伸手拿到。",
+      "pitfallsYue": "reach 呢度係聯絡到人，唔係伸手拿到。",
+      "related": [
+        "extension-noun",
+        "callback-noun"
+      ],
+      "examples": [
+        {
+          "en": "I will reach her on this extension.",
+          "yue": "我會用呢個內線聯絡佢。",
+          "audio": "assets/audio/words/reach-verb.mp3",
+          "audioSlow": "assets/audio/words/reach-verb-slow.mp3",
+          "say": "I will reach her on this extension."
+        },
+        {
+          "en": "Could you reach Mei this afternoon?",
+          "yue": "今日下晝可唔可以聯絡到 Mei？",
+          "audio": "assets/audio/words/reach-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/reach-verb-ex2-slow.mp3",
+          "say": "Could you reach Mei this afternoon?"
         }
       ]
     }

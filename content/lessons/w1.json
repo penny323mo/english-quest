@@ -1,0 +1,363 @@
+{
+  "id": "W1",
+  "unit": "W",
+  "titleYue": "職場電話",
+  "titleEn": "Phone calls",
+  "canDoYue": "你能夠接電話、留口訊、轉駁，同埋核對串法。",
+  "canDoEn": "Answer a call, take a message, transfer, and check a spelling.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/w1.webp",
+  "cast": [
+    "kai",
+    "tom"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "calling-verb",
+    "speak-to-phrase",
+    "hold-verb",
+    "transfer-verb",
+    "message-noun",
+    "callback-noun",
+    "available-adj",
+    "line-noun",
+    "extension-noun",
+    "spelling-noun",
+    "slowly-adv",
+    "return-your-call-phrase",
+    "regarding-prep",
+    "appointment-noun",
+    "convenient-adj",
+    "reach-verb"
+  ],
+  "next": "J9",
+  "dialogue": [
+    {
+      "id": "w1-l1",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Good morning, this is Kai calling from the harbor office, and how may I help?",
+      "glossYue": "早晨，我係海港辦事處嘅 Kai 打嚟，有咩可以幫你？",
+      "audio": "assets/audio/lines/w1-l1.mp3",
+      "audioSlow": "assets/audio/lines/w1-l1-slow.mp3",
+      "say": "Good morning, this is Kai calling from the harbor office, and how may I help?",
+      "hideGloss": false
+    },
+    {
+      "id": "w1-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could I speak to Mei regarding the appointment, and may I ask if she is available?",
+      "glossYue": "可唔可以同 Mei 講關於個約會，順便問吓佢有冇空？",
+      "audio": "assets/audio/lines/w1-l2.mp3",
+      "audioSlow": "assets/audio/lines/w1-l2-slow.mp3",
+      "say": "Could I speak to Mei regarding the appointment, and may I ask if she is available?",
+      "hideGloss": true
+    },
+    {
+      "id": "w1-l3",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "She is not available right now, so please hold and I will try the other line.",
+      "glossYue": "佢而家冇空，唔該等陣，我試吓另一條線。",
+      "audio": "assets/audio/lines/w1-l3.mp3",
+      "audioSlow": "assets/audio/lines/w1-l3-slow.mp3",
+      "say": "She is not available right now, so please hold and I will try the other line.",
+      "hideGloss": false
+    },
+    {
+      "id": "w1-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Please take a message, and ask her to return my call when it is convenient.",
+      "glossYue": "唔該幫我留個言，方便嘅時候叫佢覆我電話。",
+      "audio": "assets/audio/lines/w1-l4.mp3",
+      "audioSlow": "assets/audio/lines/w1-l4-slow.mp3",
+      "say": "Please take a message, and ask her to return my call when it is convenient.",
+      "hideGloss": true
+    },
+    {
+      "id": "w1-l5",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "I will transfer you if the line is free, or I can note the callback number.",
+      "glossYue": "如果線路得閒我會轉駁，或者我記低覆電號碼。",
+      "audio": "assets/audio/lines/w1-l5.mp3",
+      "audioSlow": "assets/audio/lines/w1-l5-slow.mp3",
+      "say": "I will transfer you if the line is free, or I can note the callback number.",
+      "hideGloss": true
+    },
+    {
+      "id": "w1-l6",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could you say the spelling slowly, and read the extension back to me?",
+      "glossYue": "可唔可以慢慢講個串法，再將內線讀返畀我？",
+      "audio": "assets/audio/lines/w1-l6.mp3",
+      "audioSlow": "assets/audio/lines/w1-l6-slow.mp3",
+      "say": "Could you say the spelling slowly, and read the extension back to me?",
+      "hideGloss": true
+    },
+    {
+      "id": "w1-l7",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "The spelling is correct, and I will reach her on extension four two later today.",
+      "glossYue": "串法啱，我遲啲會用四二號內線聯絡佢。",
+      "audio": "assets/audio/lines/w1-l7.mp3",
+      "audioSlow": "assets/audio/lines/w1-l7-slow.mp3",
+      "say": "The spelling is correct, and I will reach her on extension four two later today.",
+      "hideGloss": false
+    },
+    {
+      "id": "w1-l8",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Thank you for the message, and a callback this afternoon would be convenient.",
+      "glossYue": "多謝你幫我留言，今日下晝覆電會方便。",
+      "audio": "assets/audio/lines/w1-l8.mp3",
+      "audioSlow": "assets/audio/lines/w1-l8-slow.mp3",
+      "say": "Thank you for the message, and a callback this afternoon would be convenient.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Could I speak to Mei? 係？",
+      "choices": [
+        "想同 Mei 講",
+        "想再添杯水",
+        "想而家埋單"
+      ],
+      "answer": 0,
+      "explain": "speak to 係同邊個講。"
+    },
+    {
+      "prompt": "Please hold. 係叫人？",
+      "choices": [
+        "等線，唔好收線",
+        "留低零錢",
+        "讚菜好味"
+      ],
+      "answer": 0,
+      "explain": "hold 係等陣。"
+    },
+    {
+      "prompt": "May I ask who is calling? 係？",
+      "choices": [
+        "問邊位打嚟",
+        "問分唔分單",
+        "問叉喺邊"
+      ],
+      "answer": 0,
+      "explain": "who is calling 係問邊位。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Could I ___ to Mei regarding the appointment this afternoon?",
+      "example": "Could I speak to Mei regarding the appointment this afternoon?",
+      "glossYue": "今日下晝可唔可以⋯⋯ Mei，關於個約會？",
+      "answer": "speak",
+      "choices": [
+        "speak",
+        "split",
+        "refill"
+      ]
+    },
+    {
+      "pattern": "Please ___ while I try the other line for a minute.",
+      "example": "Please hold while I try the other line for a minute.",
+      "glossYue": "我試另一條線，唔該⋯⋯一陣。",
+      "answer": "hold",
+      "choices": [
+        "hold",
+        "bill",
+        "fork"
+      ]
+    },
+    {
+      "pattern": "I will ___ you if the line is free later this afternoon.",
+      "example": "I will transfer you if the line is free later this afternoon.",
+      "glossYue": "如果線路得閒，我遲啲會⋯⋯你。",
+      "answer": "transfer",
+      "choices": [
+        "transfer",
+        "napkin",
+        "delicious"
+      ]
+    },
+    {
+      "pattern": "Could you say the ___ slowly, and read the extension back to me?",
+      "example": "Could you say the spelling slowly, and read the extension back to me?",
+      "glossYue": "可唔可以慢慢講個⋯⋯，再將內線讀返？",
+      "answer": "spelling",
+      "choices": [
+        "spelling",
+        "tip",
+        "knife"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "w1-l2",
+    "hint": "Could I speak to Mei regarding the appointment, and may I ask if she is available?"
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "Mei 唔喺度。你點先留口訊？",
+      "choices": [
+        "Please take a message for Mei.",
+        "Could we get a refill?",
+        "Shall we split the bill?"
+      ],
+      "answer": 0,
+      "explain": "take a message 係留言。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Please",
+        "hold",
+        "the",
+        "other",
+        "line"
+      ],
+      "answer": [
+        "Please",
+        "hold",
+        "the",
+        "other",
+        "line"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "kai",
+    "intro": "Tom 打嚟搵 Mei。等佢講完想同邊個講先答。可以講：Please hold。",
+    "turns": [
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Could I speak to Mei regarding the appointment, and may I ask if she is available?",
+        "audio": "assets/audio/lines/w1-l2.mp3",
+        "audioSlow": "assets/audio/lines/w1-l2-slow.mp3",
+        "expect": "She is not available right now, so please hold and I will try the other line.",
+        "keywords": [
+          "hold",
+          "line"
+        ],
+        "modelAudio": "assets/audio/lines/w1-l3.mp3",
+        "modelSlow": "assets/audio/lines/w1-l3-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Please take a message, and ask her to return my call when it is convenient.",
+        "audio": "assets/audio/lines/w1-l4.mp3",
+        "audioSlow": "assets/audio/lines/w1-l4-slow.mp3",
+        "expect": "I will transfer you if the line is free, or I can note the callback number.",
+        "keywords": [
+          "transfer",
+          "callback"
+        ],
+        "modelAudio": "assets/audio/lines/w1-l5.mp3",
+        "modelSlow": "assets/audio/lines/w1-l5-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Could you say the spelling slowly, and read the extension back to me?",
+        "audio": "assets/audio/lines/w1-l6.mp3",
+        "audioSlow": "assets/audio/lines/w1-l6-slow.mp3",
+        "expect": "The spelling is correct, and I will reach her on extension four two later today.",
+        "keywords": [
+          "spelling",
+          "extension"
+        ],
+        "modelAudio": "assets/audio/lines/w1-l7.mp3",
+        "modelSlow": "assets/audio/lines/w1-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen to the clip once, then choose the word you heard for the phone connection you wait on.",
+      "lemma": "line-noun",
+      "choices": [
+        "line",
+        "hold",
+        "message"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen to the clip once, then choose the word you heard for the note you leave when someone is out.",
+      "lemma": "message-noun",
+      "choices": [
+        "message",
+        "bill",
+        "fork"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "When a caller says please hold, what should the other person do on the phone?",
+      "choices": [
+        "等線",
+        "埋單",
+        "添水"
+      ],
+      "answer": 0,
+      "explain": "hold 係等，唔好收線。"
+    },
+    {
+      "type": "meaning",
+      "prompt": "When Kai says she will transfer you, what happens to this phone call?",
+      "choices": [
+        "轉駁去另一個人",
+        "而家收線",
+        "改做外賣"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which of these phone words begins with the /l/ sound: line, hold, or message?",
+      "choices": [
+        "line",
+        "hold",
+        "message"
+      ],
+      "answer": 0,
+      "explain": "line 開頭係 /l/。hold 同 message 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "線路開頭嗰個音",
+    "note": "line 開頭係 /l/。舌尖抵住上顎後面。hold 開頭係 /h/。message 開頭係 /m/。",
+    "pairs": [
+      {
+        "a": "line-noun",
+        "b": "hold-verb"
+      },
+      {
+        "a": "message-noun",
+        "b": "appointment-noun"
+      }
+    ],
+    "drill": [
+      "line-noun",
+      "hold-verb",
+      "message-noun",
+      "reach-verb",
+      "appointment-noun"
+    ]
+  }
+}

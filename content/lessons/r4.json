@@ -1,0 +1,363 @@
+{
+  "id": "R4",
+  "unit": "R",
+  "titleYue": "用餐期間",
+  "titleEn": "During the meal",
+  "canDoYue": "你能夠用餐時添水、要餐巾，同埋讚好味。",
+  "canDoEn": "Ask for a refill or a napkin during the meal, and say the food is delicious.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/r4.webp",
+  "cast": [
+    "ana",
+    "tom"
+  ],
+  "cefr": "A2",
+  "lemmas": [
+    "water-noun",
+    "refill-noun",
+    "napkin-noun",
+    "delicious-adj",
+    "more-det",
+    "still-adj",
+    "sparkling-adj",
+    "fork-noun",
+    "knife-noun",
+    "bill-later-phrase",
+    "enjoy-verb",
+    "anything-else-phrase"
+  ],
+  "next": "J6",
+  "dialogue": [
+    {
+      "id": "r4-l1",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "Are you enjoying the meal so far, and could we get you a cold refill now?",
+      "glossYue": "你食到而家開唔開心？我哋可唔可以而家幫你添杯凍嘅？",
+      "audio": "assets/audio/lines/r4-l1.mp3",
+      "audioSlow": "assets/audio/lines/r4-l1-slow.mp3",
+      "say": "Are you enjoying the meal so far, and could we get you a cold refill now?",
+      "hideGloss": false
+    },
+    {
+      "id": "r4-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could we get some still water, and one more clean napkin for this fork?",
+      "glossYue": "可唔可以嚟杯冇氣水，同埋多一張乾淨餐巾畀呢支叉？",
+      "audio": "assets/audio/lines/r4-l2.mp3",
+      "audioSlow": "assets/audio/lines/r4-l2-slow.mp3",
+      "say": "Could we get some still water, and one more clean napkin for this fork?",
+      "hideGloss": true
+    },
+    {
+      "id": "r4-l3",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "Here is the still water, and the napkin is next to your knife.",
+      "glossYue": "冇氣水喺度，餐巾喺你把刀隔離。",
+      "audio": "assets/audio/lines/r4-l3.mp3",
+      "audioSlow": "assets/audio/lines/r4-l3-slow.mp3",
+      "say": "Here is the still water, and the napkin is next to your knife.",
+      "hideGloss": false
+    },
+    {
+      "id": "r4-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "This fish is delicious, and I would like a little more sparkling water.",
+      "glossYue": "呢條魚好味，我想要多啲有氣水。",
+      "audio": "assets/audio/lines/r4-l4.mp3",
+      "audioSlow": "assets/audio/lines/r4-l4-slow.mp3",
+      "say": "This fish is delicious, and I would like a little more sparkling water.",
+      "hideGloss": true
+    },
+    {
+      "id": "r4-l5",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "The sparkling water is coming, and I hope you enjoy the rest of it.",
+      "glossYue": "有氣水就到，希望你慢慢享受餘下嗰啲。",
+      "audio": "assets/audio/lines/r4-l5.mp3",
+      "audioSlow": "assets/audio/lines/r4-l5-slow.mp3",
+      "say": "The sparkling water is coming, and I hope you enjoy the rest of it.",
+      "hideGloss": false
+    },
+    {
+      "id": "r4-l6",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "No dessert for me, but could we get the bill a little later tonight?",
+      "glossYue": "我唔要甜品，不過今晚可唔可以遲啲先埋單？",
+      "audio": "assets/audio/lines/r4-l6.mp3",
+      "audioSlow": "assets/audio/lines/r4-l6-slow.mp3",
+      "say": "No dessert for me, but could we get the bill a little later tonight?",
+      "hideGloss": true
+    },
+    {
+      "id": "r4-l7",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "Of course, and would you like anything else before I leave the table?",
+      "glossYue": "當然可以，我離開之前你仲想唔想要其他嘢？",
+      "audio": "assets/audio/lines/r4-l7.mp3",
+      "audioSlow": "assets/audio/lines/r4-l7-slow.mp3",
+      "say": "Of course, and would you like anything else before I leave the table?",
+      "hideGloss": false
+    },
+    {
+      "id": "r4-l8",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "The meal was delicious, and a coffee later would be perfect, thank you.",
+      "glossYue": "呢餐好味，遲啲嚟杯咖啡就完美，多謝。",
+      "audio": "assets/audio/lines/r4-l8.mp3",
+      "audioSlow": "assets/audio/lines/r4-l8-slow.mp3",
+      "say": "The meal was delicious, and a coffee later would be perfect, thank you.",
+      "hideGloss": false
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Could we get a refill? 係問？",
+      "choices": [
+        "可唔可以再添一杯",
+        "可唔可以而家埋單",
+        "可唔可以轉駁電話"
+      ],
+      "answer": 0,
+      "explain": "refill 係再添一杯。"
+    },
+    {
+      "prompt": "still water 同 sparkling water 差喺？",
+      "choices": [
+        "冇氣同有氣",
+        "叉同刀",
+        "單同收據"
+      ],
+      "answer": 0,
+      "explain": "still 係冇氣，sparkling 係有氣。"
+    },
+    {
+      "prompt": "This is delicious. 係？",
+      "choices": [
+        "讚呢味好味",
+        "叫人等線",
+        "話要分單"
+      ],
+      "answer": 0,
+      "explain": "delicious 係好味。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Could we get a cold ___ of water before the meal continues?",
+      "example": "Could we get a cold refill of water before the meal continues?",
+      "glossYue": "用餐未完，可唔可以再添一杯凍⋯⋯？",
+      "answer": "refill",
+      "choices": [
+        "refill",
+        "embassy",
+        "receipt"
+      ]
+    },
+    {
+      "pattern": "This fish is ___, and I would like a little more water.",
+      "example": "This fish is delicious, and I would like a little more water.",
+      "glossYue": "呢條魚⋯⋯，我想要多啲水。",
+      "answer": "delicious",
+      "choices": [
+        "delicious",
+        "separate",
+        "available"
+      ]
+    },
+    {
+      "pattern": "Could we get one more clean ___ for this fork please?",
+      "example": "Could we get one more clean napkin for this fork please?",
+      "glossYue": "可唔可以多要一張乾淨⋯⋯畀呢支叉？",
+      "answer": "napkin",
+      "choices": [
+        "napkin",
+        "extension",
+        "wallet"
+      ]
+    },
+    {
+      "pattern": "The ___ water is not fizzy, and it is already on the table.",
+      "example": "The still water is not fizzy, and it is already on the table.",
+      "glossYue": "⋯⋯水冇氣，已經喺檯上面。",
+      "answer": "still",
+      "choices": [
+        "still",
+        "stolen",
+        "tight"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "r4-l4",
+    "hint": "This fish is delicious, and I would like a little more sparkling water."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想讚條魚好味。點講？",
+      "choices": [
+        "This fish is delicious.",
+        "Please hold the line.",
+        "Shall we split the bill?"
+      ],
+      "answer": 0,
+      "explain": "delicious 係好味。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "The",
+        "napkin",
+        "is",
+        "next",
+        "to",
+        "your",
+        "knife"
+      ],
+      "answer": [
+        "The",
+        "napkin",
+        "is",
+        "next",
+        "to",
+        "your",
+        "knife"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "ana",
+    "intro": "Tom 食緊飯。等佢叫完水同餐巾先答。可以講：Here is the still water。",
+    "turns": [
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Could we get some still water, and one more clean napkin for this fork?",
+        "audio": "assets/audio/lines/r4-l2.mp3",
+        "audioSlow": "assets/audio/lines/r4-l2-slow.mp3",
+        "expect": "Here is the still water, and the napkin is next to your knife.",
+        "keywords": [
+          "water",
+          "napkin"
+        ],
+        "modelAudio": "assets/audio/lines/r4-l3.mp3",
+        "modelSlow": "assets/audio/lines/r4-l3-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "This fish is delicious, and I would like a little more sparkling water.",
+        "audio": "assets/audio/lines/r4-l4.mp3",
+        "audioSlow": "assets/audio/lines/r4-l4-slow.mp3",
+        "expect": "The sparkling water is coming, and I hope you enjoy the rest of it.",
+        "keywords": [
+          "sparkling",
+          "enjoy"
+        ],
+        "modelAudio": "assets/audio/lines/r4-l5.mp3",
+        "modelSlow": "assets/audio/lines/r4-l5-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "No dessert for me, but could we get the bill a little later tonight?",
+        "audio": "assets/audio/lines/r4-l6.mp3",
+        "audioSlow": "assets/audio/lines/r4-l6-slow.mp3",
+        "expect": "Of course, and would you like anything else before I leave the table?",
+        "keywords": [
+          "anything",
+          "else"
+        ],
+        "modelAudio": "assets/audio/lines/r4-l7.mp3",
+        "modelSlow": "assets/audio/lines/r4-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen to the clip once, then choose the word you heard for the cloth beside the plate.",
+      "lemma": "napkin-noun",
+      "choices": [
+        "napkin",
+        "knife",
+        "bill"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen to the clip once, then choose the word you heard when the guest likes the fish.",
+      "lemma": "delicious-adj",
+      "choices": [
+        "delicious",
+        "fork",
+        "still"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "When a guest asks for still water, what does the word still mean with that drink?",
+      "choices": [
+        "冇氣",
+        "有氣",
+        "餐巾"
+      ],
+      "answer": 0,
+      "explain": "still water 係冇氣水。"
+    },
+    {
+      "type": "meaning",
+      "prompt": "When a guest asks for a refill, what does that word mean at the table?",
+      "choices": [
+        "再添一杯",
+        "而家埋單",
+        "打包帶走"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which of these meal words contains the /l/ sound: delicious, napkin, or fork?",
+      "choices": [
+        "delicious",
+        "napkin",
+        "fork"
+      ],
+      "answer": 0,
+      "explain": "delicious 中間有 /l/。napkin 同 fork 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "好味中間嗰個音",
+    "note": "delicious 中間係 /l/。舌尖抵住上顎後面。napkin 開頭係 /n/。fork 開頭係 /f/。",
+    "pairs": [
+      {
+        "a": "delicious-adj",
+        "b": "napkin-noun"
+      },
+      {
+        "a": "sparkling-adj",
+        "b": "still-adj"
+      }
+    ],
+    "drill": [
+      "delicious-adj",
+      "napkin-noun",
+      "fork-noun",
+      "water-noun",
+      "refill-noun"
+    ]
+  }
+}

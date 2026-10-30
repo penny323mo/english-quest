@@ -1,5 +1,12 @@
 # Changelog — English Quest
 
+## Round 25 fixes
+- R4 用餐期間 (A2), R5 埋單同貼士 (A2/B1), and W1 職場電話 (A2/B1) are full 12-beat lessons. Unlock order is F1 F2 F3 F4 J1 R1 J2 T1 J3 T2 R2 J4 J5 T3 R3 T4 R4 J6 J7 T5 R5 W1 J9. Ten soon teasers remain (J8, J10, T6, R6, J12, R7, T8, W2, J11, T9). The end copy says 呢輪二十三課. The A2 blurb now includes 用餐, and the A2/B1 blurb includes 埋單同職場電話. W1 adds the 職場 deck. Profile goals stay foundation, jewellery, travel, and restaurant.
+- Dialogue means stay in band order: R4 13.75, T4 13.13, R5 14.88, W1 14.88, T5 14.25, J9 15.63. New quiz and cloze means sit above the A1 ceilings (R4 quiz 15.6 and chunk 11.0, R5 quiz 16.0 and chunk 12.5, W1 quiz 16.0 and chunk 10.5).
+- T4’s receipt reply and T5’s embassy, faint, and ambulance replies are full sentences again, with new Piper clips. take now teaches “I'll take this one.” / 我要呢件。 jade’s example is 呢塊玉係天然嘅。
+- F1’s hero is redrawn in the thick-outline cartoon: a breath pose, a shell apron, a pocket watch, and 小燈. The path mascot and the recap mascot are the brass harbour lantern, with teal glass and a pink bow. F2–F4 art is unchanged.
+- The restaurant deck picks up the meal and bill cards. Tests are 25/25. The service worker precache is 1486 entries (25729.20 KiB) (`assets/index-C0QdOyWs.js`, `assets/shell-Da8XHgu5.js`). At 390px the path, F1, F2, R4, R5, W1, J9, and the repaired word cards stay inside the phone. The primary button is `rgb(15, 122, 110)`. Lighthouse mobile performance is 0.99.
+
 ## Round 24 fixes
 - T4 的士同問路 (A2), T5 行失咗點求人 (A2/B1), and J9 投訴同退換 (B1) are full 12-beat lessons. T5 stays A2/B1 in its current slot so the path does not drop a band before R5. Unlock order is F1 F2 F3 F4 J1 R1 J2 T1 J3 T2 R2 J4 J5 T3 R3 T4 J6 J7 T5 J9. Twelve soon teasers remain (R4, R5, J8, J10, T6, R6, J12, R7, T8, W2, J11, T9). The end copy says 呢輪二十課.
 - of, keep, the, and listen now teach the glossed sense: “I would like a cup of tea.”, “Please keep the receipt.”, “The menu is ready.”, and “Please listen to the guest.” try on, contactless, and thank you for telling me appear in their own examples. A test requires the lemma, or a regular plural, inside each example, and checks those four senses.

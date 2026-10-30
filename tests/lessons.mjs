@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), "utf8"));
 const ids = new Set(lex.items.map((item) => item.id));
-const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j9", "t1", "t2", "t3", "t4", "t5", "r1", "r2", "r3"];
+const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j9", "t1", "t2", "t3", "t4", "t5", "r1", "r2", "r3", "r4", "r5", "w1"];
 const lessons = shipped.map((id) =>
   JSON.parse(fs.readFileSync(path.join(root, "content/lessons", `${id}.json`), "utf8")),
 );
@@ -20,8 +20,8 @@ function exists(rel) {
   assert.ok(fs.statSync(file).size > 400, rel);
 }
 
-test("twenty lessons each carry the 12-beat payload", () => {
-  assert.equal(lessons.length, 20);
+test("twenty-three lessons each carry the 12-beat payload", () => {
+  assert.equal(lessons.length, 23);
   for (const lesson of lessons) {
     for (const key of ["hero", "canDoYue", "canDoEn", "dialogue", "understand", "chunks", "shadow", "build", "roleplay", "quiz", "sound", "next"]) {
       assert.ok(key in lesson, `${lesson.id} ${key}`);
@@ -135,13 +135,32 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   const t4 = lessons.find((lesson) => lesson.id === "T4");
   const t5 = lessons.find((lesson) => lesson.id === "T5");
   const j9 = lessons.find((lesson) => lesson.id === "J9");
-  assert.equal(t4.next, "J6");
+  assert.equal(t4.next, "R4");
   assert.equal(t4.cefr, "A2");
   assert.match(t4.titleYue, /的士/);
-  assert.equal(t5.next, "J9");
+  assert.equal(t5.next, "R5");
   assert.equal(t5.cefr, "A2/B1");
   assert.match(t5.titleYue, /行失/);
   assert.equal(j9.next, null);
+  const r4 = lessons.find((lesson) => lesson.id === "R4");
+  const r5 = lessons.find((lesson) => lesson.id === "R5");
+  const w1 = lessons.find((lesson) => lesson.id === "W1");
+  assert.equal(r4.next, "J6");
+  assert.equal(r4.cefr, "A2");
+  assert.match(r4.titleYue, /用餐/);
+  assert.equal(r5.next, "W1");
+  assert.equal(r5.cefr, "A2/B1");
+  assert.match(r5.titleYue, /埋單/);
+  assert.equal(w1.next, "J9");
+  assert.equal(w1.cefr, "A2/B1");
+  assert.match(w1.titleYue, /電話/);
+  assert.equal(t4.dialogue[6].text, "Here is your receipt, and you can see the landmark on your right.");
+  assert.deepEqual(t4.roleplay.turns[2].keywords, ["receipt", "landmark"]);
+  assert.equal(t5.dialogue[4].text, "The embassy number is on this card, and I will help you file the report.");
+  assert.equal(t5.dialogue[6].text, "I feel faint after the shock, so please tell me if this is an emergency.");
+  assert.equal(t5.dialogue[7].text, "If you feel faint, I can call an ambulance while we file the report.");
+  assert.deepEqual(t5.roleplay.turns[1].keywords, ["embassy", "report"]);
+  assert.deepEqual(t5.roleplay.turns[2].keywords, ["ambulance", "report"]);
   assert.equal(j9.cefr, "B1");
   assert.match(j9.titleYue, /投訴/);
   assert.match(r3.titleYue, /過敏/);
@@ -173,7 +192,7 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
     );
   }
   const shippedOnPath = flatPath.filter((entry) => !entry.soon).map((entry) => entry.id);
-  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "J6", "J7", "T5", "J9"]);
+  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "J6", "J7", "T5", "R5", "W1", "J9"]);
   assert.equal(flatPath.find((entry) => entry.id === "J8").cefr, "B1");
   const said = (lesson) => lesson.dialogue.map((line) => line.text).join("\n");
   assert.ok(j4.dialogue.length >= 6 && j4.dialogue.length <= 10);
@@ -248,7 +267,7 @@ test("the app has a mic fallback and does not phone home", () => {
   assert.match(lesson, /改為即時講/);
   assert.match(lesson, />聽我</);
   assert.match(lesson, /咪未開/);
-  assert.match(lesson, /呢輪二十課你行完啦/);
+  assert.match(lesson, /呢輪二十三課你行完啦/);
   assert.match(lesson, /setDone\(true\)/);
   assert.match(lesson, /playSfx/);
   assert.match(fs.readFileSync(path.join(root, "web/src/sfx.ts"), "utf8"), /AudioContext/);
@@ -307,7 +326,7 @@ test("role-play tip names a character or tells you it is your turn", () => {
   assert.match(lesson, /你扮 \$\{name\}/);
   assert.equal(lesson.includes("你而家係"), false);
   const data = fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8");
-  assert.match(data, /"F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "J6", "J7", "T5", "J9"/);
+  assert.match(data, /"F1", "F2", "F3", "F4", "J1", "R1", "J2", "T1", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "J6", "J7", "T5", "R5", "W1", "J9"/);
   assert.match(data, /const order = SHIPPED/);
 });
 
@@ -449,6 +468,14 @@ test("each example contains its lemma in the glossed sense", () => {
   assert.match(byId["listen-verb"].exampleYue, /聽/);
   assert.match(byId["listen-verb"].say, /lˈɪsən/);
   assert.doesNotMatch(byId["listen-verb"].example, /Ship is short/);
+  assert.equal(byId["take-verb"].example, "I'll take this one.");
+  assert.equal(byId["take-verb"].exampleYue, "我要呢件。");
+  assert.doesNotMatch(byId["take-verb"].example, /take a look/i);
+  assert.doesNotMatch(byId["take-verb"].exampleYue, /請慢慢睇/);
+  assert.equal(byId["jade-noun"].exampleYue, "呢塊玉係天然嘅。");
+  assert.equal(byId["jade-noun"].examples[0].yue, "呢塊玉係天然嘅。");
+  assert.equal(byId["jade-noun"].miniDialogue[1].yue, "呢塊玉係天然嘅。");
+  assert.equal(JSON.stringify(byId["jade-noun"]).includes("呢塊玉係天然。"), false);
 });
 
 test("perfect stays one stress and street names the right street", () => {

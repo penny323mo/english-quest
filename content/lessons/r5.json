@@ -1,0 +1,361 @@
+{
+  "id": "R5",
+  "unit": "R",
+  "titleYue": "埋單同貼士",
+  "titleEn": "Bill and tip",
+  "canDoYue": "你能夠叫單、分單、用卡機，同埋講貼士。",
+  "canDoEn": "Ask for the bill, split it, pay by card, and talk about the tip.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/r5.webp",
+  "cast": [
+    "ana",
+    "tom"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "bill-noun",
+    "check-noun",
+    "split-verb",
+    "separate-adj",
+    "together-adv",
+    "service-charge-phrase",
+    "tip-noun",
+    "include-verb",
+    "card-machine-phrase",
+    "receipt-noun",
+    "change-noun",
+    "keep-the-change-phrase",
+    "thank-you-phrase",
+    "takeaway-noun"
+  ],
+  "next": "W1",
+  "dialogue": [
+    {
+      "id": "r5-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could we have the bill now, and shall we split it or pay together tonight?",
+      "glossYue": "可唔可以而家埋單，今晚分單定係一齊付？",
+      "audio": "assets/audio/lines/r5-l1.mp3",
+      "audioSlow": "assets/audio/lines/r5-l1-slow.mp3",
+      "say": "Could we have the bill now, and shall we split it or pay together tonight?",
+      "hideGloss": false
+    },
+    {
+      "id": "r5-l2",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "We can split it into two separate checks, or you can pay together on one bill.",
+      "glossYue": "可以分開兩張單，或者你哋一張單一齊付。",
+      "audio": "assets/audio/lines/r5-l2.mp3",
+      "audioSlow": "assets/audio/lines/r5-l2-slow.mp3",
+      "say": "We can split it into two separate checks, or you can pay together on one bill.",
+      "hideGloss": true
+    },
+    {
+      "id": "r5-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Please bring the card machine here, and I will pay this check by card.",
+      "glossYue": "唔該攞卡機過嚟呢度，我會用卡付呢張單。",
+      "audio": "assets/audio/lines/r5-l3.mp3",
+      "audioSlow": "assets/audio/lines/r5-l3-slow.mp3",
+      "say": "Please bring the card machine here, and I will pay this check by card.",
+      "hideGloss": false
+    },
+    {
+      "id": "r5-l4",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "The card machine is here now, and your receipt will include the service charge.",
+      "glossYue": "卡機而家喺度，收據會包括服務費。",
+      "audio": "assets/audio/lines/r5-l4.mp3",
+      "audioSlow": "assets/audio/lines/r5-l4-slow.mp3",
+      "say": "The card machine is here now, and your receipt will include the service charge.",
+      "hideGloss": true
+    },
+    {
+      "id": "r5-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "The service was kind tonight, so I will add a tip and you can keep the change.",
+      "glossYue": "今晚服務好好，我會加貼士，零錢你留低就得。",
+      "audio": "assets/audio/lines/r5-l5.mp3",
+      "audioSlow": "assets/audio/lines/r5-l5-slow.mp3",
+      "say": "The service was kind tonight, so I will add a tip and you can keep the change.",
+      "hideGloss": true
+    },
+    {
+      "id": "r5-l6",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "Thank you, and the total does include the service charge before that tip tonight.",
+      "glossYue": "多謝，今晚貼士之前個總數已經包括服務費。",
+      "audio": "assets/audio/lines/r5-l6.mp3",
+      "audioSlow": "assets/audio/lines/r5-l6-slow.mp3",
+      "say": "Thank you, and the total does include the service charge before that tip tonight.",
+      "hideGloss": false
+    },
+    {
+      "id": "r5-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could we also get the cake as a takeaway before we leave the restaurant tonight?",
+      "glossYue": "今晚走之前可唔可以將蛋糕打包外賣？",
+      "audio": "assets/audio/lines/r5-l7.mp3",
+      "audioSlow": "assets/audio/lines/r5-l7-slow.mp3",
+      "say": "Could we also get the cake as a takeaway before we leave the restaurant tonight?",
+      "hideGloss": true
+    },
+    {
+      "id": "r5-l8",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "Here is your takeaway box now, and thank you again for coming in tonight.",
+      "glossYue": "外賣盒而家喺度，多謝你哋今晚嚟。",
+      "audio": "assets/audio/lines/r5-l8.mp3",
+      "audioSlow": "assets/audio/lines/r5-l8-slow.mp3",
+      "say": "Here is your takeaway box now, and thank you again for coming in tonight.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Could we have the bill? 係？",
+      "choices": [
+        "叫埋單",
+        "再添杯水",
+        "問人有冇空"
+      ],
+      "answer": 0,
+      "explain": "the bill 係埋單。"
+    },
+    {
+      "prompt": "Shall we split it? 係提議？",
+      "choices": [
+        "分兩張單",
+        "一齊坐窗邊",
+        "轉駁去另一條線"
+      ],
+      "answer": 0,
+      "explain": "split 係分單。"
+    },
+    {
+      "prompt": "keep the change 係？",
+      "choices": [
+        "零錢唔使找，當貼士",
+        "服務費已經喺單上",
+        "打包蛋糕"
+      ],
+      "answer": 0,
+      "explain": "keep the change 係唔使找。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Could we have the ___, and shall we split it or pay together tonight?",
+      "example": "Could we have the bill, and shall we split it or pay together tonight?",
+      "glossYue": "可唔可以要⋯⋯，今晚分單定係一齊付？",
+      "answer": "bill",
+      "choices": [
+        "bill",
+        "line",
+        "napkin"
+      ]
+    },
+    {
+      "pattern": "We can split it into ___ checks, or you can pay together on one bill.",
+      "example": "We can split it into separate checks, or you can pay together on one bill.",
+      "glossYue": "可以分成⋯⋯嘅單，或者一張單一齊付。",
+      "answer": "separate",
+      "choices": [
+        "separate",
+        "sparkling",
+        "stolen"
+      ]
+    },
+    {
+      "pattern": "Please bring the card ___ so I can pay this check by card.",
+      "example": "Please bring the card machine so I can pay this check by card.",
+      "glossYue": "唔該攞卡⋯⋯過嚟，我用卡付呢張單。",
+      "answer": "machine",
+      "choices": [
+        "machine",
+        "fork",
+        "embassy"
+      ]
+    },
+    {
+      "pattern": "The total does ___ the service charge before that tip is added.",
+      "example": "The total does include the service charge before that tip is added.",
+      "glossYue": "貼士加之前，總數已經⋯⋯服務費。",
+      "answer": "include",
+      "choices": [
+        "include",
+        "hold",
+        "refill"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "r5-l1",
+    "hint": "Could we have the bill now, and shall we split it or pay together tonight?"
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想分兩張單。點講？",
+      "choices": [
+        "Please split this check tonight.",
+        "Could we get a refill?",
+        "Please hold the line."
+      ],
+      "answer": 0,
+      "explain": "split this check 係分單。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Please",
+        "bring",
+        "the",
+        "card",
+        "machine"
+      ],
+      "answer": [
+        "Please",
+        "bring",
+        "the",
+        "card",
+        "machine"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "ana",
+    "intro": "Tom 食完想埋單。等佢講完分單定係一齊付先答。可以講：We can split it。",
+    "turns": [
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Could we have the bill now, and shall we split it or pay together tonight?",
+        "audio": "assets/audio/lines/r5-l1.mp3",
+        "audioSlow": "assets/audio/lines/r5-l1-slow.mp3",
+        "expect": "We can split it into two separate checks, or you can pay together on one bill.",
+        "keywords": [
+          "split",
+          "together"
+        ],
+        "modelAudio": "assets/audio/lines/r5-l2.mp3",
+        "modelSlow": "assets/audio/lines/r5-l2-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Please bring the card machine here, and I will pay this check by card.",
+        "audio": "assets/audio/lines/r5-l3.mp3",
+        "audioSlow": "assets/audio/lines/r5-l3-slow.mp3",
+        "expect": "The card machine is here now, and your receipt will include the service charge.",
+        "keywords": [
+          "machine",
+          "receipt"
+        ],
+        "modelAudio": "assets/audio/lines/r5-l4.mp3",
+        "modelSlow": "assets/audio/lines/r5-l4-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "The service was kind tonight, so I will add a tip and you can keep the change.",
+        "audio": "assets/audio/lines/r5-l5.mp3",
+        "audioSlow": "assets/audio/lines/r5-l5-slow.mp3",
+        "expect": "Thank you, and the total does include the service charge before that tip tonight.",
+        "keywords": [
+          "include",
+          "tip"
+        ],
+        "modelAudio": "assets/audio/lines/r5-l6.mp3",
+        "modelSlow": "assets/audio/lines/r5-l6-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen to the clip once, then choose the word you heard for the paper you ask for at the end.",
+      "lemma": "bill-noun",
+      "choices": [
+        "bill",
+        "tip",
+        "fork"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen to the clip once, then choose the word you heard for the extra money after the service.",
+      "lemma": "tip-noun",
+      "choices": [
+        "tip",
+        "check",
+        "knife"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "When a guest says service charge, what does that phrase mean on the restaurant bill?",
+      "choices": [
+        "服務費",
+        "零錢",
+        "餐巾"
+      ],
+      "answer": 0,
+      "explain": "service charge 係服務費，唔係貼士。"
+    },
+    {
+      "type": "meaning",
+      "prompt": "When a guest says keep the change, what should you do with the coins?",
+      "choices": [
+        "留低當貼士",
+        "即刻找返",
+        "分開兩張單"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which of these bill words contains the /l/ sound: include, tip, or check?",
+      "choices": [
+        "include",
+        "tip",
+        "check"
+      ],
+      "answer": 0,
+      "explain": "include 有 /l/。tip 同 check 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "包括入面嗰個音",
+    "note": "include 有 /l/。tip 開頭係 /t/。check 開頭係 /tʃ/。服務費同貼士唔好撈亂。",
+    "pairs": [
+      {
+        "a": "include-verb",
+        "b": "tip-noun"
+      },
+      {
+        "a": "bill-noun",
+        "b": "check-noun"
+      }
+    ],
+    "drill": [
+      "include-verb",
+      "bill-noun",
+      "tip-noun",
+      "check-noun",
+      "change-noun"
+    ]
+  }
+}

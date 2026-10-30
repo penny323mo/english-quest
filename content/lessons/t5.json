@@ -75,11 +75,11 @@
       "id": "t5-l5",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "If this is an emergency, I can call an ambulance while you wait here.",
-      "glossYue": "如果係緊急，我會叫救護車，你可以喺度等。",
+      "text": "The embassy number is on this card, and I will help you file the report.",
+      "glossYue": "大使館電話喺呢張卡上面，我會幫你報失。",
       "audio": "assets/audio/lines/t5-l5.mp3",
       "audioSlow": "assets/audio/lines/t5-l5-slow.mp3",
-      "say": "If this is an emergency, I can call an ambulance while you wait here.",
+      "say": "The embassy number is on this card, and I will help you file the report.",
       "hideGloss": true
     },
     {
@@ -97,22 +97,22 @@
       "id": "t5-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Please help me call the embassy, and I will wait here while you write the report.",
-      "glossYue": "唔該幫我打去大使館，我會喺度等你寫報告。",
+      "text": "I feel faint after the shock, so please tell me if this is an emergency.",
+      "glossYue": "我受驚之後覺得暈，唔該話我知係咪緊急。",
       "audio": "assets/audio/lines/t5-l7.mp3",
       "audioSlow": "assets/audio/lines/t5-l7-slow.mp3",
-      "say": "Please help me call the embassy, and I will wait here while you write the report.",
+      "say": "I feel faint after the shock, so please tell me if this is an emergency.",
       "hideGloss": true
     },
     {
       "id": "t5-l8",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "I understand, and we will file the report here before we search the lobby.",
-      "glossYue": "我明白，我哋會喺度先報失，再搵大堂。",
+      "text": "If you feel faint, I can call an ambulance while we file the report.",
+      "glossYue": "如果你覺得暈，我可以叫救護車，同時我哋報失。",
       "audio": "assets/audio/lines/t5-l8.mp3",
       "audioSlow": "assets/audio/lines/t5-l8-slow.mp3",
-      "say": "I understand, and we will file the report here before we search the lobby.",
+      "say": "If you feel faint, I can call an ambulance while we file the report.",
       "hideGloss": true
     }
   ],
@@ -253,10 +253,10 @@
         "line": "I think the wallet was stolen, so I also need the embassy number.",
         "audio": "assets/audio/lines/t5-l4.mp3",
         "audioSlow": "assets/audio/lines/t5-l4-slow.mp3",
-        "expect": "If this is an emergency, I can call an ambulance while you wait here.",
+        "expect": "The embassy number is on this card, and I will help you file the report.",
         "keywords": [
-          "emergency",
-          "ambulance"
+          "embassy",
+          "report"
         ],
         "modelAudio": "assets/audio/lines/t5-l5.mp3",
         "modelSlow": "assets/audio/lines/t5-l5-slow.mp3"
@@ -264,13 +264,13 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Please help me call the embassy, and I will wait here while you write the report.",
+        "line": "I feel faint after the shock, so please tell me if this is an emergency.",
         "audio": "assets/audio/lines/t5-l7.mp3",
         "audioSlow": "assets/audio/lines/t5-l7-slow.mp3",
-        "expect": "I understand, and we will file the report here before we search the lobby.",
+        "expect": "If you feel faint, I can call an ambulance while we file the report.",
         "keywords": [
-          "report",
-          "lobby"
+          "ambulance",
+          "report"
         ],
         "modelAudio": "assets/audio/lines/t5-l8.mp3",
         "modelSlow": "assets/audio/lines/t5-l8-slow.mp3"
@@ -354,5 +354,5 @@
       "report-noun"
     ]
   },
-  "next": "J9"
+  "next": "R5"
 }
