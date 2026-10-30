@@ -284,7 +284,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard for the hired car.",
+      "prompt": "聽一次，揀你聽到嘅字：租嚟嗰架車",
       "lemma": "taxi-noun",
       "choices": [
         "taxi",
@@ -295,7 +295,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard for a known place.",
+      "prompt": "聽一次，揀你聽到嘅字：一個認得嘅地方",
       "lemma": "landmark-noun",
       "choices": [
         "landmark",
@@ -306,7 +306,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"meter\", what does that word mean in the taxi?",
+      "prompt": "客人講「The meter is on, and traffic is slow along this street today.」，係咩意思？",
       "choices": [
         "咪錶",
         "地標",
@@ -317,7 +317,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"roughly ten minutes\", what does roughly mean here?",
+      "prompt": "客人講「How long will this take, roughly, if we go straight and turn left?」，係咩意思？",
       "choices": [
         "大概",
         "一定",
@@ -327,7 +327,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which of these taxi words begins with the /l/ sound: landmark, meter, or traffic?",
+      "prompt": "邊個字開頭有 /l/：landmark、meter、定 traffic？",
       "choices": [
         "landmark",
         "meter",

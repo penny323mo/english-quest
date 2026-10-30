@@ -285,7 +285,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
+      "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "floor-noun",
       "choices": [
         "floor",
@@ -296,7 +296,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
+      "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "wifi-noun",
       "choices": [
         "wifi",
@@ -307,7 +307,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"elevator\", what does that word or phrase mean here?",
+      "prompt": "客人講「The elevator is on the left, and it goes straight to your floor.」，係咩意思？",
       "choices": [
         "升降機",
         "樓層",
@@ -317,7 +317,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"twin\", what does that word or phrase mean here?",
+      "prompt": "客人講「Your room is a double with a view, and the window faces the harbor.」，係咩意思？",
       "choices": [
         "雙床",
         "雙人床",
@@ -327,7 +327,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Choose the best answer to this lesson question: 邊個有 /l/？",
+      "prompt": "邊個有 /l/？",
       "choices": [
         "floor",
         "view",

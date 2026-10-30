@@ -291,7 +291,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
+      "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "shellfish-noun",
       "choices": [
         "shellfish",
@@ -302,7 +302,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
+      "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "allergic-adj",
       "choices": [
         "allergic",
@@ -313,7 +313,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"gluten\", what does that word or phrase mean here?",
+      "prompt": "客人講「We will check the ingredients, and I will tell you what is in the dish.」，係咩意思？",
       "choices": [
         "麩質",
         "貝類",
@@ -323,7 +323,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"on the side\", what does that word or phrase mean here?",
+      "prompt": "客人講「Could I have the sauce on the side, and not on the chicken?」，係咩意思？",
       "choices": [
         "另上",
         "唔要",
@@ -333,7 +333,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Choose the best answer to this lesson question: 邊個有 /l/？",
+      "prompt": "邊個有 /l/？",
       "choices": [
         "shellfish",
         "spicy",

@@ -294,7 +294,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
+      "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "sale-noun",
       "choices": [
         "sale",
@@ -305,7 +305,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
+      "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "discount-noun",
       "choices": [
         "discount",
@@ -316,7 +316,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"discount\", what does that word or phrase mean here?",
+      "prompt": "客人講「Is there a discount if I take the ring and the chain today?」，係咩意思？",
       "choices": [
         "折扣",
         "碼",
@@ -326,7 +326,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"budget\", what does that word or phrase mean here?",
+      "prompt": "客人講「That is within my budget, so I can take this one home today.」，係咩意思？",
       "choices": [
         "預算",
         "鑲托",
@@ -336,7 +336,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Choose the best answer to this lesson question: 邊個尾音係 /l/？",
+      "prompt": "邊個尾音係 /l/？",
       "choices": [
         "sale",
         "tax",

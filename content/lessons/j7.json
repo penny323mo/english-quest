@@ -307,7 +307,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
+      "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "receipt-noun",
       "choices": [
         "receipt",
@@ -318,7 +318,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
+      "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "contactless-adj",
       "choices": [
         "contactless",
@@ -329,7 +329,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"tax-free\", what does that word or phrase mean here?",
+      "prompt": "客人講「This purchase is tax-free for you, which means you can claim the tax later.」，係咩意思？",
       "choices": [
         "免稅",
         "收據",
@@ -339,7 +339,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"wrap\", what does that word or phrase mean here?",
+      "prompt": "客人講「I can wrap the gift, and I will add a card if you want one.」，係咩意思？",
       "choices": [
         "包裝",
         "簽名",
@@ -349,7 +349,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Choose the best answer to this lesson question: 邊個有 /l/？",
+      "prompt": "邊個有 /l/？",
       "choices": [
         "contactless",
         "cash",

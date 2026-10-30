@@ -244,7 +244,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
+      "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "liquid-noun",
       "choices": [
         "liquid",
@@ -255,7 +255,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
+      "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "lift-noun",
       "choices": [
         "lift",
@@ -266,7 +266,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"tray\", what does that word or phrase mean here?",
+      "prompt": "客人講「Please put your liquids in the tray, and take the laptop out.」，係咩意思？",
       "choices": [
         "膠盤",
         "餐牌",
@@ -276,7 +276,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"straight ahead\", what does that word or phrase mean here?",
+      "prompt": "客人講「Straight ahead. Your gate is on the left after the shops.」，係咩意思？",
       "choices": [
         "直行就得",
         "請跟我嚟",
@@ -286,7 +286,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Choose the best answer to this lesson question: 邊個開頭係 /l/？",
+      "prompt": "邊個開頭係 /l/？",
       "choices": [
         "liquid",
         "straight",

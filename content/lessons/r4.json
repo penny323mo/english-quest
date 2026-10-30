@@ -285,7 +285,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard for the cloth beside the plate.",
+      "prompt": "聽一次，揀你聽到嘅字：碟旁邊嗰塊布",
       "lemma": "napkin-noun",
       "choices": [
         "napkin",
@@ -296,7 +296,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard when the guest likes the fish.",
+      "prompt": "聽一次，揀你聽到嘅字：客人覺得魚好食",
       "lemma": "delicious-adj",
       "choices": [
         "delicious",
@@ -307,7 +307,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest asks for still water, what does the word still mean with that drink?",
+      "prompt": "客人講「Could we get some still water, and one more clean napkin for this fork?」，係咩意思？",
       "choices": [
         "冇氣",
         "有氣",
@@ -318,7 +318,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest asks for a refill, what does that word mean at the table?",
+      "prompt": "客人講「Are you enjoying the meal so far, and could we get you a cold refill now?」，係咩意思？",
       "choices": [
         "再添一杯",
         "而家埋單",
@@ -328,7 +328,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which of these meal words contains the /l/ sound: delicious, napkin, or fork?",
+      "prompt": "邊個字有 /l/：delicious、napkin、定 fork？",
       "choices": [
         "delicious",
         "napkin",

@@ -279,7 +279,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard for the cloth you dry your hands with.",
+      "prompt": "聽一次，揀你聽到嘅字：抹手嗰塊布",
       "lemma": "towel-noun",
       "choices": [
         "towel",
@@ -290,7 +290,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard for the warm cover on the bed.",
+      "prompt": "聽一次，揀你聽到嘅字：床上嗰張暖被",
       "lemma": "blanket-noun",
       "choices": [
         "blanket",
@@ -301,7 +301,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When Tom says the air conditioning is very noisy, what does noisy mean in this room tonight?",
+      "prompt": "客人講「the air conditioning is very noisy」，係咩意思？",
       "choices": [
         "嘈",
         "靜",
@@ -311,7 +311,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When Kai says she is sorry for the inconvenience tonight, what does inconvenience mean for this stay?",
+      "prompt": "客人講「she is sorry for the inconvenience tonight」，係咩意思？",
       "choices": [
         "不便",
         "刻字",
@@ -321,7 +321,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which of these night-time hotel words contains the /l/ sound near the start: blanket, noisy, or quiet?",
+      "prompt": "邊個字有 /l/：blanket、noisy、定 quiet？",
       "choices": [
         "blanket",
         "noisy",
@@ -353,5 +353,5 @@
       "engineer-noun"
     ]
   },
-  "next": null
+  "next": "W2"
 }

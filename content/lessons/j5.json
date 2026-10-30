@@ -268,7 +268,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
+      "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "loose-adj",
       "choices": [
         "loose",
@@ -279,7 +279,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
+      "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "finger-noun",
       "choices": [
         "finger",
@@ -290,7 +290,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"size\", what does that word or phrase mean here?",
+      "prompt": "客人講「Can you measure my finger, and tell me the size?」，係咩意思？",
       "choices": [
         "碼",
         "稅",
@@ -300,7 +300,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"tight\", what does that word or phrase mean here?",
+      "prompt": "客人講「This size is a little tight, and it pinches when I close my hand.」，係咩意思？",
       "choices": [
         "緊",
         "鬆",
@@ -310,7 +310,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Choose the best answer to this lesson question: 邊個開頭係 /l/？",
+      "prompt": "邊個開頭係 /l/？",
       "choices": [
         "loose",
         "tight",

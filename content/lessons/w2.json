@@ -1,0 +1,358 @@
+{
+  "id": "W2",
+  "unit": "W",
+  "titleYue": "電郵口語",
+  "titleEn": "Email phrases spoken",
+  "canDoYue": "你識用口講跟進同附件，仲識確認期限。",
+  "canDoEn": "Say a follow-up, mention an attachment, and confirm a deadline.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/w2.webp",
+  "cast": [
+    "kai",
+    "tom"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "following-up-phrase",
+    "attached-adj",
+    "clarify-verb",
+    "deadline-noun",
+    "grateful-adj",
+    "propose-verb",
+    "confirm-verb",
+    "best-regards-phrase",
+    "available-adj",
+    "regarding-prep"
+  ],
+  "dialogue": [
+    {
+      "id": "w2-l1",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Good morning Tom, I am following up today on the email I have sent regarding the deadline.",
+      "glossYue": "早晨 Tom，我今日跟進我已經寄出、關於期限嗰封電郵。",
+      "audio": "assets/audio/lines/w2-l1.mp3",
+      "audioSlow": "assets/audio/lines/w2-l1-slow.mp3",
+      "say": "Good morning Tom, I am following up today on the email I have sent regarding the deadline.",
+      "hideGloss": false
+    },
+    {
+      "id": "w2-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Thank you for following up, and I am grateful that you have attached the notes as discussed.",
+      "glossYue": "多謝你跟進，我感激你按討論咁附上筆記。",
+      "audio": "assets/audio/lines/w2-l2.mp3",
+      "audioSlow": "assets/audio/lines/w2-l2-slow.mp3",
+      "say": "Thank you for following up, and I am grateful that you have attached the notes as discussed.",
+      "hideGloss": true
+    },
+    {
+      "id": "w2-l3",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "I have attached the file as discussed, and I would like to clarify the deadline with you.",
+      "glossYue": "我已經按討論附上份文件，想同你講清楚個期限。",
+      "audio": "assets/audio/lines/w2-l3.mp3",
+      "audioSlow": "assets/audio/lines/w2-l3-slow.mp3",
+      "say": "I have attached the file as discussed, and I would like to clarify the deadline with you.",
+      "hideGloss": true
+    },
+    {
+      "id": "w2-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could you please clarify the deadline, and would it be possible to confirm a new time today?",
+      "glossYue": "可唔可以講清楚個期限，同埋今日確認一個新時間？",
+      "audio": "assets/audio/lines/w2-l4.mp3",
+      "audioSlow": "assets/audio/lines/w2-l4-slow.mp3",
+      "say": "Could you please clarify the deadline, and would it be possible to confirm a new time today?",
+      "hideGloss": true
+    },
+    {
+      "id": "w2-l5",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "I propose Friday for the new deadline, and I can confirm the time once you are available.",
+      "glossYue": "我提議星期五做新期限，你有空我就確認時間。",
+      "audio": "assets/audio/lines/w2-l5.mp3",
+      "audioSlow": "assets/audio/lines/w2-l5-slow.mp3",
+      "say": "I propose Friday for the new deadline, and I can confirm the time once you are available.",
+      "hideGloss": false
+    },
+    {
+      "id": "w2-l6",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I am available on Friday, and I have already looked at the file you attached this morning.",
+      "glossYue": "我星期五有空，我已經睇過你今朝附上嘅文件。",
+      "audio": "assets/audio/lines/w2-l6.mp3",
+      "audioSlow": "assets/audio/lines/w2-l6-slow.mp3",
+      "say": "I am available on Friday, and I have already looked at the file you attached this morning.",
+      "hideGloss": true
+    },
+    {
+      "id": "w2-l7",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "I am grateful for the quick reply, and I will confirm the Friday deadline in writing.",
+      "glossYue": "我感激你咁快覆，我會書面確認星期五個期限。",
+      "audio": "assets/audio/lines/w2-l7.mp3",
+      "audioSlow": "assets/audio/lines/w2-l7-slow.mp3",
+      "say": "I am grateful for the quick reply, and I will confirm the Friday deadline in writing.",
+      "hideGloss": true
+    },
+    {
+      "id": "w2-l8",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Best regards for now, and I look forward to the note once you confirm the deadline.",
+      "glossYue": "暫時祝好，你確認期限之後我期待你份筆記。",
+      "audio": "assets/audio/lines/w2-l8.mp3",
+      "audioSlow": "assets/audio/lines/w2-l8-slow.mp3",
+      "say": "Best regards for now, and I look forward to the note once you confirm the deadline.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "I am following up today. 係講？",
+      "choices": [
+        "我今日跟進",
+        "我取消個會",
+        "我叫餐"
+      ],
+      "answer": 0,
+      "explain": "following up 係跟進。"
+    },
+    {
+      "prompt": "Would it be possible to confirm? 即係問緊咩？",
+      "choices": [
+        "問可唔可以確認",
+        "話已經取消",
+        "問幾多錢"
+      ],
+      "answer": 0,
+      "explain": "Would it be possible 係禮貌咁問。"
+    },
+    {
+      "prompt": "I propose Friday. 係講？",
+      "choices": [
+        "我提議星期五",
+        "我拒絕星期五",
+        "我要埋單"
+      ],
+      "answer": 0,
+      "explain": "propose 係提議。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I am ___ up today on the email I have sent regarding the deadline.",
+      "example": "Good morning Tom, I am following up today on the email I have sent regarding the deadline.",
+      "glossYue": "我今日⋯⋯跟進。",
+      "answer": "following",
+      "choices": [
+        "following",
+        "refund",
+        "taxi"
+      ]
+    },
+    {
+      "pattern": "I have ___ the file as discussed, and I would like to clarify the deadline with you.",
+      "example": "I have attached the file as discussed, and I would like to clarify the deadline with you.",
+      "glossYue": "我已經⋯⋯份文件。",
+      "answer": "attached",
+      "choices": [
+        "attached",
+        "engraving",
+        "wallet"
+      ]
+    },
+    {
+      "pattern": "I ___ Friday for the new deadline, and I can confirm the time once you are available.",
+      "example": "I propose Friday for the new deadline, and I can confirm the time once you are available.",
+      "glossYue": "我⋯⋯星期五。",
+      "answer": "propose",
+      "choices": [
+        "propose",
+        "necklace",
+        "meter"
+      ]
+    },
+    {
+      "pattern": "___ regards for now, and I look forward to the note once you confirm the deadline.",
+      "example": "Best regards for now, and I look forward to the note once you confirm the deadline.",
+      "glossYue": "暫時⋯⋯。",
+      "answer": "Best",
+      "choices": [
+        "Best",
+        "Still",
+        "Rough"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "w2-l5",
+    "hint": "I propose Friday for the new deadline, and I can confirm the time once you are available."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "對方等你跟進。你點先講？",
+      "choices": [
+        "I have attached the file as discussed, and I would like to clarify the deadline with you.",
+        "You might also like this matching pair.",
+        "The necklace is eighteen dollars."
+      ],
+      "answer": 0,
+      "explain": "先講已附上文件，再講清楚期限。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "I",
+        "propose",
+        "Friday",
+        "for",
+        "the",
+        "deadline"
+      ],
+      "answer": [
+        "I",
+        "propose",
+        "Friday",
+        "for",
+        "the",
+        "deadline"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "kai",
+    "intro": "Tom 想你跟進電郵。先講 following up，再確認 deadline。",
+    "turns": [
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Thank you for following up, and I am grateful that you have attached the notes as discussed.",
+        "audio": "assets/audio/lines/w2-l2.mp3",
+        "audioSlow": "assets/audio/lines/w2-l2-slow.mp3",
+        "expect": "I have attached the file as discussed, and I would like to clarify the deadline with you.",
+        "keywords": [
+          "attached",
+          "clarify"
+        ],
+        "modelAudio": "assets/audio/lines/w2-l3.mp3",
+        "modelSlow": "assets/audio/lines/w2-l3-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "Could you please clarify the deadline, and would it be possible to confirm a new time today?",
+        "audio": "assets/audio/lines/w2-l4.mp3",
+        "audioSlow": "assets/audio/lines/w2-l4-slow.mp3",
+        "expect": "I propose Friday for the new deadline, and I can confirm the time once you are available.",
+        "keywords": [
+          "propose",
+          "confirm"
+        ],
+        "modelAudio": "assets/audio/lines/w2-l5.mp3",
+        "modelSlow": "assets/audio/lines/w2-l5-slow.mp3"
+      },
+      {
+        "partner": "Tom",
+        "partnerId": "tom",
+        "line": "I am available on Friday, and I have already looked at the file you attached this morning.",
+        "audio": "assets/audio/lines/w2-l6.mp3",
+        "audioSlow": "assets/audio/lines/w2-l6-slow.mp3",
+        "expect": "I am grateful for the quick reply, and I will confirm the Friday deadline in writing.",
+        "keywords": [
+          "grateful",
+          "deadline"
+        ],
+        "modelAudio": "assets/audio/lines/w2-l7.mp3",
+        "modelSlow": "assets/audio/lines/w2-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：電郵附上嘅文件",
+      "lemma": "attached-adj",
+      "choices": [
+        "attached",
+        "propose",
+        "confirm"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：要交貨嗰日",
+      "lemma": "deadline-noun",
+      "choices": [
+        "deadline",
+        "grateful",
+        "confirm"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "客人講「Good morning Tom, I am following up today on the email I have sent regarding the deadline.」，following up 係咩意思？",
+      "choices": [
+        "跟進",
+        "取消",
+        "埋單"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "客人講「I am grateful for the quick reply, and I will confirm the Friday deadline in writing.」，grateful 係咩意思？",
+      "choices": [
+        "感激",
+        "嘈",
+        "免費"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個字有 /l/：clarify、propose、定 confirm？",
+      "choices": [
+        "clarify",
+        "propose",
+        "confirm"
+      ],
+      "answer": 0,
+      "explain": "clarify 有 /l/。propose 同 confirm 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "clarify 入面嗰個音",
+    "note": "clarify 有 /l/。propose 同 confirm 冇 /l/。",
+    "pairs": [
+      {
+        "a": "clarify-verb",
+        "b": "propose-verb"
+      },
+      {
+        "a": "following-up-phrase",
+        "b": "confirm-verb"
+      }
+    ],
+    "drill": [
+      "clarify-verb",
+      "propose-verb",
+      "following-up-phrase",
+      "confirm-verb",
+      "deadline-noun"
+    ]
+  },
+  "next": "W3"
+}

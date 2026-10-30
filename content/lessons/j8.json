@@ -282,7 +282,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard for the written care promise on this piece.",
+      "prompt": "聽一次，揀你聽到嘅字：呢件貨嘅保養承諾",
       "lemma": "warranty-noun",
       "choices": [
         "warranty",
@@ -293,7 +293,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard for the shop rules about a repair.",
+      "prompt": "聽一次，揀你聽到嘅字：修理嘅舖頭規矩",
       "lemma": "policy-noun",
       "choices": [
         "policy",
@@ -304,7 +304,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When Mei says the written policy allows one repair, what does policy mean here?",
+      "prompt": "客人講「the written policy allows one repair」，係咩意思？",
       "choices": [
         "政策",
         "刮痕",
@@ -314,7 +314,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When Tom says a small scratch showed up, what does scratch mean here?",
+      "prompt": "客人講「I have kept the receipt, but a small scratch showed up within the first week.」，係咩意思？",
       "choices": [
         "刮痕",
         "退款",
@@ -324,7 +324,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which of these care words contains the /l/ sound: polish, warranty, or guarantee?",
+      "prompt": "邊個字有 /l/：polish、warranty、定 guarantee？",
       "choices": [
         "polish",
         "warranty",

@@ -1,5 +1,12 @@
 # Changelog — English Quest
 
+## Round 27 fixes
+- W2 電郵口語 (B1), W3 開會 (B1), and D1 睇醫生 (A2/B1) are full 12-beat lessons. D1 sits after W1 and before J8 so the band does not drop. W2 and W3 sit after T6. Unlock order is F1 F2 F3 F4 J1 R1 J2 T1 J3 T2 R2 J4 J5 T3 R3 T4 R4 J6 J7 T5 R5 W1 D1 J8 J9 J10 T6 W2 W3. Six soon teasers remain (R6, J12, R7, T8, J11, T9). The end copy says 呢輪二十九課. Profile goals stay foundation, jewellery, travel, and restaurant. The work deck gains the email and meeting cards. A new 日常生活 deck holds the clinic cards.
+- Dialogue means on this stretch: W1 14.63, D1 15.25, J8 15.38, T6 16.50, W2 16.75, W3 17.00. D1 teaches “I have had… since…” and “you can” / “please rest”. It does not teach should, which arrives in J8. W3 teaches “I see your point, but…”, “Could you expand on…”, and “Let's…”.
+- Quiz and listening instructions are short Cantonese. The English target sentence stays in the prompt, and A2 plus A2/B1 quiz means stay above the A1 ceiling of 1.4. R5’s bill stem is now 「Could we have the bill? 即係問緊咩？」. polish is 擦亮劑, with “Please use a soft cloth to polish the bracelet.” sheet’s Cantonese example is 一張紙。 take’s header and gloss are 要, and the example stays “I'll take this one.” / 我要呢件。
+- R5’s hero is a card-terminal payment scene, separate from R4’s meal. W2, W3, and D1 have new 900×1200 scenes. 小燈 stays the brass lantern. T4 and T5 keep the thick-ink heroes from round 26. F1–F4 art is unchanged.
+- Tests are 26/26. The service worker precache is 1792 entries (33576.12 KiB) (`assets/index-1rPW2HVk.js`, `assets/shell-Du8e_FJp.js`). At 390px the path, F1, R5, D1, W2, and W3 stay inside the phone, including R5’s bill stem, D1 and W2 through 去溫習, and W3’s end copy. The primary button is `rgb(15, 122, 110)`. Lighthouse mobile performance is 0.99.
+
 ## Round 26 fixes
 - J8 售後同保養 (B1), J10 加購同禮盒 (B1), and T6 酒店問題 (B1) are full 12-beat lessons. J8 sits before J9. Unlock order is F1 F2 F3 F4 J1 R1 J2 T1 J3 T2 R2 J4 J5 T3 R3 T4 R4 J6 J7 T5 R5 W1 J8 J9 J10 T6. Seven soon teasers remain (R6, J12, R7, T8, W2, J11, T9). The end copy says 呢輪二十六課. Profile goals stay foundation, jewellery, travel, and restaurant.
 - Dialogue means keep rising on this stretch: W1 14.88, J8 15.38, J9 15.63, J10 16.00, T6 16.50. New quiz and cloze means rise with them (J8 quiz 15.4 and chunk 12.8, J10 quiz 17.2 and chunk 14.0, T6 quiz 17.8 and chunk 14.5).

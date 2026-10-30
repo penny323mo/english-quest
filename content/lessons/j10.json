@@ -281,7 +281,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard for the carved name on a gift.",
+      "prompt": "聽一次，揀你聽到嘅字：禮物件上刻嘅名",
       "lemma": "engraving-noun",
       "choices": [
         "engraving",
@@ -292,7 +292,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard for something many guests choose.",
+      "prompt": "聽一次，揀你聽到嘅字：好多客人會揀嘅",
       "lemma": "popular-adj",
       "choices": [
         "popular",
@@ -303,7 +303,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When Mei says this matching pair goes well with the necklace, what does matching mean here in the shop?",
+      "prompt": "客人講「this matching pair goes well with the necklace」，係咩意思？",
       "choices": [
         "襯到",
         "退款",
@@ -313,7 +313,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When Mei says the engraving is fully optional tonight, what does optional mean for this gift?",
+      "prompt": "客人講「the engraving is fully optional tonight」，係咩意思？",
       "choices": [
         "可以唔要",
         "一定要",
@@ -323,7 +323,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which of these add-on words contains the /l/ sound in the middle: popular, matching, or engraving?",
+      "prompt": "邊個字有 /l/：popular、matching、定 engraving？",
       "choices": [
         "popular",
         "matching",

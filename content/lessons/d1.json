@@ -1,0 +1,356 @@
+{
+  "id": "D1",
+  "unit": "D",
+  "titleYue": "睇醫生",
+  "titleEn": "At the doctor",
+  "canDoYue": "你識講發燒同咳嗽，仲識講之後會去藥房。",
+  "canDoEn": "Describe a fever and a cough, then say you will go to the pharmacy.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/d1.webp",
+  "cast": [
+    "kai",
+    "tom"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "symptom-noun",
+    "fever-noun",
+    "cough-noun",
+    "sore-throat-noun",
+    "headache-noun",
+    "prescription-noun",
+    "pharmacy-noun",
+    "follow-up-noun",
+    "appointment-noun",
+    "allergy-noun"
+  ],
+  "dialogue": [
+    {
+      "id": "d1-l1",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Good morning. You have an appointment, and I can help you at the clinic today.",
+      "glossYue": "早晨。你今日有預約，我喺診所可以幫你。",
+      "audio": "assets/audio/lines/d1-l1.mp3",
+      "audioSlow": "assets/audio/lines/d1-l1-slow.mp3",
+      "say": "Good morning. You have an appointment, and I can help you at the clinic today.",
+      "hideGloss": false
+    },
+    {
+      "id": "d1-l2",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I have had a fever and cough since Monday, and my sore throat feels worse.",
+      "glossYue": "我由星期一起發燒同咳嗽，條喉嚨仲差咗。",
+      "audio": "assets/audio/lines/d1-l2.mp3",
+      "audioSlow": "assets/audio/lines/d1-l2-slow.mp3",
+      "say": "I have had a fever and cough since Monday, and my sore throat feels worse.",
+      "hideGloss": true
+    },
+    {
+      "id": "d1-l3",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Do you have a headache too, and do you have an allergy to this medicine?",
+      "glossYue": "你有冇頭痛？你對呢隻藥有冇過敏？",
+      "audio": "assets/audio/lines/d1-l3.mp3",
+      "audioSlow": "assets/audio/lines/d1-l3-slow.mp3",
+      "say": "Do you have a headache too, and do you have an allergy to this medicine?",
+      "hideGloss": true
+    },
+    {
+      "id": "d1-l4",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I have had a headache since Monday, and I have a food allergy as well.",
+      "glossYue": "我由星期一起頭痛，我亦都有食物過敏。",
+      "audio": "assets/audio/lines/d1-l4.mp3",
+      "audioSlow": "assets/audio/lines/d1-l4-slow.mp3",
+      "say": "I have had a headache since Monday, and I have a food allergy as well.",
+      "hideGloss": true
+    },
+    {
+      "id": "d1-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I have had a cough since Monday, and I can rest after the pharmacy visit.",
+      "glossYue": "我由星期一起咳，去完藥房我可以休息。",
+      "audio": "assets/audio/lines/d1-l5.mp3",
+      "audioSlow": "assets/audio/lines/d1-l5-slow.mp3",
+      "say": "I have had a cough since Monday, and I can rest after the pharmacy visit.",
+      "hideGloss": false
+    },
+    {
+      "id": "d1-l6",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "You can rest at home, and the pharmacy can prepare this prescription for you today.",
+      "glossYue": "你可以喺屋企休息，藥房今日可以幫你配呢張藥單。",
+      "audio": "assets/audio/lines/d1-l6.mp3",
+      "audioSlow": "assets/audio/lines/d1-l6-slow.mp3",
+      "say": "You can rest at home, and the pharmacy can prepare this prescription for you today.",
+      "hideGloss": true
+    },
+    {
+      "id": "d1-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I will take the prescription to the pharmacy, and I need a follow-up after rest.",
+      "glossYue": "我會帶藥單去藥房，休息之後要覆診。",
+      "audio": "assets/audio/lines/d1-l7.mp3",
+      "audioSlow": "assets/audio/lines/d1-l7-slow.mp3",
+      "say": "I will take the prescription to the pharmacy, and I need a follow-up after rest.",
+      "hideGloss": true
+    },
+    {
+      "id": "d1-l8",
+      "speaker": "kai",
+      "speakerLabel": "Kai",
+      "text": "Please rest today, and the clinic can see you for a follow-up after the pharmacy.",
+      "glossYue": "請你今日休息，去完藥房診所可以同你覆診。",
+      "audio": "assets/audio/lines/d1-l8.mp3",
+      "audioSlow": "assets/audio/lines/d1-l8-slow.mp3",
+      "say": "Please rest today, and the clinic can see you for a follow-up after the pharmacy.",
+      "hideGloss": false
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "I have had a fever since Monday. 係講？",
+      "choices": [
+        "我由星期一起發燒",
+        "我已經好返",
+        "我要埋單"
+      ],
+      "answer": 0,
+      "explain": "I have had 係由某個時間開始一直有。"
+    },
+    {
+      "prompt": "You can rest at home. 即係問緊咩？",
+      "choices": [
+        "話你可以喺屋企休息",
+        "話你一定要入院",
+        "問幾多錢"
+      ],
+      "answer": 0,
+      "explain": "You can 係一個建議，唔係命令。"
+    },
+    {
+      "prompt": "I need a follow-up. 係講？",
+      "choices": [
+        "我要覆診",
+        "我要取消",
+        "我叫的士"
+      ],
+      "answer": 0,
+      "explain": "follow-up 係再嚟一次。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I have had a fever and ___ since Monday, and my sore throat feels worse.",
+      "example": "I have had a fever and cough since Monday, and my sore throat feels worse.",
+      "glossYue": "我由星期一起發燒同⋯⋯。",
+      "answer": "cough",
+      "choices": [
+        "cough",
+        "taxi",
+        "refund"
+      ]
+    },
+    {
+      "pattern": "I have had a ___ since Monday, and I have a food allergy as well.",
+      "example": "I have had a headache since Monday, and I have a food allergy as well.",
+      "glossYue": "我由星期一起⋯⋯。",
+      "answer": "headache",
+      "choices": [
+        "headache",
+        "wallet",
+        "meter"
+      ]
+    },
+    {
+      "pattern": "You can rest at home, and the ___ can prepare this prescription for you today.",
+      "example": "You can rest at home, and the pharmacy can prepare this prescription for you today.",
+      "glossYue": "⋯⋯今日可以配藥。",
+      "answer": "pharmacy",
+      "choices": [
+        "pharmacy",
+        "necklace",
+        "towel"
+      ]
+    },
+    {
+      "pattern": "Please rest today, and the clinic can see you for a ___ after the pharmacy.",
+      "example": "Please rest today, and the clinic can see you for a follow-up after the pharmacy.",
+      "glossYue": "去完藥房可以⋯⋯。",
+      "answer": "follow-up",
+      "choices": [
+        "follow-up",
+        "engraving",
+        "still"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "d1-l5",
+    "hint": "I have had a cough since Monday, and I can rest after the pharmacy visit."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "診所問你點唔舒服。你點先講？",
+      "choices": [
+        "I have had a fever and cough since Monday, and my sore throat feels worse.",
+        "You might also like this matching pair.",
+        "The necklace is eighteen dollars."
+      ],
+      "answer": 0,
+      "explain": "講由幾時開始發燒同咳嗽。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "I",
+        "have",
+        "had",
+        "a",
+        "fever"
+      ],
+      "answer": [
+        "I",
+        "have",
+        "had",
+        "a",
+        "fever"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你係病人。講症狀，再講會去藥房。可以講：I have had a fever。",
+    "turns": [
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "Good morning. You have an appointment, and I can help you at the clinic today.",
+        "audio": "assets/audio/lines/d1-l1.mp3",
+        "audioSlow": "assets/audio/lines/d1-l1-slow.mp3",
+        "expect": "I have had a fever and cough since Monday, and my sore throat feels worse.",
+        "keywords": [
+          "fever",
+          "cough"
+        ],
+        "modelAudio": "assets/audio/lines/d1-l2.mp3",
+        "modelSlow": "assets/audio/lines/d1-l2-slow.mp3"
+      },
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "Do you have a headache too, and do you have an allergy to this medicine?",
+        "audio": "assets/audio/lines/d1-l3.mp3",
+        "audioSlow": "assets/audio/lines/d1-l3-slow.mp3",
+        "expect": "I have had a headache since Monday, and I have a food allergy as well.",
+        "keywords": [
+          "headache",
+          "allergy"
+        ],
+        "modelAudio": "assets/audio/lines/d1-l4.mp3",
+        "modelSlow": "assets/audio/lines/d1-l4-slow.mp3"
+      },
+      {
+        "partner": "Kai",
+        "partnerId": "kai",
+        "line": "You can rest at home, and the pharmacy can prepare this prescription for you today.",
+        "audio": "assets/audio/lines/d1-l6.mp3",
+        "audioSlow": "assets/audio/lines/d1-l6-slow.mp3",
+        "expect": "I will take the prescription to the pharmacy, and I need a follow-up after rest.",
+        "keywords": [
+          "pharmacy",
+          "follow-up"
+        ],
+        "modelAudio": "assets/audio/lines/d1-l7.mp3",
+        "modelSlow": "assets/audio/lines/d1-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：身體發熱",
+      "lemma": "fever-noun",
+      "choices": [
+        "fever",
+        "cough",
+        "pharmacy"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你聽到嘅字：喉嚨嗰陣咳",
+      "lemma": "cough-noun",
+      "choices": [
+        "cough",
+        "fever",
+        "headache"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "客人講「I have had a fever and cough since Monday, and my sore throat feels worse.」，symptom 係咩意思？",
+      "choices": [
+        "症狀",
+        "藥房",
+        "期限"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "客人講「You can rest at home, and the pharmacy can prepare this prescription for you today.」，prescription 係咩意思？",
+      "choices": [
+        "藥單",
+        "議程",
+        "毛巾"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個字有 /l/：allergy、fever、定 cough？",
+      "choices": [
+        "allergy",
+        "fever",
+        "cough"
+      ],
+      "answer": 0,
+      "explain": "allergy 有 /l/。fever 同 cough 冇。"
+    }
+  ],
+  "sound": {
+    "ipa": "/l/",
+    "title": "allergy 入面嗰個音",
+    "note": "allergy 有 /l/。fever 同 cough 冇 /l/。",
+    "pairs": [
+      {
+        "a": "allergy-noun",
+        "b": "fever-noun"
+      },
+      {
+        "a": "follow-up-noun",
+        "b": "cough-noun"
+      }
+    ],
+    "drill": [
+      "allergy-noun",
+      "fever-noun",
+      "follow-up-noun",
+      "cough-noun",
+      "pharmacy-noun"
+    ]
+  },
+  "next": "J8"
+}

@@ -30,7 +30,7 @@
     "convenient-adj",
     "reach-verb"
   ],
-  "next": "J8",
+  "next": "D1",
   "dialogue": [
     {
       "id": "w1-l1",
@@ -285,7 +285,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard for the phone connection you wait on.",
+      "prompt": "聽一次，揀你聽到嘅字：你等緊嗰條線",
       "lemma": "line-noun",
       "choices": [
         "line",
@@ -296,7 +296,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard for the note you leave when someone is out.",
+      "prompt": "聽一次，揀你聽到嘅字：人唔喺度時留低嘅口訊",
       "lemma": "message-noun",
       "choices": [
         "message",
@@ -307,7 +307,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a caller says please hold, what should the other person do on the phone?",
+      "prompt": "客人講「She is not available right now, so please hold and I will try the other line.」，係咩意思？",
       "choices": [
         "等線",
         "埋單",
@@ -318,7 +318,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When Kai says she will transfer you, what happens to this phone call?",
+      "prompt": "客人講「I will transfer you if the line is free, or I can note the callback number.」，係咩意思？",
       "choices": [
         "轉駁去另一個人",
         "而家收線",
@@ -328,7 +328,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which of these phone words begins with the /l/ sound: line, hold, or message?",
+      "prompt": "邊個字開頭有 /l/：line、hold、定 message？",
       "choices": [
         "line",
         "hold",

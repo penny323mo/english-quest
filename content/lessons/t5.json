@@ -280,7 +280,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard for the case that holds money.",
+      "prompt": "聽一次，揀你聽到嘅字：裝錢嗰個袋",
       "lemma": "wallet-noun",
       "choices": [
         "wallet",
@@ -291,7 +291,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard for the people who take a report.",
+      "prompt": "聽一次，揀你聽到嘅字：幫你寫報告嗰啲人",
       "lemma": "police-noun",
       "choices": [
         "police",
@@ -302,7 +302,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"I have lost my wallet\", what does lost mean here?",
+      "prompt": "客人講「I have lost my wallet, and I last saw it at the desk this morning.」，係咩意思？",
       "choices": [
         "唔見咗",
         "塞車",
@@ -312,7 +312,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"this is an emergency\", what does emergency mean here?",
+      "prompt": "客人講「I feel faint after the shock, so please tell me if this is an emergency.」，係咩意思？",
       "choices": [
         "緊急情況",
         "街角",
@@ -322,7 +322,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which of these help words contains the /l/ sound: wallet, embassy, or report?",
+      "prompt": "邊個字有 /l/：wallet、embassy、定 report？",
       "choices": [
         "wallet",
         "embassy",

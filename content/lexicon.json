@@ -6303,7 +6303,7 @@
       "arpabet": "T EY1 K",
       "audio": "assets/audio/words/take-verb.mp3",
       "audioSlow": "assets/audio/words/take-verb-slow.mp3",
-      "glossYue": "要；帶",
+      "glossYue": "要",
       "glossZh": "拿；要",
       "jyutping": "jiu3",
       "collocations": [
@@ -6728,13 +6728,13 @@
       "audio": "assets/audio/words/sheet-noun.mp3",
       "audioSlow": "assets/audio/words/sheet-noun-slow.mp3",
       "glossYue": "一張紙",
-      "glossZh": "一张纸",
+      "glossZh": "一張紙",
       "jyutping": "jat1 zoeng1 zi2",
       "collocations": [
         "a sheet of paper"
       ],
       "example": "A sheet of paper.",
-      "exampleYue": "呢度有一張紙。",
+      "exampleYue": "一張紙。",
       "say": "A sheet of paper.",
       "variants": [],
       "note": "",
@@ -18955,16 +18955,16 @@
       "arpabet": "P AA1 L IH0 SH",
       "audio": "assets/audio/words/polish-noun.mp3",
       "audioSlow": "assets/audio/words/polish-noun-slow.mp3",
-      "glossYue": "擦亮",
-      "glossZh": "擦亮",
+      "glossYue": "擦亮劑",
+      "glossZh": "擦亮劑",
       "jyutping": "caat3 loeng6",
       "collocations": [
         "a soft polish",
-        "use polish"
+        "cloth to polish"
       ],
-      "example": "Please use only a soft polish.",
-      "exampleYue": "請淨係用軟布擦亮。",
-      "say": "Please use only a soft polish.",
+      "example": "Please use a soft cloth to polish the bracelet.",
+      "exampleYue": "請用軟布同少少擦亮劑抹條手鏈。",
+      "say": "Please use a soft cloth to polish the bracelet.",
       "variants": [],
       "note": "",
       "sources": [
@@ -18975,25 +18975,25 @@
       "senseMismatch": false,
       "cmuLemma": "polish",
       "phrase": false,
-      "audioSha256": "c0d9da0945d69ab731ebd7f0aada6696276ab30cf93abadfff160a89232cd546",
+      "audioSha256": "40bca3789e680e43ae097ae434c7f966303470644fdc3c4c4719dc98fa1a62e2",
       "register": "珠寶",
-      "usageNotes": "擦亮係用軟布抹，唔係化學劑。",
-      "pitfallsYue": "擦亮係用軟布抹，唔係化學劑。",
+      "usageNotes": "擦亮劑係抹亮用嘅劑，唔係軟布本身。",
+      "pitfallsYue": "擦亮劑係抹亮用嘅劑，唔係軟布本身。",
       "related": [
         "clean-verb",
         "avoid-verb"
       ],
       "examples": [
         {
-          "en": "Please use only a soft polish.",
-          "yue": "請淨係用軟布擦亮。",
+          "en": "Please use a soft cloth to polish the bracelet.",
+          "yue": "請用軟布同少少擦亮劑抹條手鏈。",
           "audio": "assets/audio/words/polish-noun.mp3",
           "audioSlow": "assets/audio/words/polish-noun-slow.mp3",
-          "say": "Please use only a soft polish."
+          "say": "Please use a soft cloth to polish the bracelet."
         },
         {
           "en": "A soft polish keeps the gold bright.",
-          "yue": "軟布擦亮可以保持金嘅光澤。",
+          "yue": "少少擦亮劑可以保持金嘅光澤。",
           "audio": "assets/audio/words/polish-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/polish-noun-ex2-slow.mp3",
           "say": "A soft polish keeps the gold bright."
@@ -20275,6 +20275,1597 @@
           "audio": "assets/audio/words/inconvenience-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/inconvenience-noun-ex2-slow.mp3",
           "say": "Sorry for the inconvenience in this noisy room."
+        }
+      ]
+    },
+    {
+      "id": "following-up-phrase",
+      "lemma": "following up",
+      "pos": "phrase",
+      "senseId": "email-follow",
+      "ipa": "/ˈfɑ.loʊ.ɪŋ ˈʌp/",
+      "syllables": [
+        "fol",
+        "low",
+        "ing",
+        "up"
+      ],
+      "syllableIpa": [
+        "ˈfɑ",
+        "loʊ",
+        "ɪŋ",
+        "ˈʌp"
+      ],
+      "stress": 1,
+      "arpabet": "F AA1 L OW0 IH0 NG AH1 P",
+      "audio": "assets/audio/words/following-up-phrase.mp3",
+      "audioSlow": "assets/audio/words/following-up-phrase-slow.mp3",
+      "glossYue": "跟進",
+      "glossZh": "跟進",
+      "jyutping": "gan1 zeon3",
+      "collocations": [
+        "following up",
+        "follow up today"
+      ],
+      "example": "I am following up on the email today.",
+      "exampleYue": "我今日跟進呢封電郵。",
+      "say": "I am following up on the email today.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "following",
+      "phrase": true,
+      "audioSha256": "a4fccb47bfd120eae8c5ac1fb967beb1482f84d66ddc46b6a5444b7779c8c409",
+      "register": "職場",
+      "usageNotes": "following up 係再提一提已經講過嘅事。",
+      "pitfallsYue": "following up 係再提一提已經講過嘅事。",
+      "related": [
+        "deadline-noun",
+        "regarding-prep"
+      ],
+      "examples": [
+        {
+          "en": "I am following up on the email today.",
+          "yue": "我今日跟進呢封電郵。",
+          "audio": "assets/audio/words/following-up-phrase.mp3",
+          "audioSlow": "assets/audio/words/following-up-phrase-slow.mp3",
+          "say": "I am following up on the email today."
+        },
+        {
+          "en": "She is following up before the deadline.",
+          "yue": "佢喺期限之前跟進。",
+          "audio": "assets/audio/words/following-up-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/following-up-phrase-ex2-slow.mp3",
+          "say": "She is following up before the deadline."
+        }
+      ]
+    },
+    {
+      "id": "attached-adj",
+      "lemma": "attached",
+      "pos": "adj",
+      "senseId": "file-included",
+      "ipa": "/ə.ˈtætʃt/",
+      "syllables": [
+        "a",
+        "tached"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈtætʃt"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 T AE1 CH T",
+      "audio": "assets/audio/words/attached-adj.mp3",
+      "audioSlow": "assets/audio/words/attached-adj-slow.mp3",
+      "glossYue": "附上",
+      "glossZh": "附上",
+      "jyutping": "fu6 soeng5",
+      "collocations": [
+        "attached the file",
+        "file attached"
+      ],
+      "example": "I have attached the notes for you.",
+      "exampleYue": "我已經附上筆記畀你。",
+      "say": "I have attached the notes for you.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "attached",
+      "phrase": false,
+      "audioSha256": "34b3769838b31ec2525fc93e5a4c52648bd9498f39a89eec07ae6a0b695295f6",
+      "register": "職場",
+      "usageNotes": "attached 係已經夾咗喺電郵度。",
+      "pitfallsYue": "attached 係已經夾咗喺電郵度。",
+      "related": [
+        "following-up-phrase",
+        "deadline-noun"
+      ],
+      "examples": [
+        {
+          "en": "I have attached the notes for you.",
+          "yue": "我已經附上筆記畀你。",
+          "audio": "assets/audio/words/attached-adj.mp3",
+          "audioSlow": "assets/audio/words/attached-adj-slow.mp3",
+          "say": "I have attached the notes for you."
+        },
+        {
+          "en": "I have attached the file for Mei.",
+          "yue": "我已經附上份文件畀 Mei。",
+          "audio": "assets/audio/words/attached-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/attached-adj-ex2-slow.mp3",
+          "say": "I have attached the file for Mei."
+        }
+      ]
+    },
+    {
+      "id": "clarify-verb",
+      "lemma": "clarify",
+      "pos": "verb",
+      "senseId": "make-clear",
+      "ipa": "/ˈklɛ.ɹə.ˌfaɪ/",
+      "syllables": [
+        "cla",
+        "ri",
+        "fy"
+      ],
+      "syllableIpa": [
+        "ˈklɛ",
+        "ɹə",
+        "ˌfaɪ"
+      ],
+      "stress": 1,
+      "arpabet": "K L EH1 R AH0 F AY2",
+      "audio": "assets/audio/words/clarify-verb.mp3",
+      "audioSlow": "assets/audio/words/clarify-verb-slow.mp3",
+      "glossYue": "講清楚",
+      "glossZh": "講清楚",
+      "jyutping": "gong2 cing1 co2",
+      "collocations": [
+        "clarify the deadline",
+        "clarify the time"
+      ],
+      "example": "Could you clarify the deadline for me?",
+      "exampleYue": "可唔可以同我講清楚個期限？",
+      "say": "Could you clarify the deadline for me?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "clarify",
+      "phrase": false,
+      "audioSha256": "1ab79e1a8e7632b21c288f7d9762be4613c2ed036ed65c1523238e2f6f921f5e",
+      "register": "職場",
+      "usageNotes": "clarify 係請人或者自己講清楚。",
+      "pitfallsYue": "clarify 係請人或者自己講清楚。",
+      "related": [
+        "deadline-noun",
+        "confirm-verb"
+      ],
+      "examples": [
+        {
+          "en": "Could you clarify the deadline for me?",
+          "yue": "可唔可以同我講清楚個期限？",
+          "audio": "assets/audio/words/clarify-verb.mp3",
+          "audioSlow": "assets/audio/words/clarify-verb-slow.mp3",
+          "say": "Could you clarify the deadline for me?"
+        },
+        {
+          "en": "I will clarify the time in the email.",
+          "yue": "我會喺電郵度講清楚時間。",
+          "audio": "assets/audio/words/clarify-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/clarify-verb-ex2-slow.mp3",
+          "say": "I will clarify the time in the email."
+        }
+      ]
+    },
+    {
+      "id": "deadline-noun",
+      "lemma": "deadline",
+      "pos": "noun",
+      "senseId": "due-date",
+      "ipa": "/ˈdɛd.ˌlaɪn/",
+      "syllables": [
+        "dead",
+        "line"
+      ],
+      "syllableIpa": [
+        "ˈdɛd",
+        "ˌlaɪn"
+      ],
+      "stress": 1,
+      "arpabet": "D EH1 D L AY2 N",
+      "audio": "assets/audio/words/deadline-noun.mp3",
+      "audioSlow": "assets/audio/words/deadline-noun-slow.mp3",
+      "glossYue": "期限",
+      "glossZh": "期限",
+      "jyutping": "kei4 haan6",
+      "collocations": [
+        "the deadline",
+        "a new deadline"
+      ],
+      "example": "The deadline is Friday afternoon.",
+      "exampleYue": "期限係星期五下晝。",
+      "say": "The deadline is Friday afternoon.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "deadline",
+      "phrase": false,
+      "audioSha256": "b133d6615a48b3c62a2106d6860cdf6cbd10eaf6ac8de8d830ebc3d854eda2e9",
+      "register": "職場",
+      "usageNotes": "deadline 係最後交貨嗰日。",
+      "pitfallsYue": "deadline 係最後交貨嗰日。",
+      "related": [
+        "confirm-verb",
+        "clarify-verb"
+      ],
+      "examples": [
+        {
+          "en": "The deadline is Friday afternoon.",
+          "yue": "期限係星期五下晝。",
+          "audio": "assets/audio/words/deadline-noun.mp3",
+          "audioSlow": "assets/audio/words/deadline-noun-slow.mp3",
+          "say": "The deadline is Friday afternoon."
+        },
+        {
+          "en": "Please confirm the deadline today.",
+          "yue": "請你今日確認個期限。",
+          "audio": "assets/audio/words/deadline-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/deadline-noun-ex2-slow.mp3",
+          "say": "Please confirm the deadline today."
+        }
+      ]
+    },
+    {
+      "id": "grateful-adj",
+      "lemma": "grateful",
+      "pos": "adj",
+      "senseId": "thankful",
+      "ipa": "/ˈɡɹeɪt.fəl/",
+      "syllables": [
+        "grate",
+        "ful"
+      ],
+      "syllableIpa": [
+        "ˈɡɹeɪt",
+        "fəl"
+      ],
+      "stress": 1,
+      "arpabet": "G R EY1 T F AH0 L",
+      "audio": "assets/audio/words/grateful-adj.mp3",
+      "audioSlow": "assets/audio/words/grateful-adj-slow.mp3",
+      "glossYue": "感激",
+      "glossZh": "感激",
+      "jyutping": "gam2 gik1",
+      "collocations": [
+        "grateful for",
+        "I am grateful"
+      ],
+      "example": "I am grateful for your quick reply.",
+      "exampleYue": "我感激你咁快覆。",
+      "say": "I am grateful for your quick reply.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "grateful",
+      "phrase": false,
+      "audioSha256": "aaf2a950eddba43e8bad603133da1f4cd289bb3266909e5e4d6e383d126bc1fa",
+      "register": "職場",
+      "usageNotes": "grateful 係多謝人幫過你。",
+      "pitfallsYue": "grateful 係多謝人幫過你。",
+      "related": [
+        "confirm-verb",
+        "following-up-phrase"
+      ],
+      "examples": [
+        {
+          "en": "I am grateful for your quick reply.",
+          "yue": "我感激你咁快覆。",
+          "audio": "assets/audio/words/grateful-adj.mp3",
+          "audioSlow": "assets/audio/words/grateful-adj-slow.mp3",
+          "say": "I am grateful for your quick reply."
+        },
+        {
+          "en": "We are grateful for the clear notes.",
+          "yue": "我哋感激你啲筆記寫得清楚。",
+          "audio": "assets/audio/words/grateful-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/grateful-adj-ex2-slow.mp3",
+          "say": "We are grateful for the clear notes."
+        }
+      ]
+    },
+    {
+      "id": "propose-verb",
+      "lemma": "propose",
+      "pos": "verb",
+      "senseId": "put-forward",
+      "ipa": "/pɹə.ˈpoʊz/",
+      "syllables": [
+        "pro",
+        "pose"
+      ],
+      "syllableIpa": [
+        "pɹə",
+        "ˈpoʊz"
+      ],
+      "stress": 2,
+      "arpabet": "P R AH0 P OW1 Z",
+      "audio": "assets/audio/words/propose-verb.mp3",
+      "audioSlow": "assets/audio/words/propose-verb-slow.mp3",
+      "glossYue": "提議",
+      "glossZh": "提議",
+      "jyutping": "tai4 ji5",
+      "collocations": [
+        "propose Friday",
+        "propose a time"
+      ],
+      "example": "I propose Friday for the meeting.",
+      "exampleYue": "我提議星期五開會。",
+      "say": "I propose Friday for the meeting.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "propose",
+      "phrase": false,
+      "audioSha256": "dfbd076dc944d966bf9d4dcf8c0760e3d0aa7255c3661140e7a2bf91fb8002ca",
+      "register": "職場",
+      "usageNotes": "propose 係提出一個做法，等對方同意。",
+      "pitfallsYue": "propose 係提出一個做法，等對方同意。",
+      "related": [
+        "deadline-noun",
+        "confirm-verb"
+      ],
+      "examples": [
+        {
+          "en": "I propose Friday for the meeting.",
+          "yue": "我提議星期五開會。",
+          "audio": "assets/audio/words/propose-verb.mp3",
+          "audioSlow": "assets/audio/words/propose-verb-slow.mp3",
+          "say": "I propose Friday for the meeting."
+        },
+        {
+          "en": "They propose a new deadline today.",
+          "yue": "佢哋今日提議一個新期限。",
+          "audio": "assets/audio/words/propose-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/propose-verb-ex2-slow.mp3",
+          "say": "They propose a new deadline today."
+        }
+      ]
+    },
+    {
+      "id": "confirm-verb",
+      "lemma": "confirm",
+      "pos": "verb",
+      "senseId": "make-sure",
+      "ipa": "/kən.ˈfɝm/",
+      "syllables": [
+        "con",
+        "firm"
+      ],
+      "syllableIpa": [
+        "kən",
+        "ˈfɝm"
+      ],
+      "stress": 2,
+      "arpabet": "K AH0 N F ER1 M",
+      "audio": "assets/audio/words/confirm-verb.mp3",
+      "audioSlow": "assets/audio/words/confirm-verb-slow.mp3",
+      "glossYue": "確認",
+      "glossZh": "確認",
+      "jyutping": "kok3 jing6",
+      "collocations": [
+        "confirm the time",
+        "confirm the deadline"
+      ],
+      "example": "I can confirm the Friday deadline.",
+      "exampleYue": "我可以確認星期五個期限。",
+      "say": "I can confirm the Friday deadline.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "confirm",
+      "phrase": false,
+      "audioSha256": "57afe30e1ff51779ead1fe3de39c9f705606f190594e21865ed0dbddde055eca",
+      "register": "職場",
+      "usageNotes": "confirm 係最後核實一次。",
+      "pitfallsYue": "confirm 係最後核實一次。",
+      "related": [
+        "deadline-noun",
+        "propose-verb"
+      ],
+      "examples": [
+        {
+          "en": "I can confirm the Friday deadline.",
+          "yue": "我可以確認星期五個期限。",
+          "audio": "assets/audio/words/confirm-verb.mp3",
+          "audioSlow": "assets/audio/words/confirm-verb-slow.mp3",
+          "say": "I can confirm the Friday deadline."
+        },
+        {
+          "en": "Please confirm the time with Tom.",
+          "yue": "請你同 Tom 確認時間。",
+          "audio": "assets/audio/words/confirm-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/confirm-verb-ex2-slow.mp3",
+          "say": "Please confirm the time with Tom."
+        }
+      ]
+    },
+    {
+      "id": "best-regards-phrase",
+      "lemma": "best regards",
+      "pos": "phrase",
+      "senseId": "email-close",
+      "ipa": "/ˈbɛst ɹɪ.ˈɡɑɹdz/",
+      "syllables": [
+        "best",
+        "re",
+        "gards"
+      ],
+      "syllableIpa": [
+        "ˈbɛst",
+        "ɹɪ",
+        "ˈɡɑɹdz"
+      ],
+      "stress": 1,
+      "arpabet": "B EH1 S T R IH0 G AA1 R D Z",
+      "audio": "assets/audio/words/best-regards-phrase.mp3",
+      "audioSlow": "assets/audio/words/best-regards-phrase-slow.mp3",
+      "glossYue": "祝好",
+      "glossZh": "祝好",
+      "jyutping": "zuk1 hou2",
+      "collocations": [
+        "best regards",
+        "with best regards"
+      ],
+      "example": "Best regards, and I will write again tomorrow.",
+      "exampleYue": "祝好，我聽日再寫。",
+      "say": "Best regards, and I will write again tomorrow.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "best",
+      "phrase": true,
+      "audioSha256": "49c531f4c5104bda02e0a20c6eaf338410a7f25e130a257f66e96a40e252df9d",
+      "register": "職場",
+      "usageNotes": "best regards 係電郵收尾嘅客氣話。",
+      "pitfallsYue": "best regards 係電郵收尾嘅客氣話。",
+      "related": [
+        "grateful-adj",
+        "confirm-verb"
+      ],
+      "examples": [
+        {
+          "en": "Best regards, and I will write again tomorrow.",
+          "yue": "祝好，我聽日再寫。",
+          "audio": "assets/audio/words/best-regards-phrase.mp3",
+          "audioSlow": "assets/audio/words/best-regards-phrase-slow.mp3",
+          "say": "Best regards, and I will write again tomorrow."
+        },
+        {
+          "en": "She closed with best regards after the note.",
+          "yue": "佢喺筆記後面寫祝好。",
+          "audio": "assets/audio/words/best-regards-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/best-regards-phrase-ex2-slow.mp3",
+          "say": "She closed with best regards after the note."
+        }
+      ]
+    },
+    {
+      "id": "agenda-noun",
+      "lemma": "agenda",
+      "pos": "noun",
+      "senseId": "meeting-list",
+      "ipa": "/ə.ˈdʒɛn.də/",
+      "syllables": [
+        "a",
+        "gen",
+        "da"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈdʒɛn",
+        "də"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 JH EH1 N D AH0",
+      "audio": "assets/audio/words/agenda-noun.mp3",
+      "audioSlow": "assets/audio/words/agenda-noun-slow.mp3",
+      "glossYue": "議程",
+      "glossZh": "議程",
+      "jyutping": "ji5 cing4",
+      "collocations": [
+        "the agenda",
+        "on the agenda"
+      ],
+      "example": "The agenda is short this morning.",
+      "exampleYue": "今日朝早份議程好短。",
+      "say": "The agenda is short this morning.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "agenda",
+      "phrase": false,
+      "audioSha256": "42f08029e3c323fc74380ec9afb874e55a8e9f90edd36ad00836941bb2bf94e3",
+      "register": "職場",
+      "usageNotes": "agenda 係開會要講嘅清單。",
+      "pitfallsYue": "agenda 係開會要講嘅清單。",
+      "related": [
+        "update-noun",
+        "owner-noun"
+      ],
+      "examples": [
+        {
+          "en": "The agenda is short this morning.",
+          "yue": "今日朝早份議程好短。",
+          "audio": "assets/audio/words/agenda-noun.mp3",
+          "audioSlow": "assets/audio/words/agenda-noun-slow.mp3",
+          "say": "The agenda is short this morning."
+        },
+        {
+          "en": "Please share the agenda before we start.",
+          "yue": "開始之前請你分享份議程。",
+          "audio": "assets/audio/words/agenda-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/agenda-noun-ex2-slow.mp3",
+          "say": "Please share the agenda before we start."
+        }
+      ]
+    },
+    {
+      "id": "update-noun",
+      "lemma": "update",
+      "pos": "noun",
+      "senseId": "status-news",
+      "ipa": "/ˈʌp.ˌdeɪt/",
+      "syllables": [
+        "up",
+        "date"
+      ],
+      "syllableIpa": [
+        "ˈʌp",
+        "ˌdeɪt"
+      ],
+      "stress": 1,
+      "arpabet": "AH1 P D EY2 T",
+      "audio": "assets/audio/words/update-noun.mp3",
+      "audioSlow": "assets/audio/words/update-noun-slow.mp3",
+      "glossYue": "更新",
+      "glossZh": "更新",
+      "jyutping": "gang1 san1",
+      "collocations": [
+        "a short update",
+        "the update"
+      ],
+      "example": "I have a short update on the deadline.",
+      "exampleYue": "我有個關於期限嘅短更新。",
+      "say": "I have a short update on the deadline.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "update",
+      "phrase": false,
+      "audioSha256": "b88a7e70ac159d68ea772811615e80a6ee203447a74e62c4a6f03a8d64ffc0a2",
+      "register": "職場",
+      "usageNotes": "update 係最新情況，重音喺 up。",
+      "pitfallsYue": "update 係最新情況，重音喺 up。",
+      "related": [
+        "agenda-noun",
+        "deadline-noun"
+      ],
+      "examples": [
+        {
+          "en": "I have a short update on the deadline.",
+          "yue": "我有個關於期限嘅短更新。",
+          "audio": "assets/audio/words/update-noun.mp3",
+          "audioSlow": "assets/audio/words/update-noun-slow.mp3",
+          "say": "I have a short update on the deadline."
+        },
+        {
+          "en": "The update is ready for the meeting.",
+          "yue": "個更新已經準備好開會。",
+          "audio": "assets/audio/words/update-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/update-noun-ex2-slow.mp3",
+          "say": "The update is ready for the meeting."
+        }
+      ]
+    },
+    {
+      "id": "mute-verb",
+      "lemma": "mute",
+      "pos": "verb",
+      "senseId": "silence-mic",
+      "ipa": "/ˈmjut/",
+      "syllables": [
+        "mute"
+      ],
+      "syllableIpa": [
+        "ˈmjut"
+      ],
+      "stress": 1,
+      "arpabet": "M Y UW1 T",
+      "audio": "assets/audio/words/mute-verb.mp3",
+      "audioSlow": "assets/audio/words/mute-verb-slow.mp3",
+      "glossYue": "靜音",
+      "glossZh": "靜音",
+      "jyutping": "zing6 jam1",
+      "collocations": [
+        "mute the chat",
+        "please mute"
+      ],
+      "example": "Please mute the microphone now.",
+      "exampleYue": "請你而家靜音個咪。",
+      "say": "Please mute the microphone now.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "mute",
+      "phrase": false,
+      "audioSha256": "278e5c3cd219b2fc9f05472724bf067f2ef634feaf5101401b8938d2fab6522e",
+      "register": "職場",
+      "usageNotes": "mute 係收細個咪，等其他人聽得清。",
+      "pitfallsYue": "mute 係收細個咪，等其他人聽得清。",
+      "related": [
+        "agenda-noun",
+        "update-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please mute the microphone now.",
+          "yue": "請你而家靜音個咪。",
+          "audio": "assets/audio/words/mute-verb.mp3",
+          "audioSlow": "assets/audio/words/mute-verb-slow.mp3",
+          "say": "Please mute the microphone now."
+        },
+        {
+          "en": "I will mute the side chat.",
+          "yue": "我會靜音旁邊個傾計。",
+          "audio": "assets/audio/words/mute-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/mute-verb-ex2-slow.mp3",
+          "say": "I will mute the side chat."
+        }
+      ]
+    },
+    {
+      "id": "suggest-verb",
+      "lemma": "suggest",
+      "pos": "verb",
+      "senseId": "offer-idea",
+      "ipa": "/sə.ˈdʒɛst/",
+      "syllables": [
+        "sug",
+        "gest"
+      ],
+      "syllableIpa": [
+        "sə",
+        "ˈdʒɛst"
+      ],
+      "stress": 2,
+      "arpabet": "S AH0 JH EH1 S T",
+      "audio": "assets/audio/words/suggest-verb.mp3",
+      "audioSlow": "assets/audio/words/suggest-verb-slow.mp3",
+      "glossYue": "建議",
+      "glossZh": "建議",
+      "jyutping": "gin3 ji5",
+      "collocations": [
+        "I suggest",
+        "suggest Friday"
+      ],
+      "example": "I suggest we meet on Friday.",
+      "exampleYue": "我建議我哋星期五見。",
+      "say": "I suggest we meet on Friday.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "suggest",
+      "phrase": false,
+      "audioSha256": "e16ebf2d46f8c1aa8873239d9be36f91679285def291336eeceeb2977e663e38",
+      "register": "職場",
+      "usageNotes": "suggest 係提出一個想法。",
+      "pitfallsYue": "suggest 係提出一個想法。",
+      "related": [
+        "agree-verb",
+        "agenda-noun"
+      ],
+      "examples": [
+        {
+          "en": "I suggest we meet on Friday.",
+          "yue": "我建議我哋星期五見。",
+          "audio": "assets/audio/words/suggest-verb.mp3",
+          "audioSlow": "assets/audio/words/suggest-verb-slow.mp3",
+          "say": "I suggest we meet on Friday."
+        },
+        {
+          "en": "They suggest a shorter agenda.",
+          "yue": "佢哋建議短啲嘅議程。",
+          "audio": "assets/audio/words/suggest-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/suggest-verb-ex2-slow.mp3",
+          "say": "They suggest a shorter agenda."
+        }
+      ]
+    },
+    {
+      "id": "agree-verb",
+      "lemma": "agree",
+      "pos": "verb",
+      "senseId": "same-view",
+      "ipa": "/ə.ˈɡɹi/",
+      "syllables": [
+        "a",
+        "gree"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈɡɹi"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 G R IY1",
+      "audio": "assets/audio/words/agree-verb.mp3",
+      "audioSlow": "assets/audio/words/agree-verb-slow.mp3",
+      "glossYue": "同意",
+      "glossZh": "同意",
+      "jyutping": "tung4 ji3",
+      "collocations": [
+        "I agree",
+        "agree on Friday"
+      ],
+      "example": "I agree with the Friday deadline.",
+      "exampleYue": "我同意星期五個期限。",
+      "say": "I agree with the Friday deadline.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "agree",
+      "phrase": false,
+      "audioSha256": "c5131205c382e240b41699a1aaa26aed6c3f86a701c0064d98a1221808e9d804",
+      "register": "職場",
+      "usageNotes": "agree 係覺得對方講得啱。",
+      "pitfallsYue": "agree 係覺得對方講得啱。",
+      "related": [
+        "suggest-verb",
+        "concerned-adj"
+      ],
+      "examples": [
+        {
+          "en": "I agree with the Friday deadline.",
+          "yue": "我同意星期五個期限。",
+          "audio": "assets/audio/words/agree-verb.mp3",
+          "audioSlow": "assets/audio/words/agree-verb-slow.mp3",
+          "say": "I agree with the Friday deadline."
+        },
+        {
+          "en": "We agree on the next step.",
+          "yue": "我哋同意下一步。",
+          "audio": "assets/audio/words/agree-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/agree-verb-ex2-slow.mp3",
+          "say": "We agree on the next step."
+        }
+      ]
+    },
+    {
+      "id": "concerned-adj",
+      "lemma": "concerned",
+      "pos": "adj",
+      "senseId": "worried-about",
+      "ipa": "/kən.ˈsɝnd/",
+      "syllables": [
+        "con",
+        "cerned"
+      ],
+      "syllableIpa": [
+        "kən",
+        "ˈsɝnd"
+      ],
+      "stress": 2,
+      "arpabet": "K AH0 N S ER1 N D",
+      "audio": "assets/audio/words/concerned-adj.mp3",
+      "audioSlow": "assets/audio/words/concerned-adj-slow.mp3",
+      "glossYue": "擔心",
+      "glossZh": "擔心",
+      "jyutping": "daam1 sam1",
+      "collocations": [
+        "I am concerned",
+        "concerned about"
+      ],
+      "example": "I am concerned about the deadline.",
+      "exampleYue": "我擔心個期限。",
+      "say": "I am concerned about the deadline.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "concerned",
+      "phrase": false,
+      "audioSha256": "7005d31cb8579d0887099eba58c809d669e439512587b910f6ba1cb93d8cbfba",
+      "register": "職場",
+      "usageNotes": "concerned 係擔心，唔係生氣。",
+      "pitfallsYue": "concerned 係擔心，唔係生氣。",
+      "related": [
+        "deadline-noun",
+        "owner-noun"
+      ],
+      "examples": [
+        {
+          "en": "I am concerned about the deadline.",
+          "yue": "我擔心個期限。",
+          "audio": "assets/audio/words/concerned-adj.mp3",
+          "audioSlow": "assets/audio/words/concerned-adj-slow.mp3",
+          "say": "I am concerned about the deadline."
+        },
+        {
+          "en": "She is concerned we may miss Friday.",
+          "yue": "佢擔心我哋可能錯過星期五。",
+          "audio": "assets/audio/words/concerned-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/concerned-adj-ex2-slow.mp3",
+          "say": "She is concerned we may miss Friday."
+        }
+      ]
+    },
+    {
+      "id": "action-item-noun",
+      "lemma": "action item",
+      "pos": "noun",
+      "senseId": "task-pair",
+      "ipa": "/ˈæk.ʃən ˈaɪ.təm/",
+      "syllables": [
+        "ac",
+        "tion",
+        "i",
+        "tem"
+      ],
+      "syllableIpa": [
+        "ˈæk",
+        "ʃən",
+        "ˈaɪ",
+        "təm"
+      ],
+      "stress": 1,
+      "arpabet": "AE1 K SH AH0 N AY1 T AH0 M",
+      "audio": "assets/audio/words/action-item-noun.mp3",
+      "audioSlow": "assets/audio/words/action-item-noun-slow.mp3",
+      "glossYue": "行動項",
+      "glossZh": "行動項",
+      "jyutping": "hang4 dung6 hong6",
+      "collocations": [
+        "the action item",
+        "an action item"
+      ],
+      "example": "The action item has a clear owner.",
+      "exampleYue": "呢項行動有清楚嘅負責人。",
+      "say": "The action item has a clear owner.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "action",
+      "phrase": false,
+      "audioSha256": "dbe7c1704a7f7ee44f99de071526faa36301e1c9094d1105d57cd5324a87bf9a",
+      "register": "職場",
+      "usageNotes": "action item 係會後要有人做嘅一件事。",
+      "pitfallsYue": "action item 係會後要有人做嘅一件事。",
+      "related": [
+        "owner-noun",
+        "deadline-noun"
+      ],
+      "examples": [
+        {
+          "en": "The action item has a clear owner.",
+          "yue": "呢項行動有清楚嘅負責人。",
+          "audio": "assets/audio/words/action-item-noun.mp3",
+          "audioSlow": "assets/audio/words/action-item-noun-slow.mp3",
+          "say": "The action item has a clear owner."
+        },
+        {
+          "en": "Please read the action item before Friday.",
+          "yue": "請你星期五之前睇呢項行動。",
+          "audio": "assets/audio/words/action-item-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/action-item-noun-ex2-slow.mp3",
+          "say": "Please read the action item before Friday."
+        }
+      ]
+    },
+    {
+      "id": "wrap-up-verb",
+      "lemma": "wrap up",
+      "pos": "verb",
+      "senseId": "end-meeting",
+      "ipa": "/ˈɹæp ˈʌp/",
+      "syllables": [
+        "wrap",
+        "up"
+      ],
+      "syllableIpa": [
+        "ˈɹæp",
+        "ˈʌp"
+      ],
+      "stress": 1,
+      "arpabet": "R AE1 P AH1 P",
+      "audio": "assets/audio/words/wrap-up-verb.mp3",
+      "audioSlow": "assets/audio/words/wrap-up-verb-slow.mp3",
+      "glossYue": "收會",
+      "glossZh": "收會",
+      "jyutping": "sau1 wui6",
+      "collocations": [
+        "wrap up",
+        "wrap up now"
+      ],
+      "example": "Let's wrap up the meeting now.",
+      "exampleYue": "我哋而家收呢個會。",
+      "say": "Let's wrap up the meeting now.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "wrap",
+      "phrase": false,
+      "audioSha256": "aee3b1dfc0ecd336fc3500e25fc4e1a91bd47d249fb86d41a77fdfbff5f60c56",
+      "register": "職場",
+      "usageNotes": "wrap up 係收尾結束個會。",
+      "pitfallsYue": "wrap up 係收尾結束個會。",
+      "related": [
+        "agenda-noun",
+        "update-noun"
+      ],
+      "examples": [
+        {
+          "en": "Let's wrap up the meeting now.",
+          "yue": "我哋而家收呢個會。",
+          "audio": "assets/audio/words/wrap-up-verb.mp3",
+          "audioSlow": "assets/audio/words/wrap-up-verb-slow.mp3",
+          "say": "Let's wrap up the meeting now."
+        },
+        {
+          "en": "We can wrap up after the update.",
+          "yue": "講完更新我哋可以收會。",
+          "audio": "assets/audio/words/wrap-up-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/wrap-up-verb-ex2-slow.mp3",
+          "say": "We can wrap up after the update."
+        }
+      ]
+    },
+    {
+      "id": "owner-noun",
+      "lemma": "owner",
+      "pos": "noun",
+      "senseId": "item-owner",
+      "ipa": "/ˈoʊ.nɚ/",
+      "syllables": [
+        "ow",
+        "ner"
+      ],
+      "syllableIpa": [
+        "ˈoʊ",
+        "nɚ"
+      ],
+      "stress": 1,
+      "arpabet": "OW1 N ER0",
+      "audio": "assets/audio/words/owner-noun.mp3",
+      "audioSlow": "assets/audio/words/owner-noun-slow.mp3",
+      "glossYue": "負責人",
+      "glossZh": "負責人",
+      "jyutping": "fu6 zaak3 jan4",
+      "collocations": [
+        "the owner",
+        "an owner"
+      ],
+      "example": "The owner will share the update.",
+      "exampleYue": "負責人會分享個更新。",
+      "say": "The owner will share the update.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "owner",
+      "phrase": false,
+      "audioSha256": "d1474d359fd4df7811d4bc3ba93ec7340514dc48340450204efad586c8c64fd7",
+      "register": "職場",
+      "usageNotes": "owner 係負責跟進嗰個人。",
+      "pitfallsYue": "owner 係負責跟進嗰個人。",
+      "related": [
+        "action-item-noun",
+        "update-noun"
+      ],
+      "examples": [
+        {
+          "en": "The owner will share the update.",
+          "yue": "負責人會分享個更新。",
+          "audio": "assets/audio/words/owner-noun.mp3",
+          "audioSlow": "assets/audio/words/owner-noun-slow.mp3",
+          "say": "The owner will share the update."
+        },
+        {
+          "en": "Each action item needs an owner.",
+          "yue": "每一項行動都要有負責人。",
+          "audio": "assets/audio/words/owner-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/owner-noun-ex2-slow.mp3",
+          "say": "Each action item needs an owner."
+        }
+      ]
+    },
+    {
+      "id": "symptom-noun",
+      "lemma": "symptom",
+      "pos": "noun",
+      "senseId": "body-sign",
+      "ipa": "/ˈsɪmp.təm/",
+      "syllables": [
+        "symp",
+        "tom"
+      ],
+      "syllableIpa": [
+        "ˈsɪmp",
+        "təm"
+      ],
+      "stress": 1,
+      "arpabet": "S IH1 M P T AH0 M",
+      "audio": "assets/audio/words/symptom-noun.mp3",
+      "audioSlow": "assets/audio/words/symptom-noun-slow.mp3",
+      "glossYue": "症狀",
+      "glossZh": "症狀",
+      "jyutping": "zing3 zong6",
+      "collocations": [
+        "a symptom",
+        "the main symptom"
+      ],
+      "example": "A cough is my main symptom today.",
+      "exampleYue": "我今日主要症狀係咳。",
+      "say": "A cough is my main symptom today.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "symptom",
+      "phrase": false,
+      "audioSha256": "b168fd685f07a0a6ba671234eb1ad889723339124d27c6778cb7a16027663520",
+      "register": "診所",
+      "usageNotes": "symptom 係你覺得唔舒服嘅現象。呢課只係角色扮演，唔係醫療意見。",
+      "pitfallsYue": "symptom 係你覺得唔舒服嘅現象。呢課只係角色扮演，唔係醫療意見。",
+      "related": [
+        "fever-noun",
+        "cough-noun"
+      ],
+      "examples": [
+        {
+          "en": "A cough is my main symptom today.",
+          "yue": "我今日主要症狀係咳。",
+          "audio": "assets/audio/words/symptom-noun.mp3",
+          "audioSlow": "assets/audio/words/symptom-noun-slow.mp3",
+          "say": "A cough is my main symptom today."
+        },
+        {
+          "en": "Please tell me every symptom since Monday.",
+          "yue": "請你講由星期一開始嘅每個症狀。",
+          "audio": "assets/audio/words/symptom-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/symptom-noun-ex2-slow.mp3",
+          "say": "Please tell me every symptom since Monday."
+        }
+      ]
+    },
+    {
+      "id": "fever-noun",
+      "lemma": "fever",
+      "pos": "noun",
+      "senseId": "high-temp",
+      "ipa": "/ˈfi.vɚ/",
+      "syllables": [
+        "fe",
+        "ver"
+      ],
+      "syllableIpa": [
+        "ˈfi",
+        "vɚ"
+      ],
+      "stress": 1,
+      "arpabet": "F IY1 V ER0",
+      "audio": "assets/audio/words/fever-noun.mp3",
+      "audioSlow": "assets/audio/words/fever-noun-slow.mp3",
+      "glossYue": "發燒",
+      "glossZh": "發燒",
+      "jyutping": "faat3 siu1",
+      "collocations": [
+        "a fever",
+        "had a fever"
+      ],
+      "example": "I have had a fever since Monday.",
+      "exampleYue": "我由星期一起發燒。",
+      "say": "I have had a fever since Monday.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "fever",
+      "phrase": false,
+      "audioSha256": "bde56edf36989a7b85f7c6e80fe2b10667089b6ba6df0f9a9cd53cff0fb54a38",
+      "register": "診所",
+      "usageNotes": "fever 係身體發熱。呢課只係角色扮演。",
+      "pitfallsYue": "fever 係身體發熱。呢課只係角色扮演。",
+      "related": [
+        "cough-noun",
+        "headache-noun"
+      ],
+      "examples": [
+        {
+          "en": "I have had a fever since Monday.",
+          "yue": "我由星期一起發燒。",
+          "audio": "assets/audio/words/fever-noun.mp3",
+          "audioSlow": "assets/audio/words/fever-noun-slow.mp3",
+          "say": "I have had a fever since Monday."
+        },
+        {
+          "en": "The fever is worse at night.",
+          "yue": "個發燒夜晚會差啲。",
+          "audio": "assets/audio/words/fever-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/fever-noun-ex2-slow.mp3",
+          "say": "The fever is worse at night."
+        }
+      ]
+    },
+    {
+      "id": "cough-noun",
+      "lemma": "cough",
+      "pos": "noun",
+      "senseId": "throat-noise",
+      "ipa": "/ˈkɔf/",
+      "syllables": [
+        "cough"
+      ],
+      "syllableIpa": [
+        "ˈkɔf"
+      ],
+      "stress": 1,
+      "arpabet": "K AO1 F",
+      "audio": "assets/audio/words/cough-noun.mp3",
+      "audioSlow": "assets/audio/words/cough-noun-slow.mp3",
+      "glossYue": "咳嗽",
+      "glossZh": "咳嗽",
+      "jyutping": "kat1 sau3",
+      "collocations": [
+        "a cough",
+        "the cough"
+      ],
+      "example": "I have had a cough since Monday.",
+      "exampleYue": "我由星期一起咳嗽。",
+      "say": "I have had a cough since Monday.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "cough",
+      "phrase": false,
+      "audioSha256": "eadcef3ab9984b931f57e0f6d14630e704de81b8fc3de31c69fbf7799d39e3f5",
+      "register": "診所",
+      "usageNotes": "cough 係咳嗽。CMUdict 用 /kɔf/。",
+      "pitfallsYue": "cough 係咳嗽。CMUdict 用 /kɔf/。",
+      "related": [
+        "fever-noun",
+        "sore-throat-noun"
+      ],
+      "examples": [
+        {
+          "en": "I have had a cough since Monday.",
+          "yue": "我由星期一起咳嗽。",
+          "audio": "assets/audio/words/cough-noun.mp3",
+          "audioSlow": "assets/audio/words/cough-noun-slow.mp3",
+          "say": "I have had a cough since Monday."
+        },
+        {
+          "en": "The cough is worse at night.",
+          "yue": "陣咳夜晚會差啲。",
+          "audio": "assets/audio/words/cough-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/cough-noun-ex2-slow.mp3",
+          "say": "The cough is worse at night."
+        }
+      ]
+    },
+    {
+      "id": "sore-throat-noun",
+      "lemma": "sore throat",
+      "pos": "noun",
+      "senseId": "pain-throat",
+      "ipa": "/ˈsɔɹ ˈθɹoʊt/",
+      "syllables": [
+        "sore",
+        "throat"
+      ],
+      "syllableIpa": [
+        "ˈsɔɹ",
+        "ˈθɹoʊt"
+      ],
+      "stress": 1,
+      "arpabet": "S AO1 R TH R OW1 T",
+      "audio": "assets/audio/words/sore-throat-noun.mp3",
+      "audioSlow": "assets/audio/words/sore-throat-noun-slow.mp3",
+      "glossYue": "喉嚨痛",
+      "glossZh": "喉嚨痛",
+      "jyutping": "hau4 lung4 tung3",
+      "collocations": [
+        "a sore throat",
+        "my sore throat"
+      ],
+      "example": "My sore throat feels worse today.",
+      "exampleYue": "我今日條喉嚨痛差咗。",
+      "say": "My sore throat feels worse today.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "sore",
+      "phrase": false,
+      "audioSha256": "5f942cee81d2a7e5ca8ccc6841392f8fae4fd4fdff39247371b4b855ea196ba8",
+      "register": "診所",
+      "usageNotes": "sore throat 係條喉嚨痛。",
+      "pitfallsYue": "sore throat 係條喉嚨痛。",
+      "related": [
+        "cough-noun",
+        "fever-noun"
+      ],
+      "examples": [
+        {
+          "en": "My sore throat feels worse today.",
+          "yue": "我今日條喉嚨痛差咗。",
+          "audio": "assets/audio/words/sore-throat-noun.mp3",
+          "audioSlow": "assets/audio/words/sore-throat-noun-slow.mp3",
+          "say": "My sore throat feels worse today."
+        },
+        {
+          "en": "A sore throat can come with a cough.",
+          "yue": "喉嚨痛可以同咳嗽一齊嚟。",
+          "audio": "assets/audio/words/sore-throat-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/sore-throat-noun-ex2-slow.mp3",
+          "say": "A sore throat can come with a cough."
+        }
+      ]
+    },
+    {
+      "id": "headache-noun",
+      "lemma": "headache",
+      "pos": "noun",
+      "senseId": "head-pain",
+      "ipa": "/ˈhɛd.ˌeɪk/",
+      "syllables": [
+        "head",
+        "ache"
+      ],
+      "syllableIpa": [
+        "ˈhɛd",
+        "ˌeɪk"
+      ],
+      "stress": 1,
+      "arpabet": "HH EH1 D EY2 K",
+      "audio": "assets/audio/words/headache-noun.mp3",
+      "audioSlow": "assets/audio/words/headache-noun-slow.mp3",
+      "glossYue": "頭痛",
+      "glossZh": "頭痛",
+      "jyutping": "tau4 tung3",
+      "collocations": [
+        "a headache",
+        "had a headache"
+      ],
+      "example": "I have had a headache since Monday.",
+      "exampleYue": "我由星期一起頭痛。",
+      "say": "I have had a headache since Monday.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "headache",
+      "phrase": false,
+      "audioSha256": "bcb6758a5c666f5fa79bdb0c566369376c86873bc2e5e1c048d40b1cfe4da05f",
+      "register": "診所",
+      "usageNotes": "headache 係個頭痛。",
+      "pitfallsYue": "headache 係個頭痛。",
+      "related": [
+        "fever-noun",
+        "symptom-noun"
+      ],
+      "examples": [
+        {
+          "en": "I have had a headache since Monday.",
+          "yue": "我由星期一起頭痛。",
+          "audio": "assets/audio/words/headache-noun.mp3",
+          "audioSlow": "assets/audio/words/headache-noun-slow.mp3",
+          "say": "I have had a headache since Monday."
+        },
+        {
+          "en": "The headache is worse this morning.",
+          "yue": "今朝頭痛差咗。",
+          "audio": "assets/audio/words/headache-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/headache-noun-ex2-slow.mp3",
+          "say": "The headache is worse this morning."
+        }
+      ]
+    },
+    {
+      "id": "prescription-noun",
+      "lemma": "prescription",
+      "pos": "noun",
+      "senseId": "doctor-note",
+      "ipa": "/pɹə.ˈskɹɪp.ʃən/",
+      "syllables": [
+        "pre",
+        "scrip",
+        "tion"
+      ],
+      "syllableIpa": [
+        "pɹə",
+        "ˈskɹɪp",
+        "ʃən"
+      ],
+      "stress": 2,
+      "arpabet": "P R AH0 S K R IH1 P SH AH0 N",
+      "audio": "assets/audio/words/prescription-noun.mp3",
+      "audioSlow": "assets/audio/words/prescription-noun-slow.mp3",
+      "glossYue": "藥單",
+      "glossZh": "藥單",
+      "jyutping": "joek6 daan1",
+      "collocations": [
+        "a prescription",
+        "this prescription"
+      ],
+      "example": "Please take this prescription to the pharmacy.",
+      "exampleYue": "請你帶呢張藥單去藥房。",
+      "say": "Please take this prescription to the pharmacy.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "prescription",
+      "phrase": false,
+      "audioSha256": "622fb99715d1f4698603e3aef734d8e797e81c3971bfd5d92677c09249098ab0",
+      "register": "診所",
+      "usageNotes": "prescription 係醫生開嘅藥單。",
+      "pitfallsYue": "prescription 係醫生開嘅藥單。",
+      "related": [
+        "pharmacy-noun",
+        "follow-up-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please take this prescription to the pharmacy.",
+          "yue": "請你帶呢張藥單去藥房。",
+          "audio": "assets/audio/words/prescription-noun.mp3",
+          "audioSlow": "assets/audio/words/prescription-noun-slow.mp3",
+          "say": "Please take this prescription to the pharmacy."
+        },
+        {
+          "en": "The pharmacy can prepare the prescription today.",
+          "yue": "藥房今日可以配呢張藥單。",
+          "audio": "assets/audio/words/prescription-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/prescription-noun-ex2-slow.mp3",
+          "say": "The pharmacy can prepare the prescription today."
+        }
+      ]
+    },
+    {
+      "id": "pharmacy-noun",
+      "lemma": "pharmacy",
+      "pos": "noun",
+      "senseId": "drug-shop",
+      "ipa": "/ˈfɑɹ.mə.si/",
+      "syllables": [
+        "phar",
+        "ma",
+        "cy"
+      ],
+      "syllableIpa": [
+        "ˈfɑɹ",
+        "mə",
+        "si"
+      ],
+      "stress": 1,
+      "arpabet": "F AA1 R M AH0 S IY0",
+      "audio": "assets/audio/words/pharmacy-noun.mp3",
+      "audioSlow": "assets/audio/words/pharmacy-noun-slow.mp3",
+      "glossYue": "藥房",
+      "glossZh": "藥房",
+      "jyutping": "joek6 fong4",
+      "collocations": [
+        "the pharmacy",
+        "go to the pharmacy"
+      ],
+      "example": "The pharmacy can prepare the medicine today.",
+      "exampleYue": "藥房今日可以配藥。",
+      "say": "The pharmacy can prepare the medicine today.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "pharmacy",
+      "phrase": false,
+      "audioSha256": "c368f5026d04e62846dfc3b9d59e5505a3264c9a6573059f1ff8da3a95fa9a08",
+      "register": "診所",
+      "usageNotes": "pharmacy 係配藥嘅舖。",
+      "pitfallsYue": "pharmacy 係配藥嘅舖。",
+      "related": [
+        "prescription-noun",
+        "follow-up-noun"
+      ],
+      "examples": [
+        {
+          "en": "The pharmacy can prepare the medicine today.",
+          "yue": "藥房今日可以配藥。",
+          "audio": "assets/audio/words/pharmacy-noun.mp3",
+          "audioSlow": "assets/audio/words/pharmacy-noun-slow.mp3",
+          "say": "The pharmacy can prepare the medicine today."
+        },
+        {
+          "en": "I will go to the pharmacy after the visit.",
+          "yue": "睇完我會去藥房。",
+          "audio": "assets/audio/words/pharmacy-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/pharmacy-noun-ex2-slow.mp3",
+          "say": "I will go to the pharmacy after the visit."
+        }
+      ]
+    },
+    {
+      "id": "follow-up-noun",
+      "lemma": "follow-up",
+      "pos": "noun",
+      "senseId": "return-visit",
+      "ipa": "/ˈfɑ.loʊ ˈʌp/",
+      "syllables": [
+        "fol",
+        "low",
+        "up"
+      ],
+      "syllableIpa": [
+        "ˈfɑ",
+        "loʊ",
+        "ˈʌp"
+      ],
+      "stress": 1,
+      "arpabet": "F AA1 L OW0 AH1 P",
+      "audio": "assets/audio/words/follow-up-noun.mp3",
+      "audioSlow": "assets/audio/words/follow-up-noun-slow.mp3",
+      "glossYue": "覆診",
+      "glossZh": "覆診",
+      "jyutping": "fuk1 can2",
+      "collocations": [
+        "a follow-up",
+        "the follow-up"
+      ],
+      "example": "I need a follow-up after this visit.",
+      "exampleYue": "呢次之後我要覆診。",
+      "say": "I need a follow-up after this visit.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "follow",
+      "phrase": false,
+      "audioSha256": "6f8b68d90c6300975a59d9935ed11b1fb0752de999624fe7e01a11e5ed8ab9d1",
+      "register": "診所",
+      "usageNotes": "follow-up 係再嚟診所一次。",
+      "pitfallsYue": "follow-up 係再嚟診所一次。",
+      "related": [
+        "pharmacy-noun",
+        "appointment-noun"
+      ],
+      "examples": [
+        {
+          "en": "I need a follow-up after this visit.",
+          "yue": "呢次之後我要覆診。",
+          "audio": "assets/audio/words/follow-up-noun.mp3",
+          "audioSlow": "assets/audio/words/follow-up-noun-slow.mp3",
+          "say": "I need a follow-up after this visit."
+        },
+        {
+          "en": "The follow-up is next Friday morning.",
+          "yue": "覆診係下星期五朝早。",
+          "audio": "assets/audio/words/follow-up-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/follow-up-noun-ex2-slow.mp3",
+          "say": "The follow-up is next Friday morning."
         }
       ]
     }

@@ -121,7 +121,7 @@
   ],
   "understand": [
     {
-      "prompt": "Could we have the bill? 係？",
+      "prompt": "Could we have the bill? 即係問緊咩？",
       "choices": [
         "叫埋單",
         "再添杯水",
@@ -283,7 +283,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard for the paper you ask for at the end.",
+      "prompt": "聽一次，揀你聽到嘅字：食完叫嘅單",
       "lemma": "bill-noun",
       "choices": [
         "bill",
@@ -294,7 +294,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard for the extra money after the service.",
+      "prompt": "聽一次，揀你聽到嘅字：服務之後多畀嘅錢",
       "lemma": "tip-noun",
       "choices": [
         "tip",
@@ -305,7 +305,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says service charge, what does that phrase mean on the restaurant bill?",
+      "prompt": "客人講「Thank you, and the total does include the service charge before that tip tonight.」，係咩意思？",
       "choices": [
         "服務費",
         "零錢",
@@ -316,7 +316,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says keep the change, what should you do with the coins?",
+      "prompt": "客人講「The service was kind tonight, so I will add a tip and you can keep the change.」，係咩意思？",
       "choices": [
         "留低當貼士",
         "即刻找返",
@@ -326,7 +326,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which of these bill words contains the /l/ sound: include, tip, or check?",
+      "prompt": "邊個字有 /l/：include、tip、定 check？",
       "choices": [
         "include",
         "tip",

@@ -244,7 +244,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
+      "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "these-det",
       "choices": [
         "these",
@@ -255,7 +255,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen to the clip once, then choose the word you heard in this lesson.",
+      "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "pearl-noun",
       "choices": [
         "pearl",
@@ -266,7 +266,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"bracelet\", what does that word or phrase mean here?",
+      "prompt": "客人講「I like this bracelet, and the clasp is easy to open.」，係咩意思？",
       "choices": [
         "手鏈",
         "頸鏈",
@@ -276,7 +276,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "When a guest says \"a pair of earrings\", what does that word or phrase mean here?",
+      "prompt": "客人講「Of course. This pair is beautiful, and I can show you the set.」，係咩意思？",
       "choices": [
         "一對耳環",
         "一隻戒指",
@@ -286,7 +286,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Choose the best answer to this lesson question: 邊個尾音係 /z/？",
+      "prompt": "邊個尾音係 /z/？",
       "choices": [
         "these",
         "this",
