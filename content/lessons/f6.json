@@ -95,21 +95,21 @@
     {
       "prompt": "I usually wake up early, then I start my shift. 呢句即係點？",
       "choices": [
-        "我通常早起身，然後開工",
         "夜更之後先關門",
-        "我來自澳門"
+        "我來自澳門",
+        "我通常早起身，然後開工"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "usually 係通常。then 係然後。"
     },
     {
       "prompt": "Do you ever take a break after lunch? 即係問緊咩？",
       "choices": [
+        "請開通電話卡",
         "你午餐之後有冇休息？",
-        "從來唔會收工",
-        "請開通電話卡"
+        "從來唔會收工"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "break 係休息。after 係之後。"
     }
   ],
@@ -257,21 +257,21 @@
       "prompt": "你聽到邊個？",
       "lemma": "usually-adv",
       "choices": [
-        "usually",
         "always",
-        "never"
+        "never",
+        "usually"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "usually",
       "choices": [
+        "郵票",
         "通常",
-        "從不",
-        "郵票"
+        "從不"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -287,11 +287,11 @@
       "type": "choice",
       "prompt": "邊句係講從來唔會？",
       "choices": [
-        "I sometimes take a short break, but I never stay long.",
         "I usually wake up early, then I start my shift.",
-        "My phone number and email are ready."
+        "My phone number and email are ready.",
+        "I sometimes take a short break, but I never stay long."
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "never 係從來唔會。"
     }
   ],

@@ -128,21 +128,21 @@
     {
       "prompt": "Do you have this shirt in a smaller size? 即係問緊咩？",
       "choices": [
-        "呢件衫有冇細一個碼",
         "話呢件已經啱",
-        "問去邊度"
+        "問去邊度",
+        "呢件衫有冇細一個碼"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "smaller size 係細碼。"
     },
     {
       "prompt": "Can I get a tax refund form for this shirt. 呢句即係點？",
       "choices": [
+        "我要換房",
         "可唔可以畀我呢件衫嘅退稅表",
-        "我唔要呢件",
-        "我要換房"
+        "我唔要呢件"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "I will take 係決定要呢件。"
     }
   ],
@@ -292,21 +292,21 @@
       "prompt": "聽一次，揀你聽到嘅字：試身嗰間房",
       "lemma": "fitting-room-phrase",
       "choices": [
-        "fitting room",
         "postcard",
-        "receipt"
+        "receipt",
+        "fitting room"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「The reduced fit works well, so can I get a tax refund form for this shirt.」，tax refund 係咩意思？",
       "choices": [
+        "顏色",
         "退稅",
-        "尺寸",
-        "顏色"
+        "尺寸"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -322,11 +322,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：smaller、receipt、定 postcard？",
       "choices": [
-        "smaller",
         "receipt",
-        "postcard"
+        "postcard",
+        "smaller"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "smaller 有 /l/。receipt 同 postcard 冇。"
     }
   ],

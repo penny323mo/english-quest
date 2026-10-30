@@ -128,21 +128,21 @@
     {
       "prompt": "Could you please help me block this lost card? 即係問緊咩？",
       "choices": [
-        "請人幫我凍結唔見咗嘅卡",
         "話卡已經可以再使",
-        "問幾多錢"
+        "問幾多錢",
+        "請人幫我凍結唔見咗嘅卡"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "block 係凍結張卡。"
     },
     {
       "prompt": "I will pay the fee here. 呢句即係點？",
       "choices": [
+        "我要退稅",
         "我喺度會畀手續費",
-        "我唔使畀錢",
-        "我要退稅"
+        "我唔使畀錢"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "fee 係手續費。"
     }
   ],
@@ -292,21 +292,21 @@
       "prompt": "聽一次，揀你聽到嘅字：戶口剩幾多",
       "lemma": "balance-noun",
       "choices": [
-        "balance",
         "branch",
-        "form"
+        "form",
+        "balance"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「The balance is quite low again, and the fee to replace the card is here.」，balance 係咩意思？",
       "choices": [
+        "分行",
         "餘額",
-        "收據",
-        "分行"
+        "收據"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -322,11 +322,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：balance、account、定 fee？",
       "choices": [
-        "balance",
         "account",
-        "fee"
+        "fee",
+        "balance"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "balance 有 /l/。account 同 fee 冇。"
     }
   ],

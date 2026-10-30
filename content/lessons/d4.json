@@ -130,21 +130,21 @@
     {
       "prompt": "The prepaid plan is much cheaper, and the coverage is enough. 呢句即係點？",
       "choices": [
-        "預繳計劃平好多，覆蓋都夠",
         "我要一份長約",
-        "請幫我串個名"
+        "請幫我串個名",
+        "預繳計劃平好多，覆蓋都夠"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "prepaid 係預繳。coverage 係覆蓋。"
     },
     {
       "prompt": "I'll take the prepaid one, and I do not need unlimited data. 呢句即係點？",
       "choices": [
+        "請用護照開通",
         "我要預繳，唔使無限數據",
-        "我要一份長約",
-        "請用護照開通"
+        "我要一份長約"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "I'll take 係我要呢個。unlimited 係無限。"
     }
   ],
@@ -294,21 +294,21 @@
       "prompt": "聽一次，揀你聽到嘅字：data",
       "lemma": "data-noun",
       "choices": [
-        "data",
         "day",
-        "weight"
+        "weight",
+        "data"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "Which plan is better for a short trip?",
       "choices": [
+        "我通常幾時起身",
         "邊個計劃適合短途",
-        "包裹幾多日到",
-        "我通常幾時起身"
+        "包裹幾多日到"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -324,11 +324,11 @@
       "type": "choice",
       "prompt": "The prepaid plan is much cheaper.",
       "choices": [
-        "預繳計劃平好多",
         "覆蓋完全唔夠",
-        "請申報重量"
+        "請申報重量",
+        "預繳計劃平好多"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "cheaper 係平啲。"
     }
   ],

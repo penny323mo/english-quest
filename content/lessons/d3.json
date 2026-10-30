@@ -129,21 +129,21 @@
     {
       "prompt": "If I decide today, I can sign the lease. 呢句即係點？",
       "choices": [
-        "如果我今日決定，就可以簽租約",
         "我已經退租",
-        "我今日唔簽租約"
+        "我今日唔簽租約",
+        "如果我今日決定，就可以簽租約"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "If I decide today 係如果今日決定就會做。"
     },
     {
       "prompt": "Tell me the notice period. 呢句即係點？",
       "choices": [
+        "話我知業主個名",
         "話我知通知期幾長",
-        "話我知餘額",
-        "話我知業主個名"
+        "話我知餘額"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "notice period 係搬走前要預早講嘅時間。"
     }
   ],
@@ -291,21 +291,21 @@
       "prompt": "聽一次，揀你聽到嘅字：單位嘅主人",
       "lemma": "landlord-noun",
       "choices": [
-        "landlord",
         "tenant",
-        "notice"
+        "notice",
+        "landlord"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「The monthly rent is due on the first day, and the deposit is one full month's rent.」，deposit 係咩意思？",
       "choices": [
+        "租約",
         "按金",
-        "業主",
-        "租約"
+        "業主"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -321,11 +321,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：landlord、rent、定 deposit？",
       "choices": [
-        "landlord",
         "rent",
-        "deposit"
+        "deposit",
+        "landlord"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "landlord 有 /l/。rent 同 deposit 冇。"
     }
   ],

@@ -120,21 +120,21 @@
     {
       "prompt": "This size is a little tight. 隻戒指？",
       "choices": [
-        "有啲緊",
         "有啲鬆",
-        "係特價"
+        "係特價",
+        "有啲緊"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "tight 係緊。鬆先至係 loose。"
     },
     {
       "prompt": "Look in the mirror. 你想客人？",
       "choices": [
+        "叫雞",
         "自己照鏡睇啱唔啱",
-        "遞護照",
-        "叫雞"
+        "遞護照"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "試完畀佢照鏡。"
     }
   ],
@@ -282,21 +282,21 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "finger-noun",
       "choices": [
-        "finger",
         "fit",
-        "wrist"
+        "wrist",
+        "finger"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「Can you measure my finger, and tell me the size?」，係咩意思？",
       "choices": [
+        "玉",
         "碼",
-        "稅",
-        "玉"
+        "稅"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -312,11 +312,11 @@
       "type": "choice",
       "prompt": "邊個開頭係 /l/？",
       "choices": [
-        "loose",
         "tight",
-        "fit"
+        "fit",
+        "loose"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "loose 開頭係 /l/。tight 係 /t/。fit 係短 /ɪ/。"
     }
   ],

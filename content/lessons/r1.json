@@ -103,21 +103,21 @@
     {
       "prompt": "A table for two. 係幾多位？",
       "choices": [
-        "兩位",
         "一位",
-        "走廊位"
+        "走廊位",
+        "兩位"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "for two 係人數，唔係價錢。"
     },
     {
       "prompt": "Right this way. 你應該？",
       "choices": [
+        "講自己個名",
         "跟住佢行",
-        "遞護照",
-        "講自己個名"
+        "遞護照"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "right 呢度係「就係咁邊」。開頭 /r/。"
     }
   ],
@@ -262,21 +262,21 @@
       "prompt": "你聽到邊個？",
       "lemma": "red-adj",
       "choices": [
-        "red",
         "led",
-        "read"
+        "read",
+        "red"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "reservation",
       "choices": [
+        "頸鏈",
         "訂位",
-        "護照",
-        "頸鏈"
+        "護照"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -292,11 +292,11 @@
       "type": "choice",
       "prompt": "table 入面有冇 /r/？",
       "choices": [
-        "冇。/r/ 喺 right、reservation",
         "有，讀成 rable",
-        "同 light 同音"
+        "同 light 同音",
+        "冇。/r/ 喺 right、reservation"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "table 係 /ˈteɪ.bəl/。唔好為咗課名硬加 /r/。"
     }
   ],

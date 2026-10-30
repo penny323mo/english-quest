@@ -127,21 +127,21 @@
     {
       "prompt": "Would it be possible to change rooms? 即係問緊咩？",
       "choices": [
-        "問可唔可以換房",
         "話已經換咗",
-        "問幾多錢"
+        "問幾多錢",
+        "問可唔可以換房"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "Would it be possible 係禮貌咁問。"
     },
     {
       "prompt": "I am sorry for the inconvenience. 呢句即係點？",
       "choices": [
+        "問可唔可以加條被",
         "為不便道歉",
-        "話房冇問題",
-        "問可唔可以加條被"
+        "話房冇問題"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "sorry for the inconvenience 係先道歉。"
     }
   ],
@@ -293,21 +293,21 @@
       "prompt": "聽一次，揀你聽到嘅字：床上嗰張暖被",
       "lemma": "blanket-noun",
       "choices": [
-        "blanket",
         "towel",
-        "noisy"
+        "noisy",
+        "blanket"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「the air conditioning is very noisy」，係咩意思？",
       "choices": [
+        "免費",
         "嘈",
-        "靜",
-        "免費"
+        "靜"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -323,11 +323,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：blanket、noisy、定 quiet？",
       "choices": [
-        "blanket",
         "noisy",
-        "quiet"
+        "quiet",
+        "blanket"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "blanket 有 /l/。noisy 同 quiet 冇。"
     }
   ],

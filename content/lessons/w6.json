@@ -122,9 +122,9 @@
     {
       "prompt": "Please tell me a little about the role you are looking for, and what you are doing currently? 即係問緊咩？",
       "choices": [
-        "問你想做咩，同埋而家做緊咩",
-        "問你想取消個會",
-        "問你週末天氣"
+        "問你想搵咩職位，同埋而家做緊咩",
+        "問你想取消呢個職位",
+        "問你週末上邊一更"
       ],
       "answer": 0,
       "explain": "looking for 係想搵，currently 係而家。"
@@ -132,21 +132,21 @@
     {
       "prompt": "Last year I handled a busy Saturday at the counter, because I achieved a calm queue before lunch. 呢句即係點？",
       "choices": [
-        "處理過一個忙更，開飯前將隊排定",
-        "而家先至入職",
-        "想轉去做廚房"
+        "而家先至入職做櫃檯",
+        "想轉去另一個櫃檯",
+        "處理過一個忙更，開飯前將隊排定"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "handled 係處理咗，achieved 係做到。"
     },
     {
       "prompt": "That story sounds reliable. How did teamwork help you in the shop on that busy morning? 即係問緊咩？",
       "choices": [
+        "問面試幾時開始",
         "問團隊合作點幫到你",
-        "問你想唔想加班",
-        "問航班有冇延遲"
+        "問你想唔想加多一更"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "teamwork 係團隊合作，reliable 係可靠。"
     }
   ],
@@ -195,8 +195,8 @@
       "promptYue": "面試官問你而家做緊咩。你點介紹經驗？",
       "choices": [
         "I have three years of retail experience behind me, and I am bilingual in both Cantonese and English.",
-        "The soup arrived cold.",
-        "The flight has been cancelled."
+        "I would like a later shift at this counter.",
+        "Please tell me more about the team on this shift."
       ],
       "answer": 0,
       "explain": "用 experience，再講 bilingual。"
@@ -283,29 +283,29 @@
       "prompt": "聽一次，揀你聽到嘅字：強項",
       "lemma": "strength-noun",
       "choices": [
-        "strength",
         "example",
-        "teamwork"
+        "teamwork",
+        "strength"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "你講「I have three years of retail experience behind me, and I am bilingual in both Cantonese and English.」，bilingual 係咩意思？",
       "choices": [
-        "識兩種話",
-        "而家在職",
-        "可靠"
+        "可靠嘅強項",
+        "識兩種話，面試用得着",
+        "而家在職做櫃檯"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "面試官講「Could you please give one clear example of a recent customer-facing task you enjoyed at the counter?」，customer-facing 係咩意思？",
       "choices": [
         "對客",
-        "幕後",
-        "過夜"
+        "幕後唔係櫃檯",
+        "過夜更"
       ],
       "answer": 0
     },
@@ -313,11 +313,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：bilingual、strength、定 shift？",
       "choices": [
-        "bilingual",
         "strength",
-        "shift"
+        "shift",
+        "bilingual"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "bilingual 有 /l/。strength 同 shift 冇。"
     }
   ],
@@ -343,5 +343,15 @@
       "teamwork-noun"
     ]
   },
-  "next": "T9"
+  "next": "T9",
+  "topicTags": [
+    "職位",
+    "更",
+    "團隊",
+    "櫃檯",
+    "面試",
+    "經驗",
+    "強項",
+    "對客"
+  ]
 }

@@ -130,21 +130,21 @@
     {
       "prompt": "Would it help if we replace it? 即係問緊咩？",
       "choices": [
-        "問換過會唔會解決到",
         "話已經退咗款",
-        "話咪錶開咗"
+        "話咪錶開咗",
+        "問換過會唔會解決到"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "Would it help if 係提議，唔係承諾一定得。"
     },
     {
       "prompt": "repair it immediately 呢句即係點？",
       "choices": [
+        "只係寫低",
         "即刻修理",
-        "聽日先睇",
-        "只係寫低"
+        "聽日先睇"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "immediately 係即刻。"
     }
   ],
@@ -296,21 +296,21 @@
       "prompt": "聽一次，揀你聽到嘅字：整返個扣",
       "lemma": "repair-verb",
       "choices": [
-        "repair",
         "refund",
-        "complaint"
+        "complaint",
+        "repair"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「I will write the complaint clearly, and you will have an update before the shop closes tonight.」，係咩意思？",
       "choices": [
+        "收據",
         "投訴",
-        "換貨",
-        "收據"
+        "換貨"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -326,11 +326,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：immediately、refund、定 issue？",
       "choices": [
-        "immediately",
         "refund",
-        "issue"
+        "issue",
+        "immediately"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "immediately 有 /l/。"
     }
   ],

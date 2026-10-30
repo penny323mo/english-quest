@@ -123,21 +123,21 @@
     {
       "prompt": "Is the diamond natural? 客人想知？",
       "choices": [
-        "粒鑽石係咪天然",
         "個碼緊唔緊",
-        "總數幾多"
+        "總數幾多",
+        "粒鑽石係咪天然"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "natural 係天然。處理過要另外講。"
     },
     {
       "prompt": "eighteen karat 呢句即係點？",
       "choices": [
+        "稅率",
         "金嘅開數",
-        "鑽石幾多克拉重量",
-        "稅率"
+        "鑽石幾多克拉重量"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "karat 呢度係金嘅開。純金先至接近二十四開。"
     }
   ],
@@ -282,21 +282,21 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "diamond-noun",
       "choices": [
-        "diamond",
         "jade",
-        "gold"
+        "gold",
+        "diamond"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「This gold is authentic, and the stamp is clear on the inside.」，係咩意思？",
       "choices": [
+        "碼",
         "金",
-        "稅",
-        "碼"
+        "稅"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -312,11 +312,11 @@
       "type": "choice",
       "prompt": "邊個中間有 /θ/？",
       "choices": [
-        "authentic",
         "setting",
-        "pure"
+        "pure",
+        "authentic"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "authentic 有 /θ/。setting 開頭係 /s/。"
     }
   ],

@@ -132,21 +132,21 @@
     {
       "prompt": "If it rains heavily, please cancel the outdoor seat and keep us indoors beside the glass. 呢句即係點？",
       "choices": [
-        "落雨就取消室外，留喺室內",
         "落雨就要室外位",
-        "而家取消成個訂位"
+        "而家取消成個訂位",
+        "落雨就取消室外，留喺室內"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "cancel the outdoor seat 係唔要室外。"
     },
     {
       "prompt": "Please confirm the booking for us, and roughly what time do we come for dinner? 即係問緊咩？",
       "choices": [
+        "問窗邊幾多錢",
         "請確認，再問大概幾點",
-        "問可唔可以加酒",
-        "問窗邊幾多錢"
+        "問可唔可以加酒"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "confirm 係確認，roughly 係大概。"
     }
   ],
@@ -283,21 +283,21 @@
       "prompt": "聽一次，揀你聽到嘅字：確認",
       "lemma": "confirm-verb",
       "choices": [
-        "confirm",
         "cancel",
-        "book"
+        "book",
+        "confirm"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "你講「If it rains heavily, please cancel the outdoor seat and keep us indoors beside the glass.」，outdoor 係咩意思？",
       "choices": [
+        "候補",
         "室外",
-        "靠窗",
-        "候補"
+        "靠窗"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -313,11 +313,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：cancel、outdoor、定 book？",
       "choices": [
-        "cancel",
         "outdoor",
-        "book"
+        "book",
+        "cancel"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "cancel 有 /l/。outdoor 同 book 冇。"
     }
   ],

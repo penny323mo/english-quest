@@ -130,21 +130,21 @@
     {
       "prompt": "The side dish looks undercooked after the long wait, because the meal came much too late. 呢句即係點？",
       "choices": [
-        "配菜未煮熟，等得太耐",
         "個湯好熱",
-        "想叫經理埋單"
+        "想叫經理埋單",
+        "配菜未煮熟，等得太耐"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "undercooked 係未煮熟，long wait 係等好耐。"
     },
     {
       "prompt": "Could you please bring a complimentary warm dessert for both of us after you fix that plate? 即係問緊咩？",
       "choices": [
+        "問湯幾多錢",
         "問換完可唔可以有免費甜品",
-        "問可唔可以換窗位",
-        "問湯幾多錢"
+        "問可唔可以換窗位"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "complimentary 係免費送。"
     }
   ],
@@ -281,21 +281,21 @@
       "prompt": "聽一次，揀你聽到嘅字：換過",
       "lemma": "replace-verb",
       "choices": [
-        "replace",
         "understand",
-        "appreciate"
+        "appreciate",
+        "replace"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "你講「The side dish looks undercooked after the long wait, because the meal came much too late.」，undercooked 係咩意思？",
       "choices": [
+        "免費",
         "未煮熟",
-        "太鹹",
-        "免費"
+        "太鹹"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -311,11 +311,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：cold、replace、定 manager？",
       "choices": [
-        "cold",
         "replace",
-        "manager"
+        "manager",
+        "cold"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "cold 有 /l/。replace 同 manager 冇。"
     }
   ],

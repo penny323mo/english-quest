@@ -143,21 +143,21 @@
     {
       "prompt": "Could I have the sauce on the side? 即係問緊咩？",
       "choices": [
-        "醬另上",
         "醬唔要得",
-        "要多啲辣"
+        "要多啲辣",
+        "醬另上"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "on the side 係另上。唔要先至係 without。"
     },
     {
       "prompt": "Thank you for telling me. 你應該？",
       "choices": [
+        "問佢訂位",
         "多謝客人話你知",
-        "叫佢埋單",
-        "問佢訂位"
+        "叫佢埋單"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "聽到過敏先多謝，再去查成分。"
     }
   ],
@@ -304,21 +304,21 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "allergic-adj",
       "choices": [
-        "allergic",
         "allergy",
-        "instead"
+        "instead",
+        "allergic"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「We will check the ingredients, and I will tell you what is in the dish.」，係咩意思？",
       "choices": [
+        "辣",
         "麩質",
-        "貝類",
-        "辣"
+        "貝類"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -334,11 +334,11 @@
       "type": "choice",
       "prompt": "邊個有 /l/？",
       "choices": [
-        "shellfish",
         "spicy",
-        "sauce"
+        "sauce",
+        "shellfish"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "shellfish 有 /l/。allergic 重音喺中間。"
     }
   ],

@@ -128,21 +128,21 @@
     {
       "prompt": "Would it be possible to confirm? 即係問緊咩？",
       "choices": [
-        "問可唔可以確認",
         "話已經取消",
-        "問幾多錢"
+        "問幾多錢",
+        "問可唔可以確認"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "Would it be possible 係禮貌咁問。"
     },
     {
       "prompt": "I propose Friday. 呢句即係點？",
       "choices": [
+        "我唔會再跟進",
         "我提議星期五",
-        "我拒絕星期五",
-        "我唔會再跟進"
+        "我拒絕星期五"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "propose 係提議。"
     }
   ],
@@ -294,21 +294,21 @@
       "prompt": "聽一次，揀你聽到嘅字：要交貨嗰日",
       "lemma": "deadline-noun",
       "choices": [
-        "deadline",
         "grateful",
-        "confirm"
+        "confirm",
+        "deadline"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「Good morning Tom, I am following up today on the email I have sent regarding the deadline.」，following up 係咩意思？",
       "choices": [
+        "附件",
         "跟進",
-        "取消",
-        "附件"
+        "取消"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -324,11 +324,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：clarify、propose、定 confirm？",
       "choices": [
-        "clarify",
         "propose",
-        "confirm"
+        "confirm",
+        "clarify"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "clarify 有 /l/。propose 同 confirm 冇。"
     }
   ],

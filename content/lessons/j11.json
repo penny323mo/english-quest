@@ -136,21 +136,21 @@
     {
       "prompt": "If you chose a contemporary piece, would you like it understated? 即係問緊咩？",
       "choices": [
-        "如果揀現代款，會唔會想低調",
         "話已經揀咗經典款",
-        "問檔期滿未"
+        "問檔期滿未",
+        "如果揀現代款，會唔會想低調"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "If 加過去式，would 係假如。"
     },
     {
       "prompt": "If I placed a deposit today, the timeline would still fit. 呢句即係點？",
       "choices": [
+        "時間表已經過咗",
         "如果今日落訂金，時間表都趕得切",
-        "我今日唔會落訂金",
-        "時間表已經過咗"
+        "我今日唔會落訂金"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "第二條件式係講假如，唔係講事實。"
     }
   ],
@@ -289,21 +289,21 @@
       "prompt": "聽一次，揀你聽到嘅字：做到幾時",
       "lemma": "timeline-noun",
       "choices": [
-        "timeline",
         "design",
-        "deposit"
+        "deposit",
+        "timeline"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「The occasion is an anniversary dinner, and my preference is a custom design with a classic gold look.」，preference 係咩意思？",
       "choices": [
+        "檔期",
         "偏好",
-        "訂金",
-        "檔期"
+        "訂金"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -319,11 +319,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：classic、occasion、定 statement？",
       "choices": [
-        "classic",
         "occasion",
-        "statement"
+        "statement",
+        "classic"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "classic 有 /l/。occasion 同 statement 冇。"
     }
   ],

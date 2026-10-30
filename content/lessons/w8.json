@@ -1,0 +1,347 @@
+{
+  "id": "W8",
+  "unit": "W",
+  "titleYue": "開會報告進度",
+  "titleEn": "A team meeting update",
+  "canDoYue": "你識話進度跟得上定落後、星期五之前跟進，同埋寫低行動項。",
+  "canDoEn": "Say the work is on track or behind schedule, follow up by Friday, and name an action item.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/w8.webp",
+  "cast": [
+    "niles",
+    "sora"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "on-track-phrase",
+    "behind-schedule-phrase",
+    "follow-up-verb",
+    "friday-noun",
+    "question-noun",
+    "meeting-noun",
+    "action-item-noun"
+  ],
+  "topicTags": [
+    "進度",
+    "星期五",
+    "跟進",
+    "會議",
+    "問題",
+    "行動"
+  ],
+  "next": "D3",
+  "dialogue": [
+    {
+      "id": "w8-l1",
+      "speaker": "sora",
+      "speakerLabel": "Sora",
+      "text": "Our design work is fully on track this month, and the morning meeting can stay short today.",
+      "glossYue": "我哋設計呢個月完全跟得上進度，今朝個會可以短啲。",
+      "audio": "assets/audio/lines/w8-l1.mp3",
+      "audioSlow": "assets/audio/lines/w8-l1-slow.mp3",
+      "say": "Our design work is fully on track this month, and the morning meeting can stay short today.",
+      "hideGloss": false
+    },
+    {
+      "id": "w8-l2",
+      "speaker": "niles",
+      "speakerLabel": "Niles",
+      "text": "Which part of the monthly plan is behind schedule now, and who owns that open piece of work?",
+      "glossYue": "月計劃邊一部分而家落後，嗰部分邊個負責？",
+      "audio": "assets/audio/lines/w8-l2.mp3",
+      "audioSlow": "assets/audio/lines/w8-l2-slow.mp3",
+      "say": "Which part of the monthly plan is behind schedule now, and who owns that open piece of work?",
+      "hideGloss": false
+    },
+    {
+      "id": "w8-l3",
+      "speaker": "sora",
+      "speakerLabel": "Sora",
+      "text": "The sample run is behind schedule, so I will follow up with the client myself this afternoon.",
+      "glossYue": "樣辦落後咗，我下晝自己同客戶跟進。",
+      "audio": "assets/audio/lines/w8-l3.mp3",
+      "audioSlow": "assets/audio/lines/w8-l3-slow.mp3",
+      "say": "The sample run is behind schedule, so I will follow up with the client myself this afternoon.",
+      "hideGloss": false
+    },
+    {
+      "id": "w8-l4",
+      "speaker": "niles",
+      "speakerLabel": "Niles",
+      "text": "Can you follow up by Friday and send me a short written note after you call them back?",
+      "glossYue": "你可唔可以星期五之前跟進，打完電話寫張短筆記畀我？",
+      "audio": "assets/audio/lines/w8-l4.mp3",
+      "audioSlow": "assets/audio/lines/w8-l4-slow.mp3",
+      "say": "Can you follow up by Friday and send me a short written note after you call them back?",
+      "hideGloss": true
+    },
+    {
+      "id": "w8-l5",
+      "speaker": "sora",
+      "speakerLabel": "Sora",
+      "text": "I will follow up by Friday, and I will send the written note out during that same quiet afternoon.",
+      "glossYue": "我會星期五之前跟進，同一個安靜下晝將筆記寄出。",
+      "audio": "assets/audio/lines/w8-l5.mp3",
+      "audioSlow": "assets/audio/lines/w8-l5-slow.mp3",
+      "say": "I will follow up by Friday, and I will send the written note out during that same quiet afternoon.",
+      "hideGloss": true
+    },
+    {
+      "id": "w8-l6",
+      "speaker": "niles",
+      "speakerLabel": "Niles",
+      "text": "Are there any open questions before we write down each action item for the whole team?",
+      "glossYue": "寫低每個行動項之前，仲有冇未解決嘅問題？",
+      "audio": "assets/audio/lines/w8-l6.mp3",
+      "audioSlow": "assets/audio/lines/w8-l6-slow.mp3",
+      "say": "Are there any open questions before we write down each action item for the whole team?",
+      "hideGloss": true
+    },
+    {
+      "id": "w8-l7",
+      "speaker": "sora",
+      "speakerLabel": "Sora",
+      "text": "The action item is for me to call the client on Friday morning before we break.",
+      "glossYue": "行動項係我星期五朝早打電話畀客戶，散會之前。",
+      "audio": "assets/audio/lines/w8-l7.mp3",
+      "audioSlow": "assets/audio/lines/w8-l7-slow.mp3",
+      "say": "The action item is for me to call the client on Friday morning before we break.",
+      "hideGloss": true
+    },
+    {
+      "id": "w8-l8",
+      "speaker": "niles",
+      "speakerLabel": "Niles",
+      "text": "Please send that written action item straight after the meeting so the whole plan stays clear.",
+      "glossYue": "會後請將書面行動項寄出，成個計劃先清晰。",
+      "audio": "assets/audio/lines/w8-l8.mp3",
+      "audioSlow": "assets/audio/lines/w8-l8-slow.mp3",
+      "say": "Please send that written action item straight after the meeting so the whole plan stays clear.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Our design work is fully on track this month, and the morning meeting can stay short today. 呢句即係點？",
+      "choices": [
+        "設計進度跟得上，今朝個會可以短",
+        "進度落後，個會要長",
+        "星期五先跟進，唔係講進度"
+      ],
+      "answer": 0,
+      "explain": "on track 係跟得上進度。"
+    },
+    {
+      "prompt": "The sample run is behind schedule, so I will follow up with the client myself this afternoon. 呢句即係點？",
+      "choices": [
+        "星期五先跟進客戶",
+        "會議冇問題，唔使跟進",
+        "樣辦落後，我自己下晝跟進"
+      ],
+      "answer": 2,
+      "explain": "behind schedule 係落後。follow up 係跟進。"
+    },
+    {
+      "prompt": "The action item is for me to call the client on Friday morning before we break. 呢句即係點？",
+      "choices": [
+        "會後先將行動項寄出",
+        "行動項係我星期五朝早打畀客戶",
+        "行動項係你星期五寫問題"
+      ],
+      "answer": 1,
+      "explain": "action item 係行動項。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Our design work is fully ___ this month, and the morning meeting can stay short.",
+      "example": "Our design work is fully on track this month, and the morning meeting can stay short.",
+      "glossYue": "進度跟得上。",
+      "answer": "on track",
+      "choices": [
+        "on track",
+        "behind schedule",
+        "action item"
+      ]
+    },
+    {
+      "pattern": "The sample run is ___ , so I will follow up with the client this afternoon.",
+      "example": "The sample run is behind schedule, so I will follow up with the client.",
+      "glossYue": "樣辦落後，我會跟進。",
+      "answer": "behind schedule",
+      "choices": [
+        "behind schedule",
+        "on track",
+        "Friday"
+      ]
+    },
+    {
+      "pattern": "The action item is for me to call the client on ___ morning before we break.",
+      "example": "The action item is for me to call the client on Friday morning before we break.",
+      "glossYue": "星期五朝早打畀客戶。",
+      "answer": "Friday",
+      "choices": [
+        "Friday",
+        "meeting",
+        "question"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "w8-l1",
+    "hint": "Our design work is fully on track this month, and the morning meeting can stay short today."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "樣辦落後。你點講？",
+      "choices": [
+        "The sample run is behind schedule, so I will follow up with the client myself this afternoon.",
+        "Our design work is fully on track this month, and the morning meeting can stay short today.",
+        "The action item is for me to call the client on Friday morning before we break."
+      ],
+      "answer": 0,
+      "explain": "講 behind schedule，再講 follow up。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "I",
+        "will",
+        "follow",
+        "up"
+      ],
+      "answer": [
+        "I",
+        "will",
+        "follow",
+        "up"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "sora",
+    "intro": "你喺會上報告。同 Niles 講進度同行動項。可以講：schedule、Friday。",
+    "turns": [
+      {
+        "partner": "Niles",
+        "partnerId": "niles",
+        "line": "Which part of the monthly plan is behind schedule now, and who owns that open piece of work?",
+        "audio": "assets/audio/lines/w8-l2.mp3",
+        "audioSlow": "assets/audio/lines/w8-l2-slow.mp3",
+        "expect": "The sample run is behind schedule, so I will follow up with the client myself this afternoon.",
+        "keywords": [
+          "behind",
+          "schedule"
+        ],
+        "modelAudio": "assets/audio/lines/w8-l3.mp3",
+        "modelSlow": "assets/audio/lines/w8-l3-slow.mp3"
+      },
+      {
+        "partner": "Niles",
+        "partnerId": "niles",
+        "line": "Can you follow up by Friday and send me a short written note after you call them back?",
+        "audio": "assets/audio/lines/w8-l4.mp3",
+        "audioSlow": "assets/audio/lines/w8-l4-slow.mp3",
+        "expect": "I will follow up by Friday, and I will send the written note out during that same quiet afternoon.",
+        "keywords": [
+          "Friday",
+          "follow"
+        ],
+        "modelAudio": "assets/audio/lines/w8-l5.mp3",
+        "modelSlow": "assets/audio/lines/w8-l5-slow.mp3"
+      },
+      {
+        "partner": "Niles",
+        "partnerId": "niles",
+        "line": "Are there any open questions before we write down each action item for the whole team?",
+        "audio": "assets/audio/lines/w8-l6.mp3",
+        "audioSlow": "assets/audio/lines/w8-l6-slow.mp3",
+        "expect": "The action item is for me to call the client on Friday morning before we break.",
+        "keywords": [
+          "action",
+          "item"
+        ],
+        "modelAudio": "assets/audio/lines/w8-l7.mp3",
+        "modelSlow": "assets/audio/lines/w8-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你喺會議聽到嘅字：會議",
+      "lemma": "meeting-noun",
+      "choices": [
+        "meeting",
+        "Friday",
+        "question"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "聽一次，揀你喺會議聽到嘅字：星期五",
+      "lemma": "friday-noun",
+      "choices": [
+        "meeting",
+        "question",
+        "Friday"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "meaning",
+      "prompt": "你講「Our design work is fully on track this month, and the morning meeting can stay short today.」，on track 係咩意思？",
+      "choices": [
+        "有問題",
+        "跟得上進度",
+        "進度落後"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "你講「The sample run is behind schedule, so I will follow up with the client myself this afternoon.」，follow up 係咩意思？",
+      "choices": [
+        "跟進",
+        "會議",
+        "行動"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個字有 /l/：follow、Friday、定 meeting？",
+      "choices": [
+        "Friday",
+        "meeting",
+        "follow"
+      ],
+      "answer": 2,
+      "explain": "follow 有 /l/。"
+    }
+  ],
+  "sound": {
+    "ipa": "/aɪ/",
+    "title": "Friday 入面嗰個音",
+    "note": "Friday 有 /aɪ/。meeting 冇。",
+    "pairs": [
+      {
+        "a": "friday-noun",
+        "b": "meeting-noun"
+      },
+      {
+        "a": "question-noun",
+        "b": "follow-up-verb"
+      }
+    ],
+    "drill": [
+      "friday-noun",
+      "meeting-noun",
+      "question-noun",
+      "follow-up-verb"
+    ]
+  }
+}

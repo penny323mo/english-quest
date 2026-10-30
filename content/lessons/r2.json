@@ -97,21 +97,21 @@
     {
       "prompt": "Can I have some water? 係講咩？",
       "choices": [
-        "可唔可以畀我杯水",
         "我想叫雞",
-        "我睇吓先"
+        "我睇吓先",
+        "可唔可以畀我杯水"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "Can I have 係客氣咁要嘢。"
     },
     {
       "prompt": "Anything else? 係問咩？",
       "choices": [
+        "請跟我嚟",
         "仲有冇其他",
-        "一共幾多錢",
-        "請跟我嚟"
+        "一共幾多錢"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "可以再叫，或者問 What do you recommend?"
     }
   ],
@@ -258,21 +258,21 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "cant-verb",
       "choices": [
-        "can't",
         "can",
-        "cat"
+        "cat",
+        "can't"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「Can I have some water, please, and no ice in the glass?」，係咩意思？",
       "choices": [
+        "登機證",
         "推薦",
-        "訂位",
-        "登機證"
+        "訂位"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -288,11 +288,11 @@
       "type": "choice",
       "prompt": "can't 同 can 差喺邊？",
       "choices": [
-        "can't 有清楚嘅 /t/",
         "兩個完全一樣",
-        "can't 係 /ʃ/"
+        "can't 係 /ʃ/",
+        "can't 有清楚嘅 /t/"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "食咗尾 /t/ 就會聽成 can。問句入面 can 通常好輕 /kən/。"
     }
   ],

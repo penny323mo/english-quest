@@ -3,11 +3,12 @@ import fs from "node:fs";
 import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
+import { seededOrder } from "../web/src/choice-order.js";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), "utf8"));
 const ids = new Set(lex.items.map((item) => item.id));
-const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "t1", "t2", "t3", "t4", "t5", "t6", "r1", "r2", "r3", "r4", "r5", "w1", "d1", "d2", "t7", "w2", "w3", "d3", "j11", "j12", "t8", "w4", "r6", "w5", "f5", "f6", "d4", "d5", "r7", "w6", "t9", "d6", "r8", "j13", "r9", "w7", "t10"];
+const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "t1", "t2", "t3", "t4", "t5", "t6", "r1", "r2", "r3", "r4", "r5", "w1", "d1", "d2", "t7", "w2", "w3", "d3", "j11", "j12", "t8", "w4", "r6", "w5", "f5", "f6", "d4", "d5", "r7", "w6", "t9", "d6", "r8", "j13", "r9", "w7", "t10", "d7", "w8", "j14"];
 const lessons = shipped.map((id) =>
   JSON.parse(fs.readFileSync(path.join(root, "content/lessons", `${id}.json`), "utf8")),
 );
@@ -20,8 +21,8 @@ function exists(rel) {
   assert.ok(fs.statSync(file).size > 400, rel);
 }
 
-test("fifty-one lessons each carry the 12-beat payload", () => {
-  assert.equal(lessons.length, 51);
+test("fifty-four lessons each carry the 12-beat payload", () => {
+  assert.equal(lessons.length, 54);
   for (const lesson of lessons) {
     for (const key of ["hero", "canDoYue", "canDoEn", "dialogue", "understand", "chunks", "shadow", "build", "roleplay", "quiz", "sound", "next"]) {
       assert.ok(key in lesson, `${lesson.id} ${key}`);
@@ -192,7 +193,7 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
     );
   }
   const shippedOnPath = flatPath.filter((entry) => !entry.soon).map((entry) => entry.id);
-  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "D4", "D5", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "J6", "J7", "T5", "R5", "W1", "D1", "D2", "T7", "W4", "R8", "W7", "J8", "J9", "J10", "T6", "R6", "J12", "R7", "T8", "W2", "W3", "D3", "T10", "W5", "J11", "W6", "T9", "J13"]);
+  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "D4", "D5", "D7", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "J6", "J7", "T5", "R5", "W1", "D1", "D2", "T7", "W4", "R8", "W7", "J8", "J9", "J10", "T6", "R6", "J12", "R7", "T8", "W2", "W3", "W8", "D3", "T10", "W5", "J14", "J11", "W6", "T9", "J13"]);
   assert.equal(flatPath.find((entry) => entry.id === "J8").cefr, "B1");
   const said = (lesson) => lesson.dialogue.map((line) => line.text).join("\n");
   assert.ok(j4.dialogue.length >= 6 && j4.dialogue.length <= 10);
@@ -289,7 +290,17 @@ test("round 26 spoken goals, tray card, and spelled model", () => {
   const w3 = lessons.find((lesson) => lesson.id === "W3");
   assert.equal(d1.next, "D2");
   assert.equal(w2.next, "W3");
-  assert.equal(w3.next, "D3");
+  assert.equal(w3.next, "W8");
+  const w8 = lessons.find((lesson) => lesson.id === "W8");
+  assert.equal(w8.next, "D3");
+  const d5 = lessons.find((lesson) => lesson.id === "D5");
+  const d7 = lessons.find((lesson) => lesson.id === "D7");
+  assert.equal(d5.next, "D7");
+  assert.equal(d7.next, "J3");
+  const w5 = lessons.find((lesson) => lesson.id === "W5");
+  const j14 = lessons.find((lesson) => lesson.id === "J14");
+  assert.equal(w5.next, "J14");
+  assert.equal(j14.next, "J11");
   assert.equal(d1.cefr, "A2/B1");
   assert.equal(w2.cefr, "B1");
   assert.equal(w3.cefr, "B1");
@@ -369,7 +380,7 @@ test("the app has a mic fallback and does not phone home", () => {
   assert.match(lesson, /改為即時講/);
   assert.match(lesson, />聽我</);
   assert.match(lesson, /咪未開/);
-  assert.match(lesson, /呢輪五十一課你行完啦/);
+  assert.match(lesson, /呢輪五十四課你行完啦/);
   assert.match(lesson, /setDone\(true\)/);
   assert.match(lesson, /playSfx/);
   assert.match(fs.readFileSync(path.join(root, "web/src/sfx.ts"), "utf8"), /AudioContext/);
@@ -428,7 +439,7 @@ test("role-play tip names a character or tells you it is your turn", () => {
   assert.match(lesson, /你扮 \$\{name\}/);
   assert.equal(lesson.includes("你而家係"), false);
   const data = fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8");
-  assert.match(data, /"F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "D4", "D5", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "J6", "J7", "T5", "R5", "W1", "D1", "D2", "T7", "W4", "R8", "W7", "J8", "J9", "J10", "T6", "R6", "J12", "R7", "T8", "W2", "W3", "D3", "T10", "W5", "J11", "W6", "T9", "J13"/);
+  assert.match(data, /"F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "D4", "D5", "D7", "J3", "T2", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "J6", "J7", "T5", "R5", "W1", "D1", "D2", "T7", "W4", "R8", "W7", "J8", "J9", "J10", "T6", "R6", "J12", "R7", "T8", "W2", "W3", "W8", "D3", "T10", "W5", "J14", "J11", "W6", "T9", "J13"/);
   assert.match(data, /const order = SHIPPED/);
 });
 
@@ -646,7 +657,7 @@ test("a later dialogue line does not reuse three content lemmas", () => {
 });
 
 test("dialogue speakers alternate and a staff reply shares a content word", () => {
-  const staff = new Set(["mei", "mina", "cole", "ana", "kai", "sam", "kim", "ada", "ren", "jo", "ray", "ben", "lea", "owen", "wen", "pat", "noa", "may", "suki", "pesi", "hugh", "nori", "reid", "opal"]);
+  const staff = new Set(["mei", "mina", "cole", "ana", "kai", "sam", "kim", "ada", "ren", "jo", "ray", "ben", "lea", "owen", "wen", "pat", "noa", "may", "suki", "pesi", "hugh", "nori", "reid", "opal", "wynn", "niles", "ida"]);
   const func = new Set("a an the i you we they he she it my your our is are was were be been am have has had do does did will would can could should may might to of in on at for with and or but if so not this that these those me him her them us please just very still also then there here from as about into".split(" "));
   const customerQuestion = /which\b.+\bbetter\b|how long will this\b.+\bparcel\b|\bspell my name\b/i;
   function words(text) {
@@ -718,10 +729,89 @@ test("a dialogue line does not stack two filler paddings", () => {
     }
     return found;
   }
+  const hard = ["later on", "once more here", "from now", "very clearly for you", "gladly", "full working day", "with care", "whole office team"];
   for (const lesson of lessons) {
     for (const line of lesson.dialogue) {
       const found = hits(line.text);
       assert.ok(found.length < 2, `${line.id} ${found.join("+")} ${line.text}`);
+      const low = line.text.toLowerCase();
+      for (const phrase of hard) assert.equal(low.includes(phrase), false, `${line.id} ${phrase}`);
     }
   }
+});
+
+test("a lesson does not pad three because clauses", () => {
+  const func = new Set("a an the i you we they he she it my your our is are was were be been am have has had do does did will would can could should may might to of in on at for with and or but if so not this that these those me him her them us please just very still also then there here from as about into".split(" "));
+  function words(text) {
+    return new Set((text.toLowerCase().match(/[a-z']+/g) || []).filter((tok) => tok.length > 2 && !func.has(tok)));
+  }
+  for (const lesson of lessons) {
+    const hits = lesson.dialogue.filter((line) => /\bbecause\b/i.test(line.text));
+    assert.ok(hits.length <= 2, `${lesson.id} because ${hits.length}`);
+    for (const line of hits) {
+      const parts = line.text.split(/\bbecause\b/i);
+      if (parts.length < 2) continue;
+      const shared = [...words(parts[0])].filter((tok) => words(parts.slice(1).join(" ")).has(tok));
+      assert.ok(shared.length < 2, `${line.id} because ${shared.join(",")}`);
+    }
+  }
+});
+
+test("rewritten scenes answer the question they were asked", () => {
+  const said = (id) => lessons.find((lesson) => lesson.id === id).dialogue.map((line) => line.text).join("\n");
+  const gloss = (id) => lessons.find((lesson) => lesson.id === id).dialogue.map((line) => line.glossYue).join("\n");
+  assert.doesNotMatch(said("D6"), /write a prescription/i);
+  assert.doesNotMatch(said("R8"), /your shop/i);
+  const r8 = lessons.find((lesson) => lesson.id === "R8");
+  const pay = r8.understand.find((item) => /how can i pay/i.test(item.prompt));
+  assert.ok(pay, "r8 pay");
+  assert.doesNotMatch(pay.explain, /how long|幾耐/);
+  assert.match(pay.choices[pay.answer], /付|畀/);
+  assert.doesNotMatch(said("J13"), /trays|than we hoped|new schedule/i);
+  assert.doesNotMatch(gloss("J13"), /請把|同一張紙/);
+  assert.match(gloss("J13"), /請將/);
+  assert.match(gloss("J13"), /嗰封電郵/);
+  assert.doesNotMatch(said("W7"), /rest tonight|next shift opens/i);
+  assert.match(said("W7"), /Mei can cover/);
+  assert.match(said("W7"), /not feeling well/);
+  assert.match(said("T10"), /baggage receipt/i);
+  assert.doesNotMatch(said("T10"), /suitcase handle|evening truck|should/i);
+  const r9 = lessons.find((lesson) => lesson.id === "R9");
+  assert.match(r9.dialogue[3].text, /split/i);
+});
+
+test("same-scene choices share a lemma or topic tag", () => {
+  const func = new Set("a an the i you we they he she it my your our is are was were be been am have has had do does did will would can could should may might to of in on at for with and or but if so not this that these those me him her them us please just very still also then there here from as about into".split(" "));
+  const byId = Object.fromEntries(lex.items.map((item) => item.id).map((id) => [id, lex.items.find((item) => item.id === id)]));
+  for (const lesson of lessons) {
+    if (!lesson.topicTags) continue;
+    const vocab = [];
+    for (const id of lesson.lemmas) {
+      for (const tok of byId[id].lemma.toLowerCase().replace(/-/g, " ").match(/[a-z']+/g) || []) {
+        if (tok.length > 2 && !func.has(tok)) vocab.push(tok);
+      }
+    }
+    for (const item of [...lesson.understand, ...lesson.quiz]) {
+      for (const choice of item.choices || []) {
+        const text = String(choice);
+        const low = text.toLowerCase();
+        const ok = lesson.topicTags.some((tag) => text.includes(tag)) || vocab.some((tok) => low.includes(tok));
+        assert.equal(ok, true, `${lesson.id} ${text}`);
+      }
+    }
+  }
+});
+
+test("a lesson does not keep every correct choice first", () => {
+  for (const lesson of lessons) {
+    const items = [...lesson.understand, ...lesson.quiz.filter((item) => Number.isInteger(item.answer))];
+    assert.equal(items.some((item) => item.answer !== 0), true, lesson.id);
+  }
+});
+
+test("seeded order is a stable permutation", () => {
+  const a = seededOrder(5, 42);
+  assert.deepEqual(a, seededOrder(5, 42));
+  assert.deepEqual([...a].sort((x, y) => x - y), [0, 1, 2, 3, 4]);
+  assert.equal(new Set(a).size, 5);
 });

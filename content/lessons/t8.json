@@ -132,21 +132,21 @@
     {
       "prompt": "My stay is for five days. 呢句即係點？",
       "choices": [
-        "我會逗留五日",
         "我住五日已經走",
-        "我唔肯定幾多日"
+        "我唔肯定幾多日",
+        "我會逗留五日"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "for five days 係為期五日。"
     },
     {
       "prompt": "I have nothing to declare apart from this small gift. 呢句即係點？",
       "choices": [
+        "我唔使填表格",
         "除咗呢份細禮物就冇嘢申報",
-        "我仲有好多貨物",
-        "我唔使填表格"
+        "我仲有好多貨物"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "nothing to declare 係冇額外要報。"
     }
   ],
@@ -285,21 +285,21 @@
       "prompt": "聽一次，揀你聽到嘅字：你住嘅地方",
       "lemma": "hotel-noun",
       "choices": [
-        "hotel",
         "stamp",
-        "goods"
+        "goods",
+        "hotel"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「Good morning. What is the main purpose of your visit today, and are you here for tourism?」，purpose 係咩意思？",
       "choices": [
+        "蓋章",
         "目的",
-        "回程機票",
-        "蓋章"
+        "回程機票"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -315,11 +315,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：declare、purpose、定 gift？",
       "choices": [
-        "declare",
         "purpose",
-        "gift"
+        "gift",
+        "declare"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "declare 有 /l/。purpose 同 gift 冇。"
     }
   ],

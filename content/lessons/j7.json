@@ -166,21 +166,21 @@
     {
       "prompt": "This purchase is tax-free. 呢句即係點？",
       "choices": [
-        "呢單可以免稅",
         "稅已經包咗",
-        "要加一成"
+        "要加一成",
+        "呢單可以免稅"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "tax-free 係免稅。要睇護照。"
     },
     {
       "prompt": "Here is your receipt. 你遞畀客人？",
       "choices": [
+        "禮盒",
         "收據",
-        "退款表格",
-        "禮盒"
+        "退款表格"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "receipt 重音喺第二節。發票先至係 invoice。"
     }
   ],
@@ -332,21 +332,21 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "contactless-adj",
       "choices": [
-        "contactless",
         "signature",
-        "wrap"
+        "wrap",
+        "contactless"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「This purchase is tax-free for you, which means you can claim the tax later.」，係咩意思？",
       "choices": [
+        "紙袋",
         "免稅",
-        "收據",
-        "紙袋"
+        "收據"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -362,11 +362,11 @@
       "type": "choice",
       "prompt": "邊個有 /l/？",
       "choices": [
-        "contactless",
         "cash",
-        "pay"
+        "pay",
+        "contactless"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "contactless 有 /l/。cash 尾係 /ʃ/。"
     }
   ],

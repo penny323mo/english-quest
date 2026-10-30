@@ -95,21 +95,21 @@
     {
       "prompt": "I'm sorry. 係咩意思？",
       "choices": [
-        "對唔住",
         "唔使客氣",
-        "十蚊"
+        "十蚊",
+        "對唔住"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "sorry 係道歉。you're welcome 先至係回應多謝。"
     },
     {
       "prompt": "You're welcome. 幾時講？",
       "choices": [
+        "第一次見面",
         "人哋講咗 thank you 之後",
-        "問而家幾點",
-        "第一次見面"
+        "問而家幾點"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "即係唔使客氣。"
     }
   ],
@@ -250,21 +250,21 @@
       "prompt": "你聽到邊個？",
       "lemma": "let-verb",
       "choices": [
-        "let",
         "net",
-        "night"
+        "night",
+        "let"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "Excuse me",
       "choices": [
+        "三點",
         "唔該借借",
-        "十蚊",
-        "三點"
+        "十蚊"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -280,11 +280,11 @@
       "type": "choice",
       "prompt": "You're welcome 係邊種回應？",
       "choices": [
-        "唔使客氣，回應多謝",
         "問價錢",
-        "問幾點"
+        "問幾點",
+        "唔使客氣，回應多謝"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "人哋多謝你，你先講 you're welcome。"
     }
   ],

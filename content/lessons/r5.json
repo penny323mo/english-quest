@@ -133,21 +133,21 @@
     {
       "prompt": "Shall we split it? 係提議？",
       "choices": [
-        "分兩張單",
         "一齊坐窗邊",
-        "轉駁去另一條線"
+        "轉駁去另一條線",
+        "分兩張單"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "split 係分單。"
     },
     {
       "prompt": "keep the change 呢句即係點？",
       "choices": [
+        "打包蛋糕",
         "零錢唔使找，當貼士",
-        "服務費已經喺單上",
-        "打包蛋糕"
+        "服務費已經喺單上"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "keep the change 係唔使找。"
     }
   ],
@@ -297,21 +297,21 @@
       "prompt": "聽一次，揀你聽到嘅字：服務之後多畀嘅錢",
       "lemma": "tip-noun",
       "choices": [
-        "tip",
         "check",
-        "knife"
+        "knife",
+        "tip"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「Thank you, and the total does contain the staff fee before that extra tip.」，係咩意思？",
       "choices": [
+        "餐巾",
         "服務費",
-        "零錢",
-        "餐巾"
+        "零錢"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "service charge 係服務費，唔係貼士。"
     },
     {
@@ -328,11 +328,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：include、tip、定 check？",
       "choices": [
-        "include",
         "tip",
-        "check"
+        "check",
+        "include"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "include 有 /l/。tip 同 check 冇。"
     }
   ],

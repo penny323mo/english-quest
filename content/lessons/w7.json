@@ -26,38 +26,41 @@
       "id": "w7-l1",
       "speaker": "ines",
       "speakerLabel": "Ines",
-      "text": "Hello, I am calling because I am not feeling well and I cannot start my shift.",
-      "glossYue": "你好，我打電話因為我唔舒服，上唔到更。",
+      "text": "Hello, I am calling in sick because I am not feeling well and I cannot start my shift.",
+      "glossYue": "你好，我打電話請病假，因為我唔舒服，上唔到更。",
       "audio": "assets/audio/lines/w7-l1.mp3",
       "audioSlow": "assets/audio/lines/w7-l1-slow.mp3",
-      "say": "Hello, I am calling because I am not feeling well and I cannot start my shift."
+      "say": "Hello, I am calling in sick because I am not feeling well and I cannot start my shift.",
+      "hideGloss": false
     },
     {
       "id": "w7-l2",
       "speaker": "reid",
       "speakerLabel": "Reid",
       "text": "I am sorry to hear that. Could you bring a doctor's note when you return?",
-      "glossYue": "聽到你咁我都唔好意思。你返嚟可唔可以帶醫生紙？",
+      "glossYue": "聽到你咁真係唔好意思。返嚟可唔可以帶醫生紙？",
       "audio": "assets/audio/lines/w7-l2.mp3",
       "audioSlow": "assets/audio/lines/w7-l2-slow.mp3",
-      "say": "I am sorry to hear that. Could you bring a doctor's note when you return?"
+      "say": "I am sorry to hear that. Could you bring a doctor's note when you return?",
+      "hideGloss": false
     },
     {
       "id": "w7-l3",
       "speaker": "ines",
       "speakerLabel": "Ines",
-      "text": "Yes, I can bring a doctor's note, because the clinic wrote it this morning for me.",
-      "glossYue": "可以，我可以帶醫生紙，因為診所今朝寫咗畀我。",
+      "text": "Yes, I can bring the doctor's note that the clinic wrote for me this morning.",
+      "glossYue": "可以，我可以帶診所今朝開嘅醫生紙。",
       "audio": "assets/audio/lines/w7-l3.mp3",
       "audioSlow": "assets/audio/lines/w7-l3-slow.mp3",
-      "say": "Yes, I can bring a doctor's note, because the clinic wrote it this morning for me."
+      "say": "Yes, I can bring the doctor's note that the clinic wrote for me this morning.",
+      "hideGloss": false
     },
     {
       "id": "w7-l4",
       "speaker": "reid",
       "speakerLabel": "Reid",
       "text": "Who can cover your shift if the shop stays busy while you rest at home?",
-      "glossYue": "你喺屋企休息、舖頭又忙嗰陣，邊個可以頂你呢更？",
+      "glossYue": "如果你喺屋企休息，舖頭忙，邊個可以頂你更？",
       "audio": "assets/audio/lines/w7-l4.mp3",
       "audioSlow": "assets/audio/lines/w7-l4-slow.mp3",
       "say": "Who can cover your shift if the shop stays busy while you rest at home?",
@@ -67,11 +70,11 @@
       "id": "w7-l5",
       "speaker": "ines",
       "speakerLabel": "Ines",
-      "text": "I can ask a colleague to cover my shift, because the shop stays very busy.",
-      "glossYue": "我可以請同事頂更，因為舖頭仍然好忙。",
+      "text": "Mei can cover my shift at the shop this morning while I stay home.",
+      "glossYue": "今朝 Mei 可以喺舖頭頂我更，我留喺屋企。",
       "audio": "assets/audio/lines/w7-l5.mp3",
       "audioSlow": "assets/audio/lines/w7-l5-slow.mp3",
-      "say": "I can ask a colleague to cover my shift, because the shop stays very busy.",
+      "say": "Mei can cover my shift at the shop this morning while I stay home.",
       "hideGloss": true
     },
     {
@@ -79,7 +82,7 @@
       "speaker": "reid",
       "speakerLabel": "Reid",
       "text": "Will you be back on Monday, or will the doctor keep you at home longer?",
-      "glossYue": "你星期一返到嚟，定係醫生要你再留喺屋企？",
+      "glossYue": "你星期一返，定係醫生要你喺屋企多留幾日？",
       "audio": "assets/audio/lines/w7-l6.mp3",
       "audioSlow": "assets/audio/lines/w7-l6-slow.mp3",
       "say": "Will you be back on Monday, or will the doctor keep you at home longer?",
@@ -89,130 +92,130 @@
       "id": "w7-l7",
       "speaker": "ines",
       "speakerLabel": "Ines",
-      "text": "I will be back on Monday, because the doctor says I can work by then.",
-      "glossYue": "我星期一返，因為醫生話到時我可以返工。",
+      "text": "I will be back on Monday after the doctor clears me to start work again.",
+      "glossYue": "醫生批准我開工，我就星期一返。",
       "audio": "assets/audio/lines/w7-l7.mp3",
       "audioSlow": "assets/audio/lines/w7-l7-slow.mp3",
-      "say": "I will be back on Monday, because the doctor says I can work by then.",
+      "say": "I will be back on Monday after the doctor clears me to start work again.",
       "hideGloss": true
     },
     {
       "id": "w7-l8",
       "speaker": "reid",
       "speakerLabel": "Reid",
-      "text": "Please rest tonight, and we will see you on Monday when your next shift opens.",
-      "glossYue": "今晚好好休息，你星期一開下一更嗰陣我哋見。",
+      "text": "We will keep your Monday shift open, and the team hopes you feel better soon.",
+      "glossYue": "我哋會留住你星期一嘅更，團隊希望你快啲好返。",
       "audio": "assets/audio/lines/w7-l8.mp3",
       "audioSlow": "assets/audio/lines/w7-l8-slow.mp3",
-      "say": "Please rest tonight, and we will see you on Monday when your next shift opens.",
+      "say": "We will keep your Monday shift open, and the team hopes you feel better soon.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Hello, I am calling because I am not feeling well and I cannot start my shift. 呢句即係點？",
+      "prompt": "Hello, I am calling in sick because I am not feeling well and I cannot start my shift. 呢句即係點？",
       "choices": [
-        "唔舒服，上唔到更",
-        "想加班",
-        "想改航班"
+        "我唔舒服，上唔到更",
+        "我唔舒服，但可以照上更",
+        "我想請人頂更，唔係自己病"
       ],
       "answer": 0,
       "explain": "not feeling well 係唔舒服。"
     },
     {
-      "prompt": "Could you bring a doctor's note when you return? 即係問緊咩？",
+      "prompt": "Yes, I can bring the doctor's note that the clinic wrote for me this morning. 呢句即係點？",
       "choices": [
-        "問可唔可以帶醫生紙",
-        "問可唔可以換櫃檯",
-        "問航班幾點"
+        "今朝已經帶咗醫生紙",
+        "星期一先交醫生紙",
+        "返嚟會帶醫生紙"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "doctor's note 係醫生紙。"
     },
     {
-      "prompt": "I will be back on Monday, because the doctor says I can work by then. 呢句即係點？",
+      "prompt": "Mei can cover my shift at the shop this morning while I stay home. 呢句即係點？",
       "choices": [
-        "星期一返工",
-        "聽日先返",
-        "唔再返"
+        "星期一先有人頂更",
+        "Mei 今朝可以頂我更",
+        "我自己頂更，唔使 Mei"
       ],
-      "answer": 0,
-      "explain": "Monday 係星期一。"
+      "answer": 1,
+      "explain": "cover my shift 係頂更。"
     }
   ],
   "chunks": [
     {
-      "pattern": "I am calling because I am ___ and I cannot start my shift.",
-      "example": "I am calling because I am not feeling well and I cannot start my shift.",
-      "glossYue": "我打電話因為我⋯⋯。",
+      "pattern": "I am calling in sick because I am ___ and I cannot start my shift.",
+      "example": "I am calling in sick because I am not feeling well and I cannot start my shift.",
+      "glossYue": "我唔舒服，上唔到更。",
       "answer": "not feeling well",
       "choices": [
         "not feeling well",
-        "on standby",
-        "fully booked"
+        "doctor's note",
+        "Monday"
       ]
     },
     {
-      "pattern": "Yes, I can bring a ___ , because the clinic wrote it this morning for me.",
-      "example": "Yes, I can bring a doctor's note, because the clinic wrote it this morning for me.",
-      "glossYue": "我可以帶一張⋯⋯。",
+      "pattern": "Yes, I can bring the ___ that the clinic wrote for me this morning.",
+      "example": "Yes, I can bring the doctor's note that the clinic wrote for me this morning.",
+      "glossYue": "我可以帶醫生紙。",
       "answer": "doctor's note",
       "choices": [
         "doctor's note",
-        "claim form",
-        "service charge"
+        "not feeling well",
+        "Monday shift"
       ]
     },
     {
-      "pattern": "I can ask a colleague to ___ , because the shop stays very busy.",
-      "example": "I can ask a colleague to cover my shift, because the shop stays very busy.",
-      "glossYue": "我可以請同事⋯⋯。",
+      "pattern": "Mei can ___ at the shop this morning while I stay home.",
+      "example": "Mei can cover my shift at the shop this morning while I stay home.",
+      "glossYue": "Mei 可以頂我更。",
       "answer": "cover my shift",
       "choices": [
         "cover my shift",
-        "split the bill",
-        "read the tag"
+        "doctor's note",
+        "feel better"
       ]
     }
   ],
   "shadow": {
-    "lineId": "w7-l1",
-    "hint": "Hello, I am calling because I am not feeling well and I cannot start my shift."
+    "lineId": "w7-l5",
+    "hint": "Mei can cover my shift at the shop this morning while I stay home."
   },
   "build": [
     {
       "type": "choice",
-      "promptYue": "你星期一返到工。你點講？",
+      "promptYue": "邊個可以頂你更？你點答？",
       "choices": [
-        "I will be back on Monday, because the doctor says I can work by then.",
-        "Here is the full bill.",
-        "The bag is at baggage claim."
+        "Mei can cover my shift at the shop this morning while I stay home.",
+        "Yes, I can bring the doctor's note that the clinic wrote for me this morning.",
+        "I will be back on Monday after the doctor clears me to start work again."
       ],
       "answer": 0,
-      "explain": "講 Monday，再講 doctor。"
+      "explain": "講 Mei can cover。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "I",
-        "am",
-        "not",
-        "feeling",
-        "well"
+        "Mei",
+        "can",
+        "cover",
+        "my",
+        "shift"
       ],
       "answer": [
-        "I",
-        "am",
-        "not",
-        "feeling",
-        "well"
+        "Mei",
+        "can",
+        "cover",
+        "my",
+        "shift"
       ]
     }
   ],
   "roleplay": {
     "you": "ines",
-    "intro": "你打電話請病假。可以講：not feeling well、doctor's note、cover my shift。",
+    "intro": "你打電話請病假。同 Reid 講醫生紙同邊個頂更。可以講：note、Mei。",
     "turns": [
       {
         "partner": "Reid",
@@ -220,7 +223,7 @@
         "line": "I am sorry to hear that. Could you bring a doctor's note when you return?",
         "audio": "assets/audio/lines/w7-l2.mp3",
         "audioSlow": "assets/audio/lines/w7-l2-slow.mp3",
-        "expect": "Yes, I can bring a doctor's note, because the clinic wrote it this morning for me.",
+        "expect": "Yes, I can bring the doctor's note that the clinic wrote for me this morning.",
         "keywords": [
           "doctor",
           "note"
@@ -234,9 +237,9 @@
         "line": "Who can cover your shift if the shop stays busy while you rest at home?",
         "audio": "assets/audio/lines/w7-l4.mp3",
         "audioSlow": "assets/audio/lines/w7-l4-slow.mp3",
-        "expect": "I can ask a colleague to cover my shift, because the shop stays very busy.",
+        "expect": "Mei can cover my shift at the shop this morning while I stay home.",
         "keywords": [
-          "cover",
+          "Mei",
           "shift"
         ],
         "modelAudio": "assets/audio/lines/w7-l5.mp3",
@@ -248,9 +251,10 @@
         "line": "Will you be back on Monday, or will the doctor keep you at home longer?",
         "audio": "assets/audio/lines/w7-l6.mp3",
         "audioSlow": "assets/audio/lines/w7-l6-slow.mp3",
-        "expect": "I will be back on Monday, because the doctor says I can work by then.",
+        "expect": "I will be back on Monday after the doctor clears me to start work again.",
         "keywords": [
-          "monday"
+          "Monday",
+          "doctor"
         ],
         "modelAudio": "assets/audio/lines/w7-l7.mp3",
         "modelSlow": "assets/audio/lines/w7-l7-slow.mp3"
@@ -260,56 +264,56 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "聽一次，揀你聽到嘅字：唔舒服",
-      "lemma": "not-feeling-well-phrase",
+      "prompt": "聽一次，揀你喺請病假電話聽到嘅字：更",
+      "lemma": "shift-noun",
       "choices": [
-        "not feeling well",
-        "doctor's note",
-        "Monday"
+        "shift",
+        "Monday",
+        "sick"
       ],
       "answer": 0
     },
     {
       "type": "listen",
-      "prompt": "聽一次，揀你聽到嘅字：醫生紙",
-      "lemma": "doctors-note-phrase",
+      "prompt": "聽一次，揀你喺請病假電話聽到嘅字：星期一",
+      "lemma": "monday-noun",
       "choices": [
-        "doctor's note",
-        "cover my shift",
+        "shift",
+        "sick",
         "Monday"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "你講「Hello, I am calling because I am not feeling well and I cannot start my shift.」，not feeling well 係咩意思？",
+      "prompt": "你講「Hello, I am calling in sick because I am not feeling well and I cannot start my shift.」，not feeling well 係咩意思？",
       "choices": [
-        "唔舒服",
-        "頂更",
-        "星期一"
-      ],
-      "answer": 0
-    },
-    {
-      "type": "meaning",
-      "prompt": "經理講「Will you be back on Monday, or will the doctor keep you at home longer?」，Monday 係咩意思？",
-      "choices": [
-        "星期一",
         "醫生紙",
-        "更"
+        "唔舒服",
+        "頂更"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "你講「Mei can cover my shift at the shop this morning while I stay home.」，cover my shift 係咩意思？",
+      "choices": [
+        "頂更",
+        "星期一",
+        "唔舒服"
       ],
       "answer": 0
     },
     {
       "type": "choice",
-      "prompt": "邊個有 /ʃ/：shift、Monday、定 note？",
+      "prompt": "邊個字有 /ʃ/：shift、Monday、定 sick？",
       "choices": [
-        "shift",
         "Monday",
-        "note"
+        "sick",
+        "shift"
       ],
-      "answer": 0,
-      "explain": "shift 有 /ʃ/。"
+      "answer": 2,
+      "explain": "shift 有 /ʃ/。Monday 同 sick 冇。"
     }
   ],
   "sound": {
@@ -329,5 +333,12 @@
     "drill": [
       "shift-noun"
     ]
-  }
+  },
+  "topicTags": [
+    "唔舒服",
+    "更",
+    "醫生紙",
+    "星期一",
+    "頂"
+  ]
 }

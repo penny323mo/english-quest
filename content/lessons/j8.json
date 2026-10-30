@@ -132,21 +132,21 @@
     {
       "prompt": "You shouldn't use harsh chemicals. 係叫你？",
       "choices": [
-        "唔應該用化學劑",
         "應該用水浸",
-        "應該刻字"
+        "應該刻字",
+        "唔應該用化學劑"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "shouldn't 係唔應該。"
     },
     {
       "prompt": "within the return window 呢句即係點？",
       "choices": [
+        "而家即刻",
         "喺退換期之內",
-        "過咗一年",
-        "而家即刻"
+        "過咗一年"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "within 係一段時間之內。"
     }
   ],
@@ -296,21 +296,21 @@
       "prompt": "聽一次，揀你聽到嘅字：修理嘅舖頭規矩",
       "lemma": "policy-noun",
       "choices": [
-        "policy",
         "claim",
-        "polish"
+        "polish",
+        "policy"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「the written policy allows one repair」，係咩意思？",
       "choices": [
+        "毛巾",
         "政策",
-        "刮痕",
-        "毛巾"
+        "刮痕"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -326,11 +326,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：polish、warranty、定 guarantee？",
       "choices": [
-        "polish",
         "warranty",
-        "guarantee"
+        "guarantee",
+        "polish"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "polish 有 /l/。warranty 同 guarantee 冇。"
     }
   ],

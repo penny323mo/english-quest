@@ -103,21 +103,21 @@
     {
       "prompt": "very 開頭係邊個音？",
       "choices": [
-        "/v/ 上齒輕碰下唇",
         "/w/ 雙唇收圓",
-        "/θ/ 伸舌"
+        "/θ/ 伸舌",
+        "/v/ 上齒輕碰下唇"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "very 唔好讀成 wery。"
     },
     {
       "prompt": "Would you like to see it? 係邊種語氣？",
       "choices": [
+        "道別",
         "客氣邀請",
-        "命令",
-        "道別"
+        "命令"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "would like 比 want 柔和。"
     }
   ],
@@ -269,21 +269,21 @@
       "prompt": "你聽到邊個？",
       "lemma": "vine-noun",
       "choices": [
-        "vine",
         "wine",
-        "wife"
+        "wife",
+        "vine"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "silver ring",
       "choices": [
+        "登機證",
         "銀戒指",
-        "靠窗位",
-        "登機證"
+        "靠窗位"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -299,11 +299,11 @@
       "type": "choice",
       "prompt": "邊個開頭係 /v/？",
       "choices": [
-        "very",
         "would",
-        "wife"
+        "wife",
+        "very"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "would 同 wife 係圓唇 /w/。very 先至係 /v/。"
     }
   ],

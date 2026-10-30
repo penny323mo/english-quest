@@ -128,21 +128,21 @@
     {
       "prompt": "You can rest at home. 呢句即係點？",
       "choices": [
-        "話你可以喺屋企休息",
         "話你一定要入院",
-        "問幾多錢"
+        "問幾多錢",
+        "話你可以喺屋企休息"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "You can 係一個建議，唔係命令。"
     },
     {
       "prompt": "I need a follow-up. 呢句即係點？",
       "choices": [
+        "我唔使再覆診",
         "我要覆診",
-        "我要取消",
-        "我唔使再覆診"
+        "我要取消"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "follow-up 呢度係覆診，再嚟診所一次。"
     }
   ],
@@ -292,21 +292,21 @@
       "prompt": "聽一次，揀你聽到嘅字：喉嚨嗰陣咳",
       "lemma": "cough-noun",
       "choices": [
-        "cough",
         "fever",
-        "headache"
+        "headache",
+        "cough"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「I have had a fever and cough since Monday, and my sore throat feels worse.」，symptom 係咩意思？",
       "choices": [
+        "期限",
         "症狀",
-        "藥房",
-        "期限"
+        "藥房"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -322,11 +322,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：allergy、fever、定 cough？",
       "choices": [
-        "allergy",
         "fever",
-        "cough"
+        "cough",
+        "allergy"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "allergy 有 /l/。fever 同 cough 冇。"
     }
   ],

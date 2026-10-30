@@ -94,21 +94,21 @@
     {
       "prompt": "I am from Hong Kong, and I live here. 呢句即係點？",
       "choices": [
-        "我來自香港，住喺呢度",
         "我係售貨員",
-        "請再講一次"
+        "請再講一次",
+        "我來自香港，住喺呢度"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "from 係來自。live 係住。"
     },
     {
       "prompt": "My number is five five one two, and my email is ling at shop. 呢句即係點？",
       "choices": [
+        "舖頭已經關門",
         "號碼係五五一二，電郵係 ling at shop",
-        "我想食午餐",
-        "舖頭已經關門"
+        "我想食午餐"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "number 係號碼。email 係電郵。"
     }
   ],
@@ -256,21 +256,21 @@
       "prompt": "你聽到邊個？",
       "lemma": "from-prep",
       "choices": [
-        "from",
         "phone",
-        "spell"
+        "spell",
+        "from"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "phone",
       "choices": [
+        "地址",
         "電話",
-        "工作",
-        "地址"
+        "工作"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -286,21 +286,21 @@
       "type": "meaning",
       "prompt": "address",
       "choices": [
-        "地址",
         "郵票",
-        "更"
+        "更",
+        "地址"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "邊句係講自己住邊？",
       "choices": [
+        "How much is this?",
         "Where are you from?",
-        "We always close the shop.",
-        "How much is this?"
+        "We always close the shop."
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "live 係住喺邊。"
     }
   ],

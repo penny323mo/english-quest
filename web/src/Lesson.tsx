@@ -17,6 +17,7 @@ import { playSfx } from "./sfx";
 import { useStore } from "./store";
 import type { BuildOrder, Lesson, QuizItem } from "./types";
 import { BEAT_LABELS } from "./beats";
+import { seededOrder } from "./choice-order.js";
 
 const BEATS = BEAT_LABELS;
 
@@ -339,6 +340,9 @@ function Choices({
 }) {
   const [picked, setPicked] = useState<number | null>(null);
   const [done, setDone] = useState(false);
+  const [seed] = useState(() => (Math.floor(Math.random() * 0x7fffffff) ^ (choices.length * 997) ^ prompt.length) >>> 0);
+  const order = seededOrder(choices.length, seed);
+  const shownAnswer = order.indexOf(answer);
   const mark = prompt.includes("即係問緊咩？") ? "即係問緊咩？" : prompt.includes("呢句即係點？") ? "呢句即係點？" : "";
   const english = mark ? prompt.replace(mark, "").trim() : "";
   return (
@@ -352,10 +356,11 @@ function Choices({
         <h2>{prompt}</h2>
       )}
       <div className="stack">
-        {choices.map((choice, i) => {
+        {order.map((src, i) => {
+          const choice = choices[src];
           let cls = "choice";
-          if (done && i === answer) cls += " good";
-          else if (done && picked === i && i !== answer) cls += " miss";
+          if (done && i === shownAnswer) cls += " good";
+          else if (done && picked === i && i !== shownAnswer) cls += " miss";
           else if (picked === i) cls += " picked";
           return (
             <button
@@ -366,8 +371,8 @@ function Choices({
                 if (done) return;
                 setPicked(i);
                 setDone(true);
-                onResult?.(i === answer);
-                playSfx(i === answer ? "correct" : "wrong");
+                onResult?.(i === shownAnswer);
+                playSfx(i === shownAnswer ? "correct" : "wrong");
               }}
             >
               <span className="choice-letter">{String.fromCharCode(65 + i)}</span>
@@ -379,9 +384,9 @@ function Choices({
       {!done ? (
         <button className="btn ghost block" type="button" onClick={onSkip || onNext}>跳過呢題</button>
       ) : (
-        <div className={`result-sheet ${picked === answer ? "good" : "miss"}`} role="status">
-          <strong>{picked === answer ? "啱晒" : "差少少"}</strong>
-          <p>{explain || (picked === answer ? "啱。" : "記住呢個就得，唔使重來。")}</p>
+        <div className={`result-sheet ${picked === shownAnswer ? "good" : "miss"}`} role="status">
+          <strong>{picked === shownAnswer ? "啱晒" : "差少少"}</strong>
+          <p>{explain || (picked === shownAnswer ? "啱。" : "記住呢個就得，唔使重來。")}</p>
           <button className="btn block" type="button" onClick={onNext}>繼續</button>
         </div>
       )}
@@ -695,7 +700,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪五十一課你行完啦。到期嘅卡會喺練習等你。</p>
+        <p className="lede">呢輪五十四課你行完啦。到期嘅卡會喺練習等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );

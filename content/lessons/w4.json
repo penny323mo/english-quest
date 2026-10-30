@@ -130,21 +130,21 @@
     {
       "prompt": "Not bad at all. The weekend was busy with my sister in a cafe. 呢句即係點？",
       "choices": [
-        "週末好忙，同家姐去咖啡店",
         "週末冇出過門",
-        "星期六成日落雨"
+        "星期六成日落雨",
+        "週末好忙，同家姐去咖啡店"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "Not bad 係幾好，busy 係忙。"
     },
     {
       "prompt": "By the way, are you ready for the 10 o'clock meeting with the whole sales team? 即係問緊咩？",
       "choices": [
+        "問週末去邊度",
         "問十點個會準備好未",
-        "話想取消會議",
-        "問週末去邊度"
+        "話想取消會議"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "By the way 係轉話題，ready 係準備好。"
     }
   ],
@@ -281,21 +281,21 @@
       "prompt": "聽一次，揀你聽到嘅字：通勤",
       "lemma": "commute-noun",
       "choices": [
-        "commute",
         "coffee",
-        "ready"
+        "ready",
+        "commute"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "同事講「Same here. My commute was long, but the coffee on the way was warm and good.」，commute 係咩意思？",
       "choices": [
+        "會議",
         "通勤",
-        "天氣",
-        "會議"
+        "天氣"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -311,11 +311,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：shall、weekend、定 coffee？",
       "choices": [
-        "shall",
         "weekend",
-        "coffee"
+        "coffee",
+        "shall"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "shall 有 /l/。weekend 同 coffee 冇。"
     }
   ],

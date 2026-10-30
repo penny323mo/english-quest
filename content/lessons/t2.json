@@ -98,21 +98,21 @@
     {
       "prompt": "Which way to the gate? 係問咩？",
       "choices": [
-        "去閘口邊邊行",
         "你飛去邊",
-        "你想叫咩"
+        "你想叫咩",
+        "去閘口邊邊行"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "which way 係問方向。"
     },
     {
       "prompt": "Straight ahead. 你應該？",
       "choices": [
+        "坐低叫餐",
         "直行，唔使轉彎",
-        "返去櫃檯",
-        "坐低叫餐"
+        "返去櫃檯"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "ahead 係前面。直行就得。"
     }
   ],
@@ -256,21 +256,21 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "lift-noun",
       "choices": [
-        "lift",
         "left",
-        "street"
+        "street",
+        "lift"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「Please put your liquids in the tray, and take the laptop out.」，係咩意思？",
       "choices": [
+        "頸鏈",
         "膠盤",
-        "餐牌",
-        "頸鏈"
+        "餐牌"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -286,11 +286,11 @@
       "type": "choice",
       "prompt": "邊個開頭係 /l/？",
       "choices": [
-        "liquid",
         "straight",
-        "street"
+        "street",
+        "liquid"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "liquid、left、laptop 有 /l/。straight 同 street 開頭係 /st/。"
     }
   ],

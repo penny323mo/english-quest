@@ -134,21 +134,21 @@
     {
       "prompt": "Your room is a double with a view. 間房？",
       "choices": [
-        "一張大床，有景觀",
         "兩張床，冇窗",
-        "只係升降機"
+        "只係升降機",
+        "一張大床，有景觀"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "double 係一張大床。兩張床先至係 twin。"
     },
     {
       "prompt": "Here is your key card. 你收到？",
       "choices": [
+        "登機證",
         "鑰匙卡",
-        "收據",
-        "登機證"
+        "收據"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "鑰匙卡開房。密碼通常寫喺卡上面。"
     }
   ],
@@ -299,21 +299,21 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "wifi-noun",
       "choices": [
-        "wifi",
         "password",
-        "breakfast"
+        "breakfast",
+        "wifi"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「Late checkout is fine, and you can leave your bags by the elevator.」，係咩意思？",
       "choices": [
+        "早餐",
         "升降機",
-        "樓層",
-        "早餐"
+        "樓層"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -329,11 +329,11 @@
       "type": "choice",
       "prompt": "邊個有 /l/？",
       "choices": [
-        "floor",
         "view",
-        "room"
+        "room",
+        "floor"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "floor 有 /l/。wifi 讀 /waɪ faɪ/。"
     }
   ],

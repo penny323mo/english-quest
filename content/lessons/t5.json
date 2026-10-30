@@ -130,21 +130,21 @@
     {
       "prompt": "I think it was stolen. 同 lost 差喺？",
       "choices": [
-        "覺得畀人偷咗，唔係自己掉低",
         "只係大概位置",
-        "收據唔見咗"
+        "收據唔見咗",
+        "覺得畀人偷咗，唔係自己掉低"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "stolen 係被人拿走。"
     },
     {
       "prompt": "If this is an emergency 呢句即係點？",
       "choices": [
+        "如果想退款",
         "如果情況緊急",
-        "如果只係塞車",
-        "如果想退款"
+        "如果只係塞車"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "emergency 先至叫救護車。"
     }
   ],
@@ -294,21 +294,21 @@
       "prompt": "聽一次，揀你聽到嘅字：幫你寫報告嗰啲人",
       "lemma": "police-noun",
       "choices": [
-        "police",
         "ambulance",
-        "wallet"
+        "wallet",
+        "police"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「I have lost my wallet, and I last saw it at the desk this morning.」，係咩意思？",
       "choices": [
+        "退款",
         "唔見咗",
-        "塞車",
-        "退款"
+        "塞車"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -324,11 +324,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：wallet、embassy、定 report？",
       "choices": [
-        "wallet",
         "embassy",
-        "report"
+        "report",
+        "wallet"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "wallet 有 /l/。embassy 同 report 冇 /l/。"
     }
   ],

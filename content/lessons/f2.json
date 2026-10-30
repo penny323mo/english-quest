@@ -98,21 +98,21 @@
     {
       "prompt": "Nice to meet you. 幾時講？",
       "choices": [
-        "第一次見面",
         "叫人埋單",
-        "問靠窗定走廊位"
+        "問靠窗定走廊位",
+        "第一次見面"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "識人嗰陣講，語氣輕就得。"
     },
     {
       "prompt": "Thank you 開頭個音係？",
       "choices": [
+        "/s/ 牙齒縫",
         "/θ/ 舌尖輕送氣",
-        "/f/ 咬唇",
-        "/s/ 牙齒縫"
+        "/f/ 咬唇"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "舌尖輕觸上排牙，送氣。唔好變成 fanks。"
     }
   ],
@@ -258,21 +258,21 @@
       "type": "meaning",
       "prompt": "Good morning",
       "choices": [
-        "早晨",
         "兩位",
-        "登機證"
+        "登機證",
+        "早晨"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "Nice to meet you",
       "choices": [
+        "靠窗位",
         "好高興認識你",
-        "睇吓先",
-        "靠窗位"
+        "睇吓先"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
@@ -290,11 +290,11 @@
       "prompt": "邊個有 /θ/？",
       "lemma": "three-num",
       "choices": [
-        "three",
         "tree",
-        "free"
+        "free",
+        "three"
       ],
-      "answer": 0
+      "answer": 2
     }
   ],
   "sound": {

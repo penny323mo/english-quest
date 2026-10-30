@@ -132,21 +132,21 @@
     {
       "prompt": "I will collect the bracelet tomorrow. 呢句即係點？",
       "choices": [
-        "聽日嚟取條手鏈",
         "聽日先再問價",
-        "今日即刻取"
+        "今日即刻取",
+        "聽日嚟取條手鏈"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "collect tomorrow 係聽日嚟取。"
     },
     {
       "prompt": "Please text me when it's ready. 呢句即係點？",
       "choices": [
+        "請取消預留",
         "請用短訊通知我",
-        "請幫我轉接",
-        "請取消預留"
+        "請幫我轉接"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "貨準備好就發短訊話我知。"
     }
   ],
@@ -285,21 +285,21 @@
       "prompt": "聽一次，揀你聽到嘅字：舖喺邊",
       "lemma": "location-noun",
       "choices": [
-        "location",
         "notify",
-        "tomorrow"
+        "tomorrow",
+        "location"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「Have you kept a similar gold bracelet in stock, and is one still available to reserve today?」，stock 係咩意思？",
       "choices": [
+        "取貨",
         "存貨",
-        "開門時間",
-        "取貨"
+        "開門時間"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -315,11 +315,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：location、stock、定 notify？",
       "choices": [
-        "location",
         "stock",
-        "notify"
+        "notify",
+        "location"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "location 有 /l/。stock 同 notify 冇。"
     }
   ],

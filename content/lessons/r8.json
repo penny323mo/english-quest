@@ -29,200 +29,205 @@
       "id": "r8-l1",
       "speaker": "lina",
       "speakerLabel": "Lina",
-      "text": "I would like to order a chicken takeaway for delivery to my office, please.",
-      "glossYue": "我想叫一份雞外賣，送到我辦公室。",
+      "text": "I would like to order one hot chicken takeaway for delivery to my office, please.",
+      "glossYue": "我想叫一份熱雞外賣，送到我公司。",
       "audio": "assets/audio/lines/r8-l1.mp3",
       "audioSlow": "assets/audio/lines/r8-l1-slow.mp3",
-      "say": "I would like to order a chicken takeaway for delivery to my office, please."
+      "say": "I would like to order one hot chicken takeaway for delivery to my office, please.",
+      "hideGloss": false
     },
     {
       "id": "r8-l2",
       "speaker": "pesi",
       "speakerLabel": "Pesi",
-      "text": "What is the full address for this chicken delivery from your shop this afternoon?",
-      "glossYue": "今下午呢份雞外賣，完整地址係邊？",
+      "text": "What is the full street address for this chicken delivery from our shop this afternoon?",
+      "glossYue": "今午呢份雞由我哋舖頭送，請講完整街道地址。",
       "audio": "assets/audio/lines/r8-l2.mp3",
       "audioSlow": "assets/audio/lines/r8-l2-slow.mp3",
-      "say": "What is the full address for this chicken delivery from your shop this afternoon?"
+      "say": "What is the full street address for this chicken delivery from our shop this afternoon?",
+      "hideGloss": false
     },
     {
       "id": "r8-l3",
       "speaker": "lina",
       "speakerLabel": "Lina",
-      "text": "The address is eighteen Harbour Street, and I can spell the street name very clearly for you.",
-      "glossYue": "地址係海港街十八號，我可以清楚串條街名。",
+      "text": "Please note the address is eighteen Harbour Street, and I spell Harbour as H A R B O U R.",
+      "glossYue": "地址係十八號 Harbour Street，Harbour 串做 H A R B O U R。",
       "audio": "assets/audio/lines/r8-l3.mp3",
       "audioSlow": "assets/audio/lines/r8-l3-slow.mp3",
-      "say": "The address is eighteen Harbour Street, and I can spell the street name very clearly for you."
+      "say": "Please note the address is eighteen Harbour Street, and I spell Harbour as H A R B O U R.",
+      "hideGloss": false
     },
     {
       "id": "r8-l4",
-      "speaker": "pesi",
-      "speakerLabel": "Pesi",
-      "text": "Please spell that street name slowly on the phone, one letter at a time.",
-      "glossYue": "請喺電話慢慢串條街名，一次一個字母。",
+      "speaker": "lina",
+      "speakerLabel": "Lina",
+      "text": "How long will the rider take to bring this hot delivery to my office?",
+      "glossYue": "騎手要幾耐先將呢份熱外賣送到我公司？",
       "audio": "assets/audio/lines/r8-l4.mp3",
       "audioSlow": "assets/audio/lines/r8-l4-slow.mp3",
-      "say": "Please spell that street name slowly on the phone, one letter at a time.",
+      "say": "How long will the rider take to bring this hot delivery to my office?",
       "hideGloss": true
     },
     {
       "id": "r8-l5",
-      "speaker": "lina",
-      "speakerLabel": "Lina",
-      "text": "Harbour is H A R B O U R, and the street sits right beside the covered market.",
-      "glossYue": "Harbour 係 H A R B O U R，條街就喺街市旁邊。",
+      "speaker": "pesi",
+      "speakerLabel": "Pesi",
+      "text": "The rider will arrive in about twenty minutes with the hot chicken takeaway.",
+      "glossYue": "騎手大約二十分鐘送到熱雞外賣。",
       "audio": "assets/audio/lines/r8-l5.mp3",
       "audioSlow": "assets/audio/lines/r8-l5-slow.mp3",
-      "say": "Harbour is H A R B O U R, and the street sits right beside the covered market.",
+      "say": "The rider will arrive in about twenty minutes with the hot chicken takeaway.",
       "hideGloss": true
     },
     {
       "id": "r8-l6",
-      "speaker": "pesi",
-      "speakerLabel": "Pesi",
-      "text": "The rider will arrive in about twenty minutes from now with your hot chicken takeaway.",
-      "glossYue": "送遞員大約二十分鐘後送到熱騰騰嘅雞外賣。",
+      "speaker": "lina",
+      "speakerLabel": "Lina",
+      "text": "How can I pay for the chicken takeaway when it reaches the office door?",
+      "glossYue": "雞外賣送到公司門口，我點樣付款？",
       "audio": "assets/audio/lines/r8-l6.mp3",
       "audioSlow": "assets/audio/lines/r8-l6-slow.mp3",
-      "say": "The rider will arrive in about twenty minutes from now with your hot chicken takeaway.",
+      "say": "How can I pay for the chicken takeaway when it reaches the office door?",
       "hideGloss": true
     },
     {
       "id": "r8-l7",
-      "speaker": "lina",
-      "speakerLabel": "Lina",
-      "text": "How can I pay for this chicken delivery when the rider reaches my office later?",
-      "glossYue": "外賣雞送到辦公室嗰陣，我可以點付款？",
+      "speaker": "pesi",
+      "speakerLabel": "Pesi",
+      "text": "You can pay on delivery in cash only when the takeaway reaches your front door.",
+      "glossYue": "你可以送到先畀現金，送到門口先畀。",
       "audio": "assets/audio/lines/r8-l7.mp3",
       "audioSlow": "assets/audio/lines/r8-l7-slow.mp3",
-      "say": "How can I pay for this chicken delivery when the rider reaches my office later?",
+      "say": "You can pay on delivery in cash only when the takeaway reaches your front door.",
       "hideGloss": true
     },
     {
       "id": "r8-l8",
-      "speaker": "pesi",
-      "speakerLabel": "Pesi",
-      "text": "You can pay on delivery in cash when the takeaway reaches your front door.",
-      "glossYue": "外賣送到門口，你可以畀現金。",
+      "speaker": "lina",
+      "speakerLabel": "Lina",
+      "text": "Thank you. I will wait quietly at the office door until the hot chicken arrives.",
+      "glossYue": "多謝。我會喺公司門口靜靜等熱雞送到。",
       "audio": "assets/audio/lines/r8-l8.mp3",
       "audioSlow": "assets/audio/lines/r8-l8-slow.mp3",
-      "say": "You can pay on delivery in cash when the takeaway reaches your front door.",
+      "say": "Thank you. I will wait quietly at the office door until the hot chicken arrives.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "I would like to order a chicken takeaway for delivery to my office, please. 呢句即係點？",
+      "prompt": "I would like to order one hot chicken takeaway for delivery to my office, please. 呢句即係點？",
       "choices": [
-        "我要叫雞外賣送到辦公室",
-        "我要買電話卡",
-        "我要寄包裹"
+        "我想叫熱雞外賣送到公司",
+        "我想叫熱雞外賣但唔使送到",
+        "我想改外賣地址，唔係叫雞"
       ],
       "answer": 0,
-      "explain": "takeaway 係外賣。delivery 係送貨。"
+      "explain": "takeaway 係外賣。delivery 係送到。"
     },
     {
-      "prompt": "How can I pay for this chicken delivery when the rider reaches my office later? 即係問緊咩？",
+      "prompt": "Please note the address is eighteen Harbour Street, and I spell Harbour as H A R B O U R. 呢句即係點？",
       "choices": [
-        "送貨要幾耐",
-        "劑量係幾多",
-        "報價幾多"
+        "請講送到時間，唔係地址",
+        "請用現金付款，唔使講地址",
+        "請講街道地址，再串街名"
       ],
-      "answer": 0,
-      "explain": "how long 係問幾耐。"
+      "answer": 2,
+      "explain": "address 係地址。street 係街。"
     },
     {
-      "prompt": "You can pay on delivery in cash when the takeaway reaches your front door. 呢句即係點？",
+      "prompt": "How can I pay for the chicken takeaway when it reaches the office door? 即係問緊咩？",
       "choices": [
-        "送到先畀現金",
-        "先退款",
-        "先改航班"
+        "問邊度付款",
+        "問點樣付款",
+        "問幾時付款"
       ],
-      "answer": 0,
-      "explain": "pay on delivery 係送到先畀錢。"
+      "answer": 1,
+      "explain": "pay 係問點樣付款。"
     }
   ],
   "chunks": [
     {
-      "pattern": "I would like to order a chicken ___ for delivery.",
-      "example": "I would like to order a chicken takeaway for delivery.",
-      "glossYue": "我想叫一份雞⋯⋯。",
+      "pattern": "I would like to order one hot chicken ___ for delivery today.",
+      "example": "I would like to order one hot chicken takeaway for delivery to my office.",
+      "glossYue": "我想叫一份熱雞外賣。",
       "answer": "takeaway",
       "choices": [
         "takeaway",
-        "tablet",
-        "quote"
+        "address",
+        "minute"
       ]
     },
     {
-      "pattern": "The address is eighteen Harbour ___.",
-      "example": "The address is eighteen Harbour Street.",
-      "glossYue": "地址係海港⋯⋯。",
-      "answer": "Street",
+      "pattern": "Please note the full street ___ before the rider leaves our shop.",
+      "example": "Please note the address is eighteen Harbour Street.",
+      "glossYue": "請講街道地址。",
+      "answer": "address",
       "choices": [
-        "Street",
-        "Dosage",
-        "Logo"
+        "address",
+        "chicken",
+        "minute"
       ]
     },
     {
-      "pattern": "You can ___ in cash at the door.",
-      "example": "You can pay on delivery in cash at the door.",
-      "glossYue": "你可以喺門口⋯⋯。",
+      "pattern": "You can ___ in cash only when the takeaway reaches the door.",
+      "example": "You can pay on delivery in cash only when the takeaway reaches your front door.",
+      "glossYue": "你可以送到先畀現金。",
       "answer": "pay on delivery",
       "choices": [
         "pay on delivery",
-        "spell your name",
-        "mark it fragile"
+        "street address",
+        "chicken takeaway"
       ]
     }
   ],
   "shadow": {
     "lineId": "r8-l3",
-    "hint": "The address is eighteen Harbour Street, and I can spell the street name very clearly for you."
+    "hint": "Please note the address is eighteen Harbour Street, and I spell Harbour as H A R B O U R."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "你要報地址。你點講？",
       "choices": [
-        "The address is eighteen Harbour Street, and I can spell the street name very clearly for you.",
-        "The dosage is one tablet.",
-        "The flight is delayed."
+        "Please note the address is eighteen Harbour Street, and I spell Harbour as H A R B O U R.",
+        "The rider will arrive in about twenty minutes with the hot chicken takeaway.",
+        "You can pay on delivery in cash only when the takeaway reaches your front door."
       ],
       "answer": 0,
-      "explain": "講 address，再提出可以串街名。"
+      "explain": "講 address，再串街名。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "pay",
-        "on",
-        "delivery"
+        "How",
+        "can",
+        "I",
+        "pay"
       ],
       "answer": [
-        "pay",
-        "on",
-        "delivery"
+        "How",
+        "can",
+        "I",
+        "pay"
       ]
     }
   ],
   "roleplay": {
     "you": "lina",
-    "intro": "你打電話叫外賣。報地址，再問幾耐。可以講：address、delivery。",
+    "intro": "你打電話叫外賣。同 Pesi 講地址同付款。可以講：address、pay。",
     "turns": [
       {
         "partner": "Pesi",
         "partnerId": "pesi",
-        "line": "What is the full address for this chicken delivery from your shop this afternoon?",
+        "line": "What is the full street address for this chicken delivery from our shop this afternoon?",
         "audio": "assets/audio/lines/r8-l2.mp3",
         "audioSlow": "assets/audio/lines/r8-l2-slow.mp3",
-        "expect": "The address is eighteen Harbour Street, and I can spell the street name very clearly for you.",
+        "expect": "Please note the address is eighteen Harbour Street, and I spell Harbour as H A R B O U R.",
         "keywords": [
           "address",
-          "spell"
+          "Harbour"
         ],
         "modelAudio": "assets/audio/lines/r8-l3.mp3",
         "modelSlow": "assets/audio/lines/r8-l3-slow.mp3"
@@ -230,86 +235,86 @@
       {
         "partner": "Pesi",
         "partnerId": "pesi",
-        "line": "Please spell that street name slowly on the phone, one letter at a time.",
-        "audio": "assets/audio/lines/r8-l4.mp3",
-        "audioSlow": "assets/audio/lines/r8-l4-slow.mp3",
-        "expect": "Harbour is H A R B O U R, and the street sits right beside the covered market.",
+        "line": "The rider will arrive in about twenty minutes with the hot chicken takeaway.",
+        "audio": "assets/audio/lines/r8-l5.mp3",
+        "audioSlow": "assets/audio/lines/r8-l5-slow.mp3",
+        "expect": "How can I pay for the chicken takeaway when it reaches the office door?",
         "keywords": [
-          "harbour",
-          "street"
+          "pay",
+          "chicken"
         ],
-        "modelAudio": "assets/audio/lines/r8-l5.mp3",
-        "modelSlow": "assets/audio/lines/r8-l5-slow.mp3"
+        "modelAudio": "assets/audio/lines/r8-l6.mp3",
+        "modelSlow": "assets/audio/lines/r8-l6-slow.mp3"
       },
       {
         "partner": "Pesi",
         "partnerId": "pesi",
-        "line": "The rider will arrive in about twenty minutes from now with your hot chicken takeaway.",
-        "audio": "assets/audio/lines/r8-l6.mp3",
-        "audioSlow": "assets/audio/lines/r8-l6-slow.mp3",
-        "expect": "How can I pay for this chicken delivery when the rider reaches my office later?",
+        "line": "You can pay on delivery in cash only when the takeaway reaches your front door.",
+        "audio": "assets/audio/lines/r8-l7.mp3",
+        "audioSlow": "assets/audio/lines/r8-l7-slow.mp3",
+        "expect": "Thank you. I will wait quietly at the office door until the hot chicken arrives.",
         "keywords": [
-          "pay",
-          "delivery"
+          "chicken",
+          "door"
         ],
-        "modelAudio": "assets/audio/lines/r8-l7.mp3",
-        "modelSlow": "assets/audio/lines/r8-l7-slow.mp3"
+        "modelAudio": "assets/audio/lines/r8-l8.mp3",
+        "modelSlow": "assets/audio/lines/r8-l8-slow.mp3"
       }
     ]
   },
   "quiz": [
     {
       "type": "listen",
-      "prompt": "聽一次，揀你聽到嘅字：送貨",
-      "lemma": "delivery-noun",
+      "prompt": "聽一次，揀你喺外賣電話聽到嘅字：地址",
+      "lemma": "address-noun",
       "choices": [
-        "delivery",
-        "dosage",
-        "quote"
+        "address",
+        "chicken",
+        "minute"
       ],
       "answer": 0
     },
     {
       "type": "listen",
-      "prompt": "聽一次，揀你聽到嘅字：街道",
-      "lemma": "street-noun",
+      "prompt": "聽一次，揀你喺外賣電話聽到嘅字：外賣",
+      "lemma": "takeaway-noun",
       "choices": [
+        "delivery",
         "street",
-        "tablet",
-        "logo"
+        "takeaway"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "你講「The address is eighteen Harbour Street, and I can spell the street name very clearly for you.」，spell 係咩意思？",
+      "prompt": "你講「How can I pay for the chicken takeaway when it reaches the office door?」，pay 係咩意思？",
       "choices": [
-        "串出嚟",
-        "送貨",
-        "劑量"
+        "地址",
+        "付款",
+        "送到"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "店員講「You can pay on delivery in cash when the takeaway reaches your front door.」，pay on delivery 係咩意思？",
+      "prompt": "舖頭講「You can pay on delivery in cash only when the takeaway reaches your front door.」，pay on delivery 係咩意思？",
       "choices": [
         "送到先畀錢",
-        "一日兩次",
-        "交貨期"
+        "現金找續",
+        "改地址"
       ],
       "answer": 0
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：delivery、street、定 chicken？",
+      "prompt": "邊個字有 /l/：delivery、chicken、定 takeaway？",
       "choices": [
-        "delivery",
-        "street",
-        "chicken"
+        "chicken",
+        "takeaway",
+        "delivery"
       ],
-      "answer": 0,
-      "explain": "delivery 有 /l/。street 同 chicken 冇。"
+      "answer": 2,
+      "explain": "delivery 有 /l/。"
     }
   ],
   "sound": {
@@ -333,5 +338,14 @@
       "takeaway-noun",
       "address-noun"
     ]
-  }
+  },
+  "topicTags": [
+    "外賣",
+    "地址",
+    "雞",
+    "送到",
+    "付款",
+    "現金",
+    "街"
+  ]
 }

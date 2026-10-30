@@ -129,21 +129,21 @@
     {
       "prompt": "Could you expand on the deadline? 即係問緊咩？",
       "choices": [
-        "請你再講多啲個期限",
         "話期限已經過",
-        "問幾多錢"
+        "問幾多錢",
+        "請你再講多啲個期限"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "expand on 係請人再講清楚。"
     },
     {
       "prompt": "Let's wrap up now. 呢句即係點？",
       "choices": [
+        "我哋改去下個星期",
         "我哋而家完結個會",
-        "我哋而家開始",
-        "我哋改去下個星期"
+        "我哋而家開始"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "wrap up 係完結個會。"
     }
   ],
@@ -293,21 +293,21 @@
       "prompt": "聽一次，揀你聽到嘅字：收細個咪",
       "lemma": "mute-verb",
       "choices": [
-        "mute",
         "agree",
-        "update"
+        "update",
+        "mute"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「I see your point, but I am concerned the owner cannot meet this new deadline on Friday.」，concerned 係咩意思？",
       "choices": [
+        "免費",
         "擔心",
-        "同意",
-        "免費"
+        "同意"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -323,11 +323,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：deadline、mute、定 agenda？",
       "choices": [
-        "deadline",
         "mute",
-        "agenda"
+        "agenda",
+        "deadline"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "deadline 有 /l/。mute 同 agenda 冇。"
     }
   ],
@@ -353,5 +353,5 @@
       "owner-noun"
     ]
   },
-  "next": "D3"
+  "next": "W8"
 }

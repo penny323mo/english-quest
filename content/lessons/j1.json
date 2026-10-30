@@ -105,21 +105,21 @@
     {
       "prompt": "How may I help you? 你喺做咩？",
       "choices": [
-        "客氣咁問可唔可以幫手",
         "叫客人離開",
-        "問航班號碼"
+        "問航班號碼",
+        "客氣咁問可唔可以幫手"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "may 比 can 更慢、更有禮。"
     },
     {
       "prompt": "Of course. 係邊種語氣？",
       "choices": [
+        "幾多錢",
         "當然，冇問題",
-        "唔得",
-        "幾多錢"
+        "唔得"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "後面通常接 Please take a look。"
     }
   ],
@@ -280,21 +280,21 @@
       "type": "meaning",
       "prompt": "jewellery",
       "choices": [
-        "珠寶",
         "護照",
-        "餐牌"
+        "餐牌",
+        "珠寶"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "just looking",
       "choices": [
+        "我有訂位",
         "睇吓先",
-        "即刻付款",
-        "我有訂位"
+        "即刻付款"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
@@ -312,11 +312,11 @@
       "prompt": "邊個有 /θ/？",
       "lemma": "anything-pron",
       "choices": [
-        "anything",
         "evening",
-        "silver"
+        "silver",
+        "anything"
       ],
-      "answer": 0
+      "answer": 2
     }
   ],
   "sound": {

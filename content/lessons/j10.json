@@ -129,21 +129,21 @@
     {
       "prompt": "If you like the necklace, the pair goes well. 呢句即係點？",
       "choices": [
-        "如果鍾意頸鏈，對耳環都好配",
         "一定要刻字",
-        "即刻退款"
+        "即刻退款",
+        "如果鍾意頸鏈，對耳環都好配"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "If you like 係如果想，先至配。"
     },
     {
       "prompt": "The engraving is optional. 呢句即係點？",
       "choices": [
+        "而家退款",
         "刻字可以唔要",
-        "一定要刻",
-        "而家退款"
+        "一定要刻"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "optional 係可以唔要。"
     }
   ],
@@ -295,21 +295,21 @@
       "prompt": "聽一次，揀你聽到嘅字：好多客人會揀嘅",
       "lemma": "popular-adj",
       "choices": [
-        "popular",
         "optional",
-        "set"
+        "set",
+        "popular"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「this matching pair goes well with the necklace」，係咩意思？",
       "choices": [
+        "冷氣",
         "襯到",
-        "退款",
-        "冷氣"
+        "退款"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -325,11 +325,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：popular、matching、定 engraving？",
       "choices": [
-        "popular",
         "matching",
-        "engraving"
+        "engraving",
+        "popular"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "popular 有 /l/。matching 同 engraving 冇。"
     }
   ],

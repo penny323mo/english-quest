@@ -135,21 +135,21 @@
     {
       "prompt": "Please hold. 係叫人？",
       "choices": [
-        "等線，唔好收線",
         "留低零錢",
-        "讚菜好味"
+        "讚菜好味",
+        "等線，唔好收線"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "hold 係等陣。"
     },
     {
       "prompt": "May I ask who is calling? 即係問緊咩？",
       "choices": [
+        "問叉喺邊",
         "問邊位打嚟",
-        "問分唔分單",
-        "問叉喺邊"
+        "問分唔分單"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "who is calling 係問邊位。"
     }
   ],
@@ -299,21 +299,21 @@
       "prompt": "聽一次，揀你聽到嘅字：人唔喺度時留低嘅口訊",
       "lemma": "message-noun",
       "choices": [
-        "message",
         "bill",
-        "fork"
+        "fork",
+        "message"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「She is not available right now, so please hold and I will try the other line.」，係咩意思？",
       "choices": [
+        "添水",
         "等線",
-        "埋單",
-        "添水"
+        "埋單"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "hold 係等，唔好收線。"
     },
     {
@@ -330,11 +330,11 @@
       "type": "choice",
       "prompt": "邊個字開頭有 /l/：line、hold、定 message？",
       "choices": [
-        "line",
         "hold",
-        "message"
+        "message",
+        "line"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "line 開頭係 /l/。hold 同 message 冇。"
     }
   ],

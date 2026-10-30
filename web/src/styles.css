@@ -562,6 +562,7 @@ a { color: inherit; }
   opacity: 0;
 }
 .art-ph.is-ready img { opacity: 1; }
+.cast .art-ph img { object-position: center 18%; }
 .path-node .orb .art-ph::before { content: none; }
 .path-node .orb .art-ph img { opacity: 1; }
 

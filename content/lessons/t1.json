@@ -103,21 +103,21 @@
     {
       "prompt": "Window or aisle? 係兩個咩？",
       "choices": [
-        "靠窗位定走廊位",
         "紅酒定白酒",
-        "金定銀"
+        "金定銀",
+        "靠窗位定走廊位"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "走廊位係行路嗰條通道旁邊。"
     },
     {
       "prompt": "check-in 開頭係？",
       "choices": [
+        "/θ/ 伸舌",
         "/tʃ/，一下堵住再放",
-        "/ʃ/ 長噓氣",
-        "/θ/ 伸舌"
+        "/ʃ/ 長噓氣"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "check 唔係 sh。/ʃ/ 喺 sure、show、information。"
     }
   ],
@@ -262,21 +262,21 @@
       "prompt": "你聽到邊個？",
       "lemma": "sure-adj",
       "choices": [
-        "sure",
         "tour",
-        "store"
+        "store",
+        "sure"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "boarding pass",
       "choices": [
+        "餐牌",
         "登機證",
-        "頸鏈",
-        "餐牌"
+        "頸鏈"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -292,11 +292,11 @@
       "type": "choice",
       "prompt": "邊個先有 /ʃ/？",
       "choices": [
-        "show",
         "check",
-        "ticket"
+        "ticket",
+        "show"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "check 同 ticket 係 /tʃ/。show 先至係 /ʃ/。"
     }
   ],

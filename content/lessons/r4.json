@@ -131,21 +131,21 @@
     {
       "prompt": "still water 同 sparkling water 差喺？",
       "choices": [
-        "冇氣同有氣",
         "叉同刀",
-        "單同收據"
+        "單同收據",
+        "冇氣同有氣"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "still 係冇氣，sparkling 係有氣。"
     },
     {
       "prompt": "This is delicious. 呢句即係點？",
       "choices": [
+        "話要分單",
         "讚呢味好味",
-        "叫人等線",
-        "話要分單"
+        "叫人等線"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "delicious 係好味。"
     }
   ],
@@ -299,21 +299,21 @@
       "prompt": "聽一次，揀你聽到嘅字：客人覺得魚好食",
       "lemma": "delicious-adj",
       "choices": [
-        "delicious",
         "fork",
-        "still"
+        "still",
+        "delicious"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「Could we get some still water, and one more clean napkin for this fork?」，係咩意思？",
       "choices": [
+        "餐巾",
         "冇氣",
-        "有氣",
-        "餐巾"
+        "有氣"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "still water 係冇氣水。"
     },
     {
@@ -330,11 +330,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：delicious、napkin、定 fork？",
       "choices": [
-        "delicious",
         "napkin",
-        "fork"
+        "fork",
+        "delicious"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "delicious 中間有 /l/。napkin 同 fork 冇。"
     }
   ],

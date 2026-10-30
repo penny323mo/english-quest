@@ -97,21 +97,21 @@
     {
       "prompt": "A pair of earrings. 係幾多隻？",
       "choices": [
-        "兩隻，一對",
         "一隻",
-        "三隻"
+        "三隻",
+        "兩隻，一對"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "pair 係一對。呢啲耳環用 these。"
     },
     {
       "prompt": "these 同 this 差喺？",
       "choices": [
+        "these 係道別",
         "these 係呢啲，尾音 /z/",
-        "兩個都係一件",
-        "these 係道別"
+        "兩個都係一件"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "一件用 this /ðɪs/。多過一件用 these /ðiz/。"
     }
   ],
@@ -258,21 +258,21 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "pearl-noun",
       "choices": [
-        "pearl",
         "pair",
-        "ring"
+        "ring",
+        "pearl"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「I like this bracelet, and the clasp is easy to open.」，係咩意思？",
       "choices": [
+        "登機證",
         "手鏈",
-        "頸鏈",
-        "登機證"
+        "頸鏈"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -288,11 +288,11 @@
       "type": "choice",
       "prompt": "邊個尾音係 /z/？",
       "choices": [
-        "these",
         "this",
-        "pair"
+        "pair",
+        "these"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "these /ðiz/ 有聲。this /ðɪs/ 係清 /s/。"
     }
   ],

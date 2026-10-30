@@ -128,6 +128,12 @@
 - **Grammar:** Could you do a better price for thirty pieces…? I can send a written quote by email.
 - **Dialogue beats:** Bulk quantity → Thirty pieces and logo → Lead time → Better price → Email quote → Confirm tonight
 
+### J14 — Custom jewellery design / 訂造首飾 · B1/B2 · SHIPPED
+- **Goals:** Set a budget, show a sketch, compare white gold with yellow gold, and ask about the deposit and four weeks.
+- **Vocab:** budget, sketch, setting, white gold, yellow gold, deposit, week
+- **Grammar:** Could we use white gold, or is yellow gold a better choice? What deposit do you need?
+- **Dialogue beats:** Budget and sketch → Setting → White or yellow gold → Yellow gold → Deposit → Half the budget → Place the deposit → Hold the setting
+
 ---
 
 ## Unit R — Restaurant（餐廳）· A1→B1
@@ -227,10 +233,10 @@
 - **Dialogue beats:** Announcement → Still delayed → Rebook or standby → Yes we can rebook → Priority → Refund → Voucher alternative → Itinerary confirmed
 
 ### T10 — Lost luggage / 行李唔見咗 · B1 · SHIPPED
-- **Goals:** Report a missing bag at baggage claim, describe it, give the tag number, complete a claim form, and ask for delivery to the hotel.
+- **Goals:** Report a missing bag at an empty belt, describe it, read the tag number from the baggage receipt, complete a claim form, and ask for delivery to the hotel.
 - **Vocab:** luggage, baggage claim, bag, claim form, tag number, deliver, hotel
 - **Grammar:** Could you…?; because / if / when
-- **Dialogue beats:** Missing bag → Describe → Suitcase → Tag number → The number → Claim form → Deliver to the hotel → Evening truck
+- **Dialogue beats:** Empty belt → Describe → Suitcase → Tag on the receipt → HK four eight two → Claim form → Deliver to the hotel → Hotel room
 
 ---
 
@@ -273,10 +279,16 @@
 - **Dialogue beats:** Prompt → Intro → STAR mini → Teamwork answer → Close
 
 ### W7 — Calling in sick / 打電話請病假 · A2/B1 · SHIPPED
-- **Goals:** Say you are not feeling well, offer a doctor's note, ask someone to cover your shift, and say you will be back on Monday.
+- **Goals:** Say you are not feeling well, offer a doctor's note, name Mei to cover the shift, and say you will be back on Monday.
 - **Vocab:** sick, not feeling well, doctor's note, cover my shift, shift, Monday
 - **Grammar:** because / if / when; Will you be back on Monday?
-- **Dialogue beats:** Call → Doctor's note → Yes → Who covers → A colleague → Monday → Back Monday → Rest tonight
+- **Dialogue beats:** Morning call → Doctor's note → Yes → Who covers → Mei → Monday → Back Monday → Shift stays open
+
+### W8 — Team meeting update / 開會報告進度 · B1 · SHIPPED
+- **Goals:** Say the work is on track or behind schedule, follow up by Friday, and name an action item.
+- **Vocab:** on track, behind schedule, follow up, Friday, question, meeting, action item
+- **Grammar:** The sample run is behind schedule, so I will follow up. Are there any questions?
+- **Dialogue beats:** On track → Which part is behind → Follow up → By Friday → Written note → Questions → Action item → After the meeting
 
 ---
 
@@ -316,7 +328,13 @@
 - **Goals:** Describe a cough and an allergy, then ask about the dosage and taking a tablet after meals.
 - **Vocab:** cough, symptom, pharmacist, allergy, dosage, tablet, twice a day, after meals, prescription, pharmacy
 - **Grammar:** I need something for a cough. The dosage is one tablet twice a day. I can take it after meals.
-- **Dialogue beats:** Cough at the pharmacy → Other symptom → Drug allergy → Dosage → After meals → Prescription → Repeat the dosage → Rest at home
+- **Dialogue beats:** Cough at the pharmacy → Symptom → Drug allergy → Ask the dosage → Twice a day → After meals → No prescription → Call if it returns
+
+### D7 — At the hair salon / 剪頭髮 · A2 · SHIPPED
+- **Goals:** Ask for a simple trim, shorter sides, a light fringe, a wash and blow-dry, the price, and the next booking.
+- **Vocab:** trim, fringe, blow dry, salon, side, wash, book, price
+- **Grammar:** Would you like both sides shorter? What price is this trim if I book the next visit?
+- **Dialogue beats:** Simple trim → Sides and fringe → Yes → Wash and blow-dry → Price covers the dry → Ask the price → Eighty dollars → Book the next trim
 
 ---
 
@@ -337,7 +355,8 @@ Every round until map complete, ship **≥3 NEW lessons** in this order (skip al
 11. **D5, R7, W6, T9** (parcel, table complaint, interview, flight disruption)  
 12. **D6, R8, J13** (pharmacy, takeaway by phone, corporate gift order)  
 13. **R9, W7, T10** (paying the bill, calling in sick, lost luggage)  
-14. Then polish / legendary review nodes / further B2 stretch
+14. **D7, W8, J14** (hair salon, meeting update, custom jewellery)  
+15. Then polish / legendary review nodes / further B2 stretch
 
 **Path UX:** show CEFR chip (A1/A2/B1/B2) on each node; group Path into level tracks; lock by prerequisite; keep `soon:true` teasers for unshipped.
 

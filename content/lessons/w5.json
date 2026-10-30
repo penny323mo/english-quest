@@ -131,21 +131,21 @@
     {
       "prompt": "If the workshop cannot repair the broken clasp, would compensation or a full replacement be possible? 即係問緊咩？",
       "choices": [
-        "問修唔好可唔可以賠償或換過",
         "問可唔可以加購",
-        "問參考編號喺邊"
+        "問參考編號喺邊",
+        "問修唔好可唔可以賠償或換過"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "compensation 係賠償，replacement 係換過。"
     },
     {
       "prompt": "I will escalate the case for you today, and I can update you within three business days by phone. 呢句即係點？",
       "choices": [
+        "會取消張單",
         "會升級處理，三個工作天內電話通知",
-        "會即刻退款",
-        "會取消張單"
+        "會即刻退款"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "escalate 係升級處理，business days 係工作天。"
     }
   ],
@@ -284,21 +284,21 @@
       "prompt": "聽一次，揀你聽到嘅字：道歉",
       "lemma": "apology-noun",
       "choices": [
-        "apology",
         "order",
-        "update"
+        "update",
+        "apology"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "店員講「I will escalate the case for you, and I can update you within three business days by phone.」，escalate 係咩意思？",
       "choices": [
+        "確認訂位",
         "升級處理",
-        "取消訂單",
-        "確認訂位"
+        "取消訂單"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -314,11 +314,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：apology、feedback、定 order？",
       "choices": [
-        "apology",
         "feedback",
-        "order"
+        "order",
+        "apology"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "apology 有 /l/。feedback 同 order 冇。"
     }
   ],
@@ -344,5 +344,5 @@
       "sincere-adj"
     ]
   },
-  "next": "J11"
+  "next": "J14"
 }

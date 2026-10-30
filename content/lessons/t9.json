@@ -134,21 +134,21 @@
     {
       "prompt": "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you? 即係問緊咩？",
       "choices": [
-        "問可唔可以改簽，定係只可以候補",
         "問可唔可以加行李",
-        "問酒店早餐"
+        "問酒店早餐",
+        "問可唔可以改簽，定係只可以候補"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "rebook 係改簽，standby 係候補。"
     },
     {
       "prompt": "Is a full refund an alternative if the new flight does not leave until tomorrow morning from here? 即係問緊咩？",
       "choices": [
+        "問閘口喺邊",
         "問等到聽朝可唔可以退款",
-        "問可唔可以升級座位",
-        "問閘口喺邊"
+        "問可唔可以升級座位"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "refund 係退款，alternative 係另一個選擇。"
     }
   ],
@@ -287,21 +287,21 @@
       "prompt": "聽一次，揀你聽到嘅字：改簽",
       "lemma": "rebook-verb",
       "choices": [
-        "rebook",
         "standby",
-        "voucher"
+        "voucher",
+        "rebook"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "職員講「I am very sorry indeed. The flight is still quite delayed, and your connection is safe until the next update.」，delayed 係咩意思？",
       "choices": [
+        "優先",
         "延誤",
-        "準時",
-        "優先"
+        "準時"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -317,11 +317,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/：cancelled、delayed、定 voucher？",
       "choices": [
-        "cancelled",
         "delayed",
-        "voucher"
+        "voucher",
+        "cancelled"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "cancelled 有 /l/。delayed 同 voucher 冇。"
     }
   ],

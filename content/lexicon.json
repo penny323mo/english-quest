@@ -14687,17 +14687,17 @@
       "lemma": "address",
       "pos": "noun",
       "senseId": "street-location",
-      "ipa": "/ə.ˈdrɛs/",
+      "ipa": "/ˈæ.drɛs/",
       "syllables": [
         "ad",
         "dress"
       ],
       "syllableIpa": [
-        "ə",
-        "ˈdrɛs"
+        "ˈæ",
+        "drɛs"
       ],
-      "stress": 2,
-      "arpabet": "AH0 D R EH1 S",
+      "stress": 1,
+      "arpabet": "AE1 D R EH0 S",
       "audio": "assets/audio/words/address-noun.mp3",
       "audioSlow": "assets/audio/words/address-noun-slow.mp3",
       "glossYue": "地址",
@@ -14722,8 +14722,8 @@
       "phrase": false,
       "audioSha256": "451628e990485d39a2d06a4ba52dd461e28c97889828bf55e73a0024da0f4ec7",
       "register": "出行",
-      "usageNotes": "慢慢講個地址。名詞重音喺第二節。",
-      "pitfallsYue": "唔好讀成動詞嗰個重音。",
+      "usageNotes": "名詞重音喺第一節。動詞先係 /ə.ˈdrɛs/。",
+      "pitfallsYue": "動詞重音唔同，動詞係 /ə.ˈdrɛs/。",
       "related": [
         "destination-noun",
         "corner-noun"
@@ -32529,9 +32529,9 @@
         "the pharmacist",
         "a pharmacist"
       ],
-      "example": "The pharmacist checked my allergy before the dosage.",
-      "exampleYue": "藥劑師開劑量之前先睇我嘅過敏。",
-      "say": "The pharmacist checked my allergy before the dosage.",
+      "example": "The pharmacist checked my allergy, then gave me the box.",
+      "exampleYue": "藥劑師睇完我嘅過敏，再將盒藥畀我。",
+      "say": "The pharmacist checked my allergy, then gave me the box.",
       "variants": [],
       "note": "",
       "sources": [
@@ -32542,18 +32542,18 @@
       "senseMismatch": false,
       "cmuLemma": "pharmacist",
       "phrase": false,
-      "audioSha256": "b31172f278706adac7c1277ef48939e9f3d63ea4120cb219d85f0f0b1aeab27a",
+      "audioSha256": "616b6241c39b4308d207a1a7c86bddbe479d720f0186d512778f34d23fde73a3",
       "register": "藥房",
       "usageNotes": "pharmacist 係藥劑師。",
       "pitfallsYue": "pharmacist 係藥劑師。",
       "related": [],
       "examples": [
         {
-          "en": "The pharmacist checked my allergy before the dosage.",
-          "yue": "藥劑師開劑量之前先睇我嘅過敏。",
+          "en": "The pharmacist checked my allergy, then gave me the box.",
+          "yue": "藥劑師睇完我嘅過敏，再將盒藥畀我。",
           "audio": "assets/audio/words/pharmacist-noun.mp3",
           "audioSlow": "assets/audio/words/pharmacist-noun-slow.mp3",
-          "say": "The pharmacist checked my allergy before the dosage."
+          "say": "The pharmacist checked my allergy, then gave me the box."
         },
         {
           "en": "Please ask the pharmacist about this tablet.",
@@ -32642,15 +32642,15 @@
       "arpabet": "T AE1 B L AH0 T",
       "audio": "assets/audio/words/tablet-noun.mp3",
       "audioSlow": "assets/audio/words/tablet-noun-slow.mp3",
-      "glossYue": "藥丸",
-      "glossZh": "藥丸",
-      "jyutping": "joek6 jyun2",
+      "glossYue": "藥片",
+      "glossZh": "藥片",
+      "jyutping": "joek6 pin3",
       "collocations": [
         "one tablet",
         "a tablet"
       ],
       "example": "Please take one tablet after meals.",
-      "exampleYue": "請飯後食一粒藥。",
+      "exampleYue": "請飯後食一粒藥片。",
       "say": "Please take one tablet after meals.",
       "variants": [],
       "note": "",
@@ -32664,20 +32664,20 @@
       "phrase": false,
       "audioSha256": "0d3cb976f0d3d9792e29099ec1ed890f1617ef0f86ee8400a6e5ad73acda3523",
       "register": "藥房",
-      "usageNotes": "tablet 係藥丸。",
-      "pitfallsYue": "tablet 係藥丸。",
+      "usageNotes": "tablet 係藥片。",
+      "pitfallsYue": "tablet 係藥片，唔係藥丸。",
       "related": [],
       "examples": [
         {
           "en": "Please take one tablet after meals.",
-          "yue": "請飯後食一粒藥。",
+          "yue": "請飯後食一粒藥片。",
           "audio": "assets/audio/words/tablet-noun.mp3",
           "audioSlow": "assets/audio/words/tablet-noun-slow.mp3",
           "say": "Please take one tablet after meals."
         },
         {
           "en": "This tablet is for a cough.",
-          "yue": "呢粒藥係用來止咳。",
+          "yue": "呢粒藥片係用來止咳。",
           "audio": "assets/audio/words/tablet-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/tablet-noun-ex2-slow.mp3",
           "say": "This tablet is for a cough."
@@ -32877,7 +32877,7 @@
       "lemma": "pay on delivery",
       "pos": "phrase",
       "senseId": "pay-later",
-      "ipa": "/ˈpeɪ ˈɑn dɪ.ˈlɪ.vɚ.i/",
+      "ipa": "/ˌpeɪ ɑn dɪ.ˈlɪ.vɚ.i/",
       "syllables": [
         "pay",
         "on",
@@ -32887,15 +32887,15 @@
         "y"
       ],
       "syllableIpa": [
-        "ˈpeɪ",
-        "ˈɑn",
+        "ˌpeɪ",
+        "ɑn",
         "dɪ",
         "ˈlɪ",
         "vɚ",
         "i"
       ],
-      "stress": 1,
-      "arpabet": "P EY1 AA1 N D IH0 L IH1 V ER0 IY0",
+      "stress": 4,
+      "arpabet": "P EY2 AA0 N D IH0 L IH1 V ER0 IY0",
       "audio": "assets/audio/words/pay-on-delivery-phrase.mp3",
       "audioSlow": "assets/audio/words/pay-on-delivery-phrase-slow.mp3",
       "glossYue": "送到先畀錢",
@@ -33493,7 +33493,7 @@
       "lemma": "cover my shift",
       "pos": "phrase",
       "senseId": "take-a-shift",
-      "ipa": "/ˈkʌ.vɚ ˈmaɪ ˈʃɪft/",
+      "ipa": "/ˌkʌ.vɚ maɪ ˈʃɪft/",
       "syllables": [
         "co",
         "ver",
@@ -33501,13 +33501,13 @@
         "shift"
       ],
       "syllableIpa": [
-        "ˈkʌ",
+        "ˌkʌ",
         "vɚ",
-        "ˈmaɪ",
+        "maɪ",
         "ˈʃɪft"
       ],
-      "stress": 1,
-      "arpabet": "K AH1 V ER0 | M AY1 | SH IH1 F T",
+      "stress": 4,
+      "arpabet": "K AH2 V ER0 | M AY0 | SH IH1 F T",
       "audio": "assets/audio/words/cover-my-shift-phrase.mp3",
       "audioSlow": "assets/audio/words/cover-my-shift-phrase-slow.mp3",
       "glossYue": "頂更",
@@ -33855,6 +33855,902 @@
           "audio": "assets/audio/words/deliver-verb-ex2.mp3",
           "audioSlow": "assets/audio/words/deliver-verb-ex2-slow.mp3",
           "say": "Please deliver the suitcase after you find it."
+        }
+      ]
+    },
+    {
+      "id": "trim-noun",
+      "lemma": "trim",
+      "pos": "noun",
+      "senseId": "haircut",
+      "ipa": "/ˈtɹɪm/",
+      "syllables": [
+        "trim"
+      ],
+      "syllableIpa": [
+        "ˈtɹɪm"
+      ],
+      "stress": 1,
+      "arpabet": "T R IH1 M",
+      "audio": "assets/audio/words/trim-noun.mp3",
+      "audioSlow": "assets/audio/words/trim-noun-slow.mp3",
+      "glossYue": "剪髮",
+      "glossZh": "剪髮",
+      "jyutping": "zin2 faat3",
+      "collocations": [
+        "a simple trim",
+        "a short trim"
+      ],
+      "example": "I would like a simple trim today.",
+      "exampleYue": "我今日想剪個簡單髮型。",
+      "say": "I would like a simple trim today.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "trim",
+      "phrase": false,
+      "audioSha256": "038ec39f45ad15e6ba7176b560d5742a32735bbbb8f0847ec37323b24432d27c",
+      "register": "日常生活",
+      "usageNotes": "trim 係剪髮，唔係裝修。",
+      "pitfallsYue": "trim 係剪髮，唔係裝修。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I would like a simple trim today.",
+          "yue": "我今日想剪個簡單髮型。",
+          "audio": "assets/audio/words/trim-noun.mp3",
+          "audioSlow": "assets/audio/words/trim-noun-slow.mp3",
+          "say": "I would like a simple trim today."
+        },
+        {
+          "en": "Please keep the fringe short during this trim.",
+          "yue": "剪嘅時候請留短瀏海。",
+          "audio": "assets/audio/words/trim-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/trim-noun-ex2-slow.mp3",
+          "say": "Please keep the fringe short during this trim."
+        }
+      ]
+    },
+    {
+      "id": "fringe-noun",
+      "lemma": "fringe",
+      "pos": "noun",
+      "senseId": "bangs",
+      "ipa": "/ˈfɹɪndʒ/",
+      "syllables": [
+        "fringe"
+      ],
+      "syllableIpa": [
+        "ˈfɹɪndʒ"
+      ],
+      "stress": 1,
+      "arpabet": "F R IH1 N JH",
+      "audio": "assets/audio/words/fringe-noun.mp3",
+      "audioSlow": "assets/audio/words/fringe-noun-slow.mp3",
+      "glossYue": "瀏海",
+      "glossZh": "瀏海",
+      "jyutping": "lau4 hoi2",
+      "collocations": [
+        "a light fringe",
+        "keep the fringe"
+      ],
+      "example": "Please keep a light fringe over the forehead.",
+      "exampleYue": "請留少少瀏海。",
+      "say": "Please keep a light fringe over the forehead.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "fringe",
+      "phrase": false,
+      "audioSha256": "ef0a907a7d7364f87a469386b7ab16151786928b46375228d234cf037790bb20",
+      "register": "日常生活",
+      "usageNotes": "fringe 係瀏海。",
+      "pitfallsYue": "fringe 係瀏海。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Please keep a light fringe over the forehead.",
+          "yue": "請留少少瀏海。",
+          "audio": "assets/audio/words/fringe-noun.mp3",
+          "audioSlow": "assets/audio/words/fringe-noun-slow.mp3",
+          "say": "Please keep a light fringe over the forehead."
+        },
+        {
+          "en": "A short fringe suits this haircut.",
+          "yue": "短瀏海適合呢個髮型。",
+          "audio": "assets/audio/words/fringe-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/fringe-noun-ex2-slow.mp3",
+          "say": "A short fringe suits this haircut."
+        }
+      ]
+    },
+    {
+      "id": "salon-noun",
+      "lemma": "salon",
+      "pos": "noun",
+      "senseId": "hair-shop",
+      "ipa": "/sə.ˈlɑn/",
+      "syllables": [
+        "sa",
+        "lon"
+      ],
+      "syllableIpa": [
+        "sə",
+        "ˈlɑn"
+      ],
+      "stress": 2,
+      "arpabet": "S AH0 L AA1 N",
+      "audio": "assets/audio/words/salon-noun.mp3",
+      "audioSlow": "assets/audio/words/salon-noun-slow.mp3",
+      "glossYue": "髮型屋",
+      "glossZh": "髮型屋",
+      "jyutping": "faat3 jing4 uk1",
+      "collocations": [
+        "this salon",
+        "at the salon"
+      ],
+      "example": "This salon can wash and trim hair.",
+      "exampleYue": "呢間髮型屋可以洗同剪。",
+      "say": "This salon can wash and trim hair.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "salon",
+      "phrase": false,
+      "audioSha256": "ae4b2d34585868c3a660dc8f960ee2482dd29be8f2d388202c57ba5684528d41",
+      "register": "日常生活",
+      "usageNotes": "salon 係髮型屋。",
+      "pitfallsYue": "salon 係髮型屋。",
+      "related": [],
+      "examples": [
+        {
+          "en": "This salon can wash and trim hair.",
+          "yue": "呢間髮型屋可以洗同剪。",
+          "audio": "assets/audio/words/salon-noun.mp3",
+          "audioSlow": "assets/audio/words/salon-noun-slow.mp3",
+          "say": "This salon can wash and trim hair."
+        },
+        {
+          "en": "I booked a trim at this salon.",
+          "yue": "我喺呢間髮型屋預約咗剪髮。",
+          "audio": "assets/audio/words/salon-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/salon-noun-ex2-slow.mp3",
+          "say": "I booked a trim at this salon."
+        }
+      ]
+    },
+    {
+      "id": "side-noun",
+      "lemma": "side",
+      "pos": "noun",
+      "senseId": "either-half",
+      "ipa": "/ˈsaɪd/",
+      "syllables": [
+        "side"
+      ],
+      "syllableIpa": [
+        "ˈsaɪd"
+      ],
+      "stress": 1,
+      "arpabet": "S AY1 D",
+      "audio": "assets/audio/words/side-noun.mp3",
+      "audioSlow": "assets/audio/words/side-noun-slow.mp3",
+      "glossYue": "側邊",
+      "glossZh": "側邊",
+      "jyutping": "zak1 bin1",
+      "collocations": [
+        "both sides",
+        "one side"
+      ],
+      "example": "Please make both sides shorter.",
+      "exampleYue": "請兩邊都剪短啲。",
+      "say": "Please make both sides shorter.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "side",
+      "phrase": false,
+      "audioSha256": "3f82e5ec8c6b0346e70489d119d89329499ef38fb48229653318b1709972c43c",
+      "register": "日常生活",
+      "usageNotes": "side 係側邊。",
+      "pitfallsYue": "side 係側邊。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Please make both sides shorter.",
+          "yue": "請兩邊都剪短啲。",
+          "audio": "assets/audio/words/side-noun.mp3",
+          "audioSlow": "assets/audio/words/side-noun-slow.mp3",
+          "say": "Please make both sides shorter."
+        },
+        {
+          "en": "The left side is a little longer.",
+          "yue": "左邊長少少。",
+          "audio": "assets/audio/words/side-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/side-noun-ex2-slow.mp3",
+          "say": "The left side is a little longer."
+        }
+      ]
+    },
+    {
+      "id": "blow-dry-phrase",
+      "lemma": "blow dry",
+      "pos": "phrase",
+      "senseId": "style-dry",
+      "ipa": "/ˈbloʊ ˈdɹaɪ/",
+      "syllables": [
+        "blow",
+        "dry"
+      ],
+      "syllableIpa": [
+        "ˈbloʊ",
+        "ˈdɹaɪ"
+      ],
+      "stress": 1,
+      "arpabet": "B L OW1 | D R AY1",
+      "audio": "assets/audio/words/blow-dry-phrase.mp3",
+      "audioSlow": "assets/audio/words/blow-dry-phrase-slow.mp3",
+      "glossYue": "吹乾",
+      "glossZh": "吹乾",
+      "jyutping": "ceoi1 gon1",
+      "collocations": [
+        "blow dry",
+        "a short dry"
+      ],
+      "example": "Can you blow dry my hair here?",
+      "exampleYue": "可唔可以喺度吹乾？",
+      "say": "Can you blow dry my hair here?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "blow dry",
+      "phrase": true,
+      "audioSha256": "df531d65171d6071c40741f15d55a1ef58bbafd1f71d1ac5bca43ea27fb96c5f",
+      "register": "日常生活",
+      "usageNotes": "blow dry 係吹乾。",
+      "pitfallsYue": "blow dry 係吹乾。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Can you blow dry my hair here?",
+          "yue": "可唔可以喺度吹乾？",
+          "audio": "assets/audio/words/blow-dry-phrase.mp3",
+          "audioSlow": "assets/audio/words/blow-dry-phrase-slow.mp3",
+          "say": "Can you blow dry my hair here?"
+        },
+        {
+          "en": "A short blow dry is part of the price.",
+          "yue": "價錢包一次短吹。",
+          "audio": "assets/audio/words/blow-dry-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/blow-dry-phrase-ex2-slow.mp3",
+          "say": "A short blow dry is part of the price."
+        }
+      ]
+    },
+    {
+      "id": "wash-verb",
+      "lemma": "wash",
+      "pos": "verb",
+      "senseId": "clean-hair",
+      "ipa": "/ˈwɑʃ/",
+      "syllables": [
+        "wash"
+      ],
+      "syllableIpa": [
+        "ˈwɑʃ"
+      ],
+      "stress": 1,
+      "arpabet": "W AA1 SH",
+      "audio": "assets/audio/words/wash-verb.mp3",
+      "audioSlow": "assets/audio/words/wash-verb-slow.mp3",
+      "glossYue": "洗",
+      "glossZh": "洗",
+      "jyutping": "sai2",
+      "collocations": [
+        "wash my hair",
+        "wash it here"
+      ],
+      "example": "Can you wash my hair before the trim?",
+      "exampleYue": "剪之前可唔可以洗頭？",
+      "say": "Can you wash my hair before the trim?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "wash",
+      "phrase": false,
+      "audioSha256": "2d17040ebe24cf23b1940ec431b3a5323736ebb202041ce1ae46fb9859fded34",
+      "register": "日常生活",
+      "usageNotes": "wash 係洗。",
+      "pitfallsYue": "wash 係洗。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Can you wash my hair before the trim?",
+          "yue": "剪之前可唔可以洗頭？",
+          "audio": "assets/audio/words/wash-verb.mp3",
+          "audioSlow": "assets/audio/words/wash-verb-slow.mp3",
+          "say": "Can you wash my hair before the trim?"
+        },
+        {
+          "en": "Please wash it again after the fringe is cut.",
+          "yue": "剪完瀏海請再洗一次。",
+          "audio": "assets/audio/words/wash-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/wash-verb-ex2-slow.mp3",
+          "say": "Please wash it again after the fringe is cut."
+        }
+      ]
+    },
+    {
+      "id": "on-track-phrase",
+      "lemma": "on track",
+      "pos": "phrase",
+      "senseId": "as-planned",
+      "ipa": "/ˈɑn ˈtɹæk/",
+      "syllables": [
+        "on",
+        "track"
+      ],
+      "syllableIpa": [
+        "ˈɑn",
+        "ˈtɹæk"
+      ],
+      "stress": 1,
+      "arpabet": "AA1 N | T R AE1 K",
+      "audio": "assets/audio/words/on-track-phrase.mp3",
+      "audioSlow": "assets/audio/words/on-track-phrase-slow.mp3",
+      "glossYue": "跟得上進度",
+      "glossZh": "跟得上進度",
+      "jyutping": "gan1 dak1 soeng5 zeon3 dou6",
+      "collocations": [
+        "on track",
+        "fully on track"
+      ],
+      "example": "Our design work is on track this month.",
+      "exampleYue": "我哋設計呢個月跟得上進度。",
+      "say": "Our design work is on track this month.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "on track",
+      "phrase": true,
+      "audioSha256": "91dbc6fc16ad8cefcb1fa7688fee5a9456cb235147ff9cc6c0a130b97407b953",
+      "register": "職場",
+      "usageNotes": "on track 係跟得上進度。",
+      "pitfallsYue": "on track 係跟得上進度。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Our design work is on track this month.",
+          "yue": "我哋設計呢個月跟得上進度。",
+          "audio": "assets/audio/words/on-track-phrase.mp3",
+          "audioSlow": "assets/audio/words/on-track-phrase-slow.mp3",
+          "say": "Our design work is on track this month."
+        },
+        {
+          "en": "The morning meeting stays short when work is on track.",
+          "yue": "進度跟得上，朝早個會就可以短。",
+          "audio": "assets/audio/words/on-track-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/on-track-phrase-ex2-slow.mp3",
+          "say": "The morning meeting stays short when work is on track."
+        }
+      ]
+    },
+    {
+      "id": "behind-schedule-phrase",
+      "lemma": "behind schedule",
+      "pos": "phrase",
+      "senseId": "running-late",
+      "ipa": "/bɪ.ˈhaɪnd ˈskɛ.dʒʊl/",
+      "syllables": [
+        "be",
+        "hind",
+        "sched",
+        "ule"
+      ],
+      "syllableIpa": [
+        "bɪ",
+        "ˈhaɪnd",
+        "ˈskɛ",
+        "dʒʊl"
+      ],
+      "stress": 2,
+      "arpabet": "B IH0 HH AY1 N D | S K EH1 JH UH0 L",
+      "audio": "assets/audio/words/behind-schedule-phrase.mp3",
+      "audioSlow": "assets/audio/words/behind-schedule-phrase-slow.mp3",
+      "glossYue": "落後",
+      "glossZh": "落後",
+      "jyutping": "lok6 hau6",
+      "collocations": [
+        "behind schedule",
+        "is behind schedule"
+      ],
+      "example": "The sample run is behind schedule this month.",
+      "exampleYue": "樣辦呢個月落後咗。",
+      "say": "The sample run is behind schedule this month.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "behind schedule",
+      "phrase": true,
+      "audioSha256": "339463c205a4d7e3b295326babf8446f73f1c219480193612f0bb279a30489fe",
+      "register": "職場",
+      "usageNotes": "behind schedule 係落後。",
+      "pitfallsYue": "behind schedule 係落後。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The sample run is behind schedule this month.",
+          "yue": "樣辦呢個月落後咗。",
+          "audio": "assets/audio/words/behind-schedule-phrase.mp3",
+          "audioSlow": "assets/audio/words/behind-schedule-phrase-slow.mp3",
+          "say": "The sample run is behind schedule this month."
+        },
+        {
+          "en": "I will follow up because that piece is behind schedule.",
+          "yue": "嗰部分落後，我會跟進。",
+          "audio": "assets/audio/words/behind-schedule-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/behind-schedule-phrase-ex2-slow.mp3",
+          "say": "I will follow up because that piece is behind schedule."
+        }
+      ]
+    },
+    {
+      "id": "follow-up-verb",
+      "lemma": "follow up",
+      "pos": "verb",
+      "senseId": "check-back",
+      "ipa": "/ˈfɑ.loʊ ˈʌp/",
+      "syllables": [
+        "fol",
+        "low",
+        "up"
+      ],
+      "syllableIpa": [
+        "ˈfɑ",
+        "loʊ",
+        "ˈʌp"
+      ],
+      "stress": 1,
+      "arpabet": "F AA1 L OW0 | AH1 P",
+      "audio": "assets/audio/words/follow-up-verb.mp3",
+      "audioSlow": "assets/audio/words/follow-up-verb-slow.mp3",
+      "glossYue": "跟進",
+      "glossZh": "跟進",
+      "jyutping": "gan1 zeon3",
+      "collocations": [
+        "follow up",
+        "follow up by Friday"
+      ],
+      "example": "I will follow up with the client on Friday.",
+      "exampleYue": "我會星期五同客戶跟進。",
+      "say": "I will follow up with the client on Friday.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "follow up",
+      "phrase": false,
+      "audioSha256": "4c81a6d93ac976c0ae05febf51cb26aeddadb2a22385f5e1d3050246b4f2e6f2",
+      "register": "職場",
+      "usageNotes": "follow up 係跟進，唔係覆診。",
+      "pitfallsYue": "follow up 係跟進，唔係覆診。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I will follow up with the client on Friday.",
+          "yue": "我會星期五同客戶跟進。",
+          "audio": "assets/audio/words/follow-up-verb.mp3",
+          "audioSlow": "assets/audio/words/follow-up-verb-slow.mp3",
+          "say": "I will follow up with the client on Friday."
+        },
+        {
+          "en": "Please follow up by Friday and send a note.",
+          "yue": "請星期五之前跟進，再寄張筆記。",
+          "audio": "assets/audio/words/follow-up-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/follow-up-verb-ex2-slow.mp3",
+          "say": "Please follow up by Friday and send a note."
+        }
+      ]
+    },
+    {
+      "id": "friday-noun",
+      "lemma": "Friday",
+      "pos": "noun",
+      "senseId": "weekday",
+      "ipa": "/ˈfɹaɪ.di/",
+      "syllables": [
+        "fri",
+        "day"
+      ],
+      "syllableIpa": [
+        "ˈfɹaɪ",
+        "di"
+      ],
+      "stress": 1,
+      "arpabet": "F R AY1 D IY0",
+      "audio": "assets/audio/words/friday-noun.mp3",
+      "audioSlow": "assets/audio/words/friday-noun-slow.mp3",
+      "glossYue": "星期五",
+      "glossZh": "星期五",
+      "jyutping": "sing1 kei4 ng5",
+      "collocations": [
+        "on Friday",
+        "by Friday"
+      ],
+      "example": "I will follow up by Friday morning.",
+      "exampleYue": "我會星期五朝早之前跟進。",
+      "say": "I will follow up by Friday morning.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "Friday",
+      "phrase": false,
+      "audioSha256": "6510b4379045d06b623f23949837786d587693da3e8531be5dcc2a1781541312",
+      "register": "職場",
+      "usageNotes": "Friday 係星期五。",
+      "pitfallsYue": "Friday 係星期五。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I will follow up by Friday morning.",
+          "yue": "我會星期五朝早之前跟進。",
+          "audio": "assets/audio/words/friday-noun.mp3",
+          "audioSlow": "assets/audio/words/friday-noun-slow.mp3",
+          "say": "I will follow up by Friday morning."
+        },
+        {
+          "en": "The note goes out on Friday afternoon.",
+          "yue": "筆記星期五下晝寄出。",
+          "audio": "assets/audio/words/friday-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/friday-noun-ex2-slow.mp3",
+          "say": "The note goes out on Friday afternoon."
+        }
+      ]
+    },
+    {
+      "id": "question-noun",
+      "lemma": "question",
+      "pos": "noun",
+      "senseId": "open-query",
+      "ipa": "/ˈkwɛs.tʃən/",
+      "syllables": [
+        "ques",
+        "tion"
+      ],
+      "syllableIpa": [
+        "ˈkwɛs",
+        "tʃən"
+      ],
+      "stress": 1,
+      "arpabet": "K W EH1 S CH AH0 N",
+      "audio": "assets/audio/words/question-noun.mp3",
+      "audioSlow": "assets/audio/words/question-noun-slow.mp3",
+      "glossYue": "問題",
+      "glossZh": "問題",
+      "jyutping": "man6 tai4",
+      "collocations": [
+        "any questions",
+        "one question"
+      ],
+      "example": "Are there any open questions before the break?",
+      "exampleYue": "散會之前仲有冇問題？",
+      "say": "Are there any open questions before the break?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "question",
+      "phrase": false,
+      "audioSha256": "626c135450e132fe4ac241c49b959866b33f5fbce3c3470433449518d8456d9f",
+      "register": "職場",
+      "usageNotes": "question 係問題。",
+      "pitfallsYue": "question 係問題。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Are there any open questions before the break?",
+          "yue": "散會之前仲有冇問題？",
+          "audio": "assets/audio/words/question-noun.mp3",
+          "audioSlow": "assets/audio/words/question-noun-slow.mp3",
+          "say": "Are there any open questions before the break?"
+        },
+        {
+          "en": "Please ask one question about the action item.",
+          "yue": "請問一條關於行動項嘅問題。",
+          "audio": "assets/audio/words/question-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/question-noun-ex2-slow.mp3",
+          "say": "Please ask one question about the action item."
+        }
+      ]
+    },
+    {
+      "id": "meeting-noun",
+      "lemma": "meeting",
+      "pos": "noun",
+      "senseId": "work-meet",
+      "ipa": "/ˈmi.tɪŋ/",
+      "syllables": [
+        "meet",
+        "ing"
+      ],
+      "syllableIpa": [
+        "ˈmi",
+        "tɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "M IY1 T IH0 NG",
+      "audio": "assets/audio/words/meeting-noun.mp3",
+      "audioSlow": "assets/audio/words/meeting-noun-slow.mp3",
+      "glossYue": "會議",
+      "glossZh": "會議",
+      "jyutping": "wui6 ji5",
+      "collocations": [
+        "the morning meeting",
+        "after the meeting"
+      ],
+      "example": "The morning meeting can stay short today.",
+      "exampleYue": "今朝個會可以短啲。",
+      "say": "The morning meeting can stay short today.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "meeting",
+      "phrase": false,
+      "audioSha256": "9fd78866e530ea1ce27c994b0ee77ffcc7521ecb3e66e35421f95f5a3dc5f0fa",
+      "register": "職場",
+      "usageNotes": "meeting 係會議。",
+      "pitfallsYue": "meeting 係會議。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The morning meeting can stay short today.",
+          "yue": "今朝個會可以短啲。",
+          "audio": "assets/audio/words/meeting-noun.mp3",
+          "audioSlow": "assets/audio/words/meeting-noun-slow.mp3",
+          "say": "The morning meeting can stay short today."
+        },
+        {
+          "en": "Please send the note after the meeting.",
+          "yue": "會後請寄張筆記。",
+          "audio": "assets/audio/words/meeting-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/meeting-noun-ex2-slow.mp3",
+          "say": "Please send the note after the meeting."
+        }
+      ]
+    },
+    {
+      "id": "sketch-noun",
+      "lemma": "sketch",
+      "pos": "noun",
+      "senseId": "design-drawing",
+      "ipa": "/ˈskɛtʃ/",
+      "syllables": [
+        "sketch"
+      ],
+      "syllableIpa": [
+        "ˈskɛtʃ"
+      ],
+      "stress": 1,
+      "arpabet": "S K EH1 CH",
+      "audio": "assets/audio/words/sketch-noun.mp3",
+      "audioSlow": "assets/audio/words/sketch-noun-slow.mp3",
+      "glossYue": "草圖",
+      "glossZh": "草圖",
+      "jyutping": "cou2 tou4",
+      "collocations": [
+        "a first sketch",
+        "confirm the sketch"
+      ],
+      "example": "I brought a first sketch of the stone.",
+      "exampleYue": "我帶咗第一張石草圖。",
+      "say": "I brought a first sketch of the stone.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "sketch",
+      "phrase": false,
+      "audioSha256": "e86b01c70bdf58b9c067e57ac47fb4a5bcbf2ae909b6cb3892256a00bb1ba541",
+      "register": "珠寶",
+      "usageNotes": "sketch 係草圖。",
+      "pitfallsYue": "sketch 係草圖。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I brought a first sketch of the stone.",
+          "yue": "我帶咗第一張石草圖。",
+          "audio": "assets/audio/words/sketch-noun.mp3",
+          "audioSlow": "assets/audio/words/sketch-noun-slow.mp3",
+          "say": "I brought a first sketch of the stone."
+        },
+        {
+          "en": "Please confirm the sketch within four weeks.",
+          "yue": "請四個星期內確認草圖。",
+          "audio": "assets/audio/words/sketch-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/sketch-noun-ex2-slow.mp3",
+          "say": "Please confirm the sketch within four weeks."
+        }
+      ]
+    },
+    {
+      "id": "yellow-gold-phrase",
+      "lemma": "yellow gold",
+      "pos": "phrase",
+      "senseId": "warm-metal",
+      "ipa": "/ˈjɛ.loʊ ˈɡoʊld/",
+      "syllables": [
+        "yel",
+        "low",
+        "gold"
+      ],
+      "syllableIpa": [
+        "ˈjɛ",
+        "loʊ",
+        "ˈɡoʊld"
+      ],
+      "stress": 1,
+      "arpabet": "Y EH1 L OW0 | G OW1 L D",
+      "audio": "assets/audio/words/yellow-gold-phrase.mp3",
+      "audioSlow": "assets/audio/words/yellow-gold-phrase-slow.mp3",
+      "glossYue": "黃金",
+      "glossZh": "黃金",
+      "jyutping": "wong4 gam1",
+      "collocations": [
+        "yellow gold",
+        "in yellow gold"
+      ],
+      "example": "Yellow gold suits this stone well.",
+      "exampleYue": "黃金適合呢粒石。",
+      "say": "Yellow gold suits this stone well.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "yellow gold",
+      "phrase": true,
+      "audioSha256": "976a2a0362a58a3d44935ce577302a42a5d50190ae6ac93b69b00a3d074ea005",
+      "register": "珠寶",
+      "usageNotes": "yellow gold 係黃金。",
+      "pitfallsYue": "yellow gold 係黃金，唔係白金。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Yellow gold suits this stone well.",
+          "yue": "黃金適合呢粒石。",
+          "audio": "assets/audio/words/yellow-gold-phrase.mp3",
+          "audioSlow": "assets/audio/words/yellow-gold-phrase-slow.mp3",
+          "say": "Yellow gold suits this stone well."
+        },
+        {
+          "en": "Is yellow gold a better choice for this stone?",
+          "yue": "黃金會唔會更適合呢粒石？",
+          "audio": "assets/audio/words/yellow-gold-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/yellow-gold-phrase-ex2-slow.mp3",
+          "say": "Is yellow gold a better choice for this stone?"
+        }
+      ]
+    },
+    {
+      "id": "week-noun",
+      "lemma": "week",
+      "pos": "noun",
+      "senseId": "seven-days",
+      "ipa": "/ˈwik/",
+      "syllables": [
+        "week"
+      ],
+      "syllableIpa": [
+        "ˈwik"
+      ],
+      "stress": 1,
+      "arpabet": "W IY1 K",
+      "audio": "assets/audio/words/week-noun.mp3",
+      "audioSlow": "assets/audio/words/week-noun-slow.mp3",
+      "glossYue": "星期",
+      "glossZh": "星期",
+      "jyutping": "sing1 kei4",
+      "collocations": [
+        "this week",
+        "four weeks"
+      ],
+      "example": "The ring can be ready in four weeks.",
+      "exampleYue": "戒指四個星期可以做好。",
+      "say": "The ring can be ready in four weeks.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "week",
+      "phrase": false,
+      "audioSha256": "2631c825b9e38da47563ac3ad33a4979f76d0c9fa53b2cf633c29c90b2b37d30",
+      "register": "珠寶",
+      "usageNotes": "week 係星期。",
+      "pitfallsYue": "week 係星期。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The ring can be ready in four weeks.",
+          "yue": "戒指四個星期可以做好。",
+          "audio": "assets/audio/words/week-noun.mp3",
+          "audioSlow": "assets/audio/words/week-noun-slow.mp3",
+          "say": "The ring can be ready in four weeks."
+        },
+        {
+          "en": "Please confirm the sketch this week.",
+          "yue": "請呢個星期確認草圖。",
+          "audio": "assets/audio/words/week-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/week-noun-ex2-slow.mp3",
+          "say": "Please confirm the sketch this week."
         }
       ]
     }

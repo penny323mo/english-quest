@@ -130,21 +130,21 @@
     {
       "prompt": "How long will this small parcel take to reach the destination? 即係問緊咩？",
       "choices": [
-        "去到目的地要幾耐",
         "邊個計劃平啲",
-        "你叫咩名"
+        "你叫咩名",
+        "去到目的地要幾耐"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "how long 係問要幾耐。destination 係目的地。"
     },
     {
       "prompt": "This parcel is fragile, so please mark it as fragile. 呢句即係點？",
       "choices": [
+        "無限計劃平啲",
         "呢個包裹易碎，請註明易碎",
-        "請喺度簽名",
-        "無限計劃平啲"
+        "請喺度簽名"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "fragile 係易碎。"
     }
   ],
@@ -292,21 +292,21 @@
       "prompt": "聽一次，揀你聽到嘅字：fragile",
       "lemma": "fragile-adj",
       "choices": [
-        "fragile",
         "weight",
-        "stamp"
+        "stamp",
+        "fragile"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "I would like to send this parcel by airmail.",
       "choices": [
+        "我通常早起身",
         "我想用空郵寄包裹",
-        "我想買預繳計劃",
-        "我通常早起身"
+        "我想買預繳計劃"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -322,11 +322,11 @@
       "type": "choice",
       "prompt": "Please mark the full weight on the form.",
       "choices": [
-        "請喺表格標明重量",
         "請開通電話卡",
-        "請講你嘅工作"
+        "請講你嘅工作",
+        "請喺表格標明重量"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "weight 係重量。form 係表格。"
     }
   ],
@@ -351,5 +351,5 @@
       "postage-stamp-noun"
     ]
   },
-  "next": "J3"
+  "next": "D7"
 }

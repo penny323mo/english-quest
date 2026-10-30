@@ -145,21 +145,21 @@
     {
       "prompt": "Ten percent off, and tax is included. 呢句即係點？",
       "choices": [
-        "減一成，稅包咗",
         "加一成稅",
-        "十八開"
+        "十八開",
+        "減一成，稅包咗"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "off 係減。included 係包咗喺總數。"
     },
     {
       "prompt": "within my budget 呢句即係點？",
       "choices": [
+        "要改碼",
         "喺我預算之內",
-        "太貴唔買",
-        "要改碼"
+        "太貴唔買"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "預算係客人自己嘅上限。"
     }
   ],
@@ -308,21 +308,21 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "discount-noun",
       "choices": [
-        "discount",
         "deal",
-        "cost"
+        "cost",
+        "discount"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「Is there a discount if I take the ring and the chain too?」，係咩意思？",
       "choices": [
+        "玉",
         "折扣",
-        "碼",
-        "玉"
+        "碼"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -338,11 +338,11 @@
       "type": "choice",
       "prompt": "邊個尾音係 /l/？",
       "choices": [
-        "sale",
         "tax",
-        "cost"
+        "cost",
+        "sale"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "sale 尾音係 /l/。discount 名詞重音喺第一節。"
     }
   ],

@@ -102,21 +102,21 @@
     {
       "prompt": "Ten dollars. 係幾多？",
       "choices": [
-        "十蚊",
         "十點",
-        "早晨"
+        "早晨",
+        "十蚊"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "dollar 喺香港口語講做「蚊」。"
     },
     {
       "prompt": "Three o'clock. 係講緊咩？",
       "choices": [
+        "三位",
         "三點",
-        "三蚊",
-        "三位"
+        "三蚊"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "o'clock 係點鐘，唔係錢。"
     }
   ],
@@ -253,21 +253,21 @@
       "prompt": "你聽到邊個？",
       "lemma": "six-num",
       "choices": [
-        "six",
         "sick",
-        "sit"
+        "sit",
+        "six"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "dollar",
       "choices": [
+        "對唔住",
         "蚊",
-        "點鐘",
-        "對唔住"
+        "點鐘"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -283,21 +283,21 @@
       "type": "meaning",
       "prompt": "price",
       "choices": [
-        "價錢",
         "航班",
-        "餐牌"
+        "餐牌",
+        "價錢"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "邊句先係問時間？",
       "choices": [
+        "Excuse me.",
         "What time is it?",
-        "How much is this?",
-        "Excuse me."
+        "How much is this?"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "time 係時間。how much 係問錢。"
     }
   ],
