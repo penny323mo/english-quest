@@ -99,6 +99,13 @@
 - **Dialogue beats:** Tight ring and receipt → Larger opening → Half a size larger → Make it larger under the warranty → How long and Saturday → Ready Saturday, no charge → Bring the receipt → Larger ring is ready
 - **Coherence:** the ring is too tight, so the work is half a size larger. The warranty covers it. It is ready Saturday, the guest brings the receipt, and the charge is nothing. Checked against the earlier request.
 
+### J18 — Watch battery and strap / 換錶電同錶帶 · A2/B1 · SHIPPED
+- **Goals:** Ask for a watch battery, check that it stays water resistant, switch to a leather strap, remove two links, and collect it at four o'clock under the warranty.
+- **Vocab:** watch, battery, water resistant, leather strap, warranty
+- **Grammar:** Can you replace the battery? Is it still water resistant?
+- **Dialogue beats:** Dead battery this afternoon → Ten minutes, warranty covers it → Water resistant after the case is opened → Leather strap → Remove two links → Pick-up at four o'clock → Warranty and the strap → Collect the watch at four
+- **Coherence:** one watch. The new battery takes about ten minutes and the warranty covers it. It stays water resistant. Two metal links come off the band. Pick-up is four o'clock.
+
 ### J8 — After-sales and warranty · B1 · NEW
 - **Goals:** Explain care, warranty, return window politely.
 - **Vocab (14):** warranty, guarantee, return, exchange, receipt, scratch, polish, clean, avoid, water, chemical, claim, policy, within
@@ -111,6 +118,13 @@
 - **Grammar:** Right now we can freeze this card. Can I draw cash at this counter on the temporary limit?
 - **Dialogue beats:** Machine kept the card → Cancel button → Still inside → Freeze the card now, new card on Friday → Identity and arrival → One identity document, Friday → Counter cash on the temporary limit → Two thousand for one working day
 - **Coherence:** the card is frozen now, the replacement arrives on Friday, and the working day belongs only to the temporary limit. The account is not frozen. Checked against the earlier request.
+
+### D11 — Opening a bank account / 銀行開戶 · B1 · SHIPPED
+- **Goals:** Open an account with identity and proof of address, choose a savings account, hear the minimum balance and that there is no monthly fee, wait for the debit card by post, and register for online banking.
+- **Vocab:** identity, address, account, savings account, balance, fee, debit card, online banking
+- **Grammar:** Do you need my identity and proof of address? Is there a monthly fee?
+- **Dialogue beats:** Identity and proof of address → Bank bill or tax letter → Savings or current → Interest and a one-thousand minimum → Monthly fee → No fee, debit card in five days → Online banking before the card → Online banking tomorrow morning
+- **Coherence:** one new account. Proof of address can be a bank bill or a tax letter. The savings account needs a one-thousand-dollar minimum balance and has no monthly fee. The debit card arrives by post in five days. Online banking opens tomorrow morning.
 
 ### J9 — Handling complaints · B1 · NEW (PRIORITY)
 - **Goals:** Listen, apologise, offer fix without over-promising.
@@ -125,18 +139,18 @@
 - **Dialogue beats:** Soft suggest → Benefit → Objection soft → Accept/decline gracefully
 
 ### J16 — Engraving a gift / 首飾刻字 · B1 · SHIPPED
-- **Goals:** Ask for a short engraving of a wedding date, fit each initial to the character limit, choose a plain font, check the spelling, and collect it in three days.
+- **Goals:** Engrave a wedding date with initials G and M, drop the dots so fourteen characters fit the twelve-character limit, choose a free plain font, check the engraving text, sign the form, and collect it in three days.
 - **Vocab:** engraving, initial, date, font, character limit, fee, spelling
-- **Grammar:** Can you use a plain font? The engraving is ready in three days.
-- **Dialogue beats:** Wedding date on the bracelet → Initials and the character limit → Plain font and fee → Fee after twelve characters → Check the spelling → Ready in three days → Fee if the spelling is right → Same fee, three days
-- **Coherence:** the wedding date is the text, not the collection day. The only ready time is three days. Checked against the earlier request.
+- **Grammar:** What is the wedding date? A plain font is free. A script font costs fifty dollars.
+- **Dialogue beats:** Wedding date inside the bracelet → Twelve characters → Twelfth of June 2021 and initials G and M → Fourteen characters, two over → Date and initials without dots → Plain font free, script font fifty dollars → Check the engraving text → Sign the form, ready in three days
+- **Coherence:** the date is the twelfth of June 2021. Initials are G and M. 12.06.2021 beside G and M is fourteen characters, two over the twelve limit. Dots come off. Plain font is free. The guest checks the engraving text before it is cut, signs the form, and collects it in three days.
 
 ### J17 — Pearl care and pricing / 珍珠保養同價錢 · B1 · SHIPPED
-- **Goals:** Choose a freshwater pearl over a saltwater one, ask about lustre and the price range, keep perfume away, wipe it after wearing, and ask for the certificate.
+- **Goals:** Compare freshwater and saltwater pearls, hear a range of two thousand to six thousand dollars, let Ida give the care line about perfume and wiping, and read pearl type and size on the certificate.
 - **Vocab:** pearl, lustre, price, perfume, wipe, certificate
-- **Grammar:** Should I keep it away from perfume? Do I wipe the pearl after wearing it?
-- **Dialogue beats:** Freshwater, not saltwater → Soft lustre, saltwater costs more → Price range and perfume → Keep perfume away → Wipe and certificate → Wipe gently, certificate in the box → Keep perfume away and wipe → Certificate lists the price range
-- **Coherence:** the saltwater pearl costs more than this freshwater pearl. The price range is two hundred to four hundred dollars, and the certificate lists that same range. Perfume stays away, and the pearl is wiped after wearing.
+- **Grammar:** What's the difference between freshwater and saltwater pearls? Put perfume on before you wear it.
+- **Dialogue beats:** Short pearl necklace, freshwater or saltwater → Saltwater brighter and dearer → Price range → Two thousand to six thousand → Take the shorter strand → Perfume before wearing, wipe after → Certificate in the box → Type and size
+- **Coherence:** saltwater pearls have a brighter lustre and cost more. The freshwater range is about two thousand to six thousand dollars. Ida gives the care line. The certificate shows pearl type and size.
 
 ### J11 — VIP / high-ticket consult · B2 · NEW
 - **Goals:** Longer consult: occasion, timeline, budget band, follow-up call.
@@ -188,11 +202,11 @@
 - **Dialogue beats:** Ask bill → Split option → Pay → Tip phrase → Goodbye
 
 ### R11 — Allergies and dietary needs / 食物敏感同戒口 · A2/B1 · SHIPPED
-- **Goals:** Say you are allergic to peanuts, eat no pork, ask if a dish has egg, and request a vegetarian option on a separate plate.
+- **Goals:** Say you are allergic to peanuts and do not eat pork, say egg is fine, avoid fried rice with peanut oil, take vegetarian noodles from a separate pan, and ask for a note on the order.
 - **Vocab:** allergic, peanut, pork, egg, vegetarian, kitchen, separate
-- **Grammar:** I am allergic to peanuts. Is there any egg in it? Could I have a vegetarian option?
-- **Dialogue beats:** Peanuts and no pork → Egg as well → Kitchen keeps peanuts away → No egg → Vegetarian and a separate plate → Plate is ready → Tell the kitchen → No pork on the vegetarian plate
-- **Coherence:** peanuts, pork, and egg stay off the same plate. One kitchen instruction. Checked against the earlier request.
+- **Grammar:** I'm allergic to peanuts. Egg is fine. Does the fried rice have peanuts?
+- **Dialogue beats:** Peanuts and no pork → Is egg a problem → Egg is fine, fried rice → Peanut oil, vegetarian noodles → Any pork in the noodles → Separate pan → Tell the chef → Note on the order
+- **Coherence:** peanuts and no pork. Egg is fine. Fried rice has peanut oil, so the dish is vegetarian noodles from a separate pan, with a note on the order.
 
 ### R6 — Reservation by phone · B1 · NEW
 - **Goals:** Book a table; change time; cancel politely.
@@ -213,17 +227,24 @@
 - **Dialogue beats:** Order → Address → Spell Harbour Street → Minutes → How long → Pay at the door
 
 ### D10 — Calling a taxi app / 召的士 · A2/B1 · SHIPPED
-- **Goals:** Say you are running late, give the pick-up point and plate number, change the destination, pay by card, and keep the receipt.
+- **Goals:** Say you are five minutes late, meet Ray at the main door, read plate MX 42 17 on a white Toyota, change the destination in the app, pay by card, and get the receipt by email.
 - **Vocab:** taxi, running late, pick-up point, plate number, destination, card, receipt
 - **Grammar:** Can we change the destination? May I pay by card?
-- **Dialogue beats:** Running late at the hotel door → Plate number → Change destination and pay by card → Card is fine → Ask for the plate and a receipt → Receipt on the phone → Wait at the pick-up point → Watch for the blue car
-- **Coherence:** one pick-up point, one plate, one destination change, and the receipt stays on the phone. Checked against the earlier request.
+- **Dialogue beats:** Five minutes late → Wait at the main door → Plate and colour → MX 42 17, white Toyota → Change destination to the airport → Fare updates in the app → Pay by card, receipt → Receipt emailed
+- **Coherence:** Ray is already at the pick-up point by the main door. The plate is MX 42 17 on a white Toyota. The destination changes in the app so the fare updates. Payment is by card, and the receipt is emailed.
 
 ### R9 — Paying the bill / 埋單同夾錢 · A2 · SHIPPED
 - **Goals:** Ask for the bill, split it, pay by card or Octopus, notice the service charge, and point out a mistake.
 - **Vocab:** bill, split, service charge, Octopus card, mistake, separate, receipt
 - **Grammar:** Could we…?; because-clauses for the reason
 - **Dialogue beats:** Ask for the bill → Service charge → Split → Card or Octopus → Octopus → Receipt → Mistake → Correct the bill
+
+### R13 — Changing a café order / 咖啡店改要求 · A2 · SHIPPED
+- **Goals:** Order a latte with oat milk and less sugar, choose a tall cup, take it to go, put the name Cleo on the cup, and ask for a remake when the milk is wrong.
+- **Vocab:** latte, oat milk, less sugar, tall cup, to go, name, order
+- **Grammar:** Can I order a latte with oat milk and less sugar? Is this order for here, or is it to go?
+- **Dialogue beats:** Oat milk and less sugar → Tall or smaller → Tall, for here or to go → Name on the cup → Dairy instead of oat → Remake with oat milk → Keep less sugar, name Cleo → Name on the tall cup
+- **Coherence:** one latte, oat milk, less sugar, a tall cup, to go, and the name Cleo. The first cup has dairy milk, so it is remade.
 
 ---
 
@@ -287,11 +308,11 @@
 - **Coherence:** one missed connection. The rebook, the bag transfer, the meal voucher, and the new boarding pass all belong to that next flight.
 
 ### T13 — At the pharmacy abroad / 外地藥房買藥 · A2/B1 · SHIPPED
-- **Goals:** Say you have a headache and a fever, ask how many times a day, ask whether to take it after meals, and notice a drowsy tablet or a prescription.
+- **Goals:** Say you have a headache and a fever, answer no allergies, take the tablet three times a day after meals, stay under six tablets, switch if you must drive, skip the prescription, and see a doctor after three days.
 - **Vocab:** headache, fever, times a day, after meals, drowsy, prescription
-- **Grammar:** How many times a day do I take it? Please take it after meals.
-- **Dialogue beats:** Headache and fever → Prescription for strong medicine → Times a day and after meals → Three times a day, drowsy → After meals or earlier → After meals, do not drive → Follow the written note → Keep the prescription
-- **Coherence:** one illness, one dose (three times a day), after meals, and the drowsy warning belongs to that tablet. Checked against the earlier request.
+- **Grammar:** How many times a day do I take it? Three times a day, after meals.
+- **Dialogue beats:** Headache and fever → Tablet for both, any allergies → No allergies, times a day → Three times a day after meals, six-tablet cap → Drowsy and must drive → Non-drowsy alternative → Written prescription → No prescription, see a doctor after three days
+- **Coherence:** one illness. Allergies are no. The dose is three times a day after meals, and not more than six tablets. A non-drowsy tablet is the alternative if he must drive. There is no prescription. If the fever lasts more than three days, see a doctor.
 
 ### T6 — Hotel problem / request · B1 · NEW
 - **Goals:** Noisy room, AC broken, extra towel — polite request + escalate.
@@ -353,11 +374,11 @@
 - **Dialogue beats:** Open → Update → Clarify → Decision → Actions
 
 ### W9 — Asking for annual leave / 請年假 · B1 · SHIPPED
-- **Goals:** Give annual-leave dates, say who covers the desk, send a handover, and ask for email approval around a public holiday.
+- **Goals:** Ask for Monday, Tuesday, Thursday, and Friday off, name Jo as cover, send one handover, and hear one approval after that Friday note.
 - **Vocab:** annual leave, handover, approve, email, public holiday
-- **Grammar:** I would like annual leave from Monday through Friday. Can you approve those dates?
-- **Dialogue beats:** Monday, Tuesday, Thursday, and Friday, not Wednesday → Wednesday is the public holiday → Jo covers, handover Friday morning → Email the note and approve → Ask for approval → Approve and email → Handover Friday before Monday → Leave starts Monday
-- **Coherence:** one date range, the Wednesday public holiday is why Wednesday is not a leave day, the handover is written on Friday before the first leave day, and there is one approval. Leave starts on Monday. Checked against the earlier request.
+- **Grammar:** I would like annual leave next week. I will approve it after I read that Friday handover note.
+- **Dialogue beats:** Four dates, not Wednesday → Wednesday is the public holiday → Jo covers, handover by email → Read it before deciding → Write the note this Friday morning → Read every line before deciding → Back after those four dates → One approval, leave starts Monday
+- **Coherence:** Wednesday is a public holiday, so it is not a leave day. The handover is written this Friday morning. Niles approves once, after he reads that Friday note. Leave starts on Monday.
 
 ### W4 — Small talk at work · A2/B1 · NEW
 - **Goals:** Weather, weekend, commute — then pivot to work.
@@ -467,7 +488,8 @@ Every round until map complete, ship **≥3 NEW lessons** in this order (skip al
 17. **R11, W9, J16** (allergies, annual leave, engraving)
 18. **T13, D10, J17** (pharmacy abroad, taxi app, pearl care)
 19. **R12, W10, T14** (group booking, complaint email, missed connection)
-20. Then polish / legendary review nodes / further B2 stretch
+20. **J18, R13, D11** (watch battery and strap, café order change, open a bank account)
+21. Then polish / legendary review nodes / further B2 stretch
 
 **Path UX:** show CEFR chip (A1/A2/B1/B2) on each node; group Path into level tracks; lock by prerequisite; keep `soon:true` teasers for unshipped.
 

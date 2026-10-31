@@ -1,0 +1,14 @@
+Phase 4 unlimited. Round 42. Read CURRICULUM.md + ART-STYLE.md + DUOLINGO-REF.md + SPEC.md + review/mockup-v1 (Penny-approved) + review/loop-r40/coder-audit.md and the newest review/loop-r41/coder-audit.md if present first.
+cd /workspace/sidequest/english-quest. Never touch the grokbot repo or the nightly panes. No paid services. Report files under review/ stay local (never commit review/loop-r*/ or review/style-gap/; never git rm them).
+
+## FIRST: close every open item from review/loop-r40/coder-audit.md (it repeats the r39 items fix-40 skipped) and review/loop-r41/coder-audit.md. P0 first: #102 hazy heroes re-render + saturation test; then MAJOR #93 #94 #97 #98 #99 #103 #104 #105 dialogue rewrites (use the audit scripts exactly), #106 #107; then #92 #95 #77 #108 #109.
+## STYLE: every hero must sit in the same bright flat mockup-v1 cartoon look (no hazy washed-out painterly heroes). Rebuild the contact sheet and compare to mockup-v1 before finishing.
+
+## NEW FEATURE TARGET (>=3 new lessons)
+Add to CURRICULUM.md and ship end-to-end (12 beats, hero WebP 900x1200 in mockup-v1 style with mean saturation >=40, faces fully in frame at 390px, lexicon CMUdict IPA, Kokoro audio, natural Cantonese, unique examples, same-scene distractors, per-item shuffled answers, tests), slotted so CEFR stays non-decreasing and avg words/line never drops >0.5:
+- **D12 — Booking a clinic appointment by phone / 打電話約睇醫生 · A2/B1** (symptoms briefly, first available slot, which doctor, bring ID and insurance card, fee, arrive ten minutes early).
+- **T15 — Hotel check-out and luggage storage / 退房同寄存行李 · A2/B1** (late check-out fee, minibar charge check, store bags until 4pm, luggage tag, taxi to airport, receipt by email).
+- **W11 — Asking HR about a payslip / 問HR糧單問題 · B1** (overtime missing, tax deduction, MPF contribution, correction next month, who to email, deadline).
+Write each dialogue like the replacement scripts in the r39 audit: short natural turns, contractions, every question answered by the next line, real numbers/names, no repeated question, no contradictions, no keyword stuffing, no padding tails ("here", "for you", "today").
+Run tests + build; Lighthouse mobile Perf >=98. Append "## Round 42" to CHANGELOG.md. Do not git commit.
+

@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
+import { spawnSync } from "node:child_process";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { seededOrder } from "../web/src/choice-order.js";
@@ -8,7 +9,7 @@ import { seededOrder } from "../web/src/choice-order.js";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), "utf8"));
 const ids = new Set(lex.items.map((item) => item.id));
-const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "t1", "t2", "t3", "t4", "t5", "t6", "r1", "r2", "r3", "r4", "r5", "w1", "d1", "d2", "t7", "w2", "w3", "d3", "j11", "j12", "t8", "w4", "r6", "w5", "f5", "f6", "d4", "d5", "r7", "w6", "t9", "d6", "r8", "j13", "r9", "w7", "t10", "d7", "w8", "j14", "r10", "t11", "d8", "j15", "t12", "d9", "r11", "w9", "j16", "t13", "d10", "j17", "r12", "w10", "t14"];
+const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "t1", "t2", "t3", "t4", "t5", "t6", "r1", "r2", "r3", "r4", "r5", "w1", "d1", "d2", "t7", "w2", "w3", "d3", "j11", "j12", "t8", "w4", "r6", "w5", "f5", "f6", "d4", "d5", "r7", "w6", "t9", "d6", "r8", "j13", "r9", "w7", "t10", "d7", "w8", "j14", "r10", "t11", "d8", "j15", "t12", "d9", "r11", "w9", "j16", "t13", "d10", "j17", "r12", "w10", "t14", "j18", "r13", "d11"];
 const lessons = shipped.map((id) =>
   JSON.parse(fs.readFileSync(path.join(root, "content/lessons", `${id}.json`), "utf8")),
 );
@@ -22,7 +23,7 @@ function exists(rel) {
 }
 
 test("sixty-six lessons each carry the 12-beat payload", () => {
-  assert.equal(lessons.length, 69);
+  assert.equal(lessons.length, 72);
   for (const lesson of lessons) {
     for (const key of ["hero", "canDoYue", "canDoEn", "dialogue", "understand", "chunks", "shadow", "build", "roleplay", "quiz", "sound", "next"]) {
       assert.ok(key in lesson, `${lesson.id} ${key}`);
@@ -193,7 +194,7 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
     );
   }
   const shippedOnPath = flatPath.filter((entry) => !entry.soon).map((entry) => entry.id);
-  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "J6", "J7", "J15", "T5", "T12", "T13", "R12", "R5", "R11", "W1", "D1", "D2", "T7", "W4", "R8", "D10", "W7", "J8", "D9", "J9", "J10", "J16", "J17", "T6", "R6", "J12", "R7", "T8", "W2", "W3", "W9", "W8", "D3", "D8", "T10", "T14", "W5", "W10", "J14", "J11", "W6", "T9", "J13"]);
+  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "R13", "J6", "J7", "J15", "J18", "T5", "T12", "T13", "R12", "R5", "R11", "W1", "D1", "D2", "T7", "W4", "R8", "D10", "W7", "J8", "D9", "D11", "J9", "J10", "J16", "J17", "T6", "R6", "J12", "R7", "T8", "W2", "W3", "W9", "W8", "D3", "D8", "T10", "T14", "W5", "W10", "J14", "J11", "W6", "T9", "J13"]);
   assert.equal(flatPath.find((entry) => entry.id === "J8").cefr, "B1");
   const said = (lesson) => lesson.dialogue.map((line) => line.text).join("\n");
   assert.ok(j4.dialogue.length >= 6 && j4.dialogue.length <= 10);
@@ -380,7 +381,7 @@ test("the app has a mic fallback and does not phone home", () => {
   assert.match(lesson, /改為即時講/);
   assert.match(lesson, />聽我</);
   assert.match(lesson, /咪未開/);
-  assert.match(lesson, /呢輪六十九課你行完啦/);
+  assert.match(lesson, /呢輪七十二課你行完啦/);
   assert.match(lesson, /setDone\(true\)/);
   assert.match(lesson, /playSfx/);
   assert.match(fs.readFileSync(path.join(root, "web/src/sfx.ts"), "utf8"), /AudioContext/);
@@ -439,7 +440,7 @@ test("role-play tip names a character or tells you it is your turn", () => {
   assert.match(lesson, /你扮 \$\{name\}/);
   assert.equal(lesson.includes("你而家係"), false);
   const data = fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8");
-  assert.match(data, /"F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "J6", "J7", "J15", "T5", "T12", "T13", "R12", "R5", "R11", "W1", "D1", "D2", "T7", "W4", "R8", "D10", "W7", "J8", "D9", "J9", "J10", "J16", "J17", "T6", "R6", "J12", "R7", "T8", "W2", "W3", "W9", "W8", "D3", "D8", "T10", "T14", "W5", "W10", "J14", "J11", "W6", "T9", "J13"/);
+  assert.match(data, /"F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "R13", "J6", "J7", "J15", "J18", "T5", "T12", "T13", "R12", "R5", "R11", "W1", "D1", "D2", "T7", "W4", "R8", "D10", "W7", "J8", "D9", "D11", "J9", "J10", "J16", "J17", "T6", "R6", "J12", "R7", "T8", "W2", "W3", "W9", "W8", "D3", "D8", "T10", "T14", "W5", "W10", "J14", "J11", "W6", "T9", "J13"/);
   assert.match(data, /const order = SHIPPED/);
 });
 
@@ -571,8 +572,8 @@ test("each example contains its lemma in the glossed sense", () => {
   assert.match(byId["of-prep"].exampleYue, /茶/);
   assert.match(byId["of-prep"].say, /ˈʌv/);
   assert.doesNotMatch(byId["of-prep"].example, /Of course/);
-  assert.equal(byId["keep-verb"].example, "Please keep the receipt.");
-  assert.match(byId["keep-verb"].exampleYue, /單/);
+  assert.equal(byId["keep-verb"].example, "Please keep the ring clean.");
+  assert.match(byId["keep-verb"].exampleYue, /保持/);
   assert.doesNotMatch(byId["keep-verb"].example, /light/i);
   assert.equal(byId["the-art"].example, "The menu is ready.");
   assert.match(byId["the-art"].exampleYue, /餐牌/);
@@ -848,15 +849,15 @@ test("path means do not drop by more than half a word", () => {
   const byId = Object.fromEntries(lessons.map((lesson) => [lesson.id, lesson]));
   const wordRe = /[A-Za-z']+/g;
   const mean = (lesson) => lesson.dialogue.reduce((sum, line) => sum + (line.text.match(wordRe) || []).length, 0) / lesson.dialogue.length;
-  assert.equal(order.length, 69);
+  assert.equal(order.length, 72);
   for (let i = 1; i < order.length; i += 1) {
     const prev = mean(byId[order[i - 1]]);
     const cur = mean(byId[order[i]]);
     assert.ok(prev - cur <= 0.5 + 1e-9, `${order[i - 1]} ${prev.toFixed(3)} -> ${order[i]} ${cur.toFixed(3)}`);
   }
-  assert.equal(byId.J15.next, "T5");
+  assert.equal(byId.J15.next, "J18");
   assert.equal(byId.T12.next, "T13");
-  assert.equal(byId.D9.next, "J9");
+  assert.equal(byId.D9.next, "D11");
 });
 
 test("white gold is 白K金 and the tablet eyebrow is 藥片", () => {
@@ -1018,8 +1019,8 @@ test("round 39 scenes keep one plan", () => {
   assert.equal(lessons.find((lesson) => lesson.id === "D10").next, "W7");
   assert.equal(lessons.find((lesson) => lesson.id === "J16").next, "J17");
   assert.equal(lessons.find((lesson) => lesson.id === "J17").next, "T6");
-  assert.equal(lessons.find((lesson) => lesson.id === "J15").next, "T5");
-  assert.equal(lessons.find((lesson) => lesson.id === "D9").next, "J9");
+  assert.equal(lessons.find((lesson) => lesson.id === "J15").next, "J18");
+  assert.equal(lessons.find((lesson) => lesson.id === "D9").next, "D11");
   const manifest = JSON.parse(fs.readFileSync(path.join(root, "content/art-style-heroes.json"), "utf8"));
   assert.deepEqual(manifest.pending, []);
 });
@@ -1034,14 +1035,16 @@ test("round 40 scenes keep one plan", () => {
   assert.doesNotMatch(w9, /already today/i);
   const d10 = lessons.find((lesson) => lesson.id === "D10");
   assert.doesNotMatch(said("D10"), /full plate/i);
-  assert.match(said("D10"), /blue seven four two/i);
-  for (const line of d10.dialogue) {
-    if (/four two/i.test(line.text)) assert.match(line.text, /seven/i, line.id);
-  }
+  assert.doesNotMatch(said("D10"), /blue seven four two/i);
+  assert.match(said("D10"), /MX 42 17/);
+  assert.doesNotMatch(said("D10"), /for you here/i);
   const j17 = said("J17");
-  assert.match(j17, /two hundred/);
-  assert.match(j17, /four hundred/);
+  assert.doesNotMatch(j17, /two hundred/);
+  assert.doesNotMatch(j17, /four hundred/);
+  assert.match(j17, /two thousand/);
+  assert.match(j17, /six thousand/);
   assert.match(j17, /freshwater pearl/i);
+  assert.doesNotMatch(j17, /\bfull\b/i);
   const t12 = lessons.find((lesson) => lesson.id === "T12");
   for (const line of t12.dialogue) {
     if (/\bfour\b/i.test(line.text)) assert.doesNotMatch(line.text, /early/i, line.id);
@@ -1067,4 +1070,112 @@ test("round 40 scenes keep one plan", () => {
       assert.equal(word(item.choices[item.answer]).test(item.prompt), false, `${lesson.id} ${item.prompt}`);
     }
   }
+});
+
+test("dialogue questions share a word, lines do not stuff one word, and padding tails stay off new copy", () => {
+  const func = new Set("a an the i you we they he she it my your our is are was were be been am have has had do does did will would can could should may might to of in on at for with and or but if so not this that these those me him her them us please just very still also then there here from as about into".split(" "));
+  const qAllow = new Set(["f4-l2", "f5-l2", "j1-l2", "r1-l2", "r1-l4", "j2-l4", "r10-l7", "j3-l5", "j4-l3", "j5-l2", "t4-l3", "t4-l5", "r4-l7", "r4-l8", "j6-l4", "j7-l7", "j7-m1", "w1-l2", "d1-l2", "w4-l6", "j9-l5", "j9-l8", "j10-l3", "t6-l2", "t8-l4", "t10-l3", "w6-l2"]);
+  const freqAllow = new Set(["R10:like", "R3:sauce", "R9:bill", "J15:ring", "T12:room", "D2:card", "R8:chicken", "D9:card", "W2:deadline", "W3:update", "T10:bag", "T14:gate", "W10:email", "J14:ring"]);
+  const tailAllow = new Set(["j1-l1", "j2-l1", "t1-l1", "t2-l5", "r2-l1", "r2-l5", "t4-l3", "d6-l1", "j6-l2", "j7-l3", "j7-m1", "t5-l3", "t12-l4", "d1-l1", "d1-l6", "d2-l1", "t7-l1", "j10-l2", "j12-l2", "j12-l8", "t8-l1", "w2-l1", "w3-l1", "d3-l5", "w5-l4", "j11-l5", "t9-l5", "t9-l8"]);
+  const tails = [/\bfor you here\b/i, /\bthat note here\b/i, /\bfor you\b/i, /\btoday\b/i];
+  function content(text) {
+    return new Set((text.toLowerCase().match(/[a-z']+/g) || []).filter((tok) => tok.length > 2 && !func.has(tok)));
+  }
+  for (const lesson of lessons) {
+    const main = lesson.dialogue;
+    for (let i = 1; i < main.length; i += 1) {
+      if (!main[i - 1].text.trim().endsWith("?")) continue;
+      const shared = [...content(main[i].text)].filter((tok) => content(main[i - 1].text).has(tok));
+      if (shared.length < 1 && !qAllow.has(main[i].id)) assert.fail(`${main[i].id} does not share a content word`);
+    }
+    const counts = new Map();
+    for (const line of main) {
+      for (const tok of content(line.text)) counts.set(tok, (counts.get(tok) || 0) + 1);
+    }
+    for (const [tok, n] of counts) {
+      if (n > 4 && !freqAllow.has(`${lesson.id}:${tok}`)) assert.fail(`${lesson.id} ${tok} x${n}`);
+    }
+    for (const line of main) {
+      if (tails.some((re) => re.test(line.text)) && !tailAllow.has(line.id)) assert.fail(`${line.id} ${line.text}`);
+    }
+  }
+});
+
+test("round 41 scenes keep the r39 facts and the hero preloads", () => {
+  const said = (id) => lessons.find((lesson) => lesson.id === id).dialogue.map((line) => line.text).join("\n");
+  const j16 = said("J16");
+  assert.match(j16, /12\.06\.2021/);
+  assert.match(j16, /initials G and M/);
+  assert.match(j16, /fourteen characters/);
+  assert.match(j16, /plain font/);
+  assert.match(j16, /fifty dollars/);
+  assert.match(j16, /ready in three days/);
+  assert.doesNotMatch(j16, /check the spelling of that date/i);
+  const r11 = said("R11");
+  assert.match(r11, /egg is completely fine/i);
+  assert.match(r11, /peanut oil/i);
+  assert.match(r11, /separate/);
+  assert.match(r11, /note on your dinner order/i);
+  const t13 = said("T13");
+  assert.match(t13, /Three times a day, after meals/);
+  assert.match(t13, /six tablets/);
+  assert.match(t13, /No prescription needed/);
+  assert.doesNotMatch(t13, /The written prescription/);
+  assert.match(said("D10"), /MX 42 17/);
+  assert.match(said("J17"), /two thousand/);
+  assert.match(said("J17"), /six thousand/);
+  assert.match(said("W9"), /I will approve it after I read that Friday handover note/);
+  assert.equal((said("W9").match(/I will approve/gi) || []).length, 1);
+  assert.equal(lessons.find((lesson) => lesson.id === "R9").next, "R13");
+  assert.equal(lessons.find((lesson) => lesson.id === "R13").next, "J6");
+  assert.equal(lessons.find((lesson) => lesson.id === "J15").next, "J18");
+  assert.equal(lessons.find((lesson) => lesson.id === "J18").next, "T5");
+  assert.equal(lessons.find((lesson) => lesson.id === "D9").next, "D11");
+  assert.equal(lessons.find((lesson) => lesson.id === "D11").next, "J9");
+  const t14 = lessons.find((lesson) => lesson.id === "T14");
+  const conn = t14.quiz.find((item) => item.type === "meaning" && /connection/.test(item.prompt));
+  assert.equal(conn.choices[conn.answer], "轉機");
+  assert.equal(conn.choices.includes("轉駁"), false);
+  assert.equal(conn.choices.includes("接駁"), false);
+  const src = fs.readFileSync(path.join(root, "web/src/Lesson.tsx"), "utf8");
+  assert.match(src, /rel="preload"/);
+  assert.match(src, /preloadArt\(\[/);
+  assert.equal(/useEffect\(\(\) => \{\s*preloadArt/.test(src), false);
+  const css = fs.readFileSync(path.join(root, "web/src/styles.css"), "utf8");
+  assert.match(css, /\.hero\[data-beat="2"\] \.art-ph img/);
+  assert.match(css, /object-fit: contain/);
+  assert.match(css, /--hero-focus/);
+});
+
+test("every lesson hero is bright enough to match mockup-v1", () => {
+  const script = `
+import os, sys, colorsys
+from PIL import Image
+root = "assets/art/lessons"
+bad = []
+for name in sorted(os.listdir(root)):
+    if not name.endswith(".webp"):
+        continue
+    im = Image.open(os.path.join(root, name)).convert("RGB").resize((90, 120))
+    px = list(im.getdata())
+    sats, lums = [], []
+    for r, g, b in px:
+        _h, s, _v = colorsys.rgb_to_hsv(r/255, g/255, b/255)
+        sats.append(s * 255)
+        def lin(c):
+            c = c/255
+            return c/12.92 if c <= 0.04045 else ((c+0.055)/1.055) ** 2.4
+        lums.append((0.2126*lin(r) + 0.7152*lin(g) + 0.0722*lin(b)) * 255)
+    mean_s = sum(sats)/len(sats)
+    mean_l = sum(lums)/len(lums)
+    std = (sum((x-mean_l)**2 for x in lums)/len(lums)) ** 0.5
+    if mean_s < 40 or std < 25:
+        bad.append(f"{name} sat {mean_s:.1f} std {std:.1f}")
+if bad:
+    print("\\n".join(bad))
+    sys.exit(1)
+print("ok", len(os.listdir(root)))
+`
+  const res = spawnSync("python3", ["-c", script], { cwd: root, encoding: "utf8" });
+  assert.equal(res.status, 0, `${res.stdout}\n${res.stderr}`);
 });

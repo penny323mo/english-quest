@@ -11,3 +11,6 @@ Add to CURRICULUM.md and ship end-to-end (12 beats, hero WebP 900x1200 in mockup
 - **D11 — Bank counter: open an account / 銀行開戶 · B1** (ID and proof of address, savings vs current account, minimum balance, monthly fee, debit card arrives by post, online banking).
 Write each dialogue like the replacement scripts in the r39 audit: short natural turns, contractions, every question answered by the next line, real numbers/names, no repeated question, no contradictions, no keyword stuffing, no padding tails ("here", "for you", "today").
 Run tests + build; Lighthouse mobile Perf >=98. Append "## Round 41" to CHANGELOG.md. Do not git commit.
+
+
+## ALSO (Coder live audit round 40, written after this prompt was sent): read review/loop-r40/coder-audit.md and close #102–#109 plus the r39 rewrites fix-40 skipped.

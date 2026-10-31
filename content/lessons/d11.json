@@ -1,0 +1,347 @@
+{
+  "id": "D11",
+  "unit": "D",
+  "titleYue": "銀行開戶",
+  "titleEn": "Opening a bank account",
+  "canDoYue": "你識帶身份同地址證明開戶，揀儲蓄戶口，講最低餘額同月費，等扣帳卡寄到，同埋登記網上理財。",
+  "canDoEn": "Open an account with identity and proof of address, choose a savings account, hear the minimum balance and that there is no monthly fee, wait for the debit card by post, and register for online banking.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/d11.webp",
+  "cast": [
+    "tom",
+    "ben"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "identity-noun",
+    "address-noun",
+    "account-noun",
+    "savings-account-phrase",
+    "balance-noun",
+    "fee-noun",
+    "debit-card-phrase",
+    "online-banking-phrase"
+  ],
+  "topicTags": [
+    "身份",
+    "地址",
+    "戶口",
+    "儲蓄",
+    "餘額",
+    "月費",
+    "扣帳卡",
+    "網上理財"
+  ],
+  "next": "J9",
+  "sound": {
+    "ipa": "/æ/",
+    "title": "balance 入面嗰個音",
+    "note": "balance 有 /æ/。bank 有 /æ/。",
+    "pairs": [
+      {
+        "a": "balance-noun",
+        "b": "savings-account-phrase"
+      },
+      {
+        "a": "debit-card-phrase",
+        "b": "online-banking-phrase"
+      }
+    ],
+    "drill": [
+      "identity-noun",
+      "address-noun",
+      "savings-account-phrase",
+      "balance-noun",
+      "debit-card-phrase"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "d11-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I want to open an account. Do you need my identity and proof of address?",
+      "glossYue": "我想開戶口。你需唔需要我嘅身份同地址證明？",
+      "audio": "assets/audio/lines/d11-l1.mp3",
+      "audioSlow": "assets/audio/lines/d11-l1-slow.mp3",
+      "say": "I want to open an account. Do you need my identity and proof of address?",
+      "hideGloss": false
+    },
+    {
+      "id": "d11-l2",
+      "speaker": "ben",
+      "speakerLabel": "Ben",
+      "text": "Yes. A recent proof of address can be a bank bill or a tax letter too.",
+      "glossYue": "需要。最近嘅地址證明可以係銀行單或者稅單。",
+      "audio": "assets/audio/lines/d11-l2.mp3",
+      "audioSlow": "assets/audio/lines/d11-l2-slow.mp3",
+      "say": "Yes. A recent proof of address can be a bank bill or a tax letter too.",
+      "hideGloss": false
+    },
+    {
+      "id": "d11-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Thanks. Should I choose a savings account or a current account for my daily pay?",
+      "glossYue": "多謝。出糧用，我應該揀儲蓄戶口定往來戶口？",
+      "audio": "assets/audio/lines/d11-l3.mp3",
+      "audioSlow": "assets/audio/lines/d11-l3-slow.mp3",
+      "say": "Thanks. Should I choose a savings account or a current account for my daily pay?",
+      "hideGloss": false
+    },
+    {
+      "id": "d11-l4",
+      "speaker": "ben",
+      "speakerLabel": "Ben",
+      "text": "A savings account keeps some monthly interest, and the minimum balance is one thousand dollars flat.",
+      "glossYue": "儲蓄戶口有少少月息，最低餘額係一千蚊正。",
+      "audio": "assets/audio/lines/d11-l4.mp3",
+      "audioSlow": "assets/audio/lines/d11-l4-slow.mp3",
+      "say": "A savings account keeps some monthly interest, and the minimum balance is one thousand dollars flat.",
+      "hideGloss": false
+    },
+    {
+      "id": "d11-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Is there any monthly fee if my balance stays quite high through each whole month?",
+      "glossYue": "如果每個月餘額都維持喺高位，有冇月費？",
+      "audio": "assets/audio/lines/d11-l5.mp3",
+      "audioSlow": "assets/audio/lines/d11-l5-slow.mp3",
+      "say": "Is there any monthly fee if my balance stays quite high through each whole month?",
+      "hideGloss": false
+    },
+    {
+      "id": "d11-l6",
+      "speaker": "ben",
+      "speakerLabel": "Ben",
+      "text": "No monthly fee at all. Your new debit card will arrive by post in five days.",
+      "glossYue": "完全冇月費。你張新扣帳卡五日內會寄到。",
+      "audio": "assets/audio/lines/d11-l6.mp3",
+      "audioSlow": "assets/audio/lines/d11-l6-slow.mp3",
+      "say": "No monthly fee at all. Your new debit card will arrive by post in five days.",
+      "hideGloss": false
+    },
+    {
+      "id": "d11-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Can I register for online banking before that debit card arrives by post next week?",
+      "glossYue": "扣帳卡下星期寄到之前，我可唔可以登記網上理財？",
+      "audio": "assets/audio/lines/d11-l7.mp3",
+      "audioSlow": "assets/audio/lines/d11-l7-slow.mp3",
+      "say": "Can I register for online banking before that debit card arrives by post next week?",
+      "hideGloss": false
+    },
+    {
+      "id": "d11-l8",
+      "speaker": "ben",
+      "speakerLabel": "Ben",
+      "text": "Yes. Online banking opens tomorrow morning, once we finish checking all of your signed bank paperwork.",
+      "glossYue": "可以。網上理財聽朝開通，等我哋核完你簽好嘅文件。",
+      "audio": "assets/audio/lines/d11-l8.mp3",
+      "audioSlow": "assets/audio/lines/d11-l8-slow.mp3",
+      "say": "Yes. Online banking opens tomorrow morning, once we finish checking all of your signed bank paperwork.",
+      "hideGloss": false
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "I want to open an account. Do you need my identity and proof of address? 即係問緊咩？",
+      "choices": [
+        "問月費",
+        "開戶要身份同地址證明",
+        "問扣帳卡幾時到"
+      ],
+      "answer": 1,
+      "explain": "identity 係身份。address 係地址。"
+    },
+    {
+      "prompt": "A savings account keeps some monthly interest, and the minimum balance is one thousand dollars flat. 呢句即係點？",
+      "choices": [
+        "儲蓄戶口有月息，最低餘額一千",
+        "往來戶口冇餘額",
+        "扣帳卡聽日到"
+      ],
+      "answer": 0,
+      "explain": "balance 係餘額。"
+    },
+    {
+      "prompt": "Yes. Online banking opens tomorrow morning, once we finish checking all of your signed bank paperwork. 呢句即係點？",
+      "choices": [
+        "扣帳卡即刻到",
+        "冇網上理財",
+        "網上理財聽朝開通"
+      ],
+      "answer": 2,
+      "explain": "online banking 係網上理財。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I want to open an ___. Do you need my identity and proof of address?",
+      "example": "I want to open an account. Do you need my identity and proof of address?",
+      "glossYue": "我想開戶口。",
+      "answer": "account",
+      "choices": [
+        "account",
+        "balance",
+        "fee"
+      ]
+    },
+    {
+      "pattern": "A ___ keeps some monthly interest, and the minimum balance is one thousand dollars flat.",
+      "example": "A savings account keeps some monthly interest, and the minimum balance is one thousand dollars flat.",
+      "glossYue": "儲蓄戶口有利息。",
+      "answer": "savings account",
+      "choices": [
+        "savings account",
+        "debit card",
+        "online banking"
+      ]
+    },
+    {
+      "pattern": "No monthly ___ at all. Your new debit card will arrive by post in five days.",
+      "example": "No monthly fee at all. Your new debit card will arrive by post in five days.",
+      "glossYue": "冇月費。",
+      "answer": "fee",
+      "choices": [
+        "fee",
+        "balance",
+        "account"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想開戶。你點講？",
+      "choices": [
+        "I want to open an account. Do you need my identity and proof of address?",
+        "Thanks. Should I choose a savings account or a current account for my daily pay?",
+        "Is there any monthly fee if my balance stays quite high through each whole month?"
+      ],
+      "answer": 0,
+      "explain": "講 account。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "debit",
+        "card"
+      ],
+      "answer": [
+        "debit",
+        "card"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你同 Ben 開戶。可以講：account、balance。",
+    "turns": [
+      {
+        "partner": "Ben",
+        "partnerId": "ben",
+        "line": "Yes. A recent proof of address can be a bank bill or a tax letter too.",
+        "audio": "assets/audio/lines/d11-l2.mp3",
+        "audioSlow": "assets/audio/lines/d11-l2-slow.mp3",
+        "expect": "Thanks. Should I choose a savings account or a current account for my daily pay?",
+        "keywords": [
+          "savings",
+          "account"
+        ],
+        "modelAudio": "assets/audio/lines/d11-l3.mp3",
+        "modelSlow": "assets/audio/lines/d11-l3-slow.mp3"
+      },
+      {
+        "partner": "Ben",
+        "partnerId": "ben",
+        "line": "A savings account keeps some monthly interest, and the minimum balance is one thousand dollars flat.",
+        "audio": "assets/audio/lines/d11-l4.mp3",
+        "audioSlow": "assets/audio/lines/d11-l4-slow.mp3",
+        "expect": "Is there any monthly fee if my balance stays quite high through each whole month?",
+        "keywords": [
+          "fee",
+          "balance"
+        ],
+        "modelAudio": "assets/audio/lines/d11-l5.mp3",
+        "modelSlow": "assets/audio/lines/d11-l5-slow.mp3"
+      },
+      {
+        "partner": "Ben",
+        "partnerId": "ben",
+        "line": "No monthly fee at all. Your new debit card will arrive by post in five days.",
+        "audio": "assets/audio/lines/d11-l6.mp3",
+        "audioSlow": "assets/audio/lines/d11-l6-slow.mp3",
+        "expect": "Can I register for online banking before that debit card arrives by post next week?",
+        "keywords": [
+          "online",
+          "banking"
+        ],
+        "modelAudio": "assets/audio/lines/d11-l7.mp3",
+        "modelSlow": "assets/audio/lines/d11-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the phrase you hear for an account that can earn interest.",
+      "lemma": "savings-account-phrase",
+      "choices": [
+        "debit card",
+        "savings account",
+        "online banking"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the phrase you hear for banking on a phone or computer.",
+      "lemma": "online-banking-phrase",
+      "choices": [
+        "online banking",
+        "savings account",
+        "debit card"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'proof of address'. What does address mean?",
+      "choices": [
+        "地址",
+        "身份",
+        "餘額"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'no monthly fee'. What does fee mean?",
+      "choices": [
+        "月費",
+        "扣帳卡",
+        "戶口"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which phrase means the card that takes money from your account?",
+      "choices": [
+        "savings account",
+        "debit card",
+        "online banking"
+      ],
+      "answer": 1,
+      "explain": "debit card 係扣帳卡。"
+    }
+  ],
+  "shadow": {
+    "lineId": "d11-l1",
+    "hint": "I want to open an account. Do you need my identity and proof of address?"
+  }
+}

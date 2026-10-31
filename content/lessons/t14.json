@@ -16,7 +16,7 @@
     "delayed-adj",
     "connection-noun",
     "rebook-verb",
-    "transfer-verb",
+    "transfer-verb-bag",
     "voucher-noun",
     "boarding-pass-phrase"
   ],
@@ -26,7 +26,8 @@
     "改簽",
     "轉駁",
     "代用券",
-    "登機證"
+    "登機證",
+    "轉機"
   ],
   "next": "W5",
   "sound": {
@@ -318,9 +319,9 @@
       "type": "meaning",
       "prompt": "You say 'I missed the connection.' What does connection mean?",
       "choices": [
-        "轉駁",
-        "延遲",
-        "接駁"
+        "代用券",
+        "登機證",
+        "轉機"
       ],
       "answer": 2
     },

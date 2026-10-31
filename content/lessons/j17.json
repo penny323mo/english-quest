@@ -3,8 +3,8 @@
   "unit": "J",
   "titleYue": "珍珠保養同價錢",
   "titleEn": "Pearl care and pricing",
-  "canDoYue": "你識分淡水同鹹水珍珠、講光澤同價錢範圍、避開香水、戴完抹一抹，同埋問證書。",
-  "canDoEn": "Compare a freshwater pearl with a saltwater one, ask about lustre and the price range, keep perfume away, wipe the pearl after wearing, and ask for the certificate.",
+  "canDoYue": "你識分淡水同鹹水珍珠，價錢大約兩千到六千，戴之前噴香水、之後抹乾，證書寫種類同大細。",
+  "canDoEn": "Compare freshwater and saltwater pearls, hear a range of two thousand to six thousand dollars, let Ida give the care line about perfume and wiping, and read pearl type and size on the certificate.",
   "minutes": 12,
   "hero": "assets/art/lessons/j17.webp",
   "cast": [
@@ -56,128 +56,139 @@
       "id": "j17-l1",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "I would like one short freshwater pearl necklace with a very soft lustre, not a saltwater pearl.",
-      "glossYue": "我想要一條短嘅淡水珍珠頸鏈，光澤好柔和，唔要鹹水珍珠。",
+      "text": "I'm looking for a short pearl necklace. What's the real difference between freshwater and saltwater pearls?",
+      "glossYue": "我想搵一條短珍珠頸鏈。淡水同鹹水珍珠有咩分別？",
       "audio": "assets/audio/lines/j17-l1.mp3",
       "audioSlow": "assets/audio/lines/j17-l1-slow.mp3",
-      "say": "I would like one short freshwater pearl necklace with a very soft lustre, not a saltwater pearl.",
+      "say": "I'm looking for a short pearl necklace. What's the real difference between freshwater and saltwater pearls?",
       "hideGloss": false
     },
     {
       "id": "j17-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The saltwater pearl costs much more than this freshwater pearl, so that price sits higher overall.",
-      "glossYue": "鹹水珍珠比呢顆淡水珍珠貴，價錢高啲。",
+      "text": "Saltwater pearls have a brighter lustre, so they cost more. Freshwater pearls are softer and much cheaper.",
+      "glossYue": "鹹水珍珠光澤更亮，所以貴啲。淡水珍珠軟啲，又平好多。",
       "audio": "assets/audio/lines/j17-l2.mp3",
       "audioSlow": "assets/audio/lines/j17-l2-slow.mp3",
-      "say": "The saltwater pearl costs much more than this freshwater pearl, so that price sits higher overall.",
+      "say": "Saltwater pearls have a brighter lustre, so they cost more. Freshwater pearls are softer and much cheaper.",
       "hideGloss": false
     },
     {
       "id": "j17-l3",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "What is the full price range for it, and should I keep it away from perfume?",
-      "glossYue": "完整價錢範圍係幾多，使唔使避開香水？",
+      "text": "What's the usual price range roughly for these softer freshwater pearls on one short strand please?",
+      "glossYue": "呢串軟身淡水珍珠，大概價錢範圍係幾多？",
       "audio": "assets/audio/lines/j17-l3.mp3",
       "audioSlow": "assets/audio/lines/j17-l3-slow.mp3",
-      "say": "What is the full price range for it, and should I keep it away from perfume?",
+      "say": "What's the usual price range roughly for these softer freshwater pearls on one short strand please?",
       "hideGloss": false
     },
     {
       "id": "j17-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The price range is two hundred to four hundred dollars for this one short pearl strand.",
-      "glossYue": "價錢範圍由二百到四百蚊。",
+      "text": "From two thousand to six thousand dollars, depending on the size and lustre of each freshwater pearl.",
+      "glossYue": "大約兩千到六千蚊，視乎每粒淡水珍珠嘅大細同光澤。",
       "audio": "assets/audio/lines/j17-l4.mp3",
       "audioSlow": "assets/audio/lines/j17-l4-slow.mp3",
-      "say": "The price range is two hundred to four hundred dollars for this one short pearl strand.",
-      "hideGloss": true
+      "say": "From two thousand to six thousand dollars, depending on the size and lustre of each freshwater pearl.",
+      "hideGloss": false
     },
     {
       "id": "j17-l5",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Do I wipe the pearl after wearing it, and is there a full certificate with it?",
-      "glossYue": "戴完使唔使抹珍珠，有冇完整證書？",
+      "text": "I'll take this shorter one. How should I look after the pearl strand back at home?",
+      "glossYue": "我要呢條短啲嘅。返到屋企點樣照顧呢串珍珠？",
       "audio": "assets/audio/lines/j17-l5.mp3",
       "audioSlow": "assets/audio/lines/j17-l5-slow.mp3",
-      "say": "Do I wipe the pearl after wearing it, and is there a full certificate with it?",
-      "hideGloss": true
+      "say": "I'll take this shorter one. How should I look after the pearl strand back at home?",
+      "hideGloss": false
     },
     {
       "id": "j17-l6",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Please wipe it gently after each wearing, and the full certificate is kept in this small box.",
-      "glossYue": "請每次戴完輕輕抹，完整證書放喺呢個小盒。",
+      "text": "Put perfume on before you wear it, and wipe the pearl with a soft dry cloth afterwards.",
+      "glossYue": "戴之前先噴香水，之後用乾軟布抹乾珍珠。",
       "audio": "assets/audio/lines/j17-l6.mp3",
       "audioSlow": "assets/audio/lines/j17-l6-slow.mp3",
-      "say": "Please wipe it gently after each wearing, and the full certificate is kept in this small box.",
-      "hideGloss": true
+      "say": "Put perfume on before you wear it, and wipe the pearl with a soft dry cloth afterwards.",
+      "hideGloss": false
     },
     {
       "id": "j17-l7",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "I will keep perfume away from it, and I will wipe it after I wear it.",
-      "glossYue": "我會避開香水，戴完會抹。",
+      "text": "Does this shorter strand come with a printed certificate kept inside one small gift box too?",
+      "glossYue": "呢條短嘅有冇證書，放喺一個小禮盒入面？",
       "audio": "assets/audio/lines/j17-l7.mp3",
       "audioSlow": "assets/audio/lines/j17-l7-slow.mp3",
-      "say": "I will keep perfume away from it, and I will wipe it after I wear it.",
-      "hideGloss": true
+      "say": "Does this shorter strand come with a printed certificate kept inside one small gift box too?",
+      "hideGloss": false
     },
     {
       "id": "j17-l8",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The certificate lists two hundred to four hundred dollars, and that soft lustre stays gentle on it.",
-      "glossYue": "證書寫咗二百到四百蚊，光澤仍然柔和。",
+      "text": "Yes. The certificate is in the box, and it shows both the type and the size.",
+      "glossYue": "有。證書喺盒入面，寫明種類同大細。",
       "audio": "assets/audio/lines/j17-l8.mp3",
       "audioSlow": "assets/audio/lines/j17-l8-slow.mp3",
-      "say": "The certificate lists two hundred to four hundred dollars, and that soft lustre stays gentle on it.",
-      "hideGloss": true
+      "say": "Yes. The certificate is in the box, and it shows both the type and the size.",
+      "hideGloss": false
     }
   ],
   "understand": [
     {
-      "prompt": "I would like one short freshwater pearl necklace with a very soft lustre, not a saltwater pearl. 呢句即係點？",
+      "prompt": "I'm looking for a short pearl necklace. What's the real difference between freshwater and saltwater pearls? 即係問緊咩？",
       "choices": [
-        "想要淡水珍珠，光澤柔和，唔要鹹水",
-        "想買香水",
-        "想問珍珠刻字"
-      ],
-      "answer": 0,
-      "explain": "pearl 係珍珠。lustre 係光澤。"
-    },
-    {
-      "prompt": "What is the full price range for it, and should I keep it away from perfume? 即係問緊咩？",
-      "choices": [
-        "問證書喺唔喺盒入面",
-        "問價錢範圍，使唔使避開香水",
-        "問珍珠可唔可以浸泡"
+        "問證書喺邊",
+        "問淡水同鹹水珍珠有咩分別",
+        "問珍珠價錢兩千定六千"
       ],
       "answer": 1,
-      "explain": "price 係價錢。perfume 係香水。"
+      "explain": "pearl 係珍珠。"
     },
     {
-      "prompt": "Do I wipe the pearl after wearing it, and is there a full certificate with it? 即係問緊咩？",
+      "prompt": "From two thousand to six thousand dollars, depending on the size and lustre of each freshwater pearl. 呢句即係點？",
       "choices": [
-        "問光澤係咪鹹水",
-        "問價錢係咪固定",
-        "問戴完使唔使抹，有冇證書"
+        "珍珠價錢大約兩千到六千",
+        "鹹水珍珠平啲",
+        "證書寫住兩百"
+      ],
+      "answer": 0,
+      "explain": "price 係價錢。lustre 係光澤。"
+    },
+    {
+      "prompt": "Put perfume on before you wear it, and wipe the pearl with a soft dry cloth afterwards. 呢句即係點？",
+      "choices": [
+        "戴完先噴香水",
+        "證書寫價錢",
+        "戴之前噴香水，之後抹乾"
       ],
       "answer": 2,
-      "explain": "wipe 係抹。certificate 係證書。"
+      "explain": "perfume 係香水。wipe 係抹。"
     }
   ],
   "chunks": [
     {
-      "pattern": "I would like one short freshwater pearl necklace with a very soft ___, not a saltwater pearl.",
-      "example": "I would like one short freshwater pearl necklace with a very soft lustre, not a saltwater pearl.",
-      "glossYue": "光澤柔和。",
+      "pattern": "I'm looking for a short ___ necklace. What's the real difference between freshwater and saltwater pearls?",
+      "example": "I'm looking for a short pearl necklace. What's the real difference between freshwater and saltwater pearls?",
+      "glossYue": "我想睇珍珠頸鏈。",
+      "answer": "pearl",
+      "choices": [
+        "pearl",
+        "lustre",
+        "price"
+      ]
+    },
+    {
+      "pattern": "From two thousand to six thousand dollars, depending on the size and ___ of each freshwater pearl.",
+      "example": "From two thousand to six thousand dollars, depending on the size and lustre of each freshwater pearl.",
+      "glossYue": "視乎光澤。",
       "answer": "lustre",
       "choices": [
         "lustre",
@@ -186,69 +197,56 @@
       ]
     },
     {
-      "pattern": "I will keep ___ away from it, and I will wipe it after I wear it.",
-      "example": "I will keep perfume away from it, and I will wipe it after I wear it.",
-      "glossYue": "我會避開香水。",
+      "pattern": "Put ___ on before you wear it, and wipe the pearl with a soft dry cloth afterwards.",
+      "example": "Put perfume on before you wear it, and wipe the pearl with a soft dry cloth afterwards.",
+      "glossYue": "戴之前噴香水。",
       "answer": "perfume",
       "choices": [
         "perfume",
-        "certificate",
-        "price"
-      ]
-    },
-    {
-      "pattern": "Please ___ it gently after each wearing, and the full certificate is kept in this small box.",
-      "example": "Please wipe it gently after each wearing, and the full certificate is kept in this small box.",
-      "glossYue": "戴完輕輕抹。",
-      "answer": "wipe",
-      "choices": [
         "wipe",
-        "lustre",
-        "pearl"
+        "certificate"
       ]
     }
   ],
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想問光澤。你點講？",
+      "promptYue": "你想問淡水同鹹水有咩分別。你點講？",
       "choices": [
-        "I would like one short freshwater pearl necklace with a very soft lustre, not a saltwater pearl.",
-        "What is the full price range for it, and should I keep it away from perfume?",
-        "Do I wipe the pearl after wearing it, and is there a full certificate with it?"
+        "I'm looking for a short pearl necklace. What's the real difference between freshwater and saltwater pearls?",
+        "What's the usual price range roughly for these softer freshwater pearls on one short strand please?",
+        "I'll take this shorter one. How should I look after the pearl strand back at home?"
       ],
       "answer": 0,
-      "explain": "講 lustre。"
+      "explain": "講 pearl。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "keep",
-        "perfume",
-        "away"
+        "two",
+        "thousand"
       ],
       "answer": [
-        "keep",
-        "perfume",
-        "away"
+        "two",
+        "thousand"
       ]
     }
   ],
   "roleplay": {
     "you": "gus",
-    "intro": "你問珍珠保養。同 Ida 講光澤同香水。可以講：lustre、perfume。",
+    "intro": "你同 Ida 買珍珠。可以講：price、pearl。",
     "turns": [
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "The saltwater pearl costs much more than this freshwater pearl, so that price sits higher overall.",
+        "line": "Saltwater pearls have a brighter lustre, so they cost more. Freshwater pearls are softer and much cheaper.",
         "audio": "assets/audio/lines/j17-l2.mp3",
         "audioSlow": "assets/audio/lines/j17-l2-slow.mp3",
-        "expect": "What is the full price range for it, and should I keep it away from perfume?",
+        "expect": "What's the usual price range roughly for these softer freshwater pearls on one short strand please?",
         "keywords": [
           "price",
-          "perfume"
+          "freshwater"
         ],
         "modelAudio": "assets/audio/lines/j17-l3.mp3",
         "modelSlow": "assets/audio/lines/j17-l3-slow.mp3"
@@ -256,13 +254,12 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "The price range is two hundred to four hundred dollars for this one short pearl strand.",
+        "line": "From two thousand to six thousand dollars, depending on the size and lustre of each freshwater pearl.",
         "audio": "assets/audio/lines/j17-l4.mp3",
         "audioSlow": "assets/audio/lines/j17-l4-slow.mp3",
-        "expect": "Do I wipe the pearl after wearing it, and is there a full certificate with it?",
+        "expect": "I'll take this shorter one. How should I look after the pearl strand back at home?",
         "keywords": [
-          "wipe",
-          "certificate"
+          "pearl"
         ],
         "modelAudio": "assets/audio/lines/j17-l5.mp3",
         "modelSlow": "assets/audio/lines/j17-l5-slow.mp3"
@@ -270,13 +267,12 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "Please wipe it gently after each wearing, and the full certificate is kept in this small box.",
+        "line": "Put perfume on before you wear it, and wipe the pearl with a soft dry cloth afterwards.",
         "audio": "assets/audio/lines/j17-l6.mp3",
         "audioSlow": "assets/audio/lines/j17-l6-slow.mp3",
-        "expect": "I will keep perfume away from it, and I will wipe it after I wear it.",
+        "expect": "Does this shorter strand come with a printed certificate kept inside one small gift box too?",
         "keywords": [
-          "perfume",
-          "wipe"
+          "certificate"
         ],
         "modelAudio": "assets/audio/lines/j17-l7.mp3",
         "modelSlow": "assets/audio/lines/j17-l7-slow.mp3"
@@ -286,60 +282,60 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for the soft shine of the pearl.",
+      "prompt": "Listen once and pick the word you hear for the shine on a pearl.",
       "lemma": "lustre-noun",
       "choices": [
         "lustre",
-        "certificate",
+        "price",
         "perfume"
       ],
       "answer": 0
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for the paper that lists the price.",
+      "prompt": "Listen once and pick the word you hear for the paper in the box.",
       "lemma": "certificate-noun",
       "choices": [
         "pearl",
         "certificate",
-        "price"
+        "lustre"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "You say 'Keep perfume away.' What does perfume mean?",
+      "prompt": "You say 'a short pearl necklace'. What does pearl mean?",
       "choices": [
         "光澤",
-        "證書",
-        "香水"
+        "香水",
+        "珍珠"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "You say 'Please wipe the pearl.' What does wipe mean?",
+      "prompt": "You say 'put perfume on'. What does perfume mean?",
       "choices": [
-        "價錢",
-        "抹",
-        "珍珠"
+        "證書",
+        "香水",
+        "價錢"
       ],
       "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "Which word means the gem in this necklace?",
+      "prompt": "Which word means you clean the pearl with a cloth?",
       "choices": [
-        "perfume",
-        "pearl",
-        "certificate"
+        "lustre",
+        "wipe",
+        "price"
       ],
       "answer": 1,
-      "explain": "pearl 係珍珠。"
+      "explain": "wipe 係抹。"
     }
   ],
   "shadow": {
     "lineId": "j17-l1",
-    "hint": "I would like one short freshwater pearl necklace with a very soft lustre, not a saltwater pearl."
+    "hint": "I'm looking for a short pearl necklace. What's the real difference between freshwater and saltwater pearls?"
   }
 }

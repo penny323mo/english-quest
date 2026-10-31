@@ -1,0 +1,341 @@
+{
+  "id": "J18",
+  "unit": "J",
+  "titleYue": "換錶電同錶帶",
+  "titleEn": "Watch battery and strap",
+  "canDoYue": "你識講換手錶電池、打開之後仍然防水、改皮錶帶、拆兩節、保養包、四點取。",
+  "canDoEn": "Ask for a watch battery, check that it stays water resistant, switch to a leather strap, remove two links, and collect it at four o'clock under the warranty.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j18.webp",
+  "cast": [
+    "gus",
+    "ida"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "watch-noun",
+    "battery-noun",
+    "water-resistant-adj",
+    "leather-strap-phrase",
+    "warranty-noun"
+  ],
+  "topicTags": [
+    "手錶",
+    "電池",
+    "防水",
+    "皮錶帶",
+    "保養"
+  ],
+  "next": "T5",
+  "sound": {
+    "ipa": "/æ/",
+    "title": "battery 入面嗰個音",
+    "note": "battery 有 /æ/。strap 有 /æ/。",
+    "pairs": [
+      {
+        "a": "battery-noun",
+        "b": "leather-strap-phrase"
+      },
+      {
+        "a": "watch-noun",
+        "b": "warranty-noun"
+      }
+    ],
+    "drill": [
+      "battery-noun",
+      "watch-noun",
+      "water-resistant-adj",
+      "leather-strap-phrase",
+      "warranty-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "j18-l1",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "My old watch has stopped working. Can you replace the dead battery later this afternoon?",
+      "glossYue": "我隻舊手錶停咗。下晝可唔可以換粒電池？",
+      "audio": "assets/audio/lines/j18-l1.mp3",
+      "audioSlow": "assets/audio/lines/j18-l1-slow.mp3",
+      "say": "My old watch has stopped working. Can you replace the dead battery later this afternoon?",
+      "hideGloss": false
+    },
+    {
+      "id": "j18-l2",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Yes. A new battery takes about ten minutes, and the shop warranty covers it.",
+      "glossYue": "可以。換新電池大約十分鐘，舖頭保養包咗。",
+      "audio": "assets/audio/lines/j18-l2.mp3",
+      "audioSlow": "assets/audio/lines/j18-l2-slow.mp3",
+      "say": "Yes. A new battery takes about ten minutes, and the shop warranty covers it.",
+      "hideGloss": false
+    },
+    {
+      "id": "j18-l3",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "Good. Is this watch still water resistant after you open the sealed back case?",
+      "glossYue": "好。打開密封底蓋之後，隻錶仲防唔防水？",
+      "audio": "assets/audio/lines/j18-l3.mp3",
+      "audioSlow": "assets/audio/lines/j18-l3-slow.mp3",
+      "say": "Good. Is this watch still water resistant after you open the sealed back case?",
+      "hideGloss": false
+    },
+    {
+      "id": "j18-l4",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Yes, it stays water resistant. Would you like a leather strap on it instead?",
+      "glossYue": "會，仍然防水。你想唔想改一條皮錶帶？",
+      "audio": "assets/audio/lines/j18-l4.mp3",
+      "audioSlow": "assets/audio/lines/j18-l4-slow.mp3",
+      "say": "Yes, it stays water resistant. Would you like a leather strap on it instead?",
+      "hideGloss": true
+    },
+    {
+      "id": "j18-l5",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "The leather strap looks nice. Can you remove two metal links from the band?",
+      "glossYue": "皮錶帶幾靚。可唔可以喺錶帶拆兩節金屬扣？",
+      "audio": "assets/audio/lines/j18-l5.mp3",
+      "audioSlow": "assets/audio/lines/j18-l5-slow.mp3",
+      "say": "The leather strap looks nice. Can you remove two metal links from the band?",
+      "hideGloss": true
+    },
+    {
+      "id": "j18-l6",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Yes, I can remove those two links. Your pick-up time is four o'clock.",
+      "glossYue": "可以拆嗰兩節。你四點可以嚟取。",
+      "audio": "assets/audio/lines/j18-l6.mp3",
+      "audioSlow": "assets/audio/lines/j18-l6-slow.mp3",
+      "say": "Yes, I can remove those two links. Your pick-up time is four o'clock.",
+      "hideGloss": true
+    },
+    {
+      "id": "j18-l7",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "Four o'clock is perfect for me. Does the warranty cover the leather strap too?",
+      "glossYue": "四點得。保養包唔包呢條皮錶帶？",
+      "audio": "assets/audio/lines/j18-l7.mp3",
+      "audioSlow": "assets/audio/lines/j18-l7-slow.mp3",
+      "say": "Four o'clock is perfect for me. Does the warranty cover the leather strap too?",
+      "hideGloss": true
+    },
+    {
+      "id": "j18-l8",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Yes, the shop warranty covers that strap. Please collect the fixed watch at four o'clock.",
+      "glossYue": "包。舖頭保養包呢條錶帶。請四點嚟取修好嘅手錶。",
+      "audio": "assets/audio/lines/j18-l8.mp3",
+      "audioSlow": "assets/audio/lines/j18-l8-slow.mp3",
+      "say": "Yes, the shop warranty covers that strap. Please collect the fixed watch at four o'clock.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "My old watch has stopped working. Can you replace the dead battery later this afternoon? 即係問緊咩？",
+      "choices": [
+        "問可唔可以換電池",
+        "問皮錶帶",
+        "問四點取手錶"
+      ],
+      "answer": 0,
+      "explain": "battery 係電池。watch 係手錶。"
+    },
+    {
+      "prompt": "Good. Is this watch still water resistant after you open the sealed back case? 即係問緊咩？",
+      "choices": [
+        "問保養包唔包",
+        "打開之後仲防唔防水",
+        "問拆幾多節皮錶帶"
+      ],
+      "answer": 1,
+      "explain": "water resistant 係防水。"
+    },
+    {
+      "prompt": "Yes, I can remove those two links. Your pick-up time is four o'clock. 呢句即係點？",
+      "choices": [
+        "電池要一日",
+        "皮錶帶唔可以拆",
+        "可以拆兩節，四點取手錶"
+      ],
+      "answer": 2,
+      "explain": "warranty 係保養。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "My old ___ has stopped working. Can you replace the dead battery later this afternoon?",
+      "example": "My old watch has stopped working. Can you replace the dead battery later this afternoon?",
+      "glossYue": "隻手錶停咗。",
+      "answer": "watch",
+      "choices": [
+        "watch",
+        "battery",
+        "warranty"
+      ]
+    },
+    {
+      "pattern": "Yes. A new ___ takes about ten minutes, and the shop warranty covers it.",
+      "example": "Yes. A new battery takes about ten minutes, and the shop warranty covers it.",
+      "glossYue": "換電池十分鐘。",
+      "answer": "battery",
+      "choices": [
+        "battery",
+        "watch",
+        "leather strap"
+      ]
+    },
+    {
+      "pattern": "The ___ looks nice. Can you remove two metal links from the band?",
+      "example": "The leather strap looks nice. Can you remove two metal links from the band?",
+      "glossYue": "皮錶帶幾靚。",
+      "answer": "leather strap",
+      "choices": [
+        "leather strap",
+        "battery",
+        "warranty"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想換手錶電池。你點講？",
+      "choices": [
+        "My old watch has stopped working. Can you replace the dead battery later this afternoon?",
+        "Good. Is this watch still water resistant after you open the sealed back case?",
+        "The leather strap looks nice. Can you remove two metal links from the band?"
+      ],
+      "answer": 0,
+      "explain": "講 battery。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "leather",
+        "strap"
+      ],
+      "answer": [
+        "leather",
+        "strap"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "gus",
+    "intro": "你同 Ida 換錶電。可以講：battery、strap。",
+    "turns": [
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "Yes. A new battery takes about ten minutes, and the shop warranty covers it.",
+        "audio": "assets/audio/lines/j18-l2.mp3",
+        "audioSlow": "assets/audio/lines/j18-l2-slow.mp3",
+        "expect": "Good. Is this watch still water resistant after you open the sealed back case?",
+        "keywords": [
+          "water",
+          "resistant"
+        ],
+        "modelAudio": "assets/audio/lines/j18-l3.mp3",
+        "modelSlow": "assets/audio/lines/j18-l3-slow.mp3"
+      },
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "Yes, it stays water resistant. Would you like a leather strap on it instead?",
+        "audio": "assets/audio/lines/j18-l4.mp3",
+        "audioSlow": "assets/audio/lines/j18-l4-slow.mp3",
+        "expect": "The leather strap looks nice. Can you remove two metal links from the band?",
+        "keywords": [
+          "leather",
+          "strap"
+        ],
+        "modelAudio": "assets/audio/lines/j18-l5.mp3",
+        "modelSlow": "assets/audio/lines/j18-l5-slow.mp3"
+      },
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "Yes, I can remove those two links. Your pick-up time is four o'clock.",
+        "audio": "assets/audio/lines/j18-l6.mp3",
+        "audioSlow": "assets/audio/lines/j18-l6-slow.mp3",
+        "expect": "Four o'clock is perfect for me. Does the warranty cover the leather strap too?",
+        "keywords": [
+          "warranty",
+          "strap"
+        ],
+        "modelAudio": "assets/audio/lines/j18-l7.mp3",
+        "modelSlow": "assets/audio/lines/j18-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear for the cell inside a watch.",
+      "lemma": "battery-noun",
+      "choices": [
+        "watch",
+        "battery",
+        "warranty"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the phrase you hear for a band made of hide.",
+      "lemma": "leather-strap-phrase",
+      "choices": [
+        "leather strap",
+        "battery",
+        "watch"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'water resistant'. What does water resistant mean?",
+      "choices": [
+        "防水",
+        "電池",
+        "皮錶帶"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'the shop warranty'. What does warranty mean?",
+      "choices": [
+        "保養",
+        "手錶",
+        "防水"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word means the thing you wear on your wrist?",
+      "choices": [
+        "watch",
+        "battery",
+        "warranty"
+      ],
+      "answer": 0,
+      "explain": "watch 係手錶。"
+    }
+  ],
+  "shadow": {
+    "lineId": "j18-l1",
+    "hint": "My old watch has stopped working. Can you replace the dead battery later this afternoon?"
+  }
+}

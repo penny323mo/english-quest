@@ -1092,12 +1092,12 @@
       "glossZh": "保持",
       "jyutping": "bou2 ci4",
       "collocations": [
-        "keep the receipt",
+        "keep it clean",
         "keep it safe"
       ],
-      "example": "Please keep the receipt.",
-      "exampleYue": "唔該留住張單。",
-      "say": "Please keep the receipt.",
+      "example": "Please keep the ring clean.",
+      "exampleYue": "唔該保持隻戒指乾淨。",
+      "say": "Please keep the ring clean.",
       "variants": [],
       "note": "",
       "sources": [
@@ -1109,7 +1109,8 @@
       "senseMismatch": false,
       "cmuLemma": "keep",
       "phrase": false,
-      "audioSha256": "b21305539721da9b525bb40fddce77cb08491754a63be4bb18170b5e466fe765"
+      "audioSha256": "9cfbdf8d8cf0e2dc3c52ef264d0cd5f845f17938c7a0a43363f0079cc3f231a5",
+      "usageNotes": "呢張卡講保持。留住張單係另一個意思。"
     },
     {
       "id": "light-adj",
@@ -18768,16 +18769,16 @@
       "arpabet": "R IH0 T ER1 N",
       "audio": "assets/audio/words/return-noun.mp3",
       "audioSlow": "assets/audio/words/return-noun-slow.mp3",
-      "glossYue": "退換期",
-      "glossZh": "退換期",
+      "glossYue": "退貨",
+      "glossZh": "退貨",
       "jyutping": "teoi3 wun6 kei4",
       "collocations": [
         "the return window",
         "a return"
       ],
-      "example": "The return window is thirty days.",
-      "exampleYue": "退換期係三十日。",
-      "say": "The [[ɹɪtˈɜn]] window is thirty days.",
+      "example": "I would like a return for this necklace.",
+      "exampleYue": "呢條頸鏈我想退貨。",
+      "say": "I would like a [[ɹɪtˈɜn]] for this necklace.",
       "variants": [],
       "note": "",
       "sources": [
@@ -18788,25 +18789,25 @@
       "senseMismatch": false,
       "cmuLemma": "return",
       "phrase": false,
-      "audioSha256": "93025d9a9b705237d9b96b0346569383b9d2137fa2b0a91cb8c0b9303d6dc472",
+      "audioSha256": "0d0773ee0ec9c5fdf3fa914840a43dfe24a3443744428f200af470a82b7dfeb4",
       "register": "珠寶",
-      "usageNotes": "退換期係幾時之前可以退或者換。",
-      "pitfallsYue": "退換期係幾時之前可以退或者換。",
+      "usageNotes": "退貨係將貨退返。退換期先係限期。",
+      "pitfallsYue": "退貨唔等於退換期。",
       "related": [
         "receipt-noun",
         "exchange-noun"
       ],
       "examples": [
         {
-          "en": "The return window is thirty days.",
-          "yue": "退換期係三十日。",
+          "en": "I would like a return for this necklace.",
+          "yue": "呢條頸鏈我想退貨。",
           "audio": "assets/audio/words/return-noun.mp3",
           "audioSlow": "assets/audio/words/return-noun-slow.mp3",
-          "say": "The [[ɹɪtˈɜn]] window is thirty days."
+          "say": "I would like a [[ɹɪtˈɜn]] for this necklace."
         },
         {
           "en": "You can ask for a return within one year.",
-          "yue": "一年之內可以申請退換。",
+          "yue": "一年之內可以申請退貨。",
           "audio": "assets/audio/words/return-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/return-noun-ex2-slow.mp3",
           "say": "You can ask for a [[ɹɪtˈɜn]] within one year."
@@ -27702,7 +27703,7 @@
       "id": "sincere-adj",
       "lemma": "sincere",
       "pos": "adj",
-      "senseId": "genuine",
+      "senseId": "heartfelt",
       "ipa": "/sɪn.ˈsɪɹ/",
       "syllables": [
         "sin",
@@ -27717,15 +27718,15 @@
       "audio": "assets/audio/words/sincere-adj.mp3",
       "audioSlow": "assets/audio/words/sincere-adj-slow.mp3",
       "glossYue": "誠懇",
-      "glossZh": "诚恳",
+      "glossZh": "誠懇",
       "jyutping": "sing4 han2",
       "collocations": [
         "sincere care",
         "sincere apology"
       ],
-      "example": "She gave a sincere answer about the broken clasp.",
-      "exampleYue": "佢就個壞扣畀咗個誠懇嘅答案。",
-      "say": "She gave a sincere answer about the broken clasp.",
+      "example": "Please accept our sincere apology.",
+      "exampleYue": "請接受我哋誠懇嘅道歉。",
+      "say": "Please accept our sincere apology.",
       "variants": [],
       "note": "",
       "sources": [
@@ -27736,15 +27737,15 @@
       "senseMismatch": false,
       "cmuLemma": "sincere",
       "phrase": false,
-      "audioSha256": "ddea60250924c3c4cfdce6879eb8e94ee1982c4e31e82ab6c4b7db13d0dc7882",
+      "audioSha256": "9fa3c730ad02b8cc603336361e5aac51c21fa987e8b1980edf2685b90c25d5de",
       "register": "職場",
       "examples": [
         {
-          "en": "She gave a sincere answer about the broken clasp.",
-          "yue": "佢就個壞扣畀咗個誠懇嘅答案。",
+          "en": "Please accept our sincere apology.",
+          "yue": "請接受我哋誠懇嘅道歉。",
           "audio": "assets/audio/words/sincere-adj.mp3",
           "audioSlow": "assets/audio/words/sincere-adj-slow.mp3",
-          "say": "She gave a sincere answer about the broken clasp."
+          "say": "Please accept our sincere apology."
         },
         {
           "en": "A sincere note can calm an upset guest.",
@@ -29963,8 +29964,8 @@
       "arpabet": "M OW1 B AH0 L K AA1 N T R AE2 K T",
       "audio": "assets/audio/words/mobile-contract-noun.mp3",
       "audioSlow": "assets/audio/words/mobile-contract-noun-slow.mp3",
-      "glossYue": "電話合約",
-      "glossZh": "電話合約",
+      "glossYue": "手機合約",
+      "glossZh": "手機合約",
       "jyutping": "din6 waa2 hap6 joek3",
       "collocations": [
         "a phone contract",
@@ -29986,7 +29987,7 @@
       "phrase": true,
       "audioSha256": "9613533ecfe369a1e121d0e977599a4f674b48538758ad0d45a906bbbad11215",
       "register": "電話舖",
-      "usageNotes": "contract 呢度係電話合約，唔係租約。",
+      "usageNotes": "contract 呢度係手機合約，唔係租約。",
       "pitfallsYue": "contract 呢度係電話合約，唔係租約。",
       "related": [],
       "examples": [
@@ -31835,16 +31836,16 @@
       "arpabet": "K AH0 N EH1 K SH AH0 N",
       "audio": "assets/audio/words/connection-noun.mp3",
       "audioSlow": "assets/audio/words/connection-noun-slow.mp3",
-      "glossYue": "接駁",
-      "glossZh": "接駁",
-      "jyutping": "zip3 bok3",
+      "glossYue": "轉機",
+      "glossZh": "轉機",
+      "jyutping": "zyun2 gei1",
       "collocations": [
         "the connection",
         "missed connection"
       ],
-      "example": "The connection was missed at noon.",
-      "exampleYue": "中午嗰程接駁趕唔到。",
-      "say": "The connection was missed at noon.",
+      "example": "I missed my connection in Taipei.",
+      "exampleYue": "我喺台北趕唔切轉機。",
+      "say": "I missed my connection in Taipei.",
       "variants": [],
       "note": "",
       "sources": [
@@ -31856,22 +31857,22 @@
       "senseMismatch": false,
       "cmuLemma": "connection",
       "phrase": false,
-      "audioSha256": "050a2be535672208bae8ebfda4adbe8e9c90871f81d1b115430aae3c75535e63",
+      "audioSha256": "95e7ab0cb809b368a09edbc93ce63000dd29e73b26b0818b8f57f397da2baba1",
       "register": "旅行",
       "usageNotes": "轉機嗰一段叫 connection。",
       "pitfallsYue": "唔好講成 internet connection。",
       "related": [],
       "examples": [
         {
-          "en": "The connection was missed at noon.",
-          "yue": "中午嗰程接駁趕唔到。",
+          "en": "I missed my connection in Taipei.",
+          "yue": "我喺台北趕唔切轉機。",
           "audio": "assets/audio/words/connection-noun.mp3",
           "audioSlow": "assets/audio/words/connection-noun-slow.mp3",
-          "say": "The connection was missed at noon."
+          "say": "I missed my connection in Taipei."
         },
         {
           "en": "A later connection leaves from this gate.",
-          "yue": "遲啲嗰程接駁由呢個閘口飛。",
+          "yue": "遲啲嗰程轉機由呢個閘口飛。",
           "audio": "assets/audio/words/connection-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/connection-noun-ex2-slow.mp3",
           "say": "A later connection leaves from this gate."
@@ -32466,9 +32467,9 @@
         "an alternative",
         "refund an alternative"
       ],
-      "example": "A refund is an alternative if we wait.",
-      "exampleYue": "如果要等，退款係另一個選擇。",
-      "say": "A refund is an alternative if we wait.",
+      "example": "Store credit is an alternative to a cash refund.",
+      "exampleYue": "店舖積分係現金退款以外嘅另一個選擇。",
+      "say": "Store credit is an alternative to a cash refund.",
       "variants": [],
       "note": "",
       "sources": [
@@ -32480,18 +32481,18 @@
       "senseMismatch": false,
       "cmuLemma": "alternative",
       "phrase": false,
-      "audioSha256": "382aa7576d0ff24b6257d8dac82585fa3de708c05dcb768056992b0bca28b0a0",
+      "audioSha256": "3e1b4375da77a9415f66342840c73a17a16f4592189298ea454ef1fce0ec0af8",
       "register": "旅行",
       "usageNotes": "前面常用 an，因為元音開頭。",
       "pitfallsYue": "重音喺第二音 ter。",
       "related": [],
       "examples": [
         {
-          "en": "A refund is an alternative if we wait.",
-          "yue": "如果要等，退款係另一個選擇。",
+          "en": "Store credit is an alternative to a cash refund.",
+          "yue": "店舖積分係現金退款以外嘅另一個選擇。",
           "audio": "assets/audio/words/alternative-noun.mp3",
           "audioSlow": "assets/audio/words/alternative-noun-slow.mp3",
-          "say": "A refund is an alternative if we wait."
+          "say": "Store credit is an alternative to a cash refund."
         },
         {
           "en": "The desk offered an alternative route.",
@@ -36705,14 +36706,14 @@
       "arpabet": "D R AW1 Z IY0",
       "audio": "assets/audio/words/drowsy-adj.mp3",
       "audioSlow": "assets/audio/words/drowsy-adj-slow.mp3",
-      "glossYue": "嗜睡",
-      "glossZh": "嗜睡",
-      "jyutping": "ci3 seoi6",
+      "glossYue": "好眼瞓",
+      "glossZh": "好眼瞓",
+      "jyutping": "hou2 ngaan5 fan3",
       "collocations": [
         "feel drowsy"
       ],
       "example": "This tablet can make you drowsy.",
-      "exampleYue": "呢種藥會令人嗜睡。",
+      "exampleYue": "呢種藥會令人好眼瞓。",
       "say": "This tablet can make you drowsy.",
       "variants": [],
       "note": "",
@@ -36726,20 +36727,20 @@
       "phrase": false,
       "audioSha256": "869d457789bb7093613871016477cfeec24f6bb1c9dd0ac4cf7e835597066736",
       "register": "藥房",
-      "usageNotes": "drowsy 係嗜睡。",
-      "pitfallsYue": "嗜睡唔係發燒。",
+      "usageNotes": "drowsy 係好眼瞓、令人想瞓。書面先叫嗜睡。",
+      "pitfallsYue": "好眼瞓唔係發燒。",
       "related": [],
       "examples": [
         {
           "en": "This tablet can make you drowsy.",
-          "yue": "呢種藥會令人嗜睡。",
+          "yue": "呢種藥會令人好眼瞓。",
           "audio": "assets/audio/words/drowsy-adj.mp3",
           "audioSlow": "assets/audio/words/drowsy-adj-slow.mp3",
           "say": "This tablet can make you drowsy."
         },
         {
           "en": "Do not drive if you feel drowsy.",
-          "yue": "覺得嗜睡就唔好揸車。",
+          "yue": "覺得好眼瞓就唔好揸車。",
           "audio": "assets/audio/words/drowsy-adj-ex2.mp3",
           "audioSlow": "assets/audio/words/drowsy-adj-ex2-slow.mp3",
           "say": "Do not drive if you feel drowsy."
@@ -36894,9 +36895,9 @@
       "collocations": [
         "plate number"
       ],
-      "example": "The plate number is blue seven four two.",
-      "exampleYue": "車牌係藍七四二。",
-      "say": "The plate number is blue seven four two.",
+      "example": "What's your plate number?",
+      "exampleYue": "你架車車牌係幾多號？",
+      "say": "What's your plate number?",
       "variants": [],
       "note": "",
       "sources": [
@@ -36907,18 +36908,18 @@
       "senseMismatch": false,
       "cmuLemma": "plate",
       "phrase": true,
-      "audioSha256": "b86e44b6e2ba0412b4024ace556d6891df4575e65368dfb68e9f8d0e6f0b76ae",
+      "audioSha256": "f72d0e47441cc15d5ed1d5acc99056efab8b7dacf8521fd82acc0333788ce3d4",
       "register": "旅行",
       "usageNotes": "plate number 係車牌。",
       "pitfallsYue": "車牌唔係收據。",
       "related": [],
       "examples": [
         {
-          "en": "The plate number is blue seven four two.",
-          "yue": "車牌係藍七四二。",
+          "en": "What's your plate number?",
+          "yue": "你架車車牌係幾多號？",
           "audio": "assets/audio/words/plate-number-phrase.mp3",
           "audioSlow": "assets/audio/words/plate-number-phrase-slow.mp3",
-          "say": "The plate number is blue seven four two."
+          "say": "What's your plate number?"
         },
         {
           "en": "What is the plate number?",
@@ -36955,9 +36956,9 @@
       "collocations": [
         "running late"
       ],
-      "example": "I am running late for this taxi.",
-      "exampleYue": "我叫的士遲到咗。",
-      "say": "I am running late for this taxi.",
+      "example": "Sorry, I'm running late.",
+      "exampleYue": "唔好意思，我遲咗少少。",
+      "say": "Sorry, I'm running late.",
       "variants": [],
       "note": "",
       "sources": [
@@ -36968,18 +36969,18 @@
       "senseMismatch": false,
       "cmuLemma": "running",
       "phrase": true,
-      "audioSha256": "e82d28e0ee64ab26f58c6f99b5aa5dd9c6e3eb16531ed0687539e5c609b9a43c",
+      "audioSha256": "893756b899dd688c360a254bafa67de1afc23ed1a8340dd7443a7172ae5a46fc",
       "register": "旅行",
       "usageNotes": "running late 係遲到。",
       "pitfallsYue": "遲到唔係改目的地。",
       "related": [],
       "examples": [
         {
-          "en": "I am running late for this taxi.",
-          "yue": "我叫的士遲到咗。",
+          "en": "Sorry, I'm running late.",
+          "yue": "唔好意思，我遲咗少少。",
           "audio": "assets/audio/words/running-late-phrase.mp3",
           "audioSlow": "assets/audio/words/running-late-phrase-slow.mp3",
-          "say": "I am running late for this taxi."
+          "say": "Sorry, I'm running late."
         },
         {
           "en": "I am still running late.",
@@ -37526,6 +37527,563 @@
           "audio": "assets/audio/words/next-step-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/next-step-phrase-ex2-slow.mp3",
           "say": "Please tell me the next step after the email."
+        }
+      ]
+    },
+    {
+      "id": "transfer-verb-bag",
+      "lemma": "transfer",
+      "pos": "verb",
+      "senseId": "move-luggage",
+      "ipa": "/tɹæns.ˈfɝ/",
+      "syllables": [
+        "trans",
+        "fer"
+      ],
+      "syllableIpa": [
+        "tɹæns",
+        "ˈfɝ"
+      ],
+      "stress": 2,
+      "arpabet": "T R AE0 N S F ER1",
+      "audio": "assets/audio/words/transfer-verb-bag.mp3",
+      "audioSlow": "assets/audio/words/transfer-verb-bag-slow.mp3",
+      "glossYue": "轉運",
+      "glossZh": "轉運",
+      "jyutping": "zyun2 wan6",
+      "collocations": [
+        "transfer my bag",
+        "transfer the bag"
+      ],
+      "example": "The airline will transfer my bag.",
+      "exampleYue": "航空公司會轉運我個袋。",
+      "say": "The airline will [[tɹænsfˈɜ]] my bag.",
+      "variants": [],
+      "note": "動詞重音喺第二節 /tɹæns.ˈfɝ/。錄音用 ɜ，因為呢個聲線冇 ɝ。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-30",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "transfer",
+      "phrase": false,
+      "audioSha256": "725be8d44f82a4beedbe30a67f803972cee2268e35d504da81e5642939b6e1cc",
+      "register": "旅行",
+      "usageNotes": "行李轉去下一班機叫轉運。",
+      "pitfallsYue": "轉運唔係轉駁電話。",
+      "related": [
+        "line-noun",
+        "hold-verb"
+      ],
+      "examples": [
+        {
+          "en": "The airline will transfer my bag.",
+          "yue": "航空公司會轉運我個袋。",
+          "audio": "assets/audio/words/transfer-verb-bag.mp3",
+          "audioSlow": "assets/audio/words/transfer-verb-bag-slow.mp3",
+          "say": "The airline will [[tɹænsfˈɜ]] my bag."
+        },
+        {
+          "en": "Please transfer the checked bag to the next flight.",
+          "yue": "唔該將寄艙行李轉運去下一班機。",
+          "audio": "assets/audio/words/transfer-verb-bag-ex2.mp3",
+          "audioSlow": "assets/audio/words/transfer-verb-bag-ex2-slow.mp3",
+          "say": "Please [[tɹænsfˈɜ]] the checked bag to the next flight."
+        }
+      ]
+    },
+    {
+      "id": "less-sugar-phrase",
+      "lemma": "less sugar",
+      "pos": "phrase",
+      "senseId": "lighter-sweet",
+      "ipa": "/ˈlɛs ˈʃʊ.ɡɚ/",
+      "syllables": [
+        "less",
+        "su",
+        "gar"
+      ],
+      "syllableIpa": [
+        "ˈlɛs",
+        "ˈʃʊ",
+        "ɡɚ"
+      ],
+      "stress": 1,
+      "arpabet": "L EH1 S | SH UH1 G ER0",
+      "audio": "assets/audio/words/less-sugar-phrase.mp3",
+      "audioSlow": "assets/audio/words/less-sugar-phrase-slow.mp3",
+      "glossYue": "少糖",
+      "glossZh": "少糖",
+      "jyutping": "siu2 tong4",
+      "collocations": [
+        "less sugar"
+      ],
+      "example": "Can I have less sugar in this latte?",
+      "exampleYue": "呢杯拿鐵可唔可以少糖？",
+      "say": "Can I have less sugar in this latte?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "less",
+      "phrase": true,
+      "audioSha256": "1671c4e5efe0895b03aefc2926a269b1e0beff511c96d8fd515ff397524fb6c0",
+      "register": "餐廳",
+      "usageNotes": "less sugar 係少甜。",
+      "pitfallsYue": "少糖唔係唔要糖。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Can I have less sugar in this latte?",
+          "yue": "呢杯拿鐵可唔可以少糖？",
+          "audio": "assets/audio/words/less-sugar-phrase.mp3",
+          "audioSlow": "assets/audio/words/less-sugar-phrase-slow.mp3",
+          "say": "Can I have less sugar in this latte?"
+        },
+        {
+          "en": "Less sugar is enough for me.",
+          "yue": "少糖就夠喇。",
+          "audio": "assets/audio/words/less-sugar-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/less-sugar-phrase-ex2-slow.mp3",
+          "say": "Less sugar is enough for me."
+        }
+      ]
+    },
+    {
+      "id": "tall-cup-phrase",
+      "lemma": "tall cup",
+      "pos": "phrase",
+      "senseId": "larger-drink",
+      "ipa": "/ˈtɔl ˈkʌp/",
+      "syllables": [
+        "tall",
+        "cup"
+      ],
+      "syllableIpa": [
+        "ˈtɔl",
+        "ˈkʌp"
+      ],
+      "stress": 1,
+      "arpabet": "T AO1 L | K AH1 P",
+      "audio": "assets/audio/words/tall-cup-phrase.mp3",
+      "audioSlow": "assets/audio/words/tall-cup-phrase-slow.mp3",
+      "glossYue": "大杯",
+      "glossZh": "大杯",
+      "jyutping": "daai6 bui1",
+      "collocations": [
+        "a tall cup"
+      ],
+      "example": "I would like a tall cup, please.",
+      "exampleYue": "我想要一杯大杯。",
+      "say": "I would like a tall cup, please.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "tall",
+      "phrase": true,
+      "audioSha256": "c6f517c178fe4e7588cc0a9c8332b175ec3eb75e23da8476865eccb240ae945f",
+      "register": "餐廳",
+      "usageNotes": "tall cup 係大杯。",
+      "pitfallsYue": "大杯唔係細杯。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I would like a tall cup, please.",
+          "yue": "我想要一杯大杯。",
+          "audio": "assets/audio/words/tall-cup-phrase.mp3",
+          "audioSlow": "assets/audio/words/tall-cup-phrase-slow.mp3",
+          "say": "I would like a tall cup, please."
+        },
+        {
+          "en": "Is the tall cup the larger one?",
+          "yue": "大杯係唔係大啲嗰杯？",
+          "audio": "assets/audio/words/tall-cup-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/tall-cup-phrase-ex2-slow.mp3",
+          "say": "Is the tall cup the larger one?"
+        }
+      ]
+    },
+    {
+      "id": "battery-noun",
+      "lemma": "battery",
+      "pos": "noun",
+      "senseId": "watch-cell",
+      "ipa": "/ˈbæ.tɚ.i/",
+      "syllables": [
+        "bat",
+        "ter",
+        "y"
+      ],
+      "syllableIpa": [
+        "ˈbæ",
+        "tɚ",
+        "i"
+      ],
+      "stress": 1,
+      "arpabet": "B AE1 T ER0 IY0",
+      "audio": "assets/audio/words/battery-noun.mp3",
+      "audioSlow": "assets/audio/words/battery-noun-slow.mp3",
+      "glossYue": "電池",
+      "glossZh": "電池",
+      "jyutping": "din6 ci4",
+      "collocations": [
+        "a new battery"
+      ],
+      "example": "The watch needs a new battery.",
+      "exampleYue": "呢隻手錶要換新電池。",
+      "say": "The watch needs a new battery.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "battery",
+      "phrase": false,
+      "audioSha256": "753272182d6b0f47b286fd74d107a68033291eb0ed8a6115729031f0a711477a",
+      "register": "珠寶",
+      "usageNotes": "battery 係電池。",
+      "pitfallsYue": "電池唔係錶帶。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The watch needs a new battery.",
+          "yue": "呢隻手錶要換新電池。",
+          "audio": "assets/audio/words/battery-noun.mp3",
+          "audioSlow": "assets/audio/words/battery-noun-slow.mp3",
+          "say": "The watch needs a new battery."
+        },
+        {
+          "en": "A new battery takes ten minutes.",
+          "yue": "換電池大約十分鐘。",
+          "audio": "assets/audio/words/battery-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/battery-noun-ex2-slow.mp3",
+          "say": "A new battery takes ten minutes."
+        }
+      ]
+    },
+    {
+      "id": "leather-strap-phrase",
+      "lemma": "leather strap",
+      "pos": "phrase",
+      "senseId": "hide-band",
+      "ipa": "/ˈlɛ.ðɚ ˈstɹæp/",
+      "syllables": [
+        "leath",
+        "er",
+        "strap"
+      ],
+      "syllableIpa": [
+        "ˈlɛ",
+        "ðɚ",
+        "ˈstɹæp"
+      ],
+      "stress": 1,
+      "arpabet": "L EH1 DH ER0 | S T R AE1 P",
+      "audio": "assets/audio/words/leather-strap-phrase.mp3",
+      "audioSlow": "assets/audio/words/leather-strap-phrase-slow.mp3",
+      "glossYue": "皮錶帶",
+      "glossZh": "皮錶帶",
+      "jyutping": "pei4 biu1 daai2",
+      "collocations": [
+        "a leather strap"
+      ],
+      "example": "This leather strap feels soft.",
+      "exampleYue": "呢條皮錶帶好軟。",
+      "say": "This leather strap feels soft.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "leather",
+      "phrase": true,
+      "audioSha256": "5ebdac693899dfbe844245e808d6666524476832d1999126bd6f064ad74074ac",
+      "register": "珠寶",
+      "usageNotes": "leather strap 係皮錶帶。",
+      "pitfallsYue": "皮錶帶唔係金屬帶。",
+      "related": [],
+      "examples": [
+        {
+          "en": "This leather strap feels soft.",
+          "yue": "呢條皮錶帶好軟。",
+          "audio": "assets/audio/words/leather-strap-phrase.mp3",
+          "audioSlow": "assets/audio/words/leather-strap-phrase-slow.mp3",
+          "say": "This leather strap feels soft."
+        },
+        {
+          "en": "Can you fit a leather strap on this watch?",
+          "yue": "可唔可以換一條皮錶帶？",
+          "audio": "assets/audio/words/leather-strap-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/leather-strap-phrase-ex2-slow.mp3",
+          "say": "Can you fit a leather strap on this watch?"
+        }
+      ]
+    },
+    {
+      "id": "water-resistant-adj",
+      "lemma": "water resistant",
+      "pos": "adj",
+      "senseId": "keeps-water-out",
+      "ipa": "/ˈwɔ.tɚ ɹɪ.ˈzɪ.stənt/",
+      "syllables": [
+        "wa",
+        "ter",
+        "re",
+        "sis",
+        "tant"
+      ],
+      "syllableIpa": [
+        "ˈwɔ",
+        "tɚ",
+        "ɹɪ",
+        "ˈzɪ",
+        "stənt"
+      ],
+      "stress": 1,
+      "arpabet": "W AO1 T ER0 | R IH0 Z IH1 S T AH0 N T",
+      "audio": "assets/audio/words/water-resistant-adj.mp3",
+      "audioSlow": "assets/audio/words/water-resistant-adj-slow.mp3",
+      "glossYue": "防水",
+      "glossZh": "防水",
+      "jyutping": "fong3 seoi2",
+      "collocations": [
+        "water resistant"
+      ],
+      "example": "This watch is water resistant.",
+      "exampleYue": "呢隻手錶防水。",
+      "say": "This watch is water resistant.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "water",
+      "phrase": true,
+      "audioSha256": "9f9b45d058ff0540df71817755249de96414f989d5d00ce8ea6352adbd177195",
+      "register": "珠寶",
+      "usageNotes": "water resistant 係防水。",
+      "pitfallsYue": "防水唔等於可以游水。",
+      "related": [],
+      "examples": [
+        {
+          "en": "This watch is water resistant.",
+          "yue": "呢隻手錶防水。",
+          "audio": "assets/audio/words/water-resistant-adj.mp3",
+          "audioSlow": "assets/audio/words/water-resistant-adj-slow.mp3",
+          "say": "This watch is water resistant."
+        },
+        {
+          "en": "Is the case still water resistant?",
+          "yue": "個殼仲防唔防水？",
+          "audio": "assets/audio/words/water-resistant-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/water-resistant-adj-ex2-slow.mp3",
+          "say": "Is the case still water resistant?"
+        }
+      ]
+    },
+    {
+      "id": "savings-account-phrase",
+      "lemma": "savings account",
+      "pos": "phrase",
+      "senseId": "interest-account",
+      "ipa": "/ˈseɪ.vɪŋz ə.ˈkaʊnt/",
+      "syllables": [
+        "sa",
+        "vings",
+        "a",
+        "ccount"
+      ],
+      "syllableIpa": [
+        "ˈseɪ",
+        "vɪŋz",
+        "ə",
+        "ˈkaʊnt"
+      ],
+      "stress": 1,
+      "arpabet": "S EY1 V IH0 NG Z | AH0 K AW1 N T",
+      "audio": "assets/audio/words/savings-account-phrase.mp3",
+      "audioSlow": "assets/audio/words/savings-account-phrase-slow.mp3",
+      "glossYue": "儲蓄戶口",
+      "glossZh": "儲蓄戶口",
+      "jyutping": "cyu5 cuk1 wu6 hau2",
+      "collocations": [
+        "a savings account"
+      ],
+      "example": "I would like a savings account.",
+      "exampleYue": "我想開一個儲蓄戶口。",
+      "say": "I would like a savings account.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "savings",
+      "phrase": true,
+      "audioSha256": "f2db872b43771bbd2410afbaeb7c9386dfe8381be9688bc75960f1a0bca97740",
+      "register": "銀行",
+      "usageNotes": "savings account 係儲蓄戶口。",
+      "pitfallsYue": "儲蓄戶口唔係往來戶口。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I would like a savings account.",
+          "yue": "我想開一個儲蓄戶口。",
+          "audio": "assets/audio/words/savings-account-phrase.mp3",
+          "audioSlow": "assets/audio/words/savings-account-phrase-slow.mp3",
+          "say": "I would like a savings account."
+        },
+        {
+          "en": "A savings account can earn interest.",
+          "yue": "儲蓄戶口可以有利息。",
+          "audio": "assets/audio/words/savings-account-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/savings-account-phrase-ex2-slow.mp3",
+          "say": "A savings account can earn interest."
+        }
+      ]
+    },
+    {
+      "id": "debit-card-phrase",
+      "lemma": "debit card",
+      "pos": "phrase",
+      "senseId": "bank-card",
+      "ipa": "/ˈdɛ.bɪt ˈkɑɹd/",
+      "syllables": [
+        "de",
+        "bit",
+        "card"
+      ],
+      "syllableIpa": [
+        "ˈdɛ",
+        "bɪt",
+        "ˈkɑɹd"
+      ],
+      "stress": 1,
+      "arpabet": "D EH1 B IH0 T | K AA1 R D",
+      "audio": "assets/audio/words/debit-card-phrase.mp3",
+      "audioSlow": "assets/audio/words/debit-card-phrase-slow.mp3",
+      "glossYue": "扣帳卡",
+      "glossZh": "扣帳卡",
+      "jyutping": "kau3 zoeng3 kaat1",
+      "collocations": [
+        "a debit card"
+      ],
+      "example": "The debit card arrives by post.",
+      "exampleYue": "扣帳卡會寄嚟。",
+      "say": "The debit card arrives by post.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "debit",
+      "phrase": true,
+      "audioSha256": "8d3931c77d87e83fe6e9489ae0b8c97b2ac73beb403344929d170c74de6d505b",
+      "register": "銀行",
+      "usageNotes": "debit card 係扣帳卡。",
+      "pitfallsYue": "扣帳卡唔係信用卡。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The debit card arrives by post.",
+          "yue": "扣帳卡會寄嚟。",
+          "audio": "assets/audio/words/debit-card-phrase.mp3",
+          "audioSlow": "assets/audio/words/debit-card-phrase-slow.mp3",
+          "say": "The debit card arrives by post."
+        },
+        {
+          "en": "May I pay with a debit card?",
+          "yue": "我可唔可以用扣帳卡？",
+          "audio": "assets/audio/words/debit-card-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/debit-card-phrase-ex2-slow.mp3",
+          "say": "May I pay with a debit card?"
+        }
+      ]
+    },
+    {
+      "id": "online-banking-phrase",
+      "lemma": "online banking",
+      "pos": "phrase",
+      "senseId": "bank-on-screen",
+      "ipa": "/ˈɔn.ˌlaɪn ˈbæŋ.kɪŋ/",
+      "syllables": [
+        "on",
+        "line",
+        "bank",
+        "ing"
+      ],
+      "syllableIpa": [
+        "ˈɔn",
+        "ˌlaɪn",
+        "ˈbæŋ",
+        "kɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "AO1 N L AY2 N | B AE1 NG K IH0 NG",
+      "audio": "assets/audio/words/online-banking-phrase.mp3",
+      "audioSlow": "assets/audio/words/online-banking-phrase-slow.mp3",
+      "glossYue": "網上理財",
+      "glossZh": "網上理財",
+      "jyutping": "mong5 soeng6 lei5 coi4",
+      "collocations": [
+        "online banking"
+      ],
+      "example": "I can register for online banking.",
+      "exampleYue": "我可以登記網上理財。",
+      "say": "I can register for online banking.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "online",
+      "phrase": true,
+      "audioSha256": "40420a5ebff96b8e90748b2414d619395de5dd4c7d5c3c07c7dc2d7b1b3ab23f",
+      "register": "銀行",
+      "usageNotes": "online banking 係網上理財。",
+      "pitfallsYue": "網上理財唔係櫃檯。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I can register for online banking.",
+          "yue": "我可以登記網上理財。",
+          "audio": "assets/audio/words/online-banking-phrase.mp3",
+          "audioSlow": "assets/audio/words/online-banking-phrase-slow.mp3",
+          "say": "I can register for online banking."
+        },
+        {
+          "en": "Online banking opens tomorrow.",
+          "yue": "網上理財聽日開通。",
+          "audio": "assets/audio/words/online-banking-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/online-banking-phrase-ex2-slow.mp3",
+          "say": "Online banking opens tomorrow."
         }
       ]
     }

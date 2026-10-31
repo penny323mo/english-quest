@@ -3,8 +3,8 @@
   "unit": "R",
   "titleYue": "食物敏感同戒口",
   "titleEn": "Allergies and dietary needs",
-  "canDoYue": "你識講對花生過敏、唔食豬肉、問有冇蛋、要素食同分開碟，再請廚房避開。",
-  "canDoEn": "Say you are allergic to peanuts, eat no pork, ask about egg, and request a vegetarian plate kept separate.",
+  "canDoYue": "你識講對花生敏感、唔食豬肉、蛋冇問題、炒飯有花生油、改素麵、分開鑊，同埋叫店員寫低張單。",
+  "canDoEn": "Say you are allergic to peanuts and do not eat pork, say egg is fine, avoid fried rice with peanut oil, take vegetarian noodles from a separate pan, and ask for a note on the order.",
   "minutes": 12,
   "hero": "assets/art/lessons/r11.webp",
   "cast": [
@@ -57,199 +57,197 @@
       "id": "r11-l1",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "I am allergic to peanuts, and I also eat no pork with this meal here.",
-      "glossYue": "我對花生過敏，呢餐亦唔食豬肉。",
+      "text": "Hello, I'm allergic to peanuts, and I don't eat pork during this whole dinner order.",
+      "glossYue": "你好，我對花生敏感，呢餐晚餐我唔食豬肉。",
       "audio": "assets/audio/lines/r11-l1.mp3",
       "audioSlow": "assets/audio/lines/r11-l1-slow.mp3",
-      "say": "I am allergic to peanuts, and I also eat no pork with this meal here.",
+      "say": "Hello, I'm allergic to peanuts, and I don't eat pork during this whole dinner order.",
       "hideGloss": false
     },
     {
       "id": "r11-l2",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Are you allergic to peanuts only, or is egg also a problem in this dish?",
-      "glossYue": "你係咪只對花生過敏，定係蛋都有問題？",
+      "text": "Okay. Is egg also a serious problem, even sitting on top of that peanut allergy?",
+      "glossYue": "好。除咗花生敏感，蛋係咪都有問題？",
       "audio": "assets/audio/lines/r11-l2.mp3",
       "audioSlow": "assets/audio/lines/r11-l2-slow.mp3",
-      "say": "Are you allergic to peanuts only, or is egg also a problem in this dish?",
+      "say": "Okay. Is egg also a serious problem, even sitting on top of that peanut allergy?",
       "hideGloss": false
     },
     {
       "id": "r11-l3",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Is there any egg in it, and can the kitchen keep peanuts away from me?",
-      "glossYue": "入面有冇蛋，廚房可唔可以唔好有花生？",
+      "text": "No, egg is completely fine. Does the hot fried rice have peanuts inside it too?",
+      "glossYue": "蛋完全冇問題。熱炒飯入面有冇花生？",
       "audio": "assets/audio/lines/r11-l3.mp3",
       "audioSlow": "assets/audio/lines/r11-l3-slow.mp3",
-      "say": "Is there any egg in it, and can the kitchen keep peanuts away from me?",
+      "say": "No, egg is completely fine. Does the hot fried rice have peanuts inside it too?",
       "hideGloss": false
     },
     {
       "id": "r11-l4",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "The kitchen can keep that nut out, and there is no egg in this dish.",
-      "glossYue": "廚房可以避開嗰種果仁，呢碟冇蛋。",
+      "text": "Yes, that rice has peanut oil in the pan. I'd suggest vegetarian noodles instead though.",
+      "glossYue": "有，嗰碟飯鑊入面有花生油。我建議改素麵。",
       "audio": "assets/audio/lines/r11-l4.mp3",
       "audioSlow": "assets/audio/lines/r11-l4-slow.mp3",
-      "say": "The kitchen can keep that nut out, and there is no egg in this dish.",
+      "say": "Yes, that rice has peanut oil in the pan. I'd suggest vegetarian noodles instead though.",
       "hideGloss": true
     },
     {
       "id": "r11-l5",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Could I have a vegetarian option, and can you use a separate plate for me?",
-      "glossYue": "可唔可以要素食選擇，再用一隻分開嘅碟？",
+      "text": "Do those hot vegetarian noodles have any pork hidden inside them during the dinner rush?",
+      "glossYue": "熱素麵入面會唔會喺繁忙時段藏咗豬肉？",
       "audio": "assets/audio/lines/r11-l5.mp3",
       "audioSlow": "assets/audio/lines/r11-l5-slow.mp3",
-      "say": "Could I have a vegetarian option, and can you use a separate plate for me?",
+      "say": "Do those hot vegetarian noodles have any pork hidden inside them during the dinner rush?",
       "hideGloss": true
     },
     {
       "id": "r11-l6",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "A vegetarian option is ready now, and the separate plate is clean for you here.",
-      "glossYue": "素食選擇而家有，分開嘅碟係乾淨嘅。",
+      "text": "No, they're fully vegetarian. I'll ask the kitchen staff to use one separate clean pan.",
+      "glossYue": "唔會，完全素。我會叫廚房用一個乾淨嘅分開鑊。",
       "audio": "assets/audio/lines/r11-l6.mp3",
       "audioSlow": "assets/audio/lines/r11-l6-slow.mp3",
-      "say": "A vegetarian option is ready now, and the separate plate is clean for you here.",
+      "say": "No, they're fully vegetarian. I'll ask the kitchen staff to use one separate clean pan.",
       "hideGloss": true
     },
     {
       "id": "r11-l7",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Please tell the kitchen that I am allergic, and pork stays off that plate too.",
-      "glossYue": "請話畀廚房知我過敏，嗰碟都唔好有豬肉。",
+      "text": "Thank you very much. Please tell the head chef that I am allergic to peanuts.",
+      "glossYue": "多謝。請同主廚講我對花生敏感。",
       "audio": "assets/audio/lines/r11-l7.mp3",
       "audioSlow": "assets/audio/lines/r11-l7-slow.mp3",
-      "say": "Please tell the kitchen that I am allergic, and pork stays off that plate too.",
+      "say": "Thank you very much. Please tell the head chef that I am allergic to peanuts.",
       "hideGloss": true
     },
     {
       "id": "r11-l8",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "I will tell the kitchen, and the vegetarian plate will have no pork in it.",
-      "glossYue": "我會話畀廚房知，素食碟唔會有豬肉。",
+      "text": "I will do that. I'll put a clear written note on your dinner order slip.",
+      "glossYue": "我會。我會喺你張晚餐單上面寫清楚。",
       "audio": "assets/audio/lines/r11-l8.mp3",
       "audioSlow": "assets/audio/lines/r11-l8-slow.mp3",
-      "say": "I will tell the kitchen, and the vegetarian plate will have no pork in it.",
+      "say": "I will do that. I'll put a clear written note on your dinner order slip.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "I am allergic to peanuts, and I also eat no pork with this meal here. 呢句即係點？",
+      "prompt": "No, egg is completely fine. Does the hot fried rice have peanuts inside it too? 即係問緊咩？",
       "choices": [
-        "對花生過敏，呢餐唔食豬肉",
-        "想加蛋",
-        "廚房未開"
-      ],
-      "answer": 0,
-      "explain": "allergic 係過敏。pork 係豬肉。"
-    },
-    {
-      "prompt": "Is there any egg in it, and can the kitchen keep peanuts away from me? 即係問緊咩？",
-      "choices": [
-        "問可唔可以加豬肉",
-        "問有冇蛋，廚房可唔可以避開花生",
-        "問素食碟幾多錢"
+        "問有冇豬肉",
+        "蛋冇問題，問炒飯有冇花生",
+        "叫分開張單"
       ],
       "answer": 1,
-      "explain": "egg 係蛋。kitchen 係廚房。"
+      "explain": "egg 係蛋。peanut 係花生。"
     },
     {
-      "prompt": "Could I have a vegetarian option, and can you use a separate plate for me? 即係問緊咩？",
+      "prompt": "Yes, that rice has peanut oil in the pan. I'd suggest vegetarian noodles instead though. 呢句即係點？",
       "choices": [
-        "問花生係咪熟",
-        "問廚房喺邊",
-        "問可唔可以要素食，用分開嘅碟"
+        "炒飯有花生油，建議素麵",
+        "蛋都唔食得",
+        "廚房冇分開鑊"
+      ],
+      "answer": 0,
+      "explain": "vegetarian 係素食。"
+    },
+    {
+      "prompt": "I will do that. I'll put a clear written note on your dinner order slip. 呢句即係點？",
+      "choices": [
+        "叫你改食豬肉",
+        "廚房寫低張單",
+        "會喺廚房張單寫低"
       ],
       "answer": 2,
-      "explain": "vegetarian 係素食。separate 係分開。"
+      "explain": "kitchen 係廚房。"
     }
   ],
   "chunks": [
     {
-      "pattern": "I am ___ to peanuts, and I also eat no pork with this meal here.",
-      "example": "I am allergic to peanuts, and I also eat no pork with this meal here.",
-      "glossYue": "我對花生過敏。",
+      "pattern": "Hello, I'm ___ to peanuts, and I don't eat pork during this whole dinner order.",
+      "example": "Hello, I'm allergic to peanuts, and I don't eat pork during this whole dinner order.",
+      "glossYue": "我對花生敏感。",
       "answer": "allergic",
       "choices": [
         "allergic",
-        "pork",
-        "egg"
+        "vegetarian",
+        "separate"
       ]
     },
     {
-      "pattern": "Could I have a vegetarian option, and can you use a ___ plate for me?",
-      "example": "Could I have a vegetarian option, and can you use a separate plate for me?",
-      "glossYue": "用一隻分開嘅碟。",
+      "pattern": "No, ___ is completely fine. Does the hot fried rice have peanuts inside it too?",
+      "example": "No, egg is completely fine. Does the hot fried rice have peanuts inside it too?",
+      "glossYue": "蛋冇問題。",
+      "answer": "egg",
+      "choices": [
+        "egg",
+        "pork",
+        "peanut"
+      ]
+    },
+    {
+      "pattern": "No, they're fully vegetarian. I'll ask the kitchen staff to use one ___ clean pan.",
+      "example": "No, they're fully vegetarian. I'll ask the kitchen staff to use one separate clean pan.",
+      "glossYue": "用分開嘅鑊。",
       "answer": "separate",
       "choices": [
         "separate",
-        "kitchen",
-        "pork"
-      ]
-    },
-    {
-      "pattern": "Please tell the ___ that I am allergic, and pork stays off that plate too.",
-      "example": "Please tell the kitchen that I am allergic, and pork stays off that plate too.",
-      "glossYue": "話畀廚房知。",
-      "answer": "kitchen",
-      "choices": [
-        "kitchen",
-        "peanut",
-        "egg"
+        "vegetarian",
+        "allergic"
       ]
     }
   ],
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想講對花生過敏。你點講？",
+      "promptYue": "你想講對花生敏感。你點講？",
       "choices": [
-        "I am allergic to peanuts, and I also eat no pork with this meal here.",
-        "Could I have a vegetarian option, and can you use a separate plate for me?",
-        "I will tell the kitchen, and the vegetarian plate will have no pork in it."
+        "Hello, I'm allergic to peanuts, and I don't eat pork during this whole dinner order.",
+        "No, egg is completely fine. Does the hot fried rice have peanuts inside it too?",
+        "Do those hot vegetarian noodles have any pork hidden inside them during the dinner rush?"
       ],
       "answer": 0,
-      "explain": "講 allergic to peanuts。"
+      "explain": "講 allergic。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "allergic",
-        "to",
-        "peanuts"
+        "peanut",
+        "oil"
       ],
       "answer": [
-        "allergic",
-        "to",
-        "peanuts"
+        "peanut",
+        "oil"
       ]
     }
   ],
   "roleplay": {
     "you": "ana",
-    "intro": "你講食物敏感。同 Mira 講花生同素食。可以講：allergic、vegetarian。",
+    "intro": "你同 Mira 講敏感。可以講：egg、peanut。",
     "turns": [
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "Are you allergic to peanuts only, or is egg also a problem in this dish?",
+        "line": "Okay. Is egg also a serious problem, even sitting on top of that peanut allergy?",
         "audio": "assets/audio/lines/r11-l2.mp3",
         "audioSlow": "assets/audio/lines/r11-l2-slow.mp3",
-        "expect": "Is there any egg in it, and can the kitchen keep peanuts away from me?",
+        "expect": "No, egg is completely fine. Does the hot fried rice have peanuts inside it too?",
         "keywords": [
           "egg",
-          "kitchen"
+          "peanuts"
         ],
         "modelAudio": "assets/audio/lines/r11-l3.mp3",
         "modelSlow": "assets/audio/lines/r11-l3-slow.mp3"
@@ -257,13 +255,13 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "The kitchen can keep that nut out, and there is no egg in this dish.",
+        "line": "Yes, that rice has peanut oil in the pan. I'd suggest vegetarian noodles instead though.",
         "audio": "assets/audio/lines/r11-l4.mp3",
         "audioSlow": "assets/audio/lines/r11-l4-slow.mp3",
-        "expect": "Could I have a vegetarian option, and can you use a separate plate for me?",
+        "expect": "Do those hot vegetarian noodles have any pork hidden inside them during the dinner rush?",
         "keywords": [
           "vegetarian",
-          "separate"
+          "pork"
         ],
         "modelAudio": "assets/audio/lines/r11-l5.mp3",
         "modelSlow": "assets/audio/lines/r11-l5-slow.mp3"
@@ -271,13 +269,13 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "A vegetarian option is ready now, and the separate plate is clean for you here.",
+        "line": "No, they're fully vegetarian. I'll ask the kitchen staff to use one separate clean pan.",
         "audio": "assets/audio/lines/r11-l6.mp3",
         "audioSlow": "assets/audio/lines/r11-l6-slow.mp3",
-        "expect": "Please tell the kitchen that I am allergic, and pork stays off that plate too.",
+        "expect": "Thank you very much. Please tell the head chef that I am allergic to peanuts.",
         "keywords": [
-          "kitchen",
-          "pork"
+          "allergic",
+          "peanuts"
         ],
         "modelAudio": "assets/audio/lines/r11-l7.mp3",
         "modelSlow": "assets/audio/lines/r11-l7-slow.mp3"
@@ -287,52 +285,52 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for the nut you cannot eat.",
-      "lemma": "peanut-noun",
+      "prompt": "Listen once and pick the word you hear for a body reaction to a food.",
+      "lemma": "allergic-adj",
       "choices": [
-        "peanut",
-        "egg",
-        "pork"
+        "allergic",
+        "vegetarian",
+        "separate"
       ],
       "answer": 0
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for a meat-free choice.",
+      "prompt": "Listen once and pick the word you hear for a dish with no meat.",
       "lemma": "vegetarian-adj",
       "choices": [
-        "kitchen",
+        "peanut",
         "vegetarian",
-        "egg"
+        "pork"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "You say 'I eat no pork.' What does pork mean?",
+      "prompt": "You say 'allergic to peanuts'. What does peanut mean?",
       "choices": [
-        "豬肉",
         "花生",
+        "豬肉",
         "蛋"
       ],
       "answer": 0
     },
     {
       "type": "meaning",
-      "prompt": "You say 'Please tell the kitchen.' What does kitchen mean?",
+      "prompt": "You say 'I don't eat pork'. What does pork mean?",
       "choices": [
-        "分開",
         "素食",
-        "廚房"
+        "廚房",
+        "豬肉"
       ],
       "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "Which word means the food is kept apart?",
+      "prompt": "Which word means the pans are not shared?",
       "choices": [
-        "pork",
         "egg",
+        "kitchen",
         "separate"
       ],
       "answer": 2,
@@ -341,6 +339,6 @@
   ],
   "shadow": {
     "lineId": "r11-l1",
-    "hint": "I am allergic to peanuts, and I also eat no pork with this meal here."
+    "hint": "Hello, I'm allergic to peanuts, and I don't eat pork during this whole dinner order."
   }
 }

@@ -3,8 +3,8 @@
   "unit": "J",
   "titleYue": "首飾刻字",
   "titleEn": "Engraving a gift",
-  "canDoYue": "你識講刻字、名首字母、日期、字體、字數上限、手續費同三日後取，並核對串法。",
-  "canDoEn": "Ask for an engraving with initials and a date, choose a plain font within the character limit, and check the spelling before a three-day fee.",
+  "canDoYue": "你識講刻結婚日期同首字母 G 同 M，十四個字超咗十二個，普通字體免費，核對刻字，簽表，三日後取。",
+  "canDoEn": "Engrave a wedding date with initials G and M, drop the dots so fourteen characters fit the twelve-character limit, choose a free plain font, check the engraving text, sign the form, and collect it in three days.",
   "minutes": 12,
   "hero": "assets/art/lessons/j16.webp",
   "cast": [
@@ -58,166 +58,166 @@
       "id": "j16-l1",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "I would like one short engraving of our wedding date on this silver bracelet as a gift.",
-      "glossYue": "我想喺呢條銀手鏈刻一段短嘅結婚日期，當禮物。",
+      "text": "I'd like an engraving of our wedding date inside this short silver bracelet as a small gift.",
+      "glossYue": "我想喺呢隻短銀手鏈入面刻結婚日期，當一份小禮物。",
       "audio": "assets/audio/lines/j16-l1.mp3",
       "audioSlow": "assets/audio/lines/j16-l1-slow.mp3",
-      "say": "I would like one short engraving of our wedding date on this silver bracelet as a gift.",
+      "say": "I'd like an engraving of our wedding date inside this short silver bracelet as a small gift.",
       "hideGloss": false
     },
     {
       "id": "j16-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "We can add that engraving for you, and each initial must fit the character limit here.",
-      "glossYue": "我哋可以幫你加刻字，每個名首字母都要符合呢度嘅字數上限。",
+      "text": "Sure, we can fit up to twelve characters on it. What is the wedding date please?",
+      "glossYue": "可以，最多十二個字。結婚日期係幾多？",
       "audio": "assets/audio/lines/j16-l2.mp3",
       "audioSlow": "assets/audio/lines/j16-l2-slow.mp3",
-      "say": "We can add that engraving for you, and each initial must fit the character limit here.",
+      "say": "Sure, we can fit up to twelve characters on it. What is the wedding date please?",
       "hideGloss": false
     },
     {
       "id": "j16-l3",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Can you please use a plain font for each initial, and is there an extra fee?",
-      "glossYue": "可唔可以用工整字體刻每個名首字母，有冇額外手續費？",
+      "text": "The date is the twelfth of June in 2021. Can you add our initials G and M?",
+      "glossYue": "日期係二零二一年六月十二號。可唔可以加我哋嘅首字母 G 同 M？",
       "audio": "assets/audio/lines/j16-l3.mp3",
       "audioSlow": "assets/audio/lines/j16-l3-slow.mp3",
-      "say": "Can you please use a plain font for each initial, and is there an extra fee?",
+      "say": "The date is the twelfth of June in 2021. Can you add our initials G and M?",
       "hideGloss": false
     },
     {
       "id": "j16-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The plain font is free of any charge, and the extra fee starts after twelve characters.",
-      "glossYue": "工整字體唔使加錢，超過十二個字先收額外手續費。",
+      "text": "Yes, putting 12.06.2021 beside initials G and M makes fourteen characters, which is two over that limit.",
+      "glossYue": "12.06.2021 再加首字母 G 同 M 係十四個字，超咗上限兩個。",
       "audio": "assets/audio/lines/j16-l4.mp3",
       "audioSlow": "assets/audio/lines/j16-l4-slow.mp3",
-      "say": "The plain font is free of any charge, and the extra fee starts after twelve characters.",
-      "hideGloss": true
+      "say": "Yes, putting 12.06.2021 beside initials G and M makes fourteen characters, which is two over that limit.",
+      "hideGloss": false
     },
     {
       "id": "j16-l5",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Please check the spelling of that date before you cut the small engraving into the metal.",
-      "glossYue": "刻落金屬之前，請先檢查嗰個日期嘅串法。",
+      "text": "Then just the date and the initials without any dots, please. Is there an extra fee?",
+      "glossYue": "咁就淨係日期同首字母，唔好有點。有冇額外手續費？",
       "audio": "assets/audio/lines/j16-l5.mp3",
       "audioSlow": "assets/audio/lines/j16-l5-slow.mp3",
-      "say": "Please check the spelling of that date before you cut the small engraving into the metal.",
-      "hideGloss": true
+      "say": "Then just the date and the initials without any dots, please. Is there an extra fee?",
+      "hideGloss": false
     },
     {
       "id": "j16-l6",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "I will check the spelling with you first, and the engraving is ready in three days.",
-      "glossYue": "我先同你核對串法，刻字三日後可以取。",
+      "text": "A plain font is completely free of charge. A script font costs fifty dollars extra then.",
+      "glossYue": "普通字體完全免費。手寫體要額外五十蚊。",
       "audio": "assets/audio/lines/j16-l6.mp3",
       "audioSlow": "assets/audio/lines/j16-l6-slow.mp3",
-      "say": "I will check the spelling with you first, and the engraving is ready in three days.",
-      "hideGloss": true
+      "say": "A plain font is completely free of charge. A script font costs fifty dollars extra then.",
+      "hideGloss": false
     },
     {
       "id": "j16-l7",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Will the fee stay the same if the spelling is right and the font stays plain?",
-      "glossYue": "如果串法啱，字體又保持工整，手續費會唔會一樣？",
+      "text": "Plain is fine for me. Can I check the engraving text before you cut it in?",
+      "glossYue": "普通字體就得。切之前可唔可以核對刻字內容？",
       "audio": "assets/audio/lines/j16-l7.mp3",
       "audioSlow": "assets/audio/lines/j16-l7-slow.mp3",
-      "say": "Will the fee stay the same if the spelling is right and the font stays plain?",
-      "hideGloss": true
+      "say": "Plain is fine for me. Can I check the engraving text before you cut it in?",
+      "hideGloss": false
     },
     {
       "id": "j16-l8",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The fee stays the same for you, and three days is enough when the spelling is right.",
-      "glossYue": "手續費維持一樣，串法啱嘅話三日就夠。",
+      "text": "Of course you can check it. Please sign this form, and it is ready in three days.",
+      "glossYue": "當然可以核對。請簽呢張表格，三日後可以取。",
       "audio": "assets/audio/lines/j16-l8.mp3",
       "audioSlow": "assets/audio/lines/j16-l8-slow.mp3",
-      "say": "The fee stays the same for you, and three days is enough when the spelling is right.",
-      "hideGloss": true
+      "say": "Of course you can check it. Please sign this form, and it is ready in three days.",
+      "hideGloss": false
     }
   ],
   "understand": [
     {
-      "prompt": "I would like one short engraving of our wedding date on this silver bracelet as a gift. 呢句即係點？",
+      "prompt": "The date is the twelfth of June in 2021. Can you add our initials G and M? 即係問緊咩？",
       "choices": [
-        "想喺手鏈刻結婚日期當禮物",
-        "唔係刻字，想改大戒指",
-        "想問刻字三日後先落單"
-      ],
-      "answer": 0,
-      "explain": "engraving 係刻字。date 係日期。"
-    },
-    {
-      "prompt": "Can you please use a plain font for each initial, and is there an extra fee? 即係問緊咩？",
-      "choices": [
-        "問字數上限係咪十二",
-        "問可唔可以用工整字體，有冇額外手續費",
-        "問串法啱唔啱"
+        "問刻字三日後取",
+        "日期係六月十二，想加首字母",
+        "問字體幾多錢"
       ],
       "answer": 1,
-      "explain": "font 係字體。fee 係手續費。"
+      "explain": "initial 係首字母。date 係日期。"
     },
     {
-      "prompt": "Will the fee stay the same if the spelling is right and the font stays plain? 即係問緊咩？",
+      "prompt": "Yes, putting 12.06.2021 beside initials G and M makes fourteen characters, which is two over that limit. 呢句即係點？",
       "choices": [
-        "問刻字內容係咪日期",
-        "問名首字母放唔放得落",
-        "問串法啱同字體工整，手續費會唔會一樣"
+        "十四個字，超咗字數上限兩個",
+        "普通字體要五十蚊",
+        "三日後先知道字數"
+      ],
+      "answer": 0,
+      "explain": "character limit 係字數上限。"
+    },
+    {
+      "prompt": "Of course you can check it. Please sign this form, and it is ready in three days. 呢句即係點？",
+      "choices": [
+        "要改字體",
+        "手續費五十蚊",
+        "可以核對刻字，簽表，三日後取"
       ],
       "answer": 2,
-      "explain": "spelling 係串法。fee 係手續費。"
+      "explain": "fee 係手續費。"
     }
   ],
   "chunks": [
     {
-      "pattern": "I would like one short ___ of our wedding date on this silver bracelet as a gift.",
-      "example": "I would like one short engraving of our wedding date on this silver bracelet as a gift.",
-      "glossYue": "想刻結婚日期。",
+      "pattern": "I'd like an ___ of our wedding date inside this short silver bracelet as a small gift.",
+      "example": "I'd like an engraving of our wedding date inside this short silver bracelet as a small gift.",
+      "glossYue": "我想刻結婚日期。",
       "answer": "engraving",
       "choices": [
         "engraving",
-        "font",
-        "fee"
+        "initial",
+        "font"
       ]
     },
     {
-      "pattern": "Can you please use a plain ___ for each initial, and is there an extra fee?",
-      "example": "Can you please use a plain font for each initial, and is there an extra fee?",
-      "glossYue": "用工整字體。",
+      "pattern": "Then just the date and the ___ without any dots, please. Is there an extra fee?",
+      "example": "Then just the date and the initials without any dots, please. Is there an extra fee?",
+      "glossYue": "唔好有點。",
+      "answer": "initials",
+      "choices": [
+        "initials",
+        "engraving",
+        "spelling"
+      ]
+    },
+    {
+      "pattern": "A plain ___ is completely free of charge. A script font costs fifty dollars extra then.",
+      "example": "A plain font is completely free of charge. A script font costs fifty dollars extra then.",
+      "glossYue": "普通字體免費。",
       "answer": "font",
       "choices": [
         "font",
-        "spelling",
-        "date"
-      ]
-    },
-    {
-      "pattern": "I will check the ___ with you first, and the engraving is ready in three days.",
-      "example": "I will check the spelling with you first, and the engraving is ready in three days.",
-      "glossYue": "先核對串法。",
-      "answer": "spelling",
-      "choices": [
-        "spelling",
         "fee",
-        "initial"
+        "date"
       ]
     }
   ],
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想刻結婚日期。你點講？",
+      "promptYue": "你想講刻結婚日期。你點講？",
       "choices": [
-        "I would like one short engraving of our wedding date on this silver bracelet as a gift.",
-        "Can you please use a plain font for each initial, and is there an extra fee?",
-        "Will the fee stay the same if the spelling is right and the font stays plain?"
+        "I'd like an engraving of our wedding date inside this short silver bracelet as a small gift.",
+        "Then just the date and the initials without any dots, please. Is there an extra fee?",
+        "Plain is fine for me. Can I check the engraving text before you cut it in?"
       ],
       "answer": 0,
       "explain": "講 engraving。"
@@ -226,29 +226,29 @@
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "character",
-        "limit"
+        "plain",
+        "font"
       ],
       "answer": [
-        "character",
-        "limit"
+        "plain",
+        "font"
       ]
     }
   ],
   "roleplay": {
     "you": "gus",
-    "intro": "你刻字。同 Ida 講字體同手續費。可以講：engraving、font。",
+    "intro": "你同 Ida 刻結婚日期。可以講：date、initials。",
     "turns": [
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "We can add that engraving for you, and each initial must fit the character limit here.",
+        "line": "Sure, we can fit up to twelve characters on it. What is the wedding date please?",
         "audio": "assets/audio/lines/j16-l2.mp3",
         "audioSlow": "assets/audio/lines/j16-l2-slow.mp3",
-        "expect": "Can you please use a plain font for each initial, and is there an extra fee?",
+        "expect": "The date is the twelfth of June in 2021. Can you add our initials G and M?",
         "keywords": [
-          "font",
-          "fee"
+          "date",
+          "initials"
         ],
         "modelAudio": "assets/audio/lines/j16-l3.mp3",
         "modelSlow": "assets/audio/lines/j16-l3-slow.mp3"
@@ -256,13 +256,13 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "The plain font is free of any charge, and the extra fee starts after twelve characters.",
+        "line": "Yes, putting 12.06.2021 beside initials G and M makes fourteen characters, which is two over that limit.",
         "audio": "assets/audio/lines/j16-l4.mp3",
         "audioSlow": "assets/audio/lines/j16-l4-slow.mp3",
-        "expect": "Please check the spelling of that date before you cut the small engraving into the metal.",
+        "expect": "Then just the date and the initials without any dots, please. Is there an extra fee?",
         "keywords": [
-          "spelling",
-          "date"
+          "date",
+          "fee"
         ],
         "modelAudio": "assets/audio/lines/j16-l5.mp3",
         "modelSlow": "assets/audio/lines/j16-l5-slow.mp3"
@@ -270,13 +270,13 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "I will check the spelling with you first, and the engraving is ready in three days.",
+        "line": "A plain font is completely free of charge. A script font costs fifty dollars extra then.",
         "audio": "assets/audio/lines/j16-l6.mp3",
         "audioSlow": "assets/audio/lines/j16-l6-slow.mp3",
-        "expect": "Will the fee stay the same if the spelling is right and the font stays plain?",
+        "expect": "Plain is fine for me. Can I check the engraving text before you cut it in?",
         "keywords": [
-          "fee",
-          "spelling"
+          "engraving",
+          "check"
         ],
         "modelAudio": "assets/audio/lines/j16-l7.mp3",
         "modelSlow": "assets/audio/lines/j16-l7-slow.mp3"
@@ -297,41 +297,41 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for the style of the letters.",
-      "lemma": "font-noun",
+      "prompt": "Listen once and pick the word you hear for the first letters of a name.",
+      "lemma": "initial-noun",
       "choices": [
         "date",
-        "font",
+        "initial",
         "spelling"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "You say 'Each initial must fit.' What does initial mean?",
+      "prompt": "You say 'a plain font'. What does font mean?",
       "choices": [
         "手續費",
         "日期",
-        "名首字母"
+        "字體"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "You say 'The character limit is twelve.' What does character limit mean?",
+      "prompt": "You say 'the character limit'. What does character limit mean?",
       "choices": [
-        "字體",
-        "字數上限",
-        "刻字"
+        "刻字",
+        "字數",
+        "串法"
       ],
       "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "Which word means you look at the letters of the date?",
+      "prompt": "Which word means the letters of a name written the right way?",
       "choices": [
         "spelling",
-        "font",
+        "engraving",
         "fee"
       ],
       "answer": 0,
@@ -340,6 +340,6 @@
   ],
   "shadow": {
     "lineId": "j16-l1",
-    "hint": "I would like one short engraving of our wedding date on this silver bracelet as a gift."
+    "hint": "I'd like an engraving of our wedding date inside this short silver bracelet as a small gift."
   }
 }

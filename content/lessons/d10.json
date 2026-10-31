@@ -3,8 +3,8 @@
   "unit": "D",
   "titleYue": "召的士",
   "titleEn": "Calling a taxi app",
-  "canDoYue": "你識講遲到、上車站、車牌、中途改目的地、用卡付同埋攞收據。",
-  "canDoEn": "Say you are running late, give the pick-up point and plate number, change the destination, pay by card, and keep the receipt.",
+  "canDoYue": "你識講遲五分鐘、大門上車、車牌 MX 42 17、白色豐田、喺應用程式改目的地、用卡畀錢，收據用電郵。",
+  "canDoEn": "Say you are five minutes late, meet Ray at the main door, read plate MX 42 17 on a white Toyota, change the destination in the app, pay by card, and get the receipt by email.",
   "minutes": 12,
   "hero": "assets/art/lessons/d10.webp",
   "cast": [
@@ -58,197 +58,197 @@
       "id": "d10-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I am running late now, and my taxi pick-up point is the hotel door.",
-      "glossYue": "我而家遲到，的士上車站係酒店門口。",
+      "text": "Hi Ray, I'm running about five minutes late for the taxi. Can you still wait?",
+      "glossYue": "Ray，我叫的士遲咗大約五分鐘。你可唔可以等埋？",
       "audio": "assets/audio/lines/d10-l1.mp3",
       "audioSlow": "assets/audio/lines/d10-l1-slow.mp3",
-      "say": "I am running late now, and my taxi pick-up point is the hotel door.",
+      "say": "Hi Ray, I'm running about five minutes late for the taxi. Can you still wait?",
       "hideGloss": false
     },
     {
       "id": "d10-l2",
       "speaker": "ray",
       "speakerLabel": "Ray",
-      "text": "I see the pick-up point, and the plate number is blue seven four two.",
-      "glossYue": "我見到上車站，車牌係藍七四二。",
+      "text": "No problem. I'll still wait at the pick-up point beside the main front door.",
+      "glossYue": "冇問題。我會喺大門旁邊嘅上車點等你。",
       "audio": "assets/audio/lines/d10-l2.mp3",
       "audioSlow": "assets/audio/lines/d10-l2-slow.mp3",
-      "say": "I see the pick-up point, and the plate number is blue seven four two.",
+      "say": "No problem. I'll still wait at the pick-up point beside the main front door.",
       "hideGloss": false
     },
     {
       "id": "d10-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can we change the destination on the way, and may I pay by card please?",
-      "glossYue": "可唔可以中途改目的地，同埋用卡付？",
+      "text": "Thanks a lot. What's your plate number, and which colour car should I look for?",
+      "glossYue": "多謝。你車牌幾多，我要搵咩顏色嘅車？",
       "audio": "assets/audio/lines/d10-l3.mp3",
       "audioSlow": "assets/audio/lines/d10-l3-slow.mp3",
-      "say": "Can we change the destination on the way, and may I pay by card please?",
+      "say": "Thanks a lot. What's your plate number, and which colour car should I look for?",
       "hideGloss": false
     },
     {
       "id": "d10-l4",
       "speaker": "ray",
       "speakerLabel": "Ray",
-      "text": "Yes we can change that destination now, and card payment is fine for you here.",
-      "glossYue": "而家可以改目的地，用卡付都得。",
+      "text": "The plate number is MX 42 17, and the car is a white Toyota beside that front door.",
+      "glossYue": "車牌係 MX 42 17，白色豐田，就喺大門旁邊。",
       "audio": "assets/audio/lines/d10-l4.mp3",
       "audioSlow": "assets/audio/lines/d10-l4-slow.mp3",
-      "say": "Yes we can change that destination now, and card payment is fine for you here.",
+      "say": "The plate number is MX 42 17, and the car is a white Toyota beside that front door.",
       "hideGloss": true
     },
     {
       "id": "d10-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can you please send me a written receipt on my phone after that card payment?",
-      "glossYue": "可唔可以將書面收據送到我部電話，卡付之後？",
+      "text": "Thanks. Can we change the destination to the airport instead of the hotel lobby please?",
+      "glossYue": "多謝。可唔可以將目的地由酒店大堂改去機場？",
       "audio": "assets/audio/lines/d10-l5.mp3",
       "audioSlow": "assets/audio/lines/d10-l5-slow.mp3",
-      "say": "Can you please send me a written receipt on my phone after that card payment?",
+      "say": "Thanks. Can we change the destination to the airport instead of the hotel lobby please?",
       "hideGloss": true
     },
     {
       "id": "d10-l6",
       "speaker": "ray",
       "speakerLabel": "Ray",
-      "text": "Your receipt is saved on this phone, and the plate is blue seven four two.",
-      "glossYue": "收據存在呢部電話，車牌係藍七四二。",
+      "text": "Sure. Just change the destination in the app and the new fare will update automatically.",
+      "glossYue": "可以。你喺應用程式改目的地，新車費會自動更新。",
       "audio": "assets/audio/lines/d10-l6.mp3",
       "audioSlow": "assets/audio/lines/d10-l6-slow.mp3",
-      "say": "Your receipt is saved on this phone, and the plate is blue seven four two.",
+      "say": "Sure. Just change the destination in the app and the new fare will update automatically.",
       "hideGloss": true
     },
     {
       "id": "d10-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will wait at the hotel pick-up point until the blue car arrives there.",
-      "glossYue": "我會喺酒店上車站等，直至藍色車到。",
+      "text": "Can I pay by card when we arrive, and will I get a receipt after?",
+      "glossYue": "到埗可唔可以用卡畀錢，之後有冇收據？",
       "audio": "assets/audio/lines/d10-l7.mp3",
       "audioSlow": "assets/audio/lines/d10-l7-slow.mp3",
-      "say": "I will wait at the hotel pick-up point until the blue car arrives there.",
+      "say": "Can I pay by card when we arrive, and will I get a receipt after?",
       "hideGloss": true
     },
     {
       "id": "d10-l8",
       "speaker": "ray",
       "speakerLabel": "Ray",
-      "text": "Please watch for the blue car at the door, and the receipt stays on your phone.",
-      "glossYue": "請留意門口藍色車，收據會留喺你部電話。",
+      "text": "Yes, card is fine, and the receipt will be emailed after the whole ride ends.",
+      "glossYue": "可以，用卡得。成程完咗收據會電郵畀你。",
       "audio": "assets/audio/lines/d10-l8.mp3",
       "audioSlow": "assets/audio/lines/d10-l8-slow.mp3",
-      "say": "Please watch for the blue car at the door, and the receipt stays on your phone.",
+      "say": "Yes, card is fine, and the receipt will be emailed after the whole ride ends.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "I am running late now, and my taxi pick-up point is the hotel door. 呢句即係點？",
+      "prompt": "Hi Ray, I'm running about five minutes late for the taxi. Can you still wait? 即係問緊咩？",
       "choices": [
-        "遲到，上車站係酒店門口",
-        "已經到目的地",
-        "收據唔見咗"
-      ],
-      "answer": 0,
-      "explain": "running late 係遲到。pick-up point 係上車站。"
-    },
-    {
-      "prompt": "Can we change the destination on the way, and may I pay by card please? 即係問緊咩？",
-      "choices": [
-        "問車牌係咪藍七四二",
-        "問可唔可以改目的地，用卡付",
-        "問收據留喺邊"
+        "問車牌",
+        "遲到五分鐘，問可唔可以等",
+        "問收據電郵"
       ],
       "answer": 1,
-      "explain": "destination 係目的地。card 係卡。"
+      "explain": "running late 係遲到。"
     },
     {
-      "prompt": "Can you please send me a written receipt on my phone after that card payment? 即係問緊咩？",
+      "prompt": "The plate number is MX 42 17, and the car is a white Toyota beside that front door. 呢句即係點？",
       "choices": [
-        "問上車站係咪酒店",
-        "問可唔可以改目的地",
-        "問收據可唔可以送到電話"
+        "車牌 MX 42 17，白色豐田",
+        "目的地改去機場",
+        "收據存咗喺電話"
+      ],
+      "answer": 0,
+      "explain": "plate number 係車牌。"
+    },
+    {
+      "prompt": "Yes, card is fine, and the receipt will be emailed after the whole ride ends. 呢句即係點？",
+      "choices": [
+        "目的地車費唔會更新",
+        "要現金唔係用卡",
+        "用卡得，收據會電郵"
       ],
       "answer": 2,
-      "explain": "receipt 係收據。phone 係電話。"
+      "explain": "receipt 係收據。"
     }
   ],
   "chunks": [
     {
-      "pattern": "I am ___ now, and my taxi pick-up point is the hotel door.",
-      "example": "I am running late now, and my taxi pick-up point is the hotel door.",
-      "glossYue": "我而家遲到。",
-      "answer": "running late",
+      "pattern": "Hi Ray, I'm ___ about five minutes late for the taxi. Can you still wait?",
+      "example": "Hi Ray, I'm running about five minutes late for the taxi. Can you still wait?",
+      "glossYue": "我遲咗五分鐘。",
+      "answer": "running",
       "choices": [
-        "running late",
-        "plate number",
+        "running",
+        "plate",
         "receipt"
       ]
     },
     {
-      "pattern": "I see the pick-up point, and the ___ is blue seven four two.",
-      "example": "I see the pick-up point, and the plate number is blue seven four two.",
-      "glossYue": "車牌係藍七四二。",
-      "answer": "plate number",
+      "pattern": "The ___ number is MX 42 17, and the car is a white Toyota beside that front door.",
+      "example": "The plate number is MX 42 17, and the car is a white Toyota beside that front door.",
+      "glossYue": "車牌係 MX 42 17。",
+      "answer": "plate",
       "choices": [
-        "plate number",
+        "plate",
         "destination",
         "receipt"
       ]
     },
     {
-      "pattern": "Can we change the ___ on the way, and may I pay by card please?",
-      "example": "Can we change the destination on the way, and may I pay by card please?",
-      "glossYue": "改目的地。",
+      "pattern": "Thanks. Can we change the ___ to the airport instead of the hotel lobby please?",
+      "example": "Thanks. Can we change the destination to the airport instead of the hotel lobby please?",
+      "glossYue": "改去機場。",
       "answer": "destination",
       "choices": [
         "destination",
-        "receipt",
-        "taxi"
+        "plate",
+        "card"
       ]
     }
   ],
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想講上車站。你點講？",
+      "promptYue": "你想講遲咗五分鐘。你點講？",
       "choices": [
-        "I am running late now, and my taxi pick-up point is the hotel door.",
-        "Can we change the destination on the way, and may I pay by card please?",
-        "Can you please send me a written receipt on my phone after that card payment?"
+        "Hi Ray, I'm running about five minutes late for the taxi. Can you still wait?",
+        "Thanks a lot. What's your plate number, and which colour car should I look for?",
+        "Thanks. Can we change the destination to the airport instead of the hotel lobby please?"
       ],
       "answer": 0,
-      "explain": "講 pick-up point。"
+      "explain": "講 running late。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "pick-up",
-        "point"
+        "plate",
+        "number"
       ],
       "answer": [
-        "pick-up",
-        "point"
+        "plate",
+        "number"
       ]
     }
   ],
   "roleplay": {
     "you": "tom",
-    "intro": "你召的士。同 Ray 講上車站同收據。可以講：late、receipt。",
+    "intro": "你同 Ray 坐的士。可以講：plate、destination。",
     "turns": [
       {
         "partner": "Ray",
         "partnerId": "ray",
-        "line": "I see the pick-up point, and the plate number is blue seven four two.",
+        "line": "No problem. I'll still wait at the pick-up point beside the main front door.",
         "audio": "assets/audio/lines/d10-l2.mp3",
         "audioSlow": "assets/audio/lines/d10-l2-slow.mp3",
-        "expect": "Can we change the destination on the way, and may I pay by card please?",
+        "expect": "Thanks a lot. What's your plate number, and which colour car should I look for?",
         "keywords": [
-          "destination",
-          "card"
+          "plate",
+          "number"
         ],
         "modelAudio": "assets/audio/lines/d10-l3.mp3",
         "modelSlow": "assets/audio/lines/d10-l3-slow.mp3"
@@ -256,13 +256,13 @@
       {
         "partner": "Ray",
         "partnerId": "ray",
-        "line": "Yes we can change that destination now, and card payment is fine for you here.",
+        "line": "The plate number is MX 42 17, and the car is a white Toyota beside that front door.",
         "audio": "assets/audio/lines/d10-l4.mp3",
         "audioSlow": "assets/audio/lines/d10-l4-slow.mp3",
-        "expect": "Can you please send me a written receipt on my phone after that card payment?",
+        "expect": "Thanks. Can we change the destination to the airport instead of the hotel lobby please?",
         "keywords": [
-          "receipt",
-          "phone"
+          "destination",
+          "airport"
         ],
         "modelAudio": "assets/audio/lines/d10-l5.mp3",
         "modelSlow": "assets/audio/lines/d10-l5-slow.mp3"
@@ -270,13 +270,13 @@
       {
         "partner": "Ray",
         "partnerId": "ray",
-        "line": "Your receipt is saved on this phone, and the plate is blue seven four two.",
+        "line": "Sure. Just change the destination in the app and the new fare will update automatically.",
         "audio": "assets/audio/lines/d10-l6.mp3",
         "audioSlow": "assets/audio/lines/d10-l6-slow.mp3",
-        "expect": "I will wait at the hotel pick-up point until the blue car arrives there.",
+        "expect": "Can I pay by card when we arrive, and will I get a receipt after?",
         "keywords": [
-          "pick-up",
-          "point"
+          "card",
+          "receipt"
         ],
         "modelAudio": "assets/audio/lines/d10-l7.mp3",
         "modelSlow": "assets/audio/lines/d10-l7-slow.mp3"
@@ -286,60 +286,60 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the phrase you hear for the place the car meets you.",
-      "lemma": "pickup-point-phrase",
+      "prompt": "Listen once and pick the phrase you hear for the letters and digits on a car.",
+      "lemma": "plate-number-phrase",
       "choices": [
+        "plate number",
         "pick-up point",
-        "receipt",
-        "destination"
+        "running late"
       ],
       "answer": 0
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the phrase you hear for the code on the car.",
-      "lemma": "plate-number-phrase",
+      "prompt": "Listen once and pick the word you hear for the paper that shows you paid.",
+      "lemma": "receipt-noun",
       "choices": [
-        "running late",
-        "plate number",
-        "receipt"
+        "destination",
+        "receipt",
+        "taxi"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "You say 'I am running late.' What does running late mean?",
+      "prompt": "You say 'late for the taxi'. What does taxi mean?",
       "choices": [
         "車牌",
-        "遲到",
+        "的士",
         "收據"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "You say 'May I pay by card?' What does card mean?",
+      "prompt": "You say 'change the destination'. What does destination mean?",
       "choices": [
-        "目的地",
-        "的士",
-        "卡"
+        "上車站",
+        "遲到",
+        "目的地"
       ],
       "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "Which word means the place you are going?",
+      "prompt": "Which phrase means you will arrive after the agreed time?",
       "choices": [
-        "destination",
-        "receipt",
-        "taxi"
+        "running late",
+        "plate number",
+        "pick-up point"
       ],
       "answer": 0,
-      "explain": "destination 係目的地。"
+      "explain": "running late 係遲到。"
     }
   ],
   "shadow": {
     "lineId": "d10-l1",
-    "hint": "I am running late now, and my taxi pick-up point is the hotel door."
+    "hint": "Hi Ray, I'm running about five minutes late for the taxi. Can you still wait?"
   }
 }

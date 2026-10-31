@@ -1,7 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { Mouth, mouthsFor } from "./components/Mouth";
 import { ArtImg, preloadArt } from "./art";
 import { CAST_LABEL, asset, isLessonOpen, lessonById, lexById } from "./data";
+import heroStyle from "../../content/art-style-heroes.json";
 import {
   absAsset,
   audioSnapshot,
@@ -107,13 +108,6 @@ function Player({ lesson }: { lesson: Lesson }) {
   const sheetRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    preloadArt([
-      asset(lesson.hero),
-      ...lesson.cast.map((id) => asset(`assets/art/refs/${id}.webp`)),
-    ]);
-  }, [lesson]);
-
-  useEffect(() => {
     stopAudio();
     sheetRef.current?.scrollTo(0, 0);
   }, [beat, sub]);
@@ -165,10 +159,25 @@ function Player({ lesson }: { lesson: Lesson }) {
 
   const nxtForHero = lesson.next ? lessonById[lesson.next] : undefined;
   const heroPath = beat === 11 ? (nxtForHero?.hero || "") : lesson.hero;
+  const heroKey = (heroPath.split("/").pop() || "").replace(".webp", "");
+  const heroFocus = (heroStyle.focus as Record<string, string>)[heroKey] || "center 30%";
+  preloadArt([
+    asset(lesson.hero),
+    ...lesson.cast.map((id) => asset(`assets/art/refs/${id}.webp`)),
+    ...(nxtForHero?.hero ? [asset(nxtForHero.hero)] : []),
+  ]);
 
   return (
     <div className="lesson">
-      <div className={heroPath ? "hero" : "hero plain"} data-beat={beat}>
+      <link rel="preload" as="image" href={asset(lesson.hero)} />
+      {lesson.cast.map((id) => (
+        <link key={id} rel="preload" as="image" href={asset(`assets/art/refs/${id}.webp`)} />
+      ))}
+      <div
+        className={heroPath ? "hero" : "hero plain"}
+        data-beat={beat}
+        style={{ "--hero-focus": heroFocus } as CSSProperties}
+      >
         {heroPath ? <ArtImg src={asset(heroPath)} alt="" width={900} height={1200} fill /> : null}
       </div>
       <div className="lesson-top">
@@ -700,7 +709,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪六十九課你行完啦。到期嘅卡會喺練習等你。</p>
+        <p className="lede">呢輪七十二課你行完啦。到期嘅卡會喺練習等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );
