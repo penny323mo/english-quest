@@ -1,0 +1,337 @@
+{
+  "id": "T20",
+  "unit": "T",
+  "titleYue": "轉機安檢同搵路",
+  "titleEn": "A connecting-flight security check",
+  "canDoYue": "你識再過安檢、拎出手提電腦同液體、問閘口同接駁車點行。",
+  "canDoEn": "Ask security to rescreen a laptop and a liquid, then find the shuttle to the gate.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t20.webp",
+  "cast": [
+    "tom",
+    "kim"
+  ],
+  "cefr": "B2",
+  "lemmas": [
+    "security-noun",
+    "laptop-noun",
+    "liquid-noun",
+    "belt-noun",
+    "gate-noun",
+    "shuttle-noun"
+  ],
+  "next": "J23",
+  "dialogue": [
+    {
+      "id": "t20-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "After the delay we changed terminals, and security asked me to take the laptop out of the bag again.",
+      "glossYue": "轉咗客運大樓，安檢要我再喺袋入面拎出部手提電腦。",
+      "audio": "assets/audio/lines/t20-l1.mp3",
+      "audioSlow": "assets/audio/lines/t20-l1-slow.mp3",
+      "say": "After the delay we changed terminals, and security asked me to take the laptop out of the bag again.",
+      "hideGloss": false
+    },
+    {
+      "id": "t20-l2",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Please put the liquid in the tray, and the belt can come off before you step through security.",
+      "glossYue": "液體放喺盤度，過閘之前腰帶可以除低。",
+      "audio": "assets/audio/lines/t20-l2.mp3",
+      "audioSlow": "assets/audio/lines/t20-l2-slow.mp3",
+      "say": "Please put the liquid in the tray, and the belt can come off before you step through security.",
+      "hideGloss": false
+    },
+    {
+      "id": "t20-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Which way is the gate from here, and does the blue shuttle go straight ahead after security?",
+      "glossYue": "閘口點去？藍色接駁車係咪安檢之後直行？",
+      "audio": "assets/audio/lines/t20-l3.mp3",
+      "audioSlow": "assets/audio/lines/t20-l3-slow.mp3",
+      "say": "Which way is the gate from here, and does the blue shuttle go straight ahead after security?",
+      "hideGloss": false
+    },
+    {
+      "id": "t20-l4",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "The gate is past the shuttle stop, and I can walk with you as far as the sign.",
+      "glossYue": "閘口喺接駁車站後面，我可以陪你行到指示牌。",
+      "audio": "assets/audio/lines/t20-l4.mp3",
+      "audioSlow": "assets/audio/lines/t20-l4-slow.mp3",
+      "say": "The gate is past the shuttle stop, and I can walk with you as far as the sign.",
+      "hideGloss": true
+    },
+    {
+      "id": "t20-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Can I keep the laptop in the bag if the liquid stays under our small limit?",
+      "glossYue": "液體唔超過我哋個細限額，手提電腦可唔可以留喺袋？",
+      "audio": "assets/audio/lines/t20-l5.mp3",
+      "audioSlow": "assets/audio/lines/t20-l5-slow.mp3",
+      "say": "Can I keep the laptop in the bag if the liquid stays under our small limit?",
+      "hideGloss": true
+    },
+    {
+      "id": "t20-l6",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes. The laptop can stay in the bag, and the liquid is under the limit we set.",
+      "glossYue": "可以。手提電腦留喺袋，液體冇超過我哋定嘅限額。",
+      "audio": "assets/audio/lines/t20-l6.mp3",
+      "audioSlow": "assets/audio/lines/t20-l6-slow.mp3",
+      "say": "Yes. The laptop can stay in the bag, and the liquid is under the limit we set.",
+      "hideGloss": true
+    },
+    {
+      "id": "t20-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "How long is the walk from this shuttle stop to the gate if I miss the first one?",
+      "glossYue": "如果趕唔上第一班，由呢個接駁車站行去閘口要幾耐？",
+      "audio": "assets/audio/lines/t20-l7.mp3",
+      "audioSlow": "assets/audio/lines/t20-l7-slow.mp3",
+      "say": "How long is the walk from this shuttle stop to the gate if I miss the first one?",
+      "hideGloss": true
+    },
+    {
+      "id": "t20-l8",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "The walk from the shuttle is about six minutes, and the gate stays open until we board.",
+      "glossYue": "由接駁車行過去大約六分鐘，閘口會開到我哋登機。",
+      "audio": "assets/audio/lines/t20-l8.mp3",
+      "audioSlow": "assets/audio/lines/t20-l8-slow.mp3",
+      "say": "The walk from the shuttle is about six minutes, and the gate stays open until we board.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "After the delay we changed terminals, and security asked me to take the laptop out of the bag again. 呢句即係點？",
+      "choices": [
+        "安檢要再拎出手提電腦",
+        "按金要二百蚊",
+        "吊墜要再估價"
+      ],
+      "answer": 0,
+      "explain": "security 係安檢。laptop 係手提電腦。"
+    },
+    {
+      "prompt": "Which way is the gate from here, and does the blue shuttle go straight ahead after security? 即係問緊咩？",
+      "choices": [
+        "問證書喺邊",
+        "問閘口同接駁車點去",
+        "問按金幾多"
+      ],
+      "answer": 1,
+      "explain": "gate 係閘口。shuttle 係接駁車。"
+    },
+    {
+      "prompt": "How long is the walk from this shuttle stop to the gate if I miss the first one? 即係問緊咩？",
+      "choices": [
+        "問過敏可唔可以改碟",
+        "問估價收幾多",
+        "問行去閘口要幾耐"
+      ],
+      "answer": 2,
+      "explain": "how long 係問要幾耐。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "After the delay we changed terminals, and ___ asked me to take the laptop out of the bag again.",
+      "example": "After the delay we changed terminals, and security asked me to take the laptop out of the bag again.",
+      "glossYue": "安檢要我拎出手提電腦。",
+      "answer": "security",
+      "choices": [
+        "security",
+        "Friday",
+        "receipt"
+      ]
+    },
+    {
+      "pattern": "Please put the ___ in the tray, and the belt can come off before you step through security.",
+      "example": "Please put the liquid in the tray, and the belt can come off before you step through security.",
+      "glossYue": "液體放喺盤度。",
+      "answer": "liquid",
+      "choices": [
+        "liquid",
+        "towel",
+        "passport"
+      ]
+    },
+    {
+      "pattern": "Which way is the ___ from here, and does the blue shuttle go straight ahead after security?",
+      "example": "Which way is the gate from here, and does the blue shuttle go straight ahead after security?",
+      "glossYue": "閘口點去？",
+      "answer": "gate",
+      "choices": [
+        "gate",
+        "deadline",
+        "oyster"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "t20-l1",
+    "hint": "After the delay we changed terminals, and security asked me to take the laptop out of the bag again."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你話安檢要你再拎出手提電腦。你點講？",
+      "choices": [
+        "After the delay we changed terminals, and security asked me to take the laptop out of the bag again.",
+        "Can I keep the laptop in the bag if the liquid stays under our small limit?",
+        "How long is the walk from this shuttle stop to the gate if I miss the first one?"
+      ],
+      "answer": 0,
+      "explain": "講 security 同 laptop。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "where",
+        "is",
+        "the",
+        "gate"
+      ],
+      "answer": [
+        "where",
+        "is",
+        "the",
+        "gate"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你趕轉機。同 Kim 問安檢同閘口。可以講：laptop、gate。",
+    "turns": [
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "Please put the liquid in the tray, and the belt can come off before you step through security.",
+        "audio": "assets/audio/lines/t20-l2.mp3",
+        "audioSlow": "assets/audio/lines/t20-l2-slow.mp3",
+        "expect": "Which way is the gate from here, and does the blue shuttle go straight ahead after security?",
+        "keywords": [
+          "gate",
+          "shuttle"
+        ],
+        "modelAudio": "assets/audio/lines/t20-l3.mp3",
+        "modelSlow": "assets/audio/lines/t20-l3-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "The gate is past the shuttle stop, and I can walk with you as far as the sign.",
+        "audio": "assets/audio/lines/t20-l4.mp3",
+        "audioSlow": "assets/audio/lines/t20-l4-slow.mp3",
+        "expect": "Can I keep the laptop in the bag if the liquid stays under our small limit?",
+        "keywords": [
+          "laptop",
+          "liquid"
+        ],
+        "modelAudio": "assets/audio/lines/t20-l5.mp3",
+        "modelSlow": "assets/audio/lines/t20-l5-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "Yes. The laptop can stay in the bag, and the liquid is under the limit we set.",
+        "audio": "assets/audio/lines/t20-l6.mp3",
+        "audioSlow": "assets/audio/lines/t20-l6-slow.mp3",
+        "expect": "How long is the walk from this shuttle stop to the gate if I miss the first one?",
+        "keywords": [
+          "shuttle",
+          "gate"
+        ],
+        "modelAudio": "assets/audio/lines/t20-l7.mp3",
+        "modelSlow": "assets/audio/lines/t20-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "security-noun",
+      "choices": [
+        "Friday",
+        "security",
+        "receipt"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "laptop-noun",
+      "choices": [
+        "passport",
+        "laptop",
+        "deadline"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "After the delay we changed terminals, and security asked me to take the laptop out of the bag again. 呢句入面，邊個意思先啱？",
+      "choices": [
+        "窗",
+        "安檢",
+        "鐘"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "Please put the liquid in the tray, and the belt can come off before you step through security. 呢句入面，邊個意思先啱？",
+      "choices": [
+        "窗",
+        "液體",
+        "鐘"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "prompt": "Please put the liquid in the tray, and the ___ can come off before you step through security. 呢句入面，邊個字先啱？",
+      "choices": [
+        "Friday",
+        "receipt",
+        "belt"
+      ],
+      "answer": 2
+    }
+  ],
+  "sound": {
+    "ipa": "/eɪ/",
+    "title": "gate 入面嗰個音",
+    "note": "gate 有 /eɪ/。belt 冇。",
+    "pairs": [
+      {
+        "a": "gate-noun",
+        "b": "belt-noun"
+      },
+      {
+        "a": "laptop-noun",
+        "b": "liquid-noun"
+      }
+    ],
+    "drill": [
+      "gate-noun",
+      "belt-noun",
+      "laptop-noun",
+      "shuttle-noun"
+    ]
+  }
+}

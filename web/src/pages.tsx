@@ -39,8 +39,9 @@ const GLYPHS: Record<string, string> = {
   T1: "plane", T2: "pass", T3: "bed", T4: "taxi", T5: "pin", T6: "bed", T7: "bag", T8: "pass", T9: "plane", T10: "bag", T11: "pin", T12: "bed", T13: "cross", T14: "plane", T15: "bed", T17: "pass",
   W1: "phone", W2: "mail", W3: "meet", W4: "coffee", W5: "phone", W6: "card", W7: "phone", W8: "meet", W9: "mail", W10: "mail", W11: "mail", W12: "meet", W13: "meet",
   D1: "cross", D2: "coin", D3: "home", D4: "phone", D5: "box", D6: "cross", D7: "scissors", D8: "wrench", D9: "card", D10: "taxi", D11: "coin", D12: "cross", D13: "cross", D14: "box",
-  J14: "ring", J15: "ring", J16: "gem", J17: "necklace", J18: "spark", J19: "gem", J20: "gem", J21: "gem", J22: "gem",
-  R14: "box", R15: "plate", R16: "fork", T16: "taxi", T18: "pass", T19: "bed",
+  J14: "ring", J15: "ring", J16: "gem", J17: "necklace", J18: "spark", J19: "gem", J20: "gem", J21: "gem", J22: "gem", J23: "gem",
+  R14: "box", R15: "plate", R16: "fork", R17: "seat", T16: "taxi", T18: "pass", T19: "bed", T20: "pass",
+  W14: "meet",
 };
 
 function Glyph({ kind }: { kind: string }) {
@@ -228,6 +229,7 @@ export function Review() {
   );
   const [index, setIndex] = useState(0);
   const [show, setShow] = useState(false);
+  const [done, setDone] = useState(0);
   const card = due[index];
   const item = card ? lexById[card.id] : undefined;
   const waiting = Object.keys(cards).length - due.length;
@@ -235,6 +237,7 @@ export function Review() {
   function grade(rating: Grade) {
     if (!card) return;
     gradeCard(card.id, rating);
+    setDone((count) => count + 1);
     setShow(false);
     setIndex(0);
   }
@@ -249,7 +252,9 @@ export function Review() {
         <p className="note">
           {Object.keys(cards).length === 0
             ? "完成一課之後，生字會出現喺呢度。"
-            : `而家冇到期嘅卡。${waiting > 0 ? `仲有 ${waiting} 張未到時間。` : ""}`}
+            : done > 0 && due.length === 0
+              ? `今次溫完 ${done} 張。${waiting > 0 ? `仲有 ${waiting} 張未到時間。` : ""}`
+              : `而家冇到期嘅卡。${waiting > 0 ? `仲有 ${waiting} 張未到時間。` : ""}`}
         </p>
       )}
       {item && (

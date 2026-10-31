@@ -89,7 +89,11 @@
     "j21",
     "d14",
     "r16",
-    "w13"
+    "w13",
+    "t20",
+    "j23",
+    "r17",
+    "w14"
   ],
   "pending": [],
   "focus": {
@@ -182,7 +186,11 @@
     "j21": "center 30%",
     "d14": "center 30%",
     "r16": "center 30%",
-    "w13": "center 30%"
+    "w13": "center 30%",
+    "t20": "center 30%",
+    "j23": "center 30%",
+    "r17": "center 30%",
+    "w14": "center 30%"
   },
   "people": {
     "tom": "Adult man, short black hair, beige jacket, coral scarf, head and shoulders.",
@@ -855,6 +863,34 @@
         "kim"
       ],
       "look": "Hotel complaint follow-up (酒店投訴跟進)"
+    },
+    "t20": {
+      "cast": [
+        "tom",
+        "kim"
+      ],
+      "look": "Connecting-flight security and the shuttle to the gate (轉機安檢同搵路)"
+    },
+    "j23": {
+      "cast": [
+        "gus",
+        "ida"
+      ],
+      "look": "Insurance appraisal for a damaged pendant (保險估價同證書)"
+    },
+    "r17": {
+      "cast": [
+        "tom",
+        "mira"
+      ],
+      "look": "Private dining room with a window table (私房訂座同按金)"
+    },
+    "w14": {
+      "cast": [
+        "tom",
+        "nina"
+      ],
+      "look": "Deadline and agenda review with a slide on screen (期限同議程)"
     }
   }
 }

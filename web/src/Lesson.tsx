@@ -735,7 +735,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪九十課你行完啦。到期嘅卡會喺練習等你。</p>
+        <p className="lede">呢輪九十四課你行完啦。到期嘅卡會喺練習等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );
@@ -876,6 +876,7 @@ function SpeakBox({
           {recording ? "停錄音" : "錄音，同模範比較"}
         </button>
       )}
+      <p className="mic-state">{micError ? "咪未開" : recording || listening ? "錄音緊" : userUrl || transcript ? "可以比較" : "未錄"}</p>
       {recording && (
         <div className="wave" aria-hidden="true">
           <span /><span /><span /><span /><span />
@@ -897,6 +898,15 @@ function SpeakBox({
         </p>
       )}
       <div className="row-btns">
+        {(userUrl || transcript) && (
+          <button className="btn ghost" type="button" onClick={() => {
+            setUserUrl((prev) => {
+              if (prev) URL.revokeObjectURL(prev);
+              return "";
+            });
+            setTranscript("");
+          }}>再錄一次</button>
+        )}
         {userUrl && (
           <button className="btn quiet" type="button" onClick={() => void new Audio(userUrl).play()}>聽我</button>
         )}

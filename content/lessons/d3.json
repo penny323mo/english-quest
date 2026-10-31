@@ -30,88 +30,88 @@
       "id": "d3-l1",
       "speaker": "lea",
       "speakerLabel": "Lea",
-      "text": "Good morning. I can show you this furnished flat here, and the lease covers the monthly water bill.",
+      "text": "Good morning. I can show this furnished flat, and the lease covers water.",
       "glossYue": "早晨。我可以帶你喺度睇呢間有傢俬嘅單位，租約包每月水費。",
       "audio": "assets/audio/lines/d3-l1.mp3",
       "audioSlow": "assets/audio/lines/d3-l1-slow.mp3",
-      "say": "Good morning. I can show you this furnished flat here, and the lease covers the monthly water bill.",
+      "say": "Good morning. I can show this furnished flat, and the lease covers water.",
       "hideGloss": false
     },
     {
       "id": "d3-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "How much is the monthly rent please, and is the water included with the other utilities here?",
+      "text": "How much is the rent, and is water included with the utilities?",
       "glossYue": "請問月租幾多，水費有冇連埋呢度其他水電煤？",
       "audio": "assets/audio/lines/d3-l2.mp3",
       "audioSlow": "assets/audio/lines/d3-l2-slow.mp3",
-      "say": "How much is the monthly rent please, and is the water included with the other utilities here?",
+      "say": "How much is the rent, and is water included with the utilities?",
       "hideGloss": true
     },
     {
       "id": "d3-l3",
       "speaker": "lea",
       "speakerLabel": "Lea",
-      "text": "The monthly rent is due on the first day, and the deposit is one full month's rent.",
+      "text": "The rent is due on the first, and the deposit is one month.",
       "glossYue": "月租每個月一號交，按金係一個月租。",
       "audio": "assets/audio/lines/d3-l3.mp3",
       "audioSlow": "assets/audio/lines/d3-l3-slow.mp3",
-      "say": "The monthly rent is due on the first day, and the deposit is one full month's rent.",
+      "say": "The rent is due on the first, and the deposit is one month.",
       "hideGloss": true
     },
     {
       "id": "d3-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The landlord allows a short viewing here, and the tenant can ask about the noisy street outside.",
+      "text": "The landlord allows a short viewing, and the tenant can ask.",
       "glossYue": "業主可以畀你睇樓，租客可以問外面條街嘈唔嘈。",
       "audio": "assets/audio/lines/d3-l4.mp3",
       "audioSlow": "assets/audio/lines/d3-l4-slow.mp3",
-      "say": "The landlord allows a short viewing here, and the tenant can ask about the noisy street outside.",
+      "say": "The landlord allows a short viewing, and the tenant can ask.",
       "hideGloss": true
     },
     {
       "id": "d3-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "If I decide today, I can sign the lease, and the agency fee is on the contract.",
+      "text": "If I decide today, I sign the lease and pay the agency fee.",
       "glossYue": "如果我今日決定，我可以簽租約，代理費寫喺合約度。",
       "audio": "assets/audio/lines/d3-l5.mp3",
       "audioSlow": "assets/audio/lines/d3-l5-slow.mp3",
-      "say": "If I decide today, I can sign the lease, and the agency fee is on the contract.",
+      "say": "If I decide today, I sign the lease and pay the agency fee.",
       "hideGloss": false
     },
     {
       "id": "d3-l6",
       "speaker": "lea",
       "speakerLabel": "Lea",
-      "text": "The flat is furnished already, and the utilities stay in the tenant's name until the written notice ends.",
+      "text": "The flat is furnished, and utilities stay in the tenant's name.",
       "glossYue": "單位已經有傢俬，水電煤會用租客個名，直至書面通知完。",
       "audio": "assets/audio/lines/d3-l6.mp3",
       "audioSlow": "assets/audio/lines/d3-l6-slow.mp3",
-      "say": "The flat is furnished already, and the utilities stay in the tenant's name until the written notice ends.",
+      "say": "The flat is furnished, and utilities stay in the tenant's name.",
       "hideGloss": true
     },
     {
       "id": "d3-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Please read the contract with me, and tell me the notice period before I pay the deposit.",
+      "text": "Please read the contract and the notice before I pay the deposit.",
       "glossYue": "請同我睇份合約，交按金之前話我知通知期幾長。",
       "audio": "assets/audio/lines/d3-l7.mp3",
       "audioSlow": "assets/audio/lines/d3-l7-slow.mp3",
-      "say": "Please read the contract with me, and tell me the notice period before I pay the deposit.",
+      "say": "Please read the contract and the notice before I pay the deposit.",
       "hideGloss": true
     },
     {
       "id": "d3-l8",
       "speaker": "lea",
       "speakerLabel": "Lea",
-      "text": "If you sign the lease here, the landlord can give you the keys after the deposit clears.",
+      "text": "Sign the lease, and the landlord gives the keys after the deposit.",
       "glossYue": "如果你喺度簽租約，按金過咗數業主可以交鎖匙。",
       "audio": "assets/audio/lines/d3-l8.mp3",
       "audioSlow": "assets/audio/lines/d3-l8-slow.mp3",
-      "say": "If you sign the lease here, the landlord can give you the keys after the deposit clears.",
+      "say": "Sign the lease, and the landlord gives the keys after the deposit.",
       "hideGloss": true
     }
   ],
@@ -149,8 +149,8 @@
   ],
   "chunks": [
     {
-      "pattern": "How much is the monthly ___ please, and is the water included with the other utilities here?",
-      "example": "How much is the monthly rent please, and is the water included with the other utilities here?",
+      "pattern": "How much is the ___, and is water included with the utilities?",
+      "example": "How much is the rent, and is water included with the utilities?",
       "glossYue": "月⋯⋯幾多。",
       "answer": "rent",
       "choices": [
@@ -160,8 +160,8 @@
       ]
     },
     {
-      "pattern": "The monthly rent is due on the first day, and the ___ is one full month's rent.",
-      "example": "The monthly rent is due on the first day, and the deposit is one full month's rent.",
+      "pattern": "The rent is due on the first, and the ___ is one month.",
+      "example": "The rent is due on the first, and the deposit is one month.",
       "glossYue": "⋯⋯等於一個月。",
       "answer": "deposit",
       "choices": [
@@ -171,8 +171,8 @@
       ]
     },
     {
-      "pattern": "If I decide today, I can sign the ___, and the agency fee is on the contract.",
-      "example": "If I decide today, I can sign the lease, and the agency fee is on the contract.",
+      "pattern": "If I decide today, I sign the ___ and pay the agency fee.",
+      "example": "If I decide today, I sign the lease and pay the agency fee.",
       "glossYue": "我可以簽⋯⋯。",
       "answer": "lease",
       "choices": [
@@ -182,8 +182,8 @@
       ]
     },
     {
-      "pattern": "Please read the ___ with me, and tell me the notice period before I pay the deposit.",
-      "example": "Please read the contract with me, and tell me the notice period before I pay the deposit.",
+      "pattern": "Please read the ___ and the notice before I pay the deposit.",
+      "example": "Please read the contract and the notice before I pay the deposit.",
       "glossYue": "睇份⋯⋯。",
       "answer": "contract",
       "choices": [
@@ -195,14 +195,14 @@
   ],
   "shadow": {
     "lineId": "d3-l5",
-    "hint": "If I decide today, I can sign the lease, and the agency fee is on the contract."
+    "hint": "If I decide today, I sign the lease and pay the agency fee."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "代理講咗月租同按金。你點先答？",
       "choices": [
-        "If I decide today, I can sign the lease, and the agency fee is on the contract.",
+        "If I decide today, I sign the lease and pay the agency fee.",
         "Please hold the other line while I find Mei.",
         "The smaller size fits well."
       ],
@@ -233,10 +233,10 @@
       {
         "partner": "Lea",
         "partnerId": "lea",
-        "line": "Good morning. I can show you this furnished flat here, and the lease covers the monthly water bill.",
+        "line": "Good morning. I can show this furnished flat, and the lease covers water.",
         "audio": "assets/audio/lines/d3-l1.mp3",
         "audioSlow": "assets/audio/lines/d3-l1-slow.mp3",
-        "expect": "How much is the monthly rent please, and is the water included with the other utilities here?",
+        "expect": "How much is the rent, and is water included with the utilities?",
         "keywords": [
           "rent",
           "utilities"
@@ -247,10 +247,10 @@
       {
         "partner": "Lea",
         "partnerId": "lea",
-        "line": "The monthly rent is due on the first day, and the deposit is one full month's rent.",
+        "line": "The rent is due on the first, and the deposit is one month.",
         "audio": "assets/audio/lines/d3-l3.mp3",
         "audioSlow": "assets/audio/lines/d3-l3-slow.mp3",
-        "expect": "If I decide today, I can sign the lease, and the agency fee is on the contract.",
+        "expect": "If I decide today, I sign the lease and pay the agency fee.",
         "keywords": [
           "decide",
           "lease"
@@ -261,10 +261,10 @@
       {
         "partner": "Lea",
         "partnerId": "lea",
-        "line": "The flat is furnished already, and the utilities stay in the tenant's name until the written notice ends.",
+        "line": "The flat is furnished, and utilities stay in the tenant's name.",
         "audio": "assets/audio/lines/d3-l6.mp3",
         "audioSlow": "assets/audio/lines/d3-l6-slow.mp3",
-        "expect": "Please read the contract with me, and tell me the notice period before I pay the deposit.",
+        "expect": "Please read the contract and the notice before I pay the deposit.",
         "keywords": [
           "contract",
           "notice"
@@ -299,7 +299,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The monthly rent is due on the first day, and the deposit is one full month's rent.」，deposit 係咩意思？",
+      "prompt": "客人講「The rent is due on the first, and the deposit is one month.」，deposit 係咩意思？",
       "choices": [
         "租約",
         "業主",
@@ -309,7 +309,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「If I decide today, I can sign the lease, and the agency fee is on the contract.」，lease 係咩意思？",
+      "prompt": "客人講「If I decide today, I sign the lease and pay the agency fee.」，lease 係咩意思？",
       "choices": [
         "租約",
         "收據",

@@ -1,0 +1,14 @@
+You are a strict senior code reviewer. cd /workspace/sidequest/english-quest. Read /workspace/sidequest/english-quest/SPEC.md and review the code (round 50) at viewport 390px. Do NOT modify project files. Run node tests if present; do not launch browsers. Write a numbered review ordered CRITICAL/MAJOR/MINOR with file:line and concrete fix, with a first line 'VERDICT: SHIP' or 'VERDICT: NOT READY', to /workspace/sidequest/english-quest/reviews/orch-r50-grok.md. SHIP is FORBIDDEN while any CRITICAL/MAJOR from the previous review remains open, or while any item in the latest coder-audit.md under review/loop-*/ remains unfixed. Verify each item against the built app at 390px before VERDICT. Keep to ~15 minutes.
+
+Authoritative open audit (must re-verify every item): /workspace/sidequest/english-quest/review/loop-r48/coder-audit.md (plus loop-r49 if present)
+The human coder live audit is authoritative. The reviewer must NOT SHIP if any of #135–#143 or #145–#149 (or any newer open coder-audit item) remains. Also confirm:
+- #135 WordCard matches review/mockup-v1 03-word-card at 390: card container, glyph tile, POS chip, mint gloss panel, boxed 用法 + ⚠港式易錯, example cards with round play, dashed 更多 with chips + mini dialogue (top-priority style). Diff web/src/Vocab.tsx; if WordCard is unchanged it is NOT fixed.
+- #137/#146 no reply opens with "Yes."/"No." after a wh-question anywhere (grep content/lessons); T19/J22/W13/R16 read naturally
+- #136 every lesson-quiz MCQ has context and exactly one valid key
+- #143 ≥6 old lessons de-padded; neighbouring-lesson wpl delta check exists in tests and passes; new lessons within ±2 wpl of neighbours
+- #145 W8/W9 heroes are flat-vector house style, full-bleed (no uniform top/bottom bands), with chips still matching faces (#144 stays closed)
+- Round 50 adds 3 new scenario lessons (W14 + 2 more) on Path, CEFR non-decreasing
+- Deck tiles split 新字 vs 到期 with a daily new cap, consistent with the hub total
+
+WHEN COMPLETELY FINISHED, as your very last action, create the file /workspace/sidequest/english-quest/.orch/review-50.done containing the word DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/review-50.done

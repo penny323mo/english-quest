@@ -12,33 +12,44 @@ function deckById(id: string) {
   return decks.decks.find((deck) => deck.id === id);
 }
 
+const NEW_CAP = 10;
+
+function rankCard(id: string, cards: Record<string, StoredCard>) {
+  const card = cards[id];
+  if (card && isDue(card)) return 0;
+  if (!card) return 1;
+  return 2;
+}
+
 function dueFirst(lemmas: string[], cards: Record<string, StoredCard>) {
   return [...lemmas].sort((a, b) => {
-    const aDue = !cards[a] || isDue(cards[a]);
-    const bDue = !cards[b] || isDue(cards[b]);
-    if (aDue !== bDue) return aDue ? -1 : 1;
+    const delta = rankCard(a, cards) - rankCard(b, cards);
+    if (delta) return delta;
     return (cards[a]?.due || "").localeCompare(cards[b]?.due || "");
   });
 }
 
-function sessionCount(lemmas: string[], cards: Record<string, StoredCard>) {
-  const due = lemmas.filter((id) => !cards[id] || isDue(cards[id])).length;
-  const cap = Math.min(12, lemmas.length);
-  const floor = Math.min(8, cap);
-  if (due >= floor) return Math.min(cap, due);
-  return floor;
+function sessionQueue(lemmas: string[], cards: Record<string, StoredCard>) {
+  const ranked = dueFirst(lemmas, cards);
+  const due = ranked.filter((id) => cards[id] && isDue(cards[id]));
+  const fresh = ranked.filter((id) => !cards[id]);
+  const queue = due.slice(0, NEW_CAP);
+  if (queue.length < NEW_CAP) queue.push(...fresh.slice(0, NEW_CAP - queue.length));
+  return queue;
 }
 
 function statsFor(lemmas: string[], cards: Record<string, StoredCard>) {
   let due = 0;
+  let fresh = 0;
   let mastered = 0;
   for (const id of lemmas) {
     const card = cards[id];
-    if (!card || isDue(card)) due += 1;
+    if (card && isDue(card)) due += 1;
+    if (!card) fresh += 1;
     if (card && card.reps > 0 && !isDue(card)) mastered += 1;
   }
   const percent = lemmas.length ? Math.round((mastered / lemmas.length) * 100) : 0;
-  return { due, mastered, percent };
+  return { due, fresh, mastered, percent };
 }
 
 const DECK_GLYPH: Record<string, string> = {
@@ -81,7 +92,7 @@ export function VocabHub() {
         <img className="mascot" src={asset("assets/art/mascot-wave.webp")} alt="小燈" width={64} height={64} />
         <div>
           <h1 className="path-title">生字回顧</h1>
-          <p className="lede">按情境溫常用字。記得同再嚟只係排期，唔會扣分。</p>
+          <p className="lede">按情境溫常用字。仲未熟同識咗只係排期，唔會扣分。</p>
         </div>
       </div>
       <div className="due-cta">
@@ -99,7 +110,7 @@ export function VocabHub() {
             <a key={deck.id} className="deck-card" href={`#/vocab/${deck.id}`}>
               <span className="deck-ico"><DeckGlyph kind={DECK_GLYPH[deck.id] || "sun"} /></span>
               <h2>{deck.titleYue}</h2>
-              <p className="fine">{deck.lemmas.length} 字 · 到期 {stats.due}</p>
+              <p className="fine">{deck.lemmas.length} 字 · 到期 {stats.due} · 新字 {stats.fresh}</p>
               <span className="ring" aria-hidden="true"><i style={{ width: `${stats.percent}%` }} /></span>
             </a>
           );
@@ -125,64 +136,90 @@ export function VocabHub() {
   );
 }
 
-function WordCard({ item, openMore }: { item: LexItem; openMore: boolean }) {
+function WordCard({ item, openMore, glyph }: { item: LexItem; openMore: boolean; glyph: string }) {
   const examples = item.examples?.length
     ? item.examples
     : [{ en: item.example, yue: item.exampleYue, audio: item.audio, audioSlow: item.audioSlow }];
-  const shown = openMore ? examples : examples.slice(0, 2);
+  const shown = examples.slice(0, 2);
+  const extra = examples.slice(2);
   const hasUsage = Boolean(item.register || item.usageNotes || item.collocations.length || item.pitfallsYue);
   return (
-    <div className="stack">
-      <p className="eyebrow">{learnerEyebrow(item)}</p>
-      <h2 lang="en">{item.lemma}</h2>
-      <p className="ipa">{item.ipa}</p>
-      <div className="row-btns">
-        <button className="btn" type="button" onClick={() => playAsset(item.audio)}>聽</button>
-        <button className="btn ghost" type="button" onClick={() => playAsset(item.audioSlow)}>慢速</button>
+    <article className="word-card">
+      <div className="word-head">
+        <div className="word-tile" aria-hidden="true"><DeckGlyph kind={glyph} /></div>
+        <div className="word-id">
+          <h2 lang="en">{item.lemma}</h2>
+          <div className="word-meta">
+            <span className="word-pos">{learnerEyebrow(item)}</span>
+            <span className="ipa">{item.ipa}</span>
+            <button className="word-play" type="button" onClick={() => playAsset(item.audio)}>聽</button>
+            <button className="word-play slow" type="button" onClick={() => playAsset(item.audioSlow)}>慢速</button>
+          </div>
+        </div>
       </div>
-      <p>{item.glossYue}</p>
+      <div className="word-gloss">
+        <div>
+          <p className="k">廣東話意思</p>
+          <p className="v">{item.glossYue}</p>
+        </div>
+        <button className="word-play" type="button" onClick={() => playAsset(item.audio)} aria-label="聽廣東話意思">▶</button>
+      </div>
       {hasUsage && (
         <details className="usage" open>
           <summary>用法</summary>
-          {item.register && <p className="fine">場合：{item.register}</p>}
-          {item.usageNotes && <p className="note">{item.usageNotes}</p>}
+          {item.register && <p>語域：{item.register}</p>}
+          {item.usageNotes && <p>{item.usageNotes}</p>}
           {item.collocations.length > 0 && (
-            <p className="fine" lang="en">搭配：{item.collocations.join(" · ")}</p>
+            <ul>
+              {item.collocations.map((phrase) => <li key={phrase} lang="en">{phrase}</li>)}
+            </ul>
           )}
-          {item.pitfallsYue && <p className="note">{item.pitfallsYue}</p>}
+          {item.pitfallsYue && <p className="pit">⚠ 港式易錯：{item.pitfallsYue}</p>}
         </details>
       )}
-      {shown.map((example) => <ExampleRow key={example.en} example={example} />)}
-      {openMore && item.related && item.related.length > 0 && (
-        <p className="fine">
-          相關：
-          {item.related.map((id) => {
-            const related = lexById[id];
-            if (!related) return null;
-            return (
-              <a key={id} href={`#/word/${id}`} lang="en"> {related.lemma}</a>
-            );
-          })}
-        </p>
+      <div className="word-examples">
+        {shown.map((example) => <ExampleRow key={example.en} example={example} />)}
+      </div>
+      {openMore && (
+        <div className="word-more">
+          <p className="sum">更多</p>
+          {extra.map((example) => <ExampleRow key={example.en} example={example} />)}
+          {item.related && item.related.length > 0 && (
+            <div className="word-related">
+              {item.related.map((id) => {
+                const related = lexById[id];
+                if (!related) return null;
+                return <a key={id} className="word-chip" href={`#/word/${id}`} lang="en">{related.lemma}</a>;
+              })}
+            </div>
+          )}
+          {item.miniDialogue && item.miniDialogue.length > 0 && (
+            <div className="word-mini">
+              {item.miniDialogue.map((turn, index) => (
+                <p key={turn.en}>
+                  <span className="who">{index % 2 === 0 ? "甲" : "乙"}：</span>
+                  <span lang="en">{turn.en}</span>
+                  <span className="gloss"> {turn.yue}</span>
+                </p>
+              ))}
+            </div>
+          )}
+        </div>
       )}
-      {openMore && item.miniDialogue?.map((turn) => (
-        <p key={turn.en} className="lede">
-          <span lang="en">{turn.en}</span>
-          <span className="gloss"> {turn.yue}</span>
-        </p>
-      ))}
-    </div>
+    </article>
   );
 }
 
 function ExampleRow({ example }: { example: { en: string; yue: string; audio: string; audioSlow: string } }) {
   return (
-    <div className="stack">
-      <p lang="en">{example.en}</p>
-      <p className="gloss">{example.yue}</p>
-      <div className="row-btns">
-        <button className="btn quiet" type="button" onClick={() => playAsset(example.audio)}>聽例句</button>
-        <button className="btn ghost" type="button" onClick={() => playAsset(example.audioSlow)}>慢速</button>
+    <div className="word-ex">
+      <div>
+        <p className="en" lang="en">{example.en}</p>
+        <p className="yue">{example.yue}</p>
+      </div>
+      <div className="word-ex-play">
+        <button className="word-play" type="button" onClick={() => playAsset(example.audio)}>聽</button>
+        <button className="word-play slow" type="button" onClick={() => playAsset(example.audioSlow)}>慢速</button>
       </div>
     </div>
   );
@@ -195,7 +232,7 @@ export function VocabDeck({ deckId }: { deckId: string }) {
   const gradeCard = useStore((s) => s.gradeCard);
   const [session] = useState(() => {
     const cardsNow = useStore.getState().cards;
-    return deck ? dueFirst(deck.lemmas, cardsNow).slice(0, sessionCount(deck.lemmas, cardsNow)) : [];
+    return deck ? sessionQueue(deck.lemmas, cardsNow) : [];
   });
   const [index, setIndex] = useState(0);
   const [more, setMore] = useState(false);
@@ -228,12 +265,12 @@ export function VocabDeck({ deckId }: { deckId: string }) {
     <section className="screen stack">
       <a className="back" href="#/vocab">返生字</a>
       <p className="eyebrow">{deck.titleYue}</p>
-      <p className="kicker">{stats.percent}% · 到期 {stats.due}</p>
+      <p className="kicker">{stats.percent}% · 到期 {stats.due} · 新字 {stats.fresh}</p>
       {!item && <p className="note">今次 {session.length} 張溫完。到期嘅仍然會排喺前面。</p>}
       {item && (
         <>
           <p className="fine">{index + 1} / {session.length}</p>
-          <WordCard item={item} openMore={more} />
+          <WordCard item={item} openMore={more} glyph={DECK_GLYPH[deck.id] || "sun"} />
           <button className="btn ghost block" type="button" onClick={() => setMore((open) => !open)}>
             {more ? "收起" : "更多"}
           </button>
@@ -242,9 +279,9 @@ export function VocabDeck({ deckId }: { deckId: string }) {
           {markState ? (
             <button className="btn block" type="button" onClick={() => { setMarkState(null); setMore(false); setIndex((n) => n + 1); }}>下一張</button>
           ) : (
-            <div className="row-btns">
-              <button className="btn" type="button" onClick={() => mark(item.id, Rating.Good)}>記得</button>
-              <button className="btn ghost" type="button" onClick={() => mark(item.id, Rating.Again)}>再嚟</button>
+            <div className="row-btns word-foot">
+              <button className="btn ghost" type="button" onClick={() => mark(item.id, Rating.Again)}>仲未熟</button>
+              <button className="btn" type="button" onClick={() => mark(item.id, Rating.Good)}>識咗 ✓</button>
             </div>
           )}
         </>

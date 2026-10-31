@@ -38,77 +38,77 @@
       "id": "r9-l2",
       "speaker": "nori",
       "speakerLabel": "Nori",
-      "text": "Here is the full bill, and the service charge is included in the total.",
+      "text": "Here is the bill, and the service charge is included.",
       "glossYue": "呢張係完整帳單，服務費包喺總數入面。",
       "audio": "assets/audio/lines/r9-l2.mp3",
       "audioSlow": "assets/audio/lines/r9-l2-slow.mp3",
-      "say": "Here is the full bill, and the service charge is included in the total.",
+      "say": "Here is the bill, and the service charge is included.",
       "hideGloss": false
     },
     {
       "id": "r9-l3",
       "speaker": "eddy",
       "speakerLabel": "Eddy",
-      "text": "Could we split the bill so each of us gets a separate receipt?",
+      "text": "Could we split the bill and get a separate receipt?",
       "glossYue": "可唔可以分開埋單，每人一張收據？",
       "audio": "assets/audio/lines/r9-l3.mp3",
       "audioSlow": "assets/audio/lines/r9-l3-slow.mp3",
-      "say": "Could we split the bill so each of us gets a separate receipt?",
+      "say": "Could we split the bill and get a separate receipt?",
       "hideGloss": false
     },
     {
       "id": "r9-l4",
       "speaker": "nori",
       "speakerLabel": "Nori",
-      "text": "Yes, we can split it, and I will show you the two amounts on this copy.",
+      "text": "Yes, we can split it and show both amounts.",
       "glossYue": "可以分開，我會喺呢張單度顯示兩個數。",
       "audio": "assets/audio/lines/r9-l4.mp3",
       "audioSlow": "assets/audio/lines/r9-l4-slow.mp3",
-      "say": "Yes, we can split it, and I will show you the two amounts on this copy.",
+      "say": "Yes, we can split it and show both amounts.",
       "hideGloss": false
     },
     {
       "id": "r9-l5",
       "speaker": "eddy",
       "speakerLabel": "Eddy",
-      "text": "I will pay my separate amount with an Octopus card at the counter.",
+      "text": "I will pay my separate amount with an Octopus card.",
       "glossYue": "我用八達通喺櫃檯畀我嗰份。",
       "audio": "assets/audio/lines/r9-l5.mp3",
       "audioSlow": "assets/audio/lines/r9-l5-slow.mp3",
-      "say": "I will pay my separate amount with an Octopus card at the counter.",
+      "say": "I will pay my separate amount with an Octopus card.",
       "hideGloss": false
     },
     {
       "id": "r9-l6",
       "speaker": "nori",
       "speakerLabel": "Nori",
-      "text": "I can take that Octopus card when you are ready, then print a receipt.",
+      "text": "I can take that Octopus card and print a receipt.",
       "glossYue": "你準備好我就收八達通，然後印收據。",
       "audio": "assets/audio/lines/r9-l6.mp3",
       "audioSlow": "assets/audio/lines/r9-l6-slow.mp3",
-      "say": "I can take that Octopus card when you are ready, then print a receipt.",
+      "say": "I can take that Octopus card and print a receipt.",
       "hideGloss": true
     },
     {
       "id": "r9-l7",
       "speaker": "eddy",
       "speakerLabel": "Eddy",
-      "text": "There is a clear mistake on the bill, and that soup was never on our order.",
+      "text": "There is a mistake on the bill, and the soup was extra.",
       "glossYue": "帳單有個明顯錯，嗰碗湯我哋冇叫過。",
       "audio": "assets/audio/lines/r9-l7.mp3",
       "audioSlow": "assets/audio/lines/r9-l7-slow.mp3",
-      "say": "There is a clear mistake on the bill, and that soup was never on our order.",
+      "say": "There is a mistake on the bill, and the soup was extra.",
       "hideGloss": true
     },
     {
       "id": "r9-l8",
       "speaker": "nori",
       "speakerLabel": "Nori",
-      "text": "I will correct that mistake and bring the corrected bill before you pay.",
+      "text": "I will correct that mistake and bring the new bill.",
       "glossYue": "我會改好嗰個錯，付款之前將改好嘅帳單帶畀你。",
       "audio": "assets/audio/lines/r9-l8.mp3",
       "audioSlow": "assets/audio/lines/r9-l8-slow.mp3",
-      "say": "I will correct that mistake and bring the corrected bill before you pay.",
+      "say": "I will correct that mistake and bring the new bill.",
       "hideGloss": true
     }
   ],
@@ -124,7 +124,7 @@
       "explain": "bill 係帳單。"
     },
     {
-      "prompt": "Could we split the bill so each of us gets a separate receipt? 即係問緊咩？",
+      "prompt": "Could we split the bill and get a separate receipt? 即係問緊咩？",
       "choices": [
         "想一齊埋單，只要一張收據",
         "想問服務費，唔係分開",
@@ -134,7 +134,7 @@
       "explain": "split 係分開。"
     },
     {
-      "prompt": "There is a clear mistake on the bill, and that soup was never on our order. 呢句即係點？",
+      "prompt": "There is a mistake on the bill, and the soup was extra. 呢句即係點？",
       "choices": [
         "想用八達通改帳單",
         "帳單有錯，嗰碗湯唔係我哋叫嘅",
@@ -146,7 +146,7 @@
   ],
   "chunks": [
     {
-      "pattern": "Could we have the ___ for this table before we leave the restaurant?",
+      "pattern": "Could we have the ___ for this table before we leave?",
       "example": "Could we have the bill for this table before we leave?",
       "glossYue": "可唔可以攞帳單？",
       "answer": "bill",
@@ -157,8 +157,8 @@
       ]
     },
     {
-      "pattern": "Could we ___ the bill so each of us gets a separate receipt?",
-      "example": "Could we split the bill so each of us gets a separate receipt?",
+      "pattern": "Could we ___ the bill and get a separate receipt?",
+      "example": "Could we split the bill and get a separate receipt?",
       "glossYue": "可唔可以分開埋單？",
       "answer": "split",
       "choices": [
@@ -168,8 +168,8 @@
       ]
     },
     {
-      "pattern": "I will pay my separate amount with an ___ at the counter.",
-      "example": "I will pay my separate amount with an Octopus card at the counter.",
+      "pattern": "I will pay my separate amount with an ___.",
+      "example": "I will pay my separate amount with an Octopus card.",
       "glossYue": "我用八達通付款。",
       "answer": "Octopus card",
       "choices": [
@@ -181,16 +181,16 @@
   ],
   "shadow": {
     "lineId": "r9-l4",
-    "hint": "Yes, we can split it, and I will show you the two amounts on this copy."
+    "hint": "Yes, we can split it and show both amounts."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "你想分開埋單。你點講？",
       "choices": [
-        "Could we split the bill so each of us gets a separate receipt?",
+        "Could we split the bill and get a separate receipt?",
         "Could we have the bill for this table before we leave?",
-        "There is a clear mistake on the bill, and that soup was never on our order."
+        "There is a mistake on the bill, and the soup was extra."
       ],
       "answer": 0,
       "explain": "講 split 同 receipt。"
@@ -221,10 +221,10 @@
       {
         "partner": "Nori",
         "partnerId": "nori",
-        "line": "Here is the full bill, and the service charge is included in the total.",
+        "line": "Here is the bill, and the service charge is included.",
         "audio": "assets/audio/lines/r9-l2.mp3",
         "audioSlow": "assets/audio/lines/r9-l2-slow.mp3",
-        "expect": "Could we split the bill so each of us gets a separate receipt?",
+        "expect": "Could we split the bill and get a separate receipt?",
         "keywords": [
           "split",
           "receipt"
@@ -235,10 +235,10 @@
       {
         "partner": "Nori",
         "partnerId": "nori",
-        "line": "Yes, we can split it, and I will show you the two amounts on this copy.",
+        "line": "Yes, we can split it and show both amounts.",
         "audio": "assets/audio/lines/r9-l4.mp3",
         "audioSlow": "assets/audio/lines/r9-l4-slow.mp3",
-        "expect": "I will pay my separate amount with an Octopus card at the counter.",
+        "expect": "I will pay my separate amount with an Octopus card.",
         "keywords": [
           "Octopus",
           "pay"
@@ -249,10 +249,10 @@
       {
         "partner": "Nori",
         "partnerId": "nori",
-        "line": "I can take that Octopus card when you are ready, then print a receipt.",
+        "line": "I can take that Octopus card and print a receipt.",
         "audio": "assets/audio/lines/r9-l6.mp3",
         "audioSlow": "assets/audio/lines/r9-l6-slow.mp3",
-        "expect": "There is a clear mistake on the bill, and that soup was never on our order.",
+        "expect": "There is a mistake on the bill, and the soup was extra.",
         "keywords": [
           "mistake",
           "soup"
@@ -287,7 +287,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「Could we split the bill so each of us gets a separate receipt?」，split 係咩意思？",
+      "prompt": "你講「Could we split the bill and get a separate receipt?」，split 係咩意思？",
       "choices": [
         "收據",
         "分開",
@@ -297,7 +297,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "伙計講「Here is the full bill, and the service charge is included in the total.」，service charge 係咩意思？",
+      "prompt": "伙計講「Here is the bill, and the service charge is included.」，service charge 係咩意思？",
       "choices": [
         "八達通",
         "錯",

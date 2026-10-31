@@ -1,0 +1,337 @@
+{
+  "id": "R17",
+  "unit": "R",
+  "titleYue": "私房訂座同按金",
+  "titleEn": "A private-room booking",
+  "canDoYue": "你識改訂位、問窗邊位同按金、同埋話畀廚房知有人對果仁過敏。",
+  "canDoEn": "Change a reservation, ask the deposit for a private room, and report a nut allergy.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/r17.webp",
+  "cast": [
+    "tom",
+    "mira"
+  ],
+  "cefr": "B2",
+  "lemmas": [
+    "reservation-noun",
+    "window-noun",
+    "deposit-noun",
+    "allergy-noun"
+  ],
+  "next": "W14",
+  "dialogue": [
+    {
+      "id": "r17-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I would like to change the reservation to Saturday, and we need a quiet table by the window.",
+      "glossYue": "我想將訂位改到星期六，我哋要一張窗邊嘅靜枱。",
+      "audio": "assets/audio/lines/r17-l1.mp3",
+      "audioSlow": "assets/audio/lines/r17-l1-slow.mp3",
+      "say": "I would like to change the reservation to Saturday, and we need a quiet table by the window.",
+      "hideGloss": false
+    },
+    {
+      "id": "r17-l2",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "I can change that reservation for Saturday evening, and a window table is free at seven o'clock.",
+      "glossYue": "我可以改星期六晚嘅訂位，七點有張窗邊枱。",
+      "audio": "assets/audio/lines/r17-l2.mp3",
+      "audioSlow": "assets/audio/lines/r17-l2-slow.mp3",
+      "say": "I can change that reservation for Saturday evening, and a window table is free at seven o'clock.",
+      "hideGloss": false
+    },
+    {
+      "id": "r17-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "How much is the deposit if we keep the private room for three full hours after six?",
+      "glossYue": "六點之後私房再用足三個鐘，按金要幾多？",
+      "audio": "assets/audio/lines/r17-l3.mp3",
+      "audioSlow": "assets/audio/lines/r17-l3-slow.mp3",
+      "say": "How much is the deposit if we keep the private room for three full hours after six?",
+      "hideGloss": false
+    },
+    {
+      "id": "r17-l4",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "The deposit is two hundred dollars, and it holds the private room until seven on Saturday.",
+      "glossYue": "按金二百蚊，星期六會留住間私房直到七點。",
+      "audio": "assets/audio/lines/r17-l4.mp3",
+      "audioSlow": "assets/audio/lines/r17-l4-slow.mp3",
+      "say": "The deposit is two hundred dollars, and it holds the private room until seven on Saturday.",
+      "hideGloss": true
+    },
+    {
+      "id": "r17-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "One guest has a serious nut allergy. Can the kitchen keep nuts off all the shared dishes?",
+      "glossYue": "有位客人對果仁嚴重過敏。廚房可唔可以全部共享碟都唔放果仁？",
+      "audio": "assets/audio/lines/r17-l5.mp3",
+      "audioSlow": "assets/audio/lines/r17-l5-slow.mp3",
+      "say": "One guest has a serious nut allergy. Can the kitchen keep nuts off all the shared dishes?",
+      "hideGloss": true
+    },
+    {
+      "id": "r17-l6",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "The kitchen will keep nuts off those dishes, and I will note the allergy on the order.",
+      "glossYue": "廚房嗰幾碟唔會放果仁，我會喺單上記低過敏。",
+      "audio": "assets/audio/lines/r17-l6.mp3",
+      "audioSlow": "assets/audio/lines/r17-l6-slow.mp3",
+      "say": "The kitchen will keep nuts off those dishes, and I will note the allergy on the order.",
+      "hideGloss": true
+    },
+    {
+      "id": "r17-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could we move closer to the window if the deposit is paid and the room is ready?",
+      "glossYue": "按金畀咗同房間準備好，可唔可以搬近啲窗？",
+      "audio": "assets/audio/lines/r17-l7.mp3",
+      "audioSlow": "assets/audio/lines/r17-l7-slow.mp3",
+      "say": "Could we move closer to the window if the deposit is paid and the room is ready?",
+      "hideGloss": true
+    },
+    {
+      "id": "r17-l8",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "Yes. I can move you closer to the window, and the paid deposit stays on the booking.",
+      "glossYue": "可以。我可以幫你搬近窗，已付按金留喺訂座度。",
+      "audio": "assets/audio/lines/r17-l8.mp3",
+      "audioSlow": "assets/audio/lines/r17-l8-slow.mp3",
+      "say": "Yes. I can move you closer to the window, and the paid deposit stays on the booking.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "I would like to change the reservation to Saturday, and we need a quiet table by the window. 呢句即係點？",
+      "choices": [
+        "想改訂位又要窗邊",
+        "安檢要拎電腦",
+        "吊墜要估價"
+      ],
+      "answer": 0,
+      "explain": "reservation 係訂位。window 係窗。"
+    },
+    {
+      "prompt": "How much is the deposit if we keep the private room for three full hours after six? 即係問緊咩？",
+      "choices": [
+        "問證書收唔收相",
+        "問私房按金幾多",
+        "問閘口行幾耐"
+      ],
+      "answer": 1,
+      "explain": "deposit 係按金。"
+    },
+    {
+      "prompt": "One guest has a serious nut allergy. Can the kitchen keep nuts off all the shared dishes? 即係問緊咩？",
+      "choices": [
+        "問第二次估價幾錢",
+        "問接駁車去邊",
+        "問廚房可唔可以拿走果仁"
+      ],
+      "answer": 2,
+      "explain": "allergy 係過敏。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I would like to change the ___ to Saturday, and we need a quiet table by the window.",
+      "example": "I would like to change the reservation to Saturday, and we need a quiet table by the window.",
+      "glossYue": "改訂位，要窗邊。",
+      "answer": "reservation",
+      "choices": [
+        "reservation",
+        "Friday",
+        "receipt"
+      ]
+    },
+    {
+      "pattern": "How much is the ___ if we keep the private room for three full hours after six?",
+      "example": "How much is the deposit if we keep the private room for three full hours after six?",
+      "glossYue": "問按金幾多。",
+      "answer": "deposit",
+      "choices": [
+        "deposit",
+        "towel",
+        "passport"
+      ]
+    },
+    {
+      "pattern": "One guest has a serious nut ___. Can the kitchen keep nuts off all the shared dishes?",
+      "example": "One guest has a serious nut allergy. Can the kitchen keep nuts off all the shared dishes?",
+      "glossYue": "話有人對果仁過敏。",
+      "answer": "allergy",
+      "choices": [
+        "allergy",
+        "deadline",
+        "oyster"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "r17-l1",
+    "hint": "I would like to change the reservation to Saturday, and we need a quiet table by the window."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你話想改星期六訂位，要窗邊。你點講？",
+      "choices": [
+        "I would like to change the reservation to Saturday, and we need a quiet table by the window.",
+        "How much is the deposit if we keep the private room for three full hours after six?",
+        "One guest has a serious nut allergy. Can the kitchen keep nuts off all the shared dishes?"
+      ],
+      "answer": 0,
+      "explain": "講 reservation。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "a",
+        "table",
+        "by",
+        "the",
+        "window"
+      ],
+      "answer": [
+        "a",
+        "table",
+        "by",
+        "the",
+        "window"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你改訂位。同 Mira 問窗邊同按金。可以講：reservation、deposit。",
+    "turns": [
+      {
+        "partner": "Mira",
+        "partnerId": "mira",
+        "line": "I can change that reservation for Saturday evening, and a window table is free at seven o'clock.",
+        "audio": "assets/audio/lines/r17-l2.mp3",
+        "audioSlow": "assets/audio/lines/r17-l2-slow.mp3",
+        "expect": "How much is the deposit if we keep the private room for three full hours after six?",
+        "keywords": [
+          "deposit",
+          "room"
+        ],
+        "modelAudio": "assets/audio/lines/r17-l3.mp3",
+        "modelSlow": "assets/audio/lines/r17-l3-slow.mp3"
+      },
+      {
+        "partner": "Mira",
+        "partnerId": "mira",
+        "line": "The deposit is two hundred dollars, and it holds the private room until seven on Saturday.",
+        "audio": "assets/audio/lines/r17-l4.mp3",
+        "audioSlow": "assets/audio/lines/r17-l4-slow.mp3",
+        "expect": "One guest has a serious nut allergy. Can the kitchen keep nuts off all the shared dishes?",
+        "keywords": [
+          "allergy",
+          "nuts"
+        ],
+        "modelAudio": "assets/audio/lines/r17-l5.mp3",
+        "modelSlow": "assets/audio/lines/r17-l5-slow.mp3"
+      },
+      {
+        "partner": "Mira",
+        "partnerId": "mira",
+        "line": "The kitchen will keep nuts off those dishes, and I will note the allergy on the order.",
+        "audio": "assets/audio/lines/r17-l6.mp3",
+        "audioSlow": "assets/audio/lines/r17-l6-slow.mp3",
+        "expect": "Could we move closer to the window if the deposit is paid and the room is ready?",
+        "keywords": [
+          "window",
+          "deposit"
+        ],
+        "modelAudio": "assets/audio/lines/r17-l7.mp3",
+        "modelSlow": "assets/audio/lines/r17-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "reservation-noun",
+      "choices": [
+        "Friday",
+        "reservation",
+        "receipt"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "window-noun",
+      "choices": [
+        "passport",
+        "window",
+        "deadline"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "I would like to change the reservation to Saturday, and we need a quiet table by the window. 呢句入面，邊個意思先啱？",
+      "choices": [
+        "鐘",
+        "訂位",
+        "鞋"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "How much is the deposit if we keep the private room for three full hours after six? 呢句入面，邊個意思先啱？",
+      "choices": [
+        "窗",
+        "鞋",
+        "按金"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "prompt": "One guest has a serious nut ___. Can the kitchen keep nuts off all the shared dishes? 呢句入面，邊個字先啱？",
+      "choices": [
+        "Friday",
+        "receipt",
+        "allergy"
+      ],
+      "answer": 2
+    }
+  ],
+  "sound": {
+    "ipa": "/eɪ/",
+    "title": "table 入面嗰個音",
+    "note": "table 有 /eɪ/。window 冇。",
+    "pairs": [
+      {
+        "a": "reservation-noun",
+        "b": "window-noun"
+      },
+      {
+        "a": "deposit-noun",
+        "b": "allergy-noun"
+      }
+    ],
+    "drill": [
+      "reservation-noun",
+      "window-noun",
+      "deposit-noun",
+      "allergy-noun"
+    ]
+  }
+}

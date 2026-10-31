@@ -28,88 +28,88 @@
       "id": "t6-l1",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Good evening, this is Kim calling from the front desk, and how may I help you tonight?",
+      "text": "Good evening, this is Kim at the front desk. How may I help tonight?",
       "glossYue": "晚安，我係前台 Kim 打嚟，今晚有咩可以幫你？",
       "audio": "assets/audio/lines/t6-l1.mp3",
       "audioSlow": "assets/audio/lines/t6-l1-slow.mp3",
-      "say": "Good evening, this is Kim calling from the front desk, and how may I help you tonight?",
+      "say": "Good evening, this is Kim at the front desk. How may I help tonight?",
       "hideGloss": false
     },
     {
       "id": "t6-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "There seems to be very noisy air conditioning, and I barely slept in this room again.",
+      "text": "The air conditioning is very noisy, and I barely slept in this room.",
       "glossYue": "部冷氣似乎好嘈，我又喺呢間房幾乎瞓唔到。",
       "audio": "assets/audio/lines/t6-l2.mp3",
       "audioSlow": "assets/audio/lines/t6-l2-slow.mp3",
-      "say": "There seems to be very noisy air conditioning, and I barely slept in this room again.",
+      "say": "The air conditioning is very noisy, and I barely slept in this room.",
       "hideGloss": true
     },
     {
       "id": "t6-l3",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "I am sorry for the inconvenience, and I can send an engineer to the noisy room.",
+      "text": "I am sorry for the inconvenience, and I can send an engineer up.",
       "glossYue": "造成不便對唔住，我可以派工程師去嗰間嘈房。",
       "audio": "assets/audio/lines/t6-l3.mp3",
       "audioSlow": "assets/audio/lines/t6-l3-slow.mp3",
-      "say": "I am sorry for the inconvenience, and I can send an engineer to the noisy room.",
+      "say": "I am sorry for the inconvenience, and I can send an engineer up.",
       "hideGloss": true
     },
     {
       "id": "t6-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Would it be possible to move us to a quiet room, with extra towels and a blanket?",
+      "text": "Could we move to a quiet room, with extra towels and a blanket?",
       "glossYue": "可唔可以搬我哋去靜啲嘅房，再加多條毛巾同一張被？",
       "audio": "assets/audio/lines/t6-l4.mp3",
       "audioSlow": "assets/audio/lines/t6-l4-slow.mp3",
-      "say": "Would it be possible to move us to a quiet room, with extra towels and a blanket?",
+      "say": "Could we move to a quiet room, with extra towels and a blanket?",
       "hideGloss": true
     },
     {
       "id": "t6-l5",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "A calmer space is available upstairs, and I will bring the towels and the blanket now.",
+      "text": "A calmer room is free upstairs, and I will bring the towels now.",
       "glossYue": "樓上有個靜啲嘅位，我而家帶毛巾同被嚟。",
       "audio": "assets/audio/lines/t6-l5.mp3",
       "audioSlow": "assets/audio/lines/t6-l5-slow.mp3",
-      "say": "A calmer space is available upstairs, and I will bring the towels and the blanket now.",
+      "say": "A calmer room is free upstairs, and I will bring the towels now.",
       "hideGloss": false
     },
     {
       "id": "t6-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The air conditioning is still not working well, so please ask the engineer to check it again.",
+      "text": "The air conditioning is still weak, so please ask the engineer to check.",
       "glossYue": "部冷氣仍然唔係好好運作，唔該叫工程師再檢查。",
       "audio": "assets/audio/lines/t6-l6.mp3",
       "audioSlow": "assets/audio/lines/t6-l6-slow.mp3",
-      "say": "The air conditioning is still not working well, so please ask the engineer to check it again.",
+      "say": "The air conditioning is still weak, so please ask the engineer to check.",
       "hideGloss": true
     },
     {
       "id": "t6-l7",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "I have noted the noisy area already, and the engineer will visit before you sleep upstairs.",
+      "text": "I have noted the noisy area, and the engineer will visit upstairs.",
       "glossYue": "我記低嘈嘅位置，師傅會喺你瞓之前上嚟。",
       "audio": "assets/audio/lines/t6-l7.mp3",
       "audioSlow": "assets/audio/lines/t6-l7-slow.mp3",
-      "say": "I have noted the noisy area already, and the engineer will visit before you sleep upstairs.",
+      "say": "I have noted the noisy area, and the engineer will visit upstairs.",
       "hideGloss": true
     },
     {
       "id": "t6-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I appreciate the calm rest, the extra towels, and the warm blanket on this very noisy night.",
+      "text": "I appreciate the calm rest, the towels, and the warm blanket.",
       "glossYue": "多謝個安靜休息、多啲毛巾，同埋呢個嘈夜嘅暖被。",
       "audio": "assets/audio/lines/t6-l8.mp3",
       "audioSlow": "assets/audio/lines/t6-l8-slow.mp3",
-      "say": "I appreciate the calm rest, the extra towels, and the warm blanket on this very noisy night.",
+      "say": "I appreciate the calm rest, the towels, and the warm blanket.",
       "hideGloss": true
     }
   ],
@@ -169,8 +169,8 @@
       ]
     },
     {
-      "pattern": "I am sorry for the ___ tonight, and I can send an engineer up right now.",
-      "example": "I am sorry for the inconvenience, and I can send an engineer to the noisy room.",
+      "pattern": "I am sorry for the ___, and I can send an engineer up.",
+      "example": "I am sorry for the inconvenience, and I can send an engineer up.",
       "glossYue": "今晚造成⋯⋯對唔住。",
       "answer": "inconvenience",
       "choices": [
@@ -193,7 +193,7 @@
   ],
   "shadow": {
     "lineId": "t6-l5",
-    "hint": "A calmer space is available upstairs, and I will bring the towels and the blanket now."
+    "hint": "A calmer room is free upstairs, and I will bring the towels now."
   },
   "build": [
     {
@@ -235,10 +235,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "There seems to be very noisy air conditioning, and I barely slept in this room again.",
+        "line": "The air conditioning is very noisy, and I barely slept in this room.",
         "audio": "assets/audio/lines/t6-l2.mp3",
         "audioSlow": "assets/audio/lines/t6-l2-slow.mp3",
-        "expect": "I am sorry for the inconvenience, and I can send an engineer to the noisy room.",
+        "expect": "I am sorry for the inconvenience, and I can send an engineer up.",
         "keywords": [
           "inconvenience",
           "engineer"
@@ -249,10 +249,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Would it be possible to move us to a quiet room, with extra towels and a blanket?",
+        "line": "Could we move to a quiet room, with extra towels and a blanket?",
         "audio": "assets/audio/lines/t6-l4.mp3",
         "audioSlow": "assets/audio/lines/t6-l4-slow.mp3",
-        "expect": "A calmer space is available upstairs, and I will bring the towels and the blanket now.",
+        "expect": "A calmer room is free upstairs, and I will bring the towels now.",
         "keywords": [
           "towel",
           "blanket"
@@ -263,10 +263,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "The air conditioning is still not working well, so please ask the engineer to check it again.",
+        "line": "The air conditioning is still weak, so please ask the engineer to check.",
         "audio": "assets/audio/lines/t6-l6.mp3",
         "audioSlow": "assets/audio/lines/t6-l6-slow.mp3",
-        "expect": "I have noted the noisy area already, and the engineer will visit before you sleep upstairs.",
+        "expect": "I have noted the noisy area, and the engineer will visit upstairs.",
         "keywords": [
           "noted",
           "engineer"

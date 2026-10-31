@@ -1,0 +1,333 @@
+{
+  "id": "W14",
+  "unit": "W",
+  "titleYue": "期限同議程",
+  "titleEn": "A deadline on the agenda",
+  "canDoYue": "你識改期限、調議程、話投影片唔好放意見，同埋問書面意見點處理。",
+  "canDoEn": "Move a deadline, keep feedback off a slide, and ask what the agenda should say.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/w14.webp",
+  "cast": [
+    "tom",
+    "nina"
+  ],
+  "cefr": "B2",
+  "lemmas": [
+    "deadline-noun",
+    "agenda-noun",
+    "feedback-noun",
+    "slide-noun"
+  ],
+  "next": null,
+  "dialogue": [
+    {
+      "id": "w14-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I would like to move the deadline, because the agenda still needs one more review before Friday.",
+      "glossYue": "我想改期限，因為議程星期五之前仲要再睇一次。",
+      "audio": "assets/audio/lines/w14-l1.mp3",
+      "audioSlow": "assets/audio/lines/w14-l1-slow.mp3",
+      "say": "I would like to move the deadline, because the agenda still needs one more review before Friday.",
+      "hideGloss": false
+    },
+    {
+      "id": "w14-l2",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
+      "text": "We can move that review to next Monday, and I will add the point on the agenda.",
+      "glossYue": "我哋可以將嗰次審閱搬去下星期一，我會加落議程。",
+      "audio": "assets/audio/lines/w14-l2.mp3",
+      "audioSlow": "assets/audio/lines/w14-l2-slow.mp3",
+      "say": "We can move that review to next Monday, and I will add the point on the agenda.",
+      "hideGloss": false
+    },
+    {
+      "id": "w14-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could we keep feedback off the first slide if the client has not read the brief yet?",
+      "glossYue": "如果客戶未睇簡報，第一張投影片可唔可以先唔放意見？",
+      "audio": "assets/audio/lines/w14-l3.mp3",
+      "audioSlow": "assets/audio/lines/w14-l3-slow.mp3",
+      "say": "Could we keep feedback off the first slide if the client has not read the brief yet?",
+      "hideGloss": false
+    },
+    {
+      "id": "w14-l4",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
+      "text": "Yes. The first slide can stay as a short title until the client reads the full brief.",
+      "glossYue": "可以。第一張投影片可以保持短標題，等客戶睇完成份簡報。",
+      "audio": "assets/audio/lines/w14-l4.mp3",
+      "audioSlow": "assets/audio/lines/w14-l4-slow.mp3",
+      "say": "Yes. The first slide can stay as a short title until the client reads the full brief.",
+      "hideGloss": true
+    },
+    {
+      "id": "w14-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "What should the agenda say about our new deadline if we still owe them that written feedback?",
+      "glossYue": "如果仲欠佢哋書面意見，議程應該點寫新期限？",
+      "audio": "assets/audio/lines/w14-l5.mp3",
+      "audioSlow": "assets/audio/lines/w14-l5-slow.mp3",
+      "say": "What should the agenda say about our new deadline if we still owe them that written feedback?",
+      "hideGloss": true
+    },
+    {
+      "id": "w14-l6",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
+      "text": "I will put the new date in the notes, and collect that written feedback after the meeting.",
+      "glossYue": "我會喺筆記寫低新日期，會後收集嗰份書面意見。",
+      "audio": "assets/audio/lines/w14-l6.mp3",
+      "audioSlow": "assets/audio/lines/w14-l6-slow.mp3",
+      "say": "I will put the new date in the notes, and collect that written feedback after the meeting.",
+      "hideGloss": true
+    },
+    {
+      "id": "w14-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Can the last slide show a new deadline without putting raw feedback on screen during the call?",
+      "glossYue": "最後一張投影片可唔可以只顯示期限，通話畫面唔好放未整理嘅意見？",
+      "audio": "assets/audio/lines/w14-l7.mp3",
+      "audioSlow": "assets/audio/lines/w14-l7-slow.mp3",
+      "say": "Can the last slide show a new deadline without putting raw feedback on screen during the call?",
+      "hideGloss": true
+    },
+    {
+      "id": "w14-l8",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
+      "text": "That closing page will show the deadline only, and the raw notes stay inside our written pack.",
+      "glossYue": "收結嗰頁只顯示期限，未整理嘅筆記留喺書面文件度。",
+      "audio": "assets/audio/lines/w14-l8.mp3",
+      "audioSlow": "assets/audio/lines/w14-l8-slow.mp3",
+      "say": "That closing page will show the deadline only, and the raw notes stay inside our written pack.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "I would like to move the deadline, because the agenda still needs one more review before Friday. 呢句即係點？",
+      "choices": [
+        "想改期限同議程",
+        "想改訂位",
+        "安檢要除腰帶"
+      ],
+      "answer": 0,
+      "explain": "deadline 係期限。agenda 係議程。"
+    },
+    {
+      "prompt": "What should the agenda say about our new deadline if we still owe them that written feedback? 即係問緊咩？",
+      "choices": [
+        "問閘口行幾耐",
+        "問議程點寫新期限",
+        "問按金幾多"
+      ],
+      "answer": 1,
+      "explain": "agenda 係議程。deadline 係期限。"
+    },
+    {
+      "prompt": "Can the last slide show a new deadline without putting raw feedback on screen during the call? 即係問緊咩？",
+      "choices": [
+        "問第二次估價幾錢",
+        "問廚房拿走果仁",
+        "問投影片可唔可以只顯示期限"
+      ],
+      "answer": 2,
+      "explain": "slide 係投影片。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I would like to move the ___, because the agenda still needs one more review before Friday.",
+      "example": "I would like to move the deadline, because the agenda still needs one more review before Friday.",
+      "glossYue": "想改期限。",
+      "answer": "deadline",
+      "choices": [
+        "deadline",
+        "Friday",
+        "receipt"
+      ]
+    },
+    {
+      "pattern": "Could we keep ___ off the first slide if the client has not read the brief yet?",
+      "example": "Could we keep feedback off the first slide if the client has not read the brief yet?",
+      "glossYue": "意見唔好放上投影片。",
+      "answer": "feedback",
+      "choices": [
+        "feedback",
+        "towel",
+        "passport"
+      ]
+    },
+    {
+      "pattern": "Can the last ___ show a new deadline without putting raw feedback on screen during the call?",
+      "example": "Can the last slide show a new deadline without putting raw feedback on screen during the call?",
+      "glossYue": "問最後一張投影片。",
+      "answer": "slide",
+      "choices": [
+        "slide",
+        "deadline",
+        "oyster"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "w14-l1",
+    "hint": "I would like to move the deadline, because the agenda still needs one more review before Friday."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你話想改期限，因為議程仲要再睇。你點講？",
+      "choices": [
+        "I would like to move the deadline, because the agenda still needs one more review before Friday.",
+        "Could we keep feedback off the first slide if the client has not read the brief yet?",
+        "Can the last slide show a new deadline without putting raw feedback on screen during the call?"
+      ],
+      "answer": 0,
+      "explain": "講 deadline。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "move",
+        "the",
+        "deadline"
+      ],
+      "answer": [
+        "move",
+        "the",
+        "deadline"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你同 Nina 改期限同議程。可以講：deadline、feedback。",
+    "turns": [
+      {
+        "partner": "Nina",
+        "partnerId": "nina",
+        "line": "We can move that review to next Monday, and I will add the point on the agenda.",
+        "audio": "assets/audio/lines/w14-l2.mp3",
+        "audioSlow": "assets/audio/lines/w14-l2-slow.mp3",
+        "expect": "Could we keep feedback off the first slide if the client has not read the brief yet?",
+        "keywords": [
+          "feedback",
+          "slide"
+        ],
+        "modelAudio": "assets/audio/lines/w14-l3.mp3",
+        "modelSlow": "assets/audio/lines/w14-l3-slow.mp3"
+      },
+      {
+        "partner": "Nina",
+        "partnerId": "nina",
+        "line": "Yes. The first slide can stay as a short title until the client reads the full brief.",
+        "audio": "assets/audio/lines/w14-l4.mp3",
+        "audioSlow": "assets/audio/lines/w14-l4-slow.mp3",
+        "expect": "What should the agenda say about our new deadline if we still owe them that written feedback?",
+        "keywords": [
+          "agenda",
+          "feedback"
+        ],
+        "modelAudio": "assets/audio/lines/w14-l5.mp3",
+        "modelSlow": "assets/audio/lines/w14-l5-slow.mp3"
+      },
+      {
+        "partner": "Nina",
+        "partnerId": "nina",
+        "line": "I will put the new date in the notes, and collect that written feedback after the meeting.",
+        "audio": "assets/audio/lines/w14-l6.mp3",
+        "audioSlow": "assets/audio/lines/w14-l6-slow.mp3",
+        "expect": "Can the last slide show a new deadline without putting raw feedback on screen during the call?",
+        "keywords": [
+          "slide",
+          "deadline"
+        ],
+        "modelAudio": "assets/audio/lines/w14-l7.mp3",
+        "modelSlow": "assets/audio/lines/w14-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "deadline-noun",
+      "choices": [
+        "Friday",
+        "deadline",
+        "receipt"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "agenda-noun",
+      "choices": [
+        "passport",
+        "agenda",
+        "deadline"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "I would like to move the deadline, because the agenda still needs one more review before Friday. 呢句入面，邊個意思先啱？",
+      "choices": [
+        "窗",
+        "鐘",
+        "期限"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "meaning",
+      "prompt": "Could we keep feedback off the first slide if the client has not read the brief yet? 呢句入面，邊個意思先啱？",
+      "choices": [
+        "窗",
+        "意見",
+        "鐘"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "prompt": "Could we keep feedback off the first ___ if the client has not read the brief yet? 呢句入面，邊個字先啱？",
+      "choices": [
+        "Friday",
+        "slide",
+        "receipt"
+      ],
+      "answer": 1
+    }
+  ],
+  "sound": {
+    "ipa": "/eɪ/",
+    "title": "deadline 入面嗰個音",
+    "note": "deadline 有 /eɪ/。slide 冇。",
+    "pairs": [
+      {
+        "a": "deadline-noun",
+        "b": "agenda-noun"
+      },
+      {
+        "a": "feedback-noun",
+        "b": "slide-noun"
+      }
+    ],
+    "drill": [
+      "deadline-noun",
+      "agenda-noun",
+      "feedback-noun",
+      "slide-noun"
+    ]
+  }
+}

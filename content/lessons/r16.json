@@ -62,11 +62,11 @@
       "id": "r16-l2",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Yes. The special is grilled fish, and the chef does recommend it.",
+      "text": "The special is grilled fish, and the chef does recommend it.",
       "glossYue": "係。特餐係烤魚，廚師都推薦。",
       "audio": "assets/audio/lines/r16-l2.mp3",
       "audioSlow": "assets/audio/lines/r16-l2-slow.mp3",
-      "say": "Yes. The special is grilled fish, and the chef does recommend it.",
+      "say": "The special is grilled fish, and the chef does recommend it.",
       "hideGloss": false
     },
     {
@@ -143,7 +143,7 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "Yes. The special is grilled fish, and the chef does recommend it.",
+        "line": "The special is grilled fish, and the chef does recommend it.",
         "audio": "assets/audio/lines/r16-l2.mp3",
         "audioSlow": "assets/audio/lines/r16-l2-slow.mp3",
         "expect": "Can I get one spicy plate and one mild plate, please?",
@@ -321,17 +321,17 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "What is today's special, and does the chef recommend that dish? 呢句入面，邊個意思先啱？",
       "choices": [
-        "白飯",
+        "讀（而家／習慣）",
         "特餐",
-        "廚師"
+        "讀過（過去）"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "What is today's special, and does the chef recommend that dish? 呢句入面，邊個意思先啱？",
       "choices": [
         "廚師",
         "唔辣",
@@ -341,10 +341,10 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "What is today's ___, and does the chef recommend that dish? 呢句入面，邊個字先啱？",
       "choices": [
-        "rice",
-        "mild",
+        "read",
+        "live",
         "special"
       ],
       "answer": 2,

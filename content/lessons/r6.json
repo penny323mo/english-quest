@@ -33,94 +33,94 @@
       "id": "r6-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Good evening. I would like to book a table for Mei, and is a window seat still available tonight?",
+      "text": "Good evening. A table for Mei, please. Is a window seat free tonight?",
       "glossYue": "你好。我想幫 Mei 訂檯，今晚仲有冇靠窗位？",
       "audio": "assets/audio/lines/r6-l1.mp3",
       "audioSlow": "assets/audio/lines/r6-l1-slow.mp3",
-      "say": "Good evening. I would like to book a table for Mei, and is a window seat still available tonight?",
+      "say": "Good evening. A table for Mei, please. Is a window seat free tonight?",
       "hideGloss": false
     },
     {
       "id": "r6-l2",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Yes. A party of four can sit under the name Mei, because you asked for her.",
+      "text": "Yes. A party of four can sit under the name Mei.",
       "glossYue": "得。四人一檯可以寫 Mei 個名，因為你幫佢訂。",
       "audio": "assets/audio/lines/r6-l2.mp3",
       "audioSlow": "assets/audio/lines/r6-l2-slow.mp3",
-      "say": "Yes. A party of four can sit under the name Mei, because you asked for her.",
+      "say": "Yes. A party of four can sit under the name Mei.",
       "hideGloss": true
     },
     {
       "id": "r6-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Would it be possible to change the time, and keep the reservation if we arrive later?",
+      "text": "Could we change the time and keep the reservation if we arrive later?",
       "glossYue": "可唔可以改時間，如果我哋遲啲到，位仲留住？",
       "audio": "assets/audio/lines/r6-l3.mp3",
       "audioSlow": "assets/audio/lines/r6-l3-slow.mp3",
-      "say": "Would it be possible to change the time, and keep the reservation if we arrive later?",
+      "say": "Could we change the time and keep the reservation if we arrive later?",
       "hideGloss": true
     },
     {
       "id": "r6-l4",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "I can change the booking time to eight, and the indoor seat stays free if the sky turns wet.",
+      "text": "I can change the time to eight, and the indoor seat stays free.",
       "glossYue": "我可以將訂位時間改到八點，如果落雨，室內位仍然留低。",
       "audio": "assets/audio/lines/r6-l4.mp3",
       "audioSlow": "assets/audio/lines/r6-l4-slow.mp3",
-      "say": "I can change the booking time to eight, and the indoor seat stays free if the sky turns wet.",
+      "say": "I can change the time to eight, and the indoor seat stays free.",
       "hideGloss": true
     },
     {
       "id": "r6-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "If it rains heavily, please cancel the outdoor seat and keep us indoors beside the glass.",
+      "text": "If it rains, please cancel the outdoor seat and keep us indoors.",
       "glossYue": "如果落大雨，請取消室外位，留我哋喺室內近玻璃。",
       "audio": "assets/audio/lines/r6-l5.mp3",
       "audioSlow": "assets/audio/lines/r6-l5-slow.mp3",
-      "say": "If it rains heavily, please cancel the outdoor seat and keep us indoors beside the glass.",
+      "say": "If it rains, please cancel the outdoor seat and keep us indoors.",
       "hideGloss": false
     },
     {
       "id": "r6-l6",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Those patio seats are already fully booked, but I can add the group to the waitlist.",
+      "text": "Those patio seats are booked, but I can add you to the waitlist.",
       "glossYue": "室外位已經滿咗，但我可以將你哋放上候補。",
       "audio": "assets/audio/lines/r6-l6.mp3",
       "audioSlow": "assets/audio/lines/r6-l6-slow.mp3",
-      "say": "Those patio seats are already fully booked, but I can add the group to the waitlist.",
+      "say": "Those patio seats are booked, but I can add you to the waitlist.",
       "hideGloss": true
     },
     {
       "id": "r6-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Please confirm the booking for us, and roughly what time do we come for dinner?",
+      "text": "Please confirm the booking, and what time do we come?",
       "glossYue": "請確認訂位，大概幾點食飯？",
       "audio": "assets/audio/lines/r6-l7.mp3",
       "audioSlow": "assets/audio/lines/r6-l7-slow.mp3",
-      "say": "Please confirm the booking for us, and roughly what time do we come for dinner?",
+      "say": "Please confirm the booking, and what time do we come?",
       "hideGloss": true
     },
     {
       "id": "r6-l8",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "I will hold the booking until eight, and I will send a short note after we speak.",
+      "text": "I will hold the booking until eight, and send a short note.",
       "glossYue": "我會留住個訂位到八點，傾完之後我會寄一則短訊。",
       "audio": "assets/audio/lines/r6-l8.mp3",
       "audioSlow": "assets/audio/lines/r6-l8-slow.mp3",
-      "say": "I will hold the booking until eight, and I will send a short note after we speak.",
+      "say": "I will hold the booking until eight, and send a short note.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Good evening. I would like to book a table for Mei, and is a window seat still available tonight? 即係問緊咩？",
+      "prompt": "Good evening. A table for Mei, please. Is a window seat free tonight? 即係問緊咩？",
       "choices": [
         "幫 Mei 訂檯，問今晚有冇靠窗",
         "取消今晚嘅會",
@@ -130,7 +130,7 @@
       "explain": "book a table 係訂檯，window seat 係靠窗位。"
     },
     {
-      "prompt": "If it rains heavily, please cancel the outdoor seat and keep us indoors beside the glass. 呢句即係點？",
+      "prompt": "If it rains, please cancel the outdoor seat and keep us indoors. 呢句即係點？",
       "choices": [
         "落雨就要室外位",
         "而家取消成個訂位",
@@ -140,7 +140,7 @@
       "explain": "cancel the outdoor seat 係唔要室外。"
     },
     {
-      "prompt": "Please confirm the booking for us, and roughly what time do we come for dinner? 即係問緊咩？",
+      "prompt": "Please confirm the booking, and what time do we come? 即係問緊咩？",
       "choices": [
         "問窗邊幾多錢",
         "請確認，再問大概幾點",
@@ -153,7 +153,7 @@
   "chunks": [
     {
       "pattern": "Good evening. I would like to ___ a table for Mei, and is a window seat still available tonight?",
-      "example": "Good evening. I would like to book a table for Mei, and is a window seat still available tonight?",
+      "example": "Good evening. A table for Mei, please. Is a window seat free tonight?",
       "glossYue": "我想⋯⋯一張檯。",
       "answer": "book",
       "choices": [
@@ -163,8 +163,8 @@
       ]
     },
     {
-      "pattern": "If it rains heavily, please ___ the outdoor seat and keep us indoors beside the glass.",
-      "example": "If it rains heavily, please cancel the outdoor seat and keep us indoors beside the glass.",
+      "pattern": "If it rains, please ___ the outdoor seat and keep us indoors.",
+      "example": "If it rains, please cancel the outdoor seat and keep us indoors.",
       "glossYue": "請⋯⋯室外位。",
       "answer": "cancel",
       "choices": [
@@ -174,8 +174,8 @@
       ]
     },
     {
-      "pattern": "Please ___ the booking for us, and roughly what time do we come for dinner?",
-      "example": "Please confirm the booking for us, and roughly what time do we come for dinner?",
+      "pattern": "Please ___ the booking, and what time do we come?",
+      "example": "Please confirm the booking, and what time do we come?",
       "glossYue": "請⋯⋯個訂位。",
       "answer": "confirm",
       "choices": [
@@ -187,14 +187,14 @@
   ],
   "shadow": {
     "lineId": "r6-l5",
-    "hint": "If it rains heavily, please cancel the outdoor seat and keep us indoors beside the glass."
+    "hint": "If it rains, please cancel the outdoor seat and keep us indoors."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "你打電話幫 Mei 訂靠窗。你點講？",
       "choices": [
-        "Good evening. I would like to book a table for Mei, and is a window seat still available tonight?",
+        "Good evening. A table for Mei, please. Is a window seat free tonight?",
         "Shall we go into the room?",
         "The clasp on it broke."
       ],
@@ -225,10 +225,10 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "Yes. A party of four can sit under the name Mei, because you asked for her.",
+        "line": "Yes. A party of four can sit under the name Mei.",
         "audio": "assets/audio/lines/r6-l2.mp3",
         "audioSlow": "assets/audio/lines/r6-l2-slow.mp3",
-        "expect": "Would it be possible to change the time, and keep the reservation if we arrive later?",
+        "expect": "Could we change the time and keep the reservation if we arrive later?",
         "keywords": [
           "change",
           "reservation"
@@ -239,10 +239,10 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "I can change the booking time to eight, and the indoor seat stays free if the sky turns wet.",
+        "line": "I can change the time to eight, and the indoor seat stays free.",
         "audio": "assets/audio/lines/r6-l4.mp3",
         "audioSlow": "assets/audio/lines/r6-l4-slow.mp3",
-        "expect": "If it rains heavily, please cancel the outdoor seat and keep us indoors beside the glass.",
+        "expect": "If it rains, please cancel the outdoor seat and keep us indoors.",
         "keywords": [
           "outdoor",
           "cancel"
@@ -253,10 +253,10 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "Those patio seats are already fully booked, but I can add the group to the waitlist.",
+        "line": "Those patio seats are booked, but I can add you to the waitlist.",
         "audio": "assets/audio/lines/r6-l6.mp3",
         "audioSlow": "assets/audio/lines/r6-l6-slow.mp3",
-        "expect": "Please confirm the booking for us, and roughly what time do we come for dinner?",
+        "expect": "Please confirm the booking, and what time do we come?",
         "keywords": [
           "confirm",
           "roughly"
@@ -291,7 +291,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「If it rains heavily, please cancel the outdoor seat and keep us indoors beside the glass.」，outdoor 係咩意思？",
+      "prompt": "你講「If it rains, please cancel the outdoor seat and keep us indoors.」，outdoor 係咩意思？",
       "choices": [
         "室外",
         "候補",
@@ -301,7 +301,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "店員講「Those patio seats are already fully booked, but I can add the group to the waitlist.」，waitlist 係咩意思？",
+      "prompt": "店員講「Those patio seats are booked, but I can add you to the waitlist.」，waitlist 係咩意思？",
       "choices": [
         "靠窗位",
         "晚餐時間",

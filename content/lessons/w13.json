@@ -84,11 +84,11 @@
       "id": "w13-l4",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Yes. That blocker is the missing logo file from the brand studio.",
-      "glossYue": "係。阻礙係未收到嘅標誌檔，品牌工作室會交。",
+      "text": "The studio hasn't sent the logo yet.",
+      "glossYue": "品牌公司仲未交到個標誌。",
       "audio": "assets/audio/lines/w13-l4.mp3",
       "audioSlow": "assets/audio/lines/w13-l4-slow.mp3",
-      "say": "Yes. That blocker is the missing logo file from the brand studio.",
+      "say": "The studio hasn't sent the logo yet.",
       "hideGloss": false
     },
     {
@@ -106,11 +106,11 @@
       "id": "w13-l6",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Yes. I will present that slide deck once the logo is in.",
-      "glossYue": "我講。標誌一到，我就用嗰份投影片講。",
+      "text": "I will present that slide deck once the logo is in.",
+      "glossYue": "個標誌到咗我就會講嗰份投影片。",
       "audio": "assets/audio/lines/w13-l6.mp3",
       "audioSlow": "assets/audio/lines/w13-l6-slow.mp3",
-      "say": "Yes. I will present that slide deck once the logo is in.",
+      "say": "I will present that slide deck once the logo is in.",
       "hideGloss": false
     },
     {
@@ -157,7 +157,7 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "Yes. That blocker is the missing logo file from the brand studio.",
+        "line": "The studio hasn't sent the logo yet.",
         "audio": "assets/audio/lines/w13-l4.mp3",
         "audioSlow": "assets/audio/lines/w13-l4-slow.mp3",
         "expect": "Who will present the slide deck if the logo arrives one day late?",
@@ -171,7 +171,7 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "Yes. I will present that slide deck once the logo is in.",
+        "line": "I will present that slide deck once the logo is in.",
         "audio": "assets/audio/lines/w13-l6.mp3",
         "audioSlow": "assets/audio/lines/w13-l6-slow.mp3",
         "expect": "Can we move the milestone to Friday if that blocker remains?",
@@ -196,7 +196,7 @@
       "explain": "草稿。"
     },
     {
-      "prompt": "Yes. That blocker is the missing logo file from the brand studio. 呢句即係點？",
+      "prompt": "The studio hasn't sent the logo yet. 呢句即係點？",
       "choices": [
         "講緊阻礙",
         "關於草稿",
@@ -323,7 +323,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Could you tell me where the design draft stands for the client milestone? 呢句入面，邊個意思先啱？",
       "choices": [
         "草稿",
         "阻礙",
@@ -333,7 +333,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Could you tell me where the design draft stands for the client milestone? 呢句入面，邊個意思先啱？",
       "choices": [
         "阻礙",
         "投影片",
@@ -343,11 +343,11 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "Could you tell me where the design draft stands for the client ___? 呢句入面，邊個字先啱？",
       "choices": [
-        "draft",
+        "read",
         "milestone",
-        "slide"
+        "live"
       ],
       "answer": 1,
       "explain": "里程碑。"

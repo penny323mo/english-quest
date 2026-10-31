@@ -35,94 +35,94 @@
       "id": "w8-l1",
       "speaker": "sora",
       "speakerLabel": "Sora",
-      "text": "Most of our design work is fully on track this month, and the morning meeting can stay short.",
+      "text": "Our design work is on track, so the meeting can stay short.",
       "glossYue": "設計工作大部分跟得上進度，朝早個會可以短啲。",
       "audio": "assets/audio/lines/w8-l1.mp3",
       "audioSlow": "assets/audio/lines/w8-l1-slow.mp3",
-      "say": "Most of our design work is fully on track this month, and the morning meeting can stay short.",
+      "say": "Our design work is on track, so the meeting can stay short.",
       "hideGloss": false
     },
     {
       "id": "w8-l2",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Which part of the monthly plan is behind schedule right now, and who owns that sample run?",
+      "text": "Which sample run is behind schedule, and who owns that part?",
       "glossYue": "月計劃邊一部分落後，邊個負責嗰次樣辦？",
       "audio": "assets/audio/lines/w8-l2.mp3",
       "audioSlow": "assets/audio/lines/w8-l2-slow.mp3",
-      "say": "Which part of the monthly plan is behind schedule right now, and who owns that sample run?",
+      "say": "Which sample run is behind schedule, and who owns that part?",
       "hideGloss": false
     },
     {
       "id": "w8-l3",
       "speaker": "sora",
       "speakerLabel": "Sora",
-      "text": "The sample run is behind schedule, and I own that part of the monthly plan by myself.",
+      "text": "That sample run is behind schedule, and I own it.",
       "glossYue": "樣辦落後咗，呢一部分我自己負責。",
       "audio": "assets/audio/lines/w8-l3.mp3",
       "audioSlow": "assets/audio/lines/w8-l3-slow.mp3",
-      "say": "The sample run is behind schedule, and I own that part of the monthly plan by myself.",
+      "say": "That sample run is behind schedule, and I own it.",
       "hideGloss": false
     },
     {
       "id": "w8-l4",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Can you please follow up by Friday and send me one written note after you speak with the client?",
+      "text": "Can you follow up by Friday and send one written note?",
       "glossYue": "你可唔可以星期五之前跟進，同客戶傾完之後寫張字條？",
       "audio": "assets/audio/lines/w8-l4.mp3",
       "audioSlow": "assets/audio/lines/w8-l4-slow.mp3",
-      "say": "Can you please follow up by Friday and send me one written note after you speak with the client?",
+      "say": "Can you follow up by Friday and send one written note?",
       "hideGloss": true
     },
     {
       "id": "w8-l5",
       "speaker": "sora",
       "speakerLabel": "Sora",
-      "text": "I will follow up by Friday, and I will send the written note out on that same day.",
+      "text": "I will follow up by Friday and send the note that day.",
       "glossYue": "我星期五之前會跟進，字條同一日送出。",
       "audio": "assets/audio/lines/w8-l5.mp3",
       "audioSlow": "assets/audio/lines/w8-l5-slow.mp3",
-      "say": "I will follow up by Friday, and I will send the written note out on that same day.",
+      "say": "I will follow up by Friday and send the note that day.",
       "hideGloss": true
     },
     {
       "id": "w8-l6",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Are there any open questions before we write down each action item for the team?",
+      "text": "Any open questions before we list each action item?",
       "glossYue": "寫低每項行動之前，仲有冇未解嘅問題？",
       "audio": "assets/audio/lines/w8-l6.mp3",
       "audioSlow": "assets/audio/lines/w8-l6-slow.mp3",
-      "say": "Are there any open questions before we write down each action item for the team?",
+      "say": "Any open questions before we list each action item?",
       "hideGloss": true
     },
     {
       "id": "w8-l7",
       "speaker": "sora",
       "speakerLabel": "Sora",
-      "text": "The action item is mine, and I will call the client on Friday with a clear answer.",
+      "text": "The action item is mine, and I will call the client Friday.",
       "glossYue": "呢項行動我負責，我星期五會打畀客戶講清楚。",
       "audio": "assets/audio/lines/w8-l7.mp3",
       "audioSlow": "assets/audio/lines/w8-l7-slow.mp3",
-      "say": "The action item is mine, and I will call the client on Friday with a clear answer.",
+      "say": "The action item is mine, and I will call the client Friday.",
       "hideGloss": true
     },
     {
       "id": "w8-l8",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Please send that written note straight after the meeting so I can read each action item.",
+      "text": "Send that note after the meeting so I can read it.",
       "glossYue": "會後請將張字條送嚟，等我睇每項行動。",
       "audio": "assets/audio/lines/w8-l8.mp3",
       "audioSlow": "assets/audio/lines/w8-l8-slow.mp3",
-      "say": "Please send that written note straight after the meeting so I can read each action item.",
+      "say": "Send that note after the meeting so I can read it.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Most of our design work is fully on track this month, and the morning meeting can stay short. 呢句即係點？",
+      "prompt": "Our design work is on track, so the meeting can stay short. 呢句即係點？",
       "choices": [
         "工作跟得上進度，個會可以短",
         "樣辦落後，要改星期五",
@@ -132,7 +132,7 @@
       "explain": "on track 係跟得上進度。meeting 係會議。"
     },
     {
-      "prompt": "Which part of the monthly plan is behind schedule right now, and who owns that sample run? 即係問緊咩？",
+      "prompt": "Which sample run is behind schedule, and who owns that part? 即係問緊咩？",
       "choices": [
         "問字條星期五幾時送",
         "問邊一部分進度落後、邊個負責",
@@ -142,7 +142,7 @@
       "explain": "behind schedule 係落後。"
     },
     {
-      "prompt": "Are there any open questions before we write down each action item for the team? 即係問緊咩？",
+      "prompt": "Any open questions before we list each action item? 即係問緊咩？",
       "choices": [
         "問星期五邊個放假",
         "問進度係咪跟得上",
@@ -154,8 +154,8 @@
   ],
   "chunks": [
     {
-      "pattern": "Most of our design work is fully ___ this month, and the morning meeting can stay short.",
-      "example": "Most of our design work is fully on track this month, and the morning meeting can stay short.",
+      "pattern": "Our design work is ___, so the meeting can stay short.",
+      "example": "Our design work is on track, so the meeting can stay short.",
       "glossYue": "工作跟得上進度。",
       "answer": "on track",
       "choices": [
@@ -165,8 +165,8 @@
       ]
     },
     {
-      "pattern": "Can you please ___ by Friday and send me one written note after you speak with the client?",
-      "example": "Can you please follow up by Friday and send me one written note after you speak with the client?",
+      "pattern": "Can you ___ by Friday and send one written note?",
+      "example": "Can you follow up by Friday and send one written note?",
       "glossYue": "星期五之前跟進。",
       "answer": "follow up",
       "choices": [
@@ -176,8 +176,8 @@
       ]
     },
     {
-      "pattern": "The ___ is mine, and I will call the client on Friday with a clear answer.",
-      "example": "The action item is mine, and I will call the client on Friday with a clear answer.",
+      "pattern": "The ___ is mine, and I will call the client Friday.",
+      "example": "The action item is mine, and I will call the client Friday.",
       "glossYue": "呢項行動我負責。",
       "answer": "action item",
       "choices": [
@@ -189,16 +189,16 @@
   ],
   "shadow": {
     "lineId": "w8-l1",
-    "hint": "Most of our design work is fully on track this month, and the morning meeting can stay short."
+    "hint": "Our design work is on track, so the meeting can stay short."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "你話樣辦落後，你自己負責。你點講？",
       "choices": [
-        "The sample run is behind schedule, and I own that part of the monthly plan by myself.",
-        "I will follow up by Friday, and I will send the written note out on that same day.",
-        "The action item is mine, and I will call the client on Friday with a clear answer."
+        "That sample run is behind schedule, and I own it.",
+        "I will follow up by Friday and send the note that day.",
+        "The action item is mine, and I will call the client Friday."
       ],
       "answer": 0,
       "explain": "講 behind schedule。"
@@ -227,10 +227,10 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "Which part of the monthly plan is behind schedule right now, and who owns that sample run?",
+        "line": "Which sample run is behind schedule, and who owns that part?",
         "audio": "assets/audio/lines/w8-l2.mp3",
         "audioSlow": "assets/audio/lines/w8-l2-slow.mp3",
-        "expect": "The sample run is behind schedule, and I own that part of the monthly plan by myself.",
+        "expect": "That sample run is behind schedule, and I own it.",
         "keywords": [
           "behind",
           "schedule"
@@ -241,10 +241,10 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "Can you please follow up by Friday and send me one written note after you speak with the client?",
+        "line": "Can you follow up by Friday and send one written note?",
         "audio": "assets/audio/lines/w8-l4.mp3",
         "audioSlow": "assets/audio/lines/w8-l4-slow.mp3",
-        "expect": "I will follow up by Friday, and I will send the written note out on that same day.",
+        "expect": "I will follow up by Friday and send the note that day.",
         "keywords": [
           "Friday",
           "note"
@@ -255,10 +255,10 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "Are there any open questions before we write down each action item for the team?",
+        "line": "Any open questions before we list each action item?",
         "audio": "assets/audio/lines/w8-l6.mp3",
         "audioSlow": "assets/audio/lines/w8-l6-slow.mp3",
-        "expect": "The action item is mine, and I will call the client on Friday with a clear answer.",
+        "expect": "The action item is mine, and I will call the client Friday.",
         "keywords": [
           "action",
           "Friday"

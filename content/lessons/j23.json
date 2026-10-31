@@ -1,0 +1,335 @@
+{
+  "id": "J23",
+  "unit": "J",
+  "titleYue": "保險估價同證書",
+  "titleEn": "An insurance appraisal",
+  "canDoYue": "你識攞證書同書面估價、問保險收唔收相片、同埋問第二次估價幾多錢。",
+  "canDoEn": "Ask whether a written appraisal and a certificate photo are enough for an insurance claim.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j23.webp",
+  "cast": [
+    "gus",
+    "ida"
+  ],
+  "cefr": "B2",
+  "lemmas": [
+    "pendant-noun",
+    "appraisal-noun",
+    "insurance-noun",
+    "certificate-noun"
+  ],
+  "next": "R17",
+  "dialogue": [
+    {
+      "id": "j23-l1",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "I brought the damaged pendant back, and I need a written appraisal before the insurance claim goes in.",
+      "glossYue": "我帶咗隻爛咗嘅吊墜返嚟，保險索償之前要一份書面估價。",
+      "audio": "assets/audio/lines/j23-l1.mp3",
+      "audioSlow": "assets/audio/lines/j23-l1-slow.mp3",
+      "say": "I brought the damaged pendant back, and I need a written appraisal before the insurance claim goes in.",
+      "hideGloss": false
+    },
+    {
+      "id": "j23-l2",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "The certificate is in this folder, and it matches the stone we photographed last spring in the shop.",
+      "glossYue": "證書喺呢個文件夾，同我哋春天喺舖頭影嘅石一致。",
+      "audio": "assets/audio/lines/j23-l2.mp3",
+      "audioSlow": "assets/audio/lines/j23-l2-slow.mp3",
+      "say": "The certificate is in this folder, and it matches the stone we photographed last spring in the shop.",
+      "hideGloss": false
+    },
+    {
+      "id": "j23-l3",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "Does the written appraisal still stand if the clasp was repaired after that short shop visit?",
+      "glossYue": "上次短短嚟舖修咗扣之後，書面估價仲算唔算數？",
+      "audio": "assets/audio/lines/j23-l3.mp3",
+      "audioSlow": "assets/audio/lines/j23-l3-slow.mp3",
+      "say": "Does the written appraisal still stand if the clasp was repaired after that short shop visit?",
+      "hideGloss": false
+    },
+    {
+      "id": "j23-l4",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Yes. The clasp repair still stands, and the note is attached at the back of the file.",
+      "glossYue": "算。扣嘅維修仍然有效，字條釘咗喺檔案最後。",
+      "audio": "assets/audio/lines/j23-l4.mp3",
+      "audioSlow": "assets/audio/lines/j23-l4-slow.mp3",
+      "say": "Yes. The clasp repair still stands, and the note is attached at the back of the file.",
+      "hideGloss": true
+    },
+    {
+      "id": "j23-l5",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "Can the insurance office accept a clear photo of the certificate instead of sending the paper original?",
+      "glossYue": "保險公司可唔可以收證書嘅清晰相片，唔使寄紙本正本？",
+      "audio": "assets/audio/lines/j23-l5.mp3",
+      "audioSlow": "assets/audio/lines/j23-l5-slow.mp3",
+      "say": "Can the insurance office accept a clear photo of the certificate instead of sending the paper original?",
+      "hideGloss": true
+    },
+    {
+      "id": "j23-l6",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "The office can accept that photo this afternoon, and I will email a scanned copy of the certificate.",
+      "glossYue": "公司今日下晝可以收嗰張相，我會電郵證書嘅掃描副本。",
+      "audio": "assets/audio/lines/j23-l6.mp3",
+      "audioSlow": "assets/audio/lines/j23-l6-slow.mp3",
+      "say": "The office can accept that photo this afternoon, and I will email a scanned copy of the certificate.",
+      "hideGloss": true
+    },
+    {
+      "id": "j23-l7",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "What is the fee if the pendant needs a second appraisal before the claim is filed?",
+      "glossYue": "索償之前吊墜要再估一次，收費係幾多？",
+      "audio": "assets/audio/lines/j23-l7.mp3",
+      "audioSlow": "assets/audio/lines/j23-l7-slow.mp3",
+      "say": "What is the fee if the pendant needs a second appraisal before the claim is filed?",
+      "hideGloss": true
+    },
+    {
+      "id": "j23-l8",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "The second appraisal is free of charge, and the pendant fee stays at forty dollars in the quote.",
+      "glossYue": "第二次估價唔使錢，吊墜收費喺報價度維持四十蚊。",
+      "audio": "assets/audio/lines/j23-l8.mp3",
+      "audioSlow": "assets/audio/lines/j23-l8-slow.mp3",
+      "say": "The second appraisal is free of charge, and the pendant fee stays at forty dollars in the quote.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "I brought the damaged pendant back, and I need a written appraisal before the insurance claim goes in. 呢句即係點？",
+      "choices": [
+        "要書面估價先索償",
+        "想改星期六訂位",
+        "安檢要除皮帶"
+      ],
+      "answer": 0,
+      "explain": "appraisal 係估價。insurance 係保險。"
+    },
+    {
+      "prompt": "Can the insurance office accept a clear photo of the certificate instead of sending the paper original? 即係問緊咩？",
+      "choices": [
+        "問閘口行幾耐",
+        "問保險收唔收證書相片",
+        "問私房幾多位"
+      ],
+      "answer": 1,
+      "explain": "certificate 係證書。"
+    },
+    {
+      "prompt": "What is the fee if the pendant needs a second appraisal before the claim is filed? 即係問緊咩？",
+      "choices": [
+        "問接駁車點去",
+        "問果仁可唔可以拿走",
+        "問第二次估價收幾多"
+      ],
+      "answer": 2,
+      "explain": "fee 係收費。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I brought the damaged pendant back, and I need a written ___ before the insurance claim goes in.",
+      "example": "I brought the damaged pendant back, and I need a written appraisal before the insurance claim goes in.",
+      "glossYue": "索償之前要書面估價。",
+      "answer": "appraisal",
+      "choices": [
+        "appraisal",
+        "Friday",
+        "receipt"
+      ]
+    },
+    {
+      "pattern": "The ___ is in this folder, and it matches the stone we photographed last spring in the shop.",
+      "example": "The certificate is in this folder, and it matches the stone we photographed last spring in the shop.",
+      "glossYue": "證書喺文件夾。",
+      "answer": "certificate",
+      "choices": [
+        "certificate",
+        "towel",
+        "passport"
+      ]
+    },
+    {
+      "pattern": "Can the ___ office accept a clear photo of the certificate instead of sending the paper original?",
+      "example": "Can the insurance office accept a clear photo of the certificate instead of sending the paper original?",
+      "glossYue": "問保險收唔收相片。",
+      "answer": "insurance",
+      "choices": [
+        "insurance",
+        "deadline",
+        "oyster"
+      ]
+    }
+  ],
+  "shadow": {
+    "lineId": "j23-l1",
+    "hint": "I brought the damaged pendant back, and I need a written appraisal before the insurance claim goes in."
+  },
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你話要書面估價先至交保險。你點講？",
+      "choices": [
+        "I brought the damaged pendant back, and I need a written appraisal before the insurance claim goes in.",
+        "Can the insurance office accept a clear photo of the certificate instead of sending the paper original?",
+        "What is the fee if the pendant needs a second appraisal before the claim is filed?"
+      ],
+      "answer": 0,
+      "explain": "講 appraisal。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "where",
+        "is",
+        "the",
+        "certificate"
+      ],
+      "answer": [
+        "where",
+        "is",
+        "the",
+        "certificate"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "gus",
+    "intro": "你帶吊墜返舖。同 Ida 問估價同證書。可以講：appraisal、certificate。",
+    "turns": [
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "The certificate is in this folder, and it matches the stone we photographed last spring in the shop.",
+        "audio": "assets/audio/lines/j23-l2.mp3",
+        "audioSlow": "assets/audio/lines/j23-l2-slow.mp3",
+        "expect": "Does the written appraisal still stand if the clasp was repaired after that short shop visit?",
+        "keywords": [
+          "appraisal",
+          "clasp"
+        ],
+        "modelAudio": "assets/audio/lines/j23-l3.mp3",
+        "modelSlow": "assets/audio/lines/j23-l3-slow.mp3"
+      },
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "Yes. The clasp repair still stands, and the note is attached at the back of the file.",
+        "audio": "assets/audio/lines/j23-l4.mp3",
+        "audioSlow": "assets/audio/lines/j23-l4-slow.mp3",
+        "expect": "Can the insurance office accept a clear photo of the certificate instead of sending the paper original?",
+        "keywords": [
+          "certificate",
+          "insurance"
+        ],
+        "modelAudio": "assets/audio/lines/j23-l5.mp3",
+        "modelSlow": "assets/audio/lines/j23-l5-slow.mp3"
+      },
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "The office can accept that photo this afternoon, and I will email a scanned copy of the certificate.",
+        "audio": "assets/audio/lines/j23-l6.mp3",
+        "audioSlow": "assets/audio/lines/j23-l6-slow.mp3",
+        "expect": "What is the fee if the pendant needs a second appraisal before the claim is filed?",
+        "keywords": [
+          "pendant",
+          "appraisal"
+        ],
+        "modelAudio": "assets/audio/lines/j23-l7.mp3",
+        "modelSlow": "assets/audio/lines/j23-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "pendant-noun",
+      "choices": [
+        "Friday",
+        "pendant",
+        "receipt"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "appraisal-noun",
+      "choices": [
+        "passport",
+        "appraisal",
+        "deadline"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "I brought the damaged pendant back, and I need a written appraisal before the insurance claim goes in. 呢句入面，邊個意思先啱？",
+      "choices": [
+        "窗",
+        "吊墜",
+        "鐘"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "I brought the damaged pendant back, and I need a written appraisal before the insurance claim goes in. 呢句入面，邊個意思先啱？",
+      "choices": [
+        "窗",
+        "鐘",
+        "保險"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "prompt": "The ___ is in this folder, and it matches the stone we photographed last spring in the shop. 呢句入面，邊個字先啱？",
+      "choices": [
+        "Friday",
+        "certificate",
+        "receipt"
+      ],
+      "answer": 1
+    }
+  ],
+  "sound": {
+    "ipa": "/eɪ/",
+    "title": "claim 入面嗰個音",
+    "note": "claim 有 /eɪ/。shop 冇。",
+    "pairs": [
+      {
+        "a": "appraisal-noun",
+        "b": "certificate-noun"
+      },
+      {
+        "a": "pendant-noun",
+        "b": "insurance-noun"
+      }
+    ],
+    "drill": [
+      "appraisal-noun",
+      "certificate-noun",
+      "pendant-noun",
+      "insurance-noun"
+    ]
+  }
+}

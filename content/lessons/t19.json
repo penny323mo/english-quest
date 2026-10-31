@@ -3,8 +3,8 @@
   "unit": "T",
   "titleYue": "酒店投訴跟進",
   "titleEn": "Hotel complaint follow-up",
-  "canDoYue": "你識話走廊嘈音搞到你、問維修十點先檢查套房、問可唔可以望海港，同埋問維修幾點做完。",
-  "canDoEn": "Say the hallway noise kept you up, ask maintenance to check the suite at ten before you unpack, ask for a harbour-facing room away from the hallway, and ask when maintenance finishes.",
+  "canDoYue": "你識話走廊嘈音搞到你瞓唔著、問維修十點檢查、問可唔可以搬去靜啲嘅套房，同埋問維修幾點做完。",
+  "canDoEn": "Say the hallway noise kept you up, ask for a quieter suite, and ask when maintenance finishes.",
   "minutes": 12,
   "hero": "assets/art/lessons/t19.webp",
   "cast": [
@@ -51,88 +51,88 @@
       "id": "t19-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Did the hallway noise keep you from moving me to a suite?",
-      "glossYue": "走廊嘈音搞到我，可唔可以搬我去套房？",
+      "text": "The hallway noise kept me up, and I couldn't sleep at all.",
+      "glossYue": "走廊嘈音搞到我瞓唔著。",
       "audio": "assets/audio/lines/t19-l1.mp3",
       "audioSlow": "assets/audio/lines/t19-l1-slow.mp3",
-      "say": "Did the hallway noise keep you from moving me to a suite?",
+      "say": "The hallway noise kept me up, and I couldn't sleep at all.",
       "hideGloss": false
     },
     {
       "id": "t19-l2",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Yes. That hallway noise is real, and tonight I can move you.",
-      "glossYue": "可以。走廊嘈音係真嘅，我今晚可以幫你搬。",
+      "text": "I'm sorry about that noise. Maintenance can check the room at ten.",
+      "glossYue": "唔好意思。維修十點可以檢查間房。",
       "audio": "assets/audio/lines/t19-l2.mp3",
       "audioSlow": "assets/audio/lines/t19-l2-slow.mp3",
-      "say": "Yes. That hallway noise is real, and tonight I can move you.",
+      "say": "I'm sorry about that noise. Maintenance can check the room at ten.",
       "hideGloss": false
     },
     {
       "id": "t19-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Will maintenance check the suite before I unpack my bag?",
-      "glossYue": "我打開行李之前，維修會唔會先檢查套房？",
+      "text": "Could I move to a quieter suite if the hallway stays this loud?",
+      "glossYue": "走廊如果仲大聲，可唔可以搬去靜啲嘅套房？",
       "audio": "assets/audio/lines/t19-l3.mp3",
       "audioSlow": "assets/audio/lines/t19-l3-slow.mp3",
-      "say": "Will maintenance check the suite before I unpack my bag?",
+      "say": "Could I move to a quieter suite if the hallway stays this loud?",
       "hideGloss": false
     },
     {
       "id": "t19-l4",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Yes. Maintenance will check that suite at ten, before you unpack.",
-      "glossYue": "會。維修十點檢查嗰間套房，喺你打開行李之前。",
+      "text": "Yes. A quieter suite is free upstairs, away from that hallway.",
+      "glossYue": "可以。樓上有間靜啲嘅房，遠離走廊。",
       "audio": "assets/audio/lines/t19-l4.mp3",
       "audioSlow": "assets/audio/lines/t19-l4-slow.mp3",
-      "say": "Yes. Maintenance will check that suite at ten, before you unpack.",
+      "say": "Yes. A quieter suite is free upstairs, away from that hallway.",
       "hideGloss": false
     },
     {
       "id": "t19-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can I face the harbour if that hallway stays noisy at night?",
-      "glossYue": "如果走廊夜晚仲嘈，可唔可以望住海港？",
+      "text": "Can that new room face the harbor instead of the street?",
+      "glossYue": "新房間可唔可以望海港，唔好望街？",
       "audio": "assets/audio/lines/t19-l5.mp3",
       "audioSlow": "assets/audio/lines/t19-l5-slow.mp3",
-      "say": "Can I face the harbour if that hallway stays noisy at night?",
+      "say": "Can that new room face the harbor instead of the street?",
       "hideGloss": false
     },
     {
       "id": "t19-l6",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Yes. Your next room can face the harbour, away from that hallway.",
-      "glossYue": "可以。下一間房可以望海港，遠離嗰條走廊。",
+      "text": "The harbor suite is ready, and I can move your bag there.",
+      "glossYue": "海港套房準備好，我可以幫你搬行李。",
       "audio": "assets/audio/lines/t19-l6.mp3",
       "audioSlow": "assets/audio/lines/t19-l6-slow.mp3",
-      "say": "Yes. Your next room can face the harbour, away from that hallway.",
+      "say": "The harbor suite is ready, and I can move your bag there.",
       "hideGloss": false
     },
     {
       "id": "t19-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "What time will maintenance finish if I keep this suite instead?",
+      "text": "What time will maintenance finish if I keep this suite?",
       "glossYue": "如果我留呢間套房，維修幾點做完？",
       "audio": "assets/audio/lines/t19-l7.mp3",
       "audioSlow": "assets/audio/lines/t19-l7-slow.mp3",
-      "say": "What time will maintenance finish if I keep this suite instead?",
+      "say": "What time will maintenance finish if I keep this suite?",
       "hideGloss": false
     },
     {
       "id": "t19-l8",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Yes. Maintenance will finish at ten, and the harbour room stays held.",
-      "glossYue": "可以。維修十點做完，海港嗰間房會留住。",
+      "text": "Maintenance will finish at noon, and the harbor room stays held.",
+      "glossYue": "維修中午做完，海港嗰間房會留住。",
       "audio": "assets/audio/lines/t19-l8.mp3",
       "audioSlow": "assets/audio/lines/t19-l8-slow.mp3",
-      "say": "Yes. Maintenance will finish at ten, and the harbour room stays held.",
+      "say": "Maintenance will finish at noon, and the harbor room stays held.",
       "hideGloss": false
     }
   ],
@@ -143,13 +143,13 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Yes. That hallway noise is real, and tonight I can move you.",
+        "line": "I'm sorry about that noise. Maintenance can check the room at ten.",
         "audio": "assets/audio/lines/t19-l2.mp3",
         "audioSlow": "assets/audio/lines/t19-l2-slow.mp3",
-        "expect": "Will maintenance check the suite before I unpack my bag?",
+        "expect": "Could I move to a quieter suite if the hallway stays this loud?",
         "keywords": [
-          "maintenance",
-          "suite"
+          "move",
+          "quieter"
         ],
         "modelAudio": "assets/audio/lines/t19-l3.mp3",
         "modelSlow": "assets/audio/lines/t19-l3-slow.mp3"
@@ -157,13 +157,13 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Yes. Maintenance will check that suite at ten, before you unpack.",
+        "line": "Yes. A quieter suite is free upstairs, away from that hallway.",
         "audio": "assets/audio/lines/t19-l4.mp3",
         "audioSlow": "assets/audio/lines/t19-l4-slow.mp3",
-        "expect": "Can I face the harbour if that hallway stays noisy at night?",
+        "expect": "Can that new room face the harbor instead of the street?",
         "keywords": [
-          "harbour",
-          "hallway"
+          "room",
+          "face"
         ],
         "modelAudio": "assets/audio/lines/t19-l5.mp3",
         "modelSlow": "assets/audio/lines/t19-l5-slow.mp3"
@@ -171,13 +171,13 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Yes. Your next room can face the harbour, away from that hallway.",
+        "line": "The harbor suite is ready, and I can move your bag there.",
         "audio": "assets/audio/lines/t19-l6.mp3",
         "audioSlow": "assets/audio/lines/t19-l6-slow.mp3",
-        "expect": "What time will maintenance finish if I keep this suite instead?",
+        "expect": "What time will maintenance finish if I keep this suite?",
         "keywords": [
-          "maintenance",
-          "finish"
+          "what",
+          "time"
         ],
         "modelAudio": "assets/audio/lines/t19-l7.mp3",
         "modelSlow": "assets/audio/lines/t19-l7-slow.mp3"
@@ -186,7 +186,7 @@
   },
   "understand": [
     {
-      "prompt": "Did the hallway noise keep you from moving me to a suite? 呢句即係點？",
+      "prompt": "The hallway noise kept me up, and I couldn't sleep at all. 呢句即係點？",
       "choices": [
         "套房",
         "嘈音",
@@ -196,7 +196,7 @@
       "explain": "嘈音。"
     },
     {
-      "prompt": "Yes. Maintenance will check that suite at ten, before you unpack. 呢句即係點？",
+      "prompt": "I'm sorry about that noise. Maintenance can check the room at ten. 呢句即係點？",
       "choices": [
         "維修",
         "走廊",
@@ -206,7 +206,7 @@
       "explain": "維修。"
     },
     {
-      "prompt": "Yes. Your next room can face the harbour, away from that hallway. 呢句即係點？",
+      "prompt": "Yes. A quieter suite is free upstairs, away from that hallway. 呢句即係點？",
       "choices": [
         "維修",
         "套房",
@@ -218,9 +218,9 @@
   ],
   "chunks": [
     {
-      "pattern": "Did the hallway ___ keep you from moving me to a suite?",
-      "example": "Did the hallway noise keep you from moving me to a suite?",
-      "glossYue": "走廊嘈音搞到我，可唔可以搬我去套房？",
+      "pattern": "The hallway ___ kept me up, and I couldn't sleep at all.",
+      "example": "The hallway noise kept me up, and I couldn't sleep at all.",
+      "glossYue": "走廊嘈音搞到我瞓唔著。",
       "answer": "noise",
       "choices": [
         "noise",
@@ -229,9 +229,9 @@
       ]
     },
     {
-      "pattern": "Will ___ check the suite before I unpack my bag?",
-      "example": "Will maintenance check the suite before I unpack my bag?",
-      "glossYue": "我打開行李之前，維修會唔會先檢查套房？",
+      "pattern": "I'm sorry about that noise. ___ can check the room at ten.",
+      "example": "I'm sorry about that noise. Maintenance can check the room at ten.",
+      "glossYue": "維修十點可以檢查間房。",
       "answer": "maintenance",
       "choices": [
         "maintenance",
@@ -240,9 +240,9 @@
       ]
     },
     {
-      "pattern": "Can I face the harbour if that ___ stays noisy at night?",
-      "example": "Can I face the harbour if that hallway stays noisy at night?",
-      "glossYue": "如果走廊夜晚仲嘈，可唔可以望住海港？",
+      "pattern": "Yes. A quieter suite is free upstairs, away from that ___.",
+      "example": "Yes. A quieter suite is free upstairs, away from that hallway.",
+      "glossYue": "遠離走廊。",
       "answer": "hallway",
       "choices": [
         "hallway",
@@ -256,9 +256,9 @@
       "type": "choice",
       "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
-        "Did the hallway noise keep you from moving me to a suite?",
-        "Will maintenance check the suite before I unpack my bag?",
-        "Can I face the harbour if that hallway stays noisy at night?"
+        "The hallway noise kept me up, and I couldn't sleep at all.",
+        "Could I move to a quieter suite if the hallway stays this loud?",
+        "Can that new room face the harbor instead of the street?"
       ],
       "answer": 1,
       "explain": "用呢句。"
@@ -267,29 +267,27 @@
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "Yes.",
         "Maintenance",
         "will",
         "finish",
         "at",
-        "ten,",
+        "noon,",
         "and",
         "the",
-        "harbour",
+        "harbor",
         "room",
         "stays",
         "held."
       ],
       "answer": [
-        "Yes.",
         "Maintenance",
         "will",
         "finish",
         "at",
-        "ten,",
+        "noon,",
         "and",
         "the",
-        "harbour",
+        "harbor",
         "room",
         "stays",
         "held."
@@ -321,7 +319,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Yes. A quieter suite is free upstairs, away from that hallway. 呢句入面，邊個意思先啱？",
       "choices": [
         "嘈音",
         "套房",
@@ -331,7 +329,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "I'm sorry about that noise. Maintenance can check the room at ten. 呢句入面，邊個意思先啱？",
       "choices": [
         "維修",
         "套房",
@@ -341,11 +339,11 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "The ___ noise kept me up, and I couldn't sleep at all. 呢句入面，邊個字先啱？",
       "choices": [
-        "noise",
+        "read",
         "hallway",
-        "suite"
+        "live"
       ],
       "answer": 1,
       "explain": "走廊。"
@@ -353,6 +351,6 @@
   ],
   "shadow": {
     "lineId": "t19-l1",
-    "hint": "Did the hallway noise keep you from moving me to a suite?"
+    "hint": "The hallway noise kept me up, and I couldn't sleep at all."
   }
 }
