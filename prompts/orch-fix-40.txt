@@ -1,0 +1,13 @@
+Phase 4 unlimited. Round 40. Read CURRICULUM.md + ART-STYLE.md + DUOLINGO-REF.md + SPEC.md + review/mockup-v1 (Penny-approved) + review/loop-r38/coder-audit.md and the newest review/loop-r39/coder-audit.md if present first.
+cd /workspace/sidequest/english-quest. Never touch the grokbot repo or the nightly panes. No paid services. Report files under review/ stay local (never commit review/loop-r*/ or review/style-gap/).
+
+## FIRST: close every open item from review/loop-r38/coder-audit.md and review/loop-r39/coder-audit.md. #90 (fixed answer-position template) and #91 (prompts that name the answer) are MAJOR and come first, then #92–#96 and #86, then any style item.
+## P0 STYLE (#79): every hero must match mockup-v1 soft flat pastel by the end of this round. Rebuild the full contact sheet and re-render any hero that still shows ink lines, hatching, saturated realistic shading or baby faces (check T6, J9, W8, J15 especially).
+
+## NEW FEATURE TARGET (≥3 new lessons)
+Add to CURRICULUM.md and ship end-to-end (12 beats, hero WebP 900×1200 in mockup-v1 style, lexicon CMUdict IPA, Kokoro audio, natural Cantonese, unique examples, same-scene distractors, per-item shuffled answers, tests), slotted so CEFR stays non-decreasing and avg words/line never drops >0.5:
+- **R12 — Booking a table for a group / 訂枱請客 · A2/B1** (party of eight, Friday 7:30, private room, minimum spend, deposit, high chair, confirm by text).
+- **W10 — Handling a customer complaint by email / 回覆客人投訴電郵 · B1/B2** (apologise, explain the delay, offer a refund or credit, next steps, polite closing).
+- **T14 — Missed connection at the airport / 轉機趕唔切 · B1** (delayed first flight, rebooking desk, next flight, meal voucher, checked bag transfer, boarding pass).
+Every dialogue must be a real exchange: each question answered by the next line, no repeated question already answered, no contradictions, no fragment repeated 3+ times, no padding words ("here", "for you", "today") added for length.
+Run tests + build; Lighthouse mobile Perf ≥98. Append "## Round 40" to CHANGELOG.md. Do not git commit.

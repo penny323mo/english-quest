@@ -11,3 +11,6 @@ Add to CURRICULUM.md and ship end-to-end (12 beats, hero WebP 900×1200 in mocku
 - **J17 — Pearl care and pricing / 珍珠保養同價錢 · B1** (freshwater vs saltwater, lustre, keep away from perfume, wipe after wearing, certificate, price range).
 Every dialogue must be a real exchange: each question answered, no contradictions, no fragment repeated 3+ times, no padding. Must pass the coherence, filler, because-padding, repetition (#89), distractor and progression tests.
 Run tests + build; Lighthouse mobile Perf ≥98. Append "## Round 39" to CHANGELOG.md. Do not git commit.
+
+## Coder r38 live audit additions (must also close this round)
+See review/loop-r38/coder-audit.md: #90 MAJOR shuffle quiz answer positions per item (49/63 lessons share [0,2,1,0,2]) + test; #91 MAJOR quiz prompts must not contain the answer (70/317 do) + test; #92 W9 dates/public-holiday coherence; #93 J16 date vs initials coherence; #94 R11 phrasing; #95 R11 first-paint blank hero; #96 add review/style-gap/ to .gitignore and stop committing it; #86 T12 remaining lines; J15/D9 small lines.
