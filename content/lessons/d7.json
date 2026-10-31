@@ -3,8 +3,8 @@
   "unit": "D",
   "titleYue": "剪頭髮",
   "titleEn": "At the hair salon",
-  "canDoYue": "你識話要剪短兩邊、留瀏海、洗頭吹乾，仲識問價錢同預約下次。",
-  "canDoEn": "Ask for a shorter trim, keep the fringe, wash and blow-dry, and book the next visit.",
+  "canDoYue": "你識講剪邊、留瀏海、洗頭同吹乾，再問價錢同預約下次。",
+  "canDoEn": "Ask for a trim and a light fringe, hear the price with a blow dry, and book the next visit.",
   "minutes": 12,
   "hero": "assets/art/lessons/d7.webp",
   "cast": [
@@ -36,11 +36,11 @@
       "id": "d7-l1",
       "speaker": "beau",
       "speakerLabel": "Beau",
-      "text": "I would like a simple trim at this salon today, please.",
-      "glossYue": "我今日想喺呢間髮型屋剪個簡單髮型。",
+      "text": "I would like a simple trim, and keep a light fringe.",
+      "glossYue": "我想剪個簡單髮型，瀏海留少少。",
       "audio": "assets/audio/lines/d7-l1.mp3",
       "audioSlow": "assets/audio/lines/d7-l1-slow.mp3",
-      "say": "I would like a simple trim at this salon today, please.",
+      "say": "I would like a simple trim, and keep a light fringe.",
       "hideGloss": false
     },
     {
@@ -48,7 +48,7 @@
       "speaker": "wynn",
       "speakerLabel": "Wynn",
       "text": "Would you like both sides shorter while I keep the fringe?",
-      "glossYue": "兩邊剪短啲，瀏海保留，好唔好？",
+      "glossYue": "兩邊剪短，瀏海保持，好唔好？",
       "audio": "assets/audio/lines/d7-l2.mp3",
       "audioSlow": "assets/audio/lines/d7-l2-slow.mp3",
       "say": "Would you like both sides shorter while I keep the fringe?",
@@ -58,105 +58,105 @@
       "id": "d7-l3",
       "speaker": "beau",
       "speakerLabel": "Beau",
-      "text": "Yes, please make both sides shorter and keep a light fringe.",
-      "glossYue": "好，兩邊剪短，留少少瀏海。",
+      "text": "Yes, please make both sides shorter for this trim.",
+      "glossYue": "好，兩邊剪短，呢次係剪髮。",
       "audio": "assets/audio/lines/d7-l3.mp3",
       "audioSlow": "assets/audio/lines/d7-l3-slow.mp3",
-      "say": "Yes, please make both sides shorter and keep a light fringe.",
+      "say": "Yes, please make both sides shorter for this trim.",
       "hideGloss": false
     },
     {
       "id": "d7-l4",
       "speaker": "beau",
       "speakerLabel": "Beau",
-      "text": "Can you wash my hair and then blow dry it here?",
-      "glossYue": "可唔可以喺度洗頭，然後吹乾？",
+      "text": "How much is it if you wash my hair here?",
+      "glossYue": "喺度洗頭，呢次幾多錢？",
       "audio": "assets/audio/lines/d7-l4.mp3",
       "audioSlow": "assets/audio/lines/d7-l4-slow.mp3",
-      "say": "Can you wash my hair and then blow dry it here?",
+      "say": "How much is it if you wash my hair here?",
       "hideGloss": false
     },
     {
       "id": "d7-l5",
       "speaker": "wynn",
       "speakerLabel": "Wynn",
-      "text": "Yes, I can wash it here, and the price covers a short dry.",
-      "glossYue": "可以喺度洗，價錢包一次短吹。",
+      "text": "Eighty dollars is how much it is, and the price covers the blow dry.",
+      "glossYue": "八十蚊就係呢個價錢，包吹乾。",
       "audio": "assets/audio/lines/d7-l5.mp3",
       "audioSlow": "assets/audio/lines/d7-l5-slow.mp3",
-      "say": "Yes, I can wash it here, and the price covers a short dry.",
+      "say": "Eighty dollars is how much it is, and the price covers the blow dry.",
       "hideGloss": false
     },
     {
       "id": "d7-l6",
       "speaker": "beau",
       "speakerLabel": "Beau",
-      "text": "What price is this trim if I book the next visit?",
-      "glossYue": "如果我預約下次，呢次剪髮幾多錢？",
+      "text": "Is it cheaper if I book my next short visit?",
+      "glossYue": "如果預約下次剪短少少，會唔會平啲？",
       "audio": "assets/audio/lines/d7-l6.mp3",
       "audioSlow": "assets/audio/lines/d7-l6-slow.mp3",
-      "say": "What price is this trim if I book the next visit?",
+      "say": "Is it cheaper if I book my next short visit?",
       "hideGloss": true
     },
     {
       "id": "d7-l7",
       "speaker": "wynn",
       "speakerLabel": "Wynn",
-      "text": "The price is eighty dollars if you come back next Friday.",
-      "glossYue": "下星期五返嚟就係八十蚊。",
+      "text": "The price is lower if you book the next visit on Friday.",
+      "glossYue": "預約下次星期五，價錢會低啲。",
       "audio": "assets/audio/lines/d7-l7.mp3",
       "audioSlow": "assets/audio/lines/d7-l7-slow.mp3",
-      "say": "The price is eighty dollars if you come back next Friday.",
+      "say": "The price is lower if you book the next visit on Friday.",
       "hideGloss": true
     },
     {
       "id": "d7-l8",
       "speaker": "beau",
       "speakerLabel": "Beau",
-      "text": "Please book the next short trim for me after this wash.",
-      "glossYue": "洗完請幫我預約下次短剪。",
+      "text": "Please book that next short trim for me after the wash.",
+      "glossYue": "洗完之後，請幫我預約下次剪髮。",
       "audio": "assets/audio/lines/d7-l8.mp3",
       "audioSlow": "assets/audio/lines/d7-l8-slow.mp3",
-      "say": "Please book the next short trim for me after this wash.",
+      "say": "Please book that next short trim for me after the wash.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "I would like a simple trim at this salon today, please. 呢句即係點？",
+      "prompt": "I would like a simple trim, and keep a light fringe. 呢句即係點？",
       "choices": [
-        "今日想喺度剪個簡單髮型",
-        "今日唔剪，只係洗髮",
-        "想預約下次先剪"
+        "想剪個簡單髮型，留瀏海",
+        "只係洗髮，唔剪",
+        "想預約下次先講價錢"
       ],
       "answer": 0,
-      "explain": "trim 係剪。salon 係髮型屋。"
+      "explain": "trim 係剪。fringe 係瀏海。"
     },
     {
-      "prompt": "Yes, please make both sides shorter and keep a light fringe. 呢句即係點？",
+      "prompt": "How much is it if you wash my hair here? 即係問緊咩？",
       "choices": [
-        "兩邊唔好剪，瀏海剪短",
-        "洗完先吹，唔係講瀏海",
-        "兩邊剪短，瀏海保留"
-      ],
-      "answer": 2,
-      "explain": "fringe 係瀏海。side 係側邊。"
-    },
-    {
-      "prompt": "What price is this trim if I book the next visit? 即係問緊咩？",
-      "choices": [
-        "下星期五先講價錢",
-        "如果預約下次，呢次剪髮幾多價錢",
-        "價錢包吹乾，唔係預約"
+        "問瀏海留幾長",
+        "問喺度洗頭價錢幾多",
+        "問星期五邊個師傅剪"
       ],
       "answer": 1,
-      "explain": "price 係價錢。book 係預約。"
+      "explain": "price 係價錢。wash 係洗。"
+    },
+    {
+      "prompt": "Is it cheaper if I book my next short visit? 即係問緊咩？",
+      "choices": [
+        "問吹乾包唔包",
+        "問兩邊剪幾短",
+        "問預約下次會唔會平啲"
+      ],
+      "answer": 2,
+      "explain": "book 係預約。"
     }
   ],
   "chunks": [
     {
-      "pattern": "I would like a simple ___ at this salon today, please.",
-      "example": "I would like a simple trim at this salon today, please.",
+      "pattern": "I would like a simple ___, and keep a light fringe.",
+      "example": "I would like a simple trim, and keep a light fringe.",
       "glossYue": "我想剪個簡單髮型。",
       "answer": "trim",
       "choices": [
@@ -166,66 +166,64 @@
       ]
     },
     {
-      "pattern": "Please make both sides shorter and keep a light ___.",
-      "example": "Please make both sides shorter and keep a light fringe.",
-      "glossYue": "留少少瀏海。",
-      "answer": "fringe",
-      "choices": [
-        "fringe",
-        "salon",
-        "wash"
-      ]
-    },
-    {
-      "pattern": "Can you wash my hair and then ___ it here after the trim?",
-      "example": "Can you wash my hair and then blow dry it here?",
-      "glossYue": "可唔可以吹乾？",
+      "pattern": "Eighty dollars is how much it is, and the price covers the ___.",
+      "example": "Eighty dollars is how much it is, and the price covers the blow dry.",
+      "glossYue": "價錢包吹乾。",
       "answer": "blow dry",
       "choices": [
         "blow dry",
         "book",
-        "price"
+        "fringe"
+      ]
+    },
+    {
+      "pattern": "The price is lower if you ___ the next visit on Friday.",
+      "example": "The price is lower if you book the next visit on Friday.",
+      "glossYue": "預約下次價錢會低啲。",
+      "answer": "book",
+      "choices": [
+        "book",
+        "wash",
+        "salon"
       ]
     }
   ],
   "shadow": {
     "lineId": "d7-l1",
-    "hint": "I would like a simple trim at this salon today, please."
+    "hint": "I would like a simple trim, and keep a light fringe."
   },
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想兩邊短、留瀏海。你點講？",
+      "promptYue": "你問價錢包唔包吹乾。你點講？",
       "choices": [
-        "Yes, please make both sides shorter and keep a light fringe.",
-        "Can you wash my hair and then blow dry it here?",
-        "Please book the next short trim for me after this wash."
+        "How much is it if you wash my hair here?",
+        "Is it cheaper if I book my next short visit?",
+        "I would like a simple trim, and keep a light fringe."
       ],
       "answer": 0,
-      "explain": "講 sides 同 fringe。"
+      "explain": "問 how much。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "Can",
-        "you",
-        "wash",
-        "my",
-        "hair"
+        "book",
+        "the",
+        "next",
+        "visit"
       ],
       "answer": [
-        "Can",
-        "you",
-        "wash",
-        "my",
-        "hair"
+        "book",
+        "the",
+        "next",
+        "visit"
       ]
     }
   ],
   "roleplay": {
     "you": "beau",
-    "intro": "你喺髮型屋。同 Wynn 講瀏海同價錢。可以講：fringe、price。",
+    "intro": "你剪頭髮。同 Wynn 講瀏海同價錢。可以講：trim、blow dry。",
     "turns": [
       {
         "partner": "Wynn",
@@ -233,10 +231,10 @@
         "line": "Would you like both sides shorter while I keep the fringe?",
         "audio": "assets/audio/lines/d7-l2.mp3",
         "audioSlow": "assets/audio/lines/d7-l2-slow.mp3",
-        "expect": "Yes, please make both sides shorter and keep a light fringe.",
+        "expect": "Yes, please make both sides shorter for this trim.",
         "keywords": [
           "sides",
-          "fringe"
+          "trim"
         ],
         "modelAudio": "assets/audio/lines/d7-l3.mp3",
         "modelSlow": "assets/audio/lines/d7-l3-slow.mp3"
@@ -244,13 +242,13 @@
       {
         "partner": "Wynn",
         "partnerId": "wynn",
-        "line": "Yes, I can wash it here, and the price covers a short dry.",
+        "line": "Eighty dollars is how much it is, and the price covers the blow dry.",
         "audio": "assets/audio/lines/d7-l5.mp3",
         "audioSlow": "assets/audio/lines/d7-l5-slow.mp3",
-        "expect": "What price is this trim if I book the next visit?",
+        "expect": "Is it cheaper if I book my next short visit?",
         "keywords": [
-          "price",
-          "trim"
+          "book",
+          "visit"
         ],
         "modelAudio": "assets/audio/lines/d7-l6.mp3",
         "modelSlow": "assets/audio/lines/d7-l6-slow.mp3"
@@ -258,13 +256,13 @@
       {
         "partner": "Wynn",
         "partnerId": "wynn",
-        "line": "The price is eighty dollars if you come back next Friday.",
+        "line": "The price is lower if you book the next visit on Friday.",
         "audio": "assets/audio/lines/d7-l7.mp3",
         "audioSlow": "assets/audio/lines/d7-l7-slow.mp3",
-        "expect": "Please book the next short trim for me after this wash.",
+        "expect": "Please book that next short trim for me after the wash.",
         "keywords": [
           "book",
-          "wash"
+          "trim"
         ],
         "modelAudio": "assets/audio/lines/d7-l8.mp3",
         "modelSlow": "assets/audio/lines/d7-l8-slow.mp3"
@@ -274,56 +272,56 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "聽一次，揀你喺髮型屋聽到嘅字：剪",
+      "prompt": "Listen once and pick the word you hear for a simple haircut: trim.",
       "lemma": "trim-noun",
       "choices": [
-        "trim",
-        "fringe",
-        "salon"
-      ],
-      "answer": 0
-    },
-    {
-      "type": "listen",
-      "prompt": "聽一次，揀你喺髮型屋聽到嘅字：瀏海",
-      "lemma": "fringe-noun",
-      "choices": [
-        "wash",
         "price",
-        "fringe"
-      ],
-      "answer": 2
-    },
-    {
-      "type": "meaning",
-      "prompt": "你講「I would like a simple trim at this salon today, please.」，trim 係咩意思？",
-      "choices": [
-        "預約",
-        "剪髮",
-        "價錢"
+        "trim",
+        "book"
       ],
       "answer": 1
     },
     {
-      "type": "meaning",
-      "prompt": "你講「Can you wash my hair and then blow dry it here?」，blow dry 係咩意思？",
+      "type": "listen",
+      "prompt": "Listen once and pick the phrase you hear for drying the hair: blow dry.",
+      "lemma": "blow-dry-phrase",
       "choices": [
-        "吹乾",
-        "瀏海",
-        "剪"
+        "blow dry",
+        "fringe",
+        "salon"
       ],
       "answer": 0
     },
     {
-      "type": "choice",
-      "prompt": "邊個字有 /l/：salon、trim、定 fringe？",
+      "type": "meaning",
+      "prompt": "You say 'Please keep a light fringe.' What does fringe mean?",
       "choices": [
-        "trim",
+        "瀏海",
+        "價錢",
+        "預約"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'The price covers the blow dry.' What does price mean?",
+      "choices": [
+        "剪",
+        "價錢",
+        "髮"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word has /aɪ/: price, fringe, or book?",
+      "choices": [
+        "book",
         "fringe",
-        "salon"
+        "price"
       ],
       "answer": 2,
-      "explain": "salon 有 /l/。trim 同 fringe 冇。"
+      "explain": "price 有 /aɪ/。"
     }
   ],
   "sound": {

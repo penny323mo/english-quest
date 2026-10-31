@@ -3,7 +3,7 @@
   "unit": "R",
   "titleYue": "咖啡店落單",
   "titleEn": "Ordering at a café",
-  "canDoYue": "你識喺咖啡店叫拿鐵，揀熱定凍、大細、燕麥奶，同埋堂食定走杯，再將個名寫上杯。",
+  "canDoYue": "你識喺咖啡店叫拿鐵，揀熱定凍、大細、燕麥奶，同埋堂食定拎走，再將個名寫上杯。",
   "canDoEn": "Order a latte, choose hot or iced, a size, oat milk, for here or to go, and put your name on the cup.",
   "minutes": 12,
   "hero": "assets/art/lessons/r10.webp",
@@ -26,7 +26,7 @@
     "凍",
     "大細",
     "燕麥",
-    "走杯",
+    "拎走",
     "杯",
     "名字",
     "to go"
@@ -37,11 +37,11 @@
       "id": "r10-l1",
       "speaker": "cleo",
       "speakerLabel": "Cleo",
-      "text": "Good morning, I would like one latte, please.",
+      "text": "Good morning, I would like a latte, please.",
       "glossYue": "早晨，我想要一杯拿鐵。",
       "audio": "assets/audio/lines/r10-l1.mp3",
       "audioSlow": "assets/audio/lines/r10-l1-slow.mp3",
-      "say": "Good morning, I would like one latte, please.",
+      "say": "Good morning, I would like a latte, please.",
       "hideGloss": false
     },
     {
@@ -92,11 +92,11 @@
       "id": "r10-l6",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Is this cup for here, or is it to go?",
-      "glossYue": "呢杯堂食定走杯？",
+      "text": "Would you like this cup for here, or to go?",
+      "glossYue": "呢杯堂食定拎走？",
       "audio": "assets/audio/lines/r10-l6.mp3",
       "audioSlow": "assets/audio/lines/r10-l6-slow.mp3",
-      "say": "Is this cup for here, or is it to go?",
+      "say": "Would you like this cup for here, or to go?",
       "hideGloss": false
     },
     {
@@ -104,7 +104,7 @@
       "speaker": "cleo",
       "speakerLabel": "Cleo",
       "text": "To go, please, and please keep the small size.",
-      "glossYue": "走杯，大細保持細杯。",
+      "glossYue": "拎走，大細保持細杯。",
       "audio": "assets/audio/lines/r10-l7.mp3",
       "audioSlow": "assets/audio/lines/r10-l7-slow.mp3",
       "say": "To go, please, and please keep the small size.",
@@ -115,7 +115,7 @@
       "speaker": "mira",
       "speakerLabel": "Mira",
       "text": "Here is your iced latte in a cup, and it is ready to go.",
-      "glossYue": "你杯凍拿鐵喺呢度，可以走杯。",
+      "glossYue": "你杯凍拿鐵喺呢度，可以拎走。",
       "audio": "assets/audio/lines/r10-l8.mp3",
       "audioSlow": "assets/audio/lines/r10-l8-slow.mp3",
       "say": "Here is your iced latte in a cup, and it is ready to go.",
@@ -124,7 +124,7 @@
   ],
   "understand": [
     {
-      "prompt": "Good morning, I would like one latte, please. 呢句即係點？",
+      "prompt": "Good morning, I would like a latte, please. 呢句即係點？",
       "choices": [
         "想要一杯拿鐵",
         "想要凍飲，唔係拿鐵",
@@ -138,26 +138,26 @@
       "choices": [
         "問名字點寫",
         "問熱定凍",
-        "問走杯定堂食"
+        "問拎走定堂食"
       ],
       "answer": 1,
       "explain": "iced 係凍。"
     },
     {
-      "prompt": "Is this cup for here, or is it to go? 即係問緊咩？",
+      "prompt": "Would you like this cup for here, or to go? 即係問緊咩？",
       "choices": [
         "問燕麥奶",
-        "問堂食定走杯",
+        "問堂食定拎走",
         "問大細"
       ],
       "answer": 1,
-      "explain": "to go 係走杯。cup 係杯。"
+      "explain": "to go 係拎走。cup 係杯。"
     }
   ],
   "chunks": [
     {
-      "pattern": "I would like one ___, please.",
-      "example": "Good morning, I would like one latte, please.",
+      "pattern": "I would like a ___, please.",
+      "example": "Good morning, I would like a latte, please.",
       "glossYue": "我想要一杯拿鐵。",
       "answer": "latte",
       "choices": [
@@ -178,9 +178,9 @@
       ]
     },
     {
-      "pattern": "Is this cup for here, or is it ___?",
-      "example": "Is this cup for here, or is it to go?",
-      "glossYue": "呢杯堂食定走杯？",
+      "pattern": "Would you like this cup for here, or ___?",
+      "example": "Would you like this cup for here, or to go?",
+      "glossYue": "呢杯堂食定拎走？",
       "answer": "to go",
       "choices": [
         "to go",
@@ -191,7 +191,7 @@
   ],
   "shadow": {
     "lineId": "r10-l1",
-    "hint": "Good morning, I would like one latte, please."
+    "hint": "Good morning, I would like a latte, please."
   },
   "build": [
     {
@@ -224,7 +224,7 @@
   ],
   "roleplay": {
     "you": "cleo",
-    "intro": "你喺咖啡店。同 Mira 講拿鐵同走杯。可以講：latte、oat milk。",
+    "intro": "你喺咖啡店。同 Mira 講拿鐵同拎走。可以講：latte、oat milk。",
     "turns": [
       {
         "partner": "Mira",
@@ -257,7 +257,7 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "Is this cup for here, or is it to go?",
+        "line": "Would you like this cup for here, or to go?",
         "audio": "assets/audio/lines/r10-l6.mp3",
         "audioSlow": "assets/audio/lines/r10-l6-slow.mp3",
         "expect": "To go, please, and please keep the small size.",
@@ -296,7 +296,7 @@
       "type": "meaning",
       "prompt": "You say 'Please use oat milk in the latte.' What does oat milk mean?",
       "choices": [
-        "走杯",
+        "拎走",
         "燕麥",
         "名字"
       ],

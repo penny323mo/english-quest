@@ -3,8 +3,8 @@
   "unit": "T",
   "titleYue": "搭港鐵同增值",
   "titleEn": "MTR and Octopus top-up",
-  "canDoYue": "你識問邊條線、喺邊轉車、用邊個出口，幫八達通增值，同埋問單程票幾多錢。",
-  "canDoEn": "Ask which line, where to change, which exit, how to top up an Octopus card, and the price of a single journey ticket.",
+  "canDoYue": "你識問邊條線直達中環、邊個出口最近，再增值八達通同買單程票。",
+  "canDoEn": "Stay on the Island line to Central, ask which exit is closest, top up an Octopus card, and buy a single journey ticket.",
   "minutes": 12,
   "hero": "assets/art/lessons/t11.webp",
   "cast": [
@@ -34,44 +34,44 @@
       "id": "t11-l1",
       "speaker": "hana",
       "speakerLabel": "Hana",
-      "text": "Which line goes to Central from this station this morning, please?",
-      "glossYue": "請問今朝邊條線由呢個站去中環？",
+      "text": "Which line goes to Central from this station, please?",
+      "glossYue": "請問呢個站邊條線去中環？",
       "audio": "assets/audio/lines/t11-l1.mp3",
       "audioSlow": "assets/audio/lines/t11-l1-slow.mp3",
-      "say": "Which line goes to Central from this station this morning, please?",
+      "say": "Which line goes to Central from this station, please?",
       "hideGloss": false
     },
     {
       "id": "t11-l2",
       "speaker": "otto",
       "speakerLabel": "Otto",
-      "text": "Please take the Island line, and change at Admiralty for Central.",
-      "glossYue": "請搭港島線，喺金鐘轉去中環。",
+      "text": "Please stay on the Island line, and it stops at Central.",
+      "glossYue": "請留喺港島線，呢條線會停中環。",
       "audio": "assets/audio/lines/t11-l2.mp3",
       "audioSlow": "assets/audio/lines/t11-l2-slow.mp3",
-      "say": "Please take the Island line, and change at Admiralty for Central.",
+      "say": "Please stay on the Island line, and it stops at Central.",
       "hideGloss": false
     },
     {
       "id": "t11-l3",
       "speaker": "hana",
       "speakerLabel": "Hana",
-      "text": "Which exit is closest after I change at Admiralty, please?",
-      "glossYue": "喺金鐘轉車之後，邊個出口最近？",
+      "text": "Which exit is closest when I arrive at Central, please?",
+      "glossYue": "我去到中環，邊個出口最近？",
       "audio": "assets/audio/lines/t11-l3.mp3",
       "audioSlow": "assets/audio/lines/t11-l3-slow.mp3",
-      "say": "Which exit is closest after I change at Admiralty, please?",
+      "say": "Which exit is closest when I arrive at Central, please?",
       "hideGloss": false
     },
     {
       "id": "t11-l4",
       "speaker": "otto",
       "speakerLabel": "Otto",
-      "text": "Use exit A, and it is a short walk to the street.",
-      "glossYue": "用 A 出口，行幾步就到街。",
+      "text": "Use exit A, and it is a short walk out to the street.",
+      "glossYue": "用 A 出口，行少少就到街。",
       "audio": "assets/audio/lines/t11-l4.mp3",
       "audioSlow": "assets/audio/lines/t11-l4-slow.mp3",
-      "say": "Use exit A, and it is a short walk to the street.",
+      "say": "Use exit A, and it is a short walk out to the street.",
       "hideGloss": false
     },
     {
@@ -79,7 +79,7 @@
       "speaker": "hana",
       "speakerLabel": "Hana",
       "text": "I need to top up my Octopus card before I ride.",
-      "glossYue": "上車之前我要幫八達通增值。",
+      "glossYue": "上車之前我要增值八達通。",
       "audio": "assets/audio/lines/t11-l5.mp3",
       "audioSlow": "assets/audio/lines/t11-l5-slow.mp3",
       "say": "I need to top up my Octopus card before I ride.",
@@ -90,7 +90,7 @@
       "speaker": "otto",
       "speakerLabel": "Otto",
       "text": "You can top up twenty dollars at this machine by the gate.",
-      "glossYue": "你可以喺閘旁邊部機增值二十蚊。",
+      "glossYue": "閘機旁邊部機可以增值二十蚊。",
       "audio": "assets/audio/lines/t11-l6.mp3",
       "audioSlow": "assets/audio/lines/t11-l6-slow.mp3",
       "say": "You can top up twenty dollars at this machine by the gate.",
@@ -101,7 +101,7 @@
       "speaker": "hana",
       "speakerLabel": "Hana",
       "text": "How much is a single journey ticket to Central station?",
-      "glossYue": "去中環站嘅單程票幾多錢？",
+      "glossYue": "去中環站一張單程票幾多錢？",
       "audio": "assets/audio/lines/t11-l7.mp3",
       "audioSlow": "assets/audio/lines/t11-l7-slow.mp3",
       "say": "How much is a single journey ticket to Central station?",
@@ -111,31 +111,31 @@
       "id": "t11-l8",
       "speaker": "otto",
       "speakerLabel": "Otto",
-      "text": "That ticket is twelve dollars, and you can pay at the machine there.",
-      "glossYue": "嗰張票十二蚊，你可以喺部機付款。",
+      "text": "That ticket is twelve dollars, and you can pay at the machine over there.",
+      "glossYue": "呢張票十二蚊，你可以喺嗰部機畀錢。",
       "audio": "assets/audio/lines/t11-l8.mp3",
       "audioSlow": "assets/audio/lines/t11-l8-slow.mp3",
-      "say": "That ticket is twelve dollars, and you can pay at the machine there.",
+      "say": "That ticket is twelve dollars, and you can pay at the machine over there.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Which line goes to Central from this station this morning, please? 即係問緊咩？",
+      "prompt": "Which line goes to Central from this station, please? 即係問緊咩？",
       "choices": [
         "問邊條線路去中環",
-        "問出口喺邊",
-        "問八達通增值幾多"
+        "問邊個出口最近",
+        "問單程票幾多錢"
       ],
       "answer": 0,
       "explain": "line 係線路。"
     },
     {
-      "prompt": "Which exit is closest after I change at Admiralty, please? 即係問緊咩？",
+      "prompt": "Which exit is closest when I arrive at Central, please? 即係問緊咩？",
       "choices": [
-        "問單程票幾多錢",
-        "問轉車後邊個出口最近",
-        "問邊條線路"
+        "問八達通點增值",
+        "問邊個出口最近",
+        "問留唔留喺港島線路"
       ],
       "answer": 1,
       "explain": "exit 係出口。"
@@ -143,19 +143,19 @@
     {
       "prompt": "How much is a single journey ticket to Central station? 即係問緊咩？",
       "choices": [
-        "問出口",
-        "問增值幾多",
+        "問出口 A 點行",
+        "問增值二十蚊喺邊",
         "問單程票幾多錢"
       ],
       "answer": 2,
-      "explain": "single journey 係單程。ticket 係票。"
+      "explain": "ticket 係票。single journey 係單程。"
     }
   ],
   "chunks": [
     {
-      "pattern": "Which ___ goes to Central from this station this morning, please?",
-      "example": "Which line goes to Central from this station this morning, please?",
-      "glossYue": "邊條線去中環？",
+      "pattern": "Please stay on the Island ___, and it stops at Central.",
+      "example": "Please stay on the Island line, and it stops at Central.",
+      "glossYue": "留喺港島線。",
       "answer": "line",
       "choices": [
         "line",
@@ -164,20 +164,20 @@
       ]
     },
     {
-      "pattern": "You can ___ twenty dollars at this machine by the gate.",
-      "example": "You can top up twenty dollars at this machine by the gate.",
-      "glossYue": "你可以喺閘旁邊部機增值。",
+      "pattern": "I need to ___ my Octopus card before I ride.",
+      "example": "I need to top up my Octopus card before I ride.",
+      "glossYue": "我要增值八達通。",
       "answer": "top up",
       "choices": [
         "top up",
         "exit",
-        "ticket"
+        "line"
       ]
     },
     {
       "pattern": "How much is a single journey ___ to Central station?",
       "example": "How much is a single journey ticket to Central station?",
-      "glossYue": "單程票去中環站幾多錢？",
+      "glossYue": "單程票幾多錢？",
       "answer": "ticket",
       "choices": [
         "ticket",
@@ -188,50 +188,51 @@
   ],
   "shadow": {
     "lineId": "t11-l1",
-    "hint": "Which line goes to Central from this station this morning, please?"
+    "hint": "Which line goes to Central from this station, please?"
   },
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想增值八達通。你點講？",
+      "promptYue": "你問中環邊個出口最近。你點講？",
       "choices": [
-        "I need to top up my Octopus card before I ride.",
-        "Which exit is closest after I change at Admiralty, please?",
+        "Which exit is closest when I arrive at Central, please?",
+        "Which line goes to Central from this station, please?",
         "How much is a single journey ticket to Central station?"
       ],
       "answer": 0,
-      "explain": "講 top up 同 Octopus card。"
+      "explain": "問 exit。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "Use",
-        "exit",
-        "A",
-        "please"
+        "top",
+        "up",
+        "Octopus",
+        "card"
       ],
       "answer": [
-        "Use",
-        "exit",
-        "A",
-        "please"
+        "top",
+        "up",
+        "Octopus",
+        "card"
       ]
     }
   ],
   "roleplay": {
     "you": "hana",
-    "intro": "你喺港鐵站。同 Otto 講線路同增值。可以講：line、top up。",
+    "intro": "你搭港鐵。同 Otto 講線路同八達通。可以講：line、exit。",
     "turns": [
       {
         "partner": "Otto",
         "partnerId": "otto",
-        "line": "Please take the Island line, and change at Admiralty for Central.",
+        "line": "Please stay on the Island line, and it stops at Central.",
         "audio": "assets/audio/lines/t11-l2.mp3",
         "audioSlow": "assets/audio/lines/t11-l2-slow.mp3",
-        "expect": "Which exit is closest after I change at Admiralty, please?",
+        "expect": "Which exit is closest when I arrive at Central, please?",
         "keywords": [
-          "exit"
+          "exit",
+          "Central"
         ],
         "modelAudio": "assets/audio/lines/t11-l3.mp3",
         "modelSlow": "assets/audio/lines/t11-l3-slow.mp3"
@@ -239,7 +240,7 @@
       {
         "partner": "Otto",
         "partnerId": "otto",
-        "line": "Use exit A, and it is a short walk to the street.",
+        "line": "Use exit A, and it is a short walk out to the street.",
         "audio": "assets/audio/lines/t11-l4.mp3",
         "audioSlow": "assets/audio/lines/t11-l4-slow.mp3",
         "expect": "I need to top up my Octopus card before I ride.",
@@ -258,8 +259,7 @@
         "audioSlow": "assets/audio/lines/t11-l6-slow.mp3",
         "expect": "How much is a single journey ticket to Central station?",
         "keywords": [
-          "ticket",
-          "journey"
+          "ticket"
         ],
         "modelAudio": "assets/audio/lines/t11-l7.mp3",
         "modelSlow": "assets/audio/lines/t11-l7-slow.mp3"
@@ -269,56 +269,56 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word for the train route at this station: line.",
+      "prompt": "Listen once and pick the word you hear for the train route: line.",
       "lemma": "line-noun",
-      "choices": [
-        "line",
-        "exit",
-        "ticket"
-      ],
-      "answer": 0
-    },
-    {
-      "type": "listen",
-      "prompt": "Listen once and pick the word for the station door after you change trains: exit.",
-      "lemma": "exit-noun",
       "choices": [
         "ticket",
         "line",
         "exit"
       ],
-      "answer": 2
-    },
-    {
-      "type": "meaning",
-      "prompt": "You say 'I need to top up my Octopus card before I ride.' What does top up mean?",
-      "choices": [
-        "出口",
-        "增值",
-        "單程"
-      ],
       "answer": 1
     },
     {
-      "type": "meaning",
-      "prompt": "You say 'How much is a single journey ticket to Central station?' What does single journey mean?",
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear for the way out of the station: exit.",
+      "lemma": "exit-noun",
       "choices": [
-        "單程",
-        "線路",
-        "增值"
+        "exit",
+        "line",
+        "ticket"
       ],
       "answer": 0
     },
     {
+      "type": "meaning",
+      "prompt": "You say 'Please stay on the Island line.' What does line mean?",
+      "choices": [
+        "線路",
+        "出口",
+        "票"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'That ticket is twelve dollars.' What does ticket mean?",
+      "choices": [
+        "增值",
+        "票",
+        "八達通"
+      ],
+      "answer": 1
+    },
+    {
       "type": "choice",
-      "prompt": "Which word has the vowel in exit: exit, line, or ticket?",
+      "prompt": "Which word has /ɪ/: exit, line, or ticket?",
       "choices": [
         "line",
         "ticket",
         "exit"
       ],
       "answer": 2,
-      "explain": "exit 有 /ɛ/。"
+      "explain": "exit 有 /ɪ/。"
     }
   ],
   "sound": {

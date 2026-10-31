@@ -9327,17 +9327,17 @@
       "arpabet": "W AY1 T G OW1 L D",
       "audio": "assets/audio/words/white-gold-phrase.mp3",
       "audioSlow": "assets/audio/words/white-gold-phrase-slow.mp3",
-      "glossYue": "白金",
-      "glossZh": "白金",
+      "glossYue": "白K金",
+      "glossZh": "白K金",
       "jyutping": "baak6 gam1",
       "collocations": [
         "white gold ring"
       ],
       "example": "This ring is white gold.",
-      "exampleYue": "呢隻戒指係白金。",
+      "exampleYue": "呢隻戒指係白K金。",
       "say": "This ring is white gold.",
       "variants": [],
-      "note": "教 W AY1 T，唔教 HH W AY1 T。白金唔係鉑金。",
+      "note": "教 W AY1 T，唔教 HH W AY1 T。白K金唔係鉑金。",
       "sources": [
         "CMUdict 0.7b"
       ],
@@ -9348,8 +9348,8 @@
       "phrase": true,
       "audioSha256": "4a3a3f0aa539ceab773600a07b2ddfd7aa02f20b796e39c37bd53dda5c8a9e6d",
       "register": "櫃檯",
-      "usageNotes": "white gold 係白金，唔係鉑金。",
-      "pitfallsYue": "白金唔等於 platinum。客人問白金，唔好攞鉑金出嚟。",
+      "usageNotes": "white gold 係白K金，唔係鉑金。",
+      "pitfallsYue": "白K金唔等於 platinum。客人問白K金，唔好攞鉑金出嚟。",
       "related": [
         "platinum-noun",
         "gold-noun"
@@ -9357,14 +9357,14 @@
       "examples": [
         {
           "en": "This ring is white gold.",
-          "yue": "呢隻戒指係白金。",
+          "yue": "呢隻戒指係白K金。",
           "audio": "assets/audio/words/white-gold-phrase.mp3",
           "audioSlow": "assets/audio/words/white-gold-phrase-slow.mp3",
           "say": "This ring is white gold."
         },
         {
           "en": "White gold is not platinum.",
-          "yue": "白金唔等於鉑金。",
+          "yue": "白K金唔等於鉑金。",
           "audio": "assets/audio/words/white-gold-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/white-gold-phrase-ex2-slow.mp3",
           "say": "White gold is not [[plˈætənəm]]."
@@ -9477,7 +9477,7 @@
       "audioSha256": "f99489053019c86ec8701045e1fefbc0fe1f68cac166112c5e22da52fbb13a97",
       "register": "櫃檯",
       "usageNotes": "This band is platinum. 三個音節。",
-      "pitfallsYue": "中間係 ə，唔好讀成兩節。白金唔係鉑金。",
+      "pitfallsYue": "中間係 ə，唔好讀成兩節。白K金唔係鉑金。",
       "related": [
         "white-gold-phrase",
         "expensive-adj"
@@ -15022,9 +15022,9 @@
         "a landmark",
         "at the landmark"
       ],
-      "example": "The hotel is the landmark.",
-      "exampleYue": "酒店就係地標。",
-      "say": "The hotel is the landmark.",
+      "example": "Turn left at the landmark.",
+      "exampleYue": "喺地標轉左。",
+      "say": "Turn left at the landmark.",
       "variants": [],
       "note": "",
       "sources": [
@@ -15035,7 +15035,7 @@
       "senseMismatch": false,
       "cmuLemma": "landmark",
       "phrase": false,
-      "audioSha256": "3354d7dc79391ddc3864d1cb61b4729511e1fd2c214a53eb6059ffd1f261b071",
+      "audioSha256": "e7a1096c02527b3e4740c921d4446cecb50ab687dc641b434147f9ac4b170e09",
       "register": "出行",
       "usageNotes": "用地標講位置。",
       "pitfallsYue": "有 /l/，開頭舌尖抵住。",
@@ -15045,18 +15045,18 @@
       ],
       "examples": [
         {
-          "en": "The hotel is the landmark.",
-          "yue": "酒店就係地標。",
-          "audio": "assets/audio/words/landmark-noun.mp3",
-          "audioSlow": "assets/audio/words/landmark-noun-slow.mp3",
-          "say": "The hotel is the landmark."
-        },
-        {
           "en": "Turn left at the landmark.",
           "yue": "喺地標轉左。",
+          "audio": "assets/audio/words/landmark-noun.mp3",
+          "audioSlow": "assets/audio/words/landmark-noun-slow.mp3",
+          "say": "Turn left at the landmark."
+        },
+        {
+          "en": "Walk straight to the landmark.",
+          "yue": "直行去地標。",
           "audio": "assets/audio/words/landmark-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/landmark-noun-ex2-slow.mp3",
-          "say": "Turn left at the landmark."
+          "say": "Walk straight to the landmark."
         }
       ]
     },
@@ -34097,25 +34097,24 @@
       "lemma": "blow dry",
       "pos": "phrase",
       "senseId": "style-dry",
-      "ipa": "/ˈbloʊ ˈdɹaɪ/",
+      "ipa": "/ˌbloʊ ˈdɹaɪ/",
       "syllables": [
         "blow",
         "dry"
       ],
       "syllableIpa": [
-        "ˈbloʊ",
+        "ˌbloʊ",
         "ˈdɹaɪ"
       ],
-      "stress": 1,
-      "arpabet": "B L OW1 | D R AY1",
+      "stress": 2,
+      "arpabet": "B L OW2 | D R AY1",
       "audio": "assets/audio/words/blow-dry-phrase.mp3",
       "audioSlow": "assets/audio/words/blow-dry-phrase-slow.mp3",
       "glossYue": "吹乾",
       "glossZh": "吹乾",
       "jyutping": "ceoi1 gon1",
       "collocations": [
-        "blow dry",
-        "a short dry"
+        "blow dry"
       ],
       "example": "Can you blow dry my hair here?",
       "exampleYue": "可唔可以喺度吹乾？",
@@ -34144,11 +34143,11 @@
           "say": "Can you blow dry my hair here?"
         },
         {
-          "en": "A short blow dry is part of the price.",
-          "yue": "價錢包一次短吹。",
+          "en": "Please blow dry my hair after the wash.",
+          "yue": "洗完之後請吹乾頭髮。",
           "audio": "assets/audio/words/blow-dry-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/blow-dry-phrase-ex2-slow.mp3",
-          "say": "A short blow dry is part of the price."
+          "say": "Please blow dry my hair after the wash."
         }
       ]
     },
@@ -34215,17 +34214,17 @@
       "lemma": "on track",
       "pos": "phrase",
       "senseId": "as-planned",
-      "ipa": "/ˈɑn ˈtɹæk/",
+      "ipa": "/ɑn ˈtɹæk/",
       "syllables": [
         "on",
         "track"
       ],
       "syllableIpa": [
-        "ˈɑn",
+        "ɑn",
         "ˈtɹæk"
       ],
-      "stress": 1,
-      "arpabet": "AA1 N | T R AE1 K",
+      "stress": 2,
+      "arpabet": "AA0 N | T R AE1 K",
       "audio": "assets/audio/words/on-track-phrase.mp3",
       "audioSlow": "assets/audio/words/on-track-phrase-slow.mp3",
       "glossYue": "跟得上進度",
@@ -34339,19 +34338,19 @@
       "lemma": "follow up",
       "pos": "verb",
       "senseId": "check-back",
-      "ipa": "/ˈfɑ.loʊ ˈʌp/",
+      "ipa": "/ˌfɑ.loʊ ˈʌp/",
       "syllables": [
         "fol",
         "low",
         "up"
       ],
       "syllableIpa": [
-        "ˈfɑ",
+        "ˌfɑ",
         "loʊ",
         "ˈʌp"
       ],
-      "stress": 1,
-      "arpabet": "F AA1 L OW0 | AH1 P",
+      "stress": 3,
+      "arpabet": "F AA2 L OW0 | AH1 P",
       "audio": "assets/audio/words/follow-up-verb.mp3",
       "audioSlow": "assets/audio/words/follow-up-verb-slow.mp3",
       "glossYue": "跟進",
@@ -34654,15 +34653,15 @@
       "arpabet": "Y EH1 L OW0 | G OW1 L D",
       "audio": "assets/audio/words/yellow-gold-phrase.mp3",
       "audioSlow": "assets/audio/words/yellow-gold-phrase-slow.mp3",
-      "glossYue": "黃金",
-      "glossZh": "黃金",
+      "glossYue": "黃K金",
+      "glossZh": "黃K金",
       "jyutping": "wong4 gam1",
       "collocations": [
         "yellow gold",
         "in yellow gold"
       ],
       "example": "Yellow gold suits this stone well.",
-      "exampleYue": "黃金適合呢粒石。",
+      "exampleYue": "黃K金適合呢粒石。",
       "say": "Yellow gold suits this stone well.",
       "variants": [],
       "note": "",
@@ -34676,20 +34675,20 @@
       "phrase": true,
       "audioSha256": "976a2a0362a58a3d44935ce577302a42a5d50190ae6ac93b69b00a3d074ea005",
       "register": "珠寶",
-      "usageNotes": "yellow gold 係黃金。",
-      "pitfallsYue": "yellow gold 係黃金，唔係白金。",
+      "usageNotes": "yellow gold 係黃K金。",
+      "pitfallsYue": "yellow gold 係黃K金，唔係白K金。",
       "related": [],
       "examples": [
         {
           "en": "Yellow gold suits this stone well.",
-          "yue": "黃金適合呢粒石。",
+          "yue": "黃K金適合呢粒石。",
           "audio": "assets/audio/words/yellow-gold-phrase.mp3",
           "audioSlow": "assets/audio/words/yellow-gold-phrase-slow.mp3",
           "say": "Yellow gold suits this stone well."
         },
         {
           "en": "Is yellow gold a better choice for this stone?",
-          "yue": "黃金會唔會更適合呢粒石？",
+          "yue": "黃K金會唔會更適合呢粒石？",
           "audio": "assets/audio/words/yellow-gold-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/yellow-gold-phrase-ex2-slow.mp3",
           "say": "Is yellow gold a better choice for this stone?"
@@ -34950,16 +34949,16 @@
       "arpabet": "T AH0 | G OW1",
       "audio": "assets/audio/words/to-go-phrase.mp3",
       "audioSlow": "assets/audio/words/to-go-phrase-slow.mp3",
-      "glossYue": "走杯",
-      "glossZh": "走杯",
+      "glossYue": "拎走",
+      "glossZh": "拎走",
       "jyutping": "zau2 bui1",
       "collocations": [
         "to go",
         "for here or to go"
       ],
-      "example": "This cup is to go, please.",
-      "exampleYue": "呢杯走杯，唔該。",
-      "say": "This cup is to go, please.",
+      "example": "I would like this latte to go.",
+      "exampleYue": "我想呢杯拿鐵拎走。",
+      "say": "I would like this latte to go.",
       "variants": [],
       "note": "",
       "sources": [
@@ -34970,22 +34969,22 @@
       "senseMismatch": false,
       "cmuLemma": "to go",
       "phrase": true,
-      "audioSha256": "e70241e5e2f9f0c1c53328ea6b9df697e065b3f251e6d620c6bc0a5fd41a7dc3",
+      "audioSha256": "014f717d4fe884297676a6d57c1ef2dfbefdbf0f65c7e64f45774bad6740a887",
       "register": "餐廳",
-      "usageNotes": "to go 係走杯。",
-      "pitfallsYue": "to go 係走杯，唔係堂食。",
+      "usageNotes": "to go 係拎走。",
+      "pitfallsYue": "to go 係拎走，唔係堂食。",
       "related": [],
       "examples": [
         {
-          "en": "This cup is to go, please.",
-          "yue": "呢杯走杯，唔該。",
+          "en": "I would like this latte to go.",
+          "yue": "我想呢杯拿鐵拎走。",
           "audio": "assets/audio/words/to-go-phrase.mp3",
           "audioSlow": "assets/audio/words/to-go-phrase-slow.mp3",
-          "say": "This cup is to go, please."
+          "say": "I would like this latte to go."
         },
         {
           "en": "I would like the drink to go.",
-          "yue": "呢杯飲品我要走杯。",
+          "yue": "呢杯飲品我要拎走。",
           "audio": "assets/audio/words/to-go-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/to-go-phrase-ex2-slow.mp3",
           "say": "I would like the drink to go."
@@ -35308,8 +35307,8 @@
       "arpabet": "AE1 K S EH2 S",
       "audio": "assets/audio/words/access-noun.mp3",
       "audioSlow": "assets/audio/words/access-noun-slow.mp3",
-      "glossYue": "入屋",
-      "glossZh": "入屋",
+      "glossYue": "入單位",
+      "glossZh": "入單位",
       "jyutping": "jap6 uk1",
       "collocations": [
         "access to the flat",
@@ -35330,7 +35329,7 @@
       "phrase": false,
       "audioSha256": "c47c95b8dd58d810cf84c551ba36ade172f79be971ed23c5487aa5b4b08a3481",
       "register": "日常生活",
-      "usageNotes": "access 係入屋權。",
+      "usageNotes": "access 係入單位權。",
       "pitfallsYue": "access 係入到屋，唔係出口。",
       "related": [],
       "examples": [
@@ -35343,7 +35342,7 @@
         },
         {
           "en": "I can leave access with the front guard.",
-          "yue": "我可以將入屋安排交畀前門保安。",
+          "yue": "我可以將入單位安排交畀前門保安。",
           "audio": "assets/audio/words/access-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/access-noun-ex2-slow.mp3",
           "say": "I can leave access with the front guard."
@@ -35433,9 +35432,9 @@
         "one repair",
         "a repair visit"
       ],
-      "example": "I need one repair for this leak.",
-      "exampleYue": "呢次漏水我需要一次維修。",
-      "say": "I need one repair for this leak.",
+      "example": "Can someone repair this leak?",
+      "exampleYue": "可唔可以搵人維修呢個漏水？",
+      "say": "Can someone repair this leak?",
       "variants": [],
       "note": "",
       "sources": [
@@ -35446,18 +35445,18 @@
       "senseMismatch": false,
       "cmuLemma": "repair",
       "phrase": false,
-      "audioSha256": "658264ca694bbd78a6fb062306d450158c124f49979a5bae4b9a5afb9f639ad6",
+      "audioSha256": "2cd0ae3b8d5cd31a1c6e0e86944043f674d8bc93a2b3bd78dd6bb1ad2c60626c",
       "register": "日常生活",
       "usageNotes": "repair 係維修。",
       "pitfallsYue": "repair 係維修。",
       "related": [],
       "examples": [
         {
-          "en": "I need one repair for this leak.",
-          "yue": "呢次漏水我需要一次維修。",
+          "en": "Can someone repair this leak?",
+          "yue": "可唔可以搵人維修呢個漏水？",
           "audio": "assets/audio/words/repair-noun.mp3",
           "audioSlow": "assets/audio/words/repair-noun-slow.mp3",
-          "say": "I need one repair for this leak."
+          "say": "Can someone repair this leak?"
         },
         {
           "en": "The repair starts after six.",
@@ -35465,6 +35464,559 @@
           "audio": "assets/audio/words/repair-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/repair-noun-ex2-slow.mp3",
           "say": "The repair starts after six."
+        }
+      ]
+    },
+    {
+      "id": "half-size-phrase",
+      "lemma": "half a size",
+      "pos": "phrase",
+      "senseId": "ring-adjust",
+      "ipa": "/ˈhæf ə ˈsaɪz/",
+      "syllables": [
+        "half",
+        "a",
+        "size"
+      ],
+      "syllableIpa": [
+        "ˈhæf",
+        "ə",
+        "ˈsaɪz"
+      ],
+      "stress": 1,
+      "arpabet": "HH AE1 F | AH0 | S AY1 Z",
+      "audio": "assets/audio/words/half-size-phrase.mp3",
+      "audioSlow": "assets/audio/words/half-size-phrase-slow.mp3",
+      "glossYue": "半碼",
+      "glossZh": "半碼",
+      "jyutping": "bun3 maa5",
+      "collocations": [
+        "half a size smaller"
+      ],
+      "example": "Can you make it half a size smaller?",
+      "exampleYue": "可唔可以改細半碼？",
+      "say": "Can you make it half a size smaller?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "half a size",
+      "phrase": true,
+      "audioSha256": "21af55fe990040e866a6fb879480a195cee25e917e16079e769138cc1e8e45a0",
+      "register": "珠寶",
+      "usageNotes": "half a size 係半碼。",
+      "pitfallsYue": "半碼係少一個碼，唔係一半隻戒指。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Can you make it half a size smaller?",
+          "yue": "可唔可以改細半碼？",
+          "audio": "assets/audio/words/half-size-phrase.mp3",
+          "audioSlow": "assets/audio/words/half-size-phrase-slow.mp3",
+          "say": "Can you make it half a size smaller?"
+        },
+        {
+          "en": "That half a size change is free.",
+          "yue": "改半碼唔使錢。",
+          "audio": "assets/audio/words/half-size-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/half-size-phrase-ex2-slow.mp3",
+          "say": "That half a size change is free."
+        }
+      ]
+    },
+    {
+      "id": "saturday-noun",
+      "lemma": "Saturday",
+      "pos": "noun",
+      "senseId": "weekday",
+      "ipa": "/ˈsæ.tɚ.di/",
+      "syllables": [
+        "Sat",
+        "ur",
+        "day"
+      ],
+      "syllableIpa": [
+        "ˈsæ",
+        "tɚ",
+        "di"
+      ],
+      "stress": 1,
+      "arpabet": "S AE1 T ER0 D IY0",
+      "audio": "assets/audio/words/saturday-noun.mp3",
+      "audioSlow": "assets/audio/words/saturday-noun-slow.mp3",
+      "glossYue": "星期六",
+      "glossZh": "星期六",
+      "jyutping": "sing1 kei4 luk6",
+      "collocations": [
+        "on Saturday"
+      ],
+      "example": "Saturday is the collection day.",
+      "exampleYue": "星期六係取貨日。",
+      "say": "Saturday is the collection day.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "Saturday",
+      "phrase": false,
+      "audioSha256": "a6c62bc60140a609f0079af0cf3397c714ace188542afb75d1049d1ffc1cb366",
+      "register": "珠寶",
+      "usageNotes": "Saturday 係星期六。",
+      "pitfallsYue": "星期六唔係今日，除非今日真係星期六。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Saturday is the collection day.",
+          "yue": "星期六係取貨日。",
+          "audio": "assets/audio/words/saturday-noun.mp3",
+          "audioSlow": "assets/audio/words/saturday-noun-slow.mp3",
+          "say": "Saturday is the collection day."
+        },
+        {
+          "en": "I will bring the receipt on Saturday.",
+          "yue": "我星期六會帶收據嚟。",
+          "audio": "assets/audio/words/saturday-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/saturday-noun-ex2-slow.mp3",
+          "say": "I will bring the receipt on Saturday."
+        }
+      ]
+    },
+    {
+      "id": "early-check-in-phrase",
+      "lemma": "early check in",
+      "pos": "phrase",
+      "senseId": "arrive-early",
+      "ipa": "/ˈɝ.li ˈtʃɛk ɪn/",
+      "syllables": [
+        "ear",
+        "ly",
+        "check",
+        "in"
+      ],
+      "syllableIpa": [
+        "ˈɝ",
+        "li",
+        "ˈtʃɛk",
+        "ɪn"
+      ],
+      "stress": 1,
+      "arpabet": "ER1 L IY0 | CH EH1 K | IH0 N",
+      "audio": "assets/audio/words/early-check-in-phrase.mp3",
+      "audioSlow": "assets/audio/words/early-check-in-phrase-slow.mp3",
+      "glossYue": "提早入住",
+      "glossZh": "提早入住",
+      "jyutping": "tai4 zou2 zap1 zyu6",
+      "collocations": [
+        "early check in"
+      ],
+      "example": "I hope the room allows an early check in.",
+      "exampleYue": "我希望房間可以提早入住。",
+      "say": "I hope the room allows an early check in.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "early check in",
+      "phrase": true,
+      "audioSha256": "2e4f892c25f1f1c519ac136e20e9e38d4e747fbe09ae798c00bb4a16d6ecc808",
+      "register": "酒店",
+      "usageNotes": "early check in 係提早入住。",
+      "pitfallsYue": "提早入住唔等於房間一定已經準備好。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I hope the room allows an early check in.",
+          "yue": "我希望房間可以提早入住。",
+          "audio": "assets/audio/words/early-check-in-phrase.mp3",
+          "audioSlow": "assets/audio/words/early-check-in-phrase-slow.mp3",
+          "say": "I hope the room allows an early check in."
+        },
+        {
+          "en": "Early check in starts after the other guest leaves.",
+          "yue": "上一位客人走咗先可以提早入住。",
+          "audio": "assets/audio/words/early-check-in-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/early-check-in-phrase-ex2-slow.mp3",
+          "say": "Early check in starts after the other guest leaves."
+        }
+      ]
+    },
+    {
+      "id": "non-smoking-phrase",
+      "lemma": "non-smoking",
+      "pos": "phrase",
+      "senseId": "no-smoke",
+      "ipa": "/ˈnɑn ˈsmoʊ.kɪŋ/",
+      "syllables": [
+        "non",
+        "smo",
+        "king"
+      ],
+      "syllableIpa": [
+        "ˈnɑn",
+        "ˈsmoʊ",
+        "kɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "N AA1 N | S M OW1 K IH0 NG",
+      "audio": "assets/audio/words/non-smoking-phrase.mp3",
+      "audioSlow": "assets/audio/words/non-smoking-phrase-slow.mp3",
+      "glossYue": "非吸煙",
+      "glossZh": "非吸煙",
+      "jyutping": "fei1 kap1 jin1",
+      "collocations": [
+        "non-smoking room"
+      ],
+      "example": "Could we have a non-smoking room?",
+      "exampleYue": "可唔可以要一間非吸煙房？",
+      "say": "Could we have a non-smoking room?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "non-smoking",
+      "phrase": true,
+      "audioSha256": "a2e6c1ad7500ec71e7592c3b7fe8f810bfaeb4f191ccb3bdfa8bc0ecccda0211",
+      "register": "酒店",
+      "usageNotes": "non-smoking 係非吸煙。",
+      "pitfallsYue": "非吸煙房唔係禁煙區嘅罰則。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Could we have a non-smoking room?",
+          "yue": "可唔可以要一間非吸煙房？",
+          "audio": "assets/audio/words/non-smoking-phrase.mp3",
+          "audioSlow": "assets/audio/words/non-smoking-phrase-slow.mp3",
+          "say": "Could we have a non-smoking room?"
+        },
+        {
+          "en": "A non-smoking room is free.",
+          "yue": "非吸煙房唔使加錢。",
+          "audio": "assets/audio/words/non-smoking-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/non-smoking-phrase-ex2-slow.mp3",
+          "say": "A non-smoking room is free."
+        }
+      ]
+    },
+    {
+      "id": "machine-noun",
+      "lemma": "machine",
+      "pos": "noun",
+      "senseId": "cash-machine",
+      "ipa": "/mə.ˈʃin/",
+      "syllables": [
+        "ma",
+        "chine"
+      ],
+      "syllableIpa": [
+        "mə",
+        "ˈʃin"
+      ],
+      "stress": 2,
+      "arpabet": "M AH0 SH IY1 N",
+      "audio": "assets/audio/words/machine-noun.mp3",
+      "audioSlow": "assets/audio/words/machine-noun-slow.mp3",
+      "glossYue": "櫃員機",
+      "glossZh": "櫃員機",
+      "jyutping": "gwai6 jyun4 gei1",
+      "collocations": [
+        "cash machine"
+      ],
+      "example": "The machine kept my card.",
+      "exampleYue": "部機食咗我張卡。",
+      "say": "The machine kept my card.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "machine",
+      "phrase": false,
+      "audioSha256": "db2fd468131d9ff4074a4eb2835fd484521510c18bd25a5e6d484677f27eb105",
+      "register": "銀行",
+      "usageNotes": "machine 呢度係櫃員機。",
+      "pitfallsYue": "呢度唔係洗衣機。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The machine kept my card.",
+          "yue": "部機食咗我張卡。",
+          "audio": "assets/audio/words/machine-noun.mp3",
+          "audioSlow": "assets/audio/words/machine-noun-slow.mp3",
+          "say": "The machine kept my card."
+        },
+        {
+          "en": "I cannot take the card out of the machine.",
+          "yue": "我攞唔到張卡出部機。",
+          "audio": "assets/audio/words/machine-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/machine-noun-ex2-slow.mp3",
+          "say": "I cannot take the card out of the machine."
+        }
+      ]
+    },
+    {
+      "id": "freeze-verb",
+      "lemma": "freeze",
+      "pos": "verb",
+      "senseId": "block-funds",
+      "ipa": "/ˈfɹiz/",
+      "syllables": [
+        "freeze"
+      ],
+      "syllableIpa": [
+        "ˈfɹiz"
+      ],
+      "stress": 1,
+      "arpabet": "F R IY1 Z",
+      "audio": "assets/audio/words/freeze-verb.mp3",
+      "audioSlow": "assets/audio/words/freeze-verb-slow.mp3",
+      "glossYue": "凍結",
+      "glossZh": "凍結",
+      "jyutping": "dung3 git3",
+      "collocations": [
+        "freeze the card"
+      ],
+      "example": "We can freeze the card today.",
+      "exampleYue": "我哋今日可以凍結張卡。",
+      "say": "We can freeze the card today.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "freeze",
+      "phrase": false,
+      "audioSha256": "7326eb9fb8428a42fc994ed588b375de8d602b8d2c4f8b36d44b71a555024315",
+      "register": "銀行",
+      "usageNotes": "freeze 呢度係凍結張卡。",
+      "pitfallsYue": "唔係天氣結冰。",
+      "related": [],
+      "examples": [
+        {
+          "en": "We can freeze the card today.",
+          "yue": "我哋今日可以凍結張卡。",
+          "audio": "assets/audio/words/freeze-verb.mp3",
+          "audioSlow": "assets/audio/words/freeze-verb-slow.mp3",
+          "say": "We can freeze the card today."
+        },
+        {
+          "en": "Please freeze the account before the bank closes.",
+          "yue": "請喺銀行關門之前凍結戶口。",
+          "audio": "assets/audio/words/freeze-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/freeze-verb-ex2-slow.mp3",
+          "say": "Please freeze the account before the bank closes."
+        }
+      ]
+    },
+    {
+      "id": "identity-noun",
+      "lemma": "identity",
+      "pos": "noun",
+      "senseId": "who-you-are",
+      "ipa": "/aɪ.ˈdɛn.tɪ.ˌti/",
+      "syllables": [
+        "i",
+        "den",
+        "ti",
+        "ty"
+      ],
+      "syllableIpa": [
+        "aɪ",
+        "ˈdɛn",
+        "tɪ",
+        "ˌti"
+      ],
+      "stress": 2,
+      "arpabet": "AY0 D EH1 N T IH0 T IY2",
+      "audio": "assets/audio/words/identity-noun.mp3",
+      "audioSlow": "assets/audio/words/identity-noun-slow.mp3",
+      "glossYue": "身份",
+      "glossZh": "身份",
+      "jyutping": "san1 fan6",
+      "collocations": [
+        "prove my identity"
+      ],
+      "example": "What papers prove my identity?",
+      "exampleYue": "我要用咩文件證明身份？",
+      "say": "What papers prove my identity?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "identity",
+      "phrase": false,
+      "audioSha256": "61cefee7b9c1d02b10c31e4f44a7a86bbc3eeb2a6cd701d8a6e8b28227fc28e0",
+      "register": "銀行",
+      "usageNotes": "identity 係身份。",
+      "pitfallsYue": "身份文件唔等於張卡本身。",
+      "related": [],
+      "examples": [
+        {
+          "en": "What papers prove my identity?",
+          "yue": "我要用咩文件證明身份？",
+          "audio": "assets/audio/words/identity-noun.mp3",
+          "audioSlow": "assets/audio/words/identity-noun-slow.mp3",
+          "say": "What papers prove my identity?"
+        },
+        {
+          "en": "Please show one identity document.",
+          "yue": "請出示一份身份文件。",
+          "audio": "assets/audio/words/identity-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/identity-noun-ex2-slow.mp3",
+          "say": "Please show one identity document."
+        }
+      ]
+    },
+    {
+      "id": "working-day-phrase",
+      "lemma": "working day",
+      "pos": "phrase",
+      "senseId": "business-day",
+      "ipa": "/ˈwɝ.kɪŋ ˈdeɪ/",
+      "syllables": [
+        "wor",
+        "king",
+        "day"
+      ],
+      "syllableIpa": [
+        "ˈwɝ",
+        "kɪŋ",
+        "ˈdeɪ"
+      ],
+      "stress": 1,
+      "arpabet": "W ER1 K IH0 NG | D EY1",
+      "audio": "assets/audio/words/working-day-phrase.mp3",
+      "audioSlow": "assets/audio/words/working-day-phrase-slow.mp3",
+      "glossYue": "工作日",
+      "glossZh": "工作日",
+      "jyutping": "gung1 zok3 jat6",
+      "collocations": [
+        "next working day"
+      ],
+      "example": "The block starts on the next working day.",
+      "exampleYue": "下一個工作日開始停用。",
+      "say": "The block starts on the next working day.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "working day",
+      "phrase": true,
+      "audioSha256": "3a5daf91277b6fb51f2f696218b58cfca33eb3d73eb82a5ca303cf68d82bfd1a",
+      "register": "銀行",
+      "usageNotes": "working day 係工作日。",
+      "pitfallsYue": "工作日唔係足二十四小時。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The block starts on the next working day.",
+          "yue": "下一個工作日開始停用。",
+          "audio": "assets/audio/words/working-day-phrase.mp3",
+          "audioSlow": "assets/audio/words/working-day-phrase-slow.mp3",
+          "say": "The block starts on the next working day."
+        },
+        {
+          "en": "It lasts for one working day only.",
+          "yue": "只維持一個工作日。",
+          "audio": "assets/audio/words/working-day-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/working-day-phrase-ex2-slow.mp3",
+          "say": "It lasts for one working day only."
+        }
+      ]
+    },
+    {
+      "id": "temporary-limit-phrase",
+      "lemma": "temporary limit",
+      "pos": "phrase",
+      "senseId": "short-cap",
+      "ipa": "/ˈtɛm.pɚ.ˌɛ.ɹi ˈlɪ.mət/",
+      "syllables": [
+        "tem",
+        "po",
+        "rar",
+        "y",
+        "lim",
+        "it"
+      ],
+      "syllableIpa": [
+        "ˈtɛm",
+        "pɚ",
+        "ˌɛ",
+        "ɹi",
+        "ˈlɪ",
+        "mət"
+      ],
+      "stress": 1,
+      "arpabet": "T EH1 M P ER0 EH2 R IY0 | L IH1 M AH0 T",
+      "audio": "assets/audio/words/temporary-limit-phrase.mp3",
+      "audioSlow": "assets/audio/words/temporary-limit-phrase-slow.mp3",
+      "glossYue": "臨時限額",
+      "glossZh": "臨時限額",
+      "jyutping": "lam4 si4 haan6 ngaak6",
+      "collocations": [
+        "temporary limit"
+      ],
+      "example": "Will the temporary limit let me draw cash?",
+      "exampleYue": "臨時限額可唔可以畀我拎現金？",
+      "say": "Will the temporary limit let me draw cash?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "temporary limit",
+      "phrase": true,
+      "audioSha256": "418e94c4a917b810168cc643fed7d77a699c4369fdb57aa6780b8017e14443b1",
+      "register": "銀行",
+      "usageNotes": "temporary limit 係臨時限額。",
+      "pitfallsYue": "臨時限額唔係永久額度。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Will the temporary limit let me draw cash?",
+          "yue": "臨時限額可唔可以畀我拎現金？",
+          "audio": "assets/audio/words/temporary-limit-phrase.mp3",
+          "audioSlow": "assets/audio/words/temporary-limit-phrase-slow.mp3",
+          "say": "Will the temporary limit let me draw cash?"
+        },
+        {
+          "en": "The temporary limit is two thousand.",
+          "yue": "臨時限額係二千。",
+          "audio": "assets/audio/words/temporary-limit-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/temporary-limit-phrase-ex2-slow.mp3",
+          "say": "The temporary limit is two thousand."
         }
       ]
     }

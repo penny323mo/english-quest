@@ -92,11 +92,23 @@
 - **Grammar:** Would you like to pay by…? Could I see your…?
 - **Dialogue beats:** Total → Method → Tax-free steps → Wrap → Thank-you
 
+### J15 — Ring size and care / 改戒指尺寸同維修 · A2/B1 · SHIPPED
+- **Goals:** Say a ring is tight, ask for half a size smaller, and collect it on Saturday under the warranty with the receipt.
+- **Vocab:** tight, half a size, smaller, Saturday, warranty, receipt
+- **Grammar:** Can you make it half a size smaller? Saturday is the collection day.
+- **Dialogue beats:** Tight ring and receipt → Smaller → Half a size → Warranty and Saturday → How long → Collection day → Bring the receipt → Keep the receipt
+
 ### J8 — After-sales and warranty · B1 · NEW
 - **Goals:** Explain care, warranty, return window politely.
 - **Vocab (14):** warranty, guarantee, return, exchange, receipt, scratch, polish, clean, avoid, water, chemical, claim, policy, within
 - **Grammar:** Present perfect (Have you kept…?); Modals (should / shouldn't)
 - **Dialogue beats:** After purchase → Care tips → Warranty → Return policy → Reassure
+
+### D9 — The machine kept my card / 銀行：櫃員機食咗張卡 · B1 · SHIPPED
+- **Goals:** Say the cash machine kept the card, ask the bank to freeze it, show identity papers, and ask about a temporary limit for one working day.
+- **Vocab:** card, machine, freeze, identity, working day, temporary limit
+- **Grammar:** Can you freeze it this afternoon? Will the temporary limit let me draw cash?
+- **Dialogue beats:** Machine kept the card → Cancel button → Still inside → Freeze today → Identity papers → Freeze the account → Temporary limit → One working day
 
 ### J9 — Handling complaints · B1 · NEW (PRIORITY)
 - **Goals:** Listen, apologise, offer fix without over-promising.
@@ -132,7 +144,7 @@
 - **Goals:** Set a budget, show a sketch, compare white gold with yellow gold, and ask about the deposit and four weeks.
 - **Vocab:** budget, sketch, setting, white gold, yellow gold, deposit, week
 - **Grammar:** Could we use white gold, or is yellow gold a better choice? What deposit do you need?
-- **Dialogue beats:** Budget and sketch → Setting → White or yellow gold → Yellow gold → Deposit → Half the budget → Place the deposit → Hold the setting
+- **Dialogue beats:** Budget and sketch → Low setting → White or yellow gold → Yellow gold because it matches → Deposit and time → Four weeks and half → Place the half deposit → Pick it up in four weeks
 
 ---
 
@@ -190,7 +202,7 @@
 - **Goals:** Order a latte, choose hot or iced, a size, oat milk, for here or to go, and put a name on the cup.
 - **Vocab:** latte, iced, size, oat milk, to go, name, cup
 - **Grammar:** Would you like…? I would like…; for here or to go.
-- **Dialogue beats:** One latte → Hot or iced → Small size → Oat milk → Name on the cup → For here or to go → To go → The cup is ready
+- **Dialogue beats:** A latte → Hot or iced → Small size → Oat milk → Name on the cup → For here or to go → To go → The cup is ready
 
 ## Unit T — Travel（旅行）· A1→B2 priority track
 
@@ -214,6 +226,12 @@
 - **Vocab (16):** lost, missing, wallet, passport, phone, last saw, police, embassy, help, emergency, ambulance, stolen, report, form, photocopy, contact
 - **Grammar:** Present perfect (I've lost…); Past simple narrative; Could you help me…?
 - **Dialogue beats:** Approach staff → Describe → Where/when → Next steps → Reassure self
+
+### T12 — Hotel check-in problem / 酒店入住出問題 · A2/B1 · SHIPPED
+- **Goals:** Say the room is not ready, ask for early check in and a non-smoking room, leave the luggage, and ask for the wifi password.
+- **Vocab:** reservation, room, luggage, early check in, non-smoking, wifi, password
+- **Grammar:** Could we have a non-smoking room? What is the wifi password?
+- **Dialogue beats:** Reservation and early check in → Room not ready → Non-smoking and luggage → Early check in later → Wifi password → Card by the bed → Wait with the luggage → Come back after four
 
 ### T6 — Hotel problem / request · B1 · NEW
 - **Goals:** Noisy room, AC broken, extra towel — polite request + escalate.
@@ -249,10 +267,10 @@
 
 
 ### T11 — MTR and Octopus top-up / 搭港鐵同增值 · A2 · SHIPPED
-- **Goals:** Ask which line, where to change, which exit, how to top up an Octopus card, and the price of a single journey ticket.
+- **Goals:** Ask which line stays on to Central, which exit is closest, how to top up an Octopus card, and the price of a single journey ticket.
 - **Vocab:** line, exit, top up, Octopus card, single journey, ticket
 - **Grammar:** Which line…? Which exit…? How much is…?
-- **Dialogue beats:** Which line → Island line and change → Which exit → Exit A → Top up → Twenty dollars → Single journey → Twelve dollars
+- **Dialogue beats:** Which line → Stay on the Island line → Closest exit at Central → Exit A → Top up → Twenty dollars → Single journey → Twelve dollars
 
 ## Unit W — Work（職場）· A2→B2
 
@@ -348,7 +366,7 @@
 - **Goals:** Ask for a simple trim, shorter sides, a light fringe, a wash and blow-dry, the price, and the next booking.
 - **Vocab:** trim, fringe, blow dry, salon, side, wash, book, price
 - **Grammar:** Would you like both sides shorter? What price is this trim if I book the next visit?
-- **Dialogue beats:** Simple trim → Sides and fringe → Yes → Wash and blow-dry → Price covers the dry → Ask the price → Eighty dollars → Book the next trim
+- **Dialogue beats:** Simple trim and fringe → Shorter sides → Yes → How much is the wash → Eighty dollars with a blow dry → Cheaper next visit → Lower on Friday → Book after the wash
 
 ---
 
@@ -356,8 +374,8 @@
 ### D8 — Reporting a repair / 搵管理處報維修 · B1 · SHIPPED
 - **Goals:** Report a leaking kitchen tap, say it started yesterday, ask when someone can come, and arrange access to the flat after six.
 - **Vocab:** tap, leak, repair, flat, access
-- **Grammar:** The tap has a leak. When did it start? I will be home after six.
-- **Dialogue beats:** Leak since yesterday → When did it start → Need a repair → Tomorrow morning → Home after six → Access if out → Key with the guard → Repair after six
+- **Grammar:** The tap has a leak. When did it start? I will be out after six tomorrow.
+- **Dialogue beats:** Leak since yesterday → When did it start → Need a repair → Tomorrow after six → Out, key with the guard → Access while out → Key at the desk → Repair after six tomorrow
 
 ## Build order (loop priority)
 
@@ -378,7 +396,8 @@ Every round until map complete, ship **≥3 NEW lessons** in this order (skip al
 13. **R9, W7, T10** (paying the bill, calling in sick, lost luggage)  
 14. **D7, W8, J14** (hair salon, meeting update, custom jewellery)  
 15. **R10, T11, D8** (café order, MTR top-up, repair report)  
-16. Then polish / legendary review nodes / further B2 stretch
+16. **J15, T12, D9** (ring size, hotel check-in problem, ATM card)
+17. Then polish / legendary review nodes / further B2 stretch
 
 **Path UX:** show CEFR chip (A1/A2/B1/B2) on each node; group Path into level tracks; lock by prerequisite; keep `soon:true` teasers for unshipped.
 

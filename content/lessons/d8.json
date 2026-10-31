@@ -3,8 +3,8 @@
   "unit": "D",
   "titleYue": "搵管理處報維修",
   "titleEn": "Reporting a repair",
-  "canDoYue": "你識同管理處講水龍頭漏水、由幾時開始、幾時有人嚟，同埋六點後點入單位。",
-  "canDoEn": "Tell building management the tap has a leak, since when, when someone can come, and how they can enter the flat after six.",
+  "canDoYue": "你識報廚房漏水，講聽日六點之後外出，同埋鎖匙放喺前門保安。",
+  "canDoEn": "Report a kitchen leak, say you are out after six tomorrow, and leave the key with the front guard.",
   "minutes": 12,
   "hero": "assets/art/lessons/d8.webp",
   "cast": [
@@ -24,7 +24,7 @@
     "漏水",
     "維修",
     "單位",
-    "入屋"
+    "入單位"
   ],
   "next": "T10",
   "dialogue": [
@@ -32,11 +32,11 @@
       "id": "d8-l1",
       "speaker": "nell",
       "speakerLabel": "Nell",
-      "text": "Hello, the kitchen tap has a small leak, and water has been on the floor since yesterday.",
-      "glossYue": "你好，廚房水龍頭有少少漏水，由昨日開始地板都有水。",
+      "text": "Hello there, the kitchen tap has a small leak, and water has been on the floor since yesterday.",
+      "glossYue": "你好，廚房水龍頭有少少漏水，由尋日開始地下有水。",
       "audio": "assets/audio/lines/d8-l1.mp3",
       "audioSlow": "assets/audio/lines/d8-l1-slow.mp3",
-      "say": "Hello, the kitchen tap has a small leak, and water has been on the floor since yesterday.",
+      "say": "Hello there, the kitchen tap has a small leak, and water has been on the floor since yesterday.",
       "hideGloss": false
     },
     {
@@ -44,7 +44,7 @@
       "speaker": "glen",
       "speakerLabel": "Glen",
       "text": "I am sorry about the leak. When did the tap start, and is the water still running?",
-      "glossYue": "唔好意思。水龍頭幾時開始漏，水仲流緊呀？",
+      "glossYue": "唔好意思。水龍頭幾時開始漏，而家仲流緊水呀？",
       "audio": "assets/audio/lines/d8-l2.mp3",
       "audioSlow": "assets/audio/lines/d8-l2-slow.mp3",
       "say": "I am sorry about the leak. When did the tap start, and is the water still running?",
@@ -55,7 +55,7 @@
       "speaker": "nell",
       "speakerLabel": "Nell",
       "text": "The kitchen leak started yesterday morning, and it is much worse, so I need one quick repair.",
-      "glossYue": "廚房漏水由昨朝開始，而家嚴重好多，我需要一次快啲嘅維修。",
+      "glossYue": "廚房尋日朝早開始漏，而家嚴重好多，我要一次快啲嘅維修。",
       "audio": "assets/audio/lines/d8-l3.mp3",
       "audioSlow": "assets/audio/lines/d8-l3-slow.mp3",
       "say": "The kitchen leak started yesterday morning, and it is much worse, so I need one quick repair.",
@@ -65,95 +65,95 @@
       "id": "d8-l4",
       "speaker": "glen",
       "speakerLabel": "Glen",
-      "text": "A repair visit can come tomorrow morning. Will you be home at the flat after work ends?",
-      "glossYue": "維修聽日朝早可以嚟。你放工之後會唔會喺單位？",
+      "text": "A repair visit can come tomorrow after six in the evening. Will you be out of the flat then?",
+      "glossYue": "維修可以聽日傍晚六點之後嚟。嗰陣你會唔會唔喺單位？",
       "audio": "assets/audio/lines/d8-l4.mp3",
       "audioSlow": "assets/audio/lines/d8-l4-slow.mp3",
-      "say": "A repair visit can come tomorrow morning. Will you be home at the flat after work ends?",
+      "say": "A repair visit can come tomorrow after six in the evening. Will you be out of the flat then?",
       "hideGloss": true
     },
     {
       "id": "d8-l5",
       "speaker": "nell",
       "speakerLabel": "Nell",
-      "text": "I will be home after six tonight, and someone from your team can enter the flat then.",
-      "glossYue": "我今晚六點之後喺屋企，你哋同事可以入單位。",
+      "text": "I will be out after six tomorrow, so please take the key from the front guard then.",
+      "glossYue": "我聽日六點之後會外出，請向前門保安攞鎖匙。",
       "audio": "assets/audio/lines/d8-l5.mp3",
       "audioSlow": "assets/audio/lines/d8-l5-slow.mp3",
-      "say": "I will be home after six tonight, and someone from your team can enter the flat then.",
+      "say": "I will be out after six tomorrow, so please take the key from the front guard then.",
       "hideGloss": true
     },
     {
       "id": "d8-l6",
       "speaker": "glen",
       "speakerLabel": "Glen",
-      "text": "Can we have full access to the flat if you are out after six in the evening?",
-      "glossYue": "如果你六點之後唔喺度，我哋可唔可以入單位？",
+      "text": "Can the team have access to the flat while you are out after six tomorrow evening?",
+      "glossYue": "你聽日傍晚六點之後外出，同事可唔可以入單位？",
       "audio": "assets/audio/lines/d8-l6.mp3",
       "audioSlow": "assets/audio/lines/d8-l6-slow.mp3",
-      "say": "Can we have full access to the flat if you are out after six in the evening?",
+      "say": "Can the team have access to the flat while you are out after six tomorrow evening?",
       "hideGloss": true
     },
     {
       "id": "d8-l7",
       "speaker": "nell",
       "speakerLabel": "Nell",
-      "text": "Yes, I can leave access with the front guard, and the flat key is at the front desk.",
-      "glossYue": "可以，我將入屋安排交畀前門保安，單位鎖匙喺櫃台。",
+      "text": "Yes, the front guard can give you access, and the flat key stays at the front desk.",
+      "glossYue": "可以，前門保安可以畀你入單位，鎖匙放喺前台。",
       "audio": "assets/audio/lines/d8-l7.mp3",
       "audioSlow": "assets/audio/lines/d8-l7-slow.mp3",
-      "say": "Yes, I can leave access with the front guard, and the flat key is at the front desk.",
+      "say": "Yes, the front guard can give you access, and the flat key stays at the front desk.",
       "hideGloss": true
     },
     {
       "id": "d8-l8",
       "speaker": "glen",
       "speakerLabel": "Glen",
-      "text": "We will send one person for the tap leak, and the repair starts after six in the evening.",
-      "glossYue": "我哋會派一個人處理水龍頭漏水，維修六點之後開始。",
+      "text": "We will send one person for the kitchen tap leak, and the repair starts after six tomorrow.",
+      "glossYue": "我哋會派一個人處理廚房水龍頭漏水，維修聽日六點之後開始。",
       "audio": "assets/audio/lines/d8-l8.mp3",
       "audioSlow": "assets/audio/lines/d8-l8-slow.mp3",
-      "say": "We will send one person for the tap leak, and the repair starts after six in the evening.",
+      "say": "We will send one person for the kitchen tap leak, and the repair starts after six tomorrow.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Hello, the kitchen tap has a small leak, and water has been on the floor since yesterday. 呢句即係點？",
+      "prompt": "Hello there, the kitchen tap has a small leak, and water has been on the floor since yesterday. 呢句即係點？",
       "choices": [
-        "廚房水龍頭有漏水，由昨日開始",
-        "單位冇漏水，亦唔使維修",
-        "想問入屋時間，唔係漏水"
+        "廚房水龍頭漏水",
+        "想問入單位時間",
+        "維修已經搞掂"
       ],
       "answer": 0,
       "explain": "tap 係水龍頭。leak 係漏水。"
     },
     {
-      "prompt": "A repair visit can come tomorrow morning. Will you be home at the flat after work ends? 即係問緊咩？",
+      "prompt": "A repair visit can come tomorrow after six in the evening. Will you be out of the flat then? 即係問緊咩？",
       "choices": [
-        "問漏水幾多錢",
-        "問維修人員聽日嚟，你喺唔喺單位",
-        "問入屋鎖匙放喺邊"
+        "問漏水幾時開始",
+        "問聽日六點之後你係咪外出、唔喺單位",
+        "問邊個負責維修鎖匙"
       ],
       "answer": 1,
       "explain": "repair 係維修。flat 係單位。"
     },
     {
-      "prompt": "Can we have full access to the flat if you are out after six in the evening? 即係問緊咩？",
+      "prompt": "Can the team have access to the flat while you are out after six tomorrow evening? 即係問緊咩？",
       "choices": [
-        "問漏水幾時開始",
-        "問六點後可唔可以入屋",
-        "問維修幾多錢"
+        "問水龍頭仲流唔流",
+        "問維修要幾耐",
+        "問外出嗰陣可唔可以入單位"
       ],
-      "answer": 1,
-      "explain": "access 係入屋。"
+      "answer": 2,
+      "explain": "access 係入單位。"
     }
   ],
   "chunks": [
     {
-      "pattern": "The kitchen ___ has a small leak, and water has been on the floor since yesterday.",
-      "example": "Hello, the kitchen tap has a small leak, and water has been on the floor since yesterday.",
-      "glossYue": "廚房水龍頭有漏水。",
+      "pattern": "Hello there, the kitchen ___ has a small leak, and water has been on the floor since yesterday.",
+      "example": "Hello there, the kitchen tap has a small leak, and water has been on the floor since yesterday.",
+      "glossYue": "廚房水龍頭漏水。",
       "answer": "tap",
       "choices": [
         "tap",
@@ -162,68 +162,64 @@
       ]
     },
     {
-      "pattern": "The kitchen leak started yesterday morning, and it is much worse, so I need one quick ___.",
-      "example": "The kitchen leak started yesterday morning, and it is much worse, so I need one quick repair.",
-      "glossYue": "我需要一次維修。",
+      "pattern": "I will be out after six tomorrow, so please take the key from the front guard for the ___.",
+      "example": "I will be out after six tomorrow, so please take the key from the front guard for the repair.",
+      "glossYue": "外出之前交低維修鎖匙。",
       "answer": "repair",
       "choices": [
         "repair",
         "tap",
-        "flat"
+        "leak"
       ]
     },
     {
-      "pattern": "Can we have ___ to the flat if you are out after six in the evening?",
-      "example": "Can we have full access to the flat if you are out after six in the evening?",
-      "glossYue": "六點之後可唔可以入單位？",
+      "pattern": "Yes, the front guard can give you ___, and the flat key stays at the front desk.",
+      "example": "Yes, the front guard can give you access, and the flat key stays at the front desk.",
+      "glossYue": "保安可以畀你入單位。",
       "answer": "access",
       "choices": [
         "access",
-        "leak",
-        "repair"
+        "tap",
+        "leak"
       ]
     }
   ],
   "shadow": {
     "lineId": "d8-l1",
-    "hint": "Hello, the kitchen tap has a small leak, and water has been on the floor since yesterday."
+    "hint": "Hello there, the kitchen tap has a small leak, and water has been on the floor since yesterday."
   },
   "build": [
     {
       "type": "choice",
-      "promptYue": "你六點之後喺屋企，同事可以入單位。你點講？",
+      "promptYue": "你話聽日六點之後外出。你點講？",
       "choices": [
-        "I will be home after six tonight, and someone from your team can enter the flat then.",
+        "I will be out after six tomorrow, so please take the key from the front guard then.",
         "The kitchen leak started yesterday morning, and it is much worse, so I need one quick repair.",
-        "Hello, the kitchen tap has a small leak, and water has been on the floor since yesterday."
+        "Hello there, the kitchen tap has a small leak, and water has been on the floor since yesterday."
       ],
       "answer": 0,
-      "explain": "講 flat 同 tonight。"
+      "explain": "講 out after six。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "The",
-        "kitchen",
-        "tap",
-        "has",
-        "a",
-        "leak"
+        "repair",
+        "starts",
+        "after",
+        "six"
       ],
       "answer": [
-        "The",
-        "kitchen",
-        "tap",
-        "has",
-        "a",
-        "leak"
+        "repair",
+        "starts",
+        "after",
+        "six"
       ]
     }
   ],
   "roleplay": {
     "you": "nell",
-    "intro": "你報維修。同 Glen 講漏水同入屋。可以講：leak、access。",
+    "intro": "你報維修。同 Glen 講漏水同入單位。可以講：leak、access。",
     "turns": [
       {
         "partner": "Glen",
@@ -242,12 +238,13 @@
       {
         "partner": "Glen",
         "partnerId": "glen",
-        "line": "A repair visit can come tomorrow morning. Will you be home at the flat after work ends?",
+        "line": "A repair visit can come tomorrow after six in the evening. Will you be out of the flat then?",
         "audio": "assets/audio/lines/d8-l4.mp3",
         "audioSlow": "assets/audio/lines/d8-l4-slow.mp3",
-        "expect": "I will be home after six tonight, and someone from your team can enter the flat then.",
+        "expect": "I will be out after six tomorrow, so please take the key from the front guard then.",
         "keywords": [
-          "flat"
+          "out",
+          "tomorrow"
         ],
         "modelAudio": "assets/audio/lines/d8-l5.mp3",
         "modelSlow": "assets/audio/lines/d8-l5-slow.mp3"
@@ -255,10 +252,10 @@
       {
         "partner": "Glen",
         "partnerId": "glen",
-        "line": "Can we have full access to the flat if you are out after six in the evening?",
+        "line": "Can the team have access to the flat while you are out after six tomorrow evening?",
         "audio": "assets/audio/lines/d8-l6.mp3",
         "audioSlow": "assets/audio/lines/d8-l6-slow.mp3",
-        "expect": "Yes, I can leave access with the front guard, and the flat key is at the front desk.",
+        "expect": "Yes, the front guard can give you access, and the flat key stays at the front desk.",
         "keywords": [
           "access",
           "flat"
@@ -271,55 +268,55 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen and pick the word for the kitchen water fitting: tap.",
-      "lemma": "tap-noun",
-      "choices": [
-        "tap",
-        "leak",
-        "flat"
-      ],
-      "answer": 0
-    },
-    {
-      "type": "listen",
-      "prompt": "Listen and pick the word for water coming out where it should stay inside: leak.",
+      "prompt": "Listen once and pick the word you hear for water coming out of the tap: leak.",
       "lemma": "leak-noun",
       "choices": [
-        "repair",
-        "access",
-        "leak"
-      ],
-      "answer": 2
-    },
-    {
-      "type": "meaning",
-      "prompt": "You say 'I need one repair for this leak.' What does repair mean?",
-      "choices": [
-        "入屋",
-        "維修",
-        "單位"
+        "flat",
+        "leak",
+        "access"
       ],
       "answer": 1
     },
     {
-      "type": "meaning",
-      "prompt": "You say 'I will be at the flat after six.' What does flat mean?",
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear for the visit that fixes it: repair.",
+      "lemma": "repair-noun",
       "choices": [
-        "單位",
-        "漏水",
-        "水龍頭"
+        "repair",
+        "tap",
+        "flat"
       ],
       "answer": 0
     },
     {
-      "type": "choice",
-      "prompt": "Which word has the vowel in leak: leak, tap, or flat?",
+      "type": "meaning",
+      "prompt": "You say 'The kitchen tap has a small leak.' What does tap mean?",
       "choices": [
-        "tap",
-        "leak",
-        "flat"
+        "水龍頭",
+        "單位",
+        "維修"
       ],
-      "answer": 1,
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'The front guard can give you access.' What does access mean?",
+      "choices": [
+        "漏水",
+        "入單位",
+        "水龍頭"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word has /i/: leak, flat, or access?",
+      "choices": [
+        "flat",
+        "access",
+        "leak"
+      ],
+      "answer": 2,
       "explain": "leak 有 /i/。"
     }
   ],

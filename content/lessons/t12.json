@@ -1,0 +1,346 @@
+{
+  "id": "T12",
+  "unit": "T",
+  "titleYue": "酒店入住出問題",
+  "titleEn": "A hotel check-in problem",
+  "canDoYue": "你識講訂位、提早入住、非吸煙房、行李，同埋問房間嘅無線網絡密碼。",
+  "canDoEn": "Say the room is not ready, ask for a non-smoking room and early check in, and get the wifi password.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t12.webp",
+  "cast": [
+    "kim",
+    "tom"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "reservation-noun",
+    "room-noun",
+    "luggage-noun",
+    "early-check-in-phrase",
+    "non-smoking-phrase",
+    "wifi-noun",
+    "password-noun"
+  ],
+  "topicTags": [
+    "訂位",
+    "房間",
+    "行李",
+    "提早入住",
+    "非吸煙",
+    "密碼"
+  ],
+  "next": "R5",
+  "sound": {
+    "ipa": "/u/",
+    "title": "room 入面嗰個音",
+    "note": "room 有 /u/。luggage 有 /ʌ/。",
+    "pairs": [
+      {
+        "a": "room-noun",
+        "b": "luggage-noun"
+      },
+      {
+        "a": "early-check-in-phrase",
+        "b": "non-smoking-phrase"
+      }
+    ],
+    "drill": [
+      "reservation-noun",
+      "room-noun",
+      "luggage-noun",
+      "wifi-noun",
+      "password-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "t12-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Hello, I have a reservation, and I hope the room allows an early check in.",
+      "glossYue": "你好，我有訂位，希望房間可以提早入住。",
+      "audio": "assets/audio/lines/t12-l1.mp3",
+      "audioSlow": "assets/audio/lines/t12-l1-slow.mp3",
+      "say": "Hello, I have a reservation, and I hope the room allows an early check in.",
+      "hideGloss": false
+    },
+    {
+      "id": "t12-l2",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "The room is not ready yet, and your luggage can stay beside the desk.",
+      "glossYue": "房間未準備好，行李可以放喺櫃檯旁邊。",
+      "audio": "assets/audio/lines/t12-l2.mp3",
+      "audioSlow": "assets/audio/lines/t12-l2-slow.mp3",
+      "say": "The room is not ready yet, and your luggage can stay beside the desk.",
+      "hideGloss": false
+    },
+    {
+      "id": "t12-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could we have a non-smoking room, and may I leave the luggage here?",
+      "glossYue": "可唔可以要一間非吸煙房，行李放喺度得唔得？",
+      "audio": "assets/audio/lines/t12-l3.mp3",
+      "audioSlow": "assets/audio/lines/t12-l3-slow.mp3",
+      "say": "Could we have a non-smoking room, and may I leave the luggage here?",
+      "hideGloss": false
+    },
+    {
+      "id": "t12-l4",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "The non-smoking choice is free, and early check in starts after the other guest leaves.",
+      "glossYue": "非吸煙選擇唔使加錢，上一位客人走咗先可以提早入住。",
+      "audio": "assets/audio/lines/t12-l4.mp3",
+      "audioSlow": "assets/audio/lines/t12-l4-slow.mp3",
+      "say": "The non-smoking choice is free, and early check in starts after the other guest leaves.",
+      "hideGloss": true
+    },
+    {
+      "id": "t12-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "What is the wifi password for the room when I go up later?",
+      "glossYue": "我之後上去，房間嘅無線網絡密碼係咩？",
+      "audio": "assets/audio/lines/t12-l5.mp3",
+      "audioSlow": "assets/audio/lines/t12-l5-slow.mp3",
+      "say": "What is the wifi password for the room when I go up later?",
+      "hideGloss": true
+    },
+    {
+      "id": "t12-l6",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "The wifi password is on the card beside the bed in the hall.",
+      "glossYue": "無線網絡密碼喺走廊床邊張卡上面。",
+      "audio": "assets/audio/lines/t12-l6.mp3",
+      "audioSlow": "assets/audio/lines/t12-l6-slow.mp3",
+      "say": "The wifi password is on the card beside the bed in the hall.",
+      "hideGloss": true
+    },
+    {
+      "id": "t12-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I can wait for the room, and I will keep the luggage with me until four.",
+      "glossYue": "我可以等房間，行李我自己拎住，直到四點。",
+      "audio": "assets/audio/lines/t12-l7.mp3",
+      "audioSlow": "assets/audio/lines/t12-l7-slow.mp3",
+      "say": "I can wait for the room, and I will keep the luggage with me until four.",
+      "hideGloss": true
+    },
+    {
+      "id": "t12-l8",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Please come back for the room after four, and the desk will call your name.",
+      "glossYue": "請四點之後返嚟取房間，櫃檯會叫你個名。",
+      "audio": "assets/audio/lines/t12-l8.mp3",
+      "audioSlow": "assets/audio/lines/t12-l8-slow.mp3",
+      "say": "Please come back for the room after four, and the desk will call your name.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Hello, I have a reservation, and I hope the room allows an early check in. 呢句即係點？",
+      "choices": [
+        "有訂位，想提早入住",
+        "房間已經準備好",
+        "想問行李幾多件"
+      ],
+      "answer": 0,
+      "explain": "reservation 係訂位。early check in 係提早入住。"
+    },
+    {
+      "prompt": "Could we have a non-smoking room, and may I leave the luggage here? 即係問緊咩？",
+      "choices": [
+        "問密碼係咩",
+        "問可唔可以要非吸煙房，行李放喺度",
+        "問四點之後返唔返嚟取房間"
+      ],
+      "answer": 1,
+      "explain": "non-smoking 係非吸煙。luggage 係行李。"
+    },
+    {
+      "prompt": "What is the wifi password for the room when I go up later? 即係問緊咩？",
+      "choices": [
+        "問行李放邊",
+        "問提早入住幾點",
+        "問房間嘅無線網絡密碼"
+      ],
+      "answer": 2,
+      "explain": "wifi 係無線網絡。password 係密碼。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Hello, I have a ___, and I hope the room allows an early check in.",
+      "example": "Hello, I have a reservation, and I hope the room allows an early check in.",
+      "glossYue": "我有訂位。",
+      "answer": "reservation",
+      "choices": [
+        "reservation",
+        "luggage",
+        "password"
+      ]
+    },
+    {
+      "pattern": "Could we have a ___ room, and may I leave the luggage here?",
+      "example": "Could we have a non-smoking room, and may I leave the luggage here?",
+      "glossYue": "可唔可以要非吸煙房？",
+      "answer": "non-smoking",
+      "choices": [
+        "non-smoking",
+        "wifi",
+        "reservation"
+      ]
+    },
+    {
+      "pattern": "What is the wifi ___ for the room when I go up later?",
+      "example": "What is the wifi password for the room when I go up later?",
+      "glossYue": "房間密碼係咩？",
+      "answer": "password",
+      "choices": [
+        "password",
+        "luggage",
+        "reservation"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想要非吸煙房。你點講？",
+      "choices": [
+        "Could we have a non-smoking room, and may I leave the luggage here?",
+        "What is the wifi password for the room when I go up later?",
+        "Hello, I have a reservation, and I hope the room allows an early check in."
+      ],
+      "answer": 0,
+      "explain": "講 non-smoking。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "early",
+        "check",
+        "in"
+      ],
+      "answer": [
+        "early",
+        "check",
+        "in"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你入住酒店。同 Kim 講房間同行李。可以講：reservation、wifi。",
+    "turns": [
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "The room is not ready yet, and your luggage can stay beside the desk.",
+        "audio": "assets/audio/lines/t12-l2.mp3",
+        "audioSlow": "assets/audio/lines/t12-l2-slow.mp3",
+        "expect": "Could we have a non-smoking room, and may I leave the luggage here?",
+        "keywords": [
+          "room",
+          "luggage"
+        ],
+        "modelAudio": "assets/audio/lines/t12-l3.mp3",
+        "modelSlow": "assets/audio/lines/t12-l3-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "The non-smoking choice is free, and early check in starts after the other guest leaves.",
+        "audio": "assets/audio/lines/t12-l4.mp3",
+        "audioSlow": "assets/audio/lines/t12-l4-slow.mp3",
+        "expect": "What is the wifi password for the room when I go up later?",
+        "keywords": [
+          "wifi",
+          "password"
+        ],
+        "modelAudio": "assets/audio/lines/t12-l5.mp3",
+        "modelSlow": "assets/audio/lines/t12-l5-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "The wifi password is on the card beside the bed in the hall.",
+        "audio": "assets/audio/lines/t12-l6.mp3",
+        "audioSlow": "assets/audio/lines/t12-l6-slow.mp3",
+        "expect": "I can wait for the room, and I will keep the luggage with me until four.",
+        "keywords": [
+          "room",
+          "luggage"
+        ],
+        "modelAudio": "assets/audio/lines/t12-l7.mp3",
+        "modelSlow": "assets/audio/lines/t12-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the phrase you hear for arriving before the usual time: early check in.",
+      "lemma": "early-check-in-phrase",
+      "choices": [
+        "luggage",
+        "early check in",
+        "password"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the phrase you hear for a room where nobody smokes: non-smoking.",
+      "lemma": "non-smoking-phrase",
+      "choices": [
+        "non-smoking",
+        "reservation",
+        "wifi"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'I have a reservation.' What does reservation mean?",
+      "choices": [
+        "訂位",
+        "行李",
+        "密碼"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'The wifi password is on the card.' What does password mean?",
+      "choices": [
+        "房間",
+        "密碼",
+        "行李"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word has /u/: room, luggage, or wifi?",
+      "choices": [
+        "luggage",
+        "wifi",
+        "room"
+      ],
+      "answer": 2,
+      "explain": "room 有 /u/。"
+    }
+  ],
+  "shadow": {
+    "lineId": "t12-l1",
+    "hint": "Hello, I have a reservation, and I hope the room allows an early check in."
+  }
+}

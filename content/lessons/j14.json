@@ -3,8 +3,8 @@
   "unit": "J",
   "titleYue": "訂造首飾",
   "titleEn": "A custom jewellery design",
-  "canDoYue": "你識講預算同草圖、比較白金同黃金，仲識問訂金同四個星期。",
-  "canDoEn": "Talk about a budget and a sketch, compare white gold with yellow gold, and ask about the deposit.",
+  "canDoYue": "你識講預算同草圖、比較白K金同黃K金，仲識問一半訂金同四個星期。",
+  "canDoEn": "Talk about a budget and a sketch, compare white gold with yellow gold, and ask about a half deposit.",
   "minutes": 12,
   "hero": "assets/art/lessons/j14.webp",
   "cast": [
@@ -25,7 +25,8 @@
     "預算",
     "草圖",
     "鑲",
-    "金",
+    "白K金",
+    "黃K金",
     "訂金",
     "星期"
   ],
@@ -46,11 +47,11 @@
       "id": "j14-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "This first sketch shows a low setting, and I can talk you through the shape in detail today.",
-      "glossYue": "呢張草圖係低鑲托，我今日可以同你講個形狀。",
+      "text": "This first sketch shows a low setting, and the round shape sits close to the finger.",
+      "glossYue": "呢張草圖係低鑲，圓形貼住手指。",
       "audio": "assets/audio/lines/j14-l2.mp3",
       "audioSlow": "assets/audio/lines/j14-l2-slow.mp3",
-      "say": "This first sketch shows a low setting, and I can talk you through the shape in detail today.",
+      "say": "This first sketch shows a low setting, and the round shape sits close to the finger.",
       "hideGloss": false
     },
     {
@@ -58,7 +59,7 @@
       "speaker": "gus",
       "speakerLabel": "Gus",
       "text": "Could we use white gold for the band, or is yellow gold a better choice for this stone?",
-      "glossYue": "戒圈用白金，定係黃金更適合呢粒石？",
+      "glossYue": "戒圈用白K金，定係黃K金更適合呢粒石？",
       "audio": "assets/audio/lines/j14-l3.mp3",
       "audioSlow": "assets/audio/lines/j14-l3-slow.mp3",
       "say": "Could we use white gold for the band, or is yellow gold a better choice for this stone?",
@@ -68,55 +69,55 @@
       "id": "j14-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Yellow gold suits this stone, and the band will be yellow gold rather than a pale metal.",
-      "glossYue": "黃金適合呢粒石，戒圈會用黃金，唔係白金。",
+      "text": "Yellow gold suits this stone because the warm colour matches the gem better than a pale metal.",
+      "glossYue": "黃K金適合呢粒石，因為暖色比淺色金屬襯呢粒石。",
       "audio": "assets/audio/lines/j14-l4.mp3",
       "audioSlow": "assets/audio/lines/j14-l4-slow.mp3",
-      "say": "Yellow gold suits this stone, and the band will be yellow gold rather than a pale metal.",
+      "say": "Yellow gold suits this stone because the warm colour matches the gem better than a pale metal.",
       "hideGloss": true
     },
     {
       "id": "j14-l5",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "What deposit do you need from us if the ring is ready in four short weeks?",
-      "glossYue": "如果四個短星期做好，你要幾多訂金？",
+      "text": "How long will the ring take, and what deposit do you need from us for this work?",
+      "glossYue": "戒指要幾耐，訂金要幾多？",
       "audio": "assets/audio/lines/j14-l5.mp3",
       "audioSlow": "assets/audio/lines/j14-l5-slow.mp3",
-      "say": "What deposit do you need from us if the ring is ready in four short weeks?",
+      "say": "How long will the ring take, and what deposit do you need from us for this work?",
       "hideGloss": true
     },
     {
       "id": "j14-l6",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The deposit is half of the budget if you confirm the sketch within four short weeks.",
-      "glossYue": "四個短星期內確認草圖，訂金係預算一半。",
+      "text": "The ring takes four weeks, and the deposit is half the budget once you confirm the sketch.",
+      "glossYue": "戒指要四個星期，你確認草圖之後，訂金係預算一半。",
       "audio": "assets/audio/lines/j14-l6.mp3",
       "audioSlow": "assets/audio/lines/j14-l6-slow.mp3",
-      "say": "The deposit is half of the budget if you confirm the sketch within four short weeks.",
+      "say": "The ring takes four weeks, and the deposit is half the budget once you confirm the sketch.",
       "hideGloss": true
     },
     {
       "id": "j14-l7",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "I can place the full deposit this week and then wait for the setting to be finished.",
-      "glossYue": "我呢個星期可以畀全數訂金，然後等鑲托做好。",
+      "text": "I can place the half deposit this week, and I will wait for the finished ring.",
+      "glossYue": "我呢個星期可以落一半訂金，然後等隻戒指做好。",
       "audio": "assets/audio/lines/j14-l7.mp3",
       "audioSlow": "assets/audio/lines/j14-l7-slow.mp3",
-      "say": "I can place the full deposit this week and then wait for the setting to be finished.",
+      "say": "I can place the half deposit this week, and I will wait for the finished ring.",
       "hideGloss": true
     },
     {
       "id": "j14-l8",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "I will hold the ring once the deposit arrives, and the ring can be ready in four weeks.",
-      "glossYue": "訂金到咗我就留住隻戒指，四個星期可以做好。",
+      "text": "I will hold the ring once the half deposit arrives, and you can pick it up in four weeks.",
+      "glossYue": "一半訂金到咗我就留住隻戒指，四個星期後你可以嚟取。",
       "audio": "assets/audio/lines/j14-l8.mp3",
       "audioSlow": "assets/audio/lines/j14-l8-slow.mp3",
-      "say": "I will hold the ring once the deposit arrives, and the ring can be ready in four weeks.",
+      "say": "I will hold the ring once the half deposit arrives, and you can pick it up in four weeks.",
       "hideGloss": true
     }
   ],
@@ -124,9 +125,9 @@
     {
       "prompt": "We have a clear budget for a custom ring this month, and I brought a first sketch of the stone. 呢句即係點？",
       "choices": [
-        "今個月有預算，帶咗第一張石草圖",
-        "預算唔夠，所以冇草圖",
-        "想先問訂金，唔係草圖"
+        "帶咗預算同草圖",
+        "只要訂金，唔使草圖",
+        "問白K金定黃K金"
       ],
       "answer": 0,
       "explain": "budget 係預算。sketch 係草圖。"
@@ -134,56 +135,56 @@
     {
       "prompt": "Could we use white gold for the band, or is yellow gold a better choice for this stone? 即係問緊咩？",
       "choices": [
-        "黃金更適合，白金唔啱",
-        "想改鑲托，唔係揀金",
-        "問白金定黃金邊種更適合呢粒石"
-      ],
-      "answer": 2,
-      "explain": "white gold 係白金。yellow gold 係黃金。"
-    },
-    {
-      "prompt": "What deposit do you need from us if the ring is ready in four short weeks? 即係問緊咩？",
-      "choices": [
-        "問鑲托幾時好，唔係訂金",
-        "問四個星期內要幾多訂金",
-        "話訂金已經畀咗"
+        "問四個星期",
+        "問白K金定黃K金邊種更適合",
+        "問鑲法高定低"
       ],
       "answer": 1,
-      "explain": "deposit 係訂金。"
+      "explain": "white gold 係白K金。yellow gold 係黃K金。"
+    },
+    {
+      "prompt": "How long will the ring take, and what deposit do you need from us for this work? 即係問緊咩？",
+      "choices": [
+        "問草圖邊張",
+        "問白K金定黃K金",
+        "問工期同訂金"
+      ],
+      "answer": 2,
+      "explain": "deposit 係訂金。week 係星期。"
     }
   ],
   "chunks": [
     {
-      "pattern": "We have a clear ___ for a custom ring, and I brought a first sketch.",
-      "example": "We have a clear budget for a custom ring this month, and I brought a first sketch.",
-      "glossYue": "我哋有預算同草圖。",
-      "answer": "budget",
-      "choices": [
-        "budget",
-        "setting",
-        "deposit"
-      ]
-    },
-    {
-      "pattern": "Could we use white gold for the band, or is ___ a better choice?",
-      "example": "Could we use white gold for the band, or is yellow gold a better choice?",
-      "glossYue": "黃金會唔會更適合？",
+      "pattern": "Could we use white gold for the band, or is ___ a better choice for this stone?",
+      "example": "Could we use white gold for the band, or is yellow gold a better choice for this stone?",
+      "glossYue": "黃K金會唔會更適合？",
       "answer": "yellow gold",
       "choices": [
         "yellow gold",
         "white gold",
-        "custom deposit"
+        "budget"
       ]
     },
     {
-      "pattern": "The deposit is half of the budget if you confirm the ___ within four weeks.",
-      "example": "The deposit is half of the budget if you confirm the sketch within four short weeks.",
-      "glossYue": "確認草圖，訂金係一半。",
-      "answer": "sketch",
+      "pattern": "The ring takes four weeks, and the ___ is half the budget once you confirm the sketch.",
+      "example": "The ring takes four weeks, and the deposit is half the budget once you confirm the sketch.",
+      "glossYue": "訂金係預算一半。",
+      "answer": "deposit",
       "choices": [
-        "sketch",
+        "deposit",
         "setting",
-        "week"
+        "sketch"
+      ]
+    },
+    {
+      "pattern": "I will hold the ring once the half deposit arrives, and you can pick it up in four ___.",
+      "example": "I will hold the ring once the half deposit arrives, and you can pick it up in four weeks.",
+      "glossYue": "四個星期後可以取。",
+      "answer": "weeks",
+      "choices": [
+        "weeks",
+        "budget",
+        "sketch"
       ]
     }
   ],
@@ -194,48 +195,46 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想知訂金。你點問？",
+      "promptYue": "你想問白K金定黃K金。你點講？",
       "choices": [
-        "What deposit do you need from us if the ring is ready in four short weeks?",
         "Could we use white gold for the band, or is yellow gold a better choice for this stone?",
-        "I can place the full deposit this week and then wait for the setting to be finished."
+        "How long will the ring take, and what deposit do you need from us for this work?",
+        "I can place the half deposit this week, and I will wait for the finished ring."
       ],
       "answer": 0,
-      "explain": "問 deposit 同 weeks。"
+      "explain": "講 white gold 同 yellow gold。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "Yellow",
-        "gold",
-        "suits",
+        "half",
+        "deposit",
         "this",
-        "stone"
+        "week"
       ],
       "answer": [
-        "Yellow",
-        "gold",
-        "suits",
+        "half",
+        "deposit",
         "this",
-        "stone"
+        "week"
       ]
     }
   ],
   "roleplay": {
     "you": "gus",
-    "intro": "你訂造戒指。同 Ida 講金同訂金。可以講：gold、deposit。",
+    "intro": "你訂造戒指。同 Ida 講白K金、黃K金同訂金。可以講：budget、sketch。",
     "turns": [
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "This first sketch shows a low setting, and I can talk you through the shape in detail today.",
+        "line": "This first sketch shows a low setting, and the round shape sits close to the finger.",
         "audio": "assets/audio/lines/j14-l2.mp3",
         "audioSlow": "assets/audio/lines/j14-l2-slow.mp3",
         "expect": "Could we use white gold for the band, or is yellow gold a better choice for this stone?",
         "keywords": [
-          "gold",
-          "yellow"
+          "white",
+          "gold"
         ],
         "modelAudio": "assets/audio/lines/j14-l3.mp3",
         "modelSlow": "assets/audio/lines/j14-l3-slow.mp3"
@@ -243,13 +242,12 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "Yellow gold suits this stone, and the band will be yellow gold rather than a pale metal.",
+        "line": "Yellow gold suits this stone because the warm colour matches the gem better than a pale metal.",
         "audio": "assets/audio/lines/j14-l4.mp3",
         "audioSlow": "assets/audio/lines/j14-l4-slow.mp3",
-        "expect": "What deposit do you need from us if the ring is ready in four short weeks?",
+        "expect": "How long will the ring take, and what deposit do you need from us for this work?",
         "keywords": [
-          "deposit",
-          "weeks"
+          "deposit"
         ],
         "modelAudio": "assets/audio/lines/j14-l5.mp3",
         "modelSlow": "assets/audio/lines/j14-l5-slow.mp3"
@@ -257,13 +255,13 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "The deposit is half of the budget if you confirm the sketch within four short weeks.",
+        "line": "The ring takes four weeks, and the deposit is half the budget once you confirm the sketch.",
         "audio": "assets/audio/lines/j14-l6.mp3",
         "audioSlow": "assets/audio/lines/j14-l6-slow.mp3",
-        "expect": "I can place the full deposit this week and then wait for the setting to be finished.",
+        "expect": "I can place the half deposit this week, and I will wait for the finished ring.",
         "keywords": [
           "deposit",
-          "setting"
+          "week"
         ],
         "modelAudio": "assets/audio/lines/j14-l7.mp3",
         "modelSlow": "assets/audio/lines/j14-l7-slow.mp3"
@@ -273,56 +271,56 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "聽一次，揀你喺珠寶櫃檯聽到嘅字：草圖",
-      "lemma": "sketch-noun",
+      "prompt": "Listen once and pick the pale alloy you hear for the band: white gold.",
+      "lemma": "white-gold-phrase",
       "choices": [
-        "sketch",
         "budget",
-        "week"
+        "white gold",
+        "sketch"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the warm metal you hear for this stone: yellow gold.",
+      "lemma": "yellow-gold-phrase",
+      "choices": [
+        "yellow gold",
+        "week",
+        "deposit"
       ],
       "answer": 0
     },
     {
-      "type": "listen",
-      "prompt": "聽一次，揀你喺珠寶櫃檯聽到嘅字：星期",
-      "lemma": "week-noun",
-      "choices": [
-        "sketch",
-        "setting",
-        "week"
-      ],
-      "answer": 2
-    },
-    {
       "type": "meaning",
-      "prompt": "你講「Could we use white gold for the band, or is yellow gold a better choice for this stone?」，yellow gold 係咩意思？",
+      "prompt": "You say 'The deposit is half the budget.' What does deposit mean?",
       "choices": [
         "草圖",
-        "黃金",
-        "訂金"
+        "訂金",
+        "星期"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "Ida 講「The deposit is half of the budget if you confirm the sketch within four short weeks.」，deposit 係咩意思？",
+      "prompt": "You say 'The ring takes four weeks.' What does week mean?",
       "choices": [
-        "訂金",
-        "鑲托",
-        "星期"
+        "星期",
+        "白K金",
+        "鑲"
       ],
       "answer": 0
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：gold、sketch、定 week？",
+      "prompt": "Which phrase has /ɡoʊld/: white gold, budget, or sketch?",
       "choices": [
+        "budget",
         "sketch",
-        "week",
-        "gold"
+        "white gold"
       ],
       "answer": 2,
-      "explain": "gold 有 /l/。"
+      "explain": "gold 有 /ɡoʊld/。"
     }
   ],
   "sound": {
