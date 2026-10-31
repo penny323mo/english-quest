@@ -3,8 +3,8 @@
   "unit": "D",
   "titleYue": "銀行：櫃員機食咗張卡",
   "titleEn": "The machine kept my card",
-  "canDoYue": "你識講櫃員機食咗張卡，要求凍結，再用身份文件問臨時限額同工作日。",
-  "canDoEn": "Say the machine kept your card, ask the bank to freeze it, and ask about a temporary limit.",
+  "canDoYue": "你識講櫃員機食咗張卡、而家凍結呢張卡、出示一份身份文件、星期五收新卡，同埋一個工作日嘅臨時限額。",
+  "canDoEn": "Say the machine kept the card, freeze that card now, show one identity document, and ask about a temporary limit until Friday.",
   "minutes": 12,
   "hero": "assets/art/lessons/d9.webp",
   "cast": [
@@ -21,8 +21,8 @@
     "temporary-limit-phrase"
   ],
   "topicTags": [
+    "銀行卡",
     "櫃員機",
-    "卡",
     "凍結",
     "身份",
     "工作日",
@@ -89,55 +89,55 @@
       "id": "d9-l4",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "We can freeze the card today, and the block starts on the next working day.",
-      "glossYue": "我哋今日可以凍結張卡，下一個工作日開始停用。",
+      "text": "We can freeze this one card right now, and the new card arrives on Friday.",
+      "glossYue": "我哋而家可以凍結呢一張卡，新卡星期五到。",
       "audio": "assets/audio/lines/d9-l4.mp3",
       "audioSlow": "assets/audio/lines/d9-l4-slow.mp3",
-      "say": "We can freeze the card today, and the block starts on the next working day.",
+      "say": "We can freeze this one card right now, and the new card arrives on Friday.",
       "hideGloss": true
     },
     {
       "id": "d9-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can you freeze it this afternoon, and what papers prove my identity at this desk?",
-      "glossYue": "可唔可以今日下晝凍結，我要用咩文件證明身份？",
+      "text": "What papers prove my identity at this desk, and when does the new card arrive?",
+      "glossYue": "喺呢個櫃檯要用咩文件證明身份，新卡幾時到？",
       "audio": "assets/audio/lines/d9-l5.mp3",
       "audioSlow": "assets/audio/lines/d9-l5-slow.mp3",
-      "say": "Can you freeze it this afternoon, and what papers prove my identity at this desk?",
+      "say": "What papers prove my identity at this desk, and when does the new card arrive?",
       "hideGloss": true
     },
     {
       "id": "d9-l6",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "Please show one identity document, and we will freeze the account before the bank closes.",
-      "glossYue": "請出示一份身份文件，我哋會喺銀行關門之前凍結戶口。",
+      "text": "Please show one identity document to me, and the new card arrives on Friday.",
+      "glossYue": "請畀一份身份文件我睇，新卡星期五到。",
       "audio": "assets/audio/lines/d9-l6.mp3",
       "audioSlow": "assets/audio/lines/d9-l6-slow.mp3",
-      "say": "Please show one identity document, and we will freeze the account before the bank closes.",
+      "say": "Please show one identity document to me, and the new card arrives on Friday.",
       "hideGloss": true
     },
     {
       "id": "d9-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Will the temporary limit let me draw cash while the card stays in the machine?",
-      "glossYue": "張卡留喺部機度，臨時限額可唔可以畀我拎現金？",
+      "text": "Can I draw some cash at this counter on the temporary limit while I wait?",
+      "glossYue": "我等緊嘅時候，可唔可以用臨時限額喺櫃檯拎現金？",
       "audio": "assets/audio/lines/d9-l7.mp3",
       "audioSlow": "assets/audio/lines/d9-l7-slow.mp3",
-      "say": "Will the temporary limit let me draw cash while the card stays in the machine?",
+      "say": "Can I draw some cash at this counter on the temporary limit while I wait?",
       "hideGloss": true
     },
     {
       "id": "d9-l8",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "The temporary limit is two thousand, and it lasts one working day only.",
-      "glossYue": "臨時限額係二千，只維持一個工作日。",
+      "text": "The temporary limit is two thousand dollars, and it lasts for one working day.",
+      "glossYue": "臨時限額係二千蚊，維持一個工作日。",
       "audio": "assets/audio/lines/d9-l8.mp3",
       "audioSlow": "assets/audio/lines/d9-l8-slow.mp3",
-      "say": "The temporary limit is two thousand, and it lasts one working day only.",
+      "say": "The temporary limit is two thousand dollars, and it lasts for one working day.",
       "hideGloss": true
     }
   ],
@@ -145,29 +145,29 @@
     {
       "prompt": "The cash machine kept my card, and I cannot take it out of the slot at all. 呢句即係點？",
       "choices": [
-        "櫃員機食咗張卡",
-        "想問臨時限額",
-        "身份文件唔見咗"
+        "櫃員機食咗銀行卡",
+        "櫃員機已經退咗銀行卡",
+        "想開新銀行卡戶口"
       ],
       "answer": 0,
-      "explain": "machine 係櫃員機。card 係卡。"
+      "explain": "machine 係櫃員機。card 係銀行卡。"
     },
     {
-      "prompt": "Can you freeze it this afternoon, and what papers prove my identity at this desk? 即係問緊咩？",
+      "prompt": "What papers prove my identity at this desk, and when does the new card arrive? 即係問緊咩？",
       "choices": [
-        "問工作日幾長",
-        "問可唔可以凍結，用咩證明身份",
-        "問櫃員機喺邊"
+        "問限額係咪二千",
+        "問用咩文件證明身份，新卡幾時到",
+        "問工作日幾多個鐘"
       ],
       "answer": 1,
-      "explain": "freeze 係凍結。identity 係身份。"
+      "explain": "identity 係身份。"
     },
     {
-      "prompt": "Will the temporary limit let me draw cash while the card stays in the machine? 即係問緊咩？",
+      "prompt": "Can I draw some cash at this counter on the temporary limit while I wait? 即係問緊咩？",
       "choices": [
-        "問今日凍唔凍結",
-        "問身份文件幾多頁",
-        "問臨時限額可唔可以拎現金"
+        "問櫃員機可唔可以退銀行卡",
+        "問限額星期五開唔開",
+        "問等卡期間可唔可以用臨時限額喺櫃檯拎錢"
       ],
       "answer": 2,
       "explain": "temporary limit 係臨時限額。"
@@ -175,35 +175,35 @@
   ],
   "chunks": [
     {
-      "pattern": "The cash ___ kept my card, and I cannot take it out of the slot at all.",
-      "example": "The cash machine kept my card, and I cannot take it out of the slot at all.",
-      "glossYue": "櫃員機食咗張卡。",
-      "answer": "machine",
+      "pattern": "We can ___ this one card right now, and the new card arrives on Friday.",
+      "example": "We can freeze this one card right now, and the new card arrives on Friday.",
+      "glossYue": "而家凍結呢張卡。",
+      "answer": "freeze",
       "choices": [
-        "machine",
+        "freeze",
         "identity",
-        "freeze"
+        "limit"
       ]
     },
     {
-      "pattern": "Please show one ___ document, and we will freeze the account before the bank closes.",
-      "example": "Please show one identity document, and we will freeze the account before the bank closes.",
-      "glossYue": "請出示身份文件。",
+      "pattern": "Please show one ___ document to me, and the new card arrives on Friday.",
+      "example": "Please show one identity document to me, and the new card arrives on Friday.",
+      "glossYue": "出示身份文件。",
       "answer": "identity",
       "choices": [
         "identity",
-        "card",
-        "machine"
+        "machine",
+        "Friday"
       ]
     },
     {
-      "pattern": "The ___ is two thousand, and it lasts one working day only.",
-      "example": "The temporary limit is two thousand, and it lasts one working day only.",
+      "pattern": "The ___ is two thousand dollars, and it lasts for one working day.",
+      "example": "The temporary limit is two thousand dollars, and it lasts for one working day.",
       "glossYue": "臨時限額係二千。",
       "answer": "temporary limit",
       "choices": [
         "temporary limit",
-        "card",
+        "identity",
         "machine"
       ]
     }
@@ -211,14 +211,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你話部機食咗張卡。你點講？",
+      "promptYue": "你想喺櫃檯用臨時限額。你點講？",
       "choices": [
+        "Can I draw some cash at this counter on the temporary limit while I wait?",
         "The cash machine kept my card, and I cannot take it out of the slot at all.",
-        "Can you freeze it this afternoon, and what papers prove my identity at this desk?",
-        "Will the temporary limit let me draw cash while the card stays in the machine?"
+        "What papers prove my identity at this desk, and when does the new card arrive?"
       ],
       "answer": 0,
-      "explain": "講 machine 同 card。"
+      "explain": "講 temporary limit。"
     },
     {
       "type": "order",
@@ -226,20 +226,18 @@
       "tokens": [
         "freeze",
         "the",
-        "card",
-        "today"
+        "card"
       ],
       "answer": [
         "freeze",
         "the",
-        "card",
-        "today"
+        "card"
       ]
     }
   ],
   "roleplay": {
     "you": "tom",
-    "intro": "你喺銀行。同 Ben 講張卡同限額。可以講：card、freeze。",
+    "intro": "你張卡被櫃員機食咗。同 Ben 講凍結同身份。可以講：card、identity。",
     "turns": [
       {
         "partner": "Ben",
@@ -249,7 +247,7 @@
         "audioSlow": "assets/audio/lines/d9-l2-slow.mp3",
         "expect": "Yes, I tried the cancel button, and the machine still kept the card inside the slot.",
         "keywords": [
-          "machine",
+          "cancel",
           "card"
         ],
         "modelAudio": "assets/audio/lines/d9-l3.mp3",
@@ -258,13 +256,13 @@
       {
         "partner": "Ben",
         "partnerId": "ben",
-        "line": "We can freeze the card today, and the block starts on the next working day.",
+        "line": "We can freeze this one card right now, and the new card arrives on Friday.",
         "audio": "assets/audio/lines/d9-l4.mp3",
         "audioSlow": "assets/audio/lines/d9-l4-slow.mp3",
-        "expect": "Can you freeze it this afternoon, and what papers prove my identity at this desk?",
+        "expect": "What papers prove my identity at this desk, and when does the new card arrive?",
         "keywords": [
-          "freeze",
-          "identity"
+          "identity",
+          "Friday"
         ],
         "modelAudio": "assets/audio/lines/d9-l5.mp3",
         "modelSlow": "assets/audio/lines/d9-l5-slow.mp3"
@@ -272,13 +270,13 @@
       {
         "partner": "Ben",
         "partnerId": "ben",
-        "line": "Please show one identity document, and we will freeze the account before the bank closes.",
+        "line": "Please show one identity document to me, and the new card arrives on Friday.",
         "audio": "assets/audio/lines/d9-l6.mp3",
         "audioSlow": "assets/audio/lines/d9-l6-slow.mp3",
-        "expect": "Will the temporary limit let me draw cash while the card stays in the machine?",
+        "expect": "Can I draw some cash at this counter on the temporary limit while I wait?",
         "keywords": [
-          "limit",
-          "card"
+          "temporary",
+          "limit"
         ],
         "modelAudio": "assets/audio/lines/d9-l7.mp3",
         "modelSlow": "assets/audio/lines/d9-l7-slow.mp3"
@@ -288,41 +286,41 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for the cash machine: machine.",
-      "lemma": "machine-noun",
+      "prompt": "Listen once and pick the word you hear for stopping the card: freeze.",
+      "lemma": "freeze-verb",
       "choices": [
-        "card",
-        "machine",
-        "identity"
+        "identity",
+        "freeze",
+        "card"
       ],
       "answer": 1
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for stopping the card: freeze.",
-      "lemma": "freeze-verb",
+      "prompt": "Listen once and pick the phrase you hear for the short cash cap: temporary limit.",
+      "lemma": "temporary-limit-phrase",
       "choices": [
-        "freeze",
-        "card",
+        "temporary limit",
+        "identity",
         "machine"
       ],
       "answer": 0
     },
     {
       "type": "meaning",
-      "prompt": "You say 'What papers prove my identity?' What does identity mean?",
+      "prompt": "You say 'Please show one identity document.' What does identity mean?",
       "choices": [
         "身份",
-        "卡",
-        "限額"
+        "限額",
+        "工作日"
       ],
       "answer": 0
     },
     {
       "type": "meaning",
-      "prompt": "You say 'It lasts one working day only.' What does working day mean?",
+      "prompt": "You say 'It lasts for one working day.' What does working day mean?",
       "choices": [
-        "凍結",
+        "銀行卡",
         "工作日",
         "櫃員機"
       ],
@@ -330,14 +328,14 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word has /i/: freeze, card, or machine?",
+      "prompt": "Which word means the box that kept the card: machine, card, or limit?",
       "choices": [
         "card",
-        "machine",
-        "freeze"
+        "limit",
+        "machine"
       ],
       "answer": 2,
-      "explain": "freeze 有 /i/。"
+      "explain": "machine 呢度係櫃員機。"
     }
   ],
   "shadow": {

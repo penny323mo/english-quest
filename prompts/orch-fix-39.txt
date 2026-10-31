@@ -1,0 +1,13 @@
+Phase 4 unlimited. Round 39. Read CURRICULUM.md + ART-STYLE.md + DUOLINGO-REF.md + SPEC.md + review/mockup-v1 (Penny-approved) + review/loop-r37/coder-audit.md (+ heroes-contact.jpg) first.
+cd /workspace/sidequest/english-quest. Never touch the grokbot repo or the nightly panes. No paid services. Report files under review/ stay local (never commit review/loop-r*/ or review/style-gap/).
+
+## FIRST: close every open item from review/loop-r37/coder-audit.md and the newest review/loop-r38/coder-audit.md if present. #85 (J15 tight ring must be made LARGER) is CRITICAL and comes first, then #86 #87 #88 #89, then #76 #77.
+## P0 STYLE batch 3 (#79): re-render ALL remaining off-style heroes (d1–d3, j4–j12, r3–r7, t3–t9, w1–w6 minus any batch 2 already fixed) in mockup-v1 soft flat pastel, adult proportions, no ink/hatching/realistic shading, no giant baby faces. Update the style manifest + contact sheet. Goal: 100% on-style this round; Penny calls style consistency her top ship blocker.
+
+## NEW FEATURE TARGET (≥3 new lessons)
+Add to CURRICULUM.md and ship end-to-end (12 beats, hero WebP 900×1200 in mockup-v1 style, lexicon CMUdict IPA, Kokoro audio, natural Cantonese, unique examples, same-scene distractors, shuffled answers, tests), slotted so CEFR stays non-decreasing and avg words/line never drops >0.5:
+- **T13 — At the pharmacy abroad / 外地藥房買藥 · A2/B1** (headache, fever, how many times a day, after meals, drowsy, prescription needed).
+- **D10 — Calling a taxi app / 召的士 · A2/B1** (pick-up point, plate number, running late, change destination, pay by card, receipt).
+- **J17 — Pearl care and pricing / 珍珠保養同價錢 · B1** (freshwater vs saltwater, lustre, keep away from perfume, wipe after wearing, certificate, price range).
+Every dialogue must be a real exchange: each question answered, no contradictions, no fragment repeated 3+ times, no padding. Must pass the coherence, filler, because-padding, repetition (#89), distractor and progression tests.
+Run tests + build; Lighthouse mobile Perf ≥98. Append "## Round 39" to CHANGELOG.md. Do not git commit.

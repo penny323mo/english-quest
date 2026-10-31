@@ -93,10 +93,11 @@
 - **Dialogue beats:** Total → Method → Tax-free steps → Wrap → Thank-you
 
 ### J15 — Ring size and care / 改戒指尺寸同維修 · A2/B1 · SHIPPED
-- **Goals:** Say a ring is tight, ask for half a size smaller, and collect it on Saturday under the warranty with the receipt.
+- **Goals:** Say a ring is tight, ask for half a size larger, and collect the opened ring on Saturday under the warranty with the receipt.
 - **Vocab:** tight, half a size, smaller, Saturday, warranty, receipt
-- **Grammar:** Can you make it half a size smaller? Saturday is the collection day.
-- **Dialogue beats:** Tight ring and receipt → Smaller → Half a size → Warranty and Saturday → How long → Collection day → Bring the receipt → Keep the receipt
+- **Grammar:** Can you make the ring half a size larger? The band is smaller than the finger.
+- **Dialogue beats:** Tight ring and receipt → Larger opening → Half a size larger → Smaller band under warranty → How long and Saturday → Ready Saturday → Bring the receipt → Larger ring is ready
+- **Coherence:** one size change (larger), one collection day (Saturday). Checked against the earlier request.
 
 ### J8 — After-sales and warranty · B1 · NEW
 - **Goals:** Explain care, warranty, return window politely.
@@ -105,10 +106,11 @@
 - **Dialogue beats:** After purchase → Care tips → Warranty → Return policy → Reassure
 
 ### D9 — The machine kept my card / 銀行：櫃員機食咗張卡 · B1 · SHIPPED
-- **Goals:** Say the cash machine kept the card, ask the bank to freeze it, show identity papers, and ask about a temporary limit for one working day.
+- **Goals:** Say the cash machine kept the card, freeze that card now, show one identity document, name Friday for the new card, and draw cash at the counter on a one-working-day temporary limit.
 - **Vocab:** card, machine, freeze, identity, working day, temporary limit
-- **Grammar:** Can you freeze it this afternoon? Will the temporary limit let me draw cash?
-- **Dialogue beats:** Machine kept the card → Cancel button → Still inside → Freeze today → Identity papers → Freeze the account → Temporary limit → One working day
+- **Grammar:** Right now we can freeze this card. Can I draw cash at this counter on the temporary limit?
+- **Dialogue beats:** Machine kept the card → Cancel button → Still inside → Freeze the card now, new card on Friday → Identity and arrival → One identity document, Friday → Counter cash on the temporary limit → Two thousand for one working day
+- **Coherence:** the card is frozen now, the replacement arrives on Friday, and the working day belongs only to the temporary limit. The account is not frozen. Checked against the earlier request.
 
 ### J9 — Handling complaints · B1 · NEW (PRIORITY)
 - **Goals:** Listen, apologise, offer fix without over-promising.
@@ -121,6 +123,13 @@
 - **Vocab (14):** matching, pair, set, also, recommend, popular, complete, look, gift wrap, engraving, polish, service, optional, if you like
 - **Grammar:** You might also like…; If you're getting X, Y goes well…
 - **Dialogue beats:** Soft suggest → Benefit → Objection soft → Accept/decline gracefully
+
+### J16 — Engraving a gift / 首飾刻字 · B1 · SHIPPED
+- **Goals:** Ask for a short engraving of a wedding date, fit each initial to the character limit, choose a plain font, check the spelling, and collect it in three days.
+- **Vocab:** engraving, initial, date, font, character limit, fee, spelling
+- **Grammar:** Can you use a plain font? The engraving is ready in three days.
+- **Dialogue beats:** Wedding date on the bracelet → Initials and the character limit → Plain font and fee → Fee after twelve characters → Check the spelling → Ready in three days → Fee if the spelling is right → Same fee, three days
+- **Coherence:** the wedding date is the text, not the collection day. The only ready time is three days. Checked against the earlier request.
 
 ### J11 — VIP / high-ticket consult · B2 · NEW
 - **Goals:** Longer consult: occasion, timeline, budget band, follow-up call.
@@ -170,6 +179,13 @@
 - **Vocab (14):** bill, check, split, separate, together, service charge, tip, include, card machine, receipt, change, keep the change, thank you, takeaway
 - **Grammar:** Could we have the bill? Shall we split it?
 - **Dialogue beats:** Ask bill → Split option → Pay → Tip phrase → Goodbye
+
+### R11 — Allergies and dietary needs / 食物敏感同戒口 · A2/B1 · SHIPPED
+- **Goals:** Say you are allergic to peanuts, eat no pork, ask if a dish has egg, and request a vegetarian option on a separate plate.
+- **Vocab:** allergic, peanut, pork, egg, vegetarian, kitchen, separate
+- **Grammar:** I am allergic to peanuts. Is there any egg in it? Could I have a vegetarian option?
+- **Dialogue beats:** Peanuts and no pork → Egg as well → Kitchen keeps peanuts away → No egg → Vegetarian and a separate plate → Plate is ready → Tell the kitchen → No pork on the vegetarian plate
+- **Coherence:** peanuts, pork, and egg stay off the same plate. One kitchen instruction. Checked against the earlier request.
 
 ### R6 — Reservation by phone · B1 · NEW
 - **Goals:** Book a table; change time; cancel politely.
@@ -228,10 +244,11 @@
 - **Dialogue beats:** Approach staff → Describe → Where/when → Next steps → Reassure self
 
 ### T12 — Hotel check-in problem / 酒店入住出問題 · A2/B1 · SHIPPED
-- **Goals:** Say the room is not ready, ask for early check in and a non-smoking room, leave the luggage, and ask for the wifi password.
+- **Goals:** Say the room is not ready, ask for early check in and a non-smoking choice, leave the luggage at the desk, and take the wifi password from the desk.
 - **Vocab:** reservation, room, luggage, early check in, non-smoking, wifi, password
-- **Grammar:** Could we have a non-smoking room? What is the wifi password?
-- **Dialogue beats:** Reservation and early check in → Room not ready → Non-smoking and luggage → Early check in later → Wifi password → Card by the bed → Wait with the luggage → Come back after four
+- **Grammar:** Could we please have a non-smoking choice? What is the wifi password?
+- **Dialogue beats:** Reservation and early check in → Luggage stays by the desk → Non-smoking and luggage stays → Early check in after four → Wifi password → Card from the front desk → Leave the luggage and return after four → Desk calls the name
+- **Coherence:** one luggage plan (it stays at the desk) and one ready time (after four). The password is printed on a card taken at the desk. Checked against the earlier request.
 
 ### T6 — Hotel problem / request · B1 · NEW
 - **Goals:** Noisy room, AC broken, extra towel — polite request + escalate.
@@ -291,6 +308,13 @@
 - **Vocab (16):** agenda, update, share, screen, mute, unmute, clarify, make sense, suggest, agree, concerned, deadline, action item, owner, next meeting, wrap up
 - **Grammar:** I see your point, but…; Could you expand on…?; Let's…
 - **Dialogue beats:** Open → Update → Clarify → Decision → Actions
+
+### W9 — Asking for annual leave / 請年假 · B1 · SHIPPED
+- **Goals:** Give annual-leave dates, say who covers the desk, send a handover, and ask for email approval around a public holiday.
+- **Vocab:** annual leave, handover, approve, email, public holiday
+- **Grammar:** I would like annual leave from Monday through Friday. Can you approve those dates?
+- **Dialogue beats:** Dates next week → Who covers → Jo covers after the handover → Email the note → Ask for approval → Approve and email → Wednesday holiday, handover Tuesday → Leave starts after the note
+- **Coherence:** one date range (Monday to Friday), one cover (Jo), Wednesday is a public holiday inside that week, and approval waits for the Tuesday handover. Checked against the earlier request.
 
 ### W4 — Small talk at work · A2/B1 · NEW
 - **Goals:** Weather, weekend, commute — then pivot to work.
@@ -397,7 +421,8 @@ Every round until map complete, ship **≥3 NEW lessons** in this order (skip al
 14. **D7, W8, J14** (hair salon, meeting update, custom jewellery)  
 15. **R10, T11, D8** (café order, MTR top-up, repair report)  
 16. **J15, T12, D9** (ring size, hotel check-in problem, ATM card)
-17. Then polish / legendary review nodes / further B2 stretch
+17. **R11, W9, J16** (allergies, annual leave, engraving)
+18. Then polish / legendary review nodes / further B2 stretch
 
 **Path UX:** show CEFR chip (A1/A2/B1/B2) on each node; group Path into level tracks; lock by prerequisite; keep `soon:true` teasers for unshipped.
 

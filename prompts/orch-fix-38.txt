@@ -11,3 +11,6 @@ Add to CURRICULUM.md and ship end-to-end (12 beats, hero WebP 900×1200 in mocku
 - **J16 — Engraving a gift / 首飾刻字 · B1** (initials, date, font, character limit, extra fee, ready in three days, spelling check).
 Every dialogue must pass the coherence, filler, because-padding, distractor and progression tests.
 Run tests + build; Lighthouse mobile Perf ≥98. Append "## Round 38" to CHANGELOG.md. Do not git commit.
+
+## Coder r37 live audit additions (must also close this round)
+See review/loop-r37/coder-audit.md: #85 CRITICAL J15 tight ring must be made LARGER + keyword stuffing; #86 T12 luggage/wifi coherence + 訂房; #87 D9 freeze/limit logic + machine gloss; #88 identity IPA, trim Cantonese; #89 repetition test.

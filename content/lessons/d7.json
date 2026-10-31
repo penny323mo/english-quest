@@ -37,7 +37,7 @@
       "speaker": "beau",
       "speakerLabel": "Beau",
       "text": "I would like a simple trim, and keep a light fringe.",
-      "glossYue": "我想剪個簡單髮型，瀏海留少少。",
+      "glossYue": "我想修短少少，瀏海留少少。",
       "audio": "assets/audio/lines/d7-l1.mp3",
       "audioSlow": "assets/audio/lines/d7-l1-slow.mp3",
       "say": "I would like a simple trim, and keep a light fringe.",
@@ -125,7 +125,7 @@
     {
       "prompt": "I would like a simple trim, and keep a light fringe. 呢句即係點？",
       "choices": [
-        "想剪個簡單髮型，留瀏海",
+        "想修短少少，留瀏海",
         "只係洗髮，唔剪",
         "想預約下次先講價錢"
       ],
@@ -157,7 +157,7 @@
     {
       "pattern": "I would like a simple ___, and keep a light fringe.",
       "example": "I would like a simple trim, and keep a light fringe.",
-      "glossYue": "我想剪個簡單髮型。",
+      "glossYue": "我想修短少少。",
       "answer": "trim",
       "choices": [
         "trim",

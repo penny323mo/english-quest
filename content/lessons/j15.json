@@ -3,8 +3,8 @@
   "unit": "J",
   "titleYue": "改戒指尺寸同維修",
   "titleEn": "Resize a ring and collect it",
-  "canDoYue": "你識講戒指太緊，要求改細半碼，再用保養同收據約星期六取。",
-  "canDoEn": "Say a ring is tight, ask for half a size smaller, and collect it on Saturday under the warranty.",
+  "canDoYue": "你識講戒指太緊，要求改大半碼，再用保養同收據約星期六取。",
+  "canDoEn": "Say a ring is tight, ask for half a size larger, and collect it on Saturday under the warranty.",
   "minutes": 12,
   "hero": "assets/art/lessons/j15.webp",
   "cast": [
@@ -67,77 +67,77 @@
       "id": "j15-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "A tight ring can be made smaller, and the receipt shows the purchase date.",
-      "glossYue": "太緊嘅戒指可以改細，收據上面有購買日期。",
+      "text": "A tight ring needs one larger opening, and the receipt shows the full purchase date.",
+      "glossYue": "太緊嘅戒指要開大少少，收據上面有完整購買日期。",
       "audio": "assets/audio/lines/j15-l2.mp3",
       "audioSlow": "assets/audio/lines/j15-l2-slow.mp3",
-      "say": "A tight ring can be made smaller, and the receipt shows the purchase date.",
+      "say": "A tight ring needs one larger opening, and the receipt shows the full purchase date.",
       "hideGloss": false
     },
     {
       "id": "j15-l3",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Can you make it half a size smaller, and how long will that take?",
-      "glossYue": "可唔可以改細半碼，要幾耐？",
+      "text": "Can you make the ring half a size larger, and when can I collect it?",
+      "glossYue": "可唔可以將戒指改大半碼，幾時可以取？",
       "audio": "assets/audio/lines/j15-l3.mp3",
       "audioSlow": "assets/audio/lines/j15-l3-slow.mp3",
-      "say": "Can you make it half a size smaller, and how long will that take?",
+      "say": "Can you make the ring half a size larger, and when can I collect it?",
       "hideGloss": false
     },
     {
       "id": "j15-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "That half size change is free under the warranty, and Saturday is the collection day.",
-      "glossYue": "保養範圍內改半碼唔使錢，星期六可以取。",
+      "text": "Yes the band is smaller, and we can open the ring under the warranty.",
+      "glossYue": "係，戒圈細過你手指，保養可以幫你開大。",
       "audio": "assets/audio/lines/j15-l4.mp3",
       "audioSlow": "assets/audio/lines/j15-l4-slow.mp3",
-      "say": "That half size change is free under the warranty, and Saturday is the collection day.",
+      "say": "Yes the band is smaller, and we can open the ring under the warranty.",
       "hideGloss": true
     },
     {
       "id": "j15-l5",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "How long is the warranty work, and can I collect the ring on Saturday please?",
-      "glossYue": "保養工作要幾耐，星期六可唔可以取戒指？",
+      "text": "How long does the warranty work take, and may I collect it on Saturday?",
+      "glossYue": "保養工作要幾耐，星期六可唔可以取？",
       "audio": "assets/audio/lines/j15-l5.mp3",
       "audioSlow": "assets/audio/lines/j15-l5-slow.mp3",
-      "say": "How long is the warranty work, and can I collect the ring on Saturday please?",
+      "say": "How long does the warranty work take, and may I collect it on Saturday?",
       "hideGloss": true
     },
     {
       "id": "j15-l6",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The warranty covers this smaller ring, so Saturday is the right collection day for you.",
-      "glossYue": "保養包呢隻改細嘅戒指，星期六就係取貨日。",
+      "text": "The warranty work is ready on Saturday, and that day is free for you.",
+      "glossYue": "保養工作星期六做好，嗰日唔使錢。",
       "audio": "assets/audio/lines/j15-l6.mp3",
       "audioSlow": "assets/audio/lines/j15-l6-slow.mp3",
-      "say": "The warranty covers this smaller ring, so Saturday is the right collection day for you.",
+      "say": "The warranty work is ready on Saturday, and that day is free for you.",
       "hideGloss": true
     },
     {
       "id": "j15-l7",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "I will bring the receipt on Saturday and collect the smaller ring then.",
-      "glossYue": "我星期六會帶收據嚟取改細咗嘅戒指。",
+      "text": "I will bring the receipt on Saturday and pay nothing for this warranty work.",
+      "glossYue": "我星期六會帶收據，呢次保養工作唔使畀錢。",
       "audio": "assets/audio/lines/j15-l7.mp3",
       "audioSlow": "assets/audio/lines/j15-l7-slow.mp3",
-      "say": "I will bring the receipt on Saturday and collect the smaller ring then.",
+      "say": "I will bring the receipt on Saturday and pay nothing for this warranty work.",
       "hideGloss": true
     },
     {
       "id": "j15-l8",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Please keep that receipt with you, and Saturday is still the right collection day.",
-      "glossYue": "請帶住張收據，星期六仍然係取貨日。",
+      "text": "Please bring that receipt with you on Saturday, and the larger ring is ready.",
+      "glossYue": "請星期六帶埋張收據，開大咗嘅戒指會準備好。",
       "audio": "assets/audio/lines/j15-l8.mp3",
       "audioSlow": "assets/audio/lines/j15-l8-slow.mp3",
-      "say": "Please keep that receipt with you, and Saturday is still the right collection day.",
+      "say": "Please bring that receipt with you on Saturday, and the larger ring is ready.",
       "hideGloss": true
     }
   ],
@@ -153,17 +153,17 @@
       "explain": "tight 係緊。receipt 係收據。"
     },
     {
-      "prompt": "Can you make it half a size smaller, and how long will that take? 即係問緊咩？",
+      "prompt": "Can you make the ring half a size larger, and when can I collect it? 即係問緊咩？",
       "choices": [
         "問星期六開唔開",
-        "問可唔可以改細半碼",
+        "問可唔可以改大半碼",
         "問收據放喺邊"
       ],
       "answer": 1,
-      "explain": "half a size 係半碼。smaller 係細啲。"
+      "explain": "half a size 係半碼。larger 係大啲。"
     },
     {
-      "prompt": "How long is the warranty work, and can I collect the ring on Saturday please? 即係問緊咩？",
+      "prompt": "How long does the warranty work take, and may I collect it on Saturday? 即係問緊咩？",
       "choices": [
         "問戒指係咪太緊",
         "問收據見唔見",
@@ -175,9 +175,9 @@
   ],
   "chunks": [
     {
-      "pattern": "Can you make it ___ smaller, and how long will that take?",
-      "example": "Can you make it half a size smaller, and how long will that take?",
-      "glossYue": "可唔可以改細半碼？",
+      "pattern": "Can you make the ring ___ larger, and when can I collect it?",
+      "example": "Can you make the ring half a size larger, and when can I collect it?",
+      "glossYue": "可唔可以改大半碼？",
       "answer": "half a size",
       "choices": [
         "half a size",
@@ -186,20 +186,20 @@
       ]
     },
     {
-      "pattern": "That half size change is free under the ___, and Saturday is the collection day.",
-      "example": "That half size change is free under the warranty, and Saturday is the collection day.",
-      "glossYue": "保養範圍內改半碼。",
-      "answer": "warranty",
+      "pattern": "Yes the band is ___, and we can open the ring under the warranty.",
+      "example": "Yes the band is smaller, and we can open the ring under the warranty.",
+      "glossYue": "戒圈細過手指。",
+      "answer": "smaller",
       "choices": [
-        "warranty",
-        "receipt",
-        "tight"
+        "smaller",
+        "tight",
+        "Saturday"
       ]
     },
     {
-      "pattern": "I will bring the ___ on Saturday and collect the smaller ring then.",
-      "example": "I will bring the receipt on Saturday and collect the smaller ring then.",
-      "glossYue": "星期六帶收據嚟取。",
+      "pattern": "I will bring the ___ on Saturday and pay nothing for this warranty work.",
+      "example": "I will bring the receipt on Saturday and pay nothing for this warranty work.",
+      "glossYue": "星期六帶收據。",
       "answer": "receipt",
       "choices": [
         "receipt",
@@ -211,14 +211,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想改細半碼。你點講？",
+      "promptYue": "你想改大半碼。你點講？",
       "choices": [
-        "Can you make it half a size smaller, and how long will that take?",
-        "How long is the warranty work, and can I collect the ring on Saturday please?",
+        "Can you make the ring half a size larger, and when can I collect it?",
+        "How long does the warranty work take, and may I collect it on Saturday?",
         "This ring is too tight on my finger, and I still have the receipt."
       ],
       "answer": 0,
-      "explain": "講 half a size。"
+      "explain": "講 half a size larger。"
     },
     {
       "type": "order",
@@ -227,13 +227,13 @@
         "half",
         "a",
         "size",
-        "smaller"
+        "larger"
       ],
       "answer": [
         "half",
         "a",
         "size",
-        "smaller"
+        "larger"
       ]
     }
   ],
@@ -244,10 +244,10 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "A tight ring can be made smaller, and the receipt shows the purchase date.",
+        "line": "A tight ring needs one larger opening, and the receipt shows the full purchase date.",
         "audio": "assets/audio/lines/j15-l2.mp3",
         "audioSlow": "assets/audio/lines/j15-l2-slow.mp3",
-        "expect": "Can you make it half a size smaller, and how long will that take?",
+        "expect": "Can you make the ring half a size larger, and when can I collect it?",
         "keywords": [
           "half",
           "size"
@@ -258,10 +258,10 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "That half size change is free under the warranty, and Saturday is the collection day.",
+        "line": "Yes the band is smaller, and we can open the ring under the warranty.",
         "audio": "assets/audio/lines/j15-l4.mp3",
         "audioSlow": "assets/audio/lines/j15-l4-slow.mp3",
-        "expect": "How long is the warranty work, and can I collect the ring on Saturday please?",
+        "expect": "How long does the warranty work take, and may I collect it on Saturday?",
         "keywords": [
           "warranty",
           "Saturday"
@@ -272,10 +272,10 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "The warranty covers this smaller ring, so Saturday is the right collection day for you.",
+        "line": "The warranty work is ready on Saturday, and that day is free for you.",
         "audio": "assets/audio/lines/j15-l6.mp3",
         "audioSlow": "assets/audio/lines/j15-l6-slow.mp3",
-        "expect": "I will bring the receipt on Saturday and collect the smaller ring then.",
+        "expect": "I will bring the receipt on Saturday and pay nothing for this warranty work.",
         "keywords": [
           "receipt",
           "Saturday"
@@ -299,7 +299,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the phrase you hear for a small change in fit: half a size.",
+      "prompt": "Listen once and pick the phrase you hear for a larger fit: half a size.",
       "lemma": "half-size-phrase",
       "choices": [
         "half a size",
@@ -320,7 +320,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "You say 'The warranty covers this smaller ring.' What does warranty mean?",
+      "prompt": "You say 'The warranty covers this ring.' What does warranty mean?",
       "choices": [
         "半碼",
         "保養",
