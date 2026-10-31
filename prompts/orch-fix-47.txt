@@ -1,0 +1,16 @@
+Phase 4 unlimited. Round 47. Read CURRICULUM.md + ART-STYLE.md + DUOLINGO-REF.md + SPEC.md + review/mockup-v1 (Penny-approved) + review/loop-r45/coder-audit.md first (and loop-r44 if needed for history).
+cd /workspace/sidequest/english-quest. Never touch the grokbot repo or the nightly panes. No paid services. Report files under review/ stay local (never commit or git add -f review/loop-r*/ or review/style-gap/; never git rm them). Real app-code/content changes are required this round (not just tests or docs). Do not git commit from this prompt — orchestrator/parent handles publish.
+
+## FIRST: close every open item in review/loop-r45/coder-audit.md.
+1. #132 W12 Niles: rename cast id + speakerLabels + roleplay partner to a feminine id that matches the mint-hair glasses manager art (e.g. `nell` or `nina` if free in refs), OR re-render male Niles — prefer rename and keep art; update lexicon/lines/audio speaker tags; chips stay matching.
+2. #133: re-verify R15/W12/T18 (and J21/D14/R16) beat-2 hero contain meets sheet at 390px; no faces cut off under the card.
+3. #134: D12 (and any flaky lesson) — 入去場景 stays disabled until hero + cast chips `complete` with naturalWidth ≥900; no empty flash on cold first paint.
+4. Keep CLOSED: #128–#131, #102, #121, #95, #114, #123–#127. Do not re-pad audit-script lessons. Do not regress J20 gus+ida faces or T17 direction-first line.
+
+## NEW FEATURE TARGET — WORD-REVIEW hub (slice 1) + ≥1 stretch lesson
+Curriculum build order step 26: start **生字回顧** (Penny vocabulary review mode) plus keep syllabus growth.
+1. **WORD-REVIEW hub shell (ship slice 1):** Path/Practice entry to a Vocabulary Review hub. One scenario deck **Jewellery** built from J1–J3 (and shipped J*) lemmas already in `content/lexicon.json`. Word card UI must show: headword+POS+sense, IPA + play audio, glossYue, collapsible usage notes stub (register/collocations/pitfallsYue — fill what exists; empty OK if field absent), ≥2 example sentences with audio+glossYue, expandable「更多」placeholder. SRS due queue using existing ts-fsrs/IDB; session of 8–12 cards with instant feedback; mute-respecting SFX if SFX exist. Bright Harbor Glow UI, no Duo IP/assets.
+2. **Plus one new B1/B2 lesson** (keep path growing): pick the next coherent unit from CURRICULUM not yet shipped — prefer **W13 team update / 小組進度匯報 · B1** or **T19 hotel complaint follow-up · B1** if listed; otherwise **J22 custom engraving rush · B1**. Full 12-beat lesson, hero WebP 900×1200 sat ≥34.3, cast-matched chips, CMUdict IPA, Kokoro/Piper audio, natural Cantonese, seeded-shuffled answers, slotted CEFR non-decreasing, no padding.
+
+Dialogues: short natural turns, contractions, every question answered, real numbers/names, no keyword stuffing.
+Run tests + build; Lighthouse mobile Perf ≥98. Append "## Round 47" to CHANGELOG.md. Do not git commit.
