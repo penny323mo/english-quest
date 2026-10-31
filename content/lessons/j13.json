@@ -27,55 +27,55 @@
       "id": "j13-l1",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Good morning. Are you looking for a bulk quantity of small gifts with your own logo on the lid?",
-      "glossYue": "早晨。你係咪想訂一批細禮品，盒蓋有你自己嘅標誌？",
+      "text": "Good morning. Are you looking for a bulk quantity of gifts with your logo on the lid?",
+      "glossYue": "早晨。你係咪想訂一批禮品，盒蓋有你嘅標誌？",
       "audio": "assets/audio/lines/j13-l1.mp3",
       "audioSlow": "assets/audio/lines/j13-l1-slow.mp3",
-      "say": "Good morning. Are you looking for a bulk quantity of small gifts with your own logo on the lid?",
+      "say": "Good morning. Are you looking for a bulk quantity of gifts with your logo on the lid?",
       "hideGloss": false
     },
     {
       "id": "j13-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Yes. We need thirty pieces for the office this month, and we want that logo engraved on each box.",
-      "glossYue": "係。我哋今個月要三十件畀公司，每盒都要刻嗰個標誌。",
+      "text": "We need thirty pieces for the office this month, and we want the logo engraved on it.",
+      "glossYue": "我哋今個月要三十件畀公司，要喺上面刻標誌。",
       "audio": "assets/audio/lines/j13-l2.mp3",
       "audioSlow": "assets/audio/lines/j13-l2-slow.mp3",
-      "say": "Yes. We need thirty pieces for the office this month, and we want that logo engraved on each box.",
+      "say": "We need thirty pieces for the office this month, and we want the logo engraved on it.",
       "hideGloss": false
     },
     {
       "id": "j13-l3",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "The lead time for that logo engraving is three full weeks after you approve the finished artwork with us.",
+      "text": "The lead time for that logo engraving is three weeks after you approve the finished artwork here.",
       "glossYue": "刻標誌嘅交貨期係你確認完稿之後三個星期。",
       "audio": "assets/audio/lines/j13-l3.mp3",
       "audioSlow": "assets/audio/lines/j13-l3-slow.mp3",
-      "say": "The lead time for that logo engraving is three full weeks after you approve the finished artwork with us.",
+      "say": "The lead time for that logo engraving is three weeks after you approve the finished artwork here.",
       "hideGloss": false
     },
     {
       "id": "j13-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could you do a better price for all thirty pieces if we confirm the artwork with you this week?",
-      "glossYue": "如果我哋今個星期同你確認稿，三十件可唔可以有個好啲嘅價錢？",
+      "text": "Could you do a better price for those thirty pieces if we confirm the artwork with you?",
+      "glossYue": "如果我哋同你確認稿，三十件可唔可以有個好啲嘅價錢？",
       "audio": "assets/audio/lines/j13-l4.mp3",
       "audioSlow": "assets/audio/lines/j13-l4-slow.mp3",
-      "say": "Could you do a better price for all thirty pieces if we confirm the artwork with you this week?",
+      "say": "Could you do a better price for those thirty pieces if we confirm the artwork with you?",
       "hideGloss": false
     },
     {
       "id": "j13-l5",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Yes. The better price is forty dollars for each of the thirty pieces if you confirm the order this week.",
-      "glossYue": "可以。今個星期確認訂單，三十件每件四十蚊。",
+      "text": "The better price is forty dollars each if you confirm the thirty-piece order this week.",
+      "glossYue": "今個星期確認訂單，三十件每件四十蚊。",
       "audio": "assets/audio/lines/j13-l5.mp3",
       "audioSlow": "assets/audio/lines/j13-l5-slow.mp3",
-      "say": "Yes. The better price is forty dollars for each of the thirty pieces if you confirm the order this week.",
+      "say": "The better price is forty dollars each if you confirm the thirty-piece order this week.",
       "hideGloss": false
     },
     {
@@ -93,28 +93,28 @@
       "id": "j13-l7",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "I will hold these small gift boxes in the shop once you approve the artwork and the written quote.",
-      "glossYue": "你確認完稿同書面報價，我就幫你留住呢批細禮盒。",
+      "text": "I will hold these gift boxes in the shop once you approve the artwork and the quote.",
+      "glossYue": "你確認完稿同報價，我就幫你留住呢批禮盒。",
       "audio": "assets/audio/lines/j13-l7.mp3",
       "audioSlow": "assets/audio/lines/j13-l7-slow.mp3",
-      "say": "I will hold these small gift boxes in the shop once you approve the artwork and the written quote.",
+      "say": "I will hold these gift boxes in the shop once you approve the artwork and the quote.",
       "hideGloss": true
     },
     {
       "id": "j13-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will read it tonight and reply soon if the price and the three weeks both suit our office.",
-      "glossYue": "我今晚會睇，如果價錢同三個星期都啱公司，我好快覆你。",
+      "text": "I will read it tonight and reply if the price and the three weeks suit our office.",
+      "glossYue": "我今晚會睇，如果價錢同三個星期都啱公司，我就覆你。",
       "audio": "assets/audio/lines/j13-l8.mp3",
       "audioSlow": "assets/audio/lines/j13-l8-slow.mp3",
-      "say": "I will read it tonight and reply soon if the price and the three weeks both suit our office.",
+      "say": "I will read it tonight and reply if the price and the three weeks suit our office.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Good morning. Are you looking for a bulk quantity of small gifts with your own logo on the lid? 即係問緊咩？",
+      "prompt": "Good morning. Are you looking for a bulk quantity of gifts with your logo on the lid? 即係問緊咩？",
       "choices": [
         "想訂一批細禮品，盒蓋刻標誌",
         "想訂三十件，但唔使刻標誌",
@@ -124,7 +124,7 @@
       "explain": "bulk 係批量。logo 係標誌。"
     },
     {
-      "prompt": "Could you do a better price for all thirty pieces if we confirm the artwork with you this week? 即係問緊咩？",
+      "prompt": "Could you do a better price for those thirty pieces if we confirm the artwork with you? 即係問緊咩？",
       "choices": [
         "三十件唔使報價，只係問交貨",
         "想將標誌改做電郵，唔係問報價",
@@ -146,8 +146,8 @@
   ],
   "chunks": [
     {
-      "pattern": "Are you looking for a bulk ___ of small gifts with a logo?",
-      "example": "Are you looking for a bulk quantity of small gifts with your own logo?",
+      "pattern": "Are you looking for a bulk ___ of gifts with a logo?",
+      "example": "Are you looking for a bulk quantity of gifts with your own logo?",
       "glossYue": "你係咪想訂一批細禮品？",
       "answer": "quantity",
       "choices": [
@@ -157,8 +157,8 @@
       ]
     },
     {
-      "pattern": "The lead time for that logo ___ is three full weeks after approval.",
-      "example": "The lead time for that logo engraving is three full weeks.",
+      "pattern": "The lead time for that logo ___ is three weeks after approval.",
+      "example": "The lead time for that logo engraving is three weeks.",
       "glossYue": "刻標誌要三個星期。",
       "answer": "engraving",
       "choices": [
@@ -189,8 +189,8 @@
       "promptYue": "你要書面報價。你點講？",
       "choices": [
         "Please email that written quote straight to our office, and put the full lead time in that email.",
-        "Yes. We need thirty pieces for the office this month, and we want that logo engraved on each box.",
-        "I will read it tonight and reply soon if the price and the three weeks both suit our office."
+        "We need thirty pieces for the office this month, and we want the logo engraved on it.",
+        "I will read it tonight and reply if the price and the three weeks suit our office."
       ],
       "answer": 0,
       "explain": "講 email 同 quote。"
@@ -219,10 +219,10 @@
       {
         "partner": "Kai",
         "partnerId": "kai",
-        "line": "Good morning. Are you looking for a bulk quantity of small gifts with your own logo on the lid?",
+        "line": "Good morning. Are you looking for a bulk quantity of gifts with your logo on the lid?",
         "audio": "assets/audio/lines/j13-l1.mp3",
         "audioSlow": "assets/audio/lines/j13-l1-slow.mp3",
-        "expect": "Yes. We need thirty pieces for the office this month, and we want that logo engraved on each box.",
+        "expect": "We need thirty pieces for the office this month, and we want the logo engraved on it.",
         "keywords": [
           "logo",
           "thirty"
@@ -233,10 +233,10 @@
       {
         "partner": "Kai",
         "partnerId": "kai",
-        "line": "The lead time for that logo engraving is three full weeks after you approve the finished artwork with us.",
+        "line": "The lead time for that logo engraving is three weeks after you approve the finished artwork here.",
         "audio": "assets/audio/lines/j13-l3.mp3",
         "audioSlow": "assets/audio/lines/j13-l3-slow.mp3",
-        "expect": "Could you do a better price for all thirty pieces if we confirm the artwork with you this week?",
+        "expect": "Could you do a better price for those thirty pieces if we confirm the artwork with you?",
         "keywords": [
           "price",
           "artwork"
@@ -247,7 +247,7 @@
       {
         "partner": "Kai",
         "partnerId": "kai",
-        "line": "Yes. The better price is forty dollars for each of the thirty pieces if you confirm the order this week.",
+        "line": "The better price is forty dollars each if you confirm the thirty-piece order this week.",
         "audio": "assets/audio/lines/j13-l5.mp3",
         "audioSlow": "assets/audio/lines/j13-l5-slow.mp3",
         "expect": "Please email that written quote straight to our office, and put the full lead time in that email.",
@@ -295,7 +295,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Kai 講「The lead time for that logo engraving is three full weeks after you approve the finished artwork.」，lead time 係咩意思？",
+      "prompt": "Kai 講「The lead time for that logo engraving is three weeks after you approve the finished artwork.」，lead time 係咩意思？",
       "choices": [
         "電郵",
         "交貨期",

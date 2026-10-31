@@ -1,10 +1,10 @@
 {
   "id": "T20",
   "unit": "T",
-  "titleYue": "轉機安檢同搵路",
-  "titleEn": "A connecting-flight security check",
-  "canDoYue": "你識再過安檢、拎出手提電腦同液體、問閘口同接駁車點行。",
-  "canDoEn": "Ask security to rescreen a laptop and a liquid, then find the shuttle to the gate.",
+  "titleYue": "安檢篩查同超大件",
+  "titleEn": "Screening an oversized case",
+  "canDoYue": "你識問安檢篩查、超大件、掃描器同檢查站。",
+  "canDoEn": "Ask about screening, an oversized case, the scanner, and the checkpoint.",
   "minutes": 12,
   "hero": "assets/art/lessons/t20.webp",
   "cast": [
@@ -13,12 +13,10 @@
   ],
   "cefr": "B2",
   "lemmas": [
-    "security-noun",
-    "laptop-noun",
-    "liquid-noun",
-    "belt-noun",
-    "gate-noun",
-    "shuttle-noun"
+    "screening-noun",
+    "oversized-adj",
+    "scanner-noun",
+    "checkpoint-noun"
   ],
   "next": "J23",
   "dialogue": [
@@ -26,205 +24,205 @@
       "id": "t20-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "After the delay we changed terminals, and security asked me to take the laptop out of the bag again.",
-      "glossYue": "轉咗客運大樓，安檢要我再喺袋入面拎出部手提電腦。",
+      "text": "Could you explain the screening if this grey case looks oversized beside the far belt?",
+      "glossYue": "如果呢個灰色箱喺遠嘅輸送帶旁邊顯得超大件，可唔可以解釋下安檢篩查？",
       "audio": "assets/audio/lines/t20-l1.mp3",
       "audioSlow": "assets/audio/lines/t20-l1-slow.mp3",
-      "say": "After the delay we changed terminals, and security asked me to take the laptop out of the bag again.",
+      "say": "Could you explain the screening if this grey case looks oversized beside the far belt?",
       "hideGloss": false
     },
     {
       "id": "t20-l2",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Please put the liquid in the tray, and the belt can come off before you step through security.",
-      "glossYue": "液體放喺盤度，過閘之前腰帶可以除低。",
+      "text": "This screening allows that grey case, and an oversized one uses the far side belt.",
+      "glossYue": "呢次安檢篩查可以放嗰個灰色箱，超大件就用遠邊嗰條輸送帶。",
       "audio": "assets/audio/lines/t20-l2.mp3",
       "audioSlow": "assets/audio/lines/t20-l2-slow.mp3",
-      "say": "Please put the liquid in the tray, and the belt can come off before you step through security.",
+      "say": "This screening allows that grey case, and an oversized one uses the far side belt.",
       "hideGloss": false
     },
     {
       "id": "t20-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Which way is the gate from here, and does the blue shuttle go straight ahead after security?",
-      "glossYue": "閘口點去？藍色接駁車係咪安檢之後直行？",
+      "text": "Where should the scanner desk be if I missed the inner checkpoint beside that belt?",
+      "glossYue": "如果我錯過輸送帶旁邊嘅內檢查站，掃描器櫃檯應該喺邊？",
       "audio": "assets/audio/lines/t20-l3.mp3",
       "audioSlow": "assets/audio/lines/t20-l3-slow.mp3",
-      "say": "Which way is the gate from here, and does the blue shuttle go straight ahead after security?",
+      "say": "Where should the scanner desk be if I missed the inner checkpoint beside that belt?",
       "hideGloss": false
     },
     {
       "id": "t20-l4",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "The gate is past the shuttle stop, and I can walk with you as far as the sign.",
-      "glossYue": "閘口喺接駁車站後面，我可以陪你行到指示牌。",
+      "text": "The scanner desk sits just past the inner checkpoint, and that belt still stays open.",
+      "glossYue": "掃描器櫃檯就喺內檢查站後面，嗰條輸送帶仍然開住。",
       "audio": "assets/audio/lines/t20-l4.mp3",
       "audioSlow": "assets/audio/lines/t20-l4-slow.mp3",
-      "say": "The gate is past the shuttle stop, and I can walk with you as far as the sign.",
+      "say": "The scanner desk sits just past the inner checkpoint, and that belt still stays open.",
       "hideGloss": true
     },
     {
       "id": "t20-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can I keep the laptop in the bag if the liquid stays under our small limit?",
-      "glossYue": "液體唔超過我哋個細限額，手提電腦可唔可以留喺袋？",
+      "text": "Can an oversized grey case skip the scanner desk if the inner lane is shut?",
+      "glossYue": "如果內線關閉，超大件灰色箱可唔可以跳過掃描器櫃檯？",
       "audio": "assets/audio/lines/t20-l5.mp3",
       "audioSlow": "assets/audio/lines/t20-l5-slow.mp3",
-      "say": "Can I keep the laptop in the bag if the liquid stays under our small limit?",
+      "say": "Can an oversized grey case skip the scanner desk if the inner lane is shut?",
       "hideGloss": true
     },
     {
       "id": "t20-l6",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Yes. The laptop can stay in the bag, and the liquid is under the limit we set.",
-      "glossYue": "可以。手提電腦留喺袋，液體冇超過我哋定嘅限額。",
+      "text": "An oversized grey case can skip the scanner desk when the inner lane is shut.",
+      "glossYue": "內線關閉嗰陣，超大件灰色箱可以跳過掃描器櫃檯。",
       "audio": "assets/audio/lines/t20-l6.mp3",
       "audioSlow": "assets/audio/lines/t20-l6-slow.mp3",
-      "say": "Yes. The laptop can stay in the bag, and the liquid is under the limit we set.",
+      "say": "An oversized grey case can skip the scanner desk when the inner lane is shut.",
       "hideGloss": true
     },
     {
       "id": "t20-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "How long is the walk from this shuttle stop to the gate if I miss the first one?",
-      "glossYue": "如果趕唔上第一班，由呢個接駁車站行去閘口要幾耐？",
+      "text": "How early should I reach the checkpoint if the screening lane opens at noon sharp?",
+      "glossYue": "如果安檢篩查線正午正開門，我應該幾早到檢查站？",
       "audio": "assets/audio/lines/t20-l7.mp3",
       "audioSlow": "assets/audio/lines/t20-l7-slow.mp3",
-      "say": "How long is the walk from this shuttle stop to the gate if I miss the first one?",
+      "say": "How early should I reach the checkpoint if the screening lane opens at noon sharp?",
       "hideGloss": true
     },
     {
       "id": "t20-l8",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "The walk from the shuttle is about six minutes, and the gate stays open until we board.",
-      "glossYue": "由接駁車行過去大約六分鐘，閘口會開到我哋登機。",
+      "text": "Please reach the checkpoint thirty minutes early, because that screening lane opens at noon sharp.",
+      "glossYue": "請早三十分鐘到檢查站，因為嗰條安檢篩查線正午正開門。",
       "audio": "assets/audio/lines/t20-l8.mp3",
       "audioSlow": "assets/audio/lines/t20-l8-slow.mp3",
-      "say": "The walk from the shuttle is about six minutes, and the gate stays open until we board.",
+      "say": "Please reach the checkpoint thirty minutes early, because that screening lane opens at noon sharp.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "After the delay we changed terminals, and security asked me to take the laptop out of the bag again. 呢句即係點？",
+      "prompt": "Could you explain the screening if this grey case looks oversized beside the far belt? 即係問緊咩？",
       "choices": [
-        "安檢要再拎出手提電腦",
-        "按金要二百蚊",
-        "吊墜要再估價"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
       "answer": 0,
-      "explain": "security 係安檢。laptop 係手提電腦。"
+      "explain": "跟住呢句嘅意思。"
     },
     {
-      "prompt": "Which way is the gate from here, and does the blue shuttle go straight ahead after security? 即係問緊咩？",
+      "prompt": "Where should the scanner desk be if I missed the inner checkpoint beside that belt? 即係問緊咩？",
       "choices": [
-        "問證書喺邊",
-        "問閘口同接駁車點去",
-        "問按金幾多"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
-      "answer": 1,
-      "explain": "gate 係閘口。shuttle 係接駁車。"
+      "answer": 0,
+      "explain": "跟住呢句嘅意思。"
     },
     {
-      "prompt": "How long is the walk from this shuttle stop to the gate if I miss the first one? 即係問緊咩？",
+      "prompt": "Could you explain the screening if this grey case looks oversized beside the far belt? 即係問緊咩？",
       "choices": [
-        "問過敏可唔可以改碟",
-        "問估價收幾多",
-        "問行去閘口要幾耐"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
-      "answer": 2,
-      "explain": "how long 係問要幾耐。"
+      "answer": 0,
+      "explain": "跟住呢句嘅意思。"
     }
   ],
   "chunks": [
     {
-      "pattern": "After the delay we changed terminals, and ___ asked me to take the laptop out of the bag again.",
-      "example": "After the delay we changed terminals, and security asked me to take the laptop out of the bag again.",
-      "glossYue": "安檢要我拎出手提電腦。",
-      "answer": "security",
+      "pattern": "Could you explain the ___ if this grey case looks oversized beside the far belt?",
+      "example": "Could you explain the screening if this grey case looks oversized beside the far belt?",
+      "glossYue": "如果呢個灰色箱喺遠嘅輸送帶旁邊顯得超大件，可唔可以解釋下安檢篩查？",
+      "answer": "screening",
       "choices": [
-        "security",
-        "Friday",
-        "receipt"
+        "screening",
+        "shirt",
+        "meter"
       ]
     },
     {
-      "pattern": "Please put the ___ in the tray, and the belt can come off before you step through security.",
-      "example": "Please put the liquid in the tray, and the belt can come off before you step through security.",
-      "glossYue": "液體放喺盤度。",
-      "answer": "liquid",
+      "pattern": "Could you explain the screening if this grey case looks ___ beside the far belt?",
+      "example": "Could you explain the screening if this grey case looks oversized beside the far belt?",
+      "glossYue": "如果呢個灰色箱喺遠嘅輸送帶旁邊顯得超大件，可唔可以解釋下安檢篩查？",
+      "answer": "oversized",
       "choices": [
-        "liquid",
-        "towel",
-        "passport"
+        "oversized",
+        "shirt",
+        "meter"
       ]
     },
     {
-      "pattern": "Which way is the ___ from here, and does the blue shuttle go straight ahead after security?",
-      "example": "Which way is the gate from here, and does the blue shuttle go straight ahead after security?",
-      "glossYue": "閘口點去？",
-      "answer": "gate",
+      "pattern": "Where should the ___ desk be if I missed the inner checkpoint beside that belt?",
+      "example": "Where should the scanner desk be if I missed the inner checkpoint beside that belt?",
+      "glossYue": "如果我錯過輸送帶旁邊嘅內檢查站，掃描器櫃檯應該喺邊？",
+      "answer": "scanner",
       "choices": [
-        "gate",
-        "deadline",
-        "oyster"
+        "scanner",
+        "shirt",
+        "meter"
       ]
     }
   ],
   "shadow": {
     "lineId": "t20-l1",
-    "hint": "After the delay we changed terminals, and security asked me to take the laptop out of the bag again."
+    "hint": "Could you explain the screening if this grey case looks oversized beside the far belt?"
   },
   "build": [
     {
       "type": "choice",
-      "promptYue": "你話安檢要你再拎出手提電腦。你點講？",
+      "promptYue": "你點講？",
       "choices": [
-        "After the delay we changed terminals, and security asked me to take the laptop out of the bag again.",
-        "Can I keep the laptop in the bag if the liquid stays under our small limit?",
-        "How long is the walk from this shuttle stop to the gate if I miss the first one?"
+        "Could you explain the screening if this grey case looks oversized beside the far belt?",
+        "Where should the scanner desk be if I missed the inner checkpoint beside that belt?",
+        "Can an oversized grey case skip the scanner desk if the inner lane is shut?"
       ],
       "answer": 0,
-      "explain": "講 security 同 laptop。"
+      "explain": "用返課入面第一句。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "where",
-        "is",
-        "the",
-        "gate"
+        "could",
+        "you",
+        "explain",
+        "the"
       ],
       "answer": [
-        "where",
-        "is",
-        "the",
-        "gate"
+        "could",
+        "you",
+        "explain",
+        "the"
       ]
     }
   ],
   "roleplay": {
     "you": "tom",
-    "intro": "你趕轉機。同 Kim 問安檢同閘口。可以講：laptop、gate。",
+    "intro": "你扮 Tom。用課入面嘅字答。",
     "turns": [
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Please put the liquid in the tray, and the belt can come off before you step through security.",
+        "line": "This screening allows that grey case, and an oversized one uses the far side belt.",
         "audio": "assets/audio/lines/t20-l2.mp3",
         "audioSlow": "assets/audio/lines/t20-l2-slow.mp3",
-        "expect": "Which way is the gate from here, and does the blue shuttle go straight ahead after security?",
+        "expect": "Where should the scanner desk be if I missed the inner checkpoint beside that belt?",
         "keywords": [
-          "gate",
-          "shuttle"
+          "scanner",
+          "checkpoint"
         ],
         "modelAudio": "assets/audio/lines/t20-l3.mp3",
         "modelSlow": "assets/audio/lines/t20-l3-slow.mp3"
@@ -232,13 +230,13 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "The gate is past the shuttle stop, and I can walk with you as far as the sign.",
+        "line": "The scanner desk sits just past the inner checkpoint, and that belt still stays open.",
         "audio": "assets/audio/lines/t20-l4.mp3",
         "audioSlow": "assets/audio/lines/t20-l4-slow.mp3",
-        "expect": "Can I keep the laptop in the bag if the liquid stays under our small limit?",
+        "expect": "Can an oversized grey case skip the scanner desk if the inner lane is shut?",
         "keywords": [
-          "laptop",
-          "liquid"
+          "oversized",
+          "scanner"
         ],
         "modelAudio": "assets/audio/lines/t20-l5.mp3",
         "modelSlow": "assets/audio/lines/t20-l5-slow.mp3"
@@ -246,13 +244,13 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Yes. The laptop can stay in the bag, and the liquid is under the limit we set.",
+        "line": "An oversized grey case can skip the scanner desk when the inner lane is shut.",
         "audio": "assets/audio/lines/t20-l6.mp3",
         "audioSlow": "assets/audio/lines/t20-l6-slow.mp3",
-        "expect": "How long is the walk from this shuttle stop to the gate if I miss the first one?",
+        "expect": "How early should I reach the checkpoint if the screening lane opens at noon sharp?",
         "keywords": [
-          "shuttle",
-          "gate"
+          "screening",
+          "checkpoint"
         ],
         "modelAudio": "assets/audio/lines/t20-l7.mp3",
         "modelSlow": "assets/audio/lines/t20-l7-slow.mp3"
@@ -263,10 +261,10 @@
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear in this lesson.",
-      "lemma": "security-noun",
+      "lemma": "screening-noun",
       "choices": [
         "Friday",
-        "security",
+        "screening",
         "receipt"
       ],
       "answer": 1
@@ -274,64 +272,64 @@
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear in this lesson.",
-      "lemma": "laptop-noun",
+      "lemma": "scanner-noun",
       "choices": [
-        "passport",
-        "laptop",
-        "deadline"
+        "Friday",
+        "scanner",
+        "receipt"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "After the delay we changed terminals, and security asked me to take the laptop out of the bag again. 呢句入面，邊個意思先啱？",
+      "prompt": "Could you explain the screening if this grey case looks oversized beside the far belt? 呢句入面，邊個意思先啱？",
       "choices": [
         "窗",
-        "安檢",
+        "安檢篩查",
         "鐘"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "Please put the liquid in the tray, and the belt can come off before you step through security. 呢句入面，邊個意思先啱？",
+      "prompt": "The scanner desk sits just past the inner checkpoint, and that belt still stays open. 呢句入面，邊個意思先啱？",
       "choices": [
-        "窗",
-        "液體",
-        "鐘"
+        "鞋",
+        "掃描器",
+        "收據"
       ],
       "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "Please put the liquid in the tray, and the ___ can come off before you step through security. 呢句入面，邊個字先啱？",
+      "prompt": "How early should I reach the ___ if the screening lane opens at noon sharp? 呢句入面，邊個字先啱？",
       "choices": [
         "Friday",
         "receipt",
-        "belt"
+        "checkpoint"
       ],
       "answer": 2
     }
   ],
   "sound": {
-    "ipa": "/eɪ/",
-    "title": "gate 入面嗰個音",
-    "note": "gate 有 /eɪ/。belt 冇。",
+    "ipa": "/ɪ/",
+    "title": "screening 入面嗰個音",
+    "note": "screening 同 oversized 唔同。",
     "pairs": [
       {
-        "a": "gate-noun",
-        "b": "belt-noun"
+        "a": "screening-noun",
+        "b": "oversized-adj"
       },
       {
-        "a": "laptop-noun",
-        "b": "liquid-noun"
+        "a": "scanner-noun",
+        "b": "checkpoint-noun"
       }
     ],
     "drill": [
-      "gate-noun",
-      "belt-noun",
-      "laptop-noun",
-      "shuttle-noun"
+      "screening-noun",
+      "oversized-adj",
+      "scanner-noun",
+      "checkpoint-noun"
     ]
   }
 }

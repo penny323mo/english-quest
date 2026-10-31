@@ -44,11 +44,11 @@
       "id": "r6-l2",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Yes. The window seat for Mei fits a party of four.",
-      "glossYue": "得。Mei 可以坐四人靠窗位。",
+      "text": "A window seat for Mei is free for a party of four.",
+      "glossYue": "靠窗位有空，Mei 四人可以坐。",
       "audio": "assets/audio/lines/r6-l2.mp3",
       "audioSlow": "assets/audio/lines/r6-l2-slow.mp3",
-      "say": "Yes. The window seat for Mei fits a party of four.",
+      "say": "A window seat for Mei is free for a party of four.",
       "hideGloss": true
     },
     {
@@ -66,11 +66,11 @@
       "id": "r6-l4",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "I can change the time to eight, and the indoor seat stays free.",
-      "glossYue": "我可以將時間改到八點，室內位仍然留低。",
+      "text": "I can change the time to eight, and that window seat stays free.",
+      "glossYue": "我可以將時間改到八點，靠窗位仍然留低。",
       "audio": "assets/audio/lines/r6-l4.mp3",
       "audioSlow": "assets/audio/lines/r6-l4-slow.mp3",
-      "say": "I can change the time to eight, and the indoor seat stays free.",
+      "say": "I can change the time to eight, and that window seat stays free.",
       "hideGloss": true
     },
     {
@@ -225,7 +225,7 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "Yes. The window seat for Mei fits a party of four.",
+        "line": "A window seat for Mei is free for a party of four.",
         "audio": "assets/audio/lines/r6-l2.mp3",
         "audioSlow": "assets/audio/lines/r6-l2-slow.mp3",
         "expect": "Could we change the time and keep the reservation if we arrive later?",
@@ -239,7 +239,7 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "I can change the time to eight, and the indoor seat stays free.",
+        "line": "I can change the time to eight, and that window seat stays free.",
         "audio": "assets/audio/lines/r6-l4.mp3",
         "audioSlow": "assets/audio/lines/r6-l4-slow.mp3",
         "expect": "If it rains, please cancel the outdoor seat and keep us indoors.",

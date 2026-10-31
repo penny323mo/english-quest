@@ -1,10 +1,10 @@
 {
   "id": "J24",
   "unit": "J",
-  "titleYue": "手鏈報價同擦亮",
-  "titleEn": "A bracelet quote",
-  "canDoYue": "你識問金手鏈報價，同埋星期五用擦亮劑保養耳環。",
-  "canDoEn": "Ask the price of a gold bracelet and whether a polish will keep the earrings bright.",
+  "titleYue": "印記、爪托同金絲",
+  "titleEn": "A hallmark, a prong, and filigree",
+  "canDoYue": "你識問印記、爪托、銠同金絲。",
+  "canDoEn": "Ask about a hallmark, a gold prong, rhodium, and filigree.",
   "minutes": 12,
   "hero": "assets/art/lessons/j24.webp",
   "cast": [
@@ -13,10 +13,10 @@
   ],
   "cefr": "B2",
   "lemmas": [
-    "bracelet-noun",
-    "earring-noun",
-    "polish-noun",
-    "quote-noun"
+    "hallmark-noun",
+    "prong-noun",
+    "rhodium-noun",
+    "filigree-noun"
   ],
   "next": "T21",
   "dialogue": [
@@ -24,203 +24,205 @@
       "id": "j24-l1",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Could you quote a fair price for this gold bracelet before we leave the shop at noon?",
-      "glossYue": "可唔可以畀呢條金手鏈一個公道價，我哋中午離開舖頭之前？",
+      "text": "Could you check the hallmark on this gold prong before we leave the shop at noon?",
+      "glossYue": "中午離開舖頭之前，可唔可以檢查呢個金爪托上面嘅印記？",
       "audio": "assets/audio/lines/j24-l1.mp3",
       "audioSlow": "assets/audio/lines/j24-l1-slow.mp3",
-      "say": "Could you quote a fair price for this gold bracelet before we leave the shop at noon?",
+      "say": "Could you check the hallmark on this gold prong before we leave the shop at noon?",
       "hideGloss": false
     },
     {
       "id": "j24-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "I can quote three thousand for the gold bracelet, and the clasp is included in that price.",
-      "glossYue": "金手鏈我可以報三千蚊，個扣包咗喺價錢入面。",
+      "text": "I can check that hallmark on site, and the gold prong is included before noon.",
+      "glossYue": "我可以現場檢查嗰個印記，中午之前金爪托包咗。",
       "audio": "assets/audio/lines/j24-l2.mp3",
       "audioSlow": "assets/audio/lines/j24-l2-slow.mp3",
-      "say": "I can quote three thousand for the gold bracelet, and the clasp is included in that price.",
+      "say": "I can check that hallmark on site, and the gold prong is included before noon.",
       "hideGloss": false
     },
     {
       "id": "j24-l3",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Would a soft cloth polish keep these gold earrings bright if I wear them every Friday night?",
-      "glossYue": "如果我每個星期五晚上戴金耳環，軟布擦亮劑可唔可以保持光亮？",
+      "text": "Would a soft rhodium finish keep the filigree bright if I wear it each Friday?",
+      "glossYue": "如果我每個星期五都戴，軟銠面可唔可以保持金絲光亮？",
       "audio": "assets/audio/lines/j24-l3.mp3",
       "audioSlow": "assets/audio/lines/j24-l3-slow.mp3",
-      "say": "Would a soft cloth polish keep these gold earrings bright if I wear them every Friday night?",
+      "say": "Would a soft rhodium finish keep the filigree bright if I wear it each Friday?",
       "hideGloss": false
     },
     {
       "id": "j24-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "A soft cloth polish will keep the earrings bright, and I can do it here on Friday.",
-      "glossYue": "軟布擦亮劑可以保持耳環光亮，我星期五可以喺度做。",
+      "text": "A soft rhodium finish will keep the filigree bright, and Friday noon is fine here.",
+      "glossYue": "軟銠面可以保持金絲光亮，星期五中午可以喺度做。",
       "audio": "assets/audio/lines/j24-l4.mp3",
       "audioSlow": "assets/audio/lines/j24-l4-slow.mp3",
-      "say": "A soft cloth polish will keep the earrings bright, and I can do it here on Friday.",
+      "say": "A soft rhodium finish will keep the filigree bright, and Friday noon is fine here.",
       "hideGloss": true
     },
     {
       "id": "j24-l5",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Is the quote for both earrings lower if I take the pair home with me this Friday?",
-      "glossYue": "如果我星期五帶兩隻耳環返去，報價會唔會低啲？",
+      "text": "Is the filigree quote lower if I take that rhodium pair home this Friday night?",
+      "glossYue": "如果我星期五晚上帶嗰對銠貨返去，金絲報價會唔會低啲？",
       "audio": "assets/audio/lines/j24-l5.mp3",
       "audioSlow": "assets/audio/lines/j24-l5-slow.mp3",
-      "say": "Is the quote for both earrings lower if I take the pair home with me this Friday?",
+      "say": "Is the filigree quote lower if I take that rhodium pair home this Friday night?",
       "hideGloss": true
     },
     {
       "id": "j24-l6",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The quote for both earrings is two thousand dollars, and Friday noon is fine for collection here.",
-      "glossYue": "兩隻耳環報價二千蚊，星期五中午可以喺度取。",
+      "text": "The filigree quote is two thousand dollars, and Friday night is fine for the pair.",
+      "glossYue": "金絲報價二千蚊，星期五晚上可以取嗰對。",
       "audio": "assets/audio/lines/j24-l6.mp3",
       "audioSlow": "assets/audio/lines/j24-l6-slow.mp3",
-      "say": "The quote for both earrings is two thousand dollars, and Friday noon is fine for collection here.",
+      "say": "The filigree quote is two thousand dollars, and Friday night is fine for the pair.",
       "hideGloss": true
     },
     {
       "id": "j24-l7",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Please set that paper aside, and I will decide on the gold bracelet after the polish later.",
-      "glossYue": "請先放低張紙，我遲啲擦完再決定金手鏈。",
+      "text": "Please set that hallmark note aside until I decide on the gold prong later.",
+      "glossYue": "請先放低嗰張印記字條，我遲啲再決定金爪托。",
       "audio": "assets/audio/lines/j24-l7.mp3",
       "audioSlow": "assets/audio/lines/j24-l7-slow.mp3",
-      "say": "Please set that paper aside, and I will decide on the gold bracelet after the polish later.",
+      "say": "Please set that hallmark note aside until I decide on the gold prong later.",
       "hideGloss": true
     },
     {
       "id": "j24-l8",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "I will hold that paper until noon, and a clean cloth can wait here beside the polish.",
-      "glossYue": "我會留住張紙到中午，乾淨布可以放喺擦亮劑旁邊。",
+      "text": "I will hold that hallmark note until noon, and the gold prong can wait here.",
+      "glossYue": "我會留住嗰張印記字條到中午，金爪托可以喺度等。",
       "audio": "assets/audio/lines/j24-l8.mp3",
       "audioSlow": "assets/audio/lines/j24-l8-slow.mp3",
-      "say": "I will hold that paper until noon, and a clean cloth can wait here beside the polish.",
+      "say": "I will hold that hallmark note until noon, and the gold prong can wait here.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Could you quote a fair price for this gold bracelet before we leave the shop at noon? 呢句即係點？",
+      "prompt": "Could you check the hallmark on this gold prong before we leave the shop at noon? 即係問緊咩？",
       "choices": [
-        "想問金手鏈價錢",
-        "想改登機時間",
-        "想叫湯"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
       "answer": 0,
-      "explain": "bracelet 係手鏈。quote 係報價。"
+      "explain": "跟住呢句嘅意思。"
     },
     {
-      "prompt": "Would a soft cloth polish keep these gold earrings bright if I wear them every Friday night? 即係問緊咩？",
+      "prompt": "Would a soft rhodium finish keep the filigree bright if I wear it each Friday? 即係問緊咩？",
       "choices": [
-        "問海關喺邊",
-        "問擦亮劑可唔可以保耳環",
-        "問發票批唔批"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
-      "answer": 1,
-      "explain": "polish 係擦亮劑。"
+      "answer": 0,
+      "explain": "跟住呢句嘅意思。"
     },
     {
-      "prompt": "Is the quote for both earrings lower if I take the pair home with me this Friday? 即係問緊咩？",
+      "prompt": "Could you check the hallmark on this gold prong before we leave the shop at noon? 即係問緊咩？",
       "choices": [
-        "問會議幾點",
-        "問閘口號碼",
-        "問兩隻耳環報價低唔低"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
-      "answer": 2,
-      "explain": "quote 係報價。"
+      "answer": 0,
+      "explain": "跟住呢句嘅意思。"
     }
   ],
   "chunks": [
     {
-      "pattern": "Could you ___ a fair price for this gold bracelet before we leave the shop at noon?",
-      "example": "Could you quote a fair price for this gold bracelet before we leave the shop at noon?",
-      "glossYue": "問報價。",
-      "answer": "quote",
+      "pattern": "Could you check the ___ on this gold prong before we leave the shop at noon?",
+      "example": "Could you check the hallmark on this gold prong before we leave the shop at noon?",
+      "glossYue": "中午離開舖頭之前，可唔可以檢查呢個金爪托上面嘅印記？",
+      "answer": "hallmark",
       "choices": [
-        "quote",
-        "polish",
-        "Friday"
+        "hallmark",
+        "shirt",
+        "meter"
       ]
     },
     {
-      "pattern": "Would a soft cloth ___ keep these gold earrings bright if I wear them every Friday night?",
-      "example": "Would a soft cloth polish keep these gold earrings bright if I wear them every Friday night?",
-      "glossYue": "問擦亮劑。",
-      "answer": "polish",
+      "pattern": "Could you check the hallmark on this gold ___ before we leave the shop at noon?",
+      "example": "Could you check the hallmark on this gold prong before we leave the shop at noon?",
+      "glossYue": "中午離開舖頭之前，可唔可以檢查呢個金爪托上面嘅印記？",
+      "answer": "prong",
       "choices": [
-        "polish",
-        "quote",
-        "bracelet"
+        "prong",
+        "shirt",
+        "meter"
       ]
     },
     {
-      "pattern": "The ___ for both earrings is two thousand, and Friday noon is fine for collection here.",
-      "example": "The quote for both earrings is two thousand dollars, and Friday noon is fine for collection here.",
-      "glossYue": "報價二千。",
-      "answer": "quote",
+      "pattern": "Would a soft ___ finish keep the filigree bright if I wear it each Friday?",
+      "example": "Would a soft rhodium finish keep the filigree bright if I wear it each Friday?",
+      "glossYue": "如果我每個星期五都戴，軟銠面可唔可以保持金絲光亮？",
+      "answer": "rhodium",
       "choices": [
-        "quote",
-        "polish",
-        "earring"
+        "rhodium",
+        "shirt",
+        "meter"
       ]
     }
   ],
   "shadow": {
     "lineId": "j24-l1",
-    "hint": "Could you quote a fair price for this gold bracelet before we leave the shop at noon?"
+    "hint": "Could you check the hallmark on this gold prong before we leave the shop at noon?"
   },
   "build": [
     {
       "type": "choice",
-      "promptYue": "你問金手鏈中午之前嘅公道價。你點講？",
+      "promptYue": "你點講？",
       "choices": [
-        "Could you quote a fair price for this gold bracelet before we leave the shop at noon?",
-        "Would a soft cloth polish keep these gold earrings bright if I wear them every Friday night?",
-        "Is the quote for both earrings lower if I take the pair home with me this Friday?"
+        "Could you check the hallmark on this gold prong before we leave the shop at noon?",
+        "Would a soft rhodium finish keep the filigree bright if I wear it each Friday?",
+        "Is the filigree quote lower if I take that rhodium pair home this Friday night?"
       ],
       "answer": 0,
-      "explain": "講 quote。"
+      "explain": "用返課入面第一句。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "quote",
-        "the",
-        "bracelet"
+        "could",
+        "you",
+        "check",
+        "the"
       ],
       "answer": [
-        "quote",
-        "the",
-        "bracelet"
+        "could",
+        "you",
+        "check",
+        "the"
       ]
     }
   ],
   "roleplay": {
     "you": "gus",
-    "intro": "你識問金手鏈報價，同埋星期五用擦亮劑保養耳環。",
+    "intro": "你扮 Gus。用課入面嘅字答。",
     "turns": [
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "I can quote three thousand for the gold bracelet, and the clasp is included in that price.",
+        "line": "I can check that hallmark on site, and the gold prong is included before noon.",
         "audio": "assets/audio/lines/j24-l2.mp3",
         "audioSlow": "assets/audio/lines/j24-l2-slow.mp3",
-        "expect": "Would a soft cloth polish keep these gold earrings bright if I wear them every Friday night?",
+        "expect": "Would a soft rhodium finish keep the filigree bright if I wear it each Friday?",
         "keywords": [
-          "polish",
-          "earrings"
+          "rhodium",
+          "filigree"
         ],
         "modelAudio": "assets/audio/lines/j24-l3.mp3",
         "modelSlow": "assets/audio/lines/j24-l3-slow.mp3"
@@ -228,13 +230,13 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "A soft cloth polish will keep the earrings bright, and I can do it here on Friday.",
+        "line": "A soft rhodium finish will keep the filigree bright, and Friday noon is fine here.",
         "audio": "assets/audio/lines/j24-l4.mp3",
         "audioSlow": "assets/audio/lines/j24-l4-slow.mp3",
-        "expect": "Is the quote for both earrings lower if I take the pair home with me this Friday?",
+        "expect": "Is the filigree quote lower if I take that rhodium pair home this Friday night?",
         "keywords": [
-          "quote",
-          "earrings"
+          "rhodium",
+          "filigree"
         ],
         "modelAudio": "assets/audio/lines/j24-l5.mp3",
         "modelSlow": "assets/audio/lines/j24-l5-slow.mp3"
@@ -242,13 +244,13 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "The quote for both earrings is two thousand dollars, and Friday noon is fine for collection here.",
+        "line": "The filigree quote is two thousand dollars, and Friday night is fine for the pair.",
         "audio": "assets/audio/lines/j24-l6.mp3",
         "audioSlow": "assets/audio/lines/j24-l6-slow.mp3",
-        "expect": "Please set that paper aside, and I will decide on the gold bracelet after the polish later.",
+        "expect": "Please set that hallmark note aside until I decide on the gold prong later.",
         "keywords": [
-          "bracelet",
-          "polish"
+          "hallmark",
+          "prong"
         ],
         "modelAudio": "assets/audio/lines/j24-l7.mp3",
         "modelSlow": "assets/audio/lines/j24-l7-slow.mp3"
@@ -259,40 +261,40 @@
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear in this lesson.",
-      "lemma": "bracelet-noun",
+      "lemma": "hallmark-noun",
       "choices": [
-        "bracelet",
-        "earring",
-        "polish"
+        "hallmark",
+        "Friday",
+        "receipt"
       ],
       "answer": 0
     },
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear in this lesson.",
-      "lemma": "earring-noun",
+      "lemma": "prong-noun",
       "choices": [
-        "quote",
-        "bracelet",
-        "earring"
+        "Friday",
+        "receipt",
+        "prong"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "Could you quote a fair price for this gold bracelet before we leave the shop at noon? 呢句入面，邊個意思先啱？",
+      "prompt": "Please set that hallmark note aside until I decide on the gold prong later. 呢句入面，邊個意思先啱？",
       "choices": [
         "報價",
-        "手鏈",
+        "印記",
         "耳環"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "Would a soft cloth polish keep these gold earrings bright if I wear them every Friday night? 呢句入面，邊個意思先啱？",
+      "prompt": "Would a soft rhodium finish keep the filigree bright if I wear it each Friday? 呢句入面，邊個意思先啱？",
       "choices": [
-        "擦亮劑",
+        "銠",
         "報價",
         "海關"
       ],
@@ -300,33 +302,34 @@
     },
     {
       "type": "choice",
-      "prompt": "Could you ___ a fair price for this gold bracelet before we leave the shop at noon? 呢句入面，邊個字先啱？",
+      "prompt": "Is the ___ quote lower if I take that rhodium pair home this Friday night? 呢句入面，邊個字先啱？",
       "choices": [
         "bracelet",
         "polish",
-        "quote"
+        "filigree"
       ],
       "answer": 2
     }
   ],
   "sound": {
-    "ipa": "/əʊ/",
-    "title": "quote 入面嗰個音",
-    "note": "quote 有 /əʊ/。polish 冇。",
+    "ipa": "/ɪ/",
+    "title": "hallmark 入面嗰個音",
+    "note": "hallmark 同 prong 唔同。",
     "pairs": [
       {
-        "a": "quote-noun",
-        "b": "polish-noun"
+        "a": "hallmark-noun",
+        "b": "prong-noun"
       },
       {
-        "a": "bracelet-noun",
-        "b": "earring-noun"
+        "a": "rhodium-noun",
+        "b": "filigree-noun"
       }
     ],
     "drill": [
-      "bracelet-noun",
-      "earring-noun",
-      "quote-noun"
+      "hallmark-noun",
+      "prong-noun",
+      "rhodium-noun",
+      "filigree-noun"
     ]
   }
 }

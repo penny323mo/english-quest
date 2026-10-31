@@ -1,10 +1,10 @@
 {
   "id": "W15",
   "unit": "W",
-  "titleYue": "發票同預算",
-  "titleEn": "Approve an invoice",
-  "canDoYue": "你識帶發票去預算會議，問五千港紙以內可唔可以批核。",
-  "canDoEn": "Bring an invoice to a budget meeting and ask for approval under five thousand dollars.",
+  "titleYue": "實報實銷同帳簿",
+  "titleEn": "Reimbursement, variance, and the ledger",
+  "canDoYue": "你識問實報實銷、差額、採購同帳簿。",
+  "canDoEn": "Ask about a reimbursement, a variance, procurement, and the ledger.",
   "minutes": 12,
   "hero": "assets/art/lessons/w15.webp",
   "cast": [
@@ -13,10 +13,10 @@
   ],
   "cefr": "B2",
   "lemmas": [
-    "invoice-noun",
-    "budget-noun",
-    "approve-verb",
-    "meeting-noun"
+    "reimbursement-noun",
+    "variance-noun",
+    "procurement-noun",
+    "ledger-noun"
   ],
   "next": "J24",
   "dialogue": [
@@ -24,203 +24,205 @@
       "id": "w15-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could you please bring the March invoice along to our budget meeting on Monday at ten o'clock?",
-      "glossYue": "可唔可以帶三月發票，去星期一十點嘅預算會議？",
+      "text": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?",
+      "glossYue": "可唔可以帶三月實報實銷同成本差額，去星期一嘅採購審核？",
       "audio": "assets/audio/lines/w15-l1.mp3",
       "audioSlow": "assets/audio/lines/w15-l1-slow.mp3",
-      "say": "Could you please bring the March invoice along to our budget meeting on Monday at ten o'clock?",
+      "say": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?",
       "hideGloss": false
     },
     {
       "id": "w15-l2",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "I will bring that March invoice, and I have checked every single line against our written budget.",
-      "glossYue": "我會帶三月發票，我對過書面預算每一行。",
+      "text": "I will bring that March reimbursement, and the cost variance matches our written ledger.",
+      "glossYue": "我會帶三月實報實銷，成本差額同我哋書面帳簿一致。",
       "audio": "assets/audio/lines/w15-l2.mp3",
       "audioSlow": "assets/audio/lines/w15-l2-slow.mp3",
-      "say": "I will bring that March invoice, and I have checked every single line against our written budget.",
+      "say": "I will bring that March reimbursement, and the cost variance matches our written ledger.",
       "hideGloss": false
     },
     {
       "id": "w15-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Will you approve the total on Monday if it stays under five thousand Hong Kong dollars only?",
-      "glossYue": "如果總數唔超過五千港紙，你星期一會唔會批核？",
+      "text": "Will you approve the full variance if procurement keeps it inside the written March ledger?",
+      "glossYue": "如果採購將差額留喺三月書面帳簿入面，你會唔會批核成個差額？",
       "audio": "assets/audio/lines/w15-l3.mp3",
       "audioSlow": "assets/audio/lines/w15-l3-slow.mp3",
-      "say": "Will you approve the total on Monday if it stays under five thousand Hong Kong dollars only?",
+      "say": "Will you approve the full variance if procurement keeps it inside the written March ledger?",
       "hideGloss": false
     },
     {
       "id": "w15-l4",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "I will approve that invoice on Monday, because five thousand dollars still sits inside the March budget.",
-      "glossYue": "我會喺星期一批核嗰張發票，因為五千蚊仲喺三月預算入面。",
+      "text": "I will approve that full variance on Monday, because procurement kept it inside the file.",
+      "glossYue": "我星期一會批核嗰個成個差額，因為採購將佢留喺檔案入面。",
       "audio": "assets/audio/lines/w15-l4.mp3",
       "audioSlow": "assets/audio/lines/w15-l4-slow.mp3",
-      "say": "I will approve that invoice on Monday, because five thousand dollars still sits inside the March budget.",
+      "say": "I will approve that full variance on Monday, because procurement kept it inside the file.",
       "hideGloss": true
     },
     {
       "id": "w15-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could the meeting notes name the owner on Monday, without reading every line aloud to the room?",
-      "glossYue": "星期一嘅會議紀錄可唔可以寫負責人，唔使喺房入面讀每一行？",
+      "text": "Please could the ledger name me as the owner without reading every reimbursement line aloud?",
+      "glossYue": "帳簿可唔可以寫我做負責人，唔使大聲讀每一行實報實銷？",
       "audio": "assets/audio/lines/w15-l5.mp3",
       "audioSlow": "assets/audio/lines/w15-l5-slow.mp3",
-      "say": "Could the meeting notes name the owner on Monday, without reading every line aloud to the room?",
+      "say": "Please could the ledger name me as the owner without reading every reimbursement line aloud?",
       "hideGloss": true
     },
     {
       "id": "w15-l6",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "The meeting notes will name me as owner, and I will not read every line aloud there.",
-      "glossYue": "會議紀錄會寫我做負責人，我唔會喺度讀每一行。",
+      "text": "The notes will name me as owner, and I will not read every line aloud.",
+      "glossYue": "筆記會寫我做負責人，我唔會大聲讀每一行。",
       "audio": "assets/audio/lines/w15-l6.mp3",
       "audioSlow": "assets/audio/lines/w15-l6-slow.mp3",
-      "say": "The meeting notes will name me as owner, and I will not read every line aloud there.",
+      "say": "The notes will name me as owner, and I will not read every line aloud.",
       "hideGloss": true
     },
     {
       "id": "w15-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Please approve it before the meeting starts, and leave the signed copy on my wooden desk later.",
-      "glossYue": "開會之前請批核，遲啲將簽好嘅副本放喺我張木檯。",
+      "text": "Please file the procurement note before the meeting and leave it on my wooden desk.",
+      "glossYue": "開會之前請將採購字條歸檔，並放喺我張木檯。",
       "audio": "assets/audio/lines/w15-l7.mp3",
       "audioSlow": "assets/audio/lines/w15-l7-slow.mp3",
-      "say": "Please approve it before the meeting starts, and leave the signed copy on my wooden desk later.",
+      "say": "Please file the procurement note before the meeting and leave it on my wooden desk.",
       "hideGloss": true
     },
     {
       "id": "w15-l8",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "I will approve it before we start, and the signed copy can stay on your wooden desk.",
-      "glossYue": "開會之前我會批核，簽好嘅副本可以留喺你張木檯。",
+      "text": "I will file that note before we start, and it can stay on your desk.",
+      "glossYue": "開始之前我會將嗰張字條歸檔，佢可以留喺你張檯。",
       "audio": "assets/audio/lines/w15-l8.mp3",
       "audioSlow": "assets/audio/lines/w15-l8-slow.mp3",
-      "say": "I will approve it before we start, and the signed copy can stay on your wooden desk.",
+      "say": "I will file that note before we start, and it can stay on your desk.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Could you please bring the March invoice along to our budget meeting on Monday at ten o'clock? 呢句即係點？",
+      "prompt": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review? 即係問緊咩？",
       "choices": [
-        "想帶發票去預算會議",
-        "想改轉機時間",
-        "想叫兩杯咖啡"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
       "answer": 0,
-      "explain": "invoice 係發票。budget 係預算。"
+      "explain": "跟住呢句嘅意思。"
     },
     {
-      "prompt": "Will you approve the total on Monday if it stays under five thousand Hong Kong dollars only? 即係問緊咩？",
+      "prompt": "Will you approve the full variance if procurement keeps it inside the written March ledger? 即係問緊咩？",
       "choices": [
-        "問閘口喺邊",
-        "問五千港紙以內批唔批",
-        "問耳環報價"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
-      "answer": 1,
-      "explain": "approve 係批核。"
+      "answer": 0,
+      "explain": "跟住呢句嘅意思。"
     },
     {
-      "prompt": "Could the meeting notes name the owner on Monday, without reading every line aloud to the room? 即係問緊咩？",
+      "prompt": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review? 即係問緊咩？",
       "choices": [
-        "問海關幾早到",
-        "問手鏈幾多錢",
-        "問會議紀錄可唔可以寫負責人"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
-      "answer": 2,
-      "explain": "meeting 係會議。"
+      "answer": 0,
+      "explain": "跟住呢句嘅意思。"
     }
   ],
   "chunks": [
     {
-      "pattern": "Could you please bring the March ___ to our budget meeting on Monday at ten o'clock?",
-      "example": "Could you please bring the March invoice along to our budget meeting on Monday at ten o'clock?",
-      "glossYue": "帶發票。",
-      "answer": "invoice",
+      "pattern": "Could you please bring the March ___ and the cost variance to Monday's procurement review?",
+      "example": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?",
+      "glossYue": "可唔可以帶三月實報實銷同成本差額，去星期一嘅採購審核？",
+      "answer": "reimbursement",
       "choices": [
-        "invoice",
-        "meeting",
-        "Friday"
+        "reimbursement",
+        "shirt",
+        "meter"
       ]
     },
     {
-      "pattern": "Will you ___ the total on Monday if it stays under five thousand Hong Kong dollars only?",
-      "example": "Will you approve the total on Monday if it stays under five thousand Hong Kong dollars only?",
-      "glossYue": "問批核。",
-      "answer": "approve",
+      "pattern": "Could you please bring the March reimbursement and the cost ___ to Monday's procurement review?",
+      "example": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?",
+      "glossYue": "可唔可以帶三月實報實銷同成本差額，去星期一嘅採購審核？",
+      "answer": "variance",
       "choices": [
-        "approve",
-        "invoice",
-        "meeting"
+        "variance",
+        "shirt",
+        "meter"
       ]
     },
     {
-      "pattern": "Please ___ it before the meeting starts, and leave the signed copy on my wooden desk later.",
-      "example": "Please approve it before the meeting starts, and leave the signed copy on my wooden desk later.",
-      "glossYue": "開會前批核。",
-      "answer": "approve",
+      "pattern": "Could you please bring the March reimbursement and the cost variance to Monday's ___ review?",
+      "example": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?",
+      "glossYue": "可唔可以帶三月實報實銷同成本差額，去星期一嘅採購審核？",
+      "answer": "procurement",
       "choices": [
-        "approve",
-        "budget",
-        "invoice"
+        "procurement",
+        "shirt",
+        "meter"
       ]
     }
   ],
   "shadow": {
     "lineId": "w15-l1",
-    "hint": "Could you please bring the March invoice along to our budget meeting on Monday at ten o'clock?"
+    "hint": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?"
   },
   "build": [
     {
       "type": "choice",
-      "promptYue": "你問星期一十點帶發票去預算會議。你點講？",
+      "promptYue": "你點講？",
       "choices": [
-        "Could you please bring the March invoice along to our budget meeting on Monday at ten o'clock?",
-        "Will you approve the total on Monday if it stays under five thousand Hong Kong dollars only?",
-        "Could the meeting notes name the owner on Monday, without reading every line aloud to the room?"
+        "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?",
+        "Will you approve the full variance if procurement keeps it inside the written March ledger?",
+        "Please could the ledger name me as the owner without reading every reimbursement line aloud?"
       ],
       "answer": 0,
-      "explain": "講 invoice。"
+      "explain": "用返課入面第一句。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "approve",
-        "the",
-        "invoice"
+        "could",
+        "you",
+        "please",
+        "bring"
       ],
       "answer": [
-        "approve",
-        "the",
-        "invoice"
+        "could",
+        "you",
+        "please",
+        "bring"
       ]
     }
   ],
   "roleplay": {
     "you": "tom",
-    "intro": "你識帶發票去預算會議，問五千港紙以內可唔可以批核。",
+    "intro": "你扮 Tom。用課入面嘅字答。",
     "turns": [
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "I will bring that March invoice, and I have checked every single line against our written budget.",
+        "line": "I will bring that March reimbursement, and the cost variance matches our written ledger.",
         "audio": "assets/audio/lines/w15-l2.mp3",
         "audioSlow": "assets/audio/lines/w15-l2-slow.mp3",
-        "expect": "Will you approve the total on Monday if it stays under five thousand Hong Kong dollars only?",
+        "expect": "Will you approve the full variance if procurement keeps it inside the written March ledger?",
         "keywords": [
-          "approve",
-          "Monday"
+          "variance",
+          "procurement"
         ],
         "modelAudio": "assets/audio/lines/w15-l3.mp3",
         "modelSlow": "assets/audio/lines/w15-l3-slow.mp3"
@@ -228,13 +230,13 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "I will approve that invoice on Monday, because five thousand dollars still sits inside the March budget.",
+        "line": "I will approve that full variance on Monday, because procurement kept it inside the file.",
         "audio": "assets/audio/lines/w15-l4.mp3",
         "audioSlow": "assets/audio/lines/w15-l4-slow.mp3",
-        "expect": "Could the meeting notes name the owner on Monday, without reading every line aloud to the room?",
+        "expect": "Please could the ledger name me as the owner without reading every reimbursement line aloud?",
         "keywords": [
-          "meeting",
-          "owner"
+          "reimbursement",
+          "ledger"
         ],
         "modelAudio": "assets/audio/lines/w15-l5.mp3",
         "modelSlow": "assets/audio/lines/w15-l5-slow.mp3"
@@ -242,13 +244,13 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "The meeting notes will name me as owner, and I will not read every line aloud there.",
+        "line": "The notes will name me as owner, and I will not read every line aloud.",
         "audio": "assets/audio/lines/w15-l6.mp3",
         "audioSlow": "assets/audio/lines/w15-l6-slow.mp3",
-        "expect": "Please approve it before the meeting starts, and leave the signed copy on my wooden desk later.",
+        "expect": "Please file the procurement note before the meeting and leave it on my wooden desk.",
         "keywords": [
-          "approve",
-          "meeting"
+          "procurement",
+          "leave"
         ],
         "modelAudio": "assets/audio/lines/w15-l7.mp3",
         "modelSlow": "assets/audio/lines/w15-l7-slow.mp3"
@@ -259,50 +261,50 @@
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear in this lesson.",
-      "lemma": "invoice-noun",
+      "lemma": "reimbursement-noun",
       "choices": [
-        "budget",
-        "meeting",
-        "invoice"
+        "Friday",
+        "receipt",
+        "reimbursement"
       ],
       "answer": 2
     },
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear in this lesson.",
-      "lemma": "approve-verb",
+      "lemma": "ledger-noun",
       "choices": [
-        "approve",
-        "invoice",
-        "meeting"
+        "ledger",
+        "Friday",
+        "receipt"
       ],
       "answer": 0
     },
     {
       "type": "meaning",
-      "prompt": "Could you please bring the March invoice along to our budget meeting on Monday at ten o'clock? 呢句入面，邊個意思先啱？",
+      "prompt": "Please file the procurement note before the meeting and leave it on my wooden desk. 呢句入面，邊個意思先啱？",
       "choices": [
         "手鏈",
-        "發票",
+        "採購",
         "登機證"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "I will approve that invoice on Monday, because five thousand dollars still sits inside the March budget. 呢句入面，邊個意思先啱？",
+      "prompt": "I will bring that March reimbursement, and the cost variance matches our written ledger. 呢句入面，邊個意思先啱？",
       "choices": [
         "手鏈",
         "海關",
-        "批核"
+        "帳簿"
       ],
       "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "Will you ___ the total on Monday if it stays under five thousand Hong Kong dollars only? 呢句入面，邊個字先啱？",
+      "prompt": "I will approve that full ___ on Monday, because procurement kept it inside the file. 呢句入面，邊個字先啱？",
       "choices": [
-        "approve",
+        "variance",
         "invoice",
         "meeting"
       ],
@@ -310,23 +312,24 @@
     }
   ],
   "sound": {
-    "ipa": "/uː/",
-    "title": "approve 入面嗰個音",
-    "note": "approve 有 /uː/。budget 冇。",
+    "ipa": "/ɪ/",
+    "title": "reimbursement 入面嗰個音",
+    "note": "reimbursement 同 variance 唔同。",
     "pairs": [
       {
-        "a": "approve-verb",
-        "b": "budget-noun"
+        "a": "reimbursement-noun",
+        "b": "variance-noun"
       },
       {
-        "a": "invoice-noun",
-        "b": "meeting-noun"
+        "a": "procurement-noun",
+        "b": "ledger-noun"
       }
     ],
     "drill": [
-      "invoice-noun",
-      "budget-noun",
-      "approve-verb"
+      "reimbursement-noun",
+      "variance-noun",
+      "procurement-noun",
+      "ledger-noun"
     ]
   }
 }

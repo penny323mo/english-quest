@@ -1,0 +1,17 @@
+You are a strict senior code reviewer. cd /workspace/sidequest/english-quest. Read /workspace/sidequest/english-quest/SPEC.md and review the code (round 52) at viewport 390px. Do NOT modify project files. Run node tests if present; do not launch browsers. Write a numbered review ordered CRITICAL/MAJOR/MINOR with file:line and concrete fix, with a first line 'VERDICT: SHIP' or 'VERDICT: NOT READY', to /workspace/sidequest/english-quest/reviews/orch-r52-grok.md. SHIP is FORBIDDEN while any CRITICAL/MAJOR from the previous review remains open, or while any item in the latest coder-audit.md under review/loop-*/ remains unfixed. Verify each item against the built app at 390px before VERDICT. Keep to ~15 minutes.
+
+Authoritative open audit (must re-verify every item): /workspace/sidequest/english-quest/review/loop-r50/coder-audit.md (plus loop-r51 if present)
+The human coder live audit is authoritative. The reviewer must NOT SHIP if any of #136 #137 #141 #143 #146 #150–#154 #156 #157 #158 #159 (or any newer open coder-audit item) remains. Also confirm:
+- #150 no skeleton ex3/miniDialogue: tests/lexicon-skeleton.mjs exists and passes (skeleton shared by >2 lemmas fails; no "a gold/a water/a cash/a jewellery"). Grep content/lexicon.json for "beside the receipt", "behind the desk", "Who asked about", "Which note names", "Did the clerk see". Spot-check 10 entries: the yue translates the en.
+- #158 no duplicated adjacent words in content/lines.json (J6 "This This"), and the test exists.
+- #157/#152/#143 the B2 tail W6 T9 J13 T20 J23 R17 W14 W15 J24 T21 is ≤16 wpl as a smooth staircase, each with ≥3 never-before-taught lemmas. No 3-lesson window drops >2.5 (R4→D6→R9→R13 fixed). Band means are monotonic. The CI check enforces this.
+- #136 the path-wide MCQ test passes; J24 J22 T19 T14 R11 J18 D14 each have exactly one valid key.
+- #137/#146/#151 no echo replies (W13, W15, J24). R16 gloss has no 係。. J15 answers when. D3 speakers alternate. W5/R6/T6 replies answer their question. The en→glossYue hash fixture exists.
+- #153 WordCard matches review/mockup-v1 03-word-card at 390: sans headword, ▶ round play buttons, 慢速 not wrapped, USAGE/EXAMPLES labels, dashed in-card 更多, footer visible.
+- #154 W8/W9 not a W12 clone; #159 J24 hero is bold-outline house style; #156 hub total = deck sum; #141 noise example rewritten.
+- Round 52 adds 2–3 new scenario lessons (R18 + next) on Path, CEFR non-decreasing, within ±2 wpl of neighbours, ≥4 new lemmas each.
+- The stress-syllable highlight + 慢速逐字 karaoke exist in web/src (real code diff), are unit-tested and visible at 390.
+- CHANGELOG Round 52 claims match the code.
+
+WHEN COMPLETELY FINISHED, as your very last action, create the file /workspace/sidequest/english-quest/.orch/review-52.done containing the word DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/review-52.done

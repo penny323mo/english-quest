@@ -1,10 +1,10 @@
 {
   "id": "W14",
   "unit": "W",
-  "titleYue": "期限同議程",
-  "titleEn": "A deadline on the agenda",
-  "canDoYue": "你識改期限、調議程、話投影片唔好放意見，同埋問書面意見點處理。",
-  "canDoEn": "Move a deadline, keep feedback off a slide, and ask what the agenda should say.",
+  "titleYue": "預測、超支同傳閱",
+  "titleEn": "A forecast, an overrun, and circulating it",
+  "canDoYue": "你識講預測、超支、傳閱同持份者。",
+  "canDoEn": "Talk about a forecast, a cost overrun, circulating a note, and the stakeholders.",
   "minutes": 12,
   "hero": "assets/art/lessons/w14.webp",
   "cast": [
@@ -13,10 +13,10 @@
   ],
   "cefr": "B2",
   "lemmas": [
-    "deadline-noun",
-    "agenda-noun",
-    "feedback-noun",
-    "slide-noun"
+    "forecast-noun",
+    "overrun-noun",
+    "circulate-verb",
+    "stakeholder-noun"
   ],
   "next": "W15",
   "dialogue": [
@@ -24,203 +24,205 @@
       "id": "w14-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I would like to move the deadline, because the agenda still needs one more review before Friday.",
-      "glossYue": "我想改期限，因為議程星期五之前仲要再睇一次。",
+      "text": "Could we please move the Monday review if the forecast shows an overrun before Friday?",
+      "glossYue": "如果預測喺星期五之前顯示超支，可唔可以改星期一嘅審核？",
       "audio": "assets/audio/lines/w14-l1.mp3",
       "audioSlow": "assets/audio/lines/w14-l1-slow.mp3",
-      "say": "I would like to move the deadline, because the agenda still needs one more review before Friday.",
+      "say": "Could we please move the Monday review if the forecast shows an overrun before Friday?",
       "hideGloss": false
     },
     {
       "id": "w14-l2",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "We can move that review to next Monday, and I will add the point on the agenda.",
-      "glossYue": "我哋可以將嗰次審閱搬去下星期一，我會加落議程。",
+      "text": "We can move that Monday review, and the forecast still shows a small cost overrun.",
+      "glossYue": "我哋可以改嗰個星期一審核，預測仍然顯示少少成本超支。",
       "audio": "assets/audio/lines/w14-l2.mp3",
       "audioSlow": "assets/audio/lines/w14-l2-slow.mp3",
-      "say": "We can move that review to next Monday, and I will add the point on the agenda.",
+      "say": "We can move that Monday review, and the forecast still shows a small cost overrun.",
       "hideGloss": false
     },
     {
       "id": "w14-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could we keep feedback off the first slide if the client has not read the brief yet?",
-      "glossYue": "如果客戶未睇簡報，第一張投影片可唔可以先唔放意見？",
+      "text": "Will you circulate the written forecast if each stakeholder has not read the note yet?",
+      "glossYue": "如果每個持份者未睇過張字條，你會唔會傳閱書面預測？",
       "audio": "assets/audio/lines/w14-l3.mp3",
       "audioSlow": "assets/audio/lines/w14-l3-slow.mp3",
-      "say": "Could we keep feedback off the first slide if the client has not read the brief yet?",
+      "say": "Will you circulate the written forecast if each stakeholder has not read the note yet?",
       "hideGloss": false
     },
     {
       "id": "w14-l4",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Yes. The first slide can stay as a short title until the client reads the full brief.",
-      "glossYue": "可以。第一張投影片可以保持短標題，等客戶睇完成份簡報。",
+      "text": "I will circulate that written forecast once the team has read the full note pack.",
+      "glossYue": "團隊睇完成份字條，我就會傳閱嗰份書面預測。",
       "audio": "assets/audio/lines/w14-l4.mp3",
       "audioSlow": "assets/audio/lines/w14-l4-slow.mp3",
-      "say": "Yes. The first slide can stay as a short title until the client reads the full brief.",
+      "say": "I will circulate that written forecast once the team has read the full note pack.",
       "hideGloss": true
     },
     {
       "id": "w14-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "What should the agenda say about our new deadline if we still owe them that written feedback?",
-      "glossYue": "如果仲欠佢哋書面意見，議程應該點寫新期限？",
+      "text": "What should the new written agenda say if the overrun changes the Monday review date?",
+      "glossYue": "如果超支改咗星期一審核日期，新書面議程應該點寫？",
       "audio": "assets/audio/lines/w14-l5.mp3",
       "audioSlow": "assets/audio/lines/w14-l5-slow.mp3",
-      "say": "What should the agenda say about our new deadline if we still owe them that written feedback?",
+      "say": "What should the new written agenda say if the overrun changes the Monday review date?",
       "hideGloss": true
     },
     {
       "id": "w14-l6",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "I will put the new date in the notes, and collect that written feedback after the meeting.",
-      "glossYue": "我會喺筆記寫低新日期，會後收集嗰份書面意見。",
+      "text": "I will put the new date on the agenda and note the overrun after review.",
+      "glossYue": "我會將新日期寫上議程，並喺審核之後記低超支。",
       "audio": "assets/audio/lines/w14-l6.mp3",
       "audioSlow": "assets/audio/lines/w14-l6-slow.mp3",
-      "say": "I will put the new date in the notes, and collect that written feedback after the meeting.",
+      "say": "I will put the new date on the agenda and note the overrun after review.",
       "hideGloss": true
     },
     {
       "id": "w14-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can the last slide show a new deadline without putting raw feedback on screen during the call?",
-      "glossYue": "最後一張投影片可唔可以只顯示期限，通話畫面唔好放未整理嘅意見？",
+      "text": "Can you circulate the full agenda without those raw notes during the Monday call?",
+      "glossYue": "星期一通話期間，可唔可以傳閱成份議程，但唔顯示嗰啲原始筆記？",
       "audio": "assets/audio/lines/w14-l7.mp3",
       "audioSlow": "assets/audio/lines/w14-l7-slow.mp3",
-      "say": "Can the last slide show a new deadline without putting raw feedback on screen during the call?",
+      "say": "Can you circulate the full agenda without those raw notes during the Monday call?",
       "hideGloss": true
     },
     {
       "id": "w14-l8",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "That closing page will show the deadline only, and the raw notes stay inside our written pack.",
-      "glossYue": "收結嗰頁只顯示期限，未整理嘅筆記留喺書面文件度。",
+      "text": "I will circulate the full agenda, and those raw notes stay inside the pack.",
+      "glossYue": "我會傳閱成份議程，嗰啲原始筆記留喺文件包入面。",
       "audio": "assets/audio/lines/w14-l8.mp3",
       "audioSlow": "assets/audio/lines/w14-l8-slow.mp3",
-      "say": "That closing page will show the deadline only, and the raw notes stay inside our written pack.",
+      "say": "I will circulate the full agenda, and those raw notes stay inside the pack.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "I would like to move the deadline, because the agenda still needs one more review before Friday. 呢句即係點？",
+      "prompt": "Could we please move the Monday review if the forecast shows an overrun before Friday? 即係問緊咩？",
       "choices": [
-        "想改期限同議程",
-        "想改訂位",
-        "安檢要除腰帶"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
       "answer": 0,
-      "explain": "deadline 係期限。agenda 係議程。"
+      "explain": "跟住呢句嘅意思。"
     },
     {
-      "prompt": "What should the agenda say about our new deadline if we still owe them that written feedback? 即係問緊咩？",
+      "prompt": "Will you circulate the written forecast if each stakeholder has not read the note yet? 即係問緊咩？",
       "choices": [
-        "問閘口行幾耐",
-        "問議程點寫新期限",
-        "問按金幾多"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
-      "answer": 1,
-      "explain": "agenda 係議程。deadline 係期限。"
+      "answer": 0,
+      "explain": "跟住呢句嘅意思。"
     },
     {
-      "prompt": "Can the last slide show a new deadline without putting raw feedback on screen during the call? 即係問緊咩？",
+      "prompt": "Could we please move the Monday review if the forecast shows an overrun before Friday? 即係問緊咩？",
       "choices": [
-        "問第二次估價幾錢",
-        "問廚房拿走果仁",
-        "問投影片可唔可以只顯示期限"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
-      "answer": 2,
-      "explain": "slide 係投影片。"
+      "answer": 0,
+      "explain": "跟住呢句嘅意思。"
     }
   ],
   "chunks": [
     {
-      "pattern": "I would like to move the ___, because the agenda still needs one more review before Friday.",
-      "example": "I would like to move the deadline, because the agenda still needs one more review before Friday.",
-      "glossYue": "想改期限。",
-      "answer": "deadline",
+      "pattern": "Could we please move the Monday review if the ___ shows an overrun before Friday?",
+      "example": "Could we please move the Monday review if the forecast shows an overrun before Friday?",
+      "glossYue": "如果預測喺星期五之前顯示超支，可唔可以改星期一嘅審核？",
+      "answer": "forecast",
       "choices": [
-        "deadline",
-        "Friday",
-        "receipt"
+        "forecast",
+        "shirt",
+        "meter"
       ]
     },
     {
-      "pattern": "Could we keep ___ off the first slide if the client has not read the brief yet?",
-      "example": "Could we keep feedback off the first slide if the client has not read the brief yet?",
-      "glossYue": "意見唔好放上投影片。",
-      "answer": "feedback",
+      "pattern": "Could we please move the Monday review if the forecast shows an ___ before Friday?",
+      "example": "Could we please move the Monday review if the forecast shows an overrun before Friday?",
+      "glossYue": "如果預測喺星期五之前顯示超支，可唔可以改星期一嘅審核？",
+      "answer": "overrun",
       "choices": [
-        "feedback",
-        "towel",
-        "passport"
+        "overrun",
+        "shirt",
+        "meter"
       ]
     },
     {
-      "pattern": "Can the last ___ show a new deadline without putting raw feedback on screen during the call?",
-      "example": "Can the last slide show a new deadline without putting raw feedback on screen during the call?",
-      "glossYue": "問最後一張投影片。",
-      "answer": "slide",
+      "pattern": "Will you ___ the written forecast if each stakeholder has not read the note yet?",
+      "example": "Will you circulate the written forecast if each stakeholder has not read the note yet?",
+      "glossYue": "如果每個持份者未睇過張字條，你會唔會傳閱書面預測？",
+      "answer": "circulate",
       "choices": [
-        "slide",
-        "deadline",
-        "oyster"
+        "circulate",
+        "shirt",
+        "meter"
       ]
     }
   ],
   "shadow": {
     "lineId": "w14-l1",
-    "hint": "I would like to move the deadline, because the agenda still needs one more review before Friday."
+    "hint": "Could we please move the Monday review if the forecast shows an overrun before Friday?"
   },
   "build": [
     {
       "type": "choice",
-      "promptYue": "你話想改期限，因為議程仲要再睇。你點講？",
+      "promptYue": "你點講？",
       "choices": [
-        "I would like to move the deadline, because the agenda still needs one more review before Friday.",
-        "Could we keep feedback off the first slide if the client has not read the brief yet?",
-        "Can the last slide show a new deadline without putting raw feedback on screen during the call?"
+        "Could we please move the Monday review if the forecast shows an overrun before Friday?",
+        "Will you circulate the written forecast if each stakeholder has not read the note yet?",
+        "What should the new written agenda say if the overrun changes the Monday review date?"
       ],
       "answer": 0,
-      "explain": "講 deadline。"
+      "explain": "用返課入面第一句。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "move",
-        "the",
-        "deadline"
+        "could",
+        "we",
+        "please",
+        "move"
       ],
       "answer": [
-        "move",
-        "the",
-        "deadline"
+        "could",
+        "we",
+        "please",
+        "move"
       ]
     }
   ],
   "roleplay": {
     "you": "tom",
-    "intro": "你同 Nina 改期限同議程。可以講：deadline、feedback。",
+    "intro": "你扮 Tom。用課入面嘅字答。",
     "turns": [
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "We can move that review to next Monday, and I will add the point on the agenda.",
+        "line": "We can move that Monday review, and the forecast still shows a small cost overrun.",
         "audio": "assets/audio/lines/w14-l2.mp3",
         "audioSlow": "assets/audio/lines/w14-l2-slow.mp3",
-        "expect": "Could we keep feedback off the first slide if the client has not read the brief yet?",
+        "expect": "Will you circulate the written forecast if each stakeholder has not read the note yet?",
         "keywords": [
-          "feedback",
-          "slide"
+          "forecast",
+          "circulate"
         ],
         "modelAudio": "assets/audio/lines/w14-l3.mp3",
         "modelSlow": "assets/audio/lines/w14-l3-slow.mp3"
@@ -228,13 +230,13 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "Yes. The first slide can stay as a short title until the client reads the full brief.",
+        "line": "I will circulate that written forecast once the team has read the full note pack.",
         "audio": "assets/audio/lines/w14-l4.mp3",
         "audioSlow": "assets/audio/lines/w14-l4-slow.mp3",
-        "expect": "What should the agenda say about our new deadline if we still owe them that written feedback?",
+        "expect": "What should the new written agenda say if the overrun changes the Monday review date?",
         "keywords": [
-          "agenda",
-          "feedback"
+          "overrun",
+          "agenda"
         ],
         "modelAudio": "assets/audio/lines/w14-l5.mp3",
         "modelSlow": "assets/audio/lines/w14-l5-slow.mp3"
@@ -242,13 +244,13 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "I will put the new date in the notes, and collect that written feedback after the meeting.",
+        "line": "I will put the new date on the agenda and note the overrun after review.",
         "audio": "assets/audio/lines/w14-l6.mp3",
         "audioSlow": "assets/audio/lines/w14-l6-slow.mp3",
-        "expect": "Can the last slide show a new deadline without putting raw feedback on screen during the call?",
+        "expect": "Can you circulate the full agenda without those raw notes during the Monday call?",
         "keywords": [
-          "slide",
-          "deadline"
+          "circulate",
+          "agenda"
         ],
         "modelAudio": "assets/audio/lines/w14-l7.mp3",
         "modelSlow": "assets/audio/lines/w14-l7-slow.mp3"
@@ -259,10 +261,10 @@
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear in this lesson.",
-      "lemma": "deadline-noun",
+      "lemma": "forecast-noun",
       "choices": [
         "Friday",
-        "deadline",
+        "forecast",
         "receipt"
       ],
       "answer": 1
@@ -270,64 +272,64 @@
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear in this lesson.",
-      "lemma": "agenda-noun",
+      "lemma": "overrun-noun",
       "choices": [
-        "passport",
-        "agenda",
-        "deadline"
+        "Friday",
+        "overrun",
+        "receipt"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "I would like to move the deadline, because the agenda still needs one more review before Friday. 呢句入面，邊個意思先啱？",
+      "prompt": "Could we please move the Monday review if the forecast shows an overrun before Friday? 呢句入面，邊個意思先啱？",
       "choices": [
         "窗",
         "鐘",
-        "期限"
+        "預測"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "Could we keep feedback off the first slide if the client has not read the brief yet? 呢句入面，邊個意思先啱？",
+      "prompt": "I will put the new date on the agenda and note the overrun after review. 呢句入面，邊個意思先啱？",
       "choices": [
         "窗",
-        "意見",
+        "超支",
         "鐘"
       ],
       "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "Could we keep feedback off the first ___ if the client has not read the brief yet? 呢句入面，邊個字先啱？",
+      "prompt": "Will you circulate the written forecast if each ___ has not read the note yet? 呢句入面，邊個字先啱？",
       "choices": [
         "Friday",
-        "slide",
+        "stakeholder",
         "receipt"
       ],
       "answer": 1
     }
   ],
   "sound": {
-    "ipa": "/eɪ/",
-    "title": "deadline 入面嗰個音",
-    "note": "deadline 有 /eɪ/。slide 冇。",
+    "ipa": "/ɪ/",
+    "title": "forecast 入面嗰個音",
+    "note": "forecast 同 overrun 唔同。",
     "pairs": [
       {
-        "a": "deadline-noun",
-        "b": "agenda-noun"
+        "a": "forecast-noun",
+        "b": "overrun-noun"
       },
       {
-        "a": "feedback-noun",
-        "b": "slide-noun"
+        "a": "circulate-verb",
+        "b": "stakeholder-noun"
       }
     ],
     "drill": [
-      "deadline-noun",
-      "agenda-noun",
-      "feedback-noun",
-      "slide-noun"
+      "forecast-noun",
+      "overrun-noun",
+      "circulate-verb",
+      "stakeholder-noun"
     ]
   }
 }

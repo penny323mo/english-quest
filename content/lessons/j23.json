@@ -1,10 +1,10 @@
 {
   "id": "J23",
   "unit": "J",
-  "titleYue": "保險估價同證書",
-  "titleEn": "An insurance appraisal",
-  "canDoYue": "你識攞證書同書面估價、問保險收唔收相片、同埋問第二次估價幾多錢。",
-  "canDoEn": "Ask whether a written appraisal and a certificate photo are enough for an insurance claim.",
+  "titleYue": "估值同免賠額",
+  "titleEn": "A valuation and the deductible",
+  "canDoYue": "你識問估值、免賠額、索償人同承保人。",
+  "canDoEn": "Ask about a valuation, a deductible, the claimant, and the underwriter.",
   "minutes": 12,
   "hero": "assets/art/lessons/j23.webp",
   "cast": [
@@ -13,10 +13,10 @@
   ],
   "cefr": "B2",
   "lemmas": [
-    "pendant-noun",
-    "appraisal-noun",
-    "insurance-noun",
-    "certificate-noun"
+    "valuation-noun",
+    "deductible-noun",
+    "claimant-noun",
+    "underwriter-noun"
   ],
   "next": "R17",
   "dialogue": [
@@ -24,205 +24,205 @@
       "id": "j23-l1",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "I brought the damaged pendant back, and I need a written appraisal before the insurance claim goes in.",
-      "glossYue": "我帶咗隻爛咗嘅吊墜返嚟，保險索償之前要一份書面估價。",
+      "text": "Could you prepare a fresh valuation before the claimant sends the file to the office?",
+      "glossYue": "索償人將檔案交去公司之前，可唔可以先做一份新估值？",
       "audio": "assets/audio/lines/j23-l1.mp3",
       "audioSlow": "assets/audio/lines/j23-l1-slow.mp3",
-      "say": "I brought the damaged pendant back, and I need a written appraisal before the insurance claim goes in.",
+      "say": "Could you prepare a fresh valuation before the claimant sends the file to the office?",
       "hideGloss": false
     },
     {
       "id": "j23-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The certificate is in this folder, and it matches the stone we photographed last spring in the shop.",
-      "glossYue": "證書喺呢個文件夾，同我哋春天喺舖頭影嘅石一致。",
+      "text": "I can prepare that fresh valuation, and the claimant may send the file on Monday.",
+      "glossYue": "我可以準備嗰份新估值，索償人星期一可以交個檔案。",
       "audio": "assets/audio/lines/j23-l2.mp3",
       "audioSlow": "assets/audio/lines/j23-l2-slow.mp3",
-      "say": "The certificate is in this folder, and it matches the stone we photographed last spring in the shop.",
+      "say": "I can prepare that fresh valuation, and the claimant may send the file on Monday.",
       "hideGloss": false
     },
     {
       "id": "j23-l3",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Does the written appraisal still stand if the clasp was repaired after that short shop visit?",
-      "glossYue": "上次短短嚟舖修咗扣之後，書面估價仲算唔算數？",
+      "text": "Does this written valuation still stand if the deductible changed after the first shop visit?",
+      "glossYue": "如果第一次來舖之後免賠額改咗，呢份書面估值仲算唔算數？",
       "audio": "assets/audio/lines/j23-l3.mp3",
       "audioSlow": "assets/audio/lines/j23-l3-slow.mp3",
-      "say": "Does the written appraisal still stand if the clasp was repaired after that short shop visit?",
+      "say": "Does this written valuation still stand if the deductible changed after the first shop visit?",
       "hideGloss": false
     },
     {
       "id": "j23-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Yes. The clasp repair still stands, and the note is attached at the back of the file.",
-      "glossYue": "算。扣嘅維修仍然有效，字條釘咗喺檔案最後。",
+      "text": "The written valuation still stands, and the new deductible is noted after that first visit.",
+      "glossYue": "書面估值仍然有效，新免賠額已經記低喺第一次來舖之後。",
       "audio": "assets/audio/lines/j23-l4.mp3",
       "audioSlow": "assets/audio/lines/j23-l4-slow.mp3",
-      "say": "Yes. The clasp repair still stands, and the note is attached at the back of the file.",
+      "say": "The written valuation still stands, and the new deductible is noted after that first visit.",
       "hideGloss": true
     },
     {
       "id": "j23-l5",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Can the insurance office accept a clear photo of the certificate instead of sending the paper original?",
-      "glossYue": "保險公司可唔可以收證書嘅清晰相片，唔使寄紙本正本？",
+      "text": "Can the underwriter accept a clear photo if the claimant cannot bring the paper original?",
+      "glossYue": "如果索償人帶唔到紙本正本，承保人可唔可以收一張清晰相片？",
       "audio": "assets/audio/lines/j23-l5.mp3",
       "audioSlow": "assets/audio/lines/j23-l5-slow.mp3",
-      "say": "Can the insurance office accept a clear photo of the certificate instead of sending the paper original?",
+      "say": "Can the underwriter accept a clear photo if the claimant cannot bring the paper original?",
       "hideGloss": true
     },
     {
       "id": "j23-l6",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The office can accept that photo this afternoon, and I will email a scanned copy of the certificate.",
-      "glossYue": "公司今日下晝可以收嗰張相，我會電郵證書嘅掃描副本。",
+      "text": "The underwriter can accept that clear photo, and the claimant may keep the paper original.",
+      "glossYue": "承保人可以收嗰張清晰相片，索償人可以留住紙本正本。",
       "audio": "assets/audio/lines/j23-l6.mp3",
       "audioSlow": "assets/audio/lines/j23-l6-slow.mp3",
-      "say": "The office can accept that photo this afternoon, and I will email a scanned copy of the certificate.",
+      "say": "The underwriter can accept that clear photo, and the claimant may keep the paper original.",
       "hideGloss": true
     },
     {
       "id": "j23-l7",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "What is the fee if the pendant needs a second appraisal before the claim is filed?",
-      "glossYue": "索償之前吊墜要再估一次，收費係幾多？",
+      "text": "What is the fee if the underwriter asks for a second deductible on Monday morning?",
+      "glossYue": "如果承保人星期一朝早要第二個免賠額，收費係幾多？",
       "audio": "assets/audio/lines/j23-l7.mp3",
       "audioSlow": "assets/audio/lines/j23-l7-slow.mp3",
-      "say": "What is the fee if the pendant needs a second appraisal before the claim is filed?",
+      "say": "What is the fee if the underwriter asks for a second deductible on Monday morning?",
       "hideGloss": true
     },
     {
       "id": "j23-l8",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The second appraisal is free of charge, and the pendant fee stays at forty dollars in the quote.",
-      "glossYue": "第二次估價唔使錢，吊墜收費喺報價度維持四十蚊。",
+      "text": "The fee is forty dollars if the underwriter asks, and the deductible stays the same.",
+      "glossYue": "如果承保人要求，收費係四十蚊，免賠額維持不變。",
       "audio": "assets/audio/lines/j23-l8.mp3",
       "audioSlow": "assets/audio/lines/j23-l8-slow.mp3",
-      "say": "The second appraisal is free of charge, and the pendant fee stays at forty dollars in the quote.",
+      "say": "The fee is forty dollars if the underwriter asks, and the deductible stays the same.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "I brought the damaged pendant back, and I need a written appraisal before the insurance claim goes in. 呢句即係點？",
+      "prompt": "Could you prepare a fresh valuation before the claimant sends the file to the office? 即係問緊咩？",
       "choices": [
-        "要書面估價先索償",
-        "想改星期六訂位",
-        "安檢要除皮帶"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
       "answer": 0,
-      "explain": "appraisal 係估價。insurance 係保險。"
+      "explain": "跟住呢句嘅意思。"
     },
     {
-      "prompt": "Can the insurance office accept a clear photo of the certificate instead of sending the paper original? 即係問緊咩？",
+      "prompt": "Does this written valuation still stand if the deductible changed after the first shop visit? 即係問緊咩？",
       "choices": [
-        "問閘口行幾耐",
-        "問保險收唔收證書相片",
-        "問私房幾多位"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
-      "answer": 1,
-      "explain": "certificate 係證書。"
+      "answer": 0,
+      "explain": "跟住呢句嘅意思。"
     },
     {
-      "prompt": "What is the fee if the pendant needs a second appraisal before the claim is filed? 即係問緊咩？",
+      "prompt": "Could you prepare a fresh valuation before the claimant sends the file to the office? 即係問緊咩？",
       "choices": [
-        "問接駁車點去",
-        "問果仁可唔可以拿走",
-        "問第二次估價收幾多"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
-      "answer": 2,
-      "explain": "fee 係收費。"
+      "answer": 0,
+      "explain": "跟住呢句嘅意思。"
     }
   ],
   "chunks": [
     {
-      "pattern": "I brought the damaged pendant back, and I need a written ___ before the insurance claim goes in.",
-      "example": "I brought the damaged pendant back, and I need a written appraisal before the insurance claim goes in.",
-      "glossYue": "索償之前要書面估價。",
-      "answer": "appraisal",
+      "pattern": "Could you prepare a fresh ___ before the claimant sends the file to the office?",
+      "example": "Could you prepare a fresh valuation before the claimant sends the file to the office?",
+      "glossYue": "索償人將檔案交去公司之前，可唔可以先做一份新估值？",
+      "answer": "valuation",
       "choices": [
-        "appraisal",
-        "Friday",
-        "receipt"
+        "valuation",
+        "shirt",
+        "meter"
       ]
     },
     {
-      "pattern": "The ___ is in this folder, and it matches the stone we photographed last spring in the shop.",
-      "example": "The certificate is in this folder, and it matches the stone we photographed last spring in the shop.",
-      "glossYue": "證書喺文件夾。",
-      "answer": "certificate",
+      "pattern": "Does this written valuation still stand if the ___ changed after the first shop visit?",
+      "example": "Does this written valuation still stand if the deductible changed after the first shop visit?",
+      "glossYue": "如果第一次來舖之後免賠額改咗，呢份書面估值仲算唔算數？",
+      "answer": "deductible",
       "choices": [
-        "certificate",
-        "towel",
-        "passport"
+        "deductible",
+        "shirt",
+        "meter"
       ]
     },
     {
-      "pattern": "Can the ___ office accept a clear photo of the certificate instead of sending the paper original?",
-      "example": "Can the insurance office accept a clear photo of the certificate instead of sending the paper original?",
-      "glossYue": "問保險收唔收相片。",
-      "answer": "insurance",
+      "pattern": "Could you prepare a fresh valuation before the ___ sends the file to the office?",
+      "example": "Could you prepare a fresh valuation before the claimant sends the file to the office?",
+      "glossYue": "索償人將檔案交去公司之前，可唔可以先做一份新估值？",
+      "answer": "claimant",
       "choices": [
-        "insurance",
-        "deadline",
-        "oyster"
+        "claimant",
+        "shirt",
+        "meter"
       ]
     }
   ],
   "shadow": {
     "lineId": "j23-l1",
-    "hint": "I brought the damaged pendant back, and I need a written appraisal before the insurance claim goes in."
+    "hint": "Could you prepare a fresh valuation before the claimant sends the file to the office?"
   },
   "build": [
     {
       "type": "choice",
-      "promptYue": "你話要書面估價先至交保險。你點講？",
+      "promptYue": "你點講？",
       "choices": [
-        "I brought the damaged pendant back, and I need a written appraisal before the insurance claim goes in.",
-        "Can the insurance office accept a clear photo of the certificate instead of sending the paper original?",
-        "What is the fee if the pendant needs a second appraisal before the claim is filed?"
+        "Could you prepare a fresh valuation before the claimant sends the file to the office?",
+        "Does this written valuation still stand if the deductible changed after the first shop visit?",
+        "Can the underwriter accept a clear photo if the claimant cannot bring the paper original?"
       ],
       "answer": 0,
-      "explain": "講 appraisal。"
+      "explain": "用返課入面第一句。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "where",
-        "is",
-        "the",
-        "certificate"
+        "could",
+        "you",
+        "prepare",
+        "a"
       ],
       "answer": [
-        "where",
-        "is",
-        "the",
-        "certificate"
+        "could",
+        "you",
+        "prepare",
+        "a"
       ]
     }
   ],
   "roleplay": {
     "you": "gus",
-    "intro": "你帶吊墜返舖。同 Ida 問估價同證書。可以講：appraisal、certificate。",
+    "intro": "你扮 Gus。用課入面嘅字答。",
     "turns": [
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "The certificate is in this folder, and it matches the stone we photographed last spring in the shop.",
+        "line": "I can prepare that fresh valuation, and the claimant may send the file on Monday.",
         "audio": "assets/audio/lines/j23-l2.mp3",
         "audioSlow": "assets/audio/lines/j23-l2-slow.mp3",
-        "expect": "Does the written appraisal still stand if the clasp was repaired after that short shop visit?",
+        "expect": "Does this written valuation still stand if the deductible changed after the first shop visit?",
         "keywords": [
-          "appraisal",
-          "clasp"
+          "valuation",
+          "deductible"
         ],
         "modelAudio": "assets/audio/lines/j23-l3.mp3",
         "modelSlow": "assets/audio/lines/j23-l3-slow.mp3"
@@ -230,13 +230,13 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "Yes. The clasp repair still stands, and the note is attached at the back of the file.",
+        "line": "The written valuation still stands, and the new deductible is noted after that first visit.",
         "audio": "assets/audio/lines/j23-l4.mp3",
         "audioSlow": "assets/audio/lines/j23-l4-slow.mp3",
-        "expect": "Can the insurance office accept a clear photo of the certificate instead of sending the paper original?",
+        "expect": "Can the underwriter accept a clear photo if the claimant cannot bring the paper original?",
         "keywords": [
-          "certificate",
-          "insurance"
+          "claimant",
+          "underwriter"
         ],
         "modelAudio": "assets/audio/lines/j23-l5.mp3",
         "modelSlow": "assets/audio/lines/j23-l5-slow.mp3"
@@ -244,13 +244,13 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "The office can accept that photo this afternoon, and I will email a scanned copy of the certificate.",
+        "line": "The underwriter can accept that clear photo, and the claimant may keep the paper original.",
         "audio": "assets/audio/lines/j23-l6.mp3",
         "audioSlow": "assets/audio/lines/j23-l6-slow.mp3",
-        "expect": "What is the fee if the pendant needs a second appraisal before the claim is filed?",
+        "expect": "What is the fee if the underwriter asks for a second deductible on Monday morning?",
         "keywords": [
-          "pendant",
-          "appraisal"
+          "deductible",
+          "underwriter"
         ],
         "modelAudio": "assets/audio/lines/j23-l7.mp3",
         "modelSlow": "assets/audio/lines/j23-l7-slow.mp3"
@@ -261,10 +261,10 @@
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear in this lesson.",
-      "lemma": "pendant-noun",
+      "lemma": "valuation-noun",
       "choices": [
         "Friday",
-        "pendant",
+        "valuation",
         "receipt"
       ],
       "answer": 1
@@ -272,64 +272,64 @@
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear in this lesson.",
-      "lemma": "appraisal-noun",
+      "lemma": "deductible-noun",
       "choices": [
-        "passport",
-        "appraisal",
-        "deadline"
+        "Friday",
+        "deductible",
+        "receipt"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "I brought the damaged pendant back, and I need a written appraisal before the insurance claim goes in. 呢句入面，邊個意思先啱？",
+      "prompt": "Could you prepare a fresh valuation before the claimant sends the file to the office? 呢句入面，邊個意思先啱？",
       "choices": [
         "窗",
-        "吊墜",
+        "估值",
         "鐘"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "I brought the damaged pendant back, and I need a written appraisal before the insurance claim goes in. 呢句入面，邊個意思先啱？",
+      "prompt": "Does this written valuation still stand if the deductible changed after the first shop visit? 呢句入面，邊個意思先啱？",
       "choices": [
         "窗",
         "鐘",
-        "保險"
+        "免賠額"
       ],
       "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "The ___ is in this folder, and it matches the stone we photographed last spring in the shop. 呢句入面，邊個字先啱？",
+      "prompt": "Can the underwriter accept a clear photo if the ___ cannot bring the paper original? 呢句入面，邊個字先啱？",
       "choices": [
         "Friday",
-        "certificate",
+        "claimant",
         "receipt"
       ],
       "answer": 1
     }
   ],
   "sound": {
-    "ipa": "/eɪ/",
-    "title": "claim 入面嗰個音",
-    "note": "claim 有 /eɪ/。shop 冇。",
+    "ipa": "/ɪ/",
+    "title": "valuation 入面嗰個音",
+    "note": "valuation 同 deductible 唔同。",
     "pairs": [
       {
-        "a": "appraisal-noun",
-        "b": "certificate-noun"
+        "a": "valuation-noun",
+        "b": "deductible-noun"
       },
       {
-        "a": "pendant-noun",
-        "b": "insurance-noun"
+        "a": "claimant-noun",
+        "b": "underwriter-noun"
       }
     ],
     "drill": [
-      "appraisal-noun",
-      "certificate-noun",
-      "pendant-noun",
-      "insurance-noun"
+      "valuation-noun",
+      "deductible-noun",
+      "claimant-noun",
+      "underwriter-noun"
     ]
   }
 }

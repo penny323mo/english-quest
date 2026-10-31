@@ -46,11 +46,11 @@
       "id": "j6-l2",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "This This piece is on sale today.",
-      "glossYue": "呢件今日減價。",
+      "text": "This fine piece is on sale today.",
+      "glossYue": "呢件精品今日減價。",
       "audio": "assets/audio/lines/j6-l2.mp3",
       "audioSlow": "assets/audio/lines/j6-l2-slow.mp3",
-      "say": "This This piece is on sale today.",
+      "say": "This fine piece is on sale today.",
       "hideGloss": true
     },
     {
@@ -254,7 +254,7 @@
         "line": "How much does this cost?",
         "audio": "assets/audio/lines/j6-l1.mp3",
         "audioSlow": "assets/audio/lines/j6-l1-slow.mp3",
-        "expect": "This piece is on sale today.",
+        "expect": "This fine piece is on sale today.",
         "keywords": [
           "sale"
         ],

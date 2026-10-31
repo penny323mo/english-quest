@@ -79,13 +79,23 @@ function DeckGlyph({ kind }: { kind: string }) {
   return <svg {...props}><circle cx="12" cy="12" r="4" /><path d="M12 3v2M12 19v2M3 12h2M19 12h2" /></svg>;
 }
 
-function storedDue(cards: Record<string, StoredCard>) {
-  return Object.values(cards).filter((card) => isDue(card) && lexById[card.id]).length;
+function hubDue(cards: Record<string, StoredCard>) {
+  const inDeck = new Set<string>();
+  let tileDue = 0;
+  for (const deck of decks.decks) {
+    tileDue += statsFor(deck.lemmas, cards).due;
+    for (const id of deck.lemmas) inDeck.add(id);
+  }
+  let outside = 0;
+  for (const card of Object.values(cards)) {
+    if (isDue(card) && lexById[card.id] && !inDeck.has(card.id)) outside += 1;
+  }
+  return { tileDue, outside };
 }
 
 export function VocabHub() {
   const cards = useStore((s) => s.cards);
-  const totalDue = storedDue(cards);
+  const { tileDue, outside } = hubDue(cards);
   return (
     <section className="screen stack">
       <div className="hub-hero">
@@ -97,8 +107,9 @@ export function VocabHub() {
       </div>
       <div className="due-cta">
         <div>
-          <p className="due-n">{totalDue}</p>
+          <p className="due-n">{tileDue}</p>
           <p className="fine">今日到期要溫</p>
+          {outside > 0 && <p className="fine">另有 {outside} 張未入牌組</p>}
         </div>
         <a className="btn" href="#/review">開始溫習</a>
       </div>
@@ -136,24 +147,33 @@ export function VocabHub() {
   );
 }
 
-function WordCard({ item, openMore, glyph }: { item: LexItem; openMore: boolean; glyph: string }) {
+function WordCard({
+  item,
+  openMore,
+  onToggleMore,
+}: {
+  item: LexItem;
+  openMore: boolean;
+  onToggleMore: () => void;
+}) {
   const examples = item.examples?.length
     ? item.examples
     : [{ en: item.example, yue: item.exampleYue, audio: item.audio, audioSlow: item.audioSlow }];
   const shown = examples.slice(0, 2);
   const extra = examples.slice(2);
   const hasUsage = Boolean(item.register || item.usageNotes || item.collocations.length || item.pitfallsYue);
+  const hasMore = extra.length > 0 || Boolean(item.related?.length) || Boolean(item.miniDialogue?.length);
   return (
     <article className="word-card">
       <div className="word-head">
-        <div className="word-tile" aria-hidden="true"><DeckGlyph kind={glyph} /></div>
+        <div className="word-tile" aria-hidden="true">{item.lemma.slice(0, 1).toUpperCase()}</div>
         <div className="word-id">
           <h2 lang="en">{item.lemma}</h2>
           <div className="word-meta">
             <span className="word-pos">{learnerEyebrow(item)}</span>
             <span className="ipa">{item.ipa}</span>
-            <button className="word-play" type="button" onClick={() => playAsset(item.audio)}>聽</button>
-            <button className="word-play slow" type="button" onClick={() => playAsset(item.audioSlow)}>慢速</button>
+            <button className="word-play" type="button" aria-label="播放" onClick={() => playAsset(item.audio)}>▶</button>
+            <button className="word-play slow" type="button" aria-label="慢速" onClick={() => playAsset(item.audioSlow)}>▶ 慢速</button>
           </div>
         </div>
       </div>
@@ -162,11 +182,10 @@ function WordCard({ item, openMore, glyph }: { item: LexItem; openMore: boolean;
           <p className="k">廣東話意思</p>
           <p className="v">{item.glossYue}</p>
         </div>
-        <button className="word-play" type="button" onClick={() => playAsset(item.audio)} aria-label="聽廣東話意思">▶</button>
       </div>
       {hasUsage && (
-        <details className="usage" open>
-          <summary>用法</summary>
+        <div className="usage">
+          <h3 className="word-label">用法 USAGE</h3>
           {item.register && <p>語域：{item.register}</p>}
           {item.usageNotes && <p>{item.usageNotes}</p>}
           {item.collocations.length > 0 && (
@@ -175,34 +194,39 @@ function WordCard({ item, openMore, glyph }: { item: LexItem; openMore: boolean;
             </ul>
           )}
           {item.pitfallsYue && <p className="pit">⚠ 港式易錯：{item.pitfallsYue}</p>}
-        </details>
+        </div>
       )}
       <div className="word-examples">
+        <h3 className="word-label">例句 EXAMPLES</h3>
         {shown.map((example) => <ExampleRow key={example.en} example={example} />)}
       </div>
-      {openMore && (
+      {hasMore && (
         <div className="word-more">
-          <p className="sum">更多</p>
-          {extra.map((example) => <ExampleRow key={example.en} example={example} />)}
-          {item.related && item.related.length > 0 && (
-            <div className="word-related">
-              {item.related.map((id) => {
-                const related = lexById[id];
-                if (!related) return null;
-                return <a key={id} className="word-chip" href={`#/word/${id}`} lang="en">{related.lemma}</a>;
-              })}
-            </div>
-          )}
-          {item.miniDialogue && item.miniDialogue.length > 0 && (
-            <div className="word-mini">
-              {item.miniDialogue.map((turn, index) => (
-                <p key={turn.en}>
-                  <span className="who">{index % 2 === 0 ? "甲" : "乙"}：</span>
-                  <span lang="en">{turn.en}</span>
-                  <span className="gloss"> {turn.yue}</span>
-                </p>
-              ))}
-            </div>
+          <button className="word-more-toggle" type="button" onClick={onToggleMore}>{openMore ? "收起" : "更多"}</button>
+          {openMore && (
+            <>
+              {extra.map((example) => <ExampleRow key={example.en} example={example} />)}
+              {item.related && item.related.length > 0 && (
+                <div className="word-related">
+                  {item.related.map((id) => {
+                    const related = lexById[id];
+                    if (!related) return null;
+                    return <a key={id} className="word-chip" href={`#/word/${id}`} lang="en">{related.lemma}</a>;
+                  })}
+                </div>
+              )}
+              {item.miniDialogue && item.miniDialogue.length > 0 && (
+                <div className="word-mini">
+                  {item.miniDialogue.map((turn, index) => (
+                    <p key={turn.en}>
+                      <span className="who">{index % 2 === 0 ? "甲" : "乙"}：</span>
+                      <span lang="en">{turn.en}</span>
+                      <span className="gloss"> {turn.yue}</span>
+                    </p>
+                  ))}
+                </div>
+              )}
+            </>
           )}
         </div>
       )}
@@ -218,8 +242,8 @@ function ExampleRow({ example }: { example: { en: string; yue: string; audio: st
         <p className="yue">{example.yue}</p>
       </div>
       <div className="word-ex-play">
-        <button className="word-play" type="button" onClick={() => playAsset(example.audio)}>聽</button>
-        <button className="word-play slow" type="button" onClick={() => playAsset(example.audioSlow)}>慢速</button>
+        <button className="word-play" type="button" aria-label="播放" onClick={() => playAsset(example.audio)}>▶</button>
+        <button className="word-play slow" type="button" aria-label="慢速" onClick={() => playAsset(example.audioSlow)}>▶ 慢速</button>
       </div>
     </div>
   );
@@ -262,31 +286,32 @@ export function VocabDeck({ deckId }: { deckId: string }) {
   }
 
   return (
-    <section className="screen stack">
+    <section className="screen stack deck-screen">
       <a className="back" href="#/vocab">返生字</a>
       <p className="eyebrow">{deck.titleYue}</p>
       <p className="kicker">{stats.percent}% · 到期 {stats.due} · 新字 {stats.fresh}</p>
-      {!item && <p className="note">今次 {session.length} 張溫完。到期嘅仍然會排喺前面。</p>}
-      {item && (
-        <>
-          <p className="fine">{index + 1} / {session.length}</p>
-          <WordCard item={item} openMore={more} glyph={DECK_GLYPH[deck.id] || "sun"} />
-          <button className="btn ghost block" type="button" onClick={() => setMore((open) => !open)}>
-            {more ? "收起" : "更多"}
-          </button>
-          {markState === "good" && <p className="note">記住咗</p>}
-          {markState === "again" && <p className="note">再排一次</p>}
-          {markState ? (
-            <button className="btn block" type="button" onClick={() => { setMarkState(null); setMore(false); setIndex((n) => n + 1); }}>下一張</button>
-          ) : (
-            <div className="row-btns word-foot">
-              <button className="btn ghost" type="button" onClick={() => mark(item.id, Rating.Again)}>仲未熟</button>
-              <button className="btn" type="button" onClick={() => mark(item.id, Rating.Good)}>識咗 ✓</button>
-            </div>
-          )}
-        </>
-      )}
-      <a className="btn block" href={`#/vocab/${deck.id}/quiz`}>小測</a>
+      <div className="deck-body">
+        {!item && <p className="note">今次 {session.length} 張溫完。到期嘅仍然會排喺前面。</p>}
+        {item && (
+          <>
+            <p className="fine">{index + 1} / {session.length}</p>
+            <WordCard item={item} openMore={more} onToggleMore={() => setMore((open) => !open)} />
+            {markState === "good" && <p className="note">記住咗</p>}
+            {markState === "again" && <p className="note">再排一次</p>}
+          </>
+        )}
+        <a className="btn block" href={`#/vocab/${deck.id}/quiz`}>小測</a>
+      </div>
+      {item && (markState ? (
+        <div className="word-foot">
+          <button className="btn block" type="button" onClick={() => { setMarkState(null); setMore(false); setIndex((n) => n + 1); }}>下一張</button>
+        </div>
+      ) : (
+        <div className="row-btns word-foot">
+          <button className="btn ghost" type="button" onClick={() => mark(item.id, Rating.Again)}>仲未熟</button>
+          <button className="btn" type="button" onClick={() => mark(item.id, Rating.Good)}>識咗 ✓</button>
+        </div>
+      ))}
     </section>
   );
 }

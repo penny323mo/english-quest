@@ -1,10 +1,10 @@
 {
   "id": "T21",
   "unit": "T",
-  "titleYue": "轉機、海關同行李",
-  "titleEn": "Connection and customs",
-  "canDoYue": "你識睇登機證、趕兩點轉機之前去海關，同埋托運重行李。",
-  "canDoEn": "Check a boarding pass, reach customs before a two o'clock connection, and check heavy luggage.",
+  "titleYue": "申報表同入境處",
+  "titleEn": "A declaration, layover, and immigration",
+  "canDoYue": "你識問申報表、轉機停留、入境處同傳送帶。",
+  "canDoEn": "Ask about a declaration, a layover, immigration, and the carousel.",
   "minutes": 12,
   "hero": "assets/art/lessons/t21.webp",
   "cast": [
@@ -13,10 +13,10 @@
   ],
   "cefr": "B2",
   "lemmas": [
-    "boarding-pass-phrase",
-    "customs-noun",
-    "connection-noun",
-    "luggage-noun"
+    "declaration-noun",
+    "layover-noun",
+    "immigration-noun",
+    "carousel-noun"
   ],
   "next": null,
   "dialogue": [
@@ -24,203 +24,205 @@
       "id": "t21-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could you please check my boarding pass before the afternoon flight, and tell me the gate number?",
-      "glossYue": "可唔可以幫我睇吓登機證，下午班機之前話我知閘口號碼？",
+      "text": "Could you please check my declaration before the layover and tell me which belt?",
+      "glossYue": "轉機停留之前可唔可以睇吓我張申報表，話我知邊條帶？",
       "audio": "assets/audio/lines/t21-l1.mp3",
       "audioSlow": "assets/audio/lines/t21-l1-slow.mp3",
-      "say": "Could you please check my boarding pass before the afternoon flight, and tell me the gate number?",
+      "say": "Could you please check my declaration before the layover and tell me which belt?",
       "hideGloss": false
     },
     {
       "id": "t21-l2",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Your boarding pass is fine, and gate twelve is down the hall on the left after security.",
-      "glossYue": "你張登機證冇問題，十二號閘喺安檢之後走廊左邊。",
+      "text": "Your declaration is fine, and the layover belt is number three on the left side.",
+      "glossYue": "你張申報表冇問題，轉機停留嗰條帶係左邊三號。",
       "audio": "assets/audio/lines/t21-l2.mp3",
       "audioSlow": "assets/audio/lines/t21-l2-slow.mp3",
-      "say": "Your boarding pass is fine, and gate twelve is down the hall on the left after security.",
+      "say": "Your declaration is fine, and the layover belt is number three on the left side.",
       "hideGloss": false
     },
     {
       "id": "t21-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "If my afternoon connection leaves at two, how early should I reach customs with this one bag?",
-      "glossYue": "如果下午轉機兩點走，我應該幾早帶住呢個袋去海關？",
+      "text": "If the layover leaves at two, how early should I reach immigration with one bag?",
+      "glossYue": "如果轉機停留兩點走，我應該幾早帶住一個袋去入境處？",
       "audio": "assets/audio/lines/t21-l3.mp3",
       "audioSlow": "assets/audio/lines/t21-l3-slow.mp3",
-      "say": "If my afternoon connection leaves at two, how early should I reach customs with this one bag?",
+      "say": "If the layover leaves at two, how early should I reach immigration with one bag?",
       "hideGloss": false
     },
     {
       "id": "t21-l4",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Please reach customs by one o'clock, because your afternoon connection at two needs a spare half hour.",
-      "glossYue": "一點前去海關，因為下午兩點轉機要預半個鐘。",
+      "text": "Please reach immigration by one o'clock, because your layover at two needs extra time.",
+      "glossYue": "請一點前去入境處，因為你兩點嘅轉機停留要多啲時間。",
       "audio": "assets/audio/lines/t21-l4.mp3",
       "audioSlow": "assets/audio/lines/t21-l4-slow.mp3",
-      "say": "Please reach customs by one o'clock, because your afternoon connection at two needs a spare half hour.",
+      "say": "Please reach immigration by one o'clock, because your layover at two needs extra time.",
       "hideGloss": true
     },
     {
       "id": "t21-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Where should I take this heavy luggage if the connection desk sits past those two customs doors?",
-      "glossYue": "如果轉機櫃檯喺兩道海關門後面，我應該將重行李拿到邊？",
+      "text": "Where should I take this heavy bag if immigration sits past the carousel doors?",
+      "glossYue": "如果入境處喺傳送帶嗰度門後面，我應該將呢件重行李拿到邊？",
       "audio": "assets/audio/lines/t21-l5.mp3",
       "audioSlow": "assets/audio/lines/t21-l5-slow.mp3",
-      "say": "Where should I take this heavy luggage if the connection desk sits past those two customs doors?",
+      "say": "Where should I take this heavy bag if immigration sits past the carousel doors?",
       "hideGloss": true
     },
     {
       "id": "t21-l6",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Please take your luggage over to belt three, and that desk sits just past those same doors.",
-      "glossYue": "請將行李拿到三號帶，嗰個櫃檯就喺同一道門後面。",
+      "text": "Please take that heavy bag over to the carousel, and immigration sits past those doors.",
+      "glossYue": "請將嗰件重行李拿到傳送帶，入境處就喺嗰度門後面。",
       "audio": "assets/audio/lines/t21-l6.mp3",
       "audioSlow": "assets/audio/lines/t21-l6-slow.mp3",
-      "say": "Please take your luggage over to belt three, and that desk sits just past those same doors.",
+      "say": "Please take that heavy bag over to the carousel, and immigration sits past those doors.",
       "hideGloss": true
     },
     {
       "id": "t21-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can I keep one small bag with me, and check the big luggage at the connection desk?",
-      "glossYue": "我可唔可以帶住一個細袋，大件行李喺轉機櫃檯托運？",
+      "text": "Can I keep one small bag and check the big bag at the far carousel?",
+      "glossYue": "我可唔可以帶住一個細袋，大袋喺遠嘅傳送帶托運？",
       "audio": "assets/audio/lines/t21-l7.mp3",
       "audioSlow": "assets/audio/lines/t21-l7-slow.mp3",
-      "say": "Can I keep one small bag with me, and check the big luggage at the connection desk?",
+      "say": "Can I keep one small bag and check the big bag at the far carousel?",
       "hideGloss": true
     },
     {
       "id": "t21-l8",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Yes. You can keep the small bag, and check the big luggage here at that far desk.",
-      "glossYue": "可以。你帶住個細袋，大件行李喺遠啲嗰個櫃檯托運。",
+      "text": "You can keep the small case and check the big one at that far desk.",
+      "glossYue": "你可以帶住個細箱，大件喺遠啲嗰個櫃檯托運。",
       "audio": "assets/audio/lines/t21-l8.mp3",
       "audioSlow": "assets/audio/lines/t21-l8-slow.mp3",
-      "say": "Yes. You can keep the small bag, and check the big luggage here at that far desk.",
+      "say": "You can keep the small case and check the big one at that far desk.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Could you please check my boarding pass before the afternoon flight, and tell me the gate number? 呢句即係點？",
+      "prompt": "Could you please check my declaration before the layover and tell me which belt? 即係問緊咩？",
       "choices": [
-        "想睇登機證同閘口",
-        "想問手鏈報價",
-        "想批發票"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
       "answer": 0,
-      "explain": "boarding pass 係登機證。"
+      "explain": "跟住呢句嘅意思。"
     },
     {
-      "prompt": "If my afternoon connection leaves at two, how early should I reach customs with this one bag? 即係問緊咩？",
+      "prompt": "If the layover leaves at two, how early should I reach immigration with one bag? 即係問緊咩？",
       "choices": [
-        "問會議幾點",
-        "問幾早要到海關",
-        "問耳環幾多錢"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
-      "answer": 1,
-      "explain": "customs 係海關。connection 係轉機。"
+      "answer": 0,
+      "explain": "跟住呢句嘅意思。"
     },
     {
-      "prompt": "Where should I take this heavy luggage if the connection desk sits past those two customs doors? 即係問緊咩？",
+      "prompt": "Could you please check my declaration before the layover and tell me which belt? 即係問緊咩？",
       "choices": [
-        "問預算幾多",
-        "問擦亮劑喺邊",
-        "問重行李拿到邊"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
-      "answer": 2,
-      "explain": "luggage 係行李。"
+      "answer": 0,
+      "explain": "跟住呢句嘅意思。"
     }
   ],
   "chunks": [
     {
-      "pattern": "Could you please check my ___ pass before the afternoon flight, and tell me the gate number?",
-      "example": "Could you please check my boarding pass before the afternoon flight, and tell me the gate number?",
-      "glossYue": "睇登機證。",
-      "answer": "boarding",
+      "pattern": "Could you please check my ___ before the layover and tell me which belt?",
+      "example": "Could you please check my declaration before the layover and tell me which belt?",
+      "glossYue": "轉機停留之前可唔可以睇吓我張申報表，話我知邊條帶？",
+      "answer": "declaration",
       "choices": [
-        "boarding",
-        "customs",
-        "luggage"
+        "declaration",
+        "shirt",
+        "meter"
       ]
     },
     {
-      "pattern": "Please reach ___ by one o'clock, because your afternoon connection at two needs a spare half hour.",
-      "example": "Please reach customs by one o'clock, because your afternoon connection at two needs a spare half hour.",
-      "glossYue": "一點前去海關。",
-      "answer": "customs",
+      "pattern": "Could you please check my declaration before the ___ and tell me which belt?",
+      "example": "Could you please check my declaration before the layover and tell me which belt?",
+      "glossYue": "轉機停留之前可唔可以睇吓我張申報表，話我知邊條帶？",
+      "answer": "layover",
       "choices": [
-        "luggage",
-        "customs",
-        "boarding"
+        "layover",
+        "shirt",
+        "meter"
       ]
     },
     {
-      "pattern": "Can I keep one small bag with me, and check the big ___ at the connection desk?",
-      "example": "Can I keep one small bag with me, and check the big luggage at the connection desk?",
-      "glossYue": "托運行李。",
-      "answer": "luggage",
+      "pattern": "If the layover leaves at two, how early should I reach ___ with one bag?",
+      "example": "If the layover leaves at two, how early should I reach immigration with one bag?",
+      "glossYue": "如果轉機停留兩點走，我應該幾早帶住一個袋去入境處？",
+      "answer": "immigration",
       "choices": [
-        "luggage",
-        "customs",
-        "connection"
+        "immigration",
+        "shirt",
+        "meter"
       ]
     }
   ],
   "shadow": {
     "lineId": "t21-l1",
-    "hint": "Could you please check my boarding pass before the afternoon flight, and tell me the gate number?"
+    "hint": "Could you please check my declaration before the layover and tell me which belt?"
   },
   "build": [
     {
       "type": "choice",
-      "promptYue": "你問下午班機之前睇登機證同閘口。你點講？",
+      "promptYue": "你點講？",
       "choices": [
-        "Could you please check my boarding pass before the afternoon flight, and tell me the gate number?",
-        "If my afternoon connection leaves at two, how early should I reach customs with this one bag?",
-        "Where should I take this heavy luggage if the connection desk sits past those two customs doors?"
+        "Could you please check my declaration before the layover and tell me which belt?",
+        "If the layover leaves at two, how early should I reach immigration with one bag?",
+        "Where should I take this heavy bag if immigration sits past the carousel doors?"
       ],
       "answer": 0,
-      "explain": "講 boarding pass。"
+      "explain": "用返課入面第一句。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "reach",
-        "customs",
-        "early"
+        "could",
+        "you",
+        "please",
+        "check"
       ],
       "answer": [
-        "reach",
-        "customs",
-        "early"
+        "could",
+        "you",
+        "please",
+        "check"
       ]
     }
   ],
   "roleplay": {
     "you": "tom",
-    "intro": "你識睇登機證、趕兩點轉機之前去海關，同埋托運重行李。",
+    "intro": "你扮 Tom。用課入面嘅字答。",
     "turns": [
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Your boarding pass is fine, and gate twelve is down the hall on the left after security.",
+        "line": "Your declaration is fine, and the layover belt is number three on the left side.",
         "audio": "assets/audio/lines/t21-l2.mp3",
         "audioSlow": "assets/audio/lines/t21-l2-slow.mp3",
-        "expect": "If my afternoon connection leaves at two, how early should I reach customs with this one bag?",
+        "expect": "If the layover leaves at two, how early should I reach immigration with one bag?",
         "keywords": [
-          "connection",
-          "customs"
+          "layover",
+          "immigration"
         ],
         "modelAudio": "assets/audio/lines/t21-l3.mp3",
         "modelSlow": "assets/audio/lines/t21-l3-slow.mp3"
@@ -228,13 +230,13 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Please reach customs by one o'clock, because your afternoon connection at two needs a spare half hour.",
+        "line": "Please reach immigration by one o'clock, because your layover at two needs extra time.",
         "audio": "assets/audio/lines/t21-l4.mp3",
         "audioSlow": "assets/audio/lines/t21-l4-slow.mp3",
-        "expect": "Where should I take this heavy luggage if the connection desk sits past those two customs doors?",
+        "expect": "Where should I take this heavy bag if immigration sits past the carousel doors?",
         "keywords": [
-          "luggage",
-          "connection"
+          "immigration",
+          "carousel"
         ],
         "modelAudio": "assets/audio/lines/t21-l5.mp3",
         "modelSlow": "assets/audio/lines/t21-l5-slow.mp3"
@@ -242,12 +244,12 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Please take your luggage over to belt three, and that desk sits just past those same doors.",
+        "line": "Please take that heavy bag over to the carousel, and immigration sits past those doors.",
         "audio": "assets/audio/lines/t21-l6.mp3",
         "audioSlow": "assets/audio/lines/t21-l6-slow.mp3",
-        "expect": "Can I keep one small bag with me, and check the big luggage at the connection desk?",
+        "expect": "Can I keep one small bag and check the big bag at the far carousel?",
         "keywords": [
-          "luggage",
+          "carousel",
           "bag"
         ],
         "modelAudio": "assets/audio/lines/t21-l7.mp3",
@@ -259,30 +261,30 @@
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear in this lesson.",
-      "lemma": "customs-noun",
+      "lemma": "declaration-noun",
       "choices": [
-        "luggage",
-        "customs",
-        "connection"
+        "Friday",
+        "declaration",
+        "receipt"
       ],
       "answer": 1
     },
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear in this lesson.",
-      "lemma": "connection-noun",
+      "lemma": "carousel-noun",
       "choices": [
-        "boarding",
-        "luggage",
-        "connection"
+        "Friday",
+        "receipt",
+        "carousel"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "Could you please check my boarding pass before the afternoon flight, and tell me the gate number? 呢句入面，邊個意思先啱？",
+      "prompt": "Could you please check my declaration before the layover and tell me which belt? 呢句入面，邊個意思先啱？",
       "choices": [
-        "登機證",
+        "申報表",
         "發票",
         "手鏈"
       ],
@@ -290,43 +292,44 @@
     },
     {
       "type": "meaning",
-      "prompt": "Please reach customs by one o'clock, because your afternoon connection at two needs a spare half hour. 呢句入面，邊個意思先啱？",
+      "prompt": "Please take that heavy bag over to the carousel, and immigration sits past those doors. 呢句入面，邊個意思先啱？",
       "choices": [
-        "行李",
+        "手鏈",
         "發票",
-        "轉機"
+        "傳送帶"
       ],
       "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "Please reach ___ by one o'clock, because your afternoon connection at two needs a spare half hour. 呢句入面，邊個字先啱？",
+      "prompt": "If the layover leaves at two, how early should I reach ___ with one bag? 呢句入面，邊個字先啱？",
       "choices": [
         "luggage",
-        "customs",
+        "immigration",
         "boarding"
       ],
       "answer": 1
     }
   ],
   "sound": {
-    "ipa": "/ʌ/",
-    "title": "customs 入面嗰個音",
-    "note": "customs 有 /ʌ/。boarding 冇。",
+    "ipa": "/ɪ/",
+    "title": "declaration 入面嗰個音",
+    "note": "declaration 同 layover 唔同。",
     "pairs": [
       {
-        "a": "customs-noun",
-        "b": "luggage-noun"
+        "a": "declaration-noun",
+        "b": "layover-noun"
       },
       {
-        "a": "connection-noun",
-        "b": "boarding-pass-phrase"
+        "a": "immigration-noun",
+        "b": "carousel-noun"
       }
     ],
     "drill": [
-      "boarding-pass-phrase",
-      "customs-noun",
-      "connection-noun"
+      "declaration-noun",
+      "layover-noun",
+      "immigration-noun",
+      "carousel-noun"
     ]
   }
 }

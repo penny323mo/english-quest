@@ -87,11 +87,11 @@
       "id": "j15-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Yes we can make the ring half a size larger under the full warranty.",
-      "glossYue": "係，保養可以將戒指改大半碼。",
+      "text": "We can make the ring half a size larger, and you collect it Saturday.",
+      "glossYue": "戒指可以改大半碼，星期六可以取。",
       "audio": "assets/audio/lines/j15-l4.mp3",
       "audioSlow": "assets/audio/lines/j15-l4-slow.mp3",
-      "say": "Yes we can make the ring half a size larger under the full warranty.",
+      "say": "We can make the ring half a size larger, and you collect it Saturday.",
       "hideGloss": true
     },
     {
@@ -131,11 +131,11 @@
       "id": "j15-l8",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Please bring that receipt with you on Saturday.",
-      "glossYue": "請星期六帶埋張收據，開大咗嘅戒指會準備好。",
+      "text": "Please bring that receipt with you.",
+      "glossYue": "請帶埋張收據。",
       "audio": "assets/audio/lines/j15-l8.mp3",
       "audioSlow": "assets/audio/lines/j15-l8-slow.mp3",
-      "say": "Please bring that receipt with you on Saturday.",
+      "say": "Please bring that receipt with you.",
       "hideGloss": true
     }
   ],
@@ -185,7 +185,7 @@
     },
     {
       "pattern": "Yes we can make the ring half a size larger under the full ___.",
-      "example": "Yes we can make the ring half a size larger under the full warranty.",
+      "example": "We can make the ring half a size larger, and you collect it Saturday.",
       "glossYue": "保養可以改大半碼。",
       "answer": "warranty",
       "choices": [
@@ -256,7 +256,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "Yes we can make the ring half a size larger under the full warranty.",
+        "line": "We can make the ring half a size larger, and you collect it Saturday.",
         "audio": "assets/audio/lines/j15-l4.mp3",
         "audioSlow": "assets/audio/lines/j15-l4-slow.mp3",
         "expect": "How long does the warranty work take, and may I collect it on Saturday?",

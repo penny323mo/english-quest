@@ -1,10 +1,10 @@
 {
   "id": "R17",
   "unit": "R",
-  "titleYue": "私房訂座同按金",
-  "titleEn": "A private-room booking",
-  "canDoYue": "你識改訂位、問窗邊位同按金、同埋話畀廚房知有人對果仁過敏。",
-  "canDoEn": "Change a reservation, ask the deposit for a private room, and report a nut allergy.",
+  "titleYue": "宴會、取消訂位同小費",
+  "titleEn": "A banquet, cancellation, and gratuity",
+  "canDoYue": "你識訂宴會、問取消訂位、附加費同小費。",
+  "canDoEn": "Book a banquet and ask about the cancellation, the surcharge, and the gratuity.",
   "minutes": 12,
   "hero": "assets/art/lessons/r17.webp",
   "cast": [
@@ -13,10 +13,10 @@
   ],
   "cefr": "B2",
   "lemmas": [
-    "reservation-noun",
-    "window-noun",
-    "deposit-noun",
-    "allergy-noun"
+    "banquet-noun",
+    "cancellation-noun",
+    "surcharge-noun",
+    "gratuity-noun"
   ],
   "next": "W14",
   "dialogue": [
@@ -24,207 +24,205 @@
       "id": "r17-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I would like to change the reservation to Saturday, and we need a quiet table by the window.",
-      "glossYue": "我想將訂位改到星期六，我哋要一張窗邊嘅靜枱。",
+      "text": "Could we book the banquet from six if the cancellation fee stays under fifty dollars?",
+      "glossYue": "如果取消訂位費低過五十蚊，我哋可唔可以六點起訂宴會？",
       "audio": "assets/audio/lines/r17-l1.mp3",
       "audioSlow": "assets/audio/lines/r17-l1-slow.mp3",
-      "say": "I would like to change the reservation to Saturday, and we need a quiet table by the window.",
+      "say": "Could we book the banquet from six if the cancellation fee stays under fifty dollars?",
       "hideGloss": false
     },
     {
       "id": "r17-l2",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "I can change that reservation for Saturday evening, and a window table is free at seven o'clock.",
-      "glossYue": "我可以改星期六晚嘅訂位，七點有張窗邊枱。",
+      "text": "I can book that banquet from six, and the cancellation fee is forty dollars flat.",
+      "glossYue": "我可以六點起訂嗰個宴會，取消訂位費實收四十蚊。",
       "audio": "assets/audio/lines/r17-l2.mp3",
       "audioSlow": "assets/audio/lines/r17-l2-slow.mp3",
-      "say": "I can change that reservation for Saturday evening, and a window table is free at seven o'clock.",
+      "say": "I can book that banquet from six, and the cancellation fee is forty dollars flat.",
       "hideGloss": false
     },
     {
       "id": "r17-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "How much is the deposit if we keep the private room for three full hours after six?",
-      "glossYue": "六點之後私房再用足三個鐘，按金要幾多？",
+      "text": "How much is the surcharge if we keep the banquet for three hours after six?",
+      "glossYue": "六點之後宴會再用足三個鐘，附加費要幾多？",
       "audio": "assets/audio/lines/r17-l3.mp3",
       "audioSlow": "assets/audio/lines/r17-l3-slow.mp3",
-      "say": "How much is the deposit if we keep the private room for three full hours after six?",
+      "say": "How much is the surcharge if we keep the banquet for three hours after six?",
       "hideGloss": false
     },
     {
       "id": "r17-l4",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "The deposit is two hundred dollars, and it holds the private room until seven on Saturday.",
-      "glossYue": "按金二百蚊，星期六會留住間私房直到七點。",
+      "text": "The surcharge is eighty dollars, and it keeps the banquet room until nine after six.",
+      "glossYue": "附加費八十蚊，六點之後會留住宴會廳直到九點。",
       "audio": "assets/audio/lines/r17-l4.mp3",
       "audioSlow": "assets/audio/lines/r17-l4-slow.mp3",
-      "say": "The deposit is two hundred dollars, and it holds the private room until seven on Saturday.",
+      "say": "The surcharge is eighty dollars, and it keeps the banquet room until nine after six.",
       "hideGloss": true
     },
     {
       "id": "r17-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "One guest has a serious nut allergy. Can the kitchen keep nuts off all the shared dishes?",
-      "glossYue": "有位客人對果仁嚴重過敏。廚房可唔可以全部共享碟都唔放果仁？",
+      "text": "Is the service gratuity included for our party when the surcharge covers three full hours?",
+      "glossYue": "附加費包咗三個鐘嗰陣，我哋呢檯包唔包小費？",
       "audio": "assets/audio/lines/r17-l5.mp3",
       "audioSlow": "assets/audio/lines/r17-l5-slow.mp3",
-      "say": "One guest has a serious nut allergy. Can the kitchen keep nuts off all the shared dishes?",
+      "say": "Is the service gratuity included for our party when the surcharge covers three full hours?",
       "hideGloss": true
     },
     {
       "id": "r17-l6",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "The kitchen will keep nuts off those dishes, and I will note the allergy on the order.",
-      "glossYue": "廚房嗰幾碟唔會放果仁，我會喺單上記低過敏。",
+      "text": "The gratuity is included for your whole party, and the surcharge covers three full hours.",
+      "glossYue": "你哋成檯包咗小費，附加費已經包住三個鐘。",
       "audio": "assets/audio/lines/r17-l6.mp3",
       "audioSlow": "assets/audio/lines/r17-l6-slow.mp3",
-      "say": "The kitchen will keep nuts off those dishes, and I will note the allergy on the order.",
+      "say": "The gratuity is included for your whole party, and the surcharge covers three full hours.",
       "hideGloss": true
     },
     {
       "id": "r17-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could we move closer to the window if the deposit is paid and the room is ready?",
-      "glossYue": "按金畀咗同房間準備好，可唔可以搬近啲窗？",
+      "text": "What time does the cancellation rule start if we drop the whole party after four?",
+      "glossYue": "如果四點之後成檯唔嚟，取消訂位規則幾點開始？",
       "audio": "assets/audio/lines/r17-l7.mp3",
       "audioSlow": "assets/audio/lines/r17-l7-slow.mp3",
-      "say": "Could we move closer to the window if the deposit is paid and the room is ready?",
+      "say": "What time does the cancellation rule start if we drop the whole party after four?",
       "hideGloss": true
     },
     {
       "id": "r17-l8",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Yes. I can move you closer to the window, and the paid deposit stays on the booking.",
-      "glossYue": "可以。我可以幫你搬近窗，已付按金留喺訂座度。",
+      "text": "The cancellation rule starts at four, and the whole party can leave after that.",
+      "glossYue": "取消訂位規則四點開始，成檯可以喺之後離開。",
       "audio": "assets/audio/lines/r17-l8.mp3",
       "audioSlow": "assets/audio/lines/r17-l8-slow.mp3",
-      "say": "Yes. I can move you closer to the window, and the paid deposit stays on the booking.",
+      "say": "The cancellation rule starts at four, and the whole party can leave after that.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "I would like to change the reservation to Saturday, and we need a quiet table by the window. 呢句即係點？",
+      "prompt": "Could we book the banquet from six if the cancellation fee stays under fifty dollars? 即係問緊咩？",
       "choices": [
-        "想改訂位又要窗邊",
-        "安檢要拎電腦",
-        "吊墜要估價"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
       "answer": 0,
-      "explain": "reservation 係訂位。window 係窗。"
+      "explain": "跟住呢句嘅意思。"
     },
     {
-      "prompt": "How much is the deposit if we keep the private room for three full hours after six? 即係問緊咩？",
+      "prompt": "How much is the surcharge if we keep the banquet for three hours after six? 即係問緊咩？",
       "choices": [
-        "問證書收唔收相",
-        "問私房按金幾多",
-        "問閘口行幾耐"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
-      "answer": 1,
-      "explain": "deposit 係按金。"
+      "answer": 0,
+      "explain": "跟住呢句嘅意思。"
     },
     {
-      "prompt": "One guest has a serious nut allergy. Can the kitchen keep nuts off all the shared dishes? 即係問緊咩？",
+      "prompt": "Could we book the banquet from six if the cancellation fee stays under fifty dollars? 即係問緊咩？",
       "choices": [
-        "問第二次估價幾錢",
-        "問接駁車去邊",
-        "問廚房可唔可以拿走果仁"
+        "用課入面嗰個意思",
+        "問今日天氣",
+        "問鎖匙喺邊"
       ],
-      "answer": 2,
-      "explain": "allergy 係過敏。"
+      "answer": 0,
+      "explain": "跟住呢句嘅意思。"
     }
   ],
   "chunks": [
     {
-      "pattern": "I would like to change the ___ to Saturday, and we need a quiet table by the window.",
-      "example": "I would like to change the reservation to Saturday, and we need a quiet table by the window.",
-      "glossYue": "改訂位，要窗邊。",
-      "answer": "reservation",
+      "pattern": "Could we book the ___ from six if the cancellation fee stays under fifty dollars?",
+      "example": "Could we book the banquet from six if the cancellation fee stays under fifty dollars?",
+      "glossYue": "如果取消訂位費低過五十蚊，我哋可唔可以六點起訂宴會？",
+      "answer": "banquet",
       "choices": [
-        "reservation",
-        "Friday",
-        "receipt"
+        "banquet",
+        "shirt",
+        "meter"
       ]
     },
     {
-      "pattern": "How much is the ___ if we keep the private room for three full hours after six?",
-      "example": "How much is the deposit if we keep the private room for three full hours after six?",
-      "glossYue": "問按金幾多。",
-      "answer": "deposit",
+      "pattern": "Could we book the banquet from six if the ___ fee stays under fifty dollars?",
+      "example": "Could we book the banquet from six if the cancellation fee stays under fifty dollars?",
+      "glossYue": "如果取消訂位費低過五十蚊，我哋可唔可以六點起訂宴會？",
+      "answer": "cancellation",
       "choices": [
-        "deposit",
-        "towel",
-        "passport"
+        "cancellation",
+        "shirt",
+        "meter"
       ]
     },
     {
-      "pattern": "One guest has a serious nut ___. Can the kitchen keep nuts off all the shared dishes?",
-      "example": "One guest has a serious nut allergy. Can the kitchen keep nuts off all the shared dishes?",
-      "glossYue": "話有人對果仁過敏。",
-      "answer": "allergy",
+      "pattern": "How much is the ___ if we keep the banquet for three hours after six?",
+      "example": "How much is the surcharge if we keep the banquet for three hours after six?",
+      "glossYue": "六點之後宴會再用足三個鐘，附加費要幾多？",
+      "answer": "surcharge",
       "choices": [
-        "allergy",
-        "deadline",
-        "oyster"
+        "surcharge",
+        "shirt",
+        "meter"
       ]
     }
   ],
   "shadow": {
     "lineId": "r17-l1",
-    "hint": "I would like to change the reservation to Saturday, and we need a quiet table by the window."
+    "hint": "Could we book the banquet from six if the cancellation fee stays under fifty dollars?"
   },
   "build": [
     {
       "type": "choice",
-      "promptYue": "你話想改星期六訂位，要窗邊。你點講？",
+      "promptYue": "你點講？",
       "choices": [
-        "I would like to change the reservation to Saturday, and we need a quiet table by the window.",
-        "How much is the deposit if we keep the private room for three full hours after six?",
-        "One guest has a serious nut allergy. Can the kitchen keep nuts off all the shared dishes?"
+        "Could we book the banquet from six if the cancellation fee stays under fifty dollars?",
+        "How much is the surcharge if we keep the banquet for three hours after six?",
+        "Is the service gratuity included for our party when the surcharge covers three full hours?"
       ],
       "answer": 0,
-      "explain": "講 reservation。"
+      "explain": "用返課入面第一句。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "a",
-        "table",
-        "by",
-        "the",
-        "window"
+        "could",
+        "we",
+        "book",
+        "the"
       ],
       "answer": [
-        "a",
-        "table",
-        "by",
-        "the",
-        "window"
+        "could",
+        "we",
+        "book",
+        "the"
       ]
     }
   ],
   "roleplay": {
     "you": "tom",
-    "intro": "你改訂位。同 Mira 問窗邊同按金。可以講：reservation、deposit。",
+    "intro": "你扮 Tom。用課入面嘅字答。",
     "turns": [
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "I can change that reservation for Saturday evening, and a window table is free at seven o'clock.",
+        "line": "I can book that banquet from six, and the cancellation fee is forty dollars flat.",
         "audio": "assets/audio/lines/r17-l2.mp3",
         "audioSlow": "assets/audio/lines/r17-l2-slow.mp3",
-        "expect": "How much is the deposit if we keep the private room for three full hours after six?",
+        "expect": "How much is the surcharge if we keep the banquet for three hours after six?",
         "keywords": [
-          "deposit",
-          "room"
+          "banquet",
+          "surcharge"
         ],
         "modelAudio": "assets/audio/lines/r17-l3.mp3",
         "modelSlow": "assets/audio/lines/r17-l3-slow.mp3"
@@ -232,13 +230,13 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "The deposit is two hundred dollars, and it holds the private room until seven on Saturday.",
+        "line": "The surcharge is eighty dollars, and it keeps the banquet room until nine after six.",
         "audio": "assets/audio/lines/r17-l4.mp3",
         "audioSlow": "assets/audio/lines/r17-l4-slow.mp3",
-        "expect": "One guest has a serious nut allergy. Can the kitchen keep nuts off all the shared dishes?",
+        "expect": "Is the service gratuity included for our party when the surcharge covers three full hours?",
         "keywords": [
-          "allergy",
-          "nuts"
+          "surcharge",
+          "gratuity"
         ],
         "modelAudio": "assets/audio/lines/r17-l5.mp3",
         "modelSlow": "assets/audio/lines/r17-l5-slow.mp3"
@@ -246,13 +244,13 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "The kitchen will keep nuts off those dishes, and I will note the allergy on the order.",
+        "line": "The gratuity is included for your whole party, and the surcharge covers three full hours.",
         "audio": "assets/audio/lines/r17-l6.mp3",
         "audioSlow": "assets/audio/lines/r17-l6-slow.mp3",
-        "expect": "Could we move closer to the window if the deposit is paid and the room is ready?",
+        "expect": "What time does the cancellation rule start if we drop the whole party after four?",
         "keywords": [
-          "window",
-          "deposit"
+          "cancellation",
+          "time"
         ],
         "modelAudio": "assets/audio/lines/r17-l7.mp3",
         "modelSlow": "assets/audio/lines/r17-l7-slow.mp3"
@@ -263,10 +261,10 @@
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear in this lesson.",
-      "lemma": "reservation-noun",
+      "lemma": "banquet-noun",
       "choices": [
         "Friday",
-        "reservation",
+        "banquet",
         "receipt"
       ],
       "answer": 1
@@ -274,64 +272,64 @@
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear in this lesson.",
-      "lemma": "window-noun",
+      "lemma": "gratuity-noun",
       "choices": [
-        "passport",
-        "window",
-        "deadline"
+        "Friday",
+        "gratuity",
+        "receipt"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "I would like to change the reservation to Saturday, and we need a quiet table by the window. 呢句入面，邊個意思先啱？",
+      "prompt": "The cancellation rule starts at four, and the whole party can leave after that. 呢句入面，邊個意思先啱？",
       "choices": [
         "鐘",
-        "訂位",
+        "取消訂位",
         "鞋"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "How much is the deposit if we keep the private room for three full hours after six? 呢句入面，邊個意思先啱？",
+      "prompt": "Is the service gratuity included for our party when the surcharge covers three full hours? 呢句入面，邊個意思先啱？",
       "choices": [
-        "窗",
         "鞋",
-        "按金"
+        "收據",
+        "小費"
       ],
       "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "One guest has a serious nut ___. Can the kitchen keep nuts off all the shared dishes? 呢句入面，邊個字先啱？",
+      "prompt": "How much is the ___ if we keep the banquet for three hours after six? 呢句入面，邊個字先啱？",
       "choices": [
         "Friday",
         "receipt",
-        "allergy"
+        "surcharge"
       ],
       "answer": 2
     }
   ],
   "sound": {
-    "ipa": "/eɪ/",
-    "title": "table 入面嗰個音",
-    "note": "table 有 /eɪ/。window 冇。",
+    "ipa": "/ɪ/",
+    "title": "banquet 入面嗰個音",
+    "note": "banquet 同 cancellation 唔同。",
     "pairs": [
       {
-        "a": "reservation-noun",
-        "b": "window-noun"
+        "a": "banquet-noun",
+        "b": "cancellation-noun"
       },
       {
-        "a": "deposit-noun",
-        "b": "allergy-noun"
+        "a": "surcharge-noun",
+        "b": "gratuity-noun"
       }
     ],
     "drill": [
-      "reservation-noun",
-      "window-noun",
-      "deposit-noun",
-      "allergy-noun"
+      "banquet-noun",
+      "cancellation-noun",
+      "surcharge-noun",
+      "gratuity-noun"
     ]
   }
 }

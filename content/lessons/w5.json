@@ -87,11 +87,11 @@
       "id": "w5-l6",
       "speaker": "ren",
       "speakerLabel": "Ren",
-      "text": "Sorry. A replacement or compensation is possible.",
-      "glossYue": "唔好意思。可以換貨或者賠償。",
+      "text": "If the clasp cannot be repaired, a replacement or compensation is possible.",
+      "glossYue": "如果個扣修唔好，可以換貨或者賠償。",
       "audio": "assets/audio/lines/w5-l6.mp3",
       "audioSlow": "assets/audio/lines/w5-l6-slow.mp3",
-      "say": "Sorry. A replacement or compensation is possible.",
+      "say": "If the clasp cannot be repaired, a replacement or compensation is possible.",
       "hideGloss": true
     },
     {
@@ -254,7 +254,7 @@
       {
         "partner": "Ren",
         "partnerId": "ren",
-        "line": "Sorry. A replacement or compensation is possible.",
+        "line": "If the clasp cannot be repaired, a replacement or compensation is possible.",
         "audio": "assets/audio/lines/w5-l6.mp3",
         "audioSlow": "assets/audio/lines/w5-l6-slow.mp3",
         "expect": "The clasp on the box broke. That's the only problem.",

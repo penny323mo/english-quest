@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import fs from "node:fs";
 import path from "node:path";
 import { spawnSync } from "node:child_process";
@@ -381,8 +382,9 @@ test("the app has a mic fallback and does not phone home", () => {
   const vocab = fs.readFileSync(path.join(root, "web/src/Vocab.tsx"), "utf8")
     + fs.readFileSync(path.join(root, "web/src/pages.tsx"), "utf8");
   assert.match(vocab, /生字回顧/);
-  assert.match(vocab, /<details/);
-  assert.match(vocab, /用法/);
+  assert.match(vocab, /用法 USAGE/);
+  assert.match(vocab, /例句 EXAMPLES/);
+  assert.equal(fs.readFileSync(path.join(root, "web/src/Vocab.tsx"), "utf8").includes("<details"), false);
   assert.match(fs.readFileSync(path.join(root, "web/src/styles.css"), "utf8"), /#2F9E44/);
   assert.equal(fs.readFileSync(path.join(root, "web/src/styles.css"), "utf8").includes("#58CC02"), false);
   const app = fs.readFileSync(path.join(root, "web/src/App.tsx"), "utf8")
@@ -1507,6 +1509,117 @@ test("speaking shows the mic state and a no-penalty retry", () => {
   assert.match(src, /可以比較/);
   assert.match(src, /再錄一次/);
   assert.match(src, /跳過呢題/);
+});
+
+test("an example skeleton is shared by at most three lemmas", () => {
+  function tokens(sample) {
+    return String(sample).toLowerCase().replace(/[.?!,;:"']/g, " ").replace(/-/g, " ").split(/\s+/).filter(Boolean);
+  }
+  function sameWord(hay, needle) {
+    if (hay === needle || hay === `${needle}s` || hay === `${needle}es`) return true;
+    if (hay === `${needle}ed` || hay === `${needle}d` || hay === `${needle}ing`) return true;
+    const last = needle[needle.length - 1];
+    return hay === `${needle}${last}ed`;
+  }
+  function skeleton(text, lemma) {
+    const needle = tokens(lemma);
+    const hay = tokens(text);
+    let cut = null;
+    outer: for (let i = 0; i <= hay.length - needle.length; i += 1) {
+      for (let j = 0; j < needle.length; j += 1) if (!sameWord(hay[i + j], needle[j])) continue outer;
+      cut = hay.slice(0, i).concat(hay.slice(i + needle.length));
+      break;
+    }
+    const left = (cut || hay).filter((tok) => tok !== "a" && tok !== "an" && tok !== "the");
+    if (left.length < 2) return null;
+    return left.join(" ");
+  }
+  const groups = new Map();
+  for (const item of lex.items) {
+    const samples = [...(item.examples || []).map((example) => example.en), ...(item.miniDialogue || []).map((turn) => turn.en)];
+    if (!samples.length && item.example) samples.push(item.example);
+    for (const sample of samples) {
+      const key = skeleton(sample, item.lemma);
+      if (!key) continue;
+      if (!groups.has(key)) groups.set(key, new Set());
+      groups.get(key).add(item.id);
+    }
+  }
+  for (const [key, ids] of groups) assert.ok(ids.size <= 3, `${key} x${ids.size}`);
+});
+
+test("a changed english line on the gloss-checked scenes changes the gloss", () => {
+  const fixture = JSON.parse(fs.readFileSync(path.join(root, "tests/fixtures/gloss-hashes.json"), "utf8"));
+  const byLine = new Map(lines.map((line) => [line.id, line]));
+  for (const lessonId of ["W8", "W5", "D3", "R6", "T6", "R9"]) {
+    const lesson = lessons.find((row) => row.id === lessonId);
+    for (const line of lesson.dialogue) {
+      const stored = fixture[line.id];
+      assert.ok(stored, line.id);
+      const row = byLine.get(line.id);
+      assert.equal(row.text, line.text, line.id);
+      assert.equal(row.glossYue, line.glossYue, line.id);
+      const hash = createHash("sha256").update(line.text).digest("hex");
+      if (hash !== stored.en) assert.notEqual(line.glossYue, stored.glossYue, line.id);
+    }
+  }
+});
+
+test("a studied meaning item has at most one choice whose lemma is in the line", () => {
+  function tokens(sample) {
+    return String(sample).toLowerCase().replace(/[.?!,;:"']/g, " ").replace(/-/g, " ").split(/\s+/).filter(Boolean);
+  }
+  function sameWord(hay, needle) {
+    if (hay === needle || hay === `${needle}s` || hay === `${needle}es`) return true;
+    if (hay === `${needle}ed` || hay === `${needle}d` || hay === `${needle}ing`) return true;
+    const last = needle[needle.length - 1];
+    return hay === `${needle}${last}ed`;
+  }
+  function hasContig(text, lemma) {
+    const needle = tokens(lemma);
+    const hay = tokens(text);
+    outer: for (let i = 0; i <= hay.length - needle.length; i += 1) {
+      for (let j = 0; j < needle.length; j += 1) if (!sameWord(hay[i + j], needle[j])) continue outer;
+      return true;
+    }
+    return false;
+  }
+  for (const lesson of lessons) {
+    for (const item of lesson.quiz) {
+      if (item.type !== "meaning" || !String(item.prompt || "").includes("呢句入面")) continue;
+      const line = lesson.dialogue.find((row) => item.prompt.includes(row.text));
+      assert.ok(line, lesson.id);
+      const fits = item.choices.filter((choice) => lex.items.some((row) => row.glossYue === choice && hasContig(line.text, row.lemma)));
+      if (!fits.length) continue;
+      assert.deepEqual(fits, [item.choices[item.answer]], `${lesson.id} ${line.id} ${fits.join(",")}`);
+    }
+  }
+});
+
+test("a Yes reply does not echo three content words, and a line does not repeat a word", () => {
+  const func = new Set("a an the i you we they he she it my your our is are was were be been am have has had do does did will would can could should may might to of in on at for with and or but if so not this that these those me him her them us please just very still also then there here from as about into".split(" "));
+  const echoAllow = new Set(["j20-l8", "r15-l2", "r15-l4", "r15-l8", "r16-l4", "r16-l6", "d14-l2", "d14-l4", "d14-l6", "t18-l4", "w12-l4", "w12-l6"]);
+  const numbers = new Set("one two three four five six seven eight nine ten eleven twelve".split(" "));
+  function content(text) {
+    return new Set((text.toLowerCase().match(/[a-z']+/g) || []).filter((tok) => tok.length > 2 && !func.has(tok)));
+  }
+  for (const lesson of lessons) {
+    const main = lesson.dialogue;
+    for (let i = 1; i < main.length; i += 1) {
+      const reply = main[i].text.trim();
+      if (!/^Yes\.\s+/.test(reply) || echoAllow.has(main[i].id)) continue;
+      const rest = reply.replace(/^Yes\.\s+/, "");
+      const shared = [...content(rest)].filter((tok) => content(main[i - 1].text).has(tok));
+      assert.ok(shared.length < 3, `${main[i].id} ${shared.join(",")}`);
+    }
+    for (const line of main) {
+      const toks = line.text.match(/[A-Za-z']+/g) || [];
+      for (let i = 1; i < toks.length; i += 1) {
+        if (toks[i].toLowerCase() !== toks[i - 1].toLowerCase()) continue;
+        assert.ok(numbers.has(toks[i].toLowerCase()), `${line.id} ${toks[i]}`);
+      }
+    }
+  }
 });
 
 test("round 49 heroes fill the frame", () => {

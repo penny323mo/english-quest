@@ -84,11 +84,11 @@
       "id": "t19-l4",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Yes. A quieter suite is free upstairs, away from that hallway.",
-      "glossYue": "可以。樓上有間靜啲嘅房，遠離走廊。",
+      "text": "A quieter suite is free upstairs, away from that hallway.",
+      "glossYue": "樓上有間靜啲嘅房，遠離走廊。",
       "audio": "assets/audio/lines/t19-l4.mp3",
       "audioSlow": "assets/audio/lines/t19-l4-slow.mp3",
-      "say": "Yes. A quieter suite is free upstairs, away from that hallway.",
+      "say": "A quieter suite is free upstairs, away from that hallway.",
       "hideGloss": false
     },
     {
@@ -157,7 +157,7 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Yes. A quieter suite is free upstairs, away from that hallway.",
+        "line": "A quieter suite is free upstairs, away from that hallway.",
         "audio": "assets/audio/lines/t19-l4.mp3",
         "audioSlow": "assets/audio/lines/t19-l4-slow.mp3",
         "expect": "Can that new room face the harbor instead of the street?",
@@ -206,7 +206,7 @@
       "explain": "維修。"
     },
     {
-      "prompt": "Yes. A quieter suite is free upstairs, away from that hallway. 呢句即係點？",
+      "prompt": "A quieter suite is free upstairs, away from that hallway. 呢句即係點？",
       "choices": [
         "維修",
         "套房",
@@ -241,7 +241,7 @@
     },
     {
       "pattern": "Yes. A quieter suite is free upstairs, away from that ___.",
-      "example": "Yes. A quieter suite is free upstairs, away from that hallway.",
+      "example": "A quieter suite is free upstairs, away from that hallway.",
       "glossYue": "遠離走廊。",
       "answer": "hallway",
       "choices": [
@@ -319,10 +319,10 @@
     },
     {
       "type": "meaning",
-      "prompt": "Yes. A quieter suite is free upstairs, away from that hallway. 呢句入面，邊個意思先啱？",
+      "prompt": "A quieter suite is free upstairs, away from that hallway. 呢句入面，邊個意思先啱？",
       "choices": [
         "嘈音",
-        "套房",
+        "收據",
         "走廊"
       ],
       "answer": 2
