@@ -151,6 +151,13 @@
 - **Dialogue beats:** Wedding date inside the bracelet → Twelve characters → Twelfth of June 2021 and initials G and M → Fourteen characters, two over → Date and initials without dots → Plain font free, script font fifty dollars → Check the engraving text → Sign the form, ready in three days
 - **Coherence:** the date is the twelfth of June 2021. Initials are G and M. 12.06.2021 beside G and M is fourteen characters, two over the twelve limit. Dots come off. Plain font is free. The guest checks the engraving text before it is cut, signs the form, and collects it in three days.
 
+### J22 — Custom engraving rush / 趕急刻字 · B1 · SHIPPED
+- **Goals:** Ask to rush gold-bracelet lettering before Saturday morning, hear that plain lettering finishes in time for the wedding, check one proof that evening, and ask the rush fee for one change.
+- **Vocab:** rush, lettering, proof, wedding
+- **Grammar:** Could you rush the lettering? Will plain lettering finish in time?
+- **Dialogue beats:** Rush the bracelet → Saturday morning → Plain lettering and the wedding → One proof that evening → Rush fee for one change
+- **Coherence:** the gold bracelet lettering can be rushed for Saturday morning. Plain lettering finishes in time, so the wedding stays on Saturday. Ida emails one proof that evening before the cut. The rush fee is eighty dollars, and one proof change is free.
+
 ### J21 — Insurance appraisal after damage / 首飾損壞估價同保險 · B1 · SHIPPED
 - **Goals:** Say a gold pendant was dropped, ask for a written appraisal and a photo of the crack, ask the policy excess, and collect the repair on Friday.
 - **Vocab:** appraisal, pendant, photo, insurance
@@ -360,6 +367,13 @@
 - **Vocab (14):** noisy, air conditioning, not working, towel, blanket, move rooms, available, inconvenience, tonight, engineer, asap, quiet side, appreciate, sorry for
 - **Grammar:** There seems to be…; Would it be possible to change rooms?
 - **Dialogue beats:** Call front desk → Explain → Options → Confirm → Thanks
+
+### T19 — Hotel complaint follow-up / 酒店投訴跟進 · B1 · SHIPPED
+- **Goals:** Say the hallway noise kept you up, ask maintenance to check the suite at ten before you unpack, ask for a harbour-facing room away from the hallway, and ask when maintenance finishes.
+- **Vocab:** noise, suite, hallway, maintenance
+- **Grammar:** Did the hallway noise keep you from moving? Will maintenance check the suite before I unpack?
+- **Dialogue beats:** Hallway noise → Move tonight → Maintenance at ten → Harbour room → When maintenance finishes
+- **Coherence:** the hallway noise is real, so Kim can move the guest tonight. Maintenance checks the suite at ten, before unpacking. The next room faces the harbour, away from the hallway. Maintenance finishes at ten, and that harbour room stays held.
 
 ### T7 — Shopping while travelling · A2/B1 · NEW
 - **Goals:** Ask size/colour; try on; tax refund at shop.
@@ -601,7 +615,7 @@ Every round until map complete, ship **≥3 NEW lessons** in this order (skip al
 23. **T17, J20, D13** (airport security, gold by weight, the dentist)
 24. **R15, W12, T18** (buffet limits, performance review, customs declaration)
 25. **J21, D14, R16** (insurance appraisal, parcel collection, chef's recommendation)
-26. **WORD-REVIEW hub** (Jewellery deck) plus **W13** team update. Then polish / legendary review nodes / further B2 stretch
+26. **WORD-REVIEW hub** (Jewellery deck) plus **W13** team update, **J22** custom engraving rush, and **T19** hotel complaint follow-up. Then polish / legendary review nodes / further B2 stretch
 
 **Path UX:** show CEFR chip (A1/A2/B1/B2) on each node; group Path into level tracks; lock by prerequisite; keep `soon:true` teasers for unshipped.
 

@@ -1,0 +1,360 @@
+{
+  "id": "J22",
+  "unit": "J",
+  "titleYue": "趕急刻字",
+  "titleEn": "Custom engraving rush",
+  "canDoYue": "你識趕急刻金手鈪、普通刻字趕得切星期六婚禮、傍晚先睇校對稿，同埋問急單收費。",
+  "canDoEn": "Ask to rush gold-bracelet lettering before Saturday morning, hear that plain lettering finishes in time for the wedding, check one proof that evening, and ask the rush fee for one change.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j22.webp",
+  "cast": [
+    "gus",
+    "ida"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "rush-noun",
+    "lettering-noun",
+    "proof-noun",
+    "wedding-noun"
+  ],
+  "topicTags": [
+    "急單",
+    "刻字樣式",
+    "校對稿",
+    "婚禮"
+  ],
+  "next": "J21",
+  "sound": {
+    "ipa": "/ɛ/",
+    "title": "lettering 入面嗰個音",
+    "note": "lettering 有 /ɛ/。wedding 有 /ɛ/。",
+    "pairs": [
+      {
+        "a": "lettering-noun",
+        "b": "wedding-noun"
+      },
+      {
+        "a": "rush-noun",
+        "b": "proof-noun"
+      }
+    ],
+    "drill": [
+      "rush-noun",
+      "lettering-noun",
+      "proof-noun",
+      "wedding-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "j22-l1",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "Could you rush the lettering on this gold bracelet before Saturday morning?",
+      "glossYue": "可唔可以喺星期六朝早之前，趕急刻呢隻金手鈪嘅字？",
+      "audio": "assets/audio/lines/j22-l1.mp3",
+      "audioSlow": "assets/audio/lines/j22-l1-slow.mp3",
+      "say": "Could you rush the lettering on this gold bracelet before Saturday morning?",
+      "hideGloss": false
+    },
+    {
+      "id": "j22-l2",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Yes. I can rush that gold bracelet lettering, and Saturday morning still works.",
+      "glossYue": "可以。我可以趕急刻嗰隻金手鈪，星期六朝早都得。",
+      "audio": "assets/audio/lines/j22-l2.mp3",
+      "audioSlow": "assets/audio/lines/j22-l2-slow.mp3",
+      "say": "Yes. I can rush that gold bracelet lettering, and Saturday morning still works.",
+      "hideGloss": false
+    },
+    {
+      "id": "j22-l3",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "Will plain lettering finish in time if our wedding stays on Saturday?",
+      "glossYue": "如果婚禮係星期六，普通刻字趕唔趕得切？",
+      "audio": "assets/audio/lines/j22-l3.mp3",
+      "audioSlow": "assets/audio/lines/j22-l3-slow.mp3",
+      "say": "Will plain lettering finish in time if our wedding stays on Saturday?",
+      "hideGloss": false
+    },
+    {
+      "id": "j22-l4",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Yes. Plain lettering will finish in time, so the wedding can stay on Saturday.",
+      "glossYue": "可以。普通刻字趕得切，婚禮可以照星期六。",
+      "audio": "assets/audio/lines/j22-l4.mp3",
+      "audioSlow": "assets/audio/lines/j22-l4-slow.mp3",
+      "say": "Yes. Plain lettering will finish in time, so the wedding can stay on Saturday.",
+      "hideGloss": false
+    },
+    {
+      "id": "j22-l5",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "Can I check one proof of those words before you cut the bracelet?",
+      "glossYue": "切之前，可唔可以畀我睇一次校對稿？",
+      "audio": "assets/audio/lines/j22-l5.mp3",
+      "audioSlow": "assets/audio/lines/j22-l5-slow.mp3",
+      "say": "Can I check one proof of those words before you cut the bracelet?",
+      "hideGloss": false
+    },
+    {
+      "id": "j22-l6",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Yes. I will email that proof this evening before we cut it.",
+      "glossYue": "可以。我會喺傍晚電郵嗰份校對稿，切之前交。",
+      "audio": "assets/audio/lines/j22-l6.mp3",
+      "audioSlow": "assets/audio/lines/j22-l6-slow.mp3",
+      "say": "Yes. I will email that proof this evening before we cut it.",
+      "hideGloss": false
+    },
+    {
+      "id": "j22-l7",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "What is the rush fee if that proof comes back with one change?",
+      "glossYue": "如果校對稿要改一次，急單收費幾多？",
+      "audio": "assets/audio/lines/j22-l7.mp3",
+      "audioSlow": "assets/audio/lines/j22-l7-slow.mp3",
+      "say": "What is the rush fee if that proof comes back with one change?",
+      "hideGloss": false
+    },
+    {
+      "id": "j22-l8",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Yes. The rush fee is eighty dollars, and one proof change is free.",
+      "glossYue": "可以。急單收費八十蚊，改一次校對稿免費。",
+      "audio": "assets/audio/lines/j22-l8.mp3",
+      "audioSlow": "assets/audio/lines/j22-l8-slow.mp3",
+      "say": "Yes. The rush fee is eighty dollars, and one proof change is free.",
+      "hideGloss": false
+    }
+  ],
+  "roleplay": {
+    "you": "gus",
+    "intro": "你同 Ida 傾呢件事。等對方講完先答。",
+    "turns": [
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "Yes. I can rush that gold bracelet lettering, and Saturday morning still works.",
+        "audio": "assets/audio/lines/j22-l2.mp3",
+        "audioSlow": "assets/audio/lines/j22-l2-slow.mp3",
+        "expect": "Will plain lettering finish in time if our wedding stays on Saturday?",
+        "keywords": [
+          "lettering",
+          "saturday"
+        ],
+        "modelAudio": "assets/audio/lines/j22-l3.mp3",
+        "modelSlow": "assets/audio/lines/j22-l3-slow.mp3"
+      },
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "Yes. Plain lettering will finish in time, so the wedding can stay on Saturday.",
+        "audio": "assets/audio/lines/j22-l4.mp3",
+        "audioSlow": "assets/audio/lines/j22-l4-slow.mp3",
+        "expect": "Can I check one proof of those words before you cut the bracelet?",
+        "keywords": [
+          "proof",
+          "cut"
+        ],
+        "modelAudio": "assets/audio/lines/j22-l5.mp3",
+        "modelSlow": "assets/audio/lines/j22-l5-slow.mp3"
+      },
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "Yes. I will email that proof this evening before we cut it.",
+        "audio": "assets/audio/lines/j22-l6.mp3",
+        "audioSlow": "assets/audio/lines/j22-l6-slow.mp3",
+        "expect": "What is the rush fee if that proof comes back with one change?",
+        "keywords": [
+          "rush",
+          "fee"
+        ],
+        "modelAudio": "assets/audio/lines/j22-l7.mp3",
+        "modelSlow": "assets/audio/lines/j22-l7-slow.mp3"
+      }
+    ]
+  },
+  "understand": [
+    {
+      "prompt": "Could you rush the lettering on this gold bracelet before Saturday morning? 呢句即係點？",
+      "choices": [
+        "急單",
+        "刻字樣式",
+        "校對稿"
+      ],
+      "answer": 1,
+      "explain": "刻字樣式。"
+    },
+    {
+      "prompt": "Yes. I will email that proof this evening before we cut it. 呢句即係點？",
+      "choices": [
+        "校對稿",
+        "刻字樣式",
+        "婚禮"
+      ],
+      "answer": 0,
+      "explain": "校對稿。"
+    },
+    {
+      "prompt": "Yes. Plain lettering will finish in time, so the wedding can stay on Saturday. 呢句即係點？",
+      "choices": [
+        "急單",
+        "刻字樣式",
+        "婚禮"
+      ],
+      "answer": 2,
+      "explain": "婚禮。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Could you ___ the lettering on this gold bracelet before Saturday morning?",
+      "example": "Could you rush the lettering on this gold bracelet before Saturday morning?",
+      "glossYue": "可唔可以喺星期六朝早之前，趕急刻呢隻金手鈪嘅字？",
+      "answer": "rush",
+      "choices": [
+        "rush",
+        "lettering",
+        "proof"
+      ]
+    },
+    {
+      "pattern": "Will plain ___ finish in time if our wedding stays on Saturday?",
+      "example": "Will plain lettering finish in time if our wedding stays on Saturday?",
+      "glossYue": "如果婚禮係星期六，普通刻字趕唔趕得切？",
+      "answer": "lettering",
+      "choices": [
+        "lettering",
+        "wedding",
+        "proof"
+      ]
+    },
+    {
+      "pattern": "Can I check one ___ of those words before you cut the bracelet?",
+      "example": "Can I check one proof of those words before you cut the bracelet?",
+      "glossYue": "切之前，可唔可以畀我睇一次校對稿？",
+      "answer": "proof",
+      "choices": [
+        "proof",
+        "rush",
+        "wedding"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想用呢課嘅講法。你點講？",
+      "choices": [
+        "Could you rush the lettering on this gold bracelet before Saturday morning?",
+        "Will plain lettering finish in time if our wedding stays on Saturday?",
+        "Can I check one proof of those words before you cut the bracelet?"
+      ],
+      "answer": 1,
+      "explain": "用呢句。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Yes.",
+        "The",
+        "rush",
+        "fee",
+        "is",
+        "eighty",
+        "dollars,",
+        "and",
+        "one",
+        "proof",
+        "change",
+        "is",
+        "free."
+      ],
+      "answer": [
+        "Yes.",
+        "The",
+        "rush",
+        "fee",
+        "is",
+        "eighty",
+        "dollars,",
+        "and",
+        "one",
+        "proof",
+        "change",
+        "is",
+        "free."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "wedding",
+        "lettering",
+        "rush"
+      ],
+      "answer": 2,
+      "lemma": "rush-noun"
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "proof",
+        "wedding",
+        "lettering"
+      ],
+      "answer": 0,
+      "lemma": "proof-noun"
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "急單",
+        "刻字樣式",
+        "校對稿"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "校對稿",
+        "婚禮",
+        "急單"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word fits this lesson?",
+      "choices": [
+        "rush",
+        "lettering",
+        "wedding"
+      ],
+      "answer": 2,
+      "explain": "婚禮。"
+    }
+  ],
+  "shadow": {
+    "lineId": "j22-l1",
+    "hint": "Could you rush the lettering on this gold bracelet before Saturday morning?"
+  }
+}

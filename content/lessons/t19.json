@@ -1,0 +1,358 @@
+{
+  "id": "T19",
+  "unit": "T",
+  "titleYue": "酒店投訴跟進",
+  "titleEn": "Hotel complaint follow-up",
+  "canDoYue": "你識話走廊嘈音搞到你、問維修十點先檢查套房、問可唔可以望海港，同埋問維修幾點做完。",
+  "canDoEn": "Say the hallway noise kept you up, ask maintenance to check the suite at ten before you unpack, ask for a harbour-facing room away from the hallway, and ask when maintenance finishes.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t19.webp",
+  "cast": [
+    "tom",
+    "kim"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "noise-noun",
+    "suite-noun",
+    "hallway-noun",
+    "maintenance-noun"
+  ],
+  "topicTags": [
+    "嘈音",
+    "套房",
+    "走廊",
+    "維修"
+  ],
+  "next": "R6",
+  "sound": {
+    "ipa": "/ɔɪ/",
+    "title": "noise 入面嗰個音",
+    "note": "noise 有 /ɔɪ/。",
+    "pairs": [
+      {
+        "a": "noise-noun",
+        "b": "hallway-noun"
+      },
+      {
+        "a": "suite-noun",
+        "b": "maintenance-noun"
+      }
+    ],
+    "drill": [
+      "noise-noun",
+      "suite-noun",
+      "hallway-noun",
+      "maintenance-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "t19-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Did the hallway noise keep you from moving me to a suite?",
+      "glossYue": "走廊嘈音搞到我，可唔可以搬我去套房？",
+      "audio": "assets/audio/lines/t19-l1.mp3",
+      "audioSlow": "assets/audio/lines/t19-l1-slow.mp3",
+      "say": "Did the hallway noise keep you from moving me to a suite?",
+      "hideGloss": false
+    },
+    {
+      "id": "t19-l2",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes. That hallway noise is real, and tonight I can move you.",
+      "glossYue": "可以。走廊嘈音係真嘅，我今晚可以幫你搬。",
+      "audio": "assets/audio/lines/t19-l2.mp3",
+      "audioSlow": "assets/audio/lines/t19-l2-slow.mp3",
+      "say": "Yes. That hallway noise is real, and tonight I can move you.",
+      "hideGloss": false
+    },
+    {
+      "id": "t19-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Will maintenance check the suite before I unpack my bag?",
+      "glossYue": "我打開行李之前，維修會唔會先檢查套房？",
+      "audio": "assets/audio/lines/t19-l3.mp3",
+      "audioSlow": "assets/audio/lines/t19-l3-slow.mp3",
+      "say": "Will maintenance check the suite before I unpack my bag?",
+      "hideGloss": false
+    },
+    {
+      "id": "t19-l4",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes. Maintenance will check that suite at ten, before you unpack.",
+      "glossYue": "會。維修十點檢查嗰間套房，喺你打開行李之前。",
+      "audio": "assets/audio/lines/t19-l4.mp3",
+      "audioSlow": "assets/audio/lines/t19-l4-slow.mp3",
+      "say": "Yes. Maintenance will check that suite at ten, before you unpack.",
+      "hideGloss": false
+    },
+    {
+      "id": "t19-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Can I face the harbour if that hallway stays noisy at night?",
+      "glossYue": "如果走廊夜晚仲嘈，可唔可以望住海港？",
+      "audio": "assets/audio/lines/t19-l5.mp3",
+      "audioSlow": "assets/audio/lines/t19-l5-slow.mp3",
+      "say": "Can I face the harbour if that hallway stays noisy at night?",
+      "hideGloss": false
+    },
+    {
+      "id": "t19-l6",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes. Your next room can face the harbour, away from that hallway.",
+      "glossYue": "可以。下一間房可以望海港，遠離嗰條走廊。",
+      "audio": "assets/audio/lines/t19-l6.mp3",
+      "audioSlow": "assets/audio/lines/t19-l6-slow.mp3",
+      "say": "Yes. Your next room can face the harbour, away from that hallway.",
+      "hideGloss": false
+    },
+    {
+      "id": "t19-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "What time will maintenance finish if I keep this suite instead?",
+      "glossYue": "如果我留呢間套房，維修幾點做完？",
+      "audio": "assets/audio/lines/t19-l7.mp3",
+      "audioSlow": "assets/audio/lines/t19-l7-slow.mp3",
+      "say": "What time will maintenance finish if I keep this suite instead?",
+      "hideGloss": false
+    },
+    {
+      "id": "t19-l8",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes. Maintenance will finish at ten, and the harbour room stays held.",
+      "glossYue": "可以。維修十點做完，海港嗰間房會留住。",
+      "audio": "assets/audio/lines/t19-l8.mp3",
+      "audioSlow": "assets/audio/lines/t19-l8-slow.mp3",
+      "say": "Yes. Maintenance will finish at ten, and the harbour room stays held.",
+      "hideGloss": false
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你同 Kim 傾呢件事。等對方講完先答。",
+    "turns": [
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "Yes. That hallway noise is real, and tonight I can move you.",
+        "audio": "assets/audio/lines/t19-l2.mp3",
+        "audioSlow": "assets/audio/lines/t19-l2-slow.mp3",
+        "expect": "Will maintenance check the suite before I unpack my bag?",
+        "keywords": [
+          "maintenance",
+          "suite"
+        ],
+        "modelAudio": "assets/audio/lines/t19-l3.mp3",
+        "modelSlow": "assets/audio/lines/t19-l3-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "Yes. Maintenance will check that suite at ten, before you unpack.",
+        "audio": "assets/audio/lines/t19-l4.mp3",
+        "audioSlow": "assets/audio/lines/t19-l4-slow.mp3",
+        "expect": "Can I face the harbour if that hallway stays noisy at night?",
+        "keywords": [
+          "harbour",
+          "hallway"
+        ],
+        "modelAudio": "assets/audio/lines/t19-l5.mp3",
+        "modelSlow": "assets/audio/lines/t19-l5-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "Yes. Your next room can face the harbour, away from that hallway.",
+        "audio": "assets/audio/lines/t19-l6.mp3",
+        "audioSlow": "assets/audio/lines/t19-l6-slow.mp3",
+        "expect": "What time will maintenance finish if I keep this suite instead?",
+        "keywords": [
+          "maintenance",
+          "finish"
+        ],
+        "modelAudio": "assets/audio/lines/t19-l7.mp3",
+        "modelSlow": "assets/audio/lines/t19-l7-slow.mp3"
+      }
+    ]
+  },
+  "understand": [
+    {
+      "prompt": "Did the hallway noise keep you from moving me to a suite? 呢句即係點？",
+      "choices": [
+        "套房",
+        "嘈音",
+        "維修"
+      ],
+      "answer": 1,
+      "explain": "嘈音。"
+    },
+    {
+      "prompt": "Yes. Maintenance will check that suite at ten, before you unpack. 呢句即係點？",
+      "choices": [
+        "維修",
+        "走廊",
+        "套房"
+      ],
+      "answer": 0,
+      "explain": "維修。"
+    },
+    {
+      "prompt": "Yes. Your next room can face the harbour, away from that hallway. 呢句即係點？",
+      "choices": [
+        "維修",
+        "套房",
+        "走廊"
+      ],
+      "answer": 2,
+      "explain": "走廊。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Did the hallway ___ keep you from moving me to a suite?",
+      "example": "Did the hallway noise keep you from moving me to a suite?",
+      "glossYue": "走廊嘈音搞到我，可唔可以搬我去套房？",
+      "answer": "noise",
+      "choices": [
+        "noise",
+        "suite",
+        "hallway"
+      ]
+    },
+    {
+      "pattern": "Will ___ check the suite before I unpack my bag?",
+      "example": "Will maintenance check the suite before I unpack my bag?",
+      "glossYue": "我打開行李之前，維修會唔會先檢查套房？",
+      "answer": "maintenance",
+      "choices": [
+        "maintenance",
+        "hallway",
+        "noise"
+      ]
+    },
+    {
+      "pattern": "Can I face the harbour if that ___ stays noisy at night?",
+      "example": "Can I face the harbour if that hallway stays noisy at night?",
+      "glossYue": "如果走廊夜晚仲嘈，可唔可以望住海港？",
+      "answer": "hallway",
+      "choices": [
+        "hallway",
+        "suite",
+        "maintenance"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想用呢課嘅講法。你點講？",
+      "choices": [
+        "Did the hallway noise keep you from moving me to a suite?",
+        "Will maintenance check the suite before I unpack my bag?",
+        "Can I face the harbour if that hallway stays noisy at night?"
+      ],
+      "answer": 1,
+      "explain": "用呢句。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Yes.",
+        "Maintenance",
+        "will",
+        "finish",
+        "at",
+        "ten,",
+        "and",
+        "the",
+        "harbour",
+        "room",
+        "stays",
+        "held."
+      ],
+      "answer": [
+        "Yes.",
+        "Maintenance",
+        "will",
+        "finish",
+        "at",
+        "ten,",
+        "and",
+        "the",
+        "harbour",
+        "room",
+        "stays",
+        "held."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "suite",
+        "noise",
+        "hallway"
+      ],
+      "answer": 1,
+      "lemma": "noise-noun"
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "maintenance",
+        "hallway",
+        "suite"
+      ],
+      "answer": 0,
+      "lemma": "maintenance-noun"
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "嘈音",
+        "套房",
+        "走廊"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "維修",
+        "套房",
+        "走廊"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word fits this lesson?",
+      "choices": [
+        "noise",
+        "hallway",
+        "suite"
+      ],
+      "answer": 1,
+      "explain": "走廊。"
+    }
+  ],
+  "shadow": {
+    "lineId": "t19-l1",
+    "hint": "Did the hallway noise keep you from moving me to a suite?"
+  }
+}

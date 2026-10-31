@@ -41215,6 +41215,498 @@
           "say": "The slide deck needs the logo."
         }
       ]
+    },
+    {
+      "id": "rush-noun",
+      "lemma": "rush",
+      "pos": "noun",
+      "senseId": "hurry-job",
+      "ipa": "/ˈɹʌʃ/",
+      "syllables": [
+        "rush"
+      ],
+      "syllableIpa": [
+        "ˈɹʌʃ"
+      ],
+      "stress": 1,
+      "arpabet": "R AH1 SH",
+      "audio": "assets/audio/words/rush-noun.mp3",
+      "audioSlow": "assets/audio/words/rush-noun-slow.mp3",
+      "glossYue": "急單",
+      "glossZh": "急單",
+      "jyutping": "gap1 daan1",
+      "collocations": [
+        "the rush",
+        "rush fee"
+      ],
+      "example": "This rush is for Saturday morning.",
+      "exampleYue": "呢張急單要趕星期六朝早。",
+      "say": "This rush is for Saturday morning.",
+      "variants": [],
+      "note": "rush 重音喺第一音節。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "rush",
+      "phrase": false,
+      "audioSha256": "8f115691aacd57b05a7fe59624e5ff203b65a00e546a8679d67080c80c074bc5",
+      "register": "日常",
+      "usageNotes": "急單。",
+      "pitfallsYue": "急單。",
+      "related": [
+        "deadline-noun"
+      ],
+      "examples": [
+        {
+          "en": "This rush is for Saturday morning.",
+          "yue": "呢張急單要趕星期六朝早。",
+          "audio": "assets/audio/words/rush-noun.mp3",
+          "audioSlow": "assets/audio/words/rush-noun-slow.mp3",
+          "say": "This rush is for Saturday morning."
+        },
+        {
+          "en": "The rush fee is eighty dollars.",
+          "yue": "急單收費八十蚊。",
+          "audio": "assets/audio/words/rush-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/rush-noun-ex2-slow.mp3",
+          "say": "The rush fee is eighty dollars."
+        }
+      ]
+    },
+    {
+      "id": "lettering-noun",
+      "lemma": "lettering",
+      "pos": "noun",
+      "senseId": "cut-style",
+      "ipa": "/ˈlɛ.tɚ.ɪŋ/",
+      "syllables": [
+        "let",
+        "ter",
+        "ing"
+      ],
+      "syllableIpa": [
+        "ˈlɛ",
+        "tɚ",
+        "ɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "L EH1 T ER0 IH0 NG",
+      "audio": "assets/audio/words/lettering-noun.mp3",
+      "audioSlow": "assets/audio/words/lettering-noun-slow.mp3",
+      "glossYue": "刻字樣式",
+      "glossZh": "刻字樣式",
+      "jyutping": "hak1 zi6 joeng6 sik1",
+      "collocations": [
+        "plain lettering",
+        "gold bracelet lettering"
+      ],
+      "example": "Plain lettering will finish in time.",
+      "exampleYue": "普通刻字趕得切。",
+      "say": "Plain lettering will finish in time.",
+      "variants": [],
+      "note": "lettering 重音喺第一音節，有 /ɛ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "lettering",
+      "phrase": false,
+      "audioSha256": "35a99d15b946358a85f86581c4c21651b7542bbd71bef431b891888afa96294a",
+      "register": "日常",
+      "usageNotes": "刻字樣式。",
+      "pitfallsYue": "刻字樣式。",
+      "related": [
+        "engraving-noun"
+      ],
+      "examples": [
+        {
+          "en": "Plain lettering will finish in time.",
+          "yue": "普通刻字趕得切。",
+          "audio": "assets/audio/words/lettering-noun.mp3",
+          "audioSlow": "assets/audio/words/lettering-noun-slow.mp3",
+          "say": "Plain lettering will finish in time."
+        },
+        {
+          "en": "This gold bracelet needs plain lettering.",
+          "yue": "呢隻金手鈪要普通刻字。",
+          "audio": "assets/audio/words/lettering-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/lettering-noun-ex2-slow.mp3",
+          "say": "This gold bracelet needs plain lettering."
+        }
+      ]
+    },
+    {
+      "id": "proof-noun",
+      "lemma": "proof",
+      "pos": "noun",
+      "senseId": "check-copy",
+      "ipa": "/ˈpɹuf/",
+      "syllables": [
+        "proof"
+      ],
+      "syllableIpa": [
+        "ˈpɹuf"
+      ],
+      "stress": 1,
+      "arpabet": "P R UW1 F",
+      "audio": "assets/audio/words/proof-noun.mp3",
+      "audioSlow": "assets/audio/words/proof-noun-slow.mp3",
+      "glossYue": "校對稿",
+      "glossZh": "校對稿",
+      "jyutping": "gaau3 deoi3 gou2",
+      "collocations": [
+        "that proof",
+        "one proof change"
+      ],
+      "example": "I will email that proof this evening.",
+      "exampleYue": "我會喺傍晚電郵嗰份校對稿。",
+      "say": "I will email that proof this evening.",
+      "variants": [],
+      "note": "proof 重音喺第一音節。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "proof",
+      "phrase": false,
+      "audioSha256": "1f2a44317a1868324ae26d85f04f1be0a2f1fa2ba71c06ba4dd750bafbfb2633",
+      "register": "日常",
+      "usageNotes": "校對稿。",
+      "pitfallsYue": "校對稿。",
+      "related": [
+        "spelling-noun"
+      ],
+      "examples": [
+        {
+          "en": "I will email that proof this evening.",
+          "yue": "我會喺傍晚電郵嗰份校對稿。",
+          "audio": "assets/audio/words/proof-noun.mp3",
+          "audioSlow": "assets/audio/words/proof-noun-slow.mp3",
+          "say": "I will email that proof this evening."
+        },
+        {
+          "en": "One proof change is free.",
+          "yue": "改一次校對稿免費。",
+          "audio": "assets/audio/words/proof-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/proof-noun-ex2-slow.mp3",
+          "say": "One proof change is free."
+        }
+      ]
+    },
+    {
+      "id": "wedding-noun",
+      "lemma": "wedding",
+      "pos": "noun",
+      "senseId": "ceremony",
+      "ipa": "/ˈwɛ.dɪŋ/",
+      "syllables": [
+        "wed",
+        "ding"
+      ],
+      "syllableIpa": [
+        "ˈwɛ",
+        "dɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "W EH1 D IH0 NG",
+      "audio": "assets/audio/words/wedding-noun.mp3",
+      "audioSlow": "assets/audio/words/wedding-noun-slow.mp3",
+      "glossYue": "婚禮",
+      "glossZh": "婚禮",
+      "jyutping": "fan1 lai5",
+      "collocations": [
+        "our wedding",
+        "the wedding"
+      ],
+      "example": "The wedding can stay on Saturday.",
+      "exampleYue": "婚禮可以照星期六。",
+      "say": "The wedding can stay on Saturday.",
+      "variants": [],
+      "note": "wedding 重音喺第一音節，有 /ɛ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "wedding",
+      "phrase": false,
+      "audioSha256": "b8554e93c23926d5d965714b0ef0e219420f0c8ca89499ea3fb7803bc1b3cfe5",
+      "register": "日常",
+      "usageNotes": "婚禮。",
+      "pitfallsYue": "婚禮。",
+      "related": [
+        "date-noun"
+      ],
+      "examples": [
+        {
+          "en": "The wedding can stay on Saturday.",
+          "yue": "婚禮可以照星期六。",
+          "audio": "assets/audio/words/wedding-noun.mp3",
+          "audioSlow": "assets/audio/words/wedding-noun-slow.mp3",
+          "say": "The wedding can stay on Saturday."
+        },
+        {
+          "en": "Our wedding stays on Saturday morning.",
+          "yue": "我哋嘅婚禮係星期六朝早。",
+          "audio": "assets/audio/words/wedding-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/wedding-noun-ex2-slow.mp3",
+          "say": "Our wedding stays on Saturday morning."
+        }
+      ]
+    },
+    {
+      "id": "noise-noun",
+      "lemma": "noise",
+      "pos": "noun",
+      "senseId": "unwanted-sound",
+      "ipa": "/ˈnɔɪz/",
+      "syllables": [
+        "noise"
+      ],
+      "syllableIpa": [
+        "ˈnɔɪz"
+      ],
+      "stress": 1,
+      "arpabet": "N OY1 Z",
+      "audio": "assets/audio/words/noise-noun.mp3",
+      "audioSlow": "assets/audio/words/noise-noun-slow.mp3",
+      "glossYue": "嘈音",
+      "glossZh": "嘈音",
+      "jyutping": "cou4 jam1",
+      "collocations": [
+        "hallway noise",
+        "that noise"
+      ],
+      "example": "That hallway noise is real.",
+      "exampleYue": "走廊嘈音係真嘅。",
+      "say": "That hallway noise is real.",
+      "variants": [],
+      "note": "noise 重音喺第一音節，有 /ɔɪ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "noise",
+      "phrase": false,
+      "audioSha256": "34b7a84cbed5c98508531dc577bf2f8f7d8668d8cf2c337227b53a5dea551fed",
+      "register": "日常",
+      "usageNotes": "嘈音。",
+      "pitfallsYue": "嘈音。",
+      "related": [
+        "quiet-adj"
+      ],
+      "examples": [
+        {
+          "en": "That hallway noise is real.",
+          "yue": "走廊嘈音係真嘅。",
+          "audio": "assets/audio/words/noise-noun.mp3",
+          "audioSlow": "assets/audio/words/noise-noun-slow.mp3",
+          "say": "That hallway noise is real."
+        },
+        {
+          "en": "The hallway noise kept me up.",
+          "yue": "走廊嘈音搞到我。",
+          "audio": "assets/audio/words/noise-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/noise-noun-ex2-slow.mp3",
+          "say": "The hallway noise kept me up."
+        }
+      ]
+    },
+    {
+      "id": "suite-noun",
+      "lemma": "suite",
+      "pos": "noun",
+      "senseId": "quiet-room",
+      "ipa": "/ˈswit/",
+      "syllables": [
+        "suite"
+      ],
+      "syllableIpa": [
+        "ˈswit"
+      ],
+      "stress": 1,
+      "arpabet": "S W IY1 T",
+      "audio": "assets/audio/words/suite-noun.mp3",
+      "audioSlow": "assets/audio/words/suite-noun-slow.mp3",
+      "glossYue": "套房",
+      "glossZh": "套房",
+      "jyutping": "tou3 fong2",
+      "collocations": [
+        "a suite",
+        "this suite"
+      ],
+      "example": "Please move me to a suite.",
+      "exampleYue": "請搬我去套房。",
+      "say": "Please move me to a suite.",
+      "variants": [],
+      "note": "suite 重音喺第一音節。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "suite",
+      "phrase": false,
+      "audioSha256": "62c948f14ca0fd5eee6043bd69087a890e29b9968d12c06c76ddb0d8d689e21e",
+      "register": "日常",
+      "usageNotes": "套房。",
+      "pitfallsYue": "套房。",
+      "related": [
+        "room-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please move me to a suite.",
+          "yue": "請搬我去套房。",
+          "audio": "assets/audio/words/suite-noun.mp3",
+          "audioSlow": "assets/audio/words/suite-noun-slow.mp3",
+          "say": "Please move me to a suite."
+        },
+        {
+          "en": "I can keep this suite.",
+          "yue": "我可以留呢間套房。",
+          "audio": "assets/audio/words/suite-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/suite-noun-ex2-slow.mp3",
+          "say": "I can keep this suite."
+        }
+      ]
+    },
+    {
+      "id": "hallway-noun",
+      "lemma": "hallway",
+      "pos": "noun",
+      "senseId": "hotel-passage",
+      "ipa": "/ˈhɔl.ˌweɪ/",
+      "syllables": [
+        "hall",
+        "way"
+      ],
+      "syllableIpa": [
+        "ˈhɔl",
+        "ˌweɪ"
+      ],
+      "stress": 1,
+      "arpabet": "HH AO1 L W EY2",
+      "audio": "assets/audio/words/hallway-noun.mp3",
+      "audioSlow": "assets/audio/words/hallway-noun-slow.mp3",
+      "glossYue": "走廊",
+      "glossZh": "走廊",
+      "jyutping": "zau2 long4",
+      "collocations": [
+        "that hallway",
+        "the hallway"
+      ],
+      "example": "The hallway stays noisy at night.",
+      "exampleYue": "走廊夜晚仲嘈。",
+      "say": "The hallway stays noisy at night.",
+      "variants": [],
+      "note": "hallway 重音喺第一音節。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "hallway",
+      "phrase": false,
+      "audioSha256": "0933105493007840880e06bb9f83d34ab376e67b2c7f663a91aeff47aee9f1e0",
+      "register": "日常",
+      "usageNotes": "走廊。",
+      "pitfallsYue": "走廊。",
+      "related": [
+        "floor-noun"
+      ],
+      "examples": [
+        {
+          "en": "The hallway stays noisy at night.",
+          "yue": "走廊夜晚仲嘈。",
+          "audio": "assets/audio/words/hallway-noun.mp3",
+          "audioSlow": "assets/audio/words/hallway-noun-slow.mp3",
+          "say": "The hallway stays noisy at night."
+        },
+        {
+          "en": "Your room can face away from that hallway.",
+          "yue": "你間房可以遠離嗰條走廊。",
+          "audio": "assets/audio/words/hallway-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/hallway-noun-ex2-slow.mp3",
+          "say": "Your room can face away from that hallway."
+        }
+      ]
+    },
+    {
+      "id": "maintenance-noun",
+      "lemma": "maintenance",
+      "pos": "noun",
+      "senseId": "fix-visit",
+      "ipa": "/ˈmeɪn.tə.nəns/",
+      "syllables": [
+        "main",
+        "te",
+        "nance"
+      ],
+      "syllableIpa": [
+        "ˈmeɪn",
+        "tə",
+        "nəns"
+      ],
+      "stress": 1,
+      "arpabet": "M EY1 N T AH0 N AH0 N S",
+      "audio": "assets/audio/words/maintenance-noun.mp3",
+      "audioSlow": "assets/audio/words/maintenance-noun-slow.mp3",
+      "glossYue": "維修",
+      "glossZh": "維修",
+      "jyutping": "wai4 sau1",
+      "collocations": [
+        "maintenance check",
+        "maintenance will finish"
+      ],
+      "example": "Maintenance will check that suite at ten.",
+      "exampleYue": "維修十點檢查嗰間套房。",
+      "say": "Maintenance will check that suite at ten.",
+      "variants": [],
+      "note": "maintenance 重音喺第一音節。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "maintenance",
+      "phrase": false,
+      "audioSha256": "2d84acb3e61f94971068a38023395ddab8a046c406ec81dd7447dc37ab9e0d9e",
+      "register": "日常",
+      "usageNotes": "維修。",
+      "pitfallsYue": "維修。",
+      "related": [
+        "repair-noun"
+      ],
+      "examples": [
+        {
+          "en": "Maintenance will check that suite at ten.",
+          "yue": "維修十點檢查嗰間套房。",
+          "audio": "assets/audio/words/maintenance-noun.mp3",
+          "audioSlow": "assets/audio/words/maintenance-noun-slow.mp3",
+          "say": "Maintenance will check that suite at ten."
+        },
+        {
+          "en": "Maintenance will finish at ten.",
+          "yue": "維修十點做完。",
+          "audio": "assets/audio/words/maintenance-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/maintenance-noun-ex2-slow.mp3",
+          "say": "Maintenance will finish at ten."
+        }
+      ]
     }
   ]
 }

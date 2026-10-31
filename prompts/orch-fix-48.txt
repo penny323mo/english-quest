@@ -19,3 +19,7 @@ Each lesson: full 12-beat, hero WebP 900×1200 sat ≥34.3 (PIL RGB resize 90×1
 
 Dialogues: short natural turns, contractions, Q→A coherence.
 Run tests + build; Lighthouse mobile Perf ≥98. Append "## Round 48" to CHANGELOG.md. Do not git commit.
+
+## UPDATE — r47 live audit (authoritative): review/loop-r47/coder-audit.md
+fix-47 already shipped W13 and renamed Niles→**Nina** (#132 CLOSED — do not rename to nell). So W13 is taken: use **J22 / T19 / W14** for the ≥3 stretch lessons.
+Before new lessons, close r47 P0: #135 deck WordCard rebuilt to mockup-v1 03-word-card (top-priority style), #144 W8/W9 cast chips must match hero faces, #137 W13 dialogue rewrite + no "Yes." before wh-answers, #136 lesson-quiz items need context so only one key is right. Then #143 de-pad ≥6 old over-cap lessons (D3, W5, W8, R9, R4, T13 first). #138–#142 if time allows, otherwise they carry to fix-49.

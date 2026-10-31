@@ -53,8 +53,10 @@
     "j9",
     "j10",
     "j16",
+    "j22",
     "j17",
     "t6",
+    "t19",
     "r6",
     "j12",
     "r7",
@@ -142,8 +144,10 @@
     "j9": "center 30%",
     "j10": "center 30%",
     "j16": "center 30%",
+    "j22": "center 30%",
     "j17": "center 38%",
     "t6": "center 30%",
+    "t19": "center 30%",
     "r6": "center 30%",
     "j12": "center 30%",
     "r7": "center 30%",
@@ -221,7 +225,7 @@
     "hugo": "Adult colleague, head and shoulders.",
     "wynn": "Adult colleague, head and shoulders.",
     "beau": "Adult colleague, head and shoulders.",
-    "sora": "Adult colleague, head and shoulders.",
+    "sora": "Adult, purple/lavender bob, mint-green shirt, head and shoulders.",
     "otto": "Adult colleague, head and shoulders.",
     "glen": "Adult colleague, head and shoulders.",
     "hana": "Adult colleague, head and shoulders.",
@@ -837,6 +841,20 @@
         "nina"
       ],
       "look": "Team update (小組進度匯報)"
+    },
+    "j22": {
+      "cast": [
+        "gus",
+        "ida"
+      ],
+      "look": "Custom engraving rush (趕急刻字)"
+    },
+    "t19": {
+      "cast": [
+        "tom",
+        "kim"
+      ],
+      "look": "Hotel complaint follow-up (酒店投訴跟進)"
     }
   }
 }

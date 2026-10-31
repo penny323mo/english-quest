@@ -1,0 +1,12 @@
+You are a strict senior code reviewer. cd /workspace/sidequest/english-quest. Read /workspace/sidequest/english-quest/SPEC.md and review the code (round 49) at viewport 390px. Do NOT modify project files. Run node tests if present; do not launch browsers. Write a numbered review ordered CRITICAL/MAJOR/MINOR with file:line and concrete fix, with a first line 'VERDICT: SHIP' or 'VERDICT: NOT READY', to /workspace/sidequest/english-quest/reviews/orch-r49-grok.md. SHIP is FORBIDDEN while any CRITICAL/MAJOR from the previous review remains open, or while any item in the latest coder-audit.md under review/loop-*/ remains unfixed — verify each against the built app at 390px before VERDICT. Keep to ~15 minutes.
+
+Authoritative open audit (must re-verify every item): /workspace/sidequest/english-quest/review/loop-r47/coder-audit.md
+Human coder live audit is authoritative — reviewer must NOT SHIP if any of #135–#144 (or any newer open coder-audit item) remains. Also confirm:
+- #135 WordCard matches review/mockup-v1 03-word-card at 390 (top-priority style)
+- #144 every lesson's cast chips match its hero faces (W8/W9 especially)
+- #132 stays closed as Nina; #128–#131, #133, #134 stay closed
+- Round 49 ≥3 new scenario lessons present on Path, CEFR non-decreasing, no wpl jump/dip vs neighbours
+- SRS hub separates 新字 vs 到期 with a daily new cap; speaking flow works without mic
+
+WHEN COMPLETELY FINISHED, as your very last action, create the file /workspace/sidequest/english-quest/.orch/review-49.done containing the word DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/review-49.done

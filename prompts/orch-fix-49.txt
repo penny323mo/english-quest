@@ -1,0 +1,20 @@
+Phase 4 unlimited. Round 49. Read CURRICULUM.md + ART-STYLE.md + DUOLINGO-REF.md + SPEC.md + review/mockup-v1 (Penny-approved) + review/loop-r47/coder-audit.md first (and loop-r46 if needed for history).
+cd /workspace/sidequest/english-quest. Never touch the grokbot repo or the nightly panes. No paid services. Report files under review/ stay local (never commit or git add -f review/loop-r*/ or review/style-gap/; never git rm them). Real app-code/content changes are required this round (not just tests or docs). Do not git commit from this prompt — orchestrator/parent handles publish.
+
+## FIRST: close every item still open from review/loop-r47/coder-audit.md (and any newer loop-r48 audit if present).
+1. #135 (top priority, style): WordCard in web/src/Vocab.tsx must match review/mockup-v1 03-word-card — white rounded card, glyph tile, POS chip + round play, mint 廣東話意思 panel, boxed 用法 with bullets + red ⚠港式易錯, example cards with circular play, dashed 更多 panel with related chips + mini dialogue. Screenshot at 390 and compare against the mockup before finishing.
+2. #144: W8/W9 (and any lesson) cast chips must match the hero faces; add a chip↔hero cast test.
+3. #137: rewrite W13 (and R16) for natural Q→A; no "Yes." opening a wh-answer anywhere (test). Fix 邊個阻礙 → 有咩卡住咗.
+4. #136: lesson-quiz MCQs need a context line so exactly one key fits; distractors from other lessons; test.
+5. #143: keep #120 de-pad going, ≥6 old over-cap lessons per round, worst first; neighbouring-lesson wpl delta must stay smooth (CI check). No re-padding.
+6. #138 #139 #141 #142: dedupe usageNotes/pitfallsYue, separators on 相關 links, 更多 adds ≥1 extra example + mini dialogue per word, let→畀, high chair→BB櫈/高腳櫈, IPA ɹ/ɚ consistent, Nina crop on W12/W13 covers.
+Keep CLOSED: #128–#134, #102, #121, #95, #114, #123–#127.
+
+## NEW FEATURE TARGET — ≥3 new scenario lessons + speaking UX + SRS polish
+- ≥3 new lessons using next free IDs after fix-48 (check disk), across scenarios Penny wants: e.g. a T2-class airport security / asking directions lesson, plus jewellery / restaurant / daily-life. Slot so Path CEFR stays non-decreasing and wpl stays smooth.
+- Speaking UX: clearer record → playback → compare flow, retry without penalty, visible mic state, graceful no-mic fallback.
+- SRS polish (#140): split 新字 vs 到期 with daily new-word cap (default 10); hub due count = introduced cards only; review session summary.
+
+Each lesson: full 12-beat, hero WebP 900×1200 sat ≥34.3 (PIL RGB resize 90×120 colorsys S mean×100), cast-matched chips, CMUdict IPA, Kokoro/Piper audio, natural Cantonese glossYue, seeded-shuffled answers, no padding / keyword stuffing, every question answered with real numbers/names.
+Dialogues: short natural turns, contractions, Q→A coherence.
+Run tests + build; Lighthouse mobile Perf ≥98. Append "## Round 49" to CHANGELOG.md. Do not git commit.

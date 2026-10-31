@@ -68,9 +68,13 @@ function DeckGlyph({ kind }: { kind: string }) {
   return <svg {...props}><circle cx="12" cy="12" r="4" /><path d="M12 3v2M12 19v2M3 12h2M19 12h2" /></svg>;
 }
 
+function storedDue(cards: Record<string, StoredCard>) {
+  return Object.values(cards).filter((card) => isDue(card) && lexById[card.id]).length;
+}
+
 export function VocabHub() {
   const cards = useStore((s) => s.cards);
-  const totalDue = decks.decks.reduce((sum, deck) => sum + statsFor(deck.lemmas, cards).due, 0);
+  const totalDue = storedDue(cards);
   return (
     <section className="screen stack">
       <div className="hub-hero">
