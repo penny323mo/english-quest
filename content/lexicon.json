@@ -17857,7 +17857,7 @@
       "id": "message-noun",
       "lemma": "message",
       "pos": "noun",
-      "senseId": "phone-note",
+      "senseId": "cake-icing",
       "ipa": "/ˈmɛ.sədʒ/",
       "syllables": [
         "mes",
@@ -17871,12 +17871,12 @@
       "arpabet": "M EH1 S AH0 JH",
       "audio": "assets/audio/words/message-noun.mp3",
       "audioSlow": "assets/audio/words/message-noun-slow.mp3",
-      "glossYue": "留言",
-      "glossZh": "留言",
+      "glossYue": "蛋糕上嘅字",
+      "glossZh": "蛋糕上嘅字",
       "jyutping": "lau4 jin4",
       "collocations": [
-        "take a message",
-        "leave a message"
+        "the message on the cake",
+        "a birthday message"
       ],
       "example": "The message on the cake says Happy birthday Mei.",
       "exampleYue": "生日蛋糕上嘅字係 Happy birthday Mei。",
@@ -17892,12 +17892,12 @@
       "cmuLemma": "message",
       "phrase": false,
       "audioSha256": "d75a7376dc86edd0645fb46a36fd0f3e1bf62723de6714e4b389dc312713eb34",
-      "register": "職場",
-      "usageNotes": "人唔喺度先留言。",
-      "pitfallsYue": "人唔喺度先留言。",
+      "register": "日常",
+      "usageNotes": "蛋糕上嘅字。",
+      "pitfallsYue": "蛋糕上嘅字。",
       "related": [
-        "callback-noun",
-        "spelling-noun"
+        "cake-noun",
+        "candle-noun"
       ],
       "examples": [
         {
@@ -17908,11 +17908,11 @@
           "say": "The message on the cake says Happy birthday Mei."
         },
         {
-          "en": "Please take a message for Mei.",
-          "yue": "唔該幫 Mei 收個留言。",
+          "en": "Write the message Happy birthday Mei on the cake.",
+          "yue": "蛋糕上寫 Happy birthday Mei 呢句字。",
           "audio": "assets/audio/words/message-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/message-noun-ex2-slow.mp3",
-          "say": "Please take a message for Mei."
+          "say": "Write the message Happy birthday Mei on the cake."
         }
       ]
     },
@@ -39604,6 +39604,695 @@
           "audio": "assets/audio/words/flavour-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/flavour-noun-ex2-slow.mp3",
           "say": "Mango is the flavour I want."
+        }
+      ]
+    },
+    {
+      "id": "buffet-noun",
+      "lemma": "buffet",
+      "pos": "noun",
+      "senseId": "eat-all",
+      "ipa": "/bə.ˈfeɪ/",
+      "syllables": [
+        "bu",
+        "fay"
+      ],
+      "syllableIpa": [
+        "bə",
+        "ˈfeɪ"
+      ],
+      "stress": 2,
+      "arpabet": "B AH0 F EY1",
+      "audio": "assets/audio/words/buffet-noun.mp3",
+      "audioSlow": "assets/audio/words/buffet-noun-slow.mp3",
+      "glossYue": "自助餐",
+      "glossZh": "自助餐",
+      "jyutping": "zi6 zo6 caan1",
+      "collocations": [
+        "this buffet",
+        "eat in only"
+      ],
+      "example": "This buffet is for here only.",
+      "exampleYue": "呢個自助餐只可以堂食。",
+      "say": "This buffet is for here only.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "buffet",
+      "phrase": false,
+      "audioSha256": "3ffed68032c516d32cd6bc828340438959cfc4e40da555c67f56bcd4b7d3e954",
+      "register": "日常",
+      "usageNotes": "自助餐。",
+      "pitfallsYue": "自助餐。",
+      "related": [
+        "plate-noun",
+        "soft-drink-noun"
+      ],
+      "examples": [
+        {
+          "en": "This buffet is for here only.",
+          "yue": "呢個自助餐只可以堂食。",
+          "audio": "assets/audio/words/buffet-noun.mp3",
+          "audioSlow": "assets/audio/words/buffet-noun-slow.mp3",
+          "say": "This buffet is for here only."
+        },
+        {
+          "en": "Is this buffet all you can eat?",
+          "yue": "呢個自助餐係咪任食？",
+          "audio": "assets/audio/words/buffet-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/buffet-noun-ex2-slow.mp3",
+          "say": "Is this buffet all you can eat?"
+        }
+      ]
+    },
+    {
+      "id": "soft-drink-noun",
+      "lemma": "soft drink",
+      "pos": "noun",
+      "senseId": "fizzy-drink",
+      "ipa": "/ˈsɔft.ˈdɹɪŋk/",
+      "syllables": [
+        "soft",
+        "drink"
+      ],
+      "syllableIpa": [
+        "ˈsɔft",
+        "ˈdɹɪŋk"
+      ],
+      "stress": 1,
+      "arpabet": "S AO1 F T D R IH1 NG K",
+      "audio": "assets/audio/words/soft-drink-noun.mp3",
+      "audioSlow": "assets/audio/words/soft-drink-noun-slow.mp3",
+      "glossYue": "汽水",
+      "glossZh": "汽水",
+      "jyutping": "hei3 seoi2",
+      "collocations": [
+        "soft drinks",
+        "drinks included"
+      ],
+      "example": "Those soft drinks are included for every adult.",
+      "exampleYue": "每位成人都包汽水。",
+      "say": "Those soft drinks are included for every adult.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "soft drink",
+      "phrase": false,
+      "audioSha256": "42c0b3eebaec356748257377d68f810955bf77c39e4560440e59705972892c13",
+      "register": "日常",
+      "usageNotes": "汽水。",
+      "pitfallsYue": "汽水。",
+      "related": [
+        "buffet-noun"
+      ],
+      "examples": [
+        {
+          "en": "Those soft drinks are included for every adult.",
+          "yue": "每位成人都包汽水。",
+          "audio": "assets/audio/words/soft-drink-noun.mp3",
+          "audioSlow": "assets/audio/words/soft-drink-noun-slow.mp3",
+          "say": "Those soft drinks are included for every adult."
+        },
+        {
+          "en": "Are soft drinks included, or do I pay for each one?",
+          "yue": "汽水係咪包咗，定係要逐杯畀錢？",
+          "audio": "assets/audio/words/soft-drink-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/soft-drink-noun-ex2-slow.mp3",
+          "say": "Are soft drinks included, or do I pay for each one?"
+        }
+      ]
+    },
+    {
+      "id": "plate-noun",
+      "lemma": "plate",
+      "pos": "noun",
+      "senseId": "clean-dish",
+      "ipa": "/ˈpleɪt/",
+      "syllables": [
+        "plate"
+      ],
+      "syllableIpa": [
+        "ˈpleɪt"
+      ],
+      "stress": 1,
+      "arpabet": "P L EY1 T",
+      "audio": "assets/audio/words/plate-noun.mp3",
+      "audioSlow": "assets/audio/words/plate-noun-slow.mp3",
+      "glossYue": "餐碟",
+      "glossZh": "餐碟",
+      "jyutping": "caan1 dip6",
+      "collocations": [
+        "a clean plate",
+        "one plate"
+      ],
+      "example": "Here is a clean plate for the soup.",
+      "exampleYue": "呢個係乾淨碟，用嚟裝湯。",
+      "say": "Here is a clean plate for the soup.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "plate",
+      "phrase": false,
+      "audioSha256": "7656d0e7af0ed8457b29f2c8dbee0f9c19f062ba1184130615c3eed4d3a7f61f",
+      "register": "日常",
+      "usageNotes": "餐碟。",
+      "pitfallsYue": "餐碟。",
+      "related": [
+        "buffet-noun"
+      ],
+      "examples": [
+        {
+          "en": "Here is a clean plate for the soup.",
+          "yue": "呢個係乾淨碟，用嚟裝湯。",
+          "audio": "assets/audio/words/plate-noun.mp3",
+          "audioSlow": "assets/audio/words/plate-noun-slow.mp3",
+          "say": "Here is a clean plate for the soup."
+        },
+        {
+          "en": "May I have a clean plate?",
+          "yue": "可唔可以畀個乾淨碟我？",
+          "audio": "assets/audio/words/plate-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/plate-noun-ex2-slow.mp3",
+          "say": "May I have a clean plate?"
+        }
+      ]
+    },
+    {
+      "id": "performance-noun",
+      "lemma": "performance",
+      "pos": "noun",
+      "senseId": "work-review",
+      "ipa": "/pɚ.ˈfɔɹ.məns/",
+      "syllables": [
+        "per",
+        "for",
+        "mance"
+      ],
+      "syllableIpa": [
+        "pɚ",
+        "ˈfɔɹ",
+        "məns"
+      ],
+      "stress": 2,
+      "arpabet": "P ER0 F AO1 R M AH0 N S",
+      "audio": "assets/audio/words/performance-noun.mp3",
+      "audioSlow": "assets/audio/words/performance-noun-slow.mp3",
+      "glossYue": "績效",
+      "glossZh": "績效",
+      "jyutping": "zik1 haau6",
+      "collocations": [
+        "performance review",
+        "a performance review"
+      ],
+      "example": "Your performance review is booked for Thursday.",
+      "exampleYue": "你嘅績效面談訂咗星期四。",
+      "say": "Your performance review is booked for Thursday.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "performance",
+      "phrase": false,
+      "audioSha256": "c45cd110ce8dcce65a82f02729966c3e5b5ac7e74f54082457ad28ffa13d09ab",
+      "register": "日常",
+      "usageNotes": "績效。",
+      "pitfallsYue": "績效。",
+      "related": [
+        "summary-noun"
+      ],
+      "examples": [
+        {
+          "en": "Your performance review is booked for Thursday.",
+          "yue": "你嘅績效面談訂咗星期四。",
+          "audio": "assets/audio/words/performance-noun.mp3",
+          "audioSlow": "assets/audio/words/performance-noun-slow.mp3",
+          "say": "Your performance review is booked for Thursday."
+        },
+        {
+          "en": "Could we book a slot for my performance review?",
+          "yue": "可唔可以預約我嘅績效面談？",
+          "audio": "assets/audio/words/performance-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/performance-noun-ex2-slow.mp3",
+          "say": "Could we book a slot for my performance review?"
+        }
+      ]
+    },
+    {
+      "id": "quarter-noun",
+      "lemma": "quarter",
+      "pos": "noun",
+      "senseId": "three-months",
+      "ipa": "/ˈkwɔɹ.tɚ/",
+      "syllables": [
+        "quar",
+        "ter"
+      ],
+      "syllableIpa": [
+        "ˈkwɔɹ",
+        "tɚ"
+      ],
+      "stress": 1,
+      "arpabet": "K W AO1 R T ER0",
+      "audio": "assets/audio/words/quarter-noun.mp3",
+      "audioSlow": "assets/audio/words/quarter-noun-slow.mp3",
+      "glossYue": "季度",
+      "glossZh": "季度",
+      "jyutping": "gwai3 dou6",
+      "collocations": [
+        "last quarter",
+        "this quarter"
+      ],
+      "example": "I missed one target from last quarter.",
+      "exampleYue": "我上季有一個目標未做到。",
+      "say": "I missed one target from last quarter.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "quarter",
+      "phrase": false,
+      "audioSha256": "d9620dee26f0364b5d990ee13a36d06d16115ebbd1d9fdbe798e1443926af2a5",
+      "register": "日常",
+      "usageNotes": "季度。",
+      "pitfallsYue": "季度。",
+      "related": [
+        "performance-noun"
+      ],
+      "examples": [
+        {
+          "en": "I missed one target from last quarter.",
+          "yue": "我上季有一個目標未做到。",
+          "audio": "assets/audio/words/quarter-noun.mp3",
+          "audioSlow": "assets/audio/words/quarter-noun-slow.mp3",
+          "say": "I missed one target from last quarter."
+        },
+        {
+          "en": "The shop display slipped last quarter.",
+          "yue": "舖面佈置上季遲咗。",
+          "audio": "assets/audio/words/quarter-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/quarter-noun-ex2-slow.mp3",
+          "say": "The shop display slipped last quarter."
+        }
+      ]
+    },
+    {
+      "id": "training-noun",
+      "lemma": "training",
+      "pos": "noun",
+      "senseId": "job-course",
+      "ipa": "/ˈtɹeɪ.nɪŋ/",
+      "syllables": [
+        "trai",
+        "ning"
+      ],
+      "syllableIpa": [
+        "ˈtɹeɪ",
+        "nɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "T R EY1 N IH0 NG",
+      "audio": "assets/audio/words/training-noun.mp3",
+      "audioSlow": "assets/audio/words/training-noun-slow.mp3",
+      "glossYue": "培訓",
+      "glossZh": "培訓",
+      "jyutping": "pui4 fan3",
+      "collocations": [
+        "training budget",
+        "a training course"
+      ],
+      "example": "Could our training budget cover a short course?",
+      "exampleYue": "培訓預算可唔可以支付一個短期課程？",
+      "say": "Could our training budget cover a short course?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "training",
+      "phrase": false,
+      "audioSha256": "0841ccc9c7c4956954d8e2f657b6d372f0058c0932695c1e928bf2ca2ca66a78",
+      "register": "日常",
+      "usageNotes": "培訓。",
+      "pitfallsYue": "培訓。",
+      "related": [
+        "summary-noun"
+      ],
+      "examples": [
+        {
+          "en": "Could our training budget cover a short course?",
+          "yue": "培訓預算可唔可以支付一個短期課程？",
+          "audio": "assets/audio/words/training-noun.mp3",
+          "audioSlow": "assets/audio/words/training-noun-slow.mp3",
+          "say": "Could our training budget cover a short course?"
+        },
+        {
+          "en": "That training budget can pay for the class.",
+          "yue": "培訓預算可以支付嗰個班。",
+          "audio": "assets/audio/words/training-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/training-noun-ex2-slow.mp3",
+          "say": "That training budget can pay for the class."
+        }
+      ]
+    },
+    {
+      "id": "summary-noun",
+      "lemma": "summary",
+      "pos": "noun",
+      "senseId": "written-recap",
+      "ipa": "/ˈsʌ.mɚ.i/",
+      "syllables": [
+        "sum",
+        "ma",
+        "ry"
+      ],
+      "syllableIpa": [
+        "ˈsʌ",
+        "mɚ",
+        "i"
+      ],
+      "stress": 1,
+      "arpabet": "S AH1 M ER0 IY0",
+      "audio": "assets/audio/words/summary-noun.mp3",
+      "audioSlow": "assets/audio/words/summary-noun-slow.mp3",
+      "glossYue": "總結",
+      "glossZh": "總結",
+      "jyutping": "zung2 git3",
+      "collocations": [
+        "a written summary",
+        "send that summary"
+      ],
+      "example": "Will you email a written summary after the meeting?",
+      "exampleYue": "會唔會喺會後電郵一份書面總結？",
+      "say": "Will you email a written summary after the meeting?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "summary",
+      "phrase": false,
+      "audioSha256": "246ca2ae16fded67ad843a4e1c7d5be9454f4346a3224c201e1dadfcf22bdd8c",
+      "register": "日常",
+      "usageNotes": "總結。",
+      "pitfallsYue": "總結。",
+      "related": [
+        "performance-noun"
+      ],
+      "examples": [
+        {
+          "en": "Will you email a written summary after the meeting?",
+          "yue": "會唔會喺會後電郵一份書面總結？",
+          "audio": "assets/audio/words/summary-noun.mp3",
+          "audioSlow": "assets/audio/words/summary-noun-slow.mp3",
+          "say": "Will you email a written summary after the meeting?"
+        },
+        {
+          "en": "I will send that summary once the goals are agreed.",
+          "yue": "目標同意之後我會寄嗰份總結。",
+          "audio": "assets/audio/words/summary-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/summary-noun-ex2-slow.mp3",
+          "say": "I will send that summary once the goals are agreed."
+        }
+      ]
+    },
+    {
+      "id": "customs-noun",
+      "lemma": "customs",
+      "pos": "noun",
+      "senseId": "border-desk",
+      "ipa": "/ˈkʌ.stəmz/",
+      "syllables": [
+        "cus",
+        "toms"
+      ],
+      "syllableIpa": [
+        "ˈkʌ",
+        "stəmz"
+      ],
+      "stress": 1,
+      "arpabet": "K AH1 S T AH0 M Z",
+      "audio": "assets/audio/words/customs-noun.mp3",
+      "audioSlow": "assets/audio/words/customs-noun-slow.mp3",
+      "glossYue": "海關",
+      "glossZh": "海關",
+      "jyutping": "hoi2 gwaan1",
+      "collocations": [
+        "the customs form",
+        "skip the customs form"
+      ],
+      "example": "Gifts under the limit can skip the customs form.",
+      "exampleYue": "禮物未過限額就可以唔填海關表。",
+      "say": "Gifts under the limit can skip the customs form.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "customs",
+      "phrase": false,
+      "audioSha256": "9922d2a742deee3fd83f9078ec6edf97294d7a3f9682d9c656afb771b162e843",
+      "register": "日常",
+      "usageNotes": "海關。",
+      "pitfallsYue": "海關。",
+      "related": [
+        "duty-noun"
+      ],
+      "examples": [
+        {
+          "en": "Gifts under the limit can skip the customs form.",
+          "yue": "禮物未過限額就可以唔填海關表。",
+          "audio": "assets/audio/words/customs-noun.mp3",
+          "audioSlow": "assets/audio/words/customs-noun-slow.mp3",
+          "say": "Gifts under the limit can skip the customs form."
+        },
+        {
+          "en": "This customs form is for the gifts.",
+          "yue": "呢張海關表係用嚟報禮物。",
+          "audio": "assets/audio/words/customs-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/customs-noun-ex2-slow.mp3",
+          "say": "This customs form is for the gifts."
+        }
+      ]
+    },
+    {
+      "id": "duty-noun",
+      "lemma": "duty",
+      "pos": "noun",
+      "senseId": "import-tax",
+      "ipa": "/ˈdu.ti/",
+      "syllables": [
+        "du",
+        "ty"
+      ],
+      "syllableIpa": [
+        "ˈdu",
+        "ti"
+      ],
+      "stress": 1,
+      "arpabet": "D UW1 T IY0",
+      "audio": "assets/audio/words/duty-noun.mp3",
+      "audioSlow": "assets/audio/words/duty-noun-slow.mp3",
+      "glossYue": "關稅",
+      "glossZh": "關稅",
+      "jyutping": "gwaan1 seoi3",
+      "collocations": [
+        "pay the duty",
+        "the duty counter"
+      ],
+      "example": "Can I pay the duty at this counter?",
+      "exampleYue": "我可唔可以喺呢個櫃檯交關稅？",
+      "say": "Can I pay the duty at this counter?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "duty",
+      "phrase": false,
+      "audioSha256": "6f795154a2416b871358671a820c5b59a6f0888e19c64d8c3e1b37a38b13f154",
+      "register": "日常",
+      "usageNotes": "關稅。",
+      "pitfallsYue": "關稅。",
+      "related": [
+        "customs-noun"
+      ],
+      "examples": [
+        {
+          "en": "Can I pay the duty at this counter?",
+          "yue": "我可唔可以喺呢個櫃檯交關稅？",
+          "audio": "assets/audio/words/duty-noun.mp3",
+          "audioSlow": "assets/audio/words/duty-noun-slow.mp3",
+          "say": "Can I pay the duty at this counter?"
+        },
+        {
+          "en": "Pay the duty here and keep the slip.",
+          "yue": "喺度交關稅，然後留低張單。",
+          "audio": "assets/audio/words/duty-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/duty-noun-ex2-slow.mp3",
+          "say": "Pay the duty here and keep the slip."
+        }
+      ]
+    },
+    {
+      "id": "allowance-noun",
+      "lemma": "allowance",
+      "pos": "noun",
+      "senseId": "duty-free-cap",
+      "ipa": "/ə.ˈlaʊ.əns/",
+      "syllables": [
+        "a",
+        "llow",
+        "ance"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈlaʊ",
+        "əns"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 L AW1 AH0 N S",
+      "audio": "assets/audio/words/allowance-noun.mp3",
+      "audioSlow": "assets/audio/words/allowance-noun-slow.mp3",
+      "glossYue": "限額",
+      "glossZh": "限額",
+      "jyutping": "haan6 ngaak6",
+      "collocations": [
+        "over the allowance",
+        "the alcohol allowance"
+      ],
+      "example": "This bottle of alcohol is over the allowance.",
+      "exampleYue": "呢枝酒過咗限額。",
+      "say": "This bottle of alcohol is over the allowance.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "allowance",
+      "phrase": false,
+      "audioSha256": "a35082875824bd7274bbc31a049fc47c30e1d3707317ce798bde99be9bf92fdd",
+      "register": "日常",
+      "usageNotes": "限額。",
+      "pitfallsYue": "限額。",
+      "related": [
+        "alcohol-noun"
+      ],
+      "examples": [
+        {
+          "en": "This bottle of alcohol is over the allowance.",
+          "yue": "呢枝酒過咗限額。",
+          "audio": "assets/audio/words/allowance-noun.mp3",
+          "audioSlow": "assets/audio/words/allowance-noun-slow.mp3",
+          "say": "This bottle of alcohol is over the allowance."
+        },
+        {
+          "en": "The alcohol allowance is one bottle.",
+          "yue": "酒類限額係一枝。",
+          "audio": "assets/audio/words/allowance-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/allowance-noun-ex2-slow.mp3",
+          "say": "The alcohol allowance is one bottle."
+        }
+      ]
+    },
+    {
+      "id": "alcohol-noun",
+      "lemma": "alcohol",
+      "pos": "noun",
+      "senseId": "drink-spirit",
+      "ipa": "/ˈæl.kə.ˌhɑl/",
+      "syllables": [
+        "al",
+        "co",
+        "hol"
+      ],
+      "syllableIpa": [
+        "ˈæl",
+        "kə",
+        "ˌhɑl"
+      ],
+      "stress": 1,
+      "arpabet": "AE1 L K AH0 HH AA2 L",
+      "audio": "assets/audio/words/alcohol-noun.mp3",
+      "audioSlow": "assets/audio/words/alcohol-noun-slow.mp3",
+      "glossYue": "酒精",
+      "glossZh": "酒精",
+      "jyutping": "zau2 zing1",
+      "collocations": [
+        "a bottle of alcohol",
+        "that alcohol"
+      ],
+      "example": "This bottle of alcohol is over the limit.",
+      "exampleYue": "呢枝酒過咗限額。",
+      "say": "This bottle of alcohol is over the limit.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "alcohol",
+      "phrase": false,
+      "audioSha256": "88ee0120143ac04224279d5122b6d6c91fe34582ce0de049b5e14d1e1d8ccf61",
+      "register": "日常",
+      "usageNotes": "酒精。",
+      "pitfallsYue": "酒精。",
+      "related": [
+        "allowance-noun"
+      ],
+      "examples": [
+        {
+          "en": "This bottle of alcohol is over the limit.",
+          "yue": "呢枝酒過咗限額。",
+          "audio": "assets/audio/words/alcohol-noun.mp3",
+          "audioSlow": "assets/audio/words/alcohol-noun-slow.mp3",
+          "say": "This bottle of alcohol is over the limit."
+        },
+        {
+          "en": "You should pay because that alcohol is over.",
+          "yue": "因為酒過咗限額，你應該畀錢。",
+          "audio": "assets/audio/words/alcohol-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/alcohol-noun-ex2-slow.mp3",
+          "say": "You should pay because that alcohol is over."
         }
       ]
     }

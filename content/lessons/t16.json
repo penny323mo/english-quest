@@ -27,7 +27,7 @@
     "自付額",
     "刮痕"
   ],
-  "next": "W2",
+  "next": "T18",
   "sound": {
     "ipa": "/aɪ/",
     "title": "licence 入面嗰個音",
@@ -270,12 +270,24 @@
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "thanks",
-        "international"
+        "Thanks.",
+        "Do",
+        "you",
+        "also",
+        "have",
+        "an",
+        "international",
+        "permit?"
       ],
       "answer": [
-        "thanks",
-        "international"
+        "Thanks.",
+        "Do",
+        "you",
+        "also",
+        "have",
+        "an",
+        "international",
+        "permit?"
       ]
     }
   ],
@@ -331,7 +343,7 @@
         "time"
       ],
       "answer": 2,
-      "explain": "租車。"
+      "explain": "時間。"
     }
   ],
   "shadow": {

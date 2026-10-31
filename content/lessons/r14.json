@@ -29,7 +29,7 @@
     "訂金",
     "蠟燭"
   ],
-  "next": "R5",
+  "next": "R15",
   "sound": {
     "ipa": "/eɪ/",
     "title": "cake 入面嗰個音",
@@ -203,22 +203,22 @@
     {
       "prompt": "Yes. We can add that message. When do you want to pick it up? 即係問緊咩？",
       "choices": [
-        "講緊芒果",
+        "關於訊息",
         "唔係蛋糕",
-        "關於訊息"
+        "講緊芒果"
       ],
       "answer": 0,
-      "explain": "芒果。"
+      "explain": "訊息。"
     },
     {
       "prompt": "Of course. Your cake will be ready at three on Saturday. 呢句即係點？",
       "choices": [
         "唔係蛋糕",
         "關於芒果",
-        "講緊訊息"
+        "講緊星期六"
       ],
       "answer": 2,
-      "explain": "訊息。"
+      "explain": "星期六。"
     }
   ],
   "chunks": [
@@ -272,12 +272,26 @@
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "sure",
-        "what"
+        "Sure.",
+        "What",
+        "flavour",
+        "would",
+        "you",
+        "like,",
+        "chocolate",
+        "or",
+        "mango?"
       ],
       "answer": [
-        "sure",
-        "what"
+        "Sure.",
+        "What",
+        "flavour",
+        "would",
+        "you",
+        "like,",
+        "chocolate",
+        "or",
+        "mango?"
       ]
     }
   ],
@@ -333,7 +347,7 @@
         "message"
       ],
       "answer": 0,
-      "explain": "蛋糕。"
+      "explain": "訂金。"
     }
   ],
   "shadow": {

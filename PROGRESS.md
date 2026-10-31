@@ -1,7 +1,7 @@
 # English Quest loop progress
 
 last_reported_round: 42
-last_audited_round: 43
+last_audited_round: 44
 
 phase: 4
 phase2_rounds: 11-16
@@ -26,6 +26,8 @@ phase2_rules: |
   - Penny APPROVED 2026-10-30 ~15:58 bright cartoon mockups (review/mockup-v1 + ART-STYLE.md 小燈) — implement round 20+
   - SFX required: correct/wrong/complete/XP|level-up/streak/tap; Web Audio or free/CC0; Settings mute; iOS unlock; no overlap with TTS
 
+- 2026-10-31 17:38: fix-45 (R15 W12 T18 + r44 audit #128–#131) still in progress in grokcoder-pane (~35 min since review-45 @17:03; lessons/art/audio on disk, building + 390 walk; orch attempt 1, may retry on 45m timeout). Orchestrator pid 1213336 alive, heartbeat fresh, live 200 (= round 44, 910603b / index-BpehFwu_.js). Round 44 already audited 17:12; prompts/orch-fix-46 + orch-review-46 ready. No new round finished; nothing reported. last_reported_round: 42 (next Duet report after round 45). Nightly panes untouched.
+- 2026-10-31 17:12: Coder live audit round 44 (fix-44 910603b, bundle index-BpehFwu_.js) at review/loop-r44 (local only). Live 200; path 81/81; 15 lessons walked 21 steps each, 0 errors/HTTP≥400, maxSW 390; LH mobile 99/100/100/100. Scores Art7 UI8 Lex8 Pron8 Ped8 Speak8 SRS9 Flow9 Perf10 Audio9 Durability9 CI9. CLOSED #102/#121/#95/#114/#123/#124/#125/#126/#127. STILL OPEN #128. NEW #129 J20 cast≠hero, #130 D13 Dra.Luna/multilingual, #131 T17 which-way Yes. Wrote prompts/orch-fix-46.txt + orch-review-46.txt + orch-fix-45-addendum.txt. fix-45 still running (R15/W12/T18) — next Duet report after round 45. last_reported_round unchanged (42).
 - 2026-10-30 00:33: build (night-1, commit 8eacd11) pushed to main, live 200; review-1 in progress in eq-review-pane. Round 1 not yet finished, nothing reported.
 - 2026-10-30 01:02: fix-1 in progress in grokcoder-pane (sent 00:47, actively committing/pushing). Orchestrator pid 554632 alive, live 200. Round 1 not finished, nothing reported.
 - 2026-10-30 01:55: Rounds 1–3 finished (fix-3 live, commit 3b3e48f, live 200). Coder live audit at review/loop-r3 (scores Art 8, UI 8, Lexicon 9, Pron UX 8, Pedagogy 6, Speaking 8, SRS 9, Flow 7, Perf 10, Audio 9; LH 100x4; 20/20 lexicon match dictionaryapi.dev + ASR). Defects in review/loop-r3/coder-audit.md, injected into prompts/orch-fix-4.txt. Reported rounds 1–3 to Grok Duet via parent. review-4 running.

@@ -1,0 +1,358 @@
+{
+  "id": "W12",
+  "unit": "W",
+  "titleYue": "績效面談",
+  "titleEn": "Performance review chat",
+  "canDoYue": "你識預約三十分鐘績效面談，講上季未達標嘅項目，問培訓預算，同確認總結電郵。",
+  "canDoEn": "Book a thirty-minute performance review, name the project that slipped last quarter, ask about the training budget, and confirm the summary email.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/w12.webp",
+  "cast": [
+    "tom",
+    "niles"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "performance-noun",
+    "quarter-noun",
+    "training-noun",
+    "summary-noun"
+  ],
+  "topicTags": [
+    "績效",
+    "季度",
+    "培訓",
+    "總結"
+  ],
+  "next": "D3",
+  "sound": {
+    "ipa": "/ɔ/",
+    "title": "performance 入面嗰個音",
+    "note": "performance 有 /ɔ/。quarter 有 /ɔ/。",
+    "pairs": [
+      {
+        "a": "performance-noun",
+        "b": "summary-noun"
+      },
+      {
+        "a": "quarter-noun",
+        "b": "training-noun"
+      }
+    ],
+    "drill": [
+      "performance-noun",
+      "summary-noun",
+      "quarter-noun",
+      "training-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "w12-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could we book a thirty minute slot for my performance review soon?",
+      "glossYue": "可唔可以快啲預約三十分鐘嘅績效面談？",
+      "audio": "assets/audio/lines/w12-l1.mp3",
+      "audioSlow": "assets/audio/lines/w12-l1-slow.mp3",
+      "say": "Could we book a thirty minute slot for my performance review soon?",
+      "hideGloss": false
+    },
+    {
+      "id": "w12-l2",
+      "speaker": "niles",
+      "speakerLabel": "Niles",
+      "text": "Yes. Your performance review is booked for Thursday at ten in the morning.",
+      "glossYue": "可以。你嘅績效面談訂咗星期四上晝十點。",
+      "audio": "assets/audio/lines/w12-l2.mp3",
+      "audioSlow": "assets/audio/lines/w12-l2-slow.mp3",
+      "say": "Yes. Your performance review is booked for Thursday at ten in the morning.",
+      "hideGloss": false
+    },
+    {
+      "id": "w12-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Did I miss one target from last quarter on the shop project?",
+      "glossYue": "我上季係咪有一個舖面目標未做到？",
+      "audio": "assets/audio/lines/w12-l3.mp3",
+      "audioSlow": "assets/audio/lines/w12-l3-slow.mp3",
+      "say": "Did I miss one target from last quarter on the shop project?",
+      "hideGloss": false
+    },
+    {
+      "id": "w12-l4",
+      "speaker": "niles",
+      "speakerLabel": "Niles",
+      "text": "Yes. The shop window display slipped last quarter, and the rest held.",
+      "glossYue": "係。舖面櫥窗上季遲咗，其他都做到。",
+      "audio": "assets/audio/lines/w12-l4.mp3",
+      "audioSlow": "assets/audio/lines/w12-l4-slow.mp3",
+      "say": "Yes. The shop window display slipped last quarter, and the rest held.",
+      "hideGloss": false
+    },
+    {
+      "id": "w12-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could our training budget cover a short sales course next month, please?",
+      "glossYue": "培訓預算可唔可以支付下個月一個短期銷售課程？",
+      "audio": "assets/audio/lines/w12-l5.mp3",
+      "audioSlow": "assets/audio/lines/w12-l5-slow.mp3",
+      "say": "Could our training budget cover a short sales course next month, please?",
+      "hideGloss": false
+    },
+    {
+      "id": "w12-l6",
+      "speaker": "niles",
+      "speakerLabel": "Niles",
+      "text": "Yes. That training budget can still pay for the two day sales class.",
+      "glossYue": "可以。培訓預算仲可以支付嗰個兩日銷售班。",
+      "audio": "assets/audio/lines/w12-l6.mp3",
+      "audioSlow": "assets/audio/lines/w12-l6-slow.mp3",
+      "say": "Yes. That training budget can still pay for the two day sales class.",
+      "hideGloss": false
+    },
+    {
+      "id": "w12-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Will you email a written summary after we set the next goals?",
+      "glossYue": "我哋定咗下一批目標之後，你會唔會電郵一份書面總結？",
+      "audio": "assets/audio/lines/w12-l7.mp3",
+      "audioSlow": "assets/audio/lines/w12-l7-slow.mp3",
+      "say": "Will you email a written summary after we set the next goals?",
+      "hideGloss": false
+    },
+    {
+      "id": "w12-l8",
+      "speaker": "niles",
+      "speakerLabel": "Niles",
+      "text": "Yes. I will send that summary once the new goals are agreed.",
+      "glossYue": "會。新目標同意之後我會寄嗰份總結。",
+      "audio": "assets/audio/lines/w12-l8.mp3",
+      "audioSlow": "assets/audio/lines/w12-l8-slow.mp3",
+      "say": "Yes. I will send that summary once the new goals are agreed.",
+      "hideGloss": false
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你同 Niles 傾呢件事。等對方講完先答。",
+    "turns": [
+      {
+        "partner": "Niles",
+        "partnerId": "niles",
+        "line": "Yes. Your performance review is booked for Thursday at ten in the morning.",
+        "audio": "assets/audio/lines/w12-l2.mp3",
+        "audioSlow": "assets/audio/lines/w12-l2-slow.mp3",
+        "expect": "Did I miss one target from last quarter on the shop project?",
+        "keywords": [
+          "quarter",
+          "target"
+        ],
+        "modelAudio": "assets/audio/lines/w12-l3.mp3",
+        "modelSlow": "assets/audio/lines/w12-l3-slow.mp3"
+      },
+      {
+        "partner": "Niles",
+        "partnerId": "niles",
+        "line": "Yes. The shop window display slipped last quarter, and the rest held.",
+        "audio": "assets/audio/lines/w12-l4.mp3",
+        "audioSlow": "assets/audio/lines/w12-l4-slow.mp3",
+        "expect": "Could our training budget cover a short sales course next month, please?",
+        "keywords": [
+          "training",
+          "budget"
+        ],
+        "modelAudio": "assets/audio/lines/w12-l5.mp3",
+        "modelSlow": "assets/audio/lines/w12-l5-slow.mp3"
+      },
+      {
+        "partner": "Niles",
+        "partnerId": "niles",
+        "line": "Yes. That training budget can still pay for the two day sales class.",
+        "audio": "assets/audio/lines/w12-l6.mp3",
+        "audioSlow": "assets/audio/lines/w12-l6-slow.mp3",
+        "expect": "Will you email a written summary after we set the next goals?",
+        "keywords": [
+          "summary",
+          "goals"
+        ],
+        "modelAudio": "assets/audio/lines/w12-l7.mp3",
+        "modelSlow": "assets/audio/lines/w12-l7-slow.mp3"
+      }
+    ]
+  },
+  "understand": [
+    {
+      "prompt": "Could we book a thirty minute slot for my performance review soon? 呢句即係點？",
+      "choices": [
+        "關於季度",
+        "講緊績效",
+        "唔係總結"
+      ],
+      "answer": 1,
+      "explain": "績效。"
+    },
+    {
+      "prompt": "Yes. The shop window display slipped last quarter, and the rest held. 呢句即係點？",
+      "choices": [
+        "關於季度",
+        "唔係績效",
+        "講緊培訓"
+      ],
+      "answer": 0,
+      "explain": "季度。"
+    },
+    {
+      "prompt": "Yes. I will send that summary once the new goals are agreed. 呢句即係點？",
+      "choices": [
+        "唔係季度",
+        "關於績效",
+        "講緊總結"
+      ],
+      "answer": 2,
+      "explain": "總結。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Could we book a thirty minute slot for my ___ review soon?",
+      "example": "Could we book a thirty minute slot for my performance review soon?",
+      "glossYue": "可唔可以快啲預約三十分鐘嘅績效面談？",
+      "answer": "performance",
+      "choices": [
+        "performance",
+        "quarter",
+        "summary"
+      ]
+    },
+    {
+      "pattern": "Did I miss one target from last ___ on the shop project?",
+      "example": "Did I miss one target from last quarter on the shop project?",
+      "glossYue": "我上季係咪有一個舖面目標未做到？",
+      "answer": "quarter",
+      "choices": [
+        "quarter",
+        "training",
+        "summary"
+      ]
+    },
+    {
+      "pattern": "Will you email a written ___ after we set the next goals?",
+      "example": "Will you email a written summary after we set the next goals?",
+      "glossYue": "我哋定咗下一批目標之後，你會唔會電郵一份書面總結？",
+      "answer": "summary",
+      "choices": [
+        "summary",
+        "performance",
+        "quarter"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想用呢課嘅講法。你點講？",
+      "choices": [
+        "Could we book a thirty minute slot for my performance review soon?",
+        "Did I miss one target from last quarter on the shop project?",
+        "Could our training budget cover a short sales course next month, please?"
+      ],
+      "answer": 1,
+      "explain": "用呢句。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Yes.",
+        "I",
+        "will",
+        "send",
+        "that",
+        "summary",
+        "once",
+        "the",
+        "new",
+        "goals",
+        "are",
+        "agreed."
+      ],
+      "answer": [
+        "Yes.",
+        "I",
+        "will",
+        "send",
+        "that",
+        "summary",
+        "once",
+        "the",
+        "new",
+        "goals",
+        "are",
+        "agreed."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "quarter",
+        "performance",
+        "summary"
+      ],
+      "answer": 1,
+      "lemma": "performance-noun"
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "summary",
+        "quarter",
+        "training"
+      ],
+      "answer": 2,
+      "lemma": "training-noun"
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "績效",
+        "季度",
+        "總結"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "總結",
+        "培訓",
+        "績效"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word fits this lesson?",
+      "choices": [
+        "performance",
+        "quarter",
+        "summary"
+      ],
+      "answer": 2,
+      "explain": "總結。"
+    }
+  ],
+  "shadow": {
+    "lineId": "w12-l1",
+    "hint": "Could we book a thirty minute slot for my performance review soon?"
+  }
+}

@@ -1,0 +1,355 @@
+{
+  "id": "R15",
+  "unit": "R",
+  "titleYue": "自助餐同戒口",
+  "titleEn": "Buffet and dietary limits",
+  "canDoYue": "你識問自助餐係咪任食、汽水包唔包、邊啲菜有貝殼類，同埋一次攞一碟。",
+  "canDoEn": "Ask whether the buffet is eat-in, whether soft drinks are included, which dishes have shellfish, and whether you may take one plate at a time.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/r15.webp",
+  "cast": [
+    "tom",
+    "mira"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "buffet-noun",
+    "soft-drink-noun",
+    "plate-noun"
+  ],
+  "topicTags": [
+    "自助餐",
+    "汽水",
+    "貝殼",
+    "餐碟"
+  ],
+  "next": "R5",
+  "sound": {
+    "ipa": "/eɪ/",
+    "title": "buffet 入面嗰個音",
+    "note": "buffet 有 /eɪ/。plate 有 /eɪ/。",
+    "pairs": [
+      {
+        "a": "buffet-noun",
+        "b": "plate-noun"
+      },
+      {
+        "a": "soft-drink-noun",
+        "b": "shellfish-noun"
+      }
+    ],
+    "drill": [
+      "buffet-noun",
+      "plate-noun",
+      "soft-drink-noun",
+      "shellfish-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "r15-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Is this buffet all you can eat, and is takeaway banned?",
+      "glossYue": "呢個自助餐係咪任食，而且唔可以拎走？",
+      "audio": "assets/audio/lines/r15-l1.mp3",
+      "audioSlow": "assets/audio/lines/r15-l1-slow.mp3",
+      "say": "Is this buffet all you can eat, and is takeaway banned?",
+      "hideGloss": false
+    },
+    {
+      "id": "r15-l2",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "Yes. This buffet is for here only, so takeaway is banned.",
+      "glossYue": "係。呢個自助餐只可以堂食，所以唔可以拎走。",
+      "audio": "assets/audio/lines/r15-l2.mp3",
+      "audioSlow": "assets/audio/lines/r15-l2-slow.mp3",
+      "say": "Yes. This buffet is for here only, so takeaway is banned.",
+      "hideGloss": false
+    },
+    {
+      "id": "r15-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Are soft drinks included, or do I pay for each one?",
+      "glossYue": "汽水係咪包咗，定係要逐杯畀錢？",
+      "audio": "assets/audio/lines/r15-l3.mp3",
+      "audioSlow": "assets/audio/lines/r15-l3-slow.mp3",
+      "say": "Are soft drinks included, or do I pay for each one?",
+      "hideGloss": false
+    },
+    {
+      "id": "r15-l4",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "Yes. Those soft drinks are included for every adult at the table.",
+      "glossYue": "係。每位成人喺檯上都包汽水。",
+      "audio": "assets/audio/lines/r15-l4.mp3",
+      "audioSlow": "assets/audio/lines/r15-l4-slow.mp3",
+      "say": "Yes. Those soft drinks are included for every adult at the table.",
+      "hideGloss": true
+    },
+    {
+      "id": "r15-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Which hot dishes have shellfish, and may I have a clean plate?",
+      "glossYue": "邊啲熱菜有貝殼類？可唔可以畀個乾淨碟我？",
+      "audio": "assets/audio/lines/r15-l5.mp3",
+      "audioSlow": "assets/audio/lines/r15-l5-slow.mp3",
+      "say": "Which hot dishes have shellfish, and may I have a clean plate?",
+      "hideGloss": true
+    },
+    {
+      "id": "r15-l6",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "The prawn soup has shellfish, so here is a clean plate.",
+      "glossYue": "蝦湯有貝殼類，所以呢個係乾淨碟。",
+      "audio": "assets/audio/lines/r15-l6.mp3",
+      "audioSlow": "assets/audio/lines/r15-l6-slow.mp3",
+      "say": "The prawn soup has shellfish, so here is a clean plate.",
+      "hideGloss": true
+    },
+    {
+      "id": "r15-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Can I come back for a second serving after this one?",
+      "glossYue": "我食完呢份可唔可以再攞第二次？",
+      "audio": "assets/audio/lines/r15-l7.mp3",
+      "audioSlow": "assets/audio/lines/r15-l7-slow.mp3",
+      "say": "Can I come back for a second serving after this one?",
+      "hideGloss": true
+    },
+    {
+      "id": "r15-l8",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "Yes. A second serving is fine once that one is finished.",
+      "glossYue": "可以。食完呢份就可以再攞。",
+      "audio": "assets/audio/lines/r15-l8.mp3",
+      "audioSlow": "assets/audio/lines/r15-l8-slow.mp3",
+      "say": "Yes. A second serving is fine once that one is finished.",
+      "hideGloss": true
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你同 Mira 傾呢件事。等對方講完先答。",
+    "turns": [
+      {
+        "partner": "Mira",
+        "partnerId": "mira",
+        "line": "Yes. This buffet is for here only, so takeaway is banned.",
+        "audio": "assets/audio/lines/r15-l2.mp3",
+        "audioSlow": "assets/audio/lines/r15-l2-slow.mp3",
+        "expect": "Are soft drinks included, or do I pay for each one?",
+        "keywords": [
+          "soft",
+          "drinks"
+        ],
+        "modelAudio": "assets/audio/lines/r15-l3.mp3",
+        "modelSlow": "assets/audio/lines/r15-l3-slow.mp3"
+      },
+      {
+        "partner": "Mira",
+        "partnerId": "mira",
+        "line": "Yes. Those soft drinks are included for every adult at the table.",
+        "audio": "assets/audio/lines/r15-l4.mp3",
+        "audioSlow": "assets/audio/lines/r15-l4-slow.mp3",
+        "expect": "Which hot dishes have shellfish, and may I have a clean plate?",
+        "keywords": [
+          "shellfish",
+          "plate"
+        ],
+        "modelAudio": "assets/audio/lines/r15-l5.mp3",
+        "modelSlow": "assets/audio/lines/r15-l5-slow.mp3"
+      },
+      {
+        "partner": "Mira",
+        "partnerId": "mira",
+        "line": "The prawn soup has shellfish, so here is a clean plate.",
+        "audio": "assets/audio/lines/r15-l6.mp3",
+        "audioSlow": "assets/audio/lines/r15-l6-slow.mp3",
+        "expect": "Can I come back for a second serving after this one?",
+        "keywords": [
+          "second",
+          "serving"
+        ],
+        "modelAudio": "assets/audio/lines/r15-l7.mp3",
+        "modelSlow": "assets/audio/lines/r15-l7-slow.mp3"
+      }
+    ]
+  },
+  "understand": [
+    {
+      "prompt": "Is this buffet all you can eat, and is takeaway banned? 呢句即係點？",
+      "choices": [
+        "關於汽水",
+        "講緊自助餐",
+        "唔係餐碟"
+      ],
+      "answer": 1,
+      "explain": "自助餐。"
+    },
+    {
+      "prompt": "Yes. Those soft drinks are included for every adult at the table. 呢句即係點？",
+      "choices": [
+        "關於汽水",
+        "唔係自助餐",
+        "講緊餐碟"
+      ],
+      "answer": 0,
+      "explain": "汽水。"
+    },
+    {
+      "prompt": "The prawn soup has shellfish, so here is a clean plate. 呢句即係點？",
+      "choices": [
+        "唔係汽水",
+        "關於自助餐",
+        "講緊貝殼"
+      ],
+      "answer": 2,
+      "explain": "貝殼。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Yes. This ___ is for here only, so takeaway is banned.",
+      "example": "Yes. This buffet is for here only, so takeaway is banned.",
+      "glossYue": "係。呢個自助餐只可以堂食，所以唔可以拎走。",
+      "answer": "buffet",
+      "choices": [
+        "buffet",
+        "plate",
+        "drink"
+      ]
+    },
+    {
+      "pattern": "Yes. Those soft ___ are included for every adult at the table.",
+      "example": "Yes. Those soft drinks are included for every adult at the table.",
+      "glossYue": "係。每位成人喺檯上都包汽水。",
+      "answer": "drinks",
+      "choices": [
+        "drinks",
+        "buffet",
+        "plate"
+      ]
+    },
+    {
+      "pattern": "The prawn soup has shellfish, so here is a clean ___.",
+      "example": "The prawn soup has shellfish, so here is a clean plate.",
+      "glossYue": "蝦湯有貝殼類，所以呢個係乾淨碟。",
+      "answer": "plate",
+      "choices": [
+        "plate",
+        "buffet",
+        "drinks"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想用呢課嘅講法。你點講？",
+      "choices": [
+        "Is this buffet all you can eat, and is takeaway banned?",
+        "Are soft drinks included, or do I pay for each one?",
+        "Which hot dishes have shellfish, and may I have a clean plate?"
+      ],
+      "answer": 1,
+      "explain": "用呢句。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "The",
+        "prawn",
+        "soup",
+        "has",
+        "shellfish,",
+        "so",
+        "here",
+        "is",
+        "a",
+        "clean",
+        "plate."
+      ],
+      "answer": [
+        "The",
+        "prawn",
+        "soup",
+        "has",
+        "shellfish,",
+        "so",
+        "here",
+        "is",
+        "a",
+        "clean",
+        "plate."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "buffet",
+        "soft drink",
+        "plate"
+      ],
+      "answer": 0,
+      "lemma": "buffet-noun"
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "buffet",
+        "plate",
+        "soft drink"
+      ],
+      "answer": 1,
+      "lemma": "plate-noun"
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "汽水",
+        "餐碟",
+        "自助餐"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "貝殼",
+        "自助餐",
+        "汽水"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word fits this lesson?",
+      "choices": [
+        "buffet",
+        "plate",
+        "soft drink"
+      ],
+      "answer": 1,
+      "explain": "餐碟。"
+    }
+  ],
+  "shadow": {
+    "lineId": "r15-l1",
+    "hint": "Is this buffet all you can eat, and is takeaway banned?"
+  }
+}

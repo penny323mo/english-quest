@@ -258,6 +258,13 @@
 - **Grammar:** I'd like a cake in a size for ten. Can I pay the deposit by card?
 - **Dialogue beats:** Size for ten → Chocolate or mango → Message → Saturday at three → Candles and deposit → Pay by card → Ready at three
 
+
+### R15 — Buffet and dietary limits / 自助餐同戒口 · A2/B1 · SHIPPED
+- **Goals:** Ask if the buffet is eat-in, whether soft drinks are included, which hot dish has shellfish, and whether a second plate is allowed.
+- **Vocab:** buffet, soft drink, plate, shellfish
+- **Grammar:** Is this buffet all you can eat? Are soft drinks included?
+- **Dialogue beats:** Eat in only → Soft drinks included → Shellfish and a clean plate → A second serving
+
 ---
 
 
@@ -375,6 +382,13 @@
 - **Grammar:** What is the insurance excess? Please return it by six on Friday.
 - **Dialogue beats:** Licence → International permit → Excess and fuel → Return time → Scratch on the rear door → Note it before you leave
 
+
+### T18 — Declaring goods at customs / 海關申報 · B1 · SHIPPED
+- **Goals:** Say the gifts are under the limit, open the bag and show the watch receipt, and pay the duty on alcohol that is over the allowance.
+- **Vocab:** customs, duty, allowance, alcohol, receipt
+- **Grammar:** Do I need to declare these gifts? Can I pay the duty at this counter?
+- **Dialogue beats:** Gifts under the limit → Open the bag → Watch receipt → Alcohol over the allowance → Pay the duty
+
 ### T9 — Flight disruption · B2 · SHIPPED
 - **Goals:** A delayed flight: rebook, then ask about a refund, then confirm the new itinerary.
 - **Vocab (16):** delayed, cancelled, connection, missed, rebook, voucher, hotel voucher, compensation, priority, standby, gate change, announcement, overnight, refund, alternative, inconvenience
@@ -459,6 +473,13 @@
 - **Vocab:** tax, deadline, email
 - **Grammar:** The tax deduction is there, but the MPF contribution is not.
 - **Dialogue beats:** Missing overtime → Tax and MPF → Next month → Who to email → Friday deadline
+
+
+### W12 — Performance review chat / 績效面談 · B1 · SHIPPED
+- **Goals:** Book a thirty-minute performance review, name the shop project that slipped last quarter, ask about the training budget, and confirm the summary email.
+- **Vocab:** performance, quarter, training, summary
+- **Grammar:** Could we book a thirty minute slot? Did I miss one target from last quarter?
+- **Dialogue beats:** Book Thursday at ten → Shop window slipped → Training budget → Summary email
 
 ---
 
@@ -549,7 +570,8 @@ Every round until map complete, ship **≥3 NEW lessons** in this order (skip al
 21. **D12, T15, W11** (clinic appointment, hotel check-out, payslip)
 22. **R14, J19, T16** (birthday cake, diamond certificate, renting a car abroad)
 23. **T17, J20, D13** (airport security, gold by weight, the dentist)
-24. Then polish / legendary review nodes / further B2 stretch
+24. **R15, W12, T18** (buffet limits, performance review, customs declaration)
+25. Then polish / legendary review nodes / further B2 stretch
 
 **Path UX:** show CEFR chip (A1/A2/B1/B2) on each node; group Path into level tracks; lock by prerequisite; keep `soon:true` teasers for unshipped.
 

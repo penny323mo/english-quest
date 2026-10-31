@@ -19,3 +19,7 @@ Round 44 already owns **T17 / J20 / D13** — do NOT redo those. Add the next tr
 - **T18 — Declaring goods at customs / 海關申報 · B1** (nothing to declare vs gifts under the limit, opening the bag, receipt for a watch, alcohol over the allowance, paying the duty at the counter). Slot in B1 near T8/T16. Target ≈12–13 words/line.
 Dialogues like the audit scripts: short natural turns, contractions, every question answered by the next line, real numbers/names, no repeated question, no contradictions, no keyword stuffing, no padding tails.
 Run tests + build; Lighthouse mobile Perf >=98. Append "## Round 45" to CHANGELOG.md. Do not git commit.
+
+
+## ADDENDUM (r44 live audit — fold in without dropping R15/W12/T18)
+See prompts/orch-fix-45-addendum.txt and review/loop-r44/coder-audit.md for #129 J20 cast, #130 D13 Dra.Luna, #128 chips. Prefer finishing new lessons first if mid-render.

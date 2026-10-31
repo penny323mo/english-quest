@@ -80,7 +80,10 @@
     "t16",
     "t17",
     "j20",
-    "d13"
+    "d13",
+    "r15",
+    "w12",
+    "t18"
   ],
   "pending": [],
   "focus": {
@@ -164,7 +167,10 @@
     "t16": "center 30%",
     "t17": "center 30%",
     "j20": "center 30%",
-    "d13": "center 30%"
+    "d13": "center 30%",
+    "r15": "center 30%",
+    "w12": "center 30%",
+    "t18": "center 30%"
   },
   "people": {
     "tom": "Adult man, short black hair, beige jacket, coral scarf, head and shoulders.",
@@ -774,6 +780,27 @@
         "ben"
       ],
       "look": "At the dentist (睇牙醫)"
+    },
+    "r15": {
+      "cast": [
+        "tom",
+        "mira"
+      ],
+      "look": "Buffet and dietary limits (自助餐同戒口)"
+    },
+    "w12": {
+      "cast": [
+        "tom",
+        "niles"
+      ],
+      "look": "Performance review chat (績效面談)"
+    },
+    "t18": {
+      "cast": [
+        "tom",
+        "kim"
+      ],
+      "look": "Declaring goods at customs (海關申報)"
     }
   }
 }

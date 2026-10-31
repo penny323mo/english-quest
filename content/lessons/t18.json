@@ -1,0 +1,360 @@
+{
+  "id": "T18",
+  "unit": "T",
+  "titleYue": "海關申報",
+  "titleEn": "Declaring goods at customs",
+  "canDoYue": "你識話禮物未過限額、打開袋畀人睇手錶收據、同埋喺櫃檯交酒類關稅。",
+  "canDoEn": "Say the gifts are under the limit, open the bag and show the watch receipt, and pay the duty on the alcohol at the counter.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t18.webp",
+  "cast": [
+    "tom",
+    "kim"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "customs-noun",
+    "duty-noun",
+    "allowance-noun",
+    "alcohol-noun"
+  ],
+  "topicTags": [
+    "禮物",
+    "海關",
+    "酒精",
+    "關稅"
+  ],
+  "next": "W2",
+  "sound": {
+    "ipa": "/ʌ/",
+    "title": "customs 入面嗰個音",
+    "note": "customs 有 /ʌ/。duty 有 /u/。",
+    "pairs": [
+      {
+        "a": "customs-noun",
+        "b": "duty-noun"
+      },
+      {
+        "a": "alcohol-noun",
+        "b": "allowance-noun"
+      }
+    ],
+    "drill": [
+      "customs-noun",
+      "duty-noun",
+      "alcohol-noun",
+      "allowance-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "t18-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Do I need to declare these gifts if they are under the limit?",
+      "glossYue": "如果呢啲禮物未過限額，我使唔使申報？",
+      "audio": "assets/audio/lines/t18-l1.mp3",
+      "audioSlow": "assets/audio/lines/t18-l1-slow.mp3",
+      "say": "Do I need to declare these gifts if they are under the limit?",
+      "hideGloss": false
+    },
+    {
+      "id": "t18-l2",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "No. Gifts under that limit can skip the whole written customs form.",
+      "glossYue": "唔使。禮物未過嗰個限額就可以唔填海關表。",
+      "audio": "assets/audio/lines/t18-l2.mp3",
+      "audioSlow": "assets/audio/lines/t18-l2-slow.mp3",
+      "say": "No. Gifts under that limit can skip the whole written customs form.",
+      "hideGloss": false
+    },
+    {
+      "id": "t18-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Should I open this bag now, and is the watch receipt enough?",
+      "glossYue": "我而家開呢個袋，手錶嘅收據夠唔夠？",
+      "audio": "assets/audio/lines/t18-l3.mp3",
+      "audioSlow": "assets/audio/lines/t18-l3-slow.mp3",
+      "say": "Should I open this bag now, and is the watch receipt enough?",
+      "hideGloss": false
+    },
+    {
+      "id": "t18-l4",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes. Open it and show me the watch receipt in the pocket.",
+      "glossYue": "夠。打開佢，畀我睇口袋入面手錶嘅收據。",
+      "audio": "assets/audio/lines/t18-l4.mp3",
+      "audioSlow": "assets/audio/lines/t18-l4-slow.mp3",
+      "say": "Yes. Open it and show me the watch receipt in the pocket.",
+      "hideGloss": false
+    },
+    {
+      "id": "t18-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "This bottle of alcohol is over the allowance. What should I pay?",
+      "glossYue": "呢枝酒過咗限額。我應該畀幾多？",
+      "audio": "assets/audio/lines/t18-l5.mp3",
+      "audioSlow": "assets/audio/lines/t18-l5-slow.mp3",
+      "say": "This bottle of alcohol is over the allowance. What should I pay?",
+      "hideGloss": false
+    },
+    {
+      "id": "t18-l6",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "You should pay forty dollars in cash because that alcohol is well over.",
+      "glossYue": "因為酒過咗限額，你應該畀四十蚊現金。",
+      "audio": "assets/audio/lines/t18-l6.mp3",
+      "audioSlow": "assets/audio/lines/t18-l6-slow.mp3",
+      "say": "You should pay forty dollars in cash because that alcohol is well over.",
+      "hideGloss": false
+    },
+    {
+      "id": "t18-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Can I pay the duty at this counter before I leave, please?",
+      "glossYue": "我可唔可以喺呢個櫃檯交關稅先走？",
+      "audio": "assets/audio/lines/t18-l7.mp3",
+      "audioSlow": "assets/audio/lines/t18-l7-slow.mp3",
+      "say": "Can I pay the duty at this counter before I leave, please?",
+      "hideGloss": false
+    },
+    {
+      "id": "t18-l8",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes. The duty is paid at this counter now, so keep the slip.",
+      "glossYue": "可以。關稅而家喺呢個櫃檯交，留低張單。",
+      "audio": "assets/audio/lines/t18-l8.mp3",
+      "audioSlow": "assets/audio/lines/t18-l8-slow.mp3",
+      "say": "Yes. The duty is paid at this counter now, so keep the slip.",
+      "hideGloss": false
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你同 Kim 傾呢件事。等對方講完先答。",
+    "turns": [
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "No. Gifts under that limit can skip the whole written customs form.",
+        "audio": "assets/audio/lines/t18-l2.mp3",
+        "audioSlow": "assets/audio/lines/t18-l2-slow.mp3",
+        "expect": "Should I open this bag now, and is the watch receipt enough?",
+        "keywords": [
+          "open",
+          "receipt"
+        ],
+        "modelAudio": "assets/audio/lines/t18-l3.mp3",
+        "modelSlow": "assets/audio/lines/t18-l3-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "Yes. Open it and show me the watch receipt in the pocket.",
+        "audio": "assets/audio/lines/t18-l4.mp3",
+        "audioSlow": "assets/audio/lines/t18-l4-slow.mp3",
+        "expect": "This bottle of alcohol is over the allowance. What should I pay?",
+        "keywords": [
+          "alcohol",
+          "allowance"
+        ],
+        "modelAudio": "assets/audio/lines/t18-l5.mp3",
+        "modelSlow": "assets/audio/lines/t18-l5-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "You should pay forty dollars in cash because that alcohol is well over.",
+        "audio": "assets/audio/lines/t18-l6.mp3",
+        "audioSlow": "assets/audio/lines/t18-l6-slow.mp3",
+        "expect": "Can I pay the duty at this counter before I leave, please?",
+        "keywords": [
+          "duty",
+          "counter"
+        ],
+        "modelAudio": "assets/audio/lines/t18-l7.mp3",
+        "modelSlow": "assets/audio/lines/t18-l7-slow.mp3"
+      }
+    ]
+  },
+  "understand": [
+    {
+      "prompt": "Do I need to declare these gifts if they are under the limit? 呢句即係點？",
+      "choices": [
+        "關於海關",
+        "講緊禮物",
+        "唔係關稅"
+      ],
+      "answer": 1,
+      "explain": "禮物。"
+    },
+    {
+      "prompt": "This bottle of alcohol is over the allowance. What should I pay? 呢句即係點？",
+      "choices": [
+        "關於酒精",
+        "唔係禮物",
+        "講緊海關"
+      ],
+      "answer": 0,
+      "explain": "酒精。"
+    },
+    {
+      "prompt": "Yes. The duty is paid at this counter now, so keep the slip. 呢句即係點？",
+      "choices": [
+        "唔係禮物",
+        "關於酒精",
+        "講緊關稅"
+      ],
+      "answer": 2,
+      "explain": "關稅。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "No. Gifts under that limit can skip the whole written ___ form.",
+      "example": "No. Gifts under that limit can skip the whole written customs form.",
+      "glossYue": "唔使。禮物未過嗰個限額就可以唔填海關表。",
+      "answer": "customs",
+      "choices": [
+        "customs",
+        "duty",
+        "alcohol"
+      ]
+    },
+    {
+      "pattern": "This bottle of alcohol is over the ___. What should I pay?",
+      "example": "This bottle of alcohol is over the allowance. What should I pay?",
+      "glossYue": "呢枝酒過咗限額。我應該畀幾多？",
+      "answer": "allowance",
+      "choices": [
+        "allowance",
+        "customs",
+        "duty"
+      ]
+    },
+    {
+      "pattern": "Can I pay the ___ at this counter before I leave, please?",
+      "example": "Can I pay the duty at this counter before I leave, please?",
+      "glossYue": "我可唔可以喺呢個櫃檯交關稅先走？",
+      "answer": "duty",
+      "choices": [
+        "duty",
+        "allowance",
+        "customs"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想用呢課嘅講法。你點講？",
+      "choices": [
+        "Do I need to declare these gifts if they are under the limit?",
+        "Should I open this bag now, and is the watch receipt enough?",
+        "This bottle of alcohol is over the allowance. What should I pay?"
+      ],
+      "answer": 1,
+      "explain": "用呢句。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Yes.",
+        "The",
+        "duty",
+        "is",
+        "paid",
+        "at",
+        "this",
+        "counter",
+        "now,",
+        "so",
+        "keep",
+        "the",
+        "slip."
+      ],
+      "answer": [
+        "Yes.",
+        "The",
+        "duty",
+        "is",
+        "paid",
+        "at",
+        "this",
+        "counter",
+        "now,",
+        "so",
+        "keep",
+        "the",
+        "slip."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "customs",
+        "duty",
+        "alcohol"
+      ],
+      "answer": 2,
+      "lemma": "alcohol-noun"
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "customs",
+        "allowance",
+        "duty"
+      ],
+      "answer": 0,
+      "lemma": "customs-noun"
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "禮物",
+        "酒精",
+        "海關"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "酒精",
+        "海關",
+        "關稅"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word fits this lesson?",
+      "choices": [
+        "duty",
+        "alcohol",
+        "allowance"
+      ],
+      "answer": 0,
+      "explain": "關稅。"
+    }
+  ],
+  "shadow": {
+    "lineId": "t18-l1",
+    "hint": "Do I need to declare these gifts if they are under the limit?"
+  }
+}

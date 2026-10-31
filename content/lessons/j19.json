@@ -209,11 +209,11 @@
       "prompt": "Yes. The report is from a lab. It is not a brand name. 呢句即係點？",
       "choices": [
         "唔係鑽石",
-        "關於證書",
-        "講緊切工"
+        "講緊切工",
+        "關於證書"
       ],
       "answer": 2,
-      "explain": "切工。"
+      "explain": "證書。"
     }
   ],
   "chunks": [
@@ -267,12 +267,34 @@
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "sure",
-        "cut"
+        "Yes.",
+        "The",
+        "report",
+        "is",
+        "from",
+        "a",
+        "lab.",
+        "It",
+        "is",
+        "not",
+        "a",
+        "brand",
+        "name."
       ],
       "answer": [
-        "sure",
-        "cut"
+        "Yes.",
+        "The",
+        "report",
+        "is",
+        "from",
+        "a",
+        "lab.",
+        "It",
+        "is",
+        "not",
+        "a",
+        "brand",
+        "name."
       ]
     }
   ],
@@ -328,7 +350,7 @@
         "diamond"
       ],
       "answer": 1,
-      "explain": "鑽石。"
+      "explain": "顏色。"
     }
   ],
   "shadow": {

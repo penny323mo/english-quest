@@ -1,0 +1,11 @@
+Review gate for round 46. Read review/loop-r44/coder-audit.md + CHANGELOG Round 46.
+
+SHIP only if ALL are true:
+1. Live (or local build) has real app-code diff vs fix-45 — not docs/tests-only.
+2. #129 J20 hero faces = gus+ida chips; #130 D13 = tom + male ben, no multilingual Dra.Luna chrome; #131 T17 which-way reply fixed + audit-script equal; #128 chips one head-shoulders style.
+3. New lessons **J21 / D14 / R16** present (12-beat, sat ≥34.3, cast match, lexicon+audio, CEFR path non-decreasing). Do NOT accept R15/W12/T18 as the “new” trio — those belong to round 45.
+4. Prior CLOSED items still closed (#102 0 below 34.3, #95 decode gate, #114/#123/#124/#125/#126/#127).
+5. Lighthouse mobile Perf ≥98; 390px path + new lessons reach 搞掂; scrollWidth 390; tests green.
+6. review/loop-* not committed.
+
+If any open item remains or empty app-code diff → NO-SHIP with the failing ids.
