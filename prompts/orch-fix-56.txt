@@ -1,0 +1,32 @@
+Phase 4 unlimited. Round 56. First read CURRICULUM.md, ART-STYLE.md, DUOLINGO-REF.md, SPEC.md, review/mockup-v1 (Penny-approved), review/loop-r54/live-audit.md (authoritative R54 live audit, written by Coder) and review/loop-r54/coder-audit.md, then reviews/orch-r56-grok.md once it exists.
+cd /workspace/sidequest/english-quest. Never touch the grokbot repo or the nightly panes. No paid services. Report files under review/ stay local: never commit them, never git add -f review/loop-r*/ or review/style-gap/, never git rm them. This round may change content/lexicon.json, tests/, web/src and audio for lines you change. Do not git commit from this prompt; the orchestrator/parent handles publish.
+
+## SUPERVISOR FREEZE (still in force) — READ FIRST
+1. **NEW LESSONS FROZEN** until Lexicon score ≥ 7. No new lesson ID, path node or hero. The path stays 97. A diff that adds a lesson fails the round.
+2. **This round's ONLY target is honest lexicon de-templating with green CI.** You may edit content/lexicon.json examples / miniDialogue, but only for the ids/classes listed below, and every line must be hand-written for that lemma. NO generator scripts that fill a slot frame, no rotating name/place/time/code tokens, no lemma-prefix tokens.
+3. Do not stage files you did not change. Never delete audio referenced by lexicon.json or lines.json.
+
+## WHY (R54 live audit, Coder, 2026-11-01): NOT SHIP, Lex 2
+R54 live (content 87f262c) had 0 errors, sw 390, LH 100/99, but the lexicon is templated, and both CI-green states were reached by gaming the skeleton test:
+- fix-54 (d0ad3e6) added **236 ex3 "Staff logged this X under code <first 6 letters>."** (yue 「職員用代號 xxx 記低咗…」), e.g. "Staff logged this hallmark under code hallma." It is learner-visible on word cards. The truncated code token makes each string unique, so the skeleton test passes. That is #170, CRITICAL. fix-55 (7a94035) KEPT all 236 and said so in CHANGELOG. Keeping them does not close anything.
+- 87f262c minis used slot frames that sat exactly at the 23 ceiling ("Can you engrave this complaint today?", "Should I pack the you're welcome tonight?", "How do locals use "the" here?"). fix-55 replaced them with **88 echo minis (both turns identical, e.g. "What do you recommend? / What do you recommend?", "I'm sorry. / I'm sorry.")** and **381 minis with no question / not a dialogue** (two unrelated sentences, e.g. postcard, popular, catch-up-later), plus nonsense like "Does this feel too complimentary? / A little. Try the next size." That is #171, MAJOR.
+- Grammar (#174): "I can handled it on my phone." (handled-verb), "I can achieved it on my phone." (achieved-verb), "Please note this together before togeth closes.", "Please note this slowly before slowly closes.", replace-verb ex3 "We need to replace before the queue opens." (no object).
+- Cantonese (#168/#173), counts at 7a94035: 的 ×20, 把 ×4 in example/mini yue; example yue still uses 實報實銷 ×12, 輸送帶 ×14, 傳送帶 ×5, 安檢篩查 ×9 although the glosses say 報銷 / 行李轉盤 / 安檢. key-card ex1 yue 「（key）可唔可以再檢查吓呢個鑰匙卡？」 does not match "Please check the key card beside the key tray."; matching-adj ex1 yue adds 耳環.
+
+## CLOSE IN ORDER
+1. **#170 CRITICAL**: rewrite all 236 "Staff logged … under code …" ex3 lines (grep `under code`). Each one is a real HK sentence that uses the lemma in its own sense, with a natural yue gloss. Re-render only those ex3 clips (normal + slow), and keep audio refs valid (tests/audio-refs.mjs).
+2. **#171 MAJOR**: every miniDialogue is a real 2-turn exchange. Turn 1 is a question or request that uses the lemma naturally. Turn 2 is a plausible reply in the same scene. No identical turns, no bare-phrase echoes, no two unrelated statements, no absurd lemma insertion (people do not "pack the you're welcome" or "engrave a complaint"). Function words and greetings (the, my, I, this, hello, hi, numbers, I'm sorry, excuse me, good night…) get a short exchange where they are actually used.
+3. **#174**: fix the 5 grammar lines above. Add a test that fails on `can|could|will + past-tense verb` and on a truncated lemma token (any word that is a strict prefix of the lemma's headword).
+4. **#172 tests (anti-gaming)**: keep the ≤3-lemmas-per-normalised-skeleton cap across head example, examples[] and mini turns, with no 3% ceiling. Also: (a) strip any token that is a prefix of the lemma or matches /code \w+/ before counting; (b) fail if a mini has identical turns or turn 1 lacks a question/request; (c) fail on yue containing 的 / 把 / 實報實銷 / 輸送帶 / 傳送帶 / 安檢篩查 when the gloss uses the HK term; (d) fail on English letters in yue except names, app, Wi-Fi, IDs. No allow-lists for new ids. A test that passes because strings are unique is gaming (#160).
+5. **#173/#168**: fix the yue inconsistencies and Mandarin-isms above. Glosses and example yue must use the same HK term.
+6. Only if 1–5 are done: #162 gloss pass on ids the audit names. Keep #143 / #146 / #154 closed (fix-55): band means monotonic, |Δ| ≤ 2 between neighbours, W8/W9 heroes unchanged.
+
+## DO NOT
+- Add lessons/heroes/path nodes, touch lessons outside the audio you re-render, touch P0-3, nightly panes or workflow_dispatch, print secrets, git commit, or delete files you did not create.
+- Write a generator that produces many lines from one frame. If 5+ lemmas share a sentence shape after you strip the lemma, rewrite them.
+- Claim a fix in CHANGELOG that the content does not show. State counts measured with `grep -c`.
+
+Run npm test + typecheck + build. CI must be green WITHOUT allow-lists. Append "## Round 56" to CHANGELOG.md: list #170 #171 #172 #173 #174 #168 as closed/open with one line of proof each (before → after counts), and state "new lessons frozen pending Lex≥7".
+
+WHEN COMPLETELY FINISHED, as your very last action, create the file /workspace/sidequest/english-quest/.orch/fix-56.done containing the word DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-56.done
