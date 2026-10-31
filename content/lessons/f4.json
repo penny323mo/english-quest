@@ -250,41 +250,41 @@
       "prompt": "你聽到邊個？",
       "lemma": "let-verb",
       "choices": [
-        "let",
         "net",
+        "let",
         "night"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "Excuse me",
       "choices": [
-        "唔該借借",
         "三點",
+        "唔該借借",
         "十蚊"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "I'm sorry",
       "choices": [
         "唔使客氣",
-        "對唔住",
-        "早晨"
+        "早晨",
+        "對唔住"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "You're welcome 係邊種回應？",
       "choices": [
         "問價錢",
-        "唔使客氣，回應多謝",
-        "問幾點"
+        "問幾點",
+        "唔使客氣，回應多謝"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "人哋多謝你，你先講 you're welcome。"
     }
   ],

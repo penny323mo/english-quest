@@ -301,10 +301,10 @@
       "lemma": "temporary-limit-phrase",
       "choices": [
         "identity",
-        "temporary limit",
-        "machine"
+        "machine",
+        "temporary limit"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
@@ -320,21 +320,21 @@
       "type": "meaning",
       "prompt": "You say 'It lasts for one working day.' What does working day mean?",
       "choices": [
-        "工作日",
         "銀行卡",
-        "櫃員機"
+        "櫃員機",
+        "工作日"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "Which word means the box that kept the card?",
       "choices": [
-        "machine",
         "card",
+        "machine",
         "limit"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "machine 呢度係櫃員機。"
     }
   ],

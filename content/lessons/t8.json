@@ -274,11 +274,11 @@
       "prompt": "聽一次，揀你聽到嘅字：向關員講你帶咗咩",
       "lemma": "declare-verb",
       "choices": [
-        "declare",
         "purpose",
+        "declare",
         "gift"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -305,11 +305,11 @@
       "type": "meaning",
       "prompt": "客人講「I declare these goods at the desk, and this small gift is for a friend at home.」，gift 係咩意思？",
       "choices": [
-        "禮物",
         "貨物",
-        "表格"
+        "表格",
+        "禮物"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",

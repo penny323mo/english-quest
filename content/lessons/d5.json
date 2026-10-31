@@ -292,41 +292,41 @@
       "prompt": "聽一次，揀你聽到嘅字.",
       "lemma": "fragile-adj",
       "choices": [
-        "fragile",
         "weight",
+        "fragile",
         "stamp"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "I would like to send this parcel by airmail.",
       "choices": [
-        "我通常早起身",
         "我想用空郵寄包裹",
-        "我想買預繳計劃"
+        "我通常早起身",
+        "預繳計劃太貴"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "How long will it take to reach the destination?",
       "choices": [
         "邊個計劃平啲",
-        "去到目的地要幾耐",
-        "請串多次個名"
+        "請串多次個名",
+        "去到目的地要幾耐"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "Please mark the full weight on the form.",
       "choices": [
         "請開通電話卡",
-        "請喺表格標明重量",
-        "請講你嘅工作"
+        "請講你嘅工作",
+        "請喺表格標明重量"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "weight 係重量。form 係表格。"
     }
   ],

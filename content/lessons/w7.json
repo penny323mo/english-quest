@@ -267,22 +267,22 @@
       "prompt": "聽一次，揀你喺請病假電話聽到嘅字：更",
       "lemma": "shift-noun",
       "choices": [
-        "shift",
         "Monday",
+        "shift",
         "sick"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
       "prompt": "聽一次，揀你喺請病假電話聽到嘅字：星期一",
       "lemma": "monday-noun",
       "choices": [
-        "shift",
         "Monday",
+        "shift",
         "sick"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -308,11 +308,11 @@
       "type": "choice",
       "prompt": "邊個字有 /ʃ/？",
       "choices": [
-        "Monday",
         "shift",
+        "Monday",
         "sick"
       ],
-      "answer": 1,
+      "answer": 0,
       "explain": "shift 有 /ʃ/。Monday 同 sick 冇。"
     }
   ],

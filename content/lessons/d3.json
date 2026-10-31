@@ -280,11 +280,11 @@
       "prompt": "聽一次，揀你聽到嘅字：每個月嘅租",
       "lemma": "rent-noun",
       "choices": [
-        "rent",
         "lease",
+        "rent",
         "deposit"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -301,31 +301,31 @@
       "type": "meaning",
       "prompt": "客人講「The monthly rent is due on the first day, and the deposit is one full month's rent.」，deposit 係咩意思？",
       "choices": [
-        "按金",
         "租約",
-        "業主"
+        "業主",
+        "按金"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「If I decide today, I can sign the lease, and the agency fee is on the contract.」，lease 係咩意思？",
       "choices": [
-        "收據",
         "租約",
+        "收據",
         "通知期"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
+        "landlord",
         "rent",
-        "deposit",
-        "landlord"
+        "deposit"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "landlord 有 /l/。rent 同 deposit 冇。"
     }
   ],

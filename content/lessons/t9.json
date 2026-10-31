@@ -276,11 +276,11 @@
       "prompt": "聽一次，揀你聽到嘅字：延遲",
       "lemma": "delayed-adj",
       "choices": [
-        "delayed",
         "cancelled",
+        "delayed",
         "refund"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -298,10 +298,10 @@
       "prompt": "職員講「I am very sorry indeed. The flight is still quite delayed, and your connection is safe until the next update.」，delayed 係咩意思？",
       "choices": [
         "優先",
-        "延誤",
-        "準時"
+        "準時",
+        "延誤"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
@@ -317,11 +317,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
+        "cancelled",
         "delayed",
-        "voucher",
-        "cancelled"
+        "voucher"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "cancelled 有 /l/。delayed 同 voucher 冇。"
     }
   ],

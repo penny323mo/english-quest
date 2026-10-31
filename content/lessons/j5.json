@@ -282,11 +282,11 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "finger-noun",
       "choices": [
-        "finger",
         "fit",
-        "wrist"
+        "wrist",
+        "finger"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
@@ -302,21 +302,21 @@
       "type": "meaning",
       "prompt": "客人講「This size is a little tight, and it pinches when I close my hand.」，係咩意思？",
       "choices": [
-        "緊",
         "鬆",
+        "緊",
         "折扣"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "邊個開頭係 /l/？",
       "choices": [
         "tight",
-        "fit",
-        "loose"
+        "loose",
+        "fit"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "loose 開頭係 /l/。tight 係 /t/。fit 係短 /ɪ/。"
     }
   ],

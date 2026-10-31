@@ -278,11 +278,11 @@
       "prompt": "聽一次，揀你聽到嘅字：經典款",
       "lemma": "classic-adj",
       "choices": [
-        "classic",
         "occasion",
+        "classic",
         "statement"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -300,30 +300,30 @@
       "prompt": "客人講「The occasion is an anniversary dinner, and my preference is a custom design with a classic gold look.」，preference 係咩意思？",
       "choices": [
         "檔期",
-        "偏好",
-        "訂金"
+        "訂金",
+        "偏好"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「If you confirmed the deposit, I would book a follow-up and protect the exclusivity of the design.」，exclusivity 係咩意思？",
       "choices": [
-        "低調",
         "獨家",
+        "低調",
         "週年"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
-        "classic",
         "occasion",
+        "classic",
         "statement"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "classic 有 /l/。occasion 同 statement 冇。"
     }
   ],

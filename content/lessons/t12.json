@@ -29,7 +29,7 @@
     "非吸煙",
     "密碼"
   ],
-  "next": "T13",
+  "next": "T15",
   "sound": {
     "ipa": "/u/",
     "title": "room 入面嗰個音",
@@ -300,20 +300,20 @@
       "lemma": "luggage-noun",
       "choices": [
         "room",
-        "luggage",
-        "password"
+        "password",
+        "luggage"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "You say 'The wifi password is printed on this card.' What does password mean?",
       "choices": [
-        "密碼",
         "房間",
+        "密碼",
         "行李"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -329,11 +329,11 @@
       "type": "choice",
       "prompt": "Which phrase means a room where people do not smoke?",
       "choices": [
-        "luggage",
         "non-smoking",
+        "luggage",
         "password"
       ],
-      "answer": 1,
+      "answer": 0,
       "explain": "non-smoking 係非吸煙。"
     }
   ],

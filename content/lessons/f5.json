@@ -266,21 +266,21 @@
       "type": "meaning",
       "prompt": "phone",
       "choices": [
-        "電話",
         "地址",
+        "電話",
         "工作"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "email",
       "choices": [
-        "電郵",
         "午餐",
-        "包裹"
+        "包裹",
+        "電郵"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",

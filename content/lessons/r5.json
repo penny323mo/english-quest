@@ -307,11 +307,11 @@
       "type": "meaning",
       "prompt": "客人講「Thank you, and the total does contain the staff fee before that extra tip.」，係咩意思？",
       "choices": [
-        "服務費",
         "餐巾",
+        "服務費",
         "零錢"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "service charge 係服務費，唔係貼士。"
     },
     {
@@ -319,20 +319,20 @@
       "prompt": "客人講「The service was kind indeed, so I will add a tip and you can keep the change.」，係咩意思？",
       "choices": [
         "即刻找返",
-        "分開兩張單",
-        "留低當貼士"
+        "留低當貼士",
+        "分開兩張單"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
         "tip",
-        "include",
-        "check"
+        "check",
+        "include"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "include 有 /l/。tip 同 check 冇。"
     }
   ],

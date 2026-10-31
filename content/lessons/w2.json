@@ -283,11 +283,11 @@
       "prompt": "聽一次，揀你聽到嘅字：電郵附上嘅文件",
       "lemma": "attached-adj",
       "choices": [
-        "attached",
         "propose",
+        "attached",
         "confirm"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -295,40 +295,40 @@
       "lemma": "deadline-noun",
       "choices": [
         "grateful",
-        "confirm",
-        "deadline"
+        "deadline",
+        "confirm"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "客人講「Good morning Tom, I am following up today on the email I have sent regarding the deadline.」，following up 係咩意思？",
       "choices": [
-        "跟進",
         "附件",
-        "取消"
+        "取消",
+        "跟進"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「I am grateful for the quick reply, and I will confirm the Friday deadline in writing.」，grateful 係咩意思？",
       "choices": [
-        "感激",
         "期限",
-        "確認"
+        "確認",
+        "感激"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
-        "propose",
         "clarify",
+        "propose",
         "confirm"
       ],
-      "answer": 1,
+      "answer": 0,
       "explain": "clarify 有 /l/。propose 同 confirm 冇。"
     }
   ],

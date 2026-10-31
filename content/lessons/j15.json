@@ -301,20 +301,20 @@
       "lemma": "half-size-phrase",
       "choices": [
         "warranty",
-        "half a size",
-        "receipt"
+        "receipt",
+        "half a size"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "You say 'Saturday is the collection day.' What does Saturday mean?",
       "choices": [
-        "星期六",
         "收據",
+        "星期六",
         "保養"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -331,10 +331,10 @@
       "prompt": "Which word has /aɪ/?",
       "choices": [
         "receipt",
-        "Saturday",
-        "tight"
+        "tight",
+        "Saturday"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "tight 有 /aɪ/。"
     }
   ],

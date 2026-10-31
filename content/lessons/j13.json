@@ -266,52 +266,52 @@
       "prompt": "聽一次，揀你喺禮品單聽到嘅字：標誌",
       "lemma": "logo-noun",
       "choices": [
-        "logo",
         "quote",
-        "email"
+        "email",
+        "logo"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "listen",
       "prompt": "聽一次，揀你喺禮品單聽到嘅字：報價",
       "lemma": "quote-noun",
       "choices": [
+        "quote",
         "quantity",
-        "engraving",
-        "quote"
+        "engraving"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "你講「Please email that written quote straight to our office, and put the full lead time in that email.」，quote 係咩意思？",
       "choices": [
-        "禮品",
         "報價",
+        "禮品",
         "標誌"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "Kai 講「The lead time for that logo engraving is three full weeks after you approve the finished artwork.」，lead time 係咩意思？",
       "choices": [
         "電郵",
-        "三十",
-        "交貨期"
+        "交貨期",
+        "三十"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
-        "logo",
         "quote",
+        "logo",
         "email"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "logo 有 /l/。"
     }
   ],

@@ -268,22 +268,22 @@
       "prompt": "聽一次，揀你喺外賣電話聽到嘅字：地址",
       "lemma": "address-noun",
       "choices": [
-        "address",
         "chicken",
+        "address",
         "minute"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
       "prompt": "聽一次，揀你喺外賣電話聽到嘅字：外賣",
       "lemma": "takeaway-noun",
       "choices": [
-        "delivery",
         "takeaway",
+        "delivery",
         "street"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -299,11 +299,11 @@
       "type": "meaning",
       "prompt": "舖頭講「You can pay on delivery in cash only when the takeaway reaches your front door.」，pay on delivery 係咩意思？",
       "choices": [
-        "現金找續",
         "送到先畀錢",
+        "現金找續",
         "改地址"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "choice",

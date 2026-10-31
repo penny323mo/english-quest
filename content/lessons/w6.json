@@ -283,11 +283,11 @@
       "prompt": "聽一次，揀你聽到嘅字：強項",
       "lemma": "strength-noun",
       "choices": [
+        "strength",
         "example",
-        "teamwork",
-        "strength"
+        "teamwork"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -303,21 +303,21 @@
       "type": "meaning",
       "prompt": "面試官講「Could you please give one clear example of a recent customer-facing task you enjoyed at the counter?」，customer-facing 係咩意思？",
       "choices": [
-        "幕後唔係櫃檯",
         "對客",
+        "幕後唔係櫃檯",
         "過夜更"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
         "strength",
-        "bilingual",
-        "shift"
+        "shift",
+        "bilingual"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "bilingual 有 /l/。strength 同 shift 冇。"
     }
   ],

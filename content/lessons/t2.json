@@ -256,41 +256,41 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "lift-noun",
       "choices": [
-        "lift",
         "left",
+        "lift",
         "street"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "客人講「Please put your liquids in the tray, and take the laptop out.」，係咩意思？",
       "choices": [
         "頸鏈",
-        "膠盤",
-        "餐牌"
+        "餐牌",
+        "膠盤"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「Straight ahead. Your gate is on the left after the shops.」，係咩意思？",
       "choices": [
+        "直行就得",
         "請跟我嚟",
-        "我想叫雞",
-        "直行就得"
+        "我想叫雞"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "choice",
       "prompt": "邊個開頭係 /l/？",
       "choices": [
         "straight",
-        "liquid",
-        "street"
+        "street",
+        "liquid"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "liquid、left、laptop 有 /l/。straight 同 street 開頭係 /st/。"
     }
   ],

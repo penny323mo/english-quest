@@ -299,31 +299,31 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "wifi-noun",
       "choices": [
-        "wifi",
         "password",
+        "wifi",
         "breakfast"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "客人講「Late checkout is fine, and you can leave your bags by the elevator.」，係咩意思？",
       "choices": [
         "早餐",
-        "樓層",
-        "升降機"
+        "升降機",
+        "樓層"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "客人講「Your room is a double with a view, and the window faces the harbor.」，係咩意思？",
       "choices": [
         "雙人床",
-        "雙床",
-        "景觀"
+        "景觀",
+        "雙床"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "choice",

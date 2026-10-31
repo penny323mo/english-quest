@@ -304,11 +304,11 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "allergic-adj",
       "choices": [
-        "allergic",
         "allergy",
+        "allergic",
         "instead"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -325,20 +325,20 @@
       "prompt": "客人講「Could I have the sauce on the side, and not on the chicken?」，係咩意思？",
       "choices": [
         "唔要",
-        "另上",
-        "含有"
+        "含有",
+        "另上"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "邊個有 /l/？",
       "choices": [
         "spicy",
-        "shellfish",
-        "sauce"
+        "sauce",
+        "shellfish"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "shellfish 有 /l/。allergic 重音喺中間。"
     }
   ],

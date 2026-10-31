@@ -280,30 +280,30 @@
       "prompt": "silver ring",
       "choices": [
         "登機證",
-        "銀戒指",
-        "靠窗位"
+        "靠窗位",
+        "銀戒指"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "Would you like to see it?",
       "choices": [
-        "想唔想睇吓",
         "請去閘口",
-        "我睇吓先"
+        "想唔想睇吓",
+        "我考慮下先"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "邊個開頭係 /v/？",
       "choices": [
-        "very",
         "would",
+        "very",
         "wife"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "would 同 wife 係圓唇 /w/。very 先至係 /v/。"
     }
   ],

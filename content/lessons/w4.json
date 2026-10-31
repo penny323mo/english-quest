@@ -270,52 +270,52 @@
       "prompt": "聽一次，揀你聽到嘅字：週末",
       "lemma": "weekend-noun",
       "choices": [
-        "weekend",
         "weather",
+        "weekend",
         "busy"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
       "prompt": "聽一次，揀你聽到嘅字：通勤",
       "lemma": "commute-noun",
       "choices": [
-        "coffee",
         "commute",
+        "coffee",
         "ready"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "同事講「Same here. My commute was long, but the coffee on the way was warm and good.」，commute 係咩意思？",
       "choices": [
         "會議",
-        "通勤",
-        "天氣"
+        "天氣",
+        "通勤"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "同事講「Yes, I think so. We can catch up later after the notes are on the table.」，catch up later 係咩意思？",
       "choices": [
-        "而家取消",
         "遲啲再傾",
+        "而家取消",
         "改去室外"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
         "weekend",
-        "shall",
-        "coffee"
+        "coffee",
+        "shall"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "shall 有 /l/。weekend 同 coffee 冇。"
     }
   ],

@@ -282,41 +282,41 @@
       "prompt": "聽一次，揀你喺藥房聽到嘅字：劑量",
       "lemma": "dosage-noun",
       "choices": [
-        "dosage",
         "tablet",
-        "pharmacy"
+        "pharmacy",
+        "dosage"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "你講「The only extra symptom is a drug allergy, and this bad cough is exactly why I walked in here.」，allergy 係咩意思？",
       "choices": [
+        "過敏",
         "處方",
-        "劑量",
-        "過敏"
+        "劑量"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "藥劑師講「The dosage is one small tablet twice a day for five days.」，dosage 係咩意思？",
       "choices": [
         "藥片",
-        "飯後",
-        "劑量"
+        "劑量",
+        "飯後"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
         "cough",
-        "tablet",
-        "dosage"
+        "dosage",
+        "tablet"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "tablet 有 /l/。cough 同 dosage 冇。"
     }
   ],

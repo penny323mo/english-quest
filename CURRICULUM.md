@@ -286,6 +286,13 @@
 - **Coherence:** one luggage plan (it stays at the desk) and one ready time (after four, when the room is ready, not early check-in). The password is printed on a card taken at the desk. Checked against the earlier request.
 
 
+
+### T15 — Hotel check-out and luggage storage / 退房同寄存行李 · A2/B1 · SHIPPED
+- **Goals:** Ask the late check-out fee, check the minibar, store bags until four, take a luggage tag, call a taxi to the airport, and get the receipt by email.
+- **Vocab:** late checkout, fee, luggage, taxi, receipt, email, tag number
+- **Grammar:** Can you store…? Please email me the receipt.
+- **Dialogue beats:** Late checkout fee → Minibar → Store until four → Tag number → Taxi → Email the receipt
+
 ### R12 — Booking a table for a group / 訂枱請客 · A2/B1 · SHIPPED
 - **Goals:** Book a party of eight for Friday at half past seven, ask for a private room, the minimum spend, a deposit, and a high chair, and confirm by text.
 - **Vocab:** party of, private room, minimum spend, high chair, deposit, confirm
@@ -410,6 +417,13 @@
 - **Grammar:** The sample run is behind schedule, so I will follow up. Are there any questions?
 - **Dialogue beats:** On track → Which part is behind → Follow up → By Friday → Written note → Questions → Action item → After the meeting
 
+
+### W11 — Asking HR about a payslip / 問HR糧單問題 · B1 · SHIPPED
+- **Goals:** Say overtime is missing, check the tax deduction and the MPF contribution, hear the correction is next month, and email HR before the deadline.
+- **Vocab:** tax, deadline, email
+- **Grammar:** The tax deduction is there, but the MPF contribution is not.
+- **Dialogue beats:** Missing overtime → Tax and MPF → Next month → Who to email → Friday deadline
+
 ---
 
 ## Unit D — Daily life（日常生活）· A2→B1
@@ -419,6 +433,13 @@
 - **Vocab (16):** appointment, symptom, fever, cough, sore throat, headache, since, worse, better, allergy, medicine, prescription, rest, pharmacy, insurance, follow-up
 - **Grammar:** Present perfect (I've had… since…); Should for advice
 - **Dialogue beats:** Reception → Symptoms → Questions → Advice → Pharmacy next
+
+
+### D12 — Booking a clinic appointment by phone / 打電話約睇醫生 · A2/B1 · SHIPPED
+- **Goals:** Name a symptom, take the first slot, choose the doctor, bring identity and an insurance card, ask the fee, and arrive ten minutes early.
+- **Vocab:** appointment, symptom, identity, fee
+- **Grammar:** Can I book…? Should I arrive…?
+- **Dialogue beats:** First slot → Which doctor → Fee and identity → Insurance card → Ten minutes early → Symptom at the desk
 
 ### D2 — At the bank · A2/B1 · NEW
 - **Goals:** Open/ask about account, transfer, card lost.
@@ -489,7 +510,8 @@ Every round until map complete, ship **≥3 NEW lessons** in this order (skip al
 18. **T13, D10, J17** (pharmacy abroad, taxi app, pearl care)
 19. **R12, W10, T14** (group booking, complaint email, missed connection)
 20. **J18, R13, D11** (watch battery and strap, café order change, open a bank account)
-21. Then polish / legendary review nodes / further B2 stretch
+21. **D12, T15, W11** (clinic appointment, hotel check-out, payslip)
+22. Then polish / legendary review nodes / further B2 stretch
 
 **Path UX:** show CEFR chip (A1/A2/B1/B2) on each node; group Path into level tracks; lock by prerequisite; keep `soon:true` teasers for unshipped.
 

@@ -258,28 +258,28 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "cant-verb",
       "choices": [
-        "can't",
         "can",
+        "can't",
         "cat"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "客人講「Can I have some water, please, and no ice in the glass?」，係咩意思？",
       "choices": [
         "登機證",
-        "訂位",
-        "推薦"
+        "推薦",
+        "訂位"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "客人講「I'd like the chicken, please, and a small salad with it.」，係咩意思？",
       "choices": [
         "我想叫雞",
-        "我想要杯水",
+        "要杯凍水",
         "我睇吓先"
       ],
       "answer": 0
@@ -288,11 +288,11 @@
       "type": "choice",
       "prompt": "can't 同 can 差喺邊？",
       "choices": [
-        "can't 有清楚嘅 /t/",
         "兩個完全一樣",
-        "can't 係 /ʃ/"
+        "can't 係 /ʃ/",
+        "can't 有清楚嘅 /t/"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "食咗尾 /t/ 就會聽成 can。問句入面 can 通常好輕 /kən/。"
     }
   ],

@@ -258,21 +258,21 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "pearl-noun",
       "choices": [
-        "pearl",
         "pair",
+        "pearl",
         "ring"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "客人講「I like this bracelet, and the clasp is easy to open.」，係咩意思？",
       "choices": [
-        "登機證",
         "手鏈",
+        "登機證",
         "頸鏈"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -288,11 +288,11 @@
       "type": "choice",
       "prompt": "邊個尾音係 /z/？",
       "choices": [
-        "these",
         "this",
+        "these",
         "pair"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "these /ðiz/ 有聲。this /ðɪs/ 係清 /s/。"
     }
   ],

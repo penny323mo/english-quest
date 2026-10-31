@@ -268,21 +268,21 @@
       "type": "meaning",
       "prompt": "Nice to meet you",
       "choices": [
-        "好高興認識你",
         "靠窗位",
+        "好高興認識你",
         "睇吓先"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "sir 係叫邊種人？",
       "choices": [
-        "男士，客氣",
         "一張檯",
-        "一隻戒指"
+        "一隻戒指",
+        "男士，客氣"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "madam 就係對女士。兩個都唔使每次都用。"
     },
     {

@@ -286,11 +286,11 @@
       "prompt": "Listen once and pick the word you hear for a pain in the head.",
       "lemma": "headache-noun",
       "choices": [
-        "headache",
         "fever",
+        "headache",
         "drowsy"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -318,10 +318,10 @@
       "prompt": "You say 'feel drowsy'. What does drowsy mean?",
       "choices": [
         "一日幾次",
-        "好眼瞓",
-        "飯後"
+        "飯後",
+        "好眼瞓"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "choice",

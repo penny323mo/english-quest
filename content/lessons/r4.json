@@ -299,11 +299,11 @@
       "prompt": "聽一次，揀你聽到嘅字：客人覺得魚好食",
       "lemma": "delicious-adj",
       "choices": [
-        "delicious",
         "fork",
+        "delicious",
         "still"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -321,10 +321,10 @@
       "prompt": "客人講「Are you enjoying the meal so far, and could we get you a cold refill now?」，係咩意思？",
       "choices": [
         "而家埋單",
-        "打包帶走",
-        "再添一杯"
+        "再添一杯",
+        "打包帶走"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "choice",

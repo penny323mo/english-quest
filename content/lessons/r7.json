@@ -270,11 +270,11 @@
       "prompt": "聽一次，揀你聽到嘅字：凍",
       "lemma": "cold-adj",
       "choices": [
-        "cold",
         "ordered",
+        "cold",
         "manager"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -301,11 +301,11 @@
       "type": "meaning",
       "prompt": "店員講「I will send that dessert right away, and I will tell the kitchen about the plate.」，right away 係咩意思？",
       "choices": [
+        "即刻",
         "遲啲",
-        "室外",
-        "即刻"
+        "室外"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "choice",

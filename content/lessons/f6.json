@@ -257,31 +257,31 @@
       "prompt": "你聽到邊個？",
       "lemma": "usually-adv",
       "choices": [
-        "usually",
         "always",
+        "usually",
         "never"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "usually",
       "choices": [
-        "通常",
         "郵票",
-        "從不"
+        "從不",
+        "通常"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "break",
       "choices": [
         "電話卡",
-        "包裹",
-        "小休"
+        "小休",
+        "包裹"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "choice",

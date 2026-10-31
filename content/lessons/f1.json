@@ -264,31 +264,31 @@
       "type": "meaning",
       "prompt": "breath",
       "choices": [
-        "一啖氣",
         "銀戒指",
+        "一啖氣",
         "登機證"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "about 開頭",
       "choices": [
-        "輕音 /ə/",
         "長音 /i/",
+        "輕音 /ə/",
         "咬唇 /v/"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "邊對先係短／長？",
       "choices": [
         "thank / sank",
-        "ship / sheep",
-        "wine / vine"
+        "wine / vine",
+        "ship / sheep"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "今課只分長短元音。"
     }
   ],

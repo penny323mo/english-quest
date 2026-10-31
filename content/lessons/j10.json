@@ -315,21 +315,21 @@
       "type": "meaning",
       "prompt": "客人講「The engraving is fully optional with this matching set」，係咩意思？",
       "choices": [
-        "可以唔要",
         "一定要",
+        "可以唔要",
         "已經壞"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
         "matching",
-        "engraving",
-        "popular"
+        "popular",
+        "engraving"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "popular 有 /l/。matching 同 engraving 冇。"
     }
   ],

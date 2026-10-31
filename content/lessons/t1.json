@@ -273,20 +273,20 @@
       "prompt": "boarding pass",
       "choices": [
         "餐牌",
-        "登機證",
-        "頸鏈"
+        "頸鏈",
+        "登機證"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "aisle",
       "choices": [
-        "走廊位",
         "靠窗",
-        "行李"
+        "行李",
+        "走廊位"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",

@@ -273,11 +273,11 @@
       "prompt": "聽一次，揀你聽到嘅字：參考編號",
       "lemma": "reference-noun",
       "choices": [
-        "reference",
         "feedback",
+        "reference",
         "order"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -314,11 +314,11 @@
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
-        "apology",
         "feedback",
-        "order"
+        "order",
+        "apology"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "apology 有 /l/。feedback 同 order 冇。"
     }
   ],

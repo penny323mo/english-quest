@@ -268,11 +268,11 @@
       "prompt": "聽一次，揀你喺埋單時聽到嘅字：帳單",
       "lemma": "bill-noun",
       "choices": [
-        "bill",
         "receipt",
+        "bill",
         "mistake"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -290,10 +290,10 @@
       "prompt": "你講「Could we split the bill so each of us gets a separate receipt?」，split 係咩意思？",
       "choices": [
         "收據",
-        "帳單",
-        "分開"
+        "分開",
+        "帳單"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",

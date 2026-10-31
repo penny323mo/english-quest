@@ -272,11 +272,11 @@
       "prompt": "聽一次，揀你聽到嘅字：室外",
       "lemma": "outdoor-adj",
       "choices": [
-        "outdoor",
         "window",
+        "outdoor",
         "waitlist"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -293,11 +293,11 @@
       "type": "meaning",
       "prompt": "你講「If it rains heavily, please cancel the outdoor seat and keep us indoors beside the glass.」，outdoor 係咩意思？",
       "choices": [
+        "室外",
         "候補",
-        "靠窗",
-        "室外"
+        "靠窗"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",

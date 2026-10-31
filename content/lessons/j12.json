@@ -274,11 +274,11 @@
       "prompt": "聽一次，揀你聽到嘅字：舖頭仲有嘅貨",
       "lemma": "stock-noun",
       "choices": [
-        "stock",
         "reserve",
+        "stock",
         "message"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -305,21 +305,21 @@
       "type": "meaning",
       "prompt": "客人講「I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm.」，collect 係咩意思？",
       "choices": [
+        "取貨",
         "預留",
-        "描述",
-        "取貨"
+        "描述"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
-        "stock",
         "location",
+        "stock",
         "notify"
       ],
-      "answer": 1,
+      "answer": 0,
       "explain": "location 有 /l/。stock 同 notify 冇。"
     }
   ],

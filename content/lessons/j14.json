@@ -274,11 +274,11 @@
       "prompt": "Listen once and pick the pale alloy you hear for the band.",
       "lemma": "white-gold-phrase",
       "choices": [
-        "white gold",
         "budget",
+        "white gold",
         "sketch"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -305,21 +305,21 @@
       "type": "meaning",
       "prompt": "You say 'The ring takes four weeks.' What does week mean?",
       "choices": [
-        "星期",
         "白K金",
-        "鑲"
+        "鑲",
+        "星期"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "Which phrase has /ɡoʊld/?",
       "choices": [
+        "white gold",
         "budget",
-        "sketch",
-        "white gold"
+        "sketch"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "gold 有 /ɡoʊld/。"
     }
   ],

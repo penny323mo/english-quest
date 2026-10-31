@@ -282,11 +282,11 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "diamond-noun",
       "choices": [
-        "diamond",
         "jade",
+        "diamond",
         "gold"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -302,21 +302,21 @@
       "type": "meaning",
       "prompt": "客人講「The diamond is shinier than the jade when the light hits it.」，係咩意思？",
       "choices": [
-        "玉",
         "鏡",
-        "折扣"
+        "折扣",
+        "玉"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "邊個中間有 /θ/？",
       "choices": [
-        "setting",
         "authentic",
+        "setting",
         "pure"
       ],
-      "answer": 1,
+      "answer": 0,
       "explain": "authentic 有 /θ/。setting 開頭係 /s/。"
     }
   ],

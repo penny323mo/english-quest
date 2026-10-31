@@ -288,53 +288,53 @@
       "prompt": "聽一次，揀你聽到嘅字：你等緊嗰條線",
       "lemma": "line-noun",
       "choices": [
-        "line",
         "hold",
+        "line",
         "message"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
       "prompt": "聽一次，揀你聽到嘅字：人唔喺度時留低嘅口訊",
       "lemma": "message-noun",
       "choices": [
-        "bill",
         "message",
+        "bill",
         "fork"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "客人講「She is not available right now, so please hold and I will try the other line.」，係咩意思？",
       "choices": [
-        "添水",
         "等線",
+        "添水",
         "埋單"
       ],
-      "answer": 1,
+      "answer": 0,
       "explain": "hold 係等，唔好收線。"
     },
     {
       "type": "meaning",
       "prompt": "客人講「I will transfer you if the line is free, or I can note the callback number.」，係咩意思？",
       "choices": [
-        "轉駁去另一個人",
         "而家收線",
+        "轉駁去另一個人",
         "改做外賣"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "邊個字開頭有 /l/？",
       "choices": [
-        "line",
         "hold",
-        "message"
+        "message",
+        "line"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "line 開頭係 /l/。hold 同 message 冇。"
     }
   ],

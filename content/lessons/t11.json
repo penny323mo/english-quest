@@ -283,11 +283,11 @@
       "prompt": "Listen once and pick the word you hear for the way out of the station.",
       "lemma": "exit-noun",
       "choices": [
-        "exit",
         "line",
-        "ticket"
+        "ticket",
+        "exit"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
@@ -314,10 +314,10 @@
       "prompt": "Which word has /ɪ/?",
       "choices": [
         "line",
-        "ticket",
-        "exit"
+        "exit",
+        "ticket"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "exit 有 /ɪ/。"
     }
   ],

@@ -271,11 +271,11 @@
       "prompt": "Listen once and pick the word you hear for water coming out of the tap.",
       "lemma": "leak-noun",
       "choices": [
-        "leak",
         "flat",
+        "leak",
         "access"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -303,10 +303,10 @@
       "prompt": "You say 'The front guard can give you access.' What does access mean?",
       "choices": [
         "漏水",
-        "水龍頭",
-        "入單位"
+        "入單位",
+        "水龍頭"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "choice",

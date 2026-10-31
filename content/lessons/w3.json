@@ -293,11 +293,11 @@
       "prompt": "聽一次，揀你聽到嘅字：收細個咪",
       "lemma": "mute-verb",
       "choices": [
+        "mute",
         "agree",
-        "update",
-        "mute"
+        "update"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -313,11 +313,11 @@
       "type": "meaning",
       "prompt": "客人講「The update is that the deadline moved, and I am concerned we may miss the action item again.」，action item 係咩意思？",
       "choices": [
-        "行動項",
         "收據",
+        "行動項",
         "毛巾"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",

@@ -285,32 +285,32 @@
       "prompt": "Listen once and pick the word you hear for the cell inside a watch.",
       "lemma": "battery-noun",
       "choices": [
-        "watch",
         "battery",
+        "watch",
         "warranty"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "listen",
       "prompt": "Listen once and pick the phrase you hear for a band made of hide.",
       "lemma": "leather-strap-phrase",
       "choices": [
-        "leather strap",
         "battery",
-        "watch"
+        "watch",
+        "leather strap"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "You say 'water resistant'. What does water resistant mean?",
       "choices": [
-        "防水",
         "電池",
+        "防水",
         "皮錶帶"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -326,11 +326,11 @@
       "type": "choice",
       "prompt": "Which word means the thing you wear on your wrist?",
       "choices": [
-        "watch",
         "battery",
-        "warranty"
+        "warranty",
+        "watch"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "watch 係手錶。"
     }
   ],

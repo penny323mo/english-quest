@@ -285,52 +285,52 @@
       "prompt": "聽一次，揀你聽到嘅字：呢件貨嘅保養承諾",
       "lemma": "warranty-noun",
       "choices": [
-        "warranty",
         "guarantee",
+        "warranty",
         "scratch"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
       "prompt": "聽一次，揀你聽到嘅字：修理嘅舖頭規矩",
       "lemma": "policy-noun",
       "choices": [
-        "claim",
         "policy",
+        "claim",
         "polish"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "客人講「the written policy allows one repair」，係咩意思？",
       "choices": [
         "毛巾",
-        "政策",
-        "刮痕"
+        "刮痕",
+        "政策"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「I have kept the receipt, but a small scratch showed up within the first week.」，係咩意思？",
       "choices": [
+        "刮痕",
         "退款",
-        "冷氣",
-        "刮痕"
+        "冷氣"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
         "warranty",
-        "guarantee",
-        "polish"
+        "polish",
+        "guarantee"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "polish 有 /l/。warranty 同 guarantee 冇。"
     }
   ],

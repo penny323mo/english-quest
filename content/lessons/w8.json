@@ -29,7 +29,7 @@
     "問題",
     "行動"
   ],
-  "next": "D3",
+  "next": "W11",
   "dialogue": [
     {
       "id": "w8-l1",
@@ -274,11 +274,11 @@
       "prompt": "Listen once and pick the phrase you hear when the work is going to plan.",
       "lemma": "on-track-phrase",
       "choices": [
-        "on track",
         "question",
+        "on track",
         "Friday"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -305,11 +305,11 @@
       "type": "meaning",
       "prompt": "You say 'The action item is mine.' What does action item mean?",
       "choices": [
-        "進度",
         "行動",
+        "進度",
         "星期五"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "choice",

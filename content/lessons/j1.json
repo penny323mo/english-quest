@@ -290,11 +290,11 @@
       "type": "meaning",
       "prompt": "just looking",
       "choices": [
-        "睇吓先",
         "我有訂位",
+        "睇吓先",
         "即刻付款"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
@@ -312,11 +312,11 @@
       "prompt": "邊個有 /θ/？",
       "lemma": "anything-pron",
       "choices": [
-        "anything",
         "evening",
+        "anything",
         "silver"
       ],
-      "answer": 0
+      "answer": 1
     }
   ],
   "sound": {

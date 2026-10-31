@@ -298,11 +298,11 @@
       "prompt": "聽一次，揀你聽到嘅字：一個認得嘅地方",
       "lemma": "landmark-noun",
       "choices": [
-        "landmark",
         "meter",
+        "landmark",
         "address"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -319,21 +319,21 @@
       "type": "meaning",
       "prompt": "客人講「How long will this take, roughly, if we go straight and turn left?」，係咩意思？",
       "choices": [
-        "一定",
         "大概",
+        "一定",
         "已經到"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "choice",
       "prompt": "邊個字開頭有 /l/？",
       "choices": [
         "meter",
-        "traffic",
-        "landmark"
+        "landmark",
+        "traffic"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "landmark 開頭係 /l/。"
     }
   ],

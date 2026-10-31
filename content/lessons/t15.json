@@ -1,0 +1,343 @@
+{
+  "id": "T15",
+  "unit": "T",
+  "titleYue": "退房同寄存行李",
+  "titleEn": "Hotel check-out and luggage storage",
+  "canDoYue": "你識問延遲退房費用、核對迷你吧、寄存行李到四點、攞行李牌、叫的士去機場，同埋要電郵收據。",
+  "canDoEn": "Ask the late checkout fee, check the minibar, store luggage until four, take a tag number, call a taxi to the airport, and ask for the receipt by email.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t15.webp",
+  "cast": [
+    "kim",
+    "tom"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "late-checkout-phrase",
+    "fee-noun",
+    "luggage-noun",
+    "taxi-noun",
+    "receipt-noun",
+    "email-noun",
+    "tag-number-phrase"
+  ],
+  "topicTags": [
+    "退房",
+    "行李",
+    "的士",
+    "收據",
+    "電郵",
+    "行李牌",
+    "費用"
+  ],
+  "next": "T13",
+  "sound": {
+    "ipa": "/u/",
+    "title": "luggage 入面嗰個音",
+    "note": "luggage 有 /ʌ/。",
+    "pairs": [
+      {
+        "a": "luggage-noun",
+        "b": "taxi-noun"
+      },
+      {
+        "a": "receipt-noun",
+        "b": "email-noun"
+      }
+    ],
+    "drill": [
+      "late-checkout-phrase",
+      "luggage-noun",
+      "taxi-noun",
+      "receipt-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "t15-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Hello there. I'd like one late checkout now. What is the fee for that please?",
+      "glossYue": "你好。我想延遲退房。費用係幾多？",
+      "audio": "assets/audio/lines/t15-l1.mp3",
+      "audioSlow": "assets/audio/lines/t15-l1-slow.mp3",
+      "say": "Hello there. I'd like one late checkout now. What is the fee for that please?",
+      "hideGloss": false
+    },
+    {
+      "id": "t15-l2",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes. That fee is forty dollars. Did you take anything from the minibar last night?",
+      "glossYue": "係。費用四十蚊。你尋晚有冇拎迷你吧嘅嘢？",
+      "audio": "assets/audio/lines/t15-l2.mp3",
+      "audioSlow": "assets/audio/lines/t15-l2-slow.mp3",
+      "say": "Yes. That fee is forty dollars. Did you take anything from the minibar last night?",
+      "hideGloss": false
+    },
+    {
+      "id": "t15-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I didn't use the minibar at all. Can you store my luggage until four?",
+      "glossYue": "我完全冇用迷你吧。可唔可以寄存行李到四點？",
+      "audio": "assets/audio/lines/t15-l3.mp3",
+      "audioSlow": "assets/audio/lines/t15-l3-slow.mp3",
+      "say": "I didn't use the minibar at all. Can you store my luggage until four?",
+      "hideGloss": false
+    },
+    {
+      "id": "t15-l4",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes. We can store the luggage until four and give you a tag number.",
+      "glossYue": "可以。行李寄存到四點，我畀你一個行李牌號碼。",
+      "audio": "assets/audio/lines/t15-l4.mp3",
+      "audioSlow": "assets/audio/lines/t15-l4-slow.mp3",
+      "say": "Yes. We can store the luggage until four and give you a tag number.",
+      "hideGloss": true
+    },
+    {
+      "id": "t15-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Thanks. Can you call a taxi to the airport after I take that tag number?",
+      "glossYue": "多謝。我攞咗行李牌之後，可唔可以叫的士去機場？",
+      "audio": "assets/audio/lines/t15-l5.mp3",
+      "audioSlow": "assets/audio/lines/t15-l5-slow.mp3",
+      "say": "Thanks. Can you call a taxi to the airport after I take that tag number?",
+      "hideGloss": true
+    },
+    {
+      "id": "t15-l6",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes. The taxi to the airport can leave once your stored luggage is fully ready.",
+      "glossYue": "可以。行李準備好，去機場嘅的士就可以走。",
+      "audio": "assets/audio/lines/t15-l6.mp3",
+      "audioSlow": "assets/audio/lines/t15-l6-slow.mp3",
+      "say": "Yes. The taxi to the airport can leave once your stored luggage is fully ready.",
+      "hideGloss": true
+    },
+    {
+      "id": "t15-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Please email me the full receipt for the late checkout and the airport taxi.",
+      "glossYue": "請電郵畀我延遲退房同機場的士嘅收據。",
+      "audio": "assets/audio/lines/t15-l7.mp3",
+      "audioSlow": "assets/audio/lines/t15-l7-slow.mp3",
+      "say": "Please email me the full receipt for the late checkout and the airport taxi.",
+      "hideGloss": true
+    },
+    {
+      "id": "t15-l8",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Of course. I will email that receipt, and the tag number is on it.",
+      "glossYue": "當然。我會電郵嗰張收據，上面有行李牌號碼。",
+      "audio": "assets/audio/lines/t15-l8.mp3",
+      "audioSlow": "assets/audio/lines/t15-l8-slow.mp3",
+      "say": "Of course. I will email that receipt, and the tag number is on it.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Hello there. I'd like one late checkout now. What is the fee for that please? 即係問緊咩？",
+      "choices": [
+        "問的士",
+        "問延遲退房費用",
+        "問收據"
+      ],
+      "answer": 1,
+      "explain": "late checkout 係延遲退房。fee 係費用。"
+    },
+    {
+      "prompt": "I didn't use the minibar at all. Can you store my luggage until four? 即係問緊咩？",
+      "choices": [
+        "問費用幾多",
+        "寄存行李到四點",
+        "問電郵收據"
+      ],
+      "answer": 1,
+      "explain": "luggage 係行李。"
+    },
+    {
+      "prompt": "Thanks. Can you call a taxi to the airport after I take that tag number? 即係問緊咩？",
+      "choices": [
+        "問退房費用",
+        "問行李牌",
+        "叫的士去機場"
+      ],
+      "answer": 2,
+      "explain": "taxi 係的士。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Hello there. I'd like one ___ now. What is the fee for that please?",
+      "example": "Hello there. I'd like one late checkout now. What is the fee for that please?",
+      "glossYue": "延遲退房。",
+      "answer": "late checkout",
+      "choices": [
+        "late checkout",
+        "tag number",
+        "taxi"
+      ]
+    },
+    {
+      "pattern": "I didn't use the minibar at all. Can you store my ___ until four?",
+      "example": "I didn't use the minibar at all. Can you store my luggage until four?",
+      "glossYue": "寄存行李。",
+      "answer": "luggage",
+      "choices": [
+        "luggage",
+        "taxi",
+        "receipt"
+      ]
+    },
+    {
+      "pattern": "Thanks. Can you call a ___ to the airport after I take that tag number?",
+      "example": "Thanks. Can you call a taxi to the airport after I take that tag number?",
+      "glossYue": "叫的士。",
+      "answer": "taxi",
+      "choices": [
+        "taxi",
+        "luggage",
+        "receipt"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想延遲退房。你點講？",
+      "choices": [
+        "Hello there. I'd like one late checkout now. What is the fee for that please?",
+        "I didn't use the minibar at all. Can you store my luggage until four?",
+        "Thanks. Can you call a taxi to the airport after I take that tag number?"
+      ],
+      "answer": 0,
+      "explain": "講 late checkout。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "late",
+        "checkout"
+      ],
+      "answer": [
+        "late",
+        "checkout"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你退房。同 Kim 講寄存行李同的士。可以講：luggage、taxi。",
+    "turns": [
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "Yes. That fee is forty dollars. Did you take anything from the minibar last night?",
+        "audio": "assets/audio/lines/t15-l2.mp3",
+        "audioSlow": "assets/audio/lines/t15-l2-slow.mp3",
+        "expect": "I didn't use the minibar at all. Can you store my luggage until four?",
+        "keywords": [
+          "luggage",
+          "four"
+        ],
+        "modelAudio": "assets/audio/lines/t15-l3.mp3",
+        "modelSlow": "assets/audio/lines/t15-l3-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "Yes. We can store the luggage until four and give you a tag number.",
+        "audio": "assets/audio/lines/t15-l4.mp3",
+        "audioSlow": "assets/audio/lines/t15-l4-slow.mp3",
+        "expect": "Thanks. Can you call a taxi to the airport after I take that tag number?",
+        "keywords": [
+          "taxi",
+          "airport"
+        ],
+        "modelAudio": "assets/audio/lines/t15-l5.mp3",
+        "modelSlow": "assets/audio/lines/t15-l5-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "Yes. The taxi to the airport can leave once your stored luggage is fully ready.",
+        "audio": "assets/audio/lines/t15-l6.mp3",
+        "audioSlow": "assets/audio/lines/t15-l6-slow.mp3",
+        "expect": "Please email me the full receipt for the late checkout and the airport taxi.",
+        "keywords": [
+          "email",
+          "receipt"
+        ],
+        "modelAudio": "assets/audio/lines/t15-l7.mp3",
+        "modelSlow": "assets/audio/lines/t15-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the phrase you hear for leaving the hotel later.",
+      "choices": [
+        "late checkout",
+        "tag number",
+        "taxi"
+      ],
+      "answer": 0,
+      "lemma": "late-checkout-phrase"
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear for bags you store.",
+      "choices": [
+        "taxi",
+        "receipt",
+        "luggage"
+      ],
+      "answer": 2,
+      "lemma": "luggage-noun"
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'store my luggage'. What does luggage mean?",
+      "choices": [
+        "的士",
+        "行李",
+        "收據"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'email the receipt'. What does receipt mean?",
+      "choices": [
+        "電郵",
+        "行李牌",
+        "收據"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word means the car that takes you to the airport?",
+      "choices": [
+        "taxi",
+        "luggage",
+        "receipt"
+      ],
+      "answer": 0
+    }
+  ],
+  "shadow": {
+    "lineId": "t15-l1",
+    "hint": "Hello there. I'd like one late checkout now. What is the fee for that please?"
+  }
+}

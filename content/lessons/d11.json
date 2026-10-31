@@ -93,33 +93,33 @@
       "id": "d11-l4",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "A savings account keeps some monthly interest, and the minimum balance is one thousand dollars flat.",
-      "glossYue": "儲蓄戶口有少少月息，最低餘額係一千蚊正。",
+      "text": "A savings account earns monthly interest, and the minimum balance is one thousand dollars each month.",
+      "glossYue": "儲蓄戶口有月息，每個月最低餘額係一千蚊。",
       "audio": "assets/audio/lines/d11-l4.mp3",
       "audioSlow": "assets/audio/lines/d11-l4-slow.mp3",
-      "say": "A savings account keeps some monthly interest, and the minimum balance is one thousand dollars flat.",
+      "say": "A savings account earns monthly interest, and the minimum balance is one thousand dollars each month.",
       "hideGloss": false
     },
     {
       "id": "d11-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Is there any monthly fee if my balance stays quite high through each whole month?",
-      "glossYue": "如果每個月餘額都維持喺高位，有冇月費？",
+      "text": "Is there any monthly fee on the account if the balance stays above that minimum?",
+      "glossYue": "如果餘額高過嗰個最低額，有冇月費？",
       "audio": "assets/audio/lines/d11-l5.mp3",
       "audioSlow": "assets/audio/lines/d11-l5-slow.mp3",
-      "say": "Is there any monthly fee if my balance stays quite high through each whole month?",
+      "say": "Is there any monthly fee on the account if the balance stays above that minimum?",
       "hideGloss": false
     },
     {
       "id": "d11-l6",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "No monthly fee at all. Your new debit card will arrive by post in five days.",
-      "glossYue": "完全冇月費。你張新扣帳卡五日內會寄到。",
+      "text": "No monthly fee at all. Your new debit card arrives by post in five working days.",
+      "glossYue": "完全冇月費。新扣帳卡五個工作天內會寄到。",
       "audio": "assets/audio/lines/d11-l6.mp3",
       "audioSlow": "assets/audio/lines/d11-l6-slow.mp3",
-      "say": "No monthly fee at all. Your new debit card will arrive by post in five days.",
+      "say": "No monthly fee at all. Your new debit card arrives by post in five working days.",
       "hideGloss": false
     },
     {
@@ -137,11 +137,11 @@
       "id": "d11-l8",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "Yes. Online banking opens tomorrow morning, once we finish checking all of your signed bank paperwork.",
-      "glossYue": "可以。網上理財聽朝開通，等我哋核完你簽好嘅文件。",
+      "text": "Yes. Your online banking now opens tomorrow morning, once we finish checking the new paperwork fully.",
+      "glossYue": "可以。你嘅網上理財聽朝開通，等我哋而家核完新文件。",
       "audio": "assets/audio/lines/d11-l8.mp3",
       "audioSlow": "assets/audio/lines/d11-l8-slow.mp3",
-      "say": "Yes. Online banking opens tomorrow morning, once we finish checking all of your signed bank paperwork.",
+      "say": "Yes. Your online banking now opens tomorrow morning, once we finish checking the new paperwork fully.",
       "hideGloss": false
     }
   ],
@@ -157,7 +157,7 @@
       "explain": "identity 係身份。address 係地址。"
     },
     {
-      "prompt": "A savings account keeps some monthly interest, and the minimum balance is one thousand dollars flat. 呢句即係點？",
+      "prompt": "A savings account earns monthly interest, and the minimum balance is one thousand dollars each month. 呢句即係點？",
       "choices": [
         "儲蓄戶口有月息，最低餘額一千",
         "往來戶口冇餘額",
@@ -167,7 +167,7 @@
       "explain": "balance 係餘額。"
     },
     {
-      "prompt": "Yes. Online banking opens tomorrow morning, once we finish checking all of your signed bank paperwork. 呢句即係點？",
+      "prompt": "Yes. Your online banking now opens tomorrow morning, once we finish checking the new paperwork fully. 呢句即係點？",
       "choices": [
         "扣帳卡即刻到",
         "冇網上理財",
@@ -190,8 +190,8 @@
       ]
     },
     {
-      "pattern": "A ___ keeps some monthly interest, and the minimum balance is one thousand dollars flat.",
-      "example": "A savings account keeps some monthly interest, and the minimum balance is one thousand dollars flat.",
+      "pattern": "A ___ earns monthly interest, and the minimum balance is one thousand dollars each month.",
+      "example": "A savings account earns monthly interest, and the minimum balance is one thousand dollars each month.",
       "glossYue": "儲蓄戶口有利息。",
       "answer": "savings account",
       "choices": [
@@ -201,8 +201,8 @@
       ]
     },
     {
-      "pattern": "No monthly ___ at all. Your new debit card will arrive by post in five days.",
-      "example": "No monthly fee at all. Your new debit card will arrive by post in five days.",
+      "pattern": "No monthly ___ at all. Your new debit card arrives by post in five working days.",
+      "example": "No monthly fee at all. Your new debit card arrives by post in five working days.",
       "glossYue": "冇月費。",
       "answer": "fee",
       "choices": [
@@ -219,7 +219,7 @@
       "choices": [
         "I want to open an account. Do you need my identity and proof of address?",
         "Thanks. Should I choose a savings account or a current account for my daily pay?",
-        "Is there any monthly fee if my balance stays quite high through each whole month?"
+        "Is there any monthly fee on the account if the balance stays above that minimum?"
       ],
       "answer": 0,
       "explain": "講 account。"
@@ -258,10 +258,10 @@
       {
         "partner": "Ben",
         "partnerId": "ben",
-        "line": "A savings account keeps some monthly interest, and the minimum balance is one thousand dollars flat.",
+        "line": "A savings account earns monthly interest, and the minimum balance is one thousand dollars each month.",
         "audio": "assets/audio/lines/d11-l4.mp3",
         "audioSlow": "assets/audio/lines/d11-l4-slow.mp3",
-        "expect": "Is there any monthly fee if my balance stays quite high through each whole month?",
+        "expect": "Is there any monthly fee on the account if the balance stays above that minimum?",
         "keywords": [
           "fee",
           "balance"
@@ -272,7 +272,7 @@
       {
         "partner": "Ben",
         "partnerId": "ben",
-        "line": "No monthly fee at all. Your new debit card will arrive by post in five days.",
+        "line": "No monthly fee at all. Your new debit card arrives by post in five working days.",
         "audio": "assets/audio/lines/d11-l6.mp3",
         "audioSlow": "assets/audio/lines/d11-l6-slow.mp3",
         "expect": "Can I register for online banking before that debit card arrives by post next week?",
@@ -312,31 +312,31 @@
       "type": "meaning",
       "prompt": "You say 'proof of address'. What does address mean?",
       "choices": [
-        "地址",
         "身份",
-        "餘額"
+        "餘額",
+        "地址"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "You say 'no monthly fee'. What does fee mean?",
       "choices": [
-        "月費",
         "扣帳卡",
+        "月費",
         "戶口"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "Which phrase means the card that takes money from your account?",
       "choices": [
-        "savings account",
         "debit card",
+        "savings account",
         "online banking"
       ],
-      "answer": 1,
+      "answer": 0,
       "explain": "debit card 係扣帳卡。"
     }
   ],

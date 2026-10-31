@@ -283,52 +283,52 @@
       "prompt": "聽一次，揀你聽到嘅字：裝錢嗰個袋",
       "lemma": "wallet-noun",
       "choices": [
-        "wallet",
         "police",
+        "wallet",
         "embassy"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
       "prompt": "聽一次，揀你聽到嘅字：幫你寫報告嗰啲人",
       "lemma": "police-noun",
       "choices": [
-        "ambulance",
         "police",
+        "ambulance",
         "wallet"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "客人講「I have lost my wallet, and I last saw it at the desk this morning.」，係咩意思？",
       "choices": [
-        "唔見咗",
         "退款",
-        "塞車"
+        "塞車",
+        "唔見咗"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「I feel faint after the shock, so please tell me if this is an emergency.」，係咩意思？",
       "choices": [
         "街角",
-        "緊急情況",
-        "收據"
+        "收據",
+        "緊急情況"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
-        "wallet",
         "embassy",
+        "wallet",
         "report"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "wallet 有 /l/。embassy 同 report 冇 /l/。"
     }
   ],

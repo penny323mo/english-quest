@@ -313,20 +313,20 @@
       "prompt": "客人講「I will take the blue shirt and a postcard, and I have the receipt here.」，postcard 係咩意思？",
       "choices": [
         "收據",
-        "明信片",
-        "戶口"
+        "戶口",
+        "明信片"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
-        "smaller",
         "receipt",
+        "smaller",
         "postcard"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "smaller 有 /l/。receipt 同 postcard 冇。"
     }
   ],

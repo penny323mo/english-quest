@@ -309,10 +309,10 @@
       "lemma": "discount-noun",
       "choices": [
         "deal",
-        "discount",
-        "cost"
+        "cost",
+        "discount"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
@@ -328,21 +328,21 @@
       "type": "meaning",
       "prompt": "客人講「That is within my budget, so I can take this one item home.」，係咩意思？",
       "choices": [
-        "預算",
         "鑲托",
-        "鏡"
+        "鏡",
+        "預算"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "邊個尾音係 /l/？",
       "choices": [
-        "sale",
         "tax",
+        "sale",
         "cost"
       ],
-      "answer": 0,
+      "answer": 1,
       "explain": "sale 尾音係 /l/。discount 名詞重音喺第一節。"
     }
   ],

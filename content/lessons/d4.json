@@ -294,27 +294,27 @@
       "prompt": "聽一次，揀你聽到嘅字.",
       "lemma": "data-noun",
       "choices": [
-        "data",
         "day",
+        "data",
         "weight"
-      ],
-      "answer": 0
-    },
-    {
-      "type": "meaning",
-      "prompt": "Which plan is better for a short trip?",
-      "choices": [
-        "我通常幾時起身",
-        "邊個計劃適合短途",
-        "包裹幾多日到"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
+      "prompt": "Which plan is better for a short trip?",
+      "choices": [
+        "邊個計劃適合短途",
+        "我通常幾時起身",
+        "包裹幾多日到"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
       "prompt": "I'll take the prepaid plan.",
       "choices": [
-        "我要無限長約",
+        "無限長約太貴",
         "我要預繳計劃",
         "請貼郵票"
       ],
@@ -324,11 +324,11 @@
       "type": "choice",
       "prompt": "The prepaid plan is much cheaper.",
       "choices": [
-        "預繳計劃平好多",
         "覆蓋完全唔夠",
-        "請申報重量"
+        "請申報重量",
+        "預繳計劃平好多"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "cheaper 係平啲。"
     }
   ],

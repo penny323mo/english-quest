@@ -1,0 +1,339 @@
+{
+  "id": "D12",
+  "unit": "D",
+  "titleYue": "打電話約睇醫生",
+  "titleEn": "Booking a clinic appointment by phone",
+  "canDoYue": "你識打電話約第一個診症時間、講症狀、揀醫生、帶身份同保險卡、問費用，同埋早十分鐘到。",
+  "canDoEn": "Book the first clinic appointment by phone, name a symptom, choose the doctor, bring identity and an insurance card, ask the fee, and arrive ten minutes early.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/d12.webp",
+  "cast": [
+    "wen",
+    "tom"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "appointment-noun",
+    "symptom-noun",
+    "identity-noun",
+    "fee-noun"
+  ],
+  "topicTags": [
+    "預約",
+    "症狀",
+    "身份",
+    "費用",
+    "醫生",
+    "保險"
+  ],
+  "next": "D2",
+  "sound": {
+    "ipa": "/ə/",
+    "title": "appointment 入面嗰個音",
+    "note": "appointment 有 /ə/。",
+    "pairs": [
+      {
+        "a": "appointment-noun",
+        "b": "symptom-noun"
+      },
+      {
+        "a": "identity-noun",
+        "b": "fee-noun"
+      }
+    ],
+    "drill": [
+      "appointment-noun",
+      "symptom-noun",
+      "identity-noun",
+      "fee-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "d12-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Hello there. Can I book the first clinic appointment, and may I name my symptom?",
+      "glossYue": "你好。我可唔可以約第一個診症時間，同埋講我嘅症狀？",
+      "audio": "assets/audio/lines/d12-l1.mp3",
+      "audioSlow": "assets/audio/lines/d12-l1-slow.mp3",
+      "say": "Hello there. Can I book the first clinic appointment, and may I name my symptom?",
+      "hideGloss": false
+    },
+    {
+      "id": "d12-l2",
+      "speaker": "wen",
+      "speakerLabel": "Wen",
+      "text": "Yes. The first free appointment is tomorrow morning. Which doctor would you like to see?",
+      "glossYue": "可以。最早嘅預約係聽朝。你想見邊位醫生？",
+      "audio": "assets/audio/lines/d12-l2.mp3",
+      "audioSlow": "assets/audio/lines/d12-l2-slow.mp3",
+      "say": "Yes. The first free appointment is tomorrow morning. Which doctor would you like to see?",
+      "hideGloss": false
+    },
+    {
+      "id": "d12-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Doctor Wen, please. What is the fee, and should I bring my identity card too?",
+      "glossYue": "請搵 Wen 醫生。費用幾多，我使唔使帶身份證件？",
+      "audio": "assets/audio/lines/d12-l3.mp3",
+      "audioSlow": "assets/audio/lines/d12-l3-slow.mp3",
+      "say": "Doctor Wen, please. What is the fee, and should I bring my identity card too?",
+      "hideGloss": false
+    },
+    {
+      "id": "d12-l4",
+      "speaker": "wen",
+      "speakerLabel": "Wen",
+      "text": "The visit fee is two hundred dollars. Please bring your identity and the insurance card.",
+      "glossYue": "診症費用二百蚊。請帶身份同保險卡。",
+      "audio": "assets/audio/lines/d12-l4.mp3",
+      "audioSlow": "assets/audio/lines/d12-l4-slow.mp3",
+      "say": "The visit fee is two hundred dollars. Please bring your identity and the insurance card.",
+      "hideGloss": true
+    },
+    {
+      "id": "d12-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Thanks. Should I arrive ten minutes early with my identity card for the first appointment?",
+      "glossYue": "多謝。第一個預約，我係咪帶身份證件早十分鐘到？",
+      "audio": "assets/audio/lines/d12-l5.mp3",
+      "audioSlow": "assets/audio/lines/d12-l5-slow.mp3",
+      "say": "Thanks. Should I arrive ten minutes early with my identity card for the first appointment?",
+      "hideGloss": true
+    },
+    {
+      "id": "d12-l6",
+      "speaker": "wen",
+      "speakerLabel": "Wen",
+      "text": "Yes, please arrive ten minutes early and bring that identity card to the front desk.",
+      "glossYue": "係，請早十分鐘到，帶身份證件去前台。",
+      "audio": "assets/audio/lines/d12-l6.mp3",
+      "audioSlow": "assets/audio/lines/d12-l6-slow.mp3",
+      "say": "Yes, please arrive ten minutes early and bring that identity card to the front desk.",
+      "hideGloss": true
+    },
+    {
+      "id": "d12-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Can I describe my main symptom very briefly when I arrive at the clinic desk?",
+      "glossYue": "我到診所前台，可唔可以簡單講主要症狀？",
+      "audio": "assets/audio/lines/d12-l7.mp3",
+      "audioSlow": "assets/audio/lines/d12-l7-slow.mp3",
+      "say": "Can I describe my main symptom very briefly when I arrive at the clinic desk?",
+      "hideGloss": true
+    },
+    {
+      "id": "d12-l8",
+      "speaker": "wen",
+      "speakerLabel": "Wen",
+      "text": "Yes. Tell the doctor your symptom at the desk, and the fee stays the same.",
+      "glossYue": "可以。喺前台同醫生講症狀，費用不變。",
+      "audio": "assets/audio/lines/d12-l8.mp3",
+      "audioSlow": "assets/audio/lines/d12-l8-slow.mp3",
+      "say": "Yes. Tell the doctor your symptom at the desk, and the fee stays the same.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Hello there. Can I book the first clinic appointment, and may I name my symptom? 即係問緊咩？",
+      "choices": [
+        "問費用",
+        "約第一個診症時間，想講症狀",
+        "問保險卡"
+      ],
+      "answer": 1,
+      "explain": "appointment 係預約。symptom 係症狀。"
+    },
+    {
+      "prompt": "Doctor Wen, please. What is the fee, and should I bring my identity card too? 即係問緊咩？",
+      "choices": [
+        "問醫生、費用同身份",
+        "問症狀點講",
+        "問聽朝預約"
+      ],
+      "answer": 0,
+      "explain": "fee 係費用。identity 係身份。"
+    },
+    {
+      "prompt": "Yes, please arrive ten minutes early and bring that identity card to the front desk. 呢句即係點？",
+      "choices": [
+        "費用要改",
+        "唔使帶身份",
+        "早十分鐘到，帶身份去前台"
+      ],
+      "answer": 2,
+      "explain": "identity 係身份。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Hello there. Can I book the first clinic ___, and may I name my symptom?",
+      "example": "Hello there. Can I book the first clinic appointment, and may I name my symptom?",
+      "glossYue": "約診症。",
+      "answer": "appointment",
+      "choices": [
+        "appointment",
+        "symptom",
+        "fee"
+      ]
+    },
+    {
+      "pattern": "Doctor Wen, please. What is the ___, and should I bring my identity card too?",
+      "example": "Doctor Wen, please. What is the fee, and should I bring my identity card too?",
+      "glossYue": "費用幾多。",
+      "answer": "fee",
+      "choices": [
+        "fee",
+        "symptom",
+        "appointment"
+      ]
+    },
+    {
+      "pattern": "Can I describe my main ___ very briefly when I arrive at the clinic desk?",
+      "example": "Can I describe my main symptom very briefly when I arrive at the clinic desk?",
+      "glossYue": "講症狀。",
+      "answer": "symptom",
+      "choices": [
+        "symptom",
+        "fee",
+        "identity"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想約診症。你點講？",
+      "choices": [
+        "Hello there. Can I book the first clinic appointment, and may I name my symptom?",
+        "Doctor Wen, please. What is the fee, and should I bring my identity card too?",
+        "Thanks. Should I arrive ten minutes early with my identity card for the first appointment?"
+      ],
+      "answer": 0,
+      "explain": "講 appointment。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "appointment",
+        "symptom"
+      ],
+      "answer": [
+        "appointment",
+        "symptom"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你打電話約醫生。可以講：appointment、symptom。",
+    "turns": [
+      {
+        "partner": "Wen",
+        "partnerId": "wen",
+        "line": "Yes. The first free appointment is tomorrow morning. Which doctor would you like to see?",
+        "audio": "assets/audio/lines/d12-l2.mp3",
+        "audioSlow": "assets/audio/lines/d12-l2-slow.mp3",
+        "expect": "Doctor Wen, please. What is the fee, and should I bring my identity card too?",
+        "keywords": [
+          "doctor",
+          "fee"
+        ],
+        "modelAudio": "assets/audio/lines/d12-l3.mp3",
+        "modelSlow": "assets/audio/lines/d12-l3-slow.mp3"
+      },
+      {
+        "partner": "Wen",
+        "partnerId": "wen",
+        "line": "The visit fee is two hundred dollars. Please bring your identity and the insurance card.",
+        "audio": "assets/audio/lines/d12-l4.mp3",
+        "audioSlow": "assets/audio/lines/d12-l4-slow.mp3",
+        "expect": "Thanks. Should I arrive ten minutes early with my identity card for the first appointment?",
+        "keywords": [
+          "arrive",
+          "early"
+        ],
+        "modelAudio": "assets/audio/lines/d12-l5.mp3",
+        "modelSlow": "assets/audio/lines/d12-l5-slow.mp3"
+      },
+      {
+        "partner": "Wen",
+        "partnerId": "wen",
+        "line": "Yes, please arrive ten minutes early and bring that identity card to the front desk.",
+        "audio": "assets/audio/lines/d12-l6.mp3",
+        "audioSlow": "assets/audio/lines/d12-l6-slow.mp3",
+        "expect": "Can I describe my main symptom very briefly when I arrive at the clinic desk?",
+        "keywords": [
+          "symptom",
+          "desk"
+        ],
+        "modelAudio": "assets/audio/lines/d12-l7.mp3",
+        "modelSlow": "assets/audio/lines/d12-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear for a booked time at a clinic.",
+      "choices": [
+        "symptom",
+        "appointment",
+        "fee"
+      ],
+      "answer": 1,
+      "lemma": "appointment-noun"
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear for what feels wrong.",
+      "choices": [
+        "symptom",
+        "fee",
+        "identity"
+      ],
+      "answer": 0,
+      "lemma": "symptom-noun"
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'book an appointment'. What does appointment mean?",
+      "choices": [
+        "預約",
+        "症狀",
+        "身份"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'What is the fee?' What does fee mean?",
+      "choices": [
+        "醫生",
+        "保險",
+        "費用"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word means the document that shows who you are?",
+      "choices": [
+        "symptom",
+        "identity",
+        "fee"
+      ],
+      "answer": 1
+    }
+  ],
+  "shadow": {
+    "lineId": "d12-l1",
+    "hint": "Hello there. Can I book the first clinic appointment, and may I name my symptom?"
+  }
+}

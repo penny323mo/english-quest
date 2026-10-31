@@ -321,52 +321,52 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "receipt-noun",
       "choices": [
-        "receipt",
         "invoice",
+        "receipt",
         "cash"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "contactless-adj",
       "choices": [
-        "signature",
         "contactless",
+        "signature",
         "wrap"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "客人講「This purchase is tax-free for you, which means you can claim the tax later.」，係咩意思？",
       "choices": [
-        "免稅",
         "紙袋",
-        "收據"
+        "收據",
+        "免稅"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「I can wrap the gift, and I will add a card if you want one.」，係咩意思？",
       "choices": [
-        "包裝",
         "簽名",
+        "包裝",
         "批核"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "邊個有 /l/？",
       "choices": [
         "cash",
-        "contactless",
-        "pay"
+        "pay",
+        "contactless"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "contactless 有 /l/。cash 尾係 /ʃ/。"
     }
   ],

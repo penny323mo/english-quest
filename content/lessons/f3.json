@@ -263,41 +263,41 @@
       "type": "meaning",
       "prompt": "dollar",
       "choices": [
-        "蚊",
         "對唔住",
+        "蚊",
         "點鐘"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "o'clock",
       "choices": [
-        "點鐘",
         "蚊",
+        "點鐘",
         "護照"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "price",
       "choices": [
         "航班",
-        "價錢",
-        "餐牌"
+        "餐牌",
+        "價錢"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "邊句先係問時間？",
       "choices": [
-        "What time is it?",
         "Excuse me.",
-        "How much is this?"
+        "How much is this?",
+        "What time is it?"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "time 係時間。how much 係問錢。"
     }
   ],

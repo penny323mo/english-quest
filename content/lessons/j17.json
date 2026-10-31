@@ -285,11 +285,11 @@
       "prompt": "Listen once and pick the word you hear for the shine on a pearl.",
       "lemma": "lustre-noun",
       "choices": [
-        "lustre",
         "price",
+        "lustre",
         "perfume"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -306,31 +306,31 @@
       "type": "meaning",
       "prompt": "You say 'a short pearl necklace'. What does pearl mean?",
       "choices": [
+        "珍珠",
         "光澤",
-        "香水",
-        "珍珠"
+        "香水"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "You say 'put perfume on'. What does perfume mean?",
       "choices": [
-        "證書",
         "香水",
+        "證書",
         "價錢"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "choice",
       "prompt": "Which word means you clean the pearl with a cloth?",
       "choices": [
         "lustre",
-        "wipe",
-        "price"
+        "price",
+        "wipe"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "wipe 係抹。"
     }
   ],

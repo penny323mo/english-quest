@@ -266,11 +266,11 @@
       "prompt": "聽一次，揀你喺機場聽到嘅字：行李",
       "lemma": "luggage-noun",
       "choices": [
-        "luggage",
         "hotel",
+        "luggage",
         "deliver"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -308,10 +308,10 @@
       "prompt": "邊個字有 /l/？",
       "choices": [
         "hotel",
-        "luggage",
-        "deliver"
+        "deliver",
+        "luggage"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "luggage 有 /l/。"
     }
   ],

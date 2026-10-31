@@ -301,40 +301,40 @@
       "lemma": "receipt-noun",
       "choices": [
         "destination",
-        "receipt",
-        "taxi"
+        "taxi",
+        "receipt"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "You say 'late for the taxi'. What does taxi mean?",
       "choices": [
         "車牌",
-        "的士",
-        "收據"
+        "收據",
+        "的士"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "You say 'change the destination'. What does destination mean?",
       "choices": [
         "上車站",
-        "遲到",
-        "目的地"
+        "目的地",
+        "遲到"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "Which phrase means you will arrive after the agreed time?",
       "choices": [
-        "running late",
         "plate number",
-        "pick-up point"
+        "pick-up point",
+        "running late"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "running late 係遲到。"
     }
   ],

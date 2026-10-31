@@ -272,31 +272,31 @@
       "type": "meaning",
       "prompt": "reservation",
       "choices": [
-        "訂位",
         "頸鏈",
-        "護照"
+        "護照",
+        "訂位"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "I'll bring the menu.",
       "choices": [
         "我飛去香港",
-        "我睇吓先",
-        "我攞餐牌嚟"
+        "我攞餐牌嚟",
+        "我睇吓先"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "table 入面有冇 /r/？",
       "choices": [
         "有，讀成 rable",
-        "冇。/r/ 喺 right、reservation",
-        "同 light 同音"
+        "同 light 同音",
+        "冇。/r/ 喺 right、reservation"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "table 係 /ˈteɪ.bəl/。唔好為咗課名硬加 /r/。"
     }
   ],

@@ -285,11 +285,11 @@
       "prompt": "Listen once and pick the phrase you hear for days off work.",
       "lemma": "annual-leave-phrase",
       "choices": [
-        "annual leave",
         "handover",
+        "annual leave",
         "email"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -326,11 +326,11 @@
       "type": "choice",
       "prompt": "Which word means a boss agrees to the dates?",
       "choices": [
-        "approve",
         "handover",
-        "email"
+        "email",
+        "approve"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "approve 係批核。"
     }
   ],

@@ -286,41 +286,41 @@
       "prompt": "Listen once and pick the word for a cold drink.",
       "lemma": "iced-adj",
       "choices": [
-        "iced",
         "size",
+        "iced",
         "name"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "You say 'Please use oat milk in the latte.' What does oat milk mean?",
       "choices": [
         "拎走",
-        "燕麥",
-        "名字"
+        "名字",
+        "燕麥"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "You say 'The name is on the cup.' What does cup mean?",
       "choices": [
-        "杯",
         "拿鐵",
-        "大細"
+        "大細",
+        "杯"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "Which word has /aɪ/?",
       "choices": [
         "cup",
-        "name",
-        "iced"
+        "iced",
+        "name"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "iced 有 /aɪ/。"
     }
   ],

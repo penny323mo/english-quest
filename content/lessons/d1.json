@@ -293,10 +293,10 @@
       "lemma": "cough-noun",
       "choices": [
         "fever",
-        "cough",
-        "headache"
+        "headache",
+        "cough"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
@@ -312,21 +312,21 @@
       "type": "meaning",
       "prompt": "客人講「You can rest at home, and the pharmacy can prepare this prescription for you there.」，prescription 係咩意思？",
       "choices": [
-        "藥單",
         "議程",
-        "毛巾"
+        "毛巾",
+        "藥單"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
         "fever",
-        "allergy",
-        "cough"
+        "cough",
+        "allergy"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "allergy 有 /l/。fever 同 cough 冇。"
     }
   ],
@@ -352,5 +352,5 @@
       "pharmacy-noun"
     ]
   },
-  "next": "D2"
+  "next": "D12"
 }

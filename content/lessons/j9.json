@@ -285,22 +285,22 @@
       "prompt": "聽一次，揀你聽到嘅字：退返錢",
       "lemma": "refund-noun",
       "choices": [
-        "refund",
         "repair",
+        "refund",
         "manager"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
       "prompt": "聽一次，揀你聽到嘅字：整返個扣",
       "lemma": "repair-verb",
       "choices": [
-        "refund",
         "repair",
+        "refund",
         "complaint"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -316,21 +316,21 @@
       "type": "meaning",
       "prompt": "客人講「The manager can review the receipt, and we will repair it immediately if the policy allows.」，係咩意思？",
       "choices": [
-        "即刻",
         "大概",
-        "聽日"
+        "聽日",
+        "即刻"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
-        "refund",
         "immediately",
+        "refund",
         "issue"
       ],
-      "answer": 1,
+      "answer": 0,
       "explain": "immediately 有 /l/。"
     }
   ],

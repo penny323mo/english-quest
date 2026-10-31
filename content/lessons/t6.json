@@ -282,22 +282,22 @@
       "prompt": "聽一次，揀你聽到嘅字：抹手嗰塊布",
       "lemma": "towel-noun",
       "choices": [
-        "towel",
         "blanket",
+        "towel",
         "engineer"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
       "prompt": "聽一次，揀你聽到嘅字：床上嗰張暖被",
       "lemma": "blanket-noun",
       "choices": [
-        "towel",
         "blanket",
+        "towel",
         "noisy"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -314,10 +314,10 @@
       "prompt": "客人講「I am sorry for the inconvenience in this noisy room」，係咩意思？",
       "choices": [
         "刻字",
-        "不便",
-        "收據"
+        "收據",
+        "不便"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "choice",

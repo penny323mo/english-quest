@@ -281,42 +281,42 @@
       "prompt": "聽一次，揀你聽到嘅字：銀行戶口",
       "lemma": "account-noun",
       "choices": [
-        "account",
         "balance",
+        "account",
         "fee"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
       "prompt": "聽一次，揀你聽到嘅字：戶口剩幾多",
       "lemma": "balance-noun",
       "choices": [
-        "branch",
         "balance",
+        "branch",
         "form"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "客人講「The balance is quite low again, and the fee to replace the card is here.」，balance 係咩意思？",
       "choices": [
-        "分行",
         "餘額",
+        "分行",
         "收據"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "客人講「I will pay the fee here, and I would like a receipt for the new card.」，fee 係咩意思？",
       "choices": [
-        "手續費",
         "表格",
-        "餘額"
+        "餘額",
+        "手續費"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",

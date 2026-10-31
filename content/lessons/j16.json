@@ -289,11 +289,11 @@
       "prompt": "Listen once and pick the word you hear for letters cut into metal.",
       "lemma": "engraving-noun",
       "choices": [
-        "engraving",
         "font",
+        "engraving",
         "fee"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "listen",
@@ -301,40 +301,40 @@
       "lemma": "initial-noun",
       "choices": [
         "date",
-        "initial",
-        "spelling"
-      ],
-      "answer": 1
-    },
-    {
-      "type": "meaning",
-      "prompt": "You say 'a plain font'. What does font mean?",
-      "choices": [
-        "手續費",
-        "日期",
-        "字體"
+        "spelling",
+        "initial"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
+      "prompt": "You say 'a plain font'. What does font mean?",
+      "choices": [
+        "字體",
+        "手續費",
+        "日期"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
       "prompt": "You say 'the character limit'. What does character limit mean?",
       "choices": [
-        "刻字",
         "字數",
+        "刻字",
         "串法"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "choice",
       "prompt": "Which word means the letters of a name written the right way?",
       "choices": [
-        "spelling",
         "engraving",
-        "fee"
+        "fee",
+        "spelling"
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "spelling 係串法。"
     }
   ],
