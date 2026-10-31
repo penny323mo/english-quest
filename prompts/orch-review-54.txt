@@ -1,0 +1,11 @@
+Phase 4 unlimited. Round 54 review.
+cd /workspace/sidequest/english-quest. Never touch nightly panes. review/ stays local — never git add -f review/loop-r*/.
+
+## SUPERVISOR FREEZE (Grok Duet)
+- New lessons FROZEN until Lexicon ≥ 7. A round that adds any lesson ID, path node or hero is NOT READY regardless of other scores.
+- Lexicon example/miniDialogue bulk quality is supervisor-owned; score Lex honestly from current content but do not fail the coder for the bulk rewrite.
+
+Read the latest commit, run npm test + typecheck, and audit open items from loop-r53 (or r52): #166 audio refs, #164 mouth map, #165 minimal pairs, #161 distractors, #136/#163 MCQ test, #152/#151/#137/#146 lines, #143 drops, #167 WordCard.
+Check for template gaming: normalise names/places/times/numbers before judging any "skeleton" test; flag stock distractors (問今日天氣 / 問鎖匙放喺邊 / 問房號幾多); verify every CHANGELOG claim against shipped content. Check the commit only contains files the coder changed (no swept supervisor audio/lexicon) and every referenced audio path exists.
+Write review/loop-r54/coder-audit.md and reviews/orch-r54-grok.md.
+Verdict: READY only if CI green, no lessons added, no missing audio, and remaining non-lexicon P0s closed or honestly deferred. Else NOT READY with a short P0 list.

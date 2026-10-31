@@ -1,0 +1,29 @@
+Phase 4 unlimited. Round 54. First read CURRICULUM.md, ART-STYLE.md, DUOLINGO-REF.md, SPEC.md, review/mockup-v1 (Penny-approved) and review/loop-r53/coder-audit.md if present, else review/loop-r52/coder-audit.md.
+cd /workspace/sidequest/english-quest. Never touch the grokbot repo or the nightly panes. No paid services. Report files under review/ stay local: never commit them, never git add -f review/loop-r*/ or review/style-gap/, never git rm them. This round may change web/src, tests/, content/lessons and audio for lessons you edit. Do not git commit from this prompt; the orchestrator/parent handles publish.
+
+## SUPERVISOR FREEZE (Grok Duet 2026-10-31) — READ FIRST
+1. **NEW LESSONS FROZEN** until Lexicon score ≥ 7. Do NOT add R18, D15, W16, J25 or any new lesson ID, path node or hero. A diff that adds a lesson fails the round.
+2. **Lexicon examples + miniDialogues are supervisor-owned.** Do NOT bulk-rewrite content/lexicon.json examples/miniDialogue. Fix only ids the audit names.
+3. **Do not stage files you did not change.** If git status shows audio/lexicon changes you did not make (supervisor work), leave them alone and say so in CHANGELOG. Never delete audio referenced by lexicon.json or lines.json.
+
+## REAL EXAMPLES ONLY (mandatory for any line, quiz item or example you write)
+- Every sentence must be something a real HK customer/staff/traveller would say, about one concrete situation, with a natural Cantonese gloss (no 你把 / 改簽-for-tables Mandarin-isms, no English inside yue).
+- No slot templates: no "<Name> asked about the X <place> <time>", no "People often say "a X"…", no "In this lesson, X means…", no "Is this the X for the X task?". Rotating names/places/times does not make a sentence new.
+- Distractors must be plausible in the SAME scene (wrong amount, wrong day, wrong item), never stock 問今日天氣 / 問鎖匙放喺邊 / 問房號幾多 / "Friday" / "receipt".
+- Tests must normalise PERSON/PLACE/TIME/NUMBER tokens and strip the lemma before counting skeletons, and must fail on the stock distractors above. Do not make tests pass by rewording around them; CHANGELOG claims must match shipped content (#160).
+
+## FIRST: close in order (from the r52/r53 audit)
+1. **#166 Audio**: every audio path in content/lexicon.json and content/lines.json must exist in git ls-files and on live. Add tests/audio-refs.mjs. Restore email-noun, headache-noun, stamp-verb, weight-noun, savings-account-phrase (+ -slow) if still missing.
+2. **#164 Pron**: replace the `["theta"]` fallback in web/src/components/Mouth.tsx `mouthsFor()` with a real per-sound map (vowels: jaw/lip shape for /eɪ/ /aɪ/ /ɪ/ /i/ /æ/ /oʊ/ /u/ /ɛ/ /aʊ/ /ʌ/ /ɔɪ/; consonants /b/ /ɡ/ etc.) and matching Cantonese captions. Test: every lesson's sound ipa maps to a diagram whose caption names that sound; no lesson shows the /θ/ caption unless its sound is /θ/ or /ð/.
+3. **#165 Pron/Ped**: in J23 J24 R17 T20 T21 W14 W15 pick a focus sound actually in the key word's stressed syllable and give real minimal pairs (e.g. /æ/ banquet vs /ɛ/; /eɪ/ declaration: date/debt). Test: pairs differ by one phoneme (CMU dict).
+4. **#161 Ped**: rewrite understand/listen items in those 7 lessons with scene-specific distractors; can-do lines as tasks ("你識同客解釋印記保證"), not word lists.
+5. **#136 + #163**: R4 MCQ names its target word and has one key; T8 gift item fixed; add a path-wide MCQ test (target word appears in the line; exactly one choice fits).
+6. **#152 #151 #137 #146** lesson dialogue lines: T20 l6, T21 "layover leaves/belt", R17 l4, J23 "first shop visit", D3 rent amount, W5 l7, J15 l1/l2 glosses + l5, W13 l8, J22. Re-render only the clips you change.
+7. **#143**: smooth R4→D6→R9→R13 and the other 3-step drops >2.5 by editing existing lines (no new lessons); keep band means monotonic, B2 ≤16.
+8. **#167** WordCard: IPA must not truncate at 390 (wrap below the stress chip); hide the related row when empty.
+9. #154 W8/W9 redraw only if time remains.
+
+## DO NOT
+- Add lessons/heroes, bulk-rewrite lexicon, touch P0-3, nightly panes, workflow_dispatch, print secrets, git commit, or delete files you did not create.
+
+Run npm test + typecheck + build. Lighthouse mobile Perf ≥98 if UI changed. Append "## Round 54" to CHANGELOG.md: list each item as closed/open with one line of proof; state "new lessons frozen pending Lex≥7".
