@@ -253,23 +253,20 @@ function Hook({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
   const [waited, setWaited] = useState(false);
   useEffect(() => {
     let live = true;
-    const urls = [
-      asset(lesson.hero),
-      ...lesson.cast.map((id) => asset(`assets/art/refs/${id}.webp`)),
-    ];
+    const hero = asset(lesson.hero);
+    const chips = lesson.cast.map((id) => asset(`assets/art/refs/${id}.webp`));
     const timer = window.setTimeout(() => {
       if (live) setWaited(true);
     }, 1200);
-    const fallback = window.setTimeout(() => {
-      if (live) setDecoded(true);
-    }, 8000);
-    whenArtDecoded(urls).then(() => {
+    Promise.all([
+      whenArtDecoded([hero], 900),
+      whenArtDecoded(chips, 1),
+    ]).then(() => {
       if (live) setDecoded(true);
     });
     return () => {
       live = false;
       window.clearTimeout(timer);
-      window.clearTimeout(fallback);
     };
   }, [lesson]);
   const ready = waited && decoded;
@@ -738,7 +735,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪八十七課你行完啦。到期嘅卡會喺練習等你。</p>
+        <p className="lede">呢輪八十八課你行完啦。到期嘅卡會喺練習等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );

@@ -1,0 +1,21 @@
+Phase 4 unlimited. Round 48. Read CURRICULUM.md + ART-STYLE.md + DUOLINGO-REF.md + SPEC.md + review/mockup-v1 (Penny-approved) + review/loop-r46/coder-audit.md first (and loop-r45 if needed for history).
+cd /workspace/sidequest/english-quest. Never touch the grokbot repo or the nightly panes. No paid services. Report files under review/ stay local (never commit or git add -f review/loop-r*/ or review/style-gap/; never git rm them). Real app-code/content changes are required this round (not just tests or docs). Do not git commit from this prompt — orchestrator/parent handles publish.
+
+## FIRST: close every open item in review/loop-r46/coder-audit.md.
+1. #132 W12 Niles: rename cast id + speakerLabels + roleplay partner to a feminine id that matches the mint-hair glasses manager art. Prefer `nell` (ref already at assets/art/refs/nell.webp) — update lesson W12 cast, dialogue speakers, any lexicon/line/audio speaker tags, chip wiring; chips must stay matching the hero. Do NOT re-render unless rename is impossible. Do not leave "Niles" labels on a woman face.
+2. Keep CLOSED: #128–#131, #133, #134, #102, #121, #95, #114, #123–#127. Do not re-pad audit-script lessons. Do not regress J20 gus+ida faces, T17 direction-first line, D12 decode-before-reveal, or meet-sheet contain.
+
+## Note on fix-47
+fix-47 is shipping WORD-REVIEW hub slice 1 + one stretch lesson. Do **not** redo that work — build on it. If fix-47 already renamed Niles→nell, re-verify at 390 and leave closed; if not, close #132 here.
+
+## NEW FEATURE TARGET — ≥3 stretch lessons (curriculum step 26)
+All numbered CURRICULUM units through J21/D14/R16 are already SHIPPED (87 lessons). Continue syllabus growth with **≥3 new B1 (or A2/B1→B1) lessons** in a coherent jewellery / travel / work trio. Prefer IDs not yet on disk after fix-47, e.g.:
+- **J22** custom engraving rush / 趕急刻字 · B1
+- **T19** hotel complaint follow-up / 酒店投訴跟進 · B1
+- **W13** team update / 小組進度匯報 · B1
+(If fix-47 already shipped one of these as its stretch, pick the next free IDs in the same bands — e.g. J23 / T20 / W14 — and document in CHANGELOG.)
+
+Each lesson: full 12-beat, hero WebP 900×1200 sat ≥34.3 (PIL RGB resize 90×120 colorsys S mean×100), cast-matched chips, CMUdict IPA, Kokoro/Piper audio, natural Cantonese glossYue, seeded-shuffled answers, slotted so Path CEFR stays non-decreasing, no padding / keyword stuffing, every question answered with real numbers/names.
+
+Dialogues: short natural turns, contractions, Q→A coherence.
+Run tests + build; Lighthouse mobile Perf ≥98. Append "## Round 48" to CHANGELOG.md. Do not git commit.

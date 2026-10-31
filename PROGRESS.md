@@ -1,7 +1,7 @@
 # English Quest loop progress
 
 last_reported_round: 45
-last_audited_round: 45
+last_audited_round: 46
 
 phase: 4
 phase2_rounds: 11-16
@@ -25,6 +25,8 @@ phase2_rules: |
   - Prefer A2/B1 jewellery + travel first (J4+ / T3+)
   - Penny APPROVED 2026-10-30 ~15:58 bright cartoon mockups (review/mockup-v1 + ART-STYLE.md 小燈) — implement round 20+
   - SFX required: correct/wrong/complete/XP|level-up/streak/tap; Web Audio or free/CC0; Settings mute; iOS unlock; no overlap with TTS
+
+- 2026-10-31 18:42: Round 46 (J21 D14 R16, 353fa3c / index-DD_3r-E9.js) Coder live audit review/loop-r46 (local only): path 87/87 + new trio + priors walked 21 steps @390, 0 errors; LH mobile 100x4; 20 lexicon audio 200 CMU=; sat 0 below 34.3. Scores Art7 UI8 Lex8 Pron8 Ped8 Speak8 SRS9 Flow9 Perf10 Audio9 Durability9 CI9. CLOSED #133 #134 (and #128/#129/#131 stay closed). OPEN #132 W12 Niles. Wrote orch-fix-48 (≥3 stretch J22/T19/W13-class after closing #132) + orch-review-48. fix-47 WORD-REVIEW still in progress in grokcoder-pane; Orchestrator pid 1213336 alive. last_reported_round: 45. Nightly panes untouched.
 
 - 2026-10-31 18:16: Round 45 (R15 W12 T18, ed0b05c / index-DUmMsEkx.js) Coder live audit review/loop-r45 (local only): path 84/84 + new trio + priors walked 21 steps @390, 0 errors; LH mobile 100x4; 20 lexicon audio 200; sat 0 below 34.3. Scores Art7 UI8 Lex8 Pron8 Ped8 Speak8 SRS9 Flow9 Perf10 Audio9 Durability9 CI9. CLOSED #130 #128; #129/#131 closed on subsequent fix-46. NEW/OPEN #132 W12 Niles gender/name, #133 meet-sheet, #134 D12 cold decode. Wrote orch-fix-47 (WORD-REVIEW hub slice 1 + 1 stretch lesson) + orch-review-47. Meanwhile fix-46 (J21 D14 R16 + J20/T17 fixes, 353fa3c / index-DD_3r-E9.js) already live 200, path 87; review-47 in eq-review-pane. Orchestrator pid alive. last_reported_round: 45 (rounds 43–45 → Grok Duet via parent). Nightly panes untouched.
 

@@ -450,7 +450,7 @@
 - **Vocab:** annual leave, handover, approve, email, public holiday
 - **Grammar:** I would like annual leave next week. I will approve it after I read that Friday handover note.
 - **Dialogue beats:** Four dates, not Wednesday → Wednesday is the public holiday → Jo covers, handover by email → Read it before deciding → Write the note this Friday morning → Read every line before deciding → Back after those four dates → One approval, leave starts Monday
-- **Coherence:** Wednesday is a public holiday, so it is not a leave day. The handover is written this Friday morning. Niles approves once, after he reads that Friday note. Leave starts on Monday.
+- **Coherence:** Wednesday is a public holiday, so it is not a leave day. The handover is written this Friday morning. Nina approves once, after he reads that Friday note. Leave starts on Monday.
 
 ### W4 — Small talk at work · A2/B1 · NEW
 - **Goals:** Weather, weekend, commute — then pivot to work.
@@ -495,6 +495,13 @@
 - **Vocab:** performance, quarter, training, summary
 - **Grammar:** Could we book a thirty minute slot? Did I miss one target from last quarter?
 - **Dialogue beats:** Book Thursday at ten → Shop window slipped → Training budget → Summary email
+
+### W13 — Team update / 小組進度匯報 · B1 · SHIPPED
+- **Goals:** Say where the design draft stands, name the logo-file blocker, say who presents the slide deck, and ask to move the milestone to Friday.
+- **Vocab:** draft, milestone, blocker, slide
+- **Grammar:** Where does the draft stand? Can we move the milestone to Friday?
+- **Dialogue beats:** Design draft → Logo blocker → Who presents → Move the milestone
+- **Coherence:** the design draft is halfway done for Wednesday's client review. The blocker is the missing logo file. Nina presents the slide deck. Friday still works if the blocker remains.
 
 ---
 
@@ -594,7 +601,7 @@ Every round until map complete, ship **≥3 NEW lessons** in this order (skip al
 23. **T17, J20, D13** (airport security, gold by weight, the dentist)
 24. **R15, W12, T18** (buffet limits, performance review, customs declaration)
 25. **J21, D14, R16** (insurance appraisal, parcel collection, chef's recommendation)
-26. Then polish / legendary review nodes / further B2 stretch
+26. **WORD-REVIEW hub** (Jewellery deck) plus **W13** team update. Then polish / legendary review nodes / further B2 stretch
 
 **Path UX:** show CEFR chip (A1/A2/B1/B2) on each node; group Path into level tracks; lock by prerequisite; keep `soon:true` teasers for unshipped.
 

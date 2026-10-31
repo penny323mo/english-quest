@@ -9,7 +9,7 @@
   "hero": "assets/art/lessons/w12.webp",
   "cast": [
     "tom",
-    "niles"
+    "nina"
   ],
   "cefr": "B1",
   "lemmas": [
@@ -24,7 +24,7 @@
     "培訓",
     "總結"
   ],
-  "next": "D3",
+  "next": "W13",
   "sound": {
     "ipa": "/ɔ/",
     "title": "performance 入面嗰個音",
@@ -60,8 +60,8 @@
     },
     {
       "id": "w12-l2",
-      "speaker": "niles",
-      "speakerLabel": "Niles",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
       "text": "Yes. Your performance review is booked for Thursday at ten in the morning.",
       "glossYue": "可以。你嘅績效面談訂咗星期四上晝十點。",
       "audio": "assets/audio/lines/w12-l2.mp3",
@@ -82,8 +82,8 @@
     },
     {
       "id": "w12-l4",
-      "speaker": "niles",
-      "speakerLabel": "Niles",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
       "text": "Yes. The shop window display slipped last quarter, and the rest held.",
       "glossYue": "係。舖面櫥窗上季遲咗，其他都做到。",
       "audio": "assets/audio/lines/w12-l4.mp3",
@@ -104,8 +104,8 @@
     },
     {
       "id": "w12-l6",
-      "speaker": "niles",
-      "speakerLabel": "Niles",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
       "text": "Yes. That training budget can still pay for the two day sales class.",
       "glossYue": "可以。培訓預算仲可以支付嗰個兩日銷售班。",
       "audio": "assets/audio/lines/w12-l6.mp3",
@@ -126,8 +126,8 @@
     },
     {
       "id": "w12-l8",
-      "speaker": "niles",
-      "speakerLabel": "Niles",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
       "text": "Yes. I will send that summary once the new goals are agreed.",
       "glossYue": "會。新目標同意之後我會寄嗰份總結。",
       "audio": "assets/audio/lines/w12-l8.mp3",
@@ -138,11 +138,11 @@
   ],
   "roleplay": {
     "you": "tom",
-    "intro": "你同 Niles 傾呢件事。等對方講完先答。",
+    "intro": "你同 Nina 傾呢件事。等對方講完先答。",
     "turns": [
       {
-        "partner": "Niles",
-        "partnerId": "niles",
+        "partner": "Nina",
+        "partnerId": "nina",
         "line": "Yes. Your performance review is booked for Thursday at ten in the morning.",
         "audio": "assets/audio/lines/w12-l2.mp3",
         "audioSlow": "assets/audio/lines/w12-l2-slow.mp3",
@@ -155,8 +155,8 @@
         "modelSlow": "assets/audio/lines/w12-l3-slow.mp3"
       },
       {
-        "partner": "Niles",
-        "partnerId": "niles",
+        "partner": "Nina",
+        "partnerId": "nina",
         "line": "Yes. The shop window display slipped last quarter, and the rest held.",
         "audio": "assets/audio/lines/w12-l4.mp3",
         "audioSlow": "assets/audio/lines/w12-l4-slow.mp3",
@@ -169,8 +169,8 @@
         "modelSlow": "assets/audio/lines/w12-l5-slow.mp3"
       },
       {
-        "partner": "Niles",
-        "partnerId": "niles",
+        "partner": "Nina",
+        "partnerId": "nina",
         "line": "Yes. That training budget can still pay for the two day sales class.",
         "audio": "assets/audio/lines/w12-l6.mp3",
         "audioSlow": "assets/audio/lines/w12-l6-slow.mp3",

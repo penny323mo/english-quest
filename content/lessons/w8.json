@@ -8,7 +8,7 @@
   "minutes": 12,
   "hero": "assets/art/lessons/w8.webp",
   "cast": [
-    "niles",
+    "nina",
     "sora"
   ],
   "cefr": "B1",
@@ -44,8 +44,8 @@
     },
     {
       "id": "w8-l2",
-      "speaker": "niles",
-      "speakerLabel": "Niles",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
       "text": "Which part of the monthly plan is behind schedule right now, and who owns that sample run?",
       "glossYue": "月計劃邊一部分落後，邊個負責嗰次樣辦？",
       "audio": "assets/audio/lines/w8-l2.mp3",
@@ -66,8 +66,8 @@
     },
     {
       "id": "w8-l4",
-      "speaker": "niles",
-      "speakerLabel": "Niles",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
       "text": "Can you please follow up by Friday and send me one written note after you speak with the client?",
       "glossYue": "你可唔可以星期五之前跟進，同客戶傾完之後寫張字條？",
       "audio": "assets/audio/lines/w8-l4.mp3",
@@ -88,8 +88,8 @@
     },
     {
       "id": "w8-l6",
-      "speaker": "niles",
-      "speakerLabel": "Niles",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
       "text": "Are there any open questions before we write down each action item for the team?",
       "glossYue": "寫低每項行動之前，仲有冇未解嘅問題？",
       "audio": "assets/audio/lines/w8-l6.mp3",
@@ -110,8 +110,8 @@
     },
     {
       "id": "w8-l8",
-      "speaker": "niles",
-      "speakerLabel": "Niles",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
       "text": "Please send that written note straight after the meeting so I can read each action item.",
       "glossYue": "會後請將張字條送嚟，等我睇每項行動。",
       "audio": "assets/audio/lines/w8-l8.mp3",
@@ -222,11 +222,11 @@
   ],
   "roleplay": {
     "you": "sora",
-    "intro": "你開會報告進度。同 Niles 講跟進同行動。可以講：on track、Friday。",
+    "intro": "你開會報告進度。同 Nina 講跟進同行動。可以講：on track、Friday。",
     "turns": [
       {
-        "partner": "Niles",
-        "partnerId": "niles",
+        "partner": "Nina",
+        "partnerId": "nina",
         "line": "Which part of the monthly plan is behind schedule right now, and who owns that sample run?",
         "audio": "assets/audio/lines/w8-l2.mp3",
         "audioSlow": "assets/audio/lines/w8-l2-slow.mp3",
@@ -239,8 +239,8 @@
         "modelSlow": "assets/audio/lines/w8-l3-slow.mp3"
       },
       {
-        "partner": "Niles",
-        "partnerId": "niles",
+        "partner": "Nina",
+        "partnerId": "nina",
         "line": "Can you please follow up by Friday and send me one written note after you speak with the client?",
         "audio": "assets/audio/lines/w8-l4.mp3",
         "audioSlow": "assets/audio/lines/w8-l4-slow.mp3",
@@ -253,8 +253,8 @@
         "modelSlow": "assets/audio/lines/w8-l5-slow.mp3"
       },
       {
-        "partner": "Niles",
-        "partnerId": "niles",
+        "partner": "Nina",
+        "partnerId": "nina",
         "line": "Are there any open questions before we write down each action item for the team?",
         "audio": "assets/audio/lines/w8-l6.mp3",
         "audioSlow": "assets/audio/lines/w8-l6-slow.mp3",

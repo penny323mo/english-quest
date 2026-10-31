@@ -9,7 +9,7 @@
   "hero": "assets/art/lessons/w9.webp",
   "cast": [
     "sora",
-    "niles"
+    "nina"
   ],
   "cefr": "B1",
   "lemmas": [
@@ -54,17 +54,17 @@
       "id": "w9-l1",
       "speaker": "sora",
       "speakerLabel": "Sora",
-      "text": "Hi Niles. I'd like to take annual leave next week, Monday to Friday.",
-      "glossYue": "你好 Niles。我下星期想放年假，星期一到星期五。",
+      "text": "Hi Nina. I'd like to take annual leave next week, Monday to Friday.",
+      "glossYue": "你好 Nina。我下星期想放年假，星期一到星期五。",
       "audio": "assets/audio/lines/w9-l1.mp3",
       "audioSlow": "assets/audio/lines/w9-l1-slow.mp3",
-      "say": "Hi Niles. I'd like to take annual leave next week, Monday to Friday.",
+      "say": "Hi Nina. I'd like to take annual leave next week, Monday to Friday.",
       "hideGloss": false
     },
     {
       "id": "w9-l2",
-      "speaker": "niles",
-      "speakerLabel": "Niles",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
       "text": "Wednesday's a public holiday, so you only need four days of leave.",
       "glossYue": "星期三係公眾假期，所以你只要四日假。",
       "audio": "assets/audio/lines/w9-l2.mp3",
@@ -85,8 +85,8 @@
     },
     {
       "id": "w9-l4",
-      "speaker": "niles",
-      "speakerLabel": "Niles",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
       "text": "Good. Please send me a handover note before you go.",
       "glossYue": "好。你走之前請發一份交接筆記畀我。",
       "audio": "assets/audio/lines/w9-l4.mp3",
@@ -107,8 +107,8 @@
     },
     {
       "id": "w9-l6",
-      "speaker": "niles",
-      "speakerLabel": "Niles",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
       "text": "Thanks. How many leave days do you have left this year?",
       "glossYue": "多謝。你今年仲有幾多日假？",
       "audio": "assets/audio/lines/w9-l6.mp3",
@@ -129,8 +129,8 @@
     },
     {
       "id": "w9-l8",
-      "speaker": "niles",
-      "speakerLabel": "Niles",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
       "text": "OK, I've approved it. Enjoy your break.",
       "glossYue": "好，我批咗。假期愉快。",
       "audio": "assets/audio/lines/w9-l8.mp3",
@@ -141,7 +141,7 @@
   ],
   "understand": [
     {
-      "prompt": "Hi Niles. I'd like to take annual leave next week, Monday to Friday. 呢句即係點？",
+      "prompt": "Hi Nina. I'd like to take annual leave next week, Monday to Friday. 呢句即係點？",
       "choices": [
         "關於批核",
         "講緊年假",
@@ -173,9 +173,9 @@
   ],
   "chunks": [
     {
-      "pattern": "Hi Niles. I'd like to take ___ leave next week, Monday to Friday.",
-      "example": "Hi Niles. I'd like to take annual leave next week, Monday to Friday.",
-      "glossYue": "你好 Niles。我下星期想放年假，星期一到星期五。",
+      "pattern": "Hi Nina. I'd like to take ___ leave next week, Monday to Friday.",
+      "example": "Hi Nina. I'd like to take annual leave next week, Monday to Friday.",
+      "glossYue": "你好 Nina。我下星期想放年假，星期一到星期五。",
       "answer": "annual",
       "choices": [
         "annual",
@@ -211,7 +211,7 @@
       "type": "choice",
       "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
-        "Hi Niles. I'd like to take annual leave next week, Monday to Friday.",
+        "Hi Nina. I'd like to take annual leave next week, Monday to Friday.",
         "Great. Jo has agreed to cover my desk while I'm away.",
         "Sure. I'll email it to you and Jo on Friday morning."
       ],
@@ -233,11 +233,11 @@
   ],
   "roleplay": {
     "you": "sora",
-    "intro": "你同 Niles 傾呢件事。等對方講完先答。",
+    "intro": "你同 Nina 傾呢件事。等對方講完先答。",
     "turns": [
       {
-        "partner": "Niles",
-        "partnerId": "niles",
+        "partner": "Nina",
+        "partnerId": "nina",
         "line": "Wednesday's a public holiday, so you only need four days of leave.",
         "audio": "assets/audio/lines/w9-l2.mp3",
         "audioSlow": "assets/audio/lines/w9-l2-slow.mp3",
@@ -250,8 +250,8 @@
         "modelSlow": "assets/audio/lines/w9-l3-slow.mp3"
       },
       {
-        "partner": "Niles",
-        "partnerId": "niles",
+        "partner": "Nina",
+        "partnerId": "nina",
         "line": "Good. Please send me a handover note before you go.",
         "audio": "assets/audio/lines/w9-l4.mp3",
         "audioSlow": "assets/audio/lines/w9-l4-slow.mp3",
@@ -264,8 +264,8 @@
         "modelSlow": "assets/audio/lines/w9-l5-slow.mp3"
       },
       {
-        "partner": "Niles",
-        "partnerId": "niles",
+        "partner": "Nina",
+        "partnerId": "nina",
         "line": "Thanks. How many leave days do you have left this year?",
         "audio": "assets/audio/lines/w9-l6.mp3",
         "audioSlow": "assets/audio/lines/w9-l6-slow.mp3",
@@ -336,6 +336,6 @@
   ],
   "shadow": {
     "lineId": "w9-l1",
-    "hint": "Hi Niles. I'd like to take annual leave next week, Monday to Friday."
+    "hint": "Hi Nina. I'd like to take annual leave next week, Monday to Friday."
   }
 }

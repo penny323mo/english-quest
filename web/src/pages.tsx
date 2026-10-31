@@ -37,7 +37,7 @@ const GLYPHS: Record<string, string> = {
   J7: "card", J8: "spark", J9: "box", J10: "gift", J11: "gem", J12: "phone", J13: "gift",
   R1: "seat", R2: "fork", R3: "leaf", R4: "plate", R5: "bill", R6: "phone", R7: "bowl", R8: "phone", R9: "bill", R10: "coffee", R11: "leaf", R12: "fork", R13: "coffee",
   T1: "plane", T2: "pass", T3: "bed", T4: "taxi", T5: "pin", T6: "bed", T7: "bag", T8: "pass", T9: "plane", T10: "bag", T11: "pin", T12: "bed", T13: "cross", T14: "plane", T15: "bed", T17: "pass",
-  W1: "phone", W2: "mail", W3: "meet", W4: "coffee", W5: "phone", W6: "card", W7: "phone", W8: "meet", W9: "mail", W10: "mail", W11: "mail", W12: "meet",
+  W1: "phone", W2: "mail", W3: "meet", W4: "coffee", W5: "phone", W6: "card", W7: "phone", W8: "meet", W9: "mail", W10: "mail", W11: "mail", W12: "meet", W13: "meet",
   D1: "cross", D2: "coin", D3: "home", D4: "phone", D5: "box", D6: "cross", D7: "scissors", D8: "wrench", D9: "card", D10: "taxi", D11: "coin", D12: "cross", D13: "cross", D14: "box",
   J14: "ring", J15: "ring", J16: "gem", J17: "necklace", J18: "spark", J19: "gem", J20: "gem", J21: "gem",
   R14: "box", R15: "plate", R16: "fork", T16: "taxi", T18: "pass",
@@ -131,6 +131,7 @@ export function PathHome() {
           <img className="mascot" src={asset("assets/art/mascot-wave.webp")} alt="小燈" width={72} height={72} />
         </div>
         <p className="fine">{done} / {SHIPPED.length} 課完成。冇紅心。聽日再嚟都得。</p>
+        <a className="btn ghost block" href="#/vocab">生字回顧</a>
       </header>
       {resumeOpen && lessonCursor && resumeLesson ? (
         <div className="resume-banner">
@@ -243,7 +244,7 @@ export function Review() {
       <p className="eyebrow">練習</p>
       <h1>到期先再睇</h1>
       <p className="lede">用 FSRS 排期。再來、難、好、易都只係記住你幾熟，唔會罰你。</p>
-      <a className="btn ghost block" href="#/vocab">生字</a>
+      <a className="btn ghost block" href="#/vocab">生字回顧</a>
       {!item && (
         <p className="note">
           {Object.keys(cards).length === 0

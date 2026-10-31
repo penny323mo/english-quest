@@ -15,19 +15,20 @@ export function preloadArt(urls: string[]) {
   }
 }
 
-export function whenArtDecoded(urls: string[]): Promise<void> {
+export function whenArtDecoded(urls: string[], minWidth = 1): Promise<void> {
   const jobs = urls.filter(Boolean).map((url) => new Promise<void>((resolve) => {
     const img = new Image();
-    const finish = () => resolve();
+    const finish = () => {
+      if (img.naturalWidth >= minWidth) resolve();
+    };
     const decoded = () => {
       const pending = typeof img.decode === "function" ? img.decode() : Promise.resolve();
       pending.then(finish, finish);
     };
     img.onload = decoded;
-    img.onerror = finish;
     img.decoding = "async";
     img.src = url;
-    if (img.complete && img.naturalWidth > 0) decoded();
+    if (img.complete && img.naturalWidth >= minWidth) decoded();
   }));
   return Promise.all(jobs).then(() => undefined);
 }
@@ -53,15 +54,14 @@ export function ArtImg({
     }
     let live = true;
     const img = new Image();
-    img.onload = () => {
+    const readyNow = () => {
+      if (img.naturalWidth <= 0) return;
       loaded.add(src);
       if (live) setReady(true);
     };
+    img.onload = readyNow;
     img.src = src;
-    if (img.complete && img.naturalWidth > 0) {
-      loaded.add(src);
-      setReady(true);
-    }
+    if (img.complete) readyNow();
     return () => {
       live = false;
     };

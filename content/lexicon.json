@@ -40971,6 +40971,250 @@
           "say": "The special is grilled fish."
         }
       ]
+    },
+    {
+      "id": "draft-noun",
+      "lemma": "draft",
+      "pos": "noun",
+      "senseId": "design-copy",
+      "ipa": "/ˈdræft/",
+      "syllables": [
+        "draft"
+      ],
+      "syllableIpa": [
+        "ˈdræft"
+      ],
+      "stress": 1,
+      "arpabet": "D R AE1 F T",
+      "audio": "assets/audio/words/draft-noun.mp3",
+      "audioSlow": "assets/audio/words/draft-noun-slow.mp3",
+      "glossYue": "草稿",
+      "glossZh": "草稿",
+      "jyutping": "cou2 gou2",
+      "collocations": [
+        "design draft",
+        "the draft"
+      ],
+      "example": "The design draft is halfway done.",
+      "exampleYue": "設計草稿做咗一半。",
+      "say": "The design draft is halfway done.",
+      "variants": [],
+      "note": "draft 重音喺第一音節。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "draft",
+      "phrase": false,
+      "audioSha256": "9503b1c6ce2569a22005aab61ec46303f1207dd4198caaeead57923ac3348005",
+      "register": "日常",
+      "usageNotes": "草稿。",
+      "pitfallsYue": "草稿。",
+      "related": [
+        "update-noun"
+      ],
+      "examples": [
+        {
+          "en": "The design draft is halfway done.",
+          "yue": "設計草稿做咗一半。",
+          "audio": "assets/audio/words/draft-noun.mp3",
+          "audioSlow": "assets/audio/words/draft-noun-slow.mp3",
+          "say": "The design draft is halfway done."
+        },
+        {
+          "en": "Please send the design draft.",
+          "yue": "請交設計草稿。",
+          "audio": "assets/audio/words/draft-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/draft-noun-ex2-slow.mp3",
+          "say": "Please send the design draft."
+        }
+      ]
+    },
+    {
+      "id": "milestone-noun",
+      "lemma": "milestone",
+      "pos": "noun",
+      "senseId": "client-mark",
+      "ipa": "/ˈmaɪl.ˌstoʊn/",
+      "syllables": [
+        "mile",
+        "stone"
+      ],
+      "syllableIpa": [
+        "ˈmaɪl",
+        "ˌstoʊn"
+      ],
+      "stress": 1,
+      "arpabet": "M AY1 L S T OW2 N",
+      "audio": "assets/audio/words/milestone-noun.mp3",
+      "audioSlow": "assets/audio/words/milestone-noun-slow.mp3",
+      "glossYue": "里程碑",
+      "glossZh": "里程碑",
+      "jyutping": "lei5 cing4 bei1",
+      "collocations": [
+        "client milestone",
+        "the milestone"
+      ],
+      "example": "The client milestone is next Wednesday.",
+      "exampleYue": "客戶里程碑係下星期三。",
+      "say": "The client milestone is next Wednesday.",
+      "variants": [],
+      "note": "milestone 重音喺第一音節，有 /aɪ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "milestone",
+      "phrase": false,
+      "audioSha256": "7990b6c8f6a86a3e6a1ab0321cd40de18957ac12281bb46a9fb869b548825ac0",
+      "register": "日常",
+      "usageNotes": "里程碑。",
+      "pitfallsYue": "里程碑。",
+      "related": [
+        "meeting-noun"
+      ],
+      "examples": [
+        {
+          "en": "The client milestone is next Wednesday.",
+          "yue": "客戶里程碑係下星期三。",
+          "audio": "assets/audio/words/milestone-noun.mp3",
+          "audioSlow": "assets/audio/words/milestone-noun-slow.mp3",
+          "say": "The client milestone is next Wednesday."
+        },
+        {
+          "en": "We can move the milestone to Friday.",
+          "yue": "里程碑可以改到星期五。",
+          "audio": "assets/audio/words/milestone-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/milestone-noun-ex2-slow.mp3",
+          "say": "We can move the milestone to Friday."
+        }
+      ]
+    },
+    {
+      "id": "blocker-noun",
+      "lemma": "blocker",
+      "pos": "noun",
+      "senseId": "work-stop",
+      "ipa": "/ˈblɑ.kər/",
+      "syllables": [
+        "block",
+        "er"
+      ],
+      "syllableIpa": [
+        "ˈblɑ",
+        "kər"
+      ],
+      "stress": 1,
+      "arpabet": "B L AA1 K ER0",
+      "audio": "assets/audio/words/blocker-noun.mp3",
+      "audioSlow": "assets/audio/words/blocker-noun-slow.mp3",
+      "glossYue": "阻礙",
+      "glossZh": "阻礙",
+      "jyutping": "zo2 ngoi6",
+      "collocations": [
+        "that blocker",
+        "the blocker"
+      ],
+      "example": "That blocker is the missing logo.",
+      "exampleYue": "呢個阻礙係未到嘅標誌檔。",
+      "say": "That blocker is the missing logo.",
+      "variants": [],
+      "note": "blocker 重音喺第一音節。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "blocker",
+      "phrase": false,
+      "audioSha256": "c4e9378441d0a2721ff98ffe6872f1390e849d5ef2225530128c1a208fa99399",
+      "register": "日常",
+      "usageNotes": "阻礙。",
+      "pitfallsYue": "阻礙。",
+      "related": [
+        "deadline-noun"
+      ],
+      "examples": [
+        {
+          "en": "That blocker is the missing logo.",
+          "yue": "呢個阻礙係未到嘅標誌檔。",
+          "audio": "assets/audio/words/blocker-noun.mp3",
+          "audioSlow": "assets/audio/words/blocker-noun-slow.mp3",
+          "say": "That blocker is the missing logo."
+        },
+        {
+          "en": "The blocker can remain until Friday.",
+          "yue": "阻礙可以留到星期五。",
+          "audio": "assets/audio/words/blocker-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/blocker-noun-ex2-slow.mp3",
+          "say": "The blocker can remain until Friday."
+        }
+      ]
+    },
+    {
+      "id": "slide-noun",
+      "lemma": "slide",
+      "pos": "noun",
+      "senseId": "talk-page",
+      "ipa": "/ˈslaɪd/",
+      "syllables": [
+        "slide"
+      ],
+      "syllableIpa": [
+        "ˈslaɪd"
+      ],
+      "stress": 1,
+      "arpabet": "S L AY1 D",
+      "audio": "assets/audio/words/slide-noun.mp3",
+      "audioSlow": "assets/audio/words/slide-noun-slow.mp3",
+      "glossYue": "投影片",
+      "glossZh": "投影片",
+      "jyutping": "tau4 jing2 pin2",
+      "collocations": [
+        "slide deck",
+        "that slide"
+      ],
+      "example": "I will present the slide deck.",
+      "exampleYue": "我會用投影片講進度。",
+      "say": "I will present the slide deck.",
+      "variants": [],
+      "note": "slide 重音喺第一音節，有 /aɪ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "slide",
+      "phrase": false,
+      "audioSha256": "692117a14c45008002f9407bed6e13c4fe2f1bd0fb0d114d5f6f6f36cda417e2",
+      "register": "日常",
+      "usageNotes": "投影片。",
+      "pitfallsYue": "投影片。",
+      "related": [
+        "update-noun"
+      ],
+      "examples": [
+        {
+          "en": "I will present the slide deck.",
+          "yue": "我會用投影片講進度。",
+          "audio": "assets/audio/words/slide-noun.mp3",
+          "audioSlow": "assets/audio/words/slide-noun-slow.mp3",
+          "say": "I will present the slide deck."
+        },
+        {
+          "en": "The slide deck needs the logo.",
+          "yue": "投影片需要個標誌。",
+          "audio": "assets/audio/words/slide-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/slide-noun-ex2-slow.mp3",
+          "say": "The slide deck needs the logo."
+        }
+      ]
     }
   ]
 }

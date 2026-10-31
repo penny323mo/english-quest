@@ -1,0 +1,360 @@
+{
+  "id": "W13",
+  "unit": "W",
+  "titleYue": "小組進度匯報",
+  "titleEn": "Team update",
+  "canDoYue": "你識講設計草稿進度、指出標誌檔阻礙、話邊個講投影片，同埋問里程碑可唔可以改到星期五。",
+  "canDoEn": "Say where the design draft stands, name the logo-file blocker, say who will present the slide deck, and ask to move the milestone to Friday.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/w13.webp",
+  "cast": [
+    "tom",
+    "nina"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "draft-noun",
+    "milestone-noun",
+    "blocker-noun",
+    "slide-noun"
+  ],
+  "topicTags": [
+    "草稿",
+    "里程碑",
+    "阻礙",
+    "投影片"
+  ],
+  "next": "D3",
+  "sound": {
+    "ipa": "/aɪ/",
+    "title": "slide 入面嗰個音",
+    "note": "slide 有 /aɪ/。milestone 有 /aɪ/。",
+    "pairs": [
+      {
+        "a": "slide-noun",
+        "b": "milestone-noun"
+      },
+      {
+        "a": "draft-noun",
+        "b": "blocker-noun"
+      }
+    ],
+    "drill": [
+      "draft-noun",
+      "milestone-noun",
+      "blocker-noun",
+      "slide-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "w13-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could you tell me where the design draft stands for the client milestone?",
+      "glossYue": "可唔可以話我知，設計草稿對住客戶里程碑去到邊？",
+      "audio": "assets/audio/lines/w13-l1.mp3",
+      "audioSlow": "assets/audio/lines/w13-l1-slow.mp3",
+      "say": "Could you tell me where the design draft stands for the client milestone?",
+      "hideGloss": false
+    },
+    {
+      "id": "w13-l2",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
+      "text": "Yes. The design draft is halfway done for Wednesday's client review.",
+      "glossYue": "可以。設計草稿做咗一半，星期三會做客戶審核。",
+      "audio": "assets/audio/lines/w13-l2.mp3",
+      "audioSlow": "assets/audio/lines/w13-l2-slow.mp3",
+      "say": "Yes. The design draft is halfway done for Wednesday's client review.",
+      "hideGloss": false
+    },
+    {
+      "id": "w13-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "What blocker is holding the logo file back for that review?",
+      "glossYue": "邊個阻礙拖住個標誌檔，影響嗰次審核？",
+      "audio": "assets/audio/lines/w13-l3.mp3",
+      "audioSlow": "assets/audio/lines/w13-l3-slow.mp3",
+      "say": "What blocker is holding the logo file back for that review?",
+      "hideGloss": false
+    },
+    {
+      "id": "w13-l4",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
+      "text": "Yes. That blocker is the missing logo file from the brand studio.",
+      "glossYue": "係。阻礙係未收到嘅標誌檔，品牌工作室會交。",
+      "audio": "assets/audio/lines/w13-l4.mp3",
+      "audioSlow": "assets/audio/lines/w13-l4-slow.mp3",
+      "say": "Yes. That blocker is the missing logo file from the brand studio.",
+      "hideGloss": false
+    },
+    {
+      "id": "w13-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Who will present the slide deck if the logo arrives one day late?",
+      "glossYue": "如果標誌遲一日先到，邊個講投影片？",
+      "audio": "assets/audio/lines/w13-l5.mp3",
+      "audioSlow": "assets/audio/lines/w13-l5-slow.mp3",
+      "say": "Who will present the slide deck if the logo arrives one day late?",
+      "hideGloss": false
+    },
+    {
+      "id": "w13-l6",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
+      "text": "Yes. I will present that slide deck once the logo is in.",
+      "glossYue": "我講。標誌一到，我就用嗰份投影片講。",
+      "audio": "assets/audio/lines/w13-l6.mp3",
+      "audioSlow": "assets/audio/lines/w13-l6-slow.mp3",
+      "say": "Yes. I will present that slide deck once the logo is in.",
+      "hideGloss": false
+    },
+    {
+      "id": "w13-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Can we move the milestone to Friday if that blocker remains?",
+      "glossYue": "如果阻礙仲喺度，里程碑可唔可以改到星期五？",
+      "audio": "assets/audio/lines/w13-l7.mp3",
+      "audioSlow": "assets/audio/lines/w13-l7-slow.mp3",
+      "say": "Can we move the milestone to Friday if that blocker remains?",
+      "hideGloss": false
+    },
+    {
+      "id": "w13-l8",
+      "speaker": "nina",
+      "speakerLabel": "Nina",
+      "text": "Yes. Friday still works, and the milestone can move if the blocker remains.",
+      "glossYue": "可以。星期五都得，阻礙仲喺度就可以改里程碑。",
+      "audio": "assets/audio/lines/w13-l8.mp3",
+      "audioSlow": "assets/audio/lines/w13-l8-slow.mp3",
+      "say": "Yes. Friday still works, and the milestone can move if the blocker remains.",
+      "hideGloss": false
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你同 Nina 傾呢件事。等對方講完先答。",
+    "turns": [
+      {
+        "partner": "Nina",
+        "partnerId": "nina",
+        "line": "Yes. The design draft is halfway done for Wednesday's client review.",
+        "audio": "assets/audio/lines/w13-l2.mp3",
+        "audioSlow": "assets/audio/lines/w13-l2-slow.mp3",
+        "expect": "What blocker is holding the logo file back for that review?",
+        "keywords": [
+          "blocker",
+          "logo"
+        ],
+        "modelAudio": "assets/audio/lines/w13-l3.mp3",
+        "modelSlow": "assets/audio/lines/w13-l3-slow.mp3"
+      },
+      {
+        "partner": "Nina",
+        "partnerId": "nina",
+        "line": "Yes. That blocker is the missing logo file from the brand studio.",
+        "audio": "assets/audio/lines/w13-l4.mp3",
+        "audioSlow": "assets/audio/lines/w13-l4-slow.mp3",
+        "expect": "Who will present the slide deck if the logo arrives one day late?",
+        "keywords": [
+          "slide",
+          "deck"
+        ],
+        "modelAudio": "assets/audio/lines/w13-l5.mp3",
+        "modelSlow": "assets/audio/lines/w13-l5-slow.mp3"
+      },
+      {
+        "partner": "Nina",
+        "partnerId": "nina",
+        "line": "Yes. I will present that slide deck once the logo is in.",
+        "audio": "assets/audio/lines/w13-l6.mp3",
+        "audioSlow": "assets/audio/lines/w13-l6-slow.mp3",
+        "expect": "Can we move the milestone to Friday if that blocker remains?",
+        "keywords": [
+          "milestone",
+          "friday"
+        ],
+        "modelAudio": "assets/audio/lines/w13-l7.mp3",
+        "modelSlow": "assets/audio/lines/w13-l7-slow.mp3"
+      }
+    ]
+  },
+  "understand": [
+    {
+      "prompt": "Could you tell me where the design draft stands for the client milestone? 呢句即係點？",
+      "choices": [
+        "關於阻礙",
+        "講緊草稿",
+        "唔係里程碑"
+      ],
+      "answer": 1,
+      "explain": "草稿。"
+    },
+    {
+      "prompt": "Yes. That blocker is the missing logo file from the brand studio. 呢句即係點？",
+      "choices": [
+        "講緊阻礙",
+        "關於草稿",
+        "唔係投影片"
+      ],
+      "answer": 0,
+      "explain": "阻礙。"
+    },
+    {
+      "prompt": "Yes. Friday still works, and the milestone can move if the blocker remains. 呢句即係點？",
+      "choices": [
+        "唔係草稿",
+        "關於阻礙",
+        "講緊里程碑"
+      ],
+      "answer": 2,
+      "explain": "里程碑。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Could you tell me where the design ___ stands for the client milestone?",
+      "example": "Could you tell me where the design draft stands for the client milestone?",
+      "glossYue": "可唔可以話我知，設計草稿對住客戶里程碑去到邊？",
+      "answer": "draft",
+      "choices": [
+        "draft",
+        "milestone",
+        "slide"
+      ]
+    },
+    {
+      "pattern": "What ___ is holding the logo file back for that review?",
+      "example": "What blocker is holding the logo file back for that review?",
+      "glossYue": "邊個阻礙拖住個標誌檔，影響嗰次審核？",
+      "answer": "blocker",
+      "choices": [
+        "blocker",
+        "draft",
+        "slide"
+      ]
+    },
+    {
+      "pattern": "Who will present the ___ deck if the logo arrives one day late?",
+      "example": "Who will present the slide deck if the logo arrives one day late?",
+      "glossYue": "如果標誌遲一日先到，邊個講投影片？",
+      "answer": "slide",
+      "choices": [
+        "slide",
+        "milestone",
+        "blocker"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想用呢課嘅講法。你點講？",
+      "choices": [
+        "Could you tell me where the design draft stands for the client milestone?",
+        "What blocker is holding the logo file back for that review?",
+        "Who will present the slide deck if the logo arrives one day late?"
+      ],
+      "answer": 1,
+      "explain": "用呢句。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Yes.",
+        "Friday",
+        "still",
+        "works,",
+        "and",
+        "the",
+        "milestone",
+        "can",
+        "move",
+        "if",
+        "the",
+        "blocker",
+        "remains."
+      ],
+      "answer": [
+        "Yes.",
+        "Friday",
+        "still",
+        "works,",
+        "and",
+        "the",
+        "milestone",
+        "can",
+        "move",
+        "if",
+        "the",
+        "blocker",
+        "remains."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "milestone",
+        "blocker",
+        "draft"
+      ],
+      "answer": 2,
+      "lemma": "draft-noun"
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "slide",
+        "milestone",
+        "blocker"
+      ],
+      "answer": 1,
+      "lemma": "milestone-noun"
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "草稿",
+        "阻礙",
+        "投影片"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "阻礙",
+        "投影片",
+        "里程碑"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word fits this lesson?",
+      "choices": [
+        "draft",
+        "milestone",
+        "slide"
+      ],
+      "answer": 1,
+      "explain": "里程碑。"
+    }
+  ],
+  "shadow": {
+    "lineId": "w13-l1",
+    "hint": "Could you tell me where the design draft stands for the client milestone?"
+  }
+}

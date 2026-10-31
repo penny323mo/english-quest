@@ -434,7 +434,6 @@ a { color: inherit; }
 }
 .hero .art-ph::before { content: none; }
 .hero .art-ph img {
-  opacity: 1;
   position: absolute;
   left: 0;
   top: 0;

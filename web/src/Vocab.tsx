@@ -21,6 +21,14 @@ function dueFirst(lemmas: string[], cards: Record<string, StoredCard>) {
   });
 }
 
+function sessionCount(lemmas: string[], cards: Record<string, StoredCard>) {
+  const due = lemmas.filter((id) => !cards[id] || isDue(cards[id])).length;
+  const cap = Math.min(12, lemmas.length);
+  const floor = Math.min(8, cap);
+  if (due >= floor) return Math.min(cap, due);
+  return floor;
+}
+
 function statsFor(lemmas: string[], cards: Record<string, StoredCard>) {
   let due = 0;
   let mastered = 0;
@@ -117,7 +125,8 @@ function WordCard({ item, openMore }: { item: LexItem; openMore: boolean }) {
   const examples = item.examples?.length
     ? item.examples
     : [{ en: item.example, yue: item.exampleYue, audio: item.audio, audioSlow: item.audioSlow }];
-  const rest = openMore ? examples.slice(1) : [];
+  const shown = openMore ? examples : examples.slice(0, 2);
+  const hasUsage = Boolean(item.register || item.usageNotes || item.collocations.length || item.pitfallsYue);
   return (
     <div className="stack">
       <p className="eyebrow">{learnerEyebrow(item)}</p>
@@ -128,14 +137,18 @@ function WordCard({ item, openMore }: { item: LexItem; openMore: boolean }) {
         <button className="btn ghost" type="button" onClick={() => playAsset(item.audioSlow)}>慢速</button>
       </div>
       <p>{item.glossYue}</p>
-      {item.register && <p className="fine">場合：{item.register}</p>}
-      {item.usageNotes && <p className="note">{item.usageNotes}</p>}
-      {item.collocations.length > 0 && (
-        <p className="fine" lang="en">搭配：{item.collocations.join(" · ")}</p>
+      {hasUsage && (
+        <details className="usage" open>
+          <summary>用法</summary>
+          {item.register && <p className="fine">場合：{item.register}</p>}
+          {item.usageNotes && <p className="note">{item.usageNotes}</p>}
+          {item.collocations.length > 0 && (
+            <p className="fine" lang="en">搭配：{item.collocations.join(" · ")}</p>
+          )}
+          {item.pitfallsYue && <p className="note">{item.pitfallsYue}</p>}
+        </details>
       )}
-      {item.pitfallsYue && <p className="note">{item.pitfallsYue}</p>}
-      <ExampleRow example={examples[0]} />
-      {openMore && rest.map((example) => <ExampleRow key={example.en} example={example} />)}
+      {shown.map((example) => <ExampleRow key={example.en} example={example} />)}
       {openMore && item.related && item.related.length > 0 && (
         <p className="fine">
           相關：
@@ -176,9 +189,13 @@ export function VocabDeck({ deckId }: { deckId: string }) {
   const cards = useStore((s) => s.cards);
   const enqueue = useStore((s) => s.enqueueLemmas);
   const gradeCard = useStore((s) => s.gradeCard);
-  const [session] = useState(() => (deck ? dueFirst(deck.lemmas, useStore.getState().cards).slice(0, 8) : []));
+  const [session] = useState(() => {
+    const cardsNow = useStore.getState().cards;
+    return deck ? dueFirst(deck.lemmas, cardsNow).slice(0, sessionCount(deck.lemmas, cardsNow)) : [];
+  });
   const [index, setIndex] = useState(0);
   const [more, setMore] = useState(false);
+  const [markState, setMarkState] = useState<null | "good" | "again">(null);
   const item = lexById[session[index] || ""];
   const stats = useMemo(() => (deck ? statsFor(deck.lemmas, cards) : null), [deck, cards]);
 
@@ -196,11 +213,11 @@ export function VocabDeck({ deckId }: { deckId: string }) {
   }
 
   function mark(id: string, rating: Grade) {
+    if (markState) return;
     enqueue([id]);
     gradeCard(id, rating);
     playSfx(rating === Rating.Good ? "xp" : "streak");
-    setMore(false);
-    setIndex((n) => n + 1);
+    setMarkState(rating === Rating.Good ? "good" : "again");
   }
 
   return (
@@ -208,7 +225,7 @@ export function VocabDeck({ deckId }: { deckId: string }) {
       <a className="back" href="#/vocab">返生字</a>
       <p className="eyebrow">{deck.titleYue}</p>
       <p className="kicker">{stats.percent}% · 到期 {stats.due}</p>
-      {!item && <p className="note">今次八張溫完。到期嘅仍然會排喺前面。</p>}
+      {!item && <p className="note">今次 {session.length} 張溫完。到期嘅仍然會排喺前面。</p>}
       {item && (
         <>
           <p className="fine">{index + 1} / {session.length}</p>
@@ -216,10 +233,16 @@ export function VocabDeck({ deckId }: { deckId: string }) {
           <button className="btn ghost block" type="button" onClick={() => setMore((open) => !open)}>
             {more ? "收起" : "更多"}
           </button>
-          <div className="row-btns">
-            <button className="btn" type="button" onClick={() => mark(item.id, Rating.Good)}>記得</button>
-            <button className="btn ghost" type="button" onClick={() => mark(item.id, Rating.Again)}>再嚟</button>
-          </div>
+          {markState === "good" && <p className="note">記住咗</p>}
+          {markState === "again" && <p className="note">再排一次</p>}
+          {markState ? (
+            <button className="btn block" type="button" onClick={() => { setMarkState(null); setMore(false); setIndex((n) => n + 1); }}>下一張</button>
+          ) : (
+            <div className="row-btns">
+              <button className="btn" type="button" onClick={() => mark(item.id, Rating.Good)}>記得</button>
+              <button className="btn ghost" type="button" onClick={() => mark(item.id, Rating.Again)}>再嚟</button>
+            </div>
+          )}
         </>
       )}
       <a className="btn block" href={`#/vocab/${deck.id}/quiz`}>小測</a>

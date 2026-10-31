@@ -86,7 +86,8 @@
     "t18",
     "j21",
     "d14",
-    "r16"
+    "r16",
+    "w13"
   ],
   "pending": [],
   "focus": {
@@ -176,7 +177,8 @@
     "t18": "center 30%",
     "j21": "center 30%",
     "d14": "center 30%",
-    "r16": "center 30%"
+    "r16": "center 30%",
+    "w13": "center 30%"
   },
   "people": {
     "tom": "Adult man, short black hair, beige jacket, coral scarf, head and shoulders.",
@@ -186,7 +188,7 @@
     "ida": "Adult woman, long black hair, gold triangle earrings, teal top, head and shoulders.",
     "cleo": "Adult woman, black bob, purple cat clip, cream sweater, head and shoulders.",
     "mira": "Adult woman, black wavy hair, teal clip, teal shirt, cream apron.",
-    "niles": "Adult colleague, mint curls, round glasses, yellow shirt, head and shoulders.",
+    "nina": "Adult woman, mint curls, round glasses, yellow shirt, head and shoulders.",
     "nell": "Adult colleague, head and shoulders.",
     "wen": "Adult man, short black hair, light beard, teal shirt, head and shoulders.",
     "mei": "Adult woman, dark bun, teal hair pins, teal shirt, cream apron, head and shoulders.",
@@ -277,7 +279,7 @@
     "w9": {
       "cast": [
         "sora",
-        "niles"
+        "nina"
       ],
       "look": "Asking for annual leave (請年假)"
     },
@@ -664,7 +666,7 @@
     },
     "w11": {
       "cast": [
-        "niles",
+        "nina",
         "tom"
       ],
       "look": "Asking HR about a payslip (問HR糧單問題)"
@@ -692,7 +694,7 @@
     },
     "w8": {
       "cast": [
-        "niles",
+        "nina",
         "sora"
       ],
       "look": "A team meeting update (開會報告進度)"
@@ -797,7 +799,7 @@
     "w12": {
       "cast": [
         "tom",
-        "niles"
+        "nina"
       ],
       "look": "Performance review chat (績效面談)"
     },
@@ -828,6 +830,13 @@
         "mira"
       ],
       "look": "Asking for a chef's recommendation (問廚師推介)"
+    },
+    "w13": {
+      "cast": [
+        "tom",
+        "nina"
+      ],
+      "look": "Team update (小組進度匯報)"
     }
   }
 }
