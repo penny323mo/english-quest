@@ -29,22 +29,22 @@
       "id": "w2-l1",
       "speaker": "ada",
       "speakerLabel": "Ada",
-      "text": "Good morning Tom, I am following up today on the email I have sent regarding the deadline.",
+      "text": "Good morning Tom, I am following up on the email I sent about the deadline.",
       "glossYue": "早晨 Tom，我今日跟進我已經寄出、關於期限嗰封電郵。",
       "audio": "assets/audio/lines/w2-l1.mp3",
       "audioSlow": "assets/audio/lines/w2-l1-slow.mp3",
-      "say": "Good morning Tom, I am following up today on the email I have sent regarding the deadline.",
+      "say": "Good morning Tom, I am following up on the email I sent about the deadline.",
       "hideGloss": false
     },
     {
       "id": "w2-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Thank you for following up, and I am grateful that you have attached the notes as discussed.",
+      "text": "Thank you for following up, and I am grateful you attached the notes.",
       "glossYue": "多謝你跟進，我感激你按討論咁附上筆記。",
       "audio": "assets/audio/lines/w2-l2.mp3",
       "audioSlow": "assets/audio/lines/w2-l2-slow.mp3",
-      "say": "Thank you for following up, and I am grateful that you have attached the notes as discussed.",
+      "say": "Thank you for following up, and I am grateful you attached the notes.",
       "hideGloss": true
     },
     {
@@ -62,11 +62,11 @@
       "id": "w2-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could you please clarify the deadline, and would it be possible to confirm a new time soon?",
+      "text": "Could you please clarify the deadline, and confirm a new time?",
       "glossYue": "可唔可以講清楚個期限，同埋遲啲確認一個新時間？",
       "audio": "assets/audio/lines/w2-l4.mp3",
       "audioSlow": "assets/audio/lines/w2-l4-slow.mp3",
-      "say": "Could you please clarify the deadline, and would it be possible to confirm a new time soon?",
+      "say": "Could you please clarify the deadline, and confirm a new time?",
       "hideGloss": true
     },
     {
@@ -149,7 +149,7 @@
   "chunks": [
     {
       "pattern": "I am ___ up today on the email I have sent regarding the deadline.",
-      "example": "Good morning Tom, I am following up today on the email I have sent regarding the deadline.",
+      "example": "Good morning Tom, I am following up on the email I sent about the deadline.",
       "glossYue": "我今日⋯⋯跟進。",
       "answer": "following",
       "choices": [
@@ -236,7 +236,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Thank you for following up, and I am grateful that you have attached the notes as discussed.",
+        "line": "Thank you for following up, and I am grateful you attached the notes.",
         "audio": "assets/audio/lines/w2-l2.mp3",
         "audioSlow": "assets/audio/lines/w2-l2-slow.mp3",
         "expect": "I have attached the file as discussed.",
@@ -250,7 +250,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Could you please clarify the deadline, and would it be possible to confirm a new time soon?",
+        "line": "Could you please clarify the deadline, and confirm a new time?",
         "audio": "assets/audio/lines/w2-l4.mp3",
         "audioSlow": "assets/audio/lines/w2-l4-slow.mp3",
         "expect": "I propose Friday for the new deadline.",
@@ -302,7 +302,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Good morning Tom, I am following up today on the email I have sent regarding the deadline.」，following up 係咩意思？",
+      "prompt": "客人講「Good morning Tom, I am following up on the email I sent about the deadline.」，following up 係咩意思？",
       "choices": [
         "附件",
         "取消",

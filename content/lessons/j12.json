@@ -44,11 +44,11 @@
       "id": "j12-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Have you kept a similar gold bracelet in stock, and is one still available to reserve today?",
+      "text": "Have you kept a similar gold bracelet in stock, and is one still available today?",
       "glossYue": "你有冇類似嘅金手鏈存貨，今日仲有冇得預留？",
       "audio": "assets/audio/lines/j12-l2.mp3",
       "audioSlow": "assets/audio/lines/j12-l2-slow.mp3",
-      "say": "Have you kept a similar gold bracelet in stock, and is one still available to reserve today?",
+      "say": "Have you kept a similar gold bracelet in stock, and is one still available today?",
       "hideGloss": true
     },
     {
@@ -66,11 +66,11 @@
       "id": "j12-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Please text me when it's ready, and then please confirm the opening hours at your location.",
+      "text": "Text me when it's ready, and confirm the opening hours at the location.",
       "glossYue": "貨準備好就發短訊話我知，然後再確認舖頭開門時間同位置。",
       "audio": "assets/audio/lines/j12-l4.mp3",
       "audioSlow": "assets/audio/lines/j12-l4-slow.mp3",
-      "say": "Please text me when it's ready, and then please confirm the opening hours at your location.",
+      "say": "Text me when it's ready, and confirm the opening hours at the location.",
       "hideGloss": true
     },
     {
@@ -110,11 +110,11 @@
       "id": "j12-l8",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "I will leave a message, and I note the piece is available for you to gather Friday.",
+      "text": "I will leave a short message, and I note the piece is available for you to gather this Friday.",
       "glossYue": "我會留低訊息，我記低嗰件星期五可以攞。",
       "audio": "assets/audio/lines/j12-l8.mp3",
       "audioSlow": "assets/audio/lines/j12-l8-slow.mp3",
-      "say": "I will leave a message, and I note the piece is available for you to gather Friday.",
+      "say": "I will leave a short message, and I note the piece is available for you to gather this Friday.",
       "hideGloss": true
     }
   ],
@@ -153,7 +153,7 @@
   "chunks": [
     {
       "pattern": "Have you kept a ___ gold bracelet in stock, and is one still available to reserve today?",
-      "example": "Have you kept a similar gold bracelet in stock, and is one still available to reserve today?",
+      "example": "Have you kept a similar gold bracelet in stock, and is one still available today?",
       "glossYue": "一條⋯⋯嘅金手鏈。",
       "answer": "similar",
       "choices": [
@@ -164,7 +164,7 @@
     },
     {
       "pattern": "Please text me when it's ___, and then please confirm the opening hours at your location.",
-      "example": "Please text me when it's ready, and then please confirm the opening hours at your location.",
+      "example": "Text me when it's ready, and confirm the opening hours at the location.",
       "glossYue": "貨準備好就發短訊話我知。",
       "answer": "ready",
       "choices": [
@@ -194,7 +194,7 @@
       "type": "choice",
       "promptYue": "店員話可以留貨。你點先答？",
       "choices": [
-        "Please text me when it's ready, and then please confirm the opening hours at your location.",
+        "Text me when it's ready, and confirm the opening hours at the location.",
         "I would like a table for two.",
         "The meter is on."
       ],
@@ -230,7 +230,7 @@
         "line": "Good morning, you are calling the jewellery shop.",
         "audio": "assets/audio/lines/j12-l1.mp3",
         "audioSlow": "assets/audio/lines/j12-l1-slow.mp3",
-        "expect": "Have you kept a similar gold bracelet in stock, and is one still available to reserve today?",
+        "expect": "Have you kept a similar gold bracelet in stock, and is one still available today?",
         "keywords": [
           "stock",
           "reserve"
@@ -244,7 +244,7 @@
         "line": "I will describe the gold piece.",
         "audio": "assets/audio/lines/j12-l3.mp3",
         "audioSlow": "assets/audio/lines/j12-l3-slow.mp3",
-        "expect": "Please text me when it's ready, and then please confirm the opening hours at your location.",
+        "expect": "Text me when it's ready, and confirm the opening hours at the location.",
         "keywords": [
           "text",
           "location"
@@ -293,7 +293,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Have you kept a similar gold bracelet in stock, and is one still available to reserve today?」，stock 係咩意思？",
+      "prompt": "客人講「Have you kept a similar gold bracelet in stock, and is one still available today?」，stock 係咩意思？",
       "choices": [
         "取貨",
         "開門時間",

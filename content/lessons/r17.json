@@ -3,7 +3,7 @@
   "unit": "R",
   "titleYue": "宴會、取消訂位同小費",
   "titleEn": "A banquet, cancellation, and gratuity",
-  "canDoYue": "你識訂宴會、問取消訂位、附加費同小費。",
+  "canDoYue": "你識問六點起訂宴會、三個鐘附加費幾多，同四點後成檯唔嚟嘅取消時間。",
   "canDoEn": "Book a banquet and ask about the cancellation, the surcharge, and the gratuity.",
   "minutes": 12,
   "hero": "assets/art/lessons/r17.webp",
@@ -113,32 +113,32 @@
     {
       "prompt": "Could we book the banquet from six if the cancellation fee stays under fifty dollars? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "問取消費低過五十蚊可唔可以六點訂宴會",
+        "問今日天氣點",
+        "問鎖匙放喺邊"
       ],
       "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "explain": "取消費低過五十蚊，問可唔可以六點起訂。"
     },
     {
       "prompt": "How much is the surcharge if we keep the banquet for three hours after six? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "話已經取消",
+        "問六點後再用三個鐘附加費幾多",
+        "問房號幾多"
       ],
-      "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "answer": 1,
+      "explain": "六點之後再用三個鐘，問附加費。"
     },
     {
-      "prompt": "Could we book the banquet from six if the cancellation fee stays under fifty dollars? 即係問緊咩？",
+      "prompt": "What time does the cancellation rule start if we drop the whole party after four? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "問小費包唔包",
+        "話宴會已經開始",
+        "問四點後成檯唔嚟，取消規則幾點開始"
       ],
-      "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "answer": 2,
+      "explain": "四點之後成檯唔嚟，問取消規則幾時開始。"
     }
   ],
   "chunks": [

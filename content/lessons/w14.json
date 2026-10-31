@@ -3,7 +3,7 @@
   "unit": "W",
   "titleYue": "預測、超支同傳閱",
   "titleEn": "A forecast, an overrun, and circulating it",
-  "canDoYue": "你識講預測、超支、傳閱同持份者。",
+  "canDoYue": "你識問預測超支可唔可以改星期一審核、傳閱書面預測，同新議程點寫。",
   "canDoEn": "Talk about a forecast, a cost overrun, circulating a note, and the stakeholders.",
   "minutes": 12,
   "hero": "assets/art/lessons/w14.webp",
@@ -113,32 +113,32 @@
     {
       "prompt": "Could we please move the Monday review if the forecast shows an overrun before Friday? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "問星期五前預測超支，可唔可以改星期一審核",
+        "問今日天氣點",
+        "問鎖匙放喺邊"
       ],
       "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "explain": "預測星期五前超支，問可唔可以改期。"
     },
     {
       "prompt": "Will you circulate the written forecast if each stakeholder has not read the note yet? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "話會議已經取消",
+        "問持份者未睇字條會唔會傳閱預測",
+        "問房號幾多"
       ],
-      "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "answer": 1,
+      "explain": "持份者未睇字條，問會唔會傳閱書面預測。"
     },
     {
-      "prompt": "Could we please move the Monday review if the forecast shows an overrun before Friday? 即係問緊咩？",
+      "prompt": "What should the new written agenda say if the overrun changes the Monday review date? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "問鎖匙放喺邊",
+        "話唔使寫議程",
+        "問超支改期之後新議程應該點寫"
       ],
-      "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "answer": 2,
+      "explain": "超支改咗審核日子，問新議程點寫。"
     }
   ],
   "chunks": [

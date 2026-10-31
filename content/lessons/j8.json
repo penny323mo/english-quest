@@ -44,44 +44,44 @@
       "id": "j8-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have kept the receipt, but a small scratch showed up within the first week.",
+      "text": "I have kept the receipt, but a scratch showed up within the first week.",
       "glossYue": "我有留低收據，但係第一個禮拜就有少少刮痕。",
       "audio": "assets/audio/lines/j8-l2.mp3",
       "audioSlow": "assets/audio/lines/j8-l2-slow.mp3",
-      "say": "I have kept the receipt, but a small scratch showed up within the first week.",
+      "say": "I have kept the receipt, but a scratch showed up within the first week.",
       "hideGloss": true
     },
     {
       "id": "j8-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Please polish this bracelet with a soft cloth, and you should avoid any harsh chemicals.",
+      "text": "Please polish this bracelet with a cloth, and you should avoid harsh chemicals.",
       "glossYue": "請用軟布擦亮呢條手鏈，你應該避開任何勁嘅化學劑。",
       "audio": "assets/audio/lines/j8-l3.mp3",
       "audioSlow": "assets/audio/lines/j8-l3-slow.mp3",
-      "say": "Please polish this bracelet with a soft cloth, and you should avoid any harsh chemicals.",
+      "say": "Please polish this bracelet with a cloth, and you should avoid harsh chemicals.",
       "hideGloss": true
     },
     {
       "id": "j8-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Does the guarantee cover this new scratch, or should I file a claim within the week?",
+      "text": "Does the guarantee cover this scratch, or should I file a claim within the week?",
       "glossYue": "保用包唔包呢道新刮痕，定係我應該呢個禮拜內申請？",
       "audio": "assets/audio/lines/j8-l4.mp3",
       "audioSlow": "assets/audio/lines/j8-l4-slow.mp3",
-      "say": "Does the guarantee cover this new scratch, or should I file a claim within the week?",
+      "say": "Does the guarantee cover this scratch, or should I file a claim within the week?",
       "hideGloss": true
     },
     {
       "id": "j8-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "The written policy allows one repair within the year if you have kept the receipt.",
+      "text": "The policy allows one repair within the year if you have kept the receipt.",
       "glossYue": "書面政策容許一年之內修理一次，只要你有留低收據。",
       "audio": "assets/audio/lines/j8-l5.mp3",
       "audioSlow": "assets/audio/lines/j8-l5-slow.mp3",
-      "say": "The written policy allows one repair within the year if you have kept the receipt.",
+      "say": "The policy allows one repair within the year if you have kept the receipt.",
       "hideGloss": false
     },
     {
@@ -198,14 +198,14 @@
   ],
   "shadow": {
     "lineId": "j8-l5",
-    "hint": "The written policy allows one repair within the year if you have kept the receipt."
+    "hint": "The policy allows one repair within the year if you have kept the receipt."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "客人話有刮痕。你點講保養？",
       "choices": [
-        "Please polish this bracelet with a soft cloth, and you should avoid any harsh chemicals.",
+        "Please polish this bracelet with a cloth, and you should avoid harsh chemicals.",
         "The taxi is here, and traffic is slow.",
         "I have lost my wallet."
       ],
@@ -238,10 +238,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "I have kept the receipt, but a small scratch showed up within the first week.",
+        "line": "I have kept the receipt, but a scratch showed up within the first week.",
         "audio": "assets/audio/lines/j8-l2.mp3",
         "audioSlow": "assets/audio/lines/j8-l2-slow.mp3",
-        "expect": "Please polish this bracelet with a soft cloth, and you should avoid any harsh chemicals.",
+        "expect": "Please polish this bracelet with a cloth, and you should avoid harsh chemicals.",
         "keywords": [
           "avoid",
           "polish"
@@ -252,10 +252,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Does the guarantee cover this new scratch, or should I file a claim within the week?",
+        "line": "Does the guarantee cover this scratch, or should I file a claim within the week?",
         "audio": "assets/audio/lines/j8-l4.mp3",
         "audioSlow": "assets/audio/lines/j8-l4-slow.mp3",
-        "expect": "The written policy allows one repair within the year if you have kept the receipt.",
+        "expect": "The policy allows one repair within the year if you have kept the receipt.",
         "keywords": [
           "policy",
           "receipt"
@@ -314,7 +314,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I have kept the receipt, but a small scratch showed up within the first week.」，係咩意思？",
+      "prompt": "客人講「I have kept the receipt, but a scratch showed up within the first week.」，係咩意思？",
       "choices": [
         "刮痕",
         "退款",

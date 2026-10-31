@@ -3,7 +3,7 @@
   "unit": "T",
   "titleYue": "申報表同入境處",
   "titleEn": "A declaration, layover, and immigration",
-  "canDoYue": "你識問申報表、轉機停留、入境處同傳送帶。",
+  "canDoYue": "你識喺轉機前睇申報表、問幾早去入境處，同大袋喺邊個行李轉盤托運。",
   "canDoEn": "Ask about a declaration, a layover, immigration, and the carousel.",
   "minutes": 12,
   "hero": "assets/art/lessons/t21.webp",
@@ -101,11 +101,11 @@
       "id": "t21-l8",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "You can keep the small case and check the big one at that far desk.",
-      "glossYue": "你可以帶住個細箱，大件喺遠啲嗰個櫃檯托運。",
+      "text": "You can keep the small case and check the big one at that far carousel.",
+      "glossYue": "你可以帶住個細箱，大件喺遠嘅傳送帶托運。",
       "audio": "assets/audio/lines/t21-l8.mp3",
       "audioSlow": "assets/audio/lines/t21-l8-slow.mp3",
-      "say": "You can keep the small case and check the big one at that far desk.",
+      "say": "You can keep the small case and check the big one at that far carousel.",
       "hideGloss": true
     }
   ],
@@ -113,32 +113,32 @@
     {
       "prompt": "Could you please check my declaration before the layover and tell me which belt? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "問轉機前可唔可以睇申報表同邊條帶",
+        "問今日天氣點",
+        "問鎖匙放喺邊"
       ],
       "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "explain": "轉機之前睇申報表，再問邊條行李帶。"
     },
     {
       "prompt": "If the layover leaves at two, how early should I reach immigration with one bag? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "話航班已經取消",
+        "問轉機兩點走，要幾早帶一個袋去入境處",
+        "問房號幾多"
       ],
-      "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "answer": 1,
+      "explain": "轉機兩點走，問要幾早去入境處。"
     },
     {
-      "prompt": "Could you please check my declaration before the layover and tell me which belt? 即係問緊咩？",
+      "prompt": "Can I keep one small bag and check the big bag at the far carousel? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "問鎖匙放喺邊",
+        "話兩個袋都要托運",
+        "問可唔可以留細袋，大袋喺遠傳送帶托運"
       ],
-      "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "answer": 2,
+      "explain": "細袋隨身，大袋喺遠嘅行李轉盤托運。"
     }
   ],
   "chunks": [

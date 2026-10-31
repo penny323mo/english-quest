@@ -43,11 +43,11 @@
       "id": "w5-l2",
       "speaker": "ren",
       "speakerLabel": "Ren",
-      "text": "I'm sorry about the delay. Let me look into the clasp.",
-      "glossYue": "唔好意思，遲咗。我睇吓個扣。",
+      "text": "I'm sorry about the delay. Let me look into the broken clasp.",
+      "glossYue": "唔好意思，遲咗。我睇吓個爛扣。",
       "audio": "assets/audio/lines/w5-l2.mp3",
       "audioSlow": "assets/audio/lines/w5-l2-slow.mp3",
-      "say": "I'm sorry about the delay. Let me look into the clasp.",
+      "say": "I'm sorry about the delay. Let me look into the broken clasp.",
       "hideGloss": true
     },
     {
@@ -87,33 +87,33 @@
       "id": "w5-l6",
       "speaker": "ren",
       "speakerLabel": "Ren",
-      "text": "If the clasp cannot be repaired, a replacement or compensation is possible.",
-      "glossYue": "如果個扣修唔好，可以換貨或者賠償。",
+      "text": "If the clasp cannot be repaired, we can offer a replacement or compensation of two hundred dollars.",
+      "glossYue": "如果個扣修唔好，我哋可以換貨，或者賠償二百蚊。",
       "audio": "assets/audio/lines/w5-l6.mp3",
       "audioSlow": "assets/audio/lines/w5-l6-slow.mp3",
-      "say": "If the clasp cannot be repaired, a replacement or compensation is possible.",
+      "say": "If the clasp cannot be repaired, we can offer a replacement or compensation of two hundred dollars.",
       "hideGloss": true
     },
     {
       "id": "w5-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The clasp on the box broke. That's the only problem.",
-      "glossYue": "盒上面個扣爛咗。問題就只有呢個。",
+      "text": "The clasp broke last week. The reference number is on the box.",
+      "glossYue": "個扣上星期爛咗。參考編號喺盒上面。",
       "audio": "assets/audio/lines/w5-l7.mp3",
       "audioSlow": "assets/audio/lines/w5-l7-slow.mp3",
-      "say": "The clasp on the box broke. That's the only problem.",
+      "say": "The clasp broke last week. The reference number is on the box.",
       "hideGloss": true
     },
     {
       "id": "w5-l8",
       "speaker": "ren",
       "speakerLabel": "Ren",
-      "text": "I will call by Friday with an update once the workshop agrees.",
-      "glossYue": "我星期五會打電話話你知進度，等工場同意。",
+      "text": "I will call you by Friday with a compensation update once the workshop agrees.",
+      "glossYue": "我星期五會打電話話你知賠償進度，等工場同意。",
       "audio": "assets/audio/lines/w5-l8.mp3",
       "audioSlow": "assets/audio/lines/w5-l8-slow.mp3",
-      "say": "I will call by Friday with an update once the workshop agrees.",
+      "say": "I will call you by Friday with a compensation update once the workshop agrees.",
       "hideGloss": true
     }
   ],
@@ -226,7 +226,7 @@
       {
         "partner": "Ren",
         "partnerId": "ren",
-        "line": "I'm sorry about the delay. Let me look into the clasp.",
+        "line": "I'm sorry about the delay. Let me look into the broken clasp.",
         "audio": "assets/audio/lines/w5-l2.mp3",
         "audioSlow": "assets/audio/lines/w5-l2-slow.mp3",
         "expect": "The clasp broke last week, so I'd like a clear update, please.",
@@ -254,10 +254,10 @@
       {
         "partner": "Ren",
         "partnerId": "ren",
-        "line": "If the clasp cannot be repaired, a replacement or compensation is possible.",
+        "line": "If the clasp cannot be repaired, we can offer a replacement or compensation of two hundred dollars.",
         "audio": "assets/audio/lines/w5-l6.mp3",
         "audioSlow": "assets/audio/lines/w5-l6-slow.mp3",
-        "expect": "The clasp on the box broke. That's the only problem.",
+        "expect": "The clasp broke last week. The reference number is on the box.",
         "keywords": [
           "clasp",
           "broke"

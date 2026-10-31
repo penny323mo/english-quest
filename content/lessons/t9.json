@@ -35,33 +35,33 @@
       "id": "t9-l1",
       "speaker": "may",
       "speakerLabel": "May",
-      "text": "The announcement says our flight is delayed this afternoon, and the big departure board has changed beside the gate.",
+      "text": "The announcement says our flight is delayed, and the departure board changed.",
       "glossYue": "廣播話我哋航班今日下晝延誤，閘口旁邊嗰塊大板改咗。",
       "audio": "assets/audio/lines/t9-l1.mp3",
       "audioSlow": "assets/audio/lines/t9-l1-slow.mp3",
-      "say": "The announcement says our flight is delayed this afternoon, and the big departure board has changed beside the gate.",
+      "say": "The announcement says our flight is delayed, and the departure board changed.",
       "hideGloss": false
     },
     {
       "id": "t9-l2",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "I am very sorry indeed. The flight is still quite delayed, and your connection is safe until the next update.",
+      "text": "I am sorry. The flight is delayed, and your connection is safe.",
       "glossYue": "真係唔好意思。航班仍然延誤，你個轉機喺下次通知之前都安全。",
       "audio": "assets/audio/lines/t9-l2.mp3",
       "audioSlow": "assets/audio/lines/t9-l2-slow.mp3",
-      "say": "I am very sorry indeed. The flight is still quite delayed, and your connection is safe until the next update.",
+      "say": "I am sorry. The flight is delayed, and your connection is safe.",
       "hideGloss": true
     },
     {
       "id": "t9-l3",
       "speaker": "may",
       "speakerLabel": "May",
-      "text": "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you?",
+      "text": "Can we rebook this evening, or does standby remain the only option?",
       "glossYue": "可唔可以話我知今晚改唔改到簽，定係你哋只可以候補？",
       "audio": "assets/audio/lines/t9-l3.mp3",
       "audioSlow": "assets/audio/lines/t9-l3-slow.mp3",
-      "say": "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you?",
+      "say": "Can we rebook this evening, or does standby remain the only option?",
       "hideGloss": true
     },
     {
@@ -122,7 +122,7 @@
   ],
   "understand": [
     {
-      "prompt": "I am very sorry indeed. The flight is still quite delayed, and your connection is safe until the next update. 呢句即係點？",
+      "prompt": "I am sorry. The flight is delayed, and your connection is safe. 呢句即係點？",
       "choices": [
         "航班延誤，接駁仍然安全",
         "航班準時",
@@ -132,7 +132,7 @@
       "explain": "delayed 係延誤。"
     },
     {
-      "prompt": "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you? 即係問緊咩？",
+      "prompt": "Can we rebook this evening, or does standby remain the only option? 即係問緊咩？",
       "choices": [
         "問可唔可以加行李",
         "問酒店早餐",
@@ -166,7 +166,7 @@
     },
     {
       "pattern": "Could you tell me whether we can ___ this evening, or whether standby remains the only option left with you?",
-      "example": "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you?",
+      "example": "Can we rebook this evening, or does standby remain the only option?",
       "glossYue": "可唔可以⋯⋯？",
       "answer": "rebook",
       "choices": [
@@ -189,14 +189,14 @@
   ],
   "shadow": {
     "lineId": "t9-l3",
-    "hint": "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you?"
+    "hint": "Can we rebook this evening, or does standby remain the only option?"
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "航班延誤咗。你想問改簽定候補。你點講？",
       "choices": [
-        "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you?",
+        "Can we rebook this evening, or does standby remain the only option?",
         "I ordered the soup.",
         "My strength is staying calm."
       ],
@@ -229,10 +229,10 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "I am very sorry indeed. The flight is still quite delayed, and your connection is safe until the next update.",
+        "line": "I am sorry. The flight is delayed, and your connection is safe.",
         "audio": "assets/audio/lines/t9-l2.mp3",
         "audioSlow": "assets/audio/lines/t9-l2-slow.mp3",
-        "expect": "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you?",
+        "expect": "Can we rebook this evening, or does standby remain the only option?",
         "keywords": [
           "rebook",
           "standby"
@@ -260,7 +260,7 @@
         "line": "We can offer priority on the next plane out, though the gate change is not posted yet for you.",
         "audio": "assets/audio/lines/t9-l5.mp3",
         "audioSlow": "assets/audio/lines/t9-l5-slow.mp3",
-        "expect": "Could you tell me whether we can rebook this evening, or whether standby remains the only option left with you?",
+        "expect": "Can we rebook this evening, or does standby remain the only option?",
         "keywords": [
           "rebook",
           "evening"
@@ -295,7 +295,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "職員講「I am very sorry indeed. The flight is still quite delayed, and your connection is safe until the next update.」，delayed 係咩意思？",
+      "prompt": "職員講「I am sorry. The flight is delayed, and your connection is safe.」，delayed 係咩意思？",
       "choices": [
         "優先",
         "準時",

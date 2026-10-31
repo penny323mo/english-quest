@@ -3,7 +3,7 @@
   "unit": "T",
   "titleYue": "安檢篩查同超大件",
   "titleEn": "Screening an oversized case",
-  "canDoYue": "你識問安檢篩查、超大件、掃描器同檢查站。",
+  "canDoYue": "你識問超大件箱要點安檢、掃描器櫃檯喺邊，同檢查站幾早開。",
   "canDoEn": "Ask about screening, an oversized case, the scanner, and the checkpoint.",
   "minutes": 12,
   "hero": "assets/art/lessons/t20.webp",
@@ -113,32 +113,32 @@
     {
       "prompt": "Could you explain the screening if this grey case looks oversized beside the far belt? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "問灰色超大件箱可唔可以解釋安檢篩查",
+        "問今日天氣點",
+        "問鎖匙放喺邊"
       ],
       "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "explain": "超大件箱喺遠輸送帶，要人解釋安檢篩查。"
     },
     {
       "prompt": "Where should the scanner desk be if I missed the inner checkpoint beside that belt? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "話已經過咗安檢",
+        "問掃描器櫃檯應該喺邊",
+        "問房號幾多"
       ],
-      "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "answer": 1,
+      "explain": "錯過內檢查站，要問掃描器櫃檯位置。"
     },
     {
-      "prompt": "Could you explain the screening if this grey case looks oversized beside the far belt? 即係問緊咩？",
+      "prompt": "How early should I reach the checkpoint if the screening lane opens at noon sharp? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "話箱已經上機",
+        "問小費幾多",
+        "問安檢線正午開門要幾早到"
       ],
-      "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "answer": 2,
+      "explain": "安檢線正午開門，問要幾早到檢查站。"
     }
   ],
   "chunks": [

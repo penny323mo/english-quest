@@ -31,33 +31,33 @@
       "id": "j9-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "I am sorry there is an issue, and I will listen before I offer a repair.",
-      "glossYue": "唔好意思有問題，我會先聽完先提出修理。",
+      "text": "I am sorry that there is an issue, so I listen before I offer a repair.",
+      "glossYue": "唔好意思有個問題，所以我先聽，先提出修理。",
       "audio": "assets/audio/lines/j9-l1.mp3",
       "audioSlow": "assets/audio/lines/j9-l1-slow.mp3",
-      "say": "I am sorry there is an issue, and I will listen before I offer a repair.",
+      "say": "I am sorry that there is an issue, so I listen before I offer a repair.",
       "hideGloss": false
     },
     {
       "id": "j9-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The clasp is broken, so I would like a repair or a full refund instead.",
+      "text": "The clasp is broken, so I would like a repair or a refund.",
       "glossYue": "個扣壞咗，所以我反而想修理或者全數退款。",
       "audio": "assets/audio/lines/j9-l2.mp3",
       "audioSlow": "assets/audio/lines/j9-l2-slow.mp3",
-      "say": "The clasp is broken, so I would like a repair or a full refund instead.",
+      "say": "The clasp is broken, so I would like a repair or a refund.",
       "hideGloss": true
     },
     {
       "id": "j9-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "I apologize for the inconvenience, and I understand why you feel so disappointed.",
-      "glossYue": "造成不便我道歉，我明白你點解咁唔開心。",
+      "text": "I apologize when inconvenience shows, so I understand that you feel sad.",
+      "glossYue": "有不便嗰陣我道歉，所以我明白你覺得難過。",
       "audio": "assets/audio/lines/j9-l3.mp3",
       "audioSlow": "assets/audio/lines/j9-l3-slow.mp3",
-      "say": "I apologize for the inconvenience, and I understand why you feel so disappointed.",
+      "say": "I apologize when inconvenience shows, so I understand that you feel sad.",
       "hideGloss": true
     },
     {
@@ -75,44 +75,44 @@
       "id": "j9-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "The manager can review the receipt, and we will repair it immediately if the policy allows.",
+      "text": "The manager can review the receipt, and we will repair it if the policy allows.",
       "glossYue": "經理可以睇收據，如果政策容許，我哋會即刻修理。",
       "audio": "assets/audio/lines/j9-l5.mp3",
       "audioSlow": "assets/audio/lines/j9-l5-slow.mp3",
-      "say": "The manager can review the receipt, and we will repair it immediately if the policy allows.",
+      "say": "The manager can review the receipt, and we will repair it if the policy allows.",
       "hideGloss": false
     },
     {
       "id": "j9-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I appreciate the offer, but I still want a refund if the repair cannot be done soon.",
+      "text": "I appreciate the offer, but I want a refund if the repair cannot be done.",
       "glossYue": "多謝你嘅提議，但如果修理唔到，我仍然想退款。",
       "audio": "assets/audio/lines/j9-l6.mp3",
       "audioSlow": "assets/audio/lines/j9-l6-slow.mp3",
-      "say": "I appreciate the offer, but I still want a refund if the repair cannot be done soon.",
+      "say": "I appreciate the offer, but I want a refund if the repair cannot be done.",
       "hideGloss": true
     },
     {
       "id": "j9-l7",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Would it help if we replace the bracelet now, while the workshop keeps the broken one?",
+      "text": "Would it help if we replace the bracelet, while the workshop keeps the one?",
       "glossYue": "如果我哋而家換過條手鏈，工場留住壞嗰條，會唔會好啲？",
       "audio": "assets/audio/lines/j9-l7.mp3",
       "audioSlow": "assets/audio/lines/j9-l7-slow.mp3",
-      "say": "Would it help if we replace the bracelet now, while the workshop keeps the broken one?",
+      "say": "Would it help if we replace the bracelet, while the workshop keeps the one?",
       "hideGloss": true
     },
     {
       "id": "j9-l8",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "I'll write that complaint clearly because it failed.",
+      "text": "I'll write that complaint because it failed.",
       "glossYue": "我會寫清楚嗰個投訴，因為佢壞咗。",
       "audio": "assets/audio/lines/j9-l8.mp3",
       "audioSlow": "assets/audio/lines/j9-l8-slow.mp3",
-      "say": "I'll write that complaint clearly because it failed.",
+      "say": "I'll write that complaint because it failed.",
       "hideGloss": true
     }
   ],
@@ -196,14 +196,14 @@
   ],
   "shadow": {
     "lineId": "j9-l3",
-    "hint": "I apologize for the inconvenience, and I understand why you feel so disappointed."
+    "hint": "I apologize when inconvenience shows, so I understand that you feel sad."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "客人個扣壞咗。你點先開口？",
       "choices": [
-        "I am sorry there is an issue, and I will listen before I offer a repair.",
+        "I am sorry that there is an issue, so I listen before I offer a repair.",
         "The taxi is here, and traffic is slow.",
         "I have lost my wallet."
       ],
@@ -238,10 +238,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "The clasp is broken, so I would like a repair or a full refund instead.",
+        "line": "The clasp is broken, so I would like a repair or a refund.",
         "audio": "assets/audio/lines/j9-l2.mp3",
         "audioSlow": "assets/audio/lines/j9-l2-slow.mp3",
-        "expect": "I apologize for the inconvenience, and I understand why you feel so disappointed.",
+        "expect": "I apologize when inconvenience shows, so I understand that you feel sad.",
         "keywords": [
           "apologize",
           "understand"
@@ -255,7 +255,7 @@
         "line": "Could you replace the piece now, and tell me what you can do about it?",
         "audio": "assets/audio/lines/j9-l4.mp3",
         "audioSlow": "assets/audio/lines/j9-l4-slow.mp3",
-        "expect": "The manager can review the receipt, and we will repair it immediately if the policy allows.",
+        "expect": "The manager can review the receipt, and we will repair it if the policy allows.",
         "keywords": [
           "manager",
           "immediately"
@@ -266,10 +266,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "I appreciate the offer, but I still want a refund if the repair cannot be done soon.",
+        "line": "I appreciate the offer, but I want a refund if the repair cannot be done.",
         "audio": "assets/audio/lines/j9-l6.mp3",
         "audioSlow": "assets/audio/lines/j9-l6-slow.mp3",
-        "expect": "Would it help if we replace the bracelet now, while the workshop keeps the broken one?",
+        "expect": "Would it help if we replace the bracelet, while the workshop keeps the one?",
         "keywords": [
           "replace",
           "bracelet"
@@ -304,7 +304,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I'll write that complaint clearly because it failed.」，係咩意思？",
+      "prompt": "客人講「I'll write that complaint because it failed.」，係咩意思？",
       "choices": [
         "收據",
         "換貨",
@@ -314,7 +314,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The manager can review the receipt, and we will repair it immediately if the policy allows.」，係咩意思？",
+      "prompt": "客人講「The manager can review the receipt, and we will repair it if the policy allows.」，係咩意思？",
       "choices": [
         "大概",
         "聽日",

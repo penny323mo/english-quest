@@ -3,7 +3,7 @@
   "unit": "W",
   "titleYue": "實報實銷同帳簿",
   "titleEn": "Reimbursement, variance, and the ledger",
-  "canDoYue": "你識問實報實銷、差額、採購同帳簿。",
+  "canDoYue": "你識帶三月報銷同差額去採購審核，問帳簿會唔會批，同邊個做負責人。",
   "canDoEn": "Ask about a reimbursement, a variance, procurement, and the ledger.",
   "minutes": 12,
   "hero": "assets/art/lessons/w15.webp",
@@ -35,11 +35,11 @@
       "id": "w15-l2",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "I will bring that March reimbursement, and the cost variance matches our written ledger.",
-      "glossYue": "我會帶三月實報實銷，成本差額同我哋書面帳簿一致。",
+      "text": "I'll bring both files Monday, and the variance matches the written ledger.",
+      "glossYue": "我星期一會帶兩份檔案，差額同書面帳簿一致。",
       "audio": "assets/audio/lines/w15-l2.mp3",
       "audioSlow": "assets/audio/lines/w15-l2-slow.mp3",
-      "say": "I will bring that March reimbursement, and the cost variance matches our written ledger.",
+      "say": "I'll bring both files Monday, and the variance matches the written ledger.",
       "hideGloss": false
     },
     {
@@ -113,32 +113,32 @@
     {
       "prompt": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "問可唔可以帶三月報銷同差額去星期一採購審核",
+        "問今日天氣點",
+        "問鎖匙放喺邊"
       ],
       "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "explain": "帶三月報銷同差額去採購審核。"
     },
     {
       "prompt": "Will you approve the full variance if procurement keeps it inside the written March ledger? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "話帳簿已經鎖咗",
+        "問差額留喺三月帳簿會唔會批核",
+        "問房號幾多"
       ],
-      "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "answer": 1,
+      "explain": "差額留喺三月書面帳簿，問會唔會批。"
     },
     {
-      "prompt": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review? 即係問緊咩？",
+      "prompt": "Please could the ledger name me as the owner without reading every reimbursement line aloud? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "問今日天氣點",
+        "話要大聲讀每一行",
+        "問帳簿可唔可以寫我做負責人"
       ],
-      "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "answer": 2,
+      "explain": "帳簿寫負責人，唔使逐行讀出報銷。"
     }
   ],
   "chunks": [
@@ -216,7 +216,7 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "I will bring that March reimbursement, and the cost variance matches our written ledger.",
+        "line": "I'll bring both files Monday, and the variance matches the written ledger.",
         "audio": "assets/audio/lines/w15-l2.mp3",
         "audioSlow": "assets/audio/lines/w15-l2-slow.mp3",
         "expect": "Will you approve the full variance if procurement keeps it inside the written March ledger?",
@@ -292,7 +292,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "I will bring that March reimbursement, and the cost variance matches our written ledger. 呢句入面，邊個意思先啱？",
+      "prompt": "I'll bring both files Monday, and the variance matches the written ledger. 呢句入面，邊個意思先啱？",
       "choices": [
         "手鏈",
         "海關",

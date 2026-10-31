@@ -67,11 +67,11 @@
       "id": "t13-l2",
       "speaker": "suki",
       "speakerLabel": "Suki",
-      "text": "This tablet is good for both fever and headache. Do you have allergies?",
+      "text": "This tablet is good for fever and headache. Do you have allergies?",
       "glossYue": "呢種藥對發燒同頭痛都有用。你有冇敏感？",
       "audio": "assets/audio/lines/t13-l2.mp3",
       "audioSlow": "assets/audio/lines/t13-l2-slow.mp3",
-      "say": "This tablet is good for both fever and headache. Do you have allergies?",
+      "say": "This tablet is good for fever and headache. Do you have allergies?",
       "hideGloss": false
     },
     {
@@ -100,11 +100,11 @@
       "id": "t13-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Will this one tablet make me feel drowsy? I have to drive home later.",
+      "text": "Will this one tablet make me feel drowsy? I have to drive home.",
       "glossYue": "呢粒會唔會令人好眼瞓？我遲啲要揸車返屋企。",
       "audio": "assets/audio/lines/t13-l5.mp3",
       "audioSlow": "assets/audio/lines/t13-l5-slow.mp3",
-      "say": "Will this one tablet make me feel drowsy? I have to drive home later.",
+      "say": "Will this one tablet make me feel drowsy? I have to drive home.",
       "hideGloss": true
     },
     {
@@ -133,17 +133,17 @@
       "id": "t13-l8",
       "speaker": "suki",
       "speakerLabel": "Suki",
-      "text": "No prescription needed. If the fever lasts over three days, see one doctor soon.",
+      "text": "No prescription needed. If the fever lasts over three days, see a doctor.",
       "glossYue": "唔使處方。如果發燒超過三日，就要睇醫生。",
       "audio": "assets/audio/lines/t13-l8.mp3",
       "audioSlow": "assets/audio/lines/t13-l8-slow.mp3",
-      "say": "No prescription needed. If the fever lasts over three days, see one doctor soon.",
+      "say": "No prescription needed. If the fever lasts over three days, see a doctor.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "This tablet is good for both fever and headache. Do you have allergies? 即係問緊咩？",
+      "prompt": "This tablet is good for fever and headache. Do you have allergies? 即係問緊咩？",
       "choices": [
         "問一日幾次",
         "呢種藥對頭痛同發燒有用，問你有冇敏感",
@@ -163,7 +163,7 @@
       "explain": "after meals 係食完飯。"
     },
     {
-      "prompt": "No prescription needed. If the fever lasts over three days, see one doctor soon. 呢句即係點？",
+      "prompt": "No prescription needed. If the fever lasts over three days, see a doctor. 呢句即係點？",
       "choices": [
         "要帶住處方",
         "發燒就即刻停藥",
@@ -198,7 +198,7 @@
     },
     {
       "pattern": "Will this one tablet make me feel ___? I still have to drive home later.",
-      "example": "Will this one tablet make me feel drowsy? I have to drive home later.",
+      "example": "Will this one tablet make me feel drowsy? I have to drive home.",
       "glossYue": "會唔會好眼瞓？",
       "answer": "drowsy",
       "choices": [
@@ -215,7 +215,7 @@
       "choices": [
         "Hi. I have bad headache and high fever. What medicine can I take?",
         "No, I don't have any allergies. How many times day should I take this?",
-        "Will this one tablet make me feel drowsy? I have to drive home later."
+        "Will this one tablet make me feel drowsy? I have to drive home."
       ],
       "answer": 0,
       "explain": "講 headache。"
@@ -240,7 +240,7 @@
       {
         "partner": "Suki",
         "partnerId": "suki",
-        "line": "This tablet is good for both fever and headache. Do you have allergies?",
+        "line": "This tablet is good for fever and headache. Do you have allergies?",
         "audio": "assets/audio/lines/t13-l2.mp3",
         "audioSlow": "assets/audio/lines/t13-l2-slow.mp3",
         "expect": "No, I don't have any allergies. How many times day should I take this?",
@@ -257,7 +257,7 @@
         "line": "Three times a day, after meals. Don't take more than six tablets each single day.",
         "audio": "assets/audio/lines/t13-l4.mp3",
         "audioSlow": "assets/audio/lines/t13-l4-slow.mp3",
-        "expect": "Will this one tablet make me feel drowsy? I have to drive home later.",
+        "expect": "Will this one tablet make me feel drowsy? I have to drive home.",
         "keywords": [
           "drowsy",
           "drive"

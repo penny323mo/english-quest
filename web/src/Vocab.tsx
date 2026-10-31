@@ -1,9 +1,10 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Rating, type Grade } from "ts-fsrs";
 import { asset, decks, lexById } from "./data";
 import { isDue } from "./fsrs";
 import { learnerEyebrow } from "./labels";
 import { playAsset } from "./media";
+import { karaokeSpans, stressSplit } from "./stress.mjs";
 import { playSfx } from "./sfx";
 import { useStore } from "./store";
 import type { LexItem, StoredCard } from "./types";
@@ -147,6 +148,27 @@ export function VocabHub() {
   );
 }
 
+function compactUsage(notes: string, gloss: string) {
+  if (!notes || !gloss) return notes;
+  if (notes.endsWith(`。${gloss}。`)) return notes.slice(0, -(`。${gloss}。`.length));
+  if (notes.endsWith(`。${gloss}`) && notes.length > gloss.length + 2) return notes.slice(0, -(`。${gloss}`.length));
+  return notes;
+}
+
+function StressChips({ item }: { item: LexItem }) {
+  const parts = stressSplit(item.syllables, item.stress);
+  return (
+    <span className="stress-word" lang="en">
+      {parts.map((part, index) => (
+        <span key={`${part.text}-${index}`}>
+          {index > 0 ? "·" : ""}
+          <b className={part.stressed ? "stress" : ""}>{part.stressed ? part.text.toUpperCase() : part.text}</b>
+        </span>
+      ))}
+    </span>
+  );
+}
+
 function WordCard({
   item,
   openMore,
@@ -161,8 +183,34 @@ function WordCard({
     : [{ en: item.example, yue: item.exampleYue, audio: item.audio, audioSlow: item.audioSlow }];
   const shown = examples.slice(0, 2);
   const extra = examples.slice(2);
-  const hasUsage = Boolean(item.register || item.usageNotes || item.collocations.length || item.pitfallsYue);
+  const usage = compactUsage(item.usageNotes || "", item.glossYue);
+  const hasUsage = Boolean(item.register || usage || item.collocations.length || item.pitfallsYue);
   const hasMore = extra.length > 0 || Boolean(item.related?.length) || Boolean(item.miniDialogue?.length);
+  const [karaAt, setKaraAt] = useState(-1);
+  const karaRaf = useRef(0);
+  useEffect(() => () => cancelAnimationFrame(karaRaf.current), []);
+  function playKaraoke(text: string, path: string) {
+    cancelAnimationFrame(karaRaf.current);
+    setKaraAt(-1);
+    const node = playAsset(path);
+    const run = () => {
+      const duration = node.duration;
+      if (!duration || !Number.isFinite(duration)) return;
+      const spans = karaokeSpans(text, duration);
+      const started = performance.now();
+      const tick = () => {
+        const t = (performance.now() - started) / 1000;
+        let at = -1;
+        for (let i = 0; i < spans.length; i += 1) if (t >= spans[i].start && t < spans[i].end) at = i;
+        setKaraAt(at);
+        if (t < duration) karaRaf.current = requestAnimationFrame(tick);
+        else setKaraAt(-1);
+      };
+      karaRaf.current = requestAnimationFrame(tick);
+    };
+    if (node.readyState >= 1 && Number.isFinite(node.duration)) run();
+    else node.addEventListener("loadedmetadata", run, { once: true });
+  }
   return (
     <article className="word-card">
       <div className="word-head">
@@ -171,6 +219,9 @@ function WordCard({
           <h2 lang="en">{item.lemma}</h2>
           <div className="word-meta">
             <span className="word-pos">{learnerEyebrow(item)}</span>
+          </div>
+          <div className="word-sound">
+            <StressChips item={item} />
             <span className="ipa">{item.ipa}</span>
             <button className="word-play" type="button" aria-label="播放" onClick={() => playAsset(item.audio)}>▶</button>
             <button className="word-play slow" type="button" aria-label="慢速" onClick={() => playAsset(item.audioSlow)}>▶ 慢速</button>
@@ -187,7 +238,7 @@ function WordCard({
         <div className="usage">
           <h3 className="word-label">用法 USAGE</h3>
           {item.register && <p>語域：{item.register}</p>}
-          {item.usageNotes && <p>{item.usageNotes}</p>}
+          {usage && <p>{usage}</p>}
           {item.collocations.length > 0 && (
             <ul>
               {item.collocations.map((phrase) => <li key={phrase} lang="en">{phrase}</li>)}
@@ -198,7 +249,14 @@ function WordCard({
       )}
       <div className="word-examples">
         <h3 className="word-label">例句 EXAMPLES</h3>
-        {shown.map((example) => <ExampleRow key={example.en} example={example} />)}
+        {shown.map((example, index) => (
+          <ExampleRow
+            key={example.en}
+            example={example}
+            karaokeAt={index === 0 ? karaAt : -1}
+            onKaraoke={index === 0 ? () => playKaraoke(example.en, example.audioSlow) : undefined}
+          />
+        ))}
       </div>
       {hasMore && (
         <div className="word-more">
@@ -234,12 +292,32 @@ function WordCard({
   );
 }
 
-function ExampleRow({ example }: { example: { en: string; yue: string; audio: string; audioSlow: string } }) {
+function ExampleRow({
+  example,
+  karaokeAt = -1,
+  onKaraoke,
+}: {
+  example: { en: string; yue: string; audio: string; audioSlow: string };
+  karaokeAt?: number;
+  onKaraoke?: () => void;
+}) {
+  const parts = example.en.split(/([A-Za-z']+)/);
+  let wordIndex = 0;
   return (
     <div className="word-ex">
       <div>
-        <p className="en" lang="en">{example.en}</p>
+        <p className="en" lang="en">
+          {parts.map((part, index) => {
+            if (!/^[A-Za-z']+$/.test(part)) return <span key={index}>{part}</span>;
+            const at = wordIndex;
+            wordIndex += 1;
+            return <span key={index} className={at === karaokeAt ? "karaoke-on" : ""}>{part}</span>;
+          })}
+        </p>
         <p className="yue">{example.yue}</p>
+        {onKaraoke && (
+          <button className="btn ghost" type="button" onClick={onKaraoke}>慢速逐字</button>
+        )}
       </div>
       <div className="word-ex-play">
         <button className="word-play" type="button" aria-label="播放" onClick={() => playAsset(example.audio)}>▶</button>

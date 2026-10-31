@@ -1367,9 +1367,9 @@
       "collocations": [
         "please sit"
       ],
-      "example": "Sit is short.",
-      "exampleYue": "Sit 係短音。",
-      "say": "Sit is short.",
+      "example": "Please sit near the window.",
+      "exampleYue": "請坐近窗口。",
+      "say": "Please sit near the window.",
       "variants": [],
       "note": "",
       "sources": [
@@ -1381,7 +1381,7 @@
       "senseMismatch": false,
       "cmuLemma": "sit",
       "phrase": false,
-      "audioSha256": "a80db009205bf8e0f09d8bccc32be231b6d92b77b8bb2f314414eefedac240c3"
+      "audioSha256": "ba3db65b2d6a98b49501819bc7e0bf3609c94c721bcc8a397eda0cbdc239d117"
     },
     {
       "id": "seat-noun",
@@ -6134,9 +6134,9 @@
       "collocations": [
         "the chicken please"
       ],
-      "example": "I'd like the chicken, please.",
-      "exampleYue": "我想叫雞，唔該。",
-      "say": "I'd like the [[tʃˈɪkən]] , please.",
+      "example": "The chicken is spicy today.",
+      "exampleYue": "今日嘅雞好辣。",
+      "say": "The [[tʃˈɪkən]] is spicy today.",
       "variants": [],
       "note": "兩個音節，重音喺第一節。第二節係 /ən/，唔好讀成 /ɪn/。開頭 /tʃ/，唔係 /ʃ/。",
       "sources": [
@@ -6148,7 +6148,7 @@
       "senseMismatch": false,
       "cmuLemma": "chicken",
       "phrase": false,
-      "audioSha256": "1953653dada30135f2e1879a37e66f415914314bd62bed92bfa3713d9e5a9456"
+      "audioSha256": "19db88d296d42d0d0aa4c429b04041a3abf80db962aac40655e023c47a3f99dc"
     },
     {
       "id": "fish-noun",
@@ -6714,9 +6714,9 @@
       "collocations": [
         "a water tank"
       ],
-      "example": "A water tank.",
-      "exampleYue": "一個水缸。",
-      "say": "A water tank.",
+      "example": "The water tank is full.",
+      "exampleYue": "水缸滿咗。",
+      "say": "The water tank is full.",
       "variants": [],
       "note": "",
       "sources": [
@@ -6728,7 +6728,7 @@
       "senseMismatch": false,
       "cmuLemma": "tank",
       "phrase": false,
-      "audioSha256": "f37f424de436a46e9ff29c419a1e10fc9e70fd71c681ab7c9346c20e0332db28"
+      "audioSha256": "f5a09318ce9e0960b1eff078f3c68515b3e3b04b57191f9e219d8816fb09250d"
     },
     {
       "id": "think-verb",
@@ -8470,9 +8470,9 @@
       "collocations": [
         "nine dollars"
       ],
-      "example": "It opens at nine.",
-      "exampleYue": "九點鐘開門。",
-      "say": "It opens at nine.",
+      "example": "We close at nine.",
+      "exampleYue": "我哋九點關門。",
+      "say": "We close at nine.",
       "variants": [],
       "note": "",
       "sources": [
@@ -8484,7 +8484,7 @@
       "senseMismatch": false,
       "cmuLemma": "nine",
       "phrase": false,
-      "audioSha256": "b9e4dd0f5766fcf2c242bd23efd5e6bf73e1b2f86a0ab53ca83c5a0f98fa3175"
+      "audioSha256": "727d3014985636cbf7bd7f31f83b433fe0f65f5c5b55424577a6c1b5be6e6063"
     },
     {
       "id": "ten-num",
@@ -11970,21 +11970,21 @@
           "say": "This piece is ten percent off."
         },
         {
-          "en": "He wrote off on the card.",
-          "yue": "我哋將減寫低喺單上面。",
+          "en": "The gold chain is ten percent off today.",
+          "yue": "條金鏈今日減一成。",
           "audio": "assets/audio/words/off-adv-ex3.mp3",
           "audioSlow": "assets/audio/words/off-adv-ex3-slow.mp3",
-          "say": "He wrote off on the card."
+          "say": "The gold chain is ten percent off today."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Did he answer off?",
-          "yue": "佢係咪減答？"
+          "en": "Is this chain ten percent off?",
+          "yue": "條鏈係咪減一成？"
         },
         {
-          "en": "He answered off.",
-          "yue": "佢減答咗。"
+          "en": "Yes, this chain is ten percent off today.",
+          "yue": "係，條鏈今日減一成。"
         }
       ]
     },
@@ -12121,11 +12121,11 @@
           "say": "This [[ˈɔfɚ]] includes tax."
         },
         {
-          "en": "I like this offer.",
-          "yue": "我鍾意呢個優惠。",
+          "en": "Mina likes this Friday offer.",
+          "yue": "美娜鍾意星期五呢個優惠。",
           "audio": "assets/audio/words/offer-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/offer-noun-ex2-slow.mp3",
-          "say": "I like this [[ˈɔfɚ]]."
+          "say": "Mina likes this Friday offer."
         },
         {
           "en": "Hugh asked about the offer behind the green plant before noon.",
@@ -12359,11 +12359,11 @@
           "say": "The total is a good deal."
         },
         {
-          "en": "The total includes tax.",
-          "yue": "總數包咗稅。",
+          "en": "Tax is already inside the total.",
+          "yue": "稅已經計入總數。",
           "audio": "assets/audio/words/total-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/total-noun-ex2-slow.mp3",
-          "say": "The total includes tax."
+          "say": "Tax is already inside the total."
         },
         {
           "en": "Iris asked about the total behind the green plant before noon.",
@@ -14821,11 +14821,11 @@
           "say": "I will take the fish instead."
         },
         {
-          "en": "She spoke instead so the guest could hear.",
-          "yue": "客人想了解改為點用。",
+          "en": "She chose tea instead, so the guest heard the order.",
+          "yue": "佢改為揀茶，客人聽到個單。",
           "audio": "assets/audio/words/instead-adv-ex3.mp3",
           "audioSlow": "assets/audio/words/instead-adv-ex3-slow.mp3",
-          "say": "She spoke instead so the guest could hear."
+          "say": "She chose tea instead, so the guest heard the order."
         }
       ],
       "miniDialogue": [
@@ -14834,8 +14834,8 @@
           "yue": "佢哋改為移去邊？"
         },
         {
-          "en": "They moved instead toward the gate.",
-          "yue": "佢哋改為移去閘口。"
+          "en": "I will have tea instead of coffee.",
+          "yue": "我改為要茶，唔要咖啡。"
         }
       ]
     },
@@ -15191,9 +15191,9 @@
       "collocations": [
         "your key card"
       ],
-      "example": "Here is your key card.",
-      "exampleYue": "呢張係你把鑰匙卡。",
-      "say": "Here is your key card.",
+      "example": "Your key card opens room 412.",
+      "exampleYue": "你把鑰匙卡開412號房。",
+      "say": "Your key card opens room 412.",
       "variants": [],
       "note": "",
       "sources": [
@@ -15204,7 +15204,7 @@
       "senseMismatch": false,
       "cmuLemma": "key card",
       "phrase": true,
-      "audioSha256": "71deff1e208ead7c46ef35fbbb15d67f3411cd2ee3779dcc8fd17a463b4f34de",
+      "audioSha256": "28de5f0d81e1616a04cd1811f0d91153edb3d0f10095577b371c6690d323c922",
       "register": "酒店",
       "usageNotes": "Here is your key card.",
       "pitfallsYue": "鑰匙卡係 key card。一張卡開一間房。",
@@ -15224,11 +15224,11 @@
       ],
       "examples": [
         {
-          "en": "Here is your key card.",
-          "yue": "呢張係你把鑰匙卡。",
+          "en": "Your key card opens room 412.",
+          "yue": "你把鑰匙卡開412號房。",
           "audio": "assets/audio/words/key-card-phrase.mp3",
           "audioSlow": "assets/audio/words/key-card-phrase-slow.mp3",
-          "say": "Here is your key card."
+          "say": "Your key card opens room 412."
         },
         {
           "en": "The key card opens your room.",
@@ -15461,21 +15461,21 @@
           "say": "A double room is fine."
         },
         {
-          "en": "I found the fit double on the first try.",
-          "yue": "櫃檯同事解釋咗雙人。",
+          "en": "We booked a double room for Friday.",
+          "yue": "我哋訂咗星期五嘅雙人房。",
           "audio": "assets/audio/words/double-adj-ex3.mp3",
           "audioSlow": "assets/audio/words/double-adj-ex3-slow.mp3",
-          "say": "I found the fit double on the first try."
+          "say": "We booked a double room for Friday."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Opal called the cloth double inside the blue tray before noon.",
-          "yue": "奧珀中午之前喺藍盤入面話件布雙人。"
+          "en": "Is a double room free on Friday?",
+          "yue": "星期五有冇雙人房？"
         },
         {
-          "en": "Yao called the cloth double inside the blue tray before noon.",
-          "yue": "阿姚中午之前喺藍盤入面話件布雙人。"
+          "en": "Yes, a double room is free on Friday.",
+          "yue": "有，星期五有雙人房。"
         }
       ]
     },
@@ -16979,21 +16979,21 @@
           "say": "The missing wallet is brown."
         },
         {
-          "en": "I found the fit missing on the first try.",
-          "yue": "我哋將搵唔到寫低喺單上面。",
+          "en": "The passport is missing from the desk.",
+          "yue": "護照喺櫃檯度搵唔到。",
           "audio": "assets/audio/words/missing-adj-ex3.mp3",
           "audioSlow": "assets/audio/words/missing-adj-ex3-slow.mp3",
-          "say": "I found the fit missing on the first try."
+          "say": "The passport is missing from the desk."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Dana called the cloth missing near the front door on Friday.",
-          "yue": "丹娜星期五喺前門附近話件布搵唔到。"
+          "en": "Is the passport missing?",
+          "yue": "本護照係咪搵唔到？"
         },
         {
-          "en": "Vera called the cloth missing near the front door on Friday.",
-          "yue": "維拉星期五喺前門附近話件布搵唔到。"
+          "en": "Yes, the passport is missing.",
+          "yue": "係，本護照搵唔到。"
         }
       ]
     },
@@ -19479,21 +19479,21 @@
           "say": "Let us sit together near the window."
         },
         {
-          "en": "He wrote together on the card.",
-          "yue": "我見到一齊喺櫃檯。",
+          "en": "We will sit together by the window.",
+          "yue": "我哋會坐埋窗邊一齊。",
           "audio": "assets/audio/words/together-adv-ex3.mp3",
           "audioSlow": "assets/audio/words/together-adv-ex3-slow.mp3",
-          "say": "He wrote together on the card."
+          "say": "We will sit together by the window."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Did he answer together?",
-          "yue": "佢係咪一齊答？"
+          "en": "Can we pay together on one bill?",
+          "yue": "我哋可唔可以一張單一齊付？"
         },
         {
-          "en": "He answered together.",
-          "yue": "佢一齊答咗。"
+          "en": "Yes, we can pay together.",
+          "yue": "可以，我哋一齊付。"
         }
       ]
     },
@@ -20281,21 +20281,21 @@
           "say": "Please [[tɹænsfˈɜ]] the call to Mei."
         },
         {
-          "en": "Can you transfer this before Friday?",
-          "yue": "職員話轉駁已經準備好。",
+          "en": "Please transfer this call to Mei before noon.",
+          "yue": "中午之前唔該將呢通電話轉駁畀 Mei。",
           "audio": "assets/audio/words/transfer-verb-ex3.mp3",
           "audioSlow": "assets/audio/words/transfer-verb-ex3-slow.mp3",
-          "say": "Can you transfer this before Friday?"
+          "say": "Please transfer this call to Mei before noon."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Ruth can transfer the form behind the green plant on Friday.",
-          "yue": "露芙星期五可以喺綠植物後面轉駁。"
+          "en": "Can you transfer the call to Mei?",
+          "yue": "可唔可以將電話轉駁畀 Mei？"
         },
         {
-          "en": "Paul can transfer the form behind the green plant on Friday.",
-          "yue": "保羅星期五可以喺綠植物後面轉駁。"
+          "en": "I will transfer you to Mei now.",
+          "yue": "我而家轉駁去 Mei。"
         }
       ]
     },
@@ -21728,11 +21728,11 @@
           "say": "A little polish keeps the gold bright."
         },
         {
-          "en": "This jewellery polish is for a gold chain.",
-          "yue": "呢支擦亮劑係用喺金鏈。",
+          "en": "Use this jewellery polish on the gold chain.",
+          "yue": "用呢支擦亮劑擦金鏈。",
           "audio": "assets/audio/words/polish-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/polish-noun-ex2-slow.mp3",
-          "say": "This jewellery polish is for a gold chain."
+          "say": "Use this jewellery polish on the gold chain."
         },
         {
           "en": "Quinn asked about the polish near the open drawer on Friday.",
@@ -22137,21 +22137,21 @@
           "say": "The repair is free within one year."
         },
         {
-          "en": "Please put the form within the box.",
-          "yue": "櫃檯同事解釋咗之內。",
+          "en": "Please reply within three days.",
+          "yue": "請三天之內回覆。",
           "audio": "assets/audio/words/within-prep-ex3.mp3",
           "audioSlow": "assets/audio/words/within-prep-ex3-slow.mp3",
-          "say": "Please put the form within the box."
+          "say": "Please reply within three days."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Did he put it within the tray?",
-          "yue": "佢有冇用之內放上托盤？"
+          "en": "Can I file the claim within the year?",
+          "yue": "我可唔可以一年之內交申請？"
         },
         {
-          "en": "He put it within the tray.",
-          "yue": "佢用之內放上托盤。"
+          "en": "Yes, file it within the year.",
+          "yue": "可以，一年之內交就得。"
         }
       ]
     },
@@ -22621,21 +22621,21 @@
           "say": "A simple polish is optional with the set."
         },
         {
-          "en": "His answer was optional and short.",
-          "yue": "我哋將可以唔要寫低喺單上面。",
+          "en": "The gift wrap is optional today.",
+          "yue": "今日禮品包裝可以唔要。",
           "audio": "assets/audio/words/optional-adj-ex3.mp3",
           "audioSlow": "assets/audio/words/optional-adj-ex3-slow.mp3",
-          "say": "His answer was optional and short."
+          "say": "The gift wrap is optional today."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Tess called the cloth optional by the round table on Friday.",
-          "yue": "泰絲星期五喺圓檯旁邊話件布可以唔要。"
+          "en": "Is the engraving optional?",
+          "yue": "刻字可唔可以唔要？"
         },
         {
-          "en": "Otto called the cloth optional by the round table on Friday.",
-          "yue": "奧托星期五喺圓檯旁邊話件布可以唔要。"
+          "en": "Yes, the engraving is optional.",
+          "yue": "可以，刻字可以唔要。"
         }
       ]
     },
@@ -25086,9 +25086,9 @@
         "a headache",
         "had a headache"
       ],
-      "example": "I have had a headache since Monday.",
-      "exampleYue": "我由星期一起頭痛。",
-      "say": "I have had a headache since Monday.",
+      "example": "This headache started on Monday.",
+      "exampleYue": "呢個頭痛星期一起。",
+      "say": "This headache started on Monday.",
       "variants": [],
       "note": "",
       "sources": [
@@ -25099,7 +25099,7 @@
       "senseMismatch": false,
       "cmuLemma": "headache",
       "phrase": false,
-      "audioSha256": "bcb6758a5c666f5fa79bdb0c566369376c86873bc2e5e1c048d40b1cfe4da05f",
+      "audioSha256": "bbeb71ff7bd65bbd168e50a1d2aa9e56144ffbe42416916a0c309dbb4ad20d21",
       "register": "診所",
       "usageNotes": "headache 係個頭痛。",
       "pitfallsYue": "",
@@ -25109,11 +25109,11 @@
       ],
       "examples": [
         {
-          "en": "I have had a headache since Monday.",
-          "yue": "我由星期一起頭痛。",
+          "en": "This headache started on Monday.",
+          "yue": "呢個頭痛星期一起。",
           "audio": "assets/audio/words/headache-noun.mp3",
           "audioSlow": "assets/audio/words/headache-noun-slow.mp3",
-          "say": "I have had a headache since Monday."
+          "say": "This headache started on Monday."
         },
         {
           "en": "The headache is worse this morning.",
@@ -29066,21 +29066,21 @@
           "say": "He said he has nothing to declare."
         },
         {
-          "en": "I need nothing to declare for the booking.",
-          "yue": "我想再確認冇嘢申報一次。",
+          "en": "I have nothing to declare on this trip.",
+          "yue": "呢程我冇嘢申報。",
           "audio": "assets/audio/words/nothing-to-declare-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/nothing-to-declare-phrase-ex3-slow.mp3",
-          "say": "I need nothing to declare for the booking."
+          "say": "I have nothing to declare on this trip."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Hugh asked about the nothing to declare across the quiet hall on Monday.",
-          "yue": "休哥星期一喺靜廳對面問過冇嘢申報。"
+          "en": "Do you have anything to declare?",
+          "yue": "你有冇嘢申報？"
         },
         {
-          "en": "Ned asked about the nothing to declare across the quiet hall on Monday.",
-          "yue": "內德星期一喺靜廳對面問過冇嘢申報。"
+          "en": "No, I have nothing to declare today.",
+          "yue": "冇，我今日冇嘢申報。"
         }
       ]
     },
@@ -29556,21 +29556,21 @@
           "say": "We can make a custom piece for you."
         },
         {
-          "en": "His answer was custom and short.",
-          "yue": "我哋將訂做寫低喺單上面。",
+          "en": "This ring is a custom design for Mina.",
+          "yue": "呢隻戒指係為 Mina 訂做嘅。",
           "audio": "assets/audio/words/custom-adj-ex3.mp3",
           "audioSlow": "assets/audio/words/custom-adj-ex3-slow.mp3",
-          "say": "His answer was custom and short."
+          "say": "This ring is a custom design for Mina."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Fran called the cloth custom near the open drawer on Monday.",
-          "yue": "法蘭星期一喺開住嘅櫃桶附近話件布訂做。"
+          "en": "Can you make a custom piece?",
+          "yue": "可唔可以訂做一件？"
         },
         {
-          "en": "Opal called the cloth custom near the open drawer on Monday.",
-          "yue": "奧珀星期一喺開住嘅櫃桶附近話件布訂做。"
+          "en": "Yes, we can make a custom piece for you.",
+          "yue": "可以，我哋可以同你訂做一件。"
         }
       ]
     },
@@ -32344,21 +32344,21 @@
           "say": "Please escalate this broken clasp to the workshop."
         },
         {
-          "en": "Can you escalate this before Friday?",
-          "yue": "職員話升級處理已經準備好。",
+          "en": "Please escalate the broken clasp before Friday.",
+          "yue": "星期五之前請將壞扣升級處理。",
           "audio": "assets/audio/words/escalate-verb-ex3.mp3",
           "audioSlow": "assets/audio/words/escalate-verb-ex3-slow.mp3",
-          "say": "Can you escalate this before Friday?"
+          "say": "Please escalate the broken clasp before Friday."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Tess can escalate the form on the glass counter after six.",
-          "yue": "泰絲六點之後可以喺玻璃櫃檯升級處理。"
+          "en": "Can you escalate this case?",
+          "yue": "可唔可以將呢單升級處理？"
         },
         {
-          "en": "Otto can escalate the form on the glass counter after six.",
-          "yue": "奧托六點之後可以喺玻璃櫃檯升級處理。"
+          "en": "I will escalate the case by phone.",
+          "yue": "我會用電話升級處理。"
         }
       ]
     },
@@ -34418,11 +34418,11 @@
           "say": "I usually start work after a break."
         },
         {
-          "en": "Hugh spoke usually inside the small box after six.",
-          "yue": "休哥六點之後喺細盒入面講得通常。",
+          "en": "The bus usually arrives before nine.",
+          "yue": "巴士通常九點之前到。",
           "audio": "assets/audio/words/usually-adv-ex3.mp3",
           "audioSlow": "assets/audio/words/usually-adv-ex3-slow.mp3",
-          "say": "Hugh spoke usually inside the small box after six."
+          "say": "The bus usually arrives before nine."
         }
       ],
       "miniDialogue": [
@@ -34431,8 +34431,8 @@
           "yue": "佢哋通常移去邊？"
         },
         {
-          "en": "They moved usually toward the gate.",
-          "yue": "佢哋通常移去閘口。"
+          "en": "I usually start work after lunch.",
+          "yue": "我通常午餐之後開工。"
         }
       ]
     },
@@ -34574,21 +34574,21 @@
           "say": "I sometimes finish early before we close."
         },
         {
-          "en": "They moved sometimes toward the gate.",
-          "yue": "我帶咗有時去窗口。",
+          "en": "I sometimes leave before we close.",
+          "yue": "我有時喺關門之前走。",
           "audio": "assets/audio/words/sometimes-adv-ex3.mp3",
           "audioSlow": "assets/audio/words/sometimes-adv-ex3-slow.mp3",
-          "say": "They moved sometimes toward the gate."
+          "say": "I sometimes leave before we close."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Tess spoke sometimes inside the small box after six.",
-          "yue": "泰絲六點之後喺細盒入面講得有時。"
+          "en": "Do you sometimes take a break after lunch?",
+          "yue": "你有時係咪午餐之後先小休？"
         },
         {
-          "en": "Otto spoke sometimes inside the small box after six.",
-          "yue": "奧托六點之後喺細盒入面講得有時。"
+          "en": "Yes, I sometimes take a short break.",
+          "yue": "係，我有時會小休一陣。"
         }
       ]
     },
@@ -34652,21 +34652,21 @@
           "say": "I never close the shop before the shift ends."
         },
         {
-          "en": "Ruth spoke never inside the small box after six.",
-          "yue": "露芙六點之後喺細盒入面講得從不。",
+          "en": "I never miss the Friday shift.",
+          "yue": "我從不缺星期五嗰更。",
           "audio": "assets/audio/words/never-adv-ex3.mp3",
           "audioSlow": "assets/audio/words/never-adv-ex3-slow.mp3",
-          "say": "Ruth spoke never inside the small box after six."
+          "say": "I never miss the Friday shift."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Did he answer never?",
-          "yue": "佢係咪從不答？"
+          "en": "Do you miss the Friday shift?",
+          "yue": "你會唔會缺星期五嗰更？"
         },
         {
-          "en": "He answered never.",
-          "yue": "佢從不答咗。"
+          "en": "No, I never miss the Friday shift.",
+          "yue": "唔會，我從不缺星期五嗰更。"
         }
       ]
     },
@@ -34730,21 +34730,21 @@
           "say": "We open before lunch on this shift."
         },
         {
-          "en": "The note sits before the receipt.",
-          "yue": "我帶咗之前去窗口。",
+          "en": "Please arrive before the shift starts.",
+          "yue": "請喺返工之前到。",
           "audio": "assets/audio/words/before-prep-ex3.mp3",
           "audioSlow": "assets/audio/words/before-prep-ex3-slow.mp3",
-          "say": "The note sits before the receipt."
+          "say": "Please arrive before the shift starts."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Did he put it before the tray?",
-          "yue": "佢有冇用之前放上托盤？"
+          "en": "Do we open before lunch?",
+          "yue": "我哋係咪午餐之前開門？"
         },
         {
-          "en": "He put it before the tray.",
-          "yue": "佢用之前放上托盤。"
+          "en": "Yes, we open before lunch.",
+          "yue": "係，我哋午餐之前開門。"
         }
       ]
     },
@@ -35274,21 +35274,21 @@
           "say": "An unlimited plan lets you use data all month."
         },
         {
-          "en": "His answer was unlimited and short.",
-          "yue": "櫃檯同事解釋咗無限。",
+          "en": "This unlimited plan has no monthly cap.",
+          "yue": "呢個無限計劃冇每月上限。",
           "audio": "assets/audio/words/unlimited-adj-ex3.mp3",
           "audioSlow": "assets/audio/words/unlimited-adj-ex3-slow.mp3",
-          "say": "His answer was unlimited and short."
+          "say": "This unlimited plan has no monthly cap."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Ned called the cloth unlimited beside the blue chair after six.",
-          "yue": "內德六點之後喺藍椅旁邊話件布無限。"
+          "en": "Does the unlimited plan cap the data?",
+          "yue": "無限計劃有冇數據上限？"
         },
         {
-          "en": "Cora called the cloth unlimited beside the blue chair after six.",
-          "yue": "科拉六點之後喺藍椅旁邊話件布無限。"
+          "en": "No, the unlimited plan has no data limit.",
+          "yue": "冇，無限計劃冇數據上限。"
         }
       ]
     },
@@ -35986,21 +35986,21 @@
           "say": "One postage stamp is enough for a postcard."
         },
         {
-          "en": "We heard postage stamp during the call.",
-          "yue": "客人想了解郵票點用。",
+          "en": "This letter needs one postage stamp.",
+          "yue": "呢封信要一張郵票。",
           "audio": "assets/audio/words/postage-stamp-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/postage-stamp-noun-ex3-slow.mp3",
-          "say": "We heard postage stamp during the call."
+          "say": "This letter needs one postage stamp."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Ruth asked about the postage stamp behind the green plant after six.",
-          "yue": "露芙六點之後喺綠植物後面問過郵票。"
+          "en": "Do I need a postage stamp for this postcard?",
+          "yue": "呢張明信片使唔使郵票？"
         },
         {
-          "en": "Paul asked about the postage stamp behind the green plant after six.",
-          "yue": "保羅六點之後喺綠植物後面問過郵票。"
+          "en": "Yes, one postage stamp is enough.",
+          "yue": "使，一張郵票就夠。"
         }
       ]
     },
@@ -36304,21 +36304,21 @@
           "say": "The follow-up visit is booked for next week."
         },
         {
-          "en": "I need follow-up visit for the booking.",
-          "yue": "我見到覆診喺櫃檯。",
+          "en": "Book a follow-up visit for next Tuesday.",
+          "yue": "幫我約下星期二覆診。",
           "audio": "assets/audio/words/follow-up-visit-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/follow-up-visit-noun-ex3-slow.mp3",
-          "say": "I need follow-up visit for the booking."
+          "say": "Book a follow-up visit for next Tuesday."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Fran asked about the follow-up visit on the wooden shelf after six.",
-          "yue": "法蘭六點之後喺木架上面問過覆診。"
+          "en": "Do I need a follow-up visit?",
+          "yue": "我使唔使覆診？"
         },
         {
-          "en": "Opal asked about the follow-up visit on the wooden shelf after six.",
-          "yue": "奧珀六點之後喺木架上面問過覆診。"
+          "en": "Yes, the follow-up visit is next week.",
+          "yue": "使，覆診係下星期。"
         }
       ]
     },
@@ -36458,21 +36458,21 @@
           "say": "Cold food goes back to the kitchen."
         },
         {
-          "en": "I found the fit cold on the first try.",
-          "yue": "我哋將凍寫低喺單上面。",
+          "en": "The soup is cold, so send it back.",
+          "yue": "湯凍咗，送返去。",
           "audio": "assets/audio/words/cold-adj-ex3.mp3",
           "audioSlow": "assets/audio/words/cold-adj-ex3-slow.mp3",
-          "say": "I found the fit cold on the first try."
+          "say": "The soup is cold, so send it back."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Cora called the cloth cold on the wooden shelf after six.",
-          "yue": "科拉六點之後喺木架上面話件布凍。"
+          "en": "Is the soup cold?",
+          "yue": "碗湯係咪凍咗？"
         },
         {
-          "en": "Liam called the cloth cold on the wooden shelf after six.",
-          "yue": "利亞六點之後喺木架上面話件布凍。"
+          "en": "Yes, the soup on the table is cold.",
+          "yue": "係，檯上嗰碗湯凍咗。"
         }
       ]
     },
@@ -38286,21 +38286,21 @@
           "say": "The desk can rebook the whole party."
         },
         {
-          "en": "Can you rebook this before Friday?",
-          "yue": "櫃檯同事解釋咗改簽。",
+          "en": "Can we rebook the table for Friday evening?",
+          "yue": "我哋可唔可以改簽星期五晚上嘅檯？",
           "audio": "assets/audio/words/rebook-verb-ex3.mp3",
           "audioSlow": "assets/audio/words/rebook-verb-ex3-slow.mp3",
-          "say": "Can you rebook this before Friday?"
+          "say": "Can we rebook the table for Friday evening?"
         }
       ],
       "miniDialogue": [
         {
-          "en": "Iris can rebook the form by the round table after six.",
-          "yue": "艾瑞六點之後可以喺圓檯旁邊改簽。"
+          "en": "Can the desk rebook our party?",
+          "yue": "櫃檯可唔可以幫我哋成團改簽？"
         },
         {
-          "en": "Joel can rebook the form by the round table after six.",
-          "yue": "祖爾六點之後可以喺圓檯旁邊改簽。"
+          "en": "Yes, the desk can rebook the whole party.",
+          "yue": "可以，櫃檯可以幫成團改簽。"
         }
       ]
     },
@@ -38891,9 +38891,9 @@
         "an alternative",
         "refund an alternative"
       ],
-      "example": "Store credit is an alternative to a cash refund.",
-      "exampleYue": "店舖積分係現金退款以外嘅另一個選擇。",
-      "say": "Store credit is an alternative to a cash refund.",
+      "example": "Store credit is an alternative to cash.",
+      "exampleYue": "店舖積分係現金以外嘅另一個選擇。",
+      "say": "Store credit is an alternative to cash.",
       "variants": [],
       "note": "",
       "sources": [
@@ -38905,18 +38905,18 @@
       "senseMismatch": false,
       "cmuLemma": "alternative",
       "phrase": false,
-      "audioSha256": "3e1b4375da77a9415f66342840c73a17a16f4592189298ea454ef1fce0ec0af8",
+      "audioSha256": "cd8dd4cf35868046b07dd41149af2802e35345f65ddabb71b63541b80e30fe7a",
       "register": "旅行",
       "usageNotes": "前面常用 an，因為元音開頭。",
       "pitfallsYue": "重音喺第二音 ter。",
       "related": [],
       "examples": [
         {
-          "en": "Store credit is an alternative to a cash refund.",
-          "yue": "店舖積分係現金退款以外嘅另一個選擇。",
+          "en": "Store credit is an alternative to cash.",
+          "yue": "店舖積分係現金以外嘅另一個選擇。",
           "audio": "assets/audio/words/alternative-noun.mp3",
           "audioSlow": "assets/audio/words/alternative-noun-slow.mp3",
-          "say": "Store credit is an alternative to a cash refund."
+          "say": "Store credit is an alternative to cash."
         },
         {
           "en": "The desk offered an alternative route.",
@@ -39238,21 +39238,21 @@
           "say": "The note says twice a day after meals."
         },
         {
-          "en": "I need twice a day for the booking.",
-          "yue": "我見到一日兩次喺櫃檯。",
+          "en": "Please take the tablet twice a day after meals.",
+          "yue": "請飯後一日食兩次呢粒藥。",
           "audio": "assets/audio/words/twice-a-day-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/twice-a-day-phrase-ex3-slow.mp3",
-          "say": "I need twice a day for the booking."
+          "say": "Please take the tablet twice a day after meals."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Liam asked about the twice a day inside the blue tray after six.",
-          "yue": "利亞六點之後喺藍盤入面問過一日兩次。"
+          "en": "Do I take it twice a day?",
+          "yue": "我係咪一日食兩次？"
         },
         {
-          "en": "Tess asked about the twice a day inside the blue tray after six.",
-          "yue": "泰絲六點之後喺藍盤入面問過一日兩次。"
+          "en": "Yes, take this tablet twice a day.",
+          "yue": "係，呢粒藥一日食兩次。"
         }
       ]
     },
@@ -40498,21 +40498,21 @@
           "say": "The claim form asks for the tag number."
         },
         {
-          "en": "We heard claim form during the call.",
-          "yue": "我想再確認索償表一次。",
+          "en": "Please sign the claim form for the missing bag.",
+          "yue": "唔見咗個袋，請簽呢張索償表。",
           "audio": "assets/audio/words/claim-form-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/claim-form-phrase-ex3-slow.mp3",
-          "say": "We heard claim form during the call."
+          "say": "Please sign the claim form for the missing bag."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Hope asked about the claim form on the glass counter at ten.",
-          "yue": "霍普十點喺玻璃櫃檯問過索償表。"
+          "en": "Where is the claim form?",
+          "yue": "索償表喺邊？"
         },
         {
-          "en": "Glen asked about the claim form on the glass counter at ten.",
-          "yue": "格倫十點喺玻璃櫃檯問過索償表。"
+          "en": "The claim form is on the counter.",
+          "yue": "索償表喺櫃檯。"
         }
       ]
     },
@@ -44672,21 +44672,21 @@
           "say": "I am still running late."
         },
         {
-          "en": "We heard running late during the call.",
-          "yue": "我剛剛檢查咗遲到。",
+          "en": "Sorry, the taxi is running late.",
+          "yue": "唔好意思，的士遲到。",
           "audio": "assets/audio/words/running-late-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/running-late-phrase-ex3-slow.mp3",
-          "say": "We heard running late during the call."
+          "say": "Sorry, the taxi is running late."
         }
       ],
       "miniDialogue": [
         {
-          "en": "Iris asked about the running late across the quiet hall at ten.",
-          "yue": "艾瑞十點喺靜廳對面問過遲到。"
+          "en": "Are you running late?",
+          "yue": "你係咪遲到？"
         },
         {
-          "en": "Joel asked about the running late across the quiet hall at ten.",
-          "yue": "祖爾十點喺靜廳對面問過遲到。"
+          "en": "Yes, I'm running late by ten minutes.",
+          "yue": "係，我遲咗十分鐘。"
         }
       ]
     },
@@ -45882,9 +45882,9 @@
       "collocations": [
         "a savings account"
       ],
-      "example": "I would like a savings account.",
-      "exampleYue": "我想開一個儲蓄戶口。",
-      "say": "I would like a savings account.",
+      "example": "Please open a savings account for Ling.",
+      "exampleYue": "請幫 Ling 開一個儲蓄戶口。",
+      "say": "Please open a savings account for Ling.",
       "variants": [],
       "note": "",
       "sources": [
@@ -45895,18 +45895,18 @@
       "senseMismatch": false,
       "cmuLemma": "savings",
       "phrase": true,
-      "audioSha256": "f2db872b43771bbd2410afbaeb7c9386dfe8381be9688bc75960f1a0bca97740",
+      "audioSha256": "ba84e0855cac60783d25c1226f752878173219617a5c705df7a32ab6a114b02e",
       "register": "銀行",
       "usageNotes": "savings account 係儲蓄戶口。",
       "pitfallsYue": "儲蓄戶口唔係往來戶口。",
       "related": [],
       "examples": [
         {
-          "en": "I would like a savings account.",
-          "yue": "我想開一個儲蓄戶口。",
+          "en": "Please open a savings account for Ling.",
+          "yue": "請幫 Ling 開一個儲蓄戶口。",
           "audio": "assets/audio/words/savings-account-phrase.mp3",
           "audioSlow": "assets/audio/words/savings-account-phrase-slow.mp3",
-          "say": "I would like a savings account."
+          "say": "Please open a savings account for Ling."
         },
         {
           "en": "A savings account can earn interest.",

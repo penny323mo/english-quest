@@ -30,11 +30,11 @@
       "id": "d6-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Hello. I have a bad cough today, and I need something from this pharmacy please.",
-      "glossYue": "你好。我今日咳得好犀利，想喺呢間藥房買啲藥。",
+      "text": "Hello. I have a cough, and I need something from this pharmacy.",
+      "glossYue": "你好。我有咳嗽，想喺呢間藥房買啲藥。",
       "audio": "assets/audio/lines/d6-l1.mp3",
       "audioSlow": "assets/audio/lines/d6-l1-slow.mp3",
-      "say": "Hello. I have a bad cough today, and I need something from this pharmacy please.",
+      "say": "Hello. I have a cough, and I need something from this pharmacy.",
       "hideGloss": false
     },
     {
@@ -74,11 +74,11 @@
       "id": "d6-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "The dosage is one small tablet twice a day for five days.",
-      "glossYue": "劑量係一日兩次，每次一粒細藥片，食五日。",
+      "text": "The dosage is one tablet twice a day.",
+      "glossYue": "劑量係一日兩粒。",
       "audio": "assets/audio/lines/d6-l5.mp3",
       "audioSlow": "assets/audio/lines/d6-l5-slow.mp3",
-      "say": "The dosage is one small tablet twice a day for five days.",
+      "say": "The dosage is one tablet twice a day.",
       "hideGloss": false
     },
     {
@@ -107,17 +107,17 @@
       "id": "d6-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will call this pharmacy if that cough comes back after I rest.",
-      "glossYue": "如果休息之後咳又返，我會打畀呢間藥房。",
+      "text": "I will call this pharmacy if that cough comes back.",
+      "glossYue": "如果咳嗽再返嚟，我會打畀呢間藥房。",
       "audio": "assets/audio/lines/d6-l8.mp3",
       "audioSlow": "assets/audio/lines/d6-l8-slow.mp3",
-      "say": "I will call this pharmacy if that cough comes back after I rest.",
+      "say": "I will call this pharmacy if that cough comes back.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Hello. I have a bad cough today, and I need something from this pharmacy please. 呢句即係點？",
+      "prompt": "Hello. I have a cough, and I need something from this pharmacy. 呢句即係點？",
       "choices": [
         "我咳嗽，想喺藥房買藥",
         "我冇咳嗽，只係問劑量",
@@ -127,7 +127,7 @@
       "explain": "cough 係咳嗽。pharmacy 係藥房。"
     },
     {
-      "prompt": "The dosage is one small tablet twice a day for five days. 呢句即係點？",
+      "prompt": "The dosage is one tablet twice a day. 呢句即係點？",
       "choices": [
         "一日一次，每次兩粒藥片",
         "飯後先食藥片，唔係一日兩次",
@@ -161,7 +161,7 @@
     },
     {
       "pattern": "The dosage is one small tablet ___ a day for five days.",
-      "example": "The dosage is one small tablet twice a day for five days.",
+      "example": "The dosage is one tablet twice a day.",
       "glossYue": "劑量係一日兩次。",
       "answer": "twice",
       "choices": [
@@ -184,7 +184,7 @@
   ],
   "shadow": {
     "lineId": "d6-l5",
-    "hint": "The dosage is one small tablet twice a day for five days."
+    "hint": "The dosage is one tablet twice a day."
   },
   "build": [
     {
@@ -192,7 +192,7 @@
       "promptYue": "你有藥物過敏。你點講？",
       "choices": [
         "The only extra symptom is a drug allergy.",
-        "The dosage is one small tablet twice a day for five days.",
+        "The dosage is one tablet twice a day.",
         "Yes, after meals is safer, and this box needs no prescription."
       ],
       "answer": 0,
@@ -238,7 +238,7 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "The dosage is one small tablet twice a day for five days.",
+        "line": "The dosage is one tablet twice a day.",
         "audio": "assets/audio/lines/d6-l5.mp3",
         "audioSlow": "assets/audio/lines/d6-l5-slow.mp3",
         "expect": "Can I take that one tablet after meals if it is safer?",
@@ -255,7 +255,7 @@
         "line": "Yes, after meals is safer, and this box needs no prescription.",
         "audio": "assets/audio/lines/d6-l7.mp3",
         "audioSlow": "assets/audio/lines/d6-l7-slow.mp3",
-        "expect": "I will call this pharmacy if that cough comes back after I rest.",
+        "expect": "I will call this pharmacy if that cough comes back.",
         "keywords": [
           "pharmacy",
           "cough"
@@ -300,7 +300,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "藥劑師講「The dosage is one small tablet twice a day for five days.」，dosage 係咩意思？",
+      "prompt": "藥劑師講「The dosage is one tablet twice a day.」，dosage 係咩意思？",
       "choices": [
         "藥片",
         "劑量",

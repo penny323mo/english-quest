@@ -3,7 +3,7 @@
   "unit": "J",
   "titleYue": "估值同免賠額",
   "titleEn": "A valuation and the deductible",
-  "canDoYue": "你識問估值、免賠額、索償人同承保人。",
+  "canDoYue": "你識喺交檔之前要一份新估值，問免賠額改咗仲算唔算數，同承保人星期一嘅收費。",
   "canDoEn": "Ask about a valuation, a deductible, the claimant, and the underwriter.",
   "minutes": 12,
   "hero": "assets/art/lessons/j23.webp",
@@ -113,32 +113,32 @@
     {
       "prompt": "Could you prepare a fresh valuation before the claimant sends the file to the office? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "問交檔之前可唔可以先做新估值",
+        "問今日天氣點",
+        "問鎖匙放喺邊"
       ],
       "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "explain": "索償人交檔之前，先做一份新估值。"
     },
     {
       "prompt": "Does this written valuation still stand if the deductible changed after the first shop visit? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "話已經退咗款",
+        "問免賠額改咗之後估值仲算唔算數",
+        "問宴會幾點開始"
       ],
-      "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "answer": 1,
+      "explain": "免賠額改咗，要問書面估值仲有效冇。"
     },
     {
-      "prompt": "Could you prepare a fresh valuation before the claimant sends the file to the office? 即係問緊咩？",
+      "prompt": "What is the fee if the underwriter asks for a second deductible on Monday morning? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "問鎖匙放喺邊",
+        "話相片唔收",
+        "問星期一第二個免賠額收費幾多"
       ],
-      "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "answer": 2,
+      "explain": "承保人星期一要第二個免賠額，問收費。"
     }
   ],
   "chunks": [

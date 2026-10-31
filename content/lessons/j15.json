@@ -87,11 +87,11 @@
       "id": "j15-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "We can make the ring half a size larger, and you collect it Saturday.",
-      "glossYue": "戒指可以改大半碼，星期六可以取。",
+      "text": "We can make the ring half a size larger, and you collect it, Saturday at four.",
+      "glossYue": "戒指可以改大半碼，星期六四點可以取。",
       "audio": "assets/audio/lines/j15-l4.mp3",
       "audioSlow": "assets/audio/lines/j15-l4-slow.mp3",
-      "say": "We can make the ring half a size larger, and you collect it Saturday.",
+      "say": "We can make the ring half a size larger, and you collect it, Saturday at four.",
       "hideGloss": true
     },
     {
@@ -185,7 +185,7 @@
     },
     {
       "pattern": "Yes we can make the ring half a size larger under the full ___.",
-      "example": "We can make the ring half a size larger, and you collect it Saturday.",
+      "example": "We can make the ring half a size larger, and you collect it, Saturday at four.",
       "glossYue": "保養可以改大半碼。",
       "answer": "warranty",
       "choices": [
@@ -256,7 +256,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "We can make the ring half a size larger, and you collect it Saturday.",
+        "line": "We can make the ring half a size larger, and you collect it, Saturday at four.",
         "audio": "assets/audio/lines/j15-l4.mp3",
         "audioSlow": "assets/audio/lines/j15-l4-slow.mp3",
         "expect": "How long does the warranty work take, and may I collect it on Saturday?",

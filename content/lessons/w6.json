@@ -33,44 +33,44 @@
       "id": "w6-l1",
       "speaker": "hugh",
       "speakerLabel": "Hugh",
-      "text": "Please tell me a little about the role you are looking for, and what you are doing currently?",
+      "text": "Please tell me about the role you are looking for, and what you are doing currently?",
       "glossYue": "請講下你想做嘅職位，同埋你而家做緊咩？",
       "audio": "assets/audio/lines/w6-l1.mp3",
       "audioSlow": "assets/audio/lines/w6-l1-slow.mp3",
-      "say": "Please tell me a little about the role you are looking for, and what you are doing currently?",
+      "say": "Please tell me about the role you are looking for, and what you are doing currently?",
       "hideGloss": false
     },
     {
       "id": "w6-l2",
       "speaker": "zuri",
       "speakerLabel": "Zuri",
-      "text": "I have three years of retail experience behind me, and I am bilingual in both Cantonese and English.",
+      "text": "I have three years of retail experience, and I am bilingual in Cantonese and English.",
       "glossYue": "我有三年零售經驗，又識廣東話同英文。",
       "audio": "assets/audio/lines/w6-l2.mp3",
       "audioSlow": "assets/audio/lines/w6-l2-slow.mp3",
-      "say": "I have three years of retail experience behind me, and I am bilingual in both Cantonese and English.",
+      "say": "I have three years of retail experience, and I am bilingual in Cantonese and English.",
       "hideGloss": true
     },
     {
       "id": "w6-l3",
       "speaker": "hugh",
       "speakerLabel": "Hugh",
-      "text": "Could you please give one clear example of a recent customer-facing task you enjoyed at the counter?",
+      "text": "Could you give one example of a recent customer-facing task you enjoyed at the counter?",
       "glossYue": "可唔可以講一個你喺櫃檯對客做過嘅例子？",
       "audio": "assets/audio/lines/w6-l3.mp3",
       "audioSlow": "assets/audio/lines/w6-l3-slow.mp3",
-      "say": "Could you please give one clear example of a recent customer-facing task you enjoyed at the counter?",
+      "say": "Could you give one example of a recent customer-facing task you enjoyed at the counter?",
       "hideGloss": true
     },
     {
       "id": "w6-l4",
       "speaker": "zuri",
       "speakerLabel": "Zuri",
-      "text": "Last year I handled a busy Saturday at the counter, because I achieved a calm queue before lunch.",
+      "text": "Last year I handled a busy Saturday at the counter, because I achieved a queue before lunch.",
       "glossYue": "舊年我喺櫃檯頂過一個忙嘅星期六，開飯之前將條隊處理到好定。",
       "audio": "assets/audio/lines/w6-l4.mp3",
       "audioSlow": "assets/audio/lines/w6-l4-slow.mp3",
-      "say": "Last year I handled a busy Saturday at the counter, because I achieved a calm queue before lunch.",
+      "say": "Last year I handled a busy Saturday at the counter, because I achieved a queue before lunch.",
       "hideGloss": true
     },
     {
@@ -88,22 +88,22 @@
       "id": "w6-l6",
       "speaker": "zuri",
       "speakerLabel": "Zuri",
-      "text": "Real teamwork helped me stay calm on that busy morning.",
+      "text": "Real teamwork helped me stay on that busy morning.",
       "glossYue": "嗰朝真係靠團隊，我先至保持冷靜，同隊友一齊疏導條隊。",
       "audio": "assets/audio/lines/w6-l6.mp3",
       "audioSlow": "assets/audio/lines/w6-l6-slow.mp3",
-      "say": "Real teamwork helped me stay calm on that busy morning.",
+      "say": "Real teamwork helped me stay on that busy morning.",
       "hideGloss": true
     },
     {
       "id": "w6-l7",
       "speaker": "hugh",
       "speakerLabel": "Hugh",
-      "text": "What kind of team would you like to join next month if we offer you the retail role here?",
+      "text": "What kind of team would you like to join next month if we offer you the retail role?",
       "glossYue": "如果我哋請你做零售，你想加入邊種團隊？",
       "audio": "assets/audio/lines/w6-l7.mp3",
       "audioSlow": "assets/audio/lines/w6-l7-slow.mp3",
-      "say": "What kind of team would you like to join next month if we offer you the retail role here?",
+      "say": "What kind of team would you like to join next month if we offer you the retail role?",
       "hideGloss": true
     },
     {
@@ -120,7 +120,7 @@
   ],
   "understand": [
     {
-      "prompt": "Please tell me a little about the role you are looking for, and what you are doing currently? 即係問緊咩？",
+      "prompt": "Please tell me about the role you are looking for, and what you are doing currently? 即係問緊咩？",
       "choices": [
         "問你想搵咩職位，同埋而家做緊咩",
         "問你想取消呢個職位",
@@ -130,7 +130,7 @@
       "explain": "looking for 係想搵，currently 係而家。"
     },
     {
-      "prompt": "Last year I handled a busy Saturday at the counter, because I achieved a calm queue before lunch. 呢句即係點？",
+      "prompt": "Last year I handled a busy Saturday at the counter, because I achieved a queue before lunch. 呢句即係點？",
       "choices": [
         "而家先至入職做櫃檯",
         "想轉去另一個櫃檯",
@@ -153,7 +153,7 @@
   "chunks": [
     {
       "pattern": "Please tell me a little about the role you are ___ , and what you are doing currently.",
-      "example": "Please tell me a little about the role you are looking for, and what you are doing currently?",
+      "example": "Please tell me about the role you are looking for, and what you are doing currently?",
       "glossYue": "你想⋯⋯嘅職位。",
       "answer": "looking for",
       "choices": [
@@ -164,7 +164,7 @@
     },
     {
       "pattern": "Last year I really ___ a busy Saturday shift, and I achieved a calm queue well before lunch.",
-      "example": "Last year I handled a busy Saturday at the counter, because I achieved a calm queue before lunch.",
+      "example": "Last year I handled a busy Saturday at the counter, because I achieved a queue before lunch.",
       "glossYue": "我⋯⋯一個忙更。",
       "answer": "handled",
       "choices": [
@@ -175,7 +175,7 @@
     },
     {
       "pattern": "My real ___ is staying calm with guests, and I can show that with a short story from the shop.",
-      "example": "Real teamwork helped me stay calm on that busy morning.",
+      "example": "Real teamwork helped me stay on that busy morning.",
       "glossYue": "我嘅⋯⋯係保持冷靜。",
       "answer": "strength",
       "choices": [
@@ -187,14 +187,14 @@
   ],
   "shadow": {
     "lineId": "w6-l4",
-    "hint": "Last year I handled a busy Saturday at the counter, because I achieved a calm queue before lunch."
+    "hint": "Last year I handled a busy Saturday at the counter, because I achieved a queue before lunch."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "面試官問你而家做緊咩。你點介紹經驗？",
       "choices": [
-        "I have three years of retail experience behind me, and I am bilingual in both Cantonese and English.",
+        "I have three years of retail experience, and I am bilingual in Cantonese and English.",
         "I would like a later shift at this counter.",
         "Please tell me more about the team on this shift."
       ],
@@ -225,10 +225,10 @@
       {
         "partner": "Hugh",
         "partnerId": "hugh",
-        "line": "Please tell me a little about the role you are looking for, and what you are doing currently?",
+        "line": "Please tell me about the role you are looking for, and what you are doing currently?",
         "audio": "assets/audio/lines/w6-l1.mp3",
         "audioSlow": "assets/audio/lines/w6-l1-slow.mp3",
-        "expect": "I have three years of retail experience behind me, and I am bilingual in both Cantonese and English.",
+        "expect": "I have three years of retail experience, and I am bilingual in Cantonese and English.",
         "keywords": [
           "experience",
           "bilingual"
@@ -239,10 +239,10 @@
       {
         "partner": "Hugh",
         "partnerId": "hugh",
-        "line": "Could you please give one clear example of a recent customer-facing task you enjoyed at the counter?",
+        "line": "Could you give one example of a recent customer-facing task you enjoyed at the counter?",
         "audio": "assets/audio/lines/w6-l3.mp3",
         "audioSlow": "assets/audio/lines/w6-l3-slow.mp3",
-        "expect": "Last year I handled a busy Saturday at the counter, because I achieved a calm queue before lunch.",
+        "expect": "Last year I handled a busy Saturday at the counter, because I achieved a queue before lunch.",
         "keywords": [
           "handled",
           "queue"
@@ -256,7 +256,7 @@
         "line": "That story sounds reliable. How did teamwork help you in the shop on that busy morning?",
         "audio": "assets/audio/lines/w6-l5.mp3",
         "audioSlow": "assets/audio/lines/w6-l5-slow.mp3",
-        "expect": "Real teamwork helped me stay calm on that busy morning.",
+        "expect": "Real teamwork helped me stay on that busy morning.",
         "keywords": [
           "teamwork",
           "calm"
@@ -291,7 +291,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「I have three years of retail experience behind me, and I am bilingual in both Cantonese and English.」，bilingual 係咩意思？",
+      "prompt": "你講「I have three years of retail experience, and I am bilingual in Cantonese and English.」，bilingual 係咩意思？",
       "choices": [
         "可靠嘅強項",
         "識兩種話，面試用得着",
@@ -301,7 +301,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "面試官講「Could you please give one clear example of a recent customer-facing task you enjoyed at the counter?」，customer-facing 係咩意思？",
+      "prompt": "面試官講「Could you give one example of a recent customer-facing task you enjoyed at the counter?」，customer-facing 係咩意思？",
       "choices": [
         "對客",
         "幕後唔係櫃檯",

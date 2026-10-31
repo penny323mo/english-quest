@@ -32,22 +32,22 @@
       "id": "r4-l1",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Are you enjoying the meal so far, and could we get you a cold refill now?",
-      "glossYue": "你食到而家開唔開心？我哋可唔可以而家幫你添杯凍嘅？",
+      "text": "Are you enjoying the meal, and could we get you a refill?",
+      "glossYue": "你食得開唔開心？我哋可唔可以幫你添一杯？",
       "audio": "assets/audio/lines/r4-l1.mp3",
       "audioSlow": "assets/audio/lines/r4-l1-slow.mp3",
-      "say": "Are you enjoying the meal so far, and could we get you a cold refill now?",
+      "say": "Are you enjoying the meal, and could we get you a refill?",
       "hideGloss": false
     },
     {
       "id": "r4-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could we get some still water, and one more clean napkin for this fork?",
+      "text": "Could we get some still water, and one more napkin for this fork?",
       "glossYue": "可唔可以嚟杯冇氣水，同埋多一張乾淨餐巾畀呢支叉？",
       "audio": "assets/audio/lines/r4-l2.mp3",
       "audioSlow": "assets/audio/lines/r4-l2-slow.mp3",
-      "say": "Could we get some still water, and one more clean napkin for this fork?",
+      "say": "Could we get some still water, and one more napkin for this fork?",
       "hideGloss": true
     },
     {
@@ -87,11 +87,11 @@
       "id": "r4-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "No dessert for me, but could we get the bill a little later tonight?",
-      "glossYue": "我唔要甜品，不過今晚可唔可以遲啲先埋單？",
+      "text": "No dessert for me, but could we get the bill later?",
+      "glossYue": "我唔要甜品，但可唔可以遲啲先要單？",
       "audio": "assets/audio/lines/r4-l6.mp3",
       "audioSlow": "assets/audio/lines/r4-l6-slow.mp3",
-      "say": "No dessert for me, but could we get the bill a little later tonight?",
+      "say": "No dessert for me, but could we get the bill later?",
       "hideGloss": true
     },
     {
@@ -241,7 +241,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Could we get some still water, and one more clean napkin for this fork?",
+        "line": "Could we get some still water, and one more napkin for this fork?",
         "audio": "assets/audio/lines/r4-l2.mp3",
         "audioSlow": "assets/audio/lines/r4-l2-slow.mp3",
         "expect": "Here is the still water, and the napkin is next to your knife.",
@@ -269,7 +269,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "No dessert for me, but could we get the bill a little later tonight?",
+        "line": "No dessert for me, but could we get the bill later?",
         "audio": "assets/audio/lines/r4-l6.mp3",
         "audioSlow": "assets/audio/lines/r4-l6-slow.mp3",
         "expect": "Of course, and would you like anything else before I leave the table?",
@@ -307,7 +307,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Could we get some still water, and one more clean napkin for this fork?」，係咩意思？",
+      "prompt": "客人講「Could we get some still water, and one more napkin for this fork?」，係咩意思？",
       "choices": [
         "餐巾",
         "有氣",
@@ -318,7 +318,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Are you enjoying the meal so far, and could we get you a cold refill now?」，係咩意思？",
+      "prompt": "客人講「Are you enjoying the meal, and could we get you a refill?」，係咩意思？",
       "choices": [
         "而家埋單",
         "再添一杯",

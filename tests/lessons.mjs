@@ -353,7 +353,7 @@ test("examples do not pad the ending unless the scene needs the time", () => {
   const byId = Object.fromEntries(lex.items.map((item) => [item.id, item]));
   assert.equal(byId["polish-noun"].example, "A little polish keeps the gold bright.");
   assert.equal(byId["polish-noun"].exampleYue, "少少擦亮劑可以保持金嘅光澤。");
-  assert.equal(byId["polish-noun"].examples[1].en, "This jewellery polish is for a gold chain.");
+  assert.equal(byId["polish-noun"].examples[1].en, "Use this jewellery polish on the gold chain.");
   assert.equal(byId["polish-noun"].collocations.includes("a soft polish"), false);
   assert.equal(byId["sheet-noun"].exampleYue, "一張紙。");
   assert.equal(byId["take-verb"].glossYue, "要");
@@ -1435,6 +1435,30 @@ test("shipped neighbours stay within two words", () => {
   for (let i = 1; i < order.length; i += 1) {
     const delta = Math.abs(mean(order[i - 1]) - mean(order[i]));
     assert.ok(delta <= 2, `${order[i - 1]} ${mean(order[i - 1]).toFixed(3)} ${order[i]} ${mean(order[i]).toFixed(3)} ${delta.toFixed(3)}`);
+  }
+});
+
+test("three-lesson windows do not fall by more than 2.5 and band means rise", () => {
+  const pathFile = JSON.parse(fs.readFileSync(path.join(root, "content/path.json"), "utf8"));
+  const order = pathFile.units.flatMap((unit) => unit.lessons);
+  const wordRe = /[A-Za-z']+/g;
+  const byId = Object.fromEntries(lessons.map((lesson) => [lesson.id, lesson]));
+  const mean = (id) => {
+    const lines = byId[id].dialogue.map((line) => line.text);
+    return lines.reduce((sum, text) => sum + (text.match(wordRe) || []).length, 0) / lines.length;
+  };
+  for (let i = 2; i < order.length; i += 1) {
+    const drop = mean(order[i - 2].id) - mean(order[i].id);
+    assert.ok(drop <= 2.5 + 1e-9, `${order[i - 2].id} ${mean(order[i - 2].id).toFixed(3)} -> ${order[i].id} ${mean(order[i].id).toFixed(3)} ${drop.toFixed(3)}`);
+  }
+  const rank = ["A1", "A1/A2", "A2", "A2/B1", "B1", "B1/B2", "B2"];
+  const bands = Object.fromEntries(rank.map((band) => [band, []]));
+  for (const entry of order) bands[entry.cefr].push(mean(entry.id));
+  let prev = -1;
+  for (const band of rank) {
+    const value = bands[band].reduce((sum, n) => sum + n, 0) / bands[band].length;
+    assert.ok(value > prev, `${band} ${value.toFixed(3)} <= ${prev.toFixed(3)}`);
+    prev = value;
   }
 });
 

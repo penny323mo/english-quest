@@ -15,9 +15,10 @@ import {
   subscribeAudio,
 } from "./media";
 import { quizRecapLine } from "./persist.mjs";
+import { karaokeSpans, stressSplit } from "./stress.mjs";
 import { playSfx } from "./sfx";
 import { useStore } from "./store";
-import type { BuildOrder, Lesson, QuizItem } from "./types";
+import type { BuildOrder, Lesson, LexItem, QuizItem } from "./types";
 import { BEAT_LABELS } from "./beats";
 import { seededOrder } from "./choice-order.js";
 
@@ -756,6 +757,40 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
   );
 }
 
+function lexForWord(word: string): LexItem | undefined {
+  const key = word.toLowerCase();
+  return Object.values(lexById).find((item) => item.lemma.toLowerCase() === key);
+}
+
+function StressChips({ item }: { item: LexItem }) {
+  const parts = stressSplit(item.syllables, item.stress);
+  return (
+    <span className="stress-word" lang="en">
+      {parts.map((part, index) => (
+        <span key={`${part.text}-${index}`}>
+          {index > 0 ? "·" : ""}
+          <b className={part.stressed ? "stress" : ""}>{part.stressed ? part.text.toUpperCase() : part.text}</b>
+        </span>
+      ))}
+    </span>
+  );
+}
+
+function KaraokeLine({ text, active }: { text: string; active: number }) {
+  const parts = text.split(/([A-Za-z']+)/);
+  let wordIndex = 0;
+  return (
+    <p className="line" lang="en">
+      {parts.map((part, index) => {
+        if (!/^[A-Za-z']+$/.test(part)) return <span key={index}>{part}</span>;
+        const at = wordIndex;
+        wordIndex += 1;
+        return <span key={index} className={at === active ? "karaoke-on" : ""}>{part}</span>;
+      })}
+    </p>
+  );
+}
+
 function SpeakBox({
   expect,
   keywords,
@@ -777,6 +812,35 @@ function SpeakBox({
   const [micError, setMicError] = useState(false);
   const recorderRef = useRef<MediaRecorder | null>(null);
   const speechRef = useRef<{ stop: () => void } | null>(null);
+  const [karaAt, setKaraAt] = useState(-1);
+  const karaRaf = useRef(0);
+
+  useEffect(() => () => cancelAnimationFrame(karaRaf.current), []);
+
+  function playKaraoke(path: string) {
+    cancelAnimationFrame(karaRaf.current);
+    setKaraAt(-1);
+    const node = playAsset(path);
+    const run = () => {
+      const duration = node.duration;
+      if (!duration || !Number.isFinite(duration)) return;
+      const spans = karaokeSpans(expect, duration);
+      const started = performance.now();
+      const tick = () => {
+        const t = (performance.now() - started) / 1000;
+        let at = -1;
+        for (let i = 0; i < spans.length; i += 1) {
+          if (t >= spans[i].start && t < spans[i].end) at = i;
+        }
+        setKaraAt(at);
+        if (t < duration) karaRaf.current = requestAnimationFrame(tick);
+        else setKaraAt(-1);
+      };
+      karaRaf.current = requestAnimationFrame(tick);
+    };
+    if (node.readyState >= 1 && Number.isFinite(node.duration)) run();
+    else node.addEventListener("loadedmetadata", run, { once: true });
+  }
 
   useEffect(() => {
     return () => {
@@ -863,7 +927,19 @@ function SpeakBox({
   return (
     <div className="stack">
       <p className="who">你可以講</p>
-      <p className="line" lang="en">{expect}</p>
+      <KaraokeLine text={expect} active={karaAt} />
+      <div className="stress-row">
+        {keywords.map((word) => {
+          const item = lexForWord(word);
+          if (!item) return null;
+          return (
+            <span key={item.id} className="stress-pair">
+              <StressChips item={item} />
+              <span className="ipa">{item.ipa}</span>
+            </span>
+          );
+        })}
+      </div>
       {mode === "record" && (
         <p className="note">錄一次就得。撳「聽我」，再撳「聽模範」，輪流聽。部機唔使識即時辨認。</p>
       )}
@@ -912,6 +988,7 @@ function SpeakBox({
         )}
         <button className="btn quiet" type="button" onClick={() => playAsset(modelAudio)}>聽模範</button>
         <button className="btn ghost" type="button" onClick={() => playAsset(modelSlow)}>慢速模範</button>
+        <button className="btn ghost" type="button" onClick={() => playKaraoke(modelSlow)}>慢速逐字</button>
       </div>
       {micError && <p className="note">咪未開。你可以聽模範，然後繼續。呢課唔會卡住。</p>}
       <p className="fine">{tip}</p>

@@ -3,7 +3,7 @@
   "unit": "J",
   "titleYue": "印記、爪托同金絲",
   "titleEn": "A hallmark, a prong, and filigree",
-  "canDoYue": "你識問印記、爪托、銠同金絲。",
+  "canDoYue": "你識問金爪托嘅印記、軟銠可唔可以保金絲光亮，同星期五晚嘅報價。",
   "canDoEn": "Ask about a hallmark, a gold prong, rhodium, and filigree.",
   "minutes": 12,
   "hero": "assets/art/lessons/j24.webp",
@@ -113,32 +113,32 @@
     {
       "prompt": "Could you check the hallmark on this gold prong before we leave the shop at noon? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "問中午走之前可唔可以檢查金爪托嘅印記",
+        "問今日天氣點",
+        "問鎖匙放喺邊"
       ],
       "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "explain": "走之前檢查金爪托上面嘅印記。"
     },
     {
       "prompt": "Would a soft rhodium finish keep the filigree bright if I wear it each Friday? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "話已經退咗款",
+        "問每個星期五戴，軟銠可唔可以保持金絲光亮",
+        "問房號幾多"
       ],
-      "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "answer": 1,
+      "explain": "每星期五戴，問軟銠面可唔可以保金絲光亮。"
     },
     {
-      "prompt": "Could you check the hallmark on this gold prong before we leave the shop at noon? 即係問緊咩？",
+      "prompt": "Is the filigree quote lower if I take that rhodium pair home this Friday night? 即係問緊咩？",
       "choices": [
-        "用課入面嗰個意思",
-        "問今日天氣",
-        "問鎖匙喺邊"
+        "問鎖匙放喺邊",
+        "話報價已經包括運費",
+        "問星期五晚帶銠貨返去，金絲報價會唔會低啲"
       ],
-      "answer": 0,
-      "explain": "跟住呢句嘅意思。"
+      "answer": 2,
+      "explain": "星期五晚帶走銠貨，問金絲報價會唔會低。"
     }
   ],
   "chunks": [

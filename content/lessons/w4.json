@@ -31,55 +31,55 @@
       "id": "w4-l1",
       "speaker": "ada",
       "speakerLabel": "Ada",
-      "text": "Good morning Tom. How was your weekend, and was the weather nice and mild on Saturday?",
-      "glossYue": "早晨 Tom。你週末點呀，星期六天氣係咪好？",
+      "text": "Good morning Tom. How was your weekend, and was the weather mild?",
+      "glossYue": "早晨 Tom。你個週末點，天氣暖和下？",
       "audio": "assets/audio/lines/w4-l1.mp3",
       "audioSlow": "assets/audio/lines/w4-l1-slow.mp3",
-      "say": "Good morning Tom. How was your weekend, and was the weather nice and mild on Saturday?",
+      "say": "Good morning Tom. How was your weekend, and was the weather mild?",
       "hideGloss": false
     },
     {
       "id": "w4-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Not bad at all. The weekend was busy with my sister in a cafe.",
-      "glossYue": "幾好。週末好忙，我同家姐去咗咖啡店。",
+      "text": "Not bad. The weekend was busy with my sister.",
+      "glossYue": "幾好。個週末同家姐好忙。",
       "audio": "assets/audio/lines/w4-l2.mp3",
       "audioSlow": "assets/audio/lines/w4-l2-slow.mp3",
-      "say": "Not bad at all. The weekend was busy with my sister in a cafe.",
+      "say": "Not bad. The weekend was busy with my sister.",
       "hideGloss": true
     },
     {
       "id": "w4-l3",
       "speaker": "ada",
       "speakerLabel": "Ada",
-      "text": "Same here. My commute was long, but the coffee on the way was warm and good.",
-      "glossYue": "我都係。通勤好長，但係路途嗰杯咖啡暖暖地好好飲。",
+      "text": "Same here. My commute was long, but the coffee was good.",
+      "glossYue": "我都係。上班路好長，但咖啡唔錯。",
       "audio": "assets/audio/lines/w4-l3.mp3",
       "audioSlow": "assets/audio/lines/w4-l3-slow.mp3",
-      "say": "Same here. My commute was long, but the coffee on the way was warm and good.",
+      "say": "Same here. My commute was long, but the coffee was good.",
       "hideGloss": true
     },
     {
       "id": "w4-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "By the way, are you ready for the 10 o'clock meeting with the whole sales team?",
+      "text": "By the way, are you ready for the 10 o'clock meeting with the sales team?",
       "glossYue": "順便問下，十點同團隊嗰個會你準備好未？",
       "audio": "assets/audio/lines/w4-l4.mp3",
       "audioSlow": "assets/audio/lines/w4-l4-slow.mp3",
-      "say": "By the way, are you ready for the 10 o'clock meeting with the whole sales team?",
+      "say": "By the way, are you ready for the 10 o'clock meeting with the sales team?",
       "hideGloss": false
     },
     {
       "id": "w4-l5",
       "speaker": "ada",
       "speakerLabel": "Ada",
-      "text": "I am ready. Shall we go into the room before the team sits down?",
+      "text": "I am ready. Shall we go into the room before the team sits?",
       "glossYue": "我準備好。我哋入房等團隊坐低？",
       "audio": "assets/audio/lines/w4-l5.mp3",
       "audioSlow": "assets/audio/lines/w4-l5-slow.mp3",
-      "say": "I am ready. Shall we go into the room before the team sits down?",
+      "say": "I am ready. Shall we go into the room before the team sits?",
       "hideGloss": true
     },
     {
@@ -118,7 +118,7 @@
   ],
   "understand": [
     {
-      "prompt": "Good morning Tom. How was your weekend, and was the weather nice and mild on Saturday? 即係問緊咩？",
+      "prompt": "Good morning Tom. How was your weekend, and was the weather mild? 即係問緊咩？",
       "choices": [
         "問週末同星期六天氣",
         "問會議幾點開始",
@@ -128,7 +128,7 @@
       "explain": "How was your weekend 係問週末點。"
     },
     {
-      "prompt": "Not bad at all. The weekend was busy with my sister in a cafe. 呢句即係點？",
+      "prompt": "Not bad. The weekend was busy with my sister. 呢句即係點？",
       "choices": [
         "週末冇出過門",
         "星期六成日落雨",
@@ -138,7 +138,7 @@
       "explain": "Not bad 係幾好，busy 係忙。"
     },
     {
-      "prompt": "By the way, are you ready for the 10 o'clock meeting with the whole sales team? 即係問緊咩？",
+      "prompt": "By the way, are you ready for the 10 o'clock meeting with the sales team? 即係問緊咩？",
       "choices": [
         "問週末去邊度",
         "問十點個會準備好未",
@@ -151,7 +151,7 @@
   "chunks": [
     {
       "pattern": "Not bad at all. The weekend was ___ with my sister in a cafe.",
-      "example": "Not bad at all. The weekend was busy with my sister in a cafe.",
+      "example": "Not bad. The weekend was busy with my sister.",
       "glossYue": "週末好⋯⋯。",
       "answer": "busy",
       "choices": [
@@ -162,7 +162,7 @@
     },
     {
       "pattern": "By the way, are you ___ for the 10 o'clock meeting with the whole sales team?",
-      "example": "By the way, are you ready for the 10 o'clock meeting with the whole sales team?",
+      "example": "By the way, are you ready for the 10 o'clock meeting with the sales team?",
       "glossYue": "你⋯⋯未？",
       "answer": "ready",
       "choices": [
@@ -185,14 +185,14 @@
   ],
   "shadow": {
     "lineId": "w4-l2",
-    "hint": "Not bad at all. The weekend was busy with my sister in a cafe."
+    "hint": "Not bad. The weekend was busy with my sister."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "同事問你週末點。你點先答？",
       "choices": [
-        "Not bad at all. The weekend was busy with my sister in a cafe.",
+        "Not bad. The weekend was busy with my sister.",
         "The balance is on the screen.",
         "A window seat is free."
       ],
@@ -223,10 +223,10 @@
       {
         "partner": "Ada",
         "partnerId": "ada",
-        "line": "Good morning Tom. How was your weekend, and was the weather nice and mild on Saturday?",
+        "line": "Good morning Tom. How was your weekend, and was the weather mild?",
         "audio": "assets/audio/lines/w4-l1.mp3",
         "audioSlow": "assets/audio/lines/w4-l1-slow.mp3",
-        "expect": "Not bad at all. The weekend was busy with my sister in a cafe.",
+        "expect": "Not bad. The weekend was busy with my sister.",
         "keywords": [
           "weekend",
           "busy"
@@ -237,10 +237,10 @@
       {
         "partner": "Ada",
         "partnerId": "ada",
-        "line": "Same here. My commute was long, but the coffee on the way was warm and good.",
+        "line": "Same here. My commute was long, but the coffee was good.",
         "audio": "assets/audio/lines/w4-l3.mp3",
         "audioSlow": "assets/audio/lines/w4-l3-slow.mp3",
-        "expect": "By the way, are you ready for the 10 o'clock meeting with the whole sales team?",
+        "expect": "By the way, are you ready for the 10 o'clock meeting with the sales team?",
         "keywords": [
           "ready",
           "meeting"
@@ -251,7 +251,7 @@
       {
         "partner": "Ada",
         "partnerId": "ada",
-        "line": "I am ready. Shall we go into the room before the team sits down?",
+        "line": "I am ready. Shall we go into the room before the team sits?",
         "audio": "assets/audio/lines/w4-l5.mp3",
         "audioSlow": "assets/audio/lines/w4-l5-slow.mp3",
         "expect": "Yes, I think so. We can catch up later after the notes are on the table.",
@@ -289,7 +289,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "同事講「Same here. My commute was long, but the coffee on the way was warm and good.」，commute 係咩意思？",
+      "prompt": "同事講「Same here. My commute was long, but the coffee was good.」，commute 係咩意思？",
       "choices": [
         "會議",
         "天氣",

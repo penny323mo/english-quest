@@ -31,11 +31,11 @@
       "id": "r7-l1",
       "speaker": "ruth",
       "speakerLabel": "Ruth",
-      "text": "Excuse me, Suki. I ordered the soup, but the bowl arrived cold at our table.",
+      "text": "Excuse me, Suki. I ordered the soup, but the bowl arrived cold at the table.",
       "glossYue": "唔好意思，Suki。我叫咗湯，但係送到檯嘅碗湯係凍嘅。",
       "audio": "assets/audio/lines/r7-l1.mp3",
       "audioSlow": "assets/audio/lines/r7-l1-slow.mp3",
-      "say": "Excuse me, Suki. I ordered the soup, but the bowl arrived cold at our table.",
+      "say": "Excuse me, Suki. I ordered the soup, but the bowl arrived cold at the table.",
       "hideGloss": false
     },
     {
@@ -53,11 +53,11 @@
       "id": "r7-l3",
       "speaker": "ruth",
       "speakerLabel": "Ruth",
-      "text": "The side dish looks undercooked after the long wait, because the meal came much too late.",
+      "text": "The side dish looks undercooked after the wait, because the meal came too late.",
       "glossYue": "配菜睇落未煮熟，因為等得太耐，個餐出得太遲。",
       "audio": "assets/audio/lines/r7-l3.mp3",
       "audioSlow": "assets/audio/lines/r7-l3-slow.mp3",
-      "say": "The side dish looks undercooked after the long wait, because the meal came much too late.",
+      "say": "The side dish looks undercooked after the wait, because the meal came too late.",
       "hideGloss": true
     },
     {
@@ -75,11 +75,11 @@
       "id": "r7-l5",
       "speaker": "ruth",
       "speakerLabel": "Ruth",
-      "text": "Could you please bring a complimentary warm dessert for both of us after you fix that plate?",
+      "text": "Could you bring a dessert for us after you fix that plate?",
       "glossYue": "換完之後，可唔可以畀我哋兩份免費甜品？",
       "audio": "assets/audio/lines/r7-l5.mp3",
       "audioSlow": "assets/audio/lines/r7-l5-slow.mp3",
-      "say": "Could you please bring a complimentary warm dessert for both of us after you fix that plate?",
+      "say": "Could you bring a dessert for us after you fix that plate?",
       "hideGloss": false
     },
     {
@@ -118,7 +118,7 @@
   ],
   "understand": [
     {
-      "prompt": "Excuse me, Suki. I ordered the soup, but the bowl arrived cold at our table. 呢句即係點？",
+      "prompt": "Excuse me, Suki. I ordered the soup, but the bowl arrived cold at the table. 呢句即係點？",
       "choices": [
         "點咗湯，但係送到嚟係凍",
         "想加一杯酒",
@@ -128,7 +128,7 @@
       "explain": "ordered 係點咗，cold 係凍。"
     },
     {
-      "prompt": "The side dish looks undercooked after the long wait, because the meal came much too late. 呢句即係點？",
+      "prompt": "The side dish looks undercooked after the wait, because the meal came too late. 呢句即係點？",
       "choices": [
         "個湯好熱",
         "想叫經理埋單",
@@ -138,7 +138,7 @@
       "explain": "undercooked 係未煮熟，long wait 係等好耐。"
     },
     {
-      "prompt": "Could you please bring a complimentary warm dessert for both of us after you fix that plate? 即係問緊咩？",
+      "prompt": "Could you bring a dessert for us after you fix that plate? 即係問緊咩？",
       "choices": [
         "問湯幾多錢",
         "問換完可唔可以有免費甜品",
@@ -151,7 +151,7 @@
   "chunks": [
     {
       "pattern": "Excuse me please, Ana. I ___ the soup, but the bowl arrived cold at our little table.",
-      "example": "Excuse me, Suki. I ordered the soup, but the bowl arrived cold at our table.",
+      "example": "Excuse me, Suki. I ordered the soup, but the bowl arrived cold at the table.",
       "glossYue": "我⋯⋯咗湯。",
       "answer": "ordered",
       "choices": [
@@ -185,14 +185,14 @@
   ],
   "shadow": {
     "lineId": "r7-l5",
-    "hint": "Could you please bring a complimentary warm dessert for both of us after you fix that plate?"
+    "hint": "Could you bring a dessert for us after you fix that plate?"
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "湯係凍嘅。你點講？",
       "choices": [
-        "Excuse me, Suki. I ordered the soup, but the bowl arrived cold at our table.",
+        "Excuse me, Suki. I ordered the soup, but the bowl arrived cold at the table.",
         "Shall we go into the room?",
         "The flight has been cancelled."
       ],
@@ -226,7 +226,7 @@
         "line": "I understand the problem with the cold soup.",
         "audio": "assets/audio/lines/r7-l2.mp3",
         "audioSlow": "assets/audio/lines/r7-l2-slow.mp3",
-        "expect": "The side dish looks undercooked after the long wait, because the meal came much too late.",
+        "expect": "The side dish looks undercooked after the wait, because the meal came too late.",
         "keywords": [
           "undercooked",
           "wait"
@@ -240,7 +240,7 @@
         "line": "The manager can replace the dish with a fresh hot plate if that suits you.",
         "audio": "assets/audio/lines/r7-l4.mp3",
         "audioSlow": "assets/audio/lines/r7-l4-slow.mp3",
-        "expect": "Could you please bring a complimentary warm dessert for both of us after you fix that plate?",
+        "expect": "Could you bring a dessert for us after you fix that plate?",
         "keywords": [
           "complimentary",
           "dessert"
@@ -289,7 +289,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「The side dish looks undercooked after the long wait, because the meal came much too late.」，undercooked 係咩意思？",
+      "prompt": "你講「The side dish looks undercooked after the wait, because the meal came too late.」，undercooked 係咩意思？",
       "choices": [
         "免費",
         "太鹹",
