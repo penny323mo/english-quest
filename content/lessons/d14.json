@@ -1,0 +1,355 @@
+{
+  "id": "D14",
+  "unit": "D",
+  "titleYue": "郵局攞包裹",
+  "titleEn": "Collecting a parcel at the post office",
+  "canDoYue": "你識報追蹤號碼、出示身份證、畀海關費、話個箱有損壞，同埋簽名收件。",
+  "canDoEn": "Give the tracking number, show your identity card, pay the customs fee, note the damage on the box, and sign for it.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/d14.webp",
+  "cast": [
+    "tom",
+    "cole"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "damage-noun",
+    "box-noun",
+    "sign-verb"
+  ],
+  "topicTags": [
+    "損壞",
+    "紙箱",
+    "簽名",
+    "包裹"
+  ],
+  "next": "T7",
+  "sound": {
+    "ipa": "/aɪ/",
+    "title": "sign 入面嗰個音",
+    "note": "sign 有 /aɪ/。damage 有 /æ/。",
+    "pairs": [
+      {
+        "a": "sign-verb",
+        "b": "signature-noun"
+      },
+      {
+        "a": "damage-noun",
+        "b": "box-noun"
+      }
+    ],
+    "drill": [
+      "sign-verb",
+      "signature-noun",
+      "damage-noun",
+      "box-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "d14-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "My tracking number is HK four eight two. Can I collect this parcel?",
+      "glossYue": "我嘅追蹤號碼係 HK 四八二。可唔可以攞呢個包裹？",
+      "audio": "assets/audio/lines/d14-l1.mp3",
+      "audioSlow": "assets/audio/lines/d14-l1-slow.mp3",
+      "say": "My tracking number is HK four eight two. Can I collect this parcel?",
+      "hideGloss": false
+    },
+    {
+      "id": "d14-l2",
+      "speaker": "cole",
+      "speakerLabel": "Cole",
+      "text": "Yes. That tracking number matches the parcel. Please show your identity card.",
+      "glossYue": "可以。追蹤號碼同包裹吻合。請出示身份證。",
+      "audio": "assets/audio/lines/d14-l2.mp3",
+      "audioSlow": "assets/audio/lines/d14-l2-slow.mp3",
+      "say": "Yes. That tracking number matches the parcel. Please show your identity card.",
+      "hideGloss": false
+    },
+    {
+      "id": "d14-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Here is my identity card. Do I also pay a customs fee?",
+      "glossYue": "呢張係我身份證。使唔使再畀海關費用？",
+      "audio": "assets/audio/lines/d14-l3.mp3",
+      "audioSlow": "assets/audio/lines/d14-l3-slow.mp3",
+      "say": "Here is my identity card. Do I also pay a customs fee?",
+      "hideGloss": false
+    },
+    {
+      "id": "d14-l4",
+      "speaker": "cole",
+      "speakerLabel": "Cole",
+      "text": "Yes. The customs fee is forty dollars, and you can pay it here.",
+      "glossYue": "使。海關費用係四十蚊，你可以喺度畀。",
+      "audio": "assets/audio/lines/d14-l4.mp3",
+      "audioSlow": "assets/audio/lines/d14-l4-slow.mp3",
+      "say": "Yes. The customs fee is forty dollars, and you can pay it here.",
+      "hideGloss": true
+    },
+    {
+      "id": "d14-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "This corner of the box looks damaged. Can you note the damage?",
+      "glossYue": "個箱呢隻角睇落損壞咗。可唔可以記低損壞？",
+      "audio": "assets/audio/lines/d14-l5.mp3",
+      "audioSlow": "assets/audio/lines/d14-l5-slow.mp3",
+      "say": "This corner of the box looks damaged. Can you note the damage?",
+      "hideGloss": true
+    },
+    {
+      "id": "d14-l6",
+      "speaker": "cole",
+      "speakerLabel": "Cole",
+      "text": "Yes. I will note that damage, and the box is split.",
+      "glossYue": "可以。我會記低損壞，個箱裂開咗。",
+      "audio": "assets/audio/lines/d14-l6.mp3",
+      "audioSlow": "assets/audio/lines/d14-l6-slow.mp3",
+      "say": "Yes. I will note that damage, and the box is split.",
+      "hideGloss": true
+    },
+    {
+      "id": "d14-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Where do I sign my name for the box before I leave?",
+      "glossYue": "我走之前喺邊度簽名收呢個箱？",
+      "audio": "assets/audio/lines/d14-l7.mp3",
+      "audioSlow": "assets/audio/lines/d14-l7-slow.mp3",
+      "say": "Where do I sign my name for the box before I leave?",
+      "hideGloss": true
+    },
+    {
+      "id": "d14-l8",
+      "speaker": "cole",
+      "speakerLabel": "Cole",
+      "text": "Please sign on this line, and then the box is yours.",
+      "glossYue": "請喺呢行簽名，之後個箱就係你嘅。",
+      "audio": "assets/audio/lines/d14-l8.mp3",
+      "audioSlow": "assets/audio/lines/d14-l8-slow.mp3",
+      "say": "Please sign on this line, and then the box is yours.",
+      "hideGloss": true
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你同 Cole 傾呢件事。等對方講完先答。",
+    "turns": [
+      {
+        "partner": "Cole",
+        "partnerId": "cole",
+        "line": "Yes. That tracking number matches the parcel. Please show your identity card.",
+        "audio": "assets/audio/lines/d14-l2.mp3",
+        "audioSlow": "assets/audio/lines/d14-l2-slow.mp3",
+        "expect": "Here is my identity card. Do I also pay a customs fee?",
+        "keywords": [
+          "identity",
+          "customs"
+        ],
+        "modelAudio": "assets/audio/lines/d14-l3.mp3",
+        "modelSlow": "assets/audio/lines/d14-l3-slow.mp3"
+      },
+      {
+        "partner": "Cole",
+        "partnerId": "cole",
+        "line": "Yes. The customs fee is forty dollars, and you can pay it here.",
+        "audio": "assets/audio/lines/d14-l4.mp3",
+        "audioSlow": "assets/audio/lines/d14-l4-slow.mp3",
+        "expect": "This corner of the box looks damaged. Can you note the damage?",
+        "keywords": [
+          "box",
+          "damage"
+        ],
+        "modelAudio": "assets/audio/lines/d14-l5.mp3",
+        "modelSlow": "assets/audio/lines/d14-l5-slow.mp3"
+      },
+      {
+        "partner": "Cole",
+        "partnerId": "cole",
+        "line": "Yes. I will note that damage, and the box is split.",
+        "audio": "assets/audio/lines/d14-l6.mp3",
+        "audioSlow": "assets/audio/lines/d14-l6-slow.mp3",
+        "expect": "Where do I sign my name for the box before I leave?",
+        "keywords": [
+          "sign",
+          "box"
+        ],
+        "modelAudio": "assets/audio/lines/d14-l7.mp3",
+        "modelSlow": "assets/audio/lines/d14-l7-slow.mp3"
+      }
+    ]
+  },
+  "understand": [
+    {
+      "prompt": "My tracking number is HK four eight two. Can I collect this parcel? 呢句即係點？",
+      "choices": [
+        "關於簽名",
+        "講緊包裹",
+        "唔係損壞"
+      ],
+      "answer": 1,
+      "explain": "包裹。"
+    },
+    {
+      "prompt": "This corner of the box looks damaged. Can you note the damage? 呢句即係點？",
+      "choices": [
+        "講緊損壞",
+        "關於包裹",
+        "唔係簽名"
+      ],
+      "answer": 0,
+      "explain": "損壞。"
+    },
+    {
+      "prompt": "Where do I sign my name for the box before I leave? 呢句即係點？",
+      "choices": [
+        "關於包裹",
+        "關於損壞",
+        "講緊簽名"
+      ],
+      "answer": 2,
+      "explain": "簽名。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Yes. That tracking number matches the ___. Please show your identity card.",
+      "example": "Yes. That tracking number matches the parcel. Please show your identity card.",
+      "glossYue": "可以。追蹤號碼同包裹吻合。請出示身份證。",
+      "answer": "parcel",
+      "choices": [
+        "parcel",
+        "box",
+        "card"
+      ]
+    },
+    {
+      "pattern": "Yes. The customs ___ is forty dollars, and you can pay it here.",
+      "example": "Yes. The customs fee is forty dollars, and you can pay it here.",
+      "glossYue": "使。海關費用係四十蚊，你可以喺度畀。",
+      "answer": "fee",
+      "choices": [
+        "fee",
+        "box",
+        "card"
+      ]
+    },
+    {
+      "pattern": "This corner of the box looks damaged. Can you note the ___?",
+      "example": "This corner of the box looks damaged. Can you note the damage?",
+      "glossYue": "個箱呢隻角睇落損壞咗。可唔可以記低損壞？",
+      "answer": "damage",
+      "choices": [
+        "damage",
+        "box",
+        "parcel"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想用呢課嘅講法。你點講？",
+      "choices": [
+        "My tracking number is HK four eight two. Can I collect this parcel?",
+        "Here is my identity card. Do I also pay a customs fee?",
+        "This corner of the box looks damaged. Can you note the damage?"
+      ],
+      "answer": 1,
+      "explain": "用呢句。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Please",
+        "sign",
+        "on",
+        "this",
+        "line,",
+        "and",
+        "then",
+        "the",
+        "box",
+        "is",
+        "yours."
+      ],
+      "answer": [
+        "Please",
+        "sign",
+        "on",
+        "this",
+        "line,",
+        "and",
+        "then",
+        "the",
+        "box",
+        "is",
+        "yours."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "box",
+        "damage",
+        "sign"
+      ],
+      "answer": 1,
+      "lemma": "damage-noun"
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "sign",
+        "damage",
+        "box"
+      ],
+      "answer": 0,
+      "lemma": "sign-verb"
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "簽名",
+        "包裹",
+        "損壞"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "損壞",
+        "紙箱",
+        "簽名"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word fits this lesson?",
+      "choices": [
+        "damage",
+        "box",
+        "sign"
+      ],
+      "answer": 0,
+      "explain": "損壞。"
+    }
+  ],
+  "shadow": {
+    "lineId": "d14-l1",
+    "hint": "My tracking number is HK four eight two. Can I collect this parcel?"
+  }
+}

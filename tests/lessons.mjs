@@ -9,7 +9,7 @@ import { seededOrder } from "../web/src/choice-order.js";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), "utf8"));
 const ids = new Set(lex.items.map((item) => item.id));
-const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "t1", "t2", "t3", "t4", "t5", "t6", "r1", "r2", "r3", "r4", "r5", "w1", "d1", "d2", "t7", "w2", "w3", "d3", "j11", "j12", "t8", "w4", "r6", "w5", "f5", "f6", "d4", "d5", "r7", "w6", "t9", "d6", "r8", "j13", "r9", "w7", "t10", "d7", "w8", "j14", "r10", "t11", "d8", "j15", "t12", "d9", "r11", "w9", "j16", "t13", "d10", "j17", "r12", "w10", "t14", "j18", "r13", "d11", "d12", "t15", "w11", "r14", "j19", "t16", "t17", "j20", "d13", "r15", "w12", "t18"];
+const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "t1", "t2", "t3", "t4", "t5", "t6", "r1", "r2", "r3", "r4", "r5", "w1", "d1", "d2", "t7", "w2", "w3", "d3", "j11", "j12", "t8", "w4", "r6", "w5", "f5", "f6", "d4", "d5", "r7", "w6", "t9", "d6", "r8", "j13", "r9", "w7", "t10", "d7", "w8", "j14", "r10", "t11", "d8", "j15", "t12", "d9", "r11", "w9", "j16", "t13", "d10", "j17", "r12", "w10", "t14", "j18", "r13", "d11", "d12", "t15", "w11", "r14", "j19", "t16", "t17", "j20", "d13", "r15", "w12", "t18", "j21", "d14", "r16"];
 const lessons = shipped.map((id) =>
   JSON.parse(fs.readFileSync(path.join(root, "content/lessons", `${id}.json`), "utf8")),
 );
@@ -23,7 +23,7 @@ function exists(rel) {
 }
 
 test("sixty-six lessons each carry the 12-beat payload", () => {
-  assert.equal(lessons.length, 84);
+  assert.equal(lessons.length, 87);
   for (const lesson of lessons) {
     for (const key of ["hero", "canDoYue", "canDoEn", "dialogue", "understand", "chunks", "shadow", "build", "roleplay", "quiz", "sound", "next"]) {
       assert.ok(key in lesson, `${lesson.id} ${key}`);
@@ -195,7 +195,7 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
     );
   }
   const shippedOnPath = flatPath.filter((entry) => !entry.soon).map((entry) => entry.id);
-  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T17", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "R13", "J6", "J7", "J15", "J18", "J20", "T5", "T12", "T15", "T13", "R12", "R14", "R15", "R5", "R11", "W1", "D1", "D12", "D2", "T7", "W4", "R8", "D10", "W7", "J8", "D9", "D11", "D13", "J9", "J10", "J19", "J16", "J17", "T6", "R6", "J12", "R7", "T8", "T16", "T18", "W2", "W3", "W9", "W8", "W11", "W12", "D3", "D8", "T10", "T14", "W5", "W10", "J14", "J11", "W6", "T9", "J13"]);
+  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T17", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "R13", "J6", "J7", "J15", "J18", "J20", "T5", "T12", "T15", "T13", "R12", "R14", "R15", "R16", "R5", "R11", "W1", "D1", "D12", "D2", "D14", "T7", "W4", "R8", "D10", "W7", "J8", "D9", "D11", "D13", "J9", "J10", "J19", "J16", "J21", "J17", "T6", "R6", "J12", "R7", "T8", "T16", "T18", "W2", "W3", "W9", "W8", "W11", "W12", "D3", "D8", "T10", "T14", "W5", "W10", "J14", "J11", "W6", "T9", "J13"]);
   assert.equal(flatPath.find((entry) => entry.id === "J8").cefr, "B1");
   const said = (lesson) => lesson.dialogue.map((line) => line.text).join("\n");
   assert.ok(j4.dialogue.length >= 6 && j4.dialogue.length <= 10);
@@ -299,7 +299,8 @@ test("round 26 spoken goals, tray card, and spelled model", () => {
   const d2 = lessons.find((lesson) => lesson.id === "D2");
   const t7 = lessons.find((lesson) => lesson.id === "T7");
   const d3 = lessons.find((lesson) => lesson.id === "D3");
-  assert.equal(d2.next, "T7");
+  assert.equal(d2.next, "D14");
+  assert.equal(lessons.find((lesson) => lesson.id === "D14").next, "T7");
   assert.equal(t7.next, "W4");
   assert.equal(d3.next, "D8");
   const t10 = lessons.find((lesson) => lesson.id === "T10");
@@ -371,7 +372,7 @@ test("the app has a mic fallback and does not phone home", () => {
   assert.match(lesson, /改為即時講/);
   assert.match(lesson, />聽我</);
   assert.match(lesson, /咪未開/);
-  assert.match(lesson, /呢輪八十四課你行完啦/);
+  assert.match(lesson, /呢輪八十七課你行完啦/);
   assert.match(lesson, /setDone\(true\)/);
   assert.match(lesson, /playSfx/);
   assert.match(fs.readFileSync(path.join(root, "web/src/sfx.ts"), "utf8"), /AudioContext/);
@@ -430,7 +431,7 @@ test("role-play tip names a character or tells you it is your turn", () => {
   assert.match(lesson, /你扮 \$\{name\}/);
   assert.equal(lesson.includes("你而家係"), false);
   const data = fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8");
-  assert.match(data, /"F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T17", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "R13", "J6", "J7", "J15", "J18", "J20", "T5", "T12", "T15", "T13", "R12", "R14", "R15", "R5", "R11", "W1", "D1", "D12", "D2", "T7", "W4", "R8", "D10", "W7", "J8", "D9", "D11", "D13", "J9", "J10", "J19", "J16", "J17", "T6", "R6", "J12", "R7", "T8", "T16", "T18", "W2", "W3", "W9", "W8", "W11", "W12", "D3", "D8", "T10", "T14", "W5", "W10", "J14", "J11", "W6", "T9", "J13"/);
+  assert.match(data, /"F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T17", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "R13", "J6", "J7", "J15", "J18", "J20", "T5", "T12", "T15", "T13", "R12", "R14", "R15", "R16", "R5", "R11", "W1", "D1", "D12", "D2", "D14", "T7", "W4", "R8", "D10", "W7", "J8", "D9", "D11", "D13", "J9", "J10", "J19", "J16", "J21", "J17", "T6", "R6", "J12", "R7", "T8", "T16", "T18", "W2", "W3", "W9", "W8", "W11", "W12", "D3", "D8", "T10", "T14", "W5", "W10", "J14", "J11", "W6", "T9", "J13"/);
   assert.match(data, /const order = SHIPPED/);
 });
 
@@ -857,7 +858,7 @@ test("composite difficulty does not dip on lessons that can still change", () =>
     const meanRank = ranks.reduce((sum, n) => sum + n, 0) / ranks.length;
     return 0.4 * words + 2 * meanRank + clauses;
   }
-  assert.equal(order.length, 84);
+  assert.equal(order.length, 87);
   const locked = new Set(["J16", "R11", "R12", "W10", "T14", "R13", "J18", "D11", "W9", "D12", "T15", "W11", "R14", "J19", "T16"]);
   const gated = new Set(["T17", "J20", "D13"]);
   const scores = order.map((id) => score(byId[id]));
@@ -966,7 +967,8 @@ test("round 38 scenes keep one plan", () => {
   assert.match(said("D9"), /one working day/);
   assert.equal(lessons.find((lesson) => lesson.id === "R11").next, "W1");
   assert.equal(lessons.find((lesson) => lesson.id === "W9").next, "W8");
-  assert.equal(lessons.find((lesson) => lesson.id === "J16").next, "J17");
+  assert.equal(lessons.find((lesson) => lesson.id === "J16").next, "J21");
+  assert.equal(lessons.find((lesson) => lesson.id === "J21").next, "J17");
   assert.equal(lessons.find((lesson) => lesson.id === "R5").next, "R11");
   assert.equal(lessons.find((lesson) => lesson.id === "W3").next, "W9");
   assert.equal(lessons.find((lesson) => lesson.id === "J10").next, "J19");
@@ -1034,7 +1036,8 @@ test("round 39 scenes keep one plan", () => {
   assert.equal(lessons.find((lesson) => lesson.id === "T13").next, "R12");
   assert.equal(lessons.find((lesson) => lesson.id === "R8").next, "D10");
   assert.equal(lessons.find((lesson) => lesson.id === "D10").next, "W7");
-  assert.equal(lessons.find((lesson) => lesson.id === "J16").next, "J17");
+  assert.equal(lessons.find((lesson) => lesson.id === "J16").next, "J21");
+  assert.equal(lessons.find((lesson) => lesson.id === "J21").next, "J17");
   assert.equal(lessons.find((lesson) => lesson.id === "J17").next, "T6");
   assert.equal(lessons.find((lesson) => lesson.id === "J15").next, "J18");
   assert.equal(lessons.find((lesson) => lesson.id === "D9").next, "D11");
@@ -1070,6 +1073,8 @@ test("round 40 scenes keep one plan", () => {
   assert.match(said("T12"), /ready after four/);
   assert.equal(lessons.find((lesson) => lesson.id === "R12").next, "R14");
   assert.equal(lessons.find((lesson) => lesson.id === "R14").next, "R15");
+  assert.equal(lessons.find((lesson) => lesson.id === "R15").next, "R16");
+  assert.equal(lessons.find((lesson) => lesson.id === "R16").next, "R5");
   assert.equal(lessons.find((lesson) => lesson.id === "T16").next, "T18");
   assert.equal(lessons.find((lesson) => lesson.id === "T14").next, "W5");
   assert.equal(lessons.find((lesson) => lesson.id === "T10").next, "T14");
@@ -1095,7 +1100,7 @@ test("dialogue questions share a word, lines do not stuff one word, and padding 
   const func = new Set("a an the i you we they he she it my your our is are was were be been am have has had do does did will would can could should may might to of in on at for with and or but if so not this that these those me him her them us please just very still also then there here from as about into".split(" "));
   const qAllow = new Set(["f4-l2", "f5-l2", "j1-l2", "r1-l2", "r1-l4", "j2-l4", "r10-l7", "j3-l5", "j4-l3", "j5-l2", "t4-l3", "t4-l5", "r4-l7", "r4-l8", "j6-l4", "j7-l7", "j7-m1", "w1-l2", "d1-l2", "w4-l6", "j9-l5", "j9-l8", "j10-l3", "t6-l2", "t8-l4", "t10-l3", "w6-l2", "j16-l3", "j16-l4", "j16-l8", "r11-l4", "r11-l6", "r11-l8", "r12-l4", "r12-l6", "r12-l8", "w10-l6", "w10-l8", "r13-l2", "r13-l5", "r13-l7", "j18-l2", "j18-l4", "j18-l5", "j18-l6", "j18-l8", "d11-l6", "d11-l8", "w9-l7", "d12-l2", "d12-l4", "d12-l6", "d12-l7", "t15-l3", "t15-l4", "t15-l6", "t15-l8", "w11-l6", "r14-l4", "r14-l5", "r14-l8", "j19-l2", "j19-l8", "t16-l3"]);
   const freqAllow = new Set(["R10:like", "R3:sauce", "R9:bill", "J15:ring", "T12:room", "D2:card", "R8:chicken", "D9:card", "W2:deadline", "W3:update", "T10:bag", "T14:gate", "W10:email", "J14:ring"]);
-  const tailAllow = new Set(["j1-l1", "j2-l1", "t1-l1", "t2-l5", "r2-l1", "r2-l5", "t4-l3", "d6-l1", "j6-l2", "j7-l3", "j7-m1", "t5-l3", "t12-l4", "d1-l1", "d1-l6", "d2-l1", "t7-l1", "j10-l2", "j12-l2", "j12-l8", "t8-l1", "w2-l1", "w3-l1", "d3-l5", "w5-l4", "j11-l5", "t9-l5", "t9-l8", "r11-l2", "r12-l4", "d11-l8"]);
+  const tailAllow = new Set(["j1-l1", "j2-l1", "t1-l1", "t2-l5", "r2-l1", "r2-l5", "t4-l3", "d6-l1", "j6-l2", "j7-l3", "j7-m1", "t5-l3", "t12-l4", "d1-l1", "d1-l6", "d2-l1", "t7-l1", "j10-l2", "j12-l2", "j12-l8", "t8-l1", "w2-l1", "w3-l1", "d3-l5", "w5-l4", "j11-l5", "t9-l5", "t9-l8", "r11-l2", "r12-l4", "d11-l8", "r16-l1"]);
   const tails = [/\bfor you here\b/i, /\bthat note here\b/i, /\bfor you\b/i, /\btoday\b/i];
   function content(text) {
     return new Set((text.toLowerCase().match(/[a-z']+/g) || []).filter((tok) => tok.length > 2 && !func.has(tok)));

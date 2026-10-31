@@ -40295,6 +40295,682 @@
           "say": "You should pay because that alcohol is over."
         }
       ]
+    },
+    {
+      "id": "appraisal-noun",
+      "lemma": "appraisal",
+      "pos": "noun",
+      "senseId": "written-value",
+      "ipa": "/ə.ˈpɹeɪ.zəl/",
+      "syllables": [
+        "ap",
+        "prais",
+        "al"
+      ],
+      "syllableIpa": [
+        "ə",
+        "ˈpɹeɪ",
+        "zəl"
+      ],
+      "stress": 2,
+      "arpabet": "AH0 P R EY1 Z AH0 L",
+      "audio": "assets/audio/words/appraisal-noun.mp3",
+      "audioSlow": "assets/audio/words/appraisal-noun-slow.mp3",
+      "glossYue": "估價",
+      "glossZh": "估價",
+      "jyutping": "gu2 gaa3",
+      "collocations": [
+        "a written appraisal",
+        "that appraisal"
+      ],
+      "example": "I need a written appraisal for this pendant.",
+      "exampleYue": "我要一份書面估價。",
+      "say": "I need a written appraisal for this pendant.",
+      "variants": [],
+      "note": "appraisal 重音喺第二音節，有 /eɪ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "appraisal",
+      "phrase": false,
+      "audioSha256": "4f879040d339790f02548543fc72488d4c0c3c460031365fc86966688a9b2749",
+      "register": "日常",
+      "usageNotes": "估價。",
+      "pitfallsYue": "估價。",
+      "related": [
+        "claim-noun"
+      ],
+      "examples": [
+        {
+          "en": "I need a written appraisal for this pendant.",
+          "yue": "我要一份書面估價。",
+          "audio": "assets/audio/words/appraisal-noun.mp3",
+          "audioSlow": "assets/audio/words/appraisal-noun-slow.mp3",
+          "say": "I need a written appraisal for this pendant."
+        },
+        {
+          "en": "The appraisal lists the gold and the crack.",
+          "yue": "估價寫低金同裂痕。",
+          "audio": "assets/audio/words/appraisal-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/appraisal-noun-ex2-slow.mp3",
+          "say": "The appraisal lists the gold and the crack."
+        }
+      ]
+    },
+    {
+      "id": "pendant-noun",
+      "lemma": "pendant",
+      "pos": "noun",
+      "senseId": "neck-drop",
+      "ipa": "/ˈpɛn.dənt/",
+      "syllables": [
+        "pen",
+        "dant"
+      ],
+      "syllableIpa": [
+        "ˈpɛn",
+        "dənt"
+      ],
+      "stress": 1,
+      "arpabet": "P EH1 N D AH0 N T",
+      "audio": "assets/audio/words/pendant-noun.mp3",
+      "audioSlow": "assets/audio/words/pendant-noun-slow.mp3",
+      "glossYue": "吊墜",
+      "glossZh": "吊墜",
+      "jyutping": "diu3 zeoi6",
+      "collocations": [
+        "a gold pendant",
+        "the bent pendant"
+      ],
+      "example": "This gold pendant has a small crack.",
+      "exampleYue": "呢條金吊墜有少少裂痕。",
+      "say": "This gold pendant has a small crack.",
+      "variants": [],
+      "note": "pendant 重音喺第一音節。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "pendant",
+      "phrase": false,
+      "audioSha256": "00c113311289505408a0ab0b0be0189ebfc73de890ab4566f2c76d857866dfe9",
+      "register": "日常",
+      "usageNotes": "吊墜。",
+      "pitfallsYue": "吊墜。",
+      "related": [
+        "gold-noun"
+      ],
+      "examples": [
+        {
+          "en": "This gold pendant has a small crack.",
+          "yue": "呢條金吊墜有少少裂痕。",
+          "audio": "assets/audio/words/pendant-noun.mp3",
+          "audioSlow": "assets/audio/words/pendant-noun-slow.mp3",
+          "say": "This gold pendant has a small crack."
+        },
+        {
+          "en": "I will collect the pendant on Friday.",
+          "yue": "我星期五攞返條吊墜。",
+          "audio": "assets/audio/words/pendant-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/pendant-noun-ex2-slow.mp3",
+          "say": "I will collect the pendant on Friday."
+        }
+      ]
+    },
+    {
+      "id": "photo-noun",
+      "lemma": "photo",
+      "pos": "noun",
+      "senseId": "claim-shot",
+      "ipa": "/ˈfoʊ.ˌtoʊ/",
+      "syllables": [
+        "pho",
+        "to"
+      ],
+      "syllableIpa": [
+        "ˈfoʊ",
+        "ˌtoʊ"
+      ],
+      "stress": 1,
+      "arpabet": "F OW1 T OW2",
+      "audio": "assets/audio/words/photo-noun.mp3",
+      "audioSlow": "assets/audio/words/photo-noun-slow.mp3",
+      "glossYue": "相片",
+      "glossZh": "相片",
+      "jyutping": "soeng2 pin3",
+      "collocations": [
+        "a close photo",
+        "this photo"
+      ],
+      "example": "Please take a photo of the crack.",
+      "exampleYue": "請影張相，影到裂痕。",
+      "say": "Please take a photo of the crack.",
+      "variants": [],
+      "note": "photo 有 /oʊ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "photo",
+      "phrase": false,
+      "audioSha256": "de21d9b35cd6a0dc999eb80457dddc3f06b633627e7116c528da2d92e13dd3cd",
+      "register": "日常",
+      "usageNotes": "相片。",
+      "pitfallsYue": "相片。",
+      "related": [
+        "claim-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please take a photo of the crack.",
+          "yue": "請影張相，影到裂痕。",
+          "audio": "assets/audio/words/photo-noun.mp3",
+          "audioSlow": "assets/audio/words/photo-noun-slow.mp3",
+          "say": "Please take a photo of the crack."
+        },
+        {
+          "en": "This photo shows the gold clasp.",
+          "yue": "呢張相片睇到個金扣。",
+          "audio": "assets/audio/words/photo-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/photo-noun-ex2-slow.mp3",
+          "say": "This photo shows the gold clasp."
+        }
+      ]
+    },
+    {
+      "id": "insurance-noun",
+      "lemma": "insurance",
+      "pos": "noun",
+      "senseId": "cover-plan",
+      "ipa": "/ˌɪn.ˈʃʊ.ɹəns/",
+      "syllables": [
+        "in",
+        "sur",
+        "ance"
+      ],
+      "syllableIpa": [
+        "ˌɪn",
+        "ˈʃʊ",
+        "ɹəns"
+      ],
+      "stress": 2,
+      "arpabet": "IH2 N SH UH1 R AH0 N S",
+      "audio": "assets/audio/words/insurance-noun.mp3",
+      "audioSlow": "assets/audio/words/insurance-noun-slow.mp3",
+      "glossYue": "保險",
+      "glossZh": "保險",
+      "jyutping": "bou2 him2",
+      "collocations": [
+        "my insurance policy",
+        "that insurance"
+      ],
+      "example": "My insurance policy covers this repair.",
+      "exampleYue": "我份保險保單包呢次維修。",
+      "say": "My insurance policy covers this repair.",
+      "variants": [],
+      "note": "insurance 重音喺第二音節。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "insurance",
+      "phrase": false,
+      "audioSha256": "e49e1a6973c53bd0721462396bd66823fa9841f6e8b4c119029e721f18f1c5e6",
+      "register": "日常",
+      "usageNotes": "保險。",
+      "pitfallsYue": "保險。",
+      "related": [
+        "policy-noun"
+      ],
+      "examples": [
+        {
+          "en": "My insurance policy covers this repair.",
+          "yue": "我份保險保單包呢次維修。",
+          "audio": "assets/audio/words/insurance-noun.mp3",
+          "audioSlow": "assets/audio/words/insurance-noun-slow.mp3",
+          "say": "My insurance policy covers this repair."
+        },
+        {
+          "en": "What does the insurance charge for a repair?",
+          "yue": "保險維修要畀幾多？",
+          "audio": "assets/audio/words/insurance-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/insurance-noun-ex2-slow.mp3",
+          "say": "What does the insurance charge for a repair?"
+        }
+      ]
+    },
+    {
+      "id": "damage-noun",
+      "lemma": "damage",
+      "pos": "noun",
+      "senseId": "broken-part",
+      "ipa": "/ˈdæ.mədʒ/",
+      "syllables": [
+        "dam",
+        "age"
+      ],
+      "syllableIpa": [
+        "ˈdæ",
+        "mədʒ"
+      ],
+      "stress": 1,
+      "arpabet": "D AE1 M AH0 JH",
+      "audio": "assets/audio/words/damage-noun.mp3",
+      "audioSlow": "assets/audio/words/damage-noun-slow.mp3",
+      "glossYue": "損壞",
+      "glossZh": "損壞",
+      "jyutping": "syun2 waai6",
+      "collocations": [
+        "the damage",
+        "note the damage"
+      ],
+      "example": "Please note the damage on this box.",
+      "exampleYue": "請記低呢個箱嘅損壞。",
+      "say": "Please note the damage on this box.",
+      "variants": [],
+      "note": "damage 有 /æ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "damage",
+      "phrase": false,
+      "audioSha256": "e37dff1fb38d41f748db82e8c3312628455c1aed69db2c832782d2207353577e",
+      "register": "日常",
+      "usageNotes": "損壞。",
+      "pitfallsYue": "損壞。",
+      "related": [
+        "parcel-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please note the damage on this box.",
+          "yue": "請記低呢個箱嘅損壞。",
+          "audio": "assets/audio/words/damage-noun.mp3",
+          "audioSlow": "assets/audio/words/damage-noun-slow.mp3",
+          "say": "Please note the damage on this box."
+        },
+        {
+          "en": "The damage is on the corner.",
+          "yue": "損壞喺隻角度。",
+          "audio": "assets/audio/words/damage-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/damage-noun-ex2-slow.mp3",
+          "say": "The damage is on the corner."
+        }
+      ]
+    },
+    {
+      "id": "box-noun",
+      "lemma": "box",
+      "pos": "noun",
+      "senseId": "parcel-case",
+      "ipa": "/ˈbɑks/",
+      "syllables": [
+        "box"
+      ],
+      "syllableIpa": [
+        "ˈbɑks"
+      ],
+      "stress": 1,
+      "arpabet": "B AA1 K S",
+      "audio": "assets/audio/words/box-noun.mp3",
+      "audioSlow": "assets/audio/words/box-noun-slow.mp3",
+      "glossYue": "紙箱",
+      "glossZh": "紙箱",
+      "jyutping": "soeng1",
+      "collocations": [
+        "the box",
+        "this box"
+      ],
+      "example": "This box is split at the corner.",
+      "exampleYue": "呢個紙箱隻角裂開咗。",
+      "say": "This box is split at the corner.",
+      "variants": [],
+      "note": "box 係一個音節。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "box",
+      "phrase": false,
+      "audioSha256": "456d30430469ecddfaabbadf1ed2f7f54d18ca6cebe2c6a92fa2179706560807",
+      "register": "日常",
+      "usageNotes": "紙箱。",
+      "pitfallsYue": "紙箱。",
+      "related": [
+        "parcel-noun"
+      ],
+      "examples": [
+        {
+          "en": "This box is split at the corner.",
+          "yue": "呢個紙箱隻角裂開咗。",
+          "audio": "assets/audio/words/box-noun.mp3",
+          "audioSlow": "assets/audio/words/box-noun-slow.mp3",
+          "say": "This box is split at the corner."
+        },
+        {
+          "en": "I sign for the box before I leave.",
+          "yue": "我走之前簽名收呢個箱。",
+          "audio": "assets/audio/words/box-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/box-noun-ex2-slow.mp3",
+          "say": "I sign for the box before I leave."
+        }
+      ]
+    },
+    {
+      "id": "sign-verb",
+      "lemma": "sign",
+      "pos": "verb",
+      "senseId": "write-name",
+      "ipa": "/ˈsaɪn/",
+      "syllables": [
+        "sign"
+      ],
+      "syllableIpa": [
+        "ˈsaɪn"
+      ],
+      "stress": 1,
+      "arpabet": "S AY1 N",
+      "audio": "assets/audio/words/sign-verb.mp3",
+      "audioSlow": "assets/audio/words/sign-verb-slow.mp3",
+      "glossYue": "簽名",
+      "glossZh": "簽名",
+      "jyutping": "cim1 meng2",
+      "collocations": [
+        "please sign",
+        "sign here"
+      ],
+      "example": "Please sign on this line.",
+      "exampleYue": "請喺呢行簽名。",
+      "say": "Please sign on this line.",
+      "variants": [],
+      "note": "sign 有 /aɪ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "sign",
+      "phrase": false,
+      "audioSha256": "a6cf6621780443b8fa0605a0adf96832c6cf21159864ebb6480e0324014dba9d",
+      "register": "日常",
+      "usageNotes": "簽名。",
+      "pitfallsYue": "簽名。",
+      "related": [
+        "signature-noun"
+      ],
+      "examples": [
+        {
+          "en": "Please sign on this line.",
+          "yue": "請喺呢行簽名。",
+          "audio": "assets/audio/words/sign-verb.mp3",
+          "audioSlow": "assets/audio/words/sign-verb-slow.mp3",
+          "say": "Please sign on this line."
+        },
+        {
+          "en": "I sign my name for the parcel.",
+          "yue": "我簽名收呢個包裹。",
+          "audio": "assets/audio/words/sign-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/sign-verb-ex2-slow.mp3",
+          "say": "I sign my name for the parcel."
+        }
+      ]
+    },
+    {
+      "id": "mild-adj",
+      "lemma": "mild",
+      "pos": "adj",
+      "senseId": "not-hot",
+      "ipa": "/ˈmaɪld/",
+      "syllables": [
+        "mild"
+      ],
+      "syllableIpa": [
+        "ˈmaɪld"
+      ],
+      "stress": 1,
+      "arpabet": "M AY1 L D",
+      "audio": "assets/audio/words/mild-adj.mp3",
+      "audioSlow": "assets/audio/words/mild-adj-slow.mp3",
+      "glossYue": "唔辣",
+      "glossZh": "唔辣",
+      "jyutping": "m4 laat6",
+      "collocations": [
+        "a mild plate",
+        "the mild plate"
+      ],
+      "example": "The mild plate is tofu.",
+      "exampleYue": "唔辣嗰碟係豆腐。",
+      "say": "The mild plate is tofu.",
+      "variants": [],
+      "note": "mild 有 /aɪ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "mild",
+      "phrase": false,
+      "audioSha256": "fbb7354749be15bc212b775d9532dec4f83194d8eee9e50f8a77e33103cec598",
+      "register": "日常",
+      "usageNotes": "唔辣。",
+      "pitfallsYue": "唔辣。",
+      "related": [
+        "spicy-adj"
+      ],
+      "examples": [
+        {
+          "en": "The mild plate is tofu.",
+          "yue": "唔辣嗰碟係豆腐。",
+          "audio": "assets/audio/words/mild-adj.mp3",
+          "audioSlow": "assets/audio/words/mild-adj-slow.mp3",
+          "say": "The mild plate is tofu."
+        },
+        {
+          "en": "I would like one mild plate.",
+          "yue": "我想要一碟唔辣。",
+          "audio": "assets/audio/words/mild-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/mild-adj-ex2-slow.mp3",
+          "say": "I would like one mild plate."
+        }
+      ]
+    },
+    {
+      "id": "rice-noun",
+      "lemma": "rice",
+      "pos": "noun",
+      "senseId": "side-grain",
+      "ipa": "/ˈɹaɪs/",
+      "syllables": [
+        "rice"
+      ],
+      "syllableIpa": [
+        "ˈɹaɪs"
+      ],
+      "stress": 1,
+      "arpabet": "R AY1 S",
+      "audio": "assets/audio/words/rice-noun.mp3",
+      "audioSlow": "assets/audio/words/rice-noun-slow.mp3",
+      "glossYue": "白飯",
+      "glossZh": "白飯",
+      "jyutping": "faan6",
+      "collocations": [
+        "a side of rice",
+        "rice on the side"
+      ],
+      "example": "Can I add a side of rice?",
+      "exampleYue": "可唔可以加碟白飯？",
+      "say": "Can I add a side of rice?",
+      "variants": [],
+      "note": "rice 有 /aɪ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "rice",
+      "phrase": false,
+      "audioSha256": "800d452df39bf53966bf8dde10cab5dbefbab935d643577a4902b001506fe389",
+      "register": "日常",
+      "usageNotes": "白飯。",
+      "pitfallsYue": "白飯。",
+      "related": [
+        "side-noun"
+      ],
+      "examples": [
+        {
+          "en": "Can I add a side of rice?",
+          "yue": "可唔可以加碟白飯？",
+          "audio": "assets/audio/words/rice-noun.mp3",
+          "audioSlow": "assets/audio/words/rice-noun-slow.mp3",
+          "say": "Can I add a side of rice?"
+        },
+        {
+          "en": "Rice on the side takes fifteen minutes.",
+          "yue": "加碟白飯要十五分鐘。",
+          "audio": "assets/audio/words/rice-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/rice-noun-ex2-slow.mp3",
+          "say": "Rice on the side takes fifteen minutes."
+        }
+      ]
+    },
+    {
+      "id": "chef-noun",
+      "lemma": "chef",
+      "pos": "noun",
+      "senseId": "cook-lead",
+      "ipa": "/ˈʃɛf/",
+      "syllables": [
+        "chef"
+      ],
+      "syllableIpa": [
+        "ˈʃɛf"
+      ],
+      "stress": 1,
+      "arpabet": "SH EH1 F",
+      "audio": "assets/audio/words/chef-noun.mp3",
+      "audioSlow": "assets/audio/words/chef-noun-slow.mp3",
+      "glossYue": "廚師",
+      "glossZh": "廚師",
+      "jyutping": "cyu4 si1",
+      "collocations": [
+        "the chef",
+        "that chef"
+      ],
+      "example": "Does the chef recommend that dish?",
+      "exampleYue": "廚師推唔推薦嗰味？",
+      "say": "Does the chef recommend that dish?",
+      "variants": [],
+      "note": "chef 有 /ɛ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "chef",
+      "phrase": false,
+      "audioSha256": "33fe7802bab53164c574c6734f43989556893ab47c29692deb23244b974000df",
+      "register": "日常",
+      "usageNotes": "廚師。",
+      "pitfallsYue": "廚師。",
+      "related": [
+        "recommend-verb"
+      ],
+      "examples": [
+        {
+          "en": "Does the chef recommend that dish?",
+          "yue": "廚師推唔推薦嗰味？",
+          "audio": "assets/audio/words/chef-noun.mp3",
+          "audioSlow": "assets/audio/words/chef-noun-slow.mp3",
+          "say": "Does the chef recommend that dish?"
+        },
+        {
+          "en": "The chef does recommend the grilled fish.",
+          "yue": "廚師推薦烤魚。",
+          "audio": "assets/audio/words/chef-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/chef-noun-ex2-slow.mp3",
+          "say": "The chef does recommend the grilled fish."
+        }
+      ]
+    },
+    {
+      "id": "special-noun",
+      "lemma": "special",
+      "pos": "noun",
+      "senseId": "menu-pick",
+      "ipa": "/ˈspɛ.ʃəl/",
+      "syllables": [
+        "spe",
+        "cial"
+      ],
+      "syllableIpa": [
+        "ˈspɛ",
+        "ʃəl"
+      ],
+      "stress": 1,
+      "arpabet": "S P EH1 SH AH0 L",
+      "audio": "assets/audio/words/special-noun.mp3",
+      "audioSlow": "assets/audio/words/special-noun-slow.mp3",
+      "glossYue": "特餐",
+      "glossZh": "特餐",
+      "jyutping": "dak6 caan1",
+      "collocations": [
+        "today's special",
+        "the special"
+      ],
+      "example": "What is today's special?",
+      "exampleYue": "今日特餐係咩？",
+      "say": "What is today's special?",
+      "variants": [],
+      "note": "special 有 /ɛ/。",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "special",
+      "phrase": false,
+      "audioSha256": "9bfe944ad1c380cadf5860d9a57843af6228785af253f83e0d5a119260e99068",
+      "register": "日常",
+      "usageNotes": "特餐。",
+      "pitfallsYue": "特餐。",
+      "related": [
+        "special-adj"
+      ],
+      "examples": [
+        {
+          "en": "What is today's special?",
+          "yue": "今日特餐係咩？",
+          "audio": "assets/audio/words/special-noun.mp3",
+          "audioSlow": "assets/audio/words/special-noun-slow.mp3",
+          "say": "What is today's special?"
+        },
+        {
+          "en": "The special is grilled fish.",
+          "yue": "特餐係烤魚。",
+          "audio": "assets/audio/words/special-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/special-noun-ex2-slow.mp3",
+          "say": "The special is grilled fish."
+        }
+      ]
     }
   ]
 }

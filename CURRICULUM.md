@@ -151,6 +151,13 @@
 - **Dialogue beats:** Wedding date inside the bracelet → Twelve characters → Twelfth of June 2021 and initials G and M → Fourteen characters, two over → Date and initials without dots → Plain font free, script font fifty dollars → Check the engraving text → Sign the form, ready in three days
 - **Coherence:** the date is the twelfth of June 2021. Initials are G and M. 12.06.2021 beside G and M is fourteen characters, two over the twelve limit. Dots come off. Plain font is free. The guest checks the engraving text before it is cut, signs the form, and collects it in three days.
 
+### J21 — Insurance appraisal after damage / 首飾損壞估價同保險 · B1 · SHIPPED
+- **Goals:** Say a gold pendant was dropped, ask for a written appraisal and a photo of the crack, ask the policy excess, and collect the repair on Friday.
+- **Vocab:** appraisal, pendant, photo, insurance
+- **Grammar:** Could I get a written appraisal? What excess does my insurance policy charge?
+- **Dialogue beats:** Dropped pendant → Written appraisal → Photo for the claim → Excess on the policy → Collect on Friday
+- **Coherence:** one gold pendant, bent, with a crack. The appraisal is written after a check. The photo is for the claim form. The excess is two hundred dollars. Collection is Friday at four.
+
 ### J17 — Pearl care and pricing / 珍珠保養同價錢 · B1 · SHIPPED
 - **Goals:** Compare freshwater and saltwater pearls, hear a range of two thousand to six thousand dollars, let Ida give the care line about perfume and wiping, and read pearl type and size on the certificate.
 - **Vocab:** pearl, lustre, price, perfume, wipe, certificate
@@ -264,6 +271,14 @@
 - **Vocab:** buffet, soft drink, plate, shellfish
 - **Grammar:** Is this buffet all you can eat? Are soft drinks included?
 - **Dialogue beats:** Eat in only → Soft drinks included → Shellfish and a clean plate → A second serving
+
+### R16 — Asking for a chef's recommendation / 問廚師推介 · A2/B1 · SHIPPED
+- **Goals:** Ask today's special and what the chef recommends, order one spicy plate and one mild plate, name a peanut allergy, and add a side of rice.
+- **Vocab:** special, chef, mild, rice
+- **Grammar:** What is today's special? Can the kitchen keep peanuts off both?
+- **Dialogue beats:** Today's special → One spicy and one mild → Peanut allergy → Rice on the side
+- **Coherence:** the special is grilled fish. One plate is mild tofu and one is spicy prawns. Peanuts stay off both. Rice on the side takes about fifteen minutes.
+
 
 ---
 
@@ -543,6 +558,13 @@
 - **Grammar:** The tap has a leak. When did it start? I will be out after six tomorrow.
 - **Dialogue beats:** Leak since yesterday → When did it start → Need a repair → Tomorrow after six → Out, key with the guard → Access while out → Key at the desk → Repair after six tomorrow
 
+### D14 — Collecting a parcel at the post office / 郵局攞包裹 · A2/B1 · SHIPPED
+- **Goals:** Give the tracking number, show an identity card, pay the customs fee, note damage on the box, and sign for the parcel.
+- **Vocab:** damage, box, sign, parcel
+- **Grammar:** Can I collect this parcel? Where do I sign my name?
+- **Dialogue beats:** Tracking number → Identity card → Customs fee → Damaged box → Sign for it
+- **Coherence:** the tracking number is HK four eight two. The customs fee is forty dollars. One corner of the box is damaged and the box is split. The customer signs on the line.
+
 ## Build order (loop priority)
 
 Every round until map complete, ship **≥3 NEW lessons** in this order (skip already shipped):
@@ -571,7 +593,8 @@ Every round until map complete, ship **≥3 NEW lessons** in this order (skip al
 22. **R14, J19, T16** (birthday cake, diamond certificate, renting a car abroad)
 23. **T17, J20, D13** (airport security, gold by weight, the dentist)
 24. **R15, W12, T18** (buffet limits, performance review, customs declaration)
-25. Then polish / legendary review nodes / further B2 stretch
+25. **J21, D14, R16** (insurance appraisal, parcel collection, chef's recommendation)
+26. Then polish / legendary review nodes / further B2 stretch
 
 **Path UX:** show CEFR chip (A1/A2/B1/B2) on each node; group Path into level tracks; lock by prerequisite; keep `soon:true` teasers for unshipped.
 

@@ -83,7 +83,10 @@
     "d13",
     "r15",
     "w12",
-    "t18"
+    "t18",
+    "j21",
+    "d14",
+    "r16"
   ],
   "pending": [],
   "focus": {
@@ -170,20 +173,23 @@
     "d13": "center 30%",
     "r15": "center 30%",
     "w12": "center 30%",
-    "t18": "center 30%"
+    "t18": "center 30%",
+    "j21": "center 30%",
+    "d14": "center 30%",
+    "r16": "center 30%"
   },
   "people": {
     "tom": "Adult man, short black hair, beige jacket, coral scarf, head and shoulders.",
-    "ben": "Adult man with glasses, head and shoulders.",
-    "kim": "Adult staff member, head and shoulders.",
-    "gus": "Adult man, short brown hair, cream collared shirt, head and shoulders.",
-    "ida": "Adult woman, peach bob, gold hair clip, head and shoulders.",
+    "ben": "Adult man, short black hair, black glasses, teal collared shirt, head and shoulders.",
+    "kim": "Adult woman, black bob, teal blazer, light blue collar, gold shell pin, head and shoulders.",
+    "gus": "Adult man, short black hair, coral shirt, head and shoulders.",
+    "ida": "Adult woman, long black hair, gold triangle earrings, teal top, head and shoulders.",
     "cleo": "Adult woman, black bob, purple cat clip, cream sweater, head and shoulders.",
     "mira": "Adult woman, black wavy hair, teal clip, teal shirt, cream apron.",
     "niles": "Adult colleague, mint curls, round glasses, yellow shirt, head and shoulders.",
     "nell": "Adult colleague, head and shoulders.",
-    "wen": "Adult man on the clinic phone line, head and shoulders.",
-    "mei": "Adult woman at the jewellery counter, head and shoulders.",
+    "wen": "Adult man, short black hair, light beard, teal shirt, head and shoulders.",
+    "mei": "Adult woman, dark bun, teal hair pins, teal shirt, cream apron, head and shoulders.",
     "ana": "Adult woman at the restaurant desk, head and shoulders.",
     "kai": "Adult jewellery colleague, head and shoulders.",
     "jo": "Adult colleague, head and shoulders.",
@@ -801,6 +807,27 @@
         "kim"
       ],
       "look": "Declaring goods at customs (海關申報)"
+    },
+    "j21": {
+      "cast": [
+        "gus",
+        "ida"
+      ],
+      "look": "Insurance appraisal after damage (首飾損壞估價同保險)"
+    },
+    "d14": {
+      "cast": [
+        "tom",
+        "cole"
+      ],
+      "look": "Collecting a parcel at the post office (郵局攞包裹)"
+    },
+    "r16": {
+      "cast": [
+        "tom",
+        "mira"
+      ],
+      "look": "Asking for a chef's recommendation (問廚師推介)"
     }
   }
 }

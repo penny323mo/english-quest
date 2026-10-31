@@ -1,0 +1,358 @@
+{
+  "id": "J21",
+  "unit": "J",
+  "titleYue": "首飾損壞估價同保險",
+  "titleEn": "Insurance appraisal after damage",
+  "canDoYue": "你識話吊墜跌壞、要書面估價同相片、問保單自負額，同埋星期五攞返。",
+  "canDoEn": "Say the pendant was dropped, ask for a written appraisal and a photo, ask the policy excess, and collect it on Friday.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j21.webp",
+  "cast": [
+    "gus",
+    "ida"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "appraisal-noun",
+    "pendant-noun",
+    "photo-noun",
+    "insurance-noun"
+  ],
+  "topicTags": [
+    "估價",
+    "吊墜",
+    "相片",
+    "保險"
+  ],
+  "next": "J17",
+  "sound": {
+    "ipa": "/eɪ/",
+    "title": "appraisal 入面嗰個音",
+    "note": "appraisal 有 /eɪ/。photo 有 /oʊ/。",
+    "pairs": [
+      {
+        "a": "appraisal-noun",
+        "b": "pendant-noun"
+      },
+      {
+        "a": "photo-noun",
+        "b": "insurance-noun"
+      }
+    ],
+    "drill": [
+      "appraisal-noun",
+      "pendant-noun",
+      "photo-noun",
+      "insurance-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "j21-l1",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "I dropped this gold pendant last night. Could I get a written appraisal?",
+      "glossYue": "我尋晚跌咗呢條金吊墜。可唔可以出一份書面估價？",
+      "audio": "assets/audio/lines/j21-l1.mp3",
+      "audioSlow": "assets/audio/lines/j21-l1-slow.mp3",
+      "say": "I dropped this gold pendant last night. Could I get a written appraisal?",
+      "hideGloss": false
+    },
+    {
+      "id": "j21-l2",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Yes. I can write that appraisal once I have checked the bent pendant.",
+      "glossYue": "可以。我檢查完條彎咗嘅吊墜，就寫嗰份估價。",
+      "audio": "assets/audio/lines/j21-l2.mp3",
+      "audioSlow": "assets/audio/lines/j21-l2-slow.mp3",
+      "say": "Yes. I can write that appraisal once I have checked the bent pendant.",
+      "hideGloss": false
+    },
+    {
+      "id": "j21-l3",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "Could you take a photo of the crack for the claim form?",
+      "glossYue": "可唔可以影張相，影到裂痕，用嚟交理賠表？",
+      "audio": "assets/audio/lines/j21-l3.mp3",
+      "audioSlow": "assets/audio/lines/j21-l3-slow.mp3",
+      "say": "Could you take a photo of the crack for the claim form?",
+      "hideGloss": false
+    },
+    {
+      "id": "j21-l4",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Yes. This close photo shows that crack right beside the small gold clasp.",
+      "glossYue": "可以。呢張近相睇到裂痕就喺個小金扣隔離。",
+      "audio": "assets/audio/lines/j21-l4.mp3",
+      "audioSlow": "assets/audio/lines/j21-l4-slow.mp3",
+      "say": "Yes. This close photo shows that crack right beside the small gold clasp.",
+      "hideGloss": true
+    },
+    {
+      "id": "j21-l5",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "What excess does my insurance policy charge for a repair like this?",
+      "glossYue": "我份保險維修要畀幾多自負額？",
+      "audio": "assets/audio/lines/j21-l5.mp3",
+      "audioSlow": "assets/audio/lines/j21-l5-slow.mp3",
+      "say": "What excess does my insurance policy charge for a repair like this?",
+      "hideGloss": true
+    },
+    {
+      "id": "j21-l6",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "The excess on that policy is two hundred dollars for this repair.",
+      "glossYue": "呢份保單嘅自負額係二百蚊，用嚟呢次維修。",
+      "audio": "assets/audio/lines/j21-l6.mp3",
+      "audioSlow": "assets/audio/lines/j21-l6-slow.mp3",
+      "say": "The excess on that policy is two hundred dollars for this repair.",
+      "hideGloss": true
+    },
+    {
+      "id": "j21-l7",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "Can I collect the repaired gold pendant here on Friday afternoon, please?",
+      "glossYue": "我可唔可以星期五下晝喺度攞返條整好嘅金吊墜？",
+      "audio": "assets/audio/lines/j21-l7.mp3",
+      "audioSlow": "assets/audio/lines/j21-l7-slow.mp3",
+      "say": "Can I collect the repaired gold pendant here on Friday afternoon, please?",
+      "hideGloss": true
+    },
+    {
+      "id": "j21-l8",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Yes. Friday is fine, and the pendant will be ready at four.",
+      "glossYue": "可以。星期五就得，條吊墜四點會準備好。",
+      "audio": "assets/audio/lines/j21-l8.mp3",
+      "audioSlow": "assets/audio/lines/j21-l8-slow.mp3",
+      "say": "Yes. Friday is fine, and the pendant will be ready at four.",
+      "hideGloss": true
+    }
+  ],
+  "roleplay": {
+    "you": "gus",
+    "intro": "你同 Ida 傾呢件事。等對方講完先答。",
+    "turns": [
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "Yes. I can write that appraisal once I have checked the bent pendant.",
+        "audio": "assets/audio/lines/j21-l2.mp3",
+        "audioSlow": "assets/audio/lines/j21-l2-slow.mp3",
+        "expect": "Could you take a photo of the crack for the claim form?",
+        "keywords": [
+          "photo",
+          "claim"
+        ],
+        "modelAudio": "assets/audio/lines/j21-l3.mp3",
+        "modelSlow": "assets/audio/lines/j21-l3-slow.mp3"
+      },
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "Yes. This close photo shows that crack right beside the small gold clasp.",
+        "audio": "assets/audio/lines/j21-l4.mp3",
+        "audioSlow": "assets/audio/lines/j21-l4-slow.mp3",
+        "expect": "What excess does my insurance policy charge for a repair like this?",
+        "keywords": [
+          "excess",
+          "policy"
+        ],
+        "modelAudio": "assets/audio/lines/j21-l5.mp3",
+        "modelSlow": "assets/audio/lines/j21-l5-slow.mp3"
+      },
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "The excess on that policy is two hundred dollars for this repair.",
+        "audio": "assets/audio/lines/j21-l6.mp3",
+        "audioSlow": "assets/audio/lines/j21-l6-slow.mp3",
+        "expect": "Can I collect the repaired gold pendant here on Friday afternoon, please?",
+        "keywords": [
+          "pendant",
+          "friday"
+        ],
+        "modelAudio": "assets/audio/lines/j21-l7.mp3",
+        "modelSlow": "assets/audio/lines/j21-l7-slow.mp3"
+      }
+    ]
+  },
+  "understand": [
+    {
+      "prompt": "I dropped this gold pendant last night. Could I get a written appraisal? 呢句即係點？",
+      "choices": [
+        "關於相片",
+        "講緊估價",
+        "唔係保險"
+      ],
+      "answer": 1,
+      "explain": "估價。"
+    },
+    {
+      "prompt": "Yes. This close photo shows that crack right beside the small gold clasp. 呢句即係點？",
+      "choices": [
+        "關於相片",
+        "唔係吊墜",
+        "講緊保險"
+      ],
+      "answer": 0,
+      "explain": "相片。"
+    },
+    {
+      "prompt": "What excess does my insurance policy charge for a repair like this? 呢句即係點？",
+      "choices": [
+        "關於估價",
+        "關於吊墜",
+        "講緊保險"
+      ],
+      "answer": 2,
+      "explain": "保險。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I dropped this gold pendant last night. Could I get a written ___?",
+      "example": "I dropped this gold pendant last night. Could I get a written appraisal?",
+      "glossYue": "我尋晚跌咗呢條金吊墜。可唔可以出一份書面估價？",
+      "answer": "appraisal",
+      "choices": [
+        "appraisal",
+        "pendant",
+        "photo"
+      ]
+    },
+    {
+      "pattern": "Could you take a photo of the crack for the claim ___?",
+      "example": "Could you take a photo of the crack for the claim form?",
+      "glossYue": "可唔可以影張相，影到裂痕，用嚟交理賠表？",
+      "answer": "form",
+      "choices": [
+        "form",
+        "photo",
+        "claim"
+      ]
+    },
+    {
+      "pattern": "The excess on that policy is two hundred dollars for this ___.",
+      "example": "The excess on that policy is two hundred dollars for this repair.",
+      "glossYue": "呢份保單嘅自負額係二百蚊，用嚟呢次維修。",
+      "answer": "repair",
+      "choices": [
+        "repair",
+        "policy",
+        "excess"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想用呢課嘅講法。你點講？",
+      "choices": [
+        "I dropped this gold pendant last night. Could I get a written appraisal?",
+        "Could you take a photo of the crack for the claim form?",
+        "What excess does my insurance policy charge for a repair like this?"
+      ],
+      "answer": 1,
+      "explain": "用呢句。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "The",
+        "excess",
+        "on",
+        "that",
+        "policy",
+        "is",
+        "two",
+        "hundred",
+        "dollars",
+        "for",
+        "this",
+        "repair."
+      ],
+      "answer": [
+        "The",
+        "excess",
+        "on",
+        "that",
+        "policy",
+        "is",
+        "two",
+        "hundred",
+        "dollars",
+        "for",
+        "this",
+        "repair."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "pendant",
+        "photo",
+        "appraisal"
+      ],
+      "answer": 2,
+      "lemma": "appraisal-noun"
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "insurance",
+        "pendant",
+        "photo"
+      ],
+      "answer": 1,
+      "lemma": "pendant-noun"
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "估價",
+        "相片",
+        "吊墜"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "保險",
+        "吊墜",
+        "相片"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word fits this lesson?",
+      "choices": [
+        "appraisal",
+        "insurance",
+        "pendant"
+      ],
+      "answer": 1,
+      "explain": "保險。"
+    }
+  ],
+  "shadow": {
+    "lineId": "j21-l1",
+    "hint": "I dropped this gold pendant last night. Could I get a written appraisal?"
+  }
+}

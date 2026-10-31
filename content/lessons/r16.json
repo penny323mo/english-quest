@@ -1,0 +1,358 @@
+{
+  "id": "R16",
+  "unit": "R",
+  "titleYue": "問廚師推介",
+  "titleEn": "Asking for a chef's recommendation",
+  "canDoYue": "你識問今日特餐同廚師推介、要一碟辣一碟唔辣、話花生敏感，同埋加碟飯。",
+  "canDoEn": "Ask today's special and what the chef recommends, order one spicy plate and one mild plate, name a peanut allergy, and add a side of rice.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/r16.webp",
+  "cast": [
+    "tom",
+    "mira"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "mild-adj",
+    "rice-noun",
+    "chef-noun",
+    "special-noun"
+  ],
+  "topicTags": [
+    "特餐",
+    "廚師",
+    "唔辣",
+    "白飯"
+  ],
+  "next": "R5",
+  "sound": {
+    "ipa": "/aɪ/",
+    "title": "mild 入面嗰個音",
+    "note": "mild 有 /aɪ/。chef 有 /ɛ/。",
+    "pairs": [
+      {
+        "a": "mild-adj",
+        "b": "rice-noun"
+      },
+      {
+        "a": "chef-noun",
+        "b": "special-noun"
+      }
+    ],
+    "drill": [
+      "mild-adj",
+      "rice-noun",
+      "chef-noun",
+      "special-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "r16-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "What is today's special, and does the chef recommend that dish?",
+      "glossYue": "今日特餐係咩？廚師推唔推薦嗰味？",
+      "audio": "assets/audio/lines/r16-l1.mp3",
+      "audioSlow": "assets/audio/lines/r16-l1-slow.mp3",
+      "say": "What is today's special, and does the chef recommend that dish?",
+      "hideGloss": false
+    },
+    {
+      "id": "r16-l2",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "Yes. The special is grilled fish, and the chef does recommend it.",
+      "glossYue": "係。特餐係烤魚，廚師都推薦。",
+      "audio": "assets/audio/lines/r16-l2.mp3",
+      "audioSlow": "assets/audio/lines/r16-l2-slow.mp3",
+      "say": "Yes. The special is grilled fish, and the chef does recommend it.",
+      "hideGloss": false
+    },
+    {
+      "id": "r16-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Can I get one spicy plate and one mild plate, please?",
+      "glossYue": "可唔可以要一碟辣、一碟唔辣？",
+      "audio": "assets/audio/lines/r16-l3.mp3",
+      "audioSlow": "assets/audio/lines/r16-l3-slow.mp3",
+      "say": "Can I get one spicy plate and one mild plate, please?",
+      "hideGloss": false
+    },
+    {
+      "id": "r16-l4",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "Yes. The mild plate is tofu, and the spicy dish is prawns.",
+      "glossYue": "可以。唔辣嗰碟係豆腐，辣嗰碟係蝦。",
+      "audio": "assets/audio/lines/r16-l4.mp3",
+      "audioSlow": "assets/audio/lines/r16-l4-slow.mp3",
+      "say": "Yes. The mild plate is tofu, and the spicy dish is prawns.",
+      "hideGloss": true
+    },
+    {
+      "id": "r16-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I have a peanut allergy. Can the kitchen keep peanuts off both?",
+      "glossYue": "我對花生敏感。廚房可唔可以兩碟都唔落花生？",
+      "audio": "assets/audio/lines/r16-l5.mp3",
+      "audioSlow": "assets/audio/lines/r16-l5-slow.mp3",
+      "say": "I have a peanut allergy. Can the kitchen keep peanuts off both?",
+      "hideGloss": true
+    },
+    {
+      "id": "r16-l6",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "Yes. The kitchen will skip peanuts on both of those two plates.",
+      "glossYue": "可以。廚房兩碟都唔會落花生。",
+      "audio": "assets/audio/lines/r16-l6.mp3",
+      "audioSlow": "assets/audio/lines/r16-l6-slow.mp3",
+      "say": "Yes. The kitchen will skip peanuts on both of those two plates.",
+      "hideGloss": true
+    },
+    {
+      "id": "r16-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Can I add a side of rice? How long will it take?",
+      "glossYue": "可唔可以加碟白飯？要幾耐？",
+      "audio": "assets/audio/lines/r16-l7.mp3",
+      "audioSlow": "assets/audio/lines/r16-l7-slow.mp3",
+      "say": "Can I add a side of rice? How long will it take?",
+      "hideGloss": true
+    },
+    {
+      "id": "r16-l8",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "Yes. Rice on the side takes about fifteen minutes from the kitchen.",
+      "glossYue": "可以。加碟白飯大概十五分鐘，廚房而家出。",
+      "audio": "assets/audio/lines/r16-l8.mp3",
+      "audioSlow": "assets/audio/lines/r16-l8-slow.mp3",
+      "say": "Yes. Rice on the side takes about fifteen minutes from the kitchen.",
+      "hideGloss": true
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你同 Mira 傾呢件事。等對方講完先答。",
+    "turns": [
+      {
+        "partner": "Mira",
+        "partnerId": "mira",
+        "line": "Yes. The special is grilled fish, and the chef does recommend it.",
+        "audio": "assets/audio/lines/r16-l2.mp3",
+        "audioSlow": "assets/audio/lines/r16-l2-slow.mp3",
+        "expect": "Can I get one spicy plate and one mild plate, please?",
+        "keywords": [
+          "mild",
+          "spicy"
+        ],
+        "modelAudio": "assets/audio/lines/r16-l3.mp3",
+        "modelSlow": "assets/audio/lines/r16-l3-slow.mp3"
+      },
+      {
+        "partner": "Mira",
+        "partnerId": "mira",
+        "line": "Yes. The mild plate is tofu, and the spicy dish is prawns.",
+        "audio": "assets/audio/lines/r16-l4.mp3",
+        "audioSlow": "assets/audio/lines/r16-l4-slow.mp3",
+        "expect": "I have a peanut allergy. Can the kitchen keep peanuts off both?",
+        "keywords": [
+          "peanut",
+          "allergy"
+        ],
+        "modelAudio": "assets/audio/lines/r16-l5.mp3",
+        "modelSlow": "assets/audio/lines/r16-l5-slow.mp3"
+      },
+      {
+        "partner": "Mira",
+        "partnerId": "mira",
+        "line": "Yes. The kitchen will skip peanuts on both of those two plates.",
+        "audio": "assets/audio/lines/r16-l6.mp3",
+        "audioSlow": "assets/audio/lines/r16-l6-slow.mp3",
+        "expect": "Can I add a side of rice? How long will it take?",
+        "keywords": [
+          "rice",
+          "side"
+        ],
+        "modelAudio": "assets/audio/lines/r16-l7.mp3",
+        "modelSlow": "assets/audio/lines/r16-l7-slow.mp3"
+      }
+    ]
+  },
+  "understand": [
+    {
+      "prompt": "What is today's special, and does the chef recommend that dish? 呢句即係點？",
+      "choices": [
+        "關於白飯",
+        "講緊特餐",
+        "唔係廚師"
+      ],
+      "answer": 1,
+      "explain": "特餐。"
+    },
+    {
+      "prompt": "Can I get one spicy plate and one mild plate, please? 呢句即係點？",
+      "choices": [
+        "講緊唔辣",
+        "關於特餐",
+        "唔係白飯"
+      ],
+      "answer": 0,
+      "explain": "唔辣。"
+    },
+    {
+      "prompt": "Can I add a side of rice? How long will it take? 呢句即係點？",
+      "choices": [
+        "關於廚師",
+        "關於特餐",
+        "講緊白飯"
+      ],
+      "answer": 2,
+      "explain": "白飯。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "What is today's special, and does the chef recommend that ___?",
+      "example": "What is today's special, and does the chef recommend that dish?",
+      "glossYue": "今日特餐係咩？廚師推唔推薦嗰味？",
+      "answer": "dish",
+      "choices": [
+        "dish",
+        "chef",
+        "special"
+      ]
+    },
+    {
+      "pattern": "Yes. The mild plate is tofu, and the spicy ___ is prawns.",
+      "example": "Yes. The mild plate is tofu, and the spicy dish is prawns.",
+      "glossYue": "可以。唔辣嗰碟係豆腐，辣嗰碟係蝦。",
+      "answer": "dish",
+      "choices": [
+        "dish",
+        "mild",
+        "spicy"
+      ]
+    },
+    {
+      "pattern": "Yes. Rice on the side takes about fifteen minutes from the ___.",
+      "example": "Yes. Rice on the side takes about fifteen minutes from the kitchen.",
+      "glossYue": "可以。加碟白飯大概十五分鐘，廚房而家出。",
+      "answer": "kitchen",
+      "choices": [
+        "kitchen",
+        "rice",
+        "side"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想用呢課嘅講法。你點講？",
+      "choices": [
+        "What is today's special, and does the chef recommend that dish?",
+        "Can I get one spicy plate and one mild plate, please?",
+        "I have a peanut allergy. Can the kitchen keep peanuts off both?"
+      ],
+      "answer": 1,
+      "explain": "用呢句。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "Yes.",
+        "Rice",
+        "on",
+        "the",
+        "side",
+        "takes",
+        "about",
+        "fifteen",
+        "minutes",
+        "from",
+        "the",
+        "kitchen."
+      ],
+      "answer": [
+        "Yes.",
+        "Rice",
+        "on",
+        "the",
+        "side",
+        "takes",
+        "about",
+        "fifteen",
+        "minutes",
+        "from",
+        "the",
+        "kitchen."
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "special",
+        "rice",
+        "chef"
+      ],
+      "answer": 0,
+      "lemma": "special-noun"
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "mild",
+        "chef",
+        "rice"
+      ],
+      "answer": 2,
+      "lemma": "rice-noun"
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "白飯",
+        "特餐",
+        "廚師"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "廚師",
+        "唔辣",
+        "白飯"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word fits this lesson?",
+      "choices": [
+        "rice",
+        "mild",
+        "special"
+      ],
+      "answer": 2,
+      "explain": "特餐。"
+    }
+  ],
+  "shadow": {
+    "lineId": "r16-l1",
+    "hint": "What is today's special, and does the chef recommend that dish?"
+  }
+}
