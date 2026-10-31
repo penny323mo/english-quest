@@ -294,34 +294,34 @@
       "lemma": "blanket-noun",
       "choices": [
         "towel",
-        "noisy",
-        "blanket"
+        "blanket",
+        "noisy"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "客人講「the air conditioning is very noisy」，係咩意思？",
       "choices": [
         "免費",
-        "嘈",
-        "靜"
+        "靜",
+        "嘈"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「I am sorry for the inconvenience in this noisy room」，係咩意思？",
       "choices": [
-        "不便",
         "刻字",
+        "不便",
         "收據"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：blanket、noisy、定 quiet？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "noisy",
         "quiet",

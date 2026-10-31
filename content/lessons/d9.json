@@ -289,52 +289,52 @@
       "prompt": "Listen once and pick the word you hear for stopping the card.",
       "lemma": "freeze-verb",
       "choices": [
-        "identity",
         "freeze",
+        "identity",
         "card"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "listen",
       "prompt": "Listen once and pick the phrase you hear for the short cash cap.",
       "lemma": "temporary-limit-phrase",
       "choices": [
-        "temporary limit",
         "identity",
+        "temporary limit",
         "machine"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "You say 'Please show one identity document.' What does identity mean?",
       "choices": [
-        "身份",
         "限額",
-        "工作日"
+        "工作日",
+        "身份"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "You say 'It lasts for one working day.' What does working day mean?",
       "choices": [
-        "銀行卡",
         "工作日",
+        "銀行卡",
         "櫃員機"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "choice",
-      "prompt": "Which word means the box that kept the card: machine, card, or limit?",
+      "prompt": "Which word means the box that kept the card?",
       "choices": [
+        "machine",
         "card",
-        "limit",
-        "machine"
+        "limit"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "machine 呢度係櫃員機。"
     }
   ],

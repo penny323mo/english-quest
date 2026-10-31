@@ -256,21 +256,21 @@
       "prompt": "你聽到邊個？",
       "lemma": "from-prep",
       "choices": [
+        "from",
         "phone",
-        "spell",
-        "from"
+        "spell"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "phone",
       "choices": [
-        "地址",
         "電話",
+        "地址",
         "工作"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -287,20 +287,20 @@
       "prompt": "address",
       "choices": [
         "郵票",
-        "更",
-        "地址"
+        "地址",
+        "更"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "邊句係講自己住邊？",
       "choices": [
         "How much is this?",
-        "Where are you from?",
-        "We always close the shop."
+        "We always close the shop.",
+        "Where are you from?"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "live 係住喺邊。"
     }
   ],

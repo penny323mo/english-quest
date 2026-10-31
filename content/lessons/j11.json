@@ -309,21 +309,21 @@
       "type": "meaning",
       "prompt": "客人講「If you confirmed the deposit, I would book a follow-up and protect the exclusivity of the design.」，exclusivity 係咩意思？",
       "choices": [
-        "獨家",
         "低調",
+        "獨家",
         "週年"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：classic、occasion、定 statement？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
+        "classic",
         "occasion",
-        "statement",
-        "classic"
+        "statement"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "classic 有 /l/。occasion 同 statement 冇。"
     }
   ],

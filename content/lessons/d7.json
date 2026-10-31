@@ -275,11 +275,11 @@
       "prompt": "Listen once and pick the word you hear for a simple haircut.",
       "lemma": "trim-noun",
       "choices": [
-        "price",
         "trim",
+        "price",
         "book"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "listen",
@@ -296,11 +296,11 @@
       "type": "meaning",
       "prompt": "You say 'Please keep a light fringe.' What does fringe mean?",
       "choices": [
-        "瀏海",
         "價錢",
+        "瀏海",
         "預約"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -314,7 +314,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word has /aɪ/: price, fringe, or book?",
+      "prompt": "Which word has /aɪ/?",
       "choices": [
         "book",
         "fringe",

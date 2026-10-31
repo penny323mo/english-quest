@@ -269,11 +269,11 @@
       "prompt": "你聽到邊個？",
       "lemma": "vine-noun",
       "choices": [
+        "vine",
         "wine",
-        "wife",
-        "vine"
+        "wife"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -299,11 +299,11 @@
       "type": "choice",
       "prompt": "邊個開頭係 /v/？",
       "choices": [
+        "very",
         "would",
-        "wife",
-        "very"
+        "wife"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "would 同 wife 係圓唇 /w/。very 先至係 /v/。"
     }
   ],

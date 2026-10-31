@@ -297,21 +297,21 @@
       "type": "meaning",
       "prompt": "Kai 講「The lead time for that logo engraving is three full weeks after you approve the finished artwork.」，lead time 係咩意思？",
       "choices": [
-        "交貨期",
         "電郵",
-        "三十"
+        "三十",
+        "交貨期"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：logo、quote、定 email？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
+        "logo",
         "quote",
-        "email",
-        "logo"
+        "email"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "logo 有 /l/。"
     }
   ],

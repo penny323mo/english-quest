@@ -300,10 +300,10 @@
       "lemma": "message-noun",
       "choices": [
         "bill",
-        "fork",
-        "message"
+        "message",
+        "fork"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -328,13 +328,13 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個字開頭有 /l/：line、hold、定 message？",
+      "prompt": "邊個字開頭有 /l/？",
       "choices": [
+        "line",
         "hold",
-        "message",
-        "line"
+        "message"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "line 開頭係 /l/。hold 同 message 冇。"
     }
   ],

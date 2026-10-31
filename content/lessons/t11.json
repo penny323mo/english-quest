@@ -272,11 +272,11 @@
       "prompt": "Listen once and pick the word you hear for the train route.",
       "lemma": "line-noun",
       "choices": [
-        "ticket",
         "line",
+        "ticket",
         "exit"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "listen",
@@ -293,25 +293,25 @@
       "type": "meaning",
       "prompt": "You say 'Please stay on the Island line.' What does line mean?",
       "choices": [
-        "線路",
         "出口",
+        "線路",
         "票"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "You say 'That ticket is twelve dollars.' What does ticket mean?",
       "choices": [
         "增值",
-        "票",
-        "八達通"
+        "八達通",
+        "票"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "Which word has /ɪ/: exit, line, or ticket?",
+      "prompt": "Which word has /ɪ/?",
       "choices": [
         "line",
         "ticket",

@@ -293,10 +293,10 @@
       "lemma": "fitting-room-phrase",
       "choices": [
         "postcard",
-        "receipt",
-        "fitting room"
+        "fitting room",
+        "receipt"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -312,21 +312,21 @@
       "type": "meaning",
       "prompt": "客人講「I will take the blue shirt and a postcard, and I have the receipt here.」，postcard 係咩意思？",
       "choices": [
-        "明信片",
         "收據",
+        "明信片",
         "戶口"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：smaller、receipt、定 postcard？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
+        "smaller",
         "receipt",
-        "postcard",
-        "smaller"
+        "postcard"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "smaller 有 /l/。receipt 同 postcard 冇。"
     }
   ],

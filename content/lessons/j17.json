@@ -67,11 +67,11 @@
       "id": "j17-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "This freshwater pearl has a soft lustre, and the saltwater one costs more than it here.",
-      "glossYue": "呢顆淡水珍珠光澤柔和，鹹水嗰顆貴啲。",
+      "text": "The saltwater pearl costs much more than this freshwater pearl, so that price sits higher overall.",
+      "glossYue": "鹹水珍珠比呢顆淡水珍珠貴，價錢高啲。",
       "audio": "assets/audio/lines/j17-l2.mp3",
       "audioSlow": "assets/audio/lines/j17-l2-slow.mp3",
-      "say": "This freshwater pearl has a soft lustre, and the saltwater one costs more than it here.",
+      "say": "The saltwater pearl costs much more than this freshwater pearl, so that price sits higher overall.",
       "hideGloss": false
     },
     {
@@ -89,11 +89,11 @@
       "id": "j17-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The price range is fair for you, and you should keep perfume away from the pearl.",
-      "glossYue": "價錢範圍合理，香水要避開珍珠。",
+      "text": "The price range is two hundred to four hundred dollars for this one short pearl strand.",
+      "glossYue": "價錢範圍由二百到四百蚊。",
       "audio": "assets/audio/lines/j17-l4.mp3",
       "audioSlow": "assets/audio/lines/j17-l4-slow.mp3",
-      "say": "The price range is fair for you, and you should keep perfume away from the pearl.",
+      "say": "The price range is two hundred to four hundred dollars for this one short pearl strand.",
       "hideGloss": true
     },
     {
@@ -133,11 +133,11 @@
       "id": "j17-l8",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The certificate lists the full price range, and that soft lustre stays when you wipe it gently.",
-      "glossYue": "證書寫咗完整價錢範圍，光澤柔和，你輕輕抹完都會保持。",
+      "text": "The certificate lists two hundred to four hundred dollars, and that soft lustre stays gentle on it.",
+      "glossYue": "證書寫咗二百到四百蚊，光澤仍然柔和。",
       "audio": "assets/audio/lines/j17-l8.mp3",
       "audioSlow": "assets/audio/lines/j17-l8-slow.mp3",
-      "say": "The certificate lists the full price range, and that soft lustre stays when you wipe it gently.",
+      "say": "The certificate lists two hundred to four hundred dollars, and that soft lustre stays gentle on it.",
       "hideGloss": true
     }
   ],
@@ -186,9 +186,9 @@
       ]
     },
     {
-      "pattern": "The price range is fair for you, and you should keep ___ away from the pearl.",
-      "example": "The price range is fair for you, and you should keep perfume away from the pearl.",
-      "glossYue": "香水要避開珍珠。",
+      "pattern": "I will keep ___ away from it, and I will wipe it after I wear it.",
+      "example": "I will keep perfume away from it, and I will wipe it after I wear it.",
+      "glossYue": "我會避開香水。",
       "answer": "perfume",
       "choices": [
         "perfume",
@@ -242,7 +242,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "This freshwater pearl has a soft lustre, and the saltwater one costs more than it here.",
+        "line": "The saltwater pearl costs much more than this freshwater pearl, so that price sits higher overall.",
         "audio": "assets/audio/lines/j17-l2.mp3",
         "audioSlow": "assets/audio/lines/j17-l2-slow.mp3",
         "expect": "What is the full price range for it, and should I keep it away from perfume?",
@@ -256,7 +256,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "The price range is fair for you, and you should keep perfume away from the pearl.",
+        "line": "The price range is two hundred to four hundred dollars for this one short pearl strand.",
         "audio": "assets/audio/lines/j17-l4.mp3",
         "audioSlow": "assets/audio/lines/j17-l4-slow.mp3",
         "expect": "Do I wipe the pearl after wearing it, and is there a full certificate with it?",
@@ -289,32 +289,32 @@
       "prompt": "Listen once and pick the word you hear for the soft shine of the pearl.",
       "lemma": "lustre-noun",
       "choices": [
-        "certificate",
         "lustre",
+        "certificate",
         "perfume"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear for the paper that lists the price.",
       "lemma": "certificate-noun",
       "choices": [
-        "certificate",
         "pearl",
+        "certificate",
         "price"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "You say 'Keep perfume away.' What does perfume mean?",
       "choices": [
-        "香水",
         "光澤",
-        "證書"
+        "證書",
+        "香水"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
@@ -328,13 +328,13 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word means the gem in this necklace: pearl, perfume, or certificate?",
+      "prompt": "Which word means the gem in this necklace?",
       "choices": [
         "perfume",
-        "certificate",
-        "pearl"
+        "pearl",
+        "certificate"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "pearl 係珍珠。"
     }
   ],

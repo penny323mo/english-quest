@@ -136,7 +136,7 @@
 - **Vocab:** pearl, lustre, price, perfume, wipe, certificate
 - **Grammar:** Should I keep it away from perfume? Do I wipe the pearl after wearing it?
 - **Dialogue beats:** Freshwater, not saltwater → Soft lustre, saltwater costs more → Price range and perfume → Keep perfume away → Wipe and certificate → Wipe gently, certificate in the box → Keep perfume away and wipe → Certificate lists the price range
-- **Coherence:** one pearl, perfume stays away from it, wipe it after wearing, and the certificate lists the price range. Checked against the earlier request.
+- **Coherence:** the saltwater pearl costs more than this freshwater pearl. The price range is two hundred to four hundred dollars, and the certificate lists that same range. Perfume stays away, and the pearl is wiped after wearing.
 
 ### J11 — VIP / high-ticket consult · B2 · NEW
 - **Goals:** Longer consult: occasion, timeline, budget band, follow-up call.
@@ -258,11 +258,33 @@
 - **Dialogue beats:** Approach staff → Describe → Where/when → Next steps → Reassure self
 
 ### T12 — Hotel check-in problem / 酒店入住出問題 · A2/B1 · SHIPPED
-- **Goals:** Say the room is not ready, ask for early check in and a non-smoking choice, leave the luggage at the desk, and take the wifi password from the desk.
+- **Goals:** Say the room is not ready, ask for a non-smoking room, leave the luggage at the desk, come back after four when the room is ready, and take the wifi password from a card at the front desk.
 - **Vocab:** reservation, room, luggage, early check in, non-smoking, wifi, password
 - **Grammar:** Could we please have a non-smoking choice? What is the wifi password?
-- **Dialogue beats:** Reservation and early check in → Luggage stays by the desk → Non-smoking and luggage stays → Early check in after four → Wifi password → Card from the front desk → Leave the luggage and return after four → Desk calls the name
-- **Coherence:** one luggage plan (it stays at the desk) and one ready time (after four). The password is printed on a card taken at the desk. Checked against the earlier request.
+- **Dialogue beats:** Reservation, room ready soon → Luggage stays by the desk → Non-smoking room, luggage stays → Room is ready after four → Wifi password → Card from the front desk → Leave the luggage and return after four → Desk calls the name
+- **Coherence:** one luggage plan (it stays at the desk) and one ready time (after four, when the room is ready, not early check-in). The password is printed on a card taken at the desk. Checked against the earlier request.
+
+
+### R12 — Booking a table for a group / 訂枱請客 · A2/B1 · SHIPPED
+- **Goals:** Book a party of eight for Friday at half past seven, ask for a private room, the minimum spend, a deposit, and a high chair, and confirm by text.
+- **Vocab:** party of, private room, minimum spend, high chair, deposit, confirm
+- **Grammar:** We are a party of eight. What is the minimum spend?
+- **Dialogue beats:** Party of eight on Friday → Private room → Minimum spend → Two hundred, a child may sit → High chair → Chair by the window → Deposit and a text → Pay at the desk and confirm
+- **Coherence:** one booking for eight on Friday at half past seven. The private room, the minimum spend, the high chair, and the deposit belong to that booking. Confirmation is by text after the deposit.
+
+### W10 — Handling a customer complaint by email / 回覆客人投訴電郵 · B1/B2 · SHIPPED
+- **Goals:** Open with a sincere apology, name the delay, offer a partial refund or store credit, confirm the amount, and close with the next step.
+- **Vocab:** apology, sincere, delayed, refund, credit, confirm, next step
+- **Grammar:** Should I offer a refund, or store credit? What is the next step?
+- **Dialogue beats:** Sincere apology → Name the warehouse delay → Ask about a full refund → Partial refund only → Offer store credit → Confirm the amount → Ask the next step → Phone call, then thank you
+- **Coherence:** one late order. The apology comes first, the delay is named, the offer is a partial refund or store credit, and the next step is a short phone call.
+
+### T14 — Missed connection at the airport / 轉機趕唔切 · B1 · SHIPPED
+- **Goals:** Say the first flight was delayed, you missed the connection, ask to rebook, confirm the checked bag transfers, take a meal voucher, and collect a new boarding pass.
+- **Vocab:** delayed, connection, rebook, transfer, voucher, boarding pass
+- **Grammar:** Can you rebook me? Will my checked bag transfer?
+- **Dialogue beats:** Delayed flight, missed connection → Next connection, another gate → Rebook and the bag → Rebooked, bag transfers → Meal voucher and the new gate → Voucher and the posted gate → New boarding pass → Pass is printing
+- **Coherence:** one missed connection. The rebook, the bag transfer, the meal voucher, and the new boarding pass all belong to that next flight.
 
 ### T13 — At the pharmacy abroad / 外地藥房買藥 · A2/B1 · SHIPPED
 - **Goals:** Say you have a headache and a fever, ask how many times a day, ask whether to take it after meals, and notice a drowsy tablet or a prescription.
@@ -444,7 +466,8 @@ Every round until map complete, ship **≥3 NEW lessons** in this order (skip al
 16. **J15, T12, D9** (ring size, hotel check-in problem, ATM card)
 17. **R11, W9, J16** (allergies, annual leave, engraving)
 18. **T13, D10, J17** (pharmacy abroad, taxi app, pearl care)
-19. Then polish / legendary review nodes / further B2 stretch
+19. **R12, W10, T14** (group booking, complaint email, missed connection)
+20. Then polish / legendary review nodes / further B2 stretch
 
 **Path UX:** show CEFR chip (A1/A2/B1/B2) on each node; group Path into level tracks; lock by prerequisite; keep `soon:true` teasers for unshipped.
 

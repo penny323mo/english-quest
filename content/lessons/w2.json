@@ -304,11 +304,11 @@
       "type": "meaning",
       "prompt": "客人講「Good morning Tom, I am following up today on the email I have sent regarding the deadline.」，following up 係咩意思？",
       "choices": [
-        "附件",
         "跟進",
+        "附件",
         "取消"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -322,13 +322,13 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：clarify、propose、定 confirm？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "propose",
-        "confirm",
-        "clarify"
+        "clarify",
+        "confirm"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "clarify 有 /l/。propose 同 confirm 冇。"
     }
   ],

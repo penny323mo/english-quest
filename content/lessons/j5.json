@@ -282,21 +282,21 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "finger-noun",
       "choices": [
+        "finger",
         "fit",
-        "wrist",
-        "finger"
+        "wrist"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "客人講「Can you measure my finger, and tell me the size?」，係咩意思？",
       "choices": [
         "玉",
-        "碼",
-        "稅"
+        "稅",
+        "碼"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",

@@ -293,10 +293,10 @@
       "lemma": "balance-noun",
       "choices": [
         "branch",
-        "form",
-        "balance"
+        "balance",
+        "form"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -320,7 +320,7 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：balance、account、定 fee？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "account",
         "fee",

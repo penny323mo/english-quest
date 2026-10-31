@@ -333,20 +333,20 @@
       "lemma": "contactless-adj",
       "choices": [
         "signature",
-        "wrap",
-        "contactless"
+        "contactless",
+        "wrap"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "客人講「This purchase is tax-free for you, which means you can claim the tax later.」，係咩意思？",
       "choices": [
-        "紙袋",
         "免稅",
+        "紙袋",
         "收據"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -363,10 +363,10 @@
       "prompt": "邊個有 /l/？",
       "choices": [
         "cash",
-        "pay",
-        "contactless"
+        "contactless",
+        "pay"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "contactless 有 /l/。cash 尾係 /ʃ/。"
     }
   ],

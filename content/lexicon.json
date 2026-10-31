@@ -36894,9 +36894,9 @@
       "collocations": [
         "plate number"
       ],
-      "example": "The plate number is blue four two.",
-      "exampleYue": "車牌係藍四二。",
-      "say": "The plate number is blue four two.",
+      "example": "The plate number is blue seven four two.",
+      "exampleYue": "車牌係藍七四二。",
+      "say": "The plate number is blue seven four two.",
       "variants": [],
       "note": "",
       "sources": [
@@ -36907,18 +36907,18 @@
       "senseMismatch": false,
       "cmuLemma": "plate",
       "phrase": true,
-      "audioSha256": "17e4a77686508181406cb1656818ae80d55416e9ec619b60274c784edaf7b414",
+      "audioSha256": "b86e44b6e2ba0412b4024ace556d6891df4575e65368dfb68e9f8d0e6f0b76ae",
       "register": "旅行",
       "usageNotes": "plate number 係車牌。",
       "pitfallsYue": "車牌唔係收據。",
       "related": [],
       "examples": [
         {
-          "en": "The plate number is blue four two.",
-          "yue": "車牌係藍四二。",
+          "en": "The plate number is blue seven four two.",
+          "yue": "車牌係藍七四二。",
           "audio": "assets/audio/words/plate-number-phrase.mp3",
           "audioSlow": "assets/audio/words/plate-number-phrase-slow.mp3",
-          "say": "The plate number is blue four two."
+          "say": "The plate number is blue seven four two."
         },
         {
           "en": "What is the plate number?",
@@ -37225,6 +37225,307 @@
           "audio": "assets/audio/words/wipe-verb-ex2.mp3",
           "audioSlow": "assets/audio/words/wipe-verb-ex2-slow.mp3",
           "say": "I will wipe it after I wear it."
+        }
+      ]
+    },
+    {
+      "id": "private-room-phrase",
+      "lemma": "private room",
+      "pos": "phrase",
+      "senseId": "closed-dining",
+      "ipa": "/ˈpɹaɪ.vət ˈɹum/",
+      "syllables": [
+        "pri",
+        "vate",
+        "room"
+      ],
+      "syllableIpa": [
+        "ˈpɹaɪ",
+        "vət",
+        "ˈɹum"
+      ],
+      "stress": 1,
+      "arpabet": "P R AY1 V AH0 T | R UW1 M",
+      "audio": "assets/audio/words/private-room-phrase.mp3",
+      "audioSlow": "assets/audio/words/private-room-phrase-slow.mp3",
+      "glossYue": "包廂",
+      "glossZh": "包廂",
+      "jyutping": "baau1 soeng1",
+      "collocations": [
+        "a private room"
+      ],
+      "example": "The private room is free on Friday.",
+      "exampleYue": "星期五包廂有位。",
+      "say": "The private room is free on Friday.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "private",
+      "phrase": true,
+      "audioSha256": "8e649a9840469d42c666a733bf55d1882f6303463e5235ec6c42b4bdbe890f0a",
+      "register": "餐廳",
+      "usageNotes": "private room 係包廂。",
+      "pitfallsYue": "包廂唔係大廳卡座。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The private room is free on Friday.",
+          "yue": "星期五包廂有位。",
+          "audio": "assets/audio/words/private-room-phrase.mp3",
+          "audioSlow": "assets/audio/words/private-room-phrase-slow.mp3",
+          "say": "The private room is free on Friday."
+        },
+        {
+          "en": "We would like the private room for eight.",
+          "yue": "我哋八位想要包廂。",
+          "audio": "assets/audio/words/private-room-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/private-room-phrase-ex2-slow.mp3",
+          "say": "We would like the private room for eight."
+        }
+      ]
+    },
+    {
+      "id": "minimum-spend-phrase",
+      "lemma": "minimum spend",
+      "pos": "phrase",
+      "senseId": "lowest-bill",
+      "ipa": "/ˈmɪ.nə.məm ˈspɛnd/",
+      "syllables": [
+        "min",
+        "i",
+        "mum",
+        "spend"
+      ],
+      "syllableIpa": [
+        "ˈmɪ",
+        "nə",
+        "məm",
+        "ˈspɛnd"
+      ],
+      "stress": 1,
+      "arpabet": "M IH1 N AH0 M AH0 M | S P EH1 N D",
+      "audio": "assets/audio/words/minimum-spend-phrase.mp3",
+      "audioSlow": "assets/audio/words/minimum-spend-phrase-slow.mp3",
+      "glossYue": "最低消費",
+      "glossZh": "最低消費",
+      "jyutping": "zeoi3 dai1 siu1 fai3",
+      "collocations": [
+        "the minimum spend"
+      ],
+      "example": "The minimum spend is two hundred dollars.",
+      "exampleYue": "最低消費係二百蚊。",
+      "say": "The minimum spend is two hundred dollars.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "minimum",
+      "phrase": true,
+      "audioSha256": "32e16dcdde101a0bd51ed7ed0801420f7a039e76023e5b2c5b19ead330815588",
+      "register": "餐廳",
+      "usageNotes": "minimum spend 係最低消費。",
+      "pitfallsYue": "最低消費唔係訂金。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The minimum spend is two hundred dollars.",
+          "yue": "最低消費係二百蚊。",
+          "audio": "assets/audio/words/minimum-spend-phrase.mp3",
+          "audioSlow": "assets/audio/words/minimum-spend-phrase-slow.mp3",
+          "say": "The minimum spend is two hundred dollars."
+        },
+        {
+          "en": "A party of eight meets the minimum spend.",
+          "yue": "八位已經達到最低消費。",
+          "audio": "assets/audio/words/minimum-spend-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/minimum-spend-phrase-ex2-slow.mp3",
+          "say": "A party of eight meets the minimum spend."
+        }
+      ]
+    },
+    {
+      "id": "high-chair-phrase",
+      "lemma": "high chair",
+      "pos": "phrase",
+      "senseId": "child-seat",
+      "ipa": "/ˈhaɪ ˈtʃɛɹ/",
+      "syllables": [
+        "high",
+        "chair"
+      ],
+      "syllableIpa": [
+        "ˈhaɪ",
+        "ˈtʃɛɹ"
+      ],
+      "stress": 1,
+      "arpabet": "HH AY1 | CH EH1 R",
+      "audio": "assets/audio/words/high-chair-phrase.mp3",
+      "audioSlow": "assets/audio/words/high-chair-phrase-slow.mp3",
+      "glossYue": "兒童椅",
+      "glossZh": "兒童椅",
+      "jyutping": "ji4 tung4 ji2",
+      "collocations": [
+        "one high chair"
+      ],
+      "example": "Could we have one high chair?",
+      "exampleYue": "可唔可以要一張兒童椅？",
+      "say": "Could we have one high chair?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "high",
+      "phrase": true,
+      "audioSha256": "1b124b55550f8feed0421eaf62029549355b8d7a24cbb457fdafcda0628499d6",
+      "register": "餐廳",
+      "usageNotes": "high chair 係兒童椅。",
+      "pitfallsYue": "兒童椅唔係大人櫈。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Could we have one high chair?",
+          "yue": "可唔可以要一張兒童椅？",
+          "audio": "assets/audio/words/high-chair-phrase.mp3",
+          "audioSlow": "assets/audio/words/high-chair-phrase-slow.mp3",
+          "say": "Could we have one high chair?"
+        },
+        {
+          "en": "The high chair sits by the window.",
+          "yue": "兒童椅放喺窗邊。",
+          "audio": "assets/audio/words/high-chair-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/high-chair-phrase-ex2-slow.mp3",
+          "say": "The high chair sits by the window."
+        }
+      ]
+    },
+    {
+      "id": "credit-noun",
+      "lemma": "credit",
+      "pos": "noun",
+      "senseId": "store-credit",
+      "ipa": "/ˈkɹɛ.dət/",
+      "syllables": [
+        "cred",
+        "it"
+      ],
+      "syllableIpa": [
+        "ˈkɹɛ",
+        "dət"
+      ],
+      "stress": 1,
+      "arpabet": "K R EH1 D AH0 T",
+      "audio": "assets/audio/words/credit-noun.mp3",
+      "audioSlow": "assets/audio/words/credit-noun-slow.mp3",
+      "glossYue": "店舖餘額",
+      "glossZh": "店舖餘額",
+      "jyutping": "dim3 pou3 jyu4 ngaak6",
+      "collocations": [
+        "store credit"
+      ],
+      "example": "Store credit is kinder than cash.",
+      "exampleYue": "店舖餘額好過現金。",
+      "say": "Store credit is kinder than cash.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "credit",
+      "phrase": false,
+      "audioSha256": "8160ae1a876c242d224bf6cac603ec2bf3abf68780830a6ee76546fd9063ba89",
+      "register": "職場",
+      "usageNotes": "credit 呢度係店舖餘額，唔係信用卡。",
+      "pitfallsYue": "店舖餘額唔等於現金退款。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Store credit is kinder than cash.",
+          "yue": "店舖餘額好過現金。",
+          "audio": "assets/audio/words/credit-noun.mp3",
+          "audioSlow": "assets/audio/words/credit-noun-slow.mp3",
+          "say": "Store credit is kinder than cash."
+        },
+        {
+          "en": "I can offer store credit on this order.",
+          "yue": "我可以就呢張單畀店舖餘額。",
+          "audio": "assets/audio/words/credit-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/credit-noun-ex2-slow.mp3",
+          "say": "I can offer store credit on this order."
+        }
+      ]
+    },
+    {
+      "id": "next-step-phrase",
+      "lemma": "next step",
+      "pos": "phrase",
+      "senseId": "following-action",
+      "ipa": "/ˈnɛkst ˈstɛp/",
+      "syllables": [
+        "next",
+        "step"
+      ],
+      "syllableIpa": [
+        "ˈnɛkst",
+        "ˈstɛp"
+      ],
+      "stress": 1,
+      "arpabet": "N EH1 K S T | S T EH1 P",
+      "audio": "assets/audio/words/next-step-phrase.mp3",
+      "audioSlow": "assets/audio/words/next-step-phrase-slow.mp3",
+      "glossYue": "下一步",
+      "glossZh": "下一步",
+      "jyutping": "haa6 jat1 bou6",
+      "collocations": [
+        "the next step"
+      ],
+      "example": "The next step is a short phone call.",
+      "exampleYue": "下一步係打個短電話。",
+      "say": "The next step is a short phone call.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "next",
+      "phrase": true,
+      "audioSha256": "5ce8d29ea48792f6db65c685785c694ed014384541a8d59ed5a89efc3bf05aa4",
+      "register": "職場",
+      "usageNotes": "next step 係下一步。",
+      "pitfallsYue": "下一步唔係道歉本身。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The next step is a short phone call.",
+          "yue": "下一步係打個短電話。",
+          "audio": "assets/audio/words/next-step-phrase.mp3",
+          "audioSlow": "assets/audio/words/next-step-phrase-slow.mp3",
+          "say": "The next step is a short phone call."
+        },
+        {
+          "en": "Please tell me the next step after the email.",
+          "yue": "請話我知電郵之後嘅下一步。",
+          "audio": "assets/audio/words/next-step-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/next-step-phrase-ex2-slow.mp3",
+          "say": "Please tell me the next step after the email."
         }
       ]
     }

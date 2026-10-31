@@ -254,21 +254,21 @@
       "prompt": "你聽到邊個？",
       "lemma": "sheep-noun",
       "choices": [
+        "sheep",
         "ship",
-        "sit",
-        "sheep"
+        "sit"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "breath",
       "choices": [
-        "銀戒指",
         "一啖氣",
+        "銀戒指",
         "登機證"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -285,10 +285,10 @@
       "prompt": "邊對先係短／長？",
       "choices": [
         "thank / sank",
-        "wine / vine",
-        "ship / sheep"
+        "ship / sheep",
+        "wine / vine"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "今課只分長短元音。"
     }
   ],

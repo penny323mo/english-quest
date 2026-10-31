@@ -292,11 +292,11 @@
       "prompt": "聽一次，揀你聽到嘅字.",
       "lemma": "fragile-adj",
       "choices": [
+        "fragile",
         "weight",
-        "stamp",
-        "fragile"
+        "stamp"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -312,21 +312,21 @@
       "type": "meaning",
       "prompt": "How long will it take to reach the destination?",
       "choices": [
-        "去到目的地要幾耐",
         "邊個計劃平啲",
+        "去到目的地要幾耐",
         "請串多次個名"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "Please mark the full weight on the form.",
       "choices": [
         "請開通電話卡",
-        "請講你嘅工作",
-        "請喺表格標明重量"
+        "請喺表格標明重量",
+        "請講你嘅工作"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "weight 係重量。form 係表格。"
     }
   ],

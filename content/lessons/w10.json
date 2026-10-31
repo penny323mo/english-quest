@@ -1,0 +1,345 @@
+{
+  "id": "W10",
+  "unit": "W",
+  "titleYue": "回覆客人投訴電郵",
+  "titleEn": "Replying to a complaint by email",
+  "canDoYue": "你識講誠懇道歉、講明延遲、畀部分退款或者店舖餘額、確認金額，同埋講下一步。",
+  "canDoEn": "Open a complaint email with a sincere apology, name the delay, offer a partial refund or store credit, confirm the amount, and close with the next step.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/w10.webp",
+  "cast": [
+    "tom",
+    "ren"
+  ],
+  "cefr": "B1/B2",
+  "lemmas": [
+    "apology-noun",
+    "sincere-adj",
+    "delayed-adj",
+    "refund-noun",
+    "credit-noun",
+    "confirm-verb",
+    "next-step-phrase"
+  ],
+  "topicTags": [
+    "道歉",
+    "延遲",
+    "退款",
+    "誠懇",
+    "確認",
+    "餘額",
+    "下一步"
+  ],
+  "next": "J14",
+  "sound": {
+    "ipa": "/eɪ/",
+    "title": "delayed 入面嗰個音",
+    "note": "delayed 有 /eɪ/。apology 有 /ɑ/。",
+    "pairs": [
+      {
+        "a": "delayed-adj",
+        "b": "apology-noun"
+      },
+      {
+        "a": "credit-noun",
+        "b": "next-step-phrase"
+      }
+    ],
+    "drill": [
+      "delayed-adj",
+      "apology-noun",
+      "credit-noun",
+      "refund-noun",
+      "next-step-phrase"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "w10-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I will open this customer email with a short sincere apology for the very late order delivery.",
+      "glossYue": "我會用短短一句誠懇道歉，開呢封客人電郵，講貨送得遲。",
+      "audio": "assets/audio/lines/w10-l1.mp3",
+      "audioSlow": "assets/audio/lines/w10-l1-slow.mp3",
+      "say": "I will open this customer email with a short sincere apology for the very late order delivery.",
+      "hideGloss": false
+    },
+    {
+      "id": "w10-l2",
+      "speaker": "ren",
+      "speakerLabel": "Ren",
+      "text": "The order was delayed at our warehouse last week, so name that delay before you offer any money.",
+      "glossYue": "張單上星期喺倉庫延遲，寫電郵先講清楚再提錢。",
+      "audio": "assets/audio/lines/w10-l2.mp3",
+      "audioSlow": "assets/audio/lines/w10-l2-slow.mp3",
+      "say": "The order was delayed at our warehouse last week, so name that delay before you offer any money.",
+      "hideGloss": false
+    },
+    {
+      "id": "w10-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Should I offer a full cash refund in this email, or keep the money talk for later?",
+      "glossYue": "我應唔應該喺電郵度畀全額現金退款，定係遲啲先講錢？",
+      "audio": "assets/audio/lines/w10-l3.mp3",
+      "audioSlow": "assets/audio/lines/w10-l3-slow.mp3",
+      "say": "Should I offer a full cash refund in this email, or keep the money talk for later?",
+      "hideGloss": false
+    },
+    {
+      "id": "w10-l4",
+      "speaker": "ren",
+      "speakerLabel": "Ren",
+      "text": "Please offer a partial refund in this email, and do not promise the full cash amount back.",
+      "glossYue": "請喺電郵度畀部分退款，唔好承諾全額現金會退返。",
+      "audio": "assets/audio/lines/w10-l4.mp3",
+      "audioSlow": "assets/audio/lines/w10-l4-slow.mp3",
+      "say": "Please offer a partial refund in this email, and do not promise the full cash amount back.",
+      "hideGloss": true
+    },
+    {
+      "id": "w10-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "May I offer store credit instead of cash, and will you confirm that amount with me first?",
+      "glossYue": "我可唔可以改為畀店舖餘額，你會唔會先同我確認金額？",
+      "audio": "assets/audio/lines/w10-l5.mp3",
+      "audioSlow": "assets/audio/lines/w10-l5-slow.mp3",
+      "say": "May I offer store credit instead of cash, and will you confirm that amount with me first?",
+      "hideGloss": true
+    },
+    {
+      "id": "w10-l6",
+      "speaker": "ren",
+      "speakerLabel": "Ren",
+      "text": "Yes, store credit is kinder than paying cash, and I will confirm that amount before you send it.",
+      "glossYue": "店舖餘額好過畀現金，你寄出之前我會確認金額。",
+      "audio": "assets/audio/lines/w10-l6.mp3",
+      "audioSlow": "assets/audio/lines/w10-l6-slow.mp3",
+      "say": "Yes, store credit is kinder than paying cash, and I will confirm that amount before you send it.",
+      "hideGloss": true
+    },
+    {
+      "id": "w10-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "What is the next step after I send this email, and how should I close it politely?",
+      "glossYue": "我寄出電郵之後下一步係咩，點樣有禮收尾？",
+      "audio": "assets/audio/lines/w10-l7.mp3",
+      "audioSlow": "assets/audio/lines/w10-l7-slow.mp3",
+      "say": "What is the next step after I send this email, and how should I close it politely?",
+      "hideGloss": true
+    },
+    {
+      "id": "w10-l8",
+      "speaker": "ren",
+      "speakerLabel": "Ren",
+      "text": "The next step is a short phone call, and please close the email with a polite thank you.",
+      "glossYue": "下一步係打個短電話，請用有禮嘅多謝收尾。",
+      "audio": "assets/audio/lines/w10-l8.mp3",
+      "audioSlow": "assets/audio/lines/w10-l8-slow.mp3",
+      "say": "The next step is a short phone call, and please close the email with a polite thank you.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "I will open this customer email with a short sincere apology for the very late order delivery. 呢句即係點？",
+      "choices": [
+        "用誠懇道歉開電郵",
+        "問退款金額",
+        "問下一步係電話"
+      ],
+      "answer": 0,
+      "explain": "sincere 係誠懇。apology 係道歉。"
+    },
+    {
+      "prompt": "Should I offer a full cash refund in this email, or keep the money talk for later? 即係問緊咩？",
+      "choices": [
+        "問店舖餘額",
+        "問係咪喺電郵畀全額退款",
+        "問下一步點收尾"
+      ],
+      "answer": 1,
+      "explain": "refund 係退款。"
+    },
+    {
+      "prompt": "Yes, store credit is kinder than paying cash, and I will confirm that amount before you send it. 呢句即係點？",
+      "choices": [
+        "道歉未寫",
+        "只係講延遲",
+        "店舖餘額好過現金，寄出前確認"
+      ],
+      "answer": 2,
+      "explain": "credit 係店舖餘額。confirm 係確認。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I will open this customer email with a short sincere ___ for the very late order delivery.",
+      "example": "I will open this customer email with a short sincere apology for the very late order delivery.",
+      "glossYue": "誠懇道歉。",
+      "answer": "apology",
+      "choices": [
+        "apology",
+        "refund",
+        "credit"
+      ]
+    },
+    {
+      "pattern": "May I offer store ___ instead of cash, and will you confirm that amount with me first?",
+      "example": "May I offer store credit instead of cash, and will you confirm that amount with me first?",
+      "glossYue": "店舖餘額。",
+      "answer": "credit",
+      "choices": [
+        "credit",
+        "refund",
+        "apology"
+      ]
+    },
+    {
+      "pattern": "What is the ___ after I send this email, and how should I close it politely?",
+      "example": "What is the next step after I send this email, and how should I close it politely?",
+      "glossYue": "下一步。",
+      "answer": "next step",
+      "choices": [
+        "next step",
+        "apology",
+        "refund"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想問退款定餘額。你點講？",
+      "choices": [
+        "Should I offer a full cash refund in this email, or keep the money talk for later?",
+        "I will open this customer email with a short sincere apology for the very late order delivery.",
+        "What is the next step after I send this email, and how should I close it politely?"
+      ],
+      "answer": 0,
+      "explain": "問 refund。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "next",
+        "step"
+      ],
+      "answer": [
+        "next",
+        "step"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你寫緊投訴電郵。同 Ren 講道歉同餘額。可以講：apology、credit。",
+    "turns": [
+      {
+        "partner": "Ren",
+        "partnerId": "ren",
+        "line": "The order was delayed at our warehouse last week, so name that delay before you offer any money.",
+        "audio": "assets/audio/lines/w10-l2.mp3",
+        "audioSlow": "assets/audio/lines/w10-l2-slow.mp3",
+        "expect": "Should I offer a full cash refund in this email, or keep the money talk for later?",
+        "keywords": [
+          "refund",
+          "email"
+        ],
+        "modelAudio": "assets/audio/lines/w10-l3.mp3",
+        "modelSlow": "assets/audio/lines/w10-l3-slow.mp3"
+      },
+      {
+        "partner": "Ren",
+        "partnerId": "ren",
+        "line": "Please offer a partial refund in this email, and do not promise the full cash amount back.",
+        "audio": "assets/audio/lines/w10-l4.mp3",
+        "audioSlow": "assets/audio/lines/w10-l4-slow.mp3",
+        "expect": "May I offer store credit instead of cash, and will you confirm that amount with me first?",
+        "keywords": [
+          "credit",
+          "confirm"
+        ],
+        "modelAudio": "assets/audio/lines/w10-l5.mp3",
+        "modelSlow": "assets/audio/lines/w10-l5-slow.mp3"
+      },
+      {
+        "partner": "Ren",
+        "partnerId": "ren",
+        "line": "Yes, store credit is kinder than paying cash, and I will confirm that amount before you send it.",
+        "audio": "assets/audio/lines/w10-l6.mp3",
+        "audioSlow": "assets/audio/lines/w10-l6-slow.mp3",
+        "expect": "What is the next step after I send this email, and how should I close it politely?",
+        "keywords": [
+          "next",
+          "step"
+        ],
+        "modelAudio": "assets/audio/lines/w10-l7.mp3",
+        "modelSlow": "assets/audio/lines/w10-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear for saying sorry to a customer.",
+      "lemma": "apology-noun",
+      "choices": [
+        "apology",
+        "refund",
+        "credit"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear for money kept at the shop for a later order.",
+      "lemma": "credit-noun",
+      "choices": [
+        "delayed",
+        "sincere",
+        "credit"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'a sincere apology.' What does sincere mean?",
+      "choices": [
+        "退款",
+        "誠懇",
+        "延遲"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'The next step is a phone call.' What does next step mean?",
+      "choices": [
+        "下一步",
+        "餘額",
+        "道歉"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word means money returned to the customer?",
+      "choices": [
+        "delayed",
+        "refund",
+        "credit"
+      ],
+      "answer": 1,
+      "explain": "refund 係退款。"
+    }
+  ],
+  "shadow": {
+    "lineId": "w10-l1",
+    "hint": "I will open this customer email with a short sincere apology for the very late order delivery."
+  }
+}

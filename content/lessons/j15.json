@@ -289,22 +289,22 @@
       "prompt": "Listen once and pick the word you hear when the ring feels too small.",
       "lemma": "tight-adj",
       "choices": [
-        "receipt",
         "tight",
+        "receipt",
         "Saturday"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "listen",
       "prompt": "Listen once and pick the phrase you hear for a larger fit.",
       "lemma": "half-size-phrase",
       "choices": [
-        "half a size",
         "warranty",
+        "half a size",
         "receipt"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -320,15 +320,15 @@
       "type": "meaning",
       "prompt": "You say 'The warranty covers this ring.' What does warranty mean?",
       "choices": [
-        "半碼",
         "保養",
+        "半碼",
         "緊"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "choice",
-      "prompt": "Which word has /aɪ/: tight, Saturday, or receipt?",
+      "prompt": "Which word has /aɪ/?",
       "choices": [
         "receipt",
         "Saturday",

@@ -307,15 +307,15 @@
       "type": "meaning",
       "prompt": "職員講「A refund is possible, and a hotel voucher remains an alternative if you prefer to stay overnight.」，hotel voucher 係咩意思？",
       "choices": [
-        "酒店券",
         "退款",
+        "酒店券",
         "閘口"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：cancelled、delayed、定 voucher？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "delayed",
         "voucher",

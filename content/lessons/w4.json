@@ -282,10 +282,10 @@
       "lemma": "commute-noun",
       "choices": [
         "coffee",
-        "ready",
-        "commute"
+        "commute",
+        "ready"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -301,21 +301,21 @@
       "type": "meaning",
       "prompt": "同事講「Yes, I think so. We can catch up later after the notes are on the table.」，catch up later 係咩意思？",
       "choices": [
-        "遲啲再傾",
         "而家取消",
+        "遲啲再傾",
         "改去室外"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：shall、weekend、定 coffee？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "weekend",
-        "coffee",
-        "shall"
+        "shall",
+        "coffee"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "shall 有 /l/。weekend 同 coffee 冇。"
     }
   ],

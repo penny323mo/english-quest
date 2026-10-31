@@ -309,20 +309,20 @@
       "lemma": "discount-noun",
       "choices": [
         "deal",
-        "cost",
-        "discount"
+        "discount",
+        "cost"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "客人講「Is there a discount if I take the ring and the chain too?」，係咩意思？",
       "choices": [
-        "玉",
         "折扣",
+        "玉",
         "碼"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -338,11 +338,11 @@
       "type": "choice",
       "prompt": "邊個尾音係 /l/？",
       "choices": [
+        "sale",
         "tax",
-        "cost",
-        "sale"
+        "cost"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "sale 尾音係 /l/。discount 名詞重音喺第一節。"
     }
   ],

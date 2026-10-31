@@ -284,40 +284,40 @@
       "lemma": "confirm-verb",
       "choices": [
         "cancel",
-        "book",
-        "confirm"
+        "confirm",
+        "book"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "你講「If it rains heavily, please cancel the outdoor seat and keep us indoors beside the glass.」，outdoor 係咩意思？",
       "choices": [
         "候補",
-        "室外",
-        "靠窗"
+        "靠窗",
+        "室外"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "店員講「Those patio seats are already fully booked, but I can add the group to the waitlist.」，waitlist 係咩意思？",
       "choices": [
-        "候補名單",
         "靠窗位",
-        "晚餐時間"
+        "晚餐時間",
+        "候補名單"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：cancel、outdoor、定 book？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
+        "cancel",
         "outdoor",
-        "book",
-        "cancel"
+        "book"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "cancel 有 /l/。outdoor 同 book 冇。"
     }
   ],

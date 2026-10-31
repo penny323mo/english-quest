@@ -262,11 +262,11 @@
       "prompt": "你聽到邊個？",
       "lemma": "sure-adj",
       "choices": [
+        "sure",
         "tour",
-        "store",
-        "sure"
+        "store"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -293,10 +293,10 @@
       "prompt": "邊個先有 /ʃ/？",
       "choices": [
         "check",
-        "ticket",
-        "show"
+        "show",
+        "ticket"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "check 同 ticket 係 /tʃ/。show 先至係 /ʃ/。"
     }
   ],

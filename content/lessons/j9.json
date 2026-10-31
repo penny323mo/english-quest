@@ -297,20 +297,20 @@
       "lemma": "repair-verb",
       "choices": [
         "refund",
-        "complaint",
-        "repair"
+        "repair",
+        "complaint"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "客人講「I will write the complaint clearly, and you will have an update before the shop closes tonight.」，係咩意思？",
       "choices": [
         "收據",
-        "投訴",
-        "換貨"
+        "換貨",
+        "投訴"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
@@ -324,13 +324,13 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：immediately、refund、定 issue？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "refund",
-        "issue",
-        "immediately"
+        "immediately",
+        "issue"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "immediately 有 /l/。"
     }
   ],

@@ -271,22 +271,22 @@
       "prompt": "Listen once and pick the word you hear for water coming out of the tap.",
       "lemma": "leak-noun",
       "choices": [
-        "flat",
         "leak",
+        "flat",
         "access"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear for the visit that fixes it.",
       "lemma": "repair-noun",
       "choices": [
-        "repair",
         "tap",
-        "flat"
+        "flat",
+        "repair"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
@@ -303,20 +303,20 @@
       "prompt": "You say 'The front guard can give you access.' What does access mean?",
       "choices": [
         "漏水",
-        "入單位",
-        "水龍頭"
+        "水龍頭",
+        "入單位"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "Which word has /i/: leak, flat, or access?",
+      "prompt": "Which word has /i/?",
       "choices": [
+        "leak",
         "flat",
-        "access",
-        "leak"
+        "access"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "leak 有 /i/。"
     }
   ],

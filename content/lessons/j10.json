@@ -296,20 +296,20 @@
       "lemma": "popular-adj",
       "choices": [
         "optional",
-        "set",
-        "popular"
+        "popular",
+        "set"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "客人講「this matching pair goes well with the necklace」，係咩意思？",
       "choices": [
         "冷氣",
-        "襯到",
-        "退款"
+        "退款",
+        "襯到"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
@@ -323,7 +323,7 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：popular、matching、定 engraving？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "matching",
         "engraving",

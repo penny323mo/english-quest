@@ -258,11 +258,11 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "pearl-noun",
       "choices": [
+        "pearl",
         "pair",
-        "ring",
-        "pearl"
+        "ring"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -278,21 +278,21 @@
       "type": "meaning",
       "prompt": "客人講「Of course. This pair is beautiful, and I can show you the set.」，係咩意思？",
       "choices": [
-        "一對耳環",
         "一隻戒指",
-        "靠窗位"
+        "靠窗位",
+        "一對耳環"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
       "prompt": "邊個尾音係 /z/？",
       "choices": [
+        "these",
         "this",
-        "pair",
-        "these"
+        "pair"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "these /ðiz/ 有聲。this /ðɪs/ 係清 /s/。"
     }
   ],

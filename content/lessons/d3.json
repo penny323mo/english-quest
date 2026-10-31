@@ -301,25 +301,25 @@
       "type": "meaning",
       "prompt": "客人講「The monthly rent is due on the first day, and the deposit is one full month's rent.」，deposit 係咩意思？",
       "choices": [
-        "租約",
         "按金",
+        "租約",
         "業主"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "客人講「If I decide today, I can sign the lease, and the agency fee is on the contract.」，lease 係咩意思？",
       "choices": [
-        "租約",
         "收據",
+        "租約",
         "通知期"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：landlord、rent、定 deposit？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "rent",
         "deposit",

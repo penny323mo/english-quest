@@ -312,13 +312,13 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：apology、feedback、定 order？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
+        "apology",
         "feedback",
-        "order",
-        "apology"
+        "order"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "apology 有 /l/。feedback 同 order 冇。"
     }
   ],
@@ -344,5 +344,5 @@
       "sincere-adj"
     ]
   },
-  "next": "J14"
+  "next": "W10"
 }

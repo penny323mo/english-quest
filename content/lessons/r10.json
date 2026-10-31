@@ -286,11 +286,11 @@
       "prompt": "Listen once and pick the word for a cold drink.",
       "lemma": "iced-adj",
       "choices": [
+        "iced",
         "size",
-        "name",
-        "iced"
+        "name"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -314,13 +314,13 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word has /aɪ/: iced, name, or cup?",
+      "prompt": "Which word has /aɪ/?",
       "choices": [
         "cup",
-        "iced",
-        "name"
+        "name",
+        "iced"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "iced 有 /aɪ/。"
     }
   ],

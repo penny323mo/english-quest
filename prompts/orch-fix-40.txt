@@ -11,3 +11,6 @@ Add to CURRICULUM.md and ship end-to-end (12 beats, hero WebP 900×1200 in mocku
 - **T14 — Missed connection at the airport / 轉機趕唔切 · B1** (delayed first flight, rebooking desk, next flight, meal voucher, checked bag transfer, boarding pass).
 Every dialogue must be a real exchange: each question answered by the next line, no repeated question already answered, no contradictions, no fragment repeated 3+ times, no padding words ("here", "for you", "today") added for length.
 Run tests + build; Lighthouse mobile Perf ≥98. Append "## Round 40" to CHANGELOG.md. Do not git commit.
+
+## Coder r39 live audit additions (must also close this round)
+Read review/loop-r39/coder-audit.md. #90 answer-position template is STILL open (49/66 lessons share [0,2,1,0,2]) — re-shuffle every lesson + test. #93 J16 and #94 R11 were NOT changed in round 39 — use the replacement scripts given in the audit verbatim (fix glosses/chunks/quiz/audio to match). #97 T13, #98 D10, #99 J17 dialogue rewrites (scripts given). #95 hero preload, #77 face crops (J17, W9), #100 lexicon, #101 hazy heroes → mockup-v1 bright, and the dialogue QA test. Do NOT git rm review/style-gap (#96).

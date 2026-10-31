@@ -1,0 +1,343 @@
+{
+  "id": "T14",
+  "unit": "T",
+  "titleYue": "轉機趕唔切",
+  "titleEn": "A missed connection",
+  "canDoYue": "你識講頭班機延遲、趕唔切接駁、改簽、行李轉駁、膳食代用券，同埋拎新登機證。",
+  "canDoEn": "Say the first flight was delayed, you missed the connection, ask to rebook, confirm the checked bag will transfer, take a meal voucher, and collect a new boarding pass.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t14.webp",
+  "cast": [
+    "tom",
+    "kim"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "delayed-adj",
+    "connection-noun",
+    "rebook-verb",
+    "transfer-verb",
+    "voucher-noun",
+    "boarding-pass-phrase"
+  ],
+  "topicTags": [
+    "延遲",
+    "接駁",
+    "改簽",
+    "轉駁",
+    "代用券",
+    "登機證"
+  ],
+  "next": "W5",
+  "sound": {
+    "ipa": "/aʊ/",
+    "title": "voucher 入面嗰個音",
+    "note": "voucher 有 /aʊ/。rebook 有 /ʊ/。",
+    "pairs": [
+      {
+        "a": "voucher-noun",
+        "b": "rebook-verb"
+      },
+      {
+        "a": "boarding-pass-phrase",
+        "b": "connection-noun"
+      }
+    ],
+    "drill": [
+      "voucher-noun",
+      "rebook-verb",
+      "delayed-adj",
+      "connection-noun",
+      "boarding-pass-phrase"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "t14-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Hello, my first flight was badly delayed at the gate, and I have missed the next connection.",
+      "glossYue": "你好，頭班機喺閘口延遲得好厲害，我趕唔切下一程接駁。",
+      "audio": "assets/audio/lines/t14-l1.mp3",
+      "audioSlow": "assets/audio/lines/t14-l1-slow.mp3",
+      "say": "Hello, my first flight was badly delayed at the gate, and I have missed the next connection.",
+      "hideGloss": false
+    },
+    {
+      "id": "t14-l2",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "I can see that delayed flight on the board, and the next connection leaves from another gate soon.",
+      "glossYue": "我見到板上嗰班延遲，下一程接駁就快喺另一個閘口開。",
+      "audio": "assets/audio/lines/t14-l2.mp3",
+      "audioSlow": "assets/audio/lines/t14-l2-slow.mp3",
+      "say": "I can see that delayed flight on the board, and the next connection leaves from another gate soon.",
+      "hideGloss": false
+    },
+    {
+      "id": "t14-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Can you please rebook me on the next open flight, and will my checked bag transfer too?",
+      "glossYue": "可唔可以幫我改簽下一班，寄艙行李會唔會一齊轉？",
+      "audio": "assets/audio/lines/t14-l3.mp3",
+      "audioSlow": "assets/audio/lines/t14-l3-slow.mp3",
+      "say": "Can you please rebook me on the next open flight, and will my checked bag transfer too?",
+      "hideGloss": false
+    },
+    {
+      "id": "t14-l4",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes, I can rebook you on that open flight, and the checked bag will transfer with you.",
+      "glossYue": "可以，我幫你改簽嗰班，寄艙行李會一齊轉。",
+      "audio": "assets/audio/lines/t14-l4.mp3",
+      "audioSlow": "assets/audio/lines/t14-l4-slow.mp3",
+      "say": "Yes, I can rebook you on that open flight, and the checked bag will transfer with you.",
+      "hideGloss": true
+    },
+    {
+      "id": "t14-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "May I please have a meal voucher while I wait, and where is the new departure gate?",
+      "glossYue": "可唔可以畀張膳食代用券，新閘口喺邊？",
+      "audio": "assets/audio/lines/t14-l5.mp3",
+      "audioSlow": "assets/audio/lines/t14-l5-slow.mp3",
+      "say": "May I please have a meal voucher while I wait, and where is the new departure gate?",
+      "hideGloss": true
+    },
+    {
+      "id": "t14-l6",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes, this meal voucher covers a hot sandwich, and the new departure gate is posted on the board.",
+      "glossYue": "呢張膳食代用券可以換個熱三文治，新閘口喺板上。",
+      "audio": "assets/audio/lines/t14-l6.mp3",
+      "audioSlow": "assets/audio/lines/t14-l6-slow.mp3",
+      "say": "Yes, this meal voucher covers a hot sandwich, and the new departure gate is posted on the board.",
+      "hideGloss": true
+    },
+    {
+      "id": "t14-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Please print a new boarding pass for me before I walk over to that posted departure gate.",
+      "glossYue": "請喺我行去板上嗰個閘口之前，印張新登機證。",
+      "audio": "assets/audio/lines/t14-l7.mp3",
+      "audioSlow": "assets/audio/lines/t14-l7-slow.mp3",
+      "say": "Please print a new boarding pass for me before I walk over to that posted departure gate.",
+      "hideGloss": true
+    },
+    {
+      "id": "t14-l8",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Your new boarding pass is printing at this desk, so please walk over to the posted gate.",
+      "glossYue": "新登機證喺櫃檯印緊，請行去板上嗰個閘口。",
+      "audio": "assets/audio/lines/t14-l8.mp3",
+      "audioSlow": "assets/audio/lines/t14-l8-slow.mp3",
+      "say": "Your new boarding pass is printing at this desk, so please walk over to the posted gate.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Hello, my first flight was badly delayed at the gate, and I have missed the next connection. 呢句即係點？",
+      "choices": [
+        "頭班機延遲，趕唔切接駁",
+        "想要代用券",
+        "問登機證"
+      ],
+      "answer": 0,
+      "explain": "delayed 係延遲。connection 係接駁。"
+    },
+    {
+      "prompt": "Can you please rebook me on the next open flight, and will my checked bag transfer too? 即係問緊咩？",
+      "choices": [
+        "問登機證喺邊",
+        "問可唔可以改簽，行李轉唔轉駁",
+        "問代用券換咩"
+      ],
+      "answer": 1,
+      "explain": "rebook 係改簽。transfer 係轉駁。"
+    },
+    {
+      "prompt": "Yes, this meal voucher covers a hot sandwich, and the new departure gate is posted on the board. 呢句即係點？",
+      "choices": [
+        "已經改簽完",
+        "行李唔使轉駁",
+        "代用券可以換熱三文治"
+      ],
+      "answer": 2,
+      "explain": "voucher 係代用券。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Hello, my first flight was badly ___ at the gate, and I have missed the next connection.",
+      "example": "Hello, my first flight was badly delayed at the gate, and I have missed the next connection.",
+      "glossYue": "頭班機延遲。",
+      "answer": "delayed",
+      "choices": [
+        "delayed",
+        "rebook",
+        "voucher"
+      ]
+    },
+    {
+      "pattern": "Can you please ___ me on the next open flight, and will my checked bag transfer too?",
+      "example": "Can you please rebook me on the next open flight, and will my checked bag transfer too?",
+      "glossYue": "幫我改簽。",
+      "answer": "rebook",
+      "choices": [
+        "rebook",
+        "voucher",
+        "delayed"
+      ]
+    },
+    {
+      "pattern": "Please print a new ___ for me before I walk over to that posted departure gate.",
+      "example": "Please print a new boarding pass for me before I walk over to that posted departure gate.",
+      "glossYue": "印登機證。",
+      "answer": "boarding pass",
+      "choices": [
+        "boarding pass",
+        "connection",
+        "voucher"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想要代用券。你點講？",
+      "choices": [
+        "May I please have a meal voucher while I wait, and where is the new departure gate?",
+        "Can you please rebook me on the next open flight, and will my checked bag transfer too?",
+        "Please print a new boarding pass for me before I walk over to that posted departure gate."
+      ],
+      "answer": 0,
+      "explain": "問 voucher。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "boarding",
+        "pass"
+      ],
+      "answer": [
+        "boarding",
+        "pass"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你趕唔切轉機。同 Kim 講改簽同行李。可以講：rebook、voucher。",
+    "turns": [
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "I can see that delayed flight on the board, and the next connection leaves from another gate soon.",
+        "audio": "assets/audio/lines/t14-l2.mp3",
+        "audioSlow": "assets/audio/lines/t14-l2-slow.mp3",
+        "expect": "Can you please rebook me on the next open flight, and will my checked bag transfer too?",
+        "keywords": [
+          "rebook",
+          "transfer"
+        ],
+        "modelAudio": "assets/audio/lines/t14-l3.mp3",
+        "modelSlow": "assets/audio/lines/t14-l3-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "Yes, I can rebook you on that open flight, and the checked bag will transfer with you.",
+        "audio": "assets/audio/lines/t14-l4.mp3",
+        "audioSlow": "assets/audio/lines/t14-l4-slow.mp3",
+        "expect": "May I please have a meal voucher while I wait, and where is the new departure gate?",
+        "keywords": [
+          "voucher",
+          "gate"
+        ],
+        "modelAudio": "assets/audio/lines/t14-l5.mp3",
+        "modelSlow": "assets/audio/lines/t14-l5-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "Yes, this meal voucher covers a hot sandwich, and the new departure gate is posted on the board.",
+        "audio": "assets/audio/lines/t14-l6.mp3",
+        "audioSlow": "assets/audio/lines/t14-l6-slow.mp3",
+        "expect": "Please print a new boarding pass for me before I walk over to that posted departure gate.",
+        "keywords": [
+          "boarding",
+          "pass"
+        ],
+        "modelAudio": "assets/audio/lines/t14-l7.mp3",
+        "modelSlow": "assets/audio/lines/t14-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear for a flight that left late.",
+      "lemma": "delayed-adj",
+      "choices": [
+        "delayed",
+        "voucher",
+        "rebook"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the phrase you hear for the card you show at the gate.",
+      "lemma": "boarding-pass-phrase",
+      "choices": [
+        "connection",
+        "voucher",
+        "boarding pass"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'May I have a meal voucher?' What does voucher mean?",
+      "choices": [
+        "代用券",
+        "登機證",
+        "改簽"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'I missed the connection.' What does connection mean?",
+      "choices": [
+        "轉駁",
+        "延遲",
+        "接駁"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word means to book the flight again?",
+      "choices": [
+        "voucher",
+        "transfer",
+        "rebook"
+      ],
+      "answer": 2,
+      "explain": "rebook 係改簽。"
+    }
+  ],
+  "shadow": {
+    "lineId": "t14-l1",
+    "hint": "Hello, my first flight was badly delayed at the gate, and I have missed the next connection."
+  }
+}

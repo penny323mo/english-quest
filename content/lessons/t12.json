@@ -3,8 +3,8 @@
   "unit": "T",
   "titleYue": "酒店入住出問題",
   "titleEn": "A hotel check-in problem",
-  "canDoYue": "你識講訂房、提早入住、非吸煙、行李留喺櫃檯，同埋喺前台攞無線網絡密碼。",
-  "canDoEn": "Ask for early check-in and a non-smoking room, leave the luggage at the desk, and take the wifi password from the desk.",
+  "canDoYue": "你識講訂房、非吸煙房、行李留喺櫃檯、四點之後房間準備好，同埋喺前台攞無線網絡密碼。",
+  "canDoEn": "Ask for a non-smoking room, leave the luggage at the desk, come back after four when the room is ready, and take the wifi password from a card at the front desk.",
   "minutes": 12,
   "hero": "assets/art/lessons/t12.webp",
   "cast": [
@@ -57,11 +57,11 @@
       "id": "t12-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Hello, I have a reservation, and I hope the room allows an early check in.",
-      "glossYue": "你好，我有訂房，希望房間可以提早入住。",
+      "text": "Hello, I have a reservation, and I hope our booked room is ready very soon.",
+      "glossYue": "你好，我有訂房，希望我哋訂咗嘅房間就快準備好。",
       "audio": "assets/audio/lines/t12-l1.mp3",
       "audioSlow": "assets/audio/lines/t12-l1-slow.mp3",
-      "say": "Hello, I have a reservation, and I hope the room allows an early check in.",
+      "say": "Hello, I have a reservation, and I hope our booked room is ready very soon.",
       "hideGloss": false
     },
     {
@@ -79,22 +79,22 @@
       "id": "t12-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could we please have a non-smoking choice, and may the luggage stay here?",
-      "glossYue": "可唔可以要非吸煙選擇，行李留喺度得唔得？",
+      "text": "Could we please have a non-smoking room, and may the luggage stay here?",
+      "glossYue": "可唔可以要非吸煙房，行李留喺度得唔得？",
       "audio": "assets/audio/lines/t12-l3.mp3",
       "audioSlow": "assets/audio/lines/t12-l3-slow.mp3",
-      "say": "Could we please have a non-smoking choice, and may the luggage stay here?",
+      "say": "Could we please have a non-smoking room, and may the luggage stay here?",
       "hideGloss": false
     },
     {
       "id": "t12-l4",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "The non-smoking choice is free for you, and early check in starts after four.",
-      "glossYue": "非吸煙選擇唔使加錢，提早入住四點之後先開始。",
+      "text": "The non-smoking option is free for you, and it is ready after four o'clock.",
+      "glossYue": "非吸煙房唔使加錢，四點之後房間就準備好。",
       "audio": "assets/audio/lines/t12-l4.mp3",
       "audioSlow": "assets/audio/lines/t12-l4-slow.mp3",
-      "say": "The non-smoking choice is free for you, and early check in starts after four.",
+      "say": "The non-smoking option is free for you, and it is ready after four o'clock.",
       "hideGloss": true
     },
     {
@@ -144,17 +144,17 @@
   ],
   "understand": [
     {
-      "prompt": "Hello, I have a reservation, and I hope the room allows an early check in. 呢句即係點？",
+      "prompt": "Hello, I have a reservation, and I hope our booked room is ready very soon. 呢句即係點？",
       "choices": [
-        "有訂房，希望提早入住",
+        "有訂房，希望房間就快準備好",
         "行李已經拎走",
         "密碼喺房入面"
       ],
       "answer": 0,
-      "explain": "reservation 係訂房。early check in 係提早入住。"
+      "explain": "reservation 係訂房。room 係房間。"
     },
     {
-      "prompt": "Could we please have a non-smoking choice, and may the luggage stay here? 即係問緊咩？",
+      "prompt": "Could we please have a non-smoking room, and may the luggage stay here? 即係問緊咩？",
       "choices": [
         "問房間幾點退房",
         "問可唔可以要非吸煙，行李留低",
@@ -176,9 +176,9 @@
   ],
   "chunks": [
     {
-      "pattern": "Could we please have a ___ choice, and may the luggage stay here?",
-      "example": "Could we please have a non-smoking choice, and may the luggage stay here?",
-      "glossYue": "可唔可以要非吸煙？",
+      "pattern": "Could we please have a ___ room, and may the luggage stay here?",
+      "example": "Could we please have a non-smoking room, and may the luggage stay here?",
+      "glossYue": "可唔可以要非吸煙房？",
       "answer": "non-smoking",
       "choices": [
         "non-smoking",
@@ -198,8 +198,8 @@
       ]
     },
     {
-      "pattern": "Hello, I have a ___, and I hope the room allows an early check in.",
-      "example": "Hello, I have a reservation, and I hope the room allows an early check in.",
+      "pattern": "Hello, I have a ___, and I hope our booked room is ready very soon.",
+      "example": "Hello, I have a reservation, and I hope our booked room is ready very soon.",
       "glossYue": "我有訂房。",
       "answer": "reservation",
       "choices": [
@@ -215,7 +215,7 @@
       "promptYue": "你想知道密碼。你點講？",
       "choices": [
         "What is the wifi password I can use when I reach the room?",
-        "Could we please have a non-smoking choice, and may the luggage stay here?",
+        "Could we please have a non-smoking room, and may the luggage stay here?",
         "I will leave the luggage at the desk and then come back after four o'clock."
       ],
       "answer": 0,
@@ -244,7 +244,7 @@
         "line": "The room is not ready yet, and your luggage can stay beside the desk.",
         "audio": "assets/audio/lines/t12-l2.mp3",
         "audioSlow": "assets/audio/lines/t12-l2-slow.mp3",
-        "expect": "Could we please have a non-smoking choice, and may the luggage stay here?",
+        "expect": "Could we please have a non-smoking room, and may the luggage stay here?",
         "keywords": [
           "non-smoking",
           "luggage"
@@ -255,7 +255,7 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "The non-smoking choice is free for you, and early check in starts after four.",
+        "line": "The non-smoking option is free for you, and it is ready after four o'clock.",
         "audio": "assets/audio/lines/t12-l4.mp3",
         "audioSlow": "assets/audio/lines/t12-l4-slow.mp3",
         "expect": "What is the wifi password I can use when I reach the room?",
@@ -288,57 +288,57 @@
       "prompt": "Listen once and pick the phrase you hear for arriving before the usual time.",
       "lemma": "early-check-in-phrase",
       "choices": [
-        "luggage",
         "early check in",
+        "luggage",
         "password"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear for the bag you leave at the desk.",
       "lemma": "luggage-noun",
       "choices": [
-        "luggage",
         "room",
+        "luggage",
         "password"
-      ],
-      "answer": 0
-    },
-    {
-      "type": "meaning",
-      "prompt": "You say 'The wifi password is printed on this card.' What does password mean?",
-      "choices": [
-        "房間",
-        "密碼",
-        "行李"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "You say 'I have a reservation.' What does reservation mean?",
+      "prompt": "You say 'The wifi password is printed on this card.' What does password mean?",
       "choices": [
-        "訂房",
-        "非吸煙",
-        "提早"
+        "密碼",
+        "房間",
+        "行李"
       ],
       "answer": 0
     },
     {
+      "type": "meaning",
+      "prompt": "You say 'I have a reservation.' What does reservation mean?",
+      "choices": [
+        "非吸煙",
+        "訂房",
+        "提早"
+      ],
+      "answer": 1
+    },
+    {
       "type": "choice",
-      "prompt": "Which phrase means a room where people do not smoke: non-smoking, luggage, or password?",
+      "prompt": "Which phrase means a room where people do not smoke?",
       "choices": [
         "luggage",
-        "password",
-        "non-smoking"
+        "non-smoking",
+        "password"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "non-smoking 係非吸煙。"
     }
   ],
   "shadow": {
     "lineId": "t12-l1",
-    "hint": "Hello, I have a reservation, and I hope the room allows an early check in."
+    "hint": "Hello, I have a reservation, and I hope our booked room is ready very soon."
   }
 }

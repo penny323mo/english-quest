@@ -297,10 +297,10 @@
       "lemma": "policy-noun",
       "choices": [
         "claim",
-        "polish",
-        "policy"
+        "policy",
+        "polish"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -316,15 +316,15 @@
       "type": "meaning",
       "prompt": "客人講「I have kept the receipt, but a small scratch showed up within the first week.」，係咩意思？",
       "choices": [
-        "刮痕",
         "退款",
-        "冷氣"
+        "冷氣",
+        "刮痕"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：polish、warranty、定 guarantee？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "warranty",
         "guarantee",

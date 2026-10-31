@@ -293,10 +293,10 @@
       "lemma": "cough-noun",
       "choices": [
         "fever",
-        "headache",
-        "cough"
+        "cough",
+        "headache"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -320,13 +320,13 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：allergy、fever、定 cough？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "fever",
-        "cough",
-        "allergy"
+        "allergy",
+        "cough"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "allergy 有 /l/。fever 同 cough 冇。"
     }
   ],

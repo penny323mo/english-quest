@@ -280,31 +280,31 @@
       "type": "meaning",
       "prompt": "jewellery",
       "choices": [
+        "珠寶",
         "護照",
-        "餐牌",
-        "珠寶"
+        "餐牌"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "just looking",
       "choices": [
-        "我有訂位",
         "睇吓先",
+        "我有訂位",
         "即刻付款"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "choice",
       "prompt": "This necklace is beautiful. 你點接最得體？",
       "choices": [
-        "Thank you.",
         "Go to the gate.",
-        "Ship is short."
+        "Ship is short.",
+        "Thank you."
       ],
-      "answer": 0,
+      "answer": 2,
       "explain": "客人讚貨，先接一句 thank you 就得。"
     },
     {
@@ -312,11 +312,11 @@
       "prompt": "邊個有 /θ/？",
       "lemma": "anything-pron",
       "choices": [
+        "anything",
         "evening",
-        "silver",
-        "anything"
+        "silver"
       ],
-      "answer": 2
+      "answer": 0
     }
   ],
   "sound": {

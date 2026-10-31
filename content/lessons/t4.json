@@ -298,36 +298,36 @@
       "prompt": "聽一次，揀你聽到嘅字：一個認得嘅地方",
       "lemma": "landmark-noun",
       "choices": [
+        "landmark",
         "meter",
-        "address",
-        "landmark"
+        "address"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "客人講「The meter is on, and traffic is slow along this street today.」，係咩意思？",
       "choices": [
         "收據",
-        "咪錶",
-        "地標"
+        "地標",
+        "咪錶"
       ],
-      "answer": 1,
+      "answer": 2,
       "explain": "meter 計車費。"
     },
     {
       "type": "meaning",
       "prompt": "客人講「How long will this take, roughly, if we go straight and turn left?」，係咩意思？",
       "choices": [
-        "大概",
         "一定",
+        "大概",
         "已經到"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "邊個字開頭有 /l/：landmark、meter、定 traffic？",
+      "prompt": "邊個字開頭有 /l/？",
       "choices": [
         "meter",
         "traffic",

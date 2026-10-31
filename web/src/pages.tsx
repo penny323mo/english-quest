@@ -35,9 +35,9 @@ const GLYPHS: Record<string, string> = {
   F1: "breath", F2: "wave", F3: "coin", F4: "thanks", F5: "card", F6: "sun",
   J1: "wave", J2: "search", J3: "necklace", J4: "gem", J5: "ring", J6: "tag",
   J7: "card", J8: "spark", J9: "box", J10: "gift", J11: "gem", J12: "phone", J13: "gift",
-  R1: "seat", R2: "fork", R3: "leaf", R4: "plate", R5: "bill", R6: "phone", R7: "bowl", R8: "phone", R9: "bill", R10: "coffee", R11: "leaf",
-  T1: "plane", T2: "pass", T3: "bed", T4: "taxi", T5: "pin", T6: "bed", T7: "bag", T8: "pass", T9: "plane", T10: "bag", T11: "pin", T12: "bed", T13: "cross",
-  W1: "phone", W2: "mail", W3: "meet", W4: "coffee", W5: "phone", W6: "card", W7: "phone", W8: "meet", W9: "mail",
+  R1: "seat", R2: "fork", R3: "leaf", R4: "plate", R5: "bill", R6: "phone", R7: "bowl", R8: "phone", R9: "bill", R10: "coffee", R11: "leaf", R12: "fork",
+  T1: "plane", T2: "pass", T3: "bed", T4: "taxi", T5: "pin", T6: "bed", T7: "bag", T8: "pass", T9: "plane", T10: "bag", T11: "pin", T12: "bed", T13: "cross", T14: "plane",
+  W1: "phone", W2: "mail", W3: "meet", W4: "coffee", W5: "phone", W6: "card", W7: "phone", W8: "meet", W9: "mail", W10: "mail",
   D1: "cross", D2: "coin", D3: "home", D4: "phone", D5: "box", D6: "cross", D7: "scissors", D8: "wrench", D9: "card", D10: "taxi",
   J14: "ring", J15: "ring", J16: "gem", J17: "necklace",
 };

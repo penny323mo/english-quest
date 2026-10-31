@@ -295,11 +295,11 @@
       "type": "meaning",
       "prompt": "客人講「Good morning. What is the main purpose of your visit today, and are you here for tourism?」，purpose 係咩意思？",
       "choices": [
-        "蓋章",
         "目的",
+        "蓋章",
         "回程機票"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -313,13 +313,13 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：declare、purpose、定 gift？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
+        "declare",
         "purpose",
-        "gift",
-        "declare"
+        "gift"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "declare 有 /l/。purpose 同 gift 冇。"
     }
   ],

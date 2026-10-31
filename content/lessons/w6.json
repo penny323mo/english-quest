@@ -303,21 +303,21 @@
       "type": "meaning",
       "prompt": "面試官講「Could you please give one clear example of a recent customer-facing task you enjoyed at the counter?」，customer-facing 係咩意思？",
       "choices": [
-        "對客",
         "幕後唔係櫃檯",
+        "對客",
         "過夜更"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：bilingual、strength、定 shift？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "strength",
-        "shift",
-        "bilingual"
+        "bilingual",
+        "shift"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "bilingual 有 /l/。strength 同 shift 冇。"
     }
   ],

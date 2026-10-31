@@ -294,11 +294,11 @@
       "prompt": "聽一次，揀你聽到嘅字.",
       "lemma": "data-noun",
       "choices": [
+        "data",
         "day",
-        "weight",
-        "data"
+        "weight"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -314,21 +314,21 @@
       "type": "meaning",
       "prompt": "I'll take the prepaid plan.",
       "choices": [
-        "我要預繳計劃",
         "我要無限長約",
+        "我要預繳計劃",
         "請貼郵票"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "The prepaid plan is much cheaper.",
       "choices": [
+        "預繳計劃平好多",
         "覆蓋完全唔夠",
-        "請申報重量",
-        "預繳計劃平好多"
+        "請申報重量"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "cheaper 係平啲。"
     }
   ],

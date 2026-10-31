@@ -1,0 +1,6 @@
+You are a strict senior code reviewer for English Quest. cd /workspace/sidequest/english-quest.
+Round 41 review at 400px. Do NOT modify project files.
+Read CURRICULUM.md (>=3 new lessons this round: J18, R13, D11), ART-STYLE.md, review/mockup-v1, SPEC.md, prompts/orch-fix-41.txt, review/loop-r39/coder-audit.md and the newest review/loop-r*/coder-audit.md.
+Verify #90 (no quiz answer-index sequence shared by >3 lessons), #93 #94 #97 #98 #99 (J16/R11/T13/D10/J17 dialogues match the audit scripts' logic: every question answered, no repeats, no contradictions, no padding), #92 W9, #95 hero ready at first paint, #77 faces in frame, #100 lexicon, #101 all heroes the same bright flat mockup-v1 look (open the full contact sheet next to review/mockup-v1/02-exercise.png: hazy/washed-out, hatching, heavy ink, realistic shading or baby faces = NOT READY); new lessons end-to-end; distractors same-scene; CEFR monotonic and avg words/line never drops >0.5; coherence + dialogue QA + filler + repetition + answer-position + prompt-giveaway + style-manifest tests exist and pass; no 400 overflow; no Duo IP.
+Write reviews/orch-r41-grok.md first line VERDICT: SHIP or NOT READY, then a numbered list of every open item.
+SHIP forbidden while any CRITICAL/MAJOR open, any STYLE item open, any #-numbered audit item open, difficulty jump/dip, <3 new lessons, or overflow.

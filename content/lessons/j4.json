@@ -282,21 +282,21 @@
       "prompt": "聽一次，揀你聽到嘅字。",
       "lemma": "diamond-noun",
       "choices": [
+        "diamond",
         "jade",
-        "gold",
-        "diamond"
+        "gold"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "客人講「This gold is authentic, and the stamp is clear on the inside.」，係咩意思？",
       "choices": [
         "碼",
-        "金",
-        "稅"
+        "稅",
+        "金"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
@@ -313,10 +313,10 @@
       "prompt": "邊個中間有 /θ/？",
       "choices": [
         "setting",
-        "pure",
-        "authentic"
+        "authentic",
+        "pure"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "authentic 有 /θ/。setting 開頭係 /s/。"
     }
   ],

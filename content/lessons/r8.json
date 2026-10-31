@@ -280,10 +280,10 @@
       "lemma": "takeaway-noun",
       "choices": [
         "delivery",
-        "street",
-        "takeaway"
+        "takeaway",
+        "street"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -299,15 +299,15 @@
       "type": "meaning",
       "prompt": "舖頭講「You can pay on delivery in cash only when the takeaway reaches your front door.」，pay on delivery 係咩意思？",
       "choices": [
-        "送到先畀錢",
         "現金找續",
+        "送到先畀錢",
         "改地址"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：delivery、chicken、定 takeaway？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "chicken",
         "takeaway",

@@ -279,35 +279,35 @@
       "prompt": "聽一次，揀你喺埋單時聽到嘅字：分開",
       "lemma": "split-verb",
       "choices": [
+        "split",
         "bill",
-        "receipt",
-        "split"
+        "receipt"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "你講「Could we split the bill so each of us gets a separate receipt?」，split 係咩意思？",
       "choices": [
         "收據",
-        "分開",
-        "帳單"
+        "帳單",
+        "分開"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "伙計講「Here is the full bill, and the service charge is included in the total.」，service charge 係咩意思？",
       "choices": [
-        "服務費",
         "八達通",
-        "錯"
+        "錯",
+        "服務費"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：bill、split、定 receipt？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "split",
         "receipt",

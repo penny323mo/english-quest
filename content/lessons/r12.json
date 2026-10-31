@@ -1,0 +1,343 @@
+{
+  "id": "R12",
+  "unit": "R",
+  "titleYue": "訂枱請客",
+  "titleEn": "Booking a table for a group",
+  "canDoYue": "你識講八位、星期五七點半、包廂、最低消費、訂金、兒童椅，同埋短訊確認。",
+  "canDoEn": "Book a party of eight for Friday at half past seven, ask for a private room, the minimum spend, a deposit, and a high chair, and confirm by text.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/r12.webp",
+  "cast": [
+    "tom",
+    "ana"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "party-of-phrase",
+    "private-room-phrase",
+    "minimum-spend-phrase",
+    "high-chair-phrase",
+    "custom-deposit-noun",
+    "confirm-verb"
+  ],
+  "topicTags": [
+    "包廂",
+    "最低消費",
+    "兒童椅",
+    "訂金",
+    "八位",
+    "確認"
+  ],
+  "next": "R5",
+  "sound": {
+    "ipa": "/aɪ/",
+    "title": "private 入面嗰個音",
+    "note": "private 有 /aɪ/。minimum 有 /ɪ/。",
+    "pairs": [
+      {
+        "a": "private-room-phrase",
+        "b": "minimum-spend-phrase"
+      },
+      {
+        "a": "high-chair-phrase",
+        "b": "custom-deposit-noun"
+      }
+    ],
+    "drill": [
+      "private-room-phrase",
+      "minimum-spend-phrase",
+      "high-chair-phrase",
+      "custom-deposit-noun",
+      "party-of-phrase"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "r12-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Hello, we are a party of eight for dinner this Friday at half past seven.",
+      "glossYue": "你好，我哋星期五晚餐八位，七點半。",
+      "audio": "assets/audio/lines/r12-l1.mp3",
+      "audioSlow": "assets/audio/lines/r12-l1-slow.mp3",
+      "say": "Hello, we are a party of eight for dinner this Friday at half past seven.",
+      "hideGloss": false
+    },
+    {
+      "id": "r12-l2",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "The private room is free on Friday, and I can hold it for eight.",
+      "glossYue": "星期五包廂有位，我可以留畀八個人。",
+      "audio": "assets/audio/lines/r12-l2.mp3",
+      "audioSlow": "assets/audio/lines/r12-l2-slow.mp3",
+      "say": "The private room is free on Friday, and I can hold it for eight.",
+      "hideGloss": false
+    },
+    {
+      "id": "r12-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "What is the minimum spend for eight people, and may one small child sit too?",
+      "glossYue": "最低消費幾多，一個小朋友可唔可以一齊坐？",
+      "audio": "assets/audio/lines/r12-l3.mp3",
+      "audioSlow": "assets/audio/lines/r12-l3-slow.mp3",
+      "say": "What is the minimum spend for eight people, and may one small child sit too?",
+      "hideGloss": false
+    },
+    {
+      "id": "r12-l4",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "The minimum spend is two hundred dollars, and one small child may sit with you.",
+      "glossYue": "最低消費二百蚊，一個小朋友可以一齊坐。",
+      "audio": "assets/audio/lines/r12-l4.mp3",
+      "audioSlow": "assets/audio/lines/r12-l4-slow.mp3",
+      "say": "The minimum spend is two hundred dollars, and one small child may sit with you.",
+      "hideGloss": true
+    },
+    {
+      "id": "r12-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could we please have one extra high chair for the small child at that table?",
+      "glossYue": "可唔可以多一張兒童椅，畀個細路坐？",
+      "audio": "assets/audio/lines/r12-l5.mp3",
+      "audioSlow": "assets/audio/lines/r12-l5-slow.mp3",
+      "say": "Could we please have one extra high chair for the small child at that table?",
+      "hideGloss": true
+    },
+    {
+      "id": "r12-l6",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "Yes, one extra high chair can sit by the window near that long dinner table.",
+      "glossYue": "可以，兒童椅放喺窗邊長檯。",
+      "audio": "assets/audio/lines/r12-l6.mp3",
+      "audioSlow": "assets/audio/lines/r12-l6-slow.mp3",
+      "say": "Yes, one extra high chair can sit by the window near that long dinner table.",
+      "hideGloss": true
+    },
+    {
+      "id": "r12-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Where do we pay the deposit, and will you confirm the dinner booking by text?",
+      "glossYue": "訂金喺邊度畀，你會唔會短訊確認晚餐訂位？",
+      "audio": "assets/audio/lines/r12-l7.mp3",
+      "audioSlow": "assets/audio/lines/r12-l7-slow.mp3",
+      "say": "Where do we pay the deposit, and will you confirm the dinner booking by text?",
+      "hideGloss": true
+    },
+    {
+      "id": "r12-l8",
+      "speaker": "ana",
+      "speakerLabel": "Ana",
+      "text": "Pay the deposit at the desk, and I will confirm that booking by text.",
+      "glossYue": "訂金喺櫃檯畀，我會短訊確認訂位。",
+      "audio": "assets/audio/lines/r12-l8.mp3",
+      "audioSlow": "assets/audio/lines/r12-l8-slow.mp3",
+      "say": "Pay the deposit at the desk, and I will confirm that booking by text.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "Hello, we are a party of eight for dinner this Friday at half past seven. 呢句即係點？",
+      "choices": [
+        "星期五晚餐八位",
+        "想改包廂",
+        "問兒童椅"
+      ],
+      "answer": 0,
+      "explain": "party of 係幾多位。"
+    },
+    {
+      "prompt": "What is the minimum spend for eight people, and may one small child sit too? 即係問緊咩？",
+      "choices": [
+        "問訂金放喺邊",
+        "問最低消費，小朋友可唔可以坐",
+        "問包廂幾點關門"
+      ],
+      "answer": 1,
+      "explain": "minimum spend 係最低消費。"
+    },
+    {
+      "prompt": "Pay the deposit at the desk, and I will confirm that booking by text. 呢句即係點？",
+      "choices": [
+        "問兒童椅放邊",
+        "問最低消費幾多",
+        "櫃檯交訂金，短訊確認"
+      ],
+      "answer": 2,
+      "explain": "deposit 係訂金。confirm 係確認。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Hello, we are a ___ eight for dinner this Friday at half past seven.",
+      "example": "Hello, we are a party of eight for dinner this Friday at half past seven.",
+      "glossYue": "我哋八位。",
+      "answer": "party of",
+      "choices": [
+        "party of",
+        "private room",
+        "deposit"
+      ]
+    },
+    {
+      "pattern": "What is the ___ for eight people, and may one small child sit too?",
+      "example": "What is the minimum spend for eight people, and may one small child sit too?",
+      "glossYue": "最低消費幾多。",
+      "answer": "minimum spend",
+      "choices": [
+        "minimum spend",
+        "high chair",
+        "deposit"
+      ]
+    },
+    {
+      "pattern": "Where do we pay the ___, and will you confirm the dinner booking by text?",
+      "example": "Where do we pay the deposit, and will you confirm the dinner booking by text?",
+      "glossYue": "訂金喺邊度畀。",
+      "answer": "deposit",
+      "choices": [
+        "deposit",
+        "private room",
+        "high chair"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想講幾多位。你點講？",
+      "choices": [
+        "Hello, we are a party of eight for dinner this Friday at half past seven.",
+        "What is the minimum spend for eight people, and may one small child sit too?",
+        "Where do we pay the deposit, and will you confirm the dinner booking by text?"
+      ],
+      "answer": 0,
+      "explain": "講 party of。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "party",
+        "of"
+      ],
+      "answer": [
+        "party",
+        "of"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你訂星期五晚餐八位。同 Ana 講包廂同訂金。可以講：party、deposit。",
+    "turns": [
+      {
+        "partner": "Ana",
+        "partnerId": "ana",
+        "line": "The private room is free on Friday, and I can hold it for eight.",
+        "audio": "assets/audio/lines/r12-l2.mp3",
+        "audioSlow": "assets/audio/lines/r12-l2-slow.mp3",
+        "expect": "What is the minimum spend for eight people, and may one small child sit too?",
+        "keywords": [
+          "minimum",
+          "spend"
+        ],
+        "modelAudio": "assets/audio/lines/r12-l3.mp3",
+        "modelSlow": "assets/audio/lines/r12-l3-slow.mp3"
+      },
+      {
+        "partner": "Ana",
+        "partnerId": "ana",
+        "line": "The minimum spend is two hundred dollars, and one small child may sit with you.",
+        "audio": "assets/audio/lines/r12-l4.mp3",
+        "audioSlow": "assets/audio/lines/r12-l4-slow.mp3",
+        "expect": "Could we please have one extra high chair for the small child at that table?",
+        "keywords": [
+          "high",
+          "chair"
+        ],
+        "modelAudio": "assets/audio/lines/r12-l5.mp3",
+        "modelSlow": "assets/audio/lines/r12-l5-slow.mp3"
+      },
+      {
+        "partner": "Ana",
+        "partnerId": "ana",
+        "line": "Yes, one extra high chair can sit by the window near that long dinner table.",
+        "audio": "assets/audio/lines/r12-l6.mp3",
+        "audioSlow": "assets/audio/lines/r12-l6-slow.mp3",
+        "expect": "Where do we pay the deposit, and will you confirm the dinner booking by text?",
+        "keywords": [
+          "deposit",
+          "confirm"
+        ],
+        "modelAudio": "assets/audio/lines/r12-l7.mp3",
+        "modelSlow": "assets/audio/lines/r12-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the phrase you hear for a dining room closed off from the main floor.",
+      "lemma": "private-room-phrase",
+      "choices": [
+        "private room",
+        "minimum spend",
+        "high chair"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the phrase you hear for a seat made for a small child.",
+      "lemma": "high-chair-phrase",
+      "choices": [
+        "deposit",
+        "high chair",
+        "party of"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'We are a party of eight.' What does party of mean?",
+      "choices": [
+        "八位",
+        "訂金",
+        "包廂"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'Where do we pay the deposit?' What does deposit mean?",
+      "choices": [
+        "兒童椅",
+        "最低消費",
+        "訂金"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "prompt": "Which phrase means the lowest bill a group must pay?",
+      "choices": [
+        "minimum spend",
+        "private room",
+        "high chair"
+      ],
+      "answer": 0,
+      "explain": "minimum spend 係最低消費。"
+    }
+  ],
+  "shadow": {
+    "lineId": "r12-l1",
+    "hint": "Hello, we are a party of eight for dinner this Friday at half past seven."
+  }
+}

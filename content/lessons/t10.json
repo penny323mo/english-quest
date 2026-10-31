@@ -21,7 +21,7 @@
     "deliver-verb",
     "hotel-noun"
   ],
-  "next": "W5",
+  "next": "T14",
   "dialogue": [
     {
       "id": "t10-l1",
@@ -287,31 +287,31 @@
       "type": "meaning",
       "prompt": "你講「The tag number is HK four eight two, and I can read it on this paper receipt.」，tag number 係咩意思？",
       "choices": [
-        "酒店",
         "行李牌",
-        "轉盤"
-      ],
-      "answer": 1
-    },
-    {
-      "type": "meaning",
-      "prompt": "你講「Could you deliver the bag to my hotel if you find it after you finish this search?」，deliver 係咩意思？",
-      "choices": [
-        "送到酒店",
-        "索償",
+        "酒店",
         "轉盤"
       ],
       "answer": 0
     },
     {
+      "type": "meaning",
+      "prompt": "你講「Could you deliver the bag to my hotel if you find it after you finish this search?」，deliver 係咩意思？",
+      "choices": [
+        "索償",
+        "轉盤",
+        "送到酒店"
+      ],
+      "answer": 2
+    },
+    {
       "type": "choice",
-      "prompt": "邊個字有 /l/：luggage、hotel、定 deliver？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "hotel",
-        "deliver",
-        "luggage"
+        "luggage",
+        "deliver"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "luggage 有 /l/。"
     }
   ],

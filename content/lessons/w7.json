@@ -279,10 +279,10 @@
       "lemma": "monday-noun",
       "choices": [
         "shift",
-        "sick",
-        "Monday"
+        "Monday",
+        "sick"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -298,21 +298,21 @@
       "type": "meaning",
       "prompt": "你講「Mei can cover my shift at the shop this morning while I stay home.」，cover my shift 係咩意思？",
       "choices": [
-        "頂更",
         "星期一",
-        "唔舒服"
+        "唔舒服",
+        "頂更"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /ʃ/：shift、Monday、定 sick？",
+      "prompt": "邊個字有 /ʃ/？",
       "choices": [
         "Monday",
-        "sick",
-        "shift"
+        "shift",
+        "sick"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "shift 有 /ʃ/。Monday 同 sick 冇。"
     }
   ],

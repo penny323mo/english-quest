@@ -258,21 +258,21 @@
       "type": "meaning",
       "prompt": "Good morning",
       "choices": [
+        "早晨",
         "兩位",
-        "登機證",
-        "早晨"
+        "登機證"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "Nice to meet you",
       "choices": [
-        "靠窗位",
         "好高興認識你",
+        "靠窗位",
         "睇吓先"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "choice",

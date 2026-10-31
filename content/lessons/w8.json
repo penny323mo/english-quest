@@ -274,22 +274,22 @@
       "prompt": "Listen once and pick the phrase you hear when the work is going to plan.",
       "lemma": "on-track-phrase",
       "choices": [
-        "question",
         "on track",
+        "question",
         "Friday"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "listen",
       "prompt": "Listen once and pick the phrase you hear for a late sample run.",
       "lemma": "behind-schedule-phrase",
       "choices": [
-        "behind schedule",
         "meeting",
-        "action item"
+        "action item",
+        "behind schedule"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
@@ -313,13 +313,13 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word has /aɪ/: Friday, meeting, or question?",
+      "prompt": "Which word has /aɪ/?",
       "choices": [
         "meeting",
-        "question",
-        "Friday"
+        "Friday",
+        "question"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "Friday 有 /aɪ/。"
     }
   ],

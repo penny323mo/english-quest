@@ -28,7 +28,7 @@
     "飯後",
     "次數"
   ],
-  "next": "R5",
+  "next": "R12",
   "sound": {
     "ipa": "/aʊ/",
     "title": "drowsy 入面嗰個音",
@@ -289,22 +289,22 @@
       "prompt": "Listen once and pick the word you hear for feeling sleepy after the tablet.",
       "lemma": "drowsy-adj",
       "choices": [
-        "prescription",
         "drowsy",
+        "prescription",
         "fever"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "listen",
       "prompt": "Listen once and pick the phrase you hear for how often to take the medicine.",
       "lemma": "times-a-day-phrase",
       "choices": [
-        "times a day",
         "headache",
+        "times a day",
         "prescription"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -328,7 +328,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word means the paper a strong medicine needs: prescription, fever, or drowsy?",
+      "prompt": "Which word means the paper a strong medicine needs?",
       "choices": [
         "fever",
         "drowsy",

@@ -290,22 +290,22 @@
       "prompt": "Listen once and pick the word you hear for the nut you cannot eat.",
       "lemma": "peanut-noun",
       "choices": [
-        "egg",
         "peanut",
+        "egg",
         "pork"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear for a meat-free choice.",
       "lemma": "vegetarian-adj",
       "choices": [
-        "vegetarian",
         "kitchen",
+        "vegetarian",
         "egg"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
@@ -322,14 +322,14 @@
       "prompt": "You say 'Please tell the kitchen.' What does kitchen mean?",
       "choices": [
         "分開",
-        "廚房",
-        "素食"
+        "素食",
+        "廚房"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "Which word means the food is kept apart: separate, pork, or egg?",
+      "prompt": "Which word means the food is kept apart?",
       "choices": [
         "pork",
         "egg",

@@ -131,11 +131,11 @@
       "id": "w9-l8",
       "speaker": "niles",
       "speakerLabel": "Niles",
-      "text": "Your annual leave starts on Monday next week, and I have approved those four dates already today.",
-      "glossYue": "你下星期一年假由星期一起，我今日已經批核咗嗰四日。",
+      "text": "Your annual leave starts on Monday next week, after I read that Friday handover note first thing.",
+      "glossYue": "你下星期一年假由星期一起，我會睇完星期五嘅交接筆記先算。",
       "audio": "assets/audio/lines/w9-l8.mp3",
       "audioSlow": "assets/audio/lines/w9-l8-slow.mp3",
-      "say": "Your annual leave starts on Monday next week, and I have approved those four dates already today.",
+      "say": "Your annual leave starts on Monday next week, after I read that Friday handover note first thing.",
       "hideGloss": true
     }
   ],
@@ -285,22 +285,22 @@
       "prompt": "Listen once and pick the phrase you hear for a year of paid days off.",
       "lemma": "annual-leave-phrase",
       "choices": [
-        "email",
         "annual leave",
+        "email",
         "handover"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear for the note you leave for the next person.",
       "lemma": "handover-noun",
       "choices": [
-        "handover",
         "email",
-        "approve"
+        "approve",
+        "handover"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
@@ -324,13 +324,13 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word means a message you send from a computer: email, handover, or leave?",
+      "prompt": "Which word means a message you send from a computer?",
       "choices": [
+        "email",
         "handover",
-        "leave",
-        "email"
+        "leave"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "email 係電郵。"
     }
   ],

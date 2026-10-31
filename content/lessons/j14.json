@@ -274,22 +274,22 @@
       "prompt": "Listen once and pick the pale alloy you hear for the band.",
       "lemma": "white-gold-phrase",
       "choices": [
-        "budget",
         "white gold",
+        "budget",
         "sketch"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "listen",
       "prompt": "Listen once and pick the warm metal you hear for this stone.",
       "lemma": "yellow-gold-phrase",
       "choices": [
-        "yellow gold",
         "week",
-        "deposit"
+        "deposit",
+        "yellow gold"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
@@ -313,7 +313,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which phrase has /ɡoʊld/: white gold, budget, or sketch?",
+      "prompt": "Which phrase has /ɡoʊld/?",
       "choices": [
         "budget",
         "sketch",

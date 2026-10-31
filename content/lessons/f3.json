@@ -253,21 +253,21 @@
       "prompt": "你聽到邊個？",
       "lemma": "six-num",
       "choices": [
+        "six",
         "sick",
-        "sit",
-        "six"
+        "sit"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",
       "prompt": "dollar",
       "choices": [
-        "對唔住",
         "蚊",
+        "對唔住",
         "點鐘"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -284,20 +284,20 @@
       "prompt": "price",
       "choices": [
         "航班",
-        "餐牌",
-        "價錢"
+        "價錢",
+        "餐牌"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "choice",
       "prompt": "邊句先係問時間？",
       "choices": [
-        "Excuse me.",
         "What time is it?",
+        "Excuse me.",
         "How much is this?"
       ],
-      "answer": 1,
+      "answer": 0,
       "explain": "time 係時間。how much 係問錢。"
     }
   ],

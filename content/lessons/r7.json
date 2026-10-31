@@ -282,34 +282,34 @@
       "lemma": "replace-verb",
       "choices": [
         "understand",
-        "appreciate",
-        "replace"
+        "replace",
+        "appreciate"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "你講「The side dish looks undercooked after the long wait, because the meal came much too late.」，undercooked 係咩意思？",
       "choices": [
         "免費",
-        "未煮熟",
-        "太鹹"
+        "太鹹",
+        "未煮熟"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "店員講「I will send that dessert right away, and I will tell the kitchen about the plate.」，right away 係咩意思？",
       "choices": [
-        "即刻",
         "遲啲",
-        "室外"
+        "室外",
+        "即刻"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：cold、replace、定 manager？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "replace",
         "manager",

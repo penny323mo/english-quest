@@ -303,11 +303,11 @@
       "type": "meaning",
       "prompt": "客人講「I see your point, but I am concerned the owner cannot meet this new deadline on Friday.」，concerned 係咩意思？",
       "choices": [
-        "免費",
         "擔心",
+        "免費",
         "同意"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "meaning",
@@ -321,7 +321,7 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：deadline、mute、定 agenda？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "mute",
         "agenda",

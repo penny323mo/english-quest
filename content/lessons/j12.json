@@ -286,40 +286,40 @@
       "lemma": "location-noun",
       "choices": [
         "notify",
-        "tomorrow",
-        "location"
+        "location",
+        "tomorrow"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "客人講「Have you kept a similar gold bracelet in stock, and is one still available to reserve today?」，stock 係咩意思？",
       "choices": [
         "取貨",
-        "存貨",
-        "開門時間"
+        "開門時間",
+        "存貨"
       ],
-      "answer": 1
+      "answer": 2
     },
     {
       "type": "meaning",
       "prompt": "客人講「I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm.」，collect 係咩意思？",
       "choices": [
-        "取貨",
         "預留",
-        "描述"
+        "描述",
+        "取貨"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/：location、stock、定 notify？",
+      "prompt": "邊個字有 /l/？",
       "choices": [
         "stock",
-        "notify",
-        "location"
+        "location",
+        "notify"
       ],
-      "answer": 2,
+      "answer": 1,
       "explain": "location 有 /l/。stock 同 notify 冇。"
     }
   ],

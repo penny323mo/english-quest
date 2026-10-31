@@ -289,32 +289,32 @@
       "prompt": "Listen once and pick the word you hear for letters cut into metal.",
       "lemma": "engraving-noun",
       "choices": [
-        "font",
         "engraving",
+        "font",
         "fee"
       ],
-      "answer": 1
+      "answer": 0
     },
     {
       "type": "listen",
       "prompt": "Listen once and pick the word you hear for the style of the letters.",
       "lemma": "font-noun",
       "choices": [
-        "font",
         "date",
+        "font",
         "spelling"
       ],
-      "answer": 0
+      "answer": 1
     },
     {
       "type": "meaning",
       "prompt": "You say 'Each initial must fit.' What does initial mean?",
       "choices": [
-        "名首字母",
         "手續費",
-        "日期"
+        "日期",
+        "名首字母"
       ],
-      "answer": 0
+      "answer": 2
     },
     {
       "type": "meaning",
@@ -328,13 +328,13 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word means you look at the letters of the date: spelling, font, or fee?",
+      "prompt": "Which word means you look at the letters of the date?",
       "choices": [
+        "spelling",
         "font",
-        "fee",
-        "spelling"
+        "fee"
       ],
-      "answer": 2,
+      "answer": 0,
       "explain": "spelling 係串法。"
     }
   ],

@@ -295,40 +295,40 @@
       "lemma": "police-noun",
       "choices": [
         "ambulance",
-        "wallet",
-        "police"
-      ],
-      "answer": 2
-    },
-    {
-      "type": "meaning",
-      "prompt": "客人講「I have lost my wallet, and I last saw it at the desk this morning.」，係咩意思？",
-      "choices": [
-        "退款",
-        "唔見咗",
-        "塞車"
+        "police",
+        "wallet"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I feel faint after the shock, so please tell me if this is an emergency.」，係咩意思？",
+      "prompt": "客人講「I have lost my wallet, and I last saw it at the desk this morning.」，係咩意思？",
       "choices": [
-        "緊急情況",
-        "街角",
-        "收據"
+        "唔見咗",
+        "退款",
+        "塞車"
       ],
       "answer": 0
     },
     {
-      "type": "choice",
-      "prompt": "邊個字有 /l/：wallet、embassy、定 report？",
+      "type": "meaning",
+      "prompt": "客人講「I feel faint after the shock, so please tell me if this is an emergency.」，係咩意思？",
       "choices": [
-        "embassy",
-        "report",
-        "wallet"
+        "街角",
+        "緊急情況",
+        "收據"
       ],
-      "answer": 2,
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "prompt": "邊個字有 /l/？",
+      "choices": [
+        "wallet",
+        "embassy",
+        "report"
+      ],
+      "answer": 0,
       "explain": "wallet 有 /l/。embassy 同 report 冇 /l/。"
     }
   ],
