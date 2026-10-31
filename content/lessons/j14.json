@@ -271,7 +271,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the pale alloy you hear for the band: white gold.",
+      "prompt": "Listen once and pick the pale alloy you hear for the band.",
       "lemma": "white-gold-phrase",
       "choices": [
         "budget",
@@ -282,7 +282,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the warm metal you hear for this stone: yellow gold.",
+      "prompt": "Listen once and pick the warm metal you hear for this stone.",
       "lemma": "yellow-gold-phrase",
       "choices": [
         "yellow gold",

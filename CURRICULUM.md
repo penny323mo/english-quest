@@ -94,10 +94,10 @@
 
 ### J15 — Ring size and care / 改戒指尺寸同維修 · A2/B1 · SHIPPED
 - **Goals:** Say a ring is tight, ask for half a size larger, and collect the opened ring on Saturday under the warranty with the receipt.
-- **Vocab:** tight, half a size, smaller, Saturday, warranty, receipt
-- **Grammar:** Can you make the ring half a size larger? The band is smaller than the finger.
-- **Dialogue beats:** Tight ring and receipt → Larger opening → Half a size larger → Smaller band under warranty → How long and Saturday → Ready Saturday → Bring the receipt → Larger ring is ready
-- **Coherence:** one size change (larger), one collection day (Saturday). Checked against the earlier request.
+- **Vocab:** tight, half a size, Saturday, warranty, receipt
+- **Grammar:** Can you make the ring half a size larger? The warranty work is ready on Saturday, and the charge is nothing.
+- **Dialogue beats:** Tight ring and receipt → Larger opening → Half a size larger → Make it larger under the warranty → How long and Saturday → Ready Saturday, no charge → Bring the receipt → Larger ring is ready
+- **Coherence:** the ring is too tight, so the work is half a size larger. The warranty covers it. It is ready Saturday, the guest brings the receipt, and the charge is nothing. Checked against the earlier request.
 
 ### J8 — After-sales and warranty · B1 · NEW
 - **Goals:** Explain care, warranty, return window politely.
@@ -130,6 +130,13 @@
 - **Grammar:** Can you use a plain font? The engraving is ready in three days.
 - **Dialogue beats:** Wedding date on the bracelet → Initials and the character limit → Plain font and fee → Fee after twelve characters → Check the spelling → Ready in three days → Fee if the spelling is right → Same fee, three days
 - **Coherence:** the wedding date is the text, not the collection day. The only ready time is three days. Checked against the earlier request.
+
+### J17 — Pearl care and pricing / 珍珠保養同價錢 · B1 · SHIPPED
+- **Goals:** Choose a freshwater pearl over a saltwater one, ask about lustre and the price range, keep perfume away, wipe it after wearing, and ask for the certificate.
+- **Vocab:** pearl, lustre, price, perfume, wipe, certificate
+- **Grammar:** Should I keep it away from perfume? Do I wipe the pearl after wearing it?
+- **Dialogue beats:** Freshwater, not saltwater → Soft lustre, saltwater costs more → Price range and perfume → Keep perfume away → Wipe and certificate → Wipe gently, certificate in the box → Keep perfume away and wipe → Certificate lists the price range
+- **Coherence:** one pearl, perfume stays away from it, wipe it after wearing, and the certificate lists the price range. Checked against the earlier request.
 
 ### J11 — VIP / high-ticket consult · B2 · NEW
 - **Goals:** Longer consult: occasion, timeline, budget band, follow-up call.
@@ -205,6 +212,13 @@
 - **Grammar:** I'd like to order…; How long will the delivery take?; You can pay on delivery.
 - **Dialogue beats:** Order → Address → Spell Harbour Street → Minutes → How long → Pay at the door
 
+### D10 — Calling a taxi app / 召的士 · A2/B1 · SHIPPED
+- **Goals:** Say you are running late, give the pick-up point and plate number, change the destination, pay by card, and keep the receipt.
+- **Vocab:** taxi, running late, pick-up point, plate number, destination, card, receipt
+- **Grammar:** Can we change the destination? May I pay by card?
+- **Dialogue beats:** Running late at the hotel door → Plate number → Change destination and pay by card → Card is fine → Ask for the plate and a receipt → Receipt on the phone → Wait at the pick-up point → Watch for the blue car
+- **Coherence:** one pick-up point, one plate, one destination change, and the receipt stays on the phone. Checked against the earlier request.
+
 ### R9 — Paying the bill / 埋單同夾錢 · A2 · SHIPPED
 - **Goals:** Ask for the bill, split it, pay by card or Octopus, notice the service charge, and point out a mistake.
 - **Vocab:** bill, split, service charge, Octopus card, mistake, separate, receipt
@@ -249,6 +263,13 @@
 - **Grammar:** Could we please have a non-smoking choice? What is the wifi password?
 - **Dialogue beats:** Reservation and early check in → Luggage stays by the desk → Non-smoking and luggage stays → Early check in after four → Wifi password → Card from the front desk → Leave the luggage and return after four → Desk calls the name
 - **Coherence:** one luggage plan (it stays at the desk) and one ready time (after four). The password is printed on a card taken at the desk. Checked against the earlier request.
+
+### T13 — At the pharmacy abroad / 外地藥房買藥 · A2/B1 · SHIPPED
+- **Goals:** Say you have a headache and a fever, ask how many times a day, ask whether to take it after meals, and notice a drowsy tablet or a prescription.
+- **Vocab:** headache, fever, times a day, after meals, drowsy, prescription
+- **Grammar:** How many times a day do I take it? Please take it after meals.
+- **Dialogue beats:** Headache and fever → Prescription for strong medicine → Times a day and after meals → Three times a day, drowsy → After meals or earlier → After meals, do not drive → Follow the written note → Keep the prescription
+- **Coherence:** one illness, one dose (three times a day), after meals, and the drowsy warning belongs to that tablet. Checked against the earlier request.
 
 ### T6 — Hotel problem / request · B1 · NEW
 - **Goals:** Noisy room, AC broken, extra towel — polite request + escalate.
@@ -313,8 +334,8 @@
 - **Goals:** Give annual-leave dates, say who covers the desk, send a handover, and ask for email approval around a public holiday.
 - **Vocab:** annual leave, handover, approve, email, public holiday
 - **Grammar:** I would like annual leave from Monday through Friday. Can you approve those dates?
-- **Dialogue beats:** Dates next week → Who covers → Jo covers after the handover → Email the note → Ask for approval → Approve and email → Wednesday holiday, handover Tuesday → Leave starts after the note
-- **Coherence:** one date range (Monday to Friday), one cover (Jo), Wednesday is a public holiday inside that week, and approval waits for the Tuesday handover. Checked against the earlier request.
+- **Dialogue beats:** Monday, Tuesday, Thursday, and Friday, not Wednesday → Wednesday is the public holiday → Jo covers, handover Friday morning → Email the note and approve → Ask for approval → Approve and email → Handover Friday before Monday → Leave starts Monday
+- **Coherence:** one date range, the Wednesday public holiday is why Wednesday is not a leave day, the handover is written on Friday before the first leave day, and there is one approval. Leave starts on Monday. Checked against the earlier request.
 
 ### W4 — Small talk at work · A2/B1 · NEW
 - **Goals:** Weather, weekend, commute — then pivot to work.
@@ -422,7 +443,8 @@ Every round until map complete, ship **≥3 NEW lessons** in this order (skip al
 15. **R10, T11, D8** (café order, MTR top-up, repair report)  
 16. **J15, T12, D9** (ring size, hotel check-in problem, ATM card)
 17. **R11, W9, J16** (allergies, annual leave, engraving)
-18. Then polish / legendary review nodes / further B2 stretch
+18. **T13, D10, J17** (pharmacy abroad, taxi app, pearl care)
+19. Then polish / legendary review nodes / further B2 stretch
 
 **Path UX:** show CEFR chip (A1/A2/B1/B2) on each node; group Path into level tracks; lock by prerequisite; keep `soon:true` teasers for unshipped.
 

@@ -271,7 +271,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the phrase you hear when the work is going to plan: on track.",
+      "prompt": "Listen once and pick the phrase you hear when the work is going to plan.",
       "lemma": "on-track-phrase",
       "choices": [
         "question",
@@ -282,7 +282,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the phrase you hear for a late sample run: behind schedule.",
+      "prompt": "Listen once and pick the phrase you hear for a late sample run.",
       "lemma": "behind-schedule-phrase",
       "choices": [
         "behind schedule",

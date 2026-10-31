@@ -15,7 +15,6 @@
   "lemmas": [
     "tight-adj",
     "half-size-phrase",
-    "smaller-adj",
     "saturday-noun",
     "warranty-noun",
     "receipt-noun"
@@ -23,7 +22,6 @@
   "topicTags": [
     "緊",
     "半碼",
-    "細",
     "星期六",
     "保養",
     "收據"
@@ -36,18 +34,18 @@
     "pairs": [
       {
         "a": "tight-adj",
-        "b": "smaller-adj"
+        "b": "saturday-noun"
       },
       {
         "a": "half-size-phrase",
-        "b": "saturday-noun"
+        "b": "warranty-noun"
       }
     ],
     "drill": [
       "tight-adj",
       "half-size-phrase",
-      "smaller-adj",
       "saturday-noun",
+      "warranty-noun",
       "receipt-noun"
     ]
   },
@@ -89,11 +87,11 @@
       "id": "j15-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Yes the band is smaller, and we can open the ring under the warranty.",
-      "glossYue": "係，戒圈細過你手指，保養可以幫你開大。",
+      "text": "Yes we can make the ring half a size larger under the full warranty.",
+      "glossYue": "係，保養可以將戒指改大半碼。",
       "audio": "assets/audio/lines/j15-l4.mp3",
       "audioSlow": "assets/audio/lines/j15-l4-slow.mp3",
-      "say": "Yes the band is smaller, and we can open the ring under the warranty.",
+      "say": "Yes we can make the ring half a size larger under the full warranty.",
       "hideGloss": true
     },
     {
@@ -111,11 +109,11 @@
       "id": "j15-l6",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The warranty work is ready on Saturday, and that day is free for you.",
-      "glossYue": "保養工作星期六做好，嗰日唔使錢。",
+      "text": "The warranty work is ready on Saturday, and the charge is nothing at all.",
+      "glossYue": "保養工作星期六做好，完全唔使錢。",
       "audio": "assets/audio/lines/j15-l6.mp3",
       "audioSlow": "assets/audio/lines/j15-l6-slow.mp3",
-      "say": "The warranty work is ready on Saturday, and that day is free for you.",
+      "say": "The warranty work is ready on Saturday, and the charge is nothing at all.",
       "hideGloss": true
     },
     {
@@ -186,12 +184,12 @@
       ]
     },
     {
-      "pattern": "Yes the band is ___, and we can open the ring under the warranty.",
-      "example": "Yes the band is smaller, and we can open the ring under the warranty.",
-      "glossYue": "戒圈細過手指。",
-      "answer": "smaller",
+      "pattern": "Yes we can make the ring half a size larger under the full ___.",
+      "example": "Yes we can make the ring half a size larger under the full warranty.",
+      "glossYue": "保養可以改大半碼。",
+      "answer": "warranty",
       "choices": [
-        "smaller",
+        "warranty",
         "tight",
         "Saturday"
       ]
@@ -258,7 +256,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "Yes the band is smaller, and we can open the ring under the warranty.",
+        "line": "Yes we can make the ring half a size larger under the full warranty.",
         "audio": "assets/audio/lines/j15-l4.mp3",
         "audioSlow": "assets/audio/lines/j15-l4-slow.mp3",
         "expect": "How long does the warranty work take, and may I collect it on Saturday?",
@@ -272,7 +270,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "The warranty work is ready on Saturday, and that day is free for you.",
+        "line": "The warranty work is ready on Saturday, and the charge is nothing at all.",
         "audio": "assets/audio/lines/j15-l6.mp3",
         "audioSlow": "assets/audio/lines/j15-l6-slow.mp3",
         "expect": "I will bring the receipt on Saturday and pay nothing for this warranty work.",
@@ -288,7 +286,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear when the ring feels too small: tight.",
+      "prompt": "Listen once and pick the word you hear when the ring feels too small.",
       "lemma": "tight-adj",
       "choices": [
         "receipt",
@@ -299,7 +297,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the phrase you hear for a larger fit: half a size.",
+      "prompt": "Listen once and pick the phrase you hear for a larger fit.",
       "lemma": "half-size-phrase",
       "choices": [
         "half a size",
@@ -330,10 +328,10 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word has /aɪ/: tight, Saturday, or smaller?",
+      "prompt": "Which word has /aɪ/: tight, Saturday, or receipt?",
       "choices": [
-        "smaller",
         "receipt",
+        "Saturday",
         "tight"
       ],
       "answer": 2,

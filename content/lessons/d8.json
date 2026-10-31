@@ -268,7 +268,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for water coming out of the tap: leak.",
+      "prompt": "Listen once and pick the word you hear for water coming out of the tap.",
       "lemma": "leak-noun",
       "choices": [
         "flat",
@@ -279,7 +279,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for the visit that fixes it: repair.",
+      "prompt": "Listen once and pick the word you hear for the visit that fixes it.",
       "lemma": "repair-noun",
       "choices": [
         "repair",

@@ -272,7 +272,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for a simple haircut: trim.",
+      "prompt": "Listen once and pick the word you hear for a simple haircut.",
       "lemma": "trim-noun",
       "choices": [
         "price",
@@ -283,7 +283,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the phrase you hear for drying the hair: blow dry.",
+      "prompt": "Listen once and pick the phrase you hear for drying the hair.",
       "lemma": "blow-dry-phrase",
       "choices": [
         "blow dry",

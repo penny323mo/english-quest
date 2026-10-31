@@ -269,7 +269,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for the train route: line.",
+      "prompt": "Listen once and pick the word you hear for the train route.",
       "lemma": "line-noun",
       "choices": [
         "ticket",
@@ -280,7 +280,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for the way out of the station: exit.",
+      "prompt": "Listen once and pick the word you hear for the way out of the station.",
       "lemma": "exit-noun",
       "choices": [
         "exit",

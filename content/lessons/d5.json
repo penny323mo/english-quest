@@ -278,7 +278,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "聽一次，揀你聽到嘅字：parcel",
+      "prompt": "聽一次，揀你聽到嘅字.",
       "lemma": "parcel-noun",
       "choices": [
         "parcel",
@@ -289,7 +289,7 @@
     },
     {
       "type": "listen",
-      "prompt": "聽一次，揀你聽到嘅字：fragile",
+      "prompt": "聽一次，揀你聽到嘅字.",
       "lemma": "fragile-adj",
       "choices": [
         "weight",

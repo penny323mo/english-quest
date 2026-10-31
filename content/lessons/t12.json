@@ -29,7 +29,7 @@
     "非吸煙",
     "密碼"
   ],
-  "next": "R5",
+  "next": "T13",
   "sound": {
     "ipa": "/u/",
     "title": "room 入面嗰個音",
@@ -285,7 +285,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the phrase you hear for arriving before the usual time: early check in.",
+      "prompt": "Listen once and pick the phrase you hear for arriving before the usual time.",
       "lemma": "early-check-in-phrase",
       "choices": [
         "luggage",
@@ -296,7 +296,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for the bag you leave at the desk: luggage.",
+      "prompt": "Listen once and pick the word you hear for the bag you leave at the desk.",
       "lemma": "luggage-noun",
       "choices": [
         "luggage",

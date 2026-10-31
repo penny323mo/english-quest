@@ -1,0 +1,345 @@
+{
+  "id": "J17",
+  "unit": "J",
+  "titleYue": "珍珠保養同價錢",
+  "titleEn": "Pearl care and pricing",
+  "canDoYue": "你識分淡水同鹹水珍珠、講光澤同價錢範圍、避開香水、戴完抹一抹，同埋問證書。",
+  "canDoEn": "Compare a freshwater pearl with a saltwater one, ask about lustre and the price range, keep perfume away, wipe the pearl after wearing, and ask for the certificate.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j17.webp",
+  "cast": [
+    "gus",
+    "ida"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "pearl-noun",
+    "lustre-noun",
+    "price-noun",
+    "perfume-noun",
+    "wipe-verb",
+    "certificate-noun"
+  ],
+  "topicTags": [
+    "珍珠",
+    "光澤",
+    "香水",
+    "證書",
+    "價錢",
+    "抹"
+  ],
+  "next": "T6",
+  "sound": {
+    "ipa": "/aɪ/",
+    "title": "wipe 入面嗰個音",
+    "note": "wipe 有 /aɪ/。lustre 有 /ʌ/。",
+    "pairs": [
+      {
+        "a": "wipe-verb",
+        "b": "lustre-noun"
+      },
+      {
+        "a": "perfume-noun",
+        "b": "certificate-noun"
+      }
+    ],
+    "drill": [
+      "lustre-noun",
+      "perfume-noun",
+      "wipe-verb",
+      "certificate-noun",
+      "pearl-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "j17-l1",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "I would like one short freshwater pearl necklace with a very soft lustre, not a saltwater pearl.",
+      "glossYue": "我想要一條短嘅淡水珍珠頸鏈，光澤好柔和，唔要鹹水珍珠。",
+      "audio": "assets/audio/lines/j17-l1.mp3",
+      "audioSlow": "assets/audio/lines/j17-l1-slow.mp3",
+      "say": "I would like one short freshwater pearl necklace with a very soft lustre, not a saltwater pearl.",
+      "hideGloss": false
+    },
+    {
+      "id": "j17-l2",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "This freshwater pearl has a soft lustre, and the saltwater one costs more than it here.",
+      "glossYue": "呢顆淡水珍珠光澤柔和，鹹水嗰顆貴啲。",
+      "audio": "assets/audio/lines/j17-l2.mp3",
+      "audioSlow": "assets/audio/lines/j17-l2-slow.mp3",
+      "say": "This freshwater pearl has a soft lustre, and the saltwater one costs more than it here.",
+      "hideGloss": false
+    },
+    {
+      "id": "j17-l3",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "What is the full price range for it, and should I keep it away from perfume?",
+      "glossYue": "完整價錢範圍係幾多，使唔使避開香水？",
+      "audio": "assets/audio/lines/j17-l3.mp3",
+      "audioSlow": "assets/audio/lines/j17-l3-slow.mp3",
+      "say": "What is the full price range for it, and should I keep it away from perfume?",
+      "hideGloss": false
+    },
+    {
+      "id": "j17-l4",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "The price range is fair for you, and you should keep perfume away from the pearl.",
+      "glossYue": "價錢範圍合理，香水要避開珍珠。",
+      "audio": "assets/audio/lines/j17-l4.mp3",
+      "audioSlow": "assets/audio/lines/j17-l4-slow.mp3",
+      "say": "The price range is fair for you, and you should keep perfume away from the pearl.",
+      "hideGloss": true
+    },
+    {
+      "id": "j17-l5",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "Do I wipe the pearl after wearing it, and is there a full certificate with it?",
+      "glossYue": "戴完使唔使抹珍珠，有冇完整證書？",
+      "audio": "assets/audio/lines/j17-l5.mp3",
+      "audioSlow": "assets/audio/lines/j17-l5-slow.mp3",
+      "say": "Do I wipe the pearl after wearing it, and is there a full certificate with it?",
+      "hideGloss": true
+    },
+    {
+      "id": "j17-l6",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Please wipe it gently after each wearing, and the full certificate is kept in this small box.",
+      "glossYue": "請每次戴完輕輕抹，完整證書放喺呢個小盒。",
+      "audio": "assets/audio/lines/j17-l6.mp3",
+      "audioSlow": "assets/audio/lines/j17-l6-slow.mp3",
+      "say": "Please wipe it gently after each wearing, and the full certificate is kept in this small box.",
+      "hideGloss": true
+    },
+    {
+      "id": "j17-l7",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "I will keep perfume away from it, and I will wipe it after I wear it.",
+      "glossYue": "我會避開香水，戴完會抹。",
+      "audio": "assets/audio/lines/j17-l7.mp3",
+      "audioSlow": "assets/audio/lines/j17-l7-slow.mp3",
+      "say": "I will keep perfume away from it, and I will wipe it after I wear it.",
+      "hideGloss": true
+    },
+    {
+      "id": "j17-l8",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "The certificate lists the full price range, and that soft lustre stays when you wipe it gently.",
+      "glossYue": "證書寫咗完整價錢範圍，光澤柔和，你輕輕抹完都會保持。",
+      "audio": "assets/audio/lines/j17-l8.mp3",
+      "audioSlow": "assets/audio/lines/j17-l8-slow.mp3",
+      "say": "The certificate lists the full price range, and that soft lustre stays when you wipe it gently.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "I would like one short freshwater pearl necklace with a very soft lustre, not a saltwater pearl. 呢句即係點？",
+      "choices": [
+        "想要淡水珍珠，光澤柔和，唔要鹹水",
+        "想買香水",
+        "想問珍珠刻字"
+      ],
+      "answer": 0,
+      "explain": "pearl 係珍珠。lustre 係光澤。"
+    },
+    {
+      "prompt": "What is the full price range for it, and should I keep it away from perfume? 即係問緊咩？",
+      "choices": [
+        "問證書喺唔喺盒入面",
+        "問價錢範圍，使唔使避開香水",
+        "問珍珠可唔可以浸泡"
+      ],
+      "answer": 1,
+      "explain": "price 係價錢。perfume 係香水。"
+    },
+    {
+      "prompt": "Do I wipe the pearl after wearing it, and is there a full certificate with it? 即係問緊咩？",
+      "choices": [
+        "問光澤係咪鹹水",
+        "問價錢係咪固定",
+        "問戴完使唔使抹，有冇證書"
+      ],
+      "answer": 2,
+      "explain": "wipe 係抹。certificate 係證書。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I would like one short freshwater pearl necklace with a very soft ___, not a saltwater pearl.",
+      "example": "I would like one short freshwater pearl necklace with a very soft lustre, not a saltwater pearl.",
+      "glossYue": "光澤柔和。",
+      "answer": "lustre",
+      "choices": [
+        "lustre",
+        "perfume",
+        "certificate"
+      ]
+    },
+    {
+      "pattern": "The price range is fair for you, and you should keep ___ away from the pearl.",
+      "example": "The price range is fair for you, and you should keep perfume away from the pearl.",
+      "glossYue": "香水要避開珍珠。",
+      "answer": "perfume",
+      "choices": [
+        "perfume",
+        "certificate",
+        "price"
+      ]
+    },
+    {
+      "pattern": "Please ___ it gently after each wearing, and the full certificate is kept in this small box.",
+      "example": "Please wipe it gently after each wearing, and the full certificate is kept in this small box.",
+      "glossYue": "戴完輕輕抹。",
+      "answer": "wipe",
+      "choices": [
+        "wipe",
+        "lustre",
+        "pearl"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想問光澤。你點講？",
+      "choices": [
+        "I would like one short freshwater pearl necklace with a very soft lustre, not a saltwater pearl.",
+        "What is the full price range for it, and should I keep it away from perfume?",
+        "Do I wipe the pearl after wearing it, and is there a full certificate with it?"
+      ],
+      "answer": 0,
+      "explain": "講 lustre。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "keep",
+        "perfume",
+        "away"
+      ],
+      "answer": [
+        "keep",
+        "perfume",
+        "away"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "gus",
+    "intro": "你問珍珠保養。同 Ida 講光澤同香水。可以講：lustre、perfume。",
+    "turns": [
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "This freshwater pearl has a soft lustre, and the saltwater one costs more than it here.",
+        "audio": "assets/audio/lines/j17-l2.mp3",
+        "audioSlow": "assets/audio/lines/j17-l2-slow.mp3",
+        "expect": "What is the full price range for it, and should I keep it away from perfume?",
+        "keywords": [
+          "price",
+          "perfume"
+        ],
+        "modelAudio": "assets/audio/lines/j17-l3.mp3",
+        "modelSlow": "assets/audio/lines/j17-l3-slow.mp3"
+      },
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "The price range is fair for you, and you should keep perfume away from the pearl.",
+        "audio": "assets/audio/lines/j17-l4.mp3",
+        "audioSlow": "assets/audio/lines/j17-l4-slow.mp3",
+        "expect": "Do I wipe the pearl after wearing it, and is there a full certificate with it?",
+        "keywords": [
+          "wipe",
+          "certificate"
+        ],
+        "modelAudio": "assets/audio/lines/j17-l5.mp3",
+        "modelSlow": "assets/audio/lines/j17-l5-slow.mp3"
+      },
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "Please wipe it gently after each wearing, and the full certificate is kept in this small box.",
+        "audio": "assets/audio/lines/j17-l6.mp3",
+        "audioSlow": "assets/audio/lines/j17-l6-slow.mp3",
+        "expect": "I will keep perfume away from it, and I will wipe it after I wear it.",
+        "keywords": [
+          "perfume",
+          "wipe"
+        ],
+        "modelAudio": "assets/audio/lines/j17-l7.mp3",
+        "modelSlow": "assets/audio/lines/j17-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear for the soft shine of the pearl.",
+      "lemma": "lustre-noun",
+      "choices": [
+        "certificate",
+        "lustre",
+        "perfume"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear for the paper that lists the price.",
+      "lemma": "certificate-noun",
+      "choices": [
+        "certificate",
+        "pearl",
+        "price"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'Keep perfume away.' What does perfume mean?",
+      "choices": [
+        "香水",
+        "光澤",
+        "證書"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'Please wipe the pearl.' What does wipe mean?",
+      "choices": [
+        "價錢",
+        "抹",
+        "珍珠"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word means the gem in this necklace: pearl, perfume, or certificate?",
+      "choices": [
+        "perfume",
+        "certificate",
+        "pearl"
+      ],
+      "answer": 2,
+      "explain": "pearl 係珍珠。"
+    }
+  ],
+  "shadow": {
+    "lineId": "j17-l1",
+    "hint": "I would like one short freshwater pearl necklace with a very soft lustre, not a saltwater pearl."
+  }
+}

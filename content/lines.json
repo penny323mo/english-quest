@@ -4613,11 +4613,11 @@
     "id": "j15-l4",
     "speaker": "ida",
     "speakerLabel": "Ida",
-    "text": "Yes the band is smaller, and we can open the ring under the warranty.",
-    "glossYue": "係，戒圈細過你手指，保養可以幫你開大。",
+    "text": "Yes we can make the ring half a size larger under the full warranty.",
+    "glossYue": "係，保養可以將戒指改大半碼。",
     "audio": "assets/audio/lines/j15-l4.mp3",
     "audioSlow": "assets/audio/lines/j15-l4-slow.mp3",
-    "say": "Yes the band is smaller, and we can open the ring under the warranty."
+    "say": "Yes we can make the ring half a size larger under the full warranty."
   },
   {
     "id": "j15-l5",
@@ -4633,11 +4633,11 @@
     "id": "j15-l6",
     "speaker": "ida",
     "speakerLabel": "Ida",
-    "text": "The warranty work is ready on Saturday, and that day is free for you.",
-    "glossYue": "保養工作星期六做好，嗰日唔使錢。",
+    "text": "The warranty work is ready on Saturday, and the charge is nothing at all.",
+    "glossYue": "保養工作星期六做好，完全唔使錢。",
     "audio": "assets/audio/lines/j15-l6.mp3",
     "audioSlow": "assets/audio/lines/j15-l6-slow.mp3",
-    "say": "The warranty work is ready on Saturday, and that day is free for you."
+    "say": "The warranty work is ready on Saturday, and the charge is nothing at all."
   },
   {
     "id": "j15-l7",
@@ -4903,81 +4903,81 @@
     "id": "w9-l1",
     "speaker": "sora",
     "speakerLabel": "Sora",
-    "text": "I would like annual leave from Monday through Friday next week, and I can send those dates.",
-    "glossYue": "我想下星期星期一至星期五請年假，我可以送呢啲日期。",
+    "text": "I would like annual leave next week on Monday, Tuesday, Thursday, and Friday, but not on Wednesday.",
+    "glossYue": "我想下星期請年假，星期一、二、四、五，星期三唔請。",
     "audio": "assets/audio/lines/w9-l1.mp3",
     "audioSlow": "assets/audio/lines/w9-l1-slow.mp3",
-    "say": "I would like annual leave from Monday through Friday next week, and I can send those dates."
+    "say": "I would like annual leave next week on Monday, Tuesday, Thursday, and Friday, but not on Wednesday."
   },
   {
     "id": "w9-l2",
     "speaker": "niles",
     "speakerLabel": "Niles",
-    "text": "Which dates do you want for this annual leave, and who will cover your desk next week?",
-    "glossYue": "你想請年假邊幾日，下星期邊個睇你張檯？",
+    "text": "Wednesday is a public holiday next week, so your leave days are Monday, Tuesday, Thursday, and Friday.",
+    "glossYue": "下星期星期三係公眾假期，所以你放假係星期一、二、四、五。",
     "audio": "assets/audio/lines/w9-l2.mp3",
     "audioSlow": "assets/audio/lines/w9-l2-slow.mp3",
-    "say": "Which dates do you want for this annual leave, and who will cover your desk next week?"
+    "say": "Wednesday is a public holiday next week, so your leave days are Monday, Tuesday, Thursday, and Friday."
   },
   {
     "id": "w9-l3",
     "speaker": "sora",
     "speakerLabel": "Sora",
-    "text": "I want leave from Monday to Friday next week, and Jo will cover the desk after handover.",
-    "glossYue": "我想下星期星期一至星期五放假，Jo 會喺交接之後睇張檯。",
+    "text": "Jo will cover my desk next week, and I can send that handover note this Friday morning.",
+    "glossYue": "Jo 下星期會睇我張檯，我星期五朝早可以送交接筆記。",
     "audio": "assets/audio/lines/w9-l3.mp3",
     "audioSlow": "assets/audio/lines/w9-l3-slow.mp3",
-    "say": "I want leave from Monday to Friday next week, and Jo will cover the desk after handover."
+    "say": "Jo will cover my desk next week, and I can send that handover note this Friday morning."
   },
   {
     "id": "w9-l4",
     "speaker": "niles",
     "speakerLabel": "Niles",
-    "text": "Please send that handover note by email, and I can approve the dates after I read it.",
-    "glossYue": "請用電郵送交接筆記，我睇完就可以批核日期。",
+    "text": "Please email me that full handover note on Friday, and I will approve those four dates then.",
+    "glossYue": "請星期五將完整交接筆記電郵畀我，我到時就批核嗰四日。",
     "audio": "assets/audio/lines/w9-l4.mp3",
     "audioSlow": "assets/audio/lines/w9-l4-slow.mp3",
-    "say": "Please send that handover note by email, and I can approve the dates after I read it."
+    "say": "Please email me that full handover note on Friday, and I will approve those four dates then."
   },
   {
     "id": "w9-l5",
     "speaker": "sora",
     "speakerLabel": "Sora",
-    "text": "Can you approve those dates once the note is ready, and will you email me a reply?",
-    "glossYue": "筆記準備好可唔可以批核日期，你會唔會電郵覆我？",
+    "text": "Can you please approve those four dates once you read the Friday note and email me back?",
+    "glossYue": "你睇完星期五嗰張筆記，可唔可以批核嗰四日，再電郵覆我？",
     "audio": "assets/audio/lines/w9-l5.mp3",
     "audioSlow": "assets/audio/lines/w9-l5-slow.mp3",
-    "say": "Can you approve those dates once the note is ready, and will you email me a reply?"
+    "say": "Can you please approve those four dates once you read the Friday note and email me back?"
   },
   {
     "id": "w9-l6",
     "speaker": "niles",
     "speakerLabel": "Niles",
-    "text": "I will approve the dates, and I will email you once the public holiday list is clear.",
-    "glossYue": "我會批核日期，公眾假期清單清楚之後我會電郵你。",
+    "text": "I will approve those four dates, and I will email you right after I read that note.",
+    "glossYue": "我會批核嗰四日，睇完筆記就即刻電郵你。",
     "audio": "assets/audio/lines/w9-l6.mp3",
     "audioSlow": "assets/audio/lines/w9-l6-slow.mp3",
-    "say": "I will approve the dates, and I will email you once the public holiday list is clear."
+    "say": "I will approve those four dates, and I will email you right after I read that note."
   },
   {
     "id": "w9-l7",
     "speaker": "sora",
     "speakerLabel": "Sora",
-    "text": "Wednesday is a public holiday in that week, so I will start my handover on Tuesday morning.",
-    "glossYue": "嗰個星期星期三係公眾假期，所以我星期二朝早先開始交接。",
+    "text": "I will write the full handover note this Friday, just before my first leave day on Monday.",
+    "glossYue": "我會喺星期五寫好完整交接筆記，就喺星期一第一日放假之前。",
     "audio": "assets/audio/lines/w9-l7.mp3",
     "audioSlow": "assets/audio/lines/w9-l7-slow.mp3",
-    "say": "Wednesday is a public holiday in that week, so I will start my handover on Tuesday morning."
+    "say": "I will write the full handover note this Friday, just before my first leave day on Monday."
   },
   {
     "id": "w9-l8",
     "speaker": "niles",
     "speakerLabel": "Niles",
-    "text": "Please email me the full handover on Tuesday, and annual leave can start after that written note.",
-    "glossYue": "請星期二將完整交接電郵畀我，睇完筆記就可以開始年假。",
+    "text": "Your annual leave starts on Monday next week, and I have approved those four dates already today.",
+    "glossYue": "你下星期一年假由星期一起，我今日已經批核咗嗰四日。",
     "audio": "assets/audio/lines/w9-l8.mp3",
     "audioSlow": "assets/audio/lines/w9-l8-slow.mp3",
-    "say": "Please email me the full handover on Tuesday, and annual leave can start after that written note."
+    "say": "Your annual leave starts on Monday next week, and I have approved those four dates already today."
   },
   {
     "id": "j16-l1",
@@ -5058,5 +5058,245 @@
     "audio": "assets/audio/lines/j16-l8.mp3",
     "audioSlow": "assets/audio/lines/j16-l8-slow.mp3",
     "say": "The fee stays the same for you, and three days is enough when the spelling is right."
+  },
+  {
+    "id": "t13-l1",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "I have a headache and a fever, and I need some medicine from this pharmacy.",
+    "glossYue": "我頭痛又發燒，要喺呢間藥房買藥。",
+    "audio": "assets/audio/lines/t13-l1.mp3",
+    "audioSlow": "assets/audio/lines/t13-l1-slow.mp3",
+    "say": "I have a headache and a fever, and I need some medicine from this pharmacy."
+  },
+  {
+    "id": "t13-l2",
+    "speaker": "suki",
+    "speakerLabel": "Suki",
+    "text": "This pharmacy can help with that fever, and some strong medicine here needs a prescription.",
+    "glossYue": "呢間藥房可以幫你退燒，有啲強藥需要藥單。",
+    "audio": "assets/audio/lines/t13-l2.mp3",
+    "audioSlow": "assets/audio/lines/t13-l2-slow.mp3",
+    "say": "This pharmacy can help with that fever, and some strong medicine here needs a prescription."
+  },
+  {
+    "id": "t13-l3",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "How many times a day do I take it, and is that after meals, please?",
+    "glossYue": "我一日食幾多次，係咪飯後先食？",
+    "audio": "assets/audio/lines/t13-l3.mp3",
+    "audioSlow": "assets/audio/lines/t13-l3-slow.mp3",
+    "say": "How many times a day do I take it, and is that after meals, please?"
+  },
+  {
+    "id": "t13-l4",
+    "speaker": "suki",
+    "speakerLabel": "Suki",
+    "text": "Please take it three times a day, and this tablet can make you feel drowsy.",
+    "glossYue": "請一日食三次，呢種藥會令人嗜睡。",
+    "audio": "assets/audio/lines/t13-l4.mp3",
+    "audioSlow": "assets/audio/lines/t13-l4-slow.mp3",
+    "say": "Please take it three times a day, and this tablet can make you feel drowsy."
+  },
+  {
+    "id": "t13-l5",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Should I take each tablet only after meals, or may I take it earlier?",
+    "glossYue": "係咪每粒藥都要飯後先食，定係可以早啲食？",
+    "audio": "assets/audio/lines/t13-l5.mp3",
+    "audioSlow": "assets/audio/lines/t13-l5-slow.mp3",
+    "say": "Should I take each tablet only after meals, or may I take it earlier?"
+  },
+  {
+    "id": "t13-l6",
+    "speaker": "suki",
+    "speakerLabel": "Suki",
+    "text": "Please take it after meals, and do not drive if you feel drowsy later.",
+    "glossYue": "請飯後先食，如果覺得嗜睡就唔好揸車。",
+    "audio": "assets/audio/lines/t13-l6.mp3",
+    "audioSlow": "assets/audio/lines/t13-l6-slow.mp3",
+    "say": "Please take it after meals, and do not drive if you feel drowsy later."
+  },
+  {
+    "id": "t13-l7",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "The written prescription says three times a day, and I will follow that note here.",
+    "glossYue": "藥單寫一日三次，我會跟住張紙。",
+    "audio": "assets/audio/lines/t13-l7.mp3",
+    "audioSlow": "assets/audio/lines/t13-l7-slow.mp3",
+    "say": "The written prescription says three times a day, and I will follow that note here."
+  },
+  {
+    "id": "t13-l8",
+    "speaker": "suki",
+    "speakerLabel": "Suki",
+    "text": "Please keep this prescription with you, and rest at home if the fever returns.",
+    "glossYue": "請帶住呢張藥單，發燒返嚟就喺屋企休息。",
+    "audio": "assets/audio/lines/t13-l8.mp3",
+    "audioSlow": "assets/audio/lines/t13-l8-slow.mp3",
+    "say": "Please keep this prescription with you, and rest at home if the fever returns."
+  },
+  {
+    "id": "d10-l1",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "I am running late now, and my taxi pick-up point is the hotel door.",
+    "glossYue": "我而家遲到，的士上車站係酒店門口。",
+    "audio": "assets/audio/lines/d10-l1.mp3",
+    "audioSlow": "assets/audio/lines/d10-l1-slow.mp3",
+    "say": "I am running late now, and my taxi pick-up point is the hotel door."
+  },
+  {
+    "id": "d10-l2",
+    "speaker": "ray",
+    "speakerLabel": "Ray",
+    "text": "I can see the pick-up point, and the plate number is blue four two.",
+    "glossYue": "我見到上車站，車牌係藍四二。",
+    "audio": "assets/audio/lines/d10-l2.mp3",
+    "audioSlow": "assets/audio/lines/d10-l2-slow.mp3",
+    "say": "I can see the pick-up point, and the plate number is blue four two."
+  },
+  {
+    "id": "d10-l3",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "Can we change the destination on the way, and may I pay by card please?",
+    "glossYue": "可唔可以中途改目的地，同埋用卡付？",
+    "audio": "assets/audio/lines/d10-l3.mp3",
+    "audioSlow": "assets/audio/lines/d10-l3-slow.mp3",
+    "say": "Can we change the destination on the way, and may I pay by card please?"
+  },
+  {
+    "id": "d10-l4",
+    "speaker": "ray",
+    "speakerLabel": "Ray",
+    "text": "Yes we can change that destination now, and card payment is fine for you here.",
+    "glossYue": "而家可以改目的地，用卡付都得。",
+    "audio": "assets/audio/lines/d10-l4.mp3",
+    "audioSlow": "assets/audio/lines/d10-l4-slow.mp3",
+    "say": "Yes we can change that destination now, and card payment is fine for you here."
+  },
+  {
+    "id": "d10-l5",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "What is the full plate number, and can you send me a written receipt please?",
+    "glossYue": "車牌係幾多，可唔可以畀張收據我？",
+    "audio": "assets/audio/lines/d10-l5.mp3",
+    "audioSlow": "assets/audio/lines/d10-l5-slow.mp3",
+    "say": "What is the full plate number, and can you send me a written receipt please?"
+  },
+  {
+    "id": "d10-l6",
+    "speaker": "ray",
+    "speakerLabel": "Ray",
+    "text": "Your receipt is saved on this phone app, and the blue car is four two.",
+    "glossYue": "收據喺呢個電話程式，藍色車係四二。",
+    "audio": "assets/audio/lines/d10-l6.mp3",
+    "audioSlow": "assets/audio/lines/d10-l6-slow.mp3",
+    "say": "Your receipt is saved on this phone app, and the blue car is four two."
+  },
+  {
+    "id": "d10-l7",
+    "speaker": "tom",
+    "speakerLabel": "Tom",
+    "text": "I will wait at the hotel pick-up point until the blue car arrives there.",
+    "glossYue": "我會喺酒店上車站等，直至藍色車到。",
+    "audio": "assets/audio/lines/d10-l7.mp3",
+    "audioSlow": "assets/audio/lines/d10-l7-slow.mp3",
+    "say": "I will wait at the hotel pick-up point until the blue car arrives there."
+  },
+  {
+    "id": "d10-l8",
+    "speaker": "ray",
+    "speakerLabel": "Ray",
+    "text": "Please watch for the blue car at the door, and the receipt stays on your phone.",
+    "glossYue": "請留意門口藍色車，收據會留喺你部電話。",
+    "audio": "assets/audio/lines/d10-l8.mp3",
+    "audioSlow": "assets/audio/lines/d10-l8-slow.mp3",
+    "say": "Please watch for the blue car at the door, and the receipt stays on your phone."
+  },
+  {
+    "id": "j17-l1",
+    "speaker": "gus",
+    "speakerLabel": "Gus",
+    "text": "I would like one short freshwater pearl necklace with a very soft lustre, not a saltwater pearl.",
+    "glossYue": "我想要一條短嘅淡水珍珠頸鏈，光澤好柔和，唔要鹹水珍珠。",
+    "audio": "assets/audio/lines/j17-l1.mp3",
+    "audioSlow": "assets/audio/lines/j17-l1-slow.mp3",
+    "say": "I would like one short freshwater pearl necklace with a very soft lustre, not a saltwater pearl."
+  },
+  {
+    "id": "j17-l2",
+    "speaker": "ida",
+    "speakerLabel": "Ida",
+    "text": "This freshwater pearl has a soft lustre, and the saltwater one costs more than it here.",
+    "glossYue": "呢顆淡水珍珠光澤柔和，鹹水嗰顆貴啲。",
+    "audio": "assets/audio/lines/j17-l2.mp3",
+    "audioSlow": "assets/audio/lines/j17-l2-slow.mp3",
+    "say": "This freshwater pearl has a soft lustre, and the saltwater one costs more than it here."
+  },
+  {
+    "id": "j17-l3",
+    "speaker": "gus",
+    "speakerLabel": "Gus",
+    "text": "What is the full price range for it, and should I keep it away from perfume?",
+    "glossYue": "完整價錢範圍係幾多，使唔使避開香水？",
+    "audio": "assets/audio/lines/j17-l3.mp3",
+    "audioSlow": "assets/audio/lines/j17-l3-slow.mp3",
+    "say": "What is the full price range for it, and should I keep it away from perfume?"
+  },
+  {
+    "id": "j17-l4",
+    "speaker": "ida",
+    "speakerLabel": "Ida",
+    "text": "The price range is fair for you, and you should keep perfume away from the pearl.",
+    "glossYue": "價錢範圍合理，香水要避開珍珠。",
+    "audio": "assets/audio/lines/j17-l4.mp3",
+    "audioSlow": "assets/audio/lines/j17-l4-slow.mp3",
+    "say": "The price range is fair for you, and you should keep perfume away from the pearl."
+  },
+  {
+    "id": "j17-l5",
+    "speaker": "gus",
+    "speakerLabel": "Gus",
+    "text": "Do I wipe the pearl after wearing it, and is there a full certificate with it?",
+    "glossYue": "戴完使唔使抹珍珠，有冇完整證書？",
+    "audio": "assets/audio/lines/j17-l5.mp3",
+    "audioSlow": "assets/audio/lines/j17-l5-slow.mp3",
+    "say": "Do I wipe the pearl after wearing it, and is there a full certificate with it?"
+  },
+  {
+    "id": "j17-l6",
+    "speaker": "ida",
+    "speakerLabel": "Ida",
+    "text": "Please wipe it gently after each wearing, and the full certificate is kept in this small box.",
+    "glossYue": "請每次戴完輕輕抹，完整證書放喺呢個小盒。",
+    "audio": "assets/audio/lines/j17-l6.mp3",
+    "audioSlow": "assets/audio/lines/j17-l6-slow.mp3",
+    "say": "Please wipe it gently after each wearing, and the full certificate is kept in this small box."
+  },
+  {
+    "id": "j17-l7",
+    "speaker": "gus",
+    "speakerLabel": "Gus",
+    "text": "I will keep perfume away from it, and I will wipe it after I wear it.",
+    "glossYue": "我會避開香水，戴完會抹。",
+    "audio": "assets/audio/lines/j17-l7.mp3",
+    "audioSlow": "assets/audio/lines/j17-l7-slow.mp3",
+    "say": "I will keep perfume away from it, and I will wipe it after I wear it."
+  },
+  {
+    "id": "j17-l8",
+    "speaker": "ida",
+    "speakerLabel": "Ida",
+    "text": "The certificate lists the full price range, and that soft lustre stays when you wipe it gently.",
+    "glossYue": "證書寫咗完整價錢範圍，光澤柔和，你輕輕抹完都會保持。",
+    "audio": "assets/audio/lines/j17-l8.mp3",
+    "audioSlow": "assets/audio/lines/j17-l8-slow.mp3",
+    "say": "The certificate lists the full price range, and that soft lustre stays when you wipe it gently."
   }
 ]

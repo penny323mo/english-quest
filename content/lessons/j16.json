@@ -30,7 +30,7 @@
     "手續費",
     "串法"
   ],
-  "next": "T6",
+  "next": "J17",
   "sound": {
     "ipa": "/eɪ/",
     "title": "engraving 入面嗰個音",
@@ -286,7 +286,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for letters cut into metal: engraving.",
+      "prompt": "Listen once and pick the word you hear for letters cut into metal.",
       "lemma": "engraving-noun",
       "choices": [
         "font",
@@ -297,7 +297,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for the style of the letters: font.",
+      "prompt": "Listen once and pick the word you hear for the style of the letters.",
       "lemma": "font-noun",
       "choices": [
         "font",

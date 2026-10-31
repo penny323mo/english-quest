@@ -1,0 +1,345 @@
+{
+  "id": "T13",
+  "unit": "T",
+  "titleYue": "外地藥房買藥",
+  "titleEn": "At the pharmacy abroad",
+  "canDoYue": "你識講頭痛發燒、一日食幾次、飯後先食、嗜睡，同埋邊種藥需要藥單。",
+  "canDoEn": "Say you have a headache and a fever, ask how many times a day and whether to take it after meals, and notice when a medicine makes you drowsy or needs a prescription.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t13.webp",
+  "cast": [
+    "tom",
+    "suki"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "headache-noun",
+    "fever-noun",
+    "times-a-day-phrase",
+    "after-meals-phrase",
+    "drowsy-adj",
+    "prescription-noun"
+  ],
+  "topicTags": [
+    "頭痛",
+    "發燒",
+    "嗜睡",
+    "藥單",
+    "飯後",
+    "次數"
+  ],
+  "next": "R5",
+  "sound": {
+    "ipa": "/aʊ/",
+    "title": "drowsy 入面嗰個音",
+    "note": "drowsy 有 /aʊ/。day 有 /eɪ/。",
+    "pairs": [
+      {
+        "a": "drowsy-adj",
+        "b": "times-a-day-phrase"
+      },
+      {
+        "a": "headache-noun",
+        "b": "fever-noun"
+      }
+    ],
+    "drill": [
+      "drowsy-adj",
+      "times-a-day-phrase",
+      "headache-noun",
+      "fever-noun",
+      "prescription-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "t13-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "I have a headache and a fever, and I need some medicine from this pharmacy.",
+      "glossYue": "我頭痛又發燒，要喺呢間藥房買藥。",
+      "audio": "assets/audio/lines/t13-l1.mp3",
+      "audioSlow": "assets/audio/lines/t13-l1-slow.mp3",
+      "say": "I have a headache and a fever, and I need some medicine from this pharmacy.",
+      "hideGloss": false
+    },
+    {
+      "id": "t13-l2",
+      "speaker": "suki",
+      "speakerLabel": "Suki",
+      "text": "This pharmacy can help with that fever, and some strong medicine here needs a prescription.",
+      "glossYue": "呢間藥房可以幫你退燒，有啲強藥需要藥單。",
+      "audio": "assets/audio/lines/t13-l2.mp3",
+      "audioSlow": "assets/audio/lines/t13-l2-slow.mp3",
+      "say": "This pharmacy can help with that fever, and some strong medicine here needs a prescription.",
+      "hideGloss": false
+    },
+    {
+      "id": "t13-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "How many times a day do I take it, and is that after meals, please?",
+      "glossYue": "我一日食幾多次，係咪飯後先食？",
+      "audio": "assets/audio/lines/t13-l3.mp3",
+      "audioSlow": "assets/audio/lines/t13-l3-slow.mp3",
+      "say": "How many times a day do I take it, and is that after meals, please?",
+      "hideGloss": false
+    },
+    {
+      "id": "t13-l4",
+      "speaker": "suki",
+      "speakerLabel": "Suki",
+      "text": "Please take it three times a day, and this tablet can make you feel drowsy.",
+      "glossYue": "請一日食三次，呢種藥會令人嗜睡。",
+      "audio": "assets/audio/lines/t13-l4.mp3",
+      "audioSlow": "assets/audio/lines/t13-l4-slow.mp3",
+      "say": "Please take it three times a day, and this tablet can make you feel drowsy.",
+      "hideGloss": true
+    },
+    {
+      "id": "t13-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Should I take each tablet only after meals, or may I take it earlier?",
+      "glossYue": "係咪每粒藥都要飯後先食，定係可以早啲食？",
+      "audio": "assets/audio/lines/t13-l5.mp3",
+      "audioSlow": "assets/audio/lines/t13-l5-slow.mp3",
+      "say": "Should I take each tablet only after meals, or may I take it earlier?",
+      "hideGloss": true
+    },
+    {
+      "id": "t13-l6",
+      "speaker": "suki",
+      "speakerLabel": "Suki",
+      "text": "Please take it after meals, and do not drive if you feel drowsy later.",
+      "glossYue": "請飯後先食，如果覺得嗜睡就唔好揸車。",
+      "audio": "assets/audio/lines/t13-l6.mp3",
+      "audioSlow": "assets/audio/lines/t13-l6-slow.mp3",
+      "say": "Please take it after meals, and do not drive if you feel drowsy later.",
+      "hideGloss": true
+    },
+    {
+      "id": "t13-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "The written prescription says three times a day, and I will follow that note here.",
+      "glossYue": "藥單寫一日三次，我會跟住張紙。",
+      "audio": "assets/audio/lines/t13-l7.mp3",
+      "audioSlow": "assets/audio/lines/t13-l7-slow.mp3",
+      "say": "The written prescription says three times a day, and I will follow that note here.",
+      "hideGloss": true
+    },
+    {
+      "id": "t13-l8",
+      "speaker": "suki",
+      "speakerLabel": "Suki",
+      "text": "Please keep this prescription with you, and rest at home if the fever returns.",
+      "glossYue": "請帶住呢張藥單，發燒返嚟就喺屋企休息。",
+      "audio": "assets/audio/lines/t13-l8.mp3",
+      "audioSlow": "assets/audio/lines/t13-l8-slow.mp3",
+      "say": "Please keep this prescription with you, and rest at home if the fever returns.",
+      "hideGloss": true
+    }
+  ],
+  "understand": [
+    {
+      "prompt": "I have a headache and a fever, and I need some medicine from this pharmacy. 呢句即係點？",
+      "choices": [
+        "頭痛又發燒，要買藥",
+        "想改藥單日期",
+        "唔使藥單，只係問路"
+      ],
+      "answer": 0,
+      "explain": "headache 係頭痛。fever 係發燒。"
+    },
+    {
+      "prompt": "How many times a day do I take it, and is that after meals, please? 即係問緊咩？",
+      "choices": [
+        "問藥單放喺邊",
+        "問一日食幾次，係咪飯後先食",
+        "問嗜睡可唔可以揸車"
+      ],
+      "answer": 1,
+      "explain": "times a day 係一日幾次。after meals 係飯後。"
+    },
+    {
+      "prompt": "Please take it after meals, and do not drive if you feel drowsy later. 呢句即係點？",
+      "choices": [
+        "飯後先食，嗜睡就唔好揸車",
+        "發燒就即刻揸車",
+        "藥單唔使帶"
+      ],
+      "answer": 2,
+      "explain": "drowsy 係嗜睡。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "I have a ___ and a fever, and I need some medicine from this pharmacy.",
+      "example": "I have a headache and a fever, and I need some medicine from this pharmacy.",
+      "glossYue": "我頭痛又發燒。",
+      "answer": "headache",
+      "choices": [
+        "headache",
+        "fever",
+        "prescription"
+      ]
+    },
+    {
+      "pattern": "Please take it three ___, and this tablet can make you feel drowsy.",
+      "example": "Please take it three times a day, and this tablet can make you feel drowsy.",
+      "glossYue": "一日食三次。",
+      "answer": "times a day",
+      "choices": [
+        "times a day",
+        "headache",
+        "prescription"
+      ]
+    },
+    {
+      "pattern": "Please keep this ___ with you, and rest at home if the fever returns.",
+      "example": "Please keep this prescription with you, and rest at home if the fever returns.",
+      "glossYue": "帶住藥單。",
+      "answer": "prescription",
+      "choices": [
+        "prescription",
+        "drowsy",
+        "fever"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想問一日食幾次。你點講？",
+      "choices": [
+        "How many times a day do I take it, and is that after meals, please?",
+        "I have a headache and a fever, and I need some medicine from this pharmacy.",
+        "The written prescription says three times a day, and I will follow that note here."
+      ],
+      "answer": 0,
+      "explain": "問 times a day。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "times",
+        "a",
+        "day"
+      ],
+      "answer": [
+        "times",
+        "a",
+        "day"
+      ]
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你喺藥房買藥。同 Suki 講發燒同藥單。可以講：fever、prescription。",
+    "turns": [
+      {
+        "partner": "Suki",
+        "partnerId": "suki",
+        "line": "This pharmacy can help with that fever, and some strong medicine here needs a prescription.",
+        "audio": "assets/audio/lines/t13-l2.mp3",
+        "audioSlow": "assets/audio/lines/t13-l2-slow.mp3",
+        "expect": "How many times a day do I take it, and is that after meals, please?",
+        "keywords": [
+          "times",
+          "day"
+        ],
+        "modelAudio": "assets/audio/lines/t13-l3.mp3",
+        "modelSlow": "assets/audio/lines/t13-l3-slow.mp3"
+      },
+      {
+        "partner": "Suki",
+        "partnerId": "suki",
+        "line": "Please take it three times a day, and this tablet can make you feel drowsy.",
+        "audio": "assets/audio/lines/t13-l4.mp3",
+        "audioSlow": "assets/audio/lines/t13-l4-slow.mp3",
+        "expect": "Should I take each tablet only after meals, or may I take it earlier?",
+        "keywords": [
+          "after",
+          "meals"
+        ],
+        "modelAudio": "assets/audio/lines/t13-l5.mp3",
+        "modelSlow": "assets/audio/lines/t13-l5-slow.mp3"
+      },
+      {
+        "partner": "Suki",
+        "partnerId": "suki",
+        "line": "Please take it after meals, and do not drive if you feel drowsy later.",
+        "audio": "assets/audio/lines/t13-l6.mp3",
+        "audioSlow": "assets/audio/lines/t13-l6-slow.mp3",
+        "expect": "The written prescription says three times a day, and I will follow that note here.",
+        "keywords": [
+          "prescription",
+          "times"
+        ],
+        "modelAudio": "assets/audio/lines/t13-l7.mp3",
+        "modelSlow": "assets/audio/lines/t13-l7-slow.mp3"
+      }
+    ]
+  },
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear for feeling sleepy after the tablet.",
+      "lemma": "drowsy-adj",
+      "choices": [
+        "prescription",
+        "drowsy",
+        "fever"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the phrase you hear for how often to take the medicine.",
+      "lemma": "times-a-day-phrase",
+      "choices": [
+        "times a day",
+        "headache",
+        "prescription"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'I have a headache.' What does headache mean?",
+      "choices": [
+        "頭痛",
+        "發燒",
+        "藥單"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "You say 'Take it after meals.' What does after meals mean?",
+      "choices": [
+        "次數",
+        "飯後",
+        "嗜睡"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word means the paper a strong medicine needs: prescription, fever, or drowsy?",
+      "choices": [
+        "fever",
+        "drowsy",
+        "prescription"
+      ],
+      "answer": 2,
+      "explain": "prescription 係藥單。"
+    }
+  ],
+  "shadow": {
+    "lineId": "t13-l1",
+    "hint": "I have a headache and a fever, and I need some medicine from this pharmacy."
+  }
+}

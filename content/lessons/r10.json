@@ -272,7 +272,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the café drink you hear: latte.",
+      "prompt": "Listen once and pick the café drink you hear.",
       "lemma": "latte-noun",
       "choices": [
         "latte",
@@ -283,7 +283,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word for a cold drink: iced.",
+      "prompt": "Listen once and pick the word for a cold drink.",
       "lemma": "iced-adj",
       "choices": [
         "size",

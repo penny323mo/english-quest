@@ -35834,7 +35834,7 @@
       "lemma": "identity",
       "pos": "noun",
       "senseId": "who-you-are",
-      "ipa": "/aɪ.ˈdɛn.tɪ.ˌti/",
+      "ipa": "/aɪ.ˈdɛn.tə.ti/",
       "syllables": [
         "i",
         "den",
@@ -35844,11 +35844,11 @@
       "syllableIpa": [
         "aɪ",
         "ˈdɛn",
-        "tɪ",
-        "ˌti"
+        "tə",
+        "ti"
       ],
       "stress": 2,
-      "arpabet": "AY0 D EH1 N T IH0 T IY2",
+      "arpabet": "AY0 D EH1 N T AH0 T IY0",
       "audio": "assets/audio/words/identity-noun.mp3",
       "audioSlow": "assets/audio/words/identity-noun-slow.mp3",
       "glossYue": "身份",
@@ -35859,7 +35859,7 @@
       ],
       "example": "What papers prove my identity?",
       "exampleYue": "我要用咩文件證明身份？",
-      "say": "What papers prove my identity?",
+      "say": "What papers prove my [[aɪˈdɛn.tə.ti]]?",
       "variants": [],
       "note": "",
       "sources": [
@@ -35870,7 +35870,7 @@
       "senseMismatch": false,
       "cmuLemma": "identity",
       "phrase": false,
-      "audioSha256": "61cefee7b9c1d02b10c31e4f44a7a86bbc3eeb2a6cd701d8a6e8b28227fc28e0",
+      "audioSha256": "14f39b390a35bd648bd81ef7f8d9f9e39ee8d263021b7c46b50c6c385385410f",
       "register": "銀行",
       "usageNotes": "identity 係身份。",
       "pitfallsYue": "身份文件唔等於張卡本身。",
@@ -35881,7 +35881,7 @@
           "yue": "我要用咩文件證明身份？",
           "audio": "assets/audio/words/identity-noun.mp3",
           "audioSlow": "assets/audio/words/identity-noun-slow.mp3",
-          "say": "What papers prove my identity?"
+          "say": "What papers prove my [[aɪˈdɛn.tə.ti]]?"
         },
         {
           "en": "Please show one identity document.",
@@ -36684,6 +36684,547 @@
           "audio": "assets/audio/words/date-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/date-noun-ex2-slow.mp3",
           "say": "Our wedding date is the third of May."
+        }
+      ]
+    },
+    {
+      "id": "drowsy-adj",
+      "lemma": "drowsy",
+      "pos": "adj",
+      "senseId": "sleepy",
+      "ipa": "/ˈdɹaʊ.zi/",
+      "syllables": [
+        "drow",
+        "sy"
+      ],
+      "syllableIpa": [
+        "ˈdɹaʊ",
+        "zi"
+      ],
+      "stress": 1,
+      "arpabet": "D R AW1 Z IY0",
+      "audio": "assets/audio/words/drowsy-adj.mp3",
+      "audioSlow": "assets/audio/words/drowsy-adj-slow.mp3",
+      "glossYue": "嗜睡",
+      "glossZh": "嗜睡",
+      "jyutping": "ci3 seoi6",
+      "collocations": [
+        "feel drowsy"
+      ],
+      "example": "This tablet can make you drowsy.",
+      "exampleYue": "呢種藥會令人嗜睡。",
+      "say": "This tablet can make you drowsy.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "drowsy",
+      "phrase": false,
+      "audioSha256": "869d457789bb7093613871016477cfeec24f6bb1c9dd0ac4cf7e835597066736",
+      "register": "藥房",
+      "usageNotes": "drowsy 係嗜睡。",
+      "pitfallsYue": "嗜睡唔係發燒。",
+      "related": [],
+      "examples": [
+        {
+          "en": "This tablet can make you drowsy.",
+          "yue": "呢種藥會令人嗜睡。",
+          "audio": "assets/audio/words/drowsy-adj.mp3",
+          "audioSlow": "assets/audio/words/drowsy-adj-slow.mp3",
+          "say": "This tablet can make you drowsy."
+        },
+        {
+          "en": "Do not drive if you feel drowsy.",
+          "yue": "覺得嗜睡就唔好揸車。",
+          "audio": "assets/audio/words/drowsy-adj-ex2.mp3",
+          "audioSlow": "assets/audio/words/drowsy-adj-ex2-slow.mp3",
+          "say": "Do not drive if you feel drowsy."
+        }
+      ]
+    },
+    {
+      "id": "times-a-day-phrase",
+      "lemma": "times a day",
+      "pos": "phrase",
+      "senseId": "daily-dose",
+      "ipa": "/ˈtaɪmz ə ˈdeɪ/",
+      "syllables": [
+        "times",
+        "a",
+        "day"
+      ],
+      "syllableIpa": [
+        "ˈtaɪmz",
+        "ə",
+        "ˈdeɪ"
+      ],
+      "stress": 1,
+      "arpabet": "T AY1 M Z | AH0 | D EY1",
+      "audio": "assets/audio/words/times-a-day-phrase.mp3",
+      "audioSlow": "assets/audio/words/times-a-day-phrase-slow.mp3",
+      "glossYue": "一日幾次",
+      "glossZh": "一日幾次",
+      "jyutping": "jat6 jat6 gei2 ci3",
+      "collocations": [
+        "three times a day"
+      ],
+      "example": "Please take it three times a day.",
+      "exampleYue": "請一日食三次。",
+      "say": "Please take it three times a day.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "times",
+      "phrase": true,
+      "audioSha256": "0d6a8ef4134b712a02c36850baa26e2cab66f11c21cd838fa1c0b01981b65e3e",
+      "register": "藥房",
+      "usageNotes": "times a day 係一日食幾次。",
+      "pitfallsYue": "一日幾次唔係飯後。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Please take it three times a day.",
+          "yue": "請一日食三次。",
+          "audio": "assets/audio/words/times-a-day-phrase.mp3",
+          "audioSlow": "assets/audio/words/times-a-day-phrase-slow.mp3",
+          "say": "Please take it three times a day."
+        },
+        {
+          "en": "The prescription says three times a day.",
+          "yue": "藥單寫一日三次。",
+          "audio": "assets/audio/words/times-a-day-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/times-a-day-phrase-ex2-slow.mp3",
+          "say": "The prescription says three times a day."
+        }
+      ]
+    },
+    {
+      "id": "pickup-point-phrase",
+      "lemma": "pick-up point",
+      "pos": "phrase",
+      "senseId": "taxi-stand",
+      "ipa": "/ˈpɪ.ˌkʌp ˈpɔɪnt/",
+      "syllables": [
+        "pick",
+        "up",
+        "point"
+      ],
+      "syllableIpa": [
+        "ˈpɪ",
+        "ˌkʌp",
+        "ˈpɔɪnt"
+      ],
+      "stress": 1,
+      "arpabet": "P IH1 K AH2 P | P OY1 N T",
+      "audio": "assets/audio/words/pickup-point-phrase.mp3",
+      "audioSlow": "assets/audio/words/pickup-point-phrase-slow.mp3",
+      "glossYue": "上車站",
+      "glossZh": "上車站",
+      "jyutping": "soeng5 ce1 zaam6",
+      "collocations": [
+        "hotel pick-up point"
+      ],
+      "example": "My pick-up point is the hotel door.",
+      "exampleYue": "我嘅上車站係酒店門口。",
+      "say": "My pick-up point is the hotel door.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "pick-up",
+      "phrase": true,
+      "audioSha256": "6c7a9f75a6312da7aa4e3edcc519770343611fd81c7da75498acd37a8639d136",
+      "register": "旅行",
+      "usageNotes": "pick-up point 係上車站。",
+      "pitfallsYue": "上車站唔係目的地。",
+      "related": [],
+      "examples": [
+        {
+          "en": "My pick-up point is the hotel door.",
+          "yue": "我嘅上車站係酒店門口。",
+          "audio": "assets/audio/words/pickup-point-phrase.mp3",
+          "audioSlow": "assets/audio/words/pickup-point-phrase-slow.mp3",
+          "say": "My pick-up point is the hotel door."
+        },
+        {
+          "en": "I will wait at the pick-up point.",
+          "yue": "我會喺上車站等。",
+          "audio": "assets/audio/words/pickup-point-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/pickup-point-phrase-ex2-slow.mp3",
+          "say": "I will wait at the pick-up point."
+        }
+      ]
+    },
+    {
+      "id": "plate-number-phrase",
+      "lemma": "plate number",
+      "pos": "phrase",
+      "senseId": "car-plate",
+      "ipa": "/ˈpleɪt ˈnʌm.bɚ/",
+      "syllables": [
+        "plate",
+        "num",
+        "ber"
+      ],
+      "syllableIpa": [
+        "ˈpleɪt",
+        "ˈnʌm",
+        "bɚ"
+      ],
+      "stress": 1,
+      "arpabet": "P L EY1 T | N AH1 M B ER0",
+      "audio": "assets/audio/words/plate-number-phrase.mp3",
+      "audioSlow": "assets/audio/words/plate-number-phrase-slow.mp3",
+      "glossYue": "車牌",
+      "glossZh": "車牌",
+      "jyutping": "ce1 paai4",
+      "collocations": [
+        "plate number"
+      ],
+      "example": "The plate number is blue four two.",
+      "exampleYue": "車牌係藍四二。",
+      "say": "The plate number is blue four two.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "plate",
+      "phrase": true,
+      "audioSha256": "17e4a77686508181406cb1656818ae80d55416e9ec619b60274c784edaf7b414",
+      "register": "旅行",
+      "usageNotes": "plate number 係車牌。",
+      "pitfallsYue": "車牌唔係收據。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The plate number is blue four two.",
+          "yue": "車牌係藍四二。",
+          "audio": "assets/audio/words/plate-number-phrase.mp3",
+          "audioSlow": "assets/audio/words/plate-number-phrase-slow.mp3",
+          "say": "The plate number is blue four two."
+        },
+        {
+          "en": "What is the plate number?",
+          "yue": "車牌係幾多？",
+          "audio": "assets/audio/words/plate-number-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/plate-number-phrase-ex2-slow.mp3",
+          "say": "What is the plate number?"
+        }
+      ]
+    },
+    {
+      "id": "running-late-phrase",
+      "lemma": "running late",
+      "pos": "phrase",
+      "senseId": "behind-time",
+      "ipa": "/ˈɹʌ.nɪŋ ˈleɪt/",
+      "syllables": [
+        "run",
+        "ning",
+        "late"
+      ],
+      "syllableIpa": [
+        "ˈɹʌ",
+        "nɪŋ",
+        "ˈleɪt"
+      ],
+      "stress": 1,
+      "arpabet": "R AH1 N IH0 NG | L EY1 T",
+      "audio": "assets/audio/words/running-late-phrase.mp3",
+      "audioSlow": "assets/audio/words/running-late-phrase-slow.mp3",
+      "glossYue": "遲到",
+      "glossZh": "遲到",
+      "jyutping": "ci4 dou3",
+      "collocations": [
+        "running late"
+      ],
+      "example": "I am running late for this taxi.",
+      "exampleYue": "我叫的士遲到咗。",
+      "say": "I am running late for this taxi.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "running",
+      "phrase": true,
+      "audioSha256": "e82d28e0ee64ab26f58c6f99b5aa5dd9c6e3eb16531ed0687539e5c609b9a43c",
+      "register": "旅行",
+      "usageNotes": "running late 係遲到。",
+      "pitfallsYue": "遲到唔係改目的地。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I am running late for this taxi.",
+          "yue": "我叫的士遲到咗。",
+          "audio": "assets/audio/words/running-late-phrase.mp3",
+          "audioSlow": "assets/audio/words/running-late-phrase-slow.mp3",
+          "say": "I am running late for this taxi."
+        },
+        {
+          "en": "I am still running late.",
+          "yue": "我仍然遲到。",
+          "audio": "assets/audio/words/running-late-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/running-late-phrase-ex2-slow.mp3",
+          "say": "I am still running late."
+        }
+      ]
+    },
+    {
+      "id": "lustre-noun",
+      "lemma": "lustre",
+      "pos": "noun",
+      "senseId": "pearl-shine",
+      "ipa": "/ˈlʌ.stɚ/",
+      "syllables": [
+        "lus",
+        "tre"
+      ],
+      "syllableIpa": [
+        "ˈlʌ",
+        "stɚ"
+      ],
+      "stress": 1,
+      "arpabet": "L AH1 S T ER0",
+      "audio": "assets/audio/words/lustre-noun.mp3",
+      "audioSlow": "assets/audio/words/lustre-noun-slow.mp3",
+      "glossYue": "光澤",
+      "glossZh": "光澤",
+      "jyutping": "gwong1 zaak6",
+      "collocations": [
+        "a soft lustre"
+      ],
+      "example": "This pearl has a soft lustre.",
+      "exampleYue": "呢顆珍珠光澤柔和。",
+      "say": "This pearl has a soft lustre.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "lustre",
+      "phrase": false,
+      "audioSha256": "c51b53cbd5142dd40c970f82e7badfcad48e02a45d2520d35c21eafc0c1fafd8",
+      "register": "珠寶",
+      "usageNotes": "lustre 係珍珠光澤。",
+      "pitfallsYue": "光澤唔係價錢。",
+      "related": [],
+      "examples": [
+        {
+          "en": "This pearl has a soft lustre.",
+          "yue": "呢顆珍珠光澤柔和。",
+          "audio": "assets/audio/words/lustre-noun.mp3",
+          "audioSlow": "assets/audio/words/lustre-noun-slow.mp3",
+          "say": "This pearl has a soft lustre."
+        },
+        {
+          "en": "A soft lustre stays if you wipe it.",
+          "yue": "你抹完光澤都會保持。",
+          "audio": "assets/audio/words/lustre-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/lustre-noun-ex2-slow.mp3",
+          "say": "A soft lustre stays if you wipe it."
+        }
+      ]
+    },
+    {
+      "id": "perfume-noun",
+      "lemma": "perfume",
+      "pos": "noun",
+      "senseId": "scent",
+      "ipa": "/pɚ.ˈfjum/",
+      "syllables": [
+        "per",
+        "fume"
+      ],
+      "syllableIpa": [
+        "pɚ",
+        "ˈfjum"
+      ],
+      "stress": 2,
+      "arpabet": "P ER0 F Y UW1 M",
+      "audio": "assets/audio/words/perfume-noun.mp3",
+      "audioSlow": "assets/audio/words/perfume-noun-slow.mp3",
+      "glossYue": "香水",
+      "glossZh": "香水",
+      "jyutping": "hoeng1 seoi2",
+      "collocations": [
+        "keep perfume away"
+      ],
+      "example": "Keep perfume away from the pearl.",
+      "exampleYue": "香水要避開珍珠。",
+      "say": "Keep perfume away from the pearl.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "perfume",
+      "phrase": false,
+      "audioSha256": "098dbe2a190952dc87517b4af3c4e099dcaf26fd16595b48bbd2e2114401734e",
+      "register": "珠寶",
+      "usageNotes": "perfume 係香水。",
+      "pitfallsYue": "香水會損珍珠光澤。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Keep perfume away from the pearl.",
+          "yue": "香水要避開珍珠。",
+          "audio": "assets/audio/words/perfume-noun.mp3",
+          "audioSlow": "assets/audio/words/perfume-noun-slow.mp3",
+          "say": "Keep perfume away from the pearl."
+        },
+        {
+          "en": "I will keep perfume away.",
+          "yue": "我會避開香水。",
+          "audio": "assets/audio/words/perfume-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/perfume-noun-ex2-slow.mp3",
+          "say": "I will keep perfume away."
+        }
+      ]
+    },
+    {
+      "id": "certificate-noun",
+      "lemma": "certificate",
+      "pos": "noun",
+      "senseId": "paper-proof",
+      "ipa": "/sɚ.ˈtɪ.fɪ.kət/",
+      "syllables": [
+        "cer",
+        "ti",
+        "fi",
+        "cate"
+      ],
+      "syllableIpa": [
+        "sɚ",
+        "ˈtɪ",
+        "fɪ",
+        "kət"
+      ],
+      "stress": 2,
+      "arpabet": "S ER0 T IH1 F IH0 K AH0 T",
+      "audio": "assets/audio/words/certificate-noun.mp3",
+      "audioSlow": "assets/audio/words/certificate-noun-slow.mp3",
+      "glossYue": "證書",
+      "glossZh": "證書",
+      "jyutping": "zing3 syu1",
+      "collocations": [
+        "a full certificate"
+      ],
+      "example": "The certificate is in this box.",
+      "exampleYue": "證書喺呢個盒入面。",
+      "say": "The certificate is in this box.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "certificate",
+      "phrase": false,
+      "audioSha256": "027aa3d010f6bc2054908849754547205a26cad4cec6189268446a4f119093d0",
+      "register": "珠寶",
+      "usageNotes": "certificate 係證書。",
+      "pitfallsYue": "證書唔係收據。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The certificate is in this box.",
+          "yue": "證書喺呢個盒入面。",
+          "audio": "assets/audio/words/certificate-noun.mp3",
+          "audioSlow": "assets/audio/words/certificate-noun-slow.mp3",
+          "say": "The certificate is in this box."
+        },
+        {
+          "en": "The certificate lists the price.",
+          "yue": "證書寫咗價錢。",
+          "audio": "assets/audio/words/certificate-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/certificate-noun-ex2-slow.mp3",
+          "say": "The certificate lists the price."
+        }
+      ]
+    },
+    {
+      "id": "wipe-verb",
+      "lemma": "wipe",
+      "pos": "verb",
+      "senseId": "clean-surface",
+      "ipa": "/ˈwaɪp/",
+      "syllables": [
+        "wipe"
+      ],
+      "syllableIpa": [
+        "ˈwaɪp"
+      ],
+      "stress": 1,
+      "arpabet": "W AY1 P",
+      "audio": "assets/audio/words/wipe-verb.mp3",
+      "audioSlow": "assets/audio/words/wipe-verb-slow.mp3",
+      "glossYue": "抹",
+      "glossZh": "抹",
+      "jyutping": "maat3",
+      "collocations": [
+        "wipe the pearl"
+      ],
+      "example": "Please wipe the pearl after wearing it.",
+      "exampleYue": "請戴完抹一抹珍珠。",
+      "say": "Please wipe the pearl after wearing it.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "wipe",
+      "phrase": false,
+      "audioSha256": "d226d6d6d715a9eeb52f08bfd58cb523458f257355be88c77fac845132d24a24",
+      "register": "珠寶",
+      "usageNotes": "wipe 係抹。",
+      "pitfallsYue": "抹唔係浸泡。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Please wipe the pearl after wearing it.",
+          "yue": "請戴完抹一抹珍珠。",
+          "audio": "assets/audio/words/wipe-verb.mp3",
+          "audioSlow": "assets/audio/words/wipe-verb-slow.mp3",
+          "say": "Please wipe the pearl after wearing it."
+        },
+        {
+          "en": "I will wipe it after I wear it.",
+          "yue": "我戴完會抹。",
+          "audio": "assets/audio/words/wipe-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/wipe-verb-ex2-slow.mp3",
+          "say": "I will wipe it after I wear it."
         }
       ]
     }

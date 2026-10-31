@@ -4,7 +4,7 @@
   "titleYue": "銀行：櫃員機食咗張卡",
   "titleEn": "The machine kept my card",
   "canDoYue": "你識講櫃員機食咗張卡、而家凍結呢張卡、出示一份身份文件、星期五收新卡，同埋一個工作日嘅臨時限額。",
-  "canDoEn": "Say the machine kept the card, freeze that card now, show one identity document, and ask about a temporary limit until Friday.",
+  "canDoEn": "Say the machine kept the card, freeze that card now, show one identity document, and ask about a temporary limit that lasts one working day, with the new card on Friday.",
   "minutes": 12,
   "hero": "assets/art/lessons/d9.webp",
   "cast": [
@@ -286,7 +286,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for stopping the card: freeze.",
+      "prompt": "Listen once and pick the word you hear for stopping the card.",
       "lemma": "freeze-verb",
       "choices": [
         "identity",
@@ -297,7 +297,7 @@
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the phrase you hear for the short cash cap: temporary limit.",
+      "prompt": "Listen once and pick the phrase you hear for the short cash cap.",
       "lemma": "temporary-limit-phrase",
       "choices": [
         "temporary limit",

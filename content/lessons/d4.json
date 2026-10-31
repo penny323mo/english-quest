@@ -280,7 +280,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "聽一次，揀你聽到嘅字：plan",
+      "prompt": "聽一次，揀你聽到嘅字.",
       "lemma": "plan-noun",
       "choices": [
         "plan",
@@ -291,7 +291,7 @@
     },
     {
       "type": "listen",
-      "prompt": "聽一次，揀你聽到嘅字：data",
+      "prompt": "聽一次，揀你聽到嘅字.",
       "lemma": "data-noun",
       "choices": [
         "day",
