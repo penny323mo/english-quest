@@ -76,32 +76,22 @@ test("a third-example raw skeleton is shared by at most two lemmas", () => {
   for (const [key, ids] of groups) assert.ok(ids.size <= 2, `${key} x${ids.size}`);
 });
 
-test("a normalised skeleton covers at most ~3% of items", () => {
-  const limit = Math.max(1, Math.floor(lex.items.length * 0.03));
+test("a normalised skeleton is shared by at most three lemmas", () => {
   const groups = new Map();
   for (const item of lex.items) {
     const samples = [];
-    const examples = item.examples || [];
-    if (examples.length >= 3) samples.push(examples[2].en);
+    if (item.example) samples.push(item.example);
+    for (const example of item.examples || []) samples.push(example.en);
     for (const turn of item.miniDialogue || []) samples.push(turn.en);
     for (const sample of samples) {
       if (!sample) continue;
       const key = normalisedSkeleton(sample, item.lemma);
       if (!key) continue;
-      if (!groups.has(key)) groups.set(key, []);
-      groups.get(key).push(item.id);
+      if (!groups.has(key)) groups.set(key, new Set());
+      groups.get(key).add(item.id);
     }
   }
-  let largest = 0;
-  let largestKey = "";
-  for (const [key, ids] of groups) {
-    if (ids.length > largest) {
-      largest = ids.length;
-      largestKey = key;
-    }
-    assert.ok(ids.length <= limit, `${key} x${ids.length} > limit ${limit}`);
-  }
-  assert.ok(largest <= limit, `largest ${largestKey} x${largest} > ${limit}`);
+  for (const [key, ids] of groups) assert.ok(ids.size <= 3, `${key} x${ids.size}`);
 });
 
 test("a and an do not introduce an uncountable", () => {

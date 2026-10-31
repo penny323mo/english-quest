@@ -338,6 +338,7 @@ test("examples do not pad the ending unless the scene needs the time", () => {
   for (const item of lex.items) {
     check(item.id, item.example);
     for (const [index, example] of (item.examples || []).entries()) check(`${item.id}#ex${index}`, example.en);
+    for (const [index, turn] of (item.miniDialogue || []).entries()) check(`${item.id}#md${index}`, turn.en);
   }
   for (const lesson of lessons) {
     for (const line of lesson.dialogue) check(line.id, line.text);
@@ -1451,6 +1452,10 @@ test("three-lesson windows do not fall by more than 2.5 and band means rise", ()
     const drop = mean(order[i - 2].id) - mean(order[i].id);
     assert.ok(drop <= 2.5 + 1e-9, `${order[i - 2].id} ${mean(order[i - 2].id).toFixed(3)} -> ${order[i].id} ${mean(order[i].id).toFixed(3)} ${drop.toFixed(3)}`);
   }
+  for (let i = 3; i < order.length; i += 1) {
+    const drop = mean(order[i - 3].id) - mean(order[i].id);
+    assert.ok(drop <= 2.5 + 1e-9, `3-step ${order[i - 3].id} ${mean(order[i - 3].id).toFixed(3)} -> ${order[i].id} ${mean(order[i].id).toFixed(3)} ${drop.toFixed(3)}`);
+  }
   const rank = ["A1", "A1/A2", "A2", "A2/B1", "B1", "B1/B2", "B2"];
   const bands = Object.fromEntries(rank.map((band) => [band, []]));
   for (const entry of order) bands[entry.cefr].push(mean(entry.id));
@@ -1535,7 +1540,7 @@ test("speaking shows the mic state and a no-penalty retry", () => {
   assert.match(src, /跳過呢題/);
 });
 
-test("normalised example skeletons stay under about 3% of items", () => {
+test("a normalised skeleton is shared by at most three lemmas", () => {
   const PERSONS = new Set(
     "mei tom kai ling vera quinn dana una otto iris fran opal hugh ned liam tess ruth paul mae hope yao joel cora ann ben mina sam lee jo pat kim robin alex chris jamie taylor morgan casey drew".split(" "),
   );
@@ -1580,31 +1585,21 @@ test("normalised example skeletons stay under about 3% of items", () => {
     if (collapsed.length < 2) return null;
     return collapsed.join(" ");
   }
-  const limit = Math.max(1, Math.floor(lex.items.length * 0.03));
   const groups = new Map();
   for (const item of lex.items) {
     const samples = [];
-    const examples = item.examples || [];
-    if (examples.length >= 3) samples.push(examples[2].en);
+    if (item.example) samples.push(item.example);
+    for (const example of item.examples || []) samples.push(example.en);
     for (const turn of item.miniDialogue || []) samples.push(turn.en);
     for (const sample of samples) {
       if (!sample) continue;
       const key = normalisedSkeleton(sample, item.lemma);
       if (!key) continue;
-      if (!groups.has(key)) groups.set(key, []);
-      groups.get(key).push(item.id);
+      if (!groups.has(key)) groups.set(key, new Set());
+      groups.get(key).add(item.id);
     }
   }
-  let largest = 0;
-  let largestKey = "";
-  for (const [key, ids] of groups) {
-    if (ids.length > largest) {
-      largest = ids.length;
-      largestKey = key;
-    }
-    assert.ok(ids.length <= limit, `${key} x${ids.length} > limit ${limit}`);
-  }
-  assert.ok(largest <= limit, `largest ${largestKey} x${largest} > ${limit}`);
+  for (const [key, ids] of groups) assert.ok(ids.size <= 3, `${key} x${ids.size}`);
 });
 test("a changed english line on the gloss-checked scenes changes the gloss", () => {
   const fixture = JSON.parse(fs.readFileSync(path.join(root, "tests/fixtures/gloss-hashes.json"), "utf8"));

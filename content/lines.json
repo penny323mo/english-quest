@@ -1373,11 +1373,11 @@
     "id": "t4-l1",
     "speaker": "ray",
     "speakerLabel": "Ray",
-    "text": "The taxi is here, and I can give the driver your full address now.",
-    "glossYue": "的士到咗，我可以而家同司機講你個完整地址。",
+    "text": "The taxi is here. I can give the driver your address.",
+    "glossYue": "的士到咗。我可以同司機講你個地址。",
     "audio": "assets/audio/lines/t4-l1.mp3",
     "audioSlow": "assets/audio/lines/t4-l1-slow.mp3",
-    "say": "The taxi is here, and I can give the driver your full address now."
+    "say": "The taxi is here. I can give the driver your address."
   },
   {
     "id": "t4-l2",
@@ -1613,81 +1613,81 @@
     "id": "r4-l1",
     "speaker": "ana",
     "speakerLabel": "Ana",
-    "text": "Are you enjoying the meal, and could we get you a refill?",
-    "glossYue": "你食得開唔開心？我哋可唔可以幫你添一杯？",
+    "text": "Are you enjoying the meal? I can bring a refill.",
+    "glossYue": "你食得開唔開心？我可以幫你添一杯。",
     "audio": "assets/audio/lines/r4-l1.mp3",
     "audioSlow": "assets/audio/lines/r4-l1-slow.mp3",
-    "say": "Are you enjoying the meal, and could we get you a refill?"
+    "say": "Are you enjoying the meal? I can bring a refill."
   },
   {
     "id": "r4-l2",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Could we get some still water, and one more napkin for this fork?",
-    "glossYue": "可唔可以嚟杯冇氣水，同埋多一張乾淨餐巾畀呢支叉？",
+    "text": "Could we get still water and one napkin for this fork?",
+    "glossYue": "可唔可以嚟杯冇氣水，同埋一張餐巾畀呢支叉？",
     "audio": "assets/audio/lines/r4-l2.mp3",
     "audioSlow": "assets/audio/lines/r4-l2-slow.mp3",
-    "say": "Could we get some still water, and one more napkin for this fork?"
+    "say": "Could we get still water and one napkin for this fork?"
   },
   {
     "id": "r4-l3",
     "speaker": "ana",
     "speakerLabel": "Ana",
-    "text": "Here is the still water, and the napkin is next to your knife.",
-    "glossYue": "冇氣水喺度，餐巾喺你把刀隔離。",
+    "text": "Here is the still water. The napkin is by your knife.",
+    "glossYue": "冇氣水喺度。餐巾喺你把刀旁邊。",
     "audio": "assets/audio/lines/r4-l3.mp3",
     "audioSlow": "assets/audio/lines/r4-l3-slow.mp3",
-    "say": "Here is the still water, and the napkin is next to your knife."
+    "say": "Here is the still water. The napkin is by your knife."
   },
   {
     "id": "r4-l4",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "This fish is delicious, and I would like a little more sparkling water.",
+    "text": "This fish is delicious, and I would like more sparkling water.",
     "glossYue": "呢條魚好味，我想要多啲有氣水。",
     "audio": "assets/audio/lines/r4-l4.mp3",
     "audioSlow": "assets/audio/lines/r4-l4-slow.mp3",
-    "say": "This fish is delicious, and I would like a little more sparkling water."
+    "say": "This fish is delicious, and I would like more sparkling water."
   },
   {
     "id": "r4-l5",
     "speaker": "ana",
     "speakerLabel": "Ana",
-    "text": "The sparkling water is coming, and I hope you enjoy the rest of it.",
-    "glossYue": "有氣水就到，希望你慢慢享受餘下嗰啲。",
+    "text": "The sparkling water is coming, and I hope you enjoy the fish.",
+    "glossYue": "有氣水就到，希望你可以慢慢食條魚。",
     "audio": "assets/audio/lines/r4-l5.mp3",
     "audioSlow": "assets/audio/lines/r4-l5-slow.mp3",
-    "say": "The sparkling water is coming, and I hope you enjoy the rest of it."
+    "say": "The sparkling water is coming, and I hope you enjoy the fish."
   },
   {
     "id": "r4-l6",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "No dessert for me, but could we get the bill later?",
-    "glossYue": "我唔要甜品，但可唔可以遲啲先要單？",
+    "text": "No dessert for me. Could we get the bill later?",
+    "glossYue": "我唔要甜品。可唔可以遲啲先要單？",
     "audio": "assets/audio/lines/r4-l6.mp3",
     "audioSlow": "assets/audio/lines/r4-l6-slow.mp3",
-    "say": "No dessert for me, but could we get the bill later?"
+    "say": "No dessert for me. Could we get the bill later?"
   },
   {
     "id": "r4-l7",
     "speaker": "ana",
     "speakerLabel": "Ana",
-    "text": "Of course, and would you like anything else before I leave the table?",
-    "glossYue": "當然可以，我離開之前你仲想唔想要其他嘢？",
+    "text": "Of course. Would you like anything else before you head off?",
+    "glossYue": "當然可以。你走之前仲想唔想要其他嘢？",
     "audio": "assets/audio/lines/r4-l7.mp3",
     "audioSlow": "assets/audio/lines/r4-l7-slow.mp3",
-    "say": "Of course, and would you like anything else before I leave the table?"
+    "say": "Of course. Would you like anything else before you head off?"
   },
   {
     "id": "r4-l8",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "The meal was delicious, and a coffee later would be perfect, thank you.",
-    "glossYue": "呢餐好味，遲啲嚟杯咖啡就完美，多謝。",
+    "text": "The meal was delicious, and coffee later would be perfect.",
+    "glossYue": "呢餐好味，遲啲嚟杯咖啡就啱。",
     "audio": "assets/audio/lines/r4-l8.mp3",
     "audioSlow": "assets/audio/lines/r4-l8-slow.mp3",
-    "say": "The meal was delicious, and a coffee later would be perfect, thank you."
+    "say": "The meal was delicious, and coffee later would be perfect."
   },
   {
     "id": "r5-l1",
@@ -4013,11 +4013,11 @@
     "id": "w7-l8",
     "speaker": "reid",
     "speakerLabel": "Reid",
-    "text": "We will keep your Monday shift open at the front counter for the whole morning, and the team hopes you feel better soon.",
-    "glossYue": "我哋會留住你星期一朝早櫃檯嘅更，團隊希望你快啲好返。",
+    "text": "We will keep your Monday shift open at the front counter, and the team hopes you feel better.",
+    "glossYue": "我哋會留住你星期一櫃檯嘅更，團隊希望你快啲好返。",
     "audio": "assets/audio/lines/w7-l8.mp3",
     "audioSlow": "assets/audio/lines/w7-l8-slow.mp3",
-    "say": "We will keep your Monday shift open at the front counter for the whole morning, and the team hopes you feel better soon."
+    "say": "We will keep your Monday shift open at the front counter, and the team hopes you feel better."
   },
   {
     "id": "t10-l1",
@@ -4673,11 +4673,11 @@
     "id": "t12-l2",
     "speaker": "kim",
     "speakerLabel": "Kim",
-    "text": "The room is not ready yet, and your luggage can stay beside the desk.",
+    "text": "The room is not ready, and your luggage can stay beside the desk.",
     "glossYue": "房間未準備好，行李可以放喺櫃檯旁邊。",
     "audio": "assets/audio/lines/t12-l2.mp3",
     "audioSlow": "assets/audio/lines/t12-l2-slow.mp3",
-    "say": "The room is not ready yet, and your luggage can stay beside the desk."
+    "say": "The room is not ready, and your luggage can stay beside the desk."
   },
   {
     "id": "t12-l3",
@@ -7073,11 +7073,11 @@
     "id": "j22-l2",
     "speaker": "ida",
     "speakerLabel": "Ida",
-    "text": "I'll start that lettering this afternoon, and it'll be ready Friday.",
-    "glossYue": "我今日下晝開始刻，星期五會做好。",
+    "text": "I will start that gold bracelet lettering early this Friday afternoon.",
+    "glossYue": "我星期五下晝早啲開始刻呢隻金手鈪。",
     "audio": "assets/audio/lines/j22-l2.mp3",
     "audioSlow": "assets/audio/lines/j22-l2-slow.mp3",
-    "say": "I'll start that lettering this afternoon, and it'll be ready Friday."
+    "say": "I will start that gold bracelet lettering early this Friday afternoon."
   },
   {
     "id": "j22-l3",

@@ -1,0 +1,7 @@
+You are the coder. cd /workspace/sidequest/english-quest. Read /workspace/sidequest/english-quest/reviews/orch-r55-grok.md and fix every CRITICAL and MAJOR issue (MINOR where sensible). Keep matching /workspace/sidequest/english-quest/SPEC.md. Do not edit reviews/ or prompts/. Run the tests. Append '## Round 55 fixes' to CHANGELOG.md. Do not git commit.
+
+ALSO (authoritative live 390px audit, same priority as MAJOR): read /workspace/sidequest/english-quest/review/loop-r54/coder-audit.md and fix every still-open item. Do not finish while any remain.
+Previous round 390px review: /workspace/sidequest/english-quest/reviews/orch-r54-grok.md
+
+WHEN COMPLETELY FINISHED, as your very last action, create the file /workspace/sidequest/english-quest/.orch/fix-55.done containing the word DONE.
+ORCH_SENTINEL=/workspace/sidequest/english-quest/.orch/fix-55.done
