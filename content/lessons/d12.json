@@ -301,7 +301,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Hi, I'd like to make an appointment to see a doctor, please. 呢句入面，邊個意思先啱？",
       "choices": [
         "預約",
         "症狀",
@@ -311,7 +311,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Sure. What are your symptoms? 呢句入面，邊個意思先啱？",
       "choices": [
         "預約",
         "診金",
@@ -321,7 +321,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "Yes, that's fine. How much is the ___? 呢句入面，邊個字先啱？",
       "choices": [
         "symptom",
         "consultation fee",

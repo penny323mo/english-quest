@@ -307,31 +307,31 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Start with a sincere apology. Then explain the delay was at our warehouse. 呢句入面，邊個意思先啱？",
       "choices": [
         "道歉",
-        "誠懇",
-        "延誤"
+        "延遲",
+        "退款"
       ],
       "answer": 0
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Start with a sincere apology. Then explain the delay was at our warehouse. 呢句入面，邊個意思先啱？",
       "choices": [
-        "道歉",
-        "延誤",
+        "延遲",
+        "退款",
         "誠懇"
       ],
       "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "Start with a sincere apology. Then explain the ___ was at our warehouse. 呢句入面，邊個字先啱？",
       "choices": [
-        "sincere",
-        "delayed",
-        "apology"
+        "towel",
+        "delay",
+        "oyster"
       ],
       "answer": 1,
       "explain": "道歉。"

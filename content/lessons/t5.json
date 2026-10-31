@@ -64,11 +64,11 @@
       "id": "t5-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I think the wallet was stolen, so I also need the embassy number.",
+      "text": "I think the wallet was stolen.",
       "glossYue": "我諗個銀包畀人偷咗，所以我亦都要大使館電話。",
       "audio": "assets/audio/lines/t5-l4.mp3",
       "audioSlow": "assets/audio/lines/t5-l4-slow.mp3",
-      "say": "I think the wallet was stolen, so I also need the embassy number.",
+      "say": "I think the wallet was stolen.",
       "hideGloss": true
     },
     {
@@ -86,11 +86,11 @@
       "id": "t5-l6",
       "speaker": "noa",
       "speakerLabel": "Noa",
-      "text": "The wallet is still missing, but your passport copies are in the safe.",
+      "text": "The wallet is missing, but your passport copies are in the safe.",
       "glossYue": "銀包仲搵唔到，不過護照副本喺夾萬。",
       "audio": "assets/audio/lines/t5-l6.mp3",
       "audioSlow": "assets/audio/lines/t5-l6-slow.mp3",
-      "say": "The wallet is still missing, but your passport copies are in the safe.",
+      "say": "The wallet is missing, but your passport copies are in the safe.",
       "hideGloss": false
     },
     {
@@ -203,7 +203,7 @@
       "type": "choice",
       "promptYue": "銀包可能被人偷咗。點講？",
       "choices": [
-        "I think the wallet was stolen, so I also need the embassy number.",
+        "I think the wallet was stolen.",
         "The meter is on, and traffic is slow.",
         "Could you wrap the gift?"
       ],
@@ -250,7 +250,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "I think the wallet was stolen, so I also need the embassy number.",
+        "line": "I think the wallet was stolen.",
         "audio": "assets/audio/lines/t5-l4.mp3",
         "audioSlow": "assets/audio/lines/t5-l4-slow.mp3",
         "expect": "The embassy number is on this card, and I will help you file the report.",

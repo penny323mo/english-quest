@@ -56,11 +56,11 @@
       "id": "d9-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The cash machine kept my card, and I cannot take it out of the slot at all.",
+      "text": "The cash machine kept my card.",
       "glossYue": "櫃員機食咗我張卡，我完全攞唔出嚟。",
       "audio": "assets/audio/lines/d9-l1.mp3",
       "audioSlow": "assets/audio/lines/d9-l1-slow.mp3",
-      "say": "The cash machine kept my card, and I cannot take it out of the slot at all.",
+      "say": "The cash machine kept my card.",
       "hideGloss": false
     },
     {
@@ -143,7 +143,7 @@
   ],
   "understand": [
     {
-      "prompt": "The cash machine kept my card, and I cannot take it out of the slot at all. 呢句即係點？",
+      "prompt": "The cash machine kept my card. 呢句即係點？",
       "choices": [
         "櫃員機食咗銀行卡",
         "櫃員機已經退咗銀行卡",
@@ -214,7 +214,7 @@
       "promptYue": "你想喺櫃檯用臨時限額。你點講？",
       "choices": [
         "Can I draw some cash at this counter on the temporary limit while I wait?",
-        "The cash machine kept my card, and I cannot take it out of the slot at all.",
+        "The cash machine kept my card.",
         "What papers prove my identity at this desk, and when does the new card arrive?"
       ],
       "answer": 0,
@@ -340,6 +340,6 @@
   ],
   "shadow": {
     "lineId": "d9-l1",
-    "hint": "The cash machine kept my card, and I cannot take it out of the slot at all."
+    "hint": "The cash machine kept my card."
   }
 }

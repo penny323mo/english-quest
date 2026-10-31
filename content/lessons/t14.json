@@ -315,17 +315,17 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Hi. My first flight was delayed, and I've missed my connection to Tokyo. 呢句入面，邊個意思先啱？",
       "choices": [
         "轉機",
-        "延誤",
-        "改簽"
+        "改簽",
+        "延遲"
       ],
       "answer": 0
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "Can you ___ me on it? And will my checked bag be transferred? 呢句入面，邊個字先啱？",
       "choices": [
         "rebook",
         "delayed",

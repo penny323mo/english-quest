@@ -32,11 +32,11 @@
       "id": "d8-l1",
       "speaker": "nell",
       "speakerLabel": "Nell",
-      "text": "Hello there, the kitchen tap has a small leak, and water has been on the floor since yesterday.",
+      "text": "Hello there, the kitchen tap has a small leak.",
       "glossYue": "你好，廚房水龍頭有少少漏水，由尋日開始地下有水。",
       "audio": "assets/audio/lines/d8-l1.mp3",
       "audioSlow": "assets/audio/lines/d8-l1-slow.mp3",
-      "say": "Hello there, the kitchen tap has a small leak, and water has been on the floor since yesterday.",
+      "say": "Hello there, the kitchen tap has a small leak.",
       "hideGloss": false
     },
     {
@@ -54,11 +54,11 @@
       "id": "d8-l3",
       "speaker": "nell",
       "speakerLabel": "Nell",
-      "text": "The kitchen leak started yesterday morning, and it is much worse, so I need one quick repair.",
+      "text": "The kitchen leak started yesterday morning.",
       "glossYue": "廚房尋日朝早開始漏，而家嚴重好多，我要一次快啲嘅維修。",
       "audio": "assets/audio/lines/d8-l3.mp3",
       "audioSlow": "assets/audio/lines/d8-l3-slow.mp3",
-      "say": "The kitchen leak started yesterday morning, and it is much worse, so I need one quick repair.",
+      "say": "The kitchen leak started yesterday morning.",
       "hideGloss": false
     },
     {
@@ -76,11 +76,11 @@
       "id": "d8-l5",
       "speaker": "nell",
       "speakerLabel": "Nell",
-      "text": "I will be out after six tomorrow, so please take the key from the front guard then.",
+      "text": "I will be out after six tomorrow.",
       "glossYue": "我聽日六點之後會外出，請向前門保安攞鎖匙。",
       "audio": "assets/audio/lines/d8-l5.mp3",
       "audioSlow": "assets/audio/lines/d8-l5-slow.mp3",
-      "say": "I will be out after six tomorrow, so please take the key from the front guard then.",
+      "say": "I will be out after six tomorrow.",
       "hideGloss": true
     },
     {
@@ -119,7 +119,7 @@
   ],
   "understand": [
     {
-      "prompt": "Hello there, the kitchen tap has a small leak, and water has been on the floor since yesterday. 呢句即係點？",
+      "prompt": "Hello there, the kitchen tap has a small leak. 呢句即係點？",
       "choices": [
         "廚房水龍頭漏水",
         "想問入單位時間",
@@ -152,7 +152,7 @@
   "chunks": [
     {
       "pattern": "Hello there, the kitchen ___ has a small leak, and water has been on the floor since yesterday.",
-      "example": "Hello there, the kitchen tap has a small leak, and water has been on the floor since yesterday.",
+      "example": "Hello there, the kitchen tap has a small leak.",
       "glossYue": "廚房水龍頭漏水。",
       "answer": "tap",
       "choices": [
@@ -186,16 +186,16 @@
   ],
   "shadow": {
     "lineId": "d8-l1",
-    "hint": "Hello there, the kitchen tap has a small leak, and water has been on the floor since yesterday."
+    "hint": "Hello there, the kitchen tap has a small leak."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "你話聽日六點之後外出。你點講？",
       "choices": [
-        "I will be out after six tomorrow, so please take the key from the front guard then.",
-        "The kitchen leak started yesterday morning, and it is much worse, so I need one quick repair.",
-        "Hello there, the kitchen tap has a small leak, and water has been on the floor since yesterday."
+        "I will be out after six tomorrow.",
+        "The kitchen leak started yesterday morning.",
+        "Hello there, the kitchen tap has a small leak."
       ],
       "answer": 0,
       "explain": "講 out after six。"
@@ -227,7 +227,7 @@
         "line": "I am sorry about the leak. When did the tap start, and is the water still running?",
         "audio": "assets/audio/lines/d8-l2.mp3",
         "audioSlow": "assets/audio/lines/d8-l2-slow.mp3",
-        "expect": "The kitchen leak started yesterday morning, and it is much worse, so I need one quick repair.",
+        "expect": "The kitchen leak started yesterday morning.",
         "keywords": [
           "leak",
           "repair"
@@ -241,7 +241,7 @@
         "line": "A repair visit can come tomorrow after six in the evening. Will you be out of the flat then?",
         "audio": "assets/audio/lines/d8-l4.mp3",
         "audioSlow": "assets/audio/lines/d8-l4-slow.mp3",
-        "expect": "I will be out after six tomorrow, so please take the key from the front guard then.",
+        "expect": "I will be out after six tomorrow.",
         "keywords": [
           "out",
           "tomorrow"

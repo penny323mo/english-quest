@@ -16,3 +16,6 @@ Use the next free IDs on disk after fix-49 (check content/lessons). Prefer **W14
 Each lesson: full 12-beat, hero WebP 900×1200 full-bleed in the flat-vector house style with sat ≥34.3 (PIL RGB resize 90×120 colorsys S mean×100) and a scene cue, cast-matched chips, CMUdict IPA, Kokoro/Piper audio, natural Cantonese glossYue, seeded-shuffled answers. Slot each so Path CEFR stays non-decreasing and wpl stays within ±2 of its neighbours. No padding or keyword stuffing; every question is answered with real numbers/names.
 Dialogues: short natural turns, contractions, Q→A coherence (no "Yes." before wh-answers).
 Run tests + build; Lighthouse mobile Perf ≥98. Append "## Round 50" to CHANGELOG.md, and list honestly which audit items were NOT closed. Do not git commit.
+
+## r49 coder audit pointer: review/loop-r49/coder-audit.md
+Open items: #150 CRITICAL (all 528 ex3 "We can use X in this shop" + 521 template miniDialogues in 更多), #151 MAJOR (W8 W5 D3 R6 T6 R9 de-pad left stale glossYue + incoherent turns), #152 MAJOR (T20 J23 R17 W14 over B2 cap ~17 wpl, no new lemmas, padded/non-sequitur), #136 #137 #143 #146(J22) #147 still open, minor #141 #153 #154 #155 #156. CLOSED: #135 (structure) #138 #140 #142 #145 #148 #149. fix-49 already used W14 J23 T20 R17, so next free IDs are W15 J24 T21 R18 D15.

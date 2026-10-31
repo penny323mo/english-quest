@@ -93,7 +93,10 @@
     "t20",
     "j23",
     "r17",
-    "w14"
+    "w14",
+    "w15",
+    "j24",
+    "t21"
   ],
   "pending": [],
   "focus": {
@@ -190,7 +193,10 @@
     "t20": "center 30%",
     "j23": "center 30%",
     "r17": "center 30%",
-    "w14": "center 30%"
+    "w14": "center 30%",
+    "w15": "center 30%",
+    "j24": "center 30%",
+    "t21": "center 30%"
   },
   "people": {
     "tom": "Adult man, short black hair, beige jacket, coral scarf, head and shoulders.",
@@ -891,6 +897,27 @@
         "nina"
       ],
       "look": "Deadline and agenda review with a slide on screen (期限同議程)"
+    },
+    "w15": {
+      "cast": [
+        "tom",
+        "nina"
+      ],
+      "look": "Budget meeting with a March invoice on a wooden desk (發票同預算)"
+    },
+    "j24": {
+      "cast": [
+        "gus",
+        "ida"
+      ],
+      "look": "Gold bracelet quote and earring polish at the counter (手鏈報價同擦亮)"
+    },
+    "t21": {
+      "cast": [
+        "tom",
+        "kim"
+      ],
+      "look": "Customs hall before a connection, with luggage and a boarding pass (轉機、海關同行李)"
     }
   }
 }

@@ -40,8 +40,9 @@ const GLYPHS: Record<string, string> = {
   W1: "phone", W2: "mail", W3: "meet", W4: "coffee", W5: "phone", W6: "card", W7: "phone", W8: "meet", W9: "mail", W10: "mail", W11: "mail", W12: "meet", W13: "meet",
   D1: "cross", D2: "coin", D3: "home", D4: "phone", D5: "box", D6: "cross", D7: "scissors", D8: "wrench", D9: "card", D10: "taxi", D11: "coin", D12: "cross", D13: "cross", D14: "box",
   J14: "ring", J15: "ring", J16: "gem", J17: "necklace", J18: "spark", J19: "gem", J20: "gem", J21: "gem", J22: "gem", J23: "gem",
-  R14: "box", R15: "plate", R16: "fork", R17: "seat", T16: "taxi", T18: "pass", T19: "bed", T20: "pass",
-  W14: "meet",
+  R14: "box", R15: "plate", R16: "fork", R17: "seat", T16: "taxi", T18: "pass", T19: "bed", T20: "pass", T21: "pass",
+  W14: "meet", W15: "mail",
+  J24: "gem",
 };
 
 function Glyph({ kind }: { kind: string }) {

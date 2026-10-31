@@ -31,22 +31,22 @@
       "id": "r7-l1",
       "speaker": "ruth",
       "speakerLabel": "Ruth",
-      "text": "Excuse me please, Suki. I ordered the soup, but the bowl arrived cold at our little table.",
+      "text": "Excuse me, Suki. I ordered the soup, but the bowl arrived cold at our table.",
       "glossYue": "唔好意思，Suki。我叫咗湯，但係送到檯嘅碗湯係凍嘅。",
       "audio": "assets/audio/lines/r7-l1.mp3",
       "audioSlow": "assets/audio/lines/r7-l1-slow.mp3",
-      "say": "Excuse me please, Suki. I ordered the soup, but the bowl arrived cold at our little table.",
+      "say": "Excuse me, Suki. I ordered the soup, but the bowl arrived cold at our table.",
       "hideGloss": false
     },
     {
       "id": "r7-l2",
       "speaker": "suki",
       "speakerLabel": "Suki",
-      "text": "I understand the problem with the cold soup, and I can replace that bowl with a hot one.",
+      "text": "I understand the problem with the cold soup.",
       "glossYue": "我明白凍湯嘅問題，我可以換一碗熱嘅。",
       "audio": "assets/audio/lines/r7-l2.mp3",
       "audioSlow": "assets/audio/lines/r7-l2-slow.mp3",
-      "say": "I understand the problem with the cold soup, and I can replace that bowl with a hot one.",
+      "say": "I understand the problem with the cold soup.",
       "hideGloss": true
     },
     {
@@ -64,11 +64,11 @@
       "id": "r7-l4",
       "speaker": "suki",
       "speakerLabel": "Suki",
-      "text": "The manager can replace the whole dish with a fresh hot plate if that suits you best.",
+      "text": "The manager can replace the dish with a fresh hot plate if that suits you.",
       "glossYue": "如果呢個啱你，經理可以換一碟新鮮熱嘅。",
       "audio": "assets/audio/lines/r7-l4.mp3",
       "audioSlow": "assets/audio/lines/r7-l4-slow.mp3",
-      "say": "The manager can replace the whole dish with a fresh hot plate if that suits you best.",
+      "say": "The manager can replace the dish with a fresh hot plate if that suits you.",
       "hideGloss": true
     },
     {
@@ -97,11 +97,11 @@
       "id": "r7-l7",
       "speaker": "ruth",
       "speakerLabel": "Ruth",
-      "text": "Please do not let the cold soup happen again when we come back for a side dish.",
+      "text": "Do not let the cold soup happen again when we come back for a side dish.",
       "glossYue": "我哋下次返嚟食配菜，唔好再出凍湯。",
       "audio": "assets/audio/lines/r7-l7.mp3",
       "audioSlow": "assets/audio/lines/r7-l7-slow.mp3",
-      "say": "Please do not let the cold soup happen again when we come back for a side dish.",
+      "say": "Do not let the cold soup happen again when we come back for a side dish.",
       "hideGloss": true
     },
     {
@@ -118,7 +118,7 @@
   ],
   "understand": [
     {
-      "prompt": "Excuse me please, Suki. I ordered the soup, but the bowl arrived cold at our little table. 呢句即係點？",
+      "prompt": "Excuse me, Suki. I ordered the soup, but the bowl arrived cold at our table. 呢句即係點？",
       "choices": [
         "點咗湯，但係送到嚟係凍",
         "想加一杯酒",
@@ -151,7 +151,7 @@
   "chunks": [
     {
       "pattern": "Excuse me please, Ana. I ___ the soup, but the bowl arrived cold at our little table.",
-      "example": "Excuse me please, Suki. I ordered the soup, but the bowl arrived cold at our little table.",
+      "example": "Excuse me, Suki. I ordered the soup, but the bowl arrived cold at our table.",
       "glossYue": "我⋯⋯咗湯。",
       "answer": "ordered",
       "choices": [
@@ -162,7 +162,7 @@
     },
     {
       "pattern": "The manager can kindly ___ the whole dish with a fresh plate if that suits you well.",
-      "example": "The manager can replace the whole dish with a fresh hot plate if that suits you best.",
+      "example": "The manager can replace the dish with a fresh hot plate if that suits you.",
       "glossYue": "經理可以⋯⋯成碟。",
       "answer": "replace",
       "choices": [
@@ -192,7 +192,7 @@
       "type": "choice",
       "promptYue": "湯係凍嘅。你點講？",
       "choices": [
-        "Excuse me please, Suki. I ordered the soup, but the bowl arrived cold at our little table.",
+        "Excuse me, Suki. I ordered the soup, but the bowl arrived cold at our table.",
         "Shall we go into the room?",
         "The flight has been cancelled."
       ],
@@ -223,7 +223,7 @@
       {
         "partner": "Suki",
         "partnerId": "suki",
-        "line": "I understand the problem with the cold soup, and I can replace that bowl with a hot one.",
+        "line": "I understand the problem with the cold soup.",
         "audio": "assets/audio/lines/r7-l2.mp3",
         "audioSlow": "assets/audio/lines/r7-l2-slow.mp3",
         "expect": "The side dish looks undercooked after the long wait, because the meal came much too late.",
@@ -237,7 +237,7 @@
       {
         "partner": "Suki",
         "partnerId": "suki",
-        "line": "The manager can replace the whole dish with a fresh hot plate if that suits you best.",
+        "line": "The manager can replace the dish with a fresh hot plate if that suits you.",
         "audio": "assets/audio/lines/r7-l4.mp3",
         "audioSlow": "assets/audio/lines/r7-l4-slow.mp3",
         "expect": "Could you please bring a complimentary warm dessert for both of us after you fix that plate?",
@@ -254,7 +254,7 @@
         "line": "I will send that dessert right away, and I will tell the kitchen about the plate.",
         "audio": "assets/audio/lines/r7-l6.mp3",
         "audioSlow": "assets/audio/lines/r7-l6-slow.mp3",
-        "expect": "Please do not let the cold soup happen again when we come back for a side dish.",
+        "expect": "Do not let the cold soup happen again when we come back for a side dish.",
         "keywords": [
           "again",
           "soup"

@@ -306,31 +306,31 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "I'm allergic to peanuts, and I don't eat pork. 呢句入面，邊個意思先啱？",
       "choices": [
-        "花生",
-        "豬肉",
+        "過敏",
+        "素食",
         "敏感"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "I'm allergic to peanuts, and I don't eat pork. 呢句入面，邊個意思先啱？",
       "choices": [
-        "豬肉",
+        "過敏",
         "花生",
-        "敏感"
+        "素食"
       ],
       "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "I'm allergic to peanuts, and I don't eat ___. 呢句入面，邊個字先啱？",
       "choices": [
         "pork",
-        "allergic",
-        "peanut"
+        "peanut",
+        "towel"
       ],
       "answer": 0,
       "explain": "敏感。"

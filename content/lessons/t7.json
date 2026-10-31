@@ -51,22 +51,22 @@
       "id": "t7-l3",
       "speaker": "may",
       "speakerLabel": "May",
-      "text": "Yes, we do have this color in a smaller size, and the fitting room is open.",
+      "text": "Yes, we do have this color in a smaller size.",
       "glossYue": "有，呢隻顏色有細碼，試身室開住。",
       "audio": "assets/audio/lines/t7-l3.mp3",
       "audioSlow": "assets/audio/lines/t7-l3-slow.mp3",
-      "say": "Yes, we do have this color in a smaller size, and the fitting room is open.",
+      "say": "Yes, we do have this color in a smaller size.",
       "hideGloss": true
     },
     {
       "id": "t7-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "This shirt size is too big, and I would like another color in a narrower size.",
+      "text": "This shirt size is too big.",
       "glossYue": "呢件衫碼太大，我想要另一隻色、窄啲嘅碼。",
       "audio": "assets/audio/lines/t7-l4.mp3",
       "audioSlow": "assets/audio/lines/t7-l4-slow.mp3",
-      "say": "This shirt size is too big, and I would like another color in a narrower size.",
+      "say": "This shirt size is too big.",
       "hideGloss": true
     },
     {
@@ -160,7 +160,7 @@
     },
     {
       "pattern": "Yes, we do have this ___ in a smaller size, and the fitting room is open.",
-      "example": "Yes, we do have this color in a smaller size, and the fitting room is open.",
+      "example": "Yes, we do have this color in a smaller size.",
       "glossYue": "有呢隻⋯⋯。",
       "answer": "color",
       "choices": [
@@ -248,10 +248,10 @@
       {
         "partner": "May",
         "partnerId": "may",
-        "line": "Yes, we do have this color in a smaller size, and the fitting room is open.",
+        "line": "Yes, we do have this color in a smaller size.",
         "audio": "assets/audio/lines/t7-l3.mp3",
         "audioSlow": "assets/audio/lines/t7-l3-slow.mp3",
-        "expect": "This shirt size is too big, and I would like another color in a narrower size.",
+        "expect": "This shirt size is too big.",
         "keywords": [
           "big",
           "color"

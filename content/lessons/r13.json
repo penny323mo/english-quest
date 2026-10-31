@@ -305,31 +305,31 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Hi. Can I get a latte with oat milk and less sugar, please? 呢句入面，邊個意思先啱？",
       "choices": [
         "拿鐵",
-        "燕麥奶",
-        "少糖"
+        "拎走",
+        "名字"
       ],
       "answer": 0
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Hi. Can I get a latte with oat milk and less sugar, please? 呢句入面，邊個意思先啱？",
       "choices": [
-        "少糖",
+        "拎走",
         "燕麥奶",
-        "拿鐵"
+        "名字"
       ],
       "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "Hi. Can I get a latte with oat milk and ___, please? 呢句入面，邊個字先啱？",
       "choices": [
-        "oat milk",
+        "towel",
         "less sugar",
-        "latte"
+        "oyster"
       ],
       "answer": 1,
       "explain": "拿鐵。"

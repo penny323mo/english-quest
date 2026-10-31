@@ -300,17 +300,17 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Will it still be water resistant after you open the back? 呢句入面，邊個意思先啱？",
       "choices": [
+        "電池",
         "防水",
-        "手錶",
-        "電池"
+        "手錶"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "My watch has stopped. Can you change the battery? 呢句入面，邊個意思先啱？",
       "choices": [
         "電池",
         "手錶",
@@ -320,7 +320,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "Will it still be ___ after you open the back? 呢句入面，邊個字先啱？",
       "choices": [
         "watch",
         "battery",

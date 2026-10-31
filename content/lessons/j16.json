@@ -307,27 +307,27 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "The twelfth of June, 2021. Can you also add our initials, G and M? 呢句入面，邊個意思先啱？",
       "choices": [
-        "刻字",
         "首字母",
-        "日期"
+        "日期",
+        "刻字"
       ],
       "answer": 0
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Then just the date and initials without dots, please. Is there an extra fee? 呢句入面，邊個意思先啱？",
       "choices": [
         "首字母",
         "刻字",
-        "日期"
+        "字體"
       ],
       "answer": 0
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "I'd like to engrave our wedding ___ inside this silver bracelet. It's a gift. 呢句入面，邊個字先啱？",
       "choices": [
         "engraving",
         "initial",

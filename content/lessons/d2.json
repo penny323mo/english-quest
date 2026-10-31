@@ -84,33 +84,33 @@
       "id": "d2-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I would like to withdraw some cash here, and then deposit the rest into the account.",
+      "text": "I would like to withdraw some cash here.",
       "glossYue": "我想喺度攞少少現金，然後將剩低嘅存入戶口。",
       "audio": "assets/audio/lines/d2-l6.mp3",
       "audioSlow": "assets/audio/lines/d2-l6-slow.mp3",
-      "say": "I would like to withdraw some cash here, and then deposit the rest into the account.",
+      "say": "I would like to withdraw some cash here.",
       "hideGloss": true
     },
     {
       "id": "d2-l7",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "Please sign this form at the branch, and the new card replaces the blocked one here.",
+      "text": "Please sign this form at the branch.",
       "glossYue": "請喺分行簽呢張表格，新卡喺度會換走張凍結咗嘅。",
       "audio": "assets/audio/lines/d2-l7.mp3",
       "audioSlow": "assets/audio/lines/d2-l7-slow.mp3",
-      "say": "Please sign this form at the branch, and the new card replaces the blocked one here.",
+      "say": "Please sign this form at the branch.",
       "hideGloss": true
     },
     {
       "id": "d2-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will pay the fee here, and I would like a receipt for the new card.",
+      "text": "I will pay the fee here.",
       "glossYue": "我喺度會畀手續費，我想要張新卡嘅收據。",
       "audio": "assets/audio/lines/d2-l8.mp3",
       "audioSlow": "assets/audio/lines/d2-l8-slow.mp3",
-      "say": "I will pay the fee here, and I would like a receipt for the new card.",
+      "say": "I will pay the fee here.",
       "hideGloss": false
     }
   ],
@@ -171,7 +171,7 @@
     },
     {
       "pattern": "I would like to ___ some cash here, and then deposit the rest into the account.",
-      "example": "I would like to withdraw some cash here, and then deposit the rest into the account.",
+      "example": "I would like to withdraw some cash here.",
       "glossYue": "我想⋯⋯現金。",
       "answer": "withdraw",
       "choices": [
@@ -182,7 +182,7 @@
     },
     {
       "pattern": "Please sign this form at the ___, and the new card replaces the blocked one here.",
-      "example": "Please sign this form at the branch, and the new card replaces the blocked one here.",
+      "example": "Please sign this form at the branch.",
       "glossYue": "喺⋯⋯簽表格。",
       "answer": "branch",
       "choices": [
@@ -194,7 +194,7 @@
   ],
   "shadow": {
     "lineId": "d2-l8",
-    "hint": "I will pay the fee here, and I would like a receipt for the new card."
+    "hint": "I will pay the fee here."
   },
   "build": [
     {
@@ -265,7 +265,7 @@
         "line": "The balance is quite low again, and the fee to replace the card is here.",
         "audio": "assets/audio/lines/d2-l5.mp3",
         "audioSlow": "assets/audio/lines/d2-l5-slow.mp3",
-        "expect": "I would like to withdraw some cash here, and then deposit the rest into the account.",
+        "expect": "I would like to withdraw some cash here.",
         "keywords": [
           "withdraw",
           "deposit"
@@ -310,7 +310,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I will pay the fee here, and I would like a receipt for the new card.」，fee 係咩意思？",
+      "prompt": "客人講「I will pay the fee here.」，fee 係咩意思？",
       "choices": [
         "表格",
         "餘額",

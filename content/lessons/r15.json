@@ -318,7 +318,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Is this buffet all you can eat, and is takeaway banned? 呢句入面，邊個意思先啱？",
       "choices": [
         "汽水",
         "餐碟",
@@ -328,7 +328,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Which hot dishes have shellfish, and may I have a clean plate? 呢句入面，邊個意思先啱？",
       "choices": [
         "貝殼",
         "自助餐",
@@ -338,7 +338,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "Which hot dishes have shellfish, and may I have a clean ___? 呢句入面，邊個字先啱？",
       "choices": [
         "buffet",
         "plate",

@@ -307,7 +307,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Hi, I'm checking out of room twelve-oh-eight. Could I get a late checkout until one? 呢句入面，邊個意思先啱？",
       "choices": [
         "的士",
         "退房",
@@ -317,7 +317,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "No, nothing. My flight is at eight tonight. Can you store my luggage until four? 呢句入面，邊個意思先啱？",
       "choices": [
         "退房",
         "的士",
@@ -327,7 +327,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "No, nothing. My flight is at eight tonight. Can you store my ___ until four? 呢句入面，邊個字先啱？",
       "choices": [
         "luggage",
         "late checkout",

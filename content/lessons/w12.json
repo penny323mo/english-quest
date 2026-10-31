@@ -321,7 +321,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Could we book a thirty minute slot for my performance review soon? 呢句入面，邊個意思先啱？",
       "choices": [
         "績效",
         "季度",
@@ -331,7 +331,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Could our training budget cover a short sales course next month, please? 呢句入面，邊個意思先啱？",
       "choices": [
         "總結",
         "培訓",
@@ -341,7 +341,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "Will you email a written ___ after we set the next goals? 呢句入面，邊個字先啱？",
       "choices": [
         "performance",
         "quarter",

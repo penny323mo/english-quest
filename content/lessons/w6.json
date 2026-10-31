@@ -88,11 +88,11 @@
       "id": "w6-l6",
       "speaker": "zuri",
       "speakerLabel": "Zuri",
-      "text": "Real teamwork helped me stay calm on that busy morning, and I kept the whole queue moving with the team.",
+      "text": "Real teamwork helped me stay calm on that busy morning.",
       "glossYue": "嗰朝真係靠團隊，我先至保持冷靜，同隊友一齊疏導條隊。",
       "audio": "assets/audio/lines/w6-l6.mp3",
       "audioSlow": "assets/audio/lines/w6-l6-slow.mp3",
-      "say": "Real teamwork helped me stay calm on that busy morning, and I kept the whole queue moving with the team.",
+      "say": "Real teamwork helped me stay calm on that busy morning.",
       "hideGloss": true
     },
     {
@@ -175,7 +175,7 @@
     },
     {
       "pattern": "My real ___ is staying calm with guests, and I can show that with a short story from the shop.",
-      "example": "Real teamwork helped me stay calm on that busy morning, and I kept the whole queue moving with the team.",
+      "example": "Real teamwork helped me stay calm on that busy morning.",
       "glossYue": "我嘅⋯⋯係保持冷靜。",
       "answer": "strength",
       "choices": [
@@ -256,7 +256,7 @@
         "line": "That story sounds reliable. How did teamwork help you in the shop on that busy morning?",
         "audio": "assets/audio/lines/w6-l5.mp3",
         "audioSlow": "assets/audio/lines/w6-l5-slow.mp3",
-        "expect": "Real teamwork helped me stay calm on that busy morning, and I kept the whole queue moving with the team.",
+        "expect": "Real teamwork helped me stay calm on that busy morning.",
         "keywords": [
           "teamwork",
           "calm"

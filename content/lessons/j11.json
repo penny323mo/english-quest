@@ -48,11 +48,11 @@
       "id": "j11-l2",
       "speaker": "nia",
       "speakerLabel": "Nia",
-      "text": "The occasion is an anniversary dinner, and my preference is a custom design with a classic gold look.",
+      "text": "The occasion is an anniversary dinner.",
       "glossYue": "呢個場合係週年晚飯，我偏好係經典金款嘅訂做設計。",
       "audio": "assets/audio/lines/j11-l2.mp3",
       "audioSlow": "assets/audio/lines/j11-l2-slow.mp3",
-      "say": "The occasion is an anniversary dinner, and my preference is a custom design with a classic gold look.",
+      "say": "The occasion is an anniversary dinner.",
       "hideGloss": true
     },
     {
@@ -81,33 +81,33 @@
       "id": "j11-l5",
       "speaker": "nia",
       "speakerLabel": "Nia",
-      "text": "If I placed a custom deposit today, would the full timeline still fit my anniversary appointment next month?",
+      "text": "If I placed a custom deposit today, would the full timeline fit my anniversary appointment next month?",
       "glossYue": "如果我今日落訂金，成個時間表仲趕唔趕得切我下個月嘅週年預約？",
       "audio": "assets/audio/lines/j11-l5.mp3",
       "audioSlow": "assets/audio/lines/j11-l5-slow.mp3",
-      "say": "If I placed a custom deposit today, would the full timeline still fit my anniversary appointment next month?",
+      "say": "If I placed a custom deposit today, would the full timeline fit my anniversary appointment next month?",
       "hideGloss": false
     },
     {
       "id": "j11-l6",
       "speaker": "ada",
       "speakerLabel": "Ada",
-      "text": "I was wondering whether you also value availability, exclusivity, and a discreet follow-up call after the appointment.",
-      "glossYue": "我想問你重唔重視檔期、獨家，同預約之後一次低調嘅跟進電話。",
+      "text": "I can fit that full plan next month.",
+      "glossYue": "我可以趕得切下個月嗰個完整計劃。",
       "audio": "assets/audio/lines/j11-l6.mp3",
       "audioSlow": "assets/audio/lines/j11-l6-slow.mp3",
-      "say": "I was wondering whether you also value availability, exclusivity, and a discreet follow-up call after the appointment.",
+      "say": "I can fit that full plan next month.",
       "hideGloss": true
     },
     {
       "id": "j11-l7",
       "speaker": "nia",
       "speakerLabel": "Nia",
-      "text": "If the new design were more contemporary, I would still want a discreet and understated gold investment piece.",
+      "text": "If the new design were more contemporary, I would want a discreet and understated gold investment piece.",
       "glossYue": "如果新設計再現代啲，我都想要一件低調又含蓄嘅金保值。",
       "audio": "assets/audio/lines/j11-l7.mp3",
       "audioSlow": "assets/audio/lines/j11-l7-slow.mp3",
-      "say": "If the new design were more contemporary, I would still want a discreet and understated gold investment piece.",
+      "say": "If the new design were more contemporary, I would want a discreet and understated gold investment piece.",
       "hideGloss": true
     },
     {
@@ -157,7 +157,7 @@
   "chunks": [
     {
       "pattern": "The occasion is an anniversary dinner, and my ___ is a custom design with a classic gold look.",
-      "example": "The occasion is an anniversary dinner, and my preference is a custom design with a classic gold look.",
+      "example": "The occasion is an anniversary dinner.",
       "glossYue": "我嘅⋯⋯。",
       "answer": "preference",
       "choices": [
@@ -179,7 +179,7 @@
     },
     {
       "pattern": "If I placed a custom ___ today, would the full timeline still fit my anniversary appointment next month?",
-      "example": "If I placed a custom deposit today, would the full timeline still fit my anniversary appointment next month?",
+      "example": "If I placed a custom deposit today, would the full timeline fit my anniversary appointment next month?",
       "glossYue": "落一筆⋯⋯。",
       "answer": "deposit",
       "choices": [
@@ -191,7 +191,7 @@
   ],
   "shadow": {
     "lineId": "j11-l5",
-    "hint": "If I placed a custom deposit today, would the full timeline still fit my anniversary appointment next month?"
+    "hint": "If I placed a custom deposit today, would the full timeline fit my anniversary appointment next month?"
   },
   "build": [
     {
@@ -234,7 +234,7 @@
         "line": "Good morning. I was wondering whether this special occasion is an anniversary or a quiet engagement this month.",
         "audio": "assets/audio/lines/j11-l1.mp3",
         "audioSlow": "assets/audio/lines/j11-l1-slow.mp3",
-        "expect": "The occasion is an anniversary dinner, and my preference is a custom design with a classic gold look.",
+        "expect": "The occasion is an anniversary dinner.",
         "keywords": [
           "occasion",
           "preference"
@@ -259,10 +259,10 @@
       {
         "partner": "Ada",
         "partnerId": "ada",
-        "line": "I was wondering whether you also value availability, exclusivity, and a discreet follow-up call after the appointment.",
+        "line": "I can fit that full plan next month.",
         "audio": "assets/audio/lines/j11-l6.mp3",
         "audioSlow": "assets/audio/lines/j11-l6-slow.mp3",
-        "expect": "If the new design were more contemporary, I would still want a discreet and understated gold investment piece.",
+        "expect": "If the new design were more contemporary, I would want a discreet and understated gold investment piece.",
         "keywords": [
           "contemporary",
           "discreet"
@@ -297,7 +297,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The occasion is an anniversary dinner, and my preference is a custom design with a classic gold look.」，preference 係咩意思？",
+      "prompt": "客人講「The occasion is an anniversary dinner.」，preference 係咩意思？",
       "choices": [
         "檔期",
         "訂金",

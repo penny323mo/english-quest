@@ -308,27 +308,27 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Your ID card and a proof of address, like a utility bill from the last three months. 呢句入面，邊個意思先啱？",
       "choices": [
-        "地址",
         "戶口",
+        "餘額",
         "身份證"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Your ID card and a proof of address, like a utility bill from the last three months. 呢句入面，邊個意思先啱？",
       "choices": [
         "戶口",
         "地址",
-        "身份證"
+        "餘額"
       ],
       "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "Hi, I'd like to open an ___. What do I need to bring? 呢句入面，邊個字先啱？",
       "choices": [
         "account",
         "identity",

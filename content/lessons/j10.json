@@ -30,11 +30,11 @@
       "id": "j10-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "You might also like this matching pair, and it completes the look for a birthday gift.",
+      "text": "You might also like this matching pair.",
       "glossYue": "你或者都會鍾意呢對襯到嘅，送生日禮物會成套。",
       "audio": "assets/audio/lines/j10-l1.mp3",
       "audioSlow": "assets/audio/lines/j10-l1-slow.mp3",
-      "say": "You might also like this matching pair, and it completes the look for a birthday gift.",
+      "say": "You might also like this matching pair.",
       "hideGloss": false
     },
     {
@@ -52,11 +52,11 @@
       "id": "j10-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Yes, this popular set is optional, and the engraving spells the name Mei on the box.",
-      "glossYue": "會，呢套好多人揀，可以唔要，刻字會喺盒上寫 Mei 個名。",
+      "text": "Yes, this popular set is optional too.",
+      "glossYue": "係，呢套好多人揀，可以唔要。",
       "audio": "assets/audio/lines/j10-l3.mp3",
       "audioSlow": "assets/audio/lines/j10-l3-slow.mp3",
-      "say": "Yes, this popular set is optional, and the engraving spells the name Mei on the box.",
+      "say": "Yes, this popular set is optional too.",
       "hideGloss": true
     },
     {
@@ -85,11 +85,11 @@
       "id": "j10-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Please recommend one popular option only, and then I will decide before we leave the shop.",
+      "text": "Please recommend one popular option only.",
       "glossYue": "請只推薦一個多人揀嘅選擇，然後我哋走之前我再決定。",
       "audio": "assets/audio/lines/j10-l6.mp3",
       "audioSlow": "assets/audio/lines/j10-l6-slow.mp3",
-      "say": "Please recommend one popular option only, and then I will decide before we leave the shop.",
+      "say": "Please recommend one popular option only.",
       "hideGloss": true
     },
     {
@@ -240,7 +240,7 @@
         "line": "If I am getting the necklace today, do the matching earrings go well with it too?",
         "audio": "assets/audio/lines/j10-l2.mp3",
         "audioSlow": "assets/audio/lines/j10-l2-slow.mp3",
-        "expect": "Yes, this popular set is optional, and the engraving spells the name Mei on the box.",
+        "expect": "Yes, this popular set is optional too.",
         "keywords": [
           "optional",
           "engraving"
@@ -265,7 +265,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Please recommend one popular option only, and then I will decide before we leave the shop.",
+        "line": "Please recommend one popular option only.",
         "audio": "assets/audio/lines/j10-l6.mp3",
         "audioSlow": "assets/audio/lines/j10-l6-slow.mp3",
         "expect": "If you prefer this necklace, the linked chain goes well, and the parcel box is ready.",

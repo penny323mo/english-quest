@@ -321,27 +321,27 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "I dropped this gold pendant last night. Could I get a written appraisal? 呢句入面，邊個意思先啱？",
       "choices": [
         "估價",
         "相片",
-        "吊墜"
+        "保險"
       ],
       "answer": 0
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "What excess does my insurance policy charge for a repair like this? 呢句入面，邊個意思先啱？",
       "choices": [
-        "保險",
         "吊墜",
-        "相片"
+        "相片",
+        "保險"
       ],
       "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "What excess does my ___ policy charge for a repair like this? 呢句入面，邊個字先啱？",
       "choices": [
         "appraisal",
         "insurance",

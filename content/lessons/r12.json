@@ -304,31 +304,31 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Sure. Would you like the private room? There's a minimum spend of three thousand dollars. 呢句入面，邊個意思先啱？",
       "choices": [
-        "包房",
-        "最低消費",
-        "八人"
+        "八人",
+        "幾多位",
+        "包房"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Sure. Would you like the private room? There's a minimum spend of three thousand dollars. 呢句入面，邊個意思先啱？",
       "choices": [
-        "包房",
+        "最低消費",
         "八人",
-        "最低消費"
+        "幾多位"
       ],
       "answer": 0
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "Sure. Would you like the private room? There's a ___ of three thousand dollars. 呢句入面，邊個字先啱？",
       "choices": [
-        "private room",
+        "party of",
         "minimum spend",
-        "party of"
+        "towel"
       ],
       "answer": 1,
       "explain": "八人。"

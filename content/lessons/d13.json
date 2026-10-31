@@ -323,7 +323,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Yes. The X-ray shows a small cavity, so a filling should be enough. 呢句入面，邊個意思先啱？",
       "choices": [
         "麻醉",
         "牙痛",
@@ -333,7 +333,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Hi. I've had a bad toothache on the left side since last night. 呢句入面，邊個意思先啱？",
       "choices": [
         "牙痛",
         "麻醉",
@@ -343,7 +343,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "The small one is enough, and we use ___ on that area first. 呢句入面，邊個字先啱？",
       "choices": [
         "toothache",
         "anaesthetic",

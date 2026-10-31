@@ -321,30 +321,30 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "The labour charge is forty dollars on top of the gold. 呢句入面，邊個意思先啱？",
       "choices": [
         "金價",
         "手鐲",
-        "手工"
+        "純度"
       ],
       "answer": 0
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Will my receipt also show the weight and the purity? 呢句入面，邊個意思先啱？",
       "choices": [
+        "手鐲",
         "純度",
-        "金價",
-        "手鐲"
+        "金價"
       ],
       "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "Hi. What is your gold price per gram for one ___? 呢句入面，邊個字先啱？",
       "choices": [
         "labour",
-        "gram",
+        "towel",
         "bangle"
       ],
       "answer": 2,

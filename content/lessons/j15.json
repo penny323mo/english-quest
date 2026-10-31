@@ -54,22 +54,22 @@
       "id": "j15-l1",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "This ring is too tight on my finger, and I still have the receipt.",
+      "text": "This ring is too tight on my finger.",
       "glossYue": "呢隻戒指戴住太緊，我仲有張收據。",
       "audio": "assets/audio/lines/j15-l1.mp3",
       "audioSlow": "assets/audio/lines/j15-l1-slow.mp3",
-      "say": "This ring is too tight on my finger, and I still have the receipt.",
+      "say": "This ring is too tight on my finger.",
       "hideGloss": false
     },
     {
       "id": "j15-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "A tight ring needs one larger opening, and the receipt shows the full purchase date.",
+      "text": "A tight ring needs one larger opening.",
       "glossYue": "太緊嘅戒指要開大少少，收據上面有完整購買日期。",
       "audio": "assets/audio/lines/j15-l2.mp3",
       "audioSlow": "assets/audio/lines/j15-l2-slow.mp3",
-      "say": "A tight ring needs one larger opening, and the receipt shows the full purchase date.",
+      "say": "A tight ring needs one larger opening.",
       "hideGloss": false
     },
     {
@@ -131,17 +131,17 @@
       "id": "j15-l8",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Please bring that receipt with you on Saturday, and the larger ring is ready.",
+      "text": "Please bring that receipt with you on Saturday.",
       "glossYue": "請星期六帶埋張收據，開大咗嘅戒指會準備好。",
       "audio": "assets/audio/lines/j15-l8.mp3",
       "audioSlow": "assets/audio/lines/j15-l8-slow.mp3",
-      "say": "Please bring that receipt with you on Saturday, and the larger ring is ready.",
+      "say": "Please bring that receipt with you on Saturday.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "This ring is too tight on my finger, and I still have the receipt. 呢句即係點？",
+      "prompt": "This ring is too tight on my finger. 呢句即係點？",
       "choices": [
         "戒指太緊，仲有收據",
         "收據唔見咗，戒指太鬆",
@@ -213,7 +213,7 @@
       "choices": [
         "Can you make the ring half a size larger, and when can I collect it?",
         "How long does the warranty work take, and may I collect it on Saturday?",
-        "This ring is too tight on my finger, and I still have the receipt."
+        "This ring is too tight on my finger."
       ],
       "answer": 0,
       "explain": "講 half a size larger。"
@@ -242,7 +242,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "A tight ring needs one larger opening, and the receipt shows the full purchase date.",
+        "line": "A tight ring needs one larger opening.",
         "audio": "assets/audio/lines/j15-l2.mp3",
         "audioSlow": "assets/audio/lines/j15-l2-slow.mp3",
         "expect": "Can you make the ring half a size larger, and when can I collect it?",
@@ -340,6 +340,6 @@
   ],
   "shadow": {
     "lineId": "j15-l1",
-    "hint": "This ring is too tight on my finger, and I still have the receipt."
+    "hint": "This ring is too tight on my finger."
   }
 }

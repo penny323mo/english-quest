@@ -301,27 +301,27 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Hi Nina, do you have a minute? I think my overtime is missing from this month's payslip. 呢句入面，邊個意思先啱？",
       "choices": [
         "糧單",
-        "加班",
-        "計糧"
+        "計糧",
+        "強積金"
       ],
       "answer": 0
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Hi Nina, do you have a minute? I think my overtime is missing from this month's payslip. 呢句入面，邊個意思先啱？",
       "choices": [
-        "糧單",
         "計糧",
+        "強積金",
         "加班"
       ],
       "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "I see. That was after the ___ deadline on the twenty-fifth, so they weren't included. 呢句入面，邊個字先啱？",
       "choices": [
         "overtime",
         "payroll",

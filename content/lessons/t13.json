@@ -56,33 +56,33 @@
       "id": "t13-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Hi. I have a bad headache and a high fever. What medicine can I take?",
+      "text": "Hi. I have bad headache and high fever. What medicine can I take?",
       "glossYue": "你好。我頭痛又高燒。我可以食咩藥？",
       "audio": "assets/audio/lines/t13-l1.mp3",
       "audioSlow": "assets/audio/lines/t13-l1-slow.mp3",
-      "say": "Hi. I have a bad headache and a high fever. What medicine can I take?",
+      "say": "Hi. I have bad headache and high fever. What medicine can I take?",
       "hideGloss": false
     },
     {
       "id": "t13-l2",
       "speaker": "suki",
       "speakerLabel": "Suki",
-      "text": "This tablet is good for both the fever and the headache. Do you have allergies?",
+      "text": "This tablet is good for both fever and headache. Do you have allergies?",
       "glossYue": "呢種藥對發燒同頭痛都有用。你有冇敏感？",
       "audio": "assets/audio/lines/t13-l2.mp3",
       "audioSlow": "assets/audio/lines/t13-l2-slow.mp3",
-      "say": "This tablet is good for both the fever and the headache. Do you have allergies?",
+      "say": "This tablet is good for both fever and headache. Do you have allergies?",
       "hideGloss": false
     },
     {
       "id": "t13-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "No, I don't have any allergies. How many times a day should I take this?",
+      "text": "No, I don't have any allergies. How many times day should I take this?",
       "glossYue": "我冇敏感。一日應該食幾多次？",
       "audio": "assets/audio/lines/t13-l3.mp3",
       "audioSlow": "assets/audio/lines/t13-l3-slow.mp3",
-      "say": "No, I don't have any allergies. How many times a day should I take this?",
+      "say": "No, I don't have any allergies. How many times day should I take this?",
       "hideGloss": false
     },
     {
@@ -100,11 +100,11 @@
       "id": "t13-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Will this one tablet make me feel drowsy? I still have to drive home later.",
+      "text": "Will this one tablet make me feel drowsy? I have to drive home later.",
       "glossYue": "呢粒會唔會令人好眼瞓？我遲啲要揸車返屋企。",
       "audio": "assets/audio/lines/t13-l5.mp3",
       "audioSlow": "assets/audio/lines/t13-l5-slow.mp3",
-      "say": "Will this one tablet make me feel drowsy? I still have to drive home later.",
+      "say": "Will this one tablet make me feel drowsy? I have to drive home later.",
       "hideGloss": true
     },
     {
@@ -143,7 +143,7 @@
   ],
   "understand": [
     {
-      "prompt": "This tablet is good for both the fever and the headache. Do you have allergies? 即係問緊咩？",
+      "prompt": "This tablet is good for both fever and headache. Do you have allergies? 即係問緊咩？",
       "choices": [
         "問一日幾次",
         "呢種藥對頭痛同發燒有用，問你有冇敏感",
@@ -176,7 +176,7 @@
   "chunks": [
     {
       "pattern": "Hi. I have a bad ___ and a high fever. What medicine can I take?",
-      "example": "Hi. I have a bad headache and a high fever. What medicine can I take?",
+      "example": "Hi. I have bad headache and high fever. What medicine can I take?",
       "glossYue": "我頭痛。",
       "answer": "headache",
       "choices": [
@@ -198,7 +198,7 @@
     },
     {
       "pattern": "Will this one tablet make me feel ___? I still have to drive home later.",
-      "example": "Will this one tablet make me feel drowsy? I still have to drive home later.",
+      "example": "Will this one tablet make me feel drowsy? I have to drive home later.",
       "glossYue": "會唔會好眼瞓？",
       "answer": "drowsy",
       "choices": [
@@ -213,9 +213,9 @@
       "type": "choice",
       "promptYue": "你想講頭痛同發燒。你點講？",
       "choices": [
-        "Hi. I have a bad headache and a high fever. What medicine can I take?",
-        "No, I don't have any allergies. How many times a day should I take this?",
-        "Will this one tablet make me feel drowsy? I still have to drive home later."
+        "Hi. I have bad headache and high fever. What medicine can I take?",
+        "No, I don't have any allergies. How many times day should I take this?",
+        "Will this one tablet make me feel drowsy? I have to drive home later."
       ],
       "answer": 0,
       "explain": "講 headache。"
@@ -240,10 +240,10 @@
       {
         "partner": "Suki",
         "partnerId": "suki",
-        "line": "This tablet is good for both the fever and the headache. Do you have allergies?",
+        "line": "This tablet is good for both fever and headache. Do you have allergies?",
         "audio": "assets/audio/lines/t13-l2.mp3",
         "audioSlow": "assets/audio/lines/t13-l2-slow.mp3",
-        "expect": "No, I don't have any allergies. How many times a day should I take this?",
+        "expect": "No, I don't have any allergies. How many times day should I take this?",
         "keywords": [
           "times",
           "day"
@@ -257,7 +257,7 @@
         "line": "Three times a day, after meals. Don't take more than six tablets each single day.",
         "audio": "assets/audio/lines/t13-l4.mp3",
         "audioSlow": "assets/audio/lines/t13-l4-slow.mp3",
-        "expect": "Will this one tablet make me feel drowsy? I still have to drive home later.",
+        "expect": "Will this one tablet make me feel drowsy? I have to drive home later.",
         "keywords": [
           "drowsy",
           "drive"
@@ -337,6 +337,6 @@
   ],
   "shadow": {
     "lineId": "t13-l1",
-    "hint": "Hi. I have a bad headache and a high fever. What medicine can I take?"
+    "hint": "Hi. I have bad headache and high fever. What medicine can I take?"
   }
 }

@@ -27,33 +27,33 @@
       "id": "t10-l1",
       "speaker": "hugo",
       "speakerLabel": "Hugo",
-      "text": "My luggage is missing at baggage claim, and the belt is empty because my bag never came out.",
+      "text": "My luggage is missing at baggage claim.",
       "glossYue": "我件行李喺行李轉盤唔見咗，條帶空空，因為個袋冇出嚟。",
       "audio": "assets/audio/lines/t10-l1.mp3",
       "audioSlow": "assets/audio/lines/t10-l1-slow.mp3",
-      "say": "My luggage is missing at baggage claim, and the belt is empty because my bag never came out.",
+      "say": "My luggage is missing at baggage claim.",
       "hideGloss": false
     },
     {
       "id": "t10-l2",
       "speaker": "opal",
       "speakerLabel": "Opal",
-      "text": "Could you describe the missing bag for me, and tell me the colour if you still remember it?",
+      "text": "Could you describe the missing bag for me, and tell me the colour if you remember it?",
       "glossYue": "可唔可以講下唔見咗嗰個袋，仲記唔記得顏色？",
       "audio": "assets/audio/lines/t10-l2.mp3",
       "audioSlow": "assets/audio/lines/t10-l2-slow.mp3",
-      "say": "Could you describe the missing bag for me, and tell me the colour if you still remember it?",
+      "say": "Could you describe the missing bag for me, and tell me the colour if you remember it?",
       "hideGloss": false
     },
     {
       "id": "t10-l3",
       "speaker": "hugo",
       "speakerLabel": "Hugo",
-      "text": "It is a blue suitcase with a red ribbon, and it has two small wheels underneath the base.",
+      "text": "It is a blue suitcase with a red ribbon.",
       "glossYue": "係一個藍色行李箱，有紅絲帶，底有兩個細轆。",
       "audio": "assets/audio/lines/t10-l3.mp3",
       "audioSlow": "assets/audio/lines/t10-l3-slow.mp3",
-      "say": "It is a blue suitcase with a red ribbon, and it has two small wheels underneath the base.",
+      "say": "It is a blue suitcase with a red ribbon.",
       "hideGloss": false
     },
     {
@@ -71,11 +71,11 @@
       "id": "t10-l5",
       "speaker": "hugo",
       "speakerLabel": "Hugo",
-      "text": "The tag number is HK four eight two, and I can read it on this paper receipt.",
+      "text": "The tag number is HK four eight two.",
       "glossYue": "牌號係 HK four eight two，我可以喺呢張紙收據讀出嚟。",
       "audio": "assets/audio/lines/t10-l5.mp3",
       "audioSlow": "assets/audio/lines/t10-l5-slow.mp3",
-      "say": "The tag number is HK four eight two, and I can read it on this paper receipt.",
+      "say": "The tag number is HK four eight two.",
       "hideGloss": true
     },
     {
@@ -114,7 +114,7 @@
   ],
   "understand": [
     {
-      "prompt": "My luggage is missing at baggage claim, and the belt is empty because my bag never came out. 呢句即係點？",
+      "prompt": "My luggage is missing at baggage claim. 呢句即係點？",
       "choices": [
         "行李喺轉盤唔見咗，條帶係空嘅",
         "行李已經喺轉盤上面",
@@ -124,7 +124,7 @@
       "explain": "luggage 係行李。"
     },
     {
-      "prompt": "It is a blue suitcase with a red ribbon, and it has two small wheels underneath the base. 呢句即係點？",
+      "prompt": "It is a blue suitcase with a red ribbon. 呢句即係點？",
       "choices": [
         "個袋係黑色，冇轆",
         "行李牌號碼係紅色",
@@ -181,15 +181,15 @@
   ],
   "shadow": {
     "lineId": "t10-l5",
-    "hint": "The tag number is HK four eight two, and I can read it on this paper receipt."
+    "hint": "The tag number is HK four eight two."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "職員問行李牌。你點答？",
       "choices": [
-        "The tag number is HK four eight two, and I can read it on this paper receipt.",
-        "It is a blue suitcase with a red ribbon, and it has two small wheels underneath the base.",
+        "The tag number is HK four eight two.",
+        "It is a blue suitcase with a red ribbon.",
         "Could you deliver the bag to my hotel if you find it after you finish this search?"
       ],
       "answer": 0,
@@ -219,10 +219,10 @@
       {
         "partner": "Opal",
         "partnerId": "opal",
-        "line": "Could you describe the missing bag for me, and tell me the colour if you still remember it?",
+        "line": "Could you describe the missing bag for me, and tell me the colour if you remember it?",
         "audio": "assets/audio/lines/t10-l2.mp3",
         "audioSlow": "assets/audio/lines/t10-l2-slow.mp3",
-        "expect": "It is a blue suitcase with a red ribbon, and it has two small wheels underneath the base.",
+        "expect": "It is a blue suitcase with a red ribbon.",
         "keywords": [
           "suitcase",
           "ribbon"
@@ -236,7 +236,7 @@
         "line": "What tag number is printed on your baggage receipt, so I can search for that bag?",
         "audio": "assets/audio/lines/t10-l4.mp3",
         "audioSlow": "assets/audio/lines/t10-l4-slow.mp3",
-        "expect": "The tag number is HK four eight two, and I can read it on this paper receipt.",
+        "expect": "The tag number is HK four eight two.",
         "keywords": [
           "tag",
           "receipt"
@@ -285,7 +285,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「The tag number is HK four eight two, and I can read it on this paper receipt.」，tag number 係咩意思？",
+      "prompt": "你講「The tag number is HK four eight two.」，tag number 係咩意思？",
       "choices": [
         "行李牌",
         "酒店",

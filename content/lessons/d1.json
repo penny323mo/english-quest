@@ -40,11 +40,11 @@
       "id": "d1-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have had a fever and cough since Monday, and my sore throat feels worse.",
+      "text": "I have had a fever and cough since Monday.",
       "glossYue": "我由星期一起發燒同咳嗽，條喉嚨仲差咗。",
       "audio": "assets/audio/lines/d1-l2.mp3",
       "audioSlow": "assets/audio/lines/d1-l2-slow.mp3",
-      "say": "I have had a fever and cough since Monday, and my sore throat feels worse.",
+      "say": "I have had a fever and cough since Monday.",
       "hideGloss": true
     },
     {
@@ -62,11 +62,11 @@
       "id": "d1-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have had a headache since Monday, and I have no allergy to any medicine.",
+      "text": "I have had a headache since Monday.",
       "glossYue": "我由星期一起頭痛，我對任何藥都冇過敏。",
       "audio": "assets/audio/lines/d1-l4.mp3",
       "audioSlow": "assets/audio/lines/d1-l4-slow.mp3",
-      "say": "I have had a headache since Monday, and I have no allergy to any medicine.",
+      "say": "I have had a headache since Monday.",
       "hideGloss": true
     },
     {
@@ -95,11 +95,11 @@
       "id": "d1-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will take the prescription to the pharmacy, and I need a follow-up after rest.",
+      "text": "I will take the prescription to the pharmacy.",
       "glossYue": "我會帶藥單去藥房，休息之後要覆診。",
       "audio": "assets/audio/lines/d1-l7.mp3",
       "audioSlow": "assets/audio/lines/d1-l7-slow.mp3",
-      "say": "I will take the prescription to the pharmacy, and I need a follow-up after rest.",
+      "say": "I will take the prescription to the pharmacy.",
       "hideGloss": true
     },
     {
@@ -149,7 +149,7 @@
   "chunks": [
     {
       "pattern": "I have had a fever and ___ since Monday, and my sore throat feels worse.",
-      "example": "I have had a fever and cough since Monday, and my sore throat feels worse.",
+      "example": "I have had a fever and cough since Monday.",
       "glossYue": "我由星期一起發燒同⋯⋯。",
       "answer": "cough",
       "choices": [
@@ -160,7 +160,7 @@
     },
     {
       "pattern": "I have had a ___ since Monday, and I have no allergy to any medicine.",
-      "example": "I have had a headache since Monday, and I have no allergy to any medicine.",
+      "example": "I have had a headache since Monday.",
       "glossYue": "我由星期一起⋯⋯。",
       "answer": "headache",
       "choices": [
@@ -201,7 +201,7 @@
       "type": "choice",
       "promptYue": "診所問你點唔舒服。你點先講？",
       "choices": [
-        "I have had a fever and cough since Monday, and my sore throat feels worse.",
+        "I have had a fever and cough since Monday.",
         "You might also like this matching pair.",
         "The necklace is eighteen dollars."
       ],
@@ -237,7 +237,7 @@
         "line": "Good morning. What brings you in to the clinic today, and how do you feel?",
         "audio": "assets/audio/lines/d1-l1.mp3",
         "audioSlow": "assets/audio/lines/d1-l1-slow.mp3",
-        "expect": "I have had a fever and cough since Monday, and my sore throat feels worse.",
+        "expect": "I have had a fever and cough since Monday.",
         "keywords": [
           "fever",
           "cough"
@@ -251,7 +251,7 @@
         "line": "Do you have a headache too, and are you allergic to any medicine we use?",
         "audio": "assets/audio/lines/d1-l3.mp3",
         "audioSlow": "assets/audio/lines/d1-l3-slow.mp3",
-        "expect": "I have had a headache since Monday, and I have no allergy to any medicine.",
+        "expect": "I have had a headache since Monday.",
         "keywords": [
           "headache",
           "allergy"
@@ -265,7 +265,7 @@
         "line": "You can rest at home, and the pharmacy can prepare this prescription for you there.",
         "audio": "assets/audio/lines/d1-l6.mp3",
         "audioSlow": "assets/audio/lines/d1-l6-slow.mp3",
-        "expect": "I will take the prescription to the pharmacy, and I need a follow-up after rest.",
+        "expect": "I will take the prescription to the pharmacy.",
         "keywords": [
           "pharmacy",
           "follow-up"
@@ -300,7 +300,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I have had a fever and cough since Monday, and my sore throat feels worse.」，symptom 係咩意思？",
+      "prompt": "客人講「I have had a fever and cough since Monday.」，symptom 係咩意思？",
       "choices": [
         "期限",
         "症狀",

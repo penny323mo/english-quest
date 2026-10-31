@@ -316,27 +316,27 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Hi. I'd like to rent a car. Here is my driving licence. 呢句入面，邊個意思先啱？",
       "choices": [
         "自付額",
         "租車",
-        "執照"
+        "刮痕"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Hi. I'd like to rent a car. Here is my driving licence. 呢句入面，邊個意思先啱？",
       "choices": [
         "執照",
-        "租車",
-        "自付額"
+        "自付額",
+        "刮痕"
       ],
       "answer": 0
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "Full to full is fine. What ___ do I need to return it? 呢句入面，邊個字先啱？",
       "choices": [
         "scratch",
         "fee",

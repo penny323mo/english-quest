@@ -51,11 +51,11 @@
       "id": "w2-l3",
       "speaker": "ada",
       "speakerLabel": "Ada",
-      "text": "I have attached the file as discussed, and I would like to clarify the deadline with you.",
+      "text": "I have attached the file as discussed.",
       "glossYue": "我已經按討論附上份文件，想同你講清楚個期限。",
       "audio": "assets/audio/lines/w2-l3.mp3",
       "audioSlow": "assets/audio/lines/w2-l3-slow.mp3",
-      "say": "I have attached the file as discussed, and I would like to clarify the deadline with you.",
+      "say": "I have attached the file as discussed.",
       "hideGloss": true
     },
     {
@@ -73,11 +73,11 @@
       "id": "w2-l5",
       "speaker": "ada",
       "speakerLabel": "Ada",
-      "text": "I propose Friday for the new deadline, and I can confirm the time once you are available.",
+      "text": "I propose Friday for the new deadline.",
       "glossYue": "我提議星期五做新期限，你有空我就確認時間。",
       "audio": "assets/audio/lines/w2-l5.mp3",
       "audioSlow": "assets/audio/lines/w2-l5-slow.mp3",
-      "say": "I propose Friday for the new deadline, and I can confirm the time once you are available.",
+      "say": "I propose Friday for the new deadline.",
       "hideGloss": false
     },
     {
@@ -160,7 +160,7 @@
     },
     {
       "pattern": "I have ___ the file as discussed, and I would like to clarify the deadline with you.",
-      "example": "I have attached the file as discussed, and I would like to clarify the deadline with you.",
+      "example": "I have attached the file as discussed.",
       "glossYue": "我已經⋯⋯份文件。",
       "answer": "attached",
       "choices": [
@@ -171,7 +171,7 @@
     },
     {
       "pattern": "I ___ Friday for the new deadline, and I can confirm the time once you are available.",
-      "example": "I propose Friday for the new deadline, and I can confirm the time once you are available.",
+      "example": "I propose Friday for the new deadline.",
       "glossYue": "我⋯⋯星期五。",
       "answer": "propose",
       "choices": [
@@ -194,14 +194,14 @@
   ],
   "shadow": {
     "lineId": "w2-l5",
-    "hint": "I propose Friday for the new deadline, and I can confirm the time once you are available."
+    "hint": "I propose Friday for the new deadline."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "對方等你跟進。你點先講？",
       "choices": [
-        "I have attached the file as discussed, and I would like to clarify the deadline with you.",
+        "I have attached the file as discussed.",
         "You might also like this matching pair.",
         "The necklace is eighteen dollars."
       ],
@@ -239,7 +239,7 @@
         "line": "Thank you for following up, and I am grateful that you have attached the notes as discussed.",
         "audio": "assets/audio/lines/w2-l2.mp3",
         "audioSlow": "assets/audio/lines/w2-l2-slow.mp3",
-        "expect": "I have attached the file as discussed, and I would like to clarify the deadline with you.",
+        "expect": "I have attached the file as discussed.",
         "keywords": [
           "attached",
           "clarify"
@@ -253,7 +253,7 @@
         "line": "Could you please clarify the deadline, and would it be possible to confirm a new time soon?",
         "audio": "assets/audio/lines/w2-l4.mp3",
         "audioSlow": "assets/audio/lines/w2-l4-slow.mp3",
-        "expect": "I propose Friday for the new deadline, and I can confirm the time once you are available.",
+        "expect": "I propose Friday for the new deadline.",
         "keywords": [
           "propose",
           "confirm"

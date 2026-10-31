@@ -33,11 +33,11 @@
       "id": "j12-l1",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Good morning, you are calling the jewellery shop, and I can see our stock on the shelf.",
+      "text": "Good morning, you are calling the jewellery shop.",
       "glossYue": "早晨。你打嚟珠寶舖，我可以睇吓架上嘅存貨。",
       "audio": "assets/audio/lines/j12-l1.mp3",
       "audioSlow": "assets/audio/lines/j12-l1-slow.mp3",
-      "say": "Good morning, you are calling the jewellery shop, and I can see our stock on the shelf.",
+      "say": "Good morning, you are calling the jewellery shop.",
       "hideGloss": false
     },
     {
@@ -55,11 +55,11 @@
       "id": "j12-l3",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "I will describe the gold piece, and I can hold it here until you collect it tomorrow.",
+      "text": "I will describe the gold piece.",
       "glossYue": "我會描述呢件金飾，你可以聽日嚟取，我可以喺度留住。",
       "audio": "assets/audio/lines/j12-l3.mp3",
       "audioSlow": "assets/audio/lines/j12-l3-slow.mp3",
-      "say": "I will describe the gold piece, and I can hold it here until you collect it tomorrow.",
+      "say": "I will describe the gold piece.",
       "hideGloss": true
     },
     {
@@ -77,11 +77,11 @@
       "id": "j12-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm.",
+      "text": "I have called to ask about stock.",
       "glossYue": "我打嚟問存貨，你確認之後我聽日嚟取條手鏈。",
       "audio": "assets/audio/lines/j12-l5.mp3",
       "audioSlow": "assets/audio/lines/j12-l5-slow.mp3",
-      "say": "I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm.",
+      "say": "I have called to ask about stock.",
       "hideGloss": false
     },
     {
@@ -187,7 +187,7 @@
   ],
   "shadow": {
     "lineId": "j12-l5",
-    "hint": "I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm."
+    "hint": "I have called to ask about stock."
   },
   "build": [
     {
@@ -227,7 +227,7 @@
       {
         "partner": "Kai",
         "partnerId": "kai",
-        "line": "Good morning, you are calling the jewellery shop, and I can see our stock on the shelf.",
+        "line": "Good morning, you are calling the jewellery shop.",
         "audio": "assets/audio/lines/j12-l1.mp3",
         "audioSlow": "assets/audio/lines/j12-l1-slow.mp3",
         "expect": "Have you kept a similar gold bracelet in stock, and is one still available to reserve today?",
@@ -241,7 +241,7 @@
       {
         "partner": "Kai",
         "partnerId": "kai",
-        "line": "I will describe the gold piece, and I can hold it here until you collect it tomorrow.",
+        "line": "I will describe the gold piece.",
         "audio": "assets/audio/lines/j12-l3.mp3",
         "audioSlow": "assets/audio/lines/j12-l3-slow.mp3",
         "expect": "Please text me when it's ready, and then please confirm the opening hours at your location.",
@@ -303,7 +303,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm.」，collect 係咩意思？",
+      "prompt": "客人講「I have called to ask about stock.」，collect 係咩意思？",
       "choices": [
         "取貨",
         "預留",

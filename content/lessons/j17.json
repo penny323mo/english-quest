@@ -67,11 +67,11 @@
       "id": "j17-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Saltwater pearls have a brighter lustre, so they cost more. Freshwater pearls are softer and much cheaper.",
+      "text": "Saltwater pearls have a brighter lustre.",
       "glossYue": "鹹水珍珠光澤更亮，所以貴啲。淡水珍珠軟啲，又平好多。",
       "audio": "assets/audio/lines/j17-l2.mp3",
       "audioSlow": "assets/audio/lines/j17-l2-slow.mp3",
-      "say": "Saltwater pearls have a brighter lustre, so they cost more. Freshwater pearls are softer and much cheaper.",
+      "say": "Saltwater pearls have a brighter lustre.",
       "hideGloss": false
     },
     {
@@ -111,11 +111,11 @@
       "id": "j17-l6",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Put perfume on before you wear it, and wipe the pearl with a soft dry cloth afterwards.",
-      "glossYue": "戴之前先噴香水，之後用乾軟布抹乾珍珠。",
+      "text": "Wipe the pearl, then put perfume on.",
+      "glossYue": "先抹乾珍珠，再搽香水。",
       "audio": "assets/audio/lines/j17-l6.mp3",
       "audioSlow": "assets/audio/lines/j17-l6-slow.mp3",
-      "say": "Put perfume on before you wear it, and wipe the pearl with a soft dry cloth afterwards.",
+      "say": "Wipe the pearl, then put perfume on.",
       "hideGloss": false
     },
     {
@@ -163,7 +163,7 @@
       "explain": "price 係價錢。lustre 係光澤。"
     },
     {
-      "prompt": "Put perfume on before you wear it, and wipe the pearl with a soft dry cloth afterwards. 呢句即係點？",
+      "prompt": "Wipe the pearl, then put perfume on. 呢句即係點？",
       "choices": [
         "戴完先噴香水",
         "證書寫價錢",
@@ -198,7 +198,7 @@
     },
     {
       "pattern": "Put ___ on before you wear it, and wipe the pearl with a soft dry cloth afterwards.",
-      "example": "Put perfume on before you wear it, and wipe the pearl with a soft dry cloth afterwards.",
+      "example": "Wipe the pearl, then put perfume on.",
       "glossYue": "戴之前噴香水。",
       "answer": "perfume",
       "choices": [
@@ -240,7 +240,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "Saltwater pearls have a brighter lustre, so they cost more. Freshwater pearls are softer and much cheaper.",
+        "line": "Saltwater pearls have a brighter lustre.",
         "audio": "assets/audio/lines/j17-l2.mp3",
         "audioSlow": "assets/audio/lines/j17-l2-slow.mp3",
         "expect": "What's the usual price range roughly for these softer freshwater pearls on one short strand please?",
@@ -267,7 +267,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "Put perfume on before you wear it, and wipe the pearl with a soft dry cloth afterwards.",
+        "line": "Wipe the pearl, then put perfume on.",
         "audio": "assets/audio/lines/j17-l6.mp3",
         "audioSlow": "assets/audio/lines/j17-l6-slow.mp3",
         "expect": "Does this shorter strand come with a printed certificate kept inside one small gift box too?",

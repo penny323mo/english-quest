@@ -323,17 +323,17 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Do I need to declare these gifts if they are under the limit? 呢句入面，邊個意思先啱？",
       "choices": [
+        "海關",
         "禮物",
-        "酒精",
-        "海關"
+        "酒精"
       ],
       "answer": 1
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Can I pay the duty at this counter before I leave, please? 呢句入面，邊個意思先啱？",
       "choices": [
         "酒精",
         "海關",
@@ -343,7 +343,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "Can I pay the ___ at this counter before I leave, please? 呢句入面，邊個字先啱？",
       "choices": [
         "duty",
         "alcohol",

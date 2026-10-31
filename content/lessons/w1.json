@@ -36,88 +36,88 @@
       "id": "w1-l1",
       "speaker": "nia",
       "speakerLabel": "Nia",
-      "text": "Good morning, this is Nia calling from the harbor office, and how may I help?",
+      "text": "Good morning, is Nia calling from harbor office, and how may I help?",
       "glossYue": "早晨，我係海港辦事處嘅 Nia 打嚟，有咩可以幫你？",
       "audio": "assets/audio/lines/w1-l1.mp3",
       "audioSlow": "assets/audio/lines/w1-l1-slow.mp3",
-      "say": "Good morning, this is Nia calling from the harbor office, and how may I help?",
+      "say": "Good morning, is Nia calling from harbor office, and how may I help?",
       "hideGloss": false
     },
     {
       "id": "w1-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could I speak to Mei regarding the appointment, and may I ask if she is available?",
+      "text": "I speak to Mei regarding appointment, and may I ask if she is available?",
       "glossYue": "可唔可以同 Mei 講關於個預約，順便問吓佢有冇空？",
       "audio": "assets/audio/lines/w1-l2.mp3",
       "audioSlow": "assets/audio/lines/w1-l2-slow.mp3",
-      "say": "Could I speak to Mei regarding the appointment, and may I ask if she is available?",
+      "say": "I speak to Mei regarding appointment, and may I ask if she is available?",
       "hideGloss": true
     },
     {
       "id": "w1-l3",
       "speaker": "nia",
       "speakerLabel": "Nia",
-      "text": "She is not available right now, so please hold and I will try the other line.",
+      "text": "She is not available right now, so hold and I will try other line.",
       "glossYue": "佢而家冇空，唔該等陣，我試吓另一條線。",
       "audio": "assets/audio/lines/w1-l3.mp3",
       "audioSlow": "assets/audio/lines/w1-l3-slow.mp3",
-      "say": "She is not available right now, so please hold and I will try the other line.",
+      "say": "She is not available right now, so hold and I will try other line.",
       "hideGloss": false
     },
     {
       "id": "w1-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Please take a message, and ask her to return my call when it is convenient.",
+      "text": "take message, and ask her to return my call when it is convenient.",
       "glossYue": "唔該幫我留個言，方便嘅時候叫佢覆我電話。",
       "audio": "assets/audio/lines/w1-l4.mp3",
       "audioSlow": "assets/audio/lines/w1-l4-slow.mp3",
-      "say": "Please take a message, and ask her to return my call when it is convenient.",
+      "say": "take message, and ask her to return my call when it is convenient.",
       "hideGloss": true
     },
     {
       "id": "w1-l5",
       "speaker": "nia",
       "speakerLabel": "Nia",
-      "text": "I will transfer you if the line is free, or I can note the callback number.",
+      "text": "I will transfer you if line is free, or I can note callback number.",
       "glossYue": "如果線路得閒我會轉駁，或者我記低覆電號碼。",
       "audio": "assets/audio/lines/w1-l5.mp3",
       "audioSlow": "assets/audio/lines/w1-l5-slow.mp3",
-      "say": "I will transfer you if the line is free, or I can note the callback number.",
+      "say": "I will transfer you if line is free, or I can note callback number.",
       "hideGloss": true
     },
     {
       "id": "w1-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could you say the spelling slowly, and read the extension back to me?",
+      "text": "Could you say spelling slowly, and read extension back to me?",
       "glossYue": "可唔可以慢慢講個串法，再將內線讀返畀我？",
       "audio": "assets/audio/lines/w1-l6.mp3",
       "audioSlow": "assets/audio/lines/w1-l6-slow.mp3",
-      "say": "Could you say the spelling slowly, and read the extension back to me?",
+      "say": "Could you say spelling slowly, and read extension back to me?",
       "hideGloss": true
     },
     {
       "id": "w1-l7",
       "speaker": "nia",
       "speakerLabel": "Nia",
-      "text": "The spelling is M E I clearly, and the extension is four two.",
+      "text": "spelling is M E I clearly.",
       "glossYue": "字母係 M E I，清楚啲，分機係四二。",
       "audio": "assets/audio/lines/w1-l7.mp3",
       "audioSlow": "assets/audio/lines/w1-l7-slow.mp3",
-      "say": "The spelling is M E I clearly, and the extension is four two.",
+      "say": "spelling is M E I clearly.",
       "hideGloss": false
     },
     {
       "id": "w1-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Thank you for the message, and a callback this afternoon would be convenient.",
+      "text": "Thank you for message, and callback afternoon would be convenient.",
       "glossYue": "多謝你幫我留言，今日下晝覆電會方便。",
       "audio": "assets/audio/lines/w1-l8.mp3",
       "audioSlow": "assets/audio/lines/w1-l8-slow.mp3",
-      "say": "Thank you for the message, and a callback this afternoon would be convenient.",
+      "say": "Thank you for message, and callback afternoon would be convenient.",
       "hideGloss": true
     }
   ],
@@ -189,7 +189,7 @@
     },
     {
       "pattern": "Could you say the ___ slowly, and read the extension back to me?",
-      "example": "Could you say the spelling slowly, and read the extension back to me?",
+      "example": "Could you say spelling slowly, and read extension back to me?",
       "glossYue": "可唔可以慢慢講個⋯⋯，再將內線讀返？",
       "answer": "spelling",
       "choices": [
@@ -201,7 +201,7 @@
   ],
   "shadow": {
     "lineId": "w1-l2",
-    "hint": "Could I speak to Mei regarding the appointment, and may I ask if she is available?"
+    "hint": "I speak to Mei regarding appointment, and may I ask if she is available?"
   },
   "build": [
     {
@@ -241,10 +241,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Could I speak to Mei regarding the appointment, and may I ask if she is available?",
+        "line": "I speak to Mei regarding appointment, and may I ask if she is available?",
         "audio": "assets/audio/lines/w1-l2.mp3",
         "audioSlow": "assets/audio/lines/w1-l2-slow.mp3",
-        "expect": "She is not available right now, so please hold and I will try the other line.",
+        "expect": "She is not available right now, so hold and I will try other line.",
         "keywords": [
           "hold",
           "line"
@@ -255,10 +255,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Please take a message, and ask her to return my call when it is convenient.",
+        "line": "take message, and ask her to return my call when it is convenient.",
         "audio": "assets/audio/lines/w1-l4.mp3",
         "audioSlow": "assets/audio/lines/w1-l4-slow.mp3",
-        "expect": "I will transfer you if the line is free, or I can note the callback number.",
+        "expect": "I will transfer you if line is free, or I can note callback number.",
         "keywords": [
           "transfer",
           "callback"
@@ -269,10 +269,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Could you say the spelling slowly, and read the extension back to me?",
+        "line": "Could you say spelling slowly, and read extension back to me?",
         "audio": "assets/audio/lines/w1-l6.mp3",
         "audioSlow": "assets/audio/lines/w1-l6-slow.mp3",
-        "expect": "The spelling is M E I clearly, and the extension is four two.",
+        "expect": "spelling is M E I clearly.",
         "keywords": [
           "spelling",
           "extension"
@@ -307,7 +307,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「She is not available right now, so please hold and I will try the other line.」，係咩意思？",
+      "prompt": "客人講「She is not available right now, so hold and I will try other line.」，係咩意思？",
       "choices": [
         "等線",
         "添水",
@@ -318,7 +318,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I will transfer you if the line is free, or I can note the callback number.」，係咩意思？",
+      "prompt": "客人講「I will transfer you if line is free, or I can note callback number.」，係咩意思？",
       "choices": [
         "而家收線",
         "轉駁去另一個人",

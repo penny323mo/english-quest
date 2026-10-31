@@ -128,11 +128,11 @@
       "id": "r16-l8",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Yes. Rice on the side takes about fifteen minutes from the kitchen.",
-      "glossYue": "可以。加碟白飯大概十五分鐘，廚房而家出。",
+      "text": "Rice on the side takes about fifteen minutes from the kitchen.",
+      "glossYue": "加碟白飯大概十五分鐘，廚房而家出。",
       "audio": "assets/audio/lines/r16-l8.mp3",
       "audioSlow": "assets/audio/lines/r16-l8-slow.mp3",
-      "say": "Yes. Rice on the side takes about fifteen minutes from the kitchen.",
+      "say": "Rice on the side takes about fifteen minutes from the kitchen.",
       "hideGloss": true
     }
   ],
@@ -241,7 +241,7 @@
     },
     {
       "pattern": "Yes. Rice on the side takes about fifteen minutes from the ___.",
-      "example": "Yes. Rice on the side takes about fifteen minutes from the kitchen.",
+      "example": "Rice on the side takes about fifteen minutes from the kitchen.",
       "glossYue": "可以。加碟白飯大概十五分鐘，廚房而家出。",
       "answer": "kitchen",
       "choices": [

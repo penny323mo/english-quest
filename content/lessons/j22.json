@@ -20,7 +20,7 @@
   ],
   "topicTags": [
     "急單",
-    "刻字樣式",
+    "刻字",
     "校對稿",
     "婚禮"
   ],
@@ -189,17 +189,17 @@
       "prompt": "Could you rush the lettering on this gold bracelet before Saturday morning? 呢句即係點？",
       "choices": [
         "急單",
-        "刻字樣式",
+        "刻字",
         "校對稿"
       ],
       "answer": 1,
-      "explain": "刻字樣式。"
+      "explain": "刻字。"
     },
     {
       "prompt": "I will email that proof this evening, before the cut. 呢句即係點？",
       "choices": [
         "校對稿",
-        "刻字樣式",
+        "刻字",
         "婚禮"
       ],
       "answer": 0,
@@ -209,7 +209,7 @@
       "prompt": "The wedding can stay on Saturday, and the work finishes Friday. 呢句即係點？",
       "choices": [
         "急單",
-        "刻字樣式",
+        "刻字",
         "婚禮"
       ],
       "answer": 2,

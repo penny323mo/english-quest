@@ -108,11 +108,11 @@
       "id": "j9-l8",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "I will write the complaint clearly, and you will have an update before the shop closes tonight.",
-      "glossYue": "我會寫清楚投訴，舖頭今晚收之前話你知進展。",
+      "text": "I'll write that complaint clearly because it failed.",
+      "glossYue": "我會寫清楚嗰個投訴，因為佢壞咗。",
       "audio": "assets/audio/lines/j9-l8.mp3",
       "audioSlow": "assets/audio/lines/j9-l8-slow.mp3",
-      "say": "I will write the complaint clearly, and you will have an update before the shop closes tonight.",
+      "say": "I'll write that complaint clearly because it failed.",
       "hideGloss": true
     }
   ],
@@ -304,7 +304,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I will write the complaint clearly, and you will have an update before the shop closes tonight.」，係咩意思？",
+      "prompt": "客人講「I'll write that complaint clearly because it failed.」，係咩意思？",
       "choices": [
         "收據",
         "換貨",

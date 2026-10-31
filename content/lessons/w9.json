@@ -304,7 +304,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Hi Nina. I'd like to take annual leave next week, Monday to Friday. 呢句入面，邊個意思先啱？",
       "choices": [
         "年假",
         "交接",
@@ -314,7 +314,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Good. Please send me a handover note before you go. 呢句入面，邊個意思先啱？",
       "choices": [
         "批核",
         "交接",
@@ -324,11 +324,11 @@
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "OK, I've ___ it. Enjoy your break. 呢句入面，邊個字先啱？",
       "choices": [
         "annual leave",
         "handover",
-        "approve"
+        "approved"
       ],
       "answer": 2,
       "explain": "年假。"

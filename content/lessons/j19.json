@@ -323,30 +323,30 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Can you explain this diamond certificate in plain words, please? 呢句入面，邊個意思先啱？",
       "choices": [
         "鑽石",
-        "證書",
-        "切工"
+        "切工",
+        "顏色"
       ],
       "answer": 0
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Can you explain this diamond certificate in plain words, please? 呢句入面，邊個意思先啱？",
       "choices": [
-        "鑽石",
         "切工",
+        "顏色",
         "證書"
       ],
       "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "Sure. The cut, ___, and clarity are all very good. 呢句入面，邊個字先啱？",
       "choices": [
         "certificate",
-        "color",
+        "colour",
         "diamond"
       ],
       "answer": 1,

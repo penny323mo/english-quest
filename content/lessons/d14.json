@@ -318,7 +318,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "This corner of the box looks damaged. Can you note the damage? 呢句入面，邊個意思先啱？",
       "choices": [
         "簽名",
         "包裹",
@@ -328,21 +328,21 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which meaning fits the line you just studied?",
+      "prompt": "Yes. I will note that damage, and the box is split. 呢句入面，邊個意思先啱？",
       "choices": [
+        "簽名",
         "損壞",
-        "紙箱",
-        "簽名"
+        "紙箱"
       ],
       "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "Which word fits this lesson?",
+      "prompt": "This corner of the box looks damaged. Can you note the ___? 呢句入面，邊個字先啱？",
       "choices": [
         "damage",
-        "box",
-        "sign"
+        "sign",
+        "towel"
       ],
       "answer": 0,
       "explain": "損壞。"

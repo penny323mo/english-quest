@@ -62,11 +62,11 @@
       "id": "w13-l2",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Yes. The design draft is halfway done for Wednesday's client review.",
-      "glossYue": "可以。設計草稿做咗一半，星期三會做客戶審核。",
+      "text": "The design draft is halfway done for Wednesday's client review.",
+      "glossYue": "設計草稿做咗一半，星期三會做客戶審核。",
       "audio": "assets/audio/lines/w13-l2.mp3",
       "audioSlow": "assets/audio/lines/w13-l2-slow.mp3",
-      "say": "Yes. The design draft is halfway done for Wednesday's client review.",
+      "say": "The design draft is halfway done for Wednesday's client review.",
       "hideGloss": false
     },
     {
@@ -74,7 +74,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "What blocker is holding the logo file back for that review?",
-      "glossYue": "邊個阻礙拖住個標誌檔，影響嗰次審核？",
+      "glossYue": "咩阻礙拖住個標誌檔，影響嗰次審核？",
       "audio": "assets/audio/lines/w13-l3.mp3",
       "audioSlow": "assets/audio/lines/w13-l3-slow.mp3",
       "say": "What blocker is holding the logo file back for that review?",
@@ -143,7 +143,7 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "Yes. The design draft is halfway done for Wednesday's client review.",
+        "line": "The design draft is halfway done for Wednesday's client review.",
         "audio": "assets/audio/lines/w13-l2.mp3",
         "audioSlow": "assets/audio/lines/w13-l2-slow.mp3",
         "expect": "What blocker is holding the logo file back for that review?",
@@ -231,7 +231,7 @@
     {
       "pattern": "What ___ is holding the logo file back for that review?",
       "example": "What blocker is holding the logo file back for that review?",
-      "glossYue": "邊個阻礙拖住個標誌檔，影響嗰次審核？",
+      "glossYue": "咩阻礙拖住個標誌檔，影響嗰次審核？",
       "answer": "blocker",
       "choices": [
         "blocker",

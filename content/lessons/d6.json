@@ -52,11 +52,11 @@
       "id": "d6-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The only extra symptom is a drug allergy, and this bad cough is exactly why I walked in here, Mei.",
+      "text": "The only extra symptom is a drug allergy.",
       "glossYue": "另外就係藥物過敏，我係因為呢陣咳先入嚟搵你，Mei。",
       "audio": "assets/audio/lines/d6-l3.mp3",
       "audioSlow": "assets/audio/lines/d6-l3-slow.mp3",
-      "say": "The only extra symptom is a drug allergy, and this bad cough is exactly why I walked in here, Mei.",
+      "say": "The only extra symptom is a drug allergy.",
       "hideGloss": false
     },
     {
@@ -137,7 +137,7 @@
       "explain": "dosage 係劑量。twice a day 係一日兩次。"
     },
     {
-      "prompt": "The only extra symptom is a drug allergy, and this bad cough is exactly why I walked in here, Mei. 呢句即係點？",
+      "prompt": "The only extra symptom is a drug allergy. 呢句即係點？",
       "choices": [
         "藥劑師話我唔使處方",
         "我有藥物過敏，所以先入藥房",
@@ -191,7 +191,7 @@
       "type": "choice",
       "promptYue": "你有藥物過敏。你點講？",
       "choices": [
-        "The only extra symptom is a drug allergy, and this bad cough is exactly why I walked in here, Mei.",
+        "The only extra symptom is a drug allergy.",
         "The dosage is one small tablet twice a day for five days.",
         "Yes, after meals is safer, and this box needs no prescription."
       ],
@@ -227,7 +227,7 @@
         "line": "What symptom can I note for the pharmacist before we choose a box?",
         "audio": "assets/audio/lines/d6-l2.mp3",
         "audioSlow": "assets/audio/lines/d6-l2-slow.mp3",
-        "expect": "The only extra symptom is a drug allergy, and this bad cough is exactly why I walked in here, Mei.",
+        "expect": "The only extra symptom is a drug allergy.",
         "keywords": [
           "allergy",
           "cough"

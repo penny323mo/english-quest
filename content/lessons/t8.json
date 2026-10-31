@@ -66,33 +66,33 @@
       "id": "t8-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "This trip is not for leisure, and my homeward pass shows the fifth day of the stay.",
+      "text": "This trip is not for leisure.",
       "glossYue": "呢趟唔係休閒，返程嗰張證顯示住到第五日。",
       "audio": "assets/audio/lines/t8-l4.mp3",
       "audioSlow": "assets/audio/lines/t8-l4-slow.mp3",
-      "say": "This trip is not for leisure, and my homeward pass shows the fifth day of the stay.",
+      "say": "This trip is not for leisure.",
       "hideGloss": true
     },
     {
       "id": "t8-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I declare these goods at the desk, and this small gift is for a friend at home.",
+      "text": "I declare these goods at the desk.",
       "glossYue": "我喺櫃檯申報呢啲貨物，呢份細禮物係送畀屋企朋友。",
       "audio": "assets/audio/lines/t8-l5.mp3",
       "audioSlow": "assets/audio/lines/t8-l5-slow.mp3",
-      "say": "I declare these goods at the desk, and this small gift is for a friend at home.",
+      "say": "I declare these goods at the desk.",
       "hideGloss": false
     },
     {
       "id": "t8-l6",
       "speaker": "pat",
       "speakerLabel": "Pat",
-      "text": "Please complete this short form for me here, and tell me if you have nothing to declare.",
+      "text": "Please complete this short form for me here.",
       "glossYue": "請你喺度填好呢張短表格，再話我知你係咪冇嘢申報。",
       "audio": "assets/audio/lines/t8-l6.mp3",
       "audioSlow": "assets/audio/lines/t8-l6-slow.mp3",
-      "say": "Please complete this short form for me here, and tell me if you have nothing to declare.",
+      "say": "Please complete this short form for me here.",
       "hideGloss": true
     },
     {
@@ -164,7 +164,7 @@
     },
     {
       "pattern": "I ___ these goods at the desk, and this small gift is for a friend at home.",
-      "example": "I declare these goods at the desk, and this small gift is for a friend at home.",
+      "example": "I declare these goods at the desk.",
       "glossYue": "我⋯⋯呢啲貨物。",
       "answer": "declare",
       "choices": [
@@ -187,7 +187,7 @@
   ],
   "shadow": {
     "lineId": "t8-l5",
-    "hint": "I declare these goods at the desk, and this small gift is for a friend at home."
+    "hint": "I declare these goods at the desk."
   },
   "build": [
     {
@@ -244,7 +244,7 @@
         "line": "Are you here for business as well, and do you have a return ticket in your bag?",
         "audio": "assets/audio/lines/t8-l3.mp3",
         "audioSlow": "assets/audio/lines/t8-l3-slow.mp3",
-        "expect": "This trip is not for leisure, and my homeward pass shows the fifth day of the stay.",
+        "expect": "This trip is not for leisure.",
         "keywords": [
           "business",
           "ticket"
@@ -255,7 +255,7 @@
       {
         "partner": "Pat",
         "partnerId": "pat",
-        "line": "Please complete this short form for me here, and tell me if you have nothing to declare.",
+        "line": "Please complete this short form for me here.",
         "audio": "assets/audio/lines/t8-l6.mp3",
         "audioSlow": "assets/audio/lines/t8-l6-slow.mp3",
         "expect": "I have nothing to report apart from this small present, and the items are for personal use.",
@@ -303,7 +303,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I declare these goods at the desk, and this small gift is for a friend at home.」，gift 係咩意思？",
+      "prompt": "客人講「I declare these goods at the desk.」，gift 係咩意思？",
       "choices": [
         "貨物",
         "表格",

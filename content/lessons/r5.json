@@ -34,88 +34,88 @@
       "id": "r5-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could we have the bill now, and shall we split it or pay together tonight?",
+      "text": "Could we have the bill now, and shall we split it tonight?",
       "glossYue": "可唔可以而家埋單，今晚分單定係一齊付？",
       "audio": "assets/audio/lines/r5-l1.mp3",
       "audioSlow": "assets/audio/lines/r5-l1-slow.mp3",
-      "say": "Could we have the bill now, and shall we split it or pay together tonight?",
+      "say": "Could we have the bill now, and shall we split it tonight?",
       "hideGloss": false
     },
     {
       "id": "r5-l2",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "We can divide it into two separate checks, or you can pay jointly on one tab.",
-      "glossYue": "我哋可以分開兩張單，或者一齊畀一張單。",
+      "text": "We can split it into two checks, or you can pay together.",
+      "glossYue": "我哋可以分開兩張單，或者一齊畀。",
       "audio": "assets/audio/lines/r5-l2.mp3",
       "audioSlow": "assets/audio/lines/r5-l2-slow.mp3",
-      "say": "We can divide it into two separate checks, or you can pay jointly on one tab.",
+      "say": "We can split it into two checks, or you can pay together.",
       "hideGloss": true
     },
     {
       "id": "r5-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Please bring the card machine here, and I will pay this check by card.",
-      "glossYue": "唔該攞卡機過嚟呢度，我會用卡付呢張單。",
+      "text": "Please bring the card machine, and I will pay this check.",
+      "glossYue": "唔該攞卡機過嚟，我會用卡付呢張單。",
       "audio": "assets/audio/lines/r5-l3.mp3",
       "audioSlow": "assets/audio/lines/r5-l3-slow.mp3",
-      "say": "Please bring the card machine here, and I will pay this check by card.",
+      "say": "Please bring the card machine, and I will pay this check.",
       "hideGloss": false
     },
     {
       "id": "r5-l4",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "The card machine is here now, and your receipt will include the service charge.",
-      "glossYue": "卡機而家喺度，收據會包括服務費。",
+      "text": "The card machine is here, and the receipt includes the service charge.",
+      "glossYue": "卡機喺度，收據會包括服務費。",
       "audio": "assets/audio/lines/r5-l4.mp3",
       "audioSlow": "assets/audio/lines/r5-l4-slow.mp3",
-      "say": "The card machine is here now, and your receipt will include the service charge.",
+      "say": "The card machine is here, and the receipt includes the service charge.",
       "hideGloss": true
     },
     {
       "id": "r5-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The service was kind indeed, so I will add a tip and you can keep the change.",
-      "glossYue": "服務真係好好，我會加貼士，零錢你留低就得。",
+      "text": "The service was kind, so I will add a tip and you can keep the change.",
+      "glossYue": "服務真係好好，我會加貼士，零錢留低當貼士。",
       "audio": "assets/audio/lines/r5-l5.mp3",
       "audioSlow": "assets/audio/lines/r5-l5-slow.mp3",
-      "say": "The service was kind indeed, so I will add a tip and you can keep the change.",
+      "say": "The service was kind, so I will add a tip and you can keep the change.",
       "hideGloss": true
     },
     {
       "id": "r5-l6",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Thank you, and the total does contain the staff fee before that extra tip.",
-      "glossYue": "多謝，總數已經包咗職員費，先至加小費。",
+      "text": "Thank you. The service charge comes before that extra tip.",
+      "glossYue": "多謝。服務費計喺額外貼士之前。",
       "audio": "assets/audio/lines/r5-l6.mp3",
       "audioSlow": "assets/audio/lines/r5-l6-slow.mp3",
-      "say": "Thank you, and the total does contain the staff fee before that extra tip.",
+      "say": "Thank you. The service charge comes before that extra tip.",
       "hideGloss": false
     },
     {
       "id": "r5-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could we also get the cake as a takeaway before we leave the restaurant later?",
-      "glossYue": "遲啲走之前可唔可以將蛋糕打包外賣？",
+      "text": "Could we get the cake as a takeaway before we leave?",
+      "glossYue": "走之前可唔可以將蛋糕打包外賣？",
       "audio": "assets/audio/lines/r5-l7.mp3",
       "audioSlow": "assets/audio/lines/r5-l7-slow.mp3",
-      "say": "Could we also get the cake as a takeaway before we leave the restaurant later?",
+      "say": "Could we get the cake as a takeaway before we leave?",
       "hideGloss": true
     },
     {
       "id": "r5-l8",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Here is your takeaway box of cake, and thank you again for coming in.",
-      "glossYue": "外賣盒而家喺度，多謝你哋今晚嚟。",
+      "text": "Here is your takeaway cake, and thank you for coming in.",
+      "glossYue": "外賣蛋糕喺度，多謝你哋嚟。",
       "audio": "assets/audio/lines/r5-l8.mp3",
       "audioSlow": "assets/audio/lines/r5-l8-slow.mp3",
-      "say": "Here is your takeaway box of cake, and thank you again for coming in.",
+      "say": "Here is your takeaway cake, and thank you for coming in.",
       "hideGloss": true
     }
   ],
@@ -199,7 +199,7 @@
   ],
   "shadow": {
     "lineId": "r5-l1",
-    "hint": "Could we have the bill now, and shall we split it or pay together tonight?"
+    "hint": "Could we have the bill now, and shall we split it tonight?"
   },
   "build": [
     {
@@ -239,10 +239,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Could we have the bill now, and shall we split it or pay together tonight?",
+        "line": "Could we have the bill now, and shall we split it tonight?",
         "audio": "assets/audio/lines/r5-l1.mp3",
         "audioSlow": "assets/audio/lines/r5-l1-slow.mp3",
-        "expect": "We can divide it into two separate checks, or you can pay jointly on one tab.",
+        "expect": "We can split it into two checks, or you can pay together.",
         "keywords": [
           "split",
           "together"
@@ -253,10 +253,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Please bring the card machine here, and I will pay this check by card.",
+        "line": "Please bring the card machine, and I will pay this check.",
         "audio": "assets/audio/lines/r5-l3.mp3",
         "audioSlow": "assets/audio/lines/r5-l3-slow.mp3",
-        "expect": "The card machine is here now, and your receipt will include the service charge.",
+        "expect": "The card machine is here, and the receipt includes the service charge.",
         "keywords": [
           "machine",
           "receipt"
@@ -267,10 +267,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "The service was kind indeed, so I will add a tip and you can keep the change.",
+        "line": "The service was kind, so I will add a tip and you can keep the change.",
         "audio": "assets/audio/lines/r5-l5.mp3",
         "audioSlow": "assets/audio/lines/r5-l5-slow.mp3",
-        "expect": "Thank you, and the total does contain the staff fee before that extra tip.",
+        "expect": "Thank you. The service charge comes before that extra tip.",
         "keywords": [
           "include",
           "tip"
@@ -305,7 +305,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Thank you, and the total does contain the staff fee before that extra tip.」，係咩意思？",
+      "prompt": "客人講「Thank you. The service charge comes before that extra tip.」，係咩意思？",
       "choices": [
         "餐巾",
         "服務費",
@@ -316,7 +316,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The service was kind indeed, so I will add a tip and you can keep the change.」，係咩意思？",
+      "prompt": "客人講「The service was kind, so I will add a tip and you can keep the change.」，係咩意思？",
       "choices": [
         "即刻找返",
         "留低當貼士",
