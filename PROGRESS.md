@@ -1,7 +1,7 @@
 # English Quest loop progress
 
 last_reported_round: 42
-last_audited_round: 42
+last_audited_round: 43
 
 phase: 4
 phase2_rounds: 11-16
@@ -155,3 +155,6 @@ Every round's review MUST audit difficulty progression along the Path: lessons o
 - 2026-10-31 15:02: fix-43 (R14 J19 T16 + r41/r42 audit) in progress in grokcoder-pane (~33 min since 14:29, agent thinking, 16 paths changed uncommitted, style-gap not staged). Orchestrator pid 1213336 alive, heartbeat fresh, live 200 (= round 42, c611010). No new round finished; nothing reported. last_reported_round: 42 (next Duet report after round 45). Nightly panes untouched.
 
 - 2026-10-31 15:38: fix-43 (R14 J19 T16 + r41/r42 audit) still in progress in grokcoder-pane (~68 min total; attempt 1 timed out 15:14, attempt 2 queued; agent compacting context after Piper audio + lesson/art edits, ~321 paths changed uncommitted, style-gap not staged). Orchestrator pid 1213336 alive, heartbeat fresh, live 200 (= round 42, c611010 / index-Bfqq9COT.js). No new round finished; nothing reported. last_reported_round: 42 (next Duet report after round 45). Nightly panes untouched.
+
+- 2026-10-31 16:12: Round 43 (R14 J19 T16 + r41/r42 audit fixes, 523de42; live now also carries review-44 c38914e / index-Y_7y8cAP.js) live 200. Coder live audit review/loop-r43 (local only): path + R14/J19/T16/D12/T15/W11/R12/W10/T14/J18/R13/D11 walked at 390px with real taps, 22 steps each, 0 errors/HTTP errors, sw 390; path 78/78, CEFR non-decreasing; LH mobile 100x4; 20 lexicon audio 200, 17 CMU-exact + 3 phrases. Scores Art6 UI8 Lex8 Pron8 Ped7 Speak8 SRS9 Flow9 Perf10 Audio9 Durability9 CI8. CLOSED #93 #94 #103 #104 #105 #110 #111-dialogue #112 #92 #116-dialogue #117 #118-dialogue #113 #115 #122 #120 #119-chibi #96. Still open #102 (54/78 <34.3 incl R14/T16/D12), #121 sat-test scale, #95 R14 cold first paint, #114 R13 cup, #123 hear gap. NEW #124 J18 leather≠metal art, #125 D12 doctor-as-Wen, #126 T16 return-noun 退貨, #127 R14 cake lemmas, #128 chip style mix. Wrote orch-fix-45 (R15 W12 T18) + orch-review-45. Orchestrator on review-44 / fix-44 next. last_reported_round: 42 (next Duet after round 45). Nightly panes untouched.
+- 2026-10-31 16:35: fix-44 (T17 J20 D13 + r42/r43 open items: #102 style batch, #95 LQIP, #114/#123/#124–#128) in progress in grokcoder-pane (~26 min since 16:09, agent restyling heroes via imagine-edit, ~178 paths changed uncommitted, style-gap not staged). Orchestrator pid 1213336 alive, heartbeat fresh, live 200 (= round 43, c38914e / index-Y_7y8cAP.js). Round 43 already audited 16:12. No new round finished; nothing reported. last_reported_round: 42 (next Duet report after round 45). Nightly panes untouched.

@@ -454,15 +454,16 @@ a { color: inherit; }
 }
 /* Hear lists fill the sheet, so the portrait must sit entirely in the band above it. */
 .hero[data-beat="2"] .art-ph img {
-  left: 50%;
+  left: 0;
+  right: 0;
   top: 44px;
-  width: auto;
-  height: calc(44% - 52px);
-  max-width: 96%;
+  width: 100%;
+  height: calc(100% - 44px);
+  max-width: none;
   max-height: none;
-  transform: translate(-50%, 0);
+  transform: none;
   object-fit: contain;
-  object-position: center center;
+  object-position: center top;
 }
 .sheet[data-beat="2"] {
   max-height: min(56%, calc(100% - 96px));

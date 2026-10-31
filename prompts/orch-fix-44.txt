@@ -15,3 +15,14 @@ Add to CURRICULUM.md and ship end-to-end (12 beats, hero WebP 900x1200 in the J1
 - **D13 — At the dentist / 睇牙醫 · B1** (toothache on the left side, X-ray, small filling vs root canal, local anaesthetic, cost and next visit, don't eat for two hours). Slot in the B1 block near D11/D3. Target ≈13 words/line.
 Dialogues like the audit scripts: short natural turns, contractions, every question answered by the next line, real numbers/names, no repeated question, no contradictions, no keyword stuffing, no padding tails.
 Run tests + build; Lighthouse mobile Perf >=98. Append "## Round 44" to CHANGELOG.md. Do not git commit.
+
+## APPEND 2026-10-31 16:12 — Coder live audit review/loop-r43 (after fix-44 already sent)
+Read review/loop-r43/coder-audit.md. Dialogues #93/#94/#103–#105/#110/#112/#92/#116–#118/#117 and lexicon #115/#122 CLOSED live. Still open this round must close:
+- #102 P0: 54/78 heroes <34.3 (R14=30.1 T16=27.2 D12=25.7); re-render ≥24 palest + new heroes ≥35.2
+- #121 recalibrate sat test to s×100 mean ≥34.3 on 90×120 (must FAIL today on pale heroes)
+- #95 R14 cold first paint blank chips (LQIP + decode-before-reveal; Playwright fresh context #/lesson/R14)
+- #114 R13 giant cup; #123 hear gap
+- NEW #124 J18 hero still leather straps (dialogue is metal links) — re-render metal bracelet art
+- NEW #125 D12 hero still doctor face labeled Wen (must be phone-call Tom|Wen receptionist split)
+- NEW #126 T16 return-noun gloss 退貨 → 還車/交還; #127 R14 cake lemmas in lexicon; #128 chip style mix (adult H&S only)
+Keep T17 / J20 / D13 new lessons. Do not commit review/.

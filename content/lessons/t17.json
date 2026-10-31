@@ -1,0 +1,338 @@
+{
+  "id": "T17",
+  "unit": "T",
+  "titleYue": "過機場安檢",
+  "titleEn": "Airport security check",
+  "canDoYue": "你識過機場安檢：液體一百毫升以下放透明袋，電腦同行動電源攞出嚟，皮帶同手錶放盤，再問接駁車去閘口三十五。",
+  "canDoEn": "At airport security, keep liquids under one hundred millilitres in a clear bag, take the laptop and power bank out, put the belt and watch in the tray, and ask for the shuttle to gate thirty-five.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t17.webp",
+  "cast": [
+    "tom",
+    "kim"
+  ],
+  "cefr": "A2",
+  "lemmas": [
+    "millilitre-noun",
+    "power-bank-noun",
+    "shuttle-noun",
+    "tray-noun"
+  ],
+  "topicTags": [
+    "安檢",
+    "液體",
+    "電腦",
+    "閘口"
+  ],
+  "next": "T11",
+  "sound": {
+    "ipa": "/ʌ/",
+    "title": "shuttle 入面嗰個音",
+    "note": "shuttle 有 /ʌ/。tray 有 /eɪ/。",
+    "pairs": [
+      {
+        "a": "shuttle-noun",
+        "b": "tray-noun"
+      },
+      {
+        "a": "millilitre-noun",
+        "b": "power-bank-noun"
+      }
+    ],
+    "drill": [
+      "millilitre-noun",
+      "power-bank-noun",
+      "shuttle-noun",
+      "tray-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "t17-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Hi. Are all of my liquids under one hundred millilitres?",
+      "glossYue": "你好。我嘅液體係咪全部一百毫升以下？",
+      "audio": "assets/audio/lines/t17-l1.mp3",
+      "audioSlow": "assets/audio/lines/t17-l1-slow.mp3",
+      "say": "Hi. Are all of my liquids under one hundred millilitres?",
+      "hideGloss": false
+    },
+    {
+      "id": "t17-l2",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes. Those liquids in the clear bag are all fine.",
+      "glossYue": "係。透明袋入面嘅液體冇問題。",
+      "audio": "assets/audio/lines/t17-l2.mp3",
+      "audioSlow": "assets/audio/lines/t17-l2-slow.mp3",
+      "say": "Yes. Those liquids in the clear bag are all fine.",
+      "hideGloss": false
+    },
+    {
+      "id": "t17-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Shouldn't the laptop and power bank come out of it?",
+      "glossYue": "部手提電腦同行動電源係咪應該攞出嚟？",
+      "audio": "assets/audio/lines/t17-l3.mp3",
+      "audioSlow": "assets/audio/lines/t17-l3-slow.mp3",
+      "say": "Shouldn't the laptop and power bank come out of it?",
+      "hideGloss": false
+    },
+    {
+      "id": "t17-l4",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes. Take the laptop out and leave the charger.",
+      "glossYue": "係。部電腦攞出嚟，充電器留低。",
+      "audio": "assets/audio/lines/t17-l4.mp3",
+      "audioSlow": "assets/audio/lines/t17-l4-slow.mp3",
+      "say": "Yes. Take the laptop out and leave the charger.",
+      "hideGloss": false
+    },
+    {
+      "id": "t17-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Do the belt and watch go in the tray?",
+      "glossYue": "皮帶同手錶係咪放喺個盤？",
+      "audio": "assets/audio/lines/t17-l5.mp3",
+      "audioSlow": "assets/audio/lines/t17-l5-slow.mp3",
+      "say": "Do the belt and watch go in the tray?",
+      "hideGloss": false
+    },
+    {
+      "id": "t17-l6",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes. Both of those items go in the grey tray.",
+      "glossYue": "係。兩樣都放喺灰色個盤。",
+      "audio": "assets/audio/lines/t17-l6.mp3",
+      "audioSlow": "assets/audio/lines/t17-l6-slow.mp3",
+      "say": "Yes. Both of those items go in the grey tray.",
+      "hideGloss": true
+    },
+    {
+      "id": "t17-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Thanks. Which way is gate thirty-five by the shuttle?",
+      "glossYue": "多謝。閘口三十五搭接駁車點去？",
+      "audio": "assets/audio/lines/t17-l7.mp3",
+      "audioSlow": "assets/audio/lines/t17-l7-slow.mp3",
+      "say": "Thanks. Which way is gate thirty-five by the shuttle?",
+      "hideGloss": true
+    },
+    {
+      "id": "t17-l8",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes. The blue shuttle train stops beside that far gate.",
+      "glossYue": "係。藍色接駁車停喺嗰個閘口隔離。",
+      "audio": "assets/audio/lines/t17-l8.mp3",
+      "audioSlow": "assets/audio/lines/t17-l8-slow.mp3",
+      "say": "Yes. The blue shuttle train stops beside that far gate.",
+      "hideGloss": true
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你同 Kim 傾呢件事。等對方講完先答。",
+    "turns": [
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "Yes. Those liquids in the clear bag are all fine.",
+        "audio": "assets/audio/lines/t17-l2.mp3",
+        "audioSlow": "assets/audio/lines/t17-l2-slow.mp3",
+        "expect": "Shouldn't the laptop and power bank come out of it?",
+        "keywords": [
+          "laptop",
+          "power"
+        ],
+        "modelAudio": "assets/audio/lines/t17-l3.mp3",
+        "modelSlow": "assets/audio/lines/t17-l3-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "Yes. Take the laptop out and leave the charger.",
+        "audio": "assets/audio/lines/t17-l4.mp3",
+        "audioSlow": "assets/audio/lines/t17-l4-slow.mp3",
+        "expect": "Do the belt and watch go in the tray?",
+        "keywords": [
+          "belt",
+          "watch"
+        ],
+        "modelAudio": "assets/audio/lines/t17-l5.mp3",
+        "modelSlow": "assets/audio/lines/t17-l5-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "Yes. Both of those items go in the grey tray.",
+        "audio": "assets/audio/lines/t17-l6.mp3",
+        "audioSlow": "assets/audio/lines/t17-l6-slow.mp3",
+        "expect": "Thanks. Which way is gate thirty-five by the shuttle?",
+        "keywords": [
+          "gate",
+          "shuttle"
+        ],
+        "modelAudio": "assets/audio/lines/t17-l7.mp3",
+        "modelSlow": "assets/audio/lines/t17-l7-slow.mp3"
+      }
+    ]
+  },
+  "understand": [
+    {
+      "prompt": "Hi. Are all of my liquids under one hundred millilitres? 呢句即係點？",
+      "choices": [
+        "關於電腦",
+        "關於液體",
+        "關於閘口"
+      ],
+      "answer": 1,
+      "explain": "液體。"
+    },
+    {
+      "prompt": "Shouldn't the laptop and power bank come out of it? 呢句即係點？",
+      "choices": [
+        "關於電腦",
+        "關於閘口",
+        "關於液體"
+      ],
+      "answer": 0,
+      "explain": "電腦。"
+    },
+    {
+      "prompt": "Thanks. Which way is gate thirty-five by the shuttle? 呢句即係點？",
+      "choices": [
+        "關於液體",
+        "關於電腦",
+        "關於閘口"
+      ],
+      "answer": 2,
+      "explain": "閘口。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Shouldn't the laptop and ___ bank come out of it?",
+      "example": "Shouldn't the laptop and power bank come out of it?",
+      "glossYue": "部手提電腦同行動電源係咪應該攞出嚟？",
+      "answer": "power",
+      "choices": [
+        "power",
+        "shuttle",
+        "tray"
+      ]
+    },
+    {
+      "pattern": "Yes. Both of those items go in the grey ___.",
+      "example": "Yes. Both of those items go in the grey tray.",
+      "glossYue": "係。兩樣都放喺灰色個盤。",
+      "answer": "tray",
+      "choices": [
+        "tray",
+        "millilitre",
+        "shuttle"
+      ]
+    },
+    {
+      "pattern": "Thanks. Which way is gate thirty-five by the ___?",
+      "example": "Thanks. Which way is gate thirty-five by the shuttle?",
+      "glossYue": "多謝。閘口三十五搭接駁車點去？",
+      "answer": "shuttle",
+      "choices": [
+        "shuttle",
+        "tray",
+        "millilitre"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想用呢課嘅講法。你點講？",
+      "choices": [
+        "Yes. Those liquids in the clear bag are all fine.",
+        "Shouldn't the laptop and power bank come out of it?",
+        "Do the belt and watch go in the tray?"
+      ],
+      "answer": 1,
+      "explain": "用呢句。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "shuttle",
+        "gate"
+      ],
+      "answer": [
+        "shuttle",
+        "gate"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "shuttle",
+        "tray",
+        "millilitre"
+      ],
+      "answer": 2,
+      "lemma": "millilitre-noun"
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "tray",
+        "millilitre",
+        "shuttle"
+      ],
+      "answer": 0,
+      "lemma": "tray-noun"
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "電腦",
+        "液體",
+        "閘口"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "液體",
+        "電腦",
+        "閘口"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word fits this lesson?",
+      "choices": [
+        "shuttle",
+        "tray",
+        "millilitre"
+      ],
+      "answer": 0,
+      "explain": "安檢。"
+    }
+  ],
+  "shadow": {
+    "lineId": "t17-l1",
+    "hint": "Hi. Are all of my liquids under one hundred millilitres?"
+  }
+}

@@ -77,7 +77,10 @@
     "j13",
     "r14",
     "j19",
-    "t16"
+    "t16",
+    "t17",
+    "j20",
+    "d13"
   ],
   "pending": [],
   "focus": {
@@ -158,7 +161,10 @@
     "w11": "center 30%",
     "r14": "center 30%",
     "j19": "center 30%",
-    "t16": "center 30%"
+    "t16": "center 30%",
+    "t17": "center 30%",
+    "j20": "center 30%",
+    "d13": "center 30%"
   },
   "people": {
     "tom": "Adult man, short black hair, beige jacket, coral scarf, head and shoulders.",
@@ -747,6 +753,27 @@
         "sam"
       ],
       "look": "Security and directions (安檢同方向)"
+    },
+    "t17": {
+      "cast": [
+        "tom",
+        "kim"
+      ],
+      "look": "Airport security check (過機場安檢)"
+    },
+    "j20": {
+      "cast": [
+        "gus",
+        "ida"
+      ],
+      "look": "Selling gold by weight (金價按重量計)"
+    },
+    "d13": {
+      "cast": [
+        "tom",
+        "ben"
+      ],
+      "look": "At the dentist (睇牙醫)"
     }
   }
 }

@@ -351,6 +351,24 @@
 - **Grammar:** Present continuous (I'm visiting…); for + duration
 - **Dialogue beats:** Approach → Purpose → Stay → Goods → Clear
 
+### T17 — Airport security check / 過機場安檢 · A2 · SHIPPED
+- **Goals:** Keep liquids under 100 ml in a clear bag, take the laptop and power bank out, put the belt and watch in the tray, answer "Is this your bag?" by showing the clear bag, and ask the way to gate 35 by the shuttle train.
+- **Vocab:** millilitre, power bank, shuttle, tray
+- **Grammar:** Are these under one hundred millilitres? Shouldn't the laptop come out? Which way is the shuttle?
+- **Dialogue beats:** Liquids in the clear bag → Laptop and power bank out → Belt and watch in the tray → Shuttle to gate thirty-five
+
+### J20 — Selling gold by weight / 金價按重量計 · A2/B1 · SHIPPED
+- **Goals:** Ask today's gold price per gram, weigh a 999 bangle, ask the labour charge, trade in an old chain, and read weight and purity on the receipt.
+- **Vocab:** gram, bangle, labour, purity
+- **Grammar:** What is the price per gram? How much is the labour charge because the clasp is broken? Will the receipt show the purity?
+- **Dialogue beats:** Price per gram → Weigh the 999 bangle → Labour charge → Trade in the old chain → Receipt with weight and purity
+
+### D13 — At the dentist / 睇牙醫 · B1 · SHIPPED
+- **Goals:** Say the toothache is on the left, ask for an X-ray, compare a small filling with a root canal, accept local anaesthetic, and wait two hours before eating.
+- **Vocab:** toothache, X-ray, filling, anaesthetic
+- **Grammar:** Does it hurt when you bite? Is a filling enough, or do I need a root canal? Don't eat for two hours.
+- **Dialogue beats:** Left-side toothache → X-ray → Filling not a root canal → Anaesthetic → Cost and the next visit
+
 ### T16 — Renting a car abroad / 喺外國租車 · B1 · SHIPPED
 - **Goals:** Show a driving licence and an international permit, ask the insurance excess, accept full-to-full fuel, return the car by six on Friday, and note a scratch on the rear door.
 - **Vocab:** licence, permit, excess, fuel, return, scratch
@@ -530,7 +548,8 @@ Every round until map complete, ship **≥3 NEW lessons** in this order (skip al
 20. **J18, R13, D11** (watch battery and strap, café order change, open a bank account)
 21. **D12, T15, W11** (clinic appointment, hotel check-out, payslip)
 22. **R14, J19, T16** (birthday cake, diamond certificate, renting a car abroad)
-23. Then polish / legendary review nodes / further B2 stretch
+23. **T17, J20, D13** (airport security, gold by weight, the dentist)
+24. Then polish / legendary review nodes / further B2 stretch
 
 **Path UX:** show CEFR chip (A1/A2/B1/B2) on each node; group Path into level tracks; lock by prerequisite; keep `soon:true` teasers for unshipped.
 

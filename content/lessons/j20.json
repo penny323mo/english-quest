@@ -1,0 +1,338 @@
+{
+  "id": "J20",
+  "unit": "J",
+  "titleYue": "金價按重量計",
+  "titleEn": "Selling gold by weight",
+  "canDoYue": "你識按克問金價，秤一隻九九九金手鐲，問手工費，用舊鏈換購，同埋喺收據睇重量同純度。",
+  "canDoEn": "Ask the gold price per gram, weigh a nine-nine-nine bangle, ask the labour charge, trade in an old chain, and read the weight and purity on the receipt.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j20.webp",
+  "cast": [
+    "gus",
+    "ida"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "gram-noun",
+    "bangle-noun",
+    "labour-noun",
+    "purity-noun"
+  ],
+  "topicTags": [
+    "金價",
+    "手鐲",
+    "手工",
+    "純度"
+  ],
+  "next": "T5",
+  "sound": {
+    "ipa": "/æ/",
+    "title": "bangle 入面嗰個音",
+    "note": "bangle 有 /æ/。gram 有 /æ/。",
+    "pairs": [
+      {
+        "a": "bangle-noun",
+        "b": "gram-noun"
+      },
+      {
+        "a": "labour-noun",
+        "b": "purity-noun"
+      }
+    ],
+    "drill": [
+      "gram-noun",
+      "bangle-noun",
+      "labour-noun",
+      "purity-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "j20-l1",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "Hi. What is your gold price per gram for one bangle?",
+      "glossYue": "你好。呢隻手鐲一克金係幾多錢？",
+      "audio": "assets/audio/lines/j20-l1.mp3",
+      "audioSlow": "assets/audio/lines/j20-l1-slow.mp3",
+      "say": "Hi. What is your gold price per gram for one bangle?",
+      "hideGloss": false
+    },
+    {
+      "id": "j20-l2",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "This bangle is nine nine nine. I will weigh it in grams.",
+      "glossYue": "呢隻手鐲係九九九金。我用克嚟秤。",
+      "audio": "assets/audio/lines/j20-l2.mp3",
+      "audioSlow": "assets/audio/lines/j20-l2-slow.mp3",
+      "say": "This bangle is nine nine nine. I will weigh it in grams.",
+      "hideGloss": false
+    },
+    {
+      "id": "j20-l3",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "How much is the labour charge because the clasp is broken?",
+      "glossYue": "因為個扣壞咗，手工費係幾多？",
+      "audio": "assets/audio/lines/j20-l3.mp3",
+      "audioSlow": "assets/audio/lines/j20-l3-slow.mp3",
+      "say": "How much is the labour charge because the clasp is broken?",
+      "hideGloss": false
+    },
+    {
+      "id": "j20-l4",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "The labour charge is forty dollars on top of the gold.",
+      "glossYue": "手工費係四十蚊，金價另外計。",
+      "audio": "assets/audio/lines/j20-l4.mp3",
+      "audioSlow": "assets/audio/lines/j20-l4-slow.mp3",
+      "say": "The labour charge is forty dollars on top of the gold.",
+      "hideGloss": true
+    },
+    {
+      "id": "j20-l5",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "Can I trade in this old chain against the new bangle?",
+      "glossYue": "可唔可以用呢條舊鏈換購新手鐲？",
+      "audio": "assets/audio/lines/j20-l5.mp3",
+      "audioSlow": "assets/audio/lines/j20-l5-slow.mp3",
+      "say": "Can I trade in this old chain against the new bangle?",
+      "hideGloss": true
+    },
+    {
+      "id": "j20-l6",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Yes. I can trade that chain and note it on the receipt.",
+      "glossYue": "可以。呢條鏈可以換購，我會寫低喺收據。",
+      "audio": "assets/audio/lines/j20-l6.mp3",
+      "audioSlow": "assets/audio/lines/j20-l6-slow.mp3",
+      "say": "Yes. I can trade that chain and note it on the receipt.",
+      "hideGloss": true
+    },
+    {
+      "id": "j20-l7",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "Will my receipt also show the weight and the purity?",
+      "glossYue": "收據會唔會同時寫重量同純度？",
+      "audio": "assets/audio/lines/j20-l7.mp3",
+      "audioSlow": "assets/audio/lines/j20-l7-slow.mp3",
+      "say": "Will my receipt also show the weight and the purity?",
+      "hideGloss": true
+    },
+    {
+      "id": "j20-l8",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Yes. Your receipt shows the weight, the purity, and the full price.",
+      "glossYue": "會。收據寫重量、純度同埋個價錢。",
+      "audio": "assets/audio/lines/j20-l8.mp3",
+      "audioSlow": "assets/audio/lines/j20-l8-slow.mp3",
+      "say": "Yes. Your receipt shows the weight, the purity, and the full price.",
+      "hideGloss": true
+    }
+  ],
+  "roleplay": {
+    "you": "gus",
+    "intro": "你同 Ida 傾呢件事。等對方講完先答。",
+    "turns": [
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "This bangle is nine nine nine. I will weigh it in grams.",
+        "audio": "assets/audio/lines/j20-l2.mp3",
+        "audioSlow": "assets/audio/lines/j20-l2-slow.mp3",
+        "expect": "How much is the labour charge because the clasp is broken?",
+        "keywords": [
+          "labour",
+          "charge"
+        ],
+        "modelAudio": "assets/audio/lines/j20-l3.mp3",
+        "modelSlow": "assets/audio/lines/j20-l3-slow.mp3"
+      },
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "The labour charge is forty dollars on top of the gold.",
+        "audio": "assets/audio/lines/j20-l4.mp3",
+        "audioSlow": "assets/audio/lines/j20-l4-slow.mp3",
+        "expect": "Can I trade in this old chain against the new bangle?",
+        "keywords": [
+          "trade",
+          "chain"
+        ],
+        "modelAudio": "assets/audio/lines/j20-l5.mp3",
+        "modelSlow": "assets/audio/lines/j20-l5-slow.mp3"
+      },
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "Yes. I can trade that chain and note it on the receipt.",
+        "audio": "assets/audio/lines/j20-l6.mp3",
+        "audioSlow": "assets/audio/lines/j20-l6-slow.mp3",
+        "expect": "Will my receipt also show the weight and the purity?",
+        "keywords": [
+          "receipt",
+          "weight"
+        ],
+        "modelAudio": "assets/audio/lines/j20-l7.mp3",
+        "modelSlow": "assets/audio/lines/j20-l7-slow.mp3"
+      }
+    ]
+  },
+  "understand": [
+    {
+      "prompt": "Hi. What is your gold price per gram for one bangle? 呢句即係點？",
+      "choices": [
+        "關於手工",
+        "關於金價",
+        "關於純度"
+      ],
+      "answer": 1,
+      "explain": "金價。"
+    },
+    {
+      "prompt": "How much is the labour charge because the clasp is broken? 呢句即係點？",
+      "choices": [
+        "關於手工",
+        "關於手鐲",
+        "關於純度"
+      ],
+      "answer": 0,
+      "explain": "手工。"
+    },
+    {
+      "prompt": "Will my receipt also show the weight and the purity? 呢句即係點？",
+      "choices": [
+        "關於金價",
+        "關於手工",
+        "關於純度"
+      ],
+      "answer": 2,
+      "explain": "純度。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Hi. What is your gold price per ___ for one bangle?",
+      "example": "Hi. What is your gold price per gram for one bangle?",
+      "glossYue": "你好。呢隻手鐲一克金係幾多錢？",
+      "answer": "gram",
+      "choices": [
+        "gram",
+        "bangle",
+        "purity"
+      ]
+    },
+    {
+      "pattern": "The ___ charge is forty dollars on top of the gold.",
+      "example": "The labour charge is forty dollars on top of the gold.",
+      "glossYue": "手工費係四十蚊，金價另外計。",
+      "answer": "labour",
+      "choices": [
+        "labour",
+        "gram",
+        "bangle"
+      ]
+    },
+    {
+      "pattern": "Will my receipt also show the weight and the ___?",
+      "example": "Will my receipt also show the weight and the purity?",
+      "glossYue": "收據會唔會同時寫重量同純度？",
+      "answer": "purity",
+      "choices": [
+        "purity",
+        "labour",
+        "gram"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想用呢課嘅講法。你點講？",
+      "choices": [
+        "This bangle is nine nine nine. I will weigh it in grams.",
+        "How much is the labour charge because the clasp is broken?",
+        "Can I trade in this old chain against the new bangle?"
+      ],
+      "answer": 2,
+      "explain": "用呢句。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "purity",
+        "weight"
+      ],
+      "answer": [
+        "purity",
+        "weight"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "bangle",
+        "purity",
+        "gram"
+      ],
+      "answer": 1,
+      "lemma": "purity-noun"
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "gram",
+        "bangle",
+        "labour"
+      ],
+      "answer": 2,
+      "lemma": "labour-noun"
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "金價",
+        "手鐲",
+        "手工"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "純度",
+        "金價",
+        "手鐲"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word fits this lesson?",
+      "choices": [
+        "labour",
+        "gram",
+        "bangle"
+      ],
+      "answer": 2,
+      "explain": "手鐲。"
+    }
+  ],
+  "shadow": {
+    "lineId": "j20-l1",
+    "hint": "Hi. What is your gold price per gram for one bangle?"
+  }
+}

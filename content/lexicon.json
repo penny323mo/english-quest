@@ -17878,9 +17878,9 @@
         "take a message",
         "leave a message"
       ],
-      "example": "Please take a message for Mei.",
-      "exampleYue": "唔該幫 Mei 收個留言。",
-      "say": "Please take a message for Mei.",
+      "example": "The message on the cake says Happy birthday Mei.",
+      "exampleYue": "生日蛋糕上嘅字係 Happy birthday Mei。",
+      "say": "The message on the cake says Happy birthday Mei.",
       "variants": [],
       "note": "",
       "sources": [
@@ -17891,7 +17891,7 @@
       "senseMismatch": false,
       "cmuLemma": "message",
       "phrase": false,
-      "audioSha256": "c68399d9c0a1f1738c8b8d29aedd28b63c17c69c4afe98c4a9f5eef5f0b2abeb",
+      "audioSha256": "d75a7376dc86edd0645fb46a36fd0f3e1bf62723de6714e4b389dc312713eb34",
       "register": "職場",
       "usageNotes": "人唔喺度先留言。",
       "pitfallsYue": "人唔喺度先留言。",
@@ -17901,18 +17901,18 @@
       ],
       "examples": [
         {
-          "en": "Please take a message for Mei.",
-          "yue": "唔該幫 Mei 收個留言。",
+          "en": "The message on the cake says Happy birthday Mei.",
+          "yue": "生日蛋糕上嘅字係 Happy birthday Mei。",
           "audio": "assets/audio/words/message-noun.mp3",
           "audioSlow": "assets/audio/words/message-noun-slow.mp3",
-          "say": "Please take a message for Mei."
+          "say": "The message on the cake says Happy birthday Mei."
         },
         {
-          "en": "I left a message at the desk.",
-          "yue": "我喺櫃檯留咗言。",
+          "en": "Please take a message for Mei.",
+          "yue": "唔該幫 Mei 收個留言。",
           "audio": "assets/audio/words/message-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/message-noun-ex2-slow.mp3",
-          "say": "I left a message at the desk."
+          "say": "Please take a message for Mei."
         }
       ]
     },
@@ -38458,6 +38458,1152 @@
           "audio": "assets/audio/words/mpf-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/mpf-phrase-ex2-slow.mp3",
           "say": "MPF is taken from the payslip."
+        }
+      ]
+    },
+    {
+      "id": "millilitre-noun",
+      "lemma": "millilitre",
+      "pos": "noun",
+      "senseId": "volume-unit",
+      "ipa": "/ˈmɪ.lə.ˌli.tɚ/",
+      "syllables": [
+        "mil",
+        "li",
+        "li",
+        "tre"
+      ],
+      "syllableIpa": [
+        "ˈmɪ",
+        "lə",
+        "ˌli",
+        "tɚ"
+      ],
+      "stress": 1,
+      "arpabet": "M IH1 L AH0 L IY2 T ER0",
+      "audio": "assets/audio/words/millilitre-noun.mp3",
+      "audioSlow": "assets/audio/words/millilitre-noun-slow.mp3",
+      "glossYue": "毫升",
+      "glossZh": "毫升",
+      "jyutping": "hou4 sing1",
+      "collocations": [
+        "one hundred millilitres",
+        "under one hundred millilitres"
+      ],
+      "example": "Liquids must be under one hundred millilitres.",
+      "exampleYue": "液體要一百毫升以下。",
+      "say": "Liquids must be under one hundred millilitres.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "millilitre",
+      "phrase": false,
+      "audioSha256": "89c415765c9e60c9e28bc4babefc887fda5971bc57b357ec2f4221086eedee04",
+      "register": "日常",
+      "usageNotes": "毫升",
+      "pitfallsYue": "毫升",
+      "related": [],
+      "examples": [
+        {
+          "en": "Liquids must be under one hundred millilitres.",
+          "yue": "液體要一百毫升以下。",
+          "audio": "assets/audio/words/millilitre-noun.mp3",
+          "audioSlow": "assets/audio/words/millilitre-noun-slow.mp3",
+          "say": "Liquids must be under one hundred millilitres."
+        },
+        {
+          "en": "Each bottle is under one hundred millilitres.",
+          "yue": "每一樽都係一百毫升以下。",
+          "audio": "assets/audio/words/millilitre-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/millilitre-noun-ex2-slow.mp3",
+          "say": "Each bottle is under one hundred millilitres."
+        }
+      ]
+    },
+    {
+      "id": "power-bank-noun",
+      "lemma": "power bank",
+      "pos": "noun",
+      "senseId": "portable-pack",
+      "ipa": "/ˈpaʊ.ɚ.ˈbæŋk/",
+      "syllables": [
+        "pow",
+        "er",
+        "bank"
+      ],
+      "syllableIpa": [
+        "ˈpaʊ",
+        "ɚ",
+        "ˈbæŋk"
+      ],
+      "stress": 1,
+      "arpabet": "P AW1 ER0 B AE1 NG K",
+      "audio": "assets/audio/words/power-bank-noun.mp3",
+      "audioSlow": "assets/audio/words/power-bank-noun-slow.mp3",
+      "glossYue": "行動電源",
+      "glossZh": "行動電源",
+      "jyutping": "hang4 dung6 din6 jyun4",
+      "collocations": [
+        "a power bank",
+        "take the power bank out"
+      ],
+      "example": "Please take the power bank out of the bag.",
+      "exampleYue": "請將行動電源由袋入面攞出嚟。",
+      "say": "Please take the power bank out of the bag.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "power bank",
+      "phrase": false,
+      "audioSha256": "5e8297e9fc516ff376e9d4612ac0494385dc6c070ce9e94950974dfd9ab66b06",
+      "register": "日常",
+      "usageNotes": "行動電源",
+      "pitfallsYue": "行動電源",
+      "related": [],
+      "examples": [
+        {
+          "en": "Please take the power bank out of the bag.",
+          "yue": "請將行動電源由袋入面攞出嚟。",
+          "audio": "assets/audio/words/power-bank-noun.mp3",
+          "audioSlow": "assets/audio/words/power-bank-noun-slow.mp3",
+          "say": "Please take the power bank out of the bag."
+        },
+        {
+          "en": "The power bank goes in the tray.",
+          "yue": "行動電源放喺個盤。",
+          "audio": "assets/audio/words/power-bank-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/power-bank-noun-ex2-slow.mp3",
+          "say": "The power bank goes in the tray."
+        }
+      ]
+    },
+    {
+      "id": "shuttle-noun",
+      "lemma": "shuttle",
+      "pos": "noun",
+      "senseId": "airport-train",
+      "ipa": "/ˈʃʌ.təl/",
+      "syllables": [
+        "shut",
+        "tle"
+      ],
+      "syllableIpa": [
+        "ˈʃʌ",
+        "təl"
+      ],
+      "stress": 1,
+      "arpabet": "SH AH1 T AH0 L",
+      "audio": "assets/audio/words/shuttle-noun.mp3",
+      "audioSlow": "assets/audio/words/shuttle-noun-slow.mp3",
+      "glossYue": "接駁車",
+      "glossZh": "接駁車",
+      "jyutping": "zip3 bok3 ce1",
+      "collocations": [
+        "the shuttle train",
+        "by the shuttle"
+      ],
+      "example": "The shuttle train stops beside that gate.",
+      "exampleYue": "接駁車停喺嗰個閘口隔離。",
+      "say": "The shuttle train stops beside that gate.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "shuttle",
+      "phrase": false,
+      "audioSha256": "959e3b6478423d89c737958b378aa2ea0a4d181d541142854051e5509909b4ae",
+      "register": "日常",
+      "usageNotes": "接駁車",
+      "pitfallsYue": "接駁車",
+      "related": [],
+      "examples": [
+        {
+          "en": "The shuttle train stops beside that gate.",
+          "yue": "接駁車停喺嗰個閘口隔離。",
+          "audio": "assets/audio/words/shuttle-noun.mp3",
+          "audioSlow": "assets/audio/words/shuttle-noun-slow.mp3",
+          "say": "The shuttle train stops beside that gate."
+        },
+        {
+          "en": "Which way is the shuttle?",
+          "yue": "接駁車點去？",
+          "audio": "assets/audio/words/shuttle-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/shuttle-noun-ex2-slow.mp3",
+          "say": "Which way is the shuttle?"
+        }
+      ]
+    },
+    {
+      "id": "tray-noun",
+      "lemma": "tray",
+      "pos": "noun",
+      "senseId": "security-bin",
+      "ipa": "/ˈtɹeɪ/",
+      "syllables": [
+        "tray"
+      ],
+      "syllableIpa": [
+        "ˈtɹeɪ"
+      ],
+      "stress": 1,
+      "arpabet": "T R EY1",
+      "audio": "assets/audio/words/tray-noun.mp3",
+      "audioSlow": "assets/audio/words/tray-noun-slow.mp3",
+      "glossYue": "安檢盤",
+      "glossZh": "安檢盤",
+      "jyutping": "on1 gim2 pun4",
+      "collocations": [
+        "the grey tray",
+        "in the tray"
+      ],
+      "example": "Put the belt in the grey tray.",
+      "exampleYue": "皮帶放喺灰色個盤。",
+      "say": "Put the belt in the grey tray.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "tray",
+      "phrase": false,
+      "audioSha256": "237a60afa63d15a9aea85c1ed4ca5f8fc8624f6f2d25099b3f31f18ebe0deb87",
+      "register": "日常",
+      "usageNotes": "安檢盤",
+      "pitfallsYue": "安檢盤",
+      "related": [],
+      "examples": [
+        {
+          "en": "Put the belt in the grey tray.",
+          "yue": "皮帶放喺灰色個盤。",
+          "audio": "assets/audio/words/tray-noun.mp3",
+          "audioSlow": "assets/audio/words/tray-noun-slow.mp3",
+          "say": "Put the belt in the grey tray."
+        },
+        {
+          "en": "The watch goes in this tray.",
+          "yue": "手錶放喺呢個盤。",
+          "audio": "assets/audio/words/tray-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/tray-noun-ex2-slow.mp3",
+          "say": "The watch goes in this tray."
+        }
+      ]
+    },
+    {
+      "id": "gram-noun",
+      "lemma": "gram",
+      "pos": "noun",
+      "senseId": "weight-unit",
+      "ipa": "/ˈɡɹæm/",
+      "syllables": [
+        "gram"
+      ],
+      "syllableIpa": [
+        "ˈɡɹæm"
+      ],
+      "stress": 1,
+      "arpabet": "G R AE1 M",
+      "audio": "assets/audio/words/gram-noun.mp3",
+      "audioSlow": "assets/audio/words/gram-noun-slow.mp3",
+      "glossYue": "克",
+      "glossZh": "克",
+      "jyutping": "hak1",
+      "collocations": [
+        "per gram",
+        "in grams"
+      ],
+      "example": "What is the gold price per gram?",
+      "exampleYue": "一克金係幾多錢？",
+      "say": "What is the gold price per gram?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "gram",
+      "phrase": false,
+      "audioSha256": "f014b776234d6e48c19b09e23fe99298868e5d07c166bccccbb40e910700b9a4",
+      "register": "日常",
+      "usageNotes": "克",
+      "pitfallsYue": "克",
+      "related": [],
+      "examples": [
+        {
+          "en": "What is the gold price per gram?",
+          "yue": "一克金係幾多錢？",
+          "audio": "assets/audio/words/gram-noun.mp3",
+          "audioSlow": "assets/audio/words/gram-noun-slow.mp3",
+          "say": "What is the gold price per gram?"
+        },
+        {
+          "en": "She weighs the bangle in grams.",
+          "yue": "佢用克嚟秤隻手鐲。",
+          "audio": "assets/audio/words/gram-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/gram-noun-ex2-slow.mp3",
+          "say": "She weighs the bangle in grams."
+        }
+      ]
+    },
+    {
+      "id": "bangle-noun",
+      "lemma": "bangle",
+      "pos": "noun",
+      "senseId": "rigid-bracelet",
+      "ipa": "/ˈbæŋ.ɡəl/",
+      "syllables": [
+        "ban",
+        "gle"
+      ],
+      "syllableIpa": [
+        "ˈbæŋ",
+        "ɡəl"
+      ],
+      "stress": 1,
+      "arpabet": "B AE1 NG G AH0 L",
+      "audio": "assets/audio/words/bangle-noun.mp3",
+      "audioSlow": "assets/audio/words/bangle-noun-slow.mp3",
+      "glossYue": "手鐲",
+      "glossZh": "手鐲",
+      "jyutping": "sau2 zuk6",
+      "collocations": [
+        "a gold bangle",
+        "this bangle"
+      ],
+      "example": "This bangle is nine nine nine gold.",
+      "exampleYue": "呢隻手鐲係九九九金。",
+      "say": "This bangle is nine nine nine gold.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "bangle",
+      "phrase": false,
+      "audioSha256": "df8af04a6f9968c682933204e262fbd108c940ca51fd118a2a453b50919de94d",
+      "register": "日常",
+      "usageNotes": "手鐲",
+      "pitfallsYue": "手鐲",
+      "related": [],
+      "examples": [
+        {
+          "en": "This bangle is nine nine nine gold.",
+          "yue": "呢隻手鐲係九九九金。",
+          "audio": "assets/audio/words/bangle-noun.mp3",
+          "audioSlow": "assets/audio/words/bangle-noun-slow.mp3",
+          "say": "This bangle is nine nine nine gold."
+        },
+        {
+          "en": "I would like this gold bangle.",
+          "yue": "我想要呢隻金手鐲。",
+          "audio": "assets/audio/words/bangle-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/bangle-noun-ex2-slow.mp3",
+          "say": "I would like this gold bangle."
+        }
+      ]
+    },
+    {
+      "id": "labour-noun",
+      "lemma": "labour",
+      "pos": "noun",
+      "senseId": "making-fee",
+      "ipa": "/ˈleɪ.bɚ/",
+      "syllables": [
+        "la",
+        "bour"
+      ],
+      "syllableIpa": [
+        "ˈleɪ",
+        "bɚ"
+      ],
+      "stress": 1,
+      "arpabet": "L EY1 B ER0",
+      "audio": "assets/audio/words/labour-noun.mp3",
+      "audioSlow": "assets/audio/words/labour-noun-slow.mp3",
+      "glossYue": "手工",
+      "glossZh": "手工",
+      "jyutping": "sau2 gung1",
+      "collocations": [
+        "the labour charge",
+        "labour on a bangle"
+      ],
+      "example": "The labour charge is forty dollars.",
+      "exampleYue": "手工費係四十蚊。",
+      "say": "The labour charge is forty dollars.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "labour",
+      "phrase": false,
+      "audioSha256": "37fd8321ecb9727970ae1a12db53faead8998faf3b3c8ef6452b883854c5042d",
+      "register": "日常",
+      "usageNotes": "手工",
+      "pitfallsYue": "手工",
+      "related": [],
+      "examples": [
+        {
+          "en": "The labour charge is forty dollars.",
+          "yue": "手工費係四十蚊。",
+          "audio": "assets/audio/words/labour-noun.mp3",
+          "audioSlow": "assets/audio/words/labour-noun-slow.mp3",
+          "say": "The labour charge is forty dollars."
+        },
+        {
+          "en": "How much is the labour charge?",
+          "yue": "手工費係幾多？",
+          "audio": "assets/audio/words/labour-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/labour-noun-ex2-slow.mp3",
+          "say": "How much is the labour charge?"
+        }
+      ]
+    },
+    {
+      "id": "purity-noun",
+      "lemma": "purity",
+      "pos": "noun",
+      "senseId": "metal-fineness",
+      "ipa": "/ˈpjʊ.ɹə.ti/",
+      "syllables": [
+        "pu",
+        "ri",
+        "ty"
+      ],
+      "syllableIpa": [
+        "ˈpjʊ",
+        "ɹə",
+        "ti"
+      ],
+      "stress": 1,
+      "arpabet": "P Y UH1 R AH0 T IY0",
+      "audio": "assets/audio/words/purity-noun.mp3",
+      "audioSlow": "assets/audio/words/purity-noun-slow.mp3",
+      "glossYue": "純度",
+      "glossZh": "純度",
+      "jyutping": "seon4 dou6",
+      "collocations": [
+        "the purity",
+        "weight and purity"
+      ],
+      "example": "The receipt shows the purity.",
+      "exampleYue": "收據寫咗純度。",
+      "say": "The receipt shows the purity.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "purity",
+      "phrase": false,
+      "audioSha256": "1e25f61cb530911cbf381ec6cfaa3903c29789401c3cae3054405a6a34dd4f0f",
+      "register": "日常",
+      "usageNotes": "純度",
+      "pitfallsYue": "純度",
+      "related": [],
+      "examples": [
+        {
+          "en": "The receipt shows the purity.",
+          "yue": "收據寫咗純度。",
+          "audio": "assets/audio/words/purity-noun.mp3",
+          "audioSlow": "assets/audio/words/purity-noun-slow.mp3",
+          "say": "The receipt shows the purity."
+        },
+        {
+          "en": "Please check the weight and the purity.",
+          "yue": "請睇下重量同純度。",
+          "audio": "assets/audio/words/purity-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/purity-noun-ex2-slow.mp3",
+          "say": "Please check the weight and the purity."
+        }
+      ]
+    },
+    {
+      "id": "toothache-noun",
+      "lemma": "toothache",
+      "pos": "noun",
+      "senseId": "tooth-pain",
+      "ipa": "/ˈtu.ˈθeɪk/",
+      "syllables": [
+        "tooth",
+        "ache"
+      ],
+      "syllableIpa": [
+        "ˈtu",
+        "ˈθeɪk"
+      ],
+      "stress": 1,
+      "arpabet": "T UW1 TH EY1 K",
+      "audio": "assets/audio/words/toothache-noun.mp3",
+      "audioSlow": "assets/audio/words/toothache-noun-slow.mp3",
+      "glossYue": "牙痛",
+      "glossZh": "牙痛",
+      "jyutping": "nga4 tung3",
+      "collocations": [
+        "a bad toothache",
+        "that toothache"
+      ],
+      "example": "I have had a toothache since last night.",
+      "exampleYue": "我由尋晚開始牙痛。",
+      "say": "I have had a toothache since last night.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "toothache",
+      "phrase": false,
+      "audioSha256": "4dffeff75e77f542c0a50299d10bfe47cc323f80bfafcd6b677b01fad34da3f4",
+      "register": "日常",
+      "usageNotes": "牙痛",
+      "pitfallsYue": "牙痛",
+      "related": [],
+      "examples": [
+        {
+          "en": "I have had a toothache since last night.",
+          "yue": "我由尋晚開始牙痛。",
+          "audio": "assets/audio/words/toothache-noun.mp3",
+          "audioSlow": "assets/audio/words/toothache-noun-slow.mp3",
+          "say": "I have had a toothache since last night."
+        },
+        {
+          "en": "The toothache is on the left side.",
+          "yue": "牙痛喺左邊。",
+          "audio": "assets/audio/words/toothache-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/toothache-noun-ex2-slow.mp3",
+          "say": "The toothache is on the left side."
+        }
+      ]
+    },
+    {
+      "id": "x-ray-noun",
+      "lemma": "x-ray",
+      "pos": "noun",
+      "senseId": "dental-scan",
+      "ipa": "/ˈɛks.ˌɹeɪ/",
+      "syllables": [
+        "x",
+        "ray"
+      ],
+      "syllableIpa": [
+        "ˈɛks",
+        "ˌɹeɪ"
+      ],
+      "stress": 1,
+      "arpabet": "EH1 K S R EY2",
+      "audio": "assets/audio/words/x-ray-noun.mp3",
+      "audioSlow": "assets/audio/words/x-ray-noun-slow.mp3",
+      "glossYue": "Ｘ光",
+      "glossZh": "Ｘ光",
+      "jyutping": "ik1 si4 gwong1",
+      "collocations": [
+        "an X-ray",
+        "take an X-ray"
+      ],
+      "example": "Could you take an X-ray?",
+      "exampleYue": "可唔可以照一次Ｘ光？",
+      "say": "Could you take an X-ray?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "x-ray",
+      "phrase": false,
+      "audioSha256": "49e7548f33dec9bca8935c1f29851ee5af4a71db80534d080ba704044498cf0d",
+      "register": "日常",
+      "usageNotes": "Ｘ光",
+      "pitfallsYue": "Ｘ光",
+      "related": [],
+      "examples": [
+        {
+          "en": "Could you take an X-ray?",
+          "yue": "可唔可以照一次Ｘ光？",
+          "audio": "assets/audio/words/x-ray-noun.mp3",
+          "audioSlow": "assets/audio/words/x-ray-noun-slow.mp3",
+          "say": "Could you take an X-ray?"
+        },
+        {
+          "en": "The X-ray shows a small cavity.",
+          "yue": "Ｘ光見到一個小蛀洞。",
+          "audio": "assets/audio/words/x-ray-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/x-ray-noun-ex2-slow.mp3",
+          "say": "The X-ray shows a small cavity."
+        }
+      ]
+    },
+    {
+      "id": "filling-noun",
+      "lemma": "filling",
+      "pos": "noun",
+      "senseId": "tooth-repair",
+      "ipa": "/ˈfɪ.lɪŋ/",
+      "syllables": [
+        "fill",
+        "ing"
+      ],
+      "syllableIpa": [
+        "ˈfɪ",
+        "lɪŋ"
+      ],
+      "stress": 1,
+      "arpabet": "F IH1 L IH0 NG",
+      "audio": "assets/audio/words/filling-noun.mp3",
+      "audioSlow": "assets/audio/words/filling-noun-slow.mp3",
+      "glossYue": "補牙",
+      "glossZh": "補牙",
+      "jyutping": "bou2 nga4",
+      "collocations": [
+        "a small filling",
+        "the filling"
+      ],
+      "example": "A small filling should be enough.",
+      "exampleYue": "小小補牙應該夠。",
+      "say": "A small filling should be enough.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "filling",
+      "phrase": false,
+      "audioSha256": "06b4dfa31427ca37bfd96d94c9c16f955e24e85ee30edf4f884e954c04a4a430",
+      "register": "日常",
+      "usageNotes": "補牙",
+      "pitfallsYue": "補牙",
+      "related": [],
+      "examples": [
+        {
+          "en": "A small filling should be enough.",
+          "yue": "小小補牙應該夠。",
+          "audio": "assets/audio/words/filling-noun.mp3",
+          "audioSlow": "assets/audio/words/filling-noun-slow.mp3",
+          "say": "A small filling should be enough."
+        },
+        {
+          "en": "The filling is eight hundred dollars.",
+          "yue": "補牙係八百蚊。",
+          "audio": "assets/audio/words/filling-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/filling-noun-ex2-slow.mp3",
+          "say": "The filling is eight hundred dollars."
+        }
+      ]
+    },
+    {
+      "id": "anaesthetic-noun",
+      "lemma": "anaesthetic",
+      "pos": "noun",
+      "senseId": "numbing-drug",
+      "ipa": "/ˌæ.nəs.ˈθɛ.tɪk/",
+      "syllables": [
+        "an",
+        "aes",
+        "the",
+        "tic"
+      ],
+      "syllableIpa": [
+        "ˌæ",
+        "nəs",
+        "ˈθɛ",
+        "tɪk"
+      ],
+      "stress": 3,
+      "arpabet": "AE2 N AH0 S TH EH1 T IH0 K",
+      "audio": "assets/audio/words/anaesthetic-noun.mp3",
+      "audioSlow": "assets/audio/words/anaesthetic-noun-slow.mp3",
+      "glossYue": "麻醉",
+      "glossZh": "麻醉",
+      "jyutping": "maa4 zeoi3",
+      "collocations": [
+        "the anaesthetic",
+        "use anaesthetic"
+      ],
+      "example": "We use anaesthetic on that area first.",
+      "exampleYue": "我哋會先喺嗰度打麻醉。",
+      "say": "We use anaesthetic on that area first.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "anaesthetic",
+      "phrase": false,
+      "audioSha256": "57e83c421674202f18b70a4ce54f934b6d440f7a53fca09ffdadf5629eee8e72",
+      "register": "日常",
+      "usageNotes": "麻醉",
+      "pitfallsYue": "麻醉",
+      "related": [],
+      "examples": [
+        {
+          "en": "We use anaesthetic on that area first.",
+          "yue": "我哋會先喺嗰度打麻醉。",
+          "audio": "assets/audio/words/anaesthetic-noun.mp3",
+          "audioSlow": "assets/audio/words/anaesthetic-noun-slow.mp3",
+          "say": "We use anaesthetic on that area first."
+        },
+        {
+          "en": "The anaesthetic numbs the left side.",
+          "yue": "麻醉會令左邊冇感覺。",
+          "audio": "assets/audio/words/anaesthetic-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/anaesthetic-noun-ex2-slow.mp3",
+          "say": "The anaesthetic numbs the left side."
+        }
+      ]
+    },
+    {
+      "id": "return-verb",
+      "lemma": "return",
+      "pos": "verb",
+      "senseId": "give-back-car",
+      "ipa": "/ɹɪ.ˈtɝn/",
+      "syllables": [
+        "re",
+        "turn"
+      ],
+      "syllableIpa": [
+        "ɹɪ",
+        "ˈtɝn"
+      ],
+      "stress": 2,
+      "arpabet": "R IH0 T ER1 N",
+      "audio": "assets/audio/words/return-verb.mp3",
+      "audioSlow": "assets/audio/words/return-verb-slow.mp3",
+      "glossYue": "還車",
+      "glossZh": "還車",
+      "jyutping": "waan4 ce1",
+      "collocations": [
+        "return the car",
+        "return it by six"
+      ],
+      "example": "Please return the car by six on Friday.",
+      "exampleYue": "請星期五六點之前還車。",
+      "say": "Please return the car by six on Friday.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "return",
+      "phrase": false,
+      "audioSha256": "4709d0c63db56f076d561cb9b20fced0534cda4e6fa73717f0e8c289894da03b",
+      "register": "日常",
+      "usageNotes": "還車",
+      "pitfallsYue": "還車",
+      "related": [],
+      "examples": [
+        {
+          "en": "Please return the car by six on Friday.",
+          "yue": "請星期五六點之前還車。",
+          "audio": "assets/audio/words/return-verb.mp3",
+          "audioSlow": "assets/audio/words/return-verb-slow.mp3",
+          "say": "Please return the car by six on Friday."
+        },
+        {
+          "en": "What time do I need to return it?",
+          "yue": "我要幾時還車？",
+          "audio": "assets/audio/words/return-verb-ex2.mp3",
+          "audioSlow": "assets/audio/words/return-verb-ex2-slow.mp3",
+          "say": "What time do I need to return it?"
+        }
+      ]
+    },
+    {
+      "id": "excess-noun",
+      "lemma": "excess",
+      "pos": "noun",
+      "senseId": "insurance-share",
+      "ipa": "/ˈɛk.ˌsɛs/",
+      "syllables": [
+        "ex",
+        "cess"
+      ],
+      "syllableIpa": [
+        "ˈɛk",
+        "ˌsɛs"
+      ],
+      "stress": 1,
+      "arpabet": "EH1 K S EH2 S",
+      "audio": "assets/audio/words/excess-noun.mp3",
+      "audioSlow": "assets/audio/words/excess-noun-slow.mp3",
+      "glossYue": "自付額",
+      "glossZh": "自付額",
+      "jyutping": "zi6 fu6 ngaak6",
+      "collocations": [
+        "the insurance excess",
+        "nine hundred dollars excess"
+      ],
+      "example": "The insurance excess is nine hundred dollars.",
+      "exampleYue": "保險自付額係九百蚊。",
+      "say": "The insurance excess is nine hundred dollars.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "excess",
+      "phrase": false,
+      "audioSha256": "1a77ef68a6738d3c67bd3d786057f901ef6c0254da8876fa15eece249fc5feb7",
+      "register": "日常",
+      "usageNotes": "自付額",
+      "pitfallsYue": "自付額",
+      "related": [],
+      "examples": [
+        {
+          "en": "The insurance excess is nine hundred dollars.",
+          "yue": "保險自付額係九百蚊。",
+          "audio": "assets/audio/words/excess-noun.mp3",
+          "audioSlow": "assets/audio/words/excess-noun-slow.mp3",
+          "say": "The insurance excess is nine hundred dollars."
+        },
+        {
+          "en": "What is the excess on this car?",
+          "yue": "呢架車嘅自付額係幾多？",
+          "audio": "assets/audio/words/excess-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/excess-noun-ex2-slow.mp3",
+          "say": "What is the excess on this car?"
+        }
+      ]
+    },
+    {
+      "id": "permit-noun",
+      "lemma": "permit",
+      "pos": "noun",
+      "senseId": "driving-paper",
+      "ipa": "/pɚ.ˈmɪt/",
+      "syllables": [
+        "per",
+        "mit"
+      ],
+      "syllableIpa": [
+        "pɚ",
+        "ˈmɪt"
+      ],
+      "stress": 2,
+      "arpabet": "P ER0 M IH1 T",
+      "audio": "assets/audio/words/permit-noun.mp3",
+      "audioSlow": "assets/audio/words/permit-noun-slow.mp3",
+      "glossYue": "許可證",
+      "glossZh": "許可證",
+      "jyutping": "heoi2 ho2 zing3",
+      "collocations": [
+        "an international permit",
+        "the permit"
+      ],
+      "example": "Do you have an international permit?",
+      "exampleYue": "你有冇國際駕駛許可證？",
+      "say": "Do you have an international permit?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "permit",
+      "phrase": false,
+      "audioSha256": "40bf8649b9b4f9c288694c5ae7350a0db53b2212af2588021f9d11483cdc56aa",
+      "register": "日常",
+      "usageNotes": "許可證",
+      "pitfallsYue": "許可證",
+      "related": [],
+      "examples": [
+        {
+          "en": "Do you have an international permit?",
+          "yue": "你有冇國際駕駛許可證？",
+          "audio": "assets/audio/words/permit-noun.mp3",
+          "audioSlow": "assets/audio/words/permit-noun-slow.mp3",
+          "say": "Do you have an international permit?"
+        },
+        {
+          "en": "Here is my international permit.",
+          "yue": "呢張係我嘅國際許可證。",
+          "audio": "assets/audio/words/permit-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/permit-noun-ex2-slow.mp3",
+          "say": "Here is my international permit."
+        }
+      ]
+    },
+    {
+      "id": "licence-noun",
+      "lemma": "licence",
+      "pos": "noun",
+      "senseId": "driving-card",
+      "ipa": "/ˈlaɪ.səns/",
+      "syllables": [
+        "li",
+        "cence"
+      ],
+      "syllableIpa": [
+        "ˈlaɪ",
+        "səns"
+      ],
+      "stress": 1,
+      "arpabet": "L AY1 S AH0 N S",
+      "audio": "assets/audio/words/licence-noun.mp3",
+      "audioSlow": "assets/audio/words/licence-noun-slow.mp3",
+      "glossYue": "執照",
+      "glossZh": "執照",
+      "jyutping": "zip3 ziu3",
+      "collocations": [
+        "a driving licence",
+        "my licence"
+      ],
+      "example": "Here is my driving licence.",
+      "exampleYue": "呢張係我嘅駕駛執照。",
+      "say": "Here is my driving licence.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "licence",
+      "phrase": false,
+      "audioSha256": "ce8bdf763d86193fb044d9fad8354122bc893799bb96e02b05b38e6bf9830365",
+      "register": "日常",
+      "usageNotes": "執照",
+      "pitfallsYue": "執照",
+      "related": [],
+      "examples": [
+        {
+          "en": "Here is my driving licence.",
+          "yue": "呢張係我嘅駕駛執照。",
+          "audio": "assets/audio/words/licence-noun.mp3",
+          "audioSlow": "assets/audio/words/licence-noun-slow.mp3",
+          "say": "Here is my driving licence."
+        },
+        {
+          "en": "The licence is in the folder.",
+          "yue": "執照喺個文件夾入面。",
+          "audio": "assets/audio/words/licence-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/licence-noun-ex2-slow.mp3",
+          "say": "The licence is in the folder."
+        }
+      ]
+    },
+    {
+      "id": "cake-noun",
+      "lemma": "cake",
+      "pos": "noun",
+      "senseId": "birthday-bake",
+      "ipa": "/ˈkeɪk/",
+      "syllables": [
+        "cake"
+      ],
+      "syllableIpa": [
+        "ˈkeɪk"
+      ],
+      "stress": 1,
+      "arpabet": "K EY1 K",
+      "audio": "assets/audio/words/cake-noun.mp3",
+      "audioSlow": "assets/audio/words/cake-noun-slow.mp3",
+      "glossYue": "蛋糕",
+      "glossZh": "蛋糕",
+      "jyutping": "daan6 gou1",
+      "collocations": [
+        "a cake for ten",
+        "the birthday cake"
+      ],
+      "example": "I would like a cake in a size for ten people.",
+      "exampleYue": "我想要一個十人份嘅蛋糕。",
+      "say": "I would like a cake in a size for ten people.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "cake",
+      "phrase": false,
+      "audioSha256": "568a1dc91c9c84c5e68e0f267d4060c364d9aa67bc08d718e7047aafaf80fd48",
+      "register": "日常",
+      "usageNotes": "蛋糕",
+      "pitfallsYue": "蛋糕",
+      "related": [],
+      "examples": [
+        {
+          "en": "I would like a cake in a size for ten people.",
+          "yue": "我想要一個十人份嘅蛋糕。",
+          "audio": "assets/audio/words/cake-noun.mp3",
+          "audioSlow": "assets/audio/words/cake-noun-slow.mp3",
+          "say": "I would like a cake in a size for ten people."
+        },
+        {
+          "en": "Your cake will be ready at three on Saturday.",
+          "yue": "你個蛋糕星期六三點可以取。",
+          "audio": "assets/audio/words/cake-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/cake-noun-ex2-slow.mp3",
+          "say": "Your cake will be ready at three on Saturday."
+        }
+      ]
+    },
+    {
+      "id": "candle-noun",
+      "lemma": "candle",
+      "pos": "noun",
+      "senseId": "birthday-light",
+      "ipa": "/ˈkæn.dəl/",
+      "syllables": [
+        "can",
+        "dle"
+      ],
+      "syllableIpa": [
+        "ˈkæn",
+        "dəl"
+      ],
+      "stress": 1,
+      "arpabet": "K AE1 N D AH0 L",
+      "audio": "assets/audio/words/candle-noun.mp3",
+      "audioSlow": "assets/audio/words/candle-noun-slow.mp3",
+      "glossYue": "蠟燭",
+      "glossZh": "蠟燭",
+      "jyutping": "laap6 zuk1",
+      "collocations": [
+        "eight candles",
+        "the candles"
+      ],
+      "example": "Do you have candles too?",
+      "exampleYue": "你有冇蠟燭？",
+      "say": "Do you have candles too?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "candle",
+      "phrase": false,
+      "audioSha256": "b1f31ebe648eae553f81f22ba3e2791315d74eeaaaa61aacca4b0a04d47da505",
+      "register": "日常",
+      "usageNotes": "蠟燭",
+      "pitfallsYue": "蠟燭",
+      "related": [],
+      "examples": [
+        {
+          "en": "Do you have candles too?",
+          "yue": "你有冇蠟燭？",
+          "audio": "assets/audio/words/candle-noun.mp3",
+          "audioSlow": "assets/audio/words/candle-noun-slow.mp3",
+          "say": "Do you have candles too?"
+        },
+        {
+          "en": "I will add eight candles.",
+          "yue": "我會加八枝蠟燭。",
+          "audio": "assets/audio/words/candle-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/candle-noun-ex2-slow.mp3",
+          "say": "I will add eight candles."
+        }
+      ]
+    },
+    {
+      "id": "flavour-noun",
+      "lemma": "flavour",
+      "pos": "noun",
+      "senseId": "taste-kind",
+      "ipa": "/ˈfleɪ.vɚ/",
+      "syllables": [
+        "fla",
+        "vour"
+      ],
+      "syllableIpa": [
+        "ˈfleɪ",
+        "vɚ"
+      ],
+      "stress": 1,
+      "arpabet": "F L EY1 V ER0",
+      "audio": "assets/audio/words/flavour-noun.mp3",
+      "audioSlow": "assets/audio/words/flavour-noun-slow.mp3",
+      "glossYue": "口味",
+      "glossZh": "口味",
+      "jyutping": "hau2 mei6",
+      "collocations": [
+        "mango flavour",
+        "what flavour"
+      ],
+      "example": "What flavour would you like, chocolate or mango?",
+      "exampleYue": "你想要朱古力定係芒果口味？",
+      "say": "What flavour would you like, chocolate or mango?",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "flavour",
+      "phrase": false,
+      "audioSha256": "e216b0d9c07b194118d78ea5277c89c9e93e3a6ac5610e329d7f967c909f51be",
+      "register": "日常",
+      "usageNotes": "口味",
+      "pitfallsYue": "口味",
+      "related": [],
+      "examples": [
+        {
+          "en": "What flavour would you like, chocolate or mango?",
+          "yue": "你想要朱古力定係芒果口味？",
+          "audio": "assets/audio/words/flavour-noun.mp3",
+          "audioSlow": "assets/audio/words/flavour-noun-slow.mp3",
+          "say": "What flavour would you like, chocolate or mango?"
+        },
+        {
+          "en": "Mango is the flavour I want.",
+          "yue": "我想要芒果口味。",
+          "audio": "assets/audio/words/flavour-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/flavour-noun-ex2-slow.mp3",
+          "say": "Mango is the flavour I want."
         }
       ]
     }

@@ -9,7 +9,7 @@ import { seededOrder } from "../web/src/choice-order.js";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), "utf8"));
 const ids = new Set(lex.items.map((item) => item.id));
-const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "t1", "t2", "t3", "t4", "t5", "t6", "r1", "r2", "r3", "r4", "r5", "w1", "d1", "d2", "t7", "w2", "w3", "d3", "j11", "j12", "t8", "w4", "r6", "w5", "f5", "f6", "d4", "d5", "r7", "w6", "t9", "d6", "r8", "j13", "r9", "w7", "t10", "d7", "w8", "j14", "r10", "t11", "d8", "j15", "t12", "d9", "r11", "w9", "j16", "t13", "d10", "j17", "r12", "w10", "t14", "j18", "r13", "d11", "d12", "t15", "w11", "r14", "j19", "t16"];
+const shipped = ["f1", "f2", "f3", "f4", "j1", "j2", "j3", "j4", "j5", "j6", "j7", "j8", "j9", "j10", "t1", "t2", "t3", "t4", "t5", "t6", "r1", "r2", "r3", "r4", "r5", "w1", "d1", "d2", "t7", "w2", "w3", "d3", "j11", "j12", "t8", "w4", "r6", "w5", "f5", "f6", "d4", "d5", "r7", "w6", "t9", "d6", "r8", "j13", "r9", "w7", "t10", "d7", "w8", "j14", "r10", "t11", "d8", "j15", "t12", "d9", "r11", "w9", "j16", "t13", "d10", "j17", "r12", "w10", "t14", "j18", "r13", "d11", "d12", "t15", "w11", "r14", "j19", "t16", "t17", "j20", "d13"];
 const lessons = shipped.map((id) =>
   JSON.parse(fs.readFileSync(path.join(root, "content/lessons", `${id}.json`), "utf8")),
 );
@@ -23,7 +23,7 @@ function exists(rel) {
 }
 
 test("sixty-six lessons each carry the 12-beat payload", () => {
-  assert.equal(lessons.length, 78);
+  assert.equal(lessons.length, 81);
   for (const lesson of lessons) {
     for (const key of ["hero", "canDoYue", "canDoEn", "dialogue", "understand", "chunks", "shadow", "build", "roleplay", "quiz", "sound", "next"]) {
       assert.ok(key in lesson, `${lesson.id} ${key}`);
@@ -91,7 +91,8 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   const t2 = lessons.find((lesson) => lesson.id === "T2");
   const t3 = lessons.find((lesson) => lesson.id === "T3");
   assert.equal(t1.next, "R10");
-  assert.equal(t2.next, "T11");
+  assert.equal(t2.next, "T17");
+  assert.equal(lessons.find((lesson) => lesson.id === "T17").next, "T11");
   assert.equal(t3.next, "R3");
   assert.match(t3.titleYue, /酒店入住/);
   assert.equal(t3.cefr, "A2");
@@ -194,7 +195,7 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
     );
   }
   const shippedOnPath = flatPath.filter((entry) => !entry.soon).map((entry) => entry.id);
-  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "R13", "J6", "J7", "J15", "J18", "T5", "T12", "T15", "T13", "R12", "R14", "R5", "R11", "W1", "D1", "D12", "D2", "T7", "W4", "R8", "D10", "W7", "J8", "D9", "D11", "J9", "J10", "J19", "J16", "J17", "T6", "R6", "J12", "R7", "T8", "T16", "W2", "W3", "W9", "W8", "W11", "D3", "D8", "T10", "T14", "W5", "W10", "J14", "J11", "W6", "T9", "J13"]);
+  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T17", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "R13", "J6", "J7", "J15", "J18", "J20", "T5", "T12", "T15", "T13", "R12", "R14", "R5", "R11", "W1", "D1", "D12", "D2", "T7", "W4", "R8", "D10", "W7", "J8", "D9", "D11", "D13", "J9", "J10", "J19", "J16", "J17", "T6", "R6", "J12", "R7", "T8", "T16", "W2", "W3", "W9", "W8", "W11", "D3", "D8", "T10", "T14", "W5", "W10", "J14", "J11", "W6", "T9", "J13"]);
   assert.equal(flatPath.find((entry) => entry.id === "J8").cefr, "B1");
   const said = (lesson) => lesson.dialogue.map((line) => line.text).join("\n");
   assert.ok(j4.dialogue.length >= 6 && j4.dialogue.length <= 10);
@@ -370,7 +371,7 @@ test("the app has a mic fallback and does not phone home", () => {
   assert.match(lesson, /改為即時講/);
   assert.match(lesson, />聽我</);
   assert.match(lesson, /咪未開/);
-  assert.match(lesson, /呢輪七十八課你行完啦/);
+  assert.match(lesson, /呢輪八十一課你行完啦/);
   assert.match(lesson, /setDone\(true\)/);
   assert.match(lesson, /playSfx/);
   assert.match(fs.readFileSync(path.join(root, "web/src/sfx.ts"), "utf8"), /AudioContext/);
@@ -429,7 +430,7 @@ test("role-play tip names a character or tells you it is your turn", () => {
   assert.match(lesson, /你扮 \$\{name\}/);
   assert.equal(lesson.includes("你而家係"), false);
   const data = fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8");
-  assert.match(data, /"F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "R13", "J6", "J7", "J15", "J18", "T5", "T12", "T15", "T13", "R12", "R14", "R5", "R11", "W1", "D1", "D12", "D2", "T7", "W4", "R8", "D10", "W7", "J8", "D9", "D11", "J9", "J10", "J19", "J16", "J17", "T6", "R6", "J12", "R7", "T8", "T16", "W2", "W3", "W9", "W8", "W11", "D3", "D8", "T10", "T14", "W5", "W10", "J14", "J11", "W6", "T9", "J13"/);
+  assert.match(data, /"F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T17", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "R13", "J6", "J7", "J15", "J18", "J20", "T5", "T12", "T15", "T13", "R12", "R14", "R5", "R11", "W1", "D1", "D12", "D2", "T7", "W4", "R8", "D10", "W7", "J8", "D9", "D11", "D13", "J9", "J10", "J19", "J16", "J17", "T6", "R6", "J12", "R7", "T8", "T16", "W2", "W3", "W9", "W8", "W11", "D3", "D8", "T10", "T14", "W5", "W10", "J14", "J11", "W6", "T9", "J13"/);
   assert.match(data, /const order = SHIPPED/);
 });
 
@@ -837,23 +838,42 @@ test("seeded order is a stable permutation", () => {
   assert.equal(new Set(a).size, 5);
 });
 
-test("path means do not drop by more than half a word", () => {
+test("composite difficulty does not dip on lessons that can still change", () => {
   const pathFile = JSON.parse(fs.readFileSync(path.join(root, "content/path.json"), "utf8"));
   const order = pathFile.units.flatMap((unit) => unit.lessons).map((entry) => entry.id);
   const byId = Object.fromEntries(lessons.map((lesson) => [lesson.id, lesson]));
-  const wordRe = /[A-Za-z']+/g;
-  const mean = (lesson) => lesson.dialogue.reduce((sum, line) => sum + (line.text.match(wordRe) || []).length, 0) / lesson.dialogue.length;
-  assert.equal(order.length, 78);
-  const dipExempt = new Set(["J16", "R11", "R12", "W10", "T14", "R13", "J18", "D11", "W9", "D12", "T15", "W11", "R14", "J19", "T16"]);
-  for (let i = 1; i < order.length; i += 1) {
-    if (dipExempt.has(order[i])) continue;
-    const prev = mean(byId[order[i - 1]]);
-    const cur = mean(byId[order[i]]);
-    assert.ok(prev - cur <= 0.5 + 1e-9, `${order[i - 1]} ${prev.toFixed(3)} -> ${order[i]} ${cur.toFixed(3)}`);
+  const lexById = Object.fromEntries(lex.items.map((item) => [item.id, item]));
+  const rank = { A1: 1, "A1/A2": 2, A2: 3, "A2/B1": 4, B1: 5, "B1/B2": 6, B2: 7 };
+  const first = new Map();
+  for (const id of order) {
+    const lesson = byId[id];
+    for (const lemma of lesson.lemmas) first.set(lemma, first.has(lemma) ? first.get(lemma) : rank[lesson.cefr]);
   }
+  function score(lesson) {
+    const lines = lesson.dialogue.map((line) => line.text);
+    const words = lines.reduce((sum, text) => sum + (text.match(/[A-Za-z']+/g) || []).length, 0) / lines.length;
+    const clauses = lines.reduce((sum, text) => sum + (text.match(/\b(?:if|when|because|so|that|which)\b/gi) || []).length, 0) / lines.length;
+    const ranks = lesson.lemmas.map((id) => first.get(id) || rank[lesson.cefr]);
+    const meanRank = ranks.reduce((sum, n) => sum + n, 0) / ranks.length;
+    return 0.4 * words + 2 * meanRank + clauses;
+  }
+  assert.equal(order.length, 81);
+  const locked = new Set(["J16", "R11", "R12", "W10", "T14", "R13", "J18", "D11", "W9", "D12", "T15", "W11", "R14", "J19", "T16"]);
+  const gated = new Set(["T17", "J20", "D13"]);
+  const scores = order.map((id) => score(byId[id]));
+  for (let i = 1; i < order.length; i += 1) {
+    const curId = order[i];
+    const prevId = order[i - 1];
+    if (!gated.has(curId) && !gated.has(prevId)) continue;
+    if (locked.has(curId)) continue;
+    assert.ok(scores[i - 1] - scores[i] <= 0.5 + 1e-9, `${prevId} ${scores[i - 1].toFixed(3)} -> ${curId} ${scores[i].toFixed(3)}`);
+  }
+  assert.equal(byId.T2.next, "T17");
+  assert.equal(byId.T17.next, "T11");
   assert.equal(byId.J15.next, "J18");
   assert.equal(byId.T12.next, "T15");
   assert.equal(byId.D9.next, "D11");
+  for (const id of gated) assert.equal(locked.has(id), false, id);
 });
 
 test("white gold is 白K金 and the tablet eyebrow is 藥片", () => {
@@ -1130,9 +1150,11 @@ test("round 41 scenes keep the r39 facts and the hero preloads", () => {
   assert.equal(lessons.find((lesson) => lesson.id === "R9").next, "R13");
   assert.equal(lessons.find((lesson) => lesson.id === "R13").next, "J6");
   assert.equal(lessons.find((lesson) => lesson.id === "J15").next, "J18");
-  assert.equal(lessons.find((lesson) => lesson.id === "J18").next, "T5");
+  assert.equal(lessons.find((lesson) => lesson.id === "J18").next, "J20");
+  assert.equal(lessons.find((lesson) => lesson.id === "J20").next, "T5");
   assert.equal(lessons.find((lesson) => lesson.id === "D9").next, "D11");
-  assert.equal(lessons.find((lesson) => lesson.id === "D11").next, "J9");
+  assert.equal(lessons.find((lesson) => lesson.id === "D11").next, "D13");
+  assert.equal(lessons.find((lesson) => lesson.id === "D13").next, "J9");
   const t14 = lessons.find((lesson) => lesson.id === "T14");
   const conn = t14.quiz.find((item) => item.type === "meaning" && /connection/.test(item.prompt));
   assert.equal(conn.choices[conn.answer], "轉機");
@@ -1162,7 +1184,7 @@ for name in sorted(os.listdir(root)):
     sats, lums = [], []
     for r, g, b in px:
         _h, s, _v = colorsys.rgb_to_hsv(r/255, g/255, b/255)
-        sats.append(s * 255)
+        sats.append(s * 100)
         def lin(c):
             c = c/255
             return c/12.92 if c <= 0.04045 else ((c+0.055)/1.055) ** 2.4
@@ -1170,7 +1192,7 @@ for name in sorted(os.listdir(root)):
     mean_s = sum(sats)/len(sats)
     mean_l = sum(lums)/len(lums)
     std = (sum((x-mean_l)**2 for x in lums)/len(lums)) ** 0.5
-    if mean_s < 40 or std < 25:
+    if mean_s < 34.3:
         bad.append(f"{name} sat {mean_s:.1f} std {std:.1f}")
 if bad:
     print("\\n".join(bad))

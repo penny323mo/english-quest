@@ -1,0 +1,338 @@
+{
+  "id": "D13",
+  "unit": "D",
+  "titleYue": "睇牙醫",
+  "titleEn": "At the dentist",
+  "canDoYue": "你識話左邊牙痛，要求照Ｘ光，分辨補牙同杜牙根，問麻醉同價錢，同埋兩小時內唔好食嘢。",
+  "canDoEn": "Say the toothache is on the left, ask for an X-ray, compare a filling with a root canal, ask about anaesthetic and the cost, and wait two hours before eating.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/d13.webp",
+  "cast": [
+    "tom",
+    "ben"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "toothache-noun",
+    "x-ray-noun",
+    "filling-noun",
+    "anaesthetic-noun"
+  ],
+  "topicTags": [
+    "牙痛",
+    "Ｘ光",
+    "補牙",
+    "麻醉"
+  ],
+  "next": "J9",
+  "sound": {
+    "ipa": "/eɪ/",
+    "title": "X-ray 入面嗰個音",
+    "note": "X-ray 有 /eɪ/。ache 有 /eɪ/。",
+    "pairs": [
+      {
+        "a": "toothache-noun",
+        "b": "filling-noun"
+      },
+      {
+        "a": "x-ray-noun",
+        "b": "anaesthetic-noun"
+      }
+    ],
+    "drill": [
+      "toothache-noun",
+      "x-ray-noun",
+      "filling-noun",
+      "anaesthetic-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "d13-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Hi. I've had a bad toothache on the left side since last night.",
+      "glossYue": "你好。由尋晚開始，左邊牙痛得好犀利。",
+      "audio": "assets/audio/lines/d13-l1.mp3",
+      "audioSlow": "assets/audio/lines/d13-l1-slow.mp3",
+      "say": "Hi. I've had a bad toothache on the left side since last night.",
+      "hideGloss": false
+    },
+    {
+      "id": "d13-l2",
+      "speaker": "ben",
+      "speakerLabel": "Ben",
+      "text": "I see. Does that toothache on the left hurt when you bite down?",
+      "glossYue": "明白。左邊咬落去痛唔痛？",
+      "audio": "assets/audio/lines/d13-l2.mp3",
+      "audioSlow": "assets/audio/lines/d13-l2-slow.mp3",
+      "say": "I see. Does that toothache on the left hurt when you bite down?",
+      "hideGloss": false
+    },
+    {
+      "id": "d13-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Yes, it hurts when I bite. Could you please take an X-ray?",
+      "glossYue": "痛，一咬就痛。可唔可以照一次Ｘ光？",
+      "audio": "assets/audio/lines/d13-l3.mp3",
+      "audioSlow": "assets/audio/lines/d13-l3-slow.mp3",
+      "say": "Yes, it hurts when I bite. Could you please take an X-ray?",
+      "hideGloss": false
+    },
+    {
+      "id": "d13-l4",
+      "speaker": "ben",
+      "speakerLabel": "Ben",
+      "text": "Yes. The X-ray shows a small cavity, so a filling should be enough.",
+      "glossYue": "可以。Ｘ光見到一個小蛀洞，所以補牙應該夠。",
+      "audio": "assets/audio/lines/d13-l4.mp3",
+      "audioSlow": "assets/audio/lines/d13-l4-slow.mp3",
+      "say": "Yes. The X-ray shows a small cavity, so a filling should be enough.",
+      "hideGloss": false
+    },
+    {
+      "id": "d13-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Is a small filling enough, or do I still need a root canal?",
+      "glossYue": "小小補牙夠唔夠，定係要杜牙根？",
+      "audio": "assets/audio/lines/d13-l5.mp3",
+      "audioSlow": "assets/audio/lines/d13-l5-slow.mp3",
+      "say": "Is a small filling enough, or do I still need a root canal?",
+      "hideGloss": false
+    },
+    {
+      "id": "d13-l6",
+      "speaker": "ben",
+      "speakerLabel": "Ben",
+      "text": "The small one is enough, and we use anaesthetic on that area first.",
+      "glossYue": "小小嗰個夠，我哋會先喺嗰度打麻醉。",
+      "audio": "assets/audio/lines/d13-l6.mp3",
+      "audioSlow": "assets/audio/lines/d13-l6-slow.mp3",
+      "say": "The small one is enough, and we use anaesthetic on that area first.",
+      "hideGloss": false
+    },
+    {
+      "id": "d13-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "What will the filling cost me, and when is the next visit?",
+      "glossYue": "補牙使幾多，下一次幾時？",
+      "audio": "assets/audio/lines/d13-l7.mp3",
+      "audioSlow": "assets/audio/lines/d13-l7-slow.mp3",
+      "say": "What will the filling cost me, and when is the next visit?",
+      "hideGloss": false
+    },
+    {
+      "id": "d13-l8",
+      "speaker": "ben",
+      "speakerLabel": "Ben",
+      "text": "It is eight hundred dollars for the filling. Don't eat for two hours.",
+      "glossYue": "補牙八百蚊。兩小時內唔好食嘢。",
+      "audio": "assets/audio/lines/d13-l8.mp3",
+      "audioSlow": "assets/audio/lines/d13-l8-slow.mp3",
+      "say": "It is eight hundred dollars for the filling. Don't eat for two hours.",
+      "hideGloss": false
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你同 Ben 傾呢件事。等對方講完先答。",
+    "turns": [
+      {
+        "partner": "Ben",
+        "partnerId": "ben",
+        "line": "I see. Does that toothache on the left hurt when you bite down?",
+        "audio": "assets/audio/lines/d13-l2.mp3",
+        "audioSlow": "assets/audio/lines/d13-l2-slow.mp3",
+        "expect": "Yes, it hurts when I bite. Could you please take an X-ray?",
+        "keywords": [
+          "hurts",
+          "bite"
+        ],
+        "modelAudio": "assets/audio/lines/d13-l3.mp3",
+        "modelSlow": "assets/audio/lines/d13-l3-slow.mp3"
+      },
+      {
+        "partner": "Ben",
+        "partnerId": "ben",
+        "line": "Yes. The X-ray shows a small cavity, so a filling should be enough.",
+        "audio": "assets/audio/lines/d13-l4.mp3",
+        "audioSlow": "assets/audio/lines/d13-l4-slow.mp3",
+        "expect": "Is a small filling enough, or do I still need a root canal?",
+        "keywords": [
+          "small",
+          "filling"
+        ],
+        "modelAudio": "assets/audio/lines/d13-l5.mp3",
+        "modelSlow": "assets/audio/lines/d13-l5-slow.mp3"
+      },
+      {
+        "partner": "Ben",
+        "partnerId": "ben",
+        "line": "The small one is enough, and we use anaesthetic on that area first.",
+        "audio": "assets/audio/lines/d13-l6.mp3",
+        "audioSlow": "assets/audio/lines/d13-l6-slow.mp3",
+        "expect": "What will the filling cost me, and when is the next visit?",
+        "keywords": [
+          "filling",
+          "cost"
+        ],
+        "modelAudio": "assets/audio/lines/d13-l7.mp3",
+        "modelSlow": "assets/audio/lines/d13-l7-slow.mp3"
+      }
+    ]
+  },
+  "understand": [
+    {
+      "prompt": "Hi. I've had a bad toothache on the left side since last night. 呢句即係點？",
+      "choices": [
+        "關於補牙",
+        "關於牙痛",
+        "關於麻醉"
+      ],
+      "answer": 1,
+      "explain": "牙痛。"
+    },
+    {
+      "prompt": "Yes. The X-ray shows a small cavity, so a filling should be enough. 呢句即係點？",
+      "choices": [
+        "關於Ｘ光",
+        "關於麻醉",
+        "關於牙痛"
+      ],
+      "answer": 0,
+      "explain": "Ｘ光。"
+    },
+    {
+      "prompt": "The small one is enough, and we use anaesthetic on that area first. 呢句即係點？",
+      "choices": [
+        "關於牙痛",
+        "關於補牙",
+        "關於麻醉"
+      ],
+      "answer": 2,
+      "explain": "麻醉。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Hi. I've had a bad ___ on the left side since last night.",
+      "example": "Hi. I've had a bad toothache on the left side since last night.",
+      "glossYue": "你好。由尋晚開始，左邊牙痛得好犀利。",
+      "answer": "toothache",
+      "choices": [
+        "toothache",
+        "filling",
+        "anaesthetic"
+      ]
+    },
+    {
+      "pattern": "Yes. The ___ shows a small cavity, so a filling should be enough.",
+      "example": "Yes. The X-ray shows a small cavity, so a filling should be enough.",
+      "glossYue": "可以。Ｘ光見到一個小蛀洞，所以補牙應該夠。",
+      "answer": "X-ray",
+      "choices": [
+        "X-ray",
+        "toothache",
+        "anaesthetic"
+      ]
+    },
+    {
+      "pattern": "The small one is enough, and we use ___ on that area first.",
+      "example": "The small one is enough, and we use anaesthetic on that area first.",
+      "glossYue": "小小嗰個夠，我哋會先喺嗰度打麻醉。",
+      "answer": "anaesthetic",
+      "choices": [
+        "anaesthetic",
+        "filling",
+        "toothache"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想用呢課嘅講法。你點講？",
+      "choices": [
+        "Yes, it hurts when I bite. Could you please take an X-ray?",
+        "Is a small filling enough, or do I still need a root canal?",
+        "What will the filling cost me, and when is the next visit?"
+      ],
+      "answer": 0,
+      "explain": "用呢句。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "filling",
+        "hours"
+      ],
+      "answer": [
+        "filling",
+        "hours"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "filling",
+        "toothache",
+        "anaesthetic"
+      ],
+      "answer": 0,
+      "lemma": "filling-noun"
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "choices": [
+        "anaesthetic",
+        "filling",
+        "toothache"
+      ],
+      "answer": 1,
+      "lemma": "filling-noun"
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "麻醉",
+        "牙痛",
+        "補牙"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "牙痛",
+        "麻醉",
+        "補牙"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word fits this lesson?",
+      "choices": [
+        "toothache",
+        "anaesthetic",
+        "filling"
+      ],
+      "answer": 1,
+      "explain": "麻醉。"
+    }
+  ],
+  "shadow": {
+    "lineId": "d13-l1",
+    "hint": "Hi. I've had a bad toothache on the left side since last night."
+  }
+}

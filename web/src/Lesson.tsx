@@ -249,7 +249,8 @@ function Player({ lesson }: { lesson: Lesson }) {
 }
 
 function Hook({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
-  const [ready, setReady] = useState(false);
+  const [decoded, setDecoded] = useState(false);
+  const [waited, setWaited] = useState(false);
   useEffect(() => {
     let live = true;
     const urls = [
@@ -257,16 +258,21 @@ function Hook({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
       ...lesson.cast.map((id) => asset(`assets/art/refs/${id}.webp`)),
     ];
     const timer = window.setTimeout(() => {
-      if (live) setReady(true);
+      if (live) setWaited(true);
     }, 1200);
+    const fallback = window.setTimeout(() => {
+      if (live) setDecoded(true);
+    }, 8000);
     whenArtDecoded(urls).then(() => {
-      if (live) setReady(true);
+      if (live) setDecoded(true);
     });
     return () => {
       live = false;
       window.clearTimeout(timer);
+      window.clearTimeout(fallback);
     };
   }, [lesson]);
+  const ready = waited && decoded;
   return (
     <>
       <p className="who">{lesson.minutes} 分鐘 · {BEATS[0]}</p>
@@ -732,7 +738,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪七十八課你行完啦。到期嘅卡會喺練習等你。</p>
+        <p className="lede">呢輪八十一課你行完啦。到期嘅卡會喺練習等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );

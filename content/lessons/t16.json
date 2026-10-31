@@ -16,7 +16,10 @@
     "scratch-noun",
     "fee-noun",
     "time-noun",
-    "return-noun"
+    "return-verb",
+    "excess-noun",
+    "permit-noun",
+    "licence-noun"
   ],
   "topicTags": [
     "租車",
@@ -31,19 +34,19 @@
     "note": "licence 有 /aɪ/。time 有 /aɪ/。",
     "pairs": [
       {
-        "a": "scratch-noun",
-        "b": "fee-noun"
+        "a": "licence-noun",
+        "b": "permit-noun"
       },
       {
-        "a": "time-noun",
-        "b": "return-noun"
+        "a": "excess-noun",
+        "b": "return-verb"
       }
     ],
     "drill": [
-      "scratch-noun",
-      "fee-noun",
-      "time-noun",
-      "return-noun"
+      "licence-noun",
+      "permit-noun",
+      "excess-noun",
+      "return-verb"
     ]
   },
   "dialogue": [
@@ -188,9 +191,9 @@
     {
       "prompt": "Hi. I'd like to rent a car. Here is my driving licence. 呢句即係點？",
       "choices": [
-        "關於自付額",
+        "關於執照",
         "講緊租車",
-        "唔係執照"
+        "關於刮痕"
       ],
       "answer": 1,
       "explain": "租車。"
@@ -198,22 +201,22 @@
     {
       "prompt": "The excess is nine hundred dollars. Fuel is full to full. 呢句即係點？",
       "choices": [
-        "講緊執照",
-        "唔係租車",
-        "關於自付額"
+        "關於自付額",
+        "講緊租車",
+        "關於刮痕"
       ],
       "answer": 0,
-      "explain": "執照。"
+      "explain": "自付額。"
     },
     {
       "prompt": "Yes. I've marked that scratch, and the rental fee stays the same. 呢句即係點？",
       "choices": [
-        "唔係租車",
         "關於執照",
-        "講緊自付額"
+        "關於自付額",
+        "講緊刮痕"
       ],
       "answer": 2,
-      "explain": "自付額。"
+      "explain": "刮痕。"
     }
   ],
   "chunks": [
