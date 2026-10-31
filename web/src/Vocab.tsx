@@ -264,7 +264,7 @@ function WordCard({
           {openMore && (
             <>
               {extra.map((example) => <ExampleRow key={example.en} example={example} />)}
-              {item.related && item.related.length > 0 && (
+              {item.related && item.related.some((id) => lexById[id]) && (
                 <div className="word-related">
                   {item.related.map((id) => {
                     const related = lexById[id];

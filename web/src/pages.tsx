@@ -369,7 +369,7 @@ export function WordDetail({ id }: { id: string }) {
           <button className="btn quiet" type="button" onClick={() => playAsset(example.audio)}>聽例句</button>
         </div>
       ))}
-      {more && item.related && item.related.length > 0 && (
+      {more && item.related && item.related.some((relatedId) => lexById[relatedId]) && (
         <p className="fine">
           相關：
           {item.related.map((relatedId) => {

@@ -1,5 +1,18 @@
 # Changelog — English Quest
 
+## Round 54
+- New lessons frozen pending Lex≥7. No new lesson id or hero. The path stays 97 and the end copy stays 呢輪九十七課你行完啦。 Pillow stays in `.github/workflows/ci.yml`.
+- #166 closed. `tests/audio-refs.mjs` requires every lexicon and lines `audio` / `audioSlow` path to be in `git ls-files` and on disk, including email-noun, headache-noun, stamp-verb, weight-noun, and savings-account-phrase at normal and slow speed. The test passed. A supervisor render also rewrote example clips in the worktree. Those files were left in place, and no referenced clip was deleted by this round.
+- #164 closed. `mouthsFor` already maps each lesson IPA, and the `/θ/` caption appears only when the IPA contains θ. The mouth test passed. T21 at 390 shows the `/eɪ/` caption.
+- #165 closed. The seven B2 lessons already teach a one-phoneme pair on the key word (screening `/i/`, valuation `/eɪ/`, banquet `/æ/`, forecast `/æ/`, reimbursement `/ɝ/`, hallmark `/l/`, declaration `/eɪ/`). The pair test passed.
+- #161 closed. Understand items do not use 問今日天氣, 問鎖匙, or 問房號. That test passed.
+- #136 and #163 closed. R4’s still-water answer is 冇氣. T8’s goods answer is 貨物. screening, carousel, and reimbursement now gloss as 安檢, 行李轉盤, and 報銷, with usage notes 呢課用安檢。 / 呢課用行李轉盤。 / 呢課用報銷。 The path-wide 呢句入面 test passed. Example sentences were not rewritten for these three ids.
+- Dialogue: W5 line 7 now accepts the two-hundred-dollar offer and keeps the reference number on the box. J22 line 4 says plain lettering finishes on Friday before the Saturday wedding. Both clips were re-rendered at normal and slow speed. T20, T21, J24, J23, R17, D3, W13, and J15 already answer the line in front of them.
+- #143 open. The three-lesson window (drop at most 2.5) still passes. The longer slide stays T4→R9 2.875, R4→R13 4.500, T12→R12 2.625, and W7→D11 3.000. R13, R12, and D11 are fixture-locked, so those word counts were left. B2 still tops out at 15.750.
+- #167 closed. On the word card the IPA wraps under the stress chip instead of ellipsizing, and the related row is omitted when none of the related ids resolve. At 390 the work card scroll width stays 390 and the card has no inner overflow.
+- #154 open. W8 and W9 were not redrawn.
+- Open, left for the supervisor lexicon pass: 126 example skeletons are each shared by more than three lemmas (the first failure is “can you it for me now” ×23), and eight third examples still end in “for now” or “tonight” (comfortable, special, matching, concerned, sometimes, never, cancelled, deliver). This round did not bulk-rewrite those sentences. Tests are 75 pass / 2 fail on those two checks. Typecheck is clean. The service worker precache is 5508 entries (120909.66 KiB) (`assets/index-DDBM33Zt.js`, `assets/index-COQYOQay.css`, `assets/shell-CvzQKx29.js`). At 390 the path shows 97 lessons and scroll width stays 390. W15 and J24 reach 搞掂. T21 reaches 呢輪九十七課你行完啦。 Lighthouse mobile performance, accessibility, best practices, and SEO are 1 (fetched 2026-10-31T17:13:07.017Z).
+
 ## Round 53
 - New lessons frozen pending Lex≥7. The path stays 97 lessons and the end copy stays 呢輪九十七課你行完啦。 Pillow stays in `.github/workflows/ci.yml`.
 - The ten restored headword clips were already tracked on HEAD. A test now fails if any `audio` or `audioSlow` path in `content/lexicon.json` or `content/lines.json` is missing from `git ls-files`. Eleven changed lesson lines were re-rendered with Piper at normal and slow speed: t20-l6, t21-l2, t21-l3, j24-l2, r17-l4, r17-l8, w13-l8, w15-l6, d3-l3, j23-l3, and j23-l4. Headword hashes were not restamped. inconvenience stays “Sorry for the inconvenience.” and keeps sha 674d3d686a1dc7caeb16a2fc50d47ba136eeda696be8302f7b187088ea748e17. `render_audio.main` was not called.

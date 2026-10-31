@@ -98,11 +98,11 @@
       "id": "w5-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The clasp broke last week. The reference number is on the box.",
-      "glossYue": "個扣上星期爛咗。參考編號喺盒上面。",
+      "text": "Two hundred dollars works, and the reference number is on the box.",
+      "glossYue": "二百蚊得，參考編號喺盒上面。",
       "audio": "assets/audio/lines/w5-l7.mp3",
       "audioSlow": "assets/audio/lines/w5-l7-slow.mp3",
-      "say": "The clasp broke last week. The reference number is on the box.",
+      "say": "Two hundred dollars works, and the reference number is on the box.",
       "hideGloss": true
     },
     {
@@ -257,10 +257,10 @@
         "line": "If the clasp cannot be repaired, we can offer a replacement or compensation of two hundred dollars.",
         "audio": "assets/audio/lines/w5-l6.mp3",
         "audioSlow": "assets/audio/lines/w5-l6-slow.mp3",
-        "expect": "The clasp broke last week. The reference number is on the box.",
+        "expect": "Two hundred dollars works, and the reference number is on the box.",
         "keywords": [
-          "clasp",
-          "broke"
+          "dollars",
+          "reference"
         ],
         "modelAudio": "assets/audio/lines/w5-l7.mp3",
         "modelSlow": "assets/audio/lines/w5-l7-slow.mp3"
