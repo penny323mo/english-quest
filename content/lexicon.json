@@ -5589,7 +5589,7 @@
         "this is great"
       ],
       "example": "This is great.",
-      "exampleYue": "呢度真係好好。",
+      "exampleYue": "好正呀。",
       "say": "This is great.",
       "variants": [],
       "note": "開頭有 /r/。",
@@ -17628,9 +17628,9 @@
         "who is calling",
         "calling from"
       ],
-      "example": "May I ask who is calling now?",
+      "example": "May I ask who is calling?",
       "exampleYue": "請問邊位打嚟？",
-      "say": "May I ask who is calling now?",
+      "say": "May I ask who is calling?",
       "variants": [],
       "note": "",
       "sources": [
@@ -17641,7 +17641,7 @@
       "senseMismatch": false,
       "cmuLemma": "calling",
       "phrase": false,
-      "audioSha256": "9a170fbcd17917928e73c7afde8a8b5291cc935aefd15951b1234520decb1339",
+      "audioSha256": "26798665010993c0dca7ed5505ee30f83fb81f305ac3f96ef7cb6ea708f225df",
       "register": "職場",
       "usageNotes": "calling 呢度係電話打嚟，唔係拜訪。",
       "pitfallsYue": "calling 呢度係電話打嚟，唔係拜訪。",
@@ -17651,11 +17651,11 @@
       ],
       "examples": [
         {
-          "en": "May I ask who is calling now?",
+          "en": "May I ask who is calling?",
           "yue": "請問邊位打嚟？",
           "audio": "assets/audio/words/calling-verb.mp3",
           "audioSlow": "assets/audio/words/calling-verb-slow.mp3",
-          "say": "May I ask who is calling now?"
+          "say": "May I ask who is calling?"
         },
         {
           "en": "Kai is calling from the harbor office.",
@@ -22261,16 +22261,16 @@
       "arpabet": "F IY1",
       "audio": "assets/audio/words/fee-noun.mp3",
       "audioSlow": "assets/audio/words/fee-noun-slow.mp3",
-      "glossYue": "手續費",
-      "glossZh": "手續費",
-      "jyutping": "sau2 zuk6 fai3",
+      "glossYue": "費用",
+      "glossZh": "費用",
+      "jyutping": "fai3 jung6",
       "collocations": [
         "the fee",
         "pay the fee"
       ],
-      "example": "I will pay the fee here.",
-      "exampleYue": "我喺度會畀手續費。",
-      "say": "I will pay the fee here.",
+      "example": "Is there a fee for that?",
+      "exampleYue": "呢個使唔使收費？",
+      "say": "Is there a fee for that?",
       "variants": [],
       "note": "",
       "sources": [
@@ -22281,25 +22281,25 @@
       "senseMismatch": false,
       "cmuLemma": "fee",
       "phrase": false,
-      "audioSha256": "0a398743393da08b07a6f5d27033c5ce4478e9c2deea02dfbaa66da385993d07",
+      "audioSha256": "b5a20594ab440041f2682de2ae508442ec5a173fab63835492bdf61f6f2f955e",
       "register": "銀行",
-      "usageNotes": "手續費係銀行收嘅錢，唔係餘額。",
-      "pitfallsYue": "手續費係銀行收嘅錢，唔係餘額。",
+      "usageNotes": "費用係要畀嘅錢。",
+      "pitfallsYue": "費用唔係戶口結餘。",
       "related": [
         "balance-noun",
         "replace-verb"
       ],
       "examples": [
         {
-          "en": "I will pay the fee here.",
-          "yue": "我喺度會畀手續費。",
+          "en": "Is there a fee for that?",
+          "yue": "呢個使唔使收費？",
           "audio": "assets/audio/words/fee-noun.mp3",
           "audioSlow": "assets/audio/words/fee-noun-slow.mp3",
-          "say": "I will pay the fee here."
+          "say": "Is there a fee for that?"
         },
         {
           "en": "The fee to replace the card is here.",
-          "yue": "換卡嘅手續費就喺呢度。",
+          "yue": "換卡嘅費用就喺呢度。",
           "audio": "assets/audio/words/fee-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/fee-noun-ex2-slow.mp3",
           "say": "The fee to replace the card is here."
@@ -33875,9 +33875,9 @@
       "arpabet": "T R IH1 M",
       "audio": "assets/audio/words/trim-noun.mp3",
       "audioSlow": "assets/audio/words/trim-noun-slow.mp3",
-      "glossYue": "剪髮",
-      "glossZh": "剪髮",
-      "jyutping": "zin2 faat3",
+      "glossYue": "修剪",
+      "glossZh": "修剪",
+      "jyutping": "sau1 zin2",
       "collocations": [
         "a simple trim",
         "a short trim"
@@ -33897,8 +33897,8 @@
       "phrase": false,
       "audioSha256": "038ec39f45ad15e6ba7176b560d5742a32735bbbb8f0847ec37323b24432d27c",
       "register": "日常生活",
-      "usageNotes": "trim 係剪髮，唔係裝修。",
-      "pitfallsYue": "trim 係剪髮，唔係裝修。",
+      "usageNotes": "trim 係修剪，唔係裝修。",
+      "pitfallsYue": "trim 係修剪，唔係裝修。",
       "related": [],
       "examples": [
         {
@@ -37585,11 +37585,11 @@
           "say": "The airline will [[tɹænsfˈɜ]] my bag."
         },
         {
-          "en": "Please transfer the checked bag to the next flight.",
-          "yue": "唔該將寄艙行李轉運去下一班機。",
+          "en": "Your bag will be transferred to the next flight.",
+          "yue": "你件行李會轉運去下一班機。",
           "audio": "assets/audio/words/transfer-verb-bag-ex2.mp3",
           "audioSlow": "assets/audio/words/transfer-verb-bag-ex2-slow.mp3",
-          "say": "Please [[tɹænsfˈɜ]] the checked bag to the next flight."
+          "say": "Your bag will be [[tɹænsfˈɜ]] to the next flight."
         }
       ]
     },
@@ -37672,14 +37672,14 @@
       "arpabet": "T AO1 L | K AH1 P",
       "audio": "assets/audio/words/tall-cup-phrase.mp3",
       "audioSlow": "assets/audio/words/tall-cup-phrase-slow.mp3",
-      "glossYue": "大杯",
-      "glossZh": "大杯",
-      "jyutping": "daai6 bui1",
+      "glossYue": "中杯",
+      "glossZh": "中杯",
+      "jyutping": "zung1 bui1",
       "collocations": [
         "a tall cup"
       ],
       "example": "I would like a tall cup, please.",
-      "exampleYue": "我想要一杯大杯。",
+      "exampleYue": "我想要中杯。",
       "say": "I would like a tall cup, please.",
       "variants": [],
       "note": "",
@@ -37693,20 +37693,20 @@
       "phrase": true,
       "audioSha256": "c6f517c178fe4e7588cc0a9c8332b175ec3eb75e23da8476865eccb240ae945f",
       "register": "餐廳",
-      "usageNotes": "tall cup 係大杯。",
-      "pitfallsYue": "大杯唔係細杯。",
+      "usageNotes": "tall cup 喺連鎖店係中杯。",
+      "pitfallsYue": "中杯唔係最大杯。",
       "related": [],
       "examples": [
         {
           "en": "I would like a tall cup, please.",
-          "yue": "我想要一杯大杯。",
+          "yue": "我想要中杯。",
           "audio": "assets/audio/words/tall-cup-phrase.mp3",
           "audioSlow": "assets/audio/words/tall-cup-phrase-slow.mp3",
           "say": "I would like a tall cup, please."
         },
         {
           "en": "Is the tall cup the larger one?",
-          "yue": "大杯係唔係大啲嗰杯？",
+          "yue": "中杯其實係細啲嗰杯。",
           "audio": "assets/audio/words/tall-cup-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/tall-cup-phrase-ex2-slow.mp3",
           "say": "Is the tall cup the larger one?"
@@ -38046,14 +38046,14 @@
       "arpabet": "AO1 N L AY2 N | B AE1 NG K IH0 NG",
       "audio": "assets/audio/words/online-banking-phrase.mp3",
       "audioSlow": "assets/audio/words/online-banking-phrase-slow.mp3",
-      "glossYue": "網上理財",
-      "glossZh": "網上理財",
-      "jyutping": "mong5 soeng6 lei5 coi4",
+      "glossYue": "網上銀行",
+      "glossZh": "網上銀行",
+      "jyutping": "mong5 soeng6 ngan4 hong4",
       "collocations": [
         "online banking"
       ],
       "example": "I can register for online banking.",
-      "exampleYue": "我可以登記網上理財。",
+      "exampleYue": "我可以登記網上銀行。",
       "say": "I can register for online banking.",
       "variants": [],
       "note": "",
@@ -38067,13 +38067,13 @@
       "phrase": true,
       "audioSha256": "40420a5ebff96b8e90748b2414d619395de5dd4c7d5c3c07c7dc2d7b1b3ab23f",
       "register": "銀行",
-      "usageNotes": "online banking 係網上理財。",
-      "pitfallsYue": "網上理財唔係櫃檯。",
+      "usageNotes": "online banking 係網上銀行，又叫網上理財。",
+      "pitfallsYue": "網上理財係另一個講法，唔係櫃檯。",
       "related": [],
       "examples": [
         {
           "en": "I can register for online banking.",
-          "yue": "我可以登記網上理財。",
+          "yue": "我可以登記網上銀行。",
           "audio": "assets/audio/words/online-banking-phrase.mp3",
           "audioSlow": "assets/audio/words/online-banking-phrase-slow.mp3",
           "say": "I can register for online banking."
@@ -38084,6 +38084,380 @@
           "audio": "assets/audio/words/online-banking-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/online-banking-phrase-ex2-slow.mp3",
           "say": "Online banking opens tomorrow."
+        }
+      ]
+    },
+    {
+      "id": "consultation-fee-noun",
+      "lemma": "consultation fee",
+      "pos": "noun",
+      "senseId": "clinic-charge",
+      "ipa": "/ˌkɑn.səl.ˈteɪ.ʃən ˈfi/",
+      "syllables": [
+        "con",
+        "sul",
+        "ta",
+        "tion",
+        "fee"
+      ],
+      "syllableIpa": [
+        "ˌkɑn",
+        "səl",
+        "ˈteɪ",
+        "ʃən",
+        "ˈfi"
+      ],
+      "stress": 3,
+      "arpabet": "K AA2 N S AH0 L T EY1 SH AH0 N F IY1",
+      "audio": "assets/audio/words/consultation-fee-noun.mp3",
+      "audioSlow": "assets/audio/words/consultation-fee-noun-slow.mp3",
+      "glossYue": "診金",
+      "glossZh": "診金",
+      "jyutping": "can2 gam1",
+      "collocations": [
+        "the consultation fee",
+        "pay the consultation fee"
+      ],
+      "example": "The consultation fee is three hundred dollars.",
+      "exampleYue": "診金係三百蚊。",
+      "say": "The consultation fee is three hundred dollars.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "consultation",
+      "phrase": true,
+      "audioSha256": "3775f5cf469d9d79e3677fb1aaeaff1bb2256fba017f2cc6a396b6fc99b7a540",
+      "register": "日常生活",
+      "usageNotes": "診金係睇醫生嘅收費。",
+      "pitfallsYue": "診金唔係藥費本身。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The consultation fee is three hundred dollars.",
+          "yue": "診金係三百蚊。",
+          "audio": "assets/audio/words/consultation-fee-noun.mp3",
+          "audioSlow": "assets/audio/words/consultation-fee-noun-slow.mp3",
+          "say": "The consultation fee is three hundred dollars."
+        },
+        {
+          "en": "Please ask the consultation fee before you book.",
+          "yue": "預約之前請先問診金。",
+          "audio": "assets/audio/words/consultation-fee-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/consultation-fee-noun-ex2-slow.mp3",
+          "say": "Please ask the consultation fee before you book."
+        }
+      ]
+    },
+    {
+      "id": "insurance-card-noun",
+      "lemma": "insurance card",
+      "pos": "noun",
+      "senseId": "health-card",
+      "ipa": "/ɪn.ˈʃʊɹ.əns ˈkɑɹd/",
+      "syllables": [
+        "in",
+        "sur",
+        "ance",
+        "card"
+      ],
+      "syllableIpa": [
+        "ɪn",
+        "ˈʃʊɹ",
+        "əns",
+        "ˈkɑɹd"
+      ],
+      "stress": 2,
+      "arpabet": "IH0 N SH UH1 R AH0 N S K AA1 R D",
+      "audio": "assets/audio/words/insurance-card-noun.mp3",
+      "audioSlow": "assets/audio/words/insurance-card-noun-slow.mp3",
+      "glossYue": "保險卡",
+      "glossZh": "保險卡",
+      "jyutping": "bou2 him2 kaat1",
+      "collocations": [
+        "insurance card",
+        "bring your insurance card"
+      ],
+      "example": "Please bring your insurance card.",
+      "exampleYue": "請帶你張保險卡。",
+      "say": "Please bring your insurance card.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "insurance",
+      "phrase": true,
+      "audioSha256": "2260c1316cb9ffe6b1ffc77bea2c9fb273c928fa785aacd84007e9a71bb17ab5",
+      "register": "日常生活",
+      "usageNotes": "保險卡係睇醫生要出示嘅卡。",
+      "pitfallsYue": "保險卡唔係身份證。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Please bring your insurance card.",
+          "yue": "請帶你張保險卡。",
+          "audio": "assets/audio/words/insurance-card-noun.mp3",
+          "audioSlow": "assets/audio/words/insurance-card-noun-slow.mp3",
+          "say": "Please bring your insurance card."
+        },
+        {
+          "en": "The insurance card is in my wallet.",
+          "yue": "保險卡喺我個銀包入面。",
+          "audio": "assets/audio/words/insurance-card-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/insurance-card-noun-ex2-slow.mp3",
+          "say": "The insurance card is in my wallet."
+        }
+      ]
+    },
+    {
+      "id": "payslip-noun",
+      "lemma": "payslip",
+      "pos": "noun",
+      "senseId": "wage-sheet",
+      "ipa": "/ˈpeɪ.slɪp/",
+      "syllables": [
+        "pay",
+        "slip"
+      ],
+      "syllableIpa": [
+        "ˈpeɪ",
+        "slɪp"
+      ],
+      "stress": 1,
+      "arpabet": "P EY1 S L IH2 P",
+      "audio": "assets/audio/words/payslip-noun.mp3",
+      "audioSlow": "assets/audio/words/payslip-noun-slow.mp3",
+      "glossYue": "糧單",
+      "glossZh": "糧單",
+      "jyutping": "loeng4 daan1",
+      "collocations": [
+        "this month's payslip",
+        "April payslip"
+      ],
+      "example": "This month's payslip is missing overtime.",
+      "exampleYue": "今個月糧單漏咗加班。",
+      "say": "This month's payslip is missing overtime.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "payslip",
+      "phrase": false,
+      "audioSha256": "bb433267f28ad163f30a514fc1006295c74a7292e2e977daae282c8adbde600a",
+      "register": "職場",
+      "usageNotes": "糧單係出糧嗰張單。",
+      "pitfallsYue": "糧單唔係合約。",
+      "related": [],
+      "examples": [
+        {
+          "en": "This month's payslip is missing overtime.",
+          "yue": "今個月糧單漏咗加班。",
+          "audio": "assets/audio/words/payslip-noun.mp3",
+          "audioSlow": "assets/audio/words/payslip-noun-slow.mp3",
+          "say": "This month's payslip is missing overtime."
+        },
+        {
+          "en": "Your April payslip will show the hours.",
+          "yue": "你四月嘅糧單會顯示嗰啲鐘。",
+          "audio": "assets/audio/words/payslip-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/payslip-noun-ex2-slow.mp3",
+          "say": "Your April payslip will show the hours."
+        }
+      ]
+    },
+    {
+      "id": "overtime-noun",
+      "lemma": "overtime",
+      "pos": "noun",
+      "senseId": "extra-hours",
+      "ipa": "/ˈoʊ.vɚ.taɪm/",
+      "syllables": [
+        "o",
+        "ver",
+        "time"
+      ],
+      "syllableIpa": [
+        "ˈoʊ",
+        "vɚ",
+        "taɪm"
+      ],
+      "stress": 1,
+      "arpabet": "OW1 V ER0 T AY2 M",
+      "audio": "assets/audio/words/overtime-noun.mp3",
+      "audioSlow": "assets/audio/words/overtime-noun-slow.mp3",
+      "glossYue": "加班",
+      "glossZh": "加班",
+      "jyutping": "gaa1 baan1",
+      "collocations": [
+        "hours of overtime",
+        "overtime in March"
+      ],
+      "example": "I did twelve hours of overtime.",
+      "exampleYue": "我做咗十二個鐘加班。",
+      "say": "I did twelve hours of overtime.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "overtime",
+      "phrase": false,
+      "audioSha256": "c06a46d33b440913080c6ecaca078bf2711d19b8a020ff69c87419658b1e97b5",
+      "register": "職場",
+      "usageNotes": "加班係正常工時之外嘅鐘。",
+      "pitfallsYue": "加班唔係請假。",
+      "related": [],
+      "examples": [
+        {
+          "en": "I did twelve hours of overtime.",
+          "yue": "我做咗十二個鐘加班。",
+          "audio": "assets/audio/words/overtime-noun.mp3",
+          "audioSlow": "assets/audio/words/overtime-noun-slow.mp3",
+          "say": "I did twelve hours of overtime."
+        },
+        {
+          "en": "The overtime was approved in March.",
+          "yue": "三月嘅加班已經批咗。",
+          "audio": "assets/audio/words/overtime-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/overtime-noun-ex2-slow.mp3",
+          "say": "The overtime was approved in March."
+        }
+      ]
+    },
+    {
+      "id": "payroll-noun",
+      "lemma": "payroll",
+      "pos": "noun",
+      "senseId": "wage-run",
+      "ipa": "/ˈpeɪ.roʊl/",
+      "syllables": [
+        "pay",
+        "roll"
+      ],
+      "syllableIpa": [
+        "ˈpeɪ",
+        "roʊl"
+      ],
+      "stress": 1,
+      "arpabet": "P EY1 R OW2 L",
+      "audio": "assets/audio/words/payroll-noun.mp3",
+      "audioSlow": "assets/audio/words/payroll-noun-slow.mp3",
+      "glossYue": "計糧",
+      "glossZh": "計糧",
+      "jyutping": "gai3 loeng4",
+      "collocations": [
+        "payroll deadline",
+        "on the payroll"
+      ],
+      "example": "The payroll deadline was the twenty-fifth.",
+      "exampleYue": "計糧截數日係二十五號。",
+      "say": "The payroll deadline was the twenty-fifth.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "payroll",
+      "phrase": false,
+      "audioSha256": "0bfe59c0322af69050a6bd4bebf50d69908591b7b942ef3c5ef31c6244d9b2ff",
+      "register": "職場",
+      "usageNotes": "計糧係公司計人工嗰一步。",
+      "pitfallsYue": "計糧唔係糧單本身。",
+      "related": [],
+      "examples": [
+        {
+          "en": "The payroll deadline was the twenty-fifth.",
+          "yue": "計糧截數日係二十五號。",
+          "audio": "assets/audio/words/payroll-noun.mp3",
+          "audioSlow": "assets/audio/words/payroll-noun-slow.mp3",
+          "say": "The payroll deadline was the twenty-fifth."
+        },
+        {
+          "en": "Payroll did not include those hours.",
+          "yue": "計糧冇計入嗰啲鐘。",
+          "audio": "assets/audio/words/payroll-noun-ex2.mp3",
+          "audioSlow": "assets/audio/words/payroll-noun-ex2-slow.mp3",
+          "say": "Payroll did not include those hours."
+        }
+      ]
+    },
+    {
+      "id": "mpf-phrase",
+      "lemma": "MPF",
+      "pos": "phrase",
+      "senseId": "pension-fund",
+      "ipa": "/ˌɛm.pi.ˈɛf/",
+      "syllables": [
+        "em",
+        "pi",
+        "ef"
+      ],
+      "syllableIpa": [
+        "ˌɛm",
+        "pi",
+        "ˈɛf"
+      ],
+      "stress": 3,
+      "arpabet": "EH2 M P IY0 EH1 F",
+      "audio": "assets/audio/words/mpf-phrase.mp3",
+      "audioSlow": "assets/audio/words/mpf-phrase-slow.mp3",
+      "glossYue": "強積金",
+      "glossZh": "強積金",
+      "jyutping": "koeng4 zik1 gam1",
+      "collocations": [
+        "tax and MPF",
+        "your MPF"
+      ],
+      "example": "Your MPF will be adjusted too.",
+      "exampleYue": "你嘅強積金都會調整。",
+      "say": "Your MPF will be adjusted too.",
+      "variants": [],
+      "note": "",
+      "sources": [
+        "CMUdict 0.7b"
+      ],
+      "verified_at": "2026-10-31",
+      "status": "IPA_OK",
+      "senseMismatch": false,
+      "cmuLemma": "MPF",
+      "phrase": true,
+      "audioSha256": "ff906b61aac373b1517166788051267b1e5af6668ac81e68636b75e2401e4d3b",
+      "register": "職場",
+      "usageNotes": "強積金係退休供款。",
+      "pitfallsYue": "強積金唔係稅。",
+      "related": [],
+      "examples": [
+        {
+          "en": "Your MPF will be adjusted too.",
+          "yue": "你嘅強積金都會調整。",
+          "audio": "assets/audio/words/mpf-phrase.mp3",
+          "audioSlow": "assets/audio/words/mpf-phrase-slow.mp3",
+          "say": "Your MPF will be adjusted too."
+        },
+        {
+          "en": "MPF is taken from the payslip.",
+          "yue": "強積金會由糧單扣。",
+          "audio": "assets/audio/words/mpf-phrase-ex2.mp3",
+          "audioSlow": "assets/audio/words/mpf-phrase-ex2-slow.mp3",
+          "say": "MPF is taken from the payslip."
         }
       ]
     }

@@ -3,8 +3,8 @@
   "unit": "W",
   "titleYue": "請年假",
   "titleEn": "Asking for annual leave",
-  "canDoYue": "你識講星期一、二、四、五請假，星期三係公眾假期，Jo 頂位，星期五寫交接，批核只得一次。",
-  "canDoEn": "Ask for Monday, Tuesday, Thursday, and Friday off, name Jo as cover, send one handover, and hear one approval after that Friday note.",
+  "canDoYue": "你識申請下星期年假，知道星期三係公眾假期所以只要四日，交代 Jo 會頂你個位，星期五交交接筆記，批核之後仲有五日假。",
+  "canDoEn": "Ask for Monday-to-Friday leave, hear that a public holiday makes it four days, say Jo will cover the desk, send the handover on Friday, and keep five days after approval.",
   "minutes": 12,
   "hero": "assets/art/lessons/w9.webp",
   "cast": [
@@ -54,197 +54,197 @@
       "id": "w9-l1",
       "speaker": "sora",
       "speakerLabel": "Sora",
-      "text": "I would like annual leave next week on Monday, Tuesday, Thursday, and Friday, but not on Wednesday.",
-      "glossYue": "我想下星期請年假，星期一、二、四、五，星期三唔請。",
+      "text": "Hi Niles. I'd like to take annual leave next week, Monday to Friday.",
+      "glossYue": "你好 Niles。我下星期想放年假，星期一到星期五。",
       "audio": "assets/audio/lines/w9-l1.mp3",
       "audioSlow": "assets/audio/lines/w9-l1-slow.mp3",
-      "say": "I would like annual leave next week on Monday, Tuesday, Thursday, and Friday, but not on Wednesday.",
+      "say": "Hi Niles. I'd like to take annual leave next week, Monday to Friday.",
       "hideGloss": false
     },
     {
       "id": "w9-l2",
       "speaker": "niles",
       "speakerLabel": "Niles",
-      "text": "Wednesday is a public holiday next week, so your leave days are Monday, Tuesday, Thursday, and Friday.",
-      "glossYue": "下星期三係公眾假期，所以你嘅年假係星期一、二、四、五。",
+      "text": "Wednesday's a public holiday, so you only need four days of leave.",
+      "glossYue": "星期三係公眾假期，所以你只要四日假。",
       "audio": "assets/audio/lines/w9-l2.mp3",
       "audioSlow": "assets/audio/lines/w9-l2-slow.mp3",
-      "say": "Wednesday is a public holiday next week, so your leave days are Monday, Tuesday, Thursday, and Friday.",
+      "say": "Wednesday's a public holiday, so you only need four days of leave.",
       "hideGloss": false
     },
     {
       "id": "w9-l3",
       "speaker": "sora",
       "speakerLabel": "Sora",
-      "text": "Jo will cover my desk next week, and I can send the handover by email that morning.",
-      "glossYue": "Jo 下星期會頂我個位，我可以嗰朝用電郵交交接。",
+      "text": "Great. Jo has agreed to cover my desk while I'm away.",
+      "glossYue": "好。我不在嘅時候，Jo 答應幫我睇住個位。",
       "audio": "assets/audio/lines/w9-l3.mp3",
       "audioSlow": "assets/audio/lines/w9-l3-slow.mp3",
-      "say": "Jo will cover my desk next week, and I can send the handover by email that morning.",
+      "say": "Great. Jo has agreed to cover my desk while I'm away.",
       "hideGloss": false
     },
     {
       "id": "w9-l4",
       "speaker": "niles",
       "speakerLabel": "Niles",
-      "text": "Please email me the handover before you go, and I will read it fully before I decide.",
-      "glossYue": "你走之前用電郵交畀我，我會睇完先決定。",
+      "text": "Good. Please send me a handover note before you go.",
+      "glossYue": "好。你走之前請發一份交接筆記畀我。",
       "audio": "assets/audio/lines/w9-l4.mp3",
       "audioSlow": "assets/audio/lines/w9-l4-slow.mp3",
-      "say": "Please email me the handover before you go, and I will read it fully before I decide.",
+      "say": "Good. Please send me a handover note before you go.",
       "hideGloss": false
     },
     {
       "id": "w9-l5",
       "speaker": "sora",
       "speakerLabel": "Sora",
-      "text": "I will write that handover note this Friday morning, just before my first leave day on Monday.",
-      "glossYue": "我會呢個星期五朝早寫交接筆記，就喺星期一放假之前。",
+      "text": "Sure. I'll email it to you and Jo on Friday morning.",
+      "glossYue": "好。我星期五朝早會電郵畀你同 Jo。",
       "audio": "assets/audio/lines/w9-l5.mp3",
       "audioSlow": "assets/audio/lines/w9-l5-slow.mp3",
-      "say": "I will write that handover note this Friday morning, just before my first leave day on Monday.",
+      "say": "Sure. I'll email it to you and Jo on Friday morning.",
       "hideGloss": false
     },
     {
       "id": "w9-l6",
       "speaker": "niles",
       "speakerLabel": "Niles",
-      "text": "Please send it to me before you go, and I will read every line before I decide.",
-      "glossYue": "你走之前傳畀我，我會逐行睇完先決定。",
+      "text": "Thanks. How many leave days do you have left this year?",
+      "glossYue": "多謝。你今年仲有幾多日假？",
       "audio": "assets/audio/lines/w9-l6.mp3",
       "audioSlow": "assets/audio/lines/w9-l6-slow.mp3",
-      "say": "Please send it to me before you go, and I will read every line before I decide.",
+      "say": "Thanks. How many leave days do you have left this year?",
       "hideGloss": false
     },
     {
       "id": "w9-l7",
       "speaker": "sora",
       "speakerLabel": "Sora",
-      "text": "Thank you. Jo will cover the desk, and I will be back right after those four dates.",
-      "glossYue": "多謝。Jo 會頂住個位，我放完嗰四日就返。",
+      "text": "Nine, so I'll still have five after this.",
+      "glossYue": "九日，所以今次之後仲有五日。",
       "audio": "assets/audio/lines/w9-l7.mp3",
       "audioSlow": "assets/audio/lines/w9-l7-slow.mp3",
-      "say": "Thank you. Jo will cover the desk, and I will be back right after those four dates.",
+      "say": "Nine, so I'll still have five after this.",
       "hideGloss": false
     },
     {
       "id": "w9-l8",
       "speaker": "niles",
       "speakerLabel": "Niles",
-      "text": "I will approve it after I read that Friday handover note, and leave starts on Monday next.",
-      "glossYue": "我睇完星期五嗰份交接筆記就會批，年假下星期一開始。",
+      "text": "OK, I've approved it. Enjoy your break.",
+      "glossYue": "好，我批咗。假期愉快。",
       "audio": "assets/audio/lines/w9-l8.mp3",
       "audioSlow": "assets/audio/lines/w9-l8-slow.mp3",
-      "say": "I will approve it after I read that Friday handover note, and leave starts on Monday next.",
+      "say": "OK, I've approved it. Enjoy your break.",
       "hideGloss": false
     }
   ],
   "understand": [
     {
-      "prompt": "I would like annual leave next week on Monday, Tuesday, Thursday, and Friday, but not on Wednesday. 呢句即係點？",
+      "prompt": "Hi Niles. I'd like to take annual leave next week, Monday to Friday. 呢句即係點？",
       "choices": [
-        "下星期請年假，星期三唔請",
-        "已經批核咗",
-        "要改公眾假期"
-      ],
-      "answer": 0,
-      "explain": "annual leave 係年假。"
-    },
-    {
-      "prompt": "Wednesday is a public holiday next week, so your leave days are Monday, Tuesday, Thursday, and Friday. 呢句即係點？",
-      "choices": [
-        "叫你寫電郵",
-        "星期三係公眾假期",
-        "年假星期三開始"
+        "關於批核",
+        "講緊年假",
+        "唔係交接"
       ],
       "answer": 1,
-      "explain": "public holiday 係公眾假期。"
+      "explain": "年假。"
     },
     {
-      "prompt": "I will approve it after I read that Friday handover note, and leave starts on Monday next. 呢句即係點？",
+      "prompt": "Good. Please send me a handover note before you go. 呢句即係點？",
       "choices": [
-        "再問一次批核",
-        "假期星期三開始",
-        "睇完星期五交接先批，星期一開始"
+        "講緊交接",
+        "唔係年假",
+        "關於批核"
+      ],
+      "answer": 0,
+      "explain": "交接。"
+    },
+    {
+      "prompt": "OK, I've approved it. Enjoy your break. 呢句即係點？",
+      "choices": [
+        "唔係年假",
+        "關於交接",
+        "講緊批核"
       ],
       "answer": 2,
-      "explain": "approve 係批核。"
+      "explain": "批核。"
     }
   ],
   "chunks": [
     {
-      "pattern": "I would like ___ next week on Monday, Tuesday, Thursday, and Friday, but not on Wednesday.",
-      "example": "I would like annual leave next week on Monday, Tuesday, Thursday, and Friday, but not on Wednesday.",
-      "glossYue": "我想請年假。",
-      "answer": "annual leave",
+      "pattern": "Hi Niles. I'd like to take ___ leave next week, Monday to Friday.",
+      "example": "Hi Niles. I'd like to take annual leave next week, Monday to Friday.",
+      "glossYue": "你好 Niles。我下星期想放年假，星期一到星期五。",
+      "answer": "annual",
       "choices": [
-        "annual leave",
-        "public holiday",
+        "annual",
+        "handover",
+        "approve"
+      ]
+    },
+    {
+      "pattern": "Wednesday's a public holiday, so you only need four days of ___.",
+      "example": "Wednesday's a public holiday, so you only need four days of leave.",
+      "glossYue": "星期三係公眾假期，所以你只要四日假。",
+      "answer": "leave",
+      "choices": [
+        "leave",
+        "annual",
         "handover"
       ]
     },
     {
-      "pattern": "Please ___ me the handover before you go, and I will read it fully before I decide.",
-      "example": "Please email me the handover before you go, and I will read it fully before I decide.",
-      "glossYue": "用電郵交畀我。",
+      "pattern": "Sure. I'll ___ it to you and Jo on Friday morning.",
+      "example": "Sure. I'll email it to you and Jo on Friday morning.",
+      "glossYue": "好。我星期五朝早會電郵畀你同 Jo。",
       "answer": "email",
       "choices": [
         "email",
-        "approve",
+        "annual",
         "handover"
-      ]
-    },
-    {
-      "pattern": "I will write that ___ note this Friday morning, just before my first leave day on Monday.",
-      "example": "I will write that handover note this Friday morning, just before my first leave day on Monday.",
-      "glossYue": "我會寫交接筆記。",
-      "answer": "handover",
-      "choices": [
-        "handover",
-        "annual leave",
-        "email"
       ]
     }
   ],
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想講下星期請邊幾日。你點講？",
+      "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
-        "I would like annual leave next week on Monday, Tuesday, Thursday, and Friday, but not on Wednesday.",
-        "Jo will cover my desk next week, and I can send the handover by email that morning.",
-        "I will write that handover note this Friday morning, just before my first leave day on Monday."
+        "Hi Niles. I'd like to take annual leave next week, Monday to Friday.",
+        "Great. Jo has agreed to cover my desk while I'm away.",
+        "Sure. I'll email it to you and Jo on Friday morning."
       ],
-      "answer": 0,
-      "explain": "講 annual leave。"
+      "answer": 1,
+      "explain": "用呢句。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "annual",
-        "leave"
+        "wednesday's",
+        "public"
       ],
       "answer": [
-        "annual",
-        "leave"
+        "wednesday's",
+        "public"
       ]
     }
   ],
   "roleplay": {
     "you": "sora",
-    "intro": "你同 Niles 請下星期年假。可以講：annual、handover。",
+    "intro": "你同 Niles 傾呢件事。等對方講完先答。",
     "turns": [
       {
         "partner": "Niles",
         "partnerId": "niles",
-        "line": "Wednesday is a public holiday next week, so your leave days are Monday, Tuesday, Thursday, and Friday.",
+        "line": "Wednesday's a public holiday, so you only need four days of leave.",
         "audio": "assets/audio/lines/w9-l2.mp3",
         "audioSlow": "assets/audio/lines/w9-l2-slow.mp3",
-        "expect": "Jo will cover my desk next week, and I can send the handover by email that morning.",
+        "expect": "Great. Jo has agreed to cover my desk while I'm away.",
         "keywords": [
-          "handover",
-          "email"
+          "great",
+          "agreed"
         ],
         "modelAudio": "assets/audio/lines/w9-l3.mp3",
         "modelSlow": "assets/audio/lines/w9-l3-slow.mp3"
@@ -252,13 +252,13 @@
       {
         "partner": "Niles",
         "partnerId": "niles",
-        "line": "Please email me the handover before you go, and I will read it fully before I decide.",
+        "line": "Good. Please send me a handover note before you go.",
         "audio": "assets/audio/lines/w9-l4.mp3",
         "audioSlow": "assets/audio/lines/w9-l4-slow.mp3",
-        "expect": "I will write that handover note this Friday morning, just before my first leave day on Monday.",
+        "expect": "Sure. I'll email it to you and Jo on Friday morning.",
         "keywords": [
-          "handover",
-          "Friday"
+          "sure",
+          "email"
         ],
         "modelAudio": "assets/audio/lines/w9-l5.mp3",
         "modelSlow": "assets/audio/lines/w9-l5-slow.mp3"
@@ -266,13 +266,13 @@
       {
         "partner": "Niles",
         "partnerId": "niles",
-        "line": "Please send it to me before you go, and I will read every line before I decide.",
+        "line": "Thanks. How many leave days do you have left this year?",
         "audio": "assets/audio/lines/w9-l6.mp3",
         "audioSlow": "assets/audio/lines/w9-l6-slow.mp3",
-        "expect": "Thank you. Jo will cover the desk, and I will be back right after those four dates.",
+        "expect": "Nine, so I'll still have five after this.",
         "keywords": [
-          "cover",
-          "desk"
+          "nine",
+          "five"
         ],
         "modelAudio": "assets/audio/lines/w9-l7.mp3",
         "modelSlow": "assets/audio/lines/w9-l7-slow.mp3"
@@ -282,60 +282,60 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the phrase you hear for days off work.",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
       "lemma": "annual-leave-phrase",
       "choices": [
-        "handover",
+        "approve",
         "annual leave",
-        "email"
+        "handover"
       ],
       "answer": 1
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for passing your work to a colleague.",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
       "lemma": "handover-noun",
       "choices": [
+        "annual leave",
         "approve",
-        "email",
         "handover"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "You say 'I would like annual leave.' What does annual leave mean?",
+      "prompt": "Which meaning fits the line you just studied?",
       "choices": [
         "年假",
         "交接",
-        "電郵"
+        "批核"
       ],
       "answer": 0
     },
     {
       "type": "meaning",
-      "prompt": "You say 'Please email the handover.' What does email mean?",
+      "prompt": "Which meaning fits the line you just studied?",
       "choices": [
-        "年假",
-        "電郵",
-        "批核"
+        "批核",
+        "交接",
+        "年假"
       ],
       "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "Which word means a boss agrees to the dates?",
+      "prompt": "Which word fits this lesson?",
       "choices": [
+        "annual leave",
         "handover",
-        "email",
         "approve"
       ],
       "answer": 2,
-      "explain": "approve 係批核。"
+      "explain": "年假。"
     }
   ],
   "shadow": {
     "lineId": "w9-l1",
-    "hint": "I would like annual leave next week on Monday, Tuesday, Thursday, and Friday, but not on Wednesday."
+    "hint": "Hi Niles. I'd like to take annual leave next week, Monday to Friday."
   }
 }

@@ -3,8 +3,8 @@
   "unit": "R",
   "titleYue": "食物敏感同戒口",
   "titleEn": "Allergies and dietary needs",
-  "canDoYue": "你識講對花生敏感、唔食豬肉、蛋冇問題、炒飯有花生油、改素麵、分開鑊，同埋叫店員喺張單寫低。",
-  "canDoEn": "Say you are allergic to peanuts, egg is fine, the fried rice has peanut oil, the noodles are vegetarian from a separate pan, and a note goes on the order.",
+  "canDoYue": "你識講自己對花生敏感、唔食豬肉、蛋冇問題，問炒飯有冇花生油，改叫素麵，同叫廚房分開煮。",
+  "canDoEn": "Say you are allergic to peanuts and do not eat pork, confirm egg is fine, ask about peanut oil, switch to vegetable noodles, and ask for a separate pan.",
   "minutes": 12,
   "hero": "assets/art/lessons/r11.webp",
   "cast": [
@@ -22,6 +22,7 @@
     "separate-adj"
   ],
   "topicTags": [
+    "敏感",
     "花生",
     "豬肉",
     "蛋",
@@ -40,16 +41,15 @@
         "b": "egg-noun"
       },
       {
-        "a": "allergic-adj",
-        "b": "kitchen-noun"
+        "a": "pork-noun",
+        "b": "vegetarian-adj"
       }
     ],
     "drill": [
       "allergic-adj",
       "peanut-noun",
-      "pork-noun",
       "egg-noun",
-      "vegetarian-adj"
+      "separate-adj"
     ]
   },
   "dialogue": [
@@ -57,197 +57,197 @@
       "id": "r11-l1",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "I'm allergic to peanuts, and I don't eat pork tonight with the dinner I ordered.",
-      "glossYue": "你好，我對花生敏感，今晚我唔食豬肉。",
+      "text": "I'm allergic to peanuts, and I don't eat pork.",
+      "glossYue": "我對花生敏感，而且我唔食豬肉。",
       "audio": "assets/audio/lines/r11-l1.mp3",
       "audioSlow": "assets/audio/lines/r11-l1-slow.mp3",
-      "say": "I'm allergic to peanuts, and I don't eat pork tonight with the dinner I ordered.",
+      "say": "I'm allergic to peanuts, and I don't eat pork.",
       "hideGloss": false
     },
     {
       "id": "r11-l2",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Okay then. Is egg a problem too when this dish also has peanuts in it?",
-      "glossYue": "好。呢碟都有花生，蛋係咪都有問題？",
+      "text": "Okay. Is egg a problem for you too?",
+      "glossYue": "好。蛋對你嚟講有冇問題？",
       "audio": "assets/audio/lines/r11-l2.mp3",
       "audioSlow": "assets/audio/lines/r11-l2-slow.mp3",
-      "say": "Okay then. Is egg a problem too when this dish also has peanuts in it?",
+      "say": "Okay. Is egg a problem for you too?",
       "hideGloss": false
     },
     {
       "id": "r11-l3",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "No, egg is fine. Does the hot fried rice now have any peanuts in it?",
-      "glossYue": "蛋冇問題。熱炒飯入面有冇花生？",
+      "text": "No, egg is fine. Does the fried rice have peanuts in it?",
+      "glossYue": "冇，蛋冇問題。炒飯入面有冇花生？",
       "audio": "assets/audio/lines/r11-l3.mp3",
       "audioSlow": "assets/audio/lines/r11-l3-slow.mp3",
-      "say": "No, egg is fine. Does the hot fried rice now have any peanuts in it?",
+      "say": "No, egg is fine. Does the fried rice have peanuts in it?",
       "hideGloss": false
     },
     {
       "id": "r11-l4",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Yes, it has peanut oil. I'd suggest the vegetarian noodles instead of that fried rice.",
-      "glossYue": "有，飯有花生油。我建議改素麵，唔好食炒飯。",
+      "text": "Yes, it has peanut oil. I'd suggest the vegetable noodles instead.",
+      "glossYue": "有，佢有花生油。我建議你轉蔬菜麵。",
       "audio": "assets/audio/lines/r11-l4.mp3",
       "audioSlow": "assets/audio/lines/r11-l4-slow.mp3",
-      "say": "Yes, it has peanut oil. I'd suggest the vegetarian noodles instead of that fried rice.",
+      "say": "Yes, it has peanut oil. I'd suggest the vegetable noodles instead.",
       "hideGloss": true
     },
     {
       "id": "r11-l5",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Do those hot vegetarian noodles have any pork in them, or are they fully vegetarian?",
-      "glossYue": "熱素麵有冇豬肉，定係完全素？",
+      "text": "Do they have any pork in them?",
+      "glossYue": "麵入面有冇豬肉？",
       "audio": "assets/audio/lines/r11-l5.mp3",
       "audioSlow": "assets/audio/lines/r11-l5-slow.mp3",
-      "say": "Do those hot vegetarian noodles have any pork in them, or are they fully vegetarian?",
+      "say": "Do they have any pork in them?",
       "hideGloss": true
     },
     {
       "id": "r11-l6",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "No, they're fully vegetarian. I'll ask the kitchen staff to use one separate clean pan.",
-      "glossYue": "完全素。我會叫廚房用一個乾淨嘅分開鑊。",
+      "text": "No, they're vegetarian. I'll ask the kitchen to use a separate pan.",
+      "glossYue": "冇，係素食。我會叫廚房用另一隻鑊。",
       "audio": "assets/audio/lines/r11-l6.mp3",
       "audioSlow": "assets/audio/lines/r11-l6-slow.mp3",
-      "say": "No, they're fully vegetarian. I'll ask the kitchen staff to use one separate clean pan.",
+      "say": "No, they're vegetarian. I'll ask the kitchen to use a separate pan.",
       "hideGloss": true
     },
     {
       "id": "r11-l7",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Thank you. Please tell the kitchen chef it's a serious peanut allergy before they cook.",
-      "glossYue": "多謝。請同廚房主廚講，我對花生嚴重敏感。",
+      "text": "Thank you. Please tell the chef it's a serious allergy.",
+      "glossYue": "多謝。請同廚師講，呢個係嚴重過敏。",
       "audio": "assets/audio/lines/r11-l7.mp3",
       "audioSlow": "assets/audio/lines/r11-l7-slow.mp3",
-      "say": "Thank you. Please tell the kitchen chef it's a serious peanut allergy before they cook.",
+      "say": "Thank you. Please tell the chef it's a serious allergy.",
       "hideGloss": true
     },
     {
       "id": "r11-l8",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "I will. I'll put a note on your order slip now before the cooking starts.",
-      "glossYue": "我會。廚房開始之前，我會喺你張單上面寫低。",
+      "text": "I will. I'll put a note on your order now.",
+      "glossYue": "我會。我而家喺你張單上面寫低。",
       "audio": "assets/audio/lines/r11-l8.mp3",
       "audioSlow": "assets/audio/lines/r11-l8-slow.mp3",
-      "say": "I will. I'll put a note on your order slip now before the cooking starts.",
+      "say": "I will. I'll put a note on your order now.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "No, egg is fine. Does the hot fried rice now have any peanuts in it? 即係問緊咩？",
+      "prompt": "I'm allergic to peanuts, and I don't eat pork. 呢句即係點？",
       "choices": [
-        "問有冇豬肉",
-        "蛋冇問題，問炒飯有冇花生",
-        "叫廚房分開"
+        "關於豬肉",
+        "講緊敏感",
+        "唔係花生"
       ],
       "answer": 1,
-      "explain": "egg 係蛋。peanut 係花生。"
+      "explain": "敏感。"
     },
     {
-      "prompt": "Yes, it has peanut oil. I'd suggest the vegetarian noodles instead of that fried rice. 呢句即係點？",
+      "prompt": "Yes, it has peanut oil. I'd suggest the vegetable noodles instead. 呢句即係點？",
       "choices": [
-        "炒飯有花生油，建議素食麵",
-        "蛋都唔食得",
-        "廚房冇分開鑊"
+        "講緊花生",
+        "唔係敏感",
+        "關於豬肉"
       ],
       "answer": 0,
-      "explain": "vegetarian 係素食。"
+      "explain": "花生。"
     },
     {
-      "prompt": "I will. I'll put a note on your order slip now before the cooking starts. 呢句即係點？",
+      "prompt": "I will. I'll put a note on your order now. 呢句即係點？",
       "choices": [
-        "叫你改食豬肉",
-        "廚房寫低張單",
-        "會喺張單寫低花生"
+        "唔係敏感",
+        "關於花生",
+        "講緊豬肉"
       ],
       "answer": 2,
-      "explain": "order 係張單。"
+      "explain": "豬肉。"
     }
   ],
   "chunks": [
     {
-      "pattern": "I'm ___ to peanuts, and I don't eat pork tonight with the dinner I ordered.",
-      "example": "I'm allergic to peanuts, and I don't eat pork tonight with the dinner I ordered.",
-      "glossYue": "我對花生敏感。",
-      "answer": "allergic",
+      "pattern": "No, egg is fine. Does the fried rice have ___ in it?",
+      "example": "No, egg is fine. Does the fried rice have peanuts in it?",
+      "glossYue": "冇，蛋冇問題。炒飯入面有冇花生？",
+      "answer": "peanuts",
       "choices": [
+        "peanuts",
         "allergic",
-        "vegetarian",
-        "separate"
-      ]
-    },
-    {
-      "pattern": "No, ___ is fine. Does the hot fried rice now have any peanuts in it?",
-      "example": "No, egg is fine. Does the hot fried rice now have any peanuts in it?",
-      "glossYue": "蛋冇問題。",
-      "answer": "egg",
-      "choices": [
-        "egg",
-        "pork",
         "peanut"
       ]
     },
     {
-      "pattern": "No, they're fully vegetarian. I'll ask the kitchen staff to use one ___ clean pan.",
-      "example": "No, they're fully vegetarian. I'll ask the kitchen staff to use one separate clean pan.",
-      "glossYue": "用分開嘅鑊。",
-      "answer": "separate",
+      "pattern": "No, they're ___. I'll ask the kitchen to use a separate pan.",
+      "example": "No, they're vegetarian. I'll ask the kitchen to use a separate pan.",
+      "glossYue": "冇，係素食。我會叫廚房用另一隻鑊。",
+      "answer": "vegetarian",
       "choices": [
-        "separate",
         "vegetarian",
-        "allergic"
+        "allergic",
+        "peanut"
+      ]
+    },
+    {
+      "pattern": "Yes, it has ___ oil. I'd suggest the vegetable noodles instead.",
+      "example": "Yes, it has peanut oil. I'd suggest the vegetable noodles instead.",
+      "glossYue": "有，佢有花生油。我建議你轉蔬菜麵。",
+      "answer": "peanut",
+      "choices": [
+        "peanut",
+        "allergic",
+        "pork"
       ]
     }
   ],
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想講對花生敏感。你點講？",
+      "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
-        "I'm allergic to peanuts, and I don't eat pork tonight with the dinner I ordered.",
-        "No, egg is fine. Does the hot fried rice now have any peanuts in it?",
-        "Do those hot vegetarian noodles have any pork in them, or are they fully vegetarian?"
+        "I'm allergic to peanuts, and I don't eat pork.",
+        "No, egg is fine. Does the fried rice have peanuts in it?",
+        "Do they have any pork in them?"
       ],
-      "answer": 0,
-      "explain": "講 allergic。"
+      "answer": 1,
+      "explain": "用呢句。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "peanut",
-        "oil"
+        "okay",
+        "egg"
       ],
       "answer": [
-        "peanut",
-        "oil"
+        "okay",
+        "egg"
       ]
     }
   ],
   "roleplay": {
     "you": "ana",
-    "intro": "你同 Mira 講敏感。可以講：egg、peanut。",
+    "intro": "你同 Mira 傾呢件事。等對方講完先答。",
     "turns": [
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "Okay then. Is egg a problem too when this dish also has peanuts in it?",
+        "line": "Okay. Is egg a problem for you too?",
         "audio": "assets/audio/lines/r11-l2.mp3",
         "audioSlow": "assets/audio/lines/r11-l2-slow.mp3",
-        "expect": "No, egg is fine. Does the hot fried rice now have any peanuts in it?",
+        "expect": "No, egg is fine. Does the fried rice have peanuts in it?",
         "keywords": [
-          "egg",
-          "peanuts"
+          "fine",
+          "fried"
         ],
         "modelAudio": "assets/audio/lines/r11-l3.mp3",
         "modelSlow": "assets/audio/lines/r11-l3-slow.mp3"
@@ -255,13 +255,12 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "Yes, it has peanut oil. I'd suggest the vegetarian noodles instead of that fried rice.",
+        "line": "Yes, it has peanut oil. I'd suggest the vegetable noodles instead.",
         "audio": "assets/audio/lines/r11-l4.mp3",
         "audioSlow": "assets/audio/lines/r11-l4-slow.mp3",
-        "expect": "Do those hot vegetarian noodles have any pork in them, or are they fully vegetarian?",
+        "expect": "Do they have any pork in them?",
         "keywords": [
-          "pork",
-          "vegetarian"
+          "pork"
         ],
         "modelAudio": "assets/audio/lines/r11-l5.mp3",
         "modelSlow": "assets/audio/lines/r11-l5-slow.mp3"
@@ -269,13 +268,13 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "No, they're fully vegetarian. I'll ask the kitchen staff to use one separate clean pan.",
+        "line": "No, they're vegetarian. I'll ask the kitchen to use a separate pan.",
         "audio": "assets/audio/lines/r11-l6.mp3",
         "audioSlow": "assets/audio/lines/r11-l6-slow.mp3",
-        "expect": "Thank you. Please tell the kitchen chef it's a serious peanut allergy before they cook.",
+        "expect": "Thank you. Please tell the chef it's a serious allergy.",
         "keywords": [
-          "allergic",
-          "peanuts"
+          "thank",
+          "tell"
         ],
         "modelAudio": "assets/audio/lines/r11-l7.mp3",
         "modelSlow": "assets/audio/lines/r11-l7-slow.mp3"
@@ -285,60 +284,60 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for a body reaction to a food.",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
       "lemma": "allergic-adj",
       "choices": [
         "allergic",
-        "vegetarian",
-        "separate"
+        "peanut",
+        "pork"
       ],
       "answer": 0
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for a dish with no meat.",
-      "lemma": "vegetarian-adj",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "peanut-noun",
       "choices": [
-        "peanut",
+        "allergic",
         "pork",
-        "vegetarian"
+        "peanut"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "You say 'allergic to peanuts'. What does peanut mean?",
+      "prompt": "Which meaning fits the line you just studied?",
       "choices": [
+        "花生",
         "豬肉",
-        "蛋",
-        "花生"
+        "敏感"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "You say 'I don't eat pork'. What does pork mean?",
+      "prompt": "Which meaning fits the line you just studied?",
       "choices": [
-        "素食",
         "豬肉",
-        "廚房"
+        "花生",
+        "敏感"
       ],
       "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "Which word means the pans are not shared?",
+      "prompt": "Which word fits this lesson?",
       "choices": [
-        "separate",
-        "egg",
-        "kitchen"
+        "pork",
+        "allergic",
+        "peanut"
       ],
       "answer": 0,
-      "explain": "separate 係分開。"
+      "explain": "敏感。"
     }
   ],
   "shadow": {
     "lineId": "r11-l1",
-    "hint": "I'm allergic to peanuts, and I don't eat pork tonight with the dinner I ordered."
+    "hint": "I'm allergic to peanuts, and I don't eat pork."
   }
 }

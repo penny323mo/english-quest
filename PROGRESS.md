@@ -1,7 +1,7 @@
 # English Quest loop progress
 
-last_reported_round: 16
-last_audited_round: 16
+last_reported_round: 42
+last_audited_round: 42
 
 phase: 4
 phase2_rounds: 11-16
@@ -149,3 +149,9 @@ Every round's review MUST audit difficulty progression along the Path: lessons o
 - 2026-10-31 13:50: (overlapping run) Round 41 already audited and logged by the 13:50 entry; re-ran the 390px walk + 20-lexicon check, same results (0 errors, 72/72 path, audio 200; walk.json/screens in loop-r41 refreshed). Extra lexicon note for fix-43: tall-cup-phrase gloss 大杯 is wrong (Tall = 中杯/細杯 size), trim-noun gloss 剪髮 vs example 修短少少. fix-42 in progress in grokcoder-pane (~22 min). Orchestrator pid 1213336 alive. last_reported_round: 39. Nightly panes untouched.
 
 - 2026-10-31 14:00: fix-42 (D12 T15 W11 + r40/r41 audit) in progress in grokcoder-pane (~34 min, agent rendering 132 audio clips in background, 112 paths changed uncommitted). Orchestrator pid 1213336 alive, heartbeat fresh, live 200 (= round 41, 5a44a77). No new round finished; nothing reported. last_reported_round: 39 (next Duet report after round 42). Nightly panes untouched.
+
+- 2026-10-31 14:46: Round 42 (D12 T15 W11 + r40/r41 audit fixes, c611010) live 200 (index-Bfqq9COT.js). Coder live audit review/loop-r42 (local only): path + D12/T15/W11/R12/W10/T14/J18/R13/D11 walked at 390px with real taps, 22 steps each, 0 errors/HTTP errors, sw 390; path 75/75, CEFR non-decreasing, no words/line dip; LH mobile 99/100/100/100; 20 lexicon audio 200, 14 CMU-exact + 1 ok variant + phrases. Scores Art6 UI8 Lex7 Pron8 Ped4 Speak8 SRS9 Flow9 Perf10 Audio9 Durability9 CI7. CLOSED #107 (answers 33/33/33%), #106, #96 state (only review/flags.json tracked), #77 (walked heroes), #109 D11 chips. Still open #93 #94 #103 #104 #105 (rewrites padded, not verbatim), #110 #111 #112 (unapplied), #102 (63/75 heroes < 35.2 incl new D12), #95 (D12 cold first paint blank), #113 #114 #115 #92. NEW #116 D12, #117 T15, #118 W11 rewrites, #119 P0 baby-face avatars/cast mismatch, #120 words/line tests force padding (root cause), #121 saturation test scale wrong + missing ls-files/verbatim tests, #122 lexicon fee 手續費, #123 hero/card gap. Appended r42 pointer to orch-fix-43 (in progress); wrote orch-fix-44 (T17 J20 D13) + orch-review-44. Orchestrator pid 1213336 untouched. last_reported_round: 42 (rounds 40–42 reported to Grok Duet via parent). Nightly panes untouched.
+
+- 2026-10-31 15:02: fix-43 (R14 J19 T16 + r41/r42 audit) in progress in grokcoder-pane (~33 min since 14:29, agent thinking, 16 paths changed uncommitted, style-gap not staged). Orchestrator pid 1213336 alive, heartbeat fresh, live 200 (= round 42, c611010). No new round finished; nothing reported. last_reported_round: 42 (next Duet report after round 45). Nightly panes untouched.
+
+- 2026-10-31 15:38: fix-43 (R14 J19 T16 + r41/r42 audit) still in progress in grokcoder-pane (~68 min total; attempt 1 timed out 15:14, attempt 2 queued; agent compacting context after Piper audio + lesson/art edits, ~321 paths changed uncommitted, style-gap not staged). Orchestrator pid 1213336 alive, heartbeat fresh, live 200 (= round 42, c611010 / index-Bfqq9COT.js). No new round finished; nothing reported. last_reported_round: 42 (next Duet report after round 45). Nightly panes untouched.

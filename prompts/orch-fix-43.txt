@@ -12,3 +12,5 @@ Dialogues like the audit scripts: short natural turns, contractions, every quest
 Run tests + build; Lighthouse mobile Perf >=98. Append "## Round 43" to CHANGELOG.md. Do not git commit.
 
 - r41 extra (Coder): tall-cup-phrase glossYue 大杯 is wrong — Tall is the chain's small/中杯 size; use 中杯 or replace with "regular". trim-noun glossYue 剪髮 → 修剪 / 修短 to match example.
+
+- Coder r42 live audit: read review/loop-r42/coder-audit.md and fix all open items (padded rewrites #93 #94 #103 #104 #105 must be VERBATIM; #110–#112 unapplied; #116 D12 / #117 T15 / #118 W11 rewrites; #119 P0 baby-face avatars; #120 words/line padding root cause; #121 saturation test scale is wrong).

@@ -416,7 +416,15 @@ a { color: inherit; }
   position: absolute;
   inset: 0;
 }
-.hero .art-ph { position: absolute; inset: 0; width: 100%; height: 100%; }
+.hero .art-ph {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--hero-lqip, none);
+  background-size: cover;
+  background-position: var(--hero-focus, center 30%);
+}
 .hero::after {
   content: "";
   position: absolute;
@@ -437,6 +445,12 @@ a { color: inherit; }
   transform: none;
   object-fit: contain;
   object-position: var(--hero-focus, center top);
+}
+.hero[data-beat="0"] .art-ph img {
+  height: 100%;
+  max-height: none;
+  object-fit: cover;
+  object-position: var(--hero-focus, center 30%);
 }
 /* Hear lists fill the sheet, so the portrait must sit entirely in the band above it. */
 .hero[data-beat="2"] .art-ph img {

@@ -15,6 +15,23 @@ export function preloadArt(urls: string[]) {
   }
 }
 
+export function whenArtDecoded(urls: string[]): Promise<void> {
+  const jobs = urls.filter(Boolean).map((url) => new Promise<void>((resolve) => {
+    const img = new Image();
+    const finish = () => resolve();
+    const decoded = () => {
+      const pending = typeof img.decode === "function" ? img.decode() : Promise.resolve();
+      pending.then(finish, finish);
+    };
+    img.onload = decoded;
+    img.onerror = finish;
+    img.decoding = "async";
+    img.src = url;
+    if (img.complete && img.naturalWidth > 0) decoded();
+  }));
+  return Promise.all(jobs).then(() => undefined);
+}
+
 export function ArtImg({
   src,
   alt,

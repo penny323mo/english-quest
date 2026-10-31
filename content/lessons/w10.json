@@ -3,8 +3,8 @@
   "unit": "W",
   "titleYue": "回覆客人投訴電郵",
   "titleEn": "Replying to a complaint by email",
-  "canDoYue": "你識寫誠懇道歉、講倉庫延遲、唔好全額退款、畀兩成或者五十蚊店舖餘額、寄出前核對金額、聽日致電，同埋多謝客人。",
-  "canDoEn": "Draft a sincere apology for a warehouse delay, offer twenty percent or fifty dollars of store credit instead of a full refund, check the amount, and say you will call tomorrow.",
+  "canDoYue": "你識起草一封遲到投訴回覆：先誠懇道歉，解釋倉庫延誤，畀兩成退款或者五十蚊購物金，聽日再打電話。",
+  "canDoEn": "Draft a late-order reply with a sincere apology, a warehouse delay, a twenty-percent refund or fifty dollars of store credit, and a call tomorrow.",
   "minutes": 12,
   "hero": "assets/art/lessons/w10.webp",
   "cast": [
@@ -23,12 +23,12 @@
   ],
   "topicTags": [
     "道歉",
-    "延遲",
-    "退款",
     "誠懇",
+    "延誤",
+    "退款",
+    "購物金",
     "確認",
-    "餘額",
-    "下一步"
+    "跟進"
   ],
   "next": "J14",
   "sound": {
@@ -37,20 +37,19 @@
     "note": "delayed 有 /eɪ/。apology 有 /ɑ/。",
     "pairs": [
       {
-        "a": "delayed-adj",
-        "b": "apology-noun"
+        "a": "apology-noun",
+        "b": "sincere-adj"
       },
       {
-        "a": "credit-noun",
-        "b": "next-step-phrase"
+        "a": "refund-noun",
+        "b": "credit-noun"
       }
     ],
     "drill": [
-      "delayed-adj",
       "apology-noun",
-      "credit-noun",
       "refund-noun",
-      "next-step-phrase"
+      "credit-noun",
+      "confirm-verb"
     ]
   },
   "dialogue": [
@@ -58,197 +57,197 @@
       "id": "w10-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The customer is angry because her order arrived a week late from the warehouse. How should I start the written reply?",
-      "glossYue": "客人好嬲，因為訂單遲咗一星期先由倉庫到。我點開頭寫回覆？",
+      "text": "The customer is angry because her order arrived a week late. How should I start the reply?",
+      "glossYue": "客人好嬲，因為佢嘅貨遲咗一個星期先到。我應該點樣開始回覆？",
       "audio": "assets/audio/lines/w10-l1.mp3",
       "audioSlow": "assets/audio/lines/w10-l1-slow.mp3",
-      "say": "The customer is angry because her order arrived a week late from the warehouse. How should I start the written reply?",
+      "say": "The customer is angry because her order arrived a week late. How should I start the reply?",
       "hideGloss": false
     },
     {
       "id": "w10-l2",
       "speaker": "ren",
       "speakerLabel": "Ren",
-      "text": "Start with a sincere apology now. Then explain the order was delayed at our warehouse last week.",
-      "glossYue": "先寫誠懇道歉。然後講訂單喺我哋倉庫延遲。",
+      "text": "Start with a sincere apology. Then explain the delay was at our warehouse.",
+      "glossYue": "先誠懇道歉。然後解釋延誤係出喺我哋倉庫。",
       "audio": "assets/audio/lines/w10-l2.mp3",
       "audioSlow": "assets/audio/lines/w10-l2-slow.mp3",
-      "say": "Start with a sincere apology now. Then explain the order was delayed at our warehouse last week.",
+      "say": "Start with a sincere apology. Then explain the delay was at our warehouse.",
       "hideGloss": false
     },
     {
       "id": "w10-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Should we offer her a full refund in this reply, or is a partial refund better?",
-      "glossYue": "我哋係咪要畀全額退款，定係部分退款好啲？",
+      "text": "Should we offer her a full refund?",
+      "glossYue": "我哋應唔應該畀佢全額退款？",
       "audio": "assets/audio/lines/w10-l3.mp3",
       "audioSlow": "assets/audio/lines/w10-l3-slow.mp3",
-      "say": "Should we offer her a full refund in this reply, or is a partial refund better?",
+      "say": "Should we offer her a full refund?",
       "hideGloss": false
     },
     {
       "id": "w10-l4",
       "speaker": "ren",
       "speakerLabel": "Ren",
-      "text": "No. Please offer a partial refund of twenty percent, or store credit if she prefers that instead.",
-      "glossYue": "唔好。請畀兩成部分退款，或者店舖餘額，睇佢想點。",
+      "text": "No, offer a partial refund of twenty percent, or store credit if she prefers.",
+      "glossYue": "唔好。畀兩成部分退款，或者如果佢想要，就畀店內購物金。",
       "audio": "assets/audio/lines/w10-l4.mp3",
       "audioSlow": "assets/audio/lines/w10-l4-slow.mp3",
-      "say": "No. Please offer a partial refund of twenty percent, or store credit if she prefers that instead.",
-      "hideGloss": true
+      "say": "No, offer a partial refund of twenty percent, or store credit if she prefers.",
+      "hideGloss": false
     },
     {
       "id": "w10-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Store credit of how much should I write down in the reply if she picks that credit?",
-      "glossYue": "如果佢揀店舖餘額，我寫幾多？",
+      "text": "Store credit of how much?",
+      "glossYue": "購物金幾多？",
       "audio": "assets/audio/lines/w10-l5.mp3",
       "audioSlow": "assets/audio/lines/w10-l5-slow.mp3",
-      "say": "Store credit of how much should I write down in the reply if she picks that credit?",
-      "hideGloss": true
+      "say": "Store credit of how much?",
+      "hideGloss": false
     },
     {
       "id": "w10-l6",
       "speaker": "ren",
       "speakerLabel": "Ren",
-      "text": "Fifty dollars of store credit. Check that amount and confirm it before you send the reply.",
-      "glossYue": "五十蚊店舖餘額。寄出之前同我確認金額。",
+      "text": "Fifty dollars. Check the amount with me before you send it.",
+      "glossYue": "五十蚊。寄出之前同我核對金額。",
       "audio": "assets/audio/lines/w10-l6.mp3",
       "audioSlow": "assets/audio/lines/w10-l6-slow.mp3",
-      "say": "Fifty dollars of store credit. Check that amount and confirm it before you send the reply.",
-      "hideGloss": true
+      "say": "Fifty dollars. Check the amount with me before you send it.",
+      "hideGloss": false
     },
     {
       "id": "w10-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Okay. How should I end the email after I confirm that credit amount with you first?",
-      "glossYue": "好。我確認金額之後，封電郵點收尾？",
+      "text": "Okay. How should I end the email?",
+      "glossYue": "好。電郵應該點樣收尾？",
       "audio": "assets/audio/lines/w10-l7.mp3",
       "audioSlow": "assets/audio/lines/w10-l7-slow.mp3",
-      "say": "Okay. How should I end the email after I confirm that credit amount with you first?",
-      "hideGloss": true
+      "say": "Okay. How should I end the email?",
+      "hideGloss": false
     },
     {
       "id": "w10-l8",
       "speaker": "ren",
       "speakerLabel": "Ren",
-      "text": "Say the next step is a call tomorrow, and thank her for her patience at the end of the email.",
-      "glossYue": "下一步講聽日會打電話，同埋多謝佢有耐性。",
+      "text": "Say we'll call her tomorrow to follow up, and thank her for her patience.",
+      "glossYue": "話我哋聽日會打電話跟進，並且多謝佢耐心等候。",
       "audio": "assets/audio/lines/w10-l8.mp3",
       "audioSlow": "assets/audio/lines/w10-l8-slow.mp3",
-      "say": "Say the next step is a call tomorrow, and thank her for her patience at the end of the email.",
-      "hideGloss": true
+      "say": "Say we'll call her tomorrow to follow up, and thank her for her patience.",
+      "hideGloss": false
     }
   ],
   "understand": [
     {
-      "prompt": "Start with a sincere apology now. Then explain the order was delayed at our warehouse last week. 呢句即係點？",
+      "prompt": "The customer is angry because her order arrived a week late. How should I start the reply? 即係問緊咩？",
       "choices": [
-        "誠懇道歉，講倉庫延遲",
-        "全額退款",
-        "問下一步"
-      ],
-      "answer": 0,
-      "explain": "sincere 係誠懇。apology 係道歉。"
-    },
-    {
-      "prompt": "No. Please offer a partial refund of twenty percent, or store credit if she prefers that instead. 呢句即係點？",
-      "choices": [
-        "問餘額幾多",
-        "部分退款兩成或者店舖餘額",
-        "確認電郵"
+        "關於延誤",
+        "講緊道歉",
+        "唔係誠懇"
       ],
       "answer": 1,
-      "explain": "refund 係退款。credit 係店舖餘額。"
+      "explain": "道歉。"
     },
     {
-      "prompt": "Say the next step is a call tomorrow, and thank her for her patience at the end of the email. 呢句即係點？",
+      "prompt": "No, offer a partial refund of twenty percent, or store credit if she prefers. 呢句即係點？",
       "choices": [
-        "叫佢全額退款",
-        "唔使確認",
-        "下一步係打電話，多謝耐心"
+        "講緊誠懇",
+        "唔係道歉",
+        "關於延誤"
+      ],
+      "answer": 0,
+      "explain": "誠懇。"
+    },
+    {
+      "prompt": "Say we'll call her tomorrow to follow up, and thank her for her patience. 呢句即係點？",
+      "choices": [
+        "唔係道歉",
+        "關於誠懇",
+        "講緊延誤"
       ],
       "answer": 2,
-      "explain": "next step 係下一步。"
+      "explain": "延誤。"
     }
   ],
   "chunks": [
     {
-      "pattern": "Start with a ___ apology now. Then explain the order was delayed at our warehouse last week.",
-      "example": "Start with a sincere apology now. Then explain the order was delayed at our warehouse last week.",
-      "glossYue": "先寫誠懇道歉。",
-      "answer": "sincere",
+      "pattern": "No, offer a partial ___ of twenty percent, or store credit if she prefers.",
+      "example": "No, offer a partial refund of twenty percent, or store credit if she prefers.",
+      "glossYue": "唔好。畀兩成部分退款，或者如果佢想要，就畀店內購物金。",
+      "answer": "refund",
       "choices": [
+        "refund",
+        "apology",
+        "sincere"
+      ]
+    },
+    {
+      "pattern": "Start with a sincere ___. Then explain the delay was at our warehouse.",
+      "example": "Start with a sincere apology. Then explain the delay was at our warehouse.",
+      "glossYue": "先誠懇道歉。然後解釋延誤係出喺我哋倉庫。",
+      "answer": "apology",
+      "choices": [
+        "apology",
         "sincere",
-        "partial",
         "delayed"
       ]
     },
     {
-      "pattern": "No. Please offer a partial ___ of twenty percent, or store credit if she prefers that instead.",
-      "example": "No. Please offer a partial refund of twenty percent, or store credit if she prefers that instead.",
-      "glossYue": "畀兩成退款或者店舖餘額。",
-      "answer": "refund",
+      "pattern": "Should we ___ her a full refund?",
+      "example": "Should we offer her a full refund?",
+      "glossYue": "我哋應唔應該畀佢全額退款？",
+      "answer": "offer",
       "choices": [
-        "refund",
-        "credit",
-        "apology"
-      ]
-    },
-    {
-      "pattern": "Fifty dollars of store ___. Check that amount and confirm it before you send the reply.",
-      "example": "Fifty dollars of store credit. Check that amount and confirm it before you send the reply.",
-      "glossYue": "五十蚊店舖餘額。",
-      "answer": "credit",
-      "choices": [
-        "credit",
-        "refund",
-        "apology"
+        "offer",
+        "apology",
+        "sincere"
       ]
     }
   ],
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想問退款定餘額。你點講？",
+      "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
-        "Start with a sincere apology now. Then explain the order was delayed at our warehouse last week.",
-        "No. Please offer a partial refund of twenty percent, or store credit if she prefers that instead.",
-        "Fifty dollars of store credit. Check that amount and confirm it before you send the reply."
+        "The customer is angry because her order arrived a week late. How should I start the reply?",
+        "Should we offer her a full refund?",
+        "Store credit of how much?"
       ],
-      "answer": 0,
-      "explain": "問 refund。"
+      "answer": 1,
+      "explain": "用呢句。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "next",
-        "step"
+        "start",
+        "sincere"
       ],
       "answer": [
-        "next",
-        "step"
+        "start",
+        "sincere"
       ]
     }
   ],
   "roleplay": {
     "you": "tom",
-    "intro": "你同 Ren 起草投訴回覆。先道歉，唔好全額退款，五十蚊店舖餘額，聽日致電。可以講：apology、credit。",
+    "intro": "你同 Ren 傾呢件事。等對方講完先答。",
     "turns": [
       {
         "partner": "Ren",
         "partnerId": "ren",
-        "line": "Start with a sincere apology now. Then explain the order was delayed at our warehouse last week.",
+        "line": "Start with a sincere apology. Then explain the delay was at our warehouse.",
         "audio": "assets/audio/lines/w10-l2.mp3",
         "audioSlow": "assets/audio/lines/w10-l2-slow.mp3",
-        "expect": "Should we offer her a full refund in this reply, or is a partial refund better?",
+        "expect": "Should we offer her a full refund?",
         "keywords": [
-          "refund",
-          "partial"
+          "offer",
+          "full"
         ],
         "modelAudio": "assets/audio/lines/w10-l3.mp3",
         "modelSlow": "assets/audio/lines/w10-l3-slow.mp3"
@@ -256,13 +255,13 @@
       {
         "partner": "Ren",
         "partnerId": "ren",
-        "line": "No. Please offer a partial refund of twenty percent, or store credit if she prefers that instead.",
+        "line": "No, offer a partial refund of twenty percent, or store credit if she prefers.",
         "audio": "assets/audio/lines/w10-l4.mp3",
         "audioSlow": "assets/audio/lines/w10-l4-slow.mp3",
-        "expect": "Store credit of how much should I write down in the reply if she picks that credit?",
+        "expect": "Store credit of how much?",
         "keywords": [
-          "credit",
-          "amount"
+          "store",
+          "credit"
         ],
         "modelAudio": "assets/audio/lines/w10-l5.mp3",
         "modelSlow": "assets/audio/lines/w10-l5-slow.mp3"
@@ -270,13 +269,13 @@
       {
         "partner": "Ren",
         "partnerId": "ren",
-        "line": "Fifty dollars of store credit. Check that amount and confirm it before you send the reply.",
+        "line": "Fifty dollars. Check the amount with me before you send it.",
         "audio": "assets/audio/lines/w10-l6.mp3",
         "audioSlow": "assets/audio/lines/w10-l6-slow.mp3",
-        "expect": "Okay. How should I end the email after I confirm that credit amount with you first?",
+        "expect": "Okay. How should I end the email?",
         "keywords": [
-          "email",
-          "tomorrow"
+          "okay",
+          "email"
         ],
         "modelAudio": "assets/audio/lines/w10-l7.mp3",
         "modelSlow": "assets/audio/lines/w10-l7-slow.mp3"
@@ -286,60 +285,60 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for saying sorry to a customer.",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
       "lemma": "apology-noun",
       "choices": [
         "apology",
-        "refund",
-        "credit"
+        "sincere",
+        "delayed"
       ],
       "answer": 0
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the word you hear for money kept at the shop for a later order.",
-      "lemma": "credit-noun",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "sincere-adj",
       "choices": [
-        "credit",
-        "delayed",
-        "sincere"
+        "sincere",
+        "apology",
+        "delayed"
       ],
       "answer": 0
     },
     {
       "type": "meaning",
-      "prompt": "You say 'a sincere apology.' What does sincere mean?",
+      "prompt": "Which meaning fits the line you just studied?",
       "choices": [
-        "誠懇",
-        "退款",
-        "延遲"
-      ],
-      "answer": 0
-    },
-    {
-      "type": "meaning",
-      "prompt": "You say 'The next step is a phone call.' What does next step mean?",
-      "choices": [
-        "餘額",
         "道歉",
-        "下一步"
+        "誠懇",
+        "延誤"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "道歉",
+        "延誤",
+        "誠懇"
       ],
       "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "Which word means money returned to the customer?",
+      "prompt": "Which word fits this lesson?",
       "choices": [
+        "sincere",
         "delayed",
-        "refund",
-        "credit"
+        "apology"
       ],
       "answer": 1,
-      "explain": "refund 係退款。"
+      "explain": "道歉。"
     }
   ],
   "shadow": {
     "lineId": "w10-l1",
-    "hint": "The customer is angry because her order arrived a week late from the warehouse. How should I start the written reply?"
+    "hint": "The customer is angry because her order arrived a week late. How should I start the reply?"
   }
 }

@@ -1,0 +1,338 @@
+{
+  "id": "J19",
+  "unit": "J",
+  "titleYue": "解釋鑽石證書",
+  "titleEn": "Explaining a diamond certificate",
+  "canDoYue": "你識用普通話講鑽石證書：切工、顏色、淨度、一克拉，腰上有實驗室報告編號，同埋點解兩粒相似嘅石價錢唔同。",
+  "canDoEn": "Explain a diamond certificate in plain words: cut, colour, clarity, one carat, a lab report number on the girdle, and why two similar stones have different prices.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/j19.webp",
+  "cast": [
+    "gus",
+    "ida"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "diamond-noun",
+    "certificate-noun",
+    "color-noun",
+    "price-noun"
+  ],
+  "topicTags": [
+    "鑽石",
+    "證書",
+    "切工",
+    "價錢"
+  ],
+  "next": "J16",
+  "sound": {
+    "ipa": "/aɪ/",
+    "title": "price 入面嗰個音",
+    "note": "price 有 /aɪ/。size 有 /aɪ/。",
+    "pairs": [
+      {
+        "a": "diamond-noun",
+        "b": "certificate-noun"
+      },
+      {
+        "a": "color-noun",
+        "b": "price-noun"
+      }
+    ],
+    "drill": [
+      "diamond-noun",
+      "certificate-noun",
+      "color-noun",
+      "price-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "j19-l1",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "Can you explain this diamond certificate in plain words, please?",
+      "glossYue": "可唔可以用簡單嘅話解釋呢張鑽石證書？",
+      "audio": "assets/audio/lines/j19-l1.mp3",
+      "audioSlow": "assets/audio/lines/j19-l1-slow.mp3",
+      "say": "Can you explain this diamond certificate in plain words, please?",
+      "hideGloss": false
+    },
+    {
+      "id": "j19-l2",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Sure. The cut, colour, and clarity are all very good.",
+      "glossYue": "可以。切工、顏色同淨度都好好。",
+      "audio": "assets/audio/lines/j19-l2.mp3",
+      "audioSlow": "assets/audio/lines/j19-l2-slow.mp3",
+      "say": "Sure. The cut, colour, and clarity are all very good.",
+      "hideGloss": false
+    },
+    {
+      "id": "j19-l3",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "What about the carat, and the number on the girdle?",
+      "glossYue": "克拉點計？腰上嗰個號碼呢？",
+      "audio": "assets/audio/lines/j19-l3.mp3",
+      "audioSlow": "assets/audio/lines/j19-l3-slow.mp3",
+      "say": "What about the carat, and the number on the girdle?",
+      "hideGloss": false
+    },
+    {
+      "id": "j19-l4",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "It's one carat. The lab report number is engraved on the girdle.",
+      "glossYue": "一克拉。實驗室報告編號刻喺腰上。",
+      "audio": "assets/audio/lines/j19-l4.mp3",
+      "audioSlow": "assets/audio/lines/j19-l4-slow.mp3",
+      "say": "It's one carat. The lab report number is engraved on the girdle.",
+      "hideGloss": false
+    },
+    {
+      "id": "j19-l5",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "Why is this stone more expensive than the other one?",
+      "glossYue": "點解呢粒比另一粒貴？",
+      "audio": "assets/audio/lines/j19-l5.mp3",
+      "audioSlow": "assets/audio/lines/j19-l5-slow.mp3",
+      "say": "Why is this stone more expensive than the other one?",
+      "hideGloss": false
+    },
+    {
+      "id": "j19-l6",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "This one has a better cut. The other has a small mark.",
+      "glossYue": "呢粒切工更好。另一粒有個小痕跡。",
+      "audio": "assets/audio/lines/j19-l6.mp3",
+      "audioSlow": "assets/audio/lines/j19-l6-slow.mp3",
+      "say": "This one has a better cut. The other has a small mark.",
+      "hideGloss": false
+    },
+    {
+      "id": "j19-l7",
+      "speaker": "gus",
+      "speakerLabel": "Gus",
+      "text": "So the price is higher because the cut is cleaner?",
+      "glossYue": "所以價錢高啲，係因為切工乾淨啲？",
+      "audio": "assets/audio/lines/j19-l7.mp3",
+      "audioSlow": "assets/audio/lines/j19-l7-slow.mp3",
+      "say": "So the price is higher because the cut is cleaner?",
+      "hideGloss": false
+    },
+    {
+      "id": "j19-l8",
+      "speaker": "ida",
+      "speakerLabel": "Ida",
+      "text": "Yes. The report is from a lab. It is not a brand name.",
+      "glossYue": "係。報告嚟自一間實驗室。佢唔係品牌名。",
+      "audio": "assets/audio/lines/j19-l8.mp3",
+      "audioSlow": "assets/audio/lines/j19-l8-slow.mp3",
+      "say": "Yes. The report is from a lab. It is not a brand name.",
+      "hideGloss": false
+    }
+  ],
+  "roleplay": {
+    "you": "gus",
+    "intro": "你同 Ida 傾呢件事。等對方講完先答。",
+    "turns": [
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "Sure. The cut, colour, and clarity are all very good.",
+        "audio": "assets/audio/lines/j19-l2.mp3",
+        "audioSlow": "assets/audio/lines/j19-l2-slow.mp3",
+        "expect": "What about the carat, and the number on the girdle?",
+        "keywords": [
+          "what",
+          "carat"
+        ],
+        "modelAudio": "assets/audio/lines/j19-l3.mp3",
+        "modelSlow": "assets/audio/lines/j19-l3-slow.mp3"
+      },
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "It's one carat. The lab report number is engraved on the girdle.",
+        "audio": "assets/audio/lines/j19-l4.mp3",
+        "audioSlow": "assets/audio/lines/j19-l4-slow.mp3",
+        "expect": "Why is this stone more expensive than the other one?",
+        "keywords": [
+          "stone",
+          "more"
+        ],
+        "modelAudio": "assets/audio/lines/j19-l5.mp3",
+        "modelSlow": "assets/audio/lines/j19-l5-slow.mp3"
+      },
+      {
+        "partner": "Ida",
+        "partnerId": "ida",
+        "line": "This one has a better cut. The other has a small mark.",
+        "audio": "assets/audio/lines/j19-l6.mp3",
+        "audioSlow": "assets/audio/lines/j19-l6-slow.mp3",
+        "expect": "So the price is higher because the cut is cleaner?",
+        "keywords": [
+          "price",
+          "higher"
+        ],
+        "modelAudio": "assets/audio/lines/j19-l7.mp3",
+        "modelSlow": "assets/audio/lines/j19-l7-slow.mp3"
+      }
+    ]
+  },
+  "understand": [
+    {
+      "prompt": "Can you explain this diamond certificate in plain words, please? 即係問緊咩？",
+      "choices": [
+        "關於切工",
+        "講緊鑽石",
+        "唔係證書"
+      ],
+      "answer": 1,
+      "explain": "鑽石。"
+    },
+    {
+      "prompt": "It's one carat. The lab report number is engraved on the girdle. 呢句即係點？",
+      "choices": [
+        "講緊證書",
+        "唔係鑽石",
+        "關於切工"
+      ],
+      "answer": 0,
+      "explain": "證書。"
+    },
+    {
+      "prompt": "Yes. The report is from a lab. It is not a brand name. 呢句即係點？",
+      "choices": [
+        "唔係鑽石",
+        "關於證書",
+        "講緊切工"
+      ],
+      "answer": 2,
+      "explain": "切工。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Can you explain this ___ certificate in plain words, please?",
+      "example": "Can you explain this diamond certificate in plain words, please?",
+      "glossYue": "可唔可以用簡單嘅話解釋呢張鑽石證書？",
+      "answer": "diamond",
+      "choices": [
+        "diamond",
+        "certificate",
+        "color"
+      ]
+    },
+    {
+      "pattern": "So the ___ is higher because the cut is cleaner?",
+      "example": "So the price is higher because the cut is cleaner?",
+      "glossYue": "所以價錢高啲，係因為切工乾淨啲？",
+      "answer": "price",
+      "choices": [
+        "price",
+        "diamond",
+        "certificate"
+      ]
+    },
+    {
+      "pattern": "Yes. The ___ is from a lab. It is not a brand name.",
+      "example": "Yes. The report is from a lab. It is not a brand name.",
+      "glossYue": "係。報告嚟自一間實驗室。佢唔係品牌名。",
+      "answer": "report",
+      "choices": [
+        "report",
+        "diamond",
+        "certificate"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想用呢課嘅講法。你點講？",
+      "choices": [
+        "Can you explain this diamond certificate in plain words, please?",
+        "What about the carat, and the number on the girdle?",
+        "Why is this stone more expensive than the other one?"
+      ],
+      "answer": 1,
+      "explain": "用呢句。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "sure",
+        "cut"
+      ],
+      "answer": [
+        "sure",
+        "cut"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "diamond-noun",
+      "choices": [
+        "color",
+        "diamond",
+        "certificate"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "certificate-noun",
+      "choices": [
+        "diamond",
+        "color",
+        "certificate"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "鑽石",
+        "證書",
+        "切工"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "鑽石",
+        "切工",
+        "證書"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word fits this lesson?",
+      "choices": [
+        "certificate",
+        "color",
+        "diamond"
+      ],
+      "answer": 1,
+      "explain": "鑽石。"
+    }
+  ],
+  "shadow": {
+    "lineId": "j19-l1",
+    "hint": "Can you explain this diamond certificate in plain words, please?"
+  }
+}

@@ -74,7 +74,10 @@
     "j11",
     "w6",
     "t9",
-    "j13"
+    "j13",
+    "r14",
+    "j19",
+    "t16"
   ],
   "pending": [],
   "focus": {
@@ -152,6 +155,598 @@
     "j13": "center 30%",
     "d12": "center 30%",
     "t15": "center 30%",
-    "w11": "center 30%"
+    "w11": "center 30%",
+    "r14": "center 30%",
+    "j19": "center 30%",
+    "t16": "center 30%"
+  },
+  "people": {
+    "tom": "Adult man, short black hair, beige jacket, coral scarf, head and shoulders.",
+    "ben": "Adult man with glasses, head and shoulders.",
+    "kim": "Adult staff member, head and shoulders.",
+    "gus": "Adult man, short brown hair, cream collared shirt, head and shoulders.",
+    "ida": "Adult woman, peach bob, gold hair clip, head and shoulders.",
+    "cleo": "Adult woman, black bob, purple cat clip, cream sweater, head and shoulders.",
+    "mira": "Adult woman, black wavy hair, teal clip, teal shirt, cream apron.",
+    "niles": "Adult colleague, mint curls, round glasses, yellow shirt, head and shoulders.",
+    "nell": "Adult colleague, head and shoulders.",
+    "wen": "Adult man on the clinic phone line, head and shoulders.",
+    "mei": "Adult woman at the jewellery counter, head and shoulders.",
+    "ana": "Adult woman at the restaurant desk, head and shoulders.",
+    "kai": "Adult jewellery colleague, head and shoulders.",
+    "jo": "Adult colleague, head and shoulders.",
+    "sam": "Adult colleague, head and shoulders.",
+    "ray": "Adult colleague, head and shoulders.",
+    "noa": "Adult colleague, head and shoulders.",
+    "may": "Adult colleague, head and shoulders.",
+    "pat": "Adult colleague, head and shoulders.",
+    "nia": "Adult woman in a jewellery consult, head and shoulders.",
+    "ada": "Adult woman in a jewellery consult, head and shoulders.",
+    "owen": "Adult colleague, head and shoulders.",
+    "lea": "Adult colleague, head and shoulders.",
+    "ren": "Adult colleague, head and shoulders.",
+    "mina": "Adult colleague, head and shoulders.",
+    "cole": "Adult colleague, head and shoulders.",
+    "suki": "Adult colleague, head and shoulders.",
+    "ruth": "Adult colleague, head and shoulders.",
+    "hugh": "Adult colleague, head and shoulders.",
+    "zuri": "Adult colleague, head and shoulders.",
+    "lina": "Adult colleague, head and shoulders.",
+    "pesi": "Adult colleague, head and shoulders.",
+    "nori": "Adult colleague, head and shoulders.",
+    "eddy": "Adult colleague, head and shoulders.",
+    "reid": "Adult colleague, head and shoulders.",
+    "ines": "Adult colleague, head and shoulders.",
+    "opal": "Adult colleague, head and shoulders.",
+    "hugo": "Adult colleague, head and shoulders.",
+    "wynn": "Adult colleague, head and shoulders.",
+    "beau": "Adult colleague, head and shoulders.",
+    "sora": "Adult colleague, head and shoulders.",
+    "otto": "Adult colleague, head and shoulders.",
+    "glen": "Adult colleague, head and shoulders.",
+    "hana": "Adult colleague, head and shoulders.",
+    "ling": "Adult colleague, head and shoulders."
+  },
+  "scenes": {
+    "d2": {
+      "cast": [
+        "ben",
+        "tom"
+      ],
+      "look": "At the bank (銀行)"
+    },
+    "f3": {
+      "cast": [
+        "mei"
+      ],
+      "look": "Numbers, money, and time (數字、錢同時間)"
+    },
+    "w6": {
+      "cast": [
+        "hugh",
+        "zuri"
+      ],
+      "look": "A one-minute self-intro (面試自我介紹)"
+    },
+    "f5": {
+      "cast": [
+        "mei",
+        "ling"
+      ],
+      "look": "Personal details (個人資料)"
+    },
+    "t16": {
+      "cast": [
+        "tom",
+        "kim"
+      ],
+      "look": "Renting a car abroad (喺外國租車)"
+    },
+    "j4": {
+      "cast": [
+        "mei",
+        "tom"
+      ],
+      "look": "Gold, silver, diamond, jade (金、銀、鑽石、玉)"
+    },
+    "j9": {
+      "cast": [
+        "mei",
+        "tom"
+      ],
+      "look": "Handling complaints (投訴同退換)"
+    },
+    "w9": {
+      "cast": [
+        "sora",
+        "niles"
+      ],
+      "look": "Asking for annual leave (請年假)"
+    },
+    "j11": {
+      "cast": [
+        "ada",
+        "nia"
+      ],
+      "look": "A private jewellery consult (貴客諮詢)"
+    },
+    "j13": {
+      "cast": [
+        "kai",
+        "tom"
+      ],
+      "look": "A corporate gift order (公司訂禮品)"
+    },
+    "j8": {
+      "cast": [
+        "mei",
+        "tom"
+      ],
+      "look": "After-sales and warranty (售後同保養)"
+    },
+    "j10": {
+      "cast": [
+        "mei",
+        "tom"
+      ],
+      "look": "Upselling and add-ons (加購同禮盒)"
+    },
+    "d6": {
+      "cast": [
+        "mei",
+        "tom"
+      ],
+      "look": "At the pharmacy (藥房買藥)"
+    },
+    "r10": {
+      "cast": [
+        "mira",
+        "cleo"
+      ],
+      "look": "Ordering at a café (咖啡店落單)"
+    },
+    "d5": {
+      "cast": [
+        "cole",
+        "tom"
+      ],
+      "look": "Post office and parcels (郵局寄包裹)"
+    },
+    "r14": {
+      "cast": [
+        "tom",
+        "mira"
+      ],
+      "look": "Ordering a birthday cake (訂生日蛋糕)"
+    },
+    "t15": {
+      "cast": [
+        "kim",
+        "tom"
+      ],
+      "look": "Hotel check-out and luggage storage (退房同寄存行李)"
+    },
+    "t1": {
+      "cast": [
+        "jo"
+      ],
+      "look": "Airport check-in (機場櫃檯)"
+    },
+    "d7": {
+      "cast": [
+        "wynn",
+        "beau"
+      ],
+      "look": "At the hair salon (剪頭髮)"
+    },
+    "d8": {
+      "cast": [
+        "glen",
+        "nell"
+      ],
+      "look": "Reporting a repair (搵管理處報維修)"
+    },
+    "d11": {
+      "cast": [
+        "tom",
+        "ben"
+      ],
+      "look": "Opening a bank account (銀行開戶)"
+    },
+    "j6": {
+      "cast": [
+        "mei",
+        "tom"
+      ],
+      "look": "Prices and discounts (價錢同折扣)"
+    },
+    "r9": {
+      "cast": [
+        "nori",
+        "eddy"
+      ],
+      "look": "Paying the bill (埋單同夾錢)"
+    },
+    "j3": {
+      "cast": [
+        "mei",
+        "tom"
+      ],
+      "look": "Names of the pieces (件件嘅名)"
+    },
+    "r4": {
+      "cast": [
+        "ana",
+        "tom"
+      ],
+      "look": "During the meal (用餐期間)"
+    },
+    "d12": {
+      "cast": [
+        "wen",
+        "tom"
+      ],
+      "look": "Booking a clinic appointment by phone (打電話約睇醫生)"
+    },
+    "j15": {
+      "cast": [
+        "ida",
+        "gus"
+      ],
+      "look": "Resize a ring and collect it (改戒指尺寸同維修)"
+    },
+    "t12": {
+      "cast": [
+        "kim",
+        "tom"
+      ],
+      "look": "A hotel check-in problem (酒店入住出問題)"
+    },
+    "j1": {
+      "cast": [
+        "mei",
+        "tom"
+      ],
+      "look": "Greeting a customer (迎接客人)"
+    },
+    "j17": {
+      "cast": [
+        "gus",
+        "ida"
+      ],
+      "look": "Pearl care and pricing (珍珠保養同價錢)"
+    },
+    "d4": {
+      "cast": [
+        "mina",
+        "tom"
+      ],
+      "look": "Phone and data plans (電話卡同上網)"
+    },
+    "t14": {
+      "cast": [
+        "tom",
+        "kim"
+      ],
+      "look": "A missed connection (轉機趕唔切)"
+    },
+    "j18": {
+      "cast": [
+        "gus",
+        "ida"
+      ],
+      "look": "Watch battery and strap (換錶電同錶帶)"
+    },
+    "t7": {
+      "cast": [
+        "may",
+        "tom"
+      ],
+      "look": "Shopping while travelling (旅行購物)"
+    },
+    "w3": {
+      "cast": [
+        "owen",
+        "tom"
+      ],
+      "look": "Meetings (開會)"
+    },
+    "d9": {
+      "cast": [
+        "ben",
+        "tom"
+      ],
+      "look": "The machine kept my card (銀行：櫃員機食咗張卡)"
+    },
+    "r8": {
+      "cast": [
+        "pesi",
+        "lina"
+      ],
+      "look": "Takeaway by phone (電話叫外賣)"
+    },
+    "w4": {
+      "cast": [
+        "ada",
+        "tom"
+      ],
+      "look": "Small talk at work (職場閒聊)"
+    },
+    "j7": {
+      "cast": [
+        "mei",
+        "tom"
+      ],
+      "look": "Payment and tax-free (付款同退稅)"
+    },
+    "f4": {
+      "cast": [
+        "mei"
+      ],
+      "look": "Polite phrases (禮貌用語)"
+    },
+    "t8": {
+      "cast": [
+        "pat",
+        "tom"
+      ],
+      "look": "At immigration (入境對話)"
+    },
+    "j16": {
+      "cast": [
+        "gus",
+        "ida"
+      ],
+      "look": "Engraving a gift (首飾刻字)"
+    },
+    "w7": {
+      "cast": [
+        "reid",
+        "ines"
+      ],
+      "look": "Calling in sick (打電話請病假)"
+    },
+    "f1": {
+      "cast": [
+        "mei"
+      ],
+      "look": "Sounds and breath (氣息同長短音)"
+    },
+    "r12": {
+      "cast": [
+        "tom",
+        "ana"
+      ],
+      "look": "Booking a table for a group (訂枱請客)"
+    },
+    "r2": {
+      "cast": [
+        "ana",
+        "tom"
+      ],
+      "look": "Ordering (落單)"
+    },
+    "t6": {
+      "cast": [
+        "kim",
+        "tom"
+      ],
+      "look": "Hotel problem (酒店問題)"
+    },
+    "j2": {
+      "cast": [
+        "mei",
+        "tom"
+      ],
+      "look": "What are you looking for? (你想搵咩)"
+    },
+    "w2": {
+      "cast": [
+        "ada",
+        "tom"
+      ],
+      "look": "Email phrases spoken (電郵口語)"
+    },
+    "j19": {
+      "cast": [
+        "gus",
+        "ida"
+      ],
+      "look": "Explaining a diamond certificate (解釋鑽石證書)"
+    },
+    "t13": {
+      "cast": [
+        "tom",
+        "suki"
+      ],
+      "look": "At the pharmacy abroad (外地藥房買藥)"
+    },
+    "f2": {
+      "cast": [
+        "mei"
+      ],
+      "look": "Greetings and names (打招呼同名字)"
+    },
+    "r1": {
+      "cast": [
+        "ana",
+        "tom"
+      ],
+      "look": "Entering and seating (入座)"
+    },
+    "j12": {
+      "cast": [
+        "kai",
+        "tom"
+      ],
+      "look": "A jewellery phone enquiry (電話查詢)"
+    },
+    "t11": {
+      "cast": [
+        "otto",
+        "hana"
+      ],
+      "look": "MTR and Octopus top-up (搭港鐵同增值)"
+    },
+    "t9": {
+      "cast": [
+        "kim",
+        "may"
+      ],
+      "look": "A delayed flight (航班延誤)"
+    },
+    "d10": {
+      "cast": [
+        "tom",
+        "ray"
+      ],
+      "look": "Calling a taxi app (召的士)"
+    },
+    "d3": {
+      "cast": [
+        "lea",
+        "tom"
+      ],
+      "look": "Renting a flat (租樓)"
+    },
+    "w5": {
+      "cast": [
+        "ren",
+        "tom"
+      ],
+      "look": "A complaint call (投訴電話)"
+    },
+    "t10": {
+      "cast": [
+        "opal",
+        "hugo"
+      ],
+      "look": "Lost luggage (行李唔見咗)"
+    },
+    "f6": {
+      "cast": [
+        "mei",
+        "ling"
+      ],
+      "look": "Daily routines (每日作息)"
+    },
+    "j14": {
+      "cast": [
+        "ida",
+        "gus"
+      ],
+      "look": "A custom jewellery design (訂造首飾)"
+    },
+    "j5": {
+      "cast": [
+        "mei",
+        "tom"
+      ],
+      "look": "Sizing and try-on (尺寸同試戴)"
+    },
+    "w11": {
+      "cast": [
+        "niles",
+        "tom"
+      ],
+      "look": "Asking HR about a payslip (問HR糧單問題)"
+    },
+    "r5": {
+      "cast": [
+        "ana",
+        "tom"
+      ],
+      "look": "Bill and tip (埋單同貼士)"
+    },
+    "w1": {
+      "cast": [
+        "nia",
+        "tom"
+      ],
+      "look": "Phone calls (職場電話)"
+    },
+    "r6": {
+      "cast": [
+        "ana",
+        "tom"
+      ],
+      "look": "A reservation by phone (電話訂位)"
+    },
+    "w8": {
+      "cast": [
+        "niles",
+        "sora"
+      ],
+      "look": "A team meeting update (開會報告進度)"
+    },
+    "t3": {
+      "cast": [
+        "kim",
+        "tom"
+      ],
+      "look": "Hotel check-in (酒店入住)"
+    },
+    "r7": {
+      "cast": [
+        "suki",
+        "ruth"
+      ],
+      "look": "A problem at the table (餐檯投訴)"
+    },
+    "d1": {
+      "cast": [
+        "wen",
+        "tom"
+      ],
+      "look": "At the doctor (睇醫生)"
+    },
+    "t5": {
+      "cast": [
+        "noa",
+        "tom"
+      ],
+      "look": "Lost and emergencies (行失咗點求人)"
+    },
+    "r11": {
+      "cast": [
+        "ana",
+        "mira"
+      ],
+      "look": "Allergies and dietary needs (食物敏感同戒口)"
+    },
+    "t4": {
+      "cast": [
+        "ray",
+        "tom"
+      ],
+      "look": "Taxi and asking the way (的士同問路)"
+    },
+    "r13": {
+      "cast": [
+        "cleo",
+        "mira"
+      ],
+      "look": "Changing a café order (咖啡店改要求)"
+    },
+    "w10": {
+      "cast": [
+        "tom",
+        "ren"
+      ],
+      "look": "Replying to a complaint by email (回覆客人投訴電郵)"
+    },
+    "r3": {
+      "cast": [
+        "ana",
+        "tom"
+      ],
+      "look": "Allergies and special requests (過敏同特別要求)"
+    },
+    "t2": {
+      "cast": [
+        "sam"
+      ],
+      "look": "Security and directions (安檢同方向)"
+    }
   }
 }

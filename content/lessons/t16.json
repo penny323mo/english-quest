@@ -1,0 +1,338 @@
+{
+  "id": "T16",
+  "unit": "T",
+  "titleYue": "喺外國租車",
+  "titleEn": "Renting a car abroad",
+  "canDoYue": "你識喺外國租車：出示駕駛執照同國際許可證，問九百蚊自付額，滿箱取滿箱還，星期五六點還車，同寫低後門刮痕。",
+  "canDoEn": "Rent a car with a driving licence and an international permit, ask about a nine-hundred-dollar excess, accept full-to-full fuel, return it by six on Friday, and note a scratch on the rear door.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/t16.webp",
+  "cast": [
+    "tom",
+    "kim"
+  ],
+  "cefr": "B1",
+  "lemmas": [
+    "scratch-noun",
+    "fee-noun",
+    "time-noun",
+    "return-noun"
+  ],
+  "topicTags": [
+    "租車",
+    "執照",
+    "自付額",
+    "刮痕"
+  ],
+  "next": "W2",
+  "sound": {
+    "ipa": "/aɪ/",
+    "title": "licence 入面嗰個音",
+    "note": "licence 有 /aɪ/。time 有 /aɪ/。",
+    "pairs": [
+      {
+        "a": "scratch-noun",
+        "b": "fee-noun"
+      },
+      {
+        "a": "time-noun",
+        "b": "return-noun"
+      }
+    ],
+    "drill": [
+      "scratch-noun",
+      "fee-noun",
+      "time-noun",
+      "return-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "t16-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Hi. I'd like to rent a car. Here is my driving licence.",
+      "glossYue": "你好。我想租車。呢張係我嘅駕駛執照。",
+      "audio": "assets/audio/lines/t16-l1.mp3",
+      "audioSlow": "assets/audio/lines/t16-l1-slow.mp3",
+      "say": "Hi. I'd like to rent a car. Here is my driving licence.",
+      "hideGloss": false
+    },
+    {
+      "id": "t16-l2",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Thanks. Do you also have an international permit?",
+      "glossYue": "多謝。你有冇國際駕駛許可證？",
+      "audio": "assets/audio/lines/t16-l2.mp3",
+      "audioSlow": "assets/audio/lines/t16-l2-slow.mp3",
+      "say": "Thanks. Do you also have an international permit?",
+      "hideGloss": false
+    },
+    {
+      "id": "t16-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Yes, I do. What is the insurance excess on this car?",
+      "glossYue": "有。呢架車嘅保險自付額係幾多？",
+      "audio": "assets/audio/lines/t16-l3.mp3",
+      "audioSlow": "assets/audio/lines/t16-l3-slow.mp3",
+      "say": "Yes, I do. What is the insurance excess on this car?",
+      "hideGloss": false
+    },
+    {
+      "id": "t16-l4",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "The excess is nine hundred dollars. Fuel is full to full.",
+      "glossYue": "自付額係九百蚊。油要滿箱取、滿箱還。",
+      "audio": "assets/audio/lines/t16-l4.mp3",
+      "audioSlow": "assets/audio/lines/t16-l4-slow.mp3",
+      "say": "The excess is nine hundred dollars. Fuel is full to full.",
+      "hideGloss": false
+    },
+    {
+      "id": "t16-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Full to full is fine. What time do I need to return it?",
+      "glossYue": "滿箱還可以。我要幾時還車？",
+      "audio": "assets/audio/lines/t16-l5.mp3",
+      "audioSlow": "assets/audio/lines/t16-l5-slow.mp3",
+      "say": "Full to full is fine. What time do I need to return it?",
+      "hideGloss": false
+    },
+    {
+      "id": "t16-l6",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Please return it by six on Friday. We check every car at the desk.",
+      "glossYue": "請星期五六點之前還。我哋會喺櫃檯檢查每一架車。",
+      "audio": "assets/audio/lines/t16-l6.mp3",
+      "audioSlow": "assets/audio/lines/t16-l6-slow.mp3",
+      "say": "Please return it by six on Friday. We check every car at the desk.",
+      "hideGloss": false
+    },
+    {
+      "id": "t16-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "There is one scratch on the rear door. Can you note that?",
+      "glossYue": "後門有一條刮痕。可唔可以寫低？",
+      "audio": "assets/audio/lines/t16-l7.mp3",
+      "audioSlow": "assets/audio/lines/t16-l7-slow.mp3",
+      "say": "There is one scratch on the rear door. Can you note that?",
+      "hideGloss": false
+    },
+    {
+      "id": "t16-l8",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Yes. I've marked that scratch, and the rental fee stays the same.",
+      "glossYue": "可以。我寫低咗條刮痕，租金維持不變。",
+      "audio": "assets/audio/lines/t16-l8.mp3",
+      "audioSlow": "assets/audio/lines/t16-l8-slow.mp3",
+      "say": "Yes. I've marked that scratch, and the rental fee stays the same.",
+      "hideGloss": false
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你同 Kim 傾呢件事。等對方講完先答。",
+    "turns": [
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "Thanks. Do you also have an international permit?",
+        "audio": "assets/audio/lines/t16-l2.mp3",
+        "audioSlow": "assets/audio/lines/t16-l2-slow.mp3",
+        "expect": "Yes, I do. What is the insurance excess on this car?",
+        "keywords": [
+          "what",
+          "insurance"
+        ],
+        "modelAudio": "assets/audio/lines/t16-l3.mp3",
+        "modelSlow": "assets/audio/lines/t16-l3-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "The excess is nine hundred dollars. Fuel is full to full.",
+        "audio": "assets/audio/lines/t16-l4.mp3",
+        "audioSlow": "assets/audio/lines/t16-l4-slow.mp3",
+        "expect": "Full to full is fine. What time do I need to return it?",
+        "keywords": [
+          "full",
+          "fine"
+        ],
+        "modelAudio": "assets/audio/lines/t16-l5.mp3",
+        "modelSlow": "assets/audio/lines/t16-l5-slow.mp3"
+      },
+      {
+        "partner": "Kim",
+        "partnerId": "kim",
+        "line": "Please return it by six on Friday. We check every car at the desk.",
+        "audio": "assets/audio/lines/t16-l6.mp3",
+        "audioSlow": "assets/audio/lines/t16-l6-slow.mp3",
+        "expect": "There is one scratch on the rear door. Can you note that?",
+        "keywords": [
+          "scratch",
+          "rear"
+        ],
+        "modelAudio": "assets/audio/lines/t16-l7.mp3",
+        "modelSlow": "assets/audio/lines/t16-l7-slow.mp3"
+      }
+    ]
+  },
+  "understand": [
+    {
+      "prompt": "Hi. I'd like to rent a car. Here is my driving licence. 呢句即係點？",
+      "choices": [
+        "關於自付額",
+        "講緊租車",
+        "唔係執照"
+      ],
+      "answer": 1,
+      "explain": "租車。"
+    },
+    {
+      "prompt": "The excess is nine hundred dollars. Fuel is full to full. 呢句即係點？",
+      "choices": [
+        "講緊執照",
+        "唔係租車",
+        "關於自付額"
+      ],
+      "answer": 0,
+      "explain": "執照。"
+    },
+    {
+      "prompt": "Yes. I've marked that scratch, and the rental fee stays the same. 呢句即係點？",
+      "choices": [
+        "唔係租車",
+        "關於執照",
+        "講緊自付額"
+      ],
+      "answer": 2,
+      "explain": "自付額。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Please ___ it by six on Friday. We check every car at the desk.",
+      "example": "Please return it by six on Friday. We check every car at the desk.",
+      "glossYue": "請星期五六點之前還。我哋會喺櫃檯檢查每一架車。",
+      "answer": "return",
+      "choices": [
+        "return",
+        "scratch",
+        "fee"
+      ]
+    },
+    {
+      "pattern": "Full to full is fine. What ___ do I need to return it?",
+      "example": "Full to full is fine. What time do I need to return it?",
+      "glossYue": "滿箱還可以。我要幾時還車？",
+      "answer": "time",
+      "choices": [
+        "time",
+        "scratch",
+        "fee"
+      ]
+    },
+    {
+      "pattern": "There is one ___ on the rear door. Can you note that?",
+      "example": "There is one scratch on the rear door. Can you note that?",
+      "glossYue": "後門有一條刮痕。可唔可以寫低？",
+      "answer": "scratch",
+      "choices": [
+        "scratch",
+        "fee",
+        "time"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想用呢課嘅講法。你點講？",
+      "choices": [
+        "Hi. I'd like to rent a car. Here is my driving licence.",
+        "Yes, I do. What is the insurance excess on this car?",
+        "Full to full is fine. What time do I need to return it?"
+      ],
+      "answer": 1,
+      "explain": "用呢句。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "thanks",
+        "international"
+      ],
+      "answer": [
+        "thanks",
+        "international"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "scratch-noun",
+      "choices": [
+        "fee",
+        "time",
+        "scratch"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "fee-noun",
+      "choices": [
+        "fee",
+        "scratch",
+        "time"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "自付額",
+        "租車",
+        "執照"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "執照",
+        "租車",
+        "自付額"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word fits this lesson?",
+      "choices": [
+        "scratch",
+        "fee",
+        "time"
+      ],
+      "answer": 2,
+      "explain": "租車。"
+    }
+  ],
+  "shadow": {
+    "lineId": "t16-l1",
+    "hint": "Hi. I'd like to rent a car. Here is my driving licence."
+  }
+}

@@ -3,8 +3,8 @@
   "unit": "R",
   "titleYue": "咖啡店改要求",
   "titleEn": "Changing a café order",
-  "canDoYue": "你識叫燕麥奶少糖拿鐵、揀大杯拎走、講個名 Cleo，杯整好先發現係牛奶，再叫店員用燕麥奶整過。",
-  "canDoEn": "Order a tall to-go latte with oat milk and less sugar, give the name Cleo before it is made, and ask for a remake when the finished cup has dairy.",
+  "canDoYue": "你識叫燕麥奶少糖拿鐵、揀中杯拎走、講個名 Cleo，杯整好先發現係普通奶，再叫店員用燕麥奶整過。",
+  "canDoEn": "Order a latte with oat milk and less sugar, choose regular and to go, give the name Cleo, and ask for a remake when the cup has regular milk.",
   "minutes": 12,
   "hero": "assets/art/lessons/r13.webp",
   "cast": [
@@ -16,7 +16,7 @@
     "latte-noun",
     "oat-milk-phrase",
     "less-sugar-phrase",
-    "tall-cup-phrase",
+    "size-noun",
     "to-go-phrase",
     "name-noun",
     "order-verb"
@@ -25,7 +25,7 @@
     "拿鐵",
     "燕麥奶",
     "少糖",
-    "大杯",
+    "中杯",
     "拎走",
     "名字",
     "落單"
@@ -37,20 +37,19 @@
     "note": "oat 有 /oʊ/。go 有 /oʊ/。",
     "pairs": [
       {
-        "a": "oat-milk-phrase",
-        "b": "to-go-phrase"
+        "a": "latte-noun",
+        "b": "oat-milk-phrase"
       },
       {
-        "a": "less-sugar-phrase",
-        "b": "tall-cup-phrase"
+        "a": "size-noun",
+        "b": "to-go-phrase"
       }
     ],
     "drill": [
+      "latte-noun",
       "oat-milk-phrase",
-      "less-sugar-phrase",
-      "tall-cup-phrase",
-      "to-go-phrase",
-      "latte-noun"
+      "size-noun",
+      "name-noun"
     ]
   },
   "dialogue": [
@@ -58,197 +57,196 @@
       "id": "r13-l1",
       "speaker": "cleo",
       "speakerLabel": "Cleo",
-      "text": "Hi there. Can I order one latte with oat milk and less sugar please?",
-      "glossYue": "你好。我可唔可以叫一杯燕麥奶、少糖嘅拿鐵？",
+      "text": "Hi. Can I get a latte with oat milk and less sugar, please?",
+      "glossYue": "你好。可唔可以畀我一杯燕麥奶少糖嘅拿鐵？",
       "audio": "assets/audio/lines/r13-l1.mp3",
       "audioSlow": "assets/audio/lines/r13-l1-slow.mp3",
-      "say": "Hi there. Can I order one latte with oat milk and less sugar please?",
+      "say": "Hi. Can I get a latte with oat milk and less sugar, please?",
       "hideGloss": false
     },
     {
       "id": "r13-l2",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Sure. Would you like that latte in a tall cup, or a smaller cup?",
-      "glossYue": "可以。呢杯拿鐵要大杯定細杯？",
+      "text": "Sure. What size would you like, regular or large?",
+      "glossYue": "可以。你要中杯定大杯？",
       "audio": "assets/audio/lines/r13-l2.mp3",
       "audioSlow": "assets/audio/lines/r13-l2-slow.mp3",
-      "say": "Sure. Would you like that latte in a tall cup, or a smaller cup?",
+      "say": "Sure. What size would you like, regular or large?",
       "hideGloss": false
     },
     {
       "id": "r13-l3",
       "speaker": "cleo",
       "speakerLabel": "Cleo",
-      "text": "A tall one, and to go please. The name on the cup is Cleo.",
-      "glossYue": "要大杯，拎走。個名係 Cleo。",
+      "text": "Regular, please.",
+      "glossYue": "中杯，唔該。",
       "audio": "assets/audio/lines/r13-l3.mp3",
       "audioSlow": "assets/audio/lines/r13-l3-slow.mp3",
-      "say": "A tall one, and to go please. The name on the cup is Cleo.",
+      "say": "Regular, please.",
       "hideGloss": false
     },
     {
       "id": "r13-l4",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Cleo on a tall to-go cup. I'll make that drink with oat milk.",
-      "glossYue": "Cleo，大杯拎走。我而家用燕麥奶整。",
+      "text": "For here or to go?",
+      "glossYue": "堂食定係拎走？",
       "audio": "assets/audio/lines/r13-l4.mp3",
       "audioSlow": "assets/audio/lines/r13-l4-slow.mp3",
-      "say": "Cleo on a tall to-go cup. I'll make that drink with oat milk.",
+      "say": "For here or to go?",
       "hideGloss": false
     },
     {
       "id": "r13-l5",
       "speaker": "cleo",
       "speakerLabel": "Cleo",
-      "text": "Oh no. This finished drink has dairy, not the oat milk I asked for.",
-      "glossYue": "唔好意思。呢杯整好嘅係牛奶，唔係我要嘅燕麥奶。",
+      "text": "To go, please.",
+      "glossYue": "拎走，唔該。",
       "audio": "assets/audio/lines/r13-l5.mp3",
       "audioSlow": "assets/audio/lines/r13-l5-slow.mp3",
-      "say": "Oh no. This finished drink has dairy, not the oat milk I asked for.",
+      "say": "To go, please.",
       "hideGloss": false
     },
     {
       "id": "r13-l6",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Sorry about that mix. I will remake this drink now using oat milk only.",
-      "glossYue": "搞錯咗，唔好意思。我會用燕麥奶整過呢杯。",
+      "text": "And what's the name for the order?",
+      "glossYue": "訂單個名係咩？",
       "audio": "assets/audio/lines/r13-l6.mp3",
       "audioSlow": "assets/audio/lines/r13-l6-slow.mp3",
-      "say": "Sorry about that mix. I will remake this drink now using oat milk only.",
+      "say": "And what's the name for the order?",
       "hideGloss": true
     },
     {
       "id": "r13-l7",
       "speaker": "cleo",
       "speakerLabel": "Cleo",
-      "text": "Thank you. Please keep less sugar on the remake of this tall drink too.",
-      "glossYue": "多謝。整過嗰杯都要少糖。",
+      "text": "It's Cleo. Sorry, I think this has regular milk, not oat milk.",
+      "glossYue": "Cleo。唔好意思，我覺得呢杯係普通奶，唔係燕麥奶。",
       "audio": "assets/audio/lines/r13-l7.mp3",
       "audioSlow": "assets/audio/lines/r13-l7-slow.mp3",
-      "say": "Thank you. Please keep less sugar on the remake of this tall drink too.",
+      "say": "It's Cleo. Sorry, I think this has regular milk, not oat milk.",
       "hideGloss": true
     },
     {
       "id": "r13-l8",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Yes. The name Cleo is on this cup, and the less sugar stays too.",
-      "glossYue": "好。Cleo 個名寫喺呢杯，少糖保持。",
+      "text": "Oh, I'm so sorry. I'll make you a new one with oat milk right away.",
+      "glossYue": "真係唔好意思。我即刻用燕麥奶幫你整過一杯。",
       "audio": "assets/audio/lines/r13-l8.mp3",
       "audioSlow": "assets/audio/lines/r13-l8-slow.mp3",
-      "say": "Yes. The name Cleo is on this cup, and the less sugar stays too.",
+      "say": "Oh, I'm so sorry. I'll make you a new one with oat milk right away.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Hi there. Can I order one latte with oat milk and less sugar please? 即係問緊咩？",
+      "prompt": "Hi. Can I get a latte with oat milk and less sugar, please? 即係問緊咩？",
       "choices": [
-        "問個名字",
-        "叫一杯燕麥奶少糖拿鐵",
-        "話拿鐵整錯"
+        "關於少糖",
+        "講緊拿鐵",
+        "唔係燕麥奶"
       ],
       "answer": 1,
-      "explain": "oat milk 係燕麥奶。less sugar 係少糖。"
+      "explain": "拿鐵。"
     },
     {
-      "prompt": "A tall one, and to go please. The name on the cup is Cleo. 呢句即係點？",
+      "prompt": "For here or to go? 即係問緊咩？",
       "choices": [
-        "問大杯定細杯",
-        "揀大杯拎走，個名係 Cleo",
-        "話燕麥奶整錯"
+        "講緊燕麥奶",
+        "唔係拿鐵",
+        "關於少糖"
       ],
-      "answer": 1,
-      "explain": "to go 係拎走。name 係名字。"
+      "answer": 0,
+      "explain": "燕麥奶。"
     },
     {
-      "prompt": "Sorry about that mix. I will remake this drink now using oat milk only. 呢句即係點？",
+      "prompt": "Oh, I'm so sorry. I'll make you a new one with oat milk right away. 呢句即係點？",
       "choices": [
-        "叫少糖",
-        "問拎走",
-        "用燕麥奶整過呢杯"
+        "唔係拿鐵",
+        "關於燕麥奶",
+        "講緊少糖"
       ],
       "answer": 2,
-      "explain": "oat milk 係燕麥奶。"
+      "explain": "少糖。"
     }
   ],
   "chunks": [
     {
-      "pattern": "Hi there. Can I ___ one latte with oat milk and less sugar please?",
-      "example": "Hi there. Can I order one latte with oat milk and less sugar please?",
-      "glossYue": "叫一杯拿鐵。",
-      "answer": "order",
+      "pattern": "Oh, I'm so sorry. I'll make you a new one with ___ milk right away.",
+      "example": "Oh, I'm so sorry. I'll make you a new one with oat milk right away.",
+      "glossYue": "真係唔好意思。我即刻用燕麥奶幫你整過一杯。",
+      "answer": "oat",
       "choices": [
-        "order",
+        "oat",
         "latte",
-        "name"
+        "less"
       ]
     },
     {
-      "pattern": "Sure. Would you like that latte in a ___ cup, or a smaller cup?",
-      "example": "Sure. Would you like that latte in a tall cup, or a smaller cup?",
-      "glossYue": "要大杯定細杯。",
-      "answer": "tall",
+      "pattern": "Hi. Can I get a ___ with oat milk and less sugar, please?",
+      "example": "Hi. Can I get a latte with oat milk and less sugar, please?",
+      "glossYue": "你好。可唔可以畀我一杯燕麥奶少糖嘅拿鐵？",
+      "answer": "latte",
       "choices": [
-        "tall",
         "latte",
-        "name"
+        "oat",
+        "less"
       ]
     },
     {
-      "pattern": "A tall one, and ___ please. The name on the cup is Cleo.",
-      "example": "A tall one, and to go please. The name on the cup is Cleo.",
-      "glossYue": "拎走，個名係 Cleo。",
-      "answer": "to go",
+      "pattern": "___ Cleo. Sorry, I think this has regular milk, not oat milk.",
+      "example": "It's Cleo. Sorry, I think this has regular milk, not oat milk.",
+      "glossYue": "Cleo。唔好意思，我覺得呢杯係普通奶，唔係燕麥奶。",
+      "answer": "It's",
       "choices": [
-        "to go",
-        "tall cup",
-        "oat milk"
+        "It's",
+        "latte",
+        "oat"
       ]
     }
   ],
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想叫燕麥奶少糖拿鐵。你點講？",
+      "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
-        "Hi there. Can I order one latte with oat milk and less sugar please?",
-        "A tall one, and to go please. The name on the cup is Cleo.",
-        "Oh no. This finished drink has dairy, not the oat milk I asked for."
+        "Hi. Can I get a latte with oat milk and less sugar, please?",
+        "Regular, please.",
+        "To go, please."
       ],
-      "answer": 0,
-      "explain": "講 order。"
+      "answer": 1,
+      "explain": "用呢句。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "oat",
-        "milk"
+        "sure",
+        "what"
       ],
       "answer": [
-        "oat",
-        "milk"
+        "sure",
+        "what"
       ]
     }
   ],
   "roleplay": {
     "you": "cleo",
-    "intro": "你叫燕麥奶少糖拿鐵。先講大杯拎走同個名 Cleo，杯整好先講整錯。可以講：oat、Cleo。",
+    "intro": "你同 Mira 傾呢件事。等對方講完先答。",
     "turns": [
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "Sure. Would you like that latte in a tall cup, or a smaller cup?",
+        "line": "Sure. What size would you like, regular or large?",
         "audio": "assets/audio/lines/r13-l2.mp3",
         "audioSlow": "assets/audio/lines/r13-l2-slow.mp3",
-        "expect": "A tall one, and to go please. The name on the cup is Cleo.",
+        "expect": "Regular, please.",
         "keywords": [
-          "tall",
-          "Cleo"
+          "regular"
         ],
         "modelAudio": "assets/audio/lines/r13-l3.mp3",
         "modelSlow": "assets/audio/lines/r13-l3-slow.mp3"
@@ -256,13 +254,12 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "Cleo on a tall to-go cup. I'll make that drink with oat milk.",
+        "line": "For here or to go?",
         "audio": "assets/audio/lines/r13-l4.mp3",
         "audioSlow": "assets/audio/lines/r13-l4-slow.mp3",
-        "expect": "Oh no. This finished drink has dairy, not the oat milk I asked for.",
+        "expect": "To go, please.",
         "keywords": [
-          "oat",
-          "milk"
+          "go"
         ],
         "modelAudio": "assets/audio/lines/r13-l5.mp3",
         "modelSlow": "assets/audio/lines/r13-l5-slow.mp3"
@@ -270,13 +267,13 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "Sorry about that mix. I will remake this drink now using oat milk only.",
+        "line": "And what's the name for the order?",
         "audio": "assets/audio/lines/r13-l6.mp3",
         "audioSlow": "assets/audio/lines/r13-l6-slow.mp3",
-        "expect": "Thank you. Please keep less sugar on the remake of this tall drink too.",
+        "expect": "It's Cleo. Sorry, I think this has regular milk, not oat milk.",
         "keywords": [
-          "less",
-          "sugar"
+          "cleo",
+          "sorry"
         ],
         "modelAudio": "assets/audio/lines/r13-l7.mp3",
         "modelSlow": "assets/audio/lines/r13-l7-slow.mp3"
@@ -286,60 +283,60 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the phrase you hear for milk made from oats.",
-      "lemma": "oat-milk-phrase",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "latte-noun",
       "choices": [
+        "latte",
         "oat milk",
-        "less sugar",
-        "tall cup"
+        "less sugar"
       ],
       "answer": 0
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the phrase you hear for a drink you carry out.",
-      "lemma": "to-go-phrase",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "oat-milk-phrase",
       "choices": [
-        "oat milk",
-        "name",
-        "order to go"
+        "latte",
+        "less sugar",
+        "oat milk"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "You say 'less sugar'. What does less sugar mean?",
+      "prompt": "Which meaning fits the line you just studied?",
       "choices": [
-        "少糖",
+        "拿鐵",
         "燕麥奶",
-        "大杯"
+        "少糖"
       ],
       "answer": 0
     },
     {
       "type": "meaning",
-      "prompt": "You say 'a tall cup'. What does tall cup mean?",
+      "prompt": "Which meaning fits the line you just studied?",
       "choices": [
-        "拎走",
-        "大杯",
-        "名字"
+        "少糖",
+        "燕麥奶",
+        "拿鐵"
       ],
       "answer": 1
     },
     {
       "type": "choice",
-      "prompt": "Which word means the word written on the cup?",
+      "prompt": "Which word fits this lesson?",
       "choices": [
-        "order",
-        "name",
+        "oat milk",
+        "less sugar",
         "latte"
       ],
       "answer": 1,
-      "explain": "name 係名字。"
+      "explain": "拿鐵。"
     }
   ],
   "shadow": {
     "lineId": "r13-l1",
-    "hint": "Hi there. Can I order one latte with oat milk and less sugar please?"
+    "hint": "Hi. Can I get a latte with oat milk and less sugar, please?"
   }
 }

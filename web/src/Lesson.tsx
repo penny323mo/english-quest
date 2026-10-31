@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { Mouth, mouthsFor } from "./components/Mouth";
-import { ArtImg, preloadArt } from "./art";
+import { ArtImg, preloadArt, whenArtDecoded } from "./art";
 import { CAST_LABEL, asset, isLessonOpen, lessonById, lexById } from "./data";
 import heroStyle from "../../content/art-style-heroes.json";
+import heroLqip from "../../content/hero-lqip.json";
 import {
   absAsset,
   audioSnapshot,
@@ -161,6 +162,7 @@ function Player({ lesson }: { lesson: Lesson }) {
   const heroPath = beat === 11 ? (nxtForHero?.hero || "") : lesson.hero;
   const heroKey = (heroPath.split("/").pop() || "").replace(".webp", "");
   const heroFocus = (heroStyle.focus as Record<string, string>)[heroKey] || "center 30%";
+  const lqip = (heroLqip as Record<string, string>)[heroKey] || "";
   preloadArt([
     asset(lesson.hero),
     ...lesson.cast.map((id) => asset(`assets/art/refs/${id}.webp`)),
@@ -176,7 +178,10 @@ function Player({ lesson }: { lesson: Lesson }) {
       <div
         className={heroPath ? "hero" : "hero plain"}
         data-beat={beat}
-        style={{ "--hero-focus": heroFocus } as CSSProperties}
+        style={{
+          "--hero-focus": heroFocus,
+          "--hero-lqip": lqip ? `url("${lqip}")` : "none",
+        } as CSSProperties}
       >
         {heroPath ? <ArtImg src={asset(heroPath)} alt="" width={900} height={1200} fill /> : null}
       </div>
@@ -244,6 +249,24 @@ function Player({ lesson }: { lesson: Lesson }) {
 }
 
 function Hook({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    let live = true;
+    const urls = [
+      asset(lesson.hero),
+      ...lesson.cast.map((id) => asset(`assets/art/refs/${id}.webp`)),
+    ];
+    const timer = window.setTimeout(() => {
+      if (live) setReady(true);
+    }, 1200);
+    whenArtDecoded(urls).then(() => {
+      if (live) setReady(true);
+    });
+    return () => {
+      live = false;
+      window.clearTimeout(timer);
+    };
+  }, [lesson]);
   return (
     <>
       <p className="who">{lesson.minutes} 分鐘 · {BEATS[0]}</p>
@@ -254,7 +277,7 @@ function Hook({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
           <ArtImg key={id} src={asset(`assets/art/refs/${id}.webp`)} alt={CAST_LABEL[id] || id} width={44} height={44} />
         ))}
       </div>
-      <button className="btn block" type="button" onClick={onNext}>入去場景</button>
+      <button className="btn block" type="button" onClick={onNext} disabled={!ready}>入去場景</button>
     </>
   );
 }
@@ -709,7 +732,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪七十五課你行完啦。到期嘅卡會喺練習等你。</p>
+        <p className="lede">呢輪七十八課你行完啦。到期嘅卡會喺練習等你。</p>
         <a className="btn block" href="#/">返路線</a>
       </>
     );

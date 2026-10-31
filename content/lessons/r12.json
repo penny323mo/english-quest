@@ -3,8 +3,8 @@
   "unit": "R",
   "titleYue": "訂枱請客",
   "titleEn": "Booking a table for a group",
-  "canDoYue": "你識訂星期五七點半八位、要包廂、最低消費三千、帶嬰兒要兒童椅、電話用卡畀五百訂金，同埋留號碼收短訊確認。",
-  "canDoEn": "Book eight people this Friday at half past seven, take the private room with a three-thousand minimum, ask for a high chair, and pay a five-hundred deposit by card on the phone.",
+  "canDoYue": "你識訂星期五七點半八個人嘅枱、要包房同兒童椅、付五百蚊訂金，同留個電話收短訊。",
+  "canDoEn": "Book a table for eight on Friday at half past seven, take the private room and a high chair, pay a five-hundred-dollar deposit, and leave a number for a text.",
   "minutes": 12,
   "hero": "assets/art/lessons/r12.webp",
   "cast": [
@@ -17,38 +17,36 @@
     "private-room-phrase",
     "minimum-spend-phrase",
     "high-chair-phrase",
-    "custom-deposit-noun",
+    "deposit-noun",
     "confirm-verb"
   ],
   "topicTags": [
-    "包廂",
+    "八人",
+    "包房",
     "最低消費",
     "兒童椅",
     "訂金",
-    "八位",
     "確認"
   ],
-  "next": "R5",
+  "next": "R14",
   "sound": {
     "ipa": "/aɪ/",
     "title": "private 入面嗰個音",
     "note": "private 有 /aɪ/。minimum 有 /ɪ/。",
     "pairs": [
       {
-        "a": "private-room-phrase",
-        "b": "minimum-spend-phrase"
+        "a": "deposit-noun",
+        "b": "confirm-verb"
       },
       {
-        "a": "high-chair-phrase",
-        "b": "custom-deposit-noun"
+        "a": "private-room-phrase",
+        "b": "high-chair-phrase"
       }
     ],
     "drill": [
-      "private-room-phrase",
-      "minimum-spend-phrase",
-      "high-chair-phrase",
-      "custom-deposit-noun",
-      "party-of-phrase"
+      "deposit-noun",
+      "confirm-verb",
+      "minimum-spend-phrase"
     ]
   },
   "dialogue": [
@@ -56,11 +54,11 @@
       "id": "r12-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Hi, I'd like to book a party of eight this Friday at half past seven.",
-      "glossYue": "你好，我想訂星期五七點半，八位。",
+      "text": "Hi, I'd like to book a table for eight this Friday at half past seven.",
+      "glossYue": "你好，我想訂一張八個人嘅枱，今個星期五七點半。",
       "audio": "assets/audio/lines/r12-l1.mp3",
       "audioSlow": "assets/audio/lines/r12-l1-slow.mp3",
-      "say": "Hi, I'd like to book a party of eight this Friday at half past seven.",
+      "say": "Hi, I'd like to book a table for eight this Friday at half past seven.",
       "hideGloss": false
     },
     {
@@ -68,7 +66,7 @@
       "speaker": "ana",
       "speakerLabel": "Ana",
       "text": "Sure. Would you like the private room? There's a minimum spend of three thousand dollars.",
-      "glossYue": "好。要唔要包廂？最低消費係三千蚊。",
+      "glossYue": "可以。要唔要包房？最低消費係三千蚊。",
       "audio": "assets/audio/lines/r12-l2.mp3",
       "audioSlow": "assets/audio/lines/r12-l2-slow.mp3",
       "say": "Sure. Would you like the private room? There's a minimum spend of three thousand dollars.",
@@ -78,164 +76,164 @@
       "id": "r12-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The private room is fine. We'll bring a baby. Do you have a high chair?",
-      "glossYue": "包廂得。我哋會帶個嬰兒。你有冇兒童椅？",
+      "text": "That's fine. We'll have a baby with us. Do you have a high chair?",
+      "glossYue": "冇問題。我哋會帶個嬰兒。你哋有冇兒童椅？",
       "audio": "assets/audio/lines/r12-l3.mp3",
       "audioSlow": "assets/audio/lines/r12-l3-slow.mp3",
-      "say": "The private room is fine. We'll bring a baby. Do you have a high chair?",
+      "say": "That's fine. We'll have a baby with us. Do you have a high chair?",
       "hideGloss": false
     },
     {
       "id": "r12-l4",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Yes, I'll put one high chair at the table. Do you need a deposit receipt?",
-      "glossYue": "有，我會放一張兒童椅喺檯。你需唔需要訂金收據？",
+      "text": "Yes, I'll put one at the table for you. Do you need a deposit receipt?",
+      "glossYue": "有，我會擺一張喺你張枱。你需唔需要訂金收據？",
       "audio": "assets/audio/lines/r12-l4.mp3",
       "audioSlow": "assets/audio/lines/r12-l4-slow.mp3",
-      "say": "Yes, I'll put one high chair at the table. Do you need a deposit receipt?",
+      "say": "Yes, I'll put one at the table for you. Do you need a deposit receipt?",
       "hideGloss": true
     },
     {
       "id": "r12-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "How much is that deposit if I pay by card over the phone tonight, please?",
-      "glossYue": "如果我今晚用卡喺電話畀訂金，要幾多？",
+      "text": "How much is the deposit?",
+      "glossYue": "訂金要幾多？",
       "audio": "assets/audio/lines/r12-l5.mp3",
       "audioSlow": "assets/audio/lines/r12-l5-slow.mp3",
-      "say": "How much is that deposit if I pay by card over the phone tonight, please?",
+      "say": "How much is the deposit?",
       "hideGloss": true
     },
     {
       "id": "r12-l6",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "It's five hundred dollars. You can pay that deposit by card now over the phone.",
-      "glossYue": "五百蚊。你而家可以喺電話用卡畀訂金。",
+      "text": "It's five hundred dollars. You can pay by card now over the phone.",
+      "glossYue": "五百蚊。你可以而家喺電話用卡付。",
       "audio": "assets/audio/lines/r12-l6.mp3",
       "audioSlow": "assets/audio/lines/r12-l6-slow.mp3",
-      "say": "It's five hundred dollars. You can pay that deposit by card now over the phone.",
+      "say": "It's five hundred dollars. You can pay by card now over the phone.",
       "hideGloss": true
     },
     {
       "id": "r12-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Okay. Can you send me a short text confirmation after I pay that card deposit?",
-      "glossYue": "好。我畀咗卡訂金之後，可唔可以短訊確認？",
+      "text": "Okay. Can you send me a confirmation by text?",
+      "glossYue": "好。可唔可以發短訊確認畀我？",
       "audio": "assets/audio/lines/r12-l7.mp3",
       "audioSlow": "assets/audio/lines/r12-l7-slow.mp3",
-      "say": "Okay. Can you send me a short text confirmation after I pay that card deposit?",
+      "say": "Okay. Can you send me a confirmation by text?",
       "hideGloss": true
     },
     {
       "id": "r12-l8",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Of course I can confirm it. What's the best number for that short text confirmation?",
-      "glossYue": "當然可以確認。邊個號碼收短訊確認最啱？",
+      "text": "Of course. What's the best number to reach you?",
+      "glossYue": "當然可以。邊個號碼最容易搵到你？",
       "audio": "assets/audio/lines/r12-l8.mp3",
       "audioSlow": "assets/audio/lines/r12-l8-slow.mp3",
-      "say": "Of course I can confirm it. What's the best number for that short text confirmation?",
+      "say": "Of course. What's the best number to reach you?",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Hi, I'd like to book a party of eight this Friday at half past seven. 呢句即係點？",
+      "prompt": "Hi, I'd like to book a table for eight this Friday at half past seven. 呢句即係點？",
       "choices": [
-        "星期五八位",
-        "想改包廂",
-        "問兒童椅"
-      ],
-      "answer": 0,
-      "explain": "party of 係幾多位。"
-    },
-    {
-      "prompt": "Yes, I'll put one high chair at the table. Do you need a deposit receipt? 呢句即係點？",
-      "choices": [
-        "問訂金收據",
-        "最低消費三千，兒童椅放喺檯",
-        "問八位確認"
+        "關於最低消費",
+        "講緊八人",
+        "唔係包房"
       ],
       "answer": 1,
-      "explain": "minimum spend 係最低消費。"
+      "explain": "八人。"
     },
     {
-      "prompt": "It's five hundred dollars. You can pay that deposit by card now over the phone. 呢句即係點？",
+      "prompt": "Yes, I'll put one at the table for you. Do you need a deposit receipt? 即係問緊咩？",
       "choices": [
-        "問兒童椅",
-        "問包廂",
-        "訂金五百，電話用卡"
+        "講緊包房",
+        "唔係八人",
+        "關於最低消費"
+      ],
+      "answer": 0,
+      "explain": "包房。"
+    },
+    {
+      "prompt": "Of course. What's the best number to reach you? 即係問緊咩？",
+      "choices": [
+        "唔係八人",
+        "關於包房",
+        "講緊最低消費"
       ],
       "answer": 2,
-      "explain": "deposit 係訂金。"
+      "explain": "最低消費。"
     }
   ],
   "chunks": [
     {
-      "pattern": "Hi, I'd like to book a ___ eight this Friday at half past seven.",
-      "example": "Hi, I'd like to book a party of eight this Friday at half past seven.",
-      "glossYue": "我哋八位。",
-      "answer": "party of",
-      "choices": [
-        "party of",
-        "private room",
-        "deposit"
-      ]
-    },
-    {
-      "pattern": "Sure. Would you like the ___? There's a minimum spend of three thousand dollars.",
+      "pattern": "Sure. Would you like the ___ room? There's a minimum spend of three thousand dollars.",
       "example": "Sure. Would you like the private room? There's a minimum spend of three thousand dollars.",
-      "glossYue": "要唔要包廂。",
-      "answer": "private room",
+      "glossYue": "可以。要唔要包房？最低消費係三千蚊。",
+      "answer": "private",
       "choices": [
-        "private room",
-        "high chair",
-        "deposit"
+        "private",
+        "party",
+        "minimum"
       ]
     },
     {
-      "pattern": "Yes, I'll put one ___ at the table. Do you need a deposit receipt?",
-      "example": "Yes, I'll put one high chair at the table. Do you need a deposit receipt?",
-      "glossYue": "兒童椅放喺檯。",
-      "answer": "high chair",
+      "pattern": "Yes, I'll put one at the table for you. Do you need a ___ receipt?",
+      "example": "Yes, I'll put one at the table for you. Do you need a deposit receipt?",
+      "glossYue": "有，我會擺一張喺你張枱。你需唔需要訂金收據？",
+      "answer": "deposit",
       "choices": [
-        "high chair",
-        "private room",
-        "deposit"
+        "deposit",
+        "party",
+        "private"
+      ]
+    },
+    {
+      "pattern": "That's fine. We'll have a baby with us. Do you have a ___ chair?",
+      "example": "That's fine. We'll have a baby with us. Do you have a high chair?",
+      "glossYue": "冇問題。我哋會帶個嬰兒。你哋有冇兒童椅？",
+      "answer": "high",
+      "choices": [
+        "high",
+        "party",
+        "private"
       ]
     }
   ],
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想講幾多位。你點講？",
+      "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
-        "Hi, I'd like to book a party of eight this Friday at half past seven.",
-        "The private room is fine. We'll bring a baby. Do you have a high chair?",
-        "How much is that deposit if I pay by card over the phone tonight, please?"
+        "Hi, I'd like to book a table for eight this Friday at half past seven.",
+        "That's fine. We'll have a baby with us. Do you have a high chair?",
+        "How much is the deposit?"
       ],
-      "answer": 0,
-      "explain": "講 party of。"
+      "answer": 1,
+      "explain": "用呢句。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "party",
-        "of"
+        "sure",
+        "like"
       ],
       "answer": [
-        "party",
-        "of"
+        "sure",
+        "like"
       ]
     }
   ],
   "roleplay": {
     "you": "tom",
-    "intro": "你訂星期五晚餐八位。同 Ana 講包廂、三千最低消費同五百訂金。可以講：party、deposit。",
+    "intro": "你同 Ana 傾呢件事。等對方講完先答。",
     "turns": [
       {
         "partner": "Ana",
@@ -243,10 +241,10 @@
         "line": "Sure. Would you like the private room? There's a minimum spend of three thousand dollars.",
         "audio": "assets/audio/lines/r12-l2.mp3",
         "audioSlow": "assets/audio/lines/r12-l2-slow.mp3",
-        "expect": "The private room is fine. We'll bring a baby. Do you have a high chair?",
+        "expect": "That's fine. We'll have a baby with us. Do you have a high chair?",
         "keywords": [
-          "private",
-          "room"
+          "fine",
+          "baby"
         ],
         "modelAudio": "assets/audio/lines/r12-l3.mp3",
         "modelSlow": "assets/audio/lines/r12-l3-slow.mp3"
@@ -254,13 +252,13 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "Yes, I'll put one high chair at the table. Do you need a deposit receipt?",
+        "line": "Yes, I'll put one at the table for you. Do you need a deposit receipt?",
         "audio": "assets/audio/lines/r12-l4.mp3",
         "audioSlow": "assets/audio/lines/r12-l4-slow.mp3",
-        "expect": "How much is that deposit if I pay by card over the phone tonight, please?",
+        "expect": "How much is the deposit?",
         "keywords": [
-          "deposit",
-          "card"
+          "much",
+          "deposit"
         ],
         "modelAudio": "assets/audio/lines/r12-l5.mp3",
         "modelSlow": "assets/audio/lines/r12-l5-slow.mp3"
@@ -268,13 +266,13 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "It's five hundred dollars. You can pay that deposit by card now over the phone.",
+        "line": "It's five hundred dollars. You can pay by card now over the phone.",
         "audio": "assets/audio/lines/r12-l6.mp3",
         "audioSlow": "assets/audio/lines/r12-l6-slow.mp3",
-        "expect": "Okay. Can you send me a short text confirmation after I pay that card deposit?",
+        "expect": "Okay. Can you send me a confirmation by text?",
         "keywords": [
-          "text",
-          "confirmation"
+          "okay",
+          "send"
         ],
         "modelAudio": "assets/audio/lines/r12-l7.mp3",
         "modelSlow": "assets/audio/lines/r12-l7-slow.mp3"
@@ -284,60 +282,60 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "Listen once and pick the phrase you hear for a dining room closed off from the main floor.",
-      "lemma": "private-room-phrase",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "party-of-phrase",
       "choices": [
+        "party of",
         "private room",
-        "minimum spend",
-        "high chair"
+        "minimum spend"
       ],
       "answer": 0
     },
     {
       "type": "listen",
-      "prompt": "Listen once and pick the phrase you hear for a seat made for a small child.",
-      "lemma": "high-chair-phrase",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "private-room-phrase",
       "choices": [
-        "deposit",
         "party of",
-        "high chair"
+        "minimum spend",
+        "private room"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "You say 'We are a party of eight.' What does party of mean?",
+      "prompt": "Which meaning fits the line you just studied?",
       "choices": [
-        "訂金",
-        "包廂",
-        "八位"
+        "包房",
+        "最低消費",
+        "八人"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "You say 'Where do we pay the deposit?' What does deposit mean?",
+      "prompt": "Which meaning fits the line you just studied?",
       "choices": [
-        "訂金",
-        "兒童椅",
+        "包房",
+        "八人",
         "最低消費"
       ],
       "answer": 0
     },
     {
       "type": "choice",
-      "prompt": "Which phrase means the lowest bill a group must pay?",
+      "prompt": "Which word fits this lesson?",
       "choices": [
         "private room",
         "minimum spend",
-        "high chair"
+        "party of"
       ],
       "answer": 1,
-      "explain": "minimum spend 係最低消費。"
+      "explain": "八人。"
     }
   ],
   "shadow": {
     "lineId": "r12-l1",
-    "hint": "Hi, I'd like to book a party of eight this Friday at half past seven."
+    "hint": "Hi, I'd like to book a table for eight this Friday at half past seven."
   }
 }

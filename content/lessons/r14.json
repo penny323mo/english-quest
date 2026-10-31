@@ -1,0 +1,340 @@
+{
+  "id": "R14",
+  "unit": "R",
+  "titleYue": "訂生日蛋糕",
+  "titleEn": "Ordering a birthday cake",
+  "canDoYue": "你識訂一個夠十個人食嘅芒果蛋糕，寫上生日訊息，星期六三點取，加八枝蠟燭，同付二百蚊訂金。",
+  "canDoEn": "Order a mango cake for ten people, add a birthday message and eight candles, pay a two-hundred-dollar deposit, and pick it up Saturday at three.",
+  "minutes": 12,
+  "hero": "assets/art/lessons/r14.webp",
+  "cast": [
+    "tom",
+    "mira"
+  ],
+  "cefr": "A2/B1",
+  "lemmas": [
+    "size-noun",
+    "message-noun",
+    "deposit-noun",
+    "saturday-noun"
+  ],
+  "topicTags": [
+    "蛋糕",
+    "芒果",
+    "訊息",
+    "星期六",
+    "訂金",
+    "蠟燭"
+  ],
+  "next": "R5",
+  "sound": {
+    "ipa": "/eɪ/",
+    "title": "cake 入面嗰個音",
+    "note": "cake 有 /eɪ/。day 有 /eɪ/。",
+    "pairs": [
+      {
+        "a": "size-noun",
+        "b": "message-noun"
+      },
+      {
+        "a": "deposit-noun",
+        "b": "saturday-noun"
+      }
+    ],
+    "drill": [
+      "size-noun",
+      "message-noun",
+      "deposit-noun",
+      "saturday-noun"
+    ]
+  },
+  "dialogue": [
+    {
+      "id": "r14-l1",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Hi. I'd like a cake in a size for ten people, please.",
+      "glossYue": "你好。我想要一個夠十個人食嘅蛋糕。",
+      "audio": "assets/audio/lines/r14-l1.mp3",
+      "audioSlow": "assets/audio/lines/r14-l1-slow.mp3",
+      "say": "Hi. I'd like a cake in a size for ten people, please.",
+      "hideGloss": false
+    },
+    {
+      "id": "r14-l2",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "Sure. What flavour would you like, chocolate or mango?",
+      "glossYue": "可以。你想要朱古力味定芒果味？",
+      "audio": "assets/audio/lines/r14-l2.mp3",
+      "audioSlow": "assets/audio/lines/r14-l2-slow.mp3",
+      "say": "Sure. What flavour would you like, chocolate or mango?",
+      "hideGloss": false
+    },
+    {
+      "id": "r14-l3",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Mango, please. Can you write Happy birthday Mei on it?",
+      "glossYue": "芒果，唔該。上面可唔可以寫 Happy birthday Mei？",
+      "audio": "assets/audio/lines/r14-l3.mp3",
+      "audioSlow": "assets/audio/lines/r14-l3-slow.mp3",
+      "say": "Mango, please. Can you write Happy birthday Mei on it?",
+      "hideGloss": false
+    },
+    {
+      "id": "r14-l4",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "Yes. We can add that message. When do you want to pick it up?",
+      "glossYue": "可以。我哋可以加上句訊息。你想幾時取？",
+      "audio": "assets/audio/lines/r14-l4.mp3",
+      "audioSlow": "assets/audio/lines/r14-l4-slow.mp3",
+      "say": "Yes. We can add that message. When do you want to pick it up?",
+      "hideGloss": true
+    },
+    {
+      "id": "r14-l5",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Saturday at three, please. Do you have candles too?",
+      "glossYue": "星期六三點，唔該。你哋有冇蠟燭？",
+      "audio": "assets/audio/lines/r14-l5.mp3",
+      "audioSlow": "assets/audio/lines/r14-l5-slow.mp3",
+      "say": "Saturday at three, please. Do you have candles too?",
+      "hideGloss": true
+    },
+    {
+      "id": "r14-l6",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "Yes, I'll add eight candles. A deposit of two hundred holds the cake.",
+      "glossYue": "有，我會加八枝蠟燭。二百蚊訂金可以留住個蛋糕。",
+      "audio": "assets/audio/lines/r14-l6.mp3",
+      "audioSlow": "assets/audio/lines/r14-l6-slow.mp3",
+      "say": "Yes, I'll add eight candles. A deposit of two hundred holds the cake.",
+      "hideGloss": true
+    },
+    {
+      "id": "r14-l7",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "That's fine. Can I pay the deposit by card?",
+      "glossYue": "好。我可唔可以用卡付訂金？",
+      "audio": "assets/audio/lines/r14-l7.mp3",
+      "audioSlow": "assets/audio/lines/r14-l7-slow.mp3",
+      "say": "That's fine. Can I pay the deposit by card?",
+      "hideGloss": true
+    },
+    {
+      "id": "r14-l8",
+      "speaker": "mira",
+      "speakerLabel": "Mira",
+      "text": "Of course. Your cake will be ready at three on Saturday.",
+      "glossYue": "當然可以。你個蛋糕星期六三點可以取。",
+      "audio": "assets/audio/lines/r14-l8.mp3",
+      "audioSlow": "assets/audio/lines/r14-l8-slow.mp3",
+      "say": "Of course. Your cake will be ready at three on Saturday.",
+      "hideGloss": true
+    }
+  ],
+  "roleplay": {
+    "you": "tom",
+    "intro": "你同 Mira 傾呢件事。等對方講完先答。",
+    "turns": [
+      {
+        "partner": "Mira",
+        "partnerId": "mira",
+        "line": "Sure. What flavour would you like, chocolate or mango?",
+        "audio": "assets/audio/lines/r14-l2.mp3",
+        "audioSlow": "assets/audio/lines/r14-l2-slow.mp3",
+        "expect": "Mango, please. Can you write Happy birthday Mei on it?",
+        "keywords": [
+          "mango",
+          "write"
+        ],
+        "modelAudio": "assets/audio/lines/r14-l3.mp3",
+        "modelSlow": "assets/audio/lines/r14-l3-slow.mp3"
+      },
+      {
+        "partner": "Mira",
+        "partnerId": "mira",
+        "line": "Yes. We can add that message. When do you want to pick it up?",
+        "audio": "assets/audio/lines/r14-l4.mp3",
+        "audioSlow": "assets/audio/lines/r14-l4-slow.mp3",
+        "expect": "Saturday at three, please. Do you have candles too?",
+        "keywords": [
+          "saturday",
+          "three"
+        ],
+        "modelAudio": "assets/audio/lines/r14-l5.mp3",
+        "modelSlow": "assets/audio/lines/r14-l5-slow.mp3"
+      },
+      {
+        "partner": "Mira",
+        "partnerId": "mira",
+        "line": "Yes, I'll add eight candles. A deposit of two hundred holds the cake.",
+        "audio": "assets/audio/lines/r14-l6.mp3",
+        "audioSlow": "assets/audio/lines/r14-l6-slow.mp3",
+        "expect": "That's fine. Can I pay the deposit by card?",
+        "keywords": [
+          "fine",
+          "deposit"
+        ],
+        "modelAudio": "assets/audio/lines/r14-l7.mp3",
+        "modelSlow": "assets/audio/lines/r14-l7-slow.mp3"
+      }
+    ]
+  },
+  "understand": [
+    {
+      "prompt": "Hi. I'd like a cake in a size for ten people, please. 呢句即係點？",
+      "choices": [
+        "關於訊息",
+        "講緊蛋糕",
+        "唔係芒果"
+      ],
+      "answer": 1,
+      "explain": "蛋糕。"
+    },
+    {
+      "prompt": "Yes. We can add that message. When do you want to pick it up? 即係問緊咩？",
+      "choices": [
+        "講緊芒果",
+        "唔係蛋糕",
+        "關於訊息"
+      ],
+      "answer": 0,
+      "explain": "芒果。"
+    },
+    {
+      "prompt": "Of course. Your cake will be ready at three on Saturday. 呢句即係點？",
+      "choices": [
+        "唔係蛋糕",
+        "關於芒果",
+        "講緊訊息"
+      ],
+      "answer": 2,
+      "explain": "訊息。"
+    }
+  ],
+  "chunks": [
+    {
+      "pattern": "Yes. We can add that ___. When do you want to pick it up?",
+      "example": "Yes. We can add that message. When do you want to pick it up?",
+      "glossYue": "可以。我哋可以加上句訊息。你想幾時取？",
+      "answer": "message",
+      "choices": [
+        "message",
+        "size",
+        "deposit"
+      ]
+    },
+    {
+      "pattern": "Yes, I'll add eight candles. A ___ of two hundred holds the cake.",
+      "example": "Yes, I'll add eight candles. A deposit of two hundred holds the cake.",
+      "glossYue": "有，我會加八枝蠟燭。二百蚊訂金可以留住個蛋糕。",
+      "answer": "deposit",
+      "choices": [
+        "deposit",
+        "size",
+        "message"
+      ]
+    },
+    {
+      "pattern": "Hi. I'd like a cake in a ___ for ten people, please.",
+      "example": "Hi. I'd like a cake in a size for ten people, please.",
+      "glossYue": "你好。我想要一個夠十個人食嘅蛋糕。",
+      "answer": "size",
+      "choices": [
+        "size",
+        "message",
+        "deposit"
+      ]
+    }
+  ],
+  "build": [
+    {
+      "type": "choice",
+      "promptYue": "你想用呢課嘅講法。你點講？",
+      "choices": [
+        "Hi. I'd like a cake in a size for ten people, please.",
+        "Mango, please. Can you write Happy birthday Mei on it?",
+        "Saturday at three, please. Do you have candles too?"
+      ],
+      "answer": 1,
+      "explain": "用呢句。"
+    },
+    {
+      "type": "order",
+      "promptYue": "排好呢句。",
+      "tokens": [
+        "sure",
+        "what"
+      ],
+      "answer": [
+        "sure",
+        "what"
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "size-noun",
+      "choices": [
+        "size",
+        "message",
+        "deposit"
+      ],
+      "answer": 0
+    },
+    {
+      "type": "listen",
+      "prompt": "Listen once and pick the word you hear in this lesson.",
+      "lemma": "message-noun",
+      "choices": [
+        "deposit",
+        "message",
+        "size"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "芒果",
+        "訊息",
+        "蛋糕"
+      ],
+      "answer": 2
+    },
+    {
+      "type": "meaning",
+      "prompt": "Which meaning fits the line you just studied?",
+      "choices": [
+        "訊息",
+        "芒果",
+        "蛋糕"
+      ],
+      "answer": 1
+    },
+    {
+      "type": "choice",
+      "prompt": "Which word fits this lesson?",
+      "choices": [
+        "deposit",
+        "size",
+        "message"
+      ],
+      "answer": 0,
+      "explain": "蛋糕。"
+    }
+  ],
+  "shadow": {
+    "lineId": "r14-l1",
+    "hint": "Hi. I'd like a cake in a size for ten people, please."
+  }
+}

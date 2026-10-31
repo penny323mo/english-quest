@@ -100,8 +100,14 @@
 - **Coherence:** the ring is too tight, so the work is half a size larger. The warranty covers it. It is ready Saturday, the guest brings the receipt, and the charge is nothing. Checked against the earlier request.
 
 ### J18 — Watch battery and strap / 換錶電同錶帶 · A2/B1 · SHIPPED
-- **Goals:** Ask for a watch battery, check that it stays water resistant, switch to a leather strap, remove two links, and collect it at four o'clock under the warranty.
-- **Vocab:** watch, battery, water resistant, leather strap, warranty
+- **Goals:** Ask for a watch battery, check that it stays water resistant, keep the metal band, remove two links, and collect it at four under a one-year warranty.
+- **Vocab:** watch, battery, water resistant, warranty
+
+### J19 — Explaining a diamond certificate / 解釋鑽石證書 · B1 · SHIPPED
+- **Goals:** Explain cut, colour, clarity, and carat in plain words, point to the lab report number on the girdle, and say why one stone costs more.
+- **Vocab:** diamond, certificate, colour, price, cut, carat
+- **Grammar:** The cut is better. The report is from a lab.
+- **Dialogue beats:** Ask for plain words → Cut, colour, clarity → Carat and girdle number → Why the price differs → Cleaner cut → Lab report, not a brand name
 - **Grammar:** Can you replace the battery? Is it still water resistant?
 - **Dialogue beats:** Dead battery this afternoon → Ten minutes, warranty covers it → Water resistant after the case is opened → Leather strap → Remove two links → Pick-up at four o'clock → Warranty and the strap → Collect the watch at four
 - **Coherence:** one watch. The new battery takes about ten minutes and the warranty covers it. It stays water resistant. Two metal links come off the band. Pick-up is four o'clock.
@@ -240,11 +246,17 @@
 - **Dialogue beats:** Ask for the bill → Service charge → Split → Card or Octopus → Octopus → Receipt → Mistake → Correct the bill
 
 ### R13 — Changing a café order / 咖啡店改要求 · A2 · SHIPPED
-- **Goals:** Order a latte with oat milk and less sugar, choose a tall cup, take it to go, put the name Cleo on the cup, and ask for a remake when the milk is wrong.
-- **Vocab:** latte, oat milk, less sugar, tall cup, to go, name, order
-- **Grammar:** Can I order a latte with oat milk and less sugar? Is this order for here, or is it to go?
-- **Dialogue beats:** Oat milk and less sugar → Tall or smaller → Tall, for here or to go → Name on the cup → Dairy instead of oat → Remake with oat milk → Keep less sugar, name Cleo → Name on the tall cup
-- **Coherence:** one latte, oat milk, less sugar, a tall cup, to go, and the name Cleo. The first cup has dairy milk, so it is remade.
+- **Goals:** Order a latte with oat milk and less sugar, choose regular, take it to go, put the name Cleo on the cup, and ask for a remake when the milk is regular milk.
+- **Vocab:** latte, oat milk, less sugar, regular, to go, name, order
+- **Grammar:** Can I get a latte with oat milk and less sugar? For here or to go?
+- **Dialogue beats:** Oat milk and less sugar → Regular or large → Regular → For here or to go → To go → Name → Regular milk, not oat → Remake with oat milk
+- **Coherence:** one latte, oat milk, less sugar, a regular cup, to go, and the name Cleo. The first cup has regular milk, so it is remade.
+
+### R14 — Ordering a birthday cake / 訂生日蛋糕 · A2/B1 · SHIPPED
+- **Goals:** Order a cake for ten people, choose mango, write Happy birthday Mei, pick it up Saturday at three, add eight candles, and pay a two-hundred-dollar deposit.
+- **Vocab:** cake, size, flavour, message, Saturday, deposit
+- **Grammar:** I'd like a cake in a size for ten. Can I pay the deposit by card?
+- **Dialogue beats:** Size for ten → Chocolate or mango → Message → Saturday at three → Candles and deposit → Pay by card → Ready at three
 
 ---
 
@@ -294,7 +306,7 @@
 - **Dialogue beats:** Late checkout fee → Minibar → Store until four → Tag number → Taxi → Email the receipt
 
 ### R12 — Booking a table for a group / 訂枱請客 · A2/B1 · SHIPPED
-- **Goals:** Book a party of eight for Friday at half past seven, ask for a private room, the minimum spend, a deposit, and a high chair, and confirm by text.
+- **Goals:** Book a table for eight this Friday at half past seven, take the private room at a three-thousand-dollar minimum, ask for a high chair, pay a five-hundred-dollar deposit, and confirm by text.
 - **Vocab:** party of, private room, minimum spend, high chair, deposit, confirm
 - **Grammar:** We are a party of eight. What is the minimum spend?
 - **Dialogue beats:** Party of eight on Friday → Private room → Minimum spend → Two hundred, a child may sit → High chair → Chair by the window → Deposit and a text → Pay at the desk and confirm
@@ -338,6 +350,12 @@
 - **Vocab (14):** purpose, tourism, business, stay, days, hotel, return ticket, declare, goods, gift, nothing to declare, form, stamp, officer
 - **Grammar:** Present continuous (I'm visiting…); for + duration
 - **Dialogue beats:** Approach → Purpose → Stay → Goods → Clear
+
+### T16 — Renting a car abroad / 喺外國租車 · B1 · SHIPPED
+- **Goals:** Show a driving licence and an international permit, ask the insurance excess, accept full-to-full fuel, return the car by six on Friday, and note a scratch on the rear door.
+- **Vocab:** licence, permit, excess, fuel, return, scratch
+- **Grammar:** What is the insurance excess? Please return it by six on Friday.
+- **Dialogue beats:** Licence → International permit → Excess and fuel → Return time → Scratch on the rear door → Note it before you leave
 
 ### T9 — Flight disruption · B2 · SHIPPED
 - **Goals:** A delayed flight: rebook, then ask about a refund, then confirm the new itinerary.
@@ -511,7 +529,8 @@ Every round until map complete, ship **≥3 NEW lessons** in this order (skip al
 19. **R12, W10, T14** (group booking, complaint email, missed connection)
 20. **J18, R13, D11** (watch battery and strap, café order change, open a bank account)
 21. **D12, T15, W11** (clinic appointment, hotel check-out, payslip)
-22. Then polish / legendary review nodes / further B2 stretch
+22. **R14, J19, T16** (birthday cake, diamond certificate, renting a car abroad)
+23. Then polish / legendary review nodes / further B2 stretch
 
 **Path UX:** show CEFR chip (A1/A2/B1/B2) on each node; group Path into level tracks; lock by prerequisite; keep `soon:true` teasers for unshipped.
 
