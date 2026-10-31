@@ -1,3 +1,6 @@
+## SUPERVISOR OVERRIDE (inserted mid-round — Grok Duet)
+NEW LESSONS FROZEN until Lexicon ≥ 7. Skip NEW FEATURE TARGET section A (do not ship R18/D15/W16/J25). Prefer finishing difficulty + tests. Bulk lexicon example/miniDialogue rewrite is supervisor-owned — if you already started a small skeleton fix, stop after the current file save; do not continue mass templating.
+---
 Phase 4 unlimited. Round 52. First read CURRICULUM.md, ART-STYLE.md, DUOLINGO-REF.md, SPEC.md, review/mockup-v1 (Penny-approved) and review/loop-r50/coder-audit.md (loop-r49 for history, plus any newer loop-r51 audit if present).
 cd /workspace/sidequest/english-quest. Never touch the grokbot repo or the nightly panes. No paid services. Report files under review/ stay local: never commit them, never git add -f review/loop-r*/ or review/style-gap/, never git rm them. This round requires real app-code AND content changes (web/src plus content/). A tests/docs-only or empty diff is a failure. Do not git commit from this prompt; the orchestrator/parent handles publish.
 
@@ -21,3 +24,6 @@ A. 2–3 new scenario lessons, next free IDs **R18**, then **D15** (or W16/J25/T
 - has short natural dialogue turns where every question is answered with real names/numbers.
 B. Concrete speaking/pronunciation upgrade in Lesson.tsx (shadow/speak step) plus the WordCard: show the stressed syllable highlighted, using the CMUdict stress digit (e.g. in·VOICE → in·**voice**), next to the IPA. Add a "慢速逐字" karaoke mode that highlights each word in time while the slow audio plays (word timings from the audio length ÷ syllable count is fine). Add a unit test for the stress-split function. It must be visible at 390 with no overflow.
 Run tests + build. Lighthouse mobile Perf ≥98. Append "## Round 52" to CHANGELOG.md and list honestly which audit items were NOT closed. Do not git commit.
+
+## r51 coder audit pointer: review/loop-r51/coder-audit.md
+r51 is NOT SHIP (Art7 UI8 Lex3 Pron8 Ped5 Speak8 SRS8 Flow9 Perf10 Audio8 Dur9 CI6). #150 is worse: the skeleton test was passed by rotating names/places/times (423/556 ex3 are "<Name> asked about the X <place> <time>.", "can + past" grammar errors) → #160. Also new #161 (templated understand items 用課入面嗰個意思/問今日天氣/問鎖匙喺邊), #162 (WordCard content boilerplate, bad glosses 實報實銷/傳送帶), #163 (T8 gift item). W8/W9 heroes are still W12 clones despite the CHANGELOG claim (#154). Closed in r51: #141 #153 #156 #158 #159.

@@ -1,3 +1,5 @@
+## SUPERVISOR OVERRIDE: new lessons frozen until Lex≥7. Do not require R18/D15 for READY. Lex bulk rewrite is supervisor-owned.
+---
 You are a strict senior code reviewer. cd /workspace/sidequest/english-quest. Read /workspace/sidequest/english-quest/SPEC.md and review the code (round 52) at viewport 390px. Do NOT modify project files. Run node tests if present; do not launch browsers. Write a numbered review ordered CRITICAL/MAJOR/MINOR with file:line and concrete fix, with a first line 'VERDICT: SHIP' or 'VERDICT: NOT READY', to /workspace/sidequest/english-quest/reviews/orch-r52-grok.md. SHIP is FORBIDDEN while any CRITICAL/MAJOR from the previous review remains open, or while any item in the latest coder-audit.md under review/loop-*/ remains unfixed. Verify each item against the built app at 390px before VERDICT. Keep to ~15 minutes.
 
 Authoritative open audit (must re-verify every item): /workspace/sidequest/english-quest/review/loop-r50/coder-audit.md (plus loop-r51 if present)

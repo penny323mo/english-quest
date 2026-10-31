@@ -1,0 +1,25 @@
+Phase 4 unlimited. Round 53. First read CURRICULUM.md, ART-STYLE.md, DUOLINGO-REF.md, SPEC.md, review/mockup-v1 (Penny-approved) and review/loop-r52/coder-audit.md (or loop-r51 if r52 missing).
+cd /workspace/sidequest/english-quest. Never touch the grokbot repo or the nightly panes. No paid services. Report files under review/ stay local: never commit them, never git add -f review/loop-r*/ or review/style-gap/, never git rm them. This round may change web/src and tests/. A tests/docs-only or empty diff is a failure ONLY if open P0 code items remain. Do not git commit from this prompt; the orchestrator/parent handles publish.
+
+## SUPERVISOR FREEZE (Grok Duet 2026-10-31) — READ FIRST
+1. **NEW LESSONS FROZEN** until Lexicon score ≥ 7. Do NOT add R18, D15, W16, J25, or any new lesson IDs. Do NOT create new hero art for new lessons. Skip every "NEW FEATURE TARGET" lesson-shipping step.
+2. **Lexicon examples + miniDialogues** are owned by the supervisor content pass (not this coder round). Do NOT mass-rewrite content/lexicon.json examples or miniDialogue. If you touch lexicon.json, only fix a specific P0 the audit names (bad gloss, can+past on one id) — never a bulk template rewrite.
+3. Priority this round: keep CI green, close remaining code/UI/difficulty P0s from the latest audit, harden tests. Content quality is supervisor-owned until Lex ≥ 7.
+
+## FIRST: close every still-open item in the latest coder-audit, IN ORDER, except lexicon bulk rewrites (#150/#160 content) which the supervisor owns. If fix-52 already closed an item, verify at 390 and say so in CHANGELOG.
+1. Verify CI is green on main (Pillow must be installed in .github/workflows/ci.yml). Do not remove the Pillow step. Do not touch P0-3 root build-file cleanup.
+2. #157 + #143 difficulty: bring W6/T9/J13 under B2 cap 16; non-decreasing B2 staircase; fix A2 slide and 3-step drops >2.5; band means monotonic; rolling-window + band-mean CI checks. No new lessons to "pad" the curve.
+3. #152/#137/#151/#146 dialogue coherence in lessons (T20 T21 J24 J23 R17 W15 W13 J15 D3 W5 J22) — lesson dialogue lines only, not lexicon miniDialogue bulk.
+4. #161 understand items + can-do lines (lesson quiz content).
+5. #136 + #163 MCQ path-wide test.
+6. #162 WordCard content only where audit names specific bad glosses/collocations — no bulk example rewrite.
+7. #154 Art W8/W9 redraw if still open.
+8. Speaking: stress-syllable highlight + 慢速逐字 if not live; else skip new role-play until Lex ≥ 7.
+
+## DO NOT
+- Ship new lessons or new lesson heroes.
+- Bulk-rewrite lexicon examples / miniDialogue (supervisor pass).
+- Touch P0-3, nightly panes, print secrets, workflow_dispatch, or delete without asking.
+- Git commit.
+
+Run tests + build. Lighthouse mobile Perf ≥98 if UI changed. Append "## Round 53" to CHANGELOG.md; list open items honestly; state "new lessons frozen pending Lex≥7".
