@@ -57,11 +57,11 @@
       "id": "r17-l4",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "The surcharge is eighty dollars, and it keeps the banquet room until nine after six.",
-      "glossYue": "附加費八十蚊，六點之後會留住宴會廳直到九點。",
+      "text": "The surcharge is eighty dollars, and it holds the banquet room from six until nine.",
+      "glossYue": "附加費八十蚊，由六點留到九點嘅宴會廳。",
       "audio": "assets/audio/lines/r17-l4.mp3",
       "audioSlow": "assets/audio/lines/r17-l4-slow.mp3",
-      "say": "The surcharge is eighty dollars, and it keeps the banquet room until nine after six.",
+      "say": "The surcharge is eighty dollars, and it holds the banquet room from six until nine.",
       "hideGloss": true
     },
     {
@@ -101,11 +101,11 @@
       "id": "r17-l8",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "The cancellation rule starts at four, and the whole party can leave after that.",
-      "glossYue": "取消訂位規則四點開始，成檯可以喺之後離開。",
+      "text": "The cancellation rule starts at four, and dropping the party then pays a fee.",
+      "glossYue": "取消訂位規則四點開始，嗰陣成檯唔嚟就要畀費。",
       "audio": "assets/audio/lines/r17-l8.mp3",
       "audioSlow": "assets/audio/lines/r17-l8-slow.mp3",
-      "say": "The cancellation rule starts at four, and the whole party can leave after that.",
+      "say": "The cancellation rule starts at four, and dropping the party then pays a fee.",
       "hideGloss": true
     }
   ],
@@ -114,8 +114,8 @@
       "prompt": "Could we book the banquet from six if the cancellation fee stays under fifty dollars? 即係問緊咩？",
       "choices": [
         "問取消費低過五十蚊可唔可以六點訂宴會",
-        "問今日天氣點",
-        "問鎖匙放喺邊"
+        "話宴會已經取消",
+        "問菜單有冇素食"
       ],
       "answer": 0,
       "explain": "取消費低過五十蚊，問可唔可以六點起訂。"
@@ -125,7 +125,7 @@
       "choices": [
         "話已經取消",
         "問六點後再用三個鐘附加費幾多",
-        "問房號幾多"
+        "問小費包唔包喺單"
       ],
       "answer": 1,
       "explain": "六點之後再用三個鐘，問附加費。"
@@ -230,7 +230,7 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "The surcharge is eighty dollars, and it keeps the banquet room until nine after six.",
+        "line": "The surcharge is eighty dollars, and it holds the banquet room from six until nine.",
         "audio": "assets/audio/lines/r17-l4.mp3",
         "audioSlow": "assets/audio/lines/r17-l4-slow.mp3",
         "expect": "Is the service gratuity included for our party when the surcharge covers three full hours?",
@@ -282,7 +282,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "The cancellation rule starts at four, and the whole party can leave after that. 呢句入面，邊個意思先啱？",
+      "prompt": "The cancellation rule starts at four, and dropping the party then pays a fee. 呢句入面，邊個意思先啱？",
       "choices": [
         "鐘",
         "取消訂位",
@@ -312,24 +312,24 @@
     }
   ],
   "sound": {
-    "ipa": "/ɪ/",
-    "title": "banquet 入面嗰個音",
-    "note": "banquet 同 cancellation 唔同。",
+    "ipa": "/æ/",
+    "title": "banquet 入面嗰個 /æ/",
+    "note": "banquet 開頭係 /æ/。thank 係 /æ/，think 係 /ɪ/。",
     "pairs": [
       {
-        "a": "banquet-noun",
-        "b": "cancellation-noun"
+        "a": "thank-verb",
+        "b": "think-verb"
       },
       {
-        "a": "surcharge-noun",
-        "b": "gratuity-noun"
+        "a": "tap-noun",
+        "b": "tip-noun"
       }
     ],
     "drill": [
       "banquet-noun",
-      "cancellation-noun",
-      "surcharge-noun",
-      "gratuity-noun"
+      "thank-verb",
+      "think-verb",
+      "tap-noun"
     ]
   }
 }

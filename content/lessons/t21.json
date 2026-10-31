@@ -35,22 +35,22 @@
       "id": "t21-l2",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Your declaration is fine, and the layover belt is number three on the left side.",
-      "glossYue": "你張申報表冇問題，轉機停留嗰條帶係左邊三號。",
+      "text": "Your declaration is fine, and the baggage belt is number three on the left side.",
+      "glossYue": "你張申報表冇問題，行李轉盤係左邊三號。",
       "audio": "assets/audio/lines/t21-l2.mp3",
       "audioSlow": "assets/audio/lines/t21-l2-slow.mp3",
-      "say": "Your declaration is fine, and the layover belt is number three on the left side.",
+      "say": "Your declaration is fine, and the baggage belt is number three on the left side.",
       "hideGloss": false
     },
     {
       "id": "t21-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "If the layover leaves at two, how early should I reach immigration with one bag?",
-      "glossYue": "如果轉機停留兩點走，我應該幾早帶住一個袋去入境處？",
+      "text": "If the flight leaves at two, how early should I reach immigration with one bag?",
+      "glossYue": "如果航班兩點走，我應該幾早帶住一個袋去入境處？",
       "audio": "assets/audio/lines/t21-l3.mp3",
       "audioSlow": "assets/audio/lines/t21-l3-slow.mp3",
-      "say": "If the layover leaves at two, how early should I reach immigration with one bag?",
+      "say": "If the flight leaves at two, how early should I reach immigration with one bag?",
       "hideGloss": false
     },
     {
@@ -69,7 +69,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Where should I take this heavy bag if immigration sits past the carousel doors?",
-      "glossYue": "如果入境處喺傳送帶嗰度門後面，我應該將呢件重行李拿到邊？",
+      "glossYue": "如果入境處喺行李轉盤嗰度門後面，我應該將呢件重行李拿到邊？",
       "audio": "assets/audio/lines/t21-l5.mp3",
       "audioSlow": "assets/audio/lines/t21-l5-slow.mp3",
       "say": "Where should I take this heavy bag if immigration sits past the carousel doors?",
@@ -80,7 +80,7 @@
       "speaker": "kim",
       "speakerLabel": "Kim",
       "text": "Please take that heavy bag over to the carousel, and immigration sits past those doors.",
-      "glossYue": "請將嗰件重行李拿到傳送帶，入境處就喺嗰度門後面。",
+      "glossYue": "請將嗰件重行李拿到行李轉盤，入境處就喺嗰度門後面。",
       "audio": "assets/audio/lines/t21-l6.mp3",
       "audioSlow": "assets/audio/lines/t21-l6-slow.mp3",
       "say": "Please take that heavy bag over to the carousel, and immigration sits past those doors.",
@@ -91,7 +91,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Can I keep one small bag and check the big bag at the far carousel?",
-      "glossYue": "我可唔可以帶住一個細袋，大袋喺遠嘅傳送帶托運？",
+      "glossYue": "我可唔可以帶住一個細袋，大袋喺遠嘅行李轉盤托運？",
       "audio": "assets/audio/lines/t21-l7.mp3",
       "audioSlow": "assets/audio/lines/t21-l7-slow.mp3",
       "say": "Can I keep one small bag and check the big bag at the far carousel?",
@@ -102,7 +102,7 @@
       "speaker": "kim",
       "speakerLabel": "Kim",
       "text": "You can keep the small case and check the big one at that far carousel.",
-      "glossYue": "你可以帶住個細箱，大件喺遠嘅傳送帶托運。",
+      "glossYue": "你可以帶住個細箱，大件喺遠嘅行李轉盤托運。",
       "audio": "assets/audio/lines/t21-l8.mp3",
       "audioSlow": "assets/audio/lines/t21-l8-slow.mp3",
       "say": "You can keep the small case and check the big one at that far carousel.",
@@ -114,18 +114,18 @@
       "prompt": "Could you please check my declaration before the layover and tell me which belt? 即係問緊咩？",
       "choices": [
         "問轉機前可唔可以睇申報表同邊條帶",
-        "問今日天氣點",
-        "問鎖匙放喺邊"
+        "話行李已經遺失",
+        "問登機閘口係幾號"
       ],
       "answer": 0,
       "explain": "轉機之前睇申報表，再問邊條行李帶。"
     },
     {
-      "prompt": "If the layover leaves at two, how early should I reach immigration with one bag? 即係問緊咩？",
+      "prompt": "If the flight leaves at two, how early should I reach immigration with one bag? 即係問緊咩？",
       "choices": [
         "話航班已經取消",
-        "問轉機兩點走，要幾早帶一個袋去入境處",
-        "問房號幾多"
+        "問航班兩點走，要幾早帶一個袋去入境處",
+        "問海關要幾多張表"
       ],
       "answer": 1,
       "explain": "轉機兩點走，問要幾早去入境處。"
@@ -133,9 +133,9 @@
     {
       "prompt": "Can I keep one small bag and check the big bag at the far carousel? 即係問緊咩？",
       "choices": [
-        "問鎖匙放喺邊",
+        "話兩個袋都要上機",
         "話兩個袋都要托運",
-        "問可唔可以留細袋，大袋喺遠傳送帶托運"
+        "問可唔可以留細袋，大袋喺遠行李轉盤托運"
       ],
       "answer": 2,
       "explain": "細袋隨身，大袋喺遠嘅行李轉盤托運。"
@@ -165,9 +165,9 @@
       ]
     },
     {
-      "pattern": "If the layover leaves at two, how early should I reach ___ with one bag?",
-      "example": "If the layover leaves at two, how early should I reach immigration with one bag?",
-      "glossYue": "如果轉機停留兩點走，我應該幾早帶住一個袋去入境處？",
+      "pattern": "If the flight leaves at two, how early should I reach ___ with one bag?",
+      "example": "If the flight leaves at two, how early should I reach immigration with one bag?",
+      "glossYue": "如果航班兩點走，我應該幾早帶住一個袋去入境處？",
       "answer": "immigration",
       "choices": [
         "immigration",
@@ -186,7 +186,7 @@
       "promptYue": "你點講？",
       "choices": [
         "Could you please check my declaration before the layover and tell me which belt?",
-        "If the layover leaves at two, how early should I reach immigration with one bag?",
+        "If the flight leaves at two, how early should I reach immigration with one bag?",
         "Where should I take this heavy bag if immigration sits past the carousel doors?"
       ],
       "answer": 0,
@@ -216,10 +216,10 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Your declaration is fine, and the layover belt is number three on the left side.",
+        "line": "Your declaration is fine, and the baggage belt is number three on the left side.",
         "audio": "assets/audio/lines/t21-l2.mp3",
         "audioSlow": "assets/audio/lines/t21-l2-slow.mp3",
-        "expect": "If the layover leaves at two, how early should I reach immigration with one bag?",
+        "expect": "If the flight leaves at two, how early should I reach immigration with one bag?",
         "keywords": [
           "layover",
           "immigration"
@@ -296,13 +296,13 @@
       "choices": [
         "手鏈",
         "發票",
-        "傳送帶"
+        "行李轉盤"
       ],
       "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "If the layover leaves at two, how early should I reach ___ with one bag? 呢句入面，邊個字先啱？",
+      "prompt": "If the flight leaves at two, how early should I reach ___ with one bag? 呢句入面，邊個字先啱？",
       "choices": [
         "luggage",
         "immigration",
@@ -312,24 +312,24 @@
     }
   ],
   "sound": {
-    "ipa": "/ɪ/",
-    "title": "declaration 入面嗰個音",
-    "note": "declaration 同 layover 唔同。",
+    "ipa": "/eɪ/",
+    "title": "declaration 入面嗰個 /eɪ/",
+    "note": "declaration 重音係 /eɪ/。eight 係 /eɪ/，it 係 /ɪ/。",
     "pairs": [
       {
-        "a": "declaration-noun",
-        "b": "layover-noun"
+        "a": "eight-num",
+        "b": "it-pron"
       },
       {
-        "a": "immigration-noun",
-        "b": "carousel-noun"
+        "a": "may-verb",
+        "b": "me-pron"
       }
     ],
     "drill": [
       "declaration-noun",
-      "layover-noun",
-      "immigration-noun",
-      "carousel-noun"
+      "eight-num",
+      "it-pron",
+      "may-verb"
     ]
   }
 }

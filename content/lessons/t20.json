@@ -1,7 +1,7 @@
 {
   "id": "T20",
   "unit": "T",
-  "titleYue": "安檢篩查同超大件",
+  "titleYue": "安檢同超大件",
   "titleEn": "Screening an oversized case",
   "canDoYue": "你識問超大件箱要點安檢、掃描器櫃檯喺邊，同檢查站幾早開。",
   "canDoEn": "Ask about screening, an oversized case, the scanner, and the checkpoint.",
@@ -25,7 +25,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Could you explain the screening if this grey case looks oversized beside the far belt?",
-      "glossYue": "如果呢個灰色箱喺遠嘅輸送帶旁邊顯得超大件，可唔可以解釋下安檢篩查？",
+      "glossYue": "如果呢個灰色箱喺遠嘅輸送帶旁邊顯得超大件，可唔可以解釋下安檢？",
       "audio": "assets/audio/lines/t20-l1.mp3",
       "audioSlow": "assets/audio/lines/t20-l1-slow.mp3",
       "say": "Could you explain the screening if this grey case looks oversized beside the far belt?",
@@ -36,7 +36,7 @@
       "speaker": "kim",
       "speakerLabel": "Kim",
       "text": "This screening allows that grey case, and an oversized one uses the far side belt.",
-      "glossYue": "呢次安檢篩查可以放嗰個灰色箱，超大件就用遠邊嗰條輸送帶。",
+      "glossYue": "呢次安檢可以放嗰個灰色箱，超大件就用遠邊嗰條輸送帶。",
       "audio": "assets/audio/lines/t20-l2.mp3",
       "audioSlow": "assets/audio/lines/t20-l2-slow.mp3",
       "say": "This screening allows that grey case, and an oversized one uses the far side belt.",
@@ -79,11 +79,11 @@
       "id": "t20-l6",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "An oversized grey case can skip the scanner desk when the inner lane is shut.",
-      "glossYue": "內線關閉嗰陣，超大件灰色箱可以跳過掃描器櫃檯。",
+      "text": "No. That grey case must use the scanner desk when the inner lane is shut.",
+      "glossYue": "唔得。內線關閉嗰陣，嗰個灰色箱都要用掃描器。",
       "audio": "assets/audio/lines/t20-l6.mp3",
       "audioSlow": "assets/audio/lines/t20-l6-slow.mp3",
-      "say": "An oversized grey case can skip the scanner desk when the inner lane is shut.",
+      "say": "No. That grey case must use the scanner desk when the inner lane is shut.",
       "hideGloss": true
     },
     {
@@ -91,7 +91,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "How early should I reach the checkpoint if the screening lane opens at noon sharp?",
-      "glossYue": "如果安檢篩查線正午正開門，我應該幾早到檢查站？",
+      "glossYue": "如果安檢線正午正開門，我應該幾早到檢查站？",
       "audio": "assets/audio/lines/t20-l7.mp3",
       "audioSlow": "assets/audio/lines/t20-l7-slow.mp3",
       "say": "How early should I reach the checkpoint if the screening lane opens at noon sharp?",
@@ -102,7 +102,7 @@
       "speaker": "kim",
       "speakerLabel": "Kim",
       "text": "Please reach the checkpoint thirty minutes early, because that screening lane opens at noon sharp.",
-      "glossYue": "請早三十分鐘到檢查站，因為嗰條安檢篩查線正午正開門。",
+      "glossYue": "請早三十分鐘到檢查站，因為嗰條安檢線正午正開門。",
       "audio": "assets/audio/lines/t20-l8.mp3",
       "audioSlow": "assets/audio/lines/t20-l8-slow.mp3",
       "say": "Please reach the checkpoint thirty minutes early, because that screening lane opens at noon sharp.",
@@ -113,19 +113,19 @@
     {
       "prompt": "Could you explain the screening if this grey case looks oversized beside the far belt? 即係問緊咩？",
       "choices": [
-        "問灰色超大件箱可唔可以解釋安檢篩查",
-        "問今日天氣點",
-        "問鎖匙放喺邊"
+        "問灰色超大件箱可唔可以解釋安檢",
+        "話航班已經起飛",
+        "問行李超重幾多"
       ],
       "answer": 0,
-      "explain": "超大件箱喺遠輸送帶，要人解釋安檢篩查。"
+      "explain": "超大件箱喺遠輸送帶，要人解釋安檢。"
     },
     {
       "prompt": "Where should the scanner desk be if I missed the inner checkpoint beside that belt? 即係問緊咩？",
       "choices": [
         "話已經過咗安檢",
         "問掃描器櫃檯應該喺邊",
-        "問房號幾多"
+        "問入境表格喺邊攞"
       ],
       "answer": 1,
       "explain": "錯過內檢查站，要問掃描器櫃檯位置。"
@@ -145,7 +145,7 @@
     {
       "pattern": "Could you explain the ___ if this grey case looks oversized beside the far belt?",
       "example": "Could you explain the screening if this grey case looks oversized beside the far belt?",
-      "glossYue": "如果呢個灰色箱喺遠嘅輸送帶旁邊顯得超大件，可唔可以解釋下安檢篩查？",
+      "glossYue": "如果呢個灰色箱喺遠嘅輸送帶旁邊顯得超大件，可唔可以解釋下安檢？",
       "answer": "screening",
       "choices": [
         "screening",
@@ -156,7 +156,7 @@
     {
       "pattern": "Could you explain the screening if this grey case looks ___ beside the far belt?",
       "example": "Could you explain the screening if this grey case looks oversized beside the far belt?",
-      "glossYue": "如果呢個灰色箱喺遠嘅輸送帶旁邊顯得超大件，可唔可以解釋下安檢篩查？",
+      "glossYue": "如果呢個灰色箱喺遠嘅輸送帶旁邊顯得超大件，可唔可以解釋下安檢？",
       "answer": "oversized",
       "choices": [
         "oversized",
@@ -244,7 +244,7 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "An oversized grey case can skip the scanner desk when the inner lane is shut.",
+        "line": "No. That grey case must use the scanner desk when the inner lane is shut.",
         "audio": "assets/audio/lines/t20-l6.mp3",
         "audioSlow": "assets/audio/lines/t20-l6-slow.mp3",
         "expect": "How early should I reach the checkpoint if the screening lane opens at noon sharp?",
@@ -285,7 +285,7 @@
       "prompt": "Could you explain the screening if this grey case looks oversized beside the far belt? 呢句入面，邊個意思先啱？",
       "choices": [
         "窗",
-        "安檢篩查",
+        "安檢",
         "鐘"
       ],
       "answer": 1
@@ -312,24 +312,24 @@
     }
   ],
   "sound": {
-    "ipa": "/ɪ/",
-    "title": "screening 入面嗰個音",
-    "note": "screening 同 oversized 唔同。",
+    "ipa": "/i/",
+    "title": "screening 入面嗰個 /i/",
+    "note": "screening 重音係長 /i/。sheep 係 /i/，ship 係 /ɪ/。",
     "pairs": [
       {
-        "a": "screening-noun",
-        "b": "oversized-adj"
+        "a": "sheep-noun",
+        "b": "ship-noun"
       },
       {
-        "a": "scanner-noun",
-        "b": "checkpoint-noun"
+        "a": "seat-noun",
+        "b": "sit-verb"
       }
     ],
     "drill": [
       "screening-noun",
-      "oversized-adj",
-      "scanner-noun",
-      "checkpoint-noun"
+      "sheep-noun",
+      "ship-noun",
+      "seat-noun"
     ]
   }
 }

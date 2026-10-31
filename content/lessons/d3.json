@@ -52,11 +52,11 @@
       "id": "d3-l3",
       "speaker": "lea",
       "speakerLabel": "Lea",
-      "text": "The rent is due on the first, and water is included.",
-      "glossYue": "月租每個月一號交，水費包咗。",
+      "text": "The monthly rent is eighteen thousand dollars, and water is included.",
+      "glossYue": "月租租金係一萬八，水費包咗。",
       "audio": "assets/audio/lines/d3-l3.mp3",
       "audioSlow": "assets/audio/lines/d3-l3-slow.mp3",
-      "say": "The rent is due on the first, and water is included.",
+      "say": "The monthly rent is eighteen thousand dollars, and water is included.",
       "hideGloss": true
     },
     {
@@ -161,7 +161,7 @@
     },
     {
       "pattern": "The rent is due on the first, and the ___ is one month.",
-      "example": "The rent is due on the first, and water is included.",
+      "example": "The monthly rent is eighteen thousand dollars, and water is included.",
       "glossYue": "⋯⋯等於一個月。",
       "answer": "deposit",
       "choices": [
@@ -247,7 +247,7 @@
       {
         "partner": "Lea",
         "partnerId": "lea",
-        "line": "The rent is due on the first, and water is included.",
+        "line": "The monthly rent is eighteen thousand dollars, and water is included.",
         "audio": "assets/audio/lines/d3-l3.mp3",
         "audioSlow": "assets/audio/lines/d3-l3-slow.mp3",
         "expect": "The deposit is one month, and the rent stays fixed.",
@@ -299,19 +299,19 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The rent is due on the first, and water is included.」，deposit 係咩意思？",
+      "prompt": "客人講「The monthly rent is eighteen thousand dollars, and water is included.」呢句入面，邊個意思先啱？",
       "choices": [
         "租約",
         "業主",
-        "按金"
+        "租金"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The deposit is one month, and the rent stays fixed.」，lease 係咩意思？",
+      "prompt": "客人講「The deposit is one month, and the rent stays fixed.」呢句入面，邊個意思先啱？",
       "choices": [
-        "租約",
+        "按金",
         "收據",
         "通知期"
       ],

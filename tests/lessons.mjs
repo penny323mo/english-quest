@@ -1683,3 +1683,34 @@ print("ok", len(ids))
   const res = spawnSync("python3", ["-c", script], { cwd: root, encoding: "utf8" });
   assert.equal(res.status, 0, `${res.stdout}\n${res.stderr}`);
 });
+
+test("named meaning items quote the line and keep one answer", () => {
+  const byId = Object.fromEntries(lex.items.map((item) => [item.id, item]));
+  const r4 = lessons.find((row) => row.id === "R4");
+  const still = r4.quiz.find((item) => String(item.prompt).includes("still water") && item.type === "meaning");
+  assert.equal(still.choices[still.answer], "冇氣");
+  assert.equal(still.choices.includes("餐巾"), false);
+  assert.equal(still.prompt.includes("呢句入面"), true);
+  const t8 = lessons.find((row) => row.id === "T8");
+  const goods = t8.quiz.find((item) => String(item.prompt).includes("I declare these goods"));
+  assert.equal(goods.choices[goods.answer], "貨物");
+  assert.equal(String(goods.prompt).includes("gift"), false);
+  const declared = t8.dialogue.find((row) => row.id === "t8-l5");
+  assert.equal(declared.text.includes("gift"), false);
+  assert.equal(declared.glossYue.includes("禮物"), false);
+  const d3 = lessons.find((row) => row.id === "D3");
+  assert.match(d3.dialogue.find((row) => row.id === "d3-l3").text, /eighteen thousand dollars/);
+  const t20 = lessons.find((row) => row.id === "T20");
+  const staff = t20.dialogue.find((row) => row.id === "t20-l6");
+  assert.match(staff.text, /must use the scanner desk/);
+  assert.doesNotMatch(staff.text, /can skip the scanner/);
+  assert.equal(byId["screening-noun"].glossYue, "安檢");
+  assert.equal(byId["reimbursement-noun"].glossYue, "報銷");
+  assert.equal(byId["carousel-noun"].glossYue, "行李轉盤");
+  for (const lesson of lessons) {
+    const blob = JSON.stringify(lesson.understand || []);
+    assert.equal(blob.includes("問今日天氣"), false, lesson.id);
+    assert.equal(blob.includes("問鎖匙"), false, lesson.id);
+    assert.equal(blob.includes("問房號"), false, lesson.id);
+  }
+});

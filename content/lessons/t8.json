@@ -78,7 +78,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "I declare these goods at the desk.",
-      "glossYue": "我喺櫃檯申報呢啲貨物，呢份細禮物係送畀屋企朋友。",
+      "glossYue": "我喺櫃檯申報呢啲貨物。",
       "audio": "assets/audio/lines/t8-l5.mp3",
       "audioSlow": "assets/audio/lines/t8-l5-slow.mp3",
       "say": "I declare these goods at the desk.",
@@ -303,11 +303,11 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I declare these goods at the desk.」，gift 係咩意思？",
+      "prompt": "客人講「I declare these goods at the desk.」呢句入面，邊個意思先啱？",
       "choices": [
-        "貨物",
+        "禮物",
         "表格",
-        "禮物"
+        "貨物"
       ],
       "answer": 2
     },

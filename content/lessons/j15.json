@@ -55,7 +55,7 @@
       "speaker": "gus",
       "speakerLabel": "Gus",
       "text": "This ring is too tight on my finger.",
-      "glossYue": "呢隻戒指戴住太緊，我仲有張收據。",
+      "glossYue": "呢隻戒指戴住太緊。",
       "audio": "assets/audio/lines/j15-l1.mp3",
       "audioSlow": "assets/audio/lines/j15-l1-slow.mp3",
       "say": "This ring is too tight on my finger.",
@@ -66,7 +66,7 @@
       "speaker": "ida",
       "speakerLabel": "Ida",
       "text": "A tight ring needs one larger opening.",
-      "glossYue": "太緊嘅戒指要開大少少，收據上面有完整購買日期。",
+      "glossYue": "太緊嘅戒指要開大少少。",
       "audio": "assets/audio/lines/j15-l2.mp3",
       "audioSlow": "assets/audio/lines/j15-l2-slow.mp3",
       "say": "A tight ring needs one larger opening.",
@@ -143,12 +143,12 @@
     {
       "prompt": "This ring is too tight on my finger. 呢句即係點？",
       "choices": [
-        "戒指太緊，仲有收據",
+        "戒指戴住太緊",
         "收據唔見咗，戒指太鬆",
         "想問保養幾耐"
       ],
       "answer": 0,
-      "explain": "tight 係緊。receipt 係收據。"
+      "explain": "tight 係緊。"
     },
     {
       "prompt": "Can you make the ring half a size larger, and when can I collect it? 即係問緊咩？",

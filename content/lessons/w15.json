@@ -1,7 +1,7 @@
 {
   "id": "W15",
   "unit": "W",
-  "titleYue": "實報實銷同帳簿",
+  "titleYue": "報銷同帳簿",
   "titleEn": "Reimbursement, variance, and the ledger",
   "canDoYue": "你識帶三月報銷同差額去採購審核，問帳簿會唔會批，同邊個做負責人。",
   "canDoEn": "Ask about a reimbursement, a variance, procurement, and the ledger.",
@@ -25,7 +25,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?",
-      "glossYue": "可唔可以帶三月實報實銷同成本差額，去星期一嘅採購審核？",
+      "glossYue": "可唔可以帶三月報銷同成本差額，去星期一嘅採購審核？",
       "audio": "assets/audio/lines/w15-l1.mp3",
       "audioSlow": "assets/audio/lines/w15-l1-slow.mp3",
       "say": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?",
@@ -69,7 +69,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Please could the ledger name me as the owner without reading every reimbursement line aloud?",
-      "glossYue": "帳簿可唔可以寫我做負責人，唔使大聲讀每一行實報實銷？",
+      "glossYue": "帳簿可唔可以寫我做負責人，唔使大聲讀每一行報銷？",
       "audio": "assets/audio/lines/w15-l5.mp3",
       "audioSlow": "assets/audio/lines/w15-l5-slow.mp3",
       "say": "Please could the ledger name me as the owner without reading every reimbursement line aloud?",
@@ -79,11 +79,11 @@
       "id": "w15-l6",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "The notes will name me as owner, and I will not read every line aloud.",
-      "glossYue": "筆記會寫我做負責人，我唔會大聲讀每一行。",
+      "text": "The notes will name you as owner, and I will not read every line aloud.",
+      "glossYue": "筆記會寫你做負責人，我唔會大聲讀每一行。",
       "audio": "assets/audio/lines/w15-l6.mp3",
       "audioSlow": "assets/audio/lines/w15-l6-slow.mp3",
-      "say": "The notes will name me as owner, and I will not read every line aloud.",
+      "say": "The notes will name you as owner, and I will not read every line aloud.",
       "hideGloss": true
     },
     {
@@ -114,8 +114,8 @@
       "prompt": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review? 即係問緊咩？",
       "choices": [
         "問可唔可以帶三月報銷同差額去星期一採購審核",
-        "問今日天氣點",
-        "問鎖匙放喺邊"
+        "話報銷已經批咗",
+        "問帳簿鎖咗未"
       ],
       "answer": 0,
       "explain": "帶三月報銷同差額去採購審核。"
@@ -125,7 +125,7 @@
       "choices": [
         "話帳簿已經鎖咗",
         "問差額留喺三月帳簿會唔會批核",
-        "問房號幾多"
+        "問邊個要再簽名"
       ],
       "answer": 1,
       "explain": "差額留喺三月書面帳簿，問會唔會批。"
@@ -133,7 +133,7 @@
     {
       "prompt": "Please could the ledger name me as the owner without reading every reimbursement line aloud? 即係問緊咩？",
       "choices": [
-        "問今日天氣點",
+        "話要改負責人姓名",
         "話要大聲讀每一行",
         "問帳簿可唔可以寫我做負責人"
       ],
@@ -145,7 +145,7 @@
     {
       "pattern": "Could you please bring the March ___ and the cost variance to Monday's procurement review?",
       "example": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?",
-      "glossYue": "可唔可以帶三月實報實銷同成本差額，去星期一嘅採購審核？",
+      "glossYue": "可唔可以帶三月報銷同成本差額，去星期一嘅採購審核？",
       "answer": "reimbursement",
       "choices": [
         "reimbursement",
@@ -156,7 +156,7 @@
     {
       "pattern": "Could you please bring the March reimbursement and the cost ___ to Monday's procurement review?",
       "example": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?",
-      "glossYue": "可唔可以帶三月實報實銷同成本差額，去星期一嘅採購審核？",
+      "glossYue": "可唔可以帶三月報銷同成本差額，去星期一嘅採購審核？",
       "answer": "variance",
       "choices": [
         "variance",
@@ -167,7 +167,7 @@
     {
       "pattern": "Could you please bring the March reimbursement and the cost variance to Monday's ___ review?",
       "example": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?",
-      "glossYue": "可唔可以帶三月實報實銷同成本差額，去星期一嘅採購審核？",
+      "glossYue": "可唔可以帶三月報銷同成本差額，去星期一嘅採購審核？",
       "answer": "procurement",
       "choices": [
         "procurement",
@@ -244,7 +244,7 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "The notes will name me as owner, and I will not read every line aloud.",
+        "line": "The notes will name you as owner, and I will not read every line aloud.",
         "audio": "assets/audio/lines/w15-l6.mp3",
         "audioSlow": "assets/audio/lines/w15-l6-slow.mp3",
         "expect": "Please file the procurement note before the meeting and leave it on my wooden desk.",
@@ -312,24 +312,24 @@
     }
   ],
   "sound": {
-    "ipa": "/ɪ/",
-    "title": "reimbursement 入面嗰個音",
-    "note": "reimbursement 同 variance 唔同。",
+    "ipa": "/ɝ/",
+    "title": "reimbursement 入面嗰個 /ɝ/",
+    "note": "reimbursement 重音係 /ɝ/。shirt 係 /ɝ/，sheet 係 /i/。",
     "pairs": [
       {
-        "a": "reimbursement-noun",
-        "b": "variance-noun"
+        "a": "shirt-noun",
+        "b": "sheet-noun"
       },
       {
-        "a": "procurement-noun",
-        "b": "ledger-noun"
+        "a": "work-verb",
+        "b": "week-noun"
       }
     ],
     "drill": [
       "reimbursement-noun",
-      "variance-noun",
-      "procurement-noun",
-      "ledger-noun"
+      "shirt-noun",
+      "sheet-noun",
+      "work-verb"
     ]
   }
 }

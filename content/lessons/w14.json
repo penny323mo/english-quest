@@ -114,8 +114,8 @@
       "prompt": "Could we please move the Monday review if the forecast shows an overrun before Friday? 即係問緊咩？",
       "choices": [
         "問星期五前預測超支，可唔可以改星期一審核",
-        "問今日天氣點",
-        "問鎖匙放喺邊"
+        "話預算已經批咗",
+        "問會議改到邊日"
       ],
       "answer": 0,
       "explain": "預測星期五前超支，問可唔可以改期。"
@@ -125,7 +125,7 @@
       "choices": [
         "話會議已經取消",
         "問持份者未睇字條會唔會傳閱預測",
-        "問房號幾多"
+        "問邊個要簽名"
       ],
       "answer": 1,
       "explain": "持份者未睇字條，問會唔會傳閱書面預測。"
@@ -133,7 +133,7 @@
     {
       "prompt": "What should the new written agenda say if the overrun changes the Monday review date? 即係問緊咩？",
       "choices": [
-        "問鎖匙放喺邊",
+        "話舊議程可以留",
         "話唔使寫議程",
         "問超支改期之後新議程應該點寫"
       ],
@@ -312,24 +312,24 @@
     }
   ],
   "sound": {
-    "ipa": "/ɪ/",
-    "title": "forecast 入面嗰個音",
-    "note": "forecast 同 overrun 唔同。",
+    "ipa": "/æ/",
+    "title": "forecast 入面嗰個 /æ/",
+    "note": "forecast 第二音係 /æ/。flat 係 /æ/，flight 係 /aɪ/。",
     "pairs": [
       {
-        "a": "forecast-noun",
-        "b": "overrun-noun"
+        "a": "flat-noun",
+        "b": "flight-noun"
       },
       {
-        "a": "circulate-verb",
-        "b": "stakeholder-noun"
+        "a": "sank-verb",
+        "b": "sink-noun"
       }
     ],
     "drill": [
       "forecast-noun",
-      "overrun-noun",
-      "circulate-verb",
-      "stakeholder-noun"
+      "flat-noun",
+      "flight-noun",
+      "sank-verb"
     ]
   }
 }

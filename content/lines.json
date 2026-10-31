@@ -2513,11 +2513,11 @@
     "id": "d3-l3",
     "speaker": "lea",
     "speakerLabel": "Lea",
-    "text": "The rent is due on the first, and water is included.",
-    "glossYue": "月租每個月一號交，水費包咗。",
+    "text": "The monthly rent is eighteen thousand dollars, and water is included.",
+    "glossYue": "月租租金係一萬八，水費包咗。",
     "audio": "assets/audio/lines/d3-l3.mp3",
     "audioSlow": "assets/audio/lines/d3-l3-slow.mp3",
-    "say": "The rent is due on the first, and water is included."
+    "say": "The monthly rent is eighteen thousand dollars, and water is included."
   },
   {
     "id": "d3-l4",
@@ -2694,7 +2694,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "I declare these goods at the desk.",
-    "glossYue": "我喺櫃檯申報呢啲貨物，呢份細禮物係送畀屋企朋友。",
+    "glossYue": "我喺櫃檯申報呢啲貨物。",
     "audio": "assets/audio/lines/t8-l5.mp3",
     "audioSlow": "assets/audio/lines/t8-l5-slow.mp3",
     "say": "I declare these goods at the desk."
@@ -3534,7 +3534,7 @@
     "speaker": "kim",
     "speakerLabel": "Kim",
     "text": "Yes, we can rebook you on the next flight, and standby is not the only option left.",
-    "glossYue": "可以。我哋可以幫你改下一班，後補唔係唯一選擇。",
+    "glossYue": "可以。我哋可以幫你改下一班，候補唔係唯一選擇。",
     "audio": "assets/audio/lines/t9-l4.mp3",
     "audioSlow": "assets/audio/lines/t9-l4-slow.mp3",
     "say": "Yes, we can rebook you on the next flight, and standby is not the only option left."
@@ -4584,7 +4584,7 @@
     "speaker": "gus",
     "speakerLabel": "Gus",
     "text": "This ring is too tight on my finger.",
-    "glossYue": "呢隻戒指戴住太緊，我仲有張收據。",
+    "glossYue": "呢隻戒指戴住太緊。",
     "audio": "assets/audio/lines/j15-l1.mp3",
     "audioSlow": "assets/audio/lines/j15-l1-slow.mp3",
     "say": "This ring is too tight on my finger."
@@ -4594,7 +4594,7 @@
     "speaker": "ida",
     "speakerLabel": "Ida",
     "text": "A tight ring needs one larger opening.",
-    "glossYue": "太緊嘅戒指要開大少少，收據上面有完整購買日期。",
+    "glossYue": "太緊嘅戒指要開大少少。",
     "audio": "assets/audio/lines/j15-l2.mp3",
     "audioSlow": "assets/audio/lines/j15-l2-slow.mp3",
     "say": "A tight ring needs one larger opening."
@@ -7053,11 +7053,11 @@
     "id": "w13-l8",
     "speaker": "nina",
     "speakerLabel": "Nina",
-    "text": "Friday still works, and the milestone can move if the blocker remains.",
-    "glossYue": "星期五都得，阻礙仲喺度就可以改里程碑。",
+    "text": "Friday at three still works, and the milestone moves to that day.",
+    "glossYue": "星期五三點都得，里程碑改到嗰日。",
     "audio": "assets/audio/lines/w13-l8.mp3",
     "audioSlow": "assets/audio/lines/w13-l8-slow.mp3",
-    "say": "Friday still works, and the milestone can move if the blocker remains."
+    "say": "Friday at three still works, and the milestone moves to that day."
   },
   {
     "id": "j22-l1",
@@ -7224,7 +7224,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "Could you explain the screening if this grey case looks oversized beside the far belt?",
-    "glossYue": "如果呢個灰色箱喺遠嘅輸送帶旁邊顯得超大件，可唔可以解釋下安檢篩查？",
+    "glossYue": "如果呢個灰色箱喺遠嘅輸送帶旁邊顯得超大件，可唔可以解釋下安檢？",
     "audio": "assets/audio/lines/t20-l1.mp3",
     "audioSlow": "assets/audio/lines/t20-l1-slow.mp3",
     "say": "Could you explain the screening if this grey case looks oversized beside the far belt?"
@@ -7234,7 +7234,7 @@
     "speaker": "kim",
     "speakerLabel": "Kim",
     "text": "This screening allows that grey case, and an oversized one uses the far side belt.",
-    "glossYue": "呢次安檢篩查可以放嗰個灰色箱，超大件就用遠邊嗰條輸送帶。",
+    "glossYue": "呢次安檢可以放嗰個灰色箱，超大件就用遠邊嗰條輸送帶。",
     "audio": "assets/audio/lines/t20-l2.mp3",
     "audioSlow": "assets/audio/lines/t20-l2-slow.mp3",
     "say": "This screening allows that grey case, and an oversized one uses the far side belt."
@@ -7273,18 +7273,18 @@
     "id": "t20-l6",
     "speaker": "kim",
     "speakerLabel": "Kim",
-    "text": "An oversized grey case can skip the scanner desk when the inner lane is shut.",
-    "glossYue": "內線關閉嗰陣，超大件灰色箱可以跳過掃描器櫃檯。",
+    "text": "No. That grey case must use the scanner desk when the inner lane is shut.",
+    "glossYue": "唔得。內線關閉嗰陣，嗰個灰色箱都要用掃描器。",
     "audio": "assets/audio/lines/t20-l6.mp3",
     "audioSlow": "assets/audio/lines/t20-l6-slow.mp3",
-    "say": "An oversized grey case can skip the scanner desk when the inner lane is shut."
+    "say": "No. That grey case must use the scanner desk when the inner lane is shut."
   },
   {
     "id": "t20-l7",
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "How early should I reach the checkpoint if the screening lane opens at noon sharp?",
-    "glossYue": "如果安檢篩查線正午正開門，我應該幾早到檢查站？",
+    "glossYue": "如果安檢線正午正開門，我應該幾早到檢查站？",
     "audio": "assets/audio/lines/t20-l7.mp3",
     "audioSlow": "assets/audio/lines/t20-l7-slow.mp3",
     "say": "How early should I reach the checkpoint if the screening lane opens at noon sharp?"
@@ -7294,7 +7294,7 @@
     "speaker": "kim",
     "speakerLabel": "Kim",
     "text": "Please reach the checkpoint thirty minutes early, because that screening lane opens at noon sharp.",
-    "glossYue": "請早三十分鐘到檢查站，因為嗰條安檢篩查線正午正開門。",
+    "glossYue": "請早三十分鐘到檢查站，因為嗰條安檢線正午正開門。",
     "audio": "assets/audio/lines/t20-l8.mp3",
     "audioSlow": "assets/audio/lines/t20-l8-slow.mp3",
     "say": "Please reach the checkpoint thirty minutes early, because that screening lane opens at noon sharp."
@@ -7323,21 +7323,21 @@
     "id": "j23-l3",
     "speaker": "gus",
     "speakerLabel": "Gus",
-    "text": "Does this written valuation still stand if the deductible changed after the first shop visit?",
-    "glossYue": "如果第一次來舖之後免賠額改咗，呢份書面估值仲算唔算數？",
+    "text": "Does this written valuation still stand if the deductible changed after the first claim file?",
+    "glossYue": "如果第一次索償檔之後免賠額改咗，呢份書面估值仲算唔算數？",
     "audio": "assets/audio/lines/j23-l3.mp3",
     "audioSlow": "assets/audio/lines/j23-l3-slow.mp3",
-    "say": "Does this written valuation still stand if the deductible changed after the first shop visit?"
+    "say": "Does this written valuation still stand if the deductible changed after the first claim file?"
   },
   {
     "id": "j23-l4",
     "speaker": "ida",
     "speakerLabel": "Ida",
-    "text": "The written valuation still stands, and the new deductible is noted after that first visit.",
-    "glossYue": "書面估值仍然有效，新免賠額已經記低喺第一次來舖之後。",
+    "text": "The written valuation still stands, and the new deductible is noted after that first file.",
+    "glossYue": "書面估值仍然有效，新免賠額已經記低喺第一次索償檔之後。",
     "audio": "assets/audio/lines/j23-l4.mp3",
     "audioSlow": "assets/audio/lines/j23-l4-slow.mp3",
-    "say": "The written valuation still stands, and the new deductible is noted after that first visit."
+    "say": "The written valuation still stands, and the new deductible is noted after that first file."
   },
   {
     "id": "j23-l5",
@@ -7413,11 +7413,11 @@
     "id": "r17-l4",
     "speaker": "mira",
     "speakerLabel": "Mira",
-    "text": "The surcharge is eighty dollars, and it keeps the banquet room until nine after six.",
-    "glossYue": "附加費八十蚊，六點之後會留住宴會廳直到九點。",
+    "text": "The surcharge is eighty dollars, and it holds the banquet room from six until nine.",
+    "glossYue": "附加費八十蚊，由六點留到九點嘅宴會廳。",
     "audio": "assets/audio/lines/r17-l4.mp3",
     "audioSlow": "assets/audio/lines/r17-l4-slow.mp3",
-    "say": "The surcharge is eighty dollars, and it keeps the banquet room until nine after six."
+    "say": "The surcharge is eighty dollars, and it holds the banquet room from six until nine."
   },
   {
     "id": "r17-l5",
@@ -7453,11 +7453,11 @@
     "id": "r17-l8",
     "speaker": "mira",
     "speakerLabel": "Mira",
-    "text": "The cancellation rule starts at four, and the whole party can leave after that.",
-    "glossYue": "取消訂位規則四點開始，成檯可以喺之後離開。",
+    "text": "The cancellation rule starts at four, and dropping the party then pays a fee.",
+    "glossYue": "取消訂位規則四點開始，嗰陣成檯唔嚟就要畀費。",
     "audio": "assets/audio/lines/r17-l8.mp3",
     "audioSlow": "assets/audio/lines/r17-l8-slow.mp3",
-    "say": "The cancellation rule starts at four, and the whole party can leave after that."
+    "say": "The cancellation rule starts at four, and dropping the party then pays a fee."
   },
   {
     "id": "w14-l1",
@@ -7544,7 +7544,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?",
-    "glossYue": "可唔可以帶三月實報實銷同成本差額，去星期一嘅採購審核？",
+    "glossYue": "可唔可以帶三月報銷同成本差額，去星期一嘅採購審核？",
     "audio": "assets/audio/lines/w15-l1.mp3",
     "audioSlow": "assets/audio/lines/w15-l1-slow.mp3",
     "say": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?"
@@ -7584,7 +7584,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "Please could the ledger name me as the owner without reading every reimbursement line aloud?",
-    "glossYue": "帳簿可唔可以寫我做負責人，唔使大聲讀每一行實報實銷？",
+    "glossYue": "帳簿可唔可以寫我做負責人，唔使大聲讀每一行報銷？",
     "audio": "assets/audio/lines/w15-l5.mp3",
     "audioSlow": "assets/audio/lines/w15-l5-slow.mp3",
     "say": "Please could the ledger name me as the owner without reading every reimbursement line aloud?"
@@ -7593,11 +7593,11 @@
     "id": "w15-l6",
     "speaker": "nina",
     "speakerLabel": "Nina",
-    "text": "The notes will name me as owner, and I will not read every line aloud.",
-    "glossYue": "筆記會寫我做負責人，我唔會大聲讀每一行。",
+    "text": "The notes will name you as owner, and I will not read every line aloud.",
+    "glossYue": "筆記會寫你做負責人，我唔會大聲讀每一行。",
     "audio": "assets/audio/lines/w15-l6.mp3",
     "audioSlow": "assets/audio/lines/w15-l6-slow.mp3",
-    "say": "The notes will name me as owner, and I will not read every line aloud."
+    "say": "The notes will name you as owner, and I will not read every line aloud."
   },
   {
     "id": "w15-l7",
@@ -7633,11 +7633,11 @@
     "id": "j24-l2",
     "speaker": "ida",
     "speakerLabel": "Ida",
-    "text": "I can check that hallmark on site, and the gold prong is included before noon.",
-    "glossYue": "我可以現場檢查嗰個印記，中午之前金爪托包咗。",
+    "text": "I can check that hallmark on site, and the prong check is free before noon.",
+    "glossYue": "我可以現場檢查嗰個印記，中午之前爪托檢查免費。",
     "audio": "assets/audio/lines/j24-l2.mp3",
     "audioSlow": "assets/audio/lines/j24-l2-slow.mp3",
-    "say": "I can check that hallmark on site, and the gold prong is included before noon."
+    "say": "I can check that hallmark on site, and the prong check is free before noon."
   },
   {
     "id": "j24-l3",
@@ -7713,21 +7713,21 @@
     "id": "t21-l2",
     "speaker": "kim",
     "speakerLabel": "Kim",
-    "text": "Your declaration is fine, and the layover belt is number three on the left side.",
-    "glossYue": "你張申報表冇問題，轉機停留嗰條帶係左邊三號。",
+    "text": "Your declaration is fine, and the baggage belt is number three on the left side.",
+    "glossYue": "你張申報表冇問題，行李轉盤係左邊三號。",
     "audio": "assets/audio/lines/t21-l2.mp3",
     "audioSlow": "assets/audio/lines/t21-l2-slow.mp3",
-    "say": "Your declaration is fine, and the layover belt is number three on the left side."
+    "say": "Your declaration is fine, and the baggage belt is number three on the left side."
   },
   {
     "id": "t21-l3",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "If the layover leaves at two, how early should I reach immigration with one bag?",
-    "glossYue": "如果轉機停留兩點走，我應該幾早帶住一個袋去入境處？",
+    "text": "If the flight leaves at two, how early should I reach immigration with one bag?",
+    "glossYue": "如果航班兩點走，我應該幾早帶住一個袋去入境處？",
     "audio": "assets/audio/lines/t21-l3.mp3",
     "audioSlow": "assets/audio/lines/t21-l3-slow.mp3",
-    "say": "If the layover leaves at two, how early should I reach immigration with one bag?"
+    "say": "If the flight leaves at two, how early should I reach immigration with one bag?"
   },
   {
     "id": "t21-l4",
@@ -7744,7 +7744,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "Where should I take this heavy bag if immigration sits past the carousel doors?",
-    "glossYue": "如果入境處喺傳送帶嗰度門後面，我應該將呢件重行李拿到邊？",
+    "glossYue": "如果入境處喺行李轉盤嗰度門後面，我應該將呢件重行李拿到邊？",
     "audio": "assets/audio/lines/t21-l5.mp3",
     "audioSlow": "assets/audio/lines/t21-l5-slow.mp3",
     "say": "Where should I take this heavy bag if immigration sits past the carousel doors?"
@@ -7754,7 +7754,7 @@
     "speaker": "kim",
     "speakerLabel": "Kim",
     "text": "Please take that heavy bag over to the carousel, and immigration sits past those doors.",
-    "glossYue": "請將嗰件重行李拿到傳送帶，入境處就喺嗰度門後面。",
+    "glossYue": "請將嗰件重行李拿到行李轉盤，入境處就喺嗰度門後面。",
     "audio": "assets/audio/lines/t21-l6.mp3",
     "audioSlow": "assets/audio/lines/t21-l6-slow.mp3",
     "say": "Please take that heavy bag over to the carousel, and immigration sits past those doors."
@@ -7764,7 +7764,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "Can I keep one small bag and check the big bag at the far carousel?",
-    "glossYue": "我可唔可以帶住一個細袋，大袋喺遠嘅傳送帶托運？",
+    "glossYue": "我可唔可以帶住一個細袋，大袋喺遠嘅行李轉盤托運？",
     "audio": "assets/audio/lines/t21-l7.mp3",
     "audioSlow": "assets/audio/lines/t21-l7-slow.mp3",
     "say": "Can I keep one small bag and check the big bag at the far carousel?"
@@ -7774,7 +7774,7 @@
     "speaker": "kim",
     "speakerLabel": "Kim",
     "text": "You can keep the small case and check the big one at that far carousel.",
-    "glossYue": "你可以帶住個細箱，大件喺遠嘅傳送帶托運。",
+    "glossYue": "你可以帶住個細箱，大件喺遠嘅行李轉盤托運。",
     "audio": "assets/audio/lines/t21-l8.mp3",
     "audioSlow": "assets/audio/lines/t21-l8-slow.mp3",
     "say": "You can keep the small case and check the big one at that far carousel."

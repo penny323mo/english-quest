@@ -35,11 +35,11 @@
       "id": "j24-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "I can check that hallmark on site, and the gold prong is included before noon.",
-      "glossYue": "我可以現場檢查嗰個印記，中午之前金爪托包咗。",
+      "text": "I can check that hallmark on site, and the prong check is free before noon.",
+      "glossYue": "我可以現場檢查嗰個印記，中午之前爪托檢查免費。",
       "audio": "assets/audio/lines/j24-l2.mp3",
       "audioSlow": "assets/audio/lines/j24-l2-slow.mp3",
-      "say": "I can check that hallmark on site, and the gold prong is included before noon.",
+      "say": "I can check that hallmark on site, and the prong check is free before noon.",
       "hideGloss": false
     },
     {
@@ -114,8 +114,8 @@
       "prompt": "Could you check the hallmark on this gold prong before we leave the shop at noon? 即係問緊咩？",
       "choices": [
         "問中午走之前可唔可以檢查金爪托嘅印記",
-        "問今日天氣點",
-        "問鎖匙放喺邊"
+        "話金已經退咗",
+        "問價錢包唔包運"
       ],
       "answer": 0,
       "explain": "走之前檢查金爪托上面嘅印記。"
@@ -125,7 +125,7 @@
       "choices": [
         "話已經退咗款",
         "問每個星期五戴，軟銠可唔可以保持金絲光亮",
-        "問房號幾多"
+        "問舖頭星期日開唔開"
       ],
       "answer": 1,
       "explain": "每星期五戴，問軟銠面可唔可以保金絲光亮。"
@@ -133,7 +133,7 @@
     {
       "prompt": "Is the filigree quote lower if I take that rhodium pair home this Friday night? 即係問緊咩？",
       "choices": [
-        "問鎖匙放喺邊",
+        "話印記唔使留",
         "話報價已經包括運費",
         "問星期五晚帶銠貨返去，金絲報價會唔會低啲"
       ],
@@ -216,7 +216,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "I can check that hallmark on site, and the gold prong is included before noon.",
+        "line": "I can check that hallmark on site, and the prong check is free before noon.",
         "audio": "assets/audio/lines/j24-l2.mp3",
         "audioSlow": "assets/audio/lines/j24-l2-slow.mp3",
         "expect": "Would a soft rhodium finish keep the filigree bright if I wear it each Friday?",
@@ -312,24 +312,24 @@
     }
   ],
   "sound": {
-    "ipa": "/ɪ/",
-    "title": "hallmark 入面嗰個音",
-    "note": "hallmark 同 prong 唔同。",
+    "ipa": "/l/",
+    "title": "hallmark 入面嗰個 /l/",
+    "note": "hallmark 有 /l/。light 開頭係 /l/，right 開頭係 /ɹ/。",
     "pairs": [
       {
-        "a": "hallmark-noun",
-        "b": "prong-noun"
+        "a": "light-adj",
+        "b": "right-adv"
       },
       {
-        "a": "rhodium-noun",
-        "b": "filigree-noun"
+        "a": "look-verb",
+        "b": "book-verb"
       }
     ],
     "drill": [
       "hallmark-noun",
-      "prong-noun",
-      "rhodium-noun",
-      "filigree-noun"
+      "light-adj",
+      "right-adv",
+      "look-verb"
     ]
   }
 }

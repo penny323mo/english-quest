@@ -46,22 +46,22 @@
       "id": "j23-l3",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Does this written valuation still stand if the deductible changed after the first shop visit?",
-      "glossYue": "如果第一次來舖之後免賠額改咗，呢份書面估值仲算唔算數？",
+      "text": "Does this written valuation still stand if the deductible changed after the first claim file?",
+      "glossYue": "如果第一次索償檔之後免賠額改咗，呢份書面估值仲算唔算數？",
       "audio": "assets/audio/lines/j23-l3.mp3",
       "audioSlow": "assets/audio/lines/j23-l3-slow.mp3",
-      "say": "Does this written valuation still stand if the deductible changed after the first shop visit?",
+      "say": "Does this written valuation still stand if the deductible changed after the first claim file?",
       "hideGloss": false
     },
     {
       "id": "j23-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The written valuation still stands, and the new deductible is noted after that first visit.",
-      "glossYue": "書面估值仍然有效，新免賠額已經記低喺第一次來舖之後。",
+      "text": "The written valuation still stands, and the new deductible is noted after that first file.",
+      "glossYue": "書面估值仍然有效，新免賠額已經記低喺第一次索償檔之後。",
       "audio": "assets/audio/lines/j23-l4.mp3",
       "audioSlow": "assets/audio/lines/j23-l4-slow.mp3",
-      "say": "The written valuation still stands, and the new deductible is noted after that first visit.",
+      "say": "The written valuation still stands, and the new deductible is noted after that first file.",
       "hideGloss": true
     },
     {
@@ -114,14 +114,14 @@
       "prompt": "Could you prepare a fresh valuation before the claimant sends the file to the office? 即係問緊咩？",
       "choices": [
         "問交檔之前可唔可以先做新估值",
-        "問今日天氣點",
-        "問鎖匙放喺邊"
+        "話檔案已經寄出",
+        "問舖頭幾點關門"
       ],
       "answer": 0,
       "explain": "索償人交檔之前，先做一份新估值。"
     },
     {
-      "prompt": "Does this written valuation still stand if the deductible changed after the first shop visit? 即係問緊咩？",
+      "prompt": "Does this written valuation still stand if the deductible changed after the first claim file? 即係問緊咩？",
       "choices": [
         "話已經退咗款",
         "問免賠額改咗之後估值仲算唔算數",
@@ -133,7 +133,7 @@
     {
       "prompt": "What is the fee if the underwriter asks for a second deductible on Monday morning? 即係問緊咩？",
       "choices": [
-        "問鎖匙放喺邊",
+        "話唔使交檔",
         "話相片唔收",
         "問星期一第二個免賠額收費幾多"
       ],
@@ -155,8 +155,8 @@
     },
     {
       "pattern": "Does this written valuation still stand if the ___ changed after the first shop visit?",
-      "example": "Does this written valuation still stand if the deductible changed after the first shop visit?",
-      "glossYue": "如果第一次來舖之後免賠額改咗，呢份書面估值仲算唔算數？",
+      "example": "Does this written valuation still stand if the deductible changed after the first claim file?",
+      "glossYue": "如果第一次索償檔之後免賠額改咗，呢份書面估值仲算唔算數？",
       "answer": "deductible",
       "choices": [
         "deductible",
@@ -186,7 +186,7 @@
       "promptYue": "你點講？",
       "choices": [
         "Could you prepare a fresh valuation before the claimant sends the file to the office?",
-        "Does this written valuation still stand if the deductible changed after the first shop visit?",
+        "Does this written valuation still stand if the deductible changed after the first claim file?",
         "Can the underwriter accept a clear photo if the claimant cannot bring the paper original?"
       ],
       "answer": 0,
@@ -219,7 +219,7 @@
         "line": "I can prepare that fresh valuation, and the claimant may send the file on Monday.",
         "audio": "assets/audio/lines/j23-l2.mp3",
         "audioSlow": "assets/audio/lines/j23-l2-slow.mp3",
-        "expect": "Does this written valuation still stand if the deductible changed after the first shop visit?",
+        "expect": "Does this written valuation still stand if the deductible changed after the first claim file?",
         "keywords": [
           "valuation",
           "deductible"
@@ -230,7 +230,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "The written valuation still stands, and the new deductible is noted after that first visit.",
+        "line": "The written valuation still stands, and the new deductible is noted after that first file.",
         "audio": "assets/audio/lines/j23-l4.mp3",
         "audioSlow": "assets/audio/lines/j23-l4-slow.mp3",
         "expect": "Can the underwriter accept a clear photo if the claimant cannot bring the paper original?",
@@ -292,7 +292,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Does this written valuation still stand if the deductible changed after the first shop visit? 呢句入面，邊個意思先啱？",
+      "prompt": "Does this written valuation still stand if the deductible changed after the first claim file? 呢句入面，邊個意思先啱？",
       "choices": [
         "窗",
         "鐘",
@@ -312,24 +312,24 @@
     }
   ],
   "sound": {
-    "ipa": "/ɪ/",
-    "title": "valuation 入面嗰個音",
-    "note": "valuation 同 deductible 唔同。",
+    "ipa": "/eɪ/",
+    "title": "valuation 入面嗰個 /eɪ/",
+    "note": "valuation 重音係 /eɪ/。may 係 /eɪ/，my 係 /aɪ/。",
     "pairs": [
       {
-        "a": "valuation-noun",
-        "b": "deductible-noun"
+        "a": "may-verb",
+        "b": "my-det"
       },
       {
-        "a": "claimant-noun",
-        "b": "underwriter-noun"
+        "a": "way-noun",
+        "b": "we-pron"
       }
     ],
     "drill": [
       "valuation-noun",
-      "deductible-noun",
-      "claimant-noun",
-      "underwriter-noun"
+      "may-verb",
+      "my-det",
+      "way-noun"
     ]
   }
 }
