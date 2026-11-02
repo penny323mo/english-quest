@@ -69,7 +69,7 @@
       "speaker": "ren",
       "speakerLabel": "Ren",
       "text": "Start with a sincere apology. Then explain the delay was at our warehouse.",
-      "glossYue": "先誠懇道歉。然後解釋延誤係出喺我哋倉庫。",
+      "glossYue": "先誠懇道歉。跟住解釋延誤係出喺我哋倉庫。",
       "audio": "assets/audio/lines/w10-l2.mp3",
       "audioSlow": "assets/audio/lines/w10-l2-slow.mp3",
       "say": "Start with a sincere apology. Then explain the delay was at our warehouse.",
@@ -135,7 +135,7 @@
       "speaker": "ren",
       "speakerLabel": "Ren",
       "text": "Say we'll call her tomorrow to follow up, and thank her for her patience.",
-      "glossYue": "話我哋聽日會打電話跟進，並且多謝佢耐心等候。",
+      "glossYue": "話我哋聽日會打電話跟進，同埋多謝佢耐心等候。",
       "audio": "assets/audio/lines/w10-l8.mp3",
       "audioSlow": "assets/audio/lines/w10-l8-slow.mp3",
       "say": "Say we'll call her tomorrow to follow up, and thank her for her patience.",
@@ -189,7 +189,7 @@
     {
       "pattern": "Start with a sincere ___. Then explain the delay was at our warehouse.",
       "example": "Start with a sincere apology. Then explain the delay was at our warehouse.",
-      "glossYue": "先誠懇道歉。然後解釋延誤係出喺我哋倉庫。",
+      "glossYue": "先誠懇道歉。跟住解釋延誤係出喺我哋倉庫。",
       "answer": "apology",
       "choices": [
         "apology",

@@ -27,3 +27,5 @@ jobs:
         run: node e2e/run.mjs
       - name: Service worker migration stays within two reloads
         run: node e2e/migrate.mjs
+      - name: Full A1 lesson in WebKit and Chromium
+        run: node e2e/full-lesson.mjs

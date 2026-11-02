@@ -106,11 +106,11 @@
       "id": "w2-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Best regards for now, and I look forward to the note once you confirm the deadline.",
-      "glossYue": "暫時祝好，你確認期限之後我期待你份筆記。",
+      "text": "Thanks for now, and I look forward to the note once you confirm the deadline.",
+      "glossYue": "暫時多謝，你確認期限之後我期待你份筆記。",
       "audio": "assets/audio/lines/w2-l8.mp3",
       "audioSlow": "assets/audio/lines/w2-l8-slow.mp3",
-      "say": "Best regards for now, and I look forward to the note once you confirm the deadline.",
+      "say": "Thanks for now, and I look forward to the note once you confirm the deadline.",
       "hideGloss": true
     }
   ],
@@ -181,12 +181,12 @@
       ]
     },
     {
-      "pattern": "___ regards for now, and I look forward to the note once you confirm the deadline.",
-      "example": "Best regards for now, and I look forward to the note once you confirm the deadline.",
-      "glossYue": "暫時⋯⋯。",
-      "answer": "Best",
+      "pattern": "___ for now, and I look forward to the note once you confirm the deadline.",
+      "example": "Thanks for now, and I look forward to the note once you confirm the deadline.",
+      "glossYue": "暫時多謝。",
+      "answer": "Thanks",
       "choices": [
-        "Best",
+        "Thanks",
         "Still",
         "Rough"
       ]

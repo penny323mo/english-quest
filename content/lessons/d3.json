@@ -3,8 +3,8 @@
   "unit": "D",
   "titleYue": "租樓",
   "titleEn": "Renting a flat",
-  "canDoYue": "你識問租金同按金，仲識講如果今日決定就簽租約。",
-  "canDoEn": "Ask about rent and the deposit, then say what happens if you decide today.",
+  "canDoYue": "你識喺睇樓時問月租同水電，如果今日決定就簽租約同付代理費，睇書面通知先交按金。",
+  "canDoEn": "On a viewing, ask about the rent and utilities, sign the lease and pay the agency fee if you decide today, and read the written notice before the deposit.",
   "minutes": 12,
   "hero": "assets/art/lessons/d3.webp",
   "cast": [
@@ -30,22 +30,22 @@
       "id": "d3-l1",
       "speaker": "lea",
       "speakerLabel": "Lea",
-      "text": "Good morning. I can show you this furnished flat upstairs.",
-      "glossYue": "早晨。我可以帶你睇樓上呢間有傢俬嘅單位。",
+      "text": "Good morning. I can show you this furnished flat on this viewing.",
+      "glossYue": "早晨。我可以帶你睇呢間有傢俬嘅單位，呢次睇樓。",
       "audio": "assets/audio/lines/d3-l1.mp3",
       "audioSlow": "assets/audio/lines/d3-l1-slow.mp3",
-      "say": "Good morning. I can show you this furnished flat upstairs.",
+      "say": "Good morning. I can show you this furnished flat on this viewing.",
       "hideGloss": false
     },
     {
       "id": "d3-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "How much is the rent, and is water included?",
-      "glossYue": "月租幾多，水費包唔包？",
+      "text": "How much is the rent here, please, and are the utilities included?",
+      "glossYue": "呢度月租幾多，唔該，水電包唔包？",
       "audio": "assets/audio/lines/d3-l2.mp3",
       "audioSlow": "assets/audio/lines/d3-l2-slow.mp3",
-      "say": "How much is the rent, and is water included?",
+      "say": "How much is the rent here, please, and are the utilities included?",
       "hideGloss": true
     },
     {
@@ -53,7 +53,7 @@
       "speaker": "lea",
       "speakerLabel": "Lea",
       "text": "The monthly rent is eighteen thousand dollars, and water is included.",
-      "glossYue": "月租租金係一萬八，水費包咗。",
+      "glossYue": "租金係一萬八千蚊，水費包咗。",
       "audio": "assets/audio/lines/d3-l3.mp3",
       "audioSlow": "assets/audio/lines/d3-l3-slow.mp3",
       "say": "The monthly rent is eighteen thousand dollars, and water is included.",
@@ -63,55 +63,55 @@
       "id": "d3-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Is the deposit one month with the utilities?",
-      "glossYue": "按金係咪一個月，連埋水電煤？",
+      "text": "If I decide today, is the deposit one month on this contract?",
+      "glossYue": "如果我今日決定，呢份合約嘅按金係咪一個月？",
       "audio": "assets/audio/lines/d3-l4.mp3",
       "audioSlow": "assets/audio/lines/d3-l4-slow.mp3",
-      "say": "Is the deposit one month with the utilities?",
+      "say": "If I decide today, is the deposit one month on this contract?",
       "hideGloss": true
     },
     {
       "id": "d3-l5",
       "speaker": "lea",
       "speakerLabel": "Lea",
-      "text": "The deposit is one month, and the rent stays fixed.",
-      "glossYue": "按金係一個月，月租維持不變。",
+      "text": "The deposit is one month, and the rent stays fixed if you sign.",
+      "glossYue": "按金係一個月，如果你簽租約，月租就維持不變。",
       "audio": "assets/audio/lines/d3-l5.mp3",
       "audioSlow": "assets/audio/lines/d3-l5-slow.mp3",
-      "say": "The deposit is one month, and the rent stays fixed.",
+      "say": "The deposit is one month, and the rent stays fixed if you sign.",
       "hideGloss": false
     },
     {
       "id": "d3-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will sign the lease and pay the agency fee.",
-      "glossYue": "我會簽租約，並付代理費。",
+      "text": "I will sign the lease and pay the agency fee this afternoon.",
+      "glossYue": "我下晝會簽租約，同埋付代理費。",
       "audio": "assets/audio/lines/d3-l6.mp3",
       "audioSlow": "assets/audio/lines/d3-l6-slow.mp3",
-      "say": "I will sign the lease and pay the agency fee.",
+      "say": "I will sign the lease and pay the agency fee this afternoon.",
       "hideGloss": true
     },
     {
       "id": "d3-l7",
       "speaker": "lea",
       "speakerLabel": "Lea",
-      "text": "Sign the lease, and the landlord gives the keys.",
-      "glossYue": "你簽租約，業主就交鎖匙。",
+      "text": "Sign the lease, and the landlord gives the keys to the tenant.",
+      "glossYue": "你簽租約，業主就交鎖匙畀租客。",
       "audio": "assets/audio/lines/d3-l7.mp3",
       "audioSlow": "assets/audio/lines/d3-l7-slow.mp3",
-      "say": "Sign the lease, and the landlord gives the keys.",
+      "say": "Sign the lease, and the landlord gives the keys to the tenant.",
       "hideGloss": true
     },
     {
       "id": "d3-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will read the written notice before I pay the deposit.",
-      "glossYue": "我交按金之前會睇份書面通知。",
+      "text": "I will read the written notice carefully before I pay the deposit.",
+      "glossYue": "我交按金之前會小心睇份書面通知。",
       "audio": "assets/audio/lines/d3-l8.mp3",
       "audioSlow": "assets/audio/lines/d3-l8-slow.mp3",
-      "say": "I will read the written notice before I pay the deposit.",
+      "say": "I will read the written notice carefully before I pay the deposit.",
       "hideGloss": true
     }
   ],
@@ -150,7 +150,7 @@
   "chunks": [
     {
       "pattern": "How much is the ___, and is water included with the utilities?",
-      "example": "How much is the rent, and is water included?",
+      "example": "How much is the rent here, please, and are the utilities included?",
       "glossYue": "月⋯⋯幾多。",
       "answer": "rent",
       "choices": [
@@ -183,7 +183,7 @@
     },
     {
       "pattern": "Please read the ___ and the notice before I pay the deposit.",
-      "example": "Sign the lease, and the landlord gives the keys.",
+      "example": "Sign the lease, and the landlord gives the keys to the tenant.",
       "glossYue": "睇份⋯⋯。",
       "answer": "contract",
       "choices": [
@@ -233,10 +233,10 @@
       {
         "partner": "Lea",
         "partnerId": "lea",
-        "line": "Good morning. I can show you this furnished flat upstairs.",
+        "line": "Good morning. I can show you this furnished flat on this viewing.",
         "audio": "assets/audio/lines/d3-l1.mp3",
         "audioSlow": "assets/audio/lines/d3-l1-slow.mp3",
-        "expect": "How much is the rent, and is water included?",
+        "expect": "How much is the rent here, please, and are the utilities included?",
         "keywords": [
           "rent",
           "utilities"
@@ -250,10 +250,10 @@
         "line": "The monthly rent is eighteen thousand dollars, and water is included.",
         "audio": "assets/audio/lines/d3-l3.mp3",
         "audioSlow": "assets/audio/lines/d3-l3-slow.mp3",
-        "expect": "The deposit is one month, and the rent stays fixed.",
+        "expect": "The deposit is one month, and the rent stays fixed if you sign.",
         "keywords": [
-          "decide",
-          "lease"
+          "deposit",
+          "sign"
         ],
         "modelAudio": "assets/audio/lines/d3-l5.mp3",
         "modelSlow": "assets/audio/lines/d3-l5-slow.mp3"
@@ -261,13 +261,13 @@
       {
         "partner": "Lea",
         "partnerId": "lea",
-        "line": "I will sign the lease and pay the agency fee.",
+        "line": "I will sign the lease and pay the agency fee this afternoon.",
         "audio": "assets/audio/lines/d3-l6.mp3",
         "audioSlow": "assets/audio/lines/d3-l6-slow.mp3",
-        "expect": "Sign the lease, and the landlord gives the keys.",
+        "expect": "Sign the lease, and the landlord gives the keys to the tenant.",
         "keywords": [
-          "contract",
-          "notice"
+          "lease",
+          "tenant"
         ],
         "modelAudio": "assets/audio/lines/d3-l7.mp3",
         "modelSlow": "assets/audio/lines/d3-l7-slow.mp3"
@@ -309,7 +309,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The deposit is one month, and the rent stays fixed.」呢句入面，邊個意思先啱？",
+      "prompt": "客人講「The deposit is one month, and the rent stays fixed if you sign.」呢句入面，邊個意思先啱？",
       "choices": [
         "按金",
         "收據",

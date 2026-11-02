@@ -3,8 +3,8 @@
   "unit": "R",
   "titleYue": "餐檯投訴",
   "titleEn": "A problem at the table",
-  "canDoYue": "你識客氣咁話菜凍、未煮熟、等太耐，並接受換菜同免費甜品。",
-  "canDoEn": "Say the dish is cold or undercooked, ask for a replacement, and accept a complimentary dessert.",
+  "canDoYue": "你識客氣咁話菜凍、未煮熟、等太耐，同埋換完碟之後要一份甜品。",
+  "canDoEn": "Say the dish is cold or undercooked, ask for a replacement, and ask them to bring a dessert.",
   "minutes": 12,
   "hero": "assets/art/lessons/r7.webp",
   "cast": [
@@ -43,7 +43,7 @@
       "speaker": "suki",
       "speakerLabel": "Suki",
       "text": "I understand the problem with the cold soup.",
-      "glossYue": "我明白凍湯嘅問題，我可以換一碗熱嘅。",
+      "glossYue": "我明白凍湯嘅問題。",
       "audio": "assets/audio/lines/r7-l2.mp3",
       "audioSlow": "assets/audio/lines/r7-l2-slow.mp3",
       "say": "I understand the problem with the cold soup.",
@@ -76,7 +76,7 @@
       "speaker": "ruth",
       "speakerLabel": "Ruth",
       "text": "Could you bring a dessert for us after you fix that plate?",
-      "glossYue": "換完之後，可唔可以畀我哋兩份免費甜品？",
+      "glossYue": "換完嗰碟之後，可唔可以帶一份甜品畀我哋？",
       "audio": "assets/audio/lines/r7-l5.mp3",
       "audioSlow": "assets/audio/lines/r7-l5-slow.mp3",
       "say": "Could you bring a dessert for us after you fix that plate?",
@@ -141,11 +141,11 @@
       "prompt": "Could you bring a dessert for us after you fix that plate? 即係問緊咩？",
       "choices": [
         "問湯幾多錢",
-        "問換完可唔可以有免費甜品",
+        "問換完可唔可以帶甜品",
         "問可唔可以換窗位"
       ],
       "answer": 1,
-      "explain": "complimentary 係免費送。"
+      "explain": "dessert 係甜品。bring 係帶嚟。"
     }
   ],
   "chunks": [
@@ -242,7 +242,7 @@
         "audioSlow": "assets/audio/lines/r7-l4-slow.mp3",
         "expect": "Could you bring a dessert for us after you fix that plate?",
         "keywords": [
-          "complimentary",
+          "plate",
           "dessert"
         ],
         "modelAudio": "assets/audio/lines/r7-l5.mp3",

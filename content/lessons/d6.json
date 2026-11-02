@@ -53,7 +53,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "The only extra symptom is a drug allergy.",
-      "glossYue": "另外就係藥物過敏，我係因為呢陣咳先入嚟搵你，Mei。",
+      "glossYue": "另外就係藥物過敏。",
       "audio": "assets/audio/lines/d6-l3.mp3",
       "audioSlow": "assets/audio/lines/d6-l3-slow.mp3",
       "say": "The only extra symptom is a drug allergy.",
@@ -75,7 +75,7 @@
       "speaker": "mei",
       "speakerLabel": "Mei",
       "text": "The dosage is one tablet twice a day.",
-      "glossYue": "劑量係一日兩粒。",
+      "glossYue": "劑量係每次一粒，一日兩次。",
       "audio": "assets/audio/lines/d6-l5.mp3",
       "audioSlow": "assets/audio/lines/d6-l5-slow.mp3",
       "say": "The dosage is one tablet twice a day.",
@@ -131,7 +131,7 @@
       "choices": [
         "一日一次，每次兩粒藥片",
         "飯後先食藥片，唔係一日兩次",
-        "一日兩次，每次一粒藥片，食五日"
+        "一日兩次，每次一粒藥片"
       ],
       "answer": 2,
       "explain": "dosage 係劑量。twice a day 係一日兩次。"
@@ -140,7 +140,7 @@
       "prompt": "The only extra symptom is a drug allergy. 呢句即係點？",
       "choices": [
         "藥劑師話我唔使處方",
-        "我有藥物過敏，所以先入藥房",
+        "另外就係藥物過敏",
         "我冇藥物過敏，只係咳嗽"
       ],
       "answer": 1,
@@ -290,7 +290,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「The only extra symptom is a drug allergy, and this bad cough is exactly why I walked in here.」，allergy 係咩意思？",
+      "prompt": "你講「The only extra symptom is a drug allergy.」，allergy 係咩意思？",
       "choices": [
         "過敏",
         "處方",

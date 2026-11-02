@@ -3,8 +3,8 @@
   "unit": "J",
   "titleYue": "珍珠保養同價錢",
   "titleEn": "Pearl care and pricing",
-  "canDoYue": "你識分淡水同鹹水珍珠，價錢大約兩千到六千，戴之前噴香水、之後抹乾，證書寫種類同大細。",
-  "canDoEn": "Compare freshwater and saltwater pearls, hear a range of two thousand to six thousand dollars, let Ida give the care line about perfume and wiping, and read pearl type and size on the certificate.",
+  "canDoYue": "你識分淡水同鹹水珍珠，價錢大約兩千到六千，先抹乾珍珠，再搽香水，證書寫種類同大細。",
+  "canDoEn": "Compare freshwater and saltwater pearls, hear a range of two thousand to six thousand dollars, wipe the pearl and then put perfume on, and read pearl type and size on the certificate.",
   "minutes": 12,
   "hero": "assets/art/lessons/j17.webp",
   "cast": [
@@ -68,7 +68,7 @@
       "speaker": "ida",
       "speakerLabel": "Ida",
       "text": "Saltwater pearls have a brighter lustre.",
-      "glossYue": "鹹水珍珠光澤更亮，所以貴啲。淡水珍珠軟啲，又平好多。",
+      "glossYue": "鹹水珍珠光澤更亮。",
       "audio": "assets/audio/lines/j17-l2.mp3",
       "audioSlow": "assets/audio/lines/j17-l2-slow.mp3",
       "say": "Saltwater pearls have a brighter lustre.",
@@ -79,7 +79,7 @@
       "speaker": "gus",
       "speakerLabel": "Gus",
       "text": "What's the usual price range roughly for these softer freshwater pearls on one short strand please?",
-      "glossYue": "呢串軟身淡水珍珠，大概價錢範圍係幾多？",
+      "glossYue": "呢一條短嘅軟身淡水珍珠，大概價錢範圍係幾多？",
       "audio": "assets/audio/lines/j17-l3.mp3",
       "audioSlow": "assets/audio/lines/j17-l3-slow.mp3",
       "say": "What's the usual price range roughly for these softer freshwater pearls on one short strand please?",
@@ -167,7 +167,7 @@
       "choices": [
         "戴完先噴香水",
         "證書寫價錢",
-        "戴之前噴香水，之後抹乾"
+        "先抹乾珍珠，再搽香水"
       ],
       "answer": 2,
       "explain": "perfume 係香水。wipe 係抹。"
@@ -197,9 +197,9 @@
       ]
     },
     {
-      "pattern": "Put ___ on before you wear it, and wipe the pearl with a soft dry cloth afterwards.",
+      "pattern": "Wipe the pearl, then put ___ on.",
       "example": "Wipe the pearl, then put perfume on.",
-      "glossYue": "戴之前噴香水。",
+      "glossYue": "先抹乾珍珠，再搽香水。",
       "answer": "perfume",
       "choices": [
         "perfume",
