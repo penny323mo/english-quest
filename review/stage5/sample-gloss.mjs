@@ -1,6 +1,7 @@
 import fs from "node:fs";
 
-const seed = 20261102;
+const seed = Number(process.argv[2] || 20261102);
+const outPath = process.argv[3] || "review/stage5/gloss-pairs30.md";
 
 function mulberry32(start) {
   let state = start;
@@ -48,5 +49,5 @@ const body = [
     "",
   ].join("\n")),
 ].join("\n");
-fs.writeFileSync("review/stage5/gloss-pairs30.md", body);
-console.log("wrote", picked.length);
+fs.writeFileSync(outPath, body);
+console.log("wrote", outPath, picked.length, "seed", seed);

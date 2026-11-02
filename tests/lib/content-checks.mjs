@@ -315,32 +315,91 @@ function measurePairs(english, yue) {
   return [...new Set(problems)];
 }
 
-function enClauses(text) {
-  const sentences = String(text).split(/[.!?]+/).map((part) => part.trim()).filter(Boolean);
-  let n = 0;
-  for (const sentence of sentences) {
-    const bits = sentence.split(/,?\s+\b(?:because|so that|but|and then|then|after|before|if|when)\b|,\s+and\s+(?:I|you|we|they|he|she|it)\b/i).map((part) => part.trim()).filter(Boolean);
-    n += Math.max(1, bits.length);
-  }
-  return n;
+function withoutQuotedDots(text) {
+  return String(text)
+    .replace(/"[^"]*"/g, (part) => part.replaceAll(".", " "))
+    .replace(/「[^」]*」/g, (part) => part.replaceAll(".", " "));
 }
 
-function yueClauses(text) {
-  const sentences = String(text).split(/[。！？；]+/).map((part) => part.trim()).filter(Boolean);
-  let n = 0;
-  for (const sentence of sentences) {
-    const bits = sentence.split(/[，,]\s*(?=然後|跟住|再|同埋|因為|所以|但係|如果|之後|之前|我|你|佢|請)/).map((part) => part.trim()).filter(Boolean);
-    n += Math.max(1, bits.length);
+function sentenceCount(text, enders) {
+  const parts = withoutQuotedDots(text).split(enders).map((part) => part.trim()).filter((part) => /[A-Za-z\p{Script=Han}]/u.test(part));
+  return Math.max(1, parts.length);
+}
+
+/** Sentence boundaries plus a coordinator (and / but / because / if, 因為 / 所以 / 如果 / ，想). */
+export function englishClauseCount(text) {
+  const body = withoutQuotedDots(text);
+  const sentences = sentenceCount(body, /[.!?]+/);
+  const links = body.match(/,\s+(?:and|but|or)\b|\b(?:because|if|when|so)\b/gi) || [];
+  return sentences + links.length;
+}
+
+export function cantoneseClauseCount(text) {
+  const body = String(text);
+  const sentences = sentenceCount(body, /[。！？]+/);
+  const links = body.match(/因為|所以|如果|但係|不過|同埋|[，,]再|[，,]想|[，,]我|[，,]你|[，,]佢/g) || [];
+  return sentences + links.length;
+}
+
+const GLOSS_OBJECTS = [
+  [/熱(?!得)/, /\bhot\b/i, "熱"],
+  [/醬汁/, /\bsauce\b/i, "醬汁"],
+  [/燈光/, /\blight\b/i, "燈光"],
+  [/成套/, /\bset\b/i, "成套"],
+  [/有景/, /\bview\b/i, "有景"],
+  [/大堂/, /\blobby\b/i, "大堂"],
+  [/舖頭/, /\b(shop|store)\b/i, "舖頭"],
+  [/聽日/, /\btomorrow\b/i, "聽日"],
+  [/今朝/, /\bmorning\b/i, "今朝"],
+  [/的士/, /\btaxi\b/i, "的士"],
+  [/存貨/, /\bstock\b/i, "存貨"],
+  [/期限/, /\bdeadline\b/i, "期限"],
+  [/手鏈|手鍊/, /\bbracelet\b/i, "手鏈"],
+];
+
+const ENGLISH_OBJECTS = [
+  [/\bhot\b/i, /熱/, "hot"],
+  [/\bsauce\b/i, /醬/, "sauce"],
+  [/\bin the shop\b/i, /舖|店/, "shop"],
+  [/\btaxi\b/i, /的士/, "taxi"],
+  [/\btomorrow\b/i, /聽日|聽朝/, "tomorrow"],
+  [/\bdeadline\b/i, /期限|截數/, "deadline"],
+  [/\bcollect\b/i, /取|攞/, "collect"],
+  [/\bstock\b/i, /存貨/, "stock"],
+  [/\bbracelet\b/i, /手鏈|手鍊|手鈪/, "bracelet"],
+];
+
+const VERB_PAIRS = [
+  [/\b(?:call|called|calling)\b/i, /打|叫|電話|通話/, "call"],
+  [/\battach/i, /附/, "attach"],
+  [/\bconfirm/i, /確認/, "confirm"],
+  [/\bcollect\b/i, /取|攞/, "collect"],
+];
+
+export function objectGaps(english, yue) {
+  const problems = [];
+  for (const [yueRe, enRe, label] of GLOSS_OBJECTS) {
+    if (yueRe.test(yue) && !enRe.test(english)) problems.push(`gloss adds ${label}`);
   }
-  return n;
+  for (const [enRe, yueRe, label] of ENGLISH_OBJECTS) {
+    if (enRe.test(english) && !yueRe.test(yue)) problems.push(`gloss drops ${label}`);
+  }
+  for (const [enRe, yueRe, label] of VERB_PAIRS) {
+    if (enRe.test(english) && !yueRe.test(yue)) problems.push(`gloss drops verb ${label}`);
+  }
+  return problems;
 }
 
 export function clauseMismatch(english, yue) {
-  const en = enClauses(english);
-  const zh = yueClauses(yue);
+  const enSentences = sentenceCount(english, /[.!?]+/);
+  const yueSentences = sentenceCount(yue, /[。！？]+/);
+  if (enSentences !== yueSentences) return `clause count ${enSentences}→${yueSentences}`;
+  const en = englishClauseCount(english);
+  const zh = cantoneseClauseCount(yue);
   if (en === zh) return "";
-  if (zh > en) return `gloss adds ${zh - en} clause (${en}→${zh})`;
-  return `gloss drops ${en - zh} clause (${en}→${zh})`;
+  const gaps = objectGaps(english, yue);
+  if (!gaps.length) return "";
+  return `clause count ${en}→${zh}; ${gaps.join(", ")}`;
 }
 
 export function extraItems(english, yue) {
@@ -361,9 +420,10 @@ export function mandarinMarks(text) {
     const prev = raw[i - 1] || "";
     if (!"一二兩三四五六七八九十幾呢嗰每成你我佢".includes(prev)) marks.push("把");
   }
-  for (const mark of ["並", "然後", "嗎", "我們", "你們", "他們", "這個", "那個", "什麼", "怎麼", "沒有", "不在"]) {
+  for (const mark of ["並", "然後", "嗎", "我們", "你們", "他們", "這個", "那個", "什麼", "怎麼", "沒有", "不在", "一則", "放進", "並且"]) {
     if (raw.includes(mark)) marks.push(mark);
   }
+  if (/寄.{0,6}短訊/.test(raw)) marks.push("寄…短訊");
   return marks;
 }
 
@@ -444,6 +504,9 @@ export function glossProblems(english, yue, exempt) {
   problems.push(...numberMismatches(english, yue).map((row) => `number: ${row}`));
   problems.push(...dosageProblems(english, yue).map((row) => `dose: ${row}`));
   problems.push(...extraItems(english, yue).map((row) => `item: ${row}`));
+  problems.push(...objectGaps(english, yue).map((row) => `object: ${row}`));
+  const clauses = clauseMismatch(english, yue);
+  if (clauses) problems.push(`clause: ${clauses}`);
   if (/然後|並且/.test(yue)) problems.push("clause: written sequencer");
   if (/因為/.test(yue) && !/\bbecause\b/i.test(english)) problems.push("clause: gloss adds because");
   if (/\bbecause\b/i.test(english) && !/因為|所以/.test(yue)) problems.push("clause: gloss drops because");

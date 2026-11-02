@@ -94,11 +94,11 @@
       "id": "r15-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Which hot dishes have shellfish, and may I have a clean plate?",
+      "text": "Which hot dishes have shellfish? May I have a clean plate?",
       "glossYue": "邊啲熱菜有貝殼類？可唔可以畀個乾淨碟我？",
       "audio": "assets/audio/lines/r15-l5.mp3",
       "audioSlow": "assets/audio/lines/r15-l5-slow.mp3",
-      "say": "Which hot dishes have shellfish, and may I have a clean plate?",
+      "say": "Which hot dishes have shellfish? May I have a clean plate?",
       "hideGloss": true
     },
     {
@@ -159,7 +159,7 @@
         "line": "Yes. Those soft drinks are included for every adult at the table.",
         "audio": "assets/audio/lines/r15-l4.mp3",
         "audioSlow": "assets/audio/lines/r15-l4-slow.mp3",
-        "expect": "Which hot dishes have shellfish, and may I have a clean plate?",
+        "expect": "Which hot dishes have shellfish? May I have a clean plate?",
         "keywords": [
           "shellfish",
           "plate"
@@ -257,7 +257,7 @@
       "choices": [
         "Is this buffet all you can eat, and is takeaway banned?",
         "Are soft drinks included, or do I pay for each one?",
-        "Which hot dishes have shellfish, and may I have a clean plate?"
+        "Which hot dishes have shellfish? May I have a clean plate?"
       ],
       "answer": 1,
       "explain": "用呢句。"
@@ -328,7 +328,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Which hot dishes have shellfish, and may I have a clean plate? 呢句入面，邊個意思先啱？",
+      "prompt": "Which hot dishes have shellfish? May I have a clean plate? 呢句入面，邊個意思先啱？",
       "choices": [
         "貝殼",
         "自助餐",
@@ -338,7 +338,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Which hot dishes have shellfish, and may I have a clean ___? 呢句入面，邊個字先啱？",
+      "prompt": "Which hot dishes have shellfish? May I have a clean ___? 呢句入面，邊個字先啱？",
       "choices": [
         "buffet",
         "plate",

@@ -48,11 +48,11 @@
       "id": "w7-l3",
       "speaker": "ines",
       "speakerLabel": "Ines",
-      "text": "Yes, I can bring the doctor's note the clinic wrote for me.",
+      "text": "Yes, I can bring the doctor's note the clinic wrote for me this morning.",
       "glossYue": "可以，我可以帶診所今朝開嘅醫生紙。",
       "audio": "assets/audio/lines/w7-l3.mp3",
       "audioSlow": "assets/audio/lines/w7-l3-slow.mp3",
-      "say": "Yes, I can bring the doctor's note the clinic wrote for me.",
+      "say": "Yes, I can bring the doctor's note the clinic wrote for me this morning.",
       "hideGloss": false
     },
     {
@@ -70,11 +70,11 @@
       "id": "w7-l5",
       "speaker": "ines",
       "speakerLabel": "Ines",
-      "text": "Mei can cover my shift at the shop while I stay home.",
+      "text": "Mei can cover my shift at the shop this morning while I stay home.",
       "glossYue": "今朝 Mei 可以喺舖頭頂我更，我留喺屋企。",
       "audio": "assets/audio/lines/w7-l5.mp3",
       "audioSlow": "assets/audio/lines/w7-l5-slow.mp3",
-      "say": "Mei can cover my shift at the shop while I stay home.",
+      "say": "Mei can cover my shift at the shop this morning while I stay home.",
       "hideGloss": true
     },
     {
@@ -123,7 +123,7 @@
       "explain": "not feeling well 係唔舒服。"
     },
     {
-      "prompt": "Yes, I can bring the doctor's note the clinic wrote for me. 呢句即係點？",
+      "prompt": "Yes, I can bring the doctor's note the clinic wrote for me this morning. 呢句即係點？",
       "choices": [
         "今朝已經帶咗醫生紙",
         "星期一先交醫生紙",
@@ -133,7 +133,7 @@
       "explain": "doctor's note 係醫生紙。"
     },
     {
-      "prompt": "Mei can cover my shift at the shop while I stay home. 呢句即係點？",
+      "prompt": "Mei can cover my shift at the shop this morning while I stay home. 呢句即係點？",
       "choices": [
         "星期一先有人頂更",
         "Mei 今朝可以頂我更",
@@ -157,7 +157,7 @@
     },
     {
       "pattern": "Yes, I can bring the ___ that the clinic wrote for me this morning.",
-      "example": "Yes, I can bring the doctor's note the clinic wrote for me.",
+      "example": "Yes, I can bring the doctor's note the clinic wrote for me this morning.",
       "glossYue": "我可以帶醫生紙。",
       "answer": "doctor's note",
       "choices": [
@@ -168,7 +168,7 @@
     },
     {
       "pattern": "Mei can ___ at the shop this morning while I stay home.",
-      "example": "Mei can cover my shift at the shop while I stay home.",
+      "example": "Mei can cover my shift at the shop this morning while I stay home.",
       "glossYue": "Mei 可以頂我更。",
       "answer": "cover my shift",
       "choices": [
@@ -180,7 +180,7 @@
   ],
   "shadow": {
     "lineId": "w7-l5",
-    "hint": "Mei can cover my shift at the shop while I stay home."
+    "hint": "Mei can cover my shift at the shop this morning while I stay home."
   },
   "build": [
     {
@@ -223,7 +223,7 @@
         "line": "I'm sorry. Could you bring a doctor's note when you come back?",
         "audio": "assets/audio/lines/w7-l2.mp3",
         "audioSlow": "assets/audio/lines/w7-l2-slow.mp3",
-        "expect": "Yes, I can bring the doctor's note the clinic wrote for me.",
+        "expect": "Yes, I can bring the doctor's note the clinic wrote for me this morning.",
         "keywords": [
           "doctor",
           "note"
@@ -237,7 +237,7 @@
         "line": "Who can cover your shift this morning?",
         "audio": "assets/audio/lines/w7-l4.mp3",
         "audioSlow": "assets/audio/lines/w7-l4-slow.mp3",
-        "expect": "Mei can cover my shift at the shop while I stay home.",
+        "expect": "Mei can cover my shift at the shop this morning while I stay home.",
         "keywords": [
           "Mei",
           "shift"
@@ -296,7 +296,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「Mei can cover my shift at the shop while I stay home.」，cover my shift 係咩意思？",
+      "prompt": "你講「Mei can cover my shift at the shop this morning while I stay home.」，cover my shift 係咩意思？",
       "choices": [
         "星期一",
         "唔舒服",

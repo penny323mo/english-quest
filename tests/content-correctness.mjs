@@ -4,6 +4,9 @@ import path from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import {
+  cantoneseClauseCount,
+  clauseMismatch,
+  englishClauseCount,
   glossProblems,
   lessonGlossFailures,
   mandarinMarks,
@@ -64,4 +67,20 @@ test("the gloss and key checks fail on the stage 4 bugs", () => {
   assert.ok(keys.some((row) => row.includes("order")), keys.join("; "));
   const dosage = glossProblems("The dosage is one tablet twice a day.", "劑量係一日兩粒。", false);
   assert.ok(dosage.some((row) => row.includes("tablet") || row.includes("times")), dosage.join("; "));
+  const truncated = glossProblems(
+    "I have called to ask about stock.",
+    "我打嚟問存貨，你確認之後我聽日嚟取條手鏈。",
+    false,
+  );
+  assert.equal(englishClauseCount("I have called to ask about stock."), 1);
+  assert.equal(cantoneseClauseCount("我打嚟問存貨，你確認之後我聽日嚟取條手鏈。"), 2);
+  assert.ok(truncated.some((row) => row.includes("clause")), truncated.join("; "));
+  assert.ok(truncated.some((row) => row.includes("聽日") || row.includes("手鏈")), truncated.join("; "));
+  const written = mandarinMarks("我會留住個訂位到八點，再寄一則短訊。請將液體放進托盤。");
+  assert.ok(written.includes("一則") && written.includes("放進") && written.includes("寄…短訊"), written.join(","));
+  const restored = clauseMismatch(
+    "I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm.",
+    "我打嚟問存貨，你確認之後我聽日嚟取條手鏈。",
+  );
+  assert.equal(restored, "");
 });

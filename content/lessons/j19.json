@@ -73,11 +73,11 @@
       "id": "j19-l3",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "What about the carat, and the number on the girdle?",
+      "text": "What about the carat? And the number on the girdle?",
       "glossYue": "克拉點計？腰上嗰個號碼呢？",
       "audio": "assets/audio/lines/j19-l3.mp3",
       "audioSlow": "assets/audio/lines/j19-l3-slow.mp3",
-      "say": "What about the carat, and the number on the girdle?",
+      "say": "What about the carat? And the number on the girdle?",
       "hideGloss": false
     },
     {
@@ -146,7 +146,7 @@
         "line": "Sure. The cut, colour, and clarity are all very good.",
         "audio": "assets/audio/lines/j19-l2.mp3",
         "audioSlow": "assets/audio/lines/j19-l2-slow.mp3",
-        "expect": "What about the carat, and the number on the girdle?",
+        "expect": "What about the carat? And the number on the girdle?",
         "keywords": [
           "what",
           "carat"
@@ -257,7 +257,7 @@
       "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
         "Can you explain this diamond certificate in plain words, please?",
-        "What about the carat, and the number on the girdle?",
+        "What about the carat? And the number on the girdle?",
         "Why is this stone more expensive than the other one?"
       ],
       "answer": 1,

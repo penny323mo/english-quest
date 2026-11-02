@@ -30,7 +30,7 @@
       "speaker": "wen",
       "speakerLabel": "Wen",
       "text": "Good morning. What brings you in to the clinic today, and how do you feel?",
-      "glossYue": "早晨。今日咩事嚟診所？你覺得點？",
+      "glossYue": "早晨。今日咩事嚟診所，你覺得點？",
       "audio": "assets/audio/lines/d1-l1.mp3",
       "audioSlow": "assets/audio/lines/d1-l1-slow.mp3",
       "say": "Good morning. What brings you in to the clinic today, and how do you feel?",
@@ -51,11 +51,11 @@
       "id": "d1-l3",
       "speaker": "wen",
       "speakerLabel": "Wen",
-      "text": "Do you have a headache too, and are you allergic to any medicine we use?",
+      "text": "Do you have a headache too? Are you allergic to any medicine we use?",
       "glossYue": "你有冇頭痛？你對我哋用嘅藥有冇過敏？",
       "audio": "assets/audio/lines/d1-l3.mp3",
       "audioSlow": "assets/audio/lines/d1-l3-slow.mp3",
-      "say": "Do you have a headache too, and are you allergic to any medicine we use?",
+      "say": "Do you have a headache too? Are you allergic to any medicine we use?",
       "hideGloss": true
     },
     {
@@ -248,7 +248,7 @@
       {
         "partner": "Wen",
         "partnerId": "wen",
-        "line": "Do you have a headache too, and are you allergic to any medicine we use?",
+        "line": "Do you have a headache too? Are you allergic to any medicine we use?",
         "audio": "assets/audio/lines/d1-l3.mp3",
         "audioSlow": "assets/audio/lines/d1-l3-slow.mp3",
         "expect": "I have had a headache since Monday.",

@@ -77,11 +77,11 @@
       "id": "w6-l5",
       "speaker": "hugh",
       "speakerLabel": "Hugh",
-      "text": "That story sounds reliable. How did teamwork help you in the shop on that busy morning?",
-      "glossYue": "呢個故事好可靠。嗰朝早團隊合作點幫到你？",
+      "text": "That sounds reliable. How did teamwork help you in the shop on that busy morning?",
+      "glossYue": "呢個聽落好可靠。嗰朝喺舖頭，團隊合作點幫到你？",
       "audio": "assets/audio/lines/w6-l5.mp3",
       "audioSlow": "assets/audio/lines/w6-l5-slow.mp3",
-      "say": "That story sounds reliable. How did teamwork help you in the shop on that busy morning?",
+      "say": "That sounds reliable. How did teamwork help you in the shop on that busy morning?",
       "hideGloss": false
     },
     {
@@ -89,7 +89,7 @@
       "speaker": "zuri",
       "speakerLabel": "Zuri",
       "text": "Real teamwork helped me stay on that busy morning.",
-      "glossYue": "嗰朝真係靠團隊，我先至頂得住。",
+      "glossYue": "嗰朝真係靠團隊我先至頂得住。",
       "audio": "assets/audio/lines/w6-l6.mp3",
       "audioSlow": "assets/audio/lines/w6-l6-slow.mp3",
       "say": "Real teamwork helped me stay on that busy morning.",
@@ -140,7 +140,7 @@
       "explain": "handled 係處理咗，cleared 係清走。"
     },
     {
-      "prompt": "That story sounds reliable. How did teamwork help you in the shop on that busy morning? 即係問緊咩？",
+      "prompt": "That sounds reliable. How did teamwork help you in the shop on that busy morning? 即係問緊咩？",
       "choices": [
         "問面試幾時開始",
         "問團隊合作點幫到你",
@@ -253,7 +253,7 @@
       {
         "partner": "Hugh",
         "partnerId": "hugh",
-        "line": "That story sounds reliable. How did teamwork help you in the shop on that busy morning?",
+        "line": "That sounds reliable. How did teamwork help you in the shop on that busy morning?",
         "audio": "assets/audio/lines/w6-l5.mp3",
         "audioSlow": "assets/audio/lines/w6-l5-slow.mp3",
         "expect": "Real teamwork helped me stay on that busy morning.",

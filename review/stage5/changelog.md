@@ -28,3 +28,17 @@ Fourteen clips whose `say` changed were re-rendered with Piper `en_US-ljspeech-m
 - Every listen key is the lemma, every order key is a phrase in the lesson, and every understand or translation key that quotes a line cannot reverse that line or add a number or item.
 
 A fixture of the old dessert gloss, the Mandarin security line, the reversed pearl key, and “一日兩粒” for one tablet twice a day fails those checks.
+
+## Clause pass
+
+Stage 3 had shortened some English lines and left the old clause in the gloss. This pass put the clause back into the English when the cap allowed it, and trimmed the gloss when the extra clause belonged to another turn.
+
+- J12-l5 again says the caller will collect the bracelet tomorrow after a confirmation.
+- W2-l3 again asks to clarify the deadline.
+- R8 names the hot delivery. W6-l5 says “That sounds reliable” and the gloss keeps the shop.
+- R6-l8 is 發個短訊. T2-l3 is 放入.
+- Sentence counts match on all 97 lessons. The check also compares call / attach / confirm / collect and the objects hot, shop, taxi, tomorrow, deadline, stock, and bracelet. 寄…短訊, 一則, and 放進 fail the written-form check.
+
+W2 uses contractions on four neighbouring lines so the restored deadline sentence still sits inside the two-and-a-half-word window. W10 asks “How much store credit should we offer her?” so the B1/B2 band stays above B1.
+
+Twenty-one clips whose `say` changed were re-rendered with Piper. `review/stage5/clause-mismatch.md` lists the before and after. `review/stage5/gloss-pairs30-v2.md` is a new 30-line sample, seed 20261103.

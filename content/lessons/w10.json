@@ -91,7 +91,7 @@
       "speaker": "ren",
       "speakerLabel": "Ren",
       "text": "No, offer a partial refund of twenty percent, or store credit if she prefers.",
-      "glossYue": "唔好。畀兩成部分退款，或者如果佢想要，就畀店內購物金。",
+      "glossYue": "唔好，畀兩成部分退款，或者如果佢想要，就畀店內購物金。",
       "audio": "assets/audio/lines/w10-l4.mp3",
       "audioSlow": "assets/audio/lines/w10-l4-slow.mp3",
       "say": "No, offer a partial refund of twenty percent, or store credit if she prefers.",
@@ -101,11 +101,11 @@
       "id": "w10-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Store credit of how much?",
-      "glossYue": "購物金幾多？",
+      "text": "How much store credit should we offer her?",
+      "glossYue": "應該畀佢幾多購物金？",
       "audio": "assets/audio/lines/w10-l5.mp3",
       "audioSlow": "assets/audio/lines/w10-l5-slow.mp3",
-      "say": "Store credit of how much?",
+      "say": "How much store credit should we offer her?",
       "hideGloss": false
     },
     {
@@ -216,7 +216,7 @@
       "choices": [
         "The customer is angry because her order arrived a week late. How should I start the reply?",
         "Should we offer her a full refund?",
-        "Store credit of how much?"
+        "How much store credit should we offer her?"
       ],
       "answer": 1,
       "explain": "用呢句。"
@@ -258,7 +258,7 @@
         "line": "No, offer a partial refund of twenty percent, or store credit if she prefers.",
         "audio": "assets/audio/lines/w10-l4.mp3",
         "audioSlow": "assets/audio/lines/w10-l4-slow.mp3",
-        "expect": "Store credit of how much?",
+        "expect": "How much store credit should we offer her?",
         "keywords": [
           "store",
           "credit"
