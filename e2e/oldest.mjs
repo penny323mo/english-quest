@@ -333,6 +333,9 @@ async function migrate(browserType, workbox) {
   const fetched = swFetches.some((item) => item.endsWith("/sw.js"));
   console.log(`assert ${browserType.name()} ${workbox} update fetched sw.js despite max-age=600: ${fetched ? "pass" : "FAIL"}`);
   if (!fetched) throw new Error("service worker update did not fetch sw.js");
+  // eq-ready is set on the cream splash, before IndexedDB hydrate and the
+  // lazy shell chunk paint the seeded profile. Reading .phone here races that.
+  await page.getByRole("heading", { name: "學習路徑" }).waitFor();
   const home = await page.locator(".phone").innerText();
   for (const bit of ["Penny", "0 XP", "學習路徑", "路徑"]) {
     if (!home.includes(bit)) throw new Error(`${browserType.name()} home missing ${bit}`);
