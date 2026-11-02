@@ -100,22 +100,22 @@
       "id": "j17-l5",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "I'll take this shorter one. How should I look after the pearl strand back at home?",
-      "glossYue": "我要呢條短啲嘅。返到屋企點樣照顧呢串珍珠？",
+      "text": "I'll take this shorter strand. How should I look after the pearls at home?",
+      "glossYue": "我要呢條短啲。返到屋企點照顧呢啲珍珠？",
       "audio": "assets/audio/lines/j17-l5.mp3",
       "audioSlow": "assets/audio/lines/j17-l5-slow.mp3",
-      "say": "I'll take this shorter one. How should I look after the pearl strand back at home?",
+      "say": "I'll take this shorter strand. How should I look after the pearls at home?",
       "hideGloss": false
     },
     {
       "id": "j17-l6",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Wipe the pearl, then put perfume on.",
-      "glossYue": "先抹乾珍珠，再搽香水。",
+      "text": "Put perfume on first, then wipe the pearls after you wear them.",
+      "glossYue": "先搽香水，戴完再抹珍珠。",
       "audio": "assets/audio/lines/j17-l6.mp3",
       "audioSlow": "assets/audio/lines/j17-l6-slow.mp3",
-      "say": "Wipe the pearl, then put perfume on.",
+      "say": "Put perfume on first, then wipe the pearls after you wear them.",
       "hideGloss": false
     },
     {
@@ -163,14 +163,14 @@
       "explain": "price 係價錢。lustre 係光澤。"
     },
     {
-      "prompt": "Wipe the pearl, then put perfume on. 呢句即係點？",
+      "prompt": "Put perfume on first, then wipe the pearls after you wear them. 呢句即係點？",
       "choices": [
         "戴完先噴香水",
         "證書寫價錢",
-        "先抹乾珍珠，再搽香水"
+        "先搽香水，戴完再抹珍珠"
       ],
       "answer": 2,
-      "explain": "perfume 係香水。wipe 係抹。"
+      "explain": "香水要先搽。珍珠戴完先抹。"
     }
   ],
   "chunks": [
@@ -198,7 +198,7 @@
     },
     {
       "pattern": "Wipe the pearl, then put ___ on.",
-      "example": "Wipe the pearl, then put perfume on.",
+      "example": "Put perfume on first, then wipe the pearls after you wear them.",
       "glossYue": "先抹乾珍珠，再搽香水。",
       "answer": "perfume",
       "choices": [
@@ -215,7 +215,7 @@
       "choices": [
         "I'm looking for a short pearl necklace. What's the real difference between freshwater and saltwater pearls?",
         "What's the usual price for this short strand of freshwater pearls?",
-        "I'll take this shorter one. How should I look after the pearl strand back at home?"
+        "I'll take this shorter strand. How should I look after the pearls at home?"
       ],
       "answer": 0,
       "explain": "講 pearl。"
@@ -257,7 +257,7 @@
         "line": "From two thousand to six thousand dollars, depending on the size and lustre of each freshwater pearl.",
         "audio": "assets/audio/lines/j17-l4.mp3",
         "audioSlow": "assets/audio/lines/j17-l4-slow.mp3",
-        "expect": "I'll take this shorter one. How should I look after the pearl strand back at home?",
+        "expect": "I'll take this shorter strand. How should I look after the pearls at home?",
         "keywords": [
           "pearl"
         ],
@@ -267,7 +267,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "Wipe the pearl, then put perfume on.",
+        "line": "Put perfume on first, then wipe the pearls after you wear them.",
         "audio": "assets/audio/lines/j17-l6.mp3",
         "audioSlow": "assets/audio/lines/j17-l6-slow.mp3",
         "expect": "Does this shorter strand come with a certificate in the box?",

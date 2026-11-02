@@ -65,7 +65,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "May I see these earrings, and the matching necklace too?",
-      "glossYue": "可唔可以睇吓呢對耳環，同埋條頸鏈？",
+      "glossYue": "可唔可以睇吓呢對耳環，同埋條襯嘅頸鏈？",
       "audio": "assets/audio/lines/j3-l4.mp3",
       "audioSlow": "assets/audio/lines/j3-l4-slow.mp3",
       "say": "May I see these earrings, and the matching necklace too?",
@@ -75,11 +75,11 @@
       "id": "j3-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Of course. This pair is beautiful, and I can show it.",
-      "glossYue": "當然。呢對好靚，我可以畀你睇。",
+      "text": "Of course. This pair is beautiful. I'll show it to you.",
+      "glossYue": "當然。呢對好靚。我畀你睇。",
       "audio": "assets/audio/lines/j3-l5.mp3",
       "audioSlow": "assets/audio/lines/j3-l5-slow.mp3",
-      "say": "Of course. This pair is beautiful, and I can show it.",
+      "say": "Of course. This pair is beautiful. I'll show it to you.",
       "hideGloss": true
     }
   ],
@@ -276,7 +276,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Of course. This pair is beautiful, and I can show it.」，係咩意思？",
+      "prompt": "客人講「Of course. This pair is beautiful. I'll show it to you.」，係咩意思？",
       "choices": [
         "一隻戒指",
         "靠窗位",

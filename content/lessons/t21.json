@@ -3,8 +3,8 @@
   "unit": "T",
   "titleYue": "申報表同入境處",
   "titleEn": "A declaration, layover, and immigration",
-  "canDoYue": "你識喺轉機前睇申報表、問幾早去入境處，同大袋喺邊個行李轉盤托運。",
-  "canDoEn": "Ask about a declaration, a layover, immigration, and the carousel.",
+  "canDoYue": "你識喺轉機前睇申報表、問幾早去入境處，同落地之後喺行李轉盤攞大袋。",
+  "canDoEn": "Ask about a declaration and a layover, check a bag before immigration, and collect it at the carousel.",
   "minutes": 12,
   "hero": "assets/art/lessons/t21.webp",
   "cast": [
@@ -68,44 +68,44 @@
       "id": "t21-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "If immigration is past those doors, where do I take this heavy bag?",
-      "glossYue": "如果入境處喺嗰啲門後面，我應該將呢件重行李拿到邊？",
+      "text": "Can I take this small bag on board and check the big one?",
+      "glossYue": "我可唔可以帶呢個細袋上機，大袋托運？",
       "audio": "assets/audio/lines/t21-l5.mp3",
       "audioSlow": "assets/audio/lines/t21-l5-slow.mp3",
-      "say": "If immigration is past those doors, where do I take this heavy bag?",
+      "say": "Can I take this small bag on board and check the big one?",
       "hideGloss": true
     },
     {
       "id": "t21-l6",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Immigration is just through those doors.",
-      "glossYue": "入境處就喺嗰啲門後面。",
+      "text": "Sure. You'll collect it at the baggage carousel when you land.",
+      "glossYue": "可以。你落地之後喺行李轉盤攞。",
       "audio": "assets/audio/lines/t21-l6.mp3",
       "audioSlow": "assets/audio/lines/t21-l6-slow.mp3",
-      "say": "Immigration is just through those doors.",
+      "say": "Sure. You'll collect it at the baggage carousel when you land.",
       "hideGloss": true
     },
     {
       "id": "t21-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can I keep one small bag and check the big bag at the counter?",
-      "glossYue": "我可唔可以帶住一個細袋，大袋喺櫃檯托運？",
+      "text": "After I check the big one, is immigration through those doors?",
+      "glossYue": "我托運完大袋之後，入境處係咪喺嗰啲門後面？",
       "audio": "assets/audio/lines/t21-l7.mp3",
       "audioSlow": "assets/audio/lines/t21-l7-slow.mp3",
-      "say": "Can I keep one small bag and check the big bag at the counter?",
+      "say": "After I check the big one, is immigration through those doors?",
       "hideGloss": true
     },
     {
       "id": "t21-l8",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "You can keep the small case and collect the big one at that far carousel.",
-      "glossYue": "你可以帶住個細箱，大件喺遠嘅行李轉盤攞。",
+      "text": "Yes. Immigration is just through those doors, once the bag is checked.",
+      "glossYue": "係。袋托運完，入境處就喺嗰啲門後面。",
       "audio": "assets/audio/lines/t21-l8.mp3",
       "audioSlow": "assets/audio/lines/t21-l8-slow.mp3",
-      "say": "You can keep the small case and collect the big one at that far carousel.",
+      "say": "Yes. Immigration is just through those doors, once the bag is checked.",
       "hideGloss": true
     }
   ],
@@ -131,14 +131,14 @@
       "explain": "轉機兩點走，問要幾早去入境處。"
     },
     {
-      "prompt": "Can I keep one small bag and check the big bag at the counter? 即係問緊咩？",
+      "prompt": "Can I take this small bag on board and check the big one? 即係問緊咩？",
       "choices": [
-        "話兩個袋都要上機",
-        "話兩個袋都要托運",
-        "問可唔可以留細袋，大袋喺遠行李轉盤托運"
+        "話細袋同大袋都上機",
+        "話細袋同大袋都托運",
+        "問細袋可唔可以上機，大袋托運"
       ],
       "answer": 2,
-      "explain": "細袋隨身，大袋喺遠嘅行李轉盤托運。"
+      "explain": "細袋上機，大袋托運，落地先喺行李轉盤攞。"
     }
   ],
   "chunks": [
@@ -187,7 +187,7 @@
       "choices": [
         "Could you check my declaration before the layover, and tell me which belt?",
         "If the flight leaves at two, how early should I reach immigration with one bag?",
-        "If immigration is past those doors, where do I take this heavy bag?"
+        "Can I take this small bag on board and check the big one?"
       ],
       "answer": 0,
       "explain": "用返課入面第一句。"
@@ -233,10 +233,10 @@
         "line": "Please reach immigration by one o'clock, because your layover at two needs extra time.",
         "audio": "assets/audio/lines/t21-l4.mp3",
         "audioSlow": "assets/audio/lines/t21-l4-slow.mp3",
-        "expect": "If immigration is past those doors, where do I take this heavy bag?",
+        "expect": "Can I take this small bag on board and check the big one?",
         "keywords": [
-          "immigration",
-          "carousel"
+          "bag",
+          "check"
         ],
         "modelAudio": "assets/audio/lines/t21-l5.mp3",
         "modelSlow": "assets/audio/lines/t21-l5-slow.mp3"
@@ -244,13 +244,13 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Immigration is just through those doors.",
+        "line": "Sure. You'll collect it at the baggage carousel when you land.",
         "audio": "assets/audio/lines/t21-l6.mp3",
         "audioSlow": "assets/audio/lines/t21-l6-slow.mp3",
-        "expect": "Can I keep one small bag and check the big bag at the counter?",
+        "expect": "After I check the big one, is immigration through those doors?",
         "keywords": [
-          "carousel",
-          "bag"
+          "immigration",
+          "doors"
         ],
         "modelAudio": "assets/audio/lines/t21-l7.mp3",
         "modelSlow": "assets/audio/lines/t21-l7-slow.mp3"
@@ -292,11 +292,11 @@
     },
     {
       "type": "meaning",
-      "prompt": "Can I keep one small bag and check the big bag at the counter? 呢句入面，邊個意思先啱？",
+      "prompt": "Can I take this small bag on board and check the big one? 呢句入面，邊個意思先啱？",
       "choices": [
         "手鏈",
         "發票",
-        "櫃檯"
+        "托運"
       ],
       "answer": 2
     },

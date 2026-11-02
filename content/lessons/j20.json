@@ -51,11 +51,11 @@
       "id": "j20-l1",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Hi. What is your gold price per gram for one bangle?",
+      "text": "Hi. What's your gold price per gram for this bangle?",
       "glossYue": "你好。呢隻手鐲一克金係幾多錢？",
       "audio": "assets/audio/lines/j20-l1.mp3",
       "audioSlow": "assets/audio/lines/j20-l1-slow.mp3",
-      "say": "Hi. What is your gold price per gram for one bangle?",
+      "say": "Hi. What's your gold price per gram for this bangle?",
       "hideGloss": false
     },
     {
@@ -186,7 +186,7 @@
   },
   "understand": [
     {
-      "prompt": "Hi. What is your gold price per gram for one bangle? 呢句即係點？",
+      "prompt": "Hi. What's your gold price per gram for this bangle? 呢句即係點？",
       "choices": [
         "關於手工",
         "關於金價",
@@ -218,8 +218,8 @@
   ],
   "chunks": [
     {
-      "pattern": "Hi. What is your gold price per ___ for one bangle?",
-      "example": "Hi. What is your gold price per gram for one bangle?",
+      "pattern": "Hi. What's your gold price per ___ for this bangle?",
+      "example": "Hi. What's your gold price per gram for this bangle?",
       "glossYue": "你好。呢隻手鐲一克金係幾多錢？",
       "answer": "gram",
       "choices": [
@@ -341,7 +341,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Hi. What is your gold price per gram for one ___? 呢句入面，邊個字先啱？",
+      "prompt": "Hi. What's your gold price per gram for this ___? 呢句入面，邊個字先啱？",
       "choices": [
         "labour",
         "towel",
@@ -353,6 +353,6 @@
   ],
   "shadow": {
     "lineId": "j20-l1",
-    "hint": "Hi. What is your gold price per gram for one bangle?"
+    "hint": "Hi. What's your gold price per gram for this bangle?"
   }
 }

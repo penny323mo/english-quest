@@ -52,11 +52,11 @@
       "id": "j10-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Yes. This set is popular, and you can leave it out.",
+      "text": "Yes. This set is popular, and you don't have to take it.",
       "glossYue": "係。呢套好多人揀，你可以唔要。",
       "audio": "assets/audio/lines/j10-l3.mp3",
       "audioSlow": "assets/audio/lines/j10-l3-slow.mp3",
-      "say": "Yes. This set is popular, and you can leave it out.",
+      "say": "Yes. This set is popular, and you don't have to take it.",
       "hideGloss": true
     },
     {
@@ -85,11 +85,11 @@
       "id": "j10-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Please just recommend one popular option.",
-      "glossYue": "請淨係推薦一個多人揀嘅選擇。",
+      "text": "Please recommend your most popular option.",
+      "glossYue": "請推薦你哋最多人揀嘅選擇。",
       "audio": "assets/audio/lines/j10-l6.mp3",
       "audioSlow": "assets/audio/lines/j10-l6-slow.mp3",
-      "say": "Please just recommend one popular option.",
+      "say": "Please recommend your most popular option.",
       "hideGloss": true
     },
     {
@@ -240,7 +240,7 @@
         "line": "If I buy the necklace today, will the matching earrings go with it?",
         "audio": "assets/audio/lines/j10-l2.mp3",
         "audioSlow": "assets/audio/lines/j10-l2-slow.mp3",
-        "expect": "Yes. This set is popular, and you can leave it out.",
+        "expect": "Yes. This set is popular, and you don't have to take it.",
         "keywords": [
           "optional",
           "engraving"
@@ -265,7 +265,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Please just recommend one popular option.",
+        "line": "Please recommend your most popular option.",
         "audio": "assets/audio/lines/j10-l6.mp3",
         "audioSlow": "assets/audio/lines/j10-l6-slow.mp3",
         "expect": "If you prefer this necklace, the chain goes well, and the box is ready.",

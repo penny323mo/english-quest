@@ -95,22 +95,22 @@
       "id": "j22-l5",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Can I see one proof before you cut the bracelet?",
-      "glossYue": "切手鈪之前，可唔可以畀我睇一次校對稿？",
+      "text": "Can I see the design proof before you engrave the bracelet?",
+      "glossYue": "刻手鈪之前，可唔可以畀我睇份設計校對稿？",
       "audio": "assets/audio/lines/j22-l5.mp3",
       "audioSlow": "assets/audio/lines/j22-l5-slow.mp3",
-      "say": "Can I see one proof before you cut the bracelet?",
+      "say": "Can I see the design proof before you engrave the bracelet?",
       "hideGloss": false
     },
     {
       "id": "j22-l6",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "I'll email you the proof this evening, before we cut it.",
-      "glossYue": "我會喺傍晚電郵份校對稿畀你，切之前交。",
+      "text": "I'll email you the design proof this evening, before we engrave the bracelet.",
+      "glossYue": "我會喺傍晚電郵份設計校對稿畀你，刻手鈪之前交。",
       "audio": "assets/audio/lines/j22-l6.mp3",
       "audioSlow": "assets/audio/lines/j22-l6-slow.mp3",
-      "say": "I'll email you the proof this evening, before we cut it.",
+      "say": "I'll email you the design proof this evening, before we engrave the bracelet.",
       "hideGloss": false
     },
     {
@@ -160,7 +160,7 @@
         "line": "Plain lettering will finish on Friday, before the Saturday wedding.",
         "audio": "assets/audio/lines/j22-l4.mp3",
         "audioSlow": "assets/audio/lines/j22-l4-slow.mp3",
-        "expect": "Can I see one proof before you cut the bracelet?",
+        "expect": "Can I see the design proof before you engrave the bracelet?",
         "keywords": [
           "proof",
           "words"
@@ -171,7 +171,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "I'll email you the proof this evening, before we cut it.",
+        "line": "I'll email you the design proof this evening, before we engrave the bracelet.",
         "audio": "assets/audio/lines/j22-l6.mp3",
         "audioSlow": "assets/audio/lines/j22-l6-slow.mp3",
         "expect": "What's the rush fee if that proof needs one small change?",
@@ -196,7 +196,7 @@
       "explain": "刻字。"
     },
     {
-      "prompt": "I'll email you the proof this evening, before we cut it. 呢句即係點？",
+      "prompt": "I'll email you the design proof this evening, before we engrave the bracelet. 呢句即係點？",
       "choices": [
         "校對稿",
         "刻字",
@@ -240,9 +240,9 @@
       ]
     },
     {
-      "pattern": "Can I see one ___ of the words before you cut the bracelet?",
-      "example": "Can I see one proof before you cut the bracelet?",
-      "glossYue": "切手鈪之前，可唔可以睇一次校對稿？",
+      "pattern": "Can I see the design ___ before you engrave the bracelet?",
+      "example": "Can I see the design proof before you engrave the bracelet?",
+      "glossYue": "刻手鈪之前，可唔可以睇份設計校對稿？",
       "answer": "proof",
       "choices": [
         "proof",
@@ -258,7 +258,7 @@
       "choices": [
         "Can you rush the engraving on this gold bracelet before Saturday?",
         "Will plain lettering finish in time if the wedding stays on Saturday?",
-        "Can I see one proof before you cut the bracelet?"
+        "Can I see the design proof before you engrave the bracelet?"
       ],
       "answer": 1,
       "explain": "用呢句。"
@@ -331,7 +331,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Can I see one proof before you cut the bracelet? 呢句入面，邊個意思先啱？",
+      "prompt": "Can I see the design proof before you engrave the bracelet? 呢句入面，邊個意思先啱？",
       "choices": [
         "校對稿",
         "婚禮",

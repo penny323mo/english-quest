@@ -65,11 +65,11 @@
       "id": "j15-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "A tight ring needs one larger opening.",
-      "glossYue": "太緊嘅戒指要開大一個口。",
+      "text": "We can size the ring up for you.",
+      "glossYue": "我哋可以幫你將戒指改大。",
       "audio": "assets/audio/lines/j15-l2.mp3",
       "audioSlow": "assets/audio/lines/j15-l2-slow.mp3",
-      "say": "A tight ring needs one larger opening.",
+      "say": "We can size the ring up for you.",
       "hideGloss": false
     },
     {
@@ -87,11 +87,11 @@
       "id": "j15-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "We can make the ring half a size larger, and you collect it, Saturday at four.",
-      "glossYue": "戒指可以改大半碼，星期六四點可以取。",
+      "text": "We can make the ring half a size larger, and you can collect it on Saturday at four.",
+      "glossYue": "戒指可以改大半碼，你可以星期六四點嚟取。",
       "audio": "assets/audio/lines/j15-l4.mp3",
       "audioSlow": "assets/audio/lines/j15-l4-slow.mp3",
-      "say": "We can make the ring half a size larger, and you collect it, Saturday at four.",
+      "say": "We can make the ring half a size larger, and you can collect it on Saturday at four.",
       "hideGloss": true
     },
     {
@@ -185,7 +185,7 @@
     },
     {
       "pattern": "Yes we can make the ring half a size larger under the full ___.",
-      "example": "We can make the ring half a size larger, and you collect it, Saturday at four.",
+      "example": "We can make the ring half a size larger, and you can collect it on Saturday at four.",
       "glossYue": "保養可以改大半碼。",
       "answer": "warranty",
       "choices": [
@@ -242,7 +242,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "A tight ring needs one larger opening.",
+        "line": "We can size the ring up for you.",
         "audio": "assets/audio/lines/j15-l2.mp3",
         "audioSlow": "assets/audio/lines/j15-l2-slow.mp3",
         "expect": "Can you make the ring half a size larger, and when can I collect it?",
@@ -256,7 +256,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "We can make the ring half a size larger, and you collect it, Saturday at four.",
+        "line": "We can make the ring half a size larger, and you can collect it on Saturday at four.",
         "audio": "assets/audio/lines/j15-l4.mp3",
         "audioSlow": "assets/audio/lines/j15-l4-slow.mp3",
         "expect": "How long does the warranty work take, and may I collect it on Saturday?",

@@ -46,22 +46,22 @@
       "id": "j24-l3",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Would a soft rhodium finish keep the filigree bright if I wear it each Friday?",
-      "glossYue": "如果我每個星期五都戴，軟銠面可唔可以保持金絲光亮？",
+      "text": "Will rhodium plating keep it bright if I wear it every week?",
+      "glossYue": "如果我每個星期都戴，鍍銠可唔可以保持光亮？",
       "audio": "assets/audio/lines/j24-l3.mp3",
       "audioSlow": "assets/audio/lines/j24-l3-slow.mp3",
-      "say": "Would a soft rhodium finish keep the filigree bright if I wear it each Friday?",
+      "say": "Will rhodium plating keep it bright if I wear it every week?",
       "hideGloss": false
     },
     {
       "id": "j24-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "A soft rhodium finish will keep the filigree bright, and Friday noon is fine here.",
-      "glossYue": "軟銠面可以保持金絲光亮，星期五中午可以喺度做。",
+      "text": "Rhodium plating will keep it bright, and Friday noon is fine here.",
+      "glossYue": "鍍銠可以保持光亮，星期五中午可以喺度做。",
       "audio": "assets/audio/lines/j24-l4.mp3",
       "audioSlow": "assets/audio/lines/j24-l4-slow.mp3",
-      "say": "A soft rhodium finish will keep the filigree bright, and Friday noon is fine here.",
+      "say": "Rhodium plating will keep it bright, and Friday noon is fine here.",
       "hideGloss": true
     },
     {
@@ -121,14 +121,14 @@
       "explain": "走之前檢查金爪托上面嘅印記。"
     },
     {
-      "prompt": "Would a soft rhodium finish keep the filigree bright if I wear it each Friday? 即係問緊咩？",
+      "prompt": "Will rhodium plating keep it bright if I wear it every week? 即係問緊咩？",
       "choices": [
         "話已經退咗款",
-        "問每個星期五戴，軟銠可唔可以保持金絲光亮",
+        "問每個星期都戴，鍍銠可唔可以保持光亮",
         "問舖頭星期日開唔開"
       ],
       "answer": 1,
-      "explain": "每星期五戴，問軟銠面可唔可以保金絲光亮。"
+      "explain": "每個星期都戴，問鍍銠可唔可以保持光亮。"
     },
     {
       "prompt": "Is the filigree quote lower if I take that rhodium pair home this Friday night? 即係問緊咩？",
@@ -165,9 +165,9 @@
       ]
     },
     {
-      "pattern": "Would a soft ___ finish keep the filigree bright if I wear it each Friday?",
-      "example": "Would a soft rhodium finish keep the filigree bright if I wear it each Friday?",
-      "glossYue": "如果我每個星期五都戴，軟銠面可唔可以保持金絲光亮？",
+      "pattern": "Will ___ plating keep it bright if I wear it every week?",
+      "example": "Will rhodium plating keep it bright if I wear it every week?",
+      "glossYue": "如果我每個星期都戴，鍍銠可唔可以保持光亮？",
       "answer": "rhodium",
       "choices": [
         "rhodium",
@@ -186,7 +186,7 @@
       "promptYue": "你點講？",
       "choices": [
         "Could you check the hallmark on this gold prong before we leave the shop at noon?",
-        "Would a soft rhodium finish keep the filigree bright if I wear it each Friday?",
+        "Will rhodium plating keep it bright if I wear it every week?",
         "Is the filigree quote lower if I take that rhodium pair home this Friday night?"
       ],
       "answer": 0,
@@ -219,10 +219,10 @@
         "line": "I can check that hallmark on site, and the prong check is free before noon.",
         "audio": "assets/audio/lines/j24-l2.mp3",
         "audioSlow": "assets/audio/lines/j24-l2-slow.mp3",
-        "expect": "Would a soft rhodium finish keep the filigree bright if I wear it each Friday?",
+        "expect": "Will rhodium plating keep it bright if I wear it every week?",
         "keywords": [
           "rhodium",
-          "filigree"
+          "week"
         ],
         "modelAudio": "assets/audio/lines/j24-l3.mp3",
         "modelSlow": "assets/audio/lines/j24-l3-slow.mp3"
@@ -230,7 +230,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "A soft rhodium finish will keep the filigree bright, and Friday noon is fine here.",
+        "line": "Rhodium plating will keep it bright, and Friday noon is fine here.",
         "audio": "assets/audio/lines/j24-l4.mp3",
         "audioSlow": "assets/audio/lines/j24-l4-slow.mp3",
         "expect": "Is the filigree quote lower if I take that rhodium pair home this Friday night?",
@@ -292,7 +292,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Would a soft rhodium finish keep the filigree bright if I wear it each Friday? 呢句入面，邊個意思先啱？",
+      "prompt": "Will rhodium plating keep it bright if I wear it every week? 呢句入面，邊個意思先啱？",
       "choices": [
         "銠",
         "報價",

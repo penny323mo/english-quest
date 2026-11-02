@@ -100,11 +100,11 @@
       "id": "t13-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Will this one tablet make me feel drowsy? I have to drive home.",
-      "glossYue": "呢一粒會唔會令人好眼瞓？我遲啲要揸車返屋企。",
+      "text": "Will this tablet make me feel drowsy? I have to drive home.",
+      "glossYue": "呢粒會唔會令我眼瞓？我要揸車返屋企。",
       "audio": "assets/audio/lines/t13-l5.mp3",
       "audioSlow": "assets/audio/lines/t13-l5-slow.mp3",
-      "say": "Will this one tablet make me feel drowsy? I have to drive home.",
+      "say": "Will this tablet make me feel drowsy? I have to drive home.",
       "hideGloss": true
     },
     {
@@ -197,9 +197,9 @@
       ]
     },
     {
-      "pattern": "Will this one tablet make me feel ___? I still have to drive home later.",
-      "example": "Will this one tablet make me feel drowsy? I have to drive home.",
-      "glossYue": "會唔會好眼瞓？",
+      "pattern": "Will this tablet make me feel ___? I still have to drive home later.",
+      "example": "Will this tablet make me feel drowsy? I have to drive home.",
+      "glossYue": "呢粒會唔會令我眼瞓？我要揸車返屋企。",
       "answer": "drowsy",
       "choices": [
         "drowsy",
@@ -215,7 +215,7 @@
       "choices": [
         "Hi. I have bad headache and high fever. What medicine can I take?",
         "No, I don't have any allergies. How many times day should I take this?",
-        "Will this one tablet make me feel drowsy? I have to drive home."
+        "Will this tablet make me feel drowsy? I have to drive home."
       ],
       "answer": 0,
       "explain": "講 headache。"
@@ -257,7 +257,7 @@
         "line": "Three times a day, after meals. Don't take more than six tablets each single day.",
         "audio": "assets/audio/lines/t13-l4.mp3",
         "audioSlow": "assets/audio/lines/t13-l4-slow.mp3",
-        "expect": "Will this one tablet make me feel drowsy? I have to drive home.",
+        "expect": "Will this tablet make me feel drowsy? I have to drive home.",
         "keywords": [
           "drowsy",
           "drive"

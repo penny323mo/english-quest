@@ -71,7 +71,7 @@
       "speaker": "nia",
       "speakerLabel": "Nia",
       "text": "I prefer it understated, and I'd keep this gold piece as a quiet investment.",
-      "glossYue": "我偏好低調，我會當呢件金飾係一份私人保值。",
+      "glossYue": "我偏好低調，我會當呢件金飾係低調保值。",
       "audio": "assets/audio/lines/j11-l4.mp3",
       "audioSlow": "assets/audio/lines/j11-l4-slow.mp3",
       "say": "I prefer it understated, and I'd keep this gold piece as a quiet investment.",
@@ -92,11 +92,11 @@
       "id": "j11-l6",
       "speaker": "ada",
       "speakerLabel": "Ada",
-      "text": "Yes. I can fit that whole plan in next month.",
-      "glossYue": "可以。我趕得切下個月嗰個計劃。",
+      "text": "Yes. I can fit the whole plan into next month.",
+      "glossYue": "可以。我趕得切下個月成個計劃。",
       "audio": "assets/audio/lines/j11-l6.mp3",
       "audioSlow": "assets/audio/lines/j11-l6-slow.mp3",
-      "say": "Yes. I can fit that whole plan in next month.",
+      "say": "Yes. I can fit the whole plan into next month.",
       "hideGloss": true
     },
     {
@@ -259,7 +259,7 @@
       {
         "partner": "Ada",
         "partnerId": "ada",
-        "line": "Yes. I can fit that whole plan in next month.",
+        "line": "Yes. I can fit the whole plan into next month.",
         "audio": "assets/audio/lines/j11-l6.mp3",
         "audioSlow": "assets/audio/lines/j11-l6-slow.mp3",
         "expect": "If the new design is more modern, I'd still want a quiet gold piece.",

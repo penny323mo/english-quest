@@ -42,11 +42,11 @@
       "id": "t5-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could you help me report it because my passport was inside.",
-      "glossYue": "可唔可以而家幫我報失，因為護照喺銀包入面？",
+      "text": "Can you help me report it? My passport was inside.",
+      "glossYue": "可唔可以幫我報失？我本護照喺入面。",
       "audio": "assets/audio/lines/t5-l2.mp3",
       "audioSlow": "assets/audio/lines/t5-l2-slow.mp3",
-      "say": "Could you help me report it because my passport was inside.",
+      "say": "Can you help me report it? My passport was inside.",
       "hideGloss": true
     },
     {
@@ -64,11 +64,11 @@
       "id": "t5-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I think the wallet was stolen.",
-      "glossYue": "我諗個銀包畀人偷咗。",
+      "text": "I think that the wallet was stolen.",
+      "glossYue": "我諗個銀包係畀人偷咗。",
       "audio": "assets/audio/lines/t5-l4.mp3",
       "audioSlow": "assets/audio/lines/t5-l4-slow.mp3",
-      "say": "I think the wallet was stolen.",
+      "say": "I think that the wallet was stolen.",
       "hideGloss": true
     },
     {
@@ -196,14 +196,14 @@
   ],
   "shadow": {
     "lineId": "t5-l2",
-    "hint": "Could you help me report it because my passport was inside."
+    "hint": "Can you help me report it? My passport was inside."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "銀包可能被人偷咗。點講？",
       "choices": [
-        "I think the wallet was stolen.",
+        "I think that the wallet was stolen.",
         "The meter is on, and traffic is slow.",
         "Could you wrap the gift?"
       ],
@@ -250,7 +250,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "I think the wallet was stolen.",
+        "line": "I think that the wallet was stolen.",
         "audio": "assets/audio/lines/t5-l4.mp3",
         "audioSlow": "assets/audio/lines/t5-l4-slow.mp3",
         "expect": "The embassy number is on this card, and I will help you file the report.",

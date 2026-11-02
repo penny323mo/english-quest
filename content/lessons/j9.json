@@ -53,11 +53,11 @@
       "id": "j9-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "I'm sorry that we caused trouble, so I can see you're upset.",
-      "glossYue": "對唔住我哋造成麻煩，所以我睇到你唔開心。",
+      "text": "I'm sorry that we caused trouble, and I can see you're upset.",
+      "glossYue": "對唔住我哋造成麻煩，我睇到你唔開心。",
       "audio": "assets/audio/lines/j9-l3.mp3",
       "audioSlow": "assets/audio/lines/j9-l3-slow.mp3",
-      "say": "I'm sorry that we caused trouble, so I can see you're upset.",
+      "say": "I'm sorry that we caused trouble, and I can see you're upset.",
       "hideGloss": true
     },
     {
@@ -98,7 +98,7 @@
       "speaker": "mei",
       "speakerLabel": "Mei",
       "text": "Would it help if we gave you a replacement while the workshop repairs yours?",
-      "glossYue": "如果我哋畀件新嘅你，工場修緊你嗰條，會唔會好啲？",
+      "glossYue": "如果工場修緊你嗰件，畀件暫時頂住，會唔會好啲？",
       "audio": "assets/audio/lines/j9-l7.mp3",
       "audioSlow": "assets/audio/lines/j9-l7-slow.mp3",
       "say": "Would it help if we gave you a replacement while the workshop repairs yours?",
@@ -196,7 +196,7 @@
   ],
   "shadow": {
     "lineId": "j9-l3",
-    "hint": "I'm sorry that we caused trouble, so I can see you're upset."
+    "hint": "I'm sorry that we caused trouble, and I can see you're upset."
   },
   "build": [
     {
@@ -241,7 +241,7 @@
         "line": "The clasp is broken, so I would like a repair or a refund.",
         "audio": "assets/audio/lines/j9-l2.mp3",
         "audioSlow": "assets/audio/lines/j9-l2-slow.mp3",
-        "expect": "I'm sorry that we caused trouble, so I can see you're upset.",
+        "expect": "I'm sorry that we caused trouble, and I can see you're upset.",
         "keywords": [
           "apologize",
           "understand"
