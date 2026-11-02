@@ -1,4 +1,4 @@
-import { audioElement, audioSnapshot, speechActive, stopAudio, subscribeAudio } from "./audio-element";
+import { audioElement, audioSnapshot, replaceAudioElement, speechActive, stopAudio, subscribeAudio } from "./audio-element";
 import { asset, lessons, lexicon } from "./data";
 import { fillLearner, needsRuntimeSpeech } from "./learner";
 import { useStore } from "./store";
@@ -54,12 +54,13 @@ export function playAsset(path: string): HTMLAudioElement {
     node.removeAttribute("src");
     return node;
   }
-  node.src = asset(path);
-  node.playbackRate = 1;
-  void node.play().catch(() => {
+  const next = replaceAudioElement();
+  next.src = asset(path);
+  next.playbackRate = 1;
+  void next.play().catch(() => {
     /* Autoplay can still reject if the gesture was lost. The button stays. */
   });
-  return node;
+  return next;
 }
 
 export function absAsset(path: string): string {

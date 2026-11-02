@@ -80,11 +80,11 @@
       "id": "d7-l5",
       "speaker": "wynn",
       "speakerLabel": "Wynn",
-      "text": "Eighty dollars is how much it is, and the price covers the blow dry.",
-      "glossYue": "八十蚊就係呢個價錢，包吹乾。",
+      "text": "It's eighty dollars in total, and the price covers the blow dry.",
+      "glossYue": "總共八十蚊，個價錢包吹乾。",
       "audio": "assets/audio/lines/d7-l5.mp3",
       "audioSlow": "assets/audio/lines/d7-l5-slow.mp3",
-      "say": "Eighty dollars is how much it is, and the price covers the blow dry.",
+      "say": "It's eighty dollars in total, and the price covers the blow dry.",
       "hideGloss": false
     },
     {
@@ -166,8 +166,8 @@
       ]
     },
     {
-      "pattern": "Eighty dollars is how much it is, and the price covers the ___.",
-      "example": "Eighty dollars is how much it is, and the price covers the blow dry.",
+      "pattern": "It's eighty dollars in total, and the price covers the ___.",
+      "example": "It's eighty dollars in total, and the price covers the blow dry.",
       "glossYue": "價錢包吹乾。",
       "answer": "blow dry",
       "choices": [
@@ -242,7 +242,7 @@
       {
         "partner": "Wynn",
         "partnerId": "wynn",
-        "line": "Eighty dollars is how much it is, and the price covers the blow dry.",
+        "line": "It's eighty dollars in total, and the price covers the blow dry.",
         "audio": "assets/audio/lines/d7-l5.mp3",
         "audioSlow": "assets/audio/lines/d7-l5-slow.mp3",
         "expect": "Is it cheaper if I book my next short visit?",

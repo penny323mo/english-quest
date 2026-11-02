@@ -58,11 +58,11 @@
       "id": "d10-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Hi Ray, I'm about five minutes late. Can you still wait?",
+      "text": "Hi Ray, I'm about five minutes late for the taxi. Can you still wait?",
       "glossYue": "Ray，我叫的士遲咗大約五分鐘。你可唔可以等埋？",
       "audio": "assets/audio/lines/d10-l1.mp3",
       "audioSlow": "assets/audio/lines/d10-l1-slow.mp3",
-      "say": "Hi Ray, I'm about five minutes late. Can you still wait?",
+      "say": "Hi Ray, I'm about five minutes late for the taxi. Can you still wait?",
       "hideGloss": false
     },
     {
@@ -92,7 +92,7 @@
       "speaker": "ray",
       "speakerLabel": "Ray",
       "text": "The plate number is MX 42 17. It's a white Toyota by the door.",
-      "glossYue": "車牌係 MX 42 17，白色豐田，就喺大門旁邊。",
+      "glossYue": "車牌係 MX 42 17。白色豐田，就喺大門旁邊。",
       "audio": "assets/audio/lines/d10-l4.mp3",
       "audioSlow": "assets/audio/lines/d10-l4-slow.mp3",
       "say": "The plate number is MX 42 17. It's a white Toyota by the door.",
@@ -103,7 +103,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Can we change the destination to the airport instead of the hotel?",
-      "glossYue": "多謝。可唔可以將目的地由酒店大堂改去機場？",
+      "glossYue": "可唔可以將目的地由酒店改去機場？",
       "audio": "assets/audio/lines/d10-l5.mp3",
       "audioSlow": "assets/audio/lines/d10-l5-slow.mp3",
       "say": "Can we change the destination to the airport instead of the hotel?",
@@ -114,7 +114,7 @@
       "speaker": "ray",
       "speakerLabel": "Ray",
       "text": "Sure. Change it in the app and the fare will update.",
-      "glossYue": "可以。你喺應用程式改目的地，新車費會自動更新。",
+      "glossYue": "可以。你喺應用程式改目的地，車費會更新。",
       "audio": "assets/audio/lines/d10-l6.mp3",
       "audioSlow": "assets/audio/lines/d10-l6-slow.mp3",
       "say": "Sure. Change it in the app and the fare will update.",
@@ -124,11 +124,11 @@
       "id": "d10-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can I pay by card, and will I get a receipt?",
+      "text": "Can I pay by card when we arrive, and will I get a receipt after?",
       "glossYue": "到埗可唔可以用卡畀錢，之後有冇收據？",
       "audio": "assets/audio/lines/d10-l7.mp3",
       "audioSlow": "assets/audio/lines/d10-l7-slow.mp3",
-      "say": "Can I pay by card, and will I get a receipt?",
+      "say": "Can I pay by card when we arrive, and will I get a receipt after?",
       "hideGloss": true
     },
     {
@@ -145,7 +145,7 @@
   ],
   "understand": [
     {
-      "prompt": "Hi Ray, I'm about five minutes late. Can you still wait? 即係問緊咩？",
+      "prompt": "Hi Ray, I'm about five minutes late for the taxi. Can you still wait? 即係問緊咩？",
       "choices": [
         "問車牌",
         "遲到五分鐘，問可唔可以等",
@@ -178,7 +178,7 @@
   "chunks": [
     {
       "pattern": "Hi Ray, I'm ___ about five minutes late for the taxi. Can you still wait?",
-      "example": "Hi Ray, I'm about five minutes late. Can you still wait?",
+      "example": "Hi Ray, I'm about five minutes late for the taxi. Can you still wait?",
       "glossYue": "我遲咗五分鐘。",
       "answer": "running",
       "choices": [
@@ -273,7 +273,7 @@
         "line": "Sure. Change it in the app and the fare will update.",
         "audio": "assets/audio/lines/d10-l6.mp3",
         "audioSlow": "assets/audio/lines/d10-l6-slow.mp3",
-        "expect": "Can I pay by card, and will I get a receipt?",
+        "expect": "Can I pay by card when we arrive, and will I get a receipt after?",
         "keywords": [
           "card",
           "receipt"
@@ -340,6 +340,6 @@
   ],
   "shadow": {
     "lineId": "d10-l1",
-    "hint": "Hi Ray, I'm about five minutes late. Can you still wait?"
+    "hint": "Hi Ray, I'm about five minutes late for the taxi. Can you still wait?"
   }
 }

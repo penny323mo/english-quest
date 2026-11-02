@@ -1,5 +1,13 @@
 # Changelog — English Quest
 
+## Stage 5 — content correctness
+
+- No new lesson. The path stays 97.
+- F1 is played through to the result screen in WebKit and Chromium at 390×844, with the audio buttons tapped, then reloaded. XP and the finished lesson have to persist. `playAsset` releases the previous media element before the next clip, and `stopAudio` does not seek before metadata, so WebKit is not asked to swap `src` on a live pipeline.
+- J17’s pearl-care key follows “wipe, then perfume.” R7 no longer turns “a dessert” into two free desserts. W6-l4 is “cleared the queue before lunch,” and that sentence is what the lesson drills. D3 is a B1 viewing at 12.00 words per line. Lesson glosses that added or dropped a clause, number, item, or action were rewritten in spoken Cantonese. Details, the 30-pair sample, and the changed keys are in `review/stage5/`.
+- New checks in `tests/content-correctness.mjs` read lesson glosses for Mandarin, compare gloss numbers and items with the English, and check quiz and order keys against the source line. The old dessert gloss, the reversed pearl key, and “一日兩粒” for one tablet twice a day fail those checks.
+- Fourteen spoken lines were re-rendered. Gloss-only edits kept their clips.
+
 ## Stage 3 — content
 - The first pass emptied the per-id exemption lists by rewriting lines so they would share a content word, avoid “today” and “for you”, and not end on “tonight” or “now”. A lot of that English was shorter and less polite than the line it replaced. The follow-up keeps the real padding checks (`for you here`, `that note here`) and the template checks, and drops the rules that were forcing the awkward lines: a reply no longer has to repeat a content word from the question, “today” and “for you” are allowed, and a line may end on “tonight” or “now”. A lesson word that is one of that lesson’s lemmas may repeat. The guard that forbade an exemption list is gone.
 - Lines that were already natural are back, including “I’m sorry, I did not see you there.” The ten lines called out in review are in `review/stage3/duet-fixes.md`. A seeded sample of 30 remaining changes is in `review/stage3/random30.md` (seed 1506, `review/stage3/sample30.mjs`).

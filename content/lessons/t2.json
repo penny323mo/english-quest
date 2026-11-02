@@ -56,7 +56,7 @@
       "speaker": "sam",
       "speakerLabel": "Sam",
       "text": "Please put your liquids in the tray now, and take the laptop out.",
-      "glossYue": "請而家把液體放進托盤，並取出電腦。",
+      "glossYue": "請而家將液體放入托盤，同埋拎出部電腦。",
       "audio": "assets/audio/lines/t2-l3.mp3",
       "audioSlow": "assets/audio/lines/t2-l3-slow.mp3",
       "say": "Please put your liquids in the tray now, and take the laptop out.",
@@ -77,11 +77,11 @@
       "id": "t2-l5",
       "speaker": "sam",
       "speakerLabel": "Sam",
-      "text": "Straight ahead. Your gate is on the left after the shops for you.",
-      "glossYue": "直行。閘口喺商店後面左邊。",
+      "text": "Straight ahead. Your gate is on the left, just after the shops.",
+      "glossYue": "直行。閘口就喺商店後面左邊。",
       "audio": "assets/audio/lines/t2-l5.mp3",
       "audioSlow": "assets/audio/lines/t2-l5-slow.mp3",
-      "say": "Straight ahead. Your gate is on the left after the shops for you."
+      "say": "Straight ahead. Your gate is on the left, just after the shops."
     }
   ],
   "understand": [
@@ -274,7 +274,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Straight ahead. Your gate is on the left after the shops.」，係咩意思？",
+      "prompt": "客人講「Straight ahead. Your gate is on the left, just after the shops.」，係咩意思？",
       "choices": [
         "直行就得",
         "請跟我嚟",

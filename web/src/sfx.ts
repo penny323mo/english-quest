@@ -17,7 +17,18 @@ function context(): AudioContext | null {
   try {
     const Ctor = ctor();
     if (!Ctor) return null;
-    if (!ctx) ctx = new Ctor();
+    if (!ctx) {
+      ctx = new Ctor();
+      window.addEventListener("pagehide", () => {
+        const current = ctx;
+        ctx = null;
+        try {
+          void current?.close();
+        } catch {
+          /* Closing twice is harmless. */
+        }
+      }, { once: true });
+    }
     return ctx;
   } catch {
     return null;
@@ -60,6 +71,14 @@ function tone(
   amp.connect(c.destination);
   osc.start(t);
   osc.stop(t + dur + 0.02);
+  osc.onended = () => {
+    try {
+      osc.disconnect();
+      amp.disconnect();
+    } catch {
+      /* The context may already be closed on pagehide. */
+    }
+  };
 }
 
 function schedule(kind: SfxKind, c: AudioContext, t: number): number {

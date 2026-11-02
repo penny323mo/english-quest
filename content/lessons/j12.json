@@ -34,7 +34,7 @@
       "speaker": "kai",
       "speakerLabel": "Kai",
       "text": "Good morning, you are calling the jewellery shop.",
-      "glossYue": "早晨。你打嚟珠寶舖，我可以睇吓架上嘅存貨。",
+      "glossYue": "早晨，你打嚟珠寶舖。",
       "audio": "assets/audio/lines/j12-l1.mp3",
       "audioSlow": "assets/audio/lines/j12-l1-slow.mp3",
       "say": "Good morning, you are calling the jewellery shop.",
@@ -56,7 +56,7 @@
       "speaker": "kai",
       "speakerLabel": "Kai",
       "text": "I will describe the gold piece.",
-      "glossYue": "我會描述呢件金飾，你可以聽日嚟取，我可以喺度留住。",
+      "glossYue": "我會描述呢件金飾。",
       "audio": "assets/audio/lines/j12-l3.mp3",
       "audioSlow": "assets/audio/lines/j12-l3-slow.mp3",
       "say": "I will describe the gold piece.",
@@ -66,22 +66,22 @@
       "id": "j12-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Text me when it's ready, and confirm the opening hours at the location.",
-      "glossYue": "貨準備好就發短訊話我知，然後再確認舖頭開門時間同位置。",
+      "text": "Text me when it's ready, and confirm the opening hours at the shop.",
+      "glossYue": "貨準備好就發短訊話我知，再確認舖頭開門時間同位置。",
       "audio": "assets/audio/lines/j12-l4.mp3",
       "audioSlow": "assets/audio/lines/j12-l4-slow.mp3",
-      "say": "Text me when it's ready, and confirm the opening hours at the location.",
+      "say": "Text me when it's ready, and confirm the opening hours at the shop.",
       "hideGloss": true
     },
     {
       "id": "j12-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have called to ask about stock.",
+      "text": "I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm.",
       "glossYue": "我打嚟問存貨，你確認之後我聽日嚟取條手鏈。",
       "audio": "assets/audio/lines/j12-l5.mp3",
       "audioSlow": "assets/audio/lines/j12-l5-slow.mp3",
-      "say": "I have called to ask about stock.",
+      "say": "I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm.",
       "hideGloss": false
     },
     {
@@ -164,7 +164,7 @@
     },
     {
       "pattern": "Please text me when it's ___, and then please confirm the opening hours at your location.",
-      "example": "Text me when it's ready, and confirm the opening hours at the location.",
+      "example": "Text me when it's ready, and confirm the opening hours at the shop.",
       "glossYue": "貨準備好就發短訊話我知。",
       "answer": "ready",
       "choices": [
@@ -187,14 +187,14 @@
   ],
   "shadow": {
     "lineId": "j12-l5",
-    "hint": "I have called to ask about stock."
+    "hint": "I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "店員話可以留貨。你點先答？",
       "choices": [
-        "Text me when it's ready, and confirm the opening hours at the location.",
+        "Text me when it's ready, and confirm the opening hours at the shop.",
         "I would like a table for two.",
         "The meter is on."
       ],
@@ -244,7 +244,7 @@
         "line": "I will describe the gold piece.",
         "audio": "assets/audio/lines/j12-l3.mp3",
         "audioSlow": "assets/audio/lines/j12-l3-slow.mp3",
-        "expect": "Text me when it's ready, and confirm the opening hours at the location.",
+        "expect": "Text me when it's ready, and confirm the opening hours at the shop.",
         "keywords": [
           "text",
           "location"
@@ -303,7 +303,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I have called to ask about stock.」，collect 係咩意思？",
+      "prompt": "客人講「I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm.」，collect 係咩意思？",
       "choices": [
         "取貨",
         "預留",

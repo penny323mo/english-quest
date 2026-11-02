@@ -28,7 +28,7 @@
       "speaker": "hugo",
       "speakerLabel": "Hugo",
       "text": "My luggage is missing at baggage claim.",
-      "glossYue": "我件行李喺行李轉盤唔見咗，條帶空空，因為個袋冇出嚟。",
+      "glossYue": "我件行李喺行李轉盤唔見咗。",
       "audio": "assets/audio/lines/t10-l1.mp3",
       "audioSlow": "assets/audio/lines/t10-l1-slow.mp3",
       "say": "My luggage is missing at baggage claim.",
@@ -50,7 +50,7 @@
       "speaker": "hugo",
       "speakerLabel": "Hugo",
       "text": "It is a blue suitcase with a red ribbon.",
-      "glossYue": "係一個藍色行李箱，有紅絲帶，底有兩個細轆。",
+      "glossYue": "係一個藍色行李箱，有紅絲帶。",
       "audio": "assets/audio/lines/t10-l3.mp3",
       "audioSlow": "assets/audio/lines/t10-l3-slow.mp3",
       "say": "It is a blue suitcase with a red ribbon.",
@@ -72,7 +72,7 @@
       "speaker": "hugo",
       "speakerLabel": "Hugo",
       "text": "The tag number is HK four eight two.",
-      "glossYue": "牌號係 HK four eight two，我可以喺呢張紙收據讀出嚟。",
+      "glossYue": "牌號係 HK 四八二。",
       "audio": "assets/audio/lines/t10-l5.mp3",
       "audioSlow": "assets/audio/lines/t10-l5-slow.mp3",
       "say": "The tag number is HK four eight two.",
@@ -116,7 +116,7 @@
     {
       "prompt": "My luggage is missing at baggage claim. 呢句即係點？",
       "choices": [
-        "行李喺轉盤唔見咗，條帶係空嘅",
+        "行李喺轉盤唔見咗",
         "行李已經喺轉盤上面",
         "袋到咗酒店，唔係轉盤"
       ],
@@ -128,7 +128,7 @@
       "choices": [
         "個袋係黑色，冇轆",
         "行李牌號碼係紅色",
-        "個袋係藍色行李箱，有紅絲帶同兩個轆"
+        "個袋係藍色行李箱，有紅絲帶"
       ],
       "answer": 2,
       "explain": "suitcase 係描述唔見咗嘅袋。"
@@ -146,8 +146,8 @@
   ],
   "chunks": [
     {
-      "pattern": "My luggage is missing at ___ , and the belt is empty this afternoon.",
-      "example": "My luggage is missing at baggage claim, and the belt is empty.",
+      "pattern": "My luggage is missing at ___.",
+      "example": "My luggage is missing at baggage claim.",
       "glossYue": "行李喺轉盤唔見咗。",
       "answer": "baggage claim",
       "choices": [

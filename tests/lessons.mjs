@@ -1203,6 +1203,12 @@ test("tracked review files exclude local audit artifacts", () => {
     "review/stage3/grammar.json",
     "review/stage3/random30.md",
     "review/stage3/sample30.mjs",
+    "review/stage5/changelog.md",
+    "review/stage5/clause-mismatch.md",
+    "review/stage5/gloss-pairs30-v2.md",
+    "review/stage5/gloss-pairs30.md",
+    "review/stage5/quiz-keys.md",
+    "review/stage5/sample-gloss.mjs",
   ]);
 });
 

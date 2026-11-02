@@ -31,11 +31,11 @@
       "id": "j9-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "I am sorry that there is an issue, so I listen before I offer a repair.",
-      "glossYue": "唔好意思有個問題，所以我先聽，先提出修理。",
+      "text": "I'm sorry that there is a problem, so I'll listen before I offer a repair.",
+      "glossYue": "唔好意思有個問題，所以我會先聽，先提出修理。",
       "audio": "assets/audio/lines/j9-l1.mp3",
       "audioSlow": "assets/audio/lines/j9-l1-slow.mp3",
-      "say": "I am sorry that there is an issue, so I listen before I offer a repair.",
+      "say": "I'm sorry that there is a problem, so I'll listen before I offer a repair.",
       "hideGloss": false
     },
     {
@@ -53,11 +53,11 @@
       "id": "j9-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "I apologize when inconvenience shows, so I understand that you feel sad.",
-      "glossYue": "有不便嗰陣我道歉，所以我明白你覺得難過。",
+      "text": "I apologize when we've caused trouble, so I understand that you feel upset.",
+      "glossYue": "我哋造成麻煩嗰陣我會道歉，所以我明白你覺得難過。",
       "audio": "assets/audio/lines/j9-l3.mp3",
       "audioSlow": "assets/audio/lines/j9-l3-slow.mp3",
-      "say": "I apologize when inconvenience shows, so I understand that you feel sad.",
+      "say": "I apologize when we've caused trouble, so I understand that you feel upset.",
       "hideGloss": true
     },
     {
@@ -196,14 +196,14 @@
   ],
   "shadow": {
     "lineId": "j9-l3",
-    "hint": "I apologize when inconvenience shows, so I understand that you feel sad."
+    "hint": "I apologize when we've caused trouble, so I understand that you feel upset."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "客人個扣壞咗。你點先開口？",
       "choices": [
-        "I am sorry that there is an issue, so I listen before I offer a repair.",
+        "I'm sorry that there is a problem, so I'll listen before I offer a repair.",
         "The taxi is here, and traffic is slow.",
         "I have lost my wallet."
       ],
@@ -241,7 +241,7 @@
         "line": "The clasp is broken, so I would like a repair or a refund.",
         "audio": "assets/audio/lines/j9-l2.mp3",
         "audioSlow": "assets/audio/lines/j9-l2-slow.mp3",
-        "expect": "I apologize when inconvenience shows, so I understand that you feel sad.",
+        "expect": "I apologize when we've caused trouble, so I understand that you feel upset.",
         "keywords": [
           "apologize",
           "understand"

@@ -45,7 +45,7 @@
       "speaker": "ling",
       "speakerLabel": "{{learner}}",
       "text": "I usually wake up early, then I start my shift.",
-      "glossYue": "我通常早起身，然後開始上班。",
+      "glossYue": "我通常早起身，跟住開始上班。",
       "audio": "assets/audio/lines/f6-l2.mp3",
       "audioSlow": "assets/audio/lines/f6-l2-slow.mp3",
       "say": "I usually wake up early, then I start my shift."
@@ -97,10 +97,10 @@
       "choices": [
         "夜更之後先關門",
         "我來自澳門",
-        "我通常早起身，然後開工"
+        "我通常早起身，跟住開工"
       ],
       "answer": 2,
-      "explain": "usually 係通常。then 係然後。"
+      "explain": "usually 係通常。then 係跟住。"
     },
     {
       "prompt": "Do you ever take a break after lunch? 即係問緊咩？",

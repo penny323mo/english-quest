@@ -66,22 +66,22 @@
       "id": "w6-l4",
       "speaker": "zuri",
       "speakerLabel": "Zuri",
-      "text": "Last year I handled a busy Saturday at the counter, because I achieved a queue before lunch.",
-      "glossYue": "舊年我喺櫃檯頂過一個忙嘅星期六，開飯之前將條隊處理到好定。",
+      "text": "Last year I handled a busy Saturday at the counter, and I cleared the queue before lunch.",
+      "glossYue": "舊年我喺櫃檯頂過一個好忙嘅星期六，開飯之前清咗條隊。",
       "audio": "assets/audio/lines/w6-l4.mp3",
       "audioSlow": "assets/audio/lines/w6-l4-slow.mp3",
-      "say": "Last year I handled a busy Saturday at the counter, because I achieved a queue before lunch.",
+      "say": "Last year I handled a busy Saturday at the counter, and I cleared the queue before lunch.",
       "hideGloss": true
     },
     {
       "id": "w6-l5",
       "speaker": "hugh",
       "speakerLabel": "Hugh",
-      "text": "That story sounds reliable. How did teamwork help you in the shop on that busy morning?",
-      "glossYue": "呢個故事好可靠。嗰朝早團隊合作點幫到你？",
+      "text": "That sounds reliable. How did teamwork help you in the shop on that busy morning?",
+      "glossYue": "呢個聽落好可靠。嗰朝喺舖頭，團隊合作點幫到你？",
       "audio": "assets/audio/lines/w6-l5.mp3",
       "audioSlow": "assets/audio/lines/w6-l5-slow.mp3",
-      "say": "That story sounds reliable. How did teamwork help you in the shop on that busy morning?",
+      "say": "That sounds reliable. How did teamwork help you in the shop on that busy morning?",
       "hideGloss": false
     },
     {
@@ -89,7 +89,7 @@
       "speaker": "zuri",
       "speakerLabel": "Zuri",
       "text": "Real teamwork helped me stay on that busy morning.",
-      "glossYue": "嗰朝真係靠團隊，我先至保持冷靜，同隊友一齊疏導條隊。",
+      "glossYue": "嗰朝真係靠團隊我先至頂得住。",
       "audio": "assets/audio/lines/w6-l6.mp3",
       "audioSlow": "assets/audio/lines/w6-l6-slow.mp3",
       "say": "Real teamwork helped me stay on that busy morning.",
@@ -100,7 +100,7 @@
       "speaker": "hugh",
       "speakerLabel": "Hugh",
       "text": "What kind of team would you like to join next month if we offer you the retail role?",
-      "glossYue": "如果我哋請你做零售，你想加入邊種團隊？",
+      "glossYue": "如果我哋下個月請你做零售，你想加入邊種團隊？",
       "audio": "assets/audio/lines/w6-l7.mp3",
       "audioSlow": "assets/audio/lines/w6-l7-slow.mp3",
       "say": "What kind of team would you like to join next month if we offer you the retail role?",
@@ -130,17 +130,17 @@
       "explain": "looking for 係想搵，currently 係而家。"
     },
     {
-      "prompt": "Last year I handled a busy Saturday at the counter, because I achieved a queue before lunch. 呢句即係點？",
+      "prompt": "Last year I handled a busy Saturday at the counter, and I cleared the queue before lunch. 呢句即係點？",
       "choices": [
         "而家先至入職做櫃檯",
         "想轉去另一個櫃檯",
-        "處理過一個忙更，開飯前將隊排定"
+        "處理過一個忙更，開飯前清咗條隊"
       ],
       "answer": 2,
-      "explain": "handled 係處理咗，achieved 係做到。"
+      "explain": "handled 係處理咗，cleared 係清走。"
     },
     {
-      "prompt": "That story sounds reliable. How did teamwork help you in the shop on that busy morning? 即係問緊咩？",
+      "prompt": "That sounds reliable. How did teamwork help you in the shop on that busy morning? 即係問緊咩？",
       "choices": [
         "問面試幾時開始",
         "問團隊合作點幫到你",
@@ -163,8 +163,8 @@
       ]
     },
     {
-      "pattern": "Last year I really ___ a busy Saturday shift, and I achieved a calm queue well before lunch.",
-      "example": "Last year I handled a busy Saturday at the counter, because I achieved a queue before lunch.",
+      "pattern": "Last year I ___ a busy Saturday at the counter, and I cleared the queue before lunch.",
+      "example": "Last year I handled a busy Saturday at the counter, and I cleared the queue before lunch.",
       "glossYue": "我⋯⋯一個忙更。",
       "answer": "handled",
       "choices": [
@@ -187,7 +187,7 @@
   ],
   "shadow": {
     "lineId": "w6-l4",
-    "hint": "Last year I handled a busy Saturday at the counter, because I achieved a queue before lunch."
+    "hint": "Last year I handled a busy Saturday at the counter, and I cleared the queue before lunch."
   },
   "build": [
     {
@@ -242,7 +242,7 @@
         "line": "Could you give one example of a recent customer-facing task you enjoyed at the counter?",
         "audio": "assets/audio/lines/w6-l3.mp3",
         "audioSlow": "assets/audio/lines/w6-l3-slow.mp3",
-        "expect": "Last year I handled a busy Saturday at the counter, because I achieved a queue before lunch.",
+        "expect": "Last year I handled a busy Saturday at the counter, and I cleared the queue before lunch.",
         "keywords": [
           "handled",
           "queue"
@@ -253,7 +253,7 @@
       {
         "partner": "Hugh",
         "partnerId": "hugh",
-        "line": "That story sounds reliable. How did teamwork help you in the shop on that busy morning?",
+        "line": "That sounds reliable. How did teamwork help you in the shop on that busy morning?",
         "audio": "assets/audio/lines/w6-l5.mp3",
         "audioSlow": "assets/audio/lines/w6-l5-slow.mp3",
         "expect": "Real teamwork helped me stay on that busy morning.",
