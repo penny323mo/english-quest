@@ -59,11 +59,11 @@
       "id": "r10-l3",
       "speaker": "cleo",
       "speakerLabel": "Cleo",
-      "text": "Iced, please, and I would like the small size.",
-      "glossYue": "要凍，我想要細杯。",
+      "text": "Iced, please. I'd like the small size.",
+      "glossYue": "要凍。我想要細杯。",
       "audio": "assets/audio/lines/r10-l3.mp3",
       "audioSlow": "assets/audio/lines/r10-l3-slow.mp3",
-      "say": "Iced, please, and I would like the small size.",
+      "say": "Iced, please. I'd like the small size.",
       "hideGloss": false
     },
     {
@@ -81,11 +81,11 @@
       "id": "r10-l5",
       "speaker": "cleo",
       "speakerLabel": "Cleo",
-      "text": "Yes, oat milk, please, and the name Cleo on the cup.",
-      "glossYue": "好，燕麥奶唔該，杯上面寫 Cleo。",
+      "text": "Yes, oat milk, please. The name is Cleo.",
+      "glossYue": "好，燕麥奶唔該。個名係 Cleo。",
       "audio": "assets/audio/lines/r10-l5.mp3",
       "audioSlow": "assets/audio/lines/r10-l5-slow.mp3",
-      "say": "Yes, oat milk, please, and the name Cleo on the cup.",
+      "say": "Yes, oat milk, please. The name is Cleo.",
       "hideGloss": false
     },
     {
@@ -103,11 +103,11 @@
       "id": "r10-l7",
       "speaker": "cleo",
       "speakerLabel": "Cleo",
-      "text": "To go, please, and please keep the small size.",
-      "glossYue": "拎走，大細保持細杯。",
+      "text": "To go, please. Keep the small size for me, thanks.",
+      "glossYue": "拎走，唔該。幫我保持細杯，多謝。",
       "audio": "assets/audio/lines/r10-l7.mp3",
       "audioSlow": "assets/audio/lines/r10-l7-slow.mp3",
-      "say": "To go, please, and please keep the small size.",
+      "say": "To go, please. Keep the small size for me, thanks.",
       "hideGloss": false
     },
     {
@@ -199,8 +199,8 @@
       "promptYue": "你要凍拿鐵，用燕麥奶。你點講？",
       "choices": [
         "Yes, please use oat milk, and put the name Cleo on the cup.",
-        "Iced, please, and I would like the small size.",
-        "To go, please, and please keep the small size."
+        "Iced, please. I'd like the small size.",
+        "To go, please. Keep the small size."
       ],
       "answer": 0,
       "explain": "講 oat milk 同 name。"
@@ -232,7 +232,7 @@
         "line": "Hot or iced for that latte?",
         "audio": "assets/audio/lines/r10-l2.mp3",
         "audioSlow": "assets/audio/lines/r10-l2-slow.mp3",
-        "expect": "Iced, please, and I would like the small size.",
+        "expect": "Iced, please. I'd like the small size.",
         "keywords": [
           "iced",
           "size"
@@ -246,7 +246,7 @@
         "line": "Would you like oat milk in the iced latte?",
         "audio": "assets/audio/lines/r10-l4.mp3",
         "audioSlow": "assets/audio/lines/r10-l4-slow.mp3",
-        "expect": "Yes, oat milk, please, and the name Cleo on the cup.",
+        "expect": "Yes, oat milk, please. The name is Cleo.",
         "keywords": [
           "oat",
           "name"
@@ -260,7 +260,7 @@
         "line": "Would you like this cup for here, or to go?",
         "audio": "assets/audio/lines/r10-l6.mp3",
         "audioSlow": "assets/audio/lines/r10-l6-slow.mp3",
-        "expect": "To go, please, and please keep the small size.",
+        "expect": "To go, please. Keep the small size for me, thanks.",
         "keywords": [
           "size"
         ],

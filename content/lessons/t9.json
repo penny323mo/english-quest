@@ -68,11 +68,11 @@
       "id": "t9-l4",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Yes, we can rebook you on the next flight, and standby is not the only option left.",
-      "glossYue": "可以，我哋可以幫你改下一班，候補唔係唯一選擇。",
+      "text": "Yes, we can rebook you on the next flight. Standby isn't your only choice.",
+      "glossYue": "可以，我哋可以幫你改下一班。候補唔係淨係嗰個選擇。",
       "audio": "assets/audio/lines/t9-l4.mp3",
       "audioSlow": "assets/audio/lines/t9-l4-slow.mp3",
-      "say": "Yes, we can rebook you on the next flight, and standby is not the only option left.",
+      "say": "Yes, we can rebook you on the next flight. Standby isn't your only choice.",
       "hideGloss": true
     },
     {
@@ -243,7 +243,7 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Yes, we can rebook you on the next flight, and standby is not the only option left.",
+        "line": "Yes, we can rebook you on the next flight. Standby isn't your only choice.",
         "audio": "assets/audio/lines/t9-l4.mp3",
         "audioSlow": "assets/audio/lines/t9-l4-slow.mp3",
         "expect": "Is a full refund an alternative if the new flight does not leave until tomorrow morning from here?",

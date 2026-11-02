@@ -70,11 +70,11 @@
       "id": "j11-l4",
       "speaker": "nia",
       "speakerLabel": "Nia",
-      "text": "I prefer it understated, and I'd keep this gold piece as a quiet investment.",
-      "glossYue": "我偏好低調，我會當呢件金飾係低調保值。",
+      "text": "I prefer it understated. I'd keep this gold piece as a quiet investment.",
+      "glossYue": "我偏好低調。我會當呢件金飾係低調保值。",
       "audio": "assets/audio/lines/j11-l4.mp3",
       "audioSlow": "assets/audio/lines/j11-l4-slow.mp3",
-      "say": "I prefer it understated, and I'd keep this gold piece as a quiet investment.",
+      "say": "I prefer it understated. I'd keep this gold piece as a quiet investment.",
       "hideGloss": true
     },
     {
@@ -198,7 +198,7 @@
       "type": "choice",
       "promptYue": "顧問問你想低調定搶眼。你點先答？",
       "choices": [
-        "I prefer it understated, and I'd keep this gold piece as a quiet investment.",
+        "I prefer it understated. I'd keep this gold piece as a quiet investment.",
         "I am visiting for tourism.",
         "The soup arrived cold at the table."
       ],
@@ -248,7 +248,7 @@
         "line": "If you chose a contemporary gold piece, would you like it understated or more of a bold statement?",
         "audio": "assets/audio/lines/j11-l3.mp3",
         "audioSlow": "assets/audio/lines/j11-l3-slow.mp3",
-        "expect": "I prefer it understated, and I'd keep this gold piece as a quiet investment.",
+        "expect": "I prefer it understated. I'd keep this gold piece as a quiet investment.",
         "keywords": [
           "understated",
           "investment"

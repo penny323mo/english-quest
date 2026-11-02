@@ -96,11 +96,11 @@
       "id": "d6-l7",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Yes, after meals is safer, and this box needs no prescription.",
-      "glossYue": "可以，飯後食安全啲，呢盒唔使處方。",
+      "text": "Yes, after meals is safer. This box needs no prescription.",
+      "glossYue": "可以，飯後食安全啲。呢盒唔使處方。",
       "audio": "assets/audio/lines/d6-l7.mp3",
       "audioSlow": "assets/audio/lines/d6-l7-slow.mp3",
-      "say": "Yes, after meals is safer, and this box needs no prescription.",
+      "say": "Yes, after meals is safer. This box needs no prescription.",
       "hideGloss": true
     },
     {
@@ -193,7 +193,7 @@
       "choices": [
         "The only extra symptom is a drug allergy.",
         "The dosage is one tablet twice a day.",
-        "Yes, after meals is safer, and this box needs no prescription."
+        "Yes, after meals is safer. This box needs no prescription."
       ],
       "answer": 0,
       "explain": "講 allergy，再講點解入藥房。"
@@ -252,7 +252,7 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "Yes, after meals is safer, and this box needs no prescription.",
+        "line": "Yes, after meals is safer. This box needs no prescription.",
         "audio": "assets/audio/lines/d6-l7.mp3",
         "audioSlow": "assets/audio/lines/d6-l7-slow.mp3",
         "expect": "I'll call this pharmacy if that cough comes back.",

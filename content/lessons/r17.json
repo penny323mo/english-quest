@@ -35,11 +35,11 @@
       "id": "r17-l2",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "I can book that banquet from six, and the cancellation fee is forty dollars flat.",
-      "glossYue": "我可以六點起訂嗰個宴會，取消訂位費實收四十蚊。",
+      "text": "I can book that banquet from six. The cancellation fee is forty dollars.",
+      "glossYue": "我可以六點起訂嗰個宴會。取消訂位費係四十蚊。",
       "audio": "assets/audio/lines/r17-l2.mp3",
       "audioSlow": "assets/audio/lines/r17-l2-slow.mp3",
-      "say": "I can book that banquet from six, and the cancellation fee is forty dollars flat.",
+      "say": "I can book that banquet from six. The cancellation fee is forty dollars.",
       "hideGloss": false
     },
     {
@@ -216,7 +216,7 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "I can book that banquet from six, and the cancellation fee is forty dollars flat.",
+        "line": "I can book that banquet from six. The cancellation fee is forty dollars.",
         "audio": "assets/audio/lines/r17-l2.mp3",
         "audioSlow": "assets/audio/lines/r17-l2-slow.mp3",
         "expect": "How much is the surcharge if we keep the banquet for three hours after six?",

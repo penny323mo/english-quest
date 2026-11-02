@@ -35,11 +35,11 @@
       "id": "w15-l2",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "I'll bring both files Monday, and the variance matches the written ledger.",
-      "glossYue": "我星期一會帶兩份檔案，差額同書面帳簿一致。",
+      "text": "I'll bring both files on Monday. The variance matches the written ledger.",
+      "glossYue": "我星期一會帶兩份檔案。差額同書面帳簿一致。",
       "audio": "assets/audio/lines/w15-l2.mp3",
       "audioSlow": "assets/audio/lines/w15-l2-slow.mp3",
-      "say": "I'll bring both files Monday, and the variance matches the written ledger.",
+      "say": "I'll bring both files on Monday. The variance matches the written ledger.",
       "hideGloss": false
     },
     {
@@ -216,7 +216,7 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "I'll bring both files Monday, and the variance matches the written ledger.",
+        "line": "I'll bring both files on Monday. The variance matches the written ledger.",
         "audio": "assets/audio/lines/w15-l2.mp3",
         "audioSlow": "assets/audio/lines/w15-l2-slow.mp3",
         "expect": "Will you approve the full variance if procurement keeps it inside the written March ledger?",
@@ -292,7 +292,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "I'll bring both files Monday, and the variance matches the written ledger. 呢句入面，邊個意思先啱？",
+      "prompt": "I'll bring both files on Monday. The variance matches the written ledger. 呢句入面，邊個意思先啱？",
       "choices": [
         "手鏈",
         "海關",

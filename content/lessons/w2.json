@@ -40,11 +40,11 @@
       "id": "w2-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Thank you for following up, and I'm glad you attached the notes.",
-      "glossYue": "多謝你跟進，我好高興你附上咗筆記。",
+      "text": "Thank you for following up. I'm glad you attached the notes.",
+      "glossYue": "多謝你跟進。我好高興你附上咗筆記。",
       "audio": "assets/audio/lines/w2-l2.mp3",
       "audioSlow": "assets/audio/lines/w2-l2-slow.mp3",
-      "say": "Thank you for following up, and I'm glad you attached the notes.",
+      "say": "Thank you for following up. I'm glad you attached the notes.",
       "hideGloss": true
     },
     {
@@ -84,11 +84,11 @@
       "id": "w2-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I'm available on Friday, and I've already looked at the file you attached this morning.",
-      "glossYue": "我星期五有空，我已經睇過你今朝附上嘅文件。",
+      "text": "Yes. I'm free on Friday, so that deadline works.",
+      "glossYue": "好。我星期五有空，所以個期限得。",
       "audio": "assets/audio/lines/w2-l6.mp3",
       "audioSlow": "assets/audio/lines/w2-l6-slow.mp3",
-      "say": "I'm available on Friday, and I've already looked at the file you attached this morning.",
+      "say": "Yes. I'm free on Friday, so that deadline works.",
       "hideGloss": true
     },
     {
@@ -236,7 +236,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Thank you for following up, and I'm glad you attached the notes.",
+        "line": "Thank you for following up. I'm glad you attached the notes.",
         "audio": "assets/audio/lines/w2-l2.mp3",
         "audioSlow": "assets/audio/lines/w2-l2-slow.mp3",
         "expect": "I have attached the file as discussed, and I would like to clarify the deadline with you.",
@@ -264,7 +264,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "I'm available on Friday, and I've already looked at the file you attached this morning.",
+        "line": "Yes. I'm free on Friday, so that deadline works.",
         "audio": "assets/audio/lines/w2-l6.mp3",
         "audioSlow": "assets/audio/lines/w2-l6-slow.mp3",
         "expect": "Thanks for the quick reply. I'll confirm Friday's deadline in writing.",

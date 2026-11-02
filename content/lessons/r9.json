@@ -93,11 +93,11 @@
       "id": "r9-l7",
       "speaker": "eddy",
       "speakerLabel": "Eddy",
-      "text": "There's a mistake on the bill, and the soup was extra.",
-      "glossYue": "張單有個錯，湯係額外加嘅。",
+      "text": "There's a mistake on the bill. We didn't order the soup.",
+      "glossYue": "張單有個錯。我哋冇叫嗰碗湯。",
       "audio": "assets/audio/lines/r9-l7.mp3",
       "audioSlow": "assets/audio/lines/r9-l7-slow.mp3",
-      "say": "There's a mistake on the bill, and the soup was extra.",
+      "say": "There's a mistake on the bill. We didn't order the soup.",
       "hideGloss": true
     },
     {
@@ -134,10 +134,10 @@
       "explain": "split 係分開。"
     },
     {
-      "prompt": "There's a mistake on the bill, and the soup was extra. 呢句即係點？",
+      "prompt": "There's a mistake on the bill. We didn't order the soup. 呢句即係點？",
       "choices": [
         "想用八達通改帳單",
-        "帳單有錯，嗰碗湯唔係我哋叫嘅",
+        "帳單有錯，我哋冇叫嗰碗湯",
         "帳單冇錯，收據先有錯"
       ],
       "answer": 1,
@@ -190,7 +190,7 @@
       "choices": [
         "Could we split the bill and get a separate receipt?",
         "Could we have the bill for this table before we leave?",
-        "There's a mistake on the bill, and the soup was extra."
+        "There's a mistake on the bill. We didn't order the soup."
       ],
       "answer": 0,
       "explain": "講 split 同 receipt。"
@@ -252,7 +252,7 @@
         "line": "I can take that Octopus card and print a receipt.",
         "audio": "assets/audio/lines/r9-l6.mp3",
         "audioSlow": "assets/audio/lines/r9-l6-slow.mp3",
-        "expect": "There's a mistake on the bill, and the soup was extra.",
+        "expect": "There's a mistake on the bill. We didn't order the soup.",
         "keywords": [
           "mistake",
           "soup"

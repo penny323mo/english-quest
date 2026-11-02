@@ -73,11 +73,11 @@
       "id": "t18-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Should I open this bag now, and is the watch receipt enough?",
-      "glossYue": "我而家開呢個袋，手錶嘅收據夠唔夠？",
+      "text": "Should I open this bag now? Is the watch receipt enough?",
+      "glossYue": "我而家開呢個袋？手錶嘅收據夠唔夠？",
       "audio": "assets/audio/lines/t18-l3.mp3",
       "audioSlow": "assets/audio/lines/t18-l3-slow.mp3",
-      "say": "Should I open this bag now, and is the watch receipt enough?",
+      "say": "Should I open this bag now? Is the watch receipt enough?",
       "hideGloss": false
     },
     {
@@ -146,7 +146,7 @@
         "line": "No. Those gifts don't need a customs form.",
         "audio": "assets/audio/lines/t18-l2.mp3",
         "audioSlow": "assets/audio/lines/t18-l2-slow.mp3",
-        "expect": "Should I open this bag now, and is the watch receipt enough?",
+        "expect": "Should I open this bag now? Is the watch receipt enough?",
         "keywords": [
           "open",
           "receipt"
@@ -257,7 +257,7 @@
       "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
         "Do I need to declare these gifts if they are under the limit?",
-        "Should I open this bag now, and is the watch receipt enough?",
+        "Should I open this bag now? Is the watch receipt enough?",
         "This bottle of alcohol is over the allowance. What should I pay?"
       ],
       "answer": 1,

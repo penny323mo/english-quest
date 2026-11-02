@@ -29,11 +29,11 @@
       "id": "d1-l1",
       "speaker": "wen",
       "speakerLabel": "Wen",
-      "text": "Good morning. What brings you in to the clinic today, and how do you feel?",
-      "glossYue": "早晨。今日咩事嚟診所，你覺得點？",
+      "text": "Good morning. What brings you in today? How do you feel?",
+      "glossYue": "早晨。今日咩事嚟？你覺得點？",
       "audio": "assets/audio/lines/d1-l1.mp3",
       "audioSlow": "assets/audio/lines/d1-l1-slow.mp3",
-      "say": "Good morning. What brings you in to the clinic today, and how do you feel?",
+      "say": "Good morning. What brings you in today? How do you feel?",
       "hideGloss": false
     },
     {
@@ -73,22 +73,22 @@
       "id": "d1-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have had a cough since Monday. I can rest after the pharmacy visit.",
-      "glossYue": "我由星期一起咳。去完藥房我可以休息。",
+      "text": "I have had a cough since Monday. I need to rest.",
+      "glossYue": "我由星期一起咳。我需要休息。",
       "audio": "assets/audio/lines/d1-l5.mp3",
       "audioSlow": "assets/audio/lines/d1-l5-slow.mp3",
-      "say": "I have had a cough since Monday. I can rest after the pharmacy visit.",
+      "say": "I have had a cough since Monday. I need to rest.",
       "hideGloss": false
     },
     {
       "id": "d1-l6",
       "speaker": "wen",
       "speakerLabel": "Wen",
-      "text": "You can rest at home, and the pharmacy can prepare this prescription for you there.",
-      "glossYue": "你可以喺屋企休息，藥房嗰度可以幫你配呢張藥單。",
+      "text": "You can rest at home. Please take this prescription to the pharmacy.",
+      "glossYue": "你可以喺屋企休息。請帶呢張藥單去藥房。",
       "audio": "assets/audio/lines/d1-l6.mp3",
       "audioSlow": "assets/audio/lines/d1-l6-slow.mp3",
-      "say": "You can rest at home, and the pharmacy can prepare this prescription for you there.",
+      "say": "You can rest at home. Please take this prescription to the pharmacy.",
       "hideGloss": true
     },
     {
@@ -106,11 +106,11 @@
       "id": "d1-l8",
       "speaker": "wen",
       "speakerLabel": "Wen",
-      "text": "Please rest well. The clinic can see you for a follow-up after the pharmacy.",
-      "glossYue": "請你好好休息。去完藥房診所可以同你覆診。",
+      "text": "Please rest well. Come back for a follow-up if the cough stays.",
+      "glossYue": "請好好休息。如果仲咳，返嚟覆診。",
       "audio": "assets/audio/lines/d1-l8.mp3",
       "audioSlow": "assets/audio/lines/d1-l8-slow.mp3",
-      "say": "Please rest well. The clinic can see you for a follow-up after the pharmacy.",
+      "say": "Please rest well. Come back for a follow-up if the cough stays.",
       "hideGloss": false
     }
   ],
@@ -171,7 +171,7 @@
     },
     {
       "pattern": "You can rest at home, and the ___ can prepare this prescription for you there.",
-      "example": "You can rest at home, and the pharmacy can prepare this prescription for you there.",
+      "example": "You can rest at home. Please take this prescription to the pharmacy.",
       "glossYue": "⋯⋯今日可以配藥。",
       "answer": "pharmacy",
       "choices": [
@@ -181,9 +181,9 @@
       ]
     },
     {
-      "pattern": "Please rest well, and the clinic can see you for a ___ after the pharmacy.",
-      "example": "Please rest well. The clinic can see you for a follow-up after the pharmacy.",
-      "glossYue": "去完藥房可以⋯⋯。",
+      "pattern": "Please rest well. Come back for a ___ if the cough stays.",
+      "example": "Please rest well. Come back for a follow-up if the cough stays.",
+      "glossYue": "請好好休息。如果仲咳，返嚟覆診。",
       "answer": "follow-up",
       "choices": [
         "follow-up",
@@ -194,7 +194,7 @@
   ],
   "shadow": {
     "lineId": "d1-l5",
-    "hint": "I have had a cough since Monday. I can rest after the pharmacy visit."
+    "hint": "I have had a cough since Monday. I need to rest."
   },
   "build": [
     {
@@ -234,7 +234,7 @@
       {
         "partner": "Wen",
         "partnerId": "wen",
-        "line": "Good morning. What brings you in to the clinic today, and how do you feel?",
+        "line": "Good morning. What brings you in today? How do you feel?",
         "audio": "assets/audio/lines/d1-l1.mp3",
         "audioSlow": "assets/audio/lines/d1-l1-slow.mp3",
         "expect": "I have had a fever and cough since Monday.",
@@ -262,7 +262,7 @@
       {
         "partner": "Wen",
         "partnerId": "wen",
-        "line": "You can rest at home, and the pharmacy can prepare this prescription for you there.",
+        "line": "You can rest at home. Please take this prescription to the pharmacy.",
         "audio": "assets/audio/lines/d1-l6.mp3",
         "audioSlow": "assets/audio/lines/d1-l6-slow.mp3",
         "expect": "I will take the prescription to the pharmacy.",
@@ -310,7 +310,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「You can rest at home, and the pharmacy can prepare this prescription for you there.」，prescription 係咩意思？",
+      "prompt": "客人講「You can rest at home. Please take this prescription to the pharmacy.」，prescription 係咩意思？",
       "choices": [
         "議程",
         "毛巾",
