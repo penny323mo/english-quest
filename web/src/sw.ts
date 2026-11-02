@@ -1,6 +1,6 @@
 /// <reference lib="webworker" />
 import { cleanupOutdatedCaches, precacheAndRoute } from "workbox-precaching";
-import { cacheNames, clientsClaim } from "workbox-core";
+import { cacheNames } from "workbox-core";
 import { registerRoute } from "workbox-routing";
 import { NetworkOnly } from "workbox-strategies";
 import type { PrecacheEntry } from "workbox-precaching";
@@ -20,7 +20,6 @@ function entryUrl(entry: PrecacheEntry | string): string {
 const manifest = self.__WB_MANIFEST.filter((entry) => !SHELL.test(entryUrl(entry)));
 
 self.skipWaiting();
-clientsClaim();
 cleanupOutdatedCaches();
 precacheAndRoute(manifest);
 
@@ -36,11 +35,23 @@ self.addEventListener("message", (event: ExtendableMessageEvent) => {
 
 self.addEventListener("activate", (event) => {
   event.waitUntil((async () => {
-    await self.clients.claim();
     const keep = cacheNames.precache;
+    const allowed = new Set(manifest.map((entry) => new URL(entryUrl(entry), self.registration.scope).pathname));
     const keys = await caches.keys();
-    await Promise.all(keys.filter((key) => key !== keep).map((key) => caches.delete(key)));
-    // The fix-55 page reloads itself on controllerchange. A second
-    // client.navigate here was the ?eqfresh=1 hop.
+    await Promise.all(keys.map(async (key) => {
+      if (key !== keep) {
+        await caches.delete(key);
+        return;
+      }
+      const cache = await caches.open(key);
+      const requests = await cache.keys();
+      await Promise.all(requests.map((request) => {
+        const pathname = new URL(request.url).pathname;
+        if (allowed.has(pathname)) return undefined;
+        return cache.delete(request);
+      }));
+    }));
+    // clientsClaim after the purge, so the fix-55 reload is not served the old shell.
+    await self.clients.claim();
   })());
 });

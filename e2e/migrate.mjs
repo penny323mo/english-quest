@@ -85,6 +85,132 @@ function isOldShell(html) {
   return html.includes(oldBundle) || html.includes("舊版深色");
 }
 
+const SEEDED_STATE = {
+  schemaVersion: 3,
+  profile: {
+    name: "Penny",
+    goal: "jewellery",
+    minutes: 15,
+    level: "some",
+    jyutping: false,
+    sound: true,
+    xp: 48,
+    streak: 3,
+    lastActive: "2026-11-01",
+  },
+  progress: {
+    F1: { at: "2026-11-01T01:00:00.000Z", xp: 20 },
+    F2: { at: "2026-11-01T02:00:00.000Z", xp: 28 },
+  },
+  cards: {},
+  lessonCursor: { lessonId: "F3", beat: 2, sub: 1, quizScore: 0, quizAnswered: 1 },
+};
+
+function stable(value) {
+  if (Array.isArray(value)) return `[${value.map(stable).join(",")}]`;
+  if (value && typeof value === "object") {
+    return `{${Object.keys(value).sort().map((key) => `${JSON.stringify(key)}:${stable(value[key])}`).join(",")}}`;
+  }
+  return JSON.stringify(value);
+}
+
+async function dumpStorage() {
+  const local = {};
+  for (let i = 0; i < localStorage.length; i += 1) {
+    const key = localStorage.key(i);
+    local[key] = localStorage.getItem(key);
+  }
+  const session = {};
+  for (let i = 0; i < sessionStorage.length; i += 1) {
+    const key = sessionStorage.key(i);
+    if (key === "eq-skip-claim") continue;
+    session[key] = sessionStorage.getItem(key);
+  }
+  const databases = ["english-quest", "eq-canary-db"];
+  const idb = {};
+  for (const name of databases) {
+    idb[name] = await new Promise((resolve, reject) => {
+      const req = indexedDB.open(name);
+      req.onerror = () => reject(req.error);
+      req.onsuccess = () => {
+        const db = req.result;
+        const names = [...db.objectStoreNames];
+        if (!names.length) {
+          db.close();
+          resolve({});
+          return;
+        }
+        const tx = db.transaction(names, "readonly");
+        const out = {};
+        let left = names.length;
+        for (const storeName of names) {
+          const store = tx.objectStore(storeName);
+          const keysReq = store.getAllKeys();
+          const valsReq = store.getAll();
+          let keys = null;
+          let vals = null;
+          const finish = () => {
+            if (!keys || !vals) return;
+            const rows = {};
+            keys.forEach((key, index) => {
+              rows[String(key)] = vals[index];
+            });
+            out[storeName] = rows;
+            left -= 1;
+            if (left === 0) {
+              db.close();
+              resolve(out);
+            }
+          };
+          keysReq.onsuccess = () => { keys = keysReq.result; finish(); };
+          valsReq.onsuccess = () => { vals = valsReq.result; finish(); };
+          keysReq.onerror = () => reject(keysReq.error);
+          valsReq.onerror = () => reject(valsReq.error);
+        }
+      };
+    });
+  }
+  return { local, session, idb };
+}
+
+async function cacheHoldsOldShell() {
+  const keys = await caches.keys();
+  const sample = [];
+  for (const key of keys) {
+    const cache = await caches.open(key);
+    const requests = await cache.keys();
+    sample.push(`${key} ${requests.length}`);
+    for (const request of requests) {
+      if (!/index\.html|SU0XYAkO|DPrmcngt|shell-/.test(request.url)) continue;
+      const response = await cache.match(request);
+      if (!response) continue;
+      const text = await response.text();
+      if (text.includes("index-SU0XYAkO") || text.includes("shell-DPrmcngt")) {
+        return { found: true, sample, hit: request.url };
+      }
+    }
+  }
+  return {
+    found: false,
+    sample,
+    controller: navigator.serviceWorker.controller ? navigator.serviceWorker.controller.scriptURL : "none",
+  };
+}
+
+function forbidStorageWipes() {
+  const files = ["web/index.html", "web/src/sw.ts", "web/src/main.tsx"];
+  const banned = ["localStorage.clear", "sessionStorage.clear", "indexedDB.deleteDatabase", "Clear-Site-Data"];
+  const hits = [];
+  for (const file of files) {
+    const text = fs.readFileSync(path.join(root, file), "utf8");
+    for (const token of banned) {
+      if (text.includes(token)) hits.push(`${file} ${token}`);
+    }
+  }
+  console.log(`assert kill-switch does not wipe storage: ${hits.length ? "FAIL" : "pass"}`);
+  if (hits.length) throw new Error(hits.join("; "));
+}
+
 async function migrate(browserType, scheme) {
   site = "legacy";
   const browser = await browserType.launch();
@@ -99,10 +225,48 @@ async function migrate(browserType, scheme) {
     docs.push(res.text().then((body) => ({ url: res.url(), body })).catch(() => ({ url: res.url(), body: "" })));
   });
   await page.goto(origin, { waitUntil: "domcontentloaded" });
-  await page.waitForFunction(async () => {
-    const reg = await navigator.serviceWorker.getRegistration();
-    return Boolean(reg?.active && navigator.serviceWorker.controller);
-  });
+  await page.waitForFunction(() => navigator.serviceWorker.controller !== null);
+  await page.waitForLoadState("domcontentloaded").catch(() => {});
+  await page.waitForTimeout(1000);
+  await page.waitForLoadState("domcontentloaded").catch(() => {});
+  const oldCached = await page.evaluate(cacheHoldsOldShell);
+  console.log(`assert old cache holds fix-55 shell before migrate: ${oldCached.found ? "pass" : "FAIL"} controller=${oldCached.controller} ${oldCached.sample.join(" | ")}`);
+  if (!oldCached.found) throw new Error("old service worker did not cache its shell");
+  await page.evaluate(async (state) => {
+    localStorage.setItem("eq-canary", "penny-local-48");
+    sessionStorage.setItem("eq-session-canary", "penny-session-48");
+    const open = (name, version, setup) => new Promise((resolve, reject) => {
+      const req = indexedDB.open(name, version);
+      req.onupgradeneeded = () => setup(req.result);
+      req.onsuccess = () => resolve(req.result);
+      req.onerror = () => reject(req.error);
+    });
+    const app = await open("english-quest", 2, (db) => {
+      if (!db.objectStoreNames.contains("kv")) db.createObjectStore("kv");
+    });
+    await new Promise((resolve, reject) => {
+      const tx = app.transaction("kv", "readwrite");
+      tx.objectStore("kv").put(state, "state");
+      tx.objectStore("kv").put("penny-idb-48", "eq-canary");
+      tx.oncomplete = () => resolve();
+      tx.onerror = () => reject(tx.error);
+    });
+    app.close();
+    const extra = await open("eq-canary-db", 1, (db) => {
+      if (!db.objectStoreNames.contains("kv")) db.createObjectStore("kv");
+    });
+    await new Promise((resolve, reject) => {
+      const tx = extra.transaction("kv", "readwrite");
+      tx.objectStore("kv").put({ marker: "penny-idb-db-48" }, "canary");
+      tx.oncomplete = () => resolve();
+      tx.onerror = () => reject(tx.error);
+    });
+    extra.close();
+  }, SEEDED_STATE);
+  await page.reload({ waitUntil: "domcontentloaded" });
+  await page.getByText("Penny", { exact: false }).first().waitFor();
+  await page.getByText("48 XP").waitFor();
+  const before = await page.evaluate(dumpStorage);
   recording = true;
   const shots = [];
   let chain = Promise.resolve();
@@ -154,9 +318,47 @@ async function migrate(browserType, scheme) {
   const html = await page.content();
   if (!html.includes(newBundle)) throw new Error(`${browserType.name()} ${scheme} final bundle is not ${newBundle}`);
   if (html.includes(oldBundle)) throw new Error(`${browserType.name()} ${scheme} final page still references ${oldBundle}`);
-  const finalShot = path.join(shotsDir(browserType, scheme), "final.png");
-  await page.screenshot({ path: finalShot });
-  console.log("shot", finalShot);
+  await page.getByText("48 XP").waitFor();
+  await page.getByText("2 / 97 課完成").waitFor();
+  await page.getByText("未完成：數字、錢同時間").waitFor();
+  const home = await page.locator(".phone").innerText();
+  const homeBits = ["Penny", "48 XP", "連續 3 日", "2 / 97 課完成", "未完成：數字、錢同時間"];
+  for (const bit of homeBits) {
+    const ok = home.includes(bit);
+    console.log(`assert ${browserType.name()} ${scheme} home ${bit}: ${ok ? "pass" : "FAIL"}`);
+    if (!ok) throw new Error(`home missing ${bit}`);
+  }
+  const after = await page.evaluate(dumpStorage);
+  for (const part of ["local", "session", "idb"]) {
+    const ok = stable(before[part]) === stable(after[part]);
+    console.log(`assert ${browserType.name()} ${scheme} ${part} identical: ${ok ? "pass" : "FAIL"}`);
+    if (!ok) {
+      console.log("before", stable(before[part]));
+      console.log("after", stable(after[part]));
+      throw new Error(`${part} changed`);
+    }
+  }
+  let stillCached = await page.evaluate(cacheHoldsOldShell);
+  for (let attempt = 0; stillCached.found && attempt < 20; attempt += 1) {
+    await page.waitForTimeout(250);
+    stillCached = await page.evaluate(cacheHoldsOldShell);
+  }
+  console.log(`assert ${browserType.name()} ${scheme} old shell left cache: ${stillCached.found ? "FAIL" : "pass"} ${stillCached.hit || ""}`);
+  if (stillCached.found) throw new Error(`old shell is still in Cache Storage: ${stillCached.hit}`);
+  const sw = await page.evaluate(async () => {
+    const regs = await navigator.serviceWorker.getRegistrations();
+    return {
+      count: regs.length,
+      scripts: regs.map((reg) => reg.active?.scriptURL || reg.installing?.scriptURL || ""),
+      controller: navigator.serviceWorker.controller?.scriptURL || "",
+    };
+  });
+  const swOk = sw.count === 1 && sw.controller.endsWith("/sw.js") && !sw.controller.includes("SU0XYAkO");
+  console.log(`assert ${browserType.name()} ${scheme} service worker replaced: ${swOk ? "pass" : "FAIL"} ${sw.controller}`);
+  if (!swOk) throw new Error(`service worker registration ${JSON.stringify(sw)}`);
+  const homeShot = path.join(shotsDir(browserType, scheme), "home.png");
+  await page.screenshot({ path: homeShot });
+  console.log("shot", homeShot);
   await browser.close();
   return reloads;
 }
@@ -166,6 +368,7 @@ function shotsDir(browserType, scheme) {
 }
 
 try {
+  forbidStorageWipes();
   const filter = process.argv[2];
   const jobs = [
     [webkit, "light"],
