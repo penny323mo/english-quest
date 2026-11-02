@@ -30,11 +30,11 @@
       "id": "d3-l1",
       "speaker": "lea",
       "speakerLabel": "Lea",
-      "text": "Good morning. I can show you this furnished flat on this viewing.",
-      "glossYue": "早晨。我可以帶你睇呢間有傢俬嘅單位，呢次睇樓。",
+      "text": "Good morning. Let me show you this furnished flat.",
+      "glossYue": "早晨。我帶你睇呢間有傢俬嘅單位。",
       "audio": "assets/audio/lines/d3-l1.mp3",
       "audioSlow": "assets/audio/lines/d3-l1-slow.mp3",
-      "say": "Good morning. I can show you this furnished flat on this viewing.",
+      "say": "Good morning. Let me show you this furnished flat.",
       "hideGloss": false
     },
     {
@@ -233,7 +233,7 @@
       {
         "partner": "Lea",
         "partnerId": "lea",
-        "line": "Good morning. I can show you this furnished flat on this viewing.",
+        "line": "Good morning. Let me show you this furnished flat.",
         "audio": "assets/audio/lines/d3-l1.mp3",
         "audioSlow": "assets/audio/lines/d3-l1-slow.mp3",
         "expect": "How much is the rent here, please, and are the utilities included?",

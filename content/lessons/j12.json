@@ -33,11 +33,11 @@
       "id": "j12-l1",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Good morning, you are calling the jewellery shop.",
-      "glossYue": "早晨，你打嚟珠寶舖。",
+      "text": "Good morning. This is the jewellery shop.",
+      "glossYue": "早晨。呢度係珠寶舖。",
       "audio": "assets/audio/lines/j12-l1.mp3",
       "audioSlow": "assets/audio/lines/j12-l1-slow.mp3",
-      "say": "Good morning, you are calling the jewellery shop.",
+      "say": "Good morning. This is the jewellery shop.",
       "hideGloss": false
     },
     {
@@ -110,11 +110,11 @@
       "id": "j12-l8",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "I will leave a short message, and I note the piece is available for you to gather this Friday.",
-      "glossYue": "我會留低訊息，我記低嗰件星期五可以攞。",
+      "text": "I'll leave a short message, and you can collect the piece this Friday.",
+      "glossYue": "我會留低短訊，你星期五可以嚟攞嗰件。",
       "audio": "assets/audio/lines/j12-l8.mp3",
       "audioSlow": "assets/audio/lines/j12-l8-slow.mp3",
-      "say": "I will leave a short message, and I note the piece is available for you to gather this Friday.",
+      "say": "I'll leave a short message, and you can collect the piece this Friday.",
       "hideGloss": true
     }
   ],
@@ -227,7 +227,7 @@
       {
         "partner": "Kai",
         "partnerId": "kai",
-        "line": "Good morning, you are calling the jewellery shop.",
+        "line": "Good morning. This is the jewellery shop.",
         "audio": "assets/audio/lines/j12-l1.mp3",
         "audioSlow": "assets/audio/lines/j12-l1-slow.mp3",
         "expect": "Have you kept a similar gold bracelet in stock, and is one still available today?",

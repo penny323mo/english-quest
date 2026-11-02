@@ -37,11 +37,11 @@
       "id": "j11-l1",
       "speaker": "ada",
       "speakerLabel": "Ada",
-      "text": "Good morning. I was wondering whether this special occasion is an anniversary or a quiet engagement this month.",
-      "glossYue": "早晨。我想問呢個特別場合係週年，定係低調慶祝訂婚。",
+      "text": "Good morning. Is the occasion an anniversary, or an engagement?",
+      "glossYue": "早晨。呢個場合係週年，定係訂婚？",
       "audio": "assets/audio/lines/j11-l1.mp3",
       "audioSlow": "assets/audio/lines/j11-l1-slow.mp3",
-      "say": "Good morning. I was wondering whether this special occasion is an anniversary or a quiet engagement this month.",
+      "say": "Good morning. Is the occasion an anniversary, or an engagement?",
       "hideGloss": false
     },
     {
@@ -114,24 +114,24 @@
       "id": "j11-l8",
       "speaker": "ada",
       "speakerLabel": "Ada",
-      "text": "If you confirmed the deposit, I would book a follow-up and protect the exclusivity of the design.",
-      "glossYue": "如果你確認訂金，我會約跟進，同埋保住呢個設計嘅獨家。",
+      "text": "If you confirmed the deposit, I would book a follow-up and keep the design exclusive to you.",
+      "glossYue": "如果你確認訂金，我會約跟進，同埋將個設計獨家留畀你。",
       "audio": "assets/audio/lines/j11-l8.mp3",
       "audioSlow": "assets/audio/lines/j11-l8-slow.mp3",
-      "say": "If you confirmed the deposit, I would book a follow-up and protect the exclusivity of the design.",
+      "say": "If you confirmed the deposit, I would book a follow-up and keep the design exclusive to you.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "I was wondering whether this occasion is an anniversary? 即係問緊咩？",
+      "prompt": "Is the occasion an anniversary, or an engagement? 即係問緊咩？",
       "choices": [
-        "婉轉問呢個場合係咪週年",
+        "問場合係週年定訂婚",
         "話已經落咗訂金",
         "問件貨係咪搶眼款"
       ],
       "answer": 0,
-      "explain": "I was wondering whether 係婉轉嘅間接問句。"
+      "explain": "直接問場合係週年定訂婚。"
     },
     {
       "prompt": "If you chose a contemporary piece, would you like it understated? 即係問緊咩？",
@@ -231,7 +231,7 @@
       {
         "partner": "Ada",
         "partnerId": "ada",
-        "line": "Good morning. I was wondering whether this special occasion is an anniversary or a quiet engagement this month.",
+        "line": "Good morning. Is the occasion an anniversary, or an engagement?",
         "audio": "assets/audio/lines/j11-l1.mp3",
         "audioSlow": "assets/audio/lines/j11-l1-slow.mp3",
         "expect": "The occasion is an anniversary dinner.",
@@ -307,7 +307,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「If you confirmed the deposit, I would book a follow-up and protect the exclusivity of the design.」，exclusivity 係咩意思？",
+      "prompt": "客人講「If you confirmed the deposit, I would book a follow-up and keep the design exclusive to you.」，exclusive 係咩意思？",
       "choices": [
         "獨家",
         "低調",

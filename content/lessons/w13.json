@@ -51,11 +51,11 @@
       "id": "w13-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could you tell me where the design draft stands for the client milestone?",
-      "glossYue": "可唔可以話我知，設計草稿對住客戶里程碑去到邊？",
+      "text": "Could you tell me how the design draft is going for the client milestone?",
+      "glossYue": "可唔可以話我知，客戶里程碑嗰份設計草稿去到邊？",
       "audio": "assets/audio/lines/w13-l1.mp3",
       "audioSlow": "assets/audio/lines/w13-l1-slow.mp3",
-      "say": "Could you tell me where the design draft stands for the client milestone?",
+      "say": "Could you tell me how the design draft is going for the client milestone?",
       "hideGloss": false
     },
     {
@@ -186,7 +186,7 @@
   },
   "understand": [
     {
-      "prompt": "Could you tell me where the design draft stands for the client milestone? 呢句即係點？",
+      "prompt": "Could you tell me how the design draft is going for the client milestone? 呢句即係點？",
       "choices": [
         "關於阻礙",
         "講緊草稿",
@@ -219,7 +219,7 @@
   "chunks": [
     {
       "pattern": "Could you tell me where the design ___ stands for the client milestone?",
-      "example": "Could you tell me where the design draft stands for the client milestone?",
+      "example": "Could you tell me how the design draft is going for the client milestone?",
       "glossYue": "可唔可以話我知，設計草稿對住客戶里程碑去到邊？",
       "answer": "draft",
       "choices": [
@@ -256,7 +256,7 @@
       "type": "choice",
       "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
-        "Could you tell me where the design draft stands for the client milestone?",
+        "Could you tell me how the design draft is going for the client milestone?",
         "What blocker is holding the logo file back for that review?",
         "Who will present the slide deck if the logo arrives one day late?"
       ],
@@ -323,7 +323,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Could you tell me where the design draft stands for the client milestone? 呢句入面，邊個意思先啱？",
+      "prompt": "Could you tell me how the design draft is going for the client milestone? 呢句入面，邊個意思先啱？",
       "choices": [
         "草稿",
         "阻礙",
@@ -333,7 +333,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Could you tell me where the design draft stands for the client milestone? 呢句入面，邊個意思先啱？",
+      "prompt": "Could you tell me how the design draft is going for the client milestone? 呢句入面，邊個意思先啱？",
       "choices": [
         "阻礙",
         "投影片",
@@ -343,7 +343,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Could you tell me where the design draft stands for the client ___? 呢句入面，邊個字先啱？",
+      "prompt": "Could you tell me how the design draft is going for the client ___? 呢句入面，邊個字先啱？",
       "choices": [
         "read",
         "milestone",
@@ -355,6 +355,6 @@
   ],
   "shadow": {
     "lineId": "w13-l1",
-    "hint": "Could you tell me where the design draft stands for the client milestone?"
+    "hint": "Could you tell me how the design draft is going for the client milestone?"
   }
 }

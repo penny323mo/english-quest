@@ -99,11 +99,11 @@
       "id": "r6-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Please confirm the booking, and what time do we come?",
-      "glossYue": "請確認訂位，我哋大概幾點嚟？",
+      "text": "Please confirm the booking. What time should we come?",
+      "glossYue": "請確認訂位。我哋應該幾點嚟？",
       "audio": "assets/audio/lines/r6-l7.mp3",
       "audioSlow": "assets/audio/lines/r6-l7-slow.mp3",
-      "say": "Please confirm the booking, and what time do we come?",
+      "say": "Please confirm the booking. What time should we come?",
       "hideGloss": true
     },
     {
@@ -140,7 +140,7 @@
       "explain": "cancel the outdoor seat 係唔要室外。"
     },
     {
-      "prompt": "Please confirm the booking, and what time do we come? 即係問緊咩？",
+      "prompt": "Please confirm the booking. What time should we come? 即係問緊咩？",
       "choices": [
         "問窗邊幾多錢",
         "請確認，再問大概幾點",
@@ -175,7 +175,7 @@
     },
     {
       "pattern": "Please ___ the booking, and what time do we come?",
-      "example": "Please confirm the booking, and what time do we come?",
+      "example": "Please confirm the booking. What time should we come?",
       "glossYue": "請⋯⋯個訂位。",
       "answer": "confirm",
       "choices": [
@@ -256,7 +256,7 @@
         "line": "Those patio seats are booked, but I can add you to the waitlist.",
         "audio": "assets/audio/lines/r6-l6.mp3",
         "audioSlow": "assets/audio/lines/r6-l6-slow.mp3",
-        "expect": "Please confirm the booking, and what time do we come?",
+        "expect": "Please confirm the booking. What time should we come?",
         "keywords": [
           "confirm",
           "roughly"

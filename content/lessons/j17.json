@@ -78,11 +78,11 @@
       "id": "j17-l3",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "What's the usual price range roughly for these softer freshwater pearls on one short strand please?",
-      "glossYue": "呢一條短嘅軟身淡水珍珠，大概價錢範圍係幾多？",
+      "text": "What's the usual price for this short strand of freshwater pearls?",
+      "glossYue": "呢條短淡水珍珠大概幾多錢？",
       "audio": "assets/audio/lines/j17-l3.mp3",
       "audioSlow": "assets/audio/lines/j17-l3-slow.mp3",
-      "say": "What's the usual price range roughly for these softer freshwater pearls on one short strand please?",
+      "say": "What's the usual price for this short strand of freshwater pearls?",
       "hideGloss": false
     },
     {
@@ -122,11 +122,11 @@
       "id": "j17-l7",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Does this shorter strand come with a printed certificate kept inside one small gift box too?",
-      "glossYue": "呢條短嘅有冇證書，放喺一個小禮盒入面？",
+      "text": "Does this shorter strand come with a certificate in the box?",
+      "glossYue": "呢條短嘅有冇證書喺盒入面？",
       "audio": "assets/audio/lines/j17-l7.mp3",
       "audioSlow": "assets/audio/lines/j17-l7-slow.mp3",
-      "say": "Does this shorter strand come with a printed certificate kept inside one small gift box too?",
+      "say": "Does this shorter strand come with a certificate in the box?",
       "hideGloss": false
     },
     {
@@ -214,7 +214,7 @@
       "promptYue": "你想問淡水同鹹水有咩分別。你點講？",
       "choices": [
         "I'm looking for a short pearl necklace. What's the real difference between freshwater and saltwater pearls?",
-        "What's the usual price range roughly for these softer freshwater pearls on one short strand please?",
+        "What's the usual price for this short strand of freshwater pearls?",
         "I'll take this shorter one. How should I look after the pearl strand back at home?"
       ],
       "answer": 0,
@@ -243,7 +243,7 @@
         "line": "Saltwater pearls have a brighter lustre.",
         "audio": "assets/audio/lines/j17-l2.mp3",
         "audioSlow": "assets/audio/lines/j17-l2-slow.mp3",
-        "expect": "What's the usual price range roughly for these softer freshwater pearls on one short strand please?",
+        "expect": "What's the usual price for this short strand of freshwater pearls?",
         "keywords": [
           "price",
           "freshwater"
@@ -270,7 +270,7 @@
         "line": "Wipe the pearl, then put perfume on.",
         "audio": "assets/audio/lines/j17-l6.mp3",
         "audioSlow": "assets/audio/lines/j17-l6-slow.mp3",
-        "expect": "Does this shorter strand come with a printed certificate kept inside one small gift box too?",
+        "expect": "Does this shorter strand come with a certificate in the box?",
         "keywords": [
           "certificate"
         ],

@@ -31,11 +31,11 @@
       "id": "j9-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "I'm sorry that there is a problem, so I'll listen before I offer a repair.",
-      "glossYue": "唔好意思有個問題，所以我會先聽，先提出修理。",
+      "text": "I'm sorry that there's a problem, so I'll listen before I offer a repair.",
+      "glossYue": "唔好意思有問題，所以我聽完先提出修理。",
       "audio": "assets/audio/lines/j9-l1.mp3",
       "audioSlow": "assets/audio/lines/j9-l1-slow.mp3",
-      "say": "I'm sorry that there is a problem, so I'll listen before I offer a repair.",
+      "say": "I'm sorry that there's a problem, so I'll listen before I offer a repair.",
       "hideGloss": false
     },
     {
@@ -53,11 +53,11 @@
       "id": "j9-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "I apologize when we've caused trouble, so I understand that you feel upset.",
-      "glossYue": "我哋造成麻煩嗰陣我會道歉，所以我明白你覺得難過。",
+      "text": "When we've caused trouble, I'm sorry, so I understand that you're upset.",
+      "glossYue": "我哋造成麻煩嗰陣我會道歉，所以我明白你唔開心。",
       "audio": "assets/audio/lines/j9-l3.mp3",
       "audioSlow": "assets/audio/lines/j9-l3-slow.mp3",
-      "say": "I apologize when we've caused trouble, so I understand that you feel upset.",
+      "say": "When we've caused trouble, I'm sorry, so I understand that you're upset.",
       "hideGloss": true
     },
     {
@@ -109,7 +109,7 @@
       "speaker": "mei",
       "speakerLabel": "Mei",
       "text": "I'll write that complaint because it failed.",
-      "glossYue": "我會寫清楚嗰個投訴，因為佢壞咗。",
+      "glossYue": "我會寫低個投訴，因為佢壞咗。",
       "audio": "assets/audio/lines/j9-l8.mp3",
       "audioSlow": "assets/audio/lines/j9-l8-slow.mp3",
       "say": "I'll write that complaint because it failed.",
@@ -196,14 +196,14 @@
   ],
   "shadow": {
     "lineId": "j9-l3",
-    "hint": "I apologize when we've caused trouble, so I understand that you feel upset."
+    "hint": "When we've caused trouble, I'm sorry, so I understand that you're upset."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "客人個扣壞咗。你點先開口？",
       "choices": [
-        "I'm sorry that there is a problem, so I'll listen before I offer a repair.",
+        "I'm sorry that there's a problem, so I'll listen before I offer a repair.",
         "The taxi is here, and traffic is slow.",
         "I have lost my wallet."
       ],
@@ -241,7 +241,7 @@
         "line": "The clasp is broken, so I would like a repair or a refund.",
         "audio": "assets/audio/lines/j9-l2.mp3",
         "audioSlow": "assets/audio/lines/j9-l2-slow.mp3",
-        "expect": "I apologize when we've caused trouble, so I understand that you feel upset.",
+        "expect": "When we've caused trouble, I'm sorry, so I understand that you're upset.",
         "keywords": [
           "apologize",
           "understand"

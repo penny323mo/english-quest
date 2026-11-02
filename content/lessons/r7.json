@@ -97,11 +97,11 @@
       "id": "r7-l7",
       "speaker": "ruth",
       "speakerLabel": "Ruth",
-      "text": "Do not let the cold soup happen again when we come back for a side dish.",
-      "glossYue": "我哋下次返嚟食配菜，唔好再出凍湯。",
+      "text": "Please don't serve the soup cold again when we come back.",
+      "glossYue": "我哋下次返嚟，唔好再出凍湯。",
       "audio": "assets/audio/lines/r7-l7.mp3",
       "audioSlow": "assets/audio/lines/r7-l7-slow.mp3",
-      "say": "Do not let the cold soup happen again when we come back for a side dish.",
+      "say": "Please don't serve the soup cold again when we come back.",
       "hideGloss": true
     },
     {
@@ -254,7 +254,7 @@
         "line": "I will send that dessert right away, and I will tell the kitchen about the plate.",
         "audio": "assets/audio/lines/r7-l6.mp3",
         "audioSlow": "assets/audio/lines/r7-l6-slow.mp3",
-        "expect": "Do not let the cold soup happen again when we come back for a side dish.",
+        "expect": "Please don't serve the soup cold again when we come back.",
         "keywords": [
           "again",
           "soup"
