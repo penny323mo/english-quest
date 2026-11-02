@@ -81,11 +81,11 @@
       "id": "r10-l5",
       "speaker": "cleo",
       "speakerLabel": "Cleo",
-      "text": "Yes, oat milk, and the name Cleo on the cup.",
-      "glossYue": "好，用燕麥奶，杯上寫 Cleo 個名。",
+      "text": "Yes, oat milk, please, and the name Cleo on the cup.",
+      "glossYue": "好，燕麥奶唔該，杯上面寫 Cleo。",
       "audio": "assets/audio/lines/r10-l5.mp3",
       "audioSlow": "assets/audio/lines/r10-l5-slow.mp3",
-      "say": "Yes, oat milk, and the name Cleo on the cup.",
+      "say": "Yes, oat milk, please, and the name Cleo on the cup.",
       "hideGloss": false
     },
     {
@@ -246,7 +246,7 @@
         "line": "Would you like oat milk in the iced latte?",
         "audio": "assets/audio/lines/r10-l4.mp3",
         "audioSlow": "assets/audio/lines/r10-l4-slow.mp3",
-        "expect": "Yes, oat milk, and the name Cleo on the cup.",
+        "expect": "Yes, oat milk, please, and the name Cleo on the cup.",
         "keywords": [
           "oat",
           "name"
