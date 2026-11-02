@@ -87,11 +87,11 @@
       "id": "w9-l4",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Good. Please send me a handover note before you go.",
-      "glossYue": "好。你走之前請發一份交接筆記畀我。",
+      "text": "Good. Please email me a handover note before you go.",
+      "glossYue": "好。你走之前請發電郵做交接。",
       "audio": "assets/audio/lines/w9-l4.mp3",
       "audioSlow": "assets/audio/lines/w9-l4-slow.mp3",
-      "say": "Good. Please send me a handover note before you go.",
+      "say": "Good. Please email me a handover note before you go.",
       "hideGloss": false
     },
     {
@@ -151,7 +151,7 @@
       "explain": "年假。"
     },
     {
-      "prompt": "Good. Please send me a handover note before you go. 呢句即係點？",
+      "prompt": "Good. Please email me a handover note before you go. 呢句即係點？",
       "choices": [
         "講緊交接",
         "唔係年假",
@@ -252,7 +252,7 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "Good. Please send me a handover note before you go.",
+        "line": "Good. Please email me a handover note before you go.",
         "audio": "assets/audio/lines/w9-l4.mp3",
         "audioSlow": "assets/audio/lines/w9-l4-slow.mp3",
         "expect": "Sure. I'll email it to you and Jo on Friday morning.",
@@ -314,7 +314,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Good. Please send me a handover note before you go. 呢句入面，邊個意思先啱？",
+      "prompt": "Good. Please email me a handover note before you go. 呢句入面，邊個意思先啱？",
       "choices": [
         "批核",
         "交接",

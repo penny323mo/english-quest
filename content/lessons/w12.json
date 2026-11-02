@@ -118,7 +118,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Will you email a written summary after we set the next goals?",
-      "glossYue": "我哋定咗下一批目標之後，你會唔會電郵一份書面總結？",
+      "glossYue": "我哋定咗下一批目標之後，你會唔會發電郵講份總結？",
       "audio": "assets/audio/lines/w12-l7.mp3",
       "audioSlow": "assets/audio/lines/w12-l7-slow.mp3",
       "say": "Will you email a written summary after we set the next goals?",
@@ -128,11 +128,11 @@
       "id": "w12-l8",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Yes. I'll send that summary once we agree the new goals.",
-      "glossYue": "會。新目標同意之後我會寄嗰份總結。",
+      "text": "Yes. I'll email you that summary once we agree the new goals.",
+      "glossYue": "會。新目標同意之後我會發電郵講嗰份總結。",
       "audio": "assets/audio/lines/w12-l8.mp3",
       "audioSlow": "assets/audio/lines/w12-l8-slow.mp3",
-      "say": "Yes. I'll send that summary once we agree the new goals.",
+      "say": "Yes. I'll email you that summary once we agree the new goals.",
       "hideGloss": false
     }
   ],
@@ -174,7 +174,7 @@
         "line": "Yes. That training budget can still pay for the two-day sales class.",
         "audio": "assets/audio/lines/w12-l6.mp3",
         "audioSlow": "assets/audio/lines/w12-l6-slow.mp3",
-        "expect": "Will you email a written summary after we set the next goals?",
+        "expect": "Will you email me a summary after we set the next goals?",
         "keywords": [
           "summary",
           "goals"
@@ -206,7 +206,7 @@
       "explain": "季度。"
     },
     {
-      "prompt": "Yes. I'll send that summary once we agree the new goals. 呢句即係點？",
+      "prompt": "Yes. I'll email you that summary once we agree the new goals. 呢句即係點？",
       "choices": [
         "唔係季度",
         "關於績效",
@@ -241,7 +241,7 @@
     },
     {
       "pattern": "Will you email a written ___ after we set the next goals?",
-      "example": "Will you email a written summary after we set the next goals?",
+      "example": "Will you email me a summary after we set the next goals?",
       "glossYue": "我哋定咗下一批目標之後，你會唔會電郵一份書面總結？",
       "answer": "summary",
       "choices": [

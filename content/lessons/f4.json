@@ -44,21 +44,21 @@
       "id": "f4-l2",
       "speaker": "ling",
       "speakerLabel": "{{learner}}",
-      "text": "I'm sorry, I did not see you there.",
+      "text": "I'm sorry, I didn't see you there.",
       "glossYue": "對唔住，我冇見到你。",
       "audio": "assets/audio/lines/f4-l2.mp3",
       "audioSlow": "assets/audio/lines/f4-l2-slow.mp3",
-      "say": "I'm sorry, I did not see you there."
+      "say": "I'm sorry, I didn't see you there."
     },
     {
       "id": "f4-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "That's all right, please do not worry.",
+      "text": "That's all right, please don't worry.",
       "glossYue": "冇事，唔使擔心。",
       "audio": "assets/audio/lines/f4-l3.mp3",
       "audioSlow": "assets/audio/lines/f4-l3-slow.mp3",
-      "say": "That's all right, please do not worry."
+      "say": "That's all right, please don't worry."
     },
     {
       "id": "f4-l4",
@@ -198,7 +198,7 @@
         "line": "Excuse me, can you help me here please?",
         "audio": "assets/audio/lines/f4-l1.mp3",
         "audioSlow": "assets/audio/lines/f4-l1-slow.mp3",
-        "expect": "I'm sorry, I did not see you there.",
+        "expect": "I'm sorry, I didn't see you there.",
         "keywords": [
           "sorry"
         ],
@@ -208,7 +208,7 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "That's all right, please do not worry.",
+        "line": "That's all right, please don't worry.",
         "audio": "assets/audio/lines/f4-l3.mp3",
         "audioSlow": "assets/audio/lines/f4-l3-slow.mp3",
         "expect": "Thank you for saying that to me.",

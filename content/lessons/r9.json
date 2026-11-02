@@ -71,11 +71,11 @@
       "id": "r9-l5",
       "speaker": "eddy",
       "speakerLabel": "Eddy",
-      "text": "I will pay my separate amount with an Octopus card.",
-      "glossYue": "我用八達通畀我嗰份。",
+      "text": "I'll pay my separate amount with an Octopus card.",
+      "glossYue": "我用八達通畀我自己嗰份。",
       "audio": "assets/audio/lines/r9-l5.mp3",
       "audioSlow": "assets/audio/lines/r9-l5-slow.mp3",
-      "say": "I will pay my separate amount with an Octopus card.",
+      "say": "I'll pay my separate amount with an Octopus card.",
       "hideGloss": false
     },
     {
@@ -93,22 +93,22 @@
       "id": "r9-l7",
       "speaker": "eddy",
       "speakerLabel": "Eddy",
-      "text": "There is a mistake on the bill, and the soup was extra.",
-      "glossYue": "帳單有個錯，湯係額外嘅。",
+      "text": "There's a mistake on the bill, and the soup was extra.",
+      "glossYue": "張單有個錯，湯係額外加嘅。",
       "audio": "assets/audio/lines/r9-l7.mp3",
       "audioSlow": "assets/audio/lines/r9-l7-slow.mp3",
-      "say": "There is a mistake on the bill, and the soup was extra.",
+      "say": "There's a mistake on the bill, and the soup was extra.",
       "hideGloss": true
     },
     {
       "id": "r9-l8",
       "speaker": "nori",
       "speakerLabel": "Nori",
-      "text": "I will correct that mistake and bring the new bill.",
-      "glossYue": "我會改好嗰個錯，再帶新帳單嚟。",
+      "text": "I'll correct that mistake and bring the new bill.",
+      "glossYue": "我會改好個錯，再帶張新單嚟。",
       "audio": "assets/audio/lines/r9-l8.mp3",
       "audioSlow": "assets/audio/lines/r9-l8-slow.mp3",
-      "say": "I will correct that mistake and bring the new bill.",
+      "say": "I'll correct that mistake and bring the new bill.",
       "hideGloss": true
     }
   ],
@@ -134,7 +134,7 @@
       "explain": "split 係分開。"
     },
     {
-      "prompt": "There is a mistake on the bill, and the soup was extra. 呢句即係點？",
+      "prompt": "There's a mistake on the bill, and the soup was extra. 呢句即係點？",
       "choices": [
         "想用八達通改帳單",
         "帳單有錯，嗰碗湯唔係我哋叫嘅",
@@ -169,7 +169,7 @@
     },
     {
       "pattern": "I will pay my separate amount with an ___.",
-      "example": "I will pay my separate amount with an Octopus card.",
+      "example": "I'll pay my separate amount with an Octopus card.",
       "glossYue": "我用八達通付款。",
       "answer": "Octopus card",
       "choices": [
@@ -190,7 +190,7 @@
       "choices": [
         "Could we split the bill and get a separate receipt?",
         "Could we have the bill for this table before we leave?",
-        "There is a mistake on the bill, and the soup was extra."
+        "There's a mistake on the bill, and the soup was extra."
       ],
       "answer": 0,
       "explain": "講 split 同 receipt。"
@@ -238,7 +238,7 @@
         "line": "Yes, we can split it and show both amounts.",
         "audio": "assets/audio/lines/r9-l4.mp3",
         "audioSlow": "assets/audio/lines/r9-l4-slow.mp3",
-        "expect": "I will pay my separate amount with an Octopus card.",
+        "expect": "I'll pay my separate amount with an Octopus card.",
         "keywords": [
           "Octopus",
           "pay"
@@ -252,7 +252,7 @@
         "line": "I can take that Octopus card and print a receipt.",
         "audio": "assets/audio/lines/r9-l6.mp3",
         "audioSlow": "assets/audio/lines/r9-l6-slow.mp3",
-        "expect": "There is a mistake on the bill, and the soup was extra.",
+        "expect": "There's a mistake on the bill, and the soup was extra.",
         "keywords": [
           "mistake",
           "soup"

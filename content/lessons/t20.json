@@ -90,22 +90,22 @@
       "id": "t20-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "How early should I reach the checkpoint if the screening lane opens at noon sharp?",
-      "glossYue": "如果安檢線正午正開門，我應該幾早到檢查站？",
+      "text": "How early should I get to the checkpoint if security opens at noon?",
+      "glossYue": "如果安檢中午開門，我應該幾早到檢查站？",
       "audio": "assets/audio/lines/t20-l7.mp3",
       "audioSlow": "assets/audio/lines/t20-l7-slow.mp3",
-      "say": "How early should I reach the checkpoint if the screening lane opens at noon sharp?",
+      "say": "How early should I get to the checkpoint if security opens at noon?",
       "hideGloss": true
     },
     {
       "id": "t20-l8",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Please reach the checkpoint thirty minutes early, because that screening lane opens at noon sharp.",
-      "glossYue": "請早三十分鐘到檢查站，因為嗰條安檢線正午正開門。",
+      "text": "Please get to the checkpoint thirty minutes early, because security opens at noon.",
+      "glossYue": "請早三十分鐘到檢查站，因為安檢中午開門。",
       "audio": "assets/audio/lines/t20-l8.mp3",
       "audioSlow": "assets/audio/lines/t20-l8-slow.mp3",
-      "say": "Please reach the checkpoint thirty minutes early, because that screening lane opens at noon sharp.",
+      "say": "Please get to the checkpoint thirty minutes early, because security opens at noon.",
       "hideGloss": true
     }
   ],
@@ -131,7 +131,7 @@
       "explain": "錯過內檢查站，要問掃描器櫃檯位置。"
     },
     {
-      "prompt": "How early should I reach the checkpoint if the screening lane opens at noon sharp? 即係問緊咩？",
+      "prompt": "How early should I get to the checkpoint if security opens at noon? 即係問緊咩？",
       "choices": [
         "話箱已經上機",
         "問小費幾多",
@@ -247,7 +247,7 @@
         "line": "No. That grey case must use the scanner desk when the inner lane is shut.",
         "audio": "assets/audio/lines/t20-l6.mp3",
         "audioSlow": "assets/audio/lines/t20-l6-slow.mp3",
-        "expect": "How early should I reach the checkpoint if the screening lane opens at noon sharp?",
+        "expect": "How early should I get to the checkpoint if security opens at noon?",
         "keywords": [
           "screening",
           "checkpoint"
@@ -302,7 +302,7 @@
     },
     {
       "type": "choice",
-      "prompt": "How early should I reach the ___ if the screening lane opens at noon sharp? 呢句入面，邊個字先啱？",
+      "prompt": "How early should I get to the ___ if security opens at noon? 呢句入面，邊個字先啱？",
       "choices": [
         "Friday",
         "receipt",

@@ -90,22 +90,22 @@
       "id": "t21-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can I keep one small bag and check the big bag at the far carousel?",
-      "glossYue": "我可唔可以帶住一個細袋，大袋喺遠嘅行李轉盤托運？",
+      "text": "Can I keep one small bag and check the big bag at the counter?",
+      "glossYue": "我可唔可以帶住一個細袋，大袋喺櫃檯托運？",
       "audio": "assets/audio/lines/t21-l7.mp3",
       "audioSlow": "assets/audio/lines/t21-l7-slow.mp3",
-      "say": "Can I keep one small bag and check the big bag at the far carousel?",
+      "say": "Can I keep one small bag and check the big bag at the counter?",
       "hideGloss": true
     },
     {
       "id": "t21-l8",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "You can keep the small case and check the big one at that far carousel.",
-      "glossYue": "你可以帶住個細箱，大件喺遠嘅行李轉盤托運。",
+      "text": "You can keep the small case and collect the big one at that far carousel.",
+      "glossYue": "你可以帶住個細箱，大件喺遠嘅行李轉盤攞。",
       "audio": "assets/audio/lines/t21-l8.mp3",
       "audioSlow": "assets/audio/lines/t21-l8-slow.mp3",
-      "say": "You can keep the small case and check the big one at that far carousel.",
+      "say": "You can keep the small case and collect the big one at that far carousel.",
       "hideGloss": true
     }
   ],
@@ -131,7 +131,7 @@
       "explain": "轉機兩點走，問要幾早去入境處。"
     },
     {
-      "prompt": "Can I keep one small bag and check the big bag at the far carousel? 即係問緊咩？",
+      "prompt": "Can I keep one small bag and check the big bag at the counter? 即係問緊咩？",
       "choices": [
         "話兩個袋都要上機",
         "話兩個袋都要托運",
@@ -247,7 +247,7 @@
         "line": "Immigration is just through those doors.",
         "audio": "assets/audio/lines/t21-l6.mp3",
         "audioSlow": "assets/audio/lines/t21-l6-slow.mp3",
-        "expect": "Can I keep one small bag and check the big bag at the far carousel?",
+        "expect": "Can I keep one small bag and check the big bag at the counter?",
         "keywords": [
           "carousel",
           "bag"
@@ -292,11 +292,11 @@
     },
     {
       "type": "meaning",
-      "prompt": "Can I keep one small bag and check the big bag at the far carousel? 呢句入面，邊個意思先啱？",
+      "prompt": "Can I keep one small bag and check the big bag at the counter? 呢句入面，邊個意思先啱？",
       "choices": [
         "手鏈",
         "發票",
-        "行李轉盤"
+        "櫃檯"
       ],
       "answer": 2
     },

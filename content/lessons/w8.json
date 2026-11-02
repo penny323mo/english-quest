@@ -57,33 +57,33 @@
       "id": "w8-l3",
       "speaker": "sora",
       "speakerLabel": "Sora",
-      "text": "That sample run is behind schedule, and I own it.",
-      "glossYue": "嗰次樣辦落後咗，我負責。",
+      "text": "That sample is late, and I'm looking after it.",
+      "glossYue": "嗰次樣辦遲咗，我負責。",
       "audio": "assets/audio/lines/w8-l3.mp3",
       "audioSlow": "assets/audio/lines/w8-l3-slow.mp3",
-      "say": "That sample run is behind schedule, and I own it.",
+      "say": "That sample is late, and I'm looking after it.",
       "hideGloss": false
     },
     {
       "id": "w8-l4",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Can you follow up by Friday and send one written note?",
-      "glossYue": "你可唔可以星期五之前跟進，再寫一張字條？",
+      "text": "Can you follow up by Friday and send me an email?",
+      "glossYue": "你可唔可以星期五之前跟進，再發封電郵畀我？",
       "audio": "assets/audio/lines/w8-l4.mp3",
       "audioSlow": "assets/audio/lines/w8-l4-slow.mp3",
-      "say": "Can you follow up by Friday and send one written note?",
+      "say": "Can you follow up by Friday and send me an email?",
       "hideGloss": true
     },
     {
       "id": "w8-l5",
       "speaker": "sora",
       "speakerLabel": "Sora",
-      "text": "I will follow up by Friday and send the note that day.",
-      "glossYue": "我星期五之前會跟進，同日送出字條。",
+      "text": "I'll follow up by Friday and email you that day.",
+      "glossYue": "我星期五之前會跟進，同日發電郵畀你。",
       "audio": "assets/audio/lines/w8-l5.mp3",
       "audioSlow": "assets/audio/lines/w8-l5-slow.mp3",
-      "say": "I will follow up by Friday and send the note that day.",
+      "say": "I'll follow up by Friday and email you that day.",
       "hideGloss": true
     },
     {
@@ -112,11 +112,11 @@
       "id": "w8-l8",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Please send me that note after the meeting so I can read it.",
-      "glossYue": "會後請將張字條送嚟，等我睇。",
+      "text": "Please email me after the meeting so I can read it.",
+      "glossYue": "會後請發電郵畀我，等我睇。",
       "audio": "assets/audio/lines/w8-l8.mp3",
       "audioSlow": "assets/audio/lines/w8-l8-slow.mp3",
-      "say": "Please send me that note after the meeting so I can read it.",
+      "say": "Please email me after the meeting so I can read it.",
       "hideGloss": true
     }
   ],
@@ -166,7 +166,7 @@
     },
     {
       "pattern": "Can you ___ by Friday and send one written note?",
-      "example": "Can you follow up by Friday and send one written note?",
+      "example": "Can you follow up by Friday and send me an email?",
       "glossYue": "星期五之前跟進。",
       "answer": "follow up",
       "choices": [
@@ -176,12 +176,12 @@
       ]
     },
     {
-      "pattern": "The ___ is mine, and I will call the client Friday.",
-      "example": "The action item is mine, and I will call the client Friday.",
+      "pattern": "That ___ is mine, and I'll call the client on Friday.",
+      "example": "That task is mine, and I'll call the client on Friday.",
       "glossYue": "呢項行動我負責。",
-      "answer": "action item",
+      "answer": "task",
       "choices": [
-        "action item",
+        "task",
         "meeting",
         "on track"
       ]
@@ -196,8 +196,8 @@
       "type": "choice",
       "promptYue": "你話樣辦落後，你自己負責。你點講？",
       "choices": [
-        "That sample run is behind schedule, and I own it.",
-        "I will follow up by Friday and send the note that day.",
+        "That sample is late, and I'm looking after it.",
+        "I'll follow up by Friday and email you that day.",
         "That task is mine, and I'll call the client on Friday."
       ],
       "answer": 0,
@@ -230,7 +230,7 @@
         "line": "Which sample is running late, and who is looking after it?",
         "audio": "assets/audio/lines/w8-l2.mp3",
         "audioSlow": "assets/audio/lines/w8-l2-slow.mp3",
-        "expect": "That sample run is behind schedule, and I own it.",
+        "expect": "That sample is late, and I'm looking after it.",
         "keywords": [
           "behind",
           "schedule"
@@ -241,10 +241,10 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "Can you follow up by Friday and send one written note?",
+        "line": "Can you follow up by Friday and send me an email?",
         "audio": "assets/audio/lines/w8-l4.mp3",
         "audioSlow": "assets/audio/lines/w8-l4-slow.mp3",
-        "expect": "I will follow up by Friday and send the note that day.",
+        "expect": "I'll follow up by Friday and email you that day.",
         "keywords": [
           "Friday",
           "note"
@@ -303,7 +303,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "You say 'The action item is mine.' What does action item mean?",
+      "prompt": "You say 'That task is mine.' What does task mean?",
       "choices": [
         "行動",
         "進度",

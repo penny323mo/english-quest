@@ -86,11 +86,11 @@
       "id": "w4-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Yes, I think so. We can catch up later after the notes are on the table.",
-      "glossYue": "好。筆記放喺檯之後，我哋遲啲再傾。",
+      "text": "Yes, I think so. We can catch up later, after the agenda is out.",
+      "glossYue": "好。議程出咗之後，我哋遲啲再傾。",
       "audio": "assets/audio/lines/w4-l6.mp3",
       "audioSlow": "assets/audio/lines/w4-l6-slow.mp3",
-      "say": "Yes, I think so. We can catch up later after the notes are on the table.",
+      "say": "Yes, I think so. We can catch up later, after the agenda is out.",
       "hideGloss": true
     },
     {
@@ -173,7 +173,7 @@
     },
     {
       "pattern": "Yes, I think so. We can ___ later after the notes are on the table.",
-      "example": "Yes, I think so. We can catch up later after the notes are on the table.",
+      "example": "Yes, I think so. We can catch up later, after the agenda is out.",
       "glossYue": "我哋遲啲⋯⋯。",
       "answer": "catch up",
       "choices": [
@@ -254,7 +254,7 @@
         "line": "I am ready. Shall we go into the room before the team sits?",
         "audio": "assets/audio/lines/w4-l5.mp3",
         "audioSlow": "assets/audio/lines/w4-l5-slow.mp3",
-        "expect": "Yes, I think so. We can catch up later after the notes are on the table.",
+        "expect": "Yes, I think so. We can catch up later, after the agenda is out.",
         "keywords": [
           "catch",
           "later"
@@ -299,7 +299,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "同事講「Yes, I think so. We can catch up later after the notes are on the table.」，catch up later 係咩意思？",
+      "prompt": "同事講「Yes, I think so. We can catch up later, after the agenda is out.」，catch up later 係咩意思？",
       "choices": [
         "遲啲再傾",
         "而家取消",

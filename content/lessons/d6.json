@@ -41,11 +41,11 @@
       "id": "d6-l2",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "What symptom can I note for the pharmacist before we choose a box?",
-      "glossYue": "揀盒之前，我可以幫藥劑師記低邊個症狀？",
+      "text": "What should I tell the pharmacist before we choose a box?",
+      "glossYue": "揀盒之前，我應該話藥劑師知咩？",
       "audio": "assets/audio/lines/d6-l2.mp3",
       "audioSlow": "assets/audio/lines/d6-l2-slow.mp3",
-      "say": "What symptom can I note for the pharmacist before we choose a box?",
+      "say": "What should I tell the pharmacist before we choose a box?",
       "hideGloss": false
     },
     {
@@ -85,11 +85,11 @@
       "id": "d6-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can I take that one tablet after meals if it is safer?",
+      "text": "Can I take that one tablet after meals if it's safer?",
       "glossYue": "如果安全啲，我可唔可以飯後食嗰一粒藥片？",
       "audio": "assets/audio/lines/d6-l6.mp3",
       "audioSlow": "assets/audio/lines/d6-l6-slow.mp3",
-      "say": "Can I take that one tablet after meals if it is safer?",
+      "say": "Can I take that one tablet after meals if it's safer?",
       "hideGloss": true
     },
     {
@@ -107,11 +107,11 @@
       "id": "d6-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will call this pharmacy if that cough comes back.",
+      "text": "I'll call this pharmacy if that cough comes back.",
       "glossYue": "如果咳嗽再返嚟，我會打畀呢間藥房。",
       "audio": "assets/audio/lines/d6-l8.mp3",
       "audioSlow": "assets/audio/lines/d6-l8-slow.mp3",
-      "say": "I will call this pharmacy if that cough comes back.",
+      "say": "I'll call this pharmacy if that cough comes back.",
       "hideGloss": true
     }
   ],
@@ -241,7 +241,7 @@
         "line": "The dosage is one tablet twice a day.",
         "audio": "assets/audio/lines/d6-l5.mp3",
         "audioSlow": "assets/audio/lines/d6-l5-slow.mp3",
-        "expect": "Can I take that one tablet after meals if it is safer?",
+        "expect": "Can I take that one tablet after meals if it's safer?",
         "keywords": [
           "tablet",
           "meals"
@@ -255,7 +255,7 @@
         "line": "Yes, after meals is safer, and this box needs no prescription.",
         "audio": "assets/audio/lines/d6-l7.mp3",
         "audioSlow": "assets/audio/lines/d6-l7-slow.mp3",
-        "expect": "I will call this pharmacy if that cough comes back.",
+        "expect": "I'll call this pharmacy if that cough comes back.",
         "keywords": [
           "pharmacy",
           "cough"

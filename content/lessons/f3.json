@@ -51,31 +51,31 @@
       "id": "f3-l2",
       "speaker": "ling",
       "speakerLabel": "{{learner}}",
-      "text": "It is ten dollars for this one.",
+      "text": "This one is ten dollars.",
       "glossYue": "呢一件係十蚊。",
       "audio": "assets/audio/lines/f3-l2.mp3",
       "audioSlow": "assets/audio/lines/f3-l2-slow.mp3",
-      "say": "It is ten dollars for this one."
+      "say": "This one is ten dollars."
     },
     {
       "id": "f3-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Please tell me what time it is.",
-      "glossYue": "請話我知而家幾點。",
+      "text": "What time is it, please?",
+      "glossYue": "而家幾點，唔該？",
       "audio": "assets/audio/lines/f3-l3.mp3",
       "audioSlow": "assets/audio/lines/f3-l3-slow.mp3",
-      "say": "Please tell me what time it is."
+      "say": "What time is it, please?"
     },
     {
       "id": "f3-l4",
       "speaker": "ling",
       "speakerLabel": "{{learner}}",
-      "text": "Yes, it is three o'clock for us.",
-      "glossYue": "係呀，而家係三點。",
+      "text": "It's three o'clock.",
+      "glossYue": "而家係三點。",
       "audio": "assets/audio/lines/f3-l4.mp3",
       "audioSlow": "assets/audio/lines/f3-l4-slow.mp3",
-      "say": "Yes, it is three o'clock for us."
+      "say": "It's three o'clock."
     },
     {
       "id": "f3-l5",
@@ -198,7 +198,7 @@
         "line": "Hello there. How much is this one?",
         "audio": "assets/audio/lines/f3-l1.mp3",
         "audioSlow": "assets/audio/lines/f3-l1-slow.mp3",
-        "expect": "It is ten dollars for this one.",
+        "expect": "This one is ten dollars.",
         "keywords": [
           "ten",
           "dollar"
@@ -209,10 +209,10 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "Please tell me what time it is.",
+        "line": "What time is it, please?",
         "audio": "assets/audio/lines/f3-l3.mp3",
         "audioSlow": "assets/audio/lines/f3-l3-slow.mp3",
-        "expect": "Yes, it is three o'clock for us.",
+        "expect": "Yes, it's three o'clock.",
         "keywords": [
           "three",
           "clock"

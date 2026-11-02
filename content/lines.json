@@ -53,11 +53,11 @@
     "id": "f2-l1",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "Hello. Good morning. Yes, I am Mei.",
+    "text": "Hello. Good morning. Yes, I'm Mei.",
     "glossYue": "你好。早晨。我係 Mei。",
     "audio": "assets/audio/lines/f2-l1.mp3",
     "audioSlow": "assets/audio/lines/f2-l1-slow.mp3",
-    "say": "Hello. Good morning. Yes, I am Mei."
+    "say": "Hello. Good morning. Yes, I'm Mei."
   },
   {
     "id": "f2-l2",
@@ -73,11 +73,11 @@
     "id": "f2-l3",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "It is so nice to meet you.",
+    "text": "It's so nice to meet you.",
     "glossYue": "真係好高興認識你。",
     "audio": "assets/audio/lines/f2-l3.mp3",
     "audioSlow": "assets/audio/lines/f2-l3-slow.mp3",
-    "say": "It is so nice to meet you."
+    "say": "It's so nice to meet you."
   },
   {
     "id": "f2-l4",
@@ -113,31 +113,31 @@
     "id": "f3-l2",
     "speaker": "ling",
     "speakerLabel": "{{learner}}",
-    "text": "It is ten dollars for this one.",
+    "text": "This one is ten dollars.",
     "glossYue": "呢一件係十蚊。",
     "audio": "assets/audio/lines/f3-l2.mp3",
     "audioSlow": "assets/audio/lines/f3-l2-slow.mp3",
-    "say": "It is ten dollars for this one."
+    "say": "This one is ten dollars."
   },
   {
     "id": "f3-l3",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "Please tell me what time it is.",
-    "glossYue": "請話我知而家幾點。",
+    "text": "What time is it, please?",
+    "glossYue": "而家幾點，唔該？",
     "audio": "assets/audio/lines/f3-l3.mp3",
     "audioSlow": "assets/audio/lines/f3-l3-slow.mp3",
-    "say": "Please tell me what time it is."
+    "say": "What time is it, please?"
   },
   {
     "id": "f3-l4",
     "speaker": "ling",
     "speakerLabel": "{{learner}}",
-    "text": "Yes, it is three o'clock for us.",
-    "glossYue": "係呀，而家係三點。",
+    "text": "It's three o'clock.",
+    "glossYue": "而家係三點。",
     "audio": "assets/audio/lines/f3-l4.mp3",
     "audioSlow": "assets/audio/lines/f3-l4-slow.mp3",
-    "say": "Yes, it is three o'clock for us."
+    "say": "It's three o'clock."
   },
   {
     "id": "f3-l5",
@@ -163,21 +163,21 @@
     "id": "f4-l2",
     "speaker": "ling",
     "speakerLabel": "{{learner}}",
-    "text": "I'm sorry, I did not see you there.",
+    "text": "I'm sorry, I didn't see you there.",
     "glossYue": "對唔住，我冇見到你。",
     "audio": "assets/audio/lines/f4-l2.mp3",
     "audioSlow": "assets/audio/lines/f4-l2-slow.mp3",
-    "say": "I'm sorry, I did not see you there."
+    "say": "I'm sorry, I didn't see you there."
   },
   {
     "id": "f4-l3",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "That's all right, please do not worry.",
+    "text": "That's all right, please don't worry.",
     "glossYue": "冇事，唔使擔心。",
     "audio": "assets/audio/lines/f4-l3.mp3",
     "audioSlow": "assets/audio/lines/f4-l3-slow.mp3",
-    "say": "That's all right, please do not worry."
+    "say": "That's all right, please don't worry."
   },
   {
     "id": "f4-l4",
@@ -203,11 +203,11 @@
     "id": "j1-l1",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "Welcome to our jewellery store. How may I help you today?",
-    "glossYue": "歡迎嚟到我哋嘅珠寶店。今日有咩可以幫到你？",
+    "text": "Welcome to our jewellery store. How can I help you today?",
+    "glossYue": "歡迎嚟我哋珠寶店。今日有咩可以幫你？",
     "audio": "assets/audio/lines/j1-l1.mp3",
     "audioSlow": "assets/audio/lines/j1-l1-slow.mp3",
-    "say": "Welcome to our [[dʒˈulɹi]] store. How may I help you today?"
+    "say": "Welcome to our [[dʒˈulɹi]] store. How can I help you today?"
   },
   {
     "id": "j1-l2",
@@ -334,7 +334,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "May I see these earrings, and the matching necklace too?",
-    "glossYue": "可唔可以睇吓呢對耳環，同埋套裝？",
+    "glossYue": "可唔可以睇吓呢對耳環，同埋條頸鏈？",
     "audio": "assets/audio/lines/j3-l4.mp3",
     "audioSlow": "assets/audio/lines/j3-l4-slow.mp3",
     "say": "May I see these earrings, and the matching necklace too?"
@@ -373,7 +373,7 @@
     "id": "j4-l3",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "Yes. It is certified, and the papers are in this folder.",
+    "text": "Yes. It's certified, and the papers are in this folder.",
     "glossYue": "係。有證書，文件喺呢個文件夾。",
     "audio": "assets/audio/lines/j4-l3.mp3",
     "audioSlow": "assets/audio/lines/j4-l3-slow.mp3",
@@ -754,7 +754,7 @@
     "speaker": "ana",
     "speakerLabel": "Ana",
     "text": "What would you like to order from the menu, please?",
-    "glossYue": "你今日想喺餐牌點咩？",
+    "glossYue": "你想喺餐牌點咩？",
     "audio": "assets/audio/lines/r2-l1.mp3",
     "audioSlow": "assets/audio/lines/r2-l1-slow.mp3",
     "say": "What would you like to order from the menu, please?"
@@ -813,7 +813,7 @@
     "id": "r3-l2",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "I am allergic to peanuts, and I cannot eat them at all.",
+    "text": "I'm allergic to peanuts, and I can't eat them at all.",
     "glossYue": "我對花生過敏，完全唔食得。",
     "audio": "assets/audio/lines/r3-l2.mp3",
     "audioSlow": "assets/audio/lines/r3-l2-slow.mp3",
@@ -1424,7 +1424,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "Here is fine. Could I have a receipt, please?",
-    "glossYue": "呢度得喇。落車之前可唔可以畀張收據？",
+    "glossYue": "呢度得。可唔可以畀張收據？",
     "audio": "assets/audio/lines/t4-l6.mp3",
     "audioSlow": "assets/audio/lines/t4-l6-slow.mp3",
     "say": "Here is fine. Could I have a receipt, please?"
@@ -1574,7 +1574,7 @@
     "speaker": "mei",
     "speakerLabel": "Mei",
     "text": "The manager can review the receipt, and we will repair it if the policy allows.",
-    "glossYue": "經理可以睇收據，如果政策容許，我哋會即刻修理。",
+    "glossYue": "經理可以睇收據，如果政策容許，我哋會修理。",
     "audio": "assets/audio/lines/j9-l5.mp3",
     "audioSlow": "assets/audio/lines/j9-l5-slow.mp3",
     "say": "The manager can review the receipt, and we will repair it if the policy allows."
@@ -1654,7 +1654,7 @@
     "speaker": "ana",
     "speakerLabel": "Ana",
     "text": "The sparkling water is coming, and I hope you enjoy the fish.",
-    "glossYue": "有氣水就到，希望你可以慢慢食條魚。",
+    "glossYue": "有氣水就到，希望你鍾意條魚。",
     "audio": "assets/audio/lines/r4-l5.mp3",
     "audioSlow": "assets/audio/lines/r4-l5-slow.mp3",
     "say": "The sparkling water is coming, and I hope you enjoy the fish."
@@ -1783,11 +1783,11 @@
     "id": "w1-l2",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "I am calling about an appointment with Mei. May I ask if she is available?",
-    "glossYue": "我打嚟係想同 Mei 講個預約。可唔可以問吓佢有冇空？",
+    "text": "I'm calling about an appointment with Mei. Is she free?",
+    "glossYue": "我打嚟係想同 Mei 講個預約。佢有冇空？",
     "audio": "assets/audio/lines/w1-l2.mp3",
     "audioSlow": "assets/audio/lines/w1-l2-slow.mp3",
-    "say": "I am calling about an appointment with Mei. May I ask if she is available?"
+    "say": "I'm calling about an appointment with Mei. Is she free?"
   },
   {
     "id": "w1-l3",
@@ -1843,11 +1843,11 @@
     "id": "w1-l8",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Thank you for the message. An afternoon callback would be convenient.",
-    "glossYue": "多謝你幫我留言。下晝覆電會方便。",
+    "text": "Thank you for the message. This afternoon is a good time to call back.",
+    "glossYue": "多謝你幫我留言。下晝覆電話就得。",
     "audio": "assets/audio/lines/w1-l8.mp3",
     "audioSlow": "assets/audio/lines/w1-l8-slow.mp3",
-    "say": "Thank you for the message. An afternoon callback would be convenient."
+    "say": "Thank you for the message. This afternoon is a good time to call back."
   },
   {
     "id": "j8-l1",
@@ -1903,11 +1903,11 @@
     "id": "j8-l6",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "I won't use harsh chemicals at home, and I'll come back if the polish fails.",
-    "glossYue": "我喺屋企唔用刺激化學劑，擦亮唔得我就再嚟。",
+    "text": "I won't use harsh chemicals at home. I'll come back if the shine doesn't last.",
+    "glossYue": "我喺屋企唔用刺激化學劑。如果擦完唔耐，我就再嚟。",
     "audio": "assets/audio/lines/j8-l6.mp3",
     "audioSlow": "assets/audio/lines/j8-l6-slow.mp3",
-    "say": "I won't use harsh chemicals at home, and I'll come back if the polish fails."
+    "say": "I won't use harsh chemicals at home. I'll come back if the shine doesn't last."
   },
   {
     "id": "j8-l7",
@@ -2103,11 +2103,11 @@
     "id": "w2-l2",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Thank you for following up, and I'm grateful you attached the notes.",
-    "glossYue": "多謝你跟進，我感激你附上筆記。",
+    "text": "Thank you for following up, and I'm glad you attached the notes.",
+    "glossYue": "多謝你跟進，我好高興你附上咗筆記。",
     "audio": "assets/audio/lines/w2-l2.mp3",
     "audioSlow": "assets/audio/lines/w2-l2-slow.mp3",
-    "say": "Thank you for following up, and I'm grateful you attached the notes."
+    "say": "Thank you for following up, and I'm glad you attached the notes."
   },
   {
     "id": "w2-l3",
@@ -2163,11 +2163,11 @@
     "id": "w2-l8",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Thanks. I'll wait for your note once you confirm the deadline.",
-    "glossYue": "多謝。你確認期限之後我等你份筆記。",
+    "text": "Thanks. I'll wait for your email once you confirm the deadline.",
+    "glossYue": "多謝。你確認期限之後我等你封電郵。",
     "audio": "assets/audio/lines/w2-l8.mp3",
     "audioSlow": "assets/audio/lines/w2-l8-slow.mp3",
-    "say": "Thanks. I'll wait for your note once you confirm the deadline."
+    "say": "Thanks. I'll wait for your email once you confirm the deadline."
   },
   {
     "id": "w3-l1",
@@ -2203,21 +2203,21 @@
     "id": "w3-l4",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "I am concerned the owner cannot meet this new deadline on Friday.",
-    "glossYue": "我擔心負責人星期五趕唔切呢個新期限。",
+    "text": "I'm concerned Mei can't meet this new deadline on Friday.",
+    "glossYue": "我擔心 Mei 星期五趕唔切呢個新期限。",
     "audio": "assets/audio/lines/w3-l4.mp3",
     "audioSlow": "assets/audio/lines/w3-l4-slow.mp3",
-    "say": "I am concerned the owner cannot meet this new deadline on Friday."
+    "say": "I'm concerned Mei can't meet this new deadline on Friday."
   },
   {
     "id": "w3-l5",
     "speaker": "owen",
     "speakerLabel": "Owen",
-    "text": "Let's agree on Friday, and the owner can send the next note.",
-    "glossYue": "我哋同意星期五，負責人可以送下一張字條。",
+    "text": "Let's agree on Friday, and she can email us the update.",
+    "glossYue": "我哋同意星期五，佢可以發電郵話我哋知。",
     "audio": "assets/audio/lines/w3-l5.mp3",
     "audioSlow": "assets/audio/lines/w3-l5-slow.mp3",
-    "say": "Let's agree on Friday, and the owner can send the next note."
+    "say": "Let's agree on Friday, and she can email us the update."
   },
   {
     "id": "w3-l6",
@@ -2233,21 +2233,21 @@
     "id": "w3-l7",
     "speaker": "owen",
     "speakerLabel": "Owen",
-    "text": "I see that point, and we can mute the side chat.",
-    "glossYue": "我明白呢一點，我哋可以靜音旁邊個傾計。",
+    "text": "I see your point. Let's mute when we're not speaking.",
+    "glossYue": "我明白你嘅意思。我哋唔講嘢嗰陣就靜音。",
     "audio": "assets/audio/lines/w3-l7.mp3",
     "audioSlow": "assets/audio/lines/w3-l7-slow.mp3",
-    "say": "I see that point, and we can mute the side chat."
+    "say": "I see your point. Let's mute when we're not speaking."
   },
   {
     "id": "w3-l8",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Let's wrap up, and the owner will share one update on Friday.",
-    "glossYue": "我哋收科，負責人星期五會講一個更新。",
+    "text": "Let's wrap up, and she'll let us know on Friday.",
+    "glossYue": "我哋收科，佢星期五會話我哋知。",
     "audio": "assets/audio/lines/w3-l8.mp3",
     "audioSlow": "assets/audio/lines/w3-l8-slow.mp3",
-    "say": "Let's wrap up, and the owner will share one update on Friday."
+    "say": "Let's wrap up, and she'll let us know on Friday."
   },
   {
     "id": "d1-l1",
@@ -2863,11 +2863,11 @@
     "id": "w4-l6",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Yes, I think so. We can catch up later after the notes are on the table.",
-    "glossYue": "好。筆記放喺檯之後，我哋遲啲再傾。",
+    "text": "Yes, I think so. We can catch up later, after the agenda is out.",
+    "glossYue": "好。議程出咗之後，我哋遲啲再傾。",
     "audio": "assets/audio/lines/w4-l6.mp3",
     "audioSlow": "assets/audio/lines/w4-l6-slow.mp3",
-    "say": "Yes, I think so. We can catch up later after the notes are on the table."
+    "say": "Yes, I think so. We can catch up later, after the agenda is out."
   },
   {
     "id": "w4-l7",
@@ -3174,11 +3174,11 @@
     "id": "d4-l3",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "I'll take the prepaid one, and I do not need unlimited data.",
+    "text": "I'll take the prepaid one, and I don't need unlimited data.",
     "glossYue": "我要預繳嗰個，唔使無限數據。",
     "audio": "assets/audio/lines/d4-l3.mp3",
     "audioSlow": "assets/audio/lines/d4-l3-slow.mp3",
-    "say": "I'll take the prepaid one, and I do not need unlimited data."
+    "say": "I'll take the prepaid one, and I don't need unlimited data."
   },
   {
     "id": "d4-l4",
@@ -3214,11 +3214,11 @@
     "id": "d4-l7",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "I will pay for this prepaid SIM card here.",
+    "text": "I'll pay for this prepaid SIM card here.",
     "glossYue": "我喺呢度畀錢買呢張預繳電話卡。",
     "audio": "assets/audio/lines/d4-l7.mp3",
     "audioSlow": "assets/audio/lines/d4-l7-slow.mp3",
-    "say": "I will pay for this prepaid SIM card here."
+    "say": "I'll pay for this prepaid SIM card here."
   },
   {
     "id": "d4-l8",
@@ -3264,11 +3264,11 @@
     "id": "d5-l4",
     "speaker": "cole",
     "speakerLabel": "Cole",
-    "text": "It will take five days, and we need your signature here.",
+    "text": "It'll take five days, and we need your signature here.",
     "glossYue": "要五日，我哋需要你喺呢度簽名。",
     "audio": "assets/audio/lines/d5-l4.mp3",
     "audioSlow": "assets/audio/lines/d5-l4-slow.mp3",
-    "say": "It will take five days, and we need your signature here."
+    "say": "It'll take five days, and we need your signature here."
   },
   {
     "id": "d5-l5",
@@ -3295,7 +3295,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "May I keep this receipt until the parcel reaches my home?",
-    "glossYue": "包裹送到我家之前，我可唔可以留住收據？",
+    "glossYue": "包裹送到我屋企之前，我可唔可以留住收據？",
     "audio": "assets/audio/lines/d5-l7.mp3",
     "audioSlow": "assets/audio/lines/d5-l7-slow.mp3",
     "say": "May I keep this receipt until the parcel reaches my home?"
@@ -3594,11 +3594,11 @@
     "id": "d6-l2",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "What symptom can I note for the pharmacist before we choose a box?",
-    "glossYue": "揀盒之前，我可以幫藥劑師記低邊個症狀？",
+    "text": "What should I tell the pharmacist before we choose a box?",
+    "glossYue": "揀盒之前，我應該話藥劑師知咩？",
     "audio": "assets/audio/lines/d6-l2.mp3",
     "audioSlow": "assets/audio/lines/d6-l2-slow.mp3",
-    "say": "What symptom can I note for the pharmacist before we choose a box?"
+    "say": "What should I tell the pharmacist before we choose a box?"
   },
   {
     "id": "d6-l3",
@@ -3634,11 +3634,11 @@
     "id": "d6-l6",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Can I take that one tablet after meals if it is safer?",
+    "text": "Can I take that one tablet after meals if it's safer?",
     "glossYue": "如果安全啲，我可唔可以飯後食嗰一粒藥片？",
     "audio": "assets/audio/lines/d6-l6.mp3",
     "audioSlow": "assets/audio/lines/d6-l6-slow.mp3",
-    "say": "Can I take that one tablet after meals if it is safer?"
+    "say": "Can I take that one tablet after meals if it's safer?"
   },
   {
     "id": "d6-l7",
@@ -3654,11 +3654,11 @@
     "id": "d6-l8",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "I will call this pharmacy if that cough comes back.",
+    "text": "I'll call this pharmacy if that cough comes back.",
     "glossYue": "如果咳嗽再返嚟，我會打畀呢間藥房。",
     "audio": "assets/audio/lines/d6-l8.mp3",
     "audioSlow": "assets/audio/lines/d6-l8-slow.mp3",
-    "say": "I will call this pharmacy if that cough comes back."
+    "say": "I'll call this pharmacy if that cough comes back."
   },
   {
     "id": "r8-l1",
@@ -3904,11 +3904,11 @@
     "id": "r9-l5",
     "speaker": "eddy",
     "speakerLabel": "Eddy",
-    "text": "I will pay my separate amount with an Octopus card.",
-    "glossYue": "我用八達通畀我嗰份。",
+    "text": "I'll pay my separate amount with an Octopus card.",
+    "glossYue": "我用八達通畀我自己嗰份。",
     "audio": "assets/audio/lines/r9-l5.mp3",
     "audioSlow": "assets/audio/lines/r9-l5-slow.mp3",
-    "say": "I will pay my separate amount with an Octopus card."
+    "say": "I'll pay my separate amount with an Octopus card."
   },
   {
     "id": "r9-l6",
@@ -3924,21 +3924,21 @@
     "id": "r9-l7",
     "speaker": "eddy",
     "speakerLabel": "Eddy",
-    "text": "There is a mistake on the bill, and the soup was extra.",
-    "glossYue": "帳單有個錯，湯係額外嘅。",
+    "text": "There's a mistake on the bill, and the soup was extra.",
+    "glossYue": "張單有個錯，湯係額外加嘅。",
     "audio": "assets/audio/lines/r9-l7.mp3",
     "audioSlow": "assets/audio/lines/r9-l7-slow.mp3",
-    "say": "There is a mistake on the bill, and the soup was extra."
+    "say": "There's a mistake on the bill, and the soup was extra."
   },
   {
     "id": "r9-l8",
     "speaker": "nori",
     "speakerLabel": "Nori",
-    "text": "I will correct that mistake and bring the new bill.",
-    "glossYue": "我會改好嗰個錯，再帶新帳單嚟。",
+    "text": "I'll correct that mistake and bring the new bill.",
+    "glossYue": "我會改好個錯，再帶張新單嚟。",
     "audio": "assets/audio/lines/r9-l8.mp3",
     "audioSlow": "assets/audio/lines/r9-l8-slow.mp3",
-    "say": "I will correct that mistake and bring the new bill."
+    "say": "I'll correct that mistake and bring the new bill."
   },
   {
     "id": "w7-l1",
@@ -4105,7 +4105,7 @@
     "speaker": "beau",
     "speakerLabel": "Beau",
     "text": "I would like a simple trim, and keep a light fringe.",
-    "glossYue": "我想修短少少，瀏海留少少。",
+    "glossYue": "我想簡單修剪，留一個薄瀏海。",
     "audio": "assets/audio/lines/d7-l1.mp3",
     "audioSlow": "assets/audio/lines/d7-l1-slow.mp3",
     "say": "I would like a simple trim, and keep a light fringe."
@@ -4155,7 +4155,7 @@
     "speaker": "beau",
     "speakerLabel": "Beau",
     "text": "Is it cheaper if I book my next short visit?",
-    "glossYue": "如果預約下次剪短少少，會唔會平啲？",
+    "glossYue": "如果預約下次短剪，會唔會平啲？",
     "audio": "assets/audio/lines/d7-l6.mp3",
     "audioSlow": "assets/audio/lines/d7-l6-slow.mp3",
     "say": "Is it cheaper if I book my next short visit?"
@@ -4204,31 +4204,31 @@
     "id": "w8-l3",
     "speaker": "sora",
     "speakerLabel": "Sora",
-    "text": "That sample run is behind schedule, and I own it.",
-    "glossYue": "嗰次樣辦落後咗，我負責。",
+    "text": "That sample is late, and I'm looking after it.",
+    "glossYue": "嗰次樣辦遲咗，我負責。",
     "audio": "assets/audio/lines/w8-l3.mp3",
     "audioSlow": "assets/audio/lines/w8-l3-slow.mp3",
-    "say": "That sample run is behind schedule, and I own it."
+    "say": "That sample is late, and I'm looking after it."
   },
   {
     "id": "w8-l4",
     "speaker": "nina",
     "speakerLabel": "Nina",
-    "text": "Can you follow up by Friday and send one written note?",
-    "glossYue": "你可唔可以星期五之前跟進，再寫一張字條？",
+    "text": "Can you follow up by Friday and send me an email?",
+    "glossYue": "你可唔可以星期五之前跟進，再發封電郵畀我？",
     "audio": "assets/audio/lines/w8-l4.mp3",
     "audioSlow": "assets/audio/lines/w8-l4-slow.mp3",
-    "say": "Can you follow up by Friday and send one written note?"
+    "say": "Can you follow up by Friday and send me an email?"
   },
   {
     "id": "w8-l5",
     "speaker": "sora",
     "speakerLabel": "Sora",
-    "text": "I will follow up by Friday and send the note that day.",
-    "glossYue": "我星期五之前會跟進，同日送出字條。",
+    "text": "I'll follow up by Friday and email you that day.",
+    "glossYue": "我星期五之前會跟進，同日發電郵畀你。",
     "audio": "assets/audio/lines/w8-l5.mp3",
     "audioSlow": "assets/audio/lines/w8-l5-slow.mp3",
-    "say": "I will follow up by Friday and send the note that day."
+    "say": "I'll follow up by Friday and email you that day."
   },
   {
     "id": "w8-l6",
@@ -4254,11 +4254,11 @@
     "id": "w8-l8",
     "speaker": "nina",
     "speakerLabel": "Nina",
-    "text": "Please send me that note after the meeting so I can read it.",
-    "glossYue": "會後請將張字條送嚟，等我睇。",
+    "text": "Please email me after the meeting so I can read it.",
+    "glossYue": "會後請發電郵畀我，等我睇。",
     "audio": "assets/audio/lines/w8-l8.mp3",
     "audioSlow": "assets/audio/lines/w8-l8-slow.mp3",
-    "say": "Please send me that note after the meeting so I can read it."
+    "say": "Please email me after the meeting so I can read it."
   },
   {
     "id": "j14-l1",
@@ -4324,11 +4324,11 @@
     "id": "j14-l7",
     "speaker": "gus",
     "speakerLabel": "Gus",
-    "text": "I can place the half deposit this week.",
-    "glossYue": "我呢個星期可以落一半訂金。",
+    "text": "I can pay half the deposit this week.",
+    "glossYue": "我呢個星期可以畀一半訂金。",
     "audio": "assets/audio/lines/j14-l7.mp3",
     "audioSlow": "assets/audio/lines/j14-l7-slow.mp3",
-    "say": "I can place the half deposit this week."
+    "say": "I can pay half the deposit this week."
   },
   {
     "id": "j14-l8",
@@ -4414,11 +4414,11 @@
     "id": "r10-l8",
     "speaker": "mira",
     "speakerLabel": "Mira",
-    "text": "Here is your iced latte in a cup, and it is ready to go.",
-    "glossYue": "你杯凍拿鐵喺呢度，可以拎走。",
+    "text": "Here's your iced latte. It's ready to go.",
+    "glossYue": "你杯凍拿鐵喺呢度。可以拎走。",
     "audio": "assets/audio/lines/r10-l8.mp3",
     "audioSlow": "assets/audio/lines/r10-l8-slow.mp3",
-    "say": "Here is your iced latte in a cup, and it is ready to go."
+    "say": "Here's your iced latte. It's ready to go."
   },
   {
     "id": "t11-l1",
@@ -4454,11 +4454,11 @@
     "id": "t11-l4",
     "speaker": "otto",
     "speakerLabel": "Otto",
-    "text": "Use exit A, and it is a short walk out to the street.",
+    "text": "Use exit A, and it's a short walk out to the street.",
     "glossYue": "用 A 出口，行少少就到街。",
     "audio": "assets/audio/lines/t11-l4.mp3",
     "audioSlow": "assets/audio/lines/t11-l4-slow.mp3",
-    "say": "Use exit A, and it is a short walk out to the street."
+    "say": "Use exit A, and it's a short walk out to the street."
   },
   {
     "id": "t11-l5",
@@ -4574,11 +4574,11 @@
     "id": "d8-l8",
     "speaker": "glen",
     "speakerLabel": "Glen",
-    "text": "We will send one person for the kitchen tap leak, and the repair starts after six tomorrow.",
-    "glossYue": "我哋會派一個人處理廚房水龍頭漏水，維修聽日六點之後開始。",
+    "text": "We'll send someone to fix the tap, and the repair starts after six tomorrow.",
+    "glossYue": "我哋會派人整水龍頭，維修聽日六點之後開始。",
     "audio": "assets/audio/lines/d8-l8.mp3",
     "audioSlow": "assets/audio/lines/d8-l8-slow.mp3",
-    "say": "We will send one person for the kitchen tap leak, and the repair starts after six tomorrow."
+    "say": "We'll send someone to fix the tap, and the repair starts after six tomorrow."
   },
   {
     "id": "j15-l1",
@@ -4934,11 +4934,11 @@
     "id": "w9-l4",
     "speaker": "nina",
     "speakerLabel": "Nina",
-    "text": "Good. Please send me a handover note before you go.",
-    "glossYue": "好。你走之前請發一份交接筆記畀我。",
+    "text": "Good. Please email me a handover note before you go.",
+    "glossYue": "好。你走之前請發電郵做交接。",
     "audio": "assets/audio/lines/w9-l4.mp3",
     "audioSlow": "assets/audio/lines/w9-l4-slow.mp3",
-    "say": "Good. Please send me a handover note before you go."
+    "say": "Good. Please email me a handover note before you go."
   },
   {
     "id": "w9-l5",
@@ -6645,7 +6645,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "Will you email a written summary after we set the next goals?",
-    "glossYue": "我哋定咗下一批目標之後，你會唔會電郵一份書面總結？",
+    "glossYue": "我哋定咗下一批目標之後，你會唔會發電郵講份總結？",
     "audio": "assets/audio/lines/w12-l7.mp3",
     "audioSlow": "assets/audio/lines/w12-l7-slow.mp3",
     "say": "Will you email a written summary after we set the next goals?"
@@ -6654,11 +6654,11 @@
     "id": "w12-l8",
     "speaker": "nina",
     "speakerLabel": "Nina",
-    "text": "Yes. I'll send that summary once we agree the new goals.",
-    "glossYue": "會。新目標同意之後我會寄嗰份總結。",
+    "text": "Yes. I'll email you that summary once we agree the new goals.",
+    "glossYue": "會。新目標同意之後我會發電郵講嗰份總結。",
     "audio": "assets/audio/lines/w12-l8.mp3",
     "audioSlow": "assets/audio/lines/w12-l8-slow.mp3",
-    "say": "Yes. I'll send that summary once we agree the new goals."
+    "say": "Yes. I'll email you that summary once we agree the new goals."
   },
   {
     "id": "t18-l1",
@@ -7015,7 +7015,7 @@
     "speaker": "nina",
     "speakerLabel": "Nina",
     "text": "The studio still hasn't sent the logo.",
-    "glossYue": "品牌公司仲未交到個標誌。",
+    "glossYue": "設計公司仲未交到個標誌。",
     "audio": "assets/audio/lines/w13-l4.mp3",
     "audioSlow": "assets/audio/lines/w13-l4-slow.mp3",
     "say": "The studio still hasn't sent the logo."
@@ -7284,21 +7284,21 @@
     "id": "t20-l7",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "How early should I reach the checkpoint if the screening lane opens at noon sharp?",
-    "glossYue": "如果安檢線正午正開門，我應該幾早到檢查站？",
+    "text": "How early should I get to the checkpoint if security opens at noon?",
+    "glossYue": "如果安檢中午開門，我應該幾早到檢查站？",
     "audio": "assets/audio/lines/t20-l7.mp3",
     "audioSlow": "assets/audio/lines/t20-l7-slow.mp3",
-    "say": "How early should I reach the checkpoint if the screening lane opens at noon sharp?"
+    "say": "How early should I get to the checkpoint if security opens at noon?"
   },
   {
     "id": "t20-l8",
     "speaker": "kim",
     "speakerLabel": "Kim",
-    "text": "Please reach the checkpoint thirty minutes early, because that screening lane opens at noon sharp.",
-    "glossYue": "請早三十分鐘到檢查站，因為嗰條安檢線正午正開門。",
+    "text": "Please get to the checkpoint thirty minutes early, because security opens at noon.",
+    "glossYue": "請早三十分鐘到檢查站，因為安檢中午開門。",
     "audio": "assets/audio/lines/t20-l8.mp3",
     "audioSlow": "assets/audio/lines/t20-l8-slow.mp3",
-    "say": "Please reach the checkpoint thirty minutes early, because that screening lane opens at noon sharp."
+    "say": "Please get to the checkpoint thirty minutes early, because security opens at noon."
   },
   {
     "id": "j23-l1",
@@ -7484,21 +7484,21 @@
     "id": "w14-l3",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Will you circulate the written forecast if each stakeholder has not read the note yet?",
-    "glossYue": "如果每個持份者未睇過張字條，你會唔會傳閱書面預測？",
+    "text": "Will you circulate the written forecast if each stakeholder has not read the email yet?",
+    "glossYue": "如果每個持份者未睇過封電郵，你會唔會傳閱書面預測？",
     "audio": "assets/audio/lines/w14-l3.mp3",
     "audioSlow": "assets/audio/lines/w14-l3-slow.mp3",
-    "say": "Will you circulate the written forecast if each stakeholder has not read the note yet?"
+    "say": "Will you circulate the written forecast if each stakeholder has not read the email yet?"
   },
   {
     "id": "w14-l4",
     "speaker": "nina",
     "speakerLabel": "Nina",
-    "text": "I will circulate that written forecast once the team has read the full note pack.",
-    "glossYue": "團隊睇完成份字條，我就會傳閱嗰份書面預測。",
+    "text": "I will send that written forecast round once the team has read the full email.",
+    "glossYue": "團隊睇完封電郵，我就會傳閱嗰份書面預測。",
     "audio": "assets/audio/lines/w14-l4.mp3",
     "audioSlow": "assets/audio/lines/w14-l4-slow.mp3",
-    "say": "I will circulate that written forecast once the team has read the full note pack."
+    "say": "I will send that written forecast round once the team has read the full email."
   },
   {
     "id": "w14-l5",
@@ -7524,21 +7524,21 @@
     "id": "w14-l7",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Can you circulate the full agenda without those raw notes during the Monday call?",
-    "glossYue": "星期一通話期間，可唔可以傳閱成份議程，但唔顯示嗰啲原始筆記？",
+    "text": "Can you send the full agenda, but not the draft figures, on the Monday call?",
+    "glossYue": "星期一通話，可唔可以傳成份議程，但唔顯示草稿數字？",
     "audio": "assets/audio/lines/w14-l7.mp3",
     "audioSlow": "assets/audio/lines/w14-l7-slow.mp3",
-    "say": "Can you circulate the full agenda without those raw notes during the Monday call?"
+    "say": "Can you send the full agenda, but not the draft figures, on the Monday call?"
   },
   {
     "id": "w14-l8",
     "speaker": "nina",
     "speakerLabel": "Nina",
-    "text": "I will circulate the full agenda, and those raw notes stay inside the pack.",
-    "glossYue": "我會傳閱成份議程，嗰啲原始筆記留喺文件包入面。",
+    "text": "I will send the full agenda, and those draft figures stay in the file.",
+    "glossYue": "我會傳成份議程，草稿數字留喺檔案入面。",
     "audio": "assets/audio/lines/w14-l8.mp3",
     "audioSlow": "assets/audio/lines/w14-l8-slow.mp3",
-    "say": "I will circulate the full agenda, and those raw notes stay inside the pack."
+    "say": "I will send the full agenda, and those draft figures stay in the file."
   },
   {
     "id": "w15-l1",
@@ -7584,41 +7584,41 @@
     "id": "w15-l5",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Could you list me as the owner, and not read every line out in the meeting?",
+    "text": "Could you put me down as the lead, and not read every line out in the meeting?",
     "glossYue": "可唔可以寫我做負責人，開會唔使逐行讀出嚟？",
     "audio": "assets/audio/lines/w15-l5.mp3",
     "audioSlow": "assets/audio/lines/w15-l5-slow.mp3",
-    "say": "Could you list me as the owner, and not read every line out in the meeting?"
+    "say": "Could you put me down as the lead, and not read every line out in the meeting?"
   },
   {
     "id": "w15-l6",
     "speaker": "nina",
     "speakerLabel": "Nina",
-    "text": "I'll show you as the owner, and I won't read the lines out.",
+    "text": "I'll put you down as the lead, and I won't read the lines out.",
     "glossYue": "我會寫你做負責人，開會唔會逐行讀。",
     "audio": "assets/audio/lines/w15-l6.mp3",
     "audioSlow": "assets/audio/lines/w15-l6-slow.mp3",
-    "say": "I'll show you as the owner, and I won't read the lines out."
+    "say": "I'll put you down as the lead, and I won't read the lines out."
   },
   {
     "id": "w15-l7",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Please file the procurement note before the meeting and leave it on my wooden desk.",
-    "glossYue": "開會之前請將採購字條歸檔，同埋放喺我張木檯。",
+    "text": "Please email me the procurement summary before the meeting, and leave a copy on my desk.",
+    "glossYue": "開會之前請發電郵講採購摘要，同埋放一份喺我張檯。",
     "audio": "assets/audio/lines/w15-l7.mp3",
     "audioSlow": "assets/audio/lines/w15-l7-slow.mp3",
-    "say": "Please file the procurement note before the meeting and leave it on my wooden desk."
+    "say": "Please email me the procurement summary before the meeting, and leave a copy on my desk."
   },
   {
     "id": "w15-l8",
     "speaker": "nina",
     "speakerLabel": "Nina",
-    "text": "I will file that note before we start, and it can stay on your desk.",
-    "glossYue": "開始之前我會將嗰張字條歸檔，佢可以留喺你張檯。",
+    "text": "I'll send that email before we start, and a copy can stay on your desk.",
+    "glossYue": "開始之前我會發嗰封電郵，一份可以留喺你張檯。",
     "audio": "assets/audio/lines/w15-l8.mp3",
     "audioSlow": "assets/audio/lines/w15-l8-slow.mp3",
-    "say": "I will file that note before we start, and it can stay on your desk."
+    "say": "I'll send that email before we start, and a copy can stay on your desk."
   },
   {
     "id": "j24-l1",
@@ -7764,20 +7764,20 @@
     "id": "t21-l7",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Can I keep one small bag and check the big bag at the far carousel?",
-    "glossYue": "我可唔可以帶住一個細袋，大袋喺遠嘅行李轉盤托運？",
+    "text": "Can I keep one small bag and check the big bag at the counter?",
+    "glossYue": "我可唔可以帶住一個細袋，大袋喺櫃檯托運？",
     "audio": "assets/audio/lines/t21-l7.mp3",
     "audioSlow": "assets/audio/lines/t21-l7-slow.mp3",
-    "say": "Can I keep one small bag and check the big bag at the far carousel?"
+    "say": "Can I keep one small bag and check the big bag at the counter?"
   },
   {
     "id": "t21-l8",
     "speaker": "kim",
     "speakerLabel": "Kim",
-    "text": "You can keep the small case and check the big one at that far carousel.",
-    "glossYue": "你可以帶住個細箱，大件喺遠嘅行李轉盤托運。",
+    "text": "You can keep the small case and collect the big one at that far carousel.",
+    "glossYue": "你可以帶住個細箱，大件喺遠嘅行李轉盤攞。",
     "audio": "assets/audio/lines/t21-l8.mp3",
     "audioSlow": "assets/audio/lines/t21-l8-slow.mp3",
-    "say": "You can keep the small case and check the big one at that far carousel."
+    "say": "You can keep the small case and collect the big one at that far carousel."
   }
 ]

@@ -40,11 +40,11 @@
       "id": "w2-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Thank you for following up, and I'm grateful you attached the notes.",
-      "glossYue": "多謝你跟進，我感激你附上筆記。",
+      "text": "Thank you for following up, and I'm glad you attached the notes.",
+      "glossYue": "多謝你跟進，我好高興你附上咗筆記。",
       "audio": "assets/audio/lines/w2-l2.mp3",
       "audioSlow": "assets/audio/lines/w2-l2-slow.mp3",
-      "say": "Thank you for following up, and I'm grateful you attached the notes.",
+      "say": "Thank you for following up, and I'm glad you attached the notes.",
       "hideGloss": true
     },
     {
@@ -106,11 +106,11 @@
       "id": "w2-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Thanks. I'll wait for your note once you confirm the deadline.",
-      "glossYue": "多謝。你確認期限之後我等你份筆記。",
+      "text": "Thanks. I'll wait for your email once you confirm the deadline.",
+      "glossYue": "多謝。你確認期限之後我等你封電郵。",
       "audio": "assets/audio/lines/w2-l8.mp3",
       "audioSlow": "assets/audio/lines/w2-l8-slow.mp3",
-      "say": "Thanks. I'll wait for your note once you confirm the deadline.",
+      "say": "Thanks. I'll wait for your email once you confirm the deadline.",
       "hideGloss": true
     }
   ],
@@ -182,7 +182,7 @@
     },
     {
       "pattern": "___ for now, and I look forward to the note once you confirm the deadline.",
-      "example": "Thanks. I'll wait for your note once you confirm the deadline.",
+      "example": "Thanks. I'll wait for your email once you confirm the deadline.",
       "glossYue": "暫時多謝。",
       "answer": "Thanks",
       "choices": [
@@ -236,7 +236,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Thank you for following up, and I'm grateful you attached the notes.",
+        "line": "Thank you for following up, and I'm glad you attached the notes.",
         "audio": "assets/audio/lines/w2-l2.mp3",
         "audioSlow": "assets/audio/lines/w2-l2-slow.mp3",
         "expect": "I have attached the file as discussed, and I would like to clarify the deadline with you.",

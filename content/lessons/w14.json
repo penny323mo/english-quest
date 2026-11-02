@@ -46,22 +46,22 @@
       "id": "w14-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Will you circulate the written forecast if each stakeholder has not read the note yet?",
-      "glossYue": "如果每個持份者未睇過張字條，你會唔會傳閱書面預測？",
+      "text": "Will you circulate the written forecast if each stakeholder has not read the email yet?",
+      "glossYue": "如果每個持份者未睇過封電郵，你會唔會傳閱書面預測？",
       "audio": "assets/audio/lines/w14-l3.mp3",
       "audioSlow": "assets/audio/lines/w14-l3-slow.mp3",
-      "say": "Will you circulate the written forecast if each stakeholder has not read the note yet?",
+      "say": "Will you circulate the written forecast if each stakeholder has not read the email yet?",
       "hideGloss": false
     },
     {
       "id": "w14-l4",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "I will circulate that written forecast once the team has read the full note pack.",
-      "glossYue": "團隊睇完成份字條，我就會傳閱嗰份書面預測。",
+      "text": "I will send that written forecast round once the team has read the full email.",
+      "glossYue": "團隊睇完封電郵，我就會傳閱嗰份書面預測。",
       "audio": "assets/audio/lines/w14-l4.mp3",
       "audioSlow": "assets/audio/lines/w14-l4-slow.mp3",
-      "say": "I will circulate that written forecast once the team has read the full note pack.",
+      "say": "I will send that written forecast round once the team has read the full email.",
       "hideGloss": true
     },
     {
@@ -90,22 +90,22 @@
       "id": "w14-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can you circulate the full agenda without those raw notes during the Monday call?",
-      "glossYue": "星期一通話期間，可唔可以傳閱成份議程，但唔顯示嗰啲原始筆記？",
+      "text": "Can you send the full agenda, but not the draft figures, on the Monday call?",
+      "glossYue": "星期一通話，可唔可以傳成份議程，但唔顯示草稿數字？",
       "audio": "assets/audio/lines/w14-l7.mp3",
       "audioSlow": "assets/audio/lines/w14-l7-slow.mp3",
-      "say": "Can you circulate the full agenda without those raw notes during the Monday call?",
+      "say": "Can you send the full agenda, but not the draft figures, on the Monday call?",
       "hideGloss": true
     },
     {
       "id": "w14-l8",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "I will circulate the full agenda, and those raw notes stay inside the pack.",
-      "glossYue": "我會傳閱成份議程，嗰啲原始筆記留喺文件包入面。",
+      "text": "I will send the full agenda, and those draft figures stay in the file.",
+      "glossYue": "我會傳成份議程，草稿數字留喺檔案入面。",
       "audio": "assets/audio/lines/w14-l8.mp3",
       "audioSlow": "assets/audio/lines/w14-l8-slow.mp3",
-      "say": "I will circulate the full agenda, and those raw notes stay inside the pack.",
+      "say": "I will send the full agenda, and those draft figures stay in the file.",
       "hideGloss": true
     }
   ],
@@ -121,7 +121,7 @@
       "explain": "預測星期五前超支，問可唔可以改期。"
     },
     {
-      "prompt": "Will you circulate the written forecast if each stakeholder has not read the note yet? 即係問緊咩？",
+      "prompt": "Will you circulate the written forecast if each stakeholder has not read the email yet? 即係問緊咩？",
       "choices": [
         "話會議已經取消",
         "問持份者未睇字條會唔會傳閱預測",
@@ -166,7 +166,7 @@
     },
     {
       "pattern": "Will you ___ the written forecast if each stakeholder has not read the note yet?",
-      "example": "Will you circulate the written forecast if each stakeholder has not read the note yet?",
+      "example": "Will you circulate the written forecast if each stakeholder has not read the email yet?",
       "glossYue": "如果每個持份者未睇過張字條，你會唔會傳閱書面預測？",
       "answer": "circulate",
       "choices": [
@@ -186,7 +186,7 @@
       "promptYue": "你點講？",
       "choices": [
         "Could we move Monday's review if the forecast shows we'll go over budget before Friday?",
-        "Will you circulate the written forecast if each stakeholder has not read the note yet?",
+        "Will you circulate the written forecast if each stakeholder has not read the email yet?",
         "What should the new written agenda say if the overrun changes the Monday review date?"
       ],
       "answer": 0,
@@ -219,7 +219,7 @@
         "line": "We can move that Monday review, and the forecast still shows a small cost overrun.",
         "audio": "assets/audio/lines/w14-l2.mp3",
         "audioSlow": "assets/audio/lines/w14-l2-slow.mp3",
-        "expect": "Will you circulate the written forecast if each stakeholder has not read the note yet?",
+        "expect": "Will you circulate the written forecast if each stakeholder has not read the email yet?",
         "keywords": [
           "forecast",
           "circulate"
@@ -230,7 +230,7 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "I will circulate that written forecast once the team has read the full note pack.",
+        "line": "I will send that written forecast round once the team has read the full email.",
         "audio": "assets/audio/lines/w14-l4.mp3",
         "audioSlow": "assets/audio/lines/w14-l4-slow.mp3",
         "expect": "What should the new written agenda say if the overrun changes the Monday review date?",
@@ -247,7 +247,7 @@
         "line": "I will put the new date on the agenda and note the overrun after review.",
         "audio": "assets/audio/lines/w14-l6.mp3",
         "audioSlow": "assets/audio/lines/w14-l6-slow.mp3",
-        "expect": "Can you circulate the full agenda without those raw notes during the Monday call?",
+        "expect": "Can you send the full agenda, but not the draft figures, on the Monday call?",
         "keywords": [
           "circulate",
           "agenda"
@@ -302,7 +302,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Will you circulate the written forecast if each ___ has not read the note yet? 呢句入面，邊個字先啱？",
+      "prompt": "Will you circulate the written forecast if each ___ has not read the email yet? 呢句入面，邊個字先啱？",
       "choices": [
         "Friday",
         "stakeholder",
