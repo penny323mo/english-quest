@@ -86,33 +86,33 @@
       "id": "w4-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Yes, I think so. We can catch up later after the notes are on the table.",
-      "glossYue": "好。筆記放喺檯之後，我哋遲啲再傾。",
+      "text": "Yes. We can go into the room and catch up after the notes.",
+      "glossYue": "得。我哋入房，筆記之後再傾。",
       "audio": "assets/audio/lines/w4-l6.mp3",
       "audioSlow": "assets/audio/lines/w4-l6-slow.mp3",
-      "say": "Yes, I think so. We can catch up later after the notes are on the table.",
+      "say": "Yes. We can go into the room and catch up after the notes.",
       "hideGloss": true
     },
     {
       "id": "w4-l7",
       "speaker": "ada",
       "speakerLabel": "Ada",
-      "text": "Then the team can quietly start once everyone has a quiet seat near the bright window.",
-      "glossYue": "人人坐低近窗，團隊就可以開始。",
+      "text": "Then the team can start the meeting once everyone has found a seat by the window.",
+      "glossYue": "咁人人喺窗邊坐低，就可以開會。",
       "audio": "assets/audio/lines/w4-l7.mp3",
       "audioSlow": "assets/audio/lines/w4-l7-slow.mp3",
-      "say": "Then the team can quietly start once everyone has a quiet seat near the bright window.",
+      "say": "Then the team can start the meeting once everyone has found a seat by the window.",
       "hideGloss": true
     },
     {
       "id": "w4-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Yes. I will open the door now, and we can begin the full meeting together inside.",
-      "glossYue": "好。我而家開門，我哋入面一齊開始開會。",
+      "text": "Yes. I'll open the door, and we can begin the meeting inside.",
+      "glossYue": "好。我開門，我哋入去開始開會。",
       "audio": "assets/audio/lines/w4-l8.mp3",
       "audioSlow": "assets/audio/lines/w4-l8-slow.mp3",
-      "say": "Yes. I will open the door now, and we can begin the full meeting together inside.",
+      "say": "Yes. I'll open the door, and we can begin the meeting inside.",
       "hideGloss": false
     }
   ],
@@ -173,7 +173,7 @@
     },
     {
       "pattern": "Yes, I think so. We can ___ later after the notes are on the table.",
-      "example": "Yes, I think so. We can catch up later after the notes are on the table.",
+      "example": "Yes. We can go into the room and catch up after the notes.",
       "glossYue": "我哋遲啲⋯⋯。",
       "answer": "catch up",
       "choices": [
@@ -299,7 +299,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "同事講「Yes, I think so. We can catch up later after the notes are on the table.」，catch up later 係咩意思？",
+      "prompt": "同事講「Yes. We can go into the room and catch up after the notes.」，catch up later 係咩意思？",
       "choices": [
         "遲啲再傾",
         "而家取消",

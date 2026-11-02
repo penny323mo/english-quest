@@ -57,11 +57,11 @@
       "id": "t12-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Hello, I have a reservation, and I hope our booked room is ready very soon.",
-      "glossYue": "你好，我有訂房，希望我哋訂咗嘅房間就快準備好。",
+      "text": "Hello, I have a reservation and want an early check-in.",
+      "glossYue": "你好，我有訂房，想早啲入住。",
       "audio": "assets/audio/lines/t12-l1.mp3",
       "audioSlow": "assets/audio/lines/t12-l1-slow.mp3",
-      "say": "Hello, I have a reservation, and I hope our booked room is ready very soon.",
+      "say": "Hello, I have a reservation and want an early check-in.",
       "hideGloss": false
     },
     {
@@ -69,7 +69,7 @@
       "speaker": "kim",
       "speakerLabel": "Kim",
       "text": "The room is not ready, and your luggage can stay beside the desk.",
-      "glossYue": "房間未準備好，行李可以放喺櫃檯旁邊。",
+      "glossYue": "房間未得，行李可以放喺櫃檯旁邊。",
       "audio": "assets/audio/lines/t12-l2.mp3",
       "audioSlow": "assets/audio/lines/t12-l2-slow.mp3",
       "say": "The room is not ready, and your luggage can stay beside the desk.",
@@ -79,72 +79,72 @@
       "id": "t12-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could we please have a non-smoking room, and may the luggage stay here?",
-      "glossYue": "可唔可以要非吸煙房，行李留喺度得唔得？",
+      "text": "Could we have a non-smoking room, and may the luggage stay here?",
+      "glossYue": "可唔可以要無煙房，行李留喺度得唔得？",
       "audio": "assets/audio/lines/t12-l3.mp3",
       "audioSlow": "assets/audio/lines/t12-l3-slow.mp3",
-      "say": "Could we please have a non-smoking room, and may the luggage stay here?",
+      "say": "Could we have a non-smoking room, and may the luggage stay here?",
       "hideGloss": false
     },
     {
       "id": "t12-l4",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "The non-smoking option is free for you, and it is ready after four o'clock.",
-      "glossYue": "非吸煙房唔使加錢，四點之後房間就準備好。",
+      "text": "The non-smoking option is free, and it is ready after four.",
+      "glossYue": "無煙房唔使加錢，四點之後得。",
       "audio": "assets/audio/lines/t12-l4.mp3",
       "audioSlow": "assets/audio/lines/t12-l4-slow.mp3",
-      "say": "The non-smoking option is free for you, and it is ready after four o'clock.",
+      "say": "The non-smoking option is free, and it is ready after four.",
       "hideGloss": true
     },
     {
       "id": "t12-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "What is the wifi password I can use when I reach the room?",
-      "glossYue": "我入到房間可以用嘅無線網絡密碼係咩？",
+      "text": "What is the wifi password I can use while I wait?",
+      "glossYue": "等開房嗰陣，wifi 密碼係咩？",
       "audio": "assets/audio/lines/t12-l5.mp3",
       "audioSlow": "assets/audio/lines/t12-l5-slow.mp3",
-      "say": "What is the wifi password I can use when I reach the room?",
+      "say": "What is the wifi password I can use while I wait?",
       "hideGloss": true
     },
     {
       "id": "t12-l6",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "The wifi password is printed on this card you can take from the front desk.",
-      "glossYue": "無線網絡密碼印喺呢張卡，你可以喺前台攞。",
+      "text": "The wifi password is printed on this card from the front desk.",
+      "glossYue": "wifi 密碼印咗喺前台呢張卡。",
       "audio": "assets/audio/lines/t12-l6.mp3",
       "audioSlow": "assets/audio/lines/t12-l6-slow.mp3",
-      "say": "The wifi password is printed on this card you can take from the front desk.",
+      "say": "The wifi password is printed on this card from the front desk.",
       "hideGloss": true
     },
     {
       "id": "t12-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will leave the luggage at the desk and then come back after four o'clock.",
-      "glossYue": "我會將行李留喺櫃檯，四點之後再返嚟。",
+      "text": "I will leave the luggage at the desk and come back after four.",
+      "glossYue": "我會將行李留喺櫃檯，四點之後返嚟。",
       "audio": "assets/audio/lines/t12-l7.mp3",
       "audioSlow": "assets/audio/lines/t12-l7-slow.mp3",
-      "say": "I will leave the luggage at the desk and then come back after four o'clock.",
+      "say": "I will leave the luggage at the desk and come back after four.",
       "hideGloss": true
     },
     {
       "id": "t12-l8",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Please come back for the room after four, and the desk will call your name.",
-      "glossYue": "請四點之後返嚟取房間，櫃檯會叫你個名。",
+      "text": "Please come back after four, and the desk will call your name.",
+      "glossYue": "請四點之後返嚟，櫃檯會叫你個名。",
       "audio": "assets/audio/lines/t12-l8.mp3",
       "audioSlow": "assets/audio/lines/t12-l8-slow.mp3",
-      "say": "Please come back for the room after four, and the desk will call your name.",
+      "say": "Please come back after four, and the desk will call your name.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Hello, I have a reservation, and I hope our booked room is ready very soon. 呢句即係點？",
+      "prompt": "Hello, I have a reservation and want an early check-in. 呢句即係點？",
       "choices": [
         "有訂房，希望房間就快準備好",
         "行李已經拎走",
@@ -154,7 +154,7 @@
       "explain": "reservation 係訂房。room 係房間。"
     },
     {
-      "prompt": "Could we please have a non-smoking room, and may the luggage stay here? 即係問緊咩？",
+      "prompt": "Could we have a non-smoking room, and may the luggage stay here? 即係問緊咩？",
       "choices": [
         "問房間幾點退房",
         "問可唔可以要非吸煙，行李留低",
@@ -164,7 +164,7 @@
       "explain": "non-smoking 係非吸煙。luggage 係行李。"
     },
     {
-      "prompt": "What is the wifi password I can use when I reach the room? 即係問緊咩？",
+      "prompt": "What is the wifi password I can use while I wait? 即係問緊咩？",
       "choices": [
         "問行李可唔可以留低",
         "問房間準唔準備好",
@@ -177,7 +177,7 @@
   "chunks": [
     {
       "pattern": "Could we please have a ___ room, and may the luggage stay here?",
-      "example": "Could we please have a non-smoking room, and may the luggage stay here?",
+      "example": "Could we have a non-smoking room, and may the luggage stay here?",
       "glossYue": "可唔可以要非吸煙房？",
       "answer": "non-smoking",
       "choices": [
@@ -188,7 +188,7 @@
     },
     {
       "pattern": "The wifi ___ is printed on this card you can take from the front desk.",
-      "example": "The wifi password is printed on this card you can take from the front desk.",
+      "example": "The wifi password is printed on this card from the front desk.",
       "glossYue": "密碼印喺卡上面。",
       "answer": "password",
       "choices": [
@@ -199,7 +199,7 @@
     },
     {
       "pattern": "Hello, I have a ___, and I hope our booked room is ready very soon.",
-      "example": "Hello, I have a reservation, and I hope our booked room is ready very soon.",
+      "example": "Hello, I have a reservation and want an early check-in.",
       "glossYue": "我有訂房。",
       "answer": "reservation",
       "choices": [
@@ -244,7 +244,7 @@
         "line": "The room is not ready, and your luggage can stay beside the desk.",
         "audio": "assets/audio/lines/t12-l2.mp3",
         "audioSlow": "assets/audio/lines/t12-l2-slow.mp3",
-        "expect": "Could we please have a non-smoking room, and may the luggage stay here?",
+        "expect": "Could we have a non-smoking room, and may the luggage stay here?",
         "keywords": [
           "non-smoking",
           "luggage"
@@ -258,7 +258,7 @@
         "line": "The non-smoking option is free for you, and it is ready after four o'clock.",
         "audio": "assets/audio/lines/t12-l4.mp3",
         "audioSlow": "assets/audio/lines/t12-l4-slow.mp3",
-        "expect": "What is the wifi password I can use when I reach the room?",
+        "expect": "What is the wifi password I can use while I wait?",
         "keywords": [
           "wifi",
           "password"
@@ -269,10 +269,10 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "The wifi password is printed on this card you can take from the front desk.",
+        "line": "The wifi password is printed on this card from the front desk.",
         "audio": "assets/audio/lines/t12-l6.mp3",
         "audioSlow": "assets/audio/lines/t12-l6-slow.mp3",
-        "expect": "I will leave the luggage at the desk and then come back after four o'clock.",
+        "expect": "I will leave the luggage at the desk and come back after four.",
         "keywords": [
           "luggage",
           "four"
@@ -339,6 +339,6 @@
   ],
   "shadow": {
     "lineId": "t12-l1",
-    "hint": "Hello, I have a reservation, and I hope our booked room is ready very soon."
+    "hint": "Hello, I have a reservation and want an early check-in."
   }
 }

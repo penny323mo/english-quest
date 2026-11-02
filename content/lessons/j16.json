@@ -57,11 +57,11 @@
       "id": "j16-l1",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "I'd like to engrave our wedding date inside this silver bracelet. It's a gift.",
-      "glossYue": "我想喺呢隻銀手鏈入面刻我哋嘅結婚日期。呢份係禮物。",
+      "text": "I'd like to engrave our wedding date inside this silver bracelet.",
+      "glossYue": "我想將結婚日期刻喺呢條銀手鏈入面。",
       "audio": "assets/audio/lines/j16-l1.mp3",
       "audioSlow": "assets/audio/lines/j16-l1-slow.mp3",
-      "say": "I'd like to engrave our wedding date inside this silver bracelet. It's a gift.",
+      "say": "I'd like to engrave our wedding date inside this silver bracelet.",
       "hideGloss": false
     },
     {
@@ -79,33 +79,33 @@
       "id": "j16-l3",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "The twelfth of June, 2021. Can you also add our initials, G and M?",
-      "glossYue": "二零二一年六月十二號。可唔可以加我哋嘅首字母 G 同 M？",
+      "text": "The twelfth of June, 2021. Can you add our initials, G and M, within twelve characters?",
+      "glossYue": "二零二一年六月十二號。可唔可以加我哋嘅首字母 G 同 M，唔好超過十二個字母？",
       "audio": "assets/audio/lines/j16-l3.mp3",
       "audioSlow": "assets/audio/lines/j16-l3-slow.mp3",
-      "say": "The twelfth of June, 2021. Can you also add our initials, G and M?",
+      "say": "The twelfth of June, 2021. Can you add our initials, G and M, within twelve characters?",
       "hideGloss": false
     },
     {
       "id": "j16-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Yes. \"12.06.2021 G&M\" is fourteen characters, so it's two over the limit.",
-      "glossYue": "「12.06.2021 G&M」係十四個字，超咗上限兩個。",
+      "text": "Yes. Add the initials and \"12.06.2021 G&M\" is fourteen characters, two over the limit.",
+      "glossYue": "係。加首字母之後「12.06.2021 G&M」有十四個字母，超咗兩個。",
       "audio": "assets/audio/lines/j16-l4.mp3",
       "audioSlow": "assets/audio/lines/j16-l4-slow.mp3",
-      "say": "Yes. \"12.06.2021 G&M\" is fourteen characters, so it's two over the limit.",
+      "say": "Yes. Add the initials and \"12.06.2021 G&M\" is fourteen characters, two over the limit.",
       "hideGloss": false
     },
     {
       "id": "j16-l5",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Then just the date and initials without dots, please. Is there an extra fee?",
-      "glossYue": "咁就淨係日期同首字母，唔好有點。有冇額外費用？",
+      "text": "Then just the date and initials, please. Is there an extra fee?",
+      "glossYue": "咁就淨係日期同首字母。有冇額外費用？",
       "audio": "assets/audio/lines/j16-l5.mp3",
       "audioSlow": "assets/audio/lines/j16-l5-slow.mp3",
-      "say": "Then just the date and initials without dots, please. Is there an extra fee?",
+      "say": "Then just the date and initials, please. Is there an extra fee?",
       "hideGloss": false
     },
     {
@@ -123,28 +123,28 @@
       "id": "j16-l7",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Plain is fine. Can I check the engraving text before you cut it?",
-      "glossYue": "普通字體就得。刻之前我可唔可以核對段字？",
+      "text": "Plain is fine. Can I check the engraving before you cut it?",
+      "glossYue": "普通字體得。你刻之前我可唔可以睇吓？",
       "audio": "assets/audio/lines/j16-l7.mp3",
       "audioSlow": "assets/audio/lines/j16-l7-slow.mp3",
-      "say": "Plain is fine. Can I check the engraving text before you cut it?",
+      "say": "Plain is fine. Can I check the engraving before you cut it?",
       "hideGloss": false
     },
     {
       "id": "j16-l8",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Of course. Please sign this form, and it'll be ready in three days.",
-      "glossYue": "當然可以。請簽呢張表，三日後可以取。",
+      "text": "Of course. Please sign this form, and the engraving will be ready in three days.",
+      "glossYue": "當然可以。請簽呢張表，刻字三日後就準備好嘅。",
       "audio": "assets/audio/lines/j16-l8.mp3",
       "audioSlow": "assets/audio/lines/j16-l8-slow.mp3",
-      "say": "Of course. Please sign this form, and it'll be ready in three days.",
+      "say": "Of course. Please sign this form, and the engraving will be ready in three days.",
       "hideGloss": false
     }
   ],
   "understand": [
     {
-      "prompt": "I'd like to engrave our wedding date inside this silver bracelet. It's a gift. 呢句即係點？",
+      "prompt": "I'd like to engrave our wedding date inside this silver bracelet. 呢句即係點？",
       "choices": [
         "關於日期",
         "講緊刻字",
@@ -154,7 +154,7 @@
       "explain": "刻字。"
     },
     {
-      "prompt": "Yes. \"12.06.2021 G&M\" is fourteen characters, so it's two over the limit. 呢句即係點？",
+      "prompt": "Yes. Add the initials and \"12.06.2021 G&M\" is fourteen characters, two over the limit. 呢句即係點？",
       "choices": [
         "講緊首字母",
         "唔係刻字",
@@ -164,7 +164,7 @@
       "explain": "首字母。"
     },
     {
-      "prompt": "Of course. Please sign this form, and it'll be ready in three days. 呢句即係點？",
+      "prompt": "Of course. Please sign this form, and the engraving will be ready in three days. 呢句即係點？",
       "choices": [
         "唔係刻字",
         "關於首字母",
@@ -176,9 +176,9 @@
   ],
   "chunks": [
     {
-      "pattern": "I'd like to engrave our wedding ___ inside this silver bracelet. It's a gift.",
-      "example": "I'd like to engrave our wedding date inside this silver bracelet. It's a gift.",
-      "glossYue": "我想喺呢隻銀手鏈入面刻我哋嘅結婚日期。呢份係禮物。",
+      "pattern": "I'd like to engrave our wedding ___ inside this silver bracelet.",
+      "example": "I'd like to engrave our wedding date inside this silver bracelet.",
+      "glossYue": "我想將結婚日期刻喺呢條銀手鏈入面。",
       "answer": "date",
       "choices": [
         "date",
@@ -188,8 +188,8 @@
     },
     {
       "pattern": "Then just the date and ___ without dots, please. Is there an extra fee?",
-      "example": "Then just the date and initials without dots, please. Is there an extra fee?",
-      "glossYue": "咁就淨係日期同首字母，唔好有點。有冇額外費用？",
+      "example": "Then just the date and initials, please. Is there an extra fee?",
+      "glossYue": "咁就淨係日期同首字母。有冇額外費用？",
       "answer": "initials",
       "choices": [
         "initials",
@@ -199,7 +199,7 @@
     },
     {
       "pattern": "The ___ of June, 2021. Can you also add our initials, G and M?",
-      "example": "The twelfth of June, 2021. Can you also add our initials, G and M?",
+      "example": "The twelfth of June, 2021. Can you add our initials, G and M, within twelve characters?",
       "glossYue": "二零二一年六月十二號。可唔可以加我哋嘅首字母 G 同 M？",
       "answer": "twelfth",
       "choices": [
@@ -214,7 +214,7 @@
       "type": "choice",
       "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
-        "I'd like to engrave our wedding date inside this silver bracelet. It's a gift.",
+        "I'd like to engrave our wedding date inside this silver bracelet.",
         "The twelfth of June, 2021. Can you also add our initials, G and M?",
         "Then just the date and initials without dots, please. Is there an extra fee?"
       ],
@@ -258,7 +258,7 @@
         "line": "Yes. \"12.06.2021 G&M\" is fourteen characters, so it's two over the limit.",
         "audio": "assets/audio/lines/j16-l4.mp3",
         "audioSlow": "assets/audio/lines/j16-l4-slow.mp3",
-        "expect": "Then just the date and initials without dots, please. Is there an extra fee?",
+        "expect": "Then just the date and initials, please. Is there an extra fee?",
         "keywords": [
           "date",
           "initials"
@@ -272,7 +272,7 @@
         "line": "A plain font is free. A script font is fifty dollars extra.",
         "audio": "assets/audio/lines/j16-l6.mp3",
         "audioSlow": "assets/audio/lines/j16-l6-slow.mp3",
-        "expect": "Plain is fine. Can I check the engraving text before you cut it?",
+        "expect": "Plain is fine. Can I check the engraving before you cut it?",
         "keywords": [
           "plain",
           "fine"
@@ -307,7 +307,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "The twelfth of June, 2021. Can you also add our initials, G and M? 呢句入面，邊個意思先啱？",
+      "prompt": "The twelfth of June, 2021. Can you add our initials, G and M, within twelve characters? 呢句入面，邊個意思先啱？",
       "choices": [
         "首字母",
         "日期",
@@ -317,7 +317,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Then just the date and initials without dots, please. Is there an extra fee? 呢句入面，邊個意思先啱？",
+      "prompt": "Then just the date and initials, please. Is there an extra fee? 呢句入面，邊個意思先啱？",
       "choices": [
         "首字母",
         "刻字",
@@ -327,7 +327,7 @@
     },
     {
       "type": "choice",
-      "prompt": "I'd like to engrave our wedding ___ inside this silver bracelet. It's a gift. 呢句入面，邊個字先啱？",
+      "prompt": "I'd like to engrave our wedding ___ inside this silver bracelet. 呢句入面，邊個字先啱？",
       "choices": [
         "engraving",
         "initial",
@@ -339,6 +339,6 @@
   ],
   "shadow": {
     "lineId": "j16-l1",
-    "hint": "I'd like to engrave our wedding date inside this silver bracelet. It's a gift."
+    "hint": "I'd like to engrave our wedding date inside this silver bracelet."
   }
 }

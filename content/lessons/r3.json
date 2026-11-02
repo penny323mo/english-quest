@@ -34,11 +34,11 @@
       "id": "r3-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I'd like the chicken, please, and I have a note about the sauce.",
-      "glossYue": "我想叫雞，唔該，醬汁我有嘢要講。",
+      "text": "I'd like the chicken, and I have a note about the sauce.",
+      "glossYue": "我想要雞肉，醬汁方面我有個備註。",
       "audio": "assets/audio/lines/r3-l1.mp3",
       "audioSlow": "assets/audio/lines/r3-l1-slow.mp3",
-      "say": "I'd like the chicken, please, and I have a note about the sauce.",
+      "say": "I'd like the chicken, and I have a note about the sauce.",
       "hideGloss": false
     },
     {
@@ -56,11 +56,11 @@
       "id": "r3-l3",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "We will check the ingredients, and I will tell you what is in the dish.",
-      "glossYue": "我哋會睇吓成分，再話你知碟菜入面有咩。",
+      "text": "We'll check the ingredients and then tell you.",
+      "glossYue": "我哋會查成份，然後話你知。",
       "audio": "assets/audio/lines/r3-l3.mp3",
       "audioSlow": "assets/audio/lines/r3-l3-slow.mp3",
-      "say": "We will check the ingredients, and I will tell you what is in the dish.",
+      "say": "We'll check the ingredients and then tell you.",
       "hideGloss": true
     },
     {
@@ -78,11 +78,11 @@
       "id": "r3-l5",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Thanks for the sauce note, and I will mark it on your order.",
-      "glossYue": "多謝你話我知醬汁，我會喺單上記低。",
+      "text": "Thanks. I'll keep the chicken on the side.",
+      "glossYue": "多謝。我會將雞肉放喺旁邊。",
       "audio": "assets/audio/lines/r3-l5.mp3",
       "audioSlow": "assets/audio/lines/r3-l5-slow.mp3",
-      "say": "Thanks for the sauce note, and I will mark it on your order.",
+      "say": "Thanks. I'll keep the chicken on the side.",
       "hideGloss": true
     },
     {
@@ -110,22 +110,22 @@
       "id": "r3-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Then I will take the chicken with the sauce on the side.",
-      "glossYue": "咁我要雞肉，醬汁放一邊。",
+      "text": "Then I will take the chicken, with the gravy apart.",
+      "glossYue": "咁我要雞肉，肉汁分開。",
       "audio": "assets/audio/lines/r3-l8.mp3",
       "audioSlow": "assets/audio/lines/r3-l8-slow.mp3",
-      "say": "Then I will take the chicken with the sauce on the side.",
+      "say": "Then I will take the chicken, with the gravy apart.",
       "hideGloss": true
     },
     {
       "id": "r3-m2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could I have it without nuts, and with the sauce on the side?",
-      "glossYue": "可唔可以唔要果仁，醬放旁邊？",
+      "text": "Could I have it without nuts, and with the gravy kept apart?",
+      "glossYue": "可唔可以唔要果仁，汁另上？",
       "audio": "assets/audio/lines/r3-m2.mp3",
       "audioSlow": "assets/audio/lines/r3-m2-slow.mp3",
-      "say": "Could I have it [[wɪθˈaʊt]] nuts, and with the sauce on the side?",
+      "say": "Could I have it [[wɪθˈaʊt]] nuts, and with the gravy kept apart?",
       "hideGloss": false
     }
   ],
@@ -312,7 +312,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「We will check the ingredients, and I will tell you what is in the dish.」，係咩意思？",
+      "prompt": "客人講「We'll check the ingredients and then tell you.」，係咩意思？",
       "choices": [
         "辣",
         "貝類",

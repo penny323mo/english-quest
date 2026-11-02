@@ -332,9 +332,8 @@ test("round 26 spoken goals, tray card, and spelled model", () => {
 
 test("examples do not pad the ending unless the scene needs the time", () => {
   const tail = /(?:tonight|now|if you like)[.?!]?$/i;
-  const allow = new Set(["air-conditioning-phrase", "air-conditioning-phrase#ex0", "available-adj", "available-adj#ex0", "bill-later-phrase", "bill-later-phrase#ex0", "bill-noun#ex1", "blanket-noun", "blanket-noun#ex0", "callback-noun", "callback-noun#ex0", "calling-verb", "calling-verb#ex0", "card-machine-phrase#ex1", "change-noun#ex1", "check-noun", "check-noun#ex0", "contactless-adj#ex1", "delicious-adj#ex1", "j5-l6", "j7-l6", "j9-l8", "keep-the-change-phrase", "keep-the-change-phrase#ex0", "meter-noun#ex1", "mute-verb", "mute-verb#ex0", "noisy-adj", "noisy-adj#ex0", "now-adv", "quiet-adj", "quiet-adj#ex0", "r4-l1", "r4-l6", "r5-l1", "r5-l7", "r6-l1", "r11-l8", "room-noun#ex1", "seat-verb", "separate-adj#ex1", "split-verb", "split-verb#ex0", "t4-l1", "t6-l1", "t6-l2", "t6-l5", "t6-l6", "t6-l7", "t14-l2", "takeaway-noun#ex1", "twin-noun#ex1", "w3-l6", "wind-noun", "wind-verb", "wrap-up-verb", "wrap-up-verb#ex0"]);
   function check(id, sample) {
-    if (tail.test(String(sample).trim()) && !allow.has(id)) assert.fail(`${id}: ${sample}`);
+    if (tail.test(String(sample).trim())) assert.fail(`${id}: ${sample}`);
   }
   for (const item of lex.items) {
     check(item.id, item.example);
@@ -652,7 +651,6 @@ test("a later dialogue line does not reuse three content lemmas", () => {
 
 test("dialogue speakers alternate and a staff reply shares a content word", () => {
   const staff = new Set(["mei", "mina", "cole", "ana", "kai", "sam", "kim", "ada", "ren", "jo", "ray", "ben", "lea", "owen", "wen", "pat", "noa", "may", "suki", "pesi", "hugh", "nori", "reid", "opal", "wynn", "nina", "ida", "mira", "otto", "glen"]);
-  const staffAllow = new Set(["j16-l4", "j16-l8", "r11-l4", "r11-l6", "r11-l8", "r12-l4", "r12-l6", "r12-l8", "w10-l6", "w10-l8", "r13-l2", "j18-l2", "j18-l4", "j18-l6", "j18-l8", "d11-l6", "d11-l8", "d12-l7", "t15-l4", "t15-l6", "t15-l8", "w11-l6", "r14-l4", "r14-l8", "j19-l2", "j19-l8"]);
   const func = new Set("a an the i you we they he she it my your our is are was were be been am have has had do does did will would can could should may might to of in on at for with and or but if so not this that these those me him her them us please just very still also then there here from as about into".split(" "));
   const customerQuestion = /which\b.+\bbetter\b|how long will this\b.+\bparcel\b|\bspell my name\b/i;
   function words(text) {
@@ -684,7 +682,6 @@ test("dialogue speakers alternate and a staff reply shares a content word", () =
       const prev = main[i - 1];
       if (!prev.text.trim().endsWith("?")) continue;
       if (!staff.has(line.speaker) || line.speaker === you) continue;
-      if (staffAllow.has(line.id)) continue;
       const shared = [...words(line.text)].filter((tok) => words(prev.text).has(tok));
       assert.ok(shared.length >= 1, `${line.id} does not answer ${prev.id}`);
     }
@@ -862,14 +859,12 @@ test("composite difficulty does not dip on lessons that can still change", () =>
     return 0.4 * words + 2 * meanRank + clauses;
   }
   assert.equal(order.length, 97);
-  const locked = new Set(["J16", "R11", "R12", "W10", "T14", "R13", "J18", "D11", "W9", "D12", "T15", "W11", "R14", "J19", "T16"]);
   const gated = new Set(["T17", "J20", "D13"]);
   const scores = order.map((id) => score(byId[id]));
   for (let i = 1; i < order.length; i += 1) {
     const curId = order[i];
     const prevId = order[i - 1];
     if (!gated.has(curId) && !gated.has(prevId)) continue;
-    if (locked.has(curId)) continue;
     assert.ok(scores[i - 1] - scores[i] <= 0.5 + 1e-9, `${prevId} ${scores[i - 1].toFixed(3)} -> ${curId} ${scores[i].toFixed(3)}`);
   }
   assert.equal(byId.T2.next, "T17");
@@ -877,7 +872,6 @@ test("composite difficulty does not dip on lessons that can still change", () =>
   assert.equal(byId.J15.next, "J18");
   assert.equal(byId.T12.next, "T15");
   assert.equal(byId.D9.next, "D11");
-  for (const id of gated) assert.equal(locked.has(id), false, id);
 });
 
 test("white gold is 白K金 and the tablet eyebrow is 藥片", () => {
@@ -980,7 +974,6 @@ test("round 38 scenes keep one plan", () => {
 
 test("a dialogue does not repeat a five-word fragment three times", () => {
   const wordRe = /[A-Za-z']+/g;
-  const allow = new Set(["r3:the sauce on the side"]);
   for (const lesson of lessons) {
     const counts = new Map();
     for (const line of lesson.dialogue) {
@@ -991,7 +984,7 @@ test("a dialogue does not repeat a five-word fragment three times", () => {
       }
     }
     for (const [frag, n] of counts) {
-      if (n >= 3 && !allow.has(`${lesson.id.toLowerCase()}:${frag}`)) assert.fail(`${lesson.id} ×${n} ${frag}`);
+      if (n >= 3) assert.fail(`${lesson.id} ×${n} ${frag}`);
     }
   }
 });
@@ -1101,9 +1094,6 @@ test("round 40 scenes keep one plan", () => {
 
 test("dialogue questions share a word, lines do not stuff one word, and padding tails stay off new copy", () => {
   const func = new Set("a an the i you we they he she it my your our is are was were be been am have has had do does did will would can could should may might to of in on at for with and or but if so not this that these those me him her them us please just very still also then there here from as about into".split(" "));
-  const qAllow = new Set(["f4-l2", "f5-l2", "j1-l2", "r1-l2", "r1-l4", "j2-l4", "r10-l7", "j3-l5", "j4-l3", "j5-l2", "t4-l3", "t4-l5", "r4-l7", "r4-l8", "j6-l4", "j7-l7", "j7-m1", "w1-l2", "d1-l2", "w4-l6", "j9-l5", "j9-l8", "j10-l3", "t6-l2", "t8-l4", "t10-l3", "w6-l2", "j16-l3", "j16-l4", "j16-l8", "r11-l4", "r11-l6", "r11-l8", "r12-l4", "r12-l6", "r12-l8", "w10-l6", "w10-l8", "r13-l2", "r13-l5", "r13-l7", "j18-l2", "j18-l4", "j18-l5", "j18-l6", "j18-l8", "d11-l6", "d11-l8", "w9-l7", "d12-l2", "d12-l4", "d12-l6", "d12-l7", "t15-l3", "t15-l4", "t15-l6", "t15-l8", "w11-l6", "r14-l4", "r14-l5", "r14-l8", "j19-l2", "j19-l8", "t16-l3"]);
-  const freqAllow = new Set(["R10:like", "R3:sauce", "R9:bill", "J15:ring", "T12:room", "D2:card", "R8:chicken", "D9:card", "W2:deadline", "W3:update", "T10:bag", "T14:gate", "W10:email", "J14:ring"]);
-  const tailAllow = new Set(["j1-l1", "j2-l1", "t1-l1", "t2-l5", "r2-l1", "r2-l5", "t4-l3", "d6-l1", "j6-l2", "j7-l3", "j7-m1", "t5-l3", "t12-l4", "d1-l1", "d1-l6", "d2-l1", "t7-l1", "j10-l2", "j12-l2", "j12-l8", "t8-l1", "w2-l1", "w3-l1", "d3-l5", "w5-l4", "j11-l5", "t9-l5", "t9-l8", "r11-l2", "r12-l4", "d11-l8", "r16-l1"]);
   const tails = [/\bfor you here\b/i, /\bthat note here\b/i, /\bfor you\b/i, /\btoday\b/i];
   function content(text) {
     return new Set((text.toLowerCase().match(/[a-z']+/g) || []).filter((tok) => tok.length > 2 && !func.has(tok)));
@@ -1113,17 +1103,17 @@ test("dialogue questions share a word, lines do not stuff one word, and padding 
     for (let i = 1; i < main.length; i += 1) {
       if (!main[i - 1].text.trim().endsWith("?")) continue;
       const shared = [...content(main[i].text)].filter((tok) => content(main[i - 1].text).has(tok));
-      if (shared.length < 1 && !qAllow.has(main[i].id)) assert.fail(`${main[i].id} does not share a content word`);
+      if (shared.length < 1) assert.fail(`${main[i].id} does not share a content word`);
     }
     const counts = new Map();
     for (const line of main) {
       for (const tok of content(line.text)) counts.set(tok, (counts.get(tok) || 0) + 1);
     }
     for (const [tok, n] of counts) {
-      if (n > 4 && !freqAllow.has(`${lesson.id}:${tok}`)) assert.fail(`${lesson.id} ${tok} x${n}`);
+      if (n > 4) assert.fail(`${lesson.id} ${tok} x${n}`);
     }
     for (const line of main) {
-      if (tails.some((re) => re.test(line.text)) && !tailAllow.has(line.id)) assert.fail(`${line.id} ${line.text}`);
+      if (tails.some((re) => re.test(line.text))) assert.fail(`${line.id} ${line.text}`);
     }
   }
 });
@@ -1215,7 +1205,11 @@ test("tracked review files exclude local audit artifacts", () => {
   const res = spawnSync("git", ["ls-files", "review/"], { cwd: root, encoding: "utf8" });
   assert.equal(res.status, 0, res.stderr);
   const files = res.stdout.split("\n").filter(Boolean);
-  assert.deepEqual(files, ["review/flags.json"]);
+  assert.deepEqual(files, [
+    "review/flags.json",
+    "review/stage3/before-after.md",
+    "review/stage3/grammar.json",
+  ]);
 });
 
 test("round 42 scenes keep the audit facts and a balanced quiz", () => {
@@ -1252,7 +1246,7 @@ test("round 42 scenes keep the audit facts and a balanced quiz", () => {
   assert.match(said("D11"), /under five thousand dollars/);
   assert.match(said("D11"), /fifty dollars a month/);
   assert.match(said("D11"), /in five days/);
-  assert.match(said("D11"), /online banking today/);
+  assert.match(said("D11"), /online banking/);
   assert.doesNotMatch(said("D11"), /one thousand/);
   assert.doesNotMatch(said("D11"), /No monthly fee at all/);
   const cleo = lessons.find((lesson) => lesson.id === "R13").dialogue.find((line) => /It's Cleo/.test(line.text));
@@ -1327,8 +1321,7 @@ test("audit scripts stay verbatim, under the word cap, and unpadded", () => {
     assert.deepEqual(lines, script, id);
     assert.equal(lines[0], script[0], id);
     const mean = lines.reduce((sum, text) => sum + (text.match(/[A-Za-z']+/g) || []).length, 0) / lines.length;
-    if (id === "T15") assert.ok(mean > caps["A2/B1"], `${mean}`);
-    else assert.ok(mean <= caps[lesson.cefr] + 1e-9, `${id} ${mean.toFixed(3)} > ${caps[lesson.cefr]}`);
+    assert.ok(mean <= caps[lesson.cefr] + 1e-9, `${id} ${mean.toFixed(3)} > ${caps[lesson.cefr]}`);
     for (let i = 0; i < lines.length; i += 1) {
       const text = lines[i].trim();
       assert.equal(/right now please/i.test(text), false, `${id} ${text}`);

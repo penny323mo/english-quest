@@ -46,22 +46,22 @@
       "id": "t3-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have a reservation under Tom, and I am here for two nights.",
-      "glossYue": "我用 Tom 個名訂咗房，住兩個晚上。",
+      "text": "I have a reservation under Tom, for two nights.",
+      "glossYue": "我用 Tom 個名訂咗兩晚。",
       "audio": "assets/audio/lines/t3-l2.mp3",
       "audioSlow": "assets/audio/lines/t3-l2-slow.mp3",
-      "say": "I have a reservation under Tom, and I am here for two nights.",
+      "say": "I have a reservation under Tom, for two nights.",
       "hideGloss": false
     },
     {
       "id": "t3-l3",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Your room is a double with a view, and the window faces the harbor.",
-      "glossYue": "你間房係雙人房，有景，窗向住海港。",
+      "text": "Your room is a double, and the window faces the harbor.",
+      "glossYue": "你間房係雙人房，窗向住海港。",
       "audio": "assets/audio/lines/t3-l3.mp3",
       "audioSlow": "assets/audio/lines/t3-l3-slow.mp3",
-      "say": "Your room is a double with a view, and the window faces the harbor.",
+      "say": "Your room is a double, and the window faces the harbor.",
       "hideGloss": false
     },
     {
@@ -112,11 +112,11 @@
       "id": "t3-m3",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Late checkout is fine, and you can leave your bags by the elevator.",
-      "glossYue": "遲退房冇問題，你可以將袋放喺升降機旁邊。",
+      "text": "Late checkout is fine, and you can leave the bags.",
+      "glossYue": "遲退房得，行李可以留低。",
       "audio": "assets/audio/lines/t3-m3.mp3",
       "audioSlow": "assets/audio/lines/t3-m3-slow.mp3",
-      "say": "Late checkout is fine, and you can leave your bags by the elevator.",
+      "say": "Late checkout is fine, and you can leave the bags.",
       "hideGloss": true
     }
   ],
@@ -307,7 +307,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Late checkout is fine, and you can leave your bags by the elevator.」，係咩意思？",
+      "prompt": "客人講「Late checkout is fine, and you can leave the bags.」，係咩意思？",
       "choices": [
         "早餐",
         "升降機",
@@ -317,7 +317,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Your room is a double with a view, and the window faces the harbor.」，係咩意思？",
+      "prompt": "客人講「Your room is a double, and the window faces the harbor.」，係咩意思？",
       "choices": [
         "雙人床",
         "景觀",

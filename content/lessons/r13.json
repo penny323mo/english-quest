@@ -68,11 +68,11 @@
       "id": "r13-l2",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Sure. What size would you like, regular or large?",
-      "glossYue": "可以。你要中杯定大杯？",
+      "text": "Sure. What size latte would you like, regular or large?",
+      "glossYue": "可以。呢杯拿鐵你要中杯定大杯呀？",
       "audio": "assets/audio/lines/r13-l2.mp3",
       "audioSlow": "assets/audio/lines/r13-l2-slow.mp3",
-      "say": "Sure. What size would you like, regular or large?",
+      "say": "Sure. What size latte would you like, regular or large?",
       "hideGloss": false
     },
     {
@@ -90,22 +90,22 @@
       "id": "r13-l4",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "For here or to go?",
-      "glossYue": "堂食定係拎走？",
+      "text": "Is this order for here, or to go?",
+      "glossYue": "呢張單堂食定係拎走？",
       "audio": "assets/audio/lines/r13-l4.mp3",
       "audioSlow": "assets/audio/lines/r13-l4-slow.mp3",
-      "say": "For here or to go?",
+      "say": "Is this order for here, or to go?",
       "hideGloss": false
     },
     {
       "id": "r13-l5",
       "speaker": "cleo",
       "speakerLabel": "Cleo",
-      "text": "To go, please.",
-      "glossYue": "拎走，唔該。",
+      "text": "To go, please. Pack this order.",
+      "glossYue": "拎走，唔該。呢張單幫我打包。",
       "audio": "assets/audio/lines/r13-l5.mp3",
       "audioSlow": "assets/audio/lines/r13-l5-slow.mp3",
-      "say": "To go, please.",
+      "say": "To go, please. Pack this order.",
       "hideGloss": false
     },
     {
@@ -123,11 +123,11 @@
       "id": "r13-l7",
       "speaker": "cleo",
       "speakerLabel": "Cleo",
-      "text": "It's Cleo. Sorry, I think this has regular milk, not oat milk.",
-      "glossYue": "Cleo。唔好意思，我覺得呢杯係普通奶，唔係燕麥奶。",
+      "text": "It's Cleo. Sorry, I think this order has regular milk, not oat milk.",
+      "glossYue": "Cleo。唔好意思，我覺得呢單用咗普通奶，唔係燕麥奶。",
       "audio": "assets/audio/lines/r13-l7.mp3",
       "audioSlow": "assets/audio/lines/r13-l7-slow.mp3",
-      "say": "It's Cleo. Sorry, I think this has regular milk, not oat milk.",
+      "say": "It's Cleo. Sorry, I think this order has regular milk, not oat milk.",
       "hideGloss": true
     },
     {
@@ -154,7 +154,7 @@
       "explain": "拿鐵。"
     },
     {
-      "prompt": "For here or to go? 即係問緊咩？",
+      "prompt": "Is this order for here, or to go? 即係問緊咩？",
       "choices": [
         "講緊燕麥奶",
         "唔係拿鐵",
@@ -199,7 +199,7 @@
     },
     {
       "pattern": "___ Cleo. Sorry, I think this has regular milk, not oat milk.",
-      "example": "It's Cleo. Sorry, I think this has regular milk, not oat milk.",
+      "example": "It's Cleo. Sorry, I think this order has regular milk, not oat milk.",
       "glossYue": "Cleo。唔好意思，我覺得呢杯係普通奶，唔係燕麥奶。",
       "answer": "It's",
       "choices": [

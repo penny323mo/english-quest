@@ -62,11 +62,11 @@
       "id": "j19-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Sure. The cut, colour, and clarity are all very good.",
-      "glossYue": "可以。切工、顏色同淨度都好好。",
+      "text": "In plain words, the cut, colour, and clarity are all very good.",
+      "glossYue": "用白話嚟講，切工、顏色同淨度都好好嘅。",
       "audio": "assets/audio/lines/j19-l2.mp3",
       "audioSlow": "assets/audio/lines/j19-l2-slow.mp3",
-      "say": "Sure. The cut, colour, and clarity are all very good.",
+      "say": "In plain words, the cut, colour, and clarity are all very good.",
       "hideGloss": false
     },
     {
@@ -128,11 +128,11 @@
       "id": "j19-l8",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Yes. The report is from a lab. It is not a brand name.",
-      "glossYue": "係。報告嚟自一間實驗室。佢唔係品牌名。",
+      "text": "Yes. The higher price comes from a lab report. It is not a brand name.",
+      "glossYue": "係。高啲嗰個價錢嚟自實驗室報告，唔係品牌名。",
       "audio": "assets/audio/lines/j19-l8.mp3",
       "audioSlow": "assets/audio/lines/j19-l8-slow.mp3",
-      "say": "Yes. The report is from a lab. It is not a brand name.",
+      "say": "Yes. The higher price comes from a lab report. It is not a brand name.",
       "hideGloss": false
     }
   ],
@@ -206,7 +206,7 @@
       "explain": "證書。"
     },
     {
-      "prompt": "Yes. The report is from a lab. It is not a brand name. 呢句即係點？",
+      "prompt": "Yes. The higher price comes from a lab report. It is not a brand name. 呢句即係點？",
       "choices": [
         "唔係鑽石",
         "講緊切工",
@@ -241,7 +241,7 @@
     },
     {
       "pattern": "Yes. The ___ is from a lab. It is not a brand name.",
-      "example": "Yes. The report is from a lab. It is not a brand name.",
+      "example": "Yes. The higher price comes from a lab report. It is not a brand name.",
       "glossYue": "係。報告嚟自一間實驗室。佢唔係品牌名。",
       "answer": "report",
       "choices": [
@@ -343,7 +343,7 @@
     },
     {
       "type": "choice",
-      "prompt": "Sure. The cut, ___, and clarity are all very good. 呢句入面，邊個字先啱？",
+      "prompt": "In plain words, the cut, ___, and clarity are all very good. 呢句入面，邊個字先啱？",
       "choices": [
         "certificate",
         "colour",

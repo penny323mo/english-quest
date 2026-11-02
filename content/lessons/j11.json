@@ -81,11 +81,11 @@
       "id": "j11-l5",
       "speaker": "nia",
       "speakerLabel": "Nia",
-      "text": "If I placed a custom deposit today, would the full timeline fit my anniversary appointment next month?",
-      "glossYue": "如果我今日落訂金，成個時間表仲趕唔趕得切我下個月嘅週年預約？",
+      "text": "If I placed a custom deposit, would the full timeline fit my anniversary appointment next month?",
+      "glossYue": "如果我落訂金，成個時間表仲趕唔趕得切我下個月嘅週年預約？",
       "audio": "assets/audio/lines/j11-l5.mp3",
       "audioSlow": "assets/audio/lines/j11-l5-slow.mp3",
-      "say": "If I placed a custom deposit today, would the full timeline fit my anniversary appointment next month?",
+      "say": "If I placed a custom deposit, would the full timeline fit my anniversary appointment next month?",
       "hideGloss": false
     },
     {
@@ -179,7 +179,7 @@
     },
     {
       "pattern": "If I placed a custom ___ today, would the full timeline still fit my anniversary appointment next month?",
-      "example": "If I placed a custom deposit today, would the full timeline fit my anniversary appointment next month?",
+      "example": "If I placed a custom deposit, would the full timeline fit my anniversary appointment next month?",
       "glossYue": "落一筆⋯⋯。",
       "answer": "deposit",
       "choices": [

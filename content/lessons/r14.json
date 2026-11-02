@@ -79,7 +79,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Mango, please. Can you write Happy birthday Mei on it?",
-      "glossYue": "芒果，唔該。上面可唔可以寫 Happy birthday Mei？",
+      "glossYue": "芒果，唔該。上面可唔可以寫 祝 Mei 生日快樂？",
       "audio": "assets/audio/lines/r14-l3.mp3",
       "audioSlow": "assets/audio/lines/r14-l3-slow.mp3",
       "say": "Mango, please. Can you write Happy birthday Mei on it?",
@@ -89,22 +89,22 @@
       "id": "r14-l4",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Yes. We can add that message. When do you want to pick it up?",
-      "glossYue": "可以。我哋可以加上句訊息。你想幾時取？",
+      "text": "Yes. We can write that birthday message. When do you want to pick it up?",
+      "glossYue": "可以。我哋可以寫低生日訊息。你想幾時嚟取？",
       "audio": "assets/audio/lines/r14-l4.mp3",
       "audioSlow": "assets/audio/lines/r14-l4-slow.mp3",
-      "say": "Yes. We can add that message. When do you want to pick it up?",
+      "say": "Yes. We can write that birthday message. When do you want to pick it up?",
       "hideGloss": true
     },
     {
       "id": "r14-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Saturday at three, please. Do you have candles too?",
-      "glossYue": "星期六三點，唔該。你哋有冇蠟燭？",
+      "text": "I want to pick it up at three. Do you have candles too?",
+      "glossYue": "我想三點攞。有冇蠟燭？",
       "audio": "assets/audio/lines/r14-l5.mp3",
       "audioSlow": "assets/audio/lines/r14-l5-slow.mp3",
-      "say": "Saturday at three, please. Do you have candles too?",
+      "say": "I want to pick it up at three. Do you have candles too?",
       "hideGloss": true
     },
     {
@@ -133,11 +133,11 @@
       "id": "r14-l8",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Of course. Your cake will be ready at three on Saturday.",
-      "glossYue": "當然可以。你個蛋糕星期六三點可以取。",
+      "text": "Of course you can pay the deposit by card.",
+      "glossYue": "當然可以用卡畀按金。",
       "audio": "assets/audio/lines/r14-l8.mp3",
       "audioSlow": "assets/audio/lines/r14-l8-slow.mp3",
-      "say": "Of course. Your cake will be ready at three on Saturday.",
+      "say": "Of course you can pay the deposit by card.",
       "hideGloss": true
     }
   ],
@@ -201,7 +201,7 @@
       "explain": "蛋糕。"
     },
     {
-      "prompt": "Yes. We can add that message. When do you want to pick it up? 即係問緊咩？",
+      "prompt": "Yes. We can write that birthday message. When do you want to pick it up? 即係問緊咩？",
       "choices": [
         "關於訊息",
         "唔係蛋糕",
@@ -211,7 +211,7 @@
       "explain": "訊息。"
     },
     {
-      "prompt": "Of course. Your cake will be ready at three on Saturday. 呢句即係點？",
+      "prompt": "Of course you can pay the deposit by card. 呢句即係點？",
       "choices": [
         "唔係蛋糕",
         "關於芒果",
@@ -224,7 +224,7 @@
   "chunks": [
     {
       "pattern": "Yes. We can add that ___. When do you want to pick it up?",
-      "example": "Yes. We can add that message. When do you want to pick it up?",
+      "example": "Yes. We can write that birthday message. When do you want to pick it up?",
       "glossYue": "可以。我哋可以加上句訊息。你想幾時取？",
       "answer": "message",
       "choices": [

@@ -64,22 +64,22 @@
       "id": "j3-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "May I see these earrings, and the matching necklace too?",
-      "glossYue": "可唔可以睇吓呢對耳環，同埋套裝？",
+      "text": "May I see these earrings and the necklace?",
+      "glossYue": "可唔可以睇吓呢對耳環同條頸鏈？",
       "audio": "assets/audio/lines/j3-l4.mp3",
       "audioSlow": "assets/audio/lines/j3-l4-slow.mp3",
-      "say": "May I see these earrings, and the matching necklace too?",
+      "say": "May I see these earrings and the necklace?",
       "hideGloss": true
     },
     {
       "id": "j3-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Of course. This pair is beautiful, and I can show you the set.",
-      "glossYue": "當然。呢對好靚，我可以畀你睇成套。",
+      "text": "Of course. This pair of earrings is beautiful, and I can show it.",
+      "glossYue": "當然。呢對耳環好靚，我可以攞出嚟畀你睇。",
       "audio": "assets/audio/lines/j3-l5.mp3",
       "audioSlow": "assets/audio/lines/j3-l5-slow.mp3",
-      "say": "[[əv kˈɔɹs.]] This pair is beautiful, and I can show you the set.",
+      "say": "Of course. This pair of earrings is beautiful, and I can show it.",
       "hideGloss": true
     }
   ],
@@ -276,7 +276,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Of course. This pair is beautiful, and I can show you the set.」，係咩意思？",
+      "prompt": "客人講「Of course. This pair of earrings is beautiful, and I can show it.」，係咩意思？",
       "choices": [
         "一隻戒指",
         "靠窗位",

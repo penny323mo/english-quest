@@ -65,11 +65,11 @@
       "id": "w5-l4",
       "speaker": "ren",
       "speakerLabel": "Ren",
-      "text": "I will escalate the case today, and update you within three business days.",
-      "glossYue": "我今日會升級呢單，三個工作天內通知你。",
+      "text": "I will escalate the case, and update you within three business days.",
+      "glossYue": "我會升級呢單，三個工作天內通知你。",
       "audio": "assets/audio/lines/w5-l4.mp3",
       "audioSlow": "assets/audio/lines/w5-l4-slow.mp3",
-      "say": "I will escalate the case today, and update you within three business days.",
+      "say": "I will escalate the case, and update you within three business days.",
       "hideGloss": true
     },
     {
@@ -139,7 +139,7 @@
       "explain": "compensation 係賠償，replacement 係換過。"
     },
     {
-      "prompt": "I will escalate the case today, and update you within three business days. 呢句即係點？",
+      "prompt": "I will escalate the case, and update you within three business days. 呢句即係點？",
       "choices": [
         "會取消張單",
         "會升級處理，三個工作天內電話通知",
@@ -163,7 +163,7 @@
     },
     {
       "pattern": "I will ___ the case today, and update you within three business days.",
-      "example": "I will escalate the case today, and update you within three business days.",
+      "example": "I will escalate the case, and update you within three business days.",
       "glossYue": "我會⋯⋯呢單。",
       "answer": "escalate",
       "choices": [

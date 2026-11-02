@@ -57,11 +57,11 @@
       "id": "j4-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Yes. It is certified, and the papers are in this folder.",
-      "glossYue": "係。有證書，文件喺呢個文件夾。",
+      "text": "Yes. The diamond is natural and certified.",
+      "glossYue": "係。呢粒鑽石係天然，有證書。",
       "audio": "assets/audio/lines/j4-l3.mp3",
       "audioSlow": "assets/audio/lines/j4-l3-slow.mp3",
-      "say": "Yes. It is [[sˈɜtəfˌaɪd]], and the papers are in this folder.",
+      "say": "Yes. The diamond is natural and certified.",
       "hideGloss": false
     },
     {
@@ -79,7 +79,7 @@
       "id": "j4-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "This setting is eighteen karat gold, and it holds the stone well.",
+      "text": "This setting is eighteen-karat gold, and it holds the stone well.",
       "glossYue": "呢個鑲托係十八開金，托住粒石好穩。",
       "audio": "assets/audio/lines/j4-l5.mp3",
       "audioSlow": "assets/audio/lines/j4-l5-slow.mp3",
@@ -177,7 +177,7 @@
     },
     {
       "pattern": "This setting is eighteen ___ gold, and the band is solid.",
-      "example": "This setting is eighteen karat gold, and the band is solid.",
+      "example": "This setting is eighteen-karat gold, and the band is solid.",
       "glossYue": "呢個鑲托係十八開金。",
       "answer": "karat",
       "choices": [
@@ -256,7 +256,7 @@
         "line": "I like this jade.",
         "audio": "assets/audio/lines/j4-l4.mp3",
         "audioSlow": "assets/audio/lines/j4-l4-slow.mp3",
-        "expect": "This setting is eighteen karat gold.",
+        "expect": "This setting is eighteen-karat gold.",
         "keywords": [
           "karat"
         ],

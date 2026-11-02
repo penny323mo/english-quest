@@ -29,11 +29,11 @@
       "id": "d2-l1",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "Good morning. Come forward, and I can help you open the account today.",
-      "glossYue": "早晨。請上前，我今日可以幫你開戶口。",
+      "text": "Good morning. Come forward, and I can help you open the account.",
+      "glossYue": "早晨。請上前，我可以幫你開戶口。",
       "audio": "assets/audio/lines/d2-l1.mp3",
       "audioSlow": "assets/audio/lines/d2-l1-slow.mp3",
-      "say": "Good morning. Come forward, and I can help you open the account today.",
+      "say": "Good morning. Come forward, and I can help you open the account.",
       "hideGloss": false
     },
     {
@@ -106,11 +106,11 @@
       "id": "d2-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will pay the fee.",
-      "glossYue": "我會付呢筆費。",
+      "text": "I will pay the fee at this counter.",
+      "glossYue": "我會喺呢個櫃檯畀手續費。",
       "audio": "assets/audio/lines/d2-l8.mp3",
       "audioSlow": "assets/audio/lines/d2-l8-slow.mp3",
-      "say": "I will pay the fee.",
+      "say": "I will pay the fee at this counter.",
       "hideGloss": false
     }
   ],
@@ -136,7 +136,7 @@
       "explain": "block 係凍結張卡。"
     },
     {
-      "prompt": "I will pay the fee. 呢句即係點？",
+      "prompt": "I will pay the fee at this counter. 呢句即係點？",
       "choices": [
         "我要退稅",
         "我喺度會畀手續費",
@@ -194,7 +194,7 @@
   ],
   "shadow": {
     "lineId": "d2-l8",
-    "hint": "I will pay the fee."
+    "hint": "I will pay the fee at this counter."
   },
   "build": [
     {
@@ -310,7 +310,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I will pay the fee.」，fee 係咩意思？",
+      "prompt": "客人講「I will pay the fee at this counter.」，fee 係咩意思？",
       "choices": [
         "表格",
         "餘額",

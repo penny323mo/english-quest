@@ -4,7 +4,7 @@
   "titleYue": "換錶電同錶帶",
   "titleEn": "Watch battery and strap",
   "canDoYue": "你識叫人換錶電池、問開底之後仲防唔防水、留住金屬錶帶、拆兩節、四點取，仲有一年保養。",
-  "canDoEn": "Ask for a watch battery, check that it stays water resistant, keep the metal band, remove two links, and collect it at four under a one-year warranty.",
+  "canDoEn": "Ask for a watch battery, check that it stays water-resistant, keep the metal band, remove two links, and collect it at four under a one-year warranty.",
   "minutes": 12,
   "hero": "assets/art/lessons/j18.webp",
   "cast": [
@@ -61,55 +61,55 @@
       "id": "j18-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Sure. It takes about ten minutes, and it's eighty dollars.",
-      "glossYue": "可以。大約十分鐘，八十蚊。",
+      "text": "Yes. A battery change takes about ten minutes, and it's eighty dollars.",
+      "glossYue": "可以。換粒電池大約要十分鐘，八十蚊嘅。",
       "audio": "assets/audio/lines/j18-l2.mp3",
       "audioSlow": "assets/audio/lines/j18-l2-slow.mp3",
-      "say": "Sure. It takes about ten minutes, and it's eighty dollars.",
+      "say": "Yes. A battery change takes about ten minutes, and it's eighty dollars.",
       "hideGloss": false
     },
     {
       "id": "j18-l3",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Will it still be water resistant after you open the back?",
+      "text": "Will it still be water-resistant after you open the back?",
       "glossYue": "你開咗底之後，仲防唔防水？",
       "audio": "assets/audio/lines/j18-l3.mp3",
       "audioSlow": "assets/audio/lines/j18-l3-slow.mp3",
-      "say": "Will it still be water resistant after you open the back?",
+      "say": "Will it still be water-resistant after you open the back?",
       "hideGloss": false
     },
     {
       "id": "j18-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Yes, we reseal it and test it. Do you want to keep the metal band?",
-      "glossYue": "會，我哋會重新密封同測試。你想留住金屬錶帶嗎？",
+      "text": "Yes, we reseal it after we open the back. Do you want to keep the metal band?",
+      "glossYue": "係，打開後蓋之後我哋會封返。你想唔想留住金屬錶帶？",
       "audio": "assets/audio/lines/j18-l4.mp3",
       "audioSlow": "assets/audio/lines/j18-l4-slow.mp3",
-      "say": "Yes, we reseal it and test it. Do you want to keep the metal band?",
+      "say": "Yes, we reseal it after we open the back. Do you want to keep the metal band?",
       "hideGloss": true
     },
     {
       "id": "j18-l5",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "It's a bit loose. Can you take out two links?",
-      "glossYue": "有啲鬆。可唔可以拆走兩節？",
+      "text": "The metal band is loose. Can you take out two links?",
+      "glossYue": "金屬錶帶鬆咗。可唔可以拆兩節？",
       "audio": "assets/audio/lines/j18-l5.mp3",
       "audioSlow": "assets/audio/lines/j18-l5-slow.mp3",
-      "say": "It's a bit loose. Can you take out two links?",
+      "say": "The metal band is loose. Can you take out two links?",
       "hideGloss": true
     },
     {
       "id": "j18-l6",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "No problem. That's free with the battery change.",
-      "glossYue": "冇問題。連埋換電池一齊做，唔使另收費。",
+      "text": "Those two links are free with the battery change.",
+      "glossYue": "嗰兩節唔使另加錢，連埋換電池一齊做嘅。",
       "audio": "assets/audio/lines/j18-l6.mp3",
       "audioSlow": "assets/audio/lines/j18-l6-slow.mp3",
-      "say": "No problem. That's free with the battery change.",
+      "say": "Those two links are free with the battery change.",
       "hideGloss": true
     },
     {
@@ -127,11 +127,11 @@
       "id": "j18-l8",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Come back at four. The new battery has a one-year warranty.",
-      "glossYue": "四點再嚟。新電池有一年保養。",
+      "text": "Pick it up at four. The new battery has a one-year warranty.",
+      "glossYue": "四點可以攞。新電池有一年保養。",
       "audio": "assets/audio/lines/j18-l8.mp3",
       "audioSlow": "assets/audio/lines/j18-l8-slow.mp3",
-      "say": "Come back at four. The new battery has a one-year warranty.",
+      "say": "Pick it up at four. The new battery has a one-year warranty.",
       "hideGloss": true
     }
   ],
@@ -147,7 +147,7 @@
       "explain": "手錶。"
     },
     {
-      "prompt": "Yes, we reseal it and test it. Do you want to keep the metal band? 即係問緊咩？",
+      "prompt": "Yes, we reseal it after we open the back. Do you want to keep the metal band? 即係問緊咩？",
       "choices": [
         "講緊電池",
         "唔係手錶",
@@ -157,7 +157,7 @@
       "explain": "電池。"
     },
     {
-      "prompt": "Come back at four. The new battery has a one-year warranty. 呢句即係點？",
+      "prompt": "Pick it up at four. The new battery has a one-year warranty. 呢句即係點？",
       "choices": [
         "唔係手錶",
         "關於電池",
@@ -170,7 +170,7 @@
   "chunks": [
     {
       "pattern": "Come back at four. The new ___ has a one-year warranty.",
-      "example": "Come back at four. The new battery has a one-year warranty.",
+      "example": "Pick it up at four. The new battery has a one-year warranty.",
       "glossYue": "四點再嚟。新電池有一年保養。",
       "answer": "battery",
       "choices": [
@@ -181,7 +181,7 @@
     },
     {
       "pattern": "Will it still be ___ resistant after you open the back?",
-      "example": "Will it still be water resistant after you open the back?",
+      "example": "Will it still be water-resistant after you open the back?",
       "glossYue": "你開咗底之後，仲防唔防水？",
       "answer": "water",
       "choices": [
@@ -208,7 +208,7 @@
       "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
         "My watch has stopped. Can you change the battery?",
-        "Will it still be water resistant after you open the back?",
+        "Will it still be water-resistant after you open the back?",
         "It's a bit loose. Can you take out two links?"
       ],
       "answer": 1,
@@ -237,7 +237,7 @@
         "line": "Sure. It takes about ten minutes, and it's eighty dollars.",
         "audio": "assets/audio/lines/j18-l2.mp3",
         "audioSlow": "assets/audio/lines/j18-l2-slow.mp3",
-        "expect": "Will it still be water resistant after you open the back?",
+        "expect": "Will it still be water-resistant after you open the back?",
         "keywords": [
           "water",
           "resistant"
@@ -283,7 +283,7 @@
       "choices": [
         "watch",
         "battery",
-        "water resistant"
+        "water-resistant"
       ],
       "answer": 0
     },
@@ -293,14 +293,14 @@
       "lemma": "battery-noun",
       "choices": [
         "watch",
-        "water resistant",
+        "water-resistant",
         "battery"
       ],
       "answer": 2
     },
     {
       "type": "meaning",
-      "prompt": "Will it still be water resistant after you open the back? 呢句入面，邊個意思先啱？",
+      "prompt": "Will it still be water-resistant after you open the back? 呢句入面，邊個意思先啱？",
       "choices": [
         "電池",
         "防水",
@@ -324,7 +324,7 @@
       "choices": [
         "watch",
         "battery",
-        "water resistant"
+        "water-resistant"
       ],
       "answer": 2,
       "explain": "手錶。"

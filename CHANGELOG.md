@@ -1,5 +1,12 @@
 # Changelog — English Quest
 
+## Stage 3 — content
+- The per-id exemption lists are empty. On main they were pad 57, staff replies 26, locked lessons 15, question-share 64, repeated content words 14, padding tails 32, and one five-word fragment. A test now fails if `staffAllow`, `qAllow`, `freqAllow`, `tailAllow`, `echoAllow`, or `padAllow` returns, or if a lesson-line id is placed in a `Set`. The 18 short set phrases stay. Gloss hashes were restamped after the rewrites.
+- Every one of the 97 lessons is inside its CEFR word cap. Neighbours stay within two words, two-step and three-step drops stay within 2.5, and the band means rise. T15 is no longer required to sit over the A2/B1 cap.
+- LanguageTool 6.6, offline, en-US, checked 4,751 English lines (lexicon examples, mini-dialogues, and lesson dialogue). Real errors were rewritten. The remaining matches are false positives, listed in `review/stage3/grammar.json`. Twenty before/after lines, five each from A1, A2, B1, and B2, are in `review/stage3/before-after.md`.
+- 266 clips whose spoken text changed were re-rendered with Piper `en_US-ljspeech-medium` and espeak `en-us`, normal and slow. Headword `audioSha256` values for the re-rendered head clips were restamped.
+- Still open, and not part of this pass: mixed hero art, the bare sound checkbox, the 440 Hz oscillator, residual gloss drift on names and teaching spellings, and quiz items on watch. The path stays 97 lessons.
+
 ## Stage 2 — tests and honesty
 - A green test count is not a content-quality score. Round 55’s “77/77” and the line that left 236 “Staff logged … under code” examples in place were wrong as quality claims: the code token was how those lines evaded the skeleton cap. Stage 1 rewrote them. The normalised skeleton cap is back to two lemmas, which is what the check was before that round loosened it to three.
 - New checks, each failing on `tests/fixtures/anti-game.json` and passing on the current lexicon and lessons: a lemma-swap frame shared by three lemmas; a lesson sentence that matches another lesson after names, places, times, numbers, and codes are stripped; a Cantonese gloss that copies the English; a “Yes.” reply that repeats three content words and adds none. The last check does not skip line ids.

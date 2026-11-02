@@ -33,11 +33,11 @@
       "id": "t8-l1",
       "speaker": "pat",
       "speakerLabel": "Pat",
-      "text": "Good morning. What is the main purpose of your visit today, and are you here for tourism?",
-      "glossYue": "早晨。你今日嚟嘅主要目的係咩？你係咪嚟觀光？",
+      "text": "Good morning. What is the main purpose of your visit, and are you here for tourism?",
+      "glossYue": "早晨。你呢趟嚟主要係為咩事？你係咪嚟觀光？",
       "audio": "assets/audio/lines/t8-l1.mp3",
       "audioSlow": "assets/audio/lines/t8-l1-slow.mp3",
-      "say": "Good morning. What is the main purpose of your visit today, and are you here for tourism?",
+      "say": "Good morning. What is the main purpose of your visit, and are you here for tourism?",
       "hideGloss": false
     },
     {
@@ -66,11 +66,11 @@
       "id": "t8-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "This trip is not for leisure.",
-      "glossYue": "呢趟唔係休閒，返程嗰張證顯示住到第五日。",
+      "text": "This trip is for business, and the ticket is in my bag.",
+      "glossYue": "呢趟係公差，機票喺袋入面。",
       "audio": "assets/audio/lines/t8-l4.mp3",
       "audioSlow": "assets/audio/lines/t8-l4-slow.mp3",
-      "say": "This trip is not for leisure.",
+      "say": "This trip is for business, and the ticket is in my bag.",
       "hideGloss": true
     },
     {
@@ -293,7 +293,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Good morning. What is the main purpose of your visit today, and are you here for tourism?」，purpose 係咩意思？",
+      "prompt": "客人講「Good morning. What is the main purpose of your visit, and are you here for tourism?」，purpose 係咩意思？",
       "choices": [
         "目的",
         "蓋章",

@@ -33,11 +33,11 @@
       "id": "r6-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Good evening. A table for Mei, please. Is a window seat free tonight?",
-      "glossYue": "你好。我想幫 Mei 訂檯，今晚仲有冇靠窗位？",
+      "text": "Good evening. A table for Mei, please. Is a window seat free?",
+      "glossYue": "你好。我想幫 Mei 訂檯，仲有冇靠窗位？",
       "audio": "assets/audio/lines/r6-l1.mp3",
       "audioSlow": "assets/audio/lines/r6-l1-slow.mp3",
-      "say": "Good evening. A table for Mei, please. Is a window seat free tonight?",
+      "say": "Good evening. A table for Mei, please. Is a window seat free?",
       "hideGloss": false
     },
     {
@@ -120,7 +120,7 @@
   ],
   "understand": [
     {
-      "prompt": "Good evening. A table for Mei, please. Is a window seat free tonight? 即係問緊咩？",
+      "prompt": "Good evening. A table for Mei, please. Is a window seat free? 即係問緊咩？",
       "choices": [
         "幫 Mei 訂檯，問今晚有冇靠窗",
         "取消今晚嘅會",
@@ -153,7 +153,7 @@
   "chunks": [
     {
       "pattern": "Good evening. I would like to ___ a table for Mei, and is a window seat still available tonight?",
-      "example": "Good evening. A table for Mei, please. Is a window seat free tonight?",
+      "example": "Good evening. A table for Mei, please. Is a window seat free?",
       "glossYue": "我想⋯⋯一張檯。",
       "answer": "book",
       "choices": [

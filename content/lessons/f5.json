@@ -43,11 +43,11 @@
       "id": "f5-l2",
       "speaker": "ling",
       "speakerLabel": "{{learner}}",
-      "text": "I am from Hong Kong, and I live here.",
-      "glossYue": "我係香港人，我住喺呢度。",
+      "text": "I am from Hong Kong, where I live.",
+      "glossYue": "我係由香港嚟嘅，而家都住喺香港。",
       "audio": "assets/audio/lines/f5-l2.mp3",
       "audioSlow": "assets/audio/lines/f5-l2-slow.mp3",
-      "say": "I am from Hong Kong, and I live here."
+      "say": "I am from Hong Kong, where I live."
     },
     {
       "id": "f5-l3",
@@ -93,7 +93,7 @@
       "explain": "Where are you from 係問你來自邊度。"
     },
     {
-      "prompt": "I am from Hong Kong, and I live here. 呢句即係點？",
+      "prompt": "I am from Hong Kong, where I live. 呢句即係點？",
       "choices": [
         "我係售貨員",
         "請再講一次",

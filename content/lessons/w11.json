@@ -106,11 +106,11 @@
       "id": "w11-l6",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Yes, they'll be on your April payslip. Your tax and MPF will be adjusted too.",
-      "glossYue": "會，會出喺你四月嘅糧單。稅同強積金都會一齊調整。",
+      "text": "Yes. Next month they'll be on your April payslip. Your tax and MPF will be adjusted too.",
+      "glossYue": "會，下個月會出喺你四月嘅糧單。稅同強積金都會一齊調整。",
       "audio": "assets/audio/lines/w11-l6.mp3",
       "audioSlow": "assets/audio/lines/w11-l6-slow.mp3",
-      "say": "Yes, they'll be on your April payslip. Your tax and MPF will be adjusted too.",
+      "say": "Yes. Next month they'll be on your April payslip. Your tax and MPF will be adjusted too.",
       "hideGloss": false
     },
     {
@@ -193,7 +193,7 @@
     },
     {
       "pattern": "Yes, they'll be on your April payslip. Your tax and ___ will be adjusted too.",
-      "example": "Yes, they'll be on your April payslip. Your tax and MPF will be adjusted too.",
+      "example": "Yes. Next month they'll be on your April payslip. Your tax and MPF will be adjusted too.",
       "glossYue": "會，會出喺你四月嘅糧單。稅同強積金都會一齊調整。",
       "answer": "MPF",
       "choices": [

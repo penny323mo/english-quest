@@ -43,11 +43,11 @@
       "id": "j5-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can you measure my finger, and tell me the size?",
-      "glossYue": "可唔可以量吓我隻手指，話我知碼數？",
+      "text": "Can you measure my finger, and tell me the ring size?",
+      "glossYue": "可唔可以量吓我隻手指，話我知戒指嘅碼數？",
       "audio": "assets/audio/lines/j5-l2.mp3",
       "audioSlow": "assets/audio/lines/j5-l2-slow.mp3",
-      "say": "Can you measure my finger, and tell me the size?",
+      "say": "Can you measure my finger, and tell me the ring size?",
       "hideGloss": false
     },
     {
@@ -87,22 +87,22 @@
       "id": "j5-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "It feels a little loose on this finger now.",
-      "glossYue": "而家呢隻手指有啲鬆。",
+      "text": "It feels a little loose on this finger.",
+      "glossYue": "呢隻手指有啲鬆。",
       "audio": "assets/audio/lines/j5-l6.mp3",
       "audioSlow": "assets/audio/lines/j5-l6-slow.mp3",
-      "say": "It feels a little loose on this finger now.",
+      "say": "It feels a little loose on this finger.",
       "hideGloss": true
     },
     {
       "id": "j5-l7",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "How does it feel when you wear it for a moment?",
-      "glossYue": "你戴一陣，感覺點？",
+      "text": "How does it feel?",
+      "glossYue": "戴落去感覺點？",
       "audio": "assets/audio/lines/j5-l7.mp3",
       "audioSlow": "assets/audio/lines/j5-l7-slow.mp3",
-      "say": "How does it feel when you wear it for a moment?",
+      "say": "How does it feel?",
       "hideGloss": false
     }
   ],
@@ -290,7 +290,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Can you measure my finger, and tell me the size?」，係咩意思？",
+      "prompt": "客人講「Can you measure my finger, and tell me the ring size?」，係咩意思？",
       "choices": [
         "玉",
         "稅",

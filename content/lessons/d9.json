@@ -67,22 +67,22 @@
       "id": "d9-l2",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "I am sorry the machine kept the card. Did you try the cancel button on the screen first?",
-      "glossYue": "唔好意思，部機食咗張卡。你試過畫面上面個取消掣未？",
+      "text": "I am sorry the machine kept it. Did you try the cancel button on the screen first?",
+      "glossYue": "唔好意思，部機留低咗佢。你試過先撳畫面上面個取消掣未？",
       "audio": "assets/audio/lines/d9-l2.mp3",
       "audioSlow": "assets/audio/lines/d9-l2-slow.mp3",
-      "say": "I am sorry the machine kept the card. Did you try the cancel button on the screen first?",
+      "say": "I am sorry the machine kept it. Did you try the cancel button on the screen first?",
       "hideGloss": false
     },
     {
       "id": "d9-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Yes, I tried the cancel button, and the machine still kept the card inside the slot.",
-      "glossYue": "試過取消掣，部機仍然將張卡食喺插槽入面。",
+      "text": "Yes, I tried the cancel button, and the machine still held it in the slot.",
+      "glossYue": "試過取消掣，部機仲係將佢留喺槽入面。",
       "audio": "assets/audio/lines/d9-l3.mp3",
       "audioSlow": "assets/audio/lines/d9-l3-slow.mp3",
-      "say": "Yes, I tried the cancel button, and the machine still kept the card inside the slot.",
+      "say": "Yes, I tried the cancel button, and the machine still held it in the slot.",
       "hideGloss": false
     },
     {
@@ -242,10 +242,10 @@
       {
         "partner": "Ben",
         "partnerId": "ben",
-        "line": "I am sorry the machine kept the card. Did you try the cancel button on the screen first?",
+        "line": "I am sorry the machine kept it. Did you try the cancel button on the screen first?",
         "audio": "assets/audio/lines/d9-l2.mp3",
         "audioSlow": "assets/audio/lines/d9-l2-slow.mp3",
-        "expect": "Yes, I tried the cancel button, and the machine still kept the card inside the slot.",
+        "expect": "Yes, I tried the cancel button, and the machine still held it in the slot.",
         "keywords": [
           "cancel",
           "card"

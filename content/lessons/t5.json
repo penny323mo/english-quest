@@ -31,33 +31,33 @@
       "id": "t5-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have lost my wallet, and I last saw it at the desk this morning.",
-      "glossYue": "我唔見咗個銀包，今朝最後一次見係喺櫃檯。",
+      "text": "I lost my wallet. I saw it at the desk this morning.",
+      "glossYue": "我唔見咗銀包。今朝喺櫃檯見過佢。",
       "audio": "assets/audio/lines/t5-l1.mp3",
       "audioSlow": "assets/audio/lines/t5-l1-slow.mp3",
-      "say": "I have lost my wallet, and I last saw it at the desk this morning.",
+      "say": "I lost my wallet. I saw it at the desk this morning.",
       "hideGloss": false
     },
     {
       "id": "t5-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could you help me report it now, because my passport was inside the wallet?",
-      "glossYue": "可唔可以而家幫我報失？因為護照喺銀包入面。",
+      "text": "Could you help me report it, because my passport was inside the wallet?",
+      "glossYue": "可唔可以幫我報失？護照喺銀包入面。",
       "audio": "assets/audio/lines/t5-l2.mp3",
       "audioSlow": "assets/audio/lines/t5-l2-slow.mp3",
-      "say": "Could you help me report it now, because my passport was inside the wallet?",
+      "say": "Could you help me report it, because my passport was inside the wallet?",
       "hideGloss": true
     },
     {
       "id": "t5-l3",
       "speaker": "noa",
       "speakerLabel": "Noa",
-      "text": "The police desk is nearby, and they can write the missing item report for you.",
-      "glossYue": "警崗喺附近，佢哋可以幫你寫搵唔到物件嘅報告。",
+      "text": "The police desk is nearby, and they can write the missing item report.",
+      "glossYue": "警崗喺附近，佢哋可以寫搵唔到物件嘅報告。",
       "audio": "assets/audio/lines/t5-l3.mp3",
       "audioSlow": "assets/audio/lines/t5-l3-slow.mp3",
-      "say": "The police desk is nearby, and they can write the missing item report for you.",
+      "say": "The police desk is nearby, and they can write the missing item report.",
       "hideGloss": false
     },
     {
@@ -76,7 +76,7 @@
       "speaker": "noa",
       "speakerLabel": "Noa",
       "text": "The embassy number is on this card, and I will help you file the report.",
-      "glossYue": "大使館電話喺呢張卡上面，我會幫你報失。",
+      "glossYue": "大使館電話喺呢張卡。我會幫你寫報告。",
       "audio": "assets/audio/lines/t5-l5.mp3",
       "audioSlow": "assets/audio/lines/t5-l5-slow.mp3",
       "say": "The embassy number is on this card, and I will help you file the report.",
@@ -196,7 +196,7 @@
   ],
   "shadow": {
     "lineId": "t5-l2",
-    "hint": "Could you help me report it now, because my passport was inside the wallet?"
+    "hint": "Could you help me report it, because my passport was inside the wallet?"
   },
   "build": [
     {
@@ -236,7 +236,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "I have lost my wallet, and I last saw it at the desk this morning.",
+        "line": "I lost my wallet. I saw it at the desk this morning.",
         "audio": "assets/audio/lines/t5-l1.mp3",
         "audioSlow": "assets/audio/lines/t5-l1-slow.mp3",
         "expect": "The police desk is nearby, and they can write the missing item report for you.",
@@ -302,7 +302,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I have lost my wallet, and I last saw it at the desk this morning.」，係咩意思？",
+      "prompt": "客人講「I lost my wallet. I saw it at the desk this morning.」，係咩意思？",
       "choices": [
         "退款",
         "塞車",

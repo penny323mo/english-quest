@@ -112,11 +112,11 @@
       "id": "w10-l6",
       "speaker": "ren",
       "speakerLabel": "Ren",
-      "text": "Fifty dollars. Check the amount with me before you send it.",
-      "glossYue": "五十蚊。寄出之前同我核對金額。",
+      "text": "Fifty dollars in store credit. Check it with me before you send it.",
+      "glossYue": "五十蚊店舖餘額。寄出之前同我核對。",
       "audio": "assets/audio/lines/w10-l6.mp3",
       "audioSlow": "assets/audio/lines/w10-l6-slow.mp3",
-      "say": "Fifty dollars. Check the amount with me before you send it.",
+      "say": "Fifty dollars in store credit. Check it with me before you send it.",
       "hideGloss": false
     },
     {
@@ -134,11 +134,11 @@
       "id": "w10-l8",
       "speaker": "ren",
       "speakerLabel": "Ren",
-      "text": "Say we'll call her tomorrow to follow up, and thank her for her patience.",
-      "glossYue": "話我哋聽日會打電話跟進，並且多謝佢耐心等候。",
+      "text": "End the email by saying we'll call tomorrow, and thank her for her patience.",
+      "glossYue": "電郵收尾話我哋聽日打去，同多謝佢有耐性。",
       "audio": "assets/audio/lines/w10-l8.mp3",
       "audioSlow": "assets/audio/lines/w10-l8-slow.mp3",
-      "say": "Say we'll call her tomorrow to follow up, and thank her for her patience.",
+      "say": "End the email by saying we'll call tomorrow, and thank her for her patience.",
       "hideGloss": false
     }
   ],
@@ -164,7 +164,7 @@
       "explain": "誠懇。"
     },
     {
-      "prompt": "Say we'll call her tomorrow to follow up, and thank her for her patience. 呢句即係點？",
+      "prompt": "End the email by saying we'll call tomorrow, and thank her for her patience. 呢句即係點？",
       "choices": [
         "唔係道歉",
         "關於誠懇",
