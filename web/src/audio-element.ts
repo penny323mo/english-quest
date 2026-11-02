@@ -25,6 +25,7 @@ export function speechActive(): boolean {
 }
 
 export function stopAudio() {
+  if (typeof speechSynthesis !== "undefined") speechSynthesis.cancel();
   if (!el) return;
   el.pause();
   el.currentTime = 0;

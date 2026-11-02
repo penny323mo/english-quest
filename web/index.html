@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#E8F6FF" />
+    <meta name="color-scheme" content="only light" />
     <meta name="description" content="情景英文：珠寶櫃檯、登機、入座。廣東話介面，美式發音，進度只留喺你部機。" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -15,6 +16,45 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      // One-time kill-switch for phones (especially a home-screen iOS PWA) that
+      // still control the page with the pre-redesign worker. Runs before the app.
+      window.__eqKill = (function () {
+        var KEY = "eq-sw-kill-v1";
+        function marked() {
+          try { return localStorage.getItem(KEY) === "1"; } catch (e) { return false; }
+        }
+        function mark() {
+          try { localStorage.setItem(KEY, "1"); } catch (e) {}
+        }
+        if (location.search.indexOf("eqfresh=1") !== -1) {
+          try { history.replaceState(null, "", location.pathname + location.hash); } catch (e) {}
+        }
+        if (marked() || !("serviceWorker" in navigator)) {
+          mark();
+          return Promise.resolve();
+        }
+        return navigator.serviceWorker.getRegistrations().then(function (regs) {
+          var controlled = Boolean(navigator.serviceWorker.controller);
+          if (!regs.length && !controlled) {
+            mark();
+            return;
+          }
+          return Promise.all(regs.map(function (reg) { return reg.unregister(); })).then(function () {
+            var cleared = window.caches
+              ? caches.keys().then(function (keys) {
+                  return Promise.all(keys.map(function (key) { return caches.delete(key); }));
+                })
+              : Promise.resolve();
+            return cleared.then(function () {
+              mark();
+              location.reload();
+              return new Promise(function () {});
+            });
+          });
+        }).catch(function () { mark(); });
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
     <noscript>
       <p style="color:#1F2A37;font-family:sans-serif;padding:24px">請開返 JavaScript，先用得情景英文。</p>

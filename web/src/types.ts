@@ -46,6 +46,7 @@ export type LexItem = {
   collocations: string[];
   example: string;
   exampleYue: string;
+  say?: string;
   note: string;
   variants: string[];
   sources: string[];
@@ -65,9 +66,12 @@ export type Line = {
   speakerLabel: string;
   text: string;
   glossYue: string;
+  say?: string;
   hideGloss?: boolean;
   audio: string;
   audioSlow: string;
+  /** The recorded clip says a hardcoded learner name. Speak the line instead. */
+  runtimeTts?: boolean;
 };
 
 export type UnderstandItem = {
@@ -119,6 +123,7 @@ export type RoleTurn = {
   keywords: string[];
   modelAudio: string;
   modelSlow: string;
+  runtimeTts?: boolean;
 };
 
 export type Lesson = {

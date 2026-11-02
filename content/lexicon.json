@@ -2247,9 +2247,9 @@
         "my name",
         "my passport"
       ],
-      "example": "My name is Ling.",
-      "exampleYue": "我叫 Ling。",
-      "say": "My name is Ling.",
+      "example": "My name is {{learner}}.",
+      "exampleYue": "我叫 {{learner}}。",
+      "say": "My name is {{learner}}.",
       "variants": [],
       "note": "",
       "sources": [

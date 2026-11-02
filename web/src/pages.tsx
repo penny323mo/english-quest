@@ -13,6 +13,7 @@ import {
 import { BEAT_LABELS } from "./beats";
 import { GOAL_LABEL, GoalPick } from "./goals";
 import { isDue } from "./fsrs";
+import { FALLBACK_LEARNER, fillLearner } from "./learner";
 import { learnerEyebrow } from "./labels";
 import { playAsset } from "./media";
 import { playSfx } from "./sfx";
@@ -271,7 +272,7 @@ export function Review() {
           {show ? (
             <>
               <p>{item.glossYue}</p>
-              <p className="lede" lang="en">{item.example}</p>
+              <p className="lede" lang="en">{fillLearner(item.example, useStore.getState().profile?.name)}</p>
               <div className="grades">
                 <button className="btn ghost" type="button" onClick={() => grade(Rating.Again)}>再來</button>
                 <button className="btn ghost" type="button" onClick={() => grade(Rating.Hard)}>難</button>
@@ -331,7 +332,8 @@ export function Words() {
 
 export function WordDetail({ id }: { id: string }) {
   const item = lexById[id];
-  const jyutping = useStore((s) => s.profile?.jyutping);
+  const profile = useStore((s) => s.profile);
+  const jyutping = profile?.jyutping;
   const [more, setMore] = useState(false);
   if (!item) {
     return (
@@ -350,8 +352,8 @@ export function WordDetail({ id }: { id: string }) {
       <Syllables id={item.id} />
       <p>{item.glossYue}</p>
       {jyutping && item.jyutping ? <p className="fine">粵拼（只標中文解釋）：{item.jyutping}</p> : null}
-      <p lang="en">{item.example}</p>
-      <p className="gloss">{item.exampleYue}</p>
+      <p lang="en">{fillLearner(item.example, profile?.name)}</p>
+      <p className="gloss">{fillLearner(item.exampleYue, profile?.name)}</p>
       <div className="row-btns">
         <button className="btn" type="button" onClick={() => playAsset(item.audio)}>聽例句</button>
         <button className="btn ghost" type="button" onClick={() => playAsset(item.audioSlow)}>慢速</button>
@@ -364,8 +366,8 @@ export function WordDetail({ id }: { id: string }) {
       {more && item.pitfallsYue && <p className="note">{item.pitfallsYue}</p>}
       {more && item.examples?.slice(1).map((example) => (
         <div key={example.en} className="stack">
-          <p lang="en">{example.en}</p>
-          <p className="gloss">{example.yue}</p>
+          <p lang="en">{fillLearner(example.en, profile?.name)}</p>
+          <p className="gloss">{fillLearner(example.yue, profile?.name)}</p>
           <button className="btn quiet" type="button" onClick={() => playAsset(example.audio)}>聽例句</button>
         </div>
       ))}
@@ -380,7 +382,7 @@ export function WordDetail({ id }: { id: string }) {
         </p>
       )}
       {more && item.miniDialogue?.map((turn) => (
-        <p key={turn.en} className="lede"><span lang="en">{turn.en}</span><span className="gloss"> {turn.yue}</span></p>
+        <p key={turn.en} className="lede"><span lang="en">{fillLearner(turn.en, profile?.name)}</span><span className="gloss"> {fillLearner(turn.yue, profile?.name)}</span></p>
       ))}
       {item.variants.length > 0 && <p className="fine">其他讀法：{item.variants.join("、")}</p>}
       {item.collocations.length > 0 && (
@@ -458,7 +460,7 @@ export function Settings() {
           value={profile.name}
           maxLength={24}
           onChange={(e) => update({ name: e.target.value })}
-          onBlur={() => { if (!profile.name.trim()) update({ name: "阿琳" }); }}
+          onBlur={() => { if (!profile.name.trim()) update({ name: FALLBACK_LEARNER }); }}
         />
       </label>
       <h2>目標</h2>

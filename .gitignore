@@ -3,6 +3,15 @@ PREP
 .orch/
 dist/
 dist-cache/
+
+# Vite publish output. GitHub Pages builds dist in Actions.
+/index.html
+/sw.js
+/registerSW.js
+/workbox-*.js
+/manifest.webmanifest
+/assets/*.js
+/assets/*.css
 .DS_Store
 *.local
 .env

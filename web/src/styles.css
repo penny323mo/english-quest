@@ -25,7 +25,11 @@
   --tab-h: calc(64px + env(safe-area-inset-bottom));
   --sans: "Nunito", "Avenir Next Rounded", "Avenir Next", "PingFang HK", "Noto Sans TC", "Noto Sans CJK TC", sans-serif;
   --serif: "Iowan Old Style", Palatino, "Palatino Linotype", "Songti TC", "Noto Serif CJK TC", serif;
-  color-scheme: light;
+  color-scheme: only light;
+}
+html { color-scheme: only light; }
+@media (prefers-color-scheme: dark) {
+  :root, html { color-scheme: only light; }
 }
 
 * { box-sizing: border-box; }

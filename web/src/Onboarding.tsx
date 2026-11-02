@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { GoalPick } from "./goals";
+import { FALLBACK_LEARNER } from "./learner";
 import { blankProfile, useStore } from "./store";
 import type { Goal, Level } from "./types";
 
@@ -14,7 +15,7 @@ export function Onboarding() {
 
   function finish() {
     if (existing) {
-      useStore.getState().updateProfile({ name: name.trim() || "阿琳", goal, minutes, level });
+      useStore.getState().updateProfile({ name: name.trim() || FALLBACK_LEARNER, goal, minutes, level });
     } else {
       setProfile(blankProfile({ name, goal, minutes, level }));
     }
@@ -30,7 +31,7 @@ export function Onboarding() {
           <p className="lede">你部機上記低個名就得。進度唔會上傳。</p>
           <label className="stack">
             <span>點稱呼你？</span>
-            <input className="field" value={name} placeholder="阿琳" maxLength={24} onChange={(e) => setName(e.target.value)} />
+            <input className="field" value={name} placeholder="你的名" maxLength={24} onChange={(e) => setName(e.target.value)} />
           </label>
           <button className="btn block" type="button" onClick={() => setStep(1)}>下一步</button>
         </>
@@ -49,7 +50,7 @@ export function Onboarding() {
             {([10, 15, 20] as const).map((n) => (
               <button key={n} className={minutes === n ? "opt on" : "opt"} type="button" onClick={() => setMinutes(n)}>
                 <strong>{n} 分鐘</strong>
-                <span>{n === 15 ? "啱阿琳返工前後" : n === 10 ? "赶時間都得" : "想練耐少少"}</span>
+                <span>{n === 15 ? `啱${name.trim() || "你"}返工前後` : n === 10 ? "赶時間都得" : "想練耐少少"}</span>
               </button>
             ))}
           </div>

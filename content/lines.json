@@ -62,12 +62,12 @@
   {
     "id": "f2-l2",
     "speaker": "ling",
-    "speakerLabel": "Ling",
-    "text": "Hello. Good morning. My name is Ling.",
-    "glossYue": "你好。早晨。我叫 Ling。",
+    "speakerLabel": "{{learner}}",
+    "text": "Hello. Good morning. My name is {{learner}}.",
+    "glossYue": "你好。早晨。我叫 {{learner}}。",
     "audio": "assets/audio/lines/f2-l2.mp3",
     "audioSlow": "assets/audio/lines/f2-l2-slow.mp3",
-    "say": "Hello. Good morning. My name is Ling."
+    "say": "Hello. Good morning. My name is {{learner}}."
   },
   {
     "id": "f2-l3",
@@ -82,7 +82,7 @@
   {
     "id": "f2-l4",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "Nice to meet you, too. Thank you.",
     "glossYue": "我都好高興認識你。多謝。",
     "audio": "assets/audio/lines/f2-l4.mp3",
@@ -112,7 +112,7 @@
   {
     "id": "f3-l2",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "It is ten dollars for this one.",
     "glossYue": "呢一件係十蚊。",
     "audio": "assets/audio/lines/f3-l2.mp3",
@@ -132,7 +132,7 @@
   {
     "id": "f3-l4",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "Yes, it is three o'clock for us.",
     "glossYue": "係呀，而家係三點。",
     "audio": "assets/audio/lines/f3-l4.mp3",
@@ -162,7 +162,7 @@
   {
     "id": "f4-l2",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "I'm sorry, I did not see you there.",
     "glossYue": "對唔住，我冇見到你。",
     "audio": "assets/audio/lines/f4-l2.mp3",
@@ -182,7 +182,7 @@
   {
     "id": "f4-l4",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "Thank you for saying that to me.",
     "glossYue": "多謝你咁講。",
     "audio": "assets/audio/lines/f4-l4.mp3",
@@ -562,7 +562,7 @@
   {
     "id": "t1-l2",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "I'm flying to Hong Kong. Here is my passport.",
     "glossYue": "我飛去香港。呢本係我嘅護照。",
     "audio": "assets/audio/lines/t1-l2.mp3",
@@ -582,7 +582,7 @@
   {
     "id": "t1-l4",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "A window seat, please. I like the view.",
     "glossYue": "要靠窗位，唔該。我鍾意個景。",
     "audio": "assets/audio/lines/t1-l4.mp3",
@@ -612,7 +612,7 @@
   {
     "id": "t2-l2",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "Here is my boarding pass, and here is my passport.",
     "glossYue": "登機證喺度，護照都喺呢度。",
     "audio": "assets/audio/lines/t2-l2.mp3",
@@ -632,7 +632,7 @@
   {
     "id": "t2-l4",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "Which way to the gate from this security line?",
     "glossYue": "由呢條安檢隊去閘口邊邊行？",
     "audio": "assets/audio/lines/t2-l4.mp3",
@@ -852,7 +852,7 @@
   {
     "id": "f1-m1",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "Ship. Sheep.",
     "glossYue": "Ship。Sheep。",
     "audio": "assets/audio/lines/f1-m1.mp3",
@@ -862,7 +862,7 @@
   {
     "id": "f1-m2",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "About.",
     "glossYue": "About。",
     "audio": "assets/audio/lines/f1-m2.mp3",
@@ -872,7 +872,7 @@
   {
     "id": "f1-m3",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "Nice and slow.",
     "glossYue": "慢慢嚟。",
     "audio": "assets/audio/lines/f1-m3.mp3",
@@ -882,7 +882,7 @@
   {
     "id": "f2-m2",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "Nice to meet you, too.",
     "glossYue": "我都好高興認識你。",
     "audio": "assets/audio/lines/f2-m2.mp3",
@@ -962,7 +962,7 @@
   {
     "id": "t1-m1",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "I'm flying to Hong Kong.",
     "glossYue": "我飛去香港。",
     "audio": "assets/audio/lines/t1-m1.mp3",
@@ -972,7 +972,7 @@
   {
     "id": "t1-m2",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "Here is my passport.",
     "glossYue": "呢本係我嘅護照。",
     "audio": "assets/audio/lines/t1-m2.mp3",
@@ -982,7 +982,7 @@
   {
     "id": "t2-m1",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "Here is my laptop.",
     "glossYue": "我部手提電腦喺度。",
     "audio": "assets/audio/lines/t2-m1.mp3",
@@ -1052,7 +1052,7 @@
   {
     "id": "f3-m3",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "Yes. Five dollars.",
     "glossYue": "係呀，五蚊。",
     "audio": "assets/audio/lines/f3-m3.mp3",
@@ -1072,7 +1072,7 @@
   {
     "id": "f4-m3",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "Good night.",
     "glossYue": "晚安。",
     "audio": "assets/audio/lines/f4-m3.mp3",
@@ -3062,7 +3062,7 @@
   {
     "id": "f5-l2",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "I am from Hong Kong, and I live here.",
     "glossYue": "我係香港人，我住喺呢度。",
     "audio": "assets/audio/lines/f5-l2.mp3",
@@ -3082,12 +3082,13 @@
   {
     "id": "f5-l4",
     "speaker": "ling",
-    "speakerLabel": "Ling",
-    "text": "My number is five five one two, and my email is ling at shop.",
-    "glossYue": "我號碼係五五一二，電郵係 ling at shop。",
+    "speakerLabel": "{{learner}}",
+    "text": "My number is five five one two, and here is my email.",
+    "glossYue": "我號碼係五五一二，電郵喺呢度。",
     "audio": "assets/audio/lines/f5-l4.mp3",
     "audioSlow": "assets/audio/lines/f5-l4-slow.mp3",
-    "say": "My number is five five one two, and my email is ling at shop."
+    "say": "My number is five five one two, and here is my email.",
+    "runtimeTts": true
   },
   {
     "id": "f5-l5",
@@ -3112,7 +3113,7 @@
   {
     "id": "f6-l2",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "I usually wake up early, then I start my shift.",
     "glossYue": "我通常早起身，然後開始上班。",
     "audio": "assets/audio/lines/f6-l2.mp3",
@@ -3132,7 +3133,7 @@
   {
     "id": "f6-l4",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "I sometimes take a short break, but I never stay long.",
     "glossYue": "我有時休息一陣，但唔會留好耐。",
     "audio": "assets/audio/lines/f6-l4.mp3",
@@ -3312,17 +3313,17 @@
   {
     "id": "f5-m3",
     "speaker": "ling",
-    "speakerLabel": "Ling",
-    "text": "My name is Ling. L I N G.",
-    "glossYue": "我個名係 Ling。L I N G。",
+    "speakerLabel": "{{learner}}",
+    "text": "My name is {{learner}}. {{learner-spell}}.",
+    "glossYue": "我個名係 {{learner}}。",
     "audio": "assets/audio/lines/f5-m3.mp3",
     "audioSlow": "assets/audio/lines/f5-m3-slow.mp3",
-    "say": "My name is Ling. L I N G."
+    "say": "My name is {{learner}}. {{learner-spell}}."
   },
   {
     "id": "f6-m3",
     "speaker": "ling",
-    "speakerLabel": "Ling",
+    "speakerLabel": "{{learner}}",
     "text": "I always close the shop after my shift.",
     "glossYue": "我每次收工之後都關門。",
     "audio": "assets/audio/lines/f6-m3.mp3",

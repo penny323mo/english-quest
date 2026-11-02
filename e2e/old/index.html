@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#071426" />
+    <title>舊版</title>
+    <style>
+      html, body { margin: 0; background: #071426; color: #f4efe6; font-family: sans-serif; }
+      main { padding: 24px; }
+      h1 { font-size: 40px; margin: 0 0 8px; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>今日 15 分鐘</p>
+      <h1>阿林</h1>
+      <p>舊版深色</p>
+    </main>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", function () {
+          navigator.serviceWorker.register("/english-quest/sw.js", { scope: "/english-quest/" });
+        });
+      }
+    </script>
+  </body>
+</html>

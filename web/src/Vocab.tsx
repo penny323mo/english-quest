@@ -3,6 +3,7 @@ import { Rating, type Grade } from "ts-fsrs";
 import { asset, decks, lexById } from "./data";
 import { isDue } from "./fsrs";
 import { learnerEyebrow } from "./labels";
+import { fillLearner } from "./learner";
 import { playAsset } from "./media";
 import { karaokeSpans, stressSplit } from "./stress.mjs";
 import { playSfx } from "./sfx";
@@ -301,7 +302,10 @@ function ExampleRow({
   karaokeAt?: number;
   onKaraoke?: () => void;
 }) {
-  const parts = example.en.split(/([A-Za-z']+)/);
+  const learner = useStore((s) => s.profile?.name);
+  const en = fillLearner(example.en, learner);
+  const yue = fillLearner(example.yue, learner);
+  const parts = en.split(/([A-Za-z']+)/);
   let wordIndex = 0;
   return (
     <div className="word-ex">
@@ -314,7 +318,7 @@ function ExampleRow({
             return <span key={index} className={at === karaokeAt ? "karaoke-on" : ""}>{part}</span>;
           })}
         </p>
-        <p className="yue">{example.yue}</p>
+        <p className="yue">{yue}</p>
         {onKaraoke && (
           <button className="btn ghost" type="button" onClick={onKaraoke}>慢速逐字</button>
         )}
