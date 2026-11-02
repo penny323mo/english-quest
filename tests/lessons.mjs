@@ -6,6 +6,7 @@ import { spawnSync } from "node:child_process";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
 import { seededOrder } from "../web/src/choice-order.js";
+import { yesEchoViolations } from "./lib/anti-game-check.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), "utf8"));
@@ -1533,7 +1534,7 @@ test("speaking shows the mic state and a no-penalty retry", () => {
   assert.match(src, /跳過呢題/);
 });
 
-test("a normalised skeleton is shared by at most three lemmas", () => {
+test("a normalised skeleton is shared by at most two lemmas", () => {
   const PERSONS = new Set(
     "mei tom kai ling vera quinn dana una otto iris fran opal hugh ned liam tess ruth paul mae hope yao joel cora ann ben mina sam lee jo pat kim robin alex chris jamie taylor morgan casey drew".split(" "),
   );
@@ -1592,7 +1593,7 @@ test("a normalised skeleton is shared by at most three lemmas", () => {
       groups.get(key).add(item.id);
     }
   }
-  for (const [key, ids] of groups) assert.ok(ids.size <= 3, `${key} x${ids.size}`);
+  for (const [key, ids] of groups) assert.ok(ids.size <= 2, `${key} x${ids.size}`);
 });
 test("a changed english line on the gloss-checked scenes changes the gloss", () => {
   const fixture = JSON.parse(fs.readFileSync(path.join(root, "tests/fixtures/gloss-hashes.json"), "utf8"));
@@ -1643,22 +1644,10 @@ test("a studied meaning item has at most one choice whose lemma is in the line",
 });
 
 test("a Yes reply does not echo three content words, and a line does not repeat a word", () => {
-  const func = new Set("a an the i you we they he she it my your our is are was were be been am have has had do does did will would can could should may might to of in on at for with and or but if so not this that these those me him her them us please just very still also then there here from as about into".split(" "));
-  const echoAllow = new Set(["j20-l8", "r15-l2", "r15-l4", "r15-l8", "r16-l4", "r16-l6", "d14-l2", "d14-l4", "d14-l6", "t18-l4", "w12-l4", "w12-l6"]);
   const numbers = new Set("one two three four five six seven eight nine ten eleven twelve".split(" "));
-  function content(text) {
-    return new Set((text.toLowerCase().match(/[a-z']+/g) || []).filter((tok) => tok.length > 2 && !func.has(tok)));
-  }
+  assert.deepEqual(yesEchoViolations(lessons), []);
   for (const lesson of lessons) {
-    const main = lesson.dialogue;
-    for (let i = 1; i < main.length; i += 1) {
-      const reply = main[i].text.trim();
-      if (!/^Yes\.\s+/.test(reply) || echoAllow.has(main[i].id)) continue;
-      const rest = reply.replace(/^Yes\.\s+/, "");
-      const shared = [...content(rest)].filter((tok) => content(main[i - 1].text).has(tok));
-      assert.ok(shared.length < 3, `${main[i].id} ${shared.join(",")}`);
-    }
-    for (const line of main) {
+    for (const line of lesson.dialogue) {
       const toks = line.text.match(/[A-Za-z']+/g) || [];
       for (let i = 1; i < toks.length; i += 1) {
         if (toks[i].toLowerCase() !== toks[i - 1].toLowerCase()) continue;

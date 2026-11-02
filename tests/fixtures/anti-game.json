@@ -1,0 +1,59 @@
+{
+  "lemmaSwap": [
+    {
+      "id": "bag-noun",
+      "lemma": "bag",
+      "example": "Staff logged this bag under the form.",
+      "examples": [{ "en": "Staff logged this bag under the form.", "yue": "職員記低咗呢個袋。" }],
+      "miniDialogue": []
+    },
+    {
+      "id": "ring-noun",
+      "lemma": "ring",
+      "example": "Staff logged this ring under the form.",
+      "examples": [{ "en": "Staff logged this ring under the form.", "yue": "職員記低咗呢隻戒指。" }],
+      "miniDialogue": []
+    },
+    {
+      "id": "coin-noun",
+      "lemma": "coin",
+      "example": "Staff logged this coin under the form.",
+      "examples": [{ "en": "Staff logged this coin under the form.", "yue": "職員記低咗呢個硬幣。" }],
+      "miniDialogue": []
+    }
+  ],
+  "lessons": [
+    {
+      "id": "X1",
+      "dialogue": [
+        { "id": "x1-l1", "text": "Staff logged this bag under code 4412.", "glossYue": "職員用代號記低咗呢個袋。" }
+      ]
+    },
+    {
+      "id": "X2",
+      "dialogue": [
+        { "id": "x2-l1", "text": "Staff logged this bag under code 9.", "glossYue": "職員用代號記低咗呢個袋。" }
+      ]
+    }
+  ],
+  "glossCopy": [
+    {
+      "id": "purpose-noun",
+      "lemma": "purpose",
+      "glossYue": "purpose",
+      "example": "The purpose of my visit is tourism.",
+      "exampleYue": "The purpose of my visit is tourism.",
+      "examples": [],
+      "miniDialogue": []
+    }
+  ],
+  "yesEcho": [
+    {
+      "id": "J20",
+      "dialogue": [
+        { "id": "j20-l7", "text": "The receipt shows the weight and the purity?", "glossYue": "收據有冇寫重量同純度？" },
+        { "id": "j20-l8", "text": "Yes. The receipt shows the weight and the purity.", "glossYue": "有，收據寫咗重量同純度。" }
+      ]
+    }
+  ]
+}
