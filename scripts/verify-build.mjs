@@ -23,7 +23,8 @@ else {
   if (!html.includes("eq-sw-kill-v1")) fail("dist/index.html is missing the service worker kill-switch");
   if (!html.includes("eq-skip-claim")) fail("dist/index.html does not skip the post-kill claim reload");
   if (!html.includes("eq-ready")) fail("dist/index.html does not hide the shell until ready");
-  if (!html.includes('content="only light"')) fail("dist/index.html does not force light color-scheme");
+  if (!html.includes('content="light"')) fail("dist/index.html does not force light color-scheme");
+  if (!html.includes('supported-color-schemes')) fail("dist/index.html does not set the Safari supported-color-schemes meta");
 }
 
 const swPath = path.join(dist, "sw.js");
@@ -80,6 +81,38 @@ const bannedTracked = tracked.filter((file) =>
   || /^assets\/[^/]+\.(js|css)$/.test(file),
 );
 if (bannedTracked.length) fail(`committed publish-root build output: ${bannedTracked.join(", ")}`);
+
+const bannedShell = ["路線", "詞庫", "未開"];
+const distJs = [];
+function walkJs(dir) {
+  if (!fs.existsSync(dir)) return;
+  for (const name of fs.readdirSync(dir)) {
+    const full = path.join(dir, name);
+    if (fs.statSync(full).isDirectory()) walkJs(full);
+    else if (name.endsWith(".js")) distJs.push(full);
+  }
+}
+walkJs(dist);
+if (!distJs.length) fail("dist has no JS bundles");
+for (const file of distJs) {
+  const text = fs.readFileSync(file, "utf8");
+  for (const token of bannedShell) {
+    if (text.includes(token)) fail(`${path.relative(dist, file)} still contains ${token}`);
+  }
+}
+for (const name of ["workbox-835c8c05.js", "workbox-9c191d2f.js", "registerSW.js"]) {
+  const file = path.join(dist, name);
+  if (!fs.existsSync(file)) {
+    fail(`historical kill switch missing: ${name}`);
+    continue;
+  }
+  const text = fs.readFileSync(file, "utf8");
+  if (!text.includes("caches.delete")) fail(`${name} does not clear Cache Storage`);
+  if (!text.includes("unregister")) fail(`${name} does not unregister`);
+  for (const token of ["localStorage.clear", "sessionStorage.clear", "indexedDB.deleteDatabase", "Clear-Site-Data"]) {
+    if (text.includes(token)) fail(`${name} wipes ${token}`);
+  }
+}
 
 if (failures.length) {
   for (const message of failures) console.error(message);

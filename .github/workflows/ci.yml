@@ -27,3 +27,7 @@ jobs:
         run: node e2e/run.mjs
       - name: Service worker migration stays within two reloads
         run: node e2e/migrate.mjs
+      - name: Fresh iPhone Safari profile renders the light home
+        run: node e2e/fresh-safari.mjs
+      - name: Oldest service workers reach the light shell within two reloads
+        run: node e2e/oldest.mjs
