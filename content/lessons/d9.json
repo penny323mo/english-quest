@@ -111,11 +111,11 @@
       "id": "d9-l6",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "Please show one identity document to me, and the new card arrives on Friday.",
-      "glossYue": "請畀一份身份文件我睇，新卡星期五到。",
+      "text": "Please show one identity document. The new card arrives on Friday.",
+      "glossYue": "請畀一份身份文件我睇。新卡星期五到。",
       "audio": "assets/audio/lines/d9-l6.mp3",
       "audioSlow": "assets/audio/lines/d9-l6-slow.mp3",
-      "say": "Please show one identity document to me, and the new card arrives on Friday.",
+      "say": "Please show one identity document. The new card arrives on Friday.",
       "hideGloss": true
     },
     {
@@ -187,7 +187,7 @@
     },
     {
       "pattern": "Please show one ___ document to me, and the new card arrives on Friday.",
-      "example": "Please show one identity document to me, and the new card arrives on Friday.",
+      "example": "Please show one identity document. The new card arrives on Friday.",
       "glossYue": "出示身份文件。",
       "answer": "identity",
       "choices": [
@@ -270,7 +270,7 @@
       {
         "partner": "Ben",
         "partnerId": "ben",
-        "line": "Please show one identity document to me, and the new card arrives on Friday.",
+        "line": "Please show one identity document. The new card arrives on Friday.",
         "audio": "assets/audio/lines/d9-l6.mp3",
         "audioSlow": "assets/audio/lines/d9-l6-slow.mp3",
         "expect": "Can I draw cash at this counter on the temporary limit while I wait?",

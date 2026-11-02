@@ -73,11 +73,11 @@
       "id": "j20-l3",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "How much is the labour charge because the clasp is broken?",
-      "glossYue": "因為個扣壞咗，手工費係幾多？",
+      "text": "The clasp is broken. How much is the labour charge?",
+      "glossYue": "個扣壞咗。手工費係幾多？",
       "audio": "assets/audio/lines/j20-l3.mp3",
       "audioSlow": "assets/audio/lines/j20-l3-slow.mp3",
-      "say": "How much is the labour charge because the clasp is broken?",
+      "say": "The clasp is broken. How much is the labour charge?",
       "hideGloss": false
     },
     {
@@ -146,7 +146,7 @@
         "line": "This bangle is nine nine nine. I will weigh it in grams.",
         "audio": "assets/audio/lines/j20-l2.mp3",
         "audioSlow": "assets/audio/lines/j20-l2-slow.mp3",
-        "expect": "How much is the labour charge because the clasp is broken?",
+        "expect": "The clasp is broken. How much is the labour charge?",
         "keywords": [
           "labour",
           "charge"
@@ -196,7 +196,7 @@
       "explain": "金價。"
     },
     {
-      "prompt": "How much is the labour charge because the clasp is broken? 呢句即係點？",
+      "prompt": "The clasp is broken. How much is the labour charge? 呢句即係點？",
       "choices": [
         "關於手工",
         "關於手鐲",
@@ -257,7 +257,7 @@
       "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
         "This bangle is nine nine nine. I will weigh it in grams.",
-        "How much is the labour charge because the clasp is broken?",
+        "The clasp is broken. How much is the labour charge?",
         "Can I trade in this old chain against the new bangle?"
       ],
       "answer": 2,

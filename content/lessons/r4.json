@@ -76,11 +76,11 @@
       "id": "r4-l5",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "The sparkling water is coming, and I hope you enjoy the fish.",
-      "glossYue": "有氣水就到，希望你鍾意條魚。",
+      "text": "The sparkling water is coming.",
+      "glossYue": "有氣水就到。",
       "audio": "assets/audio/lines/r4-l5.mp3",
       "audioSlow": "assets/audio/lines/r4-l5-slow.mp3",
-      "say": "The sparkling water is coming, and I hope you enjoy the fish.",
+      "say": "The sparkling water is coming.",
       "hideGloss": false
     },
     {
@@ -109,11 +109,11 @@
       "id": "r4-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The meal was delicious, and coffee later would be perfect.",
-      "glossYue": "呢餐好味，遲啲嚟杯咖啡就啱。",
+      "text": "The meal was delicious. Could I have a coffee later?",
+      "glossYue": "呢餐好味。遲啲可唔可以要杯咖啡？",
       "audio": "assets/audio/lines/r4-l8.mp3",
       "audioSlow": "assets/audio/lines/r4-l8-slow.mp3",
-      "say": "The meal was delicious, and coffee later would be perfect.",
+      "say": "The meal was delicious. Could I have a coffee later?",
       "hideGloss": false
     }
   ],
@@ -258,7 +258,7 @@
         "line": "This fish is delicious. I would like more sparkling water.",
         "audio": "assets/audio/lines/r4-l4.mp3",
         "audioSlow": "assets/audio/lines/r4-l4-slow.mp3",
-        "expect": "The sparkling water is coming, and I hope you enjoy the fish.",
+        "expect": "The sparkling water is coming.",
         "keywords": [
           "sparkling",
           "enjoy"

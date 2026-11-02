@@ -34,11 +34,11 @@
       "id": "r5-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could we have the bill now, and shall we split it tonight?",
-      "glossYue": "可唔可以而家埋單，今晚分單定係一齊付？",
+      "text": "Could we have the bill, please? Can we split it?",
+      "glossYue": "可唔可以埋單，唔該？可唔可以分單？",
       "audio": "assets/audio/lines/r5-l1.mp3",
       "audioSlow": "assets/audio/lines/r5-l1-slow.mp3",
-      "say": "Could we have the bill now, and shall we split it tonight?",
+      "say": "Could we have the bill, please? Can we split it?",
       "hideGloss": false
     },
     {
@@ -199,7 +199,7 @@
   ],
   "shadow": {
     "lineId": "r5-l1",
-    "hint": "Could we have the bill now, and shall we split it tonight?"
+    "hint": "Could we have the bill, please? Can we split it?"
   },
   "build": [
     {
@@ -239,7 +239,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Could we have the bill now, and shall we split it tonight?",
+        "line": "Could we have the bill, please? Can we split it?",
         "audio": "assets/audio/lines/r5-l1.mp3",
         "audioSlow": "assets/audio/lines/r5-l1-slow.mp3",
         "expect": "We can split it into two checks, or you can pay together.",

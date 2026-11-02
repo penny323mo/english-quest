@@ -74,11 +74,11 @@
       "id": "f6-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "We always open before lunch, and we close after it.",
-      "glossYue": "我哋午餐之前開舖，之後就關門。",
+      "text": "We open before lunch and close after lunch.",
+      "glossYue": "我哋午餐之前開舖，午餐之後關門。",
       "audio": "assets/audio/lines/f6-l5.mp3",
       "audioSlow": "assets/audio/lines/f6-l5-slow.mp3",
-      "say": "We always open before lunch, and we [[klˈoʊz]] after it."
+      "say": "We open before lunch and close after lunch."
     }
   ],
   "understand": [
@@ -227,7 +227,7 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "We always open before lunch, and we close after it.",
+        "line": "We open before lunch and close after lunch.",
         "audio": "assets/audio/lines/f6-l5.mp3",
         "audioSlow": "assets/audio/lines/f6-l5-slow.mp3",
         "expect": "I always close the shop after my shift.",

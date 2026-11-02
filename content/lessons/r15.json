@@ -50,11 +50,11 @@
       "id": "r15-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Is this buffet all you can eat, and is takeaway banned?",
-      "glossYue": "呢個自助餐係咪任食，而且唔可以拎走？",
+      "text": "Is this buffet all you can eat? Can I take food away?",
+      "glossYue": "呢個自助餐係咪任食？可唔可以拎走？",
       "audio": "assets/audio/lines/r15-l1.mp3",
       "audioSlow": "assets/audio/lines/r15-l1-slow.mp3",
-      "say": "Is this buffet all you can eat, and is takeaway banned?",
+      "say": "Is this buffet all you can eat? Can I take food away?",
       "hideGloss": false
     },
     {
@@ -105,11 +105,11 @@
       "id": "r15-l6",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "The prawn soup has shellfish, so here is a clean plate.",
-      "glossYue": "蝦湯有貝殼類，所以呢個係乾淨碟。",
+      "text": "The prawn soup has shellfish. Here's a clean plate.",
+      "glossYue": "蝦湯有貝殼類。呢個係乾淨碟。",
       "audio": "assets/audio/lines/r15-l6.mp3",
       "audioSlow": "assets/audio/lines/r15-l6-slow.mp3",
-      "say": "The prawn soup has shellfish, so here is a clean plate.",
+      "say": "The prawn soup has shellfish. Here's a clean plate.",
       "hideGloss": true
     },
     {
@@ -170,7 +170,7 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "The prawn soup has shellfish, so here is a clean plate.",
+        "line": "The prawn soup has shellfish. Here's a clean plate.",
         "audio": "assets/audio/lines/r15-l6.mp3",
         "audioSlow": "assets/audio/lines/r15-l6-slow.mp3",
         "expect": "Can I come back for a second serving after this one?",
@@ -185,7 +185,7 @@
   },
   "understand": [
     {
-      "prompt": "Is this buffet all you can eat, and is takeaway banned? 呢句即係點？",
+      "prompt": "Is this buffet all you can eat? Can I take food away? 呢句即係點？",
       "choices": [
         "關於汽水",
         "講緊自助餐",
@@ -205,7 +205,7 @@
       "explain": "汽水。"
     },
     {
-      "prompt": "The prawn soup has shellfish, so here is a clean plate. 呢句即係點？",
+      "prompt": "The prawn soup has shellfish. Here's a clean plate. 呢句即係點？",
       "choices": [
         "唔係汽水",
         "關於自助餐",
@@ -240,7 +240,7 @@
     },
     {
       "pattern": "The prawn soup has shellfish, so here is a clean ___.",
-      "example": "The prawn soup has shellfish, so here is a clean plate.",
+      "example": "The prawn soup has shellfish. Here's a clean plate.",
       "glossYue": "蝦湯有貝殼類，所以呢個係乾淨碟。",
       "answer": "plate",
       "choices": [
@@ -255,7 +255,7 @@
       "type": "choice",
       "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
-        "Is this buffet all you can eat, and is takeaway banned?",
+        "Is this buffet all you can eat? Can I take food away?",
         "Are soft drinks included, or do I pay for each one?",
         "Which hot dishes have shellfish? May I have a clean plate?"
       ],
@@ -318,7 +318,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Is this buffet all you can eat, and is takeaway banned? 呢句入面，邊個意思先啱？",
+      "prompt": "Is this buffet all you can eat? Can I take food away? 呢句入面，邊個意思先啱？",
       "choices": [
         "汽水",
         "餐碟",
@@ -350,6 +350,6 @@
   ],
   "shadow": {
     "lineId": "r15-l1",
-    "hint": "Is this buffet all you can eat, and is takeaway banned?"
+    "hint": "Is this buffet all you can eat? Can I take food away?"
   }
 }

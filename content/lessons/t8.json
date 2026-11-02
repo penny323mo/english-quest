@@ -44,11 +44,11 @@
       "id": "t8-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I am visiting for tourism, and I'm staying for five days at a hotel in the city.",
-      "glossYue": "我嚟觀光，會喺市區一間酒店住五日。",
+      "text": "I'm here for tourism. I'll stay five days at a hotel in the city.",
+      "glossYue": "我嚟觀光。我會喺市區酒店住五日。",
       "audio": "assets/audio/lines/t8-l2.mp3",
       "audioSlow": "assets/audio/lines/t8-l2-slow.mp3",
-      "say": "I am visiting for tourism, and I'm staying for five days at a hotel in the city.",
+      "say": "I'm here for tourism. I'll stay five days at a hotel in the city.",
       "hideGloss": true
     },
     {
@@ -99,11 +99,11 @@
       "id": "t8-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have nothing to report apart from this small present, and the items are for personal use.",
-      "glossYue": "除咗呢份小禮物，我冇其他要報，啲物品係自用。",
+      "text": "I have nothing to declare except this small gift. Everything else is for personal use.",
+      "glossYue": "我冇其他要申報，除咗呢份小禮物。其他都係自用。",
       "audio": "assets/audio/lines/t8-l7.mp3",
       "audioSlow": "assets/audio/lines/t8-l7-slow.mp3",
-      "say": "I have nothing to report apart from this small present, and the items are for personal use.",
+      "say": "I have nothing to declare except this small gift. Everything else is for personal use.",
       "hideGloss": true
     },
     {
@@ -153,7 +153,7 @@
   "chunks": [
     {
       "pattern": "I am visiting for ___, and I'm staying for five days at a hotel in the city.",
-      "example": "I am visiting for tourism, and I'm staying for five days at a hotel in the city.",
+      "example": "I'm here for tourism. I'll stay five days at a hotel in the city.",
       "glossYue": "我嚟⋯⋯。",
       "answer": "tourism",
       "choices": [
@@ -194,7 +194,7 @@
       "type": "choice",
       "promptYue": "關員問你帶咗咩。你點先答？",
       "choices": [
-        "I have nothing to report apart from this small present, and the items are for personal use.",
+        "I have nothing to declare except this small gift. Everything else is for personal use.",
         "I can reserve this bracelet for Mei.",
         "Our opening hours are on the door."
       ],
@@ -230,7 +230,7 @@
         "line": "Good morning. What is the main purpose of your visit today?",
         "audio": "assets/audio/lines/t8-l1.mp3",
         "audioSlow": "assets/audio/lines/t8-l1-slow.mp3",
-        "expect": "I am visiting for tourism, and I'm staying for five days at a hotel in the city.",
+        "expect": "I'm here for tourism. I'll stay five days at a hotel in the city.",
         "keywords": [
           "tourism",
           "stay"
@@ -258,7 +258,7 @@
         "line": "Please complete this short form for me here.",
         "audio": "assets/audio/lines/t8-l6.mp3",
         "audioSlow": "assets/audio/lines/t8-l6-slow.mp3",
-        "expect": "I have nothing to report apart from this small present, and the items are for personal use.",
+        "expect": "I have nothing to declare except this small gift. Everything else is for personal use.",
         "keywords": [
           "declare",
           "gift"

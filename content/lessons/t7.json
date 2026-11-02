@@ -95,11 +95,11 @@
       "id": "t7-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will take the blue shirt and a postcard, and I have the receipt here.",
-      "glossYue": "我要呢件藍色衫同一張明信片，收據喺我度。",
+      "text": "I will take the blue shirt and a postcard. I have the receipt.",
+      "glossYue": "我要呢件藍色衫同一張明信片。收據喺我度。",
       "audio": "assets/audio/lines/t7-l7.mp3",
       "audioSlow": "assets/audio/lines/t7-l7-slow.mp3",
-      "say": "I will take the blue shirt and a postcard, and I have the receipt here.",
+      "say": "I will take the blue shirt and a postcard. I have the receipt.",
       "hideGloss": true
     },
     {
@@ -182,7 +182,7 @@
     },
     {
       "pattern": "I will take the blue shirt and a ___, and I have the receipt here.",
-      "example": "I will take the blue shirt and a postcard, and I have the receipt here.",
+      "example": "I will take the blue shirt and a postcard. I have the receipt.",
       "glossYue": "同一張⋯⋯。",
       "answer": "postcard",
       "choices": [
@@ -265,7 +265,7 @@
         "line": "Please keep this paper receipt, because the tax refund desk needs it with your passport.",
         "audio": "assets/audio/lines/t7-l6.mp3",
         "audioSlow": "assets/audio/lines/t7-l6-slow.mp3",
-        "expect": "I will take the blue shirt and a postcard, and I have the receipt here.",
+        "expect": "I will take the blue shirt and a postcard. I have the receipt.",
         "keywords": [
           "postcard",
           "receipt"
@@ -310,7 +310,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I will take the blue shirt and a postcard, and I have the receipt here.」，postcard 係咩意思？",
+      "prompt": "客人講「I will take the blue shirt and a postcard. I have the receipt.」，postcard 係咩意思？",
       "choices": [
         "收據",
         "戶口",

@@ -73,11 +73,11 @@
       "id": "d2-l5",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "The balance is low, and the replacement fee is here.",
-      "glossYue": "結餘唔多，補卡費喺度。",
+      "text": "The balance is very low. Here is the full replacement fee.",
+      "glossYue": "結餘好低。全數補卡費喺度。",
       "audio": "assets/audio/lines/d2-l5.mp3",
       "audioSlow": "assets/audio/lines/d2-l5-slow.mp3",
-      "say": "The balance is low, and the replacement fee is here.",
+      "say": "The balance is very low. Here is the full replacement fee.",
       "hideGloss": false
     },
     {
@@ -262,7 +262,7 @@
       {
         "partner": "Ben",
         "partnerId": "ben",
-        "line": "The balance is low, and the replacement fee is here.",
+        "line": "The balance is very low. Here is the full replacement fee.",
         "audio": "assets/audio/lines/d2-l5.mp3",
         "audioSlow": "assets/audio/lines/d2-l5-slow.mp3",
         "expect": "I would like to withdraw some cash.",
@@ -300,7 +300,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The balance is low, and the replacement fee is here.」，balance 係咩意思？",
+      "prompt": "客人講「The balance is very low. Here is the full replacement fee.」，balance 係咩意思？",
       "choices": [
         "餘額",
         "分行",

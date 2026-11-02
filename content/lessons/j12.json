@@ -66,11 +66,11 @@
       "id": "j12-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Text me when it's ready, and confirm the opening hours at the shop.",
-      "glossYue": "貨準備好就發短訊話我知，再確認舖頭開門時間。",
+      "text": "Text me when it's ready. What are your opening hours?",
+      "glossYue": "貨準備好就發短訊話我知。你哋幾點開門？",
       "audio": "assets/audio/lines/j12-l4.mp3",
       "audioSlow": "assets/audio/lines/j12-l4-slow.mp3",
-      "say": "Text me when it's ready, and confirm the opening hours at the shop.",
+      "say": "Text me when it's ready. What are your opening hours?",
       "hideGloss": true
     },
     {
@@ -164,7 +164,7 @@
     },
     {
       "pattern": "Please text me when it's ___, and then please confirm the opening hours at your location.",
-      "example": "Text me when it's ready, and confirm the opening hours at the shop.",
+      "example": "Text me when it's ready. What are your opening hours?",
       "glossYue": "貨準備好就發短訊話我知。",
       "answer": "ready",
       "choices": [
@@ -194,7 +194,7 @@
       "type": "choice",
       "promptYue": "店員話可以留貨。你點先答？",
       "choices": [
-        "Text me when it's ready, and confirm the opening hours at the shop.",
+        "Text me when it's ready. What are your opening hours?",
         "I would like a table for two.",
         "The meter is on."
       ],
@@ -244,7 +244,7 @@
         "line": "I'll describe the similar gold bracelet we have.",
         "audio": "assets/audio/lines/j12-l3.mp3",
         "audioSlow": "assets/audio/lines/j12-l3-slow.mp3",
-        "expect": "Text me when it's ready, and confirm the opening hours at the shop.",
+        "expect": "Text me when it's ready. What are your opening hours?",
         "keywords": [
           "text",
           "location"

@@ -52,11 +52,11 @@
       "id": "j10-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Yes. This set is popular, and you don't have to take it.",
-      "glossYue": "係。呢套好多人揀，你可以唔要。",
+      "text": "Yes. The earrings match. You don't have to take them.",
+      "glossYue": "係。對耳環襯。你可以唔要。",
       "audio": "assets/audio/lines/j10-l3.mp3",
       "audioSlow": "assets/audio/lines/j10-l3-slow.mp3",
-      "say": "Yes. This set is popular, and you don't have to take it.",
+      "say": "Yes. The earrings match. You don't have to take them.",
       "hideGloss": true
     },
     {
@@ -240,7 +240,7 @@
         "line": "If I buy the necklace today, will the matching earrings go with it?",
         "audio": "assets/audio/lines/j10-l2.mp3",
         "audioSlow": "assets/audio/lines/j10-l2-slow.mp3",
-        "expect": "Yes. This set is popular, and you don't have to take it.",
+        "expect": "Yes. The earrings match. You don't have to take them.",
         "keywords": [
           "optional",
           "engraving"

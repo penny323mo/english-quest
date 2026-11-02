@@ -57,11 +57,11 @@
       "id": "t12-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Hello, I have a reservation, and I hope the room is ready.",
-      "glossYue": "你好，我有訂房，希望我哋訂咗嘅房間就快準備好。",
+      "text": "Hello. I have a reservation. Is the room ready?",
+      "glossYue": "你好。我有訂房。間房準備好未？",
       "audio": "assets/audio/lines/t12-l1.mp3",
       "audioSlow": "assets/audio/lines/t12-l1-slow.mp3",
-      "say": "Hello, I have a reservation, and I hope the room is ready.",
+      "say": "Hello. I have a reservation. Is the room ready?",
       "hideGloss": false
     },
     {
@@ -144,7 +144,7 @@
   ],
   "understand": [
     {
-      "prompt": "Hello, I have a reservation, and I hope the room is ready. 呢句即係點？",
+      "prompt": "Hello. I have a reservation. Is the room ready? 呢句即係點？",
       "choices": [
         "有訂房，希望房間就快準備好",
         "行李已經拎走",
@@ -199,7 +199,7 @@
     },
     {
       "pattern": "Hello, I have a ___, and I hope our booked room is ready very soon.",
-      "example": "Hello, I have a reservation, and I hope the room is ready.",
+      "example": "Hello. I have a reservation. Is the room ready?",
       "glossYue": "我有訂房。",
       "answer": "reservation",
       "choices": [
@@ -339,6 +339,6 @@
   ],
   "shadow": {
     "lineId": "t12-l1",
-    "hint": "Hello, I have a reservation, and I hope the room is ready."
+    "hint": "Hello. I have a reservation. Is the room ready?"
   }
 }

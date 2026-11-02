@@ -53,11 +53,11 @@
       "id": "d4-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I'll take the prepaid one, and I don't need unlimited data.",
-      "glossYue": "我要預繳嗰個，唔使無限數據。",
+      "text": "I'll take the prepaid one. I don't need unlimited data.",
+      "glossYue": "我要預繳嗰個。唔使無限數據。",
       "audio": "assets/audio/lines/d4-l3.mp3",
       "audioSlow": "assets/audio/lines/d4-l3-slow.mp3",
-      "say": "I'll take the prepaid one, and I don't need unlimited data.",
+      "say": "I'll take the prepaid one. I don't need unlimited data.",
       "hideGloss": false
     },
     {
@@ -138,7 +138,7 @@
       "explain": "prepaid 係預繳。coverage 係覆蓋。"
     },
     {
-      "prompt": "I'll take the prepaid one, and I don't need unlimited data. 呢句即係點？",
+      "prompt": "I'll take the prepaid one. I don't need unlimited data. 呢句即係點？",
       "choices": [
         "請用護照開通",
         "我要預繳，唔使無限數據",
@@ -239,7 +239,7 @@
         "line": "The prepaid plan is much cheaper, and the coverage is enough.",
         "audio": "assets/audio/lines/d4-l2.mp3",
         "audioSlow": "assets/audio/lines/d4-l2-slow.mp3",
-        "expect": "I'll take the prepaid one, and I don't need unlimited data.",
+        "expect": "I'll take the prepaid one. I don't need unlimited data.",
         "keywords": [
           "prepaid",
           "unlimited"

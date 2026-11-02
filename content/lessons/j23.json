@@ -35,11 +35,11 @@
       "id": "j23-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "I can prepare that fresh valuation, and the claimant may send the file on Monday.",
-      "glossYue": "我可以準備嗰份新估值，索償人星期一可以交個檔案。",
+      "text": "I can prepare that fresh valuation. The claimant can send the file on Monday.",
+      "glossYue": "我可以準備嗰份新估值。索償人星期一可以交個檔案。",
       "audio": "assets/audio/lines/j23-l2.mp3",
       "audioSlow": "assets/audio/lines/j23-l2-slow.mp3",
-      "say": "I can prepare that fresh valuation, and the claimant may send the file on Monday.",
+      "say": "I can prepare that fresh valuation. The claimant can send the file on Monday.",
       "hideGloss": false
     },
     {
@@ -57,11 +57,11 @@
       "id": "j23-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The written valuation still stands, and the new deductible is noted after that first file.",
-      "glossYue": "書面估值仍然有效，新免賠額已經記低喺第一次索償檔之後。",
+      "text": "The written valuation still stands. The new deductible is noted after that first file.",
+      "glossYue": "書面估值仍然有效。新免賠額已經記低喺第一次索償檔之後。",
       "audio": "assets/audio/lines/j23-l4.mp3",
       "audioSlow": "assets/audio/lines/j23-l4-slow.mp3",
-      "say": "The written valuation still stands, and the new deductible is noted after that first file.",
+      "say": "The written valuation still stands. The new deductible is noted after that first file.",
       "hideGloss": true
     },
     {
@@ -79,11 +79,11 @@
       "id": "j23-l6",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The underwriter can accept that clear photo, and the claimant may keep the paper original.",
-      "glossYue": "承保人可以收嗰張清晰相片，索償人可以留住紙本正本。",
+      "text": "The underwriter can accept that clear photo. The claimant can keep the paper original.",
+      "glossYue": "承保人可以收嗰張清晰相片。索償人可以留住紙本正本。",
       "audio": "assets/audio/lines/j23-l6.mp3",
       "audioSlow": "assets/audio/lines/j23-l6-slow.mp3",
-      "say": "The underwriter can accept that clear photo, and the claimant may keep the paper original.",
+      "say": "The underwriter can accept that clear photo. The claimant can keep the paper original.",
       "hideGloss": true
     },
     {
@@ -101,11 +101,11 @@
       "id": "j23-l8",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The fee is forty dollars if they ask, and the deductible stays the same.",
-      "glossYue": "如果佢哋要求，收費係四十蚊，免賠額維持不變。",
+      "text": "The fee is forty dollars if they ask. The deductible stays the same.",
+      "glossYue": "如果佢哋要求，收費係四十蚊。免賠額維持不變。",
       "audio": "assets/audio/lines/j23-l8.mp3",
       "audioSlow": "assets/audio/lines/j23-l8-slow.mp3",
-      "say": "The fee is forty dollars if they ask, and the deductible stays the same.",
+      "say": "The fee is forty dollars if they ask. The deductible stays the same.",
       "hideGloss": true
     }
   ],
@@ -216,7 +216,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "I can prepare that fresh valuation, and the claimant may send the file on Monday.",
+        "line": "I can prepare that fresh valuation. The claimant can send the file on Monday.",
         "audio": "assets/audio/lines/j23-l2.mp3",
         "audioSlow": "assets/audio/lines/j23-l2-slow.mp3",
         "expect": "Does this written valuation still stand if the deductible changed after the first claim file?",
@@ -230,7 +230,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "The written valuation still stands, and the new deductible is noted after that first file.",
+        "line": "The written valuation still stands. The new deductible is noted after that first file.",
         "audio": "assets/audio/lines/j23-l4.mp3",
         "audioSlow": "assets/audio/lines/j23-l4-slow.mp3",
         "expect": "Can the underwriter accept a clear photo if the claimant cannot bring the paper original?",
@@ -244,7 +244,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "The underwriter can accept that clear photo, and the claimant may keep the paper original.",
+        "line": "The underwriter can accept that clear photo. The claimant can keep the paper original.",
         "audio": "assets/audio/lines/j23-l6.mp3",
         "audioSlow": "assets/audio/lines/j23-l6-slow.mp3",
         "expect": "What is the fee if the underwriter wants us in on Monday morning?",
