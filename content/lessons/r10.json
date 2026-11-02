@@ -48,44 +48,44 @@
       "id": "r10-l2",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Would that latte be hot or iced?",
-      "glossYue": "嗰杯拿鐵要熱定冰？",
+      "text": "Hot or iced for that latte?",
+      "glossYue": "呢杯拿鐵你想要熱定凍？",
       "audio": "assets/audio/lines/r10-l2.mp3",
       "audioSlow": "assets/audio/lines/r10-l2-slow.mp3",
-      "say": "Would that latte be hot or iced?",
+      "say": "Hot or iced for that latte?",
       "hideGloss": false
     },
     {
       "id": "r10-l3",
       "speaker": "cleo",
       "speakerLabel": "Cleo",
-      "text": "Iced, please, and the small size.",
-      "glossYue": "冰嘅，唔該，要細杯。",
+      "text": "Iced, please, and I would like the small size.",
+      "glossYue": "要凍，我想要細杯。",
       "audio": "assets/audio/lines/r10-l3.mp3",
       "audioSlow": "assets/audio/lines/r10-l3-slow.mp3",
-      "say": "Iced, please, and the small size.",
+      "say": "Iced, please, and I would like the small size.",
       "hideGloss": false
     },
     {
       "id": "r10-l4",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Do you want oat milk in the iced latte?",
-      "glossYue": "冰拿鐵要唔要燕麥奶？",
+      "text": "Would you like oat milk in the iced latte?",
+      "glossYue": "凍拿鐵加燕麥奶，好唔好？",
       "audio": "assets/audio/lines/r10-l4.mp3",
       "audioSlow": "assets/audio/lines/r10-l4-slow.mp3",
-      "say": "Do you want oat milk in the iced latte?",
+      "say": "Would you like oat milk in the iced latte?",
       "hideGloss": false
     },
     {
       "id": "r10-l5",
       "speaker": "cleo",
       "speakerLabel": "Cleo",
-      "text": "Yes, please, oat milk, and the name Cleo on the cup.",
-      "glossYue": "好，燕麥奶，杯上面寫 Cleo。",
+      "text": "Yes, oat milk, and the name Cleo on the cup.",
+      "glossYue": "好，用燕麥奶，杯上寫 Cleo 個名。",
       "audio": "assets/audio/lines/r10-l5.mp3",
       "audioSlow": "assets/audio/lines/r10-l5-slow.mp3",
-      "say": "Yes, please, oat milk, and the name Cleo on the cup.",
+      "say": "Yes, oat milk, and the name Cleo on the cup.",
       "hideGloss": false
     },
     {
@@ -103,11 +103,11 @@
       "id": "r10-l7",
       "speaker": "cleo",
       "speakerLabel": "Cleo",
-      "text": "To go, please, and keep the small size in this cup.",
-      "glossYue": "拎走，唔該，呢隻杯保持細杯。",
+      "text": "To go, please, and please keep the small size.",
+      "glossYue": "拎走，大細保持細杯。",
       "audio": "assets/audio/lines/r10-l7.mp3",
       "audioSlow": "assets/audio/lines/r10-l7-slow.mp3",
-      "say": "To go, please, and keep the small size in this cup.",
+      "say": "To go, please, and please keep the small size.",
       "hideGloss": false
     },
     {
@@ -134,7 +134,7 @@
       "explain": "latte 係拿鐵。"
     },
     {
-      "prompt": "Would that latte be hot or iced? 即係問緊咩？",
+      "prompt": "Hot or iced for that latte? 即係問緊咩？",
       "choices": [
         "問名字點寫",
         "問熱定凍",
@@ -168,7 +168,7 @@
     },
     {
       "pattern": "Would you like oat milk in the iced ___?",
-      "example": "Do you want oat milk in the iced latte?",
+      "example": "Would you like oat milk in the iced latte?",
       "glossYue": "冰拿鐵要唔要燕麥奶？",
       "answer": "latte",
       "choices": [
@@ -229,10 +229,10 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "Would that latte be hot or iced?",
+        "line": "Hot or iced for that latte?",
         "audio": "assets/audio/lines/r10-l2.mp3",
         "audioSlow": "assets/audio/lines/r10-l2-slow.mp3",
-        "expect": "Iced, please, and the small size.",
+        "expect": "Iced, please, and I would like the small size.",
         "keywords": [
           "iced",
           "size"
@@ -243,10 +243,10 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "Do you want oat milk in the iced latte?",
+        "line": "Would you like oat milk in the iced latte?",
         "audio": "assets/audio/lines/r10-l4.mp3",
         "audioSlow": "assets/audio/lines/r10-l4-slow.mp3",
-        "expect": "Yes, please, oat milk, and the name Cleo on the cup.",
+        "expect": "Yes, oat milk, and the name Cleo on the cup.",
         "keywords": [
           "oat",
           "name"

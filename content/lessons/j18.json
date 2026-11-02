@@ -61,11 +61,11 @@
       "id": "j18-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Yes. A battery change takes about ten minutes, and it's eighty dollars.",
-      "glossYue": "可以。換粒電池大約要十分鐘，八十蚊嘅。",
+      "text": "Sure. It takes about ten minutes, and it's eighty dollars.",
+      "glossYue": "可以。大約十分鐘，八十蚊。",
       "audio": "assets/audio/lines/j18-l2.mp3",
       "audioSlow": "assets/audio/lines/j18-l2-slow.mp3",
-      "say": "Yes. A battery change takes about ten minutes, and it's eighty dollars.",
+      "say": "Sure. It takes about ten minutes, and it's eighty dollars.",
       "hideGloss": false
     },
     {
@@ -83,33 +83,33 @@
       "id": "j18-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Yes, we reseal it after we open the back. Do you want to keep the metal band?",
-      "glossYue": "係，打開後蓋之後我哋會封返。你想唔想留住金屬錶帶？",
+      "text": "Yes, we reseal it and test it. Do you want to keep the metal band?",
+      "glossYue": "會，我哋會重新密封同測試。你想留住金屬錶帶嗎？",
       "audio": "assets/audio/lines/j18-l4.mp3",
       "audioSlow": "assets/audio/lines/j18-l4-slow.mp3",
-      "say": "Yes, we reseal it after we open the back. Do you want to keep the metal band?",
+      "say": "Yes, we reseal it and test it. Do you want to keep the metal band?",
       "hideGloss": true
     },
     {
       "id": "j18-l5",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "The metal band is loose. Can you take out two links?",
-      "glossYue": "金屬錶帶鬆咗。可唔可以拆兩節？",
+      "text": "It's a bit loose. Can you take out two links?",
+      "glossYue": "有啲鬆。可唔可以拆走兩節？",
       "audio": "assets/audio/lines/j18-l5.mp3",
       "audioSlow": "assets/audio/lines/j18-l5-slow.mp3",
-      "say": "The metal band is loose. Can you take out two links?",
+      "say": "It's a bit loose. Can you take out two links?",
       "hideGloss": true
     },
     {
       "id": "j18-l6",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Those two links are free with the battery change.",
-      "glossYue": "嗰兩節唔使另加錢，連埋換電池一齊做嘅。",
+      "text": "No problem. That's free with the battery change.",
+      "glossYue": "冇問題。連埋換電池一齊做，唔使另收費。",
       "audio": "assets/audio/lines/j18-l6.mp3",
       "audioSlow": "assets/audio/lines/j18-l6-slow.mp3",
-      "say": "Those two links are free with the battery change.",
+      "say": "No problem. That's free with the battery change.",
       "hideGloss": true
     },
     {
@@ -127,11 +127,11 @@
       "id": "j18-l8",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Pick it up at four. The new battery has a one-year warranty.",
-      "glossYue": "四點可以攞。新電池有一年保養。",
+      "text": "Come back at four. The new battery has a one-year warranty.",
+      "glossYue": "四點再嚟。新電池有一年保養。",
       "audio": "assets/audio/lines/j18-l8.mp3",
       "audioSlow": "assets/audio/lines/j18-l8-slow.mp3",
-      "say": "Pick it up at four. The new battery has a one-year warranty.",
+      "say": "Come back at four. The new battery has a one-year warranty.",
       "hideGloss": true
     }
   ],
@@ -147,7 +147,7 @@
       "explain": "手錶。"
     },
     {
-      "prompt": "Yes, we reseal it after we open the back. Do you want to keep the metal band? 即係問緊咩？",
+      "prompt": "Yes, we reseal it and test it. Do you want to keep the metal band? 即係問緊咩？",
       "choices": [
         "講緊電池",
         "唔係手錶",
@@ -157,7 +157,7 @@
       "explain": "電池。"
     },
     {
-      "prompt": "Pick it up at four. The new battery has a one-year warranty. 呢句即係點？",
+      "prompt": "Come back at four. The new battery has a one-year warranty. 呢句即係點？",
       "choices": [
         "唔係手錶",
         "關於電池",
@@ -170,7 +170,7 @@
   "chunks": [
     {
       "pattern": "Come back at four. The new ___ has a one-year warranty.",
-      "example": "Pick it up at four. The new battery has a one-year warranty.",
+      "example": "Come back at four. The new battery has a one-year warranty.",
       "glossYue": "四點再嚟。新電池有一年保養。",
       "answer": "battery",
       "choices": [

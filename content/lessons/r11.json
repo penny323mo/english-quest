@@ -68,11 +68,11 @@
       "id": "r11-l2",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Okay. Is egg a problem too?",
-      "glossYue": "好。蛋會唔會都有問題？",
+      "text": "Okay. Is egg a problem for you too?",
+      "glossYue": "好。蛋對你嚟講有冇問題？",
       "audio": "assets/audio/lines/r11-l2.mp3",
       "audioSlow": "assets/audio/lines/r11-l2-slow.mp3",
-      "say": "Okay. Is egg a problem too?",
+      "say": "Okay. Is egg a problem for you too?",
       "hideGloss": false
     },
     {
@@ -90,11 +90,11 @@
       "id": "r11-l4",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Yes, the fried rice has peanut oil. I'd suggest the vegetable noodles instead.",
-      "glossYue": "有嘅，炒飯有花生油。我建議你改叫蔬菜麵。",
+      "text": "Yes, it has peanut oil. I'd suggest the vegetable noodles instead.",
+      "glossYue": "有，佢有花生油。我建議你轉蔬菜麵。",
       "audio": "assets/audio/lines/r11-l4.mp3",
       "audioSlow": "assets/audio/lines/r11-l4-slow.mp3",
-      "say": "Yes, the fried rice has peanut oil. I'd suggest the vegetable noodles instead.",
+      "say": "Yes, it has peanut oil. I'd suggest the vegetable noodles instead.",
       "hideGloss": true
     },
     {
@@ -112,11 +112,11 @@
       "id": "r11-l6",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "No pork. They're vegetarian, and the kitchen will use a separate pan.",
-      "glossYue": "冇豬肉。佢哋食素，廚房會用另一隻鑊。",
+      "text": "No, they're vegetarian. I'll ask the kitchen to use a separate pan.",
+      "glossYue": "冇，係素食。我會叫廚房用另一隻鑊。",
       "audio": "assets/audio/lines/r11-l6.mp3",
       "audioSlow": "assets/audio/lines/r11-l6-slow.mp3",
-      "say": "No pork. They're vegetarian, and the kitchen will use a separate pan.",
+      "say": "No, they're vegetarian. I'll ask the kitchen to use a separate pan.",
       "hideGloss": true
     },
     {
@@ -134,11 +134,11 @@
       "id": "r11-l8",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "I will tell the chef and put a note on your order.",
-      "glossYue": "我會話畀廚師知，再喺單上記低。",
+      "text": "I will. I'll put a note on your order now.",
+      "glossYue": "我會。我而家喺你張單上面寫低。",
       "audio": "assets/audio/lines/r11-l8.mp3",
       "audioSlow": "assets/audio/lines/r11-l8-slow.mp3",
-      "say": "I will tell the chef and put a note on your order.",
+      "say": "I will. I'll put a note on your order now.",
       "hideGloss": true
     }
   ],
@@ -154,7 +154,7 @@
       "explain": "敏感。"
     },
     {
-      "prompt": "Yes, the fried rice has peanut oil. I'd suggest the vegetable noodles instead. 呢句即係點？",
+      "prompt": "Yes, it has peanut oil. I'd suggest the vegetable noodles instead. 呢句即係點？",
       "choices": [
         "講緊花生",
         "唔係敏感",
@@ -164,7 +164,7 @@
       "explain": "花生。"
     },
     {
-      "prompt": "I will tell the chef and put a note on your order. 呢句即係點？",
+      "prompt": "I will. I'll put a note on your order now. 呢句即係點？",
       "choices": [
         "唔係敏感",
         "關於花生",
@@ -188,7 +188,7 @@
     },
     {
       "pattern": "No, they're ___. I'll ask the kitchen to use a separate pan.",
-      "example": "No pork. They're vegetarian, and the kitchen will use a separate pan.",
+      "example": "No, they're vegetarian. I'll ask the kitchen to use a separate pan.",
       "glossYue": "冇，係素食。我會叫廚房用另一隻鑊。",
       "answer": "vegetarian",
       "choices": [
@@ -199,7 +199,7 @@
     },
     {
       "pattern": "Yes, it has ___ oil. I'd suggest the vegetable noodles instead.",
-      "example": "Yes, the fried rice has peanut oil. I'd suggest the vegetable noodles instead.",
+      "example": "Yes, it has peanut oil. I'd suggest the vegetable noodles instead.",
       "glossYue": "有，佢有花生油。我建議你轉蔬菜麵。",
       "answer": "peanut",
       "choices": [

@@ -26,33 +26,33 @@
       "id": "w7-l1",
       "speaker": "ines",
       "speakerLabel": "Ines",
-      "text": "Hello, I am calling in sick because I am not feeling well and cannot start.",
-      "glossYue": "你好，我打嚟請病假，因為我唔舒服，開工唔到。",
+      "text": "Hello, I'm calling in sick. I'm not feeling well and I can't start my shift.",
+      "glossYue": "你好，我打電話請病假，因為我唔舒服，上唔到更。",
       "audio": "assets/audio/lines/w7-l1.mp3",
       "audioSlow": "assets/audio/lines/w7-l1-slow.mp3",
-      "say": "Hello, I am calling in sick because I am not feeling well and cannot start.",
+      "say": "Hello, I'm calling in sick. I'm not feeling well and I can't start my shift.",
       "hideGloss": false
     },
     {
       "id": "w7-l2",
       "speaker": "reid",
       "speakerLabel": "Reid",
-      "text": "I am sorry to hear that. Could you bring a doctor's note in?",
-      "glossYue": "唔好意思聽到。可唔可以帶醫生紙返嚟？",
+      "text": "I'm sorry. Could you bring a doctor's note when you come back?",
+      "glossYue": "聽到你咁真係唔好意思。返嚟可唔可以帶醫生紙？",
       "audio": "assets/audio/lines/w7-l2.mp3",
       "audioSlow": "assets/audio/lines/w7-l2-slow.mp3",
-      "say": "I am sorry to hear that. Could you bring a doctor's note in?",
+      "say": "I'm sorry. Could you bring a doctor's note when you come back?",
       "hideGloss": false
     },
     {
       "id": "w7-l3",
       "speaker": "ines",
       "speakerLabel": "Ines",
-      "text": "Yes, I can bring the doctor's note that the clinic wrote for me.",
-      "glossYue": "得，我可以帶診所開畀我嘅醫生紙。",
+      "text": "Yes, I can bring the doctor's note the clinic wrote for me.",
+      "glossYue": "可以，我可以帶診所今朝開嘅醫生紙。",
       "audio": "assets/audio/lines/w7-l3.mp3",
       "audioSlow": "assets/audio/lines/w7-l3-slow.mp3",
-      "say": "Yes, I can bring the doctor's note that the clinic wrote for me.",
+      "say": "Yes, I can bring the doctor's note the clinic wrote for me.",
       "hideGloss": false
     },
     {
@@ -71,7 +71,7 @@
       "speaker": "ines",
       "speakerLabel": "Ines",
       "text": "Mei can cover my shift at the shop while I stay home.",
-      "glossYue": "我留喺屋企，Mei 可以頂我喺店嘅更。",
+      "glossYue": "今朝 Mei 可以喺舖頭頂我更，我留喺屋企。",
       "audio": "assets/audio/lines/w7-l5.mp3",
       "audioSlow": "assets/audio/lines/w7-l5-slow.mp3",
       "say": "Mei can cover my shift at the shop while I stay home.",
@@ -82,7 +82,7 @@
       "speaker": "reid",
       "speakerLabel": "Reid",
       "text": "Will you be back on Monday, or stay home a bit longer?",
-      "glossYue": "你星期一返，定係再留喺屋企多陣？",
+      "glossYue": "你星期一返，定係醫生要你喺屋企多留幾日？",
       "audio": "assets/audio/lines/w7-l6.mp3",
       "audioSlow": "assets/audio/lines/w7-l6-slow.mp3",
       "say": "Will you be back on Monday, or stay home a bit longer?",
@@ -92,28 +92,28 @@
       "id": "w7-l7",
       "speaker": "ines",
       "speakerLabel": "Ines",
-      "text": "I will be back on Monday once the doctor clears me.",
-      "glossYue": "醫生話得，我星期一返。",
+      "text": "I'll be back on Monday once the doctor says I can.",
+      "glossYue": "醫生批准我開工，我就星期一返。",
       "audio": "assets/audio/lines/w7-l7.mp3",
       "audioSlow": "assets/audio/lines/w7-l7-slow.mp3",
-      "say": "I will be back on Monday once the doctor clears me.",
+      "say": "I'll be back on Monday once the doctor says I can.",
       "hideGloss": true
     },
     {
       "id": "w7-l8",
       "speaker": "reid",
       "speakerLabel": "Reid",
-      "text": "We will keep your Monday shift open at the counter, and we hope you feel better.",
-      "glossYue": "我哋會留住你星期一櫃檯嗰更，希望你好返。",
+      "text": "We'll keep your Monday shift open at the counter, and we hope you feel better.",
+      "glossYue": "我哋會留住你星期一櫃檯嘅更，團隊希望你快啲好返。",
       "audio": "assets/audio/lines/w7-l8.mp3",
       "audioSlow": "assets/audio/lines/w7-l8-slow.mp3",
-      "say": "We will keep your Monday shift open at the counter, and we hope you feel better.",
+      "say": "We'll keep your Monday shift open at the counter, and we hope you feel better.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Hello, I am calling in sick because I am not feeling well and cannot start. 呢句即係點？",
+      "prompt": "Hello, I'm calling in sick. I'm not feeling well and I can't start my shift. 呢句即係點？",
       "choices": [
         "我唔舒服，上唔到更",
         "我唔舒服，但可以照上更",
@@ -123,7 +123,7 @@
       "explain": "not feeling well 係唔舒服。"
     },
     {
-      "prompt": "Yes, I can bring the doctor's note that the clinic wrote for me. 呢句即係點？",
+      "prompt": "Yes, I can bring the doctor's note the clinic wrote for me. 呢句即係點？",
       "choices": [
         "今朝已經帶咗醫生紙",
         "星期一先交醫生紙",
@@ -157,7 +157,7 @@
     },
     {
       "pattern": "Yes, I can bring the ___ that the clinic wrote for me this morning.",
-      "example": "Yes, I can bring the doctor's note that the clinic wrote for me.",
+      "example": "Yes, I can bring the doctor's note the clinic wrote for me.",
       "glossYue": "我可以帶醫生紙。",
       "answer": "doctor's note",
       "choices": [
@@ -220,10 +220,10 @@
       {
         "partner": "Reid",
         "partnerId": "reid",
-        "line": "I am sorry to hear that. Could you bring a doctor's note in?",
+        "line": "I'm sorry. Could you bring a doctor's note when you come back?",
         "audio": "assets/audio/lines/w7-l2.mp3",
         "audioSlow": "assets/audio/lines/w7-l2-slow.mp3",
-        "expect": "Yes, I can bring the doctor's note that the clinic wrote for me.",
+        "expect": "Yes, I can bring the doctor's note the clinic wrote for me.",
         "keywords": [
           "doctor",
           "note"
@@ -251,7 +251,7 @@
         "line": "Will you be back on Monday, or stay home a bit longer?",
         "audio": "assets/audio/lines/w7-l6.mp3",
         "audioSlow": "assets/audio/lines/w7-l6-slow.mp3",
-        "expect": "I will be back on Monday once the doctor clears me.",
+        "expect": "I'll be back on Monday once the doctor says I can.",
         "keywords": [
           "Monday",
           "doctor"
@@ -286,7 +286,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「Hello, I am calling in sick because I am not feeling well and cannot start.」，not feeling well 係咩意思？",
+      "prompt": "你講「Hello, I'm calling in sick. I'm not feeling well and I can't start my shift.」，not feeling well 係咩意思？",
       "choices": [
         "醫生紙",
         "唔舒服",

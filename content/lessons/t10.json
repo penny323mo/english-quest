@@ -49,11 +49,11 @@
       "id": "t10-l3",
       "speaker": "hugo",
       "speakerLabel": "Hugo",
-      "text": "The missing bag is a blue suitcase with a red ribbon.",
-      "glossYue": "唔見嗰個袋係一個藍色嘅行李箱，上面有條紅絲帶。",
+      "text": "It is a blue suitcase with a red ribbon.",
+      "glossYue": "係一個藍色行李箱，有紅絲帶，底有兩個細轆。",
       "audio": "assets/audio/lines/t10-l3.mp3",
       "audioSlow": "assets/audio/lines/t10-l3-slow.mp3",
-      "say": "The missing bag is a blue suitcase with a red ribbon.",
+      "say": "It is a blue suitcase with a red ribbon.",
       "hideGloss": false
     },
     {
@@ -93,11 +93,11 @@
       "id": "t10-l7",
       "speaker": "hugo",
       "speakerLabel": "Hugo",
-      "text": "Could you deliver it to my hotel if you find it after this search?",
-      "glossYue": "如果今次搵到，可唔可以送到我間酒店？",
+      "text": "Could you deliver the bag to my hotel if you find it after you finish this search?",
+      "glossYue": "如果搵到，可唔可以送到我酒店？",
       "audio": "assets/audio/lines/t10-l7.mp3",
       "audioSlow": "assets/audio/lines/t10-l7-slow.mp3",
-      "say": "Could you deliver it to my hotel if you find it after this search?",
+      "say": "Could you deliver the bag to my hotel if you find it after you finish this search?",
       "hideGloss": true
     },
     {
@@ -124,7 +124,7 @@
       "explain": "luggage 係行李。"
     },
     {
-      "prompt": "The missing bag is a blue suitcase with a red ribbon. 呢句即係點？",
+      "prompt": "It is a blue suitcase with a red ribbon. 呢句即係點？",
       "choices": [
         "個袋係黑色，冇轆",
         "行李牌號碼係紅色",
@@ -169,7 +169,7 @@
     },
     {
       "pattern": "Could you ___ the bag to my hotel if you find it after this search?",
-      "example": "Could you deliver it to my hotel if you find it after this search?",
+      "example": "Could you deliver the bag to my hotel if you find it after you finish this search?",
       "glossYue": "可唔可以送到酒店？",
       "answer": "deliver",
       "choices": [
@@ -250,7 +250,7 @@
         "line": "Please complete this written claim form with me while the missing bag is still off the empty belt.",
         "audio": "assets/audio/lines/t10-l6.mp3",
         "audioSlow": "assets/audio/lines/t10-l6-slow.mp3",
-        "expect": "Could you deliver it to my hotel if you find it after this search?",
+        "expect": "Could you deliver the bag to my hotel if you find it after you finish this search?",
         "keywords": [
           "hotel",
           "deliver"
@@ -295,7 +295,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「Could you deliver it to my hotel if you find it after this search?」，deliver 係咩意思？",
+      "prompt": "你講「Could you deliver the bag to my hotel if you find it after you finish this search?」，deliver 係咩意思？",
       "choices": [
         "索償",
         "轉盤",

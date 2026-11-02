@@ -87,11 +87,11 @@
       "id": "r12-l4",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Yes, I'll put a high chair at the table. Do you need a deposit receipt?",
-      "glossYue": "有，我會擺張高椅喺枱度。你需唔需要訂金收據？",
+      "text": "Yes, I'll put one at the table for you. Do you need a deposit receipt?",
+      "glossYue": "有，我會擺一張喺你張枱。你需唔需要訂金收據？",
       "audio": "assets/audio/lines/r12-l4.mp3",
       "audioSlow": "assets/audio/lines/r12-l4-slow.mp3",
-      "say": "Yes, I'll put a high chair at the table. Do you need a deposit receipt?",
+      "say": "Yes, I'll put one at the table for you. Do you need a deposit receipt?",
       "hideGloss": true
     },
     {
@@ -109,11 +109,11 @@
       "id": "r12-l6",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "The deposit is five hundred dollars. You can pay by card over the phone.",
-      "glossYue": "訂金係五百蚊，你可以用卡喺電話付嘅。",
+      "text": "It's five hundred dollars. You can pay by card now over the phone.",
+      "glossYue": "五百蚊。你可以而家喺電話用卡付。",
       "audio": "assets/audio/lines/r12-l6.mp3",
       "audioSlow": "assets/audio/lines/r12-l6-slow.mp3",
-      "say": "The deposit is five hundred dollars. You can pay by card over the phone.",
+      "say": "It's five hundred dollars. You can pay by card now over the phone.",
       "hideGloss": true
     },
     {
@@ -131,11 +131,11 @@
       "id": "r12-l8",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "I'll text the confirmation. What's the best number to reach you?",
-      "glossYue": "我會用短訊寄個確認。咁邊個號碼最容易搵到你？",
+      "text": "Of course. What's the best number to reach you?",
+      "glossYue": "當然可以。邊個號碼最容易搵到你？",
       "audio": "assets/audio/lines/r12-l8.mp3",
       "audioSlow": "assets/audio/lines/r12-l8-slow.mp3",
-      "say": "I'll text the confirmation. What's the best number to reach you?",
+      "say": "Of course. What's the best number to reach you?",
       "hideGloss": true
     }
   ],
@@ -151,7 +151,7 @@
       "explain": "八人。"
     },
     {
-      "prompt": "Yes, I'll put a high chair at the table. Do you need a deposit receipt? 即係問緊咩？",
+      "prompt": "Yes, I'll put one at the table for you. Do you need a deposit receipt? 即係問緊咩？",
       "choices": [
         "講緊包房",
         "唔係八人",
@@ -161,7 +161,7 @@
       "explain": "包房。"
     },
     {
-      "prompt": "I'll text the confirmation. What's the best number to reach you? 即係問緊咩？",
+      "prompt": "Of course. What's the best number to reach you? 即係問緊咩？",
       "choices": [
         "唔係八人",
         "關於包房",
@@ -185,7 +185,7 @@
     },
     {
       "pattern": "Yes, I'll put one at the table for you. Do you need a ___ receipt?",
-      "example": "Yes, I'll put a high chair at the table. Do you need a deposit receipt?",
+      "example": "Yes, I'll put one at the table for you. Do you need a deposit receipt?",
       "glossYue": "有，我會擺一張喺你張枱。你需唔需要訂金收據？",
       "answer": "deposit",
       "choices": [

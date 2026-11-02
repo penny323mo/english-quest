@@ -1,11 +1,12 @@
 # Changelog — English Quest
 
 ## Stage 3 — content
-- The per-id exemption lists are empty. On main they were pad 57, staff replies 26, locked lessons 15, question-share 64, repeated content words 14, padding tails 32, and one five-word fragment. A test now fails if `staffAllow`, `qAllow`, `freqAllow`, `tailAllow`, `echoAllow`, or `padAllow` returns, or if a lesson-line id is placed in a `Set`. The 18 short set phrases stay. Gloss hashes were restamped after the rewrites.
-- Every one of the 97 lessons is inside its CEFR word cap. Neighbours stay within two words, two-step and three-step drops stay within 2.5, and the band means rise. T15 is no longer required to sit over the A2/B1 cap.
-- LanguageTool 6.6, offline, en-US, checked 4,751 English lines (lexicon examples, mini-dialogues, and lesson dialogue). Real errors were rewritten. The remaining matches are false positives, listed in `review/stage3/grammar.json`. Twenty before/after lines, five each from A1, A2, B1, and B2, are in `review/stage3/before-after.md`.
-- 266 clips whose spoken text changed were re-rendered with Piper `en_US-ljspeech-medium` and espeak `en-us`, normal and slow. Headword `audioSha256` values for the re-rendered head clips were restamped.
-- Still open, and not part of this pass: mixed hero art, the bare sound checkbox, the 440 Hz oscillator, residual gloss drift on names and teaching spellings, and quiz items on watch. The path stays 97 lessons.
+- The first pass emptied the per-id exemption lists by rewriting lines so they would share a content word, avoid “today” and “for you”, and not end on “tonight” or “now”. A lot of that English was shorter and less polite than the line it replaced. The follow-up keeps the real padding checks (`for you here`, `that note here`) and the template checks, and drops the rules that were forcing the awkward lines: a reply no longer has to repeat a content word from the question, “today” and “for you” are allowed, and a line may end on “tonight” or “now”. A lesson word that is one of that lesson’s lemmas may repeat. The guard that forbade an exemption list is gone.
+- Lines that were already natural are back, including “I’m sorry, I did not see you there.” The ten lines called out in review are in `review/stage3/duet-fixes.md`. A seeded sample of 30 remaining changes is in `review/stage3/random30.md` (seed 1506, `review/stage3/sample30.mjs`).
+- Every one of the 97 lessons is inside its CEFR word cap. Neighbours stay within two words, two-step and three-step drops stay within 2.5, and the band means rise. No new lessons.
+- LanguageTool 6.6, offline, en-US, checked the English lines. Real errors (a/an, “Can I looking”, broken templates, missing question marks) stayed fixed. The remaining matches are false positives in `review/stage3/grammar.json`.
+- Clips whose spoken text changed were re-rendered with Piper `en_US-ljspeech-medium` and espeak `en-us`. Clips that returned to the previous sentence were restored from that recording.
+- Still open: mixed hero art, the bare sound checkbox, the 440 Hz oscillator, residual gloss drift on names and teaching spellings, and quiz items on watch.
 
 ## Stage 2 — tests and honesty
 - A green test count is not a content-quality score. Round 55’s “77/77” and the line that left 236 “Staff logged … under code” examples in place were wrong as quality claims: the code token was how those lines evaded the skeleton cap. Stage 1 rewrote them. The normalised skeleton cap is back to two lemmas, which is what the check was before that round loosened it to three.

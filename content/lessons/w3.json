@@ -30,11 +30,11 @@
       "id": "w3-l1",
       "speaker": "owen",
       "speakerLabel": "Owen",
-      "text": "Good morning everyone. Let's open the meeting and share an update.",
+      "text": "Good morning everyone. Let's open the meeting and share an update today.",
       "glossYue": "早晨各位。我哋開會，分享一個更新。",
       "audio": "assets/audio/lines/w3-l1.mp3",
       "audioSlow": "assets/audio/lines/w3-l1-slow.mp3",
-      "say": "Good morning everyone. Let's open the meeting and share an update.",
+      "say": "Good morning everyone. Let's open the meeting and share an update today.",
       "hideGloss": false
     },
     {
@@ -150,7 +150,7 @@
   "chunks": [
     {
       "pattern": "Good morning everyone, let's open the meeting now and share a short ___ on the agenda today.",
-      "example": "Good morning everyone. Let's open the meeting and share an update.",
+      "example": "Good morning everyone. Let's open the meeting and share an update today.",
       "glossYue": "分享一個短⋯⋯。",
       "answer": "update",
       "choices": [

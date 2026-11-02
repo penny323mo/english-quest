@@ -56,11 +56,11 @@
       "id": "t13-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have a bad headache and a high fever. What should I use?",
+      "text": "I have a bad headache and a high fever. What can I take?",
       "glossYue": "我頭痛得好緊，仲有高燒。我可以食咩？",
       "audio": "assets/audio/lines/t13-l1.mp3",
       "audioSlow": "assets/audio/lines/t13-l1-slow.mp3",
-      "say": "I have a bad headache and a high fever. What should I use?",
+      "say": "I have a bad headache and a high fever. What can I take?",
       "hideGloss": false
     },
     {
@@ -123,7 +123,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Do I need a prescription before I take this tablet?",
-      "glossYue": "食呢粒藥之前，使唔使醫生紙？",
+      "glossYue": "好消息。食呢種之前使唔使醫生處方？",
       "audio": "assets/audio/lines/t13-l7.mp3",
       "audioSlow": "assets/audio/lines/t13-l7-slow.mp3",
       "say": "Do I need a prescription before I take this tablet?",
@@ -176,7 +176,7 @@
   "chunks": [
     {
       "pattern": "Hi. I have a bad ___ and a high fever. What medicine can I take?",
-      "example": "I have a bad headache and a high fever. What should I use?",
+      "example": "I have a bad headache and a high fever. What can I take?",
       "glossYue": "我頭痛。",
       "answer": "headache",
       "choices": [
@@ -337,6 +337,6 @@
   ],
   "shadow": {
     "lineId": "t13-l1",
-    "hint": "I have a bad headache and a high fever. What should I use?"
+    "hint": "I have a bad headache and a high fever. What can I take?"
   }
 }

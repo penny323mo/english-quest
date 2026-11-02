@@ -62,11 +62,11 @@
       "id": "d12-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I'd like an appointment at the clinic, please.",
-      "glossYue": "我想喺診所預約，唔該。",
+      "text": "Hi, I'd like to make an appointment to see a doctor, please.",
+      "glossYue": "你好，我想預約睇醫生。",
       "audio": "assets/audio/lines/d12-l2.mp3",
       "audioSlow": "assets/audio/lines/d12-l2-slow.mp3",
-      "say": "I'd like an appointment at the clinic, please.",
+      "say": "Hi, I'd like to make an appointment to see a doctor, please.",
       "hideGloss": false
     },
     {
@@ -84,11 +84,11 @@
       "id": "d12-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "My symptoms are a sore throat and a fever since yesterday.",
-      "glossYue": "我嘅症狀係尋日開始喉嚨痛，仲有發燒。",
+      "text": "I've had a sore throat and a fever since yesterday.",
+      "glossYue": "我由尋日開始喉嚨痛，仲有發燒。",
       "audio": "assets/audio/lines/d12-l4.mp3",
       "audioSlow": "assets/audio/lines/d12-l4-slow.mp3",
-      "say": "My symptoms are a sore throat and a fever since yesterday.",
+      "say": "I've had a sore throat and a fever since yesterday.",
       "hideGloss": true
     },
     {
@@ -106,33 +106,33 @@
       "id": "d12-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Yes, the earliest appointment is fine. What's the fee?",
-      "glossYue": "最早嗰個預約得。收費幾多？",
+      "text": "Yes, that's fine. How much is the consultation fee?",
+      "glossYue": "可以。診金幾多？",
       "audio": "assets/audio/lines/d12-l6.mp3",
       "audioSlow": "assets/audio/lines/d12-l6-slow.mp3",
-      "say": "Yes, the earliest appointment is fine. What's the fee?",
+      "say": "Yes, that's fine. How much is the consultation fee?",
       "hideGloss": true
     },
     {
       "id": "d12-l7",
       "speaker": "wen",
       "speakerLabel": "Wen",
-      "text": "The consultation fee is three hundred dollars, including medicine. Bring your ID and insurance card.",
-      "glossYue": "診金三百蚊，包藥。帶身份證同保險卡。",
+      "text": "It's three hundred dollars, including medicine. Please bring your ID card and insurance card, and come ten minutes early.",
+      "glossYue": "三百蚊，包藥。請帶身份證同保險卡，提早十分鐘到。",
       "audio": "assets/audio/lines/d12-l7.mp3",
       "audioSlow": "assets/audio/lines/d12-l7-slow.mp3",
-      "say": "The consultation fee is three hundred dollars, including medicine. Bring your ID and insurance card.",
+      "say": "It's three hundred dollars, including medicine. Please bring your ID card and insurance card, and come ten minutes early.",
       "hideGloss": true
     },
     {
       "id": "d12-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Great. Nine thirty tomorrow with Dr Lam. I'll arrive ten minutes early.",
-      "glossYue": "好。聽日九點半見林醫生。我會早十分鐘到。",
+      "text": "Great. Nine thirty tomorrow with Dr Lam. Thank you!",
+      "glossYue": "好。聽日九點半，林醫生。多謝！",
       "audio": "assets/audio/lines/d12-l8.mp3",
       "audioSlow": "assets/audio/lines/d12-l8-slow.mp3",
-      "say": "Great. Nine thirty tomorrow with Dr Lam. I'll arrive ten minutes early.",
+      "say": "Great. Nine thirty tomorrow with Dr Lam. Thank you!",
       "hideGloss": true
     }
   ],
@@ -148,7 +148,7 @@
       "explain": "預約。"
     },
     {
-      "prompt": "My symptoms are a sore throat and a fever since yesterday. 呢句即係點？",
+      "prompt": "I've had a sore throat and a fever since yesterday. 呢句即係點？",
       "choices": [
         "講緊症狀",
         "唔係預約",
@@ -158,7 +158,7 @@
       "explain": "症狀。"
     },
     {
-      "prompt": "Great. Nine thirty tomorrow with Dr Lam. I'll arrive ten minutes early. 呢句即係點？",
+      "prompt": "Great. Nine thirty tomorrow with Dr Lam. Thank you! 呢句即係點？",
       "choices": [
         "唔係預約",
         "關於症狀",
@@ -171,7 +171,7 @@
   "chunks": [
     {
       "pattern": "It's three hundred dollars, including medicine. Please bring your ID card and ___ card, and come ten minutes early.",
-      "example": "The consultation fee is three hundred dollars, including medicine. Bring your ID and insurance card.",
+      "example": "It's three hundred dollars, including medicine. Please bring your ID card and insurance card, and come ten minutes early.",
       "glossYue": "三百蚊，包藥。請帶身份證同保險卡，提早十分鐘到。",
       "answer": "insurance",
       "choices": [
@@ -193,7 +193,7 @@
     },
     {
       "pattern": "Hi, I'd ___ to make an appointment to see a doctor, please.",
-      "example": "I'd like an appointment at the clinic, please.",
+      "example": "Hi, I'd like to make an appointment to see a doctor, please.",
       "glossYue": "你好，我想預約睇醫生。",
       "answer": "like",
       "choices": [
@@ -301,7 +301,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "I'd like an appointment at the clinic, please. 呢句入面，邊個意思先啱？",
+      "prompt": "Hi, I'd like to make an appointment to see a doctor, please. 呢句入面，邊個意思先啱？",
       "choices": [
         "預約",
         "症狀",
@@ -321,7 +321,7 @@
     },
     {
       "type": "choice",
-      "prompt": "The ___ is three hundred dollars, including medicine. Bring your ID and insurance card. 呢句入面，邊個字先啱？",
+      "prompt": "Yes, that's fine. How much is the ___? 呢句入面，邊個字先啱？",
       "choices": [
         "symptom",
         "consultation fee",

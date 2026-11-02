@@ -51,11 +51,11 @@
       "id": "r16-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "What is the special, and does the chef recommend that dish?",
-      "glossYue": "特餐係咩？廚師推唔推薦嗰味？",
+      "text": "What is today's special, and does the chef recommend that dish?",
+      "glossYue": "今日特餐係咩？廚師推唔推薦嗰味？",
       "audio": "assets/audio/lines/r16-l1.mp3",
       "audioSlow": "assets/audio/lines/r16-l1-slow.mp3",
-      "say": "What is the special, and does the chef recommend that dish?",
+      "say": "What is today's special, and does the chef recommend that dish?",
       "hideGloss": false
     },
     {
@@ -186,7 +186,7 @@
   },
   "understand": [
     {
-      "prompt": "What is the special, and does the chef recommend that dish? 呢句即係點？",
+      "prompt": "What is today's special, and does the chef recommend that dish? 呢句即係點？",
       "choices": [
         "關於白飯",
         "講緊特餐",
@@ -219,7 +219,7 @@
   "chunks": [
     {
       "pattern": "What is today's special, and does the chef recommend that ___?",
-      "example": "What is the special, and does the chef recommend that dish?",
+      "example": "What is today's special, and does the chef recommend that dish?",
       "glossYue": "今日特餐係咩？廚師推唔推薦嗰味？",
       "answer": "dish",
       "choices": [
@@ -321,7 +321,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "What is the special, and does the chef recommend that dish? 呢句入面，邊個意思先啱？",
+      "prompt": "What is today's special, and does the chef recommend that dish? 呢句入面，邊個意思先啱？",
       "choices": [
         "讀（而家／習慣）",
         "特餐",
@@ -331,7 +331,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "What is the special, and does the chef recommend that dish? 呢句入面，邊個意思先啱？",
+      "prompt": "What is today's special, and does the chef recommend that dish? 呢句入面，邊個意思先啱？",
       "choices": [
         "廚師",
         "唔辣",
@@ -341,7 +341,7 @@
     },
     {
       "type": "choice",
-      "prompt": "What is the ___, and does the chef recommend that dish? 呢句入面，邊個字先啱？",
+      "prompt": "What is today's ___, and does the chef recommend that dish? 呢句入面，邊個字先啱？",
       "choices": [
         "read",
         "live",
@@ -353,6 +353,6 @@
   ],
   "shadow": {
     "lineId": "r16-l1",
-    "hint": "What is the special, and does the chef recommend that dish?"
+    "hint": "What is today's special, and does the chef recommend that dish?"
   }
 }

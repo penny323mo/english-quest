@@ -42,21 +42,21 @@
       "id": "t1-l1",
       "speaker": "jo",
       "speakerLabel": "Jo",
-      "text": "Good afternoon. Where are you flying? May I see your passport?",
-      "glossYue": "你好，你飛去邊？可唔可以睇吓護照？",
+      "text": "Good afternoon. Where are you flying today? May I see your passport?",
+      "glossYue": "你好，你今日飛去邊？可唔可以睇吓護照？",
       "audio": "assets/audio/lines/t1-l1.mp3",
       "audioSlow": "assets/audio/lines/t1-l1-slow.mp3",
-      "say": "Good afternoon. Where are you flying? May I see your passport?"
+      "say": "Good afternoon. Where are you flying today? May I see your passport?"
     },
     {
       "id": "t1-l2",
       "speaker": "ling",
       "speakerLabel": "{{learner}}",
-      "text": "I'm flying to Hong Kong. Here's my passport.",
-      "glossYue": "我飛去香港。呢張係我護照。",
+      "text": "I'm flying to Hong Kong. Here is my passport.",
+      "glossYue": "我飛去香港。呢本係我嘅護照。",
       "audio": "assets/audio/lines/t1-l2.mp3",
       "audioSlow": "assets/audio/lines/t1-l2-slow.mp3",
-      "say": "I'm flying to Hong Kong. Here's my passport."
+      "say": "I'm flying to Hong Kong. Here is my passport."
     },
     {
       "id": "t1-l3",
@@ -82,11 +82,11 @@
       "id": "t1-l5",
       "speaker": "jo",
       "speakerLabel": "Jo",
-      "text": "Sure. I'll show the information on your boarding pass.",
-      "glossYue": "好。我畀你睇登機證上面嘅資料。",
+      "text": "Sure. Here is your boarding pass.",
+      "glossYue": "好。我畀你睇吓資料。你張登機證喺度。",
       "audio": "assets/audio/lines/t1-l5.mp3",
       "audioSlow": "assets/audio/lines/t1-l5-slow.mp3",
-      "say": "Sure. I'll show the information on your boarding pass."
+      "say": "Sure. Here is your boarding pass."
     }
   ],
   "understand": [

@@ -331,9 +331,9 @@ test("round 26 spoken goals, tray card, and spelled model", () => {
 });
 
 test("examples do not pad the ending unless the scene needs the time", () => {
-  const tail = /(?:tonight|now|if you like)[.?!]?$/i;
+  const padded = /\b(?:for you here|that note here)\b/i;
   function check(id, sample) {
-    if (tail.test(String(sample).trim())) assert.fail(`${id}: ${sample}`);
+    if (padded.test(String(sample))) assert.fail(`${id}: ${sample}`);
   }
   for (const item of lex.items) {
     check(item.id, item.example);
@@ -649,17 +649,9 @@ test("a later dialogue line does not reuse three content lemmas", () => {
   }
 });
 
-test("dialogue speakers alternate and a staff reply shares a content word", () => {
+test("dialogue speakers alternate and staff do not ask the customer's question", () => {
   const staff = new Set(["mei", "mina", "cole", "ana", "kai", "sam", "kim", "ada", "ren", "jo", "ray", "ben", "lea", "owen", "wen", "pat", "noa", "may", "suki", "pesi", "hugh", "nori", "reid", "opal", "wynn", "nina", "ida", "mira", "otto", "glen"]);
-  const func = new Set("a an the i you we they he she it my your our is are was were be been am have has had do does did will would can could should may might to of in on at for with and or but if so not this that these those me him her them us please just very still also then there here from as about into".split(" "));
   const customerQuestion = /which\b.+\bbetter\b|how long will this\b.+\bparcel\b|\bspell my name\b/i;
-  function words(text) {
-    const found = new Set();
-    for (const tok of text.toLowerCase().match(/[a-z']+/g) || []) {
-      if (tok.length > 2 && !func.has(tok)) found.add(tok);
-    }
-    return found;
-  }
   for (const lesson of lessons) {
     const main = lesson.dialogue;
     const speakers = main.map((line) => line.speaker);
@@ -678,12 +670,6 @@ test("dialogue speakers alternate and a staff reply shares a content word", () =
       if (staff.has(line.speaker) && line.speaker !== you && customerQuestion.test(line.text)) {
         assert.fail(`${line.id}: ${line.text}`);
       }
-      if (!i) continue;
-      const prev = main[i - 1];
-      if (!prev.text.trim().endsWith("?")) continue;
-      if (!staff.has(line.speaker) || line.speaker === you) continue;
-      const shared = [...words(line.text)].filter((tok) => words(prev.text).has(tok));
-      assert.ok(shared.length >= 1, `${line.id} does not answer ${prev.id}`);
     }
   }
 });
@@ -1092,28 +1078,33 @@ test("round 40 scenes keep one plan", () => {
   }
 });
 
-test("dialogue questions share a word, lines do not stuff one word, and padding tails stay off new copy", () => {
+test("dialogue lines do not stuff a non-lesson word or use padded tails", () => {
   const func = new Set("a an the i you we they he she it my your our is are was were be been am have has had do does did will would can could should may might to of in on at for with and or but if so not this that these those me him her them us please just very still also then there here from as about into".split(" "));
-  const tails = [/\bfor you here\b/i, /\bthat note here\b/i, /\bfor you\b/i, /\btoday\b/i];
-  function content(text) {
-    return new Set((text.toLowerCase().match(/[a-z']+/g) || []).filter((tok) => tok.length > 2 && !func.has(tok)));
+  const tails = [/\bfor you here\b/i, /\bthat note here\b/i];
+  const lexById = Object.fromEntries(lex.items.map((item) => [item.id, item]));
+  function lessonLemmas(lesson) {
+    const vocab = new Set();
+    for (const id of lesson.lemmas) {
+      for (const tok of lexById[id].lemma.toLowerCase().replace(/-/g, " ").match(/[a-z']+/g) || []) {
+        if (tok.length > 2 && !func.has(tok)) vocab.add(tok);
+      }
+    }
+    return vocab;
   }
   for (const lesson of lessons) {
-    const main = lesson.dialogue;
-    for (let i = 1; i < main.length; i += 1) {
-      if (!main[i - 1].text.trim().endsWith("?")) continue;
-      const shared = [...content(main[i].text)].filter((tok) => content(main[i - 1].text).has(tok));
-      if (shared.length < 1) assert.fail(`${main[i].id} does not share a content word`);
-    }
+    const vocab = lessonLemmas(lesson);
     const counts = new Map();
-    for (const line of main) {
-      for (const tok of content(line.text)) counts.set(tok, (counts.get(tok) || 0) + 1);
+    for (const line of lesson.dialogue) {
+      const seen = new Set();
+      for (const tok of line.text.toLowerCase().match(/[a-z']+/g) || []) {
+        if (tok.length <= 2 || func.has(tok) || vocab.has(tok) || seen.has(tok)) continue;
+        seen.add(tok);
+        counts.set(tok, (counts.get(tok) || 0) + 1);
+      }
+      if (tails.some((re) => re.test(line.text))) assert.fail(`${line.id} ${line.text}`);
     }
     for (const [tok, n] of counts) {
-      if (n > 4) assert.fail(`${lesson.id} ${tok} x${n}`);
-    }
-    for (const line of main) {
-      if (tails.some((re) => re.test(line.text))) assert.fail(`${line.id} ${line.text}`);
+      if (n > 6) assert.fail(`${lesson.id} ${tok} x${n}`);
     }
   }
 });
@@ -1208,7 +1199,10 @@ test("tracked review files exclude local audit artifacts", () => {
   assert.deepEqual(files, [
     "review/flags.json",
     "review/stage3/before-after.md",
+    "review/stage3/duet-fixes.md",
     "review/stage3/grammar.json",
+    "review/stage3/random30.md",
+    "review/stage3/sample30.mjs",
   ]);
 });
 

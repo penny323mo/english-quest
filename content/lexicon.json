@@ -365,9 +365,9 @@
         "the wind",
         "a strong wind"
       ],
-      "example": "A cold wind is rattling the shop windows.",
-      "exampleYue": "一陣冷風搖緊舖頭啲窗。",
-      "say": "A cold [[wˈɪnd]] is rattling the shop windows.",
+      "example": "The wind is strong tonight.",
+      "exampleYue": "今晚風好大。",
+      "say": "The [[wˈɪnd]] is strong tonight.",
       "variants": [],
       "note": "",
       "sources": [
@@ -379,7 +379,7 @@
       "senseMismatch": false,
       "cmuLemma": "wind",
       "phrase": false,
-      "audioSha256": "27487eb54f034e7ca5c88fb943a5f48974079af55d206b5503bae1700ed563f6",
+      "audioSha256": "7d734995c00d53c7f262f6faa27b30df6d7eff50d6bf822dbfa16cd5319bf1ab",
       "miniDialogue": [
         {
           "en": "The wind is strong on the pier.",
@@ -420,9 +420,9 @@
         "wind the clock",
         "wind the rope"
       ],
-      "example": "Please wind the clock in the hall.",
-      "exampleYue": "大廳嗰個鐘唔該上吓。",
-      "say": "Please [[wˈaɪnd]] the clock in the hall.",
+      "example": "Wind the clock tonight.",
+      "exampleYue": "今晚記得上鐘。",
+      "say": "[[wˈaɪnd]] the clock tonight.",
       "variants": [],
       "note": "",
       "sources": [
@@ -434,7 +434,7 @@
       "senseMismatch": false,
       "cmuLemma": "wind",
       "phrase": false,
-      "audioSha256": "dbe07d50db58e14dfc47c9f3457b2a76e5e769fa05b88aafe7522c3fa8695321",
+      "audioSha256": "f5f0cd028e7379d94dc8ca13cf0e5ed86d78a15c8640520ebd0296d557872553",
       "miniDialogue": [
         {
           "en": "How do I wind this watch?",
@@ -8929,9 +8929,9 @@
       "collocations": [
         "seat the guest"
       ],
-      "example": "We can seat you at a corner table.",
-      "exampleYue": "我哋可以安排你坐角落嗰張枱。",
-      "say": "We can seat you at a corner table.",
+      "example": "We can seat you now.",
+      "exampleYue": "而家可以安排你坐。",
+      "say": "We can seat you now.",
       "variants": [],
       "note": "同 seat 名詞同音。",
       "sources": [
@@ -8943,7 +8943,7 @@
       "senseMismatch": false,
       "cmuLemma": "seat",
       "phrase": false,
-      "audioSha256": "322745ff0f9c3e3f6ff10363ecf2c7edd1948c015a8271f02806baf7ba6290c7",
+      "audioSha256": "9485ed1d713b54c0dd9919c4512b4ca1f6ad5b32599116c5645f0c635047eb65",
       "miniDialogue": [
         {
           "en": "Can you seat the four of us together?",
@@ -12285,9 +12285,9 @@
       "collocations": [
         "right now"
       ],
-      "example": "Now, what time is it?",
+      "example": "What time is it now?",
       "exampleYue": "而家幾點？",
-      "say": "Now, what time is it?",
+      "say": "What time is it now?",
       "variants": [],
       "note": "",
       "sources": [
@@ -12299,7 +12299,7 @@
       "senseMismatch": false,
       "cmuLemma": "now",
       "phrase": false,
-      "audioSha256": "592083cd7d180786d8cc4fc8dc51914fbe394e467ea9d7e6a4769c5224cc3e7b",
+      "audioSha256": "aa5ea219b65684922a460905c176e8491f3909ff8802d2aacddf3d75338cc949",
       "miniDialogue": [
         {
           "en": "If we leave now, we can catch the tram.",
@@ -17114,12 +17114,12 @@
           "audioTextSha256": "a25c96e71612d6042d95298eaa834f22ef8a3dfccc56ce8e10d09156dd6651d4"
         },
         {
-          "en": "You can use contactless pay on this handset.",
-          "yue": "你可以用呢部機拍卡付款。",
+          "en": "Contactless pay is ready now.",
+          "yue": "而家可以拍卡付款。",
           "audio": "assets/audio/words/contactless-adj-ex2.mp3",
           "audioSlow": "assets/audio/words/contactless-adj-ex2-slow.mp3",
-          "say": "You can use contactless pay on this handset.",
-          "audioTextSha256": "d0912efb0b7cca92a57a0ec212dbc4b4ed035ff67b3baf094f3bd62a68076730"
+          "say": "Contactless pay is ready now.",
+          "audioTextSha256": "4f67ada961fc1b269747f4490794fccc3a2e55707ec34536e6a1e2c2abcc833a"
         },
         {
           "en": "The contactless reader beeped, so the payment went through.",
@@ -19504,12 +19504,12 @@
           "audioTextSha256": "ae2987ed4a1983a6596d4856f9519daa1cb4f1cb39b85ecf5520200a2ccb9a49"
         },
         {
-          "en": "Is the room ready for an early check-in?",
-          "yue": "間房可唔可以早啲入住？",
+          "en": "Is the room ready now?",
+          "yue": "間房而家預備好未？",
           "audio": "assets/audio/words/room-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/room-noun-ex2-slow.mp3",
-          "say": "Is the [[ˈɹum]] ready for an early check-in?",
-          "audioTextSha256": "37fc9ce507153c27c103f74f268ec96c1b254be92bdb615109a21c69a17bb742"
+          "say": "Is the [[ˈɹum]] ready now?",
+          "audioTextSha256": "674041a14e5734198759c18ac413d1f5e9f9d9bf4cde58b2887593c3190e8b6a"
         },
         {
           "en": "I timed how long the room lasts.",
@@ -19590,12 +19590,12 @@
           "audioTextSha256": "8faff334263e4553b038c413e334589def5e36695bd293f15fac158aac54763e"
         },
         {
-          "en": "We need a twin room facing the harbour.",
-          "yue": "我哋要一間望住海港嘅雙床房。",
+          "en": "We need a twin room tonight.",
+          "yue": "我哋今晚要一間雙床房。",
           "audio": "assets/audio/words/twin-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/twin-noun-ex2-slow.mp3",
-          "say": "We need a twin room facing the harbour.",
-          "audioTextSha256": "5ed19f989345cb62c0da567d346a32f4dbefa55a77ab873e4dd798fe67f263bd"
+          "say": "We need a twin room tonight.",
+          "audioTextSha256": "87db03e8aa1e104378bd69b03a3f5ba7a87e83fa6e2b45bb669cd89f2cfd04f5"
         },
         {
           "en": "We double-checked the twin weight.",
@@ -20924,12 +20924,12 @@
           "audioTextSha256": "bf1a8a34b0dc14bbc97c4bda404a866001931f3272a3a17cdbb10403cea63a81"
         },
         {
-          "en": "Please start the meter before we pull away.",
-          "yue": "開車之前唔該開咪錶。",
+          "en": "Please start the meter now.",
+          "yue": "唔該而家開咪錶。",
           "audio": "assets/audio/words/meter-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/meter-noun-ex2-slow.mp3",
-          "say": "Please start the [[ˈmitɚ]] before we pull away.",
-          "audioTextSha256": "8f3bff331c8df3c32f6638e245e8e682094bcff6536971baadafcad0ac55b32d"
+          "say": "Please start the [[ˈmitɚ]] now.",
+          "audioTextSha256": "4ba160540c77c45ca2ece9b53998b703286995526389c45632b0d8970ea07c16"
         },
         {
           "en": "We audited every borrowed meter.",
@@ -23084,12 +23084,12 @@
           "audioTextSha256": "9296074979540934c9fa86abbef44237ad1a19f427d40b3a7ddd3669b9c8dd2b"
         },
         {
-          "en": "The meal was delicious, especially the soup.",
-          "yue": "呢餐好味，特別係碗湯。",
+          "en": "The meal was delicious tonight.",
+          "yue": "今晚呢餐好味。",
           "audio": "assets/audio/words/delicious-adj-ex2.mp3",
           "audioSlow": "assets/audio/words/delicious-adj-ex2-slow.mp3",
-          "say": "The meal was delicious, especially the soup.",
-          "audioTextSha256": "624bb401950e5461c2ec18b628741c3534240949d40fcae2c75291866c4753c0"
+          "say": "The meal was delicious tonight.",
+          "audioTextSha256": "6c1f363541485b70981e232a76fccc04c256c873f5ed246a383893e1c736f6dc"
         },
         {
           "en": "Make the next draft more delicious.",
@@ -23581,9 +23581,9 @@
         "the bill later",
         "ask later"
       ],
-      "example": "Could we get the bill later, after dessert?",
-      "exampleYue": "甜品之後先埋單，得唔得？",
-      "say": "Could we get the bill later, after dessert?",
+      "example": "Could we get the bill later tonight?",
+      "exampleYue": "今晚可唔可以遲啲先埋單？",
+      "say": "Could we get the bill later tonight?",
       "variants": [],
       "note": "",
       "sources": [
@@ -23594,7 +23594,7 @@
       "senseMismatch": false,
       "cmuLemma": "bill",
       "phrase": true,
-      "audioSha256": "0ab3edc1593c6c66a54d8ba8a95ea8381e0d50dd283e075383586e48633ffed2",
+      "audioSha256": "c111dc1ccf991adbe864631e84df1d1d8416c0ce5754dd6ddaa12397af6970a0",
       "register": "餐廳",
       "usageNotes": "bill later 係而家未結，遲啲先叫單。",
       "pitfallsYue": "",
@@ -23604,12 +23604,12 @@
       ],
       "examples": [
         {
-          "en": "Could we get the bill later, after dessert?",
-          "yue": "甜品之後先埋單，得唔得？",
+          "en": "Could we get the bill later tonight?",
+          "yue": "今晚可唔可以遲啲先埋單？",
           "audio": "assets/audio/words/bill-later-phrase.mp3",
           "audioSlow": "assets/audio/words/bill-later-phrase-slow.mp3",
-          "say": "Could we get the bill later, after dessert?",
-          "audioTextSha256": "345a66db1166944268f4db65ddebe90162b1b4ca92a42d6b783ed88ff94e7534"
+          "say": "Could we get the [[ˈbɪl ˈleɪtɚ]] tonight?",
+          "audioTextSha256": "a4f6a9b0d7c5cecd3fb3765d6e4b3d79a719f89a0246d85b50e0f1bfd0683790"
         },
         {
           "en": "We can ask for the bill later.",
@@ -23792,12 +23792,12 @@
           "audioTextSha256": "aaed6e938c466d088c97bc67e963617ff6ed8928e88d136df7bd7a5fbbf6feed"
         },
         {
-          "en": "I left the bill beside the empty glasses.",
-          "yue": "我放低張單喺啲空杯旁邊。",
+          "en": "The bill is on the table now.",
+          "yue": "單而家喺檯上面。",
           "audio": "assets/audio/words/bill-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/bill-noun-ex2-slow.mp3",
-          "say": "I left the [[ˈbɪl]] beside the empty glasses.",
-          "audioTextSha256": "c4e310713676943b488394ed64e7231223832cc341e3084e6f3322a801e8f329"
+          "say": "The [[ˈbɪl]] is on the table now.",
+          "audioTextSha256": "8ec041db5b8c76338d30fe490e0b4c1b6b08e90b2900c891bdc7f56a053f9a69"
         },
         {
           "en": "I labelled both ends of the bill.",
@@ -23848,9 +23848,9 @@
         "this check",
         "separate checks"
       ],
-      "example": "Please split this check between us both.",
-      "exampleYue": "唔該幫我哋兩個人分開呢張單。",
-      "say": "Please split this check between us both.",
+      "example": "Please split this check tonight.",
+      "exampleYue": "今晚請分開呢張單。",
+      "say": "Please split this check tonight.",
       "variants": [],
       "note": "",
       "sources": [
@@ -23861,7 +23861,7 @@
       "senseMismatch": false,
       "cmuLemma": "check",
       "phrase": false,
-      "audioSha256": "c5fe569a7ce542d0cab965f06bee3dfb20c81884afc56b77af4d23d8bcc7933f",
+      "audioSha256": "5562f0647c7e7f4d1bbf7aea0172ea0ec5d73e838ab97eab785c604513e13d16",
       "register": "餐廳",
       "usageNotes": "呢度係埋單，唔係支票，亦唔係檢查。",
       "pitfallsYue": "",
@@ -23871,12 +23871,12 @@
       ],
       "examples": [
         {
-          "en": "This check covers the drinks and dessert.",
-          "yue": "呢張單包咗飲品同甜品。",
+          "en": "Please split this check tonight.",
+          "yue": "今晚請分開呢張單。",
           "audio": "assets/audio/words/check-noun.mp3",
           "audioSlow": "assets/audio/words/check-noun-slow.mp3",
-          "say": "This check covers the drinks and dessert.",
-          "audioTextSha256": "73caad790327308fd7254c3ef342d6fc4ce178c9e205df016f3c2a277c495efe"
+          "say": "Please split this check tonight.",
+          "audioTextSha256": "2d0e3273b56129e6553fc059bc60930d6b48e06f00be1e48dc71d5ff3d1f1b06"
         },
         {
           "en": "The check is ready for you.",
@@ -23935,9 +23935,9 @@
         "split the bill",
         "split it"
       ],
-      "example": "Shall we split the bill down the middle?",
-      "exampleYue": "我哋對分張單好唔好？",
-      "say": "Shall we split the bill down the middle?",
+      "example": "Shall we split the bill tonight?",
+      "exampleYue": "今晚我哋分單好唔好？",
+      "say": "Shall we split the bill tonight?",
       "variants": [],
       "note": "",
       "sources": [
@@ -23948,7 +23948,7 @@
       "senseMismatch": false,
       "cmuLemma": "split",
       "phrase": false,
-      "audioSha256": "547fb96f0906b11a0420cc483c8226364df852ac9a4116053416786c138a4345",
+      "audioSha256": "9e1c879141116f0c3a4290d91906d1ff49cd110a7f5f8f21604bbd2a1959de11",
       "register": "餐廳",
       "usageNotes": "Shall we split it? 係提議分單。",
       "pitfallsYue": "",
@@ -23958,12 +23958,12 @@
       ],
       "examples": [
         {
-          "en": "Can we split the bill three ways, please?",
-          "yue": "張單可唔可以分三份？",
+          "en": "Shall we split the bill tonight?",
+          "yue": "今晚我哋分單好唔好？",
           "audio": "assets/audio/words/split-verb.mp3",
           "audioSlow": "assets/audio/words/split-verb-slow.mp3",
-          "say": "Can we [[ˈsplɪt]] the bill three ways, please?",
-          "audioTextSha256": "19934fa22176244bd4c4fb50867e25e24206c5ea6e982bcd89e52dd57b8c9b99"
+          "say": "Shall we [[ˈsplɪt]] the bill tonight?",
+          "audioTextSha256": "e50ff58be57302d6b8e4f005d946bec935a703225480deb3ca191af390dfc7e0"
         },
         {
           "en": "We can split it into two checks.",
@@ -24055,12 +24055,12 @@
           "audioTextSha256": "f5fd28580119a2de89e7e8a92f8e08b82732e51262dc30fde0d47666161c9833"
         },
         {
-          "en": "Please keep the receipts separate in two piles.",
-          "yue": "兩張收據分開放兩疊就得。",
+          "en": "Please keep the receipts separate tonight.",
+          "yue": "今晚兩張收據分開就得。",
           "audio": "assets/audio/words/separate-adj-ex2.mp3",
           "audioSlow": "assets/audio/words/separate-adj-ex2-slow.mp3",
-          "say": "Please keep the receipts separate in two piles.",
-          "audioTextSha256": "ea04ada67bc6a8565d903d9c2cecac1b0b0d7707bbc790925ecf76285afbd75e"
+          "say": "Please keep the receipts separate tonight.",
+          "audioTextSha256": "4d1de88aeb4e67739f4b4e9e6a3b72e3752581a0151935222d31775198d5ce00"
         },
         {
           "en": "Make the next draft more separate.",
@@ -24415,12 +24415,12 @@
           "audioTextSha256": "5a1b4b5ef48aba34d24bf9a0837aa32e7a3b3ef529a0825512cc2ff292ebcaa4"
         },
         {
-          "en": "I brought the card machine over from the bar.",
-          "yue": "我由吧檯攞咗部卡機過嚟。",
+          "en": "The card machine is ready now.",
+          "yue": "卡機而家準備好。",
           "audio": "assets/audio/words/card-machine-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/card-machine-phrase-ex2-slow.mp3",
-          "say": "I brought the [[ˈkɑɹd məˈʃin]] over from the bar.",
-          "audioTextSha256": "0d9a87a73ffc8ca6f0f8e435121e40f48e2677a24e7f40c43515521c4b75f14c"
+          "say": "The [[ˈkɑɹd məˈʃin]] is ready now.",
+          "audioTextSha256": "cdb276503c05b831a962adfcdaf9ec6960112fac41e022802398f0ce0e54a7da"
         },
         {
           "en": "We refused a cracked card machine return.",
@@ -24502,12 +24502,12 @@
           "audioTextSha256": "a45cbaa36c4bd87d06d32fcc1b797d059f5f8cf0daf9cff0b917695789523c8c"
         },
         {
-          "en": "You can keep the change from the taxi fare.",
-          "yue": "的士車費嗰啲零錢你留低就得。",
+          "en": "You can keep the change tonight.",
+          "yue": "今晚零錢你留低就得。",
           "audio": "assets/audio/words/change-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/change-noun-ex2-slow.mp3",
-          "say": "You can keep the [[ˈtʃeɪndʒ]] from the taxi fare.",
-          "audioTextSha256": "ffe327ade3feba148aac75d47d9a44459969c9ee548fb8b0750bc89772cfe263"
+          "say": "You can keep the [[ˈtʃeɪndʒ]] tonight.",
+          "audioTextSha256": "e63dea2b49bcb80fcc3b353d548494dd4e5a768250681a7aa91c10357fd3e41b"
         },
         {
           "en": "We discounted the scratched change.",
@@ -24562,9 +24562,9 @@
         "keep the change",
         "you can keep the change"
       ],
-      "example": "Please keep the change from these drinks.",
-      "exampleYue": "呢啲飲品嘅零錢唔使找。",
-      "say": "Please keep the change from these drinks.",
+      "example": "Please keep the change tonight.",
+      "exampleYue": "今晚唔使找。",
+      "say": "Please keep the change tonight.",
       "variants": [],
       "note": "",
       "sources": [
@@ -24575,7 +24575,7 @@
       "senseMismatch": false,
       "cmuLemma": "keep",
       "phrase": true,
-      "audioSha256": "7e9b43bff6d04948bcabbc2cd4495ba2506b2e5bd294c160fb4ca6c885c6eaa4",
+      "audioSha256": "a0d9e4ddf57ee2f683852a48656a272719bf6fb975d6be1deb87f2d9300bbfd6",
       "register": "餐廳",
       "usageNotes": "即係零錢當貼士，唔使找返。",
       "pitfallsYue": "",
@@ -24585,12 +24585,12 @@
       ],
       "examples": [
         {
-          "en": "Keep the change as a small tip, please.",
-          "yue": "零錢當少少小費留低就得。",
+          "en": "Please keep the change tonight.",
+          "yue": "今晚唔使找。",
           "audio": "assets/audio/words/keep-the-change-phrase.mp3",
           "audioSlow": "assets/audio/words/keep-the-change-phrase-slow.mp3",
-          "say": "[[ˈkip ðə ˈtʃeɪndʒ]] as a small tip, please.",
-          "audioTextSha256": "90c0c7a0076e352b4cae7e7c810871bb00e50164fbec13250213f667873e6215"
+          "say": "Please [[ˈkip ðə ˈtʃeɪndʒ]] tonight.",
+          "audioTextSha256": "a5b323ddb5ae5cc41d2e8399a579817e5ad5ddbbefeb14c92588ac22fae12c8a"
         },
         {
           "en": "You can keep the change, thank you.",
@@ -24684,12 +24684,12 @@
           "audioTextSha256": "426a29b97cffdc91d5c1e63add56b6849c989a6801c30c7be22b83352721026b"
         },
         {
-          "en": "The takeaway box is packed and waiting.",
-          "yue": "外賣盒裝好，喺度等緊。",
+          "en": "The takeaway box is ready now.",
+          "yue": "外賣盒準備好喇。",
           "audio": "assets/audio/words/takeaway-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/takeaway-noun-ex2-slow.mp3",
-          "say": "The takeaway box is packed and waiting.",
-          "audioTextSha256": "1973faf81b36e9025597e69e7d4e104a263df2b450c813abcd6fed52bb9ff8f7"
+          "say": "The takeaway box is ready now.",
+          "audioTextSha256": "5fd7eda081cadb6a13314b6371a92b42eef824b152d320db368076a1a8fd9d44"
         },
         {
           "en": "The manager approved a new takeaway.",
@@ -25185,9 +25185,9 @@
         "a callback number",
         "note the callback"
       ],
-      "example": "Please write the callback number on this slip.",
-      "exampleYue": "唔該喺呢張紙仔寫低覆電號碼。",
-      "say": "Please write the callback number on this slip.",
+      "example": "Please note the callback number now.",
+      "exampleYue": "唔該而家記低覆電號碼。",
+      "say": "Please note the callback number now.",
       "variants": [],
       "note": "",
       "sources": [
@@ -25198,7 +25198,7 @@
       "senseMismatch": false,
       "cmuLemma": "callback",
       "phrase": false,
-      "audioSha256": "64fa39994348ea448419eed65db2847f36322139ca150958b58d1ab80ad7c21e",
+      "audioSha256": "16f24c7571bc7fea4c9caa82a4053dd5e231c48ce000534a6ef714a6a1b79570",
       "register": "職場",
       "usageNotes": "callback 係我哋打返去，唔係而家轉駁。",
       "pitfallsYue": "",
@@ -25208,12 +25208,12 @@
       ],
       "examples": [
         {
-          "en": "Which callback number should I leave at the desk?",
-          "yue": "我應該喺前台留低邊個覆電號碼？",
+          "en": "Please note the callback number now.",
+          "yue": "唔該而家記低覆電號碼。",
           "audio": "assets/audio/words/callback-noun.mp3",
           "audioSlow": "assets/audio/words/callback-noun-slow.mp3",
-          "say": "Which callback number should I leave at the desk?",
-          "audioTextSha256": "44243ae2ed7d4a3c8e76cba1f38d9cb8a3220f30a8a7b5520e2cff17a7fc0985"
+          "say": "Please note the callback number now.",
+          "audioTextSha256": "e3a80c70784dacc04e324fa9aafaaef4c4fe3b4d26dbc60951b8f56cc04eb71b"
         },
         {
           "en": "A callback this afternoon is convenient.",
@@ -25278,9 +25278,9 @@
         "not available",
         "available now"
       ],
-      "example": "She is not available until the shop reopens.",
-      "exampleYue": "舖頭再開，佢先有空。",
-      "say": "She is not available until the shop reopens.",
+      "example": "She is not available right now.",
+      "exampleYue": "佢而家冇空。",
+      "say": "She is not available right now.",
       "variants": [],
       "note": "",
       "sources": [
@@ -25291,7 +25291,7 @@
       "senseMismatch": false,
       "cmuLemma": "available",
       "phrase": false,
-      "audioSha256": "ce3a4d84cad58a0fc31141d9000464626227f0ab0fb814089b87ee33665cbcc4",
+      "audioSha256": "d186e70a2c0a8503eb4bea0c02725361338999945ab9bb299bc472811775db4e",
       "register": "職場",
       "usageNotes": "有空聽電話，唔係餐廳有位。",
       "pitfallsYue": "",
@@ -25301,12 +25301,12 @@
       ],
       "examples": [
         {
-          "en": "Sorry, our jeweller is not available on Monday mornings.",
-          "yue": "唔好意思，我哋個珠寶師傅星期一朝早冇空。",
+          "en": "She is not available right now.",
+          "yue": "佢而家冇空。",
           "audio": "assets/audio/words/available-adj.mp3",
           "audioSlow": "assets/audio/words/available-adj-slow.mp3",
-          "say": "Sorry, our jeweller is not available on Monday mornings.",
-          "audioTextSha256": "b784d815e7c352e62a9192cd1cfeb54881a9b263d0347cebd50b41ed517f0653"
+          "say": "She is not available right now.",
+          "audioTextSha256": "9e41d3b38c685e9c3b90589bd4eeb01b5bbfde4334f3a11b59f6396eef14451d"
         },
         {
           "en": "Is Mei available for a short call?",
@@ -27875,9 +27875,9 @@
         "very noisy",
         "a noisy room"
       ],
-      "example": "The hallway outside is very noisy after midnight.",
-      "exampleYue": "出面走廊半夜之後好嘈。",
-      "say": "The hallway outside is very noisy after midnight.",
+      "example": "The air conditioning is very noisy tonight.",
+      "exampleYue": "部冷氣今晚好嘈。",
+      "say": "The air conditioning is very noisy tonight.",
       "variants": [],
       "note": "",
       "sources": [
@@ -27888,7 +27888,7 @@
       "senseMismatch": false,
       "cmuLemma": "noisy",
       "phrase": false,
-      "audioSha256": "31c526238715728730e5ff9cd9a27b7304674c337f9cab7156c8458ad25191f8",
+      "audioSha256": "cd6bc8c5a8995819bb2475c3b911606677fdd63e89f5f00c7577bd01a2f5e35e",
       "register": "酒店",
       "usageNotes": "嘈係太大聲，唔係靜。",
       "pitfallsYue": "",
@@ -27898,12 +27898,12 @@
       ],
       "examples": [
         {
-          "en": "This little fan is too noisy beside the bed.",
-          "yue": "呢部細風扇喺床邊太嘈。",
+          "en": "The air conditioning is very noisy tonight.",
+          "yue": "部冷氣今晚好嘈。",
           "audio": "assets/audio/words/noisy-adj.mp3",
           "audioSlow": "assets/audio/words/noisy-adj-slow.mp3",
-          "say": "This little fan is too noisy beside the bed.",
-          "audioTextSha256": "6fb986d204c3a8d2592501e49e5017b201ce0d70fbcfd9dc1dc2e425a58b113a"
+          "say": "The air conditioning is very noisy tonight.",
+          "audioTextSha256": "2bf7f06271a55d49c513dae9b549b70f8820188407c80f0721659228f288258c"
         },
         {
           "en": "I barely slept in this noisy room.",
@@ -27970,9 +27970,9 @@
         "the air conditioning",
         "noisy air conditioning"
       ],
-      "example": "The air conditioning hums so loudly I can't sleep.",
-      "exampleYue": "部冷氣嗡嗡聲大到我瞓唔着。",
-      "say": "The air conditioning hums so loudly I can't sleep.",
+      "example": "The air conditioning is noisy tonight.",
+      "exampleYue": "部冷氣今晚好嘈。",
+      "say": "The air conditioning is noisy tonight.",
       "variants": [],
       "note": "",
       "sources": [
@@ -27983,7 +27983,7 @@
       "senseMismatch": false,
       "cmuLemma": "air",
       "phrase": true,
-      "audioSha256": "16b175f4f0180212429d945f2af9ebdeb33c9590bcc3cc742773b29386b19d61",
+      "audioSha256": "9a97e4496083d65711f9a3d0934f3d9b68a01f71b6a12965c3ed9a5a34cc1bb0",
       "register": "酒店",
       "usageNotes": "冷氣要兩字一齊講。",
       "pitfallsYue": "",
@@ -27993,12 +27993,12 @@
       ],
       "examples": [
         {
-          "en": "That air conditioning rattles whenever it kicks in.",
-          "yue": "嗰部冷氣一開就格格響。",
+          "en": "The air conditioning is noisy tonight.",
+          "yue": "部冷氣今晚好嘈。",
           "audio": "assets/audio/words/air-conditioning-phrase.mp3",
           "audioSlow": "assets/audio/words/air-conditioning-phrase-slow.mp3",
-          "say": "That [[ˈɛɹ kənˈdɪʃənɪŋ]] rattles whenever it kicks in.",
-          "audioTextSha256": "143a476010c5e730d91ab8351b302717b84ed76e82f21adf2bea266f53f31b49"
+          "say": "The [[ˈɛɹ kənˈdɪʃənɪŋ]] is noisy tonight.",
+          "audioTextSha256": "1ec6626394cc4095f9e27d9e77946e9dc62267b4a02476c0b20dfa8db1e0731c"
         },
         {
           "en": "Could you fix the air conditioning before we sleep?",
@@ -28148,9 +28148,9 @@
         "a warm blanket",
         "an extra blanket"
       ],
-      "example": "Please bring a warm blanket up to our room.",
-      "exampleYue": "唔該帶張暖被上嚟我哋間房。",
-      "say": "Please bring a warm blanket up to our room.",
+      "example": "Please bring a warm blanket tonight.",
+      "exampleYue": "今晚請帶張暖被上嚟。",
+      "say": "Please bring a warm blanket tonight.",
       "variants": [],
       "note": "",
       "sources": [
@@ -28161,7 +28161,7 @@
       "senseMismatch": false,
       "cmuLemma": "blanket",
       "phrase": false,
-      "audioSha256": "f5c803f3511cd2a3e72ecf7455cf6daadb66367b6b2f4c50457a36849e762ff6",
+      "audioSha256": "a0995e2471f0b4e799e74a32668e5d76133127c8d630de454649416d9114aa18",
       "register": "酒店",
       "usageNotes": "被係蓋身，開頭有 /l/。",
       "pitfallsYue": "",
@@ -28171,12 +28171,12 @@
       ],
       "examples": [
         {
-          "en": "A spare blanket is folded inside the wardrobe.",
-          "yue": "一張後備被摺好放喺衣櫃入面。",
+          "en": "Please bring a warm blanket tonight.",
+          "yue": "今晚請帶張暖被上嚟。",
           "audio": "assets/audio/words/blanket-noun.mp3",
           "audioSlow": "assets/audio/words/blanket-noun-slow.mp3",
-          "say": "A spare blanket is folded inside the wardrobe.",
-          "audioTextSha256": "8649eeefb21d3c155c01cda2ee34420b074c8c4ee59e465222bb814d4b77d70f"
+          "say": "Please bring a warm blanket tonight.",
+          "audioTextSha256": "b28e4ce3698c4ce1c5b6e3fff7d902fdfb004da41ebe18004b0ca5cf4cf978a6"
         },
         {
           "en": "The extra blanket is on the quiet bed.",
@@ -28237,9 +28237,9 @@
         "a quiet room",
         "the quiet side"
       ],
-      "example": "A quiet room is ready on the top floor.",
-      "exampleYue": "頂樓有間靜啲嘅房準備好。",
-      "say": "A quiet room is ready on the top floor.",
+      "example": "A quiet room is ready tonight.",
+      "exampleYue": "樓上有間靜啲嘅房。",
+      "say": "A quiet room is ready tonight.",
       "variants": [],
       "note": "",
       "sources": [
@@ -28250,7 +28250,7 @@
       "senseMismatch": false,
       "cmuLemma": "quiet",
       "phrase": false,
-      "audioSha256": "ef89bdb004b77b41fe7343ccbec67077f72f36fee870a244ccce2cc40d8981b7",
+      "audioSha256": "f61ba3a1a6d7a7cc1c06afd51ecde9a079b0b5713a501554d89bc7206b29ff78",
       "register": "酒店",
       "usageNotes": "靜係唔嘈。quiet 冇 /l/。",
       "pitfallsYue": "",
@@ -28260,12 +28260,12 @@
       ],
       "examples": [
         {
-          "en": "We found a quiet corner away from the street.",
-          "yue": "我哋搵到一個離街遠啲嘅靜位。",
+          "en": "A quiet room is ready tonight.",
+          "yue": "樓上有間靜啲嘅房。",
           "audio": "assets/audio/words/quiet-adj.mp3",
           "audioSlow": "assets/audio/words/quiet-adj-slow.mp3",
-          "say": "We found a quiet corner away from the street.",
-          "audioTextSha256": "79f84e78aef24afa74d57cf46389fe6ef061843feec8a0240663beca139b2eaa"
+          "say": "A quiet room is ready tonight.",
+          "audioTextSha256": "9f04c95cbfa4d0f7d48c74e05a90adfc53e0cb0f86ac8983e8c2b56f1f797fac"
         },
         {
           "en": "Could we move to a quiet room?",
@@ -29408,9 +29408,9 @@
         "mute the chat",
         "please mute"
       ],
-      "example": "Please mute the microphone while I present.",
-      "exampleYue": "我講嘅時候請靜音個咪。",
-      "say": "Please mute the microphone while I present.",
+      "example": "Please mute the microphone now.",
+      "exampleYue": "請你而家靜音個咪。",
+      "say": "Please mute the microphone now.",
       "variants": [],
       "note": "",
       "sources": [
@@ -29421,7 +29421,7 @@
       "senseMismatch": false,
       "cmuLemma": "mute",
       "phrase": false,
-      "audioSha256": "389870f818bba74dddbddb8aecd733dd4ed18a9e756f4637b8eaa2da81eb82c8",
+      "audioSha256": "278e5c3cd219b2fc9f05472724bf067f2ef634feaf5101401b8938d2fab6522e",
       "register": "職場",
       "usageNotes": "mute 係收細個咪，等其他人聽得清。",
       "pitfallsYue": "",
@@ -29431,12 +29431,12 @@
       ],
       "examples": [
         {
-          "en": "Could everyone mute until we take the vote?",
-          "yue": "投票之前可唔可以人人靜音？",
+          "en": "Please mute the microphone now.",
+          "yue": "請你而家靜音個咪。",
           "audio": "assets/audio/words/mute-verb.mp3",
           "audioSlow": "assets/audio/words/mute-verb-slow.mp3",
-          "say": "Could everyone [[ˈmjut]] until we take the vote?",
-          "audioTextSha256": "b83e840f5df8155a01fee54f2b9dffac72ba8a515a92fd7d09f696ce36232a09"
+          "say": "Please [[ˈmjut]] the microphone now.",
+          "audioTextSha256": "479dbddfe06e12bee23c6f97de430b12618ded99e592a243354bc781e7a90b90"
         },
         {
           "en": "I will mute the side chat.",
@@ -29857,9 +29857,9 @@
         "wrap up",
         "wrap up now"
       ],
-      "example": "Let's wrap up the meeting before the lunch break.",
-      "exampleYue": "食午餐之前我哋就收會。",
-      "say": "Let's wrap up the meeting before the lunch break.",
+      "example": "Let's wrap up the meeting now.",
+      "exampleYue": "我哋而家收呢個會。",
+      "say": "Let's wrap up the meeting now.",
       "variants": [],
       "note": "",
       "sources": [
@@ -29870,7 +29870,7 @@
       "senseMismatch": false,
       "cmuLemma": "wrap",
       "phrase": false,
-      "audioSha256": "80ac0ea13fcf712bc8a7ff452cf5c6438d72252805e5b1c2165795beceef8ff1",
+      "audioSha256": "aee3b1dfc0ecd336fc3500e25fc4e1a91bd47d249fb86d41a77fdfbff5f60c56",
       "register": "職場",
       "usageNotes": "wrap up 係收尾結束個會。",
       "pitfallsYue": "",
@@ -29880,12 +29880,12 @@
       ],
       "examples": [
         {
-          "en": "Shall we wrap up the meeting with a summary?",
-          "yue": "我哋總結幾句就收會，好唔好？",
+          "en": "Let's wrap up the meeting now.",
+          "yue": "我哋而家收呢個會。",
           "audio": "assets/audio/words/wrap-up-verb.mp3",
           "audioSlow": "assets/audio/words/wrap-up-verb-slow.mp3",
-          "say": "Shall we [[ˈɹæp ˈʌp]] the meeting with a summary?",
-          "audioTextSha256": "51f64171de7e1b5dfb251775eeaf1c90d2c9e94f6fdb1b2ad29221fea529a843"
+          "say": "Let's [[ˈɹæp ˈʌp]] the meeting now.",
+          "audioTextSha256": "04e6b774e4d43ad086e79402e802da1ead71b14ec864925444ccd5da7fc90bb1"
         },
         {
           "en": "We can wrap up after the update.",

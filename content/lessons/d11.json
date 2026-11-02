@@ -114,11 +114,11 @@
       "id": "d11-l6",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "Only if your balance is under five thousand dollars. Then the fee is fifty dollars a month.",
-      "glossYue": "結餘低過五千蚊先至收費，每個月五十蚊。",
+      "text": "Only if your balance is under five thousand dollars. Then it's fifty dollars a month.",
+      "glossYue": "只有結餘低過五千蚊先至收。咁就每個月五十蚊。",
       "audio": "assets/audio/lines/d11-l6.mp3",
       "audioSlow": "assets/audio/lines/d11-l6-slow.mp3",
-      "say": "Only if your balance is under five thousand dollars. Then the fee is fifty dollars a month.",
+      "say": "Only if your balance is under five thousand dollars. Then it's fifty dollars a month.",
       "hideGloss": false
     },
     {
@@ -136,11 +136,11 @@
       "id": "d11-l8",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "Your debit card will arrive by post in five days. You can register for online banking.",
-      "glossYue": "你張提款卡五日之內會郵寄到。你之後可以登記網上銀行嘅。",
+      "text": "It'll arrive by post in five days. You can register for online banking today.",
+      "glossYue": "五日之內會郵寄到。你今日可以登記網上銀行。",
       "audio": "assets/audio/lines/d11-l8.mp3",
       "audioSlow": "assets/audio/lines/d11-l8-slow.mp3",
-      "say": "Your debit card will arrive by post in five days. You can register for online banking.",
+      "say": "It'll arrive by post in five days. You can register for online banking today.",
       "hideGloss": false
     }
   ],
@@ -166,7 +166,7 @@
       "explain": "地址。"
     },
     {
-      "prompt": "Your debit card will arrive by post in five days. You can register for online banking. 呢句即係點？",
+      "prompt": "It'll arrive by post in five days. You can register for online banking today. 呢句即係點？",
       "choices": [
         "唔係身份證",
         "關於地址",
@@ -190,7 +190,7 @@
     },
     {
       "pattern": "Only if your ___ is under five thousand dollars. Then the fee is fifty dollars a month.",
-      "example": "Only if your balance is under five thousand dollars. Then the fee is fifty dollars a month.",
+      "example": "Only if your balance is under five thousand dollars. Then it's fifty dollars a month.",
       "glossYue": "結餘低過五千蚊先至收費，每個月五十蚊。",
       "answer": "balance",
       "choices": [
@@ -270,7 +270,7 @@
       {
         "partner": "Ben",
         "partnerId": "ben",
-        "line": "Only if your balance is under five thousand dollars. Then the fee is fifty dollars a month.",
+        "line": "Only if your balance is under five thousand dollars. Then it's fifty dollars a month.",
         "audio": "assets/audio/lines/d11-l6.mp3",
         "audioSlow": "assets/audio/lines/d11-l6-slow.mp3",
         "expect": "When will I get my debit card?",

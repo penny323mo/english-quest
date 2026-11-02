@@ -42,55 +42,55 @@
       "id": "t4-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could you take me to the landmark opposite the hotel corner?",
-      "glossYue": "可唔可以載我去酒店轉角對面嗰個地標？",
+      "text": "Could you take me to the landmark opposite the hotel?",
+      "glossYue": "可唔可以載我去酒店街角對面嗰個地標？",
       "audio": "assets/audio/lines/t4-l2.mp3",
       "audioSlow": "assets/audio/lines/t4-l2-slow.mp3",
-      "say": "Could you take me to the landmark opposite the hotel corner?",
+      "say": "Could you take me to the landmark opposite the hotel?",
       "hideGloss": true
     },
     {
       "id": "t4-l3",
       "speaker": "ray",
       "speakerLabel": "Ray",
-      "text": "The meter is on, and traffic is slow near the landmark.",
-      "glossYue": "咪錶開咗，地標附近咁塞，車行得好慢。",
+      "text": "The meter is on, and traffic is slow.",
+      "glossYue": "咪錶開咗，今日呢條街好塞。",
       "audio": "assets/audio/lines/t4-l3.mp3",
       "audioSlow": "assets/audio/lines/t4-l3-slow.mp3",
-      "say": "The meter is on, and traffic is slow near the landmark.",
+      "say": "The meter is on, and traffic is slow.",
       "hideGloss": false
     },
     {
       "id": "t4-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "How long will this take if we turn left here?",
-      "glossYue": "如果喺度轉左，要幾耐？",
+      "text": "How long will this take if we go straight and turn left?",
+      "glossYue": "如果直行再轉左，大概要幾耐？",
       "audio": "assets/audio/lines/t4-l4.mp3",
       "audioSlow": "assets/audio/lines/t4-l4-slow.mp3",
-      "say": "How long will this take if we turn left here?",
+      "say": "How long will this take if we go straight and turn left?",
       "hideGloss": true
     },
     {
       "id": "t4-l5",
       "speaker": "ray",
       "speakerLabel": "Ray",
-      "text": "It will take roughly ten minutes to that corner.",
-      "glossYue": "去嗰個轉角大概十分鐘。",
+      "text": "It takes about ten minutes, and I'll drop you at that corner.",
+      "glossYue": "大概十分鐘，我會喺嗰個街角落你。",
       "audio": "assets/audio/lines/t4-l5.mp3",
       "audioSlow": "assets/audio/lines/t4-l5-slow.mp3",
-      "say": "It will take roughly ten minutes to that corner.",
+      "say": "It takes about ten minutes, and I'll drop you at that corner.",
       "hideGloss": false
     },
     {
       "id": "t4-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Here is fine, and could I have a receipt please?",
-      "glossYue": "喺度落車得，可唔可以畀張收據我？",
+      "text": "Here is fine. Could I have a receipt, please?",
+      "glossYue": "呢度得喇，落車之前可唔可以畀張收據？",
       "audio": "assets/audio/lines/t4-l6.mp3",
       "audioSlow": "assets/audio/lines/t4-l6-slow.mp3",
-      "say": "Here is fine, and could I have a receipt please?",
+      "say": "Here is fine. Could I have a receipt, please?",
       "hideGloss": true
     },
     {
@@ -108,11 +108,11 @@
       "id": "t4-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Thank you, and I will walk straight from this corner to the door.",
+      "text": "Thank you. I'll walk straight from this corner to the door.",
       "glossYue": "多謝，我會由呢個街角直行去門口。",
       "audio": "assets/audio/lines/t4-l8.mp3",
       "audioSlow": "assets/audio/lines/t4-l8-slow.mp3",
-      "say": "Thank you, and I will walk straight from this corner to the door.",
+      "say": "Thank you. I'll walk straight from this corner to the door.",
       "hideGloss": false
     }
   ],
@@ -196,7 +196,7 @@
   ],
   "shadow": {
     "lineId": "t4-l4",
-    "hint": "How long will this take if we turn left here?"
+    "hint": "How long will this take if we go straight and turn left?"
   },
   "build": [
     {
@@ -240,7 +240,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Could you take me to the landmark opposite the hotel corner?",
+        "line": "Could you take me to the landmark opposite the hotel?",
         "audio": "assets/audio/lines/t4-l2.mp3",
         "audioSlow": "assets/audio/lines/t4-l2-slow.mp3",
         "expect": "The meter is on, and traffic is slow along this street today.",
@@ -254,7 +254,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "How long will this take if we turn left here?",
+        "line": "How long will this take if we go straight and turn left?",
         "audio": "assets/audio/lines/t4-l4.mp3",
         "audioSlow": "assets/audio/lines/t4-l4-slow.mp3",
         "expect": "It takes about ten minutes, and I will drop you at that corner.",
@@ -268,7 +268,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Here is fine, and could I have a receipt please?",
+        "line": "Here is fine. Could I have a receipt, please?",
         "audio": "assets/audio/lines/t4-l6.mp3",
         "audioSlow": "assets/audio/lines/t4-l6-slow.mp3",
         "expect": "Here is your receipt, and you can see the landmark on your right.",
@@ -306,7 +306,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The meter is on, and traffic is slow near the landmark.」，係咩意思？",
+      "prompt": "客人講「The meter is on, and traffic is slow.」，係咩意思？",
       "choices": [
         "收據",
         "地標",
@@ -317,7 +317,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「How long will this take if we turn left here?」，係咩意思？",
+      "prompt": "客人講「How long will this take if we go straight and turn left?」，係咩意思？",
       "choices": [
         "大概",
         "一定",

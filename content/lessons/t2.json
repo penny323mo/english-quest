@@ -55,11 +55,11 @@
       "id": "t2-l3",
       "speaker": "sam",
       "speakerLabel": "Sam",
-      "text": "Please put your liquids in the tray, and take the laptop out.",
-      "glossYue": "請將液體放上盤，電腦攞出嚟。",
+      "text": "Please put your liquids in the tray now, and take the laptop out.",
+      "glossYue": "請而家把液體放進托盤，並取出電腦。",
       "audio": "assets/audio/lines/t2-l3.mp3",
       "audioSlow": "assets/audio/lines/t2-l3-slow.mp3",
-      "say": "Please put your liquids in the tray, and take the laptop out.",
+      "say": "Please put your liquids in the tray now, and take the laptop out.",
       "hideGloss": true
     },
     {
@@ -77,11 +77,11 @@
       "id": "t2-l5",
       "speaker": "sam",
       "speakerLabel": "Sam",
-      "text": "Straight ahead. Your gate is on the left once you pass the shops.",
-      "glossYue": "直行。過咗啲舖，閘口喺左邊。",
+      "text": "Straight ahead. Your gate is on the left after the shops for you.",
+      "glossYue": "直行。閘口喺商店後面左邊。",
       "audio": "assets/audio/lines/t2-l5.mp3",
       "audioSlow": "assets/audio/lines/t2-l5-slow.mp3",
-      "say": "Straight ahead. Your gate is on the left once you pass the shops."
+      "say": "Straight ahead. Your gate is on the left after the shops for you."
     }
   ],
   "understand": [
@@ -213,7 +213,7 @@
       {
         "partner": "Sam",
         "partnerId": "sam",
-        "line": "Please put your liquids in the tray, and take the laptop out.",
+        "line": "Please put your liquids in the tray now, and take the laptop out.",
         "audio": "assets/audio/lines/t2-l3.mp3",
         "audioSlow": "assets/audio/lines/t2-l3-slow.mp3",
         "expect": "Here is my laptop.",
@@ -264,7 +264,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Please put your liquids in the tray, and take the laptop out.」，係咩意思？",
+      "prompt": "客人講「Please put your liquids in the tray now, and take the laptop out.」，係咩意思？",
       "choices": [
         "頸鏈",
         "餐牌",

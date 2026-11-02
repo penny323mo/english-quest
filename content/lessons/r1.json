@@ -52,11 +52,11 @@
       "id": "r1-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Yes, a reservation for two.",
-      "glossYue": "係，訂位兩位。",
+      "text": "Yes. A table for two, please.",
+      "glossYue": "有。兩位，唔該。",
       "audio": "assets/audio/lines/r1-l2.mp3",
       "audioSlow": "assets/audio/lines/r1-l2-slow.mp3",
-      "say": "Yes, a reservation for two."
+      "say": "Yes. [[ə ˈteɪbəl fɚ ˈtu]] , please."
     },
     {
       "id": "r1-l3",
@@ -72,21 +72,21 @@
       "id": "r1-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Yes, thank you. This window table is great.",
-      "glossYue": "係，多謝。靠窗嗰張檯好正嘅。",
+      "text": "Yes, thank you. This is great.",
+      "glossYue": "好，多謝。好好。",
       "audio": "assets/audio/lines/r1-l4.mp3",
       "audioSlow": "assets/audio/lines/r1-l4-slow.mp3",
-      "say": "Yes, thank you. This window table is great."
+      "say": "Yes, thank you. This is great."
     },
     {
       "id": "r1-l5",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Here is your table. I'll bring the menu.",
-      "glossYue": "你張檯喺度。我攞餐牌嚟。",
+      "text": "Here is your table. Please have a seat.",
+      "glossYue": "你張檯喺度。請坐。我攞餐牌嚟。",
       "audio": "assets/audio/lines/r1-l5.mp3",
       "audioSlow": "assets/audio/lines/r1-l5-slow.mp3",
-      "say": "Here is your table. I'll bring the menu."
+      "say": "Here is your table. Please have a seat."
     }
   ],
   "understand": [

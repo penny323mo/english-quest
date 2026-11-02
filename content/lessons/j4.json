@@ -57,11 +57,11 @@
       "id": "j4-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Yes. The diamond is natural and certified.",
-      "glossYue": "係。呢粒鑽石係天然，有證書。",
+      "text": "Yes. It is certified, and the papers are in this folder.",
+      "glossYue": "係。有證書，文件喺呢個文件夾。",
       "audio": "assets/audio/lines/j4-l3.mp3",
       "audioSlow": "assets/audio/lines/j4-l3-slow.mp3",
-      "say": "Yes. The diamond is natural and certified.",
+      "say": "Yes. It is [[sˈɜtəfˌaɪd]], and the papers are in this folder.",
       "hideGloss": false
     },
     {
@@ -83,7 +83,7 @@
       "glossYue": "呢個鑲托係十八開金，托住粒石好穩。",
       "audio": "assets/audio/lines/j4-l5.mp3",
       "audioSlow": "assets/audio/lines/j4-l5-slow.mp3",
-      "say": "This setting is eighteen [[kˈɛɹət]] gold, and it holds the stone well.",
+      "say": "This setting is eighteen-karat gold, and it holds the stone well.",
       "hideGloss": true
     },
     {
@@ -101,11 +101,11 @@
       "id": "j4-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The diamond is shinier than the jade when the light hits it.",
+      "text": "The diamond is shinier than the jade.",
       "glossYue": "燈光一照，鑽石亮過玉。",
       "audio": "assets/audio/lines/j4-l8.mp3",
       "audioSlow": "assets/audio/lines/j4-l8-slow.mp3",
-      "say": "The diamond is shinier than the jade when the light hits it.",
+      "say": "The diamond is shinier than the jade.",
       "hideGloss": false
     }
   ],
@@ -300,7 +300,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The diamond is shinier than the jade when the light hits it.」，係咩意思？",
+      "prompt": "客人講「The diamond is shinier than the jade.」，係咩意思？",
       "choices": [
         "鏡",
         "折扣",
