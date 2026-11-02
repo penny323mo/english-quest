@@ -21,6 +21,8 @@ else {
     fail("dist/index.html source stamp does not match the current source and content");
   }
   if (!html.includes("eq-sw-kill-v1")) fail("dist/index.html is missing the service worker kill-switch");
+  if (!html.includes("eq-skip-claim")) fail("dist/index.html does not skip the post-kill claim reload");
+  if (!html.includes("eq-ready")) fail("dist/index.html does not hide the shell until ready");
   if (!html.includes('content="only light"')) fail("dist/index.html does not force light color-scheme");
 }
 

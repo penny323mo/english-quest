@@ -1,6 +1,6 @@
 /// <reference lib="webworker" />
 import { cleanupOutdatedCaches, precacheAndRoute } from "workbox-precaching";
-import { clientsClaim } from "workbox-core";
+import { cacheNames, clientsClaim } from "workbox-core";
 import { registerRoute } from "workbox-routing";
 import { NetworkOnly } from "workbox-strategies";
 import type { PrecacheEntry } from "workbox-precaching";
@@ -29,24 +29,18 @@ registerRoute(
   new NetworkOnly(),
 );
 
+self.addEventListener("message", (event: ExtendableMessageEvent) => {
+  if (event.data?.type !== "eq-ping") return;
+  event.ports[0]?.postMessage({ eq: 2 });
+});
+
 self.addEventListener("activate", (event) => {
   event.waitUntil((async () => {
+    await self.clients.claim();
+    const keep = cacheNames.precache;
     const keys = await caches.keys();
-    await Promise.all(
-      keys
-        .filter((key) => !key.includes("precache"))
-        .map((key) => caches.delete(key)),
-    );
-    const windows = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
-    await Promise.all(windows.map(async (client) => {
-      const url = new URL(client.url);
-      if (url.searchParams.get("eqfresh") === "1") return;
-      url.searchParams.set("eqfresh", "1");
-      try {
-        await client.navigate(url.toString());
-      } catch {
-        // A client that cannot navigate still gets the page kill-switch on the next open.
-      }
-    }));
+    await Promise.all(keys.filter((key) => key !== keep).map((key) => caches.delete(key)));
+    // The fix-55 page reloads itself on controllerchange. A second
+    // client.navigate here was the ?eqfresh=1 hop.
   })());
 });

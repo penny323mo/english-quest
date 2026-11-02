@@ -14,12 +14,19 @@ if (!root) throw new Error("missing root");
 
 const ready = window.__eqKill ?? Promise.resolve();
 void ready.then(() => {
-  // Reload once when a newer worker takes over a page that already had one.
-  // The first install (no previous controller) must not reload in a loop.
+  // Ignore the claim that follows this load. A later update still reloads once.
+  let skipUntil = 0;
+  try {
+    if (sessionStorage.getItem("eq-skip-claim") === "1") skipUntil = Date.now() + 2000;
+    sessionStorage.removeItem("eq-skip-claim");
+  } catch {
+    skipUntil = 0;
+  }
   if ("serviceWorker" in navigator) {
     let refreshing = false;
     const hadController = Boolean(navigator.serviceWorker.controller);
     navigator.serviceWorker.addEventListener("controllerchange", () => {
+      if (Date.now() < skipUntil) return;
       if (refreshing || !hadController) return;
       refreshing = true;
       window.location.reload();
@@ -37,4 +44,5 @@ void ready.then(() => {
       <App />
     </StrictMode>,
   );
+  document.documentElement.classList.add("eq-ready");
 });
