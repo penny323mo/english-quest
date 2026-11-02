@@ -123,11 +123,11 @@
       "id": "j16-l7",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Plain is fine. Can I check the engraving text before you cut it?",
-      "glossYue": "普通字體就得。刻之前我可唔可以核對段字？",
+      "text": "Plain is fine. Can I check the engraving text before you engrave it?",
+      "glossYue": "普通字體就得。刻之前可唔可以核對段字？",
       "audio": "assets/audio/lines/j16-l7.mp3",
       "audioSlow": "assets/audio/lines/j16-l7-slow.mp3",
-      "say": "Plain is fine. Can I check the engraving text before you cut it?",
+      "say": "Plain is fine. Can I check the engraving text before you engrave it?",
       "hideGloss": false
     },
     {
@@ -272,7 +272,7 @@
         "line": "A plain font is free. A script font is fifty dollars extra.",
         "audio": "assets/audio/lines/j16-l6.mp3",
         "audioSlow": "assets/audio/lines/j16-l6-slow.mp3",
-        "expect": "Plain is fine. Can I check the engraving text before you cut it?",
+        "expect": "Plain is fine. Can I check the engraving text before you engrave it?",
         "keywords": [
           "plain",
           "fine"

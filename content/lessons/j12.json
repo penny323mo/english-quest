@@ -55,11 +55,11 @@
       "id": "j12-l3",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Let me describe the gold piece.",
-      "glossYue": "我描述吓呢件金飾。",
+      "text": "I'll describe the similar gold bracelet we have.",
+      "glossYue": "我描述吓我哋有嘅類似金手鏈。",
       "audio": "assets/audio/lines/j12-l3.mp3",
       "audioSlow": "assets/audio/lines/j12-l3-slow.mp3",
-      "say": "Let me describe the gold piece.",
+      "say": "I'll describe the similar gold bracelet we have.",
       "hideGloss": true
     },
     {
@@ -77,11 +77,11 @@
       "id": "j12-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm.",
+      "text": "I'm calling to ask about stock, and I'll collect the bracelet tomorrow after you confirm.",
       "glossYue": "我打嚟問存貨，你確認之後我聽日嚟取條手鏈。",
       "audio": "assets/audio/lines/j12-l5.mp3",
       "audioSlow": "assets/audio/lines/j12-l5-slow.mp3",
-      "say": "I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm.",
+      "say": "I'm calling to ask about stock, and I'll collect the bracelet tomorrow after you confirm.",
       "hideGloss": false
     },
     {
@@ -89,7 +89,7 @@
       "speaker": "kai",
       "speakerLabel": "Kai",
       "text": "Our shop hours are on the door, and the address is beside the market on this street.",
-      "glossYue": "舖頭時間貼喺門上面，地址就喺呢條街市旁邊。",
+      "glossYue": "舖頭時間貼喺門上面，地址就喺呢條街、街市旁邊。",
       "audio": "assets/audio/lines/j12-l6.mp3",
       "audioSlow": "assets/audio/lines/j12-l6-slow.mp3",
       "say": "Our shop hours are on the door, and the address is beside the market on this street.",
@@ -187,7 +187,7 @@
   ],
   "shadow": {
     "lineId": "j12-l5",
-    "hint": "I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm."
+    "hint": "I'm calling to ask about stock, and I'll collect the bracelet tomorrow after you confirm."
   },
   "build": [
     {
@@ -241,7 +241,7 @@
       {
         "partner": "Kai",
         "partnerId": "kai",
-        "line": "Let me describe the gold piece.",
+        "line": "I'll describe the similar gold bracelet we have.",
         "audio": "assets/audio/lines/j12-l3.mp3",
         "audioSlow": "assets/audio/lines/j12-l3-slow.mp3",
         "expect": "Text me when it's ready, and confirm the opening hours at the shop.",
@@ -303,7 +303,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm.」，collect 係咩意思？",
+      "prompt": "客人講「I'm calling to ask about stock, and I'll collect the bracelet tomorrow after you confirm.」，collect 係咩意思？",
       "choices": [
         "取貨",
         "預留",

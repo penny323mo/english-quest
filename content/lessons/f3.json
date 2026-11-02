@@ -41,21 +41,21 @@
       "id": "f3-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Hello there. How much is this one?",
-      "glossYue": "你好。呢一件幾多錢？",
+      "text": "Hello there. How much is this?",
+      "glossYue": "你好。呢個幾多錢？",
       "audio": "assets/audio/lines/f3-l1.mp3",
       "audioSlow": "assets/audio/lines/f3-l1-slow.mp3",
-      "say": "Hello there. How much is this one?"
+      "say": "Hello there. How much is this?"
     },
     {
       "id": "f3-l2",
       "speaker": "ling",
       "speakerLabel": "{{learner}}",
-      "text": "This one is ten dollars.",
-      "glossYue": "呢一件係十蚊。",
+      "text": "This is ten dollars.",
+      "glossYue": "呢個係十蚊。",
       "audio": "assets/audio/lines/f3-l2.mp3",
       "audioSlow": "assets/audio/lines/f3-l2-slow.mp3",
-      "say": "This one is ten dollars."
+      "say": "This is ten dollars."
     },
     {
       "id": "f3-l3",
@@ -157,7 +157,7 @@
   ],
   "shadow": {
     "lineId": "f3-l1",
-    "hint": "Hello there. How much is this one?"
+    "hint": "Hello there. How much is this?"
   },
   "build": [
     {
@@ -195,10 +195,10 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "Hello there. How much is this one?",
+        "line": "Hello there. How much is this?",
         "audio": "assets/audio/lines/f3-l1.mp3",
         "audioSlow": "assets/audio/lines/f3-l1-slow.mp3",
-        "expect": "This one is ten dollars.",
+        "expect": "This is ten dollars.",
         "keywords": [
           "ten",
           "dollar"

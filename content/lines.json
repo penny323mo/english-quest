@@ -53,21 +53,21 @@
     "id": "f2-l1",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "Hello. Good morning. Yes, I'm Mei.",
-    "glossYue": "你好。早晨。我係 Mei。",
+    "text": "Good morning. I'm Mei.",
+    "glossYue": "早晨。我係 Mei。",
     "audio": "assets/audio/lines/f2-l1.mp3",
     "audioSlow": "assets/audio/lines/f2-l1-slow.mp3",
-    "say": "Hello. Good morning. Yes, I'm Mei."
+    "say": "Good morning. I'm Mei."
   },
   {
     "id": "f2-l2",
     "speaker": "ling",
     "speakerLabel": "{{learner}}",
-    "text": "Hello. Good morning. My name is {{learner}}.",
-    "glossYue": "你好。早晨。我叫 {{learner}}。",
+    "text": "Good morning. My name is {{learner}}.",
+    "glossYue": "早晨。我叫 {{learner}}。",
     "audio": "assets/audio/lines/f2-l2.mp3",
     "audioSlow": "assets/audio/lines/f2-l2-slow.mp3",
-    "say": "Hello. Good morning. My name is {{learner}}."
+    "say": "Good morning. My name is {{learner}}."
   },
   {
     "id": "f2-l3",
@@ -103,21 +103,21 @@
     "id": "f3-l1",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "Hello there. How much is this one?",
-    "glossYue": "你好。呢一件幾多錢？",
+    "text": "Hello there. How much is this?",
+    "glossYue": "你好。呢個幾多錢？",
     "audio": "assets/audio/lines/f3-l1.mp3",
     "audioSlow": "assets/audio/lines/f3-l1-slow.mp3",
-    "say": "Hello there. How much is this one?"
+    "say": "Hello there. How much is this?"
   },
   {
     "id": "f3-l2",
     "speaker": "ling",
     "speakerLabel": "{{learner}}",
-    "text": "This one is ten dollars.",
-    "glossYue": "呢一件係十蚊。",
+    "text": "This is ten dollars.",
+    "glossYue": "呢個係十蚊。",
     "audio": "assets/audio/lines/f3-l2.mp3",
     "audioSlow": "assets/audio/lines/f3-l2-slow.mp3",
-    "say": "This one is ten dollars."
+    "say": "This is ten dollars."
   },
   {
     "id": "f3-l3",
@@ -334,7 +334,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "May I see these earrings, and the matching necklace too?",
-    "glossYue": "可唔可以睇吓呢對耳環，同埋條頸鏈？",
+    "glossYue": "可唔可以睇吓呢對耳環，同埋條襯嘅頸鏈？",
     "audio": "assets/audio/lines/j3-l4.mp3",
     "audioSlow": "assets/audio/lines/j3-l4-slow.mp3",
     "say": "May I see these earrings, and the matching necklace too?"
@@ -343,11 +343,11 @@
     "id": "j3-l5",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "Of course. This pair is beautiful, and I can show it.",
-    "glossYue": "當然。呢對好靚，我可以畀你睇。",
+    "text": "Of course. This pair is beautiful. I'll show it to you.",
+    "glossYue": "當然。呢對好靚。我畀你睇。",
     "audio": "assets/audio/lines/j3-l5.mp3",
     "audioSlow": "assets/audio/lines/j3-l5-slow.mp3",
-    "say": "Of course. This pair is beautiful, and I can show it."
+    "say": "Of course. This pair is beautiful. I'll show it to you."
   },
   {
     "id": "j4-l1",
@@ -363,28 +363,28 @@
     "id": "j4-l2",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Is the diamond natural, or is it treated in a lab?",
-    "glossYue": "呢粒鑽石係咪天然，定係實驗室處理過？",
+    "text": "Is this diamond natural, or is it lab-grown?",
+    "glossYue": "呢粒鑽石係天然，定係實驗室培育？",
     "audio": "assets/audio/lines/j4-l2.mp3",
     "audioSlow": "assets/audio/lines/j4-l2-slow.mp3",
-    "say": "Is the [[dˈaɪmənd]] [[nˈætʃɚəl]], or is it treated in a lab?"
+    "say": "Is this [[dˈaɪmənd]] [[nˈætʃɚəl]], or is it lab-grown?"
   },
   {
     "id": "j4-l3",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "Yes. It's certified, and the papers are in this folder.",
-    "glossYue": "係。有證書，文件喺呢個文件夾。",
+    "text": "It's certified, and the papers are in this folder.",
+    "glossYue": "有證書，同埋文件喺呢個文件夾。",
     "audio": "assets/audio/lines/j4-l3.mp3",
     "audioSlow": "assets/audio/lines/j4-l3-slow.mp3",
-    "say": "Yes. It is [[sˈɜtəfˌaɪd]], and the papers are in this folder."
+    "say": "It's [[sˈɜtəfˌaɪd]], and the papers are in this folder."
   },
   {
     "id": "j4-l4",
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "I like this jade, and the color is calm and even.",
-    "glossYue": "我鍾意呢件玉，顏色好平穩。",
+    "glossYue": "我鍾意呢件玉，同埋顏色平穩又均勻。",
     "audio": "assets/audio/lines/j4-l4.mp3",
     "audioSlow": "assets/audio/lines/j4-l4-slow.mp3",
     "say": "I like this jade, and the color is calm and even."
@@ -423,11 +423,11 @@
     "id": "j5-l3",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "This size is a little tight, and it pinches when I close my hand.",
-    "glossYue": "呢個碼有啲緊，我握拳會夾。",
+    "text": "This size is a little tight. It pinches when you close your hand.",
+    "glossYue": "呢個碼有啲緊。你握拳嗰陣會夾。",
     "audio": "assets/audio/lines/j5-l3.mp3",
     "audioSlow": "assets/audio/lines/j5-l3-slow.mp3",
-    "say": "This size is a little tight, and it pinches when I close my hand."
+    "say": "This size is a little tight. It pinches when you close your hand."
   },
   {
     "id": "j5-l4",
@@ -463,11 +463,11 @@
     "id": "j6-l2",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "This fine piece is on sale today.",
-    "glossYue": "呢件精品今日減價。",
+    "text": "This piece is on sale today.",
+    "glossYue": "呢件今日減價。",
     "audio": "assets/audio/lines/j6-l2.mp3",
     "audioSlow": "assets/audio/lines/j6-l2-slow.mp3",
-    "say": "This fine piece is on sale today."
+    "say": "This piece is on sale today."
   },
   {
     "id": "j6-l3",
@@ -493,21 +493,21 @@
     "id": "j6-l5",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "This price is within my budget, so I take it.",
-    "glossYue": "呢個價錢喺我預算內，我攞。",
+    "text": "This is within my budget, so I'll take it.",
+    "glossYue": "呢個喺我預算內，所以我要。",
     "audio": "assets/audio/lines/j6-l5.mp3",
     "audioSlow": "assets/audio/lines/j6-l5-slow.mp3",
-    "say": "This price is within my budget, so I take it."
+    "say": "This is within my budget, so I'll take it."
   },
   {
     "id": "j7-l1",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "The total is ready, and I can read it so you can check.",
-    "glossYue": "總數計好，我可以讀出嚟畀你對一對。",
+    "text": "Here's your total. Let me read it out so you can check.",
+    "glossYue": "總數喺度。我讀出嚟畀你對一對。",
     "audio": "assets/audio/lines/j7-l1.mp3",
     "audioSlow": "assets/audio/lines/j7-l1-slow.mp3",
-    "say": "The total is ready, and I can read it so you can check."
+    "say": "Here's your total. Let me read it out so you can check."
   },
   {
     "id": "j7-l2",
@@ -524,7 +524,7 @@
     "speaker": "mei",
     "speakerLabel": "Mei",
     "text": "This purchase is tax-free for you, so you can claim the tax.",
-    "glossYue": "呢單係免稅，你可以申返稅。",
+    "glossYue": "呢單係免稅，所以你可以申返稅。",
     "audio": "assets/audio/lines/j7-l3.mp3",
     "audioSlow": "assets/audio/lines/j7-l3-slow.mp3",
     "say": "This purchase is tax-free for you, so you can claim the tax."
@@ -534,7 +534,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "Here is my passport, so you can stamp the tax-free form.",
-    "glossYue": "護照喺度，你可以喺退稅表蓋印。",
+    "glossYue": "護照喺度，所以你可以喺退稅表蓋印。",
     "audio": "assets/audio/lines/j7-l4.mp3",
     "audioSlow": "assets/audio/lines/j7-l4-slow.mp3",
     "say": "Here is my passport, so you can stamp the tax-free form."
@@ -1314,7 +1314,7 @@
     "speaker": "mei",
     "speakerLabel": "Mei",
     "text": "The gold is heavier than the silver, and you can feel it.",
-    "glossYue": "金重過銀，你隻手感覺到。",
+    "glossYue": "金重過銀，你感覺到。",
     "audio": "assets/audio/lines/j4-l7.mp3",
     "audioSlow": "assets/audio/lines/j4-l7-slow.mp3",
     "say": "The gold is heavier than the silver, and you can feel it."
@@ -1343,11 +1343,11 @@
     "id": "j6-l6",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "This one is more expensive because the center stone is larger.",
+    "text": "This piece is more expensive because the center stone is larger.",
     "glossYue": "呢件貴啲，因為中間粒石大啲。",
     "audio": "assets/audio/lines/j6-l6.mp3",
     "audioSlow": "assets/audio/lines/j6-l6-slow.mp3",
-    "say": "This one is more expensive because the center stone is larger."
+    "say": "This piece is more expensive because the center stone is larger."
   },
   {
     "id": "j6-l7",
@@ -1364,7 +1364,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "The price is worth it, because the finish lasts for years.",
-    "glossYue": "呢個價錢抵，因為個面可以耐用。",
+    "glossYue": "呢個價錢抵，因為個面可以用好多年。",
     "audio": "assets/audio/lines/j6-l8.mp3",
     "audioSlow": "assets/audio/lines/j6-l8-slow.mp3",
     "say": "The price is worth it, because the finish lasts for years."
@@ -1463,11 +1463,11 @@
     "id": "t5-l2",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Could you help me report it because my passport was inside.",
-    "glossYue": "可唔可以而家幫我報失，因為護照喺銀包入面？",
+    "text": "Can you help me report it? My passport was inside.",
+    "glossYue": "可唔可以幫我報失？我本護照喺入面。",
     "audio": "assets/audio/lines/t5-l2.mp3",
     "audioSlow": "assets/audio/lines/t5-l2-slow.mp3",
-    "say": "Could you help me report it because my passport was inside."
+    "say": "Can you help me report it? My passport was inside."
   },
   {
     "id": "t5-l3",
@@ -1483,11 +1483,11 @@
     "id": "t5-l4",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "I think the wallet was stolen.",
-    "glossYue": "我諗個銀包畀人偷咗。",
+    "text": "I think that the wallet was stolen.",
+    "glossYue": "我諗個銀包係畀人偷咗。",
     "audio": "assets/audio/lines/t5-l4.mp3",
     "audioSlow": "assets/audio/lines/t5-l4-slow.mp3",
-    "say": "I think the wallet was stolen."
+    "say": "I think that the wallet was stolen."
   },
   {
     "id": "t5-l5",
@@ -1553,11 +1553,11 @@
     "id": "j9-l3",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "I'm sorry that we caused trouble, so I can see you're upset.",
-    "glossYue": "對唔住我哋造成麻煩，所以我睇到你唔開心。",
+    "text": "I'm sorry that we caused trouble, and I can see you're upset.",
+    "glossYue": "對唔住我哋造成麻煩，我睇到你唔開心。",
     "audio": "assets/audio/lines/j9-l3.mp3",
     "audioSlow": "assets/audio/lines/j9-l3-slow.mp3",
-    "say": "I'm sorry that we caused trouble, so I can see you're upset."
+    "say": "I'm sorry that we caused trouble, and I can see you're upset."
   },
   {
     "id": "j9-l4",
@@ -1594,7 +1594,7 @@
     "speaker": "mei",
     "speakerLabel": "Mei",
     "text": "Would it help if we gave you a replacement while the workshop repairs yours?",
-    "glossYue": "如果我哋畀件新嘅你，工場修緊你嗰條，會唔會好啲？",
+    "glossYue": "如果工場修緊你嗰件，畀件暫時頂住，會唔會好啲？",
     "audio": "assets/audio/lines/j9-l7.mp3",
     "audioSlow": "assets/audio/lines/j9-l7-slow.mp3",
     "say": "Would it help if we gave you a replacement while the workshop repairs yours?"
@@ -1953,11 +1953,11 @@
     "id": "j10-l3",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "Yes. This set is popular, and you can leave it out.",
+    "text": "Yes. This set is popular, and you don't have to take it.",
     "glossYue": "係。呢套好多人揀，你可以唔要。",
     "audio": "assets/audio/lines/j10-l3.mp3",
     "audioSlow": "assets/audio/lines/j10-l3-slow.mp3",
-    "say": "Yes. This set is popular, and you can leave it out."
+    "say": "Yes. This set is popular, and you don't have to take it."
   },
   {
     "id": "j10-l4",
@@ -1983,11 +1983,11 @@
     "id": "j10-l6",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Please just recommend one popular option.",
-    "glossYue": "請淨係推薦一個多人揀嘅選擇。",
+    "text": "Please recommend your most popular option.",
+    "glossYue": "請推薦你哋最多人揀嘅選擇。",
     "audio": "assets/audio/lines/j10-l6.mp3",
     "audioSlow": "assets/audio/lines/j10-l6-slow.mp3",
-    "say": "Please just recommend one popular option."
+    "say": "Please recommend your most popular option."
   },
   {
     "id": "j10-l7",
@@ -2593,11 +2593,11 @@
     "id": "j12-l3",
     "speaker": "kai",
     "speakerLabel": "Kai",
-    "text": "Let me describe the gold piece.",
-    "glossYue": "我描述吓呢件金飾。",
+    "text": "I'll describe the similar gold bracelet we have.",
+    "glossYue": "我描述吓我哋有嘅類似金手鏈。",
     "audio": "assets/audio/lines/j12-l3.mp3",
     "audioSlow": "assets/audio/lines/j12-l3-slow.mp3",
-    "say": "Let me describe the gold piece."
+    "say": "I'll describe the similar gold bracelet we have."
   },
   {
     "id": "j12-l4",
@@ -2613,18 +2613,18 @@
     "id": "j12-l5",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm.",
+    "text": "I'm calling to ask about stock, and I'll collect the bracelet tomorrow after you confirm.",
     "glossYue": "我打嚟問存貨，你確認之後我聽日嚟取條手鏈。",
     "audio": "assets/audio/lines/j12-l5.mp3",
     "audioSlow": "assets/audio/lines/j12-l5-slow.mp3",
-    "say": "I have called to ask about stock, and I will collect the bracelet tomorrow after you confirm."
+    "say": "I'm calling to ask about stock, and I'll collect the bracelet tomorrow after you confirm."
   },
   {
     "id": "j12-l6",
     "speaker": "kai",
     "speakerLabel": "Kai",
     "text": "Our shop hours are on the door, and the address is beside the market on this street.",
-    "glossYue": "舖頭時間貼喺門上面，地址就喺呢條街市旁邊。",
+    "glossYue": "舖頭時間貼喺門上面，地址就喺呢條街、街市旁邊。",
     "audio": "assets/audio/lines/j12-l6.mp3",
     "audioSlow": "assets/audio/lines/j12-l6-slow.mp3",
     "say": "Our shop hours are on the door, and the address is beside the market on this street."
@@ -2764,7 +2764,7 @@
     "speaker": "nia",
     "speakerLabel": "Nia",
     "text": "I prefer it understated, and I'd keep this gold piece as a quiet investment.",
-    "glossYue": "我偏好低調，我會當呢件金飾係一份私人保值。",
+    "glossYue": "我偏好低調，我會當呢件金飾係低調保值。",
     "audio": "assets/audio/lines/j11-l4.mp3",
     "audioSlow": "assets/audio/lines/j11-l4-slow.mp3",
     "say": "I prefer it understated, and I'd keep this gold piece as a quiet investment."
@@ -2783,11 +2783,11 @@
     "id": "j11-l6",
     "speaker": "ada",
     "speakerLabel": "Ada",
-    "text": "Yes. I can fit that whole plan in next month.",
-    "glossYue": "可以。我趕得切下個月嗰個計劃。",
+    "text": "Yes. I can fit the whole plan into next month.",
+    "glossYue": "可以。我趕得切下個月成個計劃。",
     "audio": "assets/audio/lines/j11-l6.mp3",
     "audioSlow": "assets/audio/lines/j11-l6-slow.mp3",
-    "say": "Yes. I can fit that whole plan in next month."
+    "say": "Yes. I can fit the whole plan into next month."
   },
   {
     "id": "j11-l7",
@@ -2894,7 +2894,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "Good evening. A table for Mei, please. Is a window seat free tonight?",
-    "glossYue": "你好。我想幫 Mei 訂檯。今晚仲有冇靠窗位？",
+    "glossYue": "晚安。訂 Mei 個名，唔該。今晚仲有冇靠窗位？",
     "audio": "assets/audio/lines/r6-l1.mp3",
     "audioSlow": "assets/audio/lines/r6-l1-slow.mp3",
     "say": "Good evening. A table for Mei, please. Is a window seat free tonight?"
@@ -3634,11 +3634,11 @@
     "id": "d6-l6",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Can I take that one tablet after meals if it's safer?",
-    "glossYue": "如果安全啲，我可唔可以飯後食嗰一粒藥片？",
+    "text": "Can I take that tablet after meals if it's safer?",
+    "glossYue": "如果安全啲，我可唔可以飯後食嗰粒藥片？",
     "audio": "assets/audio/lines/d6-l6.mp3",
     "audioSlow": "assets/audio/lines/d6-l6-slow.mp3",
-    "say": "Can I take that one tablet after meals if it's safer?"
+    "say": "Can I take that tablet after meals if it's safer?"
   },
   {
     "id": "d6-l7",
@@ -3855,7 +3855,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "I will settle by phone, because coins are harder when I leave.",
-    "glossYue": "我會用電話付，因為銀仔難帶。",
+    "glossYue": "我會用電話付，因為我離開嗰陣銀仔難帶。",
     "audio": "assets/audio/lines/j7-l9.mp3",
     "audioSlow": "assets/audio/lines/j7-l9-slow.mp3",
     "say": "I will settle by phone, because coins are harder when I leave."
@@ -4594,11 +4594,11 @@
     "id": "j15-l2",
     "speaker": "ida",
     "speakerLabel": "Ida",
-    "text": "A tight ring needs one larger opening.",
-    "glossYue": "太緊嘅戒指要開大一個口。",
+    "text": "We can size the ring up for you.",
+    "glossYue": "我哋可以幫你將戒指改大。",
     "audio": "assets/audio/lines/j15-l2.mp3",
     "audioSlow": "assets/audio/lines/j15-l2-slow.mp3",
-    "say": "A tight ring needs one larger opening."
+    "say": "We can size the ring up for you."
   },
   {
     "id": "j15-l3",
@@ -4614,11 +4614,11 @@
     "id": "j15-l4",
     "speaker": "ida",
     "speakerLabel": "Ida",
-    "text": "We can make the ring half a size larger, and you collect it, Saturday at four.",
-    "glossYue": "戒指可以改大半碼，星期六四點可以取。",
+    "text": "We can make the ring half a size larger, and you can collect it on Saturday at four.",
+    "glossYue": "戒指可以改大半碼，你可以星期六四點嚟取。",
     "audio": "assets/audio/lines/j15-l4.mp3",
     "audioSlow": "assets/audio/lines/j15-l4-slow.mp3",
-    "say": "We can make the ring half a size larger, and you collect it, Saturday at four."
+    "say": "We can make the ring half a size larger, and you can collect it on Saturday at four."
   },
   {
     "id": "j15-l5",
@@ -4774,11 +4774,11 @@
     "id": "d9-l4",
     "speaker": "ben",
     "speakerLabel": "Ben",
-    "text": "We can freeze this one card right now, and the new card arrives on Friday.",
-    "glossYue": "我哋而家可以凍結呢一張卡，新卡星期五到。",
+    "text": "We can freeze your card right now, and the new card arrives on Friday.",
+    "glossYue": "我哋而家可以凍結你張卡，新卡星期五到。",
     "audio": "assets/audio/lines/d9-l4.mp3",
     "audioSlow": "assets/audio/lines/d9-l4-slow.mp3",
-    "say": "We can freeze this one card right now, and the new card arrives on Friday."
+    "say": "We can freeze your card right now, and the new card arrives on Friday."
   },
   {
     "id": "d9-l5",
@@ -5044,11 +5044,11 @@
     "id": "j16-l7",
     "speaker": "gus",
     "speakerLabel": "Gus",
-    "text": "Plain is fine. Can I check the engraving text before you cut it?",
-    "glossYue": "普通字體就得。刻之前我可唔可以核對段字？",
+    "text": "Plain is fine. Can I check the engraving text before you engrave it?",
+    "glossYue": "普通字體就得。刻之前可唔可以核對段字？",
     "audio": "assets/audio/lines/j16-l7.mp3",
     "audioSlow": "assets/audio/lines/j16-l7-slow.mp3",
-    "say": "Plain is fine. Can I check the engraving text before you cut it?"
+    "say": "Plain is fine. Can I check the engraving text before you engrave it?"
   },
   {
     "id": "j16-l8",
@@ -5104,11 +5104,11 @@
     "id": "t13-l5",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Will this one tablet make me feel drowsy? I have to drive home.",
-    "glossYue": "呢一粒會唔會令人好眼瞓？我遲啲要揸車返屋企。",
+    "text": "Will this tablet make me feel drowsy? I have to drive home.",
+    "glossYue": "呢粒會唔會令我眼瞓？我要揸車返屋企。",
     "audio": "assets/audio/lines/t13-l5.mp3",
     "audioSlow": "assets/audio/lines/t13-l5-slow.mp3",
-    "say": "Will this one tablet make me feel drowsy? I have to drive home."
+    "say": "Will this tablet make me feel drowsy? I have to drive home."
   },
   {
     "id": "t13-l6",
@@ -5264,21 +5264,21 @@
     "id": "j17-l5",
     "speaker": "gus",
     "speakerLabel": "Gus",
-    "text": "I'll take this shorter one. How should I look after the pearl strand back at home?",
-    "glossYue": "我要呢條短啲嘅。返到屋企點樣照顧呢串珍珠？",
+    "text": "I'll take this shorter strand. How should I look after the pearls at home?",
+    "glossYue": "我要呢條短啲。返到屋企點照顧呢啲珍珠？",
     "audio": "assets/audio/lines/j17-l5.mp3",
     "audioSlow": "assets/audio/lines/j17-l5-slow.mp3",
-    "say": "I'll take this shorter one. How should I look after the pearl strand back at home?"
+    "say": "I'll take this shorter strand. How should I look after the pearls at home?"
   },
   {
     "id": "j17-l6",
     "speaker": "ida",
     "speakerLabel": "Ida",
-    "text": "Wipe the pearl, then put perfume on.",
-    "glossYue": "先抹乾珍珠，再搽香水。",
+    "text": "Put perfume on first, then wipe the pearls after you wear them.",
+    "glossYue": "先搽香水，戴完再抹珍珠。",
     "audio": "assets/audio/lines/j17-l6.mp3",
     "audioSlow": "assets/audio/lines/j17-l6-slow.mp3",
-    "say": "Wipe the pearl, then put perfume on."
+    "say": "Put perfume on first, then wipe the pearls after you wear them."
   },
   {
     "id": "j17-l7",
@@ -5334,11 +5334,11 @@
     "id": "r12-l4",
     "speaker": "ana",
     "speakerLabel": "Ana",
-    "text": "Yes, I'll put one at the table for you. Do you need a deposit receipt?",
-    "glossYue": "有，我會擺一張喺你張枱。你需唔需要訂金收據？",
+    "text": "Yes, I'll put a high chair at the table for you. Do you need a deposit receipt?",
+    "glossYue": "有，我會擺張兒童椅喺你張枱。你需唔需要訂金收據？",
     "audio": "assets/audio/lines/r12-l4.mp3",
     "audioSlow": "assets/audio/lines/r12-l4-slow.mp3",
-    "say": "Yes, I'll put one at the table for you. Do you need a deposit receipt?"
+    "say": "Yes, I'll put a high chair at the table for you. Do you need a deposit receipt?"
   },
   {
     "id": "r12-l5",
@@ -6154,11 +6154,11 @@
     "id": "j19-l6",
     "speaker": "ida",
     "speakerLabel": "Ida",
-    "text": "This one has a better cut. The other has a small mark.",
+    "text": "This stone has a better cut. The other has a small mark.",
     "glossYue": "呢粒切工更好。另一粒有個小痕跡。",
     "audio": "assets/audio/lines/j19-l6.mp3",
     "audioSlow": "assets/audio/lines/j19-l6-slow.mp3",
-    "say": "This one has a better cut. The other has a small mark."
+    "say": "This stone has a better cut. The other has a small mark."
   },
   {
     "id": "j19-l7",
@@ -6344,11 +6344,11 @@
     "id": "j20-l1",
     "speaker": "gus",
     "speakerLabel": "Gus",
-    "text": "Hi. What is your gold price per gram for one bangle?",
+    "text": "Hi. What's your gold price per gram for this bangle?",
     "glossYue": "你好。呢隻手鐲一克金係幾多錢？",
     "audio": "assets/audio/lines/j20-l1.mp3",
     "audioSlow": "assets/audio/lines/j20-l1-slow.mp3",
-    "say": "Hi. What is your gold price per gram for one bangle?"
+    "say": "Hi. What's your gold price per gram for this bangle?"
   },
   {
     "id": "j20-l2",
@@ -6795,7 +6795,7 @@
     "speaker": "ida",
     "speakerLabel": "Ida",
     "text": "The excess on that policy is two hundred dollars for this repair.",
-    "glossYue": "呢份保單嘅自負額係二百蚊，用嚟呢次維修。",
+    "glossYue": "呢份保單今次維修嘅自負額係二百蚊。",
     "audio": "assets/audio/lines/j21-l6.mp3",
     "audioSlow": "assets/audio/lines/j21-l6-slow.mp3",
     "say": "The excess on that policy is two hundred dollars for this repair."
@@ -7104,21 +7104,21 @@
     "id": "j22-l5",
     "speaker": "gus",
     "speakerLabel": "Gus",
-    "text": "Can I see one proof before you cut the bracelet?",
-    "glossYue": "切手鈪之前，可唔可以畀我睇一次校對稿？",
+    "text": "Can I see the design proof before you engrave the bracelet?",
+    "glossYue": "刻手鈪之前，可唔可以畀我睇份設計校對稿？",
     "audio": "assets/audio/lines/j22-l5.mp3",
     "audioSlow": "assets/audio/lines/j22-l5-slow.mp3",
-    "say": "Can I see one proof before you cut the bracelet?"
+    "say": "Can I see the design proof before you engrave the bracelet?"
   },
   {
     "id": "j22-l6",
     "speaker": "ida",
     "speakerLabel": "Ida",
-    "text": "I'll email you the proof this evening, before we cut it.",
-    "glossYue": "我會喺傍晚電郵份校對稿畀你，切之前交。",
+    "text": "I'll email you the design proof this evening, before we engrave the bracelet.",
+    "glossYue": "我會喺傍晚電郵份設計校對稿畀你，刻手鈪之前交。",
     "audio": "assets/audio/lines/j22-l6.mp3",
     "audioSlow": "assets/audio/lines/j22-l6-slow.mp3",
-    "say": "I'll email you the proof this evening, before we cut it."
+    "say": "I'll email you the design proof this evening, before we engrave the bracelet."
   },
   {
     "id": "j22-l7",
@@ -7644,21 +7644,21 @@
     "id": "j24-l3",
     "speaker": "gus",
     "speakerLabel": "Gus",
-    "text": "Would a soft rhodium finish keep the filigree bright if I wear it each Friday?",
-    "glossYue": "如果我每個星期五都戴，軟銠面可唔可以保持金絲光亮？",
+    "text": "Will rhodium plating keep it bright if I wear it every week?",
+    "glossYue": "如果我每個星期都戴，鍍銠可唔可以保持光亮？",
     "audio": "assets/audio/lines/j24-l3.mp3",
     "audioSlow": "assets/audio/lines/j24-l3-slow.mp3",
-    "say": "Would a soft rhodium finish keep the filigree bright if I wear it each Friday?"
+    "say": "Will rhodium plating keep it bright if I wear it every week?"
   },
   {
     "id": "j24-l4",
     "speaker": "ida",
     "speakerLabel": "Ida",
-    "text": "A soft rhodium finish will keep the filigree bright, and Friday noon is fine here.",
-    "glossYue": "軟銠面可以保持金絲光亮，星期五中午可以喺度做。",
+    "text": "Rhodium plating will keep it bright, and Friday noon is fine here.",
+    "glossYue": "鍍銠可以保持光亮，星期五中午可以喺度做。",
     "audio": "assets/audio/lines/j24-l4.mp3",
     "audioSlow": "assets/audio/lines/j24-l4-slow.mp3",
-    "say": "A soft rhodium finish will keep the filigree bright, and Friday noon is fine here."
+    "say": "Rhodium plating will keep it bright, and Friday noon is fine here."
   },
   {
     "id": "j24-l5",
@@ -7744,40 +7744,40 @@
     "id": "t21-l5",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "If immigration is past those doors, where do I take this heavy bag?",
-    "glossYue": "如果入境處喺嗰啲門後面，我應該將呢件重行李拿到邊？",
+    "text": "Can I take this small bag on board and check the big one?",
+    "glossYue": "我可唔可以帶呢個細袋上機，大袋托運？",
     "audio": "assets/audio/lines/t21-l5.mp3",
     "audioSlow": "assets/audio/lines/t21-l5-slow.mp3",
-    "say": "If immigration is past those doors, where do I take this heavy bag?"
+    "say": "Can I take this small bag on board and check the big one?"
   },
   {
     "id": "t21-l6",
     "speaker": "kim",
     "speakerLabel": "Kim",
-    "text": "Immigration is just through those doors.",
-    "glossYue": "入境處就喺嗰啲門後面。",
+    "text": "Sure. You'll collect it at the baggage carousel when you land.",
+    "glossYue": "可以。你落地之後喺行李轉盤攞。",
     "audio": "assets/audio/lines/t21-l6.mp3",
     "audioSlow": "assets/audio/lines/t21-l6-slow.mp3",
-    "say": "Immigration is just through those doors."
+    "say": "Sure. You'll collect it at the baggage carousel when you land."
   },
   {
     "id": "t21-l7",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Can I keep one small bag and check the big bag at the counter?",
-    "glossYue": "我可唔可以帶住一個細袋，大袋喺櫃檯托運？",
+    "text": "After I check the big one, is immigration through those doors?",
+    "glossYue": "我托運完大袋之後，入境處係咪喺嗰啲門後面？",
     "audio": "assets/audio/lines/t21-l7.mp3",
     "audioSlow": "assets/audio/lines/t21-l7-slow.mp3",
-    "say": "Can I keep one small bag and check the big bag at the counter?"
+    "say": "After I check the big one, is immigration through those doors?"
   },
   {
     "id": "t21-l8",
     "speaker": "kim",
     "speakerLabel": "Kim",
-    "text": "You can keep the small case and collect the big one at that far carousel.",
-    "glossYue": "你可以帶住個細箱，大件喺遠嘅行李轉盤攞。",
+    "text": "Yes. Immigration is just through those doors, once the bag is checked.",
+    "glossYue": "係。袋托運完，入境處就喺嗰啲門後面。",
     "audio": "assets/audio/lines/t21-l8.mp3",
     "audioSlow": "assets/audio/lines/t21-l8-slow.mp3",
-    "say": "You can keep the small case and collect the big one at that far carousel."
+    "say": "Yes. Immigration is just through those doors, once the bag is checked."
   }
 ]

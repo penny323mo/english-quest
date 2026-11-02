@@ -87,11 +87,11 @@
       "id": "r12-l4",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "Yes, I'll put one at the table for you. Do you need a deposit receipt?",
-      "glossYue": "有，我會擺一張喺你張枱。你需唔需要訂金收據？",
+      "text": "Yes, I'll put a high chair at the table for you. Do you need a deposit receipt?",
+      "glossYue": "有，我會擺張兒童椅喺你張枱。你需唔需要訂金收據？",
       "audio": "assets/audio/lines/r12-l4.mp3",
       "audioSlow": "assets/audio/lines/r12-l4-slow.mp3",
-      "say": "Yes, I'll put one at the table for you. Do you need a deposit receipt?",
+      "say": "Yes, I'll put a high chair at the table for you. Do you need a deposit receipt?",
       "hideGloss": true
     },
     {
@@ -151,7 +151,7 @@
       "explain": "八人。"
     },
     {
-      "prompt": "Yes, I'll put one at the table for you. Do you need a deposit receipt? 即係問緊咩？",
+      "prompt": "Yes, I'll put a high chair at the table for you. Do you need a deposit receipt? 即係問緊咩？",
       "choices": [
         "講緊包房",
         "唔係八人",
@@ -184,9 +184,9 @@
       ]
     },
     {
-      "pattern": "Yes, I'll put one at the table for you. Do you need a ___ receipt?",
-      "example": "Yes, I'll put one at the table for you. Do you need a deposit receipt?",
-      "glossYue": "有，我會擺一張喺你張枱。你需唔需要訂金收據？",
+      "pattern": "Yes, I'll put a high chair at the table for you. Do you need a ___ receipt?",
+      "example": "Yes, I'll put a high chair at the table for you. Do you need a deposit receipt?",
+      "glossYue": "有，我會擺張兒童椅喺你張枱。你需唔需要訂金收據？",
       "answer": "deposit",
       "choices": [
         "deposit",
@@ -252,7 +252,7 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "Yes, I'll put one at the table for you. Do you need a deposit receipt?",
+        "line": "Yes, I'll put a high chair at the table for you. Do you need a deposit receipt?",
         "audio": "assets/audio/lines/r12-l4.mp3",
         "audioSlow": "assets/audio/lines/r12-l4-slow.mp3",
         "expect": "How much is the deposit?",

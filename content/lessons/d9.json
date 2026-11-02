@@ -89,11 +89,11 @@
       "id": "d9-l4",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "We can freeze this one card right now, and the new card arrives on Friday.",
-      "glossYue": "我哋而家可以凍結呢一張卡，新卡星期五到。",
+      "text": "We can freeze your card right now, and the new card arrives on Friday.",
+      "glossYue": "我哋而家可以凍結你張卡，新卡星期五到。",
       "audio": "assets/audio/lines/d9-l4.mp3",
       "audioSlow": "assets/audio/lines/d9-l4-slow.mp3",
-      "say": "We can freeze this one card right now, and the new card arrives on Friday.",
+      "say": "We can freeze your card right now, and the new card arrives on Friday.",
       "hideGloss": true
     },
     {
@@ -175,9 +175,9 @@
   ],
   "chunks": [
     {
-      "pattern": "We can ___ this one card right now, and the new card arrives on Friday.",
-      "example": "We can freeze this one card right now, and the new card arrives on Friday.",
-      "glossYue": "而家凍結呢張卡。",
+      "pattern": "We can ___ your card right now, and the new card arrives on Friday.",
+      "example": "We can freeze your card right now, and the new card arrives on Friday.",
+      "glossYue": "而家凍結你張卡，新卡星期五到。",
       "answer": "freeze",
       "choices": [
         "freeze",
@@ -256,7 +256,7 @@
       {
         "partner": "Ben",
         "partnerId": "ben",
-        "line": "We can freeze this one card right now, and the new card arrives on Friday.",
+        "line": "We can freeze your card right now, and the new card arrives on Friday.",
         "audio": "assets/audio/lines/d9-l4.mp3",
         "audioSlow": "assets/audio/lines/d9-l4-slow.mp3",
         "expect": "What ID do I need at this desk, and when does the new card arrive?",
