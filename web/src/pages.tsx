@@ -196,7 +196,7 @@ export function PathHome() {
                     ) : open ? (
                       <span className="meta">{lesson?.minutes} 分</span>
                     ) : (
-                      <span className="meta">未開</span>
+                      <span className="meta">鎖住</span>
                     )}
                   </span>
                 </>
@@ -345,7 +345,7 @@ export function WordDetail({ id }: { id: string }) {
   }
   return (
     <section className="screen plain stack">
-      <a className="back" href="#/words">返詞庫</a>
+      <a className="back" href="#/words">返生字</a>
       <p className="eyebrow">{learnerEyebrow(item)}</p>
       <h1 lang="en">{item.lemma}</h1>
       <p className="ipa">{item.ipa}</p>
@@ -536,7 +536,7 @@ export function Attributions() {
       <p className="eyebrow">Attributions</p>
       <h1>出處同授權</h1>
       <p>程式碼以 MIT 授權，版權 2026 Penny Lei。見倉庫 LICENSE。</p>
-      <h2>詞庫</h2>
+      <h2>生字表</h2>
       <p>content/lexicon.json 係編纂作品，以 CC BY-SA 4.0 發佈，因為音標交叉核對用咗 Wiktionary（CC BY-SA）。粵語解釋係手寫，逐條睇過。</p>
       <p>CMUdict 0.7b，Carnegie Mellon University，BSD 式授權。美式音標由 ARPAbet 轉出，重音同音節有標。</p>
       <p>Wiktionary / Wikimedia，CC BY-SA。意見唔同嘅讀音寫喺 review/flags.json，有人為決定先至教。</p>
