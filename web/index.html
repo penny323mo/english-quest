@@ -13,46 +13,59 @@
     <title>情景英文</title>
     <link rel="icon" href="%BASE_URL%favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="%BASE_URL%icons/apple-touch-icon.png" />
+    <style>
+      html { background: #E8F6FF; }
+      html:not(.eq-ready) #root { visibility: hidden; }
+    </style>
   </head>
   <body>
     <div id="root"></div>
     <script>
-      // One-time kill-switch for phones (especially a home-screen iOS PWA) that
-      // still control the page with the pre-redesign worker. Runs before the app.
+      // eq-sw-kill-v1 runs before first paint. A page already controlled by this
+      // worker stays hidden on a cream splash, then boots once. It does not
+      // navigate to a cache-bust URL and does not reload again.
       window.__eqKill = (function () {
-        var KEY = "eq-sw-kill-v1";
-        function marked() {
-          try { return localStorage.getItem(KEY) === "1"; } catch (e) { return false; }
+        function skipClaim() {
+          try { sessionStorage.setItem("eq-skip-claim", "1"); } catch (e) {}
         }
-        function mark() {
-          try { localStorage.setItem(KEY, "1"); } catch (e) {}
-        }
-        if (location.search.indexOf("eqfresh=1") !== -1) {
-          try { history.replaceState(null, "", location.pathname + location.hash); } catch (e) {}
-        }
-        if (marked() || !("serviceWorker" in navigator)) {
-          mark();
-          return Promise.resolve();
-        }
-        return navigator.serviceWorker.getRegistrations().then(function (regs) {
-          var controlled = Boolean(navigator.serviceWorker.controller);
-          if (!regs.length && !controlled) {
-            mark();
-            return;
+        if (!("serviceWorker" in navigator)) return Promise.resolve();
+        navigator.serviceWorker.addEventListener("message", function (event) {
+          if (event.data && event.data.type === "eq-ping" && event.ports && event.ports[0]) {
+            event.ports[0].postMessage({ eq: 2 });
           }
-          return Promise.all(regs.map(function (reg) { return reg.unregister(); })).then(function () {
-            var cleared = window.caches
-              ? caches.keys().then(function (keys) {
-                  return Promise.all(keys.map(function (key) { return caches.delete(key); }));
-                })
-              : Promise.resolve();
-            return cleared.then(function () {
-              mark();
-              location.reload();
-              return new Promise(function () {});
-            });
+        });
+        function ping() {
+          var controller = navigator.serviceWorker.controller;
+          if (!controller) return Promise.resolve(null);
+          return new Promise(function (resolve) {
+            var channel = new MessageChannel();
+            var timer = setTimeout(function () { resolve(false); }, 400);
+            channel.port1.onmessage = function (event) {
+              clearTimeout(timer);
+              resolve(Boolean(event.data && event.data.eq === 2));
+            };
+            try { controller.postMessage({ type: "eq-ping" }, [channel.port2]); }
+            catch (e) { clearTimeout(timer); resolve(false); }
           });
-        }).catch(function () { mark(); });
+        }
+        return ping().then(function (alive) {
+          if (navigator.serviceWorker.controller && alive === false) {
+            return navigator.serviceWorker.getRegistrations().then(function (regs) {
+              return Promise.all(regs.map(function (reg) { return reg.unregister(); }));
+            }).then(function () {
+              var cleared = window.caches
+                ? caches.keys().then(function (keys) {
+                    return Promise.all(keys.map(function (key) { return caches.delete(key); }));
+                  })
+                : Promise.resolve();
+              return cleared.then(function () {
+                location.reload();
+                return new Promise(function () {});
+              });
+            });
+          }
+          if (alive === true) skipClaim();
+        }).catch(function () { skipClaim(); });
       })();
     </script>
     <script type="module" src="/src/main.tsx"></script>

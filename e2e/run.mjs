@@ -185,7 +185,19 @@ async function oldToNew(browserType, scheme) {
     return Boolean(reg?.active);
   });
   siteDir = dist;
-  await page.reload({ waitUntil: "domcontentloaded" });
+  await page.evaluate(async () => {
+    const reg = await navigator.serviceWorker.getRegistration();
+    if (!reg) return;
+    const changed = new Promise((resolve) => {
+      navigator.serviceWorker.addEventListener("controllerchange", () => resolve(true), { once: true });
+      setTimeout(() => resolve(false), 8000);
+    });
+    await reg.update();
+    await changed;
+  }).catch(() => {});
+  await page.waitForLoadState("domcontentloaded").catch(() => {});
+  const stillOld = await page.locator("body").innerText().then((text) => text.includes("舊版深色")).catch(() => false);
+  if (stillOld) await page.reload({ waitUntil: "domcontentloaded" });
   await page.waitForFunction(() => {
     const heading = document.querySelector("h1")?.textContent || "";
     return heading.includes("情景英文") || heading.includes("學習路徑");

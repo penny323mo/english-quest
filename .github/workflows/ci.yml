@@ -25,3 +25,5 @@ jobs:
         run: npx playwright install --with-deps chromium webkit
       - name: PWA update and 390px screenshots
         run: node e2e/run.mjs
+      - name: Service worker migration stays within two reloads
+        run: node e2e/migrate.mjs
