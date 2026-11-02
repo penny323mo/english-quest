@@ -76,7 +76,7 @@ test("a third-example raw skeleton is shared by at most two lemmas", () => {
   for (const [key, ids] of groups) assert.ok(ids.size <= 2, `${key} x${ids.size}`);
 });
 
-test("a normalised skeleton is shared by at most three lemmas", () => {
+test("a normalised skeleton is shared by at most two lemmas", () => {
   const groups = new Map();
   for (const item of lex.items) {
     const samples = [];
@@ -91,7 +91,7 @@ test("a normalised skeleton is shared by at most three lemmas", () => {
       groups.get(key).add(item.id);
     }
   }
-  for (const [key, ids] of groups) assert.ok(ids.size <= 3, `${key} x${ids.size}`);
+  for (const [key, ids] of groups) assert.ok(ids.size <= 2, `${key} x${ids.size}`);
 });
 
 test("a and an do not introduce an uncountable", () => {
