@@ -31,11 +31,11 @@
       "id": "j9-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "I'm sorry that there's a problem, so I'll listen before I offer a repair.",
-      "glossYue": "唔好意思有問題，所以我聽完先提出修理。",
+      "text": "I'm sorry that there's a problem. Tell me what happened so I can help.",
+      "glossYue": "唔好意思有問題。話我知發生咩事，所以我可以幫手。",
       "audio": "assets/audio/lines/j9-l1.mp3",
       "audioSlow": "assets/audio/lines/j9-l1-slow.mp3",
-      "say": "I'm sorry that there's a problem, so I'll listen before I offer a repair.",
+      "say": "I'm sorry that there's a problem. Tell me what happened so I can help.",
       "hideGloss": false
     },
     {
@@ -53,11 +53,11 @@
       "id": "j9-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "I'm sorry that we caused trouble, and I can see you're upset.",
-      "glossYue": "對唔住我哋造成麻煩，我睇到你唔開心。",
+      "text": "I'm sorry that we caused trouble. I can see you're upset.",
+      "glossYue": "對唔住我哋造成麻煩。我睇到你唔開心。",
       "audio": "assets/audio/lines/j9-l3.mp3",
       "audioSlow": "assets/audio/lines/j9-l3-slow.mp3",
-      "say": "I'm sorry that we caused trouble, and I can see you're upset.",
+      "say": "I'm sorry that we caused trouble. I can see you're upset.",
       "hideGloss": true
     },
     {
@@ -196,14 +196,14 @@
   ],
   "shadow": {
     "lineId": "j9-l3",
-    "hint": "I'm sorry that we caused trouble, and I can see you're upset."
+    "hint": "I'm sorry that we caused trouble. I can see you're upset."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "客人個扣壞咗。你點先開口？",
       "choices": [
-        "I'm sorry that there's a problem, so I'll listen before I offer a repair.",
+        "I'm sorry that there's a problem. Tell me what happened so I can help.",
         "The taxi is here, and traffic is slow.",
         "I have lost my wallet."
       ],
@@ -241,7 +241,7 @@
         "line": "The clasp is broken, so I would like a repair or a refund.",
         "audio": "assets/audio/lines/j9-l2.mp3",
         "audioSlow": "assets/audio/lines/j9-l2-slow.mp3",
-        "expect": "I'm sorry that we caused trouble, and I can see you're upset.",
+        "expect": "I'm sorry that we caused trouble. I can see you're upset.",
         "keywords": [
           "apologize",
           "understand"

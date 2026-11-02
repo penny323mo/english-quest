@@ -65,11 +65,11 @@
       "id": "r4-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "This fish is delicious, and I would like more sparkling water.",
-      "glossYue": "呢條魚好味，我想要多啲有氣水。",
+      "text": "This fish is delicious. I would like more sparkling water.",
+      "glossYue": "呢條魚好味。我想要多啲有氣水。",
       "audio": "assets/audio/lines/r4-l4.mp3",
       "audioSlow": "assets/audio/lines/r4-l4-slow.mp3",
-      "say": "This fish is delicious, and I would like more sparkling water.",
+      "say": "This fish is delicious. I would like more sparkling water.",
       "hideGloss": true
     },
     {
@@ -197,7 +197,7 @@
   ],
   "shadow": {
     "lineId": "r4-l4",
-    "hint": "This fish is delicious, and I would like more sparkling water."
+    "hint": "This fish is delicious. I would like more sparkling water."
   },
   "build": [
     {
@@ -255,7 +255,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "This fish is delicious, and I would like more sparkling water.",
+        "line": "This fish is delicious. I would like more sparkling water.",
         "audio": "assets/audio/lines/r4-l4.mp3",
         "audioSlow": "assets/audio/lines/r4-l4-slow.mp3",
         "expect": "The sparkling water is coming, and I hope you enjoy the fish.",

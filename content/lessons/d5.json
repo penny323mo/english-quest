@@ -75,11 +75,11 @@
       "id": "d5-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "This parcel is fragile, so please mark it as fragile.",
-      "glossYue": "呢個包裹易碎，請註明易碎。",
+      "text": "This parcel is fragile, so please mark the box.",
+      "glossYue": "呢個包裹易碎，所以請喺盒上註明。",
       "audio": "assets/audio/lines/d5-l5.mp3",
       "audioSlow": "assets/audio/lines/d5-l5-slow.mp3",
-      "say": "This parcel is fragile, so please mark it as fragile.",
+      "say": "This parcel is fragile, so please mark the box.",
       "hideGloss": false
     },
     {
@@ -108,11 +108,11 @@
       "id": "d5-l8",
       "speaker": "cole",
       "speakerLabel": "Cole",
-      "text": "Your tracking number is on the receipt, so please add one postage stamp.",
-      "glossYue": "追蹤號碼喺收據上面，請貼一張郵票。",
+      "text": "Your tracking number is on the receipt. Please add one postage stamp.",
+      "glossYue": "追蹤號碼喺收據上面。請貼一張郵票。",
       "audio": "assets/audio/lines/d5-l8.mp3",
       "audioSlow": "assets/audio/lines/d5-l8-slow.mp3",
-      "say": "Your tracking number is on the receipt, so please add one postage stamp.",
+      "say": "Your tracking number is on the receipt. Please add one postage stamp.",
       "hideGloss": true
     }
   ],
@@ -138,10 +138,10 @@
       "explain": "how long 係問要幾耐。destination 係目的地。"
     },
     {
-      "prompt": "This parcel is fragile, so please mark it as fragile. 呢句即係點？",
+      "prompt": "This parcel is fragile, so please mark the box. 呢句即係點？",
       "choices": [
         "無限計劃平啲",
-        "呢個包裹易碎，請註明易碎",
+        "呢個包裹易碎，請喺盒上註明",
         "請喺度簽名"
       ],
       "answer": 1,
@@ -251,7 +251,7 @@
         "line": "Please mark the full weight on the form before we send it.",
         "audio": "assets/audio/lines/d5-l6.mp3",
         "audioSlow": "assets/audio/lines/d5-l6-slow.mp3",
-        "expect": "This parcel is fragile, so please mark it as fragile.",
+        "expect": "This parcel is fragile, so please mark the box.",
         "keywords": [
           "fragile",
           "parcel"

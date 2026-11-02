@@ -53,11 +53,11 @@
       "id": "t5-l3",
       "speaker": "noa",
       "speakerLabel": "Noa",
-      "text": "The police desk is nearby. They can write the missing item report for you.",
-      "glossYue": "警崗喺附近。佢哋可以幫你寫搵唔到物件嘅報告。",
+      "text": "The police desk is nearby. They can take a lost property report for you.",
+      "glossYue": "警崗喺附近。佢哋可以幫你做失物報告。",
       "audio": "assets/audio/lines/t5-l3.mp3",
       "audioSlow": "assets/audio/lines/t5-l3-slow.mp3",
-      "say": "The police desk is nearby. They can write the missing item report for you.",
+      "say": "The police desk is nearby. They can take a lost property report for you.",
       "hideGloss": false
     },
     {
@@ -239,7 +239,7 @@
         "line": "I lost my wallet. I last saw it at the desk this morning.",
         "audio": "assets/audio/lines/t5-l1.mp3",
         "audioSlow": "assets/audio/lines/t5-l1-slow.mp3",
-        "expect": "The police desk is nearby. They can write the missing item report for you.",
+        "expect": "The police desk is nearby. They can take a lost property report for you.",
         "keywords": [
           "police",
           "report"

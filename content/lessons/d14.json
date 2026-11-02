@@ -105,11 +105,11 @@
       "id": "d14-l6",
       "speaker": "cole",
       "speakerLabel": "Cole",
-      "text": "Yes. I will note that damage, and the box is split.",
-      "glossYue": "可以。我會記低損壞，個箱裂開咗。",
+      "text": "Yes. I will note that damage because the box is split.",
+      "glossYue": "可以。因為個箱裂開咗，我會記低損壞。",
       "audio": "assets/audio/lines/d14-l6.mp3",
       "audioSlow": "assets/audio/lines/d14-l6-slow.mp3",
-      "say": "Yes. I will note that damage, and the box is split.",
+      "say": "Yes. I will note that damage because the box is split.",
       "hideGloss": true
     },
     {
@@ -170,7 +170,7 @@
       {
         "partner": "Cole",
         "partnerId": "cole",
-        "line": "Yes. I will note that damage, and the box is split.",
+        "line": "Yes. I will note that damage because the box is split.",
         "audio": "assets/audio/lines/d14-l6.mp3",
         "audioSlow": "assets/audio/lines/d14-l6-slow.mp3",
         "expect": "Where do I sign my name for the box before I leave?",
@@ -328,7 +328,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Yes. I will note that damage, and the box is split. 呢句入面，邊個意思先啱？",
+      "prompt": "Yes. I will note that damage because the box is split. 呢句入面，邊個意思先啱？",
       "choices": [
         "簽名",
         "損壞",

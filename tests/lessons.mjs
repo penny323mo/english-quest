@@ -1216,6 +1216,8 @@ test("tracked review files exclude local audit artifacts", () => {
     "review/stage5c/pairs30-allbands.md",
     "review/stage5d/changelog.md",
     "review/stage5d/pairs30.md",
+    "review/stage5e/connector-judgements.md",
+    "review/stage5e/pairs30.md",
   ]);
 });
 

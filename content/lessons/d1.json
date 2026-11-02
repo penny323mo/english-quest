@@ -73,11 +73,11 @@
       "id": "d1-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have had a cough since Monday, and I can rest after the pharmacy visit.",
-      "glossYue": "我由星期一起咳，去完藥房我可以休息。",
+      "text": "I have had a cough since Monday. I can rest after the pharmacy visit.",
+      "glossYue": "我由星期一起咳。去完藥房我可以休息。",
       "audio": "assets/audio/lines/d1-l5.mp3",
       "audioSlow": "assets/audio/lines/d1-l5-slow.mp3",
-      "say": "I have had a cough since Monday, and I can rest after the pharmacy visit.",
+      "say": "I have had a cough since Monday. I can rest after the pharmacy visit.",
       "hideGloss": false
     },
     {
@@ -106,11 +106,11 @@
       "id": "d1-l8",
       "speaker": "wen",
       "speakerLabel": "Wen",
-      "text": "Please rest well, and the clinic can see you for a follow-up after the pharmacy.",
-      "glossYue": "請你好好休息，去完藥房診所可以同你覆診。",
+      "text": "Please rest well. The clinic can see you for a follow-up after the pharmacy.",
+      "glossYue": "請你好好休息。去完藥房診所可以同你覆診。",
       "audio": "assets/audio/lines/d1-l8.mp3",
       "audioSlow": "assets/audio/lines/d1-l8-slow.mp3",
-      "say": "Please rest well, and the clinic can see you for a follow-up after the pharmacy.",
+      "say": "Please rest well. The clinic can see you for a follow-up after the pharmacy.",
       "hideGloss": false
     }
   ],
@@ -182,7 +182,7 @@
     },
     {
       "pattern": "Please rest well, and the clinic can see you for a ___ after the pharmacy.",
-      "example": "Please rest well, and the clinic can see you for a follow-up after the pharmacy.",
+      "example": "Please rest well. The clinic can see you for a follow-up after the pharmacy.",
       "glossYue": "去完藥房可以⋯⋯。",
       "answer": "follow-up",
       "choices": [
@@ -194,7 +194,7 @@
   ],
   "shadow": {
     "lineId": "d1-l5",
-    "hint": "I have had a cough since Monday, and I can rest after the pharmacy visit."
+    "hint": "I have had a cough since Monday. I can rest after the pharmacy visit."
   },
   "build": [
     {

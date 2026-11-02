@@ -33,11 +33,11 @@
       "id": "t8-l1",
       "speaker": "pat",
       "speakerLabel": "Pat",
-      "text": "Good morning. What is the main purpose of your visit today, and are you here for tourism?",
-      "glossYue": "早晨。你今日嚟嘅主要目的係咩，你係咪嚟觀光？",
+      "text": "Good morning. What is the main purpose of your visit today?",
+      "glossYue": "早晨。你今日嚟嘅主要目的係咩？",
       "audio": "assets/audio/lines/t8-l1.mp3",
       "audioSlow": "assets/audio/lines/t8-l1-slow.mp3",
-      "say": "Good morning. What is the main purpose of your visit today, and are you here for tourism?",
+      "say": "Good morning. What is the main purpose of your visit today?",
       "hideGloss": false
     },
     {
@@ -227,7 +227,7 @@
       {
         "partner": "Pat",
         "partnerId": "pat",
-        "line": "Good morning. What is the main purpose of your visit today, and are you here for tourism?",
+        "line": "Good morning. What is the main purpose of your visit today?",
         "audio": "assets/audio/lines/t8-l1.mp3",
         "audioSlow": "assets/audio/lines/t8-l1-slow.mp3",
         "expect": "I am visiting for tourism, and I'm staying for five days at a hotel in the city.",
@@ -293,7 +293,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Good morning. What is the main purpose of your visit today, and are you here for tourism?」，purpose 係咩意思？",
+      "prompt": "客人講「Good morning. What is the main purpose of your visit today?」，purpose 係咩意思？",
       "choices": [
         "目的",
         "蓋章",

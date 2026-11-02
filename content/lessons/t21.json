@@ -2,9 +2,9 @@
   "id": "T21",
   "unit": "T",
   "titleYue": "申報表同入境處",
-  "titleEn": "A declaration, layover, and immigration",
-  "canDoYue": "你識喺轉機前睇申報表、問幾早去入境處，同落地之後喺行李轉盤攞大袋。",
-  "canDoEn": "Ask about a declaration and a layover, check a bag before immigration, and collect it at the carousel.",
+  "titleEn": "Check-in, immigration, and the carousel",
+  "canDoYue": "你識帶細袋上機、問幾早去入境處，再聽落地次序：先入境，再行李轉盤，最後海關。",
+  "canDoEn": "Check a small bag on board, ask when to reach immigration, then hear the arrival order: immigration, the carousel, then customs.",
   "minutes": 12,
   "hero": "assets/art/lessons/t21.webp",
   "cast": [
@@ -24,22 +24,22 @@
       "id": "t21-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could you check my declaration before the layover, and tell me which belt?",
-      "glossYue": "轉機之前可唔可以睇吓我張申報表，話我知邊條帶？",
+      "text": "Can I take this small bag on board and check the big one?",
+      "glossYue": "我可唔可以帶呢個細袋上機，大袋托運？",
       "audio": "assets/audio/lines/t21-l1.mp3",
       "audioSlow": "assets/audio/lines/t21-l1-slow.mp3",
-      "say": "Could you check my declaration before the layover, and tell me which belt?",
+      "say": "Can I take this small bag on board and check the big one?",
       "hideGloss": false
     },
     {
       "id": "t21-l2",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Your declaration is fine, and the baggage belt is number three on the left side.",
-      "glossYue": "你張申報表冇問題，行李轉盤係左邊三號。",
+      "text": "Yes. Take the small bag on board. Collect the big one at the carousel after immigration.",
+      "glossYue": "可以。細袋帶上機。入境之後喺行李轉盤攞大袋。",
       "audio": "assets/audio/lines/t21-l2.mp3",
       "audioSlow": "assets/audio/lines/t21-l2-slow.mp3",
-      "say": "Your declaration is fine, and the baggage belt is number three on the left side.",
+      "say": "Yes. Take the small bag on board. Collect the big one at the carousel after immigration.",
       "hideGloss": false
     },
     {
@@ -57,68 +57,68 @@
       "id": "t21-l4",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Please reach immigration by one o'clock, because your layover at two needs extra time.",
-      "glossYue": "請一點前去入境處，因為你兩點嘅轉機停留要多啲時間。",
+      "text": "Please reach immigration by one o'clock, because your layover flight leaves at two.",
+      "glossYue": "請一點前去入境處，因為你轉機嗰班兩點起飛。",
       "audio": "assets/audio/lines/t21-l4.mp3",
       "audioSlow": "assets/audio/lines/t21-l4-slow.mp3",
-      "say": "Please reach immigration by one o'clock, because your layover at two needs extra time.",
+      "say": "Please reach immigration by one o'clock, because your layover flight leaves at two.",
       "hideGloss": true
     },
     {
       "id": "t21-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can I take this small bag on board and check the big one?",
-      "glossYue": "我可唔可以帶呢個細袋上機，大袋托運？",
+      "text": "After I land, is immigration before the baggage carousel, please?",
+      "glossYue": "落地之後，入境處係咪喺行李轉盤之前？",
       "audio": "assets/audio/lines/t21-l5.mp3",
       "audioSlow": "assets/audio/lines/t21-l5-slow.mp3",
-      "say": "Can I take this small bag on board and check the big one?",
+      "say": "After I land, is immigration before the baggage carousel, please?",
       "hideGloss": true
     },
     {
       "id": "t21-l6",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Sure. You'll collect it at the baggage carousel when you land.",
-      "glossYue": "可以。你落地之後喺行李轉盤攞。",
+      "text": "Yes. Please go through immigration first. The carousel is next.",
+      "glossYue": "係。請先過入境處。跟住就係行李轉盤。",
       "audio": "assets/audio/lines/t21-l6.mp3",
       "audioSlow": "assets/audio/lines/t21-l6-slow.mp3",
-      "say": "Sure. You'll collect it at the baggage carousel when you land.",
+      "say": "Yes. Please go through immigration first. The carousel is next.",
       "hideGloss": true
     },
     {
       "id": "t21-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "After I check the big one, is immigration through those doors?",
-      "glossYue": "我托運完大袋之後，入境處係咪喺嗰啲門後面？",
+      "text": "Do I clear customs before I collect the bag?",
+      "glossYue": "我攞行李之前，使唔使先過海關？",
       "audio": "assets/audio/lines/t21-l7.mp3",
       "audioSlow": "assets/audio/lines/t21-l7-slow.mp3",
-      "say": "After I check the big one, is immigration through those doors?",
+      "say": "Do I clear customs before I collect the bag?",
       "hideGloss": true
     },
     {
       "id": "t21-l8",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Yes. Immigration is just through those doors, once the bag is checked.",
-      "glossYue": "係。袋托運完，入境處就喺嗰啲門後面。",
+      "text": "No. Collect the bag at the carousel. Then go through customs with your declaration.",
+      "glossYue": "唔使。先喺行李轉盤攞袋。跟住帶申報表過海關。",
       "audio": "assets/audio/lines/t21-l8.mp3",
       "audioSlow": "assets/audio/lines/t21-l8-slow.mp3",
-      "say": "Yes. Immigration is just through those doors, once the bag is checked.",
+      "say": "No. Collect the bag at the carousel. Then go through customs with your declaration.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Could you check my declaration before the layover, and tell me which belt? 即係問緊咩？",
+      "prompt": "Please reach immigration by one o'clock, because your layover flight leaves at two. 呢句即係點？",
       "choices": [
-        "問轉機前可唔可以睇申報表同邊條帶",
-        "話行李已經遺失",
+        "請一點前去入境，因為兩點起飛",
+        "話航班已經取消",
         "問登機閘口係幾號"
       ],
       "answer": 0,
-      "explain": "轉機之前睇申報表，再問邊條行李帶。"
+      "explain": "兩點起飛，所以一點前去入境處。"
     },
     {
       "prompt": "If the flight leaves at two, how early should I reach immigration with one bag? 即係問緊咩？",
@@ -128,7 +128,7 @@
         "問海關要幾多張表"
       ],
       "answer": 1,
-      "explain": "轉機兩點走，問要幾早去入境處。"
+      "explain": "航班兩點走，問要幾早去入境處。"
     },
     {
       "prompt": "Can I take this small bag on board and check the big one? 即係問緊咩？",
@@ -138,14 +138,14 @@
         "問細袋可唔可以上機，大袋托運"
       ],
       "answer": 2,
-      "explain": "細袋上機，大袋托運，落地先喺行李轉盤攞。"
+      "explain": "細袋上機，大袋托運。"
     }
   ],
   "chunks": [
     {
-      "pattern": "Could you check my ___ before the layover, and tell me which belt to use?",
-      "example": "Could you check my declaration before the layover, and tell me which belt?",
-      "glossYue": "中轉之前可唔可以睇我份申報表，話我知用邊條帶？",
+      "pattern": "Then go through customs with your ___.",
+      "example": "Then go through customs with your declaration.",
+      "glossYue": "跟住帶住你份申報表過海關。",
       "answer": "declaration",
       "choices": [
         "declaration",
@@ -154,9 +154,9 @@
       ]
     },
     {
-      "pattern": "Could you check my declaration before the ___, and tell me which belt to use?",
-      "example": "Could you check my declaration before the layover, and tell me which belt?",
-      "glossYue": "中轉之前可唔可以睇我份申報表，話我知用邊條帶？",
+      "pattern": "Please reach immigration by one o'clock, because your ___ flight leaves at two.",
+      "example": "Please reach immigration by one o'clock, because your layover flight leaves at two.",
+      "glossYue": "請一點前去入境處，因為你轉機嗰班兩點起飛。",
       "answer": "layover",
       "choices": [
         "layover",
@@ -178,16 +178,16 @@
   ],
   "shadow": {
     "lineId": "t21-l1",
-    "hint": "Could you check my declaration before the layover, and tell me which belt?"
+    "hint": "Can I take this small bag on board and check the big one?"
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "你點講？",
       "choices": [
-        "Could you check my declaration before the layover, and tell me which belt?",
+        "Can I take this small bag on board and check the big one?",
         "If the flight leaves at two, how early should I reach immigration with one bag?",
-        "Can I take this small bag on board and check the big one?"
+        "After I land, is immigration before the baggage carousel, please?"
       ],
       "answer": 0,
       "explain": "用返課入面第一句。"
@@ -216,12 +216,12 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Your declaration is fine, and the baggage belt is number three on the left side.",
+        "line": "Yes. Take the small bag on board. Collect the big one at the carousel after immigration.",
         "audio": "assets/audio/lines/t21-l2.mp3",
         "audioSlow": "assets/audio/lines/t21-l2-slow.mp3",
         "expect": "If the flight leaves at two, how early should I reach immigration with one bag?",
         "keywords": [
-          "layover",
+          "flight",
           "immigration"
         ],
         "modelAudio": "assets/audio/lines/t21-l3.mp3",
@@ -230,13 +230,13 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Please reach immigration by one o'clock, because your layover at two needs extra time.",
+        "line": "Please reach immigration by one o'clock, because your layover flight leaves at two.",
         "audio": "assets/audio/lines/t21-l4.mp3",
         "audioSlow": "assets/audio/lines/t21-l4-slow.mp3",
-        "expect": "Can I take this small bag on board and check the big one?",
+        "expect": "After I land, is immigration before the baggage carousel, please?",
         "keywords": [
-          "bag",
-          "check"
+          "immigration",
+          "carousel"
         ],
         "modelAudio": "assets/audio/lines/t21-l5.mp3",
         "modelSlow": "assets/audio/lines/t21-l5-slow.mp3"
@@ -244,13 +244,13 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Sure. You'll collect it at the baggage carousel when you land.",
+        "line": "Yes. Please go through immigration first. The carousel is next.",
         "audio": "assets/audio/lines/t21-l6.mp3",
         "audioSlow": "assets/audio/lines/t21-l6-slow.mp3",
-        "expect": "After I check the big one, is immigration through those doors?",
+        "expect": "Do I clear customs before I collect the bag?",
         "keywords": [
-          "immigration",
-          "doors"
+          "customs",
+          "bag"
         ],
         "modelAudio": "assets/audio/lines/t21-l7.mp3",
         "modelSlow": "assets/audio/lines/t21-l7-slow.mp3"
@@ -282,7 +282,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Could you check my declaration before the layover, and tell me which belt? 呢句入面，邊個意思先啱？",
+      "prompt": "No. Collect the bag at the carousel. Then go through customs with your declaration. 呢句入面，邊個意思先啱？",
       "choices": [
         "申報表",
         "發票",

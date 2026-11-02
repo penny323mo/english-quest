@@ -31,11 +31,11 @@
       "id": "w4-l1",
       "speaker": "ada",
       "speakerLabel": "Ada",
-      "text": "Good morning Tom. How was your weekend, and was the weather mild?",
-      "glossYue": "早晨 Tom。你個週末點，天氣暖和下？",
+      "text": "Good morning, Tom. How was your weekend?",
+      "glossYue": "早晨，Tom。你個週末點？",
       "audio": "assets/audio/lines/w4-l1.mp3",
       "audioSlow": "assets/audio/lines/w4-l1-slow.mp3",
-      "say": "Good morning Tom. How was your weekend, and was the weather mild?",
+      "say": "Good morning, Tom. How was your weekend?",
       "hideGloss": false
     },
     {
@@ -118,14 +118,14 @@
   ],
   "understand": [
     {
-      "prompt": "Good morning Tom. How was your weekend, and was the weather mild? 即係問緊咩？",
+      "prompt": "Good morning, Tom. How was your weekend? 即係問緊咩？",
       "choices": [
-        "問週末同星期六天氣",
+        "問個週末點",
         "問會議幾點開始",
         "問咖啡幾多錢"
       ],
       "answer": 0,
-      "explain": "How was your weekend 係問週末點。"
+      "explain": "問個週末點。"
     },
     {
       "prompt": "Not bad. The weekend was busy with my sister. 呢句即係點？",
@@ -223,7 +223,7 @@
       {
         "partner": "Ada",
         "partnerId": "ada",
-        "line": "Good morning Tom. How was your weekend, and was the weather mild?",
+        "line": "Good morning, Tom. How was your weekend?",
         "audio": "assets/audio/lines/w4-l1.mp3",
         "audioSlow": "assets/audio/lines/w4-l1-slow.mp3",
         "expect": "Not bad. The weekend was busy with my sister.",
