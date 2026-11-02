@@ -67,22 +67,22 @@
       "id": "d9-l2",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "I am sorry the machine kept the card. Did you try the cancel button on the screen first?",
-      "glossYue": "唔好意思，部機食咗張卡。你試過畫面上面個取消掣未？",
+      "text": "I'm sorry the machine kept your card. Did you try the cancel button?",
+      "glossYue": "唔好意思，部機食咗你張卡。你試過個取消掣未？",
       "audio": "assets/audio/lines/d9-l2.mp3",
       "audioSlow": "assets/audio/lines/d9-l2-slow.mp3",
-      "say": "I am sorry the machine kept the card. Did you try the cancel button on the screen first?",
+      "say": "I'm sorry the machine kept your card. Did you try the cancel button?",
       "hideGloss": false
     },
     {
       "id": "d9-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Yes, I tried the cancel button, and the machine still kept the card inside the slot.",
-      "glossYue": "試過取消掣，部機仍然將張卡食喺插槽入面。",
+      "text": "Yes, I pressed cancel, and the machine still kept the card.",
+      "glossYue": "試過取消掣，部機仍然食住張卡。",
       "audio": "assets/audio/lines/d9-l3.mp3",
       "audioSlow": "assets/audio/lines/d9-l3-slow.mp3",
-      "say": "Yes, I tried the cancel button, and the machine still kept the card inside the slot.",
+      "say": "Yes, I pressed cancel, and the machine still kept the card.",
       "hideGloss": false
     },
     {
@@ -100,11 +100,11 @@
       "id": "d9-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "What papers prove my identity at this desk, and when does the new card arrive?",
-      "glossYue": "喺呢個櫃檯要用咩文件證明身份，新卡幾時到？",
+      "text": "What ID do I need at this desk, and when does the new card arrive?",
+      "glossYue": "喺呢個櫃檯要用咩身份文件，新卡幾時到？",
       "audio": "assets/audio/lines/d9-l5.mp3",
       "audioSlow": "assets/audio/lines/d9-l5-slow.mp3",
-      "say": "What papers prove my identity at this desk, and when does the new card arrive?",
+      "say": "What ID do I need at this desk, and when does the new card arrive?",
       "hideGloss": true
     },
     {
@@ -153,7 +153,7 @@
       "explain": "machine 係櫃員機。card 係銀行卡。"
     },
     {
-      "prompt": "What papers prove my identity at this desk, and when does the new card arrive? 即係問緊咩？",
+      "prompt": "What ID do I need at this desk, and when does the new card arrive? 即係問緊咩？",
       "choices": [
         "問限額係咪二千",
         "問用咩文件證明身份，新卡幾時到",
@@ -215,7 +215,7 @@
       "choices": [
         "Can I draw cash at this counter on the temporary limit while I wait?",
         "The cash machine kept my card.",
-        "What papers prove my identity at this desk, and when does the new card arrive?"
+        "What ID do I need at this desk, and when does the new card arrive?"
       ],
       "answer": 0,
       "explain": "講 temporary limit。"
@@ -242,10 +242,10 @@
       {
         "partner": "Ben",
         "partnerId": "ben",
-        "line": "I am sorry the machine kept the card. Did you try the cancel button on the screen first?",
+        "line": "I'm sorry the machine kept your card. Did you try the cancel button?",
         "audio": "assets/audio/lines/d9-l2.mp3",
         "audioSlow": "assets/audio/lines/d9-l2-slow.mp3",
-        "expect": "Yes, I tried the cancel button, and the machine still kept the card inside the slot.",
+        "expect": "Yes, I pressed cancel, and the machine still kept the card.",
         "keywords": [
           "cancel",
           "card"
@@ -259,7 +259,7 @@
         "line": "We can freeze this one card right now, and the new card arrives on Friday.",
         "audio": "assets/audio/lines/d9-l4.mp3",
         "audioSlow": "assets/audio/lines/d9-l4-slow.mp3",
-        "expect": "What papers prove my identity at this desk, and when does the new card arrive?",
+        "expect": "What ID do I need at this desk, and when does the new card arrive?",
         "keywords": [
           "identity",
           "Friday"

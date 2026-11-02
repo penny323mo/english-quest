@@ -44,11 +44,11 @@
       "id": "r6-l2",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "A window seat for Mei is free for a party of four.",
-      "glossYue": "靠窗位有空，Mei 四人可以坐。",
+      "text": "Mei can have a window seat. The table is for four.",
+      "glossYue": "Mei 可以坐靠窗。張檯坐四個人。",
       "audio": "assets/audio/lines/r6-l2.mp3",
       "audioSlow": "assets/audio/lines/r6-l2-slow.mp3",
-      "say": "A window seat for Mei is free for a party of four.",
+      "say": "Mei can have a window seat. The table is for four.",
       "hideGloss": true
     },
     {
@@ -110,11 +110,11 @@
       "id": "r6-l8",
       "speaker": "ana",
       "speakerLabel": "Ana",
-      "text": "I will hold the booking until eight, and send a short note.",
-      "glossYue": "我會留住個訂位到八點，再發個短訊。",
+      "text": "I'll hold the table until eight, and I'll text you.",
+      "glossYue": "我會留住張檯到八點，再發短訊畀你。",
       "audio": "assets/audio/lines/r6-l8.mp3",
       "audioSlow": "assets/audio/lines/r6-l8-slow.mp3",
-      "say": "I will hold the booking until eight, and send a short note.",
+      "say": "I'll hold the table until eight, and I'll text you.",
       "hideGloss": true
     }
   ],
@@ -225,7 +225,7 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "A window seat for Mei is free for a party of four.",
+        "line": "Mei can have a window seat. The table is for four.",
         "audio": "assets/audio/lines/r6-l2.mp3",
         "audioSlow": "assets/audio/lines/r6-l2-slow.mp3",
         "expect": "Could we change the time and keep the reservation if we arrive later?",

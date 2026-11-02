@@ -101,11 +101,11 @@
       "id": "r17-l8",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "The cancellation rule starts at four, and dropping the party then pays a fee.",
-      "glossYue": "取消訂位規則四點開始，嗰陣成檯唔嚟就要畀費。",
+      "text": "The cancellation rule starts at four. Cancel the whole party then and you pay a fee.",
+      "glossYue": "取消訂位規則四點開始。嗰陣成檯唔嚟就要畀費。",
       "audio": "assets/audio/lines/r17-l8.mp3",
       "audioSlow": "assets/audio/lines/r17-l8-slow.mp3",
-      "say": "The cancellation rule starts at four, and dropping the party then pays a fee.",
+      "say": "The cancellation rule starts at four. Cancel the whole party then and you pay a fee.",
       "hideGloss": true
     }
   ],
@@ -282,7 +282,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "The cancellation rule starts at four, and dropping the party then pays a fee. 呢句入面，邊個意思先啱？",
+      "prompt": "The cancellation rule starts at four. Cancel the whole party then and you pay a fee. 呢句入面，邊個意思先啱？",
       "choices": [
         "鐘",
         "取消訂位",

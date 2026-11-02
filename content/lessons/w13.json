@@ -73,22 +73,22 @@
       "id": "w13-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "What blocker is holding the logo file back for that review?",
-      "glossYue": "咩阻礙拖住個標誌檔，影響嗰次審核？",
+      "text": "What's holding up the logo for that review?",
+      "glossYue": "咩拖住個標誌，影響嗰次審核？",
       "audio": "assets/audio/lines/w13-l3.mp3",
       "audioSlow": "assets/audio/lines/w13-l3-slow.mp3",
-      "say": "What blocker is holding the logo file back for that review?",
+      "say": "What's holding up the logo for that review?",
       "hideGloss": false
     },
     {
       "id": "w13-l4",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "The studio hasn't sent the logo yet.",
+      "text": "The studio still hasn't sent the logo.",
       "glossYue": "品牌公司仲未交到個標誌。",
       "audio": "assets/audio/lines/w13-l4.mp3",
       "audioSlow": "assets/audio/lines/w13-l4-slow.mp3",
-      "say": "The studio hasn't sent the logo yet.",
+      "say": "The studio still hasn't sent the logo.",
       "hideGloss": false
     },
     {
@@ -117,11 +117,11 @@
       "id": "w13-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can we move the milestone to Friday if that blocker remains?",
-      "glossYue": "如果阻礙仲喺度，里程碑可唔可以改到星期五？",
+      "text": "Can we move the milestone to Friday if we're still stuck?",
+      "glossYue": "如果仲未解決，里程碑可唔可以改到星期五？",
       "audio": "assets/audio/lines/w13-l7.mp3",
       "audioSlow": "assets/audio/lines/w13-l7-slow.mp3",
-      "say": "Can we move the milestone to Friday if that blocker remains?",
+      "say": "Can we move the milestone to Friday if we're still stuck?",
       "hideGloss": false
     },
     {
@@ -146,7 +146,7 @@
         "line": "The design draft is halfway done for Wednesday's client review.",
         "audio": "assets/audio/lines/w13-l2.mp3",
         "audioSlow": "assets/audio/lines/w13-l2-slow.mp3",
-        "expect": "What blocker is holding the logo file back for that review?",
+        "expect": "What's holding up the logo for that review?",
         "keywords": [
           "blocker",
           "logo"
@@ -157,7 +157,7 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "The studio hasn't sent the logo yet.",
+        "line": "The studio still hasn't sent the logo.",
         "audio": "assets/audio/lines/w13-l4.mp3",
         "audioSlow": "assets/audio/lines/w13-l4-slow.mp3",
         "expect": "Who will present the slide deck if the logo arrives one day late?",
@@ -174,7 +174,7 @@
         "line": "I will present that slide deck once the logo is in.",
         "audio": "assets/audio/lines/w13-l6.mp3",
         "audioSlow": "assets/audio/lines/w13-l6-slow.mp3",
-        "expect": "Can we move the milestone to Friday if that blocker remains?",
+        "expect": "Can we move the milestone to Friday if we're still stuck?",
         "keywords": [
           "milestone",
           "friday"
@@ -196,7 +196,7 @@
       "explain": "草稿。"
     },
     {
-      "prompt": "The studio hasn't sent the logo yet. 呢句即係點？",
+      "prompt": "The studio still hasn't sent the logo. 呢句即係點？",
       "choices": [
         "講緊阻礙",
         "關於草稿",
@@ -230,7 +230,7 @@
     },
     {
       "pattern": "What ___ is holding the logo file back for that review?",
-      "example": "What blocker is holding the logo file back for that review?",
+      "example": "What's holding up the logo for that review?",
       "glossYue": "咩阻礙拖住個標誌檔，影響嗰次審核？",
       "answer": "blocker",
       "choices": [
@@ -257,7 +257,7 @@
       "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
         "Could you tell me how the design draft is going for the client milestone?",
-        "What blocker is holding the logo file back for that review?",
+        "What's holding up the logo for that review?",
         "Who will present the slide deck if the logo arrives one day late?"
       ],
       "answer": 1,

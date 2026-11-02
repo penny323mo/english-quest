@@ -30,22 +30,22 @@
       "id": "w3-l1",
       "speaker": "owen",
       "speakerLabel": "Owen",
-      "text": "Good morning everyone. Let's open the meeting and share an update today.",
-      "glossYue": "早晨各位。我哋開會，今日分享一個更新。",
+      "text": "Good morning, everyone. Let's get started. Here's today's update.",
+      "glossYue": "早晨各位。我哋開始啦。今日嘅更新係咁。",
       "audio": "assets/audio/lines/w3-l1.mp3",
       "audioSlow": "assets/audio/lines/w3-l1-slow.mp3",
-      "say": "Good morning everyone. Let's open the meeting and share an update today.",
+      "say": "Good morning, everyone. Let's get started. Here's today's update.",
       "hideGloss": false
     },
     {
       "id": "w3-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The update says the deadline moved, and I am concerned about the action item.",
-      "glossYue": "更新係期限改咗，我擔心嗰項行動項。",
+      "text": "The update says the deadline moved, and I'm worried about that task.",
+      "glossYue": "更新話期限改咗，我擔心嗰項工作。",
       "audio": "assets/audio/lines/w3-l2.mp3",
       "audioSlow": "assets/audio/lines/w3-l2-slow.mp3",
-      "say": "The update says the deadline moved, and I am concerned about the action item.",
+      "say": "The update says the deadline moved, and I'm worried about that task.",
       "hideGloss": true
     },
     {
@@ -150,7 +150,7 @@
   "chunks": [
     {
       "pattern": "Good morning everyone, let's open the meeting now and share a short ___ on the agenda today.",
-      "example": "Good morning everyone. Let's open the meeting and share an update today.",
+      "example": "Good morning, everyone. Let's get started. Here's today's update.",
       "glossYue": "分享一個短⋯⋯。",
       "answer": "update",
       "choices": [
@@ -235,7 +235,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "The update says the deadline moved, and I am concerned about the action item.",
+        "line": "The update says the deadline moved, and I'm worried about that task.",
         "audio": "assets/audio/lines/w3-l2.mp3",
         "audioSlow": "assets/audio/lines/w3-l2-slow.mp3",
         "expect": "Could you expand on the deadline and unmute so we can hear you?",
@@ -311,10 +311,10 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The update says the deadline moved, and I am concerned about the action item.」，action item 係咩意思？",
+      "prompt": "客人講「The update says the deadline moved, and I'm worried about that task.」，task 係咩意思？",
       "choices": [
         "收據",
-        "行動項",
+        "工作",
         "毛巾"
       ],
       "answer": 1

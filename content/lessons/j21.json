@@ -62,11 +62,11 @@
       "id": "j21-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Yes. I can write that appraisal once I have checked the bent pendant.",
+      "text": "Yes. I'll write the appraisal once I've checked the bent pendant.",
       "glossYue": "可以。我檢查完條彎咗嘅吊墜，就寫嗰份估價。",
       "audio": "assets/audio/lines/j21-l2.mp3",
       "audioSlow": "assets/audio/lines/j21-l2-slow.mp3",
-      "say": "Yes. I can write that appraisal once I have checked the bent pendant.",
+      "say": "Yes. I'll write the appraisal once I've checked the bent pendant.",
       "hideGloss": false
     },
     {
@@ -84,11 +84,11 @@
       "id": "j21-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Yes. This close photo shows that crack right beside the small gold clasp.",
-      "glossYue": "可以。呢張近相睇到裂痕就喺個小金扣隔離。",
+      "text": "Yes. This photo shows the crack right beside the gold clasp.",
+      "glossYue": "可以。呢張相睇到裂痕就喺個金扣隔離。",
       "audio": "assets/audio/lines/j21-l4.mp3",
       "audioSlow": "assets/audio/lines/j21-l4-slow.mp3",
-      "say": "Yes. This close photo shows that crack right beside the small gold clasp.",
+      "say": "Yes. This photo shows the crack right beside the gold clasp.",
       "hideGloss": true
     },
     {
@@ -143,7 +143,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "Yes. I can write that appraisal once I have checked the bent pendant.",
+        "line": "Yes. I'll write the appraisal once I've checked the bent pendant.",
         "audio": "assets/audio/lines/j21-l2.mp3",
         "audioSlow": "assets/audio/lines/j21-l2-slow.mp3",
         "expect": "Could you take a photo of the crack for the claim form?",
@@ -157,7 +157,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "Yes. This close photo shows that crack right beside the small gold clasp.",
+        "line": "Yes. This photo shows the crack right beside the gold clasp.",
         "audio": "assets/audio/lines/j21-l4.mp3",
         "audioSlow": "assets/audio/lines/j21-l4-slow.mp3",
         "expect": "What excess does my insurance policy charge for a repair like this?",
@@ -196,7 +196,7 @@
       "explain": "估價。"
     },
     {
-      "prompt": "Yes. This close photo shows that crack right beside the small gold clasp. 呢句即係點？",
+      "prompt": "Yes. This photo shows the crack right beside the gold clasp. 呢句即係點？",
       "choices": [
         "關於相片",
         "唔係吊墜",

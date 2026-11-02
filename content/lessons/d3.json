@@ -63,11 +63,11 @@
       "id": "d3-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "If I decide today, is the deposit one month on this contract?",
-      "glossYue": "如果我今日決定，呢份合約嘅按金係咪一個月？",
+      "text": "If I decide today, is the deposit one month's rent?",
+      "glossYue": "如果我今日決定，按金係咪一個月租金？",
       "audio": "assets/audio/lines/d3-l4.mp3",
       "audioSlow": "assets/audio/lines/d3-l4-slow.mp3",
-      "say": "If I decide today, is the deposit one month on this contract?",
+      "say": "If I decide today, is the deposit one month's rent?",
       "hideGloss": true
     },
     {
@@ -96,11 +96,11 @@
       "id": "d3-l7",
       "speaker": "lea",
       "speakerLabel": "Lea",
-      "text": "Sign the lease, and the landlord gives the keys to the tenant.",
-      "glossYue": "你簽租約，業主就交鎖匙畀租客。",
+      "text": "Once you sign the lease, the landlord will give you the keys.",
+      "glossYue": "你簽咗租約，業主就交鎖匙畀你。",
       "audio": "assets/audio/lines/d3-l7.mp3",
       "audioSlow": "assets/audio/lines/d3-l7-slow.mp3",
-      "say": "Sign the lease, and the landlord gives the keys to the tenant.",
+      "say": "Once you sign the lease, the landlord will give you the keys.",
       "hideGloss": true
     },
     {
@@ -183,7 +183,7 @@
     },
     {
       "pattern": "Please read the ___ and the notice before I pay the deposit.",
-      "example": "Sign the lease, and the landlord gives the keys to the tenant.",
+      "example": "Once you sign the lease, the landlord will give you the keys.",
       "glossYue": "睇份⋯⋯。",
       "answer": "contract",
       "choices": [
@@ -264,7 +264,7 @@
         "line": "I will sign the lease and pay the agency fee this afternoon.",
         "audio": "assets/audio/lines/d3-l6.mp3",
         "audioSlow": "assets/audio/lines/d3-l6-slow.mp3",
-        "expect": "Sign the lease, and the landlord gives the keys to the tenant.",
+        "expect": "Once you sign the lease, the landlord will give you the keys.",
         "keywords": [
           "lease",
           "tenant"

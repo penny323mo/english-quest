@@ -51,11 +51,11 @@
       "id": "j22-l1",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Can you rush the lettering on this gold bracelet before Saturday?",
-      "glossYue": "星期六之前可唔可以趕急刻字喺呢隻金手鈪？",
+      "text": "Can you rush the engraving on this gold bracelet before Saturday?",
+      "glossYue": "星期六之前可唔可以趕刻字喺呢隻金手鈪？",
       "audio": "assets/audio/lines/j22-l1.mp3",
       "audioSlow": "assets/audio/lines/j22-l1-slow.mp3",
-      "say": "Can you rush the lettering on this gold bracelet before Saturday?",
+      "say": "Can you rush the engraving on this gold bracelet before Saturday?",
       "hideGloss": false
     },
     {
@@ -106,11 +106,11 @@
       "id": "j22-l6",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "I'll email that one proof this evening, before the cut.",
-      "glossYue": "我會喺傍晚電郵嗰一份校對稿，切之前交。",
+      "text": "I'll email you the proof this evening, before we cut it.",
+      "glossYue": "我會喺傍晚電郵份校對稿畀你，切之前交。",
       "audio": "assets/audio/lines/j22-l6.mp3",
       "audioSlow": "assets/audio/lines/j22-l6-slow.mp3",
-      "say": "I'll email that one proof this evening, before the cut.",
+      "say": "I'll email you the proof this evening, before we cut it.",
       "hideGloss": false
     },
     {
@@ -171,7 +171,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "I'll email that one proof this evening, before the cut.",
+        "line": "I'll email you the proof this evening, before we cut it.",
         "audio": "assets/audio/lines/j22-l6.mp3",
         "audioSlow": "assets/audio/lines/j22-l6-slow.mp3",
         "expect": "What's the rush fee if that proof needs one small change?",
@@ -186,7 +186,7 @@
   },
   "understand": [
     {
-      "prompt": "Can you rush the lettering on this gold bracelet before Saturday? 呢句即係點？",
+      "prompt": "Can you rush the engraving on this gold bracelet before Saturday? 呢句即係點？",
       "choices": [
         "急單",
         "刻字",
@@ -196,7 +196,7 @@
       "explain": "刻字。"
     },
     {
-      "prompt": "I'll email that one proof this evening, before the cut. 呢句即係點？",
+      "prompt": "I'll email you the proof this evening, before we cut it. 呢句即係點？",
       "choices": [
         "校對稿",
         "刻字",
@@ -219,7 +219,7 @@
   "chunks": [
     {
       "pattern": "Could you ___ the lettering on this gold bracelet before Saturday morning?",
-      "example": "Can you rush the lettering on this gold bracelet before Saturday?",
+      "example": "Can you rush the engraving on this gold bracelet before Saturday?",
       "glossYue": "星期六朝早之前可唔可以趕急刻字喺呢隻金手鈪？",
       "answer": "rush",
       "choices": [
@@ -256,7 +256,7 @@
       "type": "choice",
       "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
-        "Can you rush the lettering on this gold bracelet before Saturday?",
+        "Can you rush the engraving on this gold bracelet before Saturday?",
         "Will plain lettering finish in time if the wedding stays on Saturday?",
         "Can I see one proof before you cut the bracelet?"
       ],
@@ -321,7 +321,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Can you rush the lettering on this gold bracelet before Saturday? 呢句入面，邊個意思先啱？",
+      "prompt": "Can you rush the engraving on this gold bracelet before Saturday? 呢句入面，邊個意思先啱？",
       "choices": [
         "收據",
         "刻字",
@@ -353,6 +353,6 @@
   ],
   "shadow": {
     "lineId": "j22-l1",
-    "hint": "Can you rush the lettering on this gold bracelet before Saturday?"
+    "hint": "Can you rush the engraving on this gold bracelet before Saturday?"
   }
 }

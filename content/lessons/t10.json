@@ -38,11 +38,11 @@
       "id": "t10-l2",
       "speaker": "opal",
       "speakerLabel": "Opal",
-      "text": "Could you describe the missing bag for me, and tell me the colour if you remember it?",
+      "text": "Could you describe the missing bag, and the colour if you remember?",
       "glossYue": "可唔可以講下唔見咗嗰個袋，仲記唔記得顏色？",
       "audio": "assets/audio/lines/t10-l2.mp3",
       "audioSlow": "assets/audio/lines/t10-l2-slow.mp3",
-      "say": "Could you describe the missing bag for me, and tell me the colour if you remember it?",
+      "say": "Could you describe the missing bag, and the colour if you remember?",
       "hideGloss": false
     },
     {
@@ -93,11 +93,11 @@
       "id": "t10-l7",
       "speaker": "hugo",
       "speakerLabel": "Hugo",
-      "text": "Could you deliver the bag to my hotel if you find it after you finish this search?",
-      "glossYue": "如果搵到，可唔可以送到我酒店？",
+      "text": "If you find the bag, could you deliver it to my hotel?",
+      "glossYue": "如果搵到個袋，可唔可以送到我酒店？",
       "audio": "assets/audio/lines/t10-l7.mp3",
       "audioSlow": "assets/audio/lines/t10-l7-slow.mp3",
-      "say": "Could you deliver the bag to my hotel if you find it after you finish this search?",
+      "say": "If you find the bag, could you deliver it to my hotel?",
       "hideGloss": true
     },
     {
@@ -169,7 +169,7 @@
     },
     {
       "pattern": "Could you ___ the bag to my hotel if you find it after this search?",
-      "example": "Could you deliver the bag to my hotel if you find it after you finish this search?",
+      "example": "If you find the bag, could you deliver it to my hotel?",
       "glossYue": "可唔可以送到酒店？",
       "answer": "deliver",
       "choices": [
@@ -190,7 +190,7 @@
       "choices": [
         "The tag number is HK four eight two.",
         "It is a blue suitcase with a red ribbon.",
-        "Could you deliver the bag to my hotel if you find it after you finish this search?"
+        "If you find the bag, could you deliver it to my hotel?"
       ],
       "answer": 0,
       "explain": "讀 baggage receipt 上面嘅號碼。"
@@ -219,7 +219,7 @@
       {
         "partner": "Opal",
         "partnerId": "opal",
-        "line": "Could you describe the missing bag for me, and tell me the colour if you remember it?",
+        "line": "Could you describe the missing bag, and the colour if you remember?",
         "audio": "assets/audio/lines/t10-l2.mp3",
         "audioSlow": "assets/audio/lines/t10-l2-slow.mp3",
         "expect": "It is a blue suitcase with a red ribbon.",
@@ -250,7 +250,7 @@
         "line": "Please complete this claim form with me. The bag still isn't on the belt.",
         "audio": "assets/audio/lines/t10-l6.mp3",
         "audioSlow": "assets/audio/lines/t10-l6-slow.mp3",
-        "expect": "Could you deliver the bag to my hotel if you find it after you finish this search?",
+        "expect": "If you find the bag, could you deliver it to my hotel?",
         "keywords": [
           "hotel",
           "deliver"
@@ -295,7 +295,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「Could you deliver the bag to my hotel if you find it after you finish this search?」，deliver 係咩意思？",
+      "prompt": "你講「If you find the bag, could you deliver it to my hotel?」，deliver 係咩意思？",
       "choices": [
         "索償",
         "轉盤",

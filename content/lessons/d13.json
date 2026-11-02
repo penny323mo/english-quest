@@ -62,11 +62,11 @@
       "id": "d13-l2",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "I see. Does that toothache on the left hurt when you bite down?",
+      "text": "I see. Does the left side hurt when you bite down?",
       "glossYue": "明白。左邊咬落去痛唔痛？",
       "audio": "assets/audio/lines/d13-l2.mp3",
       "audioSlow": "assets/audio/lines/d13-l2-slow.mp3",
-      "say": "I see. Does that toothache on the left hurt when you bite down?",
+      "say": "I see. Does the left side hurt when you bite down?",
       "hideGloss": false
     },
     {
@@ -106,11 +106,11 @@
       "id": "d13-l6",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "The small one is enough, and we use anaesthetic on that area first.",
-      "glossYue": "小小嗰個夠，我哋會先喺嗰度打麻醉。",
+      "text": "A small filling is enough. We'll use anaesthetic on that area first.",
+      "glossYue": "小小補牙就夠。我哋會先喺嗰度打麻醉。",
       "audio": "assets/audio/lines/d13-l6.mp3",
       "audioSlow": "assets/audio/lines/d13-l6-slow.mp3",
-      "say": "The small one is enough, and we use anaesthetic on that area first.",
+      "say": "A small filling is enough. We'll use anaesthetic on that area first.",
       "hideGloss": false
     },
     {
@@ -128,11 +128,11 @@
       "id": "d13-l8",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "It is eight hundred dollars for the filling. Don't eat for two hours.",
+      "text": "The filling is eight hundred dollars. Please don't eat for two hours.",
       "glossYue": "補牙八百蚊。兩小時內唔好食嘢。",
       "audio": "assets/audio/lines/d13-l8.mp3",
       "audioSlow": "assets/audio/lines/d13-l8-slow.mp3",
-      "say": "It is eight hundred dollars for the filling. Don't eat for two hours.",
+      "say": "The filling is eight hundred dollars. Please don't eat for two hours.",
       "hideGloss": false
     }
   ],
@@ -143,7 +143,7 @@
       {
         "partner": "Ben",
         "partnerId": "ben",
-        "line": "I see. Does that toothache on the left hurt when you bite down?",
+        "line": "I see. Does the left side hurt when you bite down?",
         "audio": "assets/audio/lines/d13-l2.mp3",
         "audioSlow": "assets/audio/lines/d13-l2-slow.mp3",
         "expect": "Yes, it hurts when I bite. Could you please take an X-ray?",
@@ -171,7 +171,7 @@
       {
         "partner": "Ben",
         "partnerId": "ben",
-        "line": "The small one is enough, and we use anaesthetic on that area first.",
+        "line": "A small filling is enough. We'll use anaesthetic on that area first.",
         "audio": "assets/audio/lines/d13-l6.mp3",
         "audioSlow": "assets/audio/lines/d13-l6-slow.mp3",
         "expect": "What will the filling cost me, and when is the next visit?",
@@ -206,7 +206,7 @@
       "explain": "Ｘ光。"
     },
     {
-      "prompt": "The small one is enough, and we use anaesthetic on that area first. 呢句即係點？",
+      "prompt": "A small filling is enough. We'll use anaesthetic on that area first. 呢句即係點？",
       "choices": [
         "關於牙痛",
         "關於補牙",
@@ -240,8 +240,8 @@
       ]
     },
     {
-      "pattern": "The small one is enough, and we use ___ on that area first.",
-      "example": "The small one is enough, and we use anaesthetic on that area first.",
+      "pattern": "A small filling is enough. We'll use ___ on that area first.",
+      "example": "A small filling is enough. We'll use anaesthetic on that area first.",
       "glossYue": "小小嗰個夠，我哋會先喺嗰度打麻醉。",
       "answer": "anaesthetic",
       "choices": [
@@ -343,7 +343,7 @@
     },
     {
       "type": "choice",
-      "prompt": "The small one is enough, and we use ___ on that area first. 呢句入面，邊個字先啱？",
+      "prompt": "A small filling is enough. We'll use ___ on that area first. 呢句入面，邊個字先啱？",
       "choices": [
         "toothache",
         "anaesthetic",

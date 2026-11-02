@@ -33,11 +33,11 @@
       "id": "w5-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I am calling about an order. The reference is on the box.",
-      "glossYue": "我打嚟問一張單。參考編號喺盒上面。",
+      "text": "I'm calling about an order. The reference number is on the box.",
+      "glossYue": "我打嚟問張單。參考編號喺盒上面。",
       "audio": "assets/audio/lines/w5-l1.mp3",
       "audioSlow": "assets/audio/lines/w5-l1-slow.mp3",
-      "say": "I am calling about an order. The reference is on the box."
+      "say": "I'm calling about an order. The reference number is on the box."
     },
     {
       "id": "w5-l2",
@@ -54,11 +54,11 @@
       "id": "w5-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The clasp broke last week, so I'd like a clear update, please.",
-      "glossYue": "個扣上星期爛咗，唔該話我知清楚進度。",
+      "text": "The clasp broke last week. Could I get a clear update, please?",
+      "glossYue": "個扣上星期爛咗。可唔可以話我知而家進度？",
       "audio": "assets/audio/lines/w5-l3.mp3",
       "audioSlow": "assets/audio/lines/w5-l3-slow.mp3",
-      "say": "The clasp broke last week, so I'd like a clear update, please.",
+      "say": "The clasp broke last week. Could I get a clear update, please?",
       "hideGloss": true
     },
     {
@@ -109,17 +109,17 @@
       "id": "w5-l8",
       "speaker": "ren",
       "speakerLabel": "Ren",
-      "text": "I will call you by Friday with a compensation update once the workshop agrees.",
-      "glossYue": "我星期五會打電話話你知賠償進度，等工場同意。",
+      "text": "I'll call you by Friday with an update, once the workshop agrees.",
+      "glossYue": "工場同意之後，我星期五之前打電話話你知進度。",
       "audio": "assets/audio/lines/w5-l8.mp3",
       "audioSlow": "assets/audio/lines/w5-l8-slow.mp3",
-      "say": "I will call you by Friday with a compensation update once the workshop agrees.",
+      "say": "I'll call you by Friday with an update, once the workshop agrees.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "I am calling about an order. The reference is on the box. 呢句即係點？",
+      "prompt": "I'm calling about an order. The reference number is on the box. 呢句即係點？",
       "choices": [
         "打嚟問一張單，編號喺禮盒",
         "打嚟改訂位",
@@ -152,7 +152,7 @@
   "chunks": [
     {
       "pattern": "I am calling about an ___. The reference is on the box.",
-      "example": "I am calling about an order. The reference is on the box.",
+      "example": "I'm calling about an order. The reference number is on the box.",
       "glossYue": "我打嚟問一張近期嘅⋯⋯。",
       "answer": "order",
       "choices": [
@@ -229,7 +229,7 @@
         "line": "I'm sorry about the delay. Let me look into the broken clasp.",
         "audio": "assets/audio/lines/w5-l2.mp3",
         "audioSlow": "assets/audio/lines/w5-l2-slow.mp3",
-        "expect": "The clasp broke last week, so I'd like a clear update, please.",
+        "expect": "The clasp broke last week. Could I get a clear update, please?",
         "keywords": [
           "clasp",
           "update"

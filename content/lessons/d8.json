@@ -33,7 +33,7 @@
       "speaker": "nell",
       "speakerLabel": "Nell",
       "text": "Hello, the kitchen tap has a leak.",
-      "glossYue": "你好，廚房水龍頭有少少漏水。",
+      "glossYue": "你好，廚房水龍頭漏水。",
       "audio": "assets/audio/lines/d8-l1.mp3",
       "audioSlow": "assets/audio/lines/d8-l1-slow.mp3",
       "say": "Hello, the kitchen tap has a leak.",
@@ -43,11 +43,11 @@
       "id": "d8-l2",
       "speaker": "glen",
       "speakerLabel": "Glen",
-      "text": "I am sorry about the leak. When did the tap start?",
-      "glossYue": "唔好意思。水龍頭幾時開始漏？",
+      "text": "I'm sorry about the leak. When did it start?",
+      "glossYue": "唔好意思。幾時開始漏？",
       "audio": "assets/audio/lines/d8-l2.mp3",
       "audioSlow": "assets/audio/lines/d8-l2-slow.mp3",
-      "say": "I am sorry about the leak. When did the tap start?",
+      "say": "I'm sorry about the leak. When did it start?",
       "hideGloss": false
     },
     {
@@ -65,11 +65,11 @@
       "id": "d8-l4",
       "speaker": "glen",
       "speakerLabel": "Glen",
-      "text": "A repair visit can come tomorrow after six. Will you be out then?",
-      "glossYue": "維修可以聽日傍晚六點之後嚟。嗰陣你會唔會唔喺單位？",
+      "text": "We can come tomorrow after six. Will you be out then?",
+      "glossYue": "我哋聽日六點之後可以嚟。嗰陣你會唔會外出？",
       "audio": "assets/audio/lines/d8-l4.mp3",
       "audioSlow": "assets/audio/lines/d8-l4-slow.mp3",
-      "say": "A repair visit can come tomorrow after six. Will you be out then?",
+      "say": "We can come tomorrow after six. Will you be out then?",
       "hideGloss": true
     },
     {
@@ -87,11 +87,11 @@
       "id": "d8-l6",
       "speaker": "glen",
       "speakerLabel": "Glen",
-      "text": "Can the team have access to the flat while you are out after six tomorrow evening?",
-      "glossYue": "你聽日傍晚六點之後外出，同事可唔可以入單位？",
+      "text": "Can someone get into the flat while you're out after six tomorrow?",
+      "glossYue": "你聽日六點之後外出，可唔可以入單位？",
       "audio": "assets/audio/lines/d8-l6.mp3",
       "audioSlow": "assets/audio/lines/d8-l6-slow.mp3",
-      "say": "Can the team have access to the flat while you are out after six tomorrow evening?",
+      "say": "Can someone get into the flat while you're out after six tomorrow?",
       "hideGloss": true
     },
     {
@@ -129,7 +129,7 @@
       "explain": "tap 係水龍頭。leak 係漏水。"
     },
     {
-      "prompt": "A repair visit can come tomorrow after six. Will you be out then? 即係問緊咩？",
+      "prompt": "We can come tomorrow after six. Will you be out then? 即係問緊咩？",
       "choices": [
         "問漏水幾時開始",
         "問聽日六點之後你係咪外出、唔喺單位",
@@ -139,7 +139,7 @@
       "explain": "repair 係維修。flat 係單位。"
     },
     {
-      "prompt": "Can the team have access to the flat while you are out after six tomorrow evening? 即係問緊咩？",
+      "prompt": "Can someone get into the flat while you're out after six tomorrow? 即係問緊咩？",
       "choices": [
         "問水龍頭仲流唔流",
         "問維修要幾耐",
@@ -224,7 +224,7 @@
       {
         "partner": "Glen",
         "partnerId": "glen",
-        "line": "I am sorry about the leak. When did the tap start?",
+        "line": "I'm sorry about the leak. When did it start?",
         "audio": "assets/audio/lines/d8-l2.mp3",
         "audioSlow": "assets/audio/lines/d8-l2-slow.mp3",
         "expect": "The kitchen leak started yesterday.",
@@ -238,7 +238,7 @@
       {
         "partner": "Glen",
         "partnerId": "glen",
-        "line": "A repair visit can come tomorrow after six. Will you be out then?",
+        "line": "We can come tomorrow after six. Will you be out then?",
         "audio": "assets/audio/lines/d8-l4.mp3",
         "audioSlow": "assets/audio/lines/d8-l4-slow.mp3",
         "expect": "I will be out after six tomorrow.",
@@ -252,7 +252,7 @@
       {
         "partner": "Glen",
         "partnerId": "glen",
-        "line": "Can the team have access to the flat while you are out after six tomorrow evening?",
+        "line": "Can someone get into the flat while you're out after six tomorrow?",
         "audio": "assets/audio/lines/d8-l6.mp3",
         "audioSlow": "assets/audio/lines/d8-l6-slow.mp3",
         "expect": "Yes, the front guard can give you access, and the flat key stays at the front desk.",

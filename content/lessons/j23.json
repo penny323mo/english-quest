@@ -90,22 +90,22 @@
       "id": "j23-l7",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "What is the fee if the underwriter asks for a second deductible on Monday morning?",
-      "glossYue": "如果承保人星期一朝早要第二個免賠額，收費係幾多？",
+      "text": "What is the fee if the underwriter wants us in on Monday morning?",
+      "glossYue": "如果承保人星期一朝早要我哋過去，收費係幾多？",
       "audio": "assets/audio/lines/j23-l7.mp3",
       "audioSlow": "assets/audio/lines/j23-l7-slow.mp3",
-      "say": "What is the fee if the underwriter asks for a second deductible on Monday morning?",
+      "say": "What is the fee if the underwriter wants us in on Monday morning?",
       "hideGloss": true
     },
     {
       "id": "j23-l8",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The fee is forty dollars if the underwriter asks, and the deductible stays the same.",
-      "glossYue": "如果承保人要求，收費係四十蚊，免賠額維持不變。",
+      "text": "The fee is forty dollars if they ask, and the deductible stays the same.",
+      "glossYue": "如果佢哋要求，收費係四十蚊，免賠額維持不變。",
       "audio": "assets/audio/lines/j23-l8.mp3",
       "audioSlow": "assets/audio/lines/j23-l8-slow.mp3",
-      "say": "The fee is forty dollars if the underwriter asks, and the deductible stays the same.",
+      "say": "The fee is forty dollars if they ask, and the deductible stays the same.",
       "hideGloss": true
     }
   ],
@@ -131,14 +131,14 @@
       "explain": "免賠額改咗，要問書面估值仲有效冇。"
     },
     {
-      "prompt": "What is the fee if the underwriter asks for a second deductible on Monday morning? 即係問緊咩？",
+      "prompt": "What is the fee if the underwriter wants us in on Monday morning? 即係問緊咩？",
       "choices": [
         "話唔使交檔",
         "話相片唔收",
-        "問星期一第二個免賠額收費幾多"
+        "問星期一過去嘅收費幾多"
       ],
       "answer": 2,
-      "explain": "承保人星期一要第二個免賠額，問收費。"
+      "explain": "承保人星期一要人過去，問收費。"
     }
   ],
   "chunks": [
@@ -247,7 +247,7 @@
         "line": "The underwriter can accept that clear photo, and the claimant may keep the paper original.",
         "audio": "assets/audio/lines/j23-l6.mp3",
         "audioSlow": "assets/audio/lines/j23-l6-slow.mp3",
-        "expect": "What is the fee if the underwriter asks for a second deductible on Monday morning?",
+        "expect": "What is the fee if the underwriter wants us in on Monday morning?",
         "keywords": [
           "deductible",
           "underwriter"
