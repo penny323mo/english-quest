@@ -95,11 +95,11 @@
       "id": "r8-l7",
       "speaker": "pesi",
       "speakerLabel": "Pesi",
-      "text": "You can pay on delivery in cash when it reaches your door.",
-      "glossYue": "你可以送到先畀現金，送到門口先畀。",
+      "text": "You can pay on delivery in cash.",
+      "glossYue": "你可以送到先畀現金。",
       "audio": "assets/audio/lines/r8-l7.mp3",
       "audioSlow": "assets/audio/lines/r8-l7-slow.mp3",
-      "say": "You can pay on delivery in cash when it reaches your door.",
+      "say": "You can pay on delivery in cash.",
       "hideGloss": true
     },
     {
@@ -171,7 +171,7 @@
     },
     {
       "pattern": "You can ___ in cash only when the takeaway reaches the door.",
-      "example": "You can pay on delivery in cash when it reaches your door.",
+      "example": "You can pay on delivery in cash.",
       "glossYue": "你可以送到先畀現金。",
       "answer": "pay on delivery",
       "choices": [
@@ -249,7 +249,7 @@
       {
         "partner": "Pesi",
         "partnerId": "pesi",
-        "line": "You can pay on delivery in cash when it reaches your door.",
+        "line": "You can pay on delivery in cash.",
         "audio": "assets/audio/lines/r8-l7.mp3",
         "audioSlow": "assets/audio/lines/r8-l7-slow.mp3",
         "expect": "Thank you. I'll wait at the office door until it arrives.",
@@ -297,7 +297,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "舖頭講「You can pay on delivery in cash when it reaches your door.」，pay on delivery 係咩意思？",
+      "prompt": "舖頭講「You can pay on delivery in cash.」，pay on delivery 係咩意思？",
       "choices": [
         "送到先畀錢",
         "現金找續",

@@ -57,11 +57,11 @@
       "id": "j24-l4",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Rhodium plating will keep it bright, and Friday noon is fine here.",
-      "glossYue": "鍍銠可以保持光亮，星期五中午可以喺度做。",
+      "text": "Rhodium plating will keep it bright. Friday noon is fine here.",
+      "glossYue": "鍍銠可以保持光亮。星期五中午可以喺度做。",
       "audio": "assets/audio/lines/j24-l4.mp3",
       "audioSlow": "assets/audio/lines/j24-l4-slow.mp3",
-      "say": "Rhodium plating will keep it bright, and Friday noon is fine here.",
+      "say": "Rhodium plating will keep it bright. Friday noon is fine here.",
       "hideGloss": true
     },
     {
@@ -79,11 +79,11 @@
       "id": "j24-l6",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The filigree quote is two thousand dollars, and Friday night is fine for the pair.",
-      "glossYue": "金絲報價二千蚊，星期五晚上可以取嗰對。",
+      "text": "The filigree quote is two thousand dollars. Friday night is fine for the pair.",
+      "glossYue": "金絲報價二千蚊。星期五晚上可以取嗰對。",
       "audio": "assets/audio/lines/j24-l6.mp3",
       "audioSlow": "assets/audio/lines/j24-l6-slow.mp3",
-      "say": "The filigree quote is two thousand dollars, and Friday night is fine for the pair.",
+      "say": "The filigree quote is two thousand dollars. Friday night is fine for the pair.",
       "hideGloss": true
     },
     {
@@ -230,7 +230,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "Rhodium plating will keep it bright, and Friday noon is fine here.",
+        "line": "Rhodium plating will keep it bright. Friday noon is fine here.",
         "audio": "assets/audio/lines/j24-l4.mp3",
         "audioSlow": "assets/audio/lines/j24-l4-slow.mp3",
         "expect": "Is the filigree quote lower if I take that rhodium pair home this Friday night?",
@@ -244,7 +244,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "The filigree quote is two thousand dollars, and Friday night is fine for the pair.",
+        "line": "The filigree quote is two thousand dollars. Friday night is fine for the pair.",
         "audio": "assets/audio/lines/j24-l6.mp3",
         "audioSlow": "assets/audio/lines/j24-l6-slow.mp3",
         "expect": "Please keep that hallmark note until I decide on the gold prong.",

@@ -96,11 +96,11 @@
       "id": "j10-l7",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "If you prefer this necklace, the chain goes well, and the box is ready.",
-      "glossYue": "如果你鍾意呢條頸鏈，條連住嘅鏈都啱，禮盒準備好。",
+      "text": "If you prefer this necklace, the chain matches. The box is ready.",
+      "glossYue": "如果你鍾意呢條頸鏈，條鏈都襯。禮盒準備好。",
       "audio": "assets/audio/lines/j10-l7.mp3",
       "audioSlow": "assets/audio/lines/j10-l7-slow.mp3",
-      "say": "If you prefer this necklace, the chain goes well, and the box is ready.",
+      "say": "If you prefer this necklace, the chain matches. The box is ready.",
       "hideGloss": true
     },
     {
@@ -268,7 +268,7 @@
         "line": "Please recommend your most popular option.",
         "audio": "assets/audio/lines/j10-l6.mp3",
         "audioSlow": "assets/audio/lines/j10-l6-slow.mp3",
-        "expect": "If you prefer this necklace, the chain goes well, and the box is ready.",
+        "expect": "If you prefer this necklace, the chain matches. The box is ready.",
         "keywords": [
           "matching",
           "pair"

@@ -61,11 +61,11 @@
       "id": "r15-l2",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Yes. This buffet is for here only, so takeaway is banned.",
-      "glossYue": "係。呢個自助餐只可以堂食，所以唔可以拎走。",
+      "text": "Yes. This buffet is for here only.",
+      "glossYue": "係。呢個自助餐只可以堂食。",
       "audio": "assets/audio/lines/r15-l2.mp3",
       "audioSlow": "assets/audio/lines/r15-l2-slow.mp3",
-      "say": "Yes. This buffet is for here only, so takeaway is banned.",
+      "say": "Yes. This buffet is for here only.",
       "hideGloss": false
     },
     {
@@ -142,7 +142,7 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "Yes. This buffet is for here only, so takeaway is banned.",
+        "line": "Yes. This buffet is for here only.",
         "audio": "assets/audio/lines/r15-l2.mp3",
         "audioSlow": "assets/audio/lines/r15-l2-slow.mp3",
         "expect": "Are soft drinks included, or do I pay for each one?",
@@ -217,9 +217,9 @@
   ],
   "chunks": [
     {
-      "pattern": "Yes. This ___ is for here only, so takeaway is banned.",
-      "example": "Yes. This buffet is for here only, so takeaway is banned.",
-      "glossYue": "係。呢個自助餐只可以堂食，所以唔可以拎走。",
+      "pattern": "Yes. This ___ is for here only.",
+      "example": "Yes. This buffet is for here only.",
+      "glossYue": "係。呢個自助餐只可以堂食。",
       "answer": "buffet",
       "choices": [
         "buffet",

@@ -29,22 +29,22 @@
       "id": "d2-l1",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "Good morning. Come forward, and I can help you open the account today.",
-      "glossYue": "早晨。請上前，我今日可以幫你開戶口。",
+      "text": "Good morning. Please come forward. I can help you open the account today.",
+      "glossYue": "早晨。請上前。我今日可以幫你開戶口。",
       "audio": "assets/audio/lines/d2-l1.mp3",
       "audioSlow": "assets/audio/lines/d2-l1-slow.mp3",
-      "say": "Good morning. Come forward, and I can help you open the account today.",
+      "say": "Good morning. Please come forward. I can help you open the account today.",
       "hideGloss": false
     },
     {
       "id": "d2-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I would like to open an account, and I lost my bank card.",
-      "glossYue": "我想開戶口，我張銀行卡唔見咗。",
+      "text": "I lost my bank card. I would also like to open an account.",
+      "glossYue": "我張銀行卡唔見咗。我亦都想開戶口。",
       "audio": "assets/audio/lines/d2-l2.mp3",
       "audioSlow": "assets/audio/lines/d2-l2-slow.mp3",
-      "say": "I would like to open an account, and I lost my bank card.",
+      "say": "I lost my bank card. I would also like to open an account.",
       "hideGloss": true
     },
     {
@@ -149,7 +149,7 @@
   "chunks": [
     {
       "pattern": "I would like to open an ___ here, and I have lost my bank card.",
-      "example": "I would like to open an account, and I lost my bank card.",
+      "example": "I lost my bank card. I would also like to open an account.",
       "glossYue": "我想開一個⋯⋯。",
       "answer": "account",
       "choices": [
@@ -234,10 +234,10 @@
       {
         "partner": "Ben",
         "partnerId": "ben",
-        "line": "Good morning. Come forward, and I can help you open the account today.",
+        "line": "Good morning. Please come forward. I can help you open the account today.",
         "audio": "assets/audio/lines/d2-l1.mp3",
         "audioSlow": "assets/audio/lines/d2-l1-slow.mp3",
-        "expect": "I would like to open an account, and I lost my bank card.",
+        "expect": "I lost my bank card. I would also like to open an account.",
         "keywords": [
           "account",
           "card"
