@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="theme-color" content="#E8F6FF" />
-    <meta name="color-scheme" content="only light" />
+    <meta name="color-scheme" content="light" />
+    <meta name="supported-color-schemes" content="light" />
     <meta name="description" content="情景英文：珠寶櫃檯、登機、入座。廣東話介面，美式發音，進度只留喺你部機。" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -39,7 +40,7 @@
           if (!controller) return Promise.resolve(null);
           return new Promise(function (resolve) {
             var channel = new MessageChannel();
-            var timer = setTimeout(function () { resolve(false); }, 400);
+            var timer = setTimeout(function () { resolve(false); }, 1500);
             channel.port1.onmessage = function (event) {
               clearTimeout(timer);
               resolve(Boolean(event.data && event.data.eq === 2));

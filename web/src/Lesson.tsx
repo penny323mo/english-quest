@@ -60,19 +60,19 @@ export function LessonView({ id }: { id: string }) {
   if (!lesson || !profile) {
     return (
       <section className="screen plain">
-        <a className="back" href="#/">返路線</a>
+        <a className="back" href="#/">返路徑</a>
         <h1>搵唔到呢課</h1>
-        <p className="lede">路線上面未開放嘅課，唔會有連結。</p>
+        <p className="lede">路徑上面冇呢課，唔會有連結。</p>
       </section>
     );
   }
   if (!isLessonOpen(lesson.id, profile.goal, progress)) {
     return (
       <section className="screen plain">
-        <a className="back" href="#/">返路線</a>
+        <a className="back" href="#/">返路徑</a>
         <h1>{lesson.titleYue}</h1>
         <p className="lede">先完成上一課，呢度就會開。如果你揀咗相關目標，該組第一課會提早開。</p>
-        <a className="btn" href="#/">返路線</a>
+        <a className="btn" href="#/">返路徑</a>
       </section>
     );
   }
@@ -743,7 +743,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
       <>
         <h2>今晚就到呢度</h2>
         <p className="lede">呢輪九十七課你行完啦。到期嘅卡會喺練習等你。</p>
-        <a className="btn block" href="#/">返路線</a>
+        <a className="btn block" href="#/">返路徑</a>
       </>
     );
   }
@@ -756,9 +756,9 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
       {open ? (
         <a className="btn block" href={`#/lesson/${nxt.id}`}>開始</a>
       ) : (
-        <p className="note">下一課未開。返路線就見到鎖。</p>
+        <p className="note">下一課仲鎖住。返路徑就見到鎖。</p>
       )}
-      <a className="btn ghost block" href="#/">返路線</a>
+      <a className="btn ghost block" href="#/">返路徑</a>
     </>
   );
 }
@@ -958,7 +958,7 @@ function SpeakBox({
           {recording ? "停錄音" : "錄音，同模範比較"}
         </button>
       )}
-      <p className="mic-state">{micError ? "咪未開" : recording || listening ? "錄音緊" : userUrl || transcript ? "可以比較" : "未錄"}</p>
+      <p className="mic-state">{micError ? "咪開唔到" : recording || listening ? "錄音緊" : userUrl || transcript ? "可以比較" : "未錄"}</p>
       {recording && (
         <div className="wave" aria-hidden="true">
           <span /><span /><span /><span /><span />
@@ -996,7 +996,7 @@ function SpeakBox({
         <button className="btn ghost" type="button" onClick={() => playAsset(modelSlow)}>慢速模範</button>
         <button className="btn ghost" type="button" onClick={() => playKaraoke(modelSlow)}>慢速逐字</button>
       </div>
-      {micError && <p className="note">咪未開。你可以聽模範，然後繼續。呢課唔會卡住。</p>}
+      {micError && <p className="note">咪開唔到。你可以聽模範，然後繼續。呢課唔會卡住。</p>}
       <p className="fine">{tip}</p>
     </div>
   );
