@@ -41,22 +41,22 @@
       "id": "j10-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "If I am getting the necklace today, do the matching earrings go well with it too?",
-      "glossYue": "如果我今日買條頸鏈，對襯嘅耳環會唔會都好配？",
+      "text": "If I buy the necklace today, will the matching earrings go with it?",
+      "glossYue": "如果我今日買條頸鏈，對襯嘅耳環配唔配？",
       "audio": "assets/audio/lines/j10-l2.mp3",
       "audioSlow": "assets/audio/lines/j10-l2-slow.mp3",
-      "say": "If I am getting the necklace today, do the matching earrings go well with it too?",
+      "say": "If I buy the necklace today, will the matching earrings go with it?",
       "hideGloss": true
     },
     {
       "id": "j10-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Yes, this popular set is optional too.",
-      "glossYue": "係，呢套好多人揀，可以唔要。",
+      "text": "Yes. This set is popular, and you can leave it out.",
+      "glossYue": "係。呢套好多人揀，你可以唔要。",
       "audio": "assets/audio/lines/j10-l3.mp3",
       "audioSlow": "assets/audio/lines/j10-l3-slow.mp3",
-      "say": "Yes, this popular set is optional too.",
+      "say": "Yes. This set is popular, and you can leave it out.",
       "hideGloss": true
     },
     {
@@ -74,22 +74,22 @@
       "id": "j10-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "The lettering is optional, and you might like a polish with the set.",
-      "glossYue": "刻字完全可揀，你都可以要套裝上面少少擦亮。",
+      "text": "The engraving is optional. We can polish the set for you too.",
+      "glossYue": "刻字可以唔要。我哋亦都可以幫你擦亮套裝。",
       "audio": "assets/audio/lines/j10-l5.mp3",
       "audioSlow": "assets/audio/lines/j10-l5-slow.mp3",
-      "say": "The lettering is optional, and you might like a polish with the set.",
+      "say": "The engraving is optional. We can polish the set for you too.",
       "hideGloss": false
     },
     {
       "id": "j10-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Please recommend one popular option only.",
-      "glossYue": "請只推薦一個多人揀嘅選擇。",
+      "text": "Please just recommend one popular option.",
+      "glossYue": "請淨係推薦一個多人揀嘅選擇。",
       "audio": "assets/audio/lines/j10-l6.mp3",
       "audioSlow": "assets/audio/lines/j10-l6-slow.mp3",
-      "say": "Please recommend one popular option only.",
+      "say": "Please just recommend one popular option.",
       "hideGloss": true
     },
     {
@@ -107,11 +107,11 @@
       "id": "j10-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will take the matching set without the engraving, and thank you for the gentle offer.",
-      "glossYue": "我要呢套襯嘅，唔使刻字，多謝你輕輕咁提議。",
+      "text": "I will take the matching set without the engraving, and thank you for the offer.",
+      "glossYue": "我要呢套襯嘅，唔使刻字，多謝你嘅提議。",
       "audio": "assets/audio/lines/j10-l8.mp3",
       "audioSlow": "assets/audio/lines/j10-l8-slow.mp3",
-      "say": "I will take the matching set without the engraving, and thank you for the gentle offer.",
+      "say": "I will take the matching set without the engraving, and thank you for the offer.",
       "hideGloss": true
     }
   ],
@@ -172,7 +172,7 @@
     },
     {
       "pattern": "The engraving is fully ___, and you might also like a simple polish with the set.",
-      "example": "The lettering is optional, and you might like a polish with the set.",
+      "example": "The engraving is optional. We can polish the set for you too.",
       "glossYue": "刻字完全⋯⋯。",
       "answer": "optional",
       "choices": [
@@ -195,7 +195,7 @@
   ],
   "shadow": {
     "lineId": "j10-l5",
-    "hint": "The lettering is optional, and you might like a polish with the set."
+    "hint": "The engraving is optional. We can polish the set for you too."
   },
   "build": [
     {
@@ -237,10 +237,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "If I am getting the necklace today, do the matching earrings go well with it too?",
+        "line": "If I buy the necklace today, will the matching earrings go with it?",
         "audio": "assets/audio/lines/j10-l2.mp3",
         "audioSlow": "assets/audio/lines/j10-l2-slow.mp3",
-        "expect": "Yes, this popular set is optional too.",
+        "expect": "Yes. This set is popular, and you can leave it out.",
         "keywords": [
           "optional",
           "engraving"
@@ -254,7 +254,7 @@
         "line": "I like the pair, but I do not need the engraving if the price rises.",
         "audio": "assets/audio/lines/j10-l4.mp3",
         "audioSlow": "assets/audio/lines/j10-l4-slow.mp3",
-        "expect": "The lettering is optional, and you might like a polish with the set.",
+        "expect": "The engraving is optional. We can polish the set for you too.",
         "keywords": [
           "optional",
           "polish"
@@ -265,7 +265,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Please recommend one popular option only.",
+        "line": "Please just recommend one popular option.",
         "audio": "assets/audio/lines/j10-l6.mp3",
         "audioSlow": "assets/audio/lines/j10-l6-slow.mp3",
         "expect": "If you prefer this necklace, the chain goes well, and the box is ready.",

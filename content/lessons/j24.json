@@ -90,11 +90,11 @@
       "id": "j24-l7",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Please set that hallmark note aside until I decide on the gold prong later.",
-      "glossYue": "請先放低嗰張印記字條，我遲啲再決定金爪托。",
+      "text": "Please keep that hallmark note until I decide on the gold prong.",
+      "glossYue": "請留住嗰張印記字條，我遲啲再決定金爪托。",
       "audio": "assets/audio/lines/j24-l7.mp3",
       "audioSlow": "assets/audio/lines/j24-l7-slow.mp3",
-      "say": "Please set that hallmark note aside until I decide on the gold prong later.",
+      "say": "Please keep that hallmark note until I decide on the gold prong.",
       "hideGloss": true
     },
     {
@@ -247,7 +247,7 @@
         "line": "The filigree quote is two thousand dollars, and Friday night is fine for the pair.",
         "audio": "assets/audio/lines/j24-l6.mp3",
         "audioSlow": "assets/audio/lines/j24-l6-slow.mp3",
-        "expect": "Please set that hallmark note aside until I decide on the gold prong later.",
+        "expect": "Please keep that hallmark note until I decide on the gold prong.",
         "keywords": [
           "hallmark",
           "prong"
@@ -282,7 +282,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Please set that hallmark note aside until I decide on the gold prong later. 呢句入面，邊個意思先啱？",
+      "prompt": "Please keep that hallmark note until I decide on the gold prong. 呢句入面，邊個意思先啱？",
       "choices": [
         "報價",
         "印記",

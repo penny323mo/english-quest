@@ -27,11 +27,11 @@
       "id": "j13-l1",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "Good morning. Are you looking for a bulk quantity of gifts with your logo?",
-      "glossYue": "早晨。你係咪想訂一批禮品，盒蓋有你嘅標誌？",
+      "text": "Good morning. Do you want a bulk order of gifts with your logo?",
+      "glossYue": "早晨。你係咪想訂一批有你標誌嘅禮品？",
       "audio": "assets/audio/lines/j13-l1.mp3",
       "audioSlow": "assets/audio/lines/j13-l1-slow.mp3",
-      "say": "Good morning. Are you looking for a bulk quantity of gifts with your logo?",
+      "say": "Good morning. Do you want a bulk order of gifts with your logo?",
       "hideGloss": false
     },
     {
@@ -39,7 +39,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "We need thirty pieces for the office, and we want the logo engraved on it.",
-      "glossYue": "我哋今個月要三十件畀公司，要喺上面刻標誌。",
+      "glossYue": "我哋要三十件畀公司，要喺上面刻標誌。",
       "audio": "assets/audio/lines/j13-l2.mp3",
       "audioSlow": "assets/audio/lines/j13-l2-slow.mp3",
       "say": "We need thirty pieces for the office, and we want the logo engraved on it.",
@@ -60,11 +60,11 @@
       "id": "j13-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could you do a better price for those thirty pieces if we confirm the artwork with you?",
-      "glossYue": "如果我哋同你確認稿，三十件可唔可以有個好啲嘅價錢？",
+      "text": "Could you give us a better price on thirty pieces if we confirm the artwork?",
+      "glossYue": "如果我哋確認稿，三十件可唔可以平啲？",
       "audio": "assets/audio/lines/j13-l4.mp3",
       "audioSlow": "assets/audio/lines/j13-l4-slow.mp3",
-      "say": "Could you do a better price for those thirty pieces if we confirm the artwork with you?",
+      "say": "Could you give us a better price on thirty pieces if we confirm the artwork?",
       "hideGloss": false
     },
     {
@@ -104,17 +104,17 @@
       "id": "j13-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will read it and reply if the price and the three weeks suit our office.",
-      "glossYue": "我今晚會睇，如果價錢同三個星期都啱公司，我就覆你。",
+      "text": "I'll read it tonight and reply if the price and the three weeks suit us.",
+      "glossYue": "我今晚會睇，如果價錢同三個星期都啱我就覆你。",
       "audio": "assets/audio/lines/j13-l8.mp3",
       "audioSlow": "assets/audio/lines/j13-l8-slow.mp3",
-      "say": "I will read it and reply if the price and the three weeks suit our office.",
+      "say": "I'll read it tonight and reply if the price and the three weeks suit us.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "Good morning. Are you looking for a bulk quantity of gifts with your logo? 即係問緊咩？",
+      "prompt": "Good morning. Do you want a bulk order of gifts with your logo? 即係問緊咩？",
       "choices": [
         "想訂一批細禮品，盒蓋刻標誌",
         "想訂三十件，但唔使刻標誌",
@@ -124,7 +124,7 @@
       "explain": "bulk 係批量。logo 係標誌。"
     },
     {
-      "prompt": "Could you do a better price for those thirty pieces if we confirm the artwork with you? 即係問緊咩？",
+      "prompt": "Could you give us a better price on thirty pieces if we confirm the artwork? 即係問緊咩？",
       "choices": [
         "三十件唔使報價，只係問交貨",
         "想將標誌改做電郵，唔係問報價",
@@ -190,7 +190,7 @@
       "choices": [
         "Please email that written quote to our office, and put the lead time in the email.",
         "We need thirty pieces for the office, and we want the logo engraved on it.",
-        "I will read it and reply if the price and the three weeks suit our office."
+        "I'll read it tonight and reply if the price and the three weeks suit us."
       ],
       "answer": 0,
       "explain": "講 email 同 quote。"
@@ -219,7 +219,7 @@
       {
         "partner": "Kai",
         "partnerId": "kai",
-        "line": "Good morning. Are you looking for a bulk quantity of gifts with your logo?",
+        "line": "Good morning. Do you want a bulk order of gifts with your logo?",
         "audio": "assets/audio/lines/j13-l1.mp3",
         "audioSlow": "assets/audio/lines/j13-l1-slow.mp3",
         "expect": "We need thirty pieces for the office, and we want the logo engraved on it.",
@@ -236,7 +236,7 @@
         "line": "The lead time for that logo engraving is three weeks after you approve the artwork.",
         "audio": "assets/audio/lines/j13-l3.mp3",
         "audioSlow": "assets/audio/lines/j13-l3-slow.mp3",
-        "expect": "Could you do a better price for those thirty pieces if we confirm the artwork with you?",
+        "expect": "Could you give us a better price on thirty pieces if we confirm the artwork?",
         "keywords": [
           "price",
           "artwork"

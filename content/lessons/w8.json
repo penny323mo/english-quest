@@ -46,11 +46,11 @@
       "id": "w8-l2",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Which sample run is behind schedule, and who owns that part?",
-      "glossYue": "邊次樣辦落後咗，邊個負責嗰部分？",
+      "text": "Which sample is running late, and who is looking after it?",
+      "glossYue": "邊次樣辦遲咗，邊個負責？",
       "audio": "assets/audio/lines/w8-l2.mp3",
       "audioSlow": "assets/audio/lines/w8-l2-slow.mp3",
-      "say": "Which sample run is behind schedule, and who owns that part?",
+      "say": "Which sample is running late, and who is looking after it?",
       "hideGloss": false
     },
     {
@@ -90,33 +90,33 @@
       "id": "w8-l6",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Any open questions before we list each action item?",
-      "glossYue": "寫低每項行動之前，仲有冇問題？",
+      "text": "Any questions before we write down each task?",
+      "glossYue": "寫低每項工作之前，仲有冇問題？",
       "audio": "assets/audio/lines/w8-l6.mp3",
       "audioSlow": "assets/audio/lines/w8-l6-slow.mp3",
-      "say": "Any open questions before we list each action item?",
+      "say": "Any questions before we write down each task?",
       "hideGloss": true
     },
     {
       "id": "w8-l7",
       "speaker": "sora",
       "speakerLabel": "Sora",
-      "text": "The action item is mine, and I will call the client Friday.",
-      "glossYue": "呢項行動我負責，我星期五會打畀客戶。",
+      "text": "That task is mine, and I'll call the client on Friday.",
+      "glossYue": "呢項工作我負責，我星期五會打畀客戶。",
       "audio": "assets/audio/lines/w8-l7.mp3",
       "audioSlow": "assets/audio/lines/w8-l7-slow.mp3",
-      "say": "The action item is mine, and I will call the client Friday.",
+      "say": "That task is mine, and I'll call the client on Friday.",
       "hideGloss": true
     },
     {
       "id": "w8-l8",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Send that note after the meeting so I can read it.",
-      "glossYue": "會後請送張字條嚟，等我睇。",
+      "text": "Please send me that note after the meeting so I can read it.",
+      "glossYue": "會後請將張字條送嚟，等我睇。",
       "audio": "assets/audio/lines/w8-l8.mp3",
       "audioSlow": "assets/audio/lines/w8-l8-slow.mp3",
-      "say": "Send that note after the meeting so I can read it.",
+      "say": "Please send me that note after the meeting so I can read it.",
       "hideGloss": true
     }
   ],
@@ -132,21 +132,21 @@
       "explain": "on track 係跟得上進度。meeting 係會議。"
     },
     {
-      "prompt": "Which sample run is behind schedule, and who owns that part? 即係問緊咩？",
+      "prompt": "Which sample is running late, and who is looking after it? 即係問緊咩？",
       "choices": [
         "問字條星期五幾時送",
-        "問邊一部分進度落後、邊個負責",
+        "問邊部分進度落後、邊個負責",
         "問會議可唔可以取消"
       ],
       "answer": 1,
       "explain": "behind schedule 係落後。"
     },
     {
-      "prompt": "Any open questions before we list each action item? 即係問緊咩？",
+      "prompt": "Any questions before we write down each task? 即係問緊咩？",
       "choices": [
         "問星期五邊個放假",
         "問進度係咪跟得上",
-        "問寫行動之前仲有冇問題"
+        "問寫低每項工作之前仲有冇問題"
       ],
       "answer": 2,
       "explain": "question 係問題。action item 係行動。"
@@ -198,7 +198,7 @@
       "choices": [
         "That sample run is behind schedule, and I own it.",
         "I will follow up by Friday and send the note that day.",
-        "The action item is mine, and I will call the client Friday."
+        "That task is mine, and I'll call the client on Friday."
       ],
       "answer": 0,
       "explain": "講 behind schedule。"
@@ -227,7 +227,7 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "Which sample run is behind schedule, and who owns that part?",
+        "line": "Which sample is running late, and who is looking after it?",
         "audio": "assets/audio/lines/w8-l2.mp3",
         "audioSlow": "assets/audio/lines/w8-l2-slow.mp3",
         "expect": "That sample run is behind schedule, and I own it.",
@@ -255,10 +255,10 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "Any open questions before we list each action item?",
+        "line": "Any questions before we write down each task?",
         "audio": "assets/audio/lines/w8-l6.mp3",
         "audioSlow": "assets/audio/lines/w8-l6-slow.mp3",
-        "expect": "The action item is mine, and I will call the client Friday.",
+        "expect": "That task is mine, and I'll call the client on Friday.",
         "keywords": [
           "action",
           "Friday"

@@ -24,11 +24,11 @@
       "id": "w14-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could we please move the Monday review if the forecast shows an overrun before Friday?",
-      "glossYue": "如果預測喺星期五之前顯示超支，可唔可以改星期一嘅審核？",
+      "text": "Could we move Monday's review if the forecast shows we'll go over budget before Friday?",
+      "glossYue": "如果預測星期五之前會超支，可唔可以改星期一嘅審核？",
       "audio": "assets/audio/lines/w14-l1.mp3",
       "audioSlow": "assets/audio/lines/w14-l1-slow.mp3",
-      "say": "Could we please move the Monday review if the forecast shows an overrun before Friday?",
+      "say": "Could we move Monday's review if the forecast shows we'll go over budget before Friday?",
       "hideGloss": false
     },
     {
@@ -111,7 +111,7 @@
   ],
   "understand": [
     {
-      "prompt": "Could we please move the Monday review if the forecast shows an overrun before Friday? 即係問緊咩？",
+      "prompt": "Could we move Monday's review if the forecast shows we'll go over budget before Friday? 即係問緊咩？",
       "choices": [
         "問星期五前預測超支，可唔可以改星期一審核",
         "話預算已經批咗",
@@ -144,7 +144,7 @@
   "chunks": [
     {
       "pattern": "Could we please move the Monday review if the ___ shows an overrun before Friday?",
-      "example": "Could we please move the Monday review if the forecast shows an overrun before Friday?",
+      "example": "Could we move Monday's review if the forecast shows we'll go over budget before Friday?",
       "glossYue": "如果預測喺星期五之前顯示超支，可唔可以改星期一嘅審核？",
       "answer": "forecast",
       "choices": [
@@ -155,7 +155,7 @@
     },
     {
       "pattern": "Could we please move the Monday review if the forecast shows an ___ before Friday?",
-      "example": "Could we please move the Monday review if the forecast shows an overrun before Friday?",
+      "example": "Could we move Monday's review if the forecast shows we'll go over budget before Friday?",
       "glossYue": "如果預測喺星期五之前顯示超支，可唔可以改星期一嘅審核？",
       "answer": "overrun",
       "choices": [
@@ -178,14 +178,14 @@
   ],
   "shadow": {
     "lineId": "w14-l1",
-    "hint": "Could we please move the Monday review if the forecast shows an overrun before Friday?"
+    "hint": "Could we move Monday's review if the forecast shows we'll go over budget before Friday?"
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "你點講？",
       "choices": [
-        "Could we please move the Monday review if the forecast shows an overrun before Friday?",
+        "Could we move Monday's review if the forecast shows we'll go over budget before Friday?",
         "Will you circulate the written forecast if each stakeholder has not read the note yet?",
         "What should the new written agenda say if the overrun changes the Monday review date?"
       ],
@@ -282,7 +282,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Could we please move the Monday review if the forecast shows an overrun before Friday? 呢句入面，邊個意思先啱？",
+      "prompt": "Could we move Monday's review if the forecast shows we'll go over budget before Friday? 呢句入面，邊個意思先啱？",
       "choices": [
         "窗",
         "鐘",

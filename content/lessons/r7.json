@@ -42,22 +42,22 @@
       "id": "r7-l2",
       "speaker": "suki",
       "speakerLabel": "Suki",
-      "text": "I understand the problem with the cold soup.",
-      "glossYue": "我明白凍湯嘅問題。",
+      "text": "I'm sorry your soup was cold.",
+      "glossYue": "唔好意思，你碗湯係凍嘅。",
       "audio": "assets/audio/lines/r7-l2.mp3",
       "audioSlow": "assets/audio/lines/r7-l2-slow.mp3",
-      "say": "I understand the problem with the cold soup.",
+      "say": "I'm sorry your soup was cold.",
       "hideGloss": true
     },
     {
       "id": "r7-l3",
       "speaker": "ruth",
       "speakerLabel": "Ruth",
-      "text": "The side dish looks undercooked after the wait, because the meal came too late.",
-      "glossYue": "配菜睇落未煮熟，因為等得太耐，個餐出得太遲。",
+      "text": "The meal took ages, and the side dish is still undercooked.",
+      "glossYue": "個餐等咗好耐，配菜仍然未煮熟。",
       "audio": "assets/audio/lines/r7-l3.mp3",
       "audioSlow": "assets/audio/lines/r7-l3-slow.mp3",
-      "say": "The side dish looks undercooked after the wait, because the meal came too late.",
+      "say": "The meal took ages, and the side dish is still undercooked.",
       "hideGloss": true
     },
     {
@@ -86,33 +86,33 @@
       "id": "r7-l6",
       "speaker": "suki",
       "speakerLabel": "Suki",
-      "text": "I will send that dessert right away, and I will tell the kitchen about the plate.",
-      "glossYue": "我即刻送甜品過去，同埋話畀廚房知嗰碟。",
+      "text": "I'll send that dessert right away, and let the kitchen know about the plate.",
+      "glossYue": "我即刻送甜品過去，同埋話廚房知嗰碟。",
       "audio": "assets/audio/lines/r7-l6.mp3",
       "audioSlow": "assets/audio/lines/r7-l6-slow.mp3",
-      "say": "I will send that dessert right away, and I will tell the kitchen about the plate.",
+      "say": "I'll send that dessert right away, and let the kitchen know about the plate.",
       "hideGloss": true
     },
     {
       "id": "r7-l7",
       "speaker": "ruth",
       "speakerLabel": "Ruth",
-      "text": "Do not let the cold soup happen again when we come back for a side dish.",
-      "glossYue": "我哋下次返嚟食配菜，唔好再出凍湯。",
+      "text": "Please don't serve the soup cold again when we come back.",
+      "glossYue": "我哋下次返嚟，唔好再出凍湯。",
       "audio": "assets/audio/lines/r7-l7.mp3",
       "audioSlow": "assets/audio/lines/r7-l7-slow.mp3",
-      "say": "Do not let the cold soup happen again when we come back for a side dish.",
+      "say": "Please don't serve the soup cold again when we come back.",
       "hideGloss": true
     },
     {
       "id": "r7-l8",
       "speaker": "suki",
       "speakerLabel": "Suki",
-      "text": "I appreciate your patience, and the kitchen will heat the soup properly because you waited.",
-      "glossYue": "多謝你耐心等，廚房會熱得啱嗰碗湯，因為你等咗。",
+      "text": "Thank you for waiting. The kitchen is reheating your soup now.",
+      "glossYue": "多謝你等。廚房而家幫你暖返碗湯。",
       "audio": "assets/audio/lines/r7-l8.mp3",
       "audioSlow": "assets/audio/lines/r7-l8-slow.mp3",
-      "say": "I appreciate your patience, and the kitchen will heat the soup properly because you waited.",
+      "say": "Thank you for waiting. The kitchen is reheating your soup now.",
       "hideGloss": true
     }
   ],
@@ -128,7 +128,7 @@
       "explain": "ordered 係點咗，cold 係凍。"
     },
     {
-      "prompt": "The side dish looks undercooked after the wait, because the meal came too late. 呢句即係點？",
+      "prompt": "The meal took ages, and the side dish is still undercooked. 呢句即係點？",
       "choices": [
         "個湯好熱",
         "想叫經理埋單",
@@ -173,7 +173,7 @@
     },
     {
       "pattern": "I will send a fresh plate ___ , and I will tell the kitchen about it.",
-      "example": "I will send that dessert right away, and I will tell the kitchen about the plate.",
+      "example": "I'll send that dessert right away, and let the kitchen know about the plate.",
       "glossYue": "我⋯⋯送出嚟。",
       "answer": "right away",
       "choices": [
@@ -203,16 +203,16 @@
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "I",
-        "understand",
-        "the",
-        "problem"
+        "sorry",
+        "your",
+        "soup",
+        "was"
       ],
       "answer": [
-        "I",
-        "understand",
-        "the",
-        "problem"
+        "sorry",
+        "your",
+        "soup",
+        "was"
       ]
     }
   ],
@@ -223,13 +223,13 @@
       {
         "partner": "Suki",
         "partnerId": "suki",
-        "line": "I understand the problem with the cold soup.",
+        "line": "I'm sorry your soup was cold.",
         "audio": "assets/audio/lines/r7-l2.mp3",
         "audioSlow": "assets/audio/lines/r7-l2-slow.mp3",
-        "expect": "The side dish looks undercooked after the wait, because the meal came too late.",
+        "expect": "The meal took ages, and the side dish is still undercooked.",
         "keywords": [
           "undercooked",
-          "wait"
+          "meal"
         ],
         "modelAudio": "assets/audio/lines/r7-l3.mp3",
         "modelSlow": "assets/audio/lines/r7-l3-slow.mp3"
@@ -251,10 +251,10 @@
       {
         "partner": "Suki",
         "partnerId": "suki",
-        "line": "I will send that dessert right away, and I will tell the kitchen about the plate.",
+        "line": "I'll send that dessert right away, and let the kitchen know about the plate.",
         "audio": "assets/audio/lines/r7-l6.mp3",
         "audioSlow": "assets/audio/lines/r7-l6-slow.mp3",
-        "expect": "Do not let the cold soup happen again when we come back for a side dish.",
+        "expect": "Please don't serve the soup cold again when we come back.",
         "keywords": [
           "again",
           "soup"
@@ -289,7 +289,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「The side dish looks undercooked after the wait, because the meal came too late.」，undercooked 係咩意思？",
+      "prompt": "你講「The meal took ages, and the side dish is still undercooked.」，undercooked 係咩意思？",
       "choices": [
         "免費",
         "太鹹",
@@ -299,7 +299,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "店員講「I will send that dessert right away, and I will tell the kitchen about the plate.」，right away 係咩意思？",
+      "prompt": "店員講「I'll send that dessert right away, and let the kitchen know about the plate.」，right away 係咩意思？",
       "choices": [
         "即刻",
         "遲啲",

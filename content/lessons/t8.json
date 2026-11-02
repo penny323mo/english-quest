@@ -66,11 +66,11 @@
       "id": "t8-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "This trip is not for leisure.",
-      "glossYue": "呢趟唔係休閒。",
+      "text": "I'm not here on holiday.",
+      "glossYue": "我唔係嚟度假。",
       "audio": "assets/audio/lines/t8-l4.mp3",
       "audioSlow": "assets/audio/lines/t8-l4-slow.mp3",
-      "say": "This trip is not for leisure.",
+      "say": "I'm not here on holiday.",
       "hideGloss": true
     },
     {
@@ -110,11 +110,11 @@
       "id": "t8-l8",
       "speaker": "pat",
       "speakerLabel": "Pat",
-      "text": "The officer will stamp your form here, and you may go on to the hotel after that.",
-      "glossYue": "關員會喺度幫你張表格蓋章，之後你可以去酒店。",
+      "text": "The officer will stamp your form here. Then you can go to the hotel.",
+      "glossYue": "關員會喺度幫你張表格蓋章。之後你可以去酒店。",
       "audio": "assets/audio/lines/t8-l8.mp3",
       "audioSlow": "assets/audio/lines/t8-l8-slow.mp3",
-      "say": "The officer will stamp your form here, and you may go on to the hotel after that.",
+      "say": "The officer will stamp your form here. Then you can go to the hotel.",
       "hideGloss": true
     }
   ],
@@ -175,7 +175,7 @@
     },
     {
       "pattern": "The ___ will stamp your form here, and you may go on to the hotel after that.",
-      "example": "The officer will stamp your form here, and you may go on to the hotel after that.",
+      "example": "The officer will stamp your form here. Then you can go to the hotel.",
       "glossYue": "⋯⋯會蓋章。",
       "answer": "officer",
       "choices": [
@@ -244,7 +244,7 @@
         "line": "Are you here for business as well? Do you have a return ticket in your bag?",
         "audio": "assets/audio/lines/t8-l3.mp3",
         "audioSlow": "assets/audio/lines/t8-l3-slow.mp3",
-        "expect": "This trip is not for leisure.",
+        "expect": "I'm not here on holiday.",
         "keywords": [
           "business",
           "ticket"

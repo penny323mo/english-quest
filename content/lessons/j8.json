@@ -45,7 +45,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "I have kept the receipt, but a scratch showed up within the first week.",
-      "glossYue": "我有留低收據，但係第一個禮拜就有少少刮痕。",
+      "glossYue": "我有留低收據，但係第一個禮拜就有刮痕。",
       "audio": "assets/audio/lines/j8-l2.mp3",
       "audioSlow": "assets/audio/lines/j8-l2-slow.mp3",
       "say": "I have kept the receipt, but a scratch showed up within the first week.",
@@ -55,11 +55,11 @@
       "id": "j8-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Please polish this bracelet with a cloth, and you should avoid harsh chemicals.",
-      "glossYue": "請用軟布擦亮呢條手鏈，你應該避開任何勁嘅化學劑。",
+      "text": "Please polish this bracelet with a soft cloth, and avoid harsh chemicals.",
+      "glossYue": "請用軟布擦亮呢條手鏈，避開刺激化學劑。",
       "audio": "assets/audio/lines/j8-l3.mp3",
       "audioSlow": "assets/audio/lines/j8-l3-slow.mp3",
-      "say": "Please polish this bracelet with a cloth, and you should avoid harsh chemicals.",
+      "say": "Please polish this bracelet with a soft cloth, and avoid harsh chemicals.",
       "hideGloss": true
     },
     {
@@ -67,7 +67,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Does the guarantee cover this scratch, or should I file a claim within the week?",
-      "glossYue": "保用包唔包呢道新刮痕，定係我應該呢個禮拜內申請？",
+      "glossYue": "保用包唔包呢道刮痕，定係我應該呢個禮拜內申請？",
       "audio": "assets/audio/lines/j8-l4.mp3",
       "audioSlow": "assets/audio/lines/j8-l4-slow.mp3",
       "say": "Does the guarantee cover this scratch, or should I file a claim within the week?",
@@ -78,7 +78,7 @@
       "speaker": "mei",
       "speakerLabel": "Mei",
       "text": "The policy allows one repair within the year if you have kept the receipt.",
-      "glossYue": "書面政策容許一年之內修理一次，只要你有留低收據。",
+      "glossYue": "政策容許一年之內修理一次，只要你有留低收據。",
       "audio": "assets/audio/lines/j8-l5.mp3",
       "audioSlow": "assets/audio/lines/j8-l5-slow.mp3",
       "say": "The policy allows one repair within the year if you have kept the receipt.",
@@ -88,11 +88,11 @@
       "id": "j8-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will skip harsh chemicals at home and come back later if the polish fails.",
-      "glossYue": "我喺屋企唔用刺激化學劑，擦亮唔得就再嚟。",
+      "text": "I won't use harsh chemicals at home, and I'll come back if the polish fails.",
+      "glossYue": "我喺屋企唔用刺激化學劑，擦亮唔得我就再嚟。",
       "audio": "assets/audio/lines/j8-l6.mp3",
       "audioSlow": "assets/audio/lines/j8-l6-slow.mp3",
-      "say": "I will skip harsh chemicals at home and come back later if the polish fails.",
+      "say": "I won't use harsh chemicals at home, and I'll come back if the polish fails.",
       "hideGloss": true
     },
     {
@@ -110,11 +110,11 @@
       "id": "j8-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Thank you, and I now understand the shop policy, the guarantee, and the return window.",
-      "glossYue": "多謝，我而家明白舖頭政策、保用同退換期。",
+      "text": "Thanks. I understand the policy, the guarantee, and the return window.",
+      "glossYue": "多謝。我明白政策、保用同退換期。",
       "audio": "assets/audio/lines/j8-l8.mp3",
       "audioSlow": "assets/audio/lines/j8-l8-slow.mp3",
-      "say": "Thank you, and I now understand the shop policy, the guarantee, and the return window.",
+      "say": "Thanks. I understand the policy, the guarantee, and the return window.",
       "hideGloss": true
     }
   ],
@@ -205,7 +205,7 @@
       "type": "choice",
       "promptYue": "客人話有刮痕。你點講保養？",
       "choices": [
-        "Please polish this bracelet with a cloth, and you should avoid harsh chemicals.",
+        "Please polish this bracelet with a soft cloth, and avoid harsh chemicals.",
         "The taxi is here, and traffic is slow.",
         "I have lost my wallet."
       ],
@@ -241,7 +241,7 @@
         "line": "I have kept the receipt, but a scratch showed up within the first week.",
         "audio": "assets/audio/lines/j8-l2.mp3",
         "audioSlow": "assets/audio/lines/j8-l2-slow.mp3",
-        "expect": "Please polish this bracelet with a cloth, and you should avoid harsh chemicals.",
+        "expect": "Please polish this bracelet with a soft cloth, and avoid harsh chemicals.",
         "keywords": [
           "avoid",
           "polish"
@@ -266,7 +266,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "I will skip harsh chemicals at home and come back later if the polish fails.",
+        "line": "I won't use harsh chemicals at home, and I'll come back if the polish fails.",
         "audio": "assets/audio/lines/j8-l6.mp3",
         "audioSlow": "assets/audio/lines/j8-l6-slow.mp3",
         "expect": "Please keep that receipt, and file any new claim within the return window.",

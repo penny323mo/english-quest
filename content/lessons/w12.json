@@ -51,11 +51,11 @@
       "id": "w12-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could we book a thirty-minute slot for my performance review soon?",
-      "glossYue": "可唔可以快啲預約三十分鐘嘅績效面談？",
+      "text": "Could we book half an hour for my performance review soon?",
+      "glossYue": "可唔可以快啲預約半個鐘嘅績效面談？",
       "audio": "assets/audio/lines/w12-l1.mp3",
       "audioSlow": "assets/audio/lines/w12-l1-slow.mp3",
-      "say": "Could we book a thirty-minute slot for my performance review soon?",
+      "say": "Could we book half an hour for my performance review soon?",
       "hideGloss": false
     },
     {
@@ -128,11 +128,11 @@
       "id": "w12-l8",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "Yes. I will send that summary once the new goals are agreed.",
+      "text": "Yes. I'll send that summary once we agree the new goals.",
       "glossYue": "會。新目標同意之後我會寄嗰份總結。",
       "audio": "assets/audio/lines/w12-l8.mp3",
       "audioSlow": "assets/audio/lines/w12-l8-slow.mp3",
-      "say": "Yes. I will send that summary once the new goals are agreed.",
+      "say": "Yes. I'll send that summary once we agree the new goals.",
       "hideGloss": false
     }
   ],
@@ -186,7 +186,7 @@
   },
   "understand": [
     {
-      "prompt": "Could we book a thirty-minute slot for my performance review soon? 呢句即係點？",
+      "prompt": "Could we book half an hour for my performance review soon? 呢句即係點？",
       "choices": [
         "關於季度",
         "講緊績效",
@@ -206,7 +206,7 @@
       "explain": "季度。"
     },
     {
-      "prompt": "Yes. I will send that summary once the new goals are agreed. 呢句即係點？",
+      "prompt": "Yes. I'll send that summary once we agree the new goals. 呢句即係點？",
       "choices": [
         "唔係季度",
         "關於績效",
@@ -219,7 +219,7 @@
   "chunks": [
     {
       "pattern": "Could we book a thirty-minute slot for my ___ review soon?",
-      "example": "Could we book a thirty-minute slot for my performance review soon?",
+      "example": "Could we book half an hour for my performance review soon?",
       "glossYue": "可唔可以快啲預約三十分鐘嘅績效面談？",
       "answer": "performance",
       "choices": [
@@ -256,7 +256,7 @@
       "type": "choice",
       "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
-        "Could we book a thirty-minute slot for my performance review soon?",
+        "Could we book half an hour for my performance review soon?",
         "Did I miss one target from last quarter on the shop project?",
         "Could our training budget cover a short sales course next month, please?"
       ],
@@ -321,7 +321,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Could we book a thirty-minute slot for my performance review soon? 呢句入面，邊個意思先啱？",
+      "prompt": "Could we book half an hour for my performance review soon? 呢句入面，邊個意思先啱？",
       "choices": [
         "績效",
         "季度",
@@ -353,6 +353,6 @@
   ],
   "shadow": {
     "lineId": "w12-l1",
-    "hint": "Could we book a thirty-minute slot for my performance review soon?"
+    "hint": "Could we book half an hour for my performance review soon?"
   }
 }

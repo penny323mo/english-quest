@@ -24,11 +24,11 @@
       "id": "t20-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could you explain the screening if this grey case looks oversized beside the far belt?",
-      "glossYue": "如果呢個灰色箱喺遠嘅輸送帶旁邊顯得超大件，可唔可以解釋下安檢？",
+      "text": "Could you explain the screening? This grey case looks too big for that belt.",
+      "glossYue": "可唔可以解釋下安檢？呢個灰色箱對嗰條帶嚟講太大。",
       "audio": "assets/audio/lines/t20-l1.mp3",
       "audioSlow": "assets/audio/lines/t20-l1-slow.mp3",
-      "say": "Could you explain the screening if this grey case looks oversized beside the far belt?",
+      "say": "Could you explain the screening? This grey case looks too big for that belt.",
       "hideGloss": false
     },
     {
@@ -46,11 +46,11 @@
       "id": "t20-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Where should the scanner desk be if I missed the inner checkpoint beside that belt?",
-      "glossYue": "如果我錯過輸送帶旁邊嘅內檢查站，掃描器櫃檯應該喺邊？",
+      "text": "I missed the inner checkpoint by that belt. Where is the scanner desk?",
+      "glossYue": "我錯過輸送帶旁邊嘅內檢查站。掃描器櫃檯喺邊？",
       "audio": "assets/audio/lines/t20-l3.mp3",
       "audioSlow": "assets/audio/lines/t20-l3-slow.mp3",
-      "say": "Where should the scanner desk be if I missed the inner checkpoint beside that belt?",
+      "say": "I missed the inner checkpoint by that belt. Where is the scanner desk?",
       "hideGloss": false
     },
     {
@@ -68,11 +68,11 @@
       "id": "t20-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can an oversized grey case skip the scanner desk if the inner lane is shut?",
-      "glossYue": "如果內線關閉，超大件灰色箱可唔可以跳過掃描器櫃檯？",
+      "text": "If the inner lane is shut, does this oversized case still go through the scanner?",
+      "glossYue": "如果內線關閉，呢件超大箱仲使唔使過掃描器？",
       "audio": "assets/audio/lines/t20-l5.mp3",
       "audioSlow": "assets/audio/lines/t20-l5-slow.mp3",
-      "say": "Can an oversized grey case skip the scanner desk if the inner lane is shut?",
+      "say": "If the inner lane is shut, does this oversized case still go through the scanner?",
       "hideGloss": true
     },
     {
@@ -111,7 +111,7 @@
   ],
   "understand": [
     {
-      "prompt": "Could you explain the screening if this grey case looks oversized beside the far belt? 即係問緊咩？",
+      "prompt": "Could you explain the screening? This grey case looks too big for that belt. 即係問緊咩？",
       "choices": [
         "問灰色超大件箱可唔可以解釋安檢",
         "話航班已經起飛",
@@ -121,7 +121,7 @@
       "explain": "超大件箱喺遠輸送帶，要人解釋安檢。"
     },
     {
-      "prompt": "Where should the scanner desk be if I missed the inner checkpoint beside that belt? 即係問緊咩？",
+      "prompt": "I missed the inner checkpoint by that belt. Where is the scanner desk? 即係問緊咩？",
       "choices": [
         "話已經過咗安檢",
         "問掃描器櫃檯應該喺邊",
@@ -144,7 +144,7 @@
   "chunks": [
     {
       "pattern": "Could you explain the ___ if this grey case looks oversized beside the far belt?",
-      "example": "Could you explain the screening if this grey case looks oversized beside the far belt?",
+      "example": "Could you explain the screening? This grey case looks too big for that belt.",
       "glossYue": "如果呢個灰色箱喺遠嘅輸送帶旁邊顯得超大件，可唔可以解釋下安檢？",
       "answer": "screening",
       "choices": [
@@ -155,7 +155,7 @@
     },
     {
       "pattern": "Could you explain the screening if this grey case looks ___ beside the far belt?",
-      "example": "Could you explain the screening if this grey case looks oversized beside the far belt?",
+      "example": "Could you explain the screening? This grey case looks too big for that belt.",
       "glossYue": "如果呢個灰色箱喺遠嘅輸送帶旁邊顯得超大件，可唔可以解釋下安檢？",
       "answer": "oversized",
       "choices": [
@@ -166,7 +166,7 @@
     },
     {
       "pattern": "Where should the ___ desk be if I missed the inner checkpoint beside that belt?",
-      "example": "Where should the scanner desk be if I missed the inner checkpoint beside that belt?",
+      "example": "I missed the inner checkpoint by that belt. Where is the scanner desk?",
       "glossYue": "如果我錯過輸送帶旁邊嘅內檢查站，掃描器櫃檯應該喺邊？",
       "answer": "scanner",
       "choices": [
@@ -178,16 +178,16 @@
   ],
   "shadow": {
     "lineId": "t20-l1",
-    "hint": "Could you explain the screening if this grey case looks oversized beside the far belt?"
+    "hint": "Could you explain the screening? This grey case looks too big for that belt."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "你點講？",
       "choices": [
-        "Could you explain the screening if this grey case looks oversized beside the far belt?",
-        "Where should the scanner desk be if I missed the inner checkpoint beside that belt?",
-        "Can an oversized grey case skip the scanner desk if the inner lane is shut?"
+        "Could you explain the screening? This grey case looks too big for that belt.",
+        "I missed the inner checkpoint by that belt. Where is the scanner desk?",
+        "If the inner lane is shut, does this oversized case still go through the scanner?"
       ],
       "answer": 0,
       "explain": "用返課入面第一句。"
@@ -219,7 +219,7 @@
         "line": "This screening allows that grey case, and an oversized one uses the far side belt.",
         "audio": "assets/audio/lines/t20-l2.mp3",
         "audioSlow": "assets/audio/lines/t20-l2-slow.mp3",
-        "expect": "Where should the scanner desk be if I missed the inner checkpoint beside that belt?",
+        "expect": "I missed the inner checkpoint by that belt. Where is the scanner desk?",
         "keywords": [
           "scanner",
           "checkpoint"
@@ -233,7 +233,7 @@
         "line": "The scanner desk sits just past the inner checkpoint, and that belt still stays open.",
         "audio": "assets/audio/lines/t20-l4.mp3",
         "audioSlow": "assets/audio/lines/t20-l4-slow.mp3",
-        "expect": "Can an oversized grey case skip the scanner desk if the inner lane is shut?",
+        "expect": "If the inner lane is shut, does this oversized case still go through the scanner?",
         "keywords": [
           "oversized",
           "scanner"
@@ -282,7 +282,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Could you explain the screening if this grey case looks oversized beside the far belt? 呢句入面，邊個意思先啱？",
+      "prompt": "Could you explain the screening? This grey case looks too big for that belt. 呢句入面，邊個意思先啱？",
       "choices": [
         "窗",
         "安檢",

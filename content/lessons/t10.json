@@ -38,11 +38,11 @@
       "id": "t10-l2",
       "speaker": "opal",
       "speakerLabel": "Opal",
-      "text": "Could you describe the missing bag for me, and tell me the colour if you remember it?",
+      "text": "Could you describe the missing bag, and the colour if you remember?",
       "glossYue": "可唔可以講下唔見咗嗰個袋，仲記唔記得顏色？",
       "audio": "assets/audio/lines/t10-l2.mp3",
       "audioSlow": "assets/audio/lines/t10-l2-slow.mp3",
-      "say": "Could you describe the missing bag for me, and tell me the colour if you remember it?",
+      "say": "Could you describe the missing bag, and the colour if you remember?",
       "hideGloss": false
     },
     {
@@ -60,11 +60,11 @@
       "id": "t10-l4",
       "speaker": "opal",
       "speakerLabel": "Opal",
-      "text": "What tag number is printed on your baggage receipt, so I can search for that bag?",
-      "glossYue": "行李收據上面印住咩行李牌號碼，我可以幫你搵個袋？",
+      "text": "What tag number is on your baggage receipt, so I can search for the bag?",
+      "glossYue": "行李收據上面嘅行李牌號碼係幾多，我可以幫你搵個袋？",
       "audio": "assets/audio/lines/t10-l4.mp3",
       "audioSlow": "assets/audio/lines/t10-l4-slow.mp3",
-      "say": "What tag number is printed on your baggage receipt, so I can search for that bag?",
+      "say": "What tag number is on your baggage receipt, so I can search for the bag?",
       "hideGloss": true
     },
     {
@@ -82,33 +82,33 @@
       "id": "t10-l6",
       "speaker": "opal",
       "speakerLabel": "Opal",
-      "text": "Please complete this written claim form with me while the missing bag is still off the empty belt.",
-      "glossYue": "個袋仲未上返空帶，請同我填呢張書面索償表。",
+      "text": "Please complete this claim form with me. The bag still isn't on the belt.",
+      "glossYue": "請同我填呢張索償表。個袋仲未上返行李帶。",
       "audio": "assets/audio/lines/t10-l6.mp3",
       "audioSlow": "assets/audio/lines/t10-l6-slow.mp3",
-      "say": "Please complete this written claim form with me while the missing bag is still off the empty belt.",
+      "say": "Please complete this claim form with me. The bag still isn't on the belt.",
       "hideGloss": true
     },
     {
       "id": "t10-l7",
       "speaker": "hugo",
       "speakerLabel": "Hugo",
-      "text": "Could you deliver the bag to my hotel if you find it after you finish this search?",
-      "glossYue": "如果搵到，可唔可以送到我酒店？",
+      "text": "If you find the bag, could you deliver it to my hotel?",
+      "glossYue": "如果搵到個袋，可唔可以送到我酒店？",
       "audio": "assets/audio/lines/t10-l7.mp3",
       "audioSlow": "assets/audio/lines/t10-l7-slow.mp3",
-      "say": "Could you deliver the bag to my hotel if you find it after you finish this search?",
+      "say": "If you find the bag, could you deliver it to my hotel?",
       "hideGloss": true
     },
     {
       "id": "t10-l8",
       "speaker": "opal",
       "speakerLabel": "Opal",
-      "text": "We can deliver it straight to your hotel room after this long search is finished.",
-      "glossYue": "搜完我哋可以直接送到你酒店房間。",
+      "text": "We can deliver it to your hotel room once we find it.",
+      "glossYue": "搵到之後可以直接送到你酒店房間。",
       "audio": "assets/audio/lines/t10-l8.mp3",
       "audioSlow": "assets/audio/lines/t10-l8-slow.mp3",
-      "say": "We can deliver it straight to your hotel room after this long search is finished.",
+      "say": "We can deliver it to your hotel room once we find it.",
       "hideGloss": true
     }
   ],
@@ -134,7 +134,7 @@
       "explain": "suitcase 係描述唔見咗嘅袋。"
     },
     {
-      "prompt": "What tag number is printed on your baggage receipt, so I can search for that bag? 即係問緊咩？",
+      "prompt": "What tag number is on your baggage receipt, so I can search for the bag? 即係問緊咩？",
       "choices": [
         "索償表已經寫好酒店",
         "行李牌號碼印喺行李收據上面",
@@ -157,8 +157,8 @@
       ]
     },
     {
-      "pattern": "What tag number is printed on your ___ , so I can search for that bag?",
-      "example": "What tag number is printed on your baggage receipt, so I can search for that bag?",
+      "pattern": "What tag number is on your ___, so I can search for the bag?",
+      "example": "What tag number is on your baggage receipt, so I can search for the bag?",
       "glossYue": "行李收據上面嘅牌號。",
       "answer": "baggage receipt",
       "choices": [
@@ -169,7 +169,7 @@
     },
     {
       "pattern": "Could you ___ the bag to my hotel if you find it after this search?",
-      "example": "Could you deliver the bag to my hotel if you find it after you finish this search?",
+      "example": "If you find the bag, could you deliver it to my hotel?",
       "glossYue": "可唔可以送到酒店？",
       "answer": "deliver",
       "choices": [
@@ -190,7 +190,7 @@
       "choices": [
         "The tag number is HK four eight two.",
         "It is a blue suitcase with a red ribbon.",
-        "Could you deliver the bag to my hotel if you find it after you finish this search?"
+        "If you find the bag, could you deliver it to my hotel?"
       ],
       "answer": 0,
       "explain": "讀 baggage receipt 上面嘅號碼。"
@@ -219,7 +219,7 @@
       {
         "partner": "Opal",
         "partnerId": "opal",
-        "line": "Could you describe the missing bag for me, and tell me the colour if you remember it?",
+        "line": "Could you describe the missing bag, and the colour if you remember?",
         "audio": "assets/audio/lines/t10-l2.mp3",
         "audioSlow": "assets/audio/lines/t10-l2-slow.mp3",
         "expect": "It is a blue suitcase with a red ribbon.",
@@ -233,7 +233,7 @@
       {
         "partner": "Opal",
         "partnerId": "opal",
-        "line": "What tag number is printed on your baggage receipt, so I can search for that bag?",
+        "line": "What tag number is on your baggage receipt, so I can search for the bag?",
         "audio": "assets/audio/lines/t10-l4.mp3",
         "audioSlow": "assets/audio/lines/t10-l4-slow.mp3",
         "expect": "The tag number is HK four eight two.",
@@ -247,10 +247,10 @@
       {
         "partner": "Opal",
         "partnerId": "opal",
-        "line": "Please complete this written claim form with me while the missing bag is still off the empty belt.",
+        "line": "Please complete this claim form with me. The bag still isn't on the belt.",
         "audio": "assets/audio/lines/t10-l6.mp3",
         "audioSlow": "assets/audio/lines/t10-l6-slow.mp3",
-        "expect": "Could you deliver the bag to my hotel if you find it after you finish this search?",
+        "expect": "If you find the bag, could you deliver it to my hotel?",
         "keywords": [
           "hotel",
           "deliver"
@@ -295,7 +295,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「Could you deliver the bag to my hotel if you find it after you finish this search?」，deliver 係咩意思？",
+      "prompt": "你講「If you find the bag, could you deliver it to my hotel?」，deliver 係咩意思？",
       "choices": [
         "索償",
         "轉盤",

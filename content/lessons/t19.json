@@ -51,11 +51,11 @@
       "id": "t19-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The hallway noise kept me up, and I couldn't sleep at all.",
-      "glossYue": "走廊嘈音搞到我瞓唔著。",
+      "text": "The noise in the hallway kept me awake all night.",
+      "glossYue": "走廊嘈音搞到我成晚瞓唔著。",
       "audio": "assets/audio/lines/t19-l1.mp3",
       "audioSlow": "assets/audio/lines/t19-l1-slow.mp3",
-      "say": "The hallway noise kept me up, and I couldn't sleep at all.",
+      "say": "The noise in the hallway kept me awake all night.",
       "hideGloss": false
     },
     {
@@ -84,11 +84,11 @@
       "id": "t19-l4",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "A quieter suite is free upstairs, away from that hallway.",
+      "text": "There's a quieter room upstairs, away from the hallway.",
       "glossYue": "樓上有間靜啲嘅房，遠離走廊。",
       "audio": "assets/audio/lines/t19-l4.mp3",
       "audioSlow": "assets/audio/lines/t19-l4-slow.mp3",
-      "say": "A quieter suite is free upstairs, away from that hallway.",
+      "say": "There's a quieter room upstairs, away from the hallway.",
       "hideGloss": false
     },
     {
@@ -128,11 +128,11 @@
       "id": "t19-l8",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Maintenance will finish at noon, and the harbor room stays held.",
-      "glossYue": "維修中午做完，海港嗰間房會留住。",
+      "text": "Maintenance finishes at noon, and we'll keep the harbor room for you.",
+      "glossYue": "維修中午做完，海港嗰間房會留畀你。",
       "audio": "assets/audio/lines/t19-l8.mp3",
       "audioSlow": "assets/audio/lines/t19-l8-slow.mp3",
-      "say": "Maintenance will finish at noon, and the harbor room stays held.",
+      "say": "Maintenance finishes at noon, and we'll keep the harbor room for you.",
       "hideGloss": false
     }
   ],
@@ -157,7 +157,7 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "A quieter suite is free upstairs, away from that hallway.",
+        "line": "There's a quieter room upstairs, away from the hallway.",
         "audio": "assets/audio/lines/t19-l4.mp3",
         "audioSlow": "assets/audio/lines/t19-l4-slow.mp3",
         "expect": "Can that new room face the harbor instead of the street?",
@@ -186,7 +186,7 @@
   },
   "understand": [
     {
-      "prompt": "The hallway noise kept me up, and I couldn't sleep at all. 呢句即係點？",
+      "prompt": "The noise in the hallway kept me awake all night. 呢句即係點？",
       "choices": [
         "套房",
         "嘈音",
@@ -206,7 +206,7 @@
       "explain": "維修。"
     },
     {
-      "prompt": "A quieter suite is free upstairs, away from that hallway. 呢句即係點？",
+      "prompt": "There's a quieter room upstairs, away from the hallway. 呢句即係點？",
       "choices": [
         "維修",
         "套房",
@@ -219,7 +219,7 @@
   "chunks": [
     {
       "pattern": "The hallway ___ kept me up, and I couldn't sleep at all.",
-      "example": "The hallway noise kept me up, and I couldn't sleep at all.",
+      "example": "The noise in the hallway kept me awake all night.",
       "glossYue": "走廊嘈音搞到我瞓唔著。",
       "answer": "noise",
       "choices": [
@@ -241,7 +241,7 @@
     },
     {
       "pattern": "Yes. A quieter suite is free upstairs, away from that ___.",
-      "example": "A quieter suite is free upstairs, away from that hallway.",
+      "example": "There's a quieter room upstairs, away from the hallway.",
       "glossYue": "遠離走廊。",
       "answer": "hallway",
       "choices": [
@@ -256,7 +256,7 @@
       "type": "choice",
       "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
-        "The hallway noise kept me up, and I couldn't sleep at all.",
+        "The noise in the hallway kept me awake all night.",
         "Could I move to a quieter suite if the hallway stays this loud?",
         "Can that new room face the harbor instead of the street?"
       ],
@@ -319,7 +319,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "A quieter suite is free upstairs, away from that hallway. 呢句入面，邊個意思先啱？",
+      "prompt": "There's a quieter room upstairs, away from the hallway. 呢句入面，邊個意思先啱？",
       "choices": [
         "嘈音",
         "收據",
@@ -339,7 +339,7 @@
     },
     {
       "type": "choice",
-      "prompt": "The ___ noise kept me up, and I couldn't sleep at all. 呢句入面，邊個字先啱？",
+      "prompt": "The noise in the ___ kept me awake all night. 呢句入面，邊個字先啱？",
       "choices": [
         "read",
         "hallway",
@@ -351,6 +351,6 @@
   ],
   "shadow": {
     "lineId": "t19-l1",
-    "hint": "The hallway noise kept me up, and I couldn't sleep at all."
+    "hint": "The noise in the hallway kept me awake all night."
   }
 }

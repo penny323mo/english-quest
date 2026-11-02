@@ -51,11 +51,11 @@
       "id": "j19-l1",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Can you explain this diamond certificate in plain words, please?",
+      "text": "Can you explain this diamond certificate in plain language, please?",
       "glossYue": "可唔可以用簡單嘅話解釋呢張鑽石證書？",
       "audio": "assets/audio/lines/j19-l1.mp3",
       "audioSlow": "assets/audio/lines/j19-l1-slow.mp3",
-      "say": "Can you explain this diamond certificate in plain words, please?",
+      "say": "Can you explain this diamond certificate in plain language, please?",
       "hideGloss": false
     },
     {
@@ -186,7 +186,7 @@
   },
   "understand": [
     {
-      "prompt": "Can you explain this diamond certificate in plain words, please? 即係問緊咩？",
+      "prompt": "Can you explain this diamond certificate in plain language, please? 即係問緊咩？",
       "choices": [
         "關於切工",
         "講緊鑽石",
@@ -219,7 +219,7 @@
   "chunks": [
     {
       "pattern": "Can you explain this ___ certificate in plain words, please?",
-      "example": "Can you explain this diamond certificate in plain words, please?",
+      "example": "Can you explain this diamond certificate in plain language, please?",
       "glossYue": "可唔可以用簡單嘅話解釋呢張鑽石證書？",
       "answer": "diamond",
       "choices": [
@@ -256,7 +256,7 @@
       "type": "choice",
       "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
-        "Can you explain this diamond certificate in plain words, please?",
+        "Can you explain this diamond certificate in plain language, please?",
         "What about the carat? And the number on the girdle?",
         "Why is this stone more expensive than the other one?"
       ],
@@ -323,7 +323,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Can you explain this diamond certificate in plain words, please? 呢句入面，邊個意思先啱？",
+      "prompt": "Can you explain this diamond certificate in plain language, please? 呢句入面，邊個意思先啱？",
       "choices": [
         "鑽石",
         "切工",
@@ -333,7 +333,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Can you explain this diamond certificate in plain words, please? 呢句入面，邊個意思先啱？",
+      "prompt": "Can you explain this diamond certificate in plain language, please? 呢句入面，邊個意思先啱？",
       "choices": [
         "切工",
         "顏色",
@@ -355,6 +355,6 @@
   ],
   "shadow": {
     "lineId": "j19-l1",
-    "hint": "Can you explain this diamond certificate in plain words, please?"
+    "hint": "Can you explain this diamond certificate in plain language, please?"
   }
 }

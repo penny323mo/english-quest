@@ -37,11 +37,11 @@
       "id": "j11-l1",
       "speaker": "ada",
       "speakerLabel": "Ada",
-      "text": "Good morning. I was wondering whether this special occasion is an anniversary or a quiet engagement this month.",
-      "glossYue": "早晨。我想問呢個特別場合係週年，定係低調慶祝訂婚。",
+      "text": "Good morning. Is the occasion an anniversary, or an engagement?",
+      "glossYue": "早晨。呢個場合係週年，定係訂婚？",
       "audio": "assets/audio/lines/j11-l1.mp3",
       "audioSlow": "assets/audio/lines/j11-l1-slow.mp3",
-      "say": "Good morning. I was wondering whether this special occasion is an anniversary or a quiet engagement this month.",
+      "say": "Good morning. Is the occasion an anniversary, or an engagement?",
       "hideGloss": false
     },
     {
@@ -70,11 +70,11 @@
       "id": "j11-l4",
       "speaker": "nia",
       "speakerLabel": "Nia",
-      "text": "My clear preference is understated, and I would treat this special gold piece as a quiet personal investment.",
-      "glossYue": "我明顯偏好低調，我會當呢件特別金飾係一份私人保值。",
+      "text": "I prefer it understated, and I'd keep this gold piece as a quiet investment.",
+      "glossYue": "我偏好低調，我會當呢件金飾係一份私人保值。",
       "audio": "assets/audio/lines/j11-l4.mp3",
       "audioSlow": "assets/audio/lines/j11-l4-slow.mp3",
-      "say": "My clear preference is understated, and I would treat this special gold piece as a quiet personal investment.",
+      "say": "I prefer it understated, and I'd keep this gold piece as a quiet investment.",
       "hideGloss": true
     },
     {
@@ -82,7 +82,7 @@
       "speaker": "nia",
       "speakerLabel": "Nia",
       "text": "If I paid a deposit on a custom piece, would the timeline fit my anniversary next month?",
-      "glossYue": "如果我已經畀咗訂金做一件訂製首飾，個時間表趕唔趕得切下個月嘅週年約會？",
+      "glossYue": "如果我落訂金做一件訂製首飾，個時間表趕唔趕得切下個月週年？",
       "audio": "assets/audio/lines/j11-l5.mp3",
       "audioSlow": "assets/audio/lines/j11-l5-slow.mp3",
       "say": "If I paid a deposit on a custom piece, would the timeline fit my anniversary next month?",
@@ -92,46 +92,46 @@
       "id": "j11-l6",
       "speaker": "ada",
       "speakerLabel": "Ada",
-      "text": "I can fit that full plan next month.",
-      "glossYue": "我可以趕得切下個月嗰個完整計劃。",
+      "text": "Yes. I can fit that whole plan in next month.",
+      "glossYue": "可以。我趕得切下個月嗰個計劃。",
       "audio": "assets/audio/lines/j11-l6.mp3",
       "audioSlow": "assets/audio/lines/j11-l6-slow.mp3",
-      "say": "I can fit that full plan next month.",
+      "say": "Yes. I can fit that whole plan in next month.",
       "hideGloss": true
     },
     {
       "id": "j11-l7",
       "speaker": "nia",
       "speakerLabel": "Nia",
-      "text": "If the new design were more contemporary, I would want a discreet and understated gold investment piece.",
-      "glossYue": "如果新設計再現代啲，我都想要一件低調又含蓄嘅金保值。",
+      "text": "If the new design is more modern, I'd still want a quiet gold piece.",
+      "glossYue": "如果新設計再現代啲，我都想要一件低調嘅金飾。",
       "audio": "assets/audio/lines/j11-l7.mp3",
       "audioSlow": "assets/audio/lines/j11-l7-slow.mp3",
-      "say": "If the new design were more contemporary, I would want a discreet and understated gold investment piece.",
+      "say": "If the new design is more modern, I'd still want a quiet gold piece.",
       "hideGloss": true
     },
     {
       "id": "j11-l8",
       "speaker": "ada",
       "speakerLabel": "Ada",
-      "text": "If you confirmed the deposit, I would book a follow-up and protect the exclusivity of the design.",
-      "glossYue": "如果你確認訂金，我會約跟進，同埋保住呢個設計嘅獨家。",
+      "text": "If you confirmed the deposit, I would book a follow-up and keep the design exclusive to you.",
+      "glossYue": "如果你確認訂金，我會約跟進，同埋將個設計獨家留畀你。",
       "audio": "assets/audio/lines/j11-l8.mp3",
       "audioSlow": "assets/audio/lines/j11-l8-slow.mp3",
-      "say": "If you confirmed the deposit, I would book a follow-up and protect the exclusivity of the design.",
+      "say": "If you confirmed the deposit, I would book a follow-up and keep the design exclusive to you.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "I was wondering whether this occasion is an anniversary? 即係問緊咩？",
+      "prompt": "Is the occasion an anniversary, or an engagement? 即係問緊咩？",
       "choices": [
-        "婉轉問呢個場合係咪週年",
+        "問場合係週年定訂婚",
         "話已經落咗訂金",
         "問件貨係咪搶眼款"
       ],
       "answer": 0,
-      "explain": "I was wondering whether 係婉轉嘅間接問句。"
+      "explain": "直接問場合係週年定訂婚。"
     },
     {
       "prompt": "If you chose a contemporary piece, would you like it understated? 即係問緊咩？",
@@ -198,7 +198,7 @@
       "type": "choice",
       "promptYue": "顧問問你想低調定搶眼。你點先答？",
       "choices": [
-        "My clear preference is understated, and I would treat this special gold piece as a quiet personal investment.",
+        "I prefer it understated, and I'd keep this gold piece as a quiet investment.",
         "I am visiting for tourism.",
         "The soup arrived cold at the table."
       ],
@@ -231,7 +231,7 @@
       {
         "partner": "Ada",
         "partnerId": "ada",
-        "line": "Good morning. I was wondering whether this special occasion is an anniversary or a quiet engagement this month.",
+        "line": "Good morning. Is the occasion an anniversary, or an engagement?",
         "audio": "assets/audio/lines/j11-l1.mp3",
         "audioSlow": "assets/audio/lines/j11-l1-slow.mp3",
         "expect": "The occasion is an anniversary dinner.",
@@ -248,7 +248,7 @@
         "line": "If you chose a contemporary gold piece, would you like it understated or more of a bold statement?",
         "audio": "assets/audio/lines/j11-l3.mp3",
         "audioSlow": "assets/audio/lines/j11-l3-slow.mp3",
-        "expect": "My clear preference is understated, and I would treat this special gold piece as a quiet personal investment.",
+        "expect": "I prefer it understated, and I'd keep this gold piece as a quiet investment.",
         "keywords": [
           "understated",
           "investment"
@@ -259,10 +259,10 @@
       {
         "partner": "Ada",
         "partnerId": "ada",
-        "line": "I can fit that full plan next month.",
+        "line": "Yes. I can fit that whole plan in next month.",
         "audio": "assets/audio/lines/j11-l6.mp3",
         "audioSlow": "assets/audio/lines/j11-l6-slow.mp3",
-        "expect": "If the new design were more contemporary, I would want a discreet and understated gold investment piece.",
+        "expect": "If the new design is more modern, I'd still want a quiet gold piece.",
         "keywords": [
           "contemporary",
           "discreet"
@@ -307,7 +307,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「If you confirmed the deposit, I would book a follow-up and protect the exclusivity of the design.」，exclusivity 係咩意思？",
+      "prompt": "客人講「If you confirmed the deposit, I would book a follow-up and keep the design exclusive to you.」，exclusive 係咩意思？",
       "choices": [
         "獨家",
         "低調",

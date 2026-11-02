@@ -24,11 +24,11 @@
       "id": "t21-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could you please check my declaration before the layover and tell me which belt?",
-      "glossYue": "轉機停留之前可唔可以睇吓我張申報表，話我知邊條帶？",
+      "text": "Could you check my declaration before the layover, and tell me which belt?",
+      "glossYue": "轉機之前可唔可以睇吓我張申報表，話我知邊條帶？",
       "audio": "assets/audio/lines/t21-l1.mp3",
       "audioSlow": "assets/audio/lines/t21-l1-slow.mp3",
-      "say": "Could you please check my declaration before the layover and tell me which belt?",
+      "say": "Could you check my declaration before the layover, and tell me which belt?",
       "hideGloss": false
     },
     {
@@ -68,11 +68,11 @@
       "id": "t21-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Where should I take this heavy bag if immigration sits past the carousel doors?",
-      "glossYue": "如果入境處喺行李轉盤嗰度門後面，我應該將呢件重行李拿到邊？",
+      "text": "If immigration is past those doors, where do I take this heavy bag?",
+      "glossYue": "如果入境處喺嗰啲門後面，我應該將呢件重行李拿到邊？",
       "audio": "assets/audio/lines/t21-l5.mp3",
       "audioSlow": "assets/audio/lines/t21-l5-slow.mp3",
-      "say": "Where should I take this heavy bag if immigration sits past the carousel doors?",
+      "say": "If immigration is past those doors, where do I take this heavy bag?",
       "hideGloss": true
     },
     {
@@ -111,7 +111,7 @@
   ],
   "understand": [
     {
-      "prompt": "Could you please check my declaration before the layover and tell me which belt? 即係問緊咩？",
+      "prompt": "Could you check my declaration before the layover, and tell me which belt? 即係問緊咩？",
       "choices": [
         "問轉機前可唔可以睇申報表同邊條帶",
         "話行李已經遺失",
@@ -144,7 +144,7 @@
   "chunks": [
     {
       "pattern": "Could you check my ___ before the layover, and tell me which belt to use?",
-      "example": "Could you please check my declaration before the layover and tell me which belt?",
+      "example": "Could you check my declaration before the layover, and tell me which belt?",
       "glossYue": "中轉之前可唔可以睇我份申報表，話我知用邊條帶？",
       "answer": "declaration",
       "choices": [
@@ -155,7 +155,7 @@
     },
     {
       "pattern": "Could you check my declaration before the ___, and tell me which belt to use?",
-      "example": "Could you please check my declaration before the layover and tell me which belt?",
+      "example": "Could you check my declaration before the layover, and tell me which belt?",
       "glossYue": "中轉之前可唔可以睇我份申報表，話我知用邊條帶？",
       "answer": "layover",
       "choices": [
@@ -178,16 +178,16 @@
   ],
   "shadow": {
     "lineId": "t21-l1",
-    "hint": "Could you please check my declaration before the layover and tell me which belt?"
+    "hint": "Could you check my declaration before the layover, and tell me which belt?"
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "你點講？",
       "choices": [
-        "Could you please check my declaration before the layover and tell me which belt?",
+        "Could you check my declaration before the layover, and tell me which belt?",
         "If the flight leaves at two, how early should I reach immigration with one bag?",
-        "Where should I take this heavy bag if immigration sits past the carousel doors?"
+        "If immigration is past those doors, where do I take this heavy bag?"
       ],
       "answer": 0,
       "explain": "用返課入面第一句。"
@@ -233,7 +233,7 @@
         "line": "Please reach immigration by one o'clock, because your layover at two needs extra time.",
         "audio": "assets/audio/lines/t21-l4.mp3",
         "audioSlow": "assets/audio/lines/t21-l4-slow.mp3",
-        "expect": "Where should I take this heavy bag if immigration sits past the carousel doors?",
+        "expect": "If immigration is past those doors, where do I take this heavy bag?",
         "keywords": [
           "immigration",
           "carousel"
@@ -282,7 +282,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Could you please check my declaration before the layover and tell me which belt? 呢句入面，邊個意思先啱？",
+      "prompt": "Could you check my declaration before the layover, and tell me which belt? 呢句入面，邊個意思先啱？",
       "choices": [
         "申報表",
         "發票",

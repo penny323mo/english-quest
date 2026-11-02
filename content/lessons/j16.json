@@ -101,11 +101,11 @@
       "id": "j16-l5",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "Then just the date and initials without dots, please. Is there an extra fee?",
+      "text": "Then just the date and our initials, with no dots. Is there an extra fee?",
       "glossYue": "咁就淨係日期同首字母，唔好有點。有冇額外費用？",
       "audio": "assets/audio/lines/j16-l5.mp3",
       "audioSlow": "assets/audio/lines/j16-l5-slow.mp3",
-      "say": "Then just the date and initials without dots, please. Is there an extra fee?",
+      "say": "Then just the date and our initials, with no dots. Is there an extra fee?",
       "hideGloss": false
     },
     {
@@ -188,7 +188,7 @@
     },
     {
       "pattern": "Then just the date and ___ without dots, please. Is there an extra fee?",
-      "example": "Then just the date and initials without dots, please. Is there an extra fee?",
+      "example": "Then just the date and our initials, with no dots. Is there an extra fee?",
       "glossYue": "咁就淨係日期同首字母。有冇額外費用？",
       "answer": "initials",
       "choices": [
@@ -216,7 +216,7 @@
       "choices": [
         "I'd like to engrave our wedding date inside this silver bracelet.",
         "The twelfth of June, 2021. Can you also add our initials, G and M?",
-        "Then just the date and initials without dots, please. Is there an extra fee?"
+        "Then just the date and our initials, with no dots. Is there an extra fee?"
       ],
       "answer": 1,
       "explain": "用呢句。"
@@ -258,7 +258,7 @@
         "line": "Yes. \"12.06.2021 G&M\" is fourteen characters, so it's two over the limit.",
         "audio": "assets/audio/lines/j16-l4.mp3",
         "audioSlow": "assets/audio/lines/j16-l4-slow.mp3",
-        "expect": "Then just the date and initials without dots, please. Is there an extra fee?",
+        "expect": "Then just the date and our initials, with no dots. Is there an extra fee?",
         "keywords": [
           "date",
           "initials"
@@ -317,7 +317,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Then just the date and initials without dots, please. Is there an extra fee? 呢句入面，邊個意思先啱？",
+      "prompt": "Then just the date and our initials, with no dots. Is there an extra fee? 呢句入面，邊個意思先啱？",
       "choices": [
         "首字母",
         "刻字",

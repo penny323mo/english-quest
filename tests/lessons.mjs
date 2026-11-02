@@ -1209,6 +1209,9 @@ test("tracked review files exclude local audit artifacts", () => {
     "review/stage5/gloss-pairs30.md",
     "review/stage5/quiz-keys.md",
     "review/stage5/sample-gloss.mjs",
+    "review/stage5b/b1b2-pairs30-v2.md",
+    "review/stage5b/b1b2-pairs30.md",
+    "review/stage5b/changelog.md",
   ]);
 });
 
