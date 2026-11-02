@@ -34,11 +34,11 @@
       "id": "t2-l1",
       "speaker": "sam",
       "speakerLabel": "Sam",
-      "text": "Boarding pass, please, and please have your passport ready right here.",
+      "text": "Boarding pass, please, and have your passport ready right here.",
       "glossYue": "登機證，請準備好護照。",
       "audio": "assets/audio/lines/t2-l1.mp3",
       "audioSlow": "assets/audio/lines/t2-l1-slow.mp3",
-      "say": "Boarding pass, please, and please have your passport ready right here."
+      "say": "Boarding pass, please, and have your passport ready right here."
     },
     {
       "id": "t2-l2",
@@ -200,7 +200,7 @@
       {
         "partner": "Sam",
         "partnerId": "sam",
-        "line": "Boarding pass, please, and please have your passport ready right here.",
+        "line": "Boarding pass, please, and have your passport ready right here.",
         "audio": "assets/audio/lines/t2-l1.mp3",
         "audioSlow": "assets/audio/lines/t2-l1-slow.mp3",
         "expect": "Here is my boarding pass, and here is my passport.",
@@ -264,7 +264,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Please put your liquids in the tray, and take the laptop out.」，係咩意思？",
+      "prompt": "客人講「Please put your liquids in the tray now, and take the laptop out.」，係咩意思？",
       "choices": [
         "頸鏈",
         "餐牌",

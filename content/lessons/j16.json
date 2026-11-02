@@ -178,7 +178,7 @@
     {
       "pattern": "I'd like to engrave our wedding ___ inside this silver bracelet. It's a gift.",
       "example": "I'd like to engrave our wedding date inside this silver bracelet. It's a gift.",
-      "glossYue": "我想喺呢隻銀手鏈入面刻我哋嘅結婚日期。呢份係禮物。",
+      "glossYue": "我想將結婚日期刻喺呢條銀手鏈入面。",
       "answer": "date",
       "choices": [
         "date",
@@ -189,7 +189,7 @@
     {
       "pattern": "Then just the date and ___ without dots, please. Is there an extra fee?",
       "example": "Then just the date and initials without dots, please. Is there an extra fee?",
-      "glossYue": "咁就淨係日期同首字母，唔好有點。有冇額外費用？",
+      "glossYue": "咁就淨係日期同首字母。有冇額外費用？",
       "answer": "initials",
       "choices": [
         "initials",
@@ -214,7 +214,7 @@
       "type": "choice",
       "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
-        "I'd like to engrave our wedding date inside this silver bracelet. It's a gift.",
+        "I'd like to engrave our wedding date inside this silver bracelet.",
         "The twelfth of June, 2021. Can you also add our initials, G and M?",
         "Then just the date and initials without dots, please. Is there an extra fee?"
       ],

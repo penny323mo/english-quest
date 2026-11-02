@@ -33,11 +33,11 @@
       "id": "j8-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Have you kept the receipt with you, and should I explain the warranty before you go?",
+      "text": "Have you kept the receipt? Should I explain the warranty before you go?",
       "glossYue": "你有冇帶住張收據？走之前我可唔可以講下保養？",
       "audio": "assets/audio/lines/j8-l1.mp3",
       "audioSlow": "assets/audio/lines/j8-l1-slow.mp3",
-      "say": "Have you kept the receipt with you, and should I explain the warranty before you go?",
+      "say": "Have you kept the receipt? Should I explain the warranty before you go?",
       "hideGloss": false
     },
     {
@@ -99,11 +99,11 @@
       "id": "j8-l7",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Please keep that receipt safe, and you should file any new claim within the return window.",
-      "glossYue": "請將張收據安全留低，新嘅申請要喺退換期內交。",
+      "text": "Please keep that receipt, and file any new claim within the return window.",
+      "glossYue": "請留低張收據，新嘅申請要喺退換期內交。",
       "audio": "assets/audio/lines/j8-l7.mp3",
       "audioSlow": "assets/audio/lines/j8-l7-slow.mp3",
-      "say": "Please keep that receipt safe, and you should file any new claim within the return window.",
+      "say": "Please keep that receipt, and file any new claim within the return window.",
       "hideGloss": true
     },
     {
@@ -269,7 +269,7 @@
         "line": "I will skip harsh chemicals at home and come back later if the polish fails.",
         "audio": "assets/audio/lines/j8-l6.mp3",
         "audioSlow": "assets/audio/lines/j8-l6-slow.mp3",
-        "expect": "Please keep that receipt safe, and you should file any new claim within the return window.",
+        "expect": "Please keep that receipt, and file any new claim within the return window.",
         "keywords": [
           "claim",
           "return"

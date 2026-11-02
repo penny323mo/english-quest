@@ -120,11 +120,11 @@
       "id": "w9-l7",
       "speaker": "sora",
       "speakerLabel": "Sora",
-      "text": "Nine, so I'll still have five after this.",
-      "glossYue": "九日，所以今次之後仲有五日。",
+      "text": "Nine in total, so I'll have five left after this.",
+      "glossYue": "總共九日，今次之後剩五日。",
       "audio": "assets/audio/lines/w9-l7.mp3",
       "audioSlow": "assets/audio/lines/w9-l7-slow.mp3",
-      "say": "Nine, so I'll still have five after this.",
+      "say": "Nine in total, so I'll have five left after this.",
       "hideGloss": false
     },
     {
@@ -269,7 +269,7 @@
         "line": "Thanks. How many leave days do you have left this year?",
         "audio": "assets/audio/lines/w9-l6.mp3",
         "audioSlow": "assets/audio/lines/w9-l6-slow.mp3",
-        "expect": "Nine, so I'll still have five after this.",
+        "expect": "Nine in total, so I'll have five left after this.",
         "keywords": [
           "nine",
           "five"

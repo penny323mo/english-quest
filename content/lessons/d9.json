@@ -122,11 +122,11 @@
       "id": "d9-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can I draw some cash at this counter on the temporary limit while I wait?",
+      "text": "Can I draw cash at this counter on the temporary limit while I wait?",
       "glossYue": "我等緊嘅時候，可唔可以用臨時限額喺櫃檯拎現金？",
       "audio": "assets/audio/lines/d9-l7.mp3",
       "audioSlow": "assets/audio/lines/d9-l7-slow.mp3",
-      "say": "Can I draw some cash at this counter on the temporary limit while I wait?",
+      "say": "Can I draw cash at this counter on the temporary limit while I wait?",
       "hideGloss": true
     },
     {
@@ -163,7 +163,7 @@
       "explain": "identity 係身份。"
     },
     {
-      "prompt": "Can I draw some cash at this counter on the temporary limit while I wait? 即係問緊咩？",
+      "prompt": "Can I draw cash at this counter on the temporary limit while I wait? 即係問緊咩？",
       "choices": [
         "問櫃員機可唔可以退銀行卡",
         "問限額星期五開唔開",
@@ -213,7 +213,7 @@
       "type": "choice",
       "promptYue": "你想喺櫃檯用臨時限額。你點講？",
       "choices": [
-        "Can I draw some cash at this counter on the temporary limit while I wait?",
+        "Can I draw cash at this counter on the temporary limit while I wait?",
         "The cash machine kept my card.",
         "What papers prove my identity at this desk, and when does the new card arrive?"
       ],
@@ -273,7 +273,7 @@
         "line": "Please show one identity document to me, and the new card arrives on Friday.",
         "audio": "assets/audio/lines/d9-l6.mp3",
         "audioSlow": "assets/audio/lines/d9-l6-slow.mp3",
-        "expect": "Can I draw some cash at this counter on the temporary limit while I wait?",
+        "expect": "Can I draw cash at this counter on the temporary limit while I wait?",
         "keywords": [
           "temporary",
           "limit"

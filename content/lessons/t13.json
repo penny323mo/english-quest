@@ -56,11 +56,11 @@
       "id": "t13-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Hi. I have bad headache and high fever. What medicine can I take?",
-      "glossYue": "你好。我頭痛又高燒。我可以食咩藥？",
+      "text": "I have a bad headache and a high fever. What can I take?",
+      "glossYue": "我頭痛得好緊，仲有高燒。我可以食咩？",
       "audio": "assets/audio/lines/t13-l1.mp3",
       "audioSlow": "assets/audio/lines/t13-l1-slow.mp3",
-      "say": "Hi. I have bad headache and high fever. What medicine can I take?",
+      "say": "I have a bad headache and a high fever. What can I take?",
       "hideGloss": false
     },
     {
@@ -78,11 +78,11 @@
       "id": "t13-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "No, I don't have any allergies. How many times day should I take this?",
-      "glossYue": "我冇敏感。一日應該食幾多次？",
+      "text": "No allergies. How many times a day should I take this?",
+      "glossYue": "冇敏感。呢隻一日食幾次？",
       "audio": "assets/audio/lines/t13-l3.mp3",
       "audioSlow": "assets/audio/lines/t13-l3-slow.mp3",
-      "say": "No, I don't have any allergies. How many times day should I take this?",
+      "say": "No allergies. How many times a day should I take this?",
       "hideGloss": false
     },
     {
@@ -122,11 +122,11 @@
       "id": "t13-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Great news indeed. Do I need a written prescription before taking this other tablet?",
+      "text": "Do I need a prescription before I take this tablet?",
       "glossYue": "好消息。食呢種之前使唔使醫生處方？",
       "audio": "assets/audio/lines/t13-l7.mp3",
       "audioSlow": "assets/audio/lines/t13-l7-slow.mp3",
-      "say": "Great news indeed. Do I need a written prescription before taking this other tablet?",
+      "say": "Do I need a prescription before I take this tablet?",
       "hideGloss": true
     },
     {
@@ -176,7 +176,7 @@
   "chunks": [
     {
       "pattern": "Hi. I have a bad ___ and a high fever. What medicine can I take?",
-      "example": "Hi. I have bad headache and high fever. What medicine can I take?",
+      "example": "I have a bad headache and a high fever. What can I take?",
       "glossYue": "我頭痛。",
       "answer": "headache",
       "choices": [
@@ -243,7 +243,7 @@
         "line": "This tablet is good for fever and headache. Do you have allergies?",
         "audio": "assets/audio/lines/t13-l2.mp3",
         "audioSlow": "assets/audio/lines/t13-l2-slow.mp3",
-        "expect": "No, I don't have any allergies. How many times day should I take this?",
+        "expect": "No allergies. How many times a day should I take this?",
         "keywords": [
           "times",
           "day"
@@ -271,7 +271,7 @@
         "line": "If you must drive, take this other tablet. It won't make you sleepy.",
         "audio": "assets/audio/lines/t13-l6.mp3",
         "audioSlow": "assets/audio/lines/t13-l6-slow.mp3",
-        "expect": "Great news indeed. Do I need a written prescription before taking this other tablet?",
+        "expect": "Do I need a prescription before I take this tablet?",
         "keywords": [
           "prescription"
         ],
@@ -337,6 +337,6 @@
   ],
   "shadow": {
     "lineId": "t13-l1",
-    "hint": "Hi. I have bad headache and high fever. What medicine can I take?"
+    "hint": "I have a bad headache and a high fever. What can I take?"
   }
 }

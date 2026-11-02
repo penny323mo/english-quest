@@ -48,11 +48,11 @@
       "id": "r10-l2",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Would you like that latte hot, or would you like it iced?",
+      "text": "Hot or iced for that latte?",
       "glossYue": "呢杯拿鐵你想要熱定凍？",
       "audio": "assets/audio/lines/r10-l2.mp3",
       "audioSlow": "assets/audio/lines/r10-l2-slow.mp3",
-      "say": "Would you like that latte hot, or would you like it iced?",
+      "say": "Hot or iced for that latte?",
       "hideGloss": false
     },
     {
@@ -81,11 +81,11 @@
       "id": "r10-l5",
       "speaker": "cleo",
       "speakerLabel": "Cleo",
-      "text": "Yes, please use oat milk, and put the name Cleo on the cup.",
-      "glossYue": "好，用燕麥奶，杯上寫 Cleo 個名。",
+      "text": "Yes, oat milk, please, and the name Cleo on the cup.",
+      "glossYue": "好，燕麥奶唔該，杯上面寫 Cleo。",
       "audio": "assets/audio/lines/r10-l5.mp3",
       "audioSlow": "assets/audio/lines/r10-l5-slow.mp3",
-      "say": "Yes, please use oat milk, and put the name Cleo on the cup.",
+      "say": "Yes, oat milk, please, and the name Cleo on the cup.",
       "hideGloss": false
     },
     {
@@ -134,7 +134,7 @@
       "explain": "latte 係拿鐵。"
     },
     {
-      "prompt": "Would you like that latte hot, or would you like it iced? 即係問緊咩？",
+      "prompt": "Hot or iced for that latte? 即係問緊咩？",
       "choices": [
         "問名字點寫",
         "問熱定凍",
@@ -169,7 +169,7 @@
     {
       "pattern": "Would you like oat milk in the iced ___?",
       "example": "Would you like oat milk in the iced latte?",
-      "glossYue": "凍拿鐵加燕麥奶，好唔好？",
+      "glossYue": "冰拿鐵要唔要燕麥奶？",
       "answer": "latte",
       "choices": [
         "latte",
@@ -229,7 +229,7 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "Would you like that latte hot, or would you like it iced?",
+        "line": "Hot or iced for that latte?",
         "audio": "assets/audio/lines/r10-l2.mp3",
         "audioSlow": "assets/audio/lines/r10-l2-slow.mp3",
         "expect": "Iced, please, and I would like the small size.",
@@ -246,7 +246,7 @@
         "line": "Would you like oat milk in the iced latte?",
         "audio": "assets/audio/lines/r10-l4.mp3",
         "audioSlow": "assets/audio/lines/r10-l4-slow.mp3",
-        "expect": "Yes, please use oat milk, and put the name Cleo on the cup.",
+        "expect": "Yes, oat milk, please, and the name Cleo on the cup.",
         "keywords": [
           "oat",
           "name"

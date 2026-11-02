@@ -68,22 +68,22 @@
       "id": "w15-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Please could the ledger name me as the owner without reading every reimbursement line aloud?",
-      "glossYue": "帳簿可唔可以寫我做負責人，唔使大聲讀每一行報銷？",
+      "text": "Could you list me as the owner, and skip reading every line out in the meeting?",
+      "glossYue": "可唔可以寫我做負責人，開會唔使逐行讀出嚟？",
       "audio": "assets/audio/lines/w15-l5.mp3",
       "audioSlow": "assets/audio/lines/w15-l5-slow.mp3",
-      "say": "Please could the ledger name me as the owner without reading every reimbursement line aloud?",
+      "say": "Could you list me as the owner, and skip reading every line out in the meeting?",
       "hideGloss": true
     },
     {
       "id": "w15-l6",
       "speaker": "nina",
       "speakerLabel": "Nina",
-      "text": "The notes will name you as owner, and I will not read every line aloud.",
-      "glossYue": "筆記會寫你做負責人，我唔會大聲讀每一行。",
+      "text": "I'll show you as the owner, and I won't read the lines out.",
+      "glossYue": "我會寫你做負責人，開會唔會逐行讀。",
       "audio": "assets/audio/lines/w15-l6.mp3",
       "audioSlow": "assets/audio/lines/w15-l6-slow.mp3",
-      "say": "The notes will name you as owner, and I will not read every line aloud.",
+      "say": "I'll show you as the owner, and I won't read the lines out.",
       "hideGloss": true
     },
     {
@@ -131,7 +131,7 @@
       "explain": "差額留喺三月書面帳簿，問會唔會批。"
     },
     {
-      "prompt": "Please could the ledger name me as the owner without reading every reimbursement line aloud? 即係問緊咩？",
+      "prompt": "Could you list me as the owner, and skip reading every line out in the meeting? 即係問緊咩？",
       "choices": [
         "話要改負責人姓名",
         "話要大聲讀每一行",
@@ -143,9 +143,9 @@
   ],
   "chunks": [
     {
-      "pattern": "Could you please bring the March ___ and the cost variance to Monday's procurement review?",
+      "pattern": "Can you bring March's ___ and the cost variance to the procurement review on Monday?",
       "example": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?",
-      "glossYue": "可唔可以帶三月報銷同成本差額，去星期一嘅採購審核？",
+      "glossYue": "可唔可以將三月報銷同成本差額，帶去星期一嘅採購審核？",
       "answer": "reimbursement",
       "choices": [
         "reimbursement",
@@ -154,9 +154,9 @@
       ]
     },
     {
-      "pattern": "Could you please bring the March reimbursement and the cost ___ to Monday's procurement review?",
+      "pattern": "Can you bring March's reimbursement and the cost ___ to the procurement review on Monday?",
       "example": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?",
-      "glossYue": "可唔可以帶三月報銷同成本差額，去星期一嘅採購審核？",
+      "glossYue": "可唔可以將三月報銷同成本差額，帶去星期一嘅採購審核？",
       "answer": "variance",
       "choices": [
         "variance",
@@ -165,9 +165,9 @@
       ]
     },
     {
-      "pattern": "Could you please bring the March reimbursement and the cost variance to Monday's ___ review?",
+      "pattern": "Can you bring March's reimbursement and the cost variance to the ___ review on Monday?",
       "example": "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?",
-      "glossYue": "可唔可以帶三月報銷同成本差額，去星期一嘅採購審核？",
+      "glossYue": "可唔可以將三月報銷同成本差額，帶去星期一嘅採購審核？",
       "answer": "procurement",
       "choices": [
         "procurement",
@@ -187,7 +187,7 @@
       "choices": [
         "Could you please bring the March reimbursement and the cost variance to Monday's procurement review?",
         "Will you approve the full variance if procurement keeps it inside the written March ledger?",
-        "Please could the ledger name me as the owner without reading every reimbursement line aloud?"
+        "Could you list me as the owner, and skip reading every line out in the meeting?"
       ],
       "answer": 0,
       "explain": "用返課入面第一句。"
@@ -233,7 +233,7 @@
         "line": "I will approve that full variance on Monday, because procurement kept it inside the file.",
         "audio": "assets/audio/lines/w15-l4.mp3",
         "audioSlow": "assets/audio/lines/w15-l4-slow.mp3",
-        "expect": "Please could the ledger name me as the owner without reading every reimbursement line aloud?",
+        "expect": "Could you list me as the owner, and skip reading every line out in the meeting?",
         "keywords": [
           "reimbursement",
           "ledger"
@@ -244,7 +244,7 @@
       {
         "partner": "Nina",
         "partnerId": "nina",
-        "line": "The notes will name you as owner, and I will not read every line aloud.",
+        "line": "I'll show you as the owner, and I won't read the lines out.",
         "audio": "assets/audio/lines/w15-l6.mp3",
         "audioSlow": "assets/audio/lines/w15-l6-slow.mp3",
         "expect": "Please file the procurement note before the meeting and leave it on my wooden desk.",
@@ -302,7 +302,7 @@
     },
     {
       "type": "choice",
-      "prompt": "I will approve that full ___ on Monday, because procurement kept it inside the file. 呢句入面，邊個字先啱？",
+      "prompt": "Will you approve the full ___ if procurement keeps it inside the written March ledger? 呢句入面，邊個字先啱？",
       "choices": [
         "variance",
         "invoice",

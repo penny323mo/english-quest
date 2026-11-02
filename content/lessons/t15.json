@@ -57,11 +57,11 @@
       "id": "t15-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Hi, I'm checking out of room twelve-oh-eight. Could I get a late checkout until one?",
+      "text": "Hi, I'm checking out of room twelve-oh-eight. Could I get a late checkout?",
       "glossYue": "你好，我要退 1208 房。可唔可以延遲退房到一點？",
       "audio": "assets/audio/lines/t15-l1.mp3",
       "audioSlow": "assets/audio/lines/t15-l1-slow.mp3",
-      "say": "Hi, I'm checking out of room twelve-oh-eight. Could I get a late checkout until one?",
+      "say": "Hi, I'm checking out of room twelve-oh-eight. Could I get a late checkout?",
       "hideGloss": false
     },
     {
@@ -101,33 +101,33 @@
       "id": "t15-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Thanks. Could you book me a taxi to the airport for four thirty?",
+      "text": "Could you book me a taxi to the airport for four thirty?",
       "glossYue": "多謝。可唔可以幫我訂四點半去機場嘅的士？",
       "audio": "assets/audio/lines/t15-l5.mp3",
       "audioSlow": "assets/audio/lines/t15-l5-slow.mp3",
-      "say": "Thanks. Could you book me a taxi to the airport for four thirty?",
+      "say": "Could you book me a taxi to the airport for four thirty?",
       "hideGloss": true
     },
     {
       "id": "t15-l6",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "No problem. It's about three hundred dollars, and you pay the driver.",
+      "text": "No problem. It's three hundred dollars, and you pay the driver.",
       "glossYue": "冇問題。大約三百蚊，你直接畀錢司機。",
       "audio": "assets/audio/lines/t15-l6.mp3",
       "audioSlow": "assets/audio/lines/t15-l6-slow.mp3",
-      "say": "No problem. It's about three hundred dollars, and you pay the driver.",
+      "say": "No problem. It's three hundred dollars, and you pay the driver.",
       "hideGloss": true
     },
     {
       "id": "t15-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Great. Could you email me the receipt for the room?",
+      "text": "Could you email me the receipt for the room?",
       "glossYue": "好。可唔可以將房費收據電郵畀我？",
       "audio": "assets/audio/lines/t15-l7.mp3",
       "audioSlow": "assets/audio/lines/t15-l7-slow.mp3",
-      "say": "Great. Could you email me the receipt for the room?",
+      "say": "Could you email me the receipt for the room?",
       "hideGloss": true
     },
     {
@@ -144,7 +144,7 @@
   ],
   "understand": [
     {
-      "prompt": "Hi, I'm checking out of room twelve-oh-eight. Could I get a late checkout until one? 即係問緊咩？",
+      "prompt": "Hi, I'm checking out of room twelve-oh-eight. Could I get a late checkout? 即係問緊咩？",
       "choices": [
         "關於的士",
         "講緊退房",
@@ -176,9 +176,9 @@
   ],
   "chunks": [
     {
-      "pattern": "Hi, I'm checking out of room twelve-oh-eight. Could I get a ___ checkout until one?",
-      "example": "Hi, I'm checking out of room twelve-oh-eight. Could I get a late checkout until one?",
-      "glossYue": "你好，我要退 1208 房。可唔可以延遲退房到一點？",
+      "pattern": "Hi. I'm checking out of room twelve-oh-eight. Could I get a ___ checkout?",
+      "example": "Hi, I'm checking out of room twelve-oh-eight. Could I get a late checkout?",
+      "glossYue": "你好。我退 1208 房。可唔可以遲啲退房？",
       "answer": "late",
       "choices": [
         "late",
@@ -189,7 +189,7 @@
     {
       "pattern": "No, nothing. My flight is at eight tonight. Can you store my ___ until four?",
       "example": "No, nothing. My flight is at eight tonight. Can you store my luggage until four?",
-      "glossYue": "冇。我今晚八點班機。可唔可以幫我存行李到四點？",
+      "glossYue": "冇，迷你吧冇嘢。我八點班機。可唔可以存行李到四點？",
       "answer": "luggage",
       "choices": [
         "luggage",
@@ -214,9 +214,9 @@
       "type": "choice",
       "promptYue": "你想用呢課嘅講法。你點講？",
       "choices": [
-        "Hi, I'm checking out of room twelve-oh-eight. Could I get a late checkout until one?",
-        "No, nothing. My flight is at eight tonight. Can you store my luggage until four?",
-        "Thanks. Could you book me a taxi to the airport for four thirty?"
+        "Hi. I'm checking out of room twelve-oh-eight. Could I get a late checkout?",
+        "No, nothing from the minibar. My flight is at eight. Can you store my luggage until four?",
+        "Could you book me a taxi to the airport for four thirty?"
       ],
       "answer": 1,
       "explain": "用呢句。"
@@ -258,7 +258,7 @@
         "line": "Of course. Here's your tag number, fifty-two. Just show it when you come back.",
         "audio": "assets/audio/lines/t15-l4.mp3",
         "audioSlow": "assets/audio/lines/t15-l4-slow.mp3",
-        "expect": "Thanks. Could you book me a taxi to the airport for four thirty?",
+        "expect": "Could you book me a taxi to the airport for four thirty?",
         "keywords": [
           "thanks",
           "book"
@@ -269,10 +269,10 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "No problem. It's about three hundred dollars, and you pay the driver.",
+        "line": "No problem. It's three hundred dollars, and you pay the driver.",
         "audio": "assets/audio/lines/t15-l6.mp3",
         "audioSlow": "assets/audio/lines/t15-l6-slow.mp3",
-        "expect": "Great. Could you email me the receipt for the room?",
+        "expect": "Could you email me the receipt for the room?",
         "keywords": [
           "great",
           "email"
@@ -307,7 +307,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Hi, I'm checking out of room twelve-oh-eight. Could I get a late checkout until one? 呢句入面，邊個意思先啱？",
+      "prompt": "Hi, I'm checking out of room twelve-oh-eight. Could I get a late checkout? 呢句入面，邊個意思先啱？",
       "choices": [
         "的士",
         "退房",
@@ -339,6 +339,6 @@
   ],
   "shadow": {
     "lineId": "t15-l1",
-    "hint": "Hi, I'm checking out of room twelve-oh-eight. Could I get a late checkout until one?"
+    "hint": "Hi, I'm checking out of room twelve-oh-eight. Could I get a late checkout?"
   }
 }

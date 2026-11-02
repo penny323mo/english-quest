@@ -79,11 +79,11 @@
       "id": "t21-l6",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Please take that heavy bag over to the carousel, and immigration sits past those doors.",
-      "glossYue": "請將嗰件重行李拿到行李轉盤，入境處就喺嗰度門後面。",
+      "text": "Immigration is just through those doors.",
+      "glossYue": "入境處就喺嗰啲門後面。",
       "audio": "assets/audio/lines/t21-l6.mp3",
       "audioSlow": "assets/audio/lines/t21-l6-slow.mp3",
-      "say": "Please take that heavy bag over to the carousel, and immigration sits past those doors.",
+      "say": "Immigration is just through those doors.",
       "hideGloss": true
     },
     {
@@ -143,9 +143,9 @@
   ],
   "chunks": [
     {
-      "pattern": "Could you please check my ___ before the layover and tell me which belt?",
+      "pattern": "Could you check my ___ before the layover, and tell me which belt to use?",
       "example": "Could you please check my declaration before the layover and tell me which belt?",
-      "glossYue": "轉機停留之前可唔可以睇吓我張申報表，話我知邊條帶？",
+      "glossYue": "中轉之前可唔可以睇我份申報表，話我知用邊條帶？",
       "answer": "declaration",
       "choices": [
         "declaration",
@@ -154,9 +154,9 @@
       ]
     },
     {
-      "pattern": "Could you please check my declaration before the ___ and tell me which belt?",
+      "pattern": "Could you check my declaration before the ___, and tell me which belt to use?",
       "example": "Could you please check my declaration before the layover and tell me which belt?",
-      "glossYue": "轉機停留之前可唔可以睇吓我張申報表，話我知邊條帶？",
+      "glossYue": "中轉之前可唔可以睇我份申報表，話我知用邊條帶？",
       "answer": "layover",
       "choices": [
         "layover",
@@ -167,7 +167,7 @@
     {
       "pattern": "If the flight leaves at two, how early should I reach ___ with one bag?",
       "example": "If the flight leaves at two, how early should I reach immigration with one bag?",
-      "glossYue": "如果航班兩點走，我應該幾早帶住一個袋去入境處？",
+      "glossYue": "如果兩點起飛，我要帶住呢個袋幾早到入境處？",
       "answer": "immigration",
       "choices": [
         "immigration",
@@ -244,7 +244,7 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Please take that heavy bag over to the carousel, and immigration sits past those doors.",
+        "line": "Immigration is just through those doors.",
         "audio": "assets/audio/lines/t21-l6.mp3",
         "audioSlow": "assets/audio/lines/t21-l6-slow.mp3",
         "expect": "Can I keep one small bag and check the big bag at the far carousel?",
@@ -292,7 +292,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Please take that heavy bag over to the carousel, and immigration sits past those doors. 呢句入面，邊個意思先啱？",
+      "prompt": "Can I keep one small bag and check the big bag at the far carousel? 呢句入面，邊個意思先啱？",
       "choices": [
         "手鏈",
         "發票",

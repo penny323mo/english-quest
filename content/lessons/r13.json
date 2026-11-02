@@ -101,11 +101,11 @@
       "id": "r13-l5",
       "speaker": "cleo",
       "speakerLabel": "Cleo",
-      "text": "To go, please.",
-      "glossYue": "拎走，唔該。",
+      "text": "Can I get this to go?",
+      "glossYue": "可唔可以拎走？",
       "audio": "assets/audio/lines/r13-l5.mp3",
       "audioSlow": "assets/audio/lines/r13-l5-slow.mp3",
-      "say": "To go, please.",
+      "say": "Can I get this to go?",
       "hideGloss": false
     },
     {
@@ -216,7 +216,7 @@
       "choices": [
         "Hi. Can I get a latte with oat milk and less sugar, please?",
         "Regular, please.",
-        "To go, please."
+        "Can I get this to go?"
       ],
       "answer": 1,
       "explain": "用呢句。"
@@ -257,7 +257,7 @@
         "line": "For here or to go?",
         "audio": "assets/audio/lines/r13-l4.mp3",
         "audioSlow": "assets/audio/lines/r13-l4-slow.mp3",
-        "expect": "To go, please.",
+        "expect": "Can I get this to go?",
         "keywords": [
           "go"
         ],

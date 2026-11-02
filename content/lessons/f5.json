@@ -43,11 +43,11 @@
       "id": "f5-l2",
       "speaker": "ling",
       "speakerLabel": "{{learner}}",
-      "text": "I am from Hong Kong, and I live here.",
-      "glossYue": "我係香港人，我住喺呢度。",
+      "text": "I'm from Hong Kong, and I live here now.",
+      "glossYue": "我來自香港，而家住喺度。",
       "audio": "assets/audio/lines/f5-l2.mp3",
       "audioSlow": "assets/audio/lines/f5-l2-slow.mp3",
-      "say": "I am from Hong Kong, and I live here."
+      "say": "I'm from Hong Kong, and I live here now."
     },
     {
       "id": "f5-l3",
@@ -93,7 +93,7 @@
       "explain": "Where are you from 係問你來自邊度。"
     },
     {
-      "prompt": "I am from Hong Kong, and I live here. 呢句即係點？",
+      "prompt": "I'm from Hong Kong, and I live here now. 呢句即係點？",
       "choices": [
         "我係售貨員",
         "請再講一次",
@@ -161,14 +161,14 @@
   ],
   "shadow": {
     "lineId": "f5-l2",
-    "hint": "I am from Hong Kong, and I live here."
+    "hint": "I'm from Hong Kong, and I live here now."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "Mei 問你來自邊。你點答？",
       "choices": [
-        "I am from Hong Kong, and I live here.",
+        "I'm from Hong Kong, and I live here now.",
         "It is ten dollars.",
         "Good night."
       ],
@@ -202,7 +202,7 @@
         "line": "Where are you from?",
         "audio": "assets/audio/lines/f5-l1.mp3",
         "audioSlow": "assets/audio/lines/f5-l1-slow.mp3",
-        "expect": "I am from Hong Kong, and I live here.",
+        "expect": "I'm from Hong Kong, and I live here now.",
         "keywords": [
           "from",
           "Hong"

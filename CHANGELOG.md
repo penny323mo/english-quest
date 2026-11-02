@@ -1,5 +1,13 @@
 # Changelog — English Quest
 
+## Stage 3 — content
+- The first pass emptied the per-id exemption lists by rewriting lines so they would share a content word, avoid “today” and “for you”, and not end on “tonight” or “now”. A lot of that English was shorter and less polite than the line it replaced. The follow-up keeps the real padding checks (`for you here`, `that note here`) and the template checks, and drops the rules that were forcing the awkward lines: a reply no longer has to repeat a content word from the question, “today” and “for you” are allowed, and a line may end on “tonight” or “now”. A lesson word that is one of that lesson’s lemmas may repeat. The guard that forbade an exemption list is gone.
+- Lines that were already natural are back, including “I’m sorry, I did not see you there.” The ten lines called out in review are in `review/stage3/duet-fixes.md`. A seeded sample of 30 remaining changes is in `review/stage3/random30.md` (seed 1506, `review/stage3/sample30.mjs`).
+- Every one of the 97 lessons is inside its CEFR word cap. Neighbours stay within two words, two-step and three-step drops stay within 2.5, and the band means rise. No new lessons.
+- LanguageTool 6.6, offline, en-US, checked the English lines. Real errors (a/an, “Can I looking”, broken templates, missing question marks) stayed fixed. The remaining matches are false positives in `review/stage3/grammar.json`.
+- Clips whose spoken text changed were re-rendered with Piper `en_US-ljspeech-medium` and espeak `en-us`. Clips that returned to the previous sentence were restored from that recording.
+- Still open: mixed hero art, the bare sound checkbox, the 440 Hz oscillator, residual gloss drift on names and teaching spellings, and quiz items on watch.
+
 ## Stage 2 — tests and honesty
 - A green test count is not a content-quality score. Round 55’s “77/77” and the line that left 236 “Staff logged … under code” examples in place were wrong as quality claims: the code token was how those lines evaded the skeleton cap. Stage 1 rewrote them. The normalised skeleton cap is back to two lemmas, which is what the check was before that round loosened it to three.
 - New checks, each failing on `tests/fixtures/anti-game.json` and passing on the current lexicon and lessons: a lemma-swap frame shared by three lemmas; a lesson sentence that matches another lesson after names, places, times, numbers, and codes are stripped; a Cantonese gloss that copies the English; a “Yes.” reply that repeats three content words and adds none. The last check does not skip line ids.

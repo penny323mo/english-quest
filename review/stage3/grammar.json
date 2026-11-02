@@ -1,0 +1,231 @@
+{
+  "tool": "LanguageTool 6.6",
+  "language": "en-US",
+  "offline": true,
+  "linesChecked": 4751,
+  "scope": "Every lexicon example, every mini-dialogue line, and every line of the 97 lessons.",
+  "realErrors": 0,
+  "matches": 253,
+  "realErrorsFixed": [
+    "A/an: I need an officer; I need an English menu.",
+    "Modal: Can I keep looking, not Can I looking.",
+    "Infinitive: She is calling the front desk, not to calling.",
+    "Broken templates rewritten one by one: almost, off, approve, wifi, separate, speak to, if you like, withdraw, utilities, damage.",
+    "Question mark on the tax-refund example.",
+    "Hyphens: water-resistant, eighteen-karat gold, duty-free, thirty-minute, two-day.",
+    "Comma before so when it joins two clauses (mute, number, anaesthetic, insurance).",
+    "W1 phone lines rewritten as full sentences. T2 no longer says please twice."
+  ],
+  "falsePositives": [
+    {
+      "rule": "MORFOLOGIK_RULE_EN_US",
+      "count": 122,
+      "why": "British spellings are taught on purpose (jewellery, colour, grey, lustre, labour, licence, flavour, anaesthetic, harbour, jeweller, millilitre, chilli, neighbour). The US checker flags them. They are the lemma spellings, not typos.",
+      "examples": [
+        {
+          "id": "welcome-verb example",
+          "sentence": "Welcome to our jewellery store."
+        },
+        {
+          "id": "our-det example",
+          "sentence": "Welcome to our jewellery store."
+        },
+        {
+          "id": "our-det#md0",
+          "sentence": "Our jewellery is in this glass case."
+        }
+      ]
+    },
+    {
+      "rule": "THE_SENT_END",
+      "count": 1,
+      "why": "\"It starts with a.\" is about the letter A, not an article with a missing noun.",
+      "examples": [
+        {
+          "id": "a-letter#md1",
+          "sentence": "It starts with a."
+        }
+      ]
+    },
+    {
+      "rule": "ENGLISH_WORD_REPEAT_BEGINNING_RULE",
+      "count": 96,
+      "why": "LanguageTool saw one sentence per line in a single file, so unrelated examples that happen to start with the same word looked like one paragraph. No lesson repeats a sentence opening three times as one speech.",
+      "examples": [
+        {
+          "id": "we-pron#md1",
+          "sentence": "We can move you to row five."
+        },
+        {
+          "id": "where-adv#md1",
+          "sentence": "Where the red sign is."
+        },
+        {
+          "id": "have-verb#md0",
+          "sentence": "Do you have a spare charger?"
+        }
+      ]
+    },
+    {
+      "rule": "MISSING_COMMA_AFTER_INTRODUCTORY_PHRASE",
+      "count": 4,
+      "why": "\"Of course we can\" is ordinary speech. The comma after Of course is optional here.",
+      "examples": [
+        {
+          "id": "course-noun#md0",
+          "sentence": "Of course we can switch you to a window."
+        },
+        {
+          "id": "of-course-phrase#md0",
+          "sentence": "Of course you can sit here."
+        },
+        {
+          "id": "of-course-phrase#md1",
+          "sentence": "Of course I will move if needed."
+        }
+      ]
+    },
+    {
+      "rule": "AGREEMENT_SENT_START_2",
+      "count": 1,
+      "why": "\"Ten dollars is fair.\" A sum of money takes a singular verb.",
+      "examples": [
+        {
+          "id": "dollar-noun#md1",
+          "sentence": "Ten dollars is fair."
+        }
+      ]
+    },
+    {
+      "rule": "CD_NN",
+      "count": 5,
+      "why": "\"Eighteen karat is not pure\", \"four eight two\", and \"nine nine nine\" read a unit or a number aloud. The singular or the repeated digit is the point.",
+      "examples": [
+        {
+          "id": "karat-noun#ex1",
+          "sentence": "Eighteen karat is not pure."
+        },
+        {
+          "id": "karat-noun#md1",
+          "sentence": "Eighteen karat is not pure."
+        },
+        {
+          "id": "t10-l5",
+          "sentence": "The tag number is HK four eight two."
+        }
+      ]
+    },
+    {
+      "rule": "SHORT_COMPARATIVES",
+      "count": 1,
+      "why": "\"More pure\" keeps the adjective pure visible. \"Purer\" would hide the form the card teaches, and both are acceptable speech.",
+      "examples": [
+        {
+          "id": "pure-adj#ex2",
+          "sentence": "This seat feels more pure."
+        }
+      ]
+    },
+    {
+      "rule": "WIFI",
+      "count": 10,
+      "why": "The taught lemma is wifi, not Wi-Fi. Changing the spelling would hide the word the card is teaching.",
+      "examples": [
+        {
+          "id": "wifi-noun example",
+          "sentence": "The wifi password is on the card."
+        },
+        {
+          "id": "wifi-noun#ex0",
+          "sentence": "The wifi password is on the card."
+        },
+        {
+          "id": "wifi-noun#ex1",
+          "sentence": "Wifi is free in the room."
+        }
+      ]
+    },
+    {
+      "rule": "THIS_NNS_VB",
+      "count": 3,
+      "why": "\"This looks understated\" is grammatical. LanguageTool misread understated as a plural noun.",
+      "examples": [
+        {
+          "id": "understated-adj example",
+          "sentence": "This looks understated."
+        },
+        {
+          "id": "understated-adj#ex0",
+          "sentence": "This looks understated."
+        },
+        {
+          "id": "understated-adj#md0",
+          "sentence": "This looks understated."
+        }
+      ]
+    },
+    {
+      "rule": "CAFE_DIACRITIC",
+      "count": 6,
+      "why": "US menu English in this course spells cafe without an accent.",
+      "examples": [
+        {
+          "id": "weekend-noun#ex1",
+          "sentence": "I spent the weekend with my sister in a cafe."
+        },
+        {
+          "id": "weekend-noun#md1",
+          "sentence": "I spent the weekend with my sister in a cafe."
+        },
+        {
+          "id": "work-verb#md0",
+          "sentence": "I work the breakfast shift at this cafe."
+        }
+      ]
+    },
+    {
+      "rule": "EN_DIACRITICS_REPLACE_ORTHOGRAPHY_CAFES",
+      "count": 1,
+      "why": "Same as cafe: the learner spelling has no accent.",
+      "examples": [
+        {
+          "id": "cheaper-adj#ex2",
+          "sentence": "Switching cafes made his weekday lunch much cheaper than before."
+        }
+      ]
+    },
+    {
+      "rule": "ENGLISH_WORD_REPEAT_RULE",
+      "count": 1,
+      "why": "\"Five five one two\" is a phone number read aloud, not a doubled word.",
+      "examples": [
+        {
+          "id": "f5-l4",
+          "sentence": "My number is five five one two, and here is my email."
+        }
+      ]
+    },
+    {
+      "rule": "COMMA_AFTER_A_MONTH",
+      "count": 1,
+      "why": "\"The twelfth of June, 2021\" keeps the usual comma before the year.",
+      "examples": [
+        {
+          "id": "j16-l3",
+          "sentence": "The twelfth of June, 2021."
+        }
+      ]
+    },
+    {
+      "rule": "SEND_PRP_AN_EMAIL",
+      "count": 1,
+      "why": "\"Send me an email\" is grammatical. \"Email me\" is only a shorter style option.",
+      "examples": [
+        {
+          "id": "w11-l7",
+          "sentence": "Could you send me an email to confirm that?"
+        }
+      ]
+    }
+  ]
+}

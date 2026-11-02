@@ -4806,11 +4806,11 @@
       "audioSha256": "5a70fc69a0c380a29ead90a227cf629dad148d1593aba1e9c40d925e87aa865e",
       "miniDialogue": [
         {
-          "en": "Can I looking while you watch the bags?",
-          "yue": "你睇住行李，我可唔可以去搵緊；睇緊？",
+          "en": "Can I keep looking while you watch the bags?",
+          "yue": "你睇住袋嗰陣，我可唔可以繼續睇？",
           "audio": "assets/audio/words/looking-verb-md0.mp3",
           "audioSlow": "assets/audio/words/looking-verb-md0-slow.mp3",
-          "audioTextSha256": "b892a79cefbcea1d6fd8611f003bf79731bda1b8c3c1a437fdae92cb80dc177b"
+          "audioTextSha256": "2bd9dc368122a4bd357a74dcbfe58c09d6bf39bef883e2de7d7cb7753af0fb09"
         },
         {
           "en": "Go ahead. I will wait here.",
@@ -5278,7 +5278,7 @@
       "arpabet": "K AO1 R S",
       "audio": "assets/audio/words/course-noun.mp3",
       "audioSlow": "assets/audio/words/course-noun-slow.mp3",
-      "glossYue": "當然（of course）",
+      "glossYue": "當然",
       "glossZh": "当然",
       "jyutping": "dong1 jin4",
       "collocations": [
@@ -13633,7 +13633,7 @@
         "eighteen karat",
         "karat gold"
       ],
-      "example": "This is eighteen karat gold.",
+      "example": "This is eighteen-karat gold.",
       "exampleYue": "呢件係十八開金。",
       "say": "This is eighteen [[kˈɛɹət]] gold.",
       "variants": [],
@@ -13656,7 +13656,7 @@
       ],
       "examples": [
         {
-          "en": "This is eighteen karat gold.",
+          "en": "This is eighteen-karat gold.",
           "yue": "呢件係十八開金。",
           "audio": "assets/audio/words/karat-noun.mp3",
           "audioSlow": "assets/audio/words/karat-noun-slow.mp3",
@@ -13682,11 +13682,11 @@
       ],
       "miniDialogue": [
         {
-          "en": "This is eighteen karat gold.",
+          "en": "This is eighteen-karat gold.",
           "yue": "呢件係十八開金。",
           "audio": "assets/audio/words/karat-noun-md0.mp3",
           "audioSlow": "assets/audio/words/karat-noun-md0-slow.mp3",
-          "audioTextSha256": "9a3c801dcfc8ddf9c6846c1e3c42c4ef32dc2aa83e6674999aafcbe2b995fc10"
+          "audioTextSha256": "9d6976d1ad81e805fc5a94964ddc9765532cc186d6f46e56358e741fc0653c11"
         },
         {
           "en": "Eighteen karat is not pure.",
@@ -14258,7 +14258,7 @@
       "collocations": [
         "diamond setting"
       ],
-      "example": "This setting is eighteen karat gold.",
+      "example": "This setting is eighteen-karat gold.",
       "exampleYue": "呢個鑲托係十八開金。",
       "say": "This setting is eighteen [[kˈɛɹət]] gold.",
       "variants": [],
@@ -14271,7 +14271,7 @@
       "senseMismatch": false,
       "cmuLemma": "setting",
       "phrase": false,
-      "audioSha256": "c29176f6d62874ae09c29a8a9a4111d5980f155bf439a0c9f3abfeffc3b0184d",
+      "audioSha256": "421d86edc2538ec69fc0b021340ea5a9060963b89041b734e3f9ccbec0f28dfd",
       "register": "櫃檯",
       "usageNotes": "The setting holds the stone. 鑲托。",
       "pitfallsYue": "setting 呢度係托住寶石嗰件，唔係場景。",
@@ -14281,12 +14281,12 @@
       ],
       "examples": [
         {
-          "en": "This setting is eighteen karat gold.",
+          "en": "This setting is eighteen-karat gold.",
           "yue": "呢個鑲托係十八開金。",
           "audio": "assets/audio/words/setting-noun.mp3",
           "audioSlow": "assets/audio/words/setting-noun-slow.mp3",
-          "say": "This [[kˈɛɹət]] is eighteen karat gold.",
-          "audioTextSha256": "e969e67df0f226b4ddda75a3b64741c776f4ccfa342eb6aab219dca1c8b4b775"
+          "say": "This [[kˈɛɹət]] is eighteen-karat gold.",
+          "audioTextSha256": "9afb1a29c571927eb720e72142f2a102fed18d079815ce0d24e6f0cb8609f120"
         },
         {
           "en": "The diamond setting is tight.",
@@ -14307,11 +14307,11 @@
       ],
       "miniDialogue": [
         {
-          "en": "This setting is eighteen karat gold.",
+          "en": "This setting is eighteen-karat gold.",
           "yue": "呢個鑲托係十八開金。",
           "audio": "assets/audio/words/setting-noun-md0.mp3",
           "audioSlow": "assets/audio/words/setting-noun-md0-slow.mp3",
-          "audioTextSha256": "af65a6bab19b96bebfa2f4825b68c8657bce9b3f6a63393c9d79d49678a1fb64"
+          "audioTextSha256": "4b127b9fa610e8b10f88cdc3b02618d2c63431dd86321667c5069d94094a8ba9"
         },
         {
           "en": "The diamond setting is tight.",
@@ -15351,12 +15351,12 @@
           "audioTextSha256": "3e0e466f89258776f9707e0cf1bb6104a0ba5d54271210ed7d552269f7f1dd5c"
         },
         {
-          "en": "Please speak almost so the back can hear.",
-          "yue": "請差唔多講，等後面都聽到。",
+          "en": "I almost missed the last train.",
+          "yue": "我差啲趕唔切尾班車。",
           "audio": "assets/audio/words/almost-adv-ex3.mp3",
           "audioSlow": "assets/audio/words/almost-adv-ex3-slow.mp3",
-          "say": "Please speak [[pˈɜfɪkt]] so the back can hear.",
-          "audioTextSha256": "4cdecf2b82670027866ea333f5590be463056e3054b5ae7b34d3148483e337a4"
+          "say": "I almost missed the last train.",
+          "audioTextSha256": "d693a2789fffb9b8a30cc4663b6bdcd9f75d3687cff97e793231a425eb6dc5f3"
         }
       ],
       "miniDialogue": [
@@ -15799,12 +15799,12 @@
           "audioTextSha256": "38d635ce5ecdfcd8bf0f05468d183e9610e67a9087df5e4a0d9a6e65043fbfd9"
         },
         {
-          "en": "Please speak off so the back can hear.",
-          "yue": "請減講，等後面都聽到。",
+          "en": "Please turn the lamp off.",
+          "yue": "唔該熄咗盞燈。",
           "audio": "assets/audio/words/off-adv-ex3.mp3",
           "audioSlow": "assets/audio/words/off-adv-ex3-slow.mp3",
-          "say": "Please speak off so the back can hear.",
-          "audioTextSha256": "ac172937c927f0e6bee64b293c491b5ffd0b809cff6cee83f265df4b4a8ffc0b"
+          "say": "Please turn the lamp off.",
+          "audioTextSha256": "30a278be686552868e76aad68e0da5edaf9278ff167bad4286ccd9db6f48082b"
         }
       ],
       "miniDialogue": [
@@ -17914,12 +17914,12 @@
           "audioTextSha256": "c385b10818acc353b52684c05ce5981abfde8591687fe5bfebecef79583ddffc"
         },
         {
-          "en": "Please back up before swapping the approve.",
-          "yue": "換批核之前請先備份。",
+          "en": "The manager will approve the refund.",
+          "yue": "經理會批呢筆退款。",
           "audio": "assets/audio/words/approve-verb-ex3.mp3",
           "audioSlow": "assets/audio/words/approve-verb-ex3-slow.mp3",
-          "say": "Please back up before swapping the [[əˈpɹuv]].",
-          "audioTextSha256": "350067a8b590e4bf812e3bf5d0b487b8f7fbc26ef81ee3b4ca0c9572a88b57d0"
+          "say": "The manager will approve the refund.",
+          "audioTextSha256": "e5a68e09457a102bcb4dfca44292637b1c870fbfa135c15a2205eb1672f0262f"
         }
       ],
       "miniDialogue": [
@@ -19860,12 +19860,12 @@
           "audioTextSha256": "9beeffce6218a564c415b77780c7edba9aa80c3d3d2806043493af77879e8534"
         },
         {
-          "en": "Please back up before swapping the wifi.",
-          "yue": "換無線網絡之前請先備份。",
+          "en": "Please back up the files before you change the wifi.",
+          "yue": "換 wifi 之前請先備份檔案。",
           "audio": "assets/audio/words/wifi-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/wifi-noun-ex3-slow.mp3",
-          "say": "Please back up before swapping the [[wˈaɪfˌaɪ]].",
-          "audioTextSha256": "0f699376ae588e67b9b450335a22fb2d2ae6e5769232fac2774fe2671d7c590f"
+          "say": "Please back up the files before you change the [[wˈaɪfˌaɪ]].",
+          "audioTextSha256": "3c89e8f4b623551b3700a23695d019a6936bf4d67bd04b699fad0cd19fa21f2a"
         }
       ],
       "miniDialogue": [
@@ -20036,12 +20036,12 @@
           "audioTextSha256": "c47e26388bcf102d0cb4ad989a69483fa22ef17a6b4ae2867eb2e83dc289005c"
         },
         {
-          "en": "We removed the breakfast from her plate.",
-          "yue": "我哋將碟入面嘅早餐攞走咗。",
+          "en": "Breakfast is served until ten in the dining room.",
+          "yue": "早餐開到十點，喺餐廳。",
           "audio": "assets/audio/words/breakfast-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/breakfast-noun-ex3-slow.mp3",
-          "say": "We removed the [[ˈbɹɛkfəst]] from her plate.",
-          "audioTextSha256": "843f16c9c73e4ac879d3bf8b6d9ec747fa5c5905a790d2926c6c95c116c449ea"
+          "say": "Breakfast is served until ten in the dining room.",
+          "audioTextSha256": "c3f330d04e0b2a7c739f9d342fc7177677d8c4267d59a6d8158129952e625052"
         }
       ],
       "miniDialogue": [
@@ -21464,12 +21464,12 @@
           "audioTextSha256": "cd76e34422e7f8aac69045d158b14cc5b8e8f00ad157623fd3f2decd2e0c5bf8"
         },
         {
-          "en": "She sketched the police before ordering.",
-          "yue": "落單前佢畫低咗警察。",
+          "en": "Ask the police to write down what you saw.",
+          "yue": "請警察寫低你見到嘅事。",
           "audio": "assets/audio/words/police-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/police-noun-ex3-slow.mp3",
-          "say": "She sketched the [[pəˈlis]] before ordering.",
-          "audioTextSha256": "2b7b3761b7f7ba73d13d33036b637eff595370774dd22698d7bffd4a0e065125"
+          "say": "Ask the police to write down what you saw.",
+          "audioTextSha256": "a4964b11f21668bab60b9d4b40272fec96da17db265d94b4bc09422b68497777"
         }
       ],
       "miniDialogue": [
@@ -23001,12 +23001,12 @@
           "audioTextSha256": "dbf3508ee3f5ee6d14e907fbef254c0fb0f02524e5317a07e2bcd5fafec124d3"
         },
         {
-          "en": "We removed the napkin from her plate.",
-          "yue": "我哋將碟入面嘅餐巾攞走咗。",
+          "en": "Please fold the napkin beside the spoon.",
+          "yue": "唔該將餐巾摺好放喺匙羹旁邊。",
           "audio": "assets/audio/words/napkin-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/napkin-noun-ex3-slow.mp3",
-          "say": "We removed the napkin from her plate.",
-          "audioTextSha256": "87f591f273a66e76f782539ba8e4f45745d5efe88ad6035ffd510c0319bbabb7"
+          "say": "Please fold the napkin beside the spoon.",
+          "audioTextSha256": "85fe69f097e6d39f91cc1ddaec888edf07e7d8f4f88d61aeb72a2e37ae799482"
         }
       ],
       "miniDialogue": [
@@ -24080,11 +24080,11 @@
           "audioTextSha256": "af8201f800d99139a4bfc525a27c7cf3df9d334d33525ce87d071024cf28aec1"
         },
         {
-          "en": "I will print the receipts separate so each guest has one.",
-          "yue": "我會將收據分開印，每位客都有自己一張。",
+          "en": "I will print a separate receipt for each guest.",
+          "yue": "我會為每位客人印一張分開嘅收據。",
           "audio": "assets/audio/words/separate-adj-md1.mp3",
           "audioSlow": "assets/audio/words/separate-adj-md1-slow.mp3",
-          "audioTextSha256": "71ef68389c0cd2b206b40ba85f7f377d2ac0ec84ec38084730a839705a779a14"
+          "audioTextSha256": "b0dc37ed4302bd4575227f962d83279ccced4c6db17f747d0196aca8427fb275"
         }
       ]
     },
@@ -24781,12 +24781,12 @@
           "audioTextSha256": "76031e927c0c4ddeca6482c6809becf12748f941c88e2fd345e269051e2d5563"
         },
         {
-          "en": "They asked me to calling it today.",
-          "yue": "佢哋叫我今日打緊嚟。",
+          "en": "She is calling the front desk.",
+          "yue": "佢而家打緊去前台。",
           "audio": "assets/audio/words/calling-verb-ex3.mp3",
           "audioSlow": "assets/audio/words/calling-verb-ex3-slow.mp3",
-          "say": "They asked me to [[ˈkɔlɪŋ]] it today.",
-          "audioTextSha256": "70d03493d7e82358b62dbe0a7fd02a79a0761c2c27bd94feb9de54ef7830496a"
+          "say": "She is calling the front desk.",
+          "audioTextSha256": "3cecbc99ab80e55c7de2e1858624316403204db74b721f33266e20e1428cb026"
         }
       ],
       "miniDialogue": [
@@ -24870,12 +24870,12 @@
           "audioTextSha256": "784eb45bb619942d4a71b732e1eb8e9effd303af2a6adcc5c57bbcdb61a10886"
         },
         {
-          "en": "The speak to listing expires on Sunday.",
-          "yue": "呢個同…講嘅刊登星期日到期。",
+          "en": "I need to speak to the manager.",
+          "yue": "我要同經理講。",
           "audio": "assets/audio/words/speak-to-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/speak-to-phrase-ex3-slow.mp3",
-          "say": "The speak to listing expires on Sunday.",
-          "audioTextSha256": "f3022c8f127e79665f41fc0878e854df1dce7ac147193253144541ca67c5aee9"
+          "say": "I need to speak to the manager.",
+          "audioTextSha256": "784eb45bb619942d4a71b732e1eb8e9effd303af2a6adcc5c57bbcdb61a10886"
         }
       ],
       "miniDialogue": [
@@ -25097,7 +25097,7 @@
         "a birthday message"
       ],
       "example": "The message on the cake says Happy birthday Mei.",
-      "exampleYue": "生日蛋糕上嘅字係 Happy birthday Mei。",
+      "exampleYue": "生日蛋糕上嘅字係 祝 Mei 生日快樂。",
       "say": "The message on the cake says Happy birthday Mei.",
       "variants": [],
       "note": "",
@@ -25120,7 +25120,7 @@
       "examples": [
         {
           "en": "The message on the cake says Happy birthday Mei.",
-          "yue": "生日蛋糕上嘅字係 Happy birthday Mei。",
+          "yue": "生日蛋糕上嘅字係 祝 Mei 生日快樂。",
           "audio": "assets/audio/words/message-noun.mp3",
           "audioSlow": "assets/audio/words/message-noun-slow.mp3",
           "say": "The message on the cake says Happy birthday Mei.",
@@ -25128,7 +25128,7 @@
         },
         {
           "en": "Write the message Happy birthday Mei on the cake.",
-          "yue": "蛋糕上寫 Happy birthday Mei 呢句字。",
+          "yue": "蛋糕上寫 祝 Mei 生日快樂 呢句字。",
           "audio": "assets/audio/words/message-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/message-noun-ex2-slow.mp3",
           "say": "Write the message Happy birthday Mei on the cake.",
@@ -25146,14 +25146,14 @@
       "miniDialogue": [
         {
           "en": "The message on the cake says Happy birthday Mei.",
-          "yue": "生日蛋糕上嘅字係 Happy birthday Mei。",
+          "yue": "生日蛋糕上嘅字係 祝 Mei 生日快樂。",
           "audio": "assets/audio/words/message-noun-md0.mp3",
           "audioSlow": "assets/audio/words/message-noun-md0-slow.mp3",
           "audioTextSha256": "0ea49d1d45ab94474cd3828389f437a3aa6c8344df66e7d8748b208c17d83244"
         },
         {
           "en": "Write the message Happy birthday Mei on the cake.",
-          "yue": "蛋糕上寫 Happy birthday Mei 呢句字。",
+          "yue": "蛋糕上寫 祝 Mei 生日快樂 呢句字。",
           "audio": "assets/audio/words/message-noun-md1.mp3",
           "audioSlow": "assets/audio/words/message-noun-md1-slow.mp3",
           "audioTextSha256": "a5ce81d937993b7fe1ff41b8b74b59db37b8bbcfe07b5ce153c21a682387e71f"
@@ -27825,12 +27825,12 @@
           "audioTextSha256": "3e30c3756786569f29efc8125d3850648477407db1b3567c5bd0ab939a0ad31f"
         },
         {
-          "en": "Please warm the if you like before fitting.",
-          "yue": "安裝前請先暖一暖如果你想。",
+          "en": "If you like, take the window seat.",
+          "yue": "你鍾意嘅話坐窗位。",
           "audio": "assets/audio/words/if-you-like-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/if-you-like-phrase-ex3-slow.mp3",
-          "say": "Please warm the if you like before fitting.",
-          "audioTextSha256": "7d72e98a498c3542654388cbedb3b5428c55ab75835c59841fe6423d117d7de7"
+          "say": "If you like, take the window seat.",
+          "audioTextSha256": "17e832c87fe1a505f56056189a4b51e2b9bf2f8b03aa4a2dd966a13c7f327ae1"
         }
       ],
       "miniDialogue": [
@@ -29464,11 +29464,11 @@
           "audioTextSha256": "7d4d58b123a119f9e1ea6eb405f9bae4c133fe348fd0a8cca387f6239c06e0bd"
         },
         {
-          "en": "I will mute the side chat so the meeting stays quiet.",
-          "yue": "我會靜音側邊個聊天，等個會安靜啲。",
+          "en": "I will mute the side chat, so the meeting stays quiet.",
+          "yue": "我會靜音側邊個聊天，等個會保持安靜。",
           "audio": "assets/audio/words/mute-verb-md1.mp3",
           "audioSlow": "assets/audio/words/mute-verb-md1-slow.mp3",
-          "audioTextSha256": "b7945c81dfca67cb1c4c98cd2aed4332e0631546e59548ec7b04d30653f28d8b"
+          "audioTextSha256": "a9aecde273771f5c13b0aa5071b92b9a867e7cf35473950d943add18472a8687"
         }
       ]
     },
@@ -29985,12 +29985,12 @@
           "audioTextSha256": "8333ac0f625d1db9760096c992e99c12af84c016c3656529d17b43e8c87fcea1"
         },
         {
-          "en": "She sketched the owner before ordering.",
-          "yue": "落單前佢畫低咗負責人。",
+          "en": "The owner signed the repair slip before we left.",
+          "yue": "老闆喺我哋走之前簽咗維修單。",
           "audio": "assets/audio/words/owner-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/owner-noun-ex3-slow.mp3",
-          "say": "She sketched the [[ˈoʊnɚ]] before ordering.",
-          "audioTextSha256": "bc93e0927a96ae3dcabf18324a03a11df76599054a654ba69eb7517b7946c867"
+          "say": "The owner signed the repair slip before we left.",
+          "audioTextSha256": "6ce46f53f1f4174c5bbafcdaba5139f622114ca48c6da3a46e8f6879799e9d90"
         }
       ],
       "miniDialogue": [
@@ -30967,12 +30967,12 @@
           "audioTextSha256": "43677da3c90df8517a44a61d40f35e6b60f4c93a5127e8aa18b05ae8090cabdb"
         },
         {
-          "en": "The teller pointed to my withdraw.",
-          "yue": "櫃員指住我嘅攞錢。",
+          "en": "I would like to withdraw some cash.",
+          "yue": "我想提取現金。",
           "audio": "assets/audio/words/withdraw-verb-ex3.mp3",
           "audioSlow": "assets/audio/words/withdraw-verb-ex3-slow.mp3",
-          "say": "The teller pointed to my [[wɪðˈdɹɔ]].",
-          "audioTextSha256": "1622936c855889d5bb6dbb7ca379b38ca649f92816a204e7689e01667f9245c1"
+          "say": "I would like to withdraw some cash.",
+          "audioTextSha256": "32ad3b9cf26e68ec4ba3e7d17e3072dbfc6352ff7b4e6eaa9b9d8d8fdb5b4294"
         }
       ],
       "miniDialogue": [
@@ -31851,12 +31851,12 @@
           "audioTextSha256": "fd3fce64f683d7ff039ed3b239d91352cb147dcb4fd403e47fc6fe15c4833c77"
         },
         {
-          "en": "We replaced a broken utilities for free.",
-          "yue": "壞咗嘅水電煤我哋免費換過。",
+          "en": "We replaced the broken utilities for free.",
+          "yue": "我哋免費換咗壞咗嘅水電。",
           "audio": "assets/audio/words/utilities-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/utilities-noun-ex3-slow.mp3",
-          "say": "We replaced a broken [[juˈtɪlətiz]] for free.",
-          "audioTextSha256": "255669faee457144c06a3d6a2d091aa7575fc89eec69c9120e8e4b7929f63f14"
+          "say": "We replaced the broken utilities for free.",
+          "audioTextSha256": "b06afdc37683bd910f1f5bdfea4735ebaa13347ebfec8df8528b5c0acbcc27bb"
         }
       ],
       "miniDialogue": [
@@ -32890,9 +32890,9 @@
         "tax refund form",
         "tax refund desk"
       ],
-      "example": "Can I get a tax refund form for this shirt.",
-      "exampleYue": "可唔可以畀我呢件衫嘅退稅表。",
-      "say": "Can I get a tax refund form for this shirt.",
+      "example": "Can I get a tax refund form for this shirt?",
+      "exampleYue": "呢件衫可唔可以攞退稅表？",
+      "say": "Can I get a tax refund form for this shirt?",
       "variants": [],
       "note": "",
       "sources": [
@@ -32903,7 +32903,7 @@
       "senseMismatch": false,
       "cmuLemma": "tax",
       "phrase": true,
-      "audioSha256": "aa37b9346cde69a5e85580874e2f830adf4a2546b18971e33d761e76668188df",
+      "audioSha256": "bca997dbf57079c4728bbde7a00c642ae99c680d0edfd51c942e67feb5c8a4b4",
       "register": "旅行",
       "usageNotes": "退稅係離境之前用收據同表格申請。",
       "pitfallsYue": "",
@@ -32913,12 +32913,12 @@
       ],
       "examples": [
         {
-          "en": "Can I get a tax refund form for this shirt.",
-          "yue": "可唔可以畀我呢件衫嘅退稅表。",
+          "en": "Can I get a tax refund form for this shirt?",
+          "yue": "呢件衫可唔可以攞退稅表？",
           "audio": "assets/audio/words/tax-refund-phrase.mp3",
           "audioSlow": "assets/audio/words/tax-refund-phrase-slow.mp3",
-          "say": "Can I get a tax refund form for this shirt.",
-          "audioTextSha256": "089cb302631b6622d8b8e13252a84a92adc60233125ce5c98bc78a8793bffe9c"
+          "say": "Can I get a tax refund form for this shirt?",
+          "audioTextSha256": "5d2671cbe94e45ef9f1d591eeaa3e60d9cc3212d301410e0c9184557c058ce3f"
         },
         {
           "en": "The tax refund desk needs this receipt with your passport.",
@@ -32939,11 +32939,11 @@
       ],
       "miniDialogue": [
         {
-          "en": "Can I get a tax refund form for this shirt.",
-          "yue": "可唔可以畀我呢件衫嘅退稅表。",
+          "en": "Can I get a tax refund form for this shirt?",
+          "yue": "呢件衫可唔可以攞退稅表？",
           "audio": "assets/audio/words/tax-refund-phrase-md0.mp3",
           "audioSlow": "assets/audio/words/tax-refund-phrase-md0-slow.mp3",
-          "audioTextSha256": "089cb302631b6622d8b8e13252a84a92adc60233125ce5c98bc78a8793bffe9c"
+          "audioTextSha256": "5d2671cbe94e45ef9f1d591eeaa3e60d9cc3212d301410e0c9184557c058ce3f"
         },
         {
           "en": "The tax refund desk needs this receipt with your passport.",
@@ -34982,12 +34982,12 @@
           "audioTextSha256": "799cc52a7159571fbf4bc3eef639184f60236ea08447523e0f347bdbaf6b2d06"
         },
         {
-          "en": "I need a officer today.",
-          "yue": "我今日需要一個關員。",
+          "en": "I need an officer at the desk.",
+          "yue": "我要搵個職員到櫃檯。",
           "audio": "assets/audio/words/officer-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/officer-noun-ex2-slow.mp3",
-          "say": "I need a [[ˈɔfəsɚ]] today.",
-          "audioTextSha256": "7527457a1a1691543a9f3b0d3dda827fb7a7ac002605b765de6d40a1db437fb9"
+          "say": "I need an [[ˈɔfəsɚ]] at the desk.",
+          "audioTextSha256": "bcdb81b1212d1e7ea57d7cad7eb4967b7015994bc0d3d39fa9cfae2b0ce8b16d"
         },
         {
           "en": "The officer asked why the suitcase felt heavy at the checkpoint.",
@@ -35007,11 +35007,11 @@
           "audioTextSha256": "55b30af0128e02ccac53e4dbd0bb2e3691da0289aa157b21482bf19e7e0685a1"
         },
         {
-          "en": "I need a officer today.",
-          "yue": "我今日需要一個關員。",
+          "en": "I need an officer at the desk.",
+          "yue": "我要搵個職員到櫃檯。",
           "audio": "assets/audio/words/officer-noun-md1.mp3",
           "audioSlow": "assets/audio/words/officer-noun-md1-slow.mp3",
-          "audioTextSha256": "0fbce976f5f578dfce0411ed7cc25bad2d35caec0a1b3e55acda9985238b83d8"
+          "audioTextSha256": "2b74dd51f3ed61ddd16eba7fad7de59451d1e7f801fe4ef61b00b91df5d2c2f4"
         }
       ]
     },
@@ -39571,12 +39571,12 @@
           "audioTextSha256": "9f5b1521c9b680321b2b994cdf626d99cc3597133bc390a9399b187b3dc7dc6a"
         },
         {
-          "en": "May I have your number so the clinic can call back?",
-          "yue": "可唔可以留你個號碼，等診所打返畀你？",
+          "en": "May I have your number, so the clinic can call back?",
+          "yue": "可唔可以留個電話，等診所打返嚟？",
           "audio": "assets/audio/words/number-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/number-noun-ex3-slow.mp3",
-          "say": "May I have your number so the clinic can call back?",
-          "audioTextSha256": "a6e9e71a861979096ea33961c7ee58ef99db0b8e99f90fc3626e5d277541a923"
+          "say": "May I have your number, so the clinic can call back?",
+          "audioTextSha256": "9232cfb72dbeaa7ab5421d8d41c0daddf4941ef06639b18776ed08e8e3beefc5"
         }
       ],
       "miniDialogue": [
@@ -44388,12 +44388,12 @@
           "audioTextSha256": "d4434a7694e4ee2ad13e75bca96c8a21300bbc9790cbe8bb8a92744699a7659b"
         },
         {
-          "en": "I need a English today.",
-          "yue": "我今日需要一個英文。",
+          "en": "I need an English menu, please.",
+          "yue": "我要一份英文餐牌。",
           "audio": "assets/audio/words/english-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/english-noun-ex2-slow.mp3",
-          "say": "I need a [[ˈɪŋɡlɪʃ]] today.",
-          "audioTextSha256": "13d0857ddc42a659986e462b790ad0da5dcaf8c5e460f9e252b17764b10ba821"
+          "say": "I need an [[ˈɪŋɡlɪʃ]] menu, please.",
+          "audioTextSha256": "2bfebd9321255d05e5c9eb18c57bd586ae60fc45321b6eb23542a28a541a8356"
         },
         {
           "en": "He practises English by describing each dish to tourists.",
@@ -44413,11 +44413,11 @@
           "audioTextSha256": "72579443562a4023ba7fef3ef4cedc8ece0da81c195f24fc9d64a91950ae02e5"
         },
         {
-          "en": "I need a English today.",
-          "yue": "我今日需要一個英文。",
+          "en": "I need an English menu, please.",
+          "yue": "我要一份英文餐牌。",
           "audio": "assets/audio/words/english-noun-md1.mp3",
           "audioSlow": "assets/audio/words/english-noun-md1-slow.mp3",
-          "audioTextSha256": "9b4c8f3951a8547abfcf1425c4ecd380524bef16da3f76adcf5480f2579ebf3e"
+          "audioTextSha256": "97ceeb18ccee07cab9ac9fffa978911225f930f93d384b0cde9b7e5c665d30f2"
         }
       ]
     },
@@ -48847,12 +48847,12 @@
           "audioTextSha256": "1a009f34f53dc60241073b0e763abe7352bff5e07f30fcc611ad9044a2619f4b"
         },
         {
-          "en": "She sketched the sketch before ordering.",
-          "yue": "落單前佢畫低咗草圖。",
+          "en": "She left a pencil sketch before we ordered the stone.",
+          "yue": "落單之前，佢留低咗一幅鉛筆草圖。",
           "audio": "assets/audio/words/sketch-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/sketch-noun-ex3-slow.mp3",
-          "say": "She sketched the sketch before ordering.",
-          "audioTextSha256": "bfc85e10c750b3cad2dfe0635dfa4c24eb4148be469961a8a2e1d16aa98311f6"
+          "say": "She left a pencil sketch before we ordered the stone.",
+          "audioTextSha256": "65830ac0b2ac51db889c9baab07d3a473a390d05aab525f2324b96c21350bedc"
         }
       ],
       "miniDialogue": [
@@ -50991,7 +50991,7 @@
         },
         {
           "en": "Note eggnoun: polish the egg lightly.",
-          "yue": "筆記 eggnoun：輕輕擦吓蛋。",
+          "yue": "輕輕擦吓隻蛋就得。",
           "audio": "assets/audio/words/egg-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/egg-noun-ex2-slow.mp3",
           "say": "Note eggnoun: polish the egg lightly.",
@@ -51016,7 +51016,7 @@
         },
         {
           "en": "Note eggnoun: polish the egg lightly.",
-          "yue": "筆記 eggnoun：輕輕擦吓蛋。",
+          "yue": "輕輕擦吓隻蛋就得。",
           "audio": "assets/audio/words/egg-noun-md1.mp3",
           "audioSlow": "assets/audio/words/egg-noun-md1-slow.mp3",
           "audioTextSha256": "9c7c7f9eafd7ed13674c968c854aaae108c0dbfb6ea3bdebd0c22077b6053ad4"
@@ -53481,9 +53481,9 @@
       "collocations": [
         "water resistant"
       ],
-      "example": "This watch is water resistant.",
+      "example": "This watch is water-resistant.",
       "exampleYue": "呢隻手錶防水。",
-      "say": "This watch is water resistant.",
+      "say": "This watch is water-resistant.",
       "variants": [],
       "note": "",
       "sources": [
@@ -53494,51 +53494,51 @@
       "senseMismatch": false,
       "cmuLemma": "water",
       "phrase": true,
-      "audioSha256": "9f9b45d058ff0540df71817755249de96414f989d5d00ce8ea6352adbd177195",
+      "audioSha256": "dbaa3c938ef61fa76dba234baaa85dde673167524ed211232d0cd6bdc1ec0236",
       "register": "珠寶",
       "usageNotes": "water resistant 係防水。",
       "pitfallsYue": "防水唔等於可以游水。",
       "related": [],
       "examples": [
         {
-          "en": "This watch is water resistant.",
+          "en": "This watch is water-resistant.",
           "yue": "呢隻手錶防水。",
           "audio": "assets/audio/words/water-resistant-adj.mp3",
           "audioSlow": "assets/audio/words/water-resistant-adj-slow.mp3",
-          "say": "This watch is water resistant.",
-          "audioTextSha256": "965283f4c1314c9122435e50fa948ddc6cd8bb98bfe0315864d7942a807c3891"
+          "say": "This watch is water-resistant.",
+          "audioTextSha256": "170a841c018f45488c47d98c9f6426f48f73493e34206958238f2c3fffe127e9"
         },
         {
-          "en": "Is the case still water resistant?",
+          "en": "Is the case still water-resistant?",
           "yue": "個殼仲防唔防水？",
           "audio": "assets/audio/words/water-resistant-adj-ex2.mp3",
           "audioSlow": "assets/audio/words/water-resistant-adj-ex2-slow.mp3",
-          "say": "Is the case still water resistant?",
-          "audioTextSha256": "b4c6142a85bb57b85c9e96f76d8f0b76c74a8922b27d79f12f13f7f08c6b13a3"
+          "say": "Is the case still water-resistant?",
+          "audioTextSha256": "41d92d2cfe642722d910051fe7d205a2bc781ace8cac4898ecc97422a782e1a6"
         },
         {
-          "en": "This water resistant watch can come into the pool with me.",
+          "en": "This water-resistant watch can come into the pool with me.",
           "yue": "呢隻防水錶可以跟我落泳池。",
           "audio": "assets/audio/words/water-resistant-adj-ex3.mp3",
           "audioSlow": "assets/audio/words/water-resistant-adj-ex3-slow.mp3",
-          "say": "This water resistant watch can come into the pool with me.",
-          "audioTextSha256": "57d6f917f9fc5326db6ba30c102331ee5077966cda5772e4fb3a99a2df96e8f1"
+          "say": "This water-resistant watch can come into the pool with me.",
+          "audioTextSha256": "6022a508dba050b94923ec0cc528d57ab7b14eeb6dc5e0466677507d0c9dd852"
         }
       ],
       "miniDialogue": [
         {
-          "en": "This watch is water resistant.",
+          "en": "This watch is water-resistant.",
           "yue": "呢隻手錶防水。",
           "audio": "assets/audio/words/water-resistant-adj-md0.mp3",
           "audioSlow": "assets/audio/words/water-resistant-adj-md0-slow.mp3",
-          "audioTextSha256": "965283f4c1314c9122435e50fa948ddc6cd8bb98bfe0315864d7942a807c3891"
+          "audioTextSha256": "170a841c018f45488c47d98c9f6426f48f73493e34206958238f2c3fffe127e9"
         },
         {
-          "en": "Is the case still water resistant?",
+          "en": "Is the case still water-resistant?",
           "yue": "個殼仲防唔防水？",
           "audio": "assets/audio/words/water-resistant-adj-md1.mp3",
           "audioSlow": "assets/audio/words/water-resistant-adj-md1-slow.mp3",
-          "audioTextSha256": "b4c6142a85bb57b85c9e96f76d8f0b76c74a8922b27d79f12f13f7f08c6b13a3"
+          "audioTextSha256": "41d92d2cfe642722d910051fe7d205a2bc781ace8cac4898ecc97422a782e1a6"
         }
       ]
     },
@@ -55304,12 +55304,12 @@
           "audioTextSha256": "83a29d9016a6d5af62f16ca6df001da4542d15cf2311ea701fc5d32ce5c642ba"
         },
         {
-          "en": "The dentist applied anaesthetic so the drilling would not hurt.",
-          "yue": "牙醫落咗麻醉，等鑽牙嗰陣唔會痛。",
+          "en": "The dentist applied anaesthetic, so the drilling would not hurt.",
+          "yue": "牙醫用咗麻醉，鑽牙就唔會痛。",
           "audio": "assets/audio/words/anaesthetic-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/anaesthetic-noun-ex3-slow.mp3",
-          "say": "The dentist applied [[ˌænəsˈθɛtɪk]] so the drilling would not hurt.",
-          "audioTextSha256": "e9df9d2e45f9e6eefcab11a7cfd6fa5b2a3fae0b54bb8d03ce6b488fde6a614d"
+          "say": "The dentist applied anaesthetic, so the drilling would not hurt.",
+          "audioTextSha256": "2db08d1d59a167a542b7fda35ce0584fbb5a3e8c87a4be5a310ec4586b8e3bb6"
         }
       ],
       "miniDialogue": [
@@ -55993,12 +55993,12 @@
           "audioTextSha256": "b91a8514174e7bdb2342b4bc99fa08b0f73fdc5592c13bc84b54ccd70db261f4"
         },
         {
-          "en": "The chef plated the buffet last.",
-          "yue": "廚師最後先擺自助餐上碟。",
+          "en": "The buffet stays open until the fruit runs out.",
+          "yue": "自助餐開到水果食晒先收。",
           "audio": "assets/audio/words/buffet-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/buffet-noun-ex3-slow.mp3",
-          "say": "The chef plated the [[bəˈfeɪ]] last.",
-          "audioTextSha256": "6f259d7c8da487197eeeae9be54edf010be62b14fca84354877b2a39a727fc3f"
+          "say": "The buffet stays open until the fruit runs out.",
+          "audioTextSha256": "4afffaf74ccb7f5ce6f4cefb6e39e5a4c5c2357f4b36b03af5b19d20cac4ff01"
         }
       ],
       "miniDialogue": [
@@ -56167,12 +56167,12 @@
           "audioTextSha256": "f9cde48196ccf5cd38f9ded0b8f2ebc63c3e163730b502f083f58b4ed7c3f2b2"
         },
         {
-          "en": "The chef plated the plate last.",
-          "yue": "廚師最後先擺餐碟上碟。",
+          "en": "The soup needs a warm plate before it goes out.",
+          "yue": "上菜之前，湯要放喺暖碟度。",
           "audio": "assets/audio/words/plate-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/plate-noun-ex3-slow.mp3",
-          "say": "The chef plated the [[ˈpleɪt]] last.",
-          "audioTextSha256": "b47bd34ed87970af37c2b8c777743b7d2a074dde593dea1b0361451910f3d826"
+          "say": "The soup needs a warm [[ˈpleɪt]] before it goes out.",
+          "audioTextSha256": "bd01fe0ddbd1c5cef8fb6bb154388f79e88e6e13abeb12dc27fa173d522cdc3c"
         }
       ],
       "miniDialogue": [
@@ -56889,11 +56889,11 @@
       ],
       "miniDialogue": [
         {
-          "en": "This bottle of alcohol is over the duty free limit.",
+          "en": "This bottle of alcohol is over the duty-free limit.",
           "yue": "呢樽酒精飲品已經超過免稅限額。",
           "audio": "assets/audio/words/alcohol-noun-md0.mp3",
           "audioSlow": "assets/audio/words/alcohol-noun-md0-slow.mp3",
-          "audioTextSha256": "05bddd49d5af9ac590e70ca8ee7573e662c31cd26aa11fb841fb50401441c1f0"
+          "audioTextSha256": "8ad2eee7d68c1c99710d7ffe54e5e27654b53436ace294b32bd477d5eaa84e3f"
         },
         {
           "en": "You may need to pay duty because the alcohol exceeds the allowance.",
@@ -57235,12 +57235,12 @@
           "audioTextSha256": "bff18a3005757eae049205428a4c7ae50622b3994b0d553c3316f6fef2a2184a"
         },
         {
-          "en": "I sent the photos so my insurance would cover the broken clasp.",
-          "yue": "我交咗相片，等保險保埋個壞扣。",
+          "en": "I sent the photos, so my insurance would cover the broken clasp.",
+          "yue": "我傳咗相，等保險賠嗰個斷咗嘅扣。",
           "audio": "assets/audio/words/insurance-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/insurance-noun-ex3-slow.mp3",
-          "say": "I sent the photos so my insurance would cover the broken clasp.",
-          "audioTextSha256": "141f18e7eb3126ffc33bc4e494695ccf2597e6822924bfed2943896ad5642167"
+          "say": "I sent the photos, so my insurance would cover the broken clasp.",
+          "audioTextSha256": "890b400dfeaedbfd7a227251cb8f36d7babbd39bf5954711bff56e94344ac257"
         }
       ],
       "miniDialogue": [
@@ -57323,12 +57323,12 @@
           "audioTextSha256": "1135ca604f1ce7adba8312a03c8b35ce2d64523dd870383831ec3cf5cc568b81"
         },
         {
-          "en": "Please isolate the damaged damage.",
-          "yue": "請將壞咗嘅損壞隔離。",
+          "en": "Please photograph the damage before we pack it.",
+          "yue": "打包之前請影低損壞。",
           "audio": "assets/audio/words/damage-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/damage-noun-ex3-slow.mp3",
-          "say": "Please isolate the damaged [[ˈdæmədʒ]].",
-          "audioTextSha256": "2c24a066bf4daf2f6a63307b6577468178d42f4f0dc30577e8c82bad0d25ce26"
+          "say": "Please photograph the damage before we pack it.",
+          "audioTextSha256": "8acc63ac28e34d8f5ba97d99e8c6a2dfef11f23c5639adff5be1cb5561eaec6a"
         }
       ],
       "miniDialogue": [
@@ -57841,12 +57841,12 @@
           "audioTextSha256": "a73255d98823ed05b46430e9d0e53600ca8332f79114f2b5db5883017e8bab23"
         },
         {
-          "en": "The chef plated the special last.",
-          "yue": "廚師最後先擺特餐上碟。",
+          "en": "Tonight's special is grilled fish with lime.",
+          "yue": "今晚特餐係青檸燒魚。",
           "audio": "assets/audio/words/special-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/special-noun-ex3-slow.mp3",
-          "say": "The chef plated the special last.",
-          "audioTextSha256": "48a272c985cca13b45be14f4ea5d79fa9ca2a5a1b750f830f93d02d902ca2ae5"
+          "say": "Tonight's special is grilled fish with lime.",
+          "audioTextSha256": "aa7a0f0615900ac453a847c997e71bbc93703725b9dda556baf92bc09cf2c1de"
         }
       ],
       "miniDialogue": [
