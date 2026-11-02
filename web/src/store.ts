@@ -3,6 +3,7 @@ import { create } from "zustand";
 import { Rating, type Grade } from "ts-fsrs";
 import { makeNewCard, reviewStored } from "./fsrs";
 import { createPersistence, exportJson, importJson, type LessonCursor, type Persisted, type SaveStatus } from "./persist.mjs";
+import { FALLBACK_LEARNER } from "./learner";
 import type { Goal, Level, Profile } from "./types";
 
 type Store = Persisted & {
@@ -278,7 +279,7 @@ export function blankProfile(input: {
   level: Level;
 }): Profile {
   return {
-    name: input.name.trim() || "阿琳",
+    name: input.name.trim() || FALLBACK_LEARNER,
     goal: input.goal,
     minutes: input.minutes,
     level: input.level,

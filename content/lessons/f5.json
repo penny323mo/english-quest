@@ -42,7 +42,7 @@
     {
       "id": "f5-l2",
       "speaker": "ling",
-      "speakerLabel": "Ling",
+      "speakerLabel": "{{learner}}",
       "text": "I am from Hong Kong, and I live here.",
       "glossYue": "我係香港人，我住喺呢度。",
       "audio": "assets/audio/lines/f5-l2.mp3",
@@ -62,12 +62,13 @@
     {
       "id": "f5-l4",
       "speaker": "ling",
-      "speakerLabel": "Ling",
-      "text": "My number is five five one two, and my email is ling at shop.",
-      "glossYue": "我號碼係五五一二，電郵係 ling at shop。",
+      "speakerLabel": "{{learner}}",
+      "text": "My number is five five one two, and here is my email.",
+      "glossYue": "我號碼係五五一二，電郵喺呢度。",
       "audio": "assets/audio/lines/f5-l4.mp3",
       "audioSlow": "assets/audio/lines/f5-l4-slow.mp3",
-      "say": "My number is five five one two, and my email is ling at shop."
+      "say": "My number is five five one two, and here is my email.",
+      "runtimeTts": true
     },
     {
       "id": "f5-l5",
@@ -102,10 +103,10 @@
       "explain": "from 係來自。live 係住。"
     },
     {
-      "prompt": "My number is five five one two, and my email is ling at shop. 呢句即係點？",
+      "prompt": "My number is five five one two, and here is my email. 呢句即係點？",
       "choices": [
         "舖頭已經關門",
-        "號碼係五五一二，電郵係 ling at shop",
+        "號碼係五五一二，電郵喺呢度",
         "我想食午餐"
       ],
       "answer": 1,
@@ -215,7 +216,7 @@
         "line": "What is your phone number?",
         "audio": "assets/audio/lines/f5-l3.mp3",
         "audioSlow": "assets/audio/lines/f5-l3-slow.mp3",
-        "expect": "My number is five five one two, and my email is ling at shop.",
+        "expect": "My number is five five one two, and here is my email.",
         "keywords": [
           "number",
           "email"
@@ -229,10 +230,10 @@
         "line": "Could you spell your name?",
         "audio": "assets/audio/lines/f5-l5.mp3",
         "audioSlow": "assets/audio/lines/f5-l5-slow.mp3",
-        "expect": "My name is Ling. L I N G.",
+        "expect": "My name is {{learner}}. {{learner-spell}}.",
         "keywords": [
           "name",
-          "Ling"
+          "{{learner}}"
         ],
         "modelAudio": "assets/audio/lines/f5-m3.mp3",
         "modelSlow": "assets/audio/lines/f5-m3-slow.mp3"

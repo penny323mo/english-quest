@@ -46,12 +46,12 @@
     {
       "id": "f2-l2",
       "speaker": "ling",
-      "speakerLabel": "Ling",
-      "text": "Hello. Good morning. My name is Ling.",
-      "glossYue": "你好。早晨。我叫 Ling。",
+      "speakerLabel": "{{learner}}",
+      "text": "Hello. Good morning. My name is {{learner}}.",
+      "glossYue": "你好。早晨。我叫 {{learner}}。",
       "audio": "assets/audio/lines/f2-l2.mp3",
       "audioSlow": "assets/audio/lines/f2-l2-slow.mp3",
-      "say": "Hello. Good morning. My name is Ling."
+      "say": "Hello. Good morning. My name is {{learner}}."
     },
     {
       "id": "f2-l3",
@@ -66,7 +66,7 @@
     {
       "id": "f2-l4",
       "speaker": "ling",
-      "speakerLabel": "Ling",
+      "speakerLabel": "{{learner}}",
       "text": "Nice to meet you, too. Thank you.",
       "glossYue": "我都好高興認識你。多謝。",
       "audio": "assets/audio/lines/f2-l4.mp3",
@@ -130,11 +130,11 @@
     },
     {
       "pattern": "My name is ___.",
-      "example": "My name is Ling.",
+      "example": "My name is {{learner}}.",
       "glossYue": "我叫⋯⋯。",
-      "answer": "Ling",
+      "answer": "{{learner}}",
       "choices": [
-        "Ling",
+        "{{learner}}",
         "a table",
         "check-in"
       ]
@@ -185,13 +185,13 @@
         "My",
         "name",
         "is",
-        "Ling"
+        "{{learner}}"
       ],
       "answer": [
         "My",
         "name",
         "is",
-        "Ling"
+        "{{learner}}"
       ]
     }
   ],
@@ -205,7 +205,7 @@
         "line": "Hello. Good morning. Yes, I am Mei.",
         "audio": "assets/audio/lines/f2-l1.mp3",
         "audioSlow": "assets/audio/lines/f2-l1-slow.mp3",
-        "expect": "Hello. Good morning. My name is Ling.",
+        "expect": "Hello. Good morning. My name is {{learner}}.",
         "keywords": [
           "morning",
           "name"

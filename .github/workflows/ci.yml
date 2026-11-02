@@ -19,3 +19,9 @@ jobs:
       - run: npm run typecheck
       - run: npm test
       - run: npm run build
+      - name: Check the artifact is built from this commit
+        run: node scripts/verify-build.mjs
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium webkit
+      - name: PWA update and 390px screenshots
+        run: node e2e/run.mjs

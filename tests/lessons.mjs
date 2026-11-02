@@ -259,8 +259,8 @@ test("round 26 spoken goals, tray card, and spelled model", () => {
     assert.equal(JSON.stringify(lesson).includes("係問？"), false, lesson.id);
   }
   const byId = Object.fromEntries(lex.items.map((item) => [item.id, item]));
-  assert.equal(byId["my-det"].example, "My name is Ling.");
-  assert.equal(byId["my-det"].exampleYue, "我叫 Ling。");
+  assert.equal(byId["my-det"].example, "My name is {{learner}}.");
+  assert.equal(byId["my-det"].exampleYue, "我叫 {{learner}}。");
   assert.equal(byId["bin-noun"].lemma, "tray");
   assert.match(byId["bin-noun"].example, /in the tray/);
   assert.equal(byId["bin-noun"].example.includes("in the bin"), false);
@@ -394,23 +394,16 @@ test("the app has a mic fallback and does not phone home", () => {
 });
 
 test("installed PWAs pick up replaced teaching audio", () => {
-  const sw = fs.readFileSync(path.join(root, "sw.js"), "utf8");
+  const sw = fs.readFileSync(path.join(root, "web/src/sw.ts"), "utf8");
   const config = fs.readFileSync(path.join(root, "vite.config.ts"), "utf8");
   assert.match(config, /dontCacheBustURLsMatching/);
+  assert.match(config, /injectManifest/);
+  assert.equal(config.includes("navigateFallback: \"index.html\""), false);
+  assert.match(sw, /NetworkOnly/);
+  assert.match(sw, /cleanupOutdatedCaches/);
+  assert.match(sw, /index\.html/);
   assert.equal(config.includes("eq-audio"), false);
   assert.equal(sw.includes("eq-audio"), false);
-  const entries = [...sw.matchAll(/\{url:"([^"]+)",revision:(null|"[0-9a-f]+")\}/g)];
-  assert.ok(entries.length >= 400, `precache entries ${entries.length}`);
-  const vowel = entries.find((entry) => entry[1] === "assets/audio/words/the-art-vowel.mp3");
-  assert.ok(vowel, "the-art-vowel.mp3");
-  assert.match(vowel[2], /^"[0-9a-f]{32}"$/);
-  for (const entry of entries) {
-    const url = entry[1];
-    if (url.endsWith(".mp3") || url.endsWith(".webp")) assert.notEqual(entry[2], "null", url);
-  }
-  const hashedJs = entries.filter((entry) => /assets\/index-[A-Za-z0-9_-]{8}\.js$/.test(entry[1]));
-  assert.equal(hashedJs.length, 1);
-  assert.equal(hashedJs[0][2], "null");
 });
 
 test("word cards use Cantonese labels and hide the simplified gloss", () => {
@@ -475,7 +468,7 @@ test("learner Cantonese does not use 俾, stiff glosses, or simplified character
     const yues = [item.exampleYue, ...(item.examples || []).map((example) => example.yue)];
     for (const yue of yues) {
       const han = [...yue].filter((ch) => /\p{Script=Han}/u.test(ch)).join("");
-      if (item.id === "my-det" && yue === "我叫 Ling。") continue;
+      if (item.id === "my-det" && yue.includes("{{learner}}")) continue;
       if ([...han].length <= 2 && !greetings.has(han)) {
         assert.fail(`${item.id} exampleYue ${yue}`);
       }

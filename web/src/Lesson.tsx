@@ -17,6 +17,7 @@ import {
 import { quizRecapLine } from "./persist.mjs";
 import { karaokeSpans, stressSplit } from "./stress.mjs";
 import { playSfx } from "./sfx";
+import { fillLearner } from "./learner";
 import { useStore } from "./store";
 import type { BuildOrder, Lesson, LexItem, QuizItem } from "./types";
 import { BEAT_LABELS } from "./beats";
@@ -311,6 +312,7 @@ function GlossLine({ text, hidden }: { text: string; hidden?: boolean }) {
 }
 
 function Hear({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
+  const learner = useStore((s) => s.profile?.name);
   const [slow, setSlow] = useState(false);
   const [, setTick] = useState(0);
   useEffect(() => subscribeAudio(() => setTick((n) => n + 1)), []);
@@ -325,7 +327,7 @@ function Hear({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
       {lesson.dialogue.map((line) => {
         const path = slow ? line.audioSlow : line.audio;
         const playing = snap.src === absAsset(path) && !snap.paused;
-        const parts = line.text.split(/(\s+)/);
+        const parts = fillLearner(line.text, learner).split(/(\s+)/);
         const total = parts.filter((w) => w.trim()).length || 1;
         const idx = playing && snap.duration
           ? Math.min(total - 1, Math.floor((snap.time / snap.duration) * total))
@@ -334,7 +336,7 @@ function Hear({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
         return (
           <div key={line.id} className="choice hear-line">
             <button className="hear-play" type="button" onClick={() => playAsset(path)}>
-              <span className="who">{line.speakerLabel}</span>
+              <span className="who">{fillLearner(line.speakerLabel, learner)}</span>
               <span className="line" lang="en">
                 {parts.map((part, i) => {
                   if (!part.trim()) return <span key={`${line.id}-${i}`}>{part}</span>;
@@ -348,7 +350,7 @@ function Hear({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
                 })}
               </span>
             </button>
-            <GlossLine text={line.glossYue} hidden={line.hideGloss} />
+            <GlossLine text={fillLearner(line.glossYue, learner)} hidden={line.hideGloss} />
           </div>
         );
       })}
@@ -374,6 +376,7 @@ function Choices({
   onNext: () => void;
   onSkip?: () => void;
 }) {
+  const learner = useStore((s) => s.profile?.name);
   const [picked, setPicked] = useState<number | null>(null);
   const [done, setDone] = useState(false);
   const [seed] = useState(() => (Math.floor(Math.random() * 0x7fffffff) ^ (choices.length * 997) ^ prompt.length) >>> 0);
@@ -386,10 +389,10 @@ function Choices({
       {mark ? (
         <div className="stem">
           <p className="stem-yue">{mark}</p>
-          <h2 lang="en">{english}</h2>
+          <h2 lang="en">{fillLearner(english, learner)}</h2>
         </div>
       ) : (
-        <h2>{prompt}</h2>
+        <h2>{fillLearner(prompt, learner)}</h2>
       )}
       <div className="stack">
         {order.map((src, i) => {
@@ -412,7 +415,7 @@ function Choices({
               }}
             >
               <span className="choice-letter">{String.fromCharCode(65 + i)}</span>
-              <span>{choice}</span>
+              <span>{fillLearner(choice, learner)}</span>
             </button>
           );
         })}
@@ -483,6 +486,7 @@ function BuildStep({
 }
 
 function OrderBuild({ item, onNext }: { item: BuildOrder; onNext: () => void }) {
+  const learner = useStore((s) => s.profile?.name);
   const [used, setUsed] = useState<number[]>([]);
   const [done, setDone] = useState(false);
   const built = used.map((i) => item.tokens[i] || "");
@@ -498,7 +502,7 @@ function OrderBuild({ item, onNext }: { item: BuildOrder; onNext: () => void }) 
             type="button"
             onClick={() => { if (!done) setUsed(used.filter((_, j) => j !== i)); }}
           >
-            {token}
+            {fillLearner(token, learner)}
           </button>
         ))}
       </div>
@@ -506,7 +510,7 @@ function OrderBuild({ item, onNext }: { item: BuildOrder; onNext: () => void }) 
         {item.tokens.map((token, i) => (
           used.includes(i) ? null : (
             <button key={i} className="token" type="button" disabled={done} onClick={() => setUsed([...used, i])}>
-              {token}
+              {fillLearner(token, learner)}
             </button>
           )
         ))}
@@ -539,19 +543,20 @@ function OrderBuild({ item, onNext }: { item: BuildOrder; onNext: () => void }) 
 }
 
 function Shadow({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
+  const learner = useStore((s) => s.profile?.name);
   const line = lesson.dialogue.find((row) => row.id === lesson.shadow.lineId) || lesson.dialogue[0];
   const keywords = lesson.shadow.hint.split(/[^A-Za-z']+/).filter((w) => w.length > 3).slice(0, 4);
   return (
     <>
       <p className="who">跟住讀</p>
-      <p className="line" lang="en">{line.text}</p>
-      <GlossLine text={line.glossYue} hidden={line.hideGloss} />
+      <p className="line" lang="en">{fillLearner(line.text, learner)}</p>
+      <GlossLine text={fillLearner(line.glossYue, learner)} hidden={line.hideGloss} />
       <div className="row-btns">
         <button className="btn quiet" type="button" onClick={() => playAsset(line.audio)}>聽</button>
         <button className="btn ghost" type="button" onClick={() => playAsset(line.audioSlow)}>慢速</button>
       </div>
       <SpeakBox
-        expect={lesson.shadow.hint}
+        expect={fillLearner(lesson.shadow.hint, learner)}
         keywords={keywords}
         modelAudio={line.audio}
         modelSlow={line.audioSlow}
@@ -573,6 +578,7 @@ function RoleBeat({
   setSub: (n: number) => void;
   onDone: () => void;
 }) {
+  const learner = useStore((s) => s.profile?.name);
   const turn = lesson.roleplay.turns[sub];
   if (!turn) return null;
   return (
@@ -586,8 +592,8 @@ function RoleBeat({
       </div>
       <SpeakBox
         key={sub}
-        expect={turn.expect}
-        keywords={turn.keywords}
+        expect={fillLearner(turn.expect, learner)}
+        keywords={turn.keywords.map((word) => fillLearner(word, learner))}
         modelAudio={turn.modelAudio}
         modelSlow={turn.modelSlow}
         tip={roleTip(lesson.roleplay.you)}
