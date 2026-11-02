@@ -63,22 +63,22 @@
       "id": "w3-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I am concerned the owner cannot meet this new deadline on Friday.",
-      "glossYue": "我擔心負責人星期五趕唔切呢個新期限。",
+      "text": "I'm concerned Mei can't meet this new deadline on Friday.",
+      "glossYue": "我擔心 Mei 星期五趕唔切呢個新期限。",
       "audio": "assets/audio/lines/w3-l4.mp3",
       "audioSlow": "assets/audio/lines/w3-l4-slow.mp3",
-      "say": "I am concerned the owner cannot meet this new deadline on Friday.",
+      "say": "I'm concerned Mei can't meet this new deadline on Friday.",
       "hideGloss": true
     },
     {
       "id": "w3-l5",
       "speaker": "owen",
       "speakerLabel": "Owen",
-      "text": "Let's agree on Friday, and the owner can send the next note.",
-      "glossYue": "我哋同意星期五，負責人可以送下一張字條。",
+      "text": "Let's agree on Friday, and she can email us the update.",
+      "glossYue": "我哋同意星期五，佢可以發電郵話我哋知。",
       "audio": "assets/audio/lines/w3-l5.mp3",
       "audioSlow": "assets/audio/lines/w3-l5-slow.mp3",
-      "say": "Let's agree on Friday, and the owner can send the next note.",
+      "say": "Let's agree on Friday, and she can email us the update.",
       "hideGloss": false
     },
     {
@@ -96,22 +96,22 @@
       "id": "w3-l7",
       "speaker": "owen",
       "speakerLabel": "Owen",
-      "text": "I see that point, and we can mute the side chat.",
-      "glossYue": "我明白呢一點，我哋可以靜音旁邊個傾計。",
+      "text": "I see your point. Let's mute when we're not speaking.",
+      "glossYue": "我明白你嘅意思。我哋唔講嘢嗰陣就靜音。",
       "audio": "assets/audio/lines/w3-l7.mp3",
       "audioSlow": "assets/audio/lines/w3-l7-slow.mp3",
-      "say": "I see that point, and we can mute the side chat.",
+      "say": "I see your point. Let's mute when we're not speaking.",
       "hideGloss": true
     },
     {
       "id": "w3-l8",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Let's wrap up, and the owner will share one update on Friday.",
-      "glossYue": "我哋收科，負責人星期五會講一個更新。",
+      "text": "Let's wrap up, and she'll let us know on Friday.",
+      "glossYue": "我哋收科，佢星期五會話我哋知。",
       "audio": "assets/audio/lines/w3-l8.mp3",
       "audioSlow": "assets/audio/lines/w3-l8-slow.mp3",
-      "say": "Let's wrap up, and the owner will share one update on Friday.",
+      "say": "Let's wrap up, and she'll let us know on Friday.",
       "hideGloss": true
     }
   ],
@@ -160,8 +160,8 @@
       ]
     },
     {
-      "pattern": "I see your point, but I am ___ the owner cannot meet this new deadline on Friday.",
-      "example": "I am concerned the owner cannot meet this new deadline on Friday.",
+      "pattern": "I'm ___ Mei can't meet this new deadline on Friday.",
+      "example": "I'm concerned Mei can't meet this new deadline on Friday.",
       "glossYue": "我⋯⋯負責人趕唔切。",
       "answer": "concerned",
       "choices": [
@@ -171,8 +171,8 @@
       ]
     },
     {
-      "pattern": "Let's ___ on Friday, and the owner can share the next update before we wrap up.",
-      "example": "Let's agree on Friday, and the owner can send the next note.",
+      "pattern": "Let's ___ on Friday, and she can email us the update.",
+      "example": "Let's agree on Friday, and she can email us the update.",
       "glossYue": "我哋⋯⋯星期五。",
       "answer": "agree",
       "choices": [
@@ -182,8 +182,8 @@
       ]
     },
     {
-      "pattern": "Let's ___ up now, and the owner will share the update after the next meeting on Friday.",
-      "example": "Let's wrap up, and the owner will share one update on Friday.",
+      "pattern": "Let's ___ up, and she'll let us know on Friday.",
+      "example": "Let's wrap up, and she'll let us know on Friday.",
       "glossYue": "我哋而家⋯⋯。",
       "answer": "wrap",
       "choices": [
@@ -195,14 +195,14 @@
   ],
   "shadow": {
     "lineId": "w3-l5",
-    "hint": "Let's agree on Friday, and the owner can send the next note."
+    "hint": "Let's agree on Friday, and she can email us the update."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "同事擔心期限。你點先答？",
       "choices": [
-        "Let's agree on Friday, and the owner can send the next note.",
+        "Let's agree on Friday, and she can email us the update.",
         "You might also like this matching pair.",
         "The necklace is eighteen dollars."
       ],
@@ -249,10 +249,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "I am concerned the owner cannot meet this new deadline on Friday.",
+        "line": "I'm concerned Mei can't meet this new deadline on Friday.",
         "audio": "assets/audio/lines/w3-l4.mp3",
         "audioSlow": "assets/audio/lines/w3-l4-slow.mp3",
-        "expect": "Let's agree on Friday, and the owner can send the next note.",
+        "expect": "Let's agree on Friday, and she can email us the update.",
         "keywords": [
           "agree",
           "owner"
@@ -266,7 +266,7 @@
         "line": "I agree on Friday, but I suggest we mute and follow the agenda.",
         "audio": "assets/audio/lines/w3-l6.mp3",
         "audioSlow": "assets/audio/lines/w3-l6-slow.mp3",
-        "expect": "I see that point, and we can mute the side chat.",
+        "expect": "I see your point. Let's mute when we're not speaking.",
         "keywords": [
           "point",
           "mute"
@@ -301,7 +301,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I am concerned the owner cannot meet this new deadline on Friday.」，concerned 係咩意思？",
+      "prompt": "客人講「I'm concerned Mei can't meet this new deadline on Friday.」，concerned 係咩意思？",
       "choices": [
         "擔心",
         "免費",

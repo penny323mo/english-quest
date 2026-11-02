@@ -53,11 +53,11 @@
       "id": "d4-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I'll take the prepaid one, and I do not need unlimited data.",
+      "text": "I'll take the prepaid one, and I don't need unlimited data.",
       "glossYue": "我要預繳嗰個，唔使無限數據。",
       "audio": "assets/audio/lines/d4-l3.mp3",
       "audioSlow": "assets/audio/lines/d4-l3-slow.mp3",
-      "say": "I'll take the prepaid one, and I do not need unlimited data.",
+      "say": "I'll take the prepaid one, and I don't need unlimited data.",
       "hideGloss": false
     },
     {
@@ -97,11 +97,11 @@
       "id": "d4-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I will pay for this prepaid SIM card here.",
+      "text": "I'll pay for this prepaid SIM card here.",
       "glossYue": "我喺呢度畀錢買呢張預繳電話卡。",
       "audio": "assets/audio/lines/d4-l7.mp3",
       "audioSlow": "assets/audio/lines/d4-l7-slow.mp3",
-      "say": "I will pay for this prepaid SIM card here.",
+      "say": "I'll pay for this prepaid SIM card here.",
       "hideGloss": true
     },
     {
@@ -138,7 +138,7 @@
       "explain": "prepaid 係預繳。coverage 係覆蓋。"
     },
     {
-      "prompt": "I'll take the prepaid one, and I do not need unlimited data. 呢句即係點？",
+      "prompt": "I'll take the prepaid one, and I don't need unlimited data. 呢句即係點？",
       "choices": [
         "請用護照開通",
         "我要預繳，唔使無限數據",
@@ -239,7 +239,7 @@
         "line": "The prepaid plan is much cheaper, and the coverage is enough.",
         "audio": "assets/audio/lines/d4-l2.mp3",
         "audioSlow": "assets/audio/lines/d4-l2-slow.mp3",
-        "expect": "I'll take the prepaid one, and I do not need unlimited data.",
+        "expect": "I'll take the prepaid one, and I don't need unlimited data.",
         "keywords": [
           "prepaid",
           "unlimited"
@@ -267,7 +267,7 @@
         "line": "A small top-up is enough if that plan stays cheap.",
         "audio": "assets/audio/lines/d4-l6.mp3",
         "audioSlow": "assets/audio/lines/d4-l6-slow.mp3",
-        "expect": "I will pay for this prepaid SIM card here.",
+        "expect": "I'll pay for this prepaid SIM card here.",
         "keywords": [
           "pay",
           "prepaid"

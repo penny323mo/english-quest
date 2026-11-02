@@ -102,11 +102,11 @@
       "id": "j14-l7",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "I can place the half deposit this week.",
-      "glossYue": "我呢個星期可以落一半訂金。",
+      "text": "I can pay half the deposit this week.",
+      "glossYue": "我呢個星期可以畀一半訂金。",
       "audio": "assets/audio/lines/j14-l7.mp3",
       "audioSlow": "assets/audio/lines/j14-l7-slow.mp3",
-      "say": "I can place the half deposit this week.",
+      "say": "I can pay half the deposit this week.",
       "hideGloss": true
     },
     {
@@ -199,7 +199,7 @@
       "choices": [
         "Could we use white gold for the band, or is yellow gold better for this stone?",
         "How long will the ring take, and what deposit do you need to start this work?",
-        "I can place the half deposit this week."
+        "I can pay half the deposit this week."
       ],
       "answer": 0,
       "explain": "講 white gold 同 yellow gold。"
@@ -258,7 +258,7 @@
         "line": "The ring takes four weeks, and the deposit is half the budget once you confirm.",
         "audio": "assets/audio/lines/j14-l6.mp3",
         "audioSlow": "assets/audio/lines/j14-l6-slow.mp3",
-        "expect": "I can place the half deposit this week.",
+        "expect": "I can pay half the deposit this week.",
         "keywords": [
           "deposit",
           "week"

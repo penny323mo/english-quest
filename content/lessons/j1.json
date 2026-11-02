@@ -44,11 +44,11 @@
       "id": "j1-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Welcome to our jewellery store. How may I help you today?",
-      "glossYue": "歡迎嚟到我哋嘅珠寶店。今日有咩可以幫到你？",
+      "text": "Welcome to our jewellery store. How can I help you today?",
+      "glossYue": "歡迎嚟我哋珠寶店。今日有咩可以幫你？",
       "audio": "assets/audio/lines/j1-l1.mp3",
       "audioSlow": "assets/audio/lines/j1-l1-slow.mp3",
-      "say": "Welcome to our [[dʒˈulɹi]] store. How may I help you today?"
+      "say": "Welcome to our [[dʒˈulɹi]] store. How can I help you today?"
     },
     {
       "id": "j1-l2",
@@ -182,7 +182,7 @@
   ],
   "shadow": {
     "lineId": "j1-l1",
-    "hint": "Welcome to our jewellery store. How may I help you today?"
+    "hint": "Welcome to our jewellery shop. How can I help you today?"
   },
   "build": [
     {
