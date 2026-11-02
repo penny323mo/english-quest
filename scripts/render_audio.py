@@ -27,28 +27,39 @@ AUDIO = ROOT / "assets" / "audio"
 TMP = Path("/tmp/eq-wav")
 
 
+def render_text(line: dict) -> str:
+    say = line.get("say")
+    if isinstance(say, str) and say:
+        return say
+    return str(line.get("en") or "")
+
+
+def text_hash(text: str) -> str:
+    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
 def clips() -> list[dict]:
     lex = json.loads(LEX.read_text(encoding="utf-8"))
     lines = json.loads(LINES.read_text(encoding="utf-8"))
     out = []
     seen = set()
+
+    def add(rel: str | None, say: str, sha_id: str | None) -> None:
+        if not rel or rel in seen:
+            return
+        seen.add(rel)
+        out.append({"rel": rel, "say": say, "sha_id": sha_id})
+
     for item in lex["items"]:
-        out.append(
-            {
-                "rel": item["audio"],
-                "say": item["say"],
-                "sha_id": item["id"],
-            }
-        )
-        seen.add(item["audio"])
+        add(item["audio"], item["say"], item["id"])
         for example in item.get("examples") or []:
-            rel = example.get("audio")
-            if not rel or rel in seen:
-                continue
-            seen.add(rel)
-            out.append({"rel": rel, "say": example.get("say") or example["en"], "sha_id": None})
+            add(example.get("audio"), render_text(example), None)
+        for index, turn in enumerate(item.get("miniDialogue") or []):
+            add(turn.get("audio"), render_text(turn), None)
+            if not turn.get("audio"):
+                add(f"assets/audio/words/{item['id']}-md{index}.mp3", render_text(turn), None)
     for line in lines:
-        out.append({"rel": line["audio"], "say": line["say"], "sha_id": None})
+        add(line["audio"], line["say"], None)
     return out
 
 
@@ -134,6 +145,20 @@ def pad_tree() -> None:
     print(f"padded {padded} / {len(files)}")
 
 
+def stamp_audio_text_hashes(lex: dict) -> int:
+    stamped = 0
+    for item in lex["items"]:
+        for example in item.get("examples") or []:
+            example["audioTextSha256"] = text_hash(render_text(example))
+            stamped += 1
+        for index, turn in enumerate(item.get("miniDialogue") or []):
+            turn.setdefault("audio", f"assets/audio/words/{item['id']}-md{index}.mp3")
+            turn.setdefault("audioSlow", f"assets/audio/words/{item['id']}-md{index}-slow.mp3")
+            turn["audioTextSha256"] = text_hash(render_text(turn))
+            stamped += 1
+    return stamped
+
+
 def main() -> None:
     voice = PiperVoice.load(str(MODEL))
     voice.config.espeak_voice = "en-us"
@@ -176,8 +201,9 @@ def main() -> None:
         if not path.exists():
             raise SystemExit(f"missing {path}")
         item["audioSha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
+    text_stamped = stamp_audio_text_hashes(lex)
     LEX.write_text(json.dumps(lex, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print("sha stamped", len(lex["items"]))
+    print("sha stamped", len(lex["items"]), "text hashes", text_stamped)
 
 
 if __name__ == "__main__":
