@@ -197,7 +197,7 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
     );
   }
   const shippedOnPath = flatPath.filter((entry) => !entry.soon).map((entry) => entry.id);
-  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T17", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "R13", "J6", "J7", "J15", "J18", "J20", "T5", "T12", "T15", "T13", "R12", "R14", "R15", "R16", "R5", "R11", "W1", "D1", "D12", "D2", "D14", "T7", "W4", "R8", "D10", "W7", "J8", "D9", "D11", "D13", "J9", "J10", "J19", "J16", "J22", "J21", "J17", "T6", "T19", "R6", "J12", "R7", "T8", "T16", "T18", "W2", "W3", "W9", "W8", "W11", "W12", "W13", "D3", "D8", "T10", "T14", "W5", "W10", "J14", "J11", "W6", "T9", "J13", "T20", "J23", "R17", "W14", "W15", "J24", "T21"]);
+  assert.deepEqual(shippedOnPath, ["F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T17", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "R13", "J6", "J7", "J15", "J18", "J20", "T5", "T12", "T15", "T13", "R12", "R14", "R15", "R16", "R5", "R11", "W1", "D1", "D12", "D2", "D14", "T7", "W4", "R8", "D10", "W7", "J8", "D9", "D11", "D13", "J9", "J10", "J19", "J16", "J22", "J21", "J17", "T6", "T19", "R6", "J12", "R7", "T8", "T16", "T18", "W2", "W3", "W9", "W8", "W11", "W12", "W13", "D3", "D8", "T10", "T14", "W5", "W10", "J14", "T21", "J11", "W6", "T9", "J13"]);
   assert.equal(flatPath.find((entry) => entry.id === "J8").cefr, "B1");
   const said = (lesson) => lesson.dialogue.map((line) => line.text).join("\n");
   assert.ok(j4.dialogue.length >= 6 && j4.dialogue.length <= 10);
@@ -293,7 +293,7 @@ test("round 26 spoken goals, tray card, and spelled model", () => {
   const w5 = lessons.find((lesson) => lesson.id === "W5");
   const j14 = lessons.find((lesson) => lesson.id === "J14");
   assert.equal(w5.next, "W10");
-  assert.equal(j14.next, "J11");
+  assert.equal(j14.next, "T21");
   assert.equal(d1.cefr, "A2/B1");
   assert.equal(w2.cefr, "B1");
   assert.equal(w3.cefr, "B1");
@@ -429,7 +429,7 @@ test("role-play tip names a character or tells you it is your turn", () => {
   assert.match(lesson, /你扮 \$\{name\}/);
   assert.equal(lesson.includes("你而家係"), false);
   const data = fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8");
-  assert.match(data, /"F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T17", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "R13", "J6", "J7", "J15", "J18", "J20", "T5", "T12", "T15", "T13", "R12", "R14", "R15", "R16", "R5", "R11", "W1", "D1", "D12", "D2", "D14", "T7", "W4", "R8", "D10", "W7", "J8", "D9", "D11", "D13", "J9", "J10", "J19", "J16", "J22", "J21", "J17", "T6", "T19", "R6", "J12", "R7", "T8", "T16", "T18", "W2", "W3", "W9", "W8", "W11", "W12", "W13", "D3", "D8", "T10", "T14", "W5", "W10", "J14", "J11", "W6", "T9", "J13", "T20", "J23", "R17", "W14", "W15", "J24", "T21"/);
+  assert.match(data, /"F1", "F2", "F3", "F4", "F5", "J1", "R1", "F6", "J2", "T1", "R10", "D4", "D5", "D7", "J3", "T2", "T17", "T11", "R2", "J4", "J5", "T3", "R3", "T4", "R4", "D6", "R9", "R13", "J6", "J7", "J15", "J18", "J20", "T5", "T12", "T15", "T13", "R12", "R14", "R15", "R16", "R5", "R11", "W1", "D1", "D12", "D2", "D14", "T7", "W4", "R8", "D10", "W7", "J8", "D9", "D11", "D13", "J9", "J10", "J19", "J16", "J22", "J21", "J17", "T6", "T19", "R6", "J12", "R7", "T8", "T16", "T18", "W2", "W3", "W9", "W8", "W11", "W12", "W13", "D3", "D8", "T10", "T14", "W5", "W10", "J14", "T21", "J11", "W6", "T9", "J13"/);
   assert.match(data, /const order = SHIPPED/);
 });
 
@@ -846,7 +846,7 @@ test("composite difficulty does not dip on lessons that can still change", () =>
     const meanRank = ranks.reduce((sum, n) => sum + n, 0) / ranks.length;
     return 0.4 * words + 2 * meanRank + clauses;
   }
-  assert.equal(order.length, 97);
+  assert.equal(order.length, 91);
   const gated = new Set(["T17", "J20", "D13"]);
   const scores = order.map((id) => score(byId[id]));
   for (let i = 1; i < order.length; i += 1) {

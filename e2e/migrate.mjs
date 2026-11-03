@@ -319,10 +319,10 @@ async function migrate(browserType, scheme) {
   if (!html.includes(newBundle)) throw new Error(`${browserType.name()} ${scheme} final bundle is not ${newBundle}`);
   if (html.includes(oldBundle)) throw new Error(`${browserType.name()} ${scheme} final page still references ${oldBundle}`);
   await page.getByText("48 XP").waitFor();
-  await page.getByText("2 / 97 課完成").waitFor();
+  await page.getByText("2 / 91 課完成").waitFor();
   await page.getByText("未完成：數字、錢同時間").waitFor();
   const home = await page.locator(".phone").innerText();
-  const homeBits = ["Penny", "48 XP", "連續 3 日", "2 / 97 課完成", "未完成：數字、錢同時間"];
+  const homeBits = ["Penny", "48 XP", "連續 3 日", "2 / 91 課完成", "未完成：數字、錢同時間"];
   for (const bit of homeBits) {
     const ok = home.includes(bit);
     console.log(`assert ${browserType.name()} ${scheme} home ${bit}: ${ok ? "pass" : "FAIL"}`);

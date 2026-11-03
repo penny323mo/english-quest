@@ -31,6 +31,8 @@ export type StoredCard = {
 
 export type LexItem = {
   id: string;
+  /** Hidden cards are kept in content but not shown, listed, or scheduled. */
+  hidden?: boolean;
   lemma: string;
   pos: string;
   senseId: string;
@@ -128,6 +130,8 @@ export type RoleTurn = {
 
 export type Lesson = {
   id: string;
+  /** Hidden lessons are kept in content but left off the path. */
+  hidden?: boolean;
   unit: string;
   titleYue: string;
   titleEn: string;
