@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ART_WAIT_MS, waitForImages } from "./art-wait.mjs";
 
 const warmed = new Set<string>();
 const loaded = new Set<string>();
@@ -15,22 +16,12 @@ export function preloadArt(urls: string[]) {
   }
 }
 
-export function whenArtDecoded(urls: string[], minWidth = 1): Promise<void> {
-  const jobs = urls.filter(Boolean).map((url) => new Promise<void>((resolve) => {
-    const img = new Image();
-    const finish = () => {
-      if (img.naturalWidth >= minWidth) resolve();
-    };
-    const decoded = () => {
-      const pending = typeof img.decode === "function" ? img.decode() : Promise.resolve();
-      pending.then(finish, finish);
-    };
-    img.onload = decoded;
-    img.decoding = "async";
-    img.src = url;
-    if (img.complete && img.naturalWidth >= minWidth) decoded();
-  }));
-  return Promise.all(jobs).then(() => undefined);
+/**
+ * Resolves once every image has decoded, failed, or the wait ran out.
+ * A missing or broken image must not leave 入去場景 disabled for good.
+ */
+export function whenArtDecoded(urls: string[], minWidth = 1, timeoutMs = ART_WAIT_MS): Promise<void> {
+  return waitForImages(urls, { minWidth, timeoutMs, makeImage: () => new Image() });
 }
 
 export function ArtImg({

@@ -4,6 +4,7 @@ import { cacheNames } from "workbox-core";
 import { registerRoute } from "workbox-routing";
 import { NetworkOnly } from "workbox-strategies";
 import type { PrecacheEntry } from "workbox-precaching";
+import { navigateNetworkFirst, SHELL_CACHE } from "./sw-navigate.mjs";
 import { planPrecachePurge } from "./sw-purge.mjs";
 
 declare const self: ServiceWorkerGlobalScope & {
@@ -16,8 +17,10 @@ function entryUrl(entry: PrecacheEntry | string): string {
   return typeof entry === "string" ? entry : entry.url;
 }
 
-// index.html, sw.js, and the manifest are never precached. Navigations and
-// those URLs are network-only, so a phone cannot keep the old shell.
+// index.html, sw.js, and the manifest are never precached. Online, navigations
+// and those URLs always come from the network past the HTTP cache, so a phone
+// cannot keep the old shell. Offline, a page load falls back to the last
+// index.html that loaded (sw-navigate.mjs).
 const manifest = self.__WB_MANIFEST.filter((entry) => !SHELL.test(entryUrl(entry)));
 
 // addToCacheList does not register an install handler. precache() would,
@@ -26,8 +29,18 @@ const manifest = self.__WB_MANIFEST.filter((entry) => !SHELL.test(entryUrl(entry
 const precacheController = new PrecacheController();
 precacheController.addToCacheList(manifest);
 registerRoute(
-  ({ request, url }) => request.mode === "navigate" || SHELL.test(url.pathname),
-  new NetworkOnly(),
+  ({ request }) => request.mode === "navigate",
+  ({ request, event }) =>
+    navigateNetworkFirst(request, {
+      fetchImpl: fetch,
+      cachesImpl: caches,
+      shellUrl: self.registration.scope,
+      waitUntil: (promise) => (event as ExtendableEvent).waitUntil(promise),
+    }),
+);
+registerRoute(
+  ({ url }) => SHELL.test(url.pathname),
+  new NetworkOnly({ fetchOptions: { cache: "no-cache" } }),
 );
 registerRoute(new PrecacheRoute(precacheController));
 cleanupOutdatedCaches();
@@ -47,6 +60,7 @@ async function purgeOldShell(): Promise<boolean> {
   const keys = await caches.keys();
   let removed = false;
   await Promise.all(keys.map(async (key) => {
+    if (key === SHELL_CACHE) return; // the offline copy of the page is managed by sw-navigate.mjs
     if (key !== keep) {
       removed = true;
       await caches.delete(key);
@@ -90,6 +104,12 @@ self.addEventListener("activate", (event) => {
       for (const client of windows) void client.navigate(client.url);
     }
     void precacheInBackground();
+    // Keep the offline copy of the page in step with this worker's assets.
+    void navigateNetworkFirst({ url: self.registration.scope }, {
+      fetchImpl: fetch,
+      cachesImpl: caches,
+      shellUrl: self.registration.scope,
+    }).catch(() => undefined);
   })());
 });
 
