@@ -35,12 +35,17 @@
             event.ports[0].postMessage({ eq: 2 });
           }
         });
+        // A healthy worker answers as soon as it is running, but a cold start of
+        // the large sw.js can take seconds on a slow phone. Only an old worker that
+        // never answers (or answers wrongly) within 6 s is treated as dead. Waiting
+        // costs nothing when the worker is healthy: it answers at once.
+        var PING_MS = 6000;
         function ping() {
           var controller = navigator.serviceWorker.controller;
           if (!controller) return Promise.resolve(null);
           return new Promise(function (resolve) {
             var channel = new MessageChannel();
-            var timer = setTimeout(function () { resolve(false); }, 1500);
+            var timer = setTimeout(function () { resolve(false); }, PING_MS);
             channel.port1.onmessage = function (event) {
               clearTimeout(timer);
               resolve(Boolean(event.data && event.data.eq === 2));
