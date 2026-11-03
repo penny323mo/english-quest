@@ -188,32 +188,29 @@
     {
       "prompt": "Hi. What's your gold price per gram for this bangle? 呢句即係點？",
       "choices": [
-        "關於手工",
-        "關於金價",
-        "關於純度"
+        "手工費係四十蚊，金價另外計",
+        "你好。呢隻手鐲一克金係幾多錢？",
+        "個扣壞咗。手工費係幾多？"
       ],
-      "answer": 1,
-      "explain": "金價。"
+      "answer": 1
     },
     {
       "prompt": "The clasp is broken. How much is the labour charge? 呢句即係點？",
       "choices": [
-        "關於手工",
-        "關於手鐲",
-        "關於純度"
+        "個扣壞咗。手工費係幾多？",
+        "會。收據寫重量、純度同埋個價錢",
+        "可唔可以用呢條舊鏈換購新手鐲？"
       ],
-      "answer": 0,
-      "explain": "手工。"
+      "answer": 0
     },
     {
       "prompt": "Will my receipt also show the weight and the purity? 呢句即係點？",
       "choices": [
-        "關於金價",
-        "關於手工",
-        "關於純度"
+        "呢隻手鐲係九九九金。我用克嚟秤",
+        "手工費係四十蚊，金價另外計",
+        "收據會唔會同時寫重量同純度？"
       ],
-      "answer": 2,
-      "explain": "純度。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -254,14 +251,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「可唔可以用呢條舊鏈換購新手鐲？」，你點講？",
       "choices": [
         "This bangle is nine nine nine. I will weigh it in grams.",
         "The clasp is broken. How much is the labour charge?",
         "Can I trade in this old chain against the new bangle?"
       ],
       "answer": 2,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",
@@ -323,7 +320,7 @@
       "type": "meaning",
       "prompt": "The labour charge is forty dollars on top of the gold. 呢句入面，邊個意思先啱？",
       "choices": [
-        "金價",
+        "手工費",
         "手鐲",
         "純度"
       ],

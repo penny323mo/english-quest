@@ -139,32 +139,29 @@
     {
       "prompt": "My watch has stopped. Can you change the battery? 即係問緊咩？",
       "choices": [
-        "關於防水",
-        "講緊手錶",
-        "唔係電池"
+        "冇問題。連埋換電池一齊做，唔使另收費",
+        "我隻錶停咗。可唔可以換電池？",
+        "你開咗底之後，仲防唔防水？"
       ],
-      "answer": 1,
-      "explain": "手錶。"
+      "answer": 1
     },
     {
       "prompt": "Yes, we reseal it and test it. Do you want to keep the metal band? 即係問緊咩？",
       "choices": [
-        "講緊電池",
-        "唔係手錶",
-        "關於防水"
+        "會，我哋會重新密封同測試。你想唔想留住金屬錶帶？",
+        "我隻錶停咗。可唔可以換電池？",
+        "冇問題。連埋換電池一齊做，唔使另收費"
       ],
-      "answer": 0,
-      "explain": "電池。"
+      "answer": 0
     },
     {
       "prompt": "Come back at four. The new battery has a one-year warranty. 呢句即係點？",
       "choices": [
-        "唔係手錶",
-        "關於電池",
-        "講緊防水"
+        "你開咗底之後，仲防唔防水？",
+        "冇問題。連埋換電池一齊做，唔使另收費",
+        "四點再嚟。新電池有一年保養"
       ],
-      "answer": 2,
-      "explain": "防水。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -205,14 +202,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「你開咗底之後，仲防唔防水？」，你點講？",
       "choices": [
         "My watch has stopped. Can you change the battery?",
         "Will it still be water-resistant after you open the back?",
         "It's a bit loose. Can you take out two links?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",

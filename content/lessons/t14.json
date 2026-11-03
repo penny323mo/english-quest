@@ -144,32 +144,29 @@
     {
       "prompt": "Hi. My first flight was delayed, and I've missed my connection to Tokyo. 呢句即係點？",
       "choices": [
-        "關於改簽",
-        "講緊延誤",
-        "唔係轉機"
+        "可以，我已經幫你改簽。你件行李會上同一班機",
+        "你好。我第一班機延誤咗，趕唔切去東京嘅轉機",
+        "可以，呢張係三十蚊嘅餐券。你喺呢度任何咖啡店都用得"
       ],
-      "answer": 1,
-      "explain": "延誤。"
+      "answer": 1
     },
     {
       "prompt": "Yes, I've rebooked you. Your bag will go on the same flight. 呢句即係點？",
       "choices": [
-        "講緊轉機",
-        "唔係延誤",
-        "關於改簽"
+        "可以，我已經幫你改簽。你件行李會上同一班機",
+        "你好。我第一班機延誤咗，趕唔切去東京嘅轉機",
+        "可以，呢張係三十蚊嘅餐券。你喺呢度任何咖啡店都用得"
       ],
-      "answer": 0,
-      "explain": "轉機。"
+      "answer": 0
     },
     {
       "prompt": "Gate twenty-two. Here's your new boarding pass. 呢句即係點？",
       "choices": [
-        "唔係延誤",
-        "關於轉機",
-        "講緊改簽"
+        "可唔可以幫我改簽上呢班機？我件寄艙行李會唔會轉運？",
+        "等好耐。可唔可以畀張餐券我？",
+        "二十二號閘口。呢張係你嘅新登機證"
       ],
-      "answer": 2,
-      "explain": "改簽。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -210,14 +207,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「可唔可以幫我改簽上呢班機？我件寄艙行李會唔會轉運？」，你點講？",
       "choices": [
         "Hi. My first flight was delayed, and I've missed my connection to Tokyo.",
         "Can you rebook me on it? And will my checked bag be transferred?",
         "It's a long wait. Can I get a meal voucher?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",
@@ -332,7 +329,7 @@
         "connection"
       ],
       "answer": 0,
-      "explain": "延誤。"
+      "explain": "rebook 係改期／改訂。"
     }
   ],
   "shadow": {

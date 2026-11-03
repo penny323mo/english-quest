@@ -32,7 +32,7 @@
       "speaker": "mei",
       "speakerLabel": "Mei",
       "text": "I'm sorry that there's a problem. Tell me what happened so I can help.",
-      "glossYue": "唔好意思有問題。話我知發生咩事，所以我可以幫手。",
+      "glossYue": "有問題真係唔好意思。話我知發生咩事，等我幫你。",
       "audio": "assets/audio/lines/j9-l1.mp3",
       "audioSlow": "assets/audio/lines/j9-l1-slow.mp3",
       "say": "I'm sorry that there's a problem. Tell me what happened so I can help.",
@@ -243,8 +243,8 @@
         "audioSlow": "assets/audio/lines/j9-l2-slow.mp3",
         "expect": "I'm sorry that we caused trouble. I can see you're upset.",
         "keywords": [
-          "apologize",
-          "understand"
+          "trouble",
+          "caused"
         ],
         "modelAudio": "assets/audio/lines/j9-l3.mp3",
         "modelSlow": "assets/audio/lines/j9-l3-slow.mp3"
@@ -258,7 +258,7 @@
         "expect": "The manager can review the receipt, and we will repair it if the policy allows.",
         "keywords": [
           "manager",
-          "immediately"
+          "receipt"
         ],
         "modelAudio": "assets/audio/lines/j9-l5.mp3",
         "modelSlow": "assets/audio/lines/j9-l5-slow.mp3"
@@ -272,7 +272,7 @@
         "expect": "Would it help if we gave you a replacement while the workshop repairs yours?",
         "keywords": [
           "replace",
-          "bracelet"
+          "replacement"
         ],
         "modelAudio": "assets/audio/lines/j9-l7.mp3",
         "modelSlow": "assets/audio/lines/j9-l7-slow.mp3"
@@ -314,13 +314,13 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The manager can review the receipt, and we will repair it if the policy allows.」，係咩意思？",
+      "prompt": "店員講「The manager can review the receipt, and we will repair it if the policy allows.」，係咩意思？",
       "choices": [
-        "大概",
-        "聽日",
-        "即刻"
+        "經理會睇收據，政策容許就修理",
+        "即刻退款",
+        "聽日先修"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "choice",

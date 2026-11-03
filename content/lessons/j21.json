@@ -3,8 +3,8 @@
   "unit": "J",
   "titleYue": "首飾損壞估價同保險",
   "titleEn": "Insurance appraisal after damage",
-  "canDoYue": "你識話吊墜跌壞、要書面估價同相片、問保單自負額，同埋星期五攞返。",
-  "canDoEn": "Say the pendant was dropped, ask for a written appraisal and a photo, ask the policy excess, and collect it on Friday.",
+  "canDoYue": "你識話吊墜跌壞、要書面估價同相片、請店員喺估價單寫維修費，同埋星期五攞返。",
+  "canDoEn": "Say the pendant was dropped, ask for a written appraisal and a photo, ask for the repair cost on the appraisal, and collect it on Friday.",
   "minutes": 12,
   "hero": "assets/art/lessons/j21.webp",
   "cast": [
@@ -95,22 +95,22 @@
       "id": "j21-l5",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "What excess does my insurance policy charge for a repair like this?",
-      "glossYue": "我份保險維修要畀幾多自負額？",
+      "text": "Can you write the repair cost on the appraisal for my insurance company?",
+      "glossYue": "可唔可以喺估價單寫埋維修費，等我交畀保險公司？",
       "audio": "assets/audio/lines/j21-l5.mp3",
       "audioSlow": "assets/audio/lines/j21-l5-slow.mp3",
-      "say": "What excess does my insurance policy charge for a repair like this?",
+      "say": "Can you write the repair cost on the appraisal for my insurance company?",
       "hideGloss": true
     },
     {
       "id": "j21-l6",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "The excess on that policy is two hundred dollars for this repair.",
-      "glossYue": "呢份保單今次維修嘅自負額係二百蚊。",
+      "text": "Yes. The repair is two hundred dollars, and I'll write that on the appraisal.",
+      "glossYue": "可以。維修費係二百蚊，我會寫喺估價單上面。",
       "audio": "assets/audio/lines/j21-l6.mp3",
       "audioSlow": "assets/audio/lines/j21-l6-slow.mp3",
-      "say": "The excess on that policy is two hundred dollars for this repair.",
+      "say": "Yes. The repair is two hundred dollars, and I'll write that on the appraisal.",
       "hideGloss": true
     },
     {
@@ -160,10 +160,10 @@
         "line": "Yes. This photo shows the crack right beside the gold clasp.",
         "audio": "assets/audio/lines/j21-l4.mp3",
         "audioSlow": "assets/audio/lines/j21-l4-slow.mp3",
-        "expect": "What excess does my insurance policy charge for a repair like this?",
+        "expect": "Can you write the repair cost on the appraisal for my insurance company?",
         "keywords": [
-          "excess",
-          "policy"
+          "repair",
+          "appraisal"
         ],
         "modelAudio": "assets/audio/lines/j21-l5.mp3",
         "modelSlow": "assets/audio/lines/j21-l5-slow.mp3"
@@ -171,7 +171,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "The excess on that policy is two hundred dollars for this repair.",
+        "line": "Yes. The repair is two hundred dollars, and I'll write that on the appraisal.",
         "audio": "assets/audio/lines/j21-l6.mp3",
         "audioSlow": "assets/audio/lines/j21-l6-slow.mp3",
         "expect": "Can I collect the repaired gold pendant here on Friday afternoon, please?",
@@ -188,32 +188,29 @@
     {
       "prompt": "I dropped this gold pendant last night. Could I get a written appraisal? 呢句即係點？",
       "choices": [
-        "關於相片",
-        "講緊估價",
-        "唔係保險"
+        "可以。維修費係二百蚊，我會寫喺估價單上面",
+        "我尋晚跌咗呢條金吊墜。可唔可以出一份書面估價？",
+        "可唔可以喺估價單寫埋維修費，等我交畀保險公司？"
       ],
-      "answer": 1,
-      "explain": "估價。"
+      "answer": 1
     },
     {
       "prompt": "Yes. This photo shows the crack right beside the gold clasp. 呢句即係點？",
       "choices": [
-        "關於相片",
-        "唔係吊墜",
-        "講緊保險"
+        "可以。呢張相睇到裂痕就喺個金扣隔離",
+        "我可唔可以星期五下晝喺度攞返條整好嘅金吊墜？",
+        "我尋晚跌咗呢條金吊墜。可唔可以出一份書面估價？"
       ],
-      "answer": 0,
-      "explain": "相片。"
+      "answer": 0
     },
     {
-      "prompt": "What excess does my insurance policy charge for a repair like this? 呢句即係點？",
+      "prompt": "Can you write the repair cost on the appraisal for my insurance company? 呢句即係點？",
       "choices": [
-        "關於估價",
-        "關於吊墜",
-        "講緊保險"
+        "可以。星期五就得，條吊墜四點會準備好",
+        "可以。我檢查完條彎咗嘅吊墜，就寫嗰份估價",
+        "可唔可以喺估價單寫埋維修費，等我交畀保險公司？"
       ],
-      "answer": 2,
-      "explain": "保險。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -240,59 +237,53 @@
       ]
     },
     {
-      "pattern": "The excess on that policy is two hundred dollars for this ___.",
-      "example": "The excess on that policy is two hundred dollars for this repair.",
-      "glossYue": "呢份保單嘅自負額係二百蚊，用嚟呢次維修。",
+      "pattern": "Yes. The ___ is two hundred dollars, and I'll write that on the appraisal.",
+      "example": "Yes. The repair is two hundred dollars, and I'll write that on the appraisal.",
+      "glossYue": "可以。⋯⋯費係二百蚊，我會寫喺估價單上面。",
       "answer": "repair",
       "choices": [
         "repair",
-        "policy",
-        "excess"
+        "photo",
+        "clasp"
       ]
     }
   ],
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「可唔可以影張相，影到裂痕，用嚟交理賠表？」，你點講？",
       "choices": [
         "I dropped this gold pendant last night. Could I get a written appraisal?",
         "Could you take a photo of the crack for the claim form?",
-        "What excess does my insurance policy charge for a repair like this?"
+        "Can you write the repair cost on the appraisal for my insurance company?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "The",
-        "excess",
+        "Can",
+        "you",
+        "write",
+        "the",
+        "repair",
+        "cost",
         "on",
-        "that",
-        "policy",
-        "is",
-        "two",
-        "hundred",
-        "dollars",
-        "for",
-        "this",
-        "repair."
+        "the",
+        "appraisal?"
       ],
       "answer": [
-        "The",
-        "excess",
+        "Can",
+        "you",
+        "write",
+        "the",
+        "repair",
+        "cost",
         "on",
-        "that",
-        "policy",
-        "is",
-        "two",
-        "hundred",
-        "dollars",
-        "for",
-        "this",
-        "repair."
+        "the",
+        "appraisal?"
       ]
     }
   ],
@@ -331,24 +322,24 @@
     },
     {
       "type": "meaning",
-      "prompt": "What excess does my insurance policy charge for a repair like this? 呢句入面，邊個意思先啱？",
+      "prompt": "Can you write the repair cost on the appraisal for my insurance company? 呢句入面，邊個意思先啱？",
       "choices": [
         "吊墜",
         "相片",
-        "保險"
+        "保險公司"
       ],
       "answer": 2
     },
     {
       "type": "choice",
-      "prompt": "What excess does my ___ policy charge for a repair like this? 呢句入面，邊個字先啱？",
+      "prompt": "Can you write the repair cost on the ___ for my insurance company? 呢句入面，邊個字先啱？",
       "choices": [
         "appraisal",
-        "insurance",
-        "pendant"
+        "pendant",
+        "photo"
       ],
-      "answer": 1,
-      "explain": "保險。"
+      "answer": 0,
+      "explain": "appraisal 係估價單。"
     }
   ],
   "shadow": {

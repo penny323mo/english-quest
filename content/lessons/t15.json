@@ -146,32 +146,29 @@
     {
       "prompt": "Hi, I'm checking out of room twelve-oh-eight. Could I get a late checkout? 即係問緊咩？",
       "choices": [
-        "關於的士",
-        "講緊退房",
-        "唔係行李"
+        "當然可以。你嘅行李牌號碼係五十二。返嚟出示就得",
+        "你好，我要退十二零八房。可唔可以延遲退房？",
+        "冇。我今晚八點班機。可唔可以幫我存行李到四點？"
       ],
-      "answer": 1,
-      "explain": "退房。"
+      "answer": 1
     },
     {
       "prompt": "Of course. Here's your tag number, fifty-two. Just show it when you come back. 呢句即係點？",
       "choices": [
-        "講緊行李",
-        "唔係退房",
-        "關於的士"
+        "當然可以。你嘅行李牌號碼係五十二。返嚟出示就得",
+        "可唔可以將房費收據電郵畀我？",
+        "你好，我要退十二零八房。可唔可以延遲退房？"
       ],
-      "answer": 0,
-      "explain": "行李。"
+      "answer": 0
     },
     {
       "prompt": "Sure, it's on its way. Have a safe flight! 呢句即係點？",
       "choices": [
-        "唔係退房",
-        "關於行李",
-        "講緊的士"
+        "冇。我今晚八點班機。可唔可以幫我存行李到四點？",
+        "可唔可以幫我訂四點半去機場嘅的士？",
+        "可以，已經寄出。一路順風！"
       ],
-      "answer": 2,
-      "explain": "的士。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -212,14 +209,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「冇。我今晚八點班機。可唔可以幫我存行李到四點？」，你點講？",
       "choices": [
         "Hi. I'm checking out of room twelve-oh-eight. Could I get a late checkout?",
         "No, nothing from the minibar. My flight is at eight. Can you store my luggage until four?",
         "Could you book me a taxi to the airport for four thirty?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",
@@ -260,8 +257,8 @@
         "audioSlow": "assets/audio/lines/t15-l4-slow.mp3",
         "expect": "Could you book me a taxi to the airport for four thirty?",
         "keywords": [
-          "thanks",
-          "book"
+          "book",
+          "airport"
         ],
         "modelAudio": "assets/audio/lines/t15-l5.mp3",
         "modelSlow": "assets/audio/lines/t15-l5-slow.mp3"
@@ -274,8 +271,8 @@
         "audioSlow": "assets/audio/lines/t15-l6-slow.mp3",
         "expect": "Could you email me the receipt for the room?",
         "keywords": [
-          "great",
-          "email"
+          "email",
+          "receipt"
         ],
         "modelAudio": "assets/audio/lines/t15-l7.mp3",
         "modelSlow": "assets/audio/lines/t15-l7-slow.mp3"
@@ -334,7 +331,7 @@
         "fee"
       ],
       "answer": 0,
-      "explain": "退房。"
+      "explain": "luggage 係行李。"
     }
   ],
   "shadow": {

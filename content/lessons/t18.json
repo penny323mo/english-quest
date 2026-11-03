@@ -21,7 +21,7 @@
   "topicTags": [
     "禮物",
     "海關",
-    "酒精",
+    "酒",
     "關稅"
   ],
   "next": "W2",
@@ -188,32 +188,29 @@
     {
       "prompt": "Do I need to declare these gifts if they are under the limit? 呢句即係點？",
       "choices": [
-        "關於海關",
-        "講緊禮物",
-        "唔係關稅"
+        "我可唔可以喺呢個櫃檯交關稅先走？",
+        "如果呢啲禮物未過限額，我使唔使申報？",
+        "唔使。嗰啲禮物唔使報關表"
       ],
-      "answer": 1,
-      "explain": "禮物。"
+      "answer": 1
     },
     {
       "prompt": "This bottle of alcohol is over the allowance. What should I pay? 呢句即係點？",
       "choices": [
-        "關於酒精",
-        "唔係禮物",
-        "講緊海關"
+        "呢枝酒過咗限額。我應該畀幾多？",
+        "可以。關稅而家喺呢個櫃檯交，留低張單",
+        "唔使。嗰啲禮物唔使報關表"
       ],
-      "answer": 0,
-      "explain": "酒精。"
+      "answer": 0
     },
     {
       "prompt": "Yes. The duty is paid at this counter now, so keep the slip. 呢句即係點？",
       "choices": [
-        "唔係禮物",
-        "關於酒精",
-        "講緊關稅"
+        "唔使。嗰啲禮物唔使報關表",
+        "如果呢啲禮物未過限額，我使唔使申報？",
+        "可以。關稅而家喺呢個櫃檯交，留低張單"
       ],
-      "answer": 2,
-      "explain": "關稅。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -254,14 +251,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「我而家開呢個袋？手錶嘅收據夠唔夠？」，你點講？",
       "choices": [
         "Do I need to declare these gifts if they are under the limit?",
         "Should I open this bag now? Is the watch receipt enough?",
         "This bottle of alcohol is over the allowance. What should I pay?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",
@@ -327,7 +324,7 @@
       "choices": [
         "海關",
         "禮物",
-        "酒精"
+        "酒"
       ],
       "answer": 1
     },
@@ -335,7 +332,7 @@
       "type": "meaning",
       "prompt": "Can I pay the duty at this counter before I leave, please? 呢句入面，邊個意思先啱？",
       "choices": [
-        "酒精",
+        "酒",
         "海關",
         "關稅"
       ],

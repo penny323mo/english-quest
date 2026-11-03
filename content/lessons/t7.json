@@ -106,11 +106,11 @@
       "id": "t7-l8",
       "speaker": "may",
       "speakerLabel": "May",
-      "text": "Thank you. The souvenir shop can stamp this tax refund form before you leave town.",
-      "glossYue": "多謝。紀念品店可以喺你離鎮之前蓋呢張退稅表。",
+      "text": "Thank you. Show this form to airport customs before you fly.",
+      "glossYue": "多謝。上機之前，喺機場將呢張表交畀海關睇。",
       "audio": "assets/audio/lines/t7-l8.mp3",
       "audioSlow": "assets/audio/lines/t7-l8-slow.mp3",
-      "say": "Thank you. The souvenir shop can stamp this tax refund form before you leave town.",
+      "say": "Thank you. Show this form to airport customs before you fly.",
       "hideGloss": false
     }
   ],
@@ -254,7 +254,7 @@
         "expect": "This shirt size is too big.",
         "keywords": [
           "big",
-          "color"
+          "shirt"
         ],
         "modelAudio": "assets/audio/lines/t7-l4.mp3",
         "modelSlow": "assets/audio/lines/t7-l4-slow.mp3"

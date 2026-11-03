@@ -146,32 +146,29 @@
     {
       "prompt": "I'd like to engrave our wedding date inside this silver bracelet. It's a gift. 呢句即係點？",
       "choices": [
-        "關於日期",
-        "講緊刻字",
-        "唔係首字母"
+        "普通字體免費。花體字要額外五十蚊",
+        "我想喺呢隻銀手鏈入面刻我哋嘅結婚日期。呢份係禮物",
+        "二零二一年六月十二號。可唔可以加我哋嘅首字母 G 同 M？"
       ],
-      "answer": 1,
-      "explain": "刻字。"
+      "answer": 1
     },
     {
       "prompt": "Yes. \"12.06.2021 G&M\" is fourteen characters, so it's two over the limit. 呢句即係點？",
       "choices": [
-        "講緊首字母",
-        "唔係刻字",
-        "關於日期"
+        "係。「12.06.2021 G&M」係十四個字，超咗上限兩個",
+        "普通字體就得。刻之前可唔可以核對段字？",
+        "我想喺呢隻銀手鏈入面刻我哋嘅結婚日期。呢份係禮物"
       ],
-      "answer": 0,
-      "explain": "首字母。"
+      "answer": 0
     },
     {
       "prompt": "Of course. Please sign this form, and it'll be ready in three days. 呢句即係點？",
       "choices": [
-        "唔係刻字",
-        "關於首字母",
-        "講緊日期"
+        "二零二一年六月十二號。可唔可以加我哋嘅首字母 G 同 M？",
+        "咁就淨係日期同首字母，唔好有點。有冇額外費用？",
+        "當然可以。請簽呢張表，三日後可以取"
       ],
-      "answer": 2,
-      "explain": "日期。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -212,14 +209,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「二零二一年六月十二號。可唔可以加我哋嘅首字母 G 同 M？」，你點講？",
       "choices": [
         "I'd like to engrave our wedding date inside this silver bracelet.",
         "The twelfth of June, 2021. Can you also add our initials, G and M?",
         "Then just the date and our initials, with no dots. Is there an extra fee?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",
@@ -334,7 +331,7 @@
         "date"
       ],
       "answer": 2,
-      "explain": "刻字。"
+      "explain": "date 係日期。"
     }
   ],
   "shadow": {

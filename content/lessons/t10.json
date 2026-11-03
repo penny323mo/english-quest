@@ -137,7 +137,7 @@
       "prompt": "What tag number is on your baggage receipt, so I can search for the bag? 即係問緊咩？",
       "choices": [
         "索償表已經寫好酒店",
-        "行李牌號碼印喺行李收據上面",
+        "問行李收據上面嘅行李牌號碼",
         "行李牌綁喺袋柄上面"
       ],
       "answer": 1,
@@ -239,7 +239,7 @@
         "expect": "The tag number is HK four eight two.",
         "keywords": [
           "tag",
-          "receipt"
+          "number"
         ],
         "modelAudio": "assets/audio/lines/t10-l5.mp3",
         "modelSlow": "assets/audio/lines/t10-l5-slow.mp3"
@@ -305,14 +305,14 @@
     },
     {
       "type": "choice",
-      "prompt": "邊個字有 /l/？",
+      "prompt": "邊個字開頭係 /l/？",
       "choices": [
         "hotel",
         "deliver",
         "luggage"
       ],
       "answer": 2,
-      "explain": "luggage 有 /l/。"
+      "explain": "luggage 開頭係 /l/。hotel 同 deliver 嘅 /l/ 喺後面。"
     }
   ],
   "sound": {

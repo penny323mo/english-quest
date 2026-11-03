@@ -311,12 +311,12 @@
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
-        "replace",
         "manager",
+        "undercooked",
         "cold"
       ],
       "answer": 2,
-      "explain": "cold 有 /l/。replace 同 manager 冇。"
+      "explain": "cold 有 /l/。manager 同 undercooked 冇。"
     }
   ],
   "sound": {

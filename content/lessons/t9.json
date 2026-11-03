@@ -318,11 +318,11 @@
       "prompt": "邊個字有 /l/？",
       "choices": [
         "cancelled",
-        "delayed",
+        "rebook",
         "voucher"
       ],
       "answer": 0,
-      "explain": "cancelled 有 /l/。delayed 同 voucher 冇。"
+      "explain": "cancelled 有 /l/。rebook 同 voucher 冇。"
     }
   ],
   "sound": {

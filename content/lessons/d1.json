@@ -254,7 +254,7 @@
         "expect": "I have had a headache since Monday.",
         "keywords": [
           "headache",
-          "allergy"
+          "monday"
         ],
         "modelAudio": "assets/audio/lines/d1-l4.mp3",
         "modelSlow": "assets/audio/lines/d1-l4-slow.mp3"
@@ -268,7 +268,7 @@
         "expect": "I will take the prescription to the pharmacy.",
         "keywords": [
           "pharmacy",
-          "follow-up"
+          "prescription"
         ],
         "modelAudio": "assets/audio/lines/d1-l7.mp3",
         "modelSlow": "assets/audio/lines/d1-l7-slow.mp3"
@@ -289,7 +289,7 @@
     },
     {
       "type": "listen",
-      "prompt": "聽一次，揀你聽到嘅字：喉嚨嗰陣咳",
+      "prompt": "聽一次，揀你聽到嘅字：咳嗽",
       "lemma": "cough-noun",
       "choices": [
         "fever",
@@ -300,10 +300,10 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I have had a fever and cough since Monday.」，symptom 係咩意思？",
+      "prompt": "客人講「I have had a fever and cough since Monday.」，fever 係咩意思？",
       "choices": [
         "期限",
-        "症狀",
+        "發燒",
         "藥房"
       ],
       "answer": 1

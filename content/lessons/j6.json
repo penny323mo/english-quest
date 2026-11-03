@@ -3,8 +3,8 @@
   "unit": "J",
   "titleYue": "價錢同折扣",
   "titleEn": "Prices and discounts",
-  "canDoYue": "你識報價，仲識講折扣。",
-  "canDoEn": "Say the cost, a percent off, and whether tax is included.",
+  "canDoYue": "你識報價，仲識講折扣同實價。",
+  "canDoEn": "Say the cost, a percent off, and whether it's the final price.",
   "minutes": 12,
   "hero": "assets/art/lessons/j6.webp",
   "cast": [
@@ -21,7 +21,6 @@
     "special-adj",
     "offer-noun",
     "include-verb",
-    "tax-noun",
     "total-noun",
     "budget-noun",
     "expensive-adj",
@@ -35,11 +34,11 @@
       "id": "j6-l1",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "How much does this piece cost, and is the tax already in that price?",
-      "glossYue": "呢件幾多錢，稅包咗喺價錢入面未？",
+      "text": "How much does this piece cost? Is that the final price?",
+      "glossYue": "呢件幾多錢？係咪實價？",
       "audio": "assets/audio/lines/j6-l1.mp3",
       "audioSlow": "assets/audio/lines/j6-l1-slow.mp3",
-      "say": "How much does this piece [[kˈɑst]], and is the tax already in that price?",
+      "say": "How much does this piece [[kˈɑst]]? Is that the final price?",
       "hideGloss": false
     },
     {
@@ -68,11 +67,11 @@
       "id": "j6-l4",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Ten percent off, and the tax is included in it.",
-      "glossYue": "九折，稅包喺入面。",
+      "text": "Ten percent off, and that's the final price.",
+      "glossYue": "九折，呢個已經係實價。",
       "audio": "assets/audio/lines/j6-l4.mp3",
       "audioSlow": "assets/audio/lines/j6-l4-slow.mp3",
-      "say": "Ten percent off, and the tax is included in it.",
+      "say": "Ten percent off, and that's the final price.",
       "hideGloss": false
     },
     {
@@ -143,14 +142,14 @@
       "explain": "cost 讀 /kɑst/。可以再講特價。"
     },
     {
-      "prompt": "Ten percent off, and tax is included. 呢句即係點？",
+      "prompt": "Ten percent off, and that's the final price. 呢句即係點？",
       "choices": [
-        "加一成稅",
+        "加一成",
         "十八開",
-        "減一成，稅包咗"
+        "減一成，已經係實價"
       ],
       "answer": 2,
-      "explain": "off 係減。included 係包咗喺總數。"
+      "explain": "off 係減。final price 係實價，唔使再加錢。"
     },
     {
       "prompt": "within my budget 呢句即係點？",
@@ -165,9 +164,9 @@
   ],
   "chunks": [
     {
-      "pattern": "How much does this ___ if the tax is already included today?",
-      "example": "How much does this cost if the tax is already included today?",
-      "glossYue": "呢件幾多⋯⋯？",
+      "pattern": "How much does this ___? Is that the final price?",
+      "example": "How much does this cost? Is that the final price?",
+      "glossYue": "呢件幾多錢？係咪實價？",
       "answer": "cost",
       "choices": [
         "cost",
@@ -211,19 +210,19 @@
   ],
   "shadow": {
     "lineId": "j6-l4",
-    "hint": "Ten percent off, and tax is included."
+    "hint": "Ten percent off, and that's the final price."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "Tom 問有冇折扣。你點講？",
       "choices": [
-        "Ten percent off, and tax is included.",
+        "Ten percent off, and that's the final price.",
         "Look in the mirror.",
         "A window seat, please."
       ],
       "answer": 0,
-      "explain": "講減幾多，再講稅包唔包。"
+      "explain": "講減幾多，再講係咪實價。"
     },
     {
       "type": "order",
@@ -267,10 +266,10 @@
         "line": "Is there a discount?",
         "audio": "assets/audio/lines/j6-l3.mp3",
         "audioSlow": "assets/audio/lines/j6-l3-slow.mp3",
-        "expect": "Ten percent off, and tax is included.",
+        "expect": "Ten percent off, and that's the final price.",
         "keywords": [
           "percent",
-          "tax"
+          "final"
         ],
         "modelAudio": "assets/audio/lines/j6-l4.mp3",
         "modelSlow": "assets/audio/lines/j6-l4-slow.mp3"
@@ -298,7 +297,7 @@
       "lemma": "sale-noun",
       "choices": [
         "sale",
-        "tax",
+        "price",
         "total"
       ],
       "answer": 0
@@ -338,12 +337,12 @@
       "type": "choice",
       "prompt": "邊個尾音係 /l/？",
       "choices": [
-        "tax",
+        "price",
         "sale",
         "cost"
       ],
       "answer": 1,
-      "explain": "sale 尾音係 /l/。discount 名詞重音喺第一節。"
+      "explain": "sale 尾音係 /l/。price 同 cost 冇 /l/。"
     }
   ],
   "sound": {
@@ -353,7 +352,7 @@
     "pairs": [
       {
         "a": "sale-noun",
-        "b": "tax-noun"
+        "b": "price-noun"
       },
       {
         "a": "discount-noun",

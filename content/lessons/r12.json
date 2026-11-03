@@ -143,32 +143,29 @@
     {
       "prompt": "Hi, I'd like to book a table for eight this Friday at half past seven. 呢句即係點？",
       "choices": [
-        "關於最低消費",
-        "講緊八人",
-        "唔係包房"
+        "有，我會擺張兒童椅喺你張枱。你需唔需要訂金收據？",
+        "你好，我想訂一張八個人嘅枱，今個星期五七點半",
+        "冇問題。我哋會帶個嬰兒。你哋有冇兒童椅？"
       ],
-      "answer": 1,
-      "explain": "八人。"
+      "answer": 1
     },
     {
       "prompt": "Yes, I'll put a high chair at the table for you. Do you need a deposit receipt? 即係問緊咩？",
       "choices": [
-        "講緊包房",
-        "唔係八人",
-        "關於最低消費"
+        "有，我會擺張兒童椅喺你張枱。你需唔需要訂金收據？",
+        "好。可唔可以發短訊確認畀我？",
+        "可以。要唔要包房？最低消費係三千蚊"
       ],
-      "answer": 0,
-      "explain": "包房。"
+      "answer": 0
     },
     {
       "prompt": "Of course. What's the best number to reach you? 即係問緊咩？",
       "choices": [
-        "唔係八人",
-        "關於包房",
-        "講緊最低消費"
+        "冇問題。我哋會帶個嬰兒。你哋有冇兒童椅？",
+        "訂金要幾多？",
+        "當然可以。邊個號碼最容易搵到你？"
       ],
-      "answer": 2,
-      "explain": "最低消費。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -209,14 +206,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「冇問題。我哋會帶個嬰兒。你哋有冇兒童椅？」，你點講？",
       "choices": [
         "Hi, I'd like to book a table for eight this Friday at half past seven.",
         "That's fine. We'll have a baby with us. Do you have a high chair?",
         "How much is the deposit?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",
@@ -331,7 +328,7 @@
         "towel"
       ],
       "answer": 1,
-      "explain": "八人。"
+      "explain": "minimum spend 係最低消費。"
     }
   ],
   "shadow": {

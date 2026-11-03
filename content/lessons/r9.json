@@ -309,12 +309,12 @@
       "type": "choice",
       "prompt": "邊個字有 /l/？",
       "choices": [
-        "split",
+        "mistake",
         "receipt",
         "bill"
       ],
       "answer": 2,
-      "explain": "bill 有 /l/。split 同 receipt 冇。"
+      "explain": "bill 有 /l/。mistake 同 receipt 冇。"
     }
   ],
   "sound": {

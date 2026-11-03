@@ -284,7 +284,7 @@
   "quiz": [
     {
       "type": "listen",
-      "prompt": "聽一次，揀你聽到嘅字：租嚟嗰架車",
+      "prompt": "聽一次，揀你聽到嘅字：的士",
       "lemma": "taxi-noun",
       "choices": [
         "taxi",
@@ -319,9 +319,9 @@
       "type": "meaning",
       "prompt": "客人講「How long will this take if we go straight and turn left?」，係咩意思？",
       "choices": [
-        "大概",
-        "一定",
-        "已經到"
+        "大概要幾耐",
+        "一定要轉右",
+        "已經到咗"
       ],
       "answer": 0
     },

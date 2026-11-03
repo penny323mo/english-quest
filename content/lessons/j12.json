@@ -110,11 +110,11 @@
       "id": "j12-l8",
       "speaker": "kai",
       "speakerLabel": "Kai",
-      "text": "I'll leave a short message, and you can collect the piece this Friday.",
-      "glossYue": "我會留低短訊，你星期五可以嚟攞嗰件。",
+      "text": "I'll text you when it's ready. You can collect it tomorrow.",
+      "glossYue": "準備好我會發短訊畀你。你聽日可以嚟攞。",
       "audio": "assets/audio/lines/j12-l8.mp3",
       "audioSlow": "assets/audio/lines/j12-l8-slow.mp3",
-      "say": "I'll leave a short message, and you can collect the piece this Friday.",
+      "say": "I'll text you when it's ready. You can collect it tomorrow.",
       "hideGloss": true
     }
   ],
@@ -232,8 +232,8 @@
         "audioSlow": "assets/audio/lines/j12-l1-slow.mp3",
         "expect": "Do you still have a similar gold bracelet, and can I reserve one today?",
         "keywords": [
-          "stock",
-          "reserve"
+          "reserve",
+          "bracelet"
         ],
         "modelAudio": "assets/audio/lines/j12-l2.mp3",
         "modelSlow": "assets/audio/lines/j12-l2-slow.mp3"
@@ -247,7 +247,7 @@
         "expect": "Text me when it's ready. What are your opening hours?",
         "keywords": [
           "text",
-          "location"
+          "opening"
         ],
         "modelAudio": "assets/audio/lines/j12-l4.mp3",
         "modelSlow": "assets/audio/lines/j12-l4-slow.mp3"
@@ -293,7 +293,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Do you still have a similar gold bracelet, and can I reserve one today?」，stock 係咩意思？",
+      "prompt": "客人講「I'm calling to ask about stock, and I'll collect the bracelet tomorrow after you confirm.」，stock 係咩意思？",
       "choices": [
         "取貨",
         "開門時間",

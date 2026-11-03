@@ -1,10 +1,10 @@
 {
   "id": "J7",
   "unit": "J",
-  "titleYue": "付款同退稅",
-  "titleEn": "Payment and tax-free",
-  "canDoYue": "你識收款、講免稅，仲識包裝。",
-  "canDoEn": "Take a card or cash payment, explain tax-free, and offer a bag or wrap.",
+  "titleYue": "付款同包裝",
+  "titleEn": "Payment and gift wrap",
+  "canDoYue": "你識收款、畀收據同證書，仲識包裝。",
+  "canDoEn": "Take a card or cash payment, hand over the receipt and certificate, and offer to wrap the gift.",
   "minutes": 12,
   "hero": "assets/art/lessons/j7.webp",
   "cast": [
@@ -19,15 +19,13 @@
     "contactless-adj",
     "receipt-noun",
     "invoice-noun",
-    "tax-free-phrase",
-    "refund-form-phrase",
     "bag-noun",
     "wrap-verb",
     "gift-box-phrase",
     "signature-noun",
     "approve-verb",
     "decline-verb",
-    "passport-noun"
+    "certificate-noun"
   ],
   "dialogue": [
     {
@@ -56,22 +54,22 @@
       "id": "j7-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "This purchase is tax-free for you, so you can claim the tax.",
-      "glossYue": "呢單係免稅，所以你可以申返稅。",
+      "text": "The payment is approved. Here is your receipt and the certificate.",
+      "glossYue": "付款過咗。呢度係你嘅收據同證書。",
       "audio": "assets/audio/lines/j7-l3.mp3",
       "audioSlow": "assets/audio/lines/j7-l3-slow.mp3",
-      "say": "This purchase is tax-free for you, so you can claim the tax.",
+      "say": "The payment is approved. Here is your receipt and the certificate.",
       "hideGloss": false
     },
     {
       "id": "j7-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Here is my passport. Could you stamp the tax-free form?",
-      "glossYue": "護照喺度。可唔可以喺退稅表蓋印？",
+      "text": "Thank you. Could I also get an invoice for my company?",
+      "glossYue": "多謝。可唔可以另外開張發票，等我報公司數？",
       "audio": "assets/audio/lines/j7-l4.mp3",
       "audioSlow": "assets/audio/lines/j7-l4-slow.mp3",
-      "say": "Here is my passport. Could you stamp the tax-free form?",
+      "say": "Thank you. Could I also get an invoice for my company?",
       "hideGloss": true
     },
     {
@@ -133,22 +131,22 @@
       "id": "j7-m2",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Here is your receipt, which you should keep with the slip.",
-      "glossYue": "呢張收據你要留低，同一張單。",
+      "text": "Please keep the receipt with the certificate, in case you need a repair.",
+      "glossYue": "請將收據同證書放埋一齊，之後要維修都用得着。",
       "audio": "assets/audio/lines/j7-m2.mp3",
       "audioSlow": "assets/audio/lines/j7-m2-slow.mp3",
-      "say": "Here is your [[ɹɪsˈit]], which you should keep with the slip.",
+      "say": "Please keep the [[ɹɪsˈit]] with the certificate, in case you need a repair.",
       "hideGloss": false
     },
     {
       "id": "j7-m3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Sign the refund form if you want the tax back.",
-      "glossYue": "如果你想攞返稅，請喺退稅表簽名。",
+      "text": "Could you sign here, please? The card needs your signature.",
+      "glossYue": "唔該喺度簽名。用卡要你簽名。",
       "audio": "assets/audio/lines/j7-m3.mp3",
       "audioSlow": "assets/audio/lines/j7-m3-slow.mp3",
-      "say": "Sign the [[ɹˈifˌʌnd]] form if you want the tax back.",
+      "say": "Could you sign here, please? The card needs your signature.",
       "hideGloss": true
     }
   ],
@@ -158,27 +156,27 @@
       "choices": [
         "想唔想用卡付款",
         "想唔想試戒指",
-        "想唔想叫雞"
+        "想唔想點餐"
       ],
       "answer": 0,
       "explain": "pay by card 係用卡付款。現金先至係 cash。"
     },
     {
-      "prompt": "This purchase is tax-free. 呢句即係點？",
+      "prompt": "The payment is approved. Here is your receipt and the certificate. 呢句即係點？",
       "choices": [
         "稅已經包咗",
-        "要加一成",
-        "呢單可以免稅"
+        "張卡過唔到",
+        "付款過咗，畀收據同證書"
       ],
       "answer": 2,
-      "explain": "tax-free 係免稅。要睇護照。"
+      "explain": "approved 係批咗、過咗。certificate 係證書。"
     },
     {
       "prompt": "Here is your receipt. 你遞畀客人？",
       "choices": [
         "禮盒",
         "收據",
-        "退款表格"
+        "證書"
       ],
       "answer": 1,
       "explain": "receipt 重音喺第二節。發票先至係 invoice。"
@@ -197,12 +195,12 @@
       ]
     },
     {
-      "pattern": "This purchase is ___, so you can claim the tax later.",
-      "example": "This purchase is tax-free, so you can claim the tax later.",
-      "glossYue": "呢單可以⋯⋯。",
-      "answer": "tax-free",
+      "pattern": "The payment is ___. Here is your receipt and the certificate.",
+      "example": "The payment is approved. Here is your receipt and the certificate.",
+      "glossYue": "付款⋯⋯。呢度係你嘅收據同證書。",
+      "answer": "approved",
       "choices": [
-        "tax-free",
+        "approved",
         "spicy",
         "loose"
       ]
@@ -271,7 +269,7 @@
   ],
   "roleplay": {
     "you": "mei",
-    "intro": "Tom 喺櫃檯準備付款。等佢講完先答。免稅要睇護照。",
+    "intro": "Tom 喺櫃檯準備付款。等佢講完先答。",
     "turns": [
       {
         "partner": "Tom",
@@ -290,12 +288,13 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Here is my passport. Could you stamp the tax-free form?",
-        "audio": "assets/audio/lines/j7-l4.mp3",
-        "audioSlow": "assets/audio/lines/j7-l4-slow.mp3",
-        "expect": "This purchase is tax-free.",
+        "line": "I will pay by card, because I do not have enough cash.",
+        "audio": "assets/audio/lines/j7-l2.mp3",
+        "audioSlow": "assets/audio/lines/j7-l2-slow.mp3",
+        "expect": "The payment is approved. Here is your receipt and the certificate.",
         "keywords": [
-          "tax"
+          "approved",
+          "receipt"
         ],
         "modelAudio": "assets/audio/lines/j7-l3.mp3",
         "modelSlow": "assets/audio/lines/j7-l3-slow.mp3"
@@ -340,13 +339,13 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「This purchase is tax-free for you, so you can claim the tax.」，係咩意思？",
+      "prompt": "店員講「The payment is approved. Here is your receipt and the certificate.」，certificate 係咩意思？",
       "choices": [
         "紙袋",
-        "收據",
-        "免稅"
+        "證書",
+        "簽名"
       ],
-      "answer": 2
+      "answer": 1
     },
     {
       "type": "meaning",
