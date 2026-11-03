@@ -32,22 +32,22 @@
       "id": "j5-l1",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Would you like to try this ring on, and see it in the mirror?",
+      "text": "Would you like to try this ring on and see it in the mirror?",
       "glossYue": "想唔想試吓呢隻戒指，再照吓鏡？",
       "audio": "assets/audio/lines/j5-l1.mp3",
       "audioSlow": "assets/audio/lines/j5-l1-slow.mp3",
-      "say": "Would you like to try this ring on, and see it in the mirror?",
+      "say": "Would you like to try this ring on and see it in the mirror?",
       "hideGloss": false
     },
     {
       "id": "j5-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can you measure my finger, and tell me the size?",
+      "text": "Can you measure my finger and tell me the size?",
       "glossYue": "可唔可以量吓我隻手指，話我知碼數？",
       "audio": "assets/audio/lines/j5-l2.mp3",
       "audioSlow": "assets/audio/lines/j5-l2-slow.mp3",
-      "say": "Can you measure my finger, and tell me the size?",
+      "say": "Can you measure my finger and tell me the size?",
       "hideGloss": false
     },
     {
@@ -290,7 +290,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Can you measure my finger, and tell me the size?」，係咩意思？",
+      "prompt": "客人講「Can you measure my finger and tell me the size?」，係咩意思？",
       "choices": [
         "玉",
         "稅",

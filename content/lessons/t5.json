@@ -97,11 +97,11 @@
       "id": "t5-l7",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I feel faint after the shock, so please tell me if this is an emergency.",
-      "glossYue": "我受驚之後覺得暈，唔該話我知係咪緊急。",
+      "text": "I feel faint after the shock. Is this an emergency?",
+      "glossYue": "我受驚之後覺得暈。呢個係咪緊急？",
       "audio": "assets/audio/lines/t5-l7.mp3",
       "audioSlow": "assets/audio/lines/t5-l7-slow.mp3",
-      "say": "I feel faint after the shock, so please tell me if this is an emergency.",
+      "say": "I feel faint after the shock. Is this an emergency?",
       "hideGloss": true
     },
     {
@@ -264,7 +264,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "I feel faint after the shock, so please tell me if this is an emergency.",
+        "line": "I feel faint after the shock. Is this an emergency?",
         "audio": "assets/audio/lines/t5-l7.mp3",
         "audioSlow": "assets/audio/lines/t5-l7-slow.mp3",
         "expect": "If you feel faint, I can call an ambulance while we file the report.",
@@ -312,7 +312,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I feel faint after the shock, so please tell me if this is an emergency.」，係咩意思？",
+      "prompt": "客人講「I feel faint after the shock. Is this an emergency?」，係咩意思？",
       "choices": [
         "街角",
         "收據",

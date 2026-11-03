@@ -67,11 +67,11 @@
       "id": "j7-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Here is my passport, so you can stamp the tax-free form.",
-      "glossYue": "護照喺度，所以你可以喺退稅表蓋印。",
+      "text": "Here is my passport. Could you stamp the tax-free form?",
+      "glossYue": "護照喺度。可唔可以喺退稅表蓋印？",
       "audio": "assets/audio/lines/j7-l4.mp3",
       "audioSlow": "assets/audio/lines/j7-l4-slow.mp3",
-      "say": "Here is my passport, so you can stamp the tax-free form.",
+      "say": "Here is my passport. Could you stamp the tax-free form?",
       "hideGloss": true
     },
     {
@@ -290,7 +290,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Here is my passport.",
+        "line": "Here is my passport. Could you stamp the tax-free form?",
         "audio": "assets/audio/lines/j7-l4.mp3",
         "audioSlow": "assets/audio/lines/j7-l4-slow.mp3",
         "expect": "This purchase is tax-free.",
