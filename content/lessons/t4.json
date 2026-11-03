@@ -97,11 +97,11 @@
       "id": "t4-l7",
       "speaker": "ray",
       "speakerLabel": "Ray",
-      "text": "Here is your receipt, and you can see the landmark on your right.",
-      "glossYue": "收據喺度，你可以睇到地標喺你右手邊。",
+      "text": "Here is your receipt. The landmark is on your right.",
+      "glossYue": "收據喺度。地標喺你右手邊。",
       "audio": "assets/audio/lines/t4-l7.mp3",
       "audioSlow": "assets/audio/lines/t4-l7-slow.mp3",
-      "say": "Here is your receipt, and you can see the landmark on your right.",
+      "say": "Here is your receipt. The landmark is on your right.",
       "hideGloss": false
     },
     {
@@ -271,7 +271,7 @@
         "line": "Here is fine. Could I have a receipt, please?",
         "audio": "assets/audio/lines/t4-l6.mp3",
         "audioSlow": "assets/audio/lines/t4-l6-slow.mp3",
-        "expect": "Here is your receipt, and you can see the landmark on your right.",
+        "expect": "Here is your receipt. The landmark is on your right.",
         "keywords": [
           "receipt",
           "landmark"
