@@ -4806,18 +4806,18 @@
       "audioSha256": "5a70fc69a0c380a29ead90a227cf629dad148d1593aba1e9c40d925e87aa865e",
       "miniDialogue": [
         {
-          "en": "Can I keep looking while you watch the bags?",
-          "yue": "你睇住袋嗰陣，我可唔可以繼續睇？",
+          "en": "Are you looking for anything in particular?",
+          "yue": "你係咪搵緊啲咩？",
           "audio": "assets/audio/words/looking-verb-md0.mp3",
           "audioSlow": "assets/audio/words/looking-verb-md0-slow.mp3",
-          "audioTextSha256": "2bd9dc368122a4bd357a74dcbfe58c09d6bf39bef883e2de7d7cb7753af0fb09"
+          "audioTextSha256": "c8ea26e877d2275b31433e98665cdc2765dabc5c09b63424b63f0977d63b9b35"
         },
         {
-          "en": "Go ahead. I will wait here.",
-          "yue": "去啦，我喺度等。",
+          "en": "No, thanks. I'm just browsing.",
+          "yue": "唔使喇，唔該，我隨便睇吓。",
           "audio": "assets/audio/words/looking-verb-md1.mp3",
           "audioSlow": "assets/audio/words/looking-verb-md1-slow.mp3",
-          "audioTextSha256": "d6a10fe47537f99b6e23cb2ca7661238ca3ffcf29e37a5393eb1315d8f1f2f64"
+          "audioTextSha256": "aca329932be48c39a320b18f69a9895ae2f50e4c1a55ddacdbb87e8dfa3626a2"
         }
       ]
     },
@@ -6156,12 +6156,11 @@
           "audioTextSha256": "02d265e49d088281d4623a9d2e8a7e3a7091e2dee4dded0a429a304f1e8b56be"
         },
         {
-          "en": "I fastened the watch with both hands.",
-          "yue": "我用雙手扣好手錶。",
+          "en": "My watch is five minutes fast.",
+          "yue": "我隻錶快咗五分鐘。",
           "audio": "assets/audio/words/watch-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/watch-noun-ex3-slow.mp3",
-          "say": "I fastened the watch with both hands.",
-          "audioTextSha256": "660bf21dfac0d378a4579de1b44ed44a3a4a37858ff7167bef3a74678ffe1823"
+          "audioTextSha256": "a46c3b96b560bfa918cda720fd6efb1c61f0412cd97d84bb66f0f2a3fd742ab7"
         }
       ],
       "miniDialogue": [
@@ -7362,18 +7361,18 @@
       "audioSha256": "78fb20eabb2c46c4c5e9e19b42470ebc25b5649fc6d29fb91389ae159bd4e102",
       "miniDialogue": [
         {
-          "en": "Shall I check on the tablet?",
-          "yue": "要唔要喺平板辦理？",
+          "en": "Can I check in online, or do I need the counter?",
+          "yue": "我可唔可以網上辦理登機，定係要去櫃位？",
           "audio": "assets/audio/words/check-verb-md0.mp3",
           "audioSlow": "assets/audio/words/check-verb-md0-slow.mp3",
-          "audioTextSha256": "cbe935c8d168604bef0a958d089935b67dadd1a357bdca7eea64de014034ca05"
+          "audioTextSha256": "5b8c3c40b156875716b6dc6b7419cd71b56ee06dd84e7b3495d28418f841059f"
         },
         {
-          "en": "Yes. Tap the green button.",
-          "yue": "要，撳綠色掣。",
+          "en": "You can check in on the app from twenty-four hours before.",
+          "yue": "起飛前二十四個鐘可以喺 app 辦理登機。",
           "audio": "assets/audio/words/check-verb-md1.mp3",
           "audioSlow": "assets/audio/words/check-verb-md1-slow.mp3",
-          "audioTextSha256": "6442599a1d84f6e145783c42121ba38036f672af18f3efcf74e61e3e860e3eb9"
+          "audioTextSha256": "7e04379d50b27dab79829c35a5d1fff997e2a2c4a378731d67713c45a7f8ba39"
         }
       ]
     },
@@ -13316,12 +13315,12 @@
           "audioTextSha256": "e78566f5ddf1bffa195aabb3f7a2e3f390ebbbab4b1d7145549c479fbfe5aa7a"
         },
         {
-          "en": "How much is this platinum on the tray?",
-          "yue": "托盤上面呢件鉑金幾錢？",
+          "en": "How much is this platinum ring?",
+          "yue": "呢隻鉑金戒指幾錢？",
           "audio": "assets/audio/words/platinum-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/platinum-noun-ex3-slow.mp3",
-          "say": "How much is this [[plˈætənəm]] on the tray?",
-          "audioTextSha256": "8de67510275ed49f34bec08600d38281f13da454ad38ed6a800aa7baeeed3eaa"
+          "say": "How much is this [[plˈætənəm]] ring?",
+          "audioTextSha256": "90b54de57a601b2c8f0068d95807192e89a901a800c2f3ce5b9984790e296a17"
         }
       ],
       "miniDialogue": [
@@ -13404,12 +13403,12 @@
           "audioTextSha256": "1063857d959217f0b065f584f730b50acb5a5c83581ead8ed2f60f31a68572e6"
         },
         {
-          "en": "Please quote the diamond in writing.",
-          "yue": "請書面報鑽石嘅價。",
+          "en": "Could you show me a smaller diamond?",
+          "yue": "可唔可以畀粒細啲嘅鑽石我睇吓？",
           "audio": "assets/audio/words/diamond-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/diamond-noun-ex3-slow.mp3",
-          "say": "Please quote the [[dˈaɪmənd]] in writing.",
-          "audioTextSha256": "a614faca63077ab52bbd9a45c7ff7d892e22037d9fcce39d13fd9898f8f7e264"
+          "say": "Could you show me a smaller [[dˈaɪmənd]]?",
+          "audioTextSha256": "0d286adefe57c7571790e6538daa64c272106a9672996ecdfbff81a2b70049f1"
         }
       ],
       "miniDialogue": [
@@ -15158,12 +15157,11 @@
           "audioTextSha256": "82731599a79af78eaf84e333de1cef2d1d3907f746021a7194421495b8c7f681"
         },
         {
-          "en": "We rotate the display mirror weekly.",
-          "yue": "展示用嘅鏡我哋每星期換。",
+          "en": "Use the mirror to see how the earrings look.",
+          "yue": "照吓鏡，睇吓對耳環戴落點。",
           "audio": "assets/audio/words/mirror-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/mirror-noun-ex3-slow.mp3",
-          "say": "We rotate the display mirror weekly.",
-          "audioTextSha256": "f86da648ec6431db273cd7c9f72f8b27f69ec66a031f63b7c6daa163b62caa6c"
+          "audioTextSha256": "9517b9cf0dfe4136ce463e4c2fe574d78eae7870e74ec8ecc5766d0cd674b8f0"
         }
       ],
       "miniDialogue": [
@@ -15248,12 +15246,12 @@
           "audioTextSha256": "acca14275b072286d5415b2b1e59998cd740d48bca80a3df6631aa8a1d6bdf22"
         },
         {
-          "en": "Guests said the room was perfect.",
-          "yue": "客話間房好啱到極。",
+          "en": "The weather is perfect for a hike up Lion Rock.",
+          "yue": "今日天氣啱晒去行獅子山。",
           "audio": "assets/audio/words/perfect-adj-ex3.mp3",
           "audioSlow": "assets/audio/words/perfect-adj-ex3-slow.mp3",
-          "say": "Guests said the room was [[pˈɜfɪkt]].",
-          "audioTextSha256": "9bc106fbb50af8afe69877b8627b452f2de93d02395157e036093a20aa3ee984"
+          "say": "The weather is [[pˈɜfɪkt]] for a hike up Lion Rock.",
+          "audioTextSha256": "e969aed358de759df30cb118c3b1423a6c253b60f3787f4ef01647ba983925fe"
         }
       ],
       "miniDialogue": [
@@ -15959,12 +15957,12 @@
           "audioTextSha256": "ce81eb4744fa5bd6d75bf7baa9c80c08c95e647d7b17176510c7f9935de1b965"
         },
         {
-          "en": "The offer vendor changed prices again.",
-          "yue": "供應優惠嘅舖又改價。",
+          "en": "The offer ends on Sunday.",
+          "yue": "呢個優惠星期日完。",
           "audio": "assets/audio/words/offer-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/offer-noun-ex3-slow.mp3",
-          "say": "The [[ˈɔfɚ]] vendor changed prices again.",
-          "audioTextSha256": "4a68735b6b6b56790e3dd6d0fc301059bce423e96f310eeeed7da92e0a4d77dc"
+          "say": "The [[ˈɔfɚ]] ends on Sunday.",
+          "audioTextSha256": "57fcd3965e811451fd22c783dac931d194679a6af5f50ac97ac8e691aa80e244"
         }
       ],
       "miniDialogue": [
@@ -16223,12 +16221,11 @@
           "audioTextSha256": "517cce72fbce319cbf73a58576046ecfd6776b2ab722f3343c8205577aad2f3d"
         },
         {
-          "en": "I timed how long the total lasts.",
-          "yue": "我計過總數可以用幾耐。",
+          "en": "The total comes to three hundred and twenty dollars.",
+          "yue": "總數三百二十蚊。",
           "audio": "assets/audio/words/total-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/total-noun-ex3-slow.mp3",
-          "say": "I timed how long the total lasts.",
-          "audioTextSha256": "7b7b50aa265cfbb0b15000d7f6592e052b6ec078e02fd98d680b9980fa45808a"
+          "audioTextSha256": "bbf528f32103a2107b4ce095d6026ac6fa0741b968aa535a552dd0db9624b47a"
         }
       ],
       "miniDialogue": [
@@ -17976,12 +17973,12 @@
           "audioTextSha256": "bed7d165f86b1b62d4da9e801596563b44c0b0c03962fbaa357393b07fc92eb8"
         },
         {
-          "en": "She can decline the booking online.",
-          "yue": "佢可以上網拒絕預約。",
+          "en": "I'm afraid I have to decline the invitation.",
+          "yue": "唔好意思，呢個邀請我要推咗佢。",
           "audio": "assets/audio/words/decline-verb-ex3.mp3",
           "audioSlow": "assets/audio/words/decline-verb-ex3-slow.mp3",
-          "say": "She can [[dɪˈklaɪn]] the booking online.",
-          "audioTextSha256": "d00699247405d4fb68a3805b0f3fcd9f6cef44b7a21814dd92e2d2e5e72dc96a"
+          "say": "I'm afraid I have to [[dɪˈklaɪn]] the invitation.",
+          "audioTextSha256": "607229ec3a95214538f84bdeed4a4228ca8f8f6802f43ccd152b53c0fb490807"
         }
       ],
       "miniDialogue": [
@@ -18243,12 +18240,11 @@
           "audioTextSha256": "b7f42b89bb6c8813d68c49afa4c2e1c047ef07e479f4a386699dd865033d8268"
         },
         {
-          "en": "Please tell us if the dish has peanut.",
-          "yue": "如果菜式有花生，請同我哋講。",
+          "en": "Please tell me if this dish has peanuts.",
+          "yue": "呢道菜有冇花生，麻煩話我知。",
           "audio": "assets/audio/words/peanut-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/peanut-noun-ex3-slow.mp3",
-          "say": "Please tell us if the dish has [[pˈinət]].",
-          "audioTextSha256": "7d3693f55bcd3841d631b694d139687ce104a01f7b07574d995865fc2aee897b"
+          "audioTextSha256": "6219e872f5725506256b338dfa2ee7bd8e6c8853180ca6d748b1f5d2d8ace753"
         }
       ],
       "miniDialogue": [
@@ -20358,12 +20354,12 @@
           "audioTextSha256": "29d2721eaddd41157a03491c2b90c7c467644fa738d52cf595313f1d5b573a64"
         },
         {
-          "en": "The clerk reset my wake-up call settings.",
-          "yue": "職員重設咗我嘅叫醒電話設定。",
+          "en": "Could I have a wake-up call at six thirty?",
+          "yue": "可唔可以六點半打電話叫我起身？",
           "audio": "assets/audio/words/wake-up-call-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/wake-up-call-phrase-ex3-slow.mp3",
-          "say": "The clerk reset my [[ˈweɪk ˈʌp ˈkɔl]] settings.",
-          "audioTextSha256": "b73fc170b64eb0cc2f54b01b66e9229a41573af8acecd66042658486f80b5bd2"
+          "say": "Could I have a [[ˈweɪk ˈʌp ˈkɔl]] at six thirty?",
+          "audioTextSha256": "9dce48a712fbaead21defed1ddd610440ba2450554658259adabed914b70500d"
         }
       ],
       "miniDialogue": [
@@ -21873,12 +21869,11 @@
           "audioTextSha256": "9d87ca048e1d6c4f167fcc6116a2025cc24549e2db6805a3ee9f90f328ae42e4"
         },
         {
-          "en": "I saved the report on the shared drive.",
-          "yue": "我將報告；報失存咗喺共用雲端。",
+          "en": "You need a police report for the insurance claim.",
+          "yue": "要有報案紙先可以向保險索償。",
           "audio": "assets/audio/words/report-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/report-noun-ex3-slow.mp3",
-          "say": "I saved the report on the shared drive.",
-          "audioTextSha256": "0911a3c2f770feb33a7f7ada99cdf23ea847736954777580c63086c64e86f922"
+          "audioTextSha256": "16b573f2b92e4fdd2555a5f4cea6bf32034951dfda76a47c62f12cb9a93d964a"
         }
       ],
       "miniDialogue": [
@@ -22508,12 +22503,11 @@
           "audioTextSha256": "5a6f282396dd70b00e1cc2a0110d7c512190c8506991469ea36ede326045665d"
         },
         {
-          "en": "I finished the form immediately.",
-          "yue": "我即刻填完表格。",
+          "en": "Please call the front desk immediately if you smell smoke.",
+          "yue": "如果聞到煙味，請即刻打去前台。",
           "audio": "assets/audio/words/immediately-adv-ex3.mp3",
           "audioSlow": "assets/audio/words/immediately-adv-ex3-slow.mp3",
-          "say": "I finished the form immediately.",
-          "audioTextSha256": "ad3f80eb8865407d4deb12b44661b872aba9879e850724a36db616bc80505c37"
+          "audioTextSha256": "14d89a8471461e6214502783d4bef5370b38bb22d533ed301b482a612d0c566e"
         }
       ],
       "miniDialogue": [
@@ -25082,12 +25076,11 @@
           "audioTextSha256": "a5ce81d937993b7fe1ff41b8b74b59db37b8bbcfe07b5ce153c21a682387e71f"
         },
         {
-          "en": "Can the message ship overseas?",
-          "yue": "呢個蛋糕上嘅字可唔可以寄去外國？",
+          "en": "What message would you like on the cake?",
+          "yue": "蛋糕上面想寫咩字？",
           "audio": "assets/audio/words/message-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/message-noun-ex3-slow.mp3",
-          "say": "Can the message ship overseas?",
-          "audioTextSha256": "e5f56e49eacd71da5b270efab66fe43b145ad30315da5c680aa9a8830834cc53"
+          "audioTextSha256": "749b51dd064005d8215e9ceccac49fd4a91929baf908e5710289fc8ae88979c7"
         }
       ],
       "miniDialogue": [
@@ -26249,12 +26242,12 @@
           "audioTextSha256": "a583145c8fdd8d3a3ba8d480855916e596fbd3e6bf6131ac7f1c43784d453ff1"
         },
         {
-          "en": "Please confirm the guarantee serial number.",
-          "yue": "請核對保用序號。",
+          "en": "The watch comes with a two-year guarantee.",
+          "yue": "隻錶有兩年保用。",
           "audio": "assets/audio/words/guarantee-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/guarantee-noun-ex3-slow.mp3",
-          "say": "Please confirm the [[ˌɡɛɹənˈti]] serial number.",
-          "audioTextSha256": "b328622046beef9f655bf80a6c729f474c648eb3cf1c291738ce15dc6aa9da4b"
+          "say": "The watch comes with a two-year [[ˌɡɛɹənˈti]].",
+          "audioTextSha256": "1cdc0d5c60f40c7b4c7fc08fb7b70b74c83c145e8ebac44c21d416d4f74ad060"
         }
       ],
       "miniDialogue": [
@@ -26690,12 +26683,12 @@
           "audioTextSha256": "db7c279ad14655f6a45b996bad6bd7ac63f6e16909dcc3d6a09642eec9216adc"
         },
         {
-          "en": "Please avoid slowly so I can follow.",
-          "yue": "請慢慢避開，等我跟到。",
+          "en": "Take the MTR to avoid the traffic.",
+          "yue": "搭港鐵就可以避開塞車。",
           "audio": "assets/audio/words/avoid-verb-ex3.mp3",
           "audioSlow": "assets/audio/words/avoid-verb-ex3-slow.mp3",
-          "say": "Please [[əˈvɔɪd]] slowly so I can follow.",
-          "audioTextSha256": "4b7805970c0724d3836a279e26c32419d9ae44507d27395c0958b6bd24f9409b"
+          "say": "Take the MTR to [[əˈvɔɪd]] the traffic.",
+          "audioTextSha256": "d759f28d42f791b4cdc6b706353bf355f488bbc2598913b3b3dce28dc6d12732"
         }
       ],
       "miniDialogue": [
@@ -26781,12 +26774,11 @@
           "audioTextSha256": "16318c04cc48da32472e5d5ed02c9b1f2efb451937cae2e18fc75df52ab7bb80"
         },
         {
-          "en": "We vacuum-sealed the spare chemical.",
-          "yue": "備用化學劑我哋抽真空封好。",
+          "en": "Keep pearls away from perfume and other chemicals.",
+          "yue": "珍珠要避開香水同其他化學劑。",
           "audio": "assets/audio/words/chemical-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/chemical-noun-ex3-slow.mp3",
-          "say": "We vacuum-sealed the spare chemical.",
-          "audioTextSha256": "6e71dff193003a008a1a97919c45adb865ba0d27f42318db241b3452c179eeac"
+          "audioTextSha256": "5099edfed37d3749821a3190898467a143e7ca966244e20a6f356a364b78092d"
         }
       ],
       "miniDialogue": [
@@ -26868,12 +26860,11 @@
           "audioTextSha256": "696ac955cca6b42e92ceb6855786a9595f0f729ec0211b6f7685ec1d8b3e05c7"
         },
         {
-          "en": "May I leave a deposit for the claim?",
-          "yue": "可唔可以留訂金訂呢個申請？",
+          "en": "How long does an insurance claim usually take?",
+          "yue": "保險申請通常要幾耐？",
           "audio": "assets/audio/words/claim-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/claim-noun-ex3-slow.mp3",
-          "say": "May I leave a deposit for the claim?",
-          "audioTextSha256": "59607b7db2f6f22a01d8c96e8de0e7af8dab362baeb5d8a56faa89e107ae88b7"
+          "audioTextSha256": "5a165efec4931e8df4faf08bb8e27beb35a171ba9dfd1758b841457b2c857c58"
         }
       ],
       "miniDialogue": [
@@ -27669,12 +27660,11 @@
           "audioTextSha256": "44bd2251e6c360d0ed84bca5ede81bee80da19ccc729de3feff869057cc25242"
         },
         {
-          "en": "We keep every set in the back room.",
-          "yue": "每件套裝我哋都收喺後倉。",
+          "en": "This necklace and earring set is on sale.",
+          "yue": "呢套頸鏈同耳環而家特價。",
           "audio": "assets/audio/words/set-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/set-noun-ex3-slow.mp3",
-          "say": "We keep every set in the back room.",
-          "audioTextSha256": "135b2e0923eb34d6d5bad5b69fc301aa0da3a4d714c73ee26a9c99757388811a"
+          "audioTextSha256": "995d1a4a0ea8c59f6e63fad06e99f818b79daa136669810e582de8ff6607632b"
         }
       ],
       "miniDialogue": [
@@ -27943,12 +27933,12 @@
           "audioTextSha256": "bbae9489bc5184f0e639c35e9eba19c7d7859b4f2bb00b9a3464d606f0973da2"
         },
         {
-          "en": "Do you still sell that air conditioning?",
-          "yue": "你哋仲賣唔賣嗰款冷氣？",
+          "en": "Could you turn the air conditioning down a bit? I'm cold.",
+          "yue": "可唔可以將冷氣較細少少？我好凍。",
           "audio": "assets/audio/words/air-conditioning-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/air-conditioning-phrase-ex3-slow.mp3",
-          "say": "Do you still sell that [[ˈɛɹ kənˈdɪʃənɪŋ]]?",
-          "audioTextSha256": "f9ebe7d953bfaca125a62af313af1b0dc5234ec9e8c9e1fff682b1852c2a4e53"
+          "say": "Could you turn the [[ˈɛɹ kənˈdɪʃənɪŋ]] down a bit? I'm cold.",
+          "audioTextSha256": "58fedc9c3c32bad55f9ea0c7939ec883caa195353b289d493df7dfea120b065a"
         }
       ],
       "miniDialogue": [
@@ -28121,12 +28111,11 @@
           "audioTextSha256": "79b8f9f4f37cc0f82effee3d654bb71fe52a8c2096ca84729b582d1b3e0df6a3"
         },
         {
-          "en": "The courier delivered the wrong blanket.",
-          "yue": "速遞送錯咗被。",
+          "en": "Could we have an extra blanket for the baby?",
+          "yue": "可唔可以多攞張被畀BB？",
           "audio": "assets/audio/words/blanket-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/blanket-noun-ex3-slow.mp3",
-          "say": "The courier delivered the wrong blanket.",
-          "audioTextSha256": "7b7f95b29a1f0c082d8bf6e9cb6a50af961a656ff2753027bef977d898bc9d2e"
+          "audioTextSha256": "3d2a54a548de8d28038d4076efe1ab460a19642eb4927d45f5eaac29fe25f931"
         }
       ],
       "miniDialogue": [
@@ -28843,12 +28832,11 @@
           "audioTextSha256": "272d94c24500c84281bfefdfed48f93a00b094fa83c41e9d3f5f56f56987948e"
         },
         {
-          "en": "A grateful tone works better here.",
-          "yue": "呢度用感激啲嘅語氣更好。",
+          "en": "We're very grateful for your help today.",
+          "yue": "今日多得你幫手，我哋好感激。",
           "audio": "assets/audio/words/grateful-adj-ex3.mp3",
           "audioSlow": "assets/audio/words/grateful-adj-ex3-slow.mp3",
-          "say": "A grateful tone works better here.",
-          "audioTextSha256": "35691fcad53873d826994055783a7dd3716e78bbffdadece85f03abb36db3d8f"
+          "audioTextSha256": "2d70ab29c238f5656710511951b3067c0dd76ed29e311e7407a68a5455b0cd82"
         }
       ],
       "miniDialogue": [
@@ -29021,12 +29009,11 @@
           "audioTextSha256": "25a66b6042b1c8403fa4ddab91122321a0c5374d72ed6dec7006df05e7366e9b"
         },
         {
-          "en": "I need to confirm before security.",
-          "yue": "過安檢前我要確認。",
+          "en": "Could you confirm my booking by email?",
+          "yue": "可唔可以用電郵確認我個預約？",
           "audio": "assets/audio/words/confirm-verb-ex3.mp3",
           "audioSlow": "assets/audio/words/confirm-verb-ex3-slow.mp3",
-          "say": "I need to confirm before security.",
-          "audioTextSha256": "2f5dc5187374b4bf91c3c25f41f4cbc8d2b6104b9b26c07cf4d412af60c8b1f6"
+          "audioTextSha256": "5949109937d9a26da5316aeaf2c97424e0311cde8d78a5b171ef860b2f9b36d1"
         }
       ],
       "miniDialogue": [
@@ -30987,12 +30974,12 @@
           "audioTextSha256": "5872e126c9b7c263f0adf35af756b0f0f239d3eec43b08457693eb72697fb808"
         },
         {
-          "en": "We usually deposit at the front desk.",
-          "yue": "我哋一般喺前台存入。",
+          "en": "I'd like to deposit this cheque into my savings account.",
+          "yue": "我想將呢張支票存入我嘅儲蓄戶口。",
           "audio": "assets/audio/words/deposit-verb-ex3.mp3",
           "audioSlow": "assets/audio/words/deposit-verb-ex3-slow.mp3",
-          "say": "We usually [[dəˈpɑzɪt]] at the front desk.",
-          "audioTextSha256": "5f5eeabc37703579b0be3e08392cc3ae33357071ec8a0e8c032e12cfb397739c"
+          "say": "I'd like to [[dəˈpɑzɪt]] this cheque into my savings account.",
+          "audioTextSha256": "8972329aebd0bf06e29b01d2075826ea2769d34dfb248018fc5ba6418d744f09"
         }
       ],
       "miniDialogue": [
@@ -33562,12 +33549,11 @@
           "audioTextSha256": "353e4e8e924a2f1e998fb154d0a9a102fa1bc95074ce547cf194495e636471e2"
         },
         {
-          "en": "I prefer the similar one on the left.",
-          "yue": "我鍾意左邊較類似嗰個。",
+          "en": "Do you have something similar in silver?",
+          "yue": "有冇類似嘅銀款？",
           "audio": "assets/audio/words/similar-adj-ex3.mp3",
           "audioSlow": "assets/audio/words/similar-adj-ex3-slow.mp3",
-          "say": "I prefer the similar one on the left.",
-          "audioTextSha256": "a8afe0b11382a979cb1f612933536b17edeb8b27c70662bf52a42942cc3ab638"
+          "audioTextSha256": "03df5cb38695fc52c479dd30d5d85a772303f5341b741fa237908fc9096233bd"
         }
       ],
       "miniDialogue": [
@@ -37281,12 +37267,12 @@
           "audioTextSha256": "ed3f98c57d2a491e6099a330d24d9e46a63801fa146c905c7b53a17c0b602c93"
         },
         {
-          "en": "They let guests book after nine.",
-          "yue": "九點之後都畀客訂。",
+          "en": "I'd like to book a table for six on Saturday.",
+          "yue": "我想訂星期六六位。",
           "audio": "assets/audio/words/book-verb-ex3.mp3",
           "audioSlow": "assets/audio/words/book-verb-ex3-slow.mp3",
-          "say": "They let guests [[ˈbʊk]] after nine.",
-          "audioTextSha256": "27472035db6e3f81f00fd60a36d623901c35d41fafc3c41c0bb596ddc37b38e6"
+          "say": "I'd like to [[ˈbʊk]] a table for six on Saturday.",
+          "audioTextSha256": "5d5eec0ced8a811cc734373f4a58b5b0c3548f9163c4446e2bd6f7c83208aaf7"
         }
       ],
       "miniDialogue": [
@@ -39131,12 +39117,11 @@
           "audioTextSha256": "b7fd69db7fd57f6aa47a3dd2d25c69dc627b1a8d48891831bea1b06363560b56"
         },
         {
-          "en": "She is from Macau, not from the shop.",
-          "yue": "佢來自澳門，唔係舖頭嗰邊。",
+          "en": "My colleague is from Macau, but she lives in Sha Tin.",
+          "yue": "我同事係澳門人，不過佢住喺沙田。",
           "audio": "assets/audio/words/from-prep-ex2.mp3",
           "audioSlow": "assets/audio/words/from-prep-ex2-slow.mp3",
-          "say": "She is from Macau, not from the shop.",
-          "audioTextSha256": "790b785d6d812ad2fee975f894a31d0cbb20a92459616b80fe8773fa2ba9922a"
+          "audioTextSha256": "07e14d752f8ee8e1b7243e60b6f8045da0dacf7975060fea70607cc777b16419"
         },
         {
           "en": "The ferry from Macau arrives at six.",
@@ -39148,11 +39133,11 @@
       ],
       "miniDialogue": [
         {
-          "en": "Is this train from Airport?",
-          "yue": "呢班車係咪機場開？",
+          "en": "Is this train from the airport?",
+          "yue": "呢班車係咪由機場開出？",
           "audio": "assets/audio/words/from-prep-md0.mp3",
           "audioSlow": "assets/audio/words/from-prep-md0-slow.mp3",
-          "audioTextSha256": "02783c2b2c721d4f45f866d34b4b476d7cbaeb1ed9f2d054116f5147bcffeb64"
+          "audioTextSha256": "253a87af9b24d03dd89bcf06842f919ef22fabb073ac80011ef945458bf5aea0"
         },
         {
           "en": "Yes. From the airport every hour.",
@@ -40173,12 +40158,12 @@
           "audioTextSha256": "38ee9aba4f02d57c3bfdfaa27394fdf07e615b574eae4e3ffa6bee86fafced94"
         },
         {
-          "en": "He will start if the price drops.",
-          "yue": "減咗價佢先會開始。",
+          "en": "What time does the film start?",
+          "yue": "套戲幾點開場？",
           "audio": "assets/audio/words/start-verb-ex3.mp3",
           "audioSlow": "assets/audio/words/start-verb-ex3-slow.mp3",
-          "say": "He will [[ˈstɑɹt]] if the price drops.",
-          "audioTextSha256": "bdab898b38cc9245f877c5ca11e3edec3c46fab03eefdf90e5ace88597c19287"
+          "say": "What time does the film [[ˈstɑɹt]]?",
+          "audioTextSha256": "c00b87333f315a10584915ae546effb1fbcf1558b1801c56c69f5c5d425af0b8"
         }
       ],
       "miniDialogue": [
@@ -41908,12 +41893,11 @@
           "audioTextSha256": "641df3612627582c244d1e1806fbb04fea063800381b8cac8a47b87c97da46b0"
         },
         {
-          "en": "Please activate the smaller option.",
-          "yue": "請開通細啲嗰個選擇。",
+          "en": "Your new card needs to be activated before you use it.",
+          "yue": "張新卡要開通咗先用得。",
           "audio": "assets/audio/words/activate-verb-ex3.mp3",
           "audioSlow": "assets/audio/words/activate-verb-ex3-slow.mp3",
-          "say": "Please [[ˈæktəˌveɪt]] the smaller option.",
-          "audioTextSha256": "64ee64e63b545fb2014647fde4f706789937b7a1f5241c510f79c34901c29562"
+          "audioTextSha256": "ab276843317658d43921eab98b99a1c4efc024ce9360b75e9129fe1c372cfc00"
         }
       ],
       "miniDialogue": [
@@ -61051,9 +61035,9 @@
         "the layover",
         "a layover"
       ],
-      "example": "Could you please check my declaration before the layover and tell me which belt?",
-      "exampleYue": "轉機停留之前可唔可以睇吓我張申報表，話我知邊條帶？",
-      "say": "Could you please check my declaration before the layover and tell me which belt?",
+      "example": "We have a three-hour layover in Taipei.",
+      "exampleYue": "我哋喺台北轉機要停三個鐘。",
+      "say": "We have a three-hour layover in Taipei.",
       "variants": [],
       "note": "",
       "sources": [
@@ -61065,27 +61049,25 @@
       "senseMismatch": false,
       "cmuLemma": "layover",
       "phrase": false,
-      "audioSha256": "380e1a4a8cae3b55fe87f47302f3e735cec3137826a84d0ba7d33350071e61c6",
+      "audioSha256": "a1950fa98ae50d169f08831efd0287fea6a4c606ccc942870bf1cb4ef39865a1",
       "register": "場景",
       "usageNotes": "呢課用轉機停留。",
       "pitfallsYue": "",
       "related": [],
       "examples": [
         {
-          "en": "Could you please check my declaration before the layover and tell me which belt?",
-          "yue": "轉機停留之前可唔可以睇吓我張申報表，話我知邊條帶？",
+          "en": "We have a three-hour layover in Taipei.",
+          "yue": "我哋喺台北轉機要停三個鐘。",
           "audio": "assets/audio/words/layover-noun.mp3",
           "audioSlow": "assets/audio/words/layover-noun-slow.mp3",
-          "say": "Could you please check my declaration before the layover and tell me which belt?",
-          "audioTextSha256": "8f1b06fb3e12a590b6c6ab08f545d3af5944b4a3f65433973af07644a2b68396"
+          "audioTextSha256": "64ea9ba841ba66d559799008fa484740d290cd01fcc8fbceb32a01777b0f15f8"
         },
         {
-          "en": "Your declaration is fine, and the layover belt is number three on the left side.",
-          "yue": "你張申報表冇問題，轉機停留嗰條帶係左邊三號。",
+          "en": "Can I leave the airport during the layover?",
+          "yue": "轉機停留期間我可唔可以出機場？",
           "audio": "assets/audio/words/layover-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/layover-noun-ex2-slow.mp3",
-          "say": "Your declaration is fine, and the layover belt is number three on the left side.",
-          "audioTextSha256": "ac639e35c8e69124dce170b4e85283db0e4649afcebe244772b0124a6b3ad173"
+          "audioTextSha256": "8209c618c6fcfc0cac33fdbb7a667627f02c08b66f0b154f6a773e33455d5fec"
         },
         {
           "en": "During the layover in Seoul, I have ninety minutes to change planes.",
@@ -61098,18 +61080,18 @@
       ],
       "miniDialogue": [
         {
-          "en": "Could you please check my declaration before the layover and tell me which belt?",
-          "yue": "轉機停留之前可唔可以睇吓我張申報表，話我知邊條帶？",
+          "en": "We have a three-hour layover in Taipei.",
+          "yue": "我哋喺台北轉機要停三個鐘。",
           "audio": "assets/audio/words/layover-noun-md0.mp3",
           "audioSlow": "assets/audio/words/layover-noun-md0-slow.mp3",
-          "audioTextSha256": "8f1b06fb3e12a590b6c6ab08f545d3af5944b4a3f65433973af07644a2b68396"
+          "audioTextSha256": "64ea9ba841ba66d559799008fa484740d290cd01fcc8fbceb32a01777b0f15f8"
         },
         {
-          "en": "Your declaration is fine, and the layover belt is number three on the left side.",
-          "yue": "你張申報表冇問題，轉機停留嗰條帶係左邊三號。",
+          "en": "Can I leave the airport during the layover?",
+          "yue": "轉機停留期間我可唔可以出機場？",
           "audio": "assets/audio/words/layover-noun-md1.mp3",
           "audioSlow": "assets/audio/words/layover-noun-md1-slow.mp3",
-          "audioTextSha256": "ac639e35c8e69124dce170b4e85283db0e4649afcebe244772b0124a6b3ad173"
+          "audioTextSha256": "8209c618c6fcfc0cac33fdbb7a667627f02c08b66f0b154f6a773e33455d5fec"
         }
       ]
     },
