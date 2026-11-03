@@ -316,7 +316,15 @@ export function createPersistence(open) {
         };
         return { ok: false };
       }
-      const body = stamp(next);
+      let body;
+      try {
+        body = stamp(next);
+      } catch (err) {
+        // A record that fails validation is not written; the last good snapshot
+        // stays, and the learner sees 未儲存 instead of a silent stop.
+        status = { kind: "unsaved", reason: err instanceof Error && err.name === "ProgressError" ? err.message : "進度格式唔啱。" };
+        return { ok: false };
+      }
       snapshot = body;
       if (mode === "memory") {
         status = { kind: "unsaved", reason: "呢個瀏覽器而家存唔到資料。" };

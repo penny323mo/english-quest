@@ -245,3 +245,26 @@ test("a skipped quiz recap does not show zero accuracy", () => {
   assert.equal(quizRecapLine(0, 5, 5), "小測 0 / 5 · 準確 0%");
   assert.equal(quizRecapLine(2, 5, 4), "小測 2 / 5 · 準確 40%");
 });
+
+test("a record that fails validation shows 未儲存 instead of failing silently", async () => {
+  const db = memoryDb({ schemaVersion: SCHEMA_VERSION, profile, progress, cards });
+  const persistence = createPersistence(db.open);
+  await persistence.hydrate();
+  const bad = {
+    schemaVersion: SCHEMA_VERSION,
+    profile: { ...profile, xp: 99 },
+    progress,
+    cards,
+    // A resumed quiz used to count an answer twice, until quizScore passed quizAnswered.
+    lessonCursor: { lessonId: "F3", beat: 8, sub: 2, quizScore: 4, quizAnswered: 3 },
+  };
+  const saved = await persistence.save(bad);
+  assert.equal(saved.ok, false);
+  assert.equal(persistence.status.kind, "unsaved");
+  assert.match(persistence.status.reason, /進度格式唔啱/);
+  assert.equal(db.box.get("state").profile.xp, 40, "the stored record is untouched");
+  assert.equal(persistence.snapshot.profile.xp, 40, "the last good snapshot is kept");
+  const good = await persistence.save({ ...bad, lessonCursor: null });
+  assert.equal(good.ok, true);
+  assert.equal(persistence.status.kind, "ok");
+});
