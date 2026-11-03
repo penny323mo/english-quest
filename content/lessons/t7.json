@@ -4,7 +4,7 @@
   "titleYue": "旅行購物",
   "titleEn": "Shopping while travelling",
   "canDoYue": "你識問細碼同顏色，仲識講要呢件同退稅單。",
-  "canDoEn": "Ask for a smaller size and a color, then take the shirt with a tax refund form.",
+  "canDoEn": "Ask for a smaller size and a colour, then take the shirt with a tax refund form.",
   "minutes": 12,
   "hero": "assets/art/lessons/t7.webp",
   "cast": [
@@ -51,11 +51,11 @@
       "id": "t7-l3",
       "speaker": "may",
       "speakerLabel": "May",
-      "text": "Yes, we do have this color in a smaller size.",
+      "text": "Yes, we do have this colour in a smaller size.",
       "glossYue": "有，呢隻顏色有細碼。",
       "audio": "assets/audio/lines/t7-l3.mp3",
       "audioSlow": "assets/audio/lines/t7-l3-slow.mp3",
-      "say": "Yes, we do have this color in a smaller size.",
+      "say": "Yes, we do have this colour in a smaller size.",
       "hideGloss": true
     },
     {
@@ -160,17 +160,17 @@
     },
     {
       "pattern": "Yes, we do have this ___ in a smaller size, and the fitting room is open.",
-      "example": "Yes, we do have this color in a smaller size.",
+      "example": "Yes, we do have this colour in a smaller size.",
       "glossYue": "有呢隻⋯⋯。",
-      "answer": "color",
+      "answer": "colour",
       "choices": [
-        "color",
+        "colour",
         "embassy",
         "cough"
       ]
     },
     {
-      "pattern": "The smaller size fits well, and I will take this color with the tax ___ form.",
+      "pattern": "The smaller size fits well, and I will take this colour with the tax ___ form.",
       "example": "The fit works. Can I get a tax refund form?",
       "glossYue": "連埋⋯⋯表。",
       "answer": "refund",
@@ -216,14 +216,14 @@
         "will",
         "take",
         "this",
-        "color"
+        "colour"
       ],
       "answer": [
         "I",
         "will",
         "take",
         "this",
-        "color"
+        "colour"
       ]
     }
   ],
@@ -248,7 +248,7 @@
       {
         "partner": "May",
         "partnerId": "may",
-        "line": "Yes, we do have this color in a smaller size.",
+        "line": "Yes, we do have this colour in a smaller size.",
         "audio": "assets/audio/lines/t7-l3.mp3",
         "audioSlow": "assets/audio/lines/t7-l3-slow.mp3",
         "expect": "This shirt size is too big.",

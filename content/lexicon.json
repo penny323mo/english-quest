@@ -8682,11 +8682,11 @@
           "audioTextSha256": "80ad0f16f50d3b69aecaa4b2f5989f7ff1ed1abd555078576e14f502a702fc12"
         },
         {
-          "en": "I found the red one. It is a color, not led.",
+          "en": "I found the red one. It is a colour, not led.",
           "yue": "我搵到紅色嗰張。呢個係顏色，唔係 led。",
           "audio": "assets/audio/words/red-adj-md1.mp3",
           "audioSlow": "assets/audio/words/red-adj-md1-slow.mp3",
-          "audioTextSha256": "ea01ec47b40709c53533351eab532489a655dc32589f267382377d7404a66534"
+          "audioTextSha256": "29105351f0c3b34d0720dd1699b7bfc7a4f02813e5805e2b3d9ec1a6e156bf9b"
         }
       ]
     },
@@ -24773,12 +24773,12 @@
           "audioTextSha256": "54181781c3174f217bd1efaa3121b0eead155e342490e89242bb1b2092b1e125"
         },
         {
-          "en": "Kai is calling from the harbor office.",
+          "en": "Kai is calling from the harbour office.",
           "yue": "Kai 由海港辦事處打嚟。",
           "audio": "assets/audio/words/calling-verb-ex2.mp3",
           "audioSlow": "assets/audio/words/calling-verb-ex2-slow.mp3",
-          "say": "Kai is [[ˈkɔlɪŋ]] from the harbor office.",
-          "audioTextSha256": "76031e927c0c4ddeca6482c6809becf12748f941c88e2fd345e269051e2d5563"
+          "say": "Kai is [[ˈkɔlɪŋ]] from the harbour office.",
+          "audioTextSha256": "babb6659b8165a0a814902dee338129588a1293bccd305ea726a33fef694167d"
         },
         {
           "en": "She is calling the front desk.",
@@ -32416,13 +32416,13 @@
     },
     {
       "id": "color-noun",
-      "lemma": "color",
+      "lemma": "colour",
       "pos": "noun",
       "senseId": "us-color",
       "ipa": "/ˈkʌ.lɚ/",
       "syllables": [
         "col",
-        "or"
+        "our"
       ],
       "syllableIpa": [
         "ˈkʌ",
@@ -32436,12 +32436,12 @@
       "glossZh": "顏色",
       "jyutping": "ngaan4 sik1",
       "collocations": [
-        "this color",
-        "another color"
+        "this colour",
+        "another colour"
       ],
-      "example": "We do have this color in a smaller size.",
+      "example": "We do have this colour in a smaller size.",
       "exampleYue": "呢隻顏色有細碼。",
-      "say": "We do have this color in a smaller size.",
+      "say": "We do have this colour in a smaller size.",
       "variants": [],
       "note": "",
       "sources": [
@@ -32452,9 +32452,9 @@
       "senseMismatch": false,
       "cmuLemma": "color",
       "phrase": false,
-      "audioSha256": "c17ff07a4749ff01e83fd4cc75da291db44cb6f0c79a7c7b4e70d1ef007c7489",
+      "audioSha256": "cf87afad200b32d4f0122d6ce1b062a0eb666927bdf53f3100bc77a63ff11b22",
       "register": "旅行",
-      "usageNotes": "顏色係衫嘅色，美式串法係 color。",
+      "usageNotes": "顏色係衫嘅色。教材用英式串法 colour，美式寫 color，讀音一樣。",
       "pitfallsYue": "",
       "related": [
         "smaller-adj",
@@ -32462,15 +32462,15 @@
       ],
       "examples": [
         {
-          "en": "We do have this color in a smaller size.",
+          "en": "We do have this colour in a smaller size.",
           "yue": "呢隻顏色有細碼。",
           "audio": "assets/audio/words/color-noun.mp3",
           "audioSlow": "assets/audio/words/color-noun-slow.mp3",
-          "say": "We do have this color in a smaller size.",
-          "audioTextSha256": "456503125ea86568078ff1ac41fdbb514b9e7927bc136c0137bec7468c188861"
+          "say": "We do have this colour in a smaller size.",
+          "audioTextSha256": "9288ae32533b7e6daffacffdbf2bb7e551bfcaec67d39f1932b418ae893e89da"
         },
         {
-          "en": "I would like another color in a smaller size.",
+          "en": "I would like another colour in a smaller size.",
           "yue": "我想要另一隻顏色嘅細碼。",
           "audio": "assets/audio/words/color-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/color-noun-ex2-slow.mp3",
@@ -32478,7 +32478,7 @@
           "audioTextSha256": "f6ddcce2f8d850e95caf9bf06668ae9eaf8f38c33e530c9ee7a028ef571e57fb"
         },
         {
-          "en": "The demo color cannot leave the shop.",
+          "en": "The demo colour cannot leave the shop.",
           "yue": "示範用嘅顏色唔可以帶出舖。",
           "audio": "assets/audio/words/color-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/color-noun-ex3-slow.mp3",
@@ -32488,18 +32488,18 @@
       ],
       "miniDialogue": [
         {
-          "en": "We do have this color in a smaller size.",
+          "en": "We do have this colour in a smaller size.",
           "yue": "呢隻顏色有細碼。",
           "audio": "assets/audio/words/color-noun-md0.mp3",
           "audioSlow": "assets/audio/words/color-noun-md0-slow.mp3",
-          "audioTextSha256": "456503125ea86568078ff1ac41fdbb514b9e7927bc136c0137bec7468c188861"
+          "audioTextSha256": "9288ae32533b7e6daffacffdbf2bb7e551bfcaec67d39f1932b418ae893e89da"
         },
         {
-          "en": "I would like another color in a smaller size.",
+          "en": "I would like another colour in a smaller size.",
           "yue": "我想要另一隻顏色嘅細碼。",
           "audio": "assets/audio/words/color-noun-md1.mp3",
           "audioSlow": "assets/audio/words/color-noun-md1-slow.mp3",
-          "audioTextSha256": "faff150e18c6e0bc5147f280b309f70943ea0536a7c0c8eee6b0187d8f5f0d82"
+          "audioTextSha256": "941b2d818f213be5bb853e1702ac37d6433a52cbaf02ce1e7cdea8e7e8492705"
         }
       ]
     },
@@ -32830,12 +32830,12 @@
           "audioTextSha256": "8c2e5bb170786150057e329d909158544d3f33347f6d5cdb741bfd0e08027d96"
         },
         {
-          "en": "This postcard shows the harbor at sunset.",
+          "en": "This postcard shows the harbour at sunset.",
           "yue": "呢張明信片係日落嘅海港。",
           "audio": "assets/audio/words/postcard-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/postcard-noun-ex2-slow.mp3",
-          "say": "This [[ˈpoʊstˌkɑɹd]] shows the harbor at sunset.",
-          "audioTextSha256": "8093d5790c20cc91054842eadd8f13ac79f33f7b92ee1a7f7d15bd925d54df73"
+          "say": "This [[ˈpoʊstˌkɑɹd]] shows the harbour at sunset.",
+          "audioTextSha256": "908f28b4629c296431e16237b276b8a6b2c74b87e54f4885a56d32122a659927"
         },
         {
           "en": "Please compare this postcard with the sample photo.",
@@ -32855,11 +32855,11 @@
           "audioTextSha256": "8c2e5bb170786150057e329d909158544d3f33347f6d5cdb741bfd0e08027d96"
         },
         {
-          "en": "This postcard shows the harbor at sunset.",
+          "en": "This postcard shows the harbour at sunset.",
           "yue": "呢張明信片係日落嘅海港。",
           "audio": "assets/audio/words/postcard-noun-md1.mp3",
           "audioSlow": "assets/audio/words/postcard-noun-md1-slow.mp3",
-          "audioTextSha256": "1cf795de2c1855b341cc06f710ae9adcca5e9212035d53f4f2b94e1174f9ee64"
+          "audioTextSha256": "22b0dc0ec6c8d09ae4407d6ba64d27d73b8fd0abe9200444e8538a48eff92e8b"
         }
       ]
     },
@@ -57944,11 +57944,11 @@
           "audioTextSha256": "d21ed43a16239b005f795ef0038e37cfe6e9d0d6cc2f92ac3b2e494b9348c496"
         },
         {
-          "en": "I can swap in the harbor picture.",
+          "en": "I can swap in the harbour picture.",
           "yue": "我換張維港嗰張入去。",
           "audio": "assets/audio/words/draft-noun-md1.mp3",
           "audioSlow": "assets/audio/words/draft-noun-md1-slow.mp3",
-          "audioTextSha256": "4e451c8d24d06e2397852c5a04cf079a2781e0a0c379a12ee8aacdddd204b0a7"
+          "audioTextSha256": "69286cc306badc2b13bf39e13e49df054c388025a71fd5acc6d21faee668f431"
         }
       ]
     },
