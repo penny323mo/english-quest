@@ -21,7 +21,7 @@ import { fillLearner } from "./learner";
 import { useStore } from "./store";
 import type { BuildOrder, Lesson, LexItem, QuizItem } from "./types";
 import { BEAT_LABELS } from "./beats";
-import { quizResumePoint } from "./resume.mjs";
+import { clampResumePoint, itemCounts, quizResumePoint } from "./resume.mjs";
 import { seededOrder } from "./choice-order.js";
 
 const BEATS = BEAT_LABELS;
@@ -89,10 +89,12 @@ function Player({ lesson }: { lesson: Lesson }) {
     const match = Boolean(savedCursor && savedCursor.lessonId === lesson.id && !state.progress[lesson.id]);
     if (state.resumeArmed && match && savedCursor) {
       queueMicrotask(() => useStore.setState({ resumeArmed: false }));
+      const point = clampResumePoint(savedCursor.beat, savedCursor.sub, itemCounts(lesson));
+      if (point.restart) return { gate: "play" as const, beat: 0, sub: 0, quizScore: 0, quizAnswered: 0 };
       return {
         gate: "play" as const,
-        beat: savedCursor.beat,
-        sub: savedCursor.sub,
+        beat: point.beat,
+        sub: point.sub,
         quizScore: savedCursor.quizScore,
         quizAnswered: savedCursor.quizAnswered,
       };
@@ -148,8 +150,13 @@ function Player({ lesson }: { lesson: Lesson }) {
 
   function resume() {
     if (!cursor || cursor.lessonId !== lesson.id) return;
-    setBeat(cursor.beat);
-    setSub(cursor.sub);
+    const point = clampResumePoint(cursor.beat, cursor.sub, itemCounts(lesson));
+    if (point.restart) {
+      restart();
+      return;
+    }
+    setBeat(point.beat);
+    setSub(point.sub);
     setQuizScore(cursor.quizScore);
     setQuizAnswered(cursor.quizAnswered);
     setAnsweredAt(null);
