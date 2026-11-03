@@ -146,32 +146,29 @@
     {
       "prompt": "I'm allergic to peanuts, and I don't eat pork. 呢句即係點？",
       "choices": [
-        "關於豬肉",
-        "講緊敏感",
-        "唔係花生"
+        "有，佢有花生油。我建議你轉蔬菜麵",
+        "我對花生敏感，而且我唔食豬肉",
+        "冇，係素食。我會叫廚房用另一隻鑊"
       ],
-      "answer": 1,
-      "explain": "敏感。"
+      "answer": 1
     },
     {
       "prompt": "Yes, it has peanut oil. I'd suggest the vegetable noodles instead. 呢句即係點？",
       "choices": [
-        "講緊花生",
-        "唔係敏感",
-        "關於豬肉"
+        "有，佢有花生油。我建議你轉蔬菜麵",
+        "我對花生敏感，而且我唔食豬肉",
+        "冇，係素食。我會叫廚房用另一隻鑊"
       ],
-      "answer": 0,
-      "explain": "花生。"
+      "answer": 0
     },
     {
       "prompt": "I will. I'll put a note on your order now. 呢句即係點？",
       "choices": [
-        "唔係敏感",
-        "關於花生",
-        "講緊豬肉"
+        "冇，蛋冇問題。炒飯入面有冇花生？",
+        "麵入面有冇豬肉？",
+        "我會。我而家喺你張單上面寫低"
       ],
-      "answer": 2,
-      "explain": "豬肉。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -212,14 +209,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「冇，蛋冇問題。炒飯入面有冇花生？」，你點講？",
       "choices": [
         "I'm allergic to peanuts, and I don't eat pork.",
         "No, egg is fine. Does the fried rice have peanuts in it?",
         "Do they have any pork in them?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",
@@ -333,7 +330,7 @@
         "towel"
       ],
       "answer": 0,
-      "explain": "敏感。"
+      "explain": "pork 係豬肉。"
     }
   ],
   "shadow": {

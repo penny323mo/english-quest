@@ -237,7 +237,7 @@
         "expect": "The occasion is an anniversary dinner.",
         "keywords": [
           "occasion",
-          "preference"
+          "anniversary"
         ],
         "modelAudio": "assets/audio/lines/j11-l2.mp3",
         "modelSlow": "assets/audio/lines/j11-l2-slow.mp3"
@@ -264,8 +264,8 @@
         "audioSlow": "assets/audio/lines/j11-l6-slow.mp3",
         "expect": "If the new design is more modern, I'd still want a quiet gold piece.",
         "keywords": [
-          "contemporary",
-          "discreet"
+          "design",
+          "modern"
         ],
         "modelAudio": "assets/audio/lines/j11-l7.mp3",
         "modelSlow": "assets/audio/lines/j11-l7-slow.mp3"
@@ -297,11 +297,11 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The occasion is an anniversary dinner.」，preference 係咩意思？",
+      "prompt": "客人講「The occasion is an anniversary dinner.」，occasion 係咩意思？",
       "choices": [
         "檔期",
         "訂金",
-        "偏好"
+        "場合"
       ],
       "answer": 2
     },

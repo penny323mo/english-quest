@@ -97,7 +97,7 @@
     {
       "prompt": "Can I have some water? 係講咩？",
       "choices": [
-        "我想叫雞",
+        "我想要個雞",
         "我睇吓先",
         "可唔可以畀我杯水"
       ],
@@ -168,7 +168,7 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "Ana 問 What would you like to order? 你想叫雞。",
+      "promptYue": "Ana 問 What would you like to order? 你想要雞。",
       "choices": [
         "I'd like the chicken, please.",
         "I'm just looking, thank you.",
@@ -269,7 +269,7 @@
       "prompt": "客人講「Can I have some water, please, and no ice in the glass?」，係咩意思？",
       "choices": [
         "登機證",
-        "推薦",
+        "要杯水，唔要冰",
         "訂位"
       ],
       "answer": 1
@@ -278,7 +278,7 @@
       "type": "meaning",
       "prompt": "客人講「I'd like the chicken, please, and a small salad with it.」，係咩意思？",
       "choices": [
-        "我想叫雞",
+        "我想要個雞",
         "要杯凍水",
         "我睇吓先"
       ],

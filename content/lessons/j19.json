@@ -117,11 +117,11 @@
       "id": "j19-l7",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "So the price is higher because the cut is cleaner?",
-      "glossYue": "所以價錢高啲，係因為切工乾淨啲？",
+      "text": "So this stone costs more because the cut is much better?",
+      "glossYue": "即係呢粒切工好好多，所以貴啲？",
       "audio": "assets/audio/lines/j19-l7.mp3",
       "audioSlow": "assets/audio/lines/j19-l7-slow.mp3",
-      "say": "So the price is higher because the cut is cleaner?",
+      "say": "So this stone costs more because the cut is much better?",
       "hideGloss": false
     },
     {
@@ -174,10 +174,10 @@
         "line": "This stone has a better cut. The other has a small mark.",
         "audio": "assets/audio/lines/j19-l6.mp3",
         "audioSlow": "assets/audio/lines/j19-l6-slow.mp3",
-        "expect": "So the price is higher because the cut is cleaner?",
+        "expect": "So this stone costs more because the cut is much better?",
         "keywords": [
-          "price",
-          "higher"
+          "costs",
+          "cut"
         ],
         "modelAudio": "assets/audio/lines/j19-l7.mp3",
         "modelSlow": "assets/audio/lines/j19-l7-slow.mp3"
@@ -188,32 +188,29 @@
     {
       "prompt": "Can you explain this diamond certificate in plain language, please? 即係問緊咩？",
       "choices": [
-        "關於切工",
-        "講緊鑽石",
-        "唔係證書"
+        "呢粒切工更好。另一粒有個小痕跡",
+        "可唔可以用簡單嘅話解釋呢張鑽石證書？",
+        "即係呢粒切工好好多，所以貴啲？"
       ],
-      "answer": 1,
-      "explain": "鑽石。"
+      "answer": 1
     },
     {
       "prompt": "It's one carat. The lab report number is engraved on the girdle. 呢句即係點？",
       "choices": [
-        "講緊證書",
-        "唔係鑽石",
-        "關於切工"
+        "一克拉。實驗室報告編號刻喺腰上",
+        "即係呢粒切工好好多，所以貴啲？",
+        "可唔可以用簡單嘅話解釋呢張鑽石證書？"
       ],
-      "answer": 0,
-      "explain": "證書。"
+      "answer": 0
     },
     {
       "prompt": "Yes. The report is from a lab. It is not a brand name. 呢句即係點？",
       "choices": [
-        "唔係鑽石",
-        "講緊切工",
-        "關於證書"
+        "可以。切工、顏色同淨度都好好",
+        "呢粒切工更好。另一粒有個小痕跡",
+        "係。報告嚟自一間實驗室。佢唔係品牌名"
       ],
-      "answer": 2,
-      "explain": "證書。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -229,12 +226,12 @@
       ]
     },
     {
-      "pattern": "So the ___ is higher because the cut is cleaner?",
-      "example": "So the price is higher because the cut is cleaner?",
-      "glossYue": "所以價錢高啲，係因為切工乾淨啲？",
-      "answer": "price",
+      "pattern": "So this stone ___ more because the cut is much better?",
+      "example": "So this stone costs more because the cut is much better?",
+      "glossYue": "即係呢粒切工好好多，所以⋯⋯？",
+      "answer": "costs",
       "choices": [
-        "price",
+        "costs",
         "diamond",
         "certificate"
       ]
@@ -254,14 +251,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「克拉點計？腰上嗰個號碼呢？」，你點講？",
       "choices": [
         "Can you explain this diamond certificate in plain language, please?",
         "What about the carat? And the number on the girdle?",
         "Why is this stone more expensive than the other one?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",

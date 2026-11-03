@@ -140,32 +140,29 @@
     {
       "prompt": "Good morning, Harbour Clinic. How can I help you? 即係問緊咩？",
       "choices": [
-        "關於診金",
-        "講緊預約",
-        "唔係症狀"
+        "可以。診金幾多？",
+        "早晨，海港診所。有咩可以幫到你？",
+        "可以。你有咩症狀？"
       ],
-      "answer": 1,
-      "explain": "預約。"
+      "answer": 1
     },
     {
       "prompt": "I've had a sore throat and a fever since yesterday. 呢句即係點？",
       "choices": [
-        "講緊症狀",
-        "唔係預約",
-        "關於診金"
+        "我由尋日開始喉嚨痛，仲有發燒",
+        "三百蚊，包藥。請帶身份證同保險卡，提早十分鐘到",
+        "可以。診金幾多？"
       ],
-      "answer": 0,
-      "explain": "症狀。"
+      "answer": 0
     },
     {
       "prompt": "Great. Nine thirty tomorrow with Dr Lam. Thank you! 呢句即係點？",
       "choices": [
-        "唔係預約",
-        "關於症狀",
-        "講緊診金"
+        "可以。你有咩症狀？",
+        "你好，我想預約睇醫生",
+        "好。聽日九點半，林醫生。多謝！"
       ],
-      "answer": 2,
-      "explain": "診金。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -206,14 +203,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「可以。你有咩症狀？」，你點講？",
       "choices": [
         "Good morning, Harbour Clinic. How can I help you?",
         "Sure. What are your symptoms?",
         "The earliest appointment is tomorrow at nine thirty with Dr Lam. Is that OK?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",
@@ -328,7 +325,7 @@
         "appointment"
       ],
       "answer": 1,
-      "explain": "預約。"
+      "explain": "consultation fee 係診金。"
     }
   ],
   "shadow": {

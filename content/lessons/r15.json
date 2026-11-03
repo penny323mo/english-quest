@@ -3,7 +3,7 @@
   "unit": "R",
   "titleYue": "自助餐同戒口",
   "titleEn": "Buffet and dietary limits",
-  "canDoYue": "你識問自助餐係咪任食、汽水包唔包、邊啲菜有貝殼類，同埋一次攞一碟。",
+  "canDoYue": "你識問自助餐係咪任食、汽水包唔包、邊啲菜有海鮮，同埋一次攞一碟。",
   "canDoEn": "Ask whether the buffet is eat-in, whether soft drinks are included, which dishes have shellfish, and whether you may take one plate at a time.",
   "minutes": 12,
   "hero": "assets/art/lessons/r15.webp",
@@ -20,7 +20,7 @@
   "topicTags": [
     "自助餐",
     "汽水",
-    "貝殼",
+    "海鮮",
     "餐碟"
   ],
   "next": "R16",
@@ -95,7 +95,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Which hot dishes have shellfish? May I have a clean plate?",
-      "glossYue": "邊啲熱菜有貝殼類？可唔可以畀個乾淨碟我？",
+      "glossYue": "邊啲熱菜有海鮮（蝦蟹貝類）？可唔可以畀個乾淨碟我？",
       "audio": "assets/audio/lines/r15-l5.mp3",
       "audioSlow": "assets/audio/lines/r15-l5-slow.mp3",
       "say": "Which hot dishes have shellfish? May I have a clean plate?",
@@ -106,7 +106,7 @@
       "speaker": "mira",
       "speakerLabel": "Mira",
       "text": "The prawn soup has shellfish. Here's a clean plate.",
-      "glossYue": "蝦湯有貝殼類。呢個係乾淨碟。",
+      "glossYue": "蝦湯有甲殼類海鮮。呢隻係乾淨碟。",
       "audio": "assets/audio/lines/r15-l6.mp3",
       "audioSlow": "assets/audio/lines/r15-l6-slow.mp3",
       "say": "The prawn soup has shellfish. Here's a clean plate.",
@@ -187,32 +187,29 @@
     {
       "prompt": "Is this buffet all you can eat? Can I take food away? 呢句即係點？",
       "choices": [
-        "關於汽水",
-        "講緊自助餐",
-        "唔係餐碟"
+        "係。每位成人喺檯上都包汽水",
+        "呢個自助餐係咪任食？可唔可以拎走？",
+        "蝦湯有甲殼類海鮮。呢隻係乾淨碟"
       ],
-      "answer": 1,
-      "explain": "自助餐。"
+      "answer": 1
     },
     {
       "prompt": "Yes. Those soft drinks are included for every adult at the table. 呢句即係點？",
       "choices": [
-        "關於汽水",
-        "唔係自助餐",
-        "講緊餐碟"
+        "係。每位成人喺檯上都包汽水",
+        "呢個自助餐係咪任食？可唔可以拎走？",
+        "蝦湯有甲殼類海鮮。呢隻係乾淨碟"
       ],
-      "answer": 0,
-      "explain": "汽水。"
+      "answer": 0
     },
     {
       "prompt": "The prawn soup has shellfish. Here's a clean plate. 呢句即係點？",
       "choices": [
-        "唔係汽水",
-        "關於自助餐",
-        "講緊貝殼"
+        "呢個自助餐係咪任食？可唔可以拎走？",
+        "汽水係咪包咗，定係要逐杯畀錢？",
+        "蝦湯有甲殼類海鮮。呢隻係乾淨碟"
       ],
-      "answer": 2,
-      "explain": "貝殼。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -241,7 +238,7 @@
     {
       "pattern": "The prawn soup has shellfish, so here is a clean ___.",
       "example": "The prawn soup has shellfish. Here's a clean plate.",
-      "glossYue": "蝦湯有貝殼類，所以呢個係乾淨碟。",
+      "glossYue": "蝦湯有甲殼類海鮮。呢隻係乾淨碟。",
       "answer": "plate",
       "choices": [
         "plate",
@@ -253,14 +250,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「汽水係咪包咗，定係要逐杯畀錢？」，你點講？",
       "choices": [
         "Is this buffet all you can eat? Can I take food away?",
         "Are soft drinks included, or do I pay for each one?",
         "Which hot dishes have shellfish? May I have a clean plate?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",
@@ -330,7 +327,7 @@
       "type": "meaning",
       "prompt": "Which hot dishes have shellfish? May I have a clean plate? 呢句入面，邊個意思先啱？",
       "choices": [
-        "貝殼",
+        "海鮮",
         "自助餐",
         "汽水"
       ],

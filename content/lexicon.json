@@ -413,7 +413,7 @@
       "arpabet": "W AY1 N D",
       "audio": "assets/audio/words/wind-verb.mp3",
       "audioSlow": "assets/audio/words/wind-verb-slow.mp3",
-      "glossYue": "上緊（鐘錶）；繞",
+      "glossYue": "上鍊；繞",
       "glossZh": "上发条；绕",
       "jyutping": "soeng5 gan2",
       "collocations": [
@@ -421,7 +421,7 @@
         "wind the rope"
       ],
       "example": "Wind the clock tonight.",
-      "exampleYue": "今晚記得上鐘。",
+      "exampleYue": "今晚記得幫個鐘上鍊。",
       "say": "[[wˈaɪnd]] the clock tonight.",
       "variants": [],
       "note": "",
@@ -1245,7 +1245,7 @@
         "smile a little"
       ],
       "example": "Smile a little.",
-      "exampleYue": "嘴角微微展開。",
+      "exampleYue": "笑一笑。",
       "say": "Smile a little.",
       "variants": [
         "/ˈsmaɪ.əl/"
@@ -1637,7 +1637,7 @@
         "my name is"
       ],
       "example": "My name is Mei.",
-      "exampleYue": "我叫 Mei，好高興認識你。",
+      "exampleYue": "我個名叫 Mei。",
       "say": "My name is Mei.",
       "variants": [],
       "note": "",
@@ -2209,15 +2209,15 @@
       "audioSha256": "7c3c136761417e99a4c557ac13122cba6d9d5553a2544b1125f804e134099ec1",
       "miniDialogue": [
         {
-          "en": "Good evening. Your booking is ready.",
-          "yue": "夜晚好。你個訂位準備好。",
+          "en": "Good evening. Do you have a booking?",
+          "yue": "你好，有冇訂位？",
           "audio": "assets/audio/words/evening-noun-md0.mp3",
           "audioSlow": "assets/audio/words/evening-noun-md0-slow.mp3",
-          "audioTextSha256": "0289eccd2fd04390b92d5283021d778e3ed7ed9671731930cbcd67327581ca5c"
+          "audioTextSha256": "7382c2ff5ef384f8be1410062994f809110faf3390d410f6b5833e949cf35470"
         },
         {
           "en": "Good evening. We are two guests.",
-          "yue": "夜晚好。我哋兩位。",
+          "yue": "你好，我哋兩位。",
           "audio": "assets/audio/words/evening-noun-md1.mp3",
           "audioSlow": "assets/audio/words/evening-noun-md1-slow.mp3",
           "audioTextSha256": "3dd338c585e6fe1a8eaf1593821ba011686dc1a5f6b4ef2f65066f2bf52d794c"
@@ -5248,14 +5248,14 @@
       "miniDialogue": [
         {
           "en": "Could you help me choose something for my wife?",
-          "yue": "可唔可以幫我揀某樣嘢送畀太太？",
+          "yue": "可唔可以幫我揀份嘢送畀太太？",
           "audio": "assets/audio/words/something-pron-md0.mp3",
           "audioSlow": "assets/audio/words/something-pron-md0-slow.mp3",
           "audioTextSha256": "976f4d7effcd7096539e43ee05c0fc2623a6dc850bfbe1a708d9162748482520"
         },
         {
           "en": "This scarf is something she can wear daily.",
-          "yue": "呢條頸巾佢日日都戴得，係某樣實用嘅嘢。",
+          "yue": "呢條頸巾佢日日都戴得。",
           "audio": "assets/audio/words/something-pron-md1.mp3",
           "audioSlow": "assets/audio/words/something-pron-md1-slow.mp3",
           "audioTextSha256": "dfc3a9b34224abbe34732dadeb002cf2e0793504e77732c5a4a542b39fa3c451"
@@ -7740,7 +7740,7 @@
       "arpabet": "R AY1 T",
       "audio": "assets/audio/words/right-adv.mp3",
       "audioSlow": "assets/audio/words/right-adv-slow.mp3",
-      "glossYue": "就係咁；右邊",
+      "glossYue": "正正；右邊",
       "glossZh": "就；右边",
       "jyutping": "zau6",
       "collocations": [
@@ -10321,7 +10321,7 @@
         },
         {
           "en": "Look for the green cross on the sign.",
-          "yue": "我搵綠色十字個招牌。",
+          "yue": "搵個有綠色十字嘅招牌。",
           "audio": "assets/audio/words/left-adv-md1.mp3",
           "audioSlow": "assets/audio/words/left-adv-md1-slow.mp3",
           "audioTextSha256": "b5ffc7ff592e30635bea1300ffcefacb410511eb912b5dae8610eaa12adfe793"
@@ -18167,7 +18167,7 @@
       "miniDialogue": [
         {
           "en": "I am allergic to shellfish, including prawns and crab.",
-          "yue": "我對貝殼類過敏，蝦同蟹都唔食得。",
+          "yue": "我對甲殼類海鮮敏感，蝦同蟹都唔食得。",
           "audio": "assets/audio/words/allergic-adj-md0.mp3",
           "audioSlow": "assets/audio/words/allergic-adj-md0-slow.mp3",
           "audioTextSha256": "b66ac26d994c9fc36d885b251e9f27bbd462cfaf0fc100547528719df6e5bbd0"
@@ -23841,7 +23841,7 @@
       "arpabet": "CH EH1 K",
       "audio": "assets/audio/words/check-noun.mp3",
       "audioSlow": "assets/audio/words/check-noun-slow.mp3",
-      "glossYue": "餐單（埋單）",
+      "glossYue": "張單（埋單）",
       "glossZh": "帳單",
       "jyutping": "caan1 daan1",
       "collocations": [
@@ -28238,7 +28238,7 @@
         "the quiet side"
       ],
       "example": "A quiet room is ready tonight.",
-      "exampleYue": "樓上有間靜啲嘅房。",
+      "exampleYue": "今晚有間靜啲嘅房準備好。",
       "say": "A quiet room is ready tonight.",
       "variants": [],
       "note": "",
@@ -28261,7 +28261,7 @@
       "examples": [
         {
           "en": "A quiet room is ready tonight.",
-          "yue": "樓上有間靜啲嘅房。",
+          "yue": "今晚有間靜啲嘅房準備好。",
           "audio": "assets/audio/words/quiet-adj.mp3",
           "audioSlow": "assets/audio/words/quiet-adj-slow.mp3",
           "say": "A quiet room is ready tonight.",
@@ -28287,7 +28287,7 @@
       "miniDialogue": [
         {
           "en": "A quiet room is ready.",
-          "yue": "樓上有間靜啲嘅房。",
+          "yue": "有間靜啲嘅房準備好。",
           "audio": "assets/audio/words/quiet-adj-md0.mp3",
           "audioSlow": "assets/audio/words/quiet-adj-md0-slow.mp3",
           "audioTextSha256": "2bd5b092a3647c1a5e168fcb70f1d01121118eca93b0d0dc1a1260e1bed6d210"
@@ -29423,7 +29423,7 @@
       "phrase": false,
       "audioSha256": "278e5c3cd219b2fc9f05472724bf067f2ef634feaf5101401b8938d2fab6522e",
       "register": "職場",
-      "usageNotes": "mute 係收細個咪，等其他人聽得清。",
+      "usageNotes": "mute 係將個咪靜音，等其他人聽得清。",
       "pitfallsYue": "",
       "related": [
         "agenda-noun",
@@ -32741,12 +32741,12 @@
           "audioTextSha256": "ee856821ff439d1f3b117f42aec2aecfa549d0405f6fd785a8c18e22f1931c98"
         },
         {
-          "en": "The souvenir shop can stamp this tax refund form.",
-          "yue": "紀念品店可以蓋呢張退稅表。",
+          "en": "We bought a small souvenir for Mei at the airport.",
+          "yue": "我哋喺機場買咗份細細嘅紀念品畀 Mei。",
           "audio": "assets/audio/words/souvenir-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/souvenir-noun-ex2-slow.mp3",
-          "say": "The [[ˌsuvəˈnɪɹ]] shop can stamp this tax refund form.",
-          "audioTextSha256": "0ae0022e8b3d9f8002688104919af9e9114ad2ffda4c8d5d185c8fcf83ebe158"
+          "say": "We bought a small [[ˌsuvəˈnɪɹ]] for Mei at the airport.",
+          "audioTextSha256": "00805f4ff47338c4d79e9186e9526332534f75dcd4366878e41ddbef2abf23b8"
         },
         {
           "en": "We postponed the souvenir shipment.",
@@ -32766,11 +32766,11 @@
           "audioTextSha256": "ee856821ff439d1f3b117f42aec2aecfa549d0405f6fd785a8c18e22f1931c98"
         },
         {
-          "en": "The souvenir shop can stamp this tax refund form.",
-          "yue": "紀念品店可以蓋呢張退稅表。",
+          "en": "Yes, something small for my mother.",
+          "yue": "係呀，想買啲細細件嘅畀媽媽。",
           "audio": "assets/audio/words/souvenir-noun-md1.mp3",
           "audioSlow": "assets/audio/words/souvenir-noun-md1-slow.mp3",
-          "audioTextSha256": "1fcc96d04e6098305cc0fa4270c4d203069c32c62219babc495d1d10c3d052c1"
+          "audioTextSha256": "c1b767164633a5db48a92b7404a7a6ee06cf790193baab159d60031b6bc26fb6"
         }
       ]
     },
@@ -34983,7 +34983,7 @@
         },
         {
           "en": "I need an officer at the desk.",
-          "yue": "我要搵個職員到櫃檯。",
+          "yue": "我要搵個關員嚟櫃檯。",
           "audio": "assets/audio/words/officer-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/officer-noun-ex2-slow.mp3",
           "say": "I need an [[ˈɔfəsɚ]] at the desk.",
@@ -35008,7 +35008,7 @@
         },
         {
           "en": "I need an officer at the desk.",
-          "yue": "我要搵個職員到櫃檯。",
+          "yue": "我要搵個關員嚟櫃檯。",
           "audio": "assets/audio/words/officer-noun-md1.mp3",
           "audioSlow": "assets/audio/words/officer-noun-md1-slow.mp3",
           "audioTextSha256": "2b74dd51f3ed61ddd16eba7fad7de59451d1e7f801fe4ef61b00b91df5d2c2f4"
@@ -52469,12 +52469,12 @@
           "audioTextSha256": "38a648b52c4ccc637e89d696b1dcbf594be6d8ed1f16029b02ddf5e83ee0e792"
         },
         {
-          "en": "The certificate lists the price.",
-          "yue": "證書寫咗價錢。",
+          "en": "The certificate lists the stone and its size.",
+          "yue": "證書寫咗粒石同尺寸。",
           "audio": "assets/audio/words/certificate-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/certificate-noun-ex2-slow.mp3",
-          "say": "The certificate lists the price.",
-          "audioTextSha256": "a51579ced8a12002a348aeae16833440a20ad50258adeed50a626657b13ad8eb"
+          "say": "The certificate lists the stone and its size.",
+          "audioTextSha256": "36e0b8cb930af49aff151adb0773acf2aa394c147077dd17df14aa1e04954443"
         },
         {
           "en": "Keep the pearl certificate with the ring in the red pouch.",
@@ -52487,11 +52487,11 @@
       ],
       "miniDialogue": [
         {
-          "en": "The certificate inside the box lists the stone and the price.",
-          "yue": "盒入面張證書寫低咗寶石同價錢。",
+          "en": "Here's the certificate. It lists the stone and its size.",
+          "yue": "呢張係證書，寫咗粒石同尺寸。",
           "audio": "assets/audio/words/certificate-noun-md0.mp3",
           "audioSlow": "assets/audio/words/certificate-noun-md0-slow.mp3",
-          "audioTextSha256": "6d42e6b0ca1425a7e35faee3b2a04cc8557717136464d048284836f17aef1d95"
+          "audioTextSha256": "960cb9167a8a842e971d9cfa9f070506ea2f4436ae6d1f7ee8b0a9dd2d21f244"
         },
         {
           "en": "Keep that certificate with the ring when you travel.",
@@ -52779,14 +52779,14 @@
       "arpabet": "HH AY1 | CH EH1 R",
       "audio": "assets/audio/words/high-chair-phrase.mp3",
       "audioSlow": "assets/audio/words/high-chair-phrase-slow.mp3",
-      "glossYue": "高腳櫈",
+      "glossYue": "兒童椅（BB櫈）",
       "glossZh": "高腳櫈",
       "jyutping": "gou1 goek3 dang3",
       "collocations": [
         "one high chair"
       ],
       "example": "Could we have one high chair?",
-      "exampleYue": "可唔可以要一張高腳櫈？",
+      "exampleYue": "可唔可以要張兒童椅？",
       "say": "Could we have one high chair?",
       "variants": [],
       "note": "",
@@ -52800,13 +52800,13 @@
       "phrase": true,
       "audioSha256": "1b124b55550f8feed0421eaf62029549355b8d7a24cbb457fdafcda0628499d6",
       "register": "餐廳",
-      "usageNotes": "high chair 係高腳櫈。",
-      "pitfallsYue": "高腳櫈唔係大人櫈。",
+      "usageNotes": "high chair 係畀細路坐嘅高身兒童椅，香港餐廳叫 BB櫈。",
+      "pitfallsYue": "酒吧嗰種大人高凳係 bar stool，唔係 high chair。",
       "related": [],
       "examples": [
         {
           "en": "Could we have one high chair?",
-          "yue": "可唔可以要一張高腳櫈？",
+          "yue": "可唔可以要張兒童椅？",
           "audio": "assets/audio/words/high-chair-phrase.mp3",
           "audioSlow": "assets/audio/words/high-chair-phrase-slow.mp3",
           "say": "Could we have one high chair?",
@@ -52814,7 +52814,7 @@
         },
         {
           "en": "The high chair sits by the window.",
-          "yue": "高腳櫈放喺窗邊。",
+          "yue": "兒童椅放喺窗邊。",
           "audio": "assets/audio/words/high-chair-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/high-chair-phrase-ex2-slow.mp3",
           "say": "The [[ˈhaɪ ˈtʃɛɹ]] sits by the window.",
@@ -52822,7 +52822,7 @@
         },
         {
           "en": "We need a high chair because our toddler cannot sit still.",
-          "yue": "我哋要張高腳櫈，因為細路坐唔定。",
+          "yue": "我哋要張兒童椅，因為細路坐唔定。",
           "audio": "assets/audio/words/high-chair-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/high-chair-phrase-ex3-slow.mp3",
           "say": "We need a [[ˈhaɪ ˈtʃɛɹ]] because our toddler cannot sit still.",
@@ -52832,14 +52832,14 @@
       "miniDialogue": [
         {
           "en": "Could we have one high chair?",
-          "yue": "可唔可以要一張高腳櫈？",
+          "yue": "可唔可以要張兒童椅？",
           "audio": "assets/audio/words/high-chair-phrase-md0.mp3",
           "audioSlow": "assets/audio/words/high-chair-phrase-md0-slow.mp3",
           "audioTextSha256": "2b9f8efb89a9b934d41d6549519a761d5bd434b08f0e5f3761af465eee26aa50"
         },
         {
           "en": "The high chair sits by the window.",
-          "yue": "高腳櫈放喺窗邊。",
+          "yue": "兒童椅放喺窗邊。",
           "audio": "assets/audio/words/high-chair-phrase-md1.mp3",
           "audioSlow": "assets/audio/words/high-chair-phrase-md1-slow.mp3",
           "audioTextSha256": "bd4b308b4e0dadd50129f28b4f8591544974e24758f029a8cc980c6c1ab59feb"
@@ -53245,7 +53245,7 @@
         },
         {
           "en": "Is the tall cup the larger one?",
-          "yue": "中杯其實係細啲嗰杯。",
+          "yue": "中杯係咪大啲嗰杯？",
           "audio": "assets/audio/words/tall-cup-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/tall-cup-phrase-ex2-slow.mp3",
           "say": "Is the [[ˈtɔl ˈkʌp]] the larger one?",
@@ -53270,7 +53270,7 @@
         },
         {
           "en": "Is the tall cup the larger one?",
-          "yue": "中杯其實係細啲嗰杯。",
+          "yue": "中杯係咪大啲嗰杯？",
           "audio": "assets/audio/words/tall-cup-phrase-md1.mp3",
           "audioSlow": "assets/audio/words/tall-cup-phrase-md1-slow.mp3",
           "audioTextSha256": "9731052f6e81ec0327ae7a87bdac1094eb06ae289bec556087818fb569e2e600"
@@ -56834,7 +56834,7 @@
       "arpabet": "AE1 L K AH0 HH AA2 L",
       "audio": "assets/audio/words/alcohol-noun.mp3",
       "audioSlow": "assets/audio/words/alcohol-noun-slow.mp3",
-      "glossYue": "酒精",
+      "glossYue": "酒（酒類）",
       "glossZh": "酒精",
       "jyutping": "zau2 zing1",
       "collocations": [
@@ -56856,7 +56856,7 @@
       "phrase": false,
       "audioSha256": "88ee0120143ac04224279d5122b6d6c91fe34582ce0de049b5e14d1e1d8ccf61",
       "register": "日常",
-      "usageNotes": "酒精。",
+      "usageNotes": "alcohol 喺海關即係酒類。酒精係化學名，唔係飲品。",
       "pitfallsYue": "",
       "related": [
         "allowance-noun"
@@ -56880,7 +56880,7 @@
         },
         {
           "en": "Does this bottle contain alcohol, or is it only fruit juice?",
-          "yue": "呢枝係酒精，定係淨係果汁？",
+          "yue": "呢枝係咪酒，定係淨係果汁？",
           "audio": "assets/audio/words/alcohol-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/alcohol-noun-ex3-slow.mp3",
           "say": "Does this bottle contain alcohol, or is it only fruit juice?",
@@ -56890,14 +56890,14 @@
       "miniDialogue": [
         {
           "en": "This bottle of alcohol is over the duty-free limit.",
-          "yue": "呢樽酒精飲品已經超過免稅限額。",
+          "yue": "呢樽酒已經超過免稅限額。",
           "audio": "assets/audio/words/alcohol-noun-md0.mp3",
           "audioSlow": "assets/audio/words/alcohol-noun-md0-slow.mp3",
           "audioTextSha256": "8ad2eee7d68c1c99710d7ffe54e5e27654b53436ace294b32bd477d5eaa84e3f"
         },
         {
           "en": "You may need to pay duty because the alcohol exceeds the allowance.",
-          "yue": "因為酒精超咗限額，你可能要補稅。",
+          "yue": "因為啲酒超咗限額，你可能要補稅。",
           "audio": "assets/audio/words/alcohol-noun-md1.mp3",
           "audioSlow": "assets/audio/words/alcohol-noun-md1-slow.mp3",
           "audioTextSha256": "c39d472971c5c729b57886928f7ac615f94236dd79f4df262e52cd0fd9b6d652"
@@ -58618,7 +58618,7 @@
         },
         {
           "en": "The hallway noise kept me up.",
-          "yue": "走廊嘈音搞到我。",
+          "yue": "走廊好嘈，搞到我瞓唔着。",
           "audio": "assets/audio/words/noise-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/noise-noun-ex2-slow.mp3",
           "say": "The hallway noise kept me up.",
@@ -58643,7 +58643,7 @@
         },
         {
           "en": "The hallway noise kept me up.",
-          "yue": "走廊嘈音搞到我。",
+          "yue": "走廊好嘈，搞到我瞓唔着。",
           "audio": "assets/audio/words/noise-noun-md1.mp3",
           "audioSlow": "assets/audio/words/noise-noun-md1-slow.mp3",
           "audioTextSha256": "1476e327ade3735174312189ae8e4a68bbaa1b0c76b90cda47cb83bd595d88cb"
@@ -61338,9 +61338,9 @@
         "the carousel",
         "a carousel"
       ],
-      "example": "Where should I take this heavy bag if immigration sits past the carousel doors?",
-      "exampleYue": "如果入境處喺行李轉盤嗰度門後面，我應該將呢件重行李拿到邊？",
-      "say": "Where should I take this heavy bag if immigration sits past the carousel doors?",
+      "example": "After immigration, collect your luggage from carousel three, then go through customs.",
+      "exampleYue": "過咗入境，去三號轉盤攞行李，跟住過海關。",
+      "say": "After immigration, collect your luggage from carousel three, then go through customs.",
       "variants": [],
       "note": "",
       "sources": [
@@ -61352,27 +61352,27 @@
       "senseMismatch": false,
       "cmuLemma": "carousel",
       "phrase": false,
-      "audioSha256": "c31863f279e2c01f8b2b9c76f11d6f2d42f04ad583cf7321e782ae3f994881fa",
+      "audioSha256": "44bd6e5f33503d691627cfa17c91db30a0d2a01dcedb46079e3c122aebece9b5",
       "register": "場景",
       "usageNotes": "呢課用行李轉盤。",
       "pitfallsYue": "",
       "related": [],
       "examples": [
         {
-          "en": "Where should I take this heavy bag if immigration sits past the carousel doors?",
-          "yue": "如果入境處喺行李轉盤嗰度門後面，我應該將呢件重行李拿到邊？",
+          "en": "After immigration, collect your luggage from carousel three, then go through customs.",
+          "yue": "過咗入境，去三號轉盤攞行李，跟住過海關。",
           "audio": "assets/audio/words/carousel-noun.mp3",
           "audioSlow": "assets/audio/words/carousel-noun-slow.mp3",
-          "say": "Where should I take this heavy bag if immigration sits past the carousel doors?",
-          "audioTextSha256": "8d4df6d1ca1152b8a3a34eeac9eda13d28170df1704db7535fd8c69093dbf6cd"
+          "say": "After immigration, collect your luggage from carousel three, then go through customs.",
+          "audioTextSha256": "bcbba3da9de2407987473be72acc9e4b1efa0777ed89daa26a241954c92a79cb"
         },
         {
-          "en": "Please take that heavy bag over to the carousel, and immigration sits past those doors.",
-          "yue": "請將嗰件重行李拿到行李轉盤，入境處就喺嗰度門後面。",
+          "en": "Your bags are on carousel three, just after passport control.",
+          "yue": "你啲行李喺三號轉盤，過咗護照檢查就到。",
           "audio": "assets/audio/words/carousel-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/carousel-noun-ex2-slow.mp3",
-          "say": "Please take that heavy bag over to the carousel, and immigration sits past those doors.",
-          "audioTextSha256": "25547a5ef1928176a82fbb1b36f539d85db1253180125d8a92ec6acd123218dc"
+          "say": "Your bags are on carousel three, just after passport control.",
+          "audioTextSha256": "c2bd7aa0a2a691b7fa827f7051f241b6169991392b4e55634e0f4d3808817904"
         },
         {
           "en": "Which carousel shows flight CX530?",

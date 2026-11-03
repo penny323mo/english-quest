@@ -202,12 +202,12 @@
       "type": "choice",
       "promptYue": "代理講咗月租同按金。你點先答？",
       "choices": [
-        "The deposit is one month, and the rent stays fixed.",
+        "If I decide today, is the deposit one month's rent?",
         "Please hold the other line while I find Mei.",
         "The smaller size fits well."
       ],
       "answer": 0,
-      "explain": "如果今日決定，就講可以簽租約。"
+      "explain": "先問按金係咪一個月租。"
     },
     {
       "type": "order",
@@ -267,7 +267,7 @@
         "expect": "Once you sign the lease, the landlord will give you the keys.",
         "keywords": [
           "lease",
-          "tenant"
+          "landlord"
         ],
         "modelAudio": "assets/audio/lines/d3-l7.mp3",
         "modelSlow": "assets/audio/lines/d3-l7-slow.mp3"

@@ -146,32 +146,29 @@
     {
       "prompt": "The customer is angry because her order arrived a week late. How should I start the reply? 即係問緊咩？",
       "choices": [
-        "關於延誤",
-        "講緊道歉",
-        "唔係誠懇"
+        "唔好，畀兩成部分退款，或者如果佢想要，就畀店內購物金",
+        "客人好嬲，因為佢嘅貨遲咗一個星期先到。我應該點樣開始回覆？",
+        "我哋應唔應該畀佢全額退款？"
       ],
-      "answer": 1,
-      "explain": "道歉。"
+      "answer": 1
     },
     {
       "prompt": "No, offer a partial refund of twenty percent, or store credit if she prefers. 呢句即係點？",
       "choices": [
-        "講緊誠懇",
-        "唔係道歉",
-        "關於延誤"
+        "唔好，畀兩成部分退款，或者如果佢想要，就畀店內購物金",
+        "話我哋聽日會打電話跟進，同埋多謝佢耐心等候",
+        "先誠懇道歉。跟住講延誤出喺我哋倉庫"
       ],
-      "answer": 0,
-      "explain": "誠懇。"
+      "answer": 0
     },
     {
       "prompt": "Say we'll call her tomorrow to follow up, and thank her for her patience. 呢句即係點？",
       "choices": [
-        "唔係道歉",
-        "關於誠懇",
-        "講緊延誤"
+        "我哋應唔應該畀佢全額退款？",
+        "應該畀佢幾多購物金？",
+        "話我哋聽日會打電話跟進，同埋多謝佢耐心等候"
       ],
-      "answer": 2,
-      "explain": "延誤。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -212,14 +209,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「我哋應唔應該畀佢全額退款？」，你點講？",
       "choices": [
         "The customer is angry because her order arrived a week late. How should I start the reply?",
         "Should we offer her a full refund?",
         "How much store credit should we offer her?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",

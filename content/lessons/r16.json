@@ -188,32 +188,29 @@
     {
       "prompt": "What is today's special? Does the chef recommend that dish? 呢句即係點？",
       "choices": [
-        "關於白飯",
-        "講緊特餐",
-        "唔係廚師"
+        "可以。唔辣嗰碟係豆腐，辣嗰碟係蝦",
+        "今日特餐係咩？廚師推唔推薦嗰味？",
+        "可唔可以要一碟辣、一碟唔辣？"
       ],
-      "answer": 1,
-      "explain": "特餐。"
+      "answer": 1
     },
     {
       "prompt": "Can I get one spicy plate and one mild plate, please? 呢句即係點？",
       "choices": [
-        "講緊唔辣",
-        "關於特餐",
-        "唔係白飯"
+        "可唔可以要一碟辣、一碟唔辣？",
+        "加碟白飯大概十五分鐘，廚房而家出",
+        "可唔可以加碟白飯？要幾耐？"
       ],
-      "answer": 0,
-      "explain": "唔辣。"
+      "answer": 0
     },
     {
       "prompt": "Can I add a side of rice? How long will it take? 呢句即係點？",
       "choices": [
-        "關於廚師",
-        "關於特餐",
-        "講緊白飯"
+        "特餐係烤魚。廚師推薦",
+        "可以。唔辣嗰碟係豆腐，辣嗰碟係蝦",
+        "可唔可以加碟白飯？要幾耐？"
       ],
-      "answer": 2,
-      "explain": "白飯。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -254,14 +251,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「可唔可以要一碟辣、一碟唔辣？」，你點講？",
       "choices": [
         "What is today's special? Does the chef recommend that dish?",
         "Can I get one spicy plate and one mild plate, please?",
         "I have a peanut allergy. Can the kitchen keep peanuts off both?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",
@@ -323,9 +320,9 @@
       "type": "meaning",
       "prompt": "What is today's special? Does the chef recommend that dish? 呢句入面，邊個意思先啱？",
       "choices": [
-        "讀（而家／習慣）",
+        "烤魚",
         "特餐",
-        "讀過（過去）"
+        "白飯"
       ],
       "answer": 1
     },
@@ -343,8 +340,8 @@
       "type": "choice",
       "prompt": "What is today's ___? Does the chef recommend that dish? 呢句入面，邊個字先啱？",
       "choices": [
-        "read",
-        "live",
+        "rice",
+        "mild",
         "special"
       ],
       "answer": 2,

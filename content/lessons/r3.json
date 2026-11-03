@@ -35,7 +35,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "I'd like the chicken, please. I need to ask about the sauce.",
-      "glossYue": "我想叫雞，唔該。醬汁我有嘢要問。",
+      "glossYue": "我想要個雞，唔該。醬汁我有嘢想問。",
       "audio": "assets/audio/lines/r3-l1.mp3",
       "audioSlow": "assets/audio/lines/r3-l1-slow.mp3",
       "say": "I'd like the chicken, please. I need to ask about the sauce.",
@@ -134,7 +134,7 @@
       "prompt": "I am allergic to peanuts. 呢句即係點？",
       "choices": [
         "我對花生過敏",
-        "我想叫雞",
+        "我想要個雞",
         "醬好辣"
       ],
       "answer": 0,
@@ -312,13 +312,13 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「We'll check the ingredients and tell you what's in it.」，係咩意思？",
+      "prompt": "店員講「We'll check the ingredients and tell you what's in it.」，係咩意思？",
       "choices": [
-        "辣",
-        "貝類",
-        "麩質"
+        "佢哋會睇吓有咩材料，再話你知",
+        "醬汁好辣",
+        "冇貝類"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "meaning",

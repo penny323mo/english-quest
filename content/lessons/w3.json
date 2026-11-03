@@ -162,7 +162,7 @@
     {
       "pattern": "I'm ___ Mei can't meet this new deadline on Friday.",
       "example": "I'm concerned Mei can't meet this new deadline on Friday.",
-      "glossYue": "我⋯⋯負責人趕唔切。",
+      "glossYue": "我⋯⋯Mei 星期五趕唔切個新期限。",
       "answer": "concerned",
       "choices": [
         "concerned",
@@ -255,7 +255,7 @@
         "expect": "Let's agree on Friday, and she can email us the update.",
         "keywords": [
           "agree",
-          "owner"
+          "friday"
         ],
         "modelAudio": "assets/audio/lines/w3-l5.mp3",
         "modelSlow": "assets/audio/lines/w3-l5-slow.mp3"
@@ -290,7 +290,7 @@
     },
     {
       "type": "listen",
-      "prompt": "聽一次，揀你聽到嘅字：收細個咪",
+      "prompt": "聽一次，揀你聽到嘅字：靜音",
       "lemma": "mute-verb",
       "choices": [
         "mute",

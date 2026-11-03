@@ -27,7 +27,8 @@
     "跟進",
     "會議",
     "問題",
-    "行動"
+    "行動",
+    "工作"
   ],
   "next": "W11",
   "dialogue": [
@@ -178,7 +179,7 @@
     {
       "pattern": "That ___ is mine, and I'll call the client on Friday.",
       "example": "That task is mine, and I'll call the client on Friday.",
-      "glossYue": "呢項行動我負責。",
+      "glossYue": "呢項工作我負責，我星期五會打畀客戶。",
       "answer": "task",
       "choices": [
         "task",
@@ -232,8 +233,8 @@
         "audioSlow": "assets/audio/lines/w8-l2-slow.mp3",
         "expect": "That sample is late, and I'm looking after it.",
         "keywords": [
-          "behind",
-          "schedule"
+          "looking",
+          "sample"
         ],
         "modelAudio": "assets/audio/lines/w8-l3.mp3",
         "modelSlow": "assets/audio/lines/w8-l3-slow.mp3"
@@ -247,7 +248,7 @@
         "expect": "I'll follow up by Friday and email you that day.",
         "keywords": [
           "Friday",
-          "note"
+          "follow"
         ],
         "modelAudio": "assets/audio/lines/w8-l5.mp3",
         "modelSlow": "assets/audio/lines/w8-l5-slow.mp3"
@@ -260,8 +261,8 @@
         "audioSlow": "assets/audio/lines/w8-l6-slow.mp3",
         "expect": "That task is mine, and I'll call the client on Friday.",
         "keywords": [
-          "action",
-          "Friday"
+          "Friday",
+          "client"
         ],
         "modelAudio": "assets/audio/lines/w8-l7.mp3",
         "modelSlow": "assets/audio/lines/w8-l7-slow.mp3"
@@ -305,7 +306,7 @@
       "type": "meaning",
       "prompt": "You say 'That task is mine.' What does task mean?",
       "choices": [
-        "行動",
+        "工作",
         "進度",
         "星期五"
       ],

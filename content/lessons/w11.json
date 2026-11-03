@@ -138,34 +138,31 @@
   ],
   "understand": [
     {
-      "prompt": "Hi Nina, do you have a minute? I think my overtime is missing from this month's payslip. 即係問緊咩？",
+      "prompt": "Hi Nina, do you have a minute? I think my overtime is missing from this month's payslip. 呢句即係點？",
       "choices": [
-        "關於計糧",
-        "講緊糧單",
-        "唔係加班"
+        "明白。計糧截數日係二十五號，所以冇計入",
+        "你好 Nina，得唔得閒？我覺得今個月糧單漏咗我嘅加班",
+        "會，會出喺你四月嘅糧單。稅同強積金都會一齊調整"
       ],
-      "answer": 1,
-      "explain": "糧單。"
+      "answer": 1
     },
     {
       "prompt": "I see. That was after the payroll deadline on the twenty-fifth, so they weren't included. 呢句即係點？",
       "choices": [
-        "講緊加班",
-        "唔係糧單",
-        "關於計糧"
+        "明白。計糧截數日係二十五號，所以冇計入",
+        "你好 Nina，得唔得閒？我覺得今個月糧單漏咗我嘅加班",
+        "會，會出喺你四月嘅糧單。稅同強積金都會一齊調整"
       ],
-      "answer": 0,
-      "explain": "加班。"
+      "answer": 0
     },
     {
       "prompt": "Sure, I'll email you this afternoon. 呢句即係點？",
       "choices": [
-        "唔係糧單",
-        "關於加班",
-        "講緊計糧"
+        "等我查。你三月做咗十二個鐘加班，係咪？",
+        "明白。計糧截數日係二十五號，所以冇計入",
+        "可以，我今日下晝電郵畀你"
       ],
-      "answer": 2,
-      "explain": "計糧。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -206,14 +203,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「係，十二個鐘。我上司二十八號批咗」，你點講？",
       "choices": [
         "Hi Nina, do you have a minute? I think my overtime is missing from this month's payslip.",
         "Yes, twelve hours. My manager approved them on the twenty-eighth.",
         "Oh, OK. Will I get paid for them next month?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",
@@ -328,7 +325,7 @@
         "payslip"
       ],
       "answer": 1,
-      "explain": "糧單。"
+      "explain": "payroll 係計糧。"
     }
   ],
   "shadow": {

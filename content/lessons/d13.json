@@ -188,32 +188,29 @@
     {
       "prompt": "Hi. I've had a bad toothache on the left side since last night. 呢句即係點？",
       "choices": [
-        "關於補牙",
-        "關於牙痛",
-        "關於麻醉"
+        "可以。Ｘ光見到一個小蛀洞，所以補牙應該夠",
+        "你好。由尋晚開始，左邊牙痛得好犀利",
+        "小小補牙就夠。我哋會先喺嗰度打麻醉"
       ],
-      "answer": 1,
-      "explain": "牙痛。"
+      "answer": 1
     },
     {
       "prompt": "Yes. The X-ray shows a small cavity, so a filling should be enough. 呢句即係點？",
       "choices": [
-        "關於Ｘ光",
-        "關於麻醉",
-        "關於牙痛"
+        "可以。Ｘ光見到一個小蛀洞，所以補牙應該夠",
+        "補牙使幾多，下一次幾時？",
+        "你好。由尋晚開始，左邊牙痛得好犀利"
       ],
-      "answer": 0,
-      "explain": "Ｘ光。"
+      "answer": 0
     },
     {
       "prompt": "A small filling is enough. We'll use anaesthetic on that area first. 呢句即係點？",
       "choices": [
-        "關於牙痛",
-        "關於補牙",
-        "關於麻醉"
+        "你好。由尋晚開始，左邊牙痛得好犀利",
+        "痛，一咬就痛。可唔可以照一次Ｘ光？",
+        "小小補牙就夠。我哋會先喺嗰度打麻醉"
       ],
-      "answer": 2,
-      "explain": "麻醉。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -254,14 +251,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「痛，一咬就痛。可唔可以照一次Ｘ光？」，你點講？",
       "choices": [
         "Yes, it hurts when I bite. Could you please take an X-ray?",
         "Is a small filling enough, or do I still need a root canal?",
         "What will the filling cost me, and when is the next visit?"
       ],
       "answer": 0,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",
@@ -318,8 +315,8 @@
         "filling",
         "toothache"
       ],
-      "answer": 1,
-      "lemma": "filling-noun"
+      "answer": 2,
+      "lemma": "toothache-noun"
     },
     {
       "type": "meaning",
