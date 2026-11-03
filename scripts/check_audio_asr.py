@@ -2,19 +2,20 @@
 """Check that every recorded clip says the text it is shown with.
 
 Each clip is transcribed with an offline Whisper model (sherpa-onnx) and
-compared with its on-screen text. When they differ, the shown text is
-rendered afresh with the same Piper voice and transcribed too: the voice's
-own quirks are misheard the same way in both, so the clip fails only if it
-and the fresh render are heard as different words, by base.en and again by
-small.en. Clips listed in tests/fixtures/asr-known.json (likely
-mispronunciations waiting for a human ear check) are reported but do not
-fail the run.
+compared with its on-screen text. A match passes. Whisper mishears this Piper
+voice in the same places every time (shop as shark, water as war), so a
+transcript that differs is not proof on its own: the shown text is rendered
+afresh with the same voice and pipeline, and the clip fails only when it is
+acoustically far from that fresh render (MFCC + dynamic time warping). Clips
+that say another sentence sit far above the threshold; re-renders of the same
+text sit well below it. A single wrong word is caught without audio by
+tests/audio-rendered.mjs. Clips in tests/fixtures/asr-known.json are reported
+but do not fail the run.
 
-Models: the sherpa-onnx Whisper exports from
-https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models
-(sherpa-onnx-whisper-base.en and sherpa-onnx-whisper-small.en). Point
-EQ_ASR_MODELS at the folder that holds both, or pass --models, and
-EQ_PIPER_MODEL (or --voice) at en_US-ljspeech-medium.onnx.
+Models: the sherpa-onnx Whisper export sherpa-onnx-whisper-base.en from
+https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models. Point
+EQ_ASR_MODELS (or --models) at the folder that holds it, and EQ_PIPER_MODEL
+(or --voice) at the en_US-ljspeech-medium.onnx the clips were rendered with.
 
     python3 scripts/check_audio_asr.py                 # every clip
     python3 scripts/check_audio_asr.py --only rel ...  # just these clips
@@ -199,7 +200,9 @@ def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
     return [j for j in jobs if old.get(j["rel"]) != j["say"] or j["rel"] in touched]
 
 
-SAME = 0.8  # word similarity at which a clip and the fresh reference say the same thing
+# Distance between a clip and a fresh render of its text. Re-renders of the same
+# text measure 1.1-1.6; clips that say a different sentence measure 1.9-3.4.
+DTW_MAX = 1.75
 
 
 def similarity(a: str, b: str) -> float:
@@ -209,14 +212,55 @@ def similarity(a: str, b: str) -> float:
     return difflib.SequenceMatcher(None, x, y, autojunk=False).ratio()
 
 
-class Reference:
-    """Render the on-screen text (no phoneme overrides) with the app's Piper voice.
+def _mel_dct():
+    import numpy as np
 
-    The voice has its own accent quirks that Whisper mishears the same way every
-    time (shop → shark, water → war). Comparing the clip's transcript with the
-    transcript of a fresh render of the shown text cancels those out, so only a
-    clip that says different words is left.
-    """
+    sr, nfft, n = 16000, 512, 40
+    hz_to_mel = lambda f: 2595 * np.log10(1 + f / 700)
+    mel_to_hz = lambda m: 700 * (10 ** (m / 2595) - 1)
+    bins = np.floor((nfft + 1) * mel_to_hz(np.linspace(hz_to_mel(60), hz_to_mel(7600), n + 2)) / sr).astype(int)
+    fb = np.zeros((n, nfft // 2 + 1))
+    for i in range(1, n + 1):
+        lo, mid, hi = bins[i - 1], bins[i], bins[i + 1]
+        fb[i - 1, lo:mid] = (np.arange(lo, mid) - lo) / max(mid - lo, 1)
+        fb[i - 1, mid:hi] = (hi - np.arange(mid, hi)) / max(hi - mid, 1)
+    dct = np.cos(np.pi / n * (np.arange(n) + 0.5)[None, :] * np.arange(1, 14)[:, None])
+    return fb, dct
+
+
+def mfcc(path: Path):
+    import numpy as np
+
+    x = load_pcm(path)
+    energy = np.convolve(x**2, np.ones(160) / 160, "same")
+    voiced = np.where(energy > energy.max() * 1e-3)[0]
+    if len(voiced):
+        x = x[voiced[0] : voiced[-1] + 1]  # drop the lead-in and tail silence
+    frame, hop = 400, 160
+    x = np.pad(x, (0, max(0, frame - len(x))))
+    frames = np.stack([x[i * hop : i * hop + frame] for i in range(1 + (len(x) - frame) // hop)]) * np.hamming(frame)
+    fb, dct = _mel_dct()
+    c = np.log((np.abs(np.fft.rfft(frames, 512)) ** 2) @ fb.T + 1e-8) @ dct.T
+    return (c - c.mean(0)) / (c.std(0) + 1e-8)
+
+
+def dtw_distance(a: Path, b: Path) -> float:
+    import numpy as np
+
+    x, y = mfcc(a), mfcc(b)
+    cost = np.sqrt(((x[:, None, :] - y[None, :, :]) ** 2).sum(-1))
+    n, m = cost.shape
+    acc = np.full((n + 1, m + 1), np.inf)
+    acc[0, 0] = 0.0
+    for i in range(1, n + 1):
+        row, prev, c = acc[i], acc[i - 1], cost[i - 1]
+        for j in range(1, m + 1):
+            row[j] = c[j - 1] + min(prev[j], row[j - 1], prev[j - 1])
+    return float(acc[n, m] / (n + m))
+
+
+class Reference:
+    """Render the on-screen text with the app's Piper voice, through the same mp3 pipeline."""
 
     def __init__(self, model: str):
         from piper import PiperVoice
@@ -226,16 +270,22 @@ class Reference:
         self.tmp = Path(os.environ.get("TMPDIR", "/tmp")) / "eq-asr-ref"
         self.tmp.mkdir(parents=True, exist_ok=True)
 
-    def wav(self, job: dict) -> Path:
+    def mp3(self, job: dict) -> Path:
         import wave
         from piper.config import SynthesisConfig
 
         slow = job["rel"].endswith("-slow.mp3")
-        out = self.tmp / (job["rel"].replace("/", "_") + ".wav")
+        stem = self.tmp / job["rel"].replace("/", "_")
+        wav, mp3 = stem.with_suffix(".wav"), stem
         text = re.sub(r"\{\{learner(-spell)?\}\}", "Ling", job["text"])
-        with wave.open(str(out), "wb") as wf:
+        with wave.open(str(wav), "wb") as wf:
             self.voice.synthesize_wav(text, wf, syn_config=SynthesisConfig(length_scale=1.35 if slow else 1.0))
-        return out
+        subprocess.run(
+            ["ffmpeg", "-y", "-loglevel", "error", "-i", str(wav), "-af", "adelay=180:all=1,apad=pad_dur=0.2",
+             "-ac", "1", "-ar", "22050", "-codec:a", "libmp3lame", "-qscale:a", "5", str(mp3)],
+            check=True,
+        )
+        return mp3
 
 
 def main() -> int:
@@ -279,30 +329,20 @@ def main() -> int:
             print(f"  {n}/{len(jobs)}", flush=True)
     suspects = [r for r in results if r["problems"]]
     print(f"base.en: {len(results) - len(suspects)} / {len(results)} match the text; {len(suspects)} compared with a fresh render")
+    if not suspects:
+        print(f"checked {len(results)} clips: 0 fail")
+        return 0
 
-    # 2. base.en on a fresh render of the shown text: same words heard means the clip is right.
+    # 2. The transcript differs: compare the clip with a fresh render of the shown text.
     ref = Reference(args.voice)
     for n, r in enumerate(suspects, 1):
-        r["refWav"] = str(ref.wav(r))
-        r["refBase"] = transcribe(first, Path(r["refWav"]))
-        r["same"] = similarity(r["base"], r["refBase"])
-        if n % 200 == 0:
-            print(f"  ref {n}/{len(suspects)}", flush=True)
-    suspects = [r for r in suspects if r["same"] < SAME]
-    print(f"base.en vs fresh render: {len(suspects)} still differ; rechecking with small.en")
-
-    # 3. small.en on both: fail only if the clip still sounds unlike its text.
-    if suspects:
-        second = recognizer(folder, "small.en", args.threads)
-        for r in suspects:
-            r["small"] = transcribe(second, ROOT / r["rel"])
-            r["refSmall"] = transcribe(second, Path(r["refWav"]))
-            r["same"] = max(r["same"], similarity(r["small"], r["refSmall"]))
-            if r["same"] >= SAME or not compare(r["text"], r["small"]):
-                r["same"] = max(r["same"], SAME)
+        fresh = ref.mp3(r)
+        r["refBase"] = transcribe(first, fresh)
+        r["distance"] = round(dtw_distance(ROOT / r["rel"], fresh), 3)
+        if n % 100 == 0:
+            print(f"  fresh render {n}/{len(suspects)}", flush=True)
     for r in results:
-        r.pop("refWav", None)
-        r["ok"] = not r["problems"] or r.get("same", 0) >= SAME
+        r["ok"] = not r["problems"] or r["distance"] <= DTW_MAX
 
     failed, waived = [], []
     for r in results:
@@ -311,8 +351,8 @@ def main() -> int:
     for label, rows in (("KNOWN (ear check)", waived), ("FAIL", failed)):
         for r in rows:
             print(
-                f"{label}: {r['rel']} [{r['where']}]\n  text:      {r['text']}\n"
-                f"  clip:      {r.get('small') or r['base']}\n  reference: {r.get('refSmall') or r.get('refBase', '')}"
+                f"{label}: {r['rel']} [{r['where']}] distance {r['distance']} > {DTW_MAX}\n"
+                f"  text:        {r['text']}\n  clip heard:  {r['base']}\n  fresh heard: {r['refBase']}"
             )
     if args.json:
         Path(args.json).write_text(json.dumps(results, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

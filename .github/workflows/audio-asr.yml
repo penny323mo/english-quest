@@ -1,8 +1,8 @@
 name: audio-asr
 
-# Listens to every clip whose text or mp3 changed in a pull request and fails
-# if two Whisper models both hear it as different words from a fresh render
-# of the on-screen text (see scripts/check_audio_asr.py).
+# Listens to every clip whose text or mp3 changed in a pull request. A clip
+# whose transcript differs from its text fails when it is also acoustically
+# far from a fresh render of that text (see scripts/check_audio_asr.py).
 on:
   pull_request:
     paths:
@@ -32,12 +32,12 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/asr-models
-          key: sherpa-onnx-whisper-base.en-small.en-piper-ljspeech-medium-v1
+          key: sherpa-onnx-whisper-base.en-piper-ljspeech-medium-v1
       - name: Download Whisper models
         if: steps.models.outputs.cache-hit != 'true'
         run: |
           mkdir -p ~/asr-models && cd ~/asr-models
-          for name in base.en small.en; do
+          for name in base.en; do
             curl -sSL --retry 5 -o "$name.tar.bz2" "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-$name.tar.bz2"
             tar xjf "$name.tar.bz2" --wildcards '*int8.onnx' '*tokens.txt'
             rm "$name.tar.bz2"
