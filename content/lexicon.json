@@ -10363,11 +10363,11 @@
       "audioSha256": "a1a5af92790c59384920d9984f5e36772c050cab6a1ea34afee77cce6e951b2a",
       "miniDialogue": [
         {
-          "en": "Take the lift beside the bookshop.",
-          "yue": "搭書店隔離部升降機。",
+          "en": "Take the lift to the fifth floor.",
+          "yue": "搭升降機上五樓。",
           "audio": "assets/audio/words/lift-noun-md0.mp3",
           "audioSlow": "assets/audio/words/lift-noun-md0-slow.mp3",
-          "audioTextSha256": "0ca5cc187eb95bee9084d6a50d72ca0f44b28f010849702df9a8c5577fe71793"
+          "audioTextSha256": "7fd6057d52b162f781c0a039fddcc26a9e0a315664211606d0e2f64bf14f64c3"
         },
         {
           "en": "I see the lift. Say lift, not left.",
@@ -18328,7 +18328,7 @@
         },
         {
           "en": "I'm allergic to shellfish, so no prawns, please.",
-          "yue": "我對蝦蟹貝類過敏，唔該唔好落蝦。",
+          "yue": "我對甲殼類海鮮過敏，唔該唔好落蝦。",
           "audio": "assets/audio/words/shellfish-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/shellfish-noun-ex3-slow.mp3",
           "audioTextSha256": "c86f6a82dcbd7e5d493f9259d9299976fdd7e77458e49658d41af4151a84646a"
@@ -20174,12 +20174,11 @@
           "audioTextSha256": "a94d33ee8e931f4f1e186e87e40bb642b6f1b79277ea375d011d14d3df8da2a8"
         },
         {
-          "en": "Take the elevator to the fifth floor and turn left.",
-          "yue": "搭升降機上五樓再轉左。",
+          "en": "Is there an elevator, or do we have to take the stairs?",
+          "yue": "有冇升降機？定係要行樓梯？",
           "audio": "assets/audio/words/elevator-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/elevator-noun-ex3-slow.mp3",
-          "say": "Take the [[ˈɛləˌveɪtɚ]] to the fifth floor and turn left.",
-          "audioTextSha256": "c75ed18b6abde8907bc1aa3ac0962928dbcb1e789e1e2abec6b45278693ba391"
+          "audioTextSha256": "317d4e205bdf35ce6bee3b0557133e2c0f1806a297ecfe7eb21ebd050addc327"
         }
       ],
       "miniDialogue": [
@@ -25793,11 +25792,11 @@
           "audioTextSha256": "ab306a70705e65816e4f1362e1e59d424c8033af833bbf466c62750239308c5f"
         },
         {
-          "en": "I'm calling regarding my appointment on Monday.",
-          "yue": "我打嚟係關於我星期一個預約。",
+          "en": "I'm writing regarding your invoice from March.",
+          "yue": "我寫信嚟係關於你三月嗰張發票。",
           "audio": "assets/audio/words/regarding-prep-ex3.mp3",
           "audioSlow": "assets/audio/words/regarding-prep-ex3-slow.mp3",
-          "audioTextSha256": "3801a85efcd70433979b0832467331184ad7135beb76db12593ee891afba94af"
+          "audioTextSha256": "def846a494b6f84eec5f2a7d42ed522f649bc2807afbfdf26bd3f919748dd14f"
         }
       ],
       "miniDialogue": [
@@ -52658,7 +52657,7 @@
       "audio": "assets/audio/words/high-chair-phrase.mp3",
       "audioSlow": "assets/audio/words/high-chair-phrase-slow.mp3",
       "glossYue": "兒童椅（BB櫈）",
-      "glossZh": "高腳櫈",
+      "glossZh": "兒童椅",
       "jyutping": "gou1 goek3 dang3",
       "collocations": [
         "one high chair"
