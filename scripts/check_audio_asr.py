@@ -128,6 +128,8 @@ def clips() -> list[dict]:
         if not rel or rel in seen:
             return
         seen.add(rel)
+        if "{{learner" in say:
+            return  # the device voice speaks the learner's name (web/src/learner.ts needsRuntimeSpeech)
         out.append({"rel": rel, "text": shown, "say": say, "where": where})
 
     for item in lex["items"]:
@@ -138,6 +140,8 @@ def clips() -> list[dict]:
             rel = turn.get("audio") or f"assets/audio/words/{item['id']}-md{i}.mp3"
             add(rel, turn["en"], render_text(turn), f"{item['id']} md{i}")
     for line in lines:
+        if line.get("runtimeTts"):
+            continue  # the device voice speaks this line
         add(line["audio"], line["text"], line["say"], line["id"])
     return out
 
@@ -200,9 +204,11 @@ def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
     return [j for j in jobs if old.get(j["rel"]) != j["say"] or j["rel"] in touched]
 
 
-# Distance between a clip and a fresh render of its text. Re-renders of the same
-# text measure 1.1-1.6; clips that say a different sentence measure 1.9-3.4.
-DTW_MAX = 1.75
+# Distance between a clip and a fresh render of its text. Over all 4,227 clips,
+# re-renders of the same text measured 1.1-1.75; clips that said a different
+# sentence measured 1.9-3.4. Clips whose say forces phonemes (a table for two)
+# can sit above the line too; those are listed in tests/fixtures/asr-known.json.
+DTW_MAX = 1.8
 
 
 def similarity(a: str, b: str) -> float:

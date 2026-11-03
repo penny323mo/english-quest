@@ -22,6 +22,8 @@ Play the clips from `assets/audio/` (each also has a `-slow.mp3` twin).
 | ☐ | **Saturday** | "so the day", "set a date" | `words/saturday-noun.mp3`, `words/cake-noun-ex2.mp3`, `lines/j15-l4.mp3`, `lines/j22-l1.mp3`, `lines/r14-l5.mp3` | the `[[ˈsætɚdi]]` override is right on paper; listen |
 | ☐ | **forty / eighty dollars** | "four dollars", "eight dollars": 40/4 and 80/8 may be confused | `words/labour-noun.mp3`, `words/roughly-adv-ex2.mp3`, `words/rush-noun-ex2.mp3`, `words/how-much-phrase-md1.mp3`, `lines/j13-l5.mp3`, `lines/j20-l4.mp3`, `lines/d7-l5.mp3`, `lines/j18-l2.mp3` | stress the "-ty" in the slow clip |
 | ☐ | **a table for two** (weak forms) | "or table food to please", "by table 32" | `words/table-for-two-phrase.mp3`, `words/table-noun.mp3`, `words/two-num.mp3`, `words/a-art.mp3`, `lines/r1-l2.mp3` | the `[[ə ˈteɪbəl fɚ ˈtu]]` override may reduce "for two" too far for beginners; consider /fɔɹ/ in the slow clip |
+| ☐ | **sir** | "Yes, sit" (a fresh render without the override is heard as "sir") | `words/sir-noun.mp3` | check the `[[sˈɝ]]` override |
+| ☐ | **late checkout** | "a lit itch account" (fine without the override) | `words/late-checkout-phrase.mp3` | check the `[[ˈleɪt ˈtʃɛkˌaʊt]]` override |
 | ☐ | **for here or to go** | "Harrow to Bell", "her roar to go" | `lines/r13-l4.mp3` | check the `[[tə ˈɡoʊ]]` weak form |
 | ☐ | **salesperson / invoice / watch** | "I wore pairs of sails", "I'm Nian Inbois", "A March in a Ring" | `words/salesperson-noun.mp3`, `words/invoice-noun.mp3`, `words/invoice-noun-md0.mp3`, `words/watch-noun.mp3` | re-render, or override |
 | ☐ | **shop / box / top** | "sharp", "barks", "tarp": long American /ɑ/ heard as British "ar" | many clips, e.g. `words/job-noun.mp3`, `words/gift-box-phrase.mp3` | probably fine (normal US vowel); note only |
@@ -46,8 +48,16 @@ A teacher should confirm before anything changes.
 ## How the check was run
 
 `scripts/check_audio_asr.py` (also `npm run audio:check`) transcribed all 4,227
-clips. 2,304 matched their text straight away. For the rest, the shown text was
-rendered again with the same voice and both versions were transcribed. 148
-clips were heard as different words and were re-rendered in this PR. The
-mishearings in the table above are shared by the clip and the fresh render,
-which points to the voice rather than to a stale clip.
+recorded clips with Whisper base.en. 2,355 matched their text outright. For the
+other 1,872, the shown text was rendered again with the same voice, and the
+clip was compared with that fresh render acoustically (MFCC + dynamic time
+warping). Before this PR, 148 clips voiced a different sentence or had text
+that changed; they were re-rendered. After it, only the three override clips
+in `tests/fixtures/asr-known.json` (a table for two, sir, late checkout) stand
+out, and they are listed above. The mishearings in the table are shared by the
+clip and the fresh render, which points to the voice rather than to a stale
+clip.
+
+Lines with `{{learner}}` and `runtimeTts` lines are spoken by the device voice
+at runtime, so their mp3s are not checked. f5-l4.mp3 was stale (the audit
+heard "…my email is linked sharp") and was re-rendered anyway.
