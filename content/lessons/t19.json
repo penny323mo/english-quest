@@ -95,22 +95,22 @@
       "id": "t19-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can that new room face the harbor instead of the street?",
+      "text": "Can that new room face the harbour instead of the street?",
       "glossYue": "新房間可唔可以望海港，唔好望街？",
       "audio": "assets/audio/lines/t19-l5.mp3",
       "audioSlow": "assets/audio/lines/t19-l5-slow.mp3",
-      "say": "Can that new room face the harbor instead of the street?",
+      "say": "Can that new room face the harbour instead of the street?",
       "hideGloss": false
     },
     {
       "id": "t19-l6",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "The harbor suite is ready, and I can move your bag there.",
+      "text": "The harbour suite is ready, and I can move your bag there.",
       "glossYue": "海港套房準備好，我可以幫你搬行李。",
       "audio": "assets/audio/lines/t19-l6.mp3",
       "audioSlow": "assets/audio/lines/t19-l6-slow.mp3",
-      "say": "The harbor suite is ready, and I can move your bag there.",
+      "say": "The harbour suite is ready, and I can move your bag there.",
       "hideGloss": false
     },
     {
@@ -128,11 +128,11 @@
       "id": "t19-l8",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Maintenance finishes at noon, and we'll keep the harbor room for you.",
+      "text": "Maintenance finishes at noon, and we'll keep the harbour room for you.",
       "glossYue": "維修中午做完，海港嗰間房會留畀你。",
       "audio": "assets/audio/lines/t19-l8.mp3",
       "audioSlow": "assets/audio/lines/t19-l8-slow.mp3",
-      "say": "Maintenance finishes at noon, and we'll keep the harbor room for you.",
+      "say": "Maintenance finishes at noon, and we'll keep the harbour room for you.",
       "hideGloss": false
     }
   ],
@@ -160,7 +160,7 @@
         "line": "There's a quieter room upstairs, away from the hallway.",
         "audio": "assets/audio/lines/t19-l4.mp3",
         "audioSlow": "assets/audio/lines/t19-l4-slow.mp3",
-        "expect": "Can that new room face the harbor instead of the street?",
+        "expect": "Can that new room face the harbour instead of the street?",
         "keywords": [
           "room",
           "face"
@@ -171,7 +171,7 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "The harbor suite is ready, and I can move your bag there.",
+        "line": "The harbour suite is ready, and I can move your bag there.",
         "audio": "assets/audio/lines/t19-l6.mp3",
         "audioSlow": "assets/audio/lines/t19-l6-slow.mp3",
         "expect": "What time will maintenance finish if I keep this suite?",
@@ -258,7 +258,7 @@
       "choices": [
         "The noise in the hallway kept me awake all night.",
         "Could I move to a quieter suite if the hallway stays this loud?",
-        "Can that new room face the harbor instead of the street?"
+        "Can that new room face the harbour instead of the street?"
       ],
       "answer": 1,
       "explain": "揀意思對得上嗰句。"
@@ -274,7 +274,7 @@
         "noon,",
         "and",
         "the",
-        "harbor",
+        "harbour",
         "room",
         "stays",
         "held."
@@ -287,7 +287,7 @@
         "noon,",
         "and",
         "the",
-        "harbor",
+        "harbour",
         "room",
         "stays",
         "held."
