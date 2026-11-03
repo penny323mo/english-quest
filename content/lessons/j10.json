@@ -242,8 +242,8 @@
         "audioSlow": "assets/audio/lines/j10-l2-slow.mp3",
         "expect": "Yes. The earrings match. You don't have to take them.",
         "keywords": [
-          "optional",
-          "engraving"
+          "earrings",
+          "match"
         ],
         "modelAudio": "assets/audio/lines/j10-l3.mp3",
         "modelSlow": "assets/audio/lines/j10-l3-slow.mp3"
@@ -270,8 +270,8 @@
         "audioSlow": "assets/audio/lines/j10-l6-slow.mp3",
         "expect": "If you prefer this necklace, the chain matches. The box is ready.",
         "keywords": [
-          "matching",
-          "pair"
+          "necklace",
+          "matches"
         ],
         "modelAudio": "assets/audio/lines/j10-l7.mp3",
         "modelSlow": "assets/audio/lines/j10-l7-slow.mp3"

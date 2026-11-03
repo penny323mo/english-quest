@@ -187,32 +187,29 @@
     {
       "prompt": "My tracking number is HK four eight two. Can I collect this parcel? 呢句即係點？",
       "choices": [
-        "關於簽名",
-        "講緊包裹",
-        "唔係損壞"
+        "可以。因為個箱裂開咗，我會記低損壞",
+        "我嘅追蹤號碼係 HK 四八二。可唔可以攞呢個包裹？",
+        "個箱呢隻角睇落損壞咗。可唔可以記低損壞？"
       ],
-      "answer": 1,
-      "explain": "包裹。"
+      "answer": 1
     },
     {
       "prompt": "This corner of the box looks damaged. Can you note the damage? 呢句即係點？",
       "choices": [
-        "講緊損壞",
-        "關於包裹",
-        "唔係簽名"
+        "個箱呢隻角睇落損壞咗。可唔可以記低損壞？",
+        "請喺呢行簽名。之後個箱就係你嘅",
+        "可以。追蹤號碼同包裹吻合。請出示身份證"
       ],
-      "answer": 0,
-      "explain": "損壞。"
+      "answer": 0
     },
     {
       "prompt": "Where do I sign my name for the box before I leave? 呢句即係點？",
       "choices": [
-        "關於包裹",
-        "關於損壞",
-        "講緊簽名"
+        "可以。追蹤號碼同包裹吻合。請出示身份證",
+        "我嘅追蹤號碼係 HK 四八二。可唔可以攞呢個包裹？",
+        "我走之前喺邊度簽名收呢個箱？"
       ],
-      "answer": 2,
-      "explain": "簽名。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -253,14 +250,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「呢張係我身份證。使唔使再畀海關費用？」，你點講？",
       "choices": [
         "My tracking number is HK four eight two. Can I collect this parcel?",
         "Here is my identity card. Do I also pay a customs fee?",
         "This corner of the box looks damaged. Can you note the damage?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",

@@ -148,8 +148,8 @@
         "audioSlow": "assets/audio/lines/w13-l2-slow.mp3",
         "expect": "What's holding up the logo for that review?",
         "keywords": [
-          "blocker",
-          "logo"
+          "logo",
+          "holding"
         ],
         "modelAudio": "assets/audio/lines/w13-l3.mp3",
         "modelSlow": "assets/audio/lines/w13-l3-slow.mp3"
@@ -188,32 +188,29 @@
     {
       "prompt": "Could you tell me how the design draft is going for the client milestone? 呢句即係點？",
       "choices": [
-        "關於阻礙",
-        "講緊草稿",
-        "唔係里程碑"
+        "個標誌到咗我就會講嗰份投影片",
+        "可唔可以話我知，客戶里程碑嗰份設計草稿去到邊？",
+        "如果標誌遲一日先到，邊個講投影片？"
       ],
-      "answer": 1,
-      "explain": "草稿。"
+      "answer": 1
     },
     {
       "prompt": "The studio still hasn't sent the logo. 呢句即係點？",
       "choices": [
-        "講緊阻礙",
-        "關於草稿",
-        "唔係投影片"
+        "設計公司仲未交到個標誌",
+        "如果仲未解決，里程碑可唔可以改到星期五？",
+        "可唔可以話我知，客戶里程碑嗰份設計草稿去到邊？"
       ],
-      "answer": 0,
-      "explain": "阻礙。"
+      "answer": 0
     },
     {
       "prompt": "Friday at three still works, and the milestone moves to that day. 呢句即係點？",
       "choices": [
-        "唔係草稿",
-        "關於阻礙",
-        "講緊里程碑"
+        "如果標誌遲一日先到，邊個講投影片？",
+        "設計草稿做咗一半，星期三會做客戶審核",
+        "星期五三點都得，里程碑改到嗰日"
       ],
-      "answer": 2,
-      "explain": "里程碑。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -254,14 +251,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「咩拖住個標誌，影響嗰次審核？」，你點講？",
       "choices": [
         "Could you tell me how the design draft is going for the client milestone?",
         "What's holding up the logo for that review?",
         "Who will present the slide deck if the logo arrives one day late?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",

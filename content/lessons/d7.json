@@ -59,7 +59,7 @@
       "speaker": "beau",
       "speakerLabel": "Beau",
       "text": "Yes, please make both sides shorter for this trim.",
-      "glossYue": "好，兩邊剪短，呢次係剪髮。",
+      "glossYue": "好，兩邊剪短啲，唔該。",
       "audio": "assets/audio/lines/d7-l3.mp3",
       "audioSlow": "assets/audio/lines/d7-l3-slow.mp3",
       "say": "Yes, please make both sides shorter for this trim.",
@@ -157,7 +157,7 @@
     {
       "pattern": "I would like a simple ___, and keep a light fringe.",
       "example": "I would like a simple trim, and keep a light fringe.",
-      "glossYue": "我想修短少少。",
+      "glossYue": "我想簡單修一修，留薄薄嘅瀏海。",
       "answer": "trim",
       "choices": [
         "trim",
@@ -168,7 +168,7 @@
     {
       "pattern": "It's eighty dollars in total, and the price covers the ___.",
       "example": "It's eighty dollars in total, and the price covers the blow dry.",
-      "glossYue": "價錢包吹乾。",
+      "glossYue": "總共八十蚊，包埋吹乾。",
       "answer": "blow dry",
       "choices": [
         "blow dry",
@@ -195,7 +195,7 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你問價錢包唔包吹乾。你點講？",
+      "promptYue": "你想問喺度洗頭幾多錢。你點講？",
       "choices": [
         "How much is it if you wash my hair here?",
         "Is it cheaper if I book my next short visit?",

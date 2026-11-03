@@ -29,7 +29,7 @@
       "speaker": "kim",
       "speakerLabel": "Kim",
       "text": "Good evening, this is Kim at the front desk. How may I help tonight?",
-      "glossYue": "晚安，我係前台 Kim。今晚有咩可以幫你？",
+      "glossYue": "你好，我係前台 Kim。今晚有咩可以幫到你？",
       "audio": "assets/audio/lines/t6-l1.mp3",
       "audioSlow": "assets/audio/lines/t6-l1-slow.mp3",
       "say": "Good evening, this is Kim at the front desk. How may I help tonight?",
@@ -240,8 +240,8 @@
         "audioSlow": "assets/audio/lines/t6-l2-slow.mp3",
         "expect": "I'm sorry about that. I can send an engineer up.",
         "keywords": [
-          "inconvenience",
-          "engineer"
+          "engineer",
+          "sorry"
         ],
         "modelAudio": "assets/audio/lines/t6-l3.mp3",
         "modelSlow": "assets/audio/lines/t6-l3-slow.mp3"
@@ -255,7 +255,7 @@
         "expect": "A quieter room is free upstairs, and I'll bring the towels up now.",
         "keywords": [
           "towel",
-          "blanket"
+          "upstairs"
         ],
         "modelAudio": "assets/audio/lines/t6-l5.mp3",
         "modelSlow": "assets/audio/lines/t6-l5-slow.mp3"

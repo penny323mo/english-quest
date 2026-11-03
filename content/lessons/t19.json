@@ -254,14 +254,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「走廊如果仲大聲，可唔可以搬去靜啲嘅套房？」，你點講？",
       "choices": [
         "The noise in the hallway kept me awake all night.",
         "Could I move to a quieter suite if the hallway stays this loud?",
         "Can that new room face the harbor instead of the street?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",

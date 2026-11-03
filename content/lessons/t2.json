@@ -78,7 +78,7 @@
       "speaker": "sam",
       "speakerLabel": "Sam",
       "text": "Straight ahead. Your gate is on the left, just after the shops.",
-      "glossYue": "直行。閘口就喺商店後面左邊。",
+      "glossYue": "直行。過咗啲店舖，閘口就喺左手邊。",
       "audio": "assets/audio/lines/t2-l5.mp3",
       "audioSlow": "assets/audio/lines/t2-l5-slow.mp3",
       "say": "Straight ahead. Your gate is on the left, just after the shops."
@@ -89,7 +89,7 @@
       "prompt": "Please put your liquids in the tray. 係叫你？",
       "choices": [
         "將液體放喺個盤",
-        "叫雞",
+        "點餐",
         "訂位"
       ],
       "answer": 0,
@@ -278,7 +278,7 @@
       "choices": [
         "直行就得",
         "請跟我嚟",
-        "我想叫雞"
+        "我想點餐"
       ],
       "answer": 0
     },

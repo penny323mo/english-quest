@@ -169,7 +169,7 @@
     {
       "pattern": "Would you like oat milk in the iced ___?",
       "example": "Would you like oat milk in the iced latte?",
-      "glossYue": "冰拿鐵要唔要燕麥奶？",
+      "glossYue": "凍拿鐵要唔要燕麥奶？",
       "answer": "latte",
       "choices": [
         "latte",
@@ -196,14 +196,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你要凍拿鐵，用燕麥奶。你點講？",
+      "promptYue": "Mira 問你要唔要燕麥奶。你點答？",
       "choices": [
-        "Yes, please use oat milk, and put the name Cleo on the cup.",
+        "Yes, oat milk, please. The name is Cleo.",
         "Iced, please. I'd like the small size.",
-        "To go, please. Keep the small size."
+        "To go, please. Keep the small size for me, thanks."
       ],
       "answer": 0,
-      "explain": "講 oat milk 同 name。"
+      "explain": "講 oat milk，再報個名。"
     },
     {
       "type": "order",
@@ -294,11 +294,11 @@
     },
     {
       "type": "meaning",
-      "prompt": "You say 'Please use oat milk in the latte.' What does oat milk mean?",
+      "prompt": "You say 'Yes, oat milk, please.' What does oat milk mean?",
       "choices": [
         "拎走",
         "名字",
-        "燕麥"
+        "燕麥奶"
       ],
       "answer": 2
     },

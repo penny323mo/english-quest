@@ -255,8 +255,8 @@
         "audioSlow": "assets/audio/lines/w2-l4-slow.mp3",
         "expect": "Can we make Friday the new deadline?",
         "keywords": [
-          "propose",
-          "confirm"
+          "deadline",
+          "friday"
         ],
         "modelAudio": "assets/audio/lines/w2-l5.mp3",
         "modelSlow": "assets/audio/lines/w2-l5-slow.mp3"
@@ -269,8 +269,8 @@
         "audioSlow": "assets/audio/lines/w2-l6-slow.mp3",
         "expect": "Thanks for the quick reply. I'll confirm Friday's deadline in writing.",
         "keywords": [
-          "grateful",
-          "deadline"
+          "deadline",
+          "friday's"
         ],
         "modelAudio": "assets/audio/lines/w2-l7.mp3",
         "modelSlow": "assets/audio/lines/w2-l7-slow.mp3"
@@ -312,13 +312,13 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Thanks for the quick reply. I'll confirm Friday's deadline in writing.」，grateful 係咩意思？",
+      "prompt": "客人講「Thanks for the quick reply. I'll confirm Friday's deadline in writing.」，deadline 係咩意思？",
       "choices": [
         "期限",
         "確認",
         "感激"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "choice",

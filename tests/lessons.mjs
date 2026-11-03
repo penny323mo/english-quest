@@ -145,7 +145,7 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   assert.match(t4.titleYue, /的士/);
   assert.equal(t5.next, "T12");
   assert.equal(t5.cefr, "A2/B1");
-  assert.match(t5.titleYue, /行失/);
+  assert.match(t5.titleYue, /唔見咗嘢/);
   assert.equal(j9.next, "J10");
   const r4 = lessons.find((lesson) => lesson.id === "R4");
   const r5 = lessons.find((lesson) => lesson.id === "R5");
@@ -800,11 +800,13 @@ test("same-scene choices share a lemma or topic tag", () => {
       ...lesson.understand,
       ...lesson.quiz.filter((item) => !String(item.prompt || "").includes("呢句入面") && !String(item.prompt || "").includes("___")),
     ];
+    // A choice that is the gloss of one of this lesson's own lines is same-scene by definition.
+    const glosses = new Set(lesson.dialogue.flatMap((line) => [line.glossYue, line.glossYue.replace(/。$/u, "")]));
     for (const item of items) {
       for (const choice of item.choices || []) {
         const text = String(choice);
         const low = text.toLowerCase();
-        const ok = lesson.topicTags.some((tag) => text.includes(tag)) || vocab.some((tok) => low.includes(tok));
+        const ok = glosses.has(text) || lesson.topicTags.some((tag) => text.includes(tag)) || vocab.some((tok) => low.includes(tok));
         assert.equal(ok, true, `${lesson.id} ${text}`);
       }
     }

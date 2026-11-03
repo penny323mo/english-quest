@@ -125,7 +125,7 @@
       "prompt": "I have a reservation under Tom. 呢句即係點？",
       "choices": [
         "用 Tom 個名訂咗房",
-        "我想叫雞",
+        "我想點餐",
         "我想免稅"
       ],
       "answer": 0,
@@ -189,7 +189,7 @@
     {
       "pattern": "Here is your ___, and please keep it with you until you leave today.",
       "example": "Here is your key card, and please keep it with you until you leave today.",
-      "glossYue": "呢張係你把⋯⋯。",
+      "glossYue": "呢張係你嘅⋯⋯，今日走之前請帶住。",
       "answer": "key card",
       "choices": [
         "key card",
@@ -320,10 +320,10 @@
       "prompt": "客人講「Your room is a double and faces the harbor.」，係咩意思？",
       "choices": [
         "雙人床",
-        "景觀",
+        "升降機",
         "雙床"
       ],
-      "answer": 2
+      "answer": 0
     },
     {
       "type": "choice",

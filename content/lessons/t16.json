@@ -191,32 +191,29 @@
     {
       "prompt": "Hi. I'd like to rent a car. Here is my driving licence. 呢句即係點？",
       "choices": [
-        "關於執照",
-        "講緊租車",
-        "關於刮痕"
+        "自付額係九百蚊。油要滿箱取、滿箱還",
+        "你好。我想租車。呢張係我嘅駕駛執照",
+        "有。呢架車嘅保險自付額係幾多？"
       ],
-      "answer": 1,
-      "explain": "租車。"
+      "answer": 1
     },
     {
       "prompt": "The excess is nine hundred dollars. Fuel is full to full. 呢句即係點？",
       "choices": [
-        "關於自付額",
-        "講緊租車",
-        "關於刮痕"
+        "自付額係九百蚊。油要滿箱取、滿箱還",
+        "後門有一條刮痕。可唔可以寫低？",
+        "你好。我想租車。呢張係我嘅駕駛執照"
       ],
-      "answer": 0,
-      "explain": "自付額。"
+      "answer": 0
     },
     {
       "prompt": "Yes. I've marked that scratch, and the rental fee stays the same. 呢句即係點？",
       "choices": [
-        "關於執照",
-        "關於自付額",
-        "講緊刮痕"
+        "有。呢架車嘅保險自付額係幾多？",
+        "自付額係九百蚊。油要滿箱取、滿箱還",
+        "可以。我寫低咗條刮痕，租金維持不變"
       ],
-      "answer": 2,
-      "explain": "刮痕。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -257,14 +254,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「有。呢架車嘅保險自付額係幾多？」，你點講？",
       "choices": [
         "Hi. I'd like to rent a car. Here is my driving licence.",
         "Yes, I do. What is the insurance excess on this car?",
         "Full to full is fine. What time do I need to return it?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",

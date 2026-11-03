@@ -163,7 +163,7 @@
         "expect": "Can I see the design proof before you engrave the bracelet?",
         "keywords": [
           "proof",
-          "words"
+          "bracelet"
         ],
         "modelAudio": "assets/audio/lines/j22-l5.mp3",
         "modelSlow": "assets/audio/lines/j22-l5-slow.mp3"
@@ -254,14 +254,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「如果婚禮係星期六，普通刻字趕唔趕得切？」，你點講？",
       "choices": [
         "Can you rush the engraving on this gold bracelet before Saturday?",
         "Will plain lettering finish in time if the wedding stays on Saturday?",
         "Can I see the design proof before you engrave the bracelet?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",

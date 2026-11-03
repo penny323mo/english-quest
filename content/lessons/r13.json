@@ -146,32 +146,29 @@
     {
       "prompt": "Hi. Can I get a latte with oat milk and less sugar, please? 即係問緊咩？",
       "choices": [
-        "關於少糖",
-        "講緊拿鐵",
-        "唔係燕麥奶"
+        "堂食定係拎走？",
+        "你好。可唔可以畀我一杯燕麥奶少糖嘅拿鐵？",
+        "中杯，唔該"
       ],
-      "answer": 1,
-      "explain": "拿鐵。"
+      "answer": 1
     },
     {
       "prompt": "For here or to go? 即係問緊咩？",
       "choices": [
-        "講緊燕麥奶",
-        "唔係拿鐵",
-        "關於少糖"
+        "堂食定係拎走？",
+        "Cleo。唔好意思，我覺得呢杯係普通奶，唔係燕麥奶",
+        "你好。可唔可以畀我一杯燕麥奶少糖嘅拿鐵？"
       ],
-      "answer": 0,
-      "explain": "燕麥奶。"
+      "answer": 0
     },
     {
       "prompt": "Oh, I'm so sorry. I'll make you a new one with oat milk right away. 呢句即係點？",
       "choices": [
-        "唔係拿鐵",
-        "關於燕麥奶",
-        "講緊少糖"
+        "中杯，唔該",
+        "可唔可以拎走？",
+        "真係唔好意思。我即刻用燕麥奶幫你整過一杯"
       ],
-      "answer": 2,
-      "explain": "少糖。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -212,14 +209,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「中杯，唔該」，你點講？",
       "choices": [
         "Hi. Can I get a latte with oat milk and less sugar, please?",
         "Regular, please.",
         "Can I get this to go?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",
@@ -332,7 +329,7 @@
         "oyster"
       ],
       "answer": 1,
-      "explain": "拿鐵。"
+      "explain": "less sugar 係少糖。"
     }
   ],
   "shadow": {

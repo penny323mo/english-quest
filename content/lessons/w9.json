@@ -143,32 +143,29 @@
     {
       "prompt": "Hi Nina. I'd like to take annual leave next week, Monday to Friday. 呢句即係點？",
       "choices": [
-        "關於批核",
-        "講緊年假",
-        "唔係交接"
+        "好。你走之前請發電郵做交接",
+        "你好 Nina。我下星期想放年假，星期一到星期五",
+        "好。我星期五朝早會電郵畀你同 Jo"
       ],
-      "answer": 1,
-      "explain": "年假。"
+      "answer": 1
     },
     {
       "prompt": "Good. Please email me a handover note before you go. 呢句即係點？",
       "choices": [
-        "講緊交接",
-        "唔係年假",
-        "關於批核"
+        "好。你走之前請發電郵做交接",
+        "你好 Nina。我下星期想放年假，星期一到星期五",
+        "好，我批咗。假期愉快"
       ],
-      "answer": 0,
-      "explain": "交接。"
+      "answer": 0
     },
     {
       "prompt": "OK, I've approved it. Enjoy your break. 呢句即係點？",
       "choices": [
-        "唔係年假",
-        "關於交接",
-        "講緊批核"
+        "好。我星期五朝早會電郵畀你同 Jo",
+        "星期三係公眾假期，所以你只要四日假",
+        "好，我批咗。假期愉快"
       ],
-      "answer": 2,
-      "explain": "批核。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -209,14 +206,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「好。我唔喺度嘅時候，Jo 答應幫我睇住個位」，你點講？",
       "choices": [
         "Hi Nina. I'd like to take annual leave next week, Monday to Friday.",
         "Great. Jo has agreed to cover my desk while I'm away.",
         "Sure. I'll email it to you and Jo on Friday morning."
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",

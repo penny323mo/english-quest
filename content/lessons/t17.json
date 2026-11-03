@@ -84,11 +84,11 @@
       "id": "t17-l4",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "Yes. Take the laptop out and leave the charger.",
-      "glossYue": "係。部電腦攞出嚟，充電器留低。",
+      "text": "Yes, take both of them out and put them in a tray.",
+      "glossYue": "係，兩樣都要攞出嚟，放喺個盤度。",
       "audio": "assets/audio/lines/t17-l4.mp3",
       "audioSlow": "assets/audio/lines/t17-l4-slow.mp3",
-      "say": "Yes. Take the laptop out and leave the charger.",
+      "say": "Yes, take both of them out and put them in a tray.",
       "hideGloss": false
     },
     {
@@ -157,7 +157,7 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Yes. Take the laptop out and leave the charger.",
+        "line": "Yes, take both of them out and put them in a tray.",
         "audio": "assets/audio/lines/t17-l4.mp3",
         "audioSlow": "assets/audio/lines/t17-l4-slow.mp3",
         "expect": "Do the belt and watch go in the tray?",
@@ -188,32 +188,29 @@
     {
       "prompt": "Hi. Are all of my liquids under one hundred millilitres? 呢句即係點？",
       "choices": [
-        "關於電腦",
-        "關於液體",
-        "關於閘口"
+        "部手提電腦同行動電源係咪應該攞出嚟？",
+        "你好。我嘅液體係咪全部一百毫升以下？",
+        "多謝。閘口三十五搭接駁車點去？"
       ],
-      "answer": 1,
-      "explain": "液體。"
+      "answer": 1
     },
     {
       "prompt": "Shouldn't the laptop and power bank come out of it? 呢句即係點？",
       "choices": [
-        "關於電腦",
-        "關於閘口",
-        "關於液體"
+        "部手提電腦同行動電源係咪應該攞出嚟？",
+        "搭藍色接駁車。佢停喺遠處嗰個閘口",
+        "多謝。閘口三十五搭接駁車點去？"
       ],
-      "answer": 0,
-      "explain": "電腦。"
+      "answer": 0
     },
     {
       "prompt": "Thanks. Which way is gate thirty-five by the shuttle? 呢句即係點？",
       "choices": [
-        "關於液體",
-        "關於電腦",
-        "關於閘口"
+        "係。透明袋入面嘅液體冇問題",
+        "你好。我嘅液體係咪全部一百毫升以下？",
+        "多謝。閘口三十五搭接駁車點去？"
       ],
-      "answer": 2,
-      "explain": "閘口。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -254,14 +251,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「部手提電腦同行動電源係咪應該攞出嚟？」，你點講？",
       "choices": [
         "Yes. Those liquids in the clear bag are all fine.",
         "Shouldn't the laptop and power bank come out of it?",
         "Do the belt and watch go in the tray?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",
@@ -344,7 +341,7 @@
         "millilitre"
       ],
       "answer": 0,
-      "explain": "安檢。"
+      "explain": "shuttle 係接駁車。"
     }
   ],
   "shadow": {

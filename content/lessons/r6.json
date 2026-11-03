@@ -34,7 +34,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Good evening. A table for Mei, please. Is a window seat free tonight?",
-      "glossYue": "晚安。訂 Mei 個名，唔該。今晚仲有冇靠窗位？",
+      "glossYue": "你好。訂 Mei 個名，唔該。今晚仲有冇靠窗位？",
       "audio": "assets/audio/lines/r6-l1.mp3",
       "audioSlow": "assets/audio/lines/r6-l1-slow.mp3",
       "say": "Good evening. A table for Mei, please. Is a window seat free tonight?",
@@ -259,7 +259,7 @@
         "expect": "Please confirm the booking. What time should we come?",
         "keywords": [
           "confirm",
-          "roughly"
+          "booking"
         ],
         "modelAudio": "assets/audio/lines/r6-l7.mp3",
         "modelSlow": "assets/audio/lines/r6-l7-slow.mp3"

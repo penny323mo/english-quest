@@ -33,7 +33,7 @@
       "speaker": "ana",
       "speakerLabel": "Ana",
       "text": "Are you enjoying the meal? I can bring a refill.",
-      "glossYue": "你食得開唔開心？我可以幫你添一杯。",
+      "glossYue": "食成點呀？要唔要幫你添杯？",
       "audio": "assets/audio/lines/r4-l1.mp3",
       "audioSlow": "assets/audio/lines/r4-l1-slow.mp3",
       "say": "Are you enjoying the meal? I can bring a refill.",
@@ -261,7 +261,7 @@
         "expect": "The sparkling water is coming.",
         "keywords": [
           "sparkling",
-          "enjoy"
+          "coming"
         ],
         "modelAudio": "assets/audio/lines/r4-l5.mp3",
         "modelSlow": "assets/audio/lines/r4-l5-slow.mp3"

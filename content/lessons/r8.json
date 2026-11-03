@@ -120,7 +120,7 @@
       "choices": [
         "我想叫熱雞外賣送到公司",
         "我想叫熱雞外賣但唔使送到",
-        "我想改外賣地址，唔係叫雞"
+        "我想改外賣地址，唔係要雞"
       ],
       "answer": 0,
       "explain": "takeaway 係外賣。delivery 係送到。"
@@ -130,7 +130,7 @@
       "choices": [
         "請講送到時間，唔係地址",
         "請用現金付款，唔使講地址",
-        "請講街道地址，再串街名"
+        "講地址，再串街名"
       ],
       "answer": 2,
       "explain": "address 係地址。street 係街。"
@@ -226,8 +226,8 @@
         "audioSlow": "assets/audio/lines/r8-l2-slow.mp3",
         "expect": "It's eighteen Harbour Street. I spell Harbour H A R B O U R.",
         "keywords": [
-          "address",
-          "Harbour"
+          "Harbour",
+          "eighteen"
         ],
         "modelAudio": "assets/audio/lines/r8-l3.mp3",
         "modelSlow": "assets/audio/lines/r8-l3-slow.mp3"
@@ -241,7 +241,7 @@
         "expect": "How can I pay for the takeaway when it reaches the door?",
         "keywords": [
           "pay",
-          "chicken"
+          "takeaway"
         ],
         "modelAudio": "assets/audio/lines/r8-l6.mp3",
         "modelSlow": "assets/audio/lines/r8-l6-slow.mp3"
@@ -254,8 +254,8 @@
         "audioSlow": "assets/audio/lines/r8-l7-slow.mp3",
         "expect": "Thank you. I'll wait at the office door until it arrives.",
         "keywords": [
-          "chicken",
-          "door"
+          "door",
+          "arrives"
         ],
         "modelAudio": "assets/audio/lines/r8-l8.mp3",
         "modelSlow": "assets/audio/lines/r8-l8-slow.mp3"

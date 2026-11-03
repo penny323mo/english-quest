@@ -66,11 +66,11 @@
       "id": "t8-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I'm not here on holiday.",
-      "glossYue": "我唔係嚟度假。",
+      "text": "No, just tourism. Yes, my flight home is on Sunday.",
+      "glossYue": "唔係，淨係嚟觀光。係，我星期日搭飛機返去。",
       "audio": "assets/audio/lines/t8-l4.mp3",
       "audioSlow": "assets/audio/lines/t8-l4-slow.mp3",
-      "say": "I'm not here on holiday.",
+      "say": "No, just tourism. Yes, my flight home is on Sunday.",
       "hideGloss": true
     },
     {
@@ -244,10 +244,10 @@
         "line": "Are you here for business as well? Do you have a return ticket in your bag?",
         "audio": "assets/audio/lines/t8-l3.mp3",
         "audioSlow": "assets/audio/lines/t8-l3-slow.mp3",
-        "expect": "I'm not here on holiday.",
+        "expect": "No, just tourism. Yes, my flight home is on Sunday.",
         "keywords": [
-          "business",
-          "ticket"
+          "tourism",
+          "flight"
         ],
         "modelAudio": "assets/audio/lines/t8-l4.mp3",
         "modelSlow": "assets/audio/lines/t8-l4-slow.mp3"

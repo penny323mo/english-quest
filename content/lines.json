@@ -314,7 +314,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "I like this bracelet, and the clasp is easy to open.",
-    "glossYue": "我鍾意呢隻手鈪，個扣都易開。",
+    "glossYue": "我鍾意呢條手鏈，個扣都好易開。",
     "audio": "assets/audio/lines/j3-l2.mp3",
     "audioSlow": "assets/audio/lines/j3-l2-slow.mp3",
     "say": "I like this [[bɹˈeɪslət.]], and the clasp is easy to open."
@@ -453,11 +453,11 @@
     "id": "j6-l1",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "How much does this piece cost, and is the tax already in that price?",
-    "glossYue": "呢件幾多錢，稅包咗喺價錢入面未？",
+    "text": "How much does this piece cost? Is that the final price?",
+    "glossYue": "呢件幾多錢？係咪實價？",
     "audio": "assets/audio/lines/j6-l1.mp3",
     "audioSlow": "assets/audio/lines/j6-l1-slow.mp3",
-    "say": "How much does this piece [[kˈɑst]], and is the tax already in that price?"
+    "say": "How much does this piece [[kˈɑst]]? Is that the final price?"
   },
   {
     "id": "j6-l2",
@@ -483,11 +483,11 @@
     "id": "j6-l4",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "Ten percent off, and the tax is included in it.",
-    "glossYue": "九折，稅包喺入面。",
+    "text": "Ten percent off, and that's the final price.",
+    "glossYue": "九折，呢個已經係實價。",
     "audio": "assets/audio/lines/j6-l4.mp3",
     "audioSlow": "assets/audio/lines/j6-l4-slow.mp3",
-    "say": "Ten percent off, and the tax is included in it."
+    "say": "Ten percent off, and that's the final price."
   },
   {
     "id": "j6-l5",
@@ -523,21 +523,21 @@
     "id": "j7-l3",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "This purchase is tax-free for you, so you can claim the tax.",
-    "glossYue": "呢單係免稅，所以你可以申返稅。",
+    "text": "The payment is approved. Here is your receipt and the certificate.",
+    "glossYue": "付款過咗。呢度係你嘅收據同證書。",
     "audio": "assets/audio/lines/j7-l3.mp3",
     "audioSlow": "assets/audio/lines/j7-l3-slow.mp3",
-    "say": "This purchase is tax-free for you, so you can claim the tax."
+    "say": "The payment is approved. Here is your receipt and the certificate."
   },
   {
     "id": "j7-l4",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "Here is my passport. Could you stamp the tax-free form?",
-    "glossYue": "護照喺度。可唔可以喺退稅表蓋印？",
+    "text": "Thank you. Could I also get an invoice for my company?",
+    "glossYue": "多謝。可唔可以另外開張發票，等我報公司數？",
     "audio": "assets/audio/lines/j7-l4.mp3",
     "audioSlow": "assets/audio/lines/j7-l4-slow.mp3",
-    "say": "Here is my passport. Could you stamp the tax-free form?"
+    "say": "Thank you. Could I also get an invoice for my company?"
   },
   {
     "id": "j7-l5",
@@ -644,7 +644,7 @@
     "speaker": "sam",
     "speakerLabel": "Sam",
     "text": "Straight ahead. Your gate is on the left, just after the shops.",
-    "glossYue": "直行。閘口就喺商店後面左邊。",
+    "glossYue": "直行。過咗啲店舖，閘口就喺左手邊。",
     "audio": "assets/audio/lines/t2-l5.mp3",
     "audioSlow": "assets/audio/lines/t2-l5-slow.mp3",
     "say": "Straight ahead. Your gate is on the left, just after the shops."
@@ -804,7 +804,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "I'd like the chicken, please. I need to ask about the sauce.",
-    "glossYue": "我想叫雞，唔該。醬汁我有嘢要問。",
+    "glossYue": "我想要個雞，唔該。醬汁我有嘢想問。",
     "audio": "assets/audio/lines/r3-l1.mp3",
     "audioSlow": "assets/audio/lines/r3-l1-slow.mp3",
     "say": "I'd like the chicken, please. I need to ask about the sauce."
@@ -1223,21 +1223,21 @@
     "id": "j7-m2",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "Here is your receipt, which you should keep with the slip.",
-    "glossYue": "呢張收據你要留低，同一張單。",
+    "text": "Please keep the receipt with the certificate, in case you need a repair.",
+    "glossYue": "請將收據同證書放埋一齊，之後要維修都用得着。",
     "audio": "assets/audio/lines/j7-m2.mp3",
     "audioSlow": "assets/audio/lines/j7-m2-slow.mp3",
-    "say": "Here is your [[ɹɪsˈit]], which you should keep with the slip."
+    "say": "Please keep the [[ɹɪsˈit]] with the certificate, in case you need a repair."
   },
   {
     "id": "j7-m3",
     "speaker": "mei",
     "speakerLabel": "Mei",
-    "text": "Sign the refund form if you want the tax back.",
-    "glossYue": "如果你想攞返稅，請喺退稅表簽名。",
+    "text": "Could you sign here, please? The card needs your signature.",
+    "glossYue": "唔該喺度簽名。用卡要你簽名。",
     "audio": "assets/audio/lines/j7-m3.mp3",
     "audioSlow": "assets/audio/lines/j7-m3-slow.mp3",
-    "say": "Sign the [[ɹˈifˌʌnd]] form if you want the tax back."
+    "say": "Could you sign here, please? The card needs your signature."
   },
   {
     "id": "r3-a1",
@@ -1534,7 +1534,7 @@
     "speaker": "mei",
     "speakerLabel": "Mei",
     "text": "I'm sorry that there's a problem. Tell me what happened so I can help.",
-    "glossYue": "唔好意思有問題。話我知發生咩事，所以我可以幫手。",
+    "glossYue": "有問題真係唔好意思。話我知發生咩事，等我幫你。",
     "audio": "assets/audio/lines/j9-l1.mp3",
     "audioSlow": "assets/audio/lines/j9-l1-slow.mp3",
     "say": "I'm sorry that there's a problem. Tell me what happened so I can help."
@@ -1614,7 +1614,7 @@
     "speaker": "ana",
     "speakerLabel": "Ana",
     "text": "Are you enjoying the meal? I can bring a refill.",
-    "glossYue": "你食得開唔開心？我可以幫你添一杯。",
+    "glossYue": "食成點呀？要唔要幫你添杯？",
     "audio": "assets/audio/lines/r4-l1.mp3",
     "audioSlow": "assets/audio/lines/r4-l1-slow.mp3",
     "say": "Are you enjoying the meal? I can bring a refill."
@@ -2014,7 +2014,7 @@
     "speaker": "kim",
     "speakerLabel": "Kim",
     "text": "Good evening, this is Kim at the front desk. How may I help tonight?",
-    "glossYue": "晚安，我係前台 Kim。今晚有咩可以幫你？",
+    "glossYue": "你好，我係前台 Kim。今晚有咩可以幫到你？",
     "audio": "assets/audio/lines/t6-l1.mp3",
     "audioSlow": "assets/audio/lines/t6-l1-slow.mp3",
     "say": "Good evening, this is Kim at the front desk. How may I help tonight?"
@@ -2483,11 +2483,11 @@
     "id": "t7-l8",
     "speaker": "may",
     "speakerLabel": "May",
-    "text": "Thank you. The souvenir shop can stamp this tax refund form before you leave town.",
-    "glossYue": "多謝。紀念品店可以喺你離鎮之前蓋呢張退稅表。",
+    "text": "Thank you. Show this form to airport customs before you fly.",
+    "glossYue": "多謝。上機之前，喺機場將呢張表交畀海關睇。",
     "audio": "assets/audio/lines/t7-l8.mp3",
     "audioSlow": "assets/audio/lines/t7-l8-slow.mp3",
-    "say": "Thank you. The souvenir shop can stamp this tax refund form before you leave town."
+    "say": "Thank you. Show this form to airport customs before you fly."
   },
   {
     "id": "d3-l1",
@@ -2643,11 +2643,11 @@
     "id": "j12-l8",
     "speaker": "kai",
     "speakerLabel": "Kai",
-    "text": "I'll leave a short message, and you can collect the piece this Friday.",
-    "glossYue": "我會留低短訊，你星期五可以嚟攞嗰件。",
+    "text": "I'll text you when it's ready. You can collect it tomorrow.",
+    "glossYue": "準備好我會發短訊畀你。你聽日可以嚟攞。",
     "audio": "assets/audio/lines/j12-l8.mp3",
     "audioSlow": "assets/audio/lines/j12-l8-slow.mp3",
-    "say": "I'll leave a short message, and you can collect the piece this Friday."
+    "say": "I'll text you when it's ready. You can collect it tomorrow."
   },
   {
     "id": "t8-l1",
@@ -2683,11 +2683,11 @@
     "id": "t8-l4",
     "speaker": "tom",
     "speakerLabel": "Tom",
-    "text": "I'm not here on holiday.",
-    "glossYue": "我唔係嚟度假。",
+    "text": "No, just tourism. Yes, my flight home is on Sunday.",
+    "glossYue": "唔係，淨係嚟觀光。係，我星期日搭飛機返去。",
     "audio": "assets/audio/lines/t8-l4.mp3",
     "audioSlow": "assets/audio/lines/t8-l4-slow.mp3",
-    "say": "I'm not here on holiday."
+    "say": "No, just tourism. Yes, my flight home is on Sunday."
   },
   {
     "id": "t8-l5",
@@ -2844,7 +2844,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "By the way, are you ready for the 10 o'clock meeting with the sales team?",
-    "glossYue": "順便問下，十點同團隊嗰個會你準備好未？",
+    "glossYue": "順便問下，十點同銷售團隊嗰個會你準備好未？",
     "audio": "assets/audio/lines/w4-l4.mp3",
     "audioSlow": "assets/audio/lines/w4-l4-slow.mp3",
     "say": "By the way, are you ready for the 10 o'clock meeting with the sales team?"
@@ -2894,7 +2894,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "Good evening. A table for Mei, please. Is a window seat free tonight?",
-    "glossYue": "晚安。訂 Mei 個名，唔該。今晚仲有冇靠窗位？",
+    "glossYue": "你好。訂 Mei 個名，唔該。今晚仲有冇靠窗位？",
     "audio": "assets/audio/lines/r6-l1.mp3",
     "audioSlow": "assets/audio/lines/r6-l1-slow.mp3",
     "say": "Good evening. A table for Mei, please. Is a window seat free tonight?"
@@ -3955,7 +3955,7 @@
     "speaker": "reid",
     "speakerLabel": "Reid",
     "text": "I'm sorry. Could you bring a doctor's note when you come back?",
-    "glossYue": "聽到你咁真係唔好意思。返嚟可唔可以帶醫生紙？",
+    "glossYue": "咁辛苦你喇。返嚟嗰陣可唔可以帶醫生紙？",
     "audio": "assets/audio/lines/w7-l2.mp3",
     "audioSlow": "assets/audio/lines/w7-l2-slow.mp3",
     "say": "I'm sorry. Could you bring a doctor's note when you come back?"
@@ -4125,7 +4125,7 @@
     "speaker": "beau",
     "speakerLabel": "Beau",
     "text": "Yes, please make both sides shorter for this trim.",
-    "glossYue": "好，兩邊剪短，呢次係剪髮。",
+    "glossYue": "好，兩邊剪短啲，唔該。",
     "audio": "assets/audio/lines/d7-l3.mp3",
     "audioSlow": "assets/audio/lines/d7-l3-slow.mp3",
     "say": "Yes, please make both sides shorter for this trim."
@@ -5065,7 +5065,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "I have a bad headache and a high fever. What can I take?",
-    "glossYue": "我頭痛得好緊，仲有高燒。我可以食咩？",
+    "glossYue": "我頭好痛，仲發高燒。可以食咩藥？",
     "audio": "assets/audio/lines/t13-l1.mp3",
     "audioSlow": "assets/audio/lines/t13-l1-slow.mp3",
     "say": "I have a bad headache and a high fever. What can I take?"
@@ -6164,11 +6164,11 @@
     "id": "j19-l7",
     "speaker": "gus",
     "speakerLabel": "Gus",
-    "text": "So the price is higher because the cut is cleaner?",
-    "glossYue": "所以價錢高啲，係因為切工乾淨啲？",
+    "text": "So this stone costs more because the cut is much better?",
+    "glossYue": "即係呢粒切工好好多，所以貴啲？",
     "audio": "assets/audio/lines/j19-l7.mp3",
     "audioSlow": "assets/audio/lines/j19-l7-slow.mp3",
-    "say": "So the price is higher because the cut is cleaner?"
+    "say": "So this stone costs more because the cut is much better?"
   },
   {
     "id": "j19-l8",
@@ -6294,11 +6294,11 @@
     "id": "t17-l4",
     "speaker": "kim",
     "speakerLabel": "Kim",
-    "text": "Yes. Take the laptop out and leave the charger.",
-    "glossYue": "係。部電腦攞出嚟，充電器留低。",
+    "text": "Yes, take both of them out and put them in a tray.",
+    "glossYue": "係，兩樣都要攞出嚟，放喺個盤度。",
     "audio": "assets/audio/lines/t17-l4.mp3",
     "audioSlow": "assets/audio/lines/t17-l4-slow.mp3",
-    "say": "Yes. Take the laptop out and leave the charger."
+    "say": "Yes, take both of them out and put them in a tray."
   },
   {
     "id": "t17-l5",
@@ -6545,7 +6545,7 @@
     "speaker": "tom",
     "speakerLabel": "Tom",
     "text": "Which hot dishes have shellfish? May I have a clean plate?",
-    "glossYue": "邊啲熱菜有貝殼類？可唔可以畀個乾淨碟我？",
+    "glossYue": "邊啲熱菜有海鮮（蝦蟹貝類）？可唔可以畀個乾淨碟我？",
     "audio": "assets/audio/lines/r15-l5.mp3",
     "audioSlow": "assets/audio/lines/r15-l5-slow.mp3",
     "say": "Which hot dishes have shellfish? May I have a clean plate?"
@@ -6555,7 +6555,7 @@
     "speaker": "mira",
     "speakerLabel": "Mira",
     "text": "The prawn soup has shellfish. Here's a clean plate.",
-    "glossYue": "蝦湯有貝殼類。呢個係乾淨碟。",
+    "glossYue": "蝦湯有甲殼類海鮮。呢隻係乾淨碟。",
     "audio": "assets/audio/lines/r15-l6.mp3",
     "audioSlow": "assets/audio/lines/r15-l6-slow.mp3",
     "say": "The prawn soup has shellfish. Here's a clean plate."
@@ -6784,21 +6784,21 @@
     "id": "j21-l5",
     "speaker": "gus",
     "speakerLabel": "Gus",
-    "text": "What excess does my insurance policy charge for a repair like this?",
-    "glossYue": "我份保險維修要畀幾多自負額？",
+    "text": "Can you write the repair cost on the appraisal for my insurance company?",
+    "glossYue": "可唔可以喺估價單寫埋維修費，等我交畀保險公司？",
     "audio": "assets/audio/lines/j21-l5.mp3",
     "audioSlow": "assets/audio/lines/j21-l5-slow.mp3",
-    "say": "What excess does my insurance policy charge for a repair like this?"
+    "say": "Can you write the repair cost on the appraisal for my insurance company?"
   },
   {
     "id": "j21-l6",
     "speaker": "ida",
     "speakerLabel": "Ida",
-    "text": "The excess on that policy is two hundred dollars for this repair.",
-    "glossYue": "呢份保單今次維修嘅自負額係二百蚊。",
+    "text": "Yes. The repair is two hundred dollars, and I'll write that on the appraisal.",
+    "glossYue": "可以。維修費係二百蚊，我會寫喺估價單上面。",
     "audio": "assets/audio/lines/j21-l6.mp3",
     "audioSlow": "assets/audio/lines/j21-l6-slow.mp3",
-    "say": "The excess on that policy is two hundred dollars for this repair."
+    "say": "Yes. The repair is two hundred dollars, and I'll write that on the appraisal."
   },
   {
     "id": "j21-l7",

@@ -148,32 +148,29 @@
     {
       "prompt": "Hi, I'd like to open an account. What do I need to bring? 即係問緊咩？",
       "choices": [
-        "關於戶口",
-        "講緊身份證",
-        "唔係地址"
+        "出糧嘅話，儲蓄戶口最合適。佢有少少利息",
+        "你好，我想開戶口。我要帶咩嚟？",
+        "只有結餘低過五千蚊先至收。咁就每個月五十蚊"
       ],
-      "answer": 1,
-      "explain": "身份證。"
+      "answer": 1
     },
     {
       "prompt": "For your salary, a savings account is best. It pays a little interest. 呢句即係點？",
       "choices": [
-        "講緊地址",
-        "唔係身份證",
-        "關於戶口"
+        "出糧嘅話，儲蓄戶口最合適。佢有少少利息",
+        "我幾時收到扣帳卡？",
+        "你好，我想開戶口。我要帶咩嚟？"
       ],
-      "answer": 0,
-      "explain": "地址。"
+      "answer": 0
     },
     {
       "prompt": "It'll arrive by post in five days. You can register for online banking today. 呢句即係點？",
       "choices": [
-        "唔係身份證",
-        "關於地址",
-        "講緊戶口"
+        "我兩樣都帶咗。我應該開儲蓄戶口定往來戶口？",
+        "有冇月費？",
+        "五日之內會郵寄到。你今日可以登記網上銀行"
       ],
-      "answer": 2,
-      "explain": "戶口。"
+      "answer": 2
     }
   ],
   "chunks": [
@@ -214,14 +211,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想用呢課嘅講法。你點講？",
+      "promptYue": "你想講「我兩樣都帶咗。我應該開儲蓄戶口定往來戶口？」，你點講？",
       "choices": [
         "Hi, I'd like to open an account. What do I need to bring?",
         "I have both here. Should I open a savings account or a current account?",
         "Is there a monthly fee?"
       ],
       "answer": 1,
-      "explain": "用呢句。"
+      "explain": "揀意思對得上嗰句。"
     },
     {
       "type": "order",
@@ -335,7 +332,7 @@
         "address"
       ],
       "answer": 0,
-      "explain": "身份證。"
+      "explain": "account 係戶口。"
     }
   ],
   "shadow": {
