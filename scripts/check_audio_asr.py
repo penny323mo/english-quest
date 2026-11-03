@@ -2,16 +2,19 @@
 """Check that every recorded clip says the text it is shown with.
 
 Each clip is transcribed with an offline Whisper model (sherpa-onnx) and
-compared with its on-screen text. A clip is reported only when two models
-both disagree with the text, because one small model on its own mishears
-too often. Clips listed in tests/fixtures/asr-known.json (likely
+compared with its on-screen text. When they differ, the shown text is
+rendered afresh with the same Piper voice and transcribed too: the voice's
+own quirks are misheard the same way in both, so the clip fails only if it
+and the fresh render are heard as different words, by base.en and again by
+small.en. Clips listed in tests/fixtures/asr-known.json (likely
 mispronunciations waiting for a human ear check) are reported but do not
 fail the run.
 
 Models: the sherpa-onnx Whisper exports from
 https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models
 (sherpa-onnx-whisper-base.en and sherpa-onnx-whisper-small.en). Point
-EQ_ASR_MODELS at the folder that holds both, or pass --models.
+EQ_ASR_MODELS at the folder that holds both, or pass --models, and
+EQ_PIPER_MODEL (or --voice) at en_US-ljspeech-medium.onnx.
 
     python3 scripts/check_audio_asr.py                 # every clip
     python3 scripts/check_audio_asr.py --only rel ...  # just these clips
@@ -196,17 +199,60 @@ def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
     return [j for j in jobs if old.get(j["rel"]) != j["say"] or j["rel"] in touched]
 
 
+SAME = 0.8  # word similarity at which a clip and the fresh reference say the same thing
+
+
+def similarity(a: str, b: str) -> float:
+    x, y = norm(a), norm(b)
+    if not x and not y:
+        return 1.0
+    return difflib.SequenceMatcher(None, x, y, autojunk=False).ratio()
+
+
+class Reference:
+    """Render the on-screen text (no phoneme overrides) with the app's Piper voice.
+
+    The voice has its own accent quirks that Whisper mishears the same way every
+    time (shop → shark, water → war). Comparing the clip's transcript with the
+    transcript of a fresh render of the shown text cancels those out, so only a
+    clip that says different words is left.
+    """
+
+    def __init__(self, model: str):
+        from piper import PiperVoice
+
+        self.voice = PiperVoice.load(model)
+        self.voice.config.espeak_voice = "en-us"
+        self.tmp = Path(os.environ.get("TMPDIR", "/tmp")) / "eq-asr-ref"
+        self.tmp.mkdir(parents=True, exist_ok=True)
+
+    def wav(self, job: dict) -> Path:
+        import wave
+        from piper.config import SynthesisConfig
+
+        slow = job["rel"].endswith("-slow.mp3")
+        out = self.tmp / (job["rel"].replace("/", "_") + ".wav")
+        text = re.sub(r"\{\{learner(-spell)?\}\}", "Ling", job["text"])
+        with wave.open(str(out), "wb") as wf:
+            self.voice.synthesize_wav(text, wf, syn_config=SynthesisConfig(length_scale=1.35 if slow else 1.0))
+        return out
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--models", default=os.environ.get("EQ_ASR_MODELS", ""))
+    ap.add_argument("--voice", default=os.environ.get("EQ_PIPER_MODEL", ""), help="Piper en_US-ljspeech-medium.onnx")
     ap.add_argument("--only", nargs="*", help="clip paths (assets/audio/...) to check")
     ap.add_argument("--changed", metavar="REF", help="only clips whose text or mp3 changed since this git ref")
     ap.add_argument("--slow", action="store_true", help="also check the -slow twin of each clip")
     ap.add_argument("--json", metavar="FILE", help="write every result to this file")
+    ap.add_argument("--reuse", metavar="FILE", help="reuse base.en transcripts from an earlier --json run (unchanged clips only)")
     ap.add_argument("--threads", type=int, default=os.cpu_count() or 2)
     args = ap.parse_args()
     if not args.models:
         sys.exit("set EQ_ASR_MODELS or --models to the folder with the sherpa-onnx Whisper models")
+    if not args.voice:
+        sys.exit("set EQ_PIPER_MODEL or --voice to the Piper voice the clips were rendered with")
     folder = Path(args.models)
 
     jobs = clips()
@@ -218,33 +264,56 @@ def main() -> int:
     if args.slow:
         jobs = jobs + [dict(j, rel=j["rel"].replace(".mp3", "-slow.mp3")) for j in jobs]
     known = json.loads(KNOWN.read_text(encoding="utf-8")) if KNOWN.exists() else {}
+    reuse = {}
+    if args.reuse:
+        for r in json.loads(Path(args.reuse).read_text(encoding="utf-8")):
+            reuse[(r["rel"], r["say"])] = r["base"]
 
+    # 1. base.en on the clip: an exact match with the text passes straight away.
     first = recognizer(folder, "base.en", args.threads)
     results = []
-    heard = []
     for n, job in enumerate(jobs, 1):
-        heard.append(transcribe(first, ROOT / job["rel"]))
+        heard = reuse.get((job["rel"], job["say"])) or transcribe(first, ROOT / job["rel"])
+        results.append(dict(job, base=heard, problems=compare(job["text"], heard)))
         if n % 200 == 0:
             print(f"  {n}/{len(jobs)}", flush=True)
-    for job, text in zip(jobs, heard):
-        job = dict(job, base=text, problems=compare(job["text"], text))
-        results.append(job)
     suspects = [r for r in results if r["problems"]]
-    print(f"base.en: {len(results) - len(suspects)} / {len(results)} match; rechecking {len(suspects)} with small.en")
+    print(f"base.en: {len(results) - len(suspects)} / {len(results)} match the text; {len(suspects)} compared with a fresh render")
+
+    # 2. base.en on a fresh render of the shown text: same words heard means the clip is right.
+    ref = Reference(args.voice)
+    for n, r in enumerate(suspects, 1):
+        r["refWav"] = str(ref.wav(r))
+        r["refBase"] = transcribe(first, Path(r["refWav"]))
+        r["same"] = similarity(r["base"], r["refBase"])
+        if n % 200 == 0:
+            print(f"  ref {n}/{len(suspects)}", flush=True)
+    suspects = [r for r in suspects if r["same"] < SAME]
+    print(f"base.en vs fresh render: {len(suspects)} still differ; rechecking with small.en")
+
+    # 3. small.en on both: fail only if the clip still sounds unlike its text.
     if suspects:
         second = recognizer(folder, "small.en", args.threads)
         for r in suspects:
             r["small"] = transcribe(second, ROOT / r["rel"])
-            r["problems"] = compare(r["text"], r["small"])
+            r["refSmall"] = transcribe(second, Path(r["refWav"]))
+            r["same"] = max(r["same"], similarity(r["small"], r["refSmall"]))
+            if r["same"] >= SAME or not compare(r["text"], r["small"]):
+                r["same"] = max(r["same"], SAME)
+    for r in results:
+        r.pop("refWav", None)
+        r["ok"] = not r["problems"] or r.get("same", 0) >= SAME
 
     failed, waived = [], []
     for r in results:
-        if not r["problems"]:
-            continue
-        (waived if r["rel"] in known else failed).append(r)
+        if not r["ok"]:
+            (waived if r["rel"] in known else failed).append(r)
     for label, rows in (("KNOWN (ear check)", waived), ("FAIL", failed)):
         for r in rows:
-            print(f"{label}: {r['rel']} [{r['where']}]\n  text:  {r['text']}\n  base:  {r['base']}\n  small: {r.get('small', '')}\n  diff:  {'; '.join(r['problems'])}")
+            print(
+                f"{label}: {r['rel']} [{r['where']}]\n  text:      {r['text']}\n"
+                f"  clip:      {r.get('small') or r['base']}\n  reference: {r.get('refSmall') or r.get('refBase', '')}"
+            )
     if args.json:
         Path(args.json).write_text(json.dumps(results, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"checked {len(results)} clips: {len(failed)} fail, {len(waived)} known")
