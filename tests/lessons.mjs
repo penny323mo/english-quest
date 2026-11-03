@@ -1359,12 +1359,15 @@ test("audit scripts stay verbatim, under the word cap, and unpadded", () => {
 test("title card covers the hero and waits for a decoded image", () => {
   const src = fs.readFileSync(path.join(root, "web/src/Lesson.tsx"), "utf8");
   const art = fs.readFileSync(path.join(root, "web/src/art.tsx"), "utf8");
+  const wait = fs.readFileSync(path.join(root, "web/src/art-wait.mjs"), "utf8");
   const css = fs.readFileSync(path.join(root, "web/src/styles.css"), "utf8");
-  assert.match(art, /img\.decode/);
+  assert.match(art, /waitForImages/);
+  assert.match(wait, /img\.decode/);
   assert.match(src, /whenArtDecoded/);
   assert.match(src, /whenArtDecoded\(\[hero\], 900\)/);
-  assert.match(art, /naturalWidth/);
-  assert.equal(art.includes("onerror = finish"), false);
+  assert.match(wait, /naturalWidth/);
+  // A failed image now settles the wait too (v1-audit P1-7); tests/online-offline.mjs covers it.
+  assert.match(wait, /img\.onerror = finish/);
   assert.equal(/\.hero \.art-ph img \{[^}]*opacity:\s*1/.test(css), false);
   assert.match(src, /1200/);
   assert.match(src, /disabled=\{!ready\}/);

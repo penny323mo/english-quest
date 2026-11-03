@@ -21,6 +21,7 @@ import { fillLearner } from "./learner";
 import { useStore } from "./store";
 import type { BuildOrder, Lesson, LexItem, QuizItem } from "./types";
 import { BEAT_LABELS } from "./beats";
+import { quizResumePoint } from "./resume.mjs";
 import { seededOrder } from "./choice-order.js";
 
 const BEATS = BEAT_LABELS;
@@ -105,6 +106,8 @@ function Player({ lesson }: { lesson: Lesson }) {
   const [sub, setSub] = useState(start.sub);
   const [quizScore, setQuizScore] = useState(start.quizScore);
   const [quizAnswered, setQuizAnswered] = useState(start.quizAnswered);
+  // The quiz question (by index) the learner has answered but not yet left.
+  const [answeredAt, setAnsweredAt] = useState<number | null>(null);
   const enqueue = useStore((s) => s.enqueueLemmas);
   const complete = useStore((s) => s.completeLesson);
   const saved = useRef(false);
@@ -118,14 +121,15 @@ function Player({ lesson }: { lesson: Lesson }) {
   useEffect(() => {
     if (gate !== "play") return;
     if (beat < 1 || beat > 9) return;
+    const point = quizResumePoint(beat, sub, answeredAt === sub, lesson.quiz.length);
     setLessonCursor({
       lessonId: lesson.id,
-      beat,
-      sub,
+      beat: point.beat,
+      sub: point.sub,
       quizScore,
       quizAnswered,
     });
-  }, [beat, gate, lesson.id, quizAnswered, quizScore, setLessonCursor, sub]);
+  }, [answeredAt, beat, gate, lesson.id, lesson.quiz.length, quizAnswered, quizScore, setLessonCursor, sub]);
 
   useEffect(() => {
     if (gate !== "play" || beat !== 10 || saved.current) return;
@@ -148,6 +152,7 @@ function Player({ lesson }: { lesson: Lesson }) {
     setSub(cursor.sub);
     setQuizScore(cursor.quizScore);
     setQuizAnswered(cursor.quizAnswered);
+    setAnsweredAt(null);
     setGate("play");
   }
 
@@ -157,6 +162,7 @@ function Player({ lesson }: { lesson: Lesson }) {
     setSub(0);
     setQuizScore(0);
     setQuizAnswered(0);
+    setAnsweredAt(null);
     setGate("play");
   }
 
@@ -237,7 +243,10 @@ function Player({ lesson }: { lesson: Lesson }) {
             item={lesson.quiz[sub]}
             index={sub}
             onScore={() => setQuizScore((n) => n + 1)}
-            onAnswered={() => setQuizAnswered((n) => n + 1)}
+            onAnswered={() => {
+              setQuizAnswered((n) => n + 1);
+              setAnsweredAt(sub);
+            }}
             onSkip={() => (sub + 1 < lesson.quiz.length ? setSub(sub + 1) : advance())}
             onNext={() => (sub + 1 < lesson.quiz.length ? setSub(sub + 1) : advance())}
           />
