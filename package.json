@@ -10,7 +10,8 @@
     "typecheck": "tsc --noEmit",
     "test": "node --test tests/*.mjs",
     "content": "python3 scripts/emit_content.py",
-    "audio": "python3 scripts/render_audio.py"
+    "audio": "python3 scripts/render_audio.py",
+    "audio:check": "python3 scripts/check_audio_asr.py"
   },
   "dependencies": {
     "idb": "^8.0.2",

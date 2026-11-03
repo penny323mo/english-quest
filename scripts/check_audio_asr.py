@@ -15,7 +15,7 @@ EQ_ASR_MODELS at the folder that holds both, or pass --models.
 
     python3 scripts/check_audio_asr.py                 # every clip
     python3 scripts/check_audio_asr.py --only rel ...  # just these clips
-    python3 scripts/check_audio_asr.py --changed main  # clips whose text changed since main
+    python3 scripts/check_audio_asr.py --changed main  # clips whose text or mp3 changed since main
 
 Exit code 1 when any clip outside the known list fails.
 """
@@ -171,7 +171,7 @@ def transcribe(rec, path: Path) -> str:
 
 
 def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
-    """Clips whose rendered text differs from the version at ref."""
+    """Clips whose text or mp3 differs from the version at ref."""
     def old_json(rel: str):
         try:
             return json.loads(subprocess.run(["git", "show", f"{ref}:{rel}"], cwd=ROOT, capture_output=True, check=True).stdout)
@@ -189,14 +189,18 @@ def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
                 old.setdefault(turn.get("audio") or f"assets/audio/words/{item['id']}-md{i}.mp3", render_text(turn))
     for line in old_lines or []:
         old.setdefault(line["audio"], line["say"])
-    return [j for j in jobs if old.get(j["rel"]) != j["say"]]
+    diff = subprocess.run(
+        ["git", "diff", "--name-only", ref, "--", "assets/audio"], cwd=ROOT, capture_output=True, text=True, check=True
+    ).stdout.split()
+    touched = {rel.replace("-slow.mp3", ".mp3") for rel in diff}
+    return [j for j in jobs if old.get(j["rel"]) != j["say"] or j["rel"] in touched]
 
 
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--models", default=os.environ.get("EQ_ASR_MODELS", ""))
     ap.add_argument("--only", nargs="*", help="clip paths (assets/audio/...) to check")
-    ap.add_argument("--changed", metavar="REF", help="only clips whose text changed since this git ref")
+    ap.add_argument("--changed", metavar="REF", help="only clips whose text or mp3 changed since this git ref")
     ap.add_argument("--slow", action="store_true", help="also check the -slow twin of each clip")
     ap.add_argument("--json", metavar="FILE", help="write every result to this file")
     ap.add_argument("--threads", type=int, default=os.cpu_count() or 2)
