@@ -5,13 +5,25 @@ The bundled voice config asks espeak for generic "en", which is non-rhotic.
 We force en-us so the phonemes match the LJSpeech accent and CMUdict.
 Heteronyms pass explicit [[phonemes]] so read/live/bow/wind/bass/close
 cannot flip sense.
+
+assets/audio/rendered.json records, for every clip, the sha256 of the text
+it was actually rendered from. A clip is re-rendered whenever its text no
+longer matches that hash, so editing a sentence can never leave an old
+recording behind. tests/audio-rendered.mjs fails if the two drift apart.
+
+    python3 scripts/render_audio.py                # render every changed clip
+    python3 scripts/render_audio.py --force REL..  # re-render these clips anyway
+
+The voice is PREP/voices/en_US-ljspeech-medium.onnx, or EQ_PIPER_MODEL.
 """
 from __future__ import annotations
 
 import hashlib
 import json
 import re
+import os
 import subprocess
+import sys
 import wave
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
@@ -20,7 +32,8 @@ from piper import PiperVoice
 from piper.config import SynthesisConfig
 
 ROOT = Path(__file__).resolve().parents[1]
-MODEL = ROOT / "PREP" / "voices" / "en_US-ljspeech-medium.onnx"
+MODEL = Path(os.environ.get("EQ_PIPER_MODEL") or ROOT / "PREP" / "voices" / "en_US-ljspeech-medium.onnx")
+RENDERED = ROOT / "assets" / "audio" / "rendered.json"
 LEX = ROOT / "content" / "lexicon.json"
 LINES = ROOT / "content" / "lines.json"
 AUDIO = ROOT / "assets" / "audio"
@@ -145,16 +158,17 @@ def pad_tree() -> None:
     print(f"padded {padded} / {len(files)}")
 
 
-def stamp_audio_text_hashes(lex: dict) -> int:
+def stamp_audio_text_hashes(lex: dict, rendered: dict) -> int:
+    """Stamp audioTextSha256 with the text each clip was really rendered from."""
     stamped = 0
     for item in lex["items"]:
         for example in item.get("examples") or []:
-            example["audioTextSha256"] = text_hash(render_text(example))
+            example["audioTextSha256"] = rendered[example["audio"]]
             stamped += 1
         for index, turn in enumerate(item.get("miniDialogue") or []):
             turn.setdefault("audio", f"assets/audio/words/{item['id']}-md{index}.mp3")
             turn.setdefault("audioSlow", f"assets/audio/words/{item['id']}-md{index}-slow.mp3")
-            turn["audioTextSha256"] = text_hash(render_text(turn))
+            turn["audioTextSha256"] = rendered[turn["audio"]]
             stamped += 1
     return stamped
 
@@ -172,27 +186,34 @@ def main() -> None:
     print("phoneme check ok", ph)
 
     jobs = clips()
-    print(f"clips {len(jobs)} x2")
-    TMP.mkdir(exist_ok=True)
-    done = 0
+    force = set(sys.argv[sys.argv.index("--force") + 1:]) if "--force" in sys.argv else set()
+    rendered = json.loads(RENDERED.read_text(encoding="utf-8")) if RENDERED.exists() else {}
+    todo = []
     for job in jobs:
         rel = job["rel"]
-        slow_rel = rel.replace(".mp3", "-slow.mp3")
         mp3 = ROOT / rel
-        mp3_slow = ROOT / slow_rel
-        if mp3.exists() and mp3.stat().st_size > 400 and mp3_slow.exists() and mp3_slow.stat().st_size > 400:
-            done += 1
+        mp3_slow = ROOT / rel.replace(".mp3", "-slow.mp3")
+        present = all(p.exists() and p.stat().st_size > 400 for p in (mp3, mp3_slow))
+        if present and rendered.get(rel) == text_hash(job["say"]) and rel not in force:
             continue
+        todo.append(job)
+    print(f"clips {len(jobs)}; rendering {len(todo)} x2")
+    TMP.mkdir(exist_ok=True)
+    for done, job in enumerate(todo, 1):
+        rel = job["rel"]
         stem = rel.replace("/", "_").replace(".mp3", "")
         wav = TMP / f"{stem}.wav"
         wav_s = TMP / f"{stem}-slow.wav"
         synth(voice, job["say"], wav, 1.0)
         synth(voice, job["say"], wav_s, 1.35)
-        to_mp3(wav, mp3)
-        to_mp3(wav_s, mp3_slow)
-        done += 1
+        to_mp3(wav, ROOT / rel)
+        to_mp3(wav_s, ROOT / rel.replace(".mp3", "-slow.mp3"))
+        rendered[rel] = text_hash(job["say"])
         if done % 20 == 0:
-            print(f"  {done}/{len(jobs)}")
+            print(f"  {done}/{len(todo)}")
+    live = {job["rel"] for job in jobs}
+    rendered = {rel: rendered[rel] for rel in sorted(rendered) if rel in live}
+    RENDERED.write_text(json.dumps(rendered, indent=1) + "\n", encoding="utf-8")
     pad_tree()
     # stamp sha256 of normal word audio
     lex = json.loads(LEX.read_text(encoding="utf-8"))
@@ -201,7 +222,7 @@ def main() -> None:
         if not path.exists():
             raise SystemExit(f"missing {path}")
         item["audioSha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
-    text_stamped = stamp_audio_text_hashes(lex)
+    text_stamped = stamp_audio_text_hashes(lex, rendered)
     LEX.write_text(json.dumps(lex, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print("sha stamped", len(lex["items"]), "text hashes", text_stamped)
 

@@ -1,0 +1,48 @@
+name: audio-asr
+
+# Listens to every clip whose text or mp3 changed in a pull request. A clip
+# whose transcript differs from its text fails when it is also acoustically
+# far from a fresh render of that text (see scripts/check_audio_asr.py).
+on:
+  pull_request:
+    paths:
+      - "content/lexicon.json"
+      - "content/lines.json"
+      - "assets/audio/**"
+      - "scripts/check_audio_asr.py"
+      - "tests/fixtures/asr-known.json"
+      - ".github/workflows/audio-asr.yml"
+
+jobs:
+  asr:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install ffmpeg and sherpa-onnx
+        run: |
+          command -v ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+          python -m pip install sherpa-onnx numpy piper-tts
+      - name: Cache Whisper models
+        id: models
+        uses: actions/cache@v4
+        with:
+          path: ~/asr-models
+          key: sherpa-onnx-whisper-base.en-piper-ljspeech-medium-v1
+      - name: Download Whisper models
+        if: steps.models.outputs.cache-hit != 'true'
+        run: |
+          mkdir -p ~/asr-models && cd ~/asr-models
+          for name in base.en; do
+            curl -sSL --retry 5 -o "$name.tar.bz2" "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-$name.tar.bz2"
+            tar xjf "$name.tar.bz2" --wildcards '*int8.onnx' '*tokens.txt'
+            rm "$name.tar.bz2"
+          done
+          curl -sSL --retry 5 "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-en_US-ljspeech-medium.tar.bz2" \
+            | tar xj --wildcards '*/en_US-ljspeech-medium.onnx' '*/en_US-ljspeech-medium.onnx.json'
+      - name: Check changed clips (normal and slow)
+        run: python scripts/check_audio_asr.py --models ~/asr-models --voice ~/asr-models/vits-piper-en_US-ljspeech-medium/en_US-ljspeech-medium.onnx --changed origin/${{ github.base_ref }} --slow
