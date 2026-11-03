@@ -5,6 +5,7 @@ import { registerRoute } from "workbox-routing";
 import { NetworkOnly } from "workbox-strategies";
 import type { PrecacheEntry } from "workbox-precaching";
 import { navigateNetworkFirst, SHELL_CACHE } from "./sw-navigate.mjs";
+import { planPrecachePurge } from "./sw-purge.mjs";
 
 declare const self: ServiceWorkerGlobalScope & {
   __WB_MANIFEST: Array<PrecacheEntry | string>;
@@ -55,7 +56,7 @@ self.addEventListener("message", (event: ExtendableMessageEvent) => {
 
 async function purgeOldShell(): Promise<boolean> {
   const keep = cacheNames.precache;
-  const allowed = new Set(manifest.map((entry) => new URL(entryUrl(entry), self.registration.scope).pathname));
+  const keepKeys = [...precacheController.getURLsToCacheKeys().values()];
   const keys = await caches.keys();
   let removed = false;
   await Promise.all(keys.map(async (key) => {
@@ -67,11 +68,9 @@ async function purgeOldShell(): Promise<boolean> {
     }
     const cache = await caches.open(key);
     const requests = await cache.keys();
-    await Promise.all(requests.map((request) => {
-      if (allowed.has(new URL(request.url).pathname)) return undefined;
-      removed = true;
-      return cache.delete(request);
-    }));
+    const plan = planPrecachePurge(requests.map((request) => request.url), keepKeys);
+    if (plan.shellChanged) removed = true;
+    await Promise.all(plan.remove.map((url) => cache.delete(url)));
   }));
   return removed;
 }
