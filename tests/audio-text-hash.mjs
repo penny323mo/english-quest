@@ -35,3 +35,24 @@ test("example and mini audio matches the rendered-text hash", () => {
     }
   }
 });
+
+const lines = JSON.parse(fs.readFileSync(path.join(root, "content/lines.json"), "utf8"));
+
+test("every recorded lesson line matches the rendered-text hash", () => {
+  // render_audio.py only writes audioTextSha256 after it renders a clip, so a text edit
+  // without a re-render fails here instead of shipping an old recording.
+  for (const line of lines) {
+    if (line.runtimeTts) continue;
+    check(line.id, "line", { ...line, say: line.say || line.text, en: line.text });
+  }
+});
+
+test("a card's main clip and its first example say the same thing", () => {
+  for (const item of lex.items) {
+    for (const [index, example] of (item.examples || []).entries()) {
+      if (example.audio !== item.audio) continue;
+      assert.equal(renderText(example), item.say, `${item.id} ex${index} vs card say`);
+      assert.equal(example.en, item.example, `${item.id} ex${index} vs card example`);
+    }
+  }
+});

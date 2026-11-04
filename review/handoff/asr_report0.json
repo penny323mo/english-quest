@@ -1,0 +1,3878 @@
+{
+ "failures": [
+  {
+   "path": "assets/audio/words/bow-verb-md0.mp3",
+   "text": "Should I bow when I enter?",
+   "where": "bow-verb md0",
+   "base": "Should I bow when I end too?",
+   "small": "Should I bow when I end too?",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/bass-noun-fish.mp3",
+   "text": "We caught a bass in the river.",
+   "where": "bass-noun-fish main",
+   "base": "We caught Avis in the river.",
+   "small": "We caught Avis in the RIV.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/bass-noun-fish-md1.mp3",
+   "text": "Ginger and steam would suit that fish.",
+   "where": "bass-noun-fish md1",
+   "base": "Ginger and steam would soup at fish.",
+   "small": "Ginger and steam would soup at fish.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/hello-intj-md1.mp3",
+   "text": "Hello. Yes, I have my book.",
+   "where": "hello-intj md1",
+   "base": "Alone, yes, I have my bulk.",
+   "small": "Alone, yes, I have my bulk.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/long-adj.mp3",
+   "text": "Sheep is long.",
+   "where": "long-adj main",
+   "base": "Sheep is lying.",
+   "small": "Sheep is lying.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/long-adj-md1.mp3",
+   "text": "I can. That long vowel glides out.",
+   "where": "long-adj md1",
+   "base": "I can, but Longval glides out.",
+   "small": "I can, but Long Val glides out.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/sheep-noun.mp3",
+   "text": "Sheep is long.",
+   "where": "sheep-noun main",
+   "base": "Sheik is lying.",
+   "small": "Chic is lying.",
+   "wer": 0.67
+  },
+  {
+   "path": "assets/audio/words/again-adv.mp3",
+   "text": "Say it again.",
+   "where": "again-adv main",
+   "base": "See you again!",
+   "small": "Say again.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/again-adv-md1.mp3",
+   "text": "It is Chan, the same as my passport.",
+   "where": "again-adv md1",
+   "base": "It is Chen, the same as Myka Sport.",
+   "small": "It is Jin, the same as Micah Sport.",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/words/name-noun-md1.mp3",
+   "text": "My name is Tom. Glad you asked.",
+   "where": "name-noun md1",
+   "base": "My name is Tar, blade you ist.",
+   "small": "My name is Tarm, Blade you ist.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/beat-verb.mp3",
+   "text": "Beat is long.",
+   "where": "beat-verb main",
+   "base": "Beat his loin.",
+   "small": "Theta's loin.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/bit-noun.mp3",
+   "text": "Bit is short.",
+   "where": "bit-noun main",
+   "base": "It is short.",
+   "small": "Fit is short.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/afternoon-noun-md0.mp3",
+   "text": "Shall we meet tomorrow afternoon at the pier?",
+   "where": "afternoon-noun md0",
+   "base": "Shall we meet tomorrow if to noon at the pair?",
+   "small": "Shall we meet tomorrow if to noon at the pair?",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/my-det.mp3",
+   "text": "My name is {{learner}}.",
+   "where": "my-det main",
+   "base": "My name is Lane.",
+   "small": "My name is Lane.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/you-pron-md0.mp3",
+   "text": "Are you the duty manager?",
+   "where": "you-pron md0",
+   "base": "I review the do-we manager.",
+   "small": "Arview the TV Manager.",
+   "wer": 0.6
+  },
+  {
+   "path": "assets/audio/words/madam-noun-md1.mp3",
+   "text": "Great. Please wrap it again, madam.",
+   "where": "madam-noun md1",
+   "base": "Great, please rep the again, Mundum.",
+   "small": "Great! Please rep me again, madam.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/welcome-verb-md1.mp3",
+   "text": "Yes. Staff welcome everyone at the door.",
+   "where": "welcome-verb md1",
+   "base": "This, stuff welcome everyone at the door.",
+   "small": "This. Stuff welcome everyone at the door.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/a-art.mp3",
+   "text": "A table for two.",
+   "where": "a-art main",
+   "base": "I tap off it too.",
+   "small": "by table 32",
+   "wer": 0.75
+  },
+  {
+   "path": "assets/audio/words/a-letter.mp3",
+   "text": "The letter a says its name.",
+   "where": "a-letter main",
+   "base": "The lei says its name.",
+   "small": "The lay says its name.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/to-prep.mp3",
+   "text": "I am flying to Hong Kong.",
+   "where": "to-prep main",
+   "base": "I am flying to Harinkong.",
+   "small": "I am flying to Harinkai.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/we-pron-md0.mp3",
+   "text": "We need two seats together.",
+   "where": "we-pron md0",
+   "base": "We need two seats to get it.",
+   "small": "We need two seats to get it.",
+   "wer": 0.6
+  },
+  {
+   "path": "assets/audio/words/today-adv-md1.mp3",
+   "text": "It is tomato and egg, with rice on the side.",
+   "where": "today-adv md1",
+   "base": "It is to me Owen Degg with the rice on the side.",
+   "small": "It is to mayo and egg with the rice on the side.",
+   "wer": 0.3
+  },
+  {
+   "path": "assets/audio/words/very-adv-md1.mp3",
+   "text": "It looks very clear. Do not turn the /v/ into /w/.",
+   "where": "very-adv md1",
+   "base": "It looks very clear. Do not turn the slish v slash into slish w slash.",
+   "small": "It looks very clear. Do not turn the slish v slish into slish w slush.",
+   "wer": 0.36
+  },
+  {
+   "path": "assets/audio/words/want-verb-md0.mp3",
+   "text": "Do you want a bag?",
+   "where": "want-verb md0",
+   "base": "Do you want to build?",
+   "small": "Do you want to build?",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/two-num.mp3",
+   "text": "A table for two, please.",
+   "where": "two-num main",
+   "base": "or table foot to please.",
+   "small": "or table to please.",
+   "wer": 0.6
+  },
+  {
+   "path": "assets/audio/words/two-num-md0.mp3",
+   "text": "Are you two sharing one bill?",
+   "where": "two-num md0",
+   "base": "RE2 sharing one bill.",
+   "small": "RE2 sharing one bill.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/love-verb-md1.mp3",
+   "text": "Yes. I loved the last song.",
+   "where": "love-verb md1",
+   "base": "Yes, I loved the less sewing.",
+   "small": "Yes, I loved the less sewing.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/watch-noun.mp3",
+   "text": "A watch and a ring.",
+   "where": "watch-noun main",
+   "base": "A large amount of rain.",
+   "small": "A March in a Ring",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/watch-noun-ex3.mp3",
+   "text": "I fastened the watch with both hands.",
+   "where": "watch-noun e2",
+   "base": "Iris asked about the watch on the glass counter before noon.",
+   "small": "Iris asked about the watch on the gliss count of the Fort noon",
+   "wer": 1.57
+  },
+  {
+   "path": "assets/audio/words/earring-noun-ex3.mp3",
+   "text": "Please certify this earring in writing.",
+   "where": "earring-noun e2",
+   "base": "Please, Sir, find this airing in Rhein.",
+   "small": "Please survive this erring in writing.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/wine-noun.mp3",
+   "text": "Wine starts with /w/.",
+   "where": "wine-noun main",
+   "base": "flying",
+   "small": "Why?",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/vine-noun.mp3",
+   "text": "Vine starts with /v/.",
+   "where": "vine-noun main",
+   "base": "Fine.",
+   "small": "Fine.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/vine-noun-md1.mp3",
+   "text": "That vine climbs the wall, and its opening sound is /v/, not /w/.",
+   "where": "vine-noun md1",
+   "base": "It vine climbs the wall, and its opening sound is slush v slash, not slush w slash.",
+   "small": "It vine climbs the wall, and its opening sound is slish v slash, not slish w slash.",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/words/west-noun.mp3",
+   "text": "West starts with /w/.",
+   "where": "west-noun main",
+   "base": "West",
+   "small": "West",
+   "wer": 0.75
+  },
+  {
+   "path": "assets/audio/words/vest-noun.mp3",
+   "text": "Vest starts with /v/.",
+   "where": "vest-noun main",
+   "base": "Best",
+   "small": "Vest",
+   "wer": 0.75
+  },
+  {
+   "path": "assets/audio/words/vest-noun-md1.mp3",
+   "text": "This vest is wool. Touch the lower lip for /v/.",
+   "where": "vest-noun md1",
+   "base": "This mess does wool. Touch the lulip for slush v-slush.",
+   "small": "This mess does wool. Touch the low lip for slush v-slush.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/ticket-noun-md1.mp3",
+   "text": "The ticket shows a morning departure.",
+   "where": "ticket-noun md1",
+   "base": "The ticket shows a morning to Parch.",
+   "small": "The ticket show is a morning departure.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/table-noun.mp3",
+   "text": "A table for two, please.",
+   "where": "table-noun main",
+   "base": "Bart table food to please.",
+   "small": "or table food to please.",
+   "wer": 0.6
+  },
+  {
+   "path": "assets/audio/words/menu-noun-md1.mp3",
+   "text": "Could the menu also come in English?",
+   "where": "menu-noun md1",
+   "base": "Could the manual so come in English?",
+   "small": "Could the manual succumb in English?",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/else-adv-md1.mp3",
+   "text": "Pack sunscreen, hats, and a dry towel.",
+   "where": "else-adv md1",
+   "base": "Pucks on screen, heads been a dry towel.",
+   "small": "Cuck sunscreen, head spinner dry towel.",
+   "wer": 0.57
+  },
+  {
+   "path": "assets/audio/words/water-noun-ex3.mp3",
+   "text": "I circled the water on the catalogue.",
+   "where": "water-noun e2",
+   "base": "Hugh asked about the war and knew the front door before noon.",
+   "small": "Heu asked about the war and near the front door before noon.",
+   "wer": 1.43
+  },
+  {
+   "path": "assets/audio/words/cant-verb-md1.mp3",
+   "text": "We can move under the umbrella then.",
+   "where": "cant-verb md1",
+   "base": "We can move on to the umbrella then.",
+   "small": "We can move on to the umbrella then.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/red-adj-md1.mp3",
+   "text": "I found the red one. It is a color, not led.",
+   "where": "red-adj md1",
+   "base": "I found the red one. It is Apollo, Mark led.",
+   "small": "I found the red one. It is a polo, marked lead.",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/words/led-verb-md1.mp3",
+   "text": "Yes. Ana led them, and led is not red.",
+   "where": "led-verb md1",
+   "base": "Yes, Arner led them, and led his North Red.",
+   "small": "Thus Arno led them, and led his narc red.",
+   "wer": 0.44
+  },
+  {
+   "path": "assets/audio/words/with-prep-md1.mp3",
+   "text": "Yes. With cash at till three.",
+   "where": "with-prep md1",
+   "base": "Yes, with Keshe till 3.",
+   "small": "Yes, with Keshe till 3.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/sank-verb.mp3",
+   "text": "The boat sank.",
+   "where": "sank-verb main",
+   "base": "The boat's sake.",
+   "small": "The Bot's Sink",
+   "wer": 0.67
+  },
+  {
+   "path": "assets/audio/words/cheat-verb-md1.mp3",
+   "text": "No. Nobody cheated.",
+   "where": "cheat-verb md1",
+   "base": "Now, no body cheat.",
+   "small": "Now, no Barney Cheat.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/or-conj-md1.mp3",
+   "text": "Tea, please.",
+   "where": "or-conj md1",
+   "base": "T, please.",
+   "small": "T please.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/laptop-noun.mp3",
+   "text": "Here is my laptop.",
+   "where": "laptop-noun main",
+   "base": "Here is my lip attack.",
+   "small": "Here is my lip protect.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/laptop-noun-md1.mp3",
+   "text": "Thanks. Keep the laptop out until the scan.",
+   "where": "laptop-noun md1",
+   "base": "Thanks, keep the look tarp out until the skin.",
+   "small": "Thanks, keep the look tarp out until the spin.",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/words/straight-adv-md1.mp3",
+   "text": "Go straight. The vowel is /eɪ/, unlike street.",
+   "where": "straight-adv md1",
+   "base": "Go straight. The vowel is slash e small kipai slash unlike straight.",
+   "small": "Go straight. The vowel is slush e small kapai slush on like street.",
+   "wer": 0.86
+  },
+  {
+   "path": "assets/audio/words/lift-noun-md0.mp3",
+   "text": "Take the lift beside the bookshop.",
+   "where": "lift-noun md0",
+   "base": "Take the lift beside the book shark.",
+   "small": "Take the lift beside the book sharp.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/lift-noun-md1.mp3",
+   "text": "I see the lift. Lift has /ɪ/, and left has /ɛ/.",
+   "where": "lift-noun md1",
+   "base": "I see the lift. Lift has slish small, capy slish, and left has slish open and slish.",
+   "small": "I see the lift. Lift has slish, small kapai slish. In left has slish, open and slish.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/security-noun-md1.mp3",
+   "text": "Thanks. Is the queue at security moving?",
+   "where": "security-noun md1",
+   "base": "Thanks, is the cute, scary moving.",
+   "small": "Thanks, is the Qt security moving?",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/just-looking-phrase-ex3.mp3",
+   "text": "Please isolate the damaged just looking.",
+   "where": "just-looking-phrase e2",
+   "base": "Liam asked about the just looking near the front door before noon.",
+   "small": "Liam asked about the just looking near the front door before noon.",
+   "wer": 1.67
+  },
+  {
+   "path": "assets/audio/words/table-for-two-phrase.mp3",
+   "text": "A table for two, please.",
+   "where": "table-for-two-phrase main",
+   "base": "For table foot to please.",
+   "small": "or table foot to please.",
+   "wer": 0.6
+  },
+  {
+   "path": "assets/audio/words/six-num.mp3",
+   "text": "It is six dollars.",
+   "where": "six-num main",
+   "base": "$8 is $6.",
+   "small": "8 is $6.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/nine-num-md0.mp3",
+   "text": "The kitchen takes the last order at nine.",
+   "where": "nine-num md0",
+   "base": "A kitchen takes the list for a Brit 9.",
+   "small": "The kitchen takes the list for Brit 9.",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/words/clock-noun-md1.mp3",
+   "text": "The clock says twenty past seven.",
+   "where": "clock-noun md1",
+   "base": "The Clark says 20 pissed 7.",
+   "small": "The clerk says 20-pist-7.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/pardon-verb-md1.mp3",
+   "text": "It is gate twenty. Pardon the noisy speaker.",
+   "where": "pardon-verb md1",
+   "base": "In his gate 20th pardon the noise he speak.",
+   "small": "He is gatewented. Pardon the noisy speak.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/night-noun-md0.mp3",
+   "text": "The last bus leaves at night.",
+   "where": "night-noun md0",
+   "base": "A less bus leaves night.",
+   "small": "The list bus leaves night.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/night-noun-md1.mp3",
+   "text": "Night uses /n/. Light uses /l/.",
+   "where": "night-noun md1",
+   "base": "Night used, slash and slash, light used, slash L slash.",
+   "small": "night used slash n slash light uses slash l slash",
+   "wer": 0.83
+  },
+  {
+   "path": "assets/audio/words/net-noun-md1.mp3",
+   "text": "That is a net. It starts with /n/, unlike let.",
+   "where": "net-noun md1",
+   "base": "That is a net. It starts with slash and slash unlike let.",
+   "small": "That is a net. It starts with slash and slash, unlike let.",
+   "wer": 0.3
+  },
+  {
+   "path": "assets/audio/words/excuse-me-phrase-md1.mp3",
+   "text": "Yes. It stops at the pier level.",
+   "where": "excuse-me-phrase md1",
+   "base": "This, it starts the parallel level.",
+   "small": "Yes, it starts at the perilevel.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/white-gold-phrase-ex3.mp3",
+   "text": "Could you show me a white gold near the window?",
+   "where": "white-gold-phrase e2",
+   "base": "Could you show me a platinum of the window?",
+   "small": "Could you show me a platinum in the window?",
+   "wer": 0.3
+  },
+  {
+   "path": "assets/audio/words/rose-gold-phrase-ex3.mp3",
+   "text": "Could you show me a rose gold near the window?",
+   "where": "rose-gold-phrase e2",
+   "base": "Could you show me a oruzagled note the window?",
+   "small": "Could you show me a or musical note of the window?",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/diamond-noun-ex3.mp3",
+   "text": "Please quote the diamond in writing.",
+   "where": "diamond-noun e2",
+   "base": "Ned asked about the diamond by the side when due before noon.",
+   "small": "Ned asked about the diamond by the side window before noon.",
+   "wer": 1.5
+  },
+  {
+   "path": "assets/audio/words/jade-noun-ex3.mp3",
+   "text": "Natural jade feels cool on the skin.",
+   "where": "jade-noun e2",
+   "base": "The guest mentioned a jade to the clerk.",
+   "small": "The guest mentioned a jade to the clerk.",
+   "wer": 1.14
+  },
+  {
+   "path": "assets/audio/words/gemstone-noun-ex3.mp3",
+   "text": "We donated the unused gemstone kit.",
+   "where": "gemstone-noun e2",
+   "base": "Tess asked about the gemstone by the side window before noon.",
+   "small": "Tess esquebelt the gemstone by the side window before noon.",
+   "wer": 1.5
+  },
+  {
+   "path": "assets/audio/words/karat-noun-ex3.mp3",
+   "text": "We replaced a broken karat for free.",
+   "where": "karat-noun e2",
+   "base": "Paul asked about the parrot by the side window before noon.",
+   "small": "Paul asked about the parrot by the side window before noon.",
+   "wer": 1.57
+  },
+  {
+   "path": "assets/audio/words/natural-adj-ex2.mp3",
+   "text": "Natural jade is not treated.",
+   "where": "natural-adj e1",
+   "base": "Mitchell Jade is Narke Tree.",
+   "small": "Mitchell Jade is Narktreed.",
+   "wer": 0.6
+  },
+  {
+   "path": "assets/audio/words/treated-adj-md1.mp3",
+   "text": "Treated stones look brighter.",
+   "where": "treated-adj md1",
+   "base": "Treeard stones look bright.",
+   "small": "Treid Stones look Brian.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/setting-noun-ex3.mp3",
+   "text": "We audited every borrowed setting.",
+   "where": "setting-noun e2",
+   "base": "Pull us about the setting under the red limb before noon.",
+   "small": "Poll us about the setting under the red lamp before noon.",
+   "wer": 2.0
+  },
+  {
+   "path": "assets/audio/words/size-noun-ex3.mp3",
+   "text": "That size sold out before noon.",
+   "where": "size-noun e2",
+   "base": "Hope asked about the size under the red lump before noon.",
+   "small": "Pope asked about the size under the red lump before noon.",
+   "wer": 1.33
+  },
+  {
+   "path": "assets/audio/words/measure-verb-ex3.mp3",
+   "text": "Can you measure it again for me?",
+   "where": "measure-verb e2",
+   "base": "Can you initiate again for me?",
+   "small": "Can you initiate again for me?",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/measure-verb-md1.mp3",
+   "text": "It is one meter wide and two meters tall.",
+   "where": "measure-verb md1",
+   "base": "It is one meal widened, two meals tall.",
+   "small": "It is one meal widened, two meals tall.",
+   "wer": 0.44
+  },
+  {
+   "path": "assets/audio/words/try-on-phrase-ex3.mp3",
+   "text": "May I try a different try on?",
+   "where": "try-on-phrase e2",
+   "base": "You nurse to about the trial and inside the small barks before noon.",
+   "small": "You're nervous about the trial and inside the small darks before noon.",
+   "wer": 1.71
+  },
+  {
+   "path": "assets/audio/words/fit-verb-ex3.mp3",
+   "text": "Can you fit it again for me?",
+   "where": "fit-verb e2",
+   "base": "Can you bracelet ache again for me?",
+   "small": "Can you bracelet ache again for me?",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/finger-noun-ex3.mp3",
+   "text": "May I try a different finger?",
+   "where": "finger-noun e2",
+   "base": "Iris iced about the finger inside the small barks before noon.",
+   "small": "Iris aced about the finger inside the small barks before noon.",
+   "wer": 1.83
+  },
+  {
+   "path": "assets/audio/words/finger-noun-md1.mp3",
+   "text": "This ring is for the finger.",
+   "where": "finger-noun md1",
+   "base": "This ring is a thing.",
+   "small": "This ring is the thing",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/mirror-noun-ex3.mp3",
+   "text": "We rotate the display mirror weekly.",
+   "where": "mirror-noun e2",
+   "base": "Friend asked about the mirror beside the blue chair before noon.",
+   "small": "Friend asked about the mirror beside the blue chair before noon.",
+   "wer": 1.67
+  },
+  {
+   "path": "assets/audio/words/cost-noun-ex3.mp3",
+   "text": "Please write \"cost\" on line three.",
+   "where": "cost-noun e2",
+   "base": "What is the total cost for this ring?",
+   "small": "What is the tool cost for this ring?",
+   "wer": 1.17
+  },
+  {
+   "path": "assets/audio/words/cost-noun-md1.mp3",
+   "text": "The cost includes tax.",
+   "where": "cost-noun md1",
+   "base": "The course includes text.",
+   "small": "The course includes text.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/percent-noun-ex3.mp3",
+   "text": "Please isolate the damaged percent.",
+   "where": "percent-noun e2",
+   "base": "Vira has stood out the percent behind the green plant before noon.",
+   "small": "Vera, a stood out the percent behind the green plant before noon.",
+   "wer": 2.5
+  },
+  {
+   "path": "assets/audio/words/off-adv-ex2.mp3",
+   "text": "This piece is ten percent off.",
+   "where": "off-adv e1",
+   "base": "This piece is 10th set off.",
+   "small": "This piece is tenth set off.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/offer-noun-ex2.mp3",
+   "text": "In today's drill, circle the word offer.",
+   "where": "offer-noun e1",
+   "base": "Meener likes this Friday often.",
+   "small": "Mina likes this Friday often.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/offer-noun-ex3.mp3",
+   "text": "The offer vendor changed prices again.",
+   "where": "offer-noun e2",
+   "base": "Hugh asked about the waffle behind the green plant before noon.",
+   "small": "Hugh asked about the offer behind the green plant before noon.",
+   "wer": 1.5
+  },
+  {
+   "path": "assets/audio/words/include-verb.mp3",
+   "text": "Does the total include tax?",
+   "where": "include-verb main",
+   "base": "Does the tool include tips?",
+   "small": "Does the tool include tips?",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/include-verb-md0.mp3",
+   "text": "Does the total include tax?",
+   "where": "include-verb md0",
+   "base": "Does the tool include text?",
+   "small": "Does the tool include text?",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/tax-noun-ex2.mp3",
+   "text": "The total includes tax.",
+   "where": "tax-noun e1",
+   "base": "The tool includes text.",
+   "small": "The tool includes text.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/tax-noun-md0.mp3",
+   "text": "The total includes tax.",
+   "where": "tax-noun md0",
+   "base": "The tool includes text.",
+   "small": "The tool includes text.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/total-noun-ex2.mp3",
+   "text": "In today's drill, circle the word total.",
+   "where": "total-noun e1",
+   "base": "Tex is already inside the towel.",
+   "small": "Tex is already inside the towel.",
+   "wer": 0.86
+  },
+  {
+   "path": "assets/audio/words/total-noun-ex3.mp3",
+   "text": "I timed how long the total lasts.",
+   "where": "total-noun e2",
+   "base": "Iris asked about the toll behind the green plant before noon.",
+   "small": "Iris asked about the toll behind the green plant before noon.",
+   "wer": 1.57
+  },
+  {
+   "path": "assets/audio/words/budget-noun-ex3.mp3",
+   "text": "I cushioned the budget with bubble wrap.",
+   "where": "budget-noun e2",
+   "base": "Glenn is about the budget behind the green plinth before noon.",
+   "small": "Glenn ist about the budget behind the green plant before noon.",
+   "wer": 1.29
+  },
+  {
+   "path": "assets/audio/words/budget-noun-md0.mp3",
+   "text": "Does this laptop fit your travel budget?",
+   "where": "budget-noun md0",
+   "base": "Does this slop-tark fit your travel budget?",
+   "small": "Does this slop tarp fit your travel budget?",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/deal-noun-ex3.mp3",
+   "text": "We discounted the scratched deal.",
+   "where": "deal-noun e2",
+   "base": "Liam asked about the deal on the wooden shelf before noon.",
+   "small": "Liam asked about the deal on the wooden shelf before noon.",
+   "wer": 2.0
+  },
+  {
+   "path": "assets/audio/words/sale-noun-ex3.mp3",
+   "text": "I circled the sale on the catalogue.",
+   "where": "sale-noun e2",
+   "base": "Ruth asked about the sale on the wooden shelf before noon.",
+   "small": "Ruth asked about the sale on the wooden shelf before noon.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/card-noun-ex3.mp3",
+   "text": "I swapped my card for a quieter one.",
+   "where": "card-noun e2",
+   "base": "Me at a stabout the cart, when the wooden shelf before noon.",
+   "small": "Be at a stave out the cart when the wooden shelf before noon.",
+   "wer": 1.88
+  },
+  {
+   "path": "assets/audio/words/contactless-adj.mp3",
+   "text": "You can tap your contactless card here.",
+   "where": "contactless-adj main",
+   "base": "You can tick your can't-plissed card hair.",
+   "small": "You can tip your can't bliss card hair.",
+   "wer": 0.57
+  },
+  {
+   "path": "assets/audio/words/contactless-adj-ex2.mp3",
+   "text": "Contactless pay is ready now.",
+   "where": "contactless-adj e1",
+   "base": "Kent Bliss Pay is ready now.",
+   "small": "Kent Bliss Pay is ready now.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/contactless-adj-md1.mp3",
+   "text": "Contactless pay is ready.",
+   "where": "contactless-adj md1",
+   "base": "Can't less pay is ready.",
+   "small": "Can't List Pay is ready.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/invoice-noun.mp3",
+   "text": "I need an invoice.",
+   "where": "invoice-noun main",
+   "base": "I'm Nian In-Boys.",
+   "small": "I'm Nian Inboys.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/invoice-noun-md0.mp3",
+   "text": "I need an invoice.",
+   "where": "invoice-noun md0",
+   "base": "I'm Nian in boys.",
+   "small": "I'm Nian in Boyce.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/tax-free-phrase-md1.mp3",
+   "text": "Tax-free needs your passport.",
+   "where": "tax-free-phrase md1",
+   "base": "Chuck's re needs your passport.",
+   "small": "Tuxri needs your passport.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/refund-form-phrase-ex3.mp3",
+   "text": "A spare refund form sits in the drawer.",
+   "where": "refund-form-phrase e2",
+   "base": "Hope asked about the refund form across the quiet hall before noon.",
+   "small": "Hope asked about the refund form across the quiet hall before noon.",
+   "wer": 1.25
+  },
+  {
+   "path": "assets/audio/words/bag-noun-md0.mp3",
+   "text": "Would a paper bag be better than plastic?",
+   "where": "bag-noun md0",
+   "base": "We'll paint the baby bad and plastic.",
+   "small": "We're paid for baby bear then plastic.",
+   "wer": 0.88
+  },
+  {
+   "path": "assets/audio/words/gift-box-phrase-ex3.mp3",
+   "text": "Please archive the old gift box form.",
+   "where": "gift-box-phrase e2",
+   "base": "Yal asked about the gift box near the open drawer before noon.",
+   "small": "Yael asked about the gift barks near the open drawer before noon.",
+   "wer": 1.57
+  },
+  {
+   "path": "assets/audio/words/signature-noun-ex3.mp3",
+   "text": "I will collect the signature after work.",
+   "where": "signature-noun e2",
+   "base": "Cora asked about the signature near the open drawer before noon.",
+   "small": "Quora asked about the signature near the open drawer before noon.",
+   "wer": 1.29
+  },
+  {
+   "path": "assets/audio/words/allergy-noun-ex3.mp3",
+   "text": "The allergy kit includes spare screws.",
+   "where": "allergy-noun e2",
+   "base": "Glenn asked about the ology near the open drawer before noon.",
+   "small": "Glenn asked about the ology near the open drawer before noon.",
+   "wer": 1.67
+  },
+  {
+   "path": "assets/audio/words/shellfish-noun.mp3",
+   "text": "I cannot eat shellfish.",
+   "where": "shellfish-noun main",
+   "base": "I can art eat shellfish.",
+   "small": "I can art, eat shellfish.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/shellfish-noun-ex3.mp3",
+   "text": "I will collect the shellfish after work.",
+   "where": "shellfish-noun e2",
+   "base": "You asked about the shellfish but a round table before noon.",
+   "small": "You asked about the shellfish but a round table before noon.",
+   "wer": 1.29
+  },
+  {
+   "path": "assets/audio/words/shellfish-noun-md0.mp3",
+   "text": "I cannot eat shellfish.",
+   "where": "shellfish-noun md0",
+   "base": "I can art eat shellfish.",
+   "small": "I can art, eat shellfish.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/dairy-noun-ex3.mp3",
+   "text": "We rotate the display dairy weekly.",
+   "where": "dairy-noun e2",
+   "base": "Liam asked about the dairy by the round table before noon.",
+   "small": "Liam, asked about the dairy by the round table before noon.",
+   "wer": 1.67
+  },
+  {
+   "path": "assets/audio/words/gluten-noun.mp3",
+   "text": "This bread has gluten.",
+   "where": "gluten-noun main",
+   "base": "This spread has gluing.",
+   "small": "This bread has glue in it.",
+   "wer": 0.75
+  },
+  {
+   "path": "assets/audio/words/gluten-noun-ex2.mp3",
+   "text": "Is there gluten in the sauce?",
+   "where": "gluten-noun e1",
+   "base": "Is there a glue in the source?",
+   "small": "Is there a gluing in the source?",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/gluten-noun-ex3.mp3",
+   "text": "The inspector weighed every gluten.",
+   "where": "gluten-noun e2",
+   "base": "Ruth asked about the glue and butt around table before noon.",
+   "small": "Ruth asked about the glue and but a roundtable before noon.",
+   "wer": 2.0
+  },
+  {
+   "path": "assets/audio/words/gluten-noun-md1.mp3",
+   "text": "Is there gluten in the sauce?",
+   "where": "gluten-noun md1",
+   "base": "Is there a glue in the source?",
+   "small": "Is there a gluing in the source?",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/sauce-noun-ex2.mp3",
+   "text": "Could I have the sauce later?",
+   "where": "sauce-noun e1",
+   "base": "Could I have the source weigh in?",
+   "small": "Could I have the source weigh you?",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/sauce-noun-ex3.mp3",
+   "text": "We double-checked the sauce weight.",
+   "where": "sauce-noun e2",
+   "base": "Could you check the basis again?",
+   "small": "Could you check the buses again?",
+   "wer": 0.83
+  },
+  {
+   "path": "assets/audio/words/on-the-side-phrase-md0.mp3",
+   "text": "Sauce on the side, please.",
+   "where": "on-the-side-phrase md0",
+   "base": "Source from the side, please.",
+   "small": "Source from the side, please.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/without-prep-ex3.mp3",
+   "text": "We kept without spare key downstairs.",
+   "where": "without-prep e2",
+   "base": "Please look without the list.",
+   "small": "Please look without the list.",
+   "wer": 0.83
+  },
+  {
+   "path": "assets/audio/words/contain-verb-ex3.mp3",
+   "text": "She can contain the booking online.",
+   "where": "contain-verb e2",
+   "base": "She can contain the booking arm line.",
+   "small": "She can contain the booking arm line.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/ingredients-noun-ex3.mp3",
+   "text": "The ingredients listing expires on Sunday.",
+   "where": "ingredients-noun e2",
+   "base": "and then ingredients with Stinex spies on Sunday.",
+   "small": "and ingredients listed in expires on Sunday.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/thank-you-for-telling-phrase-ex3.mp3",
+   "text": "Please dust the thank you for telling me before photos.",
+   "where": "thank-you-for-telling-phrase e2",
+   "base": "Please check the if and Q for attelling beside the finf tray.",
+   "small": "Please check the if and Q for a telling beside the 5th tray.",
+   "wer": 0.9
+  },
+  {
+   "path": "assets/audio/words/key-card-phrase-ex2.mp3",
+   "text": "I left my key card in the room safe.",
+   "where": "key-card-phrase e1",
+   "base": "The key card opens your room.",
+   "small": "The key card opens your room.",
+   "wer": 0.67
+  },
+  {
+   "path": "assets/audio/words/key-card-phrase-ex3.mp3",
+   "text": "Reception can reprint your key card.",
+   "where": "key-card-phrase e2",
+   "base": "Joel asked about the key card under the tall clerk before noon.",
+   "small": "Joel list about the keycard under the toll clerk before noon.",
+   "wer": 1.83
+  },
+  {
+   "path": "assets/audio/words/key-card-phrase-md1.mp3",
+   "text": "Yes. A new one is at reception.",
+   "where": "key-card-phrase md1",
+   "base": "Yes, a new one is a perception.",
+   "small": "Yes, a new one is a perception.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/room-noun-ex3.mp3",
+   "text": "I timed how long the room lasts.",
+   "where": "room-noun e2",
+   "base": "Please check the room beside the room tray.",
+   "small": "Please check the room beside the room tray.",
+   "wer": 1.14
+  },
+  {
+   "path": "assets/audio/words/twin-noun-ex3.mp3",
+   "text": "We double-checked the twin weight.",
+   "where": "twin-noun e2",
+   "base": "Quinn asked about the twin inside the blue tray before noon.",
+   "small": "Quinn asked about the twin inside the blue tray before noon.",
+   "wer": 1.5
+  },
+  {
+   "path": "assets/audio/words/view-noun-ex2.mp3",
+   "text": "I would like a city view.",
+   "where": "view-noun e1",
+   "base": "I would like to save you.",
+   "small": "I would like to save you.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/view-noun-ex3.mp3",
+   "text": "Can the view ship overseas?",
+   "where": "view-noun e2",
+   "base": "Hugh asked about the view inside the blue tray before noon.",
+   "small": "Hugh asked about the view inside the blue tray before noon.",
+   "wer": 1.8
+  },
+  {
+   "path": "assets/audio/words/view-noun-md1.mp3",
+   "text": "I would like a city view.",
+   "where": "view-noun md1",
+   "base": "I would like to see you.",
+   "small": "I would like to save you.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/password-noun-ex3.mp3",
+   "text": "Please write \"password\" on line three.",
+   "where": "password-noun e2",
+   "base": "Please check the password beside the password tray.",
+   "small": "Please check the password beside the password tray.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/breakfast-noun.mp3",
+   "text": "Breakfast starts at seven.",
+   "where": "breakfast-noun main",
+   "base": "A breakfast starts 7.",
+   "small": "A breakfast starts seven.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/floor-noun-ex3.mp3",
+   "text": "The lease lists the monthly floor.",
+   "where": "floor-noun e2",
+   "base": "The least lists a monthly floor.",
+   "small": "The lease list is the monthly floor.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/late-checkout-phrase.mp3",
+   "text": "Can I have a late checkout?",
+   "where": "late-checkout-phrase main",
+   "base": "Can I have a late-itsh account?",
+   "small": "Can I have a late itch account?",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/late-checkout-phrase-ex3.mp3",
+   "text": "Reception can reprint your late checkout.",
+   "where": "late-checkout-phrase e2",
+   "base": "Reception can reprint your Olate at checkout.",
+   "small": "Reception can reprint your Olay at checkout.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/taxi-noun.mp3",
+   "text": "The taxi is waiting at the corner.",
+   "where": "taxi-noun main",
+   "base": "The taxi is weighing at the quorum.",
+   "small": "The Texie is weighing at the quorum.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/taxi-noun-md0.mp3",
+   "text": "The taxi is waiting at the corner.",
+   "where": "taxi-noun md0",
+   "base": "The taxi is weighing at the quorum.",
+   "small": "The Texie is weighing at the quorum.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/destination-noun-ex3.mp3",
+   "text": "The destination kit includes spare screws.",
+   "where": "destination-noun e2",
+   "base": "Please check the destination beside the destination tray.",
+   "small": "Please check the destination beside the destination tray.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/address-noun-ex3.mp3",
+   "text": "She packed the address before leaving.",
+   "where": "address-noun e2",
+   "base": "Please check that address beside the address tray.",
+   "small": "Please check the address beside the address tray.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/corner-noun.mp3",
+   "text": "Please stop at the next corner.",
+   "where": "corner-noun main",
+   "base": "Please start with the next quorum.",
+   "small": "Please start with the next quorum.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/corner-noun-ex3.mp3",
+   "text": "The loaner corner must return by six.",
+   "where": "corner-noun e2",
+   "base": "Dana is about the corner and the glist counter on Friday.",
+   "small": "Dayner a-stabbout the corner and the glist counter on Friday.",
+   "wer": 1.43
+  },
+  {
+   "path": "assets/audio/words/traffic-noun-ex3.mp3",
+   "text": "We foam-packed the fragile traffic.",
+   "where": "traffic-noun e2",
+   "base": "Eunice about the traffic on the Gliss Counter on Friday.",
+   "small": "Eunor asked about the traffic on the GLIS counter on Friday.",
+   "wer": 1.67
+  },
+  {
+   "path": "assets/audio/words/traffic-noun-md1.mp3",
+   "text": "Traffic is heavy near the corner.",
+   "where": "traffic-noun md1",
+   "base": "Traffic is heading near the Corinne.",
+   "small": "Traffic is heading near the quarren.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/meter-noun.mp3",
+   "text": "The meter shows the fare.",
+   "where": "meter-noun main",
+   "base": "The meeting shows the fair.",
+   "small": "The meeting shows the fair.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/meter-noun-ex3.mp3",
+   "text": "We audited every borrowed meter.",
+   "where": "meter-noun e2",
+   "base": "We already had every bar of the meat.",
+   "small": "We'll orient every barrow to meet.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/meter-noun-md0.mp3",
+   "text": "The meter shows the fare.",
+   "where": "meter-noun md0",
+   "base": "The meeting shows the fair.",
+   "small": "The meat issues the fair.",
+   "wer": 0.6
+  },
+  {
+   "path": "assets/audio/words/roughly-adv-ex2.mp3",
+   "text": "The fare is roughly forty dollars.",
+   "where": "roughly-adv e1",
+   "base": "The fair is roughly $4.00.",
+   "small": "The fair is roughly four e-dorals.",
+   "wer": 0.6
+  },
+  {
+   "path": "assets/audio/words/landmark-noun.mp3",
+   "text": "Turn left at the landmark.",
+   "where": "landmark-noun main",
+   "base": "Turn left at the link mark.",
+   "small": "Turn left at the link mark.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/landmark-noun-ex3.mp3",
+   "text": "I swapped my landmark for a quieter one.",
+   "where": "landmark-noun e2",
+   "base": "I swarced my old mark for acquiring one.",
+   "small": "I swiped my landmark for acquiring one.",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/words/landmark-noun-md0.mp3",
+   "text": "Turn left at the landmark.",
+   "where": "landmark-noun md0",
+   "base": "Turn left the link mark.",
+   "small": "Turn left the link mark.",
+   "wer": 0.6
+  },
+  {
+   "path": "assets/audio/words/embassy-noun-ex3.mp3",
+   "text": "We foam-packed the fragile embassy.",
+   "where": "embassy-noun e2",
+   "base": "Please check the embassy beside the embassy trade.",
+   "small": "Please check the embassy beside the embassy tray.",
+   "wer": 1.33
+  },
+  {
+   "path": "assets/audio/words/emergency-noun-ex3.mp3",
+   "text": "I cross-checked the emergency against stock.",
+   "where": "emergency-noun e2",
+   "base": "Please check that emergency beside the emergency tray.",
+   "small": "Please check the emergency beside the emergency tray.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/ambulance-noun-ex3.mp3",
+   "text": "I labelled both ends of the ambulance.",
+   "where": "ambulance-noun e2",
+   "base": "Tess asked about the ambulance near the front door on Friday.",
+   "small": "Tests est about the ambulance near the front door on Friday.",
+   "wer": 1.57
+  },
+  {
+   "path": "assets/audio/words/complaint-noun.mp3",
+   "text": "I have a complaint about the clasp.",
+   "where": "complaint-noun main",
+   "base": "I had a complaint about the class.",
+   "small": "I had a complaint about the close.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/complaint-noun-ex3.mp3",
+   "text": "The inspector weighed every complaint.",
+   "where": "complaint-noun e2",
+   "base": "Be inspect to wait every complaint.",
+   "small": "The inspect await every complaint.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/replace-verb-md1.mp3",
+   "text": "Not yet. Give me a minute.",
+   "where": "replace-verb md1",
+   "base": "Narkit, give me a minute.",
+   "small": "Narket, give me a minute.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/refund-noun.mp3",
+   "text": "I would like a refund please.",
+   "where": "refund-noun main",
+   "base": "I would like a or if and please",
+   "small": "I would like a or if and please.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/refund-noun-ex2.mp3",
+   "text": "A refund needs the receipt.",
+   "where": "refund-noun e1",
+   "base": "or reef in needs the receipt.",
+   "small": "A wreath and kneads the receipt.",
+   "wer": 0.6
+  },
+  {
+   "path": "assets/audio/words/refund-noun-ex3.mp3",
+   "text": "I enjoy quiet music after the refund.",
+   "where": "refund-noun e2",
+   "base": "Please check the roof and beside the roof and tray.",
+   "small": "Please check the reef end beside the reef and tray.",
+   "wer": 1.71
+  },
+  {
+   "path": "assets/audio/words/refund-noun-md0.mp3",
+   "text": "I would like a refund please.",
+   "where": "refund-noun md0",
+   "base": "I would like a reef and please",
+   "small": "I would like a reef and pleads.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/refund-noun-md1.mp3",
+   "text": "A refund needs the receipt.",
+   "where": "refund-noun md1",
+   "base": "or reefing needs the receipt.",
+   "small": "or reef and needs the receipt.",
+   "wer": 0.6
+  },
+  {
+   "path": "assets/audio/words/manager-noun.mp3",
+   "text": "The manager will review the receipt.",
+   "where": "manager-noun main",
+   "base": "The minute you will review the receipt.",
+   "small": "the minute you will review the receipt.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/manager-noun-ex3.mp3",
+   "text": "Do you still sell that manager?",
+   "where": "manager-noun e2",
+   "base": "Please check the immunerjib beside the miniature tray.",
+   "small": "Please check the emitter beside the miniature tray.",
+   "wer": 1.33
+  },
+  {
+   "path": "assets/audio/words/broken-adj-ex3.mp3",
+   "text": "That answer sounds broken.",
+   "where": "broken-adj e2",
+   "base": "but Insta sounds broken.",
+   "small": "but inse sounds broken.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/issue-noun-ex3.mp3",
+   "text": "The issue warranty excludes water damage.",
+   "where": "issue-noun e2",
+   "base": "Please check the issue beside the issue tray.",
+   "small": "Please check the issue beside the issue tray.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/more-det-ex3.mp3",
+   "text": "Please choose more option on the list.",
+   "where": "more-det e2",
+   "base": "Please say more before the noun.",
+   "small": "Please say more before the noun.",
+   "wer": 0.57
+  },
+  {
+   "path": "assets/audio/words/still-adj-ex3.mp3",
+   "text": "A still tone works better here.",
+   "where": "still-adj e2",
+   "base": "A still tone works bare hair.",
+   "small": "A still tone works bare hair.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/still-adj-md1.mp3",
+   "text": "Still water is not sparkling.",
+   "where": "still-adj md1",
+   "base": "Still wore Riznark sparkly",
+   "small": "Still War, Riznark Sparkling.",
+   "wer": 0.6
+  },
+  {
+   "path": "assets/audio/words/fork-noun.mp3",
+   "text": "The fork is beside the napkin.",
+   "where": "fork-noun main",
+   "base": "The fork is beside the neck pin.",
+   "small": "The fork is beside the neck again.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/anything-else-phrase-ex3.mp3",
+   "text": "I sorted the anything else by size and colour.",
+   "where": "anything-else-phrase e2",
+   "base": "Please check the anything else beside the anything tray.",
+   "small": "Please check the Anything Else beside the Anything Tray.",
+   "wer": 0.67
+  },
+  {
+   "path": "assets/audio/words/split-verb-ex3.mp3",
+   "text": "Let me split that one more time.",
+   "where": "split-verb e2",
+   "base": "Let me input this one more time.",
+   "small": "Let me exploit it one more time.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/service-charge-phrase-ex3.mp3",
+   "text": "I traced the service charge to aisle four.",
+   "where": "service-charge-phrase e2",
+   "base": "Please check the service beside the service tray.",
+   "small": "Please check the service beside the service tray.",
+   "wer": 0.75
+  },
+  {
+   "path": "assets/audio/words/tip-noun-ex3.mp3",
+   "text": "I sorted the tip by size and colour.",
+   "where": "tip-noun e2",
+   "base": "Core up, estimate the tip beside the blue chair on Friday.",
+   "small": "Cora asked about the tip beside the blue chair on Friday.",
+   "wer": 1.12
+  },
+  {
+   "path": "assets/audio/words/tip-noun-md1.mp3",
+   "text": "The tip is written on the receipt.",
+   "where": "tip-noun md1",
+   "base": "The tick is red when the receipt",
+   "small": "The tick this rim when the receipt.",
+   "wer": 0.57
+  },
+  {
+   "path": "assets/audio/words/card-machine-phrase-ex3.mp3",
+   "text": "We refused a cracked card machine return.",
+   "where": "card-machine-phrase e2",
+   "base": "We refused to crack the card, Mitchie in return.",
+   "small": "We refused a correct occurred machine return.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/keep-the-change-phrase-ex3.mp3",
+   "text": "Is the keep the change handmade or machine-made?",
+   "where": "keep-the-change-phrase e2",
+   "base": "Please check the kick the exchange beside the keep tray.",
+   "small": "Please check the Keep the change beside the Keep tray.",
+   "wer": 0.67
+  },
+  {
+   "path": "assets/audio/words/hold-verb-md0.mp3",
+   "text": "Please hold while I try the other phone line.",
+   "where": "hold-verb md0",
+   "base": "Please hold while I try another film line.",
+   "small": "Please hold while I try another film line.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/callback-noun-ex3.mp3",
+   "text": "Please detach the callback before washing.",
+   "where": "callback-noun e2",
+   "base": "Glenn asked about the cold behind the green plant on Friday.",
+   "small": "Glenn asked about the cold behind the green plant on Friday.",
+   "wer": 1.67
+  },
+  {
+   "path": "assets/audio/words/callback-noun-md1.mp3",
+   "text": "Use my mobile, and a callback after four suits me better.",
+   "where": "callback-noun md1",
+   "base": "Use my mobile, in a cold after four suits meet them.",
+   "small": "Use my mobile, in the cold after four suits me bad.",
+   "wer": 0.36
+  },
+  {
+   "path": "assets/audio/words/available-adj-md1.mp3",
+   "text": "She can see you at half past one.",
+   "where": "available-adj md1",
+   "base": "She can see you would have pissed one.",
+   "small": "She can see you would have pissed one.",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/words/regarding-prep-ex2.mp3",
+   "text": "This message is regarding your visit.",
+   "where": "regarding-prep e1",
+   "base": "This message is requiring you visit.",
+   "small": "This message is requiring you visit.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/regarding-prep-ex3.mp3",
+   "text": "Stand regarding the yellow line.",
+   "where": "regarding-prep e2",
+   "base": "I set a cup regarding the tray.",
+   "small": "I set a cup regarding the tray.",
+   "wer": 1.2
+  },
+  {
+   "path": "assets/audio/words/appointment-noun-ex3.mp3",
+   "text": "The appointment is with Mei at three.",
+   "where": "appointment-noun e2",
+   "base": "The appointment is with Mate 3.",
+   "small": "The appointment is with Mate 3.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/convenient-adj.mp3",
+   "text": "A callback this afternoon is convenient.",
+   "where": "convenient-adj main",
+   "base": "A call look this afternoon is convenient.",
+   "small": "A call look this afternoon is convenient.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/reach-verb-ex3.mp3",
+   "text": "I forgot to reach yesterday.",
+   "where": "reach-verb e2",
+   "base": "I've got to work yesterday.",
+   "small": "I've garked too rich yesterday.",
+   "wer": 0.8
+  },
+  {
+   "path": "assets/audio/words/reach-verb-md1.mp3",
+   "text": "Could you reach Mei this afternoon?",
+   "where": "reach-verb md1",
+   "base": "Could you reach May this of Denon?",
+   "small": "Could you reach Metis of Dineun?",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/warranty-noun.mp3",
+   "text": "The warranty covers one repair.",
+   "where": "warranty-noun main",
+   "base": "The warranty cove is one repair.",
+   "small": "The warranty cove is one repair.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/scratch-noun-ex2.mp3",
+   "text": "The scratch is on the gold bracelet.",
+   "where": "scratch-noun e1",
+   "base": "The scratches on the gold bracelet.",
+   "small": "the scratches on the gold bracelet.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/scratch-noun-md1.mp3",
+   "text": "The scratch is on the gold bracelet.",
+   "where": "scratch-noun md1",
+   "base": "The scratches on the gold bracelet.",
+   "small": "the scratches on the gold bracelet.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/polish-noun-ex3.mp3",
+   "text": "Please wipe the ring with this polish.",
+   "where": "polish-noun e2",
+   "base": "Quain asked about the parlour's nerdy open draw on Friday.",
+   "small": "Quain asked about the parlourish near the open draw on Friday.",
+   "wer": 1.43
+  },
+  {
+   "path": "assets/audio/words/polish-noun-md0.mp3",
+   "text": "Do you sell jewellery polish here?",
+   "where": "polish-noun md0",
+   "base": "Do you sell jewelry parlous hair?",
+   "small": "Do you sell jewelry parlour hair?",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/polish-noun-md1.mp3",
+   "text": "Yes. This polish is for gold chains.",
+   "where": "polish-noun md1",
+   "base": "Yes, this parlishes for bold chains.",
+   "small": "Yes, this polishes for bold chains.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/policy-noun.mp3",
+   "text": "The shop policy covers one repair.",
+   "where": "policy-noun main",
+   "base": "The shark parlasy covers one repair.",
+   "small": "The shark parlousie covers one repair.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/policy-noun-ex3.mp3",
+   "text": "We rejected the counterfeit policy.",
+   "where": "policy-noun e2",
+   "base": "Paul asked about the policy near the open drawer on Friday.",
+   "small": "Paul asked about the parlousie near the open drawer on Friday.",
+   "wer": 2.0
+  },
+  {
+   "path": "assets/audio/words/policy-noun-md0.mp3",
+   "text": "The shop policy covers one repair.",
+   "where": "policy-noun md0",
+   "base": "The shark parlasty covers one repair.",
+   "small": "The shark parlous see covers one repair.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/within-prep-ex3.mp3",
+   "text": "Leave shoes within the mat.",
+   "where": "within-prep e2",
+   "base": "Please reply within 3 days.",
+   "small": "Please reply within three days.",
+   "wer": 0.8
+  },
+  {
+   "path": "assets/audio/words/clean-verb-ex3.mp3",
+   "text": "Please clean slowly so I can follow.",
+   "where": "clean-verb e2",
+   "base": "Please I clean slowly so I can far a little.",
+   "small": "Please, I clean slowly so I can far a little.",
+   "wer": 0.57
+  },
+  {
+   "path": "assets/audio/words/popular-adj.mp3",
+   "text": "This popular set matches the necklace in the box.",
+   "where": "popular-adj main",
+   "base": "Is Carpil of Setmetchers the Necklace in the Barks?",
+   "small": "This car pillow set mitches the necklace in the barks.",
+   "wer": 0.44
+  },
+  {
+   "path": "assets/audio/words/engraving-noun-ex3.mp3",
+   "text": "We rejected the counterfeit engraving.",
+   "where": "engraving-noun e2",
+   "base": "We reject the count fading waving.",
+   "small": "We reject the count fading grieving.",
+   "wer": 0.8
+  },
+  {
+   "path": "assets/audio/words/following-up-phrase-md1.mp3",
+   "text": "She is following up before the deadline.",
+   "where": "following-up-phrase md1",
+   "base": "She had a spallowing up before the deadline.",
+   "small": "She had a sprawling up before the deadline.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/clarify-verb-ex3.mp3",
+   "text": "We cannot clarify without ID.",
+   "where": "clarify-verb e2",
+   "base": "Please, Eclorify the Clorify form carefully.",
+   "small": "Please, glorify the Chlorify form carefully.",
+   "wer": 1.2
+  },
+  {
+   "path": "assets/audio/words/deadline-noun-ex3.mp3",
+   "text": "We refused a cracked deadline return.",
+   "where": "deadline-noun e2",
+   "base": "We refused to correct it at a line return.",
+   "small": "We refused to correct a deadline return.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/grateful-adj-ex3.mp3",
+   "text": "A grateful tone works better here.",
+   "where": "grateful-adj e2",
+   "base": "A grateful tone works by a hair.",
+   "small": "A grateful tone works be'er.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/propose-verb.mp3",
+   "text": "I propose Friday for the meeting.",
+   "where": "propose-verb main",
+   "base": "I propel us Friday for the meeting.",
+   "small": "I propel this Friday for the meeting.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/best-regards-phrase-ex3.mp3",
+   "text": "Please confirm the best regards serial number.",
+   "where": "best-regards-phrase e2",
+   "base": "Please confirm that Avist Regards serial number.",
+   "small": "Please confirm that Avist Reagard's serial number.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/agree-verb-ex3.mp3",
+   "text": "They let guests agree after nine.",
+   "where": "agree-verb e2",
+   "base": "Please agree, the Agree form carefully.",
+   "small": "Please agree the agree form carefully.",
+   "wer": 1.17
+  },
+  {
+   "path": "assets/audio/words/action-item-noun.mp3",
+   "text": "The action item has a clear owner.",
+   "where": "action-item-noun main",
+   "base": "The action I am has a clear own.",
+   "small": "The action I am has a clarone.",
+   "wer": 0.57
+  },
+  {
+   "path": "assets/audio/words/action-item-noun-ex2.mp3",
+   "text": "Please read the action item before Friday.",
+   "where": "action-item-noun e1",
+   "base": "Please read the action I am before Friday.",
+   "small": "Please read the action I am before Friday.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/action-item-noun-md0.mp3",
+   "text": "Each action item needs a clear owner and a due date.",
+   "where": "action-item-noun md0",
+   "base": "Each action I am needs a clear own and a due date.",
+   "small": "Each action I am needs a clear own and a due date.",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/words/wrap-up-verb-md0.mp3",
+   "text": "Let's wrap up the meeting after this last update.",
+   "where": "wrap-up-verb md0",
+   "base": "Let's rip up the being after this list update.",
+   "small": "Let's rip up the being after this list update.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/owner-noun-ex2.mp3",
+   "text": "Each action item needs an owner.",
+   "where": "owner-noun e1",
+   "base": "Each action I am needs an own.",
+   "small": "Each action I am needs an own.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/owner-noun-md1.mp3",
+   "text": "Each action item needs an owner.",
+   "where": "owner-noun md1",
+   "base": "Each action I am needs and own.",
+   "small": "Each action I am needs an own.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/fever-noun-ex3.mp3",
+   "text": "This fever started on Monday.",
+   "where": "fever-noun e2",
+   "base": "Please check that fever beside the fever tray.",
+   "small": "Please check the fever beside the fever tray.",
+   "wer": 1.4
+  },
+  {
+   "path": "assets/audio/words/cough-noun-ex3.mp3",
+   "text": "May I leave a deposit for the cough?",
+   "where": "cough-noun e2",
+   "base": "Please check the cuff beside the cuff tray.",
+   "small": "Please check the cof side, the cough tray.",
+   "wer": 0.88
+  },
+  {
+   "path": "assets/audio/words/cough-noun-md0.mp3",
+   "text": "I have a bad cough.",
+   "where": "cough-noun md0",
+   "base": "I have a bedcoaf.",
+   "small": "I have a bedcloth.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/sore-throat-noun-ex3.mp3",
+   "text": "This sore throat started on Monday.",
+   "where": "sore-throat-noun e2",
+   "base": "Please check the Nisser Afroop beside the sore tray.",
+   "small": "Please check the nussereth rope beside the sore tray.",
+   "wer": 1.83
+  },
+  {
+   "path": "assets/audio/words/headache-noun-ex3.mp3",
+   "text": "Bright light makes my headache worse.",
+   "where": "headache-noun e2",
+   "base": "Please check the headache beside the headache tray.",
+   "small": "Please check the headache beside the headache tray.",
+   "wer": 1.33
+  },
+  {
+   "path": "assets/audio/words/prescription-noun-ex3.mp3",
+   "text": "Describe your prescription to the nurse first.",
+   "where": "prescription-noun e2",
+   "base": "Please check the prescription beside the prescription tray.",
+   "small": "Please check the prescription beside the prescription tray.",
+   "wer": 0.86
+  },
+  {
+   "path": "assets/audio/words/pharmacy-noun-ex3.mp3",
+   "text": "Describe your pharmacy to the nurse first.",
+   "where": "pharmacy-noun e2",
+   "base": "Please check the pharmacy beside the pharmacy tray.",
+   "small": "Please check the pharmacy beside the pharmacy tray.",
+   "wer": 0.86
+  },
+  {
+   "path": "assets/audio/words/follow-up-noun-ex3.mp3",
+   "text": "The follow-up vendor changed prices again.",
+   "where": "follow-up-noun e2",
+   "base": "Tess asked about the fall love near the front door one Monday.",
+   "small": "Tests asked about the follow-up near the front door one Monday.",
+   "wer": 1.29
+  },
+  {
+   "path": "assets/audio/words/account-noun-ex3.mp3",
+   "text": "I checked the account in the banking app.",
+   "where": "account-noun e2",
+   "base": "Paul asked about the account near the front door on Monday.",
+   "small": "Paul asked about the account near the front door on Monday.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/account-noun-md1.mp3",
+   "text": "Bring your identity card and a letter.",
+   "where": "account-noun md1",
+   "base": "Bring your identity card in a lamp.",
+   "small": "Bring your identity card in a lamp.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/withdraw-verb-ex2.mp3",
+   "text": "I can withdraw cash at this branch.",
+   "where": "withdraw-verb e1",
+   "base": "I can withdraw kished this branch.",
+   "small": "I can withdraw kesht this branch.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/withdraw-verb-md1.mp3",
+   "text": "I can withdraw cash at this branch.",
+   "where": "withdraw-verb md1",
+   "base": "I can withdraw Kish this branch.",
+   "small": "I can withdraw kish this branch.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/deposit-verb-md0.mp3",
+   "text": "Did you deposit already?",
+   "where": "deposit-verb md0",
+   "base": "Did you depose it already?",
+   "small": "Did you pause it already?",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/deposit-verb-md1.mp3",
+   "text": "Not yet. Give me a minute.",
+   "where": "deposit-verb md1",
+   "base": "Narkit, give me a minute.",
+   "small": "Narkeet, give me a minute.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/lease-noun-ex3.mp3",
+   "text": "The lease lists the monthly lease.",
+   "where": "lease-noun e2",
+   "base": "V-era asked about the lease under the red lump on Monday.",
+   "small": "Verer asked about the lease under the red lump on Monday.",
+   "wer": 1.33
+  },
+  {
+   "path": "assets/audio/words/landlord-noun-ex3.mp3",
+   "text": "We asked the agent about the landlord.",
+   "where": "landlord-noun e2",
+   "base": "We asked the agent about the old lord.",
+   "small": "Would ye ask the agent about the Old Lord?",
+   "wer": 0.71
+  },
+  {
+   "path": "assets/audio/words/furnished-adj-md1.mp3",
+   "text": "The desk, bed, and lamp are included.",
+   "where": "furnished-adj md1",
+   "base": "The desk bed in Limpar included.",
+   "small": "The desk bed in Limpa are included.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/viewing-noun-md0.mp3",
+   "text": "The landlord allows a short viewing here.",
+   "where": "viewing-noun md0",
+   "base": "The Lindlord allows a short viewing hair.",
+   "small": "The Lindlord allows a short viewing hair.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/contract-noun-ex3.mp3",
+   "text": "The night shift logged a missing contract.",
+   "where": "contract-noun e2",
+   "base": "The night shift load demissing a conattract.",
+   "small": "The night shift law demissing a current tract.",
+   "wer": 0.57
+  },
+  {
+   "path": "assets/audio/words/notice-noun-ex3.mp3",
+   "text": "The night shift logged a missing notice.",
+   "where": "notice-noun e2",
+   "base": "The night shift, Lord, am missing, no is.",
+   "small": "The Night Shift, Lord of Missing Nowas.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/agency-noun-ex2.mp3",
+   "text": "The agency can arrange a short viewing.",
+   "where": "agency-noun e1",
+   "base": "The agency can range a short of viewing.",
+   "small": "The agency can range a short of viewing.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/agency-noun-md1.mp3",
+   "text": "I saw that fee, and the agency can still arrange a viewing.",
+   "where": "agency-noun md1",
+   "base": "I saw that feet in the agency can still range of viewing.",
+   "small": "Isolip feet in the agency can still range of viewing.",
+   "wer": 0.58
+  },
+  {
+   "path": "assets/audio/words/deposit-noun.mp3",
+   "text": "The deposit is one full month's rent.",
+   "where": "deposit-noun main",
+   "base": "It apparseth his one full month's rent.",
+   "small": "It departs at his one full month's rent.",
+   "wer": 0.57
+  },
+  {
+   "path": "assets/audio/words/deposit-noun-ex3.mp3",
+   "text": "The demo deposit cannot leave the shop.",
+   "where": "deposit-noun e2",
+   "base": "The dam would deposit cannot leave the shore.",
+   "small": "The dem would deposit Canard, leave the char.",
+   "wer": 0.57
+  },
+  {
+   "path": "assets/audio/words/souvenir-noun-ex3.mp3",
+   "text": "We postponed the souvenir shipment.",
+   "where": "souvenir-noun e2",
+   "base": "We postpone the December-Ner shipment.",
+   "small": "We postpone the vesivarner shipment.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/postcard-noun-ex3.mp3",
+   "text": "Please compare this postcard with the sample photo.",
+   "where": "postcard-noun e2",
+   "base": "Please compare this a host card with the simple fouo.",
+   "small": "Please compare this of Ustokorod with the simple FOOO.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/shirt-noun-ex3.mp3",
+   "text": "Please flatten the empty shirt box.",
+   "where": "shirt-noun e2",
+   "base": "Please flon the empty-ished barks.",
+   "small": "Please flun the empty barks.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/stock-noun-ex3.mp3",
+   "text": "Please flatten the empty stock box.",
+   "where": "stock-noun e2",
+   "base": "Please flow in the empty stark marks.",
+   "small": "Please flaunt the empty stark barks.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/reserve-verb-ex3.mp3",
+   "text": "I need to reserve before security.",
+   "where": "reserve-verb e2",
+   "base": "I need to reuse the force curate.",
+   "small": "I need to reuse before securay.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/reserve-verb-md1.mp3",
+   "text": "Yes. They checked my bag too.",
+   "where": "reserve-verb md1",
+   "base": "Yes, they checked my big 2.",
+   "small": "Yes, they checked my big two.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/notify-verb-ex3.mp3",
+   "text": "Please notify only once per visit.",
+   "where": "notify-verb e2",
+   "base": "Please in order fight only once per visit.",
+   "small": "Please in order fight only once per visit.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/notify-verb-md0.mp3",
+   "text": "Please notify me by a short message.",
+   "where": "notify-verb md0",
+   "base": "Please know if I may buy a short message.",
+   "small": "Please noify me by your short message.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/tomorrow-adv-ex3.mp3",
+   "text": "She answered tomorrow and clearly.",
+   "where": "tomorrow-adv e2",
+   "base": "She ends it tomorrow and clearly.",
+   "small": "She ends it tomorrow and clearly.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/tourism-noun-ex3.mp3",
+   "text": "She packed the tourism before leaving.",
+   "where": "tourism-noun e2",
+   "base": "Dana asked about the tourism on the wooden shelf on Monday.",
+   "small": "Dana asked about the tourism on the wooden shelf on Monday.",
+   "wer": 1.5
+  },
+  {
+   "path": "assets/audio/words/business-noun-ex3.mp3",
+   "text": "He came on business for a three-day factory inspection.",
+   "where": "business-noun e2",
+   "base": "became one business for a three-day victory inspection.",
+   "small": "became one business for a three-day factory inspection.",
+   "wer": 0.3
+  },
+  {
+   "path": "assets/audio/words/stay-noun-ex2.mp3",
+   "text": "The stay at the hotel is short.",
+   "where": "stay-noun e1",
+   "base": "The state the hotel is short.",
+   "small": "The state the hotel is short.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/stay-noun-md1.mp3",
+   "text": "The stay at the hotel is short.",
+   "where": "stay-noun md1",
+   "base": "The state the hotel is short.",
+   "small": "The state the hotel is short.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/hotel-noun.mp3",
+   "text": "My stay is at a quiet hotel.",
+   "where": "hotel-noun main",
+   "base": "My stay is of her quiet hotel.",
+   "small": "My stay is of our quiet hotel.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/officer-noun.mp3",
+   "text": "The officer will stamp your form.",
+   "where": "officer-noun main",
+   "base": "The ataphis will strip your form.",
+   "small": "The ataphis will stem to your form.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/officer-noun-md0.mp3",
+   "text": "The officer will stamp your form.",
+   "where": "officer-noun md0",
+   "base": "The afis will stump your form.",
+   "small": "The aphus will stump your form.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/anniversary-noun-md0.mp3",
+   "text": "Is the engraving for an anniversary dinner?",
+   "where": "anniversary-noun md0",
+   "base": "Is the engraving foreign anniversary dinner?",
+   "small": "Is the engraving foreign anniversary dinner?",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/engagement-noun-md1.mp3",
+   "text": "An engagement ring can stay understated.",
+   "where": "engagement-noun md1",
+   "base": "An engagement ring can stay under state.",
+   "small": "An engagement ring can stay under state.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/preference-noun-ex2.mp3",
+   "text": "Your preference can stay understated.",
+   "where": "preference-noun e1",
+   "base": "Your preference can stay under state.",
+   "small": "Your preference can stay under state.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/classic-adj-ex3.mp3",
+   "text": "A classic gold band suits an anniversary dinner.",
+   "where": "classic-adj e2",
+   "base": "A classic gold-ben suit and anniversary din.",
+   "small": "A classic gold-ben suit and anniversary din.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/understated-adj-md0.mp3",
+   "text": "This looks understated.",
+   "where": "understated-adj md0",
+   "base": "This looks and disdain.",
+   "small": "This looks unrestained.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/investment-noun.mp3",
+   "text": "I would treat the piece as an investment.",
+   "where": "investment-noun main",
+   "base": "I would treat the pieces and investment.",
+   "small": "I would treat the pieces in investment.",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/words/investment-noun-md0.mp3",
+   "text": "I would treat the piece as an investment.",
+   "where": "investment-noun md0",
+   "base": "I would treat the pieces and investment.",
+   "small": "I would treat the pieces in investment.",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/words/discreet-adj-ex2.mp3",
+   "text": "A discreet design stays understated.",
+   "where": "discreet-adj e1",
+   "base": "A discrete design stays under stayed.",
+   "small": "A discrete design stays understayed.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/not-bad-phrase.mp3",
+   "text": "Not bad at all for a quiet Monday morning.",
+   "where": "not-bad-phrase main",
+   "base": "Narkbid will all for a quiet Monday morning.",
+   "small": "NARQ then do all for a quiet Monday morning.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/not-bad-phrase-ex3.mp3",
+   "text": "Adding chilli oil made the dull noodles not bad.",
+   "where": "not-bad-phrase e2",
+   "base": "Glitting chili oil made the dull noodles mark bent.",
+   "small": "Litting chili oil made the dull noodles marked bent.",
+   "wer": 0.44
+  },
+  {
+   "path": "assets/audio/words/not-bad-phrase-md0.mp3",
+   "text": "Not bad at all for a quiet Monday morning.",
+   "where": "not-bad-phrase md0",
+   "base": "Nartbend will all for a quiet Monday morning.",
+   "small": "Nart Bindu, all for a quiet Monday morning.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/catch-up-later-phrase-ex3.mp3",
+   "text": "Service is still busy, so let's catch up later about the roster.",
+   "where": "catch-up-later-phrase e2",
+   "base": "Service is still busy, so let's extrapolate about the rise to",
+   "small": "Service is still busy, so let's extrapolate about the rise too.",
+   "wer": 0.42
+  },
+  {
+   "path": "assets/audio/words/book-verb-md1.mp3",
+   "text": "The seven thirty showing still has seats.",
+   "where": "book-verb md1",
+   "base": "The 7th area showing still has seats.",
+   "small": "The 7th area showing still has seats.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/change-verb-ex3.mp3",
+   "text": "I tried to change, but the app froze.",
+   "where": "change-verb e2",
+   "base": "I tried to achieve the F-Fruise.",
+   "small": "I tried to exchange but the F-frues.",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/words/fully-booked-phrase-ex3.mp3",
+   "text": "Holiday visitors found every harbour-view room fully booked.",
+   "where": "fully-booked-phrase e2",
+   "base": "Holiday Visiers found every harb view room a fully booked.",
+   "small": "Holiday viziers found every Harborview room afully booked.",
+   "wer": 0.44
+  },
+  {
+   "path": "assets/audio/words/waitlist-noun-ex3.mp3",
+   "text": "The waitlist shortens only when a booked diner cancels.",
+   "where": "waitlist-noun e2",
+   "base": "The Boitilist surens only when a book dying cancels.",
+   "small": "The Boitalist shorins only when a book dying cancels.",
+   "wer": 0.44
+  },
+  {
+   "path": "assets/audio/words/compensation-noun-ex3.mp3",
+   "text": "A broken vase led the shop to offer compensation.",
+   "where": "compensation-noun e2",
+   "base": "A broken vase led the shark tour of a compensation.",
+   "small": "A broken vase led the shark tour for compensation.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/feedback-noun-ex3.mp3",
+   "text": "Honest feedback about the slow cashier belongs on the comment card.",
+   "where": "feedback-noun e2",
+   "base": "Our next feedback about the slokeshare belongs in the comment card.",
+   "small": "Our next feedback about the Slokeshire belongs in the comment card.",
+   "wer": 0.45
+  },
+  {
+   "path": "assets/audio/words/resolve-verb-ex3.mp3",
+   "text": "Do we resolve here or upstairs?",
+   "where": "resolve-verb e2",
+   "base": "Please resolve the resolve form carefully.",
+   "small": "Please resolve the resolve form carefully.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/apology-noun-md1.mp3",
+   "text": "A written apology would help, along with a new clasp.",
+   "where": "apology-noun md1",
+   "base": "A rain the parlage would help, along with a nucleus.",
+   "small": "A rain apology would help, along with a nuclist.",
+   "wer": 0.3
+  },
+  {
+   "path": "assets/audio/words/from-prep-ex3.mp3",
+   "text": "I need from receipt for accounts.",
+   "where": "from-prep e2",
+   "base": "We met from the gate.",
+   "small": "We met from the gate.",
+   "wer": 0.83
+  },
+  {
+   "path": "assets/audio/words/job-noun.mp3",
+   "text": "My job is salesperson at this shop.",
+   "where": "job-noun main",
+   "base": "My jar is sales exhibit this sharp.",
+   "small": "My jar is sales cimit this sharp.",
+   "wer": 0.57
+  },
+  {
+   "path": "assets/audio/words/job-noun-md0.mp3",
+   "text": "My job is salesperson at this shop.",
+   "where": "job-noun md0",
+   "base": "Mind jar is sales sent at this chart.",
+   "small": "My jar is salesperson at this chart.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/email-noun-ex3.mp3",
+   "text": "Please CC me on the email.",
+   "where": "email-noun e2",
+   "base": "Please check the email beside the email tray.",
+   "small": "Please check the email beside the email tray.",
+   "wer": 1.14
+  },
+  {
+   "path": "assets/audio/words/salesperson-noun.mp3",
+   "text": "I work here as a salesperson.",
+   "where": "salesperson-noun main",
+   "base": "I wore pairies of sails since...",
+   "small": "I wore pairs of sails, so...",
+   "wer": 0.83
+  },
+  {
+   "path": "assets/audio/words/tourist-noun-ex2.mp3",
+   "text": "The tourist is from Hong Kong.",
+   "where": "tourist-noun e1",
+   "base": "The tourist is from Harnkine.",
+   "small": "The tourist is from Harn Kine.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/tourist-noun-ex3.mp3",
+   "text": "A tourist asked about our rare tourist.",
+   "where": "tourist-noun e2",
+   "base": "Please check the tourists beside the tourist tray.",
+   "small": "Please check the tourists beside the tourist tray.",
+   "wer": 1.57
+  },
+  {
+   "path": "assets/audio/words/tourist-noun-md1.mp3",
+   "text": "The tourist is from Hong Kong.",
+   "where": "tourist-noun md1",
+   "base": "The tourist is from Harnkheim.",
+   "small": "The tourist is from Harn Kine.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/hong-kong-noun.mp3",
+   "text": "I am from Hong Kong, not from Macau.",
+   "where": "hong-kong-noun main",
+   "base": "I am from Harin Khan, not from Meccow.",
+   "small": "I am from Haring Khan, NARQ from Meqao.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/hong-kong-noun-ex2.mp3",
+   "text": "A tourist from Hong Kong needs a phone.",
+   "where": "hong-kong-noun e1",
+   "base": "of tourists from hard-caught and needs of foam.",
+   "small": "A terrorist from Harankan needs a phone.",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/words/finish-verb.mp3",
+   "text": "I finish the shift after lunch.",
+   "where": "finish-verb main",
+   "base": "I finished the shift after launch.",
+   "small": "I finished the shift F to launch.",
+   "wer": 0.67
+  },
+  {
+   "path": "assets/audio/words/lunch-noun.mp3",
+   "text": "The shop is open before our lunch.",
+   "where": "lunch-noun main",
+   "base": "The shark is open before our launch.",
+   "small": "The shark is open before our launch.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/open-verb-md1.mp3",
+   "text": "We open the shop before lunch.",
+   "where": "open-verb md1",
+   "base": "We opened the shark before lunch.",
+   "small": "We opened the shark before lunch.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/shift-noun-ex3.mp3",
+   "text": "The night shift logged a missing shift.",
+   "where": "shift-noun e2",
+   "base": "Please check the shift beside the shift tray.",
+   "small": "Please check the shift beside the shift tray.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/before-prep-ex3.mp3",
+   "text": "Write your name before the date.",
+   "where": "before-prep e2",
+   "base": "Please arrive before the shift starts.",
+   "small": "Please arrive before the shift starts.",
+   "wer": 0.83
+  },
+  {
+   "path": "assets/audio/words/after-prep-ex3.mp3",
+   "text": "I need after receipt for accounts.",
+   "where": "after-prep e2",
+   "base": "Please put the form after the barks.",
+   "small": "Please put the form after the barks.",
+   "wer": 1.17
+  },
+  {
+   "path": "assets/audio/words/sim-noun-ex3.mp3",
+   "text": "This phone needs a new SIM.",
+   "where": "sim-noun e2",
+   "base": "This film needs a new assignem.",
+   "small": "This film needs a new SINM.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/top-up-noun.mp3",
+   "text": "A small top-up is enough for my data.",
+   "where": "top-up-noun main",
+   "base": "A small tarpup is enough for my day year.",
+   "small": "A small tarpup is enough for my dayer.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/data-noun.mp3",
+   "text": "This data plan is enough for a short trip.",
+   "where": "data-noun main",
+   "base": "This day or plane is enough for a short trip.",
+   "small": "This day or planned is enough for a short trip.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/data-noun-ex2.mp3",
+   "text": "A small top-up is enough for my data.",
+   "where": "data-noun e1",
+   "base": "A small tarpup is enough for my day year.",
+   "small": "A small tarpup is enough for my dare.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/plan-noun-ex2.mp3",
+   "text": "This data plan is enough for a short trip.",
+   "where": "plan-noun e1",
+   "base": "This day our plane is enough for a short trip.",
+   "small": "This day of planned is enough for a short trip.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/plan-noun-md0.mp3",
+   "text": "Which phone plan is better for a short trip?",
+   "where": "plan-noun md0",
+   "base": "which foam pleniz bef for short trip.",
+   "small": "which filmed plenty's bear for a short trip.",
+   "wer": 0.44
+  },
+  {
+   "path": "assets/audio/words/unlimited-adj.mp3",
+   "text": "The unlimited plan has no data limit.",
+   "where": "unlimited-adj main",
+   "base": "The unlimited plan has no day or limit.",
+   "small": "The unlimited plan has no day or limit.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/unlimited-adj-md0.mp3",
+   "text": "The unlimited plan has no data limit.",
+   "where": "unlimited-adj md0",
+   "base": "The unlimited plane has no day or limit.",
+   "small": "The unlimited plane has no day or limit.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/activate-verb-ex3.mp3",
+   "text": "Please activate the smaller option.",
+   "where": "activate-verb e2",
+   "base": "Please activate the activate form carefully.",
+   "small": "Please activate the Activate form carefully.",
+   "wer": 0.6
+  },
+  {
+   "path": "assets/audio/words/enough-adv-ex2.mp3",
+   "text": "A small top-up is enough for my data.",
+   "where": "enough-adv e1",
+   "base": "A small tarpup is enough for my day.",
+   "small": "A small tart pup is enough for my dair.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/enough-adv-md0.mp3",
+   "text": "Is one bottle of water enough on this hike?",
+   "where": "enough-adv md0",
+   "base": "is one barrel of war ran off on this hike.",
+   "small": "Is one barrel of war runoff on this hike?",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/mobile-contract-noun.mp3",
+   "text": "This mobile contract lasts for one year.",
+   "where": "mobile-contract-noun main",
+   "base": "This mobile cantra plists for one year.",
+   "small": "This mobile cantrip lists for one year.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/mobile-contract-noun-md0.mp3",
+   "text": "This mobile contract lasts for one year.",
+   "where": "mobile-contract-noun md0",
+   "base": "This mobile cantra plists for one year.",
+   "small": "This mobile cantrip lists for one year.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/airmail-noun-ex2.mp3",
+   "text": "Airmail is faster than the regular post.",
+   "where": "airmail-noun e1",
+   "base": "Aramel is fester than the regular post.",
+   "small": "Air mail is fister than the regular post.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/fragile-adj.mp3",
+   "text": "This vase is fragile, so please mark it as fragile.",
+   "where": "fragile-adj main",
+   "base": "This base is fritile, so please mark in s fritile.",
+   "small": "This vase is Fridgel, so please mark him as Fridgel.",
+   "wer": 0.3
+  },
+  {
+   "path": "assets/audio/words/fragile-adj-md1.mp3",
+   "text": "I will mark the box fragile and wrap it in soft paper.",
+   "where": "fragile-adj md1",
+   "base": "I will mark the barks' frigil and rep day in soft paint.",
+   "small": "I will mark the bark's fragile and recti and soft paint.",
+   "wer": 0.42
+  },
+  {
+   "path": "assets/audio/words/complimentary-adj-ex2.mp3",
+   "text": "The shop sent a complimentary tea.",
+   "where": "complimentary-adj e1",
+   "base": "The sharp center complementary tee.",
+   "small": "The sharp center complementary T.",
+   "wer": 0.83
+  },
+  {
+   "path": "assets/audio/words/customer-facing-adj.mp3",
+   "text": "I like customer-facing work at the counter.",
+   "where": "customer-facing-adj main",
+   "base": "I like custom-facing work the count.",
+   "small": "I like custom facing work the count.",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/words/customer-facing-adj-ex3.mp3",
+   "text": "Greeting guests and writing down drinks are customer-facing duties.",
+   "where": "customer-facing-adj e2",
+   "base": "Green guests spend rying down drinks or custom-facing Dewey's.",
+   "small": "Greeing guests and rying down drinks are custom facing do-wee's.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/customer-facing-adj-md0.mp3",
+   "text": "This role is customer-facing on the shop floor.",
+   "where": "customer-facing-adj md0",
+   "base": "This roll is custom facing on the sharp floor.",
+   "small": "This roll is custom facing on the sharp floor.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/reliable-adj-ex2.mp3",
+   "text": "A reliable colleague arrives on time.",
+   "where": "reliable-adj e1",
+   "base": "A reliable car lead rides on time.",
+   "small": "A reliable car lead arrives one time.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/reliable-adj-ex3.mp3",
+   "text": "A reliable colleague always arrives before the shop shutters go up.",
+   "where": "reliable-adj e2",
+   "base": "A reliable car leak always arrives before the shark shines go up.",
+   "small": "A reliable car leak always arrives before the shark shines go up.",
+   "wer": 0.36
+  },
+  {
+   "path": "assets/audio/words/reliable-adj-md1.mp3",
+   "text": "A reliable colleague arrives on time.",
+   "where": "reliable-adj md1",
+   "base": "but reliable car lead rides on time.",
+   "small": "A reliable car lead rides on time.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/cantonese-noun-ex3.mp3",
+   "text": "Regular diners understand the menu faster when we explain it in Cantonese.",
+   "where": "cantonese-noun e2",
+   "base": "Regular dying is understood, the menu fister when we explain A&M can turn A's.",
+   "small": "Regular dimes understand the menu fister when we explain anic internees.",
+   "wer": 0.42
+  },
+  {
+   "path": "assets/audio/words/english-noun.mp3",
+   "text": "I speak English at the counter.",
+   "where": "english-noun main",
+   "base": "I speak English to the count.",
+   "small": "I speak English to the count.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/english-noun-md0.mp3",
+   "text": "I speak English at the counter.",
+   "where": "english-noun md0",
+   "base": "I speak English account.",
+   "small": "I speak English account.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/strength-noun-ex3.mp3",
+   "text": "In the interview, talk about your strength.",
+   "where": "strength-noun e2",
+   "base": "Please check the strength beside the strength tray.",
+   "small": "Please check these strength beside the strength tray.",
+   "wer": 1.43
+  },
+  {
+   "path": "assets/audio/words/looking-for-phrase-ex3.mp3",
+   "text": "Weekend shifts at a neighbourhood bakery are what she is looking for.",
+   "where": "looking-for-phrase e2",
+   "base": "Weekend shifts were named hood bakery or which he is looking for.",
+   "small": "Weekend shifts where neighborhood bakery R. Wichey is looking for.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/cancelled-verb-ex3.mp3",
+   "text": "They cancelled your request this morning.",
+   "where": "cancelled-verb e2",
+   "base": "They did consult your request this morning.",
+   "small": "That you consult your request this morning.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/missed-verb-ex3.mp3",
+   "text": "Please help me missed this bag.",
+   "where": "missed-verb e2",
+   "base": "Please help me in a stiff bulk.",
+   "small": "Please help me in a sphysboke.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/rebook-verb.mp3",
+   "text": "Could we rebook this evening?",
+   "where": "rebook-verb main",
+   "base": "Could we rev up this evening?",
+   "small": "Could we rev up this evening?",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/rebook-verb-ex3.mp3",
+   "text": "Please rebook our party for Saturday lunch.",
+   "where": "rebook-verb e2",
+   "base": "Can we rev up the table for Friday evening?",
+   "small": "Can we rev up the table for Friday evening?",
+   "wer": 1.14
+  },
+  {
+   "path": "assets/audio/words/rebook-verb-md0.mp3",
+   "text": "Can the desk rebook our party?",
+   "where": "rebook-verb md0",
+   "base": "In the desk, rebel-gal party.",
+   "small": "Pin the desk, rebel cow party.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/hotel-voucher-phrase-ex3.mp3",
+   "text": "Housekeeping found a spare hotel voucher.",
+   "where": "hotel-voucher-phrase e2",
+   "base": "Please check the hotel about should decide the hotel tray.",
+   "small": "Please check the hotel about should decide the hotel tray.",
+   "wer": 1.67
+  },
+  {
+   "path": "assets/audio/words/priority-noun-ex2.mp3",
+   "text": "Priority does not promise a seat.",
+   "where": "priority-noun e1",
+   "base": "Pro-worry does not promise a seat.",
+   "small": "Priory does not promise the seat.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/standby-noun-ex2.mp3",
+   "text": "She waited on standby for an hour.",
+   "where": "standby-noun e1",
+   "base": "She waited once dinner by for an hour.",
+   "small": "She weighed one stem by for an owl.",
+   "wer": 0.71
+  },
+  {
+   "path": "assets/audio/words/gate-change-phrase-ex3.mp3",
+   "text": "Keep your gate change next to your passport.",
+   "where": "gate-change-phrase e2",
+   "base": "Please check the gate at change of a side the gate tray.",
+   "small": "Please check the gate a changer beside the gate tray.",
+   "wer": 1.12
+  },
+  {
+   "path": "assets/audio/words/gate-change-phrase-md0.mp3",
+   "text": "The gate change is not posted yet.",
+   "where": "gate-change-phrase md0",
+   "base": "The gate changes and are posted yet.",
+   "small": "The gate change isn't posted yet.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/pharmacist-noun-ex3.mp3",
+   "text": "The doctor asked when the pharmacist began.",
+   "where": "pharmacist-noun e2",
+   "base": "Please check the Affirmices beside the Pharmacist tray.",
+   "small": "Please check the pharmacist beside the pharmacist tray.",
+   "wer": 1.14
+  },
+  {
+   "path": "assets/audio/words/tablet-noun-ex3.mp3",
+   "text": "The doctor asked when the tablet began.",
+   "where": "tablet-noun e2",
+   "base": "Hugh asked about the tablet inside the blue tray after six.",
+   "small": "Hugh asked about the tablet inside the blue tray up to six.",
+   "wer": 1.43
+  },
+  {
+   "path": "assets/audio/words/after-meals-phrase-ex3.mp3",
+   "text": "The label says white tablets need water after meals.",
+   "where": "after-meals-phrase e2",
+   "base": "The label says white tablets need wall of drip moles.",
+   "small": "The label says white tablets need wall of drip moles.",
+   "wer": 0.44
+  },
+  {
+   "path": "assets/audio/words/after-meals-phrase-md0.mp3",
+   "text": "Should I take this tablet after meals?",
+   "where": "after-meals-phrase md0",
+   "base": "Should I take this to blood F2 meals?",
+   "small": "Should I take this to look after meals?",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/pay-on-delivery-phrase-ex3.mp3",
+   "text": "Cash is fine when you pay on delivery to the courier.",
+   "where": "pay-on-delivery-phrase e2",
+   "base": "Keshe is fine when you appear and deal with A to the Currier.",
+   "small": "Kesh is fine when you are paying D'L'Ovie to the courier.",
+   "wer": 0.36
+  },
+  {
+   "path": "assets/audio/words/quantity-noun-md0.mp3",
+   "text": "The quantity is thirty gift boxes.",
+   "where": "quantity-noun md0",
+   "base": "The coin to aid is 30 gift boxes.",
+   "small": "The coin to aid is 30 gift barkses.",
+   "wer": 0.67
+  },
+  {
+   "path": "assets/audio/words/bulk-adj.mp3",
+   "text": "This is a bulk order for the office.",
+   "where": "bulk-adj main",
+   "base": "This is a bulk or if the afro's.",
+   "small": "This is a bulk core of the aphids.",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/words/bulk-adj-md0.mp3",
+   "text": "This is a bulk order of thirty mugs for the office.",
+   "where": "bulk-adj md0",
+   "base": "This is a bulk word of 30 monks for the Afos.",
+   "small": "This is a bulk worth of 30 monks for the Aphes.",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/words/lead-time-phrase.mp3",
+   "text": "The lead time is three weeks.",
+   "where": "lead-time-phrase main",
+   "base": "Believe Time is 3 weeks.",
+   "small": "Bully time is three weeks.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/octopus-card-phrase-ex3.mp3",
+   "text": "Tap your Octopus card on the reader beside the turnstile.",
+   "where": "octopus-card-phrase e2",
+   "base": "Tip your octopus card on the reedid beside the turnstool.",
+   "small": "Tip your octopus card on the reading beside the turnstool.",
+   "wer": 0.3
+  },
+  {
+   "path": "assets/audio/words/not-feeling-well-phrase-ex3.mp3",
+   "text": "The hot kitchen is a bad place when I am not feeling well.",
+   "where": "not-feeling-well-phrase e2",
+   "base": "The heart kitchen is a big place when I am in a full-ling well.",
+   "small": "The heart kitchen is a big place when I am in a filling well.",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/words/doctors-note-phrase.mp3",
+   "text": "I can bring a doctor's note on Monday.",
+   "where": "doctors-note-phrase main",
+   "base": "I can bring the dark days note on Monday.",
+   "small": "I can bring the dark disnote on Monday.",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/words/doctors-note-phrase-ex3.mp3",
+   "text": "Please rate the doctor's note from one to ten.",
+   "where": "doctors-note-phrase e2",
+   "base": "Please check the inductor in beside the darkest tray.",
+   "small": "Please check the ducted inlet beside the darkest tray.",
+   "wer": 0.78
+  },
+  {
+   "path": "assets/audio/words/cover-my-shift-phrase-ex2.mp3",
+   "text": "Mei can cover my shift if the shop stays busy.",
+   "where": "cover-my-shift-phrase e1",
+   "base": "Make and colour my shift if the sharp stays busy.",
+   "small": "Make and cover my shift if the sharp stays busy.",
+   "wer": 0.3
+  },
+  {
+   "path": "assets/audio/words/cover-my-shift-phrase-ex3.mp3",
+   "text": "Seeing the doctor means I need someone to cover my shift.",
+   "where": "cover-my-shift-phrase e2",
+   "base": "Seating the darked memes, I need someone to cover my shift.",
+   "small": "Seating the dark means I need someone to cover might shift.",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/words/baggage-claim-phrase.mp3",
+   "text": "My bag is missing at baggage claim.",
+   "where": "baggage-claim-phrase main",
+   "base": "My bed is missing it, beverage clean.",
+   "small": "Mybed is missing it, Bivage claim.",
+   "wer": 0.57
+  },
+  {
+   "path": "assets/audio/words/baggage-claim-phrase-ex3.mp3",
+   "text": "Keep your baggage claim next to your passport.",
+   "where": "baggage-claim-phrase e2",
+   "base": "Call us about the baggage claim on the Glass Counter at 10.",
+   "small": "Paul est about the biggage claim on the glass counter at ten.",
+   "wer": 1.38
+  },
+  {
+   "path": "assets/audio/words/baggage-claim-phrase-md1.mp3",
+   "text": "Ask the officer by the oversized items.",
+   "where": "baggage-claim-phrase md1",
+   "base": "Isktheaafis by the oversized items",
+   "small": "Ispia aphus by the oversized ions.",
+   "wer": 0.57
+  },
+  {
+   "path": "assets/audio/words/tag-number-phrase.mp3",
+   "text": "The tag number is HK482 on this baggage receipt.",
+   "where": "tag-number-phrase main",
+   "base": "A tech number is HK-482 on Miss Biggage receipt.",
+   "small": "A tech number is HK-480-2 on Ms. Bighit's receipt.",
+   "wer": 0.67
+  },
+  {
+   "path": "assets/audio/words/tag-number-phrase-md0.mp3",
+   "text": "The tag number is HK482 on this baggage receipt.",
+   "where": "tag-number-phrase md0",
+   "base": "The tech number is HK 480 to warm this bigage receipt.",
+   "small": "The tech number is HK 400-AE2 on this big edge receipt.",
+   "wer": 0.67
+  },
+  {
+   "path": "assets/audio/words/tag-number-phrase-md1.mp3",
+   "text": "I read the tag number slowly to the officer.",
+   "where": "tag-number-phrase md1",
+   "base": "I raid the Tignum much slowly to the Afis.",
+   "small": "I read the text numbers slowly to the affos.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/salon-noun-ex3.mp3",
+   "text": "Clients come before office hours because this salon opens early.",
+   "where": "salon-noun e2",
+   "base": "Clients come before Afesauce because this solen opens early.",
+   "small": "Clients come before alpha sounds because this solen opens early.",
+   "wer": 0.3
+  },
+  {
+   "path": "assets/audio/words/side-noun-ex3.mp3",
+   "text": "The longer left side needs to match the shorter right one.",
+   "where": "side-noun e2",
+   "base": "The loin the left side needs to mix the shura right one.",
+   "small": "The loin the left side needs to mix the surer right one.",
+   "wer": 0.36
+  },
+  {
+   "path": "assets/audio/words/wash-verb-ex3.mp3",
+   "text": "Please wash and then wait outside.",
+   "where": "wash-verb e2",
+   "base": "Please ocean then wait outside.",
+   "small": "Please or should then wait outside.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/wash-verb-md1.mp3",
+   "text": "Yes. They checked my bag too.",
+   "where": "wash-verb md1",
+   "base": "Yes, they checked my big 2.",
+   "small": "Yes, they checked my big two.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/on-track-phrase-ex3.mp3",
+   "text": "The buyer's visit still looks possible because the shirts are on track.",
+   "where": "on-track-phrase e2",
+   "base": "The bines visit still looks parsful because the shirts are in truck.",
+   "small": "The bind's visit still looks parsful because the shirts are in truck.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/follow-up-verb-ex3.mp3",
+   "text": "Please follow up and then wait outside.",
+   "where": "follow-up-verb e2",
+   "base": "They fall up a short note on the car.",
+   "small": "They follow up a short note on the car.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/meeting-noun-md1.mp3",
+   "text": "Please send the note after the meeting.",
+   "where": "meeting-noun md1",
+   "base": "Please send the note of to the meeting.",
+   "small": "Please send the note up to the mean.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/latte-noun-ex2.mp3",
+   "text": "A hot latte is on the counter.",
+   "where": "latte-noun e1",
+   "base": "A heart latte is on the count.",
+   "small": "A heart larte is an account.",
+   "wer": 0.71
+  },
+  {
+   "path": "assets/audio/words/latte-noun-md1.mp3",
+   "text": "A hot latte is on the counter.",
+   "where": "latte-noun md1",
+   "base": "A heart-larté is on the count.",
+   "small": "A heart larte is on the count.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/single-journey-phrase-md0.mp3",
+   "text": "A single journey ticket costs twelve dollars.",
+   "where": "single-journey-phrase md0",
+   "base": "A single journey ticket course is 12 darles.",
+   "small": "A single-journey ticket course is $12.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/access-noun-ex3.mp3",
+   "text": "Without access, the plumber cannot reach the pipe in our flat.",
+   "where": "access-noun e2",
+   "base": "Without excess, the plumb can arch reach the pipe in our flood.",
+   "small": "Without excess, the plum canark reached the pike in Owlflet.",
+   "wer": 0.64
+  },
+  {
+   "path": "assets/audio/words/flat-noun-ex3.mp3",
+   "text": "Our flat on the twelfth floor has a noisy neighbour.",
+   "where": "flat-noun e2",
+   "base": "Our offload on the 12th floor has a noisy navel.",
+   "small": "Our offlet on the 12th floor has a noisy navel.",
+   "wer": 0.3
+  },
+  {
+   "path": "assets/audio/words/repair-noun-md1.mp3",
+   "text": "The repair starts after six.",
+   "where": "repair-noun md1",
+   "base": "The repairs start of the six.",
+   "small": "The repairs start of the six.",
+   "wer": 0.8
+  },
+  {
+   "path": "assets/audio/words/saturday-noun-ex2.mp3",
+   "text": "I will bring the receipt on Saturday.",
+   "where": "saturday-noun e1",
+   "base": "I will bring the receipt on 7 day.",
+   "small": "I will bring the receipt on 7 day.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/saturday-noun-md0.mp3",
+   "text": "Saturday is the collection day.",
+   "where": "saturday-noun md0",
+   "base": "So the day is the collection day.",
+   "small": "So the date is the collection day.",
+   "wer": 0.6
+  },
+  {
+   "path": "assets/audio/words/non-smoking-phrase-ex3.mp3",
+   "text": "Our four guests asked for a non-smoking room on a high floor.",
+   "where": "non-smoking-phrase e2",
+   "base": "Our four guests is pronounced smoking room on a high floor.",
+   "small": "Our four guests is pronounced smoking room on a high floor.",
+   "wer": 0.31
+  },
+  {
+   "path": "assets/audio/words/machine-noun-md1.mp3",
+   "text": "I cannot take the card out of the machine.",
+   "where": "machine-noun md1",
+   "base": "I can arc take the car out of the machine.",
+   "small": "I can now take the car out of the machine.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/freeze-verb-md1.mp3",
+   "text": "I have stopped all payments on that card.",
+   "where": "freeze-verb md1",
+   "base": "I have start all payments on mid-car.",
+   "small": "I have starved all payments on mid-car.",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/words/egg-noun-ex2.mp3",
+   "text": "Note eggnoun: polish the egg lightly.",
+   "where": "egg-noun e1",
+   "base": "Note Eggnound, Parlish the Egg Lightly",
+   "small": "Note egg noun. Parlish the egg lightly.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/egg-noun-md1.mp3",
+   "text": "Note eggnoun: polish the egg lightly.",
+   "where": "egg-noun md1",
+   "base": "Note eggnam, parlish the egg lightly.",
+   "small": "Note eggnam. Parlish the egg lightly.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/kitchen-noun-ex3.mp3",
+   "text": "The kitchen closed early, so the grilled fish is no longer served.",
+   "where": "kitchen-noun e2",
+   "base": "The kitchen closed early. Silver grilled fish is no lorrying reserved.",
+   "small": "The kitchen closed early, so the grilled fish's no laring was served.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/annual-leave-phrase-ex2.mp3",
+   "text": "Annual leave can start on Monday.",
+   "where": "annual-leave-phrase e1",
+   "base": "In the We'll Leave can start on Monday.",
+   "small": "In the Will Leave can start on Monday.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/public-holiday-phrase-ex2.mp3",
+   "text": "The office closes on a public holiday.",
+   "where": "public-holiday-phrase e1",
+   "base": "The AFIS clothes is one of public harlot day.",
+   "small": "The aphorist's clothes is one of public Harlem day.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/public-holiday-phrase-md1.mp3",
+   "text": "The office closes on a public holiday.",
+   "where": "public-holiday-phrase md1",
+   "base": "The AFIS closed on a public holiday.",
+   "small": "The aff is closed on a public Harla day.",
+   "wer": 0.71
+  },
+  {
+   "path": "assets/audio/words/font-noun-md1.mp3",
+   "text": "The plain font is free of charge.",
+   "where": "font-noun md1",
+   "base": "The plane front is free of charge.",
+   "small": "The plane fort is free of charge.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/character-limit-phrase-ex3.mp3",
+   "text": "The engraving failed because the name went past the character limit.",
+   "where": "character-limit-phrase e2",
+   "base": "The engraving failed because the name would pass the correct to omit.",
+   "small": "The engraving failed because the name would pass the ecorectal omelet.",
+   "wer": 0.36
+  },
+  {
+   "path": "assets/audio/words/perfume-noun-ex3.mp3",
+   "text": "Please avoid perfume on the perfume.",
+   "where": "perfume-noun e2",
+   "base": "Dana asked about the perfume near the open drawer at 10.",
+   "small": "Dana asked about the perfume near the open drawer at 10.",
+   "wer": 1.67
+  },
+  {
+   "path": "assets/audio/words/certificate-noun-ex3.mp3",
+   "text": "Keep the pearl certificate with the ring in the red pouch.",
+   "where": "certificate-noun e2",
+   "base": "Heat the pearls to ficke with the ring in the red pouch.",
+   "small": "Keep the pearls to ficock with the ring in the red pouch.",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/words/high-chair-phrase-ex3.mp3",
+   "text": "We need a high chair because our toddler cannot sit still.",
+   "where": "high-chair-phrase e2",
+   "base": "We need a ighture because our tardlachnark sits still.",
+   "small": "We need A.I.T.E.R. because our Tardlick narc sits still.",
+   "wer": 0.55
+  },
+  {
+   "path": "assets/audio/words/credit-noun-md0.mp3",
+   "text": "Store credit is kinder than cash.",
+   "where": "credit-noun md0",
+   "base": "Store credit is kind of in cash",
+   "small": "Store credit is kind then cash.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/battery-noun-ex3.mp3",
+   "text": "This remote needs a fresh battery.",
+   "where": "battery-noun e2",
+   "base": "Ruth asked about the bellery by the round table at 10.",
+   "small": "Ruth asked about the boogery by the round table at 10.",
+   "wer": 1.83
+  },
+  {
+   "path": "assets/audio/words/water-resistant-adj-md0.mp3",
+   "text": "This watch is water-resistant.",
+   "where": "water-resistant-adj md0",
+   "base": "This warches war resistant.",
+   "small": "This war is war resistant.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/words/savings-account-phrase-ex3.mp3",
+   "text": "The teller pointed to my savings account.",
+   "where": "savings-account-phrase e2",
+   "base": "The telepoint to my savings account.",
+   "small": "The telepoint to my savings account",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/payslip-noun.mp3",
+   "text": "This month's payslip is missing overtime.",
+   "where": "payslip-noun main",
+   "base": "This month's pay slip is missing over time.",
+   "small": "This month's payslip is missing over time.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/payslip-noun-md0.mp3",
+   "text": "This month's payslip is missing overtime.",
+   "where": "payslip-noun md0",
+   "base": "This month's pacelet is missing over time.",
+   "small": "This month's payslip is missing over time.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/payslip-noun-md1.mp3",
+   "text": "Your April payslip will show the hours.",
+   "where": "payslip-noun md1",
+   "base": "Your April pay slip will show the out.",
+   "small": "Your April pastelip will shoo the owls.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/payroll-noun.mp3",
+   "text": "The payroll deadline was the twenty-fifth.",
+   "where": "payroll-noun main",
+   "base": "The payroll deadline was the 25th.",
+   "small": "The payroll deadline was the 25th.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/payroll-noun-md0.mp3",
+   "text": "The payroll deadline was the twenty-fifth.",
+   "where": "payroll-noun md0",
+   "base": "The payroll deadline was the 25th.",
+   "small": "The payroll deadline was the 25th.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/mpf-phrase-ex2.mp3",
+   "text": "MPF is taken from the payslip.",
+   "where": "mpf-phrase e1",
+   "base": "MPF is taken from the pay-slope.",
+   "small": "and PF is taken from the pay slip.",
+   "wer": 0.67
+  },
+  {
+   "path": "assets/audio/words/mpf-phrase-md1.mp3",
+   "text": "MPF is taken from the payslip.",
+   "where": "mpf-phrase md1",
+   "base": "MPF is taken from the pay slip.",
+   "small": "and PF is taken from the payslip.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/millilitre-noun.mp3",
+   "text": "Liquids must be under one hundred millilitres.",
+   "where": "millilitre-noun main",
+   "base": "liquids must be an under 100 milliliter.",
+   "small": "Liquids must be in under 100 milliliters.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/millilitre-noun-ex2.mp3",
+   "text": "Each bottle is under one hundred millilitres.",
+   "where": "millilitre-noun e1",
+   "base": "Each barrel is under 100 milliliter.",
+   "small": "Each barrel is under 100 milliligms.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/millilitre-noun-md0.mp3",
+   "text": "Liquids must be under one hundred millilitres.",
+   "where": "millilitre-noun md0",
+   "base": "liquids must be at under 100 millilleons.",
+   "small": "Liquids must be at under 100 milliliters.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/millilitre-noun-md1.mp3",
+   "text": "Each bottle is under one hundred millilitres.",
+   "where": "millilitre-noun md1",
+   "base": "Each barrel is under 100 milliliter.",
+   "small": "Each barrel is under 100 millilamps.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/shuttle-noun.mp3",
+   "text": "The shuttle train stops beside that gate.",
+   "where": "shuttle-noun main",
+   "base": "The shovel train starts beside that gate.",
+   "small": "The shovel train starts beside that gate.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/gram-noun-ex2.mp3",
+   "text": "She weighs the bangle in grams.",
+   "where": "gram-noun e1",
+   "base": "She weighs the bungle in grums.",
+   "small": "She weighs the bungle in grumbs.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/gram-noun-ex3.mp3",
+   "text": "The shop charges forty dollars for each gram of this chain.",
+   "where": "gram-noun e2",
+   "base": "The sharp charge is four-eaterals for each grum of this chain.",
+   "small": "The sharp charge is four e-darls for each grump of this chain.",
+   "wer": 0.6
+  },
+  {
+   "path": "assets/audio/words/purity-noun-ex2.mp3",
+   "text": "Please check the weight and the purity.",
+   "where": "purity-noun e1",
+   "base": "Please check the weight in the curate.",
+   "small": "Please check the wait in the curate.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/toothache-noun-ex3.mp3",
+   "text": "Please rate the toothache from one to ten.",
+   "where": "toothache-noun e2",
+   "base": "Iris asked about the toothache inside the blue trait 10.",
+   "small": "Iris asked about the toothache inside the blue trait, 10.",
+   "wer": 0.88
+  },
+  {
+   "path": "assets/audio/words/filling-noun-ex2.mp3",
+   "text": "The filling is eight hundred dollars.",
+   "where": "filling-noun e1",
+   "base": "The filling is 800 darles.",
+   "small": "The filling is 800 dalps.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/licence-noun-ex2.mp3",
+   "text": "The licence is in the folder.",
+   "where": "licence-noun e1",
+   "base": "The license is in the fold.",
+   "small": "The license is in the fold.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/licence-noun-md1.mp3",
+   "text": "The licence is in the folder.",
+   "where": "licence-noun md1",
+   "base": "The license is in the fault.",
+   "small": "The license is in the fold.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/soft-drink-noun-ex3.mp3",
+   "text": "I swapped my soft drink for juice because the cola was too sweet.",
+   "where": "soft-drink-noun e2",
+   "base": "I swarped mites of to drink for juice because the cola was too sweet.",
+   "small": "I swarmed my sift to drink for juice because the colar was too sweet.",
+   "wer": 0.31
+  },
+  {
+   "path": "assets/audio/words/quarter-noun.mp3",
+   "text": "I missed one target from last quarter.",
+   "where": "quarter-noun main",
+   "base": "I missed one target from Lustcora.",
+   "small": "I missed one target from Lust Koro.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/quarter-noun-ex2.mp3",
+   "text": "The shop display slipped last quarter.",
+   "where": "quarter-noun e1",
+   "base": "The sharp display slipped less quorum.",
+   "small": "The sharp display slipped last quorum.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/quarter-noun-ex3.mp3",
+   "text": "Sales recovered during this quarter after a weak winter.",
+   "where": "quarter-noun e2",
+   "base": "Sales recovered during this corps after a week went in.",
+   "small": "Sales recovered during this quarrel after a week went in.",
+   "wer": 0.44
+  },
+  {
+   "path": "assets/audio/words/quarter-noun-md0.mp3",
+   "text": "I missed one target from last quarter.",
+   "where": "quarter-noun md0",
+   "base": "I missed one target from Lost Chorro.",
+   "small": "I missed one target from List Coro.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/quarter-noun-md1.mp3",
+   "text": "The shop display slipped last quarter.",
+   "where": "quarter-noun md1",
+   "base": "The sharp display slipped less core up.",
+   "small": "The shark display slipped last quorum.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/allowance-noun-ex2.mp3",
+   "text": "The alcohol allowance is one bottle.",
+   "where": "allowance-noun e1",
+   "base": "The Alker Harle Allowance is one barrel.",
+   "small": "The ole curharel allowance is one barrelled.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/allowance-noun-ex3.mp3",
+   "text": "Duty applies once my wine shopping passes the allowance.",
+   "where": "allowance-noun e2",
+   "base": "Dewey applies once my wine-sharpening pisses the allowance.",
+   "small": "Dewy applies once my wine-sharping piss is the allowance.",
+   "wer": 0.44
+  },
+  {
+   "path": "assets/audio/words/alcohol-noun-md0.mp3",
+   "text": "This bottle of alcohol is over the duty-free limit.",
+   "where": "alcohol-noun md0",
+   "base": "This barrel of Olker Harle is over the Dewey Free Limit.",
+   "small": "This barrel of Ullcraharl is over the Dewey free limit.",
+   "wer": 0.3
+  },
+  {
+   "path": "assets/audio/words/appraisal-noun-md1.mp3",
+   "text": "The appraisal lists the gold weight and the small crack.",
+   "where": "appraisal-noun md1",
+   "base": "Be the praise of lists the gold weight and the small cruck.",
+   "small": "Be of appraisal lists the gold weight and the small croc.",
+   "wer": 0.3
+  },
+  {
+   "path": "assets/audio/words/box-noun.mp3",
+   "text": "This box is split at the corner.",
+   "where": "box-noun main",
+   "base": "This barks is split at the corn.",
+   "small": "This barks is split at the corn.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/words/sign-verb-ex3.mp3",
+   "text": "Please sign the smaller option.",
+   "where": "sign-verb e2",
+   "base": "Please sign the small red auction.",
+   "small": "Please sign the small re-arction.",
+   "wer": 0.6
+  },
+  {
+   "path": "assets/audio/words/sign-verb-md0.mp3",
+   "text": "Please sign on the dotted line at the bottom.",
+   "where": "sign-verb md0",
+   "base": "Please sign in the dark line at the bar on.",
+   "small": "Please sign in the dark line at the barroom.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/draft-noun-md1.mp3",
+   "text": "I can swap in the harbor picture.",
+   "where": "draft-noun md1",
+   "base": "I can swarp in the harbor pitch.",
+   "small": "I can swap in the heart of a pitch.",
+   "wer": 0.57
+  },
+  {
+   "path": "assets/audio/words/lettering-noun.mp3",
+   "text": "Plain lettering will finish in time.",
+   "where": "lettering-noun main",
+   "base": "Playing levering will finish in time.",
+   "small": "Playing leg ring will finish in time.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/words/scanner-noun.mp3",
+   "text": "Where should the scanner desk be if I missed the inner checkpoint beside that belt?",
+   "where": "scanner-noun main",
+   "base": "Where should the skin and desk be if I miss be in a checkpoint aside that belt?",
+   "small": "Where should the skin and desk be if I must be in a checkpoint beside the belt?",
+   "wer": 0.47
+  },
+  {
+   "path": "assets/audio/words/checkpoint-noun-ex3.mp3",
+   "text": "A long queue formed at the inner checkpoint before the morning flight.",
+   "where": "checkpoint-noun e2",
+   "base": "A long cube formed at the end of the checkpoint before the morning flight.",
+   "small": "A long cue formed at the in-chica point before the morning slight.",
+   "wer": 0.42
+  },
+  {
+   "path": "assets/audio/words/checkpoint-noun-md0.mp3",
+   "text": "I missed the inner checkpoint beside the document scanner.",
+   "where": "checkpoint-noun md0",
+   "base": "I missed the in-check point beside the document's skin.",
+   "small": "I miss the in checkpoint beside the dark-imid skin.",
+   "wer": 0.56
+  },
+  {
+   "path": "assets/audio/words/valuation-noun-ex2.mp3",
+   "text": "I can prepare that fresh valuation, and the claimant may send the file on Monday.",
+   "where": "valuation-noun e1",
+   "base": "I can prepare the fresh evaluation and the claim it may send the file on Monday.",
+   "small": "I can prepare the fresh evaluation and the claim it may send the file on Monday.",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/words/deductible-noun-ex2.mp3",
+   "text": "The written valuation still stands, and the new deductible is noted after that first visit.",
+   "where": "deductible-noun e1",
+   "base": "The ring valuation still stems, and the new deductible is no adof to the first visit.",
+   "small": "The rain valuation still stins, and the new deductible is no adieu after the first visit.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/words/deductible-noun-md1.mp3",
+   "text": "The written valuation still stands, and the new deductible is noted after that first visit.",
+   "where": "deductible-noun md1",
+   "base": "The ring in valuation still stands and the new deductible is no-it off to the first visit.",
+   "small": "The ring evaluation still stands, and the new deductible is knowed after the first visit.",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/words/cancellation-noun-ex2.mp3",
+   "text": "I can book that banquet from six, and the cancellation fee is forty dollars flat.",
+   "where": "cancellation-noun e1",
+   "base": "I can book with Binquitt from 6 in the cancellation fee is for a Darles Flet.",
+   "small": "I can book with Binquit from six, in the cancellation fee is fory Darla's flit.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/words/gratuity-noun.mp3",
+   "text": "Is the service gratuity included for our party when the surcharge covers three full hours?",
+   "where": "gratuity-noun main",
+   "base": "Is the service gratuity include for Alpari when the searcher covers three full hours?",
+   "small": "Is the service gratuity include for Aopari when the searcher covers three full hours?",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/words/gratuity-noun-md0.mp3",
+   "text": "Is the service gratuity included for our party when the surcharge covers three full hours?",
+   "where": "gratuity-noun md0",
+   "base": "Is the service gratuity include for Alpari when the search shirt covers three full alms?",
+   "small": "Is the service gratuity include for Alpari when the searcher covers three full hours?",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/words/overrun-noun-md0.mp3",
+   "text": "Does the forecast show an overrun this quarter?",
+   "where": "overrun-noun md0",
+   "base": "Does the forks show enough run this core out?",
+   "small": "Does the forks showing of run this quarrel?",
+   "wer": 0.62
+  },
+  {
+   "path": "assets/audio/words/overrun-noun-md1.mp3",
+   "text": "It does. Finance circled the small overrun in red.",
+   "where": "overrun-noun md1",
+   "base": "It does, finds, circle the small over on in red.",
+   "small": "It does. Finds. Circle the small over on in red.",
+   "wer": 0.44
+  },
+  {
+   "path": "assets/audio/words/circulate-verb-ex2.mp3",
+   "text": "I will circulate that written forecast once the team has read the full note pack.",
+   "where": "circulate-verb e1",
+   "base": "I will circulate that Rin and Forks wants. The team has read the full note peck.",
+   "small": "I will circulate that Rin and Forks once. The team has read the full note peck.",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/words/stakeholder-noun-ex2.mp3",
+   "text": "Please keep this stakeholder with your documents.",
+   "where": "stakeholder-noun e1",
+   "base": "Please check these data old and beside this they called a tray.",
+   "small": "Please check the stakeholder holding beside the stakeholder tray.",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/words/reimbursement-noun-ex2.mp3",
+   "text": "I will bring that March reimbursement, and the cost variance matches our written ledger.",
+   "where": "reimbursement-noun e1",
+   "base": "I will bring that March reimbursement, in the course to variance matches our ring legend.",
+   "small": "I will bring that March reimbursement, in the cost Varian smitches our ring legend.",
+   "wer": 0.36
+  },
+  {
+   "path": "assets/audio/words/procurement-noun-ex2.mp3",
+   "text": "Will you approve the full variance if procurement keeps it inside the written March ledger?",
+   "where": "procurement-noun e1",
+   "base": "Will you approve the full variance of Procureant Kitzy inside the re-March Ledger?",
+   "small": "Will you approve the full variance if procurement keeps the insight? The remark led you.",
+   "wer": 0.47
+  },
+  {
+   "path": "assets/audio/words/ledger-noun-ex3.mp3",
+   "text": "The printer invoice agrees with the March gap in our ledger.",
+   "where": "ledger-noun e2",
+   "base": "The printer invoils the greasies with the March gap in our legend.",
+   "small": "The printer invoiced the greeties with the march gep in our legend.",
+   "wer": 0.45
+  },
+  {
+   "path": "assets/audio/words/ledger-noun-md1.mp3",
+   "text": "Will you approve the full variance if procurement keeps it inside the written March ledger?",
+   "where": "ledger-noun md1",
+   "base": "Will you approve the full variance if procurement keeps the inside the ring march led you?",
+   "small": "Will you approve the full variance if procurement keeps inside the ring March led you?",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/words/immigration-noun-md0.mp3",
+   "text": "If the layover leaves at two, how early should I reach immigration with one bag?",
+   "where": "immigration-noun md0",
+   "base": "If the lay of the leaves to two, how early should I reach immigration with one bug?",
+   "small": "If the lay of the leaves to two, how early should I reach immigration, with one beg?",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/lines/f1-l2.mp3",
+   "text": "Listen. Ship is short. Sheep is long.",
+   "where": "f1-l2",
+   "base": "Listen, SHIC is short, SHIC is loin.",
+   "small": "Listen, chic is short, chic is long.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/lines/f3-l2.mp3",
+   "text": "This is ten dollars.",
+   "where": "f3-l2",
+   "base": "This is 10 Darla's",
+   "small": "This is 10 Darlits.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/lines/t2-l2.mp3",
+   "text": "Here's my boarding pass and my passport.",
+   "where": "t2-l2",
+   "base": "Here is my boarding pass and my passport.",
+   "small": "Here is my boarding pest and my passport.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/lines/t3-l2.mp3",
+   "text": "I have a reservation under Tom, for two nights.",
+   "where": "t3-l2",
+   "base": "I have a reservation on the term for two nights.",
+   "small": "I have a reservation on the Tarm for two nights.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/lines/r1-l2.mp3",
+   "text": "Yes. A table for two, please.",
+   "where": "r1-l2",
+   "base": "Yes, but table foot to please.",
+   "small": "Yes, but table foot to please.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/lines/f1-m1.mp3",
+   "text": "Ship. Sheep.",
+   "where": "f1-m1",
+   "base": "Sheh. Sheh.",
+   "small": "shé shé",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/lines/t1-m1.mp3",
+   "text": "I'm flying to Hong Kong.",
+   "where": "t1-m1",
+   "base": "I'm flying to Harenkong.",
+   "small": "I'm flying to Harinkan.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/lines/f3-m3.mp3",
+   "text": "Yes. Five dollars.",
+   "where": "f3-m3",
+   "base": "Yes, five durls.",
+   "small": "Yes, five darlings.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/lines/w3-l3.mp3",
+   "text": "Could you expand on the deadline and unmute so we can hear you?",
+   "where": "w3-l3",
+   "base": "Could you expend on the deadline in on mute so we can hear you?",
+   "small": "Could you expend in the deadline in on you so we can hear you?",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/lines/d3-l3.mp3",
+   "text": "The monthly rent is eighteen thousand dollars, and water is included.",
+   "where": "d3-l3",
+   "base": "The monthly rent is $18,000 and the war is included.",
+   "small": "The monthly rent is $18,000 and the war is included.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/lines/d3-l8.mp3",
+   "text": "I will read the written notice carefully before I pay the deposit.",
+   "where": "d3-l8",
+   "base": "I will read the ring, know as carefully before I pay the deparse it.",
+   "small": "I will weed the rind, knowest carefully before I pay the deparsant.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/lines/w5-l6.mp3",
+   "text": "If the clasp cannot be repaired, we can offer a replacement or compensation of two hundred dollars.",
+   "where": "w5-l6",
+   "base": "If the Clisp can't be repaired, we can offer a replacement or compensation of 200 darls.",
+   "small": "If the Clisp Gnart be repaired, we can offer a replacement or compensation of 200 Darls.",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/lines/d4-l4.mp3",
+   "text": "Please activate the new SIM card with your valid passport.",
+   "where": "d4-l4",
+   "base": "Please activate the new SIM car with your Volica Sport.",
+   "small": "Please activate the new SINAM card with your Volica Sport.",
+   "wer": 0.3
+  },
+  {
+   "path": "assets/audio/lines/d4-l6.mp3",
+   "text": "A small top-up is enough if that plan stays cheap.",
+   "where": "d4-l6",
+   "base": "A small tarp up is enough if the plane stays cheap.",
+   "small": "A small tarp up is enough if the plen stays cheap.",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/lines/d4-l7.mp3",
+   "text": "I'll pay for this prepaid SIM card here.",
+   "where": "d4-l7",
+   "base": "I'll pay for this prepaid Assign M car here.",
+   "small": "I'll pay for this propane asinam car here.",
+   "wer": 0.38
+  },
+  {
+   "path": "assets/audio/lines/f5-m3.mp3",
+   "text": "My name is {{learner}}. {{learner-spell}}.",
+   "where": "f5-m3",
+   "base": "My name is Lane, L-I-N-G.",
+   "small": "My name is Lane Fel-I-N-G.",
+   "wer": 1.67
+  },
+  {
+   "path": "assets/audio/lines/t9-l5.mp3",
+   "text": "We can offer you priority on the next plane out, though the gate change is not posted yet.",
+   "where": "t9-l5",
+   "base": "We can offer you priority when the next playing out, though the gate changes in our post yet.",
+   "small": "We can offer you Priory on the next playing out, though the gate change isn't our post yet.",
+   "wer": 0.28
+  },
+  {
+   "path": "assets/audio/lines/t10-l4.mp3",
+   "text": "What tag number is on your baggage receipt, so I can search for the bag?",
+   "where": "t10-l4",
+   "base": "But to take number is on your bug ID receipt so I can search for the bug.",
+   "small": "but the number is on your bookage receipt so I can search for the bug",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/lines/t10-l5.mp3",
+   "text": "The tag number is HK four eight two.",
+   "where": "t10-l5",
+   "base": "The TIG number is HK482.",
+   "small": "The TIG number is HK482.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/lines/d7-l5.mp3",
+   "text": "It's eighty dollars in total, and the price covers the blow dry.",
+   "where": "d7-l5",
+   "base": "It's eight darlas in total and the price covers the blue dry.",
+   "small": "It's eight darlas in toil and the price covers the blue dry.",
+   "wer": 0.36
+  },
+  {
+   "path": "assets/audio/lines/r10-l2.mp3",
+   "text": "Hot or iced for that latte?",
+   "where": "r10-l2",
+   "base": "Heart were iced for that larte.",
+   "small": "Heart were iced for that latte.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/lines/t11-l2.mp3",
+   "text": "Please stay on the Island line, and it stops at Central.",
+   "where": "t11-l2",
+   "base": "Please stay in the island line and it starts central.",
+   "small": "Please stay in the island line and it starts central.",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/lines/t11-l5.mp3",
+   "text": "I need to top up my Octopus card before I ride.",
+   "where": "t11-l5",
+   "base": "I need to tark up my arctubus card before I run.",
+   "small": "I need to tarp up my arctobus card before I write.",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/lines/r11-l8.mp3",
+   "text": "I will. I'll put a note on your order now.",
+   "where": "r11-l8",
+   "base": "I will, but I'll put a new twin you're ordered now.",
+   "small": "I will. I'll put a new 20-ord now.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/lines/w9-l4.mp3",
+   "text": "Good. Please email me a handover note before you go.",
+   "where": "w9-l4",
+   "base": "Please email me a hand of note before you go.",
+   "small": "Please email me a hint of note before you go.",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/lines/t13-l1.mp3",
+   "text": "I have a bad headache and a high fever. What can I take?",
+   "where": "t13-l1",
+   "base": "I have a bit headache in the high-fee, what can I take?",
+   "small": "I have a bit headache in the high fee. What can I take?",
+   "wer": 0.31
+  },
+  {
+   "path": "assets/audio/lines/j17-l2.mp3",
+   "text": "Saltwater pearls are brighter.",
+   "where": "j17-l2",
+   "base": "Saltwork pearls are Brian.",
+   "small": "Salt or pearls or Brian?",
+   "wer": 1.0
+  },
+  {
+   "path": "assets/audio/lines/j17-l4.mp3",
+   "text": "From two thousand to six thousand dollars, depending on the size and lustre of each freshwater pearl.",
+   "where": "j17-l4",
+   "base": "From 2000 to 6000 darlas, depending on the size and luster of each fresh-wore pearl.",
+   "small": "from 2,000 to 6,000 darls, depending on the size and luster of each fresh-wore pearl.",
+   "wer": 0.36
+  },
+  {
+   "path": "assets/audio/lines/j17-l5.mp3",
+   "text": "I'll take this shorter strand. How should I look after the pearls at home?",
+   "where": "j17-l5",
+   "base": "I'll take this short of a strand. How should I look after the pearls' tone?",
+   "small": "I'll take this shore of a Strind. How should I look after the Pearl's Tom?",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/lines/t14-l6.mp3",
+   "text": "Yes, here's a voucher for thirty dollars. You can use it at any cafe here.",
+   "where": "t14-l6",
+   "base": "Yes, errors of voucher for 30 darls. You can use it any cafe hair.",
+   "small": "Yes, hair is a voucher for 30 darls. You can use any cafe hair.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/lines/t14-l8.mp3",
+   "text": "Gate twenty-two. Here's your new boarding pass.",
+   "where": "t14-l8",
+   "base": "822, here is your new boarding pass.",
+   "small": "Gate 22, here is your new boarding pass.",
+   "wer": 0.43
+  },
+  {
+   "path": "assets/audio/lines/r13-l4.mp3",
+   "text": "For here or to go?",
+   "where": "r13-l4",
+   "base": "for Heror to Bell.",
+   "small": "For Hero to go.",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/lines/t15-l4.mp3",
+   "text": "Of course. Here's your tag number, fifty-two. Just show it when you come back.",
+   "where": "t15-l4",
+   "base": "Of course, here is your tick number 52. Just show it when you come back.",
+   "small": "Of course. Here is your tick number, 52. Just show it when you come back.",
+   "wer": 0.29
+  },
+  {
+   "path": "assets/audio/lines/w11-l3.mp3",
+   "text": "Yes, twelve hours. My manager approved them on the twenty-eighth.",
+   "where": "w11-l3",
+   "base": "Yes, 12 hours. My miniature approved them on the 28th.",
+   "small": "Yes, twelve hours. My miniature approved them on the twenty-eight.",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/lines/w11-l6.mp3",
+   "text": "Yes, they'll be on your April payslip. Your tax and MPF will be adjusted too.",
+   "where": "w11-l6",
+   "base": "Yes, they'll be on your April pay slot. Your text-spend MPF will be adjusted too.",
+   "small": "Yes, they'll be on your April paislet. Your text-mend and PDF will be adjusted too.",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/lines/r14-l5.mp3",
+   "text": "Saturday at three, please. Do you have candles too?",
+   "where": "r14-l5",
+   "base": "Set a date 3, please. Do you have kindles too?",
+   "small": "Set a date 3, please. Do you have kindles too?",
+   "wer": 0.44
+  },
+  {
+   "path": "assets/audio/lines/j19-l2.mp3",
+   "text": "Sure. The cut, colour, and clarity are all very good.",
+   "where": "j19-l2",
+   "base": "Sure, a cut, colo and clurry are all very good.",
+   "small": "Sure, a cut, callow and clurry are all very good.",
+   "wer": 0.3
+  },
+  {
+   "path": "assets/audio/lines/j19-l3.mp3",
+   "text": "What about the carat? And the number on the girdle?",
+   "where": "j19-l3",
+   "base": "What about the correct than the number of the gurgle?",
+   "small": "What about the correct than the number of the gurgle?",
+   "wer": 0.4
+  },
+  {
+   "path": "assets/audio/lines/j20-l6.mp3",
+   "text": "Yes. I can trade that chain and note it on the receipt.",
+   "where": "j20-l6",
+   "base": "This, I can trade the chain, knitted, and the receipt.",
+   "small": "This, I can trade the chain nadir on the receipt.",
+   "wer": 0.42
+  },
+  {
+   "path": "assets/audio/lines/r15-l6.mp3",
+   "text": "The prawn soup has shellfish. Here's a clean plate.",
+   "where": "r15-l6",
+   "base": "The prawn supest shellfish. Here is a clean plate.",
+   "small": "The Prawn Supest Shellfish. Here is a clean plate.",
+   "wer": 0.44
+  },
+  {
+   "path": "assets/audio/lines/w12-l1.mp3",
+   "text": "Could we book half an hour for my performance review soon?",
+   "where": "w12-l1",
+   "base": "Could we book Heaven out for my performance review soon?",
+   "small": "Could we book Heffin out for my performance review soon?",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/lines/t18-l3.mp3",
+   "text": "Should I open this bag now? Is the watch receipt enough?",
+   "where": "t18-l3",
+   "base": "Should I open this book now, is the water seat enough?",
+   "small": "Should I open this book now? Is the water seat enough?",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/lines/t18-l6.mp3",
+   "text": "You should pay forty dollars in cash because that alcohol is well over.",
+   "where": "t18-l6",
+   "base": "You should pay for a darl's in Kish because that okrahaal is well over.",
+   "small": "You should pay fori, darlzen kish, because that ole kor harl is well oeuvre.",
+   "wer": 0.58
+  },
+  {
+   "path": "assets/audio/lines/j21-l4.mp3",
+   "text": "Yes. This photo shows the crack right beside the gold clasp.",
+   "where": "j21-l4",
+   "base": "Yes, this faux shows the crook right beside the gold clist.",
+   "small": "Yes, this foe shows the crook right beside the gold cleft.",
+   "wer": 0.27
+  },
+  {
+   "path": "assets/audio/lines/r16-l4.mp3",
+   "text": "Yes. The mild plate is tofu, and the spicy dish is prawns.",
+   "where": "r16-l4",
+   "base": "S. A mild plate is tofu, into the spicy dishes prongs.",
+   "small": "S. A mild plate is tofu. In the spicy dishes prongs.",
+   "wer": 0.5
+  },
+  {
+   "path": "assets/audio/lines/j22-l1.mp3",
+   "text": "Can you rush the engraving on this gold bracelet before Saturday?",
+   "where": "j22-l1",
+   "base": "Can you rush the engraving on this gold bracelet before sous-a-dait?",
+   "small": "Can you rush the engraving on this gold bracelet afore sew a day?",
+   "wer": 0.36
+  },
+  {
+   "path": "assets/audio/lines/t19-l4.mp3",
+   "text": "There's a quieter room upstairs, away from the hallway.",
+   "where": "t19-l4",
+   "base": "There is a choir room upstairs, away from the hallway.",
+   "small": "There is a choir room upstairs, away from the hallway.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/lines/t20-l6.mp3",
+   "text": "No. That grey case must use the scanner desk when the inner lane is shut.",
+   "where": "t20-l6",
+   "base": "Now that gray case must use the skin and desk when the in-lane is shot.",
+   "small": "Now, that gray case must use the skin and desk when the in-lane is shot.",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/lines/j24-l3.mp3",
+   "text": "Will rhodium plating keep it bright if I wear it every week?",
+   "where": "j24-l3",
+   "base": "Will Rodyum play and keep the bright if I worry every week?",
+   "small": "Will rhodium playing keep it bright if I'm wary every week?",
+   "wer": 0.33
+  },
+  {
+   "path": "assets/audio/lines/j24-l4.mp3",
+   "text": "Rhodium plating will keep it bright. Friday noon is fine here.",
+   "where": "j24-l4",
+   "base": "Radium playing will keep the bright. Friday noon is fine hair.",
+   "small": "Rhodium playing will keep Vic bright Friday noon is fine hair",
+   "wer": 0.27
+  }
+ ],
+ "known": [],
+ "fixed": []
+}

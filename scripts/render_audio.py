@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """Render US Piper audio (normal + slow) for every lexicon item and lesson line.
 
+Only clips whose mp3 is missing or whose text changed are rendered (see clips()).
+
 The bundled voice config asks espeak for generic "en", which is non-rhotic.
 We force en-us so the phonemes match the LJSpeech accent and CMUdict.
 Heteronyms pass explicit [[phonemes]] so read/live/bow/wind/bass/close
@@ -38,29 +40,50 @@ def text_hash(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
 
-def clips() -> list[dict]:
-    lex = json.loads(LEX.read_text(encoding="utf-8"))
-    lines = json.loads(LINES.read_text(encoding="utf-8"))
-    out = []
-    seen = set()
+def clips(lex: dict | None = None, lines: list | None = None) -> list[dict]:
+    """Every recorded clip, the text Piper speaks for it, and the records that carry its text hash.
 
-    def add(rel: str | None, say: str, sha_id: str | None) -> None:
-        if not rel or rel in seen:
+    A clip is (re)rendered whenever its mp3 is missing or the stored audioTextSha256 differs from
+    the hash of the text it should say, so editing a sentence can never leave an old recording.
+    """
+    lex = lex if lex is not None else json.loads(LEX.read_text(encoding="utf-8"))
+    lines = lines if lines is not None else json.loads(LINES.read_text(encoding="utf-8"))
+    out: list[dict] = []
+    by_rel: dict[str, dict] = {}
+
+    def add(rel: str | None, say: str, sha_id: str | None, holder: dict | None) -> None:
+        if not rel:
             return
-        seen.add(rel)
-        out.append({"rel": rel, "say": say, "sha_id": sha_id})
+        if rel in by_rel:
+            if holder is not None:
+                by_rel[rel]["holders"].append(holder)
+            return
+        job = {"rel": rel, "say": say, "sha_id": sha_id, "holders": [holder] if holder is not None else []}
+        by_rel[rel] = job
+        out.append(job)
 
     for item in lex["items"]:
-        add(item["audio"], item["say"], item["id"])
+        add(item["audio"], item["say"], item["id"], None)
         for example in item.get("examples") or []:
-            add(example.get("audio"), render_text(example), None)
+            add(example.get("audio"), render_text(example), None, example)
         for index, turn in enumerate(item.get("miniDialogue") or []):
-            add(turn.get("audio"), render_text(turn), None)
-            if not turn.get("audio"):
-                add(f"assets/audio/words/{item['id']}-md{index}.mp3", render_text(turn), None)
+            turn.setdefault("audio", f"assets/audio/words/{item['id']}-md{index}.mp3")
+            turn.setdefault("audioSlow", f"assets/audio/words/{item['id']}-md{index}-slow.mp3")
+            add(turn.get("audio"), render_text(turn), None, turn)
     for line in lines:
-        add(line["audio"], line["say"], None)
+        if line.get("runtimeTts"):
+            continue  # spoken on the device with the learner's name; nothing to record
+        add(line["audio"], line["say"], None, line)
     return out
+
+
+def stale(job: dict) -> bool:
+    mp3 = ROOT / job["rel"]
+    slow = ROOT / job["rel"].replace(".mp3", "-slow.mp3")
+    if not (mp3.exists() and mp3.stat().st_size > 400 and slow.exists() and slow.stat().st_size > 400):
+        return True
+    want = text_hash(job["say"])
+    return any(holder.get("audioTextSha256") != want for holder in job["holders"])
 
 
 def synth(voice: PiperVoice, text: str, wav_path: Path, scale: float) -> None:
@@ -145,20 +168,6 @@ def pad_tree() -> None:
     print(f"padded {padded} / {len(files)}")
 
 
-def stamp_audio_text_hashes(lex: dict) -> int:
-    stamped = 0
-    for item in lex["items"]:
-        for example in item.get("examples") or []:
-            example["audioTextSha256"] = text_hash(render_text(example))
-            stamped += 1
-        for index, turn in enumerate(item.get("miniDialogue") or []):
-            turn.setdefault("audio", f"assets/audio/words/{item['id']}-md{index}.mp3")
-            turn.setdefault("audioSlow", f"assets/audio/words/{item['id']}-md{index}-slow.mp3")
-            turn["audioTextSha256"] = text_hash(render_text(turn))
-            stamped += 1
-    return stamped
-
-
 def main() -> None:
     voice = PiperVoice.load(str(MODEL))
     voice.config.espeak_voice = "en-us"
@@ -171,39 +180,33 @@ def main() -> None:
         raise SystemExit(f"present read looks like past: {present}")
     print("phoneme check ok", ph)
 
-    jobs = clips()
-    print(f"clips {len(jobs)} x2")
+    lex = json.loads(LEX.read_text(encoding="utf-8"))
+    lines = json.loads(LINES.read_text(encoding="utf-8"))
+    jobs = clips(lex, lines)
+    todo = [job for job in jobs if stale(job)]
+    print(f"clips {len(jobs)}; rendering {len(todo)} x2")
     TMP.mkdir(exist_ok=True)
-    done = 0
-    for job in jobs:
+    for done, job in enumerate(todo, 1):
         rel = job["rel"]
-        slow_rel = rel.replace(".mp3", "-slow.mp3")
-        mp3 = ROOT / rel
-        mp3_slow = ROOT / slow_rel
-        if mp3.exists() and mp3.stat().st_size > 400 and mp3_slow.exists() and mp3_slow.stat().st_size > 400:
-            done += 1
-            continue
         stem = rel.replace("/", "_").replace(".mp3", "")
         wav = TMP / f"{stem}.wav"
         wav_s = TMP / f"{stem}-slow.wav"
         synth(voice, job["say"], wav, 1.0)
         synth(voice, job["say"], wav_s, 1.35)
-        to_mp3(wav, mp3)
-        to_mp3(wav_s, mp3_slow)
-        done += 1
+        to_mp3(wav, ROOT / rel)
+        to_mp3(wav_s, ROOT / rel.replace(".mp3", "-slow.mp3"))
+        for holder in job["holders"]:
+            holder["audioTextSha256"] = text_hash(job["say"])
         if done % 20 == 0:
-            print(f"  {done}/{len(jobs)}")
-    pad_tree()
-    # stamp sha256 of normal word audio
-    lex = json.loads(LEX.read_text(encoding="utf-8"))
+            print(f"  {done}/{len(todo)}")
     for item in lex["items"]:
         path = ROOT / item["audio"]
         if not path.exists():
             raise SystemExit(f"missing {path}")
         item["audioSha256"] = hashlib.sha256(path.read_bytes()).hexdigest()
-    text_stamped = stamp_audio_text_hashes(lex)
     LEX.write_text(json.dumps(lex, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print("sha stamped", len(lex["items"]), "text hashes", text_stamped)
+    LINES.write_text(json.dumps(lines, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"rendered {len(todo)}; run python3 scripts/asr_check.py --changed HEAD to check them")
 
 
 if __name__ == "__main__":
