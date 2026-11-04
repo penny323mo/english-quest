@@ -122,3 +122,15 @@ Cheerful, short, Duolingo-*like* (never Duo assets). Prefer **Web Audio** synthe
 | tap | optional tiny click |
 
 **Product rules:** Settings mute toggle (persist). iOS: resume `AudioContext` on first user gesture. SFX must **not** overlap pronunciation clips (`media.ts`); speech wins. Keep clips tiny so Lighthouse Perf stays ≥98.
+
+---
+
+## 8. 每日抽卡 card pictures (slot open, 2026-11-04)
+
+The daily draw shows one picture per vocab card. Until a card has one, it shows a placeholder badge (palette wash circle, dashed gold ring, sparkle, the word's first letter).
+
+- **Where:** a file under `assets/art/cards/<lexicon id>.webp` (or `.svg`), listed in `content/card-art.json` → `"cards": { "<lexicon id>": "assets/art/cards/<lexicon id>.webp" }`.
+- **Format:** square, 480×480 WebP (or SVG), under 120 KB; shown at 160×160 with 24px corners on a white card.
+- **Look:** Bright Cartoon v1 palette and rules above; one clear subject, simple background, **no text or letters in the picture**, no brand marks. Abstract words (the, would, certainly) get a concept image rather than a literal one.
+- **Licence:** own work or a licence that allows shipping in an MIT app; credit it on the 出處 page.
+- `tests/card-art.mjs` checks every listed id is a visible card and every file exists and is tracked.

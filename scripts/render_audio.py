@@ -36,6 +36,9 @@ MODEL = Path(os.environ.get("EQ_PIPER_MODEL") or ROOT / "PREP" / "voices" / "en_
 RENDERED = ROOT / "assets" / "audio" / "rendered.json"
 LEX = ROOT / "content" / "lexicon.json"
 LINES = ROOT / "content" / "lines.json"
+WORDS = ROOT / "content" / "word-audio.json"
+SKIP = ROOT / "content" / "word-audio-skip.json"
+OVERRIDES = ROOT / "tests" / "fixtures" / "say-overrides.json"
 AUDIO = ROOT / "assets" / "audio"
 TMP = Path("/tmp/eq-wav")
 
@@ -49,6 +52,46 @@ def render_text(line: dict) -> str:
 
 def text_hash(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
+
+
+# Word-only clips (每日抽卡 🔊) whose plain spelling the voice would misread.
+WORD_SAY = {
+    "a-art": "[[ə]]",
+    # The sentence uses the weak form ("[[kən]] I have…"); a card says the word itself.
+    "can-verb": "can",
+}
+
+
+def word_say(item: dict, allowed: dict) -> str:
+    """Text for the word-only clip: the lemma, or the sentence's own [[override]] for it (read, live, bow…)."""
+    if item["id"] in WORD_SAY:
+        return WORD_SAY[item["id"]]
+    for phonemes in re.findall(r"\[\[([^\]]+)\]\]", item["say"]):
+        if item["lemma"].lower() in [w.lower() for w in allowed.get(phonemes, [])]:
+            return f"[[{phonemes.rstrip('.')}]]" if phonemes.rstrip(".") in allowed else f"[[{phonemes}]]"
+    return item["lemma"]
+
+
+def word_clips() -> dict:
+    """content/word-audio.json: one word-only clip per visible card, except those
+    in content/word-audio-skip.json (no take passed scripts/pick_word_takes.py)."""
+    lex = json.loads(LEX.read_text(encoding="utf-8"))
+    allowed = json.loads(OVERRIDES.read_text(encoding="utf-8"))
+    skip = set(json.loads(SKIP.read_text(encoding="utf-8"))["ids"]) if SKIP.exists() else set()
+    items = {}
+    for item in lex["items"]:
+        if item.get("hidden") or item["id"] in skip:
+            continue
+        rel = f"assets/audio/words/{item['id']}-word.mp3"
+        items[item["id"]] = {
+            "audio": rel,
+            "audioSlow": rel.replace(".mp3", "-slow.mp3"),
+            "say": word_say(item, allowed),
+        }
+    return {
+        "note": "Word-only clips for 每日抽卡. Rendered by scripts/render_audio.py from `say`; listened to by scripts/check_audio_asr.py.",
+        "items": items,
+    }
 
 
 def clips() -> list[dict]:
@@ -73,6 +116,8 @@ def clips() -> list[dict]:
                 add(f"assets/audio/words/{item['id']}-md{index}.mp3", render_text(turn), None)
     for line in lines:
         add(line["audio"], line["say"], None)
+    for row in word_clips()["items"].values():
+        add(row["audio"], row["say"], None)
     return out
 
 
@@ -185,6 +230,7 @@ def main() -> None:
         raise SystemExit(f"present read looks like past: {present}")
     print("phoneme check ok", ph)
 
+    WORDS.write_text(json.dumps(word_clips(), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     jobs = clips()
     force = set(sys.argv[sys.argv.index("--force") + 1:]) if "--force" in sys.argv else set()
     rendered = json.loads(RENDERED.read_text(encoding="utf-8")) if RENDERED.exists() else {}

@@ -37,6 +37,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 LEX = ROOT / "content" / "lexicon.json"
 LINES = ROOT / "content" / "lines.json"
+WORDS = ROOT / "content" / "word-audio.json"
 KNOWN = ROOT / "tests" / "fixtures" / "asr-known.json"
 
 # Words Whisper drops or adds freely; an edit made only of these is not a failure.
@@ -124,13 +125,16 @@ def clips() -> list[dict]:
     out: list[dict] = []
     seen: set[str] = set()
 
-    def add(rel: str | None, shown: str, say: str, where: str) -> None:
+    def add(rel: str | None, shown: str, say: str, where: str, ref: str | None = None) -> None:
         if not rel or rel in seen:
             return
         seen.add(rel)
         if "{{learner" in say:
             return  # the device voice speaks the learner's name (web/src/learner.ts needsRuntimeSpeech)
-        out.append({"rel": rel, "text": shown, "say": say, "where": where})
+        row = {"rel": rel, "text": shown, "say": say, "where": where}
+        if ref:
+            row["ref"] = ref
+        out.append(row)
 
     for item in lex["items"]:
         add(item["audio"], item.get("example") or item["lemma"], item["say"], f"{item['id']} main")
@@ -143,6 +147,15 @@ def clips() -> list[dict]:
         if line.get("runtimeTts"):
             continue  # the device voice speaks this line
         add(line["audio"], line["text"], line["say"], line["id"])
+    # Word-only clips for 每日抽卡: the card shows the lemma.
+    lemma = {item["id"]: item["lemma"] for item in lex["items"]}
+    words = json.loads(WORDS.read_text(encoding="utf-8")) if WORDS.exists() else {"items": {}}
+    for item_id, row in words["items"].items():
+        # A word clip's [[phonemes]] are a reviewed pair for exactly that word
+        # (tests/audio-rendered.mjs + tests/fixtures/say-overrides.json), and the
+        # plain spelling is the other reading (bass, read, close). Compare it with a
+        # fresh render of those phonemes, so a bad take is caught, not the heteronym.
+        add(row["audio"], lemma.get(item_id, ""), row["say"], f"{item_id} word", row["say"] if "[[" in row["say"] else None)
     return out
 
 
@@ -197,6 +210,8 @@ def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
                 old.setdefault(turn.get("audio") or f"assets/audio/words/{item['id']}-md{i}.mp3", render_text(turn))
     for line in old_lines or []:
         old.setdefault(line["audio"], line["say"])
+    for row in (old_json("content/word-audio.json") or {"items": {}})["items"].values():
+        old.setdefault(row["audio"], row["say"])
     diff = subprocess.run(
         ["git", "diff", "--name-only", ref, "--", "assets/audio"], cwd=ROOT, capture_output=True, text=True, check=True
     ).stdout.split()
@@ -283,7 +298,7 @@ class Reference:
         slow = job["rel"].endswith("-slow.mp3")
         stem = self.tmp / job["rel"].replace("/", "_")
         wav, mp3 = stem.with_suffix(".wav"), stem
-        text = re.sub(r"\{\{learner(-spell)?\}\}", "Ling", job["text"])
+        text = job.get("ref") or re.sub(r"\{\{learner(-spell)?\}\}", "Ling", job["text"])
         with wave.open(str(wav), "wb") as wf:
             self.voice.synthesize_wav(text, wf, syn_config=SynthesisConfig(length_scale=1.35 if slow else 1.0))
         subprocess.run(

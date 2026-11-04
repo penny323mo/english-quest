@@ -1,0 +1,4 @@
+{
+ "note": "每日抽卡 card pictures, keyed by lexicon id. Empty for now: each card shows a placeholder badge until its picture is added. Add a file under assets/art/cards/ (square, 480×480 WebP or SVG, Bright Cartoon v1 palette, no text in the image) and list it here, e.g. \"coffee-noun\": \"assets/art/cards/coffee-noun.webp\". tests/card-art.mjs checks each entry names a visible card and an existing file.",
+ "cards": {}
+}

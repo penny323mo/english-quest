@@ -1,5 +1,9 @@
 /** Progress durability. IndexedDB details stay behind this seam so tests can fake it. */
+import { normalizeDaily } from "./daily.mjs";
 
+// `daily` (每日抽卡) is an optional, additive field on version 3. It does not bump the
+// version: an older cached build keeps reading the record (it ignores the field)
+// instead of refusing it as 較新版本.
 export const SCHEMA_VERSION = 3;
 export const STATE_KEY = "state";
 
@@ -9,7 +13,7 @@ const MINUTES = new Set([10, 15, 20]);
 const CARD_NUMS = ["stability", "difficulty", "elapsed_days", "scheduled_days", "learning_steps", "reps", "lapses", "state"];
 
 export function emptyPersisted() {
-  return { schemaVersion: SCHEMA_VERSION, profile: null, progress: {}, cards: {}, lessonCursor: null };
+  return { schemaVersion: SCHEMA_VERSION, profile: null, progress: {}, cards: {}, lessonCursor: null, daily: null };
 }
 
 function bad(message) {
@@ -95,6 +99,8 @@ function stamp(data) {
     progress: normalizeProgress(data?.progress),
     cards: normalizeCards(data?.cards),
     lessonCursor: normalizeCursor(data?.lessonCursor),
+    // Lenient: a malformed daily draw is dropped, never a reason to refuse progress.
+    daily: normalizeDaily(data?.daily),
   };
 }
 
@@ -113,6 +119,7 @@ export function quizRecapLine(score, total, answered) {
  * Version 1 is the original profile/progress/cards object, with or without schemaVersion.
  * Version 2 stamps schemaVersion and normalizes those fields.
  * Version 3 adds lessonCursor. A record with no cursor stays null.
+ *   It later gained the optional `daily` field; a record without it reads as null.
  * No step drops XP, streak, finished lessons, or cards.
  */
 export function migrate(from, to, data) {
@@ -138,6 +145,7 @@ export function exportJson(data) {
     progress: body.progress,
     cards: body.cards,
     lessonCursor: body.lessonCursor,
+    daily: body.daily ?? null,
   });
 }
 

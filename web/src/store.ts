@@ -2,6 +2,7 @@ import { openDB, type IDBPDatabase } from "idb";
 import { create } from "zustand";
 import { Rating, type Grade } from "ts-fsrs";
 import { makeNewCard, reviewStored } from "./fsrs";
+import { DAILY_XP, startDay } from "./daily.mjs";
 import { createPersistence, exportJson, importJson, type LessonCursor, type Persisted, type SaveStatus } from "./persist.mjs";
 import { FALLBACK_LEARNER } from "./learner";
 import type { Goal, Level, Profile } from "./types";
@@ -19,6 +20,10 @@ type Store = Persisted & {
   enqueueLemmas: (ids: string[]) => void;
   gradeCard: (id: string, rating: Grade) => void;
   touchToday: () => void;
+  /** Store the day's 每日抽卡 draw. A draw already stored for that date is kept. */
+  startDaily: (date: string, ids: string[]) => void;
+  /** Finish the day's draw: 打卡, XP, and the cards join 生字回顧. Once per day. */
+  finishDaily: (date: string) => void;
   reset: () => void;
   retrySave: () => void;
   exportSnapshot: () => string;
@@ -103,6 +108,7 @@ function snapshot(): Persisted {
     progress: s.progress,
     cards: s.cards,
     lessonCursor: s.lessonCursor,
+    daily: s.daily,
   };
 }
 
@@ -125,6 +131,7 @@ export const useStore = create<Store>((set) => ({
   progress: {},
   cards: {},
   lessonCursor: null,
+  daily: null,
   resumeArmed: false,
   setProfile: (profile) => set((s) => (s.writable ? { profile } : s)),
   updateProfile: (patch) =>
@@ -171,7 +178,25 @@ export const useStore = create<Store>((set) => ({
     }),
   touchToday: () =>
     set((s) => (s.writable && s.profile ? { profile: bumpStreak(s.profile) } : s)),
-  reset: () => set((s) => (s.writable ? { profile: null, progress: {}, cards: {}, lessonCursor: null } : s)),
+  startDaily: (date, ids) =>
+    set((s) => {
+      if (!s.writable || (s.daily && s.daily.date === date)) return s;
+      return { daily: startDay(s.daily, date, ids) };
+    }),
+  finishDaily: (date) =>
+    set((s) => {
+      if (!s.writable || !s.profile || !s.daily || s.daily.date !== date || s.daily.done) return s;
+      const profile = bumpStreak(s.profile);
+      const cards = { ...s.cards };
+      const now = new Date();
+      for (const id of s.daily.ids) if (!cards[id]) cards[id] = makeNewCard(id, now);
+      return {
+        profile: { ...profile, xp: profile.xp + DAILY_XP },
+        cards,
+        daily: { ...s.daily, done: true },
+      };
+    }),
+  reset: () => set((s) => (s.writable ? { profile: null, progress: {}, cards: {}, lessonCursor: null, daily: null } : s)),
   retrySave: () => {
     void save(snapshot());
   },
@@ -194,6 +219,7 @@ export const useStore = create<Store>((set) => ({
         progress: data.progress,
         cards: data.cards,
         lessonCursor: data.lessonCursor,
+        daily: data.daily ?? null,
         schemaVersion: data.schemaVersion,
       });
       return { ok: true };
@@ -209,7 +235,8 @@ useStore.subscribe((state, prev) => {
     state.profile === prev.profile &&
     state.progress === prev.progress &&
     state.cards === prev.cards &&
-    state.lessonCursor === prev.lessonCursor
+    state.lessonCursor === prev.lessonCursor &&
+    state.daily === prev.daily
   ) {
     return;
   }
@@ -219,6 +246,7 @@ useStore.subscribe((state, prev) => {
     progress: state.progress,
     cards: state.cards,
     lessonCursor: state.lessonCursor,
+    daily: state.daily,
   });
 });
 
@@ -233,6 +261,7 @@ function applyPersistence() {
     progress: snap.progress,
     cards: snap.cards,
     lessonCursor: snap.lessonCursor,
+    daily: snap.daily ?? null,
     ready: true,
     writable: false,
     saveStatus: { kind: "ok" },

@@ -23,6 +23,7 @@ test("every lexicon and line audio path is tracked and present", () => {
   const refs = new Set();
   collect(JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), "utf8")), refs);
   collect(JSON.parse(fs.readFileSync(path.join(root, "content/lines.json"), "utf8")), refs);
+  collect(JSON.parse(fs.readFileSync(path.join(root, "content/word-audio.json"), "utf8")), refs);
   const missing = [];
   for (const rel of refs) {
     if (!listed.has(rel) || !fs.existsSync(path.join(root, rel))) missing.push(rel);

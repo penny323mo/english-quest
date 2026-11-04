@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { preloadArt } from "./art";
 import { lessons, asset } from "./data";
 import { LessonView } from "./Lesson";
@@ -6,6 +6,8 @@ import { Attributions, PathHome, Profile, Review, Settings, WordDetail, Words } 
 import { VocabDeck, VocabHub, VocabQuiz } from "./Vocab";
 import { useStore } from "./store";
 import type { Route } from "./types";
+
+const Daily = lazy(() => import("./Daily"));
 
 export default function Shell({ route }: { route: Route }) {
   const profile = useStore((s) => s.profile);
@@ -34,6 +36,7 @@ export default function Shell({ route }: { route: Route }) {
   else if (route.name === "vocab" && route.quiz && route.deckId) body = <VocabQuiz deckId={route.deckId} />;
   else if (route.name === "vocab" && route.deckId) body = <VocabDeck deckId={route.deckId} />;
   else if (route.name === "vocab") body = <VocabHub />;
+  else if (route.name === "daily") body = <Suspense fallback={null}><Daily /></Suspense>;
 
   return (
     <div className={lesson && profile ? "phone noscroll" : "phone"}>

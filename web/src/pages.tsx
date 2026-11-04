@@ -12,6 +12,7 @@ import {
   todayLessonId,
 } from "./data";
 import { BEAT_LABELS } from "./beats";
+import { macauDate } from "./daily.mjs";
 import { GOAL_LABEL, GoalPick } from "./goals";
 import { isDue } from "./fsrs";
 import { FALLBACK_LEARNER, fillLearner } from "./learner";
@@ -105,6 +106,7 @@ export function PathHome() {
   const lessonCursor = useStore((s) => s.lessonCursor);
   const armResume = useStore((s) => s.armResume);
   const setLessonCursor = useStore((s) => s.setLessonCursor);
+  const daily = useStore((s) => s.daily);
   const started = lessonCursor?.lessonId ?? null;
   const recommended = profile ? todayLessonId(profile.goal, progress, started) : null;
   const resumeLesson = lessonCursor ? lessonById[lessonCursor.lessonId] : undefined;
@@ -130,8 +132,11 @@ export function PathHome() {
   const done = SHIPPED.filter((id) => progress[id]).length;
   const todayTitle = recommended ? lessonById[recommended]?.titleYue : undefined;
   const studiedToday = profile.lastActive === todayStamp();
+  const dailyToday = daily && daily.date === macauDate() ? daily : null;
+  const dailyDone = Boolean(dailyToday?.done);
+  const dailyStarted = Boolean(dailyToday);
   return (
-    <section className="screen">
+    <section className={dailyDone ? "screen" : "screen with-daily-float"}>
       <header className="path-head">
         <div className="status-row">
           <span className="pill">{profile.streak > 0 ? `連續 ${profile.streak} 日` : "今日未打卡"}</span>
@@ -151,7 +156,21 @@ export function PathHome() {
         <p className="fine">{done} / {SHIPPED.length} 課完成。冇紅心。聽日再嚟都得。</p>
         {recommended && todayTitle ? <p className="fine today-line" data-today={recommended}>今日：{todayTitle}</p> : null}
         <a className="btn ghost block" href="#/vocab">生字回顧</a>
+        <a className={dailyDone ? "daily-entry done" : "daily-entry"} href="#/daily" onClick={() => playSfx("tap")}>
+          <span className="daily-icon" aria-hidden="true"><Glyph kind={dailyDone ? "thanks" : "card"} /></span>
+          <span>
+            <strong>每日任務</strong>
+            <em>{dailyDone ? "今日抽卡完成。聽日再嚟。" : dailyStarted ? "今日三張卡等緊你翻。" : "抽三張生字卡，一日一次。"}</em>
+          </span>
+        </a>
       </header>
+      {!dailyDone ? (
+        // The path scrolls to 今日, which can push the header entry out of view: keep the task in reach.
+        <a className="daily-float" href="#/daily" onClick={() => playSfx("tap")}>
+          <Glyph kind="card" />
+          <span>每日任務 · {dailyStarted ? "繼續翻卡" : "抽三張卡"}</span>
+        </a>
+      ) : null}
       {resumeOpen && lessonCursor && resumeLesson ? (
         <div className="resume-banner">
           <p>未完成：{resumeLesson.titleYue}。停喺{BEAT_LABELS[lessonCursor.beat]}。</p>

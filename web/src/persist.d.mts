@@ -1,4 +1,5 @@
 import type { Profile, LessonDone, StoredCard } from "./types";
+import type { DailyState } from "./daily.mjs";
 
 export const SCHEMA_VERSION: number;
 export const STATE_KEY: string;
@@ -17,6 +18,8 @@ export type Persisted = {
   progress: Record<string, LessonDone>;
   cards: Record<string, StoredCard>;
   lessonCursor: LessonCursor | null;
+  /** 每日抽卡. Optional and additive: records saved before it read as null. */
+  daily?: DailyState | null;
 };
 
 export type SaveStatus =
