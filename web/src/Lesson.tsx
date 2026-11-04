@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { Mouth, mouthsFor } from "./components/Mouth";
 import { ArtImg, preloadArt, whenArtDecoded } from "./art";
-import { CAST_LABEL, asset, isLessonOpen, lessonById, lexById } from "./data";
+import { CAST_LABEL, asset, isLessonOpen, lessonById, lexById, nextLessonAfter } from "./data";
 import heroStyle from "../../content/art-style-heroes.json";
 import heroLqip from "../../content/hero-lqip.json";
 import {
@@ -58,6 +58,7 @@ export function LessonView({ id }: { id: string }) {
   const lesson = lessonById[id];
   const profile = useStore((s) => s.profile);
   const progress = useStore((s) => s.progress);
+  const started = useStore((s) => s.lessonCursor?.lessonId ?? null);
   if (!lesson || !profile) {
     return (
       <section className="screen plain">
@@ -67,7 +68,7 @@ export function LessonView({ id }: { id: string }) {
       </section>
     );
   }
-  if (!isLessonOpen(lesson.id, profile.goal, progress)) {
+  if (!isLessonOpen(lesson.id, profile.goal, progress, started)) {
     return (
       <section className="screen plain">
         <a className="back" href="#/">返路徑</a>
@@ -112,6 +113,8 @@ function Player({ lesson }: { lesson: Lesson }) {
   const [answeredAt, setAnsweredAt] = useState<number | null>(null);
   const enqueue = useStore((s) => s.enqueueLemmas);
   const complete = useStore((s) => s.completeLesson);
+  const heroGoal = useStore((s) => s.profile?.goal);
+  const heroProgress = useStore((s) => s.progress);
   const saved = useRef(false);
   const sheetRef = useRef<HTMLDivElement>(null);
 
@@ -173,7 +176,7 @@ function Player({ lesson }: { lesson: Lesson }) {
     setGate("play");
   }
 
-  const nxtForHero = lesson.next ? lessonById[lesson.next] : undefined;
+  const nxtForHero = nextLessonAfter(lesson, heroGoal, heroProgress);
   const heroPath = beat === 11 ? (nxtForHero?.hero || "") : lesson.hero;
   const heroKey = (heroPath.split("/").pop() || "").replace(".webp", "");
   const heroFocus = (heroStyle.focus as Record<string, string>)[heroKey] || "center 30%";
@@ -753,7 +756,7 @@ function Recap({ lesson, score, answered, onNext }: { lesson: Lesson; score: num
 function NextBeat({ lesson }: { lesson: Lesson }) {
   const profile = useStore((s) => s.profile);
   const progress = useStore((s) => s.progress);
-  const nxt = lesson.next ? lessonById[lesson.next] : undefined;
+  const nxt = nextLessonAfter(lesson, profile?.goal, progress);
   if (!nxt || !profile) {
     return (
       <>

@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Rating, type Grade } from "ts-fsrs";
 import {
   SHIPPED,
@@ -9,6 +9,7 @@ import {
   lexById,
   lexicon,
   pathData,
+  todayLessonId,
 } from "./data";
 import { BEAT_LABELS } from "./beats";
 import { GOAL_LABEL, GoalPick } from "./goals";
@@ -104,16 +105,30 @@ export function PathHome() {
   const lessonCursor = useStore((s) => s.lessonCursor);
   const armResume = useStore((s) => s.armResume);
   const setLessonCursor = useStore((s) => s.setLessonCursor);
-  if (!profile) return null;
-  const recommended = SHIPPED.find((id) => isLessonOpen(id, profile.goal, progress) && !progress[id]);
-  const done = SHIPPED.filter((id) => progress[id]).length;
+  const started = lessonCursor?.lessonId ?? null;
+  const recommended = profile ? todayLessonId(profile.goal, progress, started) : null;
   const resumeLesson = lessonCursor ? lessonById[lessonCursor.lessonId] : undefined;
   const resumeOpen = Boolean(
-    lessonCursor &&
+    profile &&
+      lessonCursor &&
       resumeLesson &&
       !progress[lessonCursor.lessonId] &&
-      isLessonOpen(lessonCursor.lessonId, profile.goal, progress),
+      isLessonOpen(lessonCursor.lessonId, profile.goal, progress, started),
   );
+  const todayRef = useRef<HTMLAnchorElement>(null);
+  useEffect(() => {
+    // Bring 今日 into view when the path opens or 今日 changes. A pending resume
+    // banner sits at the top and is the first thing to act on, so leave it in view.
+    const node = todayRef.current;
+    if (!node || resumeOpen) return;
+    const box = node.getBoundingClientRect();
+    const tabs = document.querySelector(".tabs")?.getBoundingClientRect().top ?? window.innerHeight;
+    if (box.top >= 0 && box.bottom <= Math.min(window.innerHeight, tabs)) return;
+    node.scrollIntoView({ block: "center" });
+  }, [recommended, resumeOpen]);
+  if (!profile) return null;
+  const done = SHIPPED.filter((id) => progress[id]).length;
+  const todayTitle = recommended ? lessonById[recommended]?.titleYue : undefined;
   const studiedToday = profile.lastActive === todayStamp();
   return (
     <section className="screen">
@@ -134,6 +149,7 @@ export function PathHome() {
           <img className="mascot" src={asset("assets/art/mascot-wave.webp")} alt="小燈" width={72} height={72} />
         </div>
         <p className="fine">{done} / {SHIPPED.length} 課完成。冇紅心。聽日再嚟都得。</p>
+        {recommended && todayTitle ? <p className="fine today-line" data-today={recommended}>今日：{todayTitle}</p> : null}
         <a className="btn ghost block" href="#/vocab">生字回顧</a>
       </header>
       {resumeOpen && lessonCursor && resumeLesson ? (
@@ -172,7 +188,7 @@ export function PathHome() {
             {unit.lessons.map((entry, index) => {
               const lesson = lessonById[entry.id];
               const soon = Boolean(entry.soon) || !lesson;
-              const open = !soon && isLessonOpen(entry.id, profile.goal, progress);
+              const open = !soon && isLessonOpen(entry.id, profile.goal, progress, started);
               const doneLesson = Boolean(progress[entry.id]);
               const title = lesson?.titleYue || entry.title || entry.id;
               const en = lesson?.titleEn || "即將推出";
@@ -204,13 +220,21 @@ export function PathHome() {
               const cls = `path-node ${state} ${index % 2 ? "even" : "odd"}`;
               if (open && lesson) {
                 return (
-                  <a key={entry.id} className={cls} href={`#/lesson/${lesson.id}`} onClick={() => playSfx("tap")}>
+                  <a
+                    key={entry.id}
+                    ref={recommended === entry.id ? todayRef : undefined}
+                    className={cls}
+                    href={`#/lesson/${lesson.id}`}
+                    aria-current={recommended === entry.id ? "step" : undefined}
+                    data-lesson={entry.id}
+                    onClick={() => playSfx("tap")}
+                  >
                     {body}
                   </a>
                 );
               }
               return (
-                <div key={entry.id} className={`${cls} locked`}>
+                <div key={entry.id} className={`${cls} locked`} data-lesson={entry.id}>
                   {body}
                 </div>
               );
