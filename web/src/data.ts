@@ -99,6 +99,7 @@ import j24 from "../../content/lessons/j24.json";
 import t21 from "../../content/lessons/t21.json";
 import decksFile from "../../content/decks.json";
 import type { DeckFile, Goal, Lesson, LexItem, PathFile } from "./types";
+import { lessonOpen, nextInGoalTrack, todayLesson } from "./unlock.mjs";
 
 const lexAll = lexFile as unknown as { items: LexItem[]; license: string; accent: string };
 /** Cards marked hidden stay in content (and in the learner's saved reviews) but are not shown or scheduled. */
@@ -167,18 +168,28 @@ export function asset(path: string): string {
   return base + path.replace(/^\//, "");
 }
 
-export function isLessonOpen(id: string, goal: Goal, progress: Record<string, unknown>): boolean {
+/** startedId: the lesson the learner is part-way through (lessonCursor), which stays open. */
+export function isLessonOpen(id: string, goal: Goal, progress: Record<string, unknown>, startedId?: string | null): boolean {
   if (!lessonById[id]) return false;
-  if (id === "F1") return true;
   const order = SHIPPED as readonly string[];
-  const idx = order.indexOf(id);
-  const prev = idx > 0 ? order[idx - 1] : "";
-  if (prev && progress[prev]) return true;
-  if (goal === "jewellery" && id === "J1") return true;
-  if (goal === "jewellery" && id === "J2" && progress.J1) return true;
-  if (goal === "travel" && id === "T1") return true;
-  if (goal === "restaurant" && id === "R1") return true;
-  return false;
+  return lessonOpen(id, goal, progress, order, startedId);
+}
+
+/** 今日: first open, unfinished lesson in the goal's track; the shipped order once that track is done or for foundation. */
+export function todayLessonId(goal: Goal, progress: Record<string, unknown>, startedId?: string | null): string | null {
+  return todayLesson(goal, progress, SHIPPED, startedId);
+}
+
+/** The goal track's next unfinished lesson, or null for foundation or a finished track. */
+export function goalNextId(goal: Goal, progress: Record<string, unknown>, startedId?: string | null): string | null {
+  return nextInGoalTrack(goal, progress, SHIPPED, startedId);
+}
+
+/** The 下一課 after a lesson: a goal learner goes on along their track (J1 → J2), others follow lesson.next. */
+export function nextLessonAfter(lesson: Lesson, goal: Goal | undefined, progress: Record<string, unknown>): Lesson | undefined {
+  const inTrack = goal ? goalNextId(goal, progress) : null;
+  const id = inTrack && inTrack !== lesson.id ? inTrack : lesson.next;
+  return id ? lessonById[id] : undefined;
 }
 
 export function go(hash: string) {

@@ -29,6 +29,8 @@ jobs:
         run: node e2e/migrate.mjs
       - name: Fresh iPhone Safari profile renders the light home
         run: node e2e/fresh-safari.mjs
+      - name: Onboarding goal picks 今日 and opens its track at 390px
+        run: node e2e/goal.mjs
       - name: Oldest service workers reach the light shell within two reloads
         run: node e2e/oldest.mjs
       - name: Full A1 lesson in WebKit and Chromium
