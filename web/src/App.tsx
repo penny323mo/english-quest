@@ -15,6 +15,7 @@ function parse(hash: string): Route {
   if (path === "/profile") return { name: "profile" };
   if (path === "/attributions") return { name: "attributions" };
   if (path === "/settings") return { name: "settings" };
+  if (path === "/daily") return { name: "daily" };
   if (path === "/vocab") return { name: "vocab" };
   const vocab = path.match(/^\/vocab\/([^/]+)(\/quiz)?$/);
   if (vocab) return { name: "vocab", deckId: decodeURIComponent(vocab[1]), quiz: Boolean(vocab[2]) };
@@ -71,6 +72,7 @@ export function App() {
       attributions: "出處",
       settings: "設定",
       vocab: "生字",
+      daily: "每日抽卡",
     };
     document.title = `${titles[route.name]} · 情景英文`;
   }, [route]);

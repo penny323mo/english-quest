@@ -178,6 +178,7 @@ export type Route =
   | { name: "profile" }
   | { name: "attributions" }
   | { name: "settings" }
+  | { name: "daily" }
   | { name: "vocab"; deckId?: string; quiz?: boolean };
 
 export type DeckFile = {

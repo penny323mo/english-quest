@@ -14,6 +14,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const read = (rel) => JSON.parse(fs.readFileSync(path.join(root, rel), "utf8"));
 const lex = read("content/lexicon.json");
 const lines = read("content/lines.json");
+const words = read("content/word-audio.json");
 const rendered = read("assets/audio/rendered.json");
 const allowed = read("tests/fixtures/say-overrides.json");
 
@@ -34,6 +35,9 @@ function clips() {
     }
   }
   for (const line of lines) out.push({ rel: line.audio, shown: line.text, say: line.say, where: line.id });
+  // Word-only clips for 每日抽卡: the card shows the lemma.
+  const lemma = Object.fromEntries(lex.items.map((item) => [item.id, item.lemma]));
+  for (const [id, row] of Object.entries(words.items)) out.push({ rel: row.audio, shown: lemma[id], say: row.say, where: `${id} word` });
   return out;
 }
 

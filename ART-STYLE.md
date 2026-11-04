@@ -122,3 +122,14 @@ Cheerful, short, Duolingo-*like* (never Duo assets). Prefer **Web Audio** synthe
 | tap | optional tiny click |
 
 **Product rules:** Settings mute toggle (persist). iOS: resume `AudioContext` on first user gesture. SFX must **not** overlap pronunciation clips (`media.ts`); speech wins. Keep clips tiny so Lighthouse Perf stays ≥98.
+
+---
+
+## 8. 每日抽卡 card pictures (Penny 2026-11-04: Option A)
+
+Every drawable card has a picture: one line glyph in ink (`#1F2A37`, stroke 2 on a 24 grid, round caps and joins) on a palette wash badge with a dashed ring and a gold sparkle. The badge colour is the track the card is first taught in (jewellery gold, restaurant coral, travel sky, foundation teal, daily green, work sand); metals get their own colour so gold, silver, platinum, white gold and rose gold read apart. No text or letters in the picture, no brand marks.
+
+- `scripts/card-art/map.txt` picks the glyph for each card, reviewed by hand: `t:<name>` is a Tabler Icons 3.31.0 outline icon (MIT, `scripts/card-art/TABLER-LICENSE`), `d:<name>` is drawn for this app in `scripts/card-art/drawn.json` (all jewellery nouns: necklace, bracelet, earring, pearl, ring, bangle, pendant, jade, gemstone, setting, engraving, metal ingot; plus gaps such as sheep, passport, fork, knife, taxi, tooth).
+- Abstract words get a concept glyph (certainly → tick, would → question bubble, the/a → letter case).
+- `node scripts/card-art/build.mjs` writes `assets/art/cards/<id>.svg` and `content/card-art.json`. `tests/card-art.mjs` checks coverage, size, no text, and that drawn glyphs match.
+- To change a picture: edit `map.txt` (or add a glyph to `drawn.json`), run the build, check it at 160px.

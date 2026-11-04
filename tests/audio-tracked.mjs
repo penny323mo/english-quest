@@ -23,6 +23,7 @@ test("every lexicon and line audio path is tracked in git", () => {
   const refs = new Set();
   collect(JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), "utf8")), refs);
   collect(JSON.parse(fs.readFileSync(path.join(root, "content/lines.json"), "utf8")), refs);
+  collect(JSON.parse(fs.readFileSync(path.join(root, "content/word-audio.json"), "utf8")), refs);
   for (const rel of refs) {
     assert.equal(listed.has(rel), true, rel);
     assert.equal(fs.existsSync(path.join(root, rel)), true, rel);
