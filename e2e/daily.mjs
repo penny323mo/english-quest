@@ -184,6 +184,12 @@ async function runBrowser(browserType, browserName) {
       ids.push(id);
       const item = lexById[id];
       check(`${tag} card ${i + 1} front shows ${item.lemma}`, (await page.locator(".draw-face.front .draw-word").innerText()) === item.lemma);
+      await page
+        .waitForFunction(() => {
+          const img = document.querySelector(".draw-face.front img.draw-art");
+          return Boolean(img && img.complete && img.naturalWidth > 0);
+        }, null, { timeout: 5000 })
+        .catch(() => undefined);
       const art = await page.evaluate(() => {
         const img = document.querySelector(".draw-face.front img.draw-art");
         return img ? { src: img.getAttribute("src"), loaded: img.complete && img.naturalWidth > 0 } : null;

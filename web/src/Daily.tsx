@@ -5,6 +5,7 @@ import { DAILY_XP, drawDaily, macauDate } from "./daily.mjs";
 import { SHIPPED, asset, isLessonOpen, lessonById, lexById, lexicon } from "./data";
 import { fillLearner } from "./learner";
 import { playAsset, stopAudio } from "./media";
+import { preloadArt } from "./art";
 import { playSfx } from "./sfx";
 import { useStore } from "./store";
 import type { LexItem } from "./types";
@@ -156,6 +157,12 @@ export default function Daily() {
   }, [profile, current, startDaily, today]);
 
   useEffect(() => () => stopAudio(), []);
+
+  // Fetch the day's three pictures while the pack is still shaking.
+  const ids = current?.ids;
+  useEffect(() => {
+    if (ids) preloadArt(ids.map((id) => cardArt[id]).filter(Boolean).map((rel) => asset(rel)));
+  }, [ids]);
 
   if (!profile) return null;
   if (!current) return <section className="screen plain"><p className="lede">抽緊卡…</p></section>;

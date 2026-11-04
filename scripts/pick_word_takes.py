@@ -10,6 +10,10 @@ kept only when Whisper base.en transcribes it as the word, both normal and slow,
 which is the check's deterministic pass. With EQ_PARAKEET set, NVIDIA Parakeet
 (an independent recogniser) has to agree as well.
 
+A take must also survive small changes to the audio (quieter, louder, faint
+noise): CI's machines decode with slightly different numerics, and a take that is
+only just heard as the word can come out differently there and fail.
+
 A failing take is re-rendered up to --takes times. Words that never pass get no
 clip: they go in content/word-audio-skip.json and are never drawn.
 
@@ -53,16 +57,30 @@ def main() -> int:
 
     lex = {item["id"]: item for item in json.loads(ra.LEX.read_text(encoding="utf-8"))["items"]}
     skip = json.loads(SKIP.read_text(encoding="utf-8")) if SKIP.exists() else {"ids": []}
-    # Start from every visible card, including ones skipped earlier: they get another chance.
-    skip["ids"] = []
+    # Cards in this run get a fresh chance; with --only, the others keep their place in the skip list.
+    keep_skipped = [i for i in skip["ids"] if args.only and i not in args.only]
+    skip["ids"] = keep_skipped
     SKIP.write_text(json.dumps(skip, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     words = ra.word_clips()["items"]
     ids = args.only or sorted(words)
 
+    import numpy as np
+
+    noise = np.random.default_rng(7).standard_normal(16000 * 30).astype(np.float32)
+
+    def hears(rec, samples) -> str:
+        stream = rec.create_stream()
+        stream.accept_waveform(16000, samples)
+        rec.decode_stream(stream)
+        return stream.result.text.strip()
+
     def heard_ok(path: Path, lemma: str) -> bool:
-        if ca.compare(lemma, ca.transcribe(whisper, path)):
+        pcm = np.asarray(ca.load_pcm(path), dtype=np.float32)
+        level = float(np.sqrt(np.mean(pcm**2))) or 1e-4
+        variants = [pcm, pcm * 0.7, np.clip(pcm * 1.4, -1, 1), pcm + noise[: len(pcm)] * level * 0.03]
+        if any(ca.compare(lemma, hears(whisper, v)) for v in variants):
             return False
-        return parakeet is None or not ca.compare(lemma, ca.transcribe(parakeet, path))
+        return parakeet is None or not ca.compare(lemma, hears(parakeet, pcm))
 
     tmp = ra.TMP
     tmp.mkdir(exist_ok=True)
@@ -99,7 +117,7 @@ def main() -> int:
         "note": "Cards with no word-only clip: no Piper take was heard as the word by Whisper base.en"
         + (" and Parakeet" if parakeet else "")
         + f" in {args.takes} tries. They are not drawn in 每日抽卡. scripts/pick_word_takes.py writes this file.",
-        "ids": sorted(failed),
+        "ids": sorted(set(failed) | set(keep_skipped)),
     }
     SKIP.write_text(json.dumps(skip, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     ra.WORDS.write_text(json.dumps(ra.word_clips(), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
