@@ -8,7 +8,7 @@ The user asked for six separate PRs, in this order, each with tests so the probl
   - 16 regression tests in `tests/content-meaning.mjs`. All 16 fail on `main` and pass on the branch.
   - `npm test` passes (107/107).
 
-## In progress: PR 2 (audio), branch `claude/charming-ritchie-csh657-2-audio` (based on PR 1)
+## In progress: PR 2 (audio), branch `claude/charming-ritchie-csh657-2-audio-wip` (based on PR 1; a remote `-2-audio` branch already existed with other commits, so it was not overwritten)
 This is a work-in-progress commit; `tests/audio-say.mjs` fails on purpose until steps 2–5 below are done.
 
 Already written:
