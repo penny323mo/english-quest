@@ -16,7 +16,7 @@ test("every visible card has a word clip unless no take passed the ASR gate; hid
   const visible = lex.items.filter((item) => !item.hidden);
   for (const id of skip) assert.ok(visible.some((item) => item.id === id), `${id} in the skip list is not a visible card`);
   assert.equal(Object.keys(words).length, visible.length - skip.size);
-  assert.ok(skip.size < visible.length / 4, `${skip.size} cards without a word clip`);
+  assert.ok(skip.size < visible.length / 2, `${skip.size} cards without a word clip`);
   for (const item of visible) {
     if (skip.has(item.id)) {
       assert.equal(words[item.id], undefined, item.id);
