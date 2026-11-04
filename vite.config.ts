@@ -18,6 +18,15 @@ function copyWebps(src: string, dest: string) {
   }
 }
 
+/** 每日抽卡 card pictures are small SVGs (scripts/card-art/build.mjs). */
+function copySvgDir(src: string, dest: string) {
+  if (!fs.existsSync(src)) return;
+  fs.mkdirSync(dest, { recursive: true });
+  for (const name of fs.readdirSync(src)) {
+    if (name.endsWith(".svg")) fs.copyFileSync(path.join(src, name), path.join(dest, name));
+  }
+}
+
 function copyMp3Dir(src: string, dest: string) {
   if (!fs.existsSync(src)) return;
   fs.mkdirSync(dest, { recursive: true });
@@ -46,6 +55,7 @@ function materializeAssets() {
           }
         }
         copyWebps(path.join(repo, "assets", "art"), path.join(distAssets, "art"));
+        copySvgDir(path.join(repo, "assets", "art", "cards"), path.join(distAssets, "art", "cards"));
         copyMp3Dir(
           path.join(repo, "assets", "audio", "words"),
           path.join(distAssets, "audio", "words"),

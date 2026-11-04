@@ -125,12 +125,11 @@ Cheerful, short, Duolingo-*like* (never Duo assets). Prefer **Web Audio** synthe
 
 ---
 
-## 8. 每日抽卡 card pictures (slot open, 2026-11-04)
+## 8. 每日抽卡 card pictures (Penny 2026-11-04: Option A)
 
-The daily draw shows one picture per vocab card. Until a card has one, it shows a placeholder badge (palette wash circle, dashed gold ring, sparkle, the word's first letter).
+Every drawable card has a picture: one line glyph in ink (`#1F2A37`, stroke 2 on a 24 grid, round caps and joins) on a palette wash badge with a dashed ring and a gold sparkle. The badge colour is the track the card is first taught in (jewellery gold, restaurant coral, travel sky, foundation teal, daily green, work sand); metals get their own colour so gold, silver, platinum, white gold and rose gold read apart. No text or letters in the picture, no brand marks.
 
-- **Where:** a file under `assets/art/cards/<lexicon id>.webp` (or `.svg`), listed in `content/card-art.json` → `"cards": { "<lexicon id>": "assets/art/cards/<lexicon id>.webp" }`.
-- **Format:** square, 480×480 WebP (or SVG), under 120 KB; shown at 160×160 with 24px corners on a white card.
-- **Look:** Bright Cartoon v1 palette and rules above; one clear subject, simple background, **no text or letters in the picture**, no brand marks. Abstract words (the, would, certainly) get a concept image rather than a literal one.
-- **Licence:** own work or a licence that allows shipping in an MIT app; credit it on the 出處 page.
-- `tests/card-art.mjs` checks every listed id is a visible card and every file exists and is tracked.
+- `scripts/card-art/map.txt` picks the glyph for each card, reviewed by hand: `t:<name>` is a Tabler Icons 3.31.0 outline icon (MIT, `scripts/card-art/TABLER-LICENSE`), `d:<name>` is drawn for this app in `scripts/card-art/drawn.json` (all jewellery nouns: necklace, bracelet, earring, pearl, ring, bangle, pendant, jade, gemstone, setting, engraving, metal ingot; plus gaps such as sheep, passport, fork, knife, taxi, tooth).
+- Abstract words get a concept glyph (certainly → tick, would → question bubble, the/a → letter case).
+- `node scripts/card-art/build.mjs` writes `assets/art/cards/<id>.svg` and `content/card-art.json`. `tests/card-art.mjs` checks coverage, size, no text, and that drawn glyphs match.
+- To change a picture: edit `map.txt` (or add a glyph to `drawn.json`), run the build, check it at 160px.

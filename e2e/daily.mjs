@@ -184,17 +184,22 @@ async function runBrowser(browserType, browserName) {
       ids.push(id);
       const item = lexById[id];
       check(`${tag} card ${i + 1} front shows ${item.lemma}`, (await page.locator(".draw-face.front .draw-word").innerText()) === item.lemma);
-      check(`${tag} card ${i + 1} has a picture slot`, (await page.locator(".draw-face.front .draw-art").count()) === 1);
+      const art = await page.evaluate(() => {
+        const img = document.querySelector(".draw-face.front img.draw-art");
+        return img ? { src: img.getAttribute("src"), loaded: img.complete && img.naturalWidth > 0 } : null;
+      });
+      check(`${tag} card ${i + 1} shows its picture`, Boolean(art && art.loaded && art.src.endsWith(`assets/art/cards/${id}.svg`)), JSON.stringify(art));
 
       const before = await page.evaluate(() => window.__plays.length);
       await page.getByRole("button", { name: `聽 ${item.lemma}` }).click();
       const word = await lastPlay(page, before);
       check(`${tag} card ${i + 1} 🔊 plays the word clip`, Boolean(word && word.src.endsWith(`/audio/words/${id}-word.mp3`) && word.ok === true), JSON.stringify(word));
 
+      if (i === 0) await page.screenshot({ path: path.join(shots, `daily-${tag}-4-front.png`) });
       await page.getByRole("button", { name: "提示" }).click();
       const hint = await page.locator(".draw-hint").innerText();
       check(`${tag} card ${i + 1} 提示 shows the Cantonese gloss`, hint === item.glossYue && /[一-鿿]/.test(hint), hint);
-      if (i === 0) await page.screenshot({ path: path.join(shots, `daily-${tag}-4-front.png`) });
+      if (i === 0) await page.screenshot({ path: path.join(shots, `daily-${tag}-5-hint.png`) });
 
       await card.click({ position: { x: 40, y: 40 } });
       await page.waitForTimeout(350);
@@ -206,7 +211,7 @@ async function runBrowser(browserType, browserName) {
       await page.getByRole("button", { name: "聽例句" }).click();
       const sentence = await lastPlay(page, beforeSentence);
       check(`${tag} card ${i + 1} back 🔊 plays the sentence clip`, Boolean(sentence && sentence.src.endsWith(item.audio.replace(/^assets/, "")) && sentence.ok === true), JSON.stringify(sentence));
-      if (i === 0) await page.screenshot({ path: path.join(shots, `daily-${tag}-5-back.png`) });
+      if (i === 0) await page.screenshot({ path: path.join(shots, `daily-${tag}-6-back.png`) });
       if (i < 2) await page.getByRole("button", { name: "下一張" }).click();
     }
     const width = await page.evaluate(() => document.documentElement.scrollWidth);
@@ -215,7 +220,7 @@ async function runBrowser(browserType, browserName) {
     await page.getByRole("button", { name: "完成今日抽卡" }).click();
     const done = await page.locator(".draw-done").innerText();
     check(`${tag} finishing gives XP`, done.includes("+10 XP"), done.replace(/\s+/g, " "));
-    await page.screenshot({ path: path.join(shots, `daily-${tag}-6-done.png`) });
+    await page.screenshot({ path: path.join(shots, `daily-${tag}-7-done.png`) });
 
     const state = await exportState(page);
     check(`${tag} daily stored as done`, state.daily?.done === true && JSON.stringify(state.daily.ids) === JSON.stringify(ids), JSON.stringify(state.daily));

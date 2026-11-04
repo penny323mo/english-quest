@@ -592,6 +592,7 @@ export function Attributions() {
       <h2>複習同畫面</h2>
       <p>排期用 ts-fsrs（MIT）。</p>
       <p>畫面由 xAI Grok Imagine 生成，虛構人物 Mei、Tom、Ana、Kai。冇真實品牌標誌。色調係夜藍、金、湖綠、紙色。</p>
+      <p>每日抽卡嘅生字圖：線條圖示來自 Tabler Icons（MIT，版權 Paweł Kuna），珠寶等圖示由本 app 自繪，同樣以 MIT 發佈。</p>
       <p className="fine">進度只放喺呢部機嘅 IndexedDB，冇帳號，冇分析。</p>
     </section>
   );
