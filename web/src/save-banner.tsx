@@ -7,8 +7,9 @@ import { takeOver, useStore } from "./store";
  */
 export function SaveBanner() {
   const status = useStore((s) => s.saveStatus);
+  const paused = useStore((s) => s.paused);
   const retrySave = useStore((s) => s.retrySave);
-  if (status.kind === "paused") {
+  if (paused) {
     return (
       <div className="save-banner" role="status" data-save="paused">
         <p><strong>呢個分頁暫停咗</strong> 你喺另一個分頁用緊，呢度唔會儲存，免得蓋過嗰邊嘅進度。</p>

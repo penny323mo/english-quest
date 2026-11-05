@@ -139,3 +139,23 @@ test("known limit: an older build's later unconditional write is detected, not p
   assert.equal((await tab.save(record({ ...tab.snapshot.progress, F2: done("new") }))).ok, true);
   assert.deepEqual(Object.keys(db.box.get("state").progress).sort(), ["F2", "J1"]);
 });
+
+test("saves queued before a reload are dropped, not checked against the reloaded copy", async () => {
+  const db = sharedDb(record({}));
+  const tab = createPersistence(db.open);
+  await tab.hydrate();
+  // Another tab saves J1 behind this tab's back.
+  db.box.set("state", { ...record({ J1: done("other") }), rev: 1 });
+  // This tab queues several saves of its old copy, as the store does on each change.
+  const first = tab.save(record({ F1: done("a") }));
+  const later = [tab.save(record({ F1: done("b") })), tab.save(record({ F1: done("c") }))];
+  // The first conflicts; the store then reloads (before the later saves have run).
+  assert.equal((await first).conflict, true);
+  await tab.hydrate();
+  const results = await Promise.all(later);
+  assert.ok(results.every((r) => r.ok === false && r.stale === true), JSON.stringify(results));
+  assert.deepEqual(Object.keys(db.box.get("state").progress), ["J1"], "J1 is not overwritten by a stale save");
+  // A save queued after the reload is checked against the latest copy and goes through.
+  assert.equal((await tab.save(record({ ...tab.snapshot.progress, F2: done("d") }))).ok, true);
+  assert.deepEqual(Object.keys(db.box.get("state").progress).sort(), ["F2", "J1"]);
+});

@@ -28,9 +28,9 @@ export type SaveStatus =
   | { kind: "unsaved"; reason: string }
   | { kind: "readonly"; reason: string }
   /** Another tab or an older build wrote first; this tab must load the latest record. */
-  | { kind: "conflict"; reason: string }
-  /** Another tab is the writer; this tab shows its last state and does not save. */
-  | { kind: "paused" };
+  | { kind: "conflict"; reason: string };
+// "Another tab is the writer" is not a save status: it is the store's `paused` flag,
+// so a save result can never clear it.
 
 export type PersistMode = "booting" | "ready" | "memory" | "readonly";
 
@@ -66,7 +66,9 @@ export function createPersistence(open: () => Promise<KvConn>): {
   readonly snapshot: Persisted;
   drop(): void;
   hydrate(): Promise<{ ok: boolean; empty?: boolean; memory?: boolean }>;
-  save(next: Persisted): Promise<{ ok: boolean; conflict?: boolean }>;
+  /** stale: queued before the tab last reloaded, so it was dropped unwritten. */
+  save(next: Persisted): Promise<{ ok: boolean; conflict?: boolean; stale?: boolean }>;
+  readonly generation: number;
   saveNow(next: Persisted): Promise<{ ok: boolean; conflict?: boolean }>;
   retrySave(): Promise<{ ok: boolean }>;
 };
