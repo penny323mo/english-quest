@@ -6,6 +6,7 @@ import { normalizeDaily } from "./daily.mjs";
 // instead of refusing it as 較新版本.
 export const SCHEMA_VERSION = 3;
 export const STATE_KEY = "state";
+const CONFLICT_REASON = "另一個分頁（或者舊版）改咗進度，已經載入最新嗰份，啱啱嗰下未儲存。";
 
 const GOALS = new Set(["foundation", "daily", "travel", "restaurant", "work", "jewellery"]);
 /**
@@ -251,7 +252,29 @@ export function createKv(open) {
     putState(value) {
       return run((db) => db.put(STATE_KEY, value));
     },
+    /**
+     * Write `value` only if the stored record still passes `matches`, checked and
+     * written in one readwrite transaction (db.putIf). Resolves true when written.
+     */
+    putStateIf(matches, value) {
+      return run(async (db) => {
+        if (typeof db.putIf === "function") return db.putIf(STATE_KEY, matches, value);
+        // Test doubles without transactions: same check, not atomic.
+        if (!matches(await db.get(STATE_KEY))) return false;
+        await db.put(STATE_KEY, value);
+        return true;
+      });
+    },
   };
+}
+
+/** The exact record as stored, for comparing what a tab last saw with what is there now. */
+export function fingerprint(record) {
+  return record == null ? "" : JSON.stringify(record);
+}
+
+function revOf(record) {
+  return record && Number.isInteger(record.rev) && record.rev >= 0 ? record.rev : 0;
 }
 
 /**
@@ -259,6 +282,24 @@ export function createKv(open) {
  * mode ready: may write.
  * mode memory: private-mode style first run, keep the session, never call put.
  * mode readonly: a read failed, so put is refused and the previous database bytes stay put.
+ *
+ * Several tabs (or an older cached build) can share the record. Every write checks,
+ * in the same transaction, that the stored record is exactly the one this instance
+ * last read or wrote (`seen`); otherwise nothing is written, status becomes
+ * "conflict", and the caller must hydrate again before editing. Each write also
+ * stores `rev`, the previous revision + 1. Saves from one instance run one at a time.
+ *
+ * What this guarantees, and what it does not:
+ * - Between tabs running this build (or later): a stale save is refused, so no
+ *   tab overwrites progress another tab saved.
+ * - After an older cached build writes: this build notices (the record no longer
+ *   matches) and reloads it instead of writing over it.
+ * - Known limit: it cannot stop an older cached build from writing. Builds from
+ *   before this check write the whole record unconditionally and ignore the
+ *   BroadcastChannel notice, so an old tab left open can still replace progress a
+ *   newer tab saved after that old tab last loaded. tests/single-writer.mjs pins
+ *   this ordering down. The window closes once every open tab has reloaded onto
+ *   this build or later.
  */
 export function createPersistence(open) {
   const kv = createKv(open);
@@ -266,6 +307,19 @@ export function createPersistence(open) {
   let status = { kind: "ok" };
   let snapshot = emptyPersisted();
   let asked = false;
+  let seen = "";
+  let seenRev = 0;
+  let queue = Promise.resolve();
+
+  async function writeChecked(body) {
+    const expected = seen;
+    const record = { ...body, rev: seenRev + 1 };
+    const written = await kv.putStateIf((current) => fingerprint(current) === expected, record);
+    if (!written) return false;
+    seen = fingerprint(record);
+    seenRev = record.rev;
+    return true;
+  }
 
   function askPersist() {
     if (asked) return;
@@ -289,6 +343,8 @@ export function createPersistence(open) {
     async hydrate() {
       try {
         const raw = await kv.getState();
+        seen = fingerprint(raw);
+        seenRev = revOf(raw);
         if (raw == null) {
           snapshot = emptyPersisted();
           mode = "ready";
@@ -303,7 +359,7 @@ export function createPersistence(open) {
         askPersist();
         if (version < SCHEMA_VERSION) {
           try {
-            await kv.putState(snapshot);
+            if (!(await writeChecked(snapshot))) status = { kind: "conflict", reason: CONFLICT_REASON };
           } catch (err) {
             status = { kind: "unsaved", reason: saveReason(err) };
           }
@@ -321,7 +377,13 @@ export function createPersistence(open) {
         return { ok: false };
       }
     },
-    async save(next) {
+    save(next) {
+      // One write at a time, so a tab's own back-to-back saves never look like a conflict.
+      const run = queue.then(() => this.saveNow(next));
+      queue = run.catch(() => undefined);
+      return run;
+    },
+    async saveNow(next) {
       if (mode === "readonly" || mode === "booting") {
         status = {
           kind: "readonly",
@@ -344,7 +406,10 @@ export function createPersistence(open) {
         return { ok: false };
       }
       try {
-        await kv.putState(snapshot);
+        if (!(await writeChecked(body))) {
+          status = { kind: "conflict", reason: CONFLICT_REASON };
+          return { ok: false, conflict: true };
+        }
         status = { kind: "ok" };
         return { ok: true };
       } catch (err) {
