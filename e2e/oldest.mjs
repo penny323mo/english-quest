@@ -61,6 +61,20 @@ self.addEventListener("fetch", (event) => {
 `;
 }
 
+// Another project on the same github.io origin, with its own worker and caches.
+// English Quest's clean-up must leave all of it alone (review finding 3).
+const otherHtml = `<!doctype html><html><head><meta charset="utf-8"><title>other</title></head><body><p>other app</p>
+<script>navigator.serviceWorker.register("/other-app/sw.js", { scope: "/other-app/" });</script></body></html>`;
+const otherSw = `self.addEventListener("install", (event) => {
+  event.waitUntil(Promise.all([
+    caches.open("other-app-v1").then((c) => c.put("/other-app/", new Response("other"))),
+    caches.open("workbox-precache-v2-" + self.registration.scope).then((c) => c.put("/other-app/a", new Response("a"))),
+  ]).then(() => self.skipWaiting()));
+});
+self.addEventListener("activate", (event) => event.waitUntil(self.clients.claim()));
+`;
+const OTHER_CACHES = (port) => ["other-app-v1", `workbox-precache-v2-http://127.0.0.1:${port}/other-app/`];
+
 let phase = "old";
 let workboxName = HISTORICAL[0];
 const swFetches = [];
@@ -79,6 +93,12 @@ const types = {
 const server = http.createServer((req, res) => {
   const url = new URL(req.url || "/", "http://127.0.0.1");
   if (phase === "new" && url.pathname.endsWith("/sw.js")) swFetches.push(url.pathname);
+  if (url.pathname === "/other-app/" || url.pathname === "/other-app/sw.js") {
+    const isSw = url.pathname.endsWith("sw.js");
+    res.writeHead(200, { "content-type": isSw ? "text/javascript; charset=utf-8" : "text/html; charset=utf-8", "cache-control": "no-store" });
+    res.end(isSw ? otherSw : otherHtml);
+    return;
+  }
   const prefix = "/english-quest";
   if (!url.pathname.startsWith(prefix)) {
     res.writeHead(404);
@@ -244,7 +264,8 @@ async function migrate(browserType, workbox) {
   phase = "old";
   workboxName = workbox;
   swFetches.length = 0;
-  const browser = await browserType.launch();
+  const launch = browserType.name() === "chromium" && process.env.EQ_CHROMIUM ? { executablePath: process.env.EQ_CHROMIUM } : {};
+  const browser = await browserType.launch(launch);
   const page = await browser.newPage({
     viewport: { width: 390, height: 844 },
     deviceScaleFactor: 2,
@@ -265,6 +286,12 @@ async function migrate(browserType, workbox) {
     if (!res.url().includes("/english-quest")) return;
     docs.push(res.text().then((body) => body).catch(() => ""));
   });
+  await page.goto(`http://127.0.0.1:${port}/other-app/`);
+  await page.waitForFunction(async (names) => {
+    const reg = await navigator.serviceWorker.getRegistration("/other-app/");
+    const have = await caches.keys();
+    return Boolean(reg && reg.active) && names.every((name) => have.includes(name));
+  }, OTHER_CACHES(port));
   await page.goto(origin, { waitUntil: "domcontentloaded" });
   await page.waitForFunction(() => navigator.serviceWorker.controller !== null);
   await page.getByText("完成一課就記低今日").waitFor();
@@ -343,6 +370,16 @@ async function migrate(browserType, workbox) {
   if (home.includes("完成一課就記低今日") || home.includes("路線")) {
     throw new Error(`${browserType.name()} still shows the dark shell`);
   }
+  const shared = await page.evaluate(async () => ({
+    scopes: (await navigator.serviceWorker.getRegistrations()).map((reg) => new URL(reg.scope).pathname),
+    caches: await caches.keys(),
+  }));
+  const otherKept = shared.scopes.includes("/other-app/") && OTHER_CACHES(port).every((name) => shared.caches.includes(name));
+  console.log(`assert ${browserType.name()} ${workbox} another app on the origin keeps its worker and caches: ${otherKept ? "pass" : "FAIL"} ${JSON.stringify(shared)}`);
+  if (!otherKept) throw new Error("English Quest's clean-up removed another app's worker or caches");
+  const oldGone = !shared.caches.includes("eq-historical-dark");
+  console.log(`assert ${browserType.name()} ${workbox} English Quest's own old cache is removed: ${oldGone ? "pass" : "FAIL"}`);
+  if (!oldGone) throw new Error("the historical dark-shell cache was kept");
   const after = await page.evaluate(dumpStorage);
   for (const part of ["local", "session", "idb"]) {
     const ok = stable(before[part]) === stable(after[part]);
