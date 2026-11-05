@@ -1,28 +1,11 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import { Onboarding } from "./Onboarding";
 import { unlockSfx } from "./sfx";
+import { parseRoute } from "./route.mjs";
 import { hydrate, retryHydrate, useStore } from "./store";
 import type { Route } from "./types";
 
 const Shell = lazy(() => import("./shell"));
-
-function parse(hash: string): Route {
-  const path = (hash.replace(/^#/, "") || "/").split("?")[0];
-  if (path === "/" || path === "") return { name: "path" };
-  if (path === "/onboarding") return { name: "onboarding" };
-  if (path === "/review") return { name: "review" };
-  if (path === "/words") return { name: "words" };
-  if (path === "/profile") return { name: "profile" };
-  if (path === "/attributions") return { name: "attributions" };
-  if (path === "/settings") return { name: "settings" };
-  if (path === "/daily") return { name: "daily" };
-  if (path === "/vocab") return { name: "vocab" };
-  const vocab = path.match(/^\/vocab\/([^/]+)(\/quiz)?$/);
-  if (vocab) return { name: "vocab", deckId: decodeURIComponent(vocab[1]), quiz: Boolean(vocab[2]) };
-  if (path.startsWith("/lesson/")) return { name: "lesson", id: decodeURIComponent(path.slice("/lesson/".length)) };
-  if (path.startsWith("/word/")) return { name: "word", id: decodeURIComponent(path.slice("/word/".length)) };
-  return { name: "path" };
-}
 
 function useRoute(): Route {
   const [hash, setHash] = useState(() => location.hash || "#/");
@@ -31,7 +14,7 @@ function useRoute(): Route {
     window.addEventListener("hashchange", onHash);
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
-  return parse(hash);
+  return parseRoute(hash);
 }
 
 function Splash() {
