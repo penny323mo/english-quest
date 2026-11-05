@@ -13,7 +13,7 @@ Quality bar: commercial Duolingo / Babbel / Speak polish. **No** primary-school 
 
 Help Cantonese speakers in Macau/HK who only know “How are you / Thank you” build usable spoken English through **scenario role-play**, accurate pronunciation, and spaced review.
 
-Persona: 「阿琳」— jewellery counter worker, iPhone Safari, 12–15 min/day, anxious about being laughed at. UI in **Traditional Chinese / 廣東話**; English is the learning content.
+Persona: 「阿琳」— an adult Cantonese speaker who needs practical English for daily life, travel, eating out and work (jewellery counter staff are one of several groups), iPhone Safari, 12–15 min/day, anxious about being laughed at. UI in **Traditional Chinese / 廣東話**; English is the learning content.
 
 ---
 

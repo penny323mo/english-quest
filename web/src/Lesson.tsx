@@ -10,12 +10,14 @@ import {
   getRecognizer,
   keywordHits,
   playAsset,
+  playUrl,
   recorderMime,
   stopAudio,
   subscribeAudio,
 } from "./media";
 import { quizRecapLine } from "./persist.mjs";
 import { karaokeSpans, stressSplit } from "./stress.mjs";
+import { createMic } from "./recorder.mjs";
 import { playSfx } from "./sfx";
 import { fillLearner } from "./learner";
 import { useStore } from "./store";
@@ -835,7 +837,8 @@ function SpeakBox({
   const [userUrl, setUserUrl] = useState("");
   const [recording, setRecording] = useState(false);
   const [micError, setMicError] = useState(false);
-  const recorderRef = useRef<MediaRecorder | null>(null);
+  const [starting, setStarting] = useState(false);
+  const micRef = useRef<ReturnType<typeof createMic> | null>(null);
   const speechRef = useRef<{ stop: () => void } | null>(null);
   const [karaAt, setKaraAt] = useState(-1);
   const karaRaf = useRef(0);
@@ -867,13 +870,41 @@ function SpeakBox({
     else node.addEventListener("loadedmetadata", run, { once: true });
   }
 
+  // Revoke each take's URL once it is replaced or the screen closes.
   useEffect(() => {
     return () => {
-      try { speechRef.current?.stop(); } catch { /* already stopped */ }
-      recorderRef.current?.stream.getTracks().forEach((track) => track.stop());
       if (userUrl) URL.revokeObjectURL(userUrl);
     };
   }, [userUrl]);
+
+  // The microphone helper lives as long as this effect: made on setup, disposed on
+  // cleanup, so React StrictMode's setup, cleanup, setup in development leaves a
+  // working one. Closing the screen turns the microphone off, including a stream
+  // still on its way.
+  useEffect(() => {
+    const mic = createMic({
+      getStream: () => navigator.mediaDevices.getUserMedia({ audio: true }),
+      makeRecorder: (stream) => {
+        const mime = recorderMime();
+        return mime ? new MediaRecorder(stream, { mimeType: mime }) : new MediaRecorder(stream);
+      },
+      onStart: () => setRecording(true),
+      onTake: (blob) => {
+        setRecording(false);
+        setUserUrl(URL.createObjectURL(blob));
+      },
+      onError: () => {
+        setRecording(false);
+        setMicError(true);
+      },
+    });
+    micRef.current = mic;
+    return () => {
+      try { speechRef.current?.stop(); } catch { /* already stopped */ }
+      mic.dispose();
+      if (micRef.current === mic) micRef.current = null;
+    };
+  }, []);
 
   function stopSpeech() {
     try { speechRef.current?.stop(); } catch { /* already stopped */ }
@@ -882,7 +913,7 @@ function SpeakBox({
   }
 
   function stopRecord() {
-    if (recording && recorderRef.current) recorderRef.current.stop();
+    micRef.current?.stop();
     setRecording(false);
   }
 
@@ -917,33 +948,19 @@ function SpeakBox({
   }
 
   async function toggleRecord() {
-    if (recording && recorderRef.current) {
-      recorderRef.current.stop();
-      setRecording(false);
+    const mic = micRef.current;
+    if (!mic) return;
+    if (mic.recording) {
+      stopRecord();
       return;
     }
+    if (mic.pending) return;
     setMicError(false);
+    setStarting(true);
     try {
-      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      const mime = recorderMime();
-      const rec = mime ? new MediaRecorder(stream, { mimeType: mime }) : new MediaRecorder(stream);
-      const chunks: Blob[] = [];
-      rec.ondataavailable = (ev) => {
-        if (ev.data.size) chunks.push(ev.data);
-      };
-      rec.onstop = () => {
-        const blob = new Blob(chunks, { type: rec.mimeType || "audio/mp4" });
-        setUserUrl((prev) => {
-          if (prev) URL.revokeObjectURL(prev);
-          return URL.createObjectURL(blob);
-        });
-        stream.getTracks().forEach((track) => track.stop());
-      };
-      recorderRef.current = rec;
-      rec.start();
-      setRecording(true);
-    } catch {
-      setMicError(true);
+      await mic.start();
+    } finally {
+      setStarting(false);
     }
   }
 
@@ -973,7 +990,7 @@ function SpeakBox({
           {listening ? "聽緊你講…" : "開始講"}
         </button>
       ) : (
-        <button className="btn teal block" type="button" onClick={() => void toggleRecord()}>
+        <button className="btn teal block" type="button" onClick={() => void toggleRecord()} disabled={starting && !recording}>
           {recording ? "停錄音" : "錄音，同模範比較"}
         </button>
       )}
@@ -1009,7 +1026,7 @@ function SpeakBox({
           }}>再錄一次</button>
         )}
         {userUrl && (
-          <button className="btn quiet" type="button" onClick={() => void new Audio(userUrl).play()}>聽我</button>
+          <button className="btn quiet" type="button" onClick={() => playUrl(userUrl)}>聽我</button>
         )}
         <button className="btn quiet" type="button" onClick={() => playAsset(modelAudio)}>聽模範</button>
         <button className="btn ghost" type="button" onClick={() => playAsset(modelSlow)}>慢速模範</button>

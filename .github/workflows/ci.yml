@@ -29,19 +29,36 @@ jobs:
         run: node e2e/migrate.mjs
       - name: Fresh iPhone Safari profile renders the light home
         run: node e2e/fresh-safari.mjs
-      - name: Onboarding goal picks 今日 and opens its track at 390px
+      - name: Onboarding goal picks 今日 and opens its track at 390px in WebKit and Chromium
         run: node e2e/goal.mjs
+        env:
+          EQ_SHOTS: daily-shots
       - name: 每日抽卡 at 390px in WebKit and Chromium
         run: node e2e/daily.mjs
         env:
           EQ_SHOTS: daily-shots
-      - name: Keep the 每日抽卡 screenshots
+      - name: Keep the onboarding, home and 每日抽卡 screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: daily-draw-screenshots
+          name: e2e-screenshots
           path: daily-shots/
           if-no-files-found: warn
+      - name: Two tabs never overwrite each other's progress (WebKit and Chromium)
+        run: node e2e/two-tabs.mjs
+      - name: The microphone is never left on (WebKit and Chromium)
+        run: node e2e/mic.mjs
+      - name: Only one sound plays at a time (WebKit and Chromium)
+        run: node e2e/audio-overlap.mjs
+      - name: A broken link opens the path (WebKit and Chromium)
+        run: node e2e/bad-route.mjs
+      - name: Onboarding (#27) with one tab saving at a time (#28), WebKit and Chromium
+        run: node e2e/onboarding-tabs.mjs
+      - name: The microphone works under React StrictMode (Vite dev server, WebKit and Chromium)
+        run: |
+          npx vite --port 5179 --strictPort --host 127.0.0.1 > vite-dev.log 2>&1 &
+          for i in $(seq 1 60); do curl -sf http://127.0.0.1:5179/english-quest/ > /dev/null && break; sleep 1; done
+          EQ_ORIGIN=http://127.0.0.1:5179/english-quest/ node e2e/mic.mjs
       - name: Oldest service workers reach the light shell within two reloads
         run: node e2e/oldest.mjs
       - name: Full A1 lesson in WebKit and Chromium

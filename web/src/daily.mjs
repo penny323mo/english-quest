@@ -68,10 +68,11 @@ function seededShuffle(ids, seed) {
  * pool: every drawable card; fills in when preferred runs short.
  * history: earlier draws [{ date, ids }]; nothing from the last NO_REPEAT_DAYS - 1 days repeats.
  */
-export function drawDaily({ date, preferred, pool, history = [], count = DAILY_COUNT }) {
+export function drawDaily({ date, preferred, pool, history = [], count = DAILY_COUNT, keep = [] }) {
   const drawable = new Set(pool.filter((id) => !NOT_DRAWN.has(id)));
   const recent = recentIds(history, date);
-  const picked = [];
+  // keep: cards already drawn today that are still valid (repairDay); the rest fills in around them.
+  const picked = [...keep];
   const take = (ids, tier) => {
     for (const id of seededShuffle(ids, `${date}:${tier}`)) {
       if (picked.length >= count) return;
@@ -88,6 +89,25 @@ export function drawDaily({ date, preferred, pool, history = [], count = DAILY_C
     }
   }
   return picked;
+}
+
+/**
+ * Repair today's stored draw (review finding 5) so it is DAILY_COUNT valid, distinct
+ * cards. A card can stop being valid when content changes, or a different build
+ * wrote the record (duplicates, an unknown id, a card that is no longer drawn).
+ * Valid cards keep their place; the rest are drawn again as drawDaily would.
+ * `done` and the history are kept, so a finished day stays finished and its XP is
+ * never awarded twice. Returns the same object when nothing needs repair.
+ */
+export function repairDay(daily, { preferred, pool, count = DAILY_COUNT }) {
+  if (!daily) return daily;
+  const drawable = new Set(pool.filter((id) => !NOT_DRAWN.has(id)));
+  const keep = [];
+  for (const id of daily.ids) if (drawable.has(id) && !keep.includes(id)) keep.push(id);
+  const want = Math.min(count, drawable.size);
+  if (keep.length === daily.ids.length && keep.length === want) return daily;
+  const ids = drawDaily({ date: daily.date, preferred, pool, history: daily.history, count, keep: keep.slice(0, count) });
+  return { ...daily, ids };
 }
 
 /** The stored daily state after drawing `ids` on `date`. Yesterday's draw moves into history. */

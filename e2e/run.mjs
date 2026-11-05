@@ -81,6 +81,8 @@ async function onboard(page, name) {
   await page.getByRole("heading", { name: "情景英文" }).waitFor();
   await page.getByLabel("點稱呼你？").fill(name);
   await page.getByRole("button", { name: "下一步" }).click();
+  // No goal is preselected: pick one before the next step.
+  await page.getByRole("radio", { name: /打好基礎/ }).click();
   await page.getByRole("button", { name: "下一步" }).click();
   await page.getByRole("button", { name: "下一步" }).click();
   await page.getByRole("button", { name: "開始" }).click();
@@ -196,12 +198,21 @@ async function oldToNew(browserType, scheme) {
     await changed;
   }).catch(() => {});
   await page.waitForLoadState("domcontentloaded").catch(() => {});
-  const stillOld = await page.locator("body").innerText().then((text) => text.includes("舊版深色")).catch(() => false);
-  if (stillOld) await page.reload({ waitUntil: "domcontentloaded" });
-  await page.waitForFunction(() => {
+  const onNewShell = () => {
     const heading = document.querySelector("h1")?.textContent || "";
     return heading.includes("情景英文") || heading.includes("學習路徑");
-  }, null, { timeout: 25000 });
+  };
+  // After the update the app reloads itself onto the new shell. Give that navigation
+  // time to land before reloading by hand: a reload fired while it is in flight is
+  // cancelled by WebKit ("Navigation canceled by policy check"), and the app's own
+  // navigation is the one this test wants anyway.
+  const landed = await page.waitForFunction(onNewShell, null, { timeout: 8000 }).then(() => true, () => false);
+  if (!landed) {
+    await page.reload({ waitUntil: "domcontentloaded" }).catch((error) => {
+      if (!/policy check|ERR_ABORTED|NS_BINDING_ABORTED|interrupted by another navigation|frame was detached/i.test(String(error))) throw error;
+    });
+  }
+  await page.waitForFunction(onNewShell, null, { timeout: 25000 });
   const text = await page.locator("body").innerText();
   if (text.includes("舊版深色") || text.includes("阿林")) throw new Error(`${browserType.name()} stayed on the old shell`);
   const bg = await phoneBackground(page);

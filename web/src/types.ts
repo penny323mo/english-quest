@@ -1,4 +1,5 @@
-export type Goal = "foundation" | "jewellery" | "travel" | "restaurant";
+/** Stored in the learner's profile: values never change ("jewellery" stays "jewellery"). */
+export type Goal = "foundation" | "daily" | "travel" | "restaurant" | "work" | "jewellery";
 export type Level = "new" | "some" | "work";
 
 export type Profile = {

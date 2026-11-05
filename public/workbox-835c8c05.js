@@ -1,12 +1,37 @@
 // Kill switch for the night-1 worker (8eacd11c through 3b3e48ff^).
 // That worker importScripts this URL. A 404 here aborts Safari's update,
 // so the precached dark shell stays in control. This file is also a
-// service worker: it drops Cache Storage only, then unregisters and reloads.
+// service worker: it drops its own Cache Storage only, then unregisters and reloads.
+// github.io is shared by every project of the account: only English Quest's own
+// caches and registrations are touched (web/src/cache-scope.mjs has the rules).
 (function () {
+  var SCOPE = (function () {
+    try {
+      if (self.registration && self.registration.scope) return self.registration.scope;
+      if (typeof document !== "undefined" && document.currentScript && document.currentScript.src) {
+        return new URL("./", document.currentScript.src).href;
+      }
+      return new URL("./", self.location.href).href;
+    } catch (err) {
+      return "";
+    }
+  })();
+
+  function ownCache(name) {
+    if (typeof name !== "string") return false;
+    if (name.indexOf("eq-") === 0) return true;
+    if (!SCOPE || name.indexOf("workbox-") !== 0) return false;
+    return name.indexOf("-" + SCOPE) !== -1;
+  }
+
+  function ownRegistration(reg) {
+    return Boolean(SCOPE) && reg && typeof reg.scope === "string" && reg.scope.indexOf(SCOPE) === 0;
+  }
+
   function purgeCaches() {
     if (!self.caches || typeof caches.keys !== "function") return Promise.resolve();
     return caches.keys().then(function (keys) {
-      return Promise.all(keys.map(function (key) { return caches.delete(key); }));
+      return Promise.all(keys.filter(ownCache).map(function (key) { return caches.delete(key); }));
     });
   }
 
@@ -81,7 +106,7 @@
   // request misses the cache, unregister the stuck worker and reload once.
   if (typeof navigator !== "undefined" && navigator.serviceWorker && navigator.serviceWorker.getRegistrations) {
     navigator.serviceWorker.getRegistrations().then(function (regs) {
-      return Promise.all(regs.map(function (reg) { return reg.unregister(); }));
+      return Promise.all(regs.filter(ownRegistration).map(function (reg) { return reg.unregister(); }));
     }).then(purgeCaches).then(function () {
       try {
         if (sessionStorage.getItem("eq-reg-kill") === "1") return;

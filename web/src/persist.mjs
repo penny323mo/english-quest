@@ -6,8 +6,9 @@ import { normalizeDaily } from "./daily.mjs";
 // instead of refusing it as 較新版本.
 export const SCHEMA_VERSION = 3;
 export const STATE_KEY = "state";
+const CONFLICT_REASON = "另一個分頁（或者舊版）改咗進度，已經載入最新嗰份，啱啱嗰下未儲存。";
 
-const GOALS = new Set(["foundation", "jewellery", "travel", "restaurant"]);
+const GOALS = new Set(["foundation", "daily", "travel", "restaurant", "work", "jewellery"]);
 /**
  * A goal this build does not know (for example one added by a newer build) reads
  * as this neutral goal instead of refusing the whole record: the learner keeps
@@ -154,6 +155,61 @@ export function exportJson(data) {
   });
 }
 
+const INVALID_IMPORT = "呢份檔案入面有啲進度唔啱，冇覆蓋你而家嘅進度。";
+
+/**
+ * A real calendar day (YYYY-MM-DD), optionally followed by an ISO time, as the app
+ * writes it. Date.parse alone is not enough: it rolls 2026-02-31 over to 3 March.
+ */
+function validDate(value) {
+  if (typeof value !== "string") return false;
+  const m = /^(\d{4})-(\d{2})-(\d{2})(?:$|T)/.exec(value);
+  if (!m || !Number.isFinite(Date.parse(value))) return false;
+  const [y, mo, d] = [Number(m[1]), Number(m[2]), Number(m[3])];
+  const day = new Date(Date.UTC(y, mo - 1, d));
+  return day.getUTCFullYear() === y && day.getUTCMonth() === mo - 1 && day.getUTCDate() === d;
+}
+
+function nonNegative(value) {
+  return typeof value === "number" && Number.isFinite(value) && value >= 0;
+}
+
+function count(value) {
+  return Number.isInteger(value) && value >= 0;
+}
+
+/**
+ * Stricter checks for a file the learner imports (review finding 4). Every value
+ * the scheduler and the streak read later must make sense, or the whole file is
+ * refused before anything is replaced. Records already saved on this device are
+ * not held to these checks, so an existing save never stops loading.
+ */
+export function checkImported(data) {
+  const profile = data.profile;
+  if (profile) {
+    if (!nonNegative(profile.xp) || !count(profile.streak)) throw bad(INVALID_IMPORT);
+    if (profile.lastActive != null && !(/^\d{4}-\d{2}-\d{2}$/.test(profile.lastActive) && validDate(profile.lastActive))) {
+      throw bad(INVALID_IMPORT);
+    }
+  }
+  for (const row of Object.values(data.progress)) {
+    if (!validDate(row.at) || !nonNegative(row.xp)) throw bad(INVALID_IMPORT);
+  }
+  for (const [key, card] of Object.entries(data.cards)) {
+    if (card.id !== key) throw bad(INVALID_IMPORT);
+    if (!validDate(card.due)) throw bad(INVALID_IMPORT);
+    if (card.last_review != null && !validDate(card.last_review)) throw bad(INVALID_IMPORT);
+    if (!Number.isInteger(card.state) || card.state < 0 || card.state > 3) throw bad(INVALID_IMPORT);
+    for (const field of ["reps", "lapses", "learning_steps"]) {
+      if (!count(card[field])) throw bad(INVALID_IMPORT);
+    }
+    for (const field of ["stability", "difficulty", "elapsed_days", "scheduled_days"]) {
+      if (!nonNegative(card[field])) throw bad(INVALID_IMPORT);
+    }
+  }
+  return data;
+}
+
 export function importJson(raw) {
   let data;
   try {
@@ -164,7 +220,7 @@ export function importJson(raw) {
   if (!data || typeof data !== "object" || Array.isArray(data)) throw bad("呢份檔案唔係有效嘅進度。");
   const version = data.schemaVersion == null ? 1 : data.schemaVersion;
   if (typeof version !== "number" || !Number.isInteger(version)) throw bad("進度格式唔啱。");
-  return migrate(version, SCHEMA_VERSION, data);
+  return checkImported(migrate(version, SCHEMA_VERSION, data));
 }
 
 export function isMemoryOnlyError(err) {
@@ -251,7 +307,29 @@ export function createKv(open) {
     putState(value) {
       return run((db) => db.put(STATE_KEY, value));
     },
+    /**
+     * Write `value` only if the stored record still passes `matches`, checked and
+     * written in one readwrite transaction (db.putIf). Resolves true when written.
+     */
+    putStateIf(matches, value) {
+      return run(async (db) => {
+        if (typeof db.putIf === "function") return db.putIf(STATE_KEY, matches, value);
+        // Test doubles without transactions: same check, not atomic.
+        if (!matches(await db.get(STATE_KEY))) return false;
+        await db.put(STATE_KEY, value);
+        return true;
+      });
+    },
   };
+}
+
+/** The exact record as stored, for comparing what a tab last saw with what is there now. */
+export function fingerprint(record) {
+  return record == null ? "" : JSON.stringify(record);
+}
+
+function revOf(record) {
+  return record && Number.isInteger(record.rev) && record.rev >= 0 ? record.rev : 0;
 }
 
 /**
@@ -259,6 +337,24 @@ export function createKv(open) {
  * mode ready: may write.
  * mode memory: private-mode style first run, keep the session, never call put.
  * mode readonly: a read failed, so put is refused and the previous database bytes stay put.
+ *
+ * Several tabs (or an older cached build) can share the record. Every write checks,
+ * in the same transaction, that the stored record is exactly the one this instance
+ * last read or wrote (`seen`); otherwise nothing is written, status becomes
+ * "conflict", and the caller must hydrate again before editing. Each write also
+ * stores `rev`, the previous revision + 1. Saves from one instance run one at a time.
+ *
+ * What this guarantees, and what it does not:
+ * - Between tabs running this build (or later): a stale save is refused, so no
+ *   tab overwrites progress another tab saved.
+ * - After an older cached build writes: this build notices (the record no longer
+ *   matches) and reloads it instead of writing over it.
+ * - Known limit: it cannot stop an older cached build from writing. Builds from
+ *   before this check write the whole record unconditionally and ignore the
+ *   BroadcastChannel notice, so an old tab left open can still replace progress a
+ *   newer tab saved after that old tab last loaded. tests/single-writer.mjs pins
+ *   this ordering down. The window closes once every open tab has reloaded onto
+ *   this build or later.
  */
 export function createPersistence(open) {
   const kv = createKv(open);
@@ -266,6 +362,23 @@ export function createPersistence(open) {
   let status = { kind: "ok" };
   let snapshot = emptyPersisted();
   let asked = false;
+  let seen = "";
+  let seenRev = 0;
+  let queue = Promise.resolve();
+  // Bumped by every hydrate. A save is a snapshot of the store taken while one copy
+  // of the record was loaded; once the tab reloads, saves queued earlier are stale
+  // and are dropped, never checked against the newly loaded record.
+  let generation = 0;
+
+  async function writeChecked(body) {
+    const expected = seen;
+    const record = { ...body, rev: seenRev + 1 };
+    const written = await kv.putStateIf((current) => fingerprint(current) === expected, record);
+    if (!written) return false;
+    seen = fingerprint(record);
+    seenRev = record.rev;
+    return true;
+  }
 
   function askPersist() {
     if (asked) return;
@@ -287,8 +400,11 @@ export function createPersistence(open) {
       kv.drop();
     },
     async hydrate() {
+      generation += 1;
       try {
         const raw = await kv.getState();
+        seen = fingerprint(raw);
+        seenRev = revOf(raw);
         if (raw == null) {
           snapshot = emptyPersisted();
           mode = "ready";
@@ -303,7 +419,7 @@ export function createPersistence(open) {
         askPersist();
         if (version < SCHEMA_VERSION) {
           try {
-            await kv.putState(snapshot);
+            if (!(await writeChecked(snapshot))) status = { kind: "conflict", reason: CONFLICT_REASON };
           } catch (err) {
             status = { kind: "unsaved", reason: saveReason(err) };
           }
@@ -321,7 +437,19 @@ export function createPersistence(open) {
         return { ok: false };
       }
     },
-    async save(next) {
+    save(next) {
+      // One write at a time, so a tab's own back-to-back saves never look like a conflict.
+      // Each save belongs to the copy loaded when it was queued (see `generation`).
+      const loadedAs = generation;
+      const run = queue.then(() => (loadedAs === generation ? this.saveNow(next) : { ok: false, stale: true }));
+      queue = run.catch(() => undefined);
+      return run;
+    },
+    /** Which loaded copy saves queued now belong to; changes on every hydrate. */
+    get generation() {
+      return generation;
+    },
+    async saveNow(next) {
       if (mode === "readonly" || mode === "booting") {
         status = {
           kind: "readonly",
@@ -344,7 +472,10 @@ export function createPersistence(open) {
         return { ok: false };
       }
       try {
-        await kv.putState(snapshot);
+        if (!(await writeChecked(body))) {
+          status = { kind: "conflict", reason: CONFLICT_REASON };
+          return { ok: false, conflict: true };
+        }
         status = { kind: "ok" };
         return { ok: true };
       } catch (err) {

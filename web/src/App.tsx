@@ -1,28 +1,12 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import { Onboarding } from "./Onboarding";
+import { SaveBanner } from "./save-banner";
 import { unlockSfx } from "./sfx";
+import { parseRoute } from "./route.mjs";
 import { hydrate, retryHydrate, useStore } from "./store";
 import type { Route } from "./types";
 
 const Shell = lazy(() => import("./shell"));
-
-function parse(hash: string): Route {
-  const path = (hash.replace(/^#/, "") || "/").split("?")[0];
-  if (path === "/" || path === "") return { name: "path" };
-  if (path === "/onboarding") return { name: "onboarding" };
-  if (path === "/review") return { name: "review" };
-  if (path === "/words") return { name: "words" };
-  if (path === "/profile") return { name: "profile" };
-  if (path === "/attributions") return { name: "attributions" };
-  if (path === "/settings") return { name: "settings" };
-  if (path === "/daily") return { name: "daily" };
-  if (path === "/vocab") return { name: "vocab" };
-  const vocab = path.match(/^\/vocab\/([^/]+)(\/quiz)?$/);
-  if (vocab) return { name: "vocab", deckId: decodeURIComponent(vocab[1]), quiz: Boolean(vocab[2]) };
-  if (path.startsWith("/lesson/")) return { name: "lesson", id: decodeURIComponent(path.slice("/lesson/".length)) };
-  if (path.startsWith("/word/")) return { name: "word", id: decodeURIComponent(path.slice("/word/".length)) };
-  return { name: "path" };
-}
 
 function useRoute(): Route {
   const [hash, setHash] = useState(() => location.hash || "#/");
@@ -31,7 +15,7 @@ function useRoute(): Route {
     window.addEventListener("hashchange", onHash);
     return () => window.removeEventListener("hashchange", onHash);
   }, []);
-  return parse(hash);
+  return parseRoute(hash);
 }
 
 function Splash() {
@@ -39,7 +23,7 @@ function Splash() {
     <div className="phone splash">
       <p className="eyebrow">English Quest</p>
       <h1>情景英文</h1>
-      <p className="lede">珠寶櫃檯、登機、入座。</p>
+      <p className="lede">日常、旅行、返工，一句一句講出口。</p>
     </div>
   );
 }
@@ -100,6 +84,7 @@ export function App() {
     return (
       <div className="stage">
         <div className="phone">
+          <SaveBanner />
           <Onboarding />
         </div>
       </div>
