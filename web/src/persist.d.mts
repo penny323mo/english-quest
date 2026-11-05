@@ -42,6 +42,7 @@ export function emptyPersisted(): Persisted;
 export function quizRecapLine(score: number, total: number, answered: number): string;
 export function migrate(from: number, to: number, data: unknown): Persisted;
 export function exportJson(data: Persisted): string;
+export function checkImported(data: Persisted): Persisted;
 export function importJson(raw: string): Persisted;
 export function isMemoryOnlyError(err: unknown): boolean;
 export function saveReason(err: unknown): string;

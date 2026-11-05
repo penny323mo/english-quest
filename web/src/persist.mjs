@@ -154,6 +154,52 @@ export function exportJson(data) {
   });
 }
 
+const INVALID_IMPORT = "呢份檔案入面有啲進度唔啱，冇覆蓋你而家嘅進度。";
+
+function validDate(value) {
+  return typeof value === "string" && value.length >= 10 && Number.isFinite(Date.parse(value));
+}
+
+function nonNegative(value) {
+  return typeof value === "number" && Number.isFinite(value) && value >= 0;
+}
+
+function count(value) {
+  return Number.isInteger(value) && value >= 0;
+}
+
+/**
+ * Stricter checks for a file the learner imports (review finding 4). Every value
+ * the scheduler and the streak read later must make sense, or the whole file is
+ * refused before anything is replaced. Records already saved on this device are
+ * not held to these checks, so an existing save never stops loading.
+ */
+export function checkImported(data) {
+  const profile = data.profile;
+  if (profile) {
+    if (!nonNegative(profile.xp) || !count(profile.streak)) throw bad(INVALID_IMPORT);
+    if (profile.lastActive != null && !(/^\d{4}-\d{2}-\d{2}$/.test(profile.lastActive) && validDate(profile.lastActive))) {
+      throw bad(INVALID_IMPORT);
+    }
+  }
+  for (const row of Object.values(data.progress)) {
+    if (!validDate(row.at) || !nonNegative(row.xp)) throw bad(INVALID_IMPORT);
+  }
+  for (const [key, card] of Object.entries(data.cards)) {
+    if (card.id !== key) throw bad(INVALID_IMPORT);
+    if (!validDate(card.due)) throw bad(INVALID_IMPORT);
+    if (card.last_review != null && !validDate(card.last_review)) throw bad(INVALID_IMPORT);
+    if (!Number.isInteger(card.state) || card.state < 0 || card.state > 3) throw bad(INVALID_IMPORT);
+    for (const field of ["reps", "lapses", "learning_steps"]) {
+      if (!count(card[field])) throw bad(INVALID_IMPORT);
+    }
+    for (const field of ["stability", "difficulty", "elapsed_days", "scheduled_days"]) {
+      if (!nonNegative(card[field])) throw bad(INVALID_IMPORT);
+    }
+  }
+  return data;
+}
+
 export function importJson(raw) {
   let data;
   try {
@@ -164,7 +210,7 @@ export function importJson(raw) {
   if (!data || typeof data !== "object" || Array.isArray(data)) throw bad("呢份檔案唔係有效嘅進度。");
   const version = data.schemaVersion == null ? 1 : data.schemaVersion;
   if (typeof version !== "number" || !Number.isInteger(version)) throw bad("進度格式唔啱。");
-  return migrate(version, SCHEMA_VERSION, data);
+  return checkImported(migrate(version, SCHEMA_VERSION, data));
 }
 
 export function isMemoryOnlyError(err) {
