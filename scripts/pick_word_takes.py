@@ -14,8 +14,10 @@ A take must also survive small changes to the audio (quieter, louder, faint
 noise): CI's machines decode with slightly different numerics, and a take that is
 only just heard as the word can come out differently there and fail.
 
-A failing take is re-rendered up to --takes times. Words that never pass get no
-clip: they go in content/word-audio-skip.json and are never drawn.
+A failing take is re-rendered up to --takes times. Words that never pass go in
+content/word-audio-skip.json and are never drawn; their last take stays on disk
+for the ear check (review/word-audio-ear-check.md). With no EQ_PARAKEET set, the
+gate is Whisper alone (what CI checks).
 
     EQ_PIPER_MODEL=… EQ_ASR_MODELS=… [EQ_PARAKEET=…] python3 scripts/pick_word_takes.py [--takes 6] [--only id …]
 """
@@ -85,6 +87,7 @@ def main() -> int:
     tmp = ra.TMP
     tmp.mkdir(exist_ok=True)
     failed = []
+    last_heard: dict[str, str] = {}
     for n, item_id in enumerate(ids, 1):
         row, lemma = words[item_id], lex[item_id]["lemma"]
         ok_all = True
@@ -102,17 +105,20 @@ def main() -> int:
                     break
             else:
                 ok_all = False
+                # Keep the last take so a person can listen to it.
+                mp3.write_bytes(cand.read_bytes())
+                last_heard[rel] = ca.transcribe(whisper, mp3)
         if not ok_all:
             failed.append(item_id)
         if n % 50 == 0:
             print(f"  {n}/{len(ids)} words, {len(failed)} without a clear take", flush=True)
 
     rendered = json.loads(ra.RENDERED.read_text(encoding="utf-8"))
-    for item_id in failed:
-        for key in ("audio", "audioSlow"):
-            (ra.ROOT / words[item_id][key]).unlink(missing_ok=True)
-        rendered.pop(words[item_id]["audio"], None)
-    ra.RENDERED.write_text(json.dumps(rendered, indent=1) + "\n", encoding="utf-8")
+    for item_id in ids:
+        rendered[words[item_id]["audio"]] = ra.text_hash(words[item_id]["say"])
+    ra.RENDERED.write_text(json.dumps(dict(sorted(rendered.items())), indent=1) + "\n", encoding="utf-8")
+    heard_path = ra.TMP / "word-take-heard.json"
+    heard_path.write_text(json.dumps(last_heard, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     skip = {
         "note": "Cards with no word-only clip: no Piper take was heard as the word by Whisper base.en"
         + (" and Parakeet" if parakeet else "")

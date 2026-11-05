@@ -31,6 +31,16 @@ test("every visible card has a word clip unless no take passed the ASR gate; hid
   }
 });
 
+test("every word without a clip is listed for Penny's ear check, with its last take to play", () => {
+  const doc = fs.readFileSync(path.join(root, "review/word-audio-ear-check.md"), "utf8");
+  for (const id of skip) {
+    assert.ok(doc.includes(`\`${id}\``), `${id} is not in review/word-audio-ear-check.md`);
+    for (const rel of [`assets/audio/words/${id}-word.mp3`, `assets/audio/words/${id}-word-slow.mp3`]) {
+      assert.ok(fs.existsSync(path.join(root, rel)), `${rel}: no take to listen to`);
+    }
+  }
+});
+
 test("cards without a word clip are never drawn", () => {
   const src = fs.readFileSync(path.join(root, "web/src/Daily.tsx"), "utf8");
   assert.match(src, /const pool = lexicon\.items\.filter\(\(item\) => wordAudio\[item\.id\]\)/);

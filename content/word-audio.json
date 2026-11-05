@@ -56,6 +56,16 @@
    "audioSlow": "assets/audio/words/listen-verb-word-slow.mp3",
    "say": "[[lˈɪsən]]"
   },
+  "short-adj": {
+   "audio": "assets/audio/words/short-adj-word.mp3",
+   "audioSlow": "assets/audio/words/short-adj-word-slow.mp3",
+   "say": "short"
+  },
+  "sheep-noun": {
+   "audio": "assets/audio/words/sheep-noun-word.mp3",
+   "audioSlow": "assets/audio/words/sheep-noun-word-slow.mp3",
+   "say": "sheep"
+  },
   "sound-noun": {
    "audio": "assets/audio/words/sound-noun-word.mp3",
    "audioSlow": "assets/audio/words/sound-noun-word-slow.mp3",
@@ -116,6 +126,11 @@
    "audioSlow": "assets/audio/words/bit-noun-word-slow.mp3",
    "say": "bit"
   },
+  "sit-verb": {
+   "audio": "assets/audio/words/sit-verb-word.mp3",
+   "audioSlow": "assets/audio/words/sit-verb-word-slow.mp3",
+   "say": "sit"
+  },
   "seat-noun": {
    "audio": "assets/audio/words/seat-noun-word.mp3",
    "audioSlow": "assets/audio/words/seat-noun-word-slow.mp3",
@@ -161,6 +176,11 @@
    "audioSlow": "assets/audio/words/please-adv-word-slow.mp3",
    "say": "please"
   },
+  "madam-noun": {
+   "audio": "assets/audio/words/madam-noun-word.mp3",
+   "audioSlow": "assets/audio/words/madam-noun-word-slow.mp3",
+   "say": "madam"
+  },
   "welcome-verb": {
    "audio": "assets/audio/words/welcome-verb-word.mp3",
    "audioSlow": "assets/audio/words/welcome-verb-word-slow.mp3",
@@ -181,6 +201,11 @@
    "audioSlow": "assets/audio/words/for-prep-word-slow.mp3",
    "say": "for"
   },
+  "in-prep": {
+   "audio": "assets/audio/words/in-prep-word.mp3",
+   "audioSlow": "assets/audio/words/in-prep-word-slow.mp3",
+   "say": "in"
+  },
   "is-verb": {
    "audio": "assets/audio/words/is-verb-word.mp3",
    "audioSlow": "assets/audio/words/is-verb-word-slow.mp3",
@@ -190,6 +215,11 @@
    "audio": "assets/audio/words/this-det-word.mp3",
    "audioSlow": "assets/audio/words/this-det-word-slow.mp3",
    "say": "this"
+  },
+  "it-pron": {
+   "audio": "assets/audio/words/it-pron-word.mp3",
+   "audioSlow": "assets/audio/words/it-pron-word-slow.mp3",
+   "say": "it"
   },
   "do-verb": {
    "audio": "assets/audio/words/do-verb-word.mp3",
@@ -250,6 +280,11 @@
    "audio": "assets/audio/words/two-num-word.mp3",
    "audioSlow": "assets/audio/words/two-num-word-slow.mp3",
    "say": "two"
+  },
+  "love-verb": {
+   "audio": "assets/audio/words/love-verb-word.mp3",
+   "audioSlow": "assets/audio/words/love-verb-word-slow.mp3",
+   "say": "love"
   },
   "come-verb": {
    "audio": "assets/audio/words/come-verb-word.mp3",
@@ -341,6 +376,21 @@
    "audioSlow": "assets/audio/words/bracelet-noun-word-slow.mp3",
    "say": "[[bɹˈeɪslət]]"
   },
+  "earring-noun": {
+   "audio": "assets/audio/words/earring-noun-word.mp3",
+   "audioSlow": "assets/audio/words/earring-noun-word-slow.mp3",
+   "say": "earring"
+  },
+  "these-det": {
+   "audio": "assets/audio/words/these-det-word.mp3",
+   "audioSlow": "assets/audio/words/these-det-word-slow.mp3",
+   "say": "these"
+  },
+  "wife-noun": {
+   "audio": "assets/audio/words/wife-noun-word.mp3",
+   "audioSlow": "assets/audio/words/wife-noun-word-slow.mp3",
+   "say": "wife"
+  },
   "west-noun": {
    "audio": "assets/audio/words/west-noun-word.mp3",
    "audioSlow": "assets/audio/words/west-noun-word-slow.mp3",
@@ -411,6 +461,11 @@
    "audioSlow": "assets/audio/words/great-adj-word-slow.mp3",
    "say": "great"
   },
+  "bring-verb": {
+   "audio": "assets/audio/words/bring-verb-word.mp3",
+   "audioSlow": "assets/audio/words/bring-verb-word-slow.mp3",
+   "say": "bring"
+  },
   "menu-noun": {
    "audio": "assets/audio/words/menu-noun-word.mp3",
    "audioSlow": "assets/audio/words/menu-noun-word-slow.mp3",
@@ -435,6 +490,16 @@
    "audio": "assets/audio/words/chicken-noun-word.mp3",
    "audioSlow": "assets/audio/words/chicken-noun-word-slow.mp3",
    "say": "[[tʃˈɪkən]]"
+  },
+  "fish-noun": {
+   "audio": "assets/audio/words/fish-noun-word.mp3",
+   "audioSlow": "assets/audio/words/fish-noun-word-slow.mp3",
+   "say": "fish"
+  },
+  "can-verb": {
+   "audio": "assets/audio/words/can-verb-word.mp3",
+   "audioSlow": "assets/audio/words/can-verb-word-slow.mp3",
+   "say": "can"
   },
   "ready-adj": {
    "audio": "assets/audio/words/ready-adj-word.mp3",
@@ -511,10 +576,25 @@
    "audioSlow": "assets/audio/words/shoe-noun-word-slow.mp3",
    "say": "shoe"
   },
+  "me-pron": {
+   "audio": "assets/audio/words/me-pron-word.mp3",
+   "audioSlow": "assets/audio/words/me-pron-word-slow.mp3",
+   "say": "me"
+  },
+  "or-conj": {
+   "audio": "assets/audio/words/or-conj-word.mp3",
+   "audioSlow": "assets/audio/words/or-conj-word-slow.mp3",
+   "say": "or"
+  },
   "free-adj": {
    "audio": "assets/audio/words/free-adj-word.mp3",
    "audioSlow": "assets/audio/words/free-adj-word-slow.mp3",
    "say": "free"
+  },
+  "bin-noun": {
+   "audio": "assets/audio/words/bin-noun-word.mp3",
+   "audioSlow": "assets/audio/words/bin-noun-word-slow.mp3",
+   "say": "tray"
   },
   "liquid-noun": {
    "audio": "assets/audio/words/liquid-noun-word.mp3",
@@ -590,6 +670,11 @@
    "audio": "assets/audio/words/how-may-i-phrase-word.mp3",
    "audioSlow": "assets/audio/words/how-may-i-phrase-word-slow.mp3",
    "say": "how may I help you"
+  },
+  "boarding-pass-phrase": {
+   "audio": "assets/audio/words/boarding-pass-phrase-word.mp3",
+   "audioSlow": "assets/audio/words/boarding-pass-phrase-word-slow.mp3",
+   "say": "boarding pass"
   },
   "check-in-noun": {
    "audio": "assets/audio/words/check-in-noun-word.mp3",
@@ -791,6 +876,11 @@
    "audioSlow": "assets/audio/words/adjust-verb-word-slow.mp3",
    "say": "adjust"
   },
+  "mirror-noun": {
+   "audio": "assets/audio/words/mirror-noun-word.mp3",
+   "audioSlow": "assets/audio/words/mirror-noun-word-slow.mp3",
+   "say": "mirror"
+  },
   "perfect-adj": {
    "audio": "assets/audio/words/perfect-adj-word.mp3",
    "audioSlow": "assets/audio/words/perfect-adj-word-slow.mp3",
@@ -825,6 +915,11 @@
    "audio": "assets/audio/words/include-verb-word.mp3",
    "audioSlow": "assets/audio/words/include-verb-word-slow.mp3",
    "say": "include"
+  },
+  "total-noun": {
+   "audio": "assets/audio/words/total-noun-word.mp3",
+   "audioSlow": "assets/audio/words/total-noun-word-slow.mp3",
+   "say": "total"
   },
   "budget-noun": {
    "audio": "assets/audio/words/budget-noun-word.mp3",
@@ -875,6 +970,11 @@
    "audio": "assets/audio/words/refund-form-phrase-word.mp3",
    "audioSlow": "assets/audio/words/refund-form-phrase-word-slow.mp3",
    "say": "refund form"
+  },
+  "gift-box-phrase": {
+   "audio": "assets/audio/words/gift-box-phrase-word.mp3",
+   "audioSlow": "assets/audio/words/gift-box-phrase-word-slow.mp3",
+   "say": "gift box"
   },
   "approve-verb": {
    "audio": "assets/audio/words/approve-verb-word.mp3",
@@ -1006,6 +1106,11 @@
    "audioSlow": "assets/audio/words/roughly-adv-word-slow.mp3",
    "say": "roughly"
   },
+  "landmark-noun": {
+   "audio": "assets/audio/words/landmark-noun-word.mp3",
+   "audioSlow": "assets/audio/words/landmark-noun-word-slow.mp3",
+   "say": "landmark"
+  },
   "wallet-noun": {
    "audio": "assets/audio/words/wallet-noun-word.mp3",
    "audioSlow": "assets/audio/words/wallet-noun-word-slow.mp3",
@@ -1081,6 +1186,11 @@
    "audioSlow": "assets/audio/words/issue-noun-word-slow.mp3",
    "say": "issue"
   },
+  "refill-noun": {
+   "audio": "assets/audio/words/refill-noun-word.mp3",
+   "audioSlow": "assets/audio/words/refill-noun-word-slow.mp3",
+   "say": "refill"
+  },
   "delicious-adj": {
    "audio": "assets/audio/words/delicious-adj-word.mp3",
    "audioSlow": "assets/audio/words/delicious-adj-word-slow.mp3",
@@ -1115,6 +1225,11 @@
    "audio": "assets/audio/words/anything-else-phrase-word.mp3",
    "audioSlow": "assets/audio/words/anything-else-phrase-word-slow.mp3",
    "say": "anything else"
+  },
+  "bill-noun": {
+   "audio": "assets/audio/words/bill-noun-word.mp3",
+   "audioSlow": "assets/audio/words/bill-noun-word-slow.mp3",
+   "say": "bill"
   },
   "check-noun": {
    "audio": "assets/audio/words/check-noun-word.mp3",
@@ -1191,6 +1306,11 @@
    "audioSlow": "assets/audio/words/message-noun-word-slow.mp3",
    "say": "message"
   },
+  "callback-noun": {
+   "audio": "assets/audio/words/callback-noun-word.mp3",
+   "audioSlow": "assets/audio/words/callback-noun-word-slow.mp3",
+   "say": "callback"
+  },
   "available-adj": {
    "audio": "assets/audio/words/available-adj-word.mp3",
    "audioSlow": "assets/audio/words/available-adj-word-slow.mp3",
@@ -1246,10 +1366,20 @@
    "audioSlow": "assets/audio/words/guarantee-noun-word-slow.mp3",
    "say": "guarantee"
   },
+  "return-noun": {
+   "audio": "assets/audio/words/return-noun-word.mp3",
+   "audioSlow": "assets/audio/words/return-noun-word-slow.mp3",
+   "say": "[[ɹɪtˈɜn]]"
+  },
   "exchange-noun": {
    "audio": "assets/audio/words/exchange-noun-word.mp3",
    "audioSlow": "assets/audio/words/exchange-noun-word-slow.mp3",
    "say": "exchange"
+  },
+  "scratch-noun": {
+   "audio": "assets/audio/words/scratch-noun-word.mp3",
+   "audioSlow": "assets/audio/words/scratch-noun-word-slow.mp3",
+   "say": "scratch"
   },
   "avoid-verb": {
    "audio": "assets/audio/words/avoid-verb-word.mp3",
@@ -1271,6 +1401,11 @@
    "audioSlow": "assets/audio/words/policy-noun-word-slow.mp3",
    "say": "policy"
   },
+  "within-prep": {
+   "audio": "assets/audio/words/within-prep-word.mp3",
+   "audioSlow": "assets/audio/words/within-prep-word-slow.mp3",
+   "say": "within"
+  },
   "clean-verb": {
    "audio": "assets/audio/words/clean-verb-word.mp3",
    "audioSlow": "assets/audio/words/clean-verb-word-slow.mp3",
@@ -1286,6 +1421,11 @@
    "audioSlow": "assets/audio/words/also-adv-word-slow.mp3",
    "say": "also"
   },
+  "engraving-noun": {
+   "audio": "assets/audio/words/engraving-noun-word.mp3",
+   "audioSlow": "assets/audio/words/engraving-noun-word-slow.mp3",
+   "say": "engraving"
+  },
   "set-noun": {
    "audio": "assets/audio/words/set-noun-word.mp3",
    "audioSlow": "assets/audio/words/set-noun-word-slow.mp3",
@@ -1300,6 +1440,11 @@
    "audio": "assets/audio/words/air-conditioning-phrase-word.mp3",
    "audioSlow": "assets/audio/words/air-conditioning-phrase-word-slow.mp3",
    "say": "air conditioning"
+  },
+  "towel-noun": {
+   "audio": "assets/audio/words/towel-noun-word.mp3",
+   "audioSlow": "assets/audio/words/towel-noun-word-slow.mp3",
+   "say": "towel"
   },
   "quiet-adj": {
    "audio": "assets/audio/words/quiet-adj-word.mp3",
@@ -1441,6 +1586,11 @@
    "audioSlow": "assets/audio/words/lease-noun-word-slow.mp3",
    "say": "lease"
   },
+  "landlord-noun": {
+   "audio": "assets/audio/words/landlord-noun-word.mp3",
+   "audioSlow": "assets/audio/words/landlord-noun-word-slow.mp3",
+   "say": "landlord"
+  },
   "tenant-noun": {
    "audio": "assets/audio/words/tenant-noun-word.mp3",
    "audioSlow": "assets/audio/words/tenant-noun-word-slow.mp3",
@@ -1481,6 +1631,16 @@
    "audioSlow": "assets/audio/words/postcard-noun-word-slow.mp3",
    "say": "postcard"
   },
+  "shirt-noun": {
+   "audio": "assets/audio/words/shirt-noun-word.mp3",
+   "audioSlow": "assets/audio/words/shirt-noun-word-slow.mp3",
+   "say": "shirt"
+  },
+  "stock-noun": {
+   "audio": "assets/audio/words/stock-noun-word.mp3",
+   "audioSlow": "assets/audio/words/stock-noun-word-slow.mp3",
+   "say": "stock"
+  },
   "reserve-verb": {
    "audio": "assets/audio/words/reserve-verb-word.mp3",
    "audioSlow": "assets/audio/words/reserve-verb-word-slow.mp3",
@@ -1490,6 +1650,11 @@
    "audio": "assets/audio/words/collect-verb-word.mp3",
    "audioSlow": "assets/audio/words/collect-verb-word-slow.mp3",
    "say": "collect"
+  },
+  "opening-hours-phrase": {
+   "audio": "assets/audio/words/opening-hours-phrase-word.mp3",
+   "audioSlow": "assets/audio/words/opening-hours-phrase-word-slow.mp3",
+   "say": "opening hours"
   },
   "location-noun": {
    "audio": "assets/audio/words/location-noun-word.mp3",
@@ -1631,6 +1796,11 @@
    "audioSlow": "assets/audio/words/weekend-noun-word-slow.mp3",
    "say": "weekend"
   },
+  "weather-noun": {
+   "audio": "assets/audio/words/weather-noun-word.mp3",
+   "audioSlow": "assets/audio/words/weather-noun-word-slow.mp3",
+   "say": "weather"
+  },
   "commute-noun": {
    "audio": "assets/audio/words/commute-noun-word.mp3",
    "audioSlow": "assets/audio/words/commute-noun-word-slow.mp3",
@@ -1661,6 +1831,11 @@
    "audioSlow": "assets/audio/words/outdoor-adj-word-slow.mp3",
    "say": "outdoor"
   },
+  "cancel-verb": {
+   "audio": "assets/audio/words/cancel-verb-word.mp3",
+   "audioSlow": "assets/audio/words/cancel-verb-word-slow.mp3",
+   "say": "cancel"
+  },
   "change-verb": {
    "audio": "assets/audio/words/change-verb-word.mp3",
    "audioSlow": "assets/audio/words/change-verb-word-slow.mp3",
@@ -1670,6 +1845,11 @@
    "audio": "assets/audio/words/table-for-phrase-word.mp3",
    "audioSlow": "assets/audio/words/table-for-phrase-word-slow.mp3",
    "say": "table for"
+  },
+  "party-of-phrase": {
+   "audio": "assets/audio/words/party-of-phrase-word.mp3",
+   "audioSlow": "assets/audio/words/party-of-phrase-word-slow.mp3",
+   "say": "party of"
   },
   "under-the-name-phrase": {
    "audio": "assets/audio/words/under-the-name-phrase-word.mp3",
@@ -1695,6 +1875,11 @@
    "audio": "assets/audio/words/reference-noun-word.mp3",
    "audioSlow": "assets/audio/words/reference-noun-word-slow.mp3",
    "say": "reference"
+  },
+  "look-into-phrase": {
+   "audio": "assets/audio/words/look-into-phrase-word.mp3",
+   "audioSlow": "assets/audio/words/look-into-phrase-word-slow.mp3",
+   "say": "look into"
   },
   "escalate-verb": {
    "audio": "assets/audio/words/escalate-verb-word.mp3",
@@ -1731,6 +1916,11 @@
    "audioSlow": "assets/audio/words/update-you-phrase-word-slow.mp3",
    "say": "update you"
   },
+  "sincere-adj": {
+   "audio": "assets/audio/words/sincere-adj-word.mp3",
+   "audioSlow": "assets/audio/words/sincere-adj-word-slow.mp3",
+   "say": "sincere"
+  },
   "apology-noun": {
    "audio": "assets/audio/words/apology-noun-word.mp3",
    "audioSlow": "assets/audio/words/apology-noun-word-slow.mp3",
@@ -1746,6 +1936,16 @@
    "audioSlow": "assets/audio/words/work-verb-word-slow.mp3",
    "say": "work"
   },
+  "phone-noun": {
+   "audio": "assets/audio/words/phone-noun-word.mp3",
+   "audioSlow": "assets/audio/words/phone-noun-word-slow.mp3",
+   "say": "phone"
+  },
+  "number-noun": {
+   "audio": "assets/audio/words/number-noun-word.mp3",
+   "audioSlow": "assets/audio/words/number-noun-word-slow.mp3",
+   "say": "number"
+  },
   "email-noun": {
    "audio": "assets/audio/words/email-noun-word.mp3",
    "audioSlow": "assets/audio/words/email-noun-word-slow.mp3",
@@ -1755,6 +1955,11 @@
    "audio": "assets/audio/words/spell-verb-word.mp3",
    "audioSlow": "assets/audio/words/spell-verb-word-slow.mp3",
    "say": "spell"
+  },
+  "salesperson-noun": {
+   "audio": "assets/audio/words/salesperson-noun-word.mp3",
+   "audioSlow": "assets/audio/words/salesperson-noun-word-slow.mp3",
+   "say": "salesperson"
   },
   "tourist-noun": {
    "audio": "assets/audio/words/tourist-noun-word.mp3",
@@ -1791,6 +1996,11 @@
    "audioSlow": "assets/audio/words/break-noun-word-slow.mp3",
    "say": "break"
   },
+  "open-verb": {
+   "audio": "assets/audio/words/open-verb-word.mp3",
+   "audioSlow": "assets/audio/words/open-verb-word-slow.mp3",
+   "say": "open"
+  },
   "shift-noun": {
    "audio": "assets/audio/words/shift-noun-word.mp3",
    "audioSlow": "assets/audio/words/shift-noun-word-slow.mp3",
@@ -1815,6 +2025,11 @@
    "audio": "assets/audio/words/before-prep-word.mp3",
    "audioSlow": "assets/audio/words/before-prep-word-slow.mp3",
    "say": "before"
+  },
+  "after-prep": {
+   "audio": "assets/audio/words/after-prep-word.mp3",
+   "audioSlow": "assets/audio/words/after-prep-word-slow.mp3",
+   "say": "after"
   },
   "plan-noun": {
    "audio": "assets/audio/words/plan-noun-word.mp3",
@@ -1846,15 +2061,30 @@
    "audioSlow": "assets/audio/words/enough-adv-word-slow.mp3",
    "say": "enough"
   },
+  "mobile-contract-noun": {
+   "audio": "assets/audio/words/mobile-contract-noun-word.mp3",
+   "audioSlow": "assets/audio/words/mobile-contract-noun-word-slow.mp3",
+   "say": "mobile contract"
+  },
   "parcel-noun": {
    "audio": "assets/audio/words/parcel-noun-word.mp3",
    "audioSlow": "assets/audio/words/parcel-noun-word-slow.mp3",
    "say": "parcel"
   },
+  "tracking-noun": {
+   "audio": "assets/audio/words/tracking-noun-word.mp3",
+   "audioSlow": "assets/audio/words/tracking-noun-word-slow.mp3",
+   "say": "tracking"
+  },
   "postage-stamp-noun": {
    "audio": "assets/audio/words/postage-stamp-noun-word.mp3",
    "audioSlow": "assets/audio/words/postage-stamp-noun-word-slow.mp3",
    "say": "postage stamp"
+  },
+  "airmail-noun": {
+   "audio": "assets/audio/words/airmail-noun-word.mp3",
+   "audioSlow": "assets/audio/words/airmail-noun-word-slow.mp3",
+   "say": "airmail"
   },
   "follow-up-visit-noun": {
    "audio": "assets/audio/words/follow-up-visit-noun-word.mp3",
@@ -1941,6 +2171,11 @@
    "audioSlow": "assets/audio/words/looking-for-phrase-word-slow.mp3",
    "say": "looking for"
   },
+  "delayed-adj": {
+   "audio": "assets/audio/words/delayed-adj-word.mp3",
+   "audioSlow": "assets/audio/words/delayed-adj-word-slow.mp3",
+   "say": "delayed"
+  },
   "connection-noun": {
    "audio": "assets/audio/words/connection-noun-word.mp3",
    "audioSlow": "assets/audio/words/connection-noun-word-slow.mp3",
@@ -1965,6 +2200,16 @@
    "audio": "assets/audio/words/priority-noun-word.mp3",
    "audioSlow": "assets/audio/words/priority-noun-word-slow.mp3",
    "say": "priority"
+  },
+  "standby-noun": {
+   "audio": "assets/audio/words/standby-noun-word.mp3",
+   "audioSlow": "assets/audio/words/standby-noun-word-slow.mp3",
+   "say": "standby"
+  },
+  "gate-change-phrase": {
+   "audio": "assets/audio/words/gate-change-phrase-word.mp3",
+   "audioSlow": "assets/audio/words/gate-change-phrase-word-slow.mp3",
+   "say": "gate change"
   },
   "announcement-noun": {
    "audio": "assets/audio/words/announcement-noun-word.mp3",
@@ -2000,6 +2245,11 @@
    "audio": "assets/audio/words/twice-a-day-phrase-word.mp3",
    "audioSlow": "assets/audio/words/twice-a-day-phrase-word-slow.mp3",
    "say": "twice a day"
+  },
+  "after-meals-phrase": {
+   "audio": "assets/audio/words/after-meals-phrase-word.mp3",
+   "audioSlow": "assets/audio/words/after-meals-phrase-word-slow.mp3",
+   "say": "after meals"
   },
   "delivery-noun": {
    "audio": "assets/audio/words/delivery-noun-word.mp3",
@@ -2066,6 +2316,11 @@
    "audioSlow": "assets/audio/words/side-noun-word-slow.mp3",
    "say": "side"
   },
+  "wash-verb": {
+   "audio": "assets/audio/words/wash-verb-word.mp3",
+   "audioSlow": "assets/audio/words/wash-verb-word-slow.mp3",
+   "say": "wash"
+  },
   "on-track-phrase": {
    "audio": "assets/audio/words/on-track-phrase-word.mp3",
    "audioSlow": "assets/audio/words/on-track-phrase-word-slow.mp3",
@@ -2091,10 +2346,20 @@
    "audioSlow": "assets/audio/words/question-noun-word-slow.mp3",
    "say": "question"
   },
+  "meeting-noun": {
+   "audio": "assets/audio/words/meeting-noun-word.mp3",
+   "audioSlow": "assets/audio/words/meeting-noun-word-slow.mp3",
+   "say": "meeting"
+  },
   "sketch-noun": {
    "audio": "assets/audio/words/sketch-noun-word.mp3",
    "audioSlow": "assets/audio/words/sketch-noun-word-slow.mp3",
    "say": "sketch"
+  },
+  "week-noun": {
+   "audio": "assets/audio/words/week-noun-word.mp3",
+   "audioSlow": "assets/audio/words/week-noun-word-slow.mp3",
+   "say": "week"
   },
   "latte-noun": {
    "audio": "assets/audio/words/latte-noun-word.mp3",
@@ -2116,10 +2381,25 @@
    "audioSlow": "assets/audio/words/to-go-phrase-word-slow.mp3",
    "say": "to go"
   },
+  "cup-noun": {
+   "audio": "assets/audio/words/cup-noun-word.mp3",
+   "audioSlow": "assets/audio/words/cup-noun-word-slow.mp3",
+   "say": "cup"
+  },
   "single-journey-phrase": {
    "audio": "assets/audio/words/single-journey-phrase-word.mp3",
    "audioSlow": "assets/audio/words/single-journey-phrase-word-slow.mp3",
    "say": "single journey"
+  },
+  "leak-noun": {
+   "audio": "assets/audio/words/leak-noun-word.mp3",
+   "audioSlow": "assets/audio/words/leak-noun-word-slow.mp3",
+   "say": "leak"
+  },
+  "access-noun": {
+   "audio": "assets/audio/words/access-noun-word.mp3",
+   "audioSlow": "assets/audio/words/access-noun-word-slow.mp3",
+   "say": "access"
   },
   "flat-noun": {
    "audio": "assets/audio/words/flat-noun-word.mp3",
@@ -2135,6 +2415,11 @@
    "audio": "assets/audio/words/early-check-in-phrase-word.mp3",
    "audioSlow": "assets/audio/words/early-check-in-phrase-word-slow.mp3",
    "say": "early check in"
+  },
+  "non-smoking-phrase": {
+   "audio": "assets/audio/words/non-smoking-phrase-word.mp3",
+   "audioSlow": "assets/audio/words/non-smoking-phrase-word-slow.mp3",
+   "say": "non-smoking"
   },
   "machine-noun": {
    "audio": "assets/audio/words/machine-noun-word.mp3",
@@ -2271,10 +2556,20 @@
    "audioSlow": "assets/audio/words/insurance-card-noun-word-slow.mp3",
    "say": "insurance card"
   },
+  "payslip-noun": {
+   "audio": "assets/audio/words/payslip-noun-word.mp3",
+   "audioSlow": "assets/audio/words/payslip-noun-word-slow.mp3",
+   "say": "payslip"
+  },
   "payroll-noun": {
    "audio": "assets/audio/words/payroll-noun-word.mp3",
    "audioSlow": "assets/audio/words/payroll-noun-word-slow.mp3",
    "say": "payroll"
+  },
+  "mpf-phrase": {
+   "audio": "assets/audio/words/mpf-phrase-word.mp3",
+   "audioSlow": "assets/audio/words/mpf-phrase-word-slow.mp3",
+   "say": "MPF"
   },
   "shuttle-noun": {
    "audio": "assets/audio/words/shuttle-noun-word.mp3",
@@ -2296,6 +2591,11 @@
    "audioSlow": "assets/audio/words/x-ray-noun-word-slow.mp3",
    "say": "x-ray"
   },
+  "filling-noun": {
+   "audio": "assets/audio/words/filling-noun-word.mp3",
+   "audioSlow": "assets/audio/words/filling-noun-word-slow.mp3",
+   "say": "filling"
+  },
   "anaesthetic-noun": {
    "audio": "assets/audio/words/anaesthetic-noun-word.mp3",
    "audioSlow": "assets/audio/words/anaesthetic-noun-word-slow.mp3",
@@ -2315,6 +2615,11 @@
    "audio": "assets/audio/words/licence-noun-word.mp3",
    "audioSlow": "assets/audio/words/licence-noun-word-slow.mp3",
    "say": "licence"
+  },
+  "cake-noun": {
+   "audio": "assets/audio/words/cake-noun-word.mp3",
+   "audioSlow": "assets/audio/words/cake-noun-word-slow.mp3",
+   "say": "cake"
   },
   "soft-drink-noun": {
    "audio": "assets/audio/words/soft-drink-noun-word.mp3",
@@ -2410,6 +2715,11 @@
    "audio": "assets/audio/words/rush-noun-word.mp3",
    "audioSlow": "assets/audio/words/rush-noun-word-slow.mp3",
    "say": "rush"
+  },
+  "lettering-noun": {
+   "audio": "assets/audio/words/lettering-noun-word.mp3",
+   "audioSlow": "assets/audio/words/lettering-noun-word-slow.mp3",
+   "say": "lettering"
   },
   "proof-noun": {
    "audio": "assets/audio/words/proof-noun-word.mp3",

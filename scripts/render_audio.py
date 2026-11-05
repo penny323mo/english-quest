@@ -72,12 +72,14 @@ def word_say(item: dict, allowed: dict) -> str:
     return item["lemma"]
 
 
-def word_clips() -> dict:
+def word_clips(include_skipped: bool = False) -> dict:
     """content/word-audio.json: one word-only clip per visible card, except those
-    in content/word-audio-skip.json (no take passed scripts/pick_word_takes.py)."""
+    in content/word-audio-skip.json (no take passed scripts/pick_word_takes.py).
+    include_skipped also lists those: their last take stays on disk for the ear
+    check in review/word-audio-ear-check.md, but the app never plays it."""
     lex = json.loads(LEX.read_text(encoding="utf-8"))
     allowed = json.loads(OVERRIDES.read_text(encoding="utf-8"))
-    skip = set(json.loads(SKIP.read_text(encoding="utf-8"))["ids"]) if SKIP.exists() else set()
+    skip = set() if include_skipped else (set(json.loads(SKIP.read_text(encoding="utf-8"))["ids"]) if SKIP.exists() else set())
     items = {}
     for item in lex["items"]:
         if item.get("hidden") or item["id"] in skip:
@@ -116,7 +118,7 @@ def clips() -> list[dict]:
                 add(f"assets/audio/words/{item['id']}-md{index}.mp3", render_text(turn), None)
     for line in lines:
         add(line["audio"], line["say"], None)
-    for row in word_clips()["items"].values():
+    for row in word_clips(include_skipped=True)["items"].values():
         add(row["audio"], row["say"], None)
     return out
 

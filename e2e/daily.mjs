@@ -123,6 +123,32 @@ async function drawnIds(page) {
   });
 }
 
+/**
+ * Which face is actually painted: hit-test the card centre and the centre of the
+ * face's own text. WebKit once painted the back (mirrored) over the front.
+ */
+async function paintedFace(page, want) {
+  return page.evaluate((want) => {
+    const card = document.querySelector(".draw-card");
+    const target = document.querySelector(want === "front" ? ".draw-face.front .draw-word" : ".draw-face.back .draw-example");
+    if (!card || !target) return { ok: false, why: "missing card or text" };
+    const centre = (el) => {
+      const r = el.getBoundingClientRect();
+      return [r.left + r.width / 2, r.top + r.height / 2];
+    };
+    const atCard = document.elementFromPoint(...centre(card));
+    const atText = document.elementFromPoint(...centre(target));
+    const faceOf = (el) => (el?.closest(".draw-face.front") ? "front" : el?.closest(".draw-face.back") ? "back" : "none");
+    const textHit = Boolean(atText && (atText === target || target.contains(atText)));
+    return {
+      ok: faceOf(atCard) === want && textHit,
+      cardCentre: faceOf(atCard),
+      textHit,
+      hit: atText ? `${atText.tagName.toLowerCase()}.${atText.className}: ${(atText.textContent || "").trim().slice(0, 30)}` : null,
+    };
+  }, want);
+}
+
 async function lastPlay(page, since) {
   await page.waitForFunction((n) => window.__plays.length > n && window.__plays.at(-1).ok !== null, since, { timeout: 10000 }).catch(() => undefined);
   return page.evaluate(() => window.__plays.at(-1) || null);
@@ -201,15 +227,21 @@ async function runBrowser(browserType, browserName) {
       const word = await lastPlay(page, before);
       check(`${tag} card ${i + 1} 🔊 plays the word clip`, Boolean(word && word.src.endsWith(`/audio/words/${id}-word.mp3`) && word.ok === true), JSON.stringify(word));
 
+      const front = await paintedFace(page, "front");
+      check(`${tag} card ${i + 1} front is painted (word hit at the card centre)`, front.ok, JSON.stringify(front));
       if (i === 0) await page.screenshot({ path: path.join(shots, `daily-${tag}-4-front.png`) });
       await page.getByRole("button", { name: "提示" }).click();
       const hint = await page.locator(".draw-hint").innerText();
       check(`${tag} card ${i + 1} 提示 shows the Cantonese gloss`, hint === item.glossYue && /[一-鿿]/.test(hint), hint);
+      const withHint = await paintedFace(page, "front");
+      check(`${tag} card ${i + 1} front is still painted with the hint open`, withHint.ok, JSON.stringify(withHint));
       if (i === 0) await page.screenshot({ path: path.join(shots, `daily-${tag}-5-hint.png`) });
 
       await card.click({ position: { x: 40, y: 40 } });
       await page.waitForTimeout(350);
       check(`${tag} card ${i + 1} flips on tap`, (await card.getAttribute("class")).includes("flipped"));
+      const backFace = await paintedFace(page, "back");
+      check(`${tag} card ${i + 1} back is painted after the flip`, backFace.ok, JSON.stringify(backFace));
       const example = await page.locator(".draw-face.back .draw-example").innerText();
       check(`${tag} card ${i + 1} back shows the checked example`, example === item.example.replace(/\{\{learner(-spell)?\}\}/g, "Penny"), example);
       check(`${tag} card ${i + 1} back shows the Cantonese gloss`, (await page.locator(".draw-face.back .draw-gloss").innerText()).length > 0);
