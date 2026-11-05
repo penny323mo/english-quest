@@ -204,6 +204,10 @@ async function storeDraw(page, daily, xp) {
       }),
     { daily, xp },
   );
+  // Reload on the path before opening 每日抽卡: the running app still holds the old
+  // state, and opening the draw first would draw and save a fresh one over this record.
+  await page.reload({ waitUntil: "domcontentloaded" });
+  await page.getByRole("heading", { name: "學習路徑" }).waitFor();
 }
 
 const validDraw = (ids) => ids.length === 3 && new Set(ids).size === 3 && ids.every((id) => lexById[id] && id !== "jewelry-noun" && id !== "elevator-noun");
@@ -216,8 +220,7 @@ async function brokenDraws(browser, browserName, tag) {
   const done = await newPage(browser, browserName);
   await onboard(done.page);
   await storeDraw(done.page, { date: today, ids: ["gold-noun", "gold-noun", "no-such-card"], done: true, history: [] }, 10);
-  await done.page.goto(`${origin}#/daily`);
-  await done.page.reload();
+  await done.page.evaluate(() => { location.hash = "#/daily"; });
   await done.page.locator(".draw-done").waitFor();
   check(`${tag} broken finished draw shows three cards`, (await done.page.locator(".draw-dot").count()) === 3);
   check(`${tag} broken finished draw stays finished`, (await done.page.locator(".draw-done").innerText()).includes("今日抽卡已完成"));
@@ -231,8 +234,7 @@ async function brokenDraws(browser, browserName, tag) {
   const open = await newPage(browser, browserName);
   await onboard(open.page);
   await storeDraw(open.page, { date: today, ids: ["jewelry-noun", "ring-noun"], done: false, history: [] }, 0);
-  await open.page.goto(`${origin}#/daily`);
-  await open.page.reload();
+  await open.page.evaluate(() => { location.hash = "#/daily"; });
   const skip = open.page.getByRole("button", { name: "跳過動畫" });
   if (await skip.count()) await skip.click();
   await open.page.locator(".draw-card").waitFor();
