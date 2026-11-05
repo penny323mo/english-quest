@@ -1,7 +1,14 @@
 name: pages
 
+# Deploy only a commit that passed CI (review finding 6). workflow_run fires when
+# the ci workflow finishes; the job runs only for a successful ci run started by a
+# push to main in this repository, never for a pull request run. The checkout is
+# pinned to the exact commit that ci tested: a default checkout of main could build
+# a newer commit that ci has not passed yet.
 on:
-  push:
+  workflow_run:
+    workflows: [ci]
+    types: [completed]
     branches: [main]
 
 permissions:
@@ -15,22 +22,52 @@ concurrency:
 
 jobs:
   deploy:
+    if: >-
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.event == 'push' &&
+      github.event.workflow_run.head_branch == 'main' &&
+      github.event.workflow_run.head_repository.full_name == github.repository
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    env:
+      TESTED_SHA: ${{ github.event.workflow_run.head_sha }}
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_sha }}
+          fetch-depth: 0
+      - name: Build exactly the commit ci passed
+        run: test "$(git rev-parse HEAD)" = "$TESTED_SHA"
+      # An older commit's ci can finish after a newer push. Deploying it then would
+      # roll the site back, so only the commit still at the tip of main deploys.
+      - name: Skip if main has moved on
+        id: tip
+        run: |
+          git fetch --quiet origin main
+          if [ "$(git rev-parse origin/main)" = "$TESTED_SHA" ]; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "main is now at $(git rev-parse origin/main); its own ci run deploys it."
+            echo "deploy=false" >> "$GITHUB_OUTPUT"
+          fi
+      - if: steps.tip.outputs.deploy == 'true'
+        uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: npm
-      - run: npm ci
-      - run: npm run build
-      - name: Check the artifact is built from this commit
+      - if: steps.tip.outputs.deploy == 'true'
+        run: npm ci
+      - if: steps.tip.outputs.deploy == 'true'
+        run: npm run build
+      - if: steps.tip.outputs.deploy == 'true'
+        name: Check the artifact is built from this commit
         run: node scripts/verify-build.mjs
-      - uses: actions/upload-pages-artifact@v3
+      - if: steps.tip.outputs.deploy == 'true'
+        uses: actions/upload-pages-artifact@v3
         with:
           path: dist
-      - id: deployment
+      - if: steps.tip.outputs.deploy == 'true'
+        id: deployment
         uses: actions/deploy-pages@v4
