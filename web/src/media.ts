@@ -1,4 +1,4 @@
-import { audioElement, audioSnapshot, replaceAudioElement, speechActive, stopAudio, subscribeAudio } from "./audio-element";
+import { audioElement, audioSnapshot, cancelSpeech, replaceAudioElement, speechActive, stopAudio, subscribeAudio } from "./audio-element";
 import { asset, lessons, lexicon } from "./data";
 import { fillLearner, needsRuntimeSpeech } from "./learner";
 import { useStore } from "./store";
@@ -54,8 +54,18 @@ export function playAsset(path: string): HTMLAudioElement {
     node.removeAttribute("src");
     return node;
   }
+  return playUrl(asset(path));
+}
+
+/**
+ * Play one clip, a file or the learner's own recording, on the shared element.
+ * Only one sound plays at a time (review finding 7): a spoken line is cancelled and
+ * the previous clip released first.
+ */
+export function playUrl(url: string): HTMLAudioElement {
+  cancelSpeech();
   const next = replaceAudioElement();
-  next.src = asset(path);
+  next.src = url;
   next.playbackRate = 1;
   void next.play().catch(() => {
     /* Autoplay can still reject if the gesture was lost. The button stays. */

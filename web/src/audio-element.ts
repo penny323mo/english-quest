@@ -57,14 +57,18 @@ export function speechActive(): boolean {
   return Boolean(el && !el.paused && !el.ended);
 }
 
-export function stopAudio() {
-  if (typeof speechSynthesis !== "undefined") {
-    try {
-      speechSynthesis.cancel();
-    } catch {
-      /* speechSynthesis is missing in some WebKit builds. */
-    }
+/** Stop any spoken line (runtime speech for lines with the learner's name). */
+export function cancelSpeech() {
+  if (typeof speechSynthesis === "undefined") return;
+  try {
+    speechSynthesis.cancel();
+  } catch {
+    /* speechSynthesis is missing in some WebKit builds. */
   }
+}
+
+export function stopAudio() {
+  cancelSpeech();
   if (!el) return;
   try {
     el.pause();
