@@ -10,7 +10,8 @@ import { QUIZ_BEAT, quizResumePoint } from "../web/src/resume.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const html = fs.readFileSync(path.join(root, "web/index.html"), "utf8");
-const killScript = html.match(/<script>\s*([\s\S]*?eq-sw-kill[\s\S]*?)<\/script>/)[1];
+const killScript = html.match(/<script>\s*([\s\S]*?eq-sw-kill[\s\S]*?)<\/script>/)[1].replaceAll("%BASE_URL%", "/english-quest/");
+const APP = "https://penny323mo.github.io/english-quest/";
 
 /**
  * Run the inline kill-switch with a fake service worker that answers the ping
@@ -19,7 +20,7 @@ const killScript = html.match(/<script>\s*([\s\S]*?eq-sw-kill[\s\S]*?)<\/script>
 async function runKillSwitch({ replyAfter }) {
   const timers = [];
   let now = 0;
-  const calls = { unregister: 0, cachesDeleted: 0, reloads: 0, pings: 0 };
+  const calls = { unregister: 0, cachesDeleted: 0, reloads: 0, pings: 0, otherUnregister: 0, otherDeleted: 0 };
   const session = new Map();
   const controller = {
     postMessage(message, ports) {
@@ -41,11 +42,19 @@ async function runKillSwitch({ replyAfter }) {
       serviceWorker: {
         controller,
         addEventListener() {},
-        getRegistrations: async () => [{ unregister: async () => { calls.unregister += 1; } }],
+        // github.io is shared: another project's worker and cache must survive.
+        getRegistrations: async () => [
+          { scope: APP, unregister: async () => { calls.unregister += 1; } },
+          { scope: "https://penny323mo.github.io/other-app/", unregister: async () => { calls.otherUnregister += 1; } },
+        ],
       },
     },
-    caches: { keys: async () => ["a", "b"], delete: async () => { calls.cachesDeleted += 1; } },
-    location: { reload() { calls.reloads += 1; } },
+    caches: {
+      keys: async () => ["eq-shell-v1", `workbox-precache-v2-${APP}`, "other-app-v1"],
+      delete: async (name) => { if (name === "other-app-v1") calls.otherDeleted += 1; else calls.cachesDeleted += 1; },
+    },
+    location: { href: `${APP}#/`, reload() { calls.reloads += 1; } },
+    URL,
     sessionStorage: { getItem: (k) => session.get(k) ?? null, setItem: (k, v) => session.set(k, v) },
     MessageChannel,
     setTimeout: (fn, ms) => { const t = { at: now + ms, fn }; timers.push(t); return t; },
@@ -85,6 +94,8 @@ test("a worker that never answers is still replaced", async () => {
   assert.equal(dead.unregister, 1);
   assert.equal(dead.cachesDeleted, 2);
   assert.equal(dead.reloads, 1);
+  assert.equal(dead.otherUnregister, 0, "another app's worker is kept");
+  assert.equal(dead.otherDeleted, 0, "another app's cache is kept");
 });
 
 test("the precache purge drops stale revisions of current files (P1-4)", () => {
