@@ -10,6 +10,7 @@ import {
   getRecognizer,
   keywordHits,
   playAsset,
+  playUrl,
   recorderMime,
   stopAudio,
   subscribeAudio,
@@ -1022,7 +1023,7 @@ function SpeakBox({
           }}>再錄一次</button>
         )}
         {userUrl && (
-          <button className="btn quiet" type="button" onClick={() => void new Audio(userUrl).play()}>聽我</button>
+          <button className="btn quiet" type="button" onClick={() => playUrl(userUrl)}>聽我</button>
         )}
         <button className="btn quiet" type="button" onClick={() => playAsset(modelAudio)}>聽模範</button>
         <button className="btn ghost" type="button" onClick={() => playAsset(modelSlow)}>慢速模範</button>
