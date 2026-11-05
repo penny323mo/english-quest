@@ -18,11 +18,11 @@ const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), 
 const lexById = Object.fromEntries(lex.items.map((item) => [item.id, item]));
 const wordClips = JSON.parse(fs.readFileSync(path.join(root, "content/word-audio.json"), "utf8")).items;
 
-/** A day whose draw, for a fresh profile with the default goal, includes a card with no checked word clip. */
+/** A day whose draw, for a fresh 打好基礎 profile, includes a card with no checked word clip. */
 function dayWithUncheckedCard() {
   const shipped = JSON.parse(fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8").match(/export const SHIPPED = (\[[^\]]*\])/)[1]);
   const lemmasOf = (id) => JSON.parse(fs.readFileSync(path.join(root, `content/lessons/${id.toLowerCase()}.json`), "utf8")).lemmas;
-  const preferred = shipped.filter((id) => lessonOpen(id, "jewellery", {}, shipped)).flatMap(lemmasOf);
+  const preferred = shipped.filter((id) => lessonOpen(id, "foundation", {}, shipped)).flatMap(lemmasOf);
   const pool = lex.items.filter((item) => !item.hidden).map((item) => item.id);
   for (let i = 0; i < 60; i += 1) {
     const when = new Date(DAY.getTime() + i * 24 * 60 * 60 * 1000);
@@ -126,7 +126,11 @@ async function onboard(page) {
   await page.goto(origin, { waitUntil: "domcontentloaded" });
   await page.getByRole("heading", { name: "情景英文" }).waitFor();
   await page.getByLabel("點稱呼你？").fill("Penny");
-  for (let i = 0; i < 3; i += 1) await page.getByRole("button", { name: "下一步" }).click();
+  await page.getByRole("button", { name: "下一步" }).click();
+  // No goal is preselected: pick one before the next step.
+  await page.getByRole("radio", { name: /打好基礎/ }).click();
+  await page.getByRole("button", { name: "下一步" }).click();
+  await page.getByRole("button", { name: "下一步" }).click();
   await page.getByRole("button", { name: "開始" }).click();
   await page.getByRole("heading", { name: "學習路徑" }).waitFor();
 }

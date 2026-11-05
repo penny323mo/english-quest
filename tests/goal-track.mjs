@@ -1,6 +1,7 @@
-// The onboarding goal picks 今日 and opens its track: jewellery J1, J2…, travel T1…,
-// restaurant R1…. Foundation (and a finished track) falls back to the shipped order.
-// Nothing that used to be open closes, and switching goals never closes earned lessons.
+// The onboarding goal picks 今日 and opens its track: basics F1–F6, daily life D4…,
+// travel T1…, restaurant R1…, work W1…, jewellery J1, J2…. A finished track falls back
+// to the shipped order. Nothing that used to be open closes, and switching goals never
+// closes earned lessons.
 import assert from "node:assert/strict";
 import fs from "node:fs";
 import path from "node:path";
@@ -12,8 +13,9 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const data = fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8");
 const SHIPPED = JSON.parse(data.match(/export const SHIPPED = (\[[^\]]*\])/)[1]);
 const HIDDEN = ["T20", "J23", "R17", "W14", "W15", "J24"];
-const GOALS = ["foundation", "jewellery", "travel", "restaurant"];
-const FIRST = { jewellery: "J1", travel: "T1", restaurant: "R1" };
+const GOALS = ["foundation", "daily", "travel", "restaurant", "work", "jewellery"];
+const TRACK_GOALS = ["daily", "travel", "restaurant", "work", "jewellery"];
+const FIRST = { daily: "D4", travel: "T1", restaurant: "R1", work: "W1", jewellery: "J1" };
 const done = (ids) => Object.fromEntries(ids.map((id) => [id, { at: "2026-01-01", xp: 15 }]));
 const openSet = (goal, progress, started) => SHIPPED.filter((id) => lessonOpen(id, goal, progress, SHIPPED, started));
 
@@ -40,7 +42,7 @@ function seeded(seed) {
 }
 
 test("a fresh profile: 今日 is the goal's first lesson, F1 stays open", () => {
-  for (const goal of ["jewellery", "travel", "restaurant"]) {
+  for (const goal of TRACK_GOALS) {
     assert.equal(todayLesson(goal, {}, SHIPPED), FIRST[goal], goal);
     assert.deepEqual(openSet(goal, {}), ["F1", FIRST[goal]], goal);
   }
@@ -49,7 +51,7 @@ test("a fresh profile: 今日 is the goal's first lesson, F1 stays open", () => 
 });
 
 test("each finished track lesson opens the next one, and 今日 walks the track in path order", () => {
-  for (const goal of ["jewellery", "travel", "restaurant"]) {
+  for (const goal of TRACK_GOALS) {
     const track = goalTrack(goal, SHIPPED);
     assert.equal(track[0], FIRST[goal]);
     assert.ok(track.length > 10, goal);
@@ -73,12 +75,25 @@ test("the track follows path order, not the number (J7 → J15, J10 → J19)", (
   assert.equal(lessonOpen("J8", "jewellery", done(["J1", "J2", "J3", "J4", "J5", "J6", "J7"]), SHIPPED), false);
 });
 
-test("foundation 今日 is the shipped order, untouched", () => {
+test("foundation 今日 runs basics F1–F6 without J1 or R1, then follows the shipped order", () => {
+  const basics = SHIPPED.filter((id) => id[0] === "F");
+  assert.deepEqual(basics, ["F1", "F2", "F3", "F4", "F5", "F6"]);
+  const expected = [...basics, ...SHIPPED.filter((id) => id[0] !== "F")].slice(0, 20);
   const progress = {};
-  for (const id of SHIPPED.slice(0, 20)) {
+  for (const id of expected) {
     assert.equal(todayLesson("foundation", progress, SHIPPED), id);
     progress[id] = { at: "x", xp: 1 };
   }
+  // F5 done opens F6 directly, for any goal; J1 and R1 stay open as before.
+  for (const goal of GOALS) {
+    assert.ok(lessonOpen("F6", goal, done(["F1", "F2", "F3", "F4", "F5"]), SHIPPED), goal);
+    assert.ok(lessonOpen("J1", goal, done(["F5"]), SHIPPED), goal);
+  }
+  const next = (id) => JSON.parse(fs.readFileSync(path.join(root, `content/lessons/${id.toLowerCase()}.json`), "utf8")).next;
+  assert.equal(next("F5"), "F6", "F5's 下一課 is basics, not J1");
+  const units = JSON.parse(fs.readFileSync(path.join(root, "content/path.json"), "utf8")).units;
+  assert.deepEqual(units[0].lessons.map((entry) => entry.id), ["F1", "F2", "F3", "F4", "F5"], "打好基礎 is basics only");
+  assert.deepEqual(units[1].lessons.slice(0, 3).map((entry) => entry.id), ["J1", "R1", "F6"]);
 });
 
 test("hidden lessons never open and are never 今日", () => {

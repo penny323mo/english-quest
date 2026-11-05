@@ -33,7 +33,7 @@ test("the fallback goal is the neutral one", () => {
 });
 
 test("an unknown goal reads as the fallback and keeps all progress", () => {
-  for (const goal of ["daily", "work", "something-new", "", 7, null, undefined]) {
+  for (const goal of ["something-new", "retired-goal", "", 7, null, undefined]) {
     const out = migrate(SCHEMA_VERSION, SCHEMA_VERSION, withGoal(goal));
     assert.equal(out.profile.goal, FALLBACK_GOAL, String(goal));
     assert.deepEqual({ ...out.profile, goal: "jewellery" }, base.profile, "every other profile field is kept");
@@ -44,8 +44,8 @@ test("an unknown goal reads as the fallback and keeps all progress", () => {
   }
 });
 
-test("known goals, including the stored value jewellery, are unchanged", () => {
-  for (const goal of ["foundation", "jewellery", "travel", "restaurant"]) {
+test("known goals, including the stored value jewellery and the new daily and work, are unchanged", () => {
+  for (const goal of ["foundation", "daily", "travel", "restaurant", "work", "jewellery"]) {
     assert.equal(migrate(SCHEMA_VERSION, SCHEMA_VERSION, withGoal(goal)).profile.goal, goal);
   }
 });
@@ -64,11 +64,11 @@ test("old saves (version 1, 2 and 3) load as before", () => {
     assert.deepEqual(out.cards, base.cards, `v${version} cards`);
   }
   // An old save with an unknown goal also loads.
-  assert.equal(migrate(1, SCHEMA_VERSION, { ...v1, profile: { ...base.profile, goal: "daily" } }).profile.goal, FALLBACK_GOAL);
+  assert.equal(migrate(1, SCHEMA_VERSION, { ...v1, profile: { ...base.profile, goal: "something-new" } }).profile.goal, FALLBACK_GOAL);
 });
 
 test("an exported file with an unknown goal imports", () => {
-  const back = importJson(JSON.stringify(withGoal("work")));
+  const back = importJson(JSON.stringify(withGoal("something-new")));
   assert.equal(back.profile.goal, FALLBACK_GOAL);
   assert.equal(back.profile.xp, 120);
   assert.deepEqual(back.progress, base.progress);
@@ -76,7 +76,7 @@ test("an exported file with an unknown goal imports", () => {
 });
 
 test("IndexedDB: a record with an unknown goal hydrates as ready, not read-only", async () => {
-  const box = new Map([["state", structuredClone(withGoal("daily"))]]);
+  const box = new Map([["state", structuredClone(withGoal("retired-goal"))]]);
   const open = async () => ({
     onclose: null,
     onversionchange: null,

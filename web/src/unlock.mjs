@@ -7,14 +7,15 @@
 // - The lesson the learner is part-way through (the saved cursor) stays open.
 // - Linear: finishing a lesson opens the next one in the shipped order.
 // - Goal: the first lesson of the chosen goal's track is open from the start.
-// - Track: finishing a jewellery, travel or restaurant lesson opens the next
-//   lesson of that track (path order), whatever the goal is now. Switching goals
-//   therefore never closes a lesson the learner earned.
+// - Track: finishing a basics, daily-life, travel, restaurant, work or jewellery
+//   lesson opens the next lesson of that track (path order), whatever the goal is
+//   now. Switching goals therefore never closes a lesson the learner earned, and
+//   basics runs F1–F6 without passing J1 or R1.
 
-export const TRACK_PREFIX = { jewellery: "J", travel: "T", restaurant: "R" };
+export const TRACK_PREFIX = { foundation: "F", daily: "D", travel: "T", restaurant: "R", work: "W", jewellery: "J" };
 const PREFIXES = new Set(Object.values(TRACK_PREFIX));
 
-/** The goal's track in path order, or [] for foundation. */
+/** The goal's track in path order (basics for foundation). */
 export function goalTrack(goal, order) {
   const prefix = TRACK_PREFIX[goal];
   return prefix ? order.filter((id) => id[0] === prefix) : [];
@@ -35,7 +36,7 @@ export function lessonOpen(id, goal, progress, order, startedId = null) {
   return Boolean(progress[track[at - 1]]);
 }
 
-/** The first unfinished lesson of the goal's track, or null once it is done (or for foundation). */
+/** The first unfinished lesson of the goal's track, or null once it is done. */
 export function nextInGoalTrack(goal, progress, order, startedId = null) {
   return goalTrack(goal, order).find((id) => !progress[id] && lessonOpen(id, goal, progress, order, startedId)) ?? null;
 }

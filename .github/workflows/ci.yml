@@ -29,17 +29,19 @@ jobs:
         run: node e2e/migrate.mjs
       - name: Fresh iPhone Safari profile renders the light home
         run: node e2e/fresh-safari.mjs
-      - name: Onboarding goal picks 今日 and opens its track at 390px
+      - name: Onboarding goal picks 今日 and opens its track at 390px in WebKit and Chromium
         run: node e2e/goal.mjs
+        env:
+          EQ_SHOTS: daily-shots
       - name: 每日抽卡 at 390px in WebKit and Chromium
         run: node e2e/daily.mjs
         env:
           EQ_SHOTS: daily-shots
-      - name: Keep the 每日抽卡 screenshots
+      - name: Keep the onboarding, home and 每日抽卡 screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: daily-draw-screenshots
+          name: e2e-screenshots
           path: daily-shots/
           if-no-files-found: warn
       - name: Oldest service workers reach the light shell within two reloads

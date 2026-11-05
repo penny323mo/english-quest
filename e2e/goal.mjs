@@ -1,13 +1,14 @@
-// The onboarding goal drives 今日 and opens its track, at 390px.
-// Each fresh profile picks 珠寶櫃檯 / 旅行登機 / 餐廳入座 and must land on the goal's
-// header, the goal's first lesson as 今日 (open, in view), and F1 still open.
-// Then: finishing the track's first lesson moves 今日 along the track, and changing
-// the goal under 我 → 設定 updates the header and 今日 without a reload.
+// The onboarding goal drives 今日 and opens its track, at 390px in Chromium and WebKit.
+// Onboarding preselects no goal and lists basics and daily life first. Each fresh
+// profile picks a goal and must land on the goal's header, the goal's first lesson
+// as 今日 (open, in view), and F1 still open. Then: finishing the track's first lesson
+// moves 今日 along the track; 打好基礎 runs F1–F6 without J1 or R1; and changing the
+// goal under 我 → 設定 updates the header and 今日 without a reload.
 import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { chromium } from "playwright";
+import { chromium, webkit } from "playwright";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
@@ -54,16 +55,22 @@ await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
 const origin = `http://127.0.0.1:${server.address().port}/english-quest/`;
 
 let failures = 0;
-function check(label, ok, detail = "") {
+function checkAs(label, ok, detail = "") {
   console.log(`assert ${label}: ${ok ? "pass" : "FAIL"}${detail ? ` ${detail}` : ""}`);
   if (!ok) failures += 1;
 }
 
+const SAFARI_UA = "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1";
+const ORDER = ["打好基礎", "日常生活", "旅行登機", "餐廳入座", "返工職場", "珠寶櫃檯"];
 const GOALS = [
-  { label: "珠寶櫃檯", first: "J1", second: "J2" },
+  { label: "打好基礎", first: "F1", second: "F2" },
+  // Path order, not the number: D4 is the first daily-life lesson, W1 the first work one.
+  { label: "日常生活", first: "D4", second: "D5" },
   { label: "旅行登機", first: "T1", second: "T2" },
-  // Path order, not the number: R10 sits in 起步, R2 in 上路.
+  // R10 sits in 起步, R2 in 上路.
   { label: "餐廳入座", first: "R1", second: "R10" },
+  { label: "返工職場", first: "W1", second: "W4" },
+  { label: "珠寶櫃檯", first: "J1", second: "J2" },
 ];
 
 async function onboard(page, goalLabel) {
@@ -71,7 +78,7 @@ async function onboard(page, goalLabel) {
   await page.getByRole("heading", { name: "情景英文" }).waitFor();
   await page.getByLabel("點稱呼你？").fill("Penny");
   await page.getByRole("button", { name: "下一步" }).click();
-  await page.getByRole("button", { name: new RegExp(goalLabel) }).click();
+  await page.getByRole("radio", { name: new RegExp(goalLabel) }).click();
   await page.getByRole("button", { name: "下一步" }).click();
   await page.getByRole("button", { name: "下一步" }).click();
   await page.getByRole("button", { name: "開始" }).click();
@@ -130,15 +137,56 @@ async function importProgress(page, progress) {
   await page.getByRole("heading", { name: "學習路徑" }).waitFor();
 }
 
-try {
+async function runBrowser(browserType, browserName) {
+  const tag = browserName === "webkit" ? "safari" : "chrome";
   // CI installs its own browsers; EQ_CHROMIUM points at a preinstalled one elsewhere.
-  const browser = await chromium.launch(process.env.EQ_CHROMIUM ? { executablePath: process.env.EQ_CHROMIUM } : {});
+  const launch = browserName === "chromium" && process.env.EQ_CHROMIUM ? { executablePath: process.env.EQ_CHROMIUM } : {};
+  const browser = await browserType.launch(launch);
   const newPage = async () => {
-    const context = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true, acceptDownloads: true });
+    const context = await browser.newContext({
+      viewport: { width: 390, height: 844 },
+      deviceScaleFactor: 2,
+      isMobile: browserName === "webkit",
+      hasTouch: true,
+      acceptDownloads: true,
+      ...(browserName === "webkit" ? { userAgent: SAFARI_UA } : {}),
+    });
     const page = await context.newPage();
     page.setDefaultTimeout(30000);
     return { context, page };
   };
+  const check = (label, ok, detail) => checkAs(`${tag} ${label}`, ok, detail);
+
+  // Onboarding: no goal preselected, neutral order, 下一步 waits for a choice.
+  {
+    const { context, page } = await newPage();
+    await page.goto(origin, { waitUntil: "domcontentloaded" });
+    await page.getByRole("heading", { name: "情景英文" }).waitFor();
+    await page.waitForFunction(() => document.documentElement.classList.contains("eq-ready"));
+    await page.screenshot({ path: path.join(shots, `onboarding-${tag}-1-name.png`) });
+    await page.getByLabel("點稱呼你？").fill("Penny");
+    await page.getByRole("button", { name: "下一步" }).click();
+    const radios = page.getByRole("radio");
+    const labels = await radios.evaluateAll((els) => els.map((el) => el.querySelector("strong")?.textContent || ""));
+    check("onboarding lists basics and daily life first, jewellery as one of six", JSON.stringify(labels) === JSON.stringify(ORDER), labels.join(" / "));
+    const checked = await radios.evaluateAll((els) => els.filter((el) => el.getAttribute("aria-checked") === "true").length);
+    check("onboarding preselects no goal", checked === 0, String(checked));
+    check("onboarding 下一步 waits for a goal", await page.getByRole("button", { name: "下一步" }).isDisabled());
+    await page.screenshot({ path: path.join(shots, `onboarding-${tag}-2-goal-empty.png`) });
+    await page.getByRole("radio", { name: /日常生活/ }).click();
+    check("onboarding 下一步 opens once a goal is picked", await page.getByRole("button", { name: "下一步" }).isEnabled());
+    await page.screenshot({ path: path.join(shots, `onboarding-${tag}-3-goal-picked.png`) });
+    await page.getByRole("button", { name: "下一步" }).click();
+    await page.getByRole("button", { name: "下一步" }).click();
+    await page.getByRole("button", { name: "開始" }).click();
+    await page.getByRole("heading", { name: "學習路徑" }).waitFor();
+    await pathState(page);
+    await page.screenshot({ path: path.join(shots, `home-${tag}-daily.png`) });
+    await page.evaluate(() => document.querySelector(".screen")?.scrollTo(0, 0));
+    await page.waitForTimeout(100);
+    await page.screenshot({ path: path.join(shots, `home-${tag}-top.png`) });
+    await context.close();
+  }
 
   for (const goal of GOALS) {
     const { context, page } = await newPage();
@@ -151,7 +199,7 @@ try {
     check(`${goal.label} 今日 scrolled into view`, s.todayInView);
     check(`${goal.label} F1 still open`, s.f1Open);
     check(`${goal.label} 390px no sideways scroll`, s.width <= 390, String(s.width));
-    await page.screenshot({ path: path.join(shots, `goal-${goal.first.toLowerCase()}-home.png`) });
+    await page.screenshot({ path: path.join(shots, `goal-${tag}-${goal.first.toLowerCase()}-home.png`) });
     check(`${goal.label} ${goal.first} opens`, await lessonOpens(page, goal.first));
     check(`${goal.label} ${goal.second} locked before ${goal.first}`, !(await lessonOpens(page, goal.second)));
 
@@ -161,6 +209,13 @@ try {
     check(`${goal.label} after ${goal.first}: 今日 is ${goal.second}`, after.today === goal.second, after.today);
     check(`${goal.label} after ${goal.first}: ${goal.second} open`, after.todayLink && (await lessonOpens(page, goal.second)));
     check(`${goal.label} after ${goal.first}: F1 still open`, after.f1Open);
+    if (goal.first === "F1") {
+      // 打好基礎 is one run: with F1–F5 done, 今日 is F6 and it opens without J1 or R1.
+      await importProgress(page, Object.fromEntries(["F2", "F3", "F4", "F5"].map((id) => [id, { at: new Date().toISOString(), xp: 15 }])));
+      const basics = await pathState(page);
+      check("打好基礎 after F5: 今日 is F6", basics.today === "F6", basics.today);
+      check("打好基礎 after F5: F6 opens without J1 or R1", await lessonOpens(page, "F6"));
+    }
     await context.close();
   }
 
@@ -173,7 +228,7 @@ try {
     await page.evaluate(() => { window.__noReload = "kept"; });
     await page.getByRole("link", { name: "我" }).click();
     await page.getByRole("link", { name: "設定" }).click();
-    await page.getByRole("button", { name: /旅行登機/ }).click();
+    await page.getByRole("radio", { name: /旅行登機/ }).click();
     await page.getByRole("link", { name: "返我" }).click();
     const me = await page.locator(".screen").innerText();
     check("switch: 我 shows 旅行登機", me.includes("旅行登機"));
@@ -185,18 +240,24 @@ try {
     check("switch: F1 still open", travel.f1Open);
     await page.getByRole("link", { name: "我" }).click();
     await page.getByRole("link", { name: "設定" }).click();
-    await page.getByRole("button", { name: /打好基礎/ }).click();
+    await page.getByRole("radio", { name: /打好基礎/ }).click();
     await page.getByRole("link", { name: "返我" }).click();
     await page.getByRole("link", { name: "路徑" }).click();
     const foundation = await pathState(page);
     check("switch: foundation header", foundation.header.includes("Penny · 打好基礎"), foundation.header);
     check("switch: foundation 今日 is F1", foundation.today === "F1", foundation.today);
     check("switch: no reload", (await page.evaluate(() => window.__noReload)) === "kept");
-    await page.screenshot({ path: path.join(shots, "goal-switch-foundation.png") });
+    await page.screenshot({ path: path.join(shots, `goal-${tag}-switch-foundation.png`) });
     await context.close();
   }
 
   await browser.close();
+}
+
+try {
+  const wanted = (process.env.EQ_BROWSERS || "chromium,webkit").split(",");
+  if (wanted.includes("chromium")) await runBrowser(chromium, "chromium");
+  if (wanted.includes("webkit")) await runBrowser(webkit, "webkit");
 } finally {
   server.close();
 }
