@@ -156,8 +156,17 @@ export function exportJson(data) {
 
 const INVALID_IMPORT = "呢份檔案入面有啲進度唔啱，冇覆蓋你而家嘅進度。";
 
+/**
+ * A real calendar day (YYYY-MM-DD), optionally followed by an ISO time, as the app
+ * writes it. Date.parse alone is not enough: it rolls 2026-02-31 over to 3 March.
+ */
 function validDate(value) {
-  return typeof value === "string" && value.length >= 10 && Number.isFinite(Date.parse(value));
+  if (typeof value !== "string") return false;
+  const m = /^(\d{4})-(\d{2})-(\d{2})(?:$|T)/.exec(value);
+  if (!m || !Number.isFinite(Date.parse(value))) return false;
+  const [y, mo, d] = [Number(m[1]), Number(m[2]), Number(m[3])];
+  const day = new Date(Date.UTC(y, mo - 1, d));
+  return day.getUTCFullYear() === y && day.getUTCMonth() === mo - 1 && day.getUTCDate() === d;
 }
 
 function nonNegative(value) {

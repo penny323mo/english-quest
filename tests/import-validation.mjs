@@ -65,6 +65,13 @@ const invalid = {
   "a fractional streak": (d) => { d.profile.streak = 2.5; },
   "a negative streak": (d) => { d.profile.streak = -2; },
   "a last-active day that is not a day": (d) => { d.profile.lastActive = "2026-02-31x"; },
+  "a last-active day that does not exist (31 February)": (d) => { d.profile.lastActive = "2026-02-31"; },
+  "a last-active day in a 13th month": (d) => { d.profile.lastActive = "2026-13-01"; },
+  "29 February in a year that is not a leap year": (d) => { d.profile.lastActive = "2026-02-29"; },
+  "a card due on a day that does not exist": (d) => { d.cards["gold-noun"].due = "2026-02-31T00:00:00.000Z"; },
+  "a card last reviewed on 31 April": (d) => { d.cards["gold-noun"].last_review = "2026-04-31T08:00:00.000Z"; },
+  "a lesson finished on 30 February": (d) => { d.progress.F1.at = "2026-02-30T12:00:00.000Z"; },
+  "a card due date that is not in the app's ISO form": (d) => { d.cards["gold-noun"].due = "Nov 6 2026"; },
 };
 
 for (const [label, change] of Object.entries(invalid)) {
@@ -73,6 +80,17 @@ for (const [label, change] of Object.entries(invalid)) {
     assert.throws(() => importJson(raw), (err) => err.name === "ProgressError" && /冇覆蓋/.test(err.message), label);
   });
 }
+
+test("real days still import, including 29 February in a leap year", () => {
+  const raw = file((d) => {
+    d.profile.lastActive = "2028-02-29";
+    d.cards["gold-noun"].due = "2028-02-29T23:59:59.999Z";
+    d.progress.F1.at = "2026-12-31T00:00:00.000Z";
+  });
+  const back = importJson(raw);
+  assert.equal(back.profile.lastActive, "2028-02-29");
+  assert.equal(back.cards["gold-noun"].due, "2028-02-29T23:59:59.999Z");
+});
 
 test("a saved record on this device is not held to the import checks", async () => {
   const stored = structuredClone(good);
