@@ -4,6 +4,7 @@ import { VitePWA } from "vite-plugin-pwa";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { execFileSync } from "node:child_process";
 import { sourceHash } from "./scripts/source-hash.mjs";
 
 const repo = path.dirname(fileURLToPath(import.meta.url));
@@ -69,6 +70,33 @@ function materializeAssets() {
   };
 }
 
+/**
+ * Which build this is: when it was built and from which commit. Shown in the app's
+ * bottom-right corner and written to dist/version.json, which the app fetches past
+ * every cache to tell whether a newer build is live.
+ */
+function buildInfo(): { time: string; sha: string } {
+  let sha = "dev";
+  try {
+    sha = execFileSync("git", ["rev-parse", "--short=7", "HEAD"], { cwd: repo, encoding: "utf8" }).trim() || "dev";
+  } catch {
+    /* not a git checkout */
+  }
+  return { time: new Date().toISOString(), sha };
+}
+
+const BUILD = buildInfo();
+
+function writeVersion(): Plugin {
+  return {
+    name: "eq-version",
+    apply: "build",
+    generateBundle() {
+      this.emitFile({ type: "asset", fileName: "version.json", source: `${JSON.stringify(BUILD)}\n` });
+    },
+  };
+}
+
 function stampSource(): Plugin {
   return {
     name: "eq-source-stamp",
@@ -98,10 +126,14 @@ export default defineConfig({
     host: "127.0.0.1",
     port: 4173,
   },
+  define: {
+    __EQ_BUILD__: JSON.stringify(BUILD),
+  },
   plugins: [
     react(),
     materializeAssets(),
     stampSource(),
+    writeVersion(),
     VitePWA({
       registerType: "autoUpdate",
       injectRegister: null,
