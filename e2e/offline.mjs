@@ -96,7 +96,11 @@ async function run(browserType) {
   await ready(page);
   await page.getByRole("heading", { name: "情景英文" }).waitFor();
   await page.getByLabel("點稱呼你？").fill("Penny");
-  for (let i = 0; i < 3; i += 1) await page.getByRole("button", { name: "下一步" }).click();
+  await page.getByRole("button", { name: "下一步" }).click();
+  // No goal is preselected: pick one before the next step.
+  await page.getByRole("radio", { name: /打好基礎/ }).click();
+  await page.getByRole("button", { name: "下一步" }).click();
+  await page.getByRole("button", { name: "下一步" }).click();
   await page.getByRole("button", { name: "開始" }).click();
   await page.getByRole("heading", { name: "學習路徑" }).waitFor();
   await page.waitForFunction(() => navigator.serviceWorker.controller !== null, null, { timeout: 60000 });

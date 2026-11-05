@@ -57,7 +57,7 @@
 
 ---
 
-## Unit J — Jewellery sales（珠寶櫃檯）· A1→B2 priority track
+## Unit J — Jewellery sales（珠寶櫃檯）· A1→B2
 
 ### J1 — Greeting a customer · A1 · SHIPPED
 - Goals / vocab / grammar: as shipped (welcome, just looking, how may I help)
@@ -296,7 +296,7 @@
 - **Grammar:** Would you like…? I would like…; for here or to go.
 - **Dialogue beats:** A latte → Hot or iced → Small size → Oat milk → Name on the cup → For here or to go → To go → The cup is ready
 
-## Unit T — Travel（旅行）· A1→B2 priority track
+## Unit T — Travel（旅行）· A1→B2
 
 ### T1 — Airport check-in · A1/A2 · SHIPPED
 ### T2 — Security and directions · A2 · SHIPPED

@@ -9,11 +9,13 @@ export function Onboarding() {
   const setProfile = useStore((s) => s.setProfile);
   const [step, setStep] = useState(0);
   const [name, setName] = useState(existing?.name || "");
-  const [goal, setGoal] = useState<Goal>(existing?.goal || "jewellery");
+  // No goal is preselected: the learner picks one (it can be changed later in 設定).
+  const [goal, setGoal] = useState<Goal | null>(existing?.goal ?? null);
   const [minutes, setMinutes] = useState<10 | 15 | 20>(existing?.minutes || 15);
   const [level, setLevel] = useState<Level>(existing?.level || "new");
 
   function finish() {
+    if (!goal) return;
     if (existing) {
       useStore.getState().updateProfile({ name: name.trim() || FALLBACK_LEARNER, goal, minutes, level });
     } else {
@@ -40,7 +42,8 @@ export function Onboarding() {
         <>
           <h2>你想先練邊樣？</h2>
           <GoalPick value={goal} onChange={setGoal} />
-          <button className="btn block" type="button" onClick={() => setStep(2)}>下一步</button>
+          <p className="fine">{goal ? "之後喺設定可以再改。" : "揀一樣先，之後喺設定可以再改。"}</p>
+          <button className="btn block" type="button" disabled={!goal} onClick={() => setStep(2)}>下一步</button>
         </>
       )}
       {step === 2 && (

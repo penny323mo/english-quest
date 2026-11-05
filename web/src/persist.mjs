@@ -7,7 +7,7 @@ import { normalizeDaily } from "./daily.mjs";
 export const SCHEMA_VERSION = 3;
 export const STATE_KEY = "state";
 
-const GOALS = new Set(["foundation", "jewellery", "travel", "restaurant"]);
+const GOALS = new Set(["foundation", "daily", "travel", "restaurant", "work", "jewellery"]);
 /**
  * A goal this build does not know (for example one added by a newer build) reads
  * as this neutral goal instead of refusing the whole record: the learner keeps

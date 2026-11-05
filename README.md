@@ -1,6 +1,6 @@
 # English Quest · 情景英文
 
-Scenario-based English learning for Cantonese speakers (jewellery sales, travel, restaurant).
+Practical, scenario-based English for Cantonese speakers: basics, everyday life, travel, restaurants, work and jewellery retail, each an equal track.
 
 **Live:** https://penny323mo.github.io/english-quest/
 

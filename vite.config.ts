@@ -112,7 +112,7 @@ export default defineConfig({
       manifest: {
         name: "English Quest 情景英文",
         short_name: "情景英文",
-        description: "畀廣東話使用者嘅情景英語：珠寶櫃檯、登機、入座。",
+        description: "畀廣東話使用者嘅實用情景英語：日常生活、旅行、餐廳、返工同珠寶店面。",
         lang: "zh-Hant",
         dir: "ltr",
         start_url: ".",

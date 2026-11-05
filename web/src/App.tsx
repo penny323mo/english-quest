@@ -39,7 +39,7 @@ function Splash() {
     <div className="phone splash">
       <p className="eyebrow">English Quest</p>
       <h1>情景英文</h1>
-      <p className="lede">珠寶櫃檯、登機、入座。</p>
+      <p className="lede">日常、旅行、返工，一句一句講出口。</p>
     </div>
   );
 }

@@ -1,7 +1,7 @@
-type Goal = "foundation" | "jewellery" | "travel" | "restaurant";
+type Goal = "foundation" | "daily" | "travel" | "restaurant" | "work" | "jewellery";
 type Progress = Record<string, unknown>;
 
-export const TRACK_PREFIX: Record<Exclude<Goal, "foundation">, string>;
+export const TRACK_PREFIX: Record<Goal, string>;
 export function goalTrack(goal: Goal, order: readonly string[]): string[];
 export function lessonOpen(
   id: string,
