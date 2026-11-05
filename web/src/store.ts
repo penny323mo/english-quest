@@ -10,6 +10,8 @@ import type { Goal, Level, Profile } from "./types";
 type Store = Persisted & {
   ready: boolean;
   writable: boolean;
+  /** Another tab is the one saving. Kept apart from saveStatus so a save result never clears it. */
+  paused: boolean;
   saveStatus: SaveStatus;
   resumeArmed: boolean;
   setProfile: (profile: Profile) => void;
@@ -143,7 +145,13 @@ const channel: BroadcastChannel | null = (() => {
   }
 })();
 
+/** Tabs share one record only when IndexedDB works; in memory mode each tab is on its own. */
+function sharesRecord(): boolean {
+  return persistence.mode === "ready";
+}
+
 function announceWriter() {
+  if (!sharesRecord()) return;
   try {
     channel?.postMessage({ type: "writer", id: TAB_ID });
   } catch {
@@ -155,8 +163,8 @@ channel?.addEventListener("message", (event: MessageEvent) => {
   const data = event.data as { type?: string; id?: string } | null;
   if (!data || data.type !== "writer" || data.id === TAB_ID) return;
   const s = useStore.getState();
-  if (!s.ready || s.saveStatus.kind === "readonly") return;
-  useStore.setState({ writable: false, saveStatus: { kind: "paused" } });
+  if (!s.ready || !sharesRecord()) return;
+  useStore.setState({ writable: false, paused: true });
 });
 
 let takingOver: Promise<void> | null = null;
@@ -165,13 +173,21 @@ let takingOver: Promise<void> | null = null;
 export function takeOver(): Promise<void> {
   if (takingOver) return takingOver;
   takingOver = (async () => {
+    // Memory mode keeps this tab's session: there is no shared record to reload, and
+    // hydrating again would replace the session with an empty one.
+    if (!sharesRecord()) {
+      useStore.setState({ paused: false });
+      return;
+    }
     useStore.setState({ writable: false });
+    // Saves queued before this reload belong to the old copy: persistence drops them.
     const result = await persistence.hydrate();
     if (!result.ok) {
-      useStore.setState({ writable: false, saveStatus: persistence.status });
+      useStore.setState({ writable: false, paused: false, saveStatus: persistence.status });
       return;
     }
     applyPersistence();
+    useStore.setState({ paused: false });
     announceWriter();
   })().finally(() => {
     takingOver = null;
@@ -181,19 +197,21 @@ export function takeOver(): Promise<void> {
 
 if (typeof document !== "undefined") {
   const resume = () => {
-    if (document.visibilityState === "visible" && useStore.getState().saveStatus.kind === "paused") void takeOver();
+    if (document.visibilityState === "visible" && useStore.getState().paused) void takeOver();
   };
   document.addEventListener("visibilitychange", resume);
   window.addEventListener("focus", resume);
 }
 
 async function save(data: Persisted) {
-  let result: { ok: boolean; conflict?: boolean } = { ok: false };
+  let result: { ok: boolean; conflict?: boolean; stale?: boolean } = { ok: false };
   try {
     result = await persistence.save(data);
   } catch {
     /* persistence.save already records the failure and does not throw. */
   }
+  // Queued before the last reload and dropped unwritten: nothing to report.
+  if (result.stale) return;
   if (result.conflict) {
     // Someone else wrote first: never overwrite it. Load it and say so.
     const notice = persistence.status;
@@ -209,6 +227,7 @@ async function save(data: Persisted) {
 export const useStore = create<Store>((set) => ({
   ready: false,
   writable: false,
+  paused: false,
   saveStatus: { kind: "ok" },
   schemaVersion: 3,
   profile: null,

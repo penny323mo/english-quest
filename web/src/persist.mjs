@@ -310,6 +310,10 @@ export function createPersistence(open) {
   let seen = "";
   let seenRev = 0;
   let queue = Promise.resolve();
+  // Bumped by every hydrate. A save is a snapshot of the store taken while one copy
+  // of the record was loaded; once the tab reloads, saves queued earlier are stale
+  // and are dropped, never checked against the newly loaded record.
+  let generation = 0;
 
   async function writeChecked(body) {
     const expected = seen;
@@ -341,6 +345,7 @@ export function createPersistence(open) {
       kv.drop();
     },
     async hydrate() {
+      generation += 1;
       try {
         const raw = await kv.getState();
         seen = fingerprint(raw);
@@ -379,9 +384,15 @@ export function createPersistence(open) {
     },
     save(next) {
       // One write at a time, so a tab's own back-to-back saves never look like a conflict.
-      const run = queue.then(() => this.saveNow(next));
+      // Each save belongs to the copy loaded when it was queued (see `generation`).
+      const loadedAs = generation;
+      const run = queue.then(() => (loadedAs === generation ? this.saveNow(next) : { ok: false, stale: true }));
       queue = run.catch(() => undefined);
       return run;
+    },
+    /** Which loaded copy saves queued now belong to; changes on every hydrate. */
+    get generation() {
+      return generation;
     },
     async saveNow(next) {
       if (mode === "readonly" || mode === "booting") {
