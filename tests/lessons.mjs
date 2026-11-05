@@ -1200,6 +1200,7 @@ test("tracked review files exclude local audit artifacts", () => {
   const files = res.stdout.split("\n").filter(Boolean);
   assert.deepEqual(files, [
     "review/audio-ear-check.md",
+    "review/de-specialise-audit.md",
     "review/flags.json",
     "review/stage3/before-after.md",
     "review/stage3/duet-fixes.md",

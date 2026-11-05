@@ -3,6 +3,7 @@ import type { DailyState } from "./daily.mjs";
 
 export const SCHEMA_VERSION: number;
 export const STATE_KEY: string;
+export const FALLBACK_GOAL: "foundation";
 
 export type LessonCursor = {
   lessonId: string;
