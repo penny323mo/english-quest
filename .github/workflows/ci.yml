@@ -46,6 +46,8 @@ jobs:
           if-no-files-found: warn
       - name: Two tabs never overwrite each other's progress (WebKit and Chromium)
         run: node e2e/two-tabs.mjs
+      - name: The microphone is never left on (WebKit and Chromium)
+        run: node e2e/mic.mjs
       - name: Oldest service workers reach the light shell within two reloads
         run: node e2e/oldest.mjs
       - name: Full A1 lesson in WebKit and Chromium
