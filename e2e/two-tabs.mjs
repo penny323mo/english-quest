@@ -1,6 +1,7 @@
 // Two tabs of the app on one device must never overwrite each other's progress
 // (review finding 1). The newest tab saves; the other pauses and shows a notice. A
-// paused tab that continues first loads what the other tab saved. Chromium and WebKit.
+// paused tab that continues first loads what the other tab saved, including a fresh
+// tab still on onboarding. Chromium and WebKit.
 import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
@@ -110,6 +111,24 @@ async function runBrowser(browserType, browserName) {
     const state = await exported(one);
     check(`${tag} both tabs' changes are kept`, state.profile.name === "Ling" && state.profile.minutes === 20, `${state.profile.name} / ${state.profile.minutes}`);
     await context.close();
+
+    // Two fresh tabs, both still on onboarding (no profile yet): the first is paused
+    // and must say so there too, and continuing opens what the other tab saved.
+    const fresh = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    const first = await fresh.newPage();
+    const second = await fresh.newPage();
+    for (const page of [first, second]) page.setDefaultTimeout(30000);
+    await first.goto(origin, { waitUntil: "domcontentloaded" });
+    await first.getByRole("heading", { name: "情景英文" }).waitFor();
+    await second.goto(origin, { waitUntil: "domcontentloaded" });
+    await second.getByRole("heading", { name: "情景英文" }).waitFor();
+    await paused(first).waitFor({ timeout: 10000 }).catch(() => undefined);
+    check(`${tag} a paused tab on onboarding shows the notice`, (await paused(first).count()) === 1);
+    await onboard(second);
+    await first.getByRole("button", { name: "喺呢度繼續" }).click();
+    await first.getByRole("heading", { name: "學習路徑" }).waitFor({ timeout: 10000 }).catch(() => undefined);
+    check(`${tag} continuing from onboarding opens the other tab's profile`, (await first.getByRole("heading", { name: "學習路徑" }).count()) === 1 && (await first.locator(".phone").innerText()).includes("Penny"));
+    await fresh.close();
   } finally {
     await browser.close();
   }
