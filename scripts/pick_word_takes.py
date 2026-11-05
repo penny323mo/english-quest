@@ -15,7 +15,7 @@ noise): CI's machines decode with slightly different numerics, and a take that i
 only just heard as the word can come out differently there and fail.
 
 A failing take is re-rendered up to --takes times. Words that never pass go in
-content/word-audio-skip.json and are never drawn; their last take stays on disk
+content/word-audio-skip.json: 每日抽卡 still draws them, without the word 🔊. Their last take stays on disk
 for the ear check (review/word-audio-ear-check.md). With no EQ_PARAKEET set, the
 gate is Whisper alone (what CI checks).
 
@@ -122,7 +122,7 @@ def main() -> int:
     skip = {
         "note": "Cards with no word-only clip: no Piper take was heard as the word by Whisper base.en"
         + (" and Parakeet" if parakeet else "")
-        + f" in {args.takes} tries. They are not drawn in 每日抽卡. scripts/pick_word_takes.py writes this file.",
+        + f" in {args.takes} tries. 每日抽卡 still draws them, without the word 🔊. scripts/pick_word_takes.py writes this file.",
         "ids": sorted(set(failed) | set(keep_skipped)),
     }
     SKIP.write_text(json.dumps(skip, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")

@@ -1,5 +1,5 @@
 {
- "note": "Cards with no word-only clip: no Piper take was heard as the word by Whisper base.en in 12 tries. They are not drawn in 每日抽卡. scripts/pick_word_takes.py writes this file.",
+ "note": "Cards with no word-only clip: no Piper take was heard as the word by Whisper base.en in 12 tries. 每日抽卡 still draws them, without the word 🔊. scripts/pick_word_takes.py writes this file.",
  "ids": [
   "a-art",
   "action-item-noun",

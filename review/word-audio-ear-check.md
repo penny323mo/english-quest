@@ -1,6 +1,6 @@
 # 每日抽卡 word clips: ear check
 
-These **202 cards have no word clip in 每日抽卡**, so the daily draw leaves them out.
+These **202 cards have no word clip in 每日抽卡**. They are still drawn, but the card front shows no word 🔊 (the back still plays its checked example sentence).
 In 12 Piper takes each (normal and slow), Whisper base.en never transcribed the
 word exactly, including on the clip made a little quieter, louder and noisier
 (the check CI needs to pass the same way). Most are short single words. That does

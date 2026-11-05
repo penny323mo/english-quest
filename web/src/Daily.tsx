@@ -31,9 +31,11 @@ function drawToday(date: string): string[] {
   for (const id of SHIPPED) {
     if (s.progress[id] || isLessonOpen(id, goal, s.progress, started)) preferred.push(...(lessonById[id]?.lemmas || []));
   }
-  const pool = lexicon.items.filter((item) => wordAudio[item.id]).map((item) => item.id);
+  // Every card can be drawn. A card whose word clip has not passed the ASR check
+  // (content/word-audio-skip.json, review/word-audio-ear-check.md) shows no word 🔊.
+  const pool = lexicon.items.map((item) => item.id);
   const history = s.daily ? [{ date: s.daily.date, ids: s.daily.ids }, ...s.daily.history] : [];
-  return drawDaily({ date, preferred: preferred.filter((id) => wordAudio[id]), pool, history });
+  return drawDaily({ date, preferred, pool, history });
 }
 
 const WASHES = ["#FFE3D9", "#FCEFC4", "#D8F0EC", "#DCEFFA"];
@@ -84,9 +86,11 @@ function DrawCard({ item, index, flipped, onFlip }: { item: LexItem; index: numb
           <CardArt item={item} />
           <h2 lang="en" className="draw-word">{item.lemma}</h2>
           <div className="draw-btns">
-            <button className="btn" type="button" aria-label={`聽 ${item.lemma}`} onClick={(e) => { stop(e); playAsset(clip.audio); }}>
-              🔊
-            </button>
+            {clip ? (
+              <button className="btn" type="button" aria-label={`聽 ${item.lemma}`} onClick={(e) => { stop(e); playAsset(clip.audio); }}>
+                🔊
+              </button>
+            ) : null}
             <button className="btn ghost" type="button" aria-expanded={hint} onClick={(e) => { stop(e); setHint((on) => !on); }}>
               提示
             </button>
