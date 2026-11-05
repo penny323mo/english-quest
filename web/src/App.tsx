@@ -1,5 +1,6 @@
 import { lazy, Suspense, useEffect, useState } from "react";
 import { Onboarding } from "./Onboarding";
+import { SaveBanner } from "./save-banner";
 import { unlockSfx } from "./sfx";
 import { parseRoute } from "./route.mjs";
 import { hydrate, retryHydrate, useStore } from "./store";
@@ -83,6 +84,7 @@ export function App() {
     return (
       <div className="stage">
         <div className="phone">
+          <SaveBanner />
           <Onboarding />
         </div>
       </div>
