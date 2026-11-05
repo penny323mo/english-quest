@@ -179,6 +179,84 @@ async function exportState(page) {
   return JSON.parse(fs.readFileSync(await (await download).path(), "utf8"));
 }
 
+/** Put a stored draw for today into IndexedDB as another build might have left it. */
+async function storeDraw(page, daily, xp) {
+  await page.evaluate(
+    ({ daily, xp }) =>
+      new Promise((resolve, reject) => {
+        const req = indexedDB.open("english-quest");
+        req.onerror = () => reject(req.error);
+        req.onsuccess = () => {
+          const db = req.result;
+          const tx = db.transaction("kv", "readwrite");
+          const store = tx.objectStore("kv");
+          const get = store.get("state");
+          get.onsuccess = () => {
+            const state = get.result;
+            state.daily = daily;
+            state.profile.xp = xp;
+            if (typeof state.rev === "number") state.rev += 1;
+            store.put(state, "state");
+          };
+          tx.oncomplete = () => { db.close(); resolve(); };
+          tx.onerror = () => reject(tx.error);
+        };
+      }),
+    { daily, xp },
+  );
+  // Reload on the path before opening 每日抽卡: the running app still holds the old
+  // state, and opening the draw first would draw and save a fresh one over this record.
+  await page.reload({ waitUntil: "domcontentloaded" });
+  await page.getByRole("heading", { name: "學習路徑" }).waitFor();
+}
+
+const validDraw = (ids) => ids.length === 3 && new Set(ids).size === 3 && ids.every((id) => lexById[id] && id !== "jewelry-noun" && id !== "elevator-noun");
+
+/** A stored draw with duplicates, an unknown id or a card that is not drawn is repaired. */
+async function brokenDraws(browser, browserName, tag) {
+  const today = macauDate(DAY);
+
+  // Finished day: stays finished, shows three valid cards, no XP again.
+  const done = await newPage(browser, browserName);
+  await onboard(done.page);
+  await storeDraw(done.page, { date: today, ids: ["gold-noun", "gold-noun", "no-such-card"], done: true, history: [] }, 10);
+  await done.page.evaluate(() => { location.hash = "#/daily"; });
+  await done.page.locator(".draw-done").waitFor();
+  check(`${tag} broken finished draw shows three cards`, (await done.page.locator(".draw-dot").count()) === 3);
+  check(`${tag} broken finished draw stays finished`, (await done.page.locator(".draw-done").innerText()).includes("今日抽卡已完成"));
+  const doneState = await exportState(done.page);
+  check(`${tag} broken finished draw is repaired`, validDraw(doneState.daily.ids) && doneState.daily.ids[0] === "gold-noun" && doneState.daily.done === true, JSON.stringify(doneState.daily));
+  check(`${tag} broken finished draw gives no XP again`, doneState.profile.xp === 10, String(doneState.profile.xp));
+  check(`${tag} repaired cards join 生字回顧`, doneState.daily.ids.every((id) => doneState.cards[id]), Object.keys(doneState.cards).join(","));
+  await done.context.close();
+
+  // Unfinished day: three valid cards that can be finished once, for XP once.
+  const open = await newPage(browser, browserName);
+  await onboard(open.page);
+  await storeDraw(open.page, { date: today, ids: ["jewelry-noun", "ring-noun"], done: false, history: [] }, 0);
+  await open.page.evaluate(() => { location.hash = "#/daily"; });
+  const skip = open.page.getByRole("button", { name: "跳過動畫" });
+  if (await skip.count()) await skip.click();
+  await open.page.locator(".draw-card").waitFor();
+  check(`${tag} broken open draw shows three cards`, (await open.page.locator(".draw-dot").count()) === 3);
+  for (let i = 0; i < 3; i += 1) {
+    await open.page.locator(".draw-card").click({ position: { x: 40, y: 40 } });
+    await open.page.waitForTimeout(350);
+    const next = open.page.getByRole("button", { name: i < 2 ? "下一張" : "完成今日抽卡" });
+    await next.click();
+  }
+  await open.page.locator(".draw-done").waitFor();
+  const openState = await exportState(open.page);
+  check(`${tag} broken open draw is repaired and finishable`, validDraw(openState.daily.ids) && openState.daily.ids.includes("ring-noun") && openState.daily.done === true, JSON.stringify(openState.daily));
+  check(`${tag} finishing a repaired draw gives XP once`, openState.profile.xp === 10, String(openState.profile.xp));
+  await open.page.goto(`${origin}#/daily`);
+  await open.page.reload();
+  await open.page.locator(".draw-done").waitFor();
+  const again = await exportState(open.page);
+  check(`${tag} reloading a repaired draw keeps it`, JSON.stringify(again.daily.ids) === JSON.stringify(openState.daily.ids) && again.profile.xp === 10, `${JSON.stringify(again.daily.ids)} xp ${again.profile.xp}`);
+  await open.context.close();
+}
+
 async function runBrowser(browserType, browserName) {
   const tag = browserName === "webkit" ? "safari" : "chrome";
   const launchOpts = browserName === "chromium" && process.env.EQ_CHROMIUM ? { executablePath: process.env.EQ_CHROMIUM } : {};
@@ -333,6 +411,8 @@ async function runBrowser(browserType, browserName) {
     const plainSentence = await lastPlay(plain.page, plainBefore);
     check(`${tag} unchecked card back still plays its checked sentence`, Boolean(plainSentence && plainSentence.src.endsWith(plainItem.audio.replace(/^assets/, "")) && plainSentence.ok === true), JSON.stringify(plainSentence));
     await plain.context.close();
+
+    await brokenDraws(browser, browserName, tag);
 
     // Reduced motion: no shake or reveal, the cards are there at once.
     const reduced = await newPage(browser, browserName, { reducedMotion: "reduce" });
