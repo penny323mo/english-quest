@@ -52,6 +52,8 @@ jobs:
         run: node e2e/audio-overlap.mjs
       - name: A broken link opens the path (WebKit and Chromium)
         run: node e2e/bad-route.mjs
+      - name: Onboarding (#27) with one tab saving at a time (#28), WebKit and Chromium
+        run: node e2e/onboarding-tabs.mjs
       - name: Oldest service workers reach the light shell within two reloads
         run: node e2e/oldest.mjs
       - name: Full A1 lesson in WebKit and Chromium
