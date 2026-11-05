@@ -993,6 +993,7 @@ a { color: inherit; }
   position: relative;
   display: grid;
   min-height: 430px;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   transition: transform 260ms ease-out;
 }
@@ -1011,7 +1012,13 @@ a { color: inherit; }
   box-shadow: 0 8px 24px rgba(31, 42, 55, 0.08);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
+  /* WebKit can paint the turned-away face through the front (mirrored). Hide it
+     outright; the swap lands at the half-way point of the 260ms turn, edge-on. */
+  transition: visibility 0s linear 130ms;
 }
+.draw-face.front { transform: rotateY(0deg); }
+.draw-card:not(.flipped) .draw-face.back,
+.draw-card.flipped .draw-face.front { visibility: hidden; }
 .draw-face.back { transform: rotateY(180deg); justify-content: center; background: var(--cream); }
 .draw-count { align-self: flex-start; font-size: 13px; font-weight: 700; color: var(--ink-soft); }
 .draw-art { width: 160px; height: 160px; border-radius: 24px; object-fit: cover; }

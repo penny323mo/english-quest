@@ -31,10 +31,21 @@ test("every visible card has a word clip unless no take passed the ASR gate; hid
   }
 });
 
-test("cards without a word clip are never drawn", () => {
+test("every word without a clip is listed for Penny's ear check, with its last take to play (the app does not play it)", () => {
+  const doc = fs.readFileSync(path.join(root, "review/word-audio-ear-check.md"), "utf8");
+  for (const id of skip) {
+    assert.ok(doc.includes(`\`${id}\``), `${id} is not in review/word-audio-ear-check.md`);
+    for (const rel of [`assets/audio/words/${id}-word.mp3`, `assets/audio/words/${id}-word-slow.mp3`]) {
+      assert.ok(fs.existsSync(path.join(root, rel)), `${rel}: no take to listen to`);
+    }
+  }
+});
+
+test("every card can be drawn; one without a checked word clip shows no word 🔊", () => {
   const src = fs.readFileSync(path.join(root, "web/src/Daily.tsx"), "utf8");
-  assert.match(src, /const pool = lexicon\.items\.filter\(\(item\) => wordAudio\[item\.id\]\)/);
-  assert.match(src, /preferred: preferred\.filter\(\(id\) => wordAudio\[id\]\)/);
+  assert.match(src, /const pool = lexicon\.items\.map\(\(item\) => item\.id\);/);
+  assert.match(src, /drawDaily\(\{ date, preferred, pool, history \}\)/);
+  assert.match(src, /\{clip \? \(\s*<button className="btn" type="button" aria-label=\{`聽 \$\{item\.lemma\}`\}/);
 });
 
 test("the card's 🔊 plays the word clip and the back plays the existing sentence clip", () => {

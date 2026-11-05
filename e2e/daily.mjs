@@ -7,6 +7,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium, webkit } from "playwright";
+import { drawDaily, macauDate } from "../web/src/daily.mjs";
+import { lessonOpen } from "../web/src/unlock.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
@@ -14,6 +16,22 @@ const shots = process.env.EQ_SHOTS || "/opt/cursor/artifacts/screenshots";
 fs.mkdirSync(shots, { recursive: true });
 const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), "utf8"));
 const lexById = Object.fromEntries(lex.items.map((item) => [item.id, item]));
+const wordClips = JSON.parse(fs.readFileSync(path.join(root, "content/word-audio.json"), "utf8")).items;
+
+/** A day whose draw, for a fresh profile with the default goal, includes a card with no checked word clip. */
+function dayWithUncheckedCard() {
+  const shipped = JSON.parse(fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8").match(/export const SHIPPED = (\[[^\]]*\])/)[1]);
+  const lemmasOf = (id) => JSON.parse(fs.readFileSync(path.join(root, `content/lessons/${id.toLowerCase()}.json`), "utf8")).lemmas;
+  const preferred = shipped.filter((id) => lessonOpen(id, "jewellery", {}, shipped)).flatMap(lemmasOf);
+  const pool = lex.items.filter((item) => !item.hidden).map((item) => item.id);
+  for (let i = 0; i < 60; i += 1) {
+    const when = new Date(DAY.getTime() + i * 24 * 60 * 60 * 1000);
+    const ids = drawDaily({ date: macauDate(when), preferred, pool, history: [] });
+    const unchecked = ids.findIndex((id) => !wordClips[id]);
+    if (unchecked >= 0) return { when, index: unchecked, id: ids[unchecked] };
+  }
+  throw new Error("no day in 60 draws a card without a word clip");
+}
 const SAFARI_UA = "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1";
 // 10:00 in Macau on 4 Nov 2026; the next Macau day starts at 16:00 UTC.
 const DAY = new Date("2026-11-04T02:00:00Z");
@@ -123,6 +141,32 @@ async function drawnIds(page) {
   });
 }
 
+/**
+ * Which face is actually painted: hit-test the card centre and the centre of the
+ * face's own text. WebKit once painted the back (mirrored) over the front.
+ */
+async function paintedFace(page, want) {
+  return page.evaluate((want) => {
+    const card = document.querySelector(".draw-card");
+    const target = document.querySelector(want === "front" ? ".draw-face.front .draw-word" : ".draw-face.back .draw-example");
+    if (!card || !target) return { ok: false, why: "missing card or text" };
+    const centre = (el) => {
+      const r = el.getBoundingClientRect();
+      return [r.left + r.width / 2, r.top + r.height / 2];
+    };
+    const atCard = document.elementFromPoint(...centre(card));
+    const atText = document.elementFromPoint(...centre(target));
+    const faceOf = (el) => (el?.closest(".draw-face.front") ? "front" : el?.closest(".draw-face.back") ? "back" : "none");
+    const textHit = Boolean(atText && (atText === target || target.contains(atText)));
+    return {
+      ok: faceOf(atCard) === want && textHit,
+      cardCentre: faceOf(atCard),
+      textHit,
+      hit: atText ? `${atText.tagName.toLowerCase()}.${atText.className}: ${(atText.textContent || "").trim().slice(0, 30)}` : null,
+    };
+  }, want);
+}
+
 async function lastPlay(page, since) {
   await page.waitForFunction((n) => window.__plays.length > n && window.__plays.at(-1).ok !== null, since, { timeout: 10000 }).catch(() => undefined);
   return page.evaluate(() => window.__plays.at(-1) || null);
@@ -196,20 +240,31 @@ async function runBrowser(browserType, browserName) {
       });
       check(`${tag} card ${i + 1} shows its picture`, Boolean(art && art.loaded && art.src.endsWith(`assets/art/cards/${id}.svg`)), JSON.stringify(art));
 
-      const before = await page.evaluate(() => window.__plays.length);
-      await page.getByRole("button", { name: `聽 ${item.lemma}` }).click();
-      const word = await lastPlay(page, before);
-      check(`${tag} card ${i + 1} 🔊 plays the word clip`, Boolean(word && word.src.endsWith(`/audio/words/${id}-word.mp3`) && word.ok === true), JSON.stringify(word));
+      if (wordClips[id]) {
+        const before = await page.evaluate(() => window.__plays.length);
+        await page.getByRole("button", { name: `聽 ${item.lemma}` }).click();
+        const word = await lastPlay(page, before);
+        check(`${tag} card ${i + 1} 🔊 plays the word clip`, Boolean(word && word.src.endsWith(`/audio/words/${id}-word.mp3`) && word.ok === true), JSON.stringify(word));
+      } else {
+        // Drawn although its word clip has not passed the ASR check: no word 🔊.
+        check(`${tag} card ${i + 1} (no checked word clip) shows no word 🔊`, (await page.getByRole("button", { name: `聽 ${item.lemma}` }).count()) === 0);
+      }
 
+      const front = await paintedFace(page, "front");
+      check(`${tag} card ${i + 1} front is painted (word hit at the card centre)`, front.ok, JSON.stringify(front));
       if (i === 0) await page.screenshot({ path: path.join(shots, `daily-${tag}-4-front.png`) });
       await page.getByRole("button", { name: "提示" }).click();
       const hint = await page.locator(".draw-hint").innerText();
       check(`${tag} card ${i + 1} 提示 shows the Cantonese gloss`, hint === item.glossYue && /[一-鿿]/.test(hint), hint);
+      const withHint = await paintedFace(page, "front");
+      check(`${tag} card ${i + 1} front is still painted with the hint open`, withHint.ok, JSON.stringify(withHint));
       if (i === 0) await page.screenshot({ path: path.join(shots, `daily-${tag}-5-hint.png`) });
 
       await card.click({ position: { x: 40, y: 40 } });
       await page.waitForTimeout(350);
       check(`${tag} card ${i + 1} flips on tap`, (await card.getAttribute("class")).includes("flipped"));
+      const backFace = await paintedFace(page, "back");
+      check(`${tag} card ${i + 1} back is painted after the flip`, backFace.ok, JSON.stringify(backFace));
       const example = await page.locator(".draw-face.back .draw-example").innerText();
       check(`${tag} card ${i + 1} back shows the checked example`, example === item.example.replace(/\{\{learner(-spell)?\}\}/g, "Penny"), example);
       check(`${tag} card ${i + 1} back shows the Cantonese gloss`, (await page.locator(".draw-face.back .draw-gloss").innerText()).length > 0);
@@ -257,6 +312,27 @@ async function runBrowser(browserType, browserName) {
     check(`${tag} next day draws new cards`, nextState.daily.date === "2026-11-05" && nextState.daily.ids.every((id) => !ids.includes(id)), JSON.stringify(nextState.daily.ids));
     check(`${tag} next day shows its first card`, nextState.daily.ids[0] === next);
     await context.close();
+
+    // A card whose word clip has not passed the ASR check is still drawn, without the word 🔊.
+    const unchecked = dayWithUncheckedCard();
+    const plain = await newPage(browser, browserName);
+    await plain.page.clock.setFixedTime(unchecked.when);
+    await onboard(plain.page);
+    await plain.page.goto(`${origin}#/daily`);
+    await plain.page.getByRole("button", { name: "跳過動畫" }).click();
+    await plain.page.locator(".draw-dot").nth(unchecked.index).click();
+    const plainItem = lexById[unchecked.id];
+    check(`${tag} unchecked card ${unchecked.id} is drawn`, (await plain.page.locator(".draw-card").getAttribute("data-card")) === unchecked.id);
+    check(`${tag} unchecked card shows no word 🔊`, (await plain.page.getByRole("button", { name: `聽 ${plainItem.lemma}` }).count()) === 0);
+    await plain.page.getByRole("button", { name: "提示" }).click();
+    check(`${tag} unchecked card still has 提示`, (await plain.page.locator(".draw-hint").innerText()) === plainItem.glossYue);
+    await plain.page.locator(".draw-card").click({ position: { x: 40, y: 40 } });
+    await plain.page.waitForTimeout(350);
+    const plainBefore = await plain.page.evaluate(() => window.__plays.length);
+    await plain.page.getByRole("button", { name: "聽例句" }).click();
+    const plainSentence = await lastPlay(plain.page, plainBefore);
+    check(`${tag} unchecked card back still plays its checked sentence`, Boolean(plainSentence && plainSentence.src.endsWith(plainItem.audio.replace(/^assets/, "")) && plainSentence.ok === true), JSON.stringify(plainSentence));
+    await plain.context.close();
 
     // Reduced motion: no shake or reveal, the cards are there at once.
     const reduced = await newPage(browser, browserName, { reducedMotion: "reduce" });

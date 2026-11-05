@@ -104,7 +104,7 @@ certainly-adv t:circle-check
 browsing-verb t:eye
 enjoy-verb t:mood-happy
 around-adv t:view-360
-silver-noun d:ingot
+silver-noun d:ingot-ag
 ring-noun d:ring
 watch-noun t:device-watch
 bracelet-noun d:bracelet
@@ -226,10 +226,10 @@ excuse-me-phrase t:hand-stop
 im-sorry-phrase t:mood-sad
 youre-welcome-phrase t:mood-smile-beam
 good-night-phrase t:moon-stars
-gold-noun d:ingot
-white-gold-phrase d:ingot
-rose-gold-phrase d:ingot
-platinum-noun d:ingot
+gold-noun d:ingot-au
+white-gold-phrase d:band-w
+rose-gold-phrase d:band-r
+platinum-noun d:ingot-pt
 diamond-noun t:diamond
 jade-noun d:jade
 gemstone-noun d:gemstone
@@ -474,7 +474,7 @@ stamp-verb t:rubber-stamp
 officer-noun t:user-shield
 occasion-noun t:confetti
 anniversary-noun t:calendar-heart
-engagement-noun d:ring
+engagement-noun d:ring-box
 custom-adj t:pencil
 design-noun t:pencil
 custom-deposit-noun t:pig-money
@@ -631,7 +631,7 @@ friday-noun t:calendar
 question-noun t:help
 meeting-noun t:presentation
 sketch-noun t:pencil
-yellow-gold-phrase d:ingot
+yellow-gold-phrase d:band-y
 week-noun t:calendar-week
 latte-noun t:coffee
 iced-adj t:temperature-snow
