@@ -22,6 +22,8 @@ type Store = Persisted & {
   touchToday: () => void;
   /** Store the day's 每日抽卡 draw. A draw already stored for that date is kept. */
   startDaily: (date: string, ids: string[]) => void;
+  /** Replace today's cards with a repaired set (repairDay). Keeps done; never awards XP. */
+  repairDaily: (date: string, ids: string[]) => void;
   /** Finish the day's draw: 打卡, XP, and the cards join 生字回顧. Once per day. */
   finishDaily: (date: string) => void;
   reset: () => void;
@@ -266,6 +268,18 @@ export const useStore = create<Store>((set) => ({
     set((s) => {
       if (!s.writable || (s.daily && s.daily.date === date)) return s;
       return { daily: startDay(s.daily, date, ids) };
+    }),
+  repairDaily: (date, ids) =>
+    set((s) => {
+      if (!s.writable || !s.daily || s.daily.date !== date) return s;
+      if (s.daily.ids.length === ids.length && s.daily.ids.every((id, i) => id === ids[i])) return s;
+      if (!s.daily.done) return { daily: { ...s.daily, ids } };
+      // A finished day stays finished: no XP or streak again, but the cards it now
+      // shows join 生字回顧 as its original cards did.
+      const cards = { ...s.cards };
+      const now = new Date();
+      for (const id of ids) if (!cards[id]) cards[id] = makeNewCard(id, now);
+      return { daily: { ...s.daily, ids }, cards };
     }),
   finishDaily: (date) =>
     set((s) => {

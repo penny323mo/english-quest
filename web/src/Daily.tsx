@@ -1,7 +1,7 @@
-import { useEffect, useLayoutEffect, useRef, useState, type MouseEvent } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState, type MouseEvent } from "react";
 import wordAudioFile from "../../content/word-audio.json";
 import cardArtFile from "../../content/card-art.json";
-import { DAILY_XP, drawDaily, macauDate } from "./daily.mjs";
+import { DAILY_XP, drawDaily, macauDate, repairDay } from "./daily.mjs";
 import { SHIPPED, asset, isLessonOpen, lessonById, lexById, lexicon } from "./data";
 import { fillLearner } from "./learner";
 import { playAsset, stopAudio } from "./media";
@@ -23,7 +23,7 @@ function reducedMotion(): boolean {
 }
 
 /** Cards from lessons the learner has open or has finished, then the whole deck. */
-function drawToday(date: string): string[] {
+function drawInputs() {
   const s = useStore.getState();
   const goal = s.profile?.goal ?? "foundation";
   const started = s.lessonCursor?.lessonId ?? null;
@@ -34,7 +34,13 @@ function drawToday(date: string): string[] {
   // Every card can be drawn. A card whose word clip has not passed the ASR check
   // (content/word-audio-skip.json, review/word-audio-ear-check.md) shows no word 🔊.
   const pool = lexicon.items.map((item) => item.id);
+  return { preferred, pool };
+}
+
+function drawToday(date: string): string[] {
+  const s = useStore.getState();
   const history = s.daily ? [{ date: s.daily.date, ids: s.daily.ids }, ...s.daily.history] : [];
+  const { preferred, pool } = drawInputs();
   return drawDaily({ date, preferred, pool, history });
 }
 
@@ -149,7 +155,10 @@ export default function Daily() {
   const startDaily = useStore((s) => s.startDaily);
   const finishDaily = useStore((s) => s.finishDaily);
   const [today] = useState(() => macauDate());
-  const current = daily && daily.date === today ? daily : null;
+  const repairDaily = useStore((s) => s.repairDaily);
+  const stored = daily && daily.date === today ? daily : null;
+  // Today's stored draw, repaired to three valid, distinct cards if it is not.
+  const current = useMemo(() => (stored ? repairDay(stored, drawInputs()) : null), [stored]);
   const [phase, setPhase] = useState<"pack" | "cards">(() => (current?.done ? "cards" : "pack"));
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState<boolean[]>(() => [false, false, false]);
@@ -159,6 +168,10 @@ export default function Daily() {
   useEffect(() => {
     if (profile && !current) startDaily(today, drawToday(today));
   }, [profile, current, startDaily, today]);
+
+  useEffect(() => {
+    if (stored && current && current !== stored) repairDaily(today, current.ids);
+  }, [stored, current, repairDaily, today]);
 
   useEffect(() => () => stopAudio(), []);
 
@@ -172,7 +185,7 @@ export default function Daily() {
   if (!current) return <section className="screen plain"><p className="lede">抽緊卡…</p></section>;
   const items = current.ids.map((id) => lexById[id]).filter(Boolean) as LexItem[];
   const item = items[index];
-  const allSeen = seen.every(Boolean);
+  const allSeen = items.length > 0 && items.every((_, i) => seen[i]);
 
   function flip(i: number) {
     playSfx("tap");

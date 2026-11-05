@@ -14,6 +14,11 @@ export function drawDaily(input: {
   pool: readonly string[];
   history?: DailyDay[];
   count?: number;
+  keep?: readonly string[];
 }): string[];
+export function repairDay(
+  daily: DailyState,
+  input: { preferred: readonly string[]; pool: readonly string[]; count?: number },
+): DailyState;
 export function startDay(daily: DailyState | null | undefined, date: string, ids: string[]): DailyState;
 export function normalizeDaily(daily: unknown): DailyState | null;
