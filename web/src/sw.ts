@@ -6,6 +6,7 @@ import { NetworkOnly } from "workbox-strategies";
 import type { PrecacheEntry } from "workbox-precaching";
 import { navigateNetworkFirst, SHELL_CACHE } from "./sw-navigate.mjs";
 import { planPrecachePurge } from "./sw-purge.mjs";
+import { isOwnCache } from "./cache-scope.mjs";
 
 declare const self: ServiceWorkerGlobalScope & {
   __WB_MANIFEST: Array<PrecacheEntry | string>;
@@ -58,8 +59,10 @@ async function purgeOldShell(): Promise<boolean> {
   const keep = cacheNames.precache;
   const keepKeys = [...precacheController.getURLsToCacheKeys().values()];
   const keys = await caches.keys();
+  const scope = self.registration.scope;
   let removed = false;
   await Promise.all(keys.map(async (key) => {
+    if (!isOwnCache(key, scope)) return; // another app on this origin (github.io is shared)
     if (key === SHELL_CACHE) return; // the offline copy of the page is managed by sw-navigate.mjs
     if (key !== keep) {
       removed = true;
