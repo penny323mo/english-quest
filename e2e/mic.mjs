@@ -54,21 +54,43 @@ function fakeMic() {
   window.__streams = [];
   window.__breakRecorder = false;
   const RealRecorder = window.MediaRecorder;
-  if (!navigator.mediaDevices) Object.defineProperty(navigator, "mediaDevices", { value: {}, configurable: true });
-  navigator.mediaDevices.getUserMedia = () => {
-    window.__asks += 1;
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        const ctx = new AudioContext();
-        const osc = ctx.createOscillator();
-        const dest = ctx.createMediaStreamDestination();
-        osc.connect(dest);
-        osc.start();
-        window.__streams.push(dest.stream);
-        resolve(dest.stream);
-      }, window.__micDelay);
-    });
+  // A real MediaStream where the browser can make one; otherwise a stand-in with
+  // tracks that report readyState the same way.
+  function makeStream() {
+    try {
+      const ctx = new AudioContext();
+      const osc = ctx.createOscillator();
+      const dest = ctx.createMediaStreamDestination();
+      osc.connect(dest);
+      osc.start();
+      if (dest.stream.getTracks().length) return dest.stream;
+    } catch {
+      /* fall through to the stand-in */
+    }
+    const track = { kind: "audio", readyState: "live", stop() { this.readyState = "ended"; } };
+    return { getTracks: () => [track], getAudioTracks: () => [track] };
+  }
+  const devices = {
+    getUserMedia() {
+      window.__asks += 1;
+      return new Promise((resolve) => {
+        setTimeout(() => {
+          const stream = makeStream();
+          window.__streams.push(stream);
+          resolve(stream);
+        }, window.__micDelay);
+      });
+    },
   };
+  // WebKit may have no navigator.mediaDevices here; define it where the app reads it.
+  for (const target of [Navigator.prototype, navigator]) {
+    try {
+      Object.defineProperty(target, "mediaDevices", { get: () => devices, configurable: true });
+    } catch {
+      /* the other target still works */
+    }
+  }
+  window.__fakeMic = navigator.mediaDevices === devices;
   function BrokenOr(stream, options) {
     if (window.__breakRecorder || !RealRecorder) throw new DOMException("not supported", "NotSupportedError");
     return new RealRecorder(stream, options);
@@ -139,6 +161,9 @@ async function runBrowser(browserType, browserName) {
     const page = await context.newPage();
     page.setDefaultTimeout(30000);
     await onboard(page);
+    const installed = await page.evaluate(() => window.__fakeMic === true);
+    check(`${tag} the fake microphone is in place`, installed);
+    if (!installed) return;
 
     // 1. Double tap while the permission prompt is open, then leave before it answers.
     await openShadow(page);
