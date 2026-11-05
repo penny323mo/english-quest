@@ -35,7 +35,9 @@ const server = http.createServer((req, res) => {
   fs.createReadStream(file).pipe(res);
 });
 await new Promise((resolve) => server.listen(0, "127.0.0.1", resolve));
-const origin = `http://127.0.0.1:${server.address().port}/english-quest/`;
+// EQ_ORIGIN runs the same checks against another server, such as the Vite dev server,
+// where React StrictMode mounts, cleans up and mounts each effect again.
+const origin = process.env.EQ_ORIGIN || `http://127.0.0.1:${server.address().port}/english-quest/`;
 
 let failures = 0;
 function check(label, ok, detail = "") {
