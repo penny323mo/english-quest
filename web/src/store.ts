@@ -67,6 +67,7 @@ function openBrowserDb() {
 function wrapDb(db: IDBPDatabase): {
   get(key: string): Promise<unknown>;
   put(key: string, value: unknown): Promise<unknown>;
+  putIf(key: string, matches: (current: unknown) => boolean, value: unknown): Promise<boolean>;
   close(): void;
   onclose: (() => void) | null;
   onversionchange: (() => void) | null;
@@ -82,6 +83,18 @@ function wrapDb(db: IDBPDatabase): {
   return {
     get: (key) => db.get("kv", key),
     put: (key, value) => db.put("kv", value, key),
+    // Read, compare and write in one readwrite transaction, so no other tab can write in between.
+    putIf: async (key, matches, value) => {
+      const tx = db.transaction("kv", "readwrite");
+      const current = await tx.store.get(key);
+      if (!matches(current)) {
+        await tx.done;
+        return false;
+      }
+      await tx.store.put(value, key);
+      await tx.done;
+      return true;
+    },
     close: () => db.close(),
     get onclose() {
       return onclose;
@@ -112,11 +125,80 @@ function snapshot(): Persisted {
   };
 }
 
-async function save(data: Persisted) {
+/*
+ * One tab saves at a time. A tab that opens, comes back into view, or is told to
+ * continue becomes the writer: it first loads the latest saved record, then tells the
+ * other tabs (BroadcastChannel), which stop saving until they become the writer again.
+ * The channel is only a notice: every write is still checked against the stored record
+ * in the same IndexedDB transaction (persist.mjs), which also catches older builds.
+ */
+const TAB_ID = `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
+const channel: BroadcastChannel | null = (() => {
   try {
-    await persistence.save(data);
+    return typeof BroadcastChannel === "undefined" ? null : new BroadcastChannel("english-quest-progress");
+  } catch {
+    return null;
+  }
+})();
+
+function announceWriter() {
+  try {
+    channel?.postMessage({ type: "writer", id: TAB_ID });
+  } catch {
+    /* A closed channel only loses the notice; the transaction check still protects the record. */
+  }
+}
+
+channel?.addEventListener("message", (event: MessageEvent) => {
+  const data = event.data as { type?: string; id?: string } | null;
+  if (!data || data.type !== "writer" || data.id === TAB_ID) return;
+  const s = useStore.getState();
+  if (!s.ready || s.saveStatus.kind === "readonly") return;
+  useStore.setState({ writable: false, saveStatus: { kind: "paused" } });
+});
+
+let takingOver: Promise<void> | null = null;
+
+/** Become the tab that saves: reload the latest saved record before any edit. */
+export function takeOver(): Promise<void> {
+  if (takingOver) return takingOver;
+  takingOver = (async () => {
+    useStore.setState({ writable: false });
+    const result = await persistence.hydrate();
+    if (!result.ok) {
+      useStore.setState({ writable: false, saveStatus: persistence.status });
+      return;
+    }
+    applyPersistence();
+    announceWriter();
+  })().finally(() => {
+    takingOver = null;
+  });
+  return takingOver;
+}
+
+if (typeof document !== "undefined") {
+  const resume = () => {
+    if (document.visibilityState === "visible" && useStore.getState().saveStatus.kind === "paused") void takeOver();
+  };
+  document.addEventListener("visibilitychange", resume);
+  window.addEventListener("focus", resume);
+}
+
+async function save(data: Persisted) {
+  let result: { ok: boolean; conflict?: boolean } = { ok: false };
+  try {
+    result = await persistence.save(data);
   } catch {
     /* persistence.save already records the failure and does not throw. */
+  }
+  if (result.conflict) {
+    // Someone else wrote first: never overwrite it. Load it and say so.
+    const notice = persistence.status;
+    await takeOver();
+    // Only claim the latest copy is loaded if the reload worked; otherwise keep its own status.
+    if (persistence.status.kind === "ok") useStore.setState({ saveStatus: notice });
+    return;
   }
   const status = persistence.status;
   if (useStore.getState().saveStatus !== status) useStore.setState({ saveStatus: status });
@@ -285,6 +367,7 @@ export function hydrate(): Promise<void> {
       return;
     }
     applyPersistence();
+    announceWriter();
   })().catch(() => {
     useStore.setState({
       ready: true,

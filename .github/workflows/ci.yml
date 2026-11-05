@@ -42,6 +42,8 @@ jobs:
           name: daily-draw-screenshots
           path: daily-shots/
           if-no-files-found: warn
+      - name: Two tabs never overwrite each other's progress (WebKit and Chromium)
+        run: node e2e/two-tabs.mjs
       - name: Oldest service workers reach the light shell within two reloads
         run: node e2e/oldest.mjs
       - name: Full A1 lesson in WebKit and Chromium
