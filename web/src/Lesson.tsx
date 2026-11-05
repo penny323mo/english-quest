@@ -838,24 +838,6 @@ function SpeakBox({
   const [micError, setMicError] = useState(false);
   const [starting, setStarting] = useState(false);
   const micRef = useRef<ReturnType<typeof createMic> | null>(null);
-  if (!micRef.current) {
-    micRef.current = createMic({
-      getStream: () => navigator.mediaDevices.getUserMedia({ audio: true }),
-      makeRecorder: (stream) => {
-        const mime = recorderMime();
-        return mime ? new MediaRecorder(stream, { mimeType: mime }) : new MediaRecorder(stream);
-      },
-      onStart: () => setRecording(true),
-      onTake: (blob) => {
-        setRecording(false);
-        setUserUrl(URL.createObjectURL(blob));
-      },
-      onError: () => {
-        setRecording(false);
-        setMicError(true);
-      },
-    });
-  }
   const speechRef = useRef<{ stop: () => void } | null>(null);
   const [karaAt, setKaraAt] = useState(-1);
   const karaRaf = useRef(0);
@@ -894,11 +876,32 @@ function SpeakBox({
     };
   }, [userUrl]);
 
-  // Closing the screen turns the microphone off, including a stream still on its way.
+  // The microphone helper lives as long as this effect: made on setup, disposed on
+  // cleanup, so React StrictMode's setup, cleanup, setup in development leaves a
+  // working one. Closing the screen turns the microphone off, including a stream
+  // still on its way.
   useEffect(() => {
+    const mic = createMic({
+      getStream: () => navigator.mediaDevices.getUserMedia({ audio: true }),
+      makeRecorder: (stream) => {
+        const mime = recorderMime();
+        return mime ? new MediaRecorder(stream, { mimeType: mime }) : new MediaRecorder(stream);
+      },
+      onStart: () => setRecording(true),
+      onTake: (blob) => {
+        setRecording(false);
+        setUserUrl(URL.createObjectURL(blob));
+      },
+      onError: () => {
+        setRecording(false);
+        setMicError(true);
+      },
+    });
+    micRef.current = mic;
     return () => {
       try { speechRef.current?.stop(); } catch { /* already stopped */ }
-      micRef.current?.dispose();
+      mic.dispose();
+      if (micRef.current === mic) micRef.current = null;
     };
   }, []);
 

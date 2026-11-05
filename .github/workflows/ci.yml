@@ -44,6 +44,11 @@ jobs:
           if-no-files-found: warn
       - name: The microphone is never left on (WebKit and Chromium)
         run: node e2e/mic.mjs
+      - name: The microphone works under React StrictMode (Vite dev server, WebKit and Chromium)
+        run: |
+          npx vite --port 5179 --strictPort --host 127.0.0.1 > vite-dev.log 2>&1 &
+          for i in $(seq 1 60); do curl -sf http://127.0.0.1:5179/english-quest/ > /dev/null && break; sleep 1; done
+          EQ_ORIGIN=http://127.0.0.1:5179/english-quest/ node e2e/mic.mjs
       - name: Oldest service workers reach the light shell within two reloads
         run: node e2e/oldest.mjs
       - name: Full A1 lesson in WebKit and Chromium
