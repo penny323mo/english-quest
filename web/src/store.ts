@@ -130,7 +130,9 @@ function snapshot(): Persisted {
  * continue becomes the writer: it first loads the latest saved record, then tells the
  * other tabs (BroadcastChannel), which stop saving until they become the writer again.
  * The channel is only a notice: every write is still checked against the stored record
- * in the same IndexedDB transaction (persist.mjs), which also catches older builds.
+ * in the same IndexedDB transaction (persist.mjs). That check detects a write by an
+ * older cached build afterwards; it cannot stop one. Older builds neither check nor
+ * listen to this channel (see the known limit in persist.mjs).
  */
 const TAB_ID = `${Date.now().toString(36)}-${Math.random().toString(36).slice(2)}`;
 const channel: BroadcastChannel | null = (() => {

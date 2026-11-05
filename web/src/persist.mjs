@@ -288,6 +288,18 @@ function revOf(record) {
  * last read or wrote (`seen`); otherwise nothing is written, status becomes
  * "conflict", and the caller must hydrate again before editing. Each write also
  * stores `rev`, the previous revision + 1. Saves from one instance run one at a time.
+ *
+ * What this guarantees, and what it does not:
+ * - Between tabs running this build (or later): a stale save is refused, so no
+ *   tab overwrites progress another tab saved.
+ * - After an older cached build writes: this build notices (the record no longer
+ *   matches) and reloads it instead of writing over it.
+ * - Known limit: it cannot stop an older cached build from writing. Builds from
+ *   before this check write the whole record unconditionally and ignore the
+ *   BroadcastChannel notice, so an old tab left open can still replace progress a
+ *   newer tab saved after that old tab last loaded. tests/single-writer.mjs pins
+ *   this ordering down. The window closes once every open tab has reloaded onto
+ *   this build or later.
  */
 export function createPersistence(open) {
   const kv = createKv(open);

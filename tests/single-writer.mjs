@@ -1,8 +1,12 @@
 // Two tabs must never silently overwrite each other's progress (review finding 1).
 // Each save checks, in the same IndexedDB transaction that writes, that the stored
 // record is exactly the one this tab last read or wrote. A tab that loses the race
-// (or a write from an older cached build that knows nothing of revisions) makes the
-// save fail with a conflict instead of discarding the other tab's progress.
+// (or one that finds a write from an older cached build that knows nothing of
+// revisions) gets a conflict instead of discarding what is stored.
+//
+// Known limit, pinned down by the last test: an older cached build writes without
+// any check, so it can still replace progress this build saved. This build only
+// detects that afterwards and does not make it worse.
 import assert from "node:assert/strict";
 import test from "node:test";
 import { createPersistence } from "../web/src/persist.mjs";
@@ -106,4 +110,32 @@ test("an older build reads the record with its revision unchanged otherwise", as
   assert.equal(stored.rev, 1);
   assert.equal(stored.schemaVersion, 3, "no schema bump: older builds keep reading it");
   assert.deepEqual(stored.progress, { F1: done("a") });
+});
+
+test("known limit: an older build's later unconditional write is detected, not prevented", async () => {
+  const db = sharedDb(record({}));
+  const tab = createPersistence(db.open);
+  await tab.hydrate();
+  // An older cached build, open in another tab, loaded the record before this tab saved.
+  const { rev: _rev, daily: _daily, ...stale } = structuredClone(db.box.get("state"));
+  // This build saves F1.
+  assert.equal((await tab.save(record({ F1: done("new") }))).ok, true);
+  assert.ok(db.box.get("state").progress.F1);
+  // The older build then saves its own change with a plain put: no check, no revision.
+  db.box.set("state", { ...stale, progress: { ...stale.progress, J1: done("old") } });
+  // NOT prevented: the older build's write replaced F1.
+  assert.equal(db.box.get("state").progress.F1, undefined, "the older build overwrote F1; nothing here can stop that");
+  assert.equal(db.box.get("state").rev, undefined);
+  // Detected: this build's next save is refused, so it does not overwrite the older build's J1 in turn.
+  const writes = db.writes();
+  const next = await tab.save(record({ F1: done("new"), F2: done("new") }));
+  assert.equal(next.ok, false);
+  assert.equal(next.conflict, true);
+  assert.equal(db.writes(), writes, "nothing written");
+  assert.deepEqual(Object.keys(db.box.get("state").progress), ["J1"]);
+  // After reloading, this build shows what is actually stored (J1, without F1) and saves on top of it.
+  await tab.hydrate();
+  assert.deepEqual(Object.keys(tab.snapshot.progress), ["J1"]);
+  assert.equal((await tab.save(record({ ...tab.snapshot.progress, F2: done("new") }))).ok, true);
+  assert.deepEqual(Object.keys(db.box.get("state").progress).sort(), ["F2", "J1"]);
 });
