@@ -8,6 +8,12 @@ export const SCHEMA_VERSION = 3;
 export const STATE_KEY = "state";
 
 const GOALS = new Set(["foundation", "jewellery", "travel", "restaurant"]);
+/**
+ * A goal this build does not know (for example one added by a newer build) reads
+ * as this neutral goal instead of refusing the whole record: the learner keeps
+ * every finished lesson, card, XP and streak, and can pick a goal again in 設定.
+ */
+export const FALLBACK_GOAL = "foundation";
 const LEVELS = new Set(["new", "some", "work"]);
 const MINUTES = new Set([10, 15, 20]);
 const CARD_NUMS = ["stability", "difficulty", "elapsed_days", "scheduled_days", "learning_steps", "reps", "lapses", "state"];
@@ -26,13 +32,12 @@ function normalizeProfile(profile) {
   if (profile == null) return null;
   if (typeof profile !== "object" || Array.isArray(profile)) throw bad("進度格式唔啱。");
   if (typeof profile.name !== "string") throw bad("進度格式唔啱。");
-  if (!GOALS.has(profile.goal)) throw bad("進度格式唔啱。");
   if (!MINUTES.has(profile.minutes)) throw bad("進度格式唔啱。");
   if (!LEVELS.has(profile.level)) throw bad("進度格式唔啱。");
   if (typeof profile.xp !== "number" || typeof profile.streak !== "number") throw bad("進度格式唔啱。");
   return {
     name: profile.name,
-    goal: profile.goal,
+    goal: GOALS.has(profile.goal) ? profile.goal : FALLBACK_GOAL,
     minutes: profile.minutes,
     level: profile.level,
     jyutping: Boolean(profile.jyutping),
