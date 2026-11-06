@@ -404,7 +404,11 @@ def main() -> int:
         if n % 200 == 0:
             print(f"  {n}/{len(jobs)}", flush=True)
     suspects = [r for r in results if r["problems"]]
-    print(f"base.en: {len(results) - len(suspects)} / {len(results)} match the text; {len(suspects)} compared with a fresh render")
+    words = sum(1 for r in results if r["word"])
+    print(
+        f"heard as their text: {len(results) - len(suspects)} / {len(results)} "
+        f"(sentences by base.en, {words} word-only clips by {WORD_ASR}); {len(suspects)} compared with a fresh render"
+    )
     if not suspects:
         print(f"checked {len(results)} clips: 0 fail")
         return 0
