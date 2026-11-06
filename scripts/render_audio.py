@@ -133,6 +133,11 @@ def clips() -> list[dict]:
     return out
 
 
+def placeholder_word(n: int) -> str:
+    """A letters-only lexicon word for the n-th [[phonemes]] say: eqphonemesa, eqphonemesb, …"""
+    return "eqphonemes" + "".join(chr(97 + int(d)) for d in str(n))
+
+
 class WordVoice:
     """Kokoro through sherpa-onnx for word-only clips. sherpa-onnx needs a lexicon for
     Kokoro, so one is built from espeak-ng (en-us, the phonemes Kokoro v0.19 was
@@ -156,7 +161,9 @@ class WordVoice:
         for say in says:
             forced = re.fullmatch(r"\[\[([^\]]+)\]\]", say.strip())
             if forced:
-                word = "eqphonemes" + "".join(chr(97 + int(d)) for d in str(len(self.placeholder)))
+                if say in self.placeholder:
+                    continue  # two cards share these phonemes (jewellery, jewelry): one entry
+                word = placeholder_word(len(self.placeholder))
                 self.placeholder[say] = word
                 lexicon[word] = spell(forced.group(1))
                 continue
