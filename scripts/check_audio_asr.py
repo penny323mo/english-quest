@@ -121,16 +121,32 @@ def compare(text: str, heard: str) -> list[str]:
     return problems
 
 
+def _homophone_table(data: dict | None) -> dict:
+    low = lambda d: {k.lower(): [v.lower() for v in vals] for k, vals in (d or {}).items()}
+    data = data or {}
+    return {"words": low(data.get("words")), "cards": low(data.get("cards"))}
+
+
+def word_recheck(job: dict, old_table: dict, new_table: dict, rules_changed: bool) -> bool:
+    """Whether --changed must listen to this word-only clip again although its text and
+    mp3 did not change: the gate it passed changed (the checker or the word voice), or
+    the homophones it may match did."""
+    if not job.get("word"):
+        return False
+    if rules_changed:
+        return True
+    card = job["where"].rsplit(" ", 1)[0]
+    return alternates(job["text"], card, old_table) != alternates(job["text"], card, new_table)
+
+
 def homophones() -> dict:
     """Reviewed spellings a recogniser may write for a lone word that sound the same:
     `words` by lemma (tea as "T", pearl as "purl") and `cards` by card id, for a
     heteronym card whose reading has its own homophone (bass the pitch as "base").
     Only for word-only clips."""
     if not HOMOPHONES.exists():
-        return {"words": {}, "cards": {}}
-    data = json.loads(HOMOPHONES.read_text(encoding="utf-8"))
-    low = lambda d: {k.lower(): [v.lower() for v in vals] for k, vals in (d or {}).items()}
-    return {"words": low(data.get("words")), "cards": low(data.get("cards"))}
+        return _homophone_table(None)
+    return _homophone_table(json.loads(HOMOPHONES.read_text(encoding="utf-8")))
 
 
 def alternates(lemma: str, card_id: str | None, same_sound: dict | None = None) -> list[str]:
@@ -139,14 +155,16 @@ def alternates(lemma: str, card_id: str | None, same_sound: dict | None = None) 
 
 
 def compare_word(lemma: str, heard: str, alts: list[str] = ()) -> list[str]:
-    """Stricter than compare for a word-only clip: no word is waved through as a
-    function word (the heard as "that" fails), and a listed homophone passes."""
+    """Stricter than compare for a word-only clip: an exact match after norm (which
+    applies the listed spelling variants), or a reviewed homophone. No word is waved
+    through as a function word (the heard as "that" fails) and there is no
+    similarity score (water heard as "waiter" fails)."""
     want, got = norm(lemma), norm(heard)
     if not got:
         return [f"{' '.join(want)}→∅"]
+    # Exact only (after norm's listed spelling variants, colour/color): no similarity
+    # score, which passed different words (water as "waiter", price as "prize").
     if "".join(want) == "".join(got):
-        return []
-    if len(want) == len(got) and all(close(x, y) for x, y in zip(want, got)):
         return []
     if " ".join(got) in alts or "".join(got) in alts:
         return []
@@ -256,7 +274,20 @@ def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
         ["git", "diff", "--name-only", ref, "--", "assets/audio"], cwd=ROOT, capture_output=True, text=True, check=True
     ).stdout.split()
     touched = {rel.replace("-slow.mp3", ".mp3") for rel in diff}
-    return [j for j in jobs if old.get(j["rel"]) != j["say"] or j["rel"] in touched]
+    # A change to the word gate re-checks the word clips it affects, though none of
+    # their text or audio changed: the checker itself, the word voice, or a homophone.
+    checker_changed = bool(subprocess.run(
+        ["git", "diff", "--name-only", ref, "--", "scripts/check_audio_asr.py"], cwd=ROOT, capture_output=True, text=True, check=True
+    ).stdout.strip())
+    old_words = old_json("content/word-audio.json") or {}
+    new_words = json.loads(WORDS.read_text(encoding="utf-8")) if WORDS.exists() else {}
+    rules_changed = checker_changed or old_words.get("voice") != new_words.get("voice")
+    old_table = _homophone_table(old_json("tests/fixtures/word-homophones.json"))
+    new_table = homophones()
+    return [
+        j for j in jobs
+        if old.get(j["rel"]) != j["say"] or j["rel"] in touched or word_recheck(j, old_table, new_table, rules_changed)
+    ]
 
 
 # Distance between a clip and a fresh render of its text. Over all 4,227 clips,
