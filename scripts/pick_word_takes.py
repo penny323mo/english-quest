@@ -7,21 +7,22 @@ clip with a fresh render when Whisper mishears it, but for one word that
 comparison is not reliable (re-renders of the same word measured up to 2.12,
 different words down to 1.87, either side of its 1.8 line). So a word clip is
 kept only when Whisper base.en transcribes it as the word, both normal and slow,
-which is the check's deterministic pass. The word voice (render_audio.WORD_VOICE) is
+which is the check's deterministic pass. The word voice (render_audio.WORD_VOICE, Kokoro) is
 heard by Whisper small.en (check_audio_asr.WORD_ASR), compared strictly with the
 reviewed homophones (check_audio_asr.compare_word). With EQ_PARAKEET set, NVIDIA
 Parakeet (an independent recogniser) has to agree as well.
 
-A take must also survive small changes to the audio (quieter, louder, faint
-noise): CI's machines decode with slightly different numerics, and a take that is
-only just heard as the word can come out differently there and fail.
+A take must also survive small changes to the audio (quieter, louder, faint noise
+with two seeds, a 40 ms shift): CI's machines decode with slightly different
+numerics, and a take that is only just heard as the word can come out differently
+there and fail.
 
 A failing take is re-rendered up to --takes times. Words that never pass go in
 content/word-audio-skip.json: 每日抽卡 still draws them, without the word 🔊. Their last take stays on disk
 for the ear check (review/word-audio-ear-check.md). With no EQ_PARAKEET set, the
 gate is Whisper alone (what CI checks).
 
-    EQ_WORD_PIPER_MODEL=… EQ_ASR_MODELS=… [EQ_PARAKEET=…] python3 scripts/pick_word_takes.py [--takes 6] [--only id …]
+    EQ_WORD_TTS_DIR=… EQ_ASR_MODELS=… [EQ_PARAKEET=…] python3 scripts/pick_word_takes.py [--takes 6] [--only id …]
 """
 from __future__ import annotations
 
@@ -71,6 +72,7 @@ def main() -> int:
     import numpy as np
 
     noise = np.random.default_rng(7).standard_normal(16000 * 30).astype(np.float32)
+    noise2 = np.random.default_rng(11).standard_normal(16000 * 30).astype(np.float32)
 
     def hears(rec, samples) -> str:
         stream = rec.create_stream()
@@ -82,7 +84,13 @@ def main() -> int:
         alts = ca.alternates(lemma, item_id, same_sound)
         pcm = np.asarray(ca.load_pcm(path), dtype=np.float32)
         level = float(np.sqrt(np.mean(pcm**2))) or 1e-4
-        variants = [pcm, pcm * 0.7, np.clip(pcm * 1.4, -1, 1), pcm + noise[: len(pcm)] * level * 0.03]
+        # CI decodes with slightly different numerics, so a take must also be heard
+        # right when quieter, louder, faintly noisy (two seeds) and shifted by 40 ms.
+        shifted = np.concatenate([np.zeros(640, dtype=np.float32), pcm])
+        variants = [
+            pcm, pcm * 0.7, np.clip(pcm * 1.4, -1, 1),
+            pcm + noise[: len(pcm)] * level * 0.03, pcm + noise2[: len(pcm)] * level * 0.05, shifted,
+        ]
         if any(ca.compare_word(lemma, hears(whisper, v), alts) for v in variants):
             return False
         return parakeet is None or not ca.compare_word(lemma, hears(parakeet, pcm), alts)
@@ -123,7 +131,7 @@ def main() -> int:
     heard_path = ra.TMP / "word-take-heard.json"
     heard_path.write_text(json.dumps(last_heard, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     skip = {
-        "note": f"Cards with no word-only clip: no Piper {ra.WORD_VOICE['model']} (speaker {speaker}) take was heard as the word by Whisper {ca.WORD_ASR}"
+        "note": f"Cards with no word-only clip: no {ra.WORD_VOICE['engine']} {ra.WORD_VOICE['model']} (voice {speaker}) take was heard as the word by Whisper {ca.WORD_ASR}"
         + (" and Parakeet" if parakeet else "")
         + f" in {args.takes} tries. 每日抽卡 still draws them, without the word 🔊. scripts/pick_word_takes.py writes this file.",
         "ids": sorted(set(failed) | set(keep_skipped)),

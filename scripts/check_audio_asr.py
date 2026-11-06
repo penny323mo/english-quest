@@ -17,7 +17,8 @@ and sherpa-onnx-whisper-small.en (word-only clips, which base.en mishears too
 often alone) from https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models.
 Point EQ_ASR_MODELS (or --models) at the folder that holds them, EQ_PIPER_MODEL
 (or --voice) at the en_US-ljspeech-medium.onnx the sentences were rendered with,
-and EQ_WORD_PIPER_MODEL (or --word-voice) at the voice in content/word-audio.json.
+and EQ_WORD_TTS_DIR (or --word-voice) at the folder of the voice in
+content/word-audio.json (Kokoro kokoro-en-v0_19).
 A word-only clip is compared strictly (compare_word), with the reviewed
 homophones in tests/fixtures/word-homophones.json.
 
@@ -351,9 +352,25 @@ def dtw_distance(a: Path, b: Path) -> float:
     return float(acc[n, m] / (n + m))
 
 
-def word_speaker() -> int | None:
-    words = json.loads(WORDS.read_text(encoding="utf-8")) if WORDS.exists() else {}
-    return (words.get("voice") or {}).get("speaker")
+class WordReference:
+    """Fresh renders of word-only clips with their own voice (render_audio.WORD_VOICE)."""
+
+    def __init__(self, folder: Path, says: list[str]):
+        sys.path.insert(0, str(ROOT / "scripts"))
+        import render_audio as ra
+
+        self.ra = ra
+        self.voice = ra.load_word_voice(says, folder)
+        self.tmp = Path(os.environ.get("TMPDIR", "/tmp")) / "eq-asr-ref"
+        self.tmp.mkdir(parents=True, exist_ok=True)
+
+    def mp3(self, job: dict) -> Path:
+        slow = job["rel"].endswith("-slow.mp3")
+        stem = self.tmp / job["rel"].replace("/", "_")
+        wav, mp3 = stem.with_suffix(".wav"), stem
+        self.voice.synth(job.get("ref") or job["text"], wav, 1.35 if slow else 1.0)
+        self.ra.to_mp3(wav, mp3)
+        return mp3
 
 
 class Reference:
@@ -390,7 +407,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--models", default=os.environ.get("EQ_ASR_MODELS", ""))
     ap.add_argument("--voice", default=os.environ.get("EQ_PIPER_MODEL", ""), help="Piper en_US-ljspeech-medium.onnx")
-    ap.add_argument("--word-voice", default=os.environ.get("EQ_WORD_PIPER_MODEL", ""), help="Piper voice of the word-only clips (content/word-audio.json `voice`)")
+    ap.add_argument("--word-voice", default=os.environ.get("EQ_WORD_TTS_DIR", ""), help="folder of the word-only clips' voice (content/word-audio.json `voice`, Kokoro)")
     ap.add_argument("--only", nargs="*", help="clip paths (assets/audio/...) to check")
     ap.add_argument("--changed", metavar="REF", help="only clips whose text or mp3 changed since this git ref")
     ap.add_argument("--slow", action="store_true", help="also check the -slow twin of each clip")
@@ -450,8 +467,8 @@ def main() -> int:
     word_ref = None
     if any(r["word"] for r in suspects):
         if not args.word_voice:
-            sys.exit("set EQ_WORD_PIPER_MODEL or --word-voice to the word clips' Piper voice")
-        word_ref = Reference(args.word_voice, word_speaker())
+            sys.exit("set EQ_WORD_TTS_DIR or --word-voice to the word clips' voice folder")
+        word_ref = WordReference(Path(args.word_voice), [r.get("ref") or r["text"] for r in suspects if r["word"]])
     for n, r in enumerate(suspects, 1):
         fresh = (word_ref if r["word"] else ref).mp3(r)
         r["refBase"] = transcribe(word_rec if r["word"] else first, fresh)

@@ -17,7 +17,7 @@ recording behind. tests/audio-rendered.mjs fails if the two drift apart.
 The voice is PREP/voices/en_US-ljspeech-medium.onnx, or EQ_PIPER_MODEL.
 Word-only clips (每日抽卡 🔊) use WORD_VOICE instead: LJSpeech garbles many
 isolated words (good as "bed", job as "jar"), while it reads them correctly in a
-sentence. That voice is PREP/voices/<WORD_VOICE model>.onnx, or EQ_WORD_PIPER_MODEL.
+sentence. That voice is Kokoro in PREP/voices/<WORD_VOICE model>/, or EQ_WORD_TTS_DIR.
 """
 from __future__ import annotations
 
@@ -36,11 +36,12 @@ from piper.config import SynthesisConfig
 
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = Path(os.environ.get("EQ_PIPER_MODEL") or ROOT / "PREP" / "voices" / "en_US-ljspeech-medium.onnx")
-# Word-only clips: a US female voice from LibriTTS-R (CC BY 4.0), speaker 144, whose
-# pitch is close to LJSpeech's. Recorded in content/word-audio.json so the checker
-# renders its references with the same voice.
-WORD_VOICE = {"model": "en_US-libritts_r-medium", "speaker": 144}
-WORD_MODEL = Path(os.environ.get("EQ_WORD_PIPER_MODEL") or ROOT / "PREP" / "voices" / f"{WORD_VOICE['model']}.onnx")
+# Word-only clips: Kokoro v0.19 (Apache-2.0 weights) voice "af", a US female voice,
+# run with sherpa-onnx. Recorded in content/word-audio.json so the checker renders its
+# references with the same voice. Piper voices that read lone words well are all
+# fine-tuned from the Lessac data, whose licence is research-only.
+WORD_VOICE = {"engine": "kokoro", "model": "kokoro-en-v0_19", "speaker": 0}
+WORD_MODEL = Path(os.environ.get("EQ_WORD_TTS_DIR") or ROOT / "PREP" / "voices" / WORD_VOICE["model"])
 RENDERED = ROOT / "assets" / "audio" / "rendered.json"
 LEX = ROOT / "content" / "lexicon.json"
 LINES = ROOT / "content" / "lines.json"
@@ -132,13 +133,70 @@ def clips() -> list[dict]:
     return out
 
 
-def load_word_voice() -> PiperVoice:
-    voice = PiperVoice.load(str(WORD_MODEL))
-    voice.config.espeak_voice = "en-us"
-    return voice
+class WordVoice:
+    """Kokoro through sherpa-onnx for word-only clips. sherpa-onnx needs a lexicon for
+    Kokoro, so one is built from espeak-ng (en-us, the phonemes Kokoro v0.19 was
+    trained on) for every word it will be asked to say. A `[[phonemes]]` say (a
+    heteronym's reading) gets a placeholder word mapped to exactly those phonemes."""
+
+    def __init__(self, folder: Path, speaker: int, says: list[str], threads: int = os.cpu_count() or 2):
+        import sherpa_onnx
+        from piper.phonemize_espeak import EspeakPhonemizer
+
+        self.speaker = speaker
+        tokens = {line.rsplit(" ", 1)[0] for line in (folder / "tokens.txt").read_text(encoding="utf-8").splitlines() if line.strip()}
+        espeak = EspeakPhonemizer()
+        lexicon: dict[str, str] = {}
+        self.placeholder: dict[str, str] = {}
+
+        def spell(phonemes: str) -> str:
+            kept = [c for c in phonemes if c in tokens and c not in " .,!?"]
+            return " ".join(kept)
+
+        for say in says:
+            forced = re.fullmatch(r"\[\[([^\]]+)\]\]", say.strip())
+            if forced:
+                word = "eqphonemes" + "".join(chr(97 + int(d)) for d in str(len(self.placeholder)))
+                self.placeholder[say] = word
+                lexicon[word] = spell(forced.group(1))
+                continue
+            for word in re.findall(r"[A-Za-z']+", say):
+                key = word.lower()
+                if key not in lexicon:
+                    lexicon[key] = spell("".join("".join(s) for s in espeak.phonemize("en-us", key)))
+        TMP.mkdir(exist_ok=True)
+        lex_path = TMP / "kokoro-words-lexicon.txt"
+        lex_path.write_text("".join(f"{w} {p}\n" for w, p in sorted(lexicon.items())), encoding="utf-8")
+        self.tts = sherpa_onnx.OfflineTts(sherpa_onnx.OfflineTtsConfig(model=sherpa_onnx.OfflineTtsModelConfig(
+            kokoro=sherpa_onnx.OfflineTtsKokoroModelConfig(
+                model=str(folder / "model.onnx"), voices=str(folder / "voices.bin"), tokens=str(folder / "tokens.txt"),
+                data_dir=str(folder / "espeak-ng-data"), lexicon=str(lex_path),
+            ),
+            num_threads=threads,
+        )))
+
+    def synth(self, say: str, wav_path: Path, scale: float) -> None:
+        import numpy as np
+
+        audio = self.tts.generate(self.placeholder.get(say, say), sid=self.speaker, speed=1.0 / scale)
+        wav_path.parent.mkdir(parents=True, exist_ok=True)
+        with wave.open(str(wav_path), "wb") as wf:
+            wf.setnchannels(1)
+            wf.setsampwidth(2)
+            wf.setframerate(audio.sample_rate)
+            wf.writeframes((np.clip(np.asarray(audio.samples), -1, 1) * 32767).astype(np.int16).tobytes())
 
 
-def synth(voice: PiperVoice, text: str, wav_path: Path, scale: float, speaker: int | None = None) -> None:
+def load_word_voice(says: list[str] | None = None, folder: Path | None = None) -> WordVoice:
+    if says is None:
+        says = [row["say"] for row in word_clips(include_skipped=True)["items"].values()]
+    return WordVoice(folder or WORD_MODEL, WORD_VOICE["speaker"], says)
+
+
+def synth(voice, text: str, wav_path: Path, scale: float, speaker: int | None = None) -> None:
+    if isinstance(voice, WordVoice):
+        voice.synth(text, wav_path, scale)
+        return
     cfg = SynthesisConfig(length_scale=scale, speaker_id=speaker)
     wav_path.parent.mkdir(parents=True, exist_ok=True)
     with wave.open(str(wav_path), "wb") as wf:
