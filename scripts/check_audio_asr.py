@@ -297,6 +297,20 @@ def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
 # can sit above the line too; those are listed in tests/fixtures/asr-known.json.
 DTW_MAX = 1.8
 
+# A word-only clip whose transcript is off may still pass if it is near-identical to a
+# fresh render of the same word in the same voice, and that render is heard as the
+# word. CI's Whisper sometimes doubles a lone word ("Floor Floor") that it hears right
+# on a fresh render. Kokoro re-renders of one word measured 0.33-0.65; the closest
+# different words measured 0.88 (price/prize, pen/pin), the rest over 1.0. Homophones
+# (wine/whine, 0.40) are the same word to the ear anyway.
+WORD_DTW_MAX = 0.7
+
+
+def word_acoustic_ok(r: dict, alts: list[str]) -> bool:
+    """A word-only clip that was misheard passes only as a near copy of a render that
+    is heard as its word (see WORD_DTW_MAX)."""
+    return r.get("distance", 99) <= WORD_DTW_MAX and not compare_word(r["text"], r.get("refBase", ""), alts)
+
 
 def similarity(a: str, b: str) -> float:
     x, y = norm(a), norm(b)
@@ -476,12 +490,15 @@ def main() -> int:
         if n % 100 == 0:
             print(f"  fresh render {n}/{len(suspects)}", flush=True)
     for r in results:
-        # A plain word-only clip must be heard as its word: an acoustic match with a
-        # fresh render is not reliable for one word (re-renders of the same word and
-        # different words overlap around DTW_MAX). Only a heteronym's [[phonemes]]
-        # clip, whose spelling reads two ways, may pass on that match.
-        acoustic = not r["word"] or bool(r.get("ref"))
-        r["ok"] = not r["problems"] or (acoustic and r["distance"] <= DTW_MAX)
+        if not r["problems"]:
+            r["ok"] = True
+        elif r["word"]:
+            # A word clip passes on sound only as a near copy (WORD_DTW_MAX, far tighter
+            # than a sentence's DTW_MAX) of a fresh render that is itself heard as the word.
+            card = r["where"].rsplit(" ", 1)[0]
+            r["ok"] = word_acoustic_ok(r, alternates(r["text"], card, same_sound))
+        else:
+            r["ok"] = r["distance"] <= DTW_MAX
 
     failed, waived = [], []
     for r in results:
@@ -490,7 +507,7 @@ def main() -> int:
     for label, rows in (("KNOWN (ear check)", waived), ("FAIL", failed)):
         for r in rows:
             print(
-                f"{label}: {r['rel']} [{r['where']}] distance {r['distance']} > {DTW_MAX}\n"
+                f"{label}: {r['rel']} [{r['where']}] distance {r['distance']} > {WORD_DTW_MAX if r['word'] else DTW_MAX}\n"
                 f"  text:        {r['text']}\n  clip heard:  {r['base']}\n  fresh heard: {r['refBase']}"
             )
     if args.json:

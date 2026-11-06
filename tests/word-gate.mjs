@@ -48,3 +48,14 @@ print(json.dumps([
 ]))`);
   assert.deepEqual(out, [true, false, true, false]);
 });
+
+test("a misheard word clip passes only as a near copy of a render heard as the word", () => {
+  const out = py(`print(json.dumps([
+  ca.word_acoustic_ok({"text": "floor", "distance": 0.514, "refBase": "Floor"}, []),
+  ca.word_acoustic_ok({"text": "price", "distance": 0.88, "refBase": "Price"}, []),
+  ca.word_acoustic_ok({"text": "floor", "distance": 0.4, "refBase": "Flaw"}, []),
+  ca.word_acoustic_ok({"text": "floor", "refBase": "Floor"}, []),
+  ca.WORD_DTW_MAX < 0.88 and ca.WORD_DTW_MAX > 0.65,
+]))`);
+  assert.deepEqual(out, [true, false, false, false, true]);
+});
