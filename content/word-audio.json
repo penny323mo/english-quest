@@ -206,6 +206,11 @@
    "audioSlow": "assets/audio/words/to-prep-word-slow.mp3",
    "say": "to"
   },
+  "for-prep": {
+   "audio": "assets/audio/words/for-prep-word.mp3",
+   "audioSlow": "assets/audio/words/for-prep-word-slow.mp3",
+   "say": "for"
+  },
   "in-prep": {
    "audio": "assets/audio/words/in-prep-word.mp3",
    "audioSlow": "assets/audio/words/in-prep-word-slow.mp3",
@@ -360,6 +365,16 @@
    "audio": "assets/audio/words/store-noun-word.mp3",
    "audioSlow": "assets/audio/words/store-noun-word-slow.mp3",
    "say": "store"
+  },
+  "jewellery-noun": {
+   "audio": "assets/audio/words/jewellery-noun-word.mp3",
+   "audioSlow": "assets/audio/words/jewellery-noun-word-slow.mp3",
+   "say": "[[dʒˈulɹi]]"
+  },
+  "jewelry-noun": {
+   "audio": "assets/audio/words/jewelry-noun-word.mp3",
+   "audioSlow": "assets/audio/words/jewelry-noun-word-slow.mp3",
+   "say": "[[dʒˈulɹi]]"
   },
   "necklace-noun": {
    "audio": "assets/audio/words/necklace-noun-word.mp3",
@@ -1451,6 +1466,11 @@
    "audioSlow": "assets/audio/words/hold-verb-word-slow.mp3",
    "say": "hold"
   },
+  "transfer-verb": {
+   "audio": "assets/audio/words/transfer-verb-word.mp3",
+   "audioSlow": "assets/audio/words/transfer-verb-word-slow.mp3",
+   "say": "[[tɹænsfˈɜ]]"
+  },
   "message-noun": {
    "audio": "assets/audio/words/message-noun-word.mp3",
    "audioSlow": "assets/audio/words/message-noun-word-slow.mp3",
@@ -2201,6 +2221,11 @@
    "audioSlow": "assets/audio/words/tourist-noun-word-slow.mp3",
    "say": "tourist"
   },
+  "macau-noun": {
+   "audio": "assets/audio/words/macau-noun-word.mp3",
+   "audioSlow": "assets/audio/words/macau-noun-word-slow.mp3",
+   "say": "Macau"
+  },
   "hong-kong-noun": {
    "audio": "assets/audio/words/hong-kong-noun-word.mp3",
    "audioSlow": "assets/audio/words/hong-kong-noun-word-slow.mp3",
@@ -2851,6 +2876,11 @@
    "audioSlow": "assets/audio/words/next-step-phrase-word-slow.mp3",
    "say": "next step"
   },
+  "transfer-verb-bag": {
+   "audio": "assets/audio/words/transfer-verb-bag-word.mp3",
+   "audioSlow": "assets/audio/words/transfer-verb-bag-word-slow.mp3",
+   "say": "[[tɹænsfˈɜ]]"
+  },
   "less-sugar-phrase": {
    "audio": "assets/audio/words/less-sugar-phrase-word.mp3",
    "audioSlow": "assets/audio/words/less-sugar-phrase-word-slow.mp3",
@@ -2945,6 +2975,11 @@
    "audio": "assets/audio/words/purity-noun-word.mp3",
    "audioSlow": "assets/audio/words/purity-noun-word-slow.mp3",
    "say": "purity"
+  },
+  "toothache-noun": {
+   "audio": "assets/audio/words/toothache-noun-word.mp3",
+   "audioSlow": "assets/audio/words/toothache-noun-word-slow.mp3",
+   "say": "toothache"
   },
   "x-ray-noun": {
    "audio": "assets/audio/words/x-ray-noun-word.mp3",
