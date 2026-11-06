@@ -12,6 +12,7 @@ on:
       - "content/lines.json"
       - "assets/audio/**"
       - "scripts/check_audio_asr.py"
+      - "scripts/asr_selftest.py"
       - "tests/fixtures/asr-known.json"
       - "tests/fixtures/word-homophones.json"
       - "content/word-audio.json"
@@ -55,10 +56,23 @@ jobs:
           # Parakeet rules on a word clip when Whisper only repeats the word.
           curl -sSL --retry 5 "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8.tar.bz2" \
             | tar xj --wildcards '*/encoder.int8.onnx' '*/decoder.int8.onnx' '*/joiner.int8.onnx' '*/tokens.txt'
+      # Real audio, real models: a word clip joined to itself must reach Parakeet and
+      # fail, whether or not this run's Whisper happens to loop on a real clip.
+      - name: Parakeet decides when Whisper only repeats a word (self-test)
+        run: >-
+          python scripts/asr_selftest.py --models ~/asr-models
+          --parakeet ~/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8
       - name: Check changed clips (normal and slow)
         run: >-
           python scripts/check_audio_asr.py --models ~/asr-models
           --voice ~/asr-models/vits-piper-en_US-ljspeech-medium/en_US-ljspeech-medium.onnx
           --word-voice ~/asr-models/kokoro-en-v0_19
           --parakeet ~/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8
-          --changed origin/${{ github.base_ref }} --slow
+          --changed origin/${{ github.base_ref }} --slow --json asr-result.json
+      - name: Keep every clip's verdict (asr-result.json)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: asr-result
+          path: asr-result.json
+          if-no-files-found: warn

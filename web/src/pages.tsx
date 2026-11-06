@@ -587,7 +587,7 @@ export function Attributions() {
       <p>ECDICT（MIT）同 CC-CEDICT（CC BY-SA 4.0）係中文對照參考，冇批量拷貝入卡。CC-Canto（CC BY-SA 3.0）用嚟核對粵拼開關；粵拼唔會教英文音。</p>
       <p>New General Service List 只係頻率參考，未整份複製入程式。</p>
       <h2>聲音</h2>
-      <p>教學錄音係 Piper（MIT）en_US-ljspeech-medium。LJ Speech 屬公有領域。音素由 espeak-ng 產生，並強制 en-us，異讀詞再人手鎖定音素。慢速係合成時嘅長度比例 1.35，短句檔案時長未必剛好係 1.35 倍，但會慢過正常速度。冇用 Edge、Azure 或者 Kokoro。</p>
+      <p>例句同課堂嘅教學錄音係 Piper（MIT）en_US-ljspeech-medium。LJ Speech 屬公有領域。音素由 espeak-ng 產生，並強制 en-us，異讀詞再人手鎖定音素。慢速係合成時嘅長度比例 1.35，短句檔案時長未必剛好係 1.35 倍，但會慢過正常速度。冇用 Edge 或者 Azure。每日抽卡嘅單字 🔊 就用 Kokoro（見下一段）。</p>
       <p>每日抽卡嘅單字 🔊 用 Kokoro v0.19（hexgrad，權重 Apache-2.0）嘅美式女聲 af，經 sherpa-onnx 播出；音素一樣由 espeak-ng（en-us）產生。Kokoro 模型卡寫明只用寬鬆授權或者冇版權嘅錄音訓練（包括公有領域錄音同大型供應商 TTS 生成嘅合成語音）。LJ Speech 把聲單獨讀一個字好多時讀錯（例如 good 讀成 bed），讀句子就冇問題，所以例句照用 LJ Speech。每個單字錄音要 Whisper small.en 同 NVIDIA Parakeet 兩個都聽得出係嗰個字先會用；聽唔出嘅就唔播。</p>
       <p>瀏覽器嘅 Web Speech 只係臨時跟讀，唔係標準音。</p>
       <h2>複習同畫面</h2>

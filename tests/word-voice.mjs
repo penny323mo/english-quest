@@ -40,6 +40,7 @@ test("the attributions page credits the word voice and its licence", () => {
   assert.match(page, /Kokoro v0\.19/);
   assert.match(page, /Apache-2\.0/);
   assert.doesNotMatch(page, /libritts|LibriTTS-R/, "no Lessac-derived voice is credited, so none is used");
+  assert.doesNotMatch(page, /冇用[^。<]*Kokoro/, "the page must not say Kokoro is unused while crediting it");
 });
 
 test("no word voice is fine-tuned from the research-only Lessac data", () => {

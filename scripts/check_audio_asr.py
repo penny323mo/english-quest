@@ -467,83 +467,136 @@ def main() -> int:
     known = json.loads(KNOWN.read_text(encoding="utf-8")) if KNOWN.exists() else {}
     reuse = {}
     if args.reuse:
-        for r in json.loads(Path(args.reuse).read_text(encoding="utf-8")):
-            reuse[(r["rel"], r["say"])] = r["base"]
+        data = json.loads(Path(args.reuse).read_text(encoding="utf-8"))
+        for r in data["results"] if isinstance(data, dict) else data:
+            if not r.get("word"):
+                reuse[(r["rel"], r["say"])] = r["base"]
 
-    # 1. base.en on a sentence clip, small.en on a word-only clip: a match with the
-    #    text passes straight away.
+    hearers = load_hearers(args, folder, jobs)
+    return run(jobs, known=known, reuse=reuse, json_path=args.json, **hearers)
+
+
+def load_hearers(args, folder: Path, jobs: list[dict]) -> dict:
+    """The recognisers and fresh-render comparison main() hands to run(). Tests replace
+    this one function with scripted output and run main() itself."""
     first = recognizer(folder, "base.en", args.threads)
     word_rec = recognizer(folder, WORD_ASR, args.threads) if any(j["word"] for j in jobs) else None
-    same_sound = homophones()
     parakeet = parakeet_recognizer(Path(args.parakeet), args.threads) if args.parakeet else None
-    results = []
+    refs: dict[str, object] = {}
+
+    def fresh(r: dict) -> tuple[str, float]:
+        if r["word"]:
+            if "word" not in refs:
+                if not args.word_voice:
+                    sys.exit("set EQ_WORD_TTS_DIR or --word-voice to the word clips' voice folder")
+                refs["word"] = WordReference(Path(args.word_voice), [j.get("ref") or j["text"] for j in jobs if j["word"]])
+            mp3 = refs["word"].mp3(r)
+        else:
+            refs.setdefault("sentence", Reference(args.voice))
+            mp3 = refs["sentence"].mp3(r)
+        heard = transcribe(word_rec if r["word"] else first, mp3)
+        return heard, round(dtw_distance(ROOT / r["rel"], mp3), 3)
+
+    return {
+        "hear_sentence": lambda job: transcribe(first, ROOT / job["rel"]),
+        "hear_word": lambda job: transcribe(word_rec, ROOT / job["rel"]),
+        "hear_parakeet": (lambda job: transcribe(parakeet, ROOT / job["rel"])) if parakeet is not None else None,
+        "fresh": fresh,
+    }
+
+
+VERDICTS = ("whisper", "parakeet", "acoustic", "waived", "failed")
+
+
+def run(jobs: list[dict], *, hear_sentence, hear_word, hear_parakeet, fresh, known: dict,
+        reuse: dict | None = None, same_sound: dict | None = None, json_path: str | None = None) -> int:
+    """The whole decision for a list of clips. Recognisers and the fresh-render
+    comparison are passed in, so tests can run this exact flow on scripted output.
+
+    Each clip gets exactly one verdict:
+      whisper   heard as its text straight away (base.en for a sentence, small.en for a word);
+      parakeet  a word clip Whisper only repeated ("close close") that Parakeet heard
+                exactly once. Parakeet has the last word there: if it hears anything
+                else, or is not available, the clip fails, with no acoustic fallback;
+      acoustic  misheard otherwise, but close to a fresh render (DTW_MAX for a sentence;
+                WORD_DTW_MAX, with that render heard as the word, for a word);
+      waived    failed, but listed in tests/fixtures/asr-known.json;
+      failed    anything else.
+    """
+    reuse = reuse or {}
+    same_sound = same_sound if same_sound is not None else homophones()
+    results: list[dict] = []
+    referred: list[dict] = []
+
     for n, job in enumerate(jobs, 1):
         if job["word"]:
-            heard = transcribe(word_rec, ROOT / job["rel"])
+            heard = hear_word(job)
             card = job["where"].rsplit(" ", 1)[0]
             alts = alternates(job["text"], card, same_sound)
             row = dict(job, base=heard, problems=compare_word(job["text"], heard, alts))
-            # Whisper looping on a lone word is its own failure, not the clip's: an
-            # independent recogniser must then hear the word exactly, once.
-            if row["problems"] and parakeet is not None and repeated_word(job["text"], heard):
-                row["parakeet"] = transcribe(parakeet, ROOT / job["rel"])
-                if not compare_word(job["text"], row["parakeet"], alts):
-                    row["problems"] = []
-            results.append(row)
+            if not row["problems"]:
+                row["verdict"] = "whisper"
+            elif repeated_word(job["text"], heard):
+                # Whisper looping on a lone word: Parakeet decides, and nothing else may.
+                row["parakeet"] = hear_parakeet(job) if hear_parakeet is not None else None
+                accepted = row["parakeet"] is not None and not compare_word(job["text"], row["parakeet"], alts)
+                row["verdict"] = "parakeet" if accepted else "rejected"
+                referred.append({"rel": job["rel"], "text": job["text"], "whisper": heard,
+                                 "parakeet": row["parakeet"], "verdict": "parakeet" if accepted else "failed"})
         else:
-            heard = reuse.get((job["rel"], job["say"])) or transcribe(first, ROOT / job["rel"])
-            results.append(dict(job, base=heard, problems=compare(job["text"], heard)))
+            heard = reuse.get((job["rel"], job["say"])) or hear_sentence(job)
+            row = dict(job, base=heard, problems=compare(job["text"], heard))
+            if not row["problems"]:
+                row["verdict"] = "whisper"
+        results.append(row)
         if n % 200 == 0:
             print(f"  {n}/{len(jobs)}", flush=True)
-    suspects = [r for r in results if r["problems"]]
-    words = sum(1 for r in results if r["word"])
-    print(
-        f"heard as their text: {len(results) - len(suspects)} / {len(results)} "
-        f"(sentences by base.en, {words} word-only clips by {WORD_ASR}); {len(suspects)} compared with a fresh render"
-    )
-    if not suspects:
-        print(f"checked {len(results)} clips: 0 fail")
-        return 0
 
-    # 2. The transcript differs: compare the clip with a fresh render of the shown text,
-    #    in the voice the clip was made with.
-    ref = Reference(args.voice)
-    word_ref = None
-    if any(r["word"] for r in suspects):
-        if not args.word_voice:
-            sys.exit("set EQ_WORD_TTS_DIR or --word-voice to the word clips' voice folder")
-        word_ref = WordReference(Path(args.word_voice), [r.get("ref") or r["text"] for r in suspects if r["word"]])
+    # The rest were misheard (not a repeat Parakeet ruled on): compare each with a fresh
+    # render of the shown text, in the voice the clip was made with.
+    suspects = [r for r in results if "verdict" not in r]
     for n, r in enumerate(suspects, 1):
-        fresh = (word_ref if r["word"] else ref).mp3(r)
-        r["refBase"] = transcribe(word_rec if r["word"] else first, fresh)
-        r["distance"] = round(dtw_distance(ROOT / r["rel"], fresh), 3)
+        r["refBase"], r["distance"] = fresh(r)
+        if r["word"]:
+            card = r["where"].rsplit(" ", 1)[0]
+            ok = word_acoustic_ok(r, alternates(r["text"], card, same_sound))
+        else:
+            ok = r["distance"] <= DTW_MAX
+        r["verdict"] = "acoustic" if ok else "rejected"
         if n % 100 == 0:
             print(f"  fresh render {n}/{len(suspects)}", flush=True)
     for r in results:
-        if not r["problems"]:
-            r["ok"] = True
-        elif r["word"]:
-            # A word clip passes on sound only as a near copy (WORD_DTW_MAX, far tighter
-            # than a sentence's DTW_MAX) of a fresh render that is itself heard as the word.
-            card = r["where"].rsplit(" ", 1)[0]
-            r["ok"] = word_acoustic_ok(r, alternates(r["text"], card, same_sound))
-        else:
-            r["ok"] = r["distance"] <= DTW_MAX
+        if r["verdict"] == "rejected":
+            r["verdict"] = "waived" if r["rel"] in known else "failed"
+        r["ok"] = r["verdict"] != "failed"
 
-    failed, waived = [], []
+    summary = {"total": len(results), **{v: sum(1 for r in results if r["verdict"] == v) for v in VERDICTS}}
+    assert sum(summary[v] for v in VERDICTS) == summary["total"]
+    if json_path:
+        Path(json_path).write_text(
+            json.dumps({"summary": summary, "parakeet": referred, "results": results}, ensure_ascii=False, indent=1) + "\n",
+            encoding="utf-8",
+        )
+
+    words = sum(1 for r in results if r["word"])
+    print(f"checked {summary['total']} clips ({summary['total'] - words} sentences by base.en, {words} word-only clips by {WORD_ASR}):")
+    print(f"  heard by Whisper straight away: {summary['whisper']}")
+    print(f"  Parakeet ruled on {len(referred)} (Whisper only repeated the word): {summary['parakeet']} passed")
+    for p in referred:
+        print(f"    {p['verdict'].upper():8} {p['rel']}: Whisper {p['whisper']!r}, Parakeet {p['parakeet']!r}")
+    print(f"  acoustic fallback: {summary['acoustic']}")
+    print(f"  waived (known): {summary['waived']}")
+    print(f"  failed: {summary['failed']}")
     for r in results:
-        if not r["ok"]:
-            (waived if r["rel"] in known else failed).append(r)
-    for label, rows in (("KNOWN (ear check)", waived), ("FAIL", failed)):
-        for r in rows:
+        if r["verdict"] in ("waived", "failed") and "distance" in r:
+            limit = WORD_DTW_MAX if r["word"] else DTW_MAX
             print(
-                f"{label}: {r['rel']} [{r['where']}] distance {r['distance']} > {WORD_DTW_MAX if r['word'] else DTW_MAX}\n"
+                f"{'KNOWN (ear check)' if r['verdict'] == 'waived' else 'FAIL'}: {r['rel']} [{r['where']}] distance {r['distance']} (limit {limit})\n"
                 f"  text:        {r['text']}\n  clip heard:  {r['base']}\n  fresh heard: {r['refBase']}"
             )
-    if args.json:
-        Path(args.json).write_text(json.dumps(results, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"checked {len(results)} clips: {len(failed)} fail, {len(waived)} known")
-    return 1 if failed else 0
+        elif r["verdict"] in ("waived", "failed"):
+            print(f"{'KNOWN (ear check)' if r['verdict'] == 'waived' else 'FAIL'}: {r['rel']} [{r['where']}] Whisper {r['base']!r}, Parakeet {r.get('parakeet')!r}")
+    return 1 if summary["failed"] else 0
 
 
 if __name__ == "__main__":
