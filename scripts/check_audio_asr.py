@@ -20,7 +20,9 @@ Point EQ_ASR_MODELS (or --models) at the folder that holds them, EQ_PIPER_MODEL
 and EQ_WORD_TTS_DIR (or --word-voice) at the folder of the voice in
 content/word-audio.json (Kokoro kokoro-en-v0_19).
 A word-only clip is compared strictly (compare_word), with the reviewed
-homophones in tests/fixtures/word-homophones.json.
+homophones in tests/fixtures/word-homophones.json. When Whisper only repeats the
+word ("close close"), NVIDIA Parakeet (EQ_PARAKEET or --parakeet) must hear it
+exactly once.
 
     python3 scripts/check_audio_asr.py                 # every clip
     python3 scripts/check_audio_asr.py --only rel ...  # just these clips
@@ -306,6 +308,24 @@ DTW_MAX = 1.8
 WORD_DTW_MAX = 0.7
 
 
+def repeated_word(lemma: str, heard: str) -> bool:
+    """Whisper's repetition loop: the transcript is only the word, said 2+ times
+    ("close close", "password" x8). Seen on CI's runners on clips it hears right on
+    other runs."""
+    want, got = norm(lemma), norm(heard)
+    return bool(want) and len(got) >= 2 * len(want) and len(got) % len(want) == 0 and got == want * (len(got) // len(want))
+
+
+def parakeet_recognizer(folder: Path, threads: int):
+    import sherpa_onnx
+
+    return sherpa_onnx.OfflineRecognizer.from_transducer(
+        encoder=str(folder / "encoder.int8.onnx"), decoder=str(folder / "decoder.int8.onnx"),
+        joiner=str(folder / "joiner.int8.onnx"), tokens=str(folder / "tokens.txt"),
+        model_type="nemo_transducer", num_threads=threads,
+    )
+
+
 def word_acoustic_ok(r: dict, alts: list[str]) -> bool:
     """A word-only clip that was misheard passes only as a near copy of a render that
     is heard as its word (see WORD_DTW_MAX)."""
@@ -421,6 +441,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--models", default=os.environ.get("EQ_ASR_MODELS", ""))
     ap.add_argument("--voice", default=os.environ.get("EQ_PIPER_MODEL", ""), help="Piper en_US-ljspeech-medium.onnx")
+    ap.add_argument("--parakeet", default=os.environ.get("EQ_PARAKEET", ""), help="NVIDIA Parakeet folder: rules on a word clip when Whisper only repeats the word")
     ap.add_argument("--word-voice", default=os.environ.get("EQ_WORD_TTS_DIR", ""), help="folder of the word-only clips' voice (content/word-audio.json `voice`, Kokoro)")
     ap.add_argument("--only", nargs="*", help="clip paths (assets/audio/...) to check")
     ap.add_argument("--changed", metavar="REF", help="only clips whose text or mp3 changed since this git ref")
@@ -454,12 +475,21 @@ def main() -> int:
     first = recognizer(folder, "base.en", args.threads)
     word_rec = recognizer(folder, WORD_ASR, args.threads) if any(j["word"] for j in jobs) else None
     same_sound = homophones()
+    parakeet = parakeet_recognizer(Path(args.parakeet), args.threads) if args.parakeet else None
     results = []
     for n, job in enumerate(jobs, 1):
         if job["word"]:
             heard = transcribe(word_rec, ROOT / job["rel"])
             card = job["where"].rsplit(" ", 1)[0]
-            results.append(dict(job, base=heard, problems=compare_word(job["text"], heard, alternates(job["text"], card, same_sound))))
+            alts = alternates(job["text"], card, same_sound)
+            row = dict(job, base=heard, problems=compare_word(job["text"], heard, alts))
+            # Whisper looping on a lone word is its own failure, not the clip's: an
+            # independent recogniser must then hear the word exactly, once.
+            if row["problems"] and parakeet is not None and repeated_word(job["text"], heard):
+                row["parakeet"] = transcribe(parakeet, ROOT / job["rel"])
+                if not compare_word(job["text"], row["parakeet"], alts):
+                    row["problems"] = []
+            results.append(row)
         else:
             heard = reuse.get((job["rel"], job["say"])) or transcribe(first, ROOT / job["rel"])
             results.append(dict(job, base=heard, problems=compare(job["text"], heard)))

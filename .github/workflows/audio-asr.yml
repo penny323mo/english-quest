@@ -38,7 +38,7 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/asr-models
-          key: sherpa-onnx-whisper-base.en-small.en-piper-ljspeech-medium-kokoro-en-v0_19-v3
+          key: sherpa-onnx-whisper-base.en-small.en-parakeet-tdt-0.6b-v2-piper-ljspeech-medium-kokoro-en-v0_19-v4
       - name: Download Whisper models
         if: steps.models.outputs.cache-hit != 'true'
         run: |
@@ -52,9 +52,13 @@ jobs:
             | tar xj --wildcards '*/en_US-ljspeech-medium.onnx' '*/en_US-ljspeech-medium.onnx.json'
           # Word-only clips: Kokoro v0.19 (Apache-2.0).
           curl -sSL --retry 5 "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-en-v0_19.tar.bz2" | tar xj
+          # Parakeet rules on a word clip when Whisper only repeats the word.
+          curl -sSL --retry 5 "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8.tar.bz2" \
+            | tar xj --wildcards '*/encoder.int8.onnx' '*/decoder.int8.onnx' '*/joiner.int8.onnx' '*/tokens.txt'
       - name: Check changed clips (normal and slow)
         run: >-
           python scripts/check_audio_asr.py --models ~/asr-models
           --voice ~/asr-models/vits-piper-en_US-ljspeech-medium/en_US-ljspeech-medium.onnx
           --word-voice ~/asr-models/kokoro-en-v0_19
+          --parakeet ~/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8
           --changed origin/${{ github.base_ref }} --slow

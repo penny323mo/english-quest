@@ -59,3 +59,16 @@ test("a misheard word clip passes only as a near copy of a render heard as the w
 ]))`);
   assert.deepEqual(out, [true, false, false, false, true]);
 });
+
+test("only a pure repetition of the word goes to the second recogniser", () => {
+  const out = py(`print(json.dumps([
+  ca.repeated_word("close", "close close"),
+  ca.repeated_word("password", "password password password password password password password password"),
+  ca.repeated_word("window seat", "Window seat, window seat."),
+  ca.repeated_word("close", "close"),
+  ca.repeated_word("close", "close clothes"),
+  ca.repeated_word("floor", "floor flaw floor"),
+  ca.repeated_word("window seat", "window seat window"),
+]))`);
+  assert.deepEqual(out, [true, true, true, false, false, false, false]);
+});
