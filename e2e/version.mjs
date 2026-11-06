@@ -156,6 +156,33 @@ async function runBrowser(browserType, browserName) {
     const plain = await badge(page).innerText();
     check(`${tag} without version.json it shows only this build`, plain.includes(label) && !plain.includes("最新") && !plain.includes("新版本"), plain);
     await context.close();
+
+    // A check that fails after 最新 (server without version.json, then offline) must not
+    // keep saying 最新: it goes back to showing only this build.
+    const later = await browser.newContext({ viewport: { width: 390, height: 844 } });
+    const again = await later.newPage();
+    again.setDefaultTimeout(30000);
+    await again.clock.install();
+    serverVersion = "dist";
+    await onboard(again);
+    await again.locator('.version-badge[data-version="latest"]').waitFor({ timeout: 10000 });
+    const recheck = async () => {
+      await again.clock.fastForward(61_000);
+      await again.evaluate(() => document.dispatchEvent(new Event("visibilitychange")));
+      await again.waitForTimeout(800);
+    };
+    serverVersion = "missing";
+    await recheck();
+    const afterMissing = await badge(again).innerText();
+    check(`${tag} after 最新, a missing version.json clears 最新`, !afterMissing.includes("最新") && afterMissing.includes(label), afterMissing);
+    serverVersion = "dist";
+    await recheck();
+    check(`${tag} the next good check says 最新 again`, (await badge(again).innerText()).includes("最新"));
+    await later.setOffline(true);
+    await recheck();
+    const afterOffline = await badge(again).innerText();
+    check(`${tag} after 最新, going offline clears 最新`, !afterOffline.includes("最新") && afterOffline.includes(label), afterOffline);
+    await later.close();
   } finally {
     await browser.close();
   }

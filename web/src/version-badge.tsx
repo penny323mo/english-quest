@@ -21,15 +21,22 @@ export function VersionBadge({ place }: { place: "tabs" | "screen" }) {
     const check = async () => {
       if (Date.now() - last < CHECK_EVERY_MS) return;
       last = Date.now();
+      // Any check that does not get an answer clears what an earlier one said: a past
+      // 最新 says nothing about now.
+      const unknown = () => {
+        if (!alive) return;
+        setServer(null);
+        setState("unknown");
+      };
       try {
         const res = await fetch(`${import.meta.env.BASE_URL}version.json?t=${Date.now()}`, { cache: "no-store" });
-        if (!res.ok) return;
+        if (!res.ok) return unknown();
         const data = await res.json();
         if (!alive) return;
         setServer(data);
         setState(compareBuild(OWN, data));
       } catch {
-        /* offline: keep showing this build */
+        unknown(); // offline: show only this build
       }
     };
     void check();
