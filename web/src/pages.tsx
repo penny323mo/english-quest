@@ -588,6 +588,7 @@ export function Attributions() {
       <p>New General Service List 只係頻率參考，未整份複製入程式。</p>
       <h2>聲音</h2>
       <p>教學錄音係 Piper（MIT）en_US-ljspeech-medium。LJ Speech 屬公有領域。音素由 espeak-ng 產生，並強制 en-us，異讀詞再人手鎖定音素。慢速係合成時嘅長度比例 1.35，短句檔案時長未必剛好係 1.35 倍，但會慢過正常速度。冇用 Edge、Azure 或者 Kokoro。</p>
+      <p>每日抽卡嘅單字 🔊 用 Piper en_US-libritts_r-medium 第 144 號說話人（美式女聲）。訓練資料 LibriTTS-R（Koizumi 等，2023）以 CC BY 4.0 發佈，源自 LibriTTS 同 LibriVox 嘅公有領域錄音。LJ Speech 把聲單獨讀一個字好多時讀錯（例如 good 讀成 bed），讀句子就冇問題，所以例句照用 LJ Speech。每個單字錄音要 Whisper small.en 同 NVIDIA Parakeet 兩個都聽得出係嗰個字先會用；聽唔出嘅就唔播。</p>
       <p>瀏覽器嘅 Web Speech 只係臨時跟讀，唔係標準音。</p>
       <h2>複習同畫面</h2>
       <p>排期用 ts-fsrs（MIT）。</p>

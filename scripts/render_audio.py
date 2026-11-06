@@ -15,6 +15,9 @@ recording behind. tests/audio-rendered.mjs fails if the two drift apart.
     python3 scripts/render_audio.py --force REL..  # re-render these clips anyway
 
 The voice is PREP/voices/en_US-ljspeech-medium.onnx, or EQ_PIPER_MODEL.
+Word-only clips (每日抽卡 🔊) use WORD_VOICE instead: LJSpeech garbles many
+isolated words (good as "bed", job as "jar"), while it reads them correctly in a
+sentence. That voice is PREP/voices/<WORD_VOICE model>.onnx, or EQ_WORD_PIPER_MODEL.
 """
 from __future__ import annotations
 
@@ -33,6 +36,11 @@ from piper.config import SynthesisConfig
 
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = Path(os.environ.get("EQ_PIPER_MODEL") or ROOT / "PREP" / "voices" / "en_US-ljspeech-medium.onnx")
+# Word-only clips: a US female voice from LibriTTS-R (CC BY 4.0), speaker 144, whose
+# pitch is close to LJSpeech's. Recorded in content/word-audio.json so the checker
+# renders its references with the same voice.
+WORD_VOICE = {"model": "en_US-libritts_r-medium", "speaker": 144}
+WORD_MODEL = Path(os.environ.get("EQ_WORD_PIPER_MODEL") or ROOT / "PREP" / "voices" / f"{WORD_VOICE['model']}.onnx")
 RENDERED = ROOT / "assets" / "audio" / "rendered.json"
 LEX = ROOT / "content" / "lexicon.json"
 LINES = ROOT / "content" / "lines.json"
@@ -91,7 +99,8 @@ def word_clips(include_skipped: bool = False) -> dict:
             "say": word_say(item, allowed),
         }
     return {
-        "note": "Word-only clips for 每日抽卡. Rendered by scripts/render_audio.py from `say`; listened to by scripts/check_audio_asr.py.",
+        "note": "Word-only clips for 每日抽卡. Rendered by scripts/render_audio.py from `say` with `voice`; listened to by scripts/check_audio_asr.py.",
+        "voice": dict(WORD_VOICE),
         "items": items,
     }
 
@@ -102,11 +111,11 @@ def clips() -> list[dict]:
     out = []
     seen = set()
 
-    def add(rel: str | None, say: str, sha_id: str | None) -> None:
+    def add(rel: str | None, say: str, sha_id: str | None, word: bool = False) -> None:
         if not rel or rel in seen:
             return
         seen.add(rel)
-        out.append({"rel": rel, "say": say, "sha_id": sha_id})
+        out.append({"rel": rel, "say": say, "sha_id": sha_id, "word": word})
 
     for item in lex["items"]:
         add(item["audio"], item["say"], item["id"])
@@ -119,12 +128,18 @@ def clips() -> list[dict]:
     for line in lines:
         add(line["audio"], line["say"], None)
     for row in word_clips(include_skipped=True)["items"].values():
-        add(row["audio"], row["say"], None)
+        add(row["audio"], row["say"], None, word=True)
     return out
 
 
-def synth(voice: PiperVoice, text: str, wav_path: Path, scale: float) -> None:
-    cfg = SynthesisConfig(length_scale=scale)
+def load_word_voice() -> PiperVoice:
+    voice = PiperVoice.load(str(WORD_MODEL))
+    voice.config.espeak_voice = "en-us"
+    return voice
+
+
+def synth(voice: PiperVoice, text: str, wav_path: Path, scale: float, speaker: int | None = None) -> None:
+    cfg = SynthesisConfig(length_scale=scale, speaker_id=speaker)
     wav_path.parent.mkdir(parents=True, exist_ok=True)
     with wave.open(str(wav_path), "wb") as wf:
         voice.synthesize_wav(text, wf, syn_config=cfg)
@@ -247,13 +262,15 @@ def main() -> None:
         todo.append(job)
     print(f"clips {len(jobs)}; rendering {len(todo)} x2")
     TMP.mkdir(exist_ok=True)
+    word_voice = load_word_voice() if any(job["word"] for job in todo) else None
     for done, job in enumerate(todo, 1):
         rel = job["rel"]
         stem = rel.replace("/", "_").replace(".mp3", "")
         wav = TMP / f"{stem}.wav"
         wav_s = TMP / f"{stem}-slow.wav"
-        synth(voice, job["say"], wav, 1.0)
-        synth(voice, job["say"], wav_s, 1.35)
+        v, speaker = (word_voice, WORD_VOICE["speaker"]) if job["word"] else (voice, None)
+        synth(v, job["say"], wav, 1.0, speaker)
+        synth(v, job["say"], wav_s, 1.35, speaker)
         to_mp3(wav, ROOT / rel)
         to_mp3(wav_s, ROOT / rel.replace(".mp3", "-slow.mp3"))
         rendered[rel] = text_hash(job["say"])

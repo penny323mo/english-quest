@@ -1,8 +1,10 @@
 name: audio-asr
 
-# Listens to every clip whose text or mp3 changed in a pull request. A clip
-# whose transcript differs from its text fails when it is also acoustically
-# far from a fresh render of that text (see scripts/check_audio_asr.py).
+# Listens to every clip whose text or mp3 changed in a pull request. A sentence
+# clip (Whisper base.en) whose transcript differs from its text fails when it is
+# also acoustically far from a fresh render of that text. A word-only clip
+# (Whisper small.en, LibriTTS-R voice) must be heard as its word or a reviewed
+# homophone (see scripts/check_audio_asr.py).
 on:
   pull_request:
     paths:
@@ -11,6 +13,8 @@ on:
       - "assets/audio/**"
       - "scripts/check_audio_asr.py"
       - "tests/fixtures/asr-known.json"
+      - "tests/fixtures/word-homophones.json"
+      - "content/word-audio.json"
       - ".github/workflows/audio-asr.yml"
 
 jobs:
@@ -32,17 +36,23 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ~/asr-models
-          key: sherpa-onnx-whisper-base.en-piper-ljspeech-medium-v1
+          key: sherpa-onnx-whisper-base.en-small.en-piper-ljspeech-medium-libritts_r-medium-v2
       - name: Download Whisper models
         if: steps.models.outputs.cache-hit != 'true'
         run: |
           mkdir -p ~/asr-models && cd ~/asr-models
-          for name in base.en; do
+          for name in base.en small.en; do
             curl -sSL --retry 5 -o "$name.tar.bz2" "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-$name.tar.bz2"
             tar xjf "$name.tar.bz2" --wildcards '*int8.onnx' '*tokens.txt'
             rm "$name.tar.bz2"
           done
-          curl -sSL --retry 5 "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-en_US-ljspeech-medium.tar.bz2" \
-            | tar xj --wildcards '*/en_US-ljspeech-medium.onnx' '*/en_US-ljspeech-medium.onnx.json'
+          for voice in en_US-ljspeech-medium en_US-libritts_r-medium; do
+            curl -sSL --retry 5 "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-$voice.tar.bz2" \
+              | tar xj --wildcards "*/$voice.onnx" "*/$voice.onnx.json"
+          done
       - name: Check changed clips (normal and slow)
-        run: python scripts/check_audio_asr.py --models ~/asr-models --voice ~/asr-models/vits-piper-en_US-ljspeech-medium/en_US-ljspeech-medium.onnx --changed origin/${{ github.base_ref }} --slow
+        run: >-
+          python scripts/check_audio_asr.py --models ~/asr-models
+          --voice ~/asr-models/vits-piper-en_US-ljspeech-medium/en_US-ljspeech-medium.onnx
+          --word-voice ~/asr-models/vits-piper-en_US-libritts_r-medium/en_US-libritts_r-medium.onnx
+          --changed origin/${{ github.base_ref }} --slow

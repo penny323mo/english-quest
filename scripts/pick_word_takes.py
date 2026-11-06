@@ -7,8 +7,10 @@ clip with a fresh render when Whisper mishears it, but for one word that
 comparison is not reliable (re-renders of the same word measured up to 2.12,
 different words down to 1.87, either side of its 1.8 line). So a word clip is
 kept only when Whisper base.en transcribes it as the word, both normal and slow,
-which is the check's deterministic pass. With EQ_PARAKEET set, NVIDIA Parakeet
-(an independent recogniser) has to agree as well.
+which is the check's deterministic pass. The word voice (render_audio.WORD_VOICE) is
+heard by Whisper small.en (check_audio_asr.WORD_ASR), compared strictly with the
+reviewed homophones (check_audio_asr.compare_word). With EQ_PARAKEET set, NVIDIA
+Parakeet (an independent recogniser) has to agree as well.
 
 A take must also survive small changes to the audio (quieter, louder, faint
 noise): CI's machines decode with slightly different numerics, and a take that is
@@ -19,7 +21,7 @@ content/word-audio-skip.json: 每日抽卡 still draws them, without the word �
 for the ear check (review/word-audio-ear-check.md). With no EQ_PARAKEET set, the
 gate is Whisper alone (what CI checks).
 
-    EQ_PIPER_MODEL=… EQ_ASR_MODELS=… [EQ_PARAKEET=…] python3 scripts/pick_word_takes.py [--takes 6] [--only id …]
+    EQ_WORD_PIPER_MODEL=… EQ_ASR_MODELS=… [EQ_PARAKEET=…] python3 scripts/pick_word_takes.py [--takes 6] [--only id …]
 """
 from __future__ import annotations
 
@@ -40,13 +42,13 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--takes", type=int, default=6)
     ap.add_argument("--only", nargs="*")
+    ap.add_argument("--fresh", action="store_true", help="render new takes even when the clip on disk passes (after a voice change)")
     args = ap.parse_args()
 
-    from piper import PiperVoice
-
-    voice = PiperVoice.load(str(ra.MODEL))
-    voice.config.espeak_voice = "en-us"
-    whisper = ca.recognizer(Path(os.environ["EQ_ASR_MODELS"]), "base.en", os.cpu_count() or 2)
+    voice = ra.load_word_voice()
+    speaker = ra.WORD_VOICE["speaker"]
+    whisper = ca.recognizer(Path(os.environ["EQ_ASR_MODELS"]), ca.WORD_ASR, os.cpu_count() or 2)
+    same_sound = ca.homophones()
     parakeet = None
     if os.environ.get("EQ_PARAKEET"):
         import sherpa_onnx
@@ -76,13 +78,14 @@ def main() -> int:
         rec.decode_stream(stream)
         return stream.result.text.strip()
 
-    def heard_ok(path: Path, lemma: str) -> bool:
+    def heard_ok(path: Path, lemma: str, item_id: str) -> bool:
+        alts = ca.alternates(lemma, item_id, same_sound)
         pcm = np.asarray(ca.load_pcm(path), dtype=np.float32)
         level = float(np.sqrt(np.mean(pcm**2))) or 1e-4
         variants = [pcm, pcm * 0.7, np.clip(pcm * 1.4, -1, 1), pcm + noise[: len(pcm)] * level * 0.03]
-        if any(ca.compare(lemma, hears(whisper, v)) for v in variants):
+        if any(ca.compare_word(lemma, hears(whisper, v), alts) for v in variants):
             return False
-        return parakeet is None or not ca.compare(lemma, hears(parakeet, pcm))
+        return parakeet is None or not ca.compare_word(lemma, hears(parakeet, pcm), alts)
 
     tmp = ra.TMP
     tmp.mkdir(exist_ok=True)
@@ -93,14 +96,14 @@ def main() -> int:
         ok_all = True
         for rel, scale in ((row["audio"], 1.0), (row["audioSlow"], 1.35)):
             mp3 = ra.ROOT / rel
-            if mp3.exists() and heard_ok(mp3, lemma):
+            if not args.fresh and mp3.exists() and heard_ok(mp3, lemma, item_id):
                 continue
             for _ in range(args.takes):
                 wav = tmp / (Path(rel).stem + ".wav")
                 cand = tmp / Path(rel).name
-                ra.synth(voice, row["say"], wav, scale)
+                ra.synth(voice, row["say"], wav, scale, speaker)
                 ra.to_mp3(wav, cand)
-                if heard_ok(cand, lemma):
+                if heard_ok(cand, lemma, item_id):
                     mp3.write_bytes(cand.read_bytes())
                     break
             else:
@@ -120,7 +123,7 @@ def main() -> int:
     heard_path = ra.TMP / "word-take-heard.json"
     heard_path.write_text(json.dumps(last_heard, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     skip = {
-        "note": "Cards with no word-only clip: no Piper take was heard as the word by Whisper base.en"
+        "note": f"Cards with no word-only clip: no Piper {ra.WORD_VOICE['model']} (speaker {speaker}) take was heard as the word by Whisper {ca.WORD_ASR}"
         + (" and Parakeet" if parakeet else "")
         + f" in {args.takes} tries. 每日抽卡 still draws them, without the word 🔊. scripts/pick_word_takes.py writes this file.",
         "ids": sorted(set(failed) | set(keep_skipped)),

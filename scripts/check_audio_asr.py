@@ -12,10 +12,14 @@ text sit well below it. A single wrong word is caught without audio by
 tests/audio-rendered.mjs. Clips in tests/fixtures/asr-known.json are reported
 but do not fail the run.
 
-Models: the sherpa-onnx Whisper export sherpa-onnx-whisper-base.en from
-https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models. Point
-EQ_ASR_MODELS (or --models) at the folder that holds it, and EQ_PIPER_MODEL
-(or --voice) at the en_US-ljspeech-medium.onnx the clips were rendered with.
+Models: the sherpa-onnx Whisper exports sherpa-onnx-whisper-base.en (sentences)
+and sherpa-onnx-whisper-small.en (word-only clips, which base.en mishears too
+often alone) from https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models.
+Point EQ_ASR_MODELS (or --models) at the folder that holds them, EQ_PIPER_MODEL
+(or --voice) at the en_US-ljspeech-medium.onnx the sentences were rendered with,
+and EQ_WORD_PIPER_MODEL (or --word-voice) at the voice in content/word-audio.json.
+A word-only clip is compared strictly (compare_word), with the reviewed
+homophones in tests/fixtures/word-homophones.json.
 
     python3 scripts/check_audio_asr.py                 # every clip
     python3 scripts/check_audio_asr.py --only rel ...  # just these clips
@@ -39,6 +43,10 @@ LEX = ROOT / "content" / "lexicon.json"
 LINES = ROOT / "content" / "lines.json"
 WORDS = ROOT / "content" / "word-audio.json"
 KNOWN = ROOT / "tests" / "fixtures" / "asr-known.json"
+# Word-only clips are heard by a stronger model than sentences: base.en mishears a
+# lone short word too often to tell a good take from a bad one.
+WORD_ASR = "small.en"
+HOMOPHONES = ROOT / "tests" / "fixtures" / "word-homophones.json"
 
 # Words Whisper drops or adds freely; an edit made only of these is not a failure.
 FUNCTION = set(
@@ -113,6 +121,38 @@ def compare(text: str, heard: str) -> list[str]:
     return problems
 
 
+def homophones() -> dict:
+    """Reviewed spellings a recogniser may write for a lone word that sound the same:
+    `words` by lemma (tea as "T", pearl as "purl") and `cards` by card id, for a
+    heteronym card whose reading has its own homophone (bass the pitch as "base").
+    Only for word-only clips."""
+    if not HOMOPHONES.exists():
+        return {"words": {}, "cards": {}}
+    data = json.loads(HOMOPHONES.read_text(encoding="utf-8"))
+    low = lambda d: {k.lower(): [v.lower() for v in vals] for k, vals in (d or {}).items()}
+    return {"words": low(data.get("words")), "cards": low(data.get("cards"))}
+
+
+def alternates(lemma: str, card_id: str | None, same_sound: dict | None = None) -> list[str]:
+    table = same_sound if same_sound is not None else homophones()
+    return table["words"].get(" ".join(norm(lemma)), []) + table["cards"].get((card_id or "").lower(), [])
+
+
+def compare_word(lemma: str, heard: str, alts: list[str] = ()) -> list[str]:
+    """Stricter than compare for a word-only clip: no word is waved through as a
+    function word (the heard as "that" fails), and a listed homophone passes."""
+    want, got = norm(lemma), norm(heard)
+    if not got:
+        return [f"{' '.join(want)}→∅"]
+    if "".join(want) == "".join(got):
+        return []
+    if len(want) == len(got) and all(close(x, y) for x, y in zip(want, got)):
+        return []
+    if " ".join(got) in alts or "".join(got) in alts:
+        return []
+    return [f"{' '.join(want)}→{' '.join(got)}"]
+
+
 def render_text(line: dict) -> str:
     say = line.get("say")
     return say if isinstance(say, str) and say else str(line.get("en") or "")
@@ -131,7 +171,7 @@ def clips() -> list[dict]:
         seen.add(rel)
         if "{{learner" in say:
             return  # the device voice speaks the learner's name (web/src/learner.ts needsRuntimeSpeech)
-        row = {"rel": rel, "text": shown, "say": say, "where": where}
+        row = {"rel": rel, "text": shown, "say": say, "where": where, "word": where.endswith(" word")}
         if ref:
             row["ref"] = ref
         out.append(row)
@@ -280,14 +320,20 @@ def dtw_distance(a: Path, b: Path) -> float:
     return float(acc[n, m] / (n + m))
 
 
+def word_speaker() -> int | None:
+    words = json.loads(WORDS.read_text(encoding="utf-8")) if WORDS.exists() else {}
+    return (words.get("voice") or {}).get("speaker")
+
+
 class Reference:
     """Render the on-screen text with the app's Piper voice, through the same mp3 pipeline."""
 
-    def __init__(self, model: str):
+    def __init__(self, model: str, speaker: int | None = None):
         from piper import PiperVoice
 
         self.voice = PiperVoice.load(model)
         self.voice.config.espeak_voice = "en-us"
+        self.speaker = speaker
         self.tmp = Path(os.environ.get("TMPDIR", "/tmp")) / "eq-asr-ref"
         self.tmp.mkdir(parents=True, exist_ok=True)
 
@@ -300,7 +346,7 @@ class Reference:
         wav, mp3 = stem.with_suffix(".wav"), stem
         text = job.get("ref") or re.sub(r"\{\{learner(-spell)?\}\}", "Ling", job["text"])
         with wave.open(str(wav), "wb") as wf:
-            self.voice.synthesize_wav(text, wf, syn_config=SynthesisConfig(length_scale=1.35 if slow else 1.0))
+            self.voice.synthesize_wav(text, wf, syn_config=SynthesisConfig(length_scale=1.35 if slow else 1.0, speaker_id=self.speaker))
         subprocess.run(
             ["ffmpeg", "-y", "-loglevel", "error", "-i", str(wav), "-af", "adelay=180:all=1,apad=pad_dur=0.2",
              "-ac", "1", "-ar", "22050", "-codec:a", "libmp3lame", "-qscale:a", "5", str(mp3)],
@@ -313,6 +359,7 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--models", default=os.environ.get("EQ_ASR_MODELS", ""))
     ap.add_argument("--voice", default=os.environ.get("EQ_PIPER_MODEL", ""), help="Piper en_US-ljspeech-medium.onnx")
+    ap.add_argument("--word-voice", default=os.environ.get("EQ_WORD_PIPER_MODEL", ""), help="Piper voice of the word-only clips (content/word-audio.json `voice`)")
     ap.add_argument("--only", nargs="*", help="clip paths (assets/audio/...) to check")
     ap.add_argument("--changed", metavar="REF", help="only clips whose text or mp3 changed since this git ref")
     ap.add_argument("--slow", action="store_true", help="also check the -slow twin of each clip")
@@ -340,12 +387,20 @@ def main() -> int:
         for r in json.loads(Path(args.reuse).read_text(encoding="utf-8")):
             reuse[(r["rel"], r["say"])] = r["base"]
 
-    # 1. base.en on the clip: an exact match with the text passes straight away.
+    # 1. base.en on a sentence clip, small.en on a word-only clip: a match with the
+    #    text passes straight away.
     first = recognizer(folder, "base.en", args.threads)
+    word_rec = recognizer(folder, WORD_ASR, args.threads) if any(j["word"] for j in jobs) else None
+    same_sound = homophones()
     results = []
     for n, job in enumerate(jobs, 1):
-        heard = reuse.get((job["rel"], job["say"])) or transcribe(first, ROOT / job["rel"])
-        results.append(dict(job, base=heard, problems=compare(job["text"], heard)))
+        if job["word"]:
+            heard = transcribe(word_rec, ROOT / job["rel"])
+            card = job["where"].rsplit(" ", 1)[0]
+            results.append(dict(job, base=heard, problems=compare_word(job["text"], heard, alternates(job["text"], card, same_sound))))
+        else:
+            heard = reuse.get((job["rel"], job["say"])) or transcribe(first, ROOT / job["rel"])
+            results.append(dict(job, base=heard, problems=compare(job["text"], heard)))
         if n % 200 == 0:
             print(f"  {n}/{len(jobs)}", flush=True)
     suspects = [r for r in results if r["problems"]]
@@ -354,16 +409,27 @@ def main() -> int:
         print(f"checked {len(results)} clips: 0 fail")
         return 0
 
-    # 2. The transcript differs: compare the clip with a fresh render of the shown text.
+    # 2. The transcript differs: compare the clip with a fresh render of the shown text,
+    #    in the voice the clip was made with.
     ref = Reference(args.voice)
+    word_ref = None
+    if any(r["word"] for r in suspects):
+        if not args.word_voice:
+            sys.exit("set EQ_WORD_PIPER_MODEL or --word-voice to the word clips' Piper voice")
+        word_ref = Reference(args.word_voice, word_speaker())
     for n, r in enumerate(suspects, 1):
-        fresh = ref.mp3(r)
-        r["refBase"] = transcribe(first, fresh)
+        fresh = (word_ref if r["word"] else ref).mp3(r)
+        r["refBase"] = transcribe(word_rec if r["word"] else first, fresh)
         r["distance"] = round(dtw_distance(ROOT / r["rel"], fresh), 3)
         if n % 100 == 0:
             print(f"  fresh render {n}/{len(suspects)}", flush=True)
     for r in results:
-        r["ok"] = not r["problems"] or r["distance"] <= DTW_MAX
+        # A plain word-only clip must be heard as its word: an acoustic match with a
+        # fresh render is not reliable for one word (re-renders of the same word and
+        # different words overlap around DTW_MAX). Only a heteronym's [[phonemes]]
+        # clip, whose spelling reads two ways, may pass on that match.
+        acoustic = not r["word"] or bool(r.get("ref"))
+        r["ok"] = not r["problems"] or (acoustic and r["distance"] <= DTW_MAX)
 
     failed, waived = [], []
     for r in results:
