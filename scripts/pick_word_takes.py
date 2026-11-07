@@ -89,9 +89,11 @@ def main(inspect_take=None) -> int:
         ap.error("EQ_PARAKEET is required: no single-recogniser selection")
     lex = {i["id"]: i for i in json.loads(ra.LEX.read_text())["items"] if not i.get("hidden")}
     words = ra.word_clips(include_skipped=True)["items"]
-    ids = args.only or sorted(words)
+    ids = args.only or sorted(i for i in words if not words[i].get("recording"))
     if len(set(ids)) != len(ids) or any(i not in words for i in ids):
         ap.error("--only must name distinct visible cards")
+    if any(words[i].get("recording") for i in ids):
+        ap.error("dictionary recordings must be rebuilt with scripts/word_recordings.py, not synthesised")
     initial_skip = set(json.loads(SKIP.read_text())["ids"])
     skipped = set(initial_skip)
     rendered = json.loads(ra.RENDERED.read_text())

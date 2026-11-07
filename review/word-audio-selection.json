@@ -1,17 +1,13 @@
 {
  "base": "8f3b7e4add20e4831e090683d84db08d997c0683",
  "initiallyMissing": 114,
- "recovered": 111,
- "remaining": [
-  "a-art",
-  "fee-noun",
-  "led-verb"
- ],
+ "recovered": 114,
+ "remaining": [],
  "voice": {
   "model": "kokoro-en-v0_19",
   "defaultSpeaker": 0
  },
- "policy": "Both speeds: Parakeet hears the exact word once or a reviewed homophone, and all six Whisper variants match. Only pure target repetition or a quote rendered as one quotation mark may use Parakeet as adjudicator. No acoustic fallback or waivers in selection. All transcripts are machine judgements, not a human listening certificate.",
+ "policy": "Both speeds: Parakeet hears the exact word once or a reviewed homophone, and all six Whisper variants match. Only pure target repetition or a quote rendered as one quotation mark may use Parakeet as adjudicator. No acoustic fallback or waivers in selection. All transcripts are machine judgements, not a human listening certificate. The final three cards use licensed US dictionary recordings with source-and-derivation verification, reported as dictionary, not ASR passes. Their ASR text is diagnostic only.",
  "cards": [
   {
    "id": "a-art",
@@ -539,7 +535,7 @@
      "variants": []
     }
    ],
-   "accepted": false,
+   "accepted": true,
    "before": [
     {
      "path": "assets/audio/words/a-art-word.mp3",
@@ -551,7 +547,46 @@
      "whisper": "*squeak",
      "parakeet": "But"
     }
-   ]
+   ],
+   "verification": "dictionary-source-and-derivation",
+   "normal": {
+    "accepted": true,
+    "verdict": "dictionary",
+    "method": "full dictionary recording, silence padding and MP3 conversion",
+    "author": "Dvortygirl",
+    "source": "https://commons.wikimedia.org/wiki/File:En-us-a-unstressed.ogg",
+    "license": "CC BY-SA 3.0",
+    "sha256": "8be689e9de3e5ee43895d29b33d044f3b9c0c90776e644fab8ef35a3f9a50d49",
+    "whisperDiagnostic": "uh",
+    "parakeetDiagnostic": "Hmm.",
+    "sourceCheck": {
+     "accepted": true,
+     "relativeRmsError": 0.0,
+     "source": "https://commons.wikimedia.org/wiki/File:En-us-a-unstressed.ogg",
+     "sourceSha256": "2e91d05a351a5b2a60bfd73aef780216263410e4c2ac0fc7ecaedbcdb961718f",
+     "license": "CC BY-SA 3.0",
+     "method": "dictionary-source-and-derivation"
+    }
+   },
+   "slow": {
+    "accepted": true,
+    "verdict": "dictionary",
+    "method": "full dictionary recording, pitch-preserving atempo=1/1.35, silence padding and MP3 conversion",
+    "author": "Dvortygirl",
+    "source": "https://commons.wikimedia.org/wiki/File:En-us-a-unstressed.ogg",
+    "license": "CC BY-SA 3.0",
+    "sha256": "c1b2b6ef7b73bd3ce7305b44ae6724f0d95e3087d502a0485f4e7860c5716e36",
+    "whisperDiagnostic": "uh",
+    "parakeetDiagnostic": "Yeah.",
+    "sourceCheck": {
+     "accepted": true,
+     "relativeRmsError": 0.0,
+     "source": "https://commons.wikimedia.org/wiki/File:En-us-a-unstressed.ogg",
+     "sourceSha256": "2e91d05a351a5b2a60bfd73aef780216263410e4c2ac0fc7ecaedbcdb961718f",
+     "license": "CC BY-SA 3.0",
+     "method": "dictionary-source-and-derivation"
+    }
+   }
   },
   {
    "id": "aisle-noun",
@@ -5154,7 +5189,7 @@
      "variants": []
     }
    ],
-   "accepted": false,
+   "accepted": true,
    "before": [
     {
      "path": "assets/audio/words/fee-noun-word.mp3",
@@ -5166,7 +5201,46 @@
      "whisper": "Fade",
      "parakeet": "Feat."
     }
-   ]
+   ],
+   "verification": "dictionary-source-and-derivation",
+   "normal": {
+    "accepted": true,
+    "verdict": "dictionary",
+    "method": "full dictionary recording, silence padding and MP3 conversion",
+    "author": "Dvortygirl",
+    "source": "https://commons.wikimedia.org/wiki/File:En-us-fee.ogg",
+    "license": "CC BY-SA 3.0",
+    "sha256": "f539291a8643e328c673937fed8d2e9f413c93496294bf683ff1c9402e903dd4",
+    "whisperDiagnostic": "fee",
+    "parakeetDiagnostic": "C",
+    "sourceCheck": {
+     "accepted": true,
+     "relativeRmsError": 0.0,
+     "source": "https://commons.wikimedia.org/wiki/File:En-us-fee.ogg",
+     "sourceSha256": "1fc70cef82a9de48b88fd29e7d8f762f8b5421f0e6df103cc493104ee2ebd0a4",
+     "license": "CC BY-SA 3.0",
+     "method": "dictionary-source-and-derivation"
+    }
+   },
+   "slow": {
+    "accepted": true,
+    "verdict": "dictionary",
+    "method": "full dictionary recording, pitch-preserving atempo=1/1.35, silence padding and MP3 conversion",
+    "author": "Dvortygirl",
+    "source": "https://commons.wikimedia.org/wiki/File:En-us-fee.ogg",
+    "license": "CC BY-SA 3.0",
+    "sha256": "c1a5633f3fd1c244981186c6f4fe29070803829c21687e1a26f94b733cc7bb34",
+    "whisperDiagnostic": "fee",
+    "parakeetDiagnostic": "C",
+    "sourceCheck": {
+     "accepted": true,
+     "relativeRmsError": 0.0,
+     "source": "https://commons.wikimedia.org/wiki/File:En-us-fee.ogg",
+     "sourceSha256": "1fc70cef82a9de48b88fd29e7d8f762f8b5421f0e6df103cc493104ee2ebd0a4",
+     "license": "CC BY-SA 3.0",
+     "method": "dictionary-source-and-derivation"
+    }
+   }
   },
   {
    "id": "few-det",
@@ -8109,7 +8183,7 @@
      "variants": []
     }
    ],
-   "accepted": false,
+   "accepted": true,
    "before": [
     {
      "path": "assets/audio/words/led-verb-word.mp3",
@@ -8121,7 +8195,46 @@
      "whisper": "Lead",
      "parakeet": "Lead"
     }
-   ]
+   ],
+   "verification": "dictionary-source-and-derivation",
+   "normal": {
+    "accepted": true,
+    "verdict": "dictionary",
+    "method": "full dictionary recording, silence padding and MP3 conversion",
+    "author": "Dvortygirl",
+    "source": "https://commons.wikimedia.org/wiki/File:En-us-led.ogg",
+    "license": "CC BY-SA 3.0",
+    "sha256": "b89e85470015498577faf00dc61a5e66ef08984aea1557ade97681b4d6be6878",
+    "whisperDiagnostic": "lead",
+    "parakeetDiagnostic": "Red",
+    "sourceCheck": {
+     "accepted": true,
+     "relativeRmsError": 0.0,
+     "source": "https://commons.wikimedia.org/wiki/File:En-us-led.ogg",
+     "sourceSha256": "9c70a70b43b4081dc985a75a47c260bbd583d2ee6fe8bd0f7b9a705a238332e8",
+     "license": "CC BY-SA 3.0",
+     "method": "dictionary-source-and-derivation"
+    }
+   },
+   "slow": {
+    "accepted": true,
+    "verdict": "dictionary",
+    "method": "full dictionary recording, pitch-preserving atempo=1/1.35, silence padding and MP3 conversion",
+    "author": "Dvortygirl",
+    "source": "https://commons.wikimedia.org/wiki/File:En-us-led.ogg",
+    "license": "CC BY-SA 3.0",
+    "sha256": "0d50807f96c46bb9e5dbe553be48ded38e51a406361037fd75e91a028ea4ca04",
+    "whisperDiagnostic": "LED",
+    "parakeetDiagnostic": "Lead",
+    "sourceCheck": {
+     "accepted": true,
+     "relativeRmsError": 0.0,
+     "source": "https://commons.wikimedia.org/wiki/File:En-us-led.ogg",
+     "sourceSha256": "9c70a70b43b4081dc985a75a47c260bbd583d2ee6fe8bd0f7b9a705a238332e8",
+     "license": "CC BY-SA 3.0",
+     "method": "dictionary-source-and-derivation"
+    }
+   }
   },
   {
    "id": "live-verb",

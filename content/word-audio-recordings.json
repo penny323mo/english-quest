@@ -1,0 +1,56 @@
+{
+  "note": "Three US dictionary recordings. Original and adapted audio are CC BY-SA 3.0. Normal: full source plus silence, MP3 conversion. Slow: pitch-preserving 1.35x duration plus silence. No speech is cropped.",
+  "items": {
+    "a-art": {
+      "lemma": "a",
+      "say": "[[ə]]",
+      "ipa": "ə",
+      "source": "scripts/audio-sources/En-us-a-unstressed.ogg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:En-us-a-unstressed.ogg",
+      "entryUrl": "https://en.wiktionary.org/wiki/a#English",
+      "author": "Dvortygirl",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceSha256": "2e91d05a351a5b2a60bfd73aef780216263410e4c2ac0fc7ecaedbcdb961718f",
+      "sha256": {
+        "normal": "8be689e9de3e5ee43895d29b33d044f3b9c0c90776e644fab8ef35a3f9a50d49",
+        "slow": "c1b2b6ef7b73bd3ce7305b44ae6724f0d95e3087d502a0485f4e7860c5716e36"
+      }
+    },
+    "fee-noun": {
+      "lemma": "fee",
+      "say": "fee",
+      "ipa": "fiː",
+      "source": "scripts/audio-sources/En-us-fee.ogg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:En-us-fee.ogg",
+      "entryUrl": "https://en.wiktionary.org/wiki/fee#English",
+      "author": "Dvortygirl",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceSha256": "1fc70cef82a9de48b88fd29e7d8f762f8b5421f0e6df103cc493104ee2ebd0a4",
+      "sha256": {
+        "normal": "f539291a8643e328c673937fed8d2e9f413c93496294bf683ff1c9402e903dd4",
+        "slow": "c1a5633f3fd1c244981186c6f4fe29070803829c21687e1a26f94b733cc7bb34"
+      }
+    },
+    "led-verb": {
+      "lemma": "led",
+      "say": "led",
+      "ipa": "lɛd",
+      "source": "scripts/audio-sources/En-us-led.ogg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:En-us-led.ogg",
+      "entryUrl": "https://en.wiktionary.org/wiki/led#English",
+      "author": "Dvortygirl",
+      "authorUrl": "https://commons.wikimedia.org/wiki/User:Dvortygirl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "sourceSha256": "9c70a70b43b4081dc985a75a47c260bbd583d2ee6fe8bd0f7b9a705a238332e8",
+      "sha256": {
+        "normal": "b89e85470015498577faf00dc61a5e66ef08984aea1557ade97681b4d6be6878",
+        "slow": "0d50807f96c46bb9e5dbe553be48ded38e51a406361037fd75e91a028ea4ca04"
+      }
+    }
+  }
+}

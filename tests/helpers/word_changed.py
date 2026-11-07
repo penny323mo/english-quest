@@ -30,10 +30,10 @@ with tempfile.TemporaryDirectory() as temp:
     results['speaker']=[j['rel'] for j in ca.changed_since('HEAD',jobs)]
     words['items']['a'].pop('speaker');write('content/word-audio.json',words);jobs[0].pop('speaker')
     # Track the paths first, so git diff sees their subsequent edit.
-    for rel in ['scripts/render_audio.py','.github/workflows/audio-asr.yml']:
+    for rel in ['scripts/render_audio.py','.github/workflows/audio-asr.yml','scripts/word_recordings.py','content/word-audio-recordings.json']:
         p=root/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text('before\n')
     git('add','.');git('commit','-m','track renderer and model pins')
-    for rel,label in [('scripts/render_audio.py','renderer'),('.github/workflows/audio-asr.yml','model_pins')]:
+    for rel,label in [('scripts/render_audio.py','renderer'),('.github/workflows/audio-asr.yml','model_pins'),('scripts/word_recordings.py','dictionary_checker'),('content/word-audio-recordings.json','dictionary_sources')]:
         (root/rel).write_text('after\n')
         results[label]=[j['rel'] for j in ca.changed_since('HEAD',jobs)]
         (root/rel).write_text('before\n')

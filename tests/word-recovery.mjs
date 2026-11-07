@@ -26,8 +26,13 @@ test('the 114-card recovery audit names the exact playable files and keeps unres
       const clip = row[speed];
       const digest = createHash('sha256').update(fs.readFileSync(words[row.id][field])).digest('hex');
       assert.equal(clip.sha256, digest, `${row.id} ${speed}`);
-      assert.equal(clip.speaker, words[row.id].speaker ?? 0, row.id);
-      assert.equal(clip.whisper.length, 6, row.id);
+      if (clip.verdict === "dictionary") {
+        assert.equal(words[row.id].recording, "wikimedia-commons");
+        assert.equal(clip.author, "Dvortygirl");
+      } else {
+        assert.equal(clip.speaker, words[row.id].speaker ?? 0, row.id);
+        assert.equal(clip.whisper.length, 6, row.id);
+      }
       assert.equal(clip.accepted, true, row.id);
     }
   }
@@ -41,6 +46,10 @@ for row in report['cards']:
  if row['accepted']:
   for speed in ['normal','slow']:
    clip=row[speed]
+   if clip['verdict']=='dictionary':
+    from word_recordings import recordings
+    assert clip['sha256']==recordings()[row['id']]['sha256'][speed]
+    continue
    result=judge_take(row['lemma'],clip['whisper'],clip['parakeet'],alternates(row['lemma'],row['id'],table))
    assert result['accepted'] and result['verdict']==clip['verdict'],(row['id'],speed,result)
 print('ok')`;

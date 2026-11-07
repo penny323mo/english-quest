@@ -1,20 +1,23 @@
-# Missing word audio: review
+# Word audio: listening review
 
-From the original **114 missing cards**, **111 now have an accepted normal/slow pair**. The deck has **750/753** word-audio pairs; **3 remain unavailable** on the card front. Their checked example sentences still play.
+All **114 originally missing cards** now have a normal/slow pair; the deck has
+**753/753** word-audio pairs. No cards remain in the skip list.
 
-Evidence: [selection report](word-audio-selection.json). Every restored pair has six Whisper perturbations per speed, mandatory Parakeet agreement, its speaker and final MP3 SHA-256. These are machine checks, not a claim that a person listened to every take.
+The first 111 were selected with six Whisper perturbations per speed and Parakeet.
+The last three below are licensed US dictionary recordings by Dvortygirl, checked
+by source identity and audio derivation. **They did not pass the dual-ASR gate.**
+See [the explanation and diagnostics](word-audio-recovery.md) and
+[the per-file audit](word-audio-selection.json). No human listening is claimed.
 
-## Still unresolved
+| Card | Dictionary pronunciation | Listen |
+|---|---|---|
+| a-art | a, US unstressed /ə/ | [normal](../assets/audio/words/a-art-word.mp3) · [slow](../assets/audio/words/a-art-word-slow.mp3) |
+| fee-noun | fee, US /fiː/ | [normal](../assets/audio/words/fee-noun-word.mp3) · [slow](../assets/audio/words/fee-noun-word-slow.mp3) |
+| led-verb | led, US /lɛd/ | [normal](../assets/audio/words/led-verb-word.mp3) · [slow](../assets/audio/words/led-verb-word-slow.mp3) |
 
-The links below play the original, rejected files retained on disk; they are **not** enabled in the app. Their transcripts are from the baseline run. The selection report separately records the later candidate attempts; failed candidates never replace these files.
-
-| Card | IPA | Original normal: Whisper / Parakeet | Original slow: Whisper / Parakeet | Listen |
-|---|---|---|---|---|
-| `a-art` — a | /ə/ | [BLANK_ / This | *squeak / But | [normal](../assets/audio/words/a-art-word.mp3) · [slow](../assets/audio/words/a-art-word-slow.mp3) |
-| `fee-noun` — fee | /ˈfi/ | Feed / Feet. | Fade / Feat. | [normal](../assets/audio/words/fee-noun-word.mp3) · [slow](../assets/audio/words/fee-noun-word-slow.mp3) |
-| `led-verb` — led | /ˈlɛd/ | Lead / Lead. | Lead / Lead | [normal](../assets/audio/words/led-verb-word.mp3) · [slow](../assets/audio/words/led-verb-word-slow.mp3) |
-
-Do not simply delete a card from the skip list or add a broad ASR exception. Re-record a clear pair and re-run selection plus CI. Homographs such as `lead` do not prove that `led` was pronounced /lɛd/; weak-form `a` and `the` must retain the IPA shown on their cards. A human listening decision should name the exact file/hash and pronunciation before any rule changes.
+Original recordings and the six MP3 adaptations: Dvortygirl,
+[CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
+[Source links and modifications](../scripts/audio-sources/README.md).
 
 ## Restored cards
 

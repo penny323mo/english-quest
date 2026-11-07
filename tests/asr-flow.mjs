@@ -35,7 +35,7 @@ test("Whisper repeats the word, Parakeet hears it once: passes, counted under Pa
   const r = flow({ only: [FLOOR], heard: { [FLOOR]: { whisper: "Floor Floor", parakeet: "Floor", fresh: ["Floor", 0.5] } } });
   assert.equal(r.exit, 0, r.stdout);
   assert.equal(row(r, FLOOR).verdict, "parakeet");
-  assert.deepEqual(r.json.summary, { total: 1, whisper: 0, parakeet: 1, acoustic: 0, waived: 0, failed: 0 });
+  assert.deepEqual(r.json.summary, { total: 1, whisper: 0, parakeet: 1, dictionary: 0, acoustic: 0, waived: 0, failed: 0 });
   assert.deepEqual(r.json.parakeet, [{ rel: FLOOR, text: "floor", whisper: "Floor Floor", parakeet: "Floor", verdict: "parakeet" }]);
   assert.match(r.stdout, /Parakeet ruled on 1/);
 });
@@ -62,7 +62,7 @@ test("everything heard right straight away still writes the full --json", () => 
   });
   assert.equal(r.exit, 0, r.stdout);
   assert.ok(r.json, "--json written although nothing needed a fresh render");
-  assert.deepEqual(r.json.summary, { total: 3, whisper: 3, parakeet: 0, acoustic: 0, waived: 0, failed: 0 });
+  assert.deepEqual(r.json.summary, { total: 3, whisper: 3, parakeet: 0, dictionary: 0, acoustic: 0, waived: 0, failed: 0 });
   assert.deepEqual(r.json.parakeet, []);
   assert.equal(r.json.results.length, 3);
 });
@@ -80,7 +80,7 @@ test("each clip is counted once; sentence fallback and the known list still work
     },
   });
   const s = r.json.summary;
-  assert.deepEqual(s, { total: 5, whisper: 1, parakeet: 1, acoustic: 2, waived: 1, failed: 0 });
+  assert.deepEqual(s, { total: 5, whisper: 1, parakeet: 1, dictionary: 0, acoustic: 2, waived: 1, failed: 0 });
   assert.equal(s.whisper + s.parakeet + s.acoustic + s.waived + s.failed, s.total);
   assert.equal(r.exit, 0, r.stdout);
   assert.equal(row(r, CLOSE).verdict, "acoustic");
@@ -100,5 +100,5 @@ test("a failing sentence and a failing word both fail the run", () => {
     },
   });
   assert.equal(r.exit, 1);
-  assert.deepEqual(r.json.summary, { total: 2, whisper: 0, parakeet: 0, acoustic: 0, waived: 0, failed: 2 });
+  assert.deepEqual(r.json.summary, { total: 2, whisper: 0, parakeet: 0, dictionary: 0, acoustic: 0, waived: 0, failed: 2 });
 });

@@ -3,6 +3,7 @@
 // cards join 生字回顧), and reload the same Macau day to get the same three cards.
 // Screenshots: animation frames, a card front and a card back, per browser.
 import http from "node:http";
+import { createServer } from "vite";
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -17,18 +18,23 @@ const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), 
 const lexById = Object.fromEntries(lex.items.map((item) => [item.id, item]));
 const wordClips = JSON.parse(fs.readFileSync(path.join(root, "content/word-audio.json"), "utf8")).items;
 
-/**
- * A fixed card with no checked word clip (the first in content/word-audio-skip.json
- * that can be drawn and has its sentence clip), shown in a stored draw with two cards
- * that have one. Seeding the draw keeps the test independent of which day happens to
- * draw such a card: there are few of them now.
- */
+// Keep the missing-clip behaviour covered even when the real deck is complete.
+// Only this Vite test server replaces its JSON module; production data is untouched.
+const missingWord = "a-art";
+const missingManifest = { ...JSON.parse(fs.readFileSync(path.join(root, "content/word-audio.json"), "utf8")), items: { ...wordClips } };
+delete missingManifest.items[missingWord];
+const missingServer = await createServer({
+  configFile: path.join(root, "vite.config.ts"),
+  server: { host: "127.0.0.1", port: 0, strictPort: false },
+  plugins: [{ name: "missing-word-fixture", enforce: "pre", load(id) {
+    if (id === path.join(root, "content/word-audio.json")) return JSON.stringify(missingManifest);
+  } }],
+});
+await missingServer.listen();
+const missingOrigin = `http://127.0.0.1:${missingServer.httpServer.address().port}/english-quest/`;
 function uncheckedDraw() {
-  const skip = JSON.parse(fs.readFileSync(path.join(root, "content/word-audio-skip.json"), "utf8")).ids;
-  const id = skip.find((cardId) => lexById[cardId] && !lexById[cardId].hidden && !NOT_DRAWN.has(cardId) && !wordClips[cardId] && lexById[cardId].audio);
-  if (!id) throw new Error("no drawable card without a word clip in content/word-audio-skip.json: the unchecked-card test needs one");
-  const checked = lex.items.filter((item) => !item.hidden && !NOT_DRAWN.has(item.id) && wordClips[item.id]).slice(0, 2).map((item) => item.id);
-  return { id, index: 0, ids: [id, ...checked] };
+  const checked = lex.items.filter(item => !item.hidden && !NOT_DRAWN.has(item.id) && item.id !== missingWord && wordClips[item.id]).slice(0, 2).map(item => item.id);
+  return { id: missingWord, index: 0, ids: [missingWord, ...checked] };
 }
 const SAFARI_UA = "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1";
 // 10:00 in Macau on 4 Nov 2026; the next Macau day starts at 16:00 UTC.
@@ -120,8 +126,8 @@ async function newPage(browser, browserName, extra = {}) {
   return { context, page };
 }
 
-async function onboard(page) {
-  await page.goto(origin, { waitUntil: "domcontentloaded" });
+async function onboard(page, entry = origin) {
+  await page.goto(entry, { waitUntil: "domcontentloaded" });
   await page.getByRole("heading", { name: "情景英文" }).waitFor();
   await page.getByLabel("點稱呼你？").fill("Penny");
   await page.getByRole("button", { name: "下一步" }).click();
@@ -393,10 +399,33 @@ async function runBrowser(browserType, browserName) {
     check(`${tag} next day shows its first card`, nextState.daily.ids[0] === next);
     await context.close();
 
+    // These three formerly missing front-face recordings must play real bytes.
+    const recovered = await newPage(browser, browserName, { reducedMotion: "reduce" });
+    await onboard(recovered.page);
+    const recoveredIds = ["a-art", "fee-noun", "led-verb"];
+    await storeDraw(recovered.page, { date: macauDate(DAY), ids: recoveredIds, done: false, history: [] }, 0);
+    await recovered.page.evaluate(() => { location.hash = "#/daily"; });
+    for (let i = 0; i < recoveredIds.length; i += 1) {
+      const id = recoveredIds[i];
+      await recovered.page.locator(".draw-dot").nth(i).click();
+      const before = await recovered.page.evaluate(() => window.__plays.length);
+      await recovered.page.getByRole("button", { name: `聽 ${lexById[id].lemma}`, exact: true }).click();
+      const played = await lastPlay(recovered.page, before);
+      check(`${tag} recovered ${id} plays its word recording`, Boolean(played && played.ok === true && played.src.endsWith(wordClips[id].audio.replace(/^assets/, ""))), JSON.stringify(played));
+      const duration = await recovered.page.evaluate(async (src) => {
+        const response = await fetch(src);
+        const context = new AudioContext();
+        try { return (await context.decodeAudioData(await response.arrayBuffer())).duration; }
+        finally { await context.close(); }
+      }, wordClips[id].audioSlow.replace(/^assets/, `${origin}assets`));
+      check(`${tag} recovered ${id} slow file decodes`, duration > .5 && duration < 3, String(duration));
+    }
+    await recovered.context.close();
+
     // A card whose word clip has not passed the ASR check is still drawn, without the word 🔊.
     const unchecked = uncheckedDraw();
     const plain = await newPage(browser, browserName);
-    await onboard(plain.page);
+    await onboard(plain.page, missingOrigin);
     await storeDraw(plain.page, { date: macauDate(DAY), ids: unchecked.ids, done: false, history: [] }, 0);
     await plain.page.evaluate(() => { location.hash = "#/daily"; });
     const skipPack = plain.page.getByRole("button", { name: "跳過動畫" });
@@ -438,6 +467,7 @@ try {
   if (wanted.includes("webkit")) await runBrowser(webkit, "webkit");
 } finally {
   server.close();
+  await missingServer.close();
 }
 
 if (failures) {
