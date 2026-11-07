@@ -6,6 +6,7 @@ import { Attributions, PathHome, Profile, Review, Settings, WordDetail, Words } 
 import { VocabDeck, VocabHub, VocabQuiz } from "./Vocab";
 import { useStore } from "./store";
 import { SaveBanner } from "./save-banner";
+import { VersionBadge } from "./version-badge";
 import type { Route } from "./types";
 
 const Daily = lazy(() => import("./Daily"));
@@ -84,6 +85,7 @@ function Tabs({ route }: { route: Route }) {
           </a>
         );
       })}
+      <VersionBadge place="tabs" />
     </nav>
   );
 }

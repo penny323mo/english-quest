@@ -1071,3 +1071,33 @@ a { color: inherit; }
 }
 .daily-float svg { width: 22px; height: 22px; flex: 0 0 auto; }
 .screen.with-daily-float { padding-bottom: 84px; }
+
+/* Bottom-right build stamp: in the tab bar's bottom edge under 練習 / 我 (below their
+   labels), or onboarding's corner. Lessons have no stamp so it never covers a button. */
+.version-badge {
+  position: absolute;
+  right: 6px;
+  z-index: 6;
+  padding: 0 4px;
+  border: 0;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--ink-soft);
+  font: 600 9px/1.25 var(--sans);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.version-badge.at-tabs { bottom: 1px; }
+.version-badge.at-screen { bottom: calc(env(safe-area-inset-bottom) + 3px); }
+.version-badge .ok { color: var(--success); }
+.version-badge.newer {
+  pointer-events: auto;
+  cursor: pointer;
+  background: var(--teal-deep);
+  color: var(--white);
+  font: 800 9.5px/1.25 var(--sans);
+  padding: 0 7px;
+  border-radius: 999px;
+}
