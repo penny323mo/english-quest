@@ -1,5 +1,5 @@
 {
- "note": "Word-only clips for 每日抽卡. Rendered by scripts/render_audio.py from `say` with `voice`; listened to by scripts/check_audio_asr.py.",
+ "note": "Word-only clips for 每日抽卡. Synthesised rows use `say` and `voice`; rows marked `recording` use licensed dictionary sources in word-audio-recordings.json. Checked by scripts/check_audio_asr.py.",
  "voice": {
   "engine": "kokoro",
   "model": "kokoro-en-v0_19",
@@ -261,6 +261,12 @@
    "audio": "assets/audio/words/welcome-verb-word.mp3",
    "audioSlow": "assets/audio/words/welcome-verb-word-slow.mp3",
    "say": "welcome"
+  },
+  "a-art": {
+   "audio": "assets/audio/words/a-art-word.mp3",
+   "audioSlow": "assets/audio/words/a-art-word-slow.mp3",
+   "say": "[[ə]]",
+   "recording": "wikimedia-commons"
   },
   "a-letter": {
    "audio": "assets/audio/words/a-letter-word.mp3",
@@ -757,6 +763,12 @@
    "audio": "assets/audio/words/red-adj-word.mp3",
    "audioSlow": "assets/audio/words/red-adj-word-slow.mp3",
    "say": "red"
+  },
+  "led-verb": {
+   "audio": "assets/audio/words/led-verb-word.mp3",
+   "audioSlow": "assets/audio/words/led-verb-word-slow.mp3",
+   "say": "led",
+   "recording": "wikimedia-commons"
   },
   "by-prep": {
    "audio": "assets/audio/words/by-prep-word.mp3",
@@ -2159,6 +2171,12 @@
    "audio": "assets/audio/words/branch-noun-word.mp3",
    "audioSlow": "assets/audio/words/branch-noun-word-slow.mp3",
    "say": "branch"
+  },
+  "fee-noun": {
+   "audio": "assets/audio/words/fee-noun-word.mp3",
+   "audioSlow": "assets/audio/words/fee-noun-word-slow.mp3",
+   "say": "fee",
+   "recording": "wikimedia-commons"
   },
   "form-noun": {
    "audio": "assets/audio/words/form-noun-word.mp3",

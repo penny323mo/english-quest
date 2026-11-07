@@ -31,6 +31,8 @@ import wave
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
+from word_recordings import recordings, render_pair
+
 from piper import PiperVoice
 from piper.config import SynthesisConfig
 
@@ -116,6 +118,7 @@ def word_clips(include_skipped: bool = False) -> dict:
     allowed = json.loads(OVERRIDES.read_text(encoding="utf-8"))
     skip = set() if include_skipped else (set(json.loads(SKIP.read_text(encoding="utf-8"))["ids"]) if SKIP.exists() else set())
     items = {}
+    external = recordings()
     speakers = json.loads(WORD_SPEAKERS.read_text(encoding="utf-8"))["items"] if WORD_SPEAKERS.exists() else {}
     for item in lex["items"]:
         if item.get("hidden") or item["id"] in skip:
@@ -126,10 +129,12 @@ def word_clips(include_skipped: bool = False) -> dict:
             "audioSlow": rel.replace(".mp3", "-slow.mp3"),
             "say": word_say(item, allowed),
         }
+        if item["id"] in external:
+            items[item["id"]]["recording"] = "wikimedia-commons"
         if item["id"] in speakers:
             items[item["id"]]["speaker"] = speakers[item["id"]]
     return {
-        "note": "Word-only clips for 每日抽卡. Rendered by scripts/render_audio.py from `say` with `voice`; listened to by scripts/check_audio_asr.py.",
+        "note": "Word-only clips for 每日抽卡. Synthesised rows use `say` and `voice`; rows marked `recording` use licensed dictionary sources in word-audio-recordings.json. Checked by scripts/check_audio_asr.py.",
         "voice": dict(WORD_VOICE),
         "items": items,
     }
@@ -159,6 +164,8 @@ def clips() -> list[dict]:
         add(line["audio"], line["say"], None)
     for row in word_clips(include_skipped=True)["items"].values():
         add(row["audio"], row["say"], None, word=True, speaker=row.get("speaker", WORD_VOICE["speaker"]))
+        if row.get("recording"):
+            out[-1]["recording"] = row["audio"].removeprefix("assets/audio/words/").removesuffix("-word.mp3")
     return out
 
 
@@ -305,7 +312,8 @@ def pad_one(path: Path) -> str:
 
 
 def pad_tree() -> None:
-    files = sorted(AUDIO.rglob("*.mp3"))
+    external = {f"{card}-word{suffix}.mp3" for card in recordings() for suffix in ("", "-slow")}
+    files = sorted(p for p in AUDIO.rglob("*.mp3") if p.name not in external)
     padded = 0
     with ThreadPoolExecutor(max_workers=8) as pool:
         for status in pool.map(pad_one, files):
@@ -352,6 +360,9 @@ def main() -> None:
         rel = job["rel"]
         mp3 = ROOT / rel
         mp3_slow = ROOT / rel.replace(".mp3", "-slow.mp3")
+        if job.get("recording"):
+            todo.append(job)  # six small files: always reproduce their current source recipe
+            continue
         present = all(p.exists() and p.stat().st_size > 400 for p in (mp3, mp3_slow))
         voice_changed = job["word"] and (previous_words.get("voice") != WORD_VOICE or previous_speakers.get(rel, job["speaker"]) != job["speaker"])
         if present and rendered.get(rel) == text_hash(job["say"]) and rel not in force and not voice_changed:
@@ -359,12 +370,16 @@ def main() -> None:
         todo.append(job)
     print(f"clips {len(jobs)}; rendering {len(todo)} x2")
     TMP.mkdir(exist_ok=True)
-    word_voice = load_word_voice() if any(job["word"] for job in todo) else None
+    word_voice = load_word_voice() if any(job["word"] and not job.get("recording") for job in todo) else None
     for done, job in enumerate(todo, 1):
         rel = job["rel"]
         stem = rel.replace("/", "_").replace(".mp3", "")
         wav = TMP / f"{stem}.wav"
         wav_s = TMP / f"{stem}-slow.wav"
+        if job.get("recording"):
+            render_pair(job["recording"], ROOT / rel, ROOT / rel.replace(".mp3", "-slow.mp3"))
+            rendered[rel] = text_hash(job["say"])
+            continue
         v, speaker = (word_voice, job["speaker"]) if job["word"] else (voice, None)
         synth(v, job["say"], wav, 1.0, speaker)
         synth(v, job["say"], wav_s, 1.35, speaker)

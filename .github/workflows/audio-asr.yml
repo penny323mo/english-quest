@@ -4,7 +4,8 @@ name: audio-asr
 # clip (Whisper base.en) whose transcript differs from its text fails when it is
 # also acoustically far from a fresh render of that text. A word-only clip
 # (Whisper small.en, Kokoro voice) must be heard as its word or a reviewed
-# homophone (see scripts/check_audio_asr.py).
+# homophone (see scripts/check_audio_asr.py). Three licensed dictionary clips
+# instead verify their source, output checksum and complete audio derivation.
 on:
   pull_request:
     paths:
@@ -14,6 +15,9 @@ on:
       - "scripts/check_audio_asr.py"
       - "scripts/asr_selftest.py"
       - "scripts/render_audio.py"
+      - "scripts/word_recordings.py"
+      - "scripts/audio-sources/**"
+      - "content/word-audio-recordings.json"
       - "tests/fixtures/asr-known.json"
       - "tests/fixtures/word-homophones.json"
       - "content/word-audio.json"
@@ -36,6 +40,8 @@ jobs:
           # Pinned: the word-clip gate was tuned on these builds, and a newer decoder can
           # hear a borderline take differently.
           python -m pip install sherpa-onnx==2.0.1 piper-tts==1.8.0 numpy
+      - name: Dictionary sources and audio derivation (including wrong-file controls)
+        run: python tests/helpers/word_recordings.py
       - name: Cache Whisper models
         id: models
         uses: actions/cache@v4

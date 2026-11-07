@@ -46,5 +46,7 @@ test('changing a card speaker, renderer or model pin schedules the relevant audi
     speaker: ['assets/audio/a.mp3'],
     renderer: ['assets/audio/a.mp3', 'assets/audio/b.mp3'],
     model_pins: ['assets/audio/a.mp3', 'assets/audio/b.mp3'],
+    dictionary_checker: ['assets/audio/a.mp3', 'assets/audio/b.mp3'],
+    dictionary_sources: ['assets/audio/a.mp3', 'assets/audio/b.mp3'],
   });
 });

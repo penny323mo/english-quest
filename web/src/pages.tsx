@@ -587,8 +587,9 @@ export function Attributions() {
       <p>ECDICT（MIT）同 CC-CEDICT（CC BY-SA 4.0）係中文對照參考，冇批量拷貝入卡。CC-Canto（CC BY-SA 3.0）用嚟核對粵拼開關；粵拼唔會教英文音。</p>
       <p>New General Service List 只係頻率參考，未整份複製入程式。</p>
       <h2>聲音</h2>
-      <p>例句同課堂嘅教學錄音係 Piper（MIT）en_US-ljspeech-medium。LJ Speech 屬公有領域。音素由 espeak-ng 產生，並強制 en-us，異讀詞再人手鎖定音素。慢速係合成時嘅長度比例 1.35，短句檔案時長未必剛好係 1.35 倍，但會慢過正常速度。冇用 Edge 或者 Azure。每日抽卡嘅單字 🔊 就用 Kokoro（見下一段）。</p>
-      <p>每日抽卡嘅單字 🔊 用 Kokoro v0.19（hexgrad，權重 Apache-2.0）嘅美式女聲 af；個別難字用同一模型嘅 af_bella、af_sarah 或 af_sky，經 sherpa-onnx 產生錄音；音素一樣由 espeak-ng（en-us）產生。Kokoro 模型卡寫明只用寬鬆授權或者冇版權嘅錄音訓練（包括公有領域錄音同大型供應商 TTS 生成嘅合成語音）。LJ Speech 把聲單獨讀一個字好多時讀錯（例如 good 讀成 bed），讀句子就冇問題，所以例句照用 LJ Speech。單字慢速可以由合格嘅正常錄音保持音高、將時長拉長至 1.2–1.35 倍製成，或者另行合成。正常同慢速都要通過 Whisper small.en 同 NVIDIA Parakeet 檢查；如果 Whisper 只係重複寫同一個正確字，就由 Parakeet 確認只讀咗一次。如果 Whisper 將 quote 寫成引號，亦要 Parakeet 清楚辨識為 quote。其他聽錯嘅就唔播。</p>
+      <p>例句同課堂嘅教學錄音係 Piper（MIT）en_US-ljspeech-medium。LJ Speech 屬公有領域。音素由 espeak-ng 產生，並強制 en-us，異讀詞再人手鎖定音素。慢速係合成時嘅長度比例 1.35，短句檔案時長未必剛好係 1.35 倍，但會慢過正常速度。冇用 Edge 或者 Azure。每日抽卡嘅單字 🔊 主要用 Kokoro，三個字用字典真人錄音（見下文）。</p>
+      <p>每日抽卡嘅合成單字 🔊 用 Kokoro v0.19（hexgrad，權重 Apache-2.0）嘅美式女聲 af；個別難字用同一模型嘅 af_bella、af_sarah 或 af_sky，經 sherpa-onnx 產生錄音；音素一樣由 espeak-ng（en-us）產生。Kokoro 模型卡寫明只用寬鬆授權或者冇版權嘅錄音訓練（包括公有領域錄音同大型供應商 TTS 生成嘅合成語音）。LJ Speech 把聲單獨讀一個字好多時讀錯（例如 good 讀成 bed），讀句子就冇問題，所以例句照用 LJ Speech。單字慢速可以由合格嘅正常錄音保持音高、將時長拉長至 1.2–1.35 倍製成，或者另行合成。正常同慢速都要通過 Whisper small.en 同 NVIDIA Parakeet 檢查；如果 Whisper 只係重複寫同一個正確字，就由 Parakeet 確認只讀咗一次。如果 Whisper 將 quote 寫成引號，亦要 Parakeet 清楚辨識為 quote。其他聽錯嘅就唔播。</p>
+      <p>a（弱讀 /ə/）、fee 同 led 嘅單字錄音由 <a href="https://commons.wikimedia.org/wiki/User:Dvortygirl">Dvortygirl</a> 以美式英語錄製，來自 Wikimedia Commons：<a href="https://commons.wikimedia.org/wiki/File:En-us-a-unstressed.ogg">a 弱讀</a>、<a href="https://commons.wikimedia.org/wiki/File:En-us-fee.ogg">fee</a>、<a href="https://commons.wikimedia.org/wiki/File:En-us-led.ogg">led</a>。原錄音同本 app 嘅改編檔案均以 <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> 發佈。改動只有轉成 MP3、加前後靜音，以及慢速版保持音高、將語音時長拉長至 1.35 倍，冇剪走語音。呢三個字按字典標示嘅讀音核對來源，並檢查原檔同轉換結果；唔會將 ASR 聽錯計作辨識通過。</p>
       <p>瀏覽器嘅 Web Speech 只係臨時跟讀，唔係標準音。</p>
       <h2>複習同畫面</h2>
       <p>排期用 ts-fsrs（MIT）。</p>

@@ -220,6 +220,8 @@ def clips() -> list[dict]:
         add(row["audio"], lemma.get(item_id, ""), row["say"], f"{item_id} word", row["say"] if "[[" in row["say"] else None)
         if "speaker" in row:
             out[-1]["speaker"] = row["speaker"]
+        if row.get("recording"):
+            out[-1]["recording"] = row["recording"]
     return out
 
 
@@ -283,7 +285,7 @@ def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
     # A change to the word gate re-checks the word clips it affects, though none of
     # their text or audio changed: the checker itself, the word voice, or a homophone.
     checker_changed = bool(subprocess.run(
-        ["git", "diff", "--name-only", ref, "--", "scripts/check_audio_asr.py", "scripts/render_audio.py", ".github/workflows/audio-asr.yml"], cwd=ROOT, capture_output=True, text=True, check=True
+        ["git", "diff", "--name-only", ref, "--", "scripts/check_audio_asr.py", "scripts/render_audio.py", "scripts/word_recordings.py", "content/word-audio-recordings.json", "scripts/audio-sources", ".github/workflows/audio-asr.yml"], cwd=ROOT, capture_output=True, text=True, check=True
     ).stdout.strip())
     old_words = old_json("content/word-audio.json") or {}
     new_words = json.loads(WORDS.read_text(encoding="utf-8")) if WORDS.exists() else {}
@@ -510,7 +512,9 @@ def load_hearers(args, folder: Path, jobs: list[dict]) -> dict:
         heard = transcribe(word_rec if r["word"] else first, mp3)
         return heard, round(dtw_distance(ROOT / r["rel"], mp3), 3)
 
+    from word_recordings import verify as verify_recording
     return {
+        "verify_recording": verify_recording,
         "hear_sentence": lambda job: transcribe(first, ROOT / job["rel"]),
         "hear_word": lambda job: transcribe(word_rec, ROOT / job["rel"]),
         "hear_parakeet": (lambda job: transcribe(parakeet, ROOT / job["rel"])) if parakeet is not None else None,
@@ -518,11 +522,11 @@ def load_hearers(args, folder: Path, jobs: list[dict]) -> dict:
     }
 
 
-VERDICTS = ("whisper", "parakeet", "acoustic", "waived", "failed")
+VERDICTS = ("whisper", "parakeet", "dictionary", "acoustic", "waived", "failed")
 
 
 def run(jobs: list[dict], *, hear_sentence, hear_word, hear_parakeet, fresh, known: dict,
-        reuse: dict | None = None, same_sound: dict | None = None, json_path: str | None = None) -> int:
+        verify_recording=None, reuse: dict | None = None, same_sound: dict | None = None, json_path: str | None = None) -> int:
     """The whole decision for a list of clips. Recognisers and the fresh-render
     comparison are passed in, so tests can run this exact flow on scripted output.
 
@@ -531,6 +535,8 @@ def run(jobs: list[dict], *, hear_sentence, hear_word, hear_parakeet, fresh, kno
       parakeet  a word clip Whisper repeated ("close close") or rendered as a quote mark, heard by Parakeet
                 exactly once. Parakeet has the last word there: if it hears anything
                 else, or is not available, the clip fails, with no acoustic fallback;
+      dictionary source and derivation verified against a licensed US dictionary recording;
+                ASR transcripts remain diagnostic, not a pass condition;
       acoustic  misheard otherwise, but close to a fresh render (DTW_MAX for a sentence;
                 WORD_DTW_MAX, with that render heard as the word, for a word);
       waived    failed, but listed in tests/fixtures/asr-known.json;
@@ -547,7 +553,12 @@ def run(jobs: list[dict], *, hear_sentence, hear_word, hear_parakeet, fresh, kno
             card = job["where"].rsplit(" ", 1)[0]
             alts = alternates(job["text"], card, same_sound)
             row = dict(job, base=heard, problems=compare_word(job["text"], heard, alts))
-            if not row["problems"]:
+            if job.get("recording"):
+                row["parakeet"] = hear_parakeet(job) if hear_parakeet is not None else None
+                row["recordingCheck"] = verify_recording(job) if verify_recording else {"accepted": False, "reason": "source verifier unavailable"}
+                # No acoustic fallback or waiver can override a changed dictionary file.
+                row["verdict"] = "dictionary" if row["recordingCheck"]["accepted"] else "failed"
+            elif not row["problems"]:
                 row["verdict"] = "whisper"
             elif needs_parakeet(job["text"], heard):
                 # Repetition or a quote mark: Parakeet decides, and nothing else may.
@@ -597,6 +608,7 @@ def run(jobs: list[dict], *, hear_sentence, hear_word, hear_parakeet, fresh, kno
     print(f"  Parakeet ruled on {len(referred)} (Whisper repeated the word or wrote quote as punctuation): {summary['parakeet']} passed")
     for p in referred:
         print(f"    {p['verdict'].upper():8} {p['rel']}: Whisper {p['whisper']!r}, Parakeet {p['parakeet']!r}")
+    print(f"  dictionary source and derivation verified (not ASR): {summary['dictionary']}")
     print(f"  acoustic fallback: {summary['acoustic']}")
     print(f"  waived (known): {summary['waived']}")
     print(f"  failed: {summary['failed']}")
