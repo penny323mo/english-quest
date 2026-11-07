@@ -12,10 +12,17 @@ text sit well below it. A single wrong word is caught without audio by
 tests/audio-rendered.mjs. Clips in tests/fixtures/asr-known.json are reported
 but do not fail the run.
 
-Models: the sherpa-onnx Whisper export sherpa-onnx-whisper-base.en from
-https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models. Point
-EQ_ASR_MODELS (or --models) at the folder that holds it, and EQ_PIPER_MODEL
-(or --voice) at the en_US-ljspeech-medium.onnx the clips were rendered with.
+Models: the sherpa-onnx Whisper exports sherpa-onnx-whisper-base.en (sentences)
+and sherpa-onnx-whisper-small.en (word-only clips, which base.en mishears too
+often alone) from https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models.
+Point EQ_ASR_MODELS (or --models) at the folder that holds them, EQ_PIPER_MODEL
+(or --voice) at the en_US-ljspeech-medium.onnx the sentences were rendered with,
+and EQ_WORD_TTS_DIR (or --word-voice) at the folder of the voice in
+content/word-audio.json (Kokoro kokoro-en-v0_19).
+A word-only clip is compared strictly (compare_word), with the reviewed
+homophones in tests/fixtures/word-homophones.json. When Whisper only repeats the
+word ("close close"), NVIDIA Parakeet (EQ_PARAKEET or --parakeet) must hear it
+exactly once.
 
     python3 scripts/check_audio_asr.py                 # every clip
     python3 scripts/check_audio_asr.py --only rel ...  # just these clips
@@ -39,6 +46,10 @@ LEX = ROOT / "content" / "lexicon.json"
 LINES = ROOT / "content" / "lines.json"
 WORDS = ROOT / "content" / "word-audio.json"
 KNOWN = ROOT / "tests" / "fixtures" / "asr-known.json"
+# Word-only clips are heard by a stronger model than sentences: base.en mishears a
+# lone short word too often to tell a good take from a bad one.
+WORD_ASR = "small.en"
+HOMOPHONES = ROOT / "tests" / "fixtures" / "word-homophones.json"
 
 # Words Whisper drops or adds freely; an edit made only of these is not a failure.
 FUNCTION = set(
@@ -113,6 +124,56 @@ def compare(text: str, heard: str) -> list[str]:
     return problems
 
 
+def _homophone_table(data: dict | None) -> dict:
+    low = lambda d: {k.lower(): [v.lower() for v in vals] for k, vals in (d or {}).items()}
+    data = data or {}
+    return {"words": low(data.get("words")), "cards": low(data.get("cards"))}
+
+
+def word_recheck(job: dict, old_table: dict, new_table: dict, rules_changed: bool) -> bool:
+    """Whether --changed must listen to this word-only clip again although its text and
+    mp3 did not change: the gate it passed changed (the checker or the word voice), or
+    the homophones it may match did."""
+    if not job.get("word"):
+        return False
+    if rules_changed:
+        return True
+    card = job["where"].rsplit(" ", 1)[0]
+    return alternates(job["text"], card, old_table) != alternates(job["text"], card, new_table)
+
+
+def homophones() -> dict:
+    """Reviewed spellings a recogniser may write for a lone word that sound the same:
+    `words` by lemma (tea as "T", pearl as "purl") and `cards` by card id, for a
+    heteronym card whose reading has its own homophone (bass the pitch as "base").
+    Only for word-only clips."""
+    if not HOMOPHONES.exists():
+        return _homophone_table(None)
+    return _homophone_table(json.loads(HOMOPHONES.read_text(encoding="utf-8")))
+
+
+def alternates(lemma: str, card_id: str | None, same_sound: dict | None = None) -> list[str]:
+    table = same_sound if same_sound is not None else homophones()
+    return table["words"].get(" ".join(norm(lemma)), []) + table["cards"].get((card_id or "").lower(), [])
+
+
+def compare_word(lemma: str, heard: str, alts: list[str] = ()) -> list[str]:
+    """Stricter than compare for a word-only clip: an exact match after norm (which
+    applies the listed spelling variants), or a reviewed homophone. No word is waved
+    through as a function word (the heard as "that" fails) and there is no
+    similarity score (water heard as "waiter" fails)."""
+    want, got = norm(lemma), norm(heard)
+    if not got:
+        return [f"{' '.join(want)}→∅"]
+    # Exact only (after norm's listed spelling variants, colour/color): no similarity
+    # score, which passed different words (water as "waiter", price as "prize").
+    if "".join(want) == "".join(got):
+        return []
+    if " ".join(got) in alts or "".join(got) in alts:
+        return []
+    return [f"{' '.join(want)}→{' '.join(got)}"]
+
+
 def render_text(line: dict) -> str:
     say = line.get("say")
     return say if isinstance(say, str) and say else str(line.get("en") or "")
@@ -131,7 +192,7 @@ def clips() -> list[dict]:
         seen.add(rel)
         if "{{learner" in say:
             return  # the device voice speaks the learner's name (web/src/learner.ts needsRuntimeSpeech)
-        row = {"rel": rel, "text": shown, "say": say, "where": where}
+        row = {"rel": rel, "text": shown, "say": say, "where": where, "word": where.endswith(" word")}
         if ref:
             row["ref"] = ref
         out.append(row)
@@ -216,7 +277,20 @@ def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
         ["git", "diff", "--name-only", ref, "--", "assets/audio"], cwd=ROOT, capture_output=True, text=True, check=True
     ).stdout.split()
     touched = {rel.replace("-slow.mp3", ".mp3") for rel in diff}
-    return [j for j in jobs if old.get(j["rel"]) != j["say"] or j["rel"] in touched]
+    # A change to the word gate re-checks the word clips it affects, though none of
+    # their text or audio changed: the checker itself, the word voice, or a homophone.
+    checker_changed = bool(subprocess.run(
+        ["git", "diff", "--name-only", ref, "--", "scripts/check_audio_asr.py"], cwd=ROOT, capture_output=True, text=True, check=True
+    ).stdout.strip())
+    old_words = old_json("content/word-audio.json") or {}
+    new_words = json.loads(WORDS.read_text(encoding="utf-8")) if WORDS.exists() else {}
+    rules_changed = checker_changed or old_words.get("voice") != new_words.get("voice")
+    old_table = _homophone_table(old_json("tests/fixtures/word-homophones.json"))
+    new_table = homophones()
+    return [
+        j for j in jobs
+        if old.get(j["rel"]) != j["say"] or j["rel"] in touched or word_recheck(j, old_table, new_table, rules_changed)
+    ]
 
 
 # Distance between a clip and a fresh render of its text. Over all 4,227 clips,
@@ -224,6 +298,38 @@ def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
 # sentence measured 1.9-3.4. Clips whose say forces phonemes (a table for two)
 # can sit above the line too; those are listed in tests/fixtures/asr-known.json.
 DTW_MAX = 1.8
+
+# A word-only clip whose transcript is off may still pass if it is near-identical to a
+# fresh render of the same word in the same voice, and that render is heard as the
+# word. CI's Whisper sometimes doubles a lone word ("Floor Floor") that it hears right
+# on a fresh render. Kokoro re-renders of one word measured 0.33-0.65; the closest
+# different words measured 0.88 (price/prize, pen/pin), the rest over 1.0. Homophones
+# (wine/whine, 0.40) are the same word to the ear anyway.
+WORD_DTW_MAX = 0.7
+
+
+def repeated_word(lemma: str, heard: str) -> bool:
+    """Whisper's repetition loop: the transcript is only the word, said 2+ times
+    ("close close", "password" x8). Seen on CI's runners on clips it hears right on
+    other runs."""
+    want, got = norm(lemma), norm(heard)
+    return bool(want) and len(got) >= 2 * len(want) and len(got) % len(want) == 0 and got == want * (len(got) // len(want))
+
+
+def parakeet_recognizer(folder: Path, threads: int):
+    import sherpa_onnx
+
+    return sherpa_onnx.OfflineRecognizer.from_transducer(
+        encoder=str(folder / "encoder.int8.onnx"), decoder=str(folder / "decoder.int8.onnx"),
+        joiner=str(folder / "joiner.int8.onnx"), tokens=str(folder / "tokens.txt"),
+        model_type="nemo_transducer", num_threads=threads,
+    )
+
+
+def word_acoustic_ok(r: dict, alts: list[str]) -> bool:
+    """A word-only clip that was misheard passes only as a near copy of a render that
+    is heard as its word (see WORD_DTW_MAX)."""
+    return r.get("distance", 99) <= WORD_DTW_MAX and not compare_word(r["text"], r.get("refBase", ""), alts)
 
 
 def similarity(a: str, b: str) -> float:
@@ -280,14 +386,36 @@ def dtw_distance(a: Path, b: Path) -> float:
     return float(acc[n, m] / (n + m))
 
 
+class WordReference:
+    """Fresh renders of word-only clips with their own voice (render_audio.WORD_VOICE)."""
+
+    def __init__(self, folder: Path, says: list[str]):
+        sys.path.insert(0, str(ROOT / "scripts"))
+        import render_audio as ra
+
+        self.ra = ra
+        self.voice = ra.load_word_voice(says, folder)
+        self.tmp = Path(os.environ.get("TMPDIR", "/tmp")) / "eq-asr-ref"
+        self.tmp.mkdir(parents=True, exist_ok=True)
+
+    def mp3(self, job: dict) -> Path:
+        slow = job["rel"].endswith("-slow.mp3")
+        stem = self.tmp / job["rel"].replace("/", "_")
+        wav, mp3 = stem.with_suffix(".wav"), stem
+        self.voice.synth(job.get("ref") or job["text"], wav, 1.35 if slow else 1.0)
+        self.ra.to_mp3(wav, mp3)
+        return mp3
+
+
 class Reference:
     """Render the on-screen text with the app's Piper voice, through the same mp3 pipeline."""
 
-    def __init__(self, model: str):
+    def __init__(self, model: str, speaker: int | None = None):
         from piper import PiperVoice
 
         self.voice = PiperVoice.load(model)
         self.voice.config.espeak_voice = "en-us"
+        self.speaker = speaker
         self.tmp = Path(os.environ.get("TMPDIR", "/tmp")) / "eq-asr-ref"
         self.tmp.mkdir(parents=True, exist_ok=True)
 
@@ -300,7 +428,7 @@ class Reference:
         wav, mp3 = stem.with_suffix(".wav"), stem
         text = job.get("ref") or re.sub(r"\{\{learner(-spell)?\}\}", "Ling", job["text"])
         with wave.open(str(wav), "wb") as wf:
-            self.voice.synthesize_wav(text, wf, syn_config=SynthesisConfig(length_scale=1.35 if slow else 1.0))
+            self.voice.synthesize_wav(text, wf, syn_config=SynthesisConfig(length_scale=1.35 if slow else 1.0, speaker_id=self.speaker))
         subprocess.run(
             ["ffmpeg", "-y", "-loglevel", "error", "-i", str(wav), "-af", "adelay=180:all=1,apad=pad_dur=0.2",
              "-ac", "1", "-ar", "22050", "-codec:a", "libmp3lame", "-qscale:a", "5", str(mp3)],
@@ -313,6 +441,8 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--models", default=os.environ.get("EQ_ASR_MODELS", ""))
     ap.add_argument("--voice", default=os.environ.get("EQ_PIPER_MODEL", ""), help="Piper en_US-ljspeech-medium.onnx")
+    ap.add_argument("--parakeet", default=os.environ.get("EQ_PARAKEET", ""), help="NVIDIA Parakeet folder: rules on a word clip when Whisper only repeats the word")
+    ap.add_argument("--word-voice", default=os.environ.get("EQ_WORD_TTS_DIR", ""), help="folder of the word-only clips' voice (content/word-audio.json `voice`, Kokoro)")
     ap.add_argument("--only", nargs="*", help="clip paths (assets/audio/...) to check")
     ap.add_argument("--changed", metavar="REF", help="only clips whose text or mp3 changed since this git ref")
     ap.add_argument("--slow", action="store_true", help="also check the -slow twin of each clip")
@@ -337,48 +467,136 @@ def main() -> int:
     known = json.loads(KNOWN.read_text(encoding="utf-8")) if KNOWN.exists() else {}
     reuse = {}
     if args.reuse:
-        for r in json.loads(Path(args.reuse).read_text(encoding="utf-8")):
-            reuse[(r["rel"], r["say"])] = r["base"]
+        data = json.loads(Path(args.reuse).read_text(encoding="utf-8"))
+        for r in data["results"] if isinstance(data, dict) else data:
+            if not r.get("word"):
+                reuse[(r["rel"], r["say"])] = r["base"]
 
-    # 1. base.en on the clip: an exact match with the text passes straight away.
+    hearers = load_hearers(args, folder, jobs)
+    return run(jobs, known=known, reuse=reuse, json_path=args.json, **hearers)
+
+
+def load_hearers(args, folder: Path, jobs: list[dict]) -> dict:
+    """The recognisers and fresh-render comparison main() hands to run(). Tests replace
+    this one function with scripted output and run main() itself."""
     first = recognizer(folder, "base.en", args.threads)
-    results = []
+    word_rec = recognizer(folder, WORD_ASR, args.threads) if any(j["word"] for j in jobs) else None
+    parakeet = parakeet_recognizer(Path(args.parakeet), args.threads) if args.parakeet else None
+    refs: dict[str, object] = {}
+
+    def fresh(r: dict) -> tuple[str, float]:
+        if r["word"]:
+            if "word" not in refs:
+                if not args.word_voice:
+                    sys.exit("set EQ_WORD_TTS_DIR or --word-voice to the word clips' voice folder")
+                refs["word"] = WordReference(Path(args.word_voice), [j.get("ref") or j["text"] for j in jobs if j["word"]])
+            mp3 = refs["word"].mp3(r)
+        else:
+            refs.setdefault("sentence", Reference(args.voice))
+            mp3 = refs["sentence"].mp3(r)
+        heard = transcribe(word_rec if r["word"] else first, mp3)
+        return heard, round(dtw_distance(ROOT / r["rel"], mp3), 3)
+
+    return {
+        "hear_sentence": lambda job: transcribe(first, ROOT / job["rel"]),
+        "hear_word": lambda job: transcribe(word_rec, ROOT / job["rel"]),
+        "hear_parakeet": (lambda job: transcribe(parakeet, ROOT / job["rel"])) if parakeet is not None else None,
+        "fresh": fresh,
+    }
+
+
+VERDICTS = ("whisper", "parakeet", "acoustic", "waived", "failed")
+
+
+def run(jobs: list[dict], *, hear_sentence, hear_word, hear_parakeet, fresh, known: dict,
+        reuse: dict | None = None, same_sound: dict | None = None, json_path: str | None = None) -> int:
+    """The whole decision for a list of clips. Recognisers and the fresh-render
+    comparison are passed in, so tests can run this exact flow on scripted output.
+
+    Each clip gets exactly one verdict:
+      whisper   heard as its text straight away (base.en for a sentence, small.en for a word);
+      parakeet  a word clip Whisper only repeated ("close close") that Parakeet heard
+                exactly once. Parakeet has the last word there: if it hears anything
+                else, or is not available, the clip fails, with no acoustic fallback;
+      acoustic  misheard otherwise, but close to a fresh render (DTW_MAX for a sentence;
+                WORD_DTW_MAX, with that render heard as the word, for a word);
+      waived    failed, but listed in tests/fixtures/asr-known.json;
+      failed    anything else.
+    """
+    reuse = reuse or {}
+    same_sound = same_sound if same_sound is not None else homophones()
+    results: list[dict] = []
+    referred: list[dict] = []
+
     for n, job in enumerate(jobs, 1):
-        heard = reuse.get((job["rel"], job["say"])) or transcribe(first, ROOT / job["rel"])
-        results.append(dict(job, base=heard, problems=compare(job["text"], heard)))
+        if job["word"]:
+            heard = hear_word(job)
+            card = job["where"].rsplit(" ", 1)[0]
+            alts = alternates(job["text"], card, same_sound)
+            row = dict(job, base=heard, problems=compare_word(job["text"], heard, alts))
+            if not row["problems"]:
+                row["verdict"] = "whisper"
+            elif repeated_word(job["text"], heard):
+                # Whisper looping on a lone word: Parakeet decides, and nothing else may.
+                row["parakeet"] = hear_parakeet(job) if hear_parakeet is not None else None
+                accepted = row["parakeet"] is not None and not compare_word(job["text"], row["parakeet"], alts)
+                row["verdict"] = "parakeet" if accepted else "rejected"
+                referred.append({"rel": job["rel"], "text": job["text"], "whisper": heard,
+                                 "parakeet": row["parakeet"], "verdict": "parakeet" if accepted else "failed"})
+        else:
+            heard = reuse.get((job["rel"], job["say"])) or hear_sentence(job)
+            row = dict(job, base=heard, problems=compare(job["text"], heard))
+            if not row["problems"]:
+                row["verdict"] = "whisper"
+        results.append(row)
         if n % 200 == 0:
             print(f"  {n}/{len(jobs)}", flush=True)
-    suspects = [r for r in results if r["problems"]]
-    print(f"base.en: {len(results) - len(suspects)} / {len(results)} match the text; {len(suspects)} compared with a fresh render")
-    if not suspects:
-        print(f"checked {len(results)} clips: 0 fail")
-        return 0
 
-    # 2. The transcript differs: compare the clip with a fresh render of the shown text.
-    ref = Reference(args.voice)
+    # The rest were misheard (not a repeat Parakeet ruled on): compare each with a fresh
+    # render of the shown text, in the voice the clip was made with.
+    suspects = [r for r in results if "verdict" not in r]
     for n, r in enumerate(suspects, 1):
-        fresh = ref.mp3(r)
-        r["refBase"] = transcribe(first, fresh)
-        r["distance"] = round(dtw_distance(ROOT / r["rel"], fresh), 3)
+        r["refBase"], r["distance"] = fresh(r)
+        if r["word"]:
+            card = r["where"].rsplit(" ", 1)[0]
+            ok = word_acoustic_ok(r, alternates(r["text"], card, same_sound))
+        else:
+            ok = r["distance"] <= DTW_MAX
+        r["verdict"] = "acoustic" if ok else "rejected"
         if n % 100 == 0:
             print(f"  fresh render {n}/{len(suspects)}", flush=True)
     for r in results:
-        r["ok"] = not r["problems"] or r["distance"] <= DTW_MAX
+        if r["verdict"] == "rejected":
+            r["verdict"] = "waived" if r["rel"] in known else "failed"
+        r["ok"] = r["verdict"] != "failed"
 
-    failed, waived = [], []
+    summary = {"total": len(results), **{v: sum(1 for r in results if r["verdict"] == v) for v in VERDICTS}}
+    assert sum(summary[v] for v in VERDICTS) == summary["total"]
+    if json_path:
+        Path(json_path).write_text(
+            json.dumps({"summary": summary, "parakeet": referred, "results": results}, ensure_ascii=False, indent=1) + "\n",
+            encoding="utf-8",
+        )
+
+    words = sum(1 for r in results if r["word"])
+    print(f"checked {summary['total']} clips ({summary['total'] - words} sentences by base.en, {words} word-only clips by {WORD_ASR}):")
+    print(f"  heard by Whisper straight away: {summary['whisper']}")
+    print(f"  Parakeet ruled on {len(referred)} (Whisper only repeated the word): {summary['parakeet']} passed")
+    for p in referred:
+        print(f"    {p['verdict'].upper():8} {p['rel']}: Whisper {p['whisper']!r}, Parakeet {p['parakeet']!r}")
+    print(f"  acoustic fallback: {summary['acoustic']}")
+    print(f"  waived (known): {summary['waived']}")
+    print(f"  failed: {summary['failed']}")
     for r in results:
-        if not r["ok"]:
-            (waived if r["rel"] in known else failed).append(r)
-    for label, rows in (("KNOWN (ear check)", waived), ("FAIL", failed)):
-        for r in rows:
+        if r["verdict"] in ("waived", "failed") and "distance" in r:
+            limit = WORD_DTW_MAX if r["word"] else DTW_MAX
             print(
-                f"{label}: {r['rel']} [{r['where']}] distance {r['distance']} > {DTW_MAX}\n"
+                f"{'KNOWN (ear check)' if r['verdict'] == 'waived' else 'FAIL'}: {r['rel']} [{r['where']}] distance {r['distance']} (limit {limit})\n"
                 f"  text:        {r['text']}\n  clip heard:  {r['base']}\n  fresh heard: {r['refBase']}"
             )
-    if args.json:
-        Path(args.json).write_text(json.dumps(results, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"checked {len(results)} clips: {len(failed)} fail, {len(waived)} known")
-    return 1 if failed else 0
+        elif r["verdict"] in ("waived", "failed"):
+            print(f"{'KNOWN (ear check)' if r['verdict'] == 'waived' else 'FAIL'}: {r['rel']} [{r['where']}] Whisper {r['base']!r}, Parakeet {r.get('parakeet')!r}")
+    return 1 if summary["failed"] else 0
 
 
 if __name__ == "__main__":

@@ -7,8 +7,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium, webkit } from "playwright";
-import { drawDaily, macauDate } from "../web/src/daily.mjs";
-import { lessonOpen } from "../web/src/unlock.mjs";
+import { NOT_DRAWN, macauDate } from "../web/src/daily.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
@@ -18,19 +17,18 @@ const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), 
 const lexById = Object.fromEntries(lex.items.map((item) => [item.id, item]));
 const wordClips = JSON.parse(fs.readFileSync(path.join(root, "content/word-audio.json"), "utf8")).items;
 
-/** A day whose draw, for a fresh 打好基礎 profile, includes a card with no checked word clip. */
-function dayWithUncheckedCard() {
-  const shipped = JSON.parse(fs.readFileSync(path.join(root, "web/src/data.ts"), "utf8").match(/export const SHIPPED = (\[[^\]]*\])/)[1]);
-  const lemmasOf = (id) => JSON.parse(fs.readFileSync(path.join(root, `content/lessons/${id.toLowerCase()}.json`), "utf8")).lemmas;
-  const preferred = shipped.filter((id) => lessonOpen(id, "foundation", {}, shipped)).flatMap(lemmasOf);
-  const pool = lex.items.filter((item) => !item.hidden).map((item) => item.id);
-  for (let i = 0; i < 60; i += 1) {
-    const when = new Date(DAY.getTime() + i * 24 * 60 * 60 * 1000);
-    const ids = drawDaily({ date: macauDate(when), preferred, pool, history: [] });
-    const unchecked = ids.findIndex((id) => !wordClips[id]);
-    if (unchecked >= 0) return { when, index: unchecked, id: ids[unchecked] };
-  }
-  throw new Error("no day in 60 draws a card without a word clip");
+/**
+ * A fixed card with no checked word clip (the first in content/word-audio-skip.json
+ * that can be drawn and has its sentence clip), shown in a stored draw with two cards
+ * that have one. Seeding the draw keeps the test independent of which day happens to
+ * draw such a card: there are few of them now.
+ */
+function uncheckedDraw() {
+  const skip = JSON.parse(fs.readFileSync(path.join(root, "content/word-audio-skip.json"), "utf8")).ids;
+  const id = skip.find((cardId) => lexById[cardId] && !lexById[cardId].hidden && !NOT_DRAWN.has(cardId) && !wordClips[cardId] && lexById[cardId].audio);
+  if (!id) throw new Error("no drawable card without a word clip in content/word-audio-skip.json: the unchecked-card test needs one");
+  const checked = lex.items.filter((item) => !item.hidden && !NOT_DRAWN.has(item.id) && wordClips[item.id]).slice(0, 2).map((item) => item.id);
+  return { id, index: 0, ids: [id, ...checked] };
 }
 const SAFARI_UA = "Mozilla/5.0 (iPhone; CPU iPhone OS 18_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Mobile/15E148 Safari/604.1";
 // 10:00 in Macau on 4 Nov 2026; the next Macau day starts at 16:00 UTC.
@@ -396,12 +394,14 @@ async function runBrowser(browserType, browserName) {
     await context.close();
 
     // A card whose word clip has not passed the ASR check is still drawn, without the word 🔊.
-    const unchecked = dayWithUncheckedCard();
+    const unchecked = uncheckedDraw();
     const plain = await newPage(browser, browserName);
-    await plain.page.clock.setFixedTime(unchecked.when);
     await onboard(plain.page);
-    await plain.page.goto(`${origin}#/daily`);
-    await plain.page.getByRole("button", { name: "跳過動畫" }).click();
+    await storeDraw(plain.page, { date: macauDate(DAY), ids: unchecked.ids, done: false, history: [] }, 0);
+    await plain.page.evaluate(() => { location.hash = "#/daily"; });
+    const skipPack = plain.page.getByRole("button", { name: "跳過動畫" });
+    await skipPack.waitFor({ timeout: 5000 }).catch(() => undefined);
+    if (await skipPack.count()) await skipPack.click();
     await plain.page.locator(".draw-dot").nth(unchecked.index).click();
     const plainItem = lexById[unchecked.id];
     check(`${tag} unchecked card ${unchecked.id} is drawn`, (await plain.page.locator(".draw-card").getAttribute("data-card")) === unchecked.id);

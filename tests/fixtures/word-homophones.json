@@ -1,0 +1,126 @@
+{
+ "note": "Spellings a recogniser may write for a lone word that sounds the same, for word-only clips only (scripts/check_audio_asr.py compare_word). Each entry is a real homophone or the letter name; review before adding. A heteronym's other reading is not a homophone: those clips use [[phonemes]] and their own check.",
+ "words": {
+  "break": [
+   "brake"
+  ],
+  "by": [
+   "buy",
+   "bye"
+  ],
+  "eight": [
+   "ate"
+  ],
+  "for": [
+   "four",
+   "fore"
+  ],
+  "four": [
+   "for",
+   "fore"
+  ],
+  "here": [
+   "hear"
+  ],
+  "hi": [
+   "high"
+  ],
+  "hour": [
+   "our"
+  ],
+  "i": [
+   "eye",
+   "aye"
+  ],
+  "know": [
+   "no"
+  ],
+  "meet": [
+   "meat"
+  ],
+  "missed": [
+   "mist"
+  ],
+  "night": [
+   "knight"
+  ],
+  "one": [
+   "won"
+  ],
+  "our": [
+   "hour"
+  ],
+  "pair": [
+   "pear",
+   "pare"
+  ],
+  "pearl": [
+   "purl"
+  ],
+  "right": [
+   "write",
+   "rite"
+  ],
+  "sale": [
+   "sail"
+  ],
+  "see": [
+   "c",
+   "sea"
+  ],
+  "suite": [
+   "sweet"
+  ],
+  "tea": [
+   "t",
+   "tee"
+  ],
+  "to": [
+   "too",
+   "two"
+  ],
+  "too": [
+   "two",
+   "to"
+  ],
+  "two": [
+   "too",
+   "to"
+  ],
+  "way": [
+   "weigh"
+  ],
+  "weather": [
+   "whether"
+  ],
+  "week": [
+   "weak"
+  ],
+  "weight": [
+   "wait"
+  ],
+  "where": [
+   "wear"
+  ],
+  "which": [
+   "witch"
+  ],
+  "would": [
+   "wood"
+  ],
+  "you": [
+   "u"
+  ],
+  "your": [
+   "you're"
+  ]
+ },
+ "cards": {
+  "bass-noun-pitch": [
+   "base"
+  ],
+  "read-verb-past": [
+   "red"
+  ]
+ }
+}

@@ -15,6 +15,9 @@ recording behind. tests/audio-rendered.mjs fails if the two drift apart.
     python3 scripts/render_audio.py --force REL..  # re-render these clips anyway
 
 The voice is PREP/voices/en_US-ljspeech-medium.onnx, or EQ_PIPER_MODEL.
+Word-only clips (每日抽卡 🔊) use WORD_VOICE instead: LJSpeech garbles many
+isolated words (good as "bed", job as "jar"), while it reads them correctly in a
+sentence. That voice is Kokoro in PREP/voices/<WORD_VOICE model>/, or EQ_WORD_TTS_DIR.
 """
 from __future__ import annotations
 
@@ -33,6 +36,12 @@ from piper.config import SynthesisConfig
 
 ROOT = Path(__file__).resolve().parents[1]
 MODEL = Path(os.environ.get("EQ_PIPER_MODEL") or ROOT / "PREP" / "voices" / "en_US-ljspeech-medium.onnx")
+# Word-only clips: Kokoro v0.19 (Apache-2.0 weights) voice "af", a US female voice,
+# run with sherpa-onnx. Recorded in content/word-audio.json so the checker renders its
+# references with the same voice. Piper voices that read lone words well are all
+# fine-tuned from the Lessac data, whose licence is research-only.
+WORD_VOICE = {"engine": "kokoro", "model": "kokoro-en-v0_19", "speaker": 0}
+WORD_MODEL = Path(os.environ.get("EQ_WORD_TTS_DIR") or ROOT / "PREP" / "voices" / WORD_VOICE["model"])
 RENDERED = ROOT / "assets" / "audio" / "rendered.json"
 LEX = ROOT / "content" / "lexicon.json"
 LINES = ROOT / "content" / "lines.json"
@@ -91,7 +100,8 @@ def word_clips(include_skipped: bool = False) -> dict:
             "say": word_say(item, allowed),
         }
     return {
-        "note": "Word-only clips for 每日抽卡. Rendered by scripts/render_audio.py from `say`; listened to by scripts/check_audio_asr.py.",
+        "note": "Word-only clips for 每日抽卡. Rendered by scripts/render_audio.py from `say` with `voice`; listened to by scripts/check_audio_asr.py.",
+        "voice": dict(WORD_VOICE),
         "items": items,
     }
 
@@ -102,11 +112,11 @@ def clips() -> list[dict]:
     out = []
     seen = set()
 
-    def add(rel: str | None, say: str, sha_id: str | None) -> None:
+    def add(rel: str | None, say: str, sha_id: str | None, word: bool = False) -> None:
         if not rel or rel in seen:
             return
         seen.add(rel)
-        out.append({"rel": rel, "say": say, "sha_id": sha_id})
+        out.append({"rel": rel, "say": say, "sha_id": sha_id, "word": word})
 
     for item in lex["items"]:
         add(item["audio"], item["say"], item["id"])
@@ -119,12 +129,82 @@ def clips() -> list[dict]:
     for line in lines:
         add(line["audio"], line["say"], None)
     for row in word_clips(include_skipped=True)["items"].values():
-        add(row["audio"], row["say"], None)
+        add(row["audio"], row["say"], None, word=True)
     return out
 
 
-def synth(voice: PiperVoice, text: str, wav_path: Path, scale: float) -> None:
-    cfg = SynthesisConfig(length_scale=scale)
+def placeholder_word(n: int) -> str:
+    """A letters-only lexicon word for the n-th [[phonemes]] say: eqphonemesa, eqphonemesb, …"""
+    return "eqphonemes" + "".join(chr(97 + int(d)) for d in str(n))
+
+
+class WordVoice:
+    """Kokoro through sherpa-onnx for word-only clips. sherpa-onnx needs a lexicon for
+    Kokoro, so one is built from espeak-ng (en-us, the phonemes Kokoro v0.19 was
+    trained on) for every word it will be asked to say. A `[[phonemes]]` say (a
+    heteronym's reading) gets a placeholder word mapped to exactly those phonemes."""
+
+    def __init__(self, folder: Path, speaker: int, says: list[str], threads: int = os.cpu_count() or 2):
+        import sherpa_onnx
+        from piper.phonemize_espeak import EspeakPhonemizer
+
+        self.speaker = speaker
+        tokens = {line.rsplit(" ", 1)[0] for line in (folder / "tokens.txt").read_text(encoding="utf-8").splitlines() if line.strip()}
+        espeak = EspeakPhonemizer()
+        lexicon: dict[str, str] = {}
+        self.placeholder: dict[str, str] = {}
+
+        def spell(phonemes: str) -> str:
+            kept = [c for c in phonemes if c in tokens and c not in " .,!?"]
+            return " ".join(kept)
+
+        for say in says:
+            forced = re.fullmatch(r"\[\[([^\]]+)\]\]", say.strip())
+            if forced:
+                if say in self.placeholder:
+                    continue  # two cards share these phonemes (jewellery, jewelry): one entry
+                word = placeholder_word(len(self.placeholder))
+                self.placeholder[say] = word
+                lexicon[word] = spell(forced.group(1))
+                continue
+            for word in re.findall(r"[A-Za-z']+", say):
+                key = word.lower()
+                if key not in lexicon:
+                    lexicon[key] = spell("".join("".join(s) for s in espeak.phonemize("en-us", key)))
+        TMP.mkdir(exist_ok=True)
+        lex_path = TMP / "kokoro-words-lexicon.txt"
+        lex_path.write_text("".join(f"{w} {p}\n" for w, p in sorted(lexicon.items())), encoding="utf-8")
+        self.tts = sherpa_onnx.OfflineTts(sherpa_onnx.OfflineTtsConfig(model=sherpa_onnx.OfflineTtsModelConfig(
+            kokoro=sherpa_onnx.OfflineTtsKokoroModelConfig(
+                model=str(folder / "model.onnx"), voices=str(folder / "voices.bin"), tokens=str(folder / "tokens.txt"),
+                data_dir=str(folder / "espeak-ng-data"), lexicon=str(lex_path),
+            ),
+            num_threads=threads,
+        )))
+
+    def synth(self, say: str, wav_path: Path, scale: float) -> None:
+        import numpy as np
+
+        audio = self.tts.generate(self.placeholder.get(say, say), sid=self.speaker, speed=1.0 / scale)
+        wav_path.parent.mkdir(parents=True, exist_ok=True)
+        with wave.open(str(wav_path), "wb") as wf:
+            wf.setnchannels(1)
+            wf.setsampwidth(2)
+            wf.setframerate(audio.sample_rate)
+            wf.writeframes((np.clip(np.asarray(audio.samples), -1, 1) * 32767).astype(np.int16).tobytes())
+
+
+def load_word_voice(says: list[str] | None = None, folder: Path | None = None) -> WordVoice:
+    if says is None:
+        says = [row["say"] for row in word_clips(include_skipped=True)["items"].values()]
+    return WordVoice(folder or WORD_MODEL, WORD_VOICE["speaker"], says)
+
+
+def synth(voice, text: str, wav_path: Path, scale: float, speaker: int | None = None) -> None:
+    if isinstance(voice, WordVoice):
+        voice.synth(text, wav_path, scale)
+        return
+    cfg = SynthesisConfig(length_scale=scale, speaker_id=speaker)
     wav_path.parent.mkdir(parents=True, exist_ok=True)
     with wave.open(str(wav_path), "wb") as wf:
         voice.synthesize_wav(text, wf, syn_config=cfg)
@@ -247,13 +327,15 @@ def main() -> None:
         todo.append(job)
     print(f"clips {len(jobs)}; rendering {len(todo)} x2")
     TMP.mkdir(exist_ok=True)
+    word_voice = load_word_voice() if any(job["word"] for job in todo) else None
     for done, job in enumerate(todo, 1):
         rel = job["rel"]
         stem = rel.replace("/", "_").replace(".mp3", "")
         wav = TMP / f"{stem}.wav"
         wav_s = TMP / f"{stem}-slow.wav"
-        synth(voice, job["say"], wav, 1.0)
-        synth(voice, job["say"], wav_s, 1.35)
+        v, speaker = (word_voice, WORD_VOICE["speaker"]) if job["word"] else (voice, None)
+        synth(v, job["say"], wav, 1.0, speaker)
+        synth(v, job["say"], wav_s, 1.35, speaker)
         to_mp3(wav, ROOT / rel)
         to_mp3(wav_s, ROOT / rel.replace(".mp3", "-slow.mp3"))
         rendered[rel] = text_hash(job["say"])

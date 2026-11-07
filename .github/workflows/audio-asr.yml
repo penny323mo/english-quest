@@ -1,8 +1,10 @@
 name: audio-asr
 
-# Listens to every clip whose text or mp3 changed in a pull request. A clip
-# whose transcript differs from its text fails when it is also acoustically
-# far from a fresh render of that text (see scripts/check_audio_asr.py).
+# Listens to every clip whose text or mp3 changed in a pull request. A sentence
+# clip (Whisper base.en) whose transcript differs from its text fails when it is
+# also acoustically far from a fresh render of that text. A word-only clip
+# (Whisper small.en, Kokoro voice) must be heard as its word or a reviewed
+# homophone (see scripts/check_audio_asr.py).
 on:
   pull_request:
     paths:
@@ -10,7 +12,10 @@ on:
       - "content/lines.json"
       - "assets/audio/**"
       - "scripts/check_audio_asr.py"
+      - "scripts/asr_selftest.py"
       - "tests/fixtures/asr-known.json"
+      - "tests/fixtures/word-homophones.json"
+      - "content/word-audio.json"
       - ".github/workflows/audio-asr.yml"
 
 jobs:
@@ -26,23 +31,48 @@ jobs:
       - name: Install ffmpeg and sherpa-onnx
         run: |
           command -v ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
-          python -m pip install sherpa-onnx numpy piper-tts
+          # Pinned: the word-clip gate was tuned on these builds, and a newer decoder can
+          # hear a borderline take differently.
+          python -m pip install sherpa-onnx==2.0.1 piper-tts==1.8.0 numpy
       - name: Cache Whisper models
         id: models
         uses: actions/cache@v4
         with:
           path: ~/asr-models
-          key: sherpa-onnx-whisper-base.en-piper-ljspeech-medium-v1
+          key: sherpa-onnx-whisper-base.en-small.en-parakeet-tdt-0.6b-v2-piper-ljspeech-medium-kokoro-en-v0_19-v4
       - name: Download Whisper models
         if: steps.models.outputs.cache-hit != 'true'
         run: |
           mkdir -p ~/asr-models && cd ~/asr-models
-          for name in base.en; do
+          for name in base.en small.en; do
             curl -sSL --retry 5 -o "$name.tar.bz2" "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-whisper-$name.tar.bz2"
             tar xjf "$name.tar.bz2" --wildcards '*int8.onnx' '*tokens.txt'
             rm "$name.tar.bz2"
           done
           curl -sSL --retry 5 "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-en_US-ljspeech-medium.tar.bz2" \
             | tar xj --wildcards '*/en_US-ljspeech-medium.onnx' '*/en_US-ljspeech-medium.onnx.json'
+          # Word-only clips: Kokoro v0.19 (Apache-2.0).
+          curl -sSL --retry 5 "https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-en-v0_19.tar.bz2" | tar xj
+          # Parakeet rules on a word clip when Whisper only repeats the word.
+          curl -sSL --retry 5 "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8.tar.bz2" \
+            | tar xj --wildcards '*/encoder.int8.onnx' '*/decoder.int8.onnx' '*/joiner.int8.onnx' '*/tokens.txt'
+      # Real audio, real models: a word clip joined to itself must reach Parakeet and
+      # fail, whether or not this run's Whisper happens to loop on a real clip.
+      - name: Parakeet decides when Whisper only repeats a word (self-test)
+        run: >-
+          python scripts/asr_selftest.py --models ~/asr-models
+          --parakeet ~/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8
       - name: Check changed clips (normal and slow)
-        run: python scripts/check_audio_asr.py --models ~/asr-models --voice ~/asr-models/vits-piper-en_US-ljspeech-medium/en_US-ljspeech-medium.onnx --changed origin/${{ github.base_ref }} --slow
+        run: >-
+          python scripts/check_audio_asr.py --models ~/asr-models
+          --voice ~/asr-models/vits-piper-en_US-ljspeech-medium/en_US-ljspeech-medium.onnx
+          --word-voice ~/asr-models/kokoro-en-v0_19
+          --parakeet ~/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8
+          --changed origin/${{ github.base_ref }} --slow --json asr-result.json
+      - name: Keep every clip's verdict (asr-result.json)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: asr-result
+          path: asr-result.json
+          if-no-files-found: warn
