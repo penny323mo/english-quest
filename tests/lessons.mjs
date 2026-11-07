@@ -1229,6 +1229,8 @@ test("tracked review files exclude local audit artifacts", () => {
     "review/stage5f/keep-rejudge.md",
     "review/stage5f/pairs30-keep.md",
     "review/word-audio-ear-check.md",
+    "review/word-audio-recovery.md",
+    "review/word-audio-selection.json",
   ]);
 });
 

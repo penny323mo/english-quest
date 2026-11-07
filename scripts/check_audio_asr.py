@@ -22,7 +22,8 @@ content/word-audio.json (Kokoro kokoro-en-v0_19).
 A word-only clip is compared strictly (compare_word), with the reviewed
 homophones in tests/fixtures/word-homophones.json. When Whisper only repeats the
 word ("close close"), NVIDIA Parakeet (EQ_PARAKEET or --parakeet) must hear it
-exactly once.
+exactly once. The same veto applies when Whisper renders the word quote as a
+single quotation mark; punctuation alone never passes compare_word.
 
     python3 scripts/check_audio_asr.py                 # every clip
     python3 scripts/check_audio_asr.py --only rel ...  # just these clips
@@ -217,6 +218,8 @@ def clips() -> list[dict]:
         # plain spelling is the other reading (bass, read, close). Compare it with a
         # fresh render of those phonemes, so a bad take is caught, not the heteronym.
         add(row["audio"], lemma.get(item_id, ""), row["say"], f"{item_id} word", row["say"] if "[[" in row["say"] else None)
+        if "speaker" in row:
+            out[-1]["speaker"] = row["speaker"]
     return out
 
 
@@ -280,16 +283,18 @@ def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
     # A change to the word gate re-checks the word clips it affects, though none of
     # their text or audio changed: the checker itself, the word voice, or a homophone.
     checker_changed = bool(subprocess.run(
-        ["git", "diff", "--name-only", ref, "--", "scripts/check_audio_asr.py"], cwd=ROOT, capture_output=True, text=True, check=True
+        ["git", "diff", "--name-only", ref, "--", "scripts/check_audio_asr.py", "scripts/render_audio.py", ".github/workflows/audio-asr.yml"], cwd=ROOT, capture_output=True, text=True, check=True
     ).stdout.strip())
     old_words = old_json("content/word-audio.json") or {}
     new_words = json.loads(WORDS.read_text(encoding="utf-8")) if WORDS.exists() else {}
     rules_changed = checker_changed or old_words.get("voice") != new_words.get("voice")
     old_table = _homophone_table(old_json("tests/fixtures/word-homophones.json"))
     new_table = homophones()
+    old_speakers = {r["audio"]: r.get("speaker", (old_words.get("voice") or {}).get("speaker", 0)) for r in old_words.get("items", {}).values()}
     return [
         j for j in jobs
         if old.get(j["rel"]) != j["say"] or j["rel"] in touched or word_recheck(j, old_table, new_table, rules_changed)
+        or (j.get("word") and old_speakers.get(j["rel"]) != j.get("speaker", 0))
     ]
 
 
@@ -314,6 +319,14 @@ def repeated_word(lemma: str, heard: str) -> bool:
     other runs."""
     want, got = norm(lemma), norm(heard)
     return bool(want) and len(got) >= 2 * len(want) and len(got) % len(want) == 0 and got == want * (len(got) // len(want))
+
+
+def needs_parakeet(lemma: str, heard: str) -> bool:
+    """Only a pure target repetition or quote rendered as a single quotation mark.
+    A quotation mark alone is never a direct word match: Parakeet must hear the
+    word 'quote' explicitly, so empty/punctuation-only hallucinations cannot pass.
+    """
+    return repeated_word(lemma, heard) or (lemma.lower() == "quote" and heard.strip() in ('"', '“', '”'))
 
 
 def parakeet_recognizer(folder: Path, threads: int):
@@ -402,7 +415,7 @@ class WordReference:
         slow = job["rel"].endswith("-slow.mp3")
         stem = self.tmp / job["rel"].replace("/", "_")
         wav, mp3 = stem.with_suffix(".wav"), stem
-        self.voice.synth(job.get("ref") or job["text"], wav, 1.35 if slow else 1.0)
+        self.voice.synth(job.get("ref") or job["text"], wav, 1.35 if slow else 1.0, speaker=job.get("speaker"))
         self.ra.to_mp3(wav, mp3)
         return mp3
 
@@ -515,7 +528,7 @@ def run(jobs: list[dict], *, hear_sentence, hear_word, hear_parakeet, fresh, kno
 
     Each clip gets exactly one verdict:
       whisper   heard as its text straight away (base.en for a sentence, small.en for a word);
-      parakeet  a word clip Whisper only repeated ("close close") that Parakeet heard
+      parakeet  a word clip Whisper repeated ("close close") or rendered as a quote mark, heard by Parakeet
                 exactly once. Parakeet has the last word there: if it hears anything
                 else, or is not available, the clip fails, with no acoustic fallback;
       acoustic  misheard otherwise, but close to a fresh render (DTW_MAX for a sentence;
@@ -536,8 +549,8 @@ def run(jobs: list[dict], *, hear_sentence, hear_word, hear_parakeet, fresh, kno
             row = dict(job, base=heard, problems=compare_word(job["text"], heard, alts))
             if not row["problems"]:
                 row["verdict"] = "whisper"
-            elif repeated_word(job["text"], heard):
-                # Whisper looping on a lone word: Parakeet decides, and nothing else may.
+            elif needs_parakeet(job["text"], heard):
+                # Repetition or a quote mark: Parakeet decides, and nothing else may.
                 row["parakeet"] = hear_parakeet(job) if hear_parakeet is not None else None
                 accepted = row["parakeet"] is not None and not compare_word(job["text"], row["parakeet"], alts)
                 row["verdict"] = "parakeet" if accepted else "rejected"
@@ -552,7 +565,7 @@ def run(jobs: list[dict], *, hear_sentence, hear_word, hear_parakeet, fresh, kno
         if n % 200 == 0:
             print(f"  {n}/{len(jobs)}", flush=True)
 
-    # The rest were misheard (not a repeat Parakeet ruled on): compare each with a fresh
+    # The rest were misheard (not a case Parakeet already ruled on): compare each with a fresh
     # render of the shown text, in the voice the clip was made with.
     suspects = [r for r in results if "verdict" not in r]
     for n, r in enumerate(suspects, 1):
@@ -581,7 +594,7 @@ def run(jobs: list[dict], *, hear_sentence, hear_word, hear_parakeet, fresh, kno
     words = sum(1 for r in results if r["word"])
     print(f"checked {summary['total']} clips ({summary['total'] - words} sentences by base.en, {words} word-only clips by {WORD_ASR}):")
     print(f"  heard by Whisper straight away: {summary['whisper']}")
-    print(f"  Parakeet ruled on {len(referred)} (Whisper only repeated the word): {summary['parakeet']} passed")
+    print(f"  Parakeet ruled on {len(referred)} (Whisper repeated the word or wrote quote as punctuation): {summary['parakeet']} passed")
     for p in referred:
         print(f"    {p['verdict'].upper():8} {p['rel']}: Whisper {p['whisper']!r}, Parakeet {p['parakeet']!r}")
     print(f"  acoustic fallback: {summary['acoustic']}")
