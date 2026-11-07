@@ -47,6 +47,7 @@ LEX = ROOT / "content" / "lexicon.json"
 LINES = ROOT / "content" / "lines.json"
 WORDS = ROOT / "content" / "word-audio.json"
 SKIP = ROOT / "content" / "word-audio-skip.json"
+WORD_SPEAKERS = ROOT / "content" / "word-audio-voices.json"
 OVERRIDES = ROOT / "tests" / "fixtures" / "say-overrides.json"
 AUDIO = ROOT / "assets" / "audio"
 TMP = Path("/tmp/eq-wav")
@@ -68,6 +69,31 @@ WORD_SAY = {
     "a-art": "[[ə]]",
     # The sentence uses the weak form ("[[kən]] I have…"); a card says the word itself.
     "can-verb": "can",
+    # Word-only Kokoro readings: retain US rhotic vowels and vowel length. The
+    # older sentence overrides were tuned for Piper and can misread in Kokoro.
+    "allergic-adj": "[[əlˈɜːɹdʒɪk]]",
+    "sir-noun": "[[sˈɜːɹ]]",
+    "read-verb-present": "[[ɹˈiːd]]",
+    "refund-noun": "[[ɹˈiːfʌnd]]",
+    "buffet-noun": "[[bəfˈeɪ]]",
+    "the-art-vowel": "[[ðˈiː]]",
+    "fee-noun": "fee",
+    "it-pron": "[[ˈɪt]]",
+    "off-adv": "[[ˈɑːf]]",
+    "madam-noun": "[[mˈædəm]]",
+    "lustre-noun": "[[lˈʌstəɹ]]",
+    "return-noun": "[[ɹɪtˈɜːɹn]]",
+    "the-art": "[[ðˈə]]",
+    "stamp-verb": "stamp",
+    "cough-noun": "cough",
+    "sorry-adj": "sorry",
+    "email-noun": "email",
+    "laptop-noun": "laptop",
+    "key-card-phrase": "key card",
+    "late-checkout-phrase": "late checkout",
+    "rose-gold-phrase": "rose gold",
+    "savings-account-phrase": "savings account",
+    "table-for-two-phrase": "a table for two",
 }
 
 
@@ -90,6 +116,7 @@ def word_clips(include_skipped: bool = False) -> dict:
     allowed = json.loads(OVERRIDES.read_text(encoding="utf-8"))
     skip = set() if include_skipped else (set(json.loads(SKIP.read_text(encoding="utf-8"))["ids"]) if SKIP.exists() else set())
     items = {}
+    speakers = json.loads(WORD_SPEAKERS.read_text(encoding="utf-8"))["items"] if WORD_SPEAKERS.exists() else {}
     for item in lex["items"]:
         if item.get("hidden") or item["id"] in skip:
             continue
@@ -99,6 +126,8 @@ def word_clips(include_skipped: bool = False) -> dict:
             "audioSlow": rel.replace(".mp3", "-slow.mp3"),
             "say": word_say(item, allowed),
         }
+        if item["id"] in speakers:
+            items[item["id"]]["speaker"] = speakers[item["id"]]
     return {
         "note": "Word-only clips for 每日抽卡. Rendered by scripts/render_audio.py from `say` with `voice`; listened to by scripts/check_audio_asr.py.",
         "voice": dict(WORD_VOICE),
@@ -112,11 +141,11 @@ def clips() -> list[dict]:
     out = []
     seen = set()
 
-    def add(rel: str | None, say: str, sha_id: str | None, word: bool = False) -> None:
+    def add(rel: str | None, say: str, sha_id: str | None, word: bool = False, speaker: int | None = None) -> None:
         if not rel or rel in seen:
             return
         seen.add(rel)
-        out.append({"rel": rel, "say": say, "sha_id": sha_id, "word": word})
+        out.append({"rel": rel, "say": say, "sha_id": sha_id, "word": word, "speaker": speaker})
 
     for item in lex["items"]:
         add(item["audio"], item["say"], item["id"])
@@ -129,7 +158,7 @@ def clips() -> list[dict]:
     for line in lines:
         add(line["audio"], line["say"], None)
     for row in word_clips(include_skipped=True)["items"].values():
-        add(row["audio"], row["say"], None, word=True)
+        add(row["audio"], row["say"], None, word=True, speaker=row.get("speaker", WORD_VOICE["speaker"]))
     return out
 
 
@@ -182,10 +211,10 @@ class WordVoice:
             num_threads=threads,
         )))
 
-    def synth(self, say: str, wav_path: Path, scale: float) -> None:
+    def synth(self, say: str, wav_path: Path, scale: float, speaker: int | None = None) -> None:
         import numpy as np
 
-        audio = self.tts.generate(self.placeholder.get(say, say), sid=self.speaker, speed=1.0 / scale)
+        audio = self.tts.generate(self.placeholder.get(say, say), sid=self.speaker if speaker is None else speaker, speed=1.0 / scale)
         wav_path.parent.mkdir(parents=True, exist_ok=True)
         with wave.open(str(wav_path), "wb") as wf:
             wf.setnchannels(1)
@@ -202,7 +231,7 @@ def load_word_voice(says: list[str] | None = None, folder: Path | None = None) -
 
 def synth(voice, text: str, wav_path: Path, scale: float, speaker: int | None = None) -> None:
     if isinstance(voice, WordVoice):
-        voice.synth(text, wav_path, scale)
+        voice.synth(text, wav_path, scale, speaker)
         return
     cfg = SynthesisConfig(length_scale=scale, speaker_id=speaker)
     wav_path.parent.mkdir(parents=True, exist_ok=True)
@@ -312,6 +341,8 @@ def main() -> None:
         raise SystemExit(f"present read looks like past: {present}")
     print("phoneme check ok", ph)
 
+    previous_words = json.loads(WORDS.read_text(encoding="utf-8")) if WORDS.exists() else {}
+    previous_speakers = {r["audio"]: r.get("speaker", (previous_words.get("voice") or {}).get("speaker", 0)) for r in previous_words.get("items", {}).values()}
     WORDS.write_text(json.dumps(word_clips(), ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     jobs = clips()
     force = set(sys.argv[sys.argv.index("--force") + 1:]) if "--force" in sys.argv else set()
@@ -322,7 +353,8 @@ def main() -> None:
         mp3 = ROOT / rel
         mp3_slow = ROOT / rel.replace(".mp3", "-slow.mp3")
         present = all(p.exists() and p.stat().st_size > 400 for p in (mp3, mp3_slow))
-        if present and rendered.get(rel) == text_hash(job["say"]) and rel not in force:
+        voice_changed = job["word"] and (previous_words.get("voice") != WORD_VOICE or previous_speakers.get(rel, job["speaker"]) != job["speaker"])
+        if present and rendered.get(rel) == text_hash(job["say"]) and rel not in force and not voice_changed:
             continue
         todo.append(job)
     print(f"clips {len(jobs)}; rendering {len(todo)} x2")
@@ -333,7 +365,7 @@ def main() -> None:
         stem = rel.replace("/", "_").replace(".mp3", "")
         wav = TMP / f"{stem}.wav"
         wav_s = TMP / f"{stem}-slow.wav"
-        v, speaker = (word_voice, WORD_VOICE["speaker"]) if job["word"] else (voice, None)
+        v, speaker = (word_voice, job["speaker"]) if job["word"] else (voice, None)
         synth(v, job["say"], wav, 1.0, speaker)
         synth(v, job["say"], wav_s, 1.35, speaker)
         to_mp3(wav, ROOT / rel)

@@ -13,9 +13,11 @@ on:
       - "assets/audio/**"
       - "scripts/check_audio_asr.py"
       - "scripts/asr_selftest.py"
+      - "scripts/render_audio.py"
       - "tests/fixtures/asr-known.json"
       - "tests/fixtures/word-homophones.json"
       - "content/word-audio.json"
+      - "content/word-audio-voices.json"
       - ".github/workflows/audio-asr.yml"
 
 jobs:
