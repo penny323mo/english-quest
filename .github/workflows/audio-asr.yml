@@ -40,6 +40,8 @@ jobs:
           # Pinned: the word-clip gate was tuned on these builds, and a newer decoder can
           # hear a borderline take differently.
           python -m pip install sherpa-onnx==2.0.1 piper-tts==1.8.0 numpy
+      - name: Dictionary sources and audio derivation (including wrong-file controls)
+        run: python tests/helpers/word_recordings.py
       - name: Cache Whisper models
         id: models
         uses: actions/cache@v4

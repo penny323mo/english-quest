@@ -43,4 +43,5 @@ for accepted in [False,True,None]:
   code=ca.run([j],hear_sentence=None,hear_word=lambda j:'led',hear_parakeet=lambda j:'lead',fresh=lambda j:(_ for _ in ()).throw(AssertionError('no fallback')),known={j['rel']:'must not waive'},verify_recording=(lambda j:{'accepted':accepted}) if accepted is not None else None,json_path=str(path))
   result=json.loads(path.read_text());r=result['results'][0]
   results['flow_'+str(accepted)]=code==(0 if accepted else 1) and r['verdict']==('dictionary' if accepted else 'failed') and result['summary']['whisper']==0 and result['summary']['waived']==0
+assert all(results.values()), results
 print(json.dumps(results))

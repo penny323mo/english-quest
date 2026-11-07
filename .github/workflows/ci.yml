@@ -15,6 +15,8 @@ jobs:
           cache: npm
       - name: Install Pillow for hero image tests
         run: python3 -m pip install --user pillow
+      - name: Install ffmpeg for dictionary recording tests
+        run: command -v ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
       - run: npm ci
       - run: npm run typecheck
       - run: npm test
