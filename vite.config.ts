@@ -87,6 +87,56 @@ function buildInfo(): { time: string; sha: string } {
 
 const BUILD = buildInfo();
 
+/** Fields the content checks use but the app never reads. Kept out of the bundle. */
+const LEX_BUILD_ONLY = ["audioSha256", "arpabet", "cmuLemma", "senseMismatch"];
+
+/**
+ * content/lexicon.json is split in two at build time (review finding 2):
+ * - virtual:lexicon, bundled with the app: every card, with its first two examples;
+ * - virtual:lexicon-extras, its own chunk, loaded when a word card opens 更多:
+ *   the other examples and the mini-dialogue, about half of the file.
+ * The JSON on disk is unchanged, so every content test still reads the whole card.
+ */
+function splitLexicon(): Plugin {
+  const file = path.join(repo, "content", "lexicon.json");
+  const ids: Record<string, string> = { "virtual:lexicon": "\0eq-lexicon", "virtual:lexicon-extras": "\0eq-lexicon-extras" };
+  type Example = Record<string, unknown>;
+  const lean = (rows: Example[] | undefined) => rows?.map(({ audioTextSha256: _drop, ...row }) => row);
+  return {
+    name: "eq-lexicon-split",
+    resolveId(id) {
+      return ids[id];
+    },
+    load(id) {
+      if (id !== ids["virtual:lexicon"] && id !== ids["virtual:lexicon-extras"]) return null;
+      this.addWatchFile(file);
+      const lex = JSON.parse(fs.readFileSync(file, "utf8")) as { items: Record<string, unknown>[] };
+      if (id === ids["virtual:lexicon-extras"]) {
+        const extras: Record<string, unknown> = {};
+        for (const item of lex.items) {
+          const examples = (item.examples as Example[] | undefined)?.slice(2) || [];
+          const miniDialogue = (item.miniDialogue as Example[] | undefined) || [];
+          if (examples.length || miniDialogue.length) {
+            extras[item.id as string] = { examples: lean(examples), miniDialogue: lean(miniDialogue) };
+          }
+        }
+        return `export default JSON.parse(${JSON.stringify(JSON.stringify(extras))});`;
+      }
+      const items = lex.items.map((raw) => {
+        const item: Record<string, unknown> = { ...raw };
+        for (const key of LEX_BUILD_ONLY) delete item[key];
+        const examples = raw.examples as Example[] | undefined;
+        const miniDialogue = raw.miniDialogue as Example[] | undefined;
+        if (examples) item.examples = lean(examples.slice(0, 2));
+        delete item.miniDialogue;
+        if ((examples?.length || 0) > 2 || (miniDialogue?.length || 0) > 0) item.hasExtras = true;
+        return item;
+      });
+      return `export default JSON.parse(${JSON.stringify(JSON.stringify({ ...lex, items }))});`;
+    },
+  };
+}
+
 function writeVersion(): Plugin {
   return {
     name: "eq-version",
@@ -131,6 +181,7 @@ export default defineConfig({
   },
   plugins: [
     react(),
+    splitLexicon(),
     materializeAssets(),
     stampSource(),
     writeVersion(),

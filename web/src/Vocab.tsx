@@ -8,6 +8,7 @@ import { playAsset } from "./media";
 import { karaokeSpans, stressSplit } from "./stress.mjs";
 import { playSfx } from "./sfx";
 import { useStore } from "./store";
+import { useLexExtras } from "./lex-extras";
 import type { LexItem, StoredCard } from "./types";
 
 function deckById(id: string) {
@@ -183,10 +184,13 @@ function WordCard({
     ? item.examples
     : [{ en: item.example, yue: item.exampleYue, audio: item.audio, audioSlow: item.audioSlow }];
   const shown = examples.slice(0, 2);
-  const extra = examples.slice(2);
+  // Later examples and the mini-dialogue load with 更多 (lex-extras.ts).
+  const extras = useLexExtras(item.id, openMore);
+  const extra = [...examples.slice(2), ...(extras?.examples || [])];
+  const miniDialogue = extras?.miniDialogue || [];
   const usage = compactUsage(item.usageNotes || "", item.glossYue);
   const hasUsage = Boolean(item.register || usage || item.collocations.length || item.pitfallsYue);
-  const hasMore = extra.length > 0 || Boolean(item.related?.length) || Boolean(item.miniDialogue?.length);
+  const hasMore = Boolean(item.hasExtras) || examples.length > 2 || Boolean(item.related?.length);
   const [karaAt, setKaraAt] = useState(-1);
   const karaRaf = useRef(0);
   useEffect(() => () => cancelAnimationFrame(karaRaf.current), []);
@@ -274,9 +278,9 @@ function WordCard({
                   })}
                 </div>
               )}
-              {item.miniDialogue && item.miniDialogue.length > 0 && (
+              {miniDialogue.length > 0 && (
                 <div className="word-mini">
-                  {item.miniDialogue.map((turn, index) => (
+                  {miniDialogue.map((turn, index) => (
                     <p key={turn.en}>
                       <span className="who">{index % 2 === 0 ? "甲" : "乙"}：</span>
                       <span lang="en">{turn.en}</span>

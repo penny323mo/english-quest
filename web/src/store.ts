@@ -2,7 +2,7 @@ import { openDB, type IDBPDatabase } from "idb";
 import { create } from "zustand";
 import { Rating, type Grade } from "ts-fsrs";
 import { makeNewCard, reviewStored } from "./fsrs";
-import { DAILY_XP, startDay } from "./daily.mjs";
+import { DAILY_XP, addDays, macauDate, startDay } from "./daily.mjs";
 import { createPersistence, exportJson, importJson, type LessonCursor, type Persisted, type SaveStatus } from "./persist.mjs";
 import { FALLBACK_LEARNER } from "./learner";
 import type { Goal, Level, Profile } from "./types";
@@ -35,18 +35,12 @@ type Store = Persisted & {
   applyImport: (raw: string) => { ok: true } | { ok: false; message: string };
 };
 
-function todayKey(d = new Date()): string {
-  const m = `${d.getMonth() + 1}`.padStart(2, "0");
-  const day = `${d.getDate()}`.padStart(2, "0");
-  return `${d.getFullYear()}-${m}-${day}`;
-}
-
 export function bumpStreak(profile: Profile, now = new Date()): Profile {
-  const today = todayKey(now);
+  // The streak counts Macau calendar days, the same day 每日抽卡 uses, so a learner
+  // abroad never sees the streak and the daily draw roll over at different times.
+  const today = macauDate(now);
   if (profile.lastActive === today) return profile;
-  const y = new Date(now);
-  y.setDate(y.getDate() - 1);
-  const streak = profile.lastActive === todayKey(y) ? profile.streak + 1 : 1;
+  const streak = profile.lastActive === addDays(today, -1) ? profile.streak + 1 : 1;
   return { ...profile, streak, lastActive: today };
 }
 

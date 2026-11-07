@@ -1,4 +1,4 @@
-import lexFile from "../../content/lexicon.json";
+import lexFile from "virtual:lexicon";
 import pathFile from "../../content/path.json";
 import f1 from "../../content/lessons/f1.json";
 import f2 from "../../content/lessons/f2.json";

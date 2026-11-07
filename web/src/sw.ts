@@ -7,6 +7,7 @@ import type { PrecacheEntry } from "workbox-precaching";
 import { navigateNetworkFirst, SHELL_CACHE } from "./sw-navigate.mjs";
 import { planPrecachePurge } from "./sw-purge.mjs";
 import { isOwnCache } from "./cache-scope.mjs";
+import { EXTRAS_CACHE, extraKey, isExtraClip, planExtrasPurge } from "./sw-extras.mjs";
 
 declare const self: ServiceWorkerGlobalScope & {
   __WB_MANIFEST: Array<PrecacheEntry | string>;
@@ -22,7 +23,16 @@ function entryUrl(entry: PrecacheEntry | string): string {
 // and those URLs always come from the network past the HTTP cache, so a phone
 // cannot keep the old shell. Offline, a page load falls back to the last
 // index.html that loaded (sw-navigate.mjs).
-const manifest = self.__WB_MANIFEST.filter((entry) => !SHELL.test(entryUrl(entry)));
+const built = self.__WB_MANIFEST.filter((entry) => !SHELL.test(entryUrl(entry)));
+// Word-card extras (sw-extras.mjs) are cached when first played, not up front.
+const manifest = built.filter((entry) => !isExtraClip(entryUrl(entry)));
+const extraKeys = new Map<string, string>();
+for (const entry of built) {
+  const url = entryUrl(entry);
+  if (!isExtraClip(url)) continue;
+  const abs = new URL(url, self.registration.scope).href;
+  extraKeys.set(abs, extraKey(abs, typeof entry === "string" ? null : entry.revision));
+}
 
 // addToCacheList does not register an install handler. precache() would,
 // and that handler waits for every audio file before activate. Safari would
@@ -44,6 +54,18 @@ registerRoute(
   new NetworkOnly({ fetchOptions: { cache: "no-cache" } }),
 );
 registerRoute(new PrecacheRoute(precacheController));
+registerRoute(
+  ({ url }) => extraKeys.has(url.origin + url.pathname),
+  async ({ url }) => {
+    const key = extraKeys.get(url.origin + url.pathname)!;
+    const cache = await caches.open(EXTRAS_CACHE);
+    const hit = await cache.match(key);
+    if (hit) return hit;
+    const response = await fetch(url.origin + url.pathname);
+    if (response.ok && response.status === 200) await cache.put(key, response.clone()).catch(() => undefined);
+    return response;
+  },
+);
 cleanupOutdatedCaches();
 
 self.addEventListener("install", () => {
@@ -64,6 +86,13 @@ async function purgeOldShell(): Promise<boolean> {
   await Promise.all(keys.map(async (key) => {
     if (!isOwnCache(key, scope)) return; // another app on this origin (github.io is shared)
     if (key === SHELL_CACHE) return; // the offline copy of the page is managed by sw-navigate.mjs
+    if (key === EXTRAS_CACHE) {
+      // Played word-card extras stay; only stale revisions and removed clips go.
+      const cache = await caches.open(key);
+      const cached = (await cache.keys()).map((request) => request.url);
+      await Promise.all(planExtrasPurge(cached, extraKeys.values()).map((url) => cache.delete(url)));
+      return;
+    }
     if (key !== keep) {
       removed = true;
       await caches.delete(key);

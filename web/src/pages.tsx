@@ -20,18 +20,13 @@ import { learnerEyebrow } from "./labels";
 import { playAsset } from "./media";
 import { playSfx } from "./sfx";
 import { useStore } from "./store";
+import { useLexExtras } from "./lex-extras";
 
 function cefrClass(cefr: string): string {
   if (cefr.includes("B2")) return "b2";
   if (cefr.includes("B1")) return "b1";
   if (cefr.includes("A2")) return "a2";
   return "a1";
-}
-
-function todayStamp(d = new Date()): string {
-  const m = `${d.getMonth() + 1}`.padStart(2, "0");
-  const day = `${d.getDate()}`.padStart(2, "0");
-  return `${d.getFullYear()}-${m}-${day}`;
 }
 
 const GLYPHS: Record<string, string> = {
@@ -131,7 +126,7 @@ export function PathHome() {
   if (!profile) return null;
   const done = SHIPPED.filter((id) => progress[id]).length;
   const todayTitle = recommended ? lessonById[recommended]?.titleYue : undefined;
-  const studiedToday = profile.lastActive === todayStamp();
+  const studiedToday = profile.lastActive === macauDate();
   const dailyToday = daily && daily.date === macauDate() ? daily : null;
   const dailyDone = Boolean(dailyToday?.done);
   const dailyStarted = Boolean(dailyToday);
@@ -378,6 +373,7 @@ export function WordDetail({ id }: { id: string }) {
   const profile = useStore((s) => s.profile);
   const jyutping = profile?.jyutping;
   const [more, setMore] = useState(false);
+  const extras = useLexExtras(id, more);
   if (!item) {
     return (
       <section className="screen plain">
@@ -407,7 +403,7 @@ export function WordDetail({ id }: { id: string }) {
       </button>
       {more && item.usageNotes && <p className="note">{item.usageNotes}</p>}
       {more && item.pitfallsYue && <p className="note">{item.pitfallsYue}</p>}
-      {more && item.examples?.slice(1).map((example) => (
+      {more && [...(item.examples?.slice(1) || []), ...(extras?.examples || [])].map((example) => (
         <div key={example.en} className="stack">
           <p lang="en">{fillLearner(example.en, profile?.name)}</p>
           <p className="gloss">{fillLearner(example.yue, profile?.name)}</p>
@@ -424,7 +420,7 @@ export function WordDetail({ id }: { id: string }) {
           })}
         </p>
       )}
-      {more && item.miniDialogue?.map((turn) => (
+      {more && extras?.miniDialogue.map((turn) => (
         <p key={turn.en} className="lede"><span lang="en">{fillLearner(turn.en, profile?.name)}</span><span className="gloss"> {fillLearner(turn.yue, profile?.name)}</span></p>
       ))}
       {item.variants.length > 0 && <p className="fine">其他讀法：{item.variants.join("、")}</p>}

@@ -1,5 +1,7 @@
 # English Quest（情景英文）— SPEC
 
+> **Historical night-1 brief.** The scope (§2: 6 lessons), roles and publish steps (§9: commit the build and push to `main`) describe the first night only. Today the app ships 97 lessons, work lands through pull requests, and Pages deploys `dist/` from Actions after `ci` passes (see `README.md`). The pedagogy, lexicon, audio, art and quality rules below still apply.
+
 **Side quest** · independent repo `penny323mo/english-quest` · **not** the daily grokbot nightly.  
 **Live:** https://penny323mo.github.io/english-quest/  
 **Supervisor:** Grok Duet · **Coder:** grok 4.7 · **Reviewer:** grok (this orchestrator’s grok pane)  

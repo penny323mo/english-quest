@@ -1,11 +1,16 @@
 import { audioElement, audioSnapshot, cancelSpeech, replaceAudioElement, speechActive, stopAudio, subscribeAudio } from "./audio-element";
 import { asset, lessons, lexicon } from "./data";
 import { fillLearner, needsRuntimeSpeech } from "./learner";
+import { lexExtrasNow, onLexExtras } from "./lex-extras";
 import { useStore } from "./store";
 
 export { audioSnapshot, speechActive, stopAudio, subscribeAudio };
 
 let runtimeScripts: Map<string, string> | null = null;
+// The 更多 examples arrive later (lex-extras.ts); rebuild the lookup to include them.
+onLexExtras(() => {
+  runtimeScripts = null;
+});
 
 function runtimeScript(path: string): string | null {
   if (!runtimeScripts) {
@@ -24,10 +29,11 @@ function runtimeScript(path: string): string | null {
         add(turn.modelSlow, turn.expect, turn.runtimeTts);
       }
     }
+    const extras = lexExtrasNow();
     for (const item of lexicon.items) {
       add(item.audio, item.say || item.example);
       add(item.audioSlow, item.say || item.example);
-      for (const example of item.examples || []) {
+      for (const example of [...(item.examples || []), ...(extras?.[item.id]?.examples || [])]) {
         add(example.audio, example.en);
         add(example.audioSlow, example.en);
       }

@@ -1,6 +1,6 @@
 import { lazy, Suspense, useEffect } from "react";
 import { preloadArt } from "./art";
-import { lessons, asset } from "./data";
+import { asset, lessonById, todayLessonId } from "./data";
 import { LessonView } from "./Lesson";
 import { Attributions, PathHome, Profile, Review, Settings, WordDetail, Words } from "./pages";
 import { VocabDeck, VocabHub, VocabQuiz } from "./Vocab";
@@ -14,14 +14,21 @@ const Daily = lazy(() => import("./Daily"));
 export default function Shell({ route }: { route: Route }) {
   const profile = useStore((s) => s.profile);
 
+  const goal = profile?.goal;
+  const progress = useStore((s) => s.progress);
+  const cursorId = useStore((s) => s.lessonCursor?.lessonId ?? null);
+  const upNextId = cursorId || (goal ? todayLessonId(goal, progress, cursorId) : null);
+
+  // Warm only the cover and the lesson the learner is likely to open next (resume or
+  // 今日) with its cast. Each lesson preloads its own hero, cast and next hero, and
+  // shows a blurred placeholder meanwhile, so the rest need not download on open.
   useEffect(() => {
-    const cast = ["mei", "tom", "ana", "kai", "jo", "sam", "kim", "ray", "noa", "may", "pat", "nia", "ada", "owen", "wen", "ben", "lea", "ren", "mina", "cole", "ling", "suki", "ruth", "hugh", "zuri", "lina", "pesi", "nori", "eddy", "reid", "ines", "opal", "hugo", "wynn", "beau", "nina", "sora", "ida", "gus", "mira", "cleo", "otto", "hana", "glen", "nell"];
+    const next = upNextId ? lessonById[upNextId] : undefined;
     preloadArt([
       asset("assets/art/cover.webp"),
-      ...lessons.map((lesson) => asset(lesson.hero)),
-      ...cast.map((id) => asset(`assets/art/refs/${id}.webp`)),
+      ...(next ? [asset(next.hero), ...next.cast.map((id) => asset(`assets/art/refs/${id}.webp`))] : []),
     ]);
-  }, []);
+  }, [upNextId]);
 
   const lesson = route.name === "lesson";
   const tabbed = route.name === "path" || route.name === "review" || route.name === "words" || route.name === "profile" || route.name === "vocab";

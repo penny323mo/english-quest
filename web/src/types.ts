@@ -61,7 +61,14 @@ export type LexItem = {
   related?: string[];
   examples?: { en: string; yue: string; audio: string; audioSlow: string }[];
   miniDialogue?: { en: string; yue: string }[];
+  /** Set at build time: the card has 更多 extras in virtual:lexicon-extras (lex-extras.ts). */
+  hasExtras?: boolean;
 };
+
+export type LexExample = { en: string; yue: string; audio: string; audioSlow: string; say?: string };
+
+/** What a card shows only under 更多, loaded on demand (lex-extras.ts). */
+export type LexExtras = { examples: LexExample[]; miniDialogue: { en: string; yue: string }[] };
 
 export type Line = {
   id: string;
