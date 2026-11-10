@@ -1,5 +1,14 @@
 # Changelog — English Quest
 
+## Pronunciation audit
+
+- Every card, lesson sound note and recording was checked. Method, findings and what is left for a human ear are in `review/pronunciation-audit.md`. No human listening is claimed.
+- 29 cards corrected: wrong stress (permit, refund, tax refund, understated, email, sometimes, toothache, surcharge), missing sounds (doctor's note, thank you for telling me, around), four cards aligned with their recordings, and syllable chips that misspelled the headword (usually, buffet, opening hours, embassy and others).
+- Three sound notes said something false: J13 (bulk has an /l/), R7 (replace has an /l/) and T15 (luggage is /ʌ/, not /u/).
+- 259 sentence clips and 12 word-only clips were recorded again. The voice had been spelling SIM out, saying rebook as REB-ook, Macau and outdoor with the wrong stress, use, excuse and close with the wrong /s/, dropping the vowel of shirt, work and return, and reading "a" as the letter name before a phoneme override. A new take replaced a shipped file only when Whisper and Parakeet heard it at least as well. Seven clips kept their shipped audio.
+- `scripts/render_audio.py` reads a `[[phoneme]]` block inside its sentence (`phonemes_in_context`), so the words around it keep their normal form and the pause after it is kept.
+- Still open: two recognisers hear this voice's hot as "heart", shop as "sharp", bag as "bug" and water as "war" in most clips. That is the voice, not a clip, and needs a listener.
+
 ## Stage 5 — content correctness
 
 - No new lesson. The path stays 97.

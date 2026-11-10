@@ -1,5 +1,9 @@
 # Audio: clips for a human ear check
 
+> Updated by [the pronunciation audit](pronunciation-audit.md): the SIM, sir,
+> late checkout, permit, understated, tax refund and toothache rows below are
+> fixed there. The other rows are still open.
+
 These are **suspected** pronunciation problems. They were not auto-fixed. Both
 Whisper models (base.en and small.en) mishear them. In most cases a fresh render
 of the same text is misheard the same way too, so the cause is how the Piper
