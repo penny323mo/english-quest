@@ -5378,7 +5378,7 @@
       "ipa": "/ˈdʒul.ɹi/",
       "syllables": [
         "jewel",
-        "ry"
+        "lery"
       ],
       "syllableIpa": [
         "ˈdʒul",
@@ -5867,17 +5867,17 @@
       "lemma": "around",
       "pos": "adv",
       "senseId": "in-the-area",
-      "ipa": "/ɚ.ˈaʊnd/",
+      "ipa": "/ə.ˈɹaʊnd/",
       "syllables": [
         "a",
         "round"
       ],
       "syllableIpa": [
-        "ɚ",
-        "ˈaʊnd"
+        "ə",
+        "ˈɹaʊnd"
       ],
       "stress": 2,
-      "arpabet": "ER0 AW1 N D",
+      "arpabet": "AH0 R AW1 N D",
       "audio": "assets/audio/words/around-adv.mp3",
       "audioSlow": "assets/audio/words/around-adv-slow.mp3",
       "glossYue": "周圍",
@@ -5889,8 +5889,10 @@
       "example": "Please take a look around.",
       "exampleYue": "隨便睇吓。",
       "say": "Please take a look around.",
-      "variants": [],
-      "note": "",
+      "variants": [
+        "/ɚ.ˈaʊnd/"
+      ],
+      "note": "CMU 寫 ER0 AW1 N D。卡片跟 Wiktionary /əˈɹaʊnd/：開頭係輕 /ə/，/ɹ/ 喺重音節開頭。",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
@@ -17049,7 +17051,7 @@
         "ləs"
       ],
       "stress": 1,
-      "arpabet": "K AA1 N T AE0 K T L EH2 S",
+      "arpabet": "K AA1 N T AE0 K T L AH0 S",
       "audio": "assets/audio/words/contactless-adj.mp3",
       "audioSlow": "assets/audio/words/contactless-adj-slow.mp3",
       "glossYue": "拍卡",
@@ -19238,23 +19240,25 @@
       "lemma": "thank you for telling me",
       "pos": "phrase",
       "senseId": "thanks-info",
-      "ipa": "/ˈθæŋk ˈju ˈfɔɹ ˈtɛ.lɪŋ/",
+      "ipa": "/ˈθæŋk ˈju ˈfɔɹ ˈtɛ.lɪŋ ˈmi/",
       "syllables": [
         "thank",
         "you",
         "for",
         "tell",
-        "ing"
+        "ing",
+        "me"
       ],
       "syllableIpa": [
         "ˈθæŋk",
         "ˈju",
         "ˈfɔɹ",
         "ˈtɛ",
-        "lɪŋ"
+        "lɪŋ",
+        "ˈmi"
       ],
       "stress": 1,
-      "arpabet": "TH AE1 NG K Y UW1 F AO1 R T EH1 L IH0 NG",
+      "arpabet": "TH AE1 NG K Y UW1 F AO1 R T EH1 L IH0 NG M IY1",
       "audio": "assets/audio/words/thank-you-for-telling-phrase.mp3",
       "audioSlow": "assets/audio/words/thank-you-for-telling-phrase-slow.mp3",
       "glossYue": "多謝你話我知",
@@ -21450,7 +21454,7 @@
       "ipa": "/ˈɛm.bə.si/",
       "syllables": [
         "em",
-        "ba",
+        "bas",
         "sy"
       ],
       "syllableIpa": [
@@ -22257,17 +22261,17 @@
       "lemma": "refund",
       "pos": "noun",
       "senseId": "money-back",
-      "ipa": "/ˈɹi.fənd/",
+      "ipa": "/ˈɹi.ˌfʌnd/",
       "syllables": [
         "re",
         "fund"
       ],
       "syllableIpa": [
         "ˈɹi",
-        "fənd"
+        "ˌfʌnd"
       ],
       "stress": 1,
-      "arpabet": "R IY1 F AH0 N D",
+      "arpabet": "R IY1 F AH2 N D",
       "audio": "assets/audio/words/refund-noun.mp3",
       "audioSlow": "assets/audio/words/refund-noun-slow.mp3",
       "glossYue": "退款",
@@ -22280,8 +22284,10 @@
       "example": "I would like a refund please.",
       "exampleYue": "唔該我想退款。",
       "say": "I would like a [[ˈɹifənd]] please.",
-      "variants": [],
-      "note": "",
+      "variants": [
+        "/ɹɪ.ˈfʌnd/ verb"
+      ],
+      "note": "名詞重音喺第一節，第二節係 /fʌnd/，唔好弱讀成 /fənd/。動詞 refund 先至係 /ɹɪ.ˈfʌnd/。",
       "sources": [
         "CMUdict 0.7b"
       ],
@@ -23949,7 +23955,7 @@
       "ipa": "/ˈsɛp.ɹət/",
       "syllables": [
         "sep",
-        "rate"
+        "arate"
       ],
       "syllableIpa": [
         "ˈsɛp",
@@ -28506,7 +28512,7 @@
       "senseId": "file-included",
       "ipa": "/ə.ˈtætʃt/",
       "syllables": [
-        "a",
+        "at",
         "tached"
       ],
       "syllableIpa": [
@@ -32772,7 +32778,7 @@
       "lemma": "tax refund",
       "pos": "phrase",
       "senseId": "tax-back",
-      "ipa": "/ˈtæks ɹɪ.ˈfʌnd/",
+      "ipa": "/ˈtæks ˈɹi.ˌfʌnd/",
       "syllables": [
         "tax",
         "re",
@@ -32780,11 +32786,11 @@
       ],
       "syllableIpa": [
         "ˈtæks",
-        "ɹɪ",
-        "ˈfʌnd"
+        "ˈɹi",
+        "ˌfʌnd"
       ],
       "stress": 1,
-      "arpabet": "T AE1 K S R IH0 F AH1 N D",
+      "arpabet": "T AE1 K S R IY1 F AH2 N D",
       "audio": "assets/audio/words/tax-refund-phrase.mp3",
       "audioSlow": "assets/audio/words/tax-refund-phrase-slow.mp3",
       "glossYue": "退稅",
@@ -32798,7 +32804,7 @@
       "exampleYue": "呢件衫可唔可以攞退稅表？",
       "say": "Can I get a tax refund form for this shirt?",
       "variants": [],
-      "note": "",
+      "note": "refund 喺呢度係名詞，重音喺 re：/ˈɹi.ˌfʌnd/。",
       "sources": [
         "CMUdict 0.7b"
       ],
@@ -33127,7 +33133,7 @@
       "senseId": "pick-up-item",
       "ipa": "/kə.ˈlɛkt/",
       "syllables": [
-        "co",
+        "col",
         "lect"
       ],
       "syllableIpa": [
@@ -33219,15 +33225,13 @@
         "o",
         "pen",
         "ing",
-        "our",
-        "s"
+        "hours"
       ],
       "syllableIpa": [
         "ˈoʊ",
         "pən",
         "ɪŋ",
-        "ˈaʊ",
-        "ɚz"
+        "ˈaʊ.ɚz"
       ],
       "stress": 1,
       "arpabet": "OW1 P AH0 N IH0 NG AW1 ER0 Z",
@@ -33939,7 +33943,7 @@
       "senseId": "work-trip",
       "ipa": "/ˈbɪz.nəs/",
       "syllables": [
-        "bus",
+        "busi",
         "ness"
       ],
       "syllableIpa": [
@@ -35825,7 +35829,7 @@
       "lemma": "understated",
       "pos": "adj",
       "senseId": "quiet-look",
-      "ipa": "/ˈʌn.dɚ.ˌsteɪ.tɪd/",
+      "ipa": "/ˌʌn.dɚ.ˈsteɪ.tɪd/",
       "syllables": [
         "un",
         "der",
@@ -35833,13 +35837,13 @@
         "ted"
       ],
       "syllableIpa": [
-        "ˈʌn",
+        "ˌʌn",
         "dɚ",
-        "ˌsteɪ",
+        "ˈsteɪ",
         "tɪd"
       ],
-      "stress": 1,
-      "arpabet": "AH1 N D ER0 S T EY2 T IH0 D",
+      "stress": 3,
+      "arpabet": "AH2 N D ER0 S T EY1 T IH0 D",
       "audio": "assets/audio/words/understated-adj.mp3",
       "audioSlow": "assets/audio/words/understated-adj-slow.mp3",
       "glossYue": "低調",
@@ -35853,7 +35857,7 @@
       "exampleYue": "呢個睇落好低調。",
       "say": "This looks [[ˈʌndɚˌsteɪtɪd]].",
       "variants": [],
-      "note": "",
+      "note": "重音喺第三節 state：/ˌʌn.dɚ.ˈsteɪ.tɪd/。",
       "sources": [
         "CMUdict 0.7b"
       ],
@@ -38395,7 +38399,7 @@
       "senseId": "workdays",
       "ipa": "/ˈbɪz.nəs ˈdeɪz/",
       "syllables": [
-        "biz",
+        "busi",
         "ness",
         "days"
       ],
@@ -39494,17 +39498,17 @@
       "lemma": "email",
       "pos": "noun",
       "senseId": "electronic-mail",
-      "ipa": "/i.ˈmeɪl/",
+      "ipa": "/ˈi.ˌmeɪl/",
       "syllables": [
         "e",
         "mail"
       ],
       "syllableIpa": [
-        "i",
-        "ˈmeɪl"
+        "ˈi",
+        "ˌmeɪl"
       ],
-      "stress": 2,
-      "arpabet": "IY0 M EY1 L",
+      "stress": 1,
+      "arpabet": "IY1 M EY2 L",
       "audio": "assets/audio/words/email-noun.mp3",
       "audioSlow": "assets/audio/words/email-noun-slow.mp3",
       "glossYue": "電郵",
@@ -39517,8 +39521,10 @@
       "example": "Please write your email here.",
       "exampleYue": "請喺度寫你嘅電郵。",
       "say": "Please write your [[iˈmeɪl]] here.",
-      "variants": [],
-      "note": "",
+      "variants": [
+        "/i.ˈmeɪl/"
+      ],
+      "note": "重音喺第一節 /ˈi.ˌmeɪl/。CMU 嘅 e-mail 係 IY1 M EY2 L。",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
@@ -40617,9 +40623,9 @@
       "senseId": "most-times",
       "ipa": "/ˈju.ʒə.wə.li/",
       "syllables": [
-        "yu",
-        "zha",
-        "wa",
+        "u",
+        "su",
+        "al",
         "ly"
       ],
       "syllableIpa": [
@@ -40791,17 +40797,17 @@
       "lemma": "sometimes",
       "pos": "adv",
       "senseId": "some-times",
-      "ipa": "/səm.ˈtaɪmz/",
+      "ipa": "/ˈsʌm.ˌtaɪmz/",
       "syllables": [
         "some",
         "times"
       ],
       "syllableIpa": [
-        "səm",
-        "ˈtaɪmz"
+        "ˈsʌm",
+        "ˌtaɪmz"
       ],
-      "stress": 2,
-      "arpabet": "S AH0 M T AY1 M Z",
+      "stress": 1,
+      "arpabet": "S AH1 M T AY2 M Z",
       "audio": "assets/audio/words/sometimes-adv.mp3",
       "audioSlow": "assets/audio/words/sometimes-adv-slow.mp3",
       "glossYue": "有時",
@@ -40814,8 +40820,10 @@
       "example": "I sometimes take a break after lunch.",
       "exampleYue": "我有時午餐之後先小休。",
       "say": "I sometimes take a break after lunch.",
-      "variants": [],
-      "note": "",
+      "variants": [
+        "/səm.ˈtaɪmz/"
+      ],
+      "note": "CMU 兩條都有。卡片教重音喺第一節嗰條 /ˈsʌm.ˌtaɪmz/，同錄音一致。",
       "sources": [
         "CMUdict 0.7b",
         "Wiktionary English (cross-check 2026-10-29)"
@@ -47032,19 +47040,19 @@
       "lemma": "doctor's note",
       "pos": "phrase",
       "senseId": "clinic-paper",
-      "ipa": "/ˈdɑk.tɚ ˈnoʊt/",
+      "ipa": "/ˈdɑk.tɚz ˈnoʊt/",
       "syllables": [
         "doc",
-        "tor",
+        "tor's",
         "note"
       ],
       "syllableIpa": [
         "ˈdɑk",
-        "tɚ",
+        "tɚz",
         "ˈnoʊt"
       ],
       "stress": 1,
-      "arpabet": "D AA1 K T ER0 | N OW1 T",
+      "arpabet": "D AA1 K T ER0 Z | N OW1 T",
       "audio": "assets/audio/words/doctors-note-phrase.mp3",
       "audioSlow": "assets/audio/words/doctors-note-phrase-slow.mp3",
       "glossYue": "醫生紙",
@@ -47058,7 +47066,7 @@
       "exampleYue": "我星期一可以帶醫生紙嚟。",
       "say": "I can bring a doctor's note on Monday.",
       "variants": [],
-      "note": "",
+      "note": "doctor's 尾有 /z/。唔好讀成 doctor note。",
       "sources": [
         "CMUdict 0.7b"
       ],
@@ -53426,10 +53434,10 @@
       "senseId": "interest-account",
       "ipa": "/ˈseɪ.vɪŋz ə.ˈkaʊnt/",
       "syllables": [
-        "sa",
-        "vings",
-        "a",
-        "ccount"
+        "sav",
+        "ings",
+        "ac",
+        "count"
       ],
       "syllableIpa": [
         "ˈseɪ",
@@ -54093,9 +54101,9 @@
       "senseId": "pension-fund",
       "ipa": "/ˌɛm.pi.ˈɛf/",
       "syllables": [
-        "em",
-        "pi",
-        "ef"
+        "M",
+        "P",
+        "F"
       ],
       "syllableIpa": [
         "ˌɛm",
@@ -54863,17 +54871,17 @@
       "lemma": "toothache",
       "pos": "noun",
       "senseId": "tooth-pain",
-      "ipa": "/ˈtu.ˈθeɪk/",
+      "ipa": "/ˈtuθ.ˌeɪk/",
       "syllables": [
         "tooth",
         "ache"
       ],
       "syllableIpa": [
-        "ˈtu",
-        "ˈθeɪk"
+        "ˈtuθ",
+        "ˌeɪk"
       ],
       "stress": 1,
-      "arpabet": "T UW1 TH EY1 K",
+      "arpabet": "T UW1 TH EY2 K",
       "audio": "assets/audio/words/toothache-noun.mp3",
       "audioSlow": "assets/audio/words/toothache-noun-slow.mp3",
       "glossYue": "牙痛",
@@ -54887,7 +54895,7 @@
       "exampleYue": "我由尋晚開始牙痛。",
       "say": "I have had a toothache since last night.",
       "variants": [],
-      "note": "",
+      "note": "tooth + ache。重音喺 tooth，ache 係次重音。",
       "sources": [
         "CMUdict 0.7b"
       ],
@@ -55383,17 +55391,17 @@
       "lemma": "permit",
       "pos": "noun",
       "senseId": "driving-paper",
-      "ipa": "/pɚ.ˈmɪt/",
+      "ipa": "/ˈpɝ.ˌmɪt/",
       "syllables": [
         "per",
         "mit"
       ],
       "syllableIpa": [
-        "pɚ",
-        "ˈmɪt"
+        "ˈpɝ",
+        "ˌmɪt"
       ],
-      "stress": 2,
-      "arpabet": "P ER0 M IH1 T",
+      "stress": 1,
+      "arpabet": "P ER1 M IH2 T",
       "audio": "assets/audio/words/permit-noun.mp3",
       "audioSlow": "assets/audio/words/permit-noun-slow.mp3",
       "glossYue": "許可證",
@@ -55406,8 +55414,10 @@
       "example": "Do you have an international permit?",
       "exampleYue": "你有冇國際駕駛許可證？",
       "say": "Do you have an international permit?",
-      "variants": [],
-      "note": "",
+      "variants": [
+        "/pɚ.ˈmɪt/ verb"
+      ],
+      "note": "名詞重音喺第一節 /ˈpɝ.ˌmɪt/。動詞 permit 先至係 /pɚ.ˈmɪt/。",
       "sources": [
         "CMUdict 0.7b"
       ],
@@ -55813,8 +55823,8 @@
       "senseId": "eat-all",
       "ipa": "/bə.ˈfeɪ/",
       "syllables": [
-        "bu",
-        "fay"
+        "buf",
+        "fet"
       ],
       "syllableIpa": [
         "bə",
@@ -56607,8 +56617,8 @@
       "senseId": "duty-free-cap",
       "ipa": "/ə.ˈlaʊ.əns/",
       "syllables": [
-        "a",
-        "llow",
+        "al",
+        "low",
         "ance"
       ],
       "syllableIpa": [
@@ -59149,7 +59159,7 @@
       "lemma": "valuation",
       "pos": "noun",
       "senseId": "written-worth",
-      "ipa": "/væl.ju.ˈeɪ.ʃən/",
+      "ipa": "/ˌvæl.ju.ˈeɪ.ʃən/",
       "syllables": [
         "val",
         "u",
@@ -59157,13 +59167,13 @@
         "tion"
       ],
       "syllableIpa": [
-        "væl",
+        "ˌvæl",
         "ju",
         "ˈeɪ",
         "ʃən"
       ],
       "stress": 3,
-      "arpabet": "V AE0 L Y UW0 EY1 SH AH0 N",
+      "arpabet": "V AE2 L Y UW0 EY1 SH AH0 N",
       "audio": "assets/audio/words/valuation-noun.mp3",
       "audioSlow": "assets/audio/words/valuation-noun-slow.mp3",
       "glossYue": "估值",

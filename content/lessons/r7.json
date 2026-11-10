@@ -322,15 +322,15 @@
   "sound": {
     "ipa": "/l/",
     "title": "cold 入面嗰個音",
-    "note": "cold 有 /l/。replace 同 manager 冇 /l/。",
+    "note": "cold 同 replace 都有 /l/。manager 同 understand 冇 /l/。",
     "pairs": [
       {
         "a": "cold-adj",
-        "b": "replace-verb"
+        "b": "manager-noun"
       },
       {
-        "a": "complimentary-adj",
-        "b": "manager-noun"
+        "a": "replace-verb",
+        "b": "understand-verb"
       }
     ],
     "drill": [
