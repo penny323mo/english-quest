@@ -1206,6 +1206,7 @@ test("tracked review files exclude local audit artifacts", () => {
     "review/icon-options/option-1-lantern.png",
     "review/icon-options/option-2-bubble.png",
     "review/icon-options/option-3-scenes.png",
+    "review/pronunciation-audit.md",
     "review/stage3/before-after.md",
     "review/stage3/duet-fixes.md",
     "review/stage3/grammar.json",
