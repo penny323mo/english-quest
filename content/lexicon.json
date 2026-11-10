@@ -203,7 +203,7 @@
       ],
       "example": "It is a live show.",
       "exampleYue": "呢個係現場表演。",
-      "say": "It is a [[lˈaɪv]] show.",
+      "say": "It is [[ə]] [[lˈaɪv]] show.",
       "variants": [],
       "note": "",
       "sources": [
@@ -215,7 +215,7 @@
       "senseMismatch": false,
       "cmuLemma": "live",
       "phrase": false,
-      "audioSha256": "24c503068980f7ecc8af6c60926f134db125d183c7d698f8ffd1406d54dc9c29",
+      "audioSha256": "c78dead9ce2ebf02f2ce97800b1f9f03659072aa09e5e9c7d2ebfafe81ae6e5d",
       "miniDialogue": [
         {
           "en": "Is the concert live, or is it a recording?",
@@ -656,7 +656,7 @@
       "senseMismatch": false,
       "cmuLemma": "close",
       "phrase": false,
-      "audioSha256": "02b64c320912f49257855d045f2511de658224d96a964638ecc1de17d29e15b7",
+      "audioSha256": "b2d6faff24e0577dd7a3f79149727c6a34d433bfa6bdc2f4c504f703887d7fe5",
       "miniDialogue": [
         {
           "en": "Is your flat close to the night market?",
@@ -2855,7 +2855,7 @@
       ],
       "example": "A table for two.",
       "exampleYue": "一張兩位嘅檯。",
-      "say": "[[ə ˈteɪbəl fɚ ˈtu.]]",
+      "say": "[[ə]] table [[fɚ]] two.",
       "variants": [
         "/eɪ/ letter name"
       ],
@@ -2869,7 +2869,7 @@
       "senseMismatch": false,
       "cmuLemma": "a",
       "phrase": false,
-      "audioSha256": "4f5989137fb8670847f41c77ed1e781405f9dc74810a693af6041a304227209f",
+      "audioSha256": "1487a0b686d64b48b03a5896c9ea6f1e94ad840e4bf6ce91250f6bc6d9e8a2c5",
       "miniDialogue": [
         {
           "en": "Do I need a ticket?",
@@ -15971,8 +15971,8 @@
           "yue": "呢個優惠星期日完。",
           "audio": "assets/audio/words/offer-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/offer-noun-ex3-slow.mp3",
-          "say": "The [[ˈɔfɚ]] ends on Sunday.",
-          "audioTextSha256": "57fcd3965e811451fd22c783dac931d194679a6af5f50ac97ac8e691aa80e244"
+          "say": "[[ðiː]] [[ˈɔfɚ]] ends on Sunday.",
+          "audioTextSha256": "8c818bccb5556f95c0e900b839c3f083628762ed2097b412b695abccd76438ca"
         }
       ],
       "miniDialogue": [
@@ -32875,7 +32875,8 @@
           "yue": "退稅櫃檯要呢張收據同你本護照。",
           "audio": "assets/audio/words/tax-refund-phrase-md1.mp3",
           "audioSlow": "assets/audio/words/tax-refund-phrase-md1-slow.mp3",
-          "audioTextSha256": "c203652f3d5da77f9d64b5bc3c9f1c46137613ebd6d5e2177a454eead434facc"
+          "audioTextSha256": "af40eed702b21db71b1074bde56f77228f791269342c037f20bd046533cb9e37",
+          "say": "The tax [[ɹˈiːfʌnd]] desk needs this receipt with your passport."
         }
       ]
     },
@@ -41757,8 +41758,8 @@
           "yue": "佢短暫探親用預繳卡，慳到啲錢。",
           "audio": "assets/audio/words/prepaid-adj-ex3.mp3",
           "audioSlow": "assets/audio/words/prepaid-adj-ex3-slow.mp3",
-          "say": "A prepaid SIM saved money during his short family visit.",
-          "audioTextSha256": "39bf5f5e7abb8aa7fbf5b828f516a9391972ddf501af52424e3e7ea2e547338f"
+          "say": "A prepaid [[sˈɪm]] saved money during his short family visit.",
+          "audioTextSha256": "73e2ab7cbcd0f7ba1d9ce8f11f3ff80eb9a898bec6e5ffc90c4587f46408ad51"
         }
       ],
       "miniDialogue": [
@@ -47041,8 +47042,8 @@
           "yue": "佢覺得唔舒服，所以打咗去舖頭。",
           "audio": "assets/audio/words/not-feeling-well-phrase-ex2.mp3",
           "audioSlow": "assets/audio/words/not-feeling-well-phrase-ex2-slow.mp3",
-          "say": "She is [[ˈnɑt ˈfilɪŋ ˈwɛl]], so she called the shop.",
-          "audioTextSha256": "d7edb8f70331abb1b39b90a6588e966193464e26161db83bec0c5cef761ad3df"
+          "say": "She is not feeling well, so she called the shop.",
+          "audioTextSha256": "50ea32064f3250ca2c1f9023552452e9d61ec247f5aaa6f05079d219d242f8a2"
         },
         {
           "en": "The hot kitchen is a bad place when I am not feeling well.",
@@ -47137,8 +47138,8 @@
           "yue": "請用一到十分講醫生紙幾嚴重。",
           "audio": "assets/audio/words/doctors-note-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/doctors-note-phrase-ex3-slow.mp3",
-          "say": "Please rate the [[ˈdɑktɚ ˈnoʊt]] from one to ten.",
-          "audioTextSha256": "4902f4e407cdecea5f7724d46c34a7f9b101b8527e4c76c43026c227d68216bf"
+          "say": "Please rate the doctor's note from one to ten.",
+          "audioTextSha256": "45c4905874cffb29f1e7a65bc5ab474d204b55af761545222a1df53d78903c6f"
         }
       ],
       "miniDialogue": [
