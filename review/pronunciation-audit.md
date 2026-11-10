@@ -12,6 +12,42 @@ here: 29 cards, 3 lesson notes, 259 sentence recordings and 12 word-only
 recordings. What is left for a human ear is listed at the end. No human
 listening is claimed anywhere in this document.
 
+## Follow-up candidates, 10 November 2026
+
+The follow-up resolves 10 of the 11 sentence cases listed at the end of the
+original audit. This is a **review checkout, not a deployment**. The D4 SIM-card
+line remains unresolved and its original files are unchanged. There was no
+human listening. Broader voice-quality and word-only questions remain open.
+
+The accepted pairs use the existing Piper US voice and contextual renderer.
+Each of Whisper base.en and Parakeet independently met or exceeded its own
+same-speed baseline; no score improvement could hide a regression in the other
+recognizer. The `a-art` phrase additionally matched the full text exactly in
+both recognizers at both speeds while keeping /ə/ and /fɚ/. Only its two
+obsolete ASR waivers were removed.
+
+The unchanged official checker verified 20 files: 13 direct Whisper passes,
+7 same-voice acoustic fallback passes, 0 waived and 0 failed. Typecheck, build
+and 269 automated tests passed; one test was skipped. An acoustic fallback is
+not independent pronunciation evidence. Full transcripts, phonemes, output
+hashes and rechecks are in the
+[run 3 artifact](https://github.com/penny323mo/english-quest/actions/runs/42836424709).
+Original per-speed synthesis, donor and tempo provenance is preserved in
+[run 1](https://github.com/penny323mo/english-quest/actions/runs/42830803751) and
+[run 2](https://github.com/penny323mo/english-quest/actions/runs/42833928202).
+Source commit: `b64b06f88eecdad22ab75541dba372e3c005d071`.
+
+The corrected slow halves of `close-adj` and `engraving-noun-ex2` are retained
+byte-for-byte. `not-feeling-well-phrase-ex2` reuses both exact-text dialogue
+clips; `tax-refund-phrase-md1` reuses only the exact-text slow example. `a-art`
+and `live-adj` slow files use pitch-preserving slowing of accepted normal
+files. Other changed files were synthesized as complete sentences, not
+spliced from isolated words. The article of `live-adj` is explicitly weak /ə/;
+the article before `offer` is explicitly /ðiː/.
+
+The original audit below records its earlier scope and counts. Its remaining
+case lists have been updated for this follow-up checkout.
+
 ## How it was checked
 
 1. **Cards against themselves and a dictionary.** For all 777 cards the IPA,
@@ -141,7 +177,7 @@ and, because the renderer changed, all 1,506 word-only files) 1,821 were heard
 as their text straight away, 9 passed on Parakeet, 188 were close to a fresh
 render, 6 are the dictionary recordings, and none failed or needed the known
 list. `sir-noun` and `late-checkout-phrase` now pass and are off that list;
-`a-art` stays on it.
+`a-art` stayed on it at that stage; the follow-up above removes its two waivers.
 
 ## Fixed: word-only recordings
 
@@ -163,11 +199,10 @@ evidence in `review/word-audio-selection.json`.
   a sentence that ends on the block lost its final full stop or question mark
   before synthesis. These are valid readings, so they were left; the new
   renderer will fix them whenever such a clip is next rendered.
-- **`a-art`, "A table for two."** Still on the known list
-  (`tests/fixtures/asr-known.json`). Its override writes the weak forms as
-  /ə/ and /fɚ/, and recognisers hear the clip as "I tap off it too". It teaches
-  the weak forms on purpose, so the choice between that override and the plain
-  reading is Penny's.
+- **`a-art`, "A table for two."** The follow-up preserves the intended weak
+  /ə/ and /fɚ/ forms in a contextual recipe and selects a complete pair with
+  exact transcripts from both recognizers. Its two known-list entries are
+  removed. Naturalness and the realized weak vowels still need human listening.
 - **Marks copied from CMUdict that no dictionary writes as IPA**, harmless to a
   learner because the primary stress is right: a secondary stress right before
   the primary one (include /ˌɪn.ˈklud/, instead, investment, insurance,
@@ -235,20 +270,18 @@ fine. But they are consistent enough that someone should listen to a handful
 `words/bag-noun.mp3`) before more lessons are recorded with this voice. Nothing
 here was changed for it: it is a property of the voice, not of a clip.
 
-**2. Seven clips that still have a known mistake**, because no new take was
-heard as well as the shipped one:
+**2. One sentence case still unresolved:** `lines/d4-l4.mp3` still spells
+SIM as letters. New complete-sentence takes correctly request /sɪm/, but no
+slow candidate met both recognizers' exact baseline transcripts. Recognizers
+repeatedly transcribed “valid passport” as “volid/vollig/volley” and “pussport.” Both original
+speeds remain in place. No partial replacement or new waiver was installed.
 
-| Clip | Still wrong |
-|---|---|
-| `lines/d4-l4.mp3`, `words/prepaid-adj-ex3.mp3` | SIM is spelled out, "ess-eye-em" |
-| `lines/j23-l7.mp3` | underwriter stressed on *write* |
-| `words/tax-refund-phrase-md1.mp3` | refund as the verb, "re-FUND" |
-| `words/doctors-note-phrase-ex3.mp3` | "doctor note", no /z/ |
-| `words/live-adj.mp3` | the article as "ay" |
-| `words/not-feeling-well-phrase-ex2.mp3` | no pause at the comma |
-
-Three more kept one speed: `engraving-noun` ex1, `close-adj` main and
-`offer-noun` ex2 have a corrected slow or normal file and the shipped other one.
+The other six originally blocked cases and the three partial-speed cases now
+have accepted complete pairs: `prepaid-adj-ex3`, `j23-l7`,
+`tax-refund-phrase-md1`, `doctors-note-phrase-ex3`, `live-adj`,
+`not-feeling-well-phrase-ex2`, `engraving-noun-ex2`, `close-adj` and
+`offer-noun-ex3`. The earlier “ex1/ex2” references used zero-based example
+indexes; these are the actual one-based audio filenames.
 
 **3. Word-only clips where Parakeet hears another word** while Whisper hears the
 card: keep ("keep it"), by ("byte"), wrap ("rep"), shellfish ("selfish"),
