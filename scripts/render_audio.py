@@ -95,7 +95,27 @@ WORD_SAY = {
     "late-checkout-phrase": "late checkout",
     "rose-gold-phrase": "rose gold",
     "savings-account-phrase": "savings account",
-    "table-for-two-phrase": "a table for two",
+    # A lone "a" is read as the letter name /eɪ/, so these phrases give the article's own sound.
+    "table-for-two-phrase": "[[ɐ tˈeɪbəl fɚ tˈuː]]",
+    "twice-a-day-phrase": "[[twˈaɪs ɐ dˈeɪ]]",
+    "times-a-day-phrase": "[[tˈaɪmz ɐ dˈeɪ]]",
+    "half-size-phrase": "[[hˈæf ɐ sˈaɪz]]",
+    # espeak reads these as the noun "excuse" /s/ and as "resistant" with /s/.
+    "excuse-me-phrase": "[[ɛkskjˈuːz mˈiː]]",
+    "water-resistant-adj": "[[wˈɔːɾɚ ɹᵻzˈɪstənt]]",
+    # espeak's own reading of these lone words is wrong: REB-ook, drowsy with /s/,
+    # MACK-ow, out-DOOR, and the verb's re-FILL for the noun.
+    "rebook-verb": "[[ɹiːbˈʊk]]",
+    "drowsy-adj": "[[dɹˈaʊzi]]",
+    "macau-noun": "[[məkˈaʊ]]",
+    "outdoor-adj": "[[ˈaʊtdɔːɹ]]",
+    "refill-noun": "[[ɹˈiːfɪl]]",
+    # Its sentence clip no longer needs an override; the lone word still does.
+    "live-verb": "[[lˈɪv]]",
+    # The plain word is right here; the old override put the stress on "un".
+    "understated-adj": "understated",
+    # Kokoro has ɝ, so this card keeps it. The sentence voice does not.
+    "alternative-noun": "[[ɔltˈɝnətɪv]]",
 }
 
 
@@ -236,14 +256,77 @@ def load_word_voice(says: list[str] | None = None, folder: Path | None = None) -
     return WordVoice(folder or WORD_MODEL, WORD_VOICE["speaker"], says)
 
 
+PHONEME_BLOCK = re.compile(r"\[\[(.*?)\]\]")
+IPA_VOWELS = set("aeiouæɑɒɔəɚɛɜɝɪʊʌɐᵻ")
+# Made-up words that stand in for a [[phonemes]] block while espeak reads the rest of
+# the sentence. espeak reads each as one stressed word, so the words around the block
+# keep the form they have in the whole sentence. One list starts with a vowel sound and
+# one with a consonant, because "the" and "to" change before a vowel.
+STAND_INS = {True: ["izzok", "ozzik", "ezzok", "uzzek"], False: ["vezzok", "zobbik", "vizzek", "zebbok"]}
+
+
+def phonemes_in_context(voice, say: str) -> list[list[str]]:
+    """The phonemes for `say`, sentence by sentence, with each [[override]] set into
+    the sentence as espeak reads it.
+
+    Piper phonemizes the text on either side of a [[block]] as separate fragments.
+    A fragment that ends in "a" is read as the letter name (I have /eɪ/ headache),
+    "the" stays /ðə/ before a vowel, "to" and "can" take their strong forms, and a
+    comma or full stop straight after the block is dropped, so the next words run on
+    (/ˈkænsəlbʌt/). Here the whole sentence is phonemized once with a stand-in word
+    where each block goes, and the stand-in's phonemes are then swapped for the block's.
+    """
+    blocks = PHONEME_BLOCK.findall(say)
+    if not blocks:
+        return voice.phonemize(say)
+    used = {True: 0, False: 0}
+    swaps: list[tuple[str, str]] = []
+
+    def stand_in(match: re.Match) -> str:
+        phonemes = match.group(1).strip()
+        vowel = phonemes.lstrip("ˈˌ")[:1] in IPA_VOWELS
+        if used[vowel] >= len(STAND_INS[vowel]):
+            raise SystemExit(f"too many [[overrides]] in one clip: {say}")
+        word = STAND_INS[vowel][used[vowel]]
+        used[vowel] += 1
+        swaps.append((word, phonemes))
+        return word
+
+    sentences = voice.phonemize(PHONEME_BLOCK.sub(stand_in, say))
+    for word, phonemes in swaps:
+        want = [p for p in voice.phonemize(word)[0] if p not in "ˈˌ"]
+        hits = []
+        for sentence in sentences:
+            plain = [(i, p) for i, p in enumerate(sentence) if p not in "ˈˌ"]
+            for start in range(len(plain) - len(want) + 1):
+                if [p for _, p in plain[start:start + len(want)]] == want:
+                    first = plain[start][0]
+                    while first > 0 and sentence[first - 1] in "ˈˌ":
+                        first -= 1  # the stand-in's own stress mark goes with it
+                    hits.append((sentence, first, plain[start + len(want) - 1][0] + 1))
+        if len(hits) != 1:
+            raise SystemExit(f"cannot place [[{phonemes}]] in: {say}")
+        sentence, first, end = hits[0]
+        # "[[bɹˈeɪslət.]], and": the sentence already has its own punctuation here.
+        if end < len(sentence) and sentence[end] in ".,!?;:":
+            phonemes = phonemes.rstrip(".,!?;:")
+        sentence[first:end] = list(phonemes)
+    return sentences
+
+
 def synth(voice, text: str, wav_path: Path, scale: float, speaker: int | None = None) -> None:
     if isinstance(voice, WordVoice):
         voice.synth(text, wav_path, scale, speaker)
         return
     cfg = SynthesisConfig(length_scale=scale, speaker_id=speaker)
     wav_path.parent.mkdir(parents=True, exist_ok=True)
-    with wave.open(str(wav_path), "wb") as wf:
-        voice.synthesize_wav(text, wf, syn_config=cfg)
+    sentences = phonemes_in_context(voice, text)
+    voice.phonemize = lambda _text: sentences  # for this one call; the class method returns below
+    try:
+        with wave.open(str(wav_path), "wb") as wf:
+            voice.synthesize_wav(text, wf, syn_config=cfg)
+    finally:
+        del voice.phonemize
 
 
 # iPhone Safari clips the first phoneme when a clip starts on the transient.
