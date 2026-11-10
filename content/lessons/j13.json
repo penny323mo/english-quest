@@ -318,15 +318,15 @@
   "sound": {
     "ipa": "/l/",
     "title": "logo 入面嗰個音",
-    "note": "logo 有 /l/。quote 同 bulk 冇 /l/。",
+    "note": "logo 同 bulk 都有 /l/。quote 同 quantity 冇 /l/。",
     "pairs": [
       {
         "a": "logo-noun",
         "b": "quote-noun"
       },
       {
-        "a": "lead-time-phrase",
-        "b": "bulk-adj"
+        "a": "bulk-adj",
+        "b": "quantity-noun"
       }
     ],
     "drill": [

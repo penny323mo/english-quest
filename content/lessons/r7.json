@@ -35,7 +35,7 @@
       "glossYue": "唔好意思，Suki。我叫咗湯，但係送到檯嘅碗湯係凍嘅。",
       "audio": "assets/audio/lines/r7-l1.mp3",
       "audioSlow": "assets/audio/lines/r7-l1-slow.mp3",
-      "say": "Excuse me, Suki. I ordered the soup, but the bowl arrived cold at the table.",
+      "say": "[[ɛkskjˈuːz]] me, Suki. I ordered the soup, but the bowl arrived cold at the table.",
       "hideGloss": false
     },
     {
@@ -322,15 +322,15 @@
   "sound": {
     "ipa": "/l/",
     "title": "cold 入面嗰個音",
-    "note": "cold 有 /l/。replace 同 manager 冇 /l/。",
+    "note": "cold 同 replace 都有 /l/。manager 同 understand 冇 /l/。",
     "pairs": [
       {
         "a": "cold-adj",
-        "b": "replace-verb"
+        "b": "manager-noun"
       },
       {
-        "a": "complimentary-adj",
-        "b": "manager-noun"
+        "a": "replace-verb",
+        "b": "understand-verb"
       }
     ],
     "drill": [

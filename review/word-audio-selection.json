@@ -11390,41 +11390,21 @@
   {
    "id": "refill-noun",
    "lemma": "refill",
-   "say": "refill",
+   "say": "[[ɹˈiːfɪl]]",
    "attempts": [
     {
      "speed": "normal",
      "speaker": 0,
-     "method": "existing",
-     "accepted": false,
-     "verdict": "failed",
-     "whisper": [],
-     "parakeet": "Raphil",
-     "variants": []
-    },
-    {
-     "speed": "normal",
-     "speaker": 0,
-     "method": "existing, +300ms lead/+600ms tail",
-     "accepted": false,
-     "verdict": "failed",
-     "whisper": [],
-     "parakeet": "Raphil",
-     "variants": []
-    },
-    {
-     "speed": "slow",
-     "speaker": 0,
-     "method": "existing",
+     "method": "Kokoro length_scale=1.0, ending='.'",
      "accepted": true,
      "verdict": "whisper",
      "whisper": [
       "Refill",
       "Refill",
       "Refill",
-      "refill",
-      "refill",
-      "refill"
+      "Refill",
+      "Refill",
+      "Refill"
      ],
      "parakeet": "Refill",
      "variants": [
@@ -11437,19 +11417,9 @@
      ]
     },
     {
-     "speed": "normal",
+     "speed": "slow",
      "speaker": 0,
-     "method": "accepted slow atempo=1.35",
-     "accepted": false,
-     "verdict": "failed",
-     "whisper": [],
-     "parakeet": "Refilm",
-     "variants": []
-    },
-    {
-     "speed": "normal",
-     "speaker": 0,
-     "method": "accepted slow atempo=1.35, +300ms lead/+600ms tail",
+     "method": "accepted normal atempo=1/1.35",
      "accepted": true,
      "verdict": "whisper",
      "whisper": [
@@ -11458,7 +11428,7 @@
       "refill",
       "refill",
       "refill",
-      "refill"
+      "Refill"
      ],
      "parakeet": "Refill",
      "variants": [
@@ -11473,18 +11443,18 @@
    ],
    "accepted": true,
    "normal": {
-    "method": "accepted slow atempo=1.35, +300ms lead/+600ms tail",
-    "sha256": "989f2667dc378a50fbc9d4ca87eb28a7c2f4efaf19d46f05f851cfe71624eb7b",
+    "method": "Kokoro length_scale=1.0, ending='.'",
+    "sha256": "d6153c1592e8518c8d8de437457384ea966f1fba7149aab72c80e771004c4fbc",
     "speaker": 0,
     "accepted": true,
     "verdict": "whisper",
     "whisper": [
-     "refill",
-     "refill",
-     "refill",
-     "refill",
-     "refill",
-     "refill"
+     "Refill",
+     "Refill",
+     "Refill",
+     "Refill",
+     "Refill",
+     "Refill"
     ],
     "parakeet": "Refill",
     "variants": [
@@ -11497,18 +11467,18 @@
     ]
    },
    "slow": {
-    "method": "existing",
-    "sha256": "e8e055f3234aff8fce1f3fb5b9dd6d8800b77ad5916666b280edfa2a77492182",
+    "method": "accepted normal atempo=1/1.35",
+    "sha256": "38e168f7545aaf14c6d926efbb355aaa64942f1e5eaa7e7060606074e07a1efb",
     "speaker": 0,
     "accepted": true,
     "verdict": "whisper",
     "whisper": [
-     "Refill",
-     "Refill",
-     "Refill",
      "refill",
      "refill",
-     "refill"
+     "refill",
+     "refill",
+     "refill",
+     "Refill"
     ],
     "parakeet": "Refill",
     "variants": [
@@ -15207,10 +15177,11 @@
   {
    "id": "table-for-two-phrase",
    "lemma": "a table for two",
-   "say": "a table for two",
+   "say": "[[ɐ tˈeɪbəl fɚ tˈuː]]",
    "attempts": [
     {
      "speed": "normal",
+     "speaker": 0,
      "method": "Kokoro length_scale=1.0, ending='.'",
      "accepted": true,
      "verdict": "whisper",
@@ -15218,7 +15189,7 @@
       "A table for two.",
       "A table for two.",
       "A table for two.",
-      "A table for 2.",
+      "A table for two",
       "A table for 2",
       "A table for two."
      ],
@@ -15234,16 +15205,17 @@
     },
     {
      "speed": "slow",
+     "speaker": 0,
      "method": "accepted normal atempo=1/1.35",
      "accepted": true,
      "verdict": "whisper",
      "whisper": [
-      "A table for 2.",
-      "A table for 2.",
-      "A table for 2.",
-      "A table for 2",
-      "A table for 2",
-      "A table for 2."
+      "A table for two.",
+      "A table for two.",
+      "A table for two.",
+      "A table for two",
+      "A table for two.",
+      "A table for two."
      ],
      "parakeet": "A table for two.",
      "variants": [
@@ -15259,14 +15231,15 @@
    "accepted": true,
    "normal": {
     "method": "Kokoro length_scale=1.0, ending='.'",
-    "sha256": "6dcffaa7db19a9947cc76423c35caa91c018c67aa938e8626eefbfe8a1dddd06",
+    "sha256": "04b0062f81475575f609353facbdd9add54db5b9287629f892d790db2c2fa9ae",
+    "speaker": 0,
     "accepted": true,
     "verdict": "whisper",
     "whisper": [
      "A table for two.",
      "A table for two.",
      "A table for two.",
-     "A table for 2.",
+     "A table for two",
      "A table for 2",
      "A table for two."
     ],
@@ -15278,21 +15251,21 @@
      "whisper",
      "whisper",
      "whisper"
-    ],
-    "speaker": 0
+    ]
    },
    "slow": {
     "method": "accepted normal atempo=1/1.35",
-    "sha256": "cd48257c6fbe87c7e216ce8aaed0318c75552e94ed5a49965614fa71e4e4b252",
+    "sha256": "787676cc4bc52518e6a2da5f934828eeebb2a1873b74f5eb53d27084bffd1eee",
+    "speaker": 0,
     "accepted": true,
     "verdict": "whisper",
     "whisper": [
-     "A table for 2.",
-     "A table for 2.",
-     "A table for 2.",
-     "A table for 2",
-     "A table for 2",
-     "A table for 2."
+     "A table for two.",
+     "A table for two.",
+     "A table for two.",
+     "A table for two",
+     "A table for two.",
+     "A table for two."
     ],
     "parakeet": "A table for two.",
     "variants": [
@@ -15302,8 +15275,7 @@
      "whisper",
      "whisper",
      "whisper"
-    ],
-    "speaker": 0
+    ]
    },
    "before": [
     {
