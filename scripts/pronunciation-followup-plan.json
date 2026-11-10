@@ -20,6 +20,9 @@
     ],
     "ðiː": [
       "the"
+    ],
+    "pˈæspˌɔːɹt": [
+      "passport"
     ]
   },
   "cases": [
@@ -140,7 +143,7 @@
       "rel": "assets/audio/lines/d4-l4.mp3",
       "text": "Please activate the new SIM card with your valid passport.",
       "before": "Please activate the new SIM card with your valid passport.",
-      "say": "Please activate the new [[sˈɪm]] card, with your valid passport.",
+      "say": "Please activate the new [[sˈɪm]] card with your valid [[pˈæspˌɔːɹt]].",
       "baseline": {
         "normal": "32e1d515355d34a78b94b4671350b17fd57e4d4f35fd23b188058a05d0b11cf4",
         "slow": "4bca7e8fc0ba55c3bca09c4baa60478c2e0349513e9753121a4ddfcd6cfa8b9f"
@@ -180,14 +183,18 @@
     }
   },
   "resume": {
-    "run_id": 42830803751,
+    "run_id": 42833928202,
     "artifact_name": "pronunciation-followup-candidates",
-    "head": "4c7d284afb3077bd8c32ec13ac28b5efd61a6483",
+    "head": "c9939cbc857d0aceb57cafc526ed06f224da291a",
     "files": {
+      "assets/audio/words/live-adj.mp3": "c78dead9ce2ebf02f2ce97800b1f9f03659072aa09e5e9c7d2ebfafe81ae6e5d",
+      "assets/audio/words/live-adj-slow.mp3": "7e9bc41ffaff6de410a269440f875a53f5694ba2fe02282e46b7cefe17571496",
       "assets/audio/words/close-adj-slow.mp3": "a499dd047fd024ea9a88613426e2d61d0cd25efda01bf8117740db161b696952",
       "assets/audio/words/close-adj.mp3": "b2d6faff24e0577dd7a3f79149727c6a34d433bfa6bdc2f4c504f703887d7fe5",
       "assets/audio/words/a-art.mp3": "1487a0b686d64b48b03a5896c9ea6f1e94ad840e4bf6ce91250f6bc6d9e8a2c5",
       "assets/audio/words/a-art-slow.mp3": "6d34218796e29f63f515567a9ce939f05e58d586755456b69f07bb84857ef581",
+      "assets/audio/words/offer-noun-ex3.mp3": "4108ae0861b43ba3342fc847f4e4848e7f3b0bb1db74c4efb731cc3723f4affd",
+      "assets/audio/words/offer-noun-ex3-slow.mp3": "9fc52e8f2dd858793bac8c9d9273134885cddb7c0b496561e6b1e9a67f3a7343",
       "assets/audio/words/engraving-noun-ex2-slow.mp3": "e565adf62c84fe9f63a1d94bd05b384119a36aa525d6f89ce6affb7a0ced2016",
       "assets/audio/words/engraving-noun-ex2.mp3": "254287d3d7d677493362e8ed25ef2e46442aeb9a9f87ebab953e06019ef589f2",
       "assets/audio/words/tax-refund-phrase-md1.mp3": "04ac3380381b91fa32af0e90d20d4a841ddaec6e82c87897d04c126b918304aa",
