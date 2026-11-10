@@ -113,5 +113,14 @@ with tempfile.TemporaryDirectory() as temp:
  record,paths=r.select_case(case,root,root/'work',inspect,generate,3)
  results['prefer_exact_uses_bound_and_keeps_best']=record['accepted'] and len(normal_calls)==3 and record['selected']['normal']['whisper']=='A test'
 
+with tempfile.TemporaryDirectory() as temp:
+ root=Path(temp);plan,case,jobs=setup(root);calls=[]
+ def generate(say,path,scale):calls.append((say,scale));encoded(path)
+ before={speed:(root/r.rel_for(case,speed)).read_bytes() for speed in r.SPEEDS}
+ d=r.diagnose_model_labels(case,root/'diagnostic',inspect,generate,lambda say:[say])
+ results['diagnostic_all_frozen_takes_retained']=len(d['rows'])==24 and len(calls)==24 and len({v['condition'] for v in d['rows']})==4
+ results['diagnostic_never_claims_installation']=d['diagnostic_only'] and not d['approved_for_installation'] and not d['human_listened'] and all('accepted' not in row for row in d['rows'])
+ results['diagnostic_cannot_touch_shipped_audio']=all((root/r.rel_for(case,speed)).read_bytes()==data for speed,data in before.items())
+
 assert all(results.values()),results
 print(json.dumps(results))

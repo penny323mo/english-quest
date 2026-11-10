@@ -177,6 +177,35 @@ def select_case(case, root, work, inspect, generate, takes, on_update=lambda rec
     return record, paths
 
 
+def diagnose_model_labels(case, work, inspect, generate, phonemize):
+    """Frozen diagnostic; retain every take and never select or install a result."""
+    recipes = {
+        'us-labels': 'Please activate the new [[sˈɪm]] card with your [[vˈælɪd]] [[pˈæspˌɔːɹt]].',
+        'native-valid': 'Please activate the new [[sˈɪm]] card with your [[vˈalɪd]] [[pˈæspˌɔːɹt]].',
+        'native-passport': 'Please activate the new [[sˈɪm]] card with your [[vˈælɪd]] [[pˈaspˌɔːɹt]].',
+        'native-both': 'Please activate the new [[sˈɪm]] card with your [[vˈalɪd]] [[pˈaspˌɔːɹt]].',
+    }
+    report = {'target': case['rel'], 'text': case['text'], 'diagnostic_only': True,
+              'human_listened': False, 'approved_for_installation': False,
+              'design': 'Four frozen phone-label conditions, three takes each at both speeds. All outputs retained; no selection. US rhotic /ɹ/ and all other phones unchanged.',
+              'rows': []}
+    reference_phones = None
+    for name, say in recipes.items():
+        phones = phonemize(say)
+        canonical = [sentence.replace('a', 'æ') for sentence in phones]
+        if reference_phones is None: reference_phones = canonical
+        elif canonical != reference_phones: raise ValueError('Diagnostic changed non-TRAP phones')
+        for speed, scale in SPEEDS.items():
+            for take in range(1, 4):
+                rel = f'{name}/{speed}-{take}.mp3'; path = work / rel
+                path.parent.mkdir(parents=True, exist_ok=True)
+                generate(say, path, scale)
+                report['rows'].append(dict(inspect(path, case['text']), condition=name,
+                    say=say, phonemes=phones, speed=speed, take=take, file=rel))
+                dump(work/'diagnostic.json', report)
+    return report
+
+
 def update_tree(node, cases, root):
     if isinstance(node, list):
         for value in node: update_tree(value, cases, root)
@@ -245,6 +274,7 @@ def main(argv=None):
     ap.add_argument('--check-plan', action='store_true')
     ap.add_argument('--resume', type=Path, help='Hash-pinned accepted artifacts, always rechecked')
     ap.add_argument('--materialize', action='store_true', help='Apply accepted complete cases in this checkout only')
+    ap.add_argument('--diagnose-d4-labels', action='store_true', help='Record frozen D4 phone-label ablation; never select or install it')
     args = ap.parse_args(argv)
     if not 0 <= args.takes <= 16 or not 1 <= args.threads <= 4: ap.error('takes must be 0..16; threads 1..4')
     plan = json.loads(args.plan.read_text())
@@ -297,6 +327,14 @@ def main(argv=None):
                 dest=args.output/'accepted'/rel_for(case,speed);dest.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(path,dest)
             dump(args.output/'selection.json', report)
             print(case['rel'], 'accepted' if record['accepted'] else 'BLOCKED', flush=True)
+        if args.diagnose_d4_labels:
+            case=next(c for c in plan['cases'] if c['rel']=='assets/audio/lines/d4-l4.mp3')
+            def diagnostic_phones(say):
+                sentences=ra.phonemes_in_context(voice,say)
+                if any(p not in voice.config.phoneme_id_map for sentence in sentences for p in sentence):
+                    raise ValueError('Unsupported diagnostic phoneme')
+                return [''.join(sentence) for sentence in sentences]
+            diagnose_model_labels(case,args.output/'diagnostics',inspect,generate,diagnostic_phones)
         installed=materialize(plan, report['cases'], selected_paths) if args.materialize else []
     report['installed']=installed;report['complete']=all(r['accepted'] for r in report['cases'])
     dump(args.output/'selection.json', report)

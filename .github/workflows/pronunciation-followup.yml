@@ -90,7 +90,7 @@ jobs:
           --models ~/asr-models
           --voice ~/asr-models/vits-piper-en_US-ljspeech-medium/en_US-ljspeech-medium.onnx
           --parakeet ~/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8
-          --takes 16 --threads 2 --materialize
+          --takes 0 --threads 2 --materialize --diagnose-d4-labels
           --resume "$RUNNER_TEMP/pronunciation-resume"
           --output "$RUNNER_TEMP/pronunciation-followup"
       - name: Official checker on the generated changed files, both speeds
