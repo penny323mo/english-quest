@@ -12,6 +12,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
 
 concurrency:
   group: pronunciation-followup-${{ github.ref }}
@@ -72,6 +73,13 @@ jobs:
               if found!=wanted: raise SystemExit('Official archive is missing a required file')
               archive.unlink()
           PYMODELS
+      - name: Restore prior accepted candidates for fresh rechecking
+        uses: actions/download-artifact@v4
+        with:
+          name: pronunciation-followup-candidates
+          run-id: 42830803751
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/pronunciation-resume
       - name: Verify the fixed target list and source bytes
         run: python scripts/repair_sentence_audio.py --check-plan --output "$RUNNER_TEMP/pronunciation-followup"
       - name: Generate and select complete cases without weakening either recognizer
@@ -83,6 +91,7 @@ jobs:
           --voice ~/asr-models/vits-piper-en_US-ljspeech-medium/en_US-ljspeech-medium.onnx
           --parakeet ~/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8
           --takes 16 --threads 2 --materialize
+          --resume "$RUNNER_TEMP/pronunciation-resume"
           --output "$RUNNER_TEMP/pronunciation-followup"
       - name: Official checker on the generated changed files, both speeds
         id: official

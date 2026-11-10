@@ -85,5 +85,33 @@ with tempfile.TemporaryDirectory() as temp:
  record['accepted']=False
  results['failed_case_not_installed']=r.materialize(plan,[record],[paths],root)==[] and all((root/p).read_bytes()==data for p,data in before.items())
 
+with tempfile.TemporaryDirectory() as temp:
+ root=Path(temp);plan,case,jobs=setup(root)
+ plan['resume']={'head':'reviewed','files':{}}
+ previous={'cases':[{'rel':case['rel'],'text':case['text'],'say':case['say'],'accepted':True,'selected':{}}]}
+ for speed in r.SPEEDS:
+  rel=r.rel_for(case,speed);path=root/'prior/accepted'/rel;encoded(path)
+  plan['resume']['files'][rel]=r.sha(path);previous['cases'][0]['selected'][speed]={'sha256':r.sha(path)}
+ r.dump(root/'prior/selection.json',previous)
+ r.dump(root/'prior/artifact-manifest.json',{'head':'reviewed','official_asr':'success','source_checks':'success'})
+ results['resume_accepted_pair_available']=set(r.load_resume(plan,root/'prior')[case['rel']])==set(r.SPEEDS)
+ previous['cases'][0]['say']='Different recipe';r.dump(root/'prior/selection.json',previous)
+ results['resume_recipe_mismatch_not_used']=r.load_resume(plan,root/'prior')=={}
+ previous['cases'][0]['say']=case['say'];r.dump(root/'prior/selection.json',previous)
+ encoded(root/'prior/accepted'/case['rel'],'Tampered')
+ try:r.load_resume(plan,root/'prior');results['tampered_resume_rejected']=False
+ except ValueError:results['tampered_resume_rejected']=True
+
+with tempfile.TemporaryDirectory() as temp:
+ root=Path(temp);plan,case,jobs=setup(root);case['prefer_exact_normal']=True
+ encoded(root/case['rel'],'Wrong','Wrong');case['baseline']['normal']=r.sha(root/case['rel'])
+ heard=iter(['test','A test','word']);normal_calls=[]
+ def generate(say,path,scale):
+  text=next(heard) if scale==1.0 else TEXT
+  if scale==1.0:normal_calls.append(text)
+  encoded(path,text,text)
+ record,paths=r.select_case(case,root,root/'work',inspect,generate,3)
+ results['prefer_exact_uses_bound_and_keeps_best']=record['accepted'] and len(normal_calls)==3 and record['selected']['normal']['whisper']=='A test'
+
 assert all(results.values()),results
 print(json.dumps(results))

@@ -99,7 +99,26 @@ class Inspector:
         return result
 
 
-def select_case(case, root, work, inspect, generate, takes, on_update=lambda record: None):
+def load_resume(plan, folder):
+    resume = {}
+    if folder:
+        previous = json.loads((folder/'selection.json').read_text())
+        manifest = json.loads((folder/'artifact-manifest.json').read_text())
+        if manifest['head'] != plan['resume']['head'] or manifest['official_asr'] != 'success' or manifest['source_checks'] != 'success':
+            raise ValueError('Prior artifact does not match the reviewed run/checks')
+        for case in plan['cases']:
+            old = next((r for r in previous['cases'] if r['rel']==case['rel'] and r['accepted'] and r['say']==case['say'] and r['text']==case['text']), None)
+            if not old: continue
+            resume[case['rel']] = {}
+            for speed in SPEEDS:
+                rel=rel_for(case,speed); path=folder/'accepted'/rel
+                if sha(path) != plan['resume']['files'][rel] or sha(path) != old['selected'][speed]['sha256']:
+                    raise ValueError('Prior accepted candidate changed')
+                resume[case['rel']][speed]=path
+    return resume
+
+
+def select_case(case, root, work, inspect, generate, takes, on_update=lambda record: None, resume=None):
     work.mkdir(parents=True, exist_ok=True)
     record = {'rel': case['rel'], 'text': case['text'], 'before': case['before'],
               'say': case['say'], 'baseline': {}, 'attempts': [], 'selected': {}, 'accepted': False}
@@ -118,14 +137,19 @@ def select_case(case, root, work, inspect, generate, takes, on_update=lambda rec
         row = dict(verdict, speed=speed, method=method, accepted=accepted)
         record['attempts'].append(row)
         if accepted:
-            target = work / f'{speed}-selected.mp3'; shutil.copyfile(path, target)
-            paths[speed] = target
-            record['selected'][speed] = dict(verdict, method=method)
+            previous = record['selected'].get(speed)
+            quality = lambda v: sum(ca.similarity(case['text'], v[k]) for k in ('whisper','parakeet'))
+            if previous is None or quality(verdict) > quality(previous):
+                target = work / f'{speed}-selected.mp3'; shutil.copyfile(path, target)
+                paths[speed] = target
+                record['selected'][speed] = dict(verdict, method=method)
         on_update(record)
         return accepted
 
     for speed, scale in SPEEDS.items():
         if speed in paths:
+            continue
+        if resume and speed in resume and consider(resume[speed], speed, 'rechecked accepted prior artifact'):
             continue
         donor = case.get('reuse')
         if donor:
@@ -136,14 +160,19 @@ def select_case(case, root, work, inspect, generate, takes, on_update=lambda rec
             candidate = work / f'{speed}-take-{attempt + 1}.mp3'
             generate(case['say'], candidate, scale)
             if consider(candidate, speed, f'contextual Piper take {attempt + 1}'):
-                break
-    # One bounded pitch-preserving alternative, using the accepted other speed.
+                last = record['attempts'][-1]
+                if not (speed == 'normal' and case.get('prefer_exact_normal')) or all(ca.norm(last[k]) == ca.norm(case['text']) for k in ('whisper','parakeet')):
+                    break
+    # The existing word selector uses these three bounded slow tempos too.
     for speed, scale in SPEEDS.items():
         other = 'slow' if speed == 'normal' else 'normal'
         if speed not in paths and other in paths:
-            candidate = work / f'{speed}-tempo.mp3'
-            tempo(paths[other], candidate, SPEEDS[other] / scale)
-            consider(candidate, speed, 'pitch-preserving tempo from accepted ' + other)
+            for duration in ((1.35, 1.25, 1.2) if speed == 'slow' else (1.0,)):
+                candidate = work / f'{speed}-tempo-{duration}.mp3'
+                factor = SPEEDS[other] / duration
+                tempo(paths[other], candidate, factor)
+                if consider(candidate, speed, f'pitch-preserving tempo from accepted {other}, factor={factor}'):
+                    break
     record['accepted'] = set(paths) == set(SPEEDS)
     return record, paths
 
@@ -214,6 +243,7 @@ def main(argv=None):
     ap.add_argument('--threads', type=int, default=2)
     ap.add_argument('--output', type=Path, required=True)
     ap.add_argument('--check-plan', action='store_true')
+    ap.add_argument('--resume', type=Path, help='Hash-pinned accepted artifacts, always rechecked')
     ap.add_argument('--materialize', action='store_true', help='Apply accepted complete cases in this checkout only')
     args = ap.parse_args(argv)
     if not 0 <= args.takes <= 16 or not 1 <= args.threads <= 4: ap.error('takes must be 0..16; threads 1..4')
@@ -243,6 +273,7 @@ def main(argv=None):
         unknown = sorted({c for s in sentences for c in s if c not in voice.config.phoneme_id_map})
         if unknown: raise ValueError(f"Unknown phonemes for {case['rel']}: {unknown}")
         phonemes[case['rel']] = [''.join(s) for s in sentences]
+    resume = load_resume(plan, args.resume)
     inspect = Inspector(args.models, args.parakeet, args.threads)
     args.output.mkdir(parents=True, exist_ok=True)
     report = {'source_commit': plan['source_commit'], 'checkout_commit': subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),
@@ -257,7 +288,7 @@ def main(argv=None):
             def checkpoint(record):
                 report['current_case'] = record
                 dump(args.output/'selection.json', report)
-            record, paths = select_case(case, ROOT, Path(tmp)/str(index), inspect, generate, args.takes, checkpoint)
+            record, paths = select_case(case, ROOT, Path(tmp)/str(index), inspect, generate, args.takes, checkpoint, resume.get(case['rel']))
             report.pop('current_case', None)
             record['phonemes'] = phonemes[case['rel']]
             report['cases'].append(record); selected_paths.append(paths)

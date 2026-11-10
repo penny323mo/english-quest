@@ -17,6 +17,9 @@
     ],
     "ə": [
       "a"
+    ],
+    "ðiː": [
+      "the"
     ]
   },
   "cases": [
@@ -24,7 +27,7 @@
       "rel": "assets/audio/words/live-adj.mp3",
       "text": "It is a live show.",
       "before": "It is a [[lˈaɪv]] show.",
-      "say": "It is a [[lˈaɪv]] show.",
+      "say": "It is [[ə]] [[lˈaɪv]] show.",
       "baseline": {
         "normal": "24c503068980f7ecc8af6c60926f134db125d183c7d698f8ffd1406d54dc9c29",
         "slow": "de6a7b5acc60e84716a36e0af7287de8fb9344e767fa6f216e9740c9d45d76da"
@@ -59,14 +62,12 @@
       "rel": "assets/audio/words/offer-noun-ex3.mp3",
       "text": "The offer ends on Sunday.",
       "before": "The [[ˈɔfɚ]] ends on Sunday.",
-      "say": "The [[ˈɔfɚ]] ends on Sunday.",
+      "say": "[[ðiː]] [[ˈɔfɚ]] ends on Sunday.",
       "baseline": {
         "normal": "20c7d3e9141f03acb8fcd6d043c3d28b6d88a81a1334d1ec3903b10d2e4139cc",
         "slow": "f68b09e32fdde761afb72644d16168549f5c765ee68e077e67eeb98aaab504d0"
       },
-      "retain": [
-        "normal"
-      ]
+      "retain": []
     },
     {
       "rel": "assets/audio/words/engraving-noun-ex2.mp3",
@@ -139,12 +140,13 @@
       "rel": "assets/audio/lines/d4-l4.mp3",
       "text": "Please activate the new SIM card with your valid passport.",
       "before": "Please activate the new SIM card with your valid passport.",
-      "say": "Please activate the new [[sˈɪm]] card with your valid passport.",
+      "say": "Please activate the new [[sˈɪm]] card, with your valid passport.",
       "baseline": {
         "normal": "32e1d515355d34a78b94b4671350b17fd57e4d4f35fd23b188058a05d0b11cf4",
         "slow": "4bca7e8fc0ba55c3bca09c4baa60478c2e0349513e9753121a4ddfcd6cfa8b9f"
       },
-      "retain": []
+      "retain": [],
+      "prefer_exact_normal": true
     },
     {
       "rel": "assets/audio/lines/j23-l7.mp3",
@@ -175,6 +177,29 @@
         "joiner.int8.onnx": "77a29f3e5ac7d37074e0af465391b80f314015d5b97f0f90c6c7767f1d56f428",
         "tokens.txt": "ec182b70dd42113aff6c5372c75cac58c952443eb22322f57bbd7f53977d497d"
       }
+    }
+  },
+  "resume": {
+    "run_id": 42830803751,
+    "artifact_name": "pronunciation-followup-candidates",
+    "head": "4c7d284afb3077bd8c32ec13ac28b5efd61a6483",
+    "files": {
+      "assets/audio/words/close-adj-slow.mp3": "a499dd047fd024ea9a88613426e2d61d0cd25efda01bf8117740db161b696952",
+      "assets/audio/words/close-adj.mp3": "b2d6faff24e0577dd7a3f79149727c6a34d433bfa6bdc2f4c504f703887d7fe5",
+      "assets/audio/words/a-art.mp3": "1487a0b686d64b48b03a5896c9ea6f1e94ad840e4bf6ce91250f6bc6d9e8a2c5",
+      "assets/audio/words/a-art-slow.mp3": "6d34218796e29f63f515567a9ce939f05e58d586755456b69f07bb84857ef581",
+      "assets/audio/words/engraving-noun-ex2-slow.mp3": "e565adf62c84fe9f63a1d94bd05b384119a36aa525d6f89ce6affb7a0ced2016",
+      "assets/audio/words/engraving-noun-ex2.mp3": "254287d3d7d677493362e8ed25ef2e46442aeb9a9f87ebab953e06019ef589f2",
+      "assets/audio/words/tax-refund-phrase-md1.mp3": "04ac3380381b91fa32af0e90d20d4a841ddaec6e82c87897d04c126b918304aa",
+      "assets/audio/words/tax-refund-phrase-md1-slow.mp3": "ee07d837044703f4f165fc3f0d9a17c9ff713bb435f73ead2cf621d68b9a155c",
+      "assets/audio/words/prepaid-adj-ex3.mp3": "4caf9ed2574bde06425c5ea5ab5f0883a62fdba081ca5898278633f141a87bd5",
+      "assets/audio/words/prepaid-adj-ex3-slow.mp3": "2537a74918b5756b84bc7a0ff0d6db58531de4897201954ffdf2578229ddd8fc",
+      "assets/audio/words/not-feeling-well-phrase-ex2.mp3": "ee4227c032bd8b79b8dade9a33ca8a9fbd778954a22d7094390aecc1c521c7fe",
+      "assets/audio/words/not-feeling-well-phrase-ex2-slow.mp3": "b917378290e51522c71fc4577f8cb522f8cadad3f7a6394de8a79a78c2b84bda",
+      "assets/audio/words/doctors-note-phrase-ex3.mp3": "663c3ba2f9c74b2a162553e13ca43f669f19b4b90fd2422778d0acc0cc09f219",
+      "assets/audio/words/doctors-note-phrase-ex3-slow.mp3": "cffca7f9203eea6b718d4ddd55109f09a8ece0ed40b0e9791e4a1f440e994bbf",
+      "assets/audio/lines/j23-l7.mp3": "2a4c91cc2562b9a8e096d0a06a956882702b1ebb658b142a942bb0e41858b24f",
+      "assets/audio/lines/j23-l7-slow.mp3": "54e3fbd8b7aed48b60ed3dfc7072915ae56dd237e713fe12665623cfed4bf44e"
     }
   }
 }
