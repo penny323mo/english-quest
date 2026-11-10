@@ -1,0 +1,156 @@
+name: pronunciation-followup
+
+# An isolated, bounded compute job. It never writes to GitHub or deploys.
+# A later audio-only commit does not trigger another synthesis run.
+on:
+  push:
+    branches: [codex/pronunciation-followup]
+    paths:
+      - .github/workflows/pronunciation-followup.yml
+      - scripts/repair_sentence_audio.py
+      - scripts/pronunciation-followup-plan.json
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pronunciation-followup-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  candidates:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '2'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+      - name: Install the existing pinned audio runtime
+        run: |
+          command -v ffmpeg || (sudo apt-get update && sudo apt-get install -y ffmpeg)
+          python -m pip install sherpa-onnx==2.0.1 piper-tts==1.8.0 numpy pillow
+          npm ci
+      - name: Restore the existing audio model cache (read only)
+        uses: actions/cache/restore@v4
+        with:
+          path: ~/asr-models
+          key: sherpa-onnx-whisper-base.en-small.en-parakeet-tdt-0.6b-v2-piper-ljspeech-medium-kokoro-en-v0_19-v4
+      - name: Download only reviewed files from official model archives
+        run: |
+          python - <<'PYMODELS'
+          import hashlib, json, pathlib, shutil, tarfile, urllib.request
+          root=pathlib.Path.home()/'asr-models'; root.mkdir(exist_ok=True)
+          plan=json.loads(pathlib.Path('scripts/pronunciation-followup-plan.json').read_text())
+          specs=[(spec['folder'], 'asr-models', list(spec['files'])) for spec in plan['recognizers'].values()]
+          specs.append(('vits-piper-en_US-ljspeech-medium','tts-models',['en_US-ljspeech-medium.onnx','en_US-ljspeech-medium.onnx.json']))
+          for folder, tag, files in specs:
+              if all((root/folder/name).is_file() for name in files): continue
+              archive=root/(folder+'.tar.bz2')
+              url=f'https://github.com/k2-fsa/sherpa-onnx/releases/download/{tag}/{folder}.tar.bz2'
+              with urllib.request.urlopen(url,timeout=90) as src, archive.open('wb') as dst:
+                  shutil.copyfileobj(src,dst,1024*1024)
+              wanted={folder+'/'+name for name in files}; found=set()
+              with tarfile.open(archive,'r:bz2') as tar:
+                  for member in tar:
+                      if member.name not in wanted: continue
+                      if not member.isfile(): raise SystemExit('Model member is not a regular file')
+                      dest=root/member.name; dest.parent.mkdir(parents=True,exist_ok=True)
+                      with tar.extractfile(member) as src, dest.open('wb') as dst:
+                          shutil.copyfileobj(src,dst,1024*1024)
+                      found.add(member.name)
+              if found!=wanted: raise SystemExit('Official archive is missing a required file')
+              archive.unlink()
+          PYMODELS
+      - name: Verify the fixed target list and source bytes
+        run: python scripts/repair_sentence_audio.py --check-plan --output "$RUNNER_TEMP/pronunciation-followup"
+      - name: Generate and select complete cases without weakening either recognizer
+        id: select
+        continue-on-error: true
+        run: >-
+          python scripts/repair_sentence_audio.py
+          --models ~/asr-models
+          --voice ~/asr-models/vits-piper-en_US-ljspeech-medium/en_US-ljspeech-medium.onnx
+          --parakeet ~/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8
+          --takes 16 --threads 2 --materialize
+          --output "$RUNNER_TEMP/pronunciation-followup"
+      - name: Official checker on the generated changed files, both speeds
+        id: official
+        if: steps.select.outcome == 'success' || steps.select.outcome == 'failure'
+        continue-on-error: true
+        run: >-
+          python scripts/check_audio_asr.py
+          --models ~/asr-models
+          --voice ~/asr-models/vits-piper-en_US-ljspeech-medium/en_US-ljspeech-medium.onnx
+          --parakeet ~/asr-models/sherpa-onnx-nemo-parakeet-tdt-0.6b-v2-int8
+          --changed HEAD --slow --threads 2
+          --json "$RUNNER_TEMP/pronunciation-followup/official-asr.json"
+      - name: Verify all source changes
+        id: source
+        continue-on-error: true
+        run: |
+          npm run typecheck
+          node --test --test-concurrency=1 tests/*.mjs
+          npm run build
+      - name: Package only changed content and complete accepted cases
+        if: always()
+        env:
+          SELECT_OUTCOME: ${{ steps.select.outcome }}
+          OFFICIAL_OUTCOME: ${{ steps.official.outcome }}
+          SOURCE_OUTCOME: ${{ steps.source.outcome }}
+        run: |
+          python - <<'PY'
+          import hashlib, json, os, pathlib, subprocess, zipfile
+          root=pathlib.Path.cwd(); out=pathlib.Path(os.environ['RUNNER_TEMP'])/'pronunciation-followup'
+          out.mkdir(parents=True, exist_ok=True)
+          paths=subprocess.check_output(['git','diff','--name-only','HEAD'],text=True).splitlines()
+          plan=json.loads((root/'scripts/pronunciation-followup-plan.json').read_text())
+          allowed={'assets/audio/rendered.json','content/lexicon.json','content/lines.json','content/lessons/d4.json','content/lessons/j23.json','tests/fixtures/say-overrides.json','tests/fixtures/asr-known.json'}
+          for case in plan['cases']:
+              allowed.add(case['rel']); allowed.add(case['rel'].replace('.mp3','-slow.mp3'))
+          if any(p not in allowed for p in paths): raise SystemExit('Unexpected generated path')
+          manifest={'head':os.environ['GITHUB_SHA'],'selection':os.environ.get('SELECT_OUTCOME'),'official_asr':os.environ.get('OFFICIAL_OUTCOME'),'source_checks':os.environ.get('SOURCE_OUTCOME'),'files':{}}
+          with zipfile.ZipFile(out/'overlay.zip','w',zipfile.ZIP_DEFLATED) as archive:
+              for name in paths:
+                  p=root/name
+                  if not p.is_file(): raise SystemExit('Unexpected deletion')
+                  manifest['files'][name]=hashlib.sha256(p.read_bytes()).hexdigest()
+                  archive.write(p,name)
+          (out/'artifact-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+          (out/'changes.patch').write_bytes(subprocess.check_output(['git','diff','--binary','HEAD','--',*paths]) if paths else b'')
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pronunciation-followup-candidates
+          path: ${{ runner.temp }}/pronunciation-followup/
+          if-no-files-found: error
+      - name: Complete only if every case and all checks passed
+        if: always()
+        env:
+          SELECT_OUTCOME: ${{ steps.select.outcome }}
+          OFFICIAL_OUTCOME: ${{ steps.official.outcome }}
+          SOURCE_OUTCOME: ${{ steps.source.outcome }}
+        run: |
+          test "$SELECT_OUTCOME" = success
+          test "$OFFICIAL_OUTCOME" = success
+          test "$SOURCE_OUTCOME" = success
+          python - <<'PYRESULT'
+          import json, os, pathlib
+          out=pathlib.Path(os.environ['RUNNER_TEMP'])/'pronunciation-followup'
+          plan=json.loads(pathlib.Path('scripts/pronunciation-followup-plan.json').read_text())
+          selection=json.loads((out/'selection.json').read_text())
+          result=json.loads((out/'official-asr.json').read_text())['summary']
+          assert selection['complete'] and len(selection['installed'])==len(plan['cases'])
+          assert result['total']==2*len(plan['cases']) and result['failed']==0 and result['waived']==0
+          PYRESULT
