@@ -13,6 +13,6 @@ test('a lesson recap identifies can-do statements as goals, not proven mastery',
 
 test('the end of a goal track does not claim completion of the whole curriculum', () => {
   assert.doesNotMatch(next, /九十七課|97\s*課|全部課.*行完/);
-  assert.match(next, /呢條路線暫時冇下一課/);
+  assert.match(next, /呢條學習路徑暫時冇下一課/);
   assert.match(next, /返路徑揀其他課/);
 });

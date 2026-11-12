@@ -770,7 +770,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢條路線暫時冇下一課。你可以返路徑揀其他課，或者去練習溫習到期嘅生字卡。</p>
+        <p className="lede">呢條學習路徑暫時冇下一課。你可以返路徑揀其他課，或者去練習溫習到期嘅生字卡。</p>
         <a className="btn block" href="#/">返路徑</a>
       </>
     );

@@ -374,7 +374,7 @@ test("the app has a mic fallback and does not phone home", () => {
   assert.match(lesson, /改為即時講/);
   assert.match(lesson, />聽我</);
   assert.match(lesson, /咪開唔到/);
-  assert.match(lesson, /呢條路線暫時冇下一課/);
+  assert.match(lesson, /呢條學習路徑暫時冇下一課/);
   assert.doesNotMatch(lesson, /呢輪九十七課你行完啦/);
   assert.match(lesson, /setDone\(true\)/);
   assert.match(lesson, /playSfx/);
