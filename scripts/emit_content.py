@@ -2089,7 +2089,7 @@ def build_lessons() -> list[dict]:
                 {"type": "listen", "prompt": "你聽到邊個？", "lemma": "sure-adj", "choices": ["sure", "tour", "store"], "answer": 0},
                 {"type": "meaning", "prompt": "boarding pass", "choices": ["登機證", "頸鏈", "餐牌"], "answer": 0},
                 {"type": "meaning", "prompt": "aisle", "choices": ["走廊位", "靠窗", "行李"], "answer": 0},
-                {"type": "choice", "prompt": "邊個先有 /ʃ/？", "choices": ["show", "check", "ticket"], "answer": 0, "explain": "check 同 ticket 係 /tʃ/。show 先至係 /ʃ/。"},
+                {"type": "choice", "prompt": "邊個先有 /ʃ/？", "choices": ["show", "check", "ticket"], "answer": 0, "explain": "show 開頭係 /ʃ/；check 開頭係 /tʃ/；ticket 開頭係 /t/。"},
             ],
             "sound": {
                 "ipa": "/ʃ/",
