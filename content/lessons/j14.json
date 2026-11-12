@@ -3,8 +3,8 @@
   "unit": "J",
   "titleYue": "訂造首飾",
   "titleEn": "A custom jewellery design",
-  "canDoYue": "你識講預算同草圖、比較白K金同黃K金，仲識問一半訂金同四個星期。",
-  "canDoEn": "Talk about a budget and a sketch, compare white gold with yellow gold, and ask about a half deposit.",
+  "canDoYue": "你識講預算同草圖、比較白K金同黃K金，仲識問佔預算一半嘅訂金同四個星期工期。",
+  "canDoEn": "Talk about a budget and a sketch, compare white gold with yellow gold, and ask about a deposit of half the budget and a four-week lead time.",
   "minutes": 12,
   "hero": "assets/art/lessons/j14.webp",
   "cast": [
@@ -102,11 +102,11 @@
       "id": "j14-l7",
       "speaker": "gus",
       "speakerLabel": "Gus",
-      "text": "I can pay half the deposit this week.",
-      "glossYue": "我呢個星期可以畀一半訂金。",
+      "text": "I can pay the deposit this week.",
+      "glossYue": "我呢個星期可以畀訂金。",
       "audio": "assets/audio/lines/j14-l7.mp3",
       "audioSlow": "assets/audio/lines/j14-l7-slow.mp3",
-      "say": "I can pay half the deposit this week.",
+      "say": "I can pay the deposit this week.",
       "hideGloss": true
     },
     {
@@ -177,7 +177,7 @@
       ]
     },
     {
-      "pattern": "I will hold the ring once the half deposit arrives, and you can pick it up in four ___.",
+      "pattern": "I will hold the ring once the deposit arrives, and you can pick it up in four ___.",
       "example": "I will hold the ring once the deposit arrives, and you can pick it up in four weeks.",
       "glossYue": "四個星期後可以取。",
       "answer": "weeks",
@@ -199,7 +199,7 @@
       "choices": [
         "Could we use white gold for the band, or is yellow gold better for this stone?",
         "How long will the ring take, and what deposit do you need to start this work?",
-        "I can pay half the deposit this week."
+        "I can pay the deposit this week."
       ],
       "answer": 0,
       "explain": "講 white gold 同 yellow gold。"
@@ -268,7 +268,7 @@
         "line": "The ring takes four weeks, and the deposit is half the budget once you confirm.",
         "audio": "assets/audio/lines/j14-l6.mp3",
         "audioSlow": "assets/audio/lines/j14-l6-slow.mp3",
-        "expect": "I can pay half the deposit this week.",
+        "expect": "I can pay the deposit this week.",
         "keywords": [
           "deposit",
           "week"

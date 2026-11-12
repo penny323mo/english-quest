@@ -57,11 +57,11 @@
       "id": "j4-l3",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "It's certified, and the papers are in this folder.",
-      "glossYue": "有證書，同埋文件喺呢個文件夾。",
+      "text": "It's a natural diamond. It's certified, and the papers are in this folder.",
+      "glossYue": "呢粒係天然鑽石。有證書，同埋文件喺呢個文件夾。",
       "audio": "assets/audio/lines/j4-l3.mp3",
       "audioSlow": "assets/audio/lines/j4-l3-slow.mp3",
-      "say": "It's [[sˈɜtəfˌaɪd]], and the papers are in this folder.",
+      "say": "It's a [[nˈætʃəɹəl]] diamond. It's [[sˈɜːɹtɪfaɪd]], and the papers are in this [[fˈoʊldəɹ]].",
       "hideGloss": false
     },
     {
@@ -128,7 +128,7 @@
         "粒鑽石係咪天然"
       ],
       "answer": 2,
-      "explain": "natural 係天然。處理過要另外講。"
+      "explain": "natural 係天然；係咪經過處理要另外問。培育鑽石亦可以有證書。"
     },
     {
       "prompt": "eighteen karat 呢句即係點？",
@@ -154,9 +154,9 @@
       ]
     },
     {
-      "pattern": "Is the ___ natural, or has somebody treated the stone?",
-      "example": "Is the diamond natural, or has somebody treated the stone?",
-      "glossYue": "⋯⋯係咪天然？",
+      "pattern": "Is this ___ natural, or is it lab-grown?",
+      "example": "Is this diamond natural, or is it lab-grown?",
+      "glossYue": "呢粒鑽石係天然，定係實驗室培育？",
       "answer": "diamond",
       "choices": [
         "diamond",
@@ -165,9 +165,9 @@
       ]
     },
     {
-      "pattern": "It is ___, so the papers match the piece you chose.",
-      "example": "It is certified, so the papers match the piece you chose.",
-      "glossYue": "有證書。",
+      "pattern": "It's ___, and the papers are in this folder.",
+      "example": "It's certified, and the papers are in this folder.",
+      "glossYue": "有證書，同埋文件喺呢個文件夾。",
       "answer": "certified",
       "choices": [
         "certified",
@@ -230,7 +230,7 @@
         "line": "Is this real gold?",
         "audio": "assets/audio/lines/j4-l6.mp3",
         "audioSlow": "assets/audio/lines/j4-l6-slow.mp3",
-        "expect": "This gold is authentic.",
+        "expect": "This gold is authentic, and the stamp is clear on the inside.",
         "keywords": [
           "authentic"
         ],
@@ -240,11 +240,12 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Is the diamond natural?",
+        "line": "Is this diamond natural, or is it lab-grown?",
         "audio": "assets/audio/lines/j4-l2.mp3",
         "audioSlow": "assets/audio/lines/j4-l2-slow.mp3",
-        "expect": "Yes. It is certified.",
+        "expect": "It's a natural diamond. It's certified, and the papers are in this folder.",
         "keywords": [
+          "natural",
           "certified"
         ],
         "modelAudio": "assets/audio/lines/j4-l3.mp3",
@@ -253,10 +254,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "I like this jade.",
+        "line": "I like this jade. The colour is even.",
         "audio": "assets/audio/lines/j4-l4.mp3",
         "audioSlow": "assets/audio/lines/j4-l4-slow.mp3",
-        "expect": "This setting is eighteen-karat gold.",
+        "expect": "This setting is eighteen-karat gold, and it holds the stone well.",
         "keywords": [
           "karat"
         ],
