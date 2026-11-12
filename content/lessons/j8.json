@@ -34,7 +34,7 @@
       "speaker": "mei",
       "speakerLabel": "Mei",
       "text": "Have you kept the receipt? Should I explain the warranty before you go?",
-      "glossYue": "你有冇帶住張收據？走之前我可唔可以講下保養？",
+      "glossYue": "你有冇留低張收據？走之前我可唔可以講下保養？",
       "audio": "assets/audio/lines/j8-l1.mp3",
       "audioSlow": "assets/audio/lines/j8-l1-slow.mp3",
       "say": "Have you kept the receipt? Should I explain the warranty before you go?",
@@ -89,7 +89,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "I won't use harsh chemicals at home. I'll come back if the shine doesn't last.",
-      "glossYue": "我喺屋企唔用刺激化學劑。如果擦完唔耐，我就再嚟。",
+      "glossYue": "我喺屋企唔用刺激化學劑。如果光澤維持唔到，我就再嚟。",
       "audio": "assets/audio/lines/j8-l6.mp3",
       "audioSlow": "assets/audio/lines/j8-l6-slow.mp3",
       "say": "I won't use harsh chemicals at home. I'll come back if the shine doesn't last.",
@@ -210,7 +210,7 @@
         "I have lost my wallet."
       ],
       "answer": 0,
-      "explain": "先講應該避開水同化學劑。"
+      "explain": "請客人用軟布擦亮手鏈，同埋避開刺激化學劑。"
     },
     {
       "type": "order",

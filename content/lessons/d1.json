@@ -148,7 +148,7 @@
   ],
   "chunks": [
     {
-      "pattern": "I have had a fever and ___ since Monday, and my sore throat feels worse.",
+      "pattern": "I have had a fever and ___ since Monday.",
       "example": "I have had a fever and cough since Monday.",
       "glossYue": "我由星期一起發燒同⋯⋯。",
       "answer": "cough",
@@ -159,7 +159,7 @@
       ]
     },
     {
-      "pattern": "I have had a ___ since Monday, and I have no allergy to any medicine.",
+      "pattern": "I have had a ___ since Monday.",
       "example": "I have had a headache since Monday.",
       "glossYue": "我由星期一起⋯⋯。",
       "answer": "headache",
@@ -170,9 +170,9 @@
       ]
     },
     {
-      "pattern": "You can rest at home, and the ___ can prepare this prescription for you there.",
+      "pattern": "You can rest at home. Please take this prescription to the ___.",
       "example": "You can rest at home. Please take this prescription to the pharmacy.",
-      "glossYue": "⋯⋯今日可以配藥。",
+      "glossYue": "你可以喺屋企休息。請帶呢張藥單去藥房。",
       "answer": "pharmacy",
       "choices": [
         "pharmacy",

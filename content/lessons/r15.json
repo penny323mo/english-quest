@@ -3,8 +3,8 @@
   "unit": "R",
   "titleYue": "自助餐同戒口",
   "titleEn": "Buffet and dietary limits",
-  "canDoYue": "你識問自助餐係咪任食、汽水包唔包、邊啲菜有海鮮，同埋一次攞一碟。",
-  "canDoEn": "Ask whether the buffet is eat-in, whether soft drinks are included, which dishes have shellfish, and whether you may take one plate at a time.",
+  "canDoYue": "你識問自助餐係咪任食、汽水包唔包、邊啲菜有貝類及甲殼類海鮮，同埋一次攞一碟。",
+  "canDoEn": "Ask whether the buffet is all you can eat and eat-in only, whether soft drinks are included, which dishes have shellfish, and whether you may take one plate at a time.",
   "minutes": 12,
   "hero": "assets/art/lessons/r15.webp",
   "cast": [
@@ -95,7 +95,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Which hot dishes have shellfish? May I have a clean plate?",
-      "glossYue": "邊啲熱菜有甲殼類海鮮？可唔可以畀個乾淨碟我？",
+      "glossYue": "邊啲熱菜有貝類及甲殼類海鮮？可唔可以畀個乾淨碟我？",
       "audio": "assets/audio/lines/r15-l5.mp3",
       "audioSlow": "assets/audio/lines/r15-l5-slow.mp3",
       "say": "Which hot dishes have shellfish? May I have a clean plate?",
@@ -236,7 +236,7 @@
       ]
     },
     {
-      "pattern": "The prawn soup has shellfish, so here is a clean ___.",
+      "pattern": "The prawn soup has shellfish. Here's a clean ___.",
       "example": "The prawn soup has shellfish. Here's a clean plate.",
       "glossYue": "蝦湯有甲殼類海鮮。呢隻係乾淨碟。",
       "answer": "plate",
@@ -267,10 +267,8 @@
         "prawn",
         "soup",
         "has",
-        "shellfish,",
-        "so",
-        "here",
-        "is",
+        "shellfish.",
+        "Here's",
         "a",
         "clean",
         "plate."
@@ -280,10 +278,8 @@
         "prawn",
         "soup",
         "has",
-        "shellfish,",
-        "so",
-        "here",
-        "is",
+        "shellfish.",
+        "Here's",
         "a",
         "clean",
         "plate."
@@ -327,7 +323,7 @@
       "type": "meaning",
       "prompt": "Which hot dishes have shellfish? May I have a clean plate? 呢句入面，邊個意思先啱？",
       "choices": [
-        "海鮮",
+        "貝類及甲殼類海鮮",
         "自助餐",
         "汽水"
       ],

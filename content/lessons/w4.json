@@ -132,7 +132,7 @@
       "choices": [
         "週末冇出過門",
         "星期六成日落雨",
-        "週末好忙，同家姐去咖啡店"
+        "幾好。個週末同家姐好忙。"
       ],
       "answer": 2,
       "explain": "Not bad 係幾好，busy 係忙。"
@@ -150,7 +150,7 @@
   ],
   "chunks": [
     {
-      "pattern": "Not bad at all. The weekend was ___ with my sister in a cafe.",
+      "pattern": "Not bad. The weekend was ___ with my sister.",
       "example": "Not bad. The weekend was busy with my sister.",
       "glossYue": "週末好⋯⋯。",
       "answer": "busy",
@@ -161,18 +161,18 @@
       ]
     },
     {
-      "pattern": "By the way, are you ___ for the 10 o'clock meeting with the whole sales team?",
+      "pattern": "By the way, are you ___ for the 10 o'clock meeting with the sales team?",
       "example": "By the way, are you ready for the 10 o'clock meeting with the sales team?",
       "glossYue": "你⋯⋯未？",
       "answer": "ready",
       "choices": [
         "ready",
-        "busy",
+        "commute",
         "weather"
       ]
     },
     {
-      "pattern": "Yes, I think so. We can ___ later after the notes are on the table.",
+      "pattern": "Yes, I think so. We can ___ later, after the agenda is out.",
       "example": "Yes, I think so. We can catch up later, after the agenda is out.",
       "glossYue": "我哋遲啲⋯⋯。",
       "answer": "catch up",

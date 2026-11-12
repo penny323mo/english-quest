@@ -173,7 +173,7 @@
       "answer": "insurance",
       "choices": [
         "insurance",
-        "appointment",
+        "medicine",
         "symptom"
       ]
     },
@@ -185,7 +185,7 @@
       "choices": [
         "appointment",
         "symptom",
-        "consultation"
+        "insurance"
       ]
     },
     {
@@ -332,7 +332,7 @@
       "choices": [
         "symptom",
         "consultation fee",
-        "appointment"
+        "sore throat"
       ],
       "answer": 1,
       "explain": "consultation fee 係診金。"

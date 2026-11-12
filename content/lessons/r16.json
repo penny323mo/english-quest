@@ -3,7 +3,7 @@
   "unit": "R",
   "titleYue": "問廚師推介",
   "titleEn": "Asking for a chef's recommendation",
-  "canDoYue": "你識問今日特餐同廚師推介、要一碟辣一碟唔辣、話花生敏感，同埋加碟飯。",
+  "canDoYue": "你識問今日特餐同廚師推介、要一碟辣一碟唔太辣、話花生敏感，同埋加碟飯。",
   "canDoEn": "Ask today's special and what the chef recommends, order one spicy plate and one mild plate, name a peanut allergy, and add a side of rice.",
   "minutes": 12,
   "hero": "assets/art/lessons/r16.webp",
@@ -21,7 +21,7 @@
   "topicTags": [
     "特餐",
     "廚師",
-    "唔辣",
+    "唔太辣",
     "白飯"
   ],
   "next": "R5",
@@ -74,7 +74,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "Can I get one spicy plate and one mild plate, please?",
-      "glossYue": "可唔可以要一碟辣、一碟唔辣？",
+      "glossYue": "可唔可以要一碟辣、一碟唔太辣？",
       "audio": "assets/audio/lines/r16-l3.mp3",
       "audioSlow": "assets/audio/lines/r16-l3-slow.mp3",
       "say": "Can I get one spicy plate and one mild plate, please?",
@@ -85,7 +85,7 @@
       "speaker": "mira",
       "speakerLabel": "Mira",
       "text": "Yes. The mild plate is tofu, and the spicy dish is prawns.",
-      "glossYue": "可以。唔辣嗰碟係豆腐，辣嗰碟係蝦。",
+      "glossYue": "可以。唔太辣嗰碟係豆腐，辣嗰碟係蝦。",
       "audio": "assets/audio/lines/r16-l4.mp3",
       "audioSlow": "assets/audio/lines/r16-l4-slow.mp3",
       "say": "Yes. The mild plate is tofu, and the spicy dish is prawns.",
@@ -129,7 +129,7 @@
       "speaker": "mira",
       "speakerLabel": "Mira",
       "text": "Rice on the side takes about fifteen minutes from the kitchen.",
-      "glossYue": "加碟白飯大概十五分鐘，廚房而家出。",
+      "glossYue": "加碟白飯大概十五分鐘。",
       "audio": "assets/audio/lines/r16-l8.mp3",
       "audioSlow": "assets/audio/lines/r16-l8-slow.mp3",
       "say": "Rice on the side takes about fifteen minutes from the kitchen.",
@@ -188,17 +188,17 @@
     {
       "prompt": "What is today's special? Does the chef recommend that dish? 呢句即係點？",
       "choices": [
-        "可以。唔辣嗰碟係豆腐，辣嗰碟係蝦",
+        "可以。唔太辣嗰碟係豆腐，辣嗰碟係蝦",
         "今日特餐係咩？廚師推唔推薦嗰味？",
-        "可唔可以要一碟辣、一碟唔辣？"
+        "可唔可以要一碟辣、一碟唔太辣？"
       ],
       "answer": 1
     },
     {
       "prompt": "Can I get one spicy plate and one mild plate, please? 呢句即係點？",
       "choices": [
-        "可唔可以要一碟辣、一碟唔辣？",
-        "加碟白飯大概十五分鐘，廚房而家出",
+        "可唔可以要一碟辣、一碟唔太辣？",
+        "加碟白飯大概十五分鐘",
         "可唔可以加碟白飯？要幾耐？"
       ],
       "answer": 0
@@ -207,7 +207,7 @@
       "prompt": "Can I add a side of rice? How long will it take? 呢句即係點？",
       "choices": [
         "特餐係烤魚。廚師推薦",
-        "可以。唔辣嗰碟係豆腐，辣嗰碟係蝦",
+        "可以。唔太辣嗰碟係豆腐，辣嗰碟係蝦",
         "可唔可以加碟白飯？要幾耐？"
       ],
       "answer": 2
@@ -228,7 +228,7 @@
     {
       "pattern": "Yes. The mild plate is tofu, and the spicy ___ is prawns.",
       "example": "Yes. The mild plate is tofu, and the spicy dish is prawns.",
-      "glossYue": "可以。唔辣嗰碟係豆腐，辣嗰碟係蝦。",
+      "glossYue": "可以。唔太辣嗰碟係豆腐，辣嗰碟係蝦。",
       "answer": "dish",
       "choices": [
         "dish",
@@ -239,7 +239,7 @@
     {
       "pattern": "Yes. Rice on the side takes about fifteen minutes from the ___.",
       "example": "Rice on the side takes about fifteen minutes from the kitchen.",
-      "glossYue": "可以。加碟白飯大概十五分鐘，廚房而家出。",
+      "glossYue": "可以。加碟白飯大概十五分鐘。",
       "answer": "kitchen",
       "choices": [
         "kitchen",
@@ -251,7 +251,7 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想講「可唔可以要一碟辣、一碟唔辣？」，你點講？",
+      "promptYue": "你想講「可唔可以要一碟辣、一碟唔太辣？」，你點講？",
       "choices": [
         "What is today's special? Does the chef recommend that dish?",
         "Can I get one spicy plate and one mild plate, please?",
@@ -331,7 +331,7 @@
       "prompt": "What is today's special? Does the chef recommend that dish? 呢句入面，邊個意思先啱？",
       "choices": [
         "廚師",
-        "唔辣",
+        "唔太辣",
         "白飯"
       ],
       "answer": 0

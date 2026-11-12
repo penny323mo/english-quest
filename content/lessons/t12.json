@@ -102,7 +102,7 @@
       "speaker": "tom",
       "speakerLabel": "Tom",
       "text": "What wifi password can I use while I wait for the room?",
-      "glossYue": "我入到房間可以用嘅無線網絡密碼係咩？",
+      "glossYue": "等房間嗰陣，我可以用咩無線網絡密碼？",
       "audio": "assets/audio/lines/t12-l5.mp3",
       "audioSlow": "assets/audio/lines/t12-l5-slow.mp3",
       "say": "What wifi password can I use while I wait for the room?",
@@ -146,7 +146,7 @@
     {
       "prompt": "Hello. I have a reservation. Is the room ready? 呢句即係點？",
       "choices": [
-        "有訂房，希望房間就快準備好",
+        "你好。我有訂房。房間準備好未？",
         "行李已經拎走",
         "密碼喺房入面"
       ],
