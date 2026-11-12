@@ -216,13 +216,25 @@
         "If",
         "I",
         "decide",
-        "today"
+        "today,",
+        "is",
+        "the",
+        "deposit",
+        "one",
+        "month's",
+        "rent?"
       ],
       "answer": [
         "If",
         "I",
         "decide",
-        "today"
+        "today,",
+        "is",
+        "the",
+        "deposit",
+        "one",
+        "month's",
+        "rent?"
       ]
     }
   ],
@@ -250,27 +262,27 @@
         "line": "The monthly rent is eighteen thousand dollars, and water is included.",
         "audio": "assets/audio/lines/d3-l3.mp3",
         "audioSlow": "assets/audio/lines/d3-l3-slow.mp3",
-        "expect": "The deposit is one month, and the rent stays fixed if you sign.",
+        "expect": "If I decide today, is the deposit one month's rent?",
         "keywords": [
           "deposit",
-          "sign"
+          "rent"
         ],
-        "modelAudio": "assets/audio/lines/d3-l5.mp3",
-        "modelSlow": "assets/audio/lines/d3-l5-slow.mp3"
+        "modelAudio": "assets/audio/lines/d3-l4.mp3",
+        "modelSlow": "assets/audio/lines/d3-l4-slow.mp3"
       },
       {
         "partner": "Lea",
         "partnerId": "lea",
-        "line": "I will sign the lease and pay the agency fee this afternoon.",
-        "audio": "assets/audio/lines/d3-l6.mp3",
-        "audioSlow": "assets/audio/lines/d3-l6-slow.mp3",
-        "expect": "Once you sign the lease, the landlord will give you the keys.",
+        "line": "The deposit is one month, and the rent stays fixed if you sign.",
+        "audio": "assets/audio/lines/d3-l5.mp3",
+        "audioSlow": "assets/audio/lines/d3-l5-slow.mp3",
+        "expect": "I will sign the lease and pay the agency fee this afternoon.",
         "keywords": [
           "lease",
-          "landlord"
+          "fee"
         ],
-        "modelAudio": "assets/audio/lines/d3-l7.mp3",
-        "modelSlow": "assets/audio/lines/d3-l7-slow.mp3"
+        "modelAudio": "assets/audio/lines/d3-l6.mp3",
+        "modelSlow": "assets/audio/lines/d3-l6-slow.mp3"
       }
     ]
   },

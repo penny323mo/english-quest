@@ -222,12 +222,18 @@
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "start",
-        "sincere"
+        "Start",
+        "with",
+        "a",
+        "sincere",
+        "apology."
       ],
       "answer": [
-        "start",
-        "sincere"
+        "Start",
+        "with",
+        "a",
+        "sincere",
+        "apology."
       ]
     }
   ],
@@ -304,7 +310,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Start with a sincere apology. Then explain the delay was at our warehouse. 呢句入面，邊個意思先啱？",
+      "prompt": "Start with a sincere apology. Then explain the delay was at our warehouse. 呢句入面，apology 係咩意思？",
       "choices": [
         "道歉",
         "延遲",
@@ -314,7 +320,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "Start with a sincere apology. Then explain the delay was at our warehouse. 呢句入面，邊個意思先啱？",
+      "prompt": "Start with a sincere apology. Then explain the delay was at our warehouse. 呢句入面，sincere 係咩意思？",
       "choices": [
         "延遲",
         "退款",

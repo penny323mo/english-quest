@@ -201,7 +201,7 @@
   ],
   "shadow": {
     "lineId": "w1-l2",
-    "hint": "I speak to Mei regarding appointment, and may I ask if she is available?"
+    "hint": "I'm calling about an appointment with Mei. Is she free?"
   },
   "build": [
     {
@@ -241,7 +241,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "I speak to Mei regarding appointment, and may I ask if she is available?",
+        "line": "I'm calling about an appointment with Mei. Is she free?",
         "audio": "assets/audio/lines/w1-l2.mp3",
         "audioSlow": "assets/audio/lines/w1-l2-slow.mp3",
         "expect": "She is not available, so please hold while I try the other line.",

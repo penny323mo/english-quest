@@ -25,6 +25,7 @@ import type { BuildOrder, Lesson, LexItem, QuizItem } from "./types";
 import { BEAT_LABELS } from "./beats";
 import { clampResumePoint, itemCounts, quizResumePoint } from "./resume.mjs";
 import { seededOrder } from "./choice-order.js";
+import { orderTokenIndices } from "./order-bank.js";
 
 const BEATS = BEAT_LABELS;
 
@@ -508,6 +509,10 @@ function BuildStep({
 
 function OrderBuild({ item, onNext }: { item: BuildOrder; onNext: () => void }) {
   const learner = useStore((s) => s.profile?.name);
+  const [seed] = useState(() => Math.floor(Math.random() * 0x7fffffff));
+  const order = orderTokenIndices(item.tokens, item.answer, seed,
+    item.tokens.map((token) => fillLearner(token, learner)),
+    item.answer.map((token) => fillLearner(token, learner)));
   const [used, setUsed] = useState<number[]>([]);
   const [done, setDone] = useState(false);
   const built = used.map((i) => item.tokens[i] || "");
@@ -528,10 +533,10 @@ function OrderBuild({ item, onNext }: { item: BuildOrder; onNext: () => void }) 
         ))}
       </div>
       <div className="tokens">
-        {item.tokens.map((token, i) => (
+        {order.map((i) => (
           used.includes(i) ? null : (
             <button key={i} className="token" type="button" disabled={done} onClick={() => setUsed([...used, i])}>
-              {fillLearner(token, learner)}
+              {fillLearner(item.tokens[i], learner)}
             </button>
           )
         ))}
@@ -731,7 +736,9 @@ function Recap({ lesson, score, answered, onNext }: { lesson: Lesson; score: num
       </div>
       <img className="mascot cheer" src={asset("assets/art/mascot-cheer.webp")} alt="小燈" width={96} height={96} />
       <p className="who">搞掂</p>
+      <p className="fine">今課練習目標</p>
       <h2>{lesson.canDoYue}</h2>
+      <p className="note">完成課堂流程唔代表口語同發音已達標。可以再唔睇提示講一次，確認自己熟唔熟。</p>
       <p className="lede">{tally}。答錯唔會扣任何嘢，生字已經排咗入練習。</p>
       <div className="pills recap-pills">
         <span className="pill">{tally}</span>
@@ -763,7 +770,7 @@ function NextBeat({ lesson }: { lesson: Lesson }) {
     return (
       <>
         <h2>今晚就到呢度</h2>
-        <p className="lede">呢輪九十七課你行完啦。到期嘅卡會喺練習等你。</p>
+        <p className="lede">呢條路線暫時冇下一課。你可以返路徑揀其他課，或者去練習溫習到期嘅生字卡。</p>
         <a className="btn block" href="#/">返路徑</a>
       </>
     );
