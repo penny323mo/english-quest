@@ -32,7 +32,7 @@ type Store = Persisted & {
   retrySave: () => void;
   exportSnapshot: () => string;
   previewImport: (raw: string) => { ok: true } | { ok: false; message: string };
-  applyImport: (raw: string) => { ok: true } | { ok: false; message: string };
+  applyImport: (raw: string) => Promise<{ ok: true } | { ok: false; message: string }>;
 };
 
 function todayKey(d = new Date()): string {
@@ -205,7 +205,7 @@ if (typeof document !== "undefined") {
   window.addEventListener("focus", resume);
 }
 
-async function save(data: Persisted) {
+async function save(data: Persisted): Promise<{ ok: boolean; conflict?: boolean; stale?: boolean }> {
   let result: { ok: boolean; conflict?: boolean; stale?: boolean } = { ok: false };
   try {
     result = await persistence.save(data);
@@ -213,18 +213,23 @@ async function save(data: Persisted) {
     /* persistence.save already records the failure and does not throw. */
   }
   // Queued before the last reload and dropped unwritten: nothing to report.
-  if (result.stale) return;
+  if (result.stale) return result;
   if (result.conflict) {
     // Someone else wrote first: never overwrite it. Load it and say so.
     const notice = persistence.status;
     await takeOver();
     // Only claim the latest copy is loaded if the reload worked; otherwise keep its own status.
     if (persistence.status.kind === "ok") useStore.setState({ saveStatus: notice });
-    return;
+    return result;
   }
   const status = persistence.status;
   if (useStore.getState().saveStatus !== status) useStore.setState({ saveStatus: status });
+  return result;
 }
+
+// The subscriber records the promise synchronously with each state change. Import
+// waits for its own write, so its success message is safe to reload immediately.
+let latestSave: ReturnType<typeof save> = Promise.resolve({ ok: false });
 
 export const useStore = create<Store>((set) => ({
   ready: false,
@@ -326,7 +331,7 @@ export const useStore = create<Store>((set) => ({
       return { ok: false, message: err instanceof Error ? err.message : "呢份檔案讀唔到。" };
     }
   },
-  applyImport: (raw) => {
+  applyImport: async (raw): Promise<{ ok: true } | { ok: false; message: string }> => {
     const s = useStore.getState();
     if (!s.writable) return { ok: false, message: "而家讀唔到舊進度，未可以覆蓋。" };
     try {
@@ -339,6 +344,16 @@ export const useStore = create<Store>((set) => ({
         daily: data.daily ?? null,
         schemaVersion: data.schemaVersion,
       });
+      const result = await latestSave;
+      if (!result.ok) {
+        const status = useStore.getState().saveStatus;
+        return {
+          ok: false,
+          message: result.conflict || result.stale
+            ? "進度已經由另一個分頁更新，今次匯入未完成。"
+            : `匯入進度未能儲存。${status.kind === "ok" ? "請再試。" : status.reason}`,
+        };
+      }
       return { ok: true };
     } catch (err) {
       return { ok: false, message: err instanceof Error ? err.message : "呢份檔案讀唔到。" };
@@ -357,7 +372,7 @@ useStore.subscribe((state, prev) => {
   ) {
     return;
   }
-  void save({
+  latestSave = save({
     schemaVersion: state.schemaVersion,
     profile: state.profile,
     progress: state.progress,

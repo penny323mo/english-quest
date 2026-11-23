@@ -50,6 +50,46 @@ function closeTabs() {
 const profile = { name: "Penny", goal: "foundation", minutes: 15, level: "new", jyutping: false, sound: true, xp: 0, streak: 0, lastActive: null };
 const record = (extra = {}) => ({ schemaVersion: 3, profile, progress: {}, cards: {}, lessonCursor: null, daily: null, ...extra });
 
+test("import success waits until the progress transaction finishes", async (t) => {
+  t.after(closeTabs);
+  const db = freshDb(record());
+  const tab = await openTab();
+  let release;
+  db.gate = new Promise((resolve) => { release = resolve; });
+  t.after(() => release());
+  let finished = false;
+  const importing = Promise.resolve(tab.useStore.getState().applyImport(JSON.stringify(record({ profile: { ...profile, name: "Ling" } })))).then((result) => {
+    finished = true;
+    return result;
+  });
+  await settle();
+  assert.equal(finished, false, "must not report success while the write is held");
+  assert.equal(db.box.get("state").profile.name, "Penny");
+  release();
+  assert.deepEqual(await importing, { ok: true });
+  assert.equal(db.box.get("state").profile.name, "Ling");
+});
+
+test("an import in memory mode cannot claim to be saved on this device", async (t) => {
+  t.after(closeTabs);
+  noDb();
+  const tab = await openTab();
+  const result = await tab.useStore.getState().applyImport(JSON.stringify(record()));
+  assert.equal(result.ok, false);
+  assert.match(result.message, /儲存/);
+});
+
+test("an import refused by a concurrent write reports failure and keeps the newer copy", async (t) => {
+  t.after(closeTabs);
+  const db = freshDb(record());
+  const tab = await openTab();
+  db.box.set("state", record({ profile: { ...profile, name: "Newer" }, rev: 1 }));
+  const result = await tab.useStore.getState().applyImport(JSON.stringify(record({ profile: { ...profile, name: "Imported" } })));
+  assert.equal(result.ok, false);
+  assert.equal(db.box.get("state").profile.name, "Newer");
+  assert.equal(tab.useStore.getState().profile.name, "Newer");
+});
+
 test("saves queued before a conflict are dropped once the tab reloads", async (t) => {
   t.after(closeTabs);
   const db = freshDb(record());
