@@ -104,7 +104,9 @@ self.addEventListener("activate", (event) => {
     await self.clients.claim();
     if (removedShell) {
       const windows = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
-      for (const client of windows) void client.navigate(client.url);
+      for (const client of windows) {
+        if (client.url.startsWith(self.registration.scope)) void client.navigate(client.url);
+      }
     }
     void precacheInBackground();
     // Keep the offline copy of the page in step with this worker's assets.

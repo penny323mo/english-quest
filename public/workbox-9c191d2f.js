@@ -39,7 +39,7 @@
     if (!self.clients || typeof self.clients.matchAll !== "function") return Promise.resolve();
     return self.clients.matchAll({ type: "window", includeUncontrolled: true }).then(function (list) {
       return Promise.all(list.map(function (client) {
-        if (client && typeof client.navigate === "function") return client.navigate(client.url);
+        if (SCOPE && client && typeof client.url === "string" && client.url.indexOf(SCOPE) === 0 && typeof client.navigate === "function") return client.navigate(client.url);
         return undefined;
       }));
     });
