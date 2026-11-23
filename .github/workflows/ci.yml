@@ -48,6 +48,8 @@ jobs:
           if-no-files-found: warn
       - name: Two tabs never overwrite each other's progress (WebKit and Chromium)
         run: node e2e/two-tabs.mjs
+      - name: Review cards appear when due without reloading (WebKit and Chromium)
+        run: node e2e/review-time.mjs
       - name: The microphone is never left on (WebKit and Chromium)
         run: node e2e/mic.mjs
       - name: Only one sound plays at a time (WebKit and Chromium)
