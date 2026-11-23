@@ -485,21 +485,43 @@ export function Settings() {
   const exportSnapshot = useStore((s) => s.exportSnapshot);
   const [armed, setArmed] = useState(false);
   const [importNote, setImportNote] = useState("");
-  const [pendingImport, setPendingImport] = useState<string | null>(null);
+  const [pendingImport, setPendingImport] = useState<{ text: string; name: string } | null>(null);
+  const [readingImport, setReadingImport] = useState(false);
   const [importing, setImporting] = useState(false);
+  const importRead = useRef(0);
   const fileRef = useRef<HTMLInputElement>(null);
+  useEffect(() => () => { importRead.current += 1; }, []);
   if (!profile) return null;
 
   async function onPick(file: File) {
-    const text = await file.text();
-    const preview = previewImport(text);
-    if (!preview.ok) {
-      setPendingImport(null);
-      setImportNote(preview.message);
-      return;
+    if (importing) return;
+    const request = ++importRead.current;
+    // An old confirmation must disappear as soon as another file is selected.
+    setPendingImport(null);
+    setReadingImport(true);
+    setImportNote("讀緊檔案…");
+    try {
+      const text = await file.text();
+      if (request !== importRead.current) return;
+      const preview = previewImport(text);
+      if (!preview.ok) {
+        setImportNote(preview.message);
+        return;
+      }
+      setImportNote("");
+      setPendingImport({ text, name: file.name });
+    } catch {
+      if (request === importRead.current) setImportNote("讀唔到呢個檔案，未有匯入。請再揀一次。");
+    } finally {
+      if (request === importRead.current) setReadingImport(false);
     }
+  }
+
+  function cancelImport() {
+    importRead.current += 1;
+    setReadingImport(false);
+    setPendingImport(null);
     setImportNote("");
-    setPendingImport(text);
   }
 
   function onExport() {
@@ -555,6 +577,7 @@ export function Settings() {
         ref={fileRef}
         type="file"
         accept="application/json,.json"
+        disabled={importing}
         hidden
         onChange={(e) => {
           const file = e.target.files?.[0];
@@ -563,30 +586,35 @@ export function Settings() {
         }}
       />
       <button className="btn ghost block" type="button" disabled={importing} onClick={() => fileRef.current?.click()}>匯入進度</button>
-      {importNote && <p className="note">{importNote}</p>}
-      {pendingImport && (
+      {importNote && <p className="note" role="status">{importNote}</p>}
+      {(pendingImport || readingImport) && (
         <div className="stack">
-          <p className="note">匯入會覆蓋而家嘅進度，課同重溫卡都會換走。</p>
-          <button
-            className="btn block"
-            type="button"
-            disabled={importing}
-            onClick={async () => {
-              if (importing) return;
-              setImporting(true);
-              setImportNote("正在儲存匯入進度…");
-              try {
-                const result = await applyImport(pendingImport);
-                setPendingImport(null);
-                setImportNote(result.ok ? "已匯入呢部機。" : result.message);
-              } finally {
-                setImporting(false);
-              }
-            }}
-          >
-            確定匯入
-          </button>
-          <button className="btn ghost block" type="button" disabled={importing} onClick={() => setPendingImport(null)}>取消</button>
+          {pendingImport && (
+            <>
+              <p className="fine">檔案：{pendingImport.name}</p>
+              <p className="note">匯入會覆蓋而家嘅進度，課同重溫卡都會換走。</p>
+              <button
+                className="btn block"
+                type="button"
+                disabled={importing}
+                onClick={async () => {
+                  if (importing) return;
+                  setImporting(true);
+                  setImportNote("正在儲存匯入進度…");
+                  try {
+                    const result = await applyImport(pendingImport.text);
+                    setPendingImport(null);
+                    setImportNote(result.ok ? "已匯入呢部機。" : result.message);
+                  } finally {
+                    setImporting(false);
+                  }
+                }}
+              >
+                確定匯入
+              </button>
+            </>
+          )}
+          <button className="btn ghost block" type="button" disabled={importing} onClick={cancelImport}>取消</button>
         </div>
       )}
       {!armed ? (
