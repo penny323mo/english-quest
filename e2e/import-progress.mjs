@@ -14,9 +14,9 @@ async function exported(page) {
   return JSON.parse(await fs.readFile(await (await download).path(), "utf8"));
 }
 
-async function pick(page, data) {
+async function pick(page, data, name = "progress.json") {
   await page.locator('input[type="file"]').setInputFiles({
-    name: "progress.json", mimeType: "application/json", buffer: Buffer.from(JSON.stringify(data)),
+    name, mimeType: "application/json", buffer: Buffer.from(JSON.stringify(data)),
   });
 }
 
@@ -73,8 +73,75 @@ async function run(browserType, name) {
     await page.reload();
     await page.getByRole("heading", { name: "設定" }).waitFor();
     assert.deepEqual(await exported(page), { ...backup, profile: legacy.profile });
-    assert.deepEqual(errors, []);
     console.log(`${name}: complete legacy backups still restore and persist`);
+
+    // Cloud-backed files may read slowly or fail. Control only File.text(), not
+    // the app's validation, confirmation, store or database writes.
+    await page.evaluate(() => {
+      const read = File.prototype.text;
+      const held = new Map();
+      window.__finishImportRead = async (name, fail = false) => {
+        const entry = held.get(name);
+        const text = await entry.text;
+        if (fail) entry.reject(new DOMException("unavailable", "NotReadableError"));
+        else entry.resolve(text);
+        held.delete(name);
+      };
+      File.prototype.text = function () {
+        if (this.name.startsWith("fail-")) return Promise.reject(new DOMException("unavailable", "NotReadableError"));
+        if (!this.name.startsWith("slow-")) return read.call(this);
+        const text = read.call(this);
+        return new Promise((resolve, reject) => held.set(this.name, { text, resolve, reject }));
+      };
+    });
+    const withName = (name) => ({ ...backup, profile: { ...backup.profile, name } });
+    const finishRead = async (file, fail = false) => {
+      await page.evaluate(([file, fail]) => window.__finishImportRead(file, fail), [file, fail]);
+      // Let both the settled read handler and React's next paint complete.
+      await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+    };
+
+    await pick(page, withName("Old choice"), "slow-old.json");
+    await pick(page, withName("Newest choice"), "newest.json");
+    await confirm.waitFor();
+    await finishRead("slow-old.json");
+    await page.getByText("檔案：newest.json", { exact: true }).waitFor();
+    await confirm.click();
+    await page.getByText("已匯入呢部機。", { exact: true }).waitFor();
+    assert.deepEqual(await exported(page), withName("Newest choice"), "a late first read cannot replace the newer selection");
+    console.log(`${name}: only the most recently selected file can be imported`);
+
+    await pick(page, withName("Not selected"));
+    await confirm.waitFor();
+    await pick(page, withName("Unreadable"), "fail-unavailable.json");
+    await page.getByText(/讀唔到呢個檔案/).waitFor();
+    await confirm.waitFor({ state: "hidden" });
+    assert.deepEqual(await exported(page), withName("Newest choice"));
+    console.log(`${name}: read failures clear the old confirmation and keep progress`);
+
+    await pick(page, withName("Not selected"));
+    await confirm.waitFor();
+    await pick(page, withName("Cancelled"), "slow-cancelled.json");
+    await confirm.waitFor({ state: "hidden" });
+    await page.getByText("讀緊檔案…", { exact: true }).waitFor();
+    await page.getByRole("button", { name: "取消", exact: true }).click();
+    await finishRead("slow-cancelled.json");
+    assert.equal(await confirm.count(), 0, "a cancelled read cannot reopen confirmation");
+    assert.deepEqual(await exported(page), withName("Newest choice"));
+    console.log(`${name}: starting another read clears the old file; cancellation ignores its late result`);
+
+    await pick(page, withName("Late failure"), "slow-failed.json");
+    await pick(page, withName("Final choice"), "final.json");
+    await confirm.waitFor();
+    await finishRead("slow-failed.json", true);
+    assert.equal(await page.getByText(/讀唔到呢個檔案/).count(), 0, "a stale read error cannot replace the current selection");
+    await confirm.click();
+    await page.getByText("已匯入呢部機。", { exact: true }).waitFor();
+    await page.reload();
+    await page.getByRole("heading", { name: "設定" }).waitFor();
+    assert.deepEqual(await exported(page), withName("Final choice"));
+    assert.deepEqual(errors, []);
+    console.log(`${name}: an old read failure cannot disturb a newer valid backup`);
     await context.close();
   } finally { await browser.close(); }
 }
