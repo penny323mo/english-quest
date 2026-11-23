@@ -23,6 +23,8 @@ const THEIRS = [
 ];
 const REG_OURS = [SCOPE, `${SCOPE}sub/`];
 const REG_THEIRS = [`${HOST}/other-app/`, `${HOST}/english-quest-2/`, `${HOST}/`];
+const PAGE_OURS = [SCOPE, `${SCOPE}#/settings`, `${SCOPE}sub/page.html`];
+const PAGE_THEIRS = [...REG_THEIRS, `${HOST}/other-app/?return=${SCOPE}`, "https://elsewhere.example/english-quest/", "about:blank"];
 const KILL_SWITCHES = ["public/registerSW.js", "public/workbox-835c8c05.js", "public/workbox-9c191d2f.js"];
 
 test("the rules: own caches and registrations only", () => {
@@ -50,14 +52,18 @@ function fakeRegistrations() {
 const settle = () => new Promise((resolve) => setTimeout(resolve, 20));
 
 for (const file of KILL_SWITCHES) {
-  test(`${file} as a worker deletes only English Quest's caches`, async () => {
+  test(`${file} as a worker deletes own caches and reloads only English Quest pages`, async () => {
     const caches = fakeCaches();
+    const navigated = [];
+    const clients = [...PAGE_OURS, ...PAGE_THEIRS].map((url) => ({
+      url, navigate: async (next) => { navigated.push(next); },
+    }));
     const listeners = {};
     class ServiceWorkerGlobalScope {}
     const self = Object.assign(new ServiceWorkerGlobalScope(), {
       caches,
       registration: { scope: SCOPE, unregister: async () => true },
-      clients: { claim: async () => undefined, matchAll: async () => [] },
+      clients: { claim: async () => undefined, matchAll: async () => clients },
       skipWaiting() {},
       addEventListener(type, fn) { listeners[type] = fn; },
       location: { href: `${SCOPE}sw.js` },
@@ -67,6 +73,7 @@ for (const file of KILL_SWITCHES) {
     listeners.activate({ waitUntil(promise) { work = promise; } });
     await work;
     assert.deepEqual([...caches.names].sort(), [...THEIRS].sort());
+    assert.deepEqual(navigated.sort(), [...PAGE_OURS].sort(), "other apps must keep their open pages and unsaved work");
   });
 }
 

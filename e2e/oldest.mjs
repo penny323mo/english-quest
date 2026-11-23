@@ -63,7 +63,7 @@ self.addEventListener("fetch", (event) => {
 
 // Another project on the same github.io origin, with its own worker and caches.
 // English Quest's clean-up must leave all of it alone (review finding 3).
-const otherHtml = `<!doctype html><html><head><meta charset="utf-8"><title>other</title></head><body><p>other app</p>
+const otherHtml = `<!doctype html><html><head><meta charset="utf-8"><title>other</title></head><body><p>other app</p><input aria-label="draft">
 <script>navigator.serviceWorker.register("/other-app/sw.js", { scope: "/other-app/" });</script></body></html>`;
 const otherSw = `self.addEventListener("install", (event) => {
   event.waitUntil(Promise.all([
@@ -92,6 +92,16 @@ const types = {
 
 const server = http.createServer((req, res) => {
   const url = new URL(req.url || "/", "http://127.0.0.1");
+  if (url.pathname === "/other-draft/") {
+    res.writeHead(200, { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" });
+    res.end('<!doctype html><title>another app without a worker</title><input aria-label="draft">');
+    return;
+  }
+  if (url.pathname === "/english-quest/reload-probe.html") {
+    res.writeHead(200, { "content-type": "text/html; charset=utf-8", "cache-control": "no-store" });
+    res.end('<!doctype html><title>reload probe</title><p>English Quest reload probe</p>');
+    return;
+  }
   if (phase === "new" && url.pathname.endsWith("/sw.js")) swFetches.push(url.pathname);
   if (url.pathname === "/other-app/" || url.pathname === "/other-app/sw.js") {
     const isSw = url.pathname.endsWith("sw.js");
@@ -260,19 +270,20 @@ function isNewDocument(html) {
   return html.includes('name="eq-source"') && html.includes("eq-sw-kill") && !html.includes("完成一課就記低今日");
 }
 
-async function migrate(browserType, workbox) {
+async function migrate(browserType, workbox, keepOtherOpen = false) {
   phase = "old";
   workboxName = workbox;
   swFetches.length = 0;
   const launch = browserType.name() === "chromium" && process.env.EQ_CHROMIUM ? { executablePath: process.env.EQ_CHROMIUM } : {};
   const browser = await browserType.launch(launch);
-  const page = await browser.newPage({
+  const context = await browser.newContext({
     viewport: { width: 390, height: 844 },
     deviceScaleFactor: 2,
     isMobile: true,
     hasTouch: true,
     colorScheme: "dark",
   });
+  const page = await context.newPage();
   page.setDefaultTimeout(30000);
   page.on("console", (msg) => {
     if (msg.type() === "error") console.log("page error", msg.text());
@@ -292,6 +303,18 @@ async function migrate(browserType, workbox) {
     const have = await caches.keys();
     return Boolean(reg && reg.active) && names.every((name) => have.includes(name));
   }, OTHER_CACHES(port));
+  // Keep the original four migration cases unchanged (the other app is closed).
+  // Additional cases cover a different app with unsaved work in a live tab.
+  let otherPage;
+  let otherNavigations = 0;
+  if (keepOtherOpen) {
+    otherPage = await page.context().newPage();
+    await otherPage.goto(`http://127.0.0.1:${port}/other-app/`);
+    await otherPage.getByLabel("draft").fill("unsaved work in another app");
+    otherPage.on("request", (request) => {
+      if (request.isNavigationRequest() && request.frame() === otherPage.mainFrame()) otherNavigations += 1;
+    });
+  }
   await page.goto(origin, { waitUntil: "domcontentloaded" });
   await page.waitForFunction(() => navigator.serviceWorker.controller !== null);
   await page.getByText("完成一課就記低今日").waitFor();
@@ -390,7 +413,49 @@ async function migrate(browserType, workbox) {
       throw new Error(`${part} changed`);
     }
   }
+  if (otherPage) {
+    const draft = await otherPage.getByLabel("draft").inputValue();
+    const kept = otherNavigations === 0 && draft === "unsaved work in another app";
+    console.log(`assert ${browserType.name()} another app's open tab is not reloaded: ${kept ? "pass" : "FAIL"} navigations=${otherNavigations} draft=${JSON.stringify(draft)}`);
+    if (!kept) throw new Error("English Quest's update reloaded another app's open tab");
+  }
   await browser.close();
+}
+
+async function activateWithOtherTab(browserType) {
+  phase = "new";
+  const launch = browserType.name() === "chromium" && process.env.EQ_CHROMIUM ? { executablePath: process.env.EQ_CHROMIUM } : {};
+  const browser = await browserType.launch(launch);
+  try {
+    const context = await browser.newContext();
+    const other = await context.newPage();
+    await other.goto(`http://127.0.0.1:${port}/other-draft/`);
+    await other.getByLabel("draft").fill("unsaved work");
+    let otherNavigations = 0;
+    other.on("request", (request) => {
+      if (request.isNavigationRequest() && request.frame() === other.mainFrame()) otherNavigations += 1;
+    });
+    const own = await context.newPage();
+    await own.goto(`${origin}reload-probe.html`);
+    // Force the current worker's activation cleanup, without index.html's
+    // separate recovery script deleting the obsolete cache first.
+    await other.evaluate(() => caches.open("eq-obsolete-reload-test"));
+    const ownReload = own.waitForEvent("framenavigated", { predicate: frame => frame === own.mainFrame() });
+    await other.evaluate(async () => {
+      const reg = await navigator.serviceWorker.register("/english-quest/sw.js", { scope: "/english-quest/" });
+      const worker = reg.installing || reg.waiting || reg.active;
+      if (worker.state !== "activated") await new Promise(resolve => worker.addEventListener("statechange", () => {
+        if (worker.state === "activated") resolve();
+      }));
+    });
+    await ownReload;
+    const draft = await other.getByLabel("draft").inputValue();
+    const kept = otherNavigations === 0 && draft === "unsaved work";
+    console.log(`assert ${browserType.name()} current worker reloads only its own tab: ${kept ? "pass" : "FAIL"} navigations=${otherNavigations} draft=${JSON.stringify(draft)}`);
+    if (!kept) throw new Error("current worker reloaded another app's unsaved work");
+  } finally {
+    await browser.close();
+  }
 }
 
 try {
@@ -400,8 +465,13 @@ try {
     [chromium, HISTORICAL[0]],
     [webkit, HISTORICAL[1]],
     [chromium, HISTORICAL[1]],
-  ].filter(([browserType, workbox]) => !only || only === browserType.name() || only === `${browserType.name()}:${workbox}`);
-  for (const [browserType, workbox] of jobs) await migrate(browserType, workbox);
+    [webkit, HISTORICAL[1], true],
+    [chromium, HISTORICAL[1], true],
+  ].filter(([browserType, workbox, keepOtherOpen]) => !only || only === browserType.name() || only === `${browserType.name()}:${keepOtherOpen ? "other-tab" : workbox}`);
+  for (const [browserType, workbox, keepOtherOpen] of jobs) await migrate(browserType, workbox, keepOtherOpen);
+  for (const browserType of [webkit, chromium]) {
+    if (!only || only === browserType.name() || only === `${browserType.name()}:activation`) await activateWithOtherTab(browserType);
+  }
   console.log("oldest service workers ok");
 } finally {
   server.close();
