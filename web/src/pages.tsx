@@ -268,10 +268,32 @@ export function PathHome() {
 export function Review() {
   const cards = useStore((s) => s.cards);
   const gradeCard = useStore((s) => s.gradeCard);
-  const due = useMemo(
-    () => Object.values(cards).filter((card) => isDue(card) && lexById[card.id]).sort((a, b) => a.due.localeCompare(b.due)),
-    [cards],
-  );
+  const [clockTick, setClockTick] = useState(0);
+  const { due, nextDue } = useMemo(() => {
+    const now = new Date();
+    const available = Object.values(cards).filter((card) => lexById[card.id]);
+    return {
+      due: available.filter((card) => isDue(card, now)).sort((a, b) => a.due.localeCompare(b.due)),
+      nextDue: Math.min(...available.map((card) => Date.parse(card.due)).filter((time) => time > now.getTime())),
+    };
+  }, [cards, clockTick]);
+
+  useEffect(() => {
+    const refresh = () => setClockTick((tick) => tick + 1);
+    const onVisible = () => { if (document.visibilityState === "visible") refresh(); };
+    // Schedule the next change, rather than polling. Long FSRS intervals must not
+    // overflow setTimeout's signed 32-bit delay and turn into a busy loop.
+    const timer = Number.isFinite(nextDue)
+      ? window.setTimeout(refresh, Math.min(2 ** 31 - 1, Math.max(0, nextDue - Date.now())))
+      : undefined;
+    window.addEventListener("focus", refresh);
+    document.addEventListener("visibilitychange", onVisible);
+    return () => {
+      window.clearTimeout(timer);
+      window.removeEventListener("focus", refresh);
+      document.removeEventListener("visibilitychange", onVisible);
+    };
+  }, [nextDue, clockTick]);
   const [index, setIndex] = useState(0);
   const [show, setShow] = useState(false);
   const [done, setDone] = useState(0);
