@@ -220,6 +220,15 @@ export function importJson(raw) {
   if (!data || typeof data !== "object" || Array.isArray(data)) throw bad("呢份檔案唔係有效嘅進度。");
   const version = data.schemaVersion == null ? 1 : data.schemaVersion;
   if (typeof version !== "number" || !Number.isInteger(version)) throw bad("進度格式唔啱。");
+  // Every export, including v1, contains these three fields. Migration is lenient
+  // for stored records, but must not turn an unrelated or incomplete JSON file
+  // into empty progress that can replace the learner's real backup.
+  for (const key of ["profile", "progress", "cards"]) {
+    if (!Object.prototype.hasOwnProperty.call(data, key)) throw bad(INVALID_IMPORT);
+  }
+  for (const key of ["progress", "cards"]) {
+    if (!data[key] || typeof data[key] !== "object" || Array.isArray(data[key])) throw bad(INVALID_IMPORT);
+  }
   return checkImported(migrate(version, SCHEMA_VERSION, data));
 }
 

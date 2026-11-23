@@ -50,6 +50,8 @@ jobs:
         run: node e2e/two-tabs.mjs
       - name: Review cards appear when due without reloading (WebKit and Chromium)
         run: node e2e/review-time.mjs
+      - name: Invalid imports leave saved progress intact (WebKit and Chromium)
+        run: node e2e/import-progress.mjs
       - name: The microphone is never left on (WebKit and Chromium)
         run: node e2e/mic.mjs
       - name: Only one sound plays at a time (WebKit and Chromium)
