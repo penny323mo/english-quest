@@ -5,7 +5,7 @@
 // this device keep loading as before.
 import assert from "node:assert/strict";
 import test from "node:test";
-import { SCHEMA_VERSION, createPersistence, exportJson, importJson } from "../web/src/persist.mjs";
+import { SCHEMA_VERSION, createPersistence, emptyPersisted, exportJson, importJson, migrate } from "../web/src/persist.mjs";
 
 const card = (id, extra = {}) => ({
   id,
@@ -43,6 +43,43 @@ test("a real export imports unchanged, including a brand-new card", () => {
   assert.deepEqual(back.progress, good.progress);
   assert.equal(back.profile.xp, 120);
   assert.deepEqual(importJson(exportJson(back)), back);
+});
+
+for (const [label, data] of [
+  ["an empty JSON object", {}],
+  ["an unrelated settings file", { theme: "dark" }],
+  ["only a version number", { schemaVersion: SCHEMA_VERSION }],
+  ...["profile", "progress", "cards"].map((key) => {
+    const partial = structuredClone(good);
+    delete partial[key];
+    return [`a backup missing ${key}`, partial];
+  }),
+  ["null lesson progress", { ...good, progress: null }],
+  ["null review cards", { ...good, cards: null }],
+]) {
+  test(`refused before migration: ${label}`, () => {
+    assert.throws(() => importJson(JSON.stringify(data)), (err) => err.name === "ProgressError" && /冇覆蓋/.test(err.message));
+  });
+}
+
+test("complete legacy exports still import without optional newer fields", () => {
+  const legacy = { profile: good.profile, progress: good.progress, cards: good.cards };
+  for (const schemaVersion of [undefined, 1, 2, SCHEMA_VERSION]) {
+    const back = importJson(JSON.stringify({ ...legacy, schemaVersion }));
+    assert.deepEqual(back.profile, good.profile);
+    assert.deepEqual(back.progress, good.progress);
+    assert.deepEqual(back.cards, good.cards);
+    assert.equal(back.lessonCursor, null);
+    assert.equal(back.daily, null);
+  }
+});
+
+test("an explicit empty export remains valid, unlike an unrelated empty object", () => {
+  assert.deepEqual(importJson(exportJson(emptyPersisted())), emptyPersisted());
+});
+
+test("saved-record migration still supplies defaults for missing fields", () => {
+  assert.deepEqual(migrate(1, SCHEMA_VERSION, {}), emptyPersisted());
 });
 
 const invalid = {

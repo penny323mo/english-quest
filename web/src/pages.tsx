@@ -486,6 +486,7 @@ export function Settings() {
   const [armed, setArmed] = useState(false);
   const [importNote, setImportNote] = useState("");
   const [pendingImport, setPendingImport] = useState<string | null>(null);
+  const [importing, setImporting] = useState(false);
   const fileRef = useRef<HTMLInputElement>(null);
   if (!profile) return null;
 
@@ -561,7 +562,7 @@ export function Settings() {
           if (file) void onPick(file);
         }}
       />
-      <button className="btn ghost block" type="button" onClick={() => fileRef.current?.click()}>匯入進度</button>
+      <button className="btn ghost block" type="button" disabled={importing} onClick={() => fileRef.current?.click()}>匯入進度</button>
       {importNote && <p className="note">{importNote}</p>}
       {pendingImport && (
         <div className="stack">
@@ -569,15 +570,23 @@ export function Settings() {
           <button
             className="btn block"
             type="button"
-            onClick={() => {
-              const result = applyImport(pendingImport);
-              setPendingImport(null);
-              setImportNote(result.ok ? "已匯入呢部機。" : result.message);
+            disabled={importing}
+            onClick={async () => {
+              if (importing) return;
+              setImporting(true);
+              setImportNote("正在儲存匯入進度…");
+              try {
+                const result = await applyImport(pendingImport);
+                setPendingImport(null);
+                setImportNote(result.ok ? "已匯入呢部機。" : result.message);
+              } finally {
+                setImporting(false);
+              }
             }}
           >
             確定匯入
           </button>
-          <button className="btn ghost block" type="button" onClick={() => setPendingImport(null)}>取消</button>
+          <button className="btn ghost block" type="button" disabled={importing} onClick={() => setPendingImport(null)}>取消</button>
         </div>
       )}
       {!armed ? (
