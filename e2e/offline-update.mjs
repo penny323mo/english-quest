@@ -128,6 +128,18 @@ try {
       await p.goto(origin);
       await offline(2);
       console.log(engine.name(), "old and new boot script and audio verified offline after recovery, including a staged replacement recording");
+      await p.evaluate(async () => {
+        for (const name of await caches.keys()) await caches.delete(name);
+      });
+      await p.reload({ waitUntil: "domcontentloaded" });
+      const retry = p.getByRole("button", { name: "重新連線後再試" });
+      await retry.waitFor();
+      disconnected = false;
+      await retry.click();
+      await p.waitForFunction(() => document.body.dataset.version === "2");
+      await expectState("ready");
+      await offline(2);
+      console.log(engine.name(), "cleared storage displayed recovery, reconnected and rebuilt the offline course");
     } finally {
       await context.close();
       rmSync(profile, { recursive: true, force: true });

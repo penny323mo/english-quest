@@ -38,6 +38,15 @@ registerRoute(
       cachesImpl: caches,
       shellUrl: self.registration.scope,
       keepPage,
+      onMissingPage: () => {
+        if (pack.state === "ready") {
+          pack.state = "checking";
+          pack.completed = 0;
+          packReady = bootReady = false;
+          precacheTask = undefined;
+          savedRevisions = undefined;
+        }
+      },
       waitUntil: (promise) => (event as ExtendableEvent).waitUntil(promise),
     }),
 );
