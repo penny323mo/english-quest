@@ -28,7 +28,8 @@ const server = createServer((req, res) => {
   if (url.endsWith("/sw.js")) {
     res.setHeader("content-type", "text/javascript");
     const probeQuota = "const put = Cache.prototype.put; Cache.prototype.put = function(key,r){if(String(key).includes('clip.mp3') && self.eqQuota){self.eqQuota=false;throw new DOMException('quota','QuotaExceededError');}return put.call(this,key,r);};self.addEventListener('message',e=>{if(e.data?.type==='test-quota'){self.eqQuota=true;e.ports[0].postMessage('armed');}});";
-    return res.end(probeQuota + builtWorker.replace(manifest, JSON.stringify([{ revision: null, url: app }, {revision: String(version), url: example, integrity:"sha256-" + createHash("sha256").update("example " + version).digest("base64")}, {revision: String(version), url: audio, integrity:"sha256-" + createHash("sha256").update("clip " + version).digest("base64")}])));
+    const cacheTrace = `const logs=[];for(const name of ["keys","match","put","delete"]){ const base=Cache.prototype[name];Cache.prototype[name]=async function(...args){const ret=await base.apply(this,args);logs.push([Date.now(),name,args[0]?.url||String(args[0]||""),Array.isArray(ret)?ret.map(x=>x.url):!!ret]);return ret;};} const remove=caches.delete.bind(caches);caches.delete=async n=>{logs.push([Date.now(),"remove",n]);return remove(n);};self.addEventListener("message",e=>{if(e.data==="cache-logs")e.ports[0].postMessage(logs);});`;
+    return res.end(cacheTrace + probeQuota + builtWorker.replace(manifest, JSON.stringify([{ revision: null, url: app }, {revision: String(version), url: example, integrity:"sha256-" + createHash("sha256").update("example " + version).digest("base64")}, {revision: String(version), url: audio, integrity:"sha256-" + createHash("sha256").update("clip " + version).digest("base64")}])));
   }
   if (url.endsWith("/" + app)) {
     res.setHeader("content-type", "text/javascript");
@@ -77,7 +78,7 @@ try {
       }
       const offline = async (v) => {
         disconnected = true;
-        try {await p.reload({waitUntil:"domcontentloaded",timeout:5000});}catch(err){console.log("Network trace", JSON.stringify(trace));console.log(await p.evaluate(async () => {const store={};for(const n of await caches.keys())store[n]=(await(await caches.open(n)).keys()).map(r=>r.url);return [document.readyState,document.body?.outerHTML,store,!!navigator.serviceWorker.controller]}));throw err}
+        try {await p.reload({waitUntil:"domcontentloaded",timeout:5000});}catch(err){console.log("Network trace", JSON.stringify(trace));console.log("Worker cache history", JSON.stringify(await p.evaluate(()=>new Promise(r=>{const ch=new MessageChannel();ch.port1.onmessage=e=>r(e.data);navigator.serviceWorker.controller.postMessage("cache-logs",[ch.port2]);}))));console.log(await p.evaluate(async () => {const store={};for(const n of await caches.keys())store[n]=(await(await caches.open(n)).keys()).map(r=>r.url);return [document.readyState,document.body?.outerHTML,store,!!navigator.serviceWorker.controller]}));throw err}
         try {
           await p.waitForFunction(v => document.body.dataset.version === String(v), v, { timeout: 5000 });
         } catch (error) {
