@@ -19,6 +19,7 @@ type Store = Persisted & {
   completeLesson: (id: string, xp: number) => void;
   setLessonCursor: (cursor: LessonCursor | null) => void;
   armResume: () => void;
+  restartLesson: (id: string) => void;
   enqueueLemmas: (ids: string[]) => void;
   gradeCard: (id: string, rating: Grade) => void;
   touchToday: () => void;
@@ -260,6 +261,9 @@ export const useStore = create<Store>((set) => ({
     }),
   setLessonCursor: (cursor) => set((s) => (s.writable ? { lessonCursor: cursor } : s)),
   armResume: () => set({ resumeArmed: true }),
+  restartLesson: (id) => set((s) => s.writable
+    ? { resumeArmed: false, lessonCursor: { lessonId: id, atHook: true, beat: 1, sub: 0, quizScore: 0, quizAnswered: 0 } }
+    : s),
   enqueueLemmas: (ids) =>
     set((s) => {
       if (!s.writable) return s;

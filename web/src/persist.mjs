@@ -95,7 +95,10 @@ function normalizeCursor(cursor) {
   if (!Number.isInteger(quizScore) || quizScore < 0 || quizScore > 40) throw bad("進度格式唔啱。");
   if (!Number.isInteger(quizAnswered) || quizAnswered < 0 || quizAnswered > 40) throw bad("進度格式唔啱。");
   if (quizScore > quizAnswered) throw bad("進度格式唔啱。");
-  return { lessonId: cursor.lessonId, beat, sub, quizScore, quizAnswered };
+  const point = { lessonId: cursor.lessonId, beat, sub, quizScore, quizAnswered };
+  // Older v3 readers accept beat 1 and ignore the optional scene marker.
+  if (cursor.atHook === true && beat === 1 && sub === 0 && quizAnswered === 0) point.atHook = true;
+  return point;
 }
 
 function stamp(data) {

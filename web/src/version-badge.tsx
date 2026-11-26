@@ -52,7 +52,7 @@ export function VersionBadge({ place }: { place: "tabs" | "screen" }) {
 
   // Month-day and time is enough to tell builds apart; the full date is in the tooltip.
   const full = `${buildLabel(OWN.time)} · ${OWN.sha}`;
-  const label = full.slice(5);
+  const label = `v${OWN.version} · ${full.slice(5)}`;
   if (state === "newer" && server) {
     return (
       <button
@@ -67,7 +67,7 @@ export function VersionBadge({ place }: { place: "tabs" | "screen" }) {
     );
   }
   return (
-    <span className={`version-badge at-${place}`} data-version={state} title={`版本 ${full}（澳門時間建立）`}>
+    <span className={`version-badge at-${place}`} data-version={state} title={`版本 ${OWN.version} · ${full}（澳門時間建立）`}>
       {label}
       {state === "latest" ? <span className="ok"> · 最新</span> : null}
     </span>

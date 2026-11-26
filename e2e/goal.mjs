@@ -12,7 +12,7 @@ import { chromium, webkit } from "playwright";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
-const shots = process.env.EQ_SHOTS || "/opt/cursor/artifacts/screenshots";
+const shots = process.env.EQ_SHOTS || path.join(root, "daily-shots");
 fs.mkdirSync(shots, { recursive: true });
 
 if (!fs.existsSync(path.join(dist, "index.html"))) {
@@ -240,6 +240,10 @@ async function runBrowser(browserType, browserName) {
     check("switch: F1 still open", travel.f1Open);
     await page.getByRole("link", { name: "我" }).click();
     await page.getByRole("link", { name: "設定" }).click();
+    await page.goto(`${origin}#/lesson/T1`);
+    await page.getByRole("button", { name: "入去場景" }).click();
+    await page.getByRole("button", { name: "去聽" }).waitFor();
+    await page.goto(`${origin}#/settings`);
     await page.getByRole("radio", { name: /打好基礎/ }).click();
     await page.getByRole("link", { name: "返我" }).click();
     await page.getByRole("link", { name: "路徑" }).click();
@@ -248,6 +252,17 @@ async function runBrowser(browserType, browserName) {
     check("switch: foundation 今日 is F1", foundation.today === "F1", foundation.today);
     check("switch: no reload", (await page.evaluate(() => window.__noReload)) === "kept");
     await page.screenshot({ path: path.join(shots, `goal-${tag}-switch-foundation.png`) });
+    await page.getByRole("button", { name: "重新開始" }).click();
+    const hook = page.getByRole("button", { name: "入去場景" });
+    await hook.waitFor({ timeout: 5000 });
+    await page.reload();
+    await hook.click();
+    await page.getByRole("button", { name: "去聽" }).click();
+    await page.getByRole("link", { name: "關閉" }).click();
+    await page.locator('a[data-lesson="T1"]').click();
+    await page.getByRole("button", { name: "重新開始" }).click();
+    await hook.waitFor();
+    check("restarting T1 from either entry keeps access after changing goal", true);
     await context.close();
   }
 

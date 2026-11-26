@@ -6,7 +6,7 @@ import { webkit } from "playwright";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
-const shots = "/opt/cursor/artifacts/screenshots";
+const shots = process.env.EQ_SHOTS || path.join(root, "daily-shots");
 fs.mkdirSync(shots, { recursive: true });
 
 const BANNED = ["路線", "詞庫", "未開"];

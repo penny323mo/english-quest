@@ -5,6 +5,7 @@ export function navigateNetworkFirst(
     fetchImpl: typeof fetch;
     cachesImpl: CacheStorage;
     shellUrl: string;
+    keepPage?: (page: Response) => Promise<void>;
     waitUntil?: (promise: Promise<unknown>) => void;
   },
 ): Promise<Response>;

@@ -25,7 +25,7 @@ function isHtml(response) {
  * @param {{ fetchImpl: typeof fetch, cachesImpl: CacheStorage, shellUrl: string, waitUntil?: (p: Promise<unknown>) => void }} deps
  * @returns {Promise<Response>}
  */
-export async function navigateNetworkFirst(request, { fetchImpl, cachesImpl, shellUrl, waitUntil }) {
+export async function navigateNetworkFirst(request, { fetchImpl, cachesImpl, shellUrl, waitUntil, keepPage }) {
   let response;
   try {
     response = await fetchImpl(request.url, { cache: "no-cache", credentials: "same-origin", redirect: "follow" });
@@ -38,7 +38,7 @@ export async function navigateNetworkFirst(request, { fetchImpl, cachesImpl, she
   response = await unredirect(response);
   if (response.ok && isHtml(response)) {
     const copy = response.clone();
-    const store = cachesImpl.open(SHELL_CACHE).then((cache) => cache.put(shellUrl, copy)).catch(() => undefined);
+    const store = (keepPage ? keepPage(copy) : cachesImpl.open(SHELL_CACHE).then((cache) => cache.put(shellUrl, copy))).catch(() => undefined);
     if (waitUntil) waitUntil(store);
     else await store;
   }

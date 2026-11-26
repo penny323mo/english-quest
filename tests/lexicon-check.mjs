@@ -157,14 +157,14 @@ test("piper say matches the taught jewellery and weak forms", (t) => {
   assert.match(says[4], /\[\[ə ˈteɪbəl fɚ ˈtu\]\]/);
   assert.equal(byId["the-art-vowel"].example, "The aisle seat is free.");
   assert.match(says[5], /^\[\[ðˈi\]\] aisle seat is free\./);
-  const py = "/workspace/nightly/PREP-english-app/.venv/bin/python";
-  const voice = path.join(root, "PREP", "voices", "en_US-ljspeech-medium.onnx");
+  const py = process.env.EQ_PIPER_PYTHON || "/workspace/nightly/PREP-english-app/.venv/bin/python";
+  const voice = process.env.EQ_PIPER_MODEL || path.join(root, "PREP", "voices", "en_US-ljspeech-medium.onnx");
   const script = `
 import sys
 from pathlib import Path
 from piper import PiperVoice
 root = Path(${JSON.stringify(root)})
-voice = PiperVoice.load(str(root / "PREP" / "voices" / "en_US-ljspeech-medium.onnx"))
+voice = PiperVoice.load(${JSON.stringify(voice)})
 voice.config.espeak_voice = "en-us"
 for s in sys.argv[1:]:
     print("".join("".join(part) for part in voice.phonemize(s)))

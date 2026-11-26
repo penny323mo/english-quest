@@ -5,6 +5,48 @@ on:
   pull_request:
 
 jobs:
+  audio-scope:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+    outputs:
+      changed: ${{ steps.scope.outputs.changed }}
+      base: ${{ steps.scope.outputs.base }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - id: scope
+        name: Compare with a previously accepted main revision
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          # Last successful acoustic run before main acquired this gate (42845543840).
+          base=096072948ac9c6577e1f2ac1345cec396c6550ac
+          runs=$(gh api --method GET "repos/$GITHUB_REPOSITORY/actions/workflows/ci.yml/runs" -f branch=main -f event=push -f status=success -f per_page=40 --jq '.workflow_runs[].head_sha')
+          for sha in $runs; do
+            if git merge-base --is-ancestor "$sha" HEAD && git show "$sha:.github/workflows/ci.yml" | grep -F 'uses: ./.github/workflows/audio-asr.yml' > /dev/null; then
+              base=$sha
+              break
+            fi
+          done
+          echo "base=$base" >> "$GITHUB_OUTPUT"
+          changed=false
+          if ! git diff --quiet "$base" HEAD -- assets/audio content/lexicon.json content/lines.json 'content/word-audio*.json' scripts/check_audio_asr.py scripts/asr_selftest.py scripts/render_audio.py scripts/word_recordings.py scripts/audio-sources tests/fixtures/asr-known.json tests/fixtures/word-homophones.json .github/workflows/audio-asr.yml; then
+            changed=true
+          fi
+          echo "changed=$changed" >> "$GITHUB_OUTPUT"
+
+  acoustic:
+    needs: audio-scope
+    if: needs.audio-scope.outputs.changed == 'true'
+    uses: ./.github/workflows/audio-asr.yml
+    with:
+      base_sha: ${{ needs.audio-scope.outputs.base }}
+
   check:
     runs-on: ubuntu-latest
     steps:
@@ -73,3 +115,5 @@ jobs:
         run: node e2e/full-lesson.mjs
       - name: Online opens the newest deploy, offline opens the kept copy
         run: node e2e/offline.mjs
+      - name: Recover a partially downloaded update with the previous lesson available offline
+        run: node e2e/offline-update.mjs

@@ -75,14 +75,15 @@ function materializeAssets() {
  * bottom-right corner and written to dist/version.json, which the app fetches past
  * every cache to tell whether a newer build is live.
  */
-function buildInfo(): { time: string; sha: string } {
+function buildInfo(): { time: string; sha: string; version: string } {
   let sha = "dev";
   try {
     sha = execFileSync("git", ["rev-parse", "--short=7", "HEAD"], { cwd: repo, encoding: "utf8" }).trim() || "dev";
   } catch {
     /* not a git checkout */
   }
-  return { time: new Date().toISOString(), sha };
+  const { version } = JSON.parse(fs.readFileSync(path.join(repo, "package.json"), "utf8"));
+  return { time: new Date().toISOString(), sha, version };
 }
 
 const BUILD = buildInfo();

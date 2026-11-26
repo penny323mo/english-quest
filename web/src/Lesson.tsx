@@ -91,6 +91,10 @@ function Player({ lesson }: { lesson: Lesson }) {
     const state = useStore.getState();
     const savedCursor = state.lessonCursor;
     const match = Boolean(savedCursor && savedCursor.lessonId === lesson.id && !state.progress[lesson.id]);
+    if (match && savedCursor?.atHook) {
+      if (state.resumeArmed) queueMicrotask(() => useStore.setState({ resumeArmed: false }));
+      return { gate: "play" as const, beat: 0, sub: 0, quizScore: 0, quizAnswered: 0 };
+    }
     if (state.resumeArmed && match && savedCursor) {
       queueMicrotask(() => useStore.setState({ resumeArmed: false }));
       const point = clampResumePoint(savedCursor.beat, savedCursor.sub, itemCounts(lesson));
@@ -170,7 +174,7 @@ function Player({ lesson }: { lesson: Lesson }) {
   }
 
   function restart() {
-    setLessonCursor(null);
+    useStore.getState().restartLesson(lesson.id);
     setBeat(0);
     setSub(0);
     setQuizScore(0);
@@ -757,6 +761,7 @@ function Recap({ lesson, score, answered, onNext }: { lesson: Lesson; score: num
           );
         })}
       </div>
+      <a className="btn ghost block" href={`#/vocab/lesson-${lesson.id}`}>溫習呢課生字</a>
       <button className="btn block" type="button" onClick={onNext}>下一課</button>
     </>
   );

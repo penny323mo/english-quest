@@ -42,14 +42,14 @@ test("every word without a clip is listed for Penny's ear check, with its last t
 });
 
 test("every card can be drawn; one without a checked word clip shows no word 🔊", () => {
-  const src = fs.readFileSync(path.join(root, "web/src/Daily.tsx"), "utf8");
+  const src = fs.readFileSync(path.join(root, "web/src/DailyPage.tsx"), "utf8");
   assert.match(src, /const pool = lexicon\.items\.map\(\(item\) => item\.id\);/);
   assert.match(src, /drawDaily\(\{ date, preferred, pool, history \}\)/);
   assert.match(src, /\{clip \? \(\s*<button className="btn" type="button" aria-label=\{`聽 \$\{item\.lemma\}`\}/);
 });
 
 test("the card's 🔊 plays the word clip and the back plays the existing sentence clip", () => {
-  const src = fs.readFileSync(path.join(root, "web/src/Daily.tsx"), "utf8");
+  const src = fs.readFileSync(path.join(root, "web/src/DailyPage.tsx"), "utf8");
   assert.match(src, /playAsset\(clip\.audio\)/);
   assert.match(src, /playAsset\(item\.audio\)/);
 });

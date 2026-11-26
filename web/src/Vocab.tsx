@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Rating, type Grade } from "ts-fsrs";
-import { asset, decks, lexById } from "./data";
+import { asset, deckById, decks, lexById } from "./data";
 import { isDue } from "./fsrs";
 import { learnerEyebrow } from "./labels";
 import { fillLearner } from "./learner";
@@ -10,9 +10,7 @@ import { playSfx } from "./sfx";
 import { useStore } from "./store";
 import type { LexItem, StoredCard } from "./types";
 
-function deckById(id: string) {
-  return decks.decks.find((deck) => deck.id === id);
-}
+
 
 const NEW_CAP = 10;
 

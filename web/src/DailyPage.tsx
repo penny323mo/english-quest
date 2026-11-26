@@ -2,6 +2,7 @@ import { useEffect, useLayoutEffect, useMemo, useRef, useState, type MouseEvent 
 import wordAudioFile from "../../content/word-audio.json";
 import cardArtFile from "../../content/card-art.json";
 import { DAILY_XP, drawDaily, macauDate, repairDay } from "./daily.mjs";
+import { useMacauDate } from "./use-macau-date";
 import { SHIPPED, asset, isLessonOpen, lessonById, lexById, lexicon } from "./data";
 import { fillLearner } from "./learner";
 import { playAsset, stopAudio } from "./media";
@@ -150,11 +151,16 @@ function Pack({ ids, onDone }: { ids: string[]; onDone: () => void }) {
 }
 
 export default function Daily() {
+  const today = useMacauDate();
+  return <DailyDraw key={today} today={today} />;
+}
+
+function DailyDraw({ today }: { today: string }) {
   const profile = useStore((s) => s.profile);
   const daily = useStore((s) => s.daily);
   const startDaily = useStore((s) => s.startDaily);
   const finishDaily = useStore((s) => s.finishDaily);
-  const [today] = useState(() => macauDate());
+
   const repairDaily = useStore((s) => s.repairDaily);
   const stored = daily && daily.date === today ? daily : null;
   // Today's stored draw, repaired to three valid, distinct cards if it is not.
@@ -166,7 +172,7 @@ export default function Daily() {
   const [fresh, setFresh] = useState(false);
 
   useEffect(() => {
-    if (profile && !current) startDaily(today, drawToday(today));
+    if (profile && !current && today === macauDate()) startDaily(today, drawToday(today));
   }, [profile, current, startDaily, today]);
 
   useEffect(() => {
@@ -194,6 +200,7 @@ export default function Daily() {
   }
 
   function finish() {
+    if (today !== macauDate()) return;
     finishDaily(today);
     setFresh(true);
     playSfx("complete");

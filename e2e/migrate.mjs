@@ -7,7 +7,7 @@ import { chromium, webkit, devices } from "playwright";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
 const legacy = path.join(root, "e2e", "legacy");
-const shots = "/opt/cursor/artifacts/screenshots";
+const shots = process.env.EQ_SHOTS || path.join(root, "daily-shots");
 fs.mkdirSync(shots, { recursive: true });
 
 if (!fs.existsSync(path.join(dist, "index.html"))) {
