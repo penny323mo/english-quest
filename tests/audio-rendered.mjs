@@ -25,16 +25,16 @@ const renderText = (row, shown) => (typeof row.say === "string" && row.say.lengt
 function clips() {
   const out = [];
   for (const item of lex.items) {
-    out.push({ rel: item.audio, shown: item.example, say: item.say, where: `${item.id} main` });
+    out.push({ rel: item.audio, shown: item.example, say: item.say, where: `${item.id} main`, speaker: item.kokoroSpeaker });
     for (const [i, ex] of (item.examples || []).entries()) {
-      out.push({ rel: ex.audio, shown: ex.en, say: renderText(ex, ex.en), where: `${item.id} ex${i}` });
+      out.push({ rel: ex.audio, shown: ex.en, say: renderText(ex, ex.en), where: `${item.id} ex${i}`, speaker: ex.kokoroSpeaker });
     }
     for (const [i, turn] of (item.miniDialogue || []).entries()) {
       const rel = turn.audio || `assets/audio/words/${item.id}-md${i}.mp3`;
-      out.push({ rel, shown: turn.en, say: renderText(turn, turn.en), where: `${item.id} md${i}` });
+      out.push({ rel, shown: turn.en, say: renderText(turn, turn.en), where: `${item.id} md${i}`, speaker: turn.kokoroSpeaker });
     }
   }
-  for (const line of lines) out.push({ rel: line.audio, shown: line.text, say: line.say, where: line.id });
+  for (const line of lines) out.push({ rel: line.audio, shown: line.text, say: line.say, where: line.id, speaker: line.kokoroSpeaker });
   // Word-only clips for 每日抽卡: the card shows the lemma.
   const lemma = Object.fromEntries(lex.items.map((item) => [item.id, item.lemma]));
   for (const [id, row] of Object.entries(words.items)) out.push({ rel: row.audio, shown: lemma[id], say: row.say, where: `${id} word` });
@@ -44,7 +44,8 @@ function clips() {
 test("each clip was rendered from its current text", () => {
   const stale = [];
   for (const clip of clips()) {
-    if (rendered[clip.rel] !== sha(clip.say)) stale.push(`${clip.where}: ${clip.rel} "${clip.say}"`);
+    const input = clip.speaker === undefined ? clip.say : `${words.voice.model}/${clip.speaker}\n${clip.say}`;
+    if (rendered[clip.rel] !== sha(input)) stale.push(`${clip.where}: ${clip.rel} "${clip.say}"`);
   }
   assert.deepEqual(stale, [], "re-render these with npm run audio");
 });
@@ -111,4 +112,15 @@ test("no voiced text contains IPA between slashes", () => {
     .filter((clip) => ipa.test(clip.say.replace(/\[\[[^\]]+\]\]/g, "")) || ipa.test(clip.shown))
     .map((clip) => `${clip.where}: ${clip.shown}`);
   assert.deepEqual(found, [], "keep IPA in the Cantonese gloss or notes, not in a sentence the voice reads");
+});
+
+test("priority listening transcripts correspond to the distributed recordings and captions", () => {
+  const evidence = read("release-evidence/priority-speech.json");
+  const captions = new Map(clips().map(clip => [clip.rel, clip.shown]));
+  assert.equal(new Set(evidence.samples.map(sample => sample.file)).size, 14);
+  for (const sample of evidence.samples) {
+    assert.equal(sha(fs.readFileSync(path.join(root, sample.file))), sample.after.sha256, sample.file);
+    assert.equal(captions.get(sample.file.replace(/-slow\.mp3$/, ".mp3")), sample.caption, sample.file);
+    for (const model of evidence.models) assert.ok(sample.after.transcripts[model], sample.file);
+  }
 });

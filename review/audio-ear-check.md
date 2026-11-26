@@ -1,8 +1,6 @@
 # Audio: clips for a human ear check
 
-> Updated by [the pronunciation audit](pronunciation-audit.md): the SIM, sir,
-> late checkout, permit, understated, tax refund and toothache rows below are
-> fixed there. The other rows are still open.
+> Historical screening list. The 0.9 audit still flagged D4’s SIM sentence. The 1.0 candidate replaces both speeds of D4-l4 and the two foundation contrast models. See the release acceptance evidence for the candidate-specific listening results.
 
 These are **suspected** pronunciation problems. They were not auto-fixed. Both
 Whisper models (base.en and small.en) mishear them. In most cases a fresh render

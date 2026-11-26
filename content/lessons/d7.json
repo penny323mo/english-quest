@@ -85,7 +85,8 @@
       "audio": "assets/audio/lines/d7-l5.mp3",
       "audioSlow": "assets/audio/lines/d7-l5-slow.mp3",
       "say": "It's eighty dollars in total, and the price covers the blow dry.",
-      "hideGloss": false
+      "hideGloss": false,
+      "kokoroSpeaker": 1
     },
     {
       "id": "d7-l6",
@@ -206,18 +207,22 @@
     },
     {
       "type": "order",
-      "promptYue": "排好呢句。",
+      "promptYue": "排好英文，講「我可唔可以預約下次剪髮？」",
       "tokens": [
+        "Can",
+        "I",
         "book",
-        "the",
+        "my",
         "next",
-        "visit"
+        "trim?"
       ],
       "answer": [
+        "Can",
+        "I",
         "book",
-        "the",
+        "my",
         "next",
-        "visit"
+        "trim?"
       ]
     }
   ],

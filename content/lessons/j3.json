@@ -214,10 +214,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "I like this bracelet.",
+        "line": "I like this bracelet, and the clasp is easy to open.",
         "audio": "assets/audio/lines/j3-l2.mp3",
         "audioSlow": "assets/audio/lines/j3-l2-slow.mp3",
-        "expect": "We have a pair of pearl earrings.",
+        "expect": "We have a pair of pearl earrings, and they match this necklace.",
         "keywords": [
           "pair",
           "pearl"
@@ -228,10 +228,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "May I see these earrings?",
+        "line": "May I see these earrings, and the matching necklace too?",
         "audio": "assets/audio/lines/j3-l4.mp3",
         "audioSlow": "assets/audio/lines/j3-l4-slow.mp3",
-        "expect": "Of course. This pair is beautiful.",
+        "expect": "Of course. This pair is beautiful. I'll show it to you.",
         "keywords": [
           "pair",
           "beautiful"
@@ -266,7 +266,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I like this bracelet, and the clasp is easy to open.」，係咩意思？",
+      "prompt": "Tom講「I like this bracelet, and the clasp is easy to open.」，係咩意思？",
       "choices": [
         "手鏈",
         "登機證",
@@ -276,7 +276,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "店員講「We have a pair of pearl earrings, and they match this necklace.」，係咩意思？",
+      "prompt": "Mei講「We have a pair of pearl earrings, and they match this necklace.」，係咩意思？",
       "choices": [
         "一隻戒指",
         "靠窗位",

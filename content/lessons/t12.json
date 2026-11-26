@@ -223,14 +223,18 @@
     },
     {
       "type": "order",
-      "promptYue": "排好呢句。",
+      "promptYue": "排好英文，講「Wi-Fi 密碼係咩？」",
       "tokens": [
-        "wifi",
-        "password"
+        "What's",
+        "the",
+        "Wi-Fi",
+        "password?"
       ],
       "answer": [
-        "wifi",
-        "password"
+        "What's",
+        "the",
+        "Wi-Fi",
+        "password?"
       ]
     }
   ],
@@ -255,7 +259,7 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "The non-smoking option is free for you, and it is ready after four o'clock.",
+        "line": "It's free of charge, and the room is ready after four.",
         "audio": "assets/audio/lines/t12-l4.mp3",
         "audioSlow": "assets/audio/lines/t12-l4-slow.mp3",
         "expect": "What wifi password can I use while I wait for the room?",

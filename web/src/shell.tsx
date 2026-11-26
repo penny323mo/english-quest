@@ -1,4 +1,4 @@
-import { lazy, Suspense, useEffect } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { preloadArt } from "./art";
 import { lessons, asset } from "./data";
 import { LessonView } from "./Lesson";
@@ -23,6 +23,13 @@ export default function Shell({ route }: { route: Route }) {
     ]);
   }, []);
 
+  const [nameDemo, setNameDemo] = useState(false);
+  useEffect(() => {
+    setNameDemo(false);
+    const show = () => setNameDemo(true);
+    window.addEventListener("eq-name-demo", show);
+    return () => window.removeEventListener("eq-name-demo", show);
+  }, [route]);
   const lesson = route.name === "lesson";
   const tabbed = route.name === "path" || route.name === "review" || route.name === "words" || route.name === "profile" || route.name === "vocab";
 
@@ -43,6 +50,10 @@ export default function Shell({ route }: { route: Route }) {
   return (
     <div className={lesson && profile ? "phone noscroll" : "phone"}>
       <SaveBanner />
+      {nameDemo && <aside className="save-banner" role="status">
+        <p>裝置未能讀出你個名。錄音用 Alex 做示範，你可以用自己個名答。</p>
+        <button className="btn quiet" onClick={() => setNameDemo(false)}>知道</button>
+      </aside>}
       {body}
       {tabbed && profile && <Tabs route={route} />}
     </div>

@@ -3,8 +3,8 @@
   "unit": "T",
   "titleYue": "外地藥房買藥",
   "titleEn": "At the pharmacy abroad",
-  "canDoYue": "你識講頭痛發燒、冇敏感、一日三次食完飯先食、一日唔好多過六粒、要揸車就轉藥、唔使處方，發燒超過三日就睇醫生。",
-  "canDoEn": "Say you have a headache and a fever, answer no allergies, take the tablet three times a day after meals, stay under six tablets, switch if you must drive, skip the prescription, and see a doctor after three days.",
+  "canDoYue": "你識講頭痛同發燒，問藥點食、會唔會眼瞓，同埋要唔要處方。",
+  "canDoEn": "Describe symptoms and ask the pharmacist about the label, drowsiness and a prescription.",
   "minutes": 12,
   "hero": "assets/art/lessons/t13.webp",
   "cast": [
@@ -26,7 +26,9 @@
     "一日幾次",
     "飯後",
     "好眼瞓",
-    "處方"
+    "處方",
+    "標籤",
+    "藥物敏感"
   ],
   "next": "R12",
   "sound": {
@@ -67,11 +69,11 @@
       "id": "t13-l2",
       "speaker": "suki",
       "speakerLabel": "Suki",
-      "text": "This tablet is good for fever and headache. Do you have allergies?",
-      "glossYue": "呢種藥對發燒同頭痛都有用。你有冇敏感？",
+      "text": "Before we discuss your fever, are you allergic to any medicines?",
+      "glossYue": "講點處理發燒之前，想問你對藥物有冇敏感。",
       "audio": "assets/audio/lines/t13-l2.mp3",
       "audioSlow": "assets/audio/lines/t13-l2-slow.mp3",
-      "say": "This tablet is good for fever and headache. Do you have allergies?",
+      "say": "Before we discuss your fever, are you allergic to any medicines?",
       "hideGloss": false
     },
     {
@@ -89,11 +91,11 @@
       "id": "t13-l4",
       "speaker": "suki",
       "speakerLabel": "Suki",
-      "text": "Three times a day, after meals. Don't take more than six tablets each single day.",
-      "glossYue": "一日三次，食完飯先食。一日唔好多過六粒。",
+      "text": "Let me show you where to find the instructions on the label.",
+      "glossYue": "我指畀你睇標籤邊度寫咗用藥指示。",
       "audio": "assets/audio/lines/t13-l4.mp3",
       "audioSlow": "assets/audio/lines/t13-l4-slow.mp3",
-      "say": "Three times a day, after meals. Don't take more than six tablets each single day.",
+      "say": "Let me show you where to find the instructions on the label.",
       "hideGloss": true
     },
     {
@@ -111,11 +113,11 @@
       "id": "t13-l6",
       "speaker": "suki",
       "speakerLabel": "Suki",
-      "text": "If you must drive, take this other tablet. It won't make you sleepy.",
-      "glossYue": "如果你要揸車，食呢種。佢唔會令人眼瞓。",
+      "text": "Let's check the warning about driving before you take it.",
+      "glossYue": "你食之前，我哋先睇吓有關駕駛嘅警告。",
       "audio": "assets/audio/lines/t13-l6.mp3",
       "audioSlow": "assets/audio/lines/t13-l6-slow.mp3",
-      "say": "If you must drive, take this other tablet. It won't make you sleepy.",
+      "say": "Let's check the warning about driving before you take it.",
       "hideGloss": true
     },
     {
@@ -133,44 +135,44 @@
       "id": "t13-l8",
       "speaker": "suki",
       "speakerLabel": "Suki",
-      "text": "No prescription needed. If the fever lasts over three days, see a doctor.",
-      "glossYue": "唔使處方。如果發燒超過三日，就要睇醫生。",
+      "text": "Let me check whether this medicine requires a prescription.",
+      "glossYue": "等我查吓呢隻藥係咪要處方。",
       "audio": "assets/audio/lines/t13-l8.mp3",
       "audioSlow": "assets/audio/lines/t13-l8-slow.mp3",
-      "say": "No prescription needed. If the fever lasts over three days, see a doctor.",
+      "say": "Let me check whether this medicine requires a prescription.",
       "hideGloss": true
     }
   ],
   "understand": [
     {
-      "prompt": "This tablet is good for fever and headache. Do you have allergies? 即係問緊咩？",
+      "prompt": "Before we discuss your fever, are you allergic to any medicines? 即係問緊咩？",
       "choices": [
         "問一日幾次",
-        "呢種藥對頭痛同發燒有用，問你有冇敏感",
+        "問你有冇藥物敏感",
         "叫你睇醫生開處方"
       ],
       "answer": 1,
-      "explain": "fever 係發燒。headache 係頭痛。"
+      "explain": "allergic to 係對某樣嘢敏感。"
     },
     {
-      "prompt": "Three times a day, after meals. Don't take more than six tablets each single day. 呢句即係點？",
+      "prompt": "Let me show you where to find the instructions on the label. 呢句即係點？",
       "choices": [
-        "一日幾次，飯後先食，唔好多過六粒",
+        "指畀你睇標籤上面嘅用藥指示",
         "要醫生處方",
         "食完會好眼瞓"
       ],
       "answer": 0,
-      "explain": "after meals 係食完飯。"
+      "explain": "instructions on the label 係標籤上嘅指示。"
     },
     {
-      "prompt": "No prescription needed. If the fever lasts over three days, see a doctor. 呢句即係點？",
+      "prompt": "Let me check whether this medicine requires a prescription. 呢句即係點？",
       "choices": [
         "要帶住處方",
         "發燒就即刻停藥",
-        "唔使處方，超過三日就睇醫生"
+        "先查呢隻藥需唔需要處方"
       ],
       "answer": 2,
-      "explain": "prescription 係處方。"
+      "explain": "whether 係「係咪」，prescription 係處方。"
     }
   ],
   "chunks": [
@@ -186,13 +188,13 @@
       ]
     },
     {
-      "pattern": "Three ___ a day, after meals. Don't take more than six tablets each single day.",
-      "example": "Three times a day, after meals. Don't take more than six tablets each single day.",
-      "glossYue": "一日三次。",
+      "pattern": "How many ___ a day should I take this medicine?",
+      "example": "How many times a day should I take this medicine?",
+      "glossYue": "呢隻藥一日要食幾次？",
       "answer": "times",
       "choices": [
         "times",
-        "drowsy",
+        "headache",
         "prescription"
       ]
     },
@@ -213,8 +215,8 @@
       "type": "choice",
       "promptYue": "你想講頭痛同發燒。你點講？",
       "choices": [
-        "Hi. I have bad headache and high fever. What medicine can I take?",
-        "No, I don't have any allergies. How many times day should I take this?",
+        "I have a bad headache and a high fever. What can I take?",
+        "No allergies. How many times a day should I take this?",
         "Will this tablet make me feel drowsy? I have to drive home."
       ],
       "answer": 0,
@@ -224,10 +226,18 @@
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
+        "Should",
+        "I",
+        "take",
+        "it",
         "after",
         "meals"
       ],
       "answer": [
+        "Should",
+        "I",
+        "take",
+        "it",
         "after",
         "meals"
       ]
@@ -240,7 +250,7 @@
       {
         "partner": "Suki",
         "partnerId": "suki",
-        "line": "This tablet is good for fever and headache. Do you have allergies?",
+        "line": "Before we discuss your fever, are you allergic to any medicines?",
         "audio": "assets/audio/lines/t13-l2.mp3",
         "audioSlow": "assets/audio/lines/t13-l2-slow.mp3",
         "expect": "No allergies. How many times a day should I take this?",
@@ -254,7 +264,7 @@
       {
         "partner": "Suki",
         "partnerId": "suki",
-        "line": "Three times a day, after meals. Don't take more than six tablets each single day.",
+        "line": "Let me show you where to find the instructions on the label.",
         "audio": "assets/audio/lines/t13-l4.mp3",
         "audioSlow": "assets/audio/lines/t13-l4-slow.mp3",
         "expect": "Will this tablet make me feel drowsy? I have to drive home.",
@@ -268,7 +278,7 @@
       {
         "partner": "Suki",
         "partnerId": "suki",
-        "line": "If you must drive, take this other tablet. It won't make you sleepy.",
+        "line": "Let's check the warning about driving before you take it.",
         "audio": "assets/audio/lines/t13-l6.mp3",
         "audioSlow": "assets/audio/lines/t13-l6-slow.mp3",
         "expect": "Do I need a prescription before I take this tablet?",

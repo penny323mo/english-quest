@@ -170,9 +170,9 @@
       ]
     },
     {
-      "pattern": "I would like to ___ some cash here, and then deposit the rest into the account.",
+      "pattern": "I would like to ___ some cash.",
       "example": "I would like to withdraw some cash.",
-      "glossYue": "我想⋯⋯現金。",
+      "glossYue": "我想提款。",
       "answer": "withdraw",
       "choices": [
         "withdraw",
@@ -306,7 +306,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The balance is very low. Here is the full replacement fee.」，balance 係咩意思？",
+      "prompt": "Ben講「The balance is very low. Here is the full replacement fee.」，balance 係咩意思？",
       "choices": [
         "餘額",
         "分行",
@@ -316,7 +316,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I will pay the fee.」，fee 係咩意思？",
+      "prompt": "Tom講「I will pay the fee.」，fee 係咩意思？",
       "choices": [
         "表格",
         "餘額",

@@ -74,7 +74,8 @@
       "audio": "assets/audio/lines/w15-l5.mp3",
       "audioSlow": "assets/audio/lines/w15-l5-slow.mp3",
       "say": "Could you put me down as the lead, and not read every line out in the meeting?",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 2
     },
     {
       "id": "w15-l6",
@@ -85,7 +86,8 @@
       "audio": "assets/audio/lines/w15-l6.mp3",
       "audioSlow": "assets/audio/lines/w15-l6-slow.mp3",
       "say": "I'll put you down as the lead, and I won't read the lines out.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 5
     },
     {
       "id": "w15-l7",
@@ -136,7 +138,7 @@
       "choices": [
         "話要改負責人姓名",
         "話要大聲讀每一行",
-        "問帳簿可唔可以寫我做負責人"
+        "請寫我做負責人，同埋唔好喺會上逐行讀"
       ],
       "answer": 2,
       "explain": "帳簿寫負責人，唔使逐行讀出報銷。"

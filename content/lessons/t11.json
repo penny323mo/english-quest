@@ -204,18 +204,26 @@
     },
     {
       "type": "order",
-      "promptYue": "排好呢句。",
+      "promptYue": "排好英文，講「我需要增值八達通。」",
       "tokens": [
+        "I",
+        "need",
+        "to",
         "top",
         "up",
+        "my",
         "Octopus",
-        "card"
+        "card."
       ],
       "answer": [
+        "I",
+        "need",
+        "to",
         "top",
         "up",
+        "my",
         "Octopus",
-        "card"
+        "card."
       ]
     }
   ],

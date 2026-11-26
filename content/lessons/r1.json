@@ -56,7 +56,8 @@
       "glossYue": "有。兩位，唔該。",
       "audio": "assets/audio/lines/r1-l2.mp3",
       "audioSlow": "assets/audio/lines/r1-l2-slow.mp3",
-      "say": "Yes. [[ə ˈteɪbəl fɚ ˈtu]] , please."
+      "say": "Yes. A table for two, please.",
+      "kokoroSpeaker": 5
     },
     {
       "id": "r1-l3",
@@ -219,12 +220,12 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "Would you like a table by the window?",
+        "line": "Right this way. Would you like a table by the window?",
         "audio": "assets/audio/lines/r1-l3.mp3",
         "audioSlow": "assets/audio/lines/r1-l3-slow.mp3",
-        "expect": "Yes, thank you.",
+        "expect": "Thank you. This is great.",
         "keywords": [
-          "yes",
+          "great",
           "thank"
         ],
         "modelAudio": "assets/audio/lines/r1-l4.mp3",

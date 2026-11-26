@@ -62,11 +62,11 @@
       "id": "d1-l4",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I have had a headache since Monday.",
-      "glossYue": "我由星期一起頭痛。",
+      "text": "Yes, my head hurts too. I don't know of any drug allergies.",
+      "glossYue": "係，我個頭都痛。據我所知，我冇藥物敏感。",
       "audio": "assets/audio/lines/d1-l4.mp3",
       "audioSlow": "assets/audio/lines/d1-l4-slow.mp3",
-      "say": "I have had a headache since Monday.",
+      "say": "Yes, my head hurts too. I don't know of any drug allergies.",
       "hideGloss": true
     },
     {
@@ -159,14 +159,14 @@
       ]
     },
     {
-      "pattern": "I have had a ___ since Monday.",
-      "example": "I have had a headache since Monday.",
-      "glossYue": "我由星期一起⋯⋯。",
-      "answer": "headache",
+      "pattern": "Yes, my head hurts too. I don't know of any drug ___.",
+      "example": "Yes, my head hurts too. I don't know of any drug allergies.",
+      "glossYue": "係，我個頭都痛。據我所知，我冇藥物敏感。",
+      "answer": "allergies",
       "choices": [
-        "headache",
-        "wallet",
-        "meter"
+        "allergies",
+        "shifts",
+        "receipts"
       ]
     },
     {
@@ -251,10 +251,10 @@
         "line": "Do you have a headache too? Are you allergic to any medicine we use?",
         "audio": "assets/audio/lines/d1-l3.mp3",
         "audioSlow": "assets/audio/lines/d1-l3-slow.mp3",
-        "expect": "I have had a headache since Monday.",
+        "expect": "Yes, my head hurts too. I don't know of any drug allergies.",
         "keywords": [
-          "headache",
-          "monday"
+          "head",
+          "allergies"
         ],
         "modelAudio": "assets/audio/lines/d1-l4.mp3",
         "modelSlow": "assets/audio/lines/d1-l4-slow.mp3"
@@ -300,7 +300,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I have had a fever and cough since Monday.」，fever 係咩意思？",
+      "prompt": "Tom講「I have had a fever and cough since Monday.」，fever 係咩意思？",
       "choices": [
         "期限",
         "發燒",
@@ -310,7 +310,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「You can rest at home. Please take this prescription to the pharmacy.」，prescription 係咩意思？",
+      "prompt": "Wen講「You can rest at home. Please take this prescription to the pharmacy.」，prescription 係咩意思？",
       "choices": [
         "議程",
         "毛巾",

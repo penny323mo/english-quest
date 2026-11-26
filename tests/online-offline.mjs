@@ -50,9 +50,16 @@ test("offline: the last good page is served (P1-2)", async () => {
   assert.equal(await response.text(), "kept page");
 });
 
-test("offline with no copy yet fails like the network did", async () => {
+test("offline with no saved page explains how to reconnect and never caches the fallback", async () => {
   const fetchImpl = async () => { throw new TypeError("Failed to fetch"); };
-  await assert.rejects(navigateNetworkFirst({ url: SCOPE }, { fetchImpl, cachesImpl: fakeCaches(), shellUrl: SCOPE }), /Failed to fetch/);
+  const caches = fakeCaches();
+  let missing = 0;
+  const response = await navigateNetworkFirst({ url: SCOPE }, { fetchImpl, cachesImpl: caches, shellUrl: SCOPE, onMissingPage: () => missing++ });
+  assert.equal(response.status, 503);
+  assert.match(response.headers.get("content-type"), /text\/html/);
+  assert.match(await response.text(), /重新連線後再試/);
+  assert.equal(missing, 1);
+  assert.equal(await (await caches.open(SHELL_CACHE)).match(SCOPE), undefined);
 });
 
 test("an error page or a non-HTML response is returned but never kept", async () => {

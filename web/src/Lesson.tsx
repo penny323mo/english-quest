@@ -1,3 +1,5 @@
+import { wordAudio } from "./word-audio";
+import { StarterListening, TransferPractice } from "./learning-steps";
 import { useEffect, useRef, useState, type CSSProperties } from "react";
 import { Mouth, mouthsFor } from "./components/Mouth";
 import { ArtImg, preloadArt, whenArtDecoded } from "./art";
@@ -30,7 +32,7 @@ import { orderTokenIndices } from "./order-bank.js";
 const BEATS = BEAT_LABELS;
 
 function tipFor(id: string): string {
-  if (id === "F1") return "短音收得快，長音先拉。about 第一個音係好輕嘅 /ə/。";
+  if (id === "F1") return "ship 個元音舌位稍低，sheep 個元音舌位較高。about 第一個音係輕聲 /ə/。";
   if (id === "F2" || id === "J1") return "thank 嘅 th 用舌尖貼上牙，唔好讀成 s 或者 f。";
   if (id === "F3") return "five 尾音要收到 /v/，six 尾有 /ks/。唔好食咗尾音。";
   if (id === "F4") return "/l/ 舌尖抵上顎，氣由兩邊出。/n/ 氣由鼻出。";
@@ -39,13 +41,13 @@ function tipFor(id: string): string {
   if (id === "J4") return "authentic 中間係 /θ/。白金唔係鉑金。玉只講材料，唔好講醫療功效。";
   if (id === "J5") return "loose 開頭係 /l/，尾音 /s/。tight 係太緊，fit 係啱唔啱。";
   if (id === "J6") return "sale 尾音係 /l/。discount 名詞重音喺第一節。cost 讀 /ˈkɑst/。";
-  if (id === "J7") return "contactless 有 /l/。receipt 重音喺第二節。wrap 開頭唔出聲。";
+  if (id === "J7") return "contactless 有 /l/。receipt 重音喺第二節。wrap 個 w 唔發音，開頭讀 /ɹ/。";
   if (id === "T1") return "sure、show 先係 /ʃ/。check-in 嘅 check 係 /tʃ/，前面有一粒塞音。";
   if (id === "T2") return "liquid、left、laptop 都有 /l/。straight 係 /eɪ/，唔好讀成 street。";
   if (id === "T3") return "floor 同 late 都有 /l/。wifi 讀 /waɪ faɪ/。password 第二節係 /ɝ/。";
   if (id === "R1") return "美式 /r/ 舌尖唔好掂到上顎。table 本身冇 /r/。";
   if (id === "R2") return "Can I 入面 can 好輕，讀 /kən/。can't 先至係 /kænt/，有個清楚嘅 /t/。";
-  if (id === "R3") return "shellfish 有 /l/。allergic 重音喺中間。without 中間係清 /θ/。";
+  if (id === "R3") return "shellfish 有 /l/。allergic 重音喺中間。without 中間可以讀 /θ/ 或 /ð/。";
   return "跟住模範嘅口型，慢慢講。";
 }
 
@@ -319,6 +321,7 @@ function Goal({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
       <p className="who">呢課之後你可以</p>
       <h2>{lesson.canDoYue}</h2>
       <p className="lede" lang="en">{lesson.canDoEn}</p>
+      <StarterListening key={lesson.id} id={lesson.id} />
       <button className="btn block" type="button" onClick={onNext}>去聽</button>
     </>
   );
@@ -623,6 +626,7 @@ function RoleBeat({
       <SpeakBox
         key={sub}
         expect={fillLearner(turn.expect, learner)}
+        independentFirst={/^B[12]/.test(lesson.cefr || "")}
         keywords={turn.keywords.map((word) => fillLearner(word, learner))}
         modelAudio={turn.modelAudio}
         modelSlow={turn.modelSlow}
@@ -662,7 +666,7 @@ function QuizStep({
   return (
     <>
       {item.type === "listen" && lemma && (
-        <button className="btn quiet block" type="button" onClick={() => playAsset(lemma.audio)}>
+        <button className="btn quiet block" type="button" onClick={() => playAsset(wordAudio[lemma.id].audio)}>
           播放
         </button>
       )}
@@ -700,11 +704,11 @@ function Sound({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
         if (!a || !b) return null;
         return (
           <div className="pair" key={`${pair.a}-${pair.b}`}>
-            <button className="choice" type="button" onClick={() => playAsset(a.audio)}>
+            <button className="choice" type="button" onClick={() => playAsset(wordAudio[a.id].audio)}>
               <span lang="en">{a.lemma}</span>
               <span className="ipa">{a.ipa}</span>
             </button>
-            <button className="choice" type="button" onClick={() => playAsset(b.audio)}>
+            <button className="choice" type="button" onClick={() => playAsset(wordAudio[b.id].audio)}>
               <span lang="en">{b.lemma}</span>
               <span className="ipa">{b.ipa}</span>
             </button>
@@ -716,7 +720,7 @@ function Sound({ lesson, onNext }: { lesson: Lesson; onNext: () => void }) {
           const item = lexById[id];
           if (!item) return null;
           return (
-            <button key={id} className="token" type="button" onClick={() => playAsset(item.audioSlow)} lang="en">
+            <button key={id} className="token" type="button" onClick={() => playAsset(wordAudio[item.id].audioSlow)} lang="en">
               {item.lemma}
             </button>
           );
@@ -762,6 +766,7 @@ function Recap({ lesson, score, answered, onNext }: { lesson: Lesson; score: num
         })}
       </div>
       <a className="btn ghost block" href={`#/vocab/lesson-${lesson.id}`}>溫習呢課生字</a>
+      <TransferPractice key={lesson.id} id={lesson.id} />
       <button className="btn block" type="button" onClick={onNext}>下一課</button>
     </>
   );
@@ -836,13 +841,16 @@ function SpeakBox({
   modelAudio,
   modelSlow,
   tip,
+  independentFirst = false,
 }: {
   expect: string;
   keywords: string[];
   modelAudio: string;
   modelSlow: string;
   tip: string;
+  independentFirst?: boolean;
 }) {
+  const [showModel, setShowModel] = useState(!independentFirst);
   const [mode, setMode] = useState<"speech" | "record">(() => (getRecognizer() ? "speech" : "record"));
   const [listening, setListening] = useState(false);
   const [transcript, setTranscript] = useState("");
@@ -980,6 +988,8 @@ function SpeakBox({
   const canSpeak = Boolean(getRecognizer());
   return (
     <div className="stack">
+      {!showModel && <button className="btn ghost" type="button" onClick={() => setShowModel(true)}>自己試答，再睇示範</button>}
+      {showModel && <>
       <p className="who">你可以講</p>
       <KaraokeLine text={expect} active={karaAt} />
       <div className="stress-row">
@@ -994,6 +1004,7 @@ function SpeakBox({
           );
         })}
       </div>
+      </>}
       {mode === "record" && (
         <p className="note">錄一次就得。撳「聽我」，再撳「聽模範」，輪流聽。部機唔使識即時辨認。</p>
       )}
@@ -1040,9 +1051,11 @@ function SpeakBox({
         {userUrl && (
           <button className="btn quiet" type="button" onClick={() => playUrl(userUrl)}>聽我</button>
         )}
+        {showModel && <>
         <button className="btn quiet" type="button" onClick={() => playAsset(modelAudio)}>聽模範</button>
         <button className="btn ghost" type="button" onClick={() => playAsset(modelSlow)}>慢速模範</button>
         <button className="btn ghost" type="button" onClick={() => playKaraoke(modelSlow)}>慢速逐字</button>
+        </>}
       </div>
       {micError && <p className="note">咪開唔到。你可以聽模範，然後繼續。呢課唔會卡住。</p>}
       <p className="fine">{tip}</p>

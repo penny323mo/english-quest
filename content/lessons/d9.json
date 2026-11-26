@@ -222,16 +222,18 @@
     },
     {
       "type": "order",
-      "promptYue": "排好呢句。",
+      "promptYue": "排好英文，講「唔該凍結我張卡。」",
       "tokens": [
+        "Please",
         "freeze",
-        "the",
-        "card"
+        "my",
+        "card."
       ],
       "answer": [
+        "Please",
         "freeze",
-        "the",
-        "card"
+        "my",
+        "card."
       ]
     }
   ],

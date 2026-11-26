@@ -43,11 +43,11 @@
       "id": "r4-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Could we get still water and one napkin for this fork?",
-      "glossYue": "可唔可以嚟杯冇氣水，同埋一張餐巾畀呢支叉？",
+      "text": "Could we get still water and a clean napkin, please?",
+      "glossYue": "唔該，可唔可以畀我哋冇氣水同一張乾淨餐巾？",
       "audio": "assets/audio/lines/r4-l2.mp3",
       "audioSlow": "assets/audio/lines/r4-l2-slow.mp3",
-      "say": "Could we get still water and one napkin for this fork?",
+      "say": "Could we get still water and a clean napkin, please?",
       "hideGloss": true
     },
     {
@@ -241,7 +241,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Could we get still water and one napkin for this fork?",
+        "line": "Could we get still water and a clean napkin, please?",
         "audio": "assets/audio/lines/r4-l2.mp3",
         "audioSlow": "assets/audio/lines/r4-l2-slow.mp3",
         "expect": "Here is the still water. The napkin is by your knife.",
@@ -307,7 +307,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Could we get still water and one napkin for this fork?」呢句入面，邊個意思先啱？",
+      "prompt": "Tom講「Could we get still water and a clean napkin, please?」呢句入面，邊個意思先啱？",
       "choices": [
         "甜品",
         "有氣",
@@ -318,7 +318,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Are you enjoying the meal? I can bring a refill.」，係咩意思？",
+      "prompt": "Ana講「Are you enjoying the meal? I can bring a refill.」，係咩意思？",
       "choices": [
         "而家埋單",
         "再添一杯",

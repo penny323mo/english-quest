@@ -42,11 +42,11 @@
       "id": "d4-l2",
       "speaker": "mina",
       "speakerLabel": "Mina",
-      "text": "The prepaid plan is much cheaper, and the coverage is enough.",
-      "glossYue": "預繳計劃平好多，覆蓋都夠。",
+      "text": "The prepaid plan costs less and covers the city.",
+      "glossYue": "預繳計劃平啲，亦都覆蓋市區。",
       "audio": "assets/audio/lines/d4-l2.mp3",
       "audioSlow": "assets/audio/lines/d4-l2-slow.mp3",
-      "say": "The prepaid plan is much cheaper, and the coverage is enough.",
+      "say": "The prepaid plan costs less and covers the city.",
       "hideGloss": false
     },
     {
@@ -64,33 +64,34 @@
       "id": "d4-l4",
       "speaker": "mina",
       "speakerLabel": "Mina",
-      "text": "Please activate the new SIM card with your valid passport.",
-      "glossYue": "請用你本有效護照開通呢張新電話卡。",
+      "text": "Please show me your passport so I can activate your SIM card.",
+      "glossYue": "麻煩畀我睇你本護照，等我幫你開通電話卡。",
       "audio": "assets/audio/lines/d4-l4.mp3",
       "audioSlow": "assets/audio/lines/d4-l4-slow.mp3",
-      "say": "Please activate the new SIM card with your valid passport.",
-      "hideGloss": false
+      "say": "Please show me your passport so I can activate your sim card.",
+      "hideGloss": false,
+      "kokoroSpeaker": 1
     },
     {
       "id": "d4-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Is the unlimited plan locked on a long mobile contract?",
-      "glossYue": "無限計劃係咪綁一份長手機合約？",
+      "text": "Here's my passport. Can I add more data later?",
+      "glossYue": "我本護照喺度。我之後可唔可以再加數據？",
       "audio": "assets/audio/lines/d4-l5.mp3",
       "audioSlow": "assets/audio/lines/d4-l5-slow.mp3",
-      "say": "Is the unlimited plan locked on a long mobile [[ˈkɑntɹækt]]?",
+      "say": "Here's my passport. Can I add more data later?",
       "hideGloss": false
     },
     {
       "id": "d4-l6",
       "speaker": "mina",
       "speakerLabel": "Mina",
-      "text": "A small top-up is enough if that plan stays cheap.",
-      "glossYue": "如果嗰個計劃平，小小增值就夠。",
+      "text": "Yes. You can buy a small top-up at any time.",
+      "glossYue": "可以。你隨時都可以增值少少。",
       "audio": "assets/audio/lines/d4-l6.mp3",
       "audioSlow": "assets/audio/lines/d4-l6-slow.mp3",
-      "say": "A small top-up is enough if that plan stays cheap.",
+      "say": "Yes. You can buy a small top-up at any time.",
       "hideGloss": true
     },
     {
@@ -128,14 +129,14 @@
       "explain": "which plan 係問邊個計劃好啲。"
     },
     {
-      "prompt": "The prepaid plan is much cheaper, and the coverage is enough. 呢句即係點？",
+      "prompt": "The prepaid plan costs less and covers the city. 呢句即係點？",
       "choices": [
         "我要一份長約",
         "請幫我串個名",
-        "預繳計劃平好多，覆蓋都夠"
+        "預繳計劃平啲，亦覆蓋市區"
       ],
       "answer": 2,
-      "explain": "prepaid 係預繳。coverage 係覆蓋。"
+      "explain": "costs less 係平啲，covers the city 係覆蓋市區。"
     },
     {
       "prompt": "I'll take the prepaid one. I don't need unlimited data. 呢句即係點？",
@@ -196,7 +197,7 @@
   ],
   "shadow": {
     "lineId": "d4-l4",
-    "hint": "Please activate the new SIM card with your valid passport."
+    "hint": "Please show me your passport so I can activate your SIM card."
   },
   "build": [
     {
@@ -236,7 +237,7 @@
       {
         "partner": "Mina",
         "partnerId": "mina",
-        "line": "The prepaid plan is much cheaper, and the coverage is enough.",
+        "line": "The prepaid plan costs less and covers the city.",
         "audio": "assets/audio/lines/d4-l2.mp3",
         "audioSlow": "assets/audio/lines/d4-l2-slow.mp3",
         "expect": "I'll take the prepaid one. I don't need unlimited data.",
@@ -250,13 +251,13 @@
       {
         "partner": "Mina",
         "partnerId": "mina",
-        "line": "Please activate the new SIM card with your valid passport.",
+        "line": "Please show me your passport so I can activate your SIM card.",
         "audio": "assets/audio/lines/d4-l4.mp3",
         "audioSlow": "assets/audio/lines/d4-l4-slow.mp3",
-        "expect": "Is the unlimited plan locked on a long mobile contract?",
+        "expect": "Here's my passport. Can I add more data later?",
         "keywords": [
-          "unlimited",
-          "contract"
+          "passport",
+          "data"
         ],
         "modelAudio": "assets/audio/lines/d4-l5.mp3",
         "modelSlow": "assets/audio/lines/d4-l5-slow.mp3"
@@ -264,7 +265,7 @@
       {
         "partner": "Mina",
         "partnerId": "mina",
-        "line": "A small top-up is enough if that plan stays cheap.",
+        "line": "Yes. You can buy a small top-up at any time.",
         "audio": "assets/audio/lines/d4-l6.mp3",
         "audioSlow": "assets/audio/lines/d4-l6-slow.mp3",
         "expect": "I'll pay for this prepaid SIM card here.",
@@ -322,14 +323,14 @@
     },
     {
       "type": "choice",
-      "prompt": "The prepaid plan is much cheaper.",
+      "prompt": "The prepaid plan costs less and covers the city.",
       "choices": [
         "覆蓋完全唔夠",
         "請申報重量",
-        "預繳計劃平好多"
+        "預繳計劃平啲，亦覆蓋市區"
       ],
       "answer": 2,
-      "explain": "cheaper 係平啲。"
+      "explain": "costs less 係平啲，covers the city 係覆蓋市區。"
     }
   ],
   "sound": {

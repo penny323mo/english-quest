@@ -33,7 +33,7 @@ else {
   const sw = fs.readFileSync(swPath, "utf8");
   const shell = /(?:^|\/)(?:index\.html|sw\.js|registerSW\.js|manifest\.webmanifest|workbox-[^/]+\.js)$/;
   if (!sw.includes("index\\.html")) fail("built worker does not exclude index.html");
-  const entries = [...sw.matchAll(/\{"revision":(null|"[0-9a-f]+"),"url":"([^"]+)"\}/g)].map((entry) => ({
+  const entries = [...sw.matchAll(/\{"integrity":"sha256-[A-Za-z0-9+/=]+","revision":(null|"[0-9a-f]+"),"url":"([^"]+)"\}/g)].map((entry) => ({
     revision: entry[1],
     url: entry[2],
   }));

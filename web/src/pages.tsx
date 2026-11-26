@@ -1,3 +1,7 @@
+import { wordAudio } from "./word-audio";
+import { OfflinePack } from "./offline-pack";
+import { isTrial } from "./course-worker";
+import { PracticeAgain } from "./learning-steps";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Rating, type Grade } from "ts-fsrs";
 import {
@@ -155,6 +159,7 @@ export function PathHome() {
           <img className="mascot" src={asset("assets/art/mascot-wave.webp")} alt="小燈" width={72} height={72} />
         </div>
         <p className="fine">{done} / {SHIPPED.length} 課完成。冇紅心。聽日再嚟都得。</p>
+        {profile.level === "new" && recommended !== "F1" && !progress.F1 && <a className="btn quiet block" href="#/lesson/F1">先由兩個英文音起步</a>}
         {recommended && todayTitle ? <p className="fine today-line" data-today={recommended}>今日：{todayTitle}</p> : null}
         <a className="btn ghost block" href="#/vocab">生字回顧</a>
         <a className={dailyDone ? "daily-entry done" : "daily-entry"} href="#/daily" onClick={() => playSfx("tap")}>
@@ -332,8 +337,8 @@ export function Review() {
           <p className="ipa">{show ? item.ipa : " "}</p>
           <Syllables id={item.id} hidden={!show} />
           <div className="row-btns">
-            <button className="btn quiet" type="button" onClick={() => playAsset(item.audio)}>聽</button>
-            <button className="btn ghost" type="button" onClick={() => playAsset(item.audioSlow)}>慢速</button>
+            <button className="btn quiet" type="button" onClick={() => playAsset(wordAudio[item.id].audio)}>聽單字</button>
+            <button className="btn ghost" type="button" onClick={() => playAsset(wordAudio[item.id].audioSlow)}>慢速單字</button>
           </div>
           {show ? (
             <>
@@ -416,6 +421,10 @@ export function WordDetail({ id }: { id: string }) {
       <h1 lang="en">{item.lemma}</h1>
       <p className="ipa">{item.ipa}</p>
       <Syllables id={item.id} />
+      <div className="row-btns">
+        <button className="btn quiet" type="button" onClick={() => playAsset(wordAudio[item.id].audio)}>聽單字</button>
+        <button className="btn ghost" type="button" onClick={() => playAsset(wordAudio[item.id].audioSlow)}>慢速單字</button>
+      </div>
       <p>{item.glossYue}</p>
       {jyutping && item.jyutping ? <p className="fine">粵拼（只標中文解釋）：{item.jyutping}</p> : null}
       <p lang="en">{fillLearner(item.example, profile?.name)}</p>
@@ -472,6 +481,7 @@ export function Profile() {
       <p className="kicker">連續 {profile.streak} 日 · {profile.xp} XP · {done} / {SHIPPED.length} 課</p>
       <p className="note">連續日數只係記低你有嚟。斷咗就由 1 再數，唔會扣你已經攞到嘅 XP。</p>
       <a className="btn block" href="#/settings">設定</a>
+      <PracticeAgain />
       <a className="btn ghost block" href="#/attributions">出處同授權</a>
     </section>
   );
@@ -542,6 +552,8 @@ export function Settings() {
     <section className="screen plain stack">
       <a className="back" href="#/profile">返我</a>
       <h1>設定</h1>
+      {isTrial && <a href="../listen.html">幫手盲聽錄音</a>}
+      <OfflinePack />
       <label className="stack">
         <span>名字</span>
         <input
@@ -647,7 +659,7 @@ export function Attributions() {
       <p>ECDICT（MIT）同 CC-CEDICT（CC BY-SA 4.0）係中文對照參考，冇批量拷貝入卡。CC-Canto（CC BY-SA 3.0）用嚟核對粵拼開關；粵拼唔會教英文音。</p>
       <p>New General Service List 只係頻率參考，未整份複製入程式。</p>
       <h2>聲音</h2>
-      <p>例句同課堂嘅教學錄音係 Piper（MIT）en_US-ljspeech-medium。LJ Speech 屬公有領域。音素由 espeak-ng 產生，並強制 en-us，異讀詞再人手鎖定音素。慢速係合成時嘅長度比例 1.35，短句檔案時長未必剛好係 1.35 倍，但會慢過正常速度。冇用 Edge 或者 Azure。每日抽卡嘅單字 🔊 主要用 Kokoro，三個字用字典真人錄音（見下文）。</p>
+      <p>五堂 B2 對話以 Kokoro v0.19（Apache-2.0）分配美式聲線，F1 辨音、F2 新同事介紹同 D4 電話卡示範亦使用呢個模型。一般例句同課堂嘅教學錄音用 Piper（MIT）en_US-ljspeech-medium。LJ Speech 屬公有領域。音素由 espeak-ng 產生，並強制 en-us，異讀詞再人手鎖定音素。慢速係合成時嘅長度比例 1.35，短句檔案時長未必剛好係 1.35 倍，但會慢過正常速度。冇用 Edge 或者 Azure。每日抽卡嘅單字 🔊 主要用 Kokoro，三個字用字典真人錄音（見下文）。</p>
       <p>每日抽卡嘅合成單字 🔊 用 Kokoro v0.19（hexgrad，權重 Apache-2.0）嘅美式女聲 af；個別難字用同一模型嘅 af_bella、af_sarah 或 af_sky，經 sherpa-onnx 產生錄音；音素一樣由 espeak-ng（en-us）產生。Kokoro 模型卡寫明只用寬鬆授權或者冇版權嘅錄音訓練（包括公有領域錄音同大型供應商 TTS 生成嘅合成語音）。LJ Speech 把聲單獨讀一個字好多時讀錯（例如 good 讀成 bed），讀句子就冇問題，所以例句照用 LJ Speech。單字慢速可以由合格嘅正常錄音保持音高、將時長拉長至 1.2–1.35 倍製成，或者另行合成。正常同慢速都要通過 Whisper small.en 同 NVIDIA Parakeet 檢查；如果 Whisper 只係重複寫同一個正確字，就由 Parakeet 確認只讀咗一次。如果 Whisper 將 quote 寫成引號，亦要 Parakeet 清楚辨識為 quote。其他聽錯嘅就唔播。</p>
       <p>a（弱讀 /ə/）、fee 同 led 嘅單字錄音由 <a href="https://commons.wikimedia.org/wiki/User:Dvortygirl">Dvortygirl</a> 以美式英語錄製，來自 Wikimedia Commons：<a href="https://commons.wikimedia.org/wiki/File:En-us-a-unstressed.ogg">a 弱讀</a>、<a href="https://commons.wikimedia.org/wiki/File:En-us-fee.ogg">fee</a>、<a href="https://commons.wikimedia.org/wiki/File:En-us-led.ogg">led</a>。原錄音同本 app 嘅改編檔案均以 <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a> 發佈。改動只有轉成 MP3、加前後靜音，以及慢速版保持音高、將語音時長拉長至 1.35 倍，冇剪走語音。呢三個字按字典標示嘅讀音核對來源，並檢查原檔同轉換結果；唔會將 ASR 聽錯計作辨識通過。</p>
       <p>瀏覽器嘅 Web Speech 只係臨時跟讀，唔係標準音。</p>

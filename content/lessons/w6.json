@@ -38,7 +38,8 @@
       "audio": "assets/audio/lines/w6-l1.mp3",
       "audioSlow": "assets/audio/lines/w6-l1-slow.mp3",
       "say": "Please tell me about the role you want and what you do now.",
-      "hideGloss": false
+      "hideGloss": false,
+      "kokoroSpeaker": 6
     },
     {
       "id": "w6-l2",
@@ -49,7 +50,8 @@
       "audio": "assets/audio/lines/w6-l2.mp3",
       "audioSlow": "assets/audio/lines/w6-l2-slow.mp3",
       "say": "I have three years of retail experience, and I am bilingual in Cantonese and English.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 3
     },
     {
       "id": "w6-l3",
@@ -60,7 +62,8 @@
       "audio": "assets/audio/lines/w6-l3.mp3",
       "audioSlow": "assets/audio/lines/w6-l3-slow.mp3",
       "say": "Could you give one example of a recent customer-facing task you enjoyed at the counter?",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 6
     },
     {
       "id": "w6-l4",
@@ -71,7 +74,8 @@
       "audio": "assets/audio/lines/w6-l4.mp3",
       "audioSlow": "assets/audio/lines/w6-l4-slow.mp3",
       "say": "Last year I handled a busy Saturday at the counter, and I cleared the queue before lunch.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 3
     },
     {
       "id": "w6-l5",
@@ -82,7 +86,8 @@
       "audio": "assets/audio/lines/w6-l5.mp3",
       "audioSlow": "assets/audio/lines/w6-l5-slow.mp3",
       "say": "That sounds reliable. How did teamwork help you in the shop on that busy morning?",
-      "hideGloss": false
+      "hideGloss": false,
+      "kokoroSpeaker": 6
     },
     {
       "id": "w6-l6",
@@ -93,7 +98,8 @@
       "audio": "assets/audio/lines/w6-l6.mp3",
       "audioSlow": "assets/audio/lines/w6-l6-slow.mp3",
       "say": "Teamwork really got me through that busy morning.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 3
     },
     {
       "id": "w6-l7",
@@ -104,7 +110,8 @@
       "audio": "assets/audio/lines/w6-l7.mp3",
       "audioSlow": "assets/audio/lines/w6-l7-slow.mp3",
       "say": "What kind of team would you like to join next month if we offer you the retail role?",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 6
     },
     {
       "id": "w6-l8",
@@ -115,7 +122,32 @@
       "audio": "assets/audio/lines/w6-l8.mp3",
       "audioSlow": "assets/audio/lines/w6-l8-slow.mp3",
       "say": "I'd like to join a small shop team. I can start a morning shift next month.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 3
+    },
+    {
+      "id": "w6-l9",
+      "speaker": "hugh",
+      "speakerLabel": "Hugh",
+      "text": "Suppose another customer had joined the queue at that point. What would you have done differently?",
+      "glossYue": "假設嗰陣再有一位客人排隊。你會點改變做法？",
+      "audio": "assets/audio/lines/w6-l9.mp3",
+      "audioSlow": "assets/audio/lines/w6-l9-slow.mp3",
+      "say": "Suppose another customer had joined the queue at that point. What would you have done differently?",
+      "hideGloss": true,
+      "kokoroSpeaker": 6
+    },
+    {
+      "id": "w6-l10",
+      "speaker": "zuri",
+      "speakerLabel": "Zuri",
+      "text": "I would have explained the delay and asked a colleague to open a second counter.",
+      "glossYue": "我會向客人解釋點解要等，再請同事開第二個櫃位。",
+      "audio": "assets/audio/lines/w6-l10.mp3",
+      "audioSlow": "assets/audio/lines/w6-l10-slow.mp3",
+      "say": "I would have explained the delay and asked a colleague to open a second counter.",
+      "hideGloss": true,
+      "kokoroSpeaker": 3
     }
   ],
   "understand": [
@@ -205,16 +237,18 @@
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "My",
-        "strength",
-        "is",
-        "calm"
+        "I",
+        "stay",
+        "calm",
+        "under",
+        "pressure"
       ],
       "answer": [
-        "My",
-        "strength",
-        "is",
-        "calm"
+        "I",
+        "stay",
+        "calm",
+        "under",
+        "pressure"
       ]
     }
   ],
@@ -291,7 +325,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「I have three years of retail experience, and I am bilingual in Cantonese and English.」，bilingual 係咩意思？",
+      "prompt": "Zuri講「I have three years of retail experience, and I am bilingual in Cantonese and English.」，bilingual 係咩意思？",
       "choices": [
         "可靠嘅強項",
         "識兩種話，面試用得着",
@@ -353,5 +387,11 @@
     "經驗",
     "強項",
     "對客"
-  ]
+  ],
+  "challenge": {
+    "text": "Imagine you were the only person on duty. Which part of your plan would you change, and why?",
+    "glossYue": "假設當值嘅只得你一個，你會改計劃邊一部分？點解？",
+    "audio": "assets/audio/lines/w6-challenge.mp3",
+    "audioSlow": "assets/audio/lines/w6-challenge-slow.mp3"
+  }
 }

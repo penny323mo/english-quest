@@ -5,7 +5,7 @@ import { makeNewCard, reviewStored } from "./fsrs";
 import { DAILY_XP, startDay } from "./daily.mjs";
 import { createPersistence, exportJson, importJson, type LessonCursor, type Persisted, type SaveStatus } from "./persist.mjs";
 import { FALLBACK_LEARNER } from "./learner";
-import type { Goal, Level, Profile } from "./types";
+import type { Goal, Level, Profile, TransferRating } from "./types";
 
 type Store = Persisted & {
   ready: boolean;
@@ -17,6 +17,8 @@ type Store = Persisted & {
   setProfile: (profile: Profile) => void;
   updateProfile: (patch: Partial<Profile>) => void;
   completeLesson: (id: string, xp: number) => void;
+  recordStarter: (id: string, mode: "listen" | "read", correct: boolean) => void;
+  assessTransfer: (id: string, rating: TransferRating) => void;
   setLessonCursor: (cursor: LessonCursor | null) => void;
   armResume: () => void;
   restartLesson: (id: string) => void;
@@ -260,6 +262,18 @@ export const useStore = create<Store>((set) => ({
       };
     }),
   setLessonCursor: (cursor) => set((s) => (s.writable ? { lessonCursor: cursor } : s)),
+  recordStarter: (id, mode, correct) => set(s => {
+    if (!s.writable || !s.profile) return s;
+    const scores = s.profile.starterScores || {};
+    const row = scores[id] || { listen: [0, 0], read: [0, 0] };
+    const [right, total] = row[mode];
+    return { profile: { ...s.profile, starterScores: { ...scores,
+      [id]: { ...row, [mode]: [right + Number(correct), total + 1] },
+    } } };
+  }),
+  assessTransfer: (id, transfer) => set(s => s.writable && s.progress[id]
+    ? { progress: { ...s.progress, [id]: { ...s.progress[id], transfer, transferDays: { ...s.progress[id].transferDays, [todayKey()]: transfer } } } }
+    : s),
   armResume: () => set({ resumeArmed: true }),
   restartLesson: (id) => set((s) => s.writable
     ? { resumeArmed: false, lessonCursor: { lessonId: id, atHook: true, beat: 1, sub: 0, quizScore: 0, quizAnswered: 0 } }

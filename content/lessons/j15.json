@@ -154,7 +154,7 @@
       "prompt": "Can you make the ring half a size larger, and when can I collect it? 即係問緊咩？",
       "choices": [
         "問星期六開唔開",
-        "問可唔可以改大半碼",
+        "問可唔可以改大半碼，同埋幾時可以攞返",
         "問收據放喺邊"
       ],
       "answer": 1,
@@ -220,18 +220,28 @@
     },
     {
       "type": "order",
-      "promptYue": "排好呢句。",
+      "promptYue": "排好英文，講「可唔可以將隻戒指改大半個碼？」",
       "tokens": [
+        "Can",
+        "you",
+        "make",
+        "the",
+        "ring",
         "half",
         "a",
         "size",
-        "larger"
+        "larger?"
       ],
       "answer": [
+        "Can",
+        "you",
+        "make",
+        "the",
+        "ring",
         "half",
         "a",
         "size",
-        "larger"
+        "larger?"
       ]
     }
   ],

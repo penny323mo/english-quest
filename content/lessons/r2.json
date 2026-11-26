@@ -203,7 +203,7 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "What would you like to order from the menu today, please?",
+        "line": "What would you like to order from the menu, please?",
         "audio": "assets/audio/lines/r2-l1.mp3",
         "audioSlow": "assets/audio/lines/r2-l1-slow.mp3",
         "expect": "I'd like the chicken, please, and a small salad with it too.",
@@ -266,7 +266,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Can I have some water, please, and no ice in the glass?」，係咩意思？",
+      "prompt": "Tom講「Can I have some water, please, and no ice in the glass?」，係咩意思？",
       "choices": [
         "登機證",
         "要杯水，唔要冰",

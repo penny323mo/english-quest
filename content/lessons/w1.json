@@ -206,14 +206,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "Mei 唔喺度。你點先留口訊？",
+      "promptYue": "你係接線生，Mei 唔喺度。你點問對方要唔要留言？",
       "choices": [
-        "Please take a message for Mei.",
+        "May I take a message for Mei?",
         "Could we get a refill?",
         "Shall we split the bill?"
       ],
       "answer": 0,
-      "explain": "take a message 係留言。"
+      "explain": "take a message 係代人記低口訊。"
     },
     {
       "type": "order",
@@ -306,7 +306,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「She is not available, so please hold while I try the other line.」，係咩意思？",
+      "prompt": "Nia講「She is not available, so please hold while I try the other line.」，係咩意思？",
       "choices": [
         "等線",
         "添水",
@@ -317,7 +317,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I'll transfer you if the line is free, or note your callback number.」，係咩意思？",
+      "prompt": "Nia講「I'll transfer you if the line is free, or note your callback number.」，係咩意思？",
       "choices": [
         "而家收線",
         "轉駁去另一個人",

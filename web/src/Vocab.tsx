@@ -1,3 +1,4 @@
+import { wordAudio } from "./word-audio";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Rating, type Grade } from "ts-fsrs";
 import { asset, deckById, decks, lexById } from "./data";
@@ -222,8 +223,8 @@ function WordCard({
           <div className="word-sound">
             <StressChips item={item} />
             <span className="ipa">{item.ipa}</span>
-            <button className="word-play" type="button" aria-label="播放" onClick={() => playAsset(item.audio)}>▶</button>
-            <button className="word-play slow" type="button" aria-label="慢速" onClick={() => playAsset(item.audioSlow)}>▶ 慢速</button>
+            <button className="word-play" type="button" aria-label={`聽單字 ${item.lemma}`} onClick={() => playAsset(wordAudio[item.id].audio)}>▶</button>
+            <button className="word-play slow" type="button" aria-label={`慢速單字 ${item.lemma}`} onClick={() => playAsset(wordAudio[item.id].audioSlow)}>▶ 慢速</button>
           </div>
         </div>
       </div>
@@ -480,7 +481,7 @@ export function VocabQuiz({ deckId }: { deckId: string }) {
         <>
           <p className="fine">{index + 1} / {questions.length} · {question.kind === "listen" ? "聽選" : "意思選"}</p>
           {question.kind === "listen" ? (
-            <button className="btn block" type="button" onClick={() => playAsset(question.item.audio)}>聽問題</button>
+            <button className="btn block" type="button" onClick={() => playAsset(wordAudio[question.item.id].audio)}>聽問題</button>
           ) : (
             <h2>{question.item.glossYue}</h2>
           )}

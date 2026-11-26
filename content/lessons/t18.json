@@ -106,12 +106,13 @@
       "id": "t18-l6",
       "speaker": "kim",
       "speakerLabel": "Kim",
-      "text": "You should pay forty dollars in cash because that alcohol is well over.",
-      "glossYue": "因為酒過咗限額，你應該畀四十蚊現金。",
+      "text": "The duty on this bottle is forty dollars, payable in cash.",
+      "glossYue": "呢枝酒嘅關稅係四十蚊，要用現金交。",
       "audio": "assets/audio/lines/t18-l6.mp3",
       "audioSlow": "assets/audio/lines/t18-l6-slow.mp3",
-      "say": "You should pay forty dollars in cash because that alcohol is well over.",
-      "hideGloss": false
+      "say": "The duty on this bottle is forty dollars, payable in cash.",
+      "hideGloss": false,
+      "kokoroSpeaker": 5
     },
     {
       "id": "t18-l7",
@@ -171,7 +172,7 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "You should pay forty dollars in cash because that alcohol is well over.",
+        "line": "The duty on this bottle is forty dollars, payable in cash.",
         "audio": "assets/audio/lines/t18-l6.mp3",
         "audioSlow": "assets/audio/lines/t18-l6-slow.mp3",
         "expect": "Can I pay the duty at this counter before I leave, please?",

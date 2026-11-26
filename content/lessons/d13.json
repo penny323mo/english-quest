@@ -128,12 +128,13 @@
       "id": "d13-l8",
       "speaker": "ben",
       "speakerLabel": "Ben",
-      "text": "The filling is eight hundred dollars. Please don't eat for two hours.",
-      "glossYue": "補牙八百蚊。兩小時內唔好食嘢。",
+      "text": "The filling costs eight hundred dollars. We can book your next visit at the front desk.",
+      "glossYue": "補牙八百蚊。你可以喺接待處預約下次覆診。",
       "audio": "assets/audio/lines/d13-l8.mp3",
       "audioSlow": "assets/audio/lines/d13-l8-slow.mp3",
-      "say": "The filling is eight hundred dollars. Please don't eat for two hours.",
-      "hideGloss": false
+      "say": "The filling costs eight hundred dollars. We can book your next visit at the front desk.",
+      "hideGloss": false,
+      "kokoroSpeaker": 5
     }
   ],
   "roleplay": {
@@ -262,36 +263,22 @@
     },
     {
       "type": "order",
-      "promptYue": "排好呢句。",
+      "promptYue": "排好英文，講「補牙要幾多錢？」",
       "tokens": [
-        "It",
-        "is",
-        "eight",
-        "hundred",
-        "dollars",
-        "for",
+        "How",
+        "much",
+        "will",
         "the",
-        "filling.",
-        "Don't",
-        "eat",
-        "for",
-        "two",
-        "hours."
+        "filling",
+        "cost?"
       ],
       "answer": [
-        "It",
-        "is",
-        "eight",
-        "hundred",
-        "dollars",
-        "for",
+        "How",
+        "much",
+        "will",
         "the",
-        "filling.",
-        "Don't",
-        "eat",
-        "for",
-        "two",
-        "hours."
+        "filling",
+        "cost?"
       ]
     }
   ],

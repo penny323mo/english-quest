@@ -16,6 +16,8 @@ Dev and the production preview both use the Pages base path: http://127.0.0.1:51
 
 The path has 91 playable lessons from 97 lesson files. Six lessons are hidden following content review. Night-1 started with F1, F2, J1, J2, T1, and R1.
 
-Teaching audio uses Piper `en_US-ljspeech-medium` with the espeak voice set to `en-us`. Word-only clips for 每日抽卡 use Kokoro v0.19 voice `af` with per-card alternatives recorded in `content/word-audio-voices.json`, plus the licensed dictionary recordings listed in `content/word-audio-recordings.json`. The word selection script checks takes with Whisper and Parakeet. Regenerating audio requires the Piper environment in `PREP_PATH.txt`.
+Lesson and sentence recordings use US English. Most use Piper. Five B2 lessons use distinct Kokoro voices for the speakers, with selected recordings in F1, F2 and D4 also using Kokoro. Isolated vocabulary audio uses Kokoro or the three attributed dictionary recordings. Personal names use the device voice with a labelled Alex recording available offline.
 
-A passing `npm test` does not by itself mean the teaching lines are varied or the glosses match. Every lesson is inside its CEFR word cap. Known issues still open: mixed lesson-hero styles, a bare sound checkbox, thin oscillator sound effects, residual Cantonese gloss drift, and quiz items kept on watch. GitHub Pages builds and deploys the tested main commit through Actions.
+The candidate adds separate listening and reading practice for beginners, dated spoken-task self-assessment, two-speed examples on all visible vocabulary cards, and an offline pack with integrity checks and recovery. Its acceptance specification and learner trial cover pronunciation, usage, course progression and offline operation. [1.0 specification](RELEASE-1.0.md) · [Learner and listener trial](release-evidence/trial.md)
+
+GitHub Pages serves the tested main branch. Candidate builds are published separately as GitHub prereleases.

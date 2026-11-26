@@ -37,24 +37,41 @@ function runtimeScript(path: string): string | null {
   return runtimeScripts.get(path) ?? null;
 }
 
-function speakAloud(text: string): void {
-  if (typeof speechSynthesis === "undefined") return;
-  const utter = new SpeechSynthesisUtterance(text);
-  utter.lang = "en-US";
-  utter.rate = 0.92;
-  speechSynthesis.speak(utter);
-}
+// These recordings are also in the offline pack. Their Alex example is
+// labelled whenever device speech is unavailable for the learner's own name.
+const nameModels: Record<string, string> = {
+  "Good morning. My name is {{learner}}.": "greeting",
+  "My name is {{learner}}. {{learner-spell}}.": "spell",
+  "My name is {{learner}}.": "intro",
+};
 
 export function playAsset(path: string): HTMLAudioElement {
   const script = runtimeScript(path);
-  const node = audioElement();
-  if (script) {
-    stopAudio();
-    speakAloud(fillLearner(script, useStore.getState().profile?.name));
-    node.removeAttribute("src");
-    return node;
+  if (!script) return playUrl(asset(path));
+  stopAudio();
+  const node = replaceAudioElement();
+  const slow = path.endsWith("-slow.mp3");
+  function playDemo() {
+    if (node !== audioElement() || !script || !nameModels[script]) return;
+    window.dispatchEvent(new Event("eq-name-demo"));
+    node.src = asset("assets/audio/lines/name-demo-" + nameModels[script] + (slow ? "-slow" : "") + ".mp3");
+    void node.play().catch(() => {});
   }
-  return playUrl(asset(path));
+  try {
+    const voices = speechSynthesis.getVoices();
+    const local = voices.find(v => v.localService && /^en[-_]US$/i.test(v.lang))
+      || voices.find(v => v.localService && /^en\b/i.test(v.lang));
+    if (!navigator.onLine && !local) { playDemo(); return node; }
+    const utter = new SpeechSynthesisUtterance(fillLearner(script, useStore.getState().profile?.name));
+    if (local) utter.voice = local;
+    utter.lang = "en-US";
+    utter.rate = slow ? 0.72 : 0.92;
+    utter.onerror = event => {
+      if (!["interrupted", "canceled"].includes(event.error)) playDemo();
+    };
+    speechSynthesis.speak(utter);
+  } catch { playDemo(); }
+  return node;
 }
 
 /**

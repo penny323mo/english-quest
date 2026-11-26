@@ -25,15 +25,23 @@ function isHtml(response) {
  * @param {{ fetchImpl: typeof fetch, cachesImpl: CacheStorage, shellUrl: string, waitUntil?: (p: Promise<unknown>) => void }} deps
  * @returns {Promise<Response>}
  */
-export async function navigateNetworkFirst(request, { fetchImpl, cachesImpl, shellUrl, waitUntil, keepPage }) {
+export async function navigateNetworkFirst(request, { fetchImpl, cachesImpl, shellUrl, waitUntil, keepPage, onMissingPage }) {
   let response;
   try {
     response = await fetchImpl(request.url, { cache: "no-cache", credentials: "same-origin", redirect: "follow" });
-  } catch (err) {
+  } catch {
     const cache = await cachesImpl.open(SHELL_CACHE);
     const kept = await cache.match(shellUrl);
     if (kept) return kept;
-    throw err;
+    onMissingPage?.();
+    return new Response(`<!doctype html><html lang="zh-Hant"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>情景英文 · 離線學習</title>
+<style>body{font:18px/1.6 system-ui,sans-serif;color:#183b39;background:#fffbf2;max-width:34rem;margin:12vh auto;padding:0 1.25rem}button{font:inherit;padding:.6rem 1rem;cursor:pointer}</style>
+<main><h1>暫時開唔到離線課程</h1><p>瀏覽器入面搵唔到已下載嘅課程首頁。請連上網絡再試，開返 App 後可以喺設定重新下載課程包。</p>
+<form method="get"><button type="submit">重新連線後再試</button></form></main></html>`, {
+      status: 503,
+      headers: { "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" },
+    });
   }
   response = await unredirect(response);
   if (response.ok && isHtml(response)) {

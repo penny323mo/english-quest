@@ -3,8 +3,8 @@
   "unit": "F",
   "titleYue": "氣息同長短音",
   "titleEn": "Sounds and breath",
-  "canDoYue": "你識用慢呼吸分清短音 ship 同長音 sheep，仲識讀到 about 開頭嗰個輕音。",
-  "canDoEn": "Hear short ship and long sheep, and say the soft first sound in about.",
+  "canDoYue": "你識聽出 ship 同 sheep 嘅元音分別，亦識輕輕讀出 about 開頭嗰個音。",
+  "canDoEn": "Hear the difference between ship and sheep, and say the first sound in about.",
   "minutes": 12,
   "hero": "assets/art/lessons/f1.webp",
   "cast": [
@@ -49,11 +49,12 @@
       "id": "f1-l2",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Listen. Ship is short. Sheep is long.",
-      "glossYue": "聽住。Ship 係短音。Sheep 係長音。",
+      "text": "Listen to the difference between ship and sheep.",
+      "glossYue": "聽清楚 ship 同 sheep 嘅分別。",
       "audio": "assets/audio/lines/f1-l2.mp3",
       "audioSlow": "assets/audio/lines/f1-l2-slow.mp3",
-      "say": "Listen. Ship is short. Sheep is long."
+      "say": "Listen to the difference between ship and sheep.",
+      "kokoroSpeaker": 0
     },
     {
       "id": "f1-l3",
@@ -88,14 +89,14 @@
   ],
   "understand": [
     {
-      "prompt": "Ship is short. 係講緊咩？",
+      "prompt": "Mei 叫你留意 ship 同 sheep 邊度唔同？",
       "choices": [
-        "船呢個字係短元音",
-        "羊係短元音",
-        "請坐低"
+        "中間嘅元音",
+        "開頭嘅子音",
+        "字尾嘅子音"
       ],
       "answer": 0,
-      "explain": "ship 係 /ɪ/，短。sheep 先至係長音 /i/。"
+      "explain": "ship 入面係較鬆嘅 /ɪ/，sheep 入面係舌位較高嘅 /i/。兩個元音嘅音質同長短都有分別。"
     },
     {
       "prompt": "About 開頭嗰下係？",
@@ -155,12 +156,12 @@
   ],
   "shadow": {
     "lineId": "f1-l2",
-    "hint": "Listen. Ship is short. Sheep is long."
+    "hint": "Listen to the difference between ship and sheep."
   },
   "build": [
     {
       "type": "choice",
-      "promptYue": "Mei 話：Ship is short. Sheep is long. 邊句先係長音？",
+      "promptYue": "ship 同 sheep 邊個有舌位較高嘅 /i/？",
       "choices": [
         "Sheep",
         "Ship",
@@ -197,10 +198,10 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "Listen. Ship is short. Sheep is long.",
+        "line": "Listen to the difference between ship and sheep.",
         "audio": "assets/audio/lines/f1-l2.mp3",
         "audioSlow": "assets/audio/lines/f1-l2-slow.mp3",
-        "expect": "Ship. Sheep.",
+        "expect": "First, ship. Then, sheep.",
         "keywords": [
           "ship",
           "sheep"
@@ -282,20 +283,20 @@
     },
     {
       "type": "choice",
-      "prompt": "邊對先係短／長？",
+      "prompt": "邊對嘅元音係 /ɪ/ 同 /i/？",
       "choices": [
         "thank / sank",
         "wine / vine",
         "ship / sheep"
       ],
       "answer": 2,
-      "explain": "今課只分長短元音。"
+      "explain": "ship 用較鬆嘅 /ɪ/，sheep 用舌位較高嘅 /i/。"
     }
   ],
   "sound": {
     "ipa": "/ɪ/ · /i/",
     "title": "短音同長音",
-    "note": "短 /ɪ/：嘴微張，放鬆，一下就收。長 /i/：嘴角微微展開，拉長少少。用口型，唔好用粵拼代替英文音。about、the（子音前）開頭係更輕嘅 schwa /ə/，幾乎唔使出力。",
+    "note": "ship /ɪ/ 個舌位稍低，嘴唇放鬆。sheep /i/ 個舌位較高、較前，嘴角輕輕展開。聽清元音音質，再留意長短。about 開頭係輕聲 /ə/。the 喺子音前常讀 /ðə/，先用舌尖輕觸上下齒之間發 /ð/，再接 /ə/。",
     "pairs": [
       {
         "a": "ship-noun",

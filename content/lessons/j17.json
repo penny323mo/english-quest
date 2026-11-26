@@ -67,12 +67,13 @@
       "id": "j17-l2",
       "speaker": "ida",
       "speakerLabel": "Ida",
-      "text": "Saltwater pearls are brighter.",
-      "glossYue": "鹹水珍珠光澤更亮。",
+      "text": "They grow in different waters. This saltwater strand looks brighter.",
+      "glossYue": "佢哋喺唔同水域生長。呢條鹹水珍珠頸鏈睇落比較亮。",
       "audio": "assets/audio/lines/j17-l2.mp3",
       "audioSlow": "assets/audio/lines/j17-l2-slow.mp3",
-      "say": "Saltwater pearls are brighter.",
-      "hideGloss": false
+      "say": "They grow in different waters. This saltwater strand looks brighter.",
+      "hideGloss": false,
+      "kokoroSpeaker": 5
     },
     {
       "id": "j17-l3",
@@ -155,7 +156,7 @@
     {
       "prompt": "From two thousand to six thousand dollars, depending on the size and lustre of each freshwater pearl. 呢句即係點？",
       "choices": [
-        "珍珠價錢大約兩千到六千",
+        "淡水珍珠視乎大小同光澤，價錢由二千至六千蚊",
         "鹹水珍珠平啲",
         "證書寫住兩百"
       ],
@@ -222,14 +223,22 @@
     },
     {
       "type": "order",
-      "promptYue": "排好呢句。",
+      "promptYue": "排好英文，講「呢條頸鏈賣二千蚊。」",
       "tokens": [
+        "This",
+        "necklace",
+        "costs",
         "two",
-        "thousand"
+        "thousand",
+        "dollars."
       ],
       "answer": [
+        "This",
+        "necklace",
+        "costs",
         "two",
-        "thousand"
+        "thousand",
+        "dollars."
       ]
     }
   ],
@@ -240,7 +249,7 @@
       {
         "partner": "Ida",
         "partnerId": "ida",
-        "line": "Saltwater pearls are brighter.",
+        "line": "They grow in different waters. This saltwater strand looks brighter.",
         "audio": "assets/audio/lines/j17-l2.mp3",
         "audioSlow": "assets/audio/lines/j17-l2-slow.mp3",
         "expect": "What's the usual price for this short strand of freshwater pearls?",

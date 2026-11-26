@@ -74,33 +74,33 @@
       "id": "w3-l5",
       "speaker": "owen",
       "speakerLabel": "Owen",
-      "text": "Let's agree on Friday, and she can email us the update.",
-      "glossYue": "我哋同意星期五，佢可以發電郵話我哋知。",
+      "text": "Let's check with Mei before we confirm Friday.",
+      "glossYue": "我哋先問一問 Mei，再確認星期五得唔得。",
       "audio": "assets/audio/lines/w3-l5.mp3",
       "audioSlow": "assets/audio/lines/w3-l5-slow.mp3",
-      "say": "Let's agree on Friday, and she can email us the update.",
+      "say": "Let's check with Mei before we confirm Friday.",
       "hideGloss": false
     },
     {
       "id": "w3-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "I agree on Friday, but I suggest we mute and follow the agenda.",
-      "glossYue": "我同意星期五，但我建議靜音，跟返議程。",
+      "text": "Agreed. I'll ask her after the call. Shall we move on to the next item?",
+      "glossYue": "同意。開完電話會議我會問佢。我哋傾下一項好唔好？",
       "audio": "assets/audio/lines/w3-l6.mp3",
       "audioSlow": "assets/audio/lines/w3-l6-slow.mp3",
-      "say": "I agree on Friday, but I suggest we mute and follow the agenda.",
+      "say": "Agreed. I'll ask her after the call. Shall we move on to the next item?",
       "hideGloss": true
     },
     {
       "id": "w3-l7",
       "speaker": "owen",
       "speakerLabel": "Owen",
-      "text": "I see your point. Let's mute when we're not speaking.",
-      "glossYue": "我明白你嘅意思。我哋唔講嘢嗰陣就靜音。",
+      "text": "Yes. Let's move on to the next item on the agenda.",
+      "glossYue": "好。到議程下一項喇。",
       "audio": "assets/audio/lines/w3-l7.mp3",
       "audioSlow": "assets/audio/lines/w3-l7-slow.mp3",
-      "say": "I see your point. Let's mute when we're not speaking.",
+      "say": "Yes. Let's move on to the next item on the agenda.",
       "hideGloss": true
     },
     {
@@ -172,7 +172,7 @@
     },
     {
       "pattern": "Let's ___ on Friday, and she can email us the update.",
-      "example": "Let's agree on Friday, and she can email us the update.",
+      "example": "Let's check with Mei before we confirm Friday.",
       "glossYue": "我哋⋯⋯星期五。",
       "answer": "agree",
       "choices": [
@@ -195,14 +195,14 @@
   ],
   "shadow": {
     "lineId": "w3-l5",
-    "hint": "Let's agree on Friday, and she can email us the update."
+    "hint": "Let's check with Mei before we confirm Friday."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "同事擔心期限。你點先答？",
       "choices": [
-        "Let's agree on Friday, and she can email us the update.",
+        "Let's check with Mei before we confirm Friday.",
         "You might also like this matching pair.",
         "The necklace is eighteen dollars."
       ],
@@ -250,10 +250,10 @@
         "line": "I'm concerned Mei can't meet this new deadline on Friday.",
         "audio": "assets/audio/lines/w3-l4.mp3",
         "audioSlow": "assets/audio/lines/w3-l4-slow.mp3",
-        "expect": "Let's agree on Friday, and she can email us the update.",
+        "expect": "Let's check with Mei before we confirm Friday.",
         "keywords": [
-          "agree",
-          "friday"
+          "check",
+          "Friday"
         ],
         "modelAudio": "assets/audio/lines/w3-l5.mp3",
         "modelSlow": "assets/audio/lines/w3-l5-slow.mp3"
@@ -261,13 +261,13 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "I agree on Friday, but I suggest we mute and follow the agenda.",
+        "line": "Agreed. I'll ask her after the call. Shall we move on to the next item?",
         "audio": "assets/audio/lines/w3-l6.mp3",
         "audioSlow": "assets/audio/lines/w3-l6-slow.mp3",
-        "expect": "I see your point. Let's mute when we're not speaking.",
+        "expect": "Yes. Let's move on to the next item on the agenda.",
         "keywords": [
-          "point",
-          "mute"
+          "next",
+          "agenda"
         ],
         "modelAudio": "assets/audio/lines/w3-l7.mp3",
         "modelSlow": "assets/audio/lines/w3-l7-slow.mp3"
@@ -299,7 +299,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I'm concerned Mei can't meet this new deadline on Friday.」，concerned 係咩意思？",
+      "prompt": "Tom講「I'm concerned Mei can't meet this new deadline on Friday.」，concerned 係咩意思？",
       "choices": [
         "擔心",
         "免費",
@@ -309,7 +309,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The update says the deadline moved, and I'm worried about that task.」，task 係咩意思？",
+      "prompt": "Tom講「The update says the deadline moved, and I'm worried about that task.」，task 係咩意思？",
       "choices": [
         "收據",
         "工作",

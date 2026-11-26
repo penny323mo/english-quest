@@ -1,0 +1,305 @@
+{
+  "models": [
+    "base.en",
+    "small.en",
+    "parakeet"
+  ],
+  "human_listened": false,
+  "prior_commit": "bb8e98501ac296146315c5d8aff79361a7254d72",
+  "samples": [
+    {
+      "file": "assets/audio/words/water-noun.mp3",
+      "caption": "I'd like some water, please.",
+      "before": {
+        "sha256": "dbf7bbeb3e0305888a67810621b0b7597102bca15e69be31dcf03dc8b74d0a7c",
+        "transcripts": {
+          "base.en": "I'd like some more, please.",
+          "small.en": "I'd like some more, please.",
+          "parakeet": "I'd like some more, please."
+        }
+      },
+      "after": {
+        "sha256": "77628bddd69e5cfb1f57365cea07d8a04de9fe0d3cfdb6e8449a33aa9d9eed65",
+        "speaker": 1,
+        "transcripts": {
+          "base.en": "I'd like some water please.",
+          "small.en": "I'd like some water, please.",
+          "parakeet": "I'd like some water, please."
+        }
+      }
+    },
+    {
+      "file": "assets/audio/words/water-noun-slow.mp3",
+      "caption": "I'd like some water, please.",
+      "before": {
+        "sha256": "ab94e0999dee10a81ebb8dae48b21d22b379b4e292ea88607e1d10eb9daa1d31",
+        "transcripts": {
+          "base.en": "I'd like some water, please.",
+          "small.en": "I'd like some water, please.",
+          "parakeet": "I'd like some water, please."
+        }
+      },
+      "after": {
+        "sha256": "4e8d1286830859d13b745cf7f519cc4ba5eaed5dd51d7138ebb1d034df7b17bf",
+        "speaker": 1,
+        "transcripts": {
+          "base.en": "I'd like some water please.",
+          "small.en": "I'd like some water, please.",
+          "parakeet": "I'd like some water, please."
+        }
+      }
+    },
+    {
+      "file": "assets/audio/words/gift-box-phrase.mp3",
+      "caption": "This gift box is ready.",
+      "before": {
+        "sha256": "eba5b365750f1544c9d0eb3e5334d25ff9dfe35202b35fda2ec8c790e42e77dc",
+        "transcripts": {
+          "base.en": "This gift box is ready.",
+          "small.en": "This gift box is ready.",
+          "parakeet": "This gift barks is ready."
+        }
+      },
+      "after": {
+        "sha256": "9d1756f49dc5de4ab812729b0e1328da2e32e64cd48d5a1da8fba4973b3e9b7e",
+        "speaker": 1,
+        "transcripts": {
+          "base.en": "This gift box is ready.",
+          "small.en": "This gift box is ready.",
+          "parakeet": "This gift box is ready."
+        }
+      }
+    },
+    {
+      "file": "assets/audio/words/gift-box-phrase-slow.mp3",
+      "caption": "This gift box is ready.",
+      "before": {
+        "sha256": "fd2a8ba12c4e4933da37f45bce6cdcf91941fcde993c5f00694d5712c01d3511",
+        "transcripts": {
+          "base.en": "This gift box is ready.",
+          "small.en": "This gift barks is ready.",
+          "parakeet": "This gift Barks is ready."
+        }
+      },
+      "after": {
+        "sha256": "74e0619aa87291960361e7000596e65627cbe3abb8a8f806a3b517c861367e36",
+        "speaker": 1,
+        "transcripts": {
+          "base.en": "This gift box is ready.",
+          "small.en": "This gift box is ready.",
+          "parakeet": "This gift box is ready."
+        }
+      }
+    },
+    {
+      "file": "assets/audio/words/roughly-adv-ex2.mp3",
+      "caption": "The fare is roughly forty dollars.",
+      "before": {
+        "sha256": "dc6e66d102a6adaf03f64312c7a4b8a0455a1aa90e76b7876507c3748d9c9d21",
+        "transcripts": {
+          "base.en": "The fair is roughly $40.",
+          "small.en": "The fair is roughly four e-dorals.",
+          "parakeet": "The fare is roughly fory darles."
+        }
+      },
+      "after": {
+        "sha256": "af6b27e3ac986f2e80e95b01c7c0853ee6b03a47e3e13e92cf8fbadbf6c776c6",
+        "speaker": 2,
+        "transcripts": {
+          "base.en": "The fare is roughly $40.",
+          "small.en": "The fare is roughly $40.",
+          "parakeet": "The fare is roughly forty dollars."
+        }
+      }
+    },
+    {
+      "file": "assets/audio/words/roughly-adv-ex2-slow.mp3",
+      "caption": "The fare is roughly forty dollars.",
+      "before": {
+        "sha256": "2a2071fe8bdf8f662e681d3441f7100719552cf74cd03022dee704166b3b5b0f",
+        "transcripts": {
+          "base.en": "The fair is roughly four redder Alps.",
+          "small.en": "The fair is roughly fory darals.",
+          "parakeet": "The fare is roughly Foury d'Aramce."
+        }
+      },
+      "after": {
+        "sha256": "41541779325578edeac1c1c0929234a5b8c484de71b388b56af7addbd2ad8a2f",
+        "speaker": 2,
+        "transcripts": {
+          "base.en": "The fare is roughly $40.",
+          "small.en": "The fare is roughly $40.",
+          "parakeet": "The fare is roughly forty dollars."
+        }
+      }
+    },
+    {
+      "file": "assets/audio/words/hong-kong-noun.mp3",
+      "caption": "I am from Hong Kong, not from Macau.",
+      "before": {
+        "sha256": "b50ef36f278ba5a6ecd89be1bb199d4ec9a0d15faef648d3fc822e4cb369cd60",
+        "transcripts": {
+          "base.en": "I am from Harenkai, not from Macau.",
+          "small.en": "I am from Harenkind, Nart from Macau.",
+          "parakeet": "I am from Harin Khan, not from Macau."
+        }
+      },
+      "after": {
+        "sha256": "285bae956e9dbcdbf8eca2f771fca96c2b2fca8ffa583a3befe3b65104bbed04",
+        "speaker": 1,
+        "transcripts": {
+          "base.en": "I am from Hong Kong, not from Macau.",
+          "small.en": "I am from Hong Kong, not from Macau.",
+          "parakeet": "I am from Hong Kong, not from Macau."
+        }
+      }
+    },
+    {
+      "file": "assets/audio/words/hong-kong-noun-slow.mp3",
+      "caption": "I am from Hong Kong, not from Macau.",
+      "before": {
+        "sha256": "87c4ec9a78d6cdce76dcfdb58ec3be15f9cb169273f051b81bb89d19ebff34fd",
+        "transcripts": {
+          "base.en": "I am from Harin Khaing, Nark from Macau.",
+          "small.en": "I am from Haring, Kyne, Nart from Macau.",
+          "parakeet": "I am from Horing Kong, not from Macau."
+        }
+      },
+      "after": {
+        "sha256": "5ab58fab17a8d5f8e47aab0796962ccc3ac51c3c251a52350256ee2934725b36",
+        "speaker": 1,
+        "transcripts": {
+          "base.en": "I am from Hong Kong, not from Macau.",
+          "small.en": "I am from Hong Kong, not from Macau.",
+          "parakeet": "I am from Hong Kong, not from Macau."
+        }
+      }
+    },
+    {
+      "file": "assets/audio/words/tablet-noun.mp3",
+      "caption": "What is this tablet for?",
+      "before": {
+        "sha256": "0978207dc887cd7ae90e0789cf3ba3cffe80d0339bac9282e3231994aef5ba48",
+        "transcripts": {
+          "base.en": "What is this tub look for?",
+          "small.en": "What is this tablet for?",
+          "parakeet": "What is this templet for?"
+        }
+      },
+      "after": {
+        "sha256": "1f96d2f05dceb68eebecd3afdfdb330754c2d90c5ef3ccc14dab9a10548483f7",
+        "speaker": 1,
+        "transcripts": {
+          "base.en": "What is this tablet for?",
+          "small.en": "What is this tablet for?",
+          "parakeet": "What is this tablet for?"
+        }
+      }
+    },
+    {
+      "file": "assets/audio/words/tablet-noun-slow.mp3",
+      "caption": "What is this tablet for?",
+      "before": {
+        "sha256": "f179e6e2d1b239514b38732b58e33f0188c35e604488588622f847c54fe1aead",
+        "transcripts": {
+          "base.en": "What is this tablet for?",
+          "small.en": "What is this Toblix for?",
+          "parakeet": "What is this tablet for?"
+        }
+      },
+      "after": {
+        "sha256": "8438bf2862a3d040eddd907b77e6f98dc133a64c8f936fdda9ed6edfccc9d14f",
+        "speaker": 1,
+        "transcripts": {
+          "base.en": "What is this tablet for?",
+          "small.en": "What is this tablet for?",
+          "parakeet": "What is this tablet for?"
+        }
+      }
+    },
+    {
+      "file": "assets/audio/lines/d7-l5.mp3",
+      "caption": "It's eighty dollars in total, and the price covers the blow dry.",
+      "before": {
+        "sha256": "ae23a5acc08bf53e3914c5c3b6875d1ca6d8cd744ded61f44f439d70f6fc6ce4",
+        "transcripts": {
+          "base.en": "It's eight darlas in tow and the price covers the blow dry.",
+          "small.en": "It's eight darlas in toil and the price covers the blue dry.",
+          "parakeet": "It's eight darlers in toll, and the price covers the blue dry."
+        }
+      },
+      "after": {
+        "sha256": "f83dedb48f04293e22537b2ba0ac2223f309527fcc71e7b8511da42d8173d8d9",
+        "speaker": 1,
+        "transcripts": {
+          "base.en": "It's $80 in total, and the price covers the blow dry.",
+          "small.en": "It's $80 in total, and the price covers the blow dry.",
+          "parakeet": "It's eighty dollars in total, and the price covers the blow dry."
+        }
+      }
+    },
+    {
+      "file": "assets/audio/lines/d7-l5-slow.mp3",
+      "caption": "It's eighty dollars in total, and the price covers the blow dry.",
+      "before": {
+        "sha256": "ccb470ea7597eda9097a3f0d4b84803a364323117fcf5ab13c6acaaaa1a7a909",
+        "transcripts": {
+          "base.en": "It's a Darla's in Toal and the price covers the blow dry.",
+          "small.en": "It's 80 darlas in total and the price covers the blow dry.",
+          "parakeet": "It's eight darlers in toll and the price covers the blow dry."
+        }
+      },
+      "after": {
+        "sha256": "abbeb491cc3324f87566f8088fd035eda94ab31fdfaa955ef32e044fcdbab40f",
+        "speaker": 1,
+        "transcripts": {
+          "base.en": "It's $80 in total, and the price covers the blow dry.",
+          "small.en": "It's $80 in total, and the price covers the blow dry.",
+          "parakeet": "It's eighty dollars in total, and the price covers the blow dry."
+        }
+      }
+    },
+    {
+      "file": "assets/audio/lines/j20-l4.mp3",
+      "caption": "The labour charge is forty dollars on top of the gold.",
+      "before": {
+        "sha256": "9d065abe1ba2c35e353dedbef610ad0389b6f50655e2a68edd742bfae5b13a4f",
+        "transcripts": {
+          "base.en": "The labour charge is 4e darls on top of the gold.",
+          "small.en": "The labor charge is fory darls on tarp of the gold.",
+          "parakeet": "The labor charge is foury darls on tarp of the gold."
+        }
+      },
+      "after": {
+        "sha256": "53d0ce8226ff59bbc18fc1bd12e08a1c4b187741b1b75bf39ab6aae3feaeb70b",
+        "speaker": 1,
+        "transcripts": {
+          "base.en": "The labor charge is $40 on top of the gold.",
+          "small.en": "The labor charge is $40 on top of the gold.",
+          "parakeet": "The labor charge is forty dollars on top of the gold."
+        }
+      }
+    },
+    {
+      "file": "assets/audio/lines/j20-l4-slow.mp3",
+      "caption": "The labour charge is forty dollars on top of the gold.",
+      "before": {
+        "sha256": "e06ca5c1a67f02934bcd6fdd699a9f8928f9fe2c6406b495ebc33b74a1171c76",
+        "transcripts": {
+          "base.en": "The labor charge is 4e darles on top of the gold.",
+          "small.en": "The labor charge is 40 darls on tarp of the gold.",
+          "parakeet": "The labour charge is fory darls on tarp of the gold."
+        }
+      },
+      "after": {
+        "sha256": "3889313f1c3d8ecf9e7c660c0dd6b6a0b113f36abecbb743228477a70c88f4b3",
+        "speaker": 1,
+        "transcripts": {
+          "base.en": "The labor charge is $40 on top of the gold.",
+          "small.en": "The labor charge is $40 on top of the gold.",
+          "parakeet": "The labor charge is forty dollars on top of the gold."
+        }
+      }
+    }
+  ]
+}

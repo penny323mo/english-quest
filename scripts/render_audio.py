@@ -69,6 +69,7 @@ def text_hash(text: str) -> str:
 # Word-only clips (每日抽卡 🔊) whose plain spelling the voice would misread.
 WORD_SAY = {
     "a-art": "[[ə]]",
+    "of-prep": "[[ˈʌv]]",  # strong citation form; connected speech uses /əv/
     # The sentence uses the weak form ("[[kən]] I have…"); a card says the word itself.
     "can-verb": "can",
     # Word-only Kokoro readings: retain US rhotic vowels and vowel length. The
@@ -166,22 +167,25 @@ def clips() -> list[dict]:
     out = []
     seen = set()
 
-    def add(rel: str | None, say: str, sha_id: str | None, word: bool = False, speaker: int | None = None) -> None:
+    def add(rel: str | None, say: str, sha_id: str | None, word: bool = False, speaker: int | None = None, kokoro: int | None = None) -> None:
         if not rel or rel in seen:
             return
         seen.add(rel)
-        out.append({"rel": rel, "say": say, "sha_id": sha_id, "word": word, "speaker": speaker})
+        row = {"rel": rel, "say": say, "sha_id": sha_id, "word": word, "speaker": speaker}
+        if kokoro is not None:
+            row["kokoroSpeaker"] = kokoro
+        out.append(row)
 
     for item in lex["items"]:
-        add(item["audio"], item["say"], item["id"])
+        add(item["audio"], item["say"], item["id"], kokoro=item.get("kokoroSpeaker"))
         for example in item.get("examples") or []:
-            add(example.get("audio"), render_text(example), None)
+            add(example.get("audio"), render_text(example), None, kokoro=example.get("kokoroSpeaker"))
         for index, turn in enumerate(item.get("miniDialogue") or []):
-            add(turn.get("audio"), render_text(turn), None)
+            add(turn.get("audio"), render_text(turn), None, kokoro=turn.get("kokoroSpeaker"))
             if not turn.get("audio"):
-                add(f"assets/audio/words/{item['id']}-md{index}.mp3", render_text(turn), None)
+                add(f"assets/audio/words/{item['id']}-md{index}.mp3", render_text(turn), None, kokoro=turn.get("kokoroSpeaker"))
     for line in lines:
-        add(line["audio"], line["say"], None)
+        add(line["audio"], line["say"], None, kokoro=line.get("kokoroSpeaker"))
     for row in word_clips(include_skipped=True)["items"].values():
         add(row["audio"], row["say"], None, word=True, speaker=row.get("speaker", WORD_VOICE["speaker"]))
         if row.get("recording"):
@@ -248,6 +252,13 @@ class WordVoice:
             wf.setsampwidth(2)
             wf.setframerate(audio.sample_rate)
             wf.writeframes((np.clip(np.asarray(audio.samples), -1, 1) * 32767).astype(np.int16).tobytes())
+
+
+def render_input_hash(job: dict) -> str:
+    text = job["say"]
+    if "kokoroSpeaker" in job:
+        text = f"{WORD_VOICE['model']}/{job['kokoroSpeaker']}\n{text}"
+    return text_hash(text)
 
 
 def load_word_voice(says: list[str] | None = None, folder: Path | None = None) -> WordVoice:
@@ -409,13 +420,18 @@ def stamp_audio_text_hashes(lex: dict, rendered: dict) -> int:
     """Stamp audioTextSha256 with the text each clip was really rendered from."""
     stamped = 0
     for item in lex["items"]:
-        for example in item.get("examples") or []:
-            example["audioTextSha256"] = rendered[example["audio"]]
-            stamped += 1
-        for index, turn in enumerate(item.get("miniDialogue") or []):
+        turns = item.get("miniDialogue") or []
+        for index, turn in enumerate(turns):
             turn.setdefault("audio", f"assets/audio/words/{item['id']}-md{index}.mp3")
             turn.setdefault("audioSlow", f"assets/audio/words/{item['id']}-md{index}-slow.mp3")
-            turn["audioTextSha256"] = rendered[turn["audio"]]
+        for row in [*(item.get("examples") or []), *turns]:
+            # The manifest pins the synthesis voice. Cards expose the text hash.
+            clip = {"say": render_text(row)}
+            if "kokoroSpeaker" in row:
+                clip["kokoroSpeaker"] = row["kokoroSpeaker"]
+            if render_input_hash(clip) != rendered[row["audio"]]:
+                raise ValueError(f"Stale card audio: {row['audio']}")
+            row["audioTextSha256"] = text_hash(clip["say"])
             stamped += 1
     return stamped
 
@@ -448,12 +464,14 @@ def main() -> None:
             continue
         present = all(p.exists() and p.stat().st_size > 400 for p in (mp3, mp3_slow))
         voice_changed = job["word"] and (previous_words.get("voice") != WORD_VOICE or previous_speakers.get(rel, job["speaker"]) != job["speaker"])
-        if present and rendered.get(rel) == text_hash(job["say"]) and rel not in force and not voice_changed:
+        if present and rendered.get(rel) == render_input_hash(job) and rel not in force and not voice_changed:
             continue
         todo.append(job)
     print(f"clips {len(jobs)}; rendering {len(todo)} x2")
     TMP.mkdir(exist_ok=True)
     word_voice = load_word_voice() if any(job["word"] and not job.get("recording") for job in todo) else None
+    spoken = [job["say"] for job in todo if "kokoroSpeaker" in job]
+    dialogue_voice = load_word_voice(spoken) if spoken else None
     for done, job in enumerate(todo, 1):
         rel = job["rel"]
         stem = rel.replace("/", "_").replace(".mp3", "")
@@ -464,11 +482,13 @@ def main() -> None:
             rendered[rel] = text_hash(job["say"])
             continue
         v, speaker = (word_voice, job["speaker"]) if job["word"] else (voice, None)
+        if "kokoroSpeaker" in job:
+            v, speaker = dialogue_voice, job["kokoroSpeaker"]
         synth(v, job["say"], wav, 1.0, speaker)
         synth(v, job["say"], wav_s, 1.35, speaker)
         to_mp3(wav, ROOT / rel)
         to_mp3(wav_s, ROOT / rel.replace(".mp3", "-slow.mp3"))
-        rendered[rel] = text_hash(job["say"])
+        rendered[rel] = render_input_hash(job)
         if done % 20 == 0:
             print(f"  {done}/{len(todo)}")
     live = {job["rel"] for job in jobs}

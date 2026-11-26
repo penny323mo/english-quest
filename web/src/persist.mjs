@@ -36,7 +36,17 @@ function normalizeProfile(profile) {
   if (!MINUTES.has(profile.minutes)) throw bad("進度格式唔啱。");
   if (!LEVELS.has(profile.level)) throw bad("進度格式唔啱。");
   if (typeof profile.xp !== "number" || typeof profile.streak !== "number") throw bad("進度格式唔啱。");
+  const starterScores = {};
+  for (const id of ["F1", "F2", "F3"]) {
+    const score = profile.starterScores?.[id];
+    if (score && ["listen", "read"].every(mode => {
+      const pair = score[mode];
+      return Array.isArray(pair) && pair.length === 2 && pair.every(Number.isSafeInteger)
+        && pair[0] >= 0 && pair[0] <= pair[1];
+    })) starterScores[id] = { listen: score.listen, read: score.read };
+  }
   return {
+    ...(Object.keys(starterScores).length ? { starterScores } : {}),
     name: profile.name,
     goal: GOALS.has(profile.goal) ? profile.goal : FALLBACK_GOAL,
     minutes: profile.minutes,
@@ -58,6 +68,12 @@ function normalizeProgress(progress) {
       throw bad("進度格式唔啱。");
     }
     out[id] = { at: row.at, xp: row.xp };
+    if (row.transferDays && typeof row.transferDays === "object") {
+      const days = Object.entries(row.transferDays).filter(([date, rating]) =>
+        /^\d{4}-\d{2}-\d{2}$/.test(date) && ["practice", "guided", "independent"].includes(rating));
+      if (days.length) out[id].transferDays = Object.fromEntries(days);
+    }
+    if (["practice", "guided", "independent"].includes(row.transfer)) out[id].transfer = row.transfer;
   }
   return out;
 }

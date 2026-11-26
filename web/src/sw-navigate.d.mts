@@ -6,6 +6,7 @@ export function navigateNetworkFirst(
     cachesImpl: CacheStorage;
     shellUrl: string;
     keepPage?: (page: Response) => Promise<void>;
+    onMissingPage?: () => void;
     waitUntil?: (promise: Promise<unknown>) => void;
   },
 ): Promise<Response>;

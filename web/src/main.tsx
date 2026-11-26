@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { App } from "./App";
+import { installCourseWorker, isTrial } from "./course-worker";
 import "./styles.css";
 
 declare global {
@@ -31,13 +32,11 @@ void ready.then(() => {
       refreshing = true;
       window.location.reload();
     });
-    window.addEventListener("load", () => {
-      const base = import.meta.env.BASE_URL || "/";
-      void navigator.serviceWorker.register(`${base}sw.js`, {
-        scope: base,
-        updateViaCache: "none",
-      });
-    });
+    if (!isTrial || hadController) {
+      const install = () => { void installCourseWorker().catch(() => undefined); };
+      if (document.readyState === "complete") install();
+      else window.addEventListener("load", install, { once: true });
+    }
   }
   createRoot(root).render(
     <StrictMode>

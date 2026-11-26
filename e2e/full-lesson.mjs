@@ -1,5 +1,9 @@
 import http from "node:http";
 import fs from "node:fs";
+import { tmpdir } from "node:os";
+import assert from "node:assert/strict";
+import { checkPlaytest } from "./playtest.mjs";
+import { checkCourse } from "./course-coverage.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { chromium, webkit, devices } from "playwright";
@@ -14,8 +18,19 @@ if (!fs.existsSync(path.join(dist, "index.html"))) {
   process.exit(1);
 }
 
+const testOffline = process.env.EQ_FULL_OFFLINE === "1";
+let disconnected = false;
+let interrupt = false;
+const probe = "assets/audio/words/hello-intj-word.mp3";
 const server = http.createServer((req, res) => {
+  if (disconnected) { req.socket.destroy(); return; }
   const url = new URL(req.url || "/", "http://127.0.0.1");
+  if (interrupt && url.pathname.endsWith(probe)) { res.writeHead(503).end(); return; }
+  if (url.pathname === "/listen.html") {
+    res.writeHead(200, { "content-type": "text/html; charset=utf-8" });
+    fs.createReadStream(path.join(root, "release-evidence/listen.html")).pipe(res);
+    return;
+  }
   const prefix = "/english-quest";
   if (!url.pathname.startsWith(prefix)) {
     res.writeHead(404);
@@ -202,6 +217,21 @@ async function walkLesson(page, browserName) {
       }
     }
     if (await page.getByRole("button", { name: "去聽" }).count()) {
+      const starter = page.getByRole("region", {name: "起步聆聽"});
+      await starter.getByRole("button", {name: "只聽聲揀意思"}).click();
+      const first = await page.evaluate(() => window.__lastAudio);
+      assert.match(first, /(?:ship|sheep)-noun-word\.mp3$/);
+      await starter.getByRole("button", {name: "慢速重播"}).click();
+      assert.equal(await page.evaluate(() => window.__lastAudio), first.replace(".mp3", "-slow.mp3"));
+      const correct = first.endsWith("/ship-noun-word.mp3") ? "船" : "羊";
+      await starter.getByRole("button", {name: correct === "船" ? "羊" : "船", exact: true}).click();
+      await starter.getByText("再聽一次，再揀過。").waitFor();
+      await starter.getByRole("button", {name: correct, exact:true}).click();
+      await starter.getByText("聽啱咗。").waitFor();
+      await starter.getByRole("button", {name:"只睇字揀意思"}).click();
+      const written = await starter.locator('p[lang="en"]').innerText();
+      await starter.getByRole("button", {name:written === "ship" ? "船" : "羊",exact:true}).click();
+      await starter.getByText("第一次揀啱 · 聽聲 0 / 1 · 認字 1 / 1").waitFor();
       await tap(page, page.getByRole("button", { name: "去聽" }), browserName, "去聽");
       continue;
     }
@@ -270,12 +300,15 @@ async function walkLesson(page, browserName) {
 
 async function runBrowser(browserType) {
   const browserName = browserType.name();
-  const browser = await browserType.launch();
-  const page = await browser.newPage({
+  const profileDir = fs.mkdtempSync(path.join(tmpdir(), "english-quest-study-"));
+  const context = await browserType.launchPersistentContext(profileDir, {
     ...iphone,
     viewport: { width: 390, height: 844 },
     screen: { width: 390, height: 844 },
   });
+  const page = await context.newPage();
+  disconnected = false;
+  interrupt = testOffline;
   const size = page.viewportSize();
   if (!size || size.width !== 390 || size.height !== 844) {
     throw new Error(`${browserName} viewport ${size?.width}x${size?.height}`);
@@ -286,6 +319,7 @@ async function runBrowser(browserType) {
     const proto = HTMLAudioElement.prototype;
     const orig = proto.play;
     proto.play = function patchedPlay() {
+      window.__lastAudio = this.src;
       stats.play += 1;
       return orig.call(this).then(
         (value) => {
@@ -304,12 +338,35 @@ async function runBrowser(browserType) {
     crashed = true;
     log(browserName, "PAGE CRASH");
   });
-  browser.on("disconnected", () => log(browserName, "browser disconnected"));
   page.on("pageerror", (err) => log(browserName, `pageerror ${err.message}`));
   try {
     await onboard(page);
+    if (testOffline) {
+      await page.goto(origin + "#/settings");
+      await page.getByText("下載中斷。連線後可以繼續。").waitFor({timeout: 300000});
+      interrupt = false;
+      await page.getByRole("button", {name:"重新檢查及下載"}).click();
+      const ready = page.getByText("課程同錄音已齊備，可以離線學習。");
+      await ready.waitFor({timeout: 600000});
+      disconnected = true;
+      await page.reload({waitUntil:"domcontentloaded"});
+      await ready.waitFor();
+      assert.equal(await page.evaluate(async () => (await (await fetch("manifest.webmanifest")).json()).short_name), "情景英文");
+      const range = await page.evaluate(async path => {
+        const response = await fetch(path, {headers:{Range:"bytes=0-7"}});
+        return [response.status, [...new Uint8Array(await response.arrayBuffer())]];
+      }, probe);
+      assert.deepEqual(range, [206, [...fs.readFileSync(path.join(dist,probe)).subarray(0,8)]]);
+      log(browserName, "pack recovered; restarted without network and verified cached audio byte range");
+    }
     await openF1(page);
     const { audioTaps, body } = await walkLesson(page, browserName);
+    const transfer = page.getByRole("region", {name: "換個情境自己講"});
+    await transfer.getByRole("button", {name:"睇表達提示"}).click();
+    await transfer.getByRole("button", {name:"講完，睇下一個要求"}).click();
+    await transfer.getByRole("button", {name:"講完，核對表達"}).click();
+    await transfer.getByRole("button", {name:"用提示做到"}).click();
+    await transfer.getByText("上次自評 · 用提示做到").waitFor();
     if (audioTaps < 5) throw new Error(`${browserName} only played ${audioTaps} audio steps`);
     if (await page.getByRole("link", {name:"溫習呢課生字"}).getAttribute("href", {timeout:5000}) !== "#/vocab/lesson-F1") throw new Error("F1 recap deck link missing");
     const xp = body.match(/(\d+)\s*XP/);
@@ -345,6 +402,9 @@ async function runBrowser(browserType) {
     await page.getByRole("button", { name: "入去場景" }).waitFor({ timeout: 15000 });
     const after = await readState(page);
     if (!after.progress.F1) throw new Error(`${browserName} progress lost after reload`);
+    assert.equal(after.progress.F1.transfer, "guided");
+    assert.deepEqual(after.profile.starterScores.F1, {listen:[0,1],read:[1,1]});
+    assert.ok(Object.values(after.progress.F1.transferDays).includes("guided"));
     if (after.progress.F1.xp !== lessonXp) throw new Error(`${browserName} lesson xp changed`);
     if (after.profile.xp !== xpBefore) throw new Error(`${browserName} profile xp changed`);
     await page.goto(`${origin}#/`, { waitUntil: "domcontentloaded" });
@@ -356,6 +416,8 @@ async function runBrowser(browserType) {
     await page.getByRole("link", {name: "生字回顧", exact: true}).click();
     await page.getByRole("link", {name: /打好基礎/}).click({timeout: 5000});
     await page.locator(".word-card").waitFor();
+    await page.getByRole("button", {name:/^聽單字 /}).click();
+    assert.match(await page.evaluate(() => window.__lastAudio), /-word\.mp3$/);
     await page.goto(`${origin}#/vocab/lesson-F1`);
     const lessonWords = JSON.parse(fs.readFileSync(path.join(root, "content/lessons/f1.json"))).lemmas;
     const lexicon = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"))).items;
@@ -364,16 +426,22 @@ async function runBrowser(browserType) {
     await page.getByRole("link", {name: "小測"}).click();
     await page.getByRole("button", {name: "聽問題"}).waitFor();
     log(browserName, `persisted xp ${after.profile.xp} audioTaps ${audioTaps}`);
+    await checkCourse(page, origin, after);
     if (crashed) throw new Error(`${browserName} crashed`);
   } finally {
-    await browser.close().catch(() => {});
+    disconnected = false;
+    await context.close();
+    fs.rmSync(profileDir, { recursive: true, force: true });
   }
 }
 
 const only = process.argv[2];
 const types = [webkit, chromium].filter((type) => !only || type.name() === only);
 try {
-  for (const type of types) await runBrowser(type);
+  for (const type of types) {
+    await checkPlaytest(type, origin);
+    await runBrowser(type);
+  }
   console.log("full-lesson e2e ok");
 } finally {
   server.close();
