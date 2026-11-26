@@ -1,5 +1,5 @@
 /// <reference lib="webworker" />
-import { cleanupOutdatedCaches, PrecacheController, PrecacheRoute } from "workbox-precaching";
+import { PrecacheController } from "workbox-precaching";
 import { cacheNames } from "workbox-core";
 import { registerRoute } from "workbox-routing";
 import { NetworkOnly } from "workbox-strategies";
@@ -36,6 +36,7 @@ registerRoute(
       fetchImpl: fetch,
       cachesImpl: caches,
       shellUrl: self.registration.scope,
+      keepPage,
       waitUntil: (promise) => (event as ExtendableEvent).waitUntil(promise),
     }),
 );
@@ -43,8 +44,42 @@ registerRoute(
   ({ url }) => SHELL.test(url.pathname),
   new NetworkOnly({ fetchOptions: { cache: "no-cache" } }),
 );
-registerRoute(new PrecacheRoute(precacheController));
-cleanupOutdatedCaches();
+const urls = precacheController.getURLsToCacheKeys();
+const scope = self.registration.scope;
+const entryUrlForBuild = [...urls.keys()].find((url) => /\/assets\/index-[^/]+\.js$/.test(url));
+const bootFiles = [...urls].filter(([url]) => /\.(?:js|css)$/.test(url));
+let bootReady = false;
+let packReady = false;
+
+async function keepPage(page: Response) {
+  if (!entryUrlForBuild || !bootReady) return;
+  const entryPath = new URL(entryUrlForBuild).pathname;
+  if (!(await page.clone().text()).includes(entryPath)) return;
+  const shells = await caches.open(SHELL_CACHE);
+  const previous = await shells.match(scope);
+  if (previous && !packReady && !(await previous.text()).includes(entryPath)) return;
+  await shells.put(scope, page);
+}
+
+registerRoute(
+  ({ url }) => url.href.startsWith(scope + "assets/") || urls.has(url.href),
+  async ({ request }) => {
+    const cache = await caches.open(cacheNames.precache);
+    const key = urls.get(request.url);
+    const hit = key && await cache.match(key);
+    if (hit) return hit;
+    // A saved page may still reference a previous fingerprint or audio revision.
+    try {
+      const response = await fetch(request);
+      if (response.ok) return response;
+      return await cache.match(request, { ignoreSearch: true }) ?? response;
+    } catch (error) {
+      const previous = await cache.match(request, { ignoreSearch: true });
+      if (previous) return previous;
+      throw error;
+    }
+  },
+);
 
 self.addEventListener("install", () => {
   self.skipWaiting();
@@ -78,47 +113,72 @@ async function purgeOldShell(): Promise<boolean> {
   return removed;
 }
 
-let precacheTask: Promise<void> | null = null;
+let precacheTask: Promise<void> | undefined;
+
+async function download(cache: Cache, files: [string, string][], present: Set<string>) {
+  const missing = files.filter(([, key]) => !present.has(key));
+  let at = 0;
+  let failure: unknown;
+  async function next() {
+    while (!failure && at < missing.length) {
+      const [url, key] = missing[at++];
+      try {
+        const response = await fetch(url, { cache: "reload" });
+        if (!response.ok) throw new Error("Offline asset HTTP " + response.status);
+        await cache.put(key, response);
+        present.add(key);
+      } catch (error) { failure = error; }
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(6, missing.length) }, next));
+  if (failure) throw failure;
+}
+
+async function refreshPage() {
+  const response = await fetch(scope, { cache: "no-cache" });
+  if (!response.ok || !response.headers.get("content-type")?.includes("text/html")) return false;
+  await keepPage(response);
+  const saved = await (await caches.open(SHELL_CACHE)).match(scope);
+  return Boolean(entryUrlForBuild && saved && (await saved.text()).includes(new URL(entryUrlForBuild).pathname));
+}
+
 function precacheInBackground(): Promise<void> {
   if (!precacheTask) {
     precacheTask = (async () => {
-      try {
-        const fake = {
-          type: "install",
-          waitUntil(promise: Promise<unknown>) {
-            void Promise.resolve(promise).catch(() => undefined);
-          },
-        } as ExtendableEvent;
-        await precacheController.install(fake);
-      } catch {
-        // A missed asset must not put the dark shell back in control.
-      }
-    })();
+      const cache = await caches.open(cacheNames.precache);
+      const present = new Set((await cache.keys()).map((request) => request.url));
+      await download(cache, bootFiles, present);
+      bootReady = true;
+      await refreshPage();
+      await download(cache, [...urls], present);
+      packReady = true;
+      if (await refreshPage()) await purgeOldShell();
+      else throw new Error("Offline page does not match this worker");
+    })().catch(() => {
+      packReady = false;
+      precacheTask = undefined;
+    });
   }
   return precacheTask;
 }
 
 self.addEventListener("activate", (event) => {
   event.waitUntil((async () => {
-    const removedShell = await purgeOldShell();
+    // Only legacy workers lack a separate saved page. Remove their dark shell
+    // immediately; modern updates retain their previous playable pack.
+    const hasSavedPage = await (await caches.open(SHELL_CACHE)).match(scope);
+    const removedShell = !hasSavedPage && await purgeOldShell();
     await self.clients.claim();
     if (removedShell) {
       const windows = await self.clients.matchAll({ type: "window", includeUncontrolled: true });
       for (const client of windows) {
-        if (client.url.startsWith(self.registration.scope)) void client.navigate(client.url);
+        if (client.url.startsWith(scope)) void client.navigate(client.url);
       }
     }
     void precacheInBackground();
-    // Keep the offline copy of the page in step with this worker's assets.
-    void navigateNetworkFirst({ url: self.registration.scope }, {
-      fetchImpl: fetch,
-      cachesImpl: caches,
-      shellUrl: self.registration.scope,
-    }).catch(() => undefined);
   })());
 });
 
 self.addEventListener("fetch", (event) => {
-  if (event.request.mode === "navigate") return;
   event.waitUntil(precacheInBackground());
 });

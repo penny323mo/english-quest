@@ -52,3 +52,10 @@ test("the app filters hidden lessons and cards where it loads them", () => {
   assert.match(data, /items: lexAll\.items\.filter\(\(item\) => !item\.hidden\)/);
   assert.match(data, /\.filter\(\(lesson\) => !\(lesson as \{ hidden\?: boolean \}\)\.hidden\)/);
 });
+
+test("README distinguishes all source lessons from the learner's visible path", () => {
+  const visible = pathFile.units.flatMap(unit => unit.lessons).length;
+  const readme = fs.readFileSync(path.join(root, "README.md"), "utf8");
+  assert.ok(readme.includes(`${visible} playable lessons`));
+  assert.ok(readme.includes(`${lessonFiles.length} lesson files`));
+});

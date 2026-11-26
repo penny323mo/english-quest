@@ -6,6 +6,7 @@ export const STATE_KEY: string;
 export const FALLBACK_GOAL: "foundation";
 
 export type LessonCursor = {
+  atHook?: true;
   lessonId: string;
   beat: number;
   sub: number;

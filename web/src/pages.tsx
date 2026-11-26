@@ -12,7 +12,7 @@ import {
   todayLessonId,
 } from "./data";
 import { BEAT_LABELS } from "./beats";
-import { macauDate } from "./daily.mjs";
+import { useMacauDate } from "./use-macau-date";
 import { GOAL_LABEL, GoalPick } from "./goals";
 import { isDue } from "./fsrs";
 import { FALLBACK_LEARNER, fillLearner } from "./learner";
@@ -105,8 +105,9 @@ export function PathHome() {
   const progress = useStore((s) => s.progress);
   const lessonCursor = useStore((s) => s.lessonCursor);
   const armResume = useStore((s) => s.armResume);
-  const setLessonCursor = useStore((s) => s.setLessonCursor);
+  const restartLesson = useStore((s) => s.restartLesson);
   const daily = useStore((s) => s.daily);
+  const day = useMacauDate();
   const started = lessonCursor?.lessonId ?? null;
   const recommended = profile ? todayLessonId(profile.goal, progress, started) : null;
   const resumeLesson = lessonCursor ? lessonById[lessonCursor.lessonId] : undefined;
@@ -132,7 +133,7 @@ export function PathHome() {
   const done = SHIPPED.filter((id) => progress[id]).length;
   const todayTitle = recommended ? lessonById[recommended]?.titleYue : undefined;
   const studiedToday = profile.lastActive === todayStamp();
-  const dailyToday = daily && daily.date === macauDate() ? daily : null;
+  const dailyToday = daily && daily.date === day ? daily : null;
   const dailyDone = Boolean(dailyToday?.done);
   const dailyStarted = Boolean(dailyToday);
   return (
@@ -173,7 +174,7 @@ export function PathHome() {
       ) : null}
       {resumeOpen && lessonCursor && resumeLesson ? (
         <div className="resume-banner">
-          <p>未完成：{resumeLesson.titleYue}。停喺{BEAT_LABELS[lessonCursor.beat]}。</p>
+          <p>未完成：{resumeLesson.titleYue}。停喺{BEAT_LABELS[lessonCursor.atHook ? 0 : lessonCursor.beat]}。</p>
           <button
             className="btn block"
             type="button"
@@ -190,7 +191,7 @@ export function PathHome() {
             type="button"
             onClick={() => {
               const id = lessonCursor.lessonId;
-              setLessonCursor(null);
+              restartLesson(id);
               playSfx("tap");
               go(`#/lesson/${id}`);
             }}

@@ -9,7 +9,7 @@ import { SaveBanner } from "./save-banner";
 import { VersionBadge } from "./version-badge";
 import type { Route } from "./types";
 
-const Daily = lazy(() => import("./Daily"));
+const Daily = lazy(() => import("./DailyPage"));
 
 export default function Shell({ route }: { route: Route }) {
   const profile = useStore((s) => s.profile);
@@ -35,8 +35,8 @@ export default function Shell({ route }: { route: Route }) {
   else if (route.name === "settings") body = <Settings />;
   else if (route.name === "attributions") body = <Attributions />;
   else if (route.name === "lesson") body = <LessonView id={route.id} />;
-  else if (route.name === "vocab" && route.quiz && route.deckId) body = <VocabQuiz deckId={route.deckId} />;
-  else if (route.name === "vocab" && route.deckId) body = <VocabDeck deckId={route.deckId} />;
+  else if (route.name === "vocab" && route.quiz && route.deckId) body = <VocabQuiz key={route.deckId} deckId={route.deckId} />;
+  else if (route.name === "vocab" && route.deckId) body = <VocabDeck key={route.deckId} deckId={route.deckId} />;
   else if (route.name === "vocab") body = <VocabHub />;
   else if (route.name === "daily") body = <Suspense fallback={null}><Daily /></Suspense>;
 

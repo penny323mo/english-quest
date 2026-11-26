@@ -6,7 +6,7 @@ import { chromium, webkit, devices } from "playwright";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
-const shots = "/opt/cursor/artifacts/screenshots";
+const shots = process.env.EQ_SHOTS || path.join(root, "daily-shots");
 fs.mkdirSync(shots, { recursive: true });
 
 if (!fs.existsSync(path.join(dist, "index.html"))) {
@@ -311,6 +311,7 @@ async function runBrowser(browserType) {
     await openF1(page);
     const { audioTaps, body } = await walkLesson(page, browserName);
     if (audioTaps < 5) throw new Error(`${browserName} only played ${audioTaps} audio steps`);
+    if (await page.getByRole("link", {name:"溫習呢課生字"}).getAttribute("href", {timeout:5000}) !== "#/vocab/lesson-F1") throw new Error("F1 recap deck link missing");
     const xp = body.match(/(\d+)\s*XP/);
     if (!xp || Number(xp[1]) <= 0) throw new Error(`${browserName} result missing XP: ${body.slice(0, 300)}`);
     if (!body.includes("搞掂")) throw new Error(`${browserName} missing result heading`);
@@ -352,6 +353,16 @@ async function runBrowser(browserType) {
     if (!home.includes(`${xpBefore} XP`)) throw new Error(`${browserName} home hid XP: ${home.slice(0, 400)}`);
     if (!home.includes("完成")) throw new Error(`${browserName} home hid finished lesson`);
     await page.screenshot({ path: path.join(shots, `${browserName}-f1-persisted.png`) });
+    await page.getByRole("link", {name: "生字回顧", exact: true}).click();
+    await page.getByRole("link", {name: /打好基礎/}).click({timeout: 5000});
+    await page.locator(".word-card").waitFor();
+    await page.goto(`${origin}#/vocab/lesson-F1`);
+    const lessonWords = JSON.parse(fs.readFileSync(path.join(root, "content/lessons/f1.json"))).lemmas;
+    const lexicon = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"))).items;
+    const allowed = new Set(lexicon.filter(item => lessonWords.includes(item.id)).map(item => item.lemma));
+    if (!allowed.has(await page.locator(".word-card h2").innerText())) throw new Error("F1 deck showed another lesson's word");
+    await page.getByRole("link", {name: "小測"}).click();
+    await page.getByRole("button", {name: "聽問題"}).waitFor();
     log(browserName, `persisted xp ${after.profile.xp} audioTaps ${audioTaps}`);
     if (crashed) throw new Error(`${browserName} crashed`);
   } finally {

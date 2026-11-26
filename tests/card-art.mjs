@@ -49,7 +49,7 @@ test("the pictures match what build.mjs makes from map.txt", () => {
 });
 
 test("the card shows its picture, or a placeholder when none is listed", () => {
-  const src = fs.readFileSync(path.join(root, "web/src/Daily.tsx"), "utf8");
+  const src = fs.readFileSync(path.join(root, "web/src/DailyPage.tsx"), "utf8");
   assert.match(src, /const src = cardArt\[item\.id\];/);
   assert.match(src, /data-placeholder="true"/);
 });

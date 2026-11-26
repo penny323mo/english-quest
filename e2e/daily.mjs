@@ -12,7 +12,7 @@ import { NOT_DRAWN, macauDate } from "../web/src/daily.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const dist = path.join(root, "dist");
-const shots = process.env.EQ_SHOTS || "/opt/cursor/artifacts/screenshots";
+const shots = process.env.EQ_SHOTS || path.join(root, "daily-shots");
 fs.mkdirSync(shots, { recursive: true });
 const lex = JSON.parse(fs.readFileSync(path.join(root, "content/lexicon.json"), "utf8"));
 const lexById = Object.fromEntries(lex.items.map((item) => [item.id, item]));
@@ -389,9 +389,10 @@ async function runBrowser(browserType, browserName) {
     check(`${tag} XP not given twice`, (await page.locator(".path-head").innerText()).includes("10 XP"));
 
     // The next Macau day: a fresh draw with none of yesterday's cards.
-    await page.clock.setFixedTime(NEXT_DAY);
     await page.goto(`${origin}#/daily`);
-    await page.reload();
+    await page.locator(".draw-done").waitFor();
+    await page.clock.setFixedTime(NEXT_DAY);
+    await page.evaluate(() => window.dispatchEvent(new Event("focus")));
     await page.getByRole("button", { name: "跳過動畫" }).click();
     const next = await page.locator(".draw-card").getAttribute("data-card");
     const nextState = await exportState(page);

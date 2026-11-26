@@ -53,3 +53,12 @@ test("a commit no longer at the tip of main does not deploy over a newer one", (
 test("the build is still checked against its source before upload", () => {
   assert.ok(body.indexOf("verify-build.mjs") < body.indexOf("upload-pages-artifact"));
 });
+
+test("main CI includes a reusable acoustic check before Pages may deploy its SHA", () => {
+  const audio = fs.readFileSync(path.join(root, ".github/workflows/audio-asr.yml"), "utf8");
+  assert.match(audio, /workflow_call:/);
+  assert.match(ci, /uses: \.\/\.github\/workflows\/audio-asr.yml/);
+  assert.match(ci, /needs: audio-scope/);
+  assert.match(audio, /--changed "\$ASR_BASE" --slow/);
+  assert.match(ci, /github\.event_name == 'push' && github\.ref == 'refs\/heads\/main'/);
+});

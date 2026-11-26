@@ -401,7 +401,7 @@ test("installed PWAs pick up replaced teaching audio", () => {
   assert.match(config, /injectManifest/);
   assert.equal(config.includes("navigateFallback: \"index.html\""), false);
   assert.match(sw, /NetworkOnly/);
-  assert.match(sw, /cleanupOutdatedCaches/);
+  assert.match(sw, /if \(await refreshPage\(\)\) await purgeOldShell\(\)/);
   assert.match(sw, /index\.html/);
   assert.equal(config.includes("eq-audio"), false);
   assert.equal(sw.includes("eq-audio"), false);
