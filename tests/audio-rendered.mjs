@@ -25,9 +25,9 @@ const renderText = (row, shown) => (typeof row.say === "string" && row.say.lengt
 function clips() {
   const out = [];
   for (const item of lex.items) {
-    out.push({ rel: item.audio, shown: item.example, say: item.say, where: `${item.id} main` });
+    out.push({ rel: item.audio, shown: item.example, say: item.say, where: `${item.id} main`, speaker: item.kokoroSpeaker });
     for (const [i, ex] of (item.examples || []).entries()) {
-      out.push({ rel: ex.audio, shown: ex.en, say: renderText(ex, ex.en), where: `${item.id} ex${i}` });
+      out.push({ rel: ex.audio, shown: ex.en, say: renderText(ex, ex.en), where: `${item.id} ex${i}`, speaker: ex.kokoroSpeaker });
     }
     for (const [i, turn] of (item.miniDialogue || []).entries()) {
       const rel = turn.audio || `assets/audio/words/${item.id}-md${i}.mp3`;
@@ -112,4 +112,15 @@ test("no voiced text contains IPA between slashes", () => {
     .filter((clip) => ipa.test(clip.say.replace(/\[\[[^\]]+\]\]/g, "")) || ipa.test(clip.shown))
     .map((clip) => `${clip.where}: ${clip.shown}`);
   assert.deepEqual(found, [], "keep IPA in the Cantonese gloss or notes, not in a sentence the voice reads");
+});
+
+test("priority listening transcripts correspond to the distributed recordings and captions", () => {
+  const evidence = read("release-evidence/priority-speech.json");
+  const captions = new Map(clips().map(clip => [clip.rel, clip.shown]));
+  assert.equal(new Set(evidence.samples.map(sample => sample.file)).size, 14);
+  for (const sample of evidence.samples) {
+    assert.equal(sha(fs.readFileSync(path.join(root, sample.file))), sample.after.sha256, sample.file);
+    assert.equal(captions.get(sample.file.replace(/-slow\.mp3$/, ".mp3")), sample.caption, sample.file);
+    for (const model of evidence.models) assert.ok(sample.after.transcripts[model], sample.file);
+  }
 });

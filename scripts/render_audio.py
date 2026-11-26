@@ -167,24 +167,25 @@ def clips() -> list[dict]:
     out = []
     seen = set()
 
-    def add(rel: str | None, say: str, sha_id: str | None, word: bool = False, speaker: int | None = None) -> None:
+    def add(rel: str | None, say: str, sha_id: str | None, word: bool = False, speaker: int | None = None, kokoro: int | None = None) -> None:
         if not rel or rel in seen:
             return
         seen.add(rel)
-        out.append({"rel": rel, "say": say, "sha_id": sha_id, "word": word, "speaker": speaker})
+        row = {"rel": rel, "say": say, "sha_id": sha_id, "word": word, "speaker": speaker}
+        if kokoro is not None:
+            row["kokoroSpeaker"] = kokoro
+        out.append(row)
 
     for item in lex["items"]:
-        add(item["audio"], item["say"], item["id"])
+        add(item["audio"], item["say"], item["id"], kokoro=item.get("kokoroSpeaker"))
         for example in item.get("examples") or []:
-            add(example.get("audio"), render_text(example), None)
+            add(example.get("audio"), render_text(example), None, kokoro=example.get("kokoroSpeaker"))
         for index, turn in enumerate(item.get("miniDialogue") or []):
             add(turn.get("audio"), render_text(turn), None)
             if not turn.get("audio"):
                 add(f"assets/audio/words/{item['id']}-md{index}.mp3", render_text(turn), None)
     for line in lines:
-        add(line["audio"], line["say"], None)
-        if "kokoroSpeaker" in line:
-            out[-1]["kokoroSpeaker"] = line["kokoroSpeaker"]
+        add(line["audio"], line["say"], None, kokoro=line.get("kokoroSpeaker"))
     for row in word_clips(include_skipped=True)["items"].values():
         add(row["audio"], row["say"], None, word=True, speaker=row.get("speaker", WORD_VOICE["speaker"]))
         if row.get("recording"):
@@ -420,7 +421,13 @@ def stamp_audio_text_hashes(lex: dict, rendered: dict) -> int:
     stamped = 0
     for item in lex["items"]:
         for example in item.get("examples") or []:
-            example["audioTextSha256"] = rendered[example["audio"]]
+            # The render manifest additionally pins the voice. Cards expose the text hash.
+            clip = {"say": render_text(example)}
+            if "kokoroSpeaker" in example:
+                clip["kokoroSpeaker"] = example["kokoroSpeaker"]
+            if render_input_hash(clip) != rendered[example["audio"]]:
+                raise ValueError(f"Stale example audio: {example['audio']}")
+            example["audioTextSha256"] = text_hash(clip["say"])
             stamped += 1
         for index, turn in enumerate(item.get("miniDialogue") or []):
             turn.setdefault("audio", f"assets/audio/words/{item['id']}-md{index}.mp3")

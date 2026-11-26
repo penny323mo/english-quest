@@ -187,7 +187,7 @@ def clips() -> list[dict]:
     out: list[dict] = []
     seen: set[str] = set()
 
-    def add(rel: str | None, shown: str, say: str, where: str, ref: str | None = None) -> None:
+    def add(rel: str | None, shown: str, say: str, where: str, ref: str | None = None, kokoro: int | None = None) -> None:
         if not rel or rel in seen:
             return
         seen.add(rel)
@@ -196,21 +196,21 @@ def clips() -> list[dict]:
         row = {"rel": rel, "text": shown, "say": say, "where": where, "word": where.endswith(" word")}
         if ref:
             row["ref"] = ref
+        if kokoro is not None:
+            row.update(kokoroSpeaker=kokoro, speaker=kokoro, ref=say)
         out.append(row)
 
     for item in lex["items"]:
-        add(item["audio"], item.get("example") or item["lemma"], item["say"], f"{item['id']} main")
+        add(item["audio"], item.get("example") or item["lemma"], item["say"], f"{item['id']} main", kokoro=item.get("kokoroSpeaker"))
         for i, ex in enumerate(item.get("examples") or []):
-            add(ex.get("audio"), ex["en"], render_text(ex), f"{item['id']} ex{i}")
+            add(ex.get("audio"), ex["en"], render_text(ex), f"{item['id']} ex{i}", kokoro=ex.get("kokoroSpeaker"))
         for i, turn in enumerate(item.get("miniDialogue") or []):
             rel = turn.get("audio") or f"assets/audio/words/{item['id']}-md{i}.mp3"
             add(rel, turn["en"], render_text(turn), f"{item['id']} md{i}")
     for line in lines:
         if line.get("runtimeTts"):
             continue  # the device voice speaks this line
-        add(line["audio"], line["text"], line["say"], line["id"])
-        if "kokoroSpeaker" in line:
-            out[-1].update(kokoroSpeaker=line["kokoroSpeaker"], speaker=line["kokoroSpeaker"], ref=line["say"])
+        add(line["audio"], line["text"], line["say"], line["id"], kokoro=line.get("kokoroSpeaker"))
     # Word-only clips for 每日抽卡: the card shows the lemma.
     lemma = {item["id"]: item["lemma"] for item in lex["items"]}
     words = json.loads(WORDS.read_text(encoding="utf-8")) if WORDS.exists() else {"items": {}}
@@ -269,16 +269,18 @@ def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
 
     old_lex, old_lines = old_json("content/lexicon.json"), old_json("content/lines.json")
     old: dict[str, str] = {}
+    previous_voices = {line["audio"]: line.get("kokoroSpeaker") for line in old_lines or []}
     if old_lex:
         for item in old_lex["items"]:
+            previous_voices[item["audio"]] = item.get("kokoroSpeaker")
             old.setdefault(item["audio"], item["say"])
             for ex in item.get("examples") or []:
+                previous_voices[ex.get("audio")] = ex.get("kokoroSpeaker")
                 old.setdefault(ex.get("audio"), render_text(ex))
             for i, turn in enumerate(item.get("miniDialogue") or []):
                 old.setdefault(turn.get("audio") or f"assets/audio/words/{item['id']}-md{i}.mp3", render_text(turn))
     for line in old_lines or []:
         old.setdefault(line["audio"], line["say"])
-    previous_dialogue_voices = {line["audio"]: line.get("kokoroSpeaker") for line in old_lines or []}
     for row in (old_json("content/word-audio.json") or {"items": {}})["items"].values():
         old.setdefault(row["audio"], row["say"])
     diff = subprocess.run(
@@ -299,7 +301,7 @@ def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
     return [
         j for j in jobs
         if old.get(j["rel"]) != j["say"] or j["rel"] in touched or word_recheck(j, old_table, new_table, rules_changed)
-        or previous_dialogue_voices.get(j["rel"]) != j.get("kokoroSpeaker")
+        or previous_voices.get(j["rel"]) != j.get("kokoroSpeaker")
         or ("kokoroSpeaker" in j and rules_changed)
         or (j.get("word") and old_speakers.get(j["rel"]) != j.get("speaker", 0))
     ]

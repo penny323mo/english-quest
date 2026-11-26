@@ -10406,7 +10406,7 @@
       "senseMismatch": false,
       "cmuLemma": "water",
       "phrase": false,
-      "audioSha256": "dbf7bbeb3e0305888a67810621b0b7597102bca15e69be31dcf03dc8b74d0a7c",
+      "audioSha256": "77628bddd69e5cfb1f57365cea07d8a04de9fe0d3cfdb6e8449a33aa9d9eed65",
       "examples": [
         {
           "en": "I'd like some water, please.",
@@ -10414,7 +10414,8 @@
           "audio": "assets/audio/words/water-noun.mp3",
           "audioSlow": "assets/audio/words/water-noun-slow.mp3",
           "say": "I'd like some water, please.",
-          "audioTextSha256": "6e53ec411d18e9365b95ef0479de21c67432d735175599939f4ecba9e968f8d8"
+          "audioTextSha256": "6e53ec411d18e9365b95ef0479de21c67432d735175599939f4ecba9e968f8d8",
+          "kokoroSpeaker": 1
         },
         {
           "en": "Could we get some still water?",
@@ -10447,7 +10448,8 @@
           "audioSlow": "assets/audio/words/water-noun-md1-slow.mp3",
           "audioTextSha256": "6671064117e5b00a2a9762289ff82e4c7e8c8e8b5d297a06e15b3d2524646b96"
         }
-      ]
+      ],
+      "kokoroSpeaker": 1
     },
     {
       "id": "coffee-noun",
@@ -21224,7 +21226,7 @@
       "senseMismatch": false,
       "cmuLemma": "gift box",
       "phrase": true,
-      "audioSha256": "eba5b365750f1544c9d0eb3e5334d25ff9dfe35202b35fda2ec8c790e42e77dc",
+      "audioSha256": "9d1756f49dc5de4ab812729b0e1328da2e32e64cd48d5a1da8fba4973b3e9b7e",
       "register": "櫃檯",
       "usageNotes": "a gift box。",
       "pitfallsYue": "禮盒係 gift box。包裝個動作先至係 wrap。",
@@ -21239,7 +21241,8 @@
           "audio": "assets/audio/words/gift-box-phrase.mp3",
           "audioSlow": "assets/audio/words/gift-box-phrase-slow.mp3",
           "say": "This gift box is ready.",
-          "audioTextSha256": "997d6d30c7ddb303605ec641476fc6a75c73e69bc70950e5c5f5f7bb2f8dade7"
+          "audioTextSha256": "997d6d30c7ddb303605ec641476fc6a75c73e69bc70950e5c5f5f7bb2f8dade7",
+          "kokoroSpeaker": 1
         },
         {
           "en": "The gift box is ready.",
@@ -21272,7 +21275,8 @@
           "audioSlow": "assets/audio/words/gift-box-phrase-md1-slow.mp3",
           "audioTextSha256": "9c8d4665d83a64bf0763d6690df41c485fdca835e20cf4bb6d64ea3a54c034bd"
         }
-      ]
+      ],
+      "kokoroSpeaker": 1
     },
     {
       "id": "signature-noun",
@@ -24518,7 +24522,8 @@
           "audio": "assets/audio/words/roughly-adv-ex2.mp3",
           "audioSlow": "assets/audio/words/roughly-adv-ex2-slow.mp3",
           "say": "The fare is roughly forty dollars.",
-          "audioTextSha256": "eaae0853b1566fe065254bf8f2822622469803fbebf5b914746b91f7ae586b6c"
+          "audioTextSha256": "eaae0853b1566fe065254bf8f2822622469803fbebf5b914746b91f7ae586b6c",
+          "kokoroSpeaker": 2
         },
         {
           "en": "The taxi will cost roughly a hundred dollars.",
@@ -43518,7 +43523,7 @@
       ],
       "example": "I am from Hong Kong, not from Macau.",
       "exampleYue": "我係香港人，唔係澳門人。",
-      "say": "I am from Hong Kong, not from [[məkˈaʊ]].",
+      "say": "I am from Hong Kong, not from Macau.",
       "variants": [],
       "note": "",
       "sources": [
@@ -43530,7 +43535,7 @@
       "senseMismatch": false,
       "cmuLemma": "hong kong",
       "phrase": true,
-      "audioSha256": "b50ef36f278ba5a6ecd89be1bb199d4ec9a0d15faef648d3fc822e4cb369cd60",
+      "audioSha256": "285bae956e9dbcdbf8eca2f771fca96c2b2fca8ffa583a3befe3b65104bbed04",
       "register": "日常",
       "usageNotes": "Hong Kong 係香港。",
       "pitfallsYue": "",
@@ -43541,8 +43546,9 @@
           "yue": "我係香港人，唔係澳門人。",
           "audio": "assets/audio/words/hong-kong-noun.mp3",
           "audioSlow": "assets/audio/words/hong-kong-noun-slow.mp3",
-          "say": "I am from Hong Kong, not from [[məkˈaʊ]].",
-          "audioTextSha256": "fbfacd2947b4d032d4703dcc65c4b8b994a503db1a0d44208117b638d9a29c1c"
+          "say": "I am from Hong Kong, not from Macau.",
+          "audioTextSha256": "544bcaa49e1e033183b4c6272ee8a4cc00543465b331ddd6df7beabcd2b84830",
+          "kokoroSpeaker": 1
         },
         {
           "en": "A tourist from Hong Kong needs a phone.",
@@ -43577,7 +43583,8 @@
           "audioSlow": "assets/audio/words/hong-kong-noun-md1-slow.mp3",
           "audioTextSha256": "7f93dab77de441ae0bd8272d13bc79d896301a438fd98f0d519bd8e3382da93f"
         }
-      ]
+      ],
+      "kokoroSpeaker": 1
     },
     {
       "id": "wake-up-verb",
@@ -49503,7 +49510,7 @@
       "senseMismatch": false,
       "cmuLemma": "tablet",
       "phrase": false,
-      "audioSha256": "0978207dc887cd7ae90e0789cf3ba3cffe80d0339bac9282e3231994aef5ba48",
+      "audioSha256": "1f96d2f05dceb68eebecd3afdfdb330754c2d90c5ef3ccc14dab9a10548483f7",
       "register": "藥房",
       "usageNotes": "tablet 係藥片。",
       "pitfallsYue": "tablet 係藥片，唔係藥丸。",
@@ -49515,7 +49522,8 @@
           "audio": "assets/audio/words/tablet-noun.mp3",
           "audioSlow": "assets/audio/words/tablet-noun-slow.mp3",
           "say": "What is this tablet for?",
-          "audioTextSha256": "1be5dda1a6f7fea0a73bfb55fa0d6c65fe0c8d109023215536100d4969ba544e"
+          "audioTextSha256": "1be5dda1a6f7fea0a73bfb55fa0d6c65fe0c8d109023215536100d4969ba544e",
+          "kokoroSpeaker": 1
         },
         {
           "en": "This tablet is for a cough.",
@@ -49548,7 +49556,8 @@
           "audioSlow": "assets/audio/words/tablet-noun-md1-slow.mp3",
           "audioTextSha256": "34101e2258328f343382c3ff1872818108fbb013a4139c3649a9cedc20fe81cc"
         }
-      ]
+      ],
+      "kokoroSpeaker": 1
     },
     {
       "id": "twice-a-day-phrase",
