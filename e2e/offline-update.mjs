@@ -26,8 +26,20 @@ const server = createServer((req, res) => {
   res.setHeader("cache-control", "no-store");
   if (url.endsWith("/sw.js")) {
     res.setHeader("content-type", "text/javascript");
+    // Reproduce an empty shell lookup during activation while the previous
+    // complete pack is still stored. The next lookup can see the page again.
+    const missDuringActivation = version === 2 ? `
+      const originalMatch = Cache.prototype.match;
+      let firstShellLookup = true;
+      Cache.prototype.match = function(key, ...options) {
+        if (firstShellLookup && key === self.registration.scope) {
+          firstShellLookup = false;
+          return Promise.resolve(undefined);
+        }
+        return originalMatch.call(this, key, ...options);
+      };` : "";
     const probeQuota = "const put = Cache.prototype.put; Cache.prototype.put = function(key,r){if(String(key).includes('clip.mp3') && self.eqQuota){self.eqQuota=false;throw new DOMException('quota','QuotaExceededError');}return put.call(this,key,r);};self.addEventListener('message',e=>{if(e.data?.type==='test-quota'){self.eqQuota=true;e.ports[0].postMessage('armed');}});";
-    return res.end(probeQuota + builtWorker.replace(manifest, JSON.stringify([{ revision: null, url: app }, {revision: String(version), url: example, integrity:"sha256-" + createHash("sha256").update("example " + version).digest("base64")}, {revision: String(version), url: audio, integrity:"sha256-" + createHash("sha256").update("clip " + version).digest("base64")}])));
+    return res.end(missDuringActivation + probeQuota + builtWorker.replace(manifest, JSON.stringify([{ revision: null, url: app }, {revision: String(version), url: example, integrity:"sha256-" + createHash("sha256").update("example " + version).digest("base64")}, {revision: String(version), url: audio, integrity:"sha256-" + createHash("sha256").update("clip " + version).digest("base64")}])));
   }
   if (url.endsWith("/" + app)) {
     res.setHeader("content-type", "text/javascript");

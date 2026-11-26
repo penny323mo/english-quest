@@ -175,7 +175,7 @@ self.addEventListener("message", (event: ExtendableMessageEvent) => {
   event.ports[0]?.postMessage(pack);
 });
 
-async function purgeOldShell(): Promise<boolean> {
+async function purgeOldShell(legacyDocumentsOnly = false): Promise<boolean> {
   const keep = cacheNames.precache;
   const keepKeys = [...precacheController.getURLsToCacheKeys().values()];
   const keys = await caches.keys();
@@ -191,6 +191,19 @@ async function purgeOldShell(): Promise<boolean> {
     }
     const cache = await caches.open(key);
     const requests = await cache.keys();
+    if (legacyDocumentsOnly) {
+      // A missing shell lookup during activation does not prove that the
+      // previous course is gone. Only the historical precached HTML must
+      // leave immediately. Keep lesson assets until the new pack is ready.
+      for (const request of requests) {
+        const url = new URL(request.url);
+        url.search = "";
+        if (url.href === scope || url.href === scope + "index.html") {
+          removed = await cache.delete(request) || removed;
+        }
+      }
+      return;
+    }
     const plan = planPrecachePurge(requests.map((request) => request.url), keepKeys);
     if (plan.shellChanged) removed = true;
     await Promise.all(plan.remove.map((url) => cache.delete(url)));
@@ -275,10 +288,8 @@ function precacheInBackground(): Promise<void> {
 
 self.addEventListener("activate", (event) => {
   event.waitUntil((async () => {
-    // Only legacy workers lack a separate saved page. Remove their dark shell
-    // immediately; modern updates retain their previous playable pack.
     const hasSavedPage = await (await caches.open(SHELL_CACHE)).match(scope);
-    const removedShell = !hasSavedPage && await purgeOldShell();
+    const removedShell = !hasSavedPage && await purgeOldShell(true);
     await self.clients.claim();
     if (removedShell) {
       const windows = await self.clients.matchAll({ type: "window", includeUncontrolled: true });

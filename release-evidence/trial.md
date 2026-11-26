@@ -4,7 +4,7 @@
 
 ## 打開候選版
 
-下載 GitHub prerelease 嘅 `english-quest-1.0.0-rc.1.zip`，解壓後喺該資料夾開 Terminal，執行以下指令。Mac、Windows 同 Linux 都可以用有 Python 3 嘅電腦試用。學員用同一個瀏覽器同網址完成兩日嘅練習。
+下載 GitHub prerelease 嘅 `english-quest-1.0.0-rc.2.zip`，解壓後喺該資料夾開 Terminal，執行以下指令。Mac、Windows 同 Linux 都可以用有 Python 3 嘅電腦試用。學員用同一個瀏覽器同網址完成兩日嘅練習。
 
 ```sh
 python3 -m http.server 8765 --bind 127.0.0.1
