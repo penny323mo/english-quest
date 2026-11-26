@@ -66,3 +66,21 @@ test("fixed lesson scripts retain recorded audio on devices without speech synth
     if (line.runtimeTts) assert.match(line.say, /\{\{learner/, line.id);
   }
 });
+
+test("the blind listening answer sheet describes the current recordings at both speeds", () => {
+  const html = readFileSync(new URL("../release-evidence/listen.html", import.meta.url), "utf8");
+  const cases = JSON.parse(html.match(/^const clips=(.*);$/m)[1]);
+  const targets = new Map();
+  const add = (normal, slow, text) => { targets.set(normal, text); targets.set(slow, text); };
+  const words = read("word-audio.json").items;
+  for (const card of read("lexicon.json").items) {
+    add(card.audio, card.audioSlow, card.example);
+    if (words[card.id]) add(words[card.id].audio, words[card.id].audioSlow, card.lemma);
+    for (const row of [...(card.examples || []), ...(card.miniDialogue || [])]) add(row.audio, row.audioSlow, row.en);
+  }
+  for (const line of lines.values()) add(line.audio, line.audioSlow, line.text);
+  for (const [path, expected, speed] of cases) {
+    assert.equal(targets.get(path), expected, path);
+    assert.equal(path.endsWith("-slow.mp3"), speed === "slow", path);
+  }
+});
