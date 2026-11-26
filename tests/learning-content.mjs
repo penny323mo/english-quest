@@ -60,3 +60,9 @@ test("pharmacy cards use label questions and contextual examples for dose and fr
     assert.doesNotMatch(text, /the dosage is one tablet twice a day|^(?:please )?take (?:one|this|the) tablet (?:twice a day|after meals)|please take it three times a day|cough syrup works only if|white tablets need water|swallow the tablet with water/im, card.id);
   }
 });
+
+test("fixed lesson scripts retain recorded audio on devices without speech synthesis", () => {
+  for (const line of lines.values()) {
+    if (line.runtimeTts) assert.match(line.say, /\{\{learner/, line.id);
+  }
+});
