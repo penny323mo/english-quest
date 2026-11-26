@@ -111,10 +111,11 @@ jobs:
         run: node e2e/version.mjs
       - name: Oldest service workers reach the light shell within two reloads
         run: node e2e/oldest.mjs
-      - name: Full A1 lesson in WebKit and Chromium
+      - name: Offline A1 and course-wide answer keys in WebKit and Chromium
         run: node e2e/full-lesson.mjs
         env:
           EQ_FULL_OFFLINE: "1"
+          EQ_WHOLE_COURSE: "1"
       - name: Online opens the newest deploy, offline opens the kept copy
         run: node e2e/offline.mjs
       - name: Recover a partially downloaded update with the previous lesson available offline

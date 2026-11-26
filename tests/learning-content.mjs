@@ -52,3 +52,11 @@ test("the pharmacy tasks teach how to ask about instructions and driving", () =>
     assert.match(lesson.dialogue.map(line => line.text).join(" "), /label/);
   }
 });
+
+test("pharmacy cards use label questions and contextual examples for dose and frequency", () => {
+  const cards = read("lexicon.json").items.filter(i => !i.hidden);
+  for (const card of cards) {
+    const text = [card.example, ...card.examples.map(e => e.en), ...card.miniDialogue.map(e => e.en)].join("\n");
+    assert.doesNotMatch(text, /the dosage is one tablet twice a day|^(?:please )?take (?:one|this|the) tablet (?:twice a day|after meals)|please take it three times a day|cough syrup works only if|white tablets need water|swallow the tablet with water/im, card.id);
+  }
+});

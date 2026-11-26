@@ -1784,8 +1784,8 @@
       "arpabet": "AH0 B AW1 T",
       "audio": "assets/audio/words/about-prep.mp3",
       "audioSlow": "assets/audio/words/about-prep-slow.mp3",
-      "glossYue": "關於；大約",
-      "glossZh": "关于",
+      "glossYue": "關於",
+      "glossZh": "關於",
       "jyutping": "gwaan1 jyu1",
       "collocations": [
         "talk about a trip"
@@ -3860,8 +3860,8 @@
       "arpabet": "AH1 V",
       "audio": "assets/audio/words/of-prep.mp3",
       "audioSlow": "assets/audio/words/of-prep-slow.mp3",
-      "glossYue": "嘅；屬於",
-      "glossZh": "的",
+      "glossYue": "嘅（表示量或材料）",
+      "glossZh": "的（表示數量或材料）",
       "jyutping": "ge3",
       "collocations": [
         "a cup of tea",
@@ -4869,11 +4869,12 @@
       "glossZh": "什么",
       "jyutping": "me1",
       "collocations": [
-        "what are you looking for"
+        "what size",
+        "what colour"
       ],
-      "example": "What are you looking for?",
-      "exampleYue": "你想搵咩？",
-      "say": "What are you looking for?",
+      "example": "What size bag do you need?",
+      "exampleYue": "你需要幾大嘅袋？",
+      "say": "What size bag do you need?",
       "variants": [
         "/wɔt/",
         "/wɑt/"
@@ -4888,7 +4889,7 @@
       "senseMismatch": false,
       "cmuLemma": "what",
       "phrase": false,
-      "audioSha256": "aa73f2a225d1356e83adf9edaf798e915db4dfd92cbba88c6ac270e20c06b856",
+      "audioSha256": "22b613185b1dab4de4a2166686a3d45dc0e47767498e1338e37d446bd384d67d",
       "miniDialogue": [
         {
           "en": "What colour scarf would you like?",
@@ -4907,11 +4908,11 @@
       ],
       "examples": [
         {
-          "en": "What are you looking for?",
-          "yue": "你想搵咩？",
+          "en": "What size bag do you need?",
+          "yue": "你需要幾大嘅袋？",
           "audio": "assets/audio/words/what-det.mp3",
           "audioSlow": "assets/audio/words/what-det-slow.mp3",
-          "audioTextSha256": "e3ad92be491a08c8f78a46b936737b95e64d6820e04ee4fea4d2fe55f28de36e"
+          "audioTextSha256": "89895b1b7f30fcb894f86e8cd8e297ff469d2d6a43c33a61ed8cb24e36ef6239"
         },
         {
           "en": "What colour scarf would you like?",
@@ -5727,9 +5728,9 @@
       "collocations": [
         "a few"
       ],
-      "example": "I'll show you a few.",
-      "exampleYue": "我畀你睇幾件。",
-      "say": "I'll show you a few.",
+      "example": "I'll show you a few rings.",
+      "exampleYue": "我畀你睇幾隻戒指。",
+      "say": "I'll show you a few rings.",
       "variants": [],
       "note": "",
       "sources": [
@@ -5741,7 +5742,7 @@
       "senseMismatch": false,
       "cmuLemma": "few",
       "phrase": false,
-      "audioSha256": "0056b8850e289156e5f81d8459ec30f830aa8bda4c0424b9efcf917d9bbb10cc",
+      "audioSha256": "617c90b03d0252eed0fff4514756698054363d57f9aa30df8e1c1a764985df0e",
       "miniDialogue": [
         {
           "en": "I only need a few copies.",
@@ -5760,11 +5761,11 @@
       ],
       "examples": [
         {
-          "en": "I'll show you a few.",
-          "yue": "我畀你睇幾件。",
+          "en": "I'll show you a few rings.",
+          "yue": "我畀你睇幾隻戒指。",
           "audio": "assets/audio/words/few-det.mp3",
           "audioSlow": "assets/audio/words/few-det-slow.mp3",
-          "audioTextSha256": "2332fc673408466a66b0a502f726e8c6d7af66044a4020b5b830aecdb2dcdbfd"
+          "audioTextSha256": "ebbbaa508bd31d80eb42447146b273b5662afc01154ffb407d40ea996faece1c"
         },
         {
           "en": "I only need a few copies.",
@@ -13092,15 +13093,16 @@
       "arpabet": "L EH1 F T",
       "audio": "assets/audio/words/left-adv.mp3",
       "audioSlow": "assets/audio/words/left-adv-slow.mp3",
-      "glossYue": "左邊",
-      "glossZh": "左边",
-      "jyutping": "zo2 bin6",
+      "glossYue": "向左",
+      "glossZh": "向左",
+      "jyutping": "hoeng3 zo2",
       "collocations": [
-        "on the left"
+        "turn left",
+        "look left"
       ],
-      "example": "Your gate is on the left.",
-      "exampleYue": "你個閘口喺左邊。",
-      "say": "Your gate is on the left.",
+      "example": "Turn left at the next corner.",
+      "exampleYue": "喺下一個街口轉左。",
+      "say": "Turn left at the next corner.",
       "variants": [],
       "note": "開頭 /l/，元音 /ɛ/。同 lift 只差個元音。",
       "sources": [
@@ -13112,7 +13114,7 @@
       "senseMismatch": false,
       "cmuLemma": "left",
       "phrase": false,
-      "audioSha256": "f077c6a6ce779610ccbd2fb8afe4275638b6ff1a698a442e5b9025a53aac3307",
+      "audioSha256": "1f1cfd31d270cc7b71b259473cf637e67c2e1518995832415f16760e1601d079",
       "miniDialogue": [
         {
           "en": "Should I turn left after the bridge?",
@@ -13131,11 +13133,11 @@
       ],
       "examples": [
         {
-          "en": "Your gate is on the left.",
-          "yue": "你個閘口喺左邊。",
+          "en": "Turn left at the next corner.",
+          "yue": "喺下一個街口轉左。",
           "audio": "assets/audio/words/left-adv.mp3",
           "audioSlow": "assets/audio/words/left-adv-slow.mp3",
-          "audioTextSha256": "8c86b4977745433b965aa4e53d42a1898e2b2bb6952e87e1778db642f3791656"
+          "audioTextSha256": "a750fc9dcab4aef9cf60131a10d3f336a862e42a2136429933efda9b50be23d3"
         },
         {
           "en": "Should I turn left after the bridge?",
@@ -15082,12 +15084,12 @@
       "glossZh": "怎样",
       "jyutping": "dim2 joeng2",
       "collocations": [
-        "how much",
-        "how are you"
+        "how to open it",
+        "how did you do it"
       ],
-      "example": "How much is this?",
-      "exampleYue": "呢個幾多錢？",
-      "say": "How much is this?",
+      "example": "How do I open this locker?",
+      "exampleYue": "呢個儲物櫃點樣開？",
+      "say": "How do I open this locker?",
       "variants": [],
       "note": "",
       "sources": [
@@ -15099,7 +15101,7 @@
       "senseMismatch": false,
       "cmuLemma": "how",
       "phrase": false,
-      "audioSha256": "8373faf508c6fe1af79a108016d800abcf1b9f05b9bc5d97b4848f348ab774fc",
+      "audioSha256": "62437ae280de23cff25c6564d19f6d575815c7b7cb48de40c9f9c38a75f7a7c0",
       "miniDialogue": [
         {
           "en": "How did you lock the door?",
@@ -15118,11 +15120,11 @@
       ],
       "examples": [
         {
-          "en": "How much is this?",
-          "yue": "呢個幾多錢？",
+          "en": "How do I open this locker?",
+          "yue": "呢個儲物櫃點樣開？",
           "audio": "assets/audio/words/how-adv.mp3",
           "audioSlow": "assets/audio/words/how-adv-slow.mp3",
-          "audioTextSha256": "c71b1e6dc0159c8330d1e05ace36f1c5d5faa76f709513090a19567e41747a1f"
+          "audioTextSha256": "edfc7d4c52271f113e40a2b1829f86439184f5fe4e79c2779a88193e58bdcc24"
         },
         {
           "en": "How did you lock the door?",
@@ -15149,15 +15151,16 @@
       "arpabet": "M AH1 CH",
       "audio": "assets/audio/words/much-adv.mp3",
       "audioSlow": "assets/audio/words/much-adv-slow.mp3",
-      "glossYue": "幾多",
-      "glossZh": "多少",
-      "jyutping": "gei2 do1",
+      "glossYue": "好多（加強比較）",
+      "glossZh": "很多（表示程度）",
+      "jyutping": "hou2 do1",
       "collocations": [
-        "how much"
+        "much faster",
+        "much more"
       ],
-      "example": "How much is the ring?",
-      "exampleYue": "隻戒指幾多錢？",
-      "say": "How much is the ring?",
+      "example": "Does this larger ring cost much more?",
+      "exampleYue": "呢隻大啲嘅戒指係咪貴好多？",
+      "say": "Does this larger ring cost much more?",
       "variants": [],
       "note": "",
       "sources": [
@@ -15169,37 +15172,37 @@
       "senseMismatch": false,
       "cmuLemma": "much",
       "phrase": false,
-      "audioSha256": "6eac05db9e30dafc5e8a72786f5a9a4e8f3e9b4f46935f90523467e76a6516f7",
+      "audioSha256": "678c73c23e90e65e12f7d0abda40c74a2218c0d9aaedc36f41dc17e5783f95b9",
       "miniDialogue": [
         {
-          "en": "How much rice should I cook for four people?",
-          "yue": "四個人要煮幾多飯？",
+          "en": "Is the express train much faster?",
+          "yue": "快車係咪快好多？",
           "audio": "assets/audio/words/much-adv-md0.mp3",
           "audioSlow": "assets/audio/words/much-adv-md0-slow.mp3",
-          "audioTextSha256": "12028b162bb6cdf1788c312d2e806e2481a22ef04d2bd2513aa63e11144d665c"
+          "audioTextSha256": "e45ebf56289716bc3b0f8c081748d86db0ba642d273e04662d66e1744b8ceb46"
         },
         {
-          "en": "Two cups of dry rice will be plenty.",
-          "yue": "兩杯米就夠晒有餘。",
+          "en": "Yes. It saves us half an hour.",
+          "yue": "係呀，可以慳半個鐘。",
           "audio": "assets/audio/words/much-adv-md1.mp3",
           "audioSlow": "assets/audio/words/much-adv-md1-slow.mp3",
-          "audioTextSha256": "8e2e0362a7f01302aa9d0e27d5ec28c7274d306d96f074e9588784f91dd67823"
+          "audioTextSha256": "dc988970293e99888853ecc5db60256e58023445deb862db20c67a2e8ca85438"
         }
       ],
       "examples": [
         {
-          "en": "How much is the ring?",
-          "yue": "隻戒指幾多錢？",
+          "en": "Does this larger ring cost much more?",
+          "yue": "呢隻大啲嘅戒指係咪貴好多？",
           "audio": "assets/audio/words/much-adv.mp3",
           "audioSlow": "assets/audio/words/much-adv-slow.mp3",
-          "audioTextSha256": "4fddf121c3483744e057f7b6c63363f18f1a540882673ea6a0c08568bfdcae4e"
+          "audioTextSha256": "27104c205aa08e8ccae6eb5c95de8cdbbe88fb5fb90c153cf2e4f6e500850f0a"
         },
         {
-          "en": "How much rice should I cook for four people?",
-          "yue": "四個人要煮幾多飯？",
+          "en": "Is the express train much faster?",
+          "yue": "快車係咪快好多？",
           "audio": "assets/audio/words/much-adv-md0.mp3",
           "audioSlow": "assets/audio/words/much-adv-md0-slow.mp3",
-          "audioTextSha256": "12028b162bb6cdf1788c312d2e806e2481a22ef04d2bd2513aa63e11144d665c"
+          "audioTextSha256": "e45ebf56289716bc3b0f8c081748d86db0ba642d273e04662d66e1744b8ceb46"
         }
       ]
     },
@@ -22756,18 +22759,18 @@
       ],
       "miniDialogue": [
         {
-          "en": "Please read the dosage carefully before taking it.",
-          "yue": "食之前請小心睇劑量。",
+          "en": "Please read the label carefully.",
+          "yue": "請仔細睇標籤。",
           "audio": "assets/audio/words/carefully-adv-md0.mp3",
           "audioSlow": "assets/audio/words/carefully-adv-md0-slow.mp3",
-          "audioTextSha256": "1d4f1ad6c6117cabdbc209479cac090dc44bf5db5bd7fc0f1f8c3f32c3032d3a"
+          "audioTextSha256": "91a882fa82c62b295baa74669b28784780edc565330a0ef0dd97863f10710e89"
         },
         {
-          "en": "I see two tablets after each meal.",
-          "yue": "我見到每餐食兩粒。",
+          "en": "I'll ask the pharmacist what this line means.",
+          "yue": "我會問藥劑師呢行係咩意思。",
           "audio": "assets/audio/words/carefully-adv-md1.mp3",
           "audioSlow": "assets/audio/words/carefully-adv-md1-slow.mp3",
-          "audioTextSha256": "3f5cbf18812f5fdbd25eb923f6f80f93a20fc6c699057e9fb2ee18285753e654"
+          "audioTextSha256": "57d8bfd85b019ca3dfa36078c3c94d1632226267b7a2b5a95c8d75cadbb8864a"
         }
       ]
     },
@@ -44553,9 +44556,9 @@
         "before lunch",
         "before my shift"
       ],
-      "example": "I wake up before my shift starts.",
-      "exampleYue": "我喺返工之前起身。",
-      "say": "I wake up before my shift starts.",
+      "example": "I wake up before my early shift.",
+      "exampleYue": "我喺返早更之前起身。",
+      "say": "I wake up before my early shift.",
       "variants": [],
       "note": "",
       "sources": [
@@ -44567,19 +44570,19 @@
       "senseMismatch": false,
       "cmuLemma": "before",
       "phrase": false,
-      "audioSha256": "b661ddca4da7c8471ba7ec257464df88957ee77d1fcc29067356eed6358b4f21",
+      "audioSha256": "f59a36ec76cc5bcc99325d9c1a41571efe9316effb7ec7b6f21b73c78ce414aa",
       "register": "日常",
       "usageNotes": "before 係之前。",
       "pitfallsYue": "",
       "related": [],
       "examples": [
         {
-          "en": "I wake up before my shift starts.",
-          "yue": "我喺返工之前起身。",
+          "en": "I wake up before my early shift.",
+          "yue": "我喺返早更之前起身。",
           "audio": "assets/audio/words/before-prep.mp3",
           "audioSlow": "assets/audio/words/before-prep-slow.mp3",
-          "say": "I wake up before my shift starts.",
-          "audioTextSha256": "be0d17d7097ea1ef8ecbd7c143b0dda16766dab68efd04558d6db050eaf30f77"
+          "say": "I wake up before my early shift.",
+          "audioTextSha256": "546d21497b3e0bb03659e62a81fbd7f73c3f2e65a5b70fb327976270ef15cb5f"
         },
         {
           "en": "We open before lunch on this shift.",
@@ -45596,12 +45599,12 @@
       "glossZh": "夠",
       "jyutping": "gau3",
       "collocations": [
-        "enough for a trip",
-        "is enough"
+        "strong enough",
+        "light enough"
       ],
-      "example": "The coverage is enough for my short trip.",
-      "exampleYue": "覆蓋夠我呢次短途用。",
-      "say": "The coverage is enough for my short trip.",
+      "example": "Is the signal strong enough inside the hotel?",
+      "exampleYue": "酒店入面嘅訊號夠唔夠強？",
+      "say": "Is the signal strong enough inside the hotel?",
       "variants": [],
       "note": "",
       "sources": [
@@ -45613,27 +45616,27 @@
       "senseMismatch": false,
       "cmuLemma": "enough",
       "phrase": false,
-      "audioSha256": "bab9a2014ea544e3a216074ee0cf2c90eaf1071a806ef8d599704826252d0ed7",
+      "audioSha256": "e7109a5150e8cb0e8e49f9450cdc9ec52f37a31cc2a68269514ed0edf484c031",
       "register": "電話舖",
       "usageNotes": "enough 係夠用。",
       "pitfallsYue": "",
       "related": [],
       "examples": [
         {
-          "en": "The coverage is enough for my short trip.",
-          "yue": "覆蓋夠我呢次短途用。",
+          "en": "Is the signal strong enough inside the hotel?",
+          "yue": "酒店入面嘅訊號夠唔夠強？",
           "audio": "assets/audio/words/enough-adv.mp3",
           "audioSlow": "assets/audio/words/enough-adv-slow.mp3",
-          "say": "The coverage is enough for my short trip.",
-          "audioTextSha256": "cf9595c68164d9d42008765147a5565bf6e552b77d740e7ad1f4f263f0bc6828"
+          "say": "Is the signal strong enough inside the hotel?",
+          "audioTextSha256": "92b5a77fe1dd48389e1dc622a0e46dea4d16773f7f82c93f3e6c05d674459bf3"
         },
         {
-          "en": "A small top-up is enough for my data.",
-          "yue": "少少增值就夠我用數據。",
+          "en": "Is this phone small enough for your pocket?",
+          "yue": "呢部電話夠唔夠細，可以擺入你個袋？",
           "audio": "assets/audio/words/enough-adv-ex2.mp3",
           "audioSlow": "assets/audio/words/enough-adv-ex2-slow.mp3",
-          "say": "A small top-up is enough for my data.",
-          "audioTextSha256": "38ac5083d40cdbe8efd96227edeb785a2aab5fbbc99237fc33d6eac7645aa61a"
+          "say": "Is this phone small enough for your pocket?",
+          "audioTextSha256": "509fe1d9c5d8f930cea24dd4716da782cfffee7b21801aa577d6c9ee5cdb56da"
         },
         {
           "en": "Is the room big enough for three people?",
@@ -45645,18 +45648,18 @@
       ],
       "miniDialogue": [
         {
-          "en": "Is one bottle of water enough on this hike?",
-          "yue": "行山帶一樽水夠唔夠？",
+          "en": "Is this bag light enough for the hike?",
+          "yue": "呢個袋夠唔夠輕，適合帶去行山？",
           "audio": "assets/audio/words/enough-adv-md0.mp3",
           "audioSlow": "assets/audio/words/enough-adv-md0-slow.mp3",
-          "audioTextSha256": "add974204c030fa820b460c98a2d1353b3636b2738f6f27b1200af416c8f59b2"
+          "audioTextSha256": "1ea2b706e541efe1f3c3e8b2492e14f0825a3f1c17abe2fd343dfbb094d1632a"
         },
         {
-          "en": "Bring another, because the path is steep.",
-          "yue": "多帶一樽，條路好斜。",
+          "en": "Yes. I can carry it all day.",
+          "yue": "夠輕，我可以孭成日。",
           "audio": "assets/audio/words/enough-adv-md1.mp3",
           "audioSlow": "assets/audio/words/enough-adv-md1-slow.mp3",
-          "audioTextSha256": "3076cb7cb8f4feee60c96e71ac9a23c0fb0f4ac2b7345780d7070ff74ee4dceb"
+          "audioTextSha256": "74a5cba5b2dce7e804d05d2d50072cb0b8f1f45281d912c50b54975403b3c6a6"
         }
       ]
     },
@@ -49401,9 +49404,9 @@
         "the dosage",
         "a safe dosage"
       ],
-      "example": "The dosage is one tablet twice a day.",
-      "exampleYue": "劑量係一日兩次，每次一粒。",
-      "say": "The dosage is one tablet twice a day.",
+      "example": "Could you show me the dosage on the label?",
+      "exampleYue": "你可唔可以指畀我睇標籤邊度寫咗劑量？",
+      "say": "Could you show me the dosage on the label?",
       "variants": [],
       "note": "",
       "sources": [
@@ -49414,19 +49417,19 @@
       "senseMismatch": false,
       "cmuLemma": "dosage",
       "phrase": false,
-      "audioSha256": "a4a72c4787e52599163684db341151b1ab90ee94dab57a433e3bdb6a237387e7",
+      "audioSha256": "af687e5321878cfcea9e9ad95d6839abd4e51b47bf2bd36c398248718b26e20a",
       "register": "藥房",
       "usageNotes": "dosage 係劑量。",
       "pitfallsYue": "",
       "related": [],
       "examples": [
         {
-          "en": "The dosage is one tablet twice a day.",
-          "yue": "劑量係一日兩次，每次一粒。",
+          "en": "Could you show me the dosage on the label?",
+          "yue": "你可唔可以指畀我睇標籤邊度寫咗劑量？",
           "audio": "assets/audio/words/dosage-noun.mp3",
           "audioSlow": "assets/audio/words/dosage-noun-slow.mp3",
-          "say": "The dosage is one tablet twice a day.",
-          "audioTextSha256": "d54281da4e049fca5b7dfe1c3f589a8a30e2d3ee4ce5275b762e23cd6d437011"
+          "say": "Could you show me the dosage on the label?",
+          "audioTextSha256": "1d4605d551bfbc8c8f1663a8adbdaeddeed907fedf2b2eab4825e91b43a6abf8"
         },
         {
           "en": "Please repeat the dosage before I leave.",
@@ -49447,18 +49450,18 @@
       ],
       "miniDialogue": [
         {
-          "en": "The dosage is one tablet twice a day.",
-          "yue": "劑量係一日兩次，每次一粒。",
+          "en": "Could you show me the dosage on the label?",
+          "yue": "你可唔可以指畀我睇標籤邊度寫咗劑量？",
           "audio": "assets/audio/words/dosage-noun-md0.mp3",
           "audioSlow": "assets/audio/words/dosage-noun-md0-slow.mp3",
-          "audioTextSha256": "d54281da4e049fca5b7dfe1c3f589a8a30e2d3ee4ce5275b762e23cd6d437011"
+          "audioTextSha256": "1d4605d551bfbc8c8f1663a8adbdaeddeed907fedf2b2eab4825e91b43a6abf8"
         },
         {
-          "en": "Please repeat the dosage before I leave.",
-          "yue": "我走之前請再講一次劑量。",
+          "en": "Of course. It is printed right here.",
+          "yue": "可以，就印喺呢度。",
           "audio": "assets/audio/words/dosage-noun-md1.mp3",
           "audioSlow": "assets/audio/words/dosage-noun-md1-slow.mp3",
-          "audioTextSha256": "b4f4fbaf9f46344bccc9ccb3e6efa1191a5b1a8732988d06a4c6877904f9457b"
+          "audioTextSha256": "980c662e7002d604158bc960cccfe918f5861d17d6c62eb17854f48e316fd0d3"
         }
       ]
     },
@@ -49487,9 +49490,9 @@
         "one tablet",
         "a tablet"
       ],
-      "example": "Please take one tablet after meals.",
-      "exampleYue": "請飯後食一粒藥片。",
-      "say": "Please take one tablet after meals.",
+      "example": "What is this tablet for?",
+      "exampleYue": "呢粒藥片有咩用途？",
+      "say": "What is this tablet for?",
       "variants": [],
       "note": "",
       "sources": [
@@ -49500,19 +49503,19 @@
       "senseMismatch": false,
       "cmuLemma": "tablet",
       "phrase": false,
-      "audioSha256": "0d3cb976f0d3d9792e29099ec1ed890f1617ef0f86ee8400a6e5ad73acda3523",
+      "audioSha256": "0978207dc887cd7ae90e0789cf3ba3cffe80d0339bac9282e3231994aef5ba48",
       "register": "藥房",
       "usageNotes": "tablet 係藥片。",
       "pitfallsYue": "tablet 係藥片，唔係藥丸。",
       "related": [],
       "examples": [
         {
-          "en": "Please take one tablet after meals.",
-          "yue": "請飯後食一粒藥片。",
+          "en": "What is this tablet for?",
+          "yue": "呢粒藥片有咩用途？",
           "audio": "assets/audio/words/tablet-noun.mp3",
           "audioSlow": "assets/audio/words/tablet-noun-slow.mp3",
-          "say": "Please take one tablet after meals.",
-          "audioTextSha256": "adf296309c204e25d921388f865ec19b1dc19a2f06df553d370bf2627bd9a951"
+          "say": "What is this tablet for?",
+          "audioTextSha256": "1be5dda1a6f7fea0a73bfb55fa0d6c65fe0c8d109023215536100d4969ba544e"
         },
         {
           "en": "This tablet is for a cough.",
@@ -49523,20 +49526,20 @@
           "audioTextSha256": "34101e2258328f343382c3ff1872818108fbb013a4139c3649a9cedc20fe81cc"
         },
         {
-          "en": "Swallow the tablet with water. Don't chew it.",
-          "yue": "用水吞粒藥，唔好咬。",
+          "en": "Could you show me how to take this tablet?",
+          "yue": "你可唔可以教我點食呢粒藥片？",
           "audio": "assets/audio/words/tablet-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/tablet-noun-ex3-slow.mp3",
-          "audioTextSha256": "3533d7bc96261725b678c2697bac30615c0bddcf20d3b1cc06c14504250e0c9e"
+          "audioTextSha256": "3e80984529ad37f14cc0631f669123cbe6063e1b9bb47b8d0662896b362122fa"
         }
       ],
       "miniDialogue": [
         {
-          "en": "Please take one tablet after meals.",
-          "yue": "請飯後食一粒藥片。",
+          "en": "What is this tablet for?",
+          "yue": "呢粒藥片有咩用途？",
           "audio": "assets/audio/words/tablet-noun-md0.mp3",
           "audioSlow": "assets/audio/words/tablet-noun-md0-slow.mp3",
-          "audioTextSha256": "adf296309c204e25d921388f865ec19b1dc19a2f06df553d370bf2627bd9a951"
+          "audioTextSha256": "1be5dda1a6f7fea0a73bfb55fa0d6c65fe0c8d109023215536100d4969ba544e"
         },
         {
           "en": "This tablet is for a cough.",
@@ -49574,9 +49577,9 @@
         "twice a day",
         "take it twice a day"
       ],
-      "example": "Take this tablet twice a day.",
-      "exampleYue": "呢粒藥一日食兩次。",
-      "say": "Take this tablet twice a day.",
+      "example": "I walk my dog twice a day.",
+      "exampleYue": "我每日放狗兩次。",
+      "say": "I walk my dog twice a day.",
       "variants": [],
       "note": "",
       "sources": [
@@ -49587,19 +49590,19 @@
       "senseMismatch": false,
       "cmuLemma": "twice a day",
       "phrase": true,
-      "audioSha256": "ab87cf92720badd0e94f85fefffb718f538505d7384ec67eca1da02a326d745a",
+      "audioSha256": "3572ee151c6b1303e59dd68a12eb44732fc08fc1c3f34a0ac0f7eed41f4c9e50",
       "register": "藥房",
       "usageNotes": "twice a day 係一日兩次。",
       "pitfallsYue": "",
       "related": [],
       "examples": [
         {
-          "en": "Take this tablet twice a day.",
-          "yue": "呢粒藥一日食兩次。",
+          "en": "I walk my dog twice a day.",
+          "yue": "我每日放狗兩次。",
           "audio": "assets/audio/words/twice-a-day-phrase.mp3",
           "audioSlow": "assets/audio/words/twice-a-day-phrase-slow.mp3",
-          "say": "Take this tablet twice a day.",
-          "audioTextSha256": "b6ec3fb328b1ab07f634af6ec975f70cc3bc9ba98a7811b1b2273120493b4d69"
+          "say": "I walk my dog twice a day.",
+          "audioTextSha256": "880aea3c3f93e46e828488b58f4c44671876238cd550ff9ba9e4890c66c0dc23"
         },
         {
           "en": "The note says twice a day after meals.",
@@ -49620,18 +49623,18 @@
       ],
       "miniDialogue": [
         {
-          "en": "Take this tablet twice a day.",
-          "yue": "呢粒藥一日食兩次。",
+          "en": "I walk my dog twice a day.",
+          "yue": "我每日放狗兩次。",
           "audio": "assets/audio/words/twice-a-day-phrase-md0.mp3",
           "audioSlow": "assets/audio/words/twice-a-day-phrase-md0-slow.mp3",
-          "audioTextSha256": "b6ec3fb328b1ab07f634af6ec975f70cc3bc9ba98a7811b1b2273120493b4d69"
+          "audioTextSha256": "880aea3c3f93e46e828488b58f4c44671876238cd550ff9ba9e4890c66c0dc23"
         },
         {
-          "en": "The note says twice a day after meals.",
-          "yue": "張紙寫住一日兩次，飯後食。",
+          "en": "Do you go out in the morning and again at night?",
+          "yue": "你係咪朝早行一次，夜晚再行一次？",
           "audio": "assets/audio/words/twice-a-day-phrase-md1.mp3",
           "audioSlow": "assets/audio/words/twice-a-day-phrase-md1-slow.mp3",
-          "audioTextSha256": "5b68ec56fb0c03fc214819f70bd1e3bfcf67d715ce8b0653f7152943f7da6ef1"
+          "audioTextSha256": "528e3ba9aff1585e481a02f55bbb64e368a62b98112d73f2ea68d23545e1f1eb"
         }
       ]
     },
@@ -49662,9 +49665,9 @@
         "after meals",
         "take it after meals"
       ],
-      "example": "Take the tablet after meals.",
-      "exampleYue": "飯後先食呢粒藥。",
-      "say": "Take the tablet after meals.",
+      "example": "Does this label say to take it after meals?",
+      "exampleYue": "呢張標籤係咪寫住飯後服用？",
+      "say": "Does this label say to take it after meals?",
       "variants": [],
       "note": "",
       "sources": [
@@ -49675,19 +49678,19 @@
       "senseMismatch": false,
       "cmuLemma": "after meals",
       "phrase": true,
-      "audioSha256": "93f726959f69189ca70a377b70c1adaef2e1c01df863045932d9702750d5a4ec",
+      "audioSha256": "585ae0813be18751bacc474893570872891c0138ddf16796451718284024e085",
       "register": "藥房",
       "usageNotes": "after meals 係飯後。",
       "pitfallsYue": "",
       "related": [],
       "examples": [
         {
-          "en": "Take the tablet after meals.",
-          "yue": "飯後先食呢粒藥。",
+          "en": "Does this label say to take it after meals?",
+          "yue": "呢張標籤係咪寫住飯後服用？",
           "audio": "assets/audio/words/after-meals-phrase.mp3",
           "audioSlow": "assets/audio/words/after-meals-phrase-slow.mp3",
-          "say": "Take the tablet after meals.",
-          "audioTextSha256": "9d4ab6bd575d55b727f901c4b362307de13ed3f8d632b1f82236e5356724311c"
+          "say": "Does this label say to take it after meals?",
+          "audioTextSha256": "00e920c9b74c8e20679d8d438512cade45a35d3ddc5da0a256e347c11cc58b6f"
         },
         {
           "en": "The label says to take this medicine after meals.",
@@ -49698,12 +49701,12 @@
           "audioTextSha256": "4903dd0f189554c494094c1b0ed1c76dbc77974251642bad11a2d056ecaf4f3e"
         },
         {
-          "en": "The label says white tablets need water after meals.",
-          "yue": "標籤話白色藥丸飯後要配水。",
+          "en": "My family usually goes for a walk after meals.",
+          "yue": "我屋企人通常食完飯會去散步。",
           "audio": "assets/audio/words/after-meals-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/after-meals-phrase-ex3-slow.mp3",
-          "say": "The label says white tablets need water [[ˈæftɚ ˈmilz]].",
-          "audioTextSha256": "f6c662b67f0daa797057789407794dd407dea2d572eb4cd060bcd3361e255d94"
+          "say": "My family usually goes for a walk after meals.",
+          "audioTextSha256": "39c285a8fafd7faccc6b29b470debe47a60bfe922146cbdb89a188d2981c9a45"
         }
       ],
       "miniDialogue": [
@@ -49715,11 +49718,11 @@
           "audioTextSha256": "739ab6436b4937b4bbba223848fe0e0a3e3f58a61bbb984ea8dbc0148a7bc3ad"
         },
         {
-          "en": "Yes. Take it after breakfast and dinner.",
-          "yue": "係，早餐同晚餐之後食。",
+          "en": "Let's check the directions on your label.",
+          "yue": "我哋一齊睇吓你張標籤上嘅指示。",
           "audio": "assets/audio/words/after-meals-phrase-md1.mp3",
           "audioSlow": "assets/audio/words/after-meals-phrase-md1-slow.mp3",
-          "audioTextSha256": "553dc00ce0851303292a017a31b122d49c03ba09ad76a02fe0bb64f40d0474d7"
+          "audioTextSha256": "603c994872fcc35651f922853d49ec41f0d40505073456bb1df58c4426622063"
         }
       ]
     },
@@ -55378,9 +55381,9 @@
       "collocations": [
         "three times a day"
       ],
-      "example": "Please take it three times a day.",
-      "exampleYue": "請一日食三次。",
-      "say": "Please take it three times a day.",
+      "example": "How many times a day does the ferry run?",
+      "exampleYue": "呢班渡輪一日開幾多班？",
+      "say": "How many times a day does the ferry run?",
       "variants": [],
       "note": "",
       "sources": [
@@ -55391,19 +55394,19 @@
       "senseMismatch": false,
       "cmuLemma": "times",
       "phrase": true,
-      "audioSha256": "0d6a8ef4134b712a02c36850baa26e2cab66f11c21cd838fa1c0b01981b65e3e",
+      "audioSha256": "f7e2266b1850cd637847eb0a8c8879da1e85ebc6d318305d9df58452cbf5bfb8",
       "register": "藥房",
       "usageNotes": "times a day 係一日食幾次。",
       "pitfallsYue": "一日幾次唔係飯後。",
       "related": [],
       "examples": [
         {
-          "en": "Please take it three times a day.",
-          "yue": "請一日食三次。",
+          "en": "How many times a day does the ferry run?",
+          "yue": "呢班渡輪一日開幾多班？",
           "audio": "assets/audio/words/times-a-day-phrase.mp3",
           "audioSlow": "assets/audio/words/times-a-day-phrase-slow.mp3",
-          "say": "Please take it three times a day.",
-          "audioTextSha256": "d05d7917f03c273965310f67ede1db30ebf23f9e0d5eefa96066682683285028"
+          "say": "How many times a day does the ferry run?",
+          "audioTextSha256": "0f8d1fa606eb28a9ee0e455e7ce9345c03e7a560e2e79bff1a6259b4de49c4a5"
         },
         {
           "en": "The prescription says three times a day.",
@@ -55414,28 +55417,28 @@
           "audioTextSha256": "f7f494487601b0c34963c1c80ad0599fd6f11e93fc949d326c8e45331659a38c"
         },
         {
-          "en": "This cough syrup works only if I take it two times a day.",
-          "yue": "呢瓶咳藥水要一日食兩次先有效。",
+          "en": "The hotel shuttle runs four times a day.",
+          "yue": "酒店穿梭巴士每日開四班。",
           "audio": "assets/audio/words/times-a-day-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/times-a-day-phrase-ex3-slow.mp3",
-          "say": "This cough syrup works only if I take it two times a day.",
-          "audioTextSha256": "d11413e90a2ab66f5f7c78df1b6da4cad88a2314bc00f6b644650695a1bacf79"
+          "say": "The hotel shuttle runs four times a day.",
+          "audioTextSha256": "70a9557311b65a39d6893a1efcbdd122f44b2afaed12b7d63e4d61e4c6b1d1c1"
         }
       ],
       "miniDialogue": [
         {
-          "en": "Please take it three times a day.",
-          "yue": "請一日食三次。",
+          "en": "How many times a day does the ferry run?",
+          "yue": "呢班渡輪一日開幾多班？",
           "audio": "assets/audio/words/times-a-day-phrase-md0.mp3",
           "audioSlow": "assets/audio/words/times-a-day-phrase-md0-slow.mp3",
-          "audioTextSha256": "d05d7917f03c273965310f67ede1db30ebf23f9e0d5eefa96066682683285028"
+          "audioTextSha256": "0f8d1fa606eb28a9ee0e455e7ce9345c03e7a560e2e79bff1a6259b4de49c4a5"
         },
         {
-          "en": "The prescription says three times a day.",
-          "yue": "藥單寫一日三次。",
+          "en": "It runs six times a day, including weekends.",
+          "yue": "每日開六班，週末都一樣。",
           "audio": "assets/audio/words/times-a-day-phrase-md1.mp3",
           "audioSlow": "assets/audio/words/times-a-day-phrase-md1-slow.mp3",
-          "audioTextSha256": "f7f494487601b0c34963c1c80ad0599fd6f11e93fc949d326c8e45331659a38c"
+          "audioTextSha256": "134e8200a1cabb99aed26cb613cffdd6bdb852b3a9aa48b79019896f45ca5904"
         }
       ]
     },
