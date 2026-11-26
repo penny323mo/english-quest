@@ -1,5 +1,6 @@
 import { wordAudio } from "./word-audio";
 import { OfflinePack } from "./offline-pack";
+import { isTrial } from "./course-worker";
 import { PracticeAgain } from "./learning-steps";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Rating, type Grade } from "ts-fsrs";
@@ -551,6 +552,7 @@ export function Settings() {
     <section className="screen plain stack">
       <a className="back" href="#/profile">返我</a>
       <h1>設定</h1>
+      {isTrial && <a href="../listen.html">幫手盲聽錄音</a>}
       <OfflinePack />
       <label className="stack">
         <span>名字</span>

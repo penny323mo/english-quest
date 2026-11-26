@@ -2,6 +2,7 @@ import http from "node:http";
 import fs from "node:fs";
 import { tmpdir } from "node:os";
 import assert from "node:assert/strict";
+import { checkPlaytest } from "./playtest.mjs";
 import { checkCourse } from "./course-coverage.mjs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
@@ -25,6 +26,11 @@ const server = http.createServer((req, res) => {
   if (disconnected) { req.socket.destroy(); return; }
   const url = new URL(req.url || "/", "http://127.0.0.1");
   if (interrupt && url.pathname.endsWith(probe)) { res.writeHead(503).end(); return; }
+  if (url.pathname === "/listen.html") {
+    res.writeHead(200, { "content-type": "text/html; charset=utf-8" });
+    fs.createReadStream(path.join(root, "release-evidence/listen.html")).pipe(res);
+    return;
+  }
   const prefix = "/english-quest";
   if (!url.pathname.startsWith(prefix)) {
     res.writeHead(404);
@@ -432,7 +438,10 @@ async function runBrowser(browserType) {
 const only = process.argv[2];
 const types = [webkit, chromium].filter((type) => !only || type.name() === only);
 try {
-  for (const type of types) await runBrowser(type);
+  for (const type of types) {
+    await checkPlaytest(type, origin);
+    await runBrowser(type);
+  }
   console.log("full-lesson e2e ok");
 } finally {
   server.close();

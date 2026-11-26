@@ -1,16 +1,18 @@
 # English Quest 1.0 試聽及試學記錄
 
-測試對象係下載包內嘅候選版。記低設定頁版本、日期及裝置。表格目前留白，等實際試用者填寫。可以用代號，毋須提供姓名或原始錄音。
+測試版本係 1.0.0-rc.4。記低日期同裝置，可以用代號，毋須提供姓名或原始錄音。
 
 ## 打開候選版
 
-下載 GitHub prerelease 嘅 `english-quest-1.0.0-rc.3.zip`，解壓後喺該資料夾開 Terminal，執行以下指令。Mac、Windows 同 Linux 都可以用有 Python 3 嘅電腦試用。學員用同一個瀏覽器同網址完成兩日嘅練習。
+手機開試玩站，撳「即試第一課」，聽吓 ship 同 sheep。想自己揀目標，可以用暱稱繼續設定。用同一個瀏覽器同網址做兩日練習，先可以讀返上次嘅進度。想離線試，可以喺「我」嘅設定下載完整課程包。[開啟試玩站](https://english-quest-playtest.vercel.app/) · [試聽錄音](https://english-quest-playtest.vercel.app/listen.html)
+
+電腦亦可以下載 GitHub prerelease 嘅 `english-quest-1.0.0-rc.4.zip`，解壓後喺該資料夾開 Terminal，執行以下指令。
 
 ```sh
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-打開 [候選 App](http://127.0.0.1:8765/english-quest/) 或 [獨立盲聽表](http://127.0.0.1:8765/listen.html)。Mac 亦可以雙擊下載包內嘅 `Open English Quest.command`。候選版網址同正式站各自保存進度。
+Mac 亦可以雙擊下載包內嘅 `Open English Quest.command`。網上試玩站、本機下載包同 0.9 正式站各自保存進度。[本機試玩](http://127.0.0.1:8765/english-quest/?trial=1) · [本機盲聽表](http://127.0.0.1:8765/listen.html)
 
 ## 英語聆聽者
 

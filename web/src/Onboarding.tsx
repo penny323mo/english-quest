@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { GoalPick } from "./goals";
 import { FALLBACK_LEARNER } from "./learner";
+import { isTrial } from "./course-worker";
 import { blankProfile, useStore } from "./store";
 import type { Goal, Level } from "./types";
 
@@ -30,7 +31,14 @@ export function Onboarding() {
       <h1>情景英文</h1>
       {step === 0 && (
         <>
-          <p className="lede">你部機上記低個名就得。進度唔會上傳。</p>
+          {isTrial && !existing && <>
+            <p className="lede">戴上耳機，聽吓 ship（船）同 sheep（羊）有咩分別。可以重播同慢聽。</p>
+            <button className="btn block" type="button" onClick={() => {
+              setProfile(blankProfile({ name, goal: "foundation", minutes: 10, level: "new" }));
+              location.hash = "#/lesson/F1";
+            }}>即試第一課</button>
+          </>}
+          <p className="lede">{isTrial && !existing ? "想揀自己嘅學習目標？可以用暱稱開始，進度會儲喺呢部機。" : "你部機上記低個名就得。進度唔會上傳。"}</p>
           <label className="stack">
             <span>點稱呼你？</span>
             <input className="field" value={name} placeholder="你的名" maxLength={24} onChange={(e) => setName(e.target.value)} />
@@ -80,6 +88,7 @@ export function Onboarding() {
           <button className="btn block" type="button" onClick={finish}>開始</button>
         </>
       )}
+      {isTrial && step === 0 && <a className="back" href="../listen.html">幫手盲聽錄音</a>}
       <a className="back" href="#/attributions">出處同授權</a>
     </section>
   );

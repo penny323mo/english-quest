@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
+import { installCourseWorker, isTrial } from "./course-worker";
 
-type Pack = { state: "checking" | "downloading" | "failed" | "ready" | "unavailable" | "updating"; completed: number; total: number; reason?: string; entry?: string };
+type Pack = { state: "manual" | "checking" | "downloading" | "failed" | "ready" | "unavailable" | "updating"; completed: number; total: number; reason?: string; entry?: string };
 const initial: Pack = { state: "checking", completed: 0, total: 0 };
 
 export function OfflinePack() {
@@ -17,7 +18,17 @@ export function OfflinePack() {
       channel?.port1.close();
       const worker = workers?.controller;
       if (!worker) {
-        setPack({ ...initial, state: "unavailable" });
+        if (workers && requestRetry) {
+          requestRetry = false;
+          setPack(initial);
+          const unavailable = () => {
+            if (active && !workers.controller) setPack({ ...initial, state: "unavailable" });
+          };
+          timer = window.setTimeout(unavailable, 15000);
+          void installCourseWorker().catch(unavailable);
+        } else {
+          setPack({ ...initial, state: workers && isTrial ? "manual" : "unavailable" });
+        }
         return;
       }
       channel = new MessageChannel();
@@ -47,6 +58,7 @@ export function OfflinePack() {
     };
   }, [retry]);
   const text = {
+    manual: "網上試玩會按需要載入課堂同錄音。想離線學習，可以用 Wi-Fi 下載全套，約 190 MB。",
     checking: "檢查緊呢部機嘅課程包",
     downloading: "正在下載課程同錄音",
     ready: "課程同錄音已齊備，可以離線學習。",
@@ -57,6 +69,7 @@ export function OfflinePack() {
   return <section className="stack" aria-label="離線學習">
     <h2>離線學習</h2>
     <p role="status">{text}</p>
+    {pack.state === "manual" && <button className="btn ghost" type="button" onClick={() => setRetry(n => n + 1)}>下載完整課程包</button>}
     {pack.total > 0 && <p className="fine">已儲存 {pack.completed} / {pack.total} 個檔案</p>}
     {pack.state === "downloading" && pack.total > 0 && <progress aria-label="課程包下載進度" value={pack.completed} max={pack.total} />}
     {(pack.state === "failed" || pack.state === "unavailable") && <button className="btn ghost" type="button" onClick={() => setRetry(n => n + 1)}>重新檢查及下載</button>}

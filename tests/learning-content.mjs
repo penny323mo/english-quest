@@ -69,6 +69,8 @@ test("fixed lesson scripts retain recorded audio on devices without speech synth
 
 test("the blind listening answer sheet describes the current recordings at both speeds", () => {
   const html = readFileSync(new URL("../release-evidence/listen.html", import.meta.url), "utf8");
+  const release = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8")).version;
+  assert.equal(html.match(/^const edition = "([^"]+)";$/m)?.[1], release);
   const cases = JSON.parse(html.match(/^const clips=(.*);$/m)[1]);
   const targets = new Map();
   const add = (normal, slow, text) => { targets.set(normal, text); targets.set(slow, text); };

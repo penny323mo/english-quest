@@ -1,15 +1,92 @@
 <!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>English Quest 候選版盲聽</title>
 <style>body{font:18px/1.6 system-ui,sans-serif;color:#162c35;background:#fffaf2;margin:3rem auto;padding:0 1rem;max-width:38rem}button,select,input,textarea{font:inherit;padding:.5rem;max-width:95%}button{margin:.5rem .5rem .5rem 0;cursor:pointer}textarea{width:95%}label{display:block;margin:1rem 0}audio{width:100%}h1{line-height:1.2}</style>
-<h1>English Quest 1.0 盲聽</h1><p>每輪隨機抽 12 段。先用英文寫低聽到嘅內容，聽唔清可以寫「聽唔清」。下載嘅 CSV 會列出原句同音檔，方便跟進。</p>
+<h1>English Quest 1.0 盲聽</h1><p>每輪隨機抽 12 段。先用英文寫低聽到嘅內容，聽唔清可以寫「聽唔清」。答案同未寫完嘅句子會暫存喺呢個瀏覽器。下載 CSV 可睇返原句同音檔。</p>
 <section id="sheet"><h2 id="progress"></h2><audio id="clip" controls></audio><label>你聽到咩？<textarea id="heard" rows="2"></textarea></label><label>清晰度 <select id="clarity"><option>一次聽得清</option><option>重播先聽得清</option><option>仍然聽唔清</option></select></label><label>有咩音或重音要跟進？<input id="note"></label><button id="next">記錄，去下一段</button></section>
 <p id="status" role="status"></p><button id="download" disabled>下載今次記錄</button><button id="again" hidden>再抽一輪</button>
+<p><a href="english-quest/?trial=1">返去試玩課堂</a></p>
 <script>
 const clips=[["assets/audio/words/ship-noun-word.mp3", "ship", "normal"], ["assets/audio/words/ship-noun-word-slow.mp3", "ship", "slow"], ["assets/audio/words/sheep-noun-word.mp3", "sheep", "normal"], ["assets/audio/words/sheep-noun-word-slow.mp3", "sheep", "slow"], ["assets/audio/words/sit-verb-word.mp3", "sit", "normal"], ["assets/audio/words/sit-verb-word-slow.mp3", "sit", "slow"], ["assets/audio/words/seat-noun-word.mp3", "seat", "normal"], ["assets/audio/words/seat-noun-word-slow.mp3", "seat", "slow"], ["assets/audio/words/the-art-word.mp3", "the", "normal"], ["assets/audio/words/the-art-word-slow.mp3", "the", "slow"], ["assets/audio/words/blanket-noun-word.mp3", "blanket", "normal"], ["assets/audio/words/blanket-noun-word-slow.mp3", "blanket", "slow"], ["assets/audio/words/sim-noun-word.mp3", "SIM", "normal"], ["assets/audio/words/sim-noun-word-slow.mp3", "SIM", "slow"], ["assets/audio/lines/f2-new-name.mp3", "Hello, I'm Tom. What's your name?", "normal"], ["assets/audio/lines/f2-new-name-slow.mp3", "Hello, I'm Tom. What's your name?", "slow"], ["assets/audio/lines/f1-m1.mp3", "First, ship. Then, sheep.", "normal"], ["assets/audio/lines/f1-m1-slow.mp3", "First, ship. Then, sheep.", "slow"], ["assets/audio/lines/f2-repeat.mp3", "Could you say that again, please?", "normal"], ["assets/audio/lines/f2-repeat-slow.mp3", "Could you say that again, please?", "slow"], ["assets/audio/words/initial-noun-word.mp3", "initial", "normal"], ["assets/audio/words/initial-noun-word-slow.mp3", "initial", "slow"], ["assets/audio/words/resolve-verb-word.mp3", "resolve", "normal"], ["assets/audio/words/resolve-verb-word-slow.mp3", "resolve", "slow"], ["assets/audio/words/of-prep.mp3", "I would like a cup of tea.", "normal"], ["assets/audio/words/of-prep-slow.mp3", "I would like a cup of tea.", "slow"], ["assets/audio/lines/f1-l2.mp3", "Listen to the difference between ship and sheep.", "normal"], ["assets/audio/lines/f1-l2-slow.mp3", "Listen to the difference between ship and sheep.", "slow"], ["assets/audio/words/ship-noun.mp3", "The ship leaves at noon.", "normal"], ["assets/audio/words/ship-noun-slow.mp3", "The ship leaves at noon.", "slow"], ["assets/audio/words/sheep-noun.mp3", "The sheep are in the field.", "normal"], ["assets/audio/words/sheep-noun-slow.mp3", "The sheep are in the field.", "slow"], ["assets/audio/words/short-adj.mp3", "It is a short walk to the station.", "normal"], ["assets/audio/words/short-adj-slow.mp3", "It is a short walk to the station.", "slow"], ["assets/audio/words/long-adj.mp3", "It was a long bus ride.", "normal"], ["assets/audio/words/long-adj-slow.mp3", "It was a long bus ride.", "slow"], ["assets/audio/lines/t1-m1.mp3", "I'm flying to Hong Kong.", "normal"], ["assets/audio/lines/t1-m1-slow.mp3", "I'm flying to Hong Kong.", "slow"], ["assets/audio/lines/t1-l2.mp3", "I'm flying to Hong Kong. Here is my passport.", "normal"], ["assets/audio/lines/t1-l2-slow.mp3", "I'm flying to Hong Kong. Here is my passport.", "slow"], ["assets/audio/lines/f5-l2.mp3", "I'm from Hong Kong, and I live here now.", "normal"], ["assets/audio/lines/f5-l2-slow.mp3", "I'm from Hong Kong, and I live here now.", "slow"], ["assets/audio/words/hong-kong-noun.mp3", "I am from Hong Kong, not from Macau.", "normal"], ["assets/audio/words/hong-kong-noun-slow.mp3", "I am from Hong Kong, not from Macau.", "slow"], ["assets/audio/words/from-prep.mp3", "I am from Hong Kong.", "normal"], ["assets/audio/words/from-prep-slow.mp3", "I am from Hong Kong.", "slow"], ["assets/audio/words/to-prep.mp3", "I am flying to Hong Kong.", "normal"], ["assets/audio/words/to-prep-slow.mp3", "I am flying to Hong Kong.", "slow"], ["assets/audio/words/tablet-noun.mp3", "What is this tablet for?", "normal"], ["assets/audio/words/tablet-noun-slow.mp3", "What is this tablet for?", "slow"], ["assets/audio/words/dosage-noun.mp3", "Could you show me the dosage on the label?", "normal"], ["assets/audio/words/dosage-noun-slow.mp3", "Could you show me the dosage on the label?", "slow"], ["assets/audio/words/twice-a-day-phrase.mp3", "I walk my dog twice a day.", "normal"], ["assets/audio/words/twice-a-day-phrase-slow.mp3", "I walk my dog twice a day.", "slow"], ["assets/audio/lines/d6-l5.mp3", "Let me check the dosage on the label with the pharmacist.", "normal"], ["assets/audio/lines/d6-l5-slow.mp3", "Let me check the dosage on the label with the pharmacist.", "slow"], ["assets/audio/words/water-noun.mp3", "I'd like some water, please.", "normal"], ["assets/audio/words/water-noun-slow.mp3", "I'd like some water, please.", "slow"], ["assets/audio/words/still-adj-md1.mp3", "Still water is not sparkling.", "normal"], ["assets/audio/words/still-adj-md1-slow.mp3", "Still water is not sparkling.", "slow"], ["assets/audio/words/too-adv-md0.mp3", "I want water too.", "normal"], ["assets/audio/words/too-adv-md0-slow.mp3", "I want water too.", "slow"], ["assets/audio/words/can-verb.mp3", "Can I have some water, please?", "normal"], ["assets/audio/words/can-verb-slow.mp3", "Can I have some water, please?", "slow"], ["assets/audio/lines/d3-l3.mp3", "The monthly rent is eighteen thousand dollars, and water is included.", "normal"], ["assets/audio/lines/d3-l3-slow.mp3", "The monthly rent is eighteen thousand dollars, and water is included.", "slow"], ["assets/audio/words/sim-noun.mp3", "I need a SIM card for my phone.", "normal"], ["assets/audio/words/sim-noun-slow.mp3", "I need a SIM card for my phone.", "slow"], ["assets/audio/lines/d4-l4.mp3", "Please show me your passport so I can activate your SIM card.", "normal"], ["assets/audio/lines/d4-l4-slow.mp3", "Please show me your passport so I can activate your SIM card.", "slow"], ["assets/audio/lines/d4-l7.mp3", "I'll pay for this prepaid SIM card here.", "normal"], ["assets/audio/lines/d4-l7-slow.mp3", "I'll pay for this prepaid SIM card here.", "slow"], ["assets/audio/lines/d4-l8.mp3", "The coverage on this SIM is enough for the city.", "normal"], ["assets/audio/lines/d4-l8-slow.mp3", "The coverage on this SIM is enough for the city.", "slow"], ["assets/audio/words/saturday-noun.mp3", "Saturday is the collection day.", "normal"], ["assets/audio/words/saturday-noun-slow.mp3", "Saturday is the collection day.", "slow"], ["assets/audio/words/cake-noun-ex2.mp3", "Your cake will be ready at three on Saturday.", "normal"], ["assets/audio/words/cake-noun-ex2-slow.mp3", "Your cake will be ready at three on Saturday.", "slow"], ["assets/audio/lines/j15-l4.mp3", "We can make the ring half a size larger, and you can collect it on Saturday at four.", "normal"], ["assets/audio/lines/j15-l4-slow.mp3", "We can make the ring half a size larger, and you can collect it on Saturday at four.", "slow"], ["assets/audio/lines/j22-l1.mp3", "Can you rush the engraving on this gold bracelet before Saturday?", "normal"], ["assets/audio/lines/j22-l1-slow.mp3", "Can you rush the engraving on this gold bracelet before Saturday?", "slow"], ["assets/audio/lines/r14-l5.mp3", "Saturday at three, please. Do you have candles too?", "normal"], ["assets/audio/lines/r14-l5-slow.mp3", "Saturday at three, please. Do you have candles too?", "slow"], ["assets/audio/words/labour-noun.mp3", "The labour charge is forty dollars.", "normal"], ["assets/audio/words/labour-noun-slow.mp3", "The labour charge is forty dollars.", "slow"], ["assets/audio/words/roughly-adv-ex2.mp3", "The fare is roughly forty dollars.", "normal"], ["assets/audio/words/roughly-adv-ex2-slow.mp3", "The fare is roughly forty dollars.", "slow"], ["assets/audio/words/rush-noun-ex2.mp3", "The rush fee is eighty dollars.", "normal"], ["assets/audio/words/rush-noun-ex2-slow.mp3", "The rush fee is eighty dollars.", "slow"], ["assets/audio/words/how-much-phrase-md1.mp3", "It is eighty dollars. How much did you budget?", "normal"], ["assets/audio/words/how-much-phrase-md1-slow.mp3", "It is eighty dollars. How much did you budget?", "slow"], ["assets/audio/lines/j13-l5.mp3", "The better price is forty dollars each if you confirm the thirty-piece order this week.", "normal"], ["assets/audio/lines/j13-l5-slow.mp3", "The better price is forty dollars each if you confirm the thirty-piece order this week.", "slow"], ["assets/audio/lines/j20-l4.mp3", "The labour charge is forty dollars on top of the gold.", "normal"], ["assets/audio/lines/j20-l4-slow.mp3", "The labour charge is forty dollars on top of the gold.", "slow"], ["assets/audio/lines/d7-l5.mp3", "It's eighty dollars in total, and the price covers the blow dry.", "normal"], ["assets/audio/lines/d7-l5-slow.mp3", "It's eighty dollars in total, and the price covers the blow dry.", "slow"], ["assets/audio/lines/j18-l2.mp3", "Sure. It takes about ten minutes, and it's eighty dollars.", "normal"], ["assets/audio/lines/j18-l2-slow.mp3", "Sure. It takes about ten minutes, and it's eighty dollars.", "slow"], ["assets/audio/words/table-for-two-phrase.mp3", "A table for two, please.", "normal"], ["assets/audio/words/table-for-two-phrase-slow.mp3", "A table for two, please.", "slow"], ["assets/audio/words/table-noun.mp3", "A table for two, please.", "normal"], ["assets/audio/words/table-noun-slow.mp3", "A table for two, please.", "slow"], ["assets/audio/words/two-num.mp3", "A table for two, please.", "normal"], ["assets/audio/words/two-num-slow.mp3", "A table for two, please.", "slow"], ["assets/audio/words/a-art.mp3", "A table for two.", "normal"], ["assets/audio/words/a-art-slow.mp3", "A table for two.", "slow"], ["assets/audio/lines/r1-l2.mp3", "Yes. A table for two, please.", "normal"], ["assets/audio/lines/r1-l2-slow.mp3", "Yes. A table for two, please.", "slow"], ["assets/audio/words/sir-noun.mp3", "Yes, sir.", "normal"], ["assets/audio/words/sir-noun-slow.mp3", "Yes, sir.", "slow"], ["assets/audio/words/late-checkout-phrase.mp3", "Can I have a late checkout?", "normal"], ["assets/audio/words/late-checkout-phrase-slow.mp3", "Can I have a late checkout?", "slow"], ["assets/audio/lines/r13-l4.mp3", "For here or to go?", "normal"], ["assets/audio/lines/r13-l4-slow.mp3", "For here or to go?", "slow"], ["assets/audio/words/salesperson-noun.mp3", "I work here as a salesperson.", "normal"], ["assets/audio/words/salesperson-noun-slow.mp3", "I work here as a salesperson.", "slow"], ["assets/audio/words/invoice-noun.mp3", "I need an invoice.", "normal"], ["assets/audio/words/invoice-noun-slow.mp3", "I need an invoice.", "slow"], ["assets/audio/words/invoice-noun-md0.mp3", "I need an invoice.", "normal"], ["assets/audio/words/invoice-noun-md0-slow.mp3", "I need an invoice.", "slow"], ["assets/audio/words/watch-noun.mp3", "A watch and a ring.", "normal"], ["assets/audio/words/watch-noun-slow.mp3", "A watch and a ring.", "slow"], ["assets/audio/words/job-noun.mp3", "My first job was at this shop.", "normal"], ["assets/audio/words/job-noun-slow.mp3", "My first job was at this shop.", "slow"], ["assets/audio/words/gift-box-phrase.mp3", "This gift box is ready.", "normal"], ["assets/audio/words/gift-box-phrase-slow.mp3", "This gift box is ready.", "slow"], ["assets/audio/words/vine-noun.mp3", "The vine has green leaves.", "normal"], ["assets/audio/words/vine-noun-slow.mp3", "The vine has green leaves.", "slow"], ["assets/audio/words/vine-noun-md1.mp3", "That vine climbs the wall. Vine starts with v, not w.", "normal"], ["assets/audio/words/vine-noun-md1-slow.mp3", "That vine climbs the wall. Vine starts with v, not w.", "slow"]];
 const el=id=>document.getElementById(id);
-let round=[], results=[];
-function start(){const shuffled=clips.slice();for(let i=shuffled.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[shuffled[i],shuffled[j]]=[shuffled[j],shuffled[i]];}round=shuffled.slice(0,12);results=[];el("again").hidden=true;el("download").disabled=true;el("sheet").hidden=false;show();}
-function show(){const i=results.length;if(i===round.length){el("clip").pause();el("sheet").hidden=true;el("again").hidden=false;el("status").textContent="今輪已完成，可以下載記錄。";return;}el("progress").textContent="第 "+(i+1)+" / "+round.length+" 段";el("clip").src="english-quest/"+round[i][0];el("heard").value="";el("clarity").selectedIndex=0;el("note").value="";el("status").textContent="";}
-el("next").onclick=()=>{const answer=el("heard").value.trim();if(!answer){el("status").textContent="請寫低聽到嘅內容，或者填「聽唔清」。";el("heard").focus();return;}results.push([new Date().toISOString(),...round[results.length],answer,el("clarity").value,el("note").value]);el("download").disabled=false;show();};
-el("download").onclick=()=>{const rows=[["time","file","target","speed","heard","clarity","note"],...results];const csv=rows.map(r=>r.map(v=>'"'+String(v).replace(/^[=+@-]/,"'$&").replaceAll('"','""')+'"').join(",")).join("\r\n");const url=URL.createObjectURL(new Blob(["\uFEFF"+csv],{type:"text/csv;charset=utf-8"}));const a=document.createElement("a");a.href=url;a.download="english-quest-listening.csv";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
-el("again").onclick=start;start();
+const edition = "1.0.0-rc.4";
+const slot = "english-quest-listening-round-" + edition;
+const fields = ["heard", "clarity", "note"];
+let round = [], results = [];
+
+function save() {
+  try {
+    localStorage.setItem(slot, JSON.stringify({
+      files: round.map(clip => clip[0]), results,
+      draft: fields.map(id => el(id).value)
+    }));
+  } catch {
+    el("status").textContent = "呢個瀏覽器未能暫存。離開前請下載已記錄嘅答案。";
+  }
+}
+function show(draft) {
+  const i = results.length;
+  const finished = i === round.length;
+  el("download").disabled = i === 0;
+  el("again").hidden = !finished;
+  el("sheet").hidden = finished;
+  el("status").textContent = finished ? "今輪已完成，可以下載記錄。" : "";
+  if (finished) { el("clip").pause(); return; }
+  el("progress").textContent = "第 " + (i + 1) + " / " + round.length + " 段";
+  el("clip").src = "english-quest/" + round[i][0];
+  el("heard").value = draft?.[0] || "";
+  el("clarity").selectedIndex = 0;
+  if (draft?.[1]) el("clarity").value = draft[1];
+  el("note").value = draft?.[2] || "";
+}
+function start() {
+  const shuffled = clips.slice();
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  round = shuffled.slice(0, 12);
+  results = [];
+  show();
+  save();
+}
+function restore() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(slot));
+    if (!saved || !Array.isArray(saved.files) || saved.files.length !== 12 ||
+        new Set(saved.files).size !== 12 || !Array.isArray(saved.results) || saved.results.length > 12) return false;
+    const restored = saved.files.map(file => clips.find(clip => clip[0] === file));
+    if (restored.some(clip => !clip)) return false;
+    if (!saved.results.every((row, i) => Array.isArray(row) && row.length === 7 &&
+        row.every(value => typeof value === "string") && restored[i].every((value, j) => row[j + 1] === value))) return false;
+    round = restored;
+    results = saved.results;
+    const draft = Array.isArray(saved.draft) && saved.draft.every(v => typeof v === "string") ? saved.draft : undefined;
+    show(draft);
+    return true;
+  } catch { return false; }
+}
+for (const id of fields) el(id).addEventListener(id === "clarity" ? "change" : "input", save);
+el("next").onclick = () => {
+  const answer = el("heard").value.trim();
+  if (!answer) {
+    el("status").textContent = "請寫低聽到嘅內容，或者填「聽唔清」。";
+    el("heard").focus();
+    return;
+  }
+  results.push([new Date().toISOString(), ...round[results.length], answer, el("clarity").value, el("note").value]);
+  show();
+  save();
+  if (!el("sheet").hidden) el("heard").focus();
+};
+el("download").onclick = () => {
+  const rows = [["time","file","target","speed","heard","clarity","note","version"], ...results.map(row => [...row, edition])];
+  const csv = rows.map(row => row.map(value => '"' + String(value).replace(/^(\s*[=+@-])/, "'$1").replaceAll('"','""') + '"').join(",")).join("\r\n");
+  const url = URL.createObjectURL(new Blob(["\uFEFF" + csv], {type:"text/csv;charset=utf-8"}));
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "english-quest-listening.csv";
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+};
+el("again").onclick = start;
+if (!restore()) start();
 </script></html>
