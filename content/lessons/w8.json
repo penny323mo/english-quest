@@ -206,18 +206,22 @@
     },
     {
       "type": "order",
-      "promptYue": "排好呢句。",
+      "promptYue": "排好英文，講「你可唔可以喺星期五或之前跟進？」",
       "tokens": [
+        "Can",
+        "you",
         "follow",
         "up",
         "by",
-        "Friday"
+        "Friday?"
       ],
       "answer": [
+        "Can",
+        "you",
         "follow",
         "up",
         "by",
-        "Friday"
+        "Friday?"
       ]
     }
   ],

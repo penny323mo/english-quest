@@ -718,7 +718,8 @@
     "glossYue": "有。兩位，唔該。",
     "audio": "assets/audio/lines/r1-l2.mp3",
     "audioSlow": "assets/audio/lines/r1-l2-slow.mp3",
-    "say": "Yes. [[ə ˈteɪbəl fɚ ˈtu]] , please."
+    "say": "Yes. A table for two, please.",
+    "kokoroSpeaker": 5
   },
   {
     "id": "r1-l3",
@@ -838,7 +839,8 @@
     "glossYue": "醬可唔可以放喺旁邊，唔好淋喺雞上面？",
     "audio": "assets/audio/lines/r3-l4.mp3",
     "audioSlow": "assets/audio/lines/r3-l4-slow.mp3",
-    "say": "Could I have the sauce [[ˈɔn]] the side, and not on the chicken?"
+    "say": "Could I have the sauce on the side, and not on the chicken?",
+    "kokoroSpeaker": 5
   },
   {
     "id": "r3-l5",
@@ -2837,7 +2839,8 @@
     "glossYue": "幾好。個週末同家姐好忙。",
     "audio": "assets/audio/lines/w4-l2.mp3",
     "audioSlow": "assets/audio/lines/w4-l2-slow.mp3",
-    "say": "Not bad. The weekend was busy with my sister."
+    "say": "Not bad. The weekend was busy with my sister.",
+    "kokoroSpeaker": 5
   },
   {
     "id": "w4-l3",
@@ -3037,7 +3040,8 @@
     "glossYue": "如果個扣修唔好，我哋可以換貨，或者賠償二百蚊。",
     "audio": "assets/audio/lines/w5-l6.mp3",
     "audioSlow": "assets/audio/lines/w5-l6-slow.mp3",
-    "say": "If the clasp cannot be repaired, we can offer a replacement or compensation of two hundred dollars."
+    "say": "If the clasp cannot be repaired, we can offer a replacement or compensation of two hundred dollars.",
+    "kokoroSpeaker": 5
   },
   {
     "id": "w5-l7",
@@ -3982,7 +3986,8 @@
     "glossYue": "你好，我打電話請病假。我唔舒服，上唔到更。",
     "audio": "assets/audio/lines/w7-l1.mp3",
     "audioSlow": "assets/audio/lines/w7-l1-slow.mp3",
-    "say": "Hello, I'm calling in sick. I'm not feeling well and I can't start my shift."
+    "say": "Hello, I'm calling in sick. I'm not feeling well and I can't start my shift.",
+    "kokoroSpeaker": 1
   },
   {
     "id": "w7-l2",
@@ -4913,7 +4918,8 @@
     "glossYue": "冇，係素食。我會叫廚房用另一隻鑊。",
     "audio": "assets/audio/lines/r11-l6.mp3",
     "audioSlow": "assets/audio/lines/r11-l6-slow.mp3",
-    "say": "No, they're vegetarian. I'll ask the kitchen to use a separate pan."
+    "say": "No, they're vegetarian. I'll ask the kitchen to use a separate pan.",
+    "kokoroSpeaker": 2
   },
   {
     "id": "r11-l7",
@@ -5269,11 +5275,12 @@
     "id": "j17-l2",
     "speaker": "ida",
     "speakerLabel": "Ida",
-    "text": "Saltwater pearls are brighter.",
-    "glossYue": "鹹水珍珠光澤更亮。",
+    "text": "They grow in different waters. This saltwater strand looks brighter.",
+    "glossYue": "佢哋喺唔同水域生長。呢條鹹水珍珠頸鏈睇落比較亮。",
     "audio": "assets/audio/lines/j17-l2.mp3",
     "audioSlow": "assets/audio/lines/j17-l2-slow.mp3",
-    "say": "Saltwater pearls are brighter."
+    "say": "They grow in different waters. This saltwater strand looks brighter.",
+    "kokoroSpeaker": 5
   },
   {
     "id": "j17-l3",
@@ -5583,7 +5590,8 @@
     "glossYue": "你好。可唔可以畀我一杯燕麥奶少糖嘅拿鐵？",
     "audio": "assets/audio/lines/r13-l1.mp3",
     "audioSlow": "assets/audio/lines/r13-l1-slow.mp3",
-    "say": "Hi. Can I get a latte with oat milk and less sugar, please?"
+    "say": "Hi. Can I get a latte with oat milk and less sugar, please?",
+    "kokoroSpeaker": 1
   },
   {
     "id": "r13-l2",
@@ -5673,7 +5681,8 @@
     "glossYue": "可以。大約十分鐘，八十蚊。",
     "audio": "assets/audio/lines/j18-l2.mp3",
     "audioSlow": "assets/audio/lines/j18-l2-slow.mp3",
-    "say": "Sure. It takes about ten minutes, and it's eighty dollars."
+    "say": "Sure. It takes about ten minutes, and it's eighty dollars.",
+    "kokoroSpeaker": 5
   },
   {
     "id": "j18-l3",
@@ -5913,7 +5922,8 @@
     "glossYue": "可以。延遲退房四十蚊。你有冇攞迷你吧嘅嘢？",
     "audio": "assets/audio/lines/t15-l2.mp3",
     "audioSlow": "assets/audio/lines/t15-l2-slow.mp3",
-    "say": "Sure. A late checkout is forty dollars. Did you take anything from the minibar?"
+    "say": "Sure. A late checkout is forty dollars. Did you take anything from the minibar?",
+    "kokoroSpeaker": 5
   },
   {
     "id": "t15-l3",
@@ -6530,11 +6540,12 @@
     "id": "d13-l8",
     "speaker": "ben",
     "speakerLabel": "Ben",
-    "text": "The filling is eight hundred dollars. Please don't eat for two hours.",
-    "glossYue": "補牙八百蚊。兩小時內唔好食嘢。",
+    "text": "The filling costs eight hundred dollars. We can book your next visit at the front desk.",
+    "glossYue": "補牙八百蚊。你可以喺接待處預約下次覆診。",
     "audio": "assets/audio/lines/d13-l8.mp3",
     "audioSlow": "assets/audio/lines/d13-l8-slow.mp3",
-    "say": "The filling is eight hundred dollars. Please don't eat for two hours."
+    "say": "The filling costs eight hundred dollars. We can book your next visit at the front desk.",
+    "kokoroSpeaker": 5
   },
   {
     "id": "r15-l1",
@@ -6614,7 +6625,8 @@
     "glossYue": "可以。食完呢份就可以再攞第二次。",
     "audio": "assets/audio/lines/r15-l8.mp3",
     "audioSlow": "assets/audio/lines/r15-l8-slow.mp3",
-    "say": "Yes. A second serving is fine once that one is finished."
+    "say": "Yes. A second serving is fine once that one is finished.",
+    "kokoroSpeaker": 5
   },
   {
     "id": "w12-l1",
@@ -6750,11 +6762,12 @@
     "id": "t18-l6",
     "speaker": "kim",
     "speakerLabel": "Kim",
-    "text": "You should pay forty dollars in cash because that alcohol is well over.",
-    "glossYue": "因為酒過咗限額，你應該畀四十蚊現金。",
+    "text": "The duty on this bottle is forty dollars, payable in cash.",
+    "glossYue": "呢枝酒嘅關稅係四十蚊，要用現金交。",
     "audio": "assets/audio/lines/t18-l6.mp3",
     "audioSlow": "assets/audio/lines/t18-l6-slow.mp3",
-    "say": "You should pay forty dollars in cash because that alcohol is well over."
+    "say": "The duty on this bottle is forty dollars, payable in cash.",
+    "kokoroSpeaker": 5
   },
   {
     "id": "t18-l7",
@@ -6894,7 +6907,8 @@
     "glossYue": "使。海關費用係四十蚊，你可以喺度畀。",
     "audio": "assets/audio/lines/d14-l4.mp3",
     "audioSlow": "assets/audio/lines/d14-l4-slow.mp3",
-    "say": "Yes. The customs fee is forty dollars, and you can pay it here."
+    "say": "Yes. The customs fee is forty dollars, and you can pay it here.",
+    "kokoroSpeaker": 5
   },
   {
     "id": "d14-l5",
@@ -7314,7 +7328,8 @@
     "glossYue": "唔得。內線關閉嗰陣，嗰個灰色箱都要用掃描器。",
     "audio": "assets/audio/lines/t20-l6.mp3",
     "audioSlow": "assets/audio/lines/t20-l6-slow.mp3",
-    "say": "No. That grey case must use the scanner desk when the inner lane is shut."
+    "say": "No. That grey case must use the scanner desk when the inner lane is shut.",
+    "kokoroSpeaker": 5
   },
   {
     "id": "t20-l7",
@@ -7384,7 +7399,8 @@
     "glossYue": "如果索償人帶唔到紙本正本，承保人可唔可以收一張清晰相片？",
     "audio": "assets/audio/lines/j23-l5.mp3",
     "audioSlow": "assets/audio/lines/j23-l5-slow.mp3",
-    "say": "Can the [[ˈʌndɚɹˌaɪɾɚ]] accept a clear photo if the claimant cannot bring the paper original?"
+    "say": "Can the underwriter accept a clear photo if the claimant cannot bring the paper original?",
+    "kokoroSpeaker": 5
   },
   {
     "id": "j23-l6",
@@ -7414,7 +7430,8 @@
     "glossYue": "如果佢哋要求，收費係四十蚊。免賠額維持不變。",
     "audio": "assets/audio/lines/j23-l8.mp3",
     "audioSlow": "assets/audio/lines/j23-l8-slow.mp3",
-    "say": "The fee is forty dollars if they ask. The deductible stays the same."
+    "say": "The fee is forty dollars if they ask. The deductible stays the same.",
+    "kokoroSpeaker": 5
   },
   {
     "id": "r17-l1",
@@ -7454,7 +7471,8 @@
     "glossYue": "附加費係八十蚊。呢筆費用留住個宴會廳，由六點到九點。",
     "audio": "assets/audio/lines/r17-l4.mp3",
     "audioSlow": "assets/audio/lines/r17-l4-slow.mp3",
-    "say": "The surcharge is eighty dollars. It holds the banquet room from six until nine."
+    "say": "The surcharge is eighty dollars. It holds the banquet room from six until nine.",
+    "kokoroSpeaker": 2
   },
   {
     "id": "r17-l5",
@@ -7524,7 +7542,8 @@
     "glossYue": "如果每個持份者未睇過封電郵，你會唔會傳閱書面預測？",
     "audio": "assets/audio/lines/w14-l3.mp3",
     "audioSlow": "assets/audio/lines/w14-l3-slow.mp3",
-    "say": "Will you circulate the written forecast if each stakeholder has not read the email yet?"
+    "say": "Will you circulate the written forecast if each stakeholder has not read the email yet?",
+    "kokoroSpeaker": 1
   },
   {
     "id": "w14-l4",
@@ -7564,7 +7583,8 @@
     "glossYue": "星期一通話，可唔可以傳成份議程，但唔顯示草稿數字？",
     "audio": "assets/audio/lines/w14-l7.mp3",
     "audioSlow": "assets/audio/lines/w14-l7-slow.mp3",
-    "say": "Can you send the full agenda, but not the draft figures, on the Monday call?"
+    "say": "Can you send the full agenda, but not the draft figures, on the Monday call?",
+    "kokoroSpeaker": 1
   },
   {
     "id": "w14-l8",
@@ -7624,7 +7644,8 @@
     "glossYue": "可唔可以寫我做負責人，開會唔使逐行讀出嚟？",
     "audio": "assets/audio/lines/w15-l5.mp3",
     "audioSlow": "assets/audio/lines/w15-l5-slow.mp3",
-    "say": "Could you put me down as the lead, and not read every line out in the meeting?"
+    "say": "Could you put me down as the lead, and not read every line out in the meeting?",
+    "kokoroSpeaker": 2
   },
   {
     "id": "w15-l6",
@@ -7634,7 +7655,8 @@
     "glossYue": "我會寫你做負責人，開會唔會逐行讀。",
     "audio": "assets/audio/lines/w15-l6.mp3",
     "audioSlow": "assets/audio/lines/w15-l6-slow.mp3",
-    "say": "I'll put you down as the lead, and I won't read the lines out."
+    "say": "I'll put you down as the lead, and I won't read the lines out.",
+    "kokoroSpeaker": 5
   },
   {
     "id": "w15-l7",

@@ -4330,7 +4330,9 @@
           "yue": "開到九點。",
           "audio": "assets/audio/words/is-verb-md1.mp3",
           "audioSlow": "assets/audio/words/is-verb-md1-slow.mp3",
-          "audioTextSha256": "2e9d054b8bbc7067341df126397bed7a2f852d5a9bc5e6a2e7c9710252620d8e"
+          "audioTextSha256": "2e9d054b8bbc7067341df126397bed7a2f852d5a9bc5e6a2e7c9710252620d8e",
+          "kokoroSpeaker": 1,
+          "say": "Yes. It is open until nine."
         }
       ],
       "examples": [
@@ -5258,7 +5260,9 @@
           "yue": "睇落好清楚。Very 要讀 /v/，唔好讀成 /w/。",
           "audio": "assets/audio/words/very-adv-md1.mp3",
           "audioSlow": "assets/audio/words/very-adv-md1-slow.mp3",
-          "audioTextSha256": "d63b8720c2105966d5e29e9a8b77c637176b89b66a837c0995ca8731316419d5"
+          "audioTextSha256": "d63b8720c2105966d5e29e9a8b77c637176b89b66a837c0995ca8731316419d5",
+          "kokoroSpeaker": 5,
+          "say": "It looks very clear. Say very with a v, not a w."
         }
       ],
       "examples": [
@@ -9751,7 +9755,7 @@
       ],
       "example": "A table for two, please.",
       "exampleYue": "兩位，唔該。",
-      "say": "[[ə ˈteɪbəl fɚ ˈtu]] , please.",
+      "say": "A table for two, please.",
       "variants": [],
       "note": "table 本身冇 /r/。今課嘅 /r/ 喺 right、reservation、ready。",
       "sources": [
@@ -9763,7 +9767,7 @@
       "senseMismatch": false,
       "cmuLemma": "table",
       "phrase": false,
-      "audioSha256": "4f90fd03ec2c883187032e6775a25f4dada4ebdff44c4e6c415a9836fee82629",
+      "audioSha256": "27ee4cf85c38b14e62fef88b346b179d3524752a336fa3ced81bb942707224c5",
       "miniDialogue": [
         {
           "en": "We would like a table for two if one is open.",
@@ -9786,8 +9790,9 @@
           "yue": "兩位，唔該。",
           "audio": "assets/audio/words/table-noun.mp3",
           "audioSlow": "assets/audio/words/table-noun-slow.mp3",
-          "audioTextSha256": "01e251320e7cf8488ed3d79dd9b918b8b571eaebe9808ea52760274973801090",
-          "say": "[[ə ˈteɪbəl fɚ ˈtu]] , please."
+          "audioTextSha256": "48cb0fd06a005a6c3d03e4bf8d40ef75182d80a1aa543f1c4f5c0f8def3c497c",
+          "say": "A table for two, please.",
+          "kokoroSpeaker": 5
         },
         {
           "en": "We would like a table for two if one is open.",
@@ -9796,7 +9801,8 @@
           "audioSlow": "assets/audio/words/table-noun-md0-slow.mp3",
           "audioTextSha256": "13c8d66cf81cbf0625949b2bd6ad71d2c7c615834ff4733bf945f0972241883b"
         }
-      ]
+      ],
+      "kokoroSpeaker": 5
     },
     {
       "id": "right-adv",
@@ -10934,7 +10940,9 @@
           "yue": "未。主菜之後就準備好。",
           "audio": "assets/audio/words/ready-adj-md1.mp3",
           "audioSlow": "assets/audio/words/ready-adj-md1-slow.mp3",
-          "audioTextSha256": "8643260d27159443bfeeb2eaf72ac3ed2a68774afdc6e6490e1bf2ed31404e93"
+          "audioTextSha256": "8643260d27159443bfeeb2eaf72ac3ed2a68774afdc6e6490e1bf2ed31404e93",
+          "kokoroSpeaker": 1,
+          "say": "Not yet. We will be ready after the main course."
         }
       ],
       "examples": [
@@ -10993,18 +11001,22 @@
       "audioSha256": "179fca9c886c8aa8d00f7d3075f44e46f3e285877c7bedb1be57cd88983fb40e",
       "miniDialogue": [
         {
-          "en": "The seat cushion is red.",
-          "yue": "張坐墊係紅色。",
+          "en": "Is the seat cushion red?",
+          "yue": "個坐墊係咪紅色？",
           "audio": "assets/audio/words/red-adj-md0.mp3",
           "audioSlow": "assets/audio/words/red-adj-md0-slow.mp3",
-          "audioTextSha256": "80ad0f16f50d3b69aecaa4b2f5989f7ff1ed1abd555078576e14f502a702fc12"
+          "audioTextSha256": "ca6d32e1fa975880a280ee02a8ace8beac26bb3327bbe6d44507227d93d5bf3b",
+          "say": "Is the seat cushion red?",
+          "kokoroSpeaker": 1
         },
         {
-          "en": "I found the red one. It is a colour, not led.",
-          "yue": "我搵到紅色嗰張。呢個係顏色，唔係 led。",
+          "en": "Yes, the red one is yours.",
+          "yue": "係，紅色嗰個係你嘅。",
           "audio": "assets/audio/words/red-adj-md1.mp3",
           "audioSlow": "assets/audio/words/red-adj-md1-slow.mp3",
-          "audioTextSha256": "29105351f0c3b34d0720dd1699b7bfc7a4f02813e5805e2b3d9ec1a6e156bf9b"
+          "audioTextSha256": "1dad31372dfb4d106f5478a22e579f12eac0137694e91920c297ba87e3b72b8e",
+          "say": "Yes, the red one is yours.",
+          "kokoroSpeaker": 1
         }
       ],
       "examples": [
@@ -11016,11 +11028,13 @@
           "audioTextSha256": "29972841f5b2a18aedc0c9f76a864444eafa0aa2bb1009f8545b4bdbde9818a1"
         },
         {
-          "en": "The seat cushion is red.",
-          "yue": "張坐墊係紅色。",
+          "en": "Is the seat cushion red?",
+          "yue": "個坐墊係咪紅色？",
           "audio": "assets/audio/words/red-adj-md0.mp3",
           "audioSlow": "assets/audio/words/red-adj-md0-slow.mp3",
-          "audioTextSha256": "80ad0f16f50d3b69aecaa4b2f5989f7ff1ed1abd555078576e14f502a702fc12"
+          "audioTextSha256": "ca6d32e1fa975880a280ee02a8ace8beac26bb3327bbe6d44507227d93d5bf3b",
+          "say": "Is the seat cushion red?",
+          "kokoroSpeaker": 1
         }
       ]
     },
@@ -11063,18 +11077,22 @@
       "audioSha256": "c6a2b81457f2cc5170d571182becda8f9d6f038c1196e285376a61931d4baa96",
       "miniDialogue": [
         {
-          "en": "She led the guests past the piano.",
-          "yue": "佢帶啲客人行過架鋼琴。",
+          "en": "Who led the guests to the table?",
+          "yue": "邊個帶啲客去張枱？",
           "audio": "assets/audio/words/led-verb-md0.mp3",
           "audioSlow": "assets/audio/words/led-verb-md0-slow.mp3",
-          "audioTextSha256": "6953c6510dc2bf1e70a0a4621103d31e7e67c2e13e3c00566a8d4939fa4059bc"
+          "audioTextSha256": "e52873af6fdf432ff554cc8ee04a22c371a7bb2f6ab16341c03d22435fa358a5",
+          "say": "Who led the guests to the table?",
+          "kokoroSpeaker": 1
         },
         {
-          "en": "Yes. Ana led them, and led is not red.",
-          "yue": "係。Ana 帶佢哋，而且 led 唔係 red。",
+          "en": "Ana led them past the piano.",
+          "yue": "Ana 帶佢哋行過架鋼琴。",
           "audio": "assets/audio/words/led-verb-md1.mp3",
           "audioSlow": "assets/audio/words/led-verb-md1-slow.mp3",
-          "audioTextSha256": "bd3879fe3dd3d5d64c7b064e63cb049f36c29eb32781e6eb38e0911c90cb0a93"
+          "audioTextSha256": "b76736721c4ed5ea07de1dc1bcbfe50f02bf77c75e4858bfaef271e9176b1462",
+          "say": "Ana led them past the piano.",
+          "kokoroSpeaker": 1
         }
       ],
       "examples": [
@@ -11086,11 +11104,13 @@
           "audioTextSha256": "868094790e53431e5617d586b7ada859c72f653a0059a880804870110ccf1713"
         },
         {
-          "en": "She led the guests past the piano.",
-          "yue": "佢帶啲客人行過架鋼琴。",
+          "en": "Who led the guests to the table?",
+          "yue": "邊個帶啲客去張枱？",
           "audio": "assets/audio/words/led-verb-md0.mp3",
           "audioSlow": "assets/audio/words/led-verb-md0-slow.mp3",
-          "audioTextSha256": "6953c6510dc2bf1e70a0a4621103d31e7e67c2e13e3c00566a8d4939fa4059bc"
+          "audioTextSha256": "e52873af6fdf432ff554cc8ee04a22c371a7bb2f6ab16341c03d22435fa358a5",
+          "say": "Who led the guests to the table?",
+          "kokoroSpeaker": 1
         }
       ]
     },
@@ -11984,18 +12004,22 @@
       "audioSha256": "ed4d2007fc4c920641149b681366f0067e01ce5a6ad749aaf9c4bfa69f88bf46",
       "miniDialogue": [
         {
-          "en": "There is a tree by the door, not three.",
-          "yue": "門口有棵樹，唔係三棵。",
+          "en": "Which tree do you mean?",
+          "yue": "你指邊棵樹？",
           "audio": "assets/audio/words/tree-noun-md0.mp3",
           "audioSlow": "assets/audio/words/tree-noun-md0-slow.mp3",
-          "audioTextSha256": "e429938188e3935c5b7f66fa11f55b1b5b7ec40e3ec7ae74b3a31128d7339713"
+          "audioTextSha256": "ffd8af4162d4cd9c21b1ef943b550c3de8115b971900e19fdebd1b259cbb1f6b",
+          "say": "Which tree do you mean?",
+          "kokoroSpeaker": 6
         },
         {
-          "en": "One trunk only, so the tree is not three.",
-          "yue": "得一條樹幹，所以棵樹唔係 three。",
+          "en": "The tall tree beside the door.",
+          "yue": "門口旁邊嗰棵高樹。",
           "audio": "assets/audio/words/tree-noun-md1.mp3",
           "audioSlow": "assets/audio/words/tree-noun-md1-slow.mp3",
-          "audioTextSha256": "27007b7d80014b1f23e9ae6338f071e2cbe8f0a8588e17aadce24e9aa5c7045e"
+          "audioTextSha256": "498a717758eb526c5d60ae2d69b2fc88e9fc3eb77018c0797496f7cff41b9d6b",
+          "say": "The tall tree beside the door.",
+          "kokoroSpeaker": 1
         }
       ],
       "examples": [
@@ -12007,11 +12031,13 @@
           "audioTextSha256": "84350c69906ce2361e2b7d4fa632da436ddc6736c5d8415e9fec56e198e97cea"
         },
         {
-          "en": "There is a tree by the door, not three.",
-          "yue": "門口有棵樹，唔係三棵。",
+          "en": "Which tree do you mean?",
+          "yue": "你指邊棵樹？",
           "audio": "assets/audio/words/tree-noun-md0.mp3",
           "audioSlow": "assets/audio/words/tree-noun-md0-slow.mp3",
-          "audioTextSha256": "e429938188e3935c5b7f66fa11f55b1b5b7ec40e3ec7ae74b3a31128d7339713"
+          "audioTextSha256": "ffd8af4162d4cd9c21b1ef943b550c3de8115b971900e19fdebd1b259cbb1f6b",
+          "say": "Which tree do you mean?",
+          "kokoroSpeaker": 6
         }
       ]
     },
@@ -12121,7 +12147,7 @@
       "senseMismatch": false,
       "cmuLemma": "cheat",
       "phrase": false,
-      "audioSha256": "9e4c29892afbec9494e1d2cae9eb57a5337111f0b42d687ec5d7555627f10da0",
+      "audioSha256": "71060df38ee1a5c2c7345baf44904c4d4d13beeffb8810e952036ec051bb9310",
       "miniDialogue": [
         {
           "en": "Did anyone cheat on the quiz?",
@@ -12144,7 +12170,9 @@
           "yue": "唔好呃。",
           "audio": "assets/audio/words/cheat-verb.mp3",
           "audioSlow": "assets/audio/words/cheat-verb-slow.mp3",
-          "audioTextSha256": "b727b27998c75f76f164d1dd5e03faf0cea33c2e6e02208d4c216afad4ed9dc5"
+          "audioTextSha256": "b727b27998c75f76f164d1dd5e03faf0cea33c2e6e02208d4c216afad4ed9dc5",
+          "kokoroSpeaker": 1,
+          "say": "Don't cheat."
         },
         {
           "en": "Did anyone cheat on the quiz?",
@@ -12153,7 +12181,8 @@
           "audioSlow": "assets/audio/words/cheat-verb-md0-slow.mp3",
           "audioTextSha256": "32b40c257f618f91adf1eb490f9fde5bf2509964444a3a3a40d69979285573e4"
         }
-      ]
+      ],
+      "kokoroSpeaker": 1
     },
     {
       "id": "shoe-noun",
@@ -13200,7 +13229,9 @@
           "yue": "我見到部升降機。讀 lift（/ɪ/），唔好讀成 left（/ɛ/）。",
           "audio": "assets/audio/words/lift-noun-md1.mp3",
           "audioSlow": "assets/audio/words/lift-noun-md1-slow.mp3",
-          "audioTextSha256": "58aa6e970c4b32cfaec0219e32da883268002838ce820ed87a390ffadce77f60"
+          "audioTextSha256": "58aa6e970c4b32cfaec0219e32da883268002838ce820ed87a390ffadce77f60",
+          "kokoroSpeaker": 1,
+          "say": "I see the lift. Say lift, not left."
         }
       ],
       "examples": [
@@ -13270,7 +13301,9 @@
           "yue": "繼續行。我哋條街係下一條，而且唔係 straight。",
           "audio": "assets/audio/words/street-noun-md1.mp3",
           "audioSlow": "assets/audio/words/street-noun-md1-slow.mp3",
-          "audioTextSha256": "d80e4847556c538374c4ae79a3f2125e9102c6bc0712e5625e4b288b5c0cd2f0"
+          "audioTextSha256": "d80e4847556c538374c4ae79a3f2125e9102c6bc0712e5625e4b288b5c0cd2f0",
+          "kokoroSpeaker": 1,
+          "say": "Keep going. Our street is the next one, and it is not straight."
         }
       ],
       "examples": [
@@ -14533,7 +14566,7 @@
       "senseMismatch": false,
       "cmuLemma": "five",
       "phrase": false,
-      "audioSha256": "c5c0cbc588d538a5e83ef16659f643b2aba48765ac11b2eb5804870f3c6ad407",
+      "audioSha256": "65a665e683b7d671a0ea91c6d402d394e0ab5ed8b92dc01bfacbf193feb3c00c",
       "miniDialogue": [
         {
           "en": "Please cut the cake into five equal slices.",
@@ -14556,7 +14589,9 @@
           "yue": "呢件係五蚊。",
           "audio": "assets/audio/words/five-num.mp3",
           "audioSlow": "assets/audio/words/five-num-slow.mp3",
-          "audioTextSha256": "e70c2587d6878716ccd14cf3d3bfdd3d91281ed65d21f58504cfaefd53b45076"
+          "audioTextSha256": "e70c2587d6878716ccd14cf3d3bfdd3d91281ed65d21f58504cfaefd53b45076",
+          "kokoroSpeaker": 1,
+          "say": "It is five dollars."
         },
         {
           "en": "Please cut the cake into five equal slices.",
@@ -14565,7 +14600,8 @@
           "audioSlow": "assets/audio/words/five-num-md0-slow.mp3",
           "audioTextSha256": "4c22eff17da80a8f1248dbc7d9ca8c053bd4fbf194ddc47fadd5f3a6f241ca5a"
         }
-      ]
+      ],
+      "kokoroSpeaker": 1
     },
     {
       "id": "six-num",
@@ -14603,7 +14639,7 @@
       "senseMismatch": false,
       "cmuLemma": "six",
       "phrase": false,
-      "audioSha256": "1e732c823a25561ca7a12654e9052d3339b0d0969f280d3bf712a6864458caaa",
+      "audioSha256": "9dfbc3b424562bc21da4091dc4b93b37db672f3375507cde0afe8769c8a7b1b0",
       "miniDialogue": [
         {
           "en": "Each pineapple bun is six dollars.",
@@ -14626,7 +14662,9 @@
           "yue": "呢件係六蚊。",
           "audio": "assets/audio/words/six-num.mp3",
           "audioSlow": "assets/audio/words/six-num-slow.mp3",
-          "audioTextSha256": "52a239d5d61e09eb9fad2b057619d321a93d93dc0ee813af6356fbb202685fd9"
+          "audioTextSha256": "52a239d5d61e09eb9fad2b057619d321a93d93dc0ee813af6356fbb202685fd9",
+          "kokoroSpeaker": 1,
+          "say": "It is six dollars."
         },
         {
           "en": "Each pineapple bun is six dollars.",
@@ -14635,7 +14673,8 @@
           "audioSlow": "assets/audio/words/six-num-md0-slow.mp3",
           "audioTextSha256": "8445ae763ba0e7c909c070b9ab5e6a4dfa5226c1a5df4ec68b2b79c2b9deb445"
         }
-      ]
+      ],
+      "kokoroSpeaker": 1
     },
     {
       "id": "seven-num",
@@ -16137,7 +16176,9 @@
           "yue": "嗰個係網。Net 開頭係 /n/，唔係 let 嘅 /l/。",
           "audio": "assets/audio/words/net-noun-md1.mp3",
           "audioSlow": "assets/audio/words/net-noun-md1-slow.mp3",
-          "audioTextSha256": "617b444b40d481495cf205b5bdd1fffd536c6dbb5d8e6be3607412d2349ae715"
+          "audioTextSha256": "617b444b40d481495cf205b5bdd1fffd536c6dbb5d8e6be3607412d2349ae715",
+          "kokoroSpeaker": 1,
+          "say": "That is a net. Net starts with n, not l."
         }
       ],
       "examples": [
@@ -16209,7 +16250,9 @@
           "yue": "八十蚊。你預算幾多錢？",
           "audio": "assets/audio/words/how-much-phrase-md1.mp3",
           "audioSlow": "assets/audio/words/how-much-phrase-md1-slow.mp3",
-          "audioTextSha256": "e91b4f825790b3dfcc60ed5540646a3d903996eac8e2d03f6747980ffbc4ac5d"
+          "audioTextSha256": "e91b4f825790b3dfcc60ed5540646a3d903996eac8e2d03f6747980ffbc4ac5d",
+          "kokoroSpeaker": 1,
+          "say": "It is eighty dollars. How much did you budget?"
         }
       ],
       "examples": [
@@ -17558,12 +17601,13 @@
           "audioTextSha256": "978e1aa5f787ebffa418d4092099966d9bec518b802351c0b44dffca3051cd85"
         },
         {
-          "en": "Natural jade is not treated.",
-          "yue": "天然玉冇處理過。",
+          "en": "This jade is natural and hasn't been dyed.",
+          "yue": "呢塊係天然玉，亦冇染過色。",
           "audio": "assets/audio/words/natural-adj-ex2.mp3",
           "audioSlow": "assets/audio/words/natural-adj-ex2-slow.mp3",
-          "say": "[[nˈætʃɚəl]] jade is not treated.",
-          "audioTextSha256": "2dea07f1f61911bb0f4cc3184e6ca2cbf18217cea825321e612782842c50fc97"
+          "say": "This jade is natural and hasn't been dyed.",
+          "audioTextSha256": "75591192c868d8604dbf061c405fe28c3f8a0bd10660214ce7ede354df8d5f21",
+          "kokoroSpeaker": 1
         },
         {
           "en": "Is this pearl natural or cultured?",
@@ -17576,18 +17620,22 @@
       ],
       "miniDialogue": [
         {
-          "en": "This pearl is natural.",
-          "yue": "呢顆珍珠係天然。",
+          "en": "Is this a natural pearl?",
+          "yue": "呢粒係咪天然珍珠？",
           "audio": "assets/audio/words/natural-adj-md0.mp3",
           "audioSlow": "assets/audio/words/natural-adj-md0-slow.mp3",
-          "audioTextSha256": "b36961bfd3230f567cca61cdb71ca1ae256ffd297e809eafef432176697db0d3"
+          "audioTextSha256": "59fb3ef1dc13186fa84f08ea33f0fc21040a8ee825372abc5a4740b0e0f83198",
+          "say": "Is this a natural pearl?",
+          "kokoroSpeaker": 1
         },
         {
-          "en": "Natural jade is not treated.",
-          "yue": "天然玉冇處理過。",
+          "en": "Yes. The report says it's natural.",
+          "yue": "係，份報告寫明係天然嘅。",
           "audio": "assets/audio/words/natural-adj-md1.mp3",
           "audioSlow": "assets/audio/words/natural-adj-md1-slow.mp3",
-          "audioTextSha256": "0bfcc5abed94804778edc2ef1fe9a915bb25b9263376969095d012d02528b904"
+          "audioTextSha256": "5c114f7b904e06b64f7fa75446db8342d18e0f051d63a3643af35464932c2e8d",
+          "say": "Yes. The report says it's natural.",
+          "kokoroSpeaker": 1
         }
       ]
     },
@@ -20127,7 +20175,8 @@
           "audio": "assets/audio/words/worth-adj-ex3.mp3",
           "audioSlow": "assets/audio/words/worth-adj-ex3-slow.mp3",
           "say": "The repair is worth the eighty dollars.",
-          "audioTextSha256": "c33ec28fd90fcd66cb10f86f262dc4d375c1b0c7ff92b48a018f8b5198dc218f"
+          "audioTextSha256": "c33ec28fd90fcd66cb10f86f262dc4d375c1b0c7ff92b48a018f8b5198dc218f",
+          "kokoroSpeaker": 1
         }
       ],
       "miniDialogue": [
@@ -21846,7 +21895,7 @@
       "senseMismatch": false,
       "cmuLemma": "shellfish",
       "phrase": false,
-      "audioSha256": "e7536a7fafc0697ef96b11989ecb6650ae09319a7c19efaed46403c167ca6e14",
+      "audioSha256": "faa852ab04d7a3ce35d6c9e6fbcb7cb2a5e565ea187fa4c7c97568dac3ccbbf2",
       "register": "餐廳",
       "usageNotes": "I cannot eat shellfish.",
       "pitfallsYue": "有 /l/ 同 /ʃ/。shellfish 包括貝類同蝦、蟹等甲殼類海鮮，唔係所有海鮮。",
@@ -21861,7 +21910,8 @@
           "audio": "assets/audio/words/shellfish-noun.mp3",
           "audioSlow": "assets/audio/words/shellfish-noun-slow.mp3",
           "say": "I cannot eat shellfish.",
-          "audioTextSha256": "e03f2c944151487d7334b29e60b02ee8bb38e722d9d6d5cd3fce5a42a8b109d4"
+          "audioTextSha256": "e03f2c944151487d7334b29e60b02ee8bb38e722d9d6d5cd3fce5a42a8b109d4",
+          "kokoroSpeaker": 1
         },
         {
           "en": "Shellfish is not in this dish.",
@@ -21869,7 +21919,8 @@
           "audio": "assets/audio/words/shellfish-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/shellfish-noun-ex2-slow.mp3",
           "say": "Shellfish is not in this dish.",
-          "audioTextSha256": "bd1db68a6699b58ad8a6d130ae8ebda65c41449d707eca046766f74319a0e388"
+          "audioTextSha256": "bd1db68a6699b58ad8a6d130ae8ebda65c41449d707eca046766f74319a0e388",
+          "kokoroSpeaker": 1
         },
         {
           "en": "I'm allergic to shellfish, so no prawns, please.",
@@ -21885,7 +21936,9 @@
           "yue": "我唔食得貝類及甲殼類海鮮。",
           "audio": "assets/audio/words/shellfish-noun-md0.mp3",
           "audioSlow": "assets/audio/words/shellfish-noun-md0-slow.mp3",
-          "audioTextSha256": "e03f2c944151487d7334b29e60b02ee8bb38e722d9d6d5cd3fce5a42a8b109d4"
+          "audioTextSha256": "e03f2c944151487d7334b29e60b02ee8bb38e722d9d6d5cd3fce5a42a8b109d4",
+          "kokoroSpeaker": 1,
+          "say": "I cannot eat shellfish."
         },
         {
           "en": "Shellfish is not in this dish.",
@@ -21894,7 +21947,8 @@
           "audioSlow": "assets/audio/words/shellfish-noun-md1-slow.mp3",
           "audioTextSha256": "bd1db68a6699b58ad8a6d130ae8ebda65c41449d707eca046766f74319a0e388"
         }
-      ]
+      ],
+      "kokoroSpeaker": 1
     },
     {
       "id": "dairy-noun",
@@ -22233,7 +22287,9 @@
           "yue": "醬可唔可以另上，唔好淋落條魚度呀？",
           "audio": "assets/audio/words/sauce-noun-md0.mp3",
           "audioSlow": "assets/audio/words/sauce-noun-md0-slow.mp3",
-          "audioTextSha256": "881ff10f2e4d7f6a294176ec8a60cbabd2aac010a9d8d228095982039d922a76"
+          "audioTextSha256": "881ff10f2e4d7f6a294176ec8a60cbabd2aac010a9d8d228095982039d922a76",
+          "kokoroSpeaker": 1,
+          "say": "Could I have the sauce on the side, not on the fish?"
         },
         {
           "en": "The sauce is already in a small bowl beside your plate.",
@@ -22853,8 +22909,9 @@
           "yue": "多謝你話我知，我即刻去睇吓。",
           "audio": "assets/audio/words/thank-you-for-telling-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/thank-you-for-telling-phrase-ex3-slow.mp3",
-          "say": "[[ˈθæŋk ˈju ˈfɔɹ ˈtɛlɪŋ]] me. I'll check it right away.",
-          "audioTextSha256": "305ec3f6bfd71972eebd63363c6388b1cda10ad6773f357dd43bc23058fdb914"
+          "say": "Thank you for telling me. I'll check it right away.",
+          "audioTextSha256": "f37030cf01882a39da5d4dfe586b08c0081503358e8b99d5d463101c70f9eb32",
+          "kokoroSpeaker": 5
         }
       ],
       "miniDialogue": [
@@ -23113,7 +23170,9 @@
           "yue": "我哋想要雙床房，唔要大床。",
           "audio": "assets/audio/words/twin-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/twin-noun-ex3-slow.mp3",
-          "audioTextSha256": "f72d1869fa9c46a8000d6230c94d3f674dd16cd5af3e4178c7cd8438e9872dd5"
+          "audioTextSha256": "f72d1869fa9c46a8000d6230c94d3f674dd16cd5af3e4178c7cd8438e9872dd5",
+          "kokoroSpeaker": 2,
+          "say": "We'd like a twin, please, not a double."
         }
       ],
       "miniDialogue": [
@@ -23815,8 +23874,9 @@
           "yue": "可唔可以延遲到兩點退房？",
           "audio": "assets/audio/words/late-checkout-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/late-checkout-phrase-ex3-slow.mp3",
-          "say": "Could we have a [[ˈleɪt ˈtʃɛkˌaʊt]] at two?",
-          "audioTextSha256": "6397549ced6ffcdb75ddff6d5a8e50a089aae2f0e527e8d4fb9740846fd6f863"
+          "say": "Could we have a late checkout at two?",
+          "audioTextSha256": "f1fc8f82598847323d6ed1497af9c46b23684b6ea6bcb43576409b237be944cc",
+          "kokoroSpeaker": 5
         }
       ],
       "miniDialogue": [
@@ -25061,8 +25121,9 @@
           "yue": "喺外國唔見咗護照，就要搵你國家嘅大使館。",
           "audio": "assets/audio/words/embassy-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/embassy-noun-ex3-slow.mp3",
-          "say": "If you lose your passport abroad, contact your [[ˈɛmbəsi]].",
-          "audioTextSha256": "76df60e2c6741af4637bdfa56212c448db5fc494c14b2b6697dc3ff097f2ba13"
+          "say": "If you lose your passport abroad, contact your embassy.",
+          "audioTextSha256": "392819eb5a64a6beb65b905dcdd0f94e7810886c6f7e3464c7652f71cad0b5b7",
+          "kokoroSpeaker": 5
         }
       ],
       "miniDialogue": [
@@ -25708,7 +25769,9 @@
           "yue": "未，畀我一分鐘。",
           "audio": "assets/audio/words/replace-verb-md1.mp3",
           "audioSlow": "assets/audio/words/replace-verb-md1-slow.mp3",
-          "audioTextSha256": "9fbf1c9b94646caebcfaab0de6b6d8d0a32f719312f177cef2e7ec448459adb7"
+          "audioTextSha256": "9fbf1c9b94646caebcfaab0de6b6d8d0a32f719312f177cef2e7ec448459adb7",
+          "kokoroSpeaker": 1,
+          "say": "Not yet. Give me a minute."
         }
       ]
     },
@@ -26762,7 +26825,8 @@
           "audio": "assets/audio/words/still-adj-ex2.mp3",
           "audioSlow": "assets/audio/words/still-adj-ex2-slow.mp3",
           "say": "Still water is not sparkling.",
-          "audioTextSha256": "bbd0efc32cf620363f2dafff582a08e8621361e64690f5d38403d1664221be3e"
+          "audioTextSha256": "bbd0efc32cf620363f2dafff582a08e8621361e64690f5d38403d1664221be3e",
+          "kokoroSpeaker": 1
         },
         {
           "en": "A bottle of still water, please.",
@@ -26785,7 +26849,9 @@
           "yue": "冇氣水唔係有氣嗰種。",
           "audio": "assets/audio/words/still-adj-md1.mp3",
           "audioSlow": "assets/audio/words/still-adj-md1-slow.mp3",
-          "audioTextSha256": "bbd0efc32cf620363f2dafff582a08e8621361e64690f5d38403d1664221be3e"
+          "audioTextSha256": "bbd0efc32cf620363f2dafff582a08e8621361e64690f5d38403d1664221be3e",
+          "kokoroSpeaker": 1,
+          "say": "Still water is not sparkling."
         }
       ]
     },
@@ -34551,7 +34617,9 @@
           "yue": "未，畀我一分鐘。",
           "audio": "assets/audio/words/deposit-verb-md1.mp3",
           "audioSlow": "assets/audio/words/deposit-verb-md1-slow.mp3",
-          "audioTextSha256": "9fbf1c9b94646caebcfaab0de6b6d8d0a32f719312f177cef2e7ec448459adb7"
+          "audioTextSha256": "9fbf1c9b94646caebcfaab0de6b6d8d0a32f719312f177cef2e7ec448459adb7",
+          "kokoroSpeaker": 1,
+          "say": "Not yet. Give me a minute."
         }
       ]
     },
@@ -35632,9 +35700,9 @@
         "notice period",
         "written notice"
       ],
-      "example": "Tell me the notice period before I pay the deposit.",
-      "exampleYue": "交按金之前話我知通知期幾長。",
-      "say": "Tell me the notice period before I pay the deposit.",
+      "example": "How much notice do I need to give before moving out?",
+      "exampleYue": "搬走之前，我要提早幾耐通知你？",
+      "say": "How much notice do I need to give before moving out?",
       "variants": [],
       "note": "",
       "sources": [
@@ -35645,7 +35713,7 @@
       "senseMismatch": false,
       "cmuLemma": "notice",
       "phrase": false,
-      "audioSha256": "a6b02bb5144f1a82714ce69d367511663c340ae2dd8b1784a926e7c8e8dbd981",
+      "audioSha256": "74bf08bdba893ed34cb0b73d4dd96eeddf4e55fa66ea656937c99100d8dde39c",
       "register": "租樓",
       "usageNotes": "通知期係搬走之前要預早講嘅時間。",
       "pitfallsYue": "",
@@ -35655,20 +35723,22 @@
       ],
       "examples": [
         {
-          "en": "Tell me the notice period before I pay the deposit.",
-          "yue": "交按金之前話我知通知期幾長。",
+          "en": "How much notice do I need to give before moving out?",
+          "yue": "搬走之前，我要提早幾耐通知你？",
           "audio": "assets/audio/words/notice-noun.mp3",
           "audioSlow": "assets/audio/words/notice-noun-slow.mp3",
-          "say": "Tell me the notice period before I pay the deposit.",
-          "audioTextSha256": "7c344a9cb68054216c963d6263ec99ed1aa7680dff99edb9288c689f22257e59"
+          "say": "How much notice do I need to give before moving out?",
+          "audioTextSha256": "6b05d571652eb67474dbf2dcc9ef19e4c37215b00e5d4890186aa324ffcb9de9",
+          "kokoroSpeaker": 1
         },
         {
-          "en": "The utilities stay until the written notice ends.",
-          "yue": "水電煤會直至書面通知完。",
+          "en": "Please give us one month's written notice.",
+          "yue": "請提早一個月書面通知我哋。",
           "audio": "assets/audio/words/notice-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/notice-noun-ex2-slow.mp3",
-          "say": "The utilities stay until the written notice ends.",
-          "audioTextSha256": "c8b6694c3d347670baee706ce1bb5af7bbb3d6814e12dacf4f0a92595da19bb1"
+          "say": "Please give us one month's written notice.",
+          "audioTextSha256": "844abdf2695d4c0b697c094a2a6bf3f0e6509cf97c32e89ad00405097291c539",
+          "kokoroSpeaker": 1
         },
         {
           "en": "I have to give one month's notice before I leave.",
@@ -35680,20 +35750,25 @@
       ],
       "miniDialogue": [
         {
-          "en": "Tell me the notice period before I pay the deposit.",
-          "yue": "交按金之前話我知通知期幾長。",
+          "en": "How much notice do I need to give before moving out?",
+          "yue": "搬走之前，我要提早幾耐通知你？",
           "audio": "assets/audio/words/notice-noun-md0.mp3",
           "audioSlow": "assets/audio/words/notice-noun-md0-slow.mp3",
-          "audioTextSha256": "7c344a9cb68054216c963d6263ec99ed1aa7680dff99edb9288c689f22257e59"
+          "audioTextSha256": "6b05d571652eb67474dbf2dcc9ef19e4c37215b00e5d4890186aa324ffcb9de9",
+          "say": "How much notice do I need to give before moving out?",
+          "kokoroSpeaker": 1
         },
         {
-          "en": "The utilities stay until the written notice ends.",
-          "yue": "水電煤會直至書面通知完。",
+          "en": "Please give us one month's written notice.",
+          "yue": "請提早一個月書面通知我哋。",
           "audio": "assets/audio/words/notice-noun-md1.mp3",
           "audioSlow": "assets/audio/words/notice-noun-md1-slow.mp3",
-          "audioTextSha256": "c8b6694c3d347670baee706ce1bb5af7bbb3d6814e12dacf4f0a92595da19bb1"
+          "audioTextSha256": "844abdf2695d4c0b697c094a2a6bf3f0e6509cf97c32e89ad00405097291c539",
+          "say": "Please give us one month's written notice.",
+          "kokoroSpeaker": 1
         }
-      ]
+      ],
+      "kokoroSpeaker": 1
     },
     {
       "id": "agency-noun",
@@ -40387,7 +40462,7 @@
       "senseMismatch": false,
       "cmuLemma": "not bad",
       "phrase": true,
-      "audioSha256": "a9f80583ccb0707caa0fb64bcb997facfe8a3f95d5210a4f198c78a4ff5b16d2",
+      "audioSha256": "d0a8ae099d45328a618374e59735bb4e768ce1abf3cf718710d4a12699460121",
       "register": "職場",
       "examples": [
         {
@@ -40396,7 +40471,8 @@
           "audio": "assets/audio/words/not-bad-phrase.mp3",
           "audioSlow": "assets/audio/words/not-bad-phrase-slow.mp3",
           "say": "Not bad at all for a quiet Monday morning.",
-          "audioTextSha256": "1145da757354f1385f05d3b12ae9df61d8af64c7147ade2b4dd58b82c2d66564"
+          "audioTextSha256": "1145da757354f1385f05d3b12ae9df61d8af64c7147ade2b4dd58b82c2d66564",
+          "kokoroSpeaker": 1
         },
         {
           "en": "The coffee was not bad after that long commute.",
@@ -40421,7 +40497,9 @@
           "yue": "一個靜嘅星期一朝早，都唔差。",
           "audio": "assets/audio/words/not-bad-phrase-md0.mp3",
           "audioSlow": "assets/audio/words/not-bad-phrase-md0-slow.mp3",
-          "audioTextSha256": "1145da757354f1385f05d3b12ae9df61d8af64c7147ade2b4dd58b82c2d66564"
+          "audioTextSha256": "1145da757354f1385f05d3b12ae9df61d8af64c7147ade2b4dd58b82c2d66564",
+          "kokoroSpeaker": 1,
+          "say": "Not bad at all for a quiet Monday morning."
         },
         {
           "en": "The coffee was not bad after that long commute.",
@@ -40430,7 +40508,8 @@
           "audioSlow": "assets/audio/words/not-bad-phrase-md1-slow.mp3",
           "audioTextSha256": "5a9fc0a8e42f2232727cc930191db2bfc83a77467c5d84e8228033c5e17268f8"
         }
-      ]
+      ],
+      "kokoroSpeaker": 1
     },
     {
       "id": "same-here-phrase",
@@ -43573,8 +43652,9 @@
           "yue": "我係香港人，唔係澳門人。",
           "audio": "assets/audio/words/hong-kong-noun-md0.mp3",
           "audioSlow": "assets/audio/words/hong-kong-noun-md0-slow.mp3",
-          "audioTextSha256": "fbfacd2947b4d032d4703dcc65c4b8b994a503db1a0d44208117b638d9a29c1c",
-          "say": "I am from Hong Kong, not from [[məkˈaʊ]]."
+          "audioTextSha256": "544bcaa49e1e033183b4c6272ee8a4cc00543465b331ddd6df7beabcd2b84830",
+          "say": "I am from Hong Kong, not from Macau.",
+          "kokoroSpeaker": 5
         },
         {
           "en": "A tourist from Hong Kong needs a phone.",
@@ -46531,7 +46611,8 @@
           "audio": "assets/audio/words/cold-adj-ex3.mp3",
           "audioSlow": "assets/audio/words/cold-adj-ex3-slow.mp3",
           "say": "Nobody finished the noodles because they had gone cold.",
-          "audioTextSha256": "e7172c9b29fcb2d5bae4a9bd10033b65395ba314108b1abfc4b3bb391900ea3f"
+          "audioTextSha256": "e7172c9b29fcb2d5bae4a9bd10033b65395ba314108b1abfc4b3bb391900ea3f",
+          "kokoroSpeaker": 1
         }
       ],
       "miniDialogue": [
@@ -50588,12 +50669,13 @@
           "audioTextSha256": "50ea32064f3250ca2c1f9023552452e9d61ec247f5aaa6f05079d219d242f8a2"
         },
         {
-          "en": "The hot kitchen is a bad place when I am not feeling well.",
-          "yue": "我唔舒服嗰陣，熱廚房唔係好地方。",
+          "en": "I'm not feeling well. Could someone cover my shift?",
+          "yue": "我唔舒服，可唔可以搵人頂更？",
           "audio": "assets/audio/words/not-feeling-well-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/not-feeling-well-phrase-ex3-slow.mp3",
-          "say": "The hot kitchen is a bad place when I am [[ˈnɑt ˈfilɪŋ ˈwɛl]].",
-          "audioTextSha256": "25a38af5c72012b554d2f3d49d295b2a408f3acd283a37067f087fa235a96cf9"
+          "say": "I'm not feeling well. Could someone cover my shift?",
+          "audioTextSha256": "a5a04cdaa97ee4430e7d22a2a00933656d597f7d68a5bfe257185470c2462c51",
+          "kokoroSpeaker": 1
         }
       ],
       "miniDialogue": [
@@ -51729,7 +51811,9 @@
           "yue": "好呀，唔該。水唔好太熱。",
           "audio": "assets/audio/words/wash-verb-md1.mp3",
           "audioSlow": "assets/audio/words/wash-verb-md1-slow.mp3",
-          "audioTextSha256": "8a1cfba357b6cfaa1ba17b4466c38486794ad0f4e832ba01f6e5712f8f07bd3a"
+          "audioTextSha256": "8a1cfba357b6cfaa1ba17b4466c38486794ad0f4e832ba01f6e5712f8f07bd3a",
+          "kokoroSpeaker": 1,
+          "say": "Yes, please. Not too hot."
         }
       ]
     },
@@ -51794,12 +51878,13 @@
           "audioTextSha256": "4d61e63cf0d120993a872283dadbfe3ef24ca43dc0677a9bf3a8de22d9ab2f7c"
         },
         {
-          "en": "The buyer's visit still looks possible because the shirts are on track.",
-          "yue": "樣板衫跟得上進度，買家嚟睇仲趕得及。",
+          "en": "We're on track to finish the samples before the buyer arrives.",
+          "yue": "我哋跟得上進度，趕得切喺買家嚟之前整好樣板。",
           "audio": "assets/audio/words/on-track-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/on-track-phrase-ex3-slow.mp3",
-          "say": "The buyer's visit still looks possible because the shirts are [[ɑn ˈtɹæk]].",
-          "audioTextSha256": "f6552a5591791006490befadf863986a62a8f46b4edbcc42d5f46e3e94262b9a"
+          "say": "We're on track to finish the samples before the buyer arrives.",
+          "audioTextSha256": "5d84b7d70352f700f74ecd17f8c371907ea06ecca0e2a1f68ca78d4682197ef8",
+          "kokoroSpeaker": 1
         }
       ],
       "miniDialogue": [
@@ -53944,7 +54029,8 @@
           "audio": "assets/audio/words/machine-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/machine-noun-ex2-slow.mp3",
           "say": "I cannot take the card out of the machine.",
-          "audioTextSha256": "f61bde3fd4581ce000301ba14d4128139347f5931d2a05178e026eae6f7f6409"
+          "audioTextSha256": "f61bde3fd4581ce000301ba14d4128139347f5931d2a05178e026eae6f7f6409",
+          "kokoroSpeaker": 1
         },
         {
           "en": "The cash machine outside the bank is out of order this morning.",
@@ -53968,7 +54054,9 @@
           "yue": "我攞唔到張卡出部機。",
           "audio": "assets/audio/words/machine-noun-md1.mp3",
           "audioSlow": "assets/audio/words/machine-noun-md1-slow.mp3",
-          "audioTextSha256": "f61bde3fd4581ce000301ba14d4128139347f5931d2a05178e026eae6f7f6409"
+          "audioTextSha256": "f61bde3fd4581ce000301ba14d4128139347f5931d2a05178e026eae6f7f6409",
+          "kokoroSpeaker": 1,
+          "say": "I cannot take the card out of the machine."
         }
       ]
     },
@@ -56295,8 +56383,9 @@
           "yue": "我哋要張兒童椅，因為細路坐唔定。",
           "audio": "assets/audio/words/high-chair-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/high-chair-phrase-ex3-slow.mp3",
-          "say": "We need a [[ˈhaɪ ˈtʃɛɹ]] because our toddler cannot sit still.",
-          "audioTextSha256": "02cfe9ee60ad7673c6bedff8bd06358dabf1b7a34ab37e35d62d3aaff8de8503"
+          "say": "We need a high chair because our toddler cannot sit still.",
+          "audioTextSha256": "24ad42effd96910f95774555709e8b91fe02c382b6d51cb0de677231e81f5846",
+          "kokoroSpeaker": 5
         }
       ],
       "miniDialogue": [
@@ -56461,12 +56550,13 @@
           "audioTextSha256": "a00280781fb3fa486fd39617c10dbbbac351ff373cb78388e28b475e4b4824f8"
         },
         {
-          "en": "We cannot book the clinic until the next step is agreed.",
-          "yue": "下一步未講定，我哋未可以約診所。",
+          "en": "The next step is to book an appointment at the clinic.",
+          "yue": "下一步係約時間去診所。",
           "audio": "assets/audio/words/next-step-phrase-ex3.mp3",
           "audioSlow": "assets/audio/words/next-step-phrase-ex3-slow.mp3",
-          "say": "We cannot book the clinic until the [[ˈnɛkst ˈstɛp]] is agreed.",
-          "audioTextSha256": "5c2e62db1f679a170156850203c7d664f823a1da33a9ef692bc81f88d8b69ec8"
+          "say": "The next step is to book an appointment at the clinic.",
+          "audioTextSha256": "d968d3ec803e2c64296b9967a3dda5982c62117237a988bb29950388b9a52c76",
+          "kokoroSpeaker": 1
         }
       ],
       "miniDialogue": [
@@ -58173,7 +58263,8 @@
           "audio": "assets/audio/words/gram-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/gram-noun-ex3-slow.mp3",
           "say": "The shop charges forty dollars for each gram of this chain.",
-          "audioTextSha256": "7e2e21914cb7a69962fec3c9463dfc6392705192d822f5087a0e2a2c76ee4240"
+          "audioTextSha256": "7e2e21914cb7a69962fec3c9463dfc6392705192d822f5087a0e2a2c76ee4240",
+          "kokoroSpeaker": 1
         }
       ],
       "miniDialogue": [
@@ -58317,7 +58408,7 @@
       "senseMismatch": false,
       "cmuLemma": "labour",
       "phrase": false,
-      "audioSha256": "37fd8321ecb9727970ae1a12db53faead8998faf3b3c8ef6452b883854c5042d",
+      "audioSha256": "f8a0a9b436778bfb6125dbecd604422f45ed49eb358ed1625bab7de47af72297",
       "register": "日常",
       "usageNotes": "手工",
       "pitfallsYue": "",
@@ -58329,7 +58420,8 @@
           "audio": "assets/audio/words/labour-noun.mp3",
           "audioSlow": "assets/audio/words/labour-noun-slow.mp3",
           "say": "The labour charge is forty dollars.",
-          "audioTextSha256": "867b302807054332f7f2c2b68ab8ed7946860f9d8712638e207164d14ed306cc"
+          "audioTextSha256": "867b302807054332f7f2c2b68ab8ed7946860f9d8712638e207164d14ed306cc",
+          "kokoroSpeaker": 1
         },
         {
           "en": "How much is the labour charge?",
@@ -58354,7 +58446,9 @@
           "yue": "手工費係四十蚊。",
           "audio": "assets/audio/words/labour-noun-md0.mp3",
           "audioSlow": "assets/audio/words/labour-noun-md0-slow.mp3",
-          "audioTextSha256": "867b302807054332f7f2c2b68ab8ed7946860f9d8712638e207164d14ed306cc"
+          "audioTextSha256": "867b302807054332f7f2c2b68ab8ed7946860f9d8712638e207164d14ed306cc",
+          "kokoroSpeaker": 1,
+          "say": "The labour charge is forty dollars."
         },
         {
           "en": "How much is the labour charge?",
@@ -58363,7 +58457,8 @@
           "audioSlow": "assets/audio/words/labour-noun-md1-slow.mp3",
           "audioTextSha256": "a85ea256cf9842673a8edba74e7fefe2eee26f2ed37b360c795526c984dde756"
         }
-      ]
+      ],
+      "kokoroSpeaker": 1
     },
     {
       "id": "purity-noun",
@@ -58506,20 +58601,22 @@
           "audioTextSha256": "12e77c265bf184b36d67542a81724d8316d2fd82c8ff368b250d3e8ee780f3a7"
         },
         {
-          "en": "The toothache kept me up, so I booked the clinic.",
-          "yue": "牙痛到瞓唔著，所以我約咗診所。",
+          "en": "My toothache kept me up, so I booked a dental appointment.",
+          "yue": "我牙痛到瞓唔著，所以約咗睇牙醫。",
           "audio": "assets/audio/words/toothache-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/toothache-noun-ex2-slow.mp3",
-          "say": "The toothache kept me up, so I booked the clinic.",
-          "audioTextSha256": "a9e3466ae4e07b5e9ead1e1ab9ff3498ad705a54161002b03ba30288bbd56682"
+          "say": "My toothache kept me up, so I booked a dental appointment.",
+          "audioTextSha256": "8175dc073c11035fcc3add83eb583e0d699d7286bc362c51e545bc1935e970f4",
+          "kokoroSpeaker": 1
         },
         {
-          "en": "Please rate the toothache from one to ten.",
-          "yue": "請用一到十分講牙痛幾嚴重。",
+          "en": "How bad is your toothache on a scale of one to ten?",
+          "yue": "如果用一到十分計，你覺得牙痛有幾嚴重？",
           "audio": "assets/audio/words/toothache-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/toothache-noun-ex3-slow.mp3",
-          "say": "Please rate the toothache from one to ten.",
-          "audioTextSha256": "e70f627b7fa2e333d96a9823a2003b6026c9d7ceca287932388de2cc2221e158"
+          "say": "How bad is your toothache on a scale of one to ten?",
+          "audioTextSha256": "90d6bf8c8a43a88ecbc42a95621cdafef8297941411711cab3dc1baa9927aa89",
+          "kokoroSpeaker": 1
         }
       ],
       "miniDialogue": [
@@ -58531,11 +58628,13 @@
           "audioTextSha256": "12e77c265bf184b36d67542a81724d8316d2fd82c8ff368b250d3e8ee780f3a7"
         },
         {
-          "en": "Please rate the toothache from one to ten.",
-          "yue": "請用一到十分講牙痛幾嚴重。",
+          "en": "How bad is your toothache on a scale of one to ten?",
+          "yue": "如果用一到十分計，你覺得牙痛有幾嚴重？",
           "audio": "assets/audio/words/toothache-noun-md1.mp3",
           "audioSlow": "assets/audio/words/toothache-noun-md1-slow.mp3",
-          "audioTextSha256": "e70f627b7fa2e333d96a9823a2003b6026c9d7ceca287932388de2cc2221e158"
+          "audioTextSha256": "90d6bf8c8a43a88ecbc42a95621cdafef8297941411711cab3dc1baa9927aa89",
+          "say": "How bad is your toothache on a scale of one to ten?",
+          "kokoroSpeaker": 1
         }
       ]
     },
@@ -59205,7 +59304,8 @@
           "audio": "assets/audio/words/cake-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/cake-noun-ex2-slow.mp3",
           "say": "Your cake will be ready at three on Saturday.",
-          "audioTextSha256": "bf295c2641bad3988258f5196c0ad0ca29d61b5ffb90f489506cffd11b074fb1"
+          "audioTextSha256": "bf295c2641bad3988258f5196c0ad0ca29d61b5ffb90f489506cffd11b074fb1",
+          "kokoroSpeaker": 1
         },
         {
           "en": "The bakery wrote my son's name on the mango cake in chocolate.",
@@ -59229,7 +59329,9 @@
           "yue": "你個蛋糕星期六三點可以取。",
           "audio": "assets/audio/words/cake-noun-md1.mp3",
           "audioSlow": "assets/audio/words/cake-noun-md1-slow.mp3",
-          "audioTextSha256": "bf295c2641bad3988258f5196c0ad0ca29d61b5ffb90f489506cffd11b074fb1"
+          "audioTextSha256": "bf295c2641bad3988258f5196c0ad0ca29d61b5ffb90f489506cffd11b074fb1",
+          "kokoroSpeaker": 1,
+          "say": "Your cake will be ready at three on Saturday."
         }
       ]
     },
@@ -63051,7 +63153,7 @@
       ],
       "example": "Can the underwriter accept a clear photo if the claimant cannot bring the paper original?",
       "exampleYue": "如果索償人帶唔到紙本正本，承保人可唔可以收一張清晰相片？",
-      "say": "Can the [[ˈʌndɚɹˌaɪɾɚ]] accept a clear photo if the claimant cannot bring the paper original?",
+      "say": "Can the underwriter accept a clear photo if the claimant cannot bring the paper original?",
       "variants": [],
       "note": "",
       "sources": [
@@ -63063,7 +63165,7 @@
       "senseMismatch": false,
       "cmuLemma": "underwriter",
       "phrase": false,
-      "audioSha256": "10afb08ce593cc16ca2bee7b04b7bf63238ac8cb18ce9276a58236b88d78458e",
+      "audioSha256": "1ade2c55153ec1d9ab329c357657b31f3324a573b92472ac4cc2fc26f2f3fc47",
       "register": "場景",
       "usageNotes": "呢課用承保人。",
       "pitfallsYue": "",
@@ -63074,8 +63176,9 @@
           "yue": "如果索償人帶唔到紙本正本，承保人可唔可以收一張清晰相片？",
           "audio": "assets/audio/words/underwriter-noun.mp3",
           "audioSlow": "assets/audio/words/underwriter-noun-slow.mp3",
-          "say": "Can the [[ˈʌndɚɹˌaɪɾɚ]] accept a clear photo if the claimant cannot bring the paper original?",
-          "audioTextSha256": "ba782a94bb69af3bc0b6e7c0bc11cb5bfba54cb8c2c5e9a2146a865cb7a8a3a6"
+          "say": "Can the underwriter accept a clear photo if the claimant cannot bring the paper original?",
+          "audioTextSha256": "0c056b5187406d0825ae9399a437bb6b625f41ddc18d429335140225b619e002",
+          "kokoroSpeaker": 5
         },
         {
           "en": "The underwriter can accept that clear photo, and the claimant may keep the paper original.",
@@ -63100,8 +63203,9 @@
           "yue": "如果索償人帶唔到紙本正本，承保人可唔可以收一張清晰相片？",
           "audio": "assets/audio/words/underwriter-noun-md0.mp3",
           "audioSlow": "assets/audio/words/underwriter-noun-md0-slow.mp3",
-          "audioTextSha256": "ba782a94bb69af3bc0b6e7c0bc11cb5bfba54cb8c2c5e9a2146a865cb7a8a3a6",
-          "say": "Can the [[ˈʌndɚɹˌaɪɾɚ]] accept a clear photo if the claimant cannot bring the paper original?"
+          "audioTextSha256": "0c056b5187406d0825ae9399a437bb6b625f41ddc18d429335140225b619e002",
+          "say": "Can the underwriter accept a clear photo if the claimant cannot bring the paper original?",
+          "kokoroSpeaker": 5
         },
         {
           "en": "The underwriter can accept that clear photo, and the claimant may keep the paper original.",
@@ -63111,7 +63215,8 @@
           "audioTextSha256": "3ccafd0191ca5ce38ec66962cd2906c5318dff65f6c6386418e9ac2d6249c3b5",
           "say": "The [[ˈʌndɚɹˌaɪɾɚ]] can accept that clear photo, and the claimant may keep the paper original."
         }
-      ]
+      ],
+      "kokoroSpeaker": 5
     },
     {
       "id": "banquet-noun",
@@ -63173,7 +63278,8 @@
           "audio": "assets/audio/words/banquet-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/banquet-noun-ex2-slow.mp3",
           "say": "I can book that banquet from six, and the cancellation fee is forty dollars flat.",
-          "audioTextSha256": "9f73e98cee17a5fb8009872ec0cae721a349f47e8031c5cc26342221b4a77543"
+          "audioTextSha256": "9f73e98cee17a5fb8009872ec0cae721a349f47e8031c5cc26342221b4a77543",
+          "kokoroSpeaker": 1
         },
         {
           "en": "Twelve guests can share the banquet if we start the meal at six.",
@@ -63265,7 +63371,8 @@
           "audio": "assets/audio/words/cancellation-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/cancellation-noun-ex2-slow.mp3",
           "say": "I can book that banquet from six, and the cancellation fee is forty dollars flat.",
-          "audioTextSha256": "9f73e98cee17a5fb8009872ec0cae721a349f47e8031c5cc26342221b4a77543"
+          "audioTextSha256": "9f73e98cee17a5fb8009872ec0cae721a349f47e8031c5cc26342221b4a77543",
+          "kokoroSpeaker": 1
         },
         {
           "en": "Dropping the booking on Monday still leaves a cancellation fee.",
@@ -63355,7 +63462,8 @@
           "audio": "assets/audio/words/surcharge-noun-ex2.mp3",
           "audioSlow": "assets/audio/words/surcharge-noun-ex2-slow.mp3",
           "say": "The surcharge is eighty dollars, and it keeps the banquet room until nine after six.",
-          "audioTextSha256": "1e98dd8c99b404772ddaf08402a83726102c0ade7537166ebaebdf187b03d4e3"
+          "audioTextSha256": "1e98dd8c99b404772ddaf08402a83726102c0ade7537166ebaebdf187b03d4e3",
+          "kokoroSpeaker": 1
         },
         {
           "en": "A three-hour banquet adds a surcharge on top of the set menu.",
@@ -63379,7 +63487,9 @@
           "yue": "附加費八十蚊，六點之後會留住宴會廳直到九點。",
           "audio": "assets/audio/words/surcharge-noun-md1.mp3",
           "audioSlow": "assets/audio/words/surcharge-noun-md1-slow.mp3",
-          "audioTextSha256": "1e98dd8c99b404772ddaf08402a83726102c0ade7537166ebaebdf187b03d4e3"
+          "audioTextSha256": "1e98dd8c99b404772ddaf08402a83726102c0ade7537166ebaebdf187b03d4e3",
+          "kokoroSpeaker": 1,
+          "say": "The surcharge is eighty dollars, and it keeps the banquet room until nine after six."
         }
       ]
     },
@@ -63699,7 +63809,7 @@
       "senseMismatch": false,
       "cmuLemma": "circulate",
       "phrase": false,
-      "audioSha256": "5934adb272675ddc045e38788642efb55cffc4e0aa403d78c80582538e37da37",
+      "audioSha256": "08c0cc264d42549afa6b1a65e106996bab3262711f5958b4637a5219707c3d07",
       "register": "場景",
       "usageNotes": "呢課用傳閱。",
       "pitfallsYue": "",
@@ -63711,7 +63821,8 @@
           "audio": "assets/audio/words/circulate-verb.mp3",
           "audioSlow": "assets/audio/words/circulate-verb-slow.mp3",
           "say": "Will you circulate the written forecast if each stakeholder has not read the note yet?",
-          "audioTextSha256": "537654e519d3720e20fa518bdaf32dc0b3b0c02c2b5f9d84cc1095100ff3d5c0"
+          "audioTextSha256": "537654e519d3720e20fa518bdaf32dc0b3b0c02c2b5f9d84cc1095100ff3d5c0",
+          "kokoroSpeaker": 1
         },
         {
           "en": "I will circulate that written forecast once the team has read the full note pack.",
@@ -63745,7 +63856,8 @@
           "audioSlow": "assets/audio/words/circulate-verb-md1-slow.mp3",
           "audioTextSha256": "84634a450b3e24c14dd76f27f5cca689ff8eeb63ded38d01ebbf62e50c3d564b"
         }
-      ]
+      ],
+      "kokoroSpeaker": 1
     },
     {
       "id": "stakeholder-noun",
@@ -64709,7 +64821,8 @@
           "audio": "assets/audio/words/layover-noun-ex3.mp3",
           "audioSlow": "assets/audio/words/layover-noun-ex3-slow.mp3",
           "say": "During the layover in Seoul, I have ninety minutes to change planes.",
-          "audioTextSha256": "825f236e69799a7a709629f6616905f8c13a16820196baca4f3e413a2b4547c5"
+          "audioTextSha256": "825f236e69799a7a709629f6616905f8c13a16820196baca4f3e413a2b4547c5",
+          "kokoroSpeaker": 1
         }
       ],
       "miniDialogue": [

@@ -181,9 +181,9 @@ def clips() -> list[dict]:
         for example in item.get("examples") or []:
             add(example.get("audio"), render_text(example), None, kokoro=example.get("kokoroSpeaker"))
         for index, turn in enumerate(item.get("miniDialogue") or []):
-            add(turn.get("audio"), render_text(turn), None)
+            add(turn.get("audio"), render_text(turn), None, kokoro=turn.get("kokoroSpeaker"))
             if not turn.get("audio"):
-                add(f"assets/audio/words/{item['id']}-md{index}.mp3", render_text(turn), None)
+                add(f"assets/audio/words/{item['id']}-md{index}.mp3", render_text(turn), None, kokoro=turn.get("kokoroSpeaker"))
     for line in lines:
         add(line["audio"], line["say"], None, kokoro=line.get("kokoroSpeaker"))
     for row in word_clips(include_skipped=True)["items"].values():
@@ -420,19 +420,18 @@ def stamp_audio_text_hashes(lex: dict, rendered: dict) -> int:
     """Stamp audioTextSha256 with the text each clip was really rendered from."""
     stamped = 0
     for item in lex["items"]:
-        for example in item.get("examples") or []:
-            # The render manifest additionally pins the voice. Cards expose the text hash.
-            clip = {"say": render_text(example)}
-            if "kokoroSpeaker" in example:
-                clip["kokoroSpeaker"] = example["kokoroSpeaker"]
-            if render_input_hash(clip) != rendered[example["audio"]]:
-                raise ValueError(f"Stale example audio: {example['audio']}")
-            example["audioTextSha256"] = text_hash(clip["say"])
-            stamped += 1
-        for index, turn in enumerate(item.get("miniDialogue") or []):
+        turns = item.get("miniDialogue") or []
+        for index, turn in enumerate(turns):
             turn.setdefault("audio", f"assets/audio/words/{item['id']}-md{index}.mp3")
             turn.setdefault("audioSlow", f"assets/audio/words/{item['id']}-md{index}-slow.mp3")
-            turn["audioTextSha256"] = rendered[turn["audio"]]
+        for row in [*(item.get("examples") or []), *turns]:
+            # The manifest pins the synthesis voice. Cards expose the text hash.
+            clip = {"say": render_text(row)}
+            if "kokoroSpeaker" in row:
+                clip["kokoroSpeaker"] = row["kokoroSpeaker"]
+            if render_input_hash(clip) != rendered[row["audio"]]:
+                raise ValueError(f"Stale card audio: {row['audio']}")
+            row["audioTextSha256"] = text_hash(clip["say"])
             stamped += 1
     return stamped
 

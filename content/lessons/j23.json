@@ -73,8 +73,9 @@
       "glossYue": "如果索償人帶唔到紙本正本，承保人可唔可以收一張清晰相片？",
       "audio": "assets/audio/lines/j23-l5.mp3",
       "audioSlow": "assets/audio/lines/j23-l5-slow.mp3",
-      "say": "Can the [[ˈʌndɚɹˌaɪɾɚ]] accept a clear photo if the claimant cannot bring the paper original?",
-      "hideGloss": true
+      "say": "Can the underwriter accept a clear photo if the claimant cannot bring the paper original?",
+      "hideGloss": true,
+      "kokoroSpeaker": 5
     },
     {
       "id": "j23-l6",
@@ -107,7 +108,8 @@
       "audio": "assets/audio/lines/j23-l8.mp3",
       "audioSlow": "assets/audio/lines/j23-l8-slow.mp3",
       "say": "The fee is forty dollars if they ask. The deductible stays the same.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 5
     }
   ],
   "understand": [

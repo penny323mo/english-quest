@@ -64,6 +64,34 @@ registerRoute(
 const urls = precacheController.getURLsToCacheKeys();
 const scope = self.registration.scope;
 const entryUrlForBuild = [...urls.keys()].find((url) => /\/assets\/index-[^/]+\.js$/.test(url));
+const revisionPrefix = scope + ".offline-revisions/";
+let savedRevisions: Promise<Map<string, string>> | undefined;
+function revisionList(entry: string) {
+  return revisionPrefix + encodeURIComponent(entry);
+}
+function previousRevisions(cache: Cache): Promise<Map<string, string>> {
+  return savedRevisions ??= (async () => {
+    const shells = await caches.open(SHELL_CACHE);
+    const page = await shells.match(scope);
+    const src = page && /\bsrc=["']([^"']*\/assets\/index-[^/"']+\.js)["']/.exec(await page.text())?.[1];
+    if (!src) return new Map<string, string>();
+    const entry = new URL(src, scope).href;
+    const saved = await shells.match(revisionList(entry));
+    if (saved) return new Map<string, string>(await saved.json());
+    // Upgrade an installed pack that predates revision lists, before staging any new audio.
+    const previous = new Map<string, string>();
+    for (const request of await cache.keys()) {
+      const url = new URL(request.url);
+      url.searchParams.delete("__WB_REVISION__");
+      if (!previous.has(url.href)) previous.set(url.href, request.url);
+    }
+    await shells.put(revisionList(entry), new Response(JSON.stringify([...previous])));
+    return previous;
+  })().catch(error => {
+    savedRevisions = undefined;
+    throw error;
+  });
+}
 const bootFiles = [...urls].filter(([url]) => /\.(?:js|css)$/.test(url));
 let bootReady = false;
 let packReady = false;
@@ -89,7 +117,27 @@ registerRoute(
   async ({ request }) => {
     const cache = await caches.open(cacheNames.precache);
     const key = urls.get(request.url);
-    const hit = key && await cache.match(key);
+    if (key && !packReady) {
+      const oldKey = (await previousRevisions(cache)).get(request.url);
+      if (oldKey && oldKey !== key) {
+        const previous = await cache.match(oldKey);
+        if (previous) {
+          // A new online page gets the current recording. An offline page still
+          // belongs to the last complete pack, even if this file finished staging.
+          try {
+            const online = await fetch(request.url, {
+              cache: "no-cache",
+              integrity: precacheController.getIntegrityForCacheKey(key),
+            });
+            if (online.status === 200) return cachedResponse(request, online);
+          } catch { /* The last complete recording is available offline. */ }
+          return cachedResponse(request, previous);
+        }
+      }
+    }
+    // A previous shell still requests its exact fingerprinted boot script.
+    // Use those saved bytes even if the network connection stays half open.
+    const hit = await cache.match(key || request);
     if (hit) return cachedResponse(request, hit);
     // A saved page may still reference a previous fingerprint or audio revision.
     try {
@@ -185,6 +233,7 @@ function precacheInBackground(): Promise<void> {
     pack.reason = "";
     precacheTask = (async () => {
       const cache = await caches.open(cacheNames.precache);
+      await previousRevisions(cache);
       const present = new Set((await cache.keys()).map((request) => request.url));
       pack.completed = [...urls.values()].filter(key => present.has(key)).length;
       await download(cache, bootFiles, present);
@@ -192,9 +241,17 @@ function precacheInBackground(): Promise<void> {
       bootReady = true;
       await refreshPage();
       await download(cache, [...urls], present);
+      if (!entryUrlForBuild) throw new Error("Offline entry is missing");
+      const shells = await caches.open(SHELL_CACHE);
+      const revisionUrl = revisionList(entryUrlForBuild);
+      await shells.put(revisionUrl, new Response(JSON.stringify([...urls])));
       packReady = true;
       if (await refreshPage()) await purgeOldShell();
       else throw new Error("Offline page does not match this worker");
+      for (const entry of await shells.keys()) {
+        if (entry.url.startsWith(revisionPrefix) && entry.url !== revisionUrl) await shells.delete(entry);
+      }
+      savedRevisions = Promise.resolve(urls);
       pack.state = "ready";
     })().catch((error) => {
       pack.state = "failed";

@@ -202,18 +202,22 @@
     },
     {
       "type": "order",
-      "promptYue": "排好呢句。",
+      "promptYue": "排好英文，講「你幾時可以嚟整漏水嘅地方？」",
       "tokens": [
-        "repair",
-        "starts",
-        "after",
-        "six"
+        "When",
+        "can",
+        "you",
+        "fix",
+        "the",
+        "leak?"
       ],
       "answer": [
-        "repair",
-        "starts",
-        "after",
-        "six"
+        "When",
+        "can",
+        "you",
+        "fix",
+        "the",
+        "leak?"
       ]
     }
   ],

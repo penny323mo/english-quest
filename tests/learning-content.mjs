@@ -84,3 +84,13 @@ test("the blind listening answer sheet describes the current recordings at both 
     assert.equal(path.endsWith("-slow.mp3"), speed === "slow", path);
   }
 });
+
+test("practical word-order tasks ask for a complete, context-specific utterance", () => {
+  const lessonIds = ["D7", "D8", "D9", "D10", "D13", "F6", "J15", "J17", "T6", "T11", "T12", "T14", "W8"];
+  for (const id of lessonIds) {
+    const task = lessons.find(lesson => lesson.id === id).build.find(row => row.type === "order");
+    assert.match(task.promptYue, /「.+」/, id);
+    assert.match(task.answer.join(" "), /^[A-Z].+[.!?]$/, id);
+    assert.deepEqual([...task.tokens].sort(), [...task.answer].sort(), id);
+  }
+});

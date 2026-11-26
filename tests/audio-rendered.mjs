@@ -31,7 +31,7 @@ function clips() {
     }
     for (const [i, turn] of (item.miniDialogue || []).entries()) {
       const rel = turn.audio || `assets/audio/words/${item.id}-md${i}.mp3`;
-      out.push({ rel, shown: turn.en, say: renderText(turn, turn.en), where: `${item.id} md${i}` });
+      out.push({ rel, shown: turn.en, say: renderText(turn, turn.en), where: `${item.id} md${i}`, speaker: turn.kokoroSpeaker });
     }
   }
   for (const line of lines) out.push({ rel: line.audio, shown: line.text, say: line.say, where: line.id, speaker: line.kokoroSpeaker });

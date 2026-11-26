@@ -209,22 +209,24 @@
     },
     {
       "type": "order",
-      "promptYue": "排好呢句。",
+      "promptYue": "排好英文，講「可唔可以幫我哋換間靜啲嘅房？」",
       "tokens": [
-        "Would",
-        "it",
-        "be",
-        "possible",
+        "Could",
+        "we",
+        "move",
         "to",
-        "move"
+        "a",
+        "quieter",
+        "room?"
       ],
       "answer": [
-        "Would",
-        "it",
-        "be",
-        "possible",
+        "Could",
+        "we",
+        "move",
         "to",
-        "move"
+        "a",
+        "quieter",
+        "room?"
       ]
     }
   ],

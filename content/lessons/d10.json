@@ -224,14 +224,18 @@
     },
     {
       "type": "order",
-      "promptYue": "排好呢句。",
+      "promptYue": "排好英文，講「你嘅車牌號碼係咩？」",
       "tokens": [
+        "What's",
+        "your",
         "plate",
-        "number"
+        "number?"
       ],
       "answer": [
+        "What's",
+        "your",
         "plate",
-        "number"
+        "number?"
       ]
     }
   ],

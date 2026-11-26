@@ -223,14 +223,18 @@
     },
     {
       "type": "order",
-      "promptYue": "排好呢句。",
+      "promptYue": "排好英文，講「Wi-Fi 密碼係咩？」",
       "tokens": [
-        "wifi",
-        "password"
+        "What's",
+        "the",
+        "Wi-Fi",
+        "password?"
       ],
       "answer": [
-        "wifi",
-        "password"
+        "What's",
+        "the",
+        "Wi-Fi",
+        "password?"
       ]
     }
   ],

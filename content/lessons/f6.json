@@ -177,18 +177,20 @@
     },
     {
       "type": "order",
-      "promptYue": "排好呢句。",
+      "promptYue": "排好英文，講「我通常好早起身。」",
       "tokens": [
         "I",
         "usually",
         "wake",
-        "up"
+        "up",
+        "early."
       ],
       "answer": [
         "I",
         "usually",
         "wake",
-        "up"
+        "up",
+        "early."
       ]
     }
   ],

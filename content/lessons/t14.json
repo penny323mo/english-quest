@@ -218,14 +218,26 @@
     },
     {
       "type": "order",
-      "promptYue": "排好呢句。",
+      "promptYue": "排好英文，講「可唔可以幫我改搭下一班機？」",
       "tokens": [
-        "i'm",
-        "sorry"
+        "Can",
+        "you",
+        "rebook",
+        "me",
+        "on",
+        "the",
+        "next",
+        "flight?"
       ],
       "answer": [
-        "i'm",
-        "sorry"
+        "Can",
+        "you",
+        "rebook",
+        "me",
+        "on",
+        "the",
+        "next",
+        "flight?"
       ]
     }
   ],

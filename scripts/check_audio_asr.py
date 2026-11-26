@@ -206,7 +206,7 @@ def clips() -> list[dict]:
             add(ex.get("audio"), ex["en"], render_text(ex), f"{item['id']} ex{i}", kokoro=ex.get("kokoroSpeaker"))
         for i, turn in enumerate(item.get("miniDialogue") or []):
             rel = turn.get("audio") or f"assets/audio/words/{item['id']}-md{i}.mp3"
-            add(rel, turn["en"], render_text(turn), f"{item['id']} md{i}")
+            add(rel, turn["en"], render_text(turn), f"{item['id']} md{i}", kokoro=turn.get("kokoroSpeaker"))
     for line in lines:
         if line.get("runtimeTts"):
             continue  # the device voice speaks this line
@@ -278,7 +278,9 @@ def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
                 previous_voices[ex.get("audio")] = ex.get("kokoroSpeaker")
                 old.setdefault(ex.get("audio"), render_text(ex))
             for i, turn in enumerate(item.get("miniDialogue") or []):
-                old.setdefault(turn.get("audio") or f"assets/audio/words/{item['id']}-md{i}.mp3", render_text(turn))
+                rel = turn.get("audio") or f"assets/audio/words/{item['id']}-md{i}.mp3"
+                previous_voices[rel] = turn.get("kokoroSpeaker")
+                old.setdefault(rel, render_text(turn))
     for line in old_lines or []:
         old.setdefault(line["audio"], line["say"])
     for row in (old_json("content/word-audio.json") or {"items": {}})["items"].values():

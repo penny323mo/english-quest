@@ -207,18 +207,22 @@
     },
     {
       "type": "order",
-      "promptYue": "排好呢句。",
+      "promptYue": "排好英文，講「我可唔可以預約下次剪髮？」",
       "tokens": [
+        "Can",
+        "I",
         "book",
-        "the",
+        "my",
         "next",
-        "visit"
+        "trim?"
       ],
       "answer": [
+        "Can",
+        "I",
         "book",
-        "the",
+        "my",
         "next",
-        "visit"
+        "trim?"
       ]
     }
   ],
