@@ -250,7 +250,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "How much does this cost?",
+        "line": "How much does this piece cost? Is that the final price?",
         "audio": "assets/audio/lines/j6-l1.mp3",
         "audioSlow": "assets/audio/lines/j6-l1-slow.mp3",
         "expect": "This piece is on sale today.",
@@ -263,7 +263,7 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Is there a discount?",
+        "line": "Is there a discount if I take the ring too?",
         "audio": "assets/audio/lines/j6-l3.mp3",
         "audioSlow": "assets/audio/lines/j6-l3-slow.mp3",
         "expect": "Ten percent off, and that's the final price.",
@@ -277,10 +277,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "That is within my budget.",
+        "line": "This is within my budget, so I'll take it.",
         "audio": "assets/audio/lines/j6-l5.mp3",
         "audioSlow": "assets/audio/lines/j6-l5-slow.mp3",
-        "expect": "The total is a good deal.",
+        "expect": "The total is a good deal, so many guests take both.",
         "keywords": [
           "total",
           "deal"
@@ -315,7 +315,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Is there a discount if I take the ring too?」，係咩意思？",
+      "prompt": "Tom講「Is there a discount if I take the ring too?」，係咩意思？",
       "choices": [
         "折扣",
         "玉",
@@ -325,7 +325,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「This is within my budget, so I'll take it.」，係咩意思？",
+      "prompt": "Tom講「This is within my budget, so I'll take it.」，係咩意思？",
       "choices": [
         "鑲托",
         "鏡",

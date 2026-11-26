@@ -77,11 +77,11 @@
       "id": "f2-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Hi. Please say it again for me.",
-      "glossYue": "哈囉。請你再同我講一次。",
+      "text": "Sorry, what was your name again?",
+      "glossYue": "唔好意思，你啱啱話你叫咩名？",
       "audio": "assets/audio/lines/f2-l5.mp3",
       "audioSlow": "assets/audio/lines/f2-l5-slow.mp3",
-      "say": "Hi. Please say it again for me."
+      "say": "Sorry, what was your name again?"
     }
   ],
   "understand": [
@@ -230,15 +230,15 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "Hi. Please say it again for me.",
+        "line": "Sorry, what was your name again?",
         "audio": "assets/audio/lines/f2-l5.mp3",
         "audioSlow": "assets/audio/lines/f2-l5-slow.mp3",
-        "expect": "Thank you.",
+        "expect": "Good morning. My name is {{learner}}.",
         "keywords": [
-          "thank"
+          "name"
         ],
-        "modelAudio": "assets/audio/lines/j1-m2.mp3",
-        "modelSlow": "assets/audio/lines/j1-m2-slow.mp3"
+        "modelAudio": "assets/audio/lines/f2-l2.mp3",
+        "modelSlow": "assets/audio/lines/f2-l2-slow.mp3"
       }
     ]
   },

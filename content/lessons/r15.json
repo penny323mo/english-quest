@@ -61,11 +61,11 @@
       "id": "r15-l2",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Yes. This buffet is for here only.",
-      "glossYue": "係。呢個自助餐只可以堂食。",
+      "text": "The buffet is unlimited, but everything is for dine-in only.",
+      "glossYue": "呢度自助餐任食，不過所有嘢都只限堂食。",
       "audio": "assets/audio/lines/r15-l2.mp3",
       "audioSlow": "assets/audio/lines/r15-l2-slow.mp3",
-      "say": "Yes. This [[bəfˈeɪ]] is for here only.",
+      "say": "The buffet is unlimited, but everything is for dine-in only.",
       "hideGloss": false
     },
     {
@@ -83,11 +83,11 @@
       "id": "r15-l4",
       "speaker": "mira",
       "speakerLabel": "Mira",
-      "text": "Yes. Those soft drinks are included for every adult at the table.",
-      "glossYue": "係。每位成人喺檯上都包汽水。",
+      "text": "Soft drinks are included for every adult at the table.",
+      "glossYue": "同檯每位成人都包汽水。",
       "audio": "assets/audio/lines/r15-l4.mp3",
       "audioSlow": "assets/audio/lines/r15-l4-slow.mp3",
-      "say": "Yes. Those soft drinks are included for every adult at the table.",
+      "say": "Soft drinks are included for every adult at the table.",
       "hideGloss": true
     },
     {
@@ -142,7 +142,7 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "Yes. This buffet is for here only.",
+        "line": "The buffet is unlimited, but everything is for dine-in only.",
         "audio": "assets/audio/lines/r15-l2.mp3",
         "audioSlow": "assets/audio/lines/r15-l2-slow.mp3",
         "expect": "Are soft drinks included, or do I pay for each one?",
@@ -156,7 +156,7 @@
       {
         "partner": "Mira",
         "partnerId": "mira",
-        "line": "Yes. Those soft drinks are included for every adult at the table.",
+        "line": "Soft drinks are included for every adult at the table.",
         "audio": "assets/audio/lines/r15-l4.mp3",
         "audioSlow": "assets/audio/lines/r15-l4-slow.mp3",
         "expect": "Which hot dishes have shellfish? May I have a clean plate?",
@@ -194,9 +194,9 @@
       "answer": 1
     },
     {
-      "prompt": "Yes. Those soft drinks are included for every adult at the table. 呢句即係點？",
+      "prompt": "Soft drinks are included for every adult at the table. 呢句即係點？",
       "choices": [
-        "係。每位成人喺檯上都包汽水",
+        "每位成人喺檯上都包汽水",
         "呢個自助餐係咪任食？可唔可以拎走？",
         "蝦湯有甲殼類海鮮。呢隻係乾淨碟"
       ],
@@ -215,8 +215,8 @@
   "chunks": [
     {
       "pattern": "Yes. This ___ is for here only.",
-      "example": "Yes. This buffet is for here only.",
-      "glossYue": "係。呢個自助餐只可以堂食。",
+      "example": "The buffet is unlimited, but everything is for dine-in only.",
+      "glossYue": "呢度自助餐任食，不過所有嘢都只限堂食。",
       "answer": "buffet",
       "choices": [
         "buffet",
@@ -226,8 +226,8 @@
     },
     {
       "pattern": "Yes. Those soft ___ are included for every adult at the table.",
-      "example": "Yes. Those soft drinks are included for every adult at the table.",
-      "glossYue": "係。每位成人喺檯上都包汽水。",
+      "example": "Soft drinks are included for every adult at the table.",
+      "glossYue": "同檯每位成人都包汽水。",
       "answer": "drinks",
       "choices": [
         "drinks",

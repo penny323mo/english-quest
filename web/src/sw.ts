@@ -3,6 +3,7 @@ import { PrecacheController } from "workbox-precaching";
 import { cacheNames } from "workbox-core";
 import { registerRoute } from "workbox-routing";
 import { NetworkOnly } from "workbox-strategies";
+import { createPartialResponse } from "workbox-range-requests";
 import type { PrecacheEntry } from "workbox-precaching";
 import { navigateNetworkFirst, SHELL_CACHE } from "./sw-navigate.mjs";
 import { planPrecachePurge } from "./sw-purge.mjs";
@@ -40,6 +41,22 @@ registerRoute(
       waitUntil: (promise) => (event as ExtendableEvent).waitUntil(promise),
     }),
 );
+// Keep the last install metadata available when a saved app is opened offline.
+async function appManifest(): Promise<Response> {
+  const url = new URL("manifest.webmanifest", self.registration.scope).href;
+  const cache = await caches.open(SHELL_CACHE);
+  try {
+    const response = await fetch(url, { cache: "no-cache" });
+    if (response.ok && /json|manifest/i.test(response.headers.get("content-type") || "")) {
+      await cache.put(url, response.clone());
+    }
+    if (response.ok) return response;
+    return await cache.match(url) || response;
+  } catch {
+    return await cache.match(url) || new Response(null, {status:503});
+  }
+}
+registerRoute(({ url }) => url.href === self.registration.scope + "manifest.webmanifest", appManifest);
 registerRoute(
   ({ url }) => SHELL.test(url.pathname),
   new NetworkOnly({ fetchOptions: { cache: "no-cache" } }),
@@ -50,6 +67,12 @@ const entryUrlForBuild = [...urls.keys()].find((url) => /\/assets\/index-[^/]+\.
 const bootFiles = [...urls].filter(([url]) => /\.(?:js|css)$/.test(url));
 let bootReady = false;
 let packReady = false;
+const pack = { state: "checking", completed: 0, total: urls.size, reason: "", entry: entryUrlForBuild };
+let retryAfter = 0;
+
+function cachedResponse(request: Request, response: Response) {
+  return request.headers.has("range") ? createPartialResponse(request, response) : response;
+}
 
 async function keepPage(page: Response) {
   if (!entryUrlForBuild || !bootReady) return;
@@ -67,15 +90,16 @@ registerRoute(
     const cache = await caches.open(cacheNames.precache);
     const key = urls.get(request.url);
     const hit = key && await cache.match(key);
-    if (hit) return hit;
+    if (hit) return cachedResponse(request, hit);
     // A saved page may still reference a previous fingerprint or audio revision.
     try {
       const response = await fetch(request);
       if (response.ok) return response;
-      return await cache.match(request, { ignoreSearch: true }) ?? response;
+      const previous = await cache.match(request, { ignoreSearch: true });
+      return previous ? cachedResponse(request, previous) : response;
     } catch (error) {
       const previous = await cache.match(request, { ignoreSearch: true });
-      if (previous) return previous;
+      if (previous) return cachedResponse(request, previous);
       throw error;
     }
   },
@@ -86,8 +110,12 @@ self.addEventListener("install", () => {
 });
 
 self.addEventListener("message", (event: ExtendableMessageEvent) => {
-  if (event.data?.type !== "eq-ping") return;
-  event.ports[0]?.postMessage({ eq: 2 });
+  const type = event.data?.type;
+  if (type === "eq-ping") event.ports[0]?.postMessage({ eq: 2 });
+  if (type !== "eq-pack-status" && type !== "eq-pack-retry") return;
+  if (type === "eq-pack-retry") retryAfter = 0;
+  if (pack.state === "checking" || type === "eq-pack-retry") event.waitUntil(precacheInBackground());
+  event.ports[0]?.postMessage(pack);
 });
 
 async function purgeOldShell(): Promise<boolean> {
@@ -123,10 +151,14 @@ async function download(cache: Cache, files: [string, string][], present: Set<st
     while (!failure && at < missing.length) {
       const [url, key] = missing[at++];
       try {
-        const response = await fetch(url, { cache: "reload" });
-        if (!response.ok) throw new Error("Offline asset HTTP " + response.status);
+        const response = await fetch(url, {
+          cache: "reload",
+          integrity: precacheController.getIntegrityForCacheKey(key),
+        });
+        if (response.status !== 200) throw new Error("Offline asset HTTP " + response.status);
         await cache.put(key, response);
         present.add(key);
+        pack.completed++;
       } catch (error) { failure = error; }
     }
   }
@@ -135,26 +167,39 @@ async function download(cache: Cache, files: [string, string][], present: Set<st
 }
 
 async function refreshPage() {
+  const saved = await (await caches.open(SHELL_CACHE)).match(scope);
+  if (!entryUrlForBuild) return false;
+  const entry = new URL(entryUrlForBuild).pathname;
+  if (saved && (await saved.text()).includes(entry)) return true;
   const response = await fetch(scope, { cache: "no-cache" });
   if (!response.ok || !response.headers.get("content-type")?.includes("text/html")) return false;
   await keepPage(response);
-  const saved = await (await caches.open(SHELL_CACHE)).match(scope);
-  return Boolean(entryUrlForBuild && saved && (await saved.text()).includes(new URL(entryUrlForBuild).pathname));
+  const current = await (await caches.open(SHELL_CACHE)).match(scope);
+  return Boolean(current && (await current.text()).includes(entry));
 }
 
 function precacheInBackground(): Promise<void> {
   if (!precacheTask) {
+    if (Date.now() < retryAfter) return Promise.resolve();
+    pack.state = "downloading";
+    pack.reason = "";
     precacheTask = (async () => {
       const cache = await caches.open(cacheNames.precache);
       const present = new Set((await cache.keys()).map((request) => request.url));
+      pack.completed = [...urls.values()].filter(key => present.has(key)).length;
       await download(cache, bootFiles, present);
+      if (!(await (await caches.open(SHELL_CACHE)).match(scope + "manifest.webmanifest"))) await appManifest();
       bootReady = true;
       await refreshPage();
       await download(cache, [...urls], present);
       packReady = true;
       if (await refreshPage()) await purgeOldShell();
       else throw new Error("Offline page does not match this worker");
-    })().catch(() => {
+      pack.state = "ready";
+    })().catch((error) => {
+      pack.state = "failed";
+      pack.reason = error?.name === "QuotaExceededError" ? "quota" : "download";
+      retryAfter = Date.now() + 5000;
       packReady = false;
       precacheTask = undefined;
     });

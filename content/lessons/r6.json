@@ -77,11 +77,11 @@
       "id": "r6-l5",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "If it rains, please cancel the outdoor seat and keep us indoors.",
-      "glossYue": "如果落雨，請取消室外位，留我哋喺室內。",
+      "text": "We'd prefer an outdoor table if one opens up, but please keep our indoor booking.",
+      "glossYue": "如果室外有一張檯空出嚟，我哋想坐出面，不過請先保留室內嘅訂位。",
       "audio": "assets/audio/lines/r6-l5.mp3",
       "audioSlow": "assets/audio/lines/r6-l5-slow.mp3",
-      "say": "If it rains, please cancel the [[ˈaʊtdɔːɹ]] seat and keep us indoors.",
+      "say": "We'd prefer an outdoor table if one opens up, but please keep our indoor booking.",
       "hideGloss": false
     },
     {
@@ -130,24 +130,24 @@
       "explain": "book a table 係訂檯，window seat 係靠窗位。"
     },
     {
-      "prompt": "If it rains, please cancel the outdoor seat and keep us indoors. 呢句即係點？",
+      "prompt": "We'd prefer an outdoor table if one opens up, but please keep our indoor booking. 呢句即係點？",
       "choices": [
         "落雨就要室外位",
         "而家取消成個訂位",
-        "落雨就取消室外，留喺室內"
+        "想坐室外，但暫時保留室內訂位"
       ],
       "answer": 2,
-      "explain": "cancel the outdoor seat 係唔要室外。"
+      "explain": "prefer 表示較想要，keep our indoor booking 係保留室內訂位。"
     },
     {
       "prompt": "Please confirm the booking. What time should we come? 即係問緊咩？",
       "choices": [
         "問窗邊幾多錢",
-        "請確認，再問大概幾點",
+        "請確認訂位，再問應該幾點到",
         "問可唔可以加酒"
       ],
       "answer": 1,
-      "explain": "confirm 係確認，roughly 係大概。"
+      "explain": "confirm 係確認，what time 係問幾點。"
     }
   ],
   "chunks": [
@@ -163,14 +163,14 @@
       ]
     },
     {
-      "pattern": "If it rains, please ___ the outdoor seat and keep us indoors.",
-      "example": "If it rains, please cancel the outdoor seat and keep us indoors.",
-      "glossYue": "請⋯⋯室外位。",
-      "answer": "cancel",
+      "pattern": "We'd prefer an ___ table if one opens up, but please keep our indoor booking.",
+      "example": "We'd prefer an outdoor table if one opens up, but please keep our indoor booking.",
+      "glossYue": "如果室外有一張檯空出嚟，我哋想坐出面，不過請先保留室內嘅訂位。",
+      "answer": "outdoor",
       "choices": [
-        "cancel",
-        "book",
-        "confirm"
+        "outdoor",
+        "urgent",
+        "open-ended"
       ]
     },
     {
@@ -187,7 +187,7 @@
   ],
   "shadow": {
     "lineId": "r6-l5",
-    "hint": "If it rains, please cancel the outdoor seat and keep us indoors."
+    "hint": "We'd prefer an outdoor table if one opens up, but please keep our indoor booking."
   },
   "build": [
     {
@@ -242,10 +242,10 @@
         "line": "I can change the time to eight, and that window seat stays free.",
         "audio": "assets/audio/lines/r6-l4.mp3",
         "audioSlow": "assets/audio/lines/r6-l4-slow.mp3",
-        "expect": "If it rains, please cancel the outdoor seat and keep us indoors.",
+        "expect": "We'd prefer an outdoor table if one opens up, but please keep our indoor booking.",
         "keywords": [
           "outdoor",
-          "cancel"
+          "indoor"
         ],
         "modelAudio": "assets/audio/lines/r6-l5.mp3",
         "modelSlow": "assets/audio/lines/r6-l5-slow.mp3"
@@ -291,7 +291,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「If it rains, please cancel the outdoor seat and keep us indoors.」，outdoor 係咩意思？",
+      "prompt": "Tom講「We'd prefer an outdoor table if one opens up, but please keep our indoor booking.」，outdoor 係咩意思？",
       "choices": [
         "室外",
         "候補",
@@ -301,7 +301,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "店員講「Those patio seats are booked, but I can add you to the waitlist.」，waitlist 係咩意思？",
+      "prompt": "Ana講「Those patio seats are booked, but I can add you to the waitlist.」，waitlist 係咩意思？",
       "choices": [
         "靠窗位",
         "晚餐時間",

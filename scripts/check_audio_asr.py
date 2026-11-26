@@ -209,6 +209,8 @@ def clips() -> list[dict]:
         if line.get("runtimeTts"):
             continue  # the device voice speaks this line
         add(line["audio"], line["text"], line["say"], line["id"])
+        if "kokoroSpeaker" in line:
+            out[-1].update(kokoroSpeaker=line["kokoroSpeaker"], speaker=line["kokoroSpeaker"], ref=line["say"])
     # Word-only clips for 每日抽卡: the card shows the lemma.
     lemma = {item["id"]: item["lemma"] for item in lex["items"]}
     words = json.loads(WORDS.read_text(encoding="utf-8")) if WORDS.exists() else {"items": {}}
@@ -276,6 +278,7 @@ def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
                 old.setdefault(turn.get("audio") or f"assets/audio/words/{item['id']}-md{i}.mp3", render_text(turn))
     for line in old_lines or []:
         old.setdefault(line["audio"], line["say"])
+    previous_dialogue_voices = {line["audio"]: line.get("kokoroSpeaker") for line in old_lines or []}
     for row in (old_json("content/word-audio.json") or {"items": {}})["items"].values():
         old.setdefault(row["audio"], row["say"])
     diff = subprocess.run(
@@ -296,6 +299,8 @@ def changed_since(ref: str, jobs: list[dict]) -> list[dict]:
     return [
         j for j in jobs
         if old.get(j["rel"]) != j["say"] or j["rel"] in touched or word_recheck(j, old_table, new_table, rules_changed)
+        or previous_dialogue_voices.get(j["rel"]) != j.get("kokoroSpeaker")
+        or ("kokoroSpeaker" in j and rules_changed)
         or (j.get("word") and old_speakers.get(j["rel"]) != j.get("speaker", 0))
     ]
 
@@ -500,14 +505,15 @@ def load_hearers(args, folder: Path, jobs: list[dict]) -> dict:
     refs: dict[str, object] = {}
 
     def fresh(r: dict) -> tuple[str, float]:
-        if r["word"]:
+        if r["word"] or "kokoroSpeaker" in r:
             if "word" not in refs:
                 if not args.word_voice:
                     sys.exit("set EQ_WORD_TTS_DIR or --word-voice to the word clips' voice folder")
-                refs["word"] = WordReference(Path(args.word_voice), [j.get("ref") or j["text"] for j in jobs if j["word"]])
+                refs["word"] = WordReference(Path(args.word_voice), [j.get("ref") or j["text"] for j in jobs if j["word"] or "kokoroSpeaker" in j])
             mp3 = refs["word"].mp3(r)
         else:
-            refs.setdefault("sentence", Reference(args.voice))
+            if "sentence" not in refs:
+                refs["sentence"] = Reference(args.voice)
             mp3 = refs["sentence"].mp3(r)
         heard = transcribe(word_rec if r["word"] else first, mp3)
         return heard, round(dtw_distance(ROOT / r["rel"], mp3), 3)

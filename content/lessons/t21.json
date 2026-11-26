@@ -4,7 +4,7 @@
   "titleYue": "申報表同入境處",
   "titleEn": "Check-in, immigration, and the carousel",
   "canDoYue": "你識帶細袋上機、問幾早去入境處，再聽落地次序：先入境，再行李轉盤，最後海關。",
-  "canDoEn": "Check a small bag on board, ask when to reach immigration, then hear the arrival order: immigration, the carousel, then customs.",
+  "canDoEn": "Take a small bag on board and check the big one, ask when to reach immigration, then hear the arrival order: immigration, the carousel, then customs.",
   "minutes": 12,
   "hero": "assets/art/lessons/t21.webp",
   "cast": [
@@ -29,7 +29,8 @@
       "audio": "assets/audio/lines/t21-l1.mp3",
       "audioSlow": "assets/audio/lines/t21-l1-slow.mp3",
       "say": "Can I take this small bag on board and check the big one?",
-      "hideGloss": false
+      "hideGloss": false,
+      "kokoroSpeaker": 5
     },
     {
       "id": "t21-l2",
@@ -40,7 +41,8 @@
       "audio": "assets/audio/lines/t21-l2.mp3",
       "audioSlow": "assets/audio/lines/t21-l2-slow.mp3",
       "say": "Yes. Take the small bag on board. Collect the big one at the carousel after immigration.",
-      "hideGloss": false
+      "hideGloss": false,
+      "kokoroSpeaker": 1
     },
     {
       "id": "t21-l3",
@@ -51,7 +53,8 @@
       "audio": "assets/audio/lines/t21-l3.mp3",
       "audioSlow": "assets/audio/lines/t21-l3-slow.mp3",
       "say": "If the flight leaves at two, how early should I reach immigration with one bag?",
-      "hideGloss": false
+      "hideGloss": false,
+      "kokoroSpeaker": 5
     },
     {
       "id": "t21-l4",
@@ -62,7 +65,8 @@
       "audio": "assets/audio/lines/t21-l4.mp3",
       "audioSlow": "assets/audio/lines/t21-l4-slow.mp3",
       "say": "Please reach immigration by one o'clock, because your layover flight leaves at two.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 1
     },
     {
       "id": "t21-l5",
@@ -73,7 +77,8 @@
       "audio": "assets/audio/lines/t21-l5.mp3",
       "audioSlow": "assets/audio/lines/t21-l5-slow.mp3",
       "say": "After I land, is immigration before the baggage carousel, please?",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 5
     },
     {
       "id": "t21-l6",
@@ -84,7 +89,8 @@
       "audio": "assets/audio/lines/t21-l6.mp3",
       "audioSlow": "assets/audio/lines/t21-l6-slow.mp3",
       "say": "Yes. Please go through immigration first. The carousel is next.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 1
     },
     {
       "id": "t21-l7",
@@ -95,7 +101,8 @@
       "audio": "assets/audio/lines/t21-l7.mp3",
       "audioSlow": "assets/audio/lines/t21-l7-slow.mp3",
       "say": "Do I clear customs before I collect the bag?",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 5
     },
     {
       "id": "t21-l8",
@@ -106,7 +113,32 @@
       "audio": "assets/audio/lines/t21-l8.mp3",
       "audioSlow": "assets/audio/lines/t21-l8-slow.mp3",
       "say": "No. Collect the bag at the carousel. Then go through customs with your declaration.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 1
+    },
+    {
+      "id": "t21-l9",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "If the first plane lands late, can someone help me find the quickest route?",
+      "glossYue": "如果第一程遲咗落機，有冇人可以話我知點行最快？",
+      "audio": "assets/audio/lines/t21-l9.mp3",
+      "audioSlow": "assets/audio/lines/t21-l9-slow.mp3",
+      "say": "If the first plane lands late, can someone help me find the quickest route?",
+      "hideGloss": true,
+      "kokoroSpeaker": 5
+    },
+    {
+      "id": "t21-l10",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "Look for the transfer desk when you land and show them both boarding passes.",
+      "glossYue": "落機之後搵轉機櫃檯，畀職員睇兩張登機證。",
+      "audio": "assets/audio/lines/t21-l10.mp3",
+      "audioSlow": "assets/audio/lines/t21-l10-slow.mp3",
+      "say": "Look for the transfer desk when you land and show them both boarding passes.",
+      "hideGloss": true,
+      "kokoroSpeaker": 1
     }
   ],
   "understand": [
@@ -183,7 +215,7 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你點講？",
+      "promptYue": "你想帶細袋上機、寄艙大袋。你點問？",
       "choices": [
         "Can I take this small bag on board and check the big one?",
         "If the flight leaves at two, how early should I reach immigration with one bag?",
@@ -196,16 +228,20 @@
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "could",
+        "Could",
         "you",
         "please",
-        "check"
+        "check",
+        "my",
+        "bag"
       ],
       "answer": [
-        "could",
+        "Could",
         "you",
         "please",
-        "check"
+        "check",
+        "my",
+        "bag"
       ]
     }
   ],
@@ -331,5 +367,11 @@
       "it-pron",
       "may-verb"
     ]
+  },
+  "challenge": {
+    "text": "Your suitcase is still on the first plane. Would you like to wait or ask about a later flight?",
+    "glossYue": "你個喼仲喺第一架飛機上面。你想等，定係想問遲一班嘅機？",
+    "audio": "assets/audio/lines/t21-challenge.mp3",
+    "audioSlow": "assets/audio/lines/t21-challenge-slow.mp3"
   }
 }

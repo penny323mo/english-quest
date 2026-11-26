@@ -142,7 +142,7 @@
       "prompt": "I will escalate the case today, and update you within three business days. 呢句即係點？",
       "choices": [
         "會取消張單",
-        "會升級處理，三個工作天內電話通知",
+        "今日會升級處理，三個工作天內再通知你",
         "會即刻退款"
       ],
       "answer": 1,
@@ -292,7 +292,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "店員講「I will escalate the case for you, and I can update you within three business days by phone.」，escalate 係咩意思？",
+      "prompt": "店員講「I will escalate the case today, and update you within three business days.」，escalate 係咩意思？",
       "choices": [
         "確認訂位",
         "升級處理",
@@ -302,7 +302,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「If the workshop cannot repair it, is compensation or a replacement possible?」，compensation 係咩意思？",
+      "prompt": "Tom講「If the workshop cannot repair it, is compensation or a replacement possible?」，compensation 係咩意思？",
       "choices": [
         "賠償",
         "參考編號",

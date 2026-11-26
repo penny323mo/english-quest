@@ -214,7 +214,7 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "Ana 問呢道菜含唔含花生。你點講？",
+      "promptYue": "Ana 問你有冇食物敏感。你點講自己對花生敏感？",
       "choices": [
         "I am allergic to peanuts.",
         "I'd like the chicken, please.",
@@ -252,7 +252,7 @@
         "line": "What would you like to order?",
         "audio": "assets/audio/lines/r3-a1.mp3",
         "audioSlow": "assets/audio/lines/r3-a1-slow.mp3",
-        "expect": "I'd like the chicken, please.",
+        "expect": "I'd like the chicken, please. I need to ask about the sauce.",
         "keywords": [
           "chicken"
         ],
@@ -262,10 +262,10 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "Does this dish contain peanuts?",
+        "line": "Do you have any food allergies?",
         "audio": "assets/audio/lines/r3-m1.mp3",
         "audioSlow": "assets/audio/lines/r3-m1-slow.mp3",
-        "expect": "I am allergic to peanuts.",
+        "expect": "I'm allergic to peanuts. Please keep them out.",
         "keywords": [
           "allergic"
         ],
@@ -278,7 +278,7 @@
         "line": "The sauce is spicy.",
         "audio": "assets/audio/lines/r3-a2.mp3",
         "audioSlow": "assets/audio/lines/r3-a2-slow.mp3",
-        "expect": "Could I have the sauce on the side?",
+        "expect": "Could I have the sauce on the side, and not on the chicken?",
         "keywords": [
           "side"
         ],
@@ -312,7 +312,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "店員講「We'll check the ingredients and tell you what's in it.」，係咩意思？",
+      "prompt": "Ana講「We'll check the ingredients and tell you what's in it.」，係咩意思？",
       "choices": [
         "佢哋會睇吓有咩材料，再話你知",
         "醬汁好辣",
@@ -322,7 +322,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Could I have the sauce on the side, and not on the chicken?」，係咩意思？",
+      "prompt": "Tom講「Could I have the sauce on the side, and not on the chicken?」，係咩意思？",
       "choices": [
         "唔要",
         "含有",

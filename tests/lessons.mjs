@@ -163,7 +163,7 @@ test("J1 keeps the jewellery greeting and later lessons are not stub files", () 
   assert.deepEqual(t4.roleplay.turns[2].keywords, ["receipt", "landmark"]);
   assert.equal(t5.dialogue[4].text, "The embassy number is on this card, and I will help you file the report.");
   assert.equal(t5.dialogue[6].text, "I feel faint after the shock. Is this an emergency?");
-  assert.equal(t5.dialogue[7].text, "If you feel faint, I can call an ambulance while we file the report.");
+  assert.equal(t5.dialogue[7].text, "If you feel faint, please sit down. I'll call an ambulance now. The report can wait.");
   assert.deepEqual(t5.roleplay.turns[1].keywords, ["embassy", "report"]);
   assert.deepEqual(t5.roleplay.turns[2].keywords, ["ambulance", "report"]);
   assert.equal(j9.cefr, "B1");
@@ -480,7 +480,7 @@ test("learner Cantonese does not use 俾, stiff glosses, or simplified character
   assert.equal(byId["money-noun"].exampleYue, "我冇帶夠錢。");
   assert.equal(byId["let-me-know-phrase"].example, "Let me know if you need anything.");
   assert.equal(byId["let-me-know-phrase"].exampleYue, "有咩需要就話我知。");
-  assert.equal(byId["madam-noun"].exampleYue, "好嘅，小姐。");
+  assert.equal(byId["madam-noun"].exampleYue, "好嘅，女士。");
   assert.match(byId["madam-noun"].glossYue, /女士/);
   assert.equal(byId["oclock-adv"].exampleYue, "而家係三點。");
   assert.equal(byId["hour-noun"].example, "I waited for one hour.");
@@ -563,7 +563,7 @@ test("each example contains its lemma in the glossed sense", () => {
   }
   assert.equal(byId["of-prep"].example, "I would like a cup of tea.");
   assert.match(byId["of-prep"].exampleYue, /茶/);
-  assert.match(byId["of-prep"].say, /ˈʌv/);
+  assert.match(byId["of-prep"].say, /\[\[əv\]\]/);
   assert.doesNotMatch(byId["of-prep"].example, /Of course/);
   assert.equal(byId["keep-verb"].example, "Please keep the ring clean.");
   assert.match(byId["keep-verb"].exampleYue, /保持/);
@@ -894,7 +894,7 @@ test("white gold is 白K金 and the tablet eyebrow is 藥片", () => {
   assert.equal(labels.sense["phrase:take-away"], "拎走");
   assert.equal(byId["access-noun"].glossYue, "入單位");
   assert.equal(labels.sense["noun:entry-right"], "入單位");
-  assert.equal(byId["repair-noun"].example, "Can someone repair this leak?");
+  assert.equal(byId["repair-noun"].example, "How much will the repair cost?");
   assert.equal(JSON.stringify(byId["blow-dry-phrase"]).toLowerCase().includes("a short dry"), false);
   assert.equal(JSON.stringify(byId["blow-dry-phrase"]).includes("A short blow dry"), false);
   const silver = byId["silver-noun"];
@@ -1130,9 +1130,9 @@ test("round 41 scenes keep the r39 facts and the hero preloads", () => {
   assert.match(r11, /note on your order/i);
   assert.doesNotMatch(r11, /dinner order/i);
   const t13 = said("T13");
-  assert.match(t13, /Three times a day, after meals/);
-  assert.match(t13, /six tablets/);
-  assert.match(t13, /No prescription needed/);
+  assert.match(t13, /instructions on the label/);
+  assert.match(t13, /warning about driving/);
+  assert.match(t13, /whether this medicine requires a prescription/);
   assert.doesNotMatch(t13, /The written prescription/);
   assert.match(said("D10"), /MX 42 17/);
   assert.match(said("J17"), /two thousand/);

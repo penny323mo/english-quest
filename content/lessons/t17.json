@@ -73,11 +73,11 @@
       "id": "t17-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Shouldn't the laptop and power bank come out of it?",
-      "glossYue": "部手提電腦同行動電源係咪應該攞出嚟？",
+      "text": "Should I take the laptop and power bank out of my carry-on bag?",
+      "glossYue": "部手提電腦同行動電源要唔要由手提行李攞出嚟？",
       "audio": "assets/audio/lines/t17-l3.mp3",
       "audioSlow": "assets/audio/lines/t17-l3-slow.mp3",
-      "say": "Shouldn't the laptop and power bank come out of it?",
+      "say": "Should I take the laptop and power bank out of my carry-on bag?",
       "hideGloss": false
     },
     {
@@ -146,7 +146,7 @@
         "line": "Yes. Those liquids in the clear bag are all fine.",
         "audio": "assets/audio/lines/t17-l2.mp3",
         "audioSlow": "assets/audio/lines/t17-l2-slow.mp3",
-        "expect": "Shouldn't the laptop and power bank come out of it?",
+        "expect": "Should I take the laptop and power bank out of my carry-on bag?",
         "keywords": [
           "laptop",
           "power"
@@ -188,16 +188,16 @@
     {
       "prompt": "Hi. Are all of my liquids under one hundred millilitres? 呢句即係點？",
       "choices": [
-        "部手提電腦同行動電源係咪應該攞出嚟？",
+        "部手提電腦同行動電源要唔要由手提行李攞出嚟？",
         "你好。我嘅液體係咪全部一百毫升以下？",
         "多謝。閘口三十五搭接駁車點去？"
       ],
       "answer": 1
     },
     {
-      "prompt": "Shouldn't the laptop and power bank come out of it? 呢句即係點？",
+      "prompt": "Should I take the laptop and power bank out of my carry-on bag? 呢句即係點？",
       "choices": [
-        "部手提電腦同行動電源係咪應該攞出嚟？",
+        "部手提電腦同行動電源要唔要由手提行李攞出嚟？",
         "搭藍色接駁車。佢停喺遠處嗰個閘口",
         "多謝。閘口三十五搭接駁車點去？"
       ],
@@ -215,9 +215,9 @@
   ],
   "chunks": [
     {
-      "pattern": "Shouldn't the laptop and ___ bank come out of it?",
-      "example": "Shouldn't the laptop and power bank come out of it?",
-      "glossYue": "部手提電腦同行動電源係咪應該攞出嚟？",
+      "pattern": "Should I take the laptop and ___ bank out of my carry-on bag?",
+      "example": "Should I take the laptop and power bank out of my carry-on bag?",
+      "glossYue": "部手提電腦同行動電源要唔要由手提行李攞出嚟？",
       "answer": "power",
       "choices": [
         "power",
@@ -251,10 +251,10 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "你想講「部手提電腦同行動電源係咪應該攞出嚟？」，你點講？",
+      "promptYue": "你想講「部手提電腦同行動電源要唔要由手提行李攞出嚟？」，你點講？",
       "choices": [
         "Yes. Those liquids in the clear bag are all fine.",
-        "Shouldn't the laptop and power bank come out of it?",
+        "Should I take the laptop and power bank out of my carry-on bag?",
         "Do the belt and watch go in the tray?"
       ],
       "answer": 1,

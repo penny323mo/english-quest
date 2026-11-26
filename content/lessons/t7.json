@@ -199,14 +199,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "店員話細碼同試身室都有。你點先答？",
+      "promptYue": "細碼啱身，你想問店員攞退稅表格。你點講？",
       "choices": [
-        "The reduced fit works well, so can I get a tax refund form for this shirt.",
+        "This smaller size fits well. Could I get a tax refund form for this shirt?",
         "Could I speak to Mei?",
         "The room is on the quiet side."
       ],
       "answer": 0,
-      "explain": "細碼啱就講要呢隻顏色，同埋退稅表。"
+      "explain": "fits well 係啱身，a tax refund form 係退稅表格。"
     },
     {
       "type": "order",
@@ -234,7 +234,7 @@
       {
         "partner": "May",
         "partnerId": "may",
-        "line": "Good morning. Are you looking for a souvenir, or are you just looking around today?",
+        "line": "Good morning. Are you looking for a souvenir, or just looking around?",
         "audio": "assets/audio/lines/t7-l1.mp3",
         "audioSlow": "assets/audio/lines/t7-l1-slow.mp3",
         "expect": "I am just looking around, but do you have this shirt in a smaller size?",
@@ -300,7 +300,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The fit works. Can I get a tax refund form?」，tax refund 係咩意思？",
+      "prompt": "Tom講「The fit works. Can I get a tax refund form?」，tax refund 係咩意思？",
       "choices": [
         "顏色",
         "退稅",
@@ -310,7 +310,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I will take the blue shirt and a postcard. I have the receipt.」，postcard 係咩意思？",
+      "prompt": "Tom講「I will take the blue shirt and a postcard. I have the receipt.」，postcard 係咩意思？",
       "choices": [
         "收據",
         "戶口",

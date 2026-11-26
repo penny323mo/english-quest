@@ -41,22 +41,22 @@
       "id": "d6-l2",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "What should I tell the pharmacist before we choose a box?",
-      "glossYue": "揀盒之前，我應該話藥劑師知咩？",
+      "text": "What symptoms or allergies should I tell the pharmacist about?",
+      "glossYue": "你有咩症狀或者敏感，要我轉告藥劑師？",
       "audio": "assets/audio/lines/d6-l2.mp3",
       "audioSlow": "assets/audio/lines/d6-l2-slow.mp3",
-      "say": "What should I tell the pharmacist before we choose a box?",
+      "say": "What symptoms or allergies should I tell the pharmacist about?",
       "hideGloss": false
     },
     {
       "id": "d6-l3",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "The only extra symptom is a drug allergy.",
-      "glossYue": "另外就係藥物過敏。",
+      "text": "I have a cough and a drug allergy.",
+      "glossYue": "我咳，亦有藥物敏感。",
       "audio": "assets/audio/lines/d6-l3.mp3",
       "audioSlow": "assets/audio/lines/d6-l3-slow.mp3",
-      "say": "The only extra symptom is a drug allergy.",
+      "say": "I have a cough and a drug allergy.",
       "hideGloss": false
     },
     {
@@ -74,33 +74,33 @@
       "id": "d6-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "The dosage is one tablet twice a day.",
-      "glossYue": "劑量係每次一粒，一日兩次。",
+      "text": "Let me check the dosage on the label with the pharmacist.",
+      "glossYue": "等我同藥劑師核對標籤寫嘅劑量。",
       "audio": "assets/audio/lines/d6-l5.mp3",
       "audioSlow": "assets/audio/lines/d6-l5-slow.mp3",
-      "say": "The dosage is one tablet twice a day.",
+      "say": "Let me check the dosage on the label with the pharmacist.",
       "hideGloss": false
     },
     {
       "id": "d6-l6",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can I take that tablet after meals if it's safer?",
-      "glossYue": "如果安全啲，我可唔可以飯後食嗰粒藥片？",
+      "text": "Should I take this tablet after meals?",
+      "glossYue": "呢粒藥使唔使飯後食？",
       "audio": "assets/audio/lines/d6-l6.mp3",
       "audioSlow": "assets/audio/lines/d6-l6-slow.mp3",
-      "say": "Can I take that tablet after meals if it's safer?",
+      "say": "Should I take this tablet after meals?",
       "hideGloss": true
     },
     {
       "id": "d6-l7",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Yes, after meals is safer. This box needs no prescription.",
-      "glossYue": "可以，飯後食安全啲。呢盒唔使處方。",
+      "text": "The pharmacist can explain when to take it.",
+      "glossYue": "藥劑師可以解釋應該幾時食。",
       "audio": "assets/audio/lines/d6-l7.mp3",
       "audioSlow": "assets/audio/lines/d6-l7-slow.mp3",
-      "say": "Yes, after meals is safer. This box needs no prescription.",
+      "say": "The pharmacist can explain when to take it.",
       "hideGloss": true
     },
     {
@@ -127,24 +127,24 @@
       "explain": "cough 係咳嗽。pharmacy 係藥房。"
     },
     {
-      "prompt": "The dosage is one tablet twice a day. 呢句即係點？",
+      "prompt": "Let me check the dosage on the label with the pharmacist. 呢句即係點？",
       "choices": [
         "一日一次，每次兩粒藥片",
         "飯後先食藥片，唔係一日兩次",
-        "一日兩次，每次一粒藥片"
+        "同藥劑師核對標籤上嘅劑量"
       ],
       "answer": 2,
-      "explain": "dosage 係劑量。twice a day 係一日兩次。"
+      "explain": "dosage 係劑量，label 係標籤。"
     },
     {
-      "prompt": "The only extra symptom is a drug allergy. 呢句即係點？",
+      "prompt": "I have a cough and a drug allergy. 呢句即係點？",
       "choices": [
         "藥劑師話我唔使處方",
-        "另外就係藥物過敏",
+        "我咳，亦有藥物敏感",
         "我冇藥物過敏，只係咳嗽"
       ],
       "answer": 1,
-      "explain": "allergy 係過敏。"
+      "explain": "cough 係咳，drug allergy 係藥物敏感。"
     }
   ],
   "chunks": [
@@ -160,40 +160,40 @@
       ]
     },
     {
-      "pattern": "The dosage is one small tablet ___ a day for five days.",
-      "example": "The dosage is one tablet twice a day.",
-      "glossYue": "劑量係一日兩次。",
-      "answer": "twice",
+      "pattern": "Let me check the ___ on the label with the pharmacist.",
+      "example": "Let me check the dosage on the label with the pharmacist.",
+      "glossYue": "等我同藥劑師核對標籤寫嘅劑量。",
+      "answer": "dosage",
       "choices": [
-        "twice",
-        "after",
+        "dosage",
+        "cough",
         "pharmacy"
       ]
     },
     {
-      "pattern": "I can take that one tablet ___ if it is safer for me.",
-      "example": "I can take that one tablet after meals if it is safer.",
-      "glossYue": "我可以飯後食。",
+      "pattern": "Should I take this tablet ___?",
+      "example": "Should I take this tablet after meals?",
+      "glossYue": "呢粒藥使唔使飯後食？",
       "answer": "after meals",
       "choices": [
         "after meals",
-        "twice a day",
-        "no prescription"
+        "no prescription",
+        "the dosage"
       ]
     }
   ],
   "shadow": {
     "lineId": "d6-l5",
-    "hint": "The dosage is one tablet twice a day."
+    "hint": "Let me check the dosage on the label with the pharmacist."
   },
   "build": [
     {
       "type": "choice",
       "promptYue": "你有藥物過敏。你點講？",
       "choices": [
-        "The only extra symptom is a drug allergy.",
-        "The dosage is one tablet twice a day.",
-        "Yes, after meals is safer. This box needs no prescription."
+        "I have a cough and a drug allergy.",
+        "Let me check the dosage on the label with the pharmacist.",
+        "The pharmacist can explain when to take it."
       ],
       "answer": 0,
       "explain": "講 allergy，再講點解入藥房。"
@@ -202,18 +202,22 @@
       "type": "order",
       "promptYue": "排好呢句。",
       "tokens": [
-        "The",
+        "Please",
+        "check",
+        "the",
         "dosage",
-        "is",
-        "one",
-        "tablet"
+        "on",
+        "the",
+        "label"
       ],
       "answer": [
-        "The",
+        "Please",
+        "check",
+        "the",
         "dosage",
-        "is",
-        "one",
-        "tablet"
+        "on",
+        "the",
+        "label"
       ]
     }
   ],
@@ -224,13 +228,13 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "What symptom can I note for the pharmacist before we choose a box?",
+        "line": "What symptoms or allergies should I tell the pharmacist about?",
         "audio": "assets/audio/lines/d6-l2.mp3",
         "audioSlow": "assets/audio/lines/d6-l2-slow.mp3",
-        "expect": "The only extra symptom is a drug allergy.",
+        "expect": "I have a cough and a drug allergy.",
         "keywords": [
-          "allergy",
-          "symptom"
+          "cough",
+          "allergy"
         ],
         "modelAudio": "assets/audio/lines/d6-l3.mp3",
         "modelSlow": "assets/audio/lines/d6-l3-slow.mp3"
@@ -238,10 +242,10 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "The dosage is one tablet twice a day.",
+        "line": "Let me check the dosage on the label with the pharmacist.",
         "audio": "assets/audio/lines/d6-l5.mp3",
         "audioSlow": "assets/audio/lines/d6-l5-slow.mp3",
-        "expect": "Can I take that tablet after meals if it's safer?",
+        "expect": "Should I take this tablet after meals?",
         "keywords": [
           "tablet",
           "meals"
@@ -252,7 +256,7 @@
       {
         "partner": "Mei",
         "partnerId": "mei",
-        "line": "Yes, after meals is safer. This box needs no prescription.",
+        "line": "The pharmacist can explain when to take it.",
         "audio": "assets/audio/lines/d6-l7.mp3",
         "audioSlow": "assets/audio/lines/d6-l7-slow.mp3",
         "expect": "I'll call this pharmacy if that cough comes back.",
@@ -290,7 +294,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "你講「The only extra symptom is a drug allergy.」，allergy 係咩意思？",
+      "prompt": "Tom講「I have a cough and a drug allergy.」，allergy 係咩意思？",
       "choices": [
         "過敏",
         "處方",
@@ -300,7 +304,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "藥劑師講「The dosage is one tablet twice a day.」，dosage 係咩意思？",
+      "prompt": "Mei講「Let me check the dosage on the label with the pharmacist.」，dosage 係咩意思？",
       "choices": [
         "藥片",
         "劑量",

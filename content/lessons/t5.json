@@ -108,11 +108,11 @@
       "id": "t5-l8",
       "speaker": "noa",
       "speakerLabel": "Noa",
-      "text": "If you feel faint, I can call an ambulance while we file the report.",
-      "glossYue": "如果你覺得暈，我可以叫救護車，同時我哋報失。",
+      "text": "If you feel faint, please sit down. I'll call an ambulance now. The report can wait.",
+      "glossYue": "如果你覺得暈，就坐低。我而家叫救護車。份報告遲啲先搞。",
       "audio": "assets/audio/lines/t5-l8.mp3",
       "audioSlow": "assets/audio/lines/t5-l8-slow.mp3",
-      "say": "If you feel faint, I can call an ambulance while we file the report.",
+      "say": "If you feel faint, please sit down. I'll call an ambulance now. The report can wait.",
       "hideGloss": true
     }
   ],
@@ -267,7 +267,7 @@
         "line": "I feel faint after the shock. Is this an emergency?",
         "audio": "assets/audio/lines/t5-l7.mp3",
         "audioSlow": "assets/audio/lines/t5-l7-slow.mp3",
-        "expect": "If you feel faint, I can call an ambulance while we file the report.",
+        "expect": "If you feel faint, please sit down. I'll call an ambulance now. The report can wait.",
         "keywords": [
           "ambulance",
           "report"
@@ -302,7 +302,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I lost my wallet. I last saw it at the desk this morning.」，係咩意思？",
+      "prompt": "Tom講「I lost my wallet. I last saw it at the desk this morning.」，係咩意思？",
       "choices": [
         "退款",
         "塞車",
@@ -312,7 +312,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I feel faint after the shock. Is this an emergency?」，係咩意思？",
+      "prompt": "Tom講「I feel faint after the shock. Is this an emergency?」，係咩意思？",
       "choices": [
         "街角",
         "收據",

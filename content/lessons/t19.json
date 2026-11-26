@@ -188,32 +188,32 @@
     {
       "prompt": "The noise in the hallway kept me awake all night. 呢句即係點？",
       "choices": [
-        "套房",
-        "嘈音",
-        "維修"
+        "想訂一間套房",
+        "走廊太嘈，成晚都瞓唔到",
+        "想約聽朝維修"
       ],
       "answer": 1,
-      "explain": "嘈音。"
+      "explain": "走廊太嘈，成晚都瞓唔到。"
     },
     {
       "prompt": "I'm sorry about that noise. Maintenance can check the room at ten. 呢句即係點？",
       "choices": [
-        "維修",
-        "走廊",
-        "套房"
+        "對方致歉，話維修人員十點可以檢查房間",
+        "對方請我十點企喺走廊等",
+        "酒店已經安排好套房"
       ],
       "answer": 0,
-      "explain": "維修。"
+      "explain": "對方致歉，話維修人員十點可以檢查房間。"
     },
     {
       "prompt": "There's a quieter room upstairs, away from the hallway. 呢句即係點？",
       "choices": [
-        "維修",
-        "套房",
-        "走廊"
+        "樓上近走廊嗰間房仲嘈",
+        "走廊間間房都一樣靜",
+        "樓上有間房遠離走廊，會靜啲"
       ],
       "answer": 2,
-      "explain": "走廊。"
+      "explain": "樓上有間房遠離走廊，會靜啲。"
     }
   ],
   "chunks": [

@@ -207,7 +207,7 @@
       {
         "partner": "Jo",
         "partnerId": "jo",
-        "line": "Good afternoon. Where are you flying today?",
+        "line": "Good afternoon. Where are you flying today? May I see your passport?",
         "audio": "assets/audio/lines/t1-l1.mp3",
         "audioSlow": "assets/audio/lines/t1-l1-slow.mp3",
         "expect": "I'm flying to Hong Kong.",
@@ -233,10 +233,10 @@
       {
         "partner": "Jo",
         "partnerId": "jo",
-        "line": "Thank you. Window or aisle?",
+        "line": "Thank you. Would you like a window or an aisle seat?",
         "audio": "assets/audio/lines/t1-l3.mp3",
         "audioSlow": "assets/audio/lines/t1-l3-slow.mp3",
-        "expect": "A window seat, please.",
+        "expect": "A window seat, please. I like the view.",
         "keywords": [
           "window"
         ],

@@ -219,12 +219,12 @@
       {
         "partner": "Ana",
         "partnerId": "ana",
-        "line": "Would you like a table by the window?",
+        "line": "Right this way. Would you like a table by the window?",
         "audio": "assets/audio/lines/r1-l3.mp3",
         "audioSlow": "assets/audio/lines/r1-l3-slow.mp3",
-        "expect": "Yes, thank you.",
+        "expect": "Thank you. This is great.",
         "keywords": [
-          "yes",
+          "great",
           "thank"
         ],
         "modelAudio": "assets/audio/lines/r1-l4.mp3",

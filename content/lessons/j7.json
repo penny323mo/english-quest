@@ -40,6 +40,28 @@
       "hideGloss": false
     },
     {
+      "id": "j7-l6",
+      "speaker": "tom",
+      "speakerLabel": "Tom",
+      "text": "Could I pay for this gift in cash instead?",
+      "glossYue": "呢份禮物可唔可以改用現金畀錢？",
+      "audio": "assets/audio/lines/j7-l6.mp3",
+      "audioSlow": "assets/audio/lines/j7-l6-slow.mp3",
+      "say": "Could I pay for this gift in cash instead?",
+      "hideGloss": true
+    },
+    {
+      "id": "j7-m1",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Yes, we accept cash as well as cards.",
+      "glossYue": "可以，我哋收現金，亦收卡。",
+      "audio": "assets/audio/lines/j7-m1.mp3",
+      "audioSlow": "assets/audio/lines/j7-m1-slow.mp3",
+      "say": "Yes, we accept cash as well as cards.",
+      "hideGloss": true
+    },
+    {
       "id": "j7-l2",
       "speaker": "tom",
       "speakerLabel": "Tom",
@@ -48,6 +70,17 @@
       "audio": "assets/audio/lines/j7-l2.mp3",
       "audioSlow": "assets/audio/lines/j7-l2-slow.mp3",
       "say": "I will pay by card, because I do not have enough cash.",
+      "hideGloss": true
+    },
+    {
+      "id": "j7-m3",
+      "speaker": "mei",
+      "speakerLabel": "Mei",
+      "text": "Could you sign here, please? The card needs your signature.",
+      "glossYue": "唔該喺度簽名。用卡要你簽名。",
+      "audio": "assets/audio/lines/j7-m3.mp3",
+      "audioSlow": "assets/audio/lines/j7-m3-slow.mp3",
+      "say": "Could you sign here, please? The card needs your signature.",
       "hideGloss": true
     },
     {
@@ -73,26 +106,15 @@
       "hideGloss": true
     },
     {
-      "id": "j7-l5",
+      "id": "j7-m2",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "I can wrap the gift and add a card if you want one.",
-      "glossYue": "我可以包裝禮盒，如果你想要，我加張卡。",
-      "audio": "assets/audio/lines/j7-l5.mp3",
-      "audioSlow": "assets/audio/lines/j7-l5-slow.mp3",
-      "say": "I can [[ɹˈæp]] the gift and add a card if you want one.",
+      "text": "Of course. Here's your invoice. Keep the receipt with the certificate in case you need a repair.",
+      "glossYue": "當然可以。呢張係你嘅發票。留好收據同證書，之後要維修就用得着。",
+      "audio": "assets/audio/lines/j7-m2.mp3",
+      "audioSlow": "assets/audio/lines/j7-m2-slow.mp3",
+      "say": "Of course. Here's your invoice. Keep the receipt with the certificate in case you need a repair.",
       "hideGloss": false
-    },
-    {
-      "id": "j7-l6",
-      "speaker": "tom",
-      "speakerLabel": "Tom",
-      "text": "Could I pay with notes if the till machine is busy now?",
-      "glossYue": "收銀機而家忙嘅話，我可唔可以用紙幣畀錢？",
-      "audio": "assets/audio/lines/j7-l6.mp3",
-      "audioSlow": "assets/audio/lines/j7-l6-slow.mp3",
-      "say": "Could I pay with notes if the till machine is busy now?",
-      "hideGloss": true
     },
     {
       "id": "j7-l7",
@@ -106,47 +128,25 @@
       "hideGloss": true
     },
     {
-      "id": "j7-m1",
+      "id": "j7-l5",
       "speaker": "mei",
       "speakerLabel": "Mei",
-      "text": "Would you like to settle by phone, or would coins be easier today?",
-      "glossYue": "你想用電話結數，定係硬幣方便啲？",
-      "audio": "assets/audio/lines/j7-m1.mp3",
-      "audioSlow": "assets/audio/lines/j7-m1-slow.mp3",
-      "say": "Would you like to settle by phone, or would coins be easier today?",
-      "hideGloss": true
+      "text": "I can wrap the gift and add a card if you want one.",
+      "glossYue": "我可以包裝禮盒，如果你想要，我加張卡。",
+      "audio": "assets/audio/lines/j7-l5.mp3",
+      "audioSlow": "assets/audio/lines/j7-l5-slow.mp3",
+      "say": "I can [[ɹˈæp]] the gift and add a card if you want one.",
+      "hideGloss": false
     },
     {
       "id": "j7-l9",
       "speaker": "tom",
       "speakerLabel": "Tom",
-      "text": "Can I pay by phone? I don't have coins.",
-      "glossYue": "我可唔可以用電話付款？我冇銀仔。",
+      "text": "That would be lovely. Thank you for your help today.",
+      "glossYue": "好呀，有張心意卡就好喇。唔該晒你。",
       "audio": "assets/audio/lines/j7-l9.mp3",
       "audioSlow": "assets/audio/lines/j7-l9-slow.mp3",
-      "say": "Can I pay by phone? I don't have coins.",
-      "hideGloss": true
-    },
-    {
-      "id": "j7-m2",
-      "speaker": "mei",
-      "speakerLabel": "Mei",
-      "text": "Please keep the receipt with the certificate, in case you need a repair.",
-      "glossYue": "請將收據同證書放埋一齊，之後要維修都用得着。",
-      "audio": "assets/audio/lines/j7-m2.mp3",
-      "audioSlow": "assets/audio/lines/j7-m2-slow.mp3",
-      "say": "Please keep the [[ɹɪsˈit]] with the certificate, in case you need a repair.",
-      "hideGloss": false
-    },
-    {
-      "id": "j7-m3",
-      "speaker": "mei",
-      "speakerLabel": "Mei",
-      "text": "Could you sign here, please? The card needs your signature.",
-      "glossYue": "唔該喺度簽名。用卡要你簽名。",
-      "audio": "assets/audio/lines/j7-m3.mp3",
-      "audioSlow": "assets/audio/lines/j7-m3-slow.mp3",
-      "say": "Could you sign here, please? The card needs your signature.",
+      "say": "That would be lovely. Thank you for your help today.",
       "hideGloss": true
     }
   ],
@@ -235,14 +235,14 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "Tom 想用現金。你點問卡？",
+      "promptYue": "Tom 問可唔可以畀現金。你點答？",
       "choices": [
-        "Would you like to pay by card?",
+        "Yes, we accept cash as well as cards.",
         "Look in the mirror.",
         "A table for two, please."
       ],
       "answer": 0,
-      "explain": "先問付款方法。"
+      "explain": "accept cash 係收現金。"
     },
     {
       "type": "order",
@@ -274,13 +274,13 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Could I pay with cash?",
+        "line": "Could I pay for this gift in cash instead?",
         "audio": "assets/audio/lines/j7-l6.mp3",
         "audioSlow": "assets/audio/lines/j7-l6-slow.mp3",
-        "expect": "Would you like to pay by card?",
+        "expect": "Yes, we accept cash as well as cards.",
         "keywords": [
-          "pay",
-          "card"
+          "accept",
+          "cash"
         ],
         "modelAudio": "assets/audio/lines/j7-m1.mp3",
         "modelSlow": "assets/audio/lines/j7-m1-slow.mp3"
@@ -302,10 +302,10 @@
       {
         "partner": "Tom",
         "partnerId": "tom",
-        "line": "Could you wrap this?",
+        "line": "Could you gift-wrap this?",
         "audio": "assets/audio/lines/j7-l7.mp3",
         "audioSlow": "assets/audio/lines/j7-l7-slow.mp3",
-        "expect": "I can wrap the gift.",
+        "expect": "I can wrap the gift and add a card if you want one.",
         "keywords": [
           "wrap"
         ],
@@ -339,7 +339,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "店員講「The payment is approved. Here is your receipt and the certificate.」，certificate 係咩意思？",
+      "prompt": "Mei講「The payment is approved. Here is your receipt and the certificate.」，certificate 係咩意思？",
       "choices": [
         "紙袋",
         "證書",
@@ -349,7 +349,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「I can wrap the gift and add a card if you want one.」，係咩意思？",
+      "prompt": "Mei講「I can wrap the gift and add a card if you want one.」，係咩意思？",
       "choices": [
         "簽名",
         "包裝",

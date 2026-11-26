@@ -201,7 +201,7 @@
   "build": [
     {
       "type": "choice",
-      "promptYue": "Cole 問你要寄去邊。你點先講？",
+      "promptYue": "Cole 問你想用咩方式寄呢個包裹。你點答？",
       "choices": [
         "I would like to send this small parcel by airmail.",
         "I'll take the cheaper prepaid plan for this short trip.",
@@ -262,7 +262,7 @@
       {
         "partner": "Cole",
         "partnerId": "cole",
-        "line": "It will take five days, and we need your signature here.",
+        "line": "It'll take five days, and we need your signature here.",
         "audio": "assets/audio/lines/d5-l4.mp3",
         "audioSlow": "assets/audio/lines/d5-l4-slow.mp3",
         "expect": "I can sign here and keep the receipt.",

@@ -243,7 +243,7 @@
         "line": "Could you take me to the landmark opposite the hotel?",
         "audio": "assets/audio/lines/t4-l2.mp3",
         "audioSlow": "assets/audio/lines/t4-l2-slow.mp3",
-        "expect": "The meter is on, and traffic is slow along this street today.",
+        "expect": "The meter is on, and traffic is slow.",
         "keywords": [
           "meter",
           "traffic"
@@ -257,7 +257,7 @@
         "line": "How long will this take if we go straight and turn left?",
         "audio": "assets/audio/lines/t4-l4.mp3",
         "audioSlow": "assets/audio/lines/t4-l4-slow.mp3",
-        "expect": "It takes about ten minutes, and I will drop you at that corner.",
+        "expect": "It takes about ten minutes, and I'll drop you at that corner.",
         "keywords": [
           "minutes",
           "corner"
@@ -306,7 +306,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The meter is on, and traffic is slow.」，係咩意思？",
+      "prompt": "Ray講「The meter is on, and traffic is slow.」，係咩意思？",
       "choices": [
         "收據",
         "地標",
@@ -317,7 +317,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「How long will this take if we go straight and turn left?」，係咩意思？",
+      "prompt": "Tom講「How long will this take if we go straight and turn left?」，係咩意思？",
       "choices": [
         "大概要幾耐",
         "一定要轉右",

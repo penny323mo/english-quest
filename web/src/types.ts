@@ -9,12 +9,14 @@ export type Profile = {
   level: Level;
   jyutping: boolean;
   sound?: boolean;
+  starterScores?: Record<string, { listen: [number, number]; read: [number, number] }>;
   xp: number;
   streak: number;
   lastActive: string | null;
 };
 
-export type LessonDone = { at: string; xp: number };
+export type TransferRating = "practice" | "guided" | "independent";
+export type LessonDone = { at: string; xp: number; transfer?: TransferRating; transferDays?: Record<string, TransferRating> };
 
 export type StoredCard = {
   id: string;
@@ -143,6 +145,7 @@ export type Lesson = {
   cast: string[];
   lemmas: string[];
   dialogue: Line[];
+  challenge?: Pick<Line, "text" | "glossYue" | "audio" | "audioSlow">;
   understand: UnderstandItem[];
   chunks: Chunk[];
   shadow: { lineId: string; hint: string };

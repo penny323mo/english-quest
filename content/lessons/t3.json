@@ -242,10 +242,10 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Do you have a reservation?",
+        "line": "Do you have a reservation under a name I can find?",
         "audio": "assets/audio/lines/t3-l1.mp3",
         "audioSlow": "assets/audio/lines/t3-l1-slow.mp3",
-        "expect": "I have a reservation under Tom.",
+        "expect": "I have a reservation under Tom, for two nights.",
         "keywords": [
           "reservation"
         ],
@@ -255,10 +255,10 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Your room is a double with a view.",
+        "line": "Your room is a double and faces the harbour.",
         "audio": "assets/audio/lines/t3-l3.mp3",
         "audioSlow": "assets/audio/lines/t3-l3-slow.mp3",
-        "expect": "Could you tell me the wifi password?",
+        "expect": "Could you tell me the wifi password, and how I join the network?",
         "keywords": [
           "wifi",
           "password"
@@ -269,10 +269,10 @@
       {
         "partner": "Kim",
         "partnerId": "kim",
-        "line": "Breakfast is included.",
+        "line": "Breakfast is included, and it starts early in the morning.",
         "audio": "assets/audio/lines/t3-m1.mp3",
         "audioSlow": "assets/audio/lines/t3-m1-slow.mp3",
-        "expect": "Could I have a late checkout?",
+        "expect": "Could I have a late checkout, and leave my bags here?",
         "keywords": [
           "late",
           "checkout"
@@ -307,7 +307,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Late checkout is fine. You can leave your bags by the elevator.」，係咩意思？",
+      "prompt": "Kim講「Late checkout is fine. You can leave your bags by the elevator.」，係咩意思？",
       "choices": [
         "早餐",
         "升降機",
@@ -317,7 +317,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「Your room is a double and faces the harbour.」，係咩意思？",
+      "prompt": "Kim講「Your room is a double and faces the harbour.」，係咩意思？",
       "choices": [
         "雙人床",
         "升降機",

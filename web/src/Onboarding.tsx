@@ -53,7 +53,7 @@ export function Onboarding() {
             {([10, 15, 20] as const).map((n) => (
               <button key={n} className={minutes === n ? "opt on" : "opt"} type="button" onClick={() => setMinutes(n)}>
                 <strong>{n} 分鐘</strong>
-                <span>{n === 15 ? `啱${name.trim() || "你"}返工前後` : n === 10 ? "赶時間都得" : "想練耐少少"}</span>
+                <span>{n === 15 ? `啱${name.trim() || "你"}返工前後` : n === 10 ? "趕時間都得" : "想練耐少少"}</span>
               </button>
             ))}
           </div>
@@ -65,8 +65,8 @@ export function Onboarding() {
           <h2>而家英文幾熟？</h2>
           <div className="stack">
             <button className={level === "new" ? "opt on" : "opt"} type="button" onClick={() => setLevel("new")}>
-              <strong>識得 hello、thank you</strong>
-              <span>想開口又怕被人笑</span>
+              <strong>初學，只識幾個字</strong>
+              <span>先聽兩三個詞，再試講一句</span>
             </button>
             <button className={level === "some" ? "opt on" : "opt"} type="button" onClick={() => setLevel("some")}>
               <strong>聽得多，講得少</strong>

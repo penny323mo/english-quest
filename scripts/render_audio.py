@@ -69,6 +69,7 @@ def text_hash(text: str) -> str:
 # Word-only clips (每日抽卡 🔊) whose plain spelling the voice would misread.
 WORD_SAY = {
     "a-art": "[[ə]]",
+    "of-prep": "[[ˈʌv]]",  # strong citation form; connected speech uses /əv/
     # The sentence uses the weak form ("[[kən]] I have…"); a card says the word itself.
     "can-verb": "can",
     # Word-only Kokoro readings: retain US rhotic vowels and vowel length. The
@@ -182,6 +183,8 @@ def clips() -> list[dict]:
                 add(f"assets/audio/words/{item['id']}-md{index}.mp3", render_text(turn), None)
     for line in lines:
         add(line["audio"], line["say"], None)
+        if "kokoroSpeaker" in line:
+            out[-1]["kokoroSpeaker"] = line["kokoroSpeaker"]
     for row in word_clips(include_skipped=True)["items"].values():
         add(row["audio"], row["say"], None, word=True, speaker=row.get("speaker", WORD_VOICE["speaker"]))
         if row.get("recording"):
@@ -248,6 +251,13 @@ class WordVoice:
             wf.setsampwidth(2)
             wf.setframerate(audio.sample_rate)
             wf.writeframes((np.clip(np.asarray(audio.samples), -1, 1) * 32767).astype(np.int16).tobytes())
+
+
+def render_input_hash(job: dict) -> str:
+    text = job["say"]
+    if "kokoroSpeaker" in job:
+        text = f"{WORD_VOICE['model']}/{job['kokoroSpeaker']}\n{text}"
+    return text_hash(text)
 
 
 def load_word_voice(says: list[str] | None = None, folder: Path | None = None) -> WordVoice:
@@ -448,12 +458,14 @@ def main() -> None:
             continue
         present = all(p.exists() and p.stat().st_size > 400 for p in (mp3, mp3_slow))
         voice_changed = job["word"] and (previous_words.get("voice") != WORD_VOICE or previous_speakers.get(rel, job["speaker"]) != job["speaker"])
-        if present and rendered.get(rel) == text_hash(job["say"]) and rel not in force and not voice_changed:
+        if present and rendered.get(rel) == render_input_hash(job) and rel not in force and not voice_changed:
             continue
         todo.append(job)
     print(f"clips {len(jobs)}; rendering {len(todo)} x2")
     TMP.mkdir(exist_ok=True)
     word_voice = load_word_voice() if any(job["word"] and not job.get("recording") for job in todo) else None
+    spoken = [job["say"] for job in todo if "kokoroSpeaker" in job]
+    dialogue_voice = load_word_voice(spoken) if spoken else None
     for done, job in enumerate(todo, 1):
         rel = job["rel"]
         stem = rel.replace("/", "_").replace(".mp3", "")
@@ -464,11 +476,13 @@ def main() -> None:
             rendered[rel] = text_hash(job["say"])
             continue
         v, speaker = (word_voice, job["speaker"]) if job["word"] else (voice, None)
+        if "kokoroSpeaker" in job:
+            v, speaker = dialogue_voice, job["kokoroSpeaker"]
         synth(v, job["say"], wav, 1.0, speaker)
         synth(v, job["say"], wav_s, 1.35, speaker)
         to_mp3(wav, ROOT / rel)
         to_mp3(wav_s, ROOT / rel.replace(".mp3", "-slow.mp3"))
-        rendered[rel] = text_hash(job["say"])
+        rendered[rel] = render_input_hash(job)
         if done % 20 == 0:
             print(f"  {done}/{len(todo)}")
     live = {job["rel"] for job in jobs}

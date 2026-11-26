@@ -34,7 +34,7 @@ function clips() {
       out.push({ rel, shown: turn.en, say: renderText(turn, turn.en), where: `${item.id} md${i}` });
     }
   }
-  for (const line of lines) out.push({ rel: line.audio, shown: line.text, say: line.say, where: line.id });
+  for (const line of lines) out.push({ rel: line.audio, shown: line.text, say: line.say, where: line.id, speaker: line.kokoroSpeaker });
   // Word-only clips for 每日抽卡: the card shows the lemma.
   const lemma = Object.fromEntries(lex.items.map((item) => [item.id, item.lemma]));
   for (const [id, row] of Object.entries(words.items)) out.push({ rel: row.audio, shown: lemma[id], say: row.say, where: `${id} word` });
@@ -44,7 +44,8 @@ function clips() {
 test("each clip was rendered from its current text", () => {
   const stale = [];
   for (const clip of clips()) {
-    if (rendered[clip.rel] !== sha(clip.say)) stale.push(`${clip.where}: ${clip.rel} "${clip.say}"`);
+    const input = clip.speaker === undefined ? clip.say : `${words.voice.model}/${clip.speaker}\n${clip.say}`;
+    if (rendered[clip.rel] !== sha(input)) stale.push(`${clip.where}: ${clip.rel} "${clip.say}"`);
   }
   assert.deepEqual(stale, [], "re-render these with npm run audio");
 });

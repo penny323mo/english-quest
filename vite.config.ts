@@ -2,6 +2,7 @@ import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
 import { VitePWA } from "vite-plugin-pwa";
 import fs from "node:fs";
+import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { execFileSync } from "node:child_process";
@@ -165,6 +166,14 @@ export default defineConfig({
         // Stable mp3 and webp names must keep a revision or a pronunciation fix
         // stays cached. Only a top-level fingerprinted file may use null.
         dontCacheBustURLsMatching: /^assets\/[^/]+-[A-Za-z0-9_-]{8}\.[a-z0-9]+$/,
+        manifestTransforms: [async entries => ({
+          manifest: entries.map(entry => ({
+            ...entry,
+            integrity: "sha256-" + createHash("sha256")
+              .update(fs.readFileSync(path.join(repo, "dist", entry.url))).digest("base64"),
+          })),
+          warnings: [],
+        })],
         globPatterns: ["**/*.{js,css,html,svg,png,webp,mp3,webmanifest}"],
         globIgnores: [
           "**/index.html",

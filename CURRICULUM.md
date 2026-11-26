@@ -1,7 +1,6 @@
 # English Quest — Curriculum Map (CEFR A1→B2)
 
-**Authority for content expansion.** Live app currently ships F1–F4, J1–J3, R1–R2, T1–T2 (11 lessons).  
-**Loop rule (from 2026-10-30):** every fix round MUST ship **≥3 new lessons** from this map until complete, plus difficulty progression (CEFR badges + A1–B2 tracks on the Path). Quality bar = existing 12-beat gold (R2/J3/T2): accurate IPA/CMUdict, Kokoro US audio ±pad, natural HK Cantonese (Traditional), English examples >2 words (allowlist), Harbor Glow art, tests green.
+**Curriculum history.** The initial 11-lesson map grew to 91 playable lessons in 97 lesson files. The published path and current lesson scripts live in `content/`. The course-wide 1.0 teaching and acceptance criteria are in [RELEASE-1.0.md](RELEASE-1.0.md).
 
 **Scaffolding by level**
 | CEFR | Dialogue length | Cantonese gloss | Grammar | Speaking |
@@ -356,11 +355,9 @@
 - **Coherence:** one missed connection. The rebook, the bag transfer, the meal voucher, and the new boarding pass all belong to that next flight.
 
 ### T13 — At the pharmacy abroad / 外地藥房買藥 · A2/B1 · SHIPPED
-- **Goals:** Say you have a headache and a fever, answer no allergies, take the tablet three times a day after meals, stay under six tablets, switch if you must drive, skip the prescription, and see a doctor after three days.
-- **Vocab:** headache, fever, times a day, after meals, drowsy, prescription
-- **Grammar:** How many times a day do I take it? Three times a day, after meals.
-- **Dialogue beats:** Headache and fever → Tablet for both, any allergies → No allergies, times a day → Three times a day after meals, six-tablet cap → Drowsy and must drive → Non-drowsy alternative → Written prescription → No prescription, see a doctor after three days
-- **Coherence:** one illness. Allergies are no. The dose is three times a day after meals, and not more than six tablets. A non-drowsy tablet is the alternative if he must drive. There is no prescription. If the fever lasts more than three days, see a doctor.
+- **Goals:** Describe symptoms, disclose allergies and ask the pharmacist how to read the label and driving warning.
+- **Language:** Ask where to find the directions and whether a prescription is needed.
+- **Dialogue:** The customer explains a concern. The pharmacist offers to check the product and its instructions before the customer decides.
 
 ### T6 — Hotel problem / request · B1 · NEW
 - **Goals:** Noisy room, AC broken, extra towel — polite request + escalate.
@@ -559,10 +556,8 @@
 - **Dialogue beats:** Send by airmail → Customs form → How long → Five days → Mark fragile → Weight → Customer keeps the receipt → Tracking and stamp
 
 ### D6 — Pharmacy · A2 · SHIPPED
-- **Goals:** Describe a cough and an allergy, then ask about the dosage and taking a tablet after meals.
-- **Vocab:** cough, symptom, pharmacist, allergy, dosage, tablet, twice a day, after meals, prescription, pharmacy
-- **Grammar:** I need something for a cough. The dosage is one tablet twice a day. I can take it after meals.
-- **Dialogue beats:** Cough at the pharmacy → Symptom → Drug allergy → Ask the dosage → Twice a day → After meals → No prescription → Call if it returns
+- **Goals:** Describe a cough and a drug allergy. Ask the pharmacist to check the ingredients and explain the directions.
+- **Language:** Ask about the dosage on the label and whether this medicine should be taken with food.
 
 ### D7 — At the hair salon / 剪頭髮 · A2 · SHIPPED
 - **Goals:** Ask for a simple trim, shorter sides, a light fringe, a wash and blow-dry, the price, and the next booking.

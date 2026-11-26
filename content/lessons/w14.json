@@ -125,11 +125,11 @@
       "prompt": "Will you circulate the written forecast if each stakeholder has not read the email yet? 即係問緊咩？",
       "choices": [
         "話會議已經取消",
-        "問持份者未睇字條會唔會傳閱預測",
+        "問持份者未睇電郵會唔會傳閱預測",
         "問邊個要簽名"
       ],
       "answer": 1,
-      "explain": "持份者未睇字條，問會唔會傳閱書面預測。"
+      "explain": "持份者未睇電郵，問會唔會傳閱書面預測。"
     },
     {
       "prompt": "What should the new written agenda say if the overrun changes the Monday review date? 即係問緊咩？",

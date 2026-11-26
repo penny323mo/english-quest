@@ -40,7 +40,8 @@
       "audio": "assets/audio/lines/t9-l1.mp3",
       "audioSlow": "assets/audio/lines/t9-l1-slow.mp3",
       "say": "The announcement says our flight is delayed, and the departure board changed.",
-      "hideGloss": false
+      "hideGloss": false,
+      "kokoroSpeaker": 2
     },
     {
       "id": "t9-l2",
@@ -51,7 +52,8 @@
       "audio": "assets/audio/lines/t9-l2.mp3",
       "audioSlow": "assets/audio/lines/t9-l2-slow.mp3",
       "say": "I'm sorry. The flight is delayed, but your connection is still safe.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 1
     },
     {
       "id": "t9-l3",
@@ -61,8 +63,9 @@
       "glossYue": "可唔可以今晚改簽，定係只可以候補？",
       "audio": "assets/audio/lines/t9-l3.mp3",
       "audioSlow": "assets/audio/lines/t9-l3-slow.mp3",
-      "say": "Can we [[ɹiːbˈʊk]] for this evening, or is standby the only option?",
-      "hideGloss": true
+      "say": "Can we rebook for this evening, or is standby the only option?",
+      "hideGloss": true,
+      "kokoroSpeaker": 2
     },
     {
       "id": "t9-l4",
@@ -72,8 +75,9 @@
       "glossYue": "可以，我哋可以幫你改下一班。候補唔係淨係嗰個選擇。",
       "audio": "assets/audio/lines/t9-l4.mp3",
       "audioSlow": "assets/audio/lines/t9-l4-slow.mp3",
-      "say": "Yes, we can [[ɹiːbˈʊk]] you on the next flight. Standby isn't your only choice.",
-      "hideGloss": true
+      "say": "Yes, we can rebook you on the next flight. Standby isn't your only choice.",
+      "hideGloss": true,
+      "kokoroSpeaker": 1
     },
     {
       "id": "t9-l5",
@@ -84,7 +88,8 @@
       "audio": "assets/audio/lines/t9-l5.mp3",
       "audioSlow": "assets/audio/lines/t9-l5-slow.mp3",
       "say": "We can offer you priority on the next plane out, though the gate change is not posted yet.",
-      "hideGloss": false
+      "hideGloss": false,
+      "kokoroSpeaker": 1
     },
     {
       "id": "t9-l6",
@@ -94,8 +99,9 @@
       "glossYue": "如果新航班要到聽朝先由呢度飛，全數退款係咪另一個選擇？",
       "audio": "assets/audio/lines/t9-l6.mp3",
       "audioSlow": "assets/audio/lines/t9-l6-slow.mp3",
-      "say": "Is a full [[ɹˈiːfʌnd]] an alternative if the new flight does not leave until tomorrow morning from here?",
-      "hideGloss": true
+      "say": "Is a full refund an alternative if the new flight does not leave until tomorrow morning from here?",
+      "hideGloss": true,
+      "kokoroSpeaker": 2
     },
     {
       "id": "t9-l7",
@@ -106,7 +112,8 @@
       "audio": "assets/audio/lines/t9-l7.mp3",
       "audioSlow": "assets/audio/lines/t9-l7-slow.mp3",
       "say": "A refund is possible, and a hotel voucher remains an alternative if you prefer to stay overnight.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 1
     },
     {
       "id": "t9-l8",
@@ -117,7 +124,32 @@
       "audio": "assets/audio/lines/t9-l8.mp3",
       "audioSlow": "assets/audio/lines/t9-l8-slow.mp3",
       "say": "Your new itinerary is confirmed, and the desk will print it when the queue moves.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 1
+    },
+    {
+      "id": "t9-l9",
+      "speaker": "may",
+      "speakerLabel": "May",
+      "text": "Before I accept that flight, could you confirm whether my checked bag will travel with me?",
+      "glossYue": "我確認改飛之前，你可唔可以查清楚我寄艙嗰件行李會唔會跟我一齊到？",
+      "audio": "assets/audio/lines/t9-l9.mp3",
+      "audioSlow": "assets/audio/lines/t9-l9-slow.mp3",
+      "say": "Before I accept that flight, could you confirm whether my checked bag will travel with me?",
+      "hideGloss": true,
+      "kokoroSpeaker": 2
+    },
+    {
+      "id": "t9-l10",
+      "speaker": "kim",
+      "speakerLabel": "Kim",
+      "text": "I'll check with the baggage team and write their answer on your new itinerary.",
+      "glossYue": "我會問行李部，將佢哋嘅答覆寫喺你張新行程表度。",
+      "audio": "assets/audio/lines/t9-l10.mp3",
+      "audioSlow": "assets/audio/lines/t9-l10-slow.mp3",
+      "say": "I'll check with the baggage team and write their answer on your new itinerary.",
+      "hideGloss": true,
+      "kokoroSpeaker": 1
     }
   ],
   "understand": [
@@ -145,7 +177,7 @@
       "prompt": "Is a full refund an alternative if the new flight does not leave until tomorrow morning from here? 即係問緊咩？",
       "choices": [
         "問閘口喺邊",
-        "問等到聽朝可唔可以退款",
+        "問如果新航班要到聽朝先飛，可唔可以全額退款",
         "問可唔可以升級座位"
       ],
       "answer": 1,
@@ -260,13 +292,13 @@
         "line": "We can offer you priority on the next plane out, though the gate change is not posted yet.",
         "audio": "assets/audio/lines/t9-l5.mp3",
         "audioSlow": "assets/audio/lines/t9-l5-slow.mp3",
-        "expect": "Can we rebook for this evening, or is standby the only option?",
+        "expect": "Please put me on the next flight. Where can I get my new boarding pass?",
         "keywords": [
-          "rebook",
-          "evening"
+          "next",
+          "boarding"
         ],
-        "modelAudio": "assets/audio/lines/t9-l3.mp3",
-        "modelSlow": "assets/audio/lines/t9-l3-slow.mp3"
+        "modelAudio": "assets/audio/lines/t9-m3.mp3",
+        "modelSlow": "assets/audio/lines/t9-m3-slow.mp3"
       }
     ]
   },
@@ -347,5 +379,11 @@
       "refund-noun"
     ]
   },
-  "next": "J13"
+  "next": "J13",
+  "challenge": {
+    "text": "Tonight's flight has a stop, but tomorrow's flight is direct. Which option works better for you?",
+    "glossYue": "今晚嗰班中途要停，聽日嗰班直航。邊個選擇啱你多啲？",
+    "audio": "assets/audio/lines/t9-challenge.mp3",
+    "audioSlow": "assets/audio/lines/t9-challenge-slow.mp3"
+  }
 }

@@ -42,7 +42,8 @@
       "audio": "assets/audio/lines/j11-l1.mp3",
       "audioSlow": "assets/audio/lines/j11-l1-slow.mp3",
       "say": "Good morning. Is the occasion an anniversary, or an engagement?",
-      "hideGloss": false
+      "hideGloss": false,
+      "kokoroSpeaker": 1
     },
     {
       "id": "j11-l2",
@@ -53,7 +54,8 @@
       "audio": "assets/audio/lines/j11-l2.mp3",
       "audioSlow": "assets/audio/lines/j11-l2-slow.mp3",
       "say": "The occasion is an anniversary dinner.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 2
     },
     {
       "id": "j11-l3",
@@ -64,7 +66,8 @@
       "audio": "assets/audio/lines/j11-l3.mp3",
       "audioSlow": "assets/audio/lines/j11-l3-slow.mp3",
       "say": "If you chose a contemporary gold piece, would you like it understated or more of a bold statement?",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 1
     },
     {
       "id": "j11-l4",
@@ -75,7 +78,8 @@
       "audio": "assets/audio/lines/j11-l4.mp3",
       "audioSlow": "assets/audio/lines/j11-l4-slow.mp3",
       "say": "I prefer it understated. I'd keep this gold piece as a quiet investment.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 2
     },
     {
       "id": "j11-l5",
@@ -86,7 +90,8 @@
       "audio": "assets/audio/lines/j11-l5.mp3",
       "audioSlow": "assets/audio/lines/j11-l5-slow.mp3",
       "say": "If I paid a deposit on a custom piece, would the timeline fit my anniversary next month?",
-      "hideGloss": false
+      "hideGloss": false,
+      "kokoroSpeaker": 2
     },
     {
       "id": "j11-l6",
@@ -97,7 +102,8 @@
       "audio": "assets/audio/lines/j11-l6.mp3",
       "audioSlow": "assets/audio/lines/j11-l6-slow.mp3",
       "say": "Yes. I can fit the whole plan into next month.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 1
     },
     {
       "id": "j11-l7",
@@ -108,7 +114,8 @@
       "audio": "assets/audio/lines/j11-l7.mp3",
       "audioSlow": "assets/audio/lines/j11-l7-slow.mp3",
       "say": "If the new design is more modern, I'd still want a quiet gold piece.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 2
     },
     {
       "id": "j11-l8",
@@ -119,7 +126,32 @@
       "audio": "assets/audio/lines/j11-l8.mp3",
       "audioSlow": "assets/audio/lines/j11-l8-slow.mp3",
       "say": "If you confirmed the deposit, I would book a follow-up and keep the design exclusive to you.",
-      "hideGloss": true
+      "hideGloss": true,
+      "kokoroSpeaker": 1
+    },
+    {
+      "id": "j11-l9",
+      "speaker": "nia",
+      "speakerLabel": "Nia",
+      "text": "Before I pay the deposit, what would happen if the design needed another change?",
+      "glossYue": "我畀訂金之前想問清楚，如果個設計仲要再改，會點處理？",
+      "audio": "assets/audio/lines/j11-l9.mp3",
+      "audioSlow": "assets/audio/lines/j11-l9-slow.mp3",
+      "say": "Before I pay the deposit, what would happen if the design needed another change?",
+      "hideGloss": true,
+      "kokoroSpeaker": 2
+    },
+    {
+      "id": "j11-l10",
+      "speaker": "ada",
+      "speakerLabel": "Ada",
+      "text": "We would send a revised sketch and wait for your approval before starting work.",
+      "glossYue": "我哋會畀你睇改過嘅草圖，等你確認先開工。",
+      "audio": "assets/audio/lines/j11-l10.mp3",
+      "audioSlow": "assets/audio/lines/j11-l10-slow.mp3",
+      "say": "We would send a revised sketch and wait for your approval before starting work.",
+      "hideGloss": true,
+      "kokoroSpeaker": 1
     }
   ],
   "understand": [
@@ -299,7 +331,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「The occasion is an anniversary dinner.」，occasion 係咩意思？",
+      "prompt": "Nia講「The occasion is an anniversary dinner.」，occasion 係咩意思？",
       "choices": [
         "檔期",
         "訂金",
@@ -309,7 +341,7 @@
     },
     {
       "type": "meaning",
-      "prompt": "客人講「If you confirmed the deposit, I would book a follow-up and keep the design exclusive to you.」，exclusive 係咩意思？",
+      "prompt": "Ada講「If you confirmed the deposit, I would book a follow-up and keep the design exclusive to you.」，exclusive 係咩意思？",
       "choices": [
         "獨家",
         "低調",
@@ -351,5 +383,11 @@
       "exclusivity-noun"
     ]
   },
-  "next": "W6"
+  "next": "W6",
+  "challenge": {
+    "text": "I need the ring in ten days. What could we change if the custom design takes three weeks?",
+    "glossYue": "我十日內要攞戒指。如果訂製要三星期，有咩可以改？",
+    "audio": "assets/audio/lines/j11-challenge.mp3",
+    "audioSlow": "assets/audio/lines/j11-challenge-slow.mp3"
+  }
 }

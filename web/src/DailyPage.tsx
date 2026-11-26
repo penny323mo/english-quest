@@ -1,5 +1,5 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState, type MouseEvent } from "react";
-import wordAudioFile from "../../content/word-audio.json";
+import { wordAudio } from "./word-audio";
 import cardArtFile from "../../content/card-art.json";
 import { DAILY_XP, drawDaily, macauDate, repairDay } from "./daily.mjs";
 import { useMacauDate } from "./use-macau-date";
@@ -11,8 +11,6 @@ import { playSfx } from "./sfx";
 import { useStore } from "./store";
 import type { LexItem } from "./types";
 
-type WordClip = { audio: string; audioSlow: string; say: string };
-const wordAudio = (wordAudioFile as { items: Record<string, WordClip> }).items;
 const cardArt = (cardArtFile as { cards: Record<string, string> }).cards;
 
 /** How long the pack shakes, then the gap between each card's reveal. About 1s in all. */
