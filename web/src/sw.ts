@@ -175,7 +175,7 @@ self.addEventListener("message", (event: ExtendableMessageEvent) => {
   event.ports[0]?.postMessage(pack);
 });
 
-async function purgeOldShell(legacyDocumentsOnly = false): Promise<boolean> {
+async function purgeOldShell(legacyOnly = false): Promise<boolean> {
   const keep = cacheNames.precache;
   const keepKeys = [...precacheController.getURLsToCacheKeys().values()];
   const keys = await caches.keys();
@@ -191,19 +191,9 @@ async function purgeOldShell(legacyDocumentsOnly = false): Promise<boolean> {
     }
     const cache = await caches.open(key);
     const requests = await cache.keys();
-    if (legacyDocumentsOnly) {
-      // A missing shell lookup during activation does not prove that the
-      // previous course is gone. Only the historical precached HTML must
-      // leave immediately. Keep lesson assets until the new pack is ready.
-      for (const request of requests) {
-        const url = new URL(request.url);
-        url.search = "";
-        if (url.href === scope || url.href === scope + "index.html") {
-          removed = await cache.delete(request) || removed;
-        }
-      }
-      return;
-    }
+    // Only historical workers stored their index.html in the asset precache.
+    // A missing lookup in the separate shell cache cannot identify one.
+    if (legacyOnly && !requests.some(({ url }) => url.split("?")[0] === scope + "index.html")) return;
     const plan = planPrecachePurge(requests.map((request) => request.url), keepKeys);
     if (plan.shellChanged) removed = true;
     await Promise.all(plan.remove.map((url) => cache.delete(url)));
